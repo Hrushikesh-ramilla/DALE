@@ -1,10 +1,132 @@
 import type { Product } from "@/domain/catalog";
-export function ProductArt({ product, compact = false }: { product: Product; compact?: boolean }) {
-  return <div className={`product-art ${product.color} ${compact ? "compact" : ""}`}><svg viewBox="0 0 260 175" role="img" aria-label={`${product.category} catalog illustration`}>
-    <ellipse cx="133" cy="148" rx="68" ry="9" fill="currentColor" opacity=".09" />
-    {product.category === "chargers" ? <><path d="M152 95 C226 70 205 141 161 127 C122 116 151 161 217 137" fill="none" stroke="#819287" strokeWidth="4" strokeLinecap="round" /><path d="M112 37 v-15 M137 37 v-15" stroke="#6c7871" strokeWidth="7" strokeLinecap="round" /><rect x="80" y="38" width="87" height="98" rx="21" fill="#fdfefd" stroke="#c5cfc8" strokeWidth="2" /><rect x="101" y="58" width="45" height="54" rx="9" fill="#eef2ee" /><rect x="116" y="75" width="17" height="7" rx="3" fill="#46584d" /><path d="m208 137 14-6" stroke="#4c6556" strokeWidth="8" strokeLinecap="round" /></>
-    : product.category === "audio" ? <><path d="M75 101 V78 C75 14 184 14 184 78 v23" fill="none" stroke="#71857a" strokeWidth="17" /><path d="M75 99 V77 C75 24 184 24 184 77 v22" fill="none" stroke="#dde7df" strokeWidth="7" /><rect x="59" y="86" width="38" height="57" rx="15" fill="#f7faf7" stroke="#bccbbf" strokeWidth="2" /><rect x="164" y="86" width="38" height="57" rx="15" fill="#f7faf7" stroke="#bccbbf" strokeWidth="2" /></>
-    : product.category === "accessories" ? <><path d="M96 142 C62 104 74 33 130 29 C186 32 197 104 164 142 Z" fill="#fdfefd" stroke="#c5cfc8" strokeWidth="2" /><path d="M130 30 v45" stroke="#c5cfc8" strokeWidth="2" /><rect x="126" y="45" width="8" height="22" rx="4" fill="#82998c" /></>
-    : <><rect x="59" y="57" width="146" height="75" rx="16" fill="#f9fbf9" stroke="#c5cfc8" strokeWidth="2" /><rect x="75" y="75" width="116" height="36" rx="8" fill="#e7eeea" /><rect x="83" y="89" width="17" height="7" rx="2" fill="#5c7364" /><rect x="111" y="89" width="17" height="7" rx="2" fill="#5c7364" /><circle cx="177" cy="92" r="4" fill="#4a8c66" /><path d="M60 95 C15 95 17 130 44 133" fill="none" stroke="#8f9f96" strokeWidth="4" strokeLinecap="round" /></>}
-  </svg></div>;
+export function ProductArt({
+  product,
+  compact = false,
+}: {
+  product: Product;
+  compact?: boolean;
+}) {
+  return (
+    <div className={`product-art ${product.color} ${compact ? "compact" : ""}`}>
+      <svg
+        viewBox="0 0 260 175"
+        role="img"
+        aria-label={`${product.category} catalog illustration`}
+      >
+        <ellipse
+          cx="133"
+          cy="148"
+          rx="68"
+          ry="9"
+          fill="currentColor"
+          opacity=".09"
+        />
+        {product.category === "chargers" ? (
+          <>
+            <path
+              d="M152 95 C226 70 205 141 161 127 C122 116 151 161 217 137"
+              fill="none"
+              stroke="#819287"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+            <path
+              d="M112 37 v-15 M137 37 v-15"
+              stroke="#6c7871"
+              strokeWidth="7"
+              strokeLinecap="round"
+            />
+            <rect
+              x="80"
+              y="38"
+              width="87"
+              height="98"
+              rx="21"
+              fill="#fdfefd"
+              stroke="#c5cfc8"
+              strokeWidth="2"
+            />
+            <rect x="101" y="58" width="45" height="54" rx="9" fill="#eef2ee" />
+            <rect x="116" y="75" width="17" height="7" rx="3" fill="#46584d" />
+            <path
+              d="m208 137 14-6"
+              stroke="#4c6556"
+              strokeWidth="8"
+              strokeLinecap="round"
+            />
+          </>
+        ) : product.category === "audio" ? (
+          <>
+            <path
+              d="M75 101 V78 C75 14 184 14 184 78 v23"
+              fill="none"
+              stroke="#71857a"
+              strokeWidth="17"
+            />
+            <path
+              d="M75 99 V77 C75 24 184 24 184 77 v22"
+              fill="none"
+              stroke="#dde7df"
+              strokeWidth="7"
+            />
+            <rect
+              x="59"
+              y="86"
+              width="38"
+              height="57"
+              rx="15"
+              fill="#f7faf7"
+              stroke="#bccbbf"
+              strokeWidth="2"
+            />
+            <rect
+              x="164"
+              y="86"
+              width="38"
+              height="57"
+              rx="15"
+              fill="#f7faf7"
+              stroke="#bccbbf"
+              strokeWidth="2"
+            />
+          </>
+        ) : product.category === "accessories" ? (
+          <>
+            <path
+              d="M96 142 C62 104 74 33 130 29 C186 32 197 104 164 142 Z"
+              fill="#fdfefd"
+              stroke="#c5cfc8"
+              strokeWidth="2"
+            />
+            <path d="M130 30 v45" stroke="#c5cfc8" strokeWidth="2" />
+            <rect x="126" y="45" width="8" height="22" rx="4" fill="#82998c" />
+          </>
+        ) : (
+          <>
+            <rect
+              x="59"
+              y="57"
+              width="146"
+              height="75"
+              rx="16"
+              fill="#f9fbf9"
+              stroke="#c5cfc8"
+              strokeWidth="2"
+            />
+            <rect x="75" y="75" width="116" height="36" rx="8" fill="#e7eeea" />
+            <rect x="83" y="89" width="17" height="7" rx="2" fill="#5c7364" />
+            <rect x="111" y="89" width="17" height="7" rx="2" fill="#5c7364" />
+            <circle cx="177" cy="92" r="4" fill="#4a8c66" />
+            <path
+              d="M60 95 C15 95 17 130 44 133"
+              fill="none"
+              stroke="#8f9f96"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </>
+        )}
+      </svg>
+    </div>
+  );
 }

@@ -2,6 +2,22 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-05 — Reservation and interruption boundaries
+
+- Finalized group commitments now reserve inventory during the checkout window, convert one commitment to one purchase per customer, and release unused reservations after expiry.
+- Recovery now also resumes an approved refund when a crash occurred before its provider operation was created.
+- Bounded vision input to four checkpoint samples to keep memory predictable on the small host. Every original stays available for human review; partial model coverage is disclosed.
+- Added boundary tests and standardized source formatting with a pinned formatter. No customer funds are moved without prior customer purchase approval or reviewer remedy authorization.
+- Validation: 59 tests pass, including real original-photo storage, cross-customer access rejection, stored-file tamper detection, and vision sample coverage. Four browser journeys pass with an uploaded synthetic receipt photo.
+
+## 2026-10-05 — Existing-instance deployment
+
+- Added local release packaging, a dedicated service user, private PostgreSQL, memory-limited app and recovery services, persistent private evidence, and Caddy HTTPS configuration.
+- Added environment-free release archives, separate protected server configuration, and deployment/rollback instructions. Added a Docker alternative without introducing additional paid AWS resources.
+- Validation: native EC2 service startup and production database health are checked separately from public HTTPS. Docker Compose configuration validates; container build/run remains unverified because the local daemon is stopped.
+- Public HTTPS and 11 hosted API checks pass against production PostgreSQL, direct Gemini, sandbox PayPal order creation, and private customer sessions. Buyer approval/capture/refund and actual webhook delivery remain separate release gates.
+- Published validation scope and setup instructions. Deterministic catalog/message/evidence evaluation passes 107 synthetic scenarios; this does not establish model accuracy.
+
 ## 2026-10-05 — Shopper interface and recovery
 
 - Added responsive shopping, explicit checkout review, group invitations, order timelines, evidence uploads, and customer-selected remedies. Reviewer authorization requires a recorded policy reason.

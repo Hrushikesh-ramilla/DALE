@@ -1,6 +1,6 @@
 # Validation status
 
-The implementation currently passes 54 unit, provider-contract, and embedded PostgreSQL integration tests, four Chromium browser journeys, and a production build.
+The implementation currently passes 59 unit, provider-contract, and embedded PostgreSQL integration tests, four Chromium browser journeys, 107 deterministic evaluation scenarios, and a production build. GitHub CI also passes.
 
 | Capability | Executable evidence | Limit |
 | --- | --- | --- |
@@ -12,6 +12,7 @@ The implementation currently passes 54 unit, provider-contract, and embedded Pos
 | Recovery | Persisted refund interruption, completed capture reconciliation, deadline and expiry tests | Single polling worker; old ambiguous refunds require manual provider reconciliation |
 | Gemini text and vision | `npm run verify:ai` passed three direct native API smoke checks | No held-out model accuracy claim |
 | PayPal adapter | `npm run verify:paypal` passed OAuth/create/retrieve against sandbox | Actual webhook delivery and financial completion pending |
+| EC2 production deployment | Public HTTPS health and 11 hosted API checks pass, including PostgreSQL, secure cookies, CSRF rejection, direct Gemini, group pricing, sandbox order creation, and order privacy | Unapproved sandbox orders; financial completion remains a separate check |
 
 Fixture and mocked provider tests are labeled separately from live checks. Raw reports live in ignored `.data/reports`; no credentials belong in test artifacts or Git history.
 
