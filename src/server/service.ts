@@ -807,7 +807,10 @@ export async function executeRefund(actor: Actor, orderId: string) {
     )
       throw new Error("The customer's refund has not been authorized.");
     assertReturnReady(item);
-    if (order.status === "refunded") return { order, operation: undefined };
+    if (order.status === "refunded") {
+      item.status = "resolved";
+      return { order, operation: undefined };
+    }
     if (state.orders.some((o) => o.replacementOf === orderId))
       throw new Error(
         "A replacement already exists. Review the remedy before refunding.",
@@ -956,7 +959,8 @@ export async function appealCase(actor: Actor, caseId: string, note: string) {
     if (!note.trim())
       throw new Error("Please describe what you want reviewed.");
     item.appeal = note;
-    item.status = "appealed";
+    if (!["approved", "refund_pending", "refund_failed"].includes(item.status))
+      item.status = "appealed";
     audit(state, actor, "case.appealed", caseId);
     return item;
   });

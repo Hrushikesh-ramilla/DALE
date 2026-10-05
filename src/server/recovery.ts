@@ -247,5 +247,8 @@ export async function workerTick() {
     [totalFailures],
   );
   await db.query("DELETE FROM sessions WHERE expires_at<now()");
+  await db.query(
+    "DELETE FROM request_budgets WHERE window_at<now()-interval '1 hour'",
+  );
   return { failures: totalFailures, jobsCompleted: jobs.completed };
 }

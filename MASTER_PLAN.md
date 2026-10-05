@@ -1,6 +1,6 @@
 # BuyerGuard master plan
 
-Prepared: 5 October 2026. Updated: 6 October 2026. Status: the core application is deployed on the user's existing EC2 instance. Local checks, hosted PostgreSQL, public HTTPS, and direct Gemini smoke checks pass. Complete PayPal sandbox verification is blocked by the merchant rejecting USD approval. Work continues on all independent milestones; no capture, refund, or genuine webhook delivery is claimed. See docs/IMPLEMENTATION_STATUS.md for requirement gaps, CHANGELOG.md for milestone history, and docs/VALIDATION.md for executed evidence.
+Prepared: 5 October 2026. Updated: 6 October 2026. Status: the core application is deployed on the user's existing EC2 instance. Local checks, hosted PostgreSQL, public HTTPS, fixture shopper/return/recovery journeys, and backup/restore checks pass. Earlier direct Gemini smoke checks passed; current quota is unavailable and hosted analysis uses fixtures under the owner's no-spend instruction. Complete PayPal sandbox verification is blocked by the merchant rejecting USD approval. Work continues on all independent milestones; no capture, refund, or genuine webhook delivery is claimed. See docs/IMPLEMENTATION_STATUS.md for requirement gaps, CHANGELOG.md for milestone history, and docs/VALIDATION.md for executed evidence.
 
 ## 1. Product decision
 
@@ -217,7 +217,7 @@ Threshold misses require fixing, narrowing the affected capability, or keeping i
 
 Test results must link requirement ID, build commit, environment, adapter modes, dataset/seed, expected result, observed result, timestamp, and failure artifact. Payment references are sandbox-only; sensitive details are redacted.
 
-Planned repository interface (to be implemented): README.md, .env.example, Dockerfile, compose.yaml, render.yaml, OpenAPI specification, migration/seed scripts, scenario manifests, engineering guide and reports. Planned npm scripts: test, test:integration, test:e2e, eval, db:migrate and db:seed. Commands are not available yet.
+Available repository interface: README.md, .env.example, Dockerfile, compose.yaml, generated docs/openapi.json, migration/fixture seed scripts, engineering guide, and ignored private reports. The user-selected EC2 deployment uses native systemd/Caddy; Render configuration is superseded. Commands include test, test:integration (200 seeded traces), test:e2e, eval, db:migrate, db:seed, docs:api, and hosted verification scripts. Optional object storage is an adapter; local Docker and EC2 use private persistent volumes/disk, and carrier events are simulated in the application. Physical captures, independent human labels/usability, and genuine PayPal/live-AI release gates remain distinct from fixture completion.
 
 Definition of implemented: reachable working UI/API + repeatable test + executed passing report + hosted verification + honest limitation statement. Fixture mode cannot substitute for live AI or PayPal integration validation.
 

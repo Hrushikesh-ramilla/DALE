@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Engineer contracts, trace gates, and restore rehearsal
+
+- Added 200 replayable workflow traces, stratified across eight fault profiles, with external requests prohibited. Added provider-success/lost-response recovery coverage and preserved pending financial work while an appeal is open; reaffirming an already-completed refund never creates another operation.
+- Published a generated OpenAPI contract from the same action/brief schemas used by routes. Added private, isolated nine-scenario seeding and orderly CLI database shutdown.
+- Added atomic per-actor request budgets, redacted error references, and measured application timing for authenticated session reads. Added a ten-session hosted performance verifier.
+- Executed an EC2 backup/restore rehearsal in a separate database/directory: workspace state and financial/audit references matched the snapshot, row counts matched, and all three originals matched SHA-256. Saved an owner-only, DPAPI-encrypted off-instance copy and verified its decrypt round-trip.
+- Validation: 99 unit/contract/database tests, 200 traces, isolated seeding, API generation, and production build pass. Hosted performance follows deployment. Containers already pass the seven return-stage journeys; queued/canceled GitHub runner allocation is tracked separately from code failures.
+
 ## 2026-10-06 — Cancellation and late-delivery choices
 
 - Bound new delivery promises and merchant-policy versions to purchase fingerprints. Changed terms require fresh customer approval.

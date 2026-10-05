@@ -1,3 +1,4 @@
+import { takeRequestBudget } from "@/server/budgets";
 import { z } from "zod";
 import { actorFromRequest, setSessionCookie } from "@/server/auth";
 import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
@@ -8,6 +9,7 @@ export async function POST(request: Request) {
   try {
     requireSameOrigin(request);
     const actor = await actorFromRequest();
+    await takeRequestBudget(actor, "engineering", 20);
     const input = z
       .object({ action: z.enum(["create", "reset"]), kind: scenarioKind })
       .parse(await jsonBody(request));

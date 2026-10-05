@@ -53,3 +53,13 @@ A reviewer can instead approve a no-return remedy with a recorded reason, includ
 Seller staff can record an inventory/fulfillment cancellation with a reason. Captured payment state remains visible until an approved refund actually completes. An unpaid order is canceled without capture; an unresolved capture is reconciled first. Shoppers can open support and change between refund/replacement before execution. An executed remedy requires human review before changing it, preventing duplicate reimbursement.
 
 New purchase reviews include a delivery promise and merchant policy version bound to the quote. Passing the delivery promise without recorded delivery offers help once; it does not automatically purchase another item or refund without authority. Use `late_order` to test the clock transition and `canceled_order` for the seller-cancellation flow. Replacement fulfillment carries no additional customer charge.
+
+## API, fixture seeds, traces, and request budgets
+
+The public `/api/openapi` document describes typed actions, private evidence/report access, role requirements, and provider webhook verification. Regenerate `docs/openapi.json` with `npm run docs:api` after changing shared schemas. Mutations require the configured Origin and session. Per-actor minute budgets are 120 actions, 20 uploads, 10 shopping analyses, and 20 engineering scenario requests; exhaustion returns 429 and Retry-After, without authorizing any work.
+
+`npm run db:seed` creates nine designated fixture workspaces in the configured local database; append one scenario ID to seed a single case. It blocks every outbound provider call. The owner-only `.data/deploy/seed-manifest.json` contains IDs and private shopper tokens for browser/API automation; never publish it. Use the web scenario controls for normal manual testing so the correct shopper cookie is set automatically. Seeds do not reset existing data or provider history.
+
+`npm run test:integration` executes 200 traces with replay seeds starting at 730100, 25 traces per fault profile. Set TRACE_SEED to replay a different deterministic sequence. The ignored workflow-traces report records seed/actions, expected invariants, observed counts, commit, environment, and failures. CI preserves this sanitized report. No provider request is permitted in that runner.
+
+`npm run verify:performance` creates ten distinct hosted shopper sessions and measures ten waves of authenticated session reads. Server-Timing reports application duration including response serialization; network-inclusive duration is recorded separately. This establishes the measured endpoint workload, not sustained production capacity or AI latency.
