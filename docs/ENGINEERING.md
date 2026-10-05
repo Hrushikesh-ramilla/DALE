@@ -64,6 +64,8 @@ The public `/api/openapi` document describes typed actions, private evidence/rep
 
 `npm run verify:performance` creates ten distinct hosted shopper sessions and measures ten waves of authenticated session reads. Server-Timing reports application duration including response serialization; network-inclusive duration is recorded separately. This establishes the measured endpoint workload, not sustained production capacity or AI latency.
 
+`npm run eval` checks the original 107 regressions and 300 hashed release records. `npm run eval:models` defaults to mocked native transport and executes the preregistered 60-case subset three times. It makes no network request in mock mode. A separate 20-image manifest covers owned release label graphics, not real photographs. Live mode requires both EVAL_PROVIDER_MODE=live and AI_FREE_QUOTA_CONFIRMED=true; do not enable billing. Record any failure without altering frozen labels or tuning on the final holdout. See [ACCEPTANCE.md](ACCEPTANCE.md) for human and physical gates.
+
 ## Clarification, comparison and device labels
 
 Enter a device or budget in Anything else that conflicts with the selected controls. Find my match asks for confirmation and returns no purchase candidates until the shopper explicitly confirms the selected constraints or corrects them. Unresolved clarification also blocks direct quote requests. Your shopping conversation retains the last 20 private turns; an invited buyer receives their own history. Compare catalog facts shows specifications and source IDs; unsupported provider prose is not displayed as a product assertion.

@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-10-05T20:46:40.873Z",
+  "build": "bae97054cec7a8c531e9181cab99c2fd0c26f733",
+  "corpus": "release-corpus-v1",
+  "datasetHashes": [
+    {
+      "file": "shopping.json",
+      "sha256": "be0b553dc4b1405cb444d081cda0a057cbee943ba8660afb6cec5d67bc3d59fb",
+      "count": 100
+    },
+    {
+      "file": "messages.json",
+      "sha256": "58e95ab5a96283abb986441f124705d899a06f29da2f58ec776f507e504d740d",
+      "count": 100
+    },
+    {
+      "file": "claims.json",
+      "sha256": "b455c9fd7a72722c19145a92d2bab6d55d4cddf10c41172d6a3314ecd6918d78",
+      "count": 100
+    }
+  ],
+  "environment": "Node v22.13.0",
+  "mode": "deterministic; network disabled",
+  "passed": 300,
+  "total": 300,
+  "shopping": {
+    "passed": 100,
+    "total": 100,
+    "groundedComparisons": 80,
+    "catalogCases": 80,
+    "canonicalTextCases": 20,
+    "liveOcrCasesExecuted": 0
+  },
+  "scams": {
+    "confusion": {
+      "truePositive": 50,
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "trueNegative": 50
+    },
+    "recall": 1,
+    "falseWarningRate": 0,
+    "descriptiveWilson95": {
+      "recall": [0.9286, 1],
+      "falseWarningRate": [0, 0.0714]
+    }
+  },
+  "claims": {
+    "confusion": {
+      "contradicted": {
+        "contradicted": 40,
+        "insufficient": 0,
+        "supported": 0
+      },
+      "insufficient": {
+        "contradicted": 0,
+        "insufficient": 60,
+        "supported": 0
+      }
+    },
+    "sourceGrounded": 100,
+    "total": 100,
+    "humanLabels": 0,
+    "financialActions": 0
+  },
+  "gates": {
+    "deterministicCases": true,
+    "syntheticScamRecall": true,
+    "syntheticFalseWarnings": true,
+    "liveModelAccuracy": "not executed: owner no-spend quota gate",
+    "physicalClaimsAndHumanAgreement": "not executed: independent human/physical evidence required"
+  },
+  "limitations": [
+    "Complete message strings differ from development tests. Templates/variant families are correlated; 300 cases are not 300 independent real-world samples. Label strings test normalization, not OCR accuracy. Rules can be evaluated without AI spend; live model agreement and image extraction remain pending.",
+    "Correlated templates mean these descriptive intervals are not real-world confidence guarantees. No learned-model accuracy, physical truth, fraud detection, human agreement or actual financial integration is established."
+  ],
+  "failureExamples": []
+}

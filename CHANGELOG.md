@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Evaluation execution and independent acceptance pack
+
+- Frozen v1 evaluation passes all 300 protocol cases: 100 shopping/normalization, 100 messages and 100 submitted-record claim cases. Published counts and descriptive uncertainty remain separate from learned accuracy and physical truth.
+- Froze 20 separate release-label graphics; the preregistered 60-case/three-repeat runner passes 180 mocked native Gemini requests, with no network/spend. Live mode requires explicit confirmation of free quota.
+- Completed the partial-group browser journey: another participant declines, the customer approves and pays the original $26.10, and reload preserves it. All ten browser journeys now have executed passing results; 134 unit/contract/database checks pass.
+- Added independent five-tester and controlled physical-capture procedures with empty recording templates. No human, physical or live model results are fabricated.
+- Deployed 221ccad passes all 10 new shopping/identification and 14 existing scenario checks. Final message/evaluation milestone deployment and hosted regression follow the production build.
+
 ## 2026-10-06 — Message safeguards and frozen release corpus
 
 - Normalized selected Unicode/zero-width/leet/dotted warning terms, kept safety reminders and ordinary catalog/delivery messages distinct, and checked voluntarily pasted conversations by instruction clauses.

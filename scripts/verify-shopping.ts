@@ -101,6 +101,30 @@ async function main() {
         .length === 0,
   });
   const api = await (await context.get("/api/openapi")).json();
+  for (const [message, suspicious] of [
+    [
+      "Never share your password. Do not pay by gift card; use the store checkout.",
+      false,
+    ],
+    [
+      "Seller: parcel ready.\nSeller: s.e.n.d your verifi\u200bcation c0de.\nSeller: p4y with g1ft c4rds right now.",
+      true,
+    ],
+  ] as const) {
+    const checked = await context.post("/api/actions", {
+      data: { action: "scam", message },
+    });
+    const result = (await checked.json()).result;
+    checks.push({
+      scenario: suspicious
+        ? "Hosted escalating obfuscated messages warn"
+        : "Hosted safety reminders remain low",
+      passed:
+        checked.ok() &&
+        result.mode === "fixture" &&
+        (result.level !== "low") === suspicious,
+    });
+  }
   checks.push({
     scenario: "Hosted generated contracts cover identify and confirmation",
     passed:
