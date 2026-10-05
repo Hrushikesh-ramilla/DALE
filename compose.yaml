@@ -16,7 +16,7 @@ services:
   app:
     build: .
     image: buyerguard:local
-    env_file: .env
+    env_file: ${BUYERGUARD_ENV_FILE:-.env}
     environment:
       DATABASE_URL: postgresql://buyerguard:${POSTGRES_PASSWORD}@database:5432/buyerguard
       APP_URL: ${APP_URL:-http://localhost:3000}
@@ -25,7 +25,19 @@ services:
       LOCAL_DATA_DIR: /data
       STORAGE_MODE: local
       ALLOW_LOCAL_STORAGE: "true"
-    ports: ["127.0.0.1:3000:3000"]
+      BUILD_ID: ${BUILD_ID:-development}
+    ports: ["127.0.0.1:${APP_PORT:-3000}:3000"]
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 20
     volumes: ["evidence:/data"]
     depends_on:
       database:
@@ -34,7 +46,7 @@ services:
   worker:
     image: buyerguard:local
     command: ["node", "worker.cjs"]
-    env_file: .env
+    env_file: ${BUYERGUARD_ENV_FILE:-.env}
     environment:
       DATABASE_URL: postgresql://buyerguard:${POSTGRES_PASSWORD}@database:5432/buyerguard
       LOCAL_DATA_DIR: /data
@@ -43,7 +55,7 @@ services:
     volumes: ["evidence:/data"]
     depends_on:
       app:
-        condition: service_started
+        condition: service_healthy
     restart: unless-stopped
 volumes:
   postgres:

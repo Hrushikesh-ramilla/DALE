@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+const origin = process.env.E2E_BASE_URL || "http://127.0.0.1:3100";
 async function operatorLogin(page: Page, workspaceId: string) {
   await page.goto("/");
   await page.getByRole("button", { name: "Operator workspace" }).click();
@@ -22,7 +23,7 @@ test("restricted scenario console shows a failed refund truthfully and archives 
   ).toBeVisible();
   const initial = await (await page.request.get("/api/session")).json();
   const denied = await page.request.post("/api/scenarios", {
-    headers: { Origin: "http://127.0.0.1:3100" },
+    headers: { Origin: origin },
     data: { action: "create", kind: "refund_failure" },
   });
   expect(denied.status()).toBe(403);

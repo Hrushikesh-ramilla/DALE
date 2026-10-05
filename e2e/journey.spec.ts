@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+const origin = process.env.E2E_BASE_URL || "http://127.0.0.1:3100";
 async function start(page: Page) {
   await page.goto("/");
   await page.getByRole("button", { name: "Start shopping" }).click();
@@ -156,12 +157,12 @@ test("checks a suspicious message and refuses a forged approval", async ({
     page.getByText("Pause and verify", { exact: true }),
   ).toBeVisible();
   const response = await page.request.post("/api/actions", {
-    headers: { Origin: "http://127.0.0.1:3100" },
+    headers: { Origin: origin },
     data: { action: "quote", productId: "P001", model: "Atlas 14" },
   });
   const data = await response.json();
   const forged = await page.request.post("/api/actions", {
-    headers: { Origin: "http://127.0.0.1:3100" },
+    headers: { Origin: origin },
     data: {
       action: "checkout",
       quoteId: data.result.id,
@@ -199,7 +200,7 @@ test("changed brief revokes a previous unpaid approval and persists preferences"
   page,
 }) => {
   await start(page);
-  const headers = { Origin: "http://127.0.0.1:3100" };
+  const headers = { Origin: origin };
   const quote = (
     await (
       await page.request.post("/api/actions", {

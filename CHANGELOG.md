@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Container execution gate
+
+- Added a clean, private fixture environment generator, configurable Compose environment/port, app readiness, and worker startup after database-backed readiness.
+- Added a Linux CI job that builds and starts the actual app/worker/PostgreSQL containers and runs all browser journeys against the containerized production server.
+- Browser journeys can target an external test URL without launching a development server. Container fixtures contain no PayPal or AI credentials.
+- Validation: Compose configuration and TypeScript checks pass locally. Container build/run is a required CI check; its result is recorded after execution, not inferred from configuration validation.
+
 ## 2026-10-06 — Isolated engineer scenarios
 
 - Added seven reviewer-created fixture scenarios: fresh shopping, delivered returns, identifier conflicts, seller silence, rejected refunds, interrupted refunds, and partial group payment.
