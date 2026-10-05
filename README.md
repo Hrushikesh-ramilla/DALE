@@ -14,6 +14,8 @@ Payments and analysis default to explicitly labeled fixtures. For real provider 
 
 Current owner constraint: no AI billing or spend. Hosted analysis stays in fixture mode while direct Gemini quota is unavailable; native text/vision/retry integration remains contract-tested.
 
+Shopping asks for confirmation when the message conflicts with the selected device or budget. Comparisons show catalog facts, and private conversation history survives reloads. Device-label suggestions require an explicit confirmation; fixture mode recognizes only the six owned synthetic images under `fixtures/device-labels`. Unknown or ambiguous labels never establish compatibility. `npm run verify:shopping` checks these paths over hosted HTTPS. Live `verify:ai` is disabled unless available free quota is explicitly confirmed with `AI_FREE_QUOTA_CONFIRMED=true`.
+
 See [MASTER_PLAN.md](MASTER_PLAN.md) for product policy and acceptance gates, [docs/VALIDATION.md](docs/VALIDATION.md) for verified scope, [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for hosting, and [CHANGELOG.md](CHANGELOG.md) for milestone history.
 
 The initial release uses one managed electronics storefront. Payment integration targets the PayPal sandbox. Fixture responses and synthetic shipping events are labeled and do not establish live integration or physical truth.

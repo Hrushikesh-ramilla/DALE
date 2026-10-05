@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Confirmed shopping and device-label suggestions
+
+- Conflicting device/budget statements require explicit shopper confirmation; unresolved briefs cannot produce quotes. Private conversation history is bounded and stale provider responses cannot overwrite changed constraints.
+- Catalog comparisons and summaries use recorded facts; provider prose cannot invent product specifications. Native vision accepts bounded appearance categories with actual image-source IDs, preserving human claim review.
+- Added exact canonical model extraction, six owned label fixtures, native OCR contracts and an upload/confirmation interface. Ambiguous labels produce no compatibility guess; extraction never changes a brief by itself.
+- Fixture refund references recover without contacting the real provider. Live AI verification requires explicit confirmation of free quota under the owner's no-spend instruction.
+- Validation: 115 unit/contract/database tests, nine browser journeys including corrected identification and expanded mobile comparisons, 200 traces, lint/typecheck pass. Hosted shopping checks follow the production build and deployment.
+
 ## 2026-10-06 — Engineer contracts, trace gates, and restore rehearsal
 
 - Added 200 replayable workflow traces, stratified across eight fault profiles, with external requests prohibited. Added provider-success/lost-response recovery coverage and preserved pending financial work while an appeal is open; reaffirming an already-completed refund never creates another operation.

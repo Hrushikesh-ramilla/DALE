@@ -1,6 +1,6 @@
 # Validation status
 
-The implementation currently passes 99 unit, provider-contract, and embedded PostgreSQL integration tests, eight Chromium browser journeys, 200 seeded workflow traces, and 107 deterministic evaluation scenarios. Each new milestone is built and checked before deployment. See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for remaining master-plan gates.
+The implementation currently passes 115 unit, provider-contract, and embedded PostgreSQL integration tests, nine Chromium browser journeys, 200 seeded workflow traces, and 107 deterministic evaluation scenarios. The newly expanded mobile comparison check also passes. Each milestone is built and checked before deployment. See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for remaining master-plan gates.
 
 | Capability | Executable evidence | Limit |
 | --- | --- | --- |
@@ -14,8 +14,8 @@ The implementation currently passes 99 unit, provider-contract, and embedded Pos
 | Engineer scenarios | Nine isolated no-provider-call scenario tests; failed-refund/archive browser journey | 14 hosted checks pass, including all nine scenarios, private photos/reports, prepaid handoff/receipt, early-refund rejection, and one fixture refund; reset preserves the previous audit |
 | Seeded workflow traces | `npm run test:integration`: 200/200 across eight fault profiles; repeated/unauthorized commands, prepaid returns, interruptions, failures, appeals, groups and replacements | Synthetic adapters; no external request is permitted |
 | Backup/restore | Separate hosted scratch database/path: state hash and row counts match; three original-file hashes match. Off-instance DPAPI copy decrypts to the same archive hash | Requires the owner Windows account for local decryption; separate configuration recovery remains necessary |
-| Engineering contracts/seed | Generated OpenAPI matches shared action/brief schemas; nine scenarios seeded on an isolated embedded database with private manifest | Hosted contract/performance checks follow deployment |
-| Production containers | Linux CI run 37361750645 built app/worker/PostgreSQL containers and passed all six browser journeys | Fixture provider adapters; separate native EC2 deployment |
+| Engineering contracts/seed | Generated OpenAPI matches shared action/brief schemas; nine privately seeded scenarios; hosted OpenAPI 3.1.0 and 100 authenticated reads across ten sessions pass, p95 43.42ms application and 206.45ms network inclusive | Read-workload measurement only; no sustained capacity or model-latency claim |
+| Production containers | Linux CI run 37368576177 passes checks, 200 traces, and app/worker/PostgreSQL containers with eight browser journeys at commit 37857e0 | Fixture provider adapters; subsequent changes require their own checks |
 | PayPal adapter | `npm run verify:paypal` passed OAuth/create/retrieve against sandbox | Actual webhook delivery and financial completion pending |
 | Restart persistence | `npm run verify:restart` passes after deployment restarted the services | Session/order and private original photo SHA-256 survived an observed restart on d0b9ed1; no disaster restore claim |
 | EC2 production deployment | Public HTTPS health and 12 hosted API checks pass, including PostgreSQL, secure cookies, CSRF rejection, direct Gemini, changed-brief approval renewal, group pricing, sandbox order creation, and order privacy | Unapproved sandbox orders; financial completion remains a separate check |

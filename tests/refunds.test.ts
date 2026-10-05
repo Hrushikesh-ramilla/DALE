@@ -7,6 +7,7 @@ import {
   openReturn,
   resolveCase,
   appealCase,
+  executeRefund,
 } from "../src/server/service";
 import { refundPayment } from "../src/server/payments";
 import { recoverWorkspace } from "../src/server/recovery";
@@ -18,6 +19,43 @@ beforeEach(() => {
   process.env.LOCAL_DATA_DIR = ":memory:";
   process.env.PAYMENT_MODE = "fixture";
   vi.mocked(refundPayment).mockReset();
+});
+it("reconciles a fixture processing reference without calling the real provider", async () => {
+  const workspace = await createWorkspace();
+  const buyer: Actor = {
+    workspaceId: workspace.id,
+    userId: "customer",
+    role: "buyer",
+  };
+  const reviewer: Actor = { ...buyer, userId: "reviewer", role: "reviewer" };
+  const quote = await makeQuote(buyer, "P001", "Atlas 14");
+  const order = await checkout(buyer, quote.id, quote.fingerprint);
+  await capture(buyer, order.id);
+  const item = await openReturn(buyer, order.id, "damaged", "refund");
+  vi.mocked(refundPayment)
+    .mockResolvedValueOnce({ id: "FIXTURE-PENDING", status: "PENDING" })
+    .mockResolvedValueOnce({ id: "FIXTURE-PENDING", status: "COMPLETED" });
+  const network = vi.spyOn(globalThis, "fetch").mockImplementation(() => {
+    throw new Error("Fixture attempted external request");
+  });
+  try {
+    await resolveCase(
+      reviewer,
+      item.id,
+      "refund",
+      "Customer remedy under merchant policy",
+    );
+    await executeRefund(reviewer, order.id);
+    expect((await getWorkspace(workspace.id)).orders[0].refundedAmount).toBe(
+      2900,
+    );
+    expect(vi.mocked(refundPayment).mock.calls[0][1]).toBe(
+      vi.mocked(refundPayment).mock.calls[1][1],
+    );
+    expect(network).not.toHaveBeenCalled();
+  } finally {
+    network.mockRestore();
+  }
 });
 it("recovers one remote refund that succeeded before its response was lost, including an appeal while pending", async () => {
   const workspace = await createWorkspace();

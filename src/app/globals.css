@@ -310,6 +310,35 @@ p {
   gap: 30px;
   margin-top: 39px;
 }
+.results {
+  min-width: 0;
+}
+.conversation-history,
+.catalog-comparison {
+  margin: 16px 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.conversation-history summary,
+.catalog-comparison summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.catalog-comparison table {
+  margin-top: 12px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.catalog-comparison td,
+.catalog-comparison th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
 .brief-panel {
   background: #fff;
   border: 1px solid var(--line);

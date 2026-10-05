@@ -112,6 +112,10 @@ export type Workspace = {
   invite: string;
   quotes: StoredQuote[];
   briefs?: PurchaseBrief[];
+  conversations?: {
+    buyerId: string;
+    turns: { role: "user" | "assistant"; text: string; at: string }[];
+  }[];
   orders: Order[];
   groups: Group[];
   cases: ReturnCase[];

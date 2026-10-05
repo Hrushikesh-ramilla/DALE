@@ -25,6 +25,7 @@ import {
   type Product,
 } from "@/domain/catalog";
 import { formatMoney } from "@/domain/money";
+import { clarifyBrief, comparisonFacts } from "@/domain/conversation";
 import type { ScamResult } from "@/domain/scams";
 import type { Order, ReturnCase, StoredQuote } from "@/server/state";
 import type { snapshot } from "@/server/service";
@@ -50,6 +51,16 @@ type Modal =
       status: "in_transit" | "received";
     }
   | { kind: "cancel"; order: Order }
+  | {
+      kind: "identify";
+      result?: {
+        proposedModel: string | null;
+        candidates: string[];
+        needsConfirmation: boolean;
+        mode: string;
+        message: string;
+      };
+    }
   | { kind: "scam" }
   | { kind: "resolve"; item: ReturnCase }
   | null;
@@ -98,6 +109,7 @@ export default function Storefront() {
     [accessCode, setAccessCode] = useState(""),
     [workspaceId, setWorkspaceId] = useState(""),
     [invite, setInvite] = useState("");
+  const [questions, setQuestions] = useState<string[]>([]);
   const [scenario, setScenario] = useState<ScenarioKind>("fresh");
   const restoreSession = useCallback((data: Session) => {
     setSession(data);
@@ -109,7 +121,9 @@ export default function Storefront() {
       setMessage(input.message);
       setPreference(input.preference);
       setPriority(input.priority);
-      setProducts(searchCatalog(input));
+      setProducts(data.brief.clarificationRequired ? [] : searchCatalog(input));
+      setQuestions(clarifyBrief(input));
+      if (data.conversation.length) setSummary(data.conversation.at(-1)!.text);
       setBriefDirty(false);
     }
   }, []);
@@ -165,7 +179,7 @@ export default function Storefront() {
     setModal({ kind: "login" });
   };
   const isBuyer = !session || session.actor.role === "buyer";
-  async function findProducts() {
+  async function findProducts(confirmConstraints = false) {
     if (!session) {
       startShopping();
       return;
@@ -174,6 +188,7 @@ export default function Storefront() {
       const result = await api<{
         products: Product[];
         analysis: { summary: string };
+        questions: string[];
       }>("/api/shopping", {
         message,
         model,
@@ -181,9 +196,11 @@ export default function Storefront() {
         budget: Math.round(Number(budget) * 100),
         preference,
         priority,
+        confirmConstraints,
       });
       setProducts(result.products);
       setSummary(result.analysis.summary);
+      setQuestions(result.questions);
       setBriefDirty(false);
       setNotice(
         "Your brief is saved. Older unpaid approvals require a fresh quote.",
@@ -386,6 +403,12 @@ export default function Storefront() {
                     ))}
                   </select>
                 </label>
+                <button
+                  className="button secondary small"
+                  onClick={() => setModal({ kind: "identify" })}
+                >
+                  Identify device from label
+                </button>
                 <label>
                   Looking for
                   <select
@@ -505,6 +528,69 @@ export default function Storefront() {
                   </span>
                   <p>{summary}</p>
                 </div>
+                {!!questions.length && (
+                  <div className="analysis-panel">
+                    <h3>Let's confirm the details.</h3>
+                    {questions.map((question) => (
+                      <p key={question}>{question}</p>
+                    ))}
+                    <button
+                      className="button secondary small"
+                      disabled={busy || !models.includes(model)}
+                      onClick={() => void findProducts(true)}
+                    >
+                      Use selected device and budget
+                    </button>
+                  </div>
+                )}
+                {!!session?.conversation.length && (
+                  <details className="conversation-history">
+                    <summary>Your shopping conversation</summary>
+                    {session.conversation.slice(-6).map((turn, i) => (
+                      <p key={`${turn.at}-${i}`}>
+                        <strong>
+                          {turn.role === "user" ? "You" : "BuyerGuard"}:
+                        </strong>{" "}
+                        {turn.text}
+                      </p>
+                    ))}
+                  </details>
+                )}
+                {products.length > 1 && (
+                  <details className="catalog-comparison">
+                    <summary>Compare catalog facts</summary>
+                    <div style={{ overflowX: "auto", maxWidth: "100%" }}>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Recorded specifications</th>
+                            <th>Source</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {comparisonFacts(products, model).map((row) => (
+                            <tr key={row.productId}>
+                              <th>{row.name}</th>
+                              <td>{formatMoney(row.price)}</td>
+                              <td>
+                                {row.specs.length
+                                  ? row.specs.join(" · ")
+                                  : "Not supplied; ask before buying"}
+                              </td>
+                              <td>{row.source}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="muted">
+                      Catalog facts support this comparison. Paid placement does
+                      not change organic rank.
+                    </p>
+                  </details>
+                )}
                 <div className="product-grid">
                   {products.map((product, index) => (
                     <article className="product-card" key={product.id}>
@@ -1866,6 +1952,71 @@ export default function Storefront() {
                     Record cancellation
                   </button>
                 </form>
+              </>
+            )}
+            {modal.kind === "identify" && (
+              <>
+                <h2 id="modal-title">Check your device label.</h2>
+                <p className="muted">
+                  Use a clear photo of the model label. Identification is a
+                  suggestion: confirm the model before compatibility checks or
+                  purchase. Unknown or conflicting labels receive clarification.
+                </p>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const form = new FormData(e.currentTarget);
+                    form.set("selectedModel", model);
+                    void run(async () => {
+                      const response = await fetch("/api/identify", {
+                        method: "POST",
+                        body: form,
+                      });
+                      const result = await response.json();
+                      if (!response.ok) throw new Error(result.error);
+                      setModal({ kind: "identify", result });
+                    });
+                  }}
+                >
+                  <label>
+                    Device label photo
+                    <input
+                      required
+                      name="image"
+                      type="file"
+                      accept="image/png,image/jpeg,image/webp"
+                      capture="environment"
+                    />
+                  </label>
+                  <button className="button primary full" disabled={busy}>
+                    Read model label
+                  </button>
+                </form>
+                {modal.result && (
+                  <div className="analysis-panel">
+                    <p>{modal.result.message}</p>
+                    <small>
+                      {modal.result.mode === "fixture"
+                        ? "Synthetic label fixture adapter; arbitrary images are not recognized in fixture mode."
+                        : "Provider-extracted label; confirmation required."}
+                    </small>
+                    {modal.result.proposedModel && (
+                      <button
+                        className="button secondary full"
+                        onClick={() => {
+                          setModel(modal.result!.proposedModel!);
+                          setBriefDirty(true);
+                          setModal(null);
+                          setNotice(
+                            "Device selection updated. Find my match saves it and renews older unpaid approvals.",
+                          );
+                        }}
+                      >
+                        Use {modal.result.proposedModel}
+                      </button>
+                    )}
+                  </div>
+                )}
               </>
             )}
             {modal.kind === "scam" && (

@@ -6,6 +6,11 @@ import {
   evidenceAnalysis,
 } from "../src/server/ai";
 import { catalog } from "../src/domain/catalog";
+if (process.env.AI_FREE_QUOTA_CONFIRMED !== "true") {
+  throw new Error(
+    "Live verification is disabled under the owner's no-spend instruction. Confirm available free quota and set AI_FREE_QUOTA_CONFIRMED=true before running this command.",
+  );
+}
 process.env.AI_MODE = "live";
 const results: { scenario: string; passed: boolean }[] = [];
 const shopping = await shoppingSummary(

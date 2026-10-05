@@ -1,0 +1,59 @@
+{
+  "version": "device-labels-v1",
+  "provenance": "Owned synthetic HTML-rendered labels. Fixture lookup tests adapter/workflow contracts; it does not measure live OCR accuracy.",
+  "fixtures": [
+    {
+      "id": "device-label-1",
+      "file": "label-1.png",
+      "sha256": "bfbdaff6c1938f0adf2a393a24a1fb2be50115147cae4656484efb0465b5144e",
+      "readable": true,
+      "expectedModels": [
+        "Atlas 14"
+      ]
+    },
+    {
+      "id": "device-label-2",
+      "file": "label-2.png",
+      "sha256": "5e6920d1d3dd012e82fc2996ee81e7bb89039dec84057af22726e9ce7380d2cc",
+      "readable": true,
+      "expectedModels": [
+        "Atlas 14 Pro"
+      ]
+    },
+    {
+      "id": "device-label-3",
+      "file": "label-3.png",
+      "sha256": "aefa9e2f54a855dc043c5be578e2a7f894e2796036e99b8017ebfb7e114226e7",
+      "readable": true,
+      "expectedModels": [
+        "Orbit 13"
+      ]
+    },
+    {
+      "id": "device-label-4",
+      "file": "label-4.png",
+      "sha256": "0f5c6d149e9504e3644f4ab12187529d57220ef92260db257d1fb54d7ed2168b",
+      "readable": true,
+      "expectedModels": [
+        "Slate 11"
+      ]
+    },
+    {
+      "id": "device-label-5",
+      "file": "label-5.png",
+      "sha256": "d249fd2613f5eaa471857f46c8155c0acc4ede6a91ea627b3b5fd130d1242fdd",
+      "readable": false,
+      "expectedModels": []
+    },
+    {
+      "id": "device-label-6",
+      "file": "label-6.png",
+      "sha256": "73a103deb2d8def2f46c0ca2ba7d9cd5f4584d6b9db65c7f437909762ae69b01",
+      "readable": true,
+      "expectedModels": [
+        "Atlas 14",
+        "Orbit 13"
+      ]
+    }
+  ]
+}

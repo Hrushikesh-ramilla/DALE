@@ -134,6 +134,22 @@ test("two shoppers unlock a discount with private individual checkout", async ({
     })
     .click();
   const first = await (await page.request.get("/api/session")).json();
+  await page.getByRole("button", { name: "Group deals", exact: true }).click();
+  await page.getByRole("button", { name: "Leave commitment" }).click();
+  await expect(
+    page.getByRole("button", { name: "Leave commitment" }),
+  ).toHaveCount(0);
+  expect(
+    (await (await page.request.get("/api/session")).json()).groups[0]
+      .memberCount,
+  ).toBe(0);
+  await page.getByRole("button", { name: "Discover", exact: true }).click();
+  await page
+    .getByRole("button", {
+      name: "Join group deal for Everyday USB-C Charger",
+      exact: true,
+    })
+    .click();
   const secondContext = await browser.newContext();
   const second = await secondContext.newPage();
   await second.goto("/");
@@ -201,6 +217,7 @@ test("mobile storefront and compatibility search", async ({ page }) => {
   await expect(
     page.getByRole("heading", { name: "Everyday USB-C Charger", exact: true }),
   ).toHaveCount(0);
+  await page.getByText("Compare catalog facts", { exact: true }).click();
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
