@@ -20,6 +20,7 @@ import {
   shippingEvent,
 } from "./service";
 import { recoverWorkspace } from "./recovery";
+import { cancelFulfillment } from "./order-options";
 
 export const scenarioKind = z.enum([
   "fresh",
@@ -29,6 +30,8 @@ export const scenarioKind = z.enum([
   "refund_failure",
   "refund_timeout",
   "group_partial",
+  "canceled_order",
+  "late_order",
 ]);
 export type ScenarioKind = z.infer<typeof scenarioKind>;
 export const scenarioDescriptions: Record<ScenarioKind, string> = {
@@ -39,6 +42,8 @@ export const scenarioDescriptions: Record<ScenarioKind, string> = {
   refund_failure: "Rejected provider refund with an open request",
   refund_timeout: "Interrupted refund recovered with its original operation",
   group_partial: "Group discount after another participant declines payment",
+  canceled_order: "Seller cancellation with payment still recorded",
+  late_order: "Delivery promise passed with customer remedy choices",
 };
 
 export async function createScenario(
@@ -103,6 +108,18 @@ export async function createScenario(
     serial: "FIXTURE-100",
     note: "Synthetic dispatch record; not a physical shipping claim.",
   });
+  if (kind === "canceled_order") {
+    await cancelFulfillment(
+      seller,
+      order.id,
+      "Synthetic seller inventory cancellation.",
+    );
+    return { ...session, kind };
+  }
+  if (kind === "late_order") {
+    await recoverWorkspace(workspace.id, Date.parse(quote.deliveryBy!) + 1);
+    return { ...session, kind };
+  }
   await shippingEvent(seller, order.id, "shipped");
   await shippingEvent(seller, order.id, "delivered");
   if (kind === "delivered") return { ...session, kind };

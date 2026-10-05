@@ -45,6 +45,27 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
     role: "reviewer",
   };
   await mutateWorkspace(workspaceId, (state) => {
+    for (const order of state.orders) {
+      if (
+        order.captureId &&
+        ["paid", "shipped"].includes(order.status) &&
+        order.quote.deliveryBy &&
+        Date.parse(order.quote.deliveryBy) <= now &&
+        !order.fulfillmentIssue
+      ) {
+        order.fulfillmentIssue = {
+          kind: "late",
+          reason:
+            "The recorded delivery promise passed without a recorded delivery.",
+          at: new Date(now).toISOString(),
+        };
+        order.events.push({
+          at: new Date(now).toISOString(),
+          text: "Delivery is late against the recorded promise. Choose support, refund, or replacement; no new purchase is made automatically.",
+        });
+        audit(state, actor, "fulfillment.late", order.id);
+      }
+    }
     for (const group of state.groups)
       if (
         group.status !== "expired" &&

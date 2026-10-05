@@ -1,6 +1,6 @@
 # Validation status
 
-The implementation currently passes 90 unit, provider-contract, and embedded PostgreSQL integration tests, seven Chromium browser journeys, and 107 deterministic evaluation scenarios. Each new milestone is built and checked before deployment. See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for remaining master-plan gates.
+The implementation currently passes 97 unit, provider-contract, and embedded PostgreSQL integration tests, eight Chromium browser journeys, and 107 deterministic evaluation scenarios. Each new milestone is built and checked before deployment. See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for remaining master-plan gates.
 
 | Capability | Executable evidence | Limit |
 | --- | --- | --- |
@@ -11,10 +11,10 @@ The implementation currently passes 90 unit, provider-contract, and embedded Pos
 | Both-party evidence | Checkpoint and capture-code authorization/expiry/reuse, hash/tamper/type checks, identifier conflicts, private case exports | Hashes prove file integrity, not physical contents or damage timing |
 | Recovery | Persisted refund interruption, completed capture reconciliation, deadline/expiry, leases/concurrency, retries and dead-letter tests; three claim/recovery checks pass against hosted PostgreSQL | Old ambiguous or provider-failed refunds require manual provider reconciliation |
 | Gemini text and vision | Earlier `npm run verify:ai` passed three direct native API smoke checks; native request/response and retry contracts pass | Latest live check returns HTTP 429. Owner requested no AI spend; hosted analysis uses fixtures while quota is unavailable. No held-out model accuracy claim |
-| Engineer scenarios | Seven isolated no-provider-call scenario tests; failed-refund/archive browser journey | Hosted scenario verification follows deployment; reset preserves the previous audit |
+| Engineer scenarios | Seven isolated no-provider-call scenario tests; failed-refund/archive browser journey | 12 hosted checks pass, including all seven scenarios, private photos/reports, prepaid handoff/receipt, early-refund rejection, and one fixture refund; reset preserves the previous audit |
 | Production containers | Linux CI run 37361750645 built app/worker/PostgreSQL containers and passed all six browser journeys | Fixture provider adapters; separate native EC2 deployment |
 | PayPal adapter | `npm run verify:paypal` passed OAuth/create/retrieve against sandbox | Actual webhook delivery and financial completion pending |
-| Restart persistence | `npm run verify:restart` passes after deployment restarted the services | Session and unapproved order persistence; no disaster restore claim |
+| Restart persistence | `npm run verify:restart` passes after deployment restarted the services | Session/order and private original photo SHA-256 survived an observed restart on d0b9ed1; no disaster restore claim |
 | EC2 production deployment | Public HTTPS health and 12 hosted API checks pass, including PostgreSQL, secure cookies, CSRF rejection, direct Gemini, changed-brief approval renewal, group pricing, sandbox order creation, and order privacy | Unapproved sandbox orders; financial completion remains a separate check |
 
 Fixture and mocked provider tests are labeled separately from live checks. Raw reports live in ignored `.data/reports`; no credentials belong in test artifacts or Git history.

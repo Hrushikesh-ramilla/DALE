@@ -28,6 +28,7 @@ export type Order = {
     | "canceled";
   createdAt: string;
   deliveredAt?: string;
+  fulfillmentIssue?: { kind: "canceled" | "late"; reason: string; at: string };
   providerOrderId?: string;
   captureId?: string;
   refundedAmount: number;

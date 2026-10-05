@@ -66,6 +66,12 @@ async function main() {
         ),
     );
     let expected = true;
+    if (kind === "canceled_order" || kind === "late_order")
+      expected =
+        snapshot.orders[0].fulfillmentIssue?.kind ===
+          (kind === "canceled_order" ? "canceled" : "late") &&
+        snapshot.orders[0].status === "paid" &&
+        snapshot.orders[0].refundedAmount === 0;
     if (kind === "refund_failure")
       expected =
         snapshot.orders[0].status === "refund_failed" &&
@@ -184,6 +190,66 @@ async function main() {
         ),
       });
       await browser.close();
+      const reviewer = await client();
+      const seller = await client();
+      await login(reviewer, "reviewer", snapshot.actor.workspaceId);
+      await login(seller, "seller", snapshot.actor.workspaceId);
+      const arranged = await reviewer.post("/api/actions", {
+        data: {
+          action: "authorize_return",
+          caseId: item.id,
+          decision: "prepaid",
+          reason: "Synthetic merchant damage policy covers return shipping.",
+          labelReference: "DEMO-LABEL-HOSTED",
+        },
+      });
+      const early = await reviewer.post("/api/actions", {
+        data: {
+          action: "resolve",
+          caseId: item.id,
+          remedy: "refund",
+          note: "Receipt still pending.",
+        },
+      });
+      const handoff = await operator.post("/api/actions", {
+        data: {
+          action: "return_shipping",
+          caseId: item.id,
+          status: "in_transit",
+          trackingReference: "DEMO-TRACK-HOSTED",
+        },
+      });
+      const received = await seller.post("/api/actions", {
+        data: {
+          action: "return_shipping",
+          caseId: item.id,
+          status: "received",
+          trackingReference: "DEMO-TRACK-HOSTED",
+        },
+      });
+      const resolved = await reviewer.post("/api/actions", {
+        data: {
+          action: "resolve",
+          caseId: item.id,
+          remedy: "refund",
+          note: "Synthetic return received; customer-selected refund under merchant policy.",
+        },
+      });
+      const final = await resolved.json();
+      results.push({
+        scenario:
+          "Hosted prepaid handoff/receipt gates a single customer-selected fixture refund",
+        passed:
+          arranged.ok() &&
+          !early.ok() &&
+          handoff.ok() &&
+          received.ok() &&
+          resolved.ok() &&
+          final.snapshot.orders[0].refundedAmount === 2900 &&
+          final.result.returnShipment.customerCost === 0,
+      });
+      await reviewer.dispose();
+      await seller.dispose();
       const cookies = (await operator.storageState()).cookies;
       await writeFile(
         ".data/deploy/restart-check.json",

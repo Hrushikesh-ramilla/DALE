@@ -16,6 +16,8 @@ Sign in as reviewer, open Environment details, select Engineering scenario, and 
 | `seller_silence` | Synthetic response deadline advanced; one human-review escalation with no automatic refund or denial |
 | `refund_failure` | Refund failed, zero refunded balance, visible provider fixture reference and human-review next step |
 | `refund_timeout` | Authorized refund initially has an unknown outcome; worker recovers using the same operation, with one refund total |
+| `canceled_order` | Seller cancellation leaves the captured payment recorded and offers customer-selected refund/replacement |
+| `late_order` | Simulated clock passes the delivery promise; one help event, with no automatic money movement |
 | `group_partial` | Another synthetic participant declines payment; the customer's locked 10% discount remains available |
 
 To reset, sign in as reviewer for a designated fixture workspace and choose Archive fixture and start fresh. The old workspace is retained with financial and evidence history, becomes read-only, and a new workspace receives the new shopper session. Normal provider workspaces cannot be reset. An unverified webhook cannot act as a fixture or impersonate PayPal.
@@ -38,10 +40,16 @@ In an evidence form, optionally request a capture code, include it with the item
 
 Download private case report from an owned support case. It separates submitted identifiers/descriptions and provenance from model analysis and financial records, verifies original bytes at export, and includes only the case/order's audit references. Repeated images are a review cue, never an automatic denial. Missing or mismatched original files are reported rather than described as intact.
 
-`npm run verify:scenarios` tests all seven isolated scenarios against public HTTPS without contacting AI or moving real sandbox money. It also exercises a browser, challenge-linked multipart photo, private report, and cross-customer denial. It saves a protected photo/session/order baseline. After actually restarting the app, `npm run verify:restart` checks the changed server instance and original image hash alongside session/order persistence.
+`npm run verify:scenarios` tests all nine isolated scenarios against public HTTPS without contacting AI or moving real sandbox money. It also exercises a browser, challenge-linked multipart photo, private report, and cross-customer denial. It saves a protected photo/session/order baseline. After actually restarting the app, `npm run verify:restart` checks the changed server instance and original image hash alongside session/order persistence.
 
 ## Prepaid returns and exceptions
 
 A reviewer can select a merchant-paid return in the remedy form and record a demo prepaid label reference plus policy reason. The shopper records the handoff reference, and seller staff record matching receipt in a separate profile. Only after receipt can the reviewer process the requested remedy; customer return shipping cost stays zero. These are simulated carrier records, not a purchased label or confirmed physical parcel.
 
 A reviewer can instead approve a no-return remedy with a recorded reason, including a customer-benefit exception while receipt is pending. Prior arrangements remain in the private case report. Recorded delivery within 30 days meets the demo merchant window; missing timing or a late request goes to review without automatic denial. The 24-hour merchant remedy target starts at return receipt or waiver, triggers one human follow-up if missed, and is distinct from provider settlement timing.
+
+## Canceled and late orders
+
+Seller staff can record an inventory/fulfillment cancellation with a reason. Captured payment state remains visible until an approved refund actually completes. An unpaid order is canceled without capture; an unresolved capture is reconciled first. Shoppers can open support and change between refund/replacement before execution. An executed remedy requires human review before changing it, preventing duplicate reimbursement.
+
+New purchase reviews include a delivery promise and merchant policy version bound to the quote. Passing the delivery promise without recorded delivery offers help once; it does not automatically purchase another item or refund without authority. Use `late_order` to test the clock transition and `canceled_order` for the seller-cancellation flow. Replacement fulfillment carries no additional customer charge.

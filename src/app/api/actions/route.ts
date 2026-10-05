@@ -4,6 +4,7 @@ import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
 import * as service from "@/server/service";
 import { issueCaptureSession } from "@/server/provenance";
 import { authorizeReturn, returnShippingEvent } from "@/server/return-shipping";
+import { cancelFulfillment, chooseRemedy } from "@/server/order-options";
 const id = z.string().uuid();
 const checkpoint = z.enum([
   "seller_dispatch",
@@ -12,6 +13,16 @@ const checkpoint = z.enum([
   "seller_return",
 ]);
 const schema = z.discriminatedUnion("action", [
+  z.object({
+    action: z.literal("cancel_fulfillment"),
+    orderId: id,
+    reason: z.string().min(1).max(2000),
+  }),
+  z.object({
+    action: z.literal("choose_remedy"),
+    caseId: id,
+    request: z.enum(["refund", "replacement"]),
+  }),
   z.object({
     action: z.literal("authorize_return"),
     caseId: id,
@@ -94,6 +105,12 @@ export async function POST(request: Request) {
     const input = schema.parse(await jsonBody(request));
     let result: unknown;
     switch (input.action) {
+      case "cancel_fulfillment":
+        result = await cancelFulfillment(actor, input.orderId, input.reason);
+        break;
+      case "choose_remedy":
+        result = await chooseRemedy(actor, input.caseId, input.request);
+        break;
       case "authorize_return":
         result = await authorizeReturn(
           actor,
