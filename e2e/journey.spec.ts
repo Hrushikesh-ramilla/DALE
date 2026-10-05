@@ -54,16 +54,14 @@ test("customer purchase, evidence, operator refund, and persistent status", asyn
   await page
     .getByLabel("What does this record show?")
     .fill("The housing arrived cracked.");
-  await page
-    .getByLabel("Photo (optional, up to 4 MB)")
-    .setInputFiles({
-      name: "receipt.png",
-      mimeType: "image/png",
-      buffer: Buffer.from(
-        "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=",
-        "base64",
-      ),
-    });
+  await page.getByLabel("Photo (optional, up to 4 MB)").setInputFiles({
+    name: "receipt.png",
+    mimeType: "image/png",
+    buffer: Buffer.from(
+      "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=",
+      "base64",
+    ),
+  });
   await page.getByRole("button", { name: "Record evidence" }).click();
   const original = await page
     .getByRole("link", { name: "View original image" })
@@ -195,4 +193,41 @@ test("mobile storefront and compatibility search", async ({ page }) => {
     path: ".data/reports/mobile-storefront.png",
     fullPage: true,
   });
+});
+
+test("changed brief revokes a previous unpaid approval and persists preferences", async ({
+  page,
+}) => {
+  await start(page);
+  const headers = { Origin: "http://127.0.0.1:3100" };
+  const quote = (
+    await (
+      await page.request.post("/api/actions", {
+        headers,
+        data: { action: "quote", productId: "P001", model: "Atlas 14" },
+      })
+    ).json()
+  ).result;
+  await page.getByLabel("Feature to prioritize").fill("100W");
+  await page.getByLabel("Rank by").selectOption("features");
+  await page.getByRole("button", { name: "Find my match" }).click();
+  await expect(page.locator(".product-card").first()).toContainText(
+    "Power USB-C Charger",
+  );
+  const old = await page.request.post("/api/actions", {
+    headers,
+    data: {
+      action: "checkout",
+      quoteId: quote.id,
+      fingerprint: quote.fingerprint,
+    },
+  });
+  expect(old.status()).toBe(400);
+  expect((await old.json()).error).toContain("brief changed");
+  await page.reload();
+  await expect(page.getByLabel("Feature to prioritize")).toHaveValue("100W");
+  await expect(page.getByLabel("Rank by")).toHaveValue("features");
+  await expect(page.locator(".product-card").first()).toContainText(
+    "Power USB-C Charger",
+  );
 });

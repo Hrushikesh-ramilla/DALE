@@ -17,7 +17,13 @@ import {
   Users,
   X,
 } from "lucide-react";
-import { catalog, models, productById, type Product } from "@/domain/catalog";
+import {
+  catalog,
+  models,
+  productById,
+  searchCatalog,
+  type Product,
+} from "@/domain/catalog";
 import { formatMoney } from "@/domain/money";
 import type { ScamResult } from "@/domain/scams";
 import type { Order, ReturnCase, StoredQuote } from "@/server/state";
@@ -65,7 +71,10 @@ export default function Storefront() {
   const [model, setModel] = useState("Atlas 14"),
     [category, setCategory] = useState("chargers"),
     [budget, setBudget] = useState("80"),
-    [message, setMessage] = useState("");
+    [message, setMessage] = useState(""),
+    [preference, setPreference] = useState(""),
+    [priority, setPriority] = useState<"price" | "features">("price"),
+    [briefDirty, setBriefDirty] = useState(false);
   const [summary, setSummary] = useState(
     "Tell us what you need. We'll keep compatibility, your budget, and your choices at the center.",
   );
@@ -77,6 +86,20 @@ export default function Storefront() {
     [accessCode, setAccessCode] = useState(""),
     [workspaceId, setWorkspaceId] = useState(""),
     [invite, setInvite] = useState("");
+  const restoreSession = useCallback((data: Session) => {
+    setSession(data);
+    if (data.brief) {
+      const input = data.brief.input;
+      setModel(input.model);
+      setCategory(input.category);
+      setBudget(String(input.budget / 100));
+      setMessage(input.message);
+      setPreference(input.preference);
+      setPriority(input.priority);
+      setProducts(searchCatalog(input));
+      setBriefDirty(false);
+    }
+  }, []);
   const refresh = useCallback(async () => {
     try {
       setSession(await api<Session>("/api/session"));
@@ -88,13 +111,13 @@ export default function Storefront() {
     let active = true;
     void api<Session>("/api/session")
       .then((data) => {
-        if (active) setSession(data);
+        if (active) restoreSession(data);
       })
       .catch(() => {});
     return () => {
       active = false;
     };
-  }, []);
+  }, [restoreSession]);
   const run = useCallback(async (fn: () => Promise<void>) => {
     setBusy(true);
     setError("");
@@ -143,14 +166,27 @@ export default function Storefront() {
         model,
         category,
         budget: Math.round(Number(budget) * 100),
+        preference,
+        priority,
       });
       setProducts(result.products);
       setSummary(result.analysis.summary);
+      setBriefDirty(false);
+      setNotice(
+        "Your brief is saved. Older unpaid approvals require a fresh quote.",
+      );
+      await refresh();
     });
   }
   async function choose(product: Product, groupId?: string) {
     if (!session) {
       startShopping();
+      return;
+    }
+    if (briefDirty) {
+      setError(
+        "Save your updated brief with Find my match before reviewing a purchase.",
+      );
       return;
     }
     await run(async () => {
@@ -327,7 +363,10 @@ export default function Storefront() {
                   Your device
                   <select
                     value={model}
-                    onChange={(e) => setModel(e.target.value)}
+                    onChange={(e) => {
+                      setModel(e.target.value);
+                      setBriefDirty(true);
+                    }}
                   >
                     {models.map((m) => (
                       <option key={m}>{m}</option>
@@ -338,7 +377,10 @@ export default function Storefront() {
                   Looking for
                   <select
                     value={category}
-                    onChange={(e) => setCategory(e.target.value)}
+                    onChange={(e) => {
+                      setCategory(e.target.value);
+                      setBriefDirty(true);
+                    }}
                   >
                     {Object.entries({
                       chargers: "Chargers",
@@ -363,7 +405,10 @@ export default function Storefront() {
                       min="1"
                       max="1000"
                       value={budget}
-                      onChange={(e) => setBudget(e.target.value)}
+                      onChange={(e) => {
+                        setBudget(e.target.value);
+                        setBriefDirty(true);
+                      }}
                     />
                   </div>
                 </label>
@@ -372,10 +417,48 @@ export default function Storefront() {
                   <textarea
                     placeholder="A lighter charger for my commute…"
                     value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                      setBriefDirty(true);
+                    }}
                     rows={3}
                   />
                 </label>
+                <label>
+                  Feature to prioritize
+                  <input
+                    value={preference}
+                    maxLength={80}
+                    placeholder="65W, Ethernet, braided cable…"
+                    onChange={(e) => {
+                      setPreference(e.target.value);
+                      setBriefDirty(true);
+                    }}
+                  />
+                </label>
+                <label>
+                  Rank by
+                  <select
+                    value={priority}
+                    onChange={(e) => {
+                      setPriority(e.target.value as "price" | "features");
+                      setBriefDirty(true);
+                    }}
+                  >
+                    <option value="price">
+                      Lowest price, then matching features
+                    </option>
+                    <option value="features">
+                      Matching features, then lowest price
+                    </option>
+                  </select>
+                </label>
+                {briefDirty && (
+                  <p className="muted" role="status">
+                    Brief changed. Find my match saves it and replaces older
+                    unpaid approvals.
+                  </p>
+                )}
                 <button
                   className="button primary full"
                   disabled={busy}
@@ -416,14 +499,19 @@ export default function Storefront() {
                         <ProductArt product={product} />
                         {index === 0 && (
                           <span className="card-badge">
-                            Best price for your brief
+                            {priority === "features"
+                              ? "Top match for your brief"
+                              : "Best price for your brief"}
                           </span>
                         )}
                       </div>
                       <div className="card-details">
                         <div className="product-topline">
                           <span className="fit-label">
-                            <Check size={12} /> Fits {model}
+                            <Check size={12} />{" "}
+                            {briefDirty
+                              ? "Update your brief to confirm fit"
+                              : `Fits ${model}`}
                           </span>
                           {product.sponsored && (
                             <span className="sponsored">Sponsored</span>
@@ -436,6 +524,17 @@ export default function Storefront() {
                             <span key={spec}>{spec}</span>
                           ))}
                         </div>
+                        <small className="muted">
+                          Source: {product.source}.{" "}
+                          {priority === "features" &&
+                          preference &&
+                          product.specs
+                            .join(" ")
+                            .toLowerCase()
+                            .includes(preference.toLowerCase())
+                            ? `Matches “${preference}” in listed specifications.`
+                            : "Ranked by listed price."}
+                        </small>
                         <div className="price-row">
                           <strong>{formatMoney(product.price)}</strong>
                           <small>Full price · shipping included</small>
@@ -970,7 +1069,7 @@ export default function Storefront() {
                   onSubmit={(e) => {
                     e.preventDefault();
                     void run(async () => {
-                      setSession(
+                      restoreSession(
                         await api<Session>("/api/session", {
                           role,
                           accessCode,

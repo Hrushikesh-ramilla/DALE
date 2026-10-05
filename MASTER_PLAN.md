@@ -1,6 +1,6 @@
 # BuyerGuard master plan
 
-Prepared: 5 October 2026. Status: core application implemented; local validation and direct Gemini smoke checks pass. Hosted deployment and complete PayPal sandbox verification are in progress. See CHANGELOG.md and docs/VALIDATION.md for implemented scope and evidence; remaining acceptance gates below remain release goals.
+Prepared: 5 October 2026. Updated: 6 October 2026. Status: the core application is deployed on the user's existing EC2 instance. Local checks, hosted PostgreSQL, public HTTPS, and direct Gemini smoke checks pass. Complete PayPal sandbox verification is blocked by the merchant rejecting USD approval. Work continues on all independent milestones; no capture, refund, or genuine webhook delivery is claimed. See docs/IMPLEMENTATION_STATUS.md for requirement gaps, CHANGELOG.md for milestone history, and docs/VALIDATION.md for executed evidence.
 
 ## 1. Product decision
 
@@ -161,7 +161,7 @@ Verify real PayPal webhook signatures before processing, persist verified events
 
 Local environment: Docker Compose starts web, worker, PostgreSQL, object storage and carrier simulator. A development profile uses deterministic payment/AI fixtures. An integration profile uses actual PayPal sandbox and live AI inference. Environment badges identify each adapter's mode separately.
 
-Hosted target: Render web service plus worker and managed PostgreSQL; a private external S3-compatible bucket stores evidence. A checked-in render.yaml describes app/worker/database deployment, with storage setup documented separately. Render supports [Next.js web services](https://render.com/docs/deploy-nextjs-app), [background workers](https://render.com/docs/background-workers), and [Blueprint configuration](https://render.com/docs/blueprint-spec).
+Hosted target, selected by the user: the existing EC2 t3.micro runs the app, worker, private PostgreSQL, and Caddy HTTPS. Build locally and deploy versioned standalone releases with systemd memory limits. Private evidence persists on the existing disk; the S3 adapter remains an optional, separately tested migration. No new paid infrastructure is provisioned. The originally proposed Render target is superseded by this explicit hosting choice. See docs/DEPLOYMENT.md for the actual deployment and storage limitations.
 
 Deployment sequence:
 

@@ -2,10 +2,16 @@ import { randomUUID } from "node:crypto";
 import { getDatabase, type Sql } from "./database";
 import type { Quote } from "../domain/guard";
 import type { ClaimAnalysis, Evidence } from "../domain/claims";
+import type { PurchaseBrief } from "../domain/brief";
 export type { Evidence } from "../domain/claims";
 export type Role = "buyer" | "seller" | "reviewer";
 export type Actor = { workspaceId: string; userId: string; role: Role };
-export type StoredQuote = Quote & { buyerId: string; fingerprint: string };
+export type StoredQuote = Quote & {
+  buyerId: string;
+  fingerprint: string;
+  briefVersion?: number;
+  invalidatedAt?: string;
+};
 export type Order = {
   id: string;
   buyerId: string;
@@ -68,6 +74,7 @@ export type Workspace = {
   id: string;
   invite: string;
   quotes: StoredQuote[];
+  briefs?: PurchaseBrief[];
   orders: Order[];
   groups: Group[];
   cases: ReturnCase[];

@@ -28,6 +28,7 @@ import { aiMode, evidenceAnalysis, scamAnalysis, shoppingSummary } from "./ai";
 import { evidenceHash, getAsset, putAsset } from "./storage";
 import { getDatabase } from "./database";
 import { selectVisionEvidence } from "./vision";
+import { briefSchema, type ShoppingBrief } from "../domain/brief";
 
 function buyer(actor: Actor) {
   if (actor.role !== "buyer")
@@ -77,6 +78,7 @@ export async function snapshot(actor: Actor) {
   const state = await getWorkspace(actor.workspaceId);
   return {
     actor,
+    brief: state.briefs?.find((brief) => brief.buyerId === actor.userId),
     invite: actor.role === "buyer" ? state.invite : undefined,
     orders: state.orders.filter(
       (o) => actor.role !== "buyer" || o.buyerId === actor.userId,
@@ -100,21 +102,84 @@ export async function snapshot(actor: Actor) {
       paymentMode() === "sandbox" ? process.env.PAYPAL_CLIENT_ID : undefined,
   };
 }
-export async function shop(input: {
-  message: string;
-  model: string;
-  category: string;
-  budget: number;
-}) {
+export async function updateBrief(actor: Actor, input: ShoppingBrief) {
+  buyer(actor);
+  const normalized = briefSchema.parse(input);
+  return mutateWorkspace(actor.workspaceId, (state) => {
+    state.briefs ??= [];
+    const previous = state.briefs.find(
+      (brief) => brief.buyerId === actor.userId,
+    );
+    if (
+      previous &&
+      Object.entries(normalized).every(
+        ([key, value]) => previous.input[key as keyof ShoppingBrief] === value,
+      )
+    )
+      return previous;
+    // Never revoke an already-sent capture: it retains its original approval and is reconciled.
+    const now = new Date().toISOString();
+    const brief = {
+      buyerId: actor.userId,
+      version: (previous?.version ?? 0) + 1,
+      input: normalized,
+      updatedAt: now,
+    };
+    state.briefs = state.briefs.filter((item) => item.buyerId !== actor.userId);
+    state.briefs.push(brief);
+    for (const quote of state.quotes.filter(
+      (q) => q.buyerId === actor.userId,
+    )) {
+      const order = state.orders.find((item) => item.quote.id === quote.id);
+      if (
+        order?.captureId ||
+        (order &&
+          state.operations.some(
+            (op) => op.orderId === order.id && op.kind === "capture",
+          ))
+      )
+        continue;
+      quote.invalidatedAt ??= now;
+      if (order) {
+        order.quote.invalidatedAt ??= now;
+        order.status = "canceled";
+        event(
+          order,
+          "Your shopping brief changed. Review a fresh quote before payment.",
+        );
+      }
+    }
+    audit(state, actor, "brief.updated", String(brief.version));
+    return brief;
+  });
+}
+function assertCurrentQuote(
+  state: Workspace,
+  quote: import("./state").StoredQuote,
+) {
+  if (quote.invalidatedAt)
+    throw new Error(
+      "Your shopping brief changed. Review a fresh quote before payment.",
+    );
+  const brief = state.briefs?.find((item) => item.buyerId === quote.buyerId);
+  if (brief && quote.briefVersion !== brief.version)
+    throw new Error(
+      "Your shopping brief changed. Review a fresh quote before payment.",
+    );
+}
+export async function shop(input: ShoppingBrief, actor?: Actor) {
+  const brief = actor ? await updateBrief(actor, input) : undefined;
   const products = searchCatalog(input);
   try {
     return {
       products,
+      brief,
       analysis: await shoppingSummary(input.message, products, input.model),
     };
   } catch {
     return {
       products,
+      brief,
       analysis: {
         summary:
           "Assisted analysis is temporarily unavailable. These catalog options meet your selected model and budget.",
@@ -140,6 +205,15 @@ export async function makeQuote(
       "This product is not confirmed compatible with your device.",
     );
   return mutateWorkspace(actor.workspaceId, (state) => {
+    const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
+    if (
+      brief &&
+      (brief.input.model !== model ||
+        (brief.input.category && brief.input.category !== product.category))
+    )
+      throw new Error(
+        "This item differs from your shopping brief. Update the brief first.",
+      );
     if (activeStock(state, productId, groupId, actor.userId) >= product.stock)
       throw new Error(
         "This item is currently reserved. Please choose another option.",
@@ -173,6 +247,10 @@ export async function makeQuote(
       amount = group.amount!;
       expiry = Math.min(expiry, new Date(group.checkoutExpiresAt).getTime());
     }
+    if (brief && amount > brief.input.budget)
+      throw new Error(
+        "This item exceeds your approved budget. Update the brief first.",
+      );
     const quote = {
       id: randomUUID(),
       buyerId: actor.userId,
@@ -188,6 +266,7 @@ export async function makeQuote(
       version: 1,
       groupId,
       fingerprint: "",
+      briefVersion: brief?.version,
     };
     if (!quote.payee)
       throw new Error("PayPal merchant configuration is missing.");
@@ -271,6 +350,7 @@ export async function checkout(
       (q) => q.id === quoteId && q.buyerId === actor.userId,
     );
     if (!quote) throw new Error("Quote not found");
+    assertCurrentQuote(state, quote);
     checkPurchase(quote, fingerprint, quote);
     const existing = state.orders.find((o) => o.quote.id === quoteId);
     if (existing)
@@ -358,6 +438,10 @@ export async function capture(actor: Actor, orderId: string) {
     if (order.captureId) return { order, operation: undefined };
     if (order.status !== "checkout_pending" || !order.providerOrderId)
       throw new Error("Checkout is not ready for payment.");
+    const existingOperation = state.operations.find(
+      (op) => op.orderId === orderId && op.kind === "capture",
+    );
+    if (!existingOperation) assertCurrentQuote(state, order.quote);
     checkPurchase(order.quote, order.quote.fingerprint, order.quote);
     let operation = state.operations.find(
       (op) => op.kind === "capture" && op.orderId === order.id,

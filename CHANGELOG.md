@@ -10,6 +10,13 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Added boundary tests and standardized source formatting with a pinned formatter. No customer funds are moved without prior customer purchase approval or reviewer remedy authorization.
 - Validation: 59 tests pass, including real original-photo storage, cross-customer access rejection, stored-file tamper detection, and vision sample coverage. Four browser journeys pass with an uploaded synthetic receipt photo.
 
+## 2026-10-06 — Versioned shopping briefs and approval renewal
+
+- Persisted individual shopping briefs and explicit price/feature priorities. Catalog source labels explain ranking, and sponsored placement cannot improve rank.
+- Changed briefs invalidate earlier unpaid quotes and cancel unpaid approvals. Confirmed payments and already-sent capture operations retain their original financial records for reconciliation.
+- Added budget/device/category checks against the saved brief, browser reload coverage, cross-customer regression coverage, and a hosted build identifier. Documented remaining master-plan gates without treating partial features as complete.
+- Validation: 62 unit/contract/database tests and five Chromium journeys pass. Hosted verification follows the versioned release deployment; PayPal USD approval remains externally blocked.
+
 ## 2026-10-05 — Existing-instance deployment
 
 - Added local release packaging, a dedicated service user, private PostgreSQL, memory-limited app and recovery services, persistent private evidence, and Caddy HTTPS configuration.

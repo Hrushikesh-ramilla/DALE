@@ -50,6 +50,9 @@ for (const key of [
   "AI_API_BASE_URL",
 ])
   if (source[key]) values[key] = source[key];
+values.BUILD_ID = execFileSync("git", ["rev-parse", "HEAD"], {
+  encoding: "utf8",
+}).trim();
 await writeFile(
   `${directory}/production.env`,
   Object.entries(values)

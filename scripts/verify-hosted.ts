@@ -51,9 +51,11 @@ async function main() {
     return { context: authorized, session, cookie };
   }
   const anonymous = await request.newContext({ baseURL, timeout: 120000 });
+  const health = await anonymous.get("/api/health");
+  const build = (await health.json()).build;
   results.push({
     scenario: "Production database health",
-    passed: (await anonymous.get("/api/health")).ok(),
+    passed: health.ok(),
   });
   results.push({
     scenario: "Anonymous actions rejected",
@@ -103,6 +105,37 @@ async function main() {
       ),
   });
   const second = await client("buyer", undefined, first.session.invite);
+  const oldQuote = (
+    await (
+      await first.context.post("/api/actions", {
+        data: { action: "quote", productId: "P001", model: "Atlas 14" },
+      })
+    ).json()
+  ).result;
+  const changed = await first.context.post("/api/brief", {
+    data: {
+      message: "A compact charger",
+      model: "Atlas 14",
+      category: "chargers",
+      budget: 3900,
+      preference: "65W",
+      priority: "features",
+    },
+  });
+  const invalid = await first.context.post("/api/actions", {
+    data: {
+      action: "checkout",
+      quoteId: oldQuote.id,
+      fingerprint: oldQuote.fingerprint,
+    },
+  });
+  results.push({
+    scenario: "Changed brief invalidates unpaid approval",
+    passed:
+      changed.ok() &&
+      invalid.status() === 400 &&
+      (await invalid.json()).error.includes("brief changed"),
+  });
   const privateOrders = await second.context.get("/api/session");
   results.push({
     scenario: "Independent customer identity in invited workspace",
@@ -175,6 +208,7 @@ async function main() {
     JSON.stringify(
       {
         checkedAt: new Date().toISOString(),
+        build,
         transport,
         results,
         limitation:

@@ -20,6 +20,7 @@ import {
   shippingEvent,
   snapshot,
   evidenceBytes,
+  updateBrief,
 } from "../src/server/service";
 import { writeFile } from "node:fs/promises";
 import { randomUUID } from "node:crypto";
@@ -52,6 +53,68 @@ async function paid(actor: Actor) {
   return capture(actor, order.id);
 }
 describe("persistent shopper workflows", () => {
+  it("replaces unpaid approvals when a brief changes, preserving other buyers and paid orders", async () => {
+    const { buyer, second } = await actors();
+    const paidOrder = await paid(buyer);
+    const otherQuote = await makeQuote(second, "P001", "Atlas 14");
+    const oldQuote = await makeQuote(buyer, "P001", "Atlas 14");
+    const pending = await checkout(buyer, oldQuote.id, oldQuote.fingerprint);
+    const input = {
+      message: "",
+      model: "Slate 11",
+      category: "chargers" as const,
+      budget: 3000,
+      preference: "",
+      priority: "price" as const,
+    };
+    await updateBrief(buyer, input);
+    await expect(
+      checkout(buyer, oldQuote.id, oldQuote.fingerprint),
+    ).rejects.toThrow("brief changed");
+    await expect(capture(buyer, pending.id)).rejects.toThrow("not ready");
+    await expect(makeQuote(buyer, "P001", "Atlas 14")).rejects.toThrow("brief");
+    await expect(makeQuote(buyer, "P018", "Slate 11")).rejects.toThrow(
+      "budget",
+    );
+    const fresh = await makeQuote(buyer, "P002", "Slate 11");
+    const freshOrder = await checkout(buyer, fresh.id, fresh.fingerprint);
+    expect((await capture(buyer, freshOrder.id)).status).toBe("paid");
+    expect(
+      (await checkout(second, otherQuote.id, otherQuote.fingerprint)).status,
+    ).toBe("checkout_pending");
+    expect(
+      (await getWorkspace(buyer.workspaceId)).orders.find(
+        (o) => o.id === paidOrder.id,
+      )?.status,
+    ).toBe("paid");
+    expect((await updateBrief(buyer, input)).version).toBe(1);
+  });
+  it("keeps the original approval for an in-flight capture during a brief change", async () => {
+    const { buyer } = await actors();
+    const quote = await makeQuote(buyer, "P001", "Atlas 14");
+    const order = await checkout(buyer, quote.id, quote.fingerprint);
+    await mutateWorkspace(buyer.workspaceId, (state) => {
+      state.operations.push({
+        id: "in-flight",
+        orderId: order.id,
+        kind: "capture",
+        state: "unknown",
+        amount: 2900,
+      });
+    });
+    await updateBrief(buyer, {
+      message: "",
+      model: "Slate 11",
+      category: "chargers",
+      budget: 3000,
+      preference: "",
+      priority: "price",
+    });
+    const state = await getWorkspace(buyer.workspaceId);
+    expect(state.orders[0].status).toBe("checkout_pending");
+    expect(state.orders[0].quote.invalidatedAt).toBeUndefined();
+    expect((await capture(buyer, order.id)).status).toBe("paid");
+  });
   it("stores original photo bytes, isolates access, and detects stored-file tampering", async () => {
     const { buyer, second } = await actors();
     const order = await paid(buyer);

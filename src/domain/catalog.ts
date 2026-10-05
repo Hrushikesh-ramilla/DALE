@@ -127,6 +127,7 @@ export function searchCatalog(input: {
   category?: string;
   budget: number;
   preference?: string;
+  priority?: "price" | "features";
 }) {
   if (!models.includes(input.model)) return [];
   return catalog
@@ -148,8 +149,9 @@ export function searchCatalog(input: {
           ? 1
           : 0;
       return (
-        Number(bMatch) - Number(aMatch) ||
+        (input.priority === "features" ? Number(bMatch) - Number(aMatch) : 0) ||
         a.price - b.price ||
+        Number(bMatch) - Number(aMatch) ||
         a.id.localeCompare(b.id)
       );
     });

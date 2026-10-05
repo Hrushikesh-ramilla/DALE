@@ -58,6 +58,23 @@ describe("customer purchase rules", () => {
   });
 });
 describe("recommendations", () => {
+  it("uses the customer's explicit feature priority and keeps price priority within budget", () => {
+    const input = {
+      model: "Atlas 14",
+      category: "chargers",
+      budget: 5000,
+      preference: "100W",
+    };
+    expect(searchCatalog({ ...input, priority: "features" })[0].id).toBe(
+      "P003",
+    );
+    expect(searchCatalog({ ...input, priority: "price" })[0].id).toBe("P001");
+    expect(
+      searchCatalog({ ...input, budget: 4000, priority: "features" }).some(
+        (p) => p.id === "P003",
+      ),
+    ).toBe(false);
+  });
   it("removes incompatible sponsored products", () => {
     expect(
       searchCatalog({
