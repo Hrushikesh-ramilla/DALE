@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Message safeguards and frozen release corpus
+
+- Normalized selected Unicode/zero-width/leet/dotted warning terms, kept safety reminders and ordinary catalog/delivery messages distinct, and checked voluntarily pasted conversations by instruction clauses.
+- Native scam responses use advisory categories. Models cannot suppress deterministic warnings or display free-text accusations; outages preserve local checks.
+- Added browser coverage for leaving/rejoining before group finalization and keeping the locked price after another participant declines.
+- Froze 300 synthetic cases and content hashes before running the release evaluator. Labels are protocol expectations, not physical or independent human truth; live OCR/model gates remain pending under the no-spend instruction.
+- Development validation: 134 unit/contract/database checks and nine browser journeys pass; the added partial-group browser check is undergoing final verification. Frozen-corpus evaluation has not yet been executed at this commit.
+
 ## 2026-10-06 — Confirmed shopping and device-label suggestions
 
 - Conflicting device/budget statements require explicit shopper confirmation; unresolved briefs cannot produce quotes. Private conversation history is bounded and stale provider responses cannot overwrite changed constraints.

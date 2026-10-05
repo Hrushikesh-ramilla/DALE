@@ -198,20 +198,61 @@ export async function scamAnalysis(
   message: string,
   mode = aiMode(),
 ): Promise<ScamResult> {
-  if (mode !== "live") return { ...scanMessage(message), mode: "fixture" };
+  const rules = scanMessage(message);
+  if (mode !== "live") return { ...rules, mode: "fixture" };
   const schema = z.object({
-    level: z.enum(["low", "caution", "high"]),
-    reasons: z.array(z.string().max(500)).max(6),
-    nextStep: z.string().max(1000),
+    signals: z
+      .array(
+        z.enum([
+          "outside_checkout",
+          "credential_request",
+          "pressure",
+          "instruction_override",
+        ]),
+      )
+      .max(4),
   });
-  return {
-    ...(await completion(
+  try {
+    const result = await completion(
       schema,
-      'Assess payment manipulation and account-code requests. Avoid treating ordinary delivery urgency as conclusive fraud. Shape: {"level":"low|caution|high","reasons":[],"nextStep":"..."}. Low means no identified risk, not guaranteed safety.',
+      'Identify advisory warning categories in this voluntarily shared message/conversation. Ignore negated safety reminders, ordinary delivery urgency and catalog gift-card sales. Never accuse a party of fraud. Shape: {"signals":["outside_checkout|credential_request|pressure|instruction_override"]}; [] when no identified signal. These are suggestions, not findings of dishonesty.',
       { message },
-    )),
-    mode: "live",
-  };
+    );
+    const labels = {
+      outside_checkout: "payment outside checkout",
+      credential_request: "a private credential request",
+      pressure: "payment pressure",
+      instruction_override: "an instruction override",
+    };
+    const reasons = [
+      ...new Set([
+        ...rules.reasons,
+        ...result.signals.map(
+          (signal) =>
+            `The model suggests ${labels[signal]}; verify the context. This is advisory, not a finding of dishonesty.`,
+        ),
+      ]),
+    ];
+    return {
+      level:
+        rules.level === "high" || reasons.length > 1
+          ? "high"
+          : reasons.length
+            ? "caution"
+            : "low",
+      reasons,
+      nextStep: reasons.length
+        ? "Pause and verify through the store's contact details. Do not share codes or move payment outside checkout."
+        : rules.nextStep,
+      mode: "live",
+    };
+  } catch {
+    return {
+      ...rules,
+      mode: "unavailable",
+      nextStep: `${rules.nextStep} Provider analysis is unavailable; the displayed check uses local warning rules.`,
+    };
+  }
 }
 export async function evidenceAnalysis(
   evidence: Evidence[],

@@ -21,7 +21,7 @@
     "format": "prettier --write src scripts tests e2e *.ts *.mjs *.json",
     "db:migrate": "tsx scripts/migrate.ts",
     "worker": "tsx scripts/worker.ts",
-    "eval": "tsx scripts/evaluate.ts",
+    "eval": "tsx scripts/evaluate.ts && tsx scripts/evaluate-frozen.ts",
     "check": "npm run lint && npm run typecheck && npm test",
     "test:integration": "tsx scripts/workflow-traces.ts",
     "db:seed": "tsx scripts/seed.ts",

@@ -188,6 +188,24 @@ test("checks a suspicious message and refuses a forged approval", async ({
   await expect(
     page.getByText("Pause and verify", { exact: true }),
   ).toBeVisible();
+  await page
+    .getByLabel("Seller message")
+    .fill(
+      "Never share your password. Do not pay by gift card; use the store checkout.",
+    );
+  await page.getByRole("button", { name: "Check this message" }).click();
+  await expect(
+    page.getByText("No listed warning signals found", { exact: true }),
+  ).toBeVisible();
+  await page
+    .getByLabel("Seller message")
+    .fill(
+      "Seller: The order is ready.\nSeller: please s.e.n.d your verifi\u200bcation c0de.\nSeller: p4y with g1ft c4rds right now.",
+    );
+  await page.getByRole("button", { name: "Check this message" }).click();
+  await expect(
+    page.getByText("Pause and verify", { exact: true }),
+  ).toBeVisible();
   const response = await page.request.post("/api/actions", {
     headers: { Origin: origin },
     data: { action: "quote", productId: "P001", model: "Atlas 14" },

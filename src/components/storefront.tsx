@@ -2054,7 +2054,7 @@ export default function Storefront() {
                       name="message"
                       rows={5}
                       maxLength={6000}
-                      placeholder="Paste the message here…"
+                      placeholder="Paste a message or the conversation you choose to share…"
                     />
                   </label>
                   <button className="button primary full" disabled={busy}>
