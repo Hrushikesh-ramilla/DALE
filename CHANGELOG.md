@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Final hosted regression and current-state recovery
+
+- Deployed application commit 5b393c0 on the existing EC2 instance; 12 hosted shopping/message/label checks and 14 scenario/evidence/return/group checks pass. The declined-group participant scenario now completes the customer's original $26.10 fixture payment.
+- A 100-read/10-session HTTPS workload passes with application p95 30.68ms and network-inclusive p95 175.35ms. Runtime dependency audit reports zero findings.
+- Added protected restart preparation for saved brief/conversation. After an observed restart, session/order, original photo SHA-256, brief and conversation all persist.
+- Fresh isolated restore verifies 92 workspaces, 158 sessions, 46 jobs and all five original files. Transferred backup SHA-256 and DPAPI decrypt round-trip match; newest and earlier encrypted snapshots are retained.
+- Existing SSH session supported temporary bounded HTTPS transfers when new connections failed. All transfer routes/helpers were removed. Latest GitHub jobs await hosted runners; genuine PayPal completion, no-spend live model accuracy and independent human/physical acceptance remain explicit gates.
+
 ## 2026-10-06 — Evaluation execution and independent acceptance pack
 
 - Frozen v1 evaluation passes all 300 protocol cases: 100 shopping/normalization, 100 messages and 100 submitted-record claim cases. Published counts and descriptive uncertainty remain separate from learned accuracy and physical truth.

@@ -32,7 +32,12 @@ const passed =
   evidencePersisted &&
   response.ok &&
   data.actor.workspaceId === saved.workspaceId &&
-  data.orders.some((order: { id: string }) => order.id === saved.orderId);
+  data.orders.some((order: { id: string }) => order.id === saved.orderId) &&
+  (!saved.briefVersion || data.brief?.version === saved.briefVersion) &&
+  (!saved.conversationHash ||
+    createHash("sha256")
+      .update(JSON.stringify(data.conversation))
+      .digest("hex") === saved.conversationHash);
 await writeFile(
   ".data/reports/restart-persistence.json",
   JSON.stringify(
@@ -49,6 +54,9 @@ await writeFile(
           : "Unapproved sandbox order",
         ...(saved.evidenceId
           ? ["Private original image with matching SHA-256"]
+          : []),
+        ...(saved.conversationHash
+          ? ["Saved shopping brief and private conversation"]
           : []),
       ],
       limitation:

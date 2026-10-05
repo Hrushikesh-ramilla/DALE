@@ -15,6 +15,7 @@
     "verify:ai": "tsx scripts/verify-ai.ts",
     "verify:hosted": "tsx scripts/verify-hosted.ts",
     "verify:restart": "tsx scripts/verify-restart.ts",
+    "prepare:restart": "tsx scripts/prepare-restart.ts",
     "verify:queue": "tsx scripts/verify-queue.ts",
     "verify:scenarios": "tsx scripts/verify-scenarios.ts",
     "package:release": "node scripts/package-release.mjs",

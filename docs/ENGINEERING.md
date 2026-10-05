@@ -28,6 +28,8 @@ Run `npm run check`, `npm run eval`, `npm run build`, and `npm run test:e2e`. Fi
 
 `npm run verify:hosted` checks the public production endpoint and records an unapproved sandbox order plus the current server instance. Restart the app service, then run `npm run verify:restart`; it requires a different instance ID and the original session/order. It does not establish a disaster restore.
 
+For the no-spend fixture workflow, run `npm run verify:scenarios` to save a protected session/order/original-photo baseline, then `npm run prepare:restart` to include a saved brief/private conversation. Actually restart app/worker or run the documented backup rehearsal, then `npm run verify:restart`. This compares the changed instance and all baseline records; a simple reload is insufficient.
+
 For real PostgreSQL queue claims, forward a private local port over SSH to the existing host's localhost:5432, then run `npm run verify:queue` with `DATABASE_TUNNEL_PORT` if changing the default 3112. The script reads database configuration from the ignored deployment environment, claims only its own validation workspace, checks concurrent leases/crash recovery, and removes only its own non-financial validation rows. Never expose PostgreSQL publicly.
 
 Failed or old ambiguous refunds need a reviewer to inspect the original operation and provider reference in PayPal before attempting any external remedy. Recreating an operation to bypass the original state is prohibited. Dead-letter jobs retain their reference; a retry alone does not authorize money movement.
