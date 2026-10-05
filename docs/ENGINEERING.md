@@ -31,3 +31,11 @@ For real PostgreSQL queue claims, forward a private local port over SSH to the e
 Failed or old ambiguous refunds need a reviewer to inspect the original operation and provider reference in PayPal before attempting any external remedy. Recreating an operation to bypass the original state is prohibited. Dead-letter jobs retain their reference; a retry alone does not authorize money movement.
 
 For an issue, record build commit, requirement/scenario ID, adapter modes, workspace ID, expected/observed result, timestamp, and redacted screenshot/trace. Do not include access codes, session cookies, API keys, buyer passwords, or original customer media in a public issue.
+
+## Evidence and case reports
+
+In an evidence form, optionally request a capture code, include it with the item and its identifier in a photo, and submit within ten minutes. The code is single-use and bound to that account, checkpoint, and case/order. Changing the checkpoint clears the form's code. A code links an upload to a challenge; visibility in the image, capture timing, parcel contents, and honesty are not established. Plain descriptions and ordinary uploads remain available.
+
+Download private case report from an owned support case. It separates submitted identifiers/descriptions and provenance from model analysis and financial records, verifies original bytes at export, and includes only the case/order's audit references. Repeated images are a review cue, never an automatic denial. Missing or mismatched original files are reported rather than described as intact.
+
+`npm run verify:scenarios` tests all seven isolated scenarios against public HTTPS without contacting AI or moving real sandbox money. It also exercises a browser, challenge-linked multipart photo, private report, and cross-customer denial. It saves a protected photo/session/order baseline. After actually restarting the app, `npm run verify:restart` checks the changed server instance and original image hash alongside session/order persistence.

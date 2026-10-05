@@ -104,6 +104,17 @@ export type Workspace = {
     resource: string;
   }[];
   webhookIds: string[];
+  captureSessions?: {
+    id: string;
+    code: string;
+    actorId: string;
+    role: Role;
+    resourceId: string;
+    checkpoint: Evidence["checkpoint"];
+    issuedAt: string;
+    expiresAt: string;
+    usedAt?: string;
+  }[];
 };
 export async function createWorkspace(options: { fixture?: boolean } = {}) {
   const state: Workspace = {

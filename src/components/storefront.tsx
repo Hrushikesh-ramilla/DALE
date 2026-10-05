@@ -38,7 +38,12 @@ type Modal =
   | { kind: "login" }
   | { kind: "quote"; quote: StoredQuote }
   | { kind: "return"; order: Order }
-  | { kind: "evidence"; item?: ReturnCase; order?: Order }
+  | {
+      kind: "evidence";
+      item?: ReturnCase;
+      order?: Order;
+      capture?: { id: string; code: string; expiresAt: string };
+    }
   | { kind: "scam" }
   | { kind: "resolve"; item: ReturnCase }
   | null;
@@ -215,17 +220,13 @@ export default function Storefront() {
       note: String(form.get("note")),
     };
     if (file?.size) {
-      const params = new URLSearchParams(
-        Object.entries(input).filter(([, v]) => v !== undefined) as [
-          string,
-          string,
-        ][],
-      );
-      const response = await fetch(`/api/evidence?${params}`, {
-        method: "POST",
-        headers: { "Content-Type": file.type },
-        body: file,
-      });
+      const body = new FormData();
+      for (const [key, value] of Object.entries(input))
+        if (value !== undefined) body.set(key, value);
+      const captureSessionId = form.get("captureSessionId");
+      if (captureSessionId) body.set("captureSessionId", captureSessionId);
+      body.set("image", file);
+      const response = await fetch("/api/evidence", { method: "POST", body });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error);
       await refresh();
@@ -900,6 +901,9 @@ export default function Storefront() {
                         {item.status.replaceAll("_", " ")}
                       </span>
                     </div>
+                    <a href={`/api/case-report?id=${item.id}`} download>
+                      Download private case report
+                    </a>
                     <div className="evidence-grid">
                       {item.evidence.map((entry) => (
                         <div className="evidence-card" key={entry.id}>
@@ -923,6 +927,19 @@ export default function Storefront() {
                           <small>
                             Integrity hash: {entry.hash.slice(0, 16)}…
                           </small>
+                          <small>
+                            {entry.provenance?.challenge
+                              ? `Capture code linked: ${entry.provenance.challenge.code}`
+                              : entry.assetKey
+                                ? "Uploaded file; capture origin unverified"
+                                : "Submitted description"}
+                          </small>
+                          {!!entry.provenance?.repeatedEvidenceIds.length && (
+                            <small>
+                              Identical bytes appeared earlier in this case. A
+                              reviewer can check the context.
+                            </small>
+                          )}
                         </div>
                       ))}
                     </div>
@@ -1472,7 +1489,12 @@ export default function Storefront() {
                 >
                   <label>
                     Checkpoint
-                    <select name="checkpoint">
+                    <select
+                      name="checkpoint"
+                      onChange={() =>
+                        setModal({ ...modal, capture: undefined })
+                      }
+                    >
                       {modal.order ? (
                         <option value="seller_dispatch">Seller dispatch</option>
                       ) : session?.actor.role === "buyer" ? (
@@ -1510,8 +1532,46 @@ export default function Storefront() {
                       type="file"
                       name="image"
                       accept="image/png,image/jpeg,image/webp"
+                      capture="environment"
                     />
                   </label>
+                  <input
+                    type="hidden"
+                    name="captureSessionId"
+                    value={modal.capture?.id || ""}
+                  />
+                  <button
+                    type="button"
+                    className="button secondary full"
+                    disabled={busy}
+                    onClick={(e) => {
+                      const checkpoint = String(
+                        new FormData(e.currentTarget.form!).get("checkpoint"),
+                      );
+                      void run(async () => {
+                        const capture = (await action({
+                          action: "capture_session",
+                          checkpoint,
+                          ...(modal.order
+                            ? { orderId: modal.order.id }
+                            : { caseId: modal.item!.id }),
+                        })) as { id: string; code: string; expiresAt: string };
+                        setModal({ ...modal, capture });
+                      });
+                    }}
+                  >
+                    Get capture code (optional)
+                  </button>
+                  {modal.capture && (
+                    <p role="status">
+                      Capture code: <strong>{modal.capture.code}</strong>.
+                      Include it with the item identifier and condition in your
+                      photo. Expires{" "}
+                      {new Date(modal.capture.expiresAt).toLocaleTimeString()}.
+                      This records a link to your upload; it does not verify
+                      capture timing or physical truth.
+                    </p>
+                  )}
                   <button className="button primary full" disabled={busy}>
                     Record evidence <Check size={16} />
                   </button>

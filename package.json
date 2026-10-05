@@ -16,6 +16,7 @@
     "verify:hosted": "tsx scripts/verify-hosted.ts",
     "verify:restart": "tsx scripts/verify-restart.ts",
     "verify:queue": "tsx scripts/verify-queue.ts",
+    "verify:scenarios": "tsx scripts/verify-scenarios.ts",
     "package:release": "node scripts/package-release.mjs",
     "format": "prettier --write src scripts tests e2e *.ts *.mjs *.json",
     "db:migrate": "tsx scripts/migrate.ts",

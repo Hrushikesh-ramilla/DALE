@@ -2,6 +2,7 @@ import { z } from "zod";
 import { actorFromRequest } from "@/server/auth";
 import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
 import * as service from "@/server/service";
+import { issueCaptureSession } from "@/server/provenance";
 const id = z.string().uuid();
 const checkpoint = z.enum([
   "seller_dispatch",
@@ -10,6 +11,12 @@ const checkpoint = z.enum([
   "seller_return",
 ]);
 const schema = z.discriminatedUnion("action", [
+  z.object({
+    action: z.literal("capture_session"),
+    caseId: id.optional(),
+    orderId: id.optional(),
+    checkpoint,
+  }),
   z.object({
     action: z.literal("quote"),
     productId: z.string().max(20),
@@ -73,6 +80,9 @@ export async function POST(request: Request) {
     const input = schema.parse(await jsonBody(request));
     let result: unknown;
     switch (input.action) {
+      case "capture_session":
+        result = await issueCaptureSession(actor, input, input.checkpoint);
+        break;
       case "quote":
         result = await service.makeQuote(
           actor,

@@ -55,6 +55,10 @@ test("customer purchase, evidence, operator refund, and persistent status", asyn
   await page
     .getByLabel("What does this record show?")
     .fill("The housing arrived cracked.");
+  await page
+    .getByRole("button", { name: "Get capture code (optional)" })
+    .click();
+  await expect(page.getByRole("dialog")).toContainText("Capture code:");
   await page.getByLabel("Photo (optional, up to 4 MB)").setInputFiles({
     name: "receipt.png",
     mimeType: "image/png",
@@ -70,6 +74,18 @@ test("customer purchase, evidence, operator refund, and persistent status", asyn
   expect((await page.request.get(original!)).headers()["content-type"]).toBe(
     "image/png",
   );
+  const reportURL = await page
+    .getByRole("link", { name: "Download private case report" })
+    .getAttribute("href");
+  const report = await (await page.request.get(reportURL!)).json();
+  expect(
+    report.submittedRecords.some(
+      (r: { integrity: string; provenance: { source: string } }) =>
+        r.integrity === "verified_at_export" &&
+        r.provenance.source === "challenge_associated_upload",
+    ),
+  ).toBe(true);
+  expect(report.transactionRecords.adapter).toBe("fixture");
   await page.getByRole("button", { name: "Review evidence" }).click();
   await expect(page.locator(".analysis-panel")).toContainText(
     "cannot be established",
