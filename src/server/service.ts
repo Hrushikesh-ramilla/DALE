@@ -32,6 +32,8 @@ import { selectVisionEvidence } from "./vision";
 import { briefSchema, type ShoppingBrief } from "../domain/brief";
 import { enqueueJob, recoveryStatus } from "./jobs";
 import { evidenceTarget, submissionProvenance } from "./provenance";
+import { returnEligibility } from "../domain/return-policy";
+import { assertReturnReady } from "./return-shipping";
 
 function buyer(actor: Actor) {
   if (actor.role !== "buyer")
@@ -565,6 +567,7 @@ export async function openReturn(
       deadlineAt: new Date(Date.now() + 86400000).toISOString(),
       sellerResponded: false,
       evidence: [...order.dispatchEvidence],
+      eligibility: returnEligibility(reason, order.deliveredAt),
     };
     state.cases.push(item);
     order.returnId = item.id;
@@ -715,6 +718,16 @@ export async function resolveCase(
       );
     if (!order.captureId)
       throw new Error("A payment must be confirmed before a financial remedy.");
+    assertReturnReady(item);
+    // An explicit reviewer approval with a policy reason preserves the original no-return remedy contract.
+    item.returnShipment ??= {
+      status: "not_required",
+      customerCost: 0,
+      reason: note,
+      authorizedAt: new Date().toISOString(),
+      remedyDueAt: new Date(Date.now() + 86400000).toISOString(),
+      carrier: "simulated",
+    };
     item.remedy = remedy;
     item.resolutionNote = note;
     item.status = "approved";
@@ -752,6 +765,7 @@ export async function resolveCase(
           providerOrderId: undefined,
           returnId: undefined,
           replacementOf: order.id,
+          deliveredAt: undefined,
           dispatchEvidence: [],
           events: [
             {
@@ -784,6 +798,7 @@ export async function executeRefund(actor: Actor, orderId: string) {
       !["approved", "refund_pending", "resolved"].includes(item.status)
     )
       throw new Error("The customer's refund has not been authorized.");
+    assertReturnReady(item);
     if (order.status === "refunded") return { order, operation: undefined };
     if (state.orders.some((o) => o.replacementOf === orderId))
       throw new Error(
@@ -954,6 +969,7 @@ export async function shippingEvent(
     if (!allowed.includes(order.status))
       throw new Error("This shipment event is not valid in the current state.");
     order.status = status;
+    if (status === "delivered") order.deliveredAt = new Date().toISOString();
     event(order, `Simulated carrier event: ${status}.`);
     audit(state, actor, "shipment.simulated", orderId);
     return order;

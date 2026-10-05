@@ -1,13 +1,13 @@
 # Validation status
 
-The implementation currently passes 86 unit, provider-contract, and embedded PostgreSQL integration tests, six Chromium browser journeys, and 107 deterministic evaluation scenarios. Each new milestone is built and checked before deployment. See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for remaining master-plan gates.
+The implementation currently passes 90 unit, provider-contract, and embedded PostgreSQL integration tests, seven Chromium browser journeys, and 107 deterministic evaluation scenarios. Each new milestone is built and checked before deployment. See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for remaining master-plan gates.
 
 | Capability | Executable evidence | Limit |
 | --- | --- | --- |
 | Compatibility, ranking, spending guard | `tests/policy.test.ts`, `tests/money.test.ts`, `npm run eval` | Synthetic catalog; curated compatibility only |
 | Group pricing and private checkout | Service concurrency tests and two-browser journey | Inventory is isolated per demo workspace; no cross-merchant pool |
 | Customer approval and payment safety | Forged approval, modified payee, duplicate capture/refund tests | Real sandbox buyer approval/capture/refund still pending |
-| Returns, replacements, appeals | Service integration and purchase-to-refund browser journey | No carrier pickup integration; replacement shipping simulated |
+| Returns, replacements, appeals | Service integration and purchase-to-refund browser journey | Merchant-paid return handoff/receipt and no-return exception tests pass; no live carrier pickup integration; replacement shipping simulated |
 | Both-party evidence | Checkpoint and capture-code authorization/expiry/reuse, hash/tamper/type checks, identifier conflicts, private case exports | Hashes prove file integrity, not physical contents or damage timing |
 | Recovery | Persisted refund interruption, completed capture reconciliation, deadline/expiry, leases/concurrency, retries and dead-letter tests; three claim/recovery checks pass against hosted PostgreSQL | Old ambiguous or provider-failed refunds require manual provider reconciliation |
 | Gemini text and vision | Earlier `npm run verify:ai` passed three direct native API smoke checks; native request/response and retry contracts pass | Latest live check returns HTTP 429. Owner requested no AI spend; hosted analysis uses fixtures while quota is unavailable. No held-out model accuracy claim |

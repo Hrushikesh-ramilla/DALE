@@ -39,3 +39,9 @@ In an evidence form, optionally request a capture code, include it with the item
 Download private case report from an owned support case. It separates submitted identifiers/descriptions and provenance from model analysis and financial records, verifies original bytes at export, and includes only the case/order's audit references. Repeated images are a review cue, never an automatic denial. Missing or mismatched original files are reported rather than described as intact.
 
 `npm run verify:scenarios` tests all seven isolated scenarios against public HTTPS without contacting AI or moving real sandbox money. It also exercises a browser, challenge-linked multipart photo, private report, and cross-customer denial. It saves a protected photo/session/order baseline. After actually restarting the app, `npm run verify:restart` checks the changed server instance and original image hash alongside session/order persistence.
+
+## Prepaid returns and exceptions
+
+A reviewer can select a merchant-paid return in the remedy form and record a demo prepaid label reference plus policy reason. The shopper records the handoff reference, and seller staff record matching receipt in a separate profile. Only after receipt can the reviewer process the requested remedy; customer return shipping cost stays zero. These are simulated carrier records, not a purchased label or confirmed physical parcel.
+
+A reviewer can instead approve a no-return remedy with a recorded reason, including a customer-benefit exception while receipt is pending. Prior arrangements remain in the private case report. Recorded delivery within 30 days meets the demo merchant window; missing timing or a late request goes to review without automatic denial. The 24-hour merchant remedy target starts at return receipt or waiver, triggers one human follow-up if missed, and is distinct from provider settlement timing.

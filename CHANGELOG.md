@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Customer-first return arrangements
+
+- Added the recorded-delivery 30-day merchant-policy check. Missing timing, late requests, and cancellation/non-delivery claims remain open for human review.
+- Added reviewer-authorized merchant-paid return references, buyer handoff, matching seller receipt, no-return exceptions with reasons, and preserved prior arrangements. Return shipping cost to the customer is zero; carrier events are explicitly simulated.
+- Required receipt or an authorized waiver before remedy execution, and added a 24-hour merchant remedy target with one follow-up escalation. Deadline handling preserves an already-authorized financial operation.
+- Validation: 90 unit/contract/database tests pass; six existing journeys and the new prepaid-return-to-refund browser journey pass. Hosted verification awaits restored SSH access. No live carrier label purchase or physical-truth claim is made.
+
 ## 2026-10-06 — Submission provenance and private case reports
 
 - Added optional single-use capture codes bound to the authenticated party, order/case, checkpoint, and ten-minute expiry. Upload origin and challenge linkage are described without claiming verified capture timing or physical truth.

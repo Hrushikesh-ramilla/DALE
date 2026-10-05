@@ -65,7 +65,8 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
             a.action === "case.deadline_escalated" && a.resource === item.id,
         )
       ) {
-        if (item.status !== "appealed") item.status = "review";
+        if (!["appealed", "approved"].includes(item.status))
+          item.status = "review";
         const order = state.orders.find((o) => o.id === item.orderId)!;
         order.events.push({
           at: new Date(now).toISOString(),
@@ -73,6 +74,25 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
         });
         audit(state, actor, "case.deadline_escalated", item.id);
       }
+    for (const item of state.cases) {
+      if (
+        item.status === "resolved" ||
+        !item.returnShipment?.remedyDueAt ||
+        Date.parse(item.returnShipment.remedyDueAt) > now ||
+        state.audit.some(
+          (a) =>
+            a.action === "case.remedy_target_escalated" &&
+            a.resource === item.id,
+        )
+      )
+        continue;
+      const order = state.orders.find((o) => o.id === item.orderId)!;
+      order.events.push({
+        at: new Date(now).toISOString(),
+        text: "The merchant's 24-hour remedy target passed. Your case is escalated for human follow-up; provider settlement timing remains separate.",
+      });
+      audit(state, actor, "case.remedy_target_escalated", item.id);
+    }
     for (const order of state.orders)
       if (
         order.status === "checkout_pending" &&

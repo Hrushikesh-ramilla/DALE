@@ -44,6 +44,11 @@ type Modal =
       order?: Order;
       capture?: { id: string; code: string; expiresAt: string };
     }
+  | {
+      kind: "return_shipping";
+      item: ReturnCase;
+      status: "in_transit" | "received";
+    }
   | { kind: "scam" }
   | { kind: "resolve"; item: ReturnCase }
   | null;
@@ -901,6 +906,73 @@ export default function Storefront() {
                         {item.status.replaceAll("_", " ")}
                       </span>
                     </div>
+                    {item.eligibility && (
+                      <p className="muted">{item.eligibility.explanation}</p>
+                    )}
+                    {item.returnShipment && (
+                      <div className="analysis-panel">
+                        <h4>
+                          Return arrangement ·{" "}
+                          {item.returnShipment.status.replaceAll("_", " ")}
+                        </h4>
+                        <p>{item.returnShipment.reason}</p>
+                        <p>
+                          Customer return shipping cost: $0.00. Carrier records
+                          are simulated in this demo.
+                        </p>
+                        {item.returnShipment.labelReference && (
+                          <p>
+                            Prepaid label reference:{" "}
+                            {item.returnShipment.labelReference}
+                          </p>
+                        )}
+                        {item.returnShipment.trackingReference && (
+                          <p>
+                            Return tracking reference:{" "}
+                            {item.returnShipment.trackingReference}
+                          </p>
+                        )}
+                        {item.returnShipment.remedyDueAt && (
+                          <p>
+                            Merchant remedy target:{" "}
+                            {new Date(
+                              item.returnShipment.remedyDueAt,
+                            ).toLocaleString()}
+                            . Provider settlement timing is separate.
+                          </p>
+                        )}
+                        {session.actor.role === "buyer" &&
+                          item.returnShipment.status === "authorized" && (
+                            <button
+                              className="button secondary small"
+                              onClick={() =>
+                                setModal({
+                                  kind: "return_shipping",
+                                  item,
+                                  status: "in_transit",
+                                })
+                              }
+                            >
+                              Record return handoff
+                            </button>
+                          )}
+                        {session.actor.role === "seller" &&
+                          item.returnShipment.status === "in_transit" && (
+                            <button
+                              className="button secondary small"
+                              onClick={() =>
+                                setModal({
+                                  kind: "return_shipping",
+                                  item,
+                                  status: "received",
+                                })
+                              }
+                            >
+                              Record return receipt
+                            </button>
+                          )}
+                      </div>
+                    )}
                     <a href={`/api/case-report?id=${item.id}`} download>
                       Download private case report
                     </a>
@@ -1372,6 +1444,27 @@ export default function Storefront() {
                     e.preventDefault();
                     const form = new FormData(e.currentTarget);
                     void run(async () => {
+                      const decision = String(
+                        form.get("returnDecision") || "waive",
+                      );
+                      if (modal.item.returnShipment?.status !== "received") {
+                        await action({
+                          action: "authorize_return",
+                          caseId: modal.item.id,
+                          decision,
+                          reason: String(form.get("note")),
+                          labelReference: String(
+                            form.get("labelReference") || "",
+                          ),
+                        });
+                      }
+                      if (decision === "prepaid") {
+                        setModal(null);
+                        setNotice(
+                          "Prepaid return arranged. The customer pays no return shipping cost. Record handoff and receipt before approving the remedy.",
+                        );
+                        return;
+                      }
                       await action({
                         action: "resolve",
                         caseId: modal.item.id,
@@ -1385,6 +1478,32 @@ export default function Storefront() {
                     });
                   }}
                 >
+                  {modal.item.returnShipment?.status !== "received" && (
+                    <>
+                      <label>
+                        Return arrangement
+                        <select
+                          name="returnDecision"
+                          aria-label="Return arrangement"
+                        >
+                          <option value="waive">
+                            Approve a no-return remedy
+                          </option>
+                          <option value="prepaid">
+                            Arrange a merchant-paid return first
+                          </option>
+                        </select>
+                      </label>
+                      <label>
+                        Prepaid label reference (required for a return)
+                        <input
+                          name="labelReference"
+                          maxLength={100}
+                          placeholder="Demo carrier reference"
+                        />
+                      </label>
+                    </>
+                  )}
                   <label>
                     Reason and customer policy
                     <textarea
@@ -1397,6 +1516,55 @@ export default function Storefront() {
                   </label>
                   <button className="button primary full" disabled={busy}>
                     Authorize {modal.item.request}
+                  </button>
+                </form>
+              </>
+            )}
+            {modal.kind === "return_shipping" && (
+              <>
+                <h2 id="modal-title">
+                  {modal.status === "in_transit"
+                    ? "Record your return handoff."
+                    : "Record the returned parcel."}
+                </h2>
+                <p className="muted">
+                  This demo records simulated carrier events. A tracking
+                  reference does not prove parcel contents; both parties can
+                  submit evidence separately.
+                </p>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const form = new FormData(e.currentTarget);
+                    void run(async () => {
+                      await action({
+                        action: "return_shipping",
+                        caseId: modal.item.id,
+                        status: modal.status,
+                        trackingReference: String(
+                          form.get("trackingReference"),
+                        ),
+                      });
+                      setModal(null);
+                      setNotice(
+                        "Return checkpoint recorded. Your request remains open until the remedy is processed.",
+                      );
+                    });
+                  }}
+                >
+                  <label>
+                    Return tracking reference
+                    <input
+                      required
+                      name="trackingReference"
+                      maxLength={100}
+                      defaultValue={
+                        modal.item.returnShipment?.trackingReference || ""
+                      }
+                    />
+                  </label>
+                  <button className="button primary full" disabled={busy}>
+                    Save return checkpoint
                   </button>
                 </form>
               </>
