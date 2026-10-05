@@ -52,7 +52,8 @@ async function main() {
   }
   const anonymous = await request.newContext({ baseURL, timeout: 120000 });
   const health = await anonymous.get("/api/health");
-  const build = (await health.json()).build;
+  const healthData = await health.json();
+  const build = healthData.build;
   results.push({
     scenario: "Production database health",
     passed: health.ok(),
@@ -199,6 +200,7 @@ async function main() {
       cookie: first.cookie,
       workspaceId: first.session.actor.workspaceId,
       orderId: order.id,
+      instance: healthData.instance,
     }),
     { mode: 0o600 },
   );

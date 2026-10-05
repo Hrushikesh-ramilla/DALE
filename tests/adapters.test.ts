@@ -1,5 +1,9 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { createPayment, verifyProviderOrder } from "../src/server/payments";
+import {
+  createPayment,
+  verifyProviderOrder,
+  verifyProviderRefund,
+} from "../src/server/payments";
 import { evidenceHash, validateImage } from "../src/server/storage";
 import { shoppingSummary, evidenceAnalysis } from "../src/server/ai";
 import { catalog } from "../src/domain/catalog";
@@ -19,32 +23,56 @@ afterEach(() => {
   process.env.AI_MODE = "fixture";
 });
 describe("provider contracts", () => {
+  it.each(["amount", "currency", "capture", "reference"])(
+    "rejects a provider refund with the wrong %s",
+    (field) => {
+      const data = {
+        id: field === "reference" ? "wrong" : "refund-1",
+        status: "COMPLETED",
+        amount: {
+          value: field === "amount" ? "1.00" : "29.00",
+          currency_code: field === "currency" ? "EUR" : "USD",
+        },
+        links: [
+          {
+            rel: "up",
+            href: `https://api-m.sandbox.paypal.com/v2/payments/captures/${field === "capture" ? "wrong" : "capture-1"}`,
+          },
+        ],
+      };
+      expect(() =>
+        verifyProviderRefund(data, {
+          amount: 2900,
+          captureId: "capture-1",
+          refundId: "refund-1",
+        }),
+      ).toThrow("does not match");
+    },
+  );
   it("uses native Gemini text and image inputs and validates its completed JSON", async () => {
     process.env.AI_MODE = "live";
     process.env.AI_API_KEY = "test-only";
     process.env.AI_MODEL = "gemini-3.8-flash";
     delete process.env.AI_API_BASE_URL;
-    const fetch = vi
-      .fn()
-      .mockResolvedValue(
-        Response.json({
-          candidates: [
-            {
-              finishReason: "STOP",
-              content: {
-                parts: [
-                  {
-                    text: JSON.stringify({
-                      observations: ["No product details are readable."],
-                      sources: ["record-1"],
-                    }),
-                  },
-                ],
-              },
+    const fetch = vi.fn().mockResolvedValue(
+      Response.json({
+        candidates: [
+          {
+            finishReason: "STOP",
+            content: {
+              parts: [
+                {
+                  text: JSON.stringify({
+                    observations: ["No product details are readable."],
+                    sources: ["record-1"],
+                  }),
+                },
+              ],
             },
-          ],
-        }),
-      );
+          },
+        ],
+      }),
+    );
     vi.stubGlobal("fetch", fetch);
     const result = await evidenceAnalysis(
       [
@@ -115,22 +143,20 @@ describe("provider contracts", () => {
     process.env.AI_MODEL = "test-model";
     vi.stubGlobal(
       "fetch",
-      vi
-        .fn()
-        .mockResolvedValue(
-          Response.json({
-            choices: [
-              {
-                message: {
-                  content: JSON.stringify({
-                    summary: "Buy it",
-                    sources: ["invented"],
-                  }),
-                },
+      vi.fn().mockResolvedValue(
+        Response.json({
+          choices: [
+            {
+              message: {
+                content: JSON.stringify({
+                  summary: "Buy it",
+                  sources: ["invented"],
+                }),
               },
-            ],
-          }),
-        ),
+            },
+          ],
+        }),
+      ),
     );
     await expect(
       shoppingSummary("charger", catalog, "Atlas 14"),

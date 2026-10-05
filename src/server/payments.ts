@@ -34,6 +34,39 @@ const orderSchema = z.object({
     )
     .optional(),
 });
+const refundSchema = z.object({
+  id: z.string(),
+  status: z.string(),
+  amount: z.object({ value: z.string(), currency_code: z.string() }),
+  links: z.array(z.object({ rel: z.string(), href: z.string() })),
+});
+export function verifyProviderRefund(
+  data: z.infer<typeof refundSchema>,
+  expected: { captureId: string; amount: number; refundId?: string },
+) {
+  const up = data.links.find((link) => link.rel === "up");
+  let correctCapture = false;
+  try {
+    const url = new URL(up?.href || "");
+    correctCapture =
+      url.protocol === "https:" &&
+      url.hostname === "api-m.sandbox.paypal.com" &&
+      url.pathname ===
+        `/v2/payments/captures/${encodeURIComponent(expected.captureId)}`;
+  } catch {
+    /* Missing or malformed provider references remain unconfirmed. */
+  }
+  if (
+    !correctCapture ||
+    data.amount.value !== paypalAmount(expected.amount) ||
+    data.amount.currency_code !== "USD" ||
+    (expected.refundId && data.id !== expected.refundId)
+  )
+    throw new Error(
+      "Provider refund does not match the authorized amount, currency, capture, or reference.",
+    );
+  return data;
+}
 export async function paypalRequest(endpoint: string, init: RequestInit = {}) {
   if (
     !process.env.PAYPAL_CLIENT_ID ||
@@ -164,48 +197,54 @@ export async function refundPayment(
 ) {
   if (paymentMode() === "fixture")
     return { id: `FIXTURE-REFUND-${operationId}`, status: "COMPLETED" };
-  return z
-    .object({ id: z.string(), status: z.string() })
-    .parse(
+  return verifyProviderRefund(
+    refundSchema.parse(
       await paypalRequest(
         `/v2/payments/captures/${encodeURIComponent(captureId)}/refund`,
         {
           method: "POST",
-          headers: { "PayPal-Request-Id": operationId },
+          headers: {
+            "PayPal-Request-Id": operationId,
+            Prefer: "return=representation",
+          },
           body: JSON.stringify({
             amount: { value: paypalAmount(amount), currency_code: "USD" },
           }),
         },
       ),
-    );
+    ),
+    { captureId, amount },
+  );
 }
-export async function getRefund(refundId: string) {
-  return z
-    .object({ id: z.string(), status: z.string() })
-    .parse(
+export async function getRefund(
+  refundId: string,
+  expected: { captureId: string; amount: number },
+) {
+  return verifyProviderRefund(
+    refundSchema.parse(
       await paypalRequest(
         `/v2/payments/refunds/${encodeURIComponent(refundId)}`,
       ),
-    );
+    ),
+    { ...expected, refundId },
+  );
 }
 export async function verifyWebhook(headers: Headers, event: unknown) {
   if (!process.env.PAYPAL_WEBHOOK_ID)
     throw new Error("PayPal webhook ID is not configured.");
-  const result = z
-    .object({ verification_status: z.string() })
-    .parse(
-      await paypalRequest("/v1/notifications/verify-webhook-signature", {
-        method: "POST",
-        body: JSON.stringify({
-          auth_algo: headers.get("paypal-auth-algo"),
-          cert_url: headers.get("paypal-cert-url"),
-          transmission_id: headers.get("paypal-transmission-id"),
-          transmission_sig: headers.get("paypal-transmission-sig"),
-          transmission_time: headers.get("paypal-transmission-time"),
-          webhook_id: process.env.PAYPAL_WEBHOOK_ID,
-          webhook_event: event,
-        }),
+  const result = z.object({ verification_status: z.string() }).parse(
+    await paypalRequest("/v1/notifications/verify-webhook-signature", {
+      method: "POST",
+      body: JSON.stringify({
+        auth_algo: headers.get("paypal-auth-algo"),
+        cert_url: headers.get("paypal-cert-url"),
+        transmission_id: headers.get("paypal-transmission-id"),
+        transmission_sig: headers.get("paypal-transmission-sig"),
+        transmission_time: headers.get("paypal-transmission-time"),
+        webhook_id: process.env.PAYPAL_WEBHOOK_ID,
+        webhook_event: event,
       }),
-    );
+    }),
+  );
   return result.verification_status === "SUCCESS";
 }

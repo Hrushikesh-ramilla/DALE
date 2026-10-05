@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Durable recovery jobs and truthful refund status
+
+- Replaced blanket job completion with PostgreSQL row-lock claims, five-minute leases, bounded retries, six-attempt dead letters, and ownership-checked acknowledgments. Capture reconciliation and authorized refunds receive transactional outbox jobs.
+- Serialized startup migrations between app and worker. Added restricted operator heartbeat/backlog visibility, and kept failed work isolated from unrelated jobs.
+- Added explicit processing/completed/failed/unknown refund details and references. Provider amount, currency, capture, and refund reference must match the authorized remedy; failed refunds remain open for human reconciliation.
+- Validation: 72 unit/contract/database tests and five Chromium journeys pass. Added a separate production-PostgreSQL concurrency/recovery verifier and a restart verifier that requires an observed server instance change. Real PayPal refund and webhook delivery remain unverified.
+
 ## 2026-10-05 — Reservation and interruption boundaries
 
 - Finalized group commitments now reserve inventory during the checkout window, convert one commitment to one purchase per customer, and release unused reservations after expiry.
@@ -15,7 +22,7 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Persisted individual shopping briefs and explicit price/feature priorities. Catalog source labels explain ranking, and sponsored placement cannot improve rank.
 - Changed briefs invalidate earlier unpaid quotes and cancel unpaid approvals. Confirmed payments and already-sent capture operations retain their original financial records for reconciliation.
 - Added budget/device/category checks against the saved brief, browser reload coverage, cross-customer regression coverage, and a hosted build identifier. Documented remaining master-plan gates without treating partial features as complete.
-- Validation: 62 unit/contract/database tests and five Chromium journeys pass. Hosted verification follows the versioned release deployment; PayPal USD approval remains externally blocked.
+- Validation: 62 unit/contract/database tests, five Chromium journeys, production build, and GitHub CI pass. Deployed commit db70824 passes 12 hosted API checks, including changed-brief approval rejection. PayPal USD approval remains externally blocked.
 
 ## 2026-10-05 — Existing-instance deployment
 

@@ -22,6 +22,7 @@ export type Order = {
     | "shipped"
     | "delivered"
     | "refund_pending"
+    | "refund_failed"
     | "refunded"
     | "replacement"
     | "canceled";
@@ -29,6 +30,12 @@ export type Order = {
   providerOrderId?: string;
   captureId?: string;
   refundedAmount: number;
+  refund?: {
+    status: "processing" | "completed" | "failed" | "unknown";
+    reference?: string;
+    nextStep: string;
+    updatedAt: string;
+  };
   returnId?: string;
   replacementOf?: string;
   dispatchEvidence: Evidence[];
@@ -51,7 +58,13 @@ export type ReturnCase = {
   reason: "damaged" | "wrong_item" | "not_delivered" | "canceled";
   request: "refund" | "replacement";
   status:
-    "open" | "review" | "approved" | "refund_pending" | "resolved" | "appealed";
+    | "open"
+    | "review"
+    | "approved"
+    | "refund_pending"
+    | "refund_failed"
+    | "resolved"
+    | "appealed";
   createdAt: string;
   deadlineAt: string;
   sellerResponded: boolean;

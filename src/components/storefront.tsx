@@ -932,6 +932,32 @@ export default function Storefront() {
                         <strong>{item.analysis.nextStep}</strong>
                       </div>
                     )}
+                    {session.orders.find((order) => order.id === item.orderId)
+                      ?.refund && (
+                      <div className="analysis-panel">
+                        <h4>
+                          Refund{" "}
+                          {
+                            session.orders.find(
+                              (order) => order.id === item.orderId,
+                            )!.refund!.status
+                          }
+                        </h4>
+                        <p>
+                          {
+                            session.orders.find(
+                              (order) => order.id === item.orderId,
+                            )!.refund!.nextStep
+                          }
+                        </p>
+                        <small>
+                          Provider reference:{" "}
+                          {session.orders.find(
+                            (order) => order.id === item.orderId,
+                          )!.refund!.reference || "Not confirmed yet"}
+                        </small>
+                      </div>
+                    )}
                     {item.resolutionNote && (
                       <p className="resolution-note">
                         Reviewer: {item.resolutionNote}
@@ -963,7 +989,11 @@ export default function Storefront() {
                         Review evidence
                       </button>
                       {session.actor.role === "reviewer" &&
-                        item.status !== "resolved" && (
+                        ![
+                          "resolved",
+                          "refund_pending",
+                          "refund_failed",
+                        ].includes(item.status) && (
                           <button
                             className="button primary small"
                             disabled={busy}
@@ -972,26 +1002,27 @@ export default function Storefront() {
                             Approve requested {item.request}
                           </button>
                         )}
-                      {isBuyer && item.status === "resolved" && (
-                        <button
-                          className="button secondary small"
-                          onClick={() => {
-                            const note = window.prompt(
-                              "What would you like a person to review?",
-                            );
-                            if (note)
-                              void run(async () => {
-                                await action({
-                                  action: "appeal",
-                                  caseId: item.id,
-                                  note,
+                      {isBuyer &&
+                        ["resolved", "refund_failed"].includes(item.status) && (
+                          <button
+                            className="button secondary small"
+                            onClick={() => {
+                              const note = window.prompt(
+                                "What would you like a person to review?",
+                              );
+                              if (note)
+                                void run(async () => {
+                                  await action({
+                                    action: "appeal",
+                                    caseId: item.id,
+                                    note,
+                                  });
                                 });
-                              });
-                          }}
-                        >
-                          Request another review
-                        </button>
-                      )}
+                            }}
+                          >
+                            Request another review
+                          </button>
+                        )}
                     </div>
                   </article>
                 ))}
@@ -1037,6 +1068,18 @@ export default function Storefront() {
               integrity does not prove physical truth. Use separate profiles for
               customer and operator roles.
             </p>
+            {session.recovery && (
+              <p>
+                Recovery worker:{" "}
+                {session.recovery.healthy
+                  ? "recent heartbeat"
+                  : "heartbeat overdue or unavailable"}{" "}
+                · Last seen: {session.recovery.lastSeenAt || "Not recorded"} ·
+                Pending jobs: {session.recovery.queue.pending || 0} · Running:{" "}
+                {session.recovery.queue.running || 0} · Needs operator review:{" "}
+                {session.recovery.queue.dead || 0}
+              </p>
+            )}
           </details>
         )}
       </main>

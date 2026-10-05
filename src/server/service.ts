@@ -29,6 +29,7 @@ import { evidenceHash, getAsset, putAsset } from "./storage";
 import { getDatabase } from "./database";
 import { selectVisionEvidence } from "./vision";
 import { briefSchema, type ShoppingBrief } from "../domain/brief";
+import { enqueueJob, recoveryStatus } from "./jobs";
 
 function buyer(actor: Actor) {
   if (actor.role !== "buyer")
@@ -100,6 +101,10 @@ export async function snapshot(actor: Actor) {
     },
     paypalClientId:
       paymentMode() === "sandbox" ? process.env.PAYPAL_CLIENT_ID : undefined,
+    recovery:
+      actor.role === "buyer"
+        ? undefined
+        : await recoveryStatus(actor.workspaceId),
   };
 }
 export async function updateBrief(actor: Actor, input: ShoppingBrief) {
@@ -428,37 +433,59 @@ export async function checkout(
 async function markUnknown(actor: Actor, id: string) {
   await mutateWorkspace(actor.workspaceId, (state) => {
     const op = state.operations.find((o) => o.id === id);
-    if (op && op.state !== "succeeded") op.state = "unknown";
+    if (op && !["succeeded", "failed"].includes(op.state)) {
+      op.state = "unknown";
+      if (op.kind === "refund") {
+        const order = state.orders.find((item) => item.id === op.orderId)!;
+        order.refund = {
+          status: "unknown",
+          reference: op.resultId,
+          nextStep:
+            "We are checking the provider outcome. Your request remains open; do not create a second refund.",
+          updatedAt: new Date().toISOString(),
+        };
+      }
+    }
   });
 }
 export async function capture(actor: Actor, orderId: string) {
   buyer(actor);
-  const prepared = await mutateWorkspace(actor.workspaceId, (state) => {
-    const order = ownedOrder(state, actor, orderId);
-    if (order.captureId) return { order, operation: undefined };
-    if (order.status !== "checkout_pending" || !order.providerOrderId)
-      throw new Error("Checkout is not ready for payment.");
-    const existingOperation = state.operations.find(
-      (op) => op.orderId === orderId && op.kind === "capture",
-    );
-    if (!existingOperation) assertCurrentQuote(state, order.quote);
-    checkPurchase(order.quote, order.quote.fingerprint, order.quote);
-    let operation = state.operations.find(
-      (op) => op.kind === "capture" && op.orderId === order.id,
-    );
-    if (!operation) {
-      operation = {
-        id: randomUUID(),
-        orderId,
-        kind: "capture",
-        state: "pending",
-        amount: order.quote.amount,
-        createdAt: new Date().toISOString(),
-      };
-      state.operations.push(operation);
-    }
-    return { order, operation };
-  });
+  const prepared = await mutateWorkspace(
+    actor.workspaceId,
+    async (state, sql) => {
+      const order = ownedOrder(state, actor, orderId);
+      if (order.captureId) return { order, operation: undefined };
+      if (order.status !== "checkout_pending" || !order.providerOrderId)
+        throw new Error("Checkout is not ready for payment.");
+      const existingOperation = state.operations.find(
+        (op) => op.orderId === orderId && op.kind === "capture",
+      );
+      if (!existingOperation) assertCurrentQuote(state, order.quote);
+      checkPurchase(order.quote, order.quote.fingerprint, order.quote);
+      let operation = state.operations.find(
+        (op) => op.kind === "capture" && op.orderId === order.id,
+      );
+      if (!operation) {
+        operation = {
+          id: randomUUID(),
+          orderId,
+          kind: "capture",
+          state: "pending",
+          amount: order.quote.amount,
+          createdAt: new Date().toISOString(),
+        };
+        state.operations.push(operation);
+        await enqueueJob(
+          sql,
+          actor.workspaceId,
+          "reconcile",
+          { operationId: operation.id },
+          `capture:${operation.id}`,
+        );
+      }
+      return { order, operation };
+    },
+  );
   if (!prepared.operation) return prepared.order;
   try {
     const result = await capturePayment(
@@ -615,7 +642,11 @@ export async function analyzeCase(actor: Actor, caseId: string) {
         "New evidence arrived. Please analyze the updated records.",
       );
     current.analysis = analysis;
-    if (!["resolved", "refund_pending", "approved"].includes(current.status))
+    if (
+      !["resolved", "refund_pending", "refund_failed", "approved"].includes(
+        current.status,
+      )
+    )
       current.status = "review";
     audit(fresh, actor, "evidence.analyzed", caseId);
     return analysis;
@@ -628,10 +659,21 @@ export async function resolveCase(
   note: string,
 ) {
   reviewer(actor);
-  const item = await mutateWorkspace(actor.workspaceId, (state) => {
+  const item = await mutateWorkspace(actor.workspaceId, async (state, sql) => {
     const item = ownedCase(state, actor, caseId);
     const order = ownedOrder(state, actor, item.orderId);
-    if (item.status === "resolved" || item.status === "refund_pending")
+    if (
+      state.operations.some(
+        (op) =>
+          op.orderId === order.id &&
+          op.kind === "refund" &&
+          op.state === "failed",
+      )
+    )
+      throw new Error(
+        "The provider rejected this refund. A reviewer must reconcile it before any new operation.",
+      );
+    if (["resolved", "refund_pending", "refund_failed"].includes(item.status))
       return item;
     if (!note.trim())
       throw new Error("Record the customer policy and reason for the remedy.");
@@ -644,6 +686,14 @@ export async function resolveCase(
     item.remedy = remedy;
     item.resolutionNote = note;
     item.status = "approved";
+    if (remedy === "refund")
+      await enqueueJob(
+        sql,
+        actor.workspaceId,
+        "reconcile",
+        { caseId },
+        `refund-case:${caseId}`,
+      );
     audit(state, actor, "remedy.approved", caseId);
     if (remedy === "replacement") {
       if (
@@ -723,8 +773,16 @@ export async function executeRefund(actor: Actor, orderId: string) {
       };
       state.operations.push(operation);
     }
+    if (operation.state === "failed") return { order, operation };
     order.status = "refund_pending";
     item.status = "refund_pending";
+    order.refund = {
+      status: "processing",
+      reference: operation.resultId,
+      nextStep:
+        "We are checking the provider's refund status. Settlement timing comes from PayPal.",
+      updatedAt: new Date().toISOString(),
+    };
     return { order, operation };
   });
   if (!prepared.operation) return prepared.order;
@@ -744,7 +802,10 @@ export async function executeRefund(actor: Actor, orderId: string) {
   try {
     const result =
       prepared.operation.resultId && paymentMode() === "sandbox"
-        ? await getRefund(prepared.operation.resultId)
+        ? await getRefund(prepared.operation.resultId, {
+            captureId: prepared.order.captureId!,
+            amount: prepared.operation.amount,
+          })
         : await refundPayment(
             prepared.order.captureId!,
             prepared.operation.id,
@@ -756,6 +817,16 @@ export async function executeRefund(actor: Actor, orderId: string) {
       if (["FAILED", "CANCELLED", "DENIED"].includes(result.status)) {
         op.state = "failed";
         const order = ownedOrder(state, actor, orderId);
+        order.status = "refund_failed";
+        order.refund = {
+          status: "failed",
+          reference: result.id,
+          nextStep:
+            "A person must reconcile the failed refund with PayPal. Your request remains open. You can add evidence or request another review.",
+          updatedAt: new Date().toISOString(),
+        };
+        state.cases.find((item) => item.orderId === orderId)!.status =
+          "refund_failed";
         event(
           order,
           "Provider refund failed. Your request remains open for a person to resolve.",
@@ -764,6 +835,14 @@ export async function executeRefund(actor: Actor, orderId: string) {
       }
       if (result.status !== "COMPLETED") {
         op.state = "pending";
+        const order = ownedOrder(state, actor, orderId);
+        order.refund = {
+          status: "processing",
+          reference: result.id,
+          nextStep:
+            "PayPal reports that the refund is processing. We will check again automatically.",
+          updatedAt: new Date().toISOString(),
+        };
         return;
       }
       if (op.state === "succeeded") return;
@@ -771,6 +850,15 @@ export async function executeRefund(actor: Actor, orderId: string) {
       allowedRefund(order.quote.amount, order.refundedAmount, 0, op.amount);
       order.refundedAmount += op.amount;
       order.status = "refunded";
+      order.refund = {
+        status: "completed",
+        reference: result.id,
+        nextStep:
+          paymentMode() === "fixture"
+            ? "Simulated refund completed; no real money moved."
+            : "PayPal confirmed this sandbox refund. Check PayPal for settlement details.",
+        updatedAt: new Date().toISOString(),
+      };
       op.state = "succeeded";
       const item = state.cases.find((c) => c.orderId === orderId)!;
       item.status = "resolved";

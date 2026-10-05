@@ -1,4 +1,3 @@
-import { randomUUID } from "node:crypto";
 import { getDatabase } from "./database";
 import { audit, getWorkspace, mutateWorkspace, type Actor } from "./state";
 import { executeRefund } from "./service";
@@ -9,6 +8,7 @@ import {
   verifyWebhook,
 } from "./payments";
 import { paypalAmount } from "../domain/money";
+import { enqueueJob, processJobs } from "./jobs";
 
 // Verified webhook events are wake-up signals. Financial status always comes from a provider GET.
 export async function acceptWebhook(
@@ -28,14 +28,10 @@ export async function acceptWebhook(
       "SELECT id FROM workspaces WHERE state->'operations' @> '[{\"state\":\"pending\"}]'::jsonb OR state->'operations' @> '[{\"state\":\"unknown\"}]'::jsonb",
     );
     for (const workspace of workspaces.rows)
-      await sql.query(
-        "INSERT INTO jobs(id,workspace_id,kind,payload) VALUES($1,$2,'reconcile',$3::jsonb)",
-        [
-          randomUUID(),
-          workspace.id,
-          JSON.stringify({ eventId: event.id, type: event.event_type }),
-        ],
-      );
+      await enqueueJob(sql, workspace.id, "reconcile", {
+        eventId: event.id,
+        type: event.event_type,
+      });
     return { duplicate: false };
   });
 }
@@ -59,7 +55,9 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
       if (
         !item.sellerResponded &&
         Date.parse(item.deadlineAt) <= now &&
-        !["resolved", "refund_pending"].includes(item.status) &&
+        !["resolved", "refund_pending", "refund_failed"].includes(
+          item.status,
+        ) &&
         !state.audit.some(
           (a) =>
             a.action === "case.deadline_escalated" && a.resource === item.id,
@@ -152,6 +150,12 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
 export async function workerTick() {
   const db = await getDatabase();
   let totalFailures = 0;
+  const jobs = await processJobs(async (job) => {
+    if (job.kind !== "reconcile") throw new Error("Unsupported job kind.");
+    if ((await recoverWorkspace(job.workspace_id)).failures)
+      throw new Error("Workspace reconciliation needs another attempt.");
+  });
+  totalFailures += jobs.failures;
   // Workspace row locks serialize mutations; the deployment runs one polling worker.
   let cursor = "";
   while (true) {
@@ -160,13 +164,19 @@ export async function workerTick() {
       [cursor],
     );
     if (!rows.length) break;
-    for (const row of rows)
-      totalFailures += (await recoverWorkspace(row.id)).failures;
+    for (const row of rows) {
+      try {
+        totalFailures += (await recoverWorkspace(row.id)).failures;
+      } catch {
+        totalFailures++;
+      }
+    }
     cursor = rows.at(-1)!.id;
   }
   await db.query(
-    "UPDATE jobs SET status='completed',locked_at=now() WHERE status='pending'",
+    "INSERT INTO worker_heartbeats(id,seen_at,failures) VALUES('recovery',now(),$1) ON CONFLICT(id) DO UPDATE SET seen_at=excluded.seen_at,failures=excluded.failures",
+    [totalFailures],
   );
   await db.query("DELETE FROM sessions WHERE expires_at<now()");
-  return { failures: totalFailures };
+  return { failures: totalFailures, jobsCompleted: jobs.completed };
 }
