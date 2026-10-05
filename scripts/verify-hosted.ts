@@ -70,10 +70,10 @@ async function main() {
   });
   const first = await client("buyer");
   results.push({
-    scenario: "Production PostgreSQL and configured live modes",
+    scenario: "Production PostgreSQL and declared adapter modes",
     passed:
       first.session.modes.database === "postgres" &&
-      first.session.modes.ai === "live" &&
+      first.session.modes.ai === config.AI_MODE &&
       first.session.modes.payments === "sandbox",
   });
   results.push({
@@ -96,10 +96,13 @@ async function main() {
   });
   const matches = await shopping.json();
   results.push({
-    scenario: "Hosted grounded Gemini summary",
+    scenario:
+      config.AI_MODE === "live"
+        ? "Hosted grounded Gemini summary"
+        : "Hosted grounded shopping fixture",
     passed:
       shopping.ok() &&
-      matches.analysis.mode === "live" &&
+      matches.analysis.mode === config.AI_MODE &&
       matches.products.every(
         (p: { price: number; compatibleModels: string[] }) =>
           p.price <= 4000 && p.compatibleModels.includes("Atlas 14"),

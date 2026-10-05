@@ -31,6 +31,7 @@ import type { snapshot } from "@/server/service";
 import { ProductArt } from "./product-art";
 import { PayPalCheckout } from "./paypal-checkout";
 import { Dialog } from "./dialog";
+import type { ScenarioKind } from "@/server/scenarios";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
@@ -86,6 +87,7 @@ export default function Storefront() {
     [accessCode, setAccessCode] = useState(""),
     [workspaceId, setWorkspaceId] = useState(""),
     [invite, setInvite] = useState("");
+  const [scenario, setScenario] = useState<ScenarioKind>("fresh");
   const restoreSession = useCallback((data: Session) => {
     setSession(data);
     if (data.brief) {
@@ -287,13 +289,17 @@ export default function Storefront() {
       <main className="main-content">
         <div className="mode-strip">
           <span className="status-dot" /> Test storefront ·{" "}
-          {session?.modes.payments === "sandbox"
-            ? "PayPal sandbox"
-            : "Simulated payments"}{" "}
+          {!session
+            ? "Sign in to see active adapters"
+            : session.modes.payments === "sandbox"
+              ? "PayPal sandbox"
+              : "Simulated payments"}{" "}
           ·{" "}
-          {session?.modes.ai === "live"
-            ? "Live assisted analysis"
-            : "Deterministic analysis fixtures"}{" "}
+          {!session
+            ? "Analysis mode awaiting session"
+            : session.modes.ai === "live"
+              ? "Live assisted analysis"
+              : "Deterministic analysis fixtures"}{" "}
           · Simulated shipping
         </div>
         {error && (
@@ -1079,6 +1085,81 @@ export default function Storefront() {
                 {session.recovery.queue.running || 0} · Needs operator review:{" "}
                 {session.recovery.queue.dead || 0}
               </p>
+            )}
+            {session.archivedAt && (
+              <p>
+                This fixture workspace is archived. Its financial and evidence
+                audit records are preserved.
+              </p>
+            )}
+            {session.actor.role === "reviewer" && (
+              <form
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  void run(async () => {
+                    const result = await api<{ snapshot: Session }>(
+                      "/api/scenarios",
+                      { action: "create", kind: scenario },
+                    );
+                    restoreSession(result.snapshot);
+                    setTab(
+                      result.snapshot.orders.length ? "orders" : "discover",
+                    );
+                    setNotice(
+                      "An isolated fixture scenario is open as the shopper. All payments, analysis, and shipping here are synthetic. Use its workspace ID in a separate operator profile.",
+                    );
+                  });
+                }}
+              >
+                <label>
+                  Engineering scenario
+                  <select
+                    value={scenario}
+                    onChange={(event) =>
+                      setScenario(event.target.value as ScenarioKind)
+                    }
+                  >
+                    <option value="fresh">Fresh shopper workspace</option>
+                    <option value="delivered">
+                      Delivered item ready for a return
+                    </option>
+                    <option value="identifier_conflict">
+                      Conflicting return identifiers
+                    </option>
+                    <option value="seller_silence">
+                      Missed seller response deadline
+                    </option>
+                    <option value="refund_failure">Rejected refund</option>
+                    <option value="refund_timeout">Interrupted refund</option>
+                    <option value="group_partial">Partial group payment</option>
+                  </select>
+                </label>
+                <button className="button secondary small" disabled={busy}>
+                  Open new fixture scenario as shopper
+                </button>
+                {session.fixtureWorkspace && (
+                  <button
+                    type="button"
+                    className="button secondary small"
+                    disabled={busy}
+                    onClick={() =>
+                      void run(async () => {
+                        const result = await api<{ snapshot: Session }>(
+                          "/api/scenarios",
+                          { action: "reset", kind: scenario },
+                        );
+                        restoreSession(result.snapshot);
+                        setTab("orders");
+                        setNotice(
+                          "Previous fixture archived with audit history preserved. A new isolated fixture workspace is open.",
+                        );
+                      })
+                    }
+                  >
+                    Archive fixture and start fresh
+                  </button>
+                )}
+              </form>
             )}
           </details>
         )}

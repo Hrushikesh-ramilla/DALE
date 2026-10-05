@@ -4,6 +4,7 @@ import {
   allowedRefund,
   checkPurchase,
   quoteFingerprint,
+  quotePaymentMode,
 } from "../domain/guard";
 import {
   audit,
@@ -38,6 +39,9 @@ function buyer(actor: Actor) {
 function reviewer(actor: Actor) {
   if (actor.role !== "reviewer")
     throw new Error("Reviewer authorization is required.");
+}
+function workspaceAiMode(state: Workspace) {
+  return state.adapterModes?.ai === "fixture" ? "fixture" : aiMode();
 }
 function event(order: Order, text: string) {
   order.events.push({ at: new Date().toISOString(), text });
@@ -80,6 +84,8 @@ export async function snapshot(actor: Actor) {
   return {
     actor,
     brief: state.briefs?.find((brief) => brief.buyerId === actor.userId),
+    fixtureWorkspace: !!state.fixtureWorkspace,
+    archivedAt: state.archivedAt,
     invite: actor.role === "buyer" ? state.invite : undefined,
     orders: state.orders.filter(
       (o) => actor.role !== "buyer" || o.buyerId === actor.userId,
@@ -94,13 +100,15 @@ export async function snapshot(actor: Actor) {
       joined: g.members.includes(actor.userId),
     })),
     modes: {
-      payments: paymentMode(),
-      ai: aiMode(),
+      payments: state.adapterModes?.payments || paymentMode(),
+      ai: workspaceAiMode(state),
       shipping: "simulated",
       database: process.env.DATABASE_URL ? "postgres" : "embedded-postgres",
     },
     paypalClientId:
-      paymentMode() === "sandbox" ? process.env.PAYPAL_CLIENT_ID : undefined,
+      (state.adapterModes?.payments || paymentMode()) === "sandbox"
+        ? process.env.PAYPAL_CLIENT_ID
+        : undefined,
     recovery:
       actor.role === "buyer"
         ? undefined
@@ -174,12 +182,20 @@ function assertCurrentQuote(
 }
 export async function shop(input: ShoppingBrief, actor?: Actor) {
   const brief = actor ? await updateBrief(actor, input) : undefined;
+  const mode = actor
+    ? workspaceAiMode(await getWorkspace(actor.workspaceId))
+    : aiMode();
   const products = searchCatalog(input);
   try {
     return {
       products,
       brief,
-      analysis: await shoppingSummary(input.message, products, input.model),
+      analysis: await shoppingSummary(
+        input.message,
+        products,
+        input.model,
+        mode,
+      ),
     };
   } catch {
     return {
@@ -194,8 +210,11 @@ export async function shop(input: ShoppingBrief, actor?: Actor) {
     };
   }
 }
-export async function checkMessage(message: string) {
-  return scamAnalysis(message);
+export async function checkMessage(message: string, actor?: Actor) {
+  const mode = actor
+    ? workspaceAiMode(await getWorkspace(actor.workspaceId))
+    : aiMode();
+  return scamAnalysis(message, mode);
 }
 export async function makeQuote(
   actor: Actor,
@@ -210,6 +229,7 @@ export async function makeQuote(
       "This product is not confirmed compatible with your device.",
     );
   return mutateWorkspace(actor.workspaceId, (state) => {
+    const mode = state.adapterModes?.payments || paymentMode();
     const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
     if (
       brief &&
@@ -262,7 +282,7 @@ export async function makeQuote(
       productId,
       model,
       payee:
-        paymentMode() === "sandbox"
+        mode === "sandbox"
           ? process.env.PAYPAL_MERCHANT_ID || ""
           : "fixture-store",
       amount,
@@ -271,6 +291,7 @@ export async function makeQuote(
       version: 1,
       groupId,
       fingerprint: "",
+      provider: mode,
       briefVersion: brief?.version,
     };
     if (!quote.payee)
@@ -414,6 +435,7 @@ export async function checkout(
       prepared.order.quote,
       prepared.operation.id,
       prepared.order.id,
+      quotePaymentMode(prepared.order.quote),
     );
     return await mutateWorkspace(actor.workspaceId, (state) => {
       const order = ownedOrder(state, actor, prepared.order.id);
@@ -493,6 +515,7 @@ export async function capture(actor: Actor, orderId: string) {
       prepared.operation.id,
       prepared.order.quote,
       prepared.order.id,
+      quotePaymentMode(prepared.order.quote),
     );
     return await mutateWorkspace(actor.workspaceId, (state) => {
       const order = ownedOrder(state, actor, orderId);
@@ -504,7 +527,7 @@ export async function capture(actor: Actor, orderId: string) {
       op.resultId = result.id;
       event(
         order,
-        paymentMode() === "fixture"
+        quotePaymentMode(order.quote) === "fixture"
           ? "Fixture payment recorded. No real money moved."
           : "PayPal sandbox payment confirmed.",
       );
@@ -627,7 +650,11 @@ export async function analyzeCase(actor: Actor, caseId: string) {
       bytes: await getAsset(e.assetKey!, e.hash),
     })),
   );
-  const analysis = await evidenceAnalysis(item.evidence, images);
+  const analysis = await evidenceAnalysis(
+    item.evidence,
+    images,
+    workspaceAiMode(state),
+  );
   if (item.evidence.filter((entry) => entry.assetKey).length > images.length)
     analysis.observations.push(
       "Model image review is limited to four checkpoint samples. All original images remain available for human review.",
@@ -791,7 +818,7 @@ export async function executeRefund(actor: Actor, orderId: string) {
       "The provider rejected this refund. A reviewer must reconcile it before any new operation.",
     );
   if (
-    paymentMode() === "sandbox" &&
+    quotePaymentMode(prepared.order.quote) === "sandbox" &&
     !prepared.operation.resultId &&
     (!prepared.operation.createdAt ||
       Date.now() - Date.parse(prepared.operation.createdAt) > 5 * 3600000)
@@ -800,17 +827,35 @@ export async function executeRefund(actor: Actor, orderId: string) {
       "The refund outcome needs provider reconciliation. Do not create another refund.",
     );
   try {
+    const fixtureState = await getWorkspace(actor.workspaceId);
+    const fault =
+      fixtureState.fixtureWorkspace &&
+      quotePaymentMode(prepared.order.quote) === "fixture"
+        ? fixtureState.fixtureFaults?.refund
+        : undefined;
+    if (fault === "timeout_once") {
+      await mutateWorkspace(actor.workspaceId, (state) => {
+        delete state.fixtureFaults?.refund;
+      });
+      throw new Error(
+        "Simulated provider timeout. The authorized refund will reconcile with its original operation.",
+      );
+    }
     const result =
-      prepared.operation.resultId && paymentMode() === "sandbox"
-        ? await getRefund(prepared.operation.resultId, {
-            captureId: prepared.order.captureId!,
-            amount: prepared.operation.amount,
-          })
-        : await refundPayment(
-            prepared.order.captureId!,
-            prepared.operation.id,
-            prepared.operation.amount,
-          );
+      fault === "failed"
+        ? { id: `FIXTURE-REFUND-${prepared.operation.id}`, status: "FAILED" }
+        : prepared.operation.resultId &&
+            quotePaymentMode(prepared.order.quote) === "sandbox"
+          ? await getRefund(prepared.operation.resultId, {
+              captureId: prepared.order.captureId!,
+              amount: prepared.operation.amount,
+            })
+          : await refundPayment(
+              prepared.order.captureId!,
+              prepared.operation.id,
+              prepared.operation.amount,
+              quotePaymentMode(prepared.order.quote),
+            );
     await mutateWorkspace(actor.workspaceId, (state) => {
       const op = state.operations.find((o) => o.id === prepared.operation!.id)!;
       op.resultId = result.id;
@@ -854,7 +899,7 @@ export async function executeRefund(actor: Actor, orderId: string) {
         status: "completed",
         reference: result.id,
         nextStep:
-          paymentMode() === "fixture"
+          quotePaymentMode(order.quote) === "fixture"
             ? "Simulated refund completed; no real money moved."
             : "PayPal confirmed this sandbox refund. Check PayPal for settlement details.",
         updatedAt: new Date().toISOString(),
@@ -864,7 +909,7 @@ export async function executeRefund(actor: Actor, orderId: string) {
       item.status = "resolved";
       event(
         order,
-        paymentMode() === "fixture"
+        quotePaymentMode(order.quote) === "fixture"
           ? "Fixture refund completed. No real money moved."
           : "PayPal sandbox refund completed.",
       );

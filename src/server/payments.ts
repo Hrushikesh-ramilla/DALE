@@ -112,9 +112,9 @@ export async function createPayment(
   quote: Quote,
   operationId: string,
   internalOrderId: string,
+  mode = paymentMode(),
 ) {
-  if (paymentMode() === "fixture")
-    return { id: `FIXTURE-ORDER-${operationId}` };
+  if (mode === "fixture") return { id: `FIXTURE-ORDER-${operationId}` };
   const data = await paypalRequest("/v2/checkout/orders", {
     method: "POST",
     headers: { "PayPal-Request-Id": operationId },
@@ -162,9 +162,9 @@ export async function capturePayment(
   operationId: string,
   quote: Quote,
   internalOrderId: string,
+  mode = paymentMode(),
 ) {
-  if (paymentMode() === "fixture")
-    return { id: `FIXTURE-CAPTURE-${operationId}` };
+  if (mode === "fixture") return { id: `FIXTURE-CAPTURE-${operationId}` };
   const before = await getPayment(providerOrderId);
   verifyProviderOrder(before, quote, internalOrderId);
   const data = orderSchema.parse(
@@ -194,8 +194,9 @@ export async function refundPayment(
   captureId: string,
   operationId: string,
   amount: number,
+  mode = paymentMode(),
 ) {
-  if (paymentMode() === "fixture")
+  if (mode === "fixture")
     return { id: `FIXTURE-REFUND-${operationId}`, status: "COMPLETED" };
   return verifyProviderRefund(
     refundSchema.parse(

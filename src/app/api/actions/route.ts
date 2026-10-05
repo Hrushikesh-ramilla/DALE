@@ -98,7 +98,7 @@ export async function POST(request: Request) {
         result = await service.capture(actor, input.orderId);
         break;
       case "scam":
-        result = await service.checkMessage(input.message);
+        result = await service.checkMessage(input.message, actor);
         break;
       case "return":
         result = await service.openReturn(

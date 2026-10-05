@@ -53,6 +53,7 @@ for (const key of [
 values.BUILD_ID = execFileSync("git", ["rev-parse", "HEAD"], {
   encoding: "utf8",
 }).trim();
+if (process.env.DEPLOY_AI_MODE) values.AI_MODE = process.env.DEPLOY_AI_MODE;
 await writeFile(
   `${directory}/production.env`,
   Object.entries(values)

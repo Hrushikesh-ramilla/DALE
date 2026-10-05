@@ -85,6 +85,10 @@ export type Operation = {
 };
 export type Workspace = {
   id: string;
+  adapterModes?: { payments: "fixture" | "sandbox"; ai: "fixture" | "live" };
+  fixtureWorkspace?: boolean;
+  archivedAt?: string;
+  fixtureFaults?: { refund?: "failed" | "timeout_once" };
   invite: string;
   quotes: StoredQuote[];
   briefs?: PurchaseBrief[];
@@ -101,9 +105,18 @@ export type Workspace = {
   }[];
   webhookIds: string[];
 };
-export async function createWorkspace() {
+export async function createWorkspace(options: { fixture?: boolean } = {}) {
   const state: Workspace = {
     id: randomUUID(),
+    adapterModes: {
+      payments:
+        !options.fixture && process.env.PAYMENT_MODE === "sandbox"
+          ? "sandbox"
+          : "fixture",
+      ai:
+        !options.fixture && process.env.AI_MODE === "live" ? "live" : "fixture",
+    },
+    fixtureWorkspace: options.fixture === true,
     invite: randomUUID(),
     quotes: [],
     orders: [],
@@ -141,6 +154,10 @@ export async function mutateWorkspace<T>(
     );
     if (!rows[0]) throw new Error("Workspace not found");
     const state = rows[0].state;
+    if (state.archivedAt)
+      throw new Error(
+        "This fixture workspace was archived. Start the replacement workspace to continue.",
+      );
     const result = await fn(state, sql);
     await sql.query("UPDATE workspaces SET state=$2::jsonb WHERE id=$1", [
       id,

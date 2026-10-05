@@ -8,6 +8,7 @@ import {
   verifyWebhook,
 } from "./payments";
 import { paypalAmount } from "../domain/money";
+import { quotePaymentMode } from "../domain/guard";
 import { enqueueJob, processJobs } from "./jobs";
 
 // Verified webhook events are wake-up signals. Financial status always comes from a provider GET.
@@ -37,6 +38,7 @@ export async function acceptWebhook(
 }
 
 export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
+  if ((await getWorkspace(workspaceId)).archivedAt) return { failures: 0 };
   const actor: Actor = {
     workspaceId,
     userId: "background-worker",
@@ -106,13 +108,36 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
   )) {
     const order = state.orders.find((o) => o.id === op.orderId)!;
     try {
-      if (
-        op.kind !== "capture" ||
-        !order.providerOrderId ||
-        paymentMode() !== "sandbox"
-      )
-        continue;
-      const remote = await getPayment(order.providerOrderId);
+      if (op.kind !== "capture" || !order.providerOrderId) continue;
+      const remote =
+        quotePaymentMode(order.quote) === "fixture"
+          ? {
+              id: order.providerOrderId,
+              status: "COMPLETED",
+              purchase_units: [
+                {
+                  custom_id: order.id,
+                  payee: { merchant_id: order.quote.payee },
+                  amount: {
+                    value: paypalAmount(order.quote.amount),
+                    currency_code: order.quote.currency,
+                  },
+                  payments: {
+                    captures: [
+                      {
+                        id: `FIXTURE-CAPTURE-${op.id}`,
+                        status: "COMPLETED",
+                        amount: {
+                          value: paypalAmount(order.quote.amount),
+                          currency_code: order.quote.currency,
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
+            }
+          : await getPayment(order.providerOrderId);
       verifyProviderOrder(remote, order.quote, order.id);
       const captures = remote.purchase_units?.[0].payments?.captures;
       if (
@@ -136,7 +161,10 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
         operation.resultId = captures[0].id;
         current.events.push({
           at: new Date().toISOString(),
-          text: "PayPal sandbox payment confirmed after reconciliation.",
+          text:
+            quotePaymentMode(order.quote) === "fixture"
+              ? "Fixture payment confirmed after reconciliation. No real money moved."
+              : "PayPal sandbox payment confirmed after reconciliation.",
         });
         audit(fresh, actor, "payment.reconciled", order.id);
       });

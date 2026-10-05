@@ -142,6 +142,7 @@ export async function shoppingSummary(
   message: string,
   products: Product[],
   model: string,
+  mode = aiMode(),
 ) {
   const fallback = {
     summary: products.length
@@ -150,7 +151,7 @@ export async function shoppingSummary(
     sources: products.slice(0, 3).map((p) => p.source),
     mode: "fixture",
   };
-  if (aiMode() !== "live") return fallback;
+  if (mode !== "live") return fallback;
   const schema = z.object({
     summary: z.string().max(1800),
     sources: z.array(z.string()).max(10),
@@ -166,8 +167,11 @@ export async function shoppingSummary(
     throw new Error("Analysis returned an unknown catalog source.");
   return { ...result, mode: "live" };
 }
-export async function scamAnalysis(message: string): Promise<ScamResult> {
-  if (aiMode() !== "live") return { ...scanMessage(message), mode: "fixture" };
+export async function scamAnalysis(
+  message: string,
+  mode = aiMode(),
+): Promise<ScamResult> {
+  if (mode !== "live") return { ...scanMessage(message), mode: "fixture" };
   const schema = z.object({
     level: z.enum(["low", "caution", "high"]),
     reasons: z.array(z.string().max(500)).max(6),
@@ -185,9 +189,10 @@ export async function scamAnalysis(message: string): Promise<ScamResult> {
 export async function evidenceAnalysis(
   evidence: Evidence[],
   images: { mime: string; bytes: Buffer; evidenceId?: string }[],
+  mode = aiMode(),
 ): Promise<ClaimAnalysis> {
   const records = analyzeClaims(evidence);
-  if (aiMode() !== "live") return { ...records, mode: "fixture" };
+  if (mode !== "live") return { ...records, mode: "fixture" };
   const schema = z.object({
     observations: z.array(z.string().max(700)).max(8),
     sources: z.array(z.string()).max(16),

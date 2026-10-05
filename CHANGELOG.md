@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Isolated engineer scenarios
+
+- Added seven reviewer-created fixture scenarios: fresh shopping, delivered returns, identifier conflicts, seller silence, rejected refunds, interrupted refunds, and partial group payment.
+- Persisted workspace adapter modes and bound new quotes to their payment provider. A fixture scenario on the live/sandbox host makes no provider calls, and changing global configuration cannot relabel an existing order's provider.
+- Restricted reset to designated fixture workspaces. Reset archives the old workspace and preserves its financial/evidence audit, then creates a separate replacement workspace.
+- Validation: 81 unit/contract/database tests pass; five existing browser journeys and the new failed-refund/archive journey pass. Queue concurrency and lease recovery also pass against hosted PostgreSQL; session/order persistence passes after an observed service instance change.
+- Live AI availability: the newest check receives HTTP 429 after bounded retries. Earlier direct text/vision smoke checks passed; current availability and the larger evaluation remain pending quota restoration. The owner requested no billing or AI spend, so hosted analysis uses labeled fixtures until usable no-spend quota returns.
+
 ## 2026-10-06 — Durable recovery jobs and truthful refund status
 
 - Replaced blanket job completion with PostgreSQL row-lock claims, five-minute leases, bounded retries, six-attempt dead letters, and ownership-checked acknowledgments. Capture reconciliation and authorized refunds receive transactional outbox jobs.

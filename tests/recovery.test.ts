@@ -97,6 +97,7 @@ it("recovers a crash after reviewer approval but before refund operation creatio
 it("reconciles completed captures using provider reads without issuing another capture", async () => {
   const { actor, order } = await setup();
   await mutateWorkspace(actor.workspaceId, (state) => {
+    state.orders[0].quote.provider = "sandbox";
     state.operations.push({
       id: "capture-recovery",
       orderId: order.id,

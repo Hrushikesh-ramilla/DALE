@@ -9,23 +9,28 @@ export type Quote = {
   expiresAt: string;
   version: number;
   groupId?: string;
+  provider?: "fixture" | "sandbox";
 };
 export function quoteFingerprint(quote: Quote): string {
-  return createHash("sha256")
-    .update(
-      JSON.stringify([
-        quote.id,
-        quote.productId,
-        quote.model,
-        quote.payee,
-        quote.amount,
-        quote.currency,
-        quote.expiresAt,
-        quote.version,
-        quote.groupId ?? null,
-      ]),
-    )
-    .digest("hex");
+  const fields = [
+    quote.id,
+    quote.productId,
+    quote.model,
+    quote.payee,
+    quote.amount,
+    quote.currency,
+    quote.expiresAt,
+    quote.version,
+    quote.groupId ?? null,
+  ];
+  // Existing persisted approvals retain their original encoding.
+  if (quote.provider) fields.push(quote.provider);
+  return createHash("sha256").update(JSON.stringify(fields)).digest("hex");
+}
+export function quotePaymentMode(quote: Quote) {
+  return (
+    quote.provider || (quote.payee === "fixture-store" ? "fixture" : "sandbox")
+  );
 }
 export function checkPurchase(
   quote: Quote,
