@@ -1,11 +1,17 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { createPayment, verifyProviderOrder } from "../src/server/payments";
 import { evidenceHash, validateImage } from "../src/server/storage";
-import { shoppingSummary } from "../src/server/ai";
+import { shoppingSummary, evidenceAnalysis } from "../src/server/ai";
 import { catalog } from "../src/domain/catalog";
 const quote = { id: "q1", productId: "P001", model: "Atlas 14", payee: "M123", amount: 2900, currency: "USD" as const, expiresAt: "2099-01-01", version: 1 };
 afterEach(() => { vi.unstubAllGlobals(); process.env.PAYMENT_MODE = "fixture"; process.env.AI_MODE = "fixture"; });
 describe("provider contracts", () => {
+  it("uses native Gemini text and image inputs and validates its completed JSON", async () => {
+    process.env.AI_MODE = "live"; process.env.AI_API_KEY = "test-only"; process.env.AI_MODEL = "gemini-3.8-flash"; delete process.env.AI_API_BASE_URL;
+    const fetch = vi.fn().mockResolvedValue(Response.json({ candidates: [{ finishReason: "STOP", content: { parts: [{ text: JSON.stringify({ observations: ["No product details are readable."], sources: ["record-1"] }) }] } }] })); vi.stubGlobal("fetch", fetch);
+    const result = await evidenceAnalysis([{ id: "record-1", checkpoint: "buyer_receipt", serial: "", note: "No details", hash: "hash", createdAt: new Date().toISOString(), assetKey: "photo" }], [{ mime: "image/png", bytes: Buffer.from("test-image") }]);
+    expect(result.mode).toBe("live"); expect(result.outcome).toBe("insufficient"); const [url, init] = fetch.mock.calls[0]; expect(url.pathname).toContain("gemini-3.8-flash:generateContent"); expect(init.headers["x-goog-api-key"]).toBe("test-only"); expect(JSON.parse(init.body).contents[0].parts[1].inlineData.mimeType).toBe("image/png");
+  });
   it("sends the exact merchant, amount and stable operation ID", async () => {
     process.env.PAYMENT_MODE = "sandbox"; process.env.PAYPAL_CLIENT_ID = "test-client"; process.env.PAYPAL_CLIENT_SECRET = "test-secret"; process.env.PAYPAL_MERCHANT_ID = "M123";
     const mocked = vi.fn().mockResolvedValueOnce(Response.json({ access_token: "test-token", expires_in: 300 })).mockResolvedValueOnce(Response.json({ id: "remote-order", status: "CREATED" })); vi.stubGlobal("fetch", mocked);

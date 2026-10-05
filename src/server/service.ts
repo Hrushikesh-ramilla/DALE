@@ -70,7 +70,7 @@ export async function checkout(actor: Actor, quoteId: string, fingerprint: strin
     if (existing) return { order: existing, operation: state.operations.find((op) => op.kind === "create" && op.orderId === existing.id)! };
     if (activeStock(state, quote.productId) >= productById(quote.productId).stock) throw new Error("The last item was reserved. Please review another option.");
     const order: Order = { id: randomUUID(), buyerId: actor.userId, quote, status: "checkout_pending", createdAt: new Date().toISOString(), refundedAmount: 0, dispatchEvidence: [], events: [] };
-    const operation: Operation = { id: randomUUID(), orderId: order.id, kind: "create", state: "pending", amount: quote.amount };
+    const operation: Operation = { id: randomUUID(), orderId: order.id, kind: "create", state: "pending", amount: quote.amount, createdAt: new Date().toISOString() };
     state.orders.push(order); state.operations.push(operation); event(order, "Purchase approved. Checkout is awaiting payment."); audit(state, actor, "checkout.approved", order.id); return { order, operation };
   });
   if (prepared.order.providerOrderId) return prepared.order;
@@ -88,7 +88,7 @@ export async function capture(actor: Actor, orderId: string) {
     if (order.status !== "checkout_pending" || !order.providerOrderId) throw new Error("Checkout is not ready for payment.");
     checkPurchase(order.quote, order.quote.fingerprint, order.quote);
     let operation = state.operations.find((op) => op.kind === "capture" && op.orderId === order.id);
-    if (!operation) { operation = { id: randomUUID(), orderId, kind: "capture", state: "pending", amount: order.quote.amount }; state.operations.push(operation); }
+    if (!operation) { operation = { id: randomUUID(), orderId, kind: "capture", state: "pending", amount: order.quote.amount, createdAt: new Date().toISOString() }; state.operations.push(operation); }
     return { order, operation };
   });
   if (!prepared.operation) return prepared.order;
@@ -175,15 +175,18 @@ export async function executeRefund(actor: Actor, orderId: string) {
     let operation = state.operations.find((o) => o.kind === "refund" && o.orderId === orderId);
     if (!operation) {
       const amount = order.quote.amount - order.refundedAmount; allowedRefund(order.quote.amount, order.refundedAmount, 0, amount);
-      operation = { id: randomUUID(), orderId, kind: "refund", state: "pending", amount }; state.operations.push(operation);
+      operation = { id: randomUUID(), orderId, kind: "refund", state: "pending", amount, createdAt: new Date().toISOString() }; state.operations.push(operation);
     }
     order.status = "refund_pending"; item.status = "refund_pending"; return { order, operation };
   });
   if (!prepared.operation) return prepared.order;
+  if (prepared.operation.state === "failed") throw new Error("The provider rejected this refund. A reviewer must reconcile it before any new operation.");
+  if (paymentMode() === "sandbox" && !prepared.operation.resultId && (!prepared.operation.createdAt || Date.now() - Date.parse(prepared.operation.createdAt) > 5 * 3600000)) throw new Error("The refund outcome needs provider reconciliation. Do not create another refund.");
   try {
     const result = prepared.operation.resultId && paymentMode() === "sandbox" ? await getRefund(prepared.operation.resultId) : await refundPayment(prepared.order.captureId!, prepared.operation.id, prepared.operation.amount);
     await mutateWorkspace(actor.workspaceId, (state) => {
       const op = state.operations.find((o) => o.id === prepared.operation!.id)!; op.resultId = result.id;
+      if (["FAILED", "CANCELLED", "DENIED"].includes(result.status)) { op.state = "failed"; const order = ownedOrder(state, actor, orderId); event(order, "Provider refund failed. Your request remains open for a person to resolve."); return; }
       if (result.status !== "COMPLETED") { op.state = "pending"; return; }
       if (op.state === "succeeded") return;
       const order = ownedOrder(state, actor, orderId); allowedRefund(order.quote.amount, order.refundedAmount, 0, op.amount); order.refundedAmount += op.amount; order.status = "refunded"; op.state = "succeeded";

@@ -1,6 +1,6 @@
 # BuyerGuard master plan
 
-Prepared: 5 October 2026. Status: implementation plan; application, deployments, and tests have not yet been built or run.
+Prepared: 5 October 2026. Status: core application implemented; local validation and direct Gemini smoke checks pass. Hosted deployment and complete PayPal sandbox verification are in progress. See CHANGELOG.md and docs/VALIDATION.md for implemented scope and evidence; remaining acceptance gates below remain release goals.
 
 ## 1. Product decision
 

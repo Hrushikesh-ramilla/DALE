@@ -2,7 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
-## 2026-10-05 — Application scaffold
+## 2026-10-05 — Shopper interface and recovery
+
+- Added responsive shopping, explicit checkout review, group invitations, order timelines, evidence uploads, and customer-selected remedies. Reviewer authorization requires a recorded policy reason.
+- Added durable webhook duplicate detection, provider-read capture recovery, bounded refund recovery, expired unpaid orders/groups, and overdue seller escalation. Automated analysis cannot deny a claim.
+- Added bounded model retries with exponential backoff, jitter, and Retry-After handling. Direct Gemini uses native text/image requests; compatible custom endpoints remain configurable.
+- Validation: 54 unit/contract/database tests and four Chromium journeys pass, including the complete fixture purchase-to-refund journey and mobile layout. Production build passes.
+- Live verification: direct Gemini shopping, scam-message, and vision smoke checks pass; PayPal sandbox authentication, order creation, and retrieval pass. PayPal buyer approval, capture, refund, and actual webhook delivery are not yet verified.
+
 ## 2026-10-05 — Persistent commerce and resolution workflows
 
 - Added authenticated, isolated shopper workspaces; PostgreSQL persistence; approval-bound checkout; stable capture/refund operations; and individual group purchases.

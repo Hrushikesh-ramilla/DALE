@@ -11,6 +11,8 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "verify:paypal": "tsx scripts/verify-paypal.ts",
+    "verify:ai": "tsx scripts/verify-ai.ts",
     "db:migrate": "tsx scripts/migrate.ts",
     "worker": "tsx scripts/worker.ts",
     "eval": "tsx scripts/evaluate.ts",

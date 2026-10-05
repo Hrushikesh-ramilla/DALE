@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS sessions (token_hash text PRIMARY KEY, workspace_id t
 CREATE TABLE IF NOT EXISTS assets (id text PRIMARY KEY, workspace_id text NOT NULL REFERENCES workspaces(id), case_id text NOT NULL, owner_id text NOT NULL, checkpoint text NOT NULL, mime text NOT NULL, hash text NOT NULL, storage_key text NOT NULL, created_at timestamptz NOT NULL DEFAULT now());
 CREATE INDEX IF NOT EXISTS sessions_expiry ON sessions(expires_at);
 CREATE TABLE IF NOT EXISTS jobs (id text PRIMARY KEY, workspace_id text NOT NULL REFERENCES workspaces(id), kind text NOT NULL, payload jsonb NOT NULL, status text NOT NULL DEFAULT 'pending', attempts integer NOT NULL DEFAULT 0, available_at timestamptz NOT NULL DEFAULT now(), locked_at timestamptz, last_error text);
+CREATE TABLE IF NOT EXISTS webhook_receipts (id text PRIMARY KEY, received_at timestamptz NOT NULL DEFAULT now());
 `;
 export function getDatabase(): Promise<Database> {
   return globalThis.buyerGuardDatabase ??= initialize();

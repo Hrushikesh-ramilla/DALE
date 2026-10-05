@@ -2,7 +2,9 @@ import type { NextConfig } from "next";
 
 const config: NextConfig = {
   output: "standalone",
+  outputFileTracingRoot: process.cwd(),
   poweredByHeader: false,
+  agentRules: false,
   serverExternalPackages: ["@electric-sql/pglite", "pg"],
   async headers() {
     return [{ source: "/:path*", headers: [

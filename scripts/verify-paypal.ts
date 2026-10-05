@@ -1,0 +1,20 @@
+import "dotenv/config";
+import { randomUUID } from "node:crypto";
+import { appendFile, mkdir, writeFile } from "node:fs/promises";
+const base = "https://api-m.sandbox.paypal.com";
+const client = process.env.PAYPAL_CLIENT_ID, secret = process.env.PAYPAL_CLIENT_SECRET;
+if (!client || !secret) throw new Error("PayPal sandbox client credentials are missing.");
+const tokenResponse = await fetch(`${base}/v1/oauth2/token`, { method: "POST", headers: { Authorization: `Basic ${Buffer.from(`${client}:${secret}`).toString("base64")}`, "Content-Type": "application/x-www-form-urlencoded" }, body: "grant_type=client_credentials", signal: AbortSignal.timeout(20000) });
+if (!tokenResponse.ok) throw new Error(`Sandbox authentication failed: HTTP ${tokenResponse.status}`);
+const token = await tokenResponse.json() as { access_token: string };
+const created = await fetch(`${base}/v2/checkout/orders`, { method: "POST", headers: { Authorization: `Bearer ${token.access_token}`, "Content-Type": "application/json", "PayPal-Request-Id": randomUUID(), Prefer: "return=representation" }, body: JSON.stringify({ intent: "CAPTURE", purchase_units: [{ amount: { currency_code: "USD", value: "1.00" }, description: "BuyerGuard sandbox integration verification" }] }), signal: AbortSignal.timeout(20000) });
+if (!created.ok) throw new Error(`Sandbox order creation failed: HTTP ${created.status}`);
+const order = await created.json() as { id: string; purchase_units?: { payee?: { merchant_id?: string } }[] };
+const retrieved = await fetch(`${base}/v2/checkout/orders/${encodeURIComponent(order.id)}`, { headers: { Authorization: `Bearer ${token.access_token}` }, signal: AbortSignal.timeout(20000) });
+if (!retrieved.ok) throw new Error(`Sandbox order retrieval failed: HTTP ${retrieved.status}`);
+const full = await retrieved.json() as typeof order;
+const merchantId = full.purchase_units?.[0].payee?.merchant_id;
+if (merchantId && !process.env.PAYPAL_MERCHANT_ID) { await appendFile(".env", `\nPAYPAL_MERCHANT_ID=${merchantId}\n`); console.log("Merchant ID discovered and saved in ignored .env."); }
+await mkdir(".data/reports", { recursive: true });
+await writeFile(".data/reports/paypal-integration.json", JSON.stringify({ checkedAt: new Date().toISOString(), environment: "sandbox", authentication: "passed", orderCreation: "passed", orderRetrieval: "passed", merchantConfigured: Boolean(merchantId), approval: "not tested", capture: "not tested", refund: "not tested", webhook: "not tested", orderId: order.id }, null, 2));
+console.log("Sandbox authentication, order creation and retrieval passed. No payment was approved or captured.");
