@@ -82,7 +82,37 @@ async function main() {
         snapshot.cases[0].status === "review";
     if (kind === "seller_silence")
       expected = snapshot.cases[0].status === "review";
-    if (kind === "group_partial") expected = snapshot.groups[0].amount === 2610;
+    if (kind === "group_partial") {
+      expected = snapshot.groups[0].amount === 2610;
+      const quoteResponse = await operator.post("/api/actions", {
+        data: {
+          action: "quote",
+          productId: "P001",
+          model: "Atlas 14",
+          groupId: snapshot.groups[0].id,
+        },
+      });
+      const quote = (await quoteResponse.json()).result;
+      const checkoutResponse = await operator.post("/api/actions", {
+        data: {
+          action: "checkout",
+          quoteId: quote.id,
+          fingerprint: quote.fingerprint,
+        },
+      });
+      const order = (await checkoutResponse.json()).result;
+      const captured = await operator.post("/api/actions", {
+        data: { action: "capture", orderId: order.id },
+      });
+      const paid = (await captured.json()).result;
+      expected &&=
+        quoteResponse.ok() &&
+        checkoutResponse.ok() &&
+        captured.ok() &&
+        paid.status === "paid" &&
+        paid.quote.amount === 2610 &&
+        paid.captureId.startsWith("FIXTURE");
+    }
     if (kind === "refund_timeout") {
       const deadline = Date.now() + 60000;
       while (Date.now() < deadline) {

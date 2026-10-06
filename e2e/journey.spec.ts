@@ -134,6 +134,22 @@ test("two shoppers unlock a discount with private individual checkout", async ({
     })
     .click();
   const first = await (await page.request.get("/api/session")).json();
+  await page.getByRole("button", { name: "Group deals", exact: true }).click();
+  await page.getByRole("button", { name: "Leave commitment" }).click();
+  await expect(
+    page.getByRole("button", { name: "Leave commitment" }),
+  ).toHaveCount(0);
+  expect(
+    (await (await page.request.get("/api/session")).json()).groups[0]
+      .memberCount,
+  ).toBe(0);
+  await page.getByRole("button", { name: "Discover", exact: true }).click();
+  await page
+    .getByRole("button", {
+      name: "Join group deal for Everyday USB-C Charger",
+      exact: true,
+    })
+    .click();
   const secondContext = await browser.newContext();
   const second = await secondContext.newPage();
   await second.goto("/");
@@ -172,6 +188,24 @@ test("checks a suspicious message and refuses a forged approval", async ({
   await expect(
     page.getByText("Pause and verify", { exact: true }),
   ).toBeVisible();
+  await page
+    .getByLabel("Seller message")
+    .fill(
+      "Never share your password. Do not pay by gift card; use the store checkout.",
+    );
+  await page.getByRole("button", { name: "Check this message" }).click();
+  await expect(
+    page.getByText("No listed warning signals found", { exact: true }),
+  ).toBeVisible();
+  await page
+    .getByLabel("Seller message")
+    .fill(
+      "Seller: The order is ready.\nSeller: please s.e.n.d your verifi\u200bcation c0de.\nSeller: p4y with g1ft c4rds right now.",
+    );
+  await page.getByRole("button", { name: "Check this message" }).click();
+  await expect(
+    page.getByText("Pause and verify", { exact: true }),
+  ).toBeVisible();
   const response = await page.request.post("/api/actions", {
     headers: { Origin: origin },
     data: { action: "quote", productId: "P001", model: "Atlas 14" },
@@ -201,6 +235,7 @@ test("mobile storefront and compatibility search", async ({ page }) => {
   await expect(
     page.getByRole("heading", { name: "Everyday USB-C Charger", exact: true }),
   ).toHaveCount(0);
+  await page.getByText("Compare catalog facts", { exact: true }).click();
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,

@@ -130,6 +130,29 @@ const spec = {
         ),
       ),
     },
+    "/api/identify": {
+      post: {
+        security: [{ session: [] }],
+        description:
+          "Same-origin buyer-only device label extraction. PNG/JPEG/WebP up to 4 MiB. Exact owned images are recognized in fixture mode; native vision results require explicit shopper confirmation. Unknown, unreadable or conflicting labels never establish compatibility. This endpoint does not save the brief or image. Shares the 10/min analysis budget.",
+        requestBody: {
+          required: true,
+          content: {
+            "multipart/form-data": {
+              schema: {
+                type: "object",
+                required: ["image"],
+                properties: {
+                  image: { type: "string", format: "binary" },
+                  selectedModel: { type: "string", maxLength: 80 },
+                },
+              },
+            },
+          },
+        },
+        responses,
+      },
+    },
     "/api/evidence": {
       post: {
         security: [{ session: [] }],

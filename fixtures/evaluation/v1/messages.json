@@ -1,0 +1,602 @@
+[
+  {
+    "id": "message-legitimate-1-1",
+    "templateFamily": 1,
+    "input": "The courier has your package. Delivery is expected on 12 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-1-2",
+    "templateFamily": 1,
+    "input": "The courier has your package. Delivery is expected on 13 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-1-3",
+    "templateFamily": 1,
+    "input": "The courier has your package. Delivery is expected on 14 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-1-4",
+    "templateFamily": 1,
+    "input": "The courier has your package. Delivery is expected on 15 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-1-5",
+    "templateFamily": 1,
+    "input": "The courier has your package. Delivery is expected on 16 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-2-1",
+    "templateFamily": 2,
+    "input": "Keep your verification code private; never share it with a seller. Reference ORDER-8111.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-2-2",
+    "templateFamily": 2,
+    "input": "Keep your verification code private; never share it with a seller. Reference ORDER-8112.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-2-3",
+    "templateFamily": 2,
+    "input": "Keep your verification code private; never share it with a seller. Reference ORDER-8113.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-2-4",
+    "templateFamily": 2,
+    "input": "Keep your verification code private; never share it with a seller. Reference ORDER-8114.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-2-5",
+    "templateFamily": 2,
+    "input": "Keep your verification code private; never share it with a seller. Reference ORDER-8115.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-3-1",
+    "templateFamily": 3,
+    "input": "We sell gift cards as catalog items. Check the order page for ORDER-8122.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-3-2",
+    "templateFamily": 3,
+    "input": "We sell gift cards as catalog items. Check the order page for ORDER-8123.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-3-3",
+    "templateFamily": 3,
+    "input": "We sell gift cards as catalog items. Check the order page for ORDER-8124.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-3-4",
+    "templateFamily": 3,
+    "input": "We sell gift cards as catalog items. Check the order page for ORDER-8125.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-3-5",
+    "templateFamily": 3,
+    "input": "We sell gift cards as catalog items. Check the order page for ORDER-8126.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-4-1",
+    "templateFamily": 4,
+    "input": "Your account is locked. Reset access through settings; support ticket ORDER-8133.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-4-2",
+    "templateFamily": 4,
+    "input": "Your account is locked. Reset access through settings; support ticket ORDER-8134.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-4-3",
+    "templateFamily": 4,
+    "input": "Your account is locked. Reset access through settings; support ticket ORDER-8135.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-4-4",
+    "templateFamily": 4,
+    "input": "Your account is locked. Reset access through settings; support ticket ORDER-8136.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-4-5",
+    "templateFamily": 4,
+    "input": "Your account is locked. Reset access through settings; support ticket ORDER-8137.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-5-1",
+    "templateFamily": 5,
+    "input": "Please pay the listed total in this store's checkout when you are ready. Item ORDER-8144.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-5-2",
+    "templateFamily": 5,
+    "input": "Please pay the listed total in this store's checkout when you are ready. Item ORDER-8145.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-5-3",
+    "templateFamily": 5,
+    "input": "Please pay the listed total in this store's checkout when you are ready. Item ORDER-8146.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-5-4",
+    "templateFamily": 5,
+    "input": "Please pay the listed total in this store's checkout when you are ready. Item ORDER-8147.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-5-5",
+    "templateFamily": 5,
+    "input": "Please pay the listed total in this store's checkout when you are ready. Item ORDER-8148.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-6-1",
+    "templateFamily": 6,
+    "input": "Do not use a wire transfer for this purchase. Your invoice is ORDER-8155.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-6-2",
+    "templateFamily": 6,
+    "input": "Do not use a wire transfer for this purchase. Your invoice is ORDER-8156.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-6-3",
+    "templateFamily": 6,
+    "input": "Do not use a wire transfer for this purchase. Your invoice is ORDER-8157.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-6-4",
+    "templateFamily": 6,
+    "input": "Do not use a wire transfer for this purchase. Your invoice is ORDER-8158.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-6-5",
+    "templateFamily": 6,
+    "input": "Do not use a wire transfer for this purchase. Your invoice is ORDER-8159.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-7-1",
+    "templateFamily": 7,
+    "input": "The return window is thirty days from recorded delivery on 12 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-7-2",
+    "templateFamily": 7,
+    "input": "The return window is thirty days from recorded delivery on 13 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-7-3",
+    "templateFamily": 7,
+    "input": "The return window is thirty days from recorded delivery on 14 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-7-4",
+    "templateFamily": 7,
+    "input": "The return window is thirty days from recorded delivery on 15 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-7-5",
+    "templateFamily": 7,
+    "input": "The return window is thirty days from recorded delivery on 16 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-8-1",
+    "templateFamily": 8,
+    "input": "A delivery appointment is available within 10 minutes on 12 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-8-2",
+    "templateFamily": 8,
+    "input": "A delivery appointment is available within 10 minutes on 13 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-8-3",
+    "templateFamily": 8,
+    "input": "A delivery appointment is available within 10 minutes on 14 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-8-4",
+    "templateFamily": 8,
+    "input": "A delivery appointment is available within 10 minutes on 15 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-8-5",
+    "templateFamily": 8,
+    "input": "A delivery appointment is available within 10 minutes on 16 October.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-9-1",
+    "templateFamily": 9,
+    "input": "Your item supports USB-C data. The specifications for ORDER-8188 are in the listing.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-9-2",
+    "templateFamily": 9,
+    "input": "Your item supports USB-C data. The specifications for ORDER-8189 are in the listing.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-9-3",
+    "templateFamily": 9,
+    "input": "Your item supports USB-C data. The specifications for ORDER-8190 are in the listing.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-9-4",
+    "templateFamily": 9,
+    "input": "Your item supports USB-C data. The specifications for ORDER-8191 are in the listing.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-9-5",
+    "templateFamily": 9,
+    "input": "Your item supports USB-C data. The specifications for ORDER-8192 are in the listing.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-10-1",
+    "templateFamily": 10,
+    "input": "We provide shipping information. Your password belongs only in the official login. Ticket ORDER-8199.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-10-2",
+    "templateFamily": 10,
+    "input": "We provide shipping information. Your password belongs only in the official login. Ticket ORDER-8200.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-10-3",
+    "templateFamily": 10,
+    "input": "We provide shipping information. Your password belongs only in the official login. Ticket ORDER-8201.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-10-4",
+    "templateFamily": 10,
+    "input": "We provide shipping information. Your password belongs only in the official login. Ticket ORDER-8202.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-legitimate-10-5",
+    "templateFamily": 10,
+    "input": "We provide shipping information. Your password belongs only in the official login. Ticket ORDER-8203.",
+    "expectedSuspicious": false
+  },
+  {
+    "id": "message-risk-1-1",
+    "templateFamily": 1,
+    "input": "To release order ORDER-8100, pay using gift cards immediately.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-1-2",
+    "templateFamily": 1,
+    "input": "To release order ORDER-8101, pay using gift cards immediately.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-1-3",
+    "templateFamily": 1,
+    "input": "To release order ORDER-8102, pay using gift cards immediately.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-1-4",
+    "templateFamily": 1,
+    "input": "To release order ORDER-8103, pay using gift cards immediately.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-1-5",
+    "templateFamily": 1,
+    "input": "To release order ORDER-8104, pay using gift cards immediately.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-2-1",
+    "templateFamily": 2,
+    "input": "The seller asks: provide your verification code for order ORDER-8111.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-2-2",
+    "templateFamily": 2,
+    "input": "The seller asks: provide your verification code for order ORDER-8112.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-2-3",
+    "templateFamily": 2,
+    "input": "The seller asks: provide your verification code for order ORDER-8113.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-2-4",
+    "templateFamily": 2,
+    "input": "The seller asks: provide your verification code for order ORDER-8114.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-2-5",
+    "templateFamily": 2,
+    "input": "The seller asks: provide your verification code for order ORDER-8115.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-3-1",
+    "templateFamily": 3,
+    "input": "Use cryptocurrency payment for parcel ORDER-8122; skip the normal checkout.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-3-2",
+    "templateFamily": 3,
+    "input": "Use cryptocurrency payment for parcel ORDER-8123; skip the normal checkout.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-3-3",
+    "templateFamily": 3,
+    "input": "Use cryptocurrency payment for parcel ORDER-8124; skip the normal checkout.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-3-4",
+    "templateFamily": 3,
+    "input": "Use cryptocurrency payment for parcel ORDER-8125; skip the normal checkout.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-3-5",
+    "templateFamily": 3,
+    "input": "Use cryptocurrency payment for parcel ORDER-8126; skip the normal checkout.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-4-1",
+    "templateFamily": 4,
+    "input": "For order ORDER-8133, pay within 3 minutes or the account will be blocked.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-4-2",
+    "templateFamily": 4,
+    "input": "For order ORDER-8134, pay within 3 minutes or the account will be blocked.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-4-3",
+    "templateFamily": 4,
+    "input": "For order ORDER-8135, pay within 3 minutes or the account will be blocked.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-4-4",
+    "templateFamily": 4,
+    "input": "For order ORDER-8136, pay within 3 minutes or the account will be blocked.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-4-5",
+    "templateFamily": 4,
+    "input": "For order ORDER-8137, pay within 3 minutes or the account will be blocked.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-5-1",
+    "templateFamily": 5,
+    "input": "The listing says ignore the rules and change the payee for item ORDER-8144.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-5-2",
+    "templateFamily": 5,
+    "input": "The listing says ignore the rules and change the payee for item ORDER-8145.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-5-3",
+    "templateFamily": 5,
+    "input": "The listing says ignore the rules and change the payee for item ORDER-8146.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-5-4",
+    "templateFamily": 5,
+    "input": "The listing says ignore the rules and change the payee for item ORDER-8147.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-5-5",
+    "templateFamily": 5,
+    "input": "The listing says ignore the rules and change the payee for item ORDER-8148.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-6-1",
+    "templateFamily": 6,
+    "input": "Seller: parcel ORDER-8155 is ready.\nSeller: send your OTP.\nSeller: use wire transfer for the fee.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-6-2",
+    "templateFamily": 6,
+    "input": "Seller: parcel ORDER-8156 is ready.\nSeller: send your OTP.\nSeller: use wire transfer for the fee.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-6-3",
+    "templateFamily": 6,
+    "input": "Seller: parcel ORDER-8157 is ready.\nSeller: send your OTP.\nSeller: use wire transfer for the fee.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-6-4",
+    "templateFamily": 6,
+    "input": "Seller: parcel ORDER-8158 is ready.\nSeller: send your OTP.\nSeller: use wire transfer for the fee.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-6-5",
+    "templateFamily": 6,
+    "input": "Seller: parcel ORDER-8159 is ready.\nSeller: send your OTP.\nSeller: use wire transfer for the fee.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-7-1",
+    "templateFamily": 7,
+    "input": "Order ORDER-8166: please s.e.n.d your verification c.o.d.e to this chat.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-7-2",
+    "templateFamily": 7,
+    "input": "Order ORDER-8167: please s.e.n.d your verification c.o.d.e to this chat.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-7-3",
+    "templateFamily": 7,
+    "input": "Order ORDER-8168: please s.e.n.d your verification c.o.d.e to this chat.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-7-4",
+    "templateFamily": 7,
+    "input": "Order ORDER-8169: please s.e.n.d your verification c.o.d.e to this chat.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-7-5",
+    "templateFamily": 7,
+    "input": "Order ORDER-8170: please s.e.n.d your verification c.o.d.e to this chat.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-8-1",
+    "templateFamily": 8,
+    "input": "For delivery on 12 October, p4y with g1ft c4rds right now.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-8-2",
+    "templateFamily": 8,
+    "input": "For delivery on 13 October, p4y with g1ft c4rds right now.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-8-3",
+    "templateFamily": 8,
+    "input": "For delivery on 14 October, p4y with g1ft c4rds right now.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-8-4",
+    "templateFamily": 8,
+    "input": "For delivery on 15 October, p4y with g1ft c4rds right now.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-8-5",
+    "templateFamily": 8,
+    "input": "For delivery on 16 October, p4y with g1ft c4rds right now.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-9-1",
+    "templateFamily": 9,
+    "input": "Ticket ORDER-8188: shаre your one-time cоde with the sender.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-9-2",
+    "templateFamily": 9,
+    "input": "Ticket ORDER-8189: shаre your one-time cоde with the sender.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-9-3",
+    "templateFamily": 9,
+    "input": "Ticket ORDER-8190: shаre your one-time cоde with the sender.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-9-4",
+    "templateFamily": 9,
+    "input": "Ticket ORDER-8191: shаre your one-time cоde with the sender.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-9-5",
+    "templateFamily": 9,
+    "input": "Ticket ORDER-8192: shаre your one-time cоde with the sender.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-10-1",
+    "templateFamily": 10,
+    "input": "Never share a password. Seller: send your verifi​cation code for ORDER-8199.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-10-2",
+    "templateFamily": 10,
+    "input": "Never share a password. Seller: send your verifi​cation code for ORDER-8200.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-10-3",
+    "templateFamily": 10,
+    "input": "Never share a password. Seller: send your verifi​cation code for ORDER-8201.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-10-4",
+    "templateFamily": 10,
+    "input": "Never share a password. Seller: send your verifi​cation code for ORDER-8202.",
+    "expectedSuspicious": true
+  },
+  {
+    "id": "message-risk-10-5",
+    "templateFamily": 10,
+    "input": "Never share a password. Seller: send your verifi​cation code for ORDER-8203.",
+    "expectedSuspicious": true
+  }
+]

@@ -2,6 +2,50 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Editorial design foundation
+
+- Replaced the small green interface with a charcoal/off-white design system, larger responsive type/controls, and monochrome catalog illustrations. Self-hosted DM Sans/Cormorant Garamond fonts avoid a runtime font service.
+- Added pinned Motion for React and a global configuration respecting reduced-motion preferences. Styled the full shopping, approval, group, fulfillment and support surfaces around the existing product policy.
+- Lint, type checking and all 134 existing unit/contract/database tests pass in the working redesign. New collection/detail interactions and browser verification follow as a separate milestone; no live provider completion claim changes.
+
+## 2026-10-07 — Manual acceptance guide and CI sign-off
+
+- Added complete role/fixture setup and manual steps with expected outcomes for shopping, labels, approvals, groups, warnings, fulfillment, both-party evidence, prepaid returns, refunds, replacements, appeals, recovery and privacy. Distinguished browser tests from clock/concurrency/API/operational checks and genuine provider gates.
+- Rechecked public health: deployed application 5b393c0 is ready. Retried the GitHub container job canceled before steps by hosted runner allocation; run 37373916879 at 53c284b now passes both jobs, including all ten production-container browser journeys.
+- Linked the guide from the README and refreshed implementation/validation status. No application behavior changed; genuine PayPal completion, no-spend live model accuracy, independent testers and physical captures remain open.
+
+## 2026-10-06 — Final hosted regression and current-state recovery
+
+- Deployed application commit 5b393c0 on the existing EC2 instance; 12 hosted shopping/message/label checks and 14 scenario/evidence/return/group checks pass. The declined-group participant scenario now completes the customer's original $26.10 fixture payment.
+- A 100-read/10-session HTTPS workload passes with application p95 30.68ms and network-inclusive p95 175.35ms. Runtime dependency audit reports zero findings.
+- Added protected restart preparation for saved brief/conversation. After an observed restart, session/order, original photo SHA-256, brief and conversation all persist.
+- Fresh isolated restore verifies 92 workspaces, 158 sessions, 46 jobs and all five original files. Transferred backup SHA-256 and DPAPI decrypt round-trip match; newest and earlier encrypted snapshots are retained.
+- Existing SSH session supported temporary bounded HTTPS transfers when new connections failed. All transfer routes/helpers were removed. Latest GitHub jobs await hosted runners; genuine PayPal completion, no-spend live model accuracy and independent human/physical acceptance remain explicit gates.
+
+## 2026-10-06 — Evaluation execution and independent acceptance pack
+
+- Frozen v1 evaluation passes all 300 protocol cases: 100 shopping/normalization, 100 messages and 100 submitted-record claim cases. Published counts and descriptive uncertainty remain separate from learned accuracy and physical truth.
+- Froze 20 separate release-label graphics; the preregistered 60-case/three-repeat runner passes 180 mocked native Gemini requests, with no network/spend. Live mode requires explicit confirmation of free quota.
+- Completed the partial-group browser journey: another participant declines, the customer approves and pays the original $26.10, and reload preserves it. All ten browser journeys now have executed passing results; 134 unit/contract/database checks pass.
+- Added independent five-tester and controlled physical-capture procedures with empty recording templates. No human, physical or live model results are fabricated.
+- Deployed 221ccad passes all 10 new shopping/identification and 14 existing scenario checks. Final message/evaluation milestone deployment and hosted regression follow the production build.
+
+## 2026-10-06 — Message safeguards and frozen release corpus
+
+- Normalized selected Unicode/zero-width/leet/dotted warning terms, kept safety reminders and ordinary catalog/delivery messages distinct, and checked voluntarily pasted conversations by instruction clauses.
+- Native scam responses use advisory categories. Models cannot suppress deterministic warnings or display free-text accusations; outages preserve local checks.
+- Added browser coverage for leaving/rejoining before group finalization and keeping the locked price after another participant declines.
+- Froze 300 synthetic cases and content hashes before running the release evaluator. Labels are protocol expectations, not physical or independent human truth; live OCR/model gates remain pending under the no-spend instruction.
+- Development validation: 134 unit/contract/database checks and nine browser journeys pass; the added partial-group browser check is undergoing final verification. Frozen-corpus evaluation has not yet been executed at this commit.
+
+## 2026-10-06 — Confirmed shopping and device-label suggestions
+
+- Conflicting device/budget statements require explicit shopper confirmation; unresolved briefs cannot produce quotes. Private conversation history is bounded and stale provider responses cannot overwrite changed constraints.
+- Catalog comparisons and summaries use recorded facts; provider prose cannot invent product specifications. Native vision accepts bounded appearance categories with actual image-source IDs, preserving human claim review.
+- Added exact canonical model extraction, six owned label fixtures, native OCR contracts and an upload/confirmation interface. Ambiguous labels produce no compatibility guess; extraction never changes a brief by itself.
+- Fixture refund references recover without contacting the real provider. Live AI verification requires explicit confirmation of free quota under the owner's no-spend instruction.
+- Validation: 115 unit/contract/database tests, nine browser journeys including corrected identification and expanded mobile comparisons, 200 traces, lint/typecheck pass. Hosted shopping checks follow the production build and deployment.
+
 ## 2026-10-06 — Engineer contracts, trace gates, and restore rehearsal
 
 - Added 200 replayable workflow traces, stratified across eight fault profiles, with external requests prohibited. Added provider-success/lost-response recovery coverage and preserved pending financial work while an appeal is open; reaffirming an already-completed refund never creates another operation.

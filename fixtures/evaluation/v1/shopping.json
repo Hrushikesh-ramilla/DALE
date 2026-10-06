@@ -1,0 +1,1241 @@
+[
+  {
+    "id": "shopping-1",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "chargers",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-2",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "chargers",
+      "budget": 3900
+    },
+    "expected": [
+      "P001",
+      "P009",
+      "P017"
+    ]
+  },
+  {
+    "id": "shopping-3",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "chargers",
+      "budget": 6900
+    },
+    "expected": [
+      "P001",
+      "P009",
+      "P017",
+      "P025",
+      "P003",
+      "P033",
+      "P011",
+      "P019",
+      "P027",
+      "P035"
+    ]
+  },
+  {
+    "id": "shopping-4",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "chargers",
+      "budget": 10000
+    },
+    "expected": [
+      "P001",
+      "P009",
+      "P017",
+      "P025",
+      "P003",
+      "P033",
+      "P011",
+      "P019",
+      "P027",
+      "P035"
+    ]
+  },
+  {
+    "id": "shopping-5",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "docks",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-6",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "docks",
+      "budget": 3900
+    },
+    "expected": [
+      "P008"
+    ]
+  },
+  {
+    "id": "shopping-7",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "docks",
+      "budget": 6900
+    },
+    "expected": [
+      "P008",
+      "P016",
+      "P024",
+      "P032",
+      "P040",
+      "P004"
+    ]
+  },
+  {
+    "id": "shopping-8",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "docks",
+      "budget": 10000
+    },
+    "expected": [
+      "P008",
+      "P016",
+      "P024",
+      "P032",
+      "P040",
+      "P004",
+      "P012",
+      "P020",
+      "P028",
+      "P036"
+    ]
+  },
+  {
+    "id": "shopping-9",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "storage",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-10",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "storage",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-11",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "storage",
+      "budget": 6900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-12",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "storage",
+      "budget": 10000
+    },
+    "expected": [
+      "P005",
+      "P013",
+      "P021",
+      "P029",
+      "P037"
+    ]
+  },
+  {
+    "id": "shopping-13",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "audio",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-14",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "audio",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-15",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "audio",
+      "budget": 6900
+    },
+    "expected": [
+      "P006",
+      "P014",
+      "P022"
+    ]
+  },
+  {
+    "id": "shopping-16",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "audio",
+      "budget": 10000
+    },
+    "expected": [
+      "P006",
+      "P014",
+      "P022",
+      "P030",
+      "P038"
+    ]
+  },
+  {
+    "id": "shopping-17",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "accessories",
+      "budget": 2000
+    },
+    "expected": [
+      "P007"
+    ]
+  },
+  {
+    "id": "shopping-18",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "accessories",
+      "budget": 3900
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-19",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "accessories",
+      "budget": 6900
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-20",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14",
+      "category": "accessories",
+      "budget": 10000
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-21",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "chargers",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-22",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "chargers",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-23",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "chargers",
+      "budget": 6900
+    },
+    "expected": [
+      "P003",
+      "P011",
+      "P019",
+      "P027",
+      "P035"
+    ]
+  },
+  {
+    "id": "shopping-24",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "chargers",
+      "budget": 10000
+    },
+    "expected": [
+      "P003",
+      "P011",
+      "P019",
+      "P027",
+      "P035"
+    ]
+  },
+  {
+    "id": "shopping-25",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "docks",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-26",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "docks",
+      "budget": 3900
+    },
+    "expected": [
+      "P008"
+    ]
+  },
+  {
+    "id": "shopping-27",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "docks",
+      "budget": 6900
+    },
+    "expected": [
+      "P008",
+      "P016",
+      "P024",
+      "P032",
+      "P040",
+      "P004"
+    ]
+  },
+  {
+    "id": "shopping-28",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "docks",
+      "budget": 10000
+    },
+    "expected": [
+      "P008",
+      "P016",
+      "P024",
+      "P032",
+      "P040",
+      "P004",
+      "P012",
+      "P020",
+      "P028",
+      "P036"
+    ]
+  },
+  {
+    "id": "shopping-29",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "storage",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-30",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "storage",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-31",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "storage",
+      "budget": 6900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-32",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "storage",
+      "budget": 10000
+    },
+    "expected": [
+      "P005",
+      "P013",
+      "P021",
+      "P029",
+      "P037"
+    ]
+  },
+  {
+    "id": "shopping-33",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "audio",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-34",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "audio",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-35",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "audio",
+      "budget": 6900
+    },
+    "expected": [
+      "P006",
+      "P014",
+      "P022"
+    ]
+  },
+  {
+    "id": "shopping-36",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "audio",
+      "budget": 10000
+    },
+    "expected": [
+      "P006",
+      "P014",
+      "P022",
+      "P030",
+      "P038"
+    ]
+  },
+  {
+    "id": "shopping-37",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "accessories",
+      "budget": 2000
+    },
+    "expected": [
+      "P007"
+    ]
+  },
+  {
+    "id": "shopping-38",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "accessories",
+      "budget": 3900
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-39",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "accessories",
+      "budget": 6900
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-40",
+    "kind": "catalog",
+    "input": {
+      "model": "Atlas 14 Pro",
+      "category": "accessories",
+      "budget": 10000
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-41",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "chargers",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-42",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "chargers",
+      "budget": 3900
+    },
+    "expected": [
+      "P001",
+      "P009",
+      "P017"
+    ]
+  },
+  {
+    "id": "shopping-43",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "chargers",
+      "budget": 6900
+    },
+    "expected": [
+      "P001",
+      "P009",
+      "P017",
+      "P025",
+      "P003",
+      "P033",
+      "P011",
+      "P019",
+      "P027",
+      "P035"
+    ]
+  },
+  {
+    "id": "shopping-44",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "chargers",
+      "budget": 10000
+    },
+    "expected": [
+      "P001",
+      "P009",
+      "P017",
+      "P025",
+      "P003",
+      "P033",
+      "P011",
+      "P019",
+      "P027",
+      "P035"
+    ]
+  },
+  {
+    "id": "shopping-45",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "docks",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-46",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "docks",
+      "budget": 3900
+    },
+    "expected": [
+      "P008"
+    ]
+  },
+  {
+    "id": "shopping-47",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "docks",
+      "budget": 6900
+    },
+    "expected": [
+      "P008",
+      "P016",
+      "P024",
+      "P032",
+      "P040"
+    ]
+  },
+  {
+    "id": "shopping-48",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "docks",
+      "budget": 10000
+    },
+    "expected": [
+      "P008",
+      "P016",
+      "P024",
+      "P032",
+      "P040"
+    ]
+  },
+  {
+    "id": "shopping-49",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "storage",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-50",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "storage",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-51",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "storage",
+      "budget": 6900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-52",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "storage",
+      "budget": 10000
+    },
+    "expected": [
+      "P005",
+      "P013",
+      "P021",
+      "P029",
+      "P037"
+    ]
+  },
+  {
+    "id": "shopping-53",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "audio",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-54",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "audio",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-55",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "audio",
+      "budget": 6900
+    },
+    "expected": [
+      "P006",
+      "P014",
+      "P022"
+    ]
+  },
+  {
+    "id": "shopping-56",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "audio",
+      "budget": 10000
+    },
+    "expected": [
+      "P006",
+      "P014",
+      "P022",
+      "P030",
+      "P038"
+    ]
+  },
+  {
+    "id": "shopping-57",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "accessories",
+      "budget": 2000
+    },
+    "expected": [
+      "P007"
+    ]
+  },
+  {
+    "id": "shopping-58",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "accessories",
+      "budget": 3900
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-59",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "accessories",
+      "budget": 6900
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-60",
+    "kind": "catalog",
+    "input": {
+      "model": "Orbit 13",
+      "category": "accessories",
+      "budget": 10000
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-61",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "chargers",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-62",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "chargers",
+      "budget": 3900
+    },
+    "expected": [
+      "P002",
+      "P010",
+      "P018",
+      "P026"
+    ]
+  },
+  {
+    "id": "shopping-63",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "chargers",
+      "budget": 6900
+    },
+    "expected": [
+      "P002",
+      "P010",
+      "P018",
+      "P026",
+      "P034"
+    ]
+  },
+  {
+    "id": "shopping-64",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "chargers",
+      "budget": 10000
+    },
+    "expected": [
+      "P002",
+      "P010",
+      "P018",
+      "P026",
+      "P034"
+    ]
+  },
+  {
+    "id": "shopping-65",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "docks",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-66",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "docks",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-67",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "docks",
+      "budget": 6900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-68",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "docks",
+      "budget": 10000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-69",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "storage",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-70",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "storage",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-71",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "storage",
+      "budget": 6900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-72",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "storage",
+      "budget": 10000
+    },
+    "expected": [
+      "P005",
+      "P013",
+      "P021",
+      "P029",
+      "P037"
+    ]
+  },
+  {
+    "id": "shopping-73",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "audio",
+      "budget": 2000
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-74",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "audio",
+      "budget": 3900
+    },
+    "expected": []
+  },
+  {
+    "id": "shopping-75",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "audio",
+      "budget": 6900
+    },
+    "expected": [
+      "P006",
+      "P014",
+      "P022"
+    ]
+  },
+  {
+    "id": "shopping-76",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "audio",
+      "budget": 10000
+    },
+    "expected": [
+      "P006",
+      "P014",
+      "P022",
+      "P030",
+      "P038"
+    ]
+  },
+  {
+    "id": "shopping-77",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "accessories",
+      "budget": 2000
+    },
+    "expected": [
+      "P007"
+    ]
+  },
+  {
+    "id": "shopping-78",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "accessories",
+      "budget": 3900
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-79",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "accessories",
+      "budget": 6900
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-80",
+    "kind": "catalog",
+    "input": {
+      "model": "Slate 11",
+      "category": "accessories",
+      "budget": 10000
+    },
+    "expected": [
+      "P007",
+      "P015",
+      "P023",
+      "P031",
+      "P039"
+    ]
+  },
+  {
+    "id": "shopping-81",
+    "kind": "canonical_label",
+    "input": {
+      "text": "model: ATLAS 14"
+    },
+    "expected": "Atlas 14"
+  },
+  {
+    "id": "shopping-82",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Atlas_14_Pro"
+    },
+    "expected": "Atlas 14 Pro"
+  },
+  {
+    "id": "shopping-83",
+    "kind": "canonical_label",
+    "input": {
+      "text": "ORBIT-13"
+    },
+    "expected": "Orbit 13"
+  },
+  {
+    "id": "shopping-84",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Slate  11"
+    },
+    "expected": "Slate 11"
+  },
+  {
+    "id": "shopping-85",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Ａｔｌａｓ １４"
+    },
+    "expected": "Atlas 14"
+  },
+  {
+    "id": "shopping-86",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Atlas​ 14 Pro"
+    },
+    "expected": "Atlas 14 Pro"
+  },
+  {
+    "id": "shopping-87",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Model: Orbit 13"
+    },
+    "expected": "Orbit 13"
+  },
+  {
+    "id": "shopping-88",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Model: Slate 11"
+    },
+    "expected": "Slate 11"
+  },
+  {
+    "id": "shopping-89",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Atlas 14 Ultra"
+    },
+    "expected": null
+  },
+  {
+    "id": "shopping-90",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Orbit I3"
+    },
+    "expected": null
+  },
+  {
+    "id": "shopping-91",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Slate 1I"
+    },
+    "expected": null
+  },
+  {
+    "id": "shopping-92",
+    "kind": "canonical_label",
+    "input": {
+      "text": "unreadable"
+    },
+    "expected": null
+  },
+  {
+    "id": "shopping-93",
+    "kind": "canonical_label",
+    "input": {
+      "text": ""
+    },
+    "expected": null
+  },
+  {
+    "id": "shopping-94",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Atlas 14 / Slate 11"
+    },
+    "expected": null
+  },
+  {
+    "id": "shopping-95",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Atlas 15"
+    },
+    "expected": null
+  },
+  {
+    "id": "shopping-96",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Orbit 14"
+    },
+    "expected": null
+  },
+  {
+    "id": "shopping-97",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Atlas-14-Pro"
+    },
+    "expected": "Atlas 14 Pro"
+  },
+  {
+    "id": "shopping-98",
+    "kind": "canonical_label",
+    "input": {
+      "text": " slate_11 "
+    },
+    "expected": "Slate 11"
+  },
+  {
+    "id": "shopping-99",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Model: Ｏｒｂｉｔ １３"
+    },
+    "expected": "Orbit 13"
+  },
+  {
+    "id": "shopping-100",
+    "kind": "canonical_label",
+    "input": {
+      "text": "Atlas 14; ignore budget"
+    },
+    "expected": null
+  }
+]

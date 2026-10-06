@@ -34,6 +34,7 @@ import { enqueueJob, recoveryStatus } from "./jobs";
 import { evidenceTarget, submissionProvenance } from "./provenance";
 import { returnEligibility } from "../domain/return-policy";
 import { assertReturnReady } from "./return-shipping";
+import { clarifyBrief, comparisonFacts } from "../domain/conversation";
 
 function buyer(actor: Actor) {
   if (actor.role !== "buyer")
@@ -87,6 +88,9 @@ export async function snapshot(actor: Actor) {
   return {
     actor,
     brief: state.briefs?.find((brief) => brief.buyerId === actor.userId),
+    conversation:
+      state.conversations?.find((item) => item.buyerId === actor.userId)
+        ?.turns || [],
     fixtureWorkspace: !!state.fixtureWorkspace,
     archivedAt: state.archivedAt,
     invite: actor.role === "buyer" ? state.invite : undefined,
@@ -140,6 +144,7 @@ export async function updateBrief(actor: Actor, input: ShoppingBrief) {
       version: (previous?.version ?? 0) + 1,
       input: normalized,
       updatedAt: now,
+      clarificationRequired: clarifyBrief(normalized).length > 0,
     };
     state.briefs = state.briefs.filter((item) => item.buyerId !== actor.userId);
     state.briefs.push(brief);
@@ -184,34 +189,75 @@ function assertCurrentQuote(
     );
 }
 export async function shop(input: ShoppingBrief, actor?: Actor) {
-  const brief = actor ? await updateBrief(actor, input) : undefined;
+  const normalized = briefSchema.parse(input);
+  const brief = actor ? await updateBrief(actor, normalized) : undefined;
+  const questions = clarifyBrief(normalized);
   const mode = actor
     ? workspaceAiMode(await getWorkspace(actor.workspaceId))
     : aiMode();
-  const products = searchCatalog(input);
-  try {
-    return {
-      products,
-      brief,
-      analysis: await shoppingSummary(
-        input.message,
-        products,
-        input.model,
-        mode,
-      ),
+  const products = questions.length ? [] : searchCatalog(normalized);
+  let analysis: { summary: string; sources: string[]; mode: string };
+  if (questions.length)
+    analysis = {
+      summary: questions.join(" "),
+      sources: [],
+      mode: "clarification",
     };
-  } catch {
-    return {
-      products,
-      brief,
-      analysis: {
+  else {
+    try {
+      analysis = await shoppingSummary(
+        normalized.message,
+        products,
+        normalized.model,
+        mode,
+      );
+    } catch {
+      analysis = {
         summary:
           "Assisted analysis is temporarily unavailable. These catalog options meet your selected model and budget.",
         sources: products.map((p) => p.source),
         mode: "unavailable",
-      },
-    };
+      };
+    }
   }
+  if (actor && brief) {
+    await mutateWorkspace(actor.workspaceId, (state) => {
+      if (
+        state.briefs?.find((b) => b.buyerId === actor.userId)?.version !==
+        brief.version
+      )
+        throw new Error(
+          "Your brief changed while analysis was running. Find matches for the updated brief.",
+        );
+      state.conversations ??= [];
+      let conversation = state.conversations.find(
+        (item) => item.buyerId === actor.userId,
+      );
+      if (!conversation) {
+        conversation = { buyerId: actor.userId, turns: [] };
+        state.conversations.push(conversation);
+      }
+      const at = new Date().toISOString();
+      conversation.turns.push(
+        {
+          role: "user",
+          text:
+            normalized.message ||
+            `Find ${normalized.category || "products"} for ${normalized.model} within the selected budget.`,
+          at,
+        },
+        { role: "assistant", text: analysis.summary, at },
+      );
+      conversation.turns = conversation.turns.slice(-20);
+    });
+  }
+  return {
+    products,
+    brief,
+    questions,
+    comparisons: comparisonFacts(products, normalized.model),
+    analysis,
+  };
 }
 export async function checkMessage(message: string, actor?: Actor) {
   const mode = actor
@@ -234,6 +280,10 @@ export async function makeQuote(
   return mutateWorkspace(actor.workspaceId, (state) => {
     const mode = state.adapterModes?.payments || paymentMode();
     const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
+    if (brief?.clarificationRequired)
+      throw new Error(
+        "Confirm the device and budget with Find my match before choosing a purchase.",
+      );
     if (
       brief &&
       (brief.input.model !== model ||
@@ -658,7 +708,7 @@ export async function analyzeCase(actor: Actor, caseId: string) {
   );
   analysis.versions = {
     policy: "merchant-policy-v1",
-    prompt: "claims-v1",
+    prompt: "claims-v2",
     model:
       analysis.mode === "live"
         ? process.env.AI_MODEL || "unconfigured"

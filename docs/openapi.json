@@ -546,6 +546,10 @@
               "price",
               "features"
             ]
+          },
+          "confirmConstraints": {
+            "default": false,
+            "type": "boolean"
           }
         },
         "required": [
@@ -854,6 +858,59 @@
                   "action",
                   "kind"
                 ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful command or private snapshot; financial completion is reported separately in order/refund status."
+          },
+          "400": {
+            "description": "Invalid fields, unsafe state transition, changed approval, or integrity error."
+          },
+          "401": {
+            "description": "Missing/expired session or invalid access code."
+          },
+          "403": {
+            "description": "Wrong origin, party, or privileged role."
+          },
+          "404": {
+            "description": "Resource is absent or is not owned by this shopper/workspace."
+          },
+          "429": {
+            "description": "Per-actor request budget exhausted; Retry-After: 60. Actions 120/min, uploads 20/min, shopping analysis 10/min and engineering scenarios 20/min."
+          }
+        }
+      }
+    },
+    "/api/identify": {
+      "post": {
+        "security": [
+          {
+            "session": []
+          }
+        ],
+        "description": "Same-origin buyer-only device label extraction. PNG/JPEG/WebP up to 4 MiB. Exact owned images are recognized in fixture mode; native vision results require explicit shopper confirmation. Unknown, unreadable or conflicting labels never establish compatibility. This endpoint does not save the brief or image. Shares the 10/min analysis budget.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "image"
+                ],
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "selectedModel": {
+                    "type": "string",
+                    "maxLength": 80
+                  }
+                }
               }
             }
           }

@@ -1,0 +1,147 @@
+{
+  "version": "vision-labels-v1",
+  "frozenAt": "2026-10-05T20:48:54.661Z",
+  "provenance": "20 owned HTML-rendered release label graphics derived from frozen protocol labels, separate from six development images. Not real device photographs, independently human-labeled images, or physical claim ground truth. Created before any model evaluation; no model was called.",
+  "fixtures": [
+    {
+      "caseId": "shopping-81",
+      "file": "label-1.png",
+      "sha256": "4b1fdd171117cec1186eefcfaea628603ed5851cb6ce65eca2c616f40a53f198",
+      "readable": true,
+      "expectedCanonicalModel": "Atlas 14"
+    },
+    {
+      "caseId": "shopping-82",
+      "file": "label-2.png",
+      "sha256": "9498fdb52a921c72ccce58726f7fb7226c32d1f839a6b647a9c30565e2df710f",
+      "readable": true,
+      "expectedCanonicalModel": "Atlas 14 Pro"
+    },
+    {
+      "caseId": "shopping-83",
+      "file": "label-3.png",
+      "sha256": "da3c81be2a1e471434ff64a1f1c9757de43d7a5aaf8766d166e17f2a9d8336bd",
+      "readable": true,
+      "expectedCanonicalModel": "Orbit 13"
+    },
+    {
+      "caseId": "shopping-84",
+      "file": "label-4.png",
+      "sha256": "fe8ad14ba632e1137624b4b97f9ebe1011c57c7fb2efdfa37a73881ed540a653",
+      "readable": true,
+      "expectedCanonicalModel": "Slate 11"
+    },
+    {
+      "caseId": "shopping-85",
+      "file": "label-5.png",
+      "sha256": "c96860246d3506ea781e515e4f97c2dbe9b61ee5d170ad418226edcb81bdabdd",
+      "readable": true,
+      "expectedCanonicalModel": "Atlas 14"
+    },
+    {
+      "caseId": "shopping-86",
+      "file": "label-6.png",
+      "sha256": "a7800e2467cc88c916541d20848093267dbc106320f508718e7c3c536be9af93",
+      "readable": true,
+      "expectedCanonicalModel": "Atlas 14 Pro"
+    },
+    {
+      "caseId": "shopping-87",
+      "file": "label-7.png",
+      "sha256": "e1663ea7d1e2c25f6e7536804283d44e969e77972ca69213273766559df7741b",
+      "readable": true,
+      "expectedCanonicalModel": "Orbit 13"
+    },
+    {
+      "caseId": "shopping-88",
+      "file": "label-8.png",
+      "sha256": "eb67c90c4678c896618fee2afb37ddbd0f4632bd2ff70a9ac1a35d4205ed1a08",
+      "readable": true,
+      "expectedCanonicalModel": "Slate 11"
+    },
+    {
+      "caseId": "shopping-89",
+      "file": "label-9.png",
+      "sha256": "21e7fefd0fe23c56534bf207fecff8b5681005c4b1e14d401993544636f2a26a",
+      "readable": true,
+      "expectedCanonicalModel": null
+    },
+    {
+      "caseId": "shopping-90",
+      "file": "label-10.png",
+      "sha256": "5a10442fb015953bba5dd506498e30da9a93f1d744f7f7e110b9a4a3420eca65",
+      "readable": true,
+      "expectedCanonicalModel": null
+    },
+    {
+      "caseId": "shopping-91",
+      "file": "label-11.png",
+      "sha256": "34bc64d300bb132837b14622af5d821108846a2789a92d4f8d412f5770be9794",
+      "readable": true,
+      "expectedCanonicalModel": null
+    },
+    {
+      "caseId": "shopping-92",
+      "file": "label-12.png",
+      "sha256": "abf4ec79cbc161ad790afbeb81c3b994aeb834935314225ee2bfc508d8b6ae72",
+      "readable": false,
+      "expectedCanonicalModel": null
+    },
+    {
+      "caseId": "shopping-93",
+      "file": "label-13.png",
+      "sha256": "abf4ec79cbc161ad790afbeb81c3b994aeb834935314225ee2bfc508d8b6ae72",
+      "readable": false,
+      "expectedCanonicalModel": null
+    },
+    {
+      "caseId": "shopping-94",
+      "file": "label-14.png",
+      "sha256": "03f595d14279a9525d326190c97f207b3b53233bc7db5af108359287b4199f1a",
+      "readable": true,
+      "expectedCanonicalModel": null
+    },
+    {
+      "caseId": "shopping-95",
+      "file": "label-15.png",
+      "sha256": "611c43e30b36c797d9c2c4541e4e668d3138797ebabc4d7f3b78b238793108bc",
+      "readable": true,
+      "expectedCanonicalModel": null
+    },
+    {
+      "caseId": "shopping-96",
+      "file": "label-16.png",
+      "sha256": "bd1633daab24297dc59dff4f0a1ba9945bb10d7b6e5a658d835e1088f7596640",
+      "readable": true,
+      "expectedCanonicalModel": null
+    },
+    {
+      "caseId": "shopping-97",
+      "file": "label-17.png",
+      "sha256": "9430a01d54494a05855f4f2bf68a81c15dfeb37a2f6b92223ba471d5a4aa49a9",
+      "readable": true,
+      "expectedCanonicalModel": "Atlas 14 Pro"
+    },
+    {
+      "caseId": "shopping-98",
+      "file": "label-18.png",
+      "sha256": "40450c63c46eee590b740e33cf760d0bbf75f0d1484da182be4f7cf556005a89",
+      "readable": true,
+      "expectedCanonicalModel": "Slate 11"
+    },
+    {
+      "caseId": "shopping-99",
+      "file": "label-19.png",
+      "sha256": "13cf59a7f694e44bedff21b928adf0ae469dc1dbeac3361198e686d82a6d6996",
+      "readable": true,
+      "expectedCanonicalModel": "Orbit 13"
+    },
+    {
+      "caseId": "shopping-100",
+      "file": "label-20.png",
+      "sha256": "9509aaac8f6a500b5a7f11ee93ee3cabac36c59b6adbdbbdceb24c6db3e1ddb9",
+      "readable": true,
+      "expectedCanonicalModel": null
+    }
+  ]
+}

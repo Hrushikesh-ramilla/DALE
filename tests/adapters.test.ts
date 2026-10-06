@@ -63,8 +63,9 @@ describe("provider contracts", () => {
               parts: [
                 {
                   text: JSON.stringify({
-                    observations: ["No product details are readable."],
-                    sources: ["record-1"],
+                    observations: [
+                      { source: "record-1", appearance: "unreadable" },
+                    ],
                   }),
                 },
               ],
@@ -90,6 +91,9 @@ describe("provider contracts", () => {
     );
     expect(result.mode).toBe("live");
     expect(result.outcome).toBe("insufficient");
+    expect(result.observations.join(" ")).toContain(
+      "unverified appearance inference",
+    );
     const [url, init] = fetch.mock.calls[0];
     expect(url.pathname).toContain("gemini-3.8-flash:generateContent");
     expect(init.headers["x-goog-api-key"]).toBe("test-only");
