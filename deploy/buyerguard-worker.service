@@ -1,0 +1,26 @@
+[Unit]
+Description=BuyerGuard payment and case recovery
+After=network-online.target postgresql.service buyerguard.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=buyerguard
+Group=buyerguard
+WorkingDirectory=/opt/buyerguard/current
+EnvironmentFile=/etc/buyerguard.env
+Environment=NODE_ENV=production
+Environment=NODE_OPTIONS=--max-old-space-size=160
+ExecStart=/usr/bin/node worker.cjs
+Restart=on-failure
+RestartSec=10
+MemoryMax=240M
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/buyerguard
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
