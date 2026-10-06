@@ -22,7 +22,11 @@
     "db:migrate": "tsx scripts/migrate.ts",
     "worker": "tsx scripts/worker.ts",
     "eval": "tsx scripts/evaluate.ts",
-    "check": "npm run lint && npm run typecheck && npm test"
+    "check": "npm run lint && npm run typecheck && npm test",
+    "test:integration": "tsx scripts/workflow-traces.ts",
+    "db:seed": "tsx scripts/seed.ts",
+    "docs:api": "tsx scripts/generate-openapi.ts",
+    "verify:performance": "tsx scripts/verify-performance.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.1146.0",

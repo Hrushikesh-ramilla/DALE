@@ -40,6 +40,8 @@ it.each([
   "refund_failure",
   "refund_timeout",
   "group_partial",
+  "canceled_order",
+  "late_order",
 ] as const)(
   "creates the %s scenario with isolated fixture adapters on a sandbox/live host",
   async (kind) => {
@@ -66,6 +68,13 @@ it.each([
       expect(data.cases[0].status).toBe("refund_failed");
     }
     if (kind === "seller_silence") expect(data.cases[0].status).toBe("review");
+    if (kind === "canceled_order" || kind === "late_order") {
+      expect(data.orders[0].fulfillmentIssue?.kind).toBe(
+        kind === "canceled_order" ? "canceled" : "late",
+      );
+      expect(data.orders[0].refundedAmount).toBe(0);
+      expect(data.orders[0].status).toBe("paid");
+    }
     if (kind === "refund_timeout") {
       await recoverWorkspace(created.actor.workspaceId);
       await recoverWorkspace(created.actor.workspaceId);

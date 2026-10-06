@@ -1,3 +1,4 @@
+import { takeRequestBudget } from "@/server/budgets";
 import { z } from "zod";
 import { actorFromRequest } from "@/server/auth";
 import { apiError, json, limitedBody, requireSameOrigin } from "@/server/http";
@@ -23,6 +24,7 @@ export async function POST(request: Request) {
   try {
     requireSameOrigin(request);
     const actor = await actorFromRequest();
+    await takeRequestBudget(actor, "uploads", 20);
     const contentType = request.headers.get("content-type") || "";
     let fields: Record<string, unknown>;
     let file: { bytes: Buffer; mime: string };

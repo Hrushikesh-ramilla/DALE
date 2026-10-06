@@ -2,12 +2,27 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Engineer contracts, trace gates, and restore rehearsal
+
+- Added 200 replayable workflow traces, stratified across eight fault profiles, with external requests prohibited. Added provider-success/lost-response recovery coverage and preserved pending financial work while an appeal is open; reaffirming an already-completed refund never creates another operation.
+- Published a generated OpenAPI contract from the same action/brief schemas used by routes. Added private, isolated nine-scenario seeding and orderly CLI database shutdown.
+- Added atomic per-actor request budgets, redacted error references, and measured application timing for authenticated session reads. Added a ten-session hosted performance verifier.
+- Executed an EC2 backup/restore rehearsal in a separate database/directory: workspace state and financial/audit references matched the snapshot, row counts matched, and all three originals matched SHA-256. Saved an owner-only, DPAPI-encrypted off-instance copy and verified its decrypt round-trip.
+- Validation: 99 unit/contract/database tests, 200 traces, isolated seeding, API generation, and production build pass. Hosted performance follows deployment. Containers already pass the seven return-stage journeys; queued/canceled GitHub runner allocation is tracked separately from code failures.
+
+## 2026-10-06 — Cancellation and late-delivery choices
+
+- Bound new delivery promises and merchant-policy versions to purchase fingerprints. Changed terms require fresh customer approval.
+- Seller cancellation preserves captured payment status and creates a support choice; unpaid orders cancel without capture. Unresolved capture outcomes must be reconciled first. Canceled fulfillment cannot silently ship.
+- Added one-time late-delivery help events, customer-controlled remedy changes before execution, and no-charge replacements with fresh delivery promises. Added isolated cancellation and late-order scenarios.
+- Validation: 97 unit/contract/database tests pass; seven existing browser journeys and the new cancellation-to-customer-choice journey pass. Production build passes. The preceding deployed return milestone passes 12 hosted scenario/evidence/return checks and original photo/session/order restart persistence. New cancellation deployment verification follows its production build.
+
 ## 2026-10-06 — Customer-first return arrangements
 
 - Added the recorded-delivery 30-day merchant-policy check. Missing timing, late requests, and cancellation/non-delivery claims remain open for human review.
 - Added reviewer-authorized merchant-paid return references, buyer handoff, matching seller receipt, no-return exceptions with reasons, and preserved prior arrangements. Return shipping cost to the customer is zero; carrier events are explicitly simulated.
 - Required receipt or an authorized waiver before remedy execution, and added a 24-hour merchant remedy target with one follow-up escalation. Deadline handling preserves an already-authorized financial operation.
-- Validation: 90 unit/contract/database tests pass; six existing journeys and the new prepaid-return-to-refund browser journey pass. Hosted verification awaits restored SSH access. No live carrier label purchase or physical-truth claim is made.
+- Validation: 90 unit/contract/database tests pass; six existing journeys and the new prepaid-return-to-refund browser journey pass. Deployed d0b9ed1 passes 12 hosted checks including prepaid receipt-gated refund. Private original photo, session, and order survive an observed restart. No live carrier label purchase or physical-truth claim is made.
 
 ## 2026-10-06 — Submission provenance and private case reports
 

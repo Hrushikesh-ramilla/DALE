@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { ZodError } from "zod";
+import { randomUUID } from "node:crypto";
 export async function limitedBody(
   request: Request,
   max = 65536,
@@ -43,18 +44,44 @@ export function apiError(error: unknown) {
         ? error.message
         : "The request could not be completed.";
   const auth = /session|sign in|access code/i.test(message);
-  const status = auth
-    ? 401
-    : /not found/i.test(message)
-      ? 404
-      : /authorization|only|permission|origin/i.test(message)
-        ? 403
-        : 400;
+  const status = /rate limit/i.test(message)
+    ? 429
+    : auth
+      ? 401
+      : /not found/i.test(message)
+        ? 404
+        : /authorization|only|permission|origin/i.test(message)
+          ? 403
+          : 400;
+  const reference = randomUUID();
+  console.warn(
+    JSON.stringify({
+      event: "api.error",
+      reference,
+      status,
+      at: new Date().toISOString(),
+    }),
+  );
   return NextResponse.json(
-    { error: message },
-    { status, headers: { "Cache-Control": "no-store" } },
+    { error: message, reference },
+    {
+      status,
+      headers: {
+        "Cache-Control": "no-store",
+        "X-Request-ID": reference,
+        ...(status === 429 ? { "Retry-After": "60" } : {}),
+      },
+    },
   );
 }
-export function json(data: unknown) {
-  return NextResponse.json(data, { headers: { "Cache-Control": "no-store" } });
+export function json(data: unknown, startedAt?: number) {
+  const response = NextResponse.json(data, {
+    headers: { "Cache-Control": "no-store", "X-Request-ID": randomUUID() },
+  });
+  if (startedAt !== undefined)
+    response.headers.set(
+      "Server-Timing",
+      `app;dur=${(performance.now() - startedAt).toFixed(2)}`,
+    );
+  return response;
 }

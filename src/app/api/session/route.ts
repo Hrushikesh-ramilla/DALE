@@ -9,8 +9,9 @@ import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
 import { snapshot } from "@/server/service";
 export const runtime = "nodejs";
 export async function GET() {
+  const startedAt = performance.now();
   try {
-    return json(await snapshot(await actorFromRequest()));
+    return json(await snapshot(await actorFromRequest()), startedAt);
   } catch (error) {
     return apiError(error);
   }

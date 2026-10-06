@@ -10,6 +10,7 @@ export interface Sql {
 }
 export interface Database extends Sql {
   transaction<T>(fn: (sql: Sql) => Promise<T>): Promise<T>;
+  close(): Promise<void>;
 }
 declare global {
   var buyerGuardDatabase: Promise<Database> | undefined;
@@ -23,10 +24,16 @@ CREATE TABLE IF NOT EXISTS jobs (id text PRIMARY KEY, workspace_id text NOT NULL
 ALTER TABLE jobs ADD COLUMN IF NOT EXISTS locked_by text;
 CREATE INDEX IF NOT EXISTS jobs_ready ON jobs(status,available_at);
 CREATE TABLE IF NOT EXISTS worker_heartbeats (id text PRIMARY KEY, seen_at timestamptz NOT NULL, failures integer NOT NULL);
+CREATE TABLE IF NOT EXISTS request_budgets (id text PRIMARY KEY, window_at timestamptz NOT NULL, used integer NOT NULL);
 CREATE TABLE IF NOT EXISTS webhook_receipts (id text PRIMARY KEY, received_at timestamptz NOT NULL DEFAULT now());
 `;
 export function getDatabase(): Promise<Database> {
   return (globalThis.buyerGuardDatabase ??= initialize());
+}
+export async function closeDatabase() {
+  const pending = globalThis.buyerGuardDatabase;
+  globalThis.buyerGuardDatabase = undefined;
+  if (pending) await (await pending).close();
 }
 async function initialize(): Promise<Database> {
   if (process.env.DATABASE_URL) {
@@ -42,6 +49,7 @@ async function initialize(): Promise<Database> {
     });
     const db: Database = {
       ...wrap(pool),
+      close: () => pool.end(),
       async transaction(fn) {
         const client = await pool.connect();
         try {
@@ -83,6 +91,7 @@ async function initialize(): Promise<Database> {
   });
   return {
     ...wrap(engine),
+    close: () => engine.close(),
     transaction: (fn) => engine.transaction((tx) => fn(wrap(tx))),
   };
 }

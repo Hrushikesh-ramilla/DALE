@@ -49,6 +49,7 @@ type Modal =
       item: ReturnCase;
       status: "in_transit" | "received";
     }
+  | { kind: "cancel"; order: Order }
   | { kind: "scam" }
   | { kind: "resolve"; item: ReturnCase }
   | null;
@@ -778,6 +779,22 @@ export default function Storefront() {
                         {order.status.replaceAll("_", " ")}
                       </span>
                     </div>
+                    {order.quote.deliveryBy && (
+                      <p className="muted">
+                        Recorded delivery promise:{" "}
+                        {new Date(order.quote.deliveryBy).toLocaleDateString()}
+                      </p>
+                    )}
+                    {order.fulfillmentIssue && (
+                      <div className="analysis-panel">
+                        <h4>Fulfillment {order.fulfillmentIssue.kind}</h4>
+                        <p>{order.fulfillmentIssue.reason}</p>
+                        <p>
+                          Your payment status is shown separately. Choose your
+                          preferred remedy through support.
+                        </p>
+                      </div>
+                    )}
                     <div className="timeline">
                       {order.events.map((entry, i) => (
                         <div key={i}>
@@ -818,6 +835,21 @@ export default function Storefront() {
                             </button>
                           )}
                         {session?.actor.role === "seller" &&
+                          ["checkout_pending", "paid", "shipped"].includes(
+                            order.status,
+                          ) &&
+                          !order.fulfillmentIssue && (
+                            <button
+                              className="button secondary small"
+                              onClick={() =>
+                                setModal({ kind: "cancel", order })
+                              }
+                            >
+                              Cancel fulfillment
+                            </button>
+                          )}
+                        {session?.actor.role === "seller" &&
+                          order.fulfillmentIssue?.kind !== "canceled" &&
                           ["paid", "replacement"].includes(order.status) && (
                             <>
                               <button
@@ -845,7 +877,8 @@ export default function Storefront() {
                             </>
                           )}
                         {session?.actor.role === "seller" &&
-                          order.status === "shipped" && (
+                          order.status === "shipped" &&
+                          order.fulfillmentIssue?.kind !== "canceled" && (
                             <button
                               className="button primary small"
                               onClick={() =>
@@ -906,6 +939,37 @@ export default function Storefront() {
                         {item.status.replaceAll("_", " ")}
                       </span>
                     </div>
+                    {isBuyer &&
+                      !item.remedy &&
+                      ![
+                        "resolved",
+                        "approved",
+                        "refund_pending",
+                        "refund_failed",
+                      ].includes(item.status) && (
+                        <button
+                          className="button secondary small"
+                          onClick={() =>
+                            void run(async () => {
+                              await action({
+                                action: "choose_remedy",
+                                caseId: item.id,
+                                request:
+                                  item.request === "refund"
+                                    ? "replacement"
+                                    : "refund",
+                              });
+                              setNotice(
+                                "Your remedy choice is updated. A reviewer will follow your preference before execution.",
+                              );
+                            })
+                          }
+                        >
+                          Choose{" "}
+                          {item.request === "refund" ? "replacement" : "refund"}{" "}
+                          instead
+                        </button>
+                      )}
                     {item.eligibility && (
                       <p className="muted">{item.eligibility.explanation}</p>
                     )}
@@ -1220,6 +1284,12 @@ export default function Storefront() {
                     </option>
                     <option value="refund_failure">Rejected refund</option>
                     <option value="refund_timeout">Interrupted refund</option>
+                    <option value="canceled_order">
+                      Seller cancellation with payment recorded
+                    </option>
+                    <option value="late_order">
+                      Late delivery with customer remedy choices
+                    </option>
                     <option value="group_partial">Partial group payment</option>
                   </select>
                 </label>
@@ -1366,6 +1436,18 @@ export default function Storefront() {
                     <p>Confirmed fit: {modal.quote.model}</p>
                   </div>
                 </div>
+                {modal.quote.deliveryBy && (
+                  <p>
+                    Delivery promise:{" "}
+                    {new Date(modal.quote.deliveryBy).toLocaleDateString()}
+                  </p>
+                )}
+                <p>
+                  Merchant policy: request returns within 30 days of recorded
+                  delivery. Merchant-paid return shipping for qualifying claims;
+                  uncertain or late requests receive review. Provider disputes
+                  remain a separate process.
+                </p>
                 <dl className="quote-summary">
                   <div>
                     <dt>Merchant</dt>
@@ -1742,6 +1824,46 @@ export default function Storefront() {
                   )}
                   <button className="button primary full" disabled={busy}>
                     Record evidence <Check size={16} />
+                  </button>
+                </form>
+              </>
+            )}
+            {modal.kind === "cancel" && (
+              <>
+                <h2 id="modal-title">Record a fulfillment cancellation.</h2>
+                <p className="muted">
+                  Captured payments remain recorded. The shopper chooses refund
+                  or replacement; cancellation alone does not execute a
+                  financial remedy.
+                </p>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const form = new FormData(e.currentTarget);
+                    void run(async () => {
+                      await action({
+                        action: "cancel_fulfillment",
+                        orderId: modal.order.id,
+                        reason: String(form.get("reason")),
+                      });
+                      setModal(null);
+                      setNotice(
+                        "Cancellation recorded; the customer can choose a remedy through support.",
+                      );
+                    });
+                  }}
+                >
+                  <label>
+                    Cancellation reason
+                    <textarea
+                      required
+                      name="reason"
+                      maxLength={2000}
+                      rows={3}
+                    />
+                  </label>
+                  <button className="button primary full" disabled={busy}>
+                    Record cancellation
                   </button>
                 </form>
               </>

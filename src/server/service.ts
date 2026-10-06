@@ -292,6 +292,8 @@ export async function makeQuote(
       currency: "USD" as const,
       expiresAt: new Date(expiry).toISOString(),
       version: 1,
+      deliveryBy: new Date(Date.now() + 5 * 86400000).toISOString(),
+      returnPolicy: "merchant-policy-v1",
       groupId,
       fingerprint: "",
       provider: mode,
@@ -766,6 +768,11 @@ export async function resolveCase(
           returnId: undefined,
           replacementOf: order.id,
           deliveredAt: undefined,
+          fulfillmentIssue: undefined,
+          quote: {
+            ...order.quote,
+            deliveryBy: new Date(Date.now() + 5 * 86400000).toISOString(),
+          },
           dispatchEvidence: [],
           events: [
             {
@@ -774,6 +781,7 @@ export async function resolveCase(
             },
           ],
         };
+        replacement.quote.fingerprint = quoteFingerprint(replacement.quote);
         state.orders.push(replacement);
       }
       item.status = "resolved";
@@ -799,7 +807,10 @@ export async function executeRefund(actor: Actor, orderId: string) {
     )
       throw new Error("The customer's refund has not been authorized.");
     assertReturnReady(item);
-    if (order.status === "refunded") return { order, operation: undefined };
+    if (order.status === "refunded") {
+      item.status = "resolved";
+      return { order, operation: undefined };
+    }
     if (state.orders.some((o) => o.replacementOf === orderId))
       throw new Error(
         "A replacement already exists. Review the remedy before refunding.",
@@ -948,7 +959,8 @@ export async function appealCase(actor: Actor, caseId: string, note: string) {
     if (!note.trim())
       throw new Error("Please describe what you want reviewed.");
     item.appeal = note;
-    item.status = "appealed";
+    if (!["approved", "refund_pending", "refund_failed"].includes(item.status))
+      item.status = "appealed";
     audit(state, actor, "case.appealed", caseId);
     return item;
   });
@@ -964,6 +976,10 @@ export async function shippingEvent(
     );
   return mutateWorkspace(actor.workspaceId, (state) => {
     const order = ownedOrder(state, actor, orderId);
+    if (order.fulfillmentIssue?.kind === "canceled")
+      throw new Error(
+        "Canceled fulfillment cannot be shipped. Review the customer remedy.",
+      );
     const allowed =
       status === "shipped" ? ["paid", "replacement"] : ["shipped"];
     if (!allowed.includes(order.status))

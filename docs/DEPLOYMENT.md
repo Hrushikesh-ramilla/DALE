@@ -27,3 +27,11 @@ Docker Compose configuration validates. The local Windows engine failed to becom
 ## PayPal webhook
 
 Register `https://<APP_HOST>/api/paypal/webhook` on the sandbox application and set `PAYPAL_WEBHOOK_ID` in the protected server environment. Subscribe to capture-completed and refund status events. Incoming events are verified against PayPal, durably deduplicated, and used to wake reconciliation. Provider reads establish financial completion; an event payload alone cannot authorize a charge or refund. Webhook registration is separate from proving actual delivery and signature verification.
+
+## Backups and restore rehearsal
+
+Run `sudo bash /home/ubuntu/backup-restore-check.sh` after transferring `deploy/backup-restore-check.sh`. It briefly pauses app/worker writes for a consistent database/original-file snapshot, restarts services, restores to a distinct timestamped scratch database/private directory, compares workspace-state SHA-256 and row counts, and checks every original against its database hash. A cleanup trap restarts services and removes only the specifically named scratch database. It never restores over the production database or evidence directory.
+
+Private snapshots remain under `/var/backups/buyerguard/<timestamp>` with owner-only permissions. Copy database.dump, assets.tar.gz, expected counts/state hash and restore report to protected off-instance storage; provider/session configuration stays in the owner's separate protected environment. The executed 20261005195836 rehearsal preserved 50 workspaces, 88 sessions, 25 jobs and three originals. Zero genuine webhook receipts is recorded, not claimed as integration success.
+
+The local `.data/backups/buyerguard-backup-20261005195836.dpapi` archive is encrypted for the owner's Windows account. `scripts/protect-backup.ps1` verifies a DPAPI decrypt round-trip before deleting only its checked plaintext source. Recovery requires the same Windows account/profile; decrypt with ProtectedData.Unprotect using CurrentUser, write to a protected temporary path, then use the separate-database restore procedure. Keep that account's recovery arrangements and protected production.env separately. Retain at least the newest verified snapshot and one earlier snapshot; do not delete an older recoverable snapshot before verifying its replacement.

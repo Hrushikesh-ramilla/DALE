@@ -10,6 +10,8 @@ export type Quote = {
   version: number;
   groupId?: string;
   provider?: "fixture" | "sandbox";
+  deliveryBy?: string;
+  returnPolicy?: string;
 };
 export function quoteFingerprint(quote: Quote): string {
   const fields = [
@@ -25,6 +27,8 @@ export function quoteFingerprint(quote: Quote): string {
   ];
   // Existing persisted approvals retain their original encoding.
   if (quote.provider) fields.push(quote.provider);
+  if (quote.deliveryBy || quote.returnPolicy)
+    fields.push(quote.deliveryBy ?? null, quote.returnPolicy ?? null);
   return createHash("sha256").update(JSON.stringify(fields)).digest("hex");
 }
 export function quotePaymentMode(quote: Quote) {
