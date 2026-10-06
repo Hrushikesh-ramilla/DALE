@@ -17,18 +17,41 @@ const inputSchema = z.object({
   ]),
   serial: z.string().max(100),
   note: z.string().min(1).max(2000),
+  captureSessionId: z.string().uuid().optional(),
 });
 export async function POST(request: Request) {
   try {
     requireSameOrigin(request);
     const actor = await actorFromRequest();
-    const input = inputSchema.parse(
-      Object.fromEntries(new URL(request.url).searchParams),
-    );
-    const file = {
-      bytes: await limitedBody(request, 4 * 1024 * 1024),
-      mime: request.headers.get("content-type") || "",
-    };
+    const contentType = request.headers.get("content-type") || "";
+    let fields: Record<string, unknown>;
+    let file: { bytes: Buffer; mime: string };
+    if (contentType.startsWith("multipart/form-data")) {
+      const bytes = await limitedBody(request, 4 * 1024 * 1024 + 65536);
+      const form = await new Request(request.url, {
+        method: "POST",
+        headers: { "Content-Type": contentType },
+        body: new Uint8Array(bytes),
+      }).formData();
+      fields = Object.fromEntries(form);
+      const image = form.get("image");
+      if (!(image instanceof File))
+        throw new Error("An image file is required.");
+      file = {
+        bytes: Buffer.from(await image.arrayBuffer()),
+        mime: image.type,
+      };
+    } else {
+      // Compatibility for the original engineering client. New UI submissions keep notes out of URLs.
+      fields = Object.fromEntries(new URL(request.url).searchParams);
+      file = {
+        bytes: await limitedBody(request, 4 * 1024 * 1024),
+        mime: contentType,
+      };
+    }
+    const input = inputSchema.parse(fields);
+    if (Boolean(input.orderId) === Boolean(input.caseId))
+      throw new Error("Exactly one case or order is required.");
     const result = input.orderId
       ? await addDispatchEvidence(actor, input.orderId, input, file)
       : input.caseId

@@ -31,6 +31,9 @@ import { getDatabase } from "./database";
 import { selectVisionEvidence } from "./vision";
 import { briefSchema, type ShoppingBrief } from "../domain/brief";
 import { enqueueJob, recoveryStatus } from "./jobs";
+import { evidenceTarget, submissionProvenance } from "./provenance";
+import { returnEligibility } from "../domain/return-policy";
+import { assertReturnReady } from "./return-shipping";
 
 function buyer(actor: Actor) {
   if (actor.role !== "buyer")
@@ -564,6 +567,7 @@ export async function openReturn(
       deadlineAt: new Date(Date.now() + 86400000).toISOString(),
       sellerResponded: false,
       evidence: [...order.dispatchEvidence],
+      eligibility: returnEligibility(reason, order.deliveredAt),
     };
     state.cases.push(item);
     order.returnId = item.id;
@@ -575,45 +579,40 @@ export async function openReturn(
     return item;
   });
 }
-function checkpointPermission(
-  actor: Actor,
-  checkpoint: Evidence["checkpoint"],
-) {
-  const allowed =
-    actor.role === "buyer"
-      ? ["buyer_receipt", "buyer_return"]
-      : actor.role === "seller"
-        ? ["seller_dispatch", "seller_return"]
-        : [];
-  if (!allowed.includes(checkpoint))
-    throw new Error("You can only submit your side's evidence.");
-}
 export async function addEvidence(
   actor: Actor,
   caseId: string,
-  input: { checkpoint: Evidence["checkpoint"]; serial: string; note: string },
+  input: {
+    checkpoint: Evidence["checkpoint"];
+    serial: string;
+    note: string;
+    captureSessionId?: string;
+  },
   file?: { bytes: Buffer; mime: string },
 ) {
-  checkpointPermission(actor, input.checkpoint);
-  const state = await getWorkspace(actor.workspaceId);
-  const current = ownedCase(state, actor, caseId);
-  if (current.status === "resolved")
-    throw new Error("Appeal the resolution before adding evidence.");
-  if (current.evidence.length >= 16)
-    throw new Error(
-      "The case already has 16 evidence records. A reviewer can help organize them.",
-    );
   const id = randomUUID();
   const hash = evidenceHash(file?.bytes || Buffer.from(JSON.stringify(input)));
   const key = file ? `${actor.workspaceId}/${caseId}/${id}` : undefined;
-  if (file && key) await putAsset(key, file.bytes, file.mime);
   return mutateWorkspace(actor.workspaceId, async (fresh, sql) => {
+    const entries = evidenceTarget(fresh, actor, { caseId }, input.checkpoint);
+    const provenance = submissionProvenance(
+      fresh,
+      actor,
+      caseId,
+      input.checkpoint,
+      hash,
+      entries,
+      Boolean(file),
+      input.captureSessionId,
+    );
+    if (file && key) await putAsset(key, file.bytes, file.mime);
     const item = ownedCase(fresh, actor, caseId);
-    if (item.status === "resolved" || item.evidence.length >= 16)
-      throw new Error("Evidence cannot be added in the current case state.");
     const entry: Evidence = {
       id,
-      ...input,
+      checkpoint: input.checkpoint,
+      serial: input.serial,
+      note: input.note,
+      provenance,
       hash,
       assetKey: key,
       mime: file?.mime,
@@ -655,6 +654,15 @@ export async function analyzeCase(actor: Actor, caseId: string) {
     images,
     workspaceAiMode(state),
   );
+  analysis.versions = {
+    policy: "merchant-policy-v1",
+    prompt: "claims-v1",
+    model:
+      analysis.mode === "live"
+        ? process.env.AI_MODEL || "unconfigured"
+        : "deterministic-fixture-v1",
+    analyzedAt: new Date().toISOString(),
+  };
   if (item.evidence.filter((entry) => entry.assetKey).length > images.length)
     analysis.observations.push(
       "Model image review is limited to four checkpoint samples. All original images remain available for human review.",
@@ -710,6 +718,16 @@ export async function resolveCase(
       );
     if (!order.captureId)
       throw new Error("A payment must be confirmed before a financial remedy.");
+    assertReturnReady(item);
+    // An explicit reviewer approval with a policy reason preserves the original no-return remedy contract.
+    item.returnShipment ??= {
+      status: "not_required",
+      customerCost: 0,
+      reason: note,
+      authorizedAt: new Date().toISOString(),
+      remedyDueAt: new Date(Date.now() + 86400000).toISOString(),
+      carrier: "simulated",
+    };
     item.remedy = remedy;
     item.resolutionNote = note;
     item.status = "approved";
@@ -747,6 +765,7 @@ export async function resolveCase(
           providerOrderId: undefined,
           returnId: undefined,
           replacementOf: order.id,
+          deliveredAt: undefined,
           dispatchEvidence: [],
           events: [
             {
@@ -779,6 +798,7 @@ export async function executeRefund(actor: Actor, orderId: string) {
       !["approved", "refund_pending", "resolved"].includes(item.status)
     )
       throw new Error("The customer's refund has not been authorized.");
+    assertReturnReady(item);
     if (order.status === "refunded") return { order, operation: undefined };
     if (state.orders.some((o) => o.replacementOf === orderId))
       throw new Error(
@@ -949,6 +969,7 @@ export async function shippingEvent(
     if (!allowed.includes(order.status))
       throw new Error("This shipment event is not valid in the current state.");
     order.status = status;
+    if (status === "delivered") order.deliveredAt = new Date().toISOString();
     event(order, `Simulated carrier event: ${status}.`);
     audit(state, actor, "shipment.simulated", orderId);
     return order;
@@ -974,37 +995,36 @@ export async function evidenceBytes(actor: Actor, id: string) {
 export async function addDispatchEvidence(
   actor: Actor,
   orderId: string,
-  input: { serial: string; note: string },
+  input: { serial: string; note: string; captureSessionId?: string },
   file?: { bytes: Buffer; mime: string },
 ) {
-  if (actor.role !== "seller")
-    throw new Error("Only seller staff can record dispatch evidence.");
-  const order = ownedOrder(
-    await getWorkspace(actor.workspaceId),
-    actor,
-    orderId,
-  );
-  if (
-    order.dispatchEvidence.length >= 4 ||
-    !["paid", "replacement"].includes(order.status)
-  )
-    throw new Error(
-      "Record dispatch evidence before shipping, with at most four records.",
-    );
   const id = randomUUID();
   const key = file ? `${actor.workspaceId}/${orderId}/${id}` : undefined;
   const hash = evidenceHash(file?.bytes || Buffer.from(JSON.stringify(input)));
-  if (file && key) await putAsset(key, file.bytes, file.mime);
   return mutateWorkspace(actor.workspaceId, async (state, sql) => {
+    const entries = evidenceTarget(
+      state,
+      actor,
+      { orderId },
+      "seller_dispatch",
+    );
+    const provenance = submissionProvenance(
+      state,
+      actor,
+      orderId,
+      "seller_dispatch",
+      hash,
+      entries,
+      Boolean(file),
+      input.captureSessionId,
+    );
+    if (file && key) await putAsset(key, file.bytes, file.mime);
     const current = ownedOrder(state, actor, orderId);
-    if (
-      current.dispatchEvidence.length >= 4 ||
-      !["paid", "replacement"].includes(current.status)
-    )
-      throw new Error("Dispatch evidence can no longer be added.");
     const entry: Evidence = {
       id,
-      ...input,
+      serial: input.serial,
+      note: input.note,
+      provenance,
       checkpoint: "seller_dispatch",
       hash,
       assetKey: key,

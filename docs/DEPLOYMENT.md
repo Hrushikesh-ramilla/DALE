@@ -20,7 +20,9 @@ To update, package a fresh local build, upload it, and run the installer with a 
 
 Copy `.env.example` to `.env`; set a URL-safe `POSTGRES_PASSWORD`, a random `SESSION_SECRET` of at least 32 characters, and a private `OPERATOR_ACCESS_CODE`. Run `docker compose up --build`. The app binds to localhost:3000; PostgreSQL and evidence use named volumes. Modes remain configurable through `.env`.
 
-Docker Compose configuration is validated, but a Docker build/run has not yet been tested because the local Docker daemon is unavailable. EC2 uses the native deployment above. Do not present the container runtime as verified until it passes a real build and journey test.
+For a provider-free fixture run, use `node scripts/prepare-fixture-environment.mjs`, then `docker compose --env-file .data/deploy/docker.env -p buyerguard-verify up --build --wait`. The environment generator contains no provider credentials. Browser tests can target the production container by setting `E2E_BASE_URL=http://127.0.0.1:3000`.
+
+Docker Compose configuration validates. The local Windows engine failed to become available after startup, so the Linux CI container job performs the actual build/run and browser verification. EC2 continues using the native deployment above. A successful container-job result is required before claiming the container runtime verified.
 
 ## PayPal webhook
 

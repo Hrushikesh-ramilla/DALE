@@ -15,3 +15,29 @@ jobs:
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+  containers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/prepare-fixture-environment.mjs
+      - run: docker compose --env-file .data/deploy/docker.env -p buyerguard-verify up --build --wait --wait-timeout 120
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+        env:
+          E2E_BASE_URL: http://127.0.0.1:3000
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: container-browser-report
+          path: playwright-report
+          retention-days: 7
+      - run: docker compose --env-file .data/deploy/docker.env -p buyerguard-verify logs --tail 30
+        if: failure()
+      - run: docker compose --env-file .data/deploy/docker.env -p buyerguard-verify down --volumes
+        if: always()

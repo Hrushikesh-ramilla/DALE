@@ -1,4 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 const saved = JSON.parse(
   await readFile(".data/deploy/restart-check.json", "utf8"),
 );
@@ -14,8 +15,21 @@ const health = await (
 ).json();
 const restarted =
   !!saved.instance && !!health.instance && saved.instance !== health.instance;
+let evidencePersisted = !saved.evidenceId;
+if (saved.evidenceId) {
+  const original = await fetch(
+    `${saved.baseURL}/api/evidence?id=${saved.evidenceId}`,
+    { headers: { Cookie: saved.cookie }, signal: AbortSignal.timeout(15000) },
+  );
+  evidencePersisted =
+    original.ok &&
+    createHash("sha256")
+      .update(Buffer.from(await original.arrayBuffer()))
+      .digest("hex") === saved.evidenceHash;
+}
 const passed =
   restarted &&
+  evidencePersisted &&
   response.ok &&
   data.actor.workspaceId === saved.workspaceId &&
   data.orders.some((order: { id: string }) => order.id === saved.orderId);
@@ -30,10 +44,15 @@ await writeFile(
       checked: [
         "Authenticated session",
         "Customer workspace",
-        "Unapproved sandbox order",
+        saved.modes?.payments === "fixture"
+          ? "Captured fixture order"
+          : "Unapproved sandbox order",
+        ...(saved.evidenceId
+          ? ["Private original image with matching SHA-256"]
+          : []),
       ],
       limitation:
-        "A changed server instance is required. This does not test a database restore.",
+        "A changed server instance is required. Fixture references remain synthetic. This does not test a database restore.",
     },
     null,
     2,

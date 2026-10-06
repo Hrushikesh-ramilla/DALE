@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+const origin = process.env.E2E_BASE_URL || "http://127.0.0.1:3100";
 async function start(page: Page) {
   await page.goto("/");
   await page.getByRole("button", { name: "Start shopping" }).click();
@@ -54,6 +55,10 @@ test("customer purchase, evidence, operator refund, and persistent status", asyn
   await page
     .getByLabel("What does this record show?")
     .fill("The housing arrived cracked.");
+  await page
+    .getByRole("button", { name: "Get capture code (optional)" })
+    .click();
+  await expect(page.getByRole("dialog")).toContainText("Capture code:");
   await page.getByLabel("Photo (optional, up to 4 MB)").setInputFiles({
     name: "receipt.png",
     mimeType: "image/png",
@@ -69,6 +74,18 @@ test("customer purchase, evidence, operator refund, and persistent status", asyn
   expect((await page.request.get(original!)).headers()["content-type"]).toBe(
     "image/png",
   );
+  const reportURL = await page
+    .getByRole("link", { name: "Download private case report" })
+    .getAttribute("href");
+  const report = await (await page.request.get(reportURL!)).json();
+  expect(
+    report.submittedRecords.some(
+      (r: { integrity: string; provenance: { source: string } }) =>
+        r.integrity === "verified_at_export" &&
+        r.provenance.source === "challenge_associated_upload",
+    ),
+  ).toBe(true);
+  expect(report.transactionRecords.adapter).toBe("fixture");
   await page.getByRole("button", { name: "Review evidence" }).click();
   await expect(page.locator(".analysis-panel")).toContainText(
     "cannot be established",
@@ -156,12 +173,12 @@ test("checks a suspicious message and refuses a forged approval", async ({
     page.getByText("Pause and verify", { exact: true }),
   ).toBeVisible();
   const response = await page.request.post("/api/actions", {
-    headers: { Origin: "http://127.0.0.1:3100" },
+    headers: { Origin: origin },
     data: { action: "quote", productId: "P001", model: "Atlas 14" },
   });
   const data = await response.json();
   const forged = await page.request.post("/api/actions", {
-    headers: { Origin: "http://127.0.0.1:3100" },
+    headers: { Origin: origin },
     data: {
       action: "checkout",
       quoteId: data.result.id,
@@ -199,7 +216,7 @@ test("changed brief revokes a previous unpaid approval and persists preferences"
   page,
 }) => {
   await start(page);
-  const headers = { Origin: "http://127.0.0.1:3100" };
+  const headers = { Origin: origin };
   const quote = (
     await (
       await page.request.post("/api/actions", {

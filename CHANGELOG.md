@@ -2,6 +2,27 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-06 — Customer-first return arrangements
+
+- Added the recorded-delivery 30-day merchant-policy check. Missing timing, late requests, and cancellation/non-delivery claims remain open for human review.
+- Added reviewer-authorized merchant-paid return references, buyer handoff, matching seller receipt, no-return exceptions with reasons, and preserved prior arrangements. Return shipping cost to the customer is zero; carrier events are explicitly simulated.
+- Required receipt or an authorized waiver before remedy execution, and added a 24-hour merchant remedy target with one follow-up escalation. Deadline handling preserves an already-authorized financial operation.
+- Validation: 90 unit/contract/database tests pass; six existing journeys and the new prepaid-return-to-refund browser journey pass. Hosted verification awaits restored SSH access. No live carrier label purchase or physical-truth claim is made.
+
+## 2026-10-06 — Submission provenance and private case reports
+
+- Added optional single-use capture codes bound to the authenticated party, order/case, checkpoint, and ten-minute expiry. Upload origin and challenge linkage are described without claiming verified capture timing or physical truth.
+- Added submission timestamps, same-case repeated-file cues, analysis versions, and private JSON case exports separating submitted records, analysis, transaction state, and scoped audit. Export checks original-file integrity and reports unavailable/tampered files.
+- New photo submissions keep notes and identifiers in multipart bodies rather than URLs. Ownership, state, and challenge validation precede storage writes under the workspace lock.
+- Validation: 86 unit/contract/database tests and all six browser journeys pass, including challenge-linked upload and private report retrieval. Hosted verification is a separate deployment step; physical captures remain pending.
+
+## 2026-10-06 — Container execution gate
+
+- Added a clean, private fixture environment generator, configurable Compose environment/port, app readiness, and worker startup after database-backed readiness.
+- Added a Linux CI job that builds and starts the actual app/worker/PostgreSQL containers and runs all browser journeys against the containerized production server.
+- Browser journeys can target an external test URL without launching a development server. Container fixtures contain no PayPal or AI credentials.
+- Validation: Compose configuration and TypeScript checks pass locally. Linux CI run 37361750645 successfully built and started app/worker/PostgreSQL containers and passed all six production-server browser journeys.
+
 ## 2026-10-06 — Isolated engineer scenarios
 
 - Added seven reviewer-created fixture scenarios: fresh shopping, delivered returns, identifier conflicts, seller silence, rejected refunds, interrupted refunds, and partial group payment.

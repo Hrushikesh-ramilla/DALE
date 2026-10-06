@@ -27,6 +27,7 @@ export type Order = {
     | "replacement"
     | "canceled";
   createdAt: string;
+  deliveredAt?: string;
   providerOrderId?: string;
   captureId?: string;
   refundedAmount: number;
@@ -73,6 +74,24 @@ export type ReturnCase = {
   resolutionNote?: string;
   remedy?: string;
   appeal?: string;
+  eligibility?: {
+    outcome: "within_policy" | "manual_review";
+    explanation: string;
+    policy: string;
+  };
+  returnShipment?: {
+    status: "not_required" | "authorized" | "in_transit" | "received";
+    labelReference?: string;
+    trackingReference?: string;
+    customerCost: 0;
+    reason: string;
+    authorizedAt: string;
+    sentAt?: string;
+    receivedAt?: string;
+    remedyDueAt?: string;
+    carrier: "simulated";
+  };
+  previousReturnArrangements?: NonNullable<ReturnCase["returnShipment"]>[];
 };
 export type Operation = {
   id: string;
@@ -104,6 +123,17 @@ export type Workspace = {
     resource: string;
   }[];
   webhookIds: string[];
+  captureSessions?: {
+    id: string;
+    code: string;
+    actorId: string;
+    role: Role;
+    resourceId: string;
+    checkpoint: Evidence["checkpoint"];
+    issuedAt: string;
+    expiresAt: string;
+    usedAt?: string;
+  }[];
 };
 export async function createWorkspace(options: { fixture?: boolean } = {}) {
   const state: Workspace = {

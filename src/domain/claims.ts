@@ -9,6 +9,13 @@ export type Evidence = {
   createdAt: string;
   mime?: string;
   assetKey?: string;
+  provenance?: {
+    source: "submitted_note" | "uploaded_file" | "challenge_associated_upload";
+    submittedBy: string;
+    serverReceivedAt: string;
+    challenge?: { id: string; code: string; issuedAt: string };
+    repeatedEvidenceIds: string[];
+  };
 };
 export type ClaimAnalysis = {
   outcome: "supported" | "contradicted" | "insufficient";
@@ -16,6 +23,12 @@ export type ClaimAnalysis = {
   sources: string[];
   nextStep: string;
   mode: string;
+  versions?: {
+    policy: string;
+    prompt: string;
+    model: string;
+    analyzedAt: string;
+  };
 };
 export function analyzeClaims(evidence: Evidence[]): ClaimAnalysis {
   const dispatch = evidence.find(

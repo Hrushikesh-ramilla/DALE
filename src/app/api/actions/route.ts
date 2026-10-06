@@ -2,6 +2,8 @@ import { z } from "zod";
 import { actorFromRequest } from "@/server/auth";
 import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
 import * as service from "@/server/service";
+import { issueCaptureSession } from "@/server/provenance";
+import { authorizeReturn, returnShippingEvent } from "@/server/return-shipping";
 const id = z.string().uuid();
 const checkpoint = z.enum([
   "seller_dispatch",
@@ -10,6 +12,25 @@ const checkpoint = z.enum([
   "seller_return",
 ]);
 const schema = z.discriminatedUnion("action", [
+  z.object({
+    action: z.literal("authorize_return"),
+    caseId: id,
+    decision: z.enum(["prepaid", "waive"]),
+    reason: z.string().min(1).max(2000),
+    labelReference: z.string().max(100).optional(),
+  }),
+  z.object({
+    action: z.literal("return_shipping"),
+    caseId: id,
+    status: z.enum(["in_transit", "received"]),
+    trackingReference: z.string().min(1).max(100),
+  }),
+  z.object({
+    action: z.literal("capture_session"),
+    caseId: id.optional(),
+    orderId: id.optional(),
+    checkpoint,
+  }),
   z.object({
     action: z.literal("quote"),
     productId: z.string().max(20),
@@ -73,6 +94,26 @@ export async function POST(request: Request) {
     const input = schema.parse(await jsonBody(request));
     let result: unknown;
     switch (input.action) {
+      case "authorize_return":
+        result = await authorizeReturn(
+          actor,
+          input.caseId,
+          input.decision,
+          input.reason,
+          input.labelReference,
+        );
+        break;
+      case "return_shipping":
+        result = await returnShippingEvent(
+          actor,
+          input.caseId,
+          input.status,
+          input.trackingReference,
+        );
+        break;
+      case "capture_session":
+        result = await issueCaptureSession(actor, input, input.checkpoint);
+        break;
       case "quote":
         result = await service.makeQuote(
           actor,
