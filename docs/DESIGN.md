@@ -1,6 +1,6 @@
 # DALE editorial storefront
 
-The storefront uses charcoal, black, off-white and muted neutral surfaces, generous product space, and serif editorial headings paired with a readable sans-serif interface. Inspiration came from [Awwwards' ETQ Amsterdam listing](https://www.awwwards.com/websites/html/?mobile=1&page=174) and direct inspection of [ETQ's storefront](https://www.etq-amsterdam.com/): substantial product presentation, restrained navigation, collection browsing and clear service information. This is an original electronics-store implementation; no reference site's imagery, code or claims are reused.
+The storefront uses ink, paper and desaturated teal, substantial beveled glass controls, generous product space and serif editorial headings with a readable sans-serif interface. Frosted layers retain opaque reading cores, visible focus and immediate press feedback. Inspiration includes the owner's portfolio, [Noomo's Awwwards glass portal](https://www.awwwards.com/inspiration/3d-portal-noomo-valentime) and [DIGITRON product navigation](https://www.awwwards.com/inspiration/easy-search-and-navigation-digitron-3d-immersive-site). The composition, product geometry and wordmark remain original.
 
 ## Application structure
 
@@ -8,7 +8,7 @@ The customer-facing brand is **DALE**, a single word selected by the owner. An o
 
 The latest research included [Awwwards' e-commerce directory](https://www.awwwards.com/websites/e-commerce/), [Electronic Materials Office's Altar II entry](https://www.awwwards.com/sites/emo-r-altar-ii), its [actual storefront](https://electronicmaterialsoffice.com), and [Unimatic's Awwwards entry](https://www.awwwards.com/sites/unimatic). Altar II informed the substantial dark product stage and deliberate reveals; Unimatic informed the restrained product presentation and typography. The layout, letterforms and catalog illustrations remain original.
 
-The opening composition combines a large headline, a four-product stage and an oversized low-contrast wordmark. Shoppers change featured products explicitly; there is no autoplay. Motion animates product changes and restrained scroll movement. An asymmetric five-collection mosaic follows, with paper and charcoal surfaces. A closing full-width wordmark completes the page.
+The opening combines a GSAP headline reveal, four-product stage and oversized wordmark. React Three Fiber/Three.js renders original volumetric headphones, SSD, dock, mouse and charger geometry above a physical glass pedestal; featured selection is explicit, with accessible rotation/reset. Rendering is lazy, on demand, pixel-density capped and suspended offscreen/hidden. Renderer/context loss retains illustration/detail access. Proportions are illustrative, not product measurements. Motion handles dialogs and functional transitions; reduced motion stays stable. A five-collection mosaic and broad teal DALE footer complete the composition.
 
 The 40-product catalog now uses concrete unbranded names: 65W USB-C Wall Charger, USB-C HDMI Dock, 512GB Portable SSD, Bluetooth Over-Ear Headphones and Silent Bluetooth Mouse, with neutral finish variants rather than numbered series. These remain synthetic offers and labeled illustrations, not independently verified retail inventory or physical photography.
 

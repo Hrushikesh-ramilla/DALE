@@ -4,7 +4,7 @@ Prepared 7 October 2026. Hosted application: https://16.4.25.181.sslip.io.
 
 The current DALE redesign is available locally at http://localhost:3000/shop. The steps below use its unbranded product/profile names. Until the redesign is deployed, the hosted build uses the earlier names: Atlas 14/Atlas 14 Pro/Orbit 13/Slate 11 correspond to USB-C Laptop (65W/100W/45W)/Barrel-jack Laptop (45W). Label fixture images retain those original internal identifiers; confirmation displays the new profile names.
 
-The deployed demo is ready for these tests. It is not fully signed off against the master plan: genuine PayPal capture/refund/webhook verification, current live Gemini accuracy, controlled physical captures and independent human acceptance remain open. The latest application build is `5b393c0`; subsequent documentation commits do not change that application build. Check `/api/health` and Environment details when recording results.
+The revised local demo at application `1bcd732` is ready for these tests, including guided entry, glass/3D and voice fixtures. Public EC2 still serves `5b393c0`, so its older UI does not include those additions. Genuine PayPal capture/refund/webhook verification, current live Gemini accuracy, controlled physical captures and independent human acceptance remain open. Documentation commits do not change either running application build. Check `/api/health` and Environment details when recording results.
 
 These are instructions and expected results, not a claim that a human has executed them. Existing automated and hosted evidence is in [VALIDATION.md](VALIDATION.md). Record your actual observations, including failures.
 

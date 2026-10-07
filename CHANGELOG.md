@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Final packaged experience release
+
+- Application 1bcd732 includes concrete device names in voice replies and grounded native tool results. Final lint/typecheck, optimized build and all 25 packaged-production journeys pass, including the new display-name assertion. This revision also passes 150 unit/contract/database tests, 200 seeded workflow traces, 107 deterministic scenarios, 300 frozen synthetic records and 180 mocked native checks.
+- GitHub run 37624258595 passes both quality and real PostgreSQL/app/worker production container jobs at the final application commit. Prepared the final secret-free standalone archive; SHA-256 and immutable application reference are recorded in VALIDATION. Manually reviewed the running packaged storefront, product dialog, mobile support/footer/demo/voice, groups and orders. Local production remains available for engineer testing with fixture payments/analysis and no live voice/provider calls.
+- Updated master/design/experience/status documentation to distinguish completed product workflows from physical, independent and genuine-provider acceptance gates. Stabilized the SSM helper's parameter quoting for Windows shells. Hosted application update remains pending owner AWS/SSM setup, deferred until this local milestone is complete.
+
 ## 2026-10-07 — Guided engineer entry and voice workflows
 
 - Added a no-account `/demo` with nine private, fixture-only scenarios, stable shopper/second-shopper/seller/reviewer personas, guided expected outcomes, redacted exports and archive-preserving reset. Owner-bound cookies, expiry, origin checks and shared activity/storage limits prevent fixture role switching from granting ordinary-account or cross-workspace access. Ordinary operator scenarios remain restricted.

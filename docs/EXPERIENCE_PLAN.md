@@ -1,12 +1,12 @@
 # DALE experience revision
 
-Prepared 7 October 2026. Status: implementation plan; the features below are not implemented or verified yet. Extends MASTER_PLAN without replacing its customer-priority, approval, evidence or provider acceptance gates.
+Updated 7 October 2026. Status: glass/editorial front-end, genuine 3D, routed surfaces, guided demo and voice adapters are implemented. Local production passes the 25-journey experience suite; native audio uses synthetic microphone/transport fixtures. Live Gemini speech, physical-phone performance and revised EC2 deployment remain separate gates. Extends MASTER_PLAN without replacing its customer-priority, approval, evidence or provider acceptance requirements. Current release evidence is in VALIDATION.
 
 ## Outcome
 
 A richer editorial storefront with a desaturated teal closing section, deliberate motion and a genuine interactive 3D product stage. Engineers can enter an isolated, complete demo in one click. Shoppers can describe a need aloud, see what DALE understood and act through the existing shopping and support workflows.
 
-Current baseline: application source 5a58bc3 passes 135 automated tests, 15 browser journeys in development and packaged production, and both GitHub quality/container jobs. There is no voice implementation; the product art is SVG, not a volumetric 3D scene. Existing engineering scenarios work but require a cumbersome reviewer-login/workspace setup. The redesigned public release remains pending because EC2 SSH times out.
+Baseline when this revision was planned: application 5a58bc3 had 135 tests and 15 browser journeys, SVG-only featured art, no voice and a reviewer-login engineering setup. Those gaps are now implemented: volumetric geometry, glass/motion treatment, nine owned one-click scenarios and no-spend voice preparation/native audio transport. Cloud access remains unavailable; Systems Manager setup replaces repeated VPN-IP allowlisting. No billing or paid fallback was enabled.
 
 ## Visual direction
 
@@ -77,7 +77,7 @@ Acceptance: fixture/native-transport tests cover speech chunks, transcript handl
 
 Run relevant unit/contract tests, all existing browser journeys plus the new demo/voice/3D cases, production build, packaged-production regression and Linux app/worker/PostgreSQL CI. Repeat domain evaluations when intent, catalog or policy logic changes. Record visual/performance observations separately from functional assertions.
 
-Prepare a source-aligned release with credentials/private data excluded. Deploy to the existing EC2 instance when SSH is available, then verify HTTPS, demo launch, supported microphone permissions, asset loading, provider-disabled behavior and persistent workflows. Keep tested fixture fallback and ordinary shopping usable if live voice quota is unavailable. Hosted completion requires observed deployment/health and browser checks; a local archive is not deployment evidence.
+Prepare a source-aligned release with credentials/private data excluded. Deploy to the existing EC2 instance through verified Systems Manager access (or an already working restricted owner connection), then verify HTTPS, demo launch, supported microphone permissions, asset loading, provider-disabled behavior and persistent workflows. Keep tested fixture fallback and ordinary shopping usable if live voice quota is unavailable. Hosted completion requires observed deployment/health and browser checks; a local archive is not deployment evidence.
 
 ## Delivery order and completion rule
 

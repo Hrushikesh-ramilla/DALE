@@ -20,7 +20,8 @@ if ($Profile) { $awsArguments += @('--profile', $Profile) }
 if ($LASTEXITCODE -ne 0) { throw 'AWS login is required. Use your configured AWS SSO profile; do not paste access keys.' }
 $status = & aws @awsArguments ssm describe-instance-information --filters "Key=InstanceIds,Values=$InstanceId" --query 'InstanceInformationList[0].PingStatus' --output text
 if ($LASTEXITCODE -ne 0 -or $status.Trim() -ne 'Online') { throw 'The instance is not an online SSM managed node, or the AWS identity lacks access. Check its instance role, agent and outbound HTTPS.' }
-$parameters = '{"portNumber":["22"],"localPortNumber":["' + $LocalPort + '"]}'
+# AWS shorthand avoids embedded JSON quote differences between Windows PowerShell and pwsh.
+$parameters = "portNumber=22,localPortNumber=$LocalPort"
 Write-Host "Opening a localhost:$LocalPort tunnel. Keep this terminal open; Ctrl+C closes it."
 & aws @awsArguments ssm start-session --target $InstanceId --document-name AWS-StartPortForwardingSession --parameters $parameters
 if ($LASTEXITCODE -ne 0) { throw 'SSM tunnel ended with an error. Check session permissions and agent logs.' }

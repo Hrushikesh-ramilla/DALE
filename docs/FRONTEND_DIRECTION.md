@@ -1,6 +1,6 @@
 # DALE front-end direction
 
-Prepared 7 October 2026. Status: proposed design and implementation sequence, with an interactive visual study. Application source remains 5a58bc3; this document does not claim new runtime functionality or deployment. The owner requested the front-end first, followed by demo access, voice and other experience additions.
+Updated 7 October 2026. Status: the proposed design is implemented as a boxy glass storefront with genuine product geometry, GSAP/Motion, muted teal closing composition and full routed screens. Guided demo and voice adapters follow the same material system. The interactive visual study remains a historical planning artifact. VALIDATION records executed production checks and distinguishes local completion from pending cloud/live-provider gates.
 
 Subsequent direction: the owner requested implementation of the complete experience and a stronger boxy 3D glass treatment. Controls now target beveled frosted surfaces, directional edge lighting, tactile press depth and muted teal layers. Functional reading surfaces retain opaque cores. Awwwards references include [Noomo's glass portal](https://www.awwwards.com/inspiration/3d-portal-noomo-valentime) and [DIGITRON product navigation](https://www.awwwards.com/inspiration/easy-search-and-navigation-digitron-3d-immersive-site). Implementation and executed evidence are tracked in CHANGELOG and VALIDATION; the original visual study remains a planning reference.
 
@@ -8,14 +8,14 @@ Subsequent direction: the owner requested implementation of the complete experie
 
 Reviewed the owner's [live portfolio](https://www.hrushikeshramilla.in/) and the permitted [final-perfect-state branch](https://github.com/Hrushikesh-ramilla/porto/tree/final-perfect-state), commit bbacc0681dabcb3c4c233f43c7bc76e5974b8f7a. Read the home composition, page transitions, project stage, smooth-scroll provider, pointer physics and mobile-motion guards.
 
-| Portfolio cue | DALE interpretation |
-| --- | --- |
-| Large, thin editorial serif over an atmospheric opening | Spacious product opening with “Good things. Chosen well.” and a clear shopping action |
-| Desaturated teal depth and soft directional light | Charcoal showroom, muted green-blue product lighting, broad teal closing section |
-| One focused project with surrounding selections | One interactive featured product with directly selectable sound/storage/power objects |
-| Masked character reveals and coordinated transitions | Short headline reveal and linked product/caption transition; names and facts remain associated |
-| Layered chapter changes and selective parallax | A gentle transition from product theatre to a paper-colored shopping brief and readable catalog |
-| Fine-pointer effects and mobile/reduced-motion guards | Optional desktop depth, native touch scrolling, stable reduced-motion presentation |
+| Portfolio cue                                           | DALE interpretation                                                                             |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Large, thin editorial serif over an atmospheric opening | Spacious product opening with “Good things. Chosen well.” and a clear shopping action           |
+| Desaturated teal depth and soft directional light       | Charcoal showroom, muted green-blue product lighting, broad teal closing section                |
+| One focused project with surrounding selections         | One interactive featured product with directly selectable sound/storage/power objects           |
+| Masked character reveals and coordinated transitions    | Short headline reveal and linked product/caption transition; names and facts remain associated  |
+| Layered chapter changes and selective parallax          | A gentle transition from product theatre to a paper-colored shopping brief and readable catalog |
+| Fine-pointer effects and mobile/reduced-motion guards   | Optional desktop depth, native touch scrolling, stable reduced-motion presentation              |
 
 The portfolio uses GSAP and Lenis; its letter physics uses DOM transforms rather than volumetric product geometry. DALE's genuine 3D viewer therefore needs its own original geometry and renderer. The visual study uses original SVG product illustrations to establish composition; it is not evidence of implemented 3D, catalog retrieval, checkout, demo entry or voice.
 
@@ -41,12 +41,12 @@ Use React Three Fiber/Three.js for one lazy-loaded active viewer, original headp
 
 ## Milestones and executed evidence
 
-| Milestone | Implementation | Required evidence before completion |
-| --- | --- | --- |
-| Visual foundation | Tokens, type, shell, opening, shopping brief, teal closing section | Desktop/phone full-page captures; focus/contrast/overflow checks; existing route behavior |
-| Product theatre | Real 3D, coordinated object/caption transitions and fallback | Correct selected product/facts; canvas and fallback tests; deterministic camera captures; measured rendering on documented hardware |
-| Full application polish | Catalog/details/review, groups, orders, support/evidence; loading/empty/error states | Existing 15 browser journeys plus new cases, responsive route/dialog review and production build |
-| Front-end sign-off | Resolve defects, update manual steps, prepare source-aligned release | Production browser regression, Linux CI, recorded visual/motion observations and milestone commits |
+| Milestone               | Implementation                                                                       | Required evidence before completion                                                                                                 |
+| ----------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Visual foundation       | Tokens, type, shell, opening, shopping brief, teal closing section                   | Desktop/phone full-page captures; focus/contrast/overflow checks; existing route behavior                                           |
+| Product theatre         | Real 3D, coordinated object/caption transitions and fallback                         | Correct selected product/facts; canvas and fallback tests; deterministic camera captures; measured rendering on documented hardware |
+| Full application polish | Catalog/details/review, groups, orders, support/evidence; loading/empty/error states | Existing 15 browser journeys plus new cases, responsive route/dialog review and production build                                    |
+| Front-end sign-off      | Resolve defects, update manual steps, prepare source-aligned release                 | Production browser regression, Linux CI, recorded visual/motion observations and milestone commits                                  |
 
 Engineer demo entry, synthetic/live voice and their acceptance gates follow these front-end milestones, as detailed in EXPERIENCE_PLAN. Existing EC2 deployment access and live provider gates remain tracked; front-end verification does not depend on live Gemini quota. No paid resource or AI call is needed for this design phase.
 
