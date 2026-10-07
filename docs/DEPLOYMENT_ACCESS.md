@@ -2,6 +2,10 @@
 
 7 October recovery: direct SSH became reachable again. The original OneDrive/Desktop key was rejected for broad local file permissions; the existing owner-restricted ignored copy at `.data/deploy/ssh-key.pem` works. Reuse that copy for deployment rather than reintroducing broad key access. This fixes local OpenSSH key loading, not the changing-IP architecture. SSM still requires the one-time authenticated AWS/IAM setup below.
 
+`node scripts/deploy-existing-ec2.mjs <unique-release-id>` streams the prepared release/private configuration and runs the checksum/backup/rollback installer over one pinned SSH connection. It avoids opening a separate SCP connection after a successful SSH check. The transfer bundle streams through process pipes; no extra environment archive is written to disk. The connection still requires the current SSH source to be allowed; it is not a substitute for SSM.
+
+The sourced-agent release's 7 October upload remained blocked by subsequent SSH timeouts. One successful read-only connection does not establish a deployed release. No installer, backup or rollback was executed during that attempt; do not infer hosted verification from local tests.
+
 The local VPN has returned multiple egress IPv4 addresses while public HTTPS continues to work and new SSH connections time out. This is consistent with restricted inbound SSH plus changing egress. HTTP IP services do not establish the precise source address of an SSH connection; changing allowlist entries is therefore not a durable diagnosis or deployment method.
 
 ## Mechanism

@@ -258,3 +258,6 @@ Added manufacturer-backed records for two exact M2 MacBook Air models, two adapt
 # Buyer-agent recovery: structured tools and private conversation
 
 Implemented direct-Gemini structured planning over research, own-order inspection, support preparation and advisory message checks. Semantic device/budget interpretations require shopper confirmation; generated choices and evidence IDs are validated against tool results. Private follow-up context survives reload, and changes invalidate old approvals. Model calls require explicit no-billing gates; fixtures never contact a provider. Added protocol, adversarial, quota and purchase-journey tests.
+# Buyer-agent release verification
+
+Application 84a6b3a passes 180 unit tests, all 32 packaged-production browser journeys and the existing evaluation/workflow suites. Local preview and sourced comparison were verified. Added checksum/backup/rollback deployment tooling and a single-connection SSH stream; hosted installation remains blocked by intermittent SSH timeouts. No live AI spend or billing was enabled. Detailed evidence and remaining external gates are recorded in docs/VALIDATION.md.

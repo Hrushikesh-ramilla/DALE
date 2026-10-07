@@ -1,5 +1,17 @@
 # Validation status
 
+## Sourced buyer-agent recovery — application 84a6b3a
+
+Local standalone production health serves application `84a6b3a890a3dd5ee667cef29a9ff436148324e6`. The real-device task was manually executed in the visible browser: the 13-inch M2 Air normal-charge example returned the $39 Apple adapter using the confirmed existing MagSafe 3 cable, rejected the $59 adapter and $58 bundle on budget, and displayed manufacturer evidence links. Screenshot `.data/reports/dale-sourced-agent.png` records the rendered comparison at the user's actual sidebar width. No live model or financial-provider call was made by this manual journey.
+
+Executed: lint, TypeScript, **180 unit/contract/database tests**, optimized production build, **32 packaged-production Chromium journeys (2.7m)**, **107 deterministic scenarios**, **300 frozen synthetic records**, **180 preregistered mock provider checks**, and **200 seeded workflow traces**. The new browser journeys exercise actual sourced comparison, exact-device/cable clarification, complete budget changes, reload persistence, explicit fixture checkout, seller-message safety and voice preparation through the same real-data checks. Existing returns/evidence/remedy, group buying, privacy, stale approvals, responsive layout, 3D and voice transport regressions all pass. Synthetic scores do not establish live-model accuracy or physical truth.
+
+Release archive: **14,115,019 bytes**, **2,960 entries**, SHA-256 `b63065d717d7adc30b89e51ce03317fc8c9796f91a160e2dd33da602f968f702`. Inventory excludes environment files, private data and PEM keys; `public/voice-capture.js` is included. Model planning and live voice remain disabled in deployment configuration. Gemini's direct request/response protocol, semantic proposal confirmation, unknown/ineligible citations, malicious plans and HTTP 429 fallback were exercised with mocks.
+
+Hosted rollout is **not complete**. A read-only SSH check succeeded with the existing restricted key copy; SCP and later installation connections timed out. The public instance still serves the earlier release. The checksum/backup/rollback wrapper and single-connection transfer are prepared; their successful hosted execution remains an external gate. SSM requires authenticated AWS/IAM setup. Live Gemini/free-quota verification, physical evidence tests and independent human acceptance remain open. Manufacturer coverage is the explicit M2 Air charging evidence pack, not arbitrary real-world inventory.
+
+Earlier release evidence follows.
+
 ## Current dark editorial opening
 
 Application `f2892ec07e8c263ca08333c1ed488db2159957c7` runs locally at http://localhost:3000/. The agent opening now uses charcoal `#141414`, a deeper black composer `#0e0e0e`, raised fields/receipts `#1c1c1c`, soft ivory text `#ebe6dc` and muted captions `#b0aba3`. Its bundled Cormorant Garamond heading provides the magazine treatment. The agent palette is scoped; the teal footer remains isolated.

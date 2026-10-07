@@ -25,7 +25,7 @@ systemctl stop buyerguard buyerguard-worker
 sudo -u postgres pg_dump -Fc buyerguard > "$backup/database.dump"
 tar -czf "$backup/assets.tar.gz" -C /var/lib buyerguard
 bash /home/ubuntu/install.sh "$release_id"
-systemctl is-active --quiet buyerguard buyerguard-worker caddy
+for unit in buyerguard buyerguard-worker caddy; do systemctl is-active --quiet "$unit"; done
 curl -fsS http://127.0.0.1:3000/api/health
 echo
 echo "Checksum verified; previous release and private pre-upgrade snapshot retained. Verify public HTTPS and application BUILD_ID."
