@@ -50,7 +50,9 @@ test("customer purchase, evidence, operator refund, and persistent status", asyn
     .fill("Recorded condition before dispatch.");
   await seller.getByRole("button", { name: "Record evidence" }).click();
   await seller.getByRole("button", { name: "Simulate shipment" }).click();
+  await expect(seller.locator(".status-chip")).toHaveText("shipped");
   await seller.getByRole("button", { name: "Simulate delivery" }).click();
+  await expect(seller.locator(".status-chip")).toHaveText("delivered");
   await page.reload();
   await page.getByRole("button", { name: "My orders", exact: true }).click();
   await expect(page.locator(".status-chip")).toHaveText("delivered");

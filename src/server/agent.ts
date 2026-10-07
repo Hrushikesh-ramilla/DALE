@@ -30,9 +30,10 @@ export async function runAgent(actor: Actor, raw: AgentRequest) {
   if (before.archivedAt) throw new Error("This workspace is archived.");
   const previous = before.agentRuns.at(-1)?.context;
   // Engineering fixtures never incur model spend, even if the host is live.
-  const planned = before.fixtureWorkspace
-    ? { plan: fallbackPlan(input, previous), mode: "catalog" as const }
-    : await planAgent(input, previous, before.agentRuns);
+  const planned =
+    before.fixtureWorkspace || before.modes.ai !== "live"
+      ? { plan: fallbackPlan(input, previous), mode: "catalog" as const }
+      : await planAgent(input, previous, before.agentRuns);
   const plan = planned.plan;
   let intent: VoiceIntent = { kind: "clarification", message: "" };
   const run: AgentRun = {

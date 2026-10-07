@@ -261,3 +261,10 @@ Implemented direct-Gemini structured planning over research, own-order inspectio
 # Buyer-agent release verification
 
 Application 84a6b3a passes 180 unit tests, all 32 packaged-production browser journeys and the existing evaluation/workflow suites. Local preview and sourced comparison were verified. Added checksum/backup/rollback deployment tooling and a single-connection SSH stream; hosted installation remains blocked by intermittent SSH timeouts. No live AI spend or billing was enabled. Detailed evidence and remaining external gates are recorded in docs/VALIDATION.md.
+# Grounded comparison no-match contract
+
+Corrected the native model comparison contract so an empty eligible set can return an explicit null recommendation with empty evidence/reason arrays. A no-match result cannot claim product compatibility or a purchase rationale. Added the complete mocked two-pass agent case; live calls remain disabled.
+
+The task runner also respects the workspace's saved fixture AI mode when the host configuration later changes to live. The no-billing gate cannot accidentally promote an existing fixture shopper to provider calls.
+
+The delivery-to-return browser journey now waits for the seller's recorded shipment and delivery states before refreshing the buyer. This removes a cross-session race exposed by the PostgreSQL container run without relaxing the required delivered status.

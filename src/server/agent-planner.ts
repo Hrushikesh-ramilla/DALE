@@ -22,7 +22,7 @@ const comparisonSchema = z.object({
         "cable_included",
       ]),
     )
-    .min(1)
+    .min(0)
     .max(4),
 });
 export type GroundedRecommendation = z.infer<typeof comparisonSchema>;
@@ -31,7 +31,7 @@ export async function compareWithModel(
 ): Promise<GroundedRecommendation> {
   const result = await completion(
     comparisonSchema,
-    "Use the tool results to select the lowest complete eligible offer for this buyer. No eligible offer means productId null. Never relax a budget, cable or charging constraint. Cite source IDs from that finding and use only supported reason codes: lowest_complete_cost, manufacturer_fit, fast_charging, cable_included. Return {productId, sourceIds, reasons}; do not generate specification or price claims.",
+    "Use the tool results to select the lowest complete eligible offer for this buyer. No eligible offer means productId null, sourceIds [] and reasons []. Never relax a budget, cable or charging constraint. Cite source IDs from that finding and use only supported reason codes: lowest_complete_cost, manufacturer_fit, fast_charging, cable_included. An eligible recommendation needs at least one reason. Return {productId, sourceIds, reasons}; do not generate specification or price claims.",
     report,
   );
   const eligible = report.findings
@@ -40,6 +40,13 @@ export async function compareWithModel(
       (a, b) => a.total - b.total || a.productId.localeCompare(b.productId),
     );
   const finding = eligible.find((f) => f.productId === result.productId);
+  if (
+    (!finding && (result.sourceIds.length || result.reasons.length)) ||
+    (finding && !result.reasons.length)
+  )
+    throw new Error(
+      "Model comparison claims a recommendation without eligible evidence.",
+    );
   if (
     (eligible[0]?.productId || null) !== result.productId ||
     (finding &&
