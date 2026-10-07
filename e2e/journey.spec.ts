@@ -32,6 +32,7 @@ test("sourced agent purchase, order-specific support, evidence, refund, and pers
   page,
   browser,
 }) => {
+  await start(page);
   await buy(page);
   const session = await (await page.request.get("/api/session")).json();
   expect(session.orders[0].quote).toMatchObject({
