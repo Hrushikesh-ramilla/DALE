@@ -11,6 +11,16 @@ export function ProductArt({
 }) {
   const id = useId().replaceAll(":", "");
   const paint = (name: string) => `url(#${id}-${name})`;
+  const finish = product.name.split(" · ")[1];
+  const body =
+    finish === "Silver"
+      ? ["#eee", "#b7b7b3", "#8b8b88", "#555"]
+      : finish === "Ivory"
+        ? ["#f7f5ed", "#d5d2c8", "#b4b0a4", "#77746a"]
+        : finish === "Stone"
+          ? ["#b9b6ad", "#8b8880", "#615e57", "#34322d"]
+          : ["#656565", "#303030", "#171717", "#070707"];
+  const metal = finish ? body : ["#dededb", "#888886", "#c6c6c2", "#525250"];
   return (
     <div
       className={`product-art ${product.category} ${compact ? "compact" : ""}`}
@@ -22,16 +32,16 @@ export function ProductArt({
       >
         <defs>
           <linearGradient id={`${id}-body`} x1="0" y1="0" x2="1" y2="1">
-            <stop stopColor="#656565" />
-            <stop offset=".28" stopColor="#303030" />
-            <stop offset=".75" stopColor="#171717" />
-            <stop offset="1" stopColor="#070707" />
+            <stop stopColor={body[0]} />
+            <stop offset=".28" stopColor={body[1]} />
+            <stop offset=".75" stopColor={body[2]} />
+            <stop offset="1" stopColor={body[3]} />
           </linearGradient>
           <linearGradient id={`${id}-silver`} x1="0" y1="0" x2="1" y2=".65">
-            <stop stopColor="#dededb" />
-            <stop offset=".28" stopColor="#888886" />
-            <stop offset=".45" stopColor="#c6c6c2" />
-            <stop offset="1" stopColor="#525250" />
+            <stop stopColor={metal[0]} />
+            <stop offset=".28" stopColor={metal[1]} />
+            <stop offset=".45" stopColor={metal[2]} />
+            <stop offset="1" stopColor={metal[3]} />
           </linearGradient>
           <linearGradient id={`${id}-edge`} x1="0" y1="0" x2="1" y2="1">
             <stop stopColor="#999" />
@@ -130,7 +140,7 @@ export function ProductArt({
                 letterSpacing="2"
                 transform="rotate(90 105 210)"
               >
-                D
+                L / R
               </text>
             </g>
           ) : product.category === "chargers" ? (
@@ -209,7 +219,7 @@ export function ProductArt({
                 letterSpacing="3"
                 textAnchor="middle"
               >
-                D
+                {product.specs[0].split(" ")[0]}
               </text>
               <path
                 d="M342 263 L370 253"
@@ -254,7 +264,7 @@ export function ProductArt({
                 letterSpacing="3"
                 textAnchor="middle"
               >
-                D
+                BT
               </text>
             </g>
           ) : product.category === "storage" ? (
@@ -302,7 +312,7 @@ export function ProductArt({
                 letterSpacing="5"
                 textAnchor="middle"
               >
-                DALE / SSD
+                512 GB / SSD
               </text>
             </g>
           ) : (
@@ -383,7 +393,7 @@ export function ProductArt({
                 letterSpacing="2"
                 textAnchor="middle"
               >
-                DALE
+                USB-C
               </text>
             </g>
           )}

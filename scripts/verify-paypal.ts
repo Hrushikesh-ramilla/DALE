@@ -33,7 +33,7 @@ const created = await fetch(`${base}/v2/checkout/orders`, {
     purchase_units: [
       {
         amount: { currency_code: "USD", value: "1.00" },
-        description: "Dale sandbox integration verification",
+        description: "DALE sandbox integration verification",
       },
     ],
   }),

@@ -1,8 +1,10 @@
-# Dale master plan
+# DALE master plan
 
 Prepared: 5 October 2026. Updated: 7 October 2026. Status: the core application is deployed on the user's existing EC2 instance. Shopping clarification, grounded comparisons, confirmed device-label suggestions, group cancellation/failure, returns and recovery have runnable tests. Local checks, hosted PostgreSQL/HTTPS, 200 traces, frozen 300-case synthetic evaluation, repeated mock native-adapter evaluation, and backup/restore checks pass. GitHub run 37373916879 at 53c284b now passes both jobs, including ten production-container browser journeys, after retrying the runner-allocation cancellation. Earlier direct Gemini smoke checks passed; current quota is unavailable and hosted analysis uses fixtures under the owner's no-spend instruction. Complete PayPal sandbox verification is blocked by the merchant rejecting USD approval. Live accuracy, physical captures and independent human acceptance remain explicit gates with a runnable acceptance pack; no real capture, refund, or genuine webhook delivery is claimed. See docs/MANUAL_TESTS.md for hands-on instructions, docs/IMPLEMENTATION_STATUS.md for gaps, CHANGELOG.md for milestone history, and docs/VALIDATION.md for executed evidence.
 
 ## 1. Product decision
+
+7 October revised design milestone: the owner selected uppercase **DALE** as a custom wordmark alone, with concrete unbranded products and clear demo device profiles. The product-stage redesign, asymmetric collections, all-category discovery, pagination and profile aliases are implemented. Lint/typecheck, 135 tests, 200 workflow traces, 107 deterministic scenarios and 300 frozen synthetic records pass; final browser/release evidence is recorded in docs/VALIDATION.md. The previous D-monogram identity below is superseded. EC2 deployment remains pending while SSH times out; public application is still 5b393c0.
 
 7 October branding milestone: the owner selected the single-word name **Dale**. Customer-facing text, checkout descriptions, route metadata, product illustration engravings, the public API title and an original serif D wordmark/icon now use that identity. Product policy and feature IDs are retained. Lint/typecheck, all 134 automated checks and all 14 development browser journeys pass; four editorial journeys also pass after the final illustration update. Public deployment remains pending as described below.
 
@@ -18,17 +20,17 @@ Release target: a hosted, sandbox-only application engineers can interact with, 
 
 ## 2. Customer priority is an enforceable policy
 
-| Policy | Product behavior | Acceptance evidence |
-| --- | --- | --- |
-| The shopper controls purchases | Show item, compatibility, merchant, full total, currency, delivery promise, and return policy before explicit approval. Any material change requires new approval. | Changed-quote and unauthorized-action tests. |
-| Recommendations serve the customer | Apply required compatibility and budget constraints before ranking. Rank eligible options by shopper priorities. Sponsorship cannot improve organic rank. | Sponsorship perturbation and constraint tests. |
-| Returns are easy to initiate | A short guided flow; allow photos and written descriptions. Video is optional. Do not repeatedly request information already supplied. | Browser tests for complete and incomplete submissions. |
-| Suspicion cannot automatically defeat a claim | AI may request clarification or recommend review. It cannot deny refunds, accuse the customer of fraud, or close an appeal. | Policy tests against adversarial model outputs. |
-| Seller delay cannot create an endless loop | A configurable response deadline triggers escalation. During the demo, use a 24-hour seller-response target with a simulated clock. | Timeout and unresponsive-seller scenarios. |
-| Merchant-caused problems have a customer remedy | Under the demo merchant's published policy, verified wrong-item or damaged-item cases qualify for refund or replacement; offer return shipping at the merchant's expense where a return is required. | Remedy policy and shipping-cost tests. |
-| Ambiguity receives timely support | A reviewer sees both sides. Where records remain inconclusive, apply the merchant's agreed customer-benefit policy instead of repeatedly making the buyer prove a negative. | Ambiguous-case tests with recorded reviewer decisions. |
-| Refund status is truthful | Distinguish requested, processing, completed, and failed. Show reference and next step. | PayPal reconciliation and failure tests. |
-| Customer rights remain visible | Show the scope of our storefront policy separately from any applicable PayPal process. Preserve the route to human review and PayPal dispute information. | UI and workflow review. |
+| Policy                                          | Product behavior                                                                                                                                                                                     | Acceptance evidence                                    |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| The shopper controls purchases                  | Show item, compatibility, merchant, full total, currency, delivery promise, and return policy before explicit approval. Any material change requires new approval.                                   | Changed-quote and unauthorized-action tests.           |
+| Recommendations serve the customer              | Apply required compatibility and budget constraints before ranking. Rank eligible options by shopper priorities. Sponsorship cannot improve organic rank.                                            | Sponsorship perturbation and constraint tests.         |
+| Returns are easy to initiate                    | A short guided flow; allow photos and written descriptions. Video is optional. Do not repeatedly request information already supplied.                                                               | Browser tests for complete and incomplete submissions. |
+| Suspicion cannot automatically defeat a claim   | AI may request clarification or recommend review. It cannot deny refunds, accuse the customer of fraud, or close an appeal.                                                                          | Policy tests against adversarial model outputs.        |
+| Seller delay cannot create an endless loop      | A configurable response deadline triggers escalation. During the demo, use a 24-hour seller-response target with a simulated clock.                                                                  | Timeout and unresponsive-seller scenarios.             |
+| Merchant-caused problems have a customer remedy | Under the demo merchant's published policy, verified wrong-item or damaged-item cases qualify for refund or replacement; offer return shipping at the merchant's expense where a return is required. | Remedy policy and shipping-cost tests.                 |
+| Ambiguity receives timely support               | A reviewer sees both sides. Where records remain inconclusive, apply the merchant's agreed customer-benefit policy instead of repeatedly making the buyer prove a negative.                          | Ambiguous-case tests with recorded reviewer decisions. |
+| Refund status is truthful                       | Distinguish requested, processing, completed, and failed. Show reference and next step.                                                                                                              | PayPal reconciliation and failure tests.               |
+| Customer rights remain visible                  | Show the scope of our storefront policy separately from any applicable PayPal process. Preserve the route to human review and PayPal dispute information.                                            | UI and workflow review.                                |
 
 Automatic refunds require a pre-authorized merchant policy, eligible payment state, and sufficient refundable balance. Customer priority does not create a permission to move someone else's money without authority. High-cost or contested cases escalate to an accountable reviewer; the customer receives a deadline and explanation.
 
@@ -61,15 +63,15 @@ Core screens: shopping conversation with comparison cards; product details; grou
 
 ## 5. Feature contracts and test gates
 
-| ID | Feature | Bounded first implementation | Required acceptance tests |
-| --- | --- | --- | --- |
-| BG-01 | AgentGuard | Deterministic server checks for approval, quote version, item, payee, amount, currency, stock, and action permissions; AI explains warnings. | Malicious listing; changed payee; expired quote; changed amount; unauthorized capture/refund; repeated request; stale inventory. |
-| BG-02 | BuyTogether | Same-SKU group formation with server-priced, merchant-approved discount tiers and individual checkout. | Concurrent joins; repeated join; minimum reached; timeout; buyer leaves; partial payment failure; expired offer; fair cancellation. |
-| BG-03 | ScamPause | Analyze voluntarily supplied text and listing content; give specific reasons and a safer next step. | Labeled legitimate/scam conversations; escalating multi-turn scams; benign urgency; obfuscated instructions; model outage. |
-| BG-04 | Buyer's Advocate | Catalog-grounded comparisons and explicit shopper preference weights. | Sponsored inferior item; unsupported claims; preference changes; missing specs; no eligible result; ties. |
-| BG-05 | ReturnShield | Four evidence checkpoints, claim-level analysis, review, customer remedy, and exportable report. | Genuine damage; swapped item; dishonest seller; forged/reused evidence; missing serial; inconclusive damage timing; appeal. |
-| BG-06 | PartsMatch | OCR-assisted identification, canonical model IDs, and a curated compatibility graph. | Same-looking incompatible parts; OCR mistakes; unreadable label; missing model; conflicting specs; confirmed compatible part. |
-| BG-07 | RescueMyOrder | Deadline/stock/cancellation events trigger options; server executes approved refund or creates a linked replacement workflow. | Seller cancellation; late delivery; replacement unavailable; refund failure; stock race; duplicate event; buyer chooses refund instead. |
+| ID    | Feature          | Bounded first implementation                                                                                                                 | Required acceptance tests                                                                                                               |
+| ----- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| BG-01 | AgentGuard       | Deterministic server checks for approval, quote version, item, payee, amount, currency, stock, and action permissions; AI explains warnings. | Malicious listing; changed payee; expired quote; changed amount; unauthorized capture/refund; repeated request; stale inventory.        |
+| BG-02 | BuyTogether      | Same-SKU group formation with server-priced, merchant-approved discount tiers and individual checkout.                                       | Concurrent joins; repeated join; minimum reached; timeout; buyer leaves; partial payment failure; expired offer; fair cancellation.     |
+| BG-03 | ScamPause        | Analyze voluntarily supplied text and listing content; give specific reasons and a safer next step.                                          | Labeled legitimate/scam conversations; escalating multi-turn scams; benign urgency; obfuscated instructions; model outage.              |
+| BG-04 | Buyer's Advocate | Catalog-grounded comparisons and explicit shopper preference weights.                                                                        | Sponsored inferior item; unsupported claims; preference changes; missing specs; no eligible result; ties.                               |
+| BG-05 | ReturnShield     | Four evidence checkpoints, claim-level analysis, review, customer remedy, and exportable report.                                             | Genuine damage; swapped item; dishonest seller; forged/reused evidence; missing serial; inconclusive damage timing; appeal.             |
+| BG-06 | PartsMatch       | OCR-assisted identification, canonical model IDs, and a curated compatibility graph.                                                         | Same-looking incompatible parts; OCR mistakes; unreadable label; missing model; conflicting specs; confirmed compatible part.           |
+| BG-07 | RescueMyOrder    | Deadline/stock/cancellation events trigger options; server executes approved refund or creates a linked replacement workflow.                | Seller cancellation; late delivery; replacement unavailable; refund failure; stock race; duplicate event; buyer chooses refund instead. |
 
 Every feature ticket must specify input, expected output, side effects, failure behavior, test fixtures, and linked result evidence. No ticket becomes release-ready from a screenshot or an unexecuted test file.
 
@@ -83,12 +85,12 @@ Before checkout, show this policy and window. If the merchant cancels after paym
 
 ## 7. Evidence-backed returns and replacements
 
-| Checkpoint | Evidence | What can be compared |
-| --- | --- | --- |
-| Seller dispatch | Order-linked item ID/serial where available, condition photos, packaging and shipping reference. | Product identity and documented pre-shipment appearance. |
-| Buyer receipt | Reported issue, item identifier, photos, optional video, packaging information. | Whether the received item appears consistent with dispatch and whether the reported issue is visible. |
-| Buyer return dispatch | Return authorization, item identifier, condition, packaging and return shipping reference. | Whether the documented return matches the received item. |
-| Seller return receipt | Return reference, item identifier, condition and optional opening video. | Whether the documented received return matches the buyer's documented dispatch. |
+| Checkpoint            | Evidence                                                                                         | What can be compared                                                                                  |
+| --------------------- | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| Seller dispatch       | Order-linked item ID/serial where available, condition photos, packaging and shipping reference. | Product identity and documented pre-shipment appearance.                                              |
+| Buyer receipt         | Reported issue, item identifier, photos, optional video, packaging information.                  | Whether the received item appears consistent with dispatch and whether the reported issue is visible. |
+| Buyer return dispatch | Return authorization, item identifier, condition, packaging and return shipping reference.       | Whether the documented return matches the received item.                                              |
+| Seller return receipt | Return reference, item identifier, condition and optional opening video.                         | Whether the documented received return matches the buyer's documented dispatch.                       |
 
 Bind submissions to authenticated accounts, an order/case, and a server-issued capture session when using guided capture. Store original files with a cryptographic hash, server receipt timestamp, and an application audit record. A challenge code can discourage replay but cannot prove physical truth or prevent staged scenes. Uploaded files receive weaker origin assurance than guided captures.
 
@@ -112,17 +114,17 @@ PayPal disputes remain separate provider cases linked to our internal return. Ou
 
 ## 8. Architecture
 
-| Component | Choice | Responsibility |
-| --- | --- | --- |
-| Web and server API | Next.js, TypeScript | Shopper/operator UI, authentication, authorization, schema validation and domain commands. |
-| Domain logic | Shared TypeScript modules | Quotes, compatibility, customer policy, payment rules and state machines. |
-| Database | PostgreSQL | Catalog, accounts, orders, cases, payment journal, jobs and audit records. |
-| Background processing | Node worker using a maintained PostgreSQL-backed job queue | Evidence analysis, notifications, deadlines, reconciliation and retryable tasks. |
-| Evidence storage | Private S3-compatible object store; local equivalent in Docker | Original evidence, expiring authorized downloads, and retention. |
-| AI | Provider adapter for structured text and vision responses | Clarification, extraction, comparisons, risk explanation and claim summaries. |
-| Payments | PayPal server API and browser checkout SDK | Sandbox approval, capture, refund and provider state lookup. |
-| Carrier | Deterministic simulator behind an adapter | Delivery/return events and failure injection. |
-| Validation | Vitest, Playwright and a versioned evaluation runner | Rules, adapters, complete journeys, AI metrics and test reports. |
+| Component             | Choice                                                         | Responsibility                                                                             |
+| --------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Web and server API    | Next.js, TypeScript                                            | Shopper/operator UI, authentication, authorization, schema validation and domain commands. |
+| Domain logic          | Shared TypeScript modules                                      | Quotes, compatibility, customer policy, payment rules and state machines.                  |
+| Database              | PostgreSQL                                                     | Catalog, accounts, orders, cases, payment journal, jobs and audit records.                 |
+| Background processing | Node worker using a maintained PostgreSQL-backed job queue     | Evidence analysis, notifications, deadlines, reconciliation and retryable tasks.           |
+| Evidence storage      | Private S3-compatible object store; local equivalent in Docker | Original evidence, expiring authorized downloads, and retention.                           |
+| AI                    | Provider adapter for structured text and vision responses      | Clarification, extraction, comparisons, risk explanation and claim summaries.              |
+| Payments              | PayPal server API and browser checkout SDK                     | Sandbox approval, capture, refund and provider state lookup.                               |
+| Carrier               | Deterministic simulator behind an adapter                      | Delivery/return events and failure injection.                                              |
+| Validation            | Vitest, Playwright and a versioned evaluation runner           | Rules, adapters, complete journeys, AI metrics and test reports.                           |
 
 Use a modular monolith with one web process and one worker. Choose supported package/runtime versions at implementation start and lock them. AI produces typed proposals; every proposal passes server validation. The model never receives payment credentials or directly executes unrestricted financial tools.
 
@@ -188,11 +190,11 @@ Budget must include an always-running web/worker, database, storage, AI usage an
 
 ### Three distinct test environments
 
-| Layer | Purpose | What it establishes |
-| --- | --- | --- |
-| Deterministic local tests | Seeded catalogs, frozen clock, scripted faults, known expected decisions. | Reproducible behavior and invariants in the specified scenarios. |
-| Live integration tests | Actual sandbox transactions, real webhook handling, live AI responses and private storage. | Adapters genuinely integrate with external services. |
-| Hosted browser tests | Independent engineer sessions against the deployed build. | The delivered product is accessible and works outside a developer's machine. |
+| Layer                     | Purpose                                                                                    | What it establishes                                                          |
+| ------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Deterministic local tests | Seeded catalogs, frozen clock, scripted faults, known expected decisions.                  | Reproducible behavior and invariants in the specified scenarios.             |
+| Live integration tests    | Actual sandbox transactions, real webhook handling, live AI responses and private storage. | Adapters genuinely integrate with external services.                         |
+| Hosted browser tests      | Independent engineer sessions against the deployed build.                                  | The delivered product is accessible and works outside a developer's machine. |
 
 Synthetic shipping/media tests establish behavior against known fixtures, not universal physical fraud detection. Add staged physical captures using a few actual objects: correct item, wrong lookalike, visible damage, unreadable serial, and changed return. These remain controlled evidence, with limitations recorded.
 
@@ -204,18 +206,18 @@ Run at least 200 seeded randomized workflow traces for concurrency, retries, dea
 
 ### Release gates: targets, not results already achieved
 
-| Gate | Proposed release requirement |
-| --- | --- |
-| Money and access rules | All critical invariant and ownership tests pass; zero unauthorized or duplicate money movements in the executed corpus. |
-| Compatibility | All known incompatible catalog pairs are filtered; unknown/contradictory models request clarification. Correct model extraction on at least 95% of readable held-out fixtures. |
-| Scam analysis | At least 90% recall on labeled scam fixtures and at most 5% false warnings on legitimate fixtures; publish counts and uncertainty. |
-| Claim analysis | At least 90% agreement with human labels on bounded supported/contradicted/insufficient cases; zero automatic AI-based denials; publish confusion matrix and error examples. |
-| Grounding | All consequential product/claim assertions in the reviewed release corpus have valid source references or are explicitly marked uncertain. |
-| Genuine PayPal integration | Create, approve, capture, retrieve and refund actual sandbox payments; verify corresponding real sandbox webhook processing. |
-| Hosted journeys | All defined critical shopper/merchant/reviewer journeys pass against the release URL, with traces and provider references retained. |
-| Recovery | Model outage, worker restart, provider timeout, duplicate events and failed refund produce safe, truthful states and recover under the documented procedure. |
-| Usability | At least five independent testers complete purchase and return tasks; record assistance needed, completion and major friction. |
-| Responsiveness | At 10 concurrent test sessions, target under 1 second p95 for our non-AI API work; long AI/media jobs show progress without blocking the page. Record provider latency separately. |
+| Gate                       | Proposed release requirement                                                                                                                                                       |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Money and access rules     | All critical invariant and ownership tests pass; zero unauthorized or duplicate money movements in the executed corpus.                                                            |
+| Compatibility              | All known incompatible catalog pairs are filtered; unknown/contradictory models request clarification. Correct model extraction on at least 95% of readable held-out fixtures.     |
+| Scam analysis              | At least 90% recall on labeled scam fixtures and at most 5% false warnings on legitimate fixtures; publish counts and uncertainty.                                                 |
+| Claim analysis             | At least 90% agreement with human labels on bounded supported/contradicted/insufficient cases; zero automatic AI-based denials; publish confusion matrix and error examples.       |
+| Grounding                  | All consequential product/claim assertions in the reviewed release corpus have valid source references or are explicitly marked uncertain.                                         |
+| Genuine PayPal integration | Create, approve, capture, retrieve and refund actual sandbox payments; verify corresponding real sandbox webhook processing.                                                       |
+| Hosted journeys            | All defined critical shopper/merchant/reviewer journeys pass against the release URL, with traces and provider references retained.                                                |
+| Recovery                   | Model outage, worker restart, provider timeout, duplicate events and failed refund produce safe, truthful states and recover under the documented procedure.                       |
+| Usability                  | At least five independent testers complete purchase and return tasks; record assistance needed, completion and major friction.                                                     |
+| Responsiveness             | At 10 concurrent test sessions, target under 1 second p95 for our non-AI API work; long AI/media jobs show progress without blocking the page. Record provider latency separately. |
 
 Threshold misses require fixing, narrowing the affected capability, or keeping it explicitly experimental. No failed critical gate can be traded for presentation polish. Run live AI evaluation multiple times on a preregistered subset to expose output variability; report model/prompt versions and raw counts, not only averages.
 
@@ -246,15 +248,15 @@ Engineering scenarios are separate from the shopper interface. The shopper sees 
 
 Planning assumption: a small engineering team with frontend, backend/payments and AI/testing coverage. This is a proposed schedule, not a commitment based on known staffing. Each milestone must deliver a deployable build.
 
-| Dates, IST | Deliverable | Exit gate |
-| --- | --- | --- |
-| 5-8 October | Freeze customer policy, fixtures, schemas and state machines; scaffold containers, auth and deployment; verify sandbox credentials. | Hosted skeleton, isolated roles, fresh-clone startup, real sandbox integration spike. |
-| 9-15 October | Grounded shopping, compatibility, approval-bound checkout and payment journal. | First complete purchase; mismatch, ownership and retry tests pass. |
-| 16-22 October | Group deals, scam analysis and unbiased comparisons. | Group failure scenarios and held-out shopping/scam evaluations execute. |
-| 23-29 October | Four evidence checkpoints, review, refund and replacement flows. | Complete customer-priority resolution; real refund integration verified. |
-| 30 October-5 November | Fault injection, AI evaluations, security, staged physical evidence, usability and restore rehearsal. | Critical release gates pass; errors and limitations documented. |
-| 6-10 November | Independent hosted verification, deployment runbook, documentation, repository licensing and demo recording. | Release candidate and engineer acceptance report. |
-| 11-12 November | Fix release blockers and submit with a margin. | Public source, working access, test evidence and video complete. |
+| Dates, IST            | Deliverable                                                                                                                         | Exit gate                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| 5-8 October           | Freeze customer policy, fixtures, schemas and state machines; scaffold containers, auth and deployment; verify sandbox credentials. | Hosted skeleton, isolated roles, fresh-clone startup, real sandbox integration spike. |
+| 9-15 October          | Grounded shopping, compatibility, approval-bound checkout and payment journal.                                                      | First complete purchase; mismatch, ownership and retry tests pass.                    |
+| 16-22 October         | Group deals, scam analysis and unbiased comparisons.                                                                                | Group failure scenarios and held-out shopping/scam evaluations execute.               |
+| 23-29 October         | Four evidence checkpoints, review, refund and replacement flows.                                                                    | Complete customer-priority resolution; real refund integration verified.              |
+| 30 October-5 November | Fault injection, AI evaluations, security, staged physical evidence, usability and restore rehearsal.                               | Critical release gates pass; errors and limitations documented.                       |
+| 6-10 November         | Independent hosted verification, deployment runbook, documentation, repository licensing and demo recording.                        | Release candidate and engineer acceptance report.                                     |
+| 11-12 November        | Fix release blockers and submit with a margin.                                                                                      | Public source, working access, test evidence and video complete.                      |
 
 The published deadline converts to **13 November 2026, 1:30 AM IST**. Maintain the demo through the end of judging, **15 December 2026, 9:30 PM IST**, unless the organizer updates the schedule. Source: [official rules](https://paypalaihackathon.devpost.com/rules).
 
@@ -262,17 +264,17 @@ If staffing is smaller or progress slips, narrow catalog size, group complexity 
 
 ## 14. Risks and scope controls
 
-| Risk | Planned handling |
-| --- | --- |
-| Seven features become seven disconnected products | One shopping/order/case model, one domain and one complete demo story. |
-| Physical evidence does not establish truth | Explicit uncertainty, corroboration and review; no definitive liar detector claim. |
-| PayPal dispute endpoints need extra access | Verify during the first integration spike. Implement internal returns and actual capture/refund regardless; mark unavailable dispute calls as unimplemented. |
-| Marketplace onboarding blocks deployment | Single merchant for the hackathon; independent-seller onboarding is a later release. |
-| AI latency, cost or nondeterminism | Bounded adapter calls, cached catalog retrieval, budgets, queued analysis and manual fallback. |
-| Seller silence harms the shopper | Deadlines, escalations and pre-agreed customer-benefit remedies. |
-| Fake payment events hide integration gaps | Separate fixture and sandbox modes; require real transaction IDs and verified events for release evidence. |
-| Duplicate refunds or inconsistent external state | Durable operation records, locks, idempotency and provider reconciliation. |
-| Public demo misuse | Isolated workspaces, quotas, private storage, object authorization and restricted admin tools. |
+| Risk                                              | Planned handling                                                                                                                                             |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Seven features become seven disconnected products | One shopping/order/case model, one domain and one complete demo story.                                                                                       |
+| Physical evidence does not establish truth        | Explicit uncertainty, corroboration and review; no definitive liar detector claim.                                                                           |
+| PayPal dispute endpoints need extra access        | Verify during the first integration spike. Implement internal returns and actual capture/refund regardless; mark unavailable dispute calls as unimplemented. |
+| Marketplace onboarding blocks deployment          | Single merchant for the hackathon; independent-seller onboarding is a later release.                                                                         |
+| AI latency, cost or nondeterminism                | Bounded adapter calls, cached catalog retrieval, budgets, queued analysis and manual fallback.                                                               |
+| Seller silence harms the shopper                  | Deadlines, escalations and pre-agreed customer-benefit remedies.                                                                                             |
+| Fake payment events hide integration gaps         | Separate fixture and sandbox modes; require real transaction IDs and verified events for release evidence.                                                   |
+| Duplicate refunds or inconsistent external state  | Durable operation records, locks, idempotency and provider reconciliation.                                                                                   |
+| Public demo misuse                                | Isolated workspaces, quotas, private storage, object authorization and restricted admin tools.                                                               |
 
 PayPal describes [sandbox dispute testing](https://developer.paypal.com/disputes/test-go-live/) and notes additional access requirements for some [sandbox dispute creation methods](https://developer.paypal.com/platforms/disputes/integrate-disputes/). Do not make those methods a prerequisite for the central shopper journey.
 

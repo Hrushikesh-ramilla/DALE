@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — DALE wordmark and product-led redesign
+
+- Replaced the separate D emblem with original uppercase DALE letterforms in the header, footer and browser icon. Updated customer-facing metadata, assistant labels, checkout descriptions and API title; unbranded product illustrations use functional markings.
+- Added a substantial four-product stage with explicit selection, Motion transitions, restrained scroll movement, a large editorial headline, asymmetric collection mosaic and closing wordmark. Research included Electronic Materials Office and Unimatic on Awwwards; all artwork and code remain original and monochrome.
+- Renamed all eight catalog families to concrete unbranded products and numbered variants to neutral finishes. Device profiles expose connector/power requirements while retaining internal fixture identifiers. Conversational aliases recognize the displayed profiles and require clarification for conflicting selections.
+- Discovery starts across every eligible category with twelve-card pagination and category navigation. Search, saved briefs and restored sessions reset pagination; route navigation returns to the top. Featured products and collection previews retain existing compatibility, budget and explicit approval boundaries.
+- Lint/typecheck and all 135 unit/contract/database tests pass. The 15-journey development suite passes; final reduced-motion hydration regression and packaged-production verification follow. All 200 workflow traces, 107 deterministic scenarios and 300 frozen synthetic records pass without provider calls. EC2 SSH remains unavailable; public deployment is pending.
+
 ## 2026-10-07 — Dale identity
 
 - Renamed the customer-facing product to the owner's single-word choice, Dale. Updated the header/footer, conversation labels, policy heading, checkout merchant/PayPal descriptions, product illustration engravings, route titles and API document.

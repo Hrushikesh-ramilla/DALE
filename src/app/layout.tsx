@@ -7,8 +7,8 @@ import "@fontsource/cormorant-garamond/400-italic.css";
 import { MotionProvider } from "@/components/motion-provider";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "Dale — shop with confidence",
-  applicationName: "Dale",
+  title: "DALE — shop with confidence",
+  applicationName: "DALE",
   description:
     "Find the right fit, pay safely, and get support that puts you first.",
 };

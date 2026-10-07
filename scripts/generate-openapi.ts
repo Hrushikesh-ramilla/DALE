@@ -44,7 +44,7 @@ const idParameter = {
 const spec = {
   openapi: "3.1.0",
   info: {
-    title: "Dale test storefront API",
+    title: "DALE test storefront API",
     version: "0.1.0",
     description:
       "Sandbox/fixture commerce with separate buyer, seller and reviewer permissions. Synthetic adapters do not establish real payment completion. Case records and originals are private. No API key belongs in requests from browsers.",

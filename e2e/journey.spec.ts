@@ -9,7 +9,16 @@ async function start(page: Page) {
   ).toBeVisible();
 }
 async function buy(page: Page) {
-  await page.getByRole("button", { name: "Review purchase" }).first().click();
+  await page
+    .locator(".product-card")
+    .filter({
+      has: page.getByRole("heading", {
+        name: "65W USB-C Wall Charger",
+        exact: true,
+      }),
+    })
+    .getByRole("button", { name: "Review purchase" })
+    .click();
   await expect(page.getByRole("dialog")).toContainText("$29.00");
   await page
     .getByRole("button", { name: "Approve simulated purchase" })
@@ -129,7 +138,7 @@ test("two shoppers unlock a discount with private individual checkout", async ({
   await start(page);
   await page
     .getByRole("button", {
-      name: "Join group deal for Everyday USB-C Charger",
+      name: "Join group deal for 65W USB-C Wall Charger",
       exact: true,
     })
     .click();
@@ -146,7 +155,7 @@ test("two shoppers unlock a discount with private individual checkout", async ({
   await page.getByRole("button", { name: "Discover", exact: true }).click();
   await page
     .getByRole("button", {
-      name: "Join group deal for Everyday USB-C Charger",
+      name: "Join group deal for 65W USB-C Wall Charger",
       exact: true,
     })
     .click();
@@ -158,7 +167,7 @@ test("two shoppers unlock a discount with private individual checkout", async ({
   await second.getByRole("button", { name: "Enter workspace" }).click();
   await second
     .getByRole("button", {
-      name: "Join group deal for Everyday USB-C Charger",
+      name: "Join group deal for 65W USB-C Wall Charger",
       exact: true,
     })
     .click();
@@ -228,12 +237,12 @@ test("mobile storefront and compatibility search", async ({ page }) => {
   await page.getByRole("button", { name: "Find my match" }).click();
   await expect(
     page.getByRole("heading", {
-      name: "Precision Barrel Charger",
+      name: "45W Barrel Power Adapter",
       exact: true,
     }),
   ).toBeVisible();
   await expect(
-    page.getByRole("heading", { name: "Everyday USB-C Charger", exact: true }),
+    page.getByRole("heading", { name: "65W USB-C Wall Charger", exact: true }),
   ).toHaveCount(0);
   await page.getByText("Compare catalog facts", { exact: true }).click();
   expect(
@@ -264,7 +273,7 @@ test("changed brief revokes a previous unpaid approval and persists preferences"
   await page.getByLabel("Rank by").selectOption("features");
   await page.getByRole("button", { name: "Find my match" }).click();
   await expect(page.locator(".product-card").first()).toContainText(
-    "Power USB-C Charger",
+    "100W USB-C Wall Charger",
   );
   const old = await page.request.post("/api/actions", {
     headers,
@@ -280,6 +289,6 @@ test("changed brief revokes a previous unpaid approval and persists preferences"
   await expect(page.getByLabel("Feature to prioritize")).toHaveValue("100W");
   await expect(page.getByLabel("Rank by")).toHaveValue("features");
   await expect(page.locator(".product-card").first()).toContainText(
-    "Power USB-C Charger",
+    "100W USB-C Wall Charger",
   );
 });

@@ -1,4 +1,4 @@
-export const metadata = { title: "The collection — Dale" };
+export const metadata = { title: "The collection — DALE" };
 
 export default function Shop() {
   return null;

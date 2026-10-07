@@ -1,10 +1,20 @@
-# Editorial storefront
+# DALE editorial storefront
 
 The storefront uses charcoal, black, off-white and muted neutral surfaces, generous product space, and serif editorial headings paired with a readable sans-serif interface. Inspiration came from [Awwwards' ETQ Amsterdam listing](https://www.awwwards.com/websites/html/?mobile=1&page=174) and direct inspection of [ETQ's storefront](https://www.etq-amsterdam.com/): substantial product presentation, restrained navigation, collection browsing and clear service information. This is an original electronics-store implementation; no reference site's imagery, code or claims are reused.
 
 ## Application structure
 
-The customer-facing brand is **Dale**, a single word selected by the owner. The identity pairs a Cormorant Garamond wordmark with an original serif D monogram in the header, footer and browser icon. Assistant labels, page metadata, product illustrations, checkout descriptions and the public API document use the same name. Character inspiration informs the calm, attentive service tone; the mark is an original letterform.
+The customer-facing brand is **DALE**, a single word selected by the owner. An original uppercase SVG wordmark with custom letterforms stands alone in the header, footer and browser icon. There is no separate D emblem. Assistant labels, page metadata, checkout descriptions and the public API document use the same name. Unbranded catalog illustrations carry functional markings rather than a store emblem.
+
+The latest research included [Awwwards' e-commerce directory](https://www.awwwards.com/websites/e-commerce/), [Electronic Materials Office's Altar II entry](https://www.awwwards.com/sites/emo-r-altar-ii), its [actual storefront](https://electronicmaterialsoffice.com), and [Unimatic's Awwwards entry](https://www.awwwards.com/sites/unimatic). Altar II informed the substantial dark product stage and deliberate reveals; Unimatic informed the restrained product presentation and typography. The layout, letterforms and catalog illustrations remain original.
+
+The opening composition combines a large headline, a four-product stage and an oversized low-contrast wordmark. Shoppers change featured products explicitly; there is no autoplay. Motion animates product changes and restrained scroll movement. An asymmetric five-collection mosaic follows, with paper and charcoal surfaces. A closing full-width wordmark completes the page.
+
+The 40-product catalog now uses concrete unbranded names: 65W USB-C Wall Charger, USB-C HDMI Dock, 512GB Portable SSD, Bluetooth Over-Ear Headphones and Silent Bluetooth Mouse, with neutral finish variants rather than numbered series. These remain synthetic offers and labeled illustrations, not independently verified retail inventory or physical photography.
+
+The device selector shows USB-C Laptop (65W/100W/45W) and Barrel-jack Laptop (45W) demo profiles. Display labels and conversational aliases map to existing internal identifiers; frozen label images and persisted records remain reproducible. Power/connector labels alone do not establish compatibility with arbitrary physical laptops: the demo uses its curated compatibility matrix.
+
+Discovery initially includes every category within the chosen device and budget. Twelve results appear at a time; Show more products reveals additional eligible results without changing ranking or approval terms. Pagination resets on search, collection changes, saved brief and session restoration. Screen navigation returns to the top while the shared layout preserves shopper context.
 
 The existing `buyerguard` repository, package, health service identifier, database/cache names and deployment paths remain operational identifiers so the branding change does not require a data or infrastructure migration. Historical validation and release references retain their original names.
 

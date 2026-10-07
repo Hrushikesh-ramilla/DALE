@@ -22,6 +22,8 @@ import {
 import {
   catalog,
   models,
+  deviceLabel,
+  deviceText,
   productById,
   searchCatalog,
   type Product,
@@ -34,7 +36,8 @@ import type { snapshot } from "@/server/service";
 import { ProductArt } from "./product-art";
 import { PayPalCheckout } from "./paypal-checkout";
 import { Dialog } from "./dialog";
-import { BrandMark } from "./brand-mark";
+import { BrandWordmark } from "./brand-wordmark";
+import { EditorialHero } from "./editorial-hero";
 import type { ScenarioKind } from "@/server/scenarios";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
@@ -95,21 +98,21 @@ export default function Storefront() {
           ? "support"
           : "discover";
   const setTab = useCallback(
-    (next: Tab) => router.push(next === "discover" ? "/shop" : `/${next}`),
+    (next: Tab) => {
+      router.push(next === "discover" ? "/shop" : `/${next}`, {
+        scroll: false,
+      });
+      window.scrollTo({ top: 0, behavior: "instant" });
+    },
     [router],
   );
   const [session, setSession] = useState<Session | null>(null),
     [modal, setModal] = useState<Modal>(null);
   const [products, setProducts] = useState<Product[]>(
-    catalog.filter(
-      (p) =>
-        p.category === "chargers" &&
-        p.compatibleModels.includes("Atlas 14") &&
-        p.price <= 8000,
-    ),
+    searchCatalog({ model: "Atlas 14", budget: 8000 }),
   );
   const [model, setModel] = useState("Atlas 14"),
-    [category, setCategory] = useState("chargers"),
+    [category, setCategory] = useState(""),
     [budget, setBudget] = useState("80"),
     [message, setMessage] = useState(""),
     [preference, setPreference] = useState(""),
@@ -128,6 +131,7 @@ export default function Storefront() {
     [invite, setInvite] = useState("");
   const [questions, setQuestions] = useState<string[]>([]);
   const [catalogQuery, setCatalogQuery] = useState("");
+  const [visibleLimit, setVisibleLimit] = useState(12);
   const visibleProducts = products.filter((product) =>
     [product.name, product.description, ...product.specs]
       .join(" ")
@@ -137,6 +141,7 @@ export default function Storefront() {
   const [scenario, setScenario] = useState<ScenarioKind>("fresh");
   const restoreSession = useCallback((data: Session) => {
     setSession(data);
+    setVisibleLimit(12);
     if (data.brief) {
       const input = data.brief.input;
       setModel(input.model);
@@ -223,6 +228,7 @@ export default function Storefront() {
         confirmConstraints,
       });
       setProducts(result.products);
+      setVisibleLimit(12);
       setCatalogQuery("");
       setSummary(result.analysis.summary);
       setQuestions(result.questions);
@@ -257,6 +263,7 @@ export default function Storefront() {
     });
   }
   function browseCollection(nextCategory: string) {
+    setVisibleLimit(12);
     setCategory(nextCategory);
     setBriefDirty(true);
     setCatalogQuery("");
@@ -318,9 +325,8 @@ export default function Storefront() {
         <span>Your approval, always.</span>
       </div>
       <header className="site-header" inert={!!modal}>
-        <a className="brand" href="/" aria-label="Dale home">
-          <BrandMark />
-          <span className="brand-wordmark">Dale</span>
+        <a className="brand" href="/" aria-label="DALE home">
+          <BrandWordmark />
         </a>
         <nav aria-label="Main navigation">
           {(["discover", "groups", "orders", "support"] as Tab[]).map(
@@ -403,66 +409,9 @@ export default function Storefront() {
         )}
         {tab === "discover" && (
           <>
-            <motion.section
-              className="hero"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-            >
-              <div className="hero-copy">
-                <div className="eyebrow">THE CONSIDERED COLLECTION / 01</div>
-                <h1>
-                  Considered choices.
-                  <br />
-                  <span>Complete confidence.</span>
-                </h1>
-                <p>
-                  The right essentials for your device. A companion that
-                  protects your budget, respects your decisions, and stays after
-                  checkout.
-                </p>
-                <div className="hero-actions">
-                  <a className="button primary" href="#shop">
-                    Find your fit <ArrowRight size={16} />
-                  </a>
-                  <a className="text-link" href="#collections">
-                    Explore the collection <ArrowRight size={15} />
-                  </a>
-                </div>
-                <div className="hero-pills">
-                  <span>
-                    <Check size={14} /> Compatibility checked
-                  </span>
-                  <span>
-                    <Check size={14} /> Your approval, always
-                  </span>
-                  <span>
-                    <Check size={14} /> Support that stays
-                  </span>
-                </div>
-              </div>
-              <div className="hero-visual">
-                <span className="hero-object-number">No. 06</span>
-                <ProductArt product={catalog[5]} />
-                <div className="visual-note">
-                  <div>
-                    <strong>{catalog[5].name}</strong>
-                    <small>
-                      {catalog[5].specs[0]} · {formatMoney(catalog[5].price)} ·
-                      Catalog illustration
-                    </small>
-                  </div>
-                  <button
-                    aria-label="View Quiet Wireless Headphones"
-                    onClick={() =>
-                      setModal({ kind: "product", product: catalog[5] })
-                    }
-                  >
-                    <ArrowRight size={18} />
-                  </button>
-                </div>
-              </div>
-            </motion.section>
+            <EditorialHero
+              onView={(product) => setModal({ kind: "product", product })}
+            />
             <section
               className="collection-section"
               id="collections"
@@ -470,7 +419,7 @@ export default function Storefront() {
             >
               <div className="collection-heading">
                 <h2 id="collection-title">Objects for everyday life.</h2>
-                <p>Five collections. One considered approach.</p>
+                <p>Power. Connection. Sound. Storage. Everyday essentials.</p>
               </div>
               <div className="collection-grid">
                 {[
@@ -512,7 +461,7 @@ export default function Storefront() {
                               (item) => item.category === collection.id,
                             ).length
                           }{" "}
-                          catalog objects
+                          products
                         </small>
                       </span>
                       <ArrowRight size={15} />
@@ -531,7 +480,10 @@ export default function Storefront() {
                   <Sparkles size={19} />
                   <h2>Your shopping brief</h2>
                 </div>
-                <p className="muted">A few details make a better match.</p>
+                <p className="muted">
+                  Choose a demo device profile. Exact connectors and power
+                  requirements matter.
+                </p>
                 <label>
                   Your device
                   <select
@@ -542,7 +494,9 @@ export default function Storefront() {
                     }}
                   >
                     {models.map((m) => (
-                      <option key={m}>{m}</option>
+                      <option key={m} value={m}>
+                        {deviceLabel(m)}
+                      </option>
                     ))}
                   </select>
                 </label>
@@ -666,17 +620,38 @@ export default function Storefront() {
                     {briefDirty ? "preview options" : "compatible options"}
                   </span>
                 </div>
+                <div
+                  className="category-index"
+                  aria-label="Filter product category"
+                >
+                  {[
+                    ["", "All objects"],
+                    ["chargers", "Chargers"],
+                    ["docks", "Docks & hubs"],
+                    ["audio", "Headphones"],
+                    ["storage", "Storage"],
+                    ["accessories", "Accessories"],
+                  ].map(([id, label]) => (
+                    <button
+                      key={id}
+                      aria-pressed={category === id}
+                      onClick={() => browseCollection(id)}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
                 <div className="assistant-note">
                   <span className="assistant-icon">
                     <Sparkles size={17} />
                   </span>
-                  <p>{summary}</p>
+                  <p>{deviceText(summary)}</p>
                 </div>
                 {!!questions.length && (
                   <div className="analysis-panel">
                     <h3>Let's confirm the details.</h3>
                     {questions.map((question) => (
-                      <p key={question}>{question}</p>
+                      <p key={question}>{deviceText(question)}</p>
                     ))}
                     <button
                       className="button secondary small"
@@ -693,9 +668,11 @@ export default function Storefront() {
                     {session.conversation.slice(-6).map((turn, i) => (
                       <p key={`${turn.at}-${i}`}>
                         <strong>
-                          {turn.role === "user" ? "You" : "Dale"}:
+                          {turn.role === "user" ? "You" : "DALE"}:
                         </strong>{" "}
-                        {turn.text}
+                        {turn.role === "assistant"
+                          ? deviceText(turn.text)
+                          : turn.text}
                       </p>
                     ))}
                   </details>
@@ -741,112 +718,133 @@ export default function Storefront() {
                     aria-label="Search matched products"
                     placeholder="Search your selection by name or specification"
                     value={catalogQuery}
-                    onChange={(e) => setCatalogQuery(e.target.value)}
+                    onChange={(e) => {
+                      setCatalogQuery(e.target.value);
+                      setVisibleLimit(12);
+                    }}
                   />
                 </label>
                 <div className="product-grid">
-                  {visibleProducts.map((product, index) => (
-                    <motion.article
-                      className="product-card"
-                      key={product.id}
-                      layout
-                      initial={false}
-                      animate={{ opacity: 1 }}
-                    >
-                      <div className="card-visual">
-                        <ProductArt product={product} />
-                        <button
-                          className="product-view"
-                          aria-label={`View details for ${product.name}`}
-                          onClick={() => setModal({ kind: "product", product })}
-                        >
-                          <ArrowRight size={17} />
-                        </button>
-                        {index === 0 && (
-                          <span className="card-badge">
-                            {priority === "features"
-                              ? "Top match for your brief"
-                              : "Best price for your brief"}
-                          </span>
-                        )}
-                      </div>
-                      <div className="card-details">
-                        <div className="product-topline">
-                          <span className="fit-label">
-                            <Check size={12} />{" "}
-                            {briefDirty
-                              ? "Update your brief to confirm fit"
-                              : `Fits ${model}`}
-                          </span>
-                          {product.sponsored && (
-                            <span className="sponsored">Sponsored</span>
-                          )}
-                        </div>
-                        <h3>
+                  {visibleProducts
+                    .slice(0, visibleLimit)
+                    .map((product, index) => (
+                      <motion.article
+                        className="product-card"
+                        key={product.id}
+                        layout
+                        initial={false}
+                        animate={{ opacity: 1 }}
+                      >
+                        <div className="card-visual">
+                          <ProductArt product={product} />
                           <button
-                            className="product-title"
+                            className="product-view"
+                            aria-label={`View details for ${product.name}`}
                             onClick={() =>
                               setModal({ kind: "product", product })
                             }
                           >
-                            {product.name}
+                            <ArrowRight size={17} />
                           </button>
-                        </h3>
-                        <p>{product.description}</p>
-                        <div className="spec-tags">
-                          {product.specs.slice(0, 2).map((spec) => (
-                            <span key={spec}>{spec}</span>
-                          ))}
+                          {index === 0 && (
+                            <span className="card-badge">
+                              {priority === "features"
+                                ? "Top match for your brief"
+                                : "Best price for your brief"}
+                            </span>
+                          )}
                         </div>
-                        <small className="muted">
-                          Source: {product.source}.{" "}
-                          {priority === "features" &&
-                          preference &&
-                          product.specs
-                            .join(" ")
-                            .toLowerCase()
-                            .includes(preference.toLowerCase())
-                            ? `Matches “${preference}” in listed specifications.`
-                            : "Ranked by listed price."}
-                        </small>
-                        <div className="price-row">
-                          <strong>{formatMoney(product.price)}</strong>
-                          <small>Full price · shipping included</small>
-                        </div>
-                        <div className="card-actions">
-                          <button
-                            className="button primary"
-                            disabled={busy || !isBuyer}
-                            onClick={() => void choose(product)}
-                          >
-                            Review purchase <ArrowRight size={14} />
-                          </button>
-                          <button
-                            className="group-button"
-                            aria-label={`Join group deal for ${product.name}`}
-                            disabled={busy || !isBuyer}
-                            onClick={() => {
-                              if (!session) {
-                                startShopping();
-                                return;
+                        <div className="card-details">
+                          <div className="product-topline">
+                            <span className="fit-label">
+                              <Check size={12} />{" "}
+                              {briefDirty
+                                ? "Update your brief to confirm fit"
+                                : `Fits ${deviceLabel(model)}`}
+                            </span>
+                            {product.sponsored && (
+                              <span className="sponsored">Sponsored</span>
+                            )}
+                          </div>
+                          <h3>
+                            <button
+                              className="product-title"
+                              onClick={() =>
+                                setModal({ kind: "product", product })
                               }
-                              void run(async () => {
-                                await action({
-                                  action: "join_group",
-                                  productId: product.id,
-                                  model,
+                            >
+                              {product.name}
+                            </button>
+                          </h3>
+                          <p>{product.description}</p>
+                          <div className="spec-tags">
+                            {product.specs.slice(0, 2).map((spec) => (
+                              <span key={spec}>{spec}</span>
+                            ))}
+                          </div>
+                          <small className="muted">
+                            Source: {product.source}.{" "}
+                            {priority === "features" &&
+                            preference &&
+                            product.specs
+                              .join(" ")
+                              .toLowerCase()
+                              .includes(preference.toLowerCase())
+                              ? `Matches “${preference}” in listed specifications.`
+                              : "Ranked by listed price."}
+                          </small>
+                          <div className="price-row">
+                            <strong>{formatMoney(product.price)}</strong>
+                            <small>Full price · shipping included</small>
+                          </div>
+                          <div className="card-actions">
+                            <button
+                              className="button primary"
+                              disabled={busy || !isBuyer}
+                              onClick={() => void choose(product)}
+                            >
+                              Review purchase <ArrowRight size={14} />
+                            </button>
+                            <button
+                              className="group-button"
+                              aria-label={`Join group deal for ${product.name}`}
+                              disabled={busy || !isBuyer}
+                              onClick={() => {
+                                if (!session) {
+                                  startShopping();
+                                  return;
+                                }
+                                void run(async () => {
+                                  await action({
+                                    action: "join_group",
+                                    productId: product.id,
+                                    model,
+                                  });
+                                  setTab("groups");
                                 });
-                                setTab("groups");
-                              });
-                            }}
-                          >
-                            <Users size={18} />
-                          </button>
+                              }}
+                            >
+                              <Users size={18} />
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                    </motion.article>
-                  ))}
+                      </motion.article>
+                    ))}
                 </div>
+                {visibleProducts.length > visibleLimit && (
+                  <div className="catalog-pagination">
+                    <p>
+                      Showing {Math.min(visibleLimit, visibleProducts.length)}{" "}
+                      of {visibleProducts.length} matching products
+                    </p>
+                    <button
+                      className="editorial-link"
+                      onClick={() => setVisibleLimit((limit) => limit + 12)}
+                    >
+                      Show more products <ArrowRight size={16} />
+                    </button>
+                  </div>
+                )}
                 {!visibleProducts.length && (
                   <Empty
                     title={
@@ -1049,7 +1047,8 @@ export default function Storefront() {
                         </span>
                         <h3>{product.name}</h3>
                         <p>
-                          {group.model} · {group.memberCount} of 2 commitments
+                          {deviceLabel(group.model)} · {group.memberCount} of 2
+                          commitments
                         </p>
                         <div className="progress">
                           <span
@@ -1167,7 +1166,7 @@ export default function Storefront() {
                         </span>
                         <h3>{productById(order.quote.productId).name}</h3>
                         <p>
-                          {order.quote.model} ·{" "}
+                          {deviceLabel(order.quote.model)} ·{" "}
                           {order.replacementOf
                             ? "No additional charge"
                             : formatMoney(order.quote.amount)}
@@ -1621,8 +1620,8 @@ export default function Storefront() {
         <footer className="site-footer">
           <div className="footer-brand">
             <div className="brand">
-              <BrandMark />
-              <span className="brand-wordmark">Dale</span>
+              <BrandWordmark />
+              <span className="sr-only">DALE</span>
             </div>
             <p>
               Considered choices. Customer-first commerce. From your first
@@ -1672,8 +1671,11 @@ export default function Storefront() {
           </div>
         </footer>
         <div className="footer-bottom">
-          <span>Dale / The considered collection</span>
+          <span>DALE / The considered collection</span>
           <span>Test storefront · Synthetic catalog & shipping · USD</span>
+        </div>
+        <div className="closing-wordmark" aria-hidden="true">
+          <BrandWordmark />
         </div>
         {session && (
           <details className="engineering-details">
@@ -1831,7 +1833,9 @@ export default function Storefront() {
                     </ul>
                     <p>
                       Compatible with:{" "}
-                      {modal.product.compatibleModels.join(", ")}
+                      {modal.product.compatibleModels
+                        .map(deviceLabel)
+                        .join(", ")}
                     </p>
                     <p className="muted">
                       Source: {modal.product.source} ·{" "}
@@ -1973,7 +1977,7 @@ export default function Storefront() {
                     />
                     <div>
                       <strong>{productById(modal.quote.productId).name}</strong>
-                      <p>Confirmed fit: {modal.quote.model}</p>
+                      <p>Confirmed fit: {deviceLabel(modal.quote.model)}</p>
                     </div>
                   </div>
                   {modal.quote.deliveryBy && (
@@ -1991,7 +1995,7 @@ export default function Storefront() {
                   <dl className="quote-summary">
                     <div>
                       <dt>Merchant</dt>
-                      <dd>Dale demo store</dd>
+                      <dd>DALE demo store</dd>
                     </div>
                     <div>
                       <dt>Item</dt>
@@ -2460,7 +2464,7 @@ export default function Storefront() {
                   </form>
                   {modal.result && (
                     <div className="analysis-panel">
-                      <p>{modal.result.message}</p>
+                      <p>{deviceText(modal.result.message)}</p>
                       <small>
                         {modal.result.mode === "fixture"
                           ? "Synthetic label fixture adapter; arbitrary images are not recognized in fixture mode."
@@ -2478,7 +2482,7 @@ export default function Storefront() {
                             );
                           }}
                         >
-                          Use {modal.result.proposedModel}
+                          Use {deviceLabel(modal.result.proposedModel)}
                         </button>
                       )}
                     </div>

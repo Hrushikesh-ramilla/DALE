@@ -1,4 +1,4 @@
-import { models } from "./catalog";
+import { models, deviceLabel } from "./catalog";
 export function canonicalModel(label: string): string | null {
   const normalized = label
     .normalize("NFKC")
@@ -6,9 +6,22 @@ export function canonicalModel(label: string): string | null {
     .trim()
     .replace(/^model\s*:\s*/i, "")
     .replace(/[_-]+/g, " ")
+    .replace(/[()·]/g, " ")
     .replace(/\s+/g, " ")
+    .trim()
     .toLowerCase();
-  return models.find((model) => model.toLowerCase() === normalized) || null;
+  return (
+    models.find(
+      (model) =>
+        model.toLowerCase() === normalized ||
+        deviceLabel(model)
+          .replace(/[_-]+/g, " ")
+          .replace(/[()·]/g, " ")
+          .replace(/\s+/g, " ")
+          .trim()
+          .toLowerCase() === normalized,
+    ) || null
+  );
 }
 export function mentionedModels(text: string) {
   const normalized = text
@@ -17,7 +30,7 @@ export function mentionedModels(text: string) {
     .replace(/[_-]+/g, " ");
   const matches =
     normalized.match(
-      /\batlas\s+14(?:\s+pro)?\b|\borbit\s+13\b|\bslate\s+11\b/gi,
+      /\batlas\s+14(?:\s+pro)?\b|\borbit\s+13\b|\bslate\s+11\b|\busb\s+c\s+laptop\s*\(?\s*(?:65|100|45)w\)?|\bbarrel\s+jack\s+laptop\s*\(?\s*45w\)?/gi,
     ) || [];
   return [
     ...new Set(
