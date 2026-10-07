@@ -1,4 +1,10 @@
 import type { Metadata } from "next";
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
+import "@fontsource/dm-sans/600.css";
+import "@fontsource/cormorant-garamond/400.css";
+import "@fontsource/cormorant-garamond/400-italic.css";
+import { MotionProvider } from "@/components/motion-provider";
 import "./globals.css";
 export const metadata: Metadata = {
   title: "BuyerGuard — shop with confidence",
@@ -12,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MotionProvider>{children}</MotionProvider>
+      </body>
     </html>
   );
 }

@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Editorial design foundation
+
+- Replaced the small green interface with a charcoal/off-white design system, larger responsive type/controls, and monochrome catalog illustrations. Self-hosted DM Sans/Cormorant Garamond fonts avoid a runtime font service.
+- Added pinned Motion for React and a global configuration respecting reduced-motion preferences. Styled the full shopping, approval, group, fulfillment and support surfaces around the existing product policy.
+- Lint, type checking and all 134 existing unit/contract/database tests pass in the working redesign. New collection/detail interactions and browser verification follow as a separate milestone; no live provider completion claim changes.
+
 ## 2026-10-07 — Manual acceptance guide and CI sign-off
 
 - Added complete role/fixture setup and manual steps with expected outcomes for shopping, labels, approvals, groups, warnings, fulfillment, both-party evidence, prepaid returns, refunds, replacements, appeals, recovery and privacy. Distinguished browser tests from clock/concurrency/API/operational checks and genuine provider gates.
