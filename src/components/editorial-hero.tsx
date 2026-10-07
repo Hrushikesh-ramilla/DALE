@@ -1,7 +1,7 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
 import {
-  AnimatePresence,
   motion,
   useReducedMotion,
   useScroll,
@@ -11,7 +11,7 @@ import { ArrowDown, ArrowLeft, ArrowRight } from "lucide-react";
 import { catalog, type Product } from "@/domain/catalog";
 import { formatMoney } from "@/domain/money";
 import { BrandWordmark } from "./brand-wordmark";
-import { ProductArt } from "./product-art";
+import { ProductViewer } from "./product-viewer";
 
 const edit = [catalog[5], catalog[4], catalog[3], catalog[6]];
 export function EditorialHero({
@@ -28,6 +28,34 @@ export function EditorialHero({
   });
   const artY = useTransform(scrollYProgress, [0, 1], [0, -45]);
   const product = edit[index];
+  useEffect(() => {
+    if (reduced || !stage.current) return;
+    const context = gsap.context(() => {
+      gsap.fromTo(
+        ".hero-type h1",
+        { clipPath: "inset(0 0 100% 0)", y: 24 },
+        {
+          clipPath: "inset(0 0 0% 0)",
+          y: 0,
+          duration: 0.85,
+          ease: "power3.out",
+        },
+      );
+      gsap.fromTo(
+        ".hero-type p,.hero-type .editorial-link",
+        { opacity: 0, y: 12 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.08,
+          duration: 0.55,
+          delay: 0.25,
+          ease: "power2.out",
+        },
+      );
+    }, stage);
+    return () => context.revert();
+  }, [reduced]);
   return (
     <section
       className="editorial-hero"
@@ -39,15 +67,11 @@ export function EditorialHero({
         <span>Personal shopping, considered.</span>
       </div>
       <div className="hero-type">
-        <motion.h1
-          initial={false}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <h1>
           A better way
           <br />
           to <em>choose.</em>
-        </motion.h1>
+        </h1>
         <p>
           Everyday technology, chosen for your needs.
           <br />
@@ -61,25 +85,22 @@ export function EditorialHero({
         <div className="stage-orbit" aria-hidden="true" />
         <span className="stage-label">The everyday edit</span>
         <motion.div className="stage-object" style={{ y: reduced ? 0 : artY }}>
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div
-              key={product.id}
-              initial={{ opacity: 0, y: 30, rotate: -5 }}
-              animate={{ opacity: 1, y: 0, rotate: 0 }}
-              exit={
-                reduced ? { opacity: 0 } : { opacity: 0, y: -20, rotate: 4 }
-              }
-              transition={{ duration: 0.55 }}
-            >
-              <ProductArt product={product} />
-            </motion.div>
-          </AnimatePresence>
+          <motion.div
+            initial={false}
+            animate={{ opacity: 1, y: 0, rotate: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.55 }}
+          >
+            <ProductViewer product={product} />
+          </motion.div>
         </motion.div>
         <div className="stage-caption">
           <div>
             <span className="stage-number">0{index + 1} / 04</span>
             <strong>{product.name}</strong>
-            <small>{formatMoney(product.price)} · Catalog illustration</small>
+            <small>
+              {formatMoney(product.price)} · Original product illustration
+            </small>
           </div>
           <button
             className="round-link"

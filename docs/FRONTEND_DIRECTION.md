@@ -2,6 +2,8 @@
 
 Prepared 7 October 2026. Status: proposed design and implementation sequence, with an interactive visual study. Application source remains 5a58bc3; this document does not claim new runtime functionality or deployment. The owner requested the front-end first, followed by demo access, voice and other experience additions.
 
+Subsequent direction: the owner requested implementation of the complete experience and a stronger boxy 3D glass treatment. Controls now target beveled frosted surfaces, directional edge lighting, tactile press depth and muted teal layers. Functional reading surfaces retain opaque cores. Awwwards references include [Noomo's glass portal](https://www.awwwards.com/inspiration/3d-portal-noomo-valentime) and [DIGITRON product navigation](https://www.awwwards.com/inspiration/easy-search-and-navigation-digitron-3d-immersive-site). Implementation and executed evidence are tracked in CHANGELOG and VALIDATION; the original visual study remains a planning reference.
+
 ## Reference and translation
 
 Reviewed the owner's [live portfolio](https://www.hrushikeshramilla.in/) and the permitted [final-perfect-state branch](https://github.com/Hrushikesh-ramilla/porto/tree/final-perfect-state), commit bbacc0681dabcb3c4c233f43c7bc76e5974b8f7a. Read the home composition, page transitions, project stage, smooth-scroll provider, pointer physics and mobile-motion guards.

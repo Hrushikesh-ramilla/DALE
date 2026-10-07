@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Glass surfaces and genuine product geometry
+
+- Implemented a muted teal glass material across navigation, buttons, catalog, dialogs and service surfaces: beveled highlights, translucent edges, contact depth and an explicit press state. The closing footer and original DALE wordmark now sit on a broad desaturated teal composition. Reading surfaces retain opaque cores and keyboard focus remains visible.
+- Added original volumetric headphones, SSD, dock, mouse and charger geometry with React Three Fiber/Three.js. The featured viewer lazy-loads, renders on demand, caps pixel density, suspends offscreen/hidden-tab work and exposes rotation/reset controls. Context loss and unavailable rendering preserve illustration/product-detail access. GSAP coordinates the opening typography without sharing animated properties with Motion.
+- Six initial browser checks passed for routes, discovery, approval guards, 3D rotation/context loss and four-width glass/footer layouts. The seventh exposed a reduced-motion hydration mismatch; fixed it and reran the affected four-width dialog/hydration journey successfully. Initial lint/typecheck passed. Full production regression follows the remaining experience milestones; software-rendered browser checks are not a physical-phone performance claim.
+
 ## 2026-10-07 — Portfolio-inspired front-end direction
 
 - Reviewed the owner's portfolio and final-perfect-state source at bbacc0681dabcb3c4c233f43c7bc76e5974b8f7a. Defined DALE's atmospheric product opening, prominent shopping brief, spacious catalog, complete service surfaces and desaturated teal closing composition in docs/FRONTEND_DIRECTION.md.
