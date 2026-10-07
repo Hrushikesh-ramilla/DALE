@@ -4,6 +4,8 @@ Prepared: 5 October 2026. Updated: 7 October 2026. Status: the core application 
 
 ## 1. Product decision
 
+7 October experience revision requested: add a desaturated teal closing footer, composed motion, genuine 3D product presentation, one-click engineer scenarios and voice shopping/support. [docs/EXPERIENCE_PLAN.md](docs/EXPERIENCE_PLAN.md) records the proposed implementation order, scoped fixture access, no-spend voice gate and milestone acceptance checks. This is a plan; these additions are not implemented or verified yet. Existing customer-priority and genuine-provider gates remain unchanged.
+
 7 October revised design milestone: the owner selected uppercase **DALE** as a custom wordmark alone, with concrete unbranded products and clear demo device profiles. The product-stage redesign, asymmetric collections, all-category discovery, pagination and profile aliases are implemented. Lint/typecheck, 135 tests, 200 workflow traces, 107 deterministic scenarios and 300 frozen synthetic records pass; final browser/release evidence is recorded in docs/VALIDATION.md. The previous D-monogram identity below is superseded. EC2 deployment remains pending while SSH times out; public application is still 5b393c0.
 
 7 October branding milestone: the owner selected the single-word name **Dale**. Customer-facing text, checkout descriptions, route metadata, product illustration engravings, the public API title and an original serif D wordmark/icon now use that identity. Product policy and feature IDs are retained. Lint/typecheck, all 134 automated checks and all 14 development browser journeys pass; four editorial journeys also pass after the final illustration update. Public deployment remains pending as described below.
