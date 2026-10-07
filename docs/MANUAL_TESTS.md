@@ -1,5 +1,24 @@
 # Manual acceptance tests
 
+## Visible DALE task workspace
+
+Use the revised local application at http://localhost:3000/ for these steps. The public EC2 build remains older until deployment access is restored.
+
+| Step                                                                                                   | Expected result                                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Open `/` in a fresh browser and select **Find a charger**, then **Send task**.                         | DALE opens your private simulated workspace without a login form. It returns sample 65W options within $40, states that no purchase was made, and lists the actions and source identifiers.            |
+| Reload the page.                                                                                       | Your task and DALE's response remain. Another shopper or seller cannot read your task history.                                                                                                         |
+| Select **Review agent option …**.                                                                      | A protected quote opens. Merely running or reviewing the task creates no order or charge. Approval is a separate action.                                                                               |
+| Close the quote and edit **Maximum budget, USD**.                                                      | The old agent option buttons become disabled. Send a new task before reviewing them again.                                                                                                             |
+| Send `Find a charger for MacBook under $40`.                                                           | DALE says real-product lookup is not connected. It does not invent compatibility or modify the previous brief.                                                                                         |
+| Send `Approve payment now`.                                                                            | DALE directs you to protected review controls. No financial action occurs.                                                                                                                             |
+| From `/demo`, launch **Return a delivered item**. Send **Help with a return** from the task workspace. | Support opens with a draft. Choose an order for the draft, open **Get help / return**, review the prefilled damaged/refund request, then explicitly submit. The draft alone creates no case or refund. |
+| Send **Track my order**.                                                                               | Your order workspace opens; the task does not change order or payment status.                                                                                                                          |
+| Run several tasks and expand **Earlier agent tasks**.                                                  | History is private and retains at most twelve tasks for this shopper.                                                                                                                                  |
+| Open **Talk to DALE**.                                                                                 | The existing voice workflow remains available. The fixture transcript path is testable without microphone recognition or provider traffic; live Gemini remains disabled under the no-spend rule.       |
+
+Typed matching currently supports one product type and an explicit sample profile: **USB-C Laptop (65W/100W/45W)** or **Barrel-jack Laptop (45W)**. Requests outside the supported grammar need clarification. These steps test workflow behavior; sample catalog records do not establish real manufacturer specifications or live offers.
+
 Prepared 7 October 2026. Hosted application: https://16.4.25.181.sslip.io.
 
 The current DALE redesign is available locally at http://localhost:3000/shop. The steps below use its unbranded product/profile names. Until the redesign is deployed, the hosted build uses the earlier names: Atlas 14/Atlas 14 Pro/Orbit 13/Slate 11 correspond to USB-C Laptop (65W/100W/45W)/Barrel-jack Laptop (45W). Label fixture images retain those original internal identifiers; confirmation displays the new profile names.

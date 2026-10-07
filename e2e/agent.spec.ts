@@ -18,7 +18,7 @@ test("a failed guest task retries in the same owned workspace", async ({
     .getByRole("button", { name: "Find a charger", exact: true })
     .click();
   await page.getByRole("button", { name: "Send task", exact: true }).click();
-  await expect(page.getByRole("alert")).toContainText(
+  await expect(page.locator("#agent").getByRole("alert")).toContainText(
     "Task temporarily unavailable",
   );
   const initial = await (await page.request.get("/api/session")).json();

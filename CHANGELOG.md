@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Put DALE's task workspace first
+
+- Added a visible task composer, persisted private responses, completed-action receipts, source-labelled sample options and bounded history. The sample collection now follows the agent workspace. Guest task entry starts an owned fixture demo without an account form; failed task retries retain that workspace. Voice entry remains within the task workspace with readable labels and captions.
+- Added buyer-only `/api/agent` with same-origin, schema, rate/lifetime and session-identity guards. It prepares explicit sample-profile matching, own-order navigation and support drafts. Typed tasks cannot approve a purchase or remedy; saved brief versions disable stale agent options. Real-product lookup is clearly unavailable rather than silently mapping arbitrary devices to a default profile. OpenAPI and manual acceptance steps document the limits.
+- Lint/typecheck, optimized build and 159 unit/contract/database tests pass. All 29 packaged-production browser journeys are covered by 28 passes in the full run plus the focused pass after correcting an ambiguous retry-test locator; CI for that correction is pending. The release archive and locally running build are source-aligned at d40c93a. Public EC2 deployment and genuine provider/physical/independent acceptance gates remain open; no provider spend was enabled.
+
 ## 2026-10-07 — Restore monochrome product presentation
 
 - Replaced the rejected page-wide teal/glass treatment with black navigation, a light centered product showcase, clean sans-serif headings, flat pill controls, neutral product materials and understated transitions. Removed the broad glass stylesheet rather than layering more tinted treatments. The existing DALE wordmark is retained.
