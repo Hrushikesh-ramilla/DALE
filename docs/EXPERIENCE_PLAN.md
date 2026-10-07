@@ -10,6 +10,8 @@ Current baseline: application source 5a58bc3 passes 135 automated tests, 15 brow
 
 ## Visual direction
 
+The owner's latest instruction prioritizes the front-end before engineer entry, voice and other functional additions. [FRONTEND_DIRECTION.md](FRONTEND_DIRECTION.md) records the proposed storefront, reference mapping, page coverage and visual verification gates. The owner supplied [their portfolio](https://www.hrushikeshramilla.in/) and [its final-perfect-state source](https://github.com/Hrushikesh-ramilla/porto/tree/final-perfect-state) as permitted inspiration. Borrow the oversized editorial typography, atmospheric depth and staged reveals; keep DALE's products and shopper decisions central.
+
 Use the owner's reference to The Ring's desaturated blue-green atmosphere as color inspiration. The cinematographer is [Bojan Bazelli, as credited by Amblin](https://amblin.com/movie/the-ring/). The values below are original design choices, not a sampled or officially documented film palette.
 
 | Role             | Color     | Placement                                  |
@@ -24,7 +26,30 @@ The final footer becomes a full-width teal material surface, with a large DALE w
 
 ## Milestones and acceptance
 
-### 1. One-click engineer demo
+### 1. Editorial storefront, teal footer and composed motion
+
+- Replace disconnected fade/rotate effects with a shared motion vocabulary: a paced headline reveal, a product-camera transition, a brief result transition and a closing wordmark/light reveal.
+- Coordinate the order of these actions; preserve immediate interaction feedback. Product names, prices and actions must remain associated with the selected product during transitions.
+- Retain ordinary scrolling. Respect reduced motion, keyboard focus, touch input and interruption/repeated selection. Avoid continuous decorative movement while a shopper reads or approves terms.
+
+Acceptance: visually inspect desktop/tablet/phone captures, including the full footer. Check contrast, focus and readable wordmark/links. Browser tests cover reduced motion, interrupted product changes, dialog focus, no horizontal overflow at 320/390/820/1440px and no hydration errors. Record actual timings; do not equate a screenshot with animation quality.
+
+### 2. Genuine 3D product stage
+
+- Use Three.js through React Three Fiber for a real volumetric featured-product viewer. Start with original headphone and portable-SSD geometry/materials, then add dock and mouse. These are illustrative unbranded models, not verified physical dimensions.
+- Create restrained material lighting, soft contact shadows and controlled camera movement. Pointer/touch drag and accessible rotation/reset controls reveal the object; a scripted camera move accompanies product selection.
+- Keep the canvas behind normal HTML product facts and controls. Lazy-load it, use one active viewer, cap pixel density, pause offscreen/hidden-tab rendering and render on demand when idle. [React Three Fiber documents this approach](https://r3f.docs.pmnd.rs/advanced/scaling-performance).
+- Keep the existing SVG illustration as a fallback for unavailable WebGL, context loss or loading failure. Reduced motion presents a stable camera and explicit controls.
+
+Acceptance: test successful canvas initialization, visible rendered geometry, selection/camera controls and the correct associated catalog facts. Test renderer failure/context loss and fallback without losing purchase access. Capture deterministic camera states for visual inspection. Measure frame timings on documented desktop and phone hardware and verify idle/offscreen behavior; synthetic rendering alone is not a physical-device performance claim.
+
+### 3. Complete front-end surfaces
+
+Apply the new visual system to catalog filters/pagination, product details and comparisons, purchase approval, groups, orders, support and the evidence/return journey. Retain existing working handlers, state, authorization and customer policy. The shopping brief remains prominent; visual presentation must expose device fit, the recommendation reason, source/sponsorship, total cost and explicit confirmation at the relevant decision.
+
+Acceptance: execute the existing 15 browser journeys against the revised production build, plus new stage/fallback/motion cases. Inspect each route and key dialog at 320/390/820/1440px; verify keyboard focus, touch targets, long labels, empty/loading/error states and no horizontal overflow. Accessibility and product association remain release gates. This milestone changes the presentation of existing workflows; one-click demo and voice follow separately.
+
+### 4. One-click engineer demo
 
 - Add a visible Try the demo entry and `/demo` launch page. Start an isolated fixture shopper session without asking for an account or access code. Normal protected operations keep their existing authorization.
 - Offer Shopping, Group purchase, Delivered return, Identifier conflict, Seller delay, Failed/interrupted refund, Canceled order and Late delivery scenarios, reusing existing scenario services.
@@ -34,24 +59,7 @@ The final footer becomes a full-width teal material surface, with a large DALE w
 
 Acceptance: a new visitor completes shopping-to-simulated-payment and return-to-simulated-refund without finding credentials. Browser tests cover launch, all scenario entries, persona transitions, reset and reload. API tests reject cross-workspace/ordinary-account role escalation and confirm demo workspaces cannot call payment or AI providers. Existing approval/privacy tests remain required. A guided walkthrough must exercise real application state, not display canned success badges.
 
-### 2. Teal footer and composed motion
-
-- Replace disconnected fade/rotate effects with a shared motion vocabulary: a paced headline reveal, a product-camera transition, a brief result transition and a closing wordmark/light reveal.
-- Coordinate the order of these actions; preserve immediate interaction feedback. Product names, prices and actions must remain associated with the selected product during transitions.
-- Retain ordinary scrolling. Respect reduced motion, keyboard focus, touch input and interruption/repeated selection. Avoid continuous decorative movement while a shopper reads or approves terms.
-
-Acceptance: visually inspect desktop/tablet/phone captures, including the full footer. Check contrast, focus and readable wordmark/links. Browser tests cover reduced motion, interrupted product changes, dialog focus, no horizontal overflow at 320/390/820/1440px and no hydration errors. Record actual timings; do not equate a screenshot with animation quality.
-
-### 3. Genuine 3D product stage
-
-- Use Three.js through React Three Fiber for a real volumetric featured-product viewer. Start with original headphone and portable-SSD geometry/materials, then add dock and mouse. These are illustrative unbranded models, not verified physical dimensions.
-- Create restrained material lighting, soft contact shadows and controlled camera movement. Pointer/touch drag and accessible rotation/reset controls reveal the object; a scripted camera move accompanies product selection.
-- Keep the canvas behind normal HTML product facts and controls. Lazy-load it, use one active viewer, cap pixel density, pause offscreen/hidden-tab rendering and render on demand when idle. [React Three Fiber documents this approach](https://r3f.docs.pmnd.rs/advanced/scaling-performance).
-- Keep the existing SVG illustration as a fallback for unavailable WebGL, context loss or loading failure. Reduced motion presents a stable camera and explicit controls.
-
-Acceptance: test successful canvas initialization, visible rendered geometry, selection/camera controls and the correct associated catalog facts. Test renderer failure/context loss and fallback without losing purchase access. Capture deterministic camera states for visual inspection. Measure frame timings on documented desktop and phone hardware and verify idle/offscreen behavior; synthetic rendering alone is not a physical-device performance claim.
-
-### 4. Voice shopping and support
+### 5. Voice shopping and support
 
 Add a visible Talk to DALE control near the shopping brief, plus a consistent entry from support. Example: “Find a 65W USB-C charger under forty dollars.” Show Listening, Processing, Speaking, Stopped and Unavailable states, a readable transcript and the understood device/budget/category. Allow corrections and short follow-up questions. Stop/interruption must halt capture and playback.
 
@@ -65,7 +73,7 @@ For browser-to-Gemini audio, issue short-lived constrained tokens from an authen
 
 Acceptance: fixture/native-transport tests cover speech chunks, transcript handling, intent validation, silence, ambiguity, stop/interruption, permission denial, disconnect/reconnect, quota/5xx errors and token expiry. Browser tests use owned synthetic audio and exercise transcript-to-matched-product-to-explicit-review. Verify microphone tracks/socket/playback close on stop, navigation and logout, and no model-selected amount/item can bypass approval. A real microphone conversation and real native Live session remain a separate gate, executable only with confirmed free quota.
 
-### 5. Complete regression and deployable release
+### 6. Complete regression and deployable release
 
 Run relevant unit/contract tests, all existing browser journeys plus the new demo/voice/3D cases, production build, packaged-production regression and Linux app/worker/PostgreSQL CI. Repeat domain evaluations when intent, catalog or policy logic changes. Record visual/performance observations separately from functional assertions.
 
@@ -73,4 +81,4 @@ Prepare a source-aligned release with credentials/private data excluded. Deploy 
 
 ## Delivery order and completion rule
 
-Implement engineer entry first, then teal/motion, genuine 3D, voice, and final release. Each milestone gets its own meaningful checks, changelog entry and commit. Complete the testable parts of every milestone even when a live provider or EC2 gate is blocked, and record that gate explicitly. No new paid resource, supercomputer, billing enrollment or independent marketplace integration is required by this plan.
+Implement the editorial storefront/motion first, then genuine 3D and the remaining front-end surfaces. Engineer entry and voice follow the verified front-end, then the final release. Each milestone gets its own meaningful checks, changelog entry and commit. Complete the testable parts of every milestone even when a live provider or EC2 gate is blocked, and record that gate explicitly. No new paid resource, supercomputer, billing enrollment or independent marketplace integration is required by this plan.

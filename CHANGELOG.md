@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Portfolio-inspired front-end direction
+
+- Reviewed the owner's portfolio and final-perfect-state source at bbacc0681dabcb3c4c233f43c7bc76e5974b8f7a. Defined DALE's atmospheric product opening, prominent shopping brief, spacious catalog, complete service surfaces and desaturated teal closing composition in docs/FRONTEND_DIRECTION.md.
+- Reordered EXPERIENCE_PLAN at the owner's request: editorial front-end, genuine 3D and complete application presentation first; engineer demo and voice follow. Kept approval, customer policy, evidence and provider acceptance requirements.
+- Created a separate interactive visual study for composition and product selection. Browser review at 1024px and 320px checked featured product/caption changes, collection filtering, detail expansion, brief feedback and customer-promise disclosure. The 320px frame had equal document/client widths; no console errors were observed. The study uses original SVG illustrations; it does not claim genuine 3D or working application/provider integration. Documentation and concept only; application source and deployment are unchanged.
+
 ## 2026-10-07 — Teal, 3D, engineer demo and voice plan
 
 - Added docs/EXPERIENCE_PLAN.md after reviewing the current session/scenario implementation and official Gemini Live pricing/token documentation. Planned a desaturated teal closing section, coordinated motion, genuine 3D product stage, one-click isolated engineer scenarios and voice intents through existing approval guards.
