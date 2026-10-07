@@ -276,3 +276,5 @@ This multi-party journey uses a normal shopper workspace so configured operator 
 The extended journey also exposed that order navigation hid the agent's result and composer. Order pages now retain the buyer agent and voice controls, so recorded order inspection and follow-up support remain usable after navigation.
 
 CI browser acceptance now uses the optimized standalone application built by its quality job, with browser assets copied explicitly and failure reports retained. The featured-budget test waits for the interactive task control and visible product dialog before asserting purchase controls; it no longer treats an absent dialog as successful verification.
+
+Order pages use a compact Ask DALE entry that expands for recorded order-inspection results, preserving the visible order heading during ordinary navigation. Sourced checkout asserts the order card independently of the retained comparison, and verifies the agent can be opened there. Featured readiness uses an enabled example button; an empty task's Send control correctly remains disabled.

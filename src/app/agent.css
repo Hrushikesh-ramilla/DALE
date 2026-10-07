@@ -1,3 +1,23 @@
+.order-agent {
+  margin-block: 20px;
+  border: 1px solid #45423d;
+  background: #141414;
+  color: #ebe6dc;
+}
+.order-agent > summary {
+  padding: 18px 24px;
+  cursor: pointer;
+  list-style-position: inside;
+}
+.order-agent > summary span {
+  display: block;
+  margin-top: 6px;
+  color: #b0aba3;
+  font-size: 13px;
+}
+.order-agent[open] > summary {
+  border-bottom: 1px solid #45423d;
+}
 .agent-workspace {
   --agent-console: #0e0e0e;
   --agent-raised: #1c1c1c;

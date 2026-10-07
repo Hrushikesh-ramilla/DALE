@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import {
@@ -88,6 +88,25 @@ async function api<T>(
   const data = await response.json();
   if (!response.ok) throw new Error(data.error || "Please try again.");
   return data;
+}
+function AgentSurface({
+  orderPage,
+  inspection,
+  children,
+}: {
+  orderPage: boolean;
+  inspection: boolean;
+  children: ReactNode;
+}) {
+  if (!orderPage) return <>{children}</>;
+  return (
+    <details className="order-agent" open={inspection}>
+      <summary>
+        Ask DALE about your orders <span>Tracking, returns and voice</span>
+      </summary>
+      {children}
+    </details>
+  );
 }
 export default function Storefront() {
   const pathname = usePathname();
@@ -478,50 +497,57 @@ export default function Storefront() {
         )}
         {isBuyer &&
           (tab === "discover" || tab === "support" || tab === "orders") && (
-            <AgentWorkspace
-              key={`${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
-              session={session}
-              restoring={restoring || busy}
-              model={model}
-              budget={Math.max(
-                1,
-                Math.min(100000, Math.round(Number(budget) * 100) || 8000),
-              )}
-              briefDirty={briefDirty}
-              onResult={applyAgent}
-              onReview={(product) => {
-                const latest = session?.agentRuns.at(-1);
-                if (
-                  !latest?.briefVersion ||
-                  latest.briefVersion !== session?.brief?.version ||
-                  briefDirty
-                ) {
-                  setError(
-                    "Your brief changed. Send a new agent task before reviewing this option.",
-                  );
-                  return;
+            <AgentSurface
+              orderPage={tab === "orders"}
+              inspection={session?.agentRuns.at(-1)?.orders !== undefined}
+            >
+              <AgentWorkspace
+                key={`${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
+                session={session}
+                restoring={restoring || busy}
+                model={model}
+                budget={Math.max(
+                  1,
+                  Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                )}
+                briefDirty={briefDirty}
+                onResult={applyAgent}
+                onReview={(product) => {
+                  const latest = session?.agentRuns.at(-1);
+                  if (
+                    !latest?.briefVersion ||
+                    latest.briefVersion !== session?.brief?.version ||
+                    briefDirty
+                  ) {
+                    setError(
+                      "Your brief changed. Send a new agent task before reviewing this option.",
+                    );
+                    return;
+                  }
+                  void choose(product);
+                }}
+                voice={
+                  tab === "discover" ||
+                  tab === "support" ||
+                  tab === "orders" ? (
+                    <VoiceCompanion
+                      pending={restoring || busy}
+                      key={`${pathname}:${session?.actor.userId || "visitor"}`}
+                      model={model}
+                      budget={Math.max(
+                        1,
+                        Math.min(
+                          100000,
+                          Math.round(Number(budget) * 100) || 8000,
+                        ),
+                      )}
+                      actorId={session?.actor.userId}
+                      onResult={applyVoice}
+                    />
+                  ) : null
                 }
-                void choose(product);
-              }}
-              voice={
-                tab === "discover" || tab === "support" || tab === "orders" ? (
-                  <VoiceCompanion
-                    pending={restoring || busy}
-                    key={`${pathname}:${session?.actor.userId || "visitor"}`}
-                    model={model}
-                    budget={Math.max(
-                      1,
-                      Math.min(
-                        100000,
-                        Math.round(Number(budget) * 100) || 8000,
-                      ),
-                    )}
-                    actorId={session?.actor.userId}
-                    onResult={applyVoice}
-                  />
-                ) : null
-              }
-            />
+              />
+            </AgentSurface>
           )}
         {tab === "discover" && (
           <>

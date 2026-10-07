@@ -41,13 +41,17 @@ test("real product research leads to sourced comparison and explicit protected c
     .click();
   await expect(page).toHaveURL(/\/orders$/);
   await expect(
-    page.getByRole("heading", { name: "Apple 40W Dynamic Power Adapter" }),
+    page
+      .locator(".order-card")
+      .getByRole("heading", { name: "Apple 40W Dynamic Power Adapter" }),
   ).toBeVisible();
   const paid = await (await page.request.get("/api/session")).json();
   expect(paid.orders[0]).toMatchObject({
     status: "paid",
     quote: { productId: "R001", amount: 3900, provider: "fixture" },
   });
+  await page.locator(".order-agent > summary").click();
+  await expect(result).toBeVisible();
 });
 test("conversation clarifies exact size and complete budget, then protects against a seller scam", async ({
   page,
