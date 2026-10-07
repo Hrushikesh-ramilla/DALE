@@ -476,49 +476,53 @@ export default function Storefront() {
             {notice}
           </div>
         )}
-        {isBuyer && (tab === "discover" || tab === "support") && (
-          <AgentWorkspace
-            key={`${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
-            session={session}
-            restoring={restoring || busy}
-            model={model}
-            budget={Math.max(
-              1,
-              Math.min(100000, Math.round(Number(budget) * 100) || 8000),
-            )}
-            briefDirty={briefDirty}
-            onResult={applyAgent}
-            onReview={(product) => {
-              const latest = session?.agentRuns.at(-1);
-              if (
-                !latest?.briefVersion ||
-                latest.briefVersion !== session?.brief?.version ||
-                briefDirty
-              ) {
-                setError(
-                  "Your brief changed. Send a new agent task before reviewing this option.",
-                );
-                return;
+        {isBuyer &&
+          (tab === "discover" || tab === "support" || tab === "orders") && (
+            <AgentWorkspace
+              key={`${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
+              session={session}
+              restoring={restoring || busy}
+              model={model}
+              budget={Math.max(
+                1,
+                Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+              )}
+              briefDirty={briefDirty}
+              onResult={applyAgent}
+              onReview={(product) => {
+                const latest = session?.agentRuns.at(-1);
+                if (
+                  !latest?.briefVersion ||
+                  latest.briefVersion !== session?.brief?.version ||
+                  briefDirty
+                ) {
+                  setError(
+                    "Your brief changed. Send a new agent task before reviewing this option.",
+                  );
+                  return;
+                }
+                void choose(product);
+              }}
+              voice={
+                tab === "discover" || tab === "support" || tab === "orders" ? (
+                  <VoiceCompanion
+                    pending={restoring || busy}
+                    key={`${pathname}:${session?.actor.userId || "visitor"}`}
+                    model={model}
+                    budget={Math.max(
+                      1,
+                      Math.min(
+                        100000,
+                        Math.round(Number(budget) * 100) || 8000,
+                      ),
+                    )}
+                    actorId={session?.actor.userId}
+                    onResult={applyVoice}
+                  />
+                ) : null
               }
-              void choose(product);
-            }}
-            voice={
-              tab === "discover" || tab === "support" ? (
-                <VoiceCompanion
-                  pending={restoring || busy}
-                  key={`${pathname}:${session?.actor.userId || "visitor"}`}
-                  model={model}
-                  budget={Math.max(
-                    1,
-                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
-                  )}
-                  actorId={session?.actor.userId}
-                  onResult={applyVoice}
-                />
-              ) : null
-            }
-          />
-        )}
+            />
+          )}
         {tab === "discover" && (
           <>
             <EditorialHero

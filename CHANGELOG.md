@@ -272,3 +272,5 @@ The delivery-to-return browser journey now waits for the seller's recorded shipm
 The complete evidence/refund journey now starts with the sourced agent's real-device recommendation. It checks the shopper's recorded delivery through the agent, prepares an order-specific damaged-item draft without submitting it, then exercises explicit submission, both-party evidence and an authorized fixture refund.
 
 This multi-party journey uses a normal shopper workspace so configured operator access applies. Guest engineering workspaces intentionally require their owner's persona selector instead; the guest sourced-checkout journey verifies that separate entry path.
+
+The extended journey also exposed that order navigation hid the agent's result and composer. Order pages now retain the buyer agent and voice controls, so recorded order inspection and follow-up support remain usable after navigation.
