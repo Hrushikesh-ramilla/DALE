@@ -88,7 +88,7 @@ test("real device and financial requests show limits without changing the brief"
     .fill("Find a charger for MacBook under $40");
   await page.getByRole("button", { name: "Send task", exact: true }).click();
   await expect(page.getByLabel("DALE task result")).toContainText(
-    "Real-product lookup is not connected",
+    "That real model is not verified",
   );
   await page.getByLabel("Your task for DALE").fill("Approve payment now");
   await page.getByRole("button", { name: "Send task", exact: true }).click();

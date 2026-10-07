@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 import {
   catalog,
-  models,
+  knownModels as models,
   deviceLabel,
   deviceText,
   productById,
@@ -220,6 +220,7 @@ export default function Storefront() {
   };
   const applyVoice = useCallback(
     (data: VoiceResult) => {
+      if (data.snapshot) restoreSession(data.snapshot);
       if (data.intent.kind === "shopping" && data.result && data.snapshot) {
         restoreSession(data.snapshot);
         setProducts(data.result.products);
@@ -260,7 +261,11 @@ export default function Storefront() {
         setSummary(data.result.analysis.summary);
         setCatalogQuery("");
         if (tab !== "discover") setTab("discover");
-      } else applyVoice(data);
+      } else if (
+        data.intent.kind === "navigate" ||
+        data.intent.kind === "support_draft"
+      )
+        applyVoice(data);
     },
     [restoreSession, applyVoice, setTab, tab],
   );
@@ -1811,7 +1816,10 @@ export default function Storefront() {
         </footer>
         <div className="footer-bottom">
           <span>DALE / The considered collection</span>
-          <span>Test storefront · Synthetic catalog & shipping · USD</span>
+          <span>
+            Test storefront · Sourced products + sample catalog · Simulated
+            shipping · USD
+          </span>
         </div>
         <div className="closing-wordmark" aria-hidden="true">
           <BrandWordmark />
@@ -2119,6 +2127,16 @@ export default function Storefront() {
                       <p>Confirmed fit: {deviceLabel(modal.quote.model)}</p>
                     </div>
                   </div>
+                  {modal.quote.productId.startsWith("R") && (
+                    <p className="fixture-note">
+                      Real manufacturer product identity; simulated DALE
+                      merchant offer. This does not order from Apple or promise
+                      physical fulfillment.{" "}
+                      {modal.quote.productId === "R003"
+                        ? "Adapter and 60W charging cable included."
+                        : "Adapter only; uses the charging cable confirmed in your brief."}
+                    </p>
+                  )}
                   {modal.quote.deliveryBy && (
                     <p>
                       Delivery promise:{" "}

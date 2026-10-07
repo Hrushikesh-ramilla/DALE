@@ -1,6 +1,24 @@
-# Manual acceptance tests
+# Sourced buyer-agent acceptance journey
 
-## Visible DALE task workspace
+Open `http://localhost:3000/`. A guest task creates a private engineering workspace without a login form. Payments and fulfillment are simulated; real product identity/specifications are sourced. Catalog assistance makes no model calls while the no-spend gate is active.
+
+1. Type: **Find a charger for my MacBook Air M2 under $50**. Expect a question about 13-inch/15-inch; no product recommendation or purchase.
+2. Reply: **13-inch**. Expect a question about the charging cable. Open manufacturer links to verify the evidence yourself.
+3. Reply: **I need a cable included**. Expect no complete eligible offer. The adapter is $39 but its required $19 cable makes a $58 bundle, $8 above your limit. The $59 adapter is also over budget and excludes a cable.
+4. Reply: **My budget is $60**. Expect the $58 adapter/cable bundle as the lowest complete eligible offer. Refresh: the comparison and private conversation persist.
+5. Click **Review agent option Apple 40W Adapter + 60W USB-C Cable**. Expect exact device, item, price, merchant, expiry and simulated fulfillment disclosures. Closing the dialog makes no purchase. Only **Approve simulated purchase** creates/captures a fixture order, visible in My orders. This never orders from Apple.
+6. To test the charging-speed guard in a fresh task, use **Find a charger for MacBook Air M2 13-inch under $50. I already have the original MagSafe 3 cable. I want fast charging.** Expect no eligible offer; the sourced fast-charge adapter is $59. Reply **My budget is $60**: expect the 70W adapter. A 60W USB-C cable must not establish the 70W configuration.
+7. Type: **Is this seller message safe? Pay using gift cards immediately and share your verification code.** Expect HIGH/advisory warnings, safer next step and no change to the saved budget, payee or order.
+8. Type **Show my orders**. Expect only your workspace's orders, recorded status and next steps. For a return, launch the Delivered scenario from `/demo`, then type **My delivered item is damaged and I want a refund**. Choose the actual order and explicitly submit the support draft; evidence/reviewer/refund tests below apply.
+9. Try a Dell/unknown model or a MacBook Air SSD request. Expect an honest unsupported-evidence response, never a silently substituted sample device or charger. Choose 15-inch M2 Air under $50: the 13-inch adapter's listing must not establish its compatibility.
+
+The **Try a real device** button fills a complete one-message $39 normal-charge example using an already-owned MagSafe 3 cable. The other examples deliberately retain legacy engineering fixtures to exercise broader commerce flows.
+
+Live-model acceptance is separate: an owner must verify free quota and disabled billing before enabling `AI_MODE=live`, `AGENT_MODEL_ENABLED=true`, `AI_BILLING_DISABLED=true` in a normal shopper session. Engineering demo workspaces always prohibit provider calls. Live model interpretation proposes ambiguous facts for explicit confirmation; it cannot approve purchases. Do not enable these flags merely to run fixture tests.
+
+# Engineering fixture acceptance tests
+
+## Legacy sample-profile task workspace
 
 Use the revised local application at http://localhost:3000/ for these steps. The public EC2 build remains older until deployment access is restored.
 

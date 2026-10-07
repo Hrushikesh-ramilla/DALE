@@ -1,7 +1,13 @@
 "use client";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ArrowRight, Check, LoaderCircle } from "lucide-react";
-import { catalog, deviceText, type Product } from "@/domain/catalog";
+import {
+  catalog,
+  deviceText,
+  productById,
+  type Product,
+} from "@/domain/catalog";
+import { realProducts } from "@/domain/research";
 import { formatMoney } from "@/domain/money";
 import type { AgentRun } from "@/domain/agent";
 import type { runAgent } from "@/server/agent";
@@ -11,8 +17,16 @@ export type AgentResult = Awaited<ReturnType<typeof runAgent>>;
 type Session = Awaited<ReturnType<typeof snapshot>>;
 const samples = [
   {
+    label: "Try a real device",
+    task: "Find a charger for my MacBook Air M2 13-inch under $50. I already have the original MagSafe 3 cable. Normal charging is fine.",
+  },
+  {
     label: "Find a charger",
     task: "Find a 65W charger under $40 for USB-C Laptop (65W)",
+  },
+  {
+    label: "Check a seller message",
+    task: "Is this seller message safe? Pay using gift cards immediately and share your verification code to release the order.",
   },
   { label: "Track my order", task: "Show my orders" },
   {
@@ -140,10 +154,11 @@ export function AgentWorkspace({
       </div>
       <div className="agent-console">
         <div className="agent-capability-note">
-          <strong>Demo agent</strong>
+          <strong>Buyer advocate</strong>
           <span>
-            Sample catalog. Real-product research is not connected. A guest task
-            opens a private simulated workspace.
+            Manufacturer-backed M2 MacBook Air charger comparisons, message
+            safety and order support. Private demo checkout; model planning
+            stays off until free quota and disabled billing are confirmed.
           </span>
         </div>
         <form
@@ -209,8 +224,146 @@ export function AgentWorkspace({
               <strong>DALE</strong>
               <span>{status[latest.status]}</span>
             </div>
+            <small className="agent-mode">
+              {latest.mode === "model"
+                ? "Gemini structured planning · validated tool results"
+                : latest.mode === "unavailable"
+                  ? "Model unavailable · verified catalog and safety rules"
+                  : "Catalog assistance · no model calls or AI spend"}
+            </small>
             <p className="agent-user-task">You: {latest.task}</p>
             <p>{deviceText(latest.reply)}</p>
+            {latest.proposedTask && (
+              <button
+                className="button secondary"
+                disabled={pending || restoring}
+                onClick={() => setTask(latest.proposedTask!)}
+              >
+                Use this interpretation in my next task <ArrowRight size={14} />
+              </button>
+            )}
+            {latest.research && (
+              <div className="agent-research" aria-label="Sourced comparison">
+                <div className="agent-constraints">
+                  <span>{latest.research.need.model}</span>
+                  <span>
+                    Maximum {formatMoney(latest.research.need.budget)}
+                  </span>
+                  <span>
+                    {latest.research.need.fastCharging
+                      ? "Fast charging required"
+                      : "Normal charging"}
+                  </span>
+                  <span>
+                    Evidence{" "}
+                    {latest.research.freshness === "current"
+                      ? "checked 7 Oct 2026"
+                      : "expired"}
+                  </span>
+                </div>
+                <p className="agent-price-basis">
+                  {latest.research.priceBasis}
+                </p>
+                <h3>Why these choices?</h3>
+                <div className="agent-comparison-grid">
+                  {latest.research.findings.map((finding) => {
+                    const product = productById(finding.productId);
+                    return (
+                      <article
+                        key={finding.productId}
+                        className="agent-comparison-card"
+                      >
+                        <small>
+                          {finding.eligible
+                            ? "Fits your confirmed brief"
+                            : "Not eligible for this brief"}
+                        </small>
+                        <h4>{product.name}</h4>
+                        <strong>{formatMoney(finding.total)}</strong>
+                        <p>
+                          {finding.reasons.length
+                            ? finding.reasons.join(" ")
+                            : product.description}
+                        </p>
+                        <div className="agent-source-links">
+                          {finding.sourceIds.map((id) => {
+                            const source = latest.research!.sources.find(
+                              (s) => s.id === id,
+                            )!;
+                            return (
+                              <a
+                                key={id}
+                                href={source.url}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {source.title} ↗
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+                {latest.status === "needs_input" && (
+                  <div
+                    className="agent-followups"
+                    aria-label="Clarify your shopping brief"
+                  >
+                    {[
+                      {
+                        label: "I have MagSafe 3",
+                        task: "I already have the original MagSafe 3 cable",
+                      },
+                      {
+                        label: "Include a cable",
+                        task: "I need a cable included",
+                      },
+                      {
+                        label: "Raise budget to $60",
+                        task: "My budget is $60",
+                      },
+                      {
+                        label: "Normal charging is fine",
+                        task: "Normal charging is fine",
+                      },
+                    ].map((followup) => (
+                      <button
+                        key={followup.label}
+                        disabled={pending || restoring}
+                        onClick={() => setTask(followup.task)}
+                      >
+                        {followup.label} <ArrowRight size={13} />
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+            {latest.safety && (
+              <div className="agent-safety" aria-label="Message safety check">
+                <strong>
+                  {latest.safety.level.toUpperCase()} · Payment safety
+                </strong>
+                <p>{latest.safety.nextStep}</p>
+                <small>
+                  Pattern checks are advisory; a low result does not verify a
+                  sender.
+                </small>
+              </div>
+            )}
+            {!!latest.orders?.length && (
+              <div className="agent-order-receipts">
+                {latest.orders.map((order) => (
+                  <article key={order.id}>
+                    <strong>{order.product}</strong>
+                    <span>{order.status.replaceAll("_", " ")}</span>
+                    <p>{order.nextStep}</p>
+                  </article>
+                ))}
+              </div>
+            )}
             <details className="agent-receipt" open>
               <summary>What DALE actually did</summary>
               <ol>
@@ -231,13 +384,20 @@ export function AgentWorkspace({
                   </p>
                 )}
                 {latest.productIds.map((id) => {
-                  const product = catalog.find((item) => item.id === id);
+                  const product = [...catalog, ...realProducts].find(
+                    (item) => item.id === id,
+                  );
                   return product ? (
                     <article key={id}>
                       <strong>{product.name}</strong>
                       <span>{formatMoney(product.price)}</span>
                       <p>{product.specs.join(" · ")}</p>
-                      <small>Sample source: {product.source}</small>
+                      <small>
+                        {id.startsWith("R")
+                          ? "Manufacturer evidence:"
+                          : "Sample source:"}{" "}
+                        {product.source}
+                      </small>
                       <button
                         className="button secondary"
                         disabled={pending || restoring || !reviewCurrent}
