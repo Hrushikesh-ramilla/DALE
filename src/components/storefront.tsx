@@ -40,6 +40,7 @@ import { BrandWordmark } from "./brand-wordmark";
 import { EditorialHero } from "./editorial-hero";
 import { DemoToolbar } from "./demo-toolbar";
 import { VoiceCompanion, type VoiceResult } from "./voice-companion";
+import { AgentWorkspace, type AgentResult } from "./agent-workspace";
 import type { ScenarioKind } from "@/server/scenarios";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
@@ -250,6 +251,19 @@ export default function Storefront() {
     [restoreSession, setTab, setSupportDraft],
   );
   const isBuyer = !session || session.actor.role === "buyer";
+  const applyAgent = useCallback(
+    (data: AgentResult) => {
+      restoreSession(data.snapshot);
+      if (data.intent.kind === "shopping" && data.result) {
+        setProducts(data.result.products);
+        setQuestions(data.result.questions);
+        setSummary(data.result.analysis.summary);
+        setCatalogQuery("");
+        if (tab !== "discover") setTab("discover");
+      } else applyVoice(data);
+    },
+    [restoreSession, applyVoice, setTab, tab],
+  );
   async function findProducts(confirmConstraints = false) {
     if (!session) {
       startShopping();
@@ -457,30 +471,47 @@ export default function Storefront() {
             {notice}
           </div>
         )}
-        {tab === "discover" && (
-          <VoiceCompanion
-            pending={restoring}
-            key={`${pathname}:${session?.actor.userId || "visitor"}`}
+        {isBuyer && (tab === "discover" || tab === "support") && (
+          <AgentWorkspace
+            key={`${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
+            session={session}
+            restoring={restoring || busy}
             model={model}
             budget={Math.max(
               1,
               Math.min(100000, Math.round(Number(budget) * 100) || 8000),
             )}
-            actorId={isBuyer ? session?.actor.userId : undefined}
-            onResult={applyVoice}
-          />
-        )}
-        {tab === "support" && isBuyer && (
-          <VoiceCompanion
-            pending={restoring}
-            key={`${pathname}:${session?.actor.userId || "visitor"}`}
-            model={model}
-            budget={Math.max(
-              1,
-              Math.min(100000, Math.round(Number(budget) * 100) || 8000),
-            )}
-            actorId={session?.actor.userId}
-            onResult={applyVoice}
+            briefDirty={briefDirty}
+            onResult={applyAgent}
+            onReview={(product) => {
+              const latest = session?.agentRuns.at(-1);
+              if (
+                !latest?.briefVersion ||
+                latest.briefVersion !== session?.brief?.version ||
+                briefDirty
+              ) {
+                setError(
+                  "Your brief changed. Send a new agent task before reviewing this option.",
+                );
+                return;
+              }
+              void choose(product);
+            }}
+            voice={
+              tab === "discover" || tab === "support" ? (
+                <VoiceCompanion
+                  pending={restoring || busy}
+                  key={`${pathname}:${session?.actor.userId || "visitor"}`}
+                  model={model}
+                  budget={Math.max(
+                    1,
+                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                  )}
+                  actorId={session?.actor.userId}
+                  onResult={applyVoice}
+                />
+              ) : null
+            }
           />
         )}
         {tab === "discover" && (

@@ -165,7 +165,7 @@ body {
 .hero-type {
   padding: 0;
 }
-.hero-type h1 {
+.hero-type h2 {
   font-family: "DM Sans", Arial, sans-serif;
   font-size: clamp(45px, 5.8vw, 82px);
   line-height: 1.04;
@@ -173,7 +173,7 @@ body {
   letter-spacing: -0.065em;
   animation: none;
 }
-.hero-type h1 br {
+.hero-type h2 br {
   display: none;
 }
 .hero-type em {
@@ -492,7 +492,7 @@ select option {
   .editorial-hero {
     padding-top: 45px;
   }
-  .hero-type h1 {
+  .hero-type h2 {
     font-size: clamp(43px, 10vw, 66px);
   }
   .hero-type p br {

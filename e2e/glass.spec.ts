@@ -11,10 +11,11 @@ test("3D product selection, rotation and context-loss fallback retain catalog ac
   ).toBe("rgb(245, 245, 247)");
   expect(
     await page
-      .locator(".hero-type h1")
+      .locator(".hero-type h2")
       .evaluate((el) => getComputedStyle(el).fontFamily),
   ).toContain("DM Sans");
   const canvas = page.locator("canvas[data-scene=ready]");
+  await page.locator(".product-viewer").scrollIntoViewIfNeeded();
   await expect(canvas).toBeVisible();
   const before = await canvas.screenshot();
   await page.getByRole("button", { name: "Rotate product right" }).click();

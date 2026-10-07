@@ -32,7 +32,7 @@ export function EditorialHero({
     if (reduced || !stage.current) return;
     const context = gsap.context(() => {
       gsap.fromTo(
-        ".hero-type h1",
+        ".hero-type h2",
         { clipPath: "inset(0 0 100% 0)", y: 24 },
         {
           clipPath: "inset(0 0 0% 0)",
@@ -67,10 +67,10 @@ export function EditorialHero({
         <span>Personal shopping, considered.</span>
       </div>
       <div className="hero-type">
-        <h1>A better way to choose.</h1>
+        <h2>Explore the sample collection.</h2>
         <p>
-          Everyday technology, chosen for your needs. <br />
-          Your budget. Your approval. Your side, always.
+          Recorded specifications. Simulated listings. <br />A place to test the
+          shopping workflow.
         </p>
         <a className="editorial-link" href="#shop">
           Find your fit <ArrowRight size={17} />

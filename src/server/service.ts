@@ -91,6 +91,19 @@ export async function snapshot(actor: Actor) {
     conversation:
       state.conversations?.find((item) => item.buyerId === actor.userId)
         ?.turns || [],
+    agentRuns: (state.agentRuns || [])
+      .filter((run) => actor.role === "buyer" && run.buyerId === actor.userId)
+      .map((run) => ({
+        id: run.id,
+        task: run.task,
+        at: run.at,
+        status: run.status,
+        reply: run.reply,
+        steps: run.steps,
+        productIds: run.productIds,
+        briefVersion: run.briefVersion,
+        intent: run.intent,
+      })),
     fixtureWorkspace: !!state.fixtureWorkspace,
     demo: state.demo
       ? { kind: state.demo.kind, expiresAt: state.demo.expiresAt }

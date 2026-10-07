@@ -568,6 +568,83 @@
     }
   },
   "paths": {
+    "/api/agent": {
+      "post": {
+        "description": "Buyer-only bounded task execution: explicit sample-device shopping, own-order navigation and support draft preparation. No arbitrary real-product research, model request or financial authorization. Persists a private receipt of completed actions, bounded to twelve tasks per shopper. Session identity guards prevent stale browser tasks. Limit 10 tasks/actor/minute, shared demo analysis lifetime limit of 50. Mutations require an Origin header matching the configured app origin.",
+        "security": [
+          {
+            "session": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "type": "object",
+                "properties": {
+                  "task": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "model": {
+                    "type": "string",
+                    "enum": [
+                      "Atlas 14",
+                      "Atlas 14 Pro",
+                      "Orbit 13",
+                      "Slate 11"
+                    ]
+                  },
+                  "budget": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100000
+                  },
+                  "expectedWorkspaceId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                  },
+                  "expectedBuyerId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100
+                  }
+                },
+                "required": [
+                  "task",
+                  "model",
+                  "budget"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful command or private snapshot; financial completion is reported separately in order/refund status."
+          },
+          "400": {
+            "description": "Invalid fields, unsafe state transition, changed approval, or integrity error."
+          },
+          "401": {
+            "description": "Missing/expired session or invalid access code."
+          },
+          "403": {
+            "description": "Wrong origin, party, or privileged role."
+          },
+          "404": {
+            "description": "Resource is absent or is not owned by this shopper/workspace."
+          },
+          "429": {
+            "description": "Per-actor request budget exhausted; Retry-After: 60. Actions 120/min, uploads 20/min, shopping analysis 10/min and engineering scenarios 20/min."
+          }
+        }
+      }
+    },
     "/api/demo": {
       "post": {
         "description": "Launch one of nine isolated fixture-only scenarios without credentials. Persona/reset require both the existing session and its owner cookie; demo ownership cannot grant ordinary operator access. Reset rotates ownership and archives prior audit/payment records. Lifetime bounds: 200 demo workspaces, 300 actions and 50 analyses per workspace, 8 uploaded originals per workspace and 128 total demo uploads (4 MiB each). Exhausted lifetime limits require an operator review rather than a minute wait. Mutations require an Origin header matching the configured app origin.",

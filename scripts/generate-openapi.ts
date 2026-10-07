@@ -5,6 +5,7 @@ import { briefSchema } from "../src/domain/brief";
 import { scenarioKind } from "../src/server/scenarios";
 import { demoRequestSchema } from "../src/server/demo";
 import { voiceRequest } from "../src/domain/voice";
+import { agentRequest } from "../src/domain/agent";
 const jsonSchema = (schema: z.ZodType) =>
   z.toJSONSchema(schema, { io: "input" });
 const responses = {
@@ -75,6 +76,12 @@ const spec = {
     },
   },
   paths: {
+    "/api/agent": {
+      post: command(
+        "Buyer-only bounded task execution: explicit sample-device shopping, own-order navigation and support draft preparation. No arbitrary real-product research, model request or financial authorization. Persists a private receipt of completed actions, bounded to twelve tasks per shopper. Session identity guards prevent stale browser tasks. Limit 10 tasks/actor/minute, shared demo analysis lifetime limit of 50.",
+        jsonSchema(agentRequest),
+      ),
+    },
     "/api/demo": {
       post: {
         ...command(
