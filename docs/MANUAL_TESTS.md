@@ -202,6 +202,19 @@ The CI allocation gap is closed: [run 37373916879](https://github.com/Hrushikesh
 
 ## 10. Record each result
 
+### Editorial preview additions
+
+These cases apply to the local redesigned preview until it is deployed; the hosted 5b393c0 interface has the original presentation. Start at `http://localhost:3000/shop` with the same private role setup.
+
+| ID | Steps | Expected result |
+| --- | --- | --- |
+| DESIGN-01 | Open shop, orders, groups and support through navigation; use browser Back, reload and direct URLs. | Correct screen/URL, saved session and shopping brief preserved; no cross-account change. |
+| DESIGN-02 | Click Sound & focus in collections. Attempt purchase before saving, then Find my match. | Collection preview updates; purchase requires saving the brief first. Confirmed audio matches follow device/budget constraints. |
+| DESIGN-03 | Search matched products for Bluetooth, then an absent phrase, then clear. | Filters current candidates only; clear empty-result message; clearing restores the selection. |
+| DESIGN-04 | Open headphone details. Inspect price/specifications/compatible models/source/sponsorship. Close with Escape, then review a confirmed purchase. | Grounded facts, opener focus restored, exact-price approval through the existing guard. No extra order on merely viewing details. |
+| DESIGN-05 | Set $20 budget, open featured headphones, choose Match this collection to my device. | No direct approval for the $59 item. The audio preview stays within $20 and is empty until constraints permit a match. |
+| DESIGN-06 | Test 1440/820/390/320px widths and reduced-motion preference. Open product details and navigate screens. | No page/dialog horizontal overflow; readable mobile cards; no background interaction/scroll through a dialog; motion preference respected. |
+
 Use `PASS`, `FAIL`, or `BLOCKED`; a blocked/unexecuted test is not a pass.
 
 ```text

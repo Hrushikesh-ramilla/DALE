@@ -1,5 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { usePathname, useRouter } from "next/navigation";
 import {
   ArrowRight,
   Check,
@@ -37,6 +39,7 @@ type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
   | { kind: "login" }
+  | { kind: "product"; product: Product }
   | { kind: "quote"; quote: StoredQuote }
   | { kind: "return"; order: Order }
   | {
@@ -80,8 +83,21 @@ async function api<T>(
   return data;
 }
 export default function Storefront() {
+  const pathname = usePathname();
+  const router = useRouter();
+  const tab: Tab =
+    pathname === "/groups"
+      ? "groups"
+      : pathname === "/orders"
+        ? "orders"
+        : pathname === "/support"
+          ? "support"
+          : "discover";
+  const setTab = useCallback(
+    (next: Tab) => router.push(next === "discover" ? "/shop" : `/${next}`),
+    [router],
+  );
   const [session, setSession] = useState<Session | null>(null),
-    [tab, setTab] = useState<Tab>("discover"),
     [modal, setModal] = useState<Modal>(null);
   const [products, setProducts] = useState<Product[]>(
     catalog.filter(
@@ -110,6 +126,13 @@ export default function Storefront() {
     [workspaceId, setWorkspaceId] = useState(""),
     [invite, setInvite] = useState("");
   const [questions, setQuestions] = useState<string[]>([]);
+  const [catalogQuery, setCatalogQuery] = useState("");
+  const visibleProducts = products.filter((product) =>
+    [product.name, product.description, ...product.specs]
+      .join(" ")
+      .toLowerCase()
+      .includes(catalogQuery.trim().toLowerCase()),
+  );
   const [scenario, setScenario] = useState<ScenarioKind>("fresh");
   const restoreSession = useCallback((data: Session) => {
     setSession(data);
@@ -169,7 +192,7 @@ export default function Storefront() {
     setModal(null);
     setTab("orders");
     setNotice("Your purchase is confirmed. Follow its progress here.");
-  }, []);
+  }, [setTab]);
   const showPaymentError = useCallback(
     (message: string) => setError(message),
     [],
@@ -199,6 +222,7 @@ export default function Storefront() {
         confirmConstraints,
       });
       setProducts(result.products);
+      setCatalogQuery("");
       setSummary(result.analysis.summary);
       setQuestions(result.questions);
       setBriefDirty(false);
@@ -231,6 +255,30 @@ export default function Storefront() {
       setModal({ kind: "quote", quote });
     });
   }
+  function browseCollection(nextCategory: string) {
+    setCategory(nextCategory);
+    setBriefDirty(true);
+    setCatalogQuery("");
+    setProducts(
+      questions.length
+        ? []
+        : searchCatalog({
+            model,
+            category: nextCategory,
+            budget: Math.round(Number(budget) * 100),
+            preference,
+            priority,
+          }),
+    );
+    setSummary(
+      "Collection preview. Save your device, budget and preferences with Find my match before reviewing a purchase.",
+    );
+    document.getElementById("shop")?.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
+    });
+  }
   async function upload(
     form: FormData,
     target: { caseId?: string; orderId?: string },
@@ -261,7 +309,14 @@ export default function Storefront() {
   }
   return (
     <div className="app-shell">
-      <header className="site-header">
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <div className="announcement">
+        <span>Considered essentials. Customer-first shopping.</span>
+        <span>Your approval, always.</span>
+      </div>
+      <header className="site-header" inert={!!modal}>
         <a className="brand" href="/" aria-label="BuyerGuard home">
           <span className="brand-mark">
             <ShieldCheck size={23} />
@@ -274,6 +329,7 @@ export default function Storefront() {
               <button
                 key={item}
                 className={tab === item ? "active" : ""}
+                aria-current={tab === item ? "page" : undefined}
                 onClick={() => setTab(item)}
               >
                 {
@@ -284,6 +340,13 @@ export default function Storefront() {
                     support: "Support",
                   }[item]
                 }
+                {tab === item && (
+                  <motion.span
+                    className="nav-indicator"
+                    layoutId="navigation"
+                    aria-hidden="true"
+                  />
+                )}
               </button>
             ),
           )}
@@ -310,7 +373,7 @@ export default function Storefront() {
           </button>
         )}
       </header>
-      <main className="main-content">
+      <main id="main" className="main-content" inert={!!modal} tabIndex={-1}>
         <div className="mode-strip">
           <span className="status-dot" /> Test storefront ·{" "}
           {!session
@@ -341,20 +404,32 @@ export default function Storefront() {
         )}
         {tab === "discover" && (
           <>
-            <section className="hero">
+            <motion.section
+              className="hero"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7 }}
+            >
               <div className="hero-copy">
-                <div className="eyebrow">
-                  <ShieldCheck size={15} /> BUILT AROUND YOU
-                </div>
+                <div className="eyebrow">THE CONSIDERED COLLECTION / 01</div>
                 <h1>
-                  Good choices.
+                  Considered choices.
                   <br />
-                  <span>Greater peace of mind.</span>
+                  <span>Complete confidence.</span>
                 </h1>
                 <p>
-                  A shopping companion that finds the right fit, looks out for
-                  your budget, and stays with you after checkout.
+                  The right essentials for your device. A companion that
+                  protects your budget, respects your decisions, and stays after
+                  checkout.
                 </p>
+                <div className="hero-actions">
+                  <a className="button primary" href="#shop">
+                    Find your fit <ArrowRight size={16} />
+                  </a>
+                  <a className="text-link" href="#collections">
+                    Explore the collection <ArrowRight size={15} />
+                  </a>
+                </div>
                 <div className="hero-pills">
                   <span>
                     <Check size={14} /> Compatibility checked
@@ -368,21 +443,90 @@ export default function Storefront() {
                 </div>
               </div>
               <div className="hero-visual">
-                <div className="floating-label">
-                  <ShieldCheck size={20} />
-                  <div>
-                    <strong>The right fit comes first</strong>
-                    <small>Your device. Your budget. Your choice.</small>
-                  </div>
-                </div>
-                <ProductArt product={catalog[0]} />
+                <span className="hero-object-number">No. 06</span>
+                <ProductArt product={catalog[5]} />
                 <div className="visual-note">
-                  <span className="status-dot" /> Looking out for you, every
-                  step.
+                  <div>
+                    <strong>{catalog[5].name}</strong>
+                    <small>
+                      {catalog[5].specs[0]} · {formatMoney(catalog[5].price)} ·
+                      Catalog illustration
+                    </small>
+                  </div>
+                  <button
+                    aria-label="View Quiet Wireless Headphones"
+                    onClick={() =>
+                      setModal({ kind: "product", product: catalog[5] })
+                    }
+                  >
+                    <ArrowRight size={18} />
+                  </button>
                 </div>
               </div>
+            </motion.section>
+            <section
+              className="collection-section"
+              id="collections"
+              aria-labelledby="collection-title"
+            >
+              <div className="collection-heading">
+                <h2 id="collection-title">Objects for everyday life.</h2>
+                <p>Five collections. One considered approach.</p>
+              </div>
+              <div className="collection-grid">
+                {[
+                  {
+                    id: "chargers",
+                    title: "Power & charging",
+                    product: catalog[0],
+                  },
+                  {
+                    id: "docks",
+                    title: "Desk & connection",
+                    product: catalog[3],
+                  },
+                  { id: "audio", title: "Sound & focus", product: catalog[5] },
+                  {
+                    id: "storage",
+                    title: "Storage & carry",
+                    product: catalog[4],
+                  },
+                  {
+                    id: "accessories",
+                    title: "Everyday essentials",
+                    product: catalog[6],
+                  },
+                ].map((collection) => (
+                  <button
+                    key={collection.id}
+                    className="collection-tile"
+                    aria-pressed={category === collection.id}
+                    onClick={() => browseCollection(collection.id)}
+                  >
+                    <ProductArt product={collection.product} />
+                    <span className="collection-caption">
+                      <span>
+                        {collection.title}
+                        <small>
+                          {
+                            catalog.filter(
+                              (item) => item.category === collection.id,
+                            ).length
+                          }{" "}
+                          catalog objects
+                        </small>
+                      </span>
+                      <ArrowRight size={15} />
+                    </span>
+                  </button>
+                ))}
+              </div>
             </section>
-            <section className="shopping-area">
+            <section
+              className="shopping-area"
+              id="shop"
+              aria-label="Personal shopping"
+            >
               <aside className="brief-panel">
                 <div className="panel-title">
                   <Sparkles size={19} />
@@ -516,10 +660,11 @@ export default function Storefront() {
                 <div className="section-heading">
                   <div>
                     <div className="eyebrow">CURATED FOR YOUR NEEDS</div>
-                    <h2>Your next good find</h2>
+                    <h2>Selected for you.</h2>
                   </div>
                   <span className="muted">
-                    {products.length} compatible options
+                    {visibleProducts.length}{" "}
+                    {briefDirty ? "preview options" : "compatible options"}
                   </span>
                 </div>
                 <div className="assistant-note">
@@ -591,11 +736,33 @@ export default function Storefront() {
                     </p>
                   </details>
                 )}
+                <label className="catalog-search">
+                  <Search size={16} aria-hidden="true" />
+                  <input
+                    aria-label="Search matched products"
+                    placeholder="Search your selection by name or specification"
+                    value={catalogQuery}
+                    onChange={(e) => setCatalogQuery(e.target.value)}
+                  />
+                </label>
                 <div className="product-grid">
-                  {products.map((product, index) => (
-                    <article className="product-card" key={product.id}>
+                  {visibleProducts.map((product, index) => (
+                    <motion.article
+                      className="product-card"
+                      key={product.id}
+                      layout
+                      initial={false}
+                      animate={{ opacity: 1 }}
+                    >
                       <div className="card-visual">
                         <ProductArt product={product} />
+                        <button
+                          className="product-view"
+                          aria-label={`View details for ${product.name}`}
+                          onClick={() => setModal({ kind: "product", product })}
+                        >
+                          <ArrowRight size={17} />
+                        </button>
                         {index === 0 && (
                           <span className="card-badge">
                             {priority === "features"
@@ -616,7 +783,16 @@ export default function Storefront() {
                             <span className="sponsored">Sponsored</span>
                           )}
                         </div>
-                        <h3>{product.name}</h3>
+                        <h3>
+                          <button
+                            className="product-title"
+                            onClick={() =>
+                              setModal({ kind: "product", product })
+                            }
+                          >
+                            {product.name}
+                          </button>
+                        </h3>
                         <p>{product.description}</p>
                         <div className="spec-tags">
                           {product.specs.slice(0, 2).map((spec) => (
@@ -669,13 +845,21 @@ export default function Storefront() {
                           </button>
                         </div>
                       </div>
-                    </article>
+                    </motion.article>
                   ))}
                 </div>
-                {!products.length && (
+                {!visibleProducts.length && (
                   <Empty
-                    title="Let's refine your search"
-                    detail="We won't guess compatibility. Try a known model or a larger budget."
+                    title={
+                      catalogQuery
+                        ? "Nothing in this selection"
+                        : "Let's refine your search"
+                    }
+                    detail={
+                      catalogQuery
+                        ? "Try another name or specification, or clear the search to see your matches."
+                        : "We won't guess compatibility. Try a known model or a larger budget."
+                    }
                   />
                 )}
               </div>
@@ -709,6 +893,114 @@ export default function Storefront() {
                   Check a seller message <ChevronRight size={14} />
                 </span>
               </button>
+            </section>
+          </>
+        )}
+        {tab === "discover" && (
+          <>
+            <motion.section
+              className="advocacy-section"
+              initial={{ opacity: 0.6 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div>
+                <span className="eyebrow">THE BUYERGUARD STANDARD</span>
+                <h2>
+                  Good shopping
+                  <br />
+                  doesn’t end
+                  <br />
+                  <em>at checkout.</em>
+                </h2>
+                <p>
+                  Every recommendation begins with your needs. Every purchase
+                  needs your approval. Every problem deserves a fair hearing.
+                </p>
+                <button
+                  className="text-link"
+                  onClick={() => setTab("support")}
+                  style={{ marginTop: 20 }}
+                >
+                  Explore customer support <ArrowRight size={15} />
+                </button>
+              </div>
+              <div className="advocacy-steps">
+                <div className="advocacy-step">
+                  <span>01</span>
+                  <div>
+                    <h3>Find what actually fits.</h3>
+                    <p>
+                      Device compatibility and your budget come first. Paid
+                      placement never improves organic ranking.
+                    </p>
+                  </div>
+                </div>
+                <div className="advocacy-step">
+                  <span>02</span>
+                  <div>
+                    <h3>The final word is yours.</h3>
+                    <p>
+                      Review the item, merchant, full price and delivery terms
+                      before you approve. Group commitments never charge you.
+                    </p>
+                  </div>
+                </div>
+                <div className="advocacy-step">
+                  <span>03</span>
+                  <div>
+                    <h3>Your side deserves to be heard.</h3>
+                    <p>
+                      Choose a refund or replacement. Share evidence, request a
+                      person and follow every step of your case.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.section>
+            <section className="service-faq" aria-labelledby="service-title">
+              <div>
+                <span className="eyebrow">A LITTLE CLARITY</span>
+                <h2 id="service-title">Before you decide.</h2>
+              </div>
+              <div>
+                <details>
+                  <summary>How are recommendations selected?</summary>
+                  <p>
+                    We filter the curated catalog by your device and budget,
+                    then rank by your chosen price or feature preference.
+                    Conflicting instructions require your confirmation.
+                    Specifications are linked to catalog records.
+                  </p>
+                </details>
+                <details>
+                  <summary>What happens if I need to return something?</summary>
+                  <p>
+                    Open a request from My orders and choose a refund or
+                    replacement. A reviewer can arrange a merchant-paid return
+                    or approve a no-return exception. The demo window is 30 days
+                    from recorded delivery; late or incomplete records receive
+                    human review.
+                  </p>
+                </details>
+                <details>
+                  <summary>Can a photo decide my claim?</summary>
+                  <p>
+                    Photos and identifiers are submitted evidence, not proof of
+                    physical truth. Automated analysis cannot deny your request.
+                    Both sides can submit records and you can ask for another
+                    review.
+                  </p>
+                </details>
+                <details>
+                  <summary>How does a group purchase work?</summary>
+                  <p>
+                    Two commitments unlock 10% off with a 30-minute approval
+                    window. Each participant checks out independently. Another
+                    participant declining does not reprice your locked purchase.
+                  </p>
+                </details>
+              </div>
             </section>
           </>
         )}
@@ -840,6 +1132,27 @@ export default function Storefront() {
                   : "Record dispatch evidence before shipping. Carrier events are simulated."
               }
             />
+            {session && (
+              <div className="workspace-overview" aria-label="Order overview">
+                <div>
+                  <strong>{session.orders.length}</strong>
+                  <span>Recorded orders</span>
+                </div>
+                <div>
+                  <strong>
+                    {
+                      session.orders.filter((order) => !!order.deliveredAt)
+                        .length
+                    }
+                  </strong>
+                  <span>Delivered</span>
+                </div>
+                <div>
+                  <strong>{session.cases.length}</strong>
+                  <span>Support requests</span>
+                </div>
+              </div>
+            )}
             {session?.orders.length ? (
               <div className="order-list">
                 {session.orders.map((order) => (
@@ -1000,6 +1313,32 @@ export default function Storefront() {
               title="Let's put it right."
               detail="Your request stays open while we review it. Missing evidence never means an automatic accusation or denial."
             />
+            {session && (
+              <div className="workspace-overview" aria-label="Support overview">
+                <div>
+                  <strong>
+                    {
+                      session.cases.filter((item) => item.status !== "resolved")
+                        .length
+                    }
+                  </strong>
+                  <span>Open requests</span>
+                </div>
+                <div>
+                  <strong>
+                    {
+                      session.cases.filter((item) => item.status === "resolved")
+                        .length
+                    }
+                  </strong>
+                  <span>Resolved requests</span>
+                </div>
+                <div>
+                  <strong>Human</strong>
+                  <span>Review available</span>
+                </div>
+              </div>
+            )}
             {session?.cases.length ? (
               <div className="case-list">
                 {session.cases.map((item) => (
@@ -1281,23 +1620,62 @@ export default function Storefront() {
           </>
         )}
         <footer className="site-footer">
-          <div className="brand">
-            <ShieldCheck size={18} /> BuyerGuard
-            <span className="brand-dot">.</span>
+          <div className="footer-brand">
+            <div className="brand">
+              <ShieldCheck size={22} /> BuyerGuard
+              <span className="brand-dot">.</span>
+            </div>
+            <p>
+              Considered choices. Customer-first commerce. From your first
+              search to a fair resolution.
+            </p>
           </div>
-          <span>
-            Built around your needs. From first search to final resolution.
-          </span>
-          <button
-            onClick={() => {
-              setRole("seller");
-              setWorkspaceId(session?.actor.workspaceId || "");
-              setModal({ kind: "login" });
-            }}
-          >
-            Operator workspace
-          </button>
+          <div className="footer-links">
+            <strong>The collection</strong>
+            <button
+              onClick={() => {
+                setTab("discover");
+                window.scrollTo({
+                  top: 0,
+                  behavior: window.matchMedia(
+                    "(prefers-reduced-motion: reduce)",
+                  ).matches
+                    ? "instant"
+                    : "smooth",
+                });
+              }}
+            >
+              Discover essentials
+            </button>
+            <button onClick={() => setTab("groups")}>Buy together</button>
+            <button onClick={() => setTab("orders")}>Track an order</button>
+          </div>
+          <div className="footer-links">
+            <strong>At your service</strong>
+            <button onClick={() => setTab("support")}>Returns & support</button>
+            <button
+              onClick={() => {
+                setScam(null);
+                setModal({ kind: "scam" });
+              }}
+            >
+              Check a message
+            </button>
+            <button
+              onClick={() => {
+                setRole("seller");
+                setWorkspaceId(session?.actor.workspaceId || "");
+                setModal({ kind: "login" });
+              }}
+            >
+              Operator workspace
+            </button>
+          </div>
         </footer>
+        <div className="footer-bottom">
+          <span>BuyerGuard / The considered collection</span>
+          <span>Test storefront · Synthetic catalog & shipping · USD</span>
+        </div>
         {session && (
           <details className="engineering-details">
             <summary>Environment details</summary>
@@ -1409,681 +1787,771 @@ export default function Storefront() {
           </details>
         )}
       </main>
-      {modal && (
-        <div className="modal-backdrop">
-          <Dialog onClose={() => setModal(null)}>
-            <button
-              className="close-modal"
-              aria-label="Close dialog"
-              onClick={() => setModal(null)}
+      <AnimatePresence>
+        {modal && (
+          <motion.div
+            className="modal-backdrop"
+            key="dialog"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.18 }}
+          >
+            <Dialog
+              key={modal.kind}
+              onClose={() => setModal(null)}
+              className={modal.kind === "product" ? "product-modal" : undefined}
             >
-              <X size={21} />
-            </button>
-            {modal.kind === "login" && (
-              <>
-                <div className="modal-icon">
-                  <ShoppingBag />
-                </div>
-                <h2 id="modal-title">
-                  {role === "buyer"
-                    ? "Your shopping space."
-                    : "Operator access."}
-                </h2>
-                <p className="muted">
-                  {role === "buyer"
-                    ? "Start an isolated test session, or join with a group invitation."
-                    : "Use a separate browser profile. Operator roles require the configured access code."}
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    void run(async () => {
-                      restoreSession(
-                        await api<Session>("/api/session", {
-                          role,
-                          accessCode,
-                          ...(role === "buyer" && invite
-                            ? { invite: invite.trim() }
-                            : {}),
-                          ...(role !== "buyer" && workspaceId
-                            ? { workspaceId: workspaceId.trim() }
-                            : {}),
-                        }),
-                      );
-                      setModal(null);
-                      setAccessCode("");
-                      setTab(role === "buyer" ? "discover" : "orders");
-                    });
-                  }}
-                >
-                  <label>
-                    Role
-                    <select
-                      value={role}
-                      onChange={(e) => setRole(e.target.value)}
-                    >
-                      <option value="buyer">Shopper</option>
-                      <option value="seller">Seller</option>
-                      <option value="reviewer">Reviewer</option>
-                    </select>
-                  </label>
-                  <label>
-                    {role === "buyer"
-                      ? "Demo access code (if configured)"
-                      : "Operator access code"}
-                    <input
-                      type="password"
-                      autoComplete="off"
-                      value={accessCode}
-                      onChange={(e) => setAccessCode(e.target.value)}
-                    />
-                  </label>
-                  {role === "buyer" ? (
-                    <label>
-                      Group invitation (optional)
-                      <input
-                        value={invite}
-                        onChange={(e) => setInvite(e.target.value)}
-                      />
-                    </label>
-                  ) : (
-                    <label>
-                      Customer workspace ID
-                      <input
-                        required
-                        value={workspaceId}
-                        onChange={(e) => setWorkspaceId(e.target.value)}
-                      />
-                    </label>
-                  )}
-                  <button className="button primary full" disabled={busy}>
-                    Enter workspace <ArrowRight size={16} />
-                  </button>
-                </form>
-              </>
-            )}
-            {modal.kind === "quote" && (
-              <>
-                <div className="modal-icon">
-                  <ShieldCheck />
-                </div>
-                <h2 id="modal-title">Your choice. Fully reviewed.</h2>
-                <p className="muted">
-                  Confirm the exact purchase before payment. Changes require
-                  approval again.
-                </p>
-                <div className="quote-product">
-                  <ProductArt
-                    product={productById(modal.quote.productId)}
-                    compact
-                  />
-                  <div>
-                    <strong>{productById(modal.quote.productId).name}</strong>
-                    <p>Confirmed fit: {modal.quote.model}</p>
-                  </div>
-                </div>
-                {modal.quote.deliveryBy && (
-                  <p>
-                    Delivery promise:{" "}
-                    {new Date(modal.quote.deliveryBy).toLocaleDateString()}
-                  </p>
-                )}
-                <p>
-                  Merchant policy: request returns within 30 days of recorded
-                  delivery. Merchant-paid return shipping for qualifying claims;
-                  uncertain or late requests receive review. Provider disputes
-                  remain a separate process.
-                </p>
-                <dl className="quote-summary">
-                  <div>
-                    <dt>Merchant</dt>
-                    <dd>BuyerGuard demo store</dd>
-                  </div>
-                  <div>
-                    <dt>Item</dt>
-                    <dd>{formatMoney(modal.quote.amount)}</dd>
-                  </div>
-                  <div>
-                    <dt>Shipping & taxes</dt>
-                    <dd>Included in this demo quote</dd>
-                  </div>
-                  <div>
-                    <dt>Return window</dt>
-                    <dd>30 days under demo policy</dd>
-                  </div>
-                  <div className="total">
-                    <dt>Total approved</dt>
-                    <dd>{formatMoney(modal.quote.amount)}</dd>
-                  </div>
-                </dl>
-                <p className="muted">
-                  Valid until{" "}
-                  {new Date(modal.quote.expiresAt).toLocaleTimeString()}.
-                  Recipient: {modal.quote.payee}.
-                </p>
-                {session?.modes.payments === "sandbox" &&
-                session.paypalClientId ? (
-                  <PayPalCheckout
-                    clientId={session.paypalClientId}
-                    quote={modal.quote}
-                    action={action}
-                    onDone={finishCheckout}
-                    onError={showPaymentError}
-                  />
-                ) : (
-                  <>
-                    <div className="fixture-note">
-                      Simulated payment test. No money is charged.
+              <button
+                className="close-modal"
+                aria-label="Close dialog"
+                onClick={() => setModal(null)}
+              >
+                <X size={21} />
+              </button>
+              {modal.kind === "product" && (
+                <div className="product-detail">
+                  <ProductArt product={modal.product} />
+                  <div className="product-detail-copy">
+                    <span className="eyebrow">
+                      THE COLLECTION / {modal.product.id}
+                    </span>
+                    <h2 id="modal-title">{modal.product.name}</h2>
+                    <p>{modal.product.description}</p>
+                    <div className="price-row">
+                      <strong>{formatMoney(modal.product.price)}</strong>
+                      <small>USD · Shipping included</small>
                     </div>
-                    <button
-                      className="button primary full"
-                      disabled={busy}
-                      onClick={() =>
-                        void run(async () => {
-                          const order = (await action({
-                            action: "checkout",
-                            quoteId: modal.quote.id,
-                            fingerprint: modal.quote.fingerprint,
-                          })) as Order;
-                          await action({
-                            action: "capture",
-                            orderId: order.id,
-                          });
-                          finishCheckout();
-                        })
-                      }
-                    >
-                      <CreditCard size={17} /> Approve simulated purchase
-                    </button>
-                  </>
-                )}
-              </>
-            )}
-            {modal.kind === "resolve" && (
-              <>
-                <h2 id="modal-title">Approve the customer’s choice.</h2>
-                <p className="muted">
-                  Review the original records and payment before authorizing the
-                  requested {modal.item.request}. Conflicting or missing
-                  evidence does not automatically deny the request.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const form = new FormData(e.currentTarget);
-                    void run(async () => {
-                      const decision = String(
-                        form.get("returnDecision") || "waive",
-                      );
-                      if (modal.item.returnShipment?.status !== "received") {
-                        await action({
-                          action: "authorize_return",
-                          caseId: modal.item.id,
-                          decision,
-                          reason: String(form.get("note")),
-                          labelReference: String(
-                            form.get("labelReference") || "",
-                          ),
-                        });
-                      }
-                      if (decision === "prepaid") {
-                        setModal(null);
-                        setNotice(
-                          "Prepaid return arranged. The customer pays no return shipping cost. Record handoff and receipt before approving the remedy.",
-                        );
-                        return;
-                      }
-                      await action({
-                        action: "resolve",
-                        caseId: modal.item.id,
-                        remedy: modal.item.request,
-                        note: String(form.get("note")),
-                      });
-                      setModal(null);
-                      setNotice(
-                        "Remedy processed. Check its financial status before considering it complete.",
-                      );
-                    });
-                  }}
-                >
-                  {modal.item.returnShipment?.status !== "received" && (
-                    <>
-                      <label>
-                        Return arrangement
-                        <select
-                          name="returnDecision"
-                          aria-label="Return arrangement"
-                        >
-                          <option value="waive">
-                            Approve a no-return remedy
-                          </option>
-                          <option value="prepaid">
-                            Arrange a merchant-paid return first
-                          </option>
-                        </select>
-                      </label>
-                      <label>
-                        Prepaid label reference (required for a return)
-                        <input
-                          name="labelReference"
-                          maxLength={100}
-                          placeholder="Demo carrier reference"
-                        />
-                      </label>
-                    </>
-                  )}
-                  <label>
-                    Reason and customer policy
-                    <textarea
-                      name="note"
-                      required
-                      minLength={10}
-                      maxLength={2000}
-                      rows={4}
-                    />
-                  </label>
-                  <button className="button primary full" disabled={busy}>
-                    Authorize {modal.item.request}
-                  </button>
-                </form>
-              </>
-            )}
-            {modal.kind === "return_shipping" && (
-              <>
-                <h2 id="modal-title">
-                  {modal.status === "in_transit"
-                    ? "Record your return handoff."
-                    : "Record the returned parcel."}
-                </h2>
-                <p className="muted">
-                  This demo records simulated carrier events. A tracking
-                  reference does not prove parcel contents; both parties can
-                  submit evidence separately.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const form = new FormData(e.currentTarget);
-                    void run(async () => {
-                      await action({
-                        action: "return_shipping",
-                        caseId: modal.item.id,
-                        status: modal.status,
-                        trackingReference: String(
-                          form.get("trackingReference"),
-                        ),
-                      });
-                      setModal(null);
-                      setNotice(
-                        "Return checkpoint recorded. Your request remains open until the remedy is processed.",
-                      );
-                    });
-                  }}
-                >
-                  <label>
-                    Return tracking reference
-                    <input
-                      required
-                      name="trackingReference"
-                      maxLength={100}
-                      defaultValue={
-                        modal.item.returnShipment?.trackingReference || ""
-                      }
-                    />
-                  </label>
-                  <button className="button primary full" disabled={busy}>
-                    Save return checkpoint
-                  </button>
-                </form>
-              </>
-            )}
-            {modal.kind === "return" && (
-              <>
-                <div className="modal-icon">
-                  <HeartHandshake />
-                </div>
-                <h2 id="modal-title">How can we put it right?</h2>
-                <p className="muted">
-                  Tell us what happened and choose your preferred remedy.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const form = new FormData(e.currentTarget);
-                    void run(async () => {
-                      await action({
-                        action: "return",
-                        orderId: modal.order.id,
-                        reason: form.get("reason"),
-                        request: form.get("request"),
-                      });
-                      setModal(null);
-                      setTab("support");
-                    });
-                  }}
-                >
-                  <label>
-                    What happened?
-                    <select name="reason">
-                      <option value="damaged">
-                        The product arrived damaged
-                      </option>
-                      <option value="wrong_item">
-                        I received the wrong product
-                      </option>
-                      <option value="not_delivered">
-                        My order has not arrived
-                      </option>
-                      <option value="canceled">
-                        The order needs canceling
-                      </option>
-                    </select>
-                  </label>
-                  <label>
-                    Your preferred resolution
-                    <select name="request">
-                      <option value="refund">Refund</option>
-                      <option value="replacement">
-                        Replacement at no extra charge
-                      </option>
-                    </select>
-                  </label>
-                  <div className="policy-note">
-                    Automated analysis alone cannot deny your request. You can
-                    ask for a person to review it.
-                  </div>
-                  <button className="button primary full" disabled={busy}>
-                    Open my request <ArrowRight size={16} />
-                  </button>
-                </form>
-              </>
-            )}
-            {modal.kind === "evidence" && (
-              <>
-                <h2 id="modal-title">Share your side.</h2>
-                <p className="muted">
-                  A clear description is welcome. Photos are optional; video is
-                  never required.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const form = new FormData(e.currentTarget);
-                    void run(async () => {
-                      await upload(
-                        form,
-                        modal.order
-                          ? { orderId: modal.order.id }
-                          : { caseId: modal.item!.id },
-                      );
-                      setModal(null);
-                      setNotice(
-                        "Evidence recorded. Integrity checks do not establish physical truth.",
-                      );
-                    });
-                  }}
-                >
-                  <label>
-                    Checkpoint
-                    <select
-                      name="checkpoint"
-                      onChange={() =>
-                        setModal({ ...modal, capture: undefined })
-                      }
-                    >
-                      {modal.order ? (
-                        <option value="seller_dispatch">Seller dispatch</option>
-                      ) : session?.actor.role === "buyer" ? (
-                        <>
-                          <option value="buyer_receipt">
-                            Customer receipt
-                          </option>
-                          <option value="buyer_return">
-                            Customer return dispatch
-                          </option>
-                        </>
-                      ) : (
-                        <>
-                          <option value="seller_dispatch">
-                            Seller dispatch record
-                          </option>
-                          <option value="seller_return">
-                            Seller return receipt
-                          </option>
-                        </>
-                      )}
-                    </select>
-                  </label>
-                  <label>
-                    Item serial / identifier (optional)
-                    <input name="serial" maxLength={100} />
-                  </label>
-                  <label>
-                    What does this record show?
-                    <textarea required name="note" rows={4} maxLength={2000} />
-                  </label>
-                  <label>
-                    Photo (optional, up to 4 MB)
-                    <input
-                      type="file"
-                      name="image"
-                      accept="image/png,image/jpeg,image/webp"
-                      capture="environment"
-                    />
-                  </label>
-                  <input
-                    type="hidden"
-                    name="captureSessionId"
-                    value={modal.capture?.id || ""}
-                  />
-                  <button
-                    type="button"
-                    className="button secondary full"
-                    disabled={busy}
-                    onClick={(e) => {
-                      const checkpoint = String(
-                        new FormData(e.currentTarget.form!).get("checkpoint"),
-                      );
-                      void run(async () => {
-                        const capture = (await action({
-                          action: "capture_session",
-                          checkpoint,
-                          ...(modal.order
-                            ? { orderId: modal.order.id }
-                            : { caseId: modal.item!.id }),
-                        })) as { id: string; code: string; expiresAt: string };
-                        setModal({ ...modal, capture });
-                      });
-                    }}
-                  >
-                    Get capture code (optional)
-                  </button>
-                  {modal.capture && (
-                    <p role="status">
-                      Capture code: <strong>{modal.capture.code}</strong>.
-                      Include it with the item identifier and condition in your
-                      photo. Expires{" "}
-                      {new Date(modal.capture.expiresAt).toLocaleTimeString()}.
-                      This records a link to your upload; it does not verify
-                      capture timing or physical truth.
+                    <ul className="product-facts">
+                      {modal.product.specs.map((spec) => (
+                        <li key={spec}>
+                          <Check size={14} />
+                          {spec}
+                        </li>
+                      ))}
+                    </ul>
+                    <p>
+                      Compatible with:{" "}
+                      {modal.product.compatibleModels.join(", ")}
                     </p>
-                  )}
-                  <button className="button primary full" disabled={busy}>
-                    Record evidence <Check size={16} />
-                  </button>
-                </form>
-              </>
-            )}
-            {modal.kind === "cancel" && (
-              <>
-                <h2 id="modal-title">Record a fulfillment cancellation.</h2>
-                <p className="muted">
-                  Captured payments remain recorded. The shopper chooses refund
-                  or replacement; cancellation alone does not execute a
-                  financial remedy.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const form = new FormData(e.currentTarget);
-                    void run(async () => {
-                      await action({
-                        action: "cancel_fulfillment",
-                        orderId: modal.order.id,
-                        reason: String(form.get("reason")),
-                      });
-                      setModal(null);
-                      setNotice(
-                        "Cancellation recorded; the customer can choose a remedy through support.",
-                      );
-                    });
-                  }}
-                >
-                  <label>
-                    Cancellation reason
-                    <textarea
-                      required
-                      name="reason"
-                      maxLength={2000}
-                      rows={3}
-                    />
-                  </label>
-                  <button className="button primary full" disabled={busy}>
-                    Record cancellation
-                  </button>
-                </form>
-              </>
-            )}
-            {modal.kind === "identify" && (
-              <>
-                <h2 id="modal-title">Check your device label.</h2>
-                <p className="muted">
-                  Use a clear photo of the model label. Identification is a
-                  suggestion: confirm the model before compatibility checks or
-                  purchase. Unknown or conflicting labels receive clarification.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const form = new FormData(e.currentTarget);
-                    form.set("selectedModel", model);
-                    void run(async () => {
-                      const response = await fetch("/api/identify", {
-                        method: "POST",
-                        body: form,
-                      });
-                      const result = await response.json();
-                      if (!response.ok) throw new Error(result.error);
-                      setModal({ kind: "identify", result });
-                    });
-                  }}
-                >
-                  <label>
-                    Device label photo
-                    <input
-                      required
-                      name="image"
-                      type="file"
-                      accept="image/png,image/jpeg,image/webp"
-                      capture="environment"
-                    />
-                  </label>
-                  <button className="button primary full" disabled={busy}>
-                    Read model label
-                  </button>
-                </form>
-                {modal.result && (
-                  <div className="analysis-panel">
-                    <p>{modal.result.message}</p>
-                    <small>
-                      {modal.result.mode === "fixture"
-                        ? "Synthetic label fixture adapter; arbitrary images are not recognized in fixture mode."
-                        : "Provider-extracted label; confirmation required."}
-                    </small>
-                    {modal.result.proposedModel && (
+                    <p className="muted">
+                      Source: {modal.product.source} ·{" "}
+                      {modal.product.sponsored
+                        ? "Sponsored listing. Organic ranking is independent of sponsorship."
+                        : "Curated catalog listing."}{" "}
+                      Product visual is a catalog illustration.
+                    </p>
+                    <div className="policy-note">
+                      You review the full amount and merchant before approving.
+                      Returns and replacements remain available through your
+                      order.
+                    </div>
+                    {!briefDirty &&
+                    modal.product.compatibleModels.includes(model) &&
+                    modal.product.price <= Number(budget) * 100 &&
+                    (!category || category === modal.product.category) ? (
                       <button
-                        className="button secondary full"
+                        className="button primary full"
+                        disabled={busy || !isBuyer}
+                        onClick={() => void choose(modal.product)}
+                      >
+                        Review purchase <ArrowRight size={16} />
+                      </button>
+                    ) : (
+                      <button
+                        className="button primary full"
                         onClick={() => {
-                          setModel(modal.result!.proposedModel!);
-                          setBriefDirty(true);
+                          const nextCategory = modal.product.category;
                           setModal(null);
-                          setNotice(
-                            "Device selection updated. Find my match saves it and renews older unpaid approvals.",
-                          );
+                          setTab("discover");
+                          browseCollection(nextCategory);
                         }}
                       >
-                        Use {modal.result.proposedModel}
+                        Match this collection to my device{" "}
+                        <ArrowRight size={16} />
                       </button>
                     )}
                   </div>
-                )}
-              </>
-            )}
-            {modal.kind === "scam" && (
-              <>
-                <div className="modal-icon">
-                  <MessageSquare />
                 </div>
-                <h2 id="modal-title">A second look before you pay.</h2>
-                <p className="muted">
-                  Share a message you're unsure about. Remove passwords and
-                  private codes first.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const form = new FormData(e.currentTarget);
-                    if (!session) {
-                      setError("Start a shopper session first.");
-                      return;
-                    }
-                    void run(async () => {
-                      setScam(
-                        (await action({
-                          action: "scam",
-                          message: String(form.get("message")),
-                        })) as ScamResult,
-                      );
-                    });
-                  }}
-                >
-                  <label>
-                    Seller message
-                    <textarea
-                      required
-                      name="message"
-                      rows={5}
-                      maxLength={6000}
-                      placeholder="Paste a message or the conversation you choose to share…"
-                    />
-                  </label>
-                  <button className="button primary full" disabled={busy}>
-                    Check this message <ShieldCheck size={16} />
-                  </button>
-                </form>
-                {scam && (
-                  <div className={`scam-result ${scam.level}`}>
-                    <strong>
-                      {scam.level === "low"
-                        ? "No listed warning signals found"
-                        : "Pause and verify"}
-                    </strong>
-                    {scam.reasons.map((reason, i) => (
-                      <p key={i}>{reason}</p>
-                    ))}
-                    <p>{scam.nextStep}</p>
+              )}
+              {modal.kind === "login" && (
+                <>
+                  <div className="modal-icon">
+                    <ShoppingBag />
                   </div>
-                )}
-              </>
-            )}
-            {error && (
-              <p className="modal-error" role="alert">
-                {error}
-              </p>
-            )}
-          </Dialog>
-        </div>
-      )}
+                  <h2 id="modal-title">
+                    {role === "buyer"
+                      ? "Your shopping space."
+                      : "Operator access."}
+                  </h2>
+                  <p className="muted">
+                    {role === "buyer"
+                      ? "Start an isolated test session, or join with a group invitation."
+                      : "Use a separate browser profile. Operator roles require the configured access code."}
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      void run(async () => {
+                        restoreSession(
+                          await api<Session>("/api/session", {
+                            role,
+                            accessCode,
+                            ...(role === "buyer" && invite
+                              ? { invite: invite.trim() }
+                              : {}),
+                            ...(role !== "buyer" && workspaceId
+                              ? { workspaceId: workspaceId.trim() }
+                              : {}),
+                          }),
+                        );
+                        setModal(null);
+                        setAccessCode("");
+                        setTab(role === "buyer" ? "discover" : "orders");
+                      });
+                    }}
+                  >
+                    <label>
+                      Role
+                      <select
+                        value={role}
+                        onChange={(e) => setRole(e.target.value)}
+                      >
+                        <option value="buyer">Shopper</option>
+                        <option value="seller">Seller</option>
+                        <option value="reviewer">Reviewer</option>
+                      </select>
+                    </label>
+                    <label>
+                      {role === "buyer"
+                        ? "Demo access code (if configured)"
+                        : "Operator access code"}
+                      <input
+                        type="password"
+                        autoComplete="off"
+                        value={accessCode}
+                        onChange={(e) => setAccessCode(e.target.value)}
+                      />
+                    </label>
+                    {role === "buyer" ? (
+                      <label>
+                        Group invitation (optional)
+                        <input
+                          value={invite}
+                          onChange={(e) => setInvite(e.target.value)}
+                        />
+                      </label>
+                    ) : (
+                      <label>
+                        Customer workspace ID
+                        <input
+                          required
+                          value={workspaceId}
+                          onChange={(e) => setWorkspaceId(e.target.value)}
+                        />
+                      </label>
+                    )}
+                    <button className="button primary full" disabled={busy}>
+                      Enter workspace <ArrowRight size={16} />
+                    </button>
+                  </form>
+                </>
+              )}
+              {modal.kind === "quote" && (
+                <>
+                  <div className="modal-icon">
+                    <ShieldCheck />
+                  </div>
+                  <h2 id="modal-title">Your choice. Fully reviewed.</h2>
+                  <p className="muted">
+                    Confirm the exact purchase before payment. Changes require
+                    approval again.
+                  </p>
+                  <div className="quote-product">
+                    <ProductArt
+                      product={productById(modal.quote.productId)}
+                      compact
+                    />
+                    <div>
+                      <strong>{productById(modal.quote.productId).name}</strong>
+                      <p>Confirmed fit: {modal.quote.model}</p>
+                    </div>
+                  </div>
+                  {modal.quote.deliveryBy && (
+                    <p>
+                      Delivery promise:{" "}
+                      {new Date(modal.quote.deliveryBy).toLocaleDateString()}
+                    </p>
+                  )}
+                  <p>
+                    Merchant policy: request returns within 30 days of recorded
+                    delivery. Merchant-paid return shipping for qualifying
+                    claims; uncertain or late requests receive review. Provider
+                    disputes remain a separate process.
+                  </p>
+                  <dl className="quote-summary">
+                    <div>
+                      <dt>Merchant</dt>
+                      <dd>BuyerGuard demo store</dd>
+                    </div>
+                    <div>
+                      <dt>Item</dt>
+                      <dd>{formatMoney(modal.quote.amount)}</dd>
+                    </div>
+                    <div>
+                      <dt>Shipping & taxes</dt>
+                      <dd>Included in this demo quote</dd>
+                    </div>
+                    <div>
+                      <dt>Return window</dt>
+                      <dd>30 days under demo policy</dd>
+                    </div>
+                    <div className="total">
+                      <dt>Total approved</dt>
+                      <dd>{formatMoney(modal.quote.amount)}</dd>
+                    </div>
+                  </dl>
+                  <p className="muted">
+                    Valid until{" "}
+                    {new Date(modal.quote.expiresAt).toLocaleTimeString()}.
+                    Recipient: {modal.quote.payee}.
+                  </p>
+                  {session?.modes.payments === "sandbox" &&
+                  session.paypalClientId ? (
+                    <PayPalCheckout
+                      clientId={session.paypalClientId}
+                      quote={modal.quote}
+                      action={action}
+                      onDone={finishCheckout}
+                      onError={showPaymentError}
+                    />
+                  ) : (
+                    <>
+                      <div className="fixture-note">
+                        Simulated payment test. No money is charged.
+                      </div>
+                      <button
+                        className="button primary full"
+                        disabled={busy}
+                        onClick={() =>
+                          void run(async () => {
+                            const order = (await action({
+                              action: "checkout",
+                              quoteId: modal.quote.id,
+                              fingerprint: modal.quote.fingerprint,
+                            })) as Order;
+                            await action({
+                              action: "capture",
+                              orderId: order.id,
+                            });
+                            finishCheckout();
+                          })
+                        }
+                      >
+                        <CreditCard size={17} /> Approve simulated purchase
+                      </button>
+                    </>
+                  )}
+                </>
+              )}
+              {modal.kind === "resolve" && (
+                <>
+                  <h2 id="modal-title">Approve the customer’s choice.</h2>
+                  <p className="muted">
+                    Review the original records and payment before authorizing
+                    the requested {modal.item.request}. Conflicting or missing
+                    evidence does not automatically deny the request.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const form = new FormData(e.currentTarget);
+                      void run(async () => {
+                        const decision = String(
+                          form.get("returnDecision") || "waive",
+                        );
+                        if (modal.item.returnShipment?.status !== "received") {
+                          await action({
+                            action: "authorize_return",
+                            caseId: modal.item.id,
+                            decision,
+                            reason: String(form.get("note")),
+                            labelReference: String(
+                              form.get("labelReference") || "",
+                            ),
+                          });
+                        }
+                        if (decision === "prepaid") {
+                          setModal(null);
+                          setNotice(
+                            "Prepaid return arranged. The customer pays no return shipping cost. Record handoff and receipt before approving the remedy.",
+                          );
+                          return;
+                        }
+                        await action({
+                          action: "resolve",
+                          caseId: modal.item.id,
+                          remedy: modal.item.request,
+                          note: String(form.get("note")),
+                        });
+                        setModal(null);
+                        setNotice(
+                          "Remedy processed. Check its financial status before considering it complete.",
+                        );
+                      });
+                    }}
+                  >
+                    {modal.item.returnShipment?.status !== "received" && (
+                      <>
+                        <label>
+                          Return arrangement
+                          <select
+                            name="returnDecision"
+                            aria-label="Return arrangement"
+                          >
+                            <option value="waive">
+                              Approve a no-return remedy
+                            </option>
+                            <option value="prepaid">
+                              Arrange a merchant-paid return first
+                            </option>
+                          </select>
+                        </label>
+                        <label>
+                          Prepaid label reference (required for a return)
+                          <input
+                            name="labelReference"
+                            maxLength={100}
+                            placeholder="Demo carrier reference"
+                          />
+                        </label>
+                      </>
+                    )}
+                    <label>
+                      Reason and customer policy
+                      <textarea
+                        name="note"
+                        required
+                        minLength={10}
+                        maxLength={2000}
+                        rows={4}
+                      />
+                    </label>
+                    <button className="button primary full" disabled={busy}>
+                      Authorize {modal.item.request}
+                    </button>
+                  </form>
+                </>
+              )}
+              {modal.kind === "return_shipping" && (
+                <>
+                  <h2 id="modal-title">
+                    {modal.status === "in_transit"
+                      ? "Record your return handoff."
+                      : "Record the returned parcel."}
+                  </h2>
+                  <p className="muted">
+                    This demo records simulated carrier events. A tracking
+                    reference does not prove parcel contents; both parties can
+                    submit evidence separately.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const form = new FormData(e.currentTarget);
+                      void run(async () => {
+                        await action({
+                          action: "return_shipping",
+                          caseId: modal.item.id,
+                          status: modal.status,
+                          trackingReference: String(
+                            form.get("trackingReference"),
+                          ),
+                        });
+                        setModal(null);
+                        setNotice(
+                          "Return checkpoint recorded. Your request remains open until the remedy is processed.",
+                        );
+                      });
+                    }}
+                  >
+                    <label>
+                      Return tracking reference
+                      <input
+                        required
+                        name="trackingReference"
+                        maxLength={100}
+                        defaultValue={
+                          modal.item.returnShipment?.trackingReference || ""
+                        }
+                      />
+                    </label>
+                    <button className="button primary full" disabled={busy}>
+                      Save return checkpoint
+                    </button>
+                  </form>
+                </>
+              )}
+              {modal.kind === "return" && (
+                <>
+                  <div className="modal-icon">
+                    <HeartHandshake />
+                  </div>
+                  <h2 id="modal-title">How can we put it right?</h2>
+                  <p className="muted">
+                    Tell us what happened and choose your preferred remedy.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const form = new FormData(e.currentTarget);
+                      void run(async () => {
+                        await action({
+                          action: "return",
+                          orderId: modal.order.id,
+                          reason: form.get("reason"),
+                          request: form.get("request"),
+                        });
+                        setModal(null);
+                        setTab("support");
+                      });
+                    }}
+                  >
+                    <label>
+                      What happened?
+                      <select name="reason">
+                        <option value="damaged">
+                          The product arrived damaged
+                        </option>
+                        <option value="wrong_item">
+                          I received the wrong product
+                        </option>
+                        <option value="not_delivered">
+                          My order has not arrived
+                        </option>
+                        <option value="canceled">
+                          The order needs canceling
+                        </option>
+                      </select>
+                    </label>
+                    <label>
+                      Your preferred resolution
+                      <select name="request">
+                        <option value="refund">Refund</option>
+                        <option value="replacement">
+                          Replacement at no extra charge
+                        </option>
+                      </select>
+                    </label>
+                    <div className="policy-note">
+                      Automated analysis alone cannot deny your request. You can
+                      ask for a person to review it.
+                    </div>
+                    <button className="button primary full" disabled={busy}>
+                      Open my request <ArrowRight size={16} />
+                    </button>
+                  </form>
+                </>
+              )}
+              {modal.kind === "evidence" && (
+                <>
+                  <h2 id="modal-title">Share your side.</h2>
+                  <p className="muted">
+                    A clear description is welcome. Photos are optional; video
+                    is never required.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const form = new FormData(e.currentTarget);
+                      void run(async () => {
+                        await upload(
+                          form,
+                          modal.order
+                            ? { orderId: modal.order.id }
+                            : { caseId: modal.item!.id },
+                        );
+                        setModal(null);
+                        setNotice(
+                          "Evidence recorded. Integrity checks do not establish physical truth.",
+                        );
+                      });
+                    }}
+                  >
+                    <label>
+                      Checkpoint
+                      <select
+                        name="checkpoint"
+                        onChange={() =>
+                          setModal({ ...modal, capture: undefined })
+                        }
+                      >
+                        {modal.order ? (
+                          <option value="seller_dispatch">
+                            Seller dispatch
+                          </option>
+                        ) : session?.actor.role === "buyer" ? (
+                          <>
+                            <option value="buyer_receipt">
+                              Customer receipt
+                            </option>
+                            <option value="buyer_return">
+                              Customer return dispatch
+                            </option>
+                          </>
+                        ) : (
+                          <>
+                            <option value="seller_dispatch">
+                              Seller dispatch record
+                            </option>
+                            <option value="seller_return">
+                              Seller return receipt
+                            </option>
+                          </>
+                        )}
+                      </select>
+                    </label>
+                    <label>
+                      Item serial / identifier (optional)
+                      <input name="serial" maxLength={100} />
+                    </label>
+                    <label>
+                      What does this record show?
+                      <textarea
+                        required
+                        name="note"
+                        rows={4}
+                        maxLength={2000}
+                      />
+                    </label>
+                    <label>
+                      Photo (optional, up to 4 MB)
+                      <input
+                        type="file"
+                        name="image"
+                        accept="image/png,image/jpeg,image/webp"
+                        capture="environment"
+                      />
+                    </label>
+                    <input
+                      type="hidden"
+                      name="captureSessionId"
+                      value={modal.capture?.id || ""}
+                    />
+                    <button
+                      type="button"
+                      className="button secondary full"
+                      disabled={busy}
+                      onClick={(e) => {
+                        const checkpoint = String(
+                          new FormData(e.currentTarget.form!).get("checkpoint"),
+                        );
+                        void run(async () => {
+                          const capture = (await action({
+                            action: "capture_session",
+                            checkpoint,
+                            ...(modal.order
+                              ? { orderId: modal.order.id }
+                              : { caseId: modal.item!.id }),
+                          })) as {
+                            id: string;
+                            code: string;
+                            expiresAt: string;
+                          };
+                          setModal({ ...modal, capture });
+                        });
+                      }}
+                    >
+                      Get capture code (optional)
+                    </button>
+                    {modal.capture && (
+                      <p role="status">
+                        Capture code: <strong>{modal.capture.code}</strong>.
+                        Include it with the item identifier and condition in
+                        your photo. Expires{" "}
+                        {new Date(modal.capture.expiresAt).toLocaleTimeString()}
+                        . This records a link to your upload; it does not verify
+                        capture timing or physical truth.
+                      </p>
+                    )}
+                    <button className="button primary full" disabled={busy}>
+                      Record evidence <Check size={16} />
+                    </button>
+                  </form>
+                </>
+              )}
+              {modal.kind === "cancel" && (
+                <>
+                  <h2 id="modal-title">Record a fulfillment cancellation.</h2>
+                  <p className="muted">
+                    Captured payments remain recorded. The shopper chooses
+                    refund or replacement; cancellation alone does not execute a
+                    financial remedy.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const form = new FormData(e.currentTarget);
+                      void run(async () => {
+                        await action({
+                          action: "cancel_fulfillment",
+                          orderId: modal.order.id,
+                          reason: String(form.get("reason")),
+                        });
+                        setModal(null);
+                        setNotice(
+                          "Cancellation recorded; the customer can choose a remedy through support.",
+                        );
+                      });
+                    }}
+                  >
+                    <label>
+                      Cancellation reason
+                      <textarea
+                        required
+                        name="reason"
+                        maxLength={2000}
+                        rows={3}
+                      />
+                    </label>
+                    <button className="button primary full" disabled={busy}>
+                      Record cancellation
+                    </button>
+                  </form>
+                </>
+              )}
+              {modal.kind === "identify" && (
+                <>
+                  <h2 id="modal-title">Check your device label.</h2>
+                  <p className="muted">
+                    Use a clear photo of the model label. Identification is a
+                    suggestion: confirm the model before compatibility checks or
+                    purchase. Unknown or conflicting labels receive
+                    clarification.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const form = new FormData(e.currentTarget);
+                      form.set("selectedModel", model);
+                      void run(async () => {
+                        const response = await fetch("/api/identify", {
+                          method: "POST",
+                          body: form,
+                        });
+                        const result = await response.json();
+                        if (!response.ok) throw new Error(result.error);
+                        setModal({ kind: "identify", result });
+                      });
+                    }}
+                  >
+                    <label>
+                      Device label photo
+                      <input
+                        required
+                        name="image"
+                        type="file"
+                        accept="image/png,image/jpeg,image/webp"
+                        capture="environment"
+                      />
+                    </label>
+                    <button className="button primary full" disabled={busy}>
+                      Read model label
+                    </button>
+                  </form>
+                  {modal.result && (
+                    <div className="analysis-panel">
+                      <p>{modal.result.message}</p>
+                      <small>
+                        {modal.result.mode === "fixture"
+                          ? "Synthetic label fixture adapter; arbitrary images are not recognized in fixture mode."
+                          : "Provider-extracted label; confirmation required."}
+                      </small>
+                      {modal.result.proposedModel && (
+                        <button
+                          className="button secondary full"
+                          onClick={() => {
+                            setModel(modal.result!.proposedModel!);
+                            setBriefDirty(true);
+                            setModal(null);
+                            setNotice(
+                              "Device selection updated. Find my match saves it and renews older unpaid approvals.",
+                            );
+                          }}
+                        >
+                          Use {modal.result.proposedModel}
+                        </button>
+                      )}
+                    </div>
+                  )}
+                </>
+              )}
+              {modal.kind === "scam" && (
+                <>
+                  <div className="modal-icon">
+                    <MessageSquare />
+                  </div>
+                  <h2 id="modal-title">A second look before you pay.</h2>
+                  <p className="muted">
+                    Share a message you're unsure about. Remove passwords and
+                    private codes first.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const form = new FormData(e.currentTarget);
+                      if (!session) {
+                        setError("Start a shopper session first.");
+                        return;
+                      }
+                      void run(async () => {
+                        setScam(
+                          (await action({
+                            action: "scam",
+                            message: String(form.get("message")),
+                          })) as ScamResult,
+                        );
+                      });
+                    }}
+                  >
+                    <label>
+                      Seller message
+                      <textarea
+                        required
+                        name="message"
+                        rows={5}
+                        maxLength={6000}
+                        placeholder="Paste a message or the conversation you choose to share…"
+                      />
+                    </label>
+                    <button className="button primary full" disabled={busy}>
+                      Check this message <ShieldCheck size={16} />
+                    </button>
+                  </form>
+                  {scam && (
+                    <div className={`scam-result ${scam.level}`}>
+                      <strong>
+                        {scam.level === "low"
+                          ? "No listed warning signals found"
+                          : "Pause and verify"}
+                      </strong>
+                      {scam.reasons.map((reason, i) => (
+                        <p key={i}>{reason}</p>
+                      ))}
+                      <p>{scam.nextStep}</p>
+                    </div>
+                  )}
+                </>
+              )}
+              {error && (
+                <p className="modal-error" role="alert">
+                  {error}
+                </p>
+              )}
+            </Dialog>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
@@ -2097,11 +2565,15 @@ function PageHeading({
   detail: string;
 }) {
   return (
-    <div className="page-heading">
+    <motion.div
+      className="page-heading"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <div className="eyebrow">{eyebrow}</div>
       <h1>{title}</h1>
       <p>{detail}</p>
-    </div>
+    </motion.div>
   );
 }
 function Empty({ title, detail }: { title: string; detail: string }) {
