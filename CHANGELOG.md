@@ -21,6 +21,11 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Shared the demo request schema with generated OpenAPI, added all three voice endpoints and documented complete manual journeys/expected results. Each browser-suite run gets a fresh isolated data directory so retained demo limits cannot pollute subsequent runs.
 - All 150 tests and lint/typecheck pass; 19 initial full-suite journeys passed. Four failure checks needed scoped alert selectors because Next also creates a route-announcement alert; they pass after the correction, along with identification and voice matching. The support draft journey exposed a click before restoration; it passes after the restoration guard. Final full production regression follows.
 
+## 2026-10-07 — Production experience verification and voice naming
+
+- Application c8a829d passes the optimized build and all 25 journeys against packaged standalone production (2.9 minutes). GitHub run 37623012403 passes quality and production app/worker/PostgreSQL container checks. The release includes the microphone worklet, excludes environment/private data, and keeps live voice disabled.
+- Manual review checked the actual production glass controls/rotating geometry, mobile support/footer, no-login scenario entry and editable voice controls. A voice reply still showed an internal device identifier; corrected it to the concrete profile name, supplied that display name in grounded native tool responses and added an explicit browser assertion. Lint/typecheck pass for the naming fix; final release checks follow.
+
 ## 2026-10-07 — Glass surfaces and genuine product geometry
 
 - Implemented a muted teal glass material across navigation, buttons, catalog, dialogs and service surfaces: beveled highlights, translucent edges, contact depth and an explicit press state. The closing footer and original DALE wordmark now sit on a broad desaturated teal composition. Reading surfaces retain opaque cores and keyboard focus remains visible.

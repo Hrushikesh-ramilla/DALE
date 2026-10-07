@@ -123,6 +123,9 @@ test("voice demo prepares actual matches, permits corrections and cannot authori
   await expect(page.getByLabel("Maximum budget, USD")).toHaveValue("40");
   await expect(page.getByLabel("Looking for")).toHaveValue("chargers");
   await expect(page.getByLabel("Feature to prioritize")).toHaveValue("65W");
+  await expect(page.locator(".voice-reply")).toContainText(
+    "USB-C Laptop (65W)",
+  );
   expect(
     (await (await page.request.get("/api/session")).json()).orders,
   ).toHaveLength(0);
