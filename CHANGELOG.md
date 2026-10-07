@@ -268,3 +268,5 @@ Corrected the native model comparison contract so an empty eligible set can retu
 The task runner also respects the workspace's saved fixture AI mode when the host configuration later changes to live. The no-billing gate cannot accidentally promote an existing fixture shopper to provider calls.
 
 The delivery-to-return browser journey now waits for the seller's recorded shipment and delivery states before refreshing the buyer. This removes a cross-session race exposed by the PostgreSQL container run without relaxing the required delivered status.
+
+The complete evidence/refund journey now starts with the sourced agent's real-device recommendation. It checks the shopper's recorded delivery through the agent, prepares an order-specific damaged-item draft without submitting it, then exercises explicit submission, both-party evidence and an authorized fixture refund.

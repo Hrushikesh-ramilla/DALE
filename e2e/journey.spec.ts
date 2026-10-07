@@ -9,17 +9,18 @@ async function start(page: Page) {
   ).toBeVisible();
 }
 async function buy(page: Page) {
+  await page.goto("/");
   await page
-    .locator(".product-card")
-    .filter({
-      has: page.getByRole("heading", {
-        name: "65W USB-C Wall Charger",
-        exact: true,
-      }),
-    })
-    .getByRole("button", { name: "Review purchase" })
+    .getByRole("button", { name: "Try a real device", exact: true })
     .click();
-  await expect(page.getByRole("dialog")).toContainText("$29.00");
+  await page.getByRole("button", { name: "Send task", exact: true }).click();
+  await page
+    .getByRole("button", {
+      name: "Review agent option Apple 40W Dynamic Power Adapter",
+      exact: true,
+    })
+    .click();
+  await expect(page.getByRole("dialog")).toContainText("$39.00");
   await page
     .getByRole("button", { name: "Approve simulated purchase" })
     .click();
@@ -27,13 +28,16 @@ async function buy(page: Page) {
     page.getByText("Fixture payment recorded.", { exact: false }),
   ).toBeVisible();
 }
-test("customer purchase, evidence, operator refund, and persistent status", async ({
+test("sourced agent purchase, order-specific support, evidence, refund, and persistence", async ({
   page,
   browser,
 }) => {
-  await start(page);
   await buy(page);
   const session = await (await page.request.get("/api/session")).json();
+  expect(session.orders[0].quote).toMatchObject({
+    productId: "R001",
+    amount: 3900,
+  });
   const sellerContext = await browser.newContext();
   const seller = await sellerContext.newPage();
   await seller.goto("/");
@@ -53,9 +57,25 @@ test("customer purchase, evidence, operator refund, and persistent status", asyn
   await expect(seller.locator(".status-chip")).toHaveText("shipped");
   await seller.getByRole("button", { name: "Simulate delivery" }).click();
   await expect(seller.locator(".status-chip")).toHaveText("delivered");
-  await page.reload();
-  await page.getByRole("button", { name: "My orders", exact: true }).click();
+  await page.goto("/");
+  await page.getByLabel("Your task for DALE").fill("Show my orders");
+  await page.getByRole("button", { name: "Send task", exact: true }).click();
+  await expect(page.getByLabel("DALE task result")).toContainText(
+    "Apple 40W Dynamic Power Adapter",
+  );
+  await expect(page.getByLabel("DALE task result")).toContainText("delivered");
   await expect(page.locator(".status-chip")).toHaveText("delivered");
+  await page
+    .getByLabel("Your task for DALE")
+    .fill("My delivered item is damaged and I want a refund");
+  await page.getByRole("button", { name: "Send task", exact: true }).click();
+  await expect(page).toHaveURL(/\/support$/);
+  expect(
+    (await (await page.request.get("/api/session")).json()).cases,
+  ).toHaveLength(0);
+  await page
+    .getByRole("button", { name: "Choose an order for this draft" })
+    .click();
   await page.getByRole("button", { name: "Get help / return" }).click();
   await page.getByRole("button", { name: "Open my request" }).click();
   await expect(
