@@ -29,7 +29,9 @@
     "db:seed": "tsx scripts/seed.ts",
     "docs:api": "tsx scripts/generate-openapi.ts",
     "verify:performance": "tsx scripts/verify-performance.ts",
-    "verify:shopping": "tsx scripts/verify-shopping.ts"
+    "verify:shopping": "tsx scripts/verify-shopping.ts",
+    "verify:agent": "tsx scripts/verify-agent-hosted.ts",
+    "verify:agent:restart": "tsx scripts/verify-agent-hosted.ts restart"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.1146.0",

@@ -11,7 +11,7 @@ The opening task router is not the completed AI product. The next release must d
 
 Initial real-data acceptance journey: identify the exact MacBook Air M2 size, compare manufacturer-supported USB-C adapters under a stated USD budget, account for the charging cable, explain why fast charging or another adapter fails the budget, review an immutable simulated merchant offer, then inspect the resulting order or prepare a remedy. This is a curated evidence pack, not a claim to cover the world's catalog or fulfill manufacturer orders.
 
-Implementation: milestones 1–3 are implemented, including manufacturer evidence, private continuation, guarded Gemini planning/comparison, order inspection, support drafts and the source-linked interface. Local domain/provider/workflow checks pass. Milestone 4 is undergoing final production browser and PostgreSQL container acceptance. Hosted installation and live Gemini acceptance remain separate external gates. Current executed results are in docs/VALIDATION.md; docs/MANUAL_TESTS.md begins with the sourced buyer journey.
+Implementation: milestones 1–4 are implemented and released as application 2c9b845. The source-linked buyer journey, protected checkout, recorded delivery, support/evidence/refund flow and restart persistence pass locally, in production-container CI and over public HTTPS. The checksum/backup installer executed on the existing EC2 instance. Live Gemini acceptance, genuine PayPal financial completion, physical captures and independent human review remain separate gates; no AI billing or spend was enabled. SSM is the pending permanent access mechanism. Current executed results are in docs/VALIDATION.md; docs/MANUAL_TESTS.md begins with the sourced buyer journey.
 
 ## Historical milestones
 

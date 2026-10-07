@@ -1,6 +1,6 @@
 # Sourced buyer-agent acceptance journey
 
-Open `http://localhost:3000/`. A guest task creates a private engineering workspace without a login form. Payments and fulfillment are simulated; real product identity/specifications are sourced. Catalog assistance makes no model calls while the no-spend gate is active.
+Open `https://16.4.25.181.sslip.io/` or `http://localhost:3000/`. A guest task creates a private engineering workspace without a login form. Payments and fulfillment are simulated; real product identity/specifications are sourced. Catalog assistance makes no model calls while the no-spend gate is active.
 
 1. Type: **Find a charger for my MacBook Air M2 under $50**. Expect a question about 13-inch/15-inch; no product recommendation or purchase.
 2. Reply: **13-inch**. Expect a question about the charging cable. Open manufacturer links to verify the evidence yourself.
@@ -20,7 +20,7 @@ Live-model acceptance is separate: an owner must verify free quota and disabled 
 
 ## Legacy sample-profile task workspace
 
-Use the revised local application at http://localhost:3000/ for these steps. The public EC2 build remains older until deployment access is restored.
+Use the deployed application at https://16.4.25.181.sslip.io/ or the local production preview at http://localhost:3000/ for these steps.
 
 | Step                                                                                                   | Expected result                                                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -37,11 +37,11 @@ Use the revised local application at http://localhost:3000/ for these steps. The
 
 Typed matching currently supports one product type and an explicit sample profile: **USB-C Laptop (65W/100W/45W)** or **Barrel-jack Laptop (45W)**. Requests outside the supported grammar need clarification. These steps test workflow behavior; sample catalog records do not establish real manufacturer specifications or live offers.
 
-Prepared 7 October 2026. Hosted application: https://16.4.25.181.sslip.io.
+Updated 8 October 2026. Hosted application: https://16.4.25.181.sslip.io.
 
-The current DALE redesign is available locally at http://localhost:3000/shop. The steps below use its unbranded product/profile names. Until the redesign is deployed, the hosted build uses the earlier names: Atlas 14/Atlas 14 Pro/Orbit 13/Slate 11 correspond to USB-C Laptop (65W/100W/45W)/Barrel-jack Laptop (45W). Label fixture images retain those original internal identifiers; confirmation displays the new profile names.
+The current DALE design is deployed and also available locally. The steps below use its unbranded sample product/profile names. Atlas 14/Atlas 14 Pro/Orbit 13/Slate 11 are internal fixture identifiers corresponding to USB-C Laptop (65W/100W/45W)/Barrel-jack Laptop (45W). Label fixture images retain those internal identifiers; confirmation displays the clear profile names.
 
-The revised local sourced-agent release includes guided entry, 3D and voice fixtures and retains the black-and-white design. Public EC2 still serves `5b393c0`, so its older UI does not include these additions. Genuine PayPal capture/refund/webhook verification, current live Gemini accuracy, controlled physical captures and independent human acceptance remain open. Documentation commits do not change either running application build. Check `/api/health` and Environment details when recording results.
+The revised local sourced-agent release includes guided entry, 3D and voice fixtures and retains the black-and-white design. Public EC2 and the local preview serve application `2c9b845`, including the sourced agent and these additions. Genuine PayPal capture/refund/webhook verification, current live Gemini accuracy, controlled physical captures and independent human acceptance remain open. Documentation commits do not change either running application build. Check `/api/health` and Environment details when recording results.
 
 These are instructions and expected results, not a claim that a human has executed them. Existing automated and hosted evidence is in [VALIDATION.md](VALIDATION.md). Record your actual observations, including failures.
 

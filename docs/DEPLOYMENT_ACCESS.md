@@ -1,5 +1,7 @@
 # Stable access to the existing EC2 instance
 
+8 October: application 2c9b845 deployed successfully using the one-connection stream. Checksum verification, protected pre-upgrade snapshots, service activation, public HTTPS, the expected BUILD_ID and actual app/worker restart persistence pass. This successful SSH session does not establish a stable permanent connection; the SSM setup below remains pending.
+
 7 October recovery: direct SSH became reachable again. The original OneDrive/Desktop key was rejected for broad local file permissions; the existing owner-restricted ignored copy at `.data/deploy/ssh-key.pem` works. Reuse that copy for deployment rather than reintroducing broad key access. This fixes local OpenSSH key loading, not the changing-IP architecture. SSM still requires the one-time authenticated AWS/IAM setup below.
 
 `node scripts/deploy-existing-ec2.mjs <unique-release-id>` streams the prepared release/private configuration and runs the checksum/backup/rollback installer over one pinned SSH connection. It avoids opening a separate SCP connection after a successful SSH check. The transfer bundle streams through process pipes; no extra environment archive is written to disk. The connection still requires the current SSH source to be allowed; it is not a substitute for SSM.

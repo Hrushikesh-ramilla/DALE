@@ -1,5 +1,19 @@
 # Validation status
 
+## Current sourced-agent release — 8 October 2026
+
+Application **2c9b845d10bfbb6707def137e66c5a4e0bddedb7** serves both [public HTTPS](https://16.4.25.181.sslip.io/) and the local production preview. The visible public browser completed the four-message real-device journey: exact M2 size clarification, cable ownership, rejection at $50, then the complete $58 bundle at $60. The recommendation, rejected adapters, source links and simulated-merchant disclosure are visible in `.data/reports/dale-hosted-sourced-final.png`. This manual journey makes no purchase or provider call.
+
+Executed: lint, TypeScript, **182 unit/contract/database tests**, optimized build, **32 local packaged-production Chromium journeys (3.3m)**, **107 deterministic scenarios**, **300 frozen synthetic records**, **180 mocked native-adapter checks**, and **200 seeded workflow traces**. [GitHub run 37671112870](https://github.com/Hrushikesh-ramilla/buyerguard/actions/runs/37671112870) passes both jobs: **32 optimized-production browser journeys (2.7m)** and **32 app/worker/PostgreSQL container journeys (2.5m)**. The complete sourced-agent journey now includes recorded delivery, order-specific support, both-party evidence and an authorized fixture refund. Browser regressions found during acceptance were repaired; earlier failed/superseded runs do not establish completion.
+
+Hosted execution passes **47 checks**: 17 sourced-agent checks, 12 shopping/identification checks, 14 engineering-scenario checks, and four sourced-agent restart checks. The original session/order/private-image restart verifier also passes. A real app-and-worker restart changed the observed application instance; the private sourced conversation, brief, order and case matched the protected pre-restart hash. These checks use fixtures and simulated shipping; they do not establish genuine financial settlement, live model accuracy or physical damage timing.
+
+The single-connection SSH transfer and checksum/backup installer **executed successfully**. App, worker and Caddy are active; public TLS and the expected BUILD_ID pass after restart. The prior code release, private environment, database dump and evidence snapshot were retained before upgrade. Archive: **14,115,783 bytes**, **2,961 entries**, SHA-256 `b37946b78d26fe48074a8b0482a93e031ca10307d026fe578c7d703e99986dc2`. Inventory excludes environment files, private data and PEM keys, and includes the native voice worklet. This observed upgrade/restart does not establish that automatic rollback was exercised.
+
+Remaining gates: live Gemini text/vision/voice acceptance when free quota and disabled billing are available; genuine PayPal sandbox approval/capture/refund/webhook completion; physical evidence captures; independent human acceptance. Real-data coverage is the reviewed two-model M2 Air charging pack, not unrestricted product research or live inventory. AI and live voice remain disabled under the owner's no-spend instruction. SSM remains the recommended permanent deployment connection; it is not configured, although this release's SSH deployment succeeded. Verification scripts and redacted reports contain no provider credentials or owner cookies.
+
+Earlier release evidence follows; its deployment and catalog limitations describe those earlier points in time.
+
 ## Sourced buyer-agent recovery — application 84a6b3a
 
 Local standalone production health serves application `84a6b3a890a3dd5ee667cef29a9ff436148324e6`. The real-device task was manually executed in the visible browser: the 13-inch M2 Air normal-charge example returned the $39 Apple adapter using the confirmed existing MagSafe 3 cable, rejected the $59 adapter and $58 bundle on budget, and displayed manufacturer evidence links. Screenshot `.data/reports/dale-sourced-agent.png` records the rendered comparison at the user's actual sidebar width. No live model or financial-provider call was made by this manual journey.
