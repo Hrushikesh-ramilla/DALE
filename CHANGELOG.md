@@ -9,6 +9,11 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Live voice defaults to disabled and release packaging forces disabled settings until the owner confirms free quota and disabled billing. No live Gemini call or AI spend occurred. Both standalone/Docker packages include the microphone worklet asset.
 - Lint/typecheck and all 150 unit/contract/database tests pass before the final presentation refinements. Fifteen new demo/voice domain tests cover ownership, persona continuity, bounded storage, native token locking and quota/5xx retry behavior. Earlier targeted browser checks passed for guided purchase/return/reset and synthetic native audio/tool/playback/stop. Expanded failure/scenario browser regression and final production verification follow in the release milestone.
 
+## 2026-10-07 — Stable deployment access preparation
+
+- Documented Systems Manager access for the existing EC2 instance and prepared a PowerShell tunnel helper that checks AWS login, agent readiness and required local tooling before opening an IAM-authorized localhost tunnel. This removes dependence on the deployment machine's changing VPN IP once activated.
+- The script passes PowerShell parsing. No authenticated AWS CLI identity is available; instance role/agent activation, tunnel verification and hosted deployment remain pending. No paid resource was provisioned and no SSH security group was broadened. The owner requested cloud setup questions be deferred until local implementation and verification finish.
+
 ## 2026-10-07 — Glass surfaces and genuine product geometry
 
 - Implemented a muted teal glass material across navigation, buttons, catalog, dialogs and service surfaces: beveled highlights, translucent edges, contact depth and an explicit press state. The closing footer and original DALE wordmark now sit on a broad desaturated teal composition. Reading surfaces retain opaque cores and keyboard focus remains visible.
