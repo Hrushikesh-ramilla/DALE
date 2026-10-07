@@ -2,6 +2,11 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Dark editorial agent opening
+
+- Replaced the bright agent opening and composer with charcoal and deeper black surfaces, soft ivory text, muted warm-gray captions and restrained borders. Added a Cormorant Garamond serif headline to match the requested magazine character. Agent response cards, receipts, task/voice inputs, focus indicators and action buttons follow the scoped palette; teal remains confined to the closing footer.
+- Optimized build and eight affected packaged-production browser journeys pass, including guest retry, task persistence/protected review, unsupported real-device/payment requests, return drafts, synthetic voice and four-width responsive checks. Rendered headline/body/caption contrast ranges from 7.47:1 to 14.81:1 for the inspected agent surfaces. The running local build and release archive align at f2892ec; no provider call or spend occurred.
+
 ## 2026-10-07 — Put DALE's task workspace first
 
 - Added a visible task composer, persisted private responses, completed-action receipts, source-labelled sample options and bounded history. The sample collection now follows the agent workspace. Guest task entry starts an owned fixture demo without an account form; failed task retries retain that workspace. Voice entry remains within the task workspace with readable labels and captions.

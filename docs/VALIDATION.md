@@ -1,5 +1,15 @@
 # Validation status
 
+## Current dark editorial opening
+
+Application `f2892ec07e8c263ca08333c1ed488db2159957c7` runs locally at http://localhost:3000/. The agent opening now uses charcoal `#141414`, a deeper black composer `#0e0e0e`, raised fields/receipts `#1c1c1c`, soft ivory text `#ebe6dc` and muted captions `#b0aba3`. Its bundled Cormorant Garamond heading provides the magazine treatment. The agent palette is scoped; the teal footer remains isolated.
+
+The optimized build passes. Eight affected Chromium journeys against the packaged production build pass in 31.2 seconds: guest retry and owned-workspace preservation, task entry/persistence/protected review, unverified real-device/financial-request limits, return draft submission, synthetic voice matching/drafts, and desktop/tablet/390px/320px layout and footer checks. No domain or backend source changed for this visual milestone. The preceding complete agent revision passes both quality and real PostgreSQL/app/worker container CI jobs in [run 37653365612](https://github.com/Hrushikesh-ramilla/buyerguard/actions/runs/37653365612), including all 29 browser journeys and 159 unit tests.
+
+Manual inspection of the rendered headline, supporting copy, catalog-source captions, task field, examples and action receipt measured text contrast between **7.47:1 and 14.81:1** on their opaque backgrounds; these observations do not establish every accessibility criterion or medical eye comfort. Screenshot `.data/reports/dale-agent-charcoal.png` records the actual local opening. Local health reports f2892ec. Standalone archive: **14,109,963 bytes**, SHA-256 `23021c9c211105583d531a61eef895cd6bb18223af80fc9848530aa33cabf402`. Public deployment remains older; no live provider call or billing was enabled.
+
+Previous visible-agent release evidence follows.
+
 ## Current visible-agent release
 
 Application `d40c93aa6fe853f457eeca5ddc3e2b02447c112d` is running at http://localhost:3000/. DALE's task composer leads the opening; completed tasks show private persisted responses, actual-action receipts, sample sources and protected review controls. Typed matching requires an explicit sample device profile. Arbitrary real-product research remains unconnected and is labelled in the interface. The public EC2 build remains `5b393c0` pending stable deployment access. No live Gemini, payment or other provider call was made by the new task runner.
