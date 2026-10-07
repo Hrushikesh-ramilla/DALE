@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Manual acceptance guide and CI sign-off
+
+- Added complete role/fixture setup and manual steps with expected outcomes for shopping, labels, approvals, groups, warnings, fulfillment, both-party evidence, prepaid returns, refunds, replacements, appeals, recovery and privacy. Distinguished browser tests from clock/concurrency/API/operational checks and genuine provider gates.
+- Rechecked public health: deployed application 5b393c0 is ready. Retried the GitHub container job canceled before steps by hosted runner allocation; run 37373916879 at 53c284b now passes both jobs, including all ten production-container browser journeys.
+- Linked the guide from the README and refreshed implementation/validation status. No application behavior changed; genuine PayPal completion, no-spend live model accuracy, independent testers and physical captures remain open.
+
 ## 2026-10-06 — Final hosted regression and current-state recovery
 
 - Deployed application commit 5b393c0 on the existing EC2 instance; 12 hosted shopping/message/label checks and 14 scenario/evidence/return/group checks pass. The declined-group participant scenario now completes the customer's original $26.10 fixture payment.

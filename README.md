@@ -20,6 +20,8 @@ Shopping asks for confirmation when the message conflicts with the selected devi
 
 See [MASTER_PLAN.md](MASTER_PLAN.md) for product policy and acceptance gates, [docs/VALIDATION.md](docs/VALIDATION.md) for verified scope, [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for hosting, and [CHANGELOG.md](CHANGELOG.md) for milestone history.
 
+For hands-on testing, follow [docs/MANUAL_TESTS.md](docs/MANUAL_TESTS.md): private role setup, a no-spend fixture workspace, all implemented feature steps and expected outcomes, recovery scenarios, and the remaining sign-off gates.
+
 The initial release uses one managed electronics storefront. Payment integration targets the PayPal sandbox. Fixture responses and synthetic shipping events are labeled and do not establish live integration or physical truth.
 
 ## License

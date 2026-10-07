@@ -1,6 +1,6 @@
 # Plan coverage and remaining work
 
-Updated 6 October 2026. A row marked partial is not a completed release gate. The master plan's acceptance targets remain unchanged except for the user's selection of existing EC2 hosting instead of Render.
+Updated 7 October 2026. The deployed demo is ready for manual testing; genuine provider, live accuracy and independent acceptance gates remain open. The master plan's acceptance targets remain unchanged except for the user's selection of existing EC2 hosting instead of Render. See [MANUAL_TESTS.md](MANUAL_TESTS.md) for role setup, steps and expected outcomes across the implemented scope.
 
 | Requirement | Current behavior and executed evidence | Remaining milestone |
 | --- | --- | --- |
@@ -12,7 +12,7 @@ Updated 6 October 2026. A row marked partial is not a completed release gate. Th
 | BG06 parts match | Curated compatibility, exact canonical labels, native OCR schema/ambiguity contracts and six owned synthetic label fixtures; explicit confirmation before brief changes | Live OCR accuracy and independent label review when no-spend quota is available |
 | BG07 recovery | Leased durable jobs, provider-read capture recovery, authorized refunds, truthful failures, appeals/deadlines, cancellation/late-order choices and approval-bound delivery terms; hosted PostgreSQL/scenario checks and 200 traces pass; manual provider reconciliation procedure documented | Genuine sandbox refund/recovery verification |
 | Financial integration | Actual sandbox OAuth/create/retrieve, registered webhook endpoint, forged-event rejection | USD-capable merchant approval, capture, refund, corresponding genuine verified webhook receipts |
-| Engineer delivery | Deployed 5b393c0: 26 hosted shopping/scenario checks, public HTTPS/PostgreSQL, photo/session/order/brief/conversation restart persistence, OpenAPI/private seeding, 200 traces, isolated 92-workspace restore and verified encrypted off-instance backup; 100-read/10-session p95 31ms application and 175ms network inclusive; acceptance pack ready | Latest GitHub jobs await hosted runner allocation; independent acceptance and genuine provider gates |
+| Engineer delivery | Deployed 5b393c0: 26 hosted shopping/scenario checks, public HTTPS/PostgreSQL, photo/session/order/brief/conversation restart persistence, OpenAPI/private seeding, 200 traces, isolated 92-workspace restore and verified encrypted off-instance backup; 100-read/10-session p95 31ms application and 175ms network inclusive; 53c284b CI passes both jobs after retry, including ten production-container browser journeys; manual guide and acceptance pack ready | Independent acceptance and genuine provider gates |
 | Evaluation | 107 deterministic scenarios, 300 frozen synthetic records, 200 replayable traces, 20 frozen release-label images and 180 mocked native requests on a preregistered 60-case/three-repeat subset | Actual live subset/OCR, staged physical captures, independent claim labels and five human testers; runnable pack in docs/ACCEPTANCE.md |
 
 Dependency policy: the merchant configuration blocks only real PayPal approval/capture/refund/webhook validation. It does not block fixture workflows, recovery, evidence, documentation, evaluations, or deployment checks. A successful fixture result must never relabel a sandbox transaction or count as genuine provider completion.
