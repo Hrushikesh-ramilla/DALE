@@ -12,7 +12,7 @@ const textResponse = z.object({
     z.object({ message: z.object({ content: z.string().nullable() }) }),
   ),
 });
-async function completion<T>(
+export async function completion<T>(
   schema: z.ZodType<T>,
   instruction: string,
   input: unknown,

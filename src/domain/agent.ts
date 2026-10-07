@@ -1,5 +1,8 @@
 import { z } from "zod";
-import { models } from "./catalog";
+import { knownModels as models } from "./catalog";
+import type { ResearchContext } from "./agent-plan";
+import type { ResearchReport } from "./research";
+import type { ScamResult } from "./scams";
 import { mentionedModels } from "./identification";
 import { understandVoice, type VoiceIntent } from "./voice";
 
@@ -22,6 +25,17 @@ export type AgentRun = {
   productIds: string[];
   briefVersion?: number;
   intent: VoiceIntent;
+  mode?: "catalog" | "model" | "unavailable";
+  proposedTask?: string;
+  recommendation?: {
+    productId: string | null;
+    sourceIds: string[];
+    reasons: string[];
+  };
+  context?: ResearchContext;
+  research?: ResearchReport;
+  safety?: ScamResult;
+  orders?: { id: string; product: string; status: string; nextStep: string }[];
 };
 
 export function understandAgent(input: AgentRequest): VoiceIntent {
@@ -36,7 +50,7 @@ export function understandAgent(input: AgentRequest): VoiceIntent {
     return {
       kind: "clarification",
       message:
-        "Real-product lookup is not connected. I cannot verify an arbitrary device. For a sample task, explicitly name USB-C Laptop (65W), USB-C Laptop (100W), USB-C Laptop (45W) or Barrel-jack Laptop (45W).",
+        "That device is not verified yet. Give the exact model and year. The real evidence pack covers MacBook Air M2 (13-inch or 15-inch) chargers; sample tasks can explicitly use USB-C Laptop (65W), USB-C Laptop (100W), USB-C Laptop (45W) or Barrel-jack Laptop (45W).",
     };
   if (
     /\b(?:macbook|iphone|ipad|thinkpad|surface|galaxy|dell|lenovo|asus|acer|samsung|apple|hewlett|zenbook|ideapad|pavilion|latitude|inspiron)\b/i.test(

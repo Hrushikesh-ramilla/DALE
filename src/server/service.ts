@@ -108,6 +108,13 @@ export async function snapshot(actor: Actor) {
         productIds: run.productIds,
         briefVersion: run.briefVersion,
         intent: run.intent,
+        mode: run.mode,
+        proposedTask: run.proposedTask,
+        recommendation: run.recommendation,
+        context: run.context,
+        research: run.research,
+        safety: run.safety,
+        orders: run.orders,
       })),
     fixtureWorkspace: !!state.fixtureWorkspace,
     demo: state.demo
@@ -404,7 +411,9 @@ export async function makeQuote(
       expiresAt: new Date(expiry).toISOString(),
       version: 1,
       deliveryBy: new Date(Date.now() + 5 * 86400000).toISOString(),
-      returnPolicy: "merchant-policy-v1",
+      returnPolicy: productId.startsWith("R")
+        ? `merchant-policy-v1; evidence:${product.source}; simulated-offer`
+        : "merchant-policy-v1",
       groupId,
       fingerprint: "",
       provider: mode,

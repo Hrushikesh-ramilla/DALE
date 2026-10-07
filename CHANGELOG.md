@@ -255,3 +255,6 @@ Each implementation milestone records behavior, validation, and remaining limita
 # Buyer-agent recovery: sourced catalog
 
 Added manufacturer-backed records for two exact M2 MacBook Air models, two adapters and a complete normal-charge bundle. Compatibility, cable completeness, budget and freshness are checked before an offer can be reviewed. Original engineering fixtures remain isolated. See `docs/PRODUCT_EVIDENCE.md` for provenance and scope.
+# Buyer-agent recovery: structured tools and private conversation
+
+Implemented direct-Gemini structured planning over research, own-order inspection, support preparation and advisory message checks. Semantic device/budget interpretations require shopper confirmation; generated choices and evidence IDs are validated against tool results. Private follow-up context survives reload, and changes invalidate old approvals. Model calls require explicit no-billing gates; fixtures never contact a provider. Added protocol, adversarial, quota and purchase-journey tests.
