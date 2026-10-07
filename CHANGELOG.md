@@ -14,6 +14,13 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Documented Systems Manager access for the existing EC2 instance and prepared a PowerShell tunnel helper that checks AWS login, agent readiness and required local tooling before opening an IAM-authorized localhost tunnel. This removes dependence on the deployment machine's changing VPN IP once activated.
 - The script passes PowerShell parsing. No authenticated AWS CLI identity is available; instance role/agent activation, tunnel verification and hosted deployment remain pending. No paid resource was provisioned and no SSH security group was broadened. The owner requested cloud setup questions be deferred until local implementation and verification finish.
 
+## 2026-10-07 — Complete draft handling and release contracts
+
+- Voice support drafts now retain the stated issue/remedy, let the shopper choose an order, prefill the review form and require explicit submission. Drafts clear on submission/discard/logout. Owned demo groups guide the second-shopper persona instead of offering a protected invitation that cannot be joined anonymously.
+- Disabled initial navigation/session/device-label controls until session restoration, avoiding clicks on inert pre-hydration controls. Removed an overlapping background product illustration and corrected the demo-link contrast. Added persistent live microphone stop controls, expired-token rejection before capture and clear disconnect/restart behavior.
+- Shared the demo request schema with generated OpenAPI, added all three voice endpoints and documented complete manual journeys/expected results. Each browser-suite run gets a fresh isolated data directory so retained demo limits cannot pollute subsequent runs.
+- All 150 tests and lint/typecheck pass; 19 initial full-suite journeys passed. Four failure checks needed scoped alert selectors because Next also creates a route-announcement alert; they pass after the correction, along with identification and voice matching. The support draft journey exposed a click before restoration; it passes after the restoration guard. Final full production regression follows.
+
 ## 2026-10-07 — Glass surfaces and genuine product geometry
 
 - Implemented a muted teal glass material across navigation, buttons, catalog, dialogs and service surfaces: beveled highlights, translucent edges, contact depth and an explicit press state. The closing footer and original DALE wordmark now sit on a broad desaturated teal composition. Reading surfaces retain opaque cores and keyboard focus remains visible.

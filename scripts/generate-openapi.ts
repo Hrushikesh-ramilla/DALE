@@ -3,6 +3,8 @@ import { z } from "zod";
 import { actionSchema } from "../src/domain/actions";
 import { briefSchema } from "../src/domain/brief";
 import { scenarioKind } from "../src/server/scenarios";
+import { demoRequestSchema } from "../src/server/demo";
+import { voiceRequest } from "../src/domain/voice";
 const jsonSchema = (schema: z.ZodType) =>
   z.toJSONSchema(schema, { io: "input" });
 const responses = {
@@ -59,6 +61,13 @@ const spec = {
         description:
           "Server-issued HttpOnly session cookie. Obtain with POST /api/session; do not publish cookies in traces.",
       },
+      demoOwner: {
+        type: "apiKey",
+        in: "cookie",
+        name: "dale_demo",
+        description:
+          "HttpOnly ownership cookie issued only by the guided demo launcher; never expose it in reports.",
+      },
     },
     schemas: {
       Action: jsonSchema(actionSchema),
@@ -66,6 +75,41 @@ const spec = {
     },
   },
   paths: {
+    "/api/demo": {
+      post: {
+        ...command(
+          "Launch one of nine isolated fixture-only scenarios without credentials. Persona/reset require both the existing session and its owner cookie; demo ownership cannot grant ordinary operator access. Reset rotates ownership and archives prior audit/payment records. Lifetime bounds: 200 demo workspaces, 300 actions and 50 analyses per workspace, 8 uploaded originals per workspace and 128 total demo uploads (4 MiB each). Exhausted lifetime limits require an operator review rather than a minute wait.",
+          jsonSchema(demoRequestSchema),
+        ),
+        security: [],
+      },
+      get: {
+        security: [{ session: [], demoOwner: [] }],
+        description:
+          "Export only this owned fixture scenario's private snapshot and redacted action/time audit. Tokens, hashes and credentials are omitted; synthetic=true does not establish provider completion.",
+        responses,
+      },
+    },
+    "/api/voice/session": {
+      get: {
+        security: [{ session: [] }],
+        description:
+          "Buyer-only availability: fixture, disabled or live. Fixture never uses microphone recognition or provider calls. Live requires owner-confirmed free quota and disabled billing.",
+        responses,
+      },
+      post: {
+        security: [{ session: [] }],
+        description:
+          "Same-origin buyer-only native Live token issuance, without a request body. Returns availability if fixture/disabled, otherwise a single-use token with 2-minute expiry and 30-second connection window, locked model/audio/transcription and prepare_request tool. Limit 2 tokens per actor/minute and 10 globally/minute. Permanent key never leaves server. Transient 5xx retries are bounded; no paid fallback.",
+        responses,
+      },
+    },
+    "/api/voice/intent": {
+      post: command(
+        "Buyer-only transcript-to-validated-intent preparation. Deterministic catalog matching, support drafting or own-order navigation only. Financial approval/code execution requests are rejected. USD/English bounded intent grammar; ambiguity requires clarification. At most 10 requests/actor/minute and shared demo analysis lifetime limit. Does not send another model request.",
+        jsonSchema(voiceRequest),
+      ),
+    },
     "/api/health": {
       get: {
         security: [],

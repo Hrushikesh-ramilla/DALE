@@ -11,6 +11,12 @@ test("3D product selection, rotation and context-loss fallback retain catalog ac
   await expect(async () =>
     expect((await canvas.screenshot()).equals(before)).toBe(false),
   ).toPass();
+  await page.locator(".closing-wordmark").scrollIntoViewIfNeeded();
+  await expect(canvas).toHaveCount(0);
+  await page
+    .getByRole("button", { name: "Next featured product" })
+    .scrollIntoViewIfNeeded();
+  await expect(canvas).toBeVisible();
   await page.getByRole("button", { name: "Next featured product" }).click();
   await expect(page.locator(".stage-caption")).toContainText(
     "512GB Portable SSD",

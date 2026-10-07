@@ -149,3 +149,40 @@ test("voice demo prepares actual matches, permits corrections and cannot authori
   await page.getByRole("button", { name: "Use this request" }).click();
   await expect(page).toHaveURL(/\/orders$/);
 });
+test("voice support draft prefills a chosen order but still needs explicit customer submission", async ({
+  page,
+}) => {
+  await page.goto("/demo");
+  await page.getByRole("button", { name: /^Return a delivered item/ }).click();
+  await expect(page.getByLabel("Demo persona")).toHaveValue("buyer");
+  await page.getByRole("button", { name: "Support", exact: true }).click();
+  await expect(page).toHaveURL(/\/support$/);
+  await page.getByRole("button", { name: "Talk to DALE" }).click();
+  await page
+    .getByLabel("Transcript — editable before preparing a request")
+    .fill("I received the wrong item and want a replacement");
+  await page.getByRole("button", { name: "Use this request" }).click();
+  await expect(page.getByLabel("Voice support draft")).toContainText(
+    "wrong item",
+  );
+  expect(
+    (await (await page.request.get("/api/session")).json()).cases,
+  ).toHaveLength(0);
+  await page
+    .getByRole("button", { name: "Choose an order for this draft" })
+    .click();
+  await page.getByRole("button", { name: "Get help / return" }).click();
+  await expect(page.getByLabel("What happened?")).toHaveValue("wrong_item");
+  await expect(page.getByLabel("Your preferred resolution")).toHaveValue(
+    "replacement",
+  );
+  await page.getByRole("button", { name: "Open my request" }).click();
+  await expect(
+    page.getByRole("heading", { name: "wrong item · replacement requested" }),
+  ).toBeVisible();
+  const snapshot = await (await page.request.get("/api/session")).json();
+  expect(snapshot.cases).toHaveLength(1);
+  expect(snapshot.cases[0].status).toBe("open");
+  expect(snapshot.orders[0].status).toBe("delivered");
+  expect(snapshot.orders[0].refundedAmount).toBe(0);
+});

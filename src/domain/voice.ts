@@ -10,7 +10,12 @@ export const voiceRequest = z.object({
 export type VoiceIntent =
   | { kind: "shopping"; brief: ShoppingBrief }
   | { kind: "navigate"; destination: "orders" | "support" }
-  | { kind: "support_draft"; text: string }
+  | {
+      kind: "support_draft";
+      text: string;
+      reason?: "damaged" | "wrong_item" | "not_delivered" | "canceled";
+      request?: "refund" | "replacement";
+    }
   | { kind: "clarification" | "review_required"; message: string };
 export function understandVoice(
   input: z.infer<typeof voiceRequest>,
@@ -99,7 +104,24 @@ export function understandVoice(
   if (
     /\b(?:refund|replace|replacement|return|damaged|wrong item)\b/i.test(text)
   )
-    return { kind: "support_draft", text };
+    return {
+      kind: "support_draft",
+      text,
+      reason: /\bwrong (?:item|product)\b/i.test(text)
+        ? "wrong_item"
+        : /\bdamag(?:ed|e)\b/i.test(text)
+          ? "damaged"
+          : /\b(?:not arrived|not delivered|hasn't arrived)\b/i.test(text)
+            ? "not_delivered"
+            : /\bcancel/i.test(text)
+              ? "canceled"
+              : undefined,
+      request: /\breplac(?:e|ement)\b/i.test(text)
+        ? "replacement"
+        : /\brefund\b/i.test(text)
+          ? "refund"
+          : undefined,
+    };
   if (/\b(?:my orders?|track (?:my )?order|order status)\b/i.test(text))
     return { kind: "navigate", destination: "orders" };
   if (/\b(?:support|customer care|help with (?:my )?order)\b/i.test(text))

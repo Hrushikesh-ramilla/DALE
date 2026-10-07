@@ -2719,12 +2719,6 @@ body {
   position: relative;
   width: 100%;
 }
-.scene-loading-art {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  opacity: 0.15;
-}
 .product-scene {
   height: 100%;
   width: 100%;
@@ -2970,7 +2964,9 @@ body {
   text-align: center;
 }
 .announcement a {
-  color: #d8e5d9;
+  color: #26453a;
+  font-weight: 600;
+  text-decoration-color: #26453a80;
   font-size: 11px;
 }
 .demo-launcher {

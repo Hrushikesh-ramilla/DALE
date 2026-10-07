@@ -142,6 +142,10 @@ export default function Storefront() {
       .includes(catalogQuery.trim().toLowerCase()),
   );
   const [scenario, setScenario] = useState<ScenarioKind>("fresh");
+  const [supportDraft, setSupportDraft] = useState<Extract<
+    VoiceResult["intent"],
+    { kind: "support_draft" }
+  > | null>(null);
   const restoreSession = useCallback((data: Session) => {
     setSession(data);
     setVisibleLimit(12);
@@ -232,6 +236,7 @@ export default function Storefront() {
       } else if (data.intent.kind === "navigate")
         setTab(data.intent.destination);
       else if (data.intent.kind === "support_draft") {
+        setSupportDraft(data.intent);
         setTab("support");
         setNotice(
           `Your support draft: ${data.intent.text} Choose the relevant order and review its request.`,
@@ -242,7 +247,7 @@ export default function Storefront() {
       )
         setNotice(data.intent.message);
     },
-    [restoreSession, setTab],
+    [restoreSession, setTab, setSupportDraft],
   );
   const isBuyer = !session || session.actor.role === "buyer";
   async function findProducts(confirmConstraints = false) {
@@ -374,6 +379,7 @@ export default function Storefront() {
                 className={tab === item ? "active" : ""}
                 aria-current={tab === item ? "page" : undefined}
                 onClick={() => setTab(item)}
+                disabled={restoring}
               >
                 {
                   {
@@ -401,6 +407,7 @@ export default function Storefront() {
               void run(async () => {
                 await api("/api/session", undefined, "DELETE");
                 setSession(null);
+                setSupportDraft(null);
                 setTab("discover");
               })
             }
@@ -411,7 +418,11 @@ export default function Storefront() {
             {isBuyer ? "Shopper" : session.actor.role} · Sign out
           </button>
         ) : (
-          <button className="button primary small" onClick={startShopping}>
+          <button
+            className="button primary small"
+            onClick={startShopping}
+            disabled={restoring}
+          >
             Start shopping <ArrowRight size={15} />
           </button>
         )}
@@ -568,6 +579,7 @@ export default function Storefront() {
                 <button
                   className="button secondary small"
                   onClick={() => setModal({ kind: "identify" })}
+                  disabled={restoring}
                 >
                   Identify device from label
                 </button>
@@ -1073,7 +1085,16 @@ export default function Storefront() {
               title="A little buying power."
               detail="Two commitments unlock 10% off. Each shopper pays independently. Your locked price stays yours."
             />
-            {session?.invite && (
+            {session?.demo && (
+              <div className="invite-panel">
+                <p>
+                  For this private demo, switch Demo persona to Second shopper
+                  to join the same deal. Each shopper keeps a separate order and
+                  approval.
+                </p>
+              </div>
+            )}
+            {session?.invite && !session.demo && (
               <div className="invite-panel">
                 <div>
                   <strong>Invite someone to your group</strong>
@@ -1400,6 +1421,28 @@ export default function Storefront() {
                   <strong>Human</strong>
                   <span>Review available</span>
                 </div>
+              </div>
+            )}
+            {isBuyer && supportDraft && (
+              <div className="analysis-panel" aria-label="Voice support draft">
+                <strong>Your support draft</strong>
+                <p>{supportDraft.text}</p>
+                <p className="muted">
+                  Choose an order, then correct and review the issue and
+                  preferred resolution before submitting.
+                </p>
+                <button
+                  className="button secondary"
+                  onClick={() => setTab("orders")}
+                >
+                  Choose an order for this draft
+                </button>
+                <button
+                  className="button secondary"
+                  onClick={() => setSupportDraft(null)}
+                >
+                  Discard draft
+                </button>
               </div>
             )}
             {session?.cases.length ? (
@@ -2282,12 +2325,16 @@ export default function Storefront() {
                         });
                         setModal(null);
                         setTab("support");
+                        setSupportDraft(null);
                       });
                     }}
                   >
                     <label>
                       What happened?
-                      <select name="reason">
+                      <select
+                        name="reason"
+                        defaultValue={supportDraft?.reason || "damaged"}
+                      >
                         <option value="damaged">
                           The product arrived damaged
                         </option>
@@ -2304,7 +2351,10 @@ export default function Storefront() {
                     </label>
                     <label>
                       Your preferred resolution
-                      <select name="request">
+                      <select
+                        name="request"
+                        defaultValue={supportDraft?.request || "refund"}
+                      >
                         <option value="refund">Refund</option>
                         <option value="replacement">
                           Replacement at no extra charge

@@ -2,6 +2,10 @@
 
 Customer-first shopping, safe checkout, group discounts, and evidence-backed order resolution.
 
+Open `/demo` for a complete provider-free engineer journey without an account or access code. Nine isolated scenarios include shopping, group discounts, returns, conflicting evidence, deadlines and refund recovery. Use the owned demo persona selector for seller/reviewer steps, and export the redacted test report. Reset retains earlier audit history.
+
+The storefront uses dimensional glass controls, original volumetric Three.js product illustrations, GSAP typography and a desaturated teal DALE closing composition. Talk to DALE supports editable shopping/support/order requests; the demo uses labeled transcript fixtures. Native Gemini Live microphone/audio transport is implemented and synthetically tested, but live recognition remains unverified and disabled until free quota and disabled billing are confirmed. No AI spend is required for the demo.
+
 ## Development
 
 Requires Node.js 22 or newer. Install locked dependencies with `npm ci`, copy `.env.example` to `.env`, then run `npm run dev`. Local development creates an ignored embedded PostgreSQL database in `.data`. Set a private `OPERATOR_ACCESS_CODE` to test seller and reviewer roles in separate browser profiles.

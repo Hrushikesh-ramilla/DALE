@@ -16,6 +16,16 @@ import {
 } from "./state";
 import { takeRequestBudget } from "./budgets";
 import { getDatabase } from "./database";
+import { z } from "zod";
+import { scenarioKind } from "./scenarios";
+export const demoRequestSchema = z.discriminatedUnion("action", [
+  z.object({ action: z.literal("launch"), kind: scenarioKind }),
+  z.object({ action: z.literal("reset"), kind: scenarioKind }),
+  z.object({
+    action: z.literal("persona"),
+    persona: z.enum(["buyer", "second_buyer", "seller", "reviewer"]),
+  }),
+]);
 const COOKIE = "dale_demo";
 const ownerHash = (token: string) =>
   createHash("sha256").update(token).digest("hex");
