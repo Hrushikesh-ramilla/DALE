@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { models } from "./catalog";
+import { knownModels as models } from "./catalog";
 import { mentionedModels } from "./identification";
 import { briefSchema, type ShoppingBrief } from "./brief";
 export const voiceRequest = z.object({

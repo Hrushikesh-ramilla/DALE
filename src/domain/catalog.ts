@@ -1,3 +1,4 @@
+import { realModels, realProducts } from "./research";
 export type Category =
   "chargers" | "docks" | "storage" | "audio" | "accessories";
 export type Product = {
@@ -14,6 +15,7 @@ export type Product = {
   source: string;
 };
 export const models = ["Atlas 14", "Atlas 14 Pro", "Orbit 13", "Slate 11"];
+export const knownModels = [...models, ...realModels];
 export const deviceProfiles: Record<string, string> = {
   "Atlas 14": "USB-C Laptop (65W)",
   "Atlas 14 Pro": "USB-C Laptop (100W)",
@@ -138,7 +140,7 @@ export const catalog: Product[] = Array.from({ length: 5 }, (_, variant) =>
 ).flat();
 
 export function productById(id: string): Product {
-  const product = catalog.find((item) => item.id === id);
+  const product = [...catalog, ...realProducts].find((item) => item.id === id);
   if (!product) throw new Error("Unknown product");
   return product;
 }
@@ -150,8 +152,8 @@ export function searchCatalog(input: {
   preference?: string;
   priority?: "price" | "features";
 }) {
-  if (!models.includes(input.model)) return [];
-  return catalog
+  if (!knownModels.includes(input.model)) return [];
+  return (realModels.includes(input.model) ? realProducts : catalog)
     .filter(
       (product) =>
         product.compatibleModels.includes(input.model) &&

@@ -15,6 +15,12 @@ export const briefSchema = z.object({
   preference: z.string().trim().max(80).default(""),
   priority: z.enum(["price", "features"]).default("price"),
   confirmConstraints: z.boolean().default(false),
+  realRequirements: z
+    .object({
+      cable: z.enum(["unknown", "none", "usb60", "usb100", "magsafe3"]),
+      fastCharging: z.boolean(),
+    })
+    .optional(),
 });
 export type ShoppingBrief = Omit<
   z.infer<typeof briefSchema>,

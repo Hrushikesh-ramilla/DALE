@@ -252,3 +252,6 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Recorded the product plan, customer-priority policies, deployment approach, and acceptance requirements.
 - Added repository documentation, MIT license, and ignore rules for credentials and generated files.
 - Validation: inspected the empty repository and verified existing GitHub authentication. No application behavior exists at this milestone.
+# Buyer-agent recovery: sourced catalog
+
+Added manufacturer-backed records for two exact M2 MacBook Air models, two adapters and a complete normal-charge bundle. Compatibility, cable completeness, budget and freshness are checked before an offer can be reviewed. Original engineering fixtures remain isolated. See `docs/PRODUCT_EVIDENCE.md` for provenance and scope.
