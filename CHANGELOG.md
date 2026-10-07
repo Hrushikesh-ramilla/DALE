@@ -274,3 +274,5 @@ The complete evidence/refund journey now starts with the sourced agent's real-de
 This multi-party journey uses a normal shopper workspace so configured operator access applies. Guest engineering workspaces intentionally require their owner's persona selector instead; the guest sourced-checkout journey verifies that separate entry path.
 
 The extended journey also exposed that order navigation hid the agent's result and composer. Order pages now retain the buyer agent and voice controls, so recorded order inspection and follow-up support remain usable after navigation.
+
+CI browser acceptance now uses the optimized standalone application built by its quality job, with browser assets copied explicitly and failure reports retained. The featured-budget test waits for the interactive task control and visible product dialog before asserting purchase controls; it no longer treats an absent dialog as successful verification.

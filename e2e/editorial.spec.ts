@@ -164,6 +164,9 @@ test("collection discovery, search and detail review preserve approval boundarie
 
 test("featured discovery cannot bypass a changed budget", async ({ page }) => {
   await page.goto("/");
+  await expect(
+    page.getByRole("button", { name: "Send task", exact: true }),
+  ).toBeEnabled();
   await page.getByLabel("Maximum budget, USD").fill("20");
   await page
     .getByRole("button", {
@@ -171,6 +174,7 @@ test("featured discovery cannot bypass a changed budget", async ({ page }) => {
       exact: true,
     })
     .click();
+  await expect(page.getByRole("dialog")).toBeVisible();
   await expect(
     page.getByRole("dialog").getByRole("button", { name: "Review purchase" }),
   ).toHaveCount(0);
