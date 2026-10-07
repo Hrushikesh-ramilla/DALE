@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Guided engineer entry and voice workflows
+
+- Added a no-account `/demo` with nine private, fixture-only scenarios, stable shopper/second-shopper/seller/reviewer personas, guided expected outcomes, redacted exports and archive-preserving reset. Owner-bound cookies, expiry, origin checks and shared activity/storage limits prevent fixture role switching from granting ordinary-account or cross-workspace access. Ordinary operator scenarios remain restricted.
+- Added visible voice entry, editable transcripts, deterministic English shopping/support/order intents and a native Gemini Live audio adapter with constrained, single-use short-lived tokens. PCM resampling, playback, interruption and resource cleanup are implemented. A persistent microphone stop control remains reachable after scrolling to results. Financial approval and arbitrary code execution remain protected.
+- Live voice defaults to disabled and release packaging forces disabled settings until the owner confirms free quota and disabled billing. No live Gemini call or AI spend occurred. Both standalone/Docker packages include the microphone worklet asset.
+- Lint/typecheck and all 150 unit/contract/database tests pass before the final presentation refinements. Fifteen new demo/voice domain tests cover ownership, persona continuity, bounded storage, native token locking and quota/5xx retry behavior. Earlier targeted browser checks passed for guided purchase/return/reset and synthetic native audio/tool/playback/stop. Expanded failure/scenario browser regression and final production verification follow in the release milestone.
+
 ## 2026-10-07 — Glass surfaces and genuine product geometry
 
 - Implemented a muted teal glass material across navigation, buttons, catalog, dialogs and service surfaces: beveled highlights, translucent edges, contact depth and an explicit press state. The closing footer and original DALE wordmark now sit on a broad desaturated teal composition. Reading surfaces retain opaque cores and keyboard focus remains visible.

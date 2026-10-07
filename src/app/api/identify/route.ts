@@ -3,11 +3,13 @@ import { actorFromRequest } from "@/server/auth";
 import { apiError, json, limitedBody, requireSameOrigin } from "@/server/http";
 import { identifyDevice } from "@/server/identification";
 import { takeRequestBudget } from "@/server/budgets";
+import { takeDemoBudget } from "@/server/demo";
 export async function POST(request: Request) {
   try {
     requireSameOrigin(request);
     const actor = await actorFromRequest();
     await takeRequestBudget(actor, "analysis", 10);
+    await takeDemoBudget(actor, "analysis", 50);
     const contentType = request.headers.get("content-type") || "";
     if (!contentType.startsWith("multipart/form-data"))
       throw new Error("Use a multipart label image.");

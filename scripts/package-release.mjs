@@ -14,6 +14,7 @@ await build({
   external: ["pg", "@electric-sql/pglite", "@aws-sdk/client-s3"],
 });
 await cp(".next/static", ".next/standalone/.next/static", { recursive: true });
+await cp("public", ".next/standalone/public", { recursive: true });
 await cp("deploy", ".next/standalone/deploy", { recursive: true });
 const source = parse(await readFile(".env"));
 let values;
@@ -54,6 +55,11 @@ values.BUILD_ID = execFileSync("git", ["rev-parse", "HEAD"], {
   encoding: "utf8",
 }).trim();
 if (process.env.DEPLOY_AI_MODE) values.AI_MODE = process.env.DEPLOY_AI_MODE;
+// Live voice is opt-in only after the owner verifies free quota and disabled billing.
+values.VOICE_MODE = "disabled";
+values.VOICE_MODEL = "gemini-3.8-live";
+values.VOICE_FREE_TIER_CONFIRMED = "false";
+values.VOICE_BILLING_DISABLED = "false";
 await writeFile(
   `${directory}/production.env`,
   Object.entries(values)

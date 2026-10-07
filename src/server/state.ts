@@ -107,6 +107,12 @@ export type Workspace = {
   id: string;
   adapterModes?: { payments: "fixture" | "sandbox"; ai: "fixture" | "live" };
   fixtureWorkspace?: boolean;
+  demo?: {
+    ownerHash: string;
+    expiresAt: string;
+    buyerId: string;
+    kind: string;
+  };
   archivedAt?: string;
   fixtureFaults?: { refund?: "failed" | "timeout_once" };
   invite: string;

@@ -1,4 +1,5 @@
 import { takeRequestBudget } from "@/server/budgets";
+import { takeDemoBudget } from "@/server/demo";
 import { actionSchema } from "@/domain/actions";
 import { actorFromRequest } from "@/server/auth";
 import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
@@ -11,6 +12,7 @@ export async function POST(request: Request) {
     requireSameOrigin(request);
     const actor = await actorFromRequest();
     await takeRequestBudget(actor, "actions", 120);
+    await takeDemoBudget(actor, "actions", 300);
     const input = actionSchema.parse(await jsonBody(request));
     let result: unknown;
     switch (input.action) {

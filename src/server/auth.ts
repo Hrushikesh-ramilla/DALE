@@ -76,12 +76,26 @@ export async function createSession(input: {
     if (!rows[0]) throw new Error("Group invitation not found");
     workspace = rows[0].state;
   } else workspace = await createWorkspace();
-  const token = randomBytes(32).toString("hex");
+  if (workspace.demo)
+    throw new Error(
+      "Demo owner authorization is required. Use the guided demo persona selector.",
+    );
   const actor: Actor = {
     workspaceId: workspace.id,
     userId: randomBytes(16).toString("hex"),
     role: input.role,
   };
+  return issueSession(actor);
+}
+// Trusted server entry; HTTP callers never supply an arbitrary actor to this function.
+export async function issueSession(actor: Actor) {
+  const workspace = await getWorkspace(actor.workspaceId);
+  if (
+    workspace.archivedAt ||
+    (workspace.demo && Date.parse(workspace.demo.expiresAt) <= Date.now())
+  )
+    throw new Error("Your demo session expired. Start a new demo.");
+  const token = randomBytes(32).toString("hex");
   await (
     await getDatabase()
   ).query(
@@ -91,7 +105,12 @@ export async function createSession(input: {
       actor.workspaceId,
       actor.userId,
       actor.role,
-      new Date(Date.now() + 86400000),
+      new Date(
+        Math.min(
+          Date.now() + 86400000,
+          workspace.demo ? Date.parse(workspace.demo.expiresAt) : Infinity,
+        ),
+      ),
     ],
   );
   return { actor, token };
@@ -131,4 +150,5 @@ export async function logout() {
       await getDatabase()
     ).query("DELETE FROM sessions WHERE token_hash=$1", [await hash(token)]);
   jar.delete(COOKIE);
+  jar.delete("dale_demo");
 }
