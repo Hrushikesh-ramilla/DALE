@@ -2,6 +2,8 @@
 
 Updated 7 October 2026. The deployed demo is ready for manual testing; genuine provider, live accuracy and independent acceptance gates remain open. The master plan's acceptance targets remain unchanged except for the user's selection of existing EC2 hosting instead of Render. See [MANUAL_TESTS.md](MANUAL_TESTS.md) for role setup, steps and expected outcomes across the implemented scope.
 
+The local editorial redesign at 76bf622 is complete and passes the optimized build, final 134-test check and all 14 browser journeys in both development and packaged production. It adds collection discovery, matched-product search, grounded details, routed screens, readable mobile sizing and Motion with reduced-motion support. EC2 SSH currently times out, so the redesign's deployment/hosted regression remains pending and public code is still 5b393c0. Existing financial/live-AI/independent acceptance gates below are unchanged.
+
 | Requirement | Current behavior and executed evidence | Remaining milestone |
 | --- | --- | --- |
 | BG01 approval guard | Exact payee/amount/item/currency, expiry, private sessions, duplicate money operation tests; saved brief versions invalidate unpaid approvals, including hosted rejection check | Actual approved sandbox payment |

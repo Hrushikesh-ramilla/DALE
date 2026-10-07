@@ -4,6 +4,8 @@ Prepared: 5 October 2026. Updated: 7 October 2026. Status: the core application 
 
 ## 1. Product decision
 
+7 October interface milestone: editorial source 76bf622 adds full-size collection/product presentation and shared-layout `/shop`, `/groups`, `/orders`, `/support` routes. Optimized build, 134 tests and all 14 browser journeys pass in development and packaged production. This keeps all seven capabilities central and adds no unrelated product direction. Deployment/hosted regression for the redesign is pending because EC2 SSH times out; public application remains 5b393c0. See docs/DESIGN.md for the implementation and evidence boundary.
+
 Build a customer-first shopping agent covering discovery, compatible products, group discounts, safe payment, and recovery when an order goes wrong. Combine the selected ideas: AgentGuard (1), BuyTogether (4), ScamPause (6), Buyer's Advocate (8), ReturnShield (10), PartsMatch (15), and RescueMyOrder (16). Evidence-backed returns remain a supporting feature of the complete shopping experience.
 
 Promise: **Find the right product, pay safely, and receive a clear, fair resolution when something goes wrong.**

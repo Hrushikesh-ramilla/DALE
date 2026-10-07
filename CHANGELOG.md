@@ -2,7 +2,11 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
-## 2026-10-07 — Editorial design foundation
+## 2026-10-07 — Packaged editorial regression and release preparation
+
+- Final lint/typecheck and all 134 unit/contract/database tests pass. All 14 browser journeys pass in development and again against packaged standalone production, including routed history, approval guards, dialogs and responsive layouts.
+- Added an explicit production-mode browser harness using only loopback, fixture adapters and separate private data outside the release tree. The release archive excludes environment files and private data; verified SHA-256 is recorded in docs/VALIDATION.md.
+- Updated design/manual/implementation evidence and prepared application release 76bf622. EC2 SSH timed out, so public code remains 5b393c0 and redesigned hosted regression remains pending. No paid resource or live AI call was used.
 
 ## 2026-10-07 — Routed collection and product experience
 
@@ -10,6 +14,8 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Added grounded product-detail dialogs, sponsorship/source disclosure and existing-guard purchase review, plus order/support overviews, customer-policy explanations and functional service navigation.
 - Motion transitions, readable mobile cards, background inertness/scroll locking, Escape, focus return and viewport-visible feedback complete the interaction layer. Sign-in tests now wait for session completion before editing; background-value assertions explicitly inspect hidden controls while dialogs are active.
 - Optimized production build and all 14 Chromium journeys pass, including four new routed/discovery/guard/responsive journeys. Existing 134 unit/contract/database checks passed before the final routing build; final production browser verification follows. EC2 SSH currently times out, so the public app remains on 5b393c0.
+
+## 2026-10-07 — Editorial design foundation
 
 - Replaced the small green interface with a charcoal/off-white design system, larger responsive type/controls, and monochrome catalog illustrations. Self-hosted DM Sans/Cormorant Garamond fonts avoid a runtime font service.
 - Added pinned Motion for React and a global configuration respecting reduced-motion preferences. Styled the full shopping, approval, group, fulfillment and support surfaces around the existing product policy.

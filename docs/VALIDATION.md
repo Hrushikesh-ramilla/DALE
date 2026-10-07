@@ -1,9 +1,10 @@
 # Validation status
 
-The implementation currently passes 134 unit, provider-contract, and embedded PostgreSQL integration tests, ten Chromium browser journeys, 200 seeded workflow traces, 107 deterministic evaluation scenarios, 300 frozen synthetic records and 180 mocked native-adapter evaluation requests. Each milestone is built and checked before deployment. See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for remaining master-plan gates.
+The latest local editorial implementation passes 134 unit/provider-contract/embedded PostgreSQL tests and 14 Chromium journeys against both the development server and packaged production server. The existing domain evaluation evidence remains 200 seeded workflow traces, 107 deterministic scenarios, 300 frozen synthetic records and 180 mocked native-adapter requests. Public EC2 still serves 5b393c0; the redesign is prepared for deployment while SSH access times out. See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for remaining master-plan gates.
 
 | Capability | Executable evidence | Limit |
 | --- | --- | --- |
+| Editorial storefront and routed screens | Four new journeys cover direct URLs/history/reload, collection-to-purchase approval boundaries, matched-product search, grounded detail/sponsorship, focus return, budget guard, 1440/820/390/320px widths and reduced motion; all 14 journeys pass in development (2.8m) and packaged production (1.3m) | Local packaged production uses isolated embedded PostgreSQL and synthetic adapters; the redesigned EC2/PostgreSQL/container regression remains pending. No human usability completion claim |
 | Compatibility, ranking, spending guard | `tests/policy.test.ts`, `tests/money.test.ts`, `npm run eval` | Synthetic catalog; curated compatibility only |
 | Group pricing and private checkout | Service concurrency tests and two-browser journey | Inventory is isolated per demo workspace; no cross-merchant pool |
 | Customer approval and payment safety | Forged approval, modified payee, duplicate capture/refund tests | Real sandbox buyer approval/capture/refund still pending |
@@ -26,6 +27,8 @@ The implementation currently passes 134 unit, provider-contract, and embedded Po
 Fixture and mocked provider tests are labeled separately from live checks. Raw reports live in ignored `.data/reports`; no credentials belong in test artifacts or Git history.
 
 Status rechecked 7 October 2026: public health is ready at deployed application 5b393c0. [Manual tests](MANUAL_TESTS.md) cover the implemented browser workflows, nine isolated recovery scenarios, negative cases and owner-operated persistence checks. [Passing CI run](https://github.com/Hrushikesh-ramilla/buyerguard/actions/runs/37373916879) is at 53c284b, which adds restart-verification/documentation changes without changing deployed application behavior.
+
+The editorial application source is 76bf622, following design foundation 73eb44d. Optimized build, final lint/typecheck/134-test run and both 14-journey browser runs pass. Prepared release archive SHA-256: `12054d4920fefbd3c275745645a07e91ef85b6a43a965d7af3765284a6955994`; its file inventory excludes environment files and private data. [DESIGN.md](DESIGN.md) documents references and interaction scope. This source is not yet publicly deployed; latest-source CI is a separate follow-up from the passing older run above.
 
 Synthetic scam point estimates meet the proposed fixture thresholds. Descriptive Wilson intervals are recall 92.86–100% and false-warning rate 0–7.14% for 50 cases per class; correlated templates prevent treating these as population guarantees. Matching identifiers remain insufficient evidence of physical truth. The 100 claim cases agree with protocol expectations, not human judgments. Independent labels, five-person usability and actual physical captures remain unexecuted; [ACCEPTANCE.md](ACCEPTANCE.md) supplies procedures and empty templates.
 

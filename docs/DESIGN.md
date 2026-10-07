@@ -27,4 +27,6 @@ The typography/control scale replaces the previous 7–10px product text. Mobile
 
 No payment, evidence or provider policy is relaxed by this redesign. The live Gemini and genuine PayPal gates remain as recorded in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md).
 
+Final lint/typecheck and all 134 unit/contract/database checks pass. All 14 browser journeys pass against the development server and the packaged standalone production server, including owned-font/illustration rendering. Production-mode browser testing uses a separate local embedded database and fixture adapters; it is not an EC2 PostgreSQL or real-provider check.
+
 The local preview contains this redesign. EC2 SSH timed out during the 7 October deployment attempt, so public health still reports the earlier application build `5b393c0`. Update this record after a verified release transfer/service restart and hosted browser regression; do not describe the redesigned source as publicly deployed until then.
