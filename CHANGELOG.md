@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Dale identity
+
+- Renamed the customer-facing product to the owner's single-word choice, Dale. Updated the header/footer, conversation labels, policy heading, checkout merchant/PayPal descriptions, product illustration engravings, route titles and API document.
+- Replaced the shield brand mark with an original serif D monogram, added a matching browser icon and paired it with a Cormorant Garamond wordmark. Existing safety/status icons retain their functional meaning.
+- Lint, type checking, the optimized production build and all 134 unit/contract/database checks pass. All 14 development browser journeys pass; the four editorial journeys were repeated after the final illustration-initial update, covering 1440/820/390/320 widths and reduced motion. HTTP checks verify the Dale title/home label, icon response and API title. Screenshots are private under `.data/reports/dale-desktop.png`.
+- Operational identifiers and historical records are retained to avoid a database/service migration. Public deployment remains on the previous build; the local branding change does not imply new live Gemini or PayPal verification.
+
 ## 2026-10-07 — Packaged editorial regression and release preparation
 
 - Final lint/typecheck and all 134 unit/contract/database tests pass. All 14 browser journeys pass in development and again against packaged standalone production, including routed history, approval guards, dialogs and responsive layouts.

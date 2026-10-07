@@ -112,24 +112,21 @@ p {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 19px;
-  font-weight: 500;
-  letter-spacing: -0.6px;
+  gap: 13px;
   text-decoration: none;
   white-space: nowrap;
 }
 .brand-mark {
-  width: 34px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border: 1px solid #8b8983;
-  border-radius: 50% 50% 45% 45%;
+  width: 32px;
+  height: 36px;
+  flex-shrink: 0;
 }
-.brand-dot {
-  color: #a5a29b;
-  margin-left: -9px;
+.brand-wordmark {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.025em;
 }
 .site-header nav {
   display: flex;
@@ -926,8 +923,8 @@ summary {
   border-top: 1px solid #55514a;
   padding: 46px 0 30px;
 }
-.footer-brand .brand {
-  font-size: 23px;
+.footer-brand .brand-wordmark {
+  font-size: 40px;
 }
 .footer-brand p {
   font-size: 12px;
@@ -1535,8 +1532,8 @@ summary {
     gap: 17px;
     padding: 17px 22px 0;
   }
-  .brand {
-    font-size: 17px;
+  .brand-wordmark {
+    font-size: 32px;
   }
   .site-header nav {
     order: 3;

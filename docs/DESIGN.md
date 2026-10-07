@@ -4,6 +4,10 @@ The storefront uses charcoal, black, off-white and muted neutral surfaces, gener
 
 ## Application structure
 
+The customer-facing brand is **Dale**, a single word selected by the owner. The identity pairs a Cormorant Garamond wordmark with an original serif D monogram in the header, footer and browser icon. Assistant labels, page metadata, product illustrations, checkout descriptions and the public API document use the same name. Character inspiration informs the calm, attentive service tone; the mark is an original letterform.
+
+The existing `buyerguard` repository, package, health service identifier, database/cache names and deployment paths remain operational identifiers so the branding change does not require a data or infrastructure migration. Historical validation and release references retain their original names.
+
 - `/` and `/shop`: editorial entry, five collection selectors, device/budget brief, grounded recommendations, search within matched products and detailed catalog views.
 - `/groups`: commitments, invitations, individual approval and locked group pricing.
 - `/orders`: recorded-order/delivery/support overview, timelines and fulfillment/customer actions.
@@ -22,6 +26,8 @@ DM Sans and Cormorant Garamond are self-hosted through pinned Fontsource package
 The typography/control scale replaces the previous 7–10px product text. Mobile product cards become a single readable column. Forms use 16px input text on mobile to avoid automatic focus zoom. Product dialogs lock background scrolling, make the background inert, trap focus, support Escape and restore focus to the opener. Notices remain visible near the viewport when an action happens far down the collection.
 
 ## Verification and deployment boundary
+
+The 7 October Dale identity passes lint/typecheck, the optimized production build, all 134 unit/contract/database checks and all 14 development browser journeys. The four editorial journeys also pass after the final illustration engraving update. HTTP inspection confirms the Dale route title/home label, SVG icon and public API title; the updated desktop capture is `.data/reports/dale-desktop.png`.
 
 `e2e/editorial.spec.ts` exercises routed history/reload, collection-to-purchase approval boundaries, result search, product facts/sponsorship, focus return, featured-item budget guards and desktop/tablet/mobile widths (1440, 820, 390, 320), including reduced motion. Existing browser journeys retain shopping clarification, compatibility, purchase/refund, group failure, cancellation, prepaid return and recovery coverage. Screenshots are private artifacts under `.data/reports/editorial-*.png`.
 

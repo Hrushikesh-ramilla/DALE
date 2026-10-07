@@ -34,6 +34,7 @@ import type { snapshot } from "@/server/service";
 import { ProductArt } from "./product-art";
 import { PayPalCheckout } from "./paypal-checkout";
 import { Dialog } from "./dialog";
+import { BrandMark } from "./brand-mark";
 import type { ScenarioKind } from "@/server/scenarios";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
@@ -317,11 +318,9 @@ export default function Storefront() {
         <span>Your approval, always.</span>
       </div>
       <header className="site-header" inert={!!modal}>
-        <a className="brand" href="/" aria-label="BuyerGuard home">
-          <span className="brand-mark">
-            <ShieldCheck size={23} />
-          </span>
-          BuyerGuard<span className="brand-dot">.</span>
+        <a className="brand" href="/" aria-label="Dale home">
+          <BrandMark />
+          <span className="brand-wordmark">Dale</span>
         </a>
         <nav aria-label="Main navigation">
           {(["discover", "groups", "orders", "support"] as Tab[]).map(
@@ -694,7 +693,7 @@ export default function Storefront() {
                     {session.conversation.slice(-6).map((turn, i) => (
                       <p key={`${turn.at}-${i}`}>
                         <strong>
-                          {turn.role === "user" ? "You" : "BuyerGuard"}:
+                          {turn.role === "user" ? "You" : "Dale"}:
                         </strong>{" "}
                         {turn.text}
                       </p>
@@ -905,7 +904,7 @@ export default function Storefront() {
               viewport={{ once: true, amount: 0.2 }}
             >
               <div>
-                <span className="eyebrow">THE BUYERGUARD STANDARD</span>
+                <span className="eyebrow">THE DALE STANDARD</span>
                 <h2>
                   Good shopping
                   <br />
@@ -1622,8 +1621,8 @@ export default function Storefront() {
         <footer className="site-footer">
           <div className="footer-brand">
             <div className="brand">
-              <ShieldCheck size={22} /> BuyerGuard
-              <span className="brand-dot">.</span>
+              <BrandMark />
+              <span className="brand-wordmark">Dale</span>
             </div>
             <p>
               Considered choices. Customer-first commerce. From your first
@@ -1673,7 +1672,7 @@ export default function Storefront() {
           </div>
         </footer>
         <div className="footer-bottom">
-          <span>BuyerGuard / The considered collection</span>
+          <span>Dale / The considered collection</span>
           <span>Test storefront · Synthetic catalog & shipping · USD</span>
         </div>
         {session && (
@@ -1992,7 +1991,7 @@ export default function Storefront() {
                   <dl className="quote-summary">
                     <div>
                       <dt>Merchant</dt>
-                      <dd>BuyerGuard demo store</dd>
+                      <dd>Dale demo store</dd>
                     </div>
                     <div>
                       <dt>Item</dt>

@@ -1,8 +1,10 @@
-# BuyerGuard master plan
+# Dale master plan
 
 Prepared: 5 October 2026. Updated: 7 October 2026. Status: the core application is deployed on the user's existing EC2 instance. Shopping clarification, grounded comparisons, confirmed device-label suggestions, group cancellation/failure, returns and recovery have runnable tests. Local checks, hosted PostgreSQL/HTTPS, 200 traces, frozen 300-case synthetic evaluation, repeated mock native-adapter evaluation, and backup/restore checks pass. GitHub run 37373916879 at 53c284b now passes both jobs, including ten production-container browser journeys, after retrying the runner-allocation cancellation. Earlier direct Gemini smoke checks passed; current quota is unavailable and hosted analysis uses fixtures under the owner's no-spend instruction. Complete PayPal sandbox verification is blocked by the merchant rejecting USD approval. Live accuracy, physical captures and independent human acceptance remain explicit gates with a runnable acceptance pack; no real capture, refund, or genuine webhook delivery is claimed. See docs/MANUAL_TESTS.md for hands-on instructions, docs/IMPLEMENTATION_STATUS.md for gaps, CHANGELOG.md for milestone history, and docs/VALIDATION.md for executed evidence.
 
 ## 1. Product decision
+
+7 October branding milestone: the owner selected the single-word name **Dale**. Customer-facing text, checkout descriptions, route metadata, product illustration engravings, the public API title and an original serif D wordmark/icon now use that identity. Product policy and feature IDs are retained. Lint/typecheck, all 134 automated checks and all 14 development browser journeys pass; four editorial journeys also pass after the final illustration update. Public deployment remains pending as described below.
 
 7 October interface milestone: editorial source 76bf622 adds full-size collection/product presentation and shared-layout `/shop`, `/groups`, `/orders`, `/support` routes. Optimized build, 134 tests and all 14 browser journeys pass in development and packaged production. This keeps all seven capabilities central and adds no unrelated product direction. Deployment/hosted regression for the redesign is pending because EC2 SSH times out; public application remains 5b393c0. See docs/DESIGN.md for the implementation and evidence boundary.
 
@@ -34,7 +36,7 @@ Demo policy: accept eligible return requests within 30 days of recorded delivery
 
 ## 3. Business model and scope
 
-Customers use the core shopping and resolution experience without an extra BuyerGuard charge. The commercial hypothesis is merchant software subscriptions for assisted shopping and support operations. Merchant payments must not influence organic rankings or reviewer outcomes. Track customer completion, time to resolution, and avoided mistakes alongside merchant costs.
+Customers use the core shopping and resolution experience without an extra Dale charge. The commercial hypothesis is merchant software subscriptions for assisted shopping and support operations. Merchant payments must not influence organic rankings or reviewer outcomes. Track customer completion, time to resolution, and avoided mistakes alongside merchant costs.
 
 First release: one managed demo storefront and one PayPal sandbox merchant. Catalog supplier names are demo inventory sources, not independently onboarded merchants. Buyer, seller, and reviewer accounts have separate permissions. Group buying involves individual purchases of the same SKU from this storefront.
 

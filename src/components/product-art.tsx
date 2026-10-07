@@ -130,7 +130,7 @@ export function ProductArt({
                 letterSpacing="2"
                 transform="rotate(90 105 210)"
               >
-                BG
+                D
               </text>
             </g>
           ) : product.category === "chargers" ? (
@@ -209,7 +209,7 @@ export function ProductArt({
                 letterSpacing="3"
                 textAnchor="middle"
               >
-                BG
+                D
               </text>
               <path
                 d="M342 263 L370 253"
@@ -254,7 +254,7 @@ export function ProductArt({
                 letterSpacing="3"
                 textAnchor="middle"
               >
-                BG
+                D
               </text>
             </g>
           ) : product.category === "storage" ? (
@@ -302,7 +302,7 @@ export function ProductArt({
                 letterSpacing="5"
                 textAnchor="middle"
               >
-                BG / SSD
+                DALE / SSD
               </text>
             </g>
           ) : (
@@ -383,7 +383,7 @@ export function ProductArt({
                 letterSpacing="2"
                 textAnchor="middle"
               >
-                BUYERGUARD
+                DALE
               </text>
             </g>
           )}
