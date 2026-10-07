@@ -1,5 +1,7 @@
 # DALE editorial storefront
 
+7 October visual correction: the owner rejected the glass/teal page treatment. The current interface returns to restrained black and white with a centered light product showcase, clean sans-serif headings, flat controls and neutral product materials. Desaturated teal is confined to the closing footer. Shopping protections, guided demo, voice and genuine 3D remain implemented. This direction supersedes earlier glass styling described below; final verification is recorded in VALIDATION. Inspiration: https://www.apple.com/ (original DALE implementation).
+
 The storefront uses ink, paper and desaturated teal, substantial beveled glass controls, generous product space and serif editorial headings with a readable sans-serif interface. Frosted layers retain opaque reading cores, visible focus and immediate press feedback. Inspiration includes the owner's portfolio, [Noomo's Awwwards glass portal](https://www.awwwards.com/inspiration/3d-portal-noomo-valentime) and [DIGITRON product navigation](https://www.awwwards.com/inspiration/easy-search-and-navigation-digitron-3d-immersive-site). The composition, product geometry and wordmark remain original.
 
 ## Application structure

@@ -1,5 +1,7 @@
 # DALE experience revision
 
+7 October visual correction: the owner rejected the glass/teal page treatment. The current interface returns to restrained black and white with a centered light product showcase, clean sans-serif headings, flat controls and neutral product materials. Desaturated teal is confined to the closing footer. Shopping protections, guided demo, voice and genuine 3D remain implemented. This direction supersedes earlier glass styling described below; final verification is recorded in VALIDATION. Inspiration: https://www.apple.com/ (original DALE implementation).
+
 Updated 7 October 2026. Status: glass/editorial front-end, genuine 3D, routed surfaces, guided demo and voice adapters are implemented. Local production passes the 25-journey experience suite; native audio uses synthetic microphone/transport fixtures. Live Gemini speech, physical-phone performance and revised EC2 deployment remain separate gates. Extends MASTER_PLAN without replacing its customer-priority, approval, evidence or provider acceptance requirements. Current release evidence is in VALIDATION.
 
 ## Outcome

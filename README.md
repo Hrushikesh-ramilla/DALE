@@ -4,7 +4,7 @@ Customer-first shopping, safe checkout, group discounts, and evidence-backed ord
 
 Open `/demo` for a complete provider-free engineer journey without an account or access code. Nine isolated scenarios include shopping, group discounts, returns, conflicting evidence, deadlines and refund recovery. Use the owned demo persona selector for seller/reviewer steps, and export the redacted test report. Reset retains earlier audit history.
 
-The storefront uses dimensional glass controls, original volumetric Three.js product illustrations, GSAP typography and a desaturated teal DALE closing composition. Talk to DALE supports editable shopping/support/order requests; the demo uses labeled transcript fixtures. Native Gemini Live microphone/audio transport is implemented and synthetically tested, but live recognition remains unverified and disabled until free quota and disabled billing are confirmed. No AI spend is required for the demo.
+The storefront uses restrained monochrome controls, original volumetric Three.js product illustrations, GSAP typography and a desaturated teal DALE closing composition. Talk to DALE supports editable shopping/support/order requests; the demo uses labeled transcript fixtures. Native Gemini Live microphone/audio transport is implemented and synthetically tested, but live recognition remains unverified and disabled until free quota and disabled billing are confirmed. No AI spend is required for the demo.
 
 ## Development
 
@@ -26,7 +26,7 @@ See [MASTER_PLAN.md](MASTER_PLAN.md) for product policy and acceptance gates, [d
 
 For hands-on testing, follow [docs/MANUAL_TESTS.md](docs/MANUAL_TESTS.md): private role setup, a no-spend fixture workspace, all implemented feature steps and expected outcomes, recovery scenarios, and the remaining sign-off gates.
 
-The local storefront has dimensional glass surfaces, self-hosted typography, GSAP/Motion transitions, volumetric product selection, collection discovery and product details. `/shop`, `/groups`, `/orders` and `/support` support direct links/history through a shared layout; `/demo` opens isolated guided scenarios. See [docs/DESIGN.md](docs/DESIGN.md) for references, interaction boundaries and deployment status.
+The local storefront has black-and-white surfaces, self-hosted typography, GSAP/Motion transitions, volumetric product selection, collection discovery and product details. `/shop`, `/groups`, `/orders` and `/support` support direct links/history through a shared layout; `/demo` opens isolated guided scenarios. See [docs/DESIGN.md](docs/DESIGN.md) for references, interaction boundaries and deployment status.
 
 The initial release uses one managed electronics storefront. Payment integration targets the PayPal sandbox. Fixture responses and synthetic shipping events are labeled and do not establish live integration or physical truth.
 

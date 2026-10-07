@@ -4,6 +4,16 @@ test("3D product selection, rotation and context-loss fallback retain catalog ac
   page,
 }) => {
   await page.goto("/shop");
+  expect(
+    await page
+      .locator(".editorial-hero")
+      .evaluate((el) => getComputedStyle(el).backgroundColor),
+  ).toBe("rgb(245, 245, 247)");
+  expect(
+    await page
+      .locator(".hero-type h1")
+      .evaluate((el) => getComputedStyle(el).fontFamily),
+  ).toContain("DM Sans");
   const canvas = page.locator("canvas[data-scene=ready]");
   await expect(canvas).toBeVisible();
   const before = await canvas.screenshot();
@@ -38,7 +48,7 @@ test("3D product selection, rotation and context-loss fallback retain catalog ac
   ).toBeFocused();
 });
 
-test("glass controls and teal closing section remain readable at narrow widths", async ({
+test("monochrome controls and isolated teal footer remain readable at narrow widths", async ({
   page,
 }) => {
   for (const width of [320, 390, 820, 1440]) {
@@ -48,6 +58,16 @@ test("glass controls and teal closing section remain readable at narrow widths",
     await expect(
       page.getByRole("button", { name: "Start shopping" }),
     ).toBeVisible();
+    expect(
+      await page
+        .locator("body")
+        .evaluate((el) => getComputedStyle(el).backgroundColor),
+    ).toBe("rgb(0, 0, 0)");
+    expect(
+      await page
+        .locator(".site-header")
+        .evaluate((el) => getComputedStyle(el).boxShadow),
+    ).toBe("none");
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,

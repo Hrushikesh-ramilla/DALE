@@ -67,14 +67,9 @@ export function EditorialHero({
         <span>Personal shopping, considered.</span>
       </div>
       <div className="hero-type">
-        <h1>
-          A better way
-          <br />
-          to <em>choose.</em>
-        </h1>
+        <h1>A better way to choose.</h1>
         <p>
-          Everyday technology, chosen for your needs.
-          <br />
+          Everyday technology, chosen for your needs. <br />
           Your budget. Your approval. Your side, always.
         </p>
         <a className="editorial-link" href="#shop">

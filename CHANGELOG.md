@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Restore monochrome product presentation
+
+- Replaced the rejected page-wide teal/glass treatment with black navigation, a light centered product showcase, clean sans-serif headings, flat pill controls, neutral product materials and understated transitions. Removed the broad glass stylesheet rather than layering more tinted treatments. The existing DALE wordmark is retained.
+- Kept desaturated teal only in the closing footer. Preserved genuine product geometry, reduced-motion/fallback behavior, shopping guards, guided scenarios and voice adapters. Apple’s product-first composition informed the original layout; no Apple assets or code are reused.
+- Updated responsive regression to assert a black page, a flat header and the isolated teal footer at four widths. Final optimized build and packaged-browser verification follow; cloud/provider gates remain unchanged.
+
 ## 2026-10-07 — Final packaged experience release
 
 - Application 1bcd732 includes concrete device names in voice replies and grounded native tool results. Final lint/typecheck, optimized build and all 25 packaged-production journeys pass, including the new display-name assertion. This revision also passes 150 unit/contract/database tests, 200 seeded workflow traces, 107 deterministic scenarios, 300 frozen synthetic records and 180 mocked native checks.

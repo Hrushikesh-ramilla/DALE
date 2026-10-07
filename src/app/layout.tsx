@@ -6,6 +6,7 @@ import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
 import { MotionProvider } from "@/components/motion-provider";
 import "./globals.css";
+import "./monochrome.css";
 export const metadata: Metadata = {
   title: "DALE — shop with confidence",
   applicationName: "DALE",
