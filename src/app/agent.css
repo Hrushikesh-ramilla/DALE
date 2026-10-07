@@ -132,6 +132,17 @@
 .agent-console .voice-panel {
   margin: 16px 0 0;
 }
+.agent-console .voice-companion > span {
+  color: #626269;
+}
+.agent-console .voice-panel label {
+  color: #f5f5f7;
+}
+.agent-console .voice-panel .button.primary {
+  background: #f5f5f7;
+  border-color: #f5f5f7;
+  color: #1d1d1f;
+}
 .agent-response {
   border-top: 1px solid #dedee3;
   margin-top: 28px;

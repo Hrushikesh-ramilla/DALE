@@ -1,5 +1,35 @@
 import { expect, test } from "@playwright/test";
 const origin = process.env.E2E_BASE_URL || "http://127.0.0.1:3100";
+test("a failed guest task retries in the same owned workspace", async ({
+  page,
+}) => {
+  await page.goto("/");
+  let calls = 0;
+  await page.route("**/api/agent", async (route) => {
+    if (++calls === 1)
+      await route.fulfill({
+        status: 503,
+        contentType: "application/json",
+        body: JSON.stringify({ error: "Task temporarily unavailable" }),
+      });
+    else await route.continue();
+  });
+  await page
+    .getByRole("button", { name: "Find a charger", exact: true })
+    .click();
+  await page.getByRole("button", { name: "Send task", exact: true }).click();
+  await expect(page.getByRole("alert")).toContainText(
+    "Task temporarily unavailable",
+  );
+  const initial = await (await page.request.get("/api/session")).json();
+  await page.getByRole("button", { name: "Send task", exact: true }).click();
+  await expect(page.getByLabel("DALE task result")).toContainText(
+    "Ready for your review",
+  );
+  const retried = await (await page.request.get("/api/session")).json();
+  expect(retried.actor.workspaceId).toBe(initial.actor.workspaceId);
+  expect(retried.agentRuns).toHaveLength(1);
+});
 test("guest sees the agent first, completes a task and explicitly reviews before payment", async ({
   page,
 }) => {
