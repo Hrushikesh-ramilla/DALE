@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Packaged DALE verification
+
+- Source 5a58bc3 passes all 15 journeys against packaged standalone production (1.8 minutes), after the 15-journey development run and final four-width reduced-motion/hydration regression. Optimized build, lint/typecheck and all 135 automated checks pass.
+- Repeated 200 workflow traces, 107 deterministic scenarios, 300 frozen synthetic records and 180 mock native-adapter checks after the catalog/profile changes. No provider call or spend was used.
+- Prepared the source-aligned release archive and verified its inventory excludes environment files/private data. SHA-256: `0f69a6f9450fda3a41aa01df20c0105d959fe2c0d22c436687d4a2760e43d542`. GitHub run 37606847215 passes both quality and production app/worker/PostgreSQL container jobs, including all 15 browser journeys in containers.
+- Updated manual steps for product/profile names and added pagination, product-stage approval, navigation and reduced-motion cases. Hosted/local access-code setup is distinguished. EC2 SSH was retried and timed out; the public redesign and hosted regression remain pending.
+
 ## 2026-10-07 — DALE wordmark and product-led redesign
 
 - Replaced the separate D emblem with original uppercase DALE letterforms in the header, footer and browser icon. Updated customer-facing metadata, assistant labels, checkout descriptions and API title; unbranded product illustrations use functional markings.
