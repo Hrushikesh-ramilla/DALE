@@ -1,5 +1,7 @@
 # Stable access to the existing EC2 instance
 
+7 October recovery: direct SSH became reachable again. The original OneDrive/Desktop key was rejected for broad local file permissions; the existing owner-restricted ignored copy at `.data/deploy/ssh-key.pem` works. Reuse that copy for deployment rather than reintroducing broad key access. This fixes local OpenSSH key loading, not the changing-IP architecture. SSM still requires the one-time authenticated AWS/IAM setup below.
+
 The local VPN has returned multiple egress IPv4 addresses while public HTTPS continues to work and new SSH connections time out. This is consistent with restricted inbound SSH plus changing egress. HTTP IP services do not establish the precise source address of an SSH connection; changing allowlist entries is therefore not a durable diagnosis or deployment method.
 
 ## Mechanism
