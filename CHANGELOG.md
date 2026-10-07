@@ -4,6 +4,13 @@ Each implementation milestone records behavior, validation, and remaining limita
 
 ## 2026-10-07 — Editorial design foundation
 
+## 2026-10-07 — Routed collection and product experience
+
+- Added shared-layout shop/group/order/support routes with direct links, browser history and saved-session restoration. Five collection selectors and matched-product text search provide discovery without bypassing device, budget or saved-brief approval checks.
+- Added grounded product-detail dialogs, sponsorship/source disclosure and existing-guard purchase review, plus order/support overviews, customer-policy explanations and functional service navigation.
+- Motion transitions, readable mobile cards, background inertness/scroll locking, Escape, focus return and viewport-visible feedback complete the interaction layer. Sign-in tests now wait for session completion before editing; background-value assertions explicitly inspect hidden controls while dialogs are active.
+- Optimized production build and all 14 Chromium journeys pass, including four new routed/discovery/guard/responsive journeys. Existing 134 unit/contract/database checks passed before the final routing build; final production browser verification follows. EC2 SSH currently times out, so the public app remains on 5b393c0.
+
 - Replaced the small green interface with a charcoal/off-white design system, larger responsive type/controls, and monochrome catalog illustrations. Self-hosted DM Sans/Cormorant Garamond fonts avoid a runtime font service.
 - Added pinned Motion for React and a global configuration respecting reduced-motion preferences. Styled the full shopping, approval, group, fulfillment and support surfaces around the existing product policy.
 - Lint, type checking and all 134 existing unit/contract/database tests pass in the working redesign. New collection/detail interactions and browser verification follow as a separate milestone; no live provider completion claim changes.

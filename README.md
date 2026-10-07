@@ -22,6 +22,8 @@ See [MASTER_PLAN.md](MASTER_PLAN.md) for product policy and acceptance gates, [d
 
 For hands-on testing, follow [docs/MANUAL_TESTS.md](docs/MANUAL_TESTS.md): private role setup, a no-spend fixture workspace, all implemented feature steps and expected outcomes, recovery scenarios, and the remaining sign-off gates.
 
+The local storefront now has a monochrome editorial design, self-hosted typography, Motion transitions, collection discovery and product details. `/shop`, `/groups`, `/orders` and `/support` support direct links and browser history through a shared layout. See [docs/DESIGN.md](docs/DESIGN.md) for design references, interaction boundaries and deployment status.
+
 The initial release uses one managed electronics storefront. Payment integration targets the PayPal sandbox. Fixture responses and synthetic shipping events are labeled and do not establish live integration or physical truth.
 
 ## License

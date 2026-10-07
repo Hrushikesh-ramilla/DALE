@@ -6,6 +6,9 @@ test("clarifies conflicting constraints and explicitly confirms a device label",
   await page.goto("/");
   await page.getByRole("button", { name: "Start shopping" }).click();
   await page.getByRole("button", { name: "Enter workspace" }).click();
+  await expect(
+    page.getByRole("button", { name: "Shopper · Sign out" }),
+  ).toBeVisible();
   const need = page.getByLabel("Anything else?");
   await need.fill("A charger for Orbit 13 under $20");
   await page.getByRole("button", { name: "Find my match" }).click();
@@ -33,7 +36,11 @@ test("clarifies conflicting constraints and explicitly confirms a device label",
     "selected model is Atlas 14",
   );
   await expect(
-    page.getByRole("combobox", { name: "Your device", exact: true }),
+    page.getByRole("combobox", {
+      name: "Your device",
+      exact: true,
+      includeHidden: true,
+    }),
   ).toHaveValue("Atlas 14");
   await page.getByRole("button", { name: "Use Slate 11", exact: true }).click();
   await expect(

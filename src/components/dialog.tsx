@@ -1,19 +1,27 @@
 "use client";
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 export function Dialog({
   onClose,
   children,
+  className = "",
 }: {
   onClose: () => void;
   children: ReactNode;
+  className?: string;
 }) {
   const ref = useRef<HTMLElement>(null);
+  const [previous] = useState<HTMLElement | null>(() =>
+    typeof document === "undefined"
+      ? null
+      : (document.activeElement as HTMLElement),
+  );
   const close = useRef(onClose);
   useEffect(() => {
     close.current = onClose;
   }, [onClose]);
   useEffect(() => {
-    const previous = document.activeElement as HTMLElement | null;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     const panel = ref.current!;
     const controls = () => [
       ...panel.querySelectorAll<HTMLElement>(
@@ -41,13 +49,15 @@ export function Dialog({
     panel.addEventListener("keydown", handle);
     return () => {
       panel.removeEventListener("keydown", handle);
-      previous?.focus();
+      document.body.style.overflow = previousOverflow;
+      if (previous?.isConnected) previous.focus();
+      else document.getElementById("main")?.focus();
     };
-  }, []);
+  }, [previous]);
   return (
     <section
       ref={ref}
-      className="modal"
+      className={`modal ${className}`}
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
