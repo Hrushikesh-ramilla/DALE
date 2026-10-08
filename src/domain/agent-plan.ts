@@ -38,6 +38,7 @@ export type ResearchContext = Omit<ResearchNeed, "model" | "budget"> & {
   model: string | null;
   budget: number | null;
   deviceFamily: "m2air";
+  groupSavings?: boolean;
 };
 
 export function fallbackPlan(

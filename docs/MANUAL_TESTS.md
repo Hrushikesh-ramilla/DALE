@@ -1,5 +1,15 @@
 # Sourced buyer-agent acceptance journey
 
+## Compound shopping and group savings
+
+This new journey requires the conversational-group release; check docs/VALIDATION.md for its hosted rollout status. In a fresh guest workspace, type **Find a charger for my MacBook Air M2 13-inch under $53. I need a cable included. Normal charging. Use grouping to reduce the cost.** Expect research and group-discovery receipts, a rejected $58 standalone bundle and a conditional $52.20 full bundle. No partner, order or group commitment exists yet.
+
+Click **Commit to group**: expect one member and no charge. Use the owned demo toolbar's second-shopper persona, join the same bundle/model through Group deals, then switch back to Shopper. Refresh the opening conversation: **Review group offer** becomes available. Expect $52.20, actual deadline and full quote disclosures; closing it creates no order. Only **Approve simulated purchase** records the paid fixture order. A declined/absent second shopper cannot grant checkout before the group is ready.
+
+Change the budget or cable requirement before committing: stale offers must be disabled/rejected. **No grouping, my budget is $60** removes the retained savings goal. **Use grouping to reduce the cost** after a confirmed brief inspects current offers without asking you to repeat the model. Unknown M1/Dell devices still require verified data; this milestone does not claim broader coverage or live model generalization.
+
+## Existing sourced journey
+
 Open `https://16.4.25.181.sslip.io/` or `http://localhost:3000/`. A guest task creates a private engineering workspace without a login form. Payments and fulfillment are simulated; real product identity/specifications are sourced. Catalog assistance makes no model calls while the no-spend gate is active.
 
 1. Type: **Find a charger for my MacBook Air M2 under $50**. Expect a question about 13-inch/15-inch; no product recommendation or purchase.

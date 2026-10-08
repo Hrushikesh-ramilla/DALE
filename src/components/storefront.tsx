@@ -512,7 +512,23 @@ export default function Storefront() {
                 )}
                 briefDirty={briefDirty}
                 onResult={applyAgent}
-                onReview={(product) => {
+                onGroupCommit={(offer) => {
+                  void run(async () => {
+                    if (briefDirty)
+                      throw new Error(
+                        "Save your current needs before committing to a group.",
+                      );
+                    await action({
+                      action: "agent_group_commit",
+                      productId: offer.productId,
+                      briefVersion: offer.briefVersion,
+                    });
+                    setNotice(
+                      "Group commitment recorded without payment. Another shopper is required before your discounted checkout.",
+                    );
+                  });
+                }}
+                onReview={(product, groupId) => {
                   const latest = session?.agentRuns.at(-1);
                   if (
                     !latest?.briefVersion ||
@@ -524,7 +540,7 @@ export default function Storefront() {
                     );
                     return;
                   }
-                  void choose(product);
+                  void choose(product, groupId);
                 }}
                 voice={
                   tab === "discover" ||

@@ -8,6 +8,11 @@ const checkpoint = z.enum([
 ]);
 export const actionSchema = z.discriminatedUnion("action", [
   z.object({
+    action: z.literal("agent_group_commit"),
+    productId: z.string().min(1).max(100),
+    briefVersion: z.number().int().min(1),
+  }),
+  z.object({
     action: z.literal("cancel_fulfillment"),
     orderId: id,
     reason: z.string().min(1).max(2000),

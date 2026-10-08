@@ -10,6 +10,7 @@ import {
 import { realProducts } from "@/domain/research";
 import { formatMoney } from "@/domain/money";
 import type { AgentRun } from "@/domain/agent";
+import type { AgentGroupOffer } from "@/domain/agent-workflow";
 import type { runAgent } from "@/server/agent";
 import type { snapshot } from "@/server/service";
 
@@ -43,6 +44,7 @@ export function AgentWorkspace({
   voice,
   onResult,
   onReview,
+  onGroupCommit,
   briefDirty,
 }: {
   session: Session | null;
@@ -52,7 +54,8 @@ export function AgentWorkspace({
   briefDirty: boolean;
   voice: ReactNode;
   onResult: (result: AgentResult) => void;
-  onReview: (product: Product) => void;
+  onReview: (product: Product, groupId?: string) => void;
+  onGroupCommit: (offer: AgentGroupOffer) => void;
 }) {
   const [task, setTask] = useState("");
   const [pending, setPending] = useState(false);
@@ -363,6 +366,84 @@ export function AgentWorkspace({
                   </article>
                 ))}
               </div>
+            )}
+            {latest.groupOffers !== undefined && (
+              <section aria-label="Agent group offers">
+                <h3>Group savings</h3>
+                <p>
+                  Simulated merchant offers · two shoppers required ·
+                  commitments do not charge you.
+                </p>
+                <div className="agent-options">
+                  {latest.groupOffers.map((offer) => {
+                    const product = productById(offer.productId);
+                    const group = session?.groups.find(
+                      (item) =>
+                        item.productId === offer.productId &&
+                        item.model === offer.model &&
+                        item.joined &&
+                        item.status !== "expired" &&
+                        Date.parse(item.checkoutExpiresAt || item.expiresAt) >
+                          Date.now(),
+                    );
+                    return (
+                      <article
+                        key={`${offer.productId}:${offer.groupId || "new"}`}
+                      >
+                        <strong>{product.name}</strong>
+                        <span>
+                          {formatMoney(group?.amount ?? offer.groupAmount)} ·
+                          save {formatMoney(offer.saving)}
+                        </span>
+                        <p>
+                          {group?.status === "ready"
+                            ? "Price locked. Review the full quote before approving payment."
+                            : `${group?.memberCount ?? offer.memberCount} of 2 shoppers · conditional discount`}
+                        </p>
+                        <p>{offer.nextStep}</p>
+                        {group?.checkoutExpiresAt && (
+                          <small>
+                            Checkout deadline:{" "}
+                            {new Date(group.checkoutExpiresAt).toLocaleString()}
+                          </small>
+                        )}
+                        {group?.status === "ready" ? (
+                          <button
+                            className="button secondary"
+                            disabled={
+                              pending ||
+                              restoring ||
+                              !reviewCurrent ||
+                              !offer.eligible
+                            }
+                            onClick={() => onReview(product, group.id)}
+                          >
+                            Review group offer {product.name}
+                          </button>
+                        ) : group?.joined ? (
+                          <p>
+                            Committed without payment. Awaiting another shopper;
+                            manage or leave through Group deals.
+                          </p>
+                        ) : (
+                          <button
+                            className="button secondary"
+                            disabled={
+                              pending ||
+                              restoring ||
+                              !reviewCurrent ||
+                              !offer.eligible
+                            }
+                            onClick={() => onGroupCommit(offer)}
+                          >
+                            Commit to group for {product.name}
+                          </button>
+                        )}
+                      </article>
+                    );
+                  })}
+                </div>
+              </section>
             )}
             <details className="agent-receipt" open>
               <summary>What DALE actually did</summary>

@@ -31,6 +31,7 @@
     "verify:performance": "tsx scripts/verify-performance.ts",
     "verify:shopping": "tsx scripts/verify-shopping.ts",
     "verify:agent": "tsx scripts/verify-agent-hosted.ts",
+    "verify:agent:groups": "tsx scripts/verify-agent-groups.ts",
     "verify:agent:restart": "tsx scripts/verify-agent-hosted.ts restart"
   },
   "dependencies": {

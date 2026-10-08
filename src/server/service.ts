@@ -114,6 +114,8 @@ export async function snapshot(actor: Actor) {
         context: run.context,
         research: run.research,
         safety: run.safety,
+        groupOffers: run.groupOffers,
+        toolCalls: run.toolCalls,
         orders: run.orders,
       })),
     fixtureWorkspace: !!state.fixtureWorkspace,
@@ -335,7 +337,7 @@ export async function makeQuote(
     if (realModels.includes(model)) {
       const report = researchProducts({
         model,
-        budget: brief?.input.budget || 0,
+        budget: groupId ? 100000 : brief?.input.budget || 0,
         cable: brief?.input.realRequirements?.cable || "unknown",
         fastCharging: brief?.input.realRequirements?.fastCharging || false,
       });
@@ -431,12 +433,41 @@ export async function joinGroup(
   actor: Actor,
   productId: string,
   model: string,
+  expectedBriefVersion?: number,
 ) {
   buyer(actor);
   const product = productById(productId);
   if (!product.compatibleModels.includes(model))
     throw new Error("The group product must fit your device.");
   return mutateWorkspace(actor.workspaceId, (state) => {
+    if (expectedBriefVersion !== undefined) {
+      const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
+      if (
+        !brief ||
+        brief.version !== expectedBriefVersion ||
+        brief.clarificationRequired ||
+        brief.input.model !== model ||
+        (brief.input.category && brief.input.category !== product.category) ||
+        Math.round(product.price * 0.9) > brief.input.budget
+      )
+        throw new Error(
+          "Your confirmed brief changed. Refresh the group offers before committing.",
+        );
+      if (
+        realModels.includes(model) &&
+        !researchProducts({
+          model,
+          budget: 100000,
+          cable: brief.input.realRequirements?.cable || "unknown",
+          fastCharging: brief.input.realRequirements?.fastCharging || false,
+        }).findings.some(
+          (item) => item.productId === productId && item.eligible,
+        )
+      )
+        throw new Error(
+          "This group cannot override device, cable or charging requirements.",
+        );
+    }
     const previous = state.groups.find(
       (g) =>
         g.productId === productId &&

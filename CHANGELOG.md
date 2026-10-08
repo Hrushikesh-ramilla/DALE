@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Conversational group savings
+
+- Added bounded ordered tool workflows, retained group-savings goals across clarification, read-only compatible group discovery, conditional full-cost comparisons and explicit in-conversation commitment/review controls. No partner, payment or membership is invented by discovery. Declining grouping clears the retained goal.
+- Bound commitments to the current private brief with eligibility/version checks repeated under the workspace lock. Discounted real-product quotes still require complete cable/compatibility/charging evidence and the final approved budget. Native planner responses and malformed/duplicate/unauthorized tools are contract-tested without provider calls.
+- Lint/typecheck, 194 unit/contract/database tests, 107 deterministic scenarios, 300 frozen synthetic records, 180 mocked native checks, 200 seeded traces and all 33 packaged-production browser journeys pass (2.3 minutes). A focused mobile group purchase rerun covers 390px overflow and explicit discounted checkout. Added a provider-free hosted verifier and updated the shared action/OpenAPI contract.
+- Acceptance progress remains 50% complete / 50% pending until hosted verification closes the conversational-group checkpoint. This milestone does not complete broader semantic task planning, worldwide product retrieval or genuine provider/human acceptance.
+
 ## 2026-10-08 — Original master-plan audit
 
 - Audited the original 5 October plan and initial brief against the implemented agent, buying and resolution services, test definitions and recorded release evidence. Added `docs/PLAN_AUDIT.md` with all seven capability statuses, original release gates and remaining implementation/acceptance milestones.

@@ -7,6 +7,7 @@ import * as service from "@/server/service";
 import { issueCaptureSession } from "@/server/provenance";
 import { authorizeReturn, returnShippingEvent } from "@/server/return-shipping";
 import { cancelFulfillment, chooseRemedy } from "@/server/order-options";
+import { commitAgentGroup } from "@/server/agent-groups";
 export async function POST(request: Request) {
   try {
     requireSameOrigin(request);
@@ -16,6 +17,13 @@ export async function POST(request: Request) {
     const input = actionSchema.parse(await jsonBody(request));
     let result: unknown;
     switch (input.action) {
+      case "agent_group_commit":
+        result = await commitAgentGroup(
+          actor,
+          input.productId,
+          input.briefVersion,
+        );
+        break;
       case "cancel_fulfillment":
         result = await cancelFulfillment(actor, input.orderId, input.reason);
         break;

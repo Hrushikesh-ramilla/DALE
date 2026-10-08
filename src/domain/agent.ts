@@ -3,6 +3,7 @@ import { knownModels as models } from "./catalog";
 import type { ResearchContext } from "./agent-plan";
 import type { ResearchReport } from "./research";
 import type { ScamResult } from "./scams";
+import type { AgentGroupOffer } from "./agent-workflow";
 import { mentionedModels } from "./identification";
 import { understandVoice, type VoiceIntent } from "./voice";
 
@@ -35,6 +36,11 @@ export type AgentRun = {
   context?: ResearchContext;
   research?: ResearchReport;
   safety?: ScamResult;
+  groupOffers?: AgentGroupOffer[];
+  toolCalls?: {
+    tool: string;
+    status: "completed" | "needs_input" | "skipped";
+  }[];
   orders?: { id: string; product: string; status: string; nextStep: string }[];
 };
 

@@ -1,5 +1,13 @@
 # Validation status
 
+## Conversational group implementation — 8 October 2026
+
+The current source composes research with read-only group discovery and preserves the savings goal across follow-ups. For the 13-inch M2 Air with no cable and a $53 budget, the $58 complete bundle fails ordinary checkout while the conditional two-shopper group offer totals $52.20. Discovery creates no membership/payment. A separate explicit commitment, another real demo persona, reserved stock and exact checkout approval are required.
+
+Executed: lint/typecheck, 194 unit/contract/database tests, 107 deterministic scenarios, 300 frozen synthetic records, 180 mocked native checks, 200 seeded traces, optimized build and all 33 packaged-production browser journeys (2.3 minutes). A focused group rerun additionally checks 390px overflow. New tests cover stale commitment, complete cable/fast-charge constraints, privacy, expiry/archive/role guards and malformed/duplicate/financial model plans. No live provider call or spend occurred.
+
+Hosted rollout and the new `npm run verify:agent:groups` are pending at this implementation commit. The last observed public build is 2c9b845. The progress tracker remains 50% complete / 50% pending until release verification closes the conversational group checkpoint. Broad semantic planning, broader real-device retrieval and genuine-provider/physical/human gates remain open.
+
 ## Current sourced-agent release — 8 October 2026
 
 Application **2c9b845d10bfbb6707def137e66c5a4e0bddedb7** serves both [public HTTPS](https://16.4.25.181.sslip.io/) and the local production preview. The visible public browser completed the four-message real-device journey: exact M2 size clarification, cable ownership, rejection at $50, then the complete $58 bundle at $60. The recommendation, rejected adapters, source links and simulated-merchant disclosure are visible in `.data/reports/dale-hosted-sourced-final.png`. This manual journey makes no purchase or provider call.
