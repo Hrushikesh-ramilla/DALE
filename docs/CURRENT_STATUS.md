@@ -2,6 +2,8 @@
 
 Updated 8 October 2026. The local application was found stopped: no Node process and no listener on port 3000. Its previous launch had no retained exit log, so the precise termination cause is unknown. No source changes or database reset were required to recover it.
 
+Recovery tooling is committed at 739d19e and 9baa573. Both CI runs pass quality and production app/worker/PostgreSQL containers, including all 39 browser journeys in each. The latest archive is prepared for deployment; public installation remains blocked. Local preview uses embedded PostgreSQL and the guided scenario engine; the independent background worker is validated in the Docker/EC2 PostgreSQL runtime, not launched concurrently against the local embedded database.
+
 DALE is a customer-first shopping agent: sourced product comparison and optional group savings, explicit purchase approval, protected checkout, own-order assistance and customer-selected return/refund/replacement with evidence and human review. The managed storefront is its test merchant. Supported real-device coverage is a reviewed M1/M2 MacBook charging registry, not unrestricted shopping across the internet.
 
 | Area | Current status |
