@@ -2,6 +2,11 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Prepared stable deployment transport
+
+- Added `--ssm-port` to the existing checksum/backup installer stream. An authenticated local Session Manager tunnel reuses the pinned EC2 host identity and private key, without a new inbound SSH rule or a separate secret transfer path.
+- Syntax and invalid-port rejection pass locally. Actual SSM access is not configured: the owner still needs an Online managed instance and an authenticated AWS profile. No IAM resource, instance or paid network component was provisioned.
+
 ## 2026-10-08 — Composed shopping and resolution contracts
 
 - Connected multi-goal native planning and confirmed voice transcripts to sourced research, conditional group savings, private order/case inspection, seller-message checks and unsubmitted support drafts. Unknown devices remain unresolved; semantic proposals require confirmation and generated plans cannot authorize money. Added reviewed M1 Air/13-inch Pro records, metadata-based aliases and bounded manufacturer HTTP receipts; seven actual public pages matched.

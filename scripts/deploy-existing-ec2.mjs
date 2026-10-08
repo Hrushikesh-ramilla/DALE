@@ -7,6 +7,24 @@ import { resolve } from "node:path";
 const release = process.argv[2];
 if (!release || !/^[a-zA-Z0-9._-]+$/.test(release))
   throw new Error("Supply a unique release identifier.");
+const instanceHost = "ec2-16-4-25-181.ap-south-1.compute.amazonaws.com";
+const connection = process.argv.slice(3);
+if (
+  connection.length &&
+  (connection.length !== 2 ||
+    connection[0] !== "--ssm-port" ||
+    !/^\d{4,5}$/.test(connection[1]) ||
+    Number(connection[1]) < 1024 ||
+    Number(connection[1]) > 65535)
+)
+  throw new Error(
+    "Use --ssm-port <1024-65535> with the authorized local SSM tunnel.",
+  );
+// The tunnel changes transport only. Keep the same instance identity, private
+// key and checksum/backup installer rather than trusting localhost as a host.
+const transport = connection.length
+  ? ["-p", connection[1], "-o", `HostKeyAlias=${instanceHost}`]
+  : [];
 const directory = resolve(".data/deploy");
 const archive = resolve(directory, "release.tar.gz");
 await stat(resolve(directory, "ssh-key.pem"));
@@ -25,7 +43,8 @@ const child = spawn(
     "ConnectTimeout=10",
     "-o",
     "StrictHostKeyChecking=yes",
-    "ubuntu@ec2-16-4-25-181.ap-south-1.compute.amazonaws.com",
+    ...transport,
+    `ubuntu@${connection.length ? "127.0.0.1" : instanceHost}`,
     command,
   ],
   { stdio: ["pipe", "inherit", "inherit"] },
