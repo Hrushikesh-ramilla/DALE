@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Group-agent release acceptance
+
+- Deployed application ee4e5d8 on the existing EC2 instance and relaunched the local production preview. The checksum/backup installer restarted app/worker and public health matches the release. Archive inventory excludes environment/private keys; its identity is recorded in VALIDATION.
+- All 56 hosted agent/group/shopping/scenario checks pass. GitHub run 37745181417 passes quality and production app/worker/PostgreSQL container jobs, including 33 browser journeys in each. A separate later SSH restart probe timed out and is not counted; no additional credential or AI spend was needed.
+- Closed conversational group discovery/participation checkpoint 7. Progress is **55% complete / 45% pending (11 of 20 checkpoints)**. Remaining semantic/data/configuration/dispute implementation and genuine-provider/physical/human acceptance are explicit; credentials alone cannot close them.
+
 ## 2026-10-08 — Conversational group savings
 
 - Added bounded ordered tool workflows, retained group-savings goals across clarification, read-only compatible group discovery, conditional full-cost comparisons and explicit in-conversation commitment/review controls. No partner, payment or membership is invented by discovery. Declining grouping clears the retained goal.

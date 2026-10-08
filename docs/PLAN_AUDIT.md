@@ -2,6 +2,8 @@
 
 Audited 8 October 2026 against application `2c9b845` and documentation revision `5ed42b1`. The original plan is preserved in commit `68f6740` (5 October). Sources include that baseline, the owner's pasted initial conversation, current code, test definitions and recorded execution evidence. This audit makes no application change, provider call or spend.
 
+Subsequent milestone: application `ee4e5d8` adds ordered research/group discovery, explicit brief-bound commitment and protected discounted checkout; production browser and 13 public group checks pass. The findings below preserve the audited `2c9b845` baseline. Current closures and percentages are maintained in [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md); the original whole-product verdict remains incomplete.
+
 ## Intended product and verdict
 
 DALE is a customer-first shopping agent combining AgentGuard, BuyTogether, ScamPause, Buyer's Advocate, ReturnShield, PartsMatch and RescueMyOrder. Its promise is: **find the right product, pay safely, and receive a clear, fair resolution when something goes wrong.** Returns evidence supports that shopper journey; it is not the main product.

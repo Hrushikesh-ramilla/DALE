@@ -1,14 +1,18 @@
 # Validation status
 
-## Conversational group implementation — 8 October 2026
+## Conversational group release — 8 October 2026
+
+Application **ee4e5d83e2b1bf0da5d09c10f69d0b1cd64aa833** runs locally and at [public HTTPS](https://16.4.25.181.sslip.io/). The single-connection checksum/backup installer completed, restarted app/worker and returned the new ready build; public health reports the matching release. Archive: **14,162,031 bytes**, **3,027 entries**, SHA-256 `e3eefd169c26929f59a60f47914dae6fd84f2cc695ff7833980fe0de81f82c6c`; environment and PEM entries are absent. Prior release/configuration/database/evidence were retained by the upgrade wrapper.
 
 The current source composes research with read-only group discovery and preserves the savings goal across follow-ups. For the 13-inch M2 Air with no cable and a $53 budget, the $58 complete bundle fails ordinary checkout while the conditional two-shopper group offer totals $52.20. Discovery creates no membership/payment. A separate explicit commitment, another real demo persona, reserved stock and exact checkout approval are required.
 
 Executed: lint/typecheck, 194 unit/contract/database tests, 107 deterministic scenarios, 300 frozen synthetic records, 180 mocked native checks, 200 seeded traces, optimized build and all 33 packaged-production browser journeys (2.3 minutes). A focused group rerun additionally checks 390px overflow. New tests cover stale commitment, complete cable/fast-charge constraints, privacy, expiry/archive/role guards and malformed/duplicate/financial model plans. No live provider call or spend occurred.
 
-Hosted rollout and the new `npm run verify:agent:groups` are pending at this implementation commit. The last observed public build is 2c9b845. The progress tracker remains 50% complete / 50% pending until release verification closes the conversational group checkpoint. Broad semantic planning, broader real-device retrieval and genuine-provider/physical/human gates remain open.
+Hosted verification passes **56 checks**: 13 compound group-agent checks, 17 source-to-refund checks, 12 shopping/identification checks and 14 engineering-scenario checks. Group checks include no automatic enrollment/payment, stale/forged approval rejection, actual second demo persona, reserved discounted quote and explicit fixture capture. Redacted evidence is in `.data/reports/hosted-agent-groups.json` and the existing isolated hosted reports. [GitHub run 37745181417](https://github.com/Hrushikesh-ramilla/buyerguard/actions/runs/37745181417) passes both quality and production app/worker/PostgreSQL jobs, with all 33 browser journeys in each (2.8 minutes).
 
-## Current sourced-agent release — 8 October 2026
+Acceptance progress is **55% complete / 45% pending (11 of 20 checkpoints)** after closing conversational group discovery/participation. Broader semantic planning, broader real-device retrieval, preference/group configuration, dispute reconciliation and genuine-provider/physical/human gates remain open. No live provider call or spend occurred. A separate post-baseline SSH restart probe timed out, so the new four-check restart verifier was not executed; the observed upgrade restart and prior release's explicit restart evidence remain distinct. Permanent SSM access is still unconfigured. Automatic rollback was not exercised.
+
+## Preceding sourced-agent release — 8 October 2026
 
 Application **2c9b845d10bfbb6707def137e66c5a4e0bddedb7** serves both [public HTTPS](https://16.4.25.181.sslip.io/) and the local production preview. The visible public browser completed the four-message real-device journey: exact M2 size clarification, cable ownership, rejection at $50, then the complete $58 bundle at $60. The recommendation, rejected adapters, source links and simulated-merchant disclosure are visible in `.data/reports/dale-hosted-sourced-final.png`. This manual journey makes no purchase or provider call.
 

@@ -4,7 +4,7 @@
 
 **Partial: the original product and release gates are not complete.** The goal remains the customer-first shopping agent defined in section 1 and the connected journey in section 4. The storefront is its managed test merchant, not the primary deliverable. The original plan deliberately bounds the first release to one storefront and a curated electronics catalog; it does not require arbitrary external-store access.
 
-The later two-model recovery milestones below establish a narrower sourced demonstration. They do not replace the original feature contracts, unified conversational journey, or genuine-provider and independent acceptance gates. Current gaps include conversational group orchestration, broader task interpretation, explicit shopper preference weights, external dispute reconciliation, and unexecuted live AI/PayPal, physical-evidence and human acceptance. See [docs/PLAN_AUDIT.md](docs/PLAN_AUDIT.md) for the code-backed requirement audit and remaining milestones.
+The later two-model recovery milestones below establish a narrower sourced demonstration. They do not replace the original feature contracts, unified conversational journey, or genuine-provider and independent acceptance gates. Current gaps include broader task interpretation, explicit shopper preference weights, external dispute reconciliation, and unexecuted live AI/PayPal, physical-evidence and human acceptance. Conversational group discovery and approval-bound participation are now released at ee4e5d8. See [docs/PLAN_AUDIT.md](docs/PLAN_AUDIT.md) for the original code-backed audit and [docs/PROJECT_PROGRESS.md](docs/PROJECT_PROGRESS.md) for subsequent milestone closures: **55% complete / 45% pending (11 of 20 checkpoints)**.
 
 ## Buyer-agent recovery milestones — 7 October
 
