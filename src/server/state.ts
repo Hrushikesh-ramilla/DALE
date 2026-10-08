@@ -36,7 +36,11 @@ export type Order = {
   captureId?: string;
   refundedAmount: number;
   providerObservations?: ProviderObservation[];
-  providerScan?: { checkedAt?: string; nextCheckAt: string; status: "checking" | "complete" | "review" };
+  providerScan?: {
+    checkedAt?: string;
+    nextCheckAt: string;
+    status: "checking" | "complete" | "review";
+  };
   refund?: {
     status: "processing" | "completed" | "failed" | "unknown";
     reference?: string;
@@ -142,6 +146,12 @@ export type Workspace = {
     resource: string;
   }[];
   webhookIds: string[];
+  signedWebhookReceipts?: {
+    id: string;
+    type: string;
+    receivedAt: string;
+    orderIds: string[];
+  }[];
   captureSessions?: {
     id: string;
     code: string;

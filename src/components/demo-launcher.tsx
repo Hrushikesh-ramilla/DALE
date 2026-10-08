@@ -95,6 +95,11 @@ export function DemoLauncher() {
         Purchases and remedies still require the same explicit approvals.
       </p>
       {error && <p role="alert">{error}</p>}
+      <p>
+        These scenarios use fixtures.{" "}
+        <Link href="/live">Test live Gemini and PayPal ↗</Link> in a separately
+        configured shopper session.
+      </p>
       <div className="demo-scenarios">
         {scenarios.map(([kind, title, description]) => (
           <button

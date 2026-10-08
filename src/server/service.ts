@@ -138,6 +138,18 @@ export async function snapshot(actor: Actor) {
         orders: run.orders,
       })),
     fixtureWorkspace: !!state.fixtureWorkspace,
+    signedWebhookReceipts: (state.signedWebhookReceipts || [])
+      .map((receipt) => ({
+        ...receipt,
+        orderIds: receipt.orderIds.filter((id) =>
+          state.orders.some(
+            (order) =>
+              order.id === id &&
+              (actor.role !== "buyer" || order.buyerId === actor.userId),
+          ),
+        ),
+      }))
+      .filter((receipt) => receipt.orderIds.length > 0),
     demo: state.demo
       ? { kind: state.demo.kind, expiresAt: state.demo.expiresAt }
       : undefined,

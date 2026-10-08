@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Explicit live integration entry and release settings
+
+- Added /live with server-derived readiness, a private ordinary-shopper entry and a clear distinction from guided fixture scenarios. Added a loopback-only live preview launcher that requires owner-confirmed disabled billing and free quota before starting generation.
+- Fixed release packaging that forcibly disabled planning on every release. Explicit owner settings now survive packaging; credentials alone and unconfirmed billing do not enable calls. Three focused configuration contracts pass.
+- Added a resumable protected PayPal acceptance runner with separate prepare, capture, customer-requested refund and genuine receipt phases. Associated signed receipts are retained separately from provider-confirmed money state and filtered to accessible orders; duplicate, forged, unrelated and cross-shopper behavior is covered. All 255 unit/contract/database tests pass.
+- A real direct gemini-3.8-flash generation returned HTTP 200 and the expected response, using sixteen tokens. An initial probe-only unsupported thinking setting was rejected with HTTP 400; the application uses the supported low setting. This smoke result does not establish agent, vision or voice acceptance.
+- Fresh PayPal OAuth and webhook lookup passed; all existing credentials are present. A new genuine sandbox order reached successful buyer login, then PayPal rejected the merchant's USD currency again. No capture or refund was issued. Owner account correction and AI billing confirmation were requested together with continued independent work. Acceptance remains 80% / 20%.
+
 ## 2026-10-08 — Final bounded implementation release
 
 - Deployed application 69ac213 to the existing EC2 instance with checksum verification, pre-upgrade snapshots and app/worker restart. Local and public health match the source; the DALE remote and parallel README diagrams remain intact.

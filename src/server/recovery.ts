@@ -1,4 +1,5 @@
 import { getDatabase } from "./database";
+import { recordVerifiedReceipt } from "./webhook-receipts";
 import {
   audit,
   getWorkspace,
@@ -42,13 +43,15 @@ export async function acceptWebhook(
     for (const workspace of workspaces.rows) {
       if (workspace.state.archivedAt) continue;
       const changed = recordProviderWakeup(workspace.state, event);
-      if (changed)
+      const receiptRecorded = recordVerifiedReceipt(workspace.state, event);
+      if (changed || receiptRecorded)
         await sql.query("UPDATE workspaces SET state=$2::jsonb WHERE id=$1", [
           workspace.id,
           JSON.stringify(workspace.state),
         ]);
       if (
         !changed &&
+        !receiptRecorded &&
         !workspace.state.operations.some((operation) =>
           ["pending", "unknown"].includes(operation.state),
         )
