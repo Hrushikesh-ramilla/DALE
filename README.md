@@ -8,6 +8,8 @@ DALE combines AI-assisted product discovery, compatibility matching, group disco
 
 Current tested acceptance is **80% complete / 20% pending (16 of 20 checkpoints)**; the bounded feature implementation is present. Genuine sandbox financial completion, no-spend live AI/voice evaluation, staged physical labels and five independent testers remain separate acceptance gates. The public and local builds can differ: see [current release evidence](docs/VALIDATION.md), [progress](docs/PROJECT_PROGRESS.md) and [new manual journeys](docs/CURRENT_ACCEPTANCE.md).
 
+Verified release **69ac213** runs at [the public demo](https://16.4.25.181.sslip.io/demo) and locally at `http://localhost:3000/demo`. It passes 251 unit/contract/database tests, 38 browser journeys in each CI job, 72 hosted fixture checks and four observed-restart persistence checks. The README diagrams and DALE repository rename are preserved.
+
 ---
 
 ## Overview

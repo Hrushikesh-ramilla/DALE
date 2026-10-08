@@ -1,5 +1,7 @@
 # Stable access to the existing EC2 instance
 
+Current verified release: 69ac213 deployed through the pinned single-connection installer; checksum/backup, public build identity and observed upgrade/restart persistence pass. The existing snap SSM agent is active. AWS instance-role and local account authorization remain unverified; `--ssm-port` is implemented for the authenticated tunnel once that account setup is available. Deployment succeeded, but intermittent inbound SSH remains an operational limitation. The dated notes below preserve earlier attempts.
+
 8 October: application 2c9b845 deployed successfully using the one-connection stream. Checksum verification, protected pre-upgrade snapshots, service activation, public HTTPS, the expected BUILD_ID and actual app/worker restart persistence pass. This successful SSH session does not establish a stable permanent connection; the SSM setup below remains pending.
 
 7 October recovery: direct SSH became reachable again. The original OneDrive/Desktop key was rejected for broad local file permissions; the existing owner-restricted ignored copy at `.data/deploy/ssh-key.pem` works. Reuse that copy for deployment rather than reintroducing broad key access. This fixes local OpenSSH key loading, not the changing-IP architecture. SSM still requires the one-time authenticated AWS/IAM setup below.

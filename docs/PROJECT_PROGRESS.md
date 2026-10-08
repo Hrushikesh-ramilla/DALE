@@ -2,7 +2,7 @@
 
 Updated 8 October 2026. **16 of 20 acceptance checkpoints closed: 80% complete, 20% pending.** This is a transparent checkpoint count, not an estimate of remaining hours or a claim that 20% of the code is unwritten. Each checkpoint has equal weight (5 percentage points). Partially implemented or externally unverified checkpoints remain open; mock results never close a live-provider checkpoint.
 
-The last verified public release is application `ee4e5d8`. The new local candidate implements the remaining scoped code milestones, including composed planning, weights/policy, reviewed retrieval, claim reports/media and external reconciliation. Hosting availability is established; publishing this candidate requires a verified administrative connection and matching hosted BUILD_ID. Genuine acceptance still needs actual provider, physical and independent-human executions rather than a credential replacement.
+Application `69ac213` runs locally and at public HTTPS. It implements the remaining scoped code milestones, including composed planning, weights/policy, reviewed retrieval, claim reports/media and external reconciliation. The checksum/backup installer completed; public BUILD_ID matches, 72 hosted checks and four observed-restart persistence checks pass. Genuine acceptance still needs actual provider, physical and independent-human executions rather than a credential replacement. Permanent SSM account authorization remains an operational follow-up; this release deployed successfully through restricted SSH.
 
 | # | Acceptance checkpoint | Status | Evidence or remaining work |
 | --- | --- | --- | --- |
@@ -35,4 +35,4 @@ The detailed requirement audit is [PLAN_AUDIT.md](PLAN_AUDIT.md). The original p
 
 Milestone history: audit baseline `fb50d0a` closed 10/20 (50%); application `ee4e5d8` plus hosted verification closes checkpoint 7, reaching 11/20 (55%). Live semantic/OCR/provider and physical/human gates remain open rather than receiving credit for mocks.
 
-Current local milestone closes checkpoints 3, 4, 5, 13 and 16: 250 unit/contract/database tests pass; the production browser run passed 37 journeys and the corrected complete-response mock passes its focused reconciliation rerun. Full final release validation, commit and hosted identity are recorded in VALIDATION.md. Live providers and human/physical tests stay open. Existing no-spend constraints remain in force.
+Current released milestone closes checkpoints 3, 4, 5, 13 and 16: 251 unit/contract/database tests, 38 production browser journeys in each CI job, 72 public fixture checks and four actual upgrade/restart persistence checks pass. Full release evidence, archive and commit identities are recorded in VALIDATION.md. Live providers and human/physical tests stay open. Existing no-spend constraints remain in force. Final scope review found no further independently implementable required-code blocker within the original bounded release.

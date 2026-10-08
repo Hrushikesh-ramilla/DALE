@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Final bounded implementation release
+
+- Deployed application 69ac213 to the existing EC2 instance with checksum verification, pre-upgrade snapshots and app/worker restart. Local and public health match the source; the DALE remote and parallel README diagrams remain intact.
+- Both jobs in GitHub run 37783382057 pass: 251 unit/contract/database tests, evaluations/traces, optimized build and 38 production browser journeys in each, including real PostgreSQL/app/worker containers. Public verification passes 72 feature/lifecycle checks plus four observed upgrade/restart persistence checks. The archive excludes secrets/private data and its exact identity is in VALIDATION.md.
+- All independently implementable gaps identified by the original bounded-scope audit are addressed. Tested acceptance remains **80% complete / 20% pending** because genuine provider runs, physical independent labels and five human exercises have not been performed. No mock result is counted as live acceptance, and no AI billing or paid resource was enabled.
+
 ## 2026-10-08 — Hosted current-feature verification and demo burst allowance
 
 - Added a credential-free fixture verifier for the deployed M1/voice composition, persisted shopper weights, merchant-only frozen group terms and private video/proposition reports. All 16 new hosted checks pass at ec4c7bd, alongside 56 existing hosted checks; no model call or real payment was made.

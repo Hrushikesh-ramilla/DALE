@@ -2,6 +2,8 @@
 
 Check VALIDATION.md for the build actually serving the chosen URL. These tests use private simulated payments/shipping and make no AI calls. A new local build and an older public build are different releases.
 
+Verified application 69ac213 now serves both http://localhost:3000/demo and https://16.4.25.181.sslip.io/demo. Open a fresh guided scenario for each independent exercise; no login or provider credential is required. `npm run verify:current` repeats sixteen new-feature checks on the hosted fixture adapter and saves a redacted report. Complete release/CI/upgrade evidence is in VALIDATION.md.
+
 | Test | Action | Expected result |
 | --- | --- | --- |
 | Several goals | Type **Find a charger for MacBook Air M1 under $60. Include a cable, normal charging. Use grouping. Show my orders. The old item is damaged; I want a refund.** | $58 complete bundle, conditional $52.20 group offer under default policy, sourced M1 evidence, own-order lookup and an unsubmitted support draft. No membership, purchase, refund or case is created from chat. Return to Discover to inspect retained receipts. |
