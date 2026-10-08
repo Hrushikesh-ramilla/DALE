@@ -39,7 +39,18 @@ import { enqueueJob, recoveryStatus } from "./jobs";
 import { evidenceTarget, submissionProvenance } from "./provenance";
 import { returnEligibility } from "../domain/return-policy";
 import { assertReturnReady } from "./return-shipping";
+import { assertProviderRemedyReady } from "../domain/provider-adjustments";
+import {
+  preflightProviderOrder,
+  reconcileProviderAdjustments,
+} from "./provider-adjustments";
 import { clarifyBrief, comparisonFacts } from "../domain/conversation";
+import {
+  defaultGroupPolicy,
+  groupPolicySchema,
+  groupTerms,
+  type GroupPolicyInput,
+} from "../domain/group-policy";
 
 function buyer(actor: Actor) {
   if (actor.role !== "buyer")
@@ -113,8 +124,16 @@ export async function snapshot(actor: Actor) {
         recommendation: run.recommendation,
         context: run.context,
         research: run.research,
+        sourceReceipts: run.sourceReceipts,
+        claims: run.claims,
         safety: run.safety,
-        groupOffers: run.groupOffers,
+        groupOffers: run.groupOffers?.map((offer) => ({
+          ...offer,
+          policyVersion: offer.policyVersion ?? 1,
+          minimumMembers: offer.minimumMembers ?? 2,
+          discountPercent: offer.discountPercent ?? 10,
+          checkoutMinutes: offer.checkoutMinutes ?? 30,
+        })),
         toolCalls: run.toolCalls,
         orders: run.orders,
       })),
@@ -130,8 +149,10 @@ export async function snapshot(actor: Actor) {
     cases: state.cases.filter(
       (c) => actor.role !== "buyer" || c.buyerId === actor.userId,
     ),
+    groupPolicy: state.groupPolicy || defaultGroupPolicy,
     groups: state.groups.map((g) => ({
       ...g,
+      terms: g.terms || groupTerms(undefined, productById(g.productId)),
       members: undefined,
       memberCount: g.members.length,
       joined: g.members.includes(actor.userId),
@@ -163,7 +184,9 @@ export async function updateBrief(actor: Actor, input: ShoppingBrief) {
     if (
       previous &&
       Object.entries(normalized).every(
-        ([key, value]) => previous.input[key as keyof ShoppingBrief] === value,
+        ([key, value]) =>
+          JSON.stringify(previous.input[key as keyof ShoppingBrief]) ===
+          JSON.stringify(value),
       )
     )
       return previous;
@@ -434,12 +457,35 @@ export async function joinGroup(
   productId: string,
   model: string,
   expectedBriefVersion?: number,
+  expectedPolicyVersion?: number,
 ) {
   buyer(actor);
   const product = productById(productId);
   if (!product.compatibleModels.includes(model))
     throw new Error("The group product must fit your device.");
   return mutateWorkspace(actor.workspaceId, (state) => {
+    const available = state.groups.find(
+      (g) =>
+        g.productId === productId &&
+        g.model === model &&
+        (g.status === "forming" ||
+          (g.status === "ready" && g.members.includes(actor.userId))) &&
+        Date.parse(g.checkoutExpiresAt || g.expiresAt) > Date.now(),
+    );
+    const terms =
+      available?.terms ||
+      groupTerms(available ? undefined : state.groupPolicy, product);
+    if (terms.minimumMembers > product.stock)
+      throw new Error(
+        "There is not enough stock for the approved group threshold.",
+      );
+    if (
+      expectedPolicyVersion !== undefined &&
+      expectedPolicyVersion !== terms.policyVersion
+    )
+      throw new Error(
+        "Group terms changed. Refresh the offers before committing.",
+      );
     if (expectedBriefVersion !== undefined) {
       const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
       if (
@@ -448,7 +494,7 @@ export async function joinGroup(
         brief.clarificationRequired ||
         brief.input.model !== model ||
         (brief.input.category && brief.input.category !== product.category) ||
-        Math.round(product.price * 0.9) > brief.input.budget
+        terms.amount > brief.input.budget
       )
         throw new Error(
           "Your confirmed brief changed. Refresh the group offers before committing.",
@@ -491,20 +537,57 @@ export async function joinGroup(
         model,
         members: [],
         status: "forming",
-        expiresAt: new Date(Date.now() + 86400000).toISOString(),
+        expiresAt: new Date(
+          Date.now() +
+            (state.groupPolicy || defaultGroupPolicy).formingMinutes * 60000,
+        ).toISOString(),
+        terms,
       };
       state.groups.push(group);
     }
     group.members.push(actor.userId);
-    if (group.members.length >= 2) {
+    group.terms ??= terms;
+    if (group.members.length >= group.terms.minimumMembers) {
       if (activeStock(state, productId) + group.members.length > product.stock)
         throw new Error("There is not enough stock for this group.");
       group.status = "ready";
-      group.amount = Math.round(product.price * 0.9);
-      group.checkoutExpiresAt = new Date(Date.now() + 30 * 60000).toISOString();
+      group.amount = group.terms.amount;
+      group.checkoutExpiresAt = new Date(
+        Date.now() + group.terms.checkoutMinutes * 60000,
+      ).toISOString();
     }
     audit(state, actor, "group.joined", group.id);
     return group.id;
+  });
+}
+export async function updateGroupPolicy(
+  actor: Actor,
+  input: GroupPolicyInput,
+  expectedVersion: number,
+) {
+  reviewer(actor);
+  const policy = groupPolicySchema.parse(input);
+  for (const tier of policy.productTiers) {
+    const product = productById(tier.productId);
+    if (tier.minimumMembers > product.stock)
+      throw new Error(
+        "The approved group threshold exceeds this product's stock.",
+      );
+  }
+  return mutateWorkspace(actor.workspaceId, (state) => {
+    const current = state.groupPolicy || defaultGroupPolicy;
+    if (expectedVersion !== current.version)
+      throw new Error(
+        "Group policy changed. Reload the current settings before saving.",
+      );
+    state.groupPolicy = { ...policy, version: current.version + 1 };
+    audit(
+      state,
+      actor,
+      "group.policy_updated",
+      `policy:${state.groupPolicy.version}`,
+    );
+    return state.groupPolicy;
   });
 }
 export async function leaveGroup(actor: Actor, groupId: string) {
@@ -809,16 +892,24 @@ export async function analyzeCase(actor: Actor, caseId: string) {
   );
   analysis.versions = {
     policy: "merchant-policy-v1",
-    prompt: "claims-v2",
+    prompt: "claims-v3",
     model:
       analysis.mode === "live"
         ? process.env.AI_MODEL || "unconfigured"
         : "deterministic-fixture-v1",
     analyzedAt: new Date().toISOString(),
   };
-  if (item.evidence.filter((entry) => entry.assetKey).length > images.length)
+  if (
+    item.evidence.filter(
+      (entry) => entry.assetKey && entry.mime?.startsWith("image/"),
+    ).length > images.length
+  )
     analysis.observations.push(
       "Model image review is limited to four checkpoint samples. All original images remain available for human review.",
+    );
+  if (item.evidence.some((entry) => entry.mime?.startsWith("video/")))
+    analysis.observations.push(
+      "Optional videos are retained privately for human review. The image-analysis adapter does not analyze video.",
     );
   return mutateWorkspace(actor.workspaceId, (fresh) => {
     const current = ownedCase(fresh, actor, caseId);
@@ -840,6 +931,62 @@ export async function analyzeCase(actor: Actor, caseId: string) {
     return analysis;
   });
 }
+export async function reconcileExternalOrder(
+  actor: Actor,
+  orderId: string,
+  refundReferences: string[] = [],
+) {
+  reviewer(actor);
+  const before = await getWorkspace(actor.workspaceId);
+  const order = ownedOrder(before, actor, orderId);
+  if (
+    before.fixtureWorkspace ||
+    quotePaymentMode(order.quote) !== "sandbox" ||
+    !order.captureId
+  )
+    throw new Error(
+      "External reconciliation requires a captured sandbox order; fixture records cannot call the provider.",
+    );
+  if (
+    refundReferences.length > 5 ||
+    refundReferences.some(
+      (reference) => !/^[A-Za-z0-9-]{1,255}$/.test(reference),
+    )
+  )
+    throw new Error("Provide at most five exact PayPal refund references.");
+  await mutateWorkspace(actor.workspaceId, (state) => {
+    const current = ownedOrder(state, actor, orderId);
+    current.providerObservations ??= [];
+    for (const reference of new Set(refundReferences)) {
+      if (
+        current.providerObservations.some(
+          (entry) => entry.kind === "refund" && entry.reference === reference,
+        )
+      )
+        continue;
+      current.providerObservations.push({
+        kind: "refund",
+        reference,
+        captureId: current.captureId!,
+        trigger: "preflight",
+        state: "pending",
+        eventIds: [],
+        observedAt: new Date().toISOString(),
+        attempts: 0,
+        explanation:
+          "A reviewer supplied a refund reference for a provider read. No financial amount or remedy is accepted without verified capture-linked facts.",
+      });
+    }
+    for (const observation of current.providerObservations) {
+      observation.state = "pending";
+      observation.nextCheckAt = undefined;
+    }
+    audit(state, actor, "provider.refresh_requested", orderId);
+  });
+  await preflightProviderOrder(actor.workspaceId, orderId, true);
+  await reconcileProviderAdjustments(actor.workspaceId);
+  return ownedOrder(await getWorkspace(actor.workspaceId), actor, orderId);
+}
 export async function resolveCase(
   actor: Actor,
   caseId: string,
@@ -847,6 +994,14 @@ export async function resolveCase(
   note: string,
 ) {
   reviewer(actor);
+  const beforeApproval = await getWorkspace(actor.workspaceId);
+  const beforeCase = ownedCase(beforeApproval, actor, caseId);
+  if (
+    !["resolved", "refund_pending", "refund_failed"].includes(beforeCase.status)
+  ) {
+    await preflightProviderOrder(actor.workspaceId, beforeCase.orderId, true);
+    await reconcileProviderAdjustments(actor.workspaceId);
+  }
   const item = await mutateWorkspace(actor.workspaceId, async (state, sql) => {
     const item = ownedCase(state, actor, caseId);
     const order = ownedOrder(state, actor, item.orderId);
@@ -863,6 +1018,7 @@ export async function resolveCase(
       );
     if (["resolved", "refund_pending", "refund_failed"].includes(item.status))
       return item;
+    assertProviderRemedyReady(order);
     if (!note.trim())
       throw new Error("Record the customer policy and reason for the remedy.");
     if (remedy !== item.request)
@@ -915,6 +1071,8 @@ export async function resolveCase(
           status: "replacement",
           createdAt: new Date().toISOString(),
           captureId: undefined,
+          providerObservations: undefined,
+          providerScan: undefined,
           providerOrderId: undefined,
           returnId: undefined,
           replacementOf: order.id,
@@ -948,6 +1106,15 @@ export async function resolveCase(
 }
 export async function executeRefund(actor: Actor, orderId: string) {
   reviewer(actor);
+  const beforeRefund = ownedOrder(
+    await getWorkspace(actor.workspaceId),
+    actor,
+    orderId,
+  );
+  if (beforeRefund.status !== "refunded") {
+    await preflightProviderOrder(actor.workspaceId, orderId, true);
+    await reconcileProviderAdjustments(actor.workspaceId);
+  }
   const prepared = await mutateWorkspace(actor.workspaceId, (state) => {
     const order = ownedOrder(state, actor, orderId);
     const item = state.cases.find((c) => c.orderId === orderId);
@@ -962,6 +1129,7 @@ export async function executeRefund(actor: Actor, orderId: string) {
       item.status = "resolved";
       return { order, operation: undefined };
     }
+    assertProviderRemedyReady(order);
     if (state.orders.some((o) => o.replacementOf === orderId))
       throw new Error(
         "A replacement already exists. Review the remedy before refunding.",
@@ -1010,6 +1178,15 @@ export async function executeRefund(actor: Actor, orderId: string) {
     );
   try {
     const fixtureState = await getWorkspace(actor.workspaceId);
+    const currentOrder = ownedOrder(fixtureState, actor, orderId);
+    assertProviderRemedyReady(currentOrder);
+    if (prepared.operation.state !== "succeeded")
+      allowedRefund(
+        currentOrder.quote.amount,
+        currentOrder.refundedAmount,
+        0,
+        prepared.operation.amount,
+      );
     const fault =
       fixtureState.fixtureWorkspace &&
       quotePaymentMode(prepared.order.quote) === "fixture"
@@ -1074,8 +1251,20 @@ export async function executeRefund(actor: Actor, orderId: string) {
       }
       if (op.state === "succeeded") return;
       const order = ownedOrder(state, actor, orderId);
-      allowedRefund(order.quote.amount, order.refundedAmount, 0, op.amount);
-      order.refundedAmount += op.amount;
+      const observed = order.providerObservations?.find(
+        (entry) =>
+          entry.kind === "refund" &&
+          entry.reference === result.id &&
+          entry.credited,
+      );
+      if (observed && observed.amount !== op.amount)
+        throw new Error(
+          "The observed provider refund differs from the authorized operation.",
+        );
+      if (!observed) {
+        allowedRefund(order.quote.amount, order.refundedAmount, 0, op.amount);
+        order.refundedAmount += op.amount;
+      }
       order.status = "refunded";
       order.refund = {
         status: "completed",

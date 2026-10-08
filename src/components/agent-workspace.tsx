@@ -159,9 +159,10 @@ export function AgentWorkspace({
         <div className="agent-capability-note">
           <strong>Buyer advocate</strong>
           <span>
-            Manufacturer-backed M2 MacBook Air charger comparisons, message
-            safety and order support. Private demo checkout; model planning
-            stays off until free quota and disabled billing are confirmed.
+            Manufacturer-backed MacBook Air M1/M2 and 13-inch Pro M1 charger
+            comparisons, message safety, group savings and order support. Review
+            the sources and approve each commitment, purchase or remedy
+            yourself.
           </span>
         </div>
         <form
@@ -356,6 +357,47 @@ export function AgentWorkspace({
                 </small>
               </div>
             )}
+            {!!latest.sourceReceipts?.length && (
+              <details className="agent-receipt">
+                <summary>Manufacturer retrieval receipts</summary>
+                {latest.sourceReceipts.map((receipt) => (
+                  <p key={receipt.sourceId}>
+                    <a href={receipt.url} target="_blank" rel="noreferrer">
+                      {receipt.sourceId} ↗
+                    </a>
+                    {" · "}
+                    {receipt.status.replaceAll("_", " ")}
+                    {" · "}
+                    {receipt.checkedAt}
+                    <br />
+                    {receipt.note}
+                  </p>
+                ))}
+              </details>
+            )}
+            {!!latest.claims?.length && (
+              <section
+                className="agent-order-receipts"
+                aria-label="Your claim status"
+              >
+                {latest.claims.map((claim) => (
+                  <article key={claim.id}>
+                    <strong>
+                      Case {claim.id.slice(0, 8)} · {claim.request}
+                    </strong>
+                    <span>
+                      {claim.status.replaceAll("_", " ")} · evidence{" "}
+                      {claim.analysis}
+                    </span>
+                    <p>
+                      Seller response deadline:{" "}
+                      {new Date(claim.deadlineAt).toLocaleString()}
+                    </p>
+                    <p>{claim.nextStep}</p>
+                  </article>
+                ))}
+              </section>
+            )}
             {!!latest.orders?.length && (
               <div className="agent-order-receipts">
                 {latest.orders.map((order) => (
@@ -371,7 +413,7 @@ export function AgentWorkspace({
               <section aria-label="Agent group offers">
                 <h3>Group savings</h3>
                 <p>
-                  Simulated merchant offers · two shoppers required ·
+                  Simulated merchant offers · merchant-approved group terms ·
                   commitments do not charge you.
                 </p>
                 <div className="agent-options">
@@ -398,7 +440,7 @@ export function AgentWorkspace({
                         <p>
                           {group?.status === "ready"
                             ? "Price locked. Review the full quote before approving payment."
-                            : `${group?.memberCount ?? offer.memberCount} of 2 shoppers · conditional discount`}
+                            : `${group?.memberCount ?? offer.memberCount} of ${group?.terms.minimumMembers ?? offer.minimumMembers} shoppers · ${offer.discountPercent}% conditional discount`}
                         </p>
                         <p>{offer.nextStep}</p>
                         {group?.checkoutExpiresAt && (

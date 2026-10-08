@@ -35,6 +35,23 @@ export type AgentRun = {
   };
   context?: ResearchContext;
   research?: ResearchReport;
+  sourceReceipts?: {
+    sourceId: string;
+    url: string;
+    status: "reviewed_snapshot" | "matched" | "changed" | "unavailable";
+    checkedAt: string;
+    contentHash?: string;
+    note: string;
+  }[];
+  claims?: {
+    id: string;
+    orderId: string;
+    status: string;
+    request: string;
+    deadlineAt: string;
+    analysis: string;
+    nextStep: string;
+  }[];
   safety?: ScamResult;
   groupOffers?: AgentGroupOffer[];
   toolCalls?: {
@@ -56,7 +73,7 @@ export function understandAgent(input: AgentRequest): VoiceIntent {
     return {
       kind: "clarification",
       message:
-        "That device is not verified yet. Give the exact model and year. The real evidence pack covers MacBook Air M2 (13-inch or 15-inch) chargers; sample tasks can explicitly use USB-C Laptop (65W), USB-C Laptop (100W), USB-C Laptop (45W) or Barrel-jack Laptop (45W).",
+        "Give the exact device model and year. Reviewed charging evidence covers MacBook Air M1/M2 and 13-inch MacBook Pro M1. Sample tasks can explicitly use USB-C Laptop (65W), USB-C Laptop (100W), USB-C Laptop (45W) or Barrel-jack Laptop (45W).",
     };
   if (
     /\b(?:macbook|iphone|ipad|thinkpad|surface|galaxy|dell|lenovo|asus|acer|samsung|apple|hewlett|zenbook|ideapad|pavilion|latitude|inspiron)\b/i.test(

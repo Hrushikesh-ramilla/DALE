@@ -32,7 +32,8 @@
     "verify:shopping": "tsx scripts/verify-shopping.ts",
     "verify:agent": "tsx scripts/verify-agent-hosted.ts",
     "verify:agent:groups": "tsx scripts/verify-agent-groups.ts",
-    "verify:agent:restart": "tsx scripts/verify-agent-hosted.ts restart"
+    "verify:agent:restart": "tsx scripts/verify-agent-hosted.ts restart",
+    "verify:research": "tsx scripts/verify-manufacturer-sources.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.1146.0",

@@ -208,14 +208,15 @@ const spec = {
       post: {
         security: [{ session: [] }],
         description:
-          "Same-origin multipart submission: exactly one caseId/orderId. PNG/JPEG/WebP up to 4 MiB. Capture code is optional, single-use and checkpoint-bound; it does not establish physical truth. Notes remain in the body.",
+          "Same-origin multipart submission: exactly one caseId/orderId and one image or video. PNG/JPEG/WebP up to 4 MiB; MP4/WebM up to 8 MiB with matching container signature. Video is optional and retained for human review, never sent to the image adapter. Capture code is optional, single-use and checkpoint-bound; it does not establish physical truth. Notes remain in the body. Descriptions without media use the evidence action.",
         requestBody: {
           required: true,
           content: {
             "multipart/form-data": {
               schema: {
                 type: "object",
-                required: ["checkpoint", "serial", "note", "image"],
+                required: ["checkpoint", "serial", "note"],
+                oneOf: [{ required: ["image"] }, { required: ["video"] }],
                 properties: {
                   caseId: { type: "string", format: "uuid" },
                   orderId: { type: "string", format: "uuid" },
@@ -231,6 +232,7 @@ const spec = {
                   note: { type: "string", minLength: 1, maxLength: 2000 },
                   captureSessionId: { type: "string", format: "uuid" },
                   image: { type: "string", format: "binary" },
+                  video: { type: "string", format: "binary" },
                 },
               },
             },

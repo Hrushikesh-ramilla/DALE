@@ -151,7 +151,15 @@ export function searchCatalog(input: {
   budget: number;
   preference?: string;
   priority?: "price" | "features";
+  weights?: { price: number; features: number };
 }) {
+  if (
+    input.weights &&
+    (!Number.isFinite(input.weights.price + input.weights.features) ||
+      input.weights.price + input.weights.features <= 0 ||
+      Object.values(input.weights).some((weight) => weight < 0 || weight > 100))
+  )
+    throw new Error("Invalid shopper preference weights.");
   if (!knownModels.includes(input.model)) return [];
   return (realModels.includes(input.model) ? realProducts : catalog)
     .filter(
@@ -171,6 +179,19 @@ export function searchCatalog(input: {
         b.specs.join(" ").toLowerCase().includes(input.preference.toLowerCase())
           ? 1
           : 0;
+      if (input.weights) {
+        const total = input.weights.price + input.weights.features;
+        // Eligibility precedes scoring; a cheaper incompatible item never ranks.
+        const score = (product: Product, match: number) =>
+          (input.weights!.price * (1 - product.price / input.budget) +
+            input.weights!.features * match) /
+          total;
+        return (
+          score(b, Number(bMatch)) - score(a, Number(aMatch)) ||
+          a.price - b.price ||
+          a.id.localeCompare(b.id)
+        );
+      }
       return (
         (input.priority === "features" ? Number(bMatch) - Number(aMatch) : 0) ||
         a.price - b.price ||

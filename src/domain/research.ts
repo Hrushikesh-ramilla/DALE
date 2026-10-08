@@ -1,9 +1,7 @@
 import type { Product } from "./catalog";
+import { deviceRegistry, deviceByModel } from "./device-registry";
 
-export const realModels = [
-  "MacBook Air (13-inch, M2, 2022)",
-  "MacBook Air (15-inch, M2, 2023)",
-];
+export const realModels = deviceRegistry.map((device) => device.model);
 export type Cable = "unknown" | "none" | "usb60" | "usb100" | "magsafe3";
 export type ResearchNeed = {
   model: string;
@@ -19,6 +17,18 @@ export type ResearchSource = {
 };
 const checkedAt = "2026-10-07";
 export const researchSources: ResearchSource[] = [
+  {
+    id: "airm1",
+    title: "Apple · MacBook Air M1 (2020) specifications",
+    url: "https://support.apple.com/en-us/111883",
+    checkedAt: "2026-10-08",
+  },
+  {
+    id: "prom1",
+    title: "Apple · MacBook Pro 13-inch M1 (2020) specifications",
+    url: "https://support.apple.com/en-us/111893",
+    checkedAt: "2026-10-08",
+  },
   {
     id: "air13",
     title: "Apple · MacBook Air M2 (2022) specifications",
@@ -58,7 +68,7 @@ export const realProducts: Product[] = [
     description:
       "Manufacturer-listed for the 13-inch M2 Air. Cable sold separately; no MacBook fast-charge claim.",
     price: 3900,
-    compatibleModels: [realModels[0]],
+    compatibleModels: [realModels[0], realModels[2]],
     specs: [
       "USB-C",
       "40W dynamic output; up to 60W peak",
@@ -94,7 +104,7 @@ export const realProducts: Product[] = [
     description:
       "Simulated merchant bundle of two sourced Apple products for normal charging of the 13-inch M2 Air.",
     price: 5800,
-    compatibleModels: [realModels[0]],
+    compatibleModels: [realModels[0], realModels[2]],
     specs: [
       "40W Dynamic Power Adapter",
       "60W USB-C charging cable, 1 m",
@@ -131,6 +141,7 @@ export function researchProducts(
       ? "current"
       : "expired";
   const questions: string[] = [];
+  const device = deviceByModel(need.model);
   if (!realModels.includes(need.model))
     questions.push(
       "That exact device is not verified in the current evidence pack. Give the model and year; I will not substitute a sample profile.",
@@ -161,9 +172,19 @@ export function researchProducts(
       reasons.push(
         "Confirm your existing cable before choosing an adapter-only offer.",
       );
+    if (device && !device.magsafe3 && need.cable === "magsafe3")
+      reasons.push(
+        "This device charges through USB-C and does not have a MagSafe 3 charging port.",
+      );
+    if (device && device.normalWatts > 60 && need.cable === "usb60")
+      reasons.push(
+        "A 60W cable does not establish the device's sourced 61W normal charging configuration. Confirm a 100W+ cable.",
+      );
     if (
       need.fastCharging &&
-      (product.id !== "R002" || !["magsafe3", "usb100"].includes(need.cable))
+      (!device?.fastCharging ||
+        product.id !== "R002" ||
+        !["magsafe3", "usb100"].includes(need.cable))
     )
       reasons.push(
         "This combination does not establish Apple-supported MacBook fast charging; a 70W adapter and suitable cable are required.",
@@ -171,7 +192,7 @@ export function researchProducts(
     if (freshness === "expired")
       reasons.push("Source verification has expired.");
     const sourceIds = [
-      need.model === realModels[1] ? "air15" : "air13",
+      ...(device ? [device.sourceId] : []),
       product.id === "R002" ? "70w" : "dynamic",
       ...(product.id === "R003" ? ["cable60"] : []),
     ];

@@ -76,6 +76,9 @@ async function main() {
         action: "agent_group_commit",
         productId: "R003",
         briefVersion: data.run.briefVersion! + 10,
+        policyVersion: data.run.groupOffers?.find(
+          (offer) => offer.productId === "R003",
+        )?.policyVersion,
       },
     });
     check(
@@ -86,6 +89,9 @@ async function main() {
       action: "agent_group_commit",
       productId: "R003",
       briefVersion: data.run.briefVersion,
+      policyVersion: data.run.groupOffers?.find(
+        (offer) => offer.productId === "R003",
+      )?.policyVersion,
     });
     check(
       "Explicit commitment has one member and no payment",

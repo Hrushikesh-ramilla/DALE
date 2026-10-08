@@ -261,6 +261,8 @@ export async function evidenceAnalysis(
 ): Promise<ClaimAnalysis> {
   const records = analyzeClaims(evidence);
   if (mode !== "live") return { ...records, mode: "fixture" };
+  // The text-and-image adapter cannot review video. Preserve it in the sourced report for a person instead.
+  const imageInputs = images.filter((image) => image.mime.startsWith("image/"));
   const schema = z.object({
     observations: z
       .array(
@@ -283,19 +285,31 @@ export async function evidenceAnalysis(
     {
       evidence,
       recordedComparisons: records,
-      imageEvidenceIds: images.map(
+      imageEvidenceIds: imageInputs.map(
         (image, index) =>
           image.evidenceId ||
-          evidence.filter((entry) => entry.assetKey)[index]?.id,
+          evidence.filter(
+            (entry) =>
+              entry.assetKey &&
+              (!entry.mime || entry.mime.startsWith("image/")),
+          )[index]?.id,
       ),
     },
-    images,
+    imageInputs,
   );
-  const imageIds = images.map(
+  const imageIds = imageInputs.map(
     (image, index) =>
-      image.evidenceId || evidence.filter((entry) => entry.assetKey)[index]?.id,
+      image.evidenceId ||
+      evidence.filter(
+        (entry) =>
+          entry.assetKey && (!entry.mime || entry.mime.startsWith("image/")),
+      )[index]?.id,
   );
-  if (result.observations.some((entry) => !imageIds.includes(entry.source)))
+  if (
+    result.observations.some((entry) => !imageIds.includes(entry.source)) ||
+    new Set(result.observations.map((entry) => entry.source)).size !==
+      result.observations.length
+  )
     throw new Error("Analysis returned an unknown evidence source.");
   const appearances = {
     visible_damage: "The model suggests visible damage",
@@ -319,6 +333,32 @@ export async function evidenceAnalysis(
         ...records.sources,
         ...result.observations.map((entry) => entry.source),
       ]),
+    ],
+    propositions: [
+      ...(records.propositions || []),
+      ...result.observations.map((entry) => ({
+        id: `appearance:${entry.source}`,
+        statement:
+          "The image establishes the reported item's physical condition.",
+        category: "media_appearance" as const,
+        outcome: "insufficient" as const,
+        sourceIds: [entry.source],
+        observations: [
+          {
+            text: appearances[entry.appearance],
+            sourceIds: [entry.source],
+            basis: "model_inference" as const,
+          },
+        ],
+        missingFacts: [
+          "Human review and independent corroboration of the inferred appearance.",
+        ],
+        uncertainty: [
+          "Model image appearance is unverified; it cannot establish damage timing, parcel contents, causation or honesty.",
+        ],
+        nextAction:
+          "An authorized reviewer should inspect the original; the model observation cannot deny a remedy.",
+      })),
     ],
     mode: "live",
   };

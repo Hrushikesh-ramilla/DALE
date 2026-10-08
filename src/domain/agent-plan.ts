@@ -3,42 +3,61 @@ import { realModels, type Cable, type ResearchNeed } from "./research";
 import { mentionedModels } from "./identification";
 import { scanMessage } from "./scams";
 import type { AgentRequest } from "./agent";
+import {
+  resolveDevices,
+  deviceDescription,
+  deviceByModel,
+} from "./device-registry";
 
 export const plannerSchema = z.discriminatedUnion("tool", [
-  z.object({
-    tool: z.literal("research_products"),
-    model: z.enum(realModels as [string, ...string[]]).nullable(),
-    budget: z.number().int().min(1).max(100000).nullable(),
-    cable: z.enum(["unknown", "none", "usb60", "usb100", "magsafe3"]),
-    fastCharging: z.boolean(),
-    deviceFamily: z.literal("m2air"),
-  }),
-  z.object({ tool: z.literal("scan_message") }),
-  z.object({ tool: z.literal("inspect_orders") }),
-  z.object({
-    tool: z.literal("prepare_support"),
-    reason: z
-      .enum(["damaged", "wrong_item", "not_delivered", "canceled"])
-      .optional(),
-    request: z.enum(["refund", "replacement"]).optional(),
-  }),
-  z.object({
-    tool: z.literal("clarify"),
-    question: z.string().min(1).max(500),
-  }),
-  z.object({ tool: z.literal("legacy_task") }),
-  z.object({
-    tool: z.literal("confirm_interpretation"),
-    model: z.enum(realModels as [string, ...string[]]),
-    budget: z.number().int().min(1).max(100000).nullable(),
-  }),
+  z
+    .object({
+      tool: z.literal("research_products"),
+      model: z.enum(realModels as [string, ...string[]]).nullable(),
+      budget: z.number().int().min(1).max(100000).nullable(),
+      cable: z.enum(["unknown", "none", "usb60", "usb100", "magsafe3"]),
+      fastCharging: z.boolean(),
+      deviceFamily: z.enum(["m2air", "reviewed"]),
+    })
+    .strict(),
+  z.object({ tool: z.literal("scan_message") }).strict(),
+  z.object({ tool: z.literal("inspect_orders") }).strict(),
+  z.object({ tool: z.literal("inspect_claims") }).strict(),
+  z
+    .object({
+      tool: z.literal("prepare_support"),
+      reason: z
+        .enum(["damaged", "wrong_item", "not_delivered", "canceled"])
+        .optional(),
+      request: z.enum(["refund", "replacement"]).optional(),
+    })
+    .strict(),
+  z
+    .object({
+      tool: z.literal("clarify"),
+      question: z.string().min(1).max(500),
+    })
+    .strict(),
+  z.object({ tool: z.literal("legacy_task") }).strict(),
+  z
+    .object({
+      tool: z.literal("confirm_interpretation"),
+      model: z.enum(realModels as [string, ...string[]]),
+      budget: z.number().int().min(1).max(100000).nullable(),
+      cable: z
+        .enum(["unknown", "none", "usb60", "usb100", "magsafe3"])
+        .optional(),
+      fastCharging: z.boolean().optional(),
+    })
+    .strict(),
 ]);
 export type AgentPlan = z.infer<typeof plannerSchema>;
 export type ResearchContext = Omit<ResearchNeed, "model" | "budget"> & {
   model: string | null;
   budget: number | null;
-  deviceFamily: "m2air";
+  deviceFamily: "m2air" | "reviewed";
   groupSavings?: boolean;
+  deviceQuery?: string;
 };
 
 export function fallbackPlan(
@@ -57,6 +76,12 @@ export function fallbackPlan(
     /\b(?:approve|pay|purchase|execute|run code|transfer|delete)\b/i.test(text)
   )
     return { tool: "legacy_task" };
+  if (
+    /\b(?:my cases?|claim status|return status|evidence report|case status)\b/i.test(
+      text,
+    )
+  )
+    return { tool: "inspect_claims" };
   if (
     /\b(?:damaged|wrong item|refund|replacement|return|not delivered|not arrived|canceled|cancelled)\b/i.test(
       text,
@@ -81,6 +106,10 @@ export function fallbackPlan(
     };
   if (/\b(?:my orders?|track|order status)\b/i.test(text))
     return { tool: "inspect_orders" };
+  if (
+    /\b(?:my cases?|claim status|return status|evidence report)\b/i.test(text)
+  )
+    return { tool: "inspect_claims" };
   if (/\b(?:inr|rupees?|euros?|pounds?|eur|gbp)\b|[₹€£]/i.test(text))
     return {
       tool: "clarify",
@@ -99,7 +128,8 @@ export function fallbackPlan(
       question:
         "You mentioned different devices. Which exact model is this purchase for?",
     };
-  const family = /macbook\s+air/i.test(text) && /\bm2\b/i.test(text);
+  const candidates = resolveDevices(text);
+  const family = candidates.length > 0;
   if (mentionedModels(text).some((model) => !realModels.includes(model)))
     return { tool: "legacy_task" };
   if (family && /\b(?:ssd|dock|hub|headphones?|mouse|storage)\b/i.test(text))
@@ -116,11 +146,11 @@ export function fallbackPlan(
     return {
       tool: "clarify",
       question:
-        "That real model is not verified in the current evidence pack. Give the exact model and year; supported real-device comparisons currently cover 13-inch and 15-inch MacBook Air M2 chargers. I will not substitute a sample profile.",
+        "That real model is not verified in the current evidence pack. Give the exact model and year; I will not substitute a sample profile. Current reviewed comparisons cover MacBook Air M1/M2 and 13-inch MacBook Pro M1 charging.",
     };
   const continuation =
     previous &&
-    /\b(?:cable|mag\s*safe|magsafe|fast|normal|charging|budget|under|below|instead|13|15|100w|60w)\b/i.test(
+    /\b(?:cable|mag\s*safe|magsafe|fast|normal|charging|budget|under|below|instead|13|15|100w|60w|air|pro|m1|m2)\b/i.test(
       text,
     );
   if (!family && !real.length && !continuation) return { tool: "legacy_task" };
@@ -134,11 +164,30 @@ export function fallbackPlan(
       tool: "clarify",
       question: "Choose one maximum budget between $0.01 and $1,000 USD.",
     };
-  let model = real[0] || (family ? null : previous?.model) || null;
-  if (!real.length && previous && /\b13(?:\.6)?(?:[ -]?inch)?\b/i.test(text))
-    model = realModels[0];
-  if (!real.length && previous && /\b15(?:\.3)?(?:[ -]?inch)?\b/i.test(text))
-    model = realModels[1];
+  let model =
+    real[0] ||
+    (candidates.length === 1 ? candidates[0].model : null) ||
+    (family ? null : previous?.model) ||
+    null;
+  if (!model && previous?.deviceQuery && continuation) {
+    const refined = resolveDevices(`${previous.deviceQuery} ${text}`);
+    if (refined.length === 1) model = refined[0].model;
+  }
+  if (
+    !real.length &&
+    previous?.model &&
+    /\b(?:13|15)(?:\.\d)?(?:[ -]?inch)?\b/i.test(deviceDescription(text))
+  ) {
+    const size = deviceDescription(text).match(
+      /\b(13|15)(?:\.\d)?(?:[ -]?inch)?\b/i,
+    )![1];
+    const device = deviceByModel(previous.model);
+    if (device)
+      model =
+        resolveDevices(
+          `MacBook ${device.family} ${device.chip} ${size}-inch`,
+        )[0]?.model || null;
+  }
   let cable: Cable = previous?.cable || "unknown";
   if (
     /\b(?:no cable|need (?:a |the )?cable|include (?:a |the )?cable|don't have .*cable|do not have .*cable)\b/i.test(
@@ -175,7 +224,8 @@ export function fallbackPlan(
     budget: amounts[0] ?? previous?.budget ?? null,
     cable,
     fastCharging,
-    deviceFamily: "m2air",
+    deviceFamily:
+      model && realModels.slice(2).includes(model) ? "reviewed" : "m2air",
   };
 }
 
@@ -185,6 +235,37 @@ export function validateModelPlan(
   previous?: ResearchContext,
 ) {
   const explicit = fallbackPlan(input, previous);
+  if (
+    plan.tool === "research_products" &&
+    explicit.tool === "research_products"
+  ) {
+    if (
+      (explicit.model && plan.model !== explicit.model) ||
+      (explicit.budget !== null && plan.budget !== explicit.budget) ||
+      (explicit.cable !== "unknown" && plan.cable !== explicit.cable) ||
+      (plan.fastCharging !== explicit.fastCharging &&
+        /\b(?:fast|normal|without|not)\b/i.test(input.task))
+    )
+      throw new Error(
+        "The model plan conflicts with the shopper's confirmed constraints.",
+      );
+    if (
+      plan.model &&
+      (plan.model !== explicit.model ||
+        plan.budget !== explicit.budget ||
+        plan.cable !== explicit.cable ||
+        plan.fastCharging !== explicit.fastCharging)
+    )
+      return {
+        tool: "confirm_interpretation" as const,
+        model: plan.model,
+        budget: plan.budget,
+        cable: plan.cable,
+        fastCharging: plan.fastCharging,
+      };
+    // Family is registry metadata, not a customer constraint or a model-created fact.
+    return { ...plan, deviceFamily: explicit.deviceFamily };
+  }
   if (
     plan.tool === "research_products" &&
     plan.model &&
@@ -198,6 +279,8 @@ export function validateModelPlan(
       tool: "confirm_interpretation" as const,
       model: plan.model,
       budget: plan.budget,
+      cable: plan.cable,
+      fastCharging: plan.fastCharging,
     };
   }
   // Model text has no authority to override recognized constraints or switch away from safety tools.

@@ -34,6 +34,115 @@
             "properties": {
               "action": {
                 "type": "string",
+                "const": "provider_reconcile"
+              },
+              "orderId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+              },
+              "refundReferences": {
+                "default": [],
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 255,
+                  "pattern": "^[A-Za-z0-9-]+$"
+                }
+              }
+            },
+            "required": [
+              "action",
+              "orderId"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "const": "group_policy"
+              },
+              "policy": {
+                "type": "object",
+                "properties": {
+                  "minimumMembers": {
+                    "type": "integer",
+                    "minimum": 2,
+                    "maximum": 100
+                  },
+                  "discountPercent": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 80
+                  },
+                  "formingMinutes": {
+                    "type": "integer",
+                    "minimum": 5,
+                    "maximum": 10080
+                  },
+                  "checkoutMinutes": {
+                    "type": "integer",
+                    "minimum": 5,
+                    "maximum": 1440
+                  },
+                  "productTiers": {
+                    "maxItems": 40,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "minimumMembers": {
+                          "type": "integer",
+                          "minimum": 2,
+                          "maximum": 100
+                        },
+                        "discountPercent": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 80
+                        },
+                        "productId": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 100
+                        }
+                      },
+                      "required": [
+                        "minimumMembers",
+                        "discountPercent",
+                        "productId"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "minimumMembers",
+                  "discountPercent",
+                  "formingMinutes",
+                  "checkoutMinutes",
+                  "productTiers"
+                ]
+              },
+              "expectedVersion": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "action",
+              "policy",
+              "expectedVersion"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
                 "const": "agent_group_commit"
               },
               "productId": {
@@ -45,12 +154,18 @@
                 "type": "integer",
                 "minimum": 1,
                 "maximum": 9007199254740991
+              },
+              "policyVersion": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
               }
             },
             "required": [
               "action",
               "productId",
-              "briefVersion"
+              "briefVersion",
+              "policyVersion"
             ]
           },
           {
@@ -577,6 +692,25 @@
               "features"
             ]
           },
+          "weights": {
+            "type": "object",
+            "properties": {
+              "price": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "features": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              }
+            },
+            "required": [
+              "price",
+              "features"
+            ]
+          },
           "confirmConstraints": {
             "default": false,
             "type": "boolean"
@@ -643,7 +777,9 @@
                       "Orbit 13",
                       "Slate 11",
                       "MacBook Air (13-inch, M2, 2022)",
-                      "MacBook Air (15-inch, M2, 2023)"
+                      "MacBook Air (15-inch, M2, 2023)",
+                      "MacBook Air (M1, 2020)",
+                      "MacBook Pro (13-inch, M1, 2020)"
                     ]
                   },
                   "budget": {
@@ -923,7 +1059,9 @@
                       "Orbit 13",
                       "Slate 11",
                       "MacBook Air (13-inch, M2, 2022)",
-                      "MacBook Air (15-inch, M2, 2023)"
+                      "MacBook Air (15-inch, M2, 2023)",
+                      "MacBook Air (M1, 2020)",
+                      "MacBook Pro (13-inch, M1, 2020)"
                     ]
                   },
                   "budget": {
@@ -1345,7 +1483,7 @@
             "session": []
           }
         ],
-        "description": "Same-origin multipart submission: exactly one caseId/orderId. PNG/JPEG/WebP up to 4 MiB. Capture code is optional, single-use and checkpoint-bound; it does not establish physical truth. Notes remain in the body.",
+        "description": "Same-origin multipart submission: exactly one caseId/orderId and one image or video. PNG/JPEG/WebP up to 4 MiB; MP4/WebM up to 8 MiB with matching container signature. Video is optional and retained for human review, never sent to the image adapter. Capture code is optional, single-use and checkpoint-bound; it does not establish physical truth. Notes remain in the body. Descriptions without media use the evidence action.",
         "requestBody": {
           "required": true,
           "content": {
@@ -1355,8 +1493,19 @@
                 "required": [
                   "checkpoint",
                   "serial",
-                  "note",
-                  "image"
+                  "note"
+                ],
+                "oneOf": [
+                  {
+                    "required": [
+                      "image"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "video"
+                    ]
+                  }
                 ],
                 "properties": {
                   "caseId": {
@@ -1389,6 +1538,10 @@
                     "format": "uuid"
                   },
                   "image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "video": {
                     "type": "string",
                     "format": "binary"
                   }

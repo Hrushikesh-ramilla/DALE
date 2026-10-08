@@ -17,11 +17,22 @@ export async function POST(request: Request) {
     const input = actionSchema.parse(await jsonBody(request));
     let result: unknown;
     switch (input.action) {
+      case "provider_reconcile":
+        result = await service.reconcileExternalOrder(actor, input.orderId, input.refundReferences);
+        break;
+      case "group_policy":
+        result = await service.updateGroupPolicy(
+          actor,
+          input.policy,
+          input.expectedVersion,
+        );
+        break;
       case "agent_group_commit":
         result = await commitAgentGroup(
           actor,
           input.productId,
           input.briefVersion,
+          input.policyVersion,
         );
         break;
       case "cancel_fulfillment":

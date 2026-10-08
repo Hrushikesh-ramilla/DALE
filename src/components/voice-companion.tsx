@@ -148,7 +148,7 @@ export function VoiceCompanion({
     onResult(data);
     setReply(
       data.intent.kind === "shopping"
-        ? deviceText(data.result!.analysis.summary)
+        ? `Review the compatible options before choosing. ${deviceText(data.result!.analysis.summary)}`
         : data.intent.kind === "clarification" ||
             data.intent.kind === "review_required"
           ? data.intent.message
@@ -491,6 +491,10 @@ export function VoiceCompanion({
           ) : (
             <>
               <p>{availability?.message || "Checking voice availability…"}</p>
+              <p className="muted">
+                Selected profile: {deviceLabel(model)}. Sample requests use this
+                profile; name an exact real device for a sourced comparison.
+              </p>
               {availability?.mode === "fixture" && (
                 <>
                   <label>

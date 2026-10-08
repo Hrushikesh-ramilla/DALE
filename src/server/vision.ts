@@ -1,7 +1,10 @@
 import type { Evidence } from "../domain/claims";
 // Bound model payload memory on the small host. Include each available checkpoint first.
 export function selectVisionEvidence(evidence: Evidence[]) {
-  const photos = evidence.filter((entry) => entry.assetKey);
+  const photos = evidence.filter(
+    (entry) =>
+      entry.assetKey && (!entry.mime || entry.mime.startsWith("image/")),
+  );
   const selected: Evidence[] = [];
   for (const entry of photos)
     if (!selected.some((previous) => previous.checkpoint === entry.checkpoint))

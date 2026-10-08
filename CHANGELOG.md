@@ -2,6 +2,15 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Composed shopping and resolution contracts
+
+- Connected multi-goal native planning and confirmed voice transcripts to sourced research, conditional group savings, private order/case inspection, seller-message checks and unsubmitted support drafts. Unknown devices remain unresolved; semantic proposals require confirmation and generated plans cannot authorize money. Added reviewed M1 Air/13-inch Pro records, metadata-based aliases and bounded manufacturer HTTP receipts; seven actual public pages matched.
+- Added persisted price/feature weights and versioned reviewer-approved merchant thresholds/discount windows. Existing commitments retain frozen terms; stale policy/brief changes cannot authorize checkout.
+- Added source-linked claim propositions, uncertainty/next actions, original-integrity receipts and optional private MP4/WebM for manual review. Reports do not infer physical honesty, causation or automatically deny/refund claims.
+- Implemented signed provider-event wake-ups, sandbox capture/refund/dispute reads, bounded worker/pre-remedy discovery and reviewer reconciliation. Exact refund references credit once, completed amounts remain immutable, partial refunds reduce approved remaining amounts, and unresolved/ambiguous financial outcomes pause another remedy.
+- Lint/typecheck and 250 unit/contract/database tests pass, including 39 focused financial contracts. Evaluation suites pass 107 deterministic, 300 frozen, 180 native mock and 200 seeded trace checks. Production browser coverage passed 37 journeys and the reconciliation mock's focused rerun; final full release evidence is recorded in VALIDATION.md. No model billing, provider financial call or paid resource was required.
+- Tested original acceptance advances to **80% complete / 20% pending (16 of 20 checkpoints)**. Genuine sandbox financial completion, no-spend live AI accuracy, staged physical labels and five independent testers remain unexecuted. New manual journeys are in CURRENT_ACCEPTANCE.md; public release identity is recorded separately.
+
 ## 2026-10-08 — Group-agent release acceptance
 
 - Deployed application ee4e5d8 on the existing EC2 instance and relaunched the local production preview. The checksum/backup installer restarted app/worker and public health matches the release. Archive inventory excludes environment/private keys; its identity is recorded in VALIDATION.

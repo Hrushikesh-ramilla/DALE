@@ -4,6 +4,8 @@ import type { Quote } from "../domain/guard";
 import type { ClaimAnalysis, Evidence } from "../domain/claims";
 import type { PurchaseBrief } from "../domain/brief";
 import type { AgentRun } from "../domain/agent";
+import type { ProviderObservation } from "../domain/provider-adjustments";
+import type { GroupPolicy, GroupTerms } from "../domain/group-policy";
 export type { Evidence } from "../domain/claims";
 export type Role = "buyer" | "seller" | "reviewer";
 export type Actor = { workspaceId: string; userId: string; role: Role };
@@ -33,6 +35,8 @@ export type Order = {
   providerOrderId?: string;
   captureId?: string;
   refundedAmount: number;
+  providerObservations?: ProviderObservation[];
+  providerScan?: { checkedAt?: string; nextCheckAt: string; status: "checking" | "complete" | "review" };
   refund?: {
     status: "processing" | "completed" | "failed" | "unknown";
     reference?: string;
@@ -53,6 +57,7 @@ export type Group = {
   expiresAt: string;
   checkoutExpiresAt?: string;
   amount?: number;
+  terms?: GroupTerms;
 };
 export type ReturnCase = {
   id: string;
@@ -126,6 +131,7 @@ export type Workspace = {
   agentRuns?: (AgentRun & { buyerId: string })[];
   orders: Order[];
   groups: Group[];
+  groupPolicy?: GroupPolicy;
   cases: ReturnCase[];
   operations: Operation[];
   audit: {

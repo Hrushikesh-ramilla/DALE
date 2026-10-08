@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { groupPolicySchema } from "./group-policy";
 const id = z.string().uuid();
 const checkpoint = z.enum([
   "seller_dispatch",
@@ -8,9 +9,20 @@ const checkpoint = z.enum([
 ]);
 export const actionSchema = z.discriminatedUnion("action", [
   z.object({
+    action: z.literal("provider_reconcile"),
+    orderId: id,
+    refundReferences: z.array(z.string().min(1).max(255).regex(/^[A-Za-z0-9-]+$/)).max(5).default([]),
+  }),
+  z.object({
+    action: z.literal("group_policy"),
+    policy: groupPolicySchema,
+    expectedVersion: z.number().int().min(1),
+  }),
+  z.object({
     action: z.literal("agent_group_commit"),
     productId: z.string().min(1).max(100),
     briefVersion: z.number().int().min(1),
+    policyVersion: z.number().int().min(1),
   }),
   z.object({
     action: z.literal("cancel_fulfillment"),
