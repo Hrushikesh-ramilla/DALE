@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Original master-plan audit
+
+- Audited the original 5 October plan and initial brief against the implemented agent, buying and resolution services, test definitions and recorded release evidence. Added `docs/PLAN_AUDIT.md` with all seven capability statuses, original release gates and remaining implementation/acceptance milestones.
+- Corrected master-plan and implementation-status completion language: the released two-model recovery demonstration does not complete the original unified shopping agent. Recorded missing conversational group orchestration, preference weights and external dispute reconciliation separately from unverified provider, physical and human acceptance.
+- Added the owner's requested progress tracker: 10 of 20 acceptance checkpoints closed, 50% complete / 50% pending. Partial/live-unverified checkpoints stay open; percentages measure checklist closure, not remaining hours.
+- Local and public health both returned ready at application 2c9b845. No application source, deployment, provider call or spend changed; existing suites were reviewed rather than rerun for this documentation audit.
+
 ## 2026-10-07 — Dark editorial agent opening
 
 - Replaced the bright agent opening and composer with charcoal and deeper black surfaces, soft ivory text, muted warm-gray captions and restrained borders. Added a Cormorant Garamond serif headline to match the requested magazine character. Agent response cards, receipts, task/voice inputs, focus indicators and action buttons follow the scoped palette; teal remains confined to the closing footer.

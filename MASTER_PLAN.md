@@ -1,5 +1,11 @@
 # DALE master plan
 
+## Original plan completion — audited 8 October
+
+**Partial: the original product and release gates are not complete.** The goal remains the customer-first shopping agent defined in section 1 and the connected journey in section 4. The storefront is its managed test merchant, not the primary deliverable. The original plan deliberately bounds the first release to one storefront and a curated electronics catalog; it does not require arbitrary external-store access.
+
+The later two-model recovery milestones below establish a narrower sourced demonstration. They do not replace the original feature contracts, unified conversational journey, or genuine-provider and independent acceptance gates. Current gaps include conversational group orchestration, broader task interpretation, explicit shopper preference weights, external dispute reconciliation, and unexecuted live AI/PayPal, physical-evidence and human acceptance. See [docs/PLAN_AUDIT.md](docs/PLAN_AUDIT.md) for the code-backed requirement audit and remaining milestones.
+
 ## Buyer-agent recovery milestones — 7 October
 
 The opening task router is not the completed AI product. The next release must demonstrate a buyer advocate making a defensible choice and protecting that choice through checkout and support. Winning is an ambition, not an acceptance criterion.
@@ -13,9 +19,9 @@ Initial real-data acceptance journey: identify the exact MacBook Air M2 size, co
 
 Implementation: milestones 1–4 are implemented and released as application 2c9b845. The source-linked buyer journey, protected checkout, recorded delivery, support/evidence/refund flow and restart persistence pass locally, in production-container CI and over public HTTPS. The checksum/backup installer executed on the existing EC2 instance. Live Gemini acceptance, genuine PayPal financial completion, physical captures and independent human review remain separate gates; no AI billing or spend was enabled. SSM is the pending permanent access mechanism. Current executed results are in docs/VALIDATION.md; docs/MANUAL_TESTS.md begins with the sourced buyer journey.
 
-## Historical milestones
+## Historical release notes and original product baseline
 
-The notes below describe earlier releases. Their catalog limitations and design directions are superseded by the current recovery milestones and validation record.
+The release notes below describe earlier versions; their deployment status and explicitly rejected design directions are historical. The product decision, customer policy, feature contracts and release gates in sections 1–15 remain the original acceptance baseline. The narrower recovery milestones do not supersede that baseline. Current execution evidence is recorded separately in docs/VALIDATION.md.
 
 7 October agent visibility correction: the customer opening now leads with a task composer and DALE's persisted response, completed-action receipt and sample options. The catalog is secondary. Guest tasks launch an owned fixture workspace without account entry. Supported tasks are explicit sample-profile matching, own-order navigation and support draft preparation; typed tasks do not approve purchases or remedies. Arbitrary real-product research remains unconnected, and the screen states that limit. This is a bounded task assistant; it does not establish a general autonomous research system. Shopping protections, party permissions and the no-spend rule remain in force. See docs/VALIDATION.md and docs/MANUAL_TESTS.md for executable evidence and acceptance steps.
 
