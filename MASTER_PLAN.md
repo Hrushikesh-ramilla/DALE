@@ -1,5 +1,7 @@
 # DALE master plan
 
+Current runtime status: [docs/CURRENT_STATUS.md](docs/CURRENT_STATUS.md). Local a980d79 is restored with a persistent supervisor and retained data; public remains 69ac213. All seven bounded feature implementations can be exercised in the guided demo. Genuine provider, physical and independent-human acceptance remains open: 80% complete / 20% pending.
+
 ## Original plan completion — audited 8 October
 
 **Partial: the original product and release gates are not complete.** The goal remains the customer-first shopping agent defined in section 1 and the connected journey in section 4. The storefront is its managed test merchant, not the primary deliverable. The original plan deliberately bounds the first release to one storefront and a curated electronics catalog; it does not require arbitrary external-store access.

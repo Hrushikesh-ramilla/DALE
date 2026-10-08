@@ -1,5 +1,7 @@
 # Project progress
 
+Local recovery on 8 October: the stopped preview was restored without resetting data. A hidden supervisor, bounded process recovery and explicit preview commands are implemented. Twelve observed recovery/persistence checks pass. Local compiled application is a980d79; public remains 69ac213. [CURRENT_STATUS.md](CURRENT_STATUS.md) distinguishes current runtime, provider and acceptance status from historical milestones below. Acceptance remains 80% / 20%.
+
 Updated 8 October 2026. **16 of 20 acceptance checkpoints closed: 80% complete, 20% pending.** This is a transparent checkpoint count, not an estimate of remaining hours or a claim that 20% of the code is unwritten. Each checkpoint has equal weight (5 percentage points). Partially implemented or externally unverified checkpoints remain open; mock results never close a live-provider checkpoint.
 
 Latest integration milestone **6f85fc4** is committed, passes both CI jobs (255 tests and 39 browser journeys) and runs locally. It adds an explicit live entry, preserved opt-in provider configuration and resumable genuine PayPal acceptance with signed own-order receipts. Public upgrade is queued after three SSH timeouts; public health still reports 69ac213. Current owner inputs are disabled-billing confirmation, USD-capable sandbox merchant configuration and permanent SSM instance/profile access. See LIVE_INTEGRATION and the latest VALIDATION entry. No live acceptance checkpoint is closed from these code/tests alone.

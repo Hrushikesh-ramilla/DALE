@@ -1,5 +1,7 @@
 # Plan coverage and remaining work
 
+For current runtime and recovery status, read [CURRENT_STATUS.md](CURRENT_STATUS.md). The local a980d79 production build is restored with persistent data and a hidden supervisor. Public remains 69ac213; provider and independent acceptance gates remain open. Historical release notes below do not override that distinction.
+
 **Original MASTER_PLAN acceptance: partial; current code candidate extends the unified shopping agent.** Bounded semantic task composition, explicit shopper preference weights, configurable merchant group terms, expanded reviewed source retrieval, per-proposition evidence reports, optional private video and external PayPal dispute/refund/capture reconciliation are implemented. Confirmed voice transcripts use the same agent planner and private memory. Genuine-provider, physical-evidence and independent-human acceptance still require actual recorded executions. [PLAN_AUDIT.md](PLAN_AUDIT.md) preserves the earlier audit; [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md) tracks current closures and release evidence.
 
 Tracked acceptance is **80% complete / 20% pending (16 of 20 checkpoints)**, maintained in [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md). It counts twenty equal checkpoints and distinguishes mocked integration from genuine provider and independent acceptance; it does not estimate remaining engineering hours. Read-only final scope review found no additional required-code blocker within the original bounded first release; genuine acceptance remains unfinished.

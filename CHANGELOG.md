@@ -2,6 +2,14 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Persistent local preview and operating-status audit
+
+- Found no Node process or listener on port 3000. No prior exit log exists, so the termination cause remains unknown. Restored the optimized local application without resetting its database or changing provider billing.
+- Added hidden local supervision with bounded unexpected-exit recovery, retained exit logs, duplicate-start protection and explicit start/status/stop commands. Production builds prepare browser assets automatically, including when Git is deliberately absent in Docker. The preview stays loopback-only and fixture-configured; live integration remains a separate guarded entry.
+- Twelve actual local checks pass after deliberately interrupting the owned child: new ready instance, unchanged private session/conversation/brief/orders/cases and original-image SHA-256, anonymous rejection and recorded restart. Repeated start and intentional stop/start also pass. Two regression contracts cover retry exhaustion and recovery after a stable minute.
+- Lint/typecheck, 257 unit/contract/database tests, production build, 107 deterministic scenarios, 300 frozen records, 200 workflow traces and all 39 production browser journeys pass. Synthetic voice/analysis/payment results remain explicitly synthetic.
+- Added CURRENT_STATUS and corrected the leading master-plan/progress/implementation/manual-acceptance statements. Local compiled source is a980d79; public remains healthy at 69ac213. Acceptance stays 16/20 (80% / 20%); genuine providers, physical evidence and independent human records remain open.
+
 ## 2026-10-08 — Explicit live integration entry and release settings
 
 - Added /live with server-derived readiness, a private ordinary-shopper entry and a clear distinction from guided fixture scenarios. Added a loopback-only live preview launcher that requires owner-confirmed disabled billing and free quota before starting generation.

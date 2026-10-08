@@ -1,5 +1,7 @@
 # Current implementation acceptance
 
+Local a980d79 now runs through `npm run preview:start` at http://localhost:3000/demo; public still serves 69ac213. Both include the composed shopper journey below, but only the local application includes the newer explicit `/live` entry and signed own-order receipt support. See CURRENT_STATUS.md for provider/recovery limitations.
+
 Check VALIDATION.md for the build actually serving the chosen URL. These tests use private simulated payments/shipping and make no AI calls. A new local build and an older public build are different releases.
 
 Verified application 69ac213 now serves both http://localhost:3000/demo and https://16.4.25.181.sslip.io/demo. Open a fresh guided scenario for each independent exercise; no login or provider credential is required. `npm run verify:current` repeats sixteen new-feature checks on the hosted fixture adapter and saves a redacted report. Complete release/CI/upgrade evidence is in VALIDATION.md.

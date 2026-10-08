@@ -1,5 +1,9 @@
 # Deployment
 
+## Persistent local preview on Windows
+
+Run `npm run build`, then `npm run preview:start`. Build copies production browser assets automatically. The hidden supervisor serves http://localhost:3000/demo, preserves `.data/local-final` and restarts an unexpectedly exited child with bounded retries. `npm run preview:status` reports readiness and restart history; `npm run preview:stop` stops the owned preview and retains data. Stop before rebuilding on Windows. Logs live in ignored `.data/local-preview`; this is a fixture preview, not a Windows boot service or EC2 deployment. `npm run verify:preview` tests one child interruption and retained state. See [CURRENT_STATUS.md](CURRENT_STATUS.md).
+
 ## Existing EC2 instance
 
 For stable management access, use [Systems Manager instead of changing local-IP SSH rules](DEPLOYMENT_ACCESS.md). The connection script is prepared; activating the instance role/agent and an authenticated AWS identity is still required.

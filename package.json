@@ -6,8 +6,13 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
+    "postbuild": "node scripts/prepare-production-browser.mjs",
     "start": "next start",
     "start:live": "node scripts/start-live-local.mjs",
+    "preview:start": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/local-preview.ps1",
+    "preview:status": "node scripts/local-preview.mjs status",
+    "preview:stop": "node scripts/local-preview.mjs stop",
+    "verify:preview": "tsx scripts/verify-local-preview.ts --interrupt-owned-preview",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",

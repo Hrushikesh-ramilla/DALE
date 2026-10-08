@@ -1,5 +1,15 @@
 # Validation status
 
+## Local process recovery and status audit — 8 October 2026
+
+At inspection no Node process and no port-3000 listener existed. There was no saved exit diagnostic from the earlier terminal-owned launch, so a code crash or precise termination cause is not established. The source tree was clean at a980d79. Restored the optimized production build without deleting/resetting `.data/local-final` or rotating its session secret.
+
+Implemented hidden preview supervision, bounded exponential restart after child exit, stop ownership token, duplicate-start protection, retained exit/status logs and explicit commands. Build prepares browser assets/source metadata automatically; missing Git in Docker is supported without inventing a commit. The supervisor controls only its fixture application child. It does not install a computer-boot service or restart a still-running hung process.
+
+Executed: lint/typecheck, **257 unit/contract/database tests**, optimized build, **107 deterministic scenarios**, **300 frozen synthetic records**, **200 seeded workflow traces**, and all **39 packaged-production browser journeys** (3.9 minutes). The recovery verifier initially sent a human-readable profile label where the API requires a canonical model ID; corrected the verifier to import the catalog ID before its successful run. No application behavior was patched to pass that check. **12/12 real process-recovery checks pass**, including an observed changed instance, authenticated complete shopper-state hash, private original SHA-256, anonymous rejection and the same supervisor's recorded restart. Two focused retry contracts pass. Repeated start reused the supervisor; explicit stop produced no automatic restart and subsequent start returned ready. Redacted recovery evidence is `.data/reports/local-preview-recovery.json`.
+
+Local http://localhost:3000/demo and /live are ready on compiled application a980d79 (includes integration source 6f85fc4); fixture adapters and native-voice disablement are deliberate. Runtime status is available through `npm run preview:status`. Public HTTPS was rechecked ready at **69ac213**, instance ab21d519-8ff8-48d5-b59b-0ff8e12bd9a1; the newer integration release is still not deployed. Billing/free-quota flags remain unconfirmed, all six sandbox credential fields exist and no authenticated AWS profile is present. No new provider generation, financial transaction, billing or paid resource occurred during recovery. Acceptance stays **80% / 20%**. [CURRENT_STATUS.md](CURRENT_STATUS.md) separates implemented scope from owner-dependent live/physical/human gates.
+
 ## Live integration correction — 8 October 2026
 
 A new direct Gemini generation returned HTTP 200 with the expected response and 16 total tokens. An initial probe used an unsupported minimal thinking setting and returned HTTP 400; the successful retry used the application's low setting. This confirms present text generation availability, not app-level semantic accuracy or Google billing status. Historical HTTP 429 must not be described as a freshly observed quota failure.
