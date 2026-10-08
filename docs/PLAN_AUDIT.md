@@ -1,5 +1,7 @@
 # Original master-plan audit
 
+**Historical audit baseline.** The tables and gap descriptions below describe application 2c9b845, not the current implementation. Subsequent code closes bounded composed planning, explicit preference weights, configurable group pricing, expanded reviewed retrieval, per-proposition/optional-media reports and external provider reconciliation. Current executed acceptance and deployment status are maintained in PROJECT_PROGRESS.md and VALIDATION.md; genuine provider/physical/human gates remain open. CURRENT_ACCEPTANCE.md provides new manual tests. Do not treat an old gap description below as evidence that its implementation is still missing.
+
 Audited 8 October 2026 against application `2c9b845` and documentation revision `5ed42b1`. The original plan is preserved in commit `68f6740` (5 October). Sources include that baseline, the owner's pasted initial conversation, current code, test definitions and recorded execution evidence. This audit makes no application change, provider call or spend.
 
 Subsequent milestone: application `ee4e5d8` adds ordered research/group discovery, explicit brief-bound commitment and protected discounted checkout; production browser and 13 public group checks pass. The findings below preserve the audited `2c9b845` baseline. Current closures and percentages are maintained in [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md); the original whole-product verdict remains incomplete.

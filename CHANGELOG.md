@@ -2,6 +2,11 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Release contract correction
+
+- Restored the explicit unknown-device verification disclaimer while retaining the expanded M1/M2 evidence-pack description. Two CI assertions exposed the late wording regression; no compatibility or financial permission changed.
+- Preserved the parallel README update and renamed Git remote, corrected clone instructions to DALE, and linked current progress/manual acceptance. Final CI and release results are recorded separately in VALIDATION.md.
+
 ## 2026-10-08 — Prepared stable deployment transport
 
 - Added `--ssm-port` to the existing checksum/backup installer stream. An authenticated local Session Manager tunnel reuses the pinned EC2 host identity and private key, without a new inbound SSH rule or a separate secret transfer path.

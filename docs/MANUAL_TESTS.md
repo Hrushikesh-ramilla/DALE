@@ -1,12 +1,14 @@
 # Sourced buyer-agent acceptance journey
 
+The expanded release tests (M1 devices, several goals, weights, merchant terms and video claim reports) are in [CURRENT_ACCEPTANCE.md](CURRENT_ACCEPTANCE.md). Check VALIDATION for the actual deployed build.
+
 ## Compound shopping and group savings
 
 This new journey requires the conversational-group release; check docs/VALIDATION.md for its hosted rollout status. In a fresh guest workspace, type **Find a charger for my MacBook Air M2 13-inch under $53. I need a cable included. Normal charging. Use grouping to reduce the cost.** Expect research and group-discovery receipts, a rejected $58 standalone bundle and a conditional $52.20 full bundle. No partner, order or group commitment exists yet.
 
 Click **Commit to group**: expect one member and no charge. Use the owned demo toolbar's second-shopper persona, join the same bundle/model through Group deals, then switch back to Shopper. Refresh the opening conversation: **Review group offer** becomes available. Expect $52.20, actual deadline and full quote disclosures; closing it creates no order. Only **Approve simulated purchase** records the paid fixture order. A declined/absent second shopper cannot grant checkout before the group is ready.
 
-Change the budget or cable requirement before committing: stale offers must be disabled/rejected. **No grouping, my budget is $60** removes the retained savings goal. **Use grouping to reduce the cost** after a confirmed brief inspects current offers without asking you to repeat the model. Unknown M1/Dell devices still require verified data; this milestone does not claim broader coverage or live model generalization.
+Change the budget or cable requirement before committing: stale offers must be disabled/rejected. **No grouping, my budget is $60** removes the retained savings goal. **Use grouping to reduce the cost** after a confirmed brief inspects current offers without asking you to repeat the model. M1 Air and 13-inch M1 Pro now have reviewed records; ambiguous MacBook M1 and unsupported Dell models still require exact verified data. Live model accuracy remains separate.
 
 ## Existing sourced journey
 

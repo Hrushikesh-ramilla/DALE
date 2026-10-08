@@ -1,5 +1,15 @@
 # Validation status
 
+## Expanded buyer-agent candidate — 8 October 2026
+
+Application implementation is committed at `560788f`; pinned Session Manager transport is committed at `a3678d1`. The parallel README/repository rename at `b607f33` is preserved. Current scoped code adds composed planning/confirmed voice, shopper weights/configurable frozen group terms, reviewed M1/M2 records and bounded manufacturer receipts, claim-level reports/optional media, and external capture/refund/dispute reconciliation. Tested acceptance is **80% complete / 20% pending (16 of 20 checkpoints)**. Final read-only scope review found no further independently implementable required-code blocker in the original bounded first release.
+
+Executed locally: lint/typecheck, 250 unit/contract/database tests, 39 focused financial regressions, 107 deterministic scenarios, 300 frozen synthetic records, 180 repeated native mock checks, 200 seeded workflow traces and seven actual manufacturer HTTP matches. The first production browser run passed 37 journeys; its sole reconciliation failure came from an incomplete synthetic API response, corrected to include the required snapshot, and its focused rerun passed. A late unknown-device wording regression was then caught by CI; the explicit disclaimer was restored and all nine agent contracts pass. Final full browser, fresh build, CI, archive and deployment evidence are recorded below when executed. No AI call, billing or paid infrastructure was required.
+
+Last verified public health still serves application `ee4e5d83e2b1bf0da5d09c10f69d0b1cd64aa833`; source commits and local test success do not establish a hosted rollout. Genuine buyer-approved sandbox capture/refund/signed webhooks, no-spend live text/vision/voice performance, staged physical evidence with independent labels and five human testers remain open. The current manual tasks are in CURRENT_ACCEPTANCE.md; existing API credentials remain ignored.
+
+Historical release evidence follows. Its source IDs, catalog scope and local/public status describe those earlier releases.
+
 ## Conversational group release — 8 October 2026
 
 Application **ee4e5d83e2b1bf0da5d09c10f69d0b1cd64aa833** runs locally and at [public HTTPS](https://16.4.25.181.sslip.io/). The single-connection checksum/backup installer completed, restarted app/worker and returned the new ready build; public health reports the matching release. Archive: **14,162,031 bytes**, **3,027 entries**, SHA-256 `e3eefd169c26929f59a60f47914dae6fd84f2cc695ff7833980fe0de81f82c6c`; environment and PEM entries are absent. Prior release/configuration/database/evidence were retained by the upgrade wrapper.

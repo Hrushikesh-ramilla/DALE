@@ -6,6 +6,8 @@ DALE combines AI-assisted product discovery, compatibility matching, group disco
 
 > **Promise:** Find the right product, pay safely, and receive a clear, fair resolution when something goes wrong.
 
+Current tested acceptance is **80% complete / 20% pending (16 of 20 checkpoints)**; the bounded feature implementation is present. Genuine sandbox financial completion, no-spend live AI/voice evaluation, staged physical labels and five independent testers remain separate acceptance gates. The public and local builds can differ: see [current release evidence](docs/VALIDATION.md), [progress](docs/PROJECT_PROGRESS.md) and [new manual journeys](docs/CURRENT_ACCEPTANCE.md).
+
 ---
 
 ## Overview
@@ -106,8 +108,8 @@ Domain Logic  ────────── AgentGuard · BuyTogether · ScamPa
 
 ```bash
 # Clone and install
-git clone https://github.com/Hrushikesh-ramilla/buyerguard.git
-cd buyerguard
+git clone https://github.com/Hrushikesh-ramilla/DALE.git
+cd DALE
 npm install
 
 # Configure environment
