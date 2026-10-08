@@ -96,6 +96,27 @@
           "sha256": "69066c8f279ec85ff48ab4059f6ebba0d2932ca57667f2bbdac7d9805bca9e7b"
         }
       ]
+    },
+    "qwen3vl4": {
+      "name": "Qwen3-VL-4B-Instruct Q4_K_M",
+      "alias": "dale-qwen3vl-4b",
+      "license": "Apache-2.0",
+      "minimumHostGiB": 8,
+      "source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "repository": "lmstudio-community/Qwen3-VL-4B-Instruct-GGUF",
+      "revision": "9eaf9988fe9b5e33541dc614622c36d5e90dd509",
+      "files": [
+        {
+          "file": "Qwen3-VL-4B-Instruct-Q4_K_M.gguf",
+          "local": "qwen3vl4-model.gguf",
+          "sha256": "aa18af1fdda59081005319536eebff9406d556ce8a753d9a3aa81cf635eadde7"
+        },
+        {
+          "file": "mmproj-Qwen3-VL-4B-Instruct-F16.gguf",
+          "local": "qwen3vl4-projector.gguf",
+          "sha256": "1b70e983d69dd424eb16e0ed2104d0b2a58bf01d866657f4de5da6c963620f19"
+        }
+      ]
     }
   }
 }

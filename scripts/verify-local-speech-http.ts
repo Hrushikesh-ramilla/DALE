@@ -4,6 +4,7 @@ import { randomBytes } from "node:crypto";
 import { spawn } from "node:child_process";
 import { createServer } from "node:net";
 import assert from "node:assert/strict";
+import type { ScenarioKind } from "../src/server/scenarios";
 const config = JSON.parse(
   await readFile(".data/self-hosted/speech/config.json", "utf8"),
 );
@@ -133,7 +134,12 @@ try {
   );
   check(
     "Guided workspace launched",
-    (await api("/api/demo", { action: "launch", kind: "shopping" })).ok,
+    (
+      await api("/api/demo", {
+        action: "launch",
+        kind: "fresh" satisfies ScenarioKind,
+      })
+    ).ok,
   );
   check(
     "Guided workspace keeps synthetic recognition",

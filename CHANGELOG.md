@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-09 — Runtime selection evidence and release preflight
+
+- Recorded final adc0aeb verification: 277 unit/contract/database checks and all 41 browser journeys in both CI jobs; seven rebuilt targeted local browser journeys and ten actual HTTP-to-Whisper checks pass. Corrected the speech verifier's scenario kind to the typed fresh scenario and reran it successfully.
+- Tested pinned Qwen3-VL-4B Q4_K_M with CPU batch/ubatch 128. It failed the first composed planning gate and used 5.8 GB resident memory, exceeding the entire 4 GiB deployment host. Stopped it; increased its preparation memory requirement to 8 GiB and retained null selection. No model qualifies and no further candidate download is planned without a concrete quality/memory hypothesis.
+- Added release preflight rejecting unselected live inference, remote/credential-bearing endpoints and copied Windows speech paths. Production model service installation and joint target verification remain open. Current acceptance remains 15/20 (75% complete / 25% pending); no new deployment, billing or payment capture is claimed.
+
 ## 2026-10-09 — Private CPU inference and local speech migration
 
 - Owner confirmed Google Free Tier with billing disabled. Actual composed text research/group/own-order run succeeded. Follow-up comparison failed after bounded retries; a direct Google quota response established the exhausted 20-request daily limit. No billing changed. The owner subsequently requested a self-hosted replacement rather than waiting or switching cloud models.

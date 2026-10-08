@@ -2,17 +2,17 @@
 
 Updated 9 October 2026. The local application was found stopped: no Node process and no listener on port 3000. Its previous launch had no retained exit log, so the precise termination cause is unknown. No source changes or database reset were required to recover it.
 
-Recovery tooling is committed at 739d19e and 9baa573. Both CI runs pass quality and production app/worker/PostgreSQL containers, including all 39 browser journeys in each. The latest archive is prepared for deployment; public installation remains blocked. Local preview uses embedded PostgreSQL and the guided scenario engine; the independent background worker is validated in the Docker/EC2 PostgreSQL runtime, not launched concurrently against the local embedded database.
+Current implementation is committed at adc0aeb. Its CI passes quality and production app/worker/PostgreSQL containers, including all 41 browser journeys in each. Local Whisper passes two actual CPU recognition cases and ten actual HTTP integration checks. Public installation remains blocked. Local preview uses embedded PostgreSQL and the guided scenario engine; the independent background worker is validated in the Docker/EC2 PostgreSQL runtime, not launched concurrently against the local embedded database.
 
 DALE is a customer-first shopping agent: sourced product comparison and optional group savings, explicit purchase approval, protected checkout, own-order assistance and customer-selected return/refund/replacement with evidence and human review. The managed storefront is its test merchant. Supported real-device coverage is a reviewed M1/M2 MacBook charging registry, not unrestricted shopping across the internet.
 
 | Area | Current status |
 | --- | --- |
-| Local product | Ready at http://localhost:3000/demo, compiled application source a980d79 (includes 6f85fc4 integration changes). Persistent data remains in `.data/local-final`. |
+| Local product | Ready at http://localhost:3000/demo, compiled application source adc0aeb. Persistent data remains in `.data/local-final`. |
 | Local process | Hidden supervisor independent of the launching terminal; bounded restart after unexpected child exit, retained logs and start/status/stop commands. No Windows boot service was installed. |
 | Public product | The old address 16.4.25.181 times out on SSH and HTTPS after the owner resized to t3.medium. Current instance address/access is pending; no current public health or new deployment is claimed. Last observed public source was 69ac213. |
 | Guided demo | Private fixture payments, shipping and analysis; no model calls. Scenario roles, exports and reset remain available. |
-| Live AI | Owner confirmed Gemini Free Tier/billing disabled. Actual composed shopping/groups/orders passed, then Flash exhausted its 20-request daily quota. Owner now requests a self-hosted replacement; private adapter passes contracts, candidate selection/evaluation/deployment remain open. See SELF_HOSTED_AI.md. |
+| Live AI | Owner requested a self-hosted replacement after Gemini exhausted free quota. Private adapter passes contracts. Five local candidates failed selection. The latest Qwen3-VL-4B also used 5.8 GB resident memory on the laptop, exceeding the entire 4 GiB target. It is stopped and unselected; qualified selection, evaluation and deployment remain engineering work. See SELF_HOSTED_AI.md. |
 | PayPal | Existing credentials authenticate. Actual buyer checkout rejected the merchant's USD currency. Genuine capture/refund and signed receipts remain unverified. |
 | Deployment access | Owner chose restricted SSH and reports t3.medium, 2 vCPU/4 GiB. The new address has been requested. SSM tooling remains optional, with no authorized AWS profile configured. |
 | Acceptance | 15/20 checkpoints closed: **75% complete / 25% pending**. Deployment checkpoint 20 is reopened for the new runtime/resized host. This is an acceptance-gate count, not a remaining-code estimate. |

@@ -4,6 +4,7 @@ import { execFileSync } from "node:child_process";
 import { parse } from "dotenv";
 import { randomBytes } from "node:crypto";
 import { releaseProviderConfig } from "./release-provider-config.mjs";
+import { validateReleaseRuntime } from "./validate-release-runtime.mjs";
 const directory = ".data/deploy";
 await mkdir(directory, { recursive: true });
 await build({
@@ -56,6 +57,10 @@ values.BUILD_ID = execFileSync("git", ["rev-parse", "HEAD"], {
   encoding: "utf8",
 }).trim();
 Object.assign(values, releaseProviderConfig(source, values, process.env));
+validateReleaseRuntime(
+  values,
+  JSON.parse(await readFile("deploy/model-candidates.json", "utf8")),
+);
 // Reviewed public manufacturer HTTP is independent of model billing. Demo
 // workspaces remain snapshot-only; an explicit owner setting is preserved.
 values.REAL_RESEARCH_REFRESH_ENABLED =
