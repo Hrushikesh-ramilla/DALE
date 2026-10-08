@@ -2,6 +2,15 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-09 — Private CPU inference and local speech migration
+
+- Owner confirmed Google Free Tier with billing disabled. Actual composed text research/group/own-order run succeeded. Follow-up comparison failed after bounded retries; a direct Google quota response established the exhausted 20-request daily limit. No billing changed. The owner subsequently requested a self-hosted replacement rather than waiting or switching cloud models.
+- Added private loopback llama.cpp text/vision inference with schema-constrained output and optional runtime authentication, without transmitting cloud credentials or attempting cloud fallback. Release settings and the live launcher preserve explicit self-hosted configuration. Gemini voice is disabled in this mode. Added pinned Whisper tiny CPU recognition, bounded/validated 15-second recordings, one recognition job, actor/global budgets, cancellation/temporary cleanup and editable transcript review. Playback uses installed local voices only.
+- Fixed live smoke reporting: exceptions overwrite stale success with partial/failure/unexecuted records; fallback scam analysis cannot pass as live verification. Cloud smoke/evaluation require both free-quota and disabled-billing confirmations.
+- Researched primary sources; measured the laptop and tested four CPU candidates. SmolVLM-256M and Qwen3.5-0.8B fail useful selection checks. The owner subsequently resized EC2 to t3.medium/4 GiB. Qwen3.5-2B and Qwen3-VL-2B also failed semantic selection; no model is qualified. Added pinned candidate/runtime artifacts, checksum verification and resumable bounded downloads for further testing. No model is selected from download success alone.
+- Fresh PayPal OAuth/order/webhook checks and buyer login succeeded; USD approval returned UNSUPPORTED_PAYEE_CURRENCY. Current official REST currency list omits INR. Fresh restricted SSH times out. No capture/refund or new hosted release is claimed.
+- Lint/typecheck and 277 unit/contract/database tests pass. The production browser run passed 40/41 including both local microphone cases; its remaining assertion still expected the removed Gemini heading and has been corrected. Actual CPU speech recognized both frozen synthesized requests. Final targeted build/browser/HTTP outcomes are recorded in VALIDATION. Current acceptance is 15/20 (75% complete / 25% pending); deployment is reopened for the new runtime and resized host. The new migration has independent implementation work and cannot be described as only missing credentials.
+
 ## 2026-10-08 — Persistent local preview and operating-status audit
 
 - Recovery commit 739d19e and operator fix 9baa573 are pushed; both CI runs pass quality and real app/worker/PostgreSQL containers with all 39 browser journeys in each. Latest release archive/configuration is prepared and checked for excluded private entries, with previous archive retained. Public upgrade remains blocked by SSH; exact identities are recorded in VALIDATION.

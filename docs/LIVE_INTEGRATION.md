@@ -1,3 +1,5 @@
+9 October: Gemini billing confirmation was received and real generation/composed research succeeded before a hard daily quota was exhausted. The owner now requests self-hosting, not further cloud calls. Private configuration selects self_hosted with generation disabled and no model selected. Use SELF_HOSTED_AI.md for the current path; Google enablement below describes the former provider. The owner reports a 4 GiB EC2 resize, but its current public address is still required. INR is unsupported by the current PayPal REST currency list; the existing sandbox merchant currency acceptance remains unresolved.
+
 # Live integration acceptance
 
 The owner-supplied provider secrets are already configured in ignored `.env`. On 8 October a direct `gemini-3.8-flash` generation returned HTTP 200 and the expected output (16 total tokens). This verifies availability at that moment, not semantic accuracy or the live app. No billing setting was changed.

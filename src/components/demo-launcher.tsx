@@ -97,8 +97,8 @@ export function DemoLauncher() {
       {error && <p role="alert">{error}</p>}
       <p>
         These scenarios use fixtures.{" "}
-        <Link href="/live">Test live Gemini and PayPal ↗</Link> in a separately
-        configured shopper session.
+        <Link href="/live">Test the live agent and PayPal ↗</Link> in a
+        separately configured shopper session.
       </p>
       <div className="demo-scenarios">
         {scenarios.map(([kind, title, description]) => (

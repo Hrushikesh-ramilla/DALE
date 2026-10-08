@@ -1,6 +1,8 @@
 # DALE master plan
 
-Current runtime status: [docs/CURRENT_STATUS.md](docs/CURRENT_STATUS.md). Local a980d79 is restored with a persistent supervisor and retained data; public remains 69ac213. All seven bounded feature implementations can be exercised in the guided demo. Genuine provider, physical and independent-human acceptance remains open: 80% complete / 20% pending.
+8 October provider change: the owner requests a self-hosted open-weight replacement for Gemini, selected through hardware/quality research rather than a preset model. [docs/SELF_HOSTED_AI.md](docs/SELF_HOSTED_AI.md) records migration milestones, actual failed selection probes and the owner-reported resize to 4 GiB. The private adapter and local speech implementation have controlled tests; model selection and hosted acceptance remain open. Original product and financial/evidence safeguards remain required.
+
+Current runtime status: [docs/CURRENT_STATUS.md](docs/CURRENT_STATUS.md). Local a980d79 is restored with a persistent supervisor and retained data; the old public address is unreachable after the resize. The guided demo preserves the seven bounded feature contracts. Current acceptance is 15/20: 75% complete / 25% pending. Deployment is reopened for the new runtime/resized host; the previous 80% baseline is historical.
 
 ## Original plan completion — audited 8 October
 

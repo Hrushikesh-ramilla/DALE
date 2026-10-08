@@ -13,7 +13,12 @@ import {
 } from "../src/server/ai";
 import type { Evidence } from "../src/domain/claims";
 const live = process.env.EVAL_PROVIDER_MODE === "live";
-if (live && process.env.AI_FREE_QUOTA_CONFIRMED !== "true")
+if (
+  live &&
+  process.env.AI_PROVIDER !== "self_hosted" &&
+  (process.env.AI_FREE_QUOTA_CONFIRMED !== "true" ||
+    process.env.AI_BILLING_DISABLED !== "true")
+)
   throw new Error(
     "Live evaluation disabled: owner must confirm available no-spend quota first. No request was sent.",
   );
@@ -21,6 +26,7 @@ const originalFetch = globalThis.fetch;
 let mockPayload: unknown;
 let requestCount = 0;
 if (!live) {
+  process.env.AI_PROVIDER = "cloud";
   process.env.AI_API_KEY = "mock-evaluation-only";
   process.env.AI_MODEL = "gemini-contract-fixture";
   delete process.env.AI_API_BASE_URL;

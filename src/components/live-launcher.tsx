@@ -45,12 +45,15 @@ export function LiveLauncher({
       <h1>
         Meet DALE.
         <br />
-        <em>With Gemini.</em>
+        <em>Your shopping agent.</em>
       </h1>
       <p>
         Start a fresh private shopping session using the configured model. Your
-        messages and voluntarily submitted images go to Google. Shipping remains
-        simulated. Purchases and refunds require separate approval.
+        {status.provider === "Self-hosted"
+          ? "messages and voluntarily submitted images are processed by your private model server."
+          : "messages and voluntarily submitted images go to the configured cloud provider."}{" "}
+        Shipping remains simulated. Purchases and refunds require separate
+        approval.
       </p>
       <p>
         <strong>{status.model}</strong> · {status.payments} ·{" "}

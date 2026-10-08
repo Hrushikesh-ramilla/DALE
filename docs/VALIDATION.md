@@ -1,5 +1,16 @@
 # Validation status
 
+## Local runtime migration — 9 October 2026
+
+Owner reports EC2 t3.medium, 2 vCPU/4 GiB. Fresh restricted SSH and HTTPS to the old 16.4.25.181 address both time out; the current address is requested. No new hosted release or actual target hardware measurement is claimed. Deployment checkpoint 20 is reopened; current acceptance is **15/20: 75% complete / 25% pending**. Historical 80% entries below describe the prior released runtime.
+
+Private inference uses pinned/checksummed public artifacts, loopback authentication, schema-visible and grammar-constrained output, bounded CPU timeout and no cloud fallback. Fresh smoke reports stop after failure and overwrite stale success. Four candidate development probes failed selection; the final bounded Qwen3.5-2B gate also failed its first composed task and marked four later checks not_run. No 180-record model evaluation or production-qualified selection is claimed. The first two candidates initially used greedy settings; larger-model probes also tested author-recommended sampling and the structured extraction profile, so these are development results, not comparable benchmark rankings.
+
+Local Whisper tiny correctly recognized both frozen Windows-SAPI recordings, with 3.2/3.3 second observed CPU latency in the two-case run. Owned speech files are hashed in fixtures/voice-v1. This is actual local model inference, separate from mocked browser recognition. No Google call/billing or paid resource was enabled. Browser production run passed 40/41, including both new local microphone cases; the sole failure was an outdated Gemini-heading expectation, corrected with provider-neutral interface/test wording. Final rebuilt targeted browser and real HTTP-to-Whisper evidence will be recorded separately before this milestone is considered verified.
+
+Lint/typecheck and 277 unit/contract/database tests passed before final verifier/configuration changes; focused provider/normalization/speech contracts also pass. New HTTP verifier starts/stops only its isolated fixture-payment/app process. Ordinary actor/origin/recording checks, review before tool execution and unchanged financial state are required. Existing Gemini key remains unused in private configuration, model identity is empty and live generation is disabled until a candidate qualifies. Existing sandbox keys authenticate, but buyer approval returned UNSUPPORTED_PAYEE_CURRENCY; INR is absent from the current PayPal REST currency list. No capture/refund/verified financial journey is claimed.
+
+
 ## Local process recovery and status audit — 8 October 2026
 
 Final recovery/operator source **9baa57312683fe6753e86aa998bc8340af82d0ef** is committed and pushed. [CI run 37811476465](https://github.com/Hrushikesh-ramilla/DALE/actions/runs/37811476465) completed successfully in both quality and production PostgreSQL/app/worker container jobs, including all **39** browser journeys in each. Recovery-source run 37810828889 also passes both jobs. Eight local route/health GET checks passed; they establish routing/readiness, not feature or provider acceptance.

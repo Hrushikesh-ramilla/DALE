@@ -178,7 +178,10 @@ export async function runAgent(actor: Actor, raw: AgentRequest) {
         };
         result = await shop(intent.brief, actor, "fixture");
         run.research = result.research;
-        if (planned.mode === "model" && run.research) {
+        if (
+          planned.mode === "model" &&
+          run.research?.findings.some((finding) => finding.eligible)
+        ) {
           try {
             run.recommendation = await compareWithModel(
               run.research,

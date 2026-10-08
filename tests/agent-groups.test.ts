@@ -210,15 +210,14 @@ it("omits expired groups and cannot commit from an archived or reviewer session"
     "eligibility",
   );
 });
-it("accepts a native composed plan and compares actual tool evidence through mocked transport", async () => {
-  const mock = native(
-    { steps: [fallbackPlan(input), { tool: "discover_groups" }] },
-    { productId: null, sourceIds: [], reasons: [] },
-  );
+it("accepts native planning and discovers conditional groups without a redundant no-match comparison", async () => {
+  const mock = native({
+    steps: [fallbackPlan(input), { tool: "discover_groups" }],
+  });
   const actor = await buyer(false);
   const data = await runAgent(actor, input);
   expect(data.run.mode).toBe("model");
-  expect(mock).toHaveBeenCalledTimes(2);
+  expect(mock).toHaveBeenCalledTimes(1);
   expect(data.run.toolCalls?.map((call) => call.tool)).toEqual([
     "research_products",
     "discover_groups",

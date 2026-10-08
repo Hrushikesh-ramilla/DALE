@@ -5,16 +5,18 @@ import { parse } from "dotenv";
 import type { AgentResult } from "../src/components/agent-workspace";
 import type { snapshot } from "../src/server/service";
 type Snapshot = Awaited<ReturnType<typeof snapshot>>;
-assert.equal(
-  process.env.AI_FREE_QUOTA_CONFIRMED,
-  "true",
-  "Confirm free quota before live acceptance. No request sent.",
-);
-assert.equal(
-  process.env.AI_BILLING_DISABLED,
-  "true",
-  "Confirm disabled billing before live acceptance. No request sent.",
-);
+if (process.env.AI_PROVIDER !== "self_hosted") {
+  assert.equal(
+    process.env.AI_FREE_QUOTA_CONFIRMED,
+    "true",
+    "Confirm free quota before live acceptance. No request sent.",
+  );
+  assert.equal(
+    process.env.AI_BILLING_DISABLED,
+    "true",
+    "Confirm disabled billing before live acceptance. No request sent.",
+  );
+}
 const config = parse(await readFile(".data/deploy/production.env"));
 const base = process.env.VERIFY_BASE_URL || config.APP_URL;
 let cookie = "";

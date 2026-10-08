@@ -4,11 +4,11 @@ test("live entry explains disabled providers and keeps guided fixtures separate"
 }) => {
   await page.goto("/demo");
   await page
-    .getByRole("link", { name: "Test live Gemini and PayPal ↗" })
+    .getByRole("link", { name: "Test the live agent and PayPal ↗" })
     .click();
   await expect(page).toHaveURL(/\/live$/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "With Gemini",
+    "Your shopping agent",
   );
   await expect(page.getByRole("status")).toContainText("Live AI is not ready");
   await expect(

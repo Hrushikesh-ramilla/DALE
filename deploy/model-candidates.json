@@ -1,0 +1,101 @@
+{
+  "researchedAt": "2026-10-08",
+  "selection": null,
+  "runtime": {
+    "version": "b11429",
+    "win32": {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11429/llama-b11429-bin-win-cpu-x64.zip",
+      "sha256": "1283323272b04cd07905816a597a0da810918102de958f4ff6f7bbaa70ed2efe"
+    },
+    "linux": {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11429/llama-b11429-bin-ubuntu-x64.tar.gz",
+      "sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392"
+    }
+  },
+  "candidates": {
+    "smol": {
+      "name": "SmolVLM-256M-Instruct Q8_0",
+      "alias": "dale-smolvlm-256m",
+      "license": "Apache-2.0",
+      "minimumHostGiB": 1,
+      "source": "https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct",
+      "repository": "ggml-org/SmolVLM-256M-Instruct-GGUF",
+      "revision": "b9e4379657e1450d04d02eec8e345667265b0a00",
+      "files": [
+        {
+          "file": "SmolVLM-256M-Instruct-Q8_0.gguf",
+          "local": "smol-model.gguf",
+          "sha256": "2a31195d3769c0b0fd0a4906201666108834848db768af11de1d2cef7cd35e65"
+        },
+        {
+          "file": "mmproj-SmolVLM-256M-Instruct-Q8_0.gguf",
+          "local": "smol-projector.gguf",
+          "sha256": "7e943f7c53f0382a6fc41b6ee0c2def63ba4fded9ab8ed039cc9e2ab905e0edd"
+        }
+      ]
+    },
+    "qwen08": {
+      "name": "Qwen3.5-0.8B Q4_K_M",
+      "alias": "dale-qwen35-08b",
+      "license": "Apache-2.0",
+      "minimumHostGiB": 4,
+      "source": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "repository": "unsloth/Qwen3.5-0.8B-GGUF",
+      "revision": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+      "files": [
+        {
+          "file": "Qwen3.5-0.8B-Q4_K_M.gguf",
+          "local": "qwen-model.gguf",
+          "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517"
+        },
+        {
+          "file": "mmproj-F16.gguf",
+          "local": "qwen-projector.gguf",
+          "sha256": "56e4c6cfe73b0c82e3e82bc518d7591997e61d81f723fc41a586f4fa69ea2453"
+        }
+      ]
+    },
+    "qwen2": {
+      "name": "Qwen3.5-2B Q4_K_M",
+      "alias": "dale-qwen35-2b",
+      "license": "Apache-2.0",
+      "minimumHostGiB": 4,
+      "source": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "repository": "unsloth/Qwen3.5-2B-GGUF",
+      "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+      "files": [
+        {
+          "file": "Qwen3.5-2B-Q4_K_M.gguf",
+          "local": "qwen2-model.gguf",
+          "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223"
+        },
+        {
+          "file": "mmproj-F16.gguf",
+          "local": "qwen2-projector.gguf",
+          "sha256": "7035e9cb8d7c6a9681d07eef9a364783e86ea4cd73faab2eabb4f43a101830c7"
+        }
+      ]
+    },
+    "qwen3vl2": {
+      "name": "Qwen3-VL-2B-Instruct Q8_0",
+      "alias": "dale-qwen3vl-2b",
+      "license": "Apache-2.0",
+      "minimumHostGiB": 4,
+      "source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+      "repository": "ggml-org/Qwen3-VL-2B-Instruct-GGUF",
+      "revision": "ea6a11058182570be6436b9a2e4ee7f7b49f908d",
+      "files": [
+        {
+          "file": "Qwen3-VL-2B-Instruct-Q8_0.gguf",
+          "local": "qwen3vl-model.gguf",
+          "sha256": "b7802e29f71a9e5b5e3f83f613df898a2204342dcea71a231ea501d481813c39"
+        },
+        {
+          "file": "mmproj-Qwen3-VL-2B-Instruct-Q8_0.gguf",
+          "local": "qwen3vl-projector.gguf",
+          "sha256": "69066c8f279ec85ff48ab4059f6ebba0d2932ca57667f2bbdac7d9805bca9e7b"
+        }
+      ]
+    }
+  }
+}

@@ -4,15 +4,22 @@ import { resolve } from "node:path";
 import { spawn } from "node:child_process";
 import { parse } from "dotenv";
 const source = parse(await readFile(".env"));
+const selfHosted = source.AI_PROVIDER === "self_hosted";
 if (
-  source.AI_BILLING_DISABLED !== "true" ||
-  source.AI_FREE_QUOTA_CONFIRMED !== "true"
+  !selfHosted &&
+  (source.AI_BILLING_DISABLED !== "true" ||
+    source.AI_FREE_QUOTA_CONFIRMED !== "true")
 )
   throw new Error(
     "Confirm disabled billing and usable free quota in .env before starting live Gemini. No provider request sent.",
   );
-if (!source.AI_API_KEY || !source.AI_MODEL)
-  throw new Error("Configured Gemini key and model are required.");
+if (
+  !source.AI_MODEL ||
+  (selfHosted ? !source.AI_SELF_HOSTED_BASE_URL : !source.AI_API_KEY)
+)
+  throw new Error(
+    "Configure the model and private local endpoint or cloud credentials.",
+  );
 const directory = resolve(".data/live-local");
 await mkdir(directory, { recursive: true });
 let sessionSecret;
@@ -25,6 +32,17 @@ try {
   });
 }
 const port = "3001";
+let operatorCode = source.OPERATOR_ACCESS_CODE;
+if (!operatorCode) {
+  const codePath = resolve(directory, "operator-access-code");
+  try {
+    operatorCode = (await readFile(codePath, "utf8")).trim();
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+    operatorCode = randomBytes(24).toString("hex");
+    await writeFile(codePath, operatorCode, { mode: 0o600, flag: "wx" });
+  }
+}
 const child = spawn(process.execPath, [".next/standalone/server.js"], {
   stdio: "inherit",
   env: {
@@ -42,8 +60,7 @@ const child = spawn(process.execPath, [".next/standalone/server.js"], {
     PAYMENT_MODE: "sandbox",
     AI_MODE: "live",
     AGENT_MODEL_ENABLED: "true",
-    OPERATOR_ACCESS_CODE:
-      source.OPERATOR_ACCESS_CODE || randomBytes(24).toString("hex"),
+    OPERATOR_ACCESS_CODE: operatorCode,
     DEMO_ACCESS_CODE: source.DEMO_ACCESS_CODE || "",
   },
 });

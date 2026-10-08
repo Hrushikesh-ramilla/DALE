@@ -6,6 +6,7 @@ import {
 } from "@google/genai";
 import { getWorkspace, type Actor } from "./state";
 import { takeRequestBudget } from "./budgets";
+import { localSpeechConfiguration } from "./local-speech";
 export const liveVoiceConfig: LiveConnectConfig = {
   responseModalities: [Modality.AUDIO],
   inputAudioTranscription: {},
@@ -42,7 +43,14 @@ export async function voiceAvailability(actor: Actor) {
       message:
         "Synthetic voice scenarios. No speech recognition or provider calls.",
     };
+  if (localSpeechConfiguration())
+    return {
+      mode: "local" as const,
+      message:
+        "Your recording is transcribed on this server with local Whisper. Maximum 15 seconds; temporary audio is deleted after processing. Review the transcript before sending. Playback uses an installed local voice when available.",
+    };
   const configured =
+    process.env.AI_PROVIDER !== "self_hosted" &&
     process.env.VOICE_MODE === "live" &&
     process.env.VOICE_FREE_TIER_CONFIRMED === "true" &&
     process.env.VOICE_BILLING_DISABLED === "true" &&
