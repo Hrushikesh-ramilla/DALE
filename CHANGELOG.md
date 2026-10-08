@@ -2,6 +2,11 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Reviewed-source release configuration
+
+- Release packaging enables bounded public manufacturer revalidation for ordinary shopper research unless the owner explicitly disables it. This setting is independent of Gemini billing; engineering demos remain snapshot-only and cannot call model or financial providers.
+- Seven actual reviewed HTTP pages matched and source-change/outage/redirect/size contracts pass. Live model/voice flags remain disabled under the no-spend instruction; secrets remain outside the archive.
+
 ## 2026-10-08 — Release contract correction
 
 - Restored the explicit unknown-device verification disclaimer while retaining the expanded M1/M2 evidence-pack description. Two CI assertions exposed the late wording regression; no compatibility or financial permission changed.

@@ -55,6 +55,12 @@ values.BUILD_ID = execFileSync("git", ["rev-parse", "HEAD"], {
   encoding: "utf8",
 }).trim();
 if (process.env.DEPLOY_AI_MODE) values.AI_MODE = process.env.DEPLOY_AI_MODE;
+// Reviewed public manufacturer HTTP is independent of model billing. Demo
+// workspaces remain snapshot-only; an explicit owner setting is preserved.
+values.REAL_RESEARCH_REFRESH_ENABLED =
+  source.REAL_RESEARCH_REFRESH_ENABLED ||
+  values.REAL_RESEARCH_REFRESH_ENABLED ||
+  "true";
 // Live voice is opt-in only after the owner verifies free quota and disabled billing.
 values.VOICE_MODE = "disabled";
 values.AGENT_MODEL_ENABLED = "false";
