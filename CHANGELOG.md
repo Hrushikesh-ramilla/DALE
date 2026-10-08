@@ -2,7 +2,26 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
-## 2026-10-07 — Editorial design foundation
+## 2026-10-07 — DALE wordmark and product-led redesign
+
+- Replaced the separate D emblem with original uppercase DALE letterforms in the header, footer and browser icon. Updated customer-facing metadata, assistant labels, checkout descriptions and API title; unbranded product illustrations use functional markings.
+- Added a substantial four-product stage with explicit selection, Motion transitions, restrained scroll movement, a large editorial headline, asymmetric collection mosaic and closing wordmark. Research included Electronic Materials Office and Unimatic on Awwwards; all artwork and code remain original and monochrome.
+- Renamed all eight catalog families to concrete unbranded products and numbered variants to neutral finishes. Device profiles expose connector/power requirements while retaining internal fixture identifiers. Conversational aliases recognize the displayed profiles and require clarification for conflicting selections.
+- Discovery starts across every eligible category with twelve-card pagination and category navigation. Search, saved briefs and restored sessions reset pagination; route navigation returns to the top. Featured products and collection previews retain existing compatibility, budget and explicit approval boundaries.
+- Lint/typecheck and all 135 unit/contract/database tests pass. The 15-journey development suite passes; final reduced-motion hydration regression and packaged-production verification follow. All 200 workflow traces, 107 deterministic scenarios and 300 frozen synthetic records pass without provider calls. EC2 SSH remains unavailable; public deployment is pending.
+
+## 2026-10-07 — Dale identity
+
+- Renamed the customer-facing product to the owner's single-word choice, Dale. Updated the header/footer, conversation labels, policy heading, checkout merchant/PayPal descriptions, product illustration engravings, route titles and API document.
+- Replaced the shield brand mark with an original serif D monogram, added a matching browser icon and paired it with a Cormorant Garamond wordmark. Existing safety/status icons retain their functional meaning.
+- Lint, type checking, the optimized production build and all 134 unit/contract/database checks pass. All 14 development browser journeys pass; the four editorial journeys were repeated after the final illustration-initial update, covering 1440/820/390/320 widths and reduced motion. HTTP checks verify the Dale title/home label, icon response and API title. Screenshots are private under `.data/reports/dale-desktop.png`.
+- Operational identifiers and historical records are retained to avoid a database/service migration. Public deployment remains on the previous build; the local branding change does not imply new live Gemini or PayPal verification.
+
+## 2026-10-07 — Packaged editorial regression and release preparation
+
+- Final lint/typecheck and all 134 unit/contract/database tests pass. All 14 browser journeys pass in development and again against packaged standalone production, including routed history, approval guards, dialogs and responsive layouts.
+- Added an explicit production-mode browser harness using only loopback, fixture adapters and separate private data outside the release tree. The release archive excludes environment files and private data; verified SHA-256 is recorded in docs/VALIDATION.md.
+- Updated design/manual/implementation evidence and prepared application release 76bf622. EC2 SSH timed out, so public code remains 5b393c0 and redesigned hosted regression remains pending. No paid resource or live AI call was used.
 
 ## 2026-10-07 — Routed collection and product experience
 
@@ -10,6 +29,8 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Added grounded product-detail dialogs, sponsorship/source disclosure and existing-guard purchase review, plus order/support overviews, customer-policy explanations and functional service navigation.
 - Motion transitions, readable mobile cards, background inertness/scroll locking, Escape, focus return and viewport-visible feedback complete the interaction layer. Sign-in tests now wait for session completion before editing; background-value assertions explicitly inspect hidden controls while dialogs are active.
 - Optimized production build and all 14 Chromium journeys pass, including four new routed/discovery/guard/responsive journeys. Existing 134 unit/contract/database checks passed before the final routing build; final production browser verification follows. EC2 SSH currently times out, so the public app remains on 5b393c0.
+
+## 2026-10-07 — Editorial design foundation
 
 - Replaced the small green interface with a charcoal/off-white design system, larger responsive type/controls, and monochrome catalog illustrations. Self-hosted DM Sans/Cormorant Garamond fonts avoid a runtime font service.
 - Added pinned Motion for React and a global configuration respecting reduced-motion preferences. Styled the full shopping, approval, group, fulfillment and support surfaces around the existing product policy.

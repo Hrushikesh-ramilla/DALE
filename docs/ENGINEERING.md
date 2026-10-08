@@ -26,6 +26,8 @@ To reset, sign in as reviewer for a designated fixture workspace and choose Arch
 
 Run `npm run check`, `npm run eval`, `npm run build`, and `npm run test:e2e`. Fixture fault tests deliberately block all outbound provider calls and verify that isolation is preserved.
 
+The default browser suite starts its own development server; stop another Next development server from this checkout first to avoid its shared dev lock. To test the packaged standalone production app instead, first run `npm run build` and `npm run package:release`, then set `E2E_SERVER_MODE=production` for `npm run test:e2e`. The harness binds only 127.0.0.1:3100 and uses fixture adapters, an isolated embedded database/private data directory outside the release tree, and test-role credentials. Production infrastructure still requires the separate EC2/PostgreSQL/container checks; this local harness does not modify the deployed environment.
+
 `npm run verify:hosted` checks the public production endpoint and records an unapproved sandbox order plus the current server instance. Restart the app service, then run `npm run verify:restart`; it requires a different instance ID and the original session/order. It does not establish a disaster restore.
 
 For the no-spend fixture workflow, run `npm run verify:scenarios` to save a protected session/order/original-photo baseline, then `npm run prepare:restart` to include a saved brief/private conversation. Actually restart app/worker or run the documented backup rehearsal, then `npm run verify:restart`. This compares the changed instance and all baseline records; a simple reload is insufficient.

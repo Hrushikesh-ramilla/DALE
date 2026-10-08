@@ -1,8 +1,22 @@
-# Editorial storefront
+# DALE editorial storefront
 
 The storefront uses charcoal, black, off-white and muted neutral surfaces, generous product space, and serif editorial headings paired with a readable sans-serif interface. Inspiration came from [Awwwards' ETQ Amsterdam listing](https://www.awwwards.com/websites/html/?mobile=1&page=174) and direct inspection of [ETQ's storefront](https://www.etq-amsterdam.com/): substantial product presentation, restrained navigation, collection browsing and clear service information. This is an original electronics-store implementation; no reference site's imagery, code or claims are reused.
 
 ## Application structure
+
+The customer-facing brand is **DALE**, a single word selected by the owner. An original uppercase SVG wordmark with custom letterforms stands alone in the header, footer and browser icon. There is no separate D emblem. Assistant labels, page metadata, checkout descriptions and the public API document use the same name. Unbranded catalog illustrations carry functional markings rather than a store emblem.
+
+The latest research included [Awwwards' e-commerce directory](https://www.awwwards.com/websites/e-commerce/), [Electronic Materials Office's Altar II entry](https://www.awwwards.com/sites/emo-r-altar-ii), its [actual storefront](https://electronicmaterialsoffice.com), and [Unimatic's Awwwards entry](https://www.awwwards.com/sites/unimatic). Altar II informed the substantial dark product stage and deliberate reveals; Unimatic informed the restrained product presentation and typography. The layout, letterforms and catalog illustrations remain original.
+
+The opening composition combines a large headline, a four-product stage and an oversized low-contrast wordmark. Shoppers change featured products explicitly; there is no autoplay. Motion animates product changes and restrained scroll movement. An asymmetric five-collection mosaic follows, with paper and charcoal surfaces. A closing full-width wordmark completes the page.
+
+The 40-product catalog now uses concrete unbranded names: 65W USB-C Wall Charger, USB-C HDMI Dock, 512GB Portable SSD, Bluetooth Over-Ear Headphones and Silent Bluetooth Mouse, with neutral finish variants rather than numbered series. These remain synthetic offers and labeled illustrations, not independently verified retail inventory or physical photography.
+
+The device selector shows USB-C Laptop (65W/100W/45W) and Barrel-jack Laptop (45W) demo profiles. Display labels and conversational aliases map to existing internal identifiers; frozen label images and persisted records remain reproducible. Power/connector labels alone do not establish compatibility with arbitrary physical laptops: the demo uses its curated compatibility matrix.
+
+Discovery initially includes every category within the chosen device and budget. Twelve results appear at a time; Show more products reveals additional eligible results without changing ranking or approval terms. Pagination resets on search, collection changes, saved brief and session restoration. Screen navigation returns to the top while the shared layout preserves shopper context.
+
+The existing `buyerguard` repository, package, health service identifier, database/cache names and deployment paths remain operational identifiers so the branding change does not require a data or infrastructure migration. Historical validation and release references retain their original names.
 
 - `/` and `/shop`: editorial entry, five collection selectors, device/budget brief, grounded recommendations, search within matched products and detailed catalog views.
 - `/groups`: commitments, invitations, individual approval and locked group pricing.
@@ -23,8 +37,12 @@ The typography/control scale replaces the previous 7–10px product text. Mobile
 
 ## Verification and deployment boundary
 
+The 7 October Dale identity passes lint/typecheck, the optimized production build, all 134 unit/contract/database checks and all 14 development browser journeys. The four editorial journeys also pass after the final illustration engraving update. HTTP inspection confirms the Dale route title/home label, SVG icon and public API title; the updated desktop capture is `.data/reports/dale-desktop.png`.
+
 `e2e/editorial.spec.ts` exercises routed history/reload, collection-to-purchase approval boundaries, result search, product facts/sponsorship, focus return, featured-item budget guards and desktop/tablet/mobile widths (1440, 820, 390, 320), including reduced motion. Existing browser journeys retain shopping clarification, compatibility, purchase/refund, group failure, cancellation, prepaid return and recovery coverage. Screenshots are private artifacts under `.data/reports/editorial-*.png`.
 
 No payment, evidence or provider policy is relaxed by this redesign. The live Gemini and genuine PayPal gates remain as recorded in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md).
+
+Final lint/typecheck and all 134 unit/contract/database checks pass. All 14 browser journeys pass against the development server and the packaged standalone production server, including owned-font/illustration rendering. Production-mode browser testing uses a separate local embedded database and fixture adapters; it is not an EC2 PostgreSQL or real-provider check.
 
 The local preview contains this redesign. EC2 SSH timed out during the 7 October deployment attempt, so public health still reports the earlier application build `5b393c0`. Update this record after a verified release transfer/service restart and hosted browser regression; do not describe the redesigned source as publicly deployed until then.

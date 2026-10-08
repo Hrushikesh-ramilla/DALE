@@ -14,9 +14,21 @@ export type Product = {
   source: string;
 };
 export const models = ["Atlas 14", "Atlas 14 Pro", "Orbit 13", "Slate 11"];
+export const deviceProfiles: Record<string, string> = {
+  "Atlas 14": "USB-C Laptop (65W)",
+  "Atlas 14 Pro": "USB-C Laptop (100W)",
+  "Orbit 13": "USB-C Laptop (45W)",
+  "Slate 11": "Barrel-jack Laptop (45W)",
+};
+export const deviceLabel = (model: string) => deviceProfiles[model] || model;
+export function deviceText(text: string) {
+  for (const model of [...models].sort((a, b) => b.length - a.length))
+    text = text.replaceAll(model, deviceLabel(model));
+  return text;
+}
 const families: Omit<Product, "id" | "source">[] = [
   {
-    name: "Everyday USB-C Charger",
+    name: "65W USB-C Wall Charger",
     category: "chargers",
     description: "A compact 65W charger for a lighter everyday carry.",
     price: 2900,
@@ -27,18 +39,23 @@ const families: Omit<Product, "id" | "source">[] = [
     color: "mint",
   },
   {
-    name: "Precision Barrel Charger",
+    name: "45W Barrel Power Adapter",
     category: "chargers",
-    description: "Dedicated barrel connector for the Slate series.",
+    description:
+      "A dedicated power adapter for the 45W barrel-jack test profile.",
     price: 2400,
     compatibleModels: ["Slate 11"],
-    specs: ["45W barrel", "Slate connector", "30-day returns"],
+    specs: [
+      "45W barrel connector",
+      "Profile-specific connector",
+      "30-day returns",
+    ],
     sponsored: true,
     stock: 8,
     color: "sand",
   },
   {
-    name: "Power USB-C Charger",
+    name: "100W USB-C Wall Charger",
     category: "chargers",
     description: "Extra headroom for power-intensive workstations.",
     price: 4900,
@@ -49,7 +66,7 @@ const families: Omit<Product, "id" | "source">[] = [
     color: "blue",
   },
   {
-    name: "Desk USB-C Dock",
+    name: "USB-C HDMI Dock",
     category: "docks",
     description:
       "Connect your desk in one step, with ports for the essentials.",
@@ -61,7 +78,7 @@ const families: Omit<Product, "id" | "source">[] = [
     color: "lilac",
   },
   {
-    name: "Pocket SSD",
+    name: "512GB Portable SSD",
     category: "storage",
     description: "Keep your projects close with portable, fast storage.",
     price: 7900,
@@ -72,7 +89,7 @@ const families: Omit<Product, "id" | "source">[] = [
     color: "blue",
   },
   {
-    name: "Quiet Wireless Headphones",
+    name: "Bluetooth Over-Ear Headphones",
     category: "audio",
     description:
       "A little more focus for work, travel, and everything between.",
@@ -84,7 +101,7 @@ const families: Omit<Product, "id" | "source">[] = [
     color: "sand",
   },
   {
-    name: "Everyday Wireless Mouse",
+    name: "Silent Bluetooth Mouse",
     category: "accessories",
     description: "A comfortable companion for your everyday workspace.",
     price: 1900,
@@ -95,7 +112,7 @@ const families: Omit<Product, "id" | "source">[] = [
     color: "mint",
   },
   {
-    name: "Travel USB-C Hub",
+    name: "USB-C Ethernet Hub",
     category: "docks",
     description: "Small enough for your bag, useful enough for every desk.",
     price: 3900,
@@ -110,7 +127,11 @@ export const catalog: Product[] = Array.from({ length: 5 }, (_, variant) =>
   families.map((family, i) => ({
     ...family,
     id: `P${String(variant * 8 + i + 1).padStart(3, "0")}`,
-    name: family.name + (variant ? ` · Series ${variant + 1}` : ""),
+    name:
+      family.name +
+      (variant
+        ? ` · ${["", "Silver", "Ivory", "Midnight", "Stone"][variant]}`
+        : ""),
     price: family.price + variant * 500,
     source: `catalog:${variant * 8 + i + 1}:v1`,
   })),

@@ -33,7 +33,7 @@ test("clarifies conflicting constraints and explicitly confirms a device label",
     .setInputFiles("fixtures/device-labels/label-4.png");
   await page.getByRole("button", { name: "Read model label" }).click();
   await expect(page.getByRole("dialog")).toContainText(
-    "selected model is Atlas 14",
+    "selected model is USB-C Laptop (65W)",
   );
   await expect(
     page.getByRole("combobox", {
@@ -42,7 +42,9 @@ test("clarifies conflicting constraints and explicitly confirms a device label",
       includeHidden: true,
     }),
   ).toHaveValue("Atlas 14");
-  await page.getByRole("button", { name: "Use Slate 11", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Use Barrel-jack Laptop (45W)", exact: true })
+    .click();
   await expect(
     page.getByRole("combobox", { name: "Your device", exact: true }),
   ).toHaveValue("Slate 11");
@@ -50,7 +52,7 @@ test("clarifies conflicting constraints and explicitly confirms a device label",
   await page.getByRole("button", { name: "Find my match" }).click();
   await expect(
     page.getByRole("heading", {
-      name: "Precision Barrel Charger",
+      name: "45W Barrel Power Adapter",
       exact: true,
     }),
   ).toBeVisible();
@@ -66,7 +68,5 @@ test("clarifies conflicting constraints and explicitly confirms a device label",
     .setInputFiles("fixtures/device-labels/label-6.png");
   await page.getByRole("button", { name: "Read model label" }).click();
   await expect(page.getByRole("dialog")).toContainText("multiple models");
-  await expect(
-    page.getByRole("button", { name: /^Use (Atlas|Orbit|Slate)/ }),
-  ).toHaveCount(0);
+  await expect(page.getByRole("button", { name: /^Use / })).toHaveCount(0);
 });

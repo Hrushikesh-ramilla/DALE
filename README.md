@@ -1,4 +1,4 @@
-# BuyerGuard
+# DALE
 
 Customer-first shopping, safe checkout, group discounts, and evidence-backed order resolution.
 

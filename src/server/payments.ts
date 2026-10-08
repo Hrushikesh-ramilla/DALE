@@ -123,7 +123,7 @@ export async function createPayment(
       purchase_units: [
         {
           custom_id: internalOrderId,
-          description: `BuyerGuard ${quote.productId}`,
+          description: `DALE ${quote.productId}`,
           payee: { merchant_id: quote.payee },
           amount: {
             currency_code: quote.currency,

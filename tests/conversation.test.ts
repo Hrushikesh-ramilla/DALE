@@ -57,6 +57,17 @@ function nativeResult(value: unknown) {
   return fetch;
 }
 describe("confirmed shopping constraints", () => {
+  it("recognizes displayed device profiles and requires confirmation when the profile conflicts", () => {
+    expect(canonicalModel("USB-C Laptop (100W)")).toBe("Atlas 14 Pro");
+    expect(canonicalModel("Barrel-jack Laptop (45W)")).toBe("Slate 11");
+    expect(canonicalModel("USB-C Laptop (90W)")).toBeNull();
+    expect(
+      mentionedModels("USB-C Laptop (100W) or Barrel-jack Laptop (45W)"),
+    ).toEqual(["Atlas 14 Pro", "Slate 11"]);
+    expect(
+      clarifyBrief({ ...input, message: "For my USB-C Laptop (100W)" }),
+    ).toHaveLength(1);
+  });
   it("normalizes known labels without guessing unknown suffixes or OCR mistakes", () => {
     expect(canonicalModel("Model: Ａｔｌａｓ_14 Pro")).toBe("Atlas 14 Pro");
     expect(canonicalModel("Atlas\u200b 14")).toBe("Atlas 14");
