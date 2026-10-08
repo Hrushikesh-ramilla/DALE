@@ -4,6 +4,8 @@ Each implementation milestone records behavior, validation, and remaining limita
 
 ## 2026-10-08 — Persistent local preview and operating-status audit
 
+- Final operator-login review corrected an absent-`.env` fallback: retain the existing private deployment operator code rather than rotate it on every supervisor start; when neither configuration supplies one, persist a private local code. Four full supervisor stop/start checks pass, covering observed restart, retained buyer session and both ordinary operator-role logins with unchanged credentials. No access code is printed or committed.
+
 - Found no Node process or listener on port 3000. No prior exit log exists, so the termination cause remains unknown. Restored the optimized local application without resetting its database or changing provider billing.
 - Added hidden local supervision with bounded unexpected-exit recovery, retained exit logs, duplicate-start protection and explicit start/status/stop commands. Production builds prepare browser assets automatically, including when Git is deliberately absent in Docker. The preview stays loopback-only and fixture-configured; live integration remains a separate guarded entry.
 - Twelve actual local checks pass after deliberately interrupting the owned child: new ready instance, unchanged private session/conversation/brief/orders/cases and original-image SHA-256, anonymous rejection and recorded restart. Repeated start and intentional stop/start also pass. Two regression contracts cover retry exhaustion and recovery after a stable minute.

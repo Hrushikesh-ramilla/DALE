@@ -135,6 +135,27 @@ if (mode === "status") {
     } catch (error) {
       if (error.code !== "ENOENT") throw error;
     }
+    let previous = {};
+    try {
+      previous = parse(await readFile(".data/deploy/production.env"));
+    } catch (error) {
+      if (error.code !== "ENOENT") throw error;
+    }
+    let operatorCode =
+      source.OPERATOR_ACCESS_CODE || previous.OPERATOR_ACCESS_CODE;
+    if (!operatorCode) {
+      const operatorPath = resolve(dataPath, "operator-access-code");
+      try {
+        operatorCode = (await readFile(operatorPath, "utf8")).trim();
+      } catch (error) {
+        if (error.code !== "ENOENT") throw error;
+        operatorCode = randomBytes(24).toString("hex");
+        await writeFile(operatorPath, operatorCode, {
+          flag: "wx",
+          mode: 0o600,
+        });
+      }
+    }
     const env = {
       ...process.env,
       NODE_ENV: "production",
@@ -160,8 +181,7 @@ if (mode === "status") {
       VOICE_FREE_TIER_CONFIRMED: "false",
       REAL_RESEARCH_REFRESH_ENABLED: "false",
       DEMO_ACCESS_CODE: "",
-      OPERATOR_ACCESS_CODE:
-        source.OPERATOR_ACCESS_CODE || randomBytes(24).toString("hex"),
+      OPERATOR_ACCESS_CODE: operatorCode,
     };
     await unlink(stopPath).catch((error) => {
       if (error.code !== "ENOENT") throw error;

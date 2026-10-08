@@ -17,6 +17,8 @@ DALE is a customer-first shopping agent: sourced product comparison and optional
 
 ## Operate the local preview
 
+The launcher preserves `OPERATOR_ACCESS_CODE` from the owner's `.env` or existing ignored deployment configuration. If neither supplies one, it retains an ignored local `.data/local-final/operator-access-code` file. Existing `.data/deploy/access-codes.txt` applies when reusing the deployment configuration. Do not share operator codes publicly. Guided scenarios support their owned role switch without entering these codes.
+
 From the repository in PowerShell:
 
 ```powershell

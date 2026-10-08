@@ -2,6 +2,8 @@
 
 ## Local process recovery and status audit — 8 October 2026
 
+Recovery source 739d19e is committed/pushed. Its [CI run](https://github.com/Hrushikesh-ramilla/DALE/actions/runs/37810828889) is tracked separately from the locally executed results below. A final operator-login correction preserves the existing ignored operator code when `.env` omits it, or creates a persistent private local fallback. Four additional full supervisor stop/start checks pass: changed instance, retained buyer session and both seller/reviewer logins with the existing code. Redacted evidence is `.data/reports/local-operator-restart.json`; no secret is included. A fresh pinned EC2 SSH attempt still timed out; public build remains 69ac213. Physical/human CSV templates still have zero recorded rows.
+
 At inspection no Node process and no port-3000 listener existed. There was no saved exit diagnostic from the earlier terminal-owned launch, so a code crash or precise termination cause is not established. The source tree was clean at a980d79. Restored the optimized production build without deleting/resetting `.data/local-final` or rotating its session secret.
 
 Implemented hidden preview supervision, bounded exponential restart after child exit, stop ownership token, duplicate-start protection, retained exit/status logs and explicit commands. Build prepares browser assets/source metadata automatically; missing Git in Docker is supported without inventing a commit. The supervisor controls only its fixture application child. It does not install a computer-boot service or restart a still-running hung process.
