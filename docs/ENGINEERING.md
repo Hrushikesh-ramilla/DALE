@@ -28,6 +28,8 @@ To reset, sign in as reviewer for a designated fixture workspace and choose Arch
 
 ## Repeatable checks
 
+`npm run verify:current` checks the packaged BUILD_ID and current compound M1/voice, persisted weights, reviewer-only frozen group policy, private optional video, sourced report and unchanged refund behavior over hosted HTTP. It launches only owned fixture workspaces, makes no model/financial calls and stores a redacted report in `.data/reports/hosted-current.json`. The public launch allowance supports five engineers exercising nine scenarios within a minute; the independent lifetime workspace, media and per-workspace activity ceilings remain enforced.
+
 Run `npm run check`, `npm run eval`, `npm run build`, and `npm run test:e2e`. Fixture fault tests deliberately block all outbound provider calls and verify that isolation is preserved.
 
 The default browser suite starts its own development server; stop another Next development server from this checkout first to avoid its shared dev lock. To test the packaged standalone production app instead, first run `npm run build` and `npm run package:release`, then set `E2E_SERVER_MODE=production` for `npm run test:e2e`. The harness binds only 127.0.0.1:3100 and uses fixture adapters, an isolated embedded database/private data directory outside the release tree, and test-role credentials. Production infrastructure still requires the separate EC2/PostgreSQL/container checks; this local harness does not modify the deployed environment.

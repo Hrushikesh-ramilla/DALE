@@ -2,6 +2,12 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Hosted current-feature verification and demo burst allowance
+
+- Added a credential-free fixture verifier for the deployed M1/voice composition, persisted shopper weights, merchant-only frozen group terms and private video/proposition reports. All 16 new hosted checks pass at ec4c7bd, alongside 56 existing hosted checks; no model call or real payment was made.
+- CI trace inspection identified a global twenty-launch minute allowance exhausted by the expanded fast browser suite. Raised this bounded window to sixty to support five independent nine-scenario exercises. Lifetime workspace/media ceilings, owner authorization and per-workspace budgets remain enforced; a concurrent boundary/renewal contract covers the new allowance.
+- The parallel README diagrams and DALE Git remote remain preserved. Final corrected-source CI/build/deployment results are recorded in VALIDATION.md.
+
 ## 2026-10-08 — Reviewed-source release configuration
 
 - Release packaging enables bounded public manufacturer revalidation for ordinary shopper research unless the owner explicitly disables it. This setting is independent of Gemini billing; engineering demos remain snapshot-only and cannot call model or financial providers.
