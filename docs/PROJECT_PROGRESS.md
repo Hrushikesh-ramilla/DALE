@@ -2,6 +2,8 @@
 
 Updated 8 October 2026. **16 of 20 acceptance checkpoints closed: 80% complete, 20% pending.** This is a transparent checkpoint count, not an estimate of remaining hours or a claim that 20% of the code is unwritten. Each checkpoint has equal weight (5 percentage points). Partially implemented or externally unverified checkpoints remain open; mock results never close a live-provider checkpoint.
 
+Latest integration milestone **6f85fc4** is committed, passes both CI jobs (255 tests and 39 browser journeys) and runs locally. It adds an explicit live entry, preserved opt-in provider configuration and resumable genuine PayPal acceptance with signed own-order receipts. Public upgrade is queued after three SSH timeouts; public health still reports 69ac213. Current owner inputs are disabled-billing confirmation, USD-capable sandbox merchant configuration and permanent SSM instance/profile access. See LIVE_INTEGRATION and the latest VALIDATION entry. No live acceptance checkpoint is closed from these code/tests alone.
+
 Application `69ac213` runs locally and at public HTTPS. It implements the remaining scoped code milestones, including composed planning, weights/policy, reviewed retrieval, claim reports/media and external reconciliation. The checksum/backup installer completed; public BUILD_ID matches, 72 hosted checks and four observed-restart persistence checks pass. Genuine acceptance still needs actual provider, physical and independent-human executions rather than a credential replacement. Permanent SSM account authorization remains an operational follow-up; this release deployed successfully through restricted SSH.
 
 | # | Acceptance checkpoint | Status | Evidence or remaining work |
