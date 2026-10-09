@@ -52,7 +52,8 @@ export function captureFromProviderLink(
       url.pathname,
     );
     return url.protocol === "https:" &&
-      url.hostname === "api-m.sandbox.paypal.com" &&
+      (url.hostname === "api-m.sandbox.paypal.com" ||
+        url.hostname === "api.sandbox.paypal.com") &&
       !url.search &&
       !url.hash
       ? match?.[1]

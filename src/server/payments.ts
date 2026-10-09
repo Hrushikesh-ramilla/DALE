@@ -51,7 +51,8 @@ export function verifyProviderRefund(
     const url = new URL(up?.href || "");
     correctCapture =
       url.protocol === "https:" &&
-      url.hostname === "api-m.sandbox.paypal.com" &&
+      (url.hostname === "api-m.sandbox.paypal.com" ||
+        url.hostname === "api.sandbox.paypal.com") &&
       url.pathname ===
         `/v2/payments/captures/${encodeURIComponent(expected.captureId)}`;
   } catch {
