@@ -80,15 +80,16 @@ export function CinematicIntro({
     timers.push(setTimeout(() => {
       measureTarget();
       setStep(6);                                      // Fly to top-left corner
-    }, 2350));
-    timers.push(setTimeout(() => setStep(7), 2650));  // Background overlay dissolves
+    }, 2400));
+    timers.push(setTimeout(() => setStep(7), 2750));  // Background overlay dissolves
     timers.push(setTimeout(() => {
       onSettledRef.current?.();                       // Real header logo reveals
-    }, 3250));
+      setStep(8);                                      // Floating wordmark handoff
+    }, 3400));
     timers.push(setTimeout(() => {
-      setStep(8);                                      // Intro complete
+      setStep(9);                                      // Intro complete
       onCompleteRef.current?.();
-    }, 3450));
+    }, 3600));
 
     return () => {
       timers.forEach(clearTimeout);
@@ -96,17 +97,18 @@ export function CinematicIntro({
     };
   }, [targetSelector]);
 
-  if (step >= 8) return null;
+  if (step >= 9) return null;
 
   const isFlying = step >= 6;
   const isFadingOverlay = step >= 7;
-  const isSettled = step >= 7;
+  const isSettled = step >= 8;
 
   const centerWidth = "clamp(260px, 38vw, 460px)";
 
   return (
     <div
       className="cinematic-intro-root"
+      data-step={step}
       style={{
         position: "fixed",
         inset: 0,
@@ -153,7 +155,7 @@ export function CinematicIntro({
               }),
           transformOrigin: "top left",
           transition:
-            "top 0.9s cubic-bezier(0.76, 0, 0.24, 1), left 0.9s cubic-bezier(0.76, 0, 0.24, 1), width 0.9s cubic-bezier(0.76, 0, 0.24, 1), transform 0.9s cubic-bezier(0.76, 0, 0.24, 1)",
+            "top 1s cubic-bezier(0.16, 1, 0.3, 1), left 1s cubic-bezier(0.16, 1, 0.3, 1), width 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1)",
           opacity: isSettled ? 0 : 1,
           zIndex: 100000,
         }}
