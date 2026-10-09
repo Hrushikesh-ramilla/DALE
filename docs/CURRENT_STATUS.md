@@ -8,7 +8,7 @@ DALE is a customer-first shopping agent: sourced product comparison and optional
 
 | Area | Current status |
 | --- | --- |
-| Local product | Ready at http://localhost:3000/demo, compiled application source 59e5432. Persistent data remains in `.data/local-final`. |
+| Local product | Ready at http://localhost:3000/demo, compiled application source c63a587. Persistent data remains in `.data/local-final`. |
 | Local process | Hidden supervisor independent of the launching terminal; bounded restart after unexpected child exit, retained logs and start/status/stop commands. No Windows boot service was installed. |
 | Public product | The old address 16.4.25.181 times out on SSH and HTTPS after the owner resized to t3.medium. Current instance address/access is pending; no current public health or new deployment is claimed. Last observed public source was 69ac213. |
 | Guided demo | Private fixture payments, shipping and analysis; no model calls. Scenario roles, exports and reset remain available. |

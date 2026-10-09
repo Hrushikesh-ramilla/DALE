@@ -25,6 +25,8 @@ let peakBytes = null;
 let testReport = null;
 let failure = "";
 let unitStarted = false;
+let restartVerified = false;
+let unauthenticatedRejected = false;
 try {
   execFileSync(
     "systemd-run",
@@ -72,6 +74,12 @@ try {
   }
   if (!ready)
     throw new Error("Candidate did not reach authenticated readiness.");
+  const anonymous = await fetch("http://127.0.0.1:8081/v1/models", {
+    signal: AbortSignal.timeout(1000),
+  });
+  unauthenticatedRejected = anonymous.status === 401;
+  if (!unauthenticatedRejected)
+    throw new Error("Runtime authentication was not enforced.");
   try {
     const result = await promisify(execFile)(
       "npx",
@@ -79,6 +87,12 @@ try {
       { timeout: 720000, maxBuffer: 524288 },
     );
     console.log(result.stdout);
+    const evidence = await promisify(execFile)(
+      "npx",
+      ["tsx", "scripts/verify-local-evidence.ts", "--prepared"],
+      { timeout: 300000, maxBuffer: 524288 },
+    );
+    console.log(evidence.stdout);
   } catch {
     failure = "Candidate task gate failed; see the sanitized selection report.";
   }
@@ -86,7 +100,70 @@ try {
     await readFile(".data/reports/local-model-selection.json", "utf8"),
   );
   complete = testReport.complete;
+  const evidenceReport = JSON.parse(
+    await readFile(".data/reports/local-evidence.json", "utf8"),
+  );
+  complete &&= evidenceReport.complete;
+  // Observe an actual restart with the same restricted endpoint and private key.
+  execFileSync("systemctl", ["restart", unit]);
+  for (let attempt = 0; attempt < 120; attempt++) {
+    try {
+      const response = await fetch("http://127.0.0.1:8081/v1/models", {
+        headers: { Authorization: `Bearer ${key}` },
+        signal: AbortSignal.timeout(1000),
+      });
+      if (response.ok) {
+        const inference = await fetch(
+          "http://127.0.0.1:8081/v1/chat/completions",
+          {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${key}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              model: "dale-lfm25-vl-3b",
+              messages: [
+                { role: "user", content: 'Return exactly {"alive":true}.' },
+              ],
+              response_format: {
+                type: "json_schema",
+                json_schema: {
+                  name: "restart_probe",
+                  strict: true,
+                  schema: {
+                    type: "object",
+                    properties: { alive: { const: true } },
+                    required: ["alive"],
+                    additionalProperties: false,
+                  },
+                },
+              },
+              temperature: 0.2,
+              top_k: 50,
+              repeat_penalty: 1,
+              max_tokens: 32,
+              stream: false,
+            }),
+            signal: AbortSignal.timeout(120000),
+          },
+        );
+        const result = await inference.json();
+        restartVerified =
+          inference.ok &&
+          result.choices?.[0]?.finish_reason === "stop" &&
+          JSON.parse(result.choices[0].message.content).alive === true;
+        break;
+      }
+    } catch {
+      /* Readiness during a restart is not yet inference success. */
+    }
+    await new Promise((done) => setTimeout(done, 1000));
+  }
+  complete &&= restartVerified;
+  if (!restartVerified) failure ||= "Actual inference after restart failed.";
 } catch {
+  complete = false;
   failure ||= "Candidate budget/startup verification did not complete.";
 } finally {
   if (unitStarted) {
@@ -115,6 +192,8 @@ try {
         swapLimitBytes: 0,
         cpuQuotaPercent: 200,
         measuredCgroupPeakBytes: peakBytes,
+        restartVerified,
+        unauthenticatedRejected,
         testReport,
         failure,
         limitation:

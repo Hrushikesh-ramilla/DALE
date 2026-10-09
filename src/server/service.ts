@@ -908,7 +908,9 @@ export async function analyzeCase(actor: Actor, caseId: string) {
     model:
       analysis.mode === "live"
         ? process.env.AI_MODEL || "unconfigured"
-        : "deterministic-fixture-v1",
+        : analysis.mode === "rules"
+          ? "recorded-protocol-v1"
+          : "deterministic-fixture-v1",
     analyzedAt: new Date().toISOString(),
   };
   if (

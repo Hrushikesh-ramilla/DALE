@@ -17,6 +17,7 @@ RestartSec=5
 TimeoutStopSec=20
 KillMode=control-group
 MemoryMax=2048M
+MemorySwapMax=0
 NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict

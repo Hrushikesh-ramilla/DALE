@@ -38,6 +38,7 @@
     "worker": "tsx scripts/worker.ts",
     "eval": "tsx scripts/evaluate.ts && tsx scripts/evaluate-frozen.ts",
     "eval:models": "tsx scripts/evaluate-model.ts",
+    "eval:holdout": "tsx scripts/evaluate-model-holdout.ts",
     "check": "npm run lint && npm run typecheck && npm test",
     "test:integration": "tsx scripts/workflow-traces.ts",
     "db:seed": "tsx scripts/seed.ts",

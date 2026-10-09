@@ -32,6 +32,9 @@ it("replaces stale success after failure, redacts secrets and stops further call
       "not_run",
     ]);
     expect(laterCalls).toBe(0);
+    expect(report.results[0].durationMs).toBeGreaterThanOrEqual(0);
+    expect(report.results[1].durationMs).toBeGreaterThanOrEqual(0);
+    expect(report.results[2].durationMs).toBeUndefined();
     const saved = await readFile(path, "utf8");
     expect(saved).not.toContain("secret-value");
     expect(JSON.parse(saved).checkedAt).not.toBe("old");

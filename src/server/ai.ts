@@ -297,6 +297,15 @@ export async function evidenceAnalysis(
   if (mode !== "live") return { ...records, mode: "fixture" };
   // The text-and-image adapter cannot review video. Preserve it in the sourced report for a person instead.
   const imageInputs = images.filter((image) => image.mime.startsWith("image/"));
+  if (!imageInputs.length)
+    return {
+      ...records,
+      mode: "rules",
+      observations: [
+        ...records.observations,
+        "No reviewable photograph was supplied. This report checks submitted records only; no image model inference was performed.",
+      ],
+    };
   const schema = z.object({
     observations: z
       .array(
@@ -313,24 +322,6 @@ export async function evidenceAnalysis(
       )
       .max(8),
   });
-  const result = await completion(
-    schema,
-    'Describe supplied image appearance using bounded categories only. Do not infer capture timing, parcel contents, causation, honesty or remedy eligibility. Each source must be in imageEvidenceIds. Other records have no supplied image. Shape: {"observations":[{"source":"image-evidence-id","appearance":"visible_damage|no_visible_damage|unreadable|no_relevant_item|unclear"}]}.',
-    {
-      evidence,
-      recordedComparisons: records,
-      imageEvidenceIds: imageInputs.map(
-        (image, index) =>
-          image.evidenceId ||
-          evidence.filter(
-            (entry) =>
-              entry.assetKey &&
-              (!entry.mime || entry.mime.startsWith("image/")),
-          )[index]?.id,
-      ),
-    },
-    imageInputs,
-  );
   const imageIds = imageInputs.map(
     (image, index) =>
       image.evidenceId ||
@@ -339,6 +330,48 @@ export async function evidenceAnalysis(
           entry.assetKey && (!entry.mime || entry.mime.startsWith("image/")),
       )[index]?.id,
   );
+  const instruction =
+    'Describe supplied image appearance using bounded categories only. Do not infer capture timing, parcel contents, causation, honesty or remedy eligibility. Each source must be in imageEvidenceIds. Other records have no supplied image. Shape: {"observations":[{"source":"image-evidence-id","appearance":"visible_damage|no_visible_damage|unreadable|no_relevant_item|unclear"}]}.';
+  let result: z.infer<typeof schema>;
+  if (process.env.AI_PROVIDER === "self_hosted") {
+    // One image/context at a time fits the constrained local runtime. Originals
+    // and recorded comparisons remain unchanged; AI only annotates appearance.
+    const observations: z.infer<typeof schema>["observations"] = [];
+    for (const [index, image] of imageInputs.entries()) {
+      const source = imageIds[index];
+      const record = evidence.find((entry) => entry.id === source);
+      if (!source || !record || !record.assetKey)
+        throw new Error("Analysis returned an unknown evidence source.");
+      const frame = await completion(
+        z.object({
+          observations: z
+            .array(
+              z.object({
+                source: z.literal(source),
+                appearance: schema.shape.observations.element.shape.appearance,
+              }),
+            )
+            .min(1)
+            .max(1),
+        }),
+        instruction,
+        { imageEvidenceIds: [source] },
+        [image],
+      );
+      observations.push(...frame.observations);
+    }
+    result = { observations };
+  } else
+    result = await completion(
+      schema,
+      instruction,
+      {
+        evidence,
+        recordedComparisons: records,
+        imageEvidenceIds: imageIds,
+      },
+      imageInputs,
+    );
   if (
     result.observations.some((entry) => !imageIds.includes(entry.source)) ||
     new Set(result.observations.map((entry) => entry.source)).size !==

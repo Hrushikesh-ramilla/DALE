@@ -141,7 +141,7 @@ if (process.argv.includes("--resume")) {
     "Checkpoint exceeds the frozen evaluation size.",
   );
 }
-const resumedCount = results.length;
+let expectedMockRequests = 0;
 for (let repetition = 1; repetition <= 3; repetition++)
   for (const id of manifest.liveSubset.caseIds) {
     if (
@@ -152,6 +152,12 @@ for (let repetition = 1; repetition <= 3; repetition++)
       continue;
     const item = items.find((item) => item.id === id);
     assert.ok(item);
+    if (
+      item.kind === "catalog" ||
+      item.kind === "canonical_label" ||
+      typeof item.input === "string"
+    )
+      expectedMockRequests++;
     const started = performance.now();
     let passed = false;
     try {
@@ -216,7 +222,7 @@ for (let repetition = 1; repetition <= 3; repetition++)
         mockPayload = { observations: [] };
         const result = await evidenceAnalysis(records, [], "live");
         passed =
-          result.mode === "live" &&
+          result.mode === "rules" &&
           result.outcome === item.expected &&
           result.sources.every((source) =>
             records.some((record) => record.id === source),
@@ -267,7 +273,7 @@ for (let repetition = 1; repetition <= 3; repetition++)
 // The subset stays fixed across all repetitions; this is not a search for a favorable seed.
 assert.equal(manifest.liveSubset.caseIds.length, 60);
 assert.equal(results.length, 180);
-if (!live) assert.equal(requestCount, 180 - resumedCount);
+if (!live) assert.equal(requestCount, expectedMockRequests);
 const passed = results.filter((result) => result.passed).length;
 const variability = manifest.liveSubset.caseIds.filter(
   (id: string) =>
@@ -283,9 +289,7 @@ await writeFile(
   JSON.stringify(
     {
       checkedAt: new Date().toISOString(),
-      build: execFileSync("git", ["rev-parse", "HEAD"], {
-        encoding: "utf8",
-      }).trim(),
+      build: source,
       corpus: manifest.version,
       visionCorpus: vision.version,
       mode: live
@@ -295,6 +299,8 @@ await writeFile(
       provider: process.env.AI_PROVIDER,
       evaluationRole:
         "Frozen regression, not an untouched holdout: vision-v1 development images informed OCR changes. A new disjoint holdout is required for final accuracy acceptance.",
+      plannedModelChecks: 120,
+      recordedClaimProtocolChecks: 60,
       prompts: {
         shopping: "catalog-facts-v2",
         scams: "advisory-categories-v2",

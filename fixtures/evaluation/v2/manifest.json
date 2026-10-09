@@ -1,0 +1,25 @@
+{
+  "version": "self-hosted-holdout-v2",
+  "frozenAt": "2026-10-09T08:57:38.512Z",
+  "provenance": "60 project-owned synthetic protocol cases, manually specified without runtime imports. Twenty newly rendered label images, different from v1. No model was called during preparation. Not physical captures or independent human labels.",
+  "replaces": "v1 is retained byte-identical as regression because vision-v1 development images informed OCR refinement.",
+  "noTuningPolicy": "Run all 60 cases three times without selecting favorable outputs. Report all failures/unavailable responses. Corrective model/prompt development retires v2 and requires a disjoint v3 before final accuracy acceptance.",
+  "scoring": "Native proposed tool set and final validated tool set must both match manual goals; research must precede dependent group discovery. Exact brief and chosen remedy must match. OCR matches the complete visible identifier set after case/whitespace normalization; an unfamiliar identifier must be transcribed, not substituted. Unreadable images require false/empty. Raw model warning signals are measured separately from local rules. Comparisons require the manually specified product and citation plus normal server validation.",
+  "thresholds": {
+    "semanticAccuracy": 0.95,
+    "readableOcrAccuracy": 0.95,
+    "unreadableAbstention": 1,
+    "protectedAuthority": 1,
+    "suspiciousMessageRecall": 0.95,
+    "benignFalseWarningRate": 0.05,
+    "groundedComparisons": 1
+  },
+  "repetitions": 3,
+  "totalCases": 60,
+  "files": [
+    {
+      "file": "cases.json",
+      "sha256": "33220d1236c887be8eae120fc84c6e7069b58ee04c14bc472b3dffb59ef2abb5"
+    }
+  ]
+}

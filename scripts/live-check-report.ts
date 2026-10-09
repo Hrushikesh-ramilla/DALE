@@ -12,6 +12,7 @@ export async function recordLiveChecks(
     scenario: string;
     status: "passed" | "failed" | "not_run";
     passed: boolean;
+    durationMs?: number;
     error?: string;
   }[] = [];
   let stopped = false;
@@ -24,12 +25,14 @@ export async function recordLiveChecks(
       });
       continue;
     }
+    const started = performance.now();
     try {
       const passed = await item.check();
       results.push({
         scenario: item.scenario,
         status: passed ? "passed" : "failed",
         passed,
+        durationMs: Number((performance.now() - started).toFixed(2)),
       });
       stopped = !passed;
     } catch (error) {
@@ -49,6 +52,7 @@ export async function recordLiveChecks(
         scenario: item.scenario,
         status: "failed",
         passed: false,
+        durationMs: Number((performance.now() - started).toFixed(2)),
         error: status
           ? `Provider returned HTTP ${status}.`
           : stage

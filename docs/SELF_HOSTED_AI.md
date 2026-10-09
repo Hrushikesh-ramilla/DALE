@@ -23,6 +23,12 @@ The 3B profile uses the publisher's temperature 0.2/top-k 50/repetition penalty 
 
 The original v1 vision/evaluation files stay byte-identical, but two images informed OCR refinement. They are now regression data, not an untouched holdout. Final semantic/OCR accuracy needs a new disjoint frozen corpus and must include failures, unavailable modes and output variability; five smoke checks cannot qualify the model.
 
+Source c63a587 passes actual Linux capped inference on all five tasks: 2 GiB maximum, no swap, two CPU quota, model files copied inside the cgroup. Its peak reaches the cap; this does not prove spare capacity or the EC2 app/database/worker/voice workload. Authentication, actual post-restart inference and two-frame safety integration extend the next run. The production unit also disables swap.
+
+The new immutable v2 protocol is frozen before model calls: 60 manually specified cases and 20 disjoint synthetic images. Run `npm run eval:holdout -- --prepared` against the prepared private model, then `--resume` only with the identical committed source/configuration/corpus. Each of three repetitions reports all failures and latency. Native proposed goals are scored before rule completion; warning quality measures raw model signals. Scoring/integrity tests reject substituted device facts, wrong remedies, hidden extra goals, guessed blur, partial and duplicate evaluations. A failed holdout cannot be tuned in place and passed off as fresh evidence.
+
+Claim analysis without a photograph uses recorded-protocol mode and makes no image model request. Local image review uses one known original/context at a time and a literal source schema; it omits unrelated notes and cannot establish honesty, causation or remedy authority. `npx tsx scripts/verify-local-evidence.ts --prepared` tests actual private image transport on previously exposed owned graphics, not physical appearance accuracy. The original development v1 run was stopped after its records-only hallucination defect was established; its partial report remains retained.
+
 ## Milestones
 
 1. Research current primary model/runtime sources, measure available hardware, reject candidates that fail useful tasks. Seven candidates measured/tested; LFM2.5-VL-3B passes five development checks. Research remains subject to the actual quality gate; no candidate is qualified. Do not continue downloading candidates without a specific hypothesis addressing observed quality and joint-memory failures.
