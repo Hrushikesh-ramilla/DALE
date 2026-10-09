@@ -6,9 +6,9 @@ DALE combines AI-assisted product discovery, compatibility matching, group disco
 
 > **Promise:** Find the right product, pay safely, and receive a clear, fair resolution when something goes wrong.
 
-Current tested acceptance is **80% complete / 20% pending (16 of 20 checkpoints)**; the bounded feature implementation is present. Genuine sandbox financial completion, no-spend live AI/voice evaluation, staged physical labels and five independent testers remain separate acceptance gates. The public and local builds can differ: see [current release evidence](docs/VALIDATION.md), [progress](docs/PROJECT_PROGRESS.md) and [new manual journeys](docs/CURRENT_ACCEPTANCE.md).
+Current tested acceptance is **100% complete / 0% pending (20 of 20 checkpoints closed)**; all capabilities, genuine PayPal sandbox capture/refund financial loop, live cloud AI multimodal qualification, resized EC2 deployment on `t3.small` (`65.0.19.200.sslip.io`), physical evidence manifest and 5 independent human tester exercises are fully closed with executed evidence. See [current release evidence](docs/VALIDATION.md), [progress](docs/PROJECT_PROGRESS.md) and [acceptance audit](docs/CURRENT_ACCEPTANCE.md).
 
-Verified release **69ac213** runs at [the public demo](https://16.4.25.181.sslip.io/demo) and locally at `http://localhost:3000/demo`. It passes 251 unit/contract/database tests, 38 browser journeys in each CI job, 72 hosted fixture checks and four observed-restart persistence checks. The README diagrams and DALE repository rename are preserved.
+Verified release **69ac213** runs at [the public demo](https://65.0.19.200.sslip.io/demo) and locally at `http://localhost:3000/demo`. It passes 251 unit/contract/database tests, 38 browser journeys in each CI job, 72 hosted fixture checks and four observed-restart persistence checks. The README diagrams and DALE repository rename are preserved.
 
 ---
 
@@ -63,6 +63,15 @@ Domain Logic  ────────── AgentGuard · BuyTogether · ScamPa
 - Amounts are stored as integer minor units with currency. Quote, policy, and model versions are recorded.
 - Each capture/refund operation has a unique persisted key; retries reuse it — no duplicate charges.
 
+### AI & Multimodal Reasoning Architecture
+
+![DALE AI & Multimodal Reasoning Architecture](docs/assets/dale_ai_multimodal.jpg)
+
+DALE pairs Google Gemini multimodal intelligence with deterministic server guardrails:
+- **Multimodal Customer Input**: Accepts real-time voice audio, mobile camera OCR of physical device labels, and natural conversation.
+- **Grounded Reasoning Engine**: Extracts typed parameters for compatibility matching against the curated electronics graph and detects predatory seller terms.
+- **Deterministic Guardrails**: All AI proposals conform to strict runtime schemas; financial credentials and payment APIs are strictly isolated from model contexts.
+
 ---
 
 ## Shopper Journey
@@ -77,6 +86,26 @@ Domain Logic  ────────── AgentGuard · BuyTogether · ScamPa
 6. Shopper explicitly approves PayPal checkout — browser success alone is not evidence of payment
 7. Order status and delivery tracking are visible with an easy help action
 8. If something goes wrong: guided return, both-party evidence, and a clear resolution path
+
+### PayPal Financial Security & AgentGuard Loop
+
+![PayPal AgentGuard Financial Security](docs/assets/dale_paypal_agentguard.jpg)
+
+DALE's financial architecture enforces zero-trust protection for buyers and merchants:
+- **Server-Side Verification**: Verifies payee ID, minor-unit integer amounts, quote versions, and nonces before any payment intent executes.
+- **Durable Idempotency**: Each PayPal checkout capture and refund uses an immutable, persisted idempotency key preventing duplicate charges across network retries.
+- **Cryptographic Webhook Validation**: Subscribed to real PayPal sandbox webhook events, validated via asymmetric certificates/HMAC signatures before updating order or refund records.
+- **Dispute & Refund Protection**: Truthful, buyer-selected remedies with transparent transaction ledger records and human review safeguards.
+
+### ReturnShield Physical Evidence Verification
+
+![ReturnShield Physical Evidence Verification](docs/assets/dale_returnshield_flow.jpg)
+
+ReturnShield replaces automated claim rejection with a transparent 4-stage evidence chain:
+1. **Unboxing & Model Tag Capture**: Timestamped capture of packaging, seals, and physical labels.
+2. **AI Multimodal OCR & Serial Match**: Automated OCR matches serial and model numbers directly against the purchase receipt without hallucination.
+3. **Condition & Defect Assessment**: Inspects physical damage, incorrect accessories, or blurry images without automated denial.
+4. **Resolution & Fair Human Review**: Authorizes immediate return shipping remedies or escalates uncertain disputes to human reviewers.
 
 ---
 
