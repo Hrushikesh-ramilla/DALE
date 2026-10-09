@@ -169,8 +169,8 @@ if (mode === "status") {
       ALLOW_EMBEDDED_DATABASE: "true",
       STORAGE_MODE: "local",
       ALLOW_LOCAL_STORAGE: "true",
-      PAYMENT_MODE: "fixture",
-      AI_MODE: "fixture",
+      PAYMENT_MODE: source.PAYMENT_MODE || "fixture",
+      AI_MODE: source.AI_MODE || "fixture",
       AGENT_MODEL_ENABLED: "false",
       AI_API_KEY: source.AI_API_KEY || "",
       AI_MODEL: source.AI_MODEL || "",
@@ -180,7 +180,7 @@ if (mode === "status") {
       VOICE_BILLING_DISABLED: "false",
       VOICE_FREE_TIER_CONFIRMED: "false",
       REAL_RESEARCH_REFRESH_ENABLED: "false",
-      DEMO_ACCESS_CODE: "",
+      DEMO_ACCESS_CODE: source.DEMO_ACCESS_CODE || previous.DEMO_ACCESS_CODE || "",
       OPERATOR_ACCESS_CODE: operatorCode,
     };
     await unlink(stopPath).catch((error) => {

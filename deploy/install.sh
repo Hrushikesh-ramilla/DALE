@@ -12,6 +12,7 @@ target="/opt/buyerguard/releases/$release_id"
 test ! -e "$target" || { echo "Release already exists; choose a new identifier."; exit 1; }
 install -d -m 750 -o buyerguard -g buyerguard "$target"
 tar -xzf /home/ubuntu/release.tar.gz -C "$target"
+node "$target/deploy/verify-app-artifact.mjs"
 mkdir -p "$target/.next/cache"
 chown -R buyerguard:buyerguard "$target"
 ln -sfn "$target" /opt/buyerguard/current

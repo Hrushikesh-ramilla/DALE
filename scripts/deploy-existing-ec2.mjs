@@ -7,7 +7,7 @@ import { resolve } from "node:path";
 const release = process.argv[2];
 if (!release || !/^[a-zA-Z0-9._-]+$/.test(release))
   throw new Error("Supply a unique release identifier.");
-const instanceHost = "ec2-16-4-25-181.ap-south-1.compute.amazonaws.com";
+const instanceHost = "ec2-3-7-253-85.ap-south-1.compute.amazonaws.com";
 const connection = process.argv.slice(3);
 if (
   connection.length &&
