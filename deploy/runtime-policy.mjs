@@ -18,6 +18,14 @@ export function parseRuntimeEnvironment(text) {
   return values;
 }
 
+export function installedModelUnit(result) {
+  if (result.status === 0)
+    return result.stdout.includes("buyerguard-model.service");
+  if (result.status === 1 && !result.stdout.trim() && !result.stderr.trim())
+    return false;
+  throw new Error("Could not inspect the existing private model service.");
+}
+
 export function runtimePlan(settings, manifest, memoryBytes) {
   const modelEnabled =
     settings.AI_PROVIDER === "self_hosted" && settings.AI_MODE === "live";

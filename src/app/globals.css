@@ -19,6 +19,10 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 110px;
 }
+/* Focused voice controls must stay under the pointer when brought into view. */
+html:has(.voice-companion:focus-within) {
+  scroll-behavior: auto;
+}
 body {
   margin: 0;
 }

@@ -2,6 +2,7 @@ import { expect, it } from "vitest";
 import {
   parseRuntimeEnvironment,
   runtimePlan,
+  installedModelUnit,
 } from "../deploy/runtime-policy.mjs";
 const manifest = {
   selection: "accepted",
@@ -22,6 +23,27 @@ const live = {
   AI_MODEL: "tested-model",
   VOICE_MODE: "local",
 };
+
+it("handles an absent exact unit while preserving systemd inspection errors", () => {
+  expect(installedModelUnit({ status: 1, stdout: "", stderr: "" })).toBe(false);
+  expect(
+    installedModelUnit({
+      status: 0,
+      stdout: "buyerguard-model.service enabled",
+      stderr: "",
+    }),
+  ).toBe(true);
+  expect(() =>
+    installedModelUnit({
+      status: 1,
+      stdout: "",
+      stderr: "Failed to connect to bus",
+    }),
+  ).toThrow(/inspect/);
+  expect(() =>
+    installedModelUnit({ status: 2, stdout: "", stderr: "" }),
+  ).toThrow(/inspect/);
+});
 
 it("preserves literal private values without evaluating shell substitutions", () => {
   const secret = 'quote" dollars$ backtick` $(execute) newline\nend';

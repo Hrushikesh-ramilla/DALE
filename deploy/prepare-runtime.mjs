@@ -13,9 +13,13 @@ import { randomBytes } from "node:crypto";
 import { arch, totalmem } from "node:os";
 import { resolve, basename, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import { downloadModelArtifact } from "../scripts/download-model-artifact.mjs";
-import { parseRuntimeEnvironment, runtimePlan } from "./runtime-policy.mjs";
+import {
+  parseRuntimeEnvironment,
+  runtimePlan,
+  installedModelUnit,
+} from "./runtime-policy.mjs";
 
 if (process.platform !== "linux" || arch() !== "x64" || process.getuid() !== 0)
   throw new Error(
@@ -177,11 +181,13 @@ if (plan.modelEnabled) {
       "Private model service failed authenticated startup. Restore the previous release.",
     );
 } else {
-  const exists = execFileSync(
-    "systemctl",
-    ["list-unit-files", "buyerguard-model.service", "--no-legend"],
-    { encoding: "utf8" },
-  ).includes("buyerguard-model.service");
+  const exists = installedModelUnit(
+    spawnSync(
+      "systemctl",
+      ["list-unit-files", "buyerguard-model.service", "--no-legend"],
+      { encoding: "utf8" },
+    ),
+  );
   if (exists)
     execFileSync("systemctl", ["disable", "--now", "buyerguard-model"]);
 }
