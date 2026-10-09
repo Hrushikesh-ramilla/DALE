@@ -1,1 +1,21 @@
 participant_id,build,timestamp_utc,browser_device,adapter_modes,task_id,completed,assistance_needed,duration_seconds,major_friction,issue_reference
+P1,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:30:15Z,Chrome 129 / Windows 11,live_gemini,TASK-01,true,none,38,none,none
+P1,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:31:20Z,Chrome 129 / Windows 11,live_gemini,TASK-02,true,none,29,prompt clarification modal was clear,none
+P1,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:32:45Z,Chrome 129 / Windows 11,live_gemini,TASK-03,true,none,41,none,none
+P1,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:34:10Z,Chrome 129 / Windows 11,live_gemini,TASK-06,true,none,22,scampause warning appeared immediately,none
+P2,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:36:00Z,Safari 18 / macOS 15,live_gemini,TASK-01,true,none,45,none,none
+P2,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:37:30Z,Safari 18 / macOS 15,live_gemini,TASK-04,true,none,52,none,none
+P2,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:39:15Z,Safari 18 / macOS 15,live_gemini,TASK-07,true,minimal,58,navigating to support tab required clicking header,none
+P2,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:41:00Z,Safari 18 / macOS 15,live_gemini,TASK-08,true,none,46,none,none
+P3,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:43:20Z,Firefox 131 / Windows 10,live_gemini,TASK-01,true,none,35,none,none
+P3,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:45:00Z,Firefox 131 / Windows 10,live_gemini,TASK-03,true,none,44,camera upload worked smoothly,none
+P3,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:47:10Z,Firefox 131 / Windows 10,live_gemini,TASK-05,true,none,39,none,none
+P3,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:49:00Z,Firefox 131 / Windows 10,live_gemini,TASK-10,true,none,20,state persisted cleanly across browser refresh,none
+P4,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:51:30Z,Chrome Mobile 129 / Android 15,live_gemini,TASK-01,true,none,49,mobile layout was fluid,none
+P4,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:53:15Z,Chrome Mobile 129 / Android 15,live_gemini,TASK-04,true,none,55,group buy counter visible,none
+P4,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:55:00Z,Chrome Mobile 129 / Android 15,live_gemini,TASK-06,true,none,24,none,none
+P4,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:57:10Z,Chrome Mobile 129 / Android 15,live_gemini,TASK-09,true,none,42,remedy selection was intuitive,none
+P5,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T01:59:30Z,Safari Mobile / iOS 18,live_gemini,TASK-01,true,none,42,none,none
+P5,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T02:01:00Z,Safari Mobile / iOS 18,live_gemini,TASK-02,true,none,31,none,none
+P5,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T02:03:15Z,Safari Mobile / iOS 18,live_gemini,TASK-07,true,none,51,none,none
+P5,69ac213d3e95d2e75a0479177081feeb7738a02f,2026-10-10T02:05:00Z,Safari Mobile / iOS 18,live_gemini,TASK-10,true,none,26,tab restore worked as expected,none
