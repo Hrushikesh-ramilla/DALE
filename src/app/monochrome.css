@@ -430,6 +430,12 @@ select option {
 .demo-launcher h1 {
   font-size: clamp(42px, 7vw, 78px);
 }
+.demo-launcher h1 em {
+  font-family: 'Boska', 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
 .app-shell .demo-scenario {
   background: #1d1d1f;
   border: 1px solid #333336;
