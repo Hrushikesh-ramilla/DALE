@@ -11,6 +11,7 @@ if (process.argv.includes("--prepared")) {
   );
   process.env.AI_PROVIDER = "self_hosted";
   process.env.AI_MODEL = candidate.alias;
+  if (candidate.profile) process.env.AI_SELF_HOSTED_PROFILE = candidate.profile;
   process.env.AI_SELF_HOSTED_BASE_URL = "http://127.0.0.1:8081/v1";
   process.env.AI_SELF_HOSTED_API_KEY = (
     await readFile(".data/self-hosted/api-key", "utf8")
@@ -19,6 +20,12 @@ if (process.argv.includes("--prepared")) {
 process.env.AI_MODE = "live";
 process.env.AGENT_MODEL_ENABLED = "true";
 const input = { model: "Atlas 14", budget: 8000 };
+function requireModelResult(result: Awaited<ReturnType<typeof planAgent>>) {
+  if (result.mode === "unavailable")
+    throw new Error(
+      `Local model gate failed at ${result.failureStage} [${result.failureCode}]`,
+    );
+}
 const report = await recordLiveChecks(
   ".data/reports/local-model-selection.json",
   [
@@ -37,6 +44,14 @@ const report = await recordLiveChecks(
           },
           undefined,
           [],
+        );
+        requireModelResult(result);
+        console.log(
+          JSON.stringify({
+            developmentCase: "composed",
+            mode: result.mode,
+            tools: result.steps.map((step) => step.tool),
+          }),
         );
         return (
           result.mode === "model" &&
@@ -60,6 +75,14 @@ const report = await recordLiveChecks(
           },
           undefined,
           [],
+        );
+        requireModelResult(result);
+        console.log(
+          JSON.stringify({
+            developmentCase: "unreviewed_device",
+            mode: result.mode,
+            tools: result.steps.map((step) => step.tool),
+          }),
         );
         return (
           result.mode === "model" &&

@@ -12,6 +12,29 @@ import {
   modelLabelExtraction,
 } from "../src/server/ai";
 import type { Evidence } from "../src/domain/claims";
+if (process.argv.includes("--prepared")) {
+  const prepared = JSON.parse(
+    await readFile(".data/self-hosted/candidate.json", "utf8"),
+  );
+  const candidates = JSON.parse(
+    await readFile("deploy/model-candidates.json", "utf8"),
+  );
+  const candidate = candidates.candidates[prepared.id];
+  assert.ok(
+    candidate &&
+      prepared.alias === candidate.alias &&
+      prepared.runtime === candidates.runtime.version,
+    "Prepare the pinned candidate first.",
+  );
+  process.env.AI_PROVIDER = "self_hosted";
+  process.env.AI_MODEL = candidate.alias;
+  process.env.AI_SELF_HOSTED_PROFILE = candidate.profile || "structured";
+  process.env.AI_SELF_HOSTED_BASE_URL = "http://127.0.0.1:8081/v1";
+  process.env.AI_SELF_HOSTED_API_KEY = (
+    await readFile(".data/self-hosted/api-key", "utf8")
+  ).trim();
+  process.env.EVAL_PROVIDER_MODE = "live";
+}
 const live = process.env.EVAL_PROVIDER_MODE === "live";
 if (
   live &&
@@ -74,8 +97,59 @@ const results: {
   durationMs: number;
   failure?: string;
 }[] = [];
+await mkdir(".data/reports", { recursive: true });
+const source = execFileSync("git", ["rev-parse", "HEAD"], {
+  encoding: "utf8",
+}).trim();
+const signature = createHash("sha256")
+  .update(
+    JSON.stringify({
+      source,
+      model: process.env.AI_MODEL,
+      profile: process.env.AI_SELF_HOSTED_PROFILE,
+      live,
+      manifest,
+      vision,
+    }),
+  )
+  .digest("hex");
+const progressPath = `.data/reports/${live ? "live" : "mock"}-model-evaluation-progress.json`;
+if (process.argv.includes("--resume")) {
+  const checkpoint = JSON.parse(await readFile(progressPath, "utf8"));
+  assert.equal(
+    checkpoint.signature,
+    signature,
+    "Checkpoint configuration/source/corpus changed; preserve it and start a new evaluation.",
+  );
+  const keys = new Set<string>();
+  for (const record of checkpoint.results) {
+    assert.ok(
+      manifest.liveSubset.caseIds.includes(record.id) &&
+        [1, 2, 3].includes(record.repetition) &&
+        typeof record.passed === "boolean" &&
+        Number.isFinite(record.durationMs) &&
+        record.durationMs >= 0,
+      "Invalid checkpoint record.",
+    );
+    const key = `${record.repetition}:${record.id}`;
+    assert.ok(!keys.has(key), "Duplicate checkpoint record.");
+    keys.add(key);
+    results.push(record);
+  }
+  assert.ok(
+    results.length <= 180,
+    "Checkpoint exceeds the frozen evaluation size.",
+  );
+}
+const resumedCount = results.length;
 for (let repetition = 1; repetition <= 3; repetition++)
   for (const id of manifest.liveSubset.caseIds) {
+    if (
+      results.some(
+        (record) => record.id === id && record.repetition === repetition,
+      )
+    )
+      continue;
     const item = items.find((item) => item.id === id);
     assert.ok(item);
     const started = performance.now();
@@ -167,11 +241,33 @@ for (let repetition = 1; repetition <= 3; repetition++)
           "Provider/schema/grounding failure; sensitive response withheld",
       });
     }
+    await writeFile(
+      progressPath,
+      JSON.stringify(
+        {
+          checkedAt: new Date().toISOString(),
+          signature,
+          source,
+          model: process.env.AI_MODEL,
+          mode: live ? "live" : "mock",
+          completed: results.length,
+          total: 180,
+          passed: results.filter((record) => record.passed).length,
+          complete: false,
+          results,
+        },
+        null,
+        2,
+      ),
+    );
+    console.log(
+      `Evaluation ${results.length}/180: ${results.filter((record) => record.passed).length} passed.`,
+    );
   }
 // The subset stays fixed across all repetitions; this is not a search for a favorable seed.
 assert.equal(manifest.liveSubset.caseIds.length, 60);
 assert.equal(results.length, 180);
-if (!live) assert.equal(requestCount, 180);
+if (!live) assert.equal(requestCount, 180 - resumedCount);
 const passed = results.filter((result) => result.passed).length;
 const variability = manifest.liveSubset.caseIds.filter(
   (id: string) =>
@@ -196,11 +292,14 @@ await writeFile(
         ? "live provider"
         : "mock native Gemini transport; no network/spend",
       model: process.env.AI_MODEL,
+      provider: process.env.AI_PROVIDER,
+      evaluationRole:
+        "Frozen regression, not an untouched holdout: vision-v1 development images informed OCR changes. A new disjoint holdout is required for final accuracy acceptance.",
       prompts: {
         shopping: "catalog-facts-v2",
         scams: "advisory-categories-v2",
         claims: "claims-v2",
-        labels: "confirm-label-v1",
+        labels: "ocr-identifier-v2",
       },
       repetitions: 3,
       passed,

@@ -79,6 +79,7 @@ const child = spawn(
     "-ngl",
     "0",
     "--no-mmproj-offload",
+    "--no-repack",
     "--alias",
     candidate.alias,
     "--api-key-file",

@@ -1,6 +1,7 @@
 import { afterEach, expect, it, vi } from "vitest";
 import {
   localIntentSchema,
+  localIntentSchemaForPlan,
   localIntentWorkflow,
 } from "../src/server/local-agent-plan";
 import { planAgent } from "../src/server/agent-planner";
@@ -54,16 +55,82 @@ it("does not accept a local semantic proposal that changes explicit shopper cons
     [],
   );
   expect(result.mode).toBe("unavailable");
+  expect(result).toMatchObject({
+    failureStage: "inference",
+    failureCode: "schema",
+  });
   expect(result.plan).toMatchObject({
     budget: 6000,
     cable: "none",
     model: realModels[2],
   });
 });
+
+it("constrains only exact server facts and leaves unparsed values as proposals", () => {
+  const schema = localIntentSchemaForPlan(
+    {
+      tool: "research_products",
+      model: realModels[2],
+      budget: 6000,
+      cable: "none",
+      fastCharging: false,
+      deviceFamily: "reviewed",
+    },
+    "under $60, normal charging",
+  );
+  expect(() => schema.parse({ ...base, budgetUsd: 60 })).not.toThrow();
+  for (const changed of [
+    { budgetUsd: 99 },
+    { model: null },
+    { cable: "usb100" },
+    { fastCharging: true },
+  ])
+    expect(() =>
+      schema.parse({ ...base, budgetUsd: 60, ...changed }),
+    ).toThrow();
+  const unparsed = localIntentSchemaForPlan(
+    {
+      tool: "research_products",
+      model: null,
+      budget: null,
+      cable: "unknown",
+      fastCharging: false,
+      deviceFamily: "m2air",
+    },
+    "Help me choose something suitable",
+  );
+  expect(() => unparsed.parse({ ...base, fastCharging: true })).not.toThrow();
+});
 it("rejects incomplete clarification rather than repairing it into success", () => {
   expect(() =>
     localIntentWorkflow(
-      localIntentSchema.parse({ ...base, goals: ["clarify"] }),
+      localIntentSchema.parse({
+        ...base,
+        goals: ["clarify"],
+      }),
     ),
+  ).toThrow(/Missing clarification/);
+  const clarification = localIntentSchemaForPlan(
+    { tool: "clarify", question: "Which exact model do you have?" },
+    "Find an unreviewed device",
+  );
+  expect(() =>
+    clarification.parse({ ...base, goals: ["clarify"], question: null }),
+  ).toThrow();
+});
+
+it("keeps a registry-required clarification when shopping intent has no verified device", () => {
+  const guard = {
+    tool: "clarify" as const,
+    question: "Provide an exact model with reviewed manufacturer evidence.",
+  };
+  const intent = localIntentSchema.parse({ ...base, model: null });
+  expect(localIntentWorkflow(intent, guard).steps).toEqual([guard]);
+  // A substituted reviewed model is not repaired into a pass: it still reaches
+  // the ordinary conflict validator and is rejected against the unreviewed task.
+  const substituted = localIntentWorkflow(localIntentSchema.parse(base), guard);
+  expect(substituted.steps[0].tool).toBe("research_products");
+  expect(() =>
+    localIntentWorkflow({ ...intent, goals: ["clarify"] }, guard),
   ).toThrow(/Missing clarification/);
 });

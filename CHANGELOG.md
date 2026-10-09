@@ -2,6 +2,15 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-09 — Native local tool selection and bounded model qualification
+
+- Added pinned LiquidAI LFM2.5-VL 1.6B/3B candidates after primary-source research. The 1.6B candidate failed planning; the 3B candidate passes all five actual development checks: composed shopping/groups/orders, unknown-device clarification, grounded comparison, clear-label OCR and blurred-label abstention. No candidate is production-qualified yet. LFM weights have a conditional commercial license, not Apache-2.0.
+- Use native read-only function proposals for the 3B profile. Exact server-owned brief facts are omitted from function argument schemas, preventing model substitutions; missing facts remain proposals requiring shopper confirmation. Unknown tools and invalid arguments fail closed, with safe stage diagnostics and no cloud fallback.
+- Refined label transcription and consistent legibility responses. Generic field headings are removed without guessing characters. Failed extraction asks for manual selection instead of throwing or inventing a model. OCR does not authenticate a physical device.
+- Disable CPU weight repacking to avoid duplicated allocations. Measured Windows idle resident memory fell from 3.60 GB to 2.41 GB; development text/vision peak was 2.50 GB. This is not an EC2 measurement. Added a manually dispatched Linux inference gate with a hard 2 GiB/no-swap/two-CPU limit and cgroup-owned model page cache.
+- Added resumable, source/configuration-bound evaluation checkpoints. The v1 corpus is retained unchanged as regression: two v1 images informed OCR development, so it cannot be described as an untouched release holdout. A new disjoint holdout is required before final accuracy acceptance. Lint/typecheck and all 304 unit/contract/database tests pass.
+- Release acceptance remains 15/20 (75% passed / 25% pending). Genuine model qualification, current EC2 installation, usable PayPal merchant configuration and physical/human exercises remain separately recorded.
+
 ## 2026-10-09 — Linux runtime installation and separate completion measures
 
 - Added production pinned CPU model/speech preparation, authenticated loopback systemd model service, restart/resource limits, service-group file permissions and total-memory policy. The installer prepares runtime before app startup; disabled fixture releases download no models. Local speech increases the app/child-process cgroup budget to 768 MiB.

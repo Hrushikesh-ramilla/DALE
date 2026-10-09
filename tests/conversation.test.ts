@@ -189,6 +189,7 @@ describe("bounded native vision and factual summaries", () => {
       const result = await identifyDevice(actor, image, "Slate 11");
       expect(result.proposedModel).toBe(expected);
       expect(result.needsConfirmation).toBe(true);
+      if (!readable && labels.length) expect(result.mode).toBe("unavailable");
       expect((await snapshot(actor)).brief).toBeUndefined();
       expect(
         JSON.parse(fetch.mock.calls[0][1].body).contents[0].parts[1].inlineData

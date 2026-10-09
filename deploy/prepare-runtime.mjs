@@ -130,6 +130,8 @@ if (plan.modelEnabled) {
   await privateFile("/etc/buyerguard-model.key", key);
   settings.AI_SELF_HOSTED_API_KEY = key;
   settings.AI_SELF_HOSTED_BASE_URL = "http://127.0.0.1:8081/v1";
+  if (plan.selected.profile)
+    settings.AI_SELF_HOSTED_PROFILE = plan.selected.profile;
   const stagedLink = resolve(base, "current.pending");
   // No recursive removal or replacement of arbitrary directories.
   try {

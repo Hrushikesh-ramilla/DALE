@@ -1,5 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import { LocalInferenceError } from "../src/server/self-hosted-ai";
 export type LiveCheck = { scenario: string; check: () => Promise<boolean> };
 // Raw provider exceptions can contain request credentials.
 export async function recordLiveChecks(
@@ -36,13 +37,23 @@ export async function recordLiveChecks(
         error instanceof Error
           ? error.message.match(/HTTP (\d{3})/)?.[1]
           : undefined;
+      const stage =
+        error instanceof LocalInferenceError
+          ? error.code
+          : error instanceof Error
+            ? error.message.match(
+                /^Local model gate failed at (inference|workflow_validation) \[(transport|http|envelope|incomplete|json|schema|validation)\]$/,
+              )?.[0]
+            : undefined;
       results.push({
         scenario: item.scenario,
         status: "failed",
         passed: false,
         error: status
           ? `Provider returned HTTP ${status}.`
-          : "Live check did not complete.",
+          : stage
+            ? `Local inference diagnostic: ${stage}.`
+            : "Live check did not complete.",
       });
       stopped = true;
     }

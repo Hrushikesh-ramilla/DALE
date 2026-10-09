@@ -1,5 +1,15 @@
 # Validation status
 
+## Native local planning and OCR — 9 October 2026
+
+LFM2.5-VL-3B Q4_K_M with the Q8 projector and pinned llama.cpp b11429 passes five actual CPU development checks at 2026-10-09T08:31:57.903Z: exact composed M1/budget/cable goals, unknown-device clarification, sourced R003 comparison, clear Atlas 14 OCR and blurred-label abstention. No cloud inference was used. Native function calls select read-only proposals; server-owned facts, workflow guards and shopper confirmations remain authoritative. LFM2.5-VL-1.6B failed planning. Seven candidates have now been tested.
+
+Disabling weight repacking reduced Windows idle resident memory from 3,601,252,352 to 2,408,443,904 bytes. Development text/vision peak was 2,504,335,360 resident / 1,117,257,728 private bytes. These are CPU/two-thread laptop measurements, not Linux cgroup or EC2 joint-load evidence. A hard 2 GiB/no-swap/two-CPU Linux inference workflow is prepared, not yet executed.
+
+Lint/typecheck and all 304 unit/contract/database tests pass. An initial contradictory OCR fixture exposed extraction failure propagation; identification now returns unavailable/manual selection instead of inventing a device. Forty-four focused checks passed after that fix; final suite excludes an abandoned sampling-profile experiment. Evaluation checkpoints bind source/model/profile/corpus and reject duplicates or changed configurations.
+
+The two vision-v1 development images invalidate v1 as an untouched release holdout. Original files/labels remain unchanged and will be reported as regression; new disjoint fixtures must be frozen before model calls. No full live evaluation, production selection, EC2 install, genuine capture/refund or independent human/physical acceptance is claimed. Release acceptance remains 15/20 (75% passed / 25% pending).
+
 ## Production runtime installation — 9 October 2026
 
 Added Linux-only runtime installer, private CPU systemd service, immutable service-group artifacts, app/recognizer memory override, aggregate host-capacity guard and upgrade restoration of runtime configuration/link. Fourteen focused policy/release tests and lint/typecheck pass. Fresh Linux CI first caught the absent-unit systemctl result; fixed with a narrow empty-output/exit-1 check while retaining real inspection failures. No selected model or new EC2 deployment is claimed. The progress ledger now explicitly separates engineering from its 15/20 (75%) release acceptance count.

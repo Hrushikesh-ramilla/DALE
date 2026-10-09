@@ -3,6 +3,7 @@ import { realModels } from "@/domain/research";
 import type { WorkflowStep } from "@/domain/agent-workflow";
 import { resolveDevices } from "@/domain/device-registry";
 import { plannerSchema } from "@/domain/agent-plan";
+import type { AgentPlan } from "@/domain/agent-plan";
 
 // A small local model extracts intent and values. Unit conversion and registry
 // metadata belong to the server, followed by the ordinary workflow validator.
@@ -35,7 +36,33 @@ export const localIntentSchema = z
   })
   .strict();
 
-export function localIntentWorkflow(intent: z.infer<typeof localIntentSchema>) {
+// Exact server-parsed facts are constraints on generation, not values for a
+// small model to transcribe again. Unparsed facts remain semantic proposals and
+// the ordinary workflow validator still rejects changed or unconfirmed values.
+export function localIntentSchemaForPlan(plan: AgentPlan, task: string) {
+  if (plan.tool === "clarify")
+    return localIntentSchema.extend({ question: z.string().min(1).max(300) });
+  if (plan.tool !== "research_products") return localIntentSchema;
+  return localIntentSchema.extend({
+    model: plan.model ? z.literal(plan.model) : localIntentSchema.shape.model,
+    budgetUsd:
+      plan.budget !== null
+        ? z.literal(plan.budget / 100)
+        : localIntentSchema.shape.budgetUsd,
+    cable:
+      plan.cable !== "unknown"
+        ? z.literal(plan.cable)
+        : localIntentSchema.shape.cable,
+    fastCharging: /\b(?:fast|normal|without|not)\b/i.test(task)
+      ? z.literal(plan.fastCharging)
+      : localIntentSchema.shape.fastCharging,
+  });
+}
+
+export function localIntentWorkflow(
+  intent: z.infer<typeof localIntentSchema>,
+  requiredClarification?: Extract<AgentPlan, { tool: "clarify" }>,
+) {
   const resolved = intent.model ? resolveDevices(intent.model) : [];
   const model =
     intent.model && realModels.includes(intent.model)
@@ -45,7 +72,8 @@ export function localIntentWorkflow(intent: z.infer<typeof localIntentSchema>) {
         : null;
   const steps: WorkflowStep[] = intent.goals.map((tool) => {
     if (tool === "research_products")
-      if (intent.model && !model)
+      if (requiredClarification && !model) return requiredClarification;
+      else if (intent.model && !model)
         return {
           tool: "clarify",
           question:
@@ -83,7 +111,7 @@ export function localIntentWorkflow(intent: z.infer<typeof localIntentSchema>) {
 }
 
 export const localIntentInstruction = `Extract the shopper's intent into JSON. goals is an ordered list of ONLY requested goals: research_products = find/compare products; discover_groups = seek group savings; inspect_orders = see own orders; inspect_claims = see own return cases; prepare_support = draft a return/refund/replacement; scan_message = inspect an untrusted seller message; clarify = ask a short question; legacy_task = refuse payment/code execution.
-For shopping, model is the device name the shopper states, copied without substituting another device. If none is stated, use confirmed prior model or null. Do not infer a device from the budget. The server resolves device names against reviewed manufacturer records. Use confirmed context for follow-ups; never invent missing facts.
+For shopping, use the exact model string in serverExtractedConstraints when supplied; it is the server's reviewed ID for the stated device. Otherwise copy the shopper's device name without substituting another device. If none is stated, use confirmed prior model or null. Do not infer a device from the budget. The server resolves names against reviewed manufacturer records. Use confirmed context for follow-ups; never invent missing facts.
 serverExtractedConstraints are exact parameters parsed by the server from the shopper's words. Preserve them when provided; they are not a suggestion. Select goals from the task separately.
 budgetUsd is the stated maximum in DOLLARS, e.g. $25.50 is 25.50. Keep confirmed prior budget if unchanged; otherwise null.
 cable describes what the shopper ALREADY OWNS: unknown if unstated; none if a new/included cable is needed; usb60/usb100 for an owned 60W/100W cable; magsafe3 for an owned MagSafe 3 cable. fastCharging is false unless requested or confirmed previously.

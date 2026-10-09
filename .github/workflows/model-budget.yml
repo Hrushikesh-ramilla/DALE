@@ -1,0 +1,22 @@
+name: Private model memory gate
+on: workflow_dispatch
+jobs:
+  model-budget:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: sudo env CI=true GITHUB_SHA="$GITHUB_SHA" "$(command -v node)" deploy/verify-model-budget.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: linux-model-budget-report
+          path: |
+            .data/reports/linux-model-budget.json
+            .data/reports/local-model-selection.json
+          retention-days: 7

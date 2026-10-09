@@ -8,9 +8,11 @@ import {
 import type { AgentRequest } from "@/domain/agent";
 import { realModels } from "@/domain/research";
 import { z } from "zod";
+import { LocalInferenceError, selfHostedToolSelection } from "./self-hosted-ai";
+import { localToolPlanner, localToolInstruction } from "./local-tool-plan";
 import type { ResearchReport } from "@/domain/research";
 import {
-  localIntentSchema,
+  localIntentSchemaForPlan,
   localIntentWorkflow,
   localIntentInstruction,
 } from "./local-agent-plan";
@@ -114,13 +116,37 @@ export async function planAgent(
       process.env.AI_BILLING_DISABLED !== "true")
   )
     return { ...fallback, mode: "catalog" as const };
+  let failureStage = "inference";
   try {
     if (process.env.AI_PROVIDER === "self_hosted") {
+      if (process.env.AI_SELF_HOSTED_PROFILE === "lfm25vl3") {
+        const planner = localToolPlanner(fallback.plan, input.task);
+        const calls = await selfHostedToolSelection(
+          planner.definitions,
+          localToolInstruction,
+          {
+            task: input.task,
+            knownPurchaseBrief:
+              fallback.plan.tool === "research_products" ? fallback.plan : null,
+            requiredClarification:
+              fallback.plan.tool === "clarify" ? fallback.plan.question : null,
+            confirmedContext: context || null,
+            privateHistory: history.slice(-4),
+          },
+        );
+        failureStage = "workflow_validation";
+        return {
+          ...validateWorkflow(planner.workflow(calls), input, context),
+          mode: "model" as const,
+        };
+      }
       const intent = await completion(
-        localIntentSchema,
+        localIntentSchemaForPlan(fallback.plan, input.task),
         localIntentInstruction,
         {
           task: input.task,
+          requiredClarification:
+            fallback.plan.tool === "clarify" ? fallback.plan.question : null,
           serverExtractedConstraints:
             fallback.plan.tool === "research_products"
               ? {
@@ -144,8 +170,16 @@ export async function planAgent(
           privateHistory: history.slice(-4),
         },
       );
+      failureStage = "workflow_validation";
       return {
-        ...validateWorkflow(localIntentWorkflow(intent), input, context),
+        ...validateWorkflow(
+          localIntentWorkflow(
+            intent,
+            fallback.plan.tool === "clarify" ? fallback.plan : undefined,
+          ),
+          input,
+          context,
+        ),
         mode: "model" as const,
       };
     }
@@ -158,11 +192,18 @@ export async function planAgent(
         privateHistory: history.slice(-4),
       },
     );
+    failureStage = "workflow_validation";
     return {
       ...validateWorkflow(plan, input, context),
       mode: "model" as const,
     };
-  } catch {
-    return { ...fallback, mode: "unavailable" as const };
+  } catch (error) {
+    return {
+      ...fallback,
+      mode: "unavailable" as const,
+      failureStage,
+      failureCode:
+        error instanceof LocalInferenceError ? error.code : "validation",
+    };
   }
 }
