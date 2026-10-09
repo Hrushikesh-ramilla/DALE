@@ -136,7 +136,6 @@ export function DemoToolbar({ session }: { session: Session }) {
         >
           Export test report
         </button>
-        <a href="/demo">Choose another scenario ↗</a>
       </div>
       <details>
         <summary>Steps and expected outcomes</summary>

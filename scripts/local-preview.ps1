@@ -29,7 +29,7 @@ do {
     try {
         $taskHealth = Invoke-RestMethod -Uri 'http://localhost:3000/api/health' -TimeoutSec 3
         if ($taskHealth.status -eq 'ready') {
-            Write-Output 'Preview ready: http://localhost:3000/demo (persistent data, automatic process recovery).'
+            Write-Output 'Preview ready: http://localhost:3000 (persistent data, automatic process recovery).'
             exit 0
         }
     } catch {}

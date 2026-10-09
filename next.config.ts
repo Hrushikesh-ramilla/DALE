@@ -21,6 +21,15 @@ const config: NextConfig = {
       "./deploy/local-ocr.mjs",
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/demo",
+        destination: "/",
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {

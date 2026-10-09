@@ -39,7 +39,7 @@ export function LiveLauncher({
         <Link href="/shop" aria-label="DALE home">
           <BrandWordmark />
         </Link>
-        <Link href="/demo">Guided fixture tests ↗</Link>
+        <Link href="/">Back to store ↗</Link>
       </header>
       <span className="eyebrow">LIVE INTEGRATION TEST</span>
       <h1>

@@ -124,7 +124,7 @@ export default function Storefront() {
           : "discover";
   const setTab = useCallback(
     (next: Tab) => {
-      router.push(next === "discover" ? "/shop" : `/${next}`, {
+      router.push(next === "discover" ? "/" : `/${next}`, {
         scroll: false,
       });
       window.scrollTo({ top: 0, behavior: "instant" });
@@ -134,14 +134,8 @@ export default function Storefront() {
   const [session, setSession] = useState<Session | null>(null),
     [modal, setModal] = useState<Modal>(null);
   const [restoring, setRestoring] = useState(true);
-  const [showIntro, setShowIntro] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return !sessionStorage.getItem("dale_intro_seen");
-  });
-  const [logoSettled, setLogoSettled] = useState(() => {
-    if (typeof window === "undefined") return true;
-    return Boolean(sessionStorage.getItem("dale_intro_seen"));
-  });
+  const [showIntro, setShowIntro] = useState(true);
+  const [logoSettled, setLogoSettled] = useState(false);
   const [products, setProducts] = useState<Product[]>(
     searchCatalog({ model: "Atlas 14", budget: 8000 }),
   );
@@ -421,12 +415,7 @@ export default function Storefront() {
       {showIntro && (
         <CinematicIntro
           targetSelector="[data-brand-logo]"
-          onSettled={() => {
-            setLogoSettled(true);
-            try {
-              sessionStorage.setItem("dale_intro_seen", "true");
-            } catch {}
-          }}
+          onSettled={() => setLogoSettled(true)}
           onComplete={() => setShowIntro(false)}
         />
       )}
