@@ -1,6 +1,22 @@
 name: Quality checks
 on: [push, pull_request]
 jobs:
+  local-runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: bash -n deploy/install.sh deploy/upgrade.sh
+      - run: sudo env CI=true "$(command -v node)" deploy/verify-runtime-install.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: linux-runtime-install-report
+          path: .data/reports/linux-runtime-install.json
+          retention-days: 7
   checks:
     runs-on: ubuntu-latest
     steps:

@@ -18,6 +18,11 @@ await build({
 await cp(".next/static", ".next/standalone/.next/static", { recursive: true });
 await cp("public", ".next/standalone/public", { recursive: true });
 await cp("deploy", ".next/standalone/deploy", { recursive: true });
+await mkdir(".next/standalone/scripts", { recursive: true });
+await cp(
+  "scripts/download-model-artifact.mjs",
+  ".next/standalone/scripts/download-model-artifact.mjs",
+);
 const source = parse(await readFile(".env"));
 let values;
 try {

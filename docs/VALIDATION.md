@@ -1,5 +1,9 @@
 # Validation status
 
+## Production runtime installation — 9 October 2026
+
+Added Linux-only runtime installer, private CPU systemd service, immutable service-group artifacts, app/recognizer memory override, aggregate host-capacity guard and upgrade restoration of runtime configuration/link. Thirteen focused policy/release tests pass; lint/typecheck passed after the initial implementation. Linux execution is delegated to a new disposable CI job because this Windows host has no usable WSL Bash. No selected model or new EC2 deployment is claimed. Fresh CI outcome will be recorded below. The progress ledger now explicitly separates engineering from its 15/20 (75%) release acceptance count.
+
 ## Local runtime migration — 9 October 2026
 
 Owner reports EC2 t3.medium, 2 vCPU/4 GiB. Fresh restricted SSH and HTTPS to the old 16.4.25.181 address both time out; the current address is requested. No new hosted release or actual target hardware measurement is claimed. Deployment checkpoint 20 is reopened; current acceptance is **15/20: 75% complete / 25% pending**. Historical 80% entries below describe the prior released runtime.

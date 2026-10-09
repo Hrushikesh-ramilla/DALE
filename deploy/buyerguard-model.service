@@ -1,0 +1,28 @@
+[Unit]
+Description=DALE private CPU text and vision inference
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=120
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=buyerguard
+Group=buyerguard
+WorkingDirectory=/opt/buyerguard/inference/current
+EnvironmentFile=/etc/buyerguard-model.env
+ExecStart=/opt/buyerguard/inference/current/llama-server -m ${MODEL_PATH} --mmproj ${PROJECTOR_PATH} --alias ${MODEL_ALIAS} --api-key-file /etc/buyerguard-model.key --host 127.0.0.1 --port 8081 -c 4096 -b 128 -ub 128 -np 1 -t 2 -tb 2 -ngl 0 --no-mmproj-offload
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+KillMode=control-group
+MemoryMax=2048M
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

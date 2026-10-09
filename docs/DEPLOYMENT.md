@@ -24,6 +24,14 @@ Evidence is private on the existing instance's persistent disk to keep the demo 
 
 To update, package a fresh local build, upload it, and run the installer with a new identifier. Preserve `production.env` and the database password. To roll back code, point `/opt/buyerguard/current` at a verified earlier release, then restart app and worker; check schema compatibility before reverting. Keep at least the previous release until the new release passes hosted checks.
 
+## Private CPU runtime installation
+
+The installer now invokes `deploy/prepare-runtime.mjs` before starting the app. Fixture/disabled settings download no inference artifacts. Explicit local speech installs the pinned Linux Whisper runtime/model and writes Linux paths into the private environment; the app cgroup grows from 380 to 768 MiB to include its recognizer child. Live self-hosting requires a qualified manifest selection matching AI_MODEL. The manifest remains unselected; downloading a candidate cannot enable a live release.
+
+The private model service uses authenticated 127.0.0.1:8081, one slot/two CPU threads, context 4096, batch/ubatch 128, bounded restarts and no GPU/offload. Its default cgroup limit is 2048 MiB; LOCAL_MODEL_MEMORY_MAX_MIB can preserve a measured, explicitly configured limit. The installer checks app plus model plus 240 MiB worker and 640 MiB OS/PostgreSQL/Caddy reserve against OS-visible RAM. This capacity check is not proof of adequacy; measure peak joint load and latency on EC2 before acceptance. Runtime artifacts are pinned/checksummed, root-owned, and readable through the service group. Cloud keys are not sent to the local service.
+
+Upgrade snapshots now include model service/key/environment, app/model resource overrides and the previous runtime link; failure restores them alongside application configuration. Artifacts are retained. The model must return the selected alias on an authenticated models request before app installation proceeds. That startup check establishes service identity, not inference quality. Fresh Linux CI downloads real pinned binaries, recognizes owned synthesized audio as the service account, validates model unit syntax and speech reinstallation without model generation. Target EC2/model inference remains separately required.
+
 ## Local Docker alternative
 
 Copy `.env.example` to `.env`; set a URL-safe `POSTGRES_PASSWORD`, a random `SESSION_SECRET` of at least 32 characters, and a private `OPERATOR_ACCESS_CODE`. Run `docker compose up --build`. The app binds to localhost:3000; PostgreSQL and evidence use named volumes. Modes remain configurable through `.env`.

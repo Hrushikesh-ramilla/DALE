@@ -2,6 +2,13 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-09 — Linux runtime installation and separate completion measures
+
+- Added production pinned CPU model/speech preparation, authenticated loopback systemd model service, restart/resource limits, service-group file permissions and total-memory policy. The installer prepares runtime before app startup; disabled fixture releases download no models. Local speech increases the app/child-process cgroup budget to 768 MiB.
+- Extended upgrade rollback to preserve runtime service/key/configuration, memory overrides and the previous model link. Release packages include the shared checksum downloader and preserve an explicitly configured model memory limit.
+- Added five runtime policy tests, including literal-secret parsing without shell evaluation, aggregate capacity, unqualified selection, provider-free fixtures and artifact traversal/integrity rejection. Thirteen focused runtime/configuration tests and lint/typecheck pass. A separate Linux CI job now exercises actual pinned speech installation/inference/reinstallation as the service account, real Linux model executable loading and model-unit syntax. Its result is required before claiming these Linux checks passed.
+- Rewrote progress to distinguish engineering from release acceptance. Existing 75% is the 15/20 release-gate count, including human/physical exercises. It is not a code-completion estimate. A qualified self-hosted model is still genuine engineering work; no current model is selected and no new EC2 installation is claimed.
+
 ## 2026-10-09 — Runtime selection evidence and release preflight
 
 - Recorded final adc0aeb verification: 277 unit/contract/database checks and all 41 browser journeys in both CI jobs; seven rebuilt targeted local browser journeys and ten actual HTTP-to-Whisper checks pass. Corrected the speech verifier's scenario kind to the typed fresh scenario and reran it successfully.
