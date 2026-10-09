@@ -65,7 +65,7 @@ export function DemoLauncher() {
     setLogoSettled(false);
     const timer = setTimeout(() => {
       setPageVisible(true);
-    }, 2550);
+    }, 2350);
     return () => clearTimeout(timer);
   }, [introKey]);
 
@@ -105,9 +105,7 @@ export function DemoLauncher() {
         className="app-shell demo-launcher"
         style={{
           opacity: pageVisible ? 1 : 0,
-          transform: pageVisible ? "translateY(0)" : "translateY(16px)",
-          transition:
-            "opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1), transform 0.95s cubic-bezier(0.16, 1, 0.3, 1)",
+          transition: "opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1)",
         }}
       >
         <header>
@@ -116,8 +114,10 @@ export function DemoLauncher() {
             aria-label="DALE home"
             data-brand-logo="true"
             style={{
+              display: "inline-block",
+              lineHeight: 0,
               opacity: logoSettled ? 1 : 0,
-              transition: "opacity 0.25s ease",
+              transition: "opacity 0.2s ease",
             }}
           >
             <BrandWordmark />
