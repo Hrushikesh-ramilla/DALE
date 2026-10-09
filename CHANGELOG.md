@@ -2,6 +2,15 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-09 — Specialized local OCR and compact semantic goals
+
+- The complete frozen v2 run on ea08dd0 failed qualification: 89/180 passed (semantic 32/60, readable transcription 6/48, blurred abstention 12/12, raw suspicious warnings 13/18, benign warnings 11/18, grounded comparisons 15/24). The old interface remains unqualified. Its immutable corpus and full sanitized report are retained; no favorable outputs were selected.
+- Added a separate development profile selecting compact read-only semantic goals, with server-owned purchase facts and customer-selected remedies retained. Missing arguments remain proposals requiring normal confirmation. Its five development checks pass; this is not broad accuracy acceptance.
+- Added pinned local Tesseract LSTM OCR with bundled English weights, a verified trained-data digest, bounded child process, private temporary images and source-preserving PNG/JPEG/WebP decoding. It copies model fields rather than asking a generative model to guess labels. Blur/unknown/multiple-device proposals still require manual confirmation. Seven actual/parser OCR checks pass.
+- Added independent boolean advisory warning categories for the new private profile. Comparison eligibility/ranking stays deterministic; constrained inference chooses supported explanation codes and the required actual product citation. This is not independent AI product ranking.
+- Full lint/typecheck and 328 tests passed before the last advisory/corpus additions; all 23 targeted goal/OCR/holdout checks pass afterward. New v3 is frozen before model execution with unchanged thresholds, disjoint case/image identities and explicit component scoring. It is not yet a passing acceptance report.
+- Added a packaged HTTP OCR verifier and Linux CI execution. Preserved staged artifacts across inference restarts and retained pre-restart memory peaks in the disposable Linux gate. Packaged/restart checks are pending execution; the previous extended gate passed all tasks/image-source/auth checks but failed inference after restart.
+
 ## 2026-10-09 — Native local tool selection and bounded model qualification
 
 - Source c63a587 passes all three CI jobs and all 41 browser journeys in both quality/container jobs. A separate Linux gate passes five actual model tasks under a hard 2 GiB/no-swap/two-CPU limit, with measured cgroup peak exactly 2 GiB. This is a capped runtime result, not spare-memory or EC2 joint-load proof.

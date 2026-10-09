@@ -19,5 +19,6 @@ jobs:
           path: |
             .data/reports/linux-model-budget.json
             .data/reports/local-model-selection.json
+            .data/reports/local-goal-selection.json
             .data/reports/local-evidence.json
           retention-days: 7

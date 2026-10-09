@@ -192,7 +192,9 @@ export async function selfHostedCompletion<T>(
         },
       },
       chat_template_kwargs: { enable_thinking: false },
-      ...(process.env.AI_SELF_HOSTED_PROFILE === "lfm25vl3"
+      ...(["lfm25vl3", "lfm25vl3-goals"].includes(
+        process.env.AI_SELF_HOSTED_PROFILE || "",
+      )
         ? { temperature: 0.2, top_k: 50, repeat_penalty: 1.0 }
         : process.env.AI_SELF_HOSTED_PROFILE === "lfm25"
           ? { temperature: 0.1, min_p: 0.15, repeat_penalty: 1.05 }

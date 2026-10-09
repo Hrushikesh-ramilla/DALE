@@ -8,11 +8,11 @@ DALE is a customer-first shopping agent: sourced product comparison and optional
 
 | Area | Current status |
 | --- | --- |
-| Local product | Ready at http://localhost:3000/demo, compiled application source c63a587. Persistent data remains in `.data/local-final`. |
+| Local product | Ready at http://localhost:3000/demo, currently compiled application source ea08dd0; the new local OCR/goal milestone needs a rebuild. Persistent data remains in `.data/local-final`. |
 | Local process | Hidden supervisor independent of the launching terminal; bounded restart after unexpected child exit, retained logs and start/status/stop commands. No Windows boot service was installed. |
 | Public product | The old address 16.4.25.181 times out on SSH and HTTPS after the owner resized to t3.medium. Current instance address/access is pending; no current public health or new deployment is claimed. Last observed public source was 69ac213. |
 | Guided demo | Private fixture payments, shipping and analysis; no model calls. Scenario roles, exports and reset remain available. |
-| Live AI | Entirely self-hosted is confirmed. Seven CPU candidates tested. LFM2.5-VL-3B now passes all five actual development checks with native tool selection and refined OCR. Production selection remains null pending broader evaluation and Linux/target resource qualification. No cloud generation or further AI key is required. See SELF_HOSTED_AI.md. |
+| Live AI | Entirely self-hosted is confirmed. Seven CPU candidates tested. The complete native LFM3 v2 run failed (89/180). A revised compact-goal/Tesseract OCR development profile passes five small checks; its new disjoint v3 is frozen but not yet qualified. Production selection remains null. No cloud generation or further AI key is required. See SELF_HOSTED_AI.md. |
 | PayPal | Existing credentials authenticate. Actual buyer checkout rejected the merchant's USD currency. Genuine capture/refund and signed receipts remain unverified. |
 | Deployment access | Owner chose restricted SSH and reports t3.medium, 2 vCPU/4 GiB. The new address has been requested. SSM tooling remains optional, with no authorized AWS profile configured. |
 | Release acceptance | 15/20 checkpoints closed: **75% passed / 25% pending**. Deployment checkpoint 20 is reopened for the new runtime/resized host. This is an acceptance-gate count, not engineering completion. The progress ledger now lists engineering and acceptance separately. |

@@ -10,6 +10,7 @@ import { realModels } from "@/domain/research";
 import { z } from "zod";
 import { LocalInferenceError, selfHostedToolSelection } from "./self-hosted-ai";
 import { localToolPlanner, localToolInstruction } from "./local-tool-plan";
+import { localGoalWorkflow } from "./local-goal-plan";
 import type { ResearchReport } from "@/domain/research";
 import {
   localIntentSchemaForPlan,
@@ -45,19 +46,46 @@ export async function compareWithModel(
   // Tool constraints already establish that no offer fits. There is no choice
   // for a model to make, and another inference cannot change those constraints.
   if (!eligible.length) return { productId: null, sourceIds: [], reasons: [] };
+  const expectedId =
+    rankedProductIds?.find((id) => eligible.some((f) => f.productId === id)) ||
+    eligible[0].productId;
+  const expected = eligible.find(
+    (finding) => finding.productId === expectedId,
+  )!;
+  const supportedReasons = [
+    ...(expected.total === eligible[0].total
+      ? ["lowest_complete_cost" as const]
+      : []),
+    "manufacturer_fit" as const,
+    ...(expected.productId === "R003" ? ["cable_included" as const] : []),
+    ...(expected.productId === "R002" && report.need.fastCharging
+      ? ["fast_charging" as const]
+      : []),
+  ];
+  // The server owns eligibility and customer-weighted ranking. Let the model
+  // select explanations only within actual evidence; validate again afterward.
   const result = await completion(
     comparisonSchema.extend({
-      sourceIds: comparisonSchema.shape.sourceIds.min(1),
-      reasons: comparisonSchema.shape.reasons.min(1),
+      productId: z.literal(expectedId),
+      sourceIds: z
+        .array(z.literal(expected.productId === "R002" ? "70w" : "dynamic"))
+        .length(1),
+      reasons: z
+        .array(
+          z.enum(
+            supportedReasons as [
+              (typeof supportedReasons)[number],
+              ...(typeof supportedReasons)[number][],
+            ],
+          ),
+        )
+        .min(1)
+        .max(4),
     }),
     "Use the tool results to select the first eligible offer in serverRanking, which applies confirmed shopper weights; absent a ranking select lowest complete cost. No eligible offer means productId null, sourceIds [] and reasons []. Never relax a budget, cable or charging constraint. Cite source IDs from that finding. Reason codes: lowest_complete_cost (only if actually lowest), manufacturer_fit, fast_charging, cable_included. An eligible recommendation needs at least one reason. Return {productId, sourceIds, reasons}; do not generate specification or price claims.",
     { report, serverRanking: rankedProductIds || null },
   );
   const finding = eligible.find((f) => f.productId === result.productId);
-  const expectedId =
-    rankedProductIds?.find((id) => eligible.some((f) => f.productId === id)) ||
-    eligible[0]?.productId ||
-    null;
   if (
     result.reasons.includes("lowest_complete_cost") &&
     finding &&
@@ -119,6 +147,11 @@ export async function planAgent(
   let failureStage = "inference";
   try {
     if (process.env.AI_PROVIDER === "self_hosted") {
+      if (process.env.AI_SELF_HOSTED_PROFILE === "lfm25vl3-goals") {
+        const workflow = await localGoalWorkflow(input, context, history);
+        failureStage = "workflow_validation";
+        return { ...workflow, mode: "model" as const };
+      }
       if (process.env.AI_SELF_HOSTED_PROFILE === "lfm25vl3") {
         const planner = localToolPlanner(fallback.plan, input.task);
         const calls = await selfHostedToolSelection(

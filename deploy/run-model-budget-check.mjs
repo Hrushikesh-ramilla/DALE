@@ -1,6 +1,6 @@
 // Disposable Linux CI only. Copying artifacts inside the service gives their
 // page-cache memory to its cgroup, rather than borrowing the downloader's cache.
-import { readFile, cp, readdir } from "node:fs/promises";
+import { readFile, writeFile, cp, readdir } from "node:fs/promises";
 import { resolve, basename } from "node:path";
 import { spawn } from "node:child_process";
 if (process.env.CI !== "true" || process.platform !== "linux")
@@ -19,16 +19,33 @@ const manifest = JSON.parse(
 const candidate = manifest.candidates[prepared.id];
 if (!candidate || prepared.runtime !== manifest.runtime.version)
   throw new Error("Pinned candidate preparation is required.");
-await cp(
-  resolve(".data/self-hosted", `runtime-${manifest.runtime.version}`),
-  resolve(scratch, "runtime"),
-  { recursive: true },
-);
-for (const file of candidate.files)
+const markerPath = resolve(scratch, "prepared.json");
+let staged = false;
+try {
+  const marker = JSON.parse(await readFile(markerPath, "utf8"));
+  if (marker.id !== prepared.id || marker.runtime !== manifest.runtime.version)
+    throw new Error("Isolated candidate identity changed.");
+  staged = true;
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
+if (!staged) {
   await cp(
-    resolve(".data/self-hosted", file.local),
-    resolve(scratch, file.local),
+    resolve(".data/self-hosted", `runtime-${manifest.runtime.version}`),
+    resolve(scratch, "runtime"),
+    { recursive: true },
   );
+  for (const file of candidate.files)
+    await cp(
+      resolve(".data/self-hosted", file.local),
+      resolve(scratch, file.local),
+    );
+  await writeFile(
+    markerPath,
+    JSON.stringify({ id: prepared.id, runtime: manifest.runtime.version }),
+    { flag: "wx", mode: 0o600 },
+  );
+}
 const executable = (
   await readdir(resolve(scratch, "runtime"), { recursive: true })
 ).find((path) => basename(path) === "llama-server");
@@ -70,8 +87,8 @@ const child = spawn(
 child.on("error", () => {
   process.exitCode = 1;
 });
-child.on("exit", (code) => {
-  process.exitCode = code || 0;
+child.on("exit", (code, signal) => {
+  process.exitCode = code ?? (["SIGTERM", "SIGINT"].includes(signal) ? 0 : 1);
 });
 for (const signal of ["SIGTERM", "SIGINT"])
   process.on(signal, () => child.kill(signal));

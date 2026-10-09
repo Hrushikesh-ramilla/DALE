@@ -22,6 +22,7 @@ export function releaseProviderConfig(source, previous = {}, overrides = {}) {
     AI_SELF_HOSTED_PROFILE: setting("AI_SELF_HOSTED_PROFILE", ""),
     AI_SELF_HOSTED_API_KEY: setting("AI_SELF_HOSTED_API_KEY", ""),
     LOCAL_MODEL_MEMORY_MAX_MIB: setting("LOCAL_MODEL_MEMORY_MAX_MIB", "2048"),
+    LOCAL_OCR_MODE: setting("LOCAL_OCR_MODE", "disabled"),
     AI_MODE: aiMode,
     AGENT_MODEL_ENABLED:
       aiMode === "live" && setting("AGENT_MODEL_ENABLED", "false") === "true"

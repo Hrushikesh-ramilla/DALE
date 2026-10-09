@@ -2,6 +2,20 @@
 
 Requested 8 October 2026. Replace Gemini generation with locally served open weights, without provider quotas or billing. This is a new runtime migration, not a credential substitution. Downloading a model does not establish product acceptance.
 
+9 October qualification result: the complete native v2 protocol failed, **89/180**. The detailed source-bound report is in [evaluations/self-hosted-v2-ea08dd0.json](evaluations/self-hosted-v2-ea08dd0.json). The manifest remains unselected. A compact goal profile (`lfm25vl3-goals`) and specialized label reader are implemented as development candidates; five revised development checks pass, but those are not generalization proof. A new disjoint v3 is frozen before candidate calls. Do not enable the candidate in production until its quality and resource gates pass.
+
+The proposed label component uses [Tesseract.js](https://github.com/naptha/tesseract.js), [local installation](https://github.com/naptha/tesseract.js/blob/master/docs/local-installation.md) and the [Tesseract LSTM engine](https://tesseract-ocr.github.io/tessdoc/). Installed versions are Tesseract.js/core 7.0.0 and bundled English data 1.0.0; the best-integer trained-data SHA is `45b4cb346724ac1774f1c36f42f182b887bcdb28ebe63e6fff90ac41f3fcff91`. Recognition is local, without network/model API keys. Uploaded originals are preserved; a transient orientation/format-normalized copy is passed to a bounded child process and removed. OCR confidence is a decoder score, not physical authenticity. Explicit unknown text remains unknown; unreadable/conflicting labels never prove compatibility.
+
+Development commands in PowerShell (passing flags directly avoids npm forwarding differences):
+
+```powershell
+npx tsx scripts/verify-local-model.ts --prepared --goal-interface
+npx tsx scripts/evaluate-model-holdout.ts --prepared --goals
+npx tsx scripts/verify-local-ocr-http.ts
+```
+
+The held-out runner requires a clean committed tree and preserves resumable source/configuration/corpus identity. Add `--resume` only for the same identity. Evaluation reports raw semantic goal choices and raw warning booleans, with deterministic ranking/authority validation separately described; it does not claim AI independently discovers prices or authorizes purchases.
+
 ## Research and actual constraints
 
 The owner reports resizing the existing EC2 instance from t3.micro (1 GiB) to t3.medium (2 vCPU, 4 GiB). Its actual OS-visible memory and joint workload remain unverified until the current address/access is supplied. Its app and worker have memory ceilings of 380 MB and 240 MB, plus PostgreSQL, Caddy and the OS. The available Windows laptop was measured: Ryzen 7 5800HS, 8 cores/16 threads, 16.54 GB physical RAM, RTX 3050 Laptop 4 GB VRAM. Selection probes deliberately use CPU only and two threads. Laptop latency/RAM is not an EC2 benchmark.

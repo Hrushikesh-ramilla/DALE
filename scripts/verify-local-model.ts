@@ -18,6 +18,10 @@ if (process.argv.includes("--prepared")) {
   ).trim();
 }
 process.env.AI_MODE = "live";
+if (process.argv.includes("--goal-interface")) {
+  process.env.AI_SELF_HOSTED_PROFILE = "lfm25vl3-goals";
+  process.env.LOCAL_OCR_MODE = "tesseract";
+}
 process.env.AGENT_MODEL_ENABLED = "true";
 const input = { model: "Atlas 14", budget: 8000 };
 function requireModelResult(result: Awaited<ReturnType<typeof planAgent>>) {
@@ -27,7 +31,9 @@ function requireModelResult(result: Awaited<ReturnType<typeof planAgent>>) {
     );
 }
 const report = await recordLiveChecks(
-  ".data/reports/local-model-selection.json",
+  process.argv.includes("--goal-interface")
+    ? ".data/reports/local-goal-selection.json"
+    : ".data/reports/local-model-selection.json",
   [
     {
       scenario:
@@ -135,6 +141,8 @@ const report = await recordLiveChecks(
   {
     provider: "self_hosted",
     model: process.env.AI_MODEL || "not configured",
+    profile: process.env.AI_SELF_HOSTED_PROFILE || "structured",
+    ocrMode: process.env.LOCAL_OCR_MODE || "disabled",
     purpose:
       "Bounded development selection; not the held-out 180-record evaluation or EC2 acceptance",
   },

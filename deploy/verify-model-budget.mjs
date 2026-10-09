@@ -23,10 +23,20 @@ const checkedAt = new Date().toISOString();
 let complete = false;
 let peakBytes = null;
 let testReport = null;
+let goalReport = null;
 let failure = "";
 let unitStarted = false;
 let restartVerified = false;
 let unauthenticatedRejected = false;
+let restartState = "not_run";
+function measurePeak() {
+  const value = execFileSync(
+    "systemctl",
+    ["show", unit, "--property=MemoryPeak", "--value"],
+    { encoding: "utf8" },
+  ).trim();
+  if (/^\d+$/.test(value)) peakBytes = Math.max(peakBytes || 0, Number(value));
+}
 try {
   execFileSync(
     "systemd-run",
@@ -87,6 +97,17 @@ try {
       { timeout: 720000, maxBuffer: 524288 },
     );
     console.log(result.stdout);
+    const goal = await promisify(execFile)(
+      "npx",
+      [
+        "tsx",
+        "scripts/verify-local-model.ts",
+        "--prepared",
+        "--goal-interface",
+      ],
+      { timeout: 300000, maxBuffer: 524288 },
+    );
+    console.log(goal.stdout);
     const evidence = await promisify(execFile)(
       "npx",
       ["tsx", "scripts/verify-local-evidence.ts", "--prepared"],
@@ -100,10 +121,15 @@ try {
     await readFile(".data/reports/local-model-selection.json", "utf8"),
   );
   complete = testReport.complete;
+  goalReport = JSON.parse(
+    await readFile(".data/reports/local-goal-selection.json", "utf8"),
+  );
+  complete &&= goalReport.complete;
   const evidenceReport = JSON.parse(
     await readFile(".data/reports/local-evidence.json", "utf8"),
   );
   complete &&= evidenceReport.complete;
+  measurePeak();
   // Observe an actual restart with the same restricted endpoint and private key.
   execFileSync("systemctl", ["restart", unit]);
   for (let attempt = 0; attempt < 120; attempt++) {
@@ -162,17 +188,17 @@ try {
   }
   complete &&= restartVerified;
   if (!restartVerified) failure ||= "Actual inference after restart failed.";
+  restartState = execFileSync(
+    "systemctl",
+    ["show", unit, "--property=ActiveState", "--value"],
+    { encoding: "utf8" },
+  ).trim();
 } catch {
   complete = false;
   failure ||= "Candidate budget/startup verification did not complete.";
 } finally {
   if (unitStarted) {
-    const value = execFileSync(
-      "systemctl",
-      ["show", unit, "--property=MemoryPeak", "--value"],
-      { encoding: "utf8" },
-    ).trim();
-    if (/^\d+$/.test(value)) peakBytes = Number(value);
+    measurePeak();
     if (peakBytes === null || peakBytes > 2147483648) {
       complete = false;
       failure ||= "The required measured memory cap was not established.";
@@ -193,11 +219,13 @@ try {
         cpuQuotaPercent: 200,
         measuredCgroupPeakBytes: peakBytes,
         restartVerified,
+        restartState,
         unauthenticatedRejected,
         testReport,
+        goalReport,
         failure,
         limitation:
-          "Actual Linux candidate inference under a hard 2 GiB/no-swap/two-CPU cap. Weights are copied inside the cgroup to charge their page cache. This is not EC2 joint app/worker/database/voice, a held-out quality evaluation, or production service-account acceptance.",
+          "Actual Linux candidate inference under a hard 2 GiB/no-swap/two-CPU cap. Weights are copied inside the cgroup to charge their page cache. The goal profile's two OCR child checks run outside that model cgroup, not inside an app memory cap. This is not EC2 joint app/worker/database/voice, a held-out quality evaluation, or production service-account acceptance.",
       },
       null,
       2,

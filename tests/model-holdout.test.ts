@@ -9,6 +9,50 @@ import {
   holdoutCaseSchema,
 } from "../scripts/model-holdout-scoring";
 
+it("freezes the goal/OCR v3 protocol with new case and image identities", async () => {
+  const manifest = JSON.parse(
+    await readFile("fixtures/evaluation/v3/manifest.json", "utf8"),
+  );
+  const bytes = await readFile("fixtures/evaluation/v3/cases.json");
+  expect(createHash("sha256").update(bytes).digest("hex")).toBe(
+    manifest.files[0].sha256,
+  );
+  const cases = JSON.parse(bytes.toString()).map((item: unknown) =>
+    holdoutCaseSchema.parse(item),
+  ) as HoldoutCase[];
+  expect(cases).toHaveLength(60);
+  expect(manifest.thresholds).toEqual(
+    JSON.parse(await readFile("fixtures/evaluation/v2/manifest.json", "utf8"))
+      .thresholds,
+  );
+  const previous = JSON.parse(
+    await readFile("fixtures/evaluation/v2/cases.json", "utf8"),
+  ) as HoldoutCase[];
+  const previousImages = new Set(
+    previous
+      .filter((item) => item.kind === "vision")
+      .map((item) => item.sha256),
+  );
+  for (const item of cases) {
+    expect(
+      previous.some(
+        (old) =>
+          old.id === item.id ||
+          (old.kind === "plan" &&
+            item.kind === "plan" &&
+            old.task === item.task),
+      ),
+    ).toBe(false);
+    if (item.kind === "vision") {
+      const hash = createHash("sha256")
+        .update(await readFile(`fixtures/evaluation/v3/${item.file}`))
+        .digest("hex");
+      expect(hash).toBe(item.sha256);
+      expect(previousImages.has(hash)).toBe(false);
+    }
+  }
+});
+
 it("keeps all sixty manual cases and twenty image hashes intact and disjoint from v1", async () => {
   const directory = "fixtures/evaluation/v2";
   const manifest = JSON.parse(

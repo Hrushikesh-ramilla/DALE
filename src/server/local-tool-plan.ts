@@ -5,6 +5,7 @@ import { localIntentSchema, localIntentWorkflow } from "./local-agent-plan";
 
 export function localToolPlanner(guard: AgentPlan, task: string) {
   const known = guard.tool === "research_products" ? guard : undefined;
+  const support = guard.tool === "prepare_support" ? guard : undefined;
   const researchShape: Record<string, z.ZodType> = {};
   // A call cannot even accept an argument for an exact server-owned fact.
   // Missing facts can be proposed, and still require normal workflow validation.
@@ -26,10 +27,16 @@ export function localToolPlanner(guard: AgentPlan, task: string) {
     inspect_claims: empty,
     prepare_support: z
       .object({
-        reason: z
-          .enum(["damaged", "wrong_item", "not_delivered", "canceled"])
-          .optional(),
-        request: z.enum(["refund", "replacement"]).optional(),
+        ...(!support?.reason
+          ? {
+              reason: z
+                .enum(["damaged", "wrong_item", "not_delivered", "canceled"])
+                .optional(),
+            }
+          : {}),
+        ...(!support?.request
+          ? { request: z.enum(["refund", "replacement"]).optional() }
+          : {}),
       })
       .strict(),
     scan_message: empty,
@@ -54,6 +61,11 @@ export function localToolPlanner(guard: AgentPlan, task: string) {
       "Refuse requests for money movement, code execution or unsupported actions.",
   };
   return {
+    argumentSchema(name: string) {
+      const schema = schemas[name];
+      if (!schema) throw new Error("Unknown local tool.");
+      return schema;
+    },
     definitions: Object.entries(schemas).map(([name, schema]) => ({
       name,
       description: descriptions[name],
@@ -86,6 +98,13 @@ export function localToolPlanner(guard: AgentPlan, task: string) {
             guard.tool === "clarify" ? guard : undefined,
           ).steps[0];
         }
+        if (call.name === "prepare_support")
+          return {
+            tool: "prepare_support",
+            ...args,
+            ...(support?.reason ? { reason: support.reason } : {}),
+            ...(support?.request ? { request: support.request } : {}),
+          } as WorkflowStep;
         return { tool: call.name, ...args } as WorkflowStep;
       });
       return { steps };

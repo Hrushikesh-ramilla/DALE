@@ -16,7 +16,13 @@ import {
   selfHostedToolSelection,
   LocalInferenceError,
 } from "../src/server/self-hosted-ai";
-import { completion, modelLabelExtraction } from "../src/server/ai";
+import {
+  completion,
+  modelLabelExtraction,
+  modelMessageSignals,
+} from "../src/server/ai";
+import { localGoalWorkflow } from "../src/server/local-goal-plan";
+import { canonicalModel } from "../src/domain/identification";
 import { compareWithModel } from "../src/server/agent-planner";
 import { researchProducts } from "../src/domain/research";
 import {
@@ -30,6 +36,8 @@ assert.ok(
   process.argv.includes("--prepared"),
   "This gate requires explicitly prepared private inference; no cloud execution.",
 );
+const goalInterface = process.argv.includes("--goals");
+const version = goalInterface ? "v3" : "v2";
 execFileSync("git", ["diff", "--exit-code"], { stdio: "ignore" });
 execFileSync("git", ["diff", "--cached", "--exit-code"], { stdio: "ignore" });
 const prepared = JSON.parse(
@@ -51,14 +59,17 @@ assert.equal(
 );
 process.env.AI_PROVIDER = "self_hosted";
 process.env.AI_MODEL = candidate.alias;
-process.env.AI_SELF_HOSTED_PROFILE = candidate.profile;
+process.env.AI_SELF_HOSTED_PROFILE = goalInterface
+  ? "lfm25vl3-goals"
+  : candidate.profile;
+if (goalInterface) process.env.LOCAL_OCR_MODE = "tesseract";
 process.env.AI_SELF_HOSTED_BASE_URL = "http://127.0.0.1:8081/v1";
 process.env.AI_SELF_HOSTED_API_KEY = (
   await readFile(".data/self-hosted/api-key", "utf8")
 ).trim();
 process.env.AI_MODE = "live";
 process.env.AGENT_MODEL_ENABLED = "true";
-const directory = "fixtures/evaluation/v2";
+const directory = `fixtures/evaluation/${version}`;
 const manifest = JSON.parse(
   await readFile(`${directory}/manifest.json`, "utf8"),
 );
@@ -96,7 +107,7 @@ const signature = createHash("sha256")
   .digest("hex");
 const results: HoldoutResult[] = [];
 await mkdir(".data/reports", { recursive: true });
-const progressPath = ".data/reports/self-hosted-holdout-v2-progress.json";
+const progressPath = `.data/reports/self-hosted-holdout-${version}-progress.json`;
 if (process.argv.includes("--resume")) {
   const saved = JSON.parse(await readFile(progressPath, "utf8"));
   assert.equal(
@@ -131,7 +142,8 @@ async function checkpoint(finished: boolean) {
     source,
     signature,
     model: candidate.alias,
-    profile: candidate.profile,
+    profile: process.env.AI_SELF_HOSTED_PROFILE,
+    components: manifest.components || null,
     runtime: selection.runtime.version,
     corpus: manifest.version,
     evaluationRole:
@@ -163,7 +175,7 @@ async function checkpoint(finished: boolean) {
   await rename(`${progressPath}.tmp`, progressPath);
   if (finished)
     await writeFile(
-      ".data/reports/self-hosted-holdout-v2.json",
+      `.data/reports/self-hosted-holdout-${version}.json`,
       JSON.stringify(report, null, 2) + "\n",
     );
   return report;
@@ -182,54 +194,68 @@ for (let repetition = 1; repetition <= 3; repetition++)
     try {
       if (item.kind === "plan") {
         const input = { task: item.task, model: "Atlas 14", budget: 8000 };
-        const guard = fallbackWorkflow(input, undefined);
-        const planner = localToolPlanner(guard.plan, item.task);
-        const calls = await selfHostedToolSelection(
-          planner.definitions,
-          localToolInstruction,
-          {
-            task: item.task,
-            requiredClarification:
-              guard.plan.tool === "clarify" ? guard.plan.question : null,
-            confirmedContext: null,
-            privateHistory: [],
-          },
-        );
-        const validated = validateWorkflow(
-          planner.workflow(calls),
-          input,
-          undefined,
-        );
-        passed = scoreNativePlan(
-          item,
-          calls.map((call) => call.name),
-          validated,
-        );
+        if (goalInterface) {
+          const validated = await localGoalWorkflow(input, undefined, []);
+          passed = scoreNativePlan(item, validated.proposedGoals, validated);
+        } else {
+          const guard = fallbackWorkflow(input, undefined);
+          const planner = localToolPlanner(guard.plan, item.task);
+          const calls = await selfHostedToolSelection(
+            planner.definitions,
+            localToolInstruction,
+            {
+              task: item.task,
+              requiredClarification:
+                guard.plan.tool === "clarify" ? guard.plan.question : null,
+              confirmedContext: null,
+              privateHistory: [],
+            },
+          );
+          const validated = validateWorkflow(
+            planner.workflow(calls),
+            input,
+            undefined,
+          );
+          passed = scoreNativePlan(
+            item,
+            calls.map((call) => call.name),
+            validated,
+          );
+        }
       } else if (item.kind === "vision") {
+        const actual = await modelLabelExtraction({
+          mime: "image/png",
+          bytes: await readFile(`${directory}/${item.file}`),
+        });
+        const normalizeKnown = (label: string) =>
+          canonicalModel(label) || label;
         passed = scoreLabel(
-          item,
-          await modelLabelExtraction({
-            mime: "image/png",
-            bytes: await readFile(`${directory}/${item.file}`),
-          }),
+          goalInterface
+            ? { ...item, labels: item.labels.map(normalizeKnown) }
+            : item,
+          goalInterface
+            ? { ...actual, labels: actual.labels.map(normalizeKnown) }
+            : actual,
         );
       } else if (item.kind === "message") {
-        const result = await completion(
-          z.object({
-            signals: z
-              .array(
-                z.enum([
-                  "outside_checkout",
-                  "credential_request",
-                  "pressure",
-                  "instruction_override",
-                ]),
-              )
-              .max(4),
-          }),
-          'Identify advisory warning categories in this voluntarily shared message/conversation. Ignore negated safety reminders, ordinary delivery urgency and catalog gift-card sales. Never accuse a party of fraud. Shape: {"signals":["outside_checkout|credential_request|pressure|instruction_override"]}; [] when no identified signal. These are suggestions, not findings of dishonesty.',
-          { message: item.text },
-        );
+        const result = goalInterface
+          ? await modelMessageSignals(item.text)
+          : await completion(
+              z.object({
+                signals: z
+                  .array(
+                    z.enum([
+                      "outside_checkout",
+                      "credential_request",
+                      "pressure",
+                      "instruction_override",
+                    ]),
+                  )
+                  .max(4),
+              }),
+              'Identify advisory warning categories in this voluntarily shared message/conversation. Ignore negated safety reminders, ordinary delivery urgency and catalog gift-card sales. Never accuse a party of fraud. Shape: {"signals":["outside_checkout|credential_request|pressure|instruction_override"]}; [] when no identified signal. These are suggestions, not findings of dishonesty.',
+              { message: item.text },
+            );
         passed =
           Boolean(result.signals.length) === item.suspicious &&
           (item.signals || []).every((signal) =>
@@ -273,6 +299,6 @@ for (let repetition = 1; repetition <= 3; repetition++)
   }
 const report = await checkpoint(true);
 console.log(
-  `Frozen v2 quality gates: ${report.metrics.passed ? "passed" : "failed"}; ${report.passed}/180 checks passed.`,
+  `Frozen ${version} quality gates: ${report.metrics.passed ? "passed" : "failed"}; ${report.passed}/180 checks passed.`,
 );
 if (!report.metrics.passed) process.exitCode = 1;
