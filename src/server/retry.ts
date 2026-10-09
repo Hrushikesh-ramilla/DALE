@@ -37,7 +37,7 @@ export async function fetchAnalysisWithRetry(
         : Math.max(0, Date.parse(header) - Date.now())
       : 0;
     // Long Retry-After values are surfaced instead of retrying earlier than the provider requests.
-    if (retryAfter > 10000) return response;
+    if (retryAfter > 35000) return response;
     await response.body?.cancel();
     await sleep(
       Math.max(
