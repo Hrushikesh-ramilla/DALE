@@ -2,6 +2,31 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Glass surfaces and genuine product geometry
+
+- Implemented a muted teal glass material across navigation, buttons, catalog, dialogs and service surfaces: beveled highlights, translucent edges, contact depth and an explicit press state. The closing footer and original DALE wordmark now sit on a broad desaturated teal composition. Reading surfaces retain opaque cores and keyboard focus remains visible.
+- Added original volumetric headphones, SSD, dock, mouse and charger geometry with React Three Fiber/Three.js. The featured viewer lazy-loads, renders on demand, caps pixel density, suspends offscreen/hidden-tab work and exposes rotation/reset controls. Context loss and unavailable rendering preserve illustration/product-detail access. GSAP coordinates the opening typography without sharing animated properties with Motion.
+- Six initial browser checks passed for routes, discovery, approval guards, 3D rotation/context loss and four-width glass/footer layouts. The seventh exposed a reduced-motion hydration mismatch; fixed it and reran the affected four-width dialog/hydration journey successfully. Initial lint/typecheck passed. Full production regression follows the remaining experience milestones; software-rendered browser checks are not a physical-phone performance claim.
+
+## 2026-10-07 — Portfolio-inspired front-end direction
+
+- Reviewed the owner's portfolio and final-perfect-state source at bbacc0681dabcb3c4c233f43c7bc76e5974b8f7a. Defined DALE's atmospheric product opening, prominent shopping brief, spacious catalog, complete service surfaces and desaturated teal closing composition in docs/FRONTEND_DIRECTION.md.
+- Reordered EXPERIENCE_PLAN at the owner's request: editorial front-end, genuine 3D and complete application presentation first; engineer demo and voice follow. Kept approval, customer policy, evidence and provider acceptance requirements.
+- Created a separate interactive visual study for composition and product selection. Browser review at 1024px and 320px checked featured product/caption changes, collection filtering, detail expansion, brief feedback and customer-promise disclosure. The 320px frame had equal document/client widths; no console errors were observed. The study uses original SVG illustrations; it does not claim genuine 3D or working application/provider integration. Documentation and concept only; application source and deployment are unchanged.
+
+## 2026-10-07 — Teal, 3D, engineer demo and voice plan
+
+- Added docs/EXPERIENCE_PLAN.md after reviewing the current session/scenario implementation and official Gemini Live pricing/token documentation. Planned a desaturated teal closing section, coordinated motion, genuine 3D product stage, one-click isolated engineer scenarios and voice intents through existing approval guards.
+- Defined fixture/browser/native-transport checks and separate live microphone, physical-device performance and hosted gates. Google currently lists a free Live tier; project quota remains unverified and billing/spend remain disabled by policy.
+- Documentation only; no runtime change or new feature-completion claim. Linked the plan from MASTER_PLAN.
+
+## 2026-10-07 — Packaged DALE verification
+
+- Source 5a58bc3 passes all 15 journeys against packaged standalone production (1.8 minutes), after the 15-journey development run and final four-width reduced-motion/hydration regression. Optimized build, lint/typecheck and all 135 automated checks pass.
+- Repeated 200 workflow traces, 107 deterministic scenarios, 300 frozen synthetic records and 180 mock native-adapter checks after the catalog/profile changes. No provider call or spend was used.
+- Prepared the source-aligned release archive and verified its inventory excludes environment files/private data. SHA-256: `0f69a6f9450fda3a41aa01df20c0105d959fe2c0d22c436687d4a2760e43d542`. GitHub run 37606847215 passes both quality and production app/worker/PostgreSQL container jobs, including all 15 browser journeys in containers.
+- Updated manual steps for product/profile names and added pagination, product-stage approval, navigation and reduced-motion cases. Hosted/local access-code setup is distinguished. EC2 SSH was retried and timed out; the public redesign and hosted regression remain pending.
+
 ## 2026-10-07 — DALE wordmark and product-led redesign
 
 - Replaced the separate D emblem with original uppercase DALE letterforms in the header, footer and browser icon. Updated customer-facing metadata, assistant labels, checkout descriptions and API title; unbranded product illustrations use functional markings.

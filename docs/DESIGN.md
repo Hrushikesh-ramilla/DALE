@@ -37,12 +37,12 @@ The typography/control scale replaces the previous 7–10px product text. Mobile
 
 ## Verification and deployment boundary
 
-The 7 October Dale identity passes lint/typecheck, the optimized production build, all 134 unit/contract/database checks and all 14 development browser journeys. The four editorial journeys also pass after the final illustration engraving update. HTTP inspection confirms the Dale route title/home label, SVG icon and public API title; the updated desktop capture is `.data/reports/dale-desktop.png`.
+The revised 7 October DALE implementation at 5a58bc3 passes lint/typecheck, the optimized production build, all 135 unit/contract/database checks and all 15 browser journeys against development and packaged production. The final reduced-motion test also asserts that hydration errors are absent across four viewport widths. Updated captures are `.data/reports/editorial-desktop.png`, `editorial-collections.png`, `editorial-mobile.png` and `editorial-product.png`.
 
 `e2e/editorial.spec.ts` exercises routed history/reload, collection-to-purchase approval boundaries, result search, product facts/sponsorship, focus return, featured-item budget guards and desktop/tablet/mobile widths (1440, 820, 390, 320), including reduced motion. Existing browser journeys retain shopping clarification, compatibility, purchase/refund, group failure, cancellation, prepaid return and recovery coverage. Screenshots are private artifacts under `.data/reports/editorial-*.png`.
 
 No payment, evidence or provider policy is relaxed by this redesign. The live Gemini and genuine PayPal gates remain as recorded in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md).
 
-Final lint/typecheck and all 134 unit/contract/database checks pass. All 14 browser journeys pass against the development server and the packaged standalone production server, including owned-font/illustration rendering. Production-mode browser testing uses a separate local embedded database and fixture adapters; it is not an EC2 PostgreSQL or real-provider check.
+All 200 workflow traces, 107 deterministic scenarios, 300 frozen synthetic records and 180 repeated mocked native-adapter checks also pass after the catalog/profile changes. Production-mode browser testing uses a separate local embedded database and fixture adapters; it is not an EC2 or real-provider check. GitHub run 37606847215 at 5a58bc3 passes its production app/worker/PostgreSQL container job.
 
 The local preview contains this redesign. EC2 SSH timed out during the 7 October deployment attempt, so public health still reports the earlier application build `5b393c0`. Update this record after a verified release transfer/service restart and hosted browser regression; do not describe the redesigned source as publicly deployed until then.

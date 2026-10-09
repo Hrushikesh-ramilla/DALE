@@ -21,6 +21,8 @@ Use four separate browser profiles or different browsers. Ordinary tabs in one p
 
 Access codes are in the owner's local ignored `.data/deploy/access-codes.txt`. Use the shopper/demo code for shoppers and the operator code for seller/reviewer. Never put codes, cookies or keys in screenshots or test reports.
 
+Those are hosted access codes. For localhost, use the demo/operator codes configured in the ignored `.env`; do not assume the hosted and local codes match. Local adapters default to fixtures. If already in a fixture shopper workspace, skip the hosted conversion steps below and connect operator profiles to its workspace ID.
+
 Normal hosted shopper sessions use **PayPal sandbox**. Merchant USD approval is currently blocked, so use an **engineering fixture workspace** for the full workflow:
 
 1. In A, open the app, click **Start shopping**, select **Shopper**, enter the **Demo access code (if configured)** and click **Enter workspace**.
