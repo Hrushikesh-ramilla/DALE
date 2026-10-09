@@ -8,8 +8,8 @@ Updated 9 October 2026. **Release acceptance is 15/20 (75% passed / 25% pending)
 | --- | --- | --- |
 | Shopper agent tools, product grounding, group approval, payments and customer remedy/evidence workflows | Implemented and verified with unit/browser/container/fixture checks | Genuine AI/provider and independent evidence checks remain separate |
 | Private self-hosted text/vision adapter and protected configuration | Implemented; no cloud fallback | No candidate qualifies on the required tasks; this is genuine remaining engineering, not a missing key |
-| Local speech capture, transcript review, CPU recognition and cancellation | Implemented; real Windows inference and HTTP checks pass | Linux installation CI, target workload and human microphone checks are distinct |
-| Linux model/speech installation, systemd restart policy, combined-memory guard and upgrade rollback | Implemented in current milestone; focused policy/configuration tests pass | Fresh Linux CI and actual EC2 model/joint/restart execution required |
+| Local speech capture, transcript review, CPU recognition and cancellation | Implemented; real Windows and Linux recognition, HTTP and browser recovery checks pass | Target workload and human microphone checks are distinct |
+| Linux model/speech installation, systemd restart policy, combined-memory guard and upgrade rollback | Implemented; focused policy tests, actual Linux speech reinstallation, pinned model executable loading and unit validation pass | Actual selected-model/EC2 joint-load/restart execution required; unit validation is not an observed model restart |
 | Genuine PayPal journey and signed receipt capture | Implemented; resumable verifier and provider contracts pass | Existing merchant rejects checkout currency; usable account configuration and actual capture/refund remain required |
 | Physical evidence labels and five independent users | Test protocols implemented | Actual people/captures have not supplied records; these are acceptance activities, not unimplemented feature code |
 
