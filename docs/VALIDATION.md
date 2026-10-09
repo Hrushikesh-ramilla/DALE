@@ -1,5 +1,17 @@
 # Validation status
 
+## Latest corrective milestone — 9 October 2026
+
+Full local lint/typecheck and **331 tests** pass after restoring citation compatibility; twelve focused goal/history/fact checks pass after bounding generated-history input and preserving explicitly owned cable wattage. Actual standalone OCR is now tested outside the checkout and passes all **11 HTTP checks**; its separate worker dependencies are explicitly traced into the release. The earlier failed packaged check is retained as the defect that motivated this correction.
+
+[Linux runtime gate 37916919735](https://github.com/Hrushikesh-ramilla/DALE/actions/runs/37916919735) on 9d3a7e7 passes native and compact-goal development tasks, two actual source-bound image reviews, authentication rejection and actual inference after restart. MemoryMax is 2,147,483,648 bytes, no swap, two-CPU quota; measured cgroup peak is exactly the cap. OCR child checks run outside that model cgroup. See [sanitized resource report](evaluations/linux-model-budget-9d3a7e7.json). This is not joint EC2 acceptance.
+
+[Complete v3 quality report](evaluations/self-hosted-v3-9d3a7e7.json) is **151/180, failed**: 45/60 semantic, 51/54 readable OCR, 6/6 blur, 12/12 authority, 18/18 raw suspicious warnings, 7/18 raw benign warnings and 24/24 grounded explanations. No records are excluded. v3 is now retired for corrective development; future quality acceptance needs a disjoint new corpus. Two small NLI classifier development probes did not qualify and were not integrated.
+
+Actual packaged ordinary-agent HTTP accepted the first research/group/private-order request with sourced R003 and no order/claim creation, but the follow-up exceeded the client timeout. The partial report does not count unexecuted cases as passes. Generated reply prose has been removed from the next goal-planning input; confirmed structured context and two bounded prior customer tasks remain. The new conversation needs another actual run.
+
+The 9d3a7e7 normal CI checks job failed two citation compatibility tests (329/331); both affected files pass 32 checks after correction. Its container and local-runtime jobs passed. Fresh CI is required for the corrected milestone. No public installation, live PayPal capture/refund or independent physical/human acceptance is claimed.
+
 ## Native local planning and OCR — 9 October 2026
 
 Committed source c63a587 passes [all three quality CI jobs](https://github.com/Hrushikesh-ramilla/DALE/actions/runs/37907665958); quality and container jobs each pass all 41 browser journeys. The [Linux model memory gate](https://github.com/Hrushikesh-ramilla/DALE/actions/runs/37907676115) passes five actual tasks under MemoryMax 2,147,483,648 bytes, MemorySwapMax 0 and CPU quota 200%, copying weights inside its cgroup. Measured peak reaches the exact cap; no spare headroom or actual EC2 joint workload is inferred. The local preview is rebuilt/running c63a587, instance b4ad0d62-c51b-42e4-8661-d0cc92de506a, retaining data. Fresh restricted SSH to the supplied old EC2 address still times out.

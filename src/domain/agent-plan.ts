@@ -189,26 +189,25 @@ export function fallbackPlan(
         )[0]?.model || null;
   }
   let cable: Cable = previous?.cable || "unknown";
+  const statesCableOwnership =
+    /\b(?:have|own|using|with|already)\b/i.test(text) ||
+    /\bmy\s+(?:(?:existing|current|original)\s+)?(?:(?:100|240|60)\s*w\s+)?(?:usb[ -]?c\s+)?cable\b/i.test(
+      text,
+    );
   if (
     /\b(?:no cable|need (?:a |the )?cable|include (?:a |the )?cable|don't have .*cable|do not have .*cable)\b/i.test(
       text,
     )
   )
     cable = "none";
-  else if (
-    /\b(?:have|own|using|with|original|already)\b/i.test(text) &&
-    /mag\s*safe\s*3/i.test(text)
-  )
+  else if (statesCableOwnership && /mag\s*safe\s*3/i.test(text))
     cable = "magsafe3";
   else if (
-    /\b(?:have|own|using|with|already)\b/i.test(text) &&
+    (statesCableOwnership || /\boriginal\b/i.test(text)) &&
     /(?:100|240)\s*w.*cable|cable.*(?:100|240)\s*w/i.test(text)
   )
     cable = "usb100";
-  else if (
-    /\b(?:have|own|using|with|already)\b/i.test(text) &&
-    /60\s*w.*cable|cable.*60\s*w/i.test(text)
-  )
+  else if (statesCableOwnership && /60\s*w.*cable|cable.*60\s*w/i.test(text))
     cable = "usb60";
   const fastCharging =
     /(?:no|don't need|do not need|without|not)\s+fast|normal (?:charging|charge)/i.test(

@@ -1,6 +1,7 @@
 import { afterEach, expect, it, vi } from "vitest";
 import { planAgent } from "../src/server/agent-planner";
 import { modelMessageSignals } from "../src/server/ai";
+import { fallbackPlan } from "../src/domain/agent-plan";
 afterEach(() => {
   vi.unstubAllEnvs();
   vi.unstubAllGlobals();
@@ -10,6 +11,26 @@ const input = {
   model: "Atlas 14",
   budget: 8000,
 };
+it("preserves an explicitly owned cable rating despite different sentence order", () => {
+  for (const [description, cable] of [
+    ["My existing USB-C cable is 100W", "usb100"],
+    ["My 60W USB-C cable is sufficient", "usb60"],
+    ["My USB-C cable is 240W", "usb100"],
+  ]) {
+    expect(
+      fallbackPlan({
+        ...input,
+        task: `MacBook Air M1 charger under $70. ${description}. Normal charging.`,
+      }),
+    ).toMatchObject({ cable });
+  }
+  expect(
+    fallbackPlan({
+      ...input,
+      task: "MacBook Air M1 charger under $70. The recommended cable is 100W.",
+    }),
+  ).toMatchObject({ cable: "unknown" });
+});
 it("uses independent raw warning booleans without inventing a signal for false fields", async () => {
   configure([
     {
@@ -22,6 +43,24 @@ it("uses independent raw warning booleans without inventing a signal for false f
   expect(
     await modelMessageSignals("The seller asks for a private code."),
   ).toEqual({ signals: ["credential_request"] });
+});
+it("bounds follow-up history and excludes generated reply prose from inference", async () => {
+  const fetch = configure([
+    { goals: ["research_products", "discover_groups", "inspect_orders"] },
+  ]);
+  const result = await planAgent(input, undefined, [
+    {
+      task: "Old task".repeat(1000),
+      reply: "GENERATED_REPLY_MUST_NOT_BE_SENT".repeat(1000),
+    },
+  ]);
+  expect(result.mode).toBe("model");
+  const payload = JSON.parse(fetch.mock.calls[0][1]?.body as string);
+  const context = JSON.parse(payload.messages[1].content[0].text);
+  expect(context.previousTasks[0]).toHaveLength(600);
+  expect(JSON.stringify(payload)).not.toContain(
+    "GENERATED_REPLY_MUST_NOT_BE_SENT",
+  );
 });
 it("keeps an all-false advisory result empty and rejects malformed private classifier output", async () => {
   configure([
@@ -50,7 +89,7 @@ function configure(outputs: unknown[]) {
     AI_API_KEY: "unused-cloud-key",
   }))
     vi.stubEnv(name, value);
-  const fetch = vi.fn(async () =>
+  const fetch = vi.fn<typeof global.fetch>(async () =>
     Response.json({
       choices: [
         {

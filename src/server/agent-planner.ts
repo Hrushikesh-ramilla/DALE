@@ -67,9 +67,18 @@ export async function compareWithModel(
   const result = await completion(
     comparisonSchema.extend({
       productId: z.literal(expectedId),
-      sourceIds: z
-        .array(z.literal(expected.productId === "R002" ? "70w" : "dynamic"))
-        .length(1),
+      sourceIds:
+        process.env.AI_PROVIDER === "self_hosted" &&
+        process.env.AI_SELF_HOSTED_PROFILE === "lfm25vl3-goals"
+          ? z
+              .array(
+                z.literal(expected.productId === "R002" ? "70w" : "dynamic"),
+              )
+              .length(1)
+          : z
+              .array(z.enum(expected.sourceIds as [string, ...string[]]))
+              .min(1)
+              .max(5),
       reasons: z
         .array(
           z.enum(

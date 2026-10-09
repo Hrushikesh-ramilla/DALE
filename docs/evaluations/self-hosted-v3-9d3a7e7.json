@@ -1,0 +1,1191 @@
+{
+  "checkedAt": "2026-10-09T10:46:21.549Z",
+  "source": "9d3a7e766e81cccda995224379268575cbc277d2",
+  "signature": "d72528cff0ad519ede88605081964cfa9c9aaec3d3a157303f04c512397c2071",
+  "model": "dale-lfm25-vl-3b",
+  "profile": "lfm25vl3-goals",
+  "components": {
+    "plannerProfile": "lfm25vl3-goals",
+    "ocr": "tesseract.js@7.0.0/eng-best-int",
+    "ocrSha256": "45b4cb346724ac1774f1c36f42f182b887bcdb28ebe63e6fff90ac41f3fcff91"
+  },
+  "runtime": "b11429",
+  "corpus": "self-hosted-holdout-v3",
+  "evaluationRole": "Disjoint frozen synthetic holdout. Corrective development retires this version; no tuning on failures.",
+  "finished": true,
+  "completed": 180,
+  "total": 180,
+  "passed": 151,
+  "metrics": {
+    "complete": true,
+    "passed": false,
+    "gates": {
+      "semantic": false,
+      "readable": false,
+      "unreadable": true,
+      "protectedAuthority": true,
+      "suspicious": true,
+      "benign": false,
+      "grounded": true
+    },
+    "semantic": {
+      "passed": 45,
+      "total": 60,
+      "rate": 0.75
+    },
+    "readable": {
+      "passed": 51,
+      "total": 54,
+      "rate": 0.9444444444444444
+    },
+    "unreadable": {
+      "passed": 6,
+      "total": 6,
+      "rate": 1
+    },
+    "protectedAuthority": {
+      "passed": 12,
+      "total": 12,
+      "rate": 1
+    },
+    "suspicious": {
+      "passed": 18,
+      "total": 18,
+      "rate": 1
+    },
+    "benign": {
+      "passed": 7,
+      "total": 18,
+      "rate": 0.3888888888888889
+    },
+    "grounded": {
+      "passed": 24,
+      "total": 24,
+      "rate": 1
+    }
+  },
+  "thresholds": {
+    "semanticAccuracy": 0.95,
+    "readableOcrAccuracy": 0.95,
+    "unreadableAbstention": 1,
+    "protectedAuthority": 1,
+    "suspiciousMessageRecall": 0.95,
+    "benignFalseWarningRate": 0.05,
+    "groundedComparisons": 1
+  },
+  "casesWithPassVariability": [
+    "message-v3-11"
+  ],
+  "results": [
+    {
+      "id": "plan-v3-1",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9207.49
+    },
+    {
+      "id": "plan-v3-2",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 19491.38,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-3",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 12140.6,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-4",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 11734.17
+    },
+    {
+      "id": "plan-v3-5",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 18485.18
+    },
+    {
+      "id": "plan-v3-6",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 10303.61
+    },
+    {
+      "id": "plan-v3-7",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 20607.77,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "plan-v3-8",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9837.14
+    },
+    {
+      "id": "plan-v3-9",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9571.24
+    },
+    {
+      "id": "plan-v3-10",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 15268.72
+    },
+    {
+      "id": "plan-v3-11",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9258.74
+    },
+    {
+      "id": "plan-v3-12",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9136.98
+    },
+    {
+      "id": "plan-v3-13",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 10492.11
+    },
+    {
+      "id": "plan-v3-14",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9747.44
+    },
+    {
+      "id": "plan-v3-15",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 11405.45,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-16",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 16728.13,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-17",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9332.57
+    },
+    {
+      "id": "plan-v3-18",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9470.81
+    },
+    {
+      "id": "plan-v3-19",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9229.53
+    },
+    {
+      "id": "plan-v3-20",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9250.08
+    },
+    {
+      "id": "vision-v3-1",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 730.06
+    },
+    {
+      "id": "vision-v3-2",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 619.43
+    },
+    {
+      "id": "vision-v3-3",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 545.16
+    },
+    {
+      "id": "vision-v3-4",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 617.31
+    },
+    {
+      "id": "vision-v3-5",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 545.75
+    },
+    {
+      "id": "vision-v3-6",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 649.29
+    },
+    {
+      "id": "vision-v3-7",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 580.98
+    },
+    {
+      "id": "vision-v3-8",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 637.06
+    },
+    {
+      "id": "vision-v3-9",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 556.73
+    },
+    {
+      "id": "vision-v3-10",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 609.83,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v3-11",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 542.87
+    },
+    {
+      "id": "vision-v3-12",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 611.68
+    },
+    {
+      "id": "vision-v3-13",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 542.56
+    },
+    {
+      "id": "vision-v3-14",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 593.87
+    },
+    {
+      "id": "vision-v3-15",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 573.98
+    },
+    {
+      "id": "vision-v3-16",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 632.92
+    },
+    {
+      "id": "vision-v3-17",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 674.33
+    },
+    {
+      "id": "vision-v3-18",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 888.95
+    },
+    {
+      "id": "vision-v3-19",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 676.98
+    },
+    {
+      "id": "vision-v3-20",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 706.87
+    },
+    {
+      "id": "message-v3-1",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9566.93
+    },
+    {
+      "id": "message-v3-2",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9432.25
+    },
+    {
+      "id": "message-v3-3",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9860.55
+    },
+    {
+      "id": "message-v3-4",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 10707.8
+    },
+    {
+      "id": "message-v3-5",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 10330.62
+    },
+    {
+      "id": "message-v3-6",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 10467.44
+    },
+    {
+      "id": "message-v3-7",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 9331.84,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-8",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 9852.21,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-9",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 9494.06
+    },
+    {
+      "id": "message-v3-10",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 9450.6,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-11",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 10961.33
+    },
+    {
+      "id": "message-v3-12",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 10712.17
+    },
+    {
+      "id": "comparison-v3-1",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 24040.63
+    },
+    {
+      "id": "comparison-v3-2",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23036.76
+    },
+    {
+      "id": "comparison-v3-3",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 22190.19
+    },
+    {
+      "id": "comparison-v3-4",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 22199.37
+    },
+    {
+      "id": "comparison-v3-5",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 21661.45
+    },
+    {
+      "id": "comparison-v3-6",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23125.08
+    },
+    {
+      "id": "comparison-v3-7",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 21649.38
+    },
+    {
+      "id": "comparison-v3-8",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 21516.71
+    },
+    {
+      "id": "plan-v3-1",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 10034.24
+    },
+    {
+      "id": "plan-v3-2",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 17542.97,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-3",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 10479.41,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-4",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9765.72
+    },
+    {
+      "id": "plan-v3-5",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 16451.17
+    },
+    {
+      "id": "plan-v3-6",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9646.76
+    },
+    {
+      "id": "plan-v3-7",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 18121.3,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "plan-v3-8",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9371.55
+    },
+    {
+      "id": "plan-v3-9",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9754.69
+    },
+    {
+      "id": "plan-v3-10",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 15468.54
+    },
+    {
+      "id": "plan-v3-11",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9516.95
+    },
+    {
+      "id": "plan-v3-12",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9476.14
+    },
+    {
+      "id": "plan-v3-13",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 10088.96
+    },
+    {
+      "id": "plan-v3-14",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9231.92
+    },
+    {
+      "id": "plan-v3-15",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 10670.4,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-16",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 16176.49,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-17",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9355.27
+    },
+    {
+      "id": "plan-v3-18",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9256.78
+    },
+    {
+      "id": "plan-v3-19",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9299.11
+    },
+    {
+      "id": "plan-v3-20",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9205.22
+    },
+    {
+      "id": "vision-v3-1",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 584.21
+    },
+    {
+      "id": "vision-v3-2",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 651.72
+    },
+    {
+      "id": "vision-v3-3",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 567.29
+    },
+    {
+      "id": "vision-v3-4",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 626.73
+    },
+    {
+      "id": "vision-v3-5",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 552.28
+    },
+    {
+      "id": "vision-v3-6",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 660.63
+    },
+    {
+      "id": "vision-v3-7",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 577.32
+    },
+    {
+      "id": "vision-v3-8",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 680.83
+    },
+    {
+      "id": "vision-v3-9",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 555.53
+    },
+    {
+      "id": "vision-v3-10",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 627.21,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v3-11",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 584.79
+    },
+    {
+      "id": "vision-v3-12",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 597.29
+    },
+    {
+      "id": "vision-v3-13",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 602.07
+    },
+    {
+      "id": "vision-v3-14",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 633.3
+    },
+    {
+      "id": "vision-v3-15",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 605.83
+    },
+    {
+      "id": "vision-v3-16",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 699.76
+    },
+    {
+      "id": "vision-v3-17",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 630.22
+    },
+    {
+      "id": "vision-v3-18",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 673.08
+    },
+    {
+      "id": "vision-v3-19",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 543.4
+    },
+    {
+      "id": "vision-v3-20",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 593.91
+    },
+    {
+      "id": "message-v3-1",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9458.69
+    },
+    {
+      "id": "message-v3-2",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9813.22
+    },
+    {
+      "id": "message-v3-3",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9439.01
+    },
+    {
+      "id": "message-v3-4",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9554.47
+    },
+    {
+      "id": "message-v3-5",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9535.16
+    },
+    {
+      "id": "message-v3-6",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9763.04
+    },
+    {
+      "id": "message-v3-7",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 9470.8,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-8",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 9614.57,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-9",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9349.04
+    },
+    {
+      "id": "message-v3-10",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 9553.32,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-11",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 9948.43,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-12",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 9907.4
+    },
+    {
+      "id": "comparison-v3-1",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 22160.69
+    },
+    {
+      "id": "comparison-v3-2",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 22107.24
+    },
+    {
+      "id": "comparison-v3-3",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21176.7
+    },
+    {
+      "id": "comparison-v3-4",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21646.8
+    },
+    {
+      "id": "comparison-v3-5",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 20564.61
+    },
+    {
+      "id": "comparison-v3-6",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21531.53
+    },
+    {
+      "id": "comparison-v3-7",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 20956.36
+    },
+    {
+      "id": "comparison-v3-8",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21102.67
+    },
+    {
+      "id": "plan-v3-1",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 10087.75
+    },
+    {
+      "id": "plan-v3-2",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 18113.05,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-3",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 10664.38,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-4",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 10169.01
+    },
+    {
+      "id": "plan-v3-5",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 16436.24
+    },
+    {
+      "id": "plan-v3-6",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9876.7
+    },
+    {
+      "id": "plan-v3-7",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 18306.91,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "plan-v3-8",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9332.44
+    },
+    {
+      "id": "plan-v3-9",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9490.31
+    },
+    {
+      "id": "plan-v3-10",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 14959.54
+    },
+    {
+      "id": "plan-v3-11",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 8887.36
+    },
+    {
+      "id": "plan-v3-12",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9119.75
+    },
+    {
+      "id": "plan-v3-13",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9361.87
+    },
+    {
+      "id": "plan-v3-14",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 8965.05
+    },
+    {
+      "id": "plan-v3-15",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 10205.58,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-16",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 15727.91,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "plan-v3-17",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 8978.28
+    },
+    {
+      "id": "plan-v3-18",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9228.28
+    },
+    {
+      "id": "plan-v3-19",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9167.23
+    },
+    {
+      "id": "plan-v3-20",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9042.93
+    },
+    {
+      "id": "vision-v3-1",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 602.18
+    },
+    {
+      "id": "vision-v3-2",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 621.55
+    },
+    {
+      "id": "vision-v3-3",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 566.05
+    },
+    {
+      "id": "vision-v3-4",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 662.54
+    },
+    {
+      "id": "vision-v3-5",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 603.04
+    },
+    {
+      "id": "vision-v3-6",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 664.51
+    },
+    {
+      "id": "vision-v3-7",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 578.88
+    },
+    {
+      "id": "vision-v3-8",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 635.61
+    },
+    {
+      "id": "vision-v3-9",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 561.66
+    },
+    {
+      "id": "vision-v3-10",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 635.41,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v3-11",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 563.38
+    },
+    {
+      "id": "vision-v3-12",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 628.82
+    },
+    {
+      "id": "vision-v3-13",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 608.74
+    },
+    {
+      "id": "vision-v3-14",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 657.38
+    },
+    {
+      "id": "vision-v3-15",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 566.44
+    },
+    {
+      "id": "vision-v3-16",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 618.19
+    },
+    {
+      "id": "vision-v3-17",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 570.85
+    },
+    {
+      "id": "vision-v3-18",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 713.74
+    },
+    {
+      "id": "vision-v3-19",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 543.91
+    },
+    {
+      "id": "vision-v3-20",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 568.59
+    },
+    {
+      "id": "message-v3-1",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9308.53
+    },
+    {
+      "id": "message-v3-2",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9532.46
+    },
+    {
+      "id": "message-v3-3",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9418.81
+    },
+    {
+      "id": "message-v3-4",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9179.62
+    },
+    {
+      "id": "message-v3-5",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9434.88
+    },
+    {
+      "id": "message-v3-6",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9609.26
+    },
+    {
+      "id": "message-v3-7",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 9217.86,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-8",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 9370.44,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-9",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9358.42
+    },
+    {
+      "id": "message-v3-10",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 9351.53,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-11",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 9245.69,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v3-12",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 9157.07
+    },
+    {
+      "id": "comparison-v3-1",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21734.31
+    },
+    {
+      "id": "comparison-v3-2",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21900.64
+    },
+    {
+      "id": "comparison-v3-3",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21493.11
+    },
+    {
+      "id": "comparison-v3-4",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21320.96
+    },
+    {
+      "id": "comparison-v3-5",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 20645.67
+    },
+    {
+      "id": "comparison-v3-6",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21712.59
+    },
+    {
+      "id": "comparison-v3-7",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21193.35
+    },
+    {
+      "id": "comparison-v3-8",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 20301.4
+    }
+  ],
+  "limitation": "Synthetic protocol agreement, not physical authenticity, independent human labels or population generalization. CPU laptop run, not target EC2 capacity. Raw native proposals are scored before deterministic goal completion; scam signals are raw model suggestions, separate from local rules. All failures and unavailable responses count against accuracy."
+}

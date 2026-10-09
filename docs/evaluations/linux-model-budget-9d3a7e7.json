@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-10-09T10:20:54.765Z",
+  "source": "9d3a7e766e81cccda995224379268575cbc277d2",
+  "candidate": "lfm3",
+  "complete": true,
+  "memoryLimitBytes": 2147483648,
+  "swapLimitBytes": 0,
+  "cpuQuotaPercent": 200,
+  "measuredCgroupPeakBytes": 2147483648,
+  "restartVerified": true,
+  "restartState": "active",
+  "unauthenticatedRejected": true,
+  "testReport": {
+    "checkedAt": "2026-10-09T10:26:19.836Z",
+    "mode": "live",
+    "configuration": {
+      "provider": "self_hosted",
+      "model": "dale-lfm25-vl-3b",
+      "profile": "lfm25vl3",
+      "ocrMode": "disabled",
+      "purpose": "Bounded development selection; not the held-out 180-record evaluation or EC2 acceptance"
+    },
+    "complete": true,
+    "results": [
+      {
+        "scenario": "Composed goals with exact M1 device, complete cable budget and no financial tool",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 60114.33
+      },
+      {
+        "scenario": "Unknown real device is clarified without substitution",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 49946.85
+      },
+      {
+        "scenario": "Grounded eligible recommendation cites the actual product evidence",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 83707.01
+      },
+      {
+        "scenario": "Owned clear label resolves to its actual model",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 66113.55
+      },
+      {
+        "scenario": "Blurred label never proposes a device from a readable heading",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 46365.66
+      }
+    ],
+    "limitation": "Smoke checks do not establish held-out accuracy or real-world fraud detection. Unexecuted checks are not passes."
+  },
+  "goalReport": {
+    "checkedAt": "2026-10-09T10:29:24.516Z",
+    "mode": "live",
+    "configuration": {
+      "provider": "self_hosted",
+      "model": "dale-lfm25-vl-3b",
+      "profile": "lfm25vl3-goals",
+      "ocrMode": "tesseract",
+      "purpose": "Bounded development selection; not the held-out 180-record evaluation or EC2 acceptance"
+    },
+    "complete": true,
+    "results": [
+      {
+        "scenario": "Composed goals with exact M1 device, complete cable budget and no financial tool",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 59459.08
+      },
+      {
+        "scenario": "Unknown real device is clarified without substitution",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 39568.75
+      },
+      {
+        "scenario": "Grounded eligible recommendation cites the actual product evidence",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 83708.77
+      },
+      {
+        "scenario": "Owned clear label resolves to its actual model",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 663.11
+      },
+      {
+        "scenario": "Blurred label never proposes a device from a readable heading",
+        "status": "passed",
+        "passed": true,
+        "durationMs": 509.26
+      }
+    ],
+    "limitation": "Smoke checks do not establish held-out accuracy or real-world fraud detection. Unexecuted checks are not passes."
+  },
+  "failure": "",
+  "limitation": "Actual Linux candidate inference under a hard 2 GiB/no-swap/two-CPU cap. Weights are copied inside the cgroup to charge their page cache. The goal profile's two OCR child checks run outside that model cgroup, not inside an app memory cap. This is not EC2 joint app/worker/database/voice, a held-out quality evaluation, or production service-account acceptance."
+}

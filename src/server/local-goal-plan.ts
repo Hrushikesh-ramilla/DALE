@@ -38,7 +38,15 @@ export async function localGoalWorkflow(
     requiredClarification:
       guard.plan.tool === "clarify" ? guard.plan.question : null,
     ...(context ? { confirmedContext: context } : {}),
-    ...(history.length ? { privateHistory: history.slice(-4) } : {}),
+    // Confirmed structured context owns facts. Generated reply prose must not
+    // become fresh instructions or unbounded CPU prompt work on every follow-up.
+    ...(history.length
+      ? {
+          previousTasks: history
+            .slice(-2)
+            .map((turn) => turn.task.slice(0, 600)),
+        }
+      : {}),
   });
   const calls: { name: string; arguments: unknown }[] = [];
   for (const goal of selected.goals) {

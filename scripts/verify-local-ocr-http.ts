@@ -1,5 +1,6 @@
-import { readFile, mkdir, writeFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { readFile, mkdir, writeFile, mkdtemp, cp, rm } from "node:fs/promises";
+import { resolve, dirname, basename } from "node:path";
+import { tmpdir } from "node:os";
 import { randomBytes } from "node:crypto";
 import { spawn } from "node:child_process";
 import { createServer } from "node:net";
@@ -15,7 +16,15 @@ await new Promise<void>((done, reject) =>
 );
 const data = resolve(".data/ocr-http", `${Date.now()}-${process.pid}`);
 await mkdir(data, { recursive: true });
-const child = spawn(process.execPath, [".next/standalone/server.js"], {
+// Isolate outside the checkout so missing traced dependencies cannot be borrowed
+// from the development node_modules through Node's ancestor lookup.
+const artifact = await mkdtemp(resolve(tmpdir(), "dale-ocr-http-app-"));
+await cp(resolve(".next/standalone"), artifact, {
+  recursive: true,
+  filter: (path) => !basename(path).startsWith(".env"),
+});
+const child = spawn(process.execPath, [resolve(artifact, "server.js")], {
+  cwd: artifact,
   windowsHide: true,
   stdio: "ignore",
   env: {
@@ -169,6 +178,21 @@ try {
   process.exitCode = 1;
 } finally {
   child.kill();
+  if (child.exitCode === null)
+    await new Promise<void>((done) => {
+      const timer = setTimeout(done, 5000);
+      child.once("close", () => {
+        clearTimeout(timer);
+        done();
+      });
+    });
+  const target = resolve(artifact);
+  if (
+    dirname(target) !== resolve(tmpdir()) ||
+    !basename(target).startsWith("dale-ocr-http-app-")
+  )
+    throw new Error("Invalid isolated artifact cleanup path.");
+  await rm(target, { recursive: true, force: true });
   await mkdir(".data/reports", { recursive: true });
   const report = {
     checkedAt: new Date().toISOString(),

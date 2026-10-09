@@ -1,5 +1,14 @@
 # Change log
 
+## 2026-10-09 — Isolated OCR packaging, restart acceptance and bounded follow-ups
+
+- Actual packaged OCR initially failed because its separate worker dependency graph was absent. Explicitly trace the helper/worker and copy their production dependencies. Run the HTTP verifier outside the checkout, preventing Node from borrowing development modules. All 11 isolated HTTP checks now pass, including access/origin guards, recognition, confirmation, unchanged shopper state and fixture isolation.
+- Preserve valid multiple source citations for existing adapters while the small private profile uses one required product citation. The fresh 9d3a7e7 quality run caught two compatibility regressions; the correction passes both affected files (32 checks). Full local lint/typecheck and 331 checks pass before the final follow-up changes.
+- The 9d3a7e7 Linux gate now passes authentication, native and compact-goal development tasks, actual two-image source safety and inference after restart under a hard 2 GiB/no-swap/two-CPU cap. Measured peak reaches the cap. This does not establish joint app/database/worker/speech load on EC2.
+- Complete frozen v3: 151/180 pass, qualification fails. Semantic protocol 45/60, readable model extraction 51/54, blur 6/6, authority 12/12, suspicious raw warnings 18/18, benign raw warnings 7/18 and grounded explanations 24/24. Preserve v2/v3 and full sanitized reports. v3 is now retired for corrective development, not relabeled or presented as a passing holdout.
+- Actual packaged agent HTTP passed the first composed shopping/group/order request but timed out on its follow-up. Bound planning history to two short prior customer tasks, excluding generated reply prose; confirmed structured context remains authoritative. Preserve explicitly owned cable ratings across sentence order. Twelve focused goal/fact/history checks pass; the revised actual conversation remains to be rerun.
+- Two additional small NLI classifier experiments on retired development cases did not qualify and were not integrated. No cloud inference, paid AI calls, new infrastructure, model selection or EC2 installation was made.
+
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
 ## 2026-10-09 — Specialized local OCR and compact semantic goals
