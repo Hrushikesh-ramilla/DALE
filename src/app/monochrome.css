@@ -651,16 +651,16 @@ select option {
   position: fixed;
   top: 0;
   left: 0;
-  width: 5px;
-  height: 5px;
-  margin-top: -2.5px;
-  margin-left: -2.5px;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  margin-left: -3px;
   border-radius: 50%;
   background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.45), 0 1px 2px rgba(0, 0, 0, 0.8);
   pointer-events: none;
   opacity: 0;
-  will-change: transform;
-  mix-blend-mode: difference;
+  will-change: transform, background-color, box-shadow;
   z-index: 1000000;
 }
 
@@ -668,17 +668,17 @@ select option {
   position: fixed;
   top: 0;
   left: 0;
-  width: 32px;
-  height: 32px;
-  margin-top: -16px;
-  margin-left: -16px;
+  width: 34px;
+  height: 34px;
+  margin-top: -17px;
+  margin-left: -17px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
   background-color: transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   pointer-events: none;
   opacity: 0;
-  will-change: transform, border-color, background-color;
-  mix-blend-mode: difference;
+  will-change: transform, border-color, background-color, box-shadow;
   z-index: 999999;
 }
 
