@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import {
+  ArrowLeft,
   ArrowRight,
   Check,
   ChevronRight,
@@ -47,6 +48,68 @@ import { ProviderReconciliation } from "./provider-reconciliation";
 import { CinematicIntro } from "./cinematic-intro";
 import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
+
+const categoryTitles: Record<string, string> = {
+  chargers: "Power & Charging",
+  docks: "Desk & Connectivity",
+  audio: "Sound & Acoustics",
+  storage: "High-Speed Storage & Carry",
+  accessories: "Precision Input & Essentials",
+};
+
+const parallaxCategories = [
+  {
+    id: "chargers",
+    numeral: "01 / 05",
+    tagline: "POWER & ENERGY",
+    title: "Power & Charging",
+    desc: "Precision gallium nitride (GaN) architecture engineered for thermal efficiency, ultra-compact form factors, and verified fast-charging protocols across USB-C PD and legacy profiles.",
+    tags: ["65W–100W GaN", "USB-C PD 3.0", "Thermal Guard", "Braided Cabling"],
+    featured: catalog[0],
+    count: catalog.filter((item) => item.category === "chargers").length,
+  },
+  {
+    id: "docks",
+    numeral: "02 / 05",
+    tagline: "CONNECTIVITY & EXPANSION",
+    title: "Desk & Connectivity",
+    desc: "Transform single-port setups into unified multi-display workstations. Certified DisplayPort alt-mode, 4K HDMI streaming, gigabit Ethernet, and high-wattage power passthrough.",
+    tags: ["4K HDMI", "DisplayPort Alt-Mode", "60W Passthrough", "Multi-Port Hub"],
+    featured: catalog[3],
+    count: catalog.filter((item) => item.category === "docks").length,
+  },
+  {
+    id: "audio",
+    numeral: "03 / 05",
+    tagline: "ACOUSTICS & FOCUS",
+    title: "Sound & Acoustics",
+    desc: "Acoustic-sealed wireless audio crafted for deep focus, travel, and clean voice clarity. Low-latency transmission with USB-C fast recharging and fold-flat portability.",
+    tags: ["High-Fidelity Audio", "Active Isolation", "USB-C Fast Recharge", "Fold-Flat"],
+    featured: catalog[5],
+    count: catalog.filter((item) => item.category === "audio").length,
+  },
+  {
+    id: "storage",
+    numeral: "04 / 05",
+    tagline: "DATA & MOBILITY",
+    title: "High-Speed Storage & Carry",
+    desc: "Solid-state storage encased in aerospace-grade anodized aluminum. High-bandwidth NVMe read/write speeds with universal USB-C and USB-A legacy versatility.",
+    tags: ["1050 MB/s NVMe", "Anodized Aluminum", "Shock Resistant", "512GB Capacity"],
+    featured: catalog[4],
+    count: catalog.filter((item) => item.category === "storage").length,
+  },
+  {
+    id: "accessories",
+    numeral: "05 / 05",
+    tagline: "PRECISION & TACTILE",
+    title: "Precision Input & Essentials",
+    desc: "Silent-click mechanical switches, ergonomic palm contours, and reinforced high-amperage cables designed for seamless everyday execution.",
+    tags: ["Silent Switches", "Ergonomic Sculpt", "Braided Sleeving", "Low-Latency Optical"],
+    featured: catalog[6],
+    count: catalog.filter((item) => item.category === "accessories").length,
+  },
+];
+
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
   | { kind: "login" }
@@ -150,6 +213,7 @@ export default function Storefront() {
       { price: number; features: number } | undefined
     >(),
     [briefDirty, setBriefDirty] = useState(false);
+  const [isDeviceMode, setIsDeviceMode] = useState(false);
   const [heroPrompt, setHeroPrompt] = useState("");
   const [sidebarTask, setSidebarTask] = useState("");
 
@@ -158,10 +222,13 @@ export default function Storefront() {
     if (!query) return;
     setSidebarTask(query);
     setHeroPrompt("");
-    const shopEl = document.getElementById("shop");
-    if (shopEl) {
-      shopEl.scrollIntoView({ behavior: "smooth" });
-    }
+    setIsDeviceMode(true);
+    setTimeout(() => {
+      const shopEl = document.getElementById("shop");
+      if (shopEl) {
+        shopEl.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 50);
   }, [heroPrompt]);
   const [summary, setSummary] = useState(
     "Tell us what you need. We'll keep compatibility, your budget, and your choices at the center.",
@@ -269,6 +336,7 @@ export default function Storefront() {
         setQuestions(data.result.questions);
         setSummary(data.result.analysis.summary);
         setTab("discover");
+        setIsDeviceMode(true);
         setNotice(
           "Voice brief saved. Review device fit and cost before choosing a product.",
         );
@@ -302,6 +370,7 @@ export default function Storefront() {
         setQuestions(data.result.questions);
         setSummary(data.result.analysis.summary);
         setCatalogQuery("");
+        setIsDeviceMode(true);
         if (tab !== "discover") setTab("discover");
       } else if (
         data.intent.kind === "navigate" ||
@@ -337,6 +406,7 @@ export default function Storefront() {
       setSummary(result.analysis.summary);
       setQuestions(result.questions);
       setBriefDirty(false);
+      setIsDeviceMode(true);
       setNotice(
         "Your brief is saved. Older unpaid approvals require a fresh quote.",
       );
@@ -369,6 +439,7 @@ export default function Storefront() {
   function browseCollection(nextCategory: string) {
     setVisibleLimit(12);
     setCategory(nextCategory);
+    setIsDeviceMode(false);
     setBriefDirty(true);
     setCatalogQuery("");
     setProducts(
@@ -384,13 +455,17 @@ export default function Storefront() {
           }),
     );
     setSummary(
-      "Collection preview. Save your device, budget and preferences with Find my match before reviewing a purchase.",
+      nextCategory
+        ? `Viewing ${categoryTitles[nextCategory] || nextCategory}. Chat with DALE beside the products for voltage, fit, and warranty assistance.`
+        : "Collection preview. Save your device, budget and preferences with Find my match before reviewing a purchase.",
     );
-    document.getElementById("shop")?.scrollIntoView({
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ? "instant"
-        : "smooth",
-    });
+    setTimeout(() => {
+      document.getElementById("shop")?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "instant"
+          : "smooth",
+      });
+    }, 50);
   }
   async function upload(
     form: FormData,
@@ -652,7 +727,7 @@ export default function Storefront() {
                 <div className="hero-dale-input-wrap">
                   <input
                     type="text"
-                    placeholder="e.g. Find me a quiet Bluetooth mouse under $30, or a compact 65W charger..."
+                    placeholder="Ask DALE anything (e.g. Find me a quiet Bluetooth mouse under $30, or a compact 65W charger)..."
                     value={heroPrompt}
                     onChange={(e) => setHeroPrompt(e.target.value)}
                     onKeyDown={(e) => {
@@ -669,88 +744,94 @@ export default function Storefront() {
                     <span>Ask DALE</span> <ArrowRight size={15} />
                   </button>
                 </div>
-                <div className="hero-dale-chips">
-                  {[
-                    "Silent Bluetooth mouse",
-                    "Compact 65W charger",
-                    "USB-C dock with HDMI",
-                    "Travel essentials bundle",
-                  ].map((chip) => (
-                    <button
-                      key={chip}
-                      type="button"
-                      className="hero-chip"
-                      onClick={() => handleHeroSubmit(chip)}
-                    >
-                      {chip} <ArrowRight size={12} />
-                    </button>
-                  ))}
-                </div>
               </div>
             </div>
             <section
-              className="collection-section"
+              className="parallax-categories-section"
               id="collections"
               aria-labelledby="collection-title"
             >
-              <div className="collection-heading">
+              <div className="parallax-section-header">
+                <div className="eyebrow">CURATED COLLECTIONS</div>
                 <h2 id="collection-title">Objects for everyday life.</h2>
-                <p>Power. Connection. Sound. Storage. Everyday essentials.</p>
+                <p>
+                  Explore each category individually, or view all verified accessories tailored specifically to your device.
+                </p>
               </div>
-              <div className="collection-grid">
-                {[
-                  {
-                    id: "chargers",
-                    title: "Power & charging",
-                    product: catalog[0],
-                  },
-                  {
-                    id: "docks",
-                    title: "Desk & connection",
-                    product: catalog[3],
-                  },
-                  { id: "audio", title: "Sound & focus", product: catalog[5] },
-                  {
-                    id: "storage",
-                    title: "Storage & carry",
-                    product: catalog[4],
-                  },
-                  {
-                    id: "accessories",
-                    title: "Everyday essentials",
-                    product: catalog[6],
-                  },
-                ].map((collection) => (
-                  <button
-                    key={collection.id}
-                    className="collection-tile"
-                    aria-pressed={category === collection.id}
-                    onClick={() => browseCollection(collection.id)}
+              <div className="parallax-stack">
+                {parallaxCategories.map((col) => (
+                  <div
+                    key={col.id}
+                    className="parallax-category-card"
+                    onClick={() => browseCollection(col.id)}
                   >
-                    <ProductArt product={collection.product} />
-                    <span className="collection-caption">
-                      <span>
-                        {collection.title}
-                        <small>
-                          {
-                            catalog.filter(
-                              (item) => item.category === collection.id,
-                            ).length
-                          }{" "}
-                          products
-                        </small>
+                    <div className="parallax-card-content">
+                      <div className="parallax-card-badge">
+                        <span>{col.numeral}</span>
+                        <span className="dot">·</span>
+                        <span>{col.tagline}</span>
+                      </div>
+                      <h3 className="parallax-card-title">{col.title}</h3>
+                      <p className="parallax-card-desc">{col.desc}</p>
+                      <div className="parallax-card-tags">
+                        {col.tags.map((tag) => (
+                          <span key={tag} className="parallax-card-tag">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <button
+                        type="button"
+                        className="parallax-card-cta"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          browseCollection(col.id);
+                        }}
+                      >
+                        <span>Explore {col.title}</span>
+                        <ArrowRight size={15} />
+                      </button>
+                    </div>
+                    <div className="parallax-card-visual">
+                      <div className="art-frame">
+                        <ProductArt product={col.featured} />
+                      </div>
+                      <span className="parallax-count-pill">
+                        {col.count} certified products
                       </span>
-                      <ArrowRight size={15} />
-                    </span>
-                  </button>
+                    </div>
+                  </div>
                 ))}
               </div>
+              <div className="device-fit-trigger-card">
+                <div>
+                  <h3>Filter across all categories for your device</h3>
+                  <p>
+                    Need all accessories matched to your {deviceLabel(model)}? View every compatible charger, dock, audio device, and cable together.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="device-fit-btn"
+                  onClick={() => {
+                    setIsDeviceMode(true);
+                    setCategory("");
+                    setTimeout(() => {
+                      document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" });
+                    }, 50);
+                  }}
+                >
+                  <span>View all for my device</span>
+                  <ArrowRight size={14} />
+                </button>
+              </div>
             </section>
-            <section
-              className="shopping-area"
-              id="shop"
-              aria-label="Personal shopping"
-            >
+            {(category !== "" || isDeviceMode) && (
+              <section
+                className="shopping-area"
+                id="shop"
+                aria-label="Personal shopping"
+              >
               <aside className="dale-companion-aside" id="dale-chat">
                 <AgentWorkspace
                   key={`sidebar:${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
@@ -817,8 +898,34 @@ export default function Storefront() {
               <div className="results">
                 <div className="section-heading">
                   <div>
-                    <div className="eyebrow">CURATED FOR YOUR NEEDS</div>
-                    <h2>Selected for you.</h2>
+                    <button
+                      type="button"
+                      className="back-to-categories-btn"
+                      onClick={() => {
+                        setCategory("");
+                        setIsDeviceMode(false);
+                        setTimeout(() => {
+                          document.getElementById("collections")?.scrollIntoView({ behavior: "smooth" });
+                        }, 50);
+                      }}
+                    >
+                      <ArrowLeft size={13} /> Back to all categories
+                    </button>
+                    <div className="eyebrow">
+                      {isDeviceMode
+                        ? "VERIFIED DEVICE ECOSYSTEM"
+                        : `CURATED COLLECTION · ${category ? category.toUpperCase() : "ALL OBJECTS"}`}
+                    </div>
+                    <h2>
+                      {isDeviceMode
+                        ? `All essentials for ${deviceLabel(model)}`
+                        : (categoryTitles[category] || "Selected for you")}
+                    </h2>
+                    <p style={{ fontSize: "14px", color: "#a1a1a6", margin: "4px 0 0" }}>
+                      {isDeviceMode
+                        ? `Showing all chargers, docks, audio, cables and storage certified compatible with your ${deviceLabel(model)}.`
+                        : `Showing certified models tested for voltage, thermal management, and connection fit.`}
+                    </p>
                   </div>
                   <div className="catalog-heading-controls">
                     <ShoppingBriefMenu
@@ -853,23 +960,37 @@ export default function Storefront() {
                   </div>
                 </div>
                 <div
-                  className="category-index"
+                  className="catalog-category-pills"
                   aria-label="Filter product category"
                 >
-                  {[
-                    ["", "All objects"],
-                    ["chargers", "Chargers"],
-                    ["docks", "Docks & hubs"],
-                    ["audio", "Headphones"],
-                    ["storage", "Storage"],
-                    ["accessories", "Accessories"],
-                  ].map(([id, label]) => (
+                  <button
+                    type="button"
+                    className={`cat-pill ${isDeviceMode && category === "" ? "active" : ""}`}
+                    onClick={() => {
+                      setIsDeviceMode(true);
+                      setCategory("");
+                      setProducts(
+                        searchCatalog({
+                          model,
+                          category: "",
+                          budget: Math.round(Number(budget) * 100),
+                          preference,
+                          priority,
+                          weights,
+                        }),
+                      );
+                    }}
+                  >
+                    All for my device ({catalog.filter((p) => p.compatibleModels.includes(model)).length})
+                  </button>
+                  {parallaxCategories.map((col) => (
                     <button
-                      key={id}
-                      aria-pressed={category === id}
-                      onClick={() => browseCollection(id)}
+                      key={col.id}
+                      type="button"
+                      className={`cat-pill ${category === col.id ? "active" : ""}`}
+                      onClick={() => browseCollection(col.id)}
                     >
-                      {label}
+                      {col.title} ({catalog.filter((p) => p.category === col.id).length})
                     </button>
                   ))}
                 </div>
@@ -1094,6 +1215,7 @@ export default function Storefront() {
                 )}
               </div>
             </section>
+            )}
             <section className="trust-row">
               <div>
                 <ShieldCheck />

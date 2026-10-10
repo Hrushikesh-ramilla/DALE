@@ -822,28 +822,323 @@ select option {
   color: #ffffff;
 }
 
-/* Shopping Area: Sticky 2-Column with DALE Chat Sidebar */
+/* Shopping Area: Slim 2-Column with DALE Chat Companion */
 .shopping-area {
   display: grid;
-  grid-template-columns: 380px minmax(0, 1fr);
+  grid-template-columns: 310px minmax(0, 1fr);
   align-items: start;
-  gap: 36px;
-  margin: 34px 0 60px;
-  scroll-margin-top: 100px;
+  gap: 32px;
+  margin: 28px 0 60px;
+  scroll-margin-top: 90px;
 }
 
 .dale-companion-aside {
   position: sticky;
   top: 84px;
-  height: calc(100vh - 104px);
-  max-height: 840px;
+  height: auto;
+  max-height: min(600px, calc(100vh - 104px));
   background: #141416;
   border: 1px solid #2d2d30;
-  border-radius: 20px;
+  border-radius: 18px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================================================
+   Armani & YSL Editorial Gliding Parallax Category Showcase
+   ======================================================== */
+.parallax-categories-section {
+  position: relative;
+  margin: 52px 0 84px;
+  width: 100%;
+}
+
+.parallax-section-header {
+  margin-bottom: 36px;
+}
+
+.parallax-section-header .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #86868b;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.parallax-section-header h2 {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: clamp(30px, 4.2vw, 44px);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  color: #f5f5f7;
+  margin: 0 0 10px;
+  line-height: 1.15;
+}
+
+.parallax-section-header p {
+  font-size: 15px;
+  color: #a1a1a6;
+  max-width: 620px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.parallax-stack {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 0;
+}
+
+/* Individual Parallax Category Card (Glides & Stacks) */
+.parallax-category-card {
+  position: sticky;
+  top: 86px;
+  min-height: 480px;
+  margin-bottom: 48px;
+  border-radius: 26px;
+  background: #111114;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 -20px 48px rgba(0, 0, 0, 0.7),
+    0 32px 80px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s ease,
+    box-shadow 0.35s ease;
+}
+
+.parallax-category-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow:
+    0 -24px 54px rgba(0, 0, 0, 0.75),
+    0 36px 90px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.parallax-card-content {
+  padding: 48px 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 2;
+}
+
+.parallax-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #a1a1a6;
+}
+
+.parallax-card-badge .dot {
+  color: #555558;
+}
+
+.parallax-card-title {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: clamp(28px, 3.2vw, 38px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: #f5f5f7;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.parallax-card-desc {
+  font-size: 14px;
+  color: #a1a1a6;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 480px;
+}
+
+.parallax-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.parallax-card-tag {
+  font-size: 11px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: #d1d1d6;
+}
+
+.parallax-card-cta {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.2s ease,
+    box-shadow 0.25s ease;
+  width: fit-content;
+}
+
+.parallax-card-cta:hover {
+  transform: translateY(-2px);
+  background: #f5f5f7;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.25);
+}
+
+.parallax-card-visual {
+  height: 100%;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: radial-gradient(circle at 60% 50%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0) 70%), #0c0c0e;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px;
+}
+
+.parallax-card-visual .art-frame {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.parallax-category-card:hover .parallax-card-visual .art-frame {
+  transform: scale(1.05);
+}
+
+.parallax-count-pill {
+  position: absolute;
+  bottom: 24px;
+  right: 28px;
+  font-size: 11px;
+  color: #86868b;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+}
+
+/* Device Fit Banner at End of Parallax */
+.device-fit-trigger-card {
+  margin-top: 16px;
+  padding: 32px 40px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.device-fit-trigger-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f5f5f7;
+  margin: 0 0 4px;
+}
+
+.device-fit-trigger-card p {
+  font-size: 13px;
+  color: #a1a1a6;
+  margin: 0;
+}
+
+.device-fit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f5f5f7;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.device-fit-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+/* Category & Device View in Shopping Area */
+.back-to-categories-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #a1a1a6;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  padding: 5px 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-to-categories-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.cat-pill {
+  padding: 6px 14px;
+  font-size: 12px;
+  color: #a1a1a6;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cat-pill:hover,
+.cat-pill.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
 }
 
 .catalog-heading-controls {
@@ -1303,7 +1598,26 @@ select option {
     position: relative;
     top: 0;
     height: auto;
-    max-height: 600px;
+    max-height: 520px;
+  }
+  .parallax-category-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    top: 76px;
+  }
+  .parallax-card-content {
+    padding: 32px 24px;
+  }
+  .parallax-card-visual {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    min-height: 280px;
+    padding: 24px;
+  }
+  .device-fit-trigger-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
   }
   .mobile-dale-dock {
     display: block;

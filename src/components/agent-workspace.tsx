@@ -16,25 +16,6 @@ import type { snapshot } from "@/server/service";
 
 export type AgentResult = Awaited<ReturnType<typeof runAgent>>;
 type Session = Awaited<ReturnType<typeof snapshot>>;
-const samples = [
-  {
-    label: "Try a real device",
-    task: "Find a charger for my MacBook Air M2 13-inch under $50. I already have the original MagSafe 3 cable. Normal charging is fine.",
-  },
-  {
-    label: "Find a charger",
-    task: "Find a 65W charger under $40 for USB-C Laptop (65W)",
-  },
-  {
-    label: "Check a seller message",
-    task: "Is this seller message safe? Pay using gift cards immediately and share your verification code to release the order.",
-  },
-  { label: "Track my order", task: "Show my orders" },
-  {
-    label: "Help with a return",
-    task: "My delivered item is damaged and I want a refund",
-  },
-];
 
 export function AgentWorkspace({
   session,
@@ -194,10 +175,10 @@ export function AgentWorkspace({
         {variant === "sidebar" && !latest && (
           <div className="sidebar-welcome-card">
             <p className="welcome-intro">
-              I’m <strong>DALE</strong>, your personal buyer advocate.
+              Hello, I’m <strong>DALE</strong>.
             </p>
             <p className="welcome-sub">
-              Ask me about connector fit, fast charging, or finding deals while browsing the catalog right beside us.
+              Ask me anything about compatibility, connector fit, charging speeds, or scam prevention. Tell me what you need, and I’ll help you find the right match.
             </p>
           </div>
         )}
@@ -205,10 +186,7 @@ export function AgentWorkspace({
           <div className="agent-capability-note">
             <strong>Buyer advocate</strong>
             <span>
-              Manufacturer-backed MacBook Air M1/M2 and 13-inch Pro M1 charger
-              comparisons, message safety, group savings and order support. Review
-              the sources and approve each commitment, purchase or remedy
-              yourself.
+              Manufacturer-backed device fit and charger comparisons, message safety, group savings and order support. Review the sources and approve each commitment yourself.
             </span>
           </div>
         )}
@@ -218,14 +196,14 @@ export function AgentWorkspace({
             void submit();
           }}
         >
-          <label htmlFor="agent-task">Your task for DALE</label>
+          <label htmlFor="agent-task">Your conversation with DALE</label>
           <textarea
             id="agent-task"
             value={task}
             onChange={(event) => setTask(event.target.value)}
             maxLength={2000}
-            rows={3}
-            placeholder="Tell DALE what you want to get done…"
+            rows={2}
+            placeholder="Ask DALE anything (e.g. Will this charger work with my laptop?)..."
             disabled={pending || restoring}
           />
           <div className="agent-compose-actions">
@@ -244,21 +222,10 @@ export function AgentWorkspace({
               ) : (
                 <ArrowRight size={16} />
               )}
-              {pending ? "Working on your task" : "Send task"}
+              {pending ? "Working on your task" : "Send message"}
             </button>
           </div>
         </form>
-        <div className="agent-samples" aria-label="Example agent tasks">
-          {samples.map((sample) => (
-            <button
-              key={sample.label}
-              disabled={pending || restoring}
-              onClick={() => setTask(sample.task)}
-            >
-              {sample.label} <ArrowRight size={13} />
-            </button>
-          ))}
-        </div>
         {variant !== "sidebar" && voice}
         {error && (
           <p className="agent-error" role="alert">
