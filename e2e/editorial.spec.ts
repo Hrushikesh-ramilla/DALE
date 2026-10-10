@@ -199,7 +199,7 @@ test("editorial storefront and product dialog fit desktop, tablet and mobile wit
     await page.evaluate(() => document.fonts.ready);
     await expect(
       page.getByRole("heading", {
-        name: "A better way to choose.",
+        name: "Explore the sample collection.",
       }),
     ).toBeVisible();
     expect(

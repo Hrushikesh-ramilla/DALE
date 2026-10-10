@@ -2,12 +2,41 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Restore monochrome product presentation
+
+- Replaced the rejected page-wide teal/glass treatment with black navigation, a light centered product showcase, clean sans-serif headings, flat pill controls, neutral product materials and understated transitions. Removed the broad glass stylesheet rather than layering more tinted treatments. The existing DALE wordmark is retained.
+- Kept desaturated teal only in the closing footer. Preserved genuine product geometry, reduced-motion/fallback behavior, shopping guards, guided scenarios and voice adapters. Apple’s product-first composition informed the original layout; no Apple assets or code are reused.
+- Updated responsive regression to assert a black page, a flat header and the isolated teal footer at four widths. Lint/typecheck, optimized build and all 25 packaged-production browser journeys pass (2.9 minutes). Recorded source-aligned archive checksum and reviewed desktop/mobile opening, support typography and footer. Cloud/provider gates remain unchanged.
+
+## 2026-10-07 — Final packaged experience release
+
+- Application 1bcd732 includes concrete device names in voice replies and grounded native tool results. Final lint/typecheck, optimized build and all 25 packaged-production journeys pass, including the new display-name assertion. This revision also passes 150 unit/contract/database tests, 200 seeded workflow traces, 107 deterministic scenarios, 300 frozen synthetic records and 180 mocked native checks.
+- GitHub run 37624258595 passes both quality and real PostgreSQL/app/worker production container jobs at the final application commit. Prepared the final secret-free standalone archive; SHA-256 and immutable application reference are recorded in VALIDATION. Manually reviewed the running packaged storefront, product dialog, mobile support/footer/demo/voice, groups and orders. Local production remains available for engineer testing with fixture payments/analysis and no live voice/provider calls.
+- Updated master/design/experience/status documentation to distinguish completed product workflows from physical, independent and genuine-provider acceptance gates. Stabilized the SSM helper's parameter quoting for Windows shells. Hosted application update remains pending owner AWS/SSM setup, deferred until this local milestone is complete.
+
 ## 2026-10-07 — Guided engineer entry and voice workflows
 
 - Added a no-account `/demo` with nine private, fixture-only scenarios, stable shopper/second-shopper/seller/reviewer personas, guided expected outcomes, redacted exports and archive-preserving reset. Owner-bound cookies, expiry, origin checks and shared activity/storage limits prevent fixture role switching from granting ordinary-account or cross-workspace access. Ordinary operator scenarios remain restricted.
 - Added visible voice entry, editable transcripts, deterministic English shopping/support/order intents and a native Gemini Live audio adapter with constrained, single-use short-lived tokens. PCM resampling, playback, interruption and resource cleanup are implemented. A persistent microphone stop control remains reachable after scrolling to results. Financial approval and arbitrary code execution remain protected.
 - Live voice defaults to disabled and release packaging forces disabled settings until the owner confirms free quota and disabled billing. No live Gemini call or AI spend occurred. Both standalone/Docker packages include the microphone worklet asset.
 - Lint/typecheck and all 150 unit/contract/database tests pass before the final presentation refinements. Fifteen new demo/voice domain tests cover ownership, persona continuity, bounded storage, native token locking and quota/5xx retry behavior. Earlier targeted browser checks passed for guided purchase/return/reset and synthetic native audio/tool/playback/stop. Expanded failure/scenario browser regression and final production verification follow in the release milestone.
+
+## 2026-10-07 — Stable deployment access preparation
+
+- Documented Systems Manager access for the existing EC2 instance and prepared a PowerShell tunnel helper that checks AWS login, agent readiness and required local tooling before opening an IAM-authorized localhost tunnel. This removes dependence on the deployment machine's changing VPN IP once activated.
+- The script passes PowerShell parsing. No authenticated AWS CLI identity is available; instance role/agent activation, tunnel verification and hosted deployment remain pending. No paid resource was provisioned and no SSH security group was broadened. The owner requested cloud setup questions be deferred until local implementation and verification finish.
+
+## 2026-10-07 — Complete draft handling and release contracts
+
+- Voice support drafts now retain the stated issue/remedy, let the shopper choose an order, prefill the review form and require explicit submission. Drafts clear on submission/discard/logout. Owned demo groups guide the second-shopper persona instead of offering a protected invitation that cannot be joined anonymously.
+- Disabled initial navigation/session/device-label controls until session restoration, avoiding clicks on inert pre-hydration controls. Removed an overlapping background product illustration and corrected the demo-link contrast. Added persistent live microphone stop controls, expired-token rejection before capture and clear disconnect/restart behavior.
+- Shared the demo request schema with generated OpenAPI, added all three voice endpoints and documented complete manual journeys/expected results. Each browser-suite run gets a fresh isolated data directory so retained demo limits cannot pollute subsequent runs.
+- All 150 tests and lint/typecheck pass; 19 initial full-suite journeys passed. Four failure checks needed scoped alert selectors because Next also creates a route-announcement alert; they pass after the correction, along with identification and voice matching. The support draft journey exposed a click before restoration; it passes after the restoration guard. Final full production regression follows.
+
+## 2026-10-07 — Production experience verification and voice naming
+
+- Application c8a829d passes the optimized build and all 25 journeys against packaged standalone production (2.9 minutes). GitHub run 37623012403 passes quality and production app/worker/PostgreSQL container checks. The release includes the microphone worklet, excludes environment/private data, and keeps live voice disabled.
+- Manual review checked the actual production glass controls/rotating geometry, mobile support/footer, no-login scenario entry and editable voice controls. A voice reply still showed an internal device identifier; corrected it to the concrete profile name, supplied that display name in grounded native tool responses and added an explicit browser assertion. Lint/typecheck pass for the naming fix; final release checks follow.
 
 ## 2026-10-07 — Glass surfaces and genuine product geometry
 

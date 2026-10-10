@@ -138,10 +138,9 @@ test("native Live protocol handles synthetic microphone PCM, tools, playback and
     .getByRole("button", { name: "Start microphone conversation" })
     .click();
   await expect(page.locator(".voice-heading")).toContainText("Unavailable");
-  await expect(page.getByRole("alert")).toContainText(
-    "Typed shopping remains available",
-    { ignoreCase: true },
-  );
+  await expect(
+    page.getByLabel("DALE voice companion").getByRole("alert"),
+  ).toContainText("Typed shopping remains available", { ignoreCase: true });
   await expect
     .poll(() =>
       page.evaluate(() =>

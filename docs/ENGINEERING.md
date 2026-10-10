@@ -4,21 +4,25 @@ The hosted demo is https://16.4.25.181.sslip.io. Access codes are in the owner's
 
 ## Provider and fixture workspaces
 
+The revised `/demo` launcher is the preferred engineer entry: nine owned fixture scenarios, no login/access code, stable personas, guided steps and redacted export. Role switching/reset require both the authenticated fixture session and its HttpOnly ownership cookie. Ordinary operators cannot join demo workspaces through the access-code endpoint; demo reviewers cannot bypass the bounded launcher through `/api/scenarios`. All personas share per-workspace lifetime activity limits; demo upload storage is bounded without deleting audit history. See the guided section in MANUAL_TESTS.
+
+Voice tests include deterministic transcript intents, native ephemeral-token request contracts and a browser audio/WebSocket test with synthetic microphone PCM and intercepted Google traffic. `VOICE_MODE=live`, `VOICE_MODEL=gemini-3.8-live`, `VOICE_FREE_TIER_CONFIRMED=true` and `VOICE_BILLING_DISABLED=true` are required together for ordinary live voice. These are owner attestations, not a verified Google billing configuration. Release packaging sets voice disabled. No permanent key is returned to the client. Real ASR/voice quality and provider availability remain unverified.
+
 Normal hosted workspaces use PayPal sandbox. AI runs labeled fixtures while direct Gemini quota is unavailable, following the owner's no-spend instruction; the native adapter remains implemented and contract-tested. A successful fixture workflow is separate evidence; it cannot establish real provider completion. Current PayPal approval is blocked because the merchant rejects USD. The most recent Gemini request returned HTTP 429. Live verification will resume only when usable no-spend quota is available.
 
 Sign in as reviewer, open Environment details, select Engineering scenario, and choose Open new fixture scenario as shopper. This changes the current profile into a new isolated synthetic shopper session. Record its workspace ID, then use another profile to sign in as seller or reviewer for that workspace. Both payment and analysis adapters in that workspace remain fixture mode even on the sandbox/live host.
 
-| Scenario ID | Expected behavior |
-| --- | --- |
-| `fresh` | Empty shopper workspace; complete the usual explicit approval, order, and return flows |
-| `delivered` | One synthetic delivered order; customer can open a refund or replacement request and upload original evidence |
-| `identifier_conflict` | Conflicting return identifiers; claim remains open for human review, without accusing the customer |
-| `seller_silence` | Synthetic response deadline advanced; one human-review escalation with no automatic refund or denial |
-| `refund_failure` | Refund failed, zero refunded balance, visible provider fixture reference and human-review next step |
-| `refund_timeout` | Authorized refund initially has an unknown outcome; worker recovers using the same operation, with one refund total |
-| `canceled_order` | Seller cancellation leaves the captured payment recorded and offers customer-selected refund/replacement |
-| `late_order` | Simulated clock passes the delivery promise; one help event, with no automatic money movement |
-| `group_partial` | Another synthetic participant declines payment; the customer's locked 10% discount remains available |
+| Scenario ID           | Expected behavior                                                                                                   |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `fresh`               | Empty shopper workspace; complete the usual explicit approval, order, and return flows                              |
+| `delivered`           | One synthetic delivered order; customer can open a refund or replacement request and upload original evidence       |
+| `identifier_conflict` | Conflicting return identifiers; claim remains open for human review, without accusing the customer                  |
+| `seller_silence`      | Synthetic response deadline advanced; one human-review escalation with no automatic refund or denial                |
+| `refund_failure`      | Refund failed, zero refunded balance, visible provider fixture reference and human-review next step                 |
+| `refund_timeout`      | Authorized refund initially has an unknown outcome; worker recovers using the same operation, with one refund total |
+| `canceled_order`      | Seller cancellation leaves the captured payment recorded and offers customer-selected refund/replacement            |
+| `late_order`          | Simulated clock passes the delivery promise; one help event, with no automatic money movement                       |
+| `group_partial`       | Another synthetic participant declines payment; the customer's locked 10% discount remains available                |
 
 To reset, sign in as reviewer for a designated fixture workspace and choose Archive fixture and start fresh. The old workspace is retained with financial and evidence history, becomes read-only, and a new workspace receives the new shopper session. Normal provider workspaces cannot be reset. An unverified webhook cannot act as a fixture or impersonate PayPal.
 

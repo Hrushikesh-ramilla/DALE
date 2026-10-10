@@ -58,6 +58,16 @@ it.each([
 );
 it("drafts remedies and navigates without claiming a financial action", () => {
   expect(
+    understandVoice({
+      ...request,
+      transcript: "I received the wrong item and want a replacement",
+    }),
+  ).toMatchObject({
+    kind: "support_draft",
+    reason: "wrong_item",
+    request: "replacement",
+  });
+  expect(
     understandVoice({ ...request, transcript: "Refund my damaged item" }).kind,
   ).toBe("support_draft");
   expect(understandVoice({ ...request, transcript: "Show my orders" })).toEqual(

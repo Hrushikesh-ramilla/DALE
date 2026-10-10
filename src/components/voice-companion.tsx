@@ -10,6 +10,7 @@ import type {
 import type { snapshot, shop } from "@/server/service";
 import type { VoiceIntent } from "@/domain/voice";
 import { Pcm16Encoder, audioBase64, decodeAudio } from "@/lib/voice-audio";
+import { deviceText, deviceLabel } from "@/domain/catalog";
 export type VoiceResult = {
   intent: VoiceIntent;
   result?: Awaited<ReturnType<typeof shop>>;
@@ -147,7 +148,7 @@ export function VoiceCompanion({
     onResult(data);
     setReply(
       data.intent.kind === "shopping"
-        ? data.result!.analysis.summary
+        ? deviceText(data.result!.analysis.summary)
         : data.intent.kind === "clarification" ||
             data.intent.kind === "review_required"
           ? data.intent.message
@@ -313,6 +314,10 @@ export function VoiceCompanion({
                     response: result
                       ? {
                           intent: result.intent,
+                          deviceProfile:
+                            result.intent.kind === "shopping"
+                              ? deviceLabel(result.intent.brief.model)
+                              : undefined,
                           products: result.result?.products.map((product) => ({
                             name: product.name,
                             price: product.price,

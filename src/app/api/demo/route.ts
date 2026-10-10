@@ -1,4 +1,3 @@
-import { z } from "zod";
 import { actorFromRequest, setSessionCookie } from "@/server/auth";
 import {
   assertDemoOwner,
@@ -6,9 +5,10 @@ import {
   launchDemo,
   setDemoCookie,
   switchDemoPersona,
+  demoRequestSchema,
 } from "@/server/demo";
 import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
-import { scenarioKind, scenarioDescriptions } from "@/server/scenarios";
+import { scenarioDescriptions } from "@/server/scenarios";
 import { snapshot } from "@/server/service";
 import { getWorkspace } from "@/server/state";
 import { takeRequestBudget } from "@/server/budgets";
@@ -34,16 +34,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     requireSameOrigin(request);
-    const input = z
-      .discriminatedUnion("action", [
-        z.object({ action: z.literal("launch"), kind: scenarioKind }),
-        z.object({ action: z.literal("reset"), kind: scenarioKind }),
-        z.object({
-          action: z.literal("persona"),
-          persona: z.enum(["buyer", "second_buyer", "seller", "reviewer"]),
-        }),
-      ])
-      .parse(await jsonBody(request));
+    const input = demoRequestSchema.parse(await jsonBody(request));
     if (input.action === "persona") {
       const actor = await actorFromRequest();
       await takeRequestBudget(actor, "demo-persona", 20);

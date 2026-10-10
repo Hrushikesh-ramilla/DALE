@@ -36,6 +36,7 @@ export default defineConfig({
           ALLOW_LOCAL_STORAGE: "true",
           LOCAL_DATA_DIR: resolve(
             productionPreview ? ".data/e2e-production" : ".data/e2e",
+            `run-${Date.now()}-${process.pid}`,
           ),
           SESSION_SECRET: "e2e-session-secret-only-for-local-test-server",
           OPERATOR_ACCESS_CODE: "e2e-operator",

@@ -30,7 +30,7 @@ class SceneBoundary extends Component<
 function Rounded({
   size,
   position = [0, 0, 0],
-  color = "#64776f",
+  color = "#8a8a8d",
   glass = false,
 }: {
   size: [number, number, number];
@@ -95,7 +95,7 @@ function ObjectModel({
         );
     if (Math.abs(remaining) > 0.001) invalidate();
   });
-  const dark = "#17241f";
+  const dark = "#171719";
   return (
     <group ref={group} rotation={[0.12, 0.35, -0.1]} position={[0, 0.1, 0]}>
       {product.category === "audio" ? (
@@ -107,7 +107,7 @@ function ObjectModel({
           <mesh position={[0, 0.26, 0]}>
             <torusGeometry args={[1.13, 0.04, 16, 64, Math.PI]} />
             <meshStandardMaterial
-              color="#8daba0"
+              color="#b5b5b9"
               metalness={0.8}
               roughness={0.22}
             />
@@ -117,12 +117,12 @@ function ObjectModel({
               <Rounded
                 size={[0.09, 0.7, 0.1]}
                 position={[0, 0.33, 0]}
-                color="#9bada4"
+                color="#b8b8bc"
               />
               <mesh rotation={[0, 0, Math.PI / 2]} scale={[1, 1.25, 1]}>
                 <cylinderGeometry args={[0.44, 0.44, 0.26, 48]} />
                 <meshStandardMaterial
-                  color="#74877e"
+                  color="#858589"
                   metalness={0.72}
                   roughness={0.27}
                 />
@@ -140,33 +140,33 @@ function ObjectModel({
         </>
       ) : product.category === "storage" ? (
         <>
-          <Rounded size={[1.5, 2.25, 0.27]} color="#829c8e" />
+          <Rounded size={[1.5, 2.25, 0.27]} color="#b9b9bc" />
           <Rounded
             size={[0.32, 0.04, 0.09]}
             position={[0, -1.125, 0]}
-            color="#07110b"
+            color="#111113"
           />
           <Rounded
             size={[0.018, 1.65, 0.01]}
             position={[-0.62, 0, 0.141]}
-            color="#c3d1c4"
+            color="#dedee0"
           />
         </>
       ) : product.category === "docks" ? (
         <>
-          <Rounded size={[2.5, 0.52, 0.7]} color="#768a82" />
+          <Rounded size={[2.5, 0.52, 0.7]} color="#99999d" />
           {[-0.8, -0.3, 0.2, 0.7].map((x) => (
             <Rounded
               key={x}
               size={[0.28, 0.14, 0.025]}
               position={[x, 0, 0.36]}
-              color="#07100a"
+              color="#111113"
             />
           ))}
           <Rounded
             size={[0.16, 0.12, 0.025]}
             position={[1.26, 0, 0]}
-            color="#07100a"
+            color="#111113"
           />
         </>
       ) : product.category === "accessories" ? (
@@ -174,7 +174,7 @@ function ObjectModel({
           <mesh scale={[0.8, 0.48, 1.1]}>
             <sphereGeometry args={[1, 48, 32]} />
             <meshStandardMaterial
-              color="#74877e"
+              color="#858589"
               roughness={0.24}
               metalness={0.3}
             />
@@ -182,26 +182,26 @@ function ObjectModel({
           <Rounded
             size={[0.085, 0.055, 0.32]}
             position={[0, 0.47, -0.2]}
-            color="#16281f"
+            color="#242426"
           />
         </>
       ) : (
         <>
-          <Rounded size={[1.35, 1.6, 0.9]} color="#829c8e" />
+          <Rounded size={[1.35, 1.6, 0.9]} color="#b9b9bc" />
           <Rounded
             size={[0.36, 0.12, 0.025]}
             position={[0, 0.15, 0.46]}
-            color="#07100a"
+            color="#111113"
           />
           <Rounded
             size={[0.11, 0.5, 0.07]}
             position={[-0.22, 1.02, 0]}
-            color="#b8c7bb"
+            color="#ceced1"
           />
           <Rounded
             size={[0.11, 0.5, 0.07]}
             position={[0.22, 1.02, 0]}
-            color="#b8c7bb"
+            color="#ceced1"
           />
         </>
       )}
@@ -283,18 +283,18 @@ export default function ProductScene({ product }: { product: Product }) {
               <directionalLight
                 position={[3, 5, 4]}
                 intensity={4}
-                color="#e0e9dd"
+                color="#ffffff"
               />
               <directionalLight
                 position={[-4, 2, -2]}
                 intensity={3}
-                color="#6d9f99"
+                color="#dadade"
               />
               <ObjectModel product={product} angle={angle} reduced={reduced} />
               <Rounded
                 size={[3.7, 0.13, 2]}
                 position={[0, -1.27, 0]}
-                color="#98bdb2"
+                color="#e5e5e7"
                 glass
               />
             </Canvas>

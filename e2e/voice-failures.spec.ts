@@ -56,7 +56,9 @@ for (const failure of ["permission", "quota", "expired"] as const) {
       .getByRole("button", { name: "Start microphone conversation" })
       .click();
     await expect(page.locator(".voice-heading")).toContainText("Unavailable");
-    await expect(page.getByRole("alert")).toContainText(
+    await expect(
+      page.getByLabel("DALE voice companion").getByRole("alert"),
+    ).toContainText(
       failure === "permission"
         ? "permission denied"
         : failure === "quota"

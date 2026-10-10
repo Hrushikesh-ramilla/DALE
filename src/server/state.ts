@@ -3,6 +3,7 @@ import { getDatabase, type Sql } from "./database";
 import type { Quote } from "../domain/guard";
 import type { ClaimAnalysis, Evidence } from "../domain/claims";
 import type { PurchaseBrief } from "../domain/brief";
+import type { AgentRun } from "../domain/agent";
 export type { Evidence } from "../domain/claims";
 export type Role = "buyer" | "seller" | "reviewer";
 export type Actor = { workspaceId: string; userId: string; role: Role };
@@ -122,6 +123,7 @@ export type Workspace = {
     buyerId: string;
     turns: { role: "user" | "assistant"; text: string; at: string }[];
   }[];
+  agentRuns?: (AgentRun & { buyerId: string })[];
   orders: Order[];
   groups: Group[];
   cases: ReturnCase[];
