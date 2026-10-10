@@ -1956,69 +1956,7 @@ export default function Storefront() {
             )}
           </>
         )}
-        <footer className="site-footer">
-          <div className="footer-brand">
-            <div className="brand">
-              <BrandWordmark />
-              <span className="sr-only">DALE</span>
-            </div>
-            <p>
-              Considered choices. Customer-first commerce. From your first
-              search to a fair resolution.
-            </p>
-          </div>
-          <div className="footer-links">
-            <strong>The collection</strong>
-            <button
-              onClick={() => {
-                setTab("discover");
-                window.scrollTo({
-                  top: 0,
-                  behavior: window.matchMedia(
-                    "(prefers-reduced-motion: reduce)",
-                  ).matches
-                    ? "instant"
-                    : "smooth",
-                });
-              }}
-            >
-              Discover essentials
-            </button>
-            <button onClick={() => setTab("groups")}>Buy together</button>
-            <button onClick={() => setTab("orders")}>Track an order</button>
-          </div>
-          <div className="footer-links">
-            <strong>At your service</strong>
-            <button onClick={() => setTab("support")}>Returns & support</button>
-            <button
-              onClick={() => {
-                setScam(null);
-                setModal({ kind: "scam" });
-              }}
-            >
-              Check a message
-            </button>
-            <button
-              onClick={() => {
-                setRole("seller");
-                setWorkspaceId(session?.actor.workspaceId || "");
-                setModal({ kind: "login" });
-              }}
-            >
-              Operator workspace
-            </button>
-          </div>
-        </footer>
-        <div className="footer-bottom">
-          <span>DALE / The considered collection</span>
-          <span>
-            Test storefront · Sourced products + sample catalog · Simulated
-            shipping · USD
-          </span>
-        </div>
-        <div className="closing-wordmark" aria-hidden="true">
-          <BrandWordmark />
-        </div>
+
         {session && (
           <details className="engineering-details">
             <summary>Environment details</summary>
@@ -2149,6 +2087,70 @@ export default function Storefront() {
           </details>
         )}
       </main>
+      <footer className="site-footer-wrap" inert={!!modal}>
+        <div className="site-footer-inner">
+          <div className="site-footer">
+            <div className="footer-brand">
+              <div className="brand">
+                <BrandWordmark />
+                <span className="sr-only">DALE</span>
+              </div>
+              <p>
+                Considered choices. Customer-first commerce. From your first
+                search to a fair resolution.
+              </p>
+            </div>
+            <div className="footer-links">
+              <strong>The collection</strong>
+              <button
+                onClick={() => {
+                  setTab("discover");
+                  window.scrollTo({
+                    top: 0,
+                    behavior: window.matchMedia(
+                      "(prefers-reduced-motion: reduce)",
+                    ).matches
+                      ? "instant"
+                      : "smooth",
+                  });
+                }}
+              >
+                Discover essentials
+              </button>
+              <button onClick={() => setTab("groups")}>Buy together</button>
+              <button onClick={() => setTab("orders")}>Track an order</button>
+            </div>
+            <div className="footer-links">
+              <strong>At your service</strong>
+              <button onClick={() => setTab("support")}>Returns & support</button>
+              <button
+                onClick={() => {
+                  setScam(null);
+                  setModal({ kind: "scam" });
+                }}
+              >
+                Check a message
+              </button>
+              <button
+                onClick={() => {
+                  setRole("seller");
+                  setWorkspaceId(session?.actor.workspaceId || "");
+                  setModal({ kind: "login" });
+                }}
+              >
+                Operator workspace
+              </button>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <span>DALE / The considered collection</span>
+            <span>
+              Test storefront · Sourced products + sample catalog · Simulated
+              shipping · USD
+            </span>
+          </div>
+        </div>
+      </footer>
       <AnimatePresence>
         {modal && (
           <motion.div
