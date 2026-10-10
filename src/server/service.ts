@@ -92,6 +92,9 @@ export async function snapshot(actor: Actor) {
       state.conversations?.find((item) => item.buyerId === actor.userId)
         ?.turns || [],
     fixtureWorkspace: !!state.fixtureWorkspace,
+    demo: state.demo
+      ? { kind: state.demo.kind, expiresAt: state.demo.expiresAt }
+      : undefined,
     archivedAt: state.archivedAt,
     invite: actor.role === "buyer" ? state.invite : undefined,
     orders: state.orders.filter(
@@ -188,13 +191,17 @@ function assertCurrentQuote(
       "Your shopping brief changed. Review a fresh quote before payment.",
     );
 }
-export async function shop(input: ShoppingBrief, actor?: Actor) {
+export async function shop(
+  input: ShoppingBrief,
+  actor?: Actor,
+  analysisMode?: "fixture",
+) {
   const normalized = briefSchema.parse(input);
   const brief = actor ? await updateBrief(actor, normalized) : undefined;
   const questions = clarifyBrief(normalized);
-  const mode = actor
-    ? workspaceAiMode(await getWorkspace(actor.workspaceId))
-    : aiMode();
+  const mode =
+    analysisMode ||
+    (actor ? workspaceAiMode(await getWorkspace(actor.workspaceId)) : aiMode());
   const products = questions.length ? [] : searchCatalog(normalized);
   let analysis: { summary: string; sources: string[]; mode: string };
   if (questions.length)

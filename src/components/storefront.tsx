@@ -38,6 +38,8 @@ import { PayPalCheckout } from "./paypal-checkout";
 import { Dialog } from "./dialog";
 import { BrandWordmark } from "./brand-wordmark";
 import { EditorialHero } from "./editorial-hero";
+import { DemoToolbar } from "./demo-toolbar";
+import { VoiceCompanion, type VoiceResult } from "./voice-companion";
 import type { ScenarioKind } from "@/server/scenarios";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
@@ -108,6 +110,7 @@ export default function Storefront() {
   );
   const [session, setSession] = useState<Session | null>(null),
     [modal, setModal] = useState<Modal>(null);
+  const [restoring, setRestoring] = useState(true);
   const [products, setProducts] = useState<Product[]>(
     searchCatalog({ model: "Atlas 14", budget: 8000 }),
   );
@@ -169,7 +172,10 @@ export default function Storefront() {
       .then((data) => {
         if (active) restoreSession(data);
       })
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => {
+        if (active) setRestoring(false);
+      });
     return () => {
       active = false;
     };
@@ -207,6 +213,37 @@ export default function Storefront() {
     setRole("buyer");
     setModal({ kind: "login" });
   };
+  const applyVoice = useCallback(
+    (data: VoiceResult) => {
+      if (data.intent.kind === "shopping" && data.result && data.snapshot) {
+        restoreSession(data.snapshot);
+        setProducts(data.result.products);
+        setQuestions(data.result.questions);
+        setSummary(data.result.analysis.summary);
+        setTab("discover");
+        setNotice(
+          "Voice brief saved. Review device fit and cost before choosing a product.",
+        );
+        requestAnimationFrame(() =>
+          document
+            .getElementById("shop")
+            ?.scrollIntoView({ behavior: "instant" }),
+        );
+      } else if (data.intent.kind === "navigate")
+        setTab(data.intent.destination);
+      else if (data.intent.kind === "support_draft") {
+        setTab("support");
+        setNotice(
+          `Your support draft: ${data.intent.text} Choose the relevant order and review its request.`,
+        );
+      } else if (
+        data.intent.kind === "clarification" ||
+        data.intent.kind === "review_required"
+      )
+        setNotice(data.intent.message);
+    },
+    [restoreSession, setTab],
+  );
   const isBuyer = !session || session.actor.role === "buyer";
   async function findProducts(confirmConstraints = false) {
     if (!session) {
@@ -323,6 +360,7 @@ export default function Storefront() {
       <div className="announcement">
         <span>Considered essentials. Customer-first shopping.</span>
         <span>Your approval, always.</span>
+        <a href="/demo">Try the guided demo ↗</a>
       </div>
       <header className="site-header" inert={!!modal}>
         <a className="brand" href="/" aria-label="DALE home">
@@ -379,6 +417,7 @@ export default function Storefront() {
         )}
       </header>
       <main id="main" className="main-content" inert={!!modal} tabIndex={-1}>
+        {session?.demo && <DemoToolbar session={session} />}
         <div className="mode-strip">
           <span className="status-dot" /> Test storefront ·{" "}
           {!session
@@ -406,6 +445,32 @@ export default function Storefront() {
           <div role="status" className="feedback success">
             {notice}
           </div>
+        )}
+        {tab === "discover" && (
+          <VoiceCompanion
+            pending={restoring}
+            key={`${pathname}:${session?.actor.userId || "visitor"}`}
+            model={model}
+            budget={Math.max(
+              1,
+              Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+            )}
+            actorId={isBuyer ? session?.actor.userId : undefined}
+            onResult={applyVoice}
+          />
+        )}
+        {tab === "support" && isBuyer && (
+          <VoiceCompanion
+            pending={restoring}
+            key={`${pathname}:${session?.actor.userId || "visitor"}`}
+            model={model}
+            budget={Math.max(
+              1,
+              Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+            )}
+            actorId={session?.actor.userId}
+            onResult={applyVoice}
+          />
         )}
         {tab === "discover" && (
           <>
@@ -1710,7 +1775,7 @@ export default function Storefront() {
                 audit records are preserved.
               </p>
             )}
-            {session.actor.role === "reviewer" && (
+            {session.actor.role === "reviewer" && !session.demo && (
               <form
                 onSubmit={(event) => {
                   event.preventDefault();
