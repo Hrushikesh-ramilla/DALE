@@ -71,7 +71,6 @@ export function ShoppingBriefMenu({
 }: ShoppingBriefMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isPinned, setIsPinned] = useState(false);
-  const [dockPulsing, setDockPulsing] = useState(false);
   const [mounted, setMounted] = useState(false);
   const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -79,11 +78,6 @@ export function ShoppingBriefMenu({
 
   useEffect(() => {
     setMounted(true);
-  }, []);
-
-  const triggerDockPulse = useCallback(() => {
-    setDockPulsing(true);
-    setTimeout(() => setDockPulsing(false), 450);
   }, []);
 
   const updateOrigin = useCallback(() => {
@@ -136,12 +130,11 @@ export function ShoppingBriefMenu({
     updateOrigin();
     hoverTimeout.current = setTimeout(() => {
       updateOrigin();
-      triggerDockPulse();
       setIsOpen(true);
       window.dispatchEvent(
         new CustomEvent("dale:brief-menu-open", { detail: menuRef.current }),
       );
-    }, 100);
+    }, 180);
   };
 
   const handleMouseLeave = (e: React.MouseEvent) => {
@@ -166,7 +159,6 @@ export function ShoppingBriefMenu({
       setIsPinned(false);
     } else {
       updateOrigin();
-      triggerDockPulse();
       setIsOpen(true);
       setIsPinned(true);
       window.dispatchEvent(
@@ -241,7 +233,7 @@ export function ShoppingBriefMenu({
       <button
         ref={triggerRef}
         type="button"
-        className={`brief-menu-trigger ${isOpen ? "active" : ""} ${dockPulsing ? "dock-pulse" : ""}`}
+        className={`brief-menu-trigger ${isOpen ? "active" : ""}`}
         onClick={toggleOpen}
         aria-expanded={isOpen}
         aria-haspopup="dialog"
