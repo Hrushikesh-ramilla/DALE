@@ -46,6 +46,7 @@ export function AgentWorkspace({
   const [error, setError] = useState("");
   const generation = useRef(0);
   const active = useRef<AbortController | null>(null);
+  const startedSession = useRef<Session | null>(null);
   useEffect(() => {
     const current = generation.current;
     return () => {
@@ -76,13 +77,14 @@ export function AgentWorkspace({
           );
         return value;
       };
-      let owner = session;
+      let owner = session || startedSession.current;
       if (!owner) {
         setPhase("Starting your private demo workspace…");
         owner = await request<Session>("/api/demo", {
           action: "launch",
           kind: "fresh",
         });
+        startedSession.current = owner;
       }
       if (current !== generation.current) return;
       setPhase("Sending your task to DALE…");

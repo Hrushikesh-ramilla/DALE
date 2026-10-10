@@ -1,5 +1,10 @@
 import { randomUUID } from "node:crypto";
-import { models, productById, searchCatalog } from "../domain/catalog";
+import {
+  knownModels as models,
+  productById,
+  searchCatalog,
+} from "../domain/catalog";
+import { realModels, researchProducts } from "../domain/research";
 import {
   allowedRefund,
   checkPurchase,
@@ -103,6 +108,13 @@ export async function snapshot(actor: Actor) {
         productIds: run.productIds,
         briefVersion: run.briefVersion,
         intent: run.intent,
+        mode: run.mode,
+        proposedTask: run.proposedTask,
+        recommendation: run.recommendation,
+        context: run.context,
+        research: run.research,
+        safety: run.safety,
+        orders: run.orders,
       })),
     fixtureWorkspace: !!state.fixtureWorkspace,
     demo: state.demo
@@ -211,11 +223,30 @@ export async function shop(
 ) {
   const normalized = briefSchema.parse(input);
   const brief = actor ? await updateBrief(actor, normalized) : undefined;
-  const questions = clarifyBrief(normalized);
+  const research = realModels.includes(normalized.model)
+    ? researchProducts({
+        model: normalized.model,
+        budget: normalized.budget,
+        cable: normalized.realRequirements?.cable || "unknown",
+        fastCharging: normalized.realRequirements?.fastCharging || false,
+      })
+    : undefined;
+  const questions = [
+    ...clarifyBrief(normalized),
+    ...(research?.questions || []),
+  ];
   const mode =
     analysisMode ||
     (actor ? workspaceAiMode(await getWorkspace(actor.workspaceId)) : aiMode());
-  const products = questions.length ? [] : searchCatalog(normalized);
+  const products = questions.length
+    ? []
+    : searchCatalog(normalized).filter(
+        (product) =>
+          !research ||
+          research.findings.some(
+            (finding) => finding.productId === product.id && finding.eligible,
+          ),
+      );
   let analysis: { summary: string; sources: string[]; mode: string };
   if (questions.length)
     analysis = {
@@ -276,6 +307,7 @@ export async function shop(
     brief,
     questions,
     comparisons: comparisonFacts(products, normalized.model),
+    research,
     analysis,
   };
 }
@@ -300,6 +332,22 @@ export async function makeQuote(
   return mutateWorkspace(actor.workspaceId, (state) => {
     const mode = state.adapterModes?.payments || paymentMode();
     const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
+    if (realModels.includes(model)) {
+      const report = researchProducts({
+        model,
+        budget: brief?.input.budget || 0,
+        cable: brief?.input.realRequirements?.cable || "unknown",
+        fastCharging: brief?.input.realRequirements?.fastCharging || false,
+      });
+      if (
+        !report.findings.some(
+          (item) => item.productId === productId && item.eligible,
+        )
+      )
+        throw new Error(
+          "The sourced offer does not meet your confirmed device, cable, charging speed and budget. Run a new agent task.",
+        );
+    }
     if (brief?.clarificationRequired)
       throw new Error(
         "Confirm the device and budget with Find my match before choosing a purchase.",
@@ -363,7 +411,9 @@ export async function makeQuote(
       expiresAt: new Date(expiry).toISOString(),
       version: 1,
       deliveryBy: new Date(Date.now() + 5 * 86400000).toISOString(),
-      returnPolicy: "merchant-policy-v1",
+      returnPolicy: productId.startsWith("R")
+        ? `merchant-policy-v1; evidence:${product.source}; simulated-offer`
+        : "merchant-policy-v1",
       groupId,
       fingerprint: "",
       provider: mode,

@@ -1,4 +1,4 @@
-import { models, type Product } from "./catalog";
+import { knownModels as models, type Product } from "./catalog";
 import type { ShoppingBrief } from "./brief";
 import { mentionedModels } from "./identification";
 import { formatMoney } from "./money";

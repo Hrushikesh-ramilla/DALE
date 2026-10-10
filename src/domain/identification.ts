@@ -1,4 +1,5 @@
-import { models, deviceLabel } from "./catalog";
+import { knownModels as models, deviceLabel } from "./catalog";
+import { realModels } from "./research";
 export function canonicalModel(label: string): string | null {
   const normalized = label
     .normalize("NFKC")
@@ -33,10 +34,18 @@ export function mentionedModels(text: string) {
       /\batlas\s+14(?:\s+pro)?\b|\borbit\s+13\b|\bslate\s+11\b|\busb\s+c\s+laptop\s*\(?\s*(?:65|100|45)w\)?|\bbarrel\s+jack\s+laptop\s*\(?\s*45w\)?/gi,
     ) || [];
   return [
-    ...new Set(
-      matches
+    ...new Set([
+      ...matches
         .map(canonicalModel)
         .filter((value): value is string => Boolean(value)),
-    ),
+      ...realModels.filter((model, index) => {
+        const size = index === 0 ? "13" : "15";
+        return (
+          /macbook\s+air/i.test(normalized) &&
+          /\bm2\b/i.test(normalized) &&
+          new RegExp(`\\b${size}(?:\\.\\d)?(?:[ -]?inch)?\\b`).test(normalized)
+        );
+      }),
+    ]),
   ];
 }

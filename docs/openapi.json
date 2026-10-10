@@ -556,6 +556,28 @@
           "confirmConstraints": {
             "default": false,
             "type": "boolean"
+          },
+          "realRequirements": {
+            "type": "object",
+            "properties": {
+              "cable": {
+                "type": "string",
+                "enum": [
+                  "unknown",
+                  "none",
+                  "usb60",
+                  "usb100",
+                  "magsafe3"
+                ]
+              },
+              "fastCharging": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "cable",
+              "fastCharging"
+            ]
           }
         },
         "required": [
@@ -595,7 +617,9 @@
                       "Atlas 14",
                       "Atlas 14 Pro",
                       "Orbit 13",
-                      "Slate 11"
+                      "Slate 11",
+                      "MacBook Air (13-inch, M2, 2022)",
+                      "MacBook Air (15-inch, M2, 2023)"
                     ]
                   },
                   "budget": {
@@ -873,7 +897,9 @@
                       "Atlas 14",
                       "Atlas 14 Pro",
                       "Orbit 13",
-                      "Slate 11"
+                      "Slate 11",
+                      "MacBook Air (13-inch, M2, 2022)",
+                      "MacBook Air (15-inch, M2, 2023)"
                     ]
                   },
                   "budget": {

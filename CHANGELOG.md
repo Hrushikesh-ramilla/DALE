@@ -2,6 +2,17 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-07 — Dark editorial agent opening
+
+- Replaced the bright agent opening and composer with charcoal and deeper black surfaces, soft ivory text, muted warm-gray captions and restrained borders. Added a Cormorant Garamond serif headline to match the requested magazine character. Agent response cards, receipts, task/voice inputs, focus indicators and action buttons follow the scoped palette; teal remains confined to the closing footer.
+- Optimized build and eight affected packaged-production browser journeys pass, including guest retry, task persistence/protected review, unsupported real-device/payment requests, return drafts, synthetic voice and four-width responsive checks. Rendered headline/body/caption contrast ranges from 7.47:1 to 14.81:1 for the inspected agent surfaces. The running local build and release archive align at f2892ec; no provider call or spend occurred.
+
+## 2026-10-07 — Put DALE's task workspace first
+
+- Added a visible task composer, persisted private responses, completed-action receipts, source-labelled sample options and bounded history. The sample collection now follows the agent workspace. Guest task entry starts an owned fixture demo without an account form; failed task retries retain that workspace. Voice entry remains within the task workspace with readable labels and captions.
+- Added buyer-only `/api/agent` with same-origin, schema, rate/lifetime and session-identity guards. It prepares explicit sample-profile matching, own-order navigation and support drafts. Typed tasks cannot approve a purchase or remedy; saved brief versions disable stale agent options. Real-product lookup is clearly unavailable rather than silently mapping arbitrary devices to a default profile. OpenAPI and manual acceptance steps document the limits.
+- Lint/typecheck, optimized build and 159 unit/contract/database tests pass. All 29 packaged-production browser journeys are covered by 28 passes in the full run plus the focused pass after correcting an ambiguous retry-test locator; CI for that correction is pending. The release archive and locally running build are source-aligned at d40c93a. Public EC2 deployment and genuine provider/physical/independent acceptance gates remain open; no provider spend was enabled.
+
 ## 2026-10-07 — Restore monochrome product presentation
 
 - Replaced the rejected page-wide teal/glass treatment with black navigation, a light centered product showcase, clean sans-serif headings, flat pill controls, neutral product materials and understated transitions. Removed the broad glass stylesheet rather than layering more tinted treatments. The existing DALE wordmark is retained.
@@ -241,3 +252,9 @@ Each implementation milestone records behavior, validation, and remaining limita
 - Recorded the product plan, customer-priority policies, deployment approach, and acceptance requirements.
 - Added repository documentation, MIT license, and ignore rules for credentials and generated files.
 - Validation: inspected the empty repository and verified existing GitHub authentication. No application behavior exists at this milestone.
+# Buyer-agent recovery: sourced catalog
+
+Added manufacturer-backed records for two exact M2 MacBook Air models, two adapters and a complete normal-charge bundle. Compatibility, cable completeness, budget and freshness are checked before an offer can be reviewed. Original engineering fixtures remain isolated. See `docs/PRODUCT_EVIDENCE.md` for provenance and scope.
+# Buyer-agent recovery: structured tools and private conversation
+
+Implemented direct-Gemini structured planning over research, own-order inspection, support preparation and advisory message checks. Semantic device/budget interpretations require shopper confirmation; generated choices and evidence IDs are validated against tool results. Private follow-up context survives reload, and changes invalidate old approvals. Model calls require explicit no-billing gates; fixtures never contact a provider. Added protocol, adversarial, quota and purchase-journey tests.

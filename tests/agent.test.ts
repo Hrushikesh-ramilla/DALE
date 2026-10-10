@@ -38,7 +38,7 @@ it.each([
   const intent = understandAgent({ ...input, task });
   expect(intent.kind).toBe("clarification");
   if (intent.kind === "clarification")
-    expect(intent.message).toMatch(/not connected|not verified/);
+    expect(intent.message).toMatch(/not verified/);
 });
 it("executes sample filtering, persists private receipts and leaves payment untouched", async () => {
   const actor = await buyer();
