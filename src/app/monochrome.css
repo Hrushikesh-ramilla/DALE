@@ -38,6 +38,7 @@ body {
   backdrop-filter: blur(16px);
   will-change: transform;
   transform: translateZ(0);
+  z-index: 10000;
 }
 .brand-wordmark {
   width: 100px;
@@ -868,15 +869,20 @@ select option {
   color: #f5f5f7;
   font-size: 13px;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  backdrop-filter: blur(12px);
+  transition:
+    background 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .brief-menu-trigger:hover,
 .brief-menu-trigger.active {
   background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.12) inset;
 }
 
 .trigger-icon-wrap {
@@ -887,6 +893,12 @@ select option {
   height: 24px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background 0.25s ease;
+}
+
+.brief-menu-trigger:hover .trigger-icon-wrap,
+.brief-menu-trigger.active .trigger-icon-wrap {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .apple-hamburger-lines {
@@ -895,6 +907,7 @@ select option {
   justify-content: space-between;
   width: 12px;
   height: 9px;
+  position: relative;
 }
 
 .apple-hamburger-lines .line {
@@ -903,7 +916,21 @@ select option {
   width: 100%;
   background: #f5f5f7;
   border-radius: 2px;
-  transition: all 0.2s ease;
+  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  transform-origin: center;
+}
+
+.brief-menu-trigger.active .apple-hamburger-lines .line-1 {
+  transform: translateY(3.75px) rotate(45deg);
+}
+
+.brief-menu-trigger.active .apple-hamburger-lines .line-2 {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.brief-menu-trigger.active .apple-hamburger-lines .line-3 {
+  transform: translateY(-3.75px) rotate(-45deg);
 }
 
 .trigger-text {
@@ -928,62 +955,108 @@ select option {
 
 .trigger-chevron {
   color: #a1a1a6;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
 }
 
 .trigger-chevron.rotated {
   transform: rotate(180deg);
+  color: #ffffff;
 }
 
-/* Flyout Backdrop */
+/* iOS Depth of Field Blur on Underlying Page */
+body.brief-menu-open .main-content {
+  filter: blur(12px) brightness(0.82) saturate(110%);
+  transition: filter 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: filter;
+  pointer-events: none;
+}
+
+.main-content {
+  filter: none;
+  transition: filter 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Fullscreen Frosted Glass Backdrop */
 .brief-menu-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  z-index: 9998;
+  background: rgba(0, 0, 0, 0.58);
+  backdrop-filter: blur(32px) saturate(190%) contrast(92%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%) contrast(92%);
+  z-index: 9990;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0s linear 0.45s;
+  will-change: opacity;
 }
 
 .brief-menu-backdrop.visible {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
+  transition:
+    opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0s linear 0s;
 }
 
 /* Apple-Grade Expanding Flyout Container */
 .brief-menu-flyout {
   position: fixed;
-  top: 76px;
+  top: 66px;
   left: 50%;
-  transform: translate3d(-50%, -14px, 0) scale(0.975);
+  transform: translate3d(-50%, -20px, 0) scale(0.96);
   transform-origin: 50% 0%;
   width: calc(100vw - 48px);
   max-width: 1020px;
-  max-height: calc(100vh - 96px);
-  background: rgba(18, 18, 20, 0.94);
-  backdrop-filter: blur(40px) saturate(190%);
-  -webkit-backdrop-filter: blur(40px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 24px;
-  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  max-height: calc(100vh - 84px);
+  background: rgba(18, 18, 22, 0.92);
+  backdrop-filter: blur(50px) saturate(200%);
+  -webkit-backdrop-filter: blur(50px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 26px;
+  box-shadow:
+    0 36px 90px rgba(0, 0, 0, 0.85),
+    0 12px 32px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.22) inset;
   z-index: 9999;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   transition:
-    opacity 0.36s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.42s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0s linear 0.45s;
   will-change: transform, opacity;
+}
+
+/* Invisible hover bridge between header and flyout */
+.brief-menu-flyout::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+  pointer-events: auto;
 }
 
 .brief-menu-flyout.open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
   transform: translate3d(-50%, 0, 0) scale(1);
+  transition:
+    opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0s linear 0s;
 }
 
 .flyout-header {
@@ -993,14 +1066,15 @@ select option {
   padding: 24px 32px 18px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.32s cubic-bezier(0.16, 1, 0.3, 1), transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translate3d(0, 8px, 0);
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 0s;
 }
 
 .brief-menu-flyout.open .flyout-header {
   opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.04s;
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0.05s;
 }
 
 .flyout-title-wrap {
@@ -1056,14 +1130,15 @@ select option {
   overflow-y: auto;
   max-height: calc(100vh - 240px);
   opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.36s cubic-bezier(0.16, 1, 0.3, 1), transform 0.36s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translate3d(0, 12px, 0);
+  transition: opacity 0.38s cubic-bezier(0.16, 1, 0.3, 1), transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 0s;
 }
 
 .brief-menu-flyout.open .flyout-grid {
   opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.08s;
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0.1s;
 }
 
 .flyout-column {
@@ -1190,14 +1265,15 @@ select option {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(0, 0, 0, 0.2);
   opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.32s cubic-bezier(0.16, 1, 0.3, 1), transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translate3d(0, 8px, 0);
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 0s;
 }
 
 .brief-menu-flyout.open .flyout-footer {
   opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.12s;
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0.16s;
 }
 
 .flyout-foot-left {

@@ -6,6 +6,7 @@ import {
   useCallback,
   type ReactNode,
 } from "react";
+import { createPortal } from "react-dom";
 import {
   Sparkles,
   SlidersHorizontal,
@@ -70,9 +71,14 @@ export function ShoppingBriefMenu({
 }: ShoppingBriefMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isPinned, setIsPinned] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const clearTimer = () => {
     if (hoverTimeout.current) {
@@ -84,17 +90,28 @@ export function ShoppingBriefMenu({
   const handleMouseEnter = () => {
     if (isPinned) return;
     clearTimer();
+    if (isOpen) return;
     hoverTimeout.current = setTimeout(() => {
       setIsOpen(true);
-    }, 70);
+      window.dispatchEvent(
+        new CustomEvent("dale:brief-menu-open", { detail: menuRef.current }),
+      );
+    }, 100);
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (e: React.MouseEvent) => {
     if (isPinned) return;
+    const related = e.relatedTarget as Node | null;
+    if (
+      (menuRef.current && menuRef.current.contains(related)) ||
+      (triggerRef.current && triggerRef.current.contains(related))
+    ) {
+      return;
+    }
     clearTimer();
     hoverTimeout.current = setTimeout(() => {
       setIsOpen(false);
-    }, 240);
+    }, 280);
   };
 
   const toggleOpen = () => {
@@ -105,6 +122,9 @@ export function ShoppingBriefMenu({
     } else {
       setIsOpen(true);
       setIsPinned(true);
+      window.dispatchEvent(
+        new CustomEvent("dale:brief-menu-open", { detail: menuRef.current }),
+      );
     }
   };
 
@@ -113,6 +133,29 @@ export function ShoppingBriefMenu({
     setIsOpen(false);
     setIsPinned(false);
   }, []);
+
+  useEffect(() => {
+    const handleOtherOpen = (e: Event) => {
+      if ((e as CustomEvent).detail !== menuRef.current) {
+        setIsOpen(false);
+        setIsPinned(false);
+      }
+    };
+    window.addEventListener("dale:brief-menu-open", handleOtherOpen);
+    return () =>
+      window.removeEventListener("dale:brief-menu-open", handleOtherOpen);
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("brief-menu-open");
+    } else {
+      document.body.classList.remove("brief-menu-open");
+    }
+    return () => {
+      document.body.classList.remove("brief-menu-open");
+    };
+  }, [isOpen]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -176,22 +219,25 @@ export function ShoppingBriefMenu({
         />
       </button>
 
-      {/* Flyout Glass Menu Overlay */}
-      {isOpen && (
-        <>
-          <div
-            className={`brief-menu-backdrop ${isOpen ? "visible" : ""}`}
-            onClick={handleClose}
-            aria-hidden="true"
-          />
-          <div
-            ref={menuRef}
-            className={`brief-menu-flyout ${isOpen ? "open" : ""}`}
-            role="dialog"
-            aria-label="Shopping brief and filters"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
+      {/* Flyout Glass Menu Overlay in Portal for Viewport-Wide Blur & Smooth CSS Transitions */}
+      {mounted &&
+        createPortal(
+          <>
+            <div
+              className={`brief-menu-backdrop ${isOpen ? "visible" : ""}`}
+              onClick={handleClose}
+              aria-hidden="true"
+            />
+            <div
+              ref={menuRef}
+              className={`brief-menu-flyout ${isOpen ? "open" : ""}`}
+              role="dialog"
+              aria-label="Shopping brief and filters"
+              aria-hidden={!isOpen}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              onFocusCapture={() => setIsPinned(true)}
+            >
             {/* Header */}
             <div className="flyout-header">
               <div className="flyout-title-wrap">
@@ -438,7 +484,8 @@ export function ShoppingBriefMenu({
               </div>
             </div>
           </div>
-        </>
+        </>,
+        document.body,
       )}
     </div>
   );
