@@ -741,6 +741,8 @@ select option {
   box-sizing: border-box;
   overflow: hidden;
   will-change: opacity, transform;
+  background: #141416;
+  border-radius: inherit;
 }
 
 .morph-sidebar-face {
@@ -752,6 +754,8 @@ select option {
   overflow: hidden;
   box-sizing: border-box;
   will-change: opacity, transform;
+  background: #141416;
+  border-radius: inherit;
 }
 
 /* Hero DALE Prompt Bar */

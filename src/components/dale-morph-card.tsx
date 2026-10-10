@@ -141,30 +141,46 @@ export function DaleMorphCard({
       card.style.top = `${Math.round(top)}px`;
       card.style.borderRadius = `${Math.round(borderRadius)}px`;
 
-      // Hero face cross-fade
+      // Hero face cross-fade: strictly active for e <= 0.38
       if (heroFaceRef.current) {
-        const heroOpacity = Math.max(0, 1 - e * 1.7);
-        const heroScale = 1 - e * 0.08;
-        const heroY = -e * 20;
+        if (e >= 0.4) {
+          heroFaceRef.current.style.opacity = "0";
+          heroFaceRef.current.style.visibility = "hidden";
+          heroFaceRef.current.style.pointerEvents = "none";
+          heroFaceRef.current.style.display = "none";
+        } else {
+          const heroOpacity = Math.max(0, 1 - e * 2.6);
+          const heroScale = 1 - e * 0.06;
+          const heroY = -e * 16;
 
-        heroFaceRef.current.style.opacity = `${heroOpacity}`;
-        heroFaceRef.current.style.transform = `scale(${heroScale}) translateY(${heroY}px)`;
-        heroFaceRef.current.style.pointerEvents = e < 0.25 ? "auto" : "none";
-        heroFaceRef.current.style.visibility =
-          heroOpacity <= 0.01 ? "hidden" : "visible";
+          heroFaceRef.current.style.display = "flex";
+          heroFaceRef.current.style.opacity = `${heroOpacity}`;
+          heroFaceRef.current.style.transform = `scale(${heroScale}) translateY(${heroY}px)`;
+          heroFaceRef.current.style.pointerEvents = e < 0.2 ? "auto" : "none";
+          heroFaceRef.current.style.visibility =
+            heroOpacity <= 0.01 ? "hidden" : "visible";
+        }
       }
 
-      // Sidebar face cross-fade
+      // Sidebar face cross-fade: begins cleanly at e >= 0.32, fully settled by e >= 0.85
       if (sidebarFaceRef.current) {
-        const sidebarOpacity = Math.max(0, (e - 0.2) / 0.8);
-        const sidebarScale = 0.94 + e * 0.06;
-        const sidebarY = (1 - e) * 20;
+        if (e < 0.32) {
+          sidebarFaceRef.current.style.opacity = "0";
+          sidebarFaceRef.current.style.visibility = "hidden";
+          sidebarFaceRef.current.style.pointerEvents = "none";
+          sidebarFaceRef.current.style.display = "none";
+        } else {
+          const sidebarOpacity = Math.min(1, Math.max(0, (e - 0.32) / 0.5));
+          const sidebarScale = 0.96 + e * 0.04;
+          const sidebarY = (1 - e) * 14;
 
-        sidebarFaceRef.current.style.opacity = `${sidebarOpacity}`;
-        sidebarFaceRef.current.style.transform = `scale(${sidebarScale}) translateY(${sidebarY}px)`;
-        sidebarFaceRef.current.style.pointerEvents = e > 0.75 ? "auto" : "none";
-        sidebarFaceRef.current.style.visibility =
-          sidebarOpacity <= 0.01 ? "hidden" : "visible";
+          sidebarFaceRef.current.style.display = "flex";
+          sidebarFaceRef.current.style.opacity = `${sidebarOpacity}`;
+          sidebarFaceRef.current.style.transform = `scale(${sidebarScale}) translateY(${sidebarY}px)`;
+          sidebarFaceRef.current.style.pointerEvents = e > 0.8 ? "auto" : "none";
+          sidebarFaceRef.current.style.visibility =
+            sidebarOpacity <= 0.01 ? "hidden" : "visible";
+        }
       }
     };
 
