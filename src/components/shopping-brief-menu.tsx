@@ -71,6 +71,7 @@ export function ShoppingBriefMenu({
 }: ShoppingBriefMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isPinned, setIsPinned] = useState(false);
+  const [dockPulsing, setDockPulsing] = useState(false);
   const [mounted, setMounted] = useState(false);
   const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -79,6 +80,47 @@ export function ShoppingBriefMenu({
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const triggerDockPulse = useCallback(() => {
+    setDockPulsing(true);
+    setTimeout(() => setDockPulsing(false), 450);
+  }, []);
+
+  const updateOrigin = useCallback(() => {
+    if (typeof window === "undefined") return;
+    if (triggerRef.current && menuRef.current) {
+      const triggerRect = triggerRef.current.getBoundingClientRect();
+      const triggerCenterX = triggerRect.left + triggerRect.width / 2;
+      const triggerCenterY = triggerRect.top + triggerRect.height / 2;
+
+      const menuWidth = Math.min(1020, window.innerWidth - 48);
+      const menuLeft = (window.innerWidth - menuWidth) / 2;
+      const menuTop = 66;
+
+      const originX = triggerCenterX - menuLeft;
+      const originY = triggerCenterY - menuTop;
+
+      menuRef.current.style.setProperty(
+        "--menu-origin-x",
+        `${Math.round(originX)}px`,
+      );
+      menuRef.current.style.setProperty(
+        "--menu-origin-y",
+        `${Math.round(originY)}px`,
+      );
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      updateOrigin();
+    }
+  }, [isOpen, updateOrigin]);
+
+  useEffect(() => {
+    window.addEventListener("resize", updateOrigin);
+    return () => window.removeEventListener("resize", updateOrigin);
+  }, [updateOrigin]);
 
   const clearTimer = () => {
     if (hoverTimeout.current) {
@@ -91,7 +133,10 @@ export function ShoppingBriefMenu({
     if (isPinned) return;
     clearTimer();
     if (isOpen) return;
+    updateOrigin();
     hoverTimeout.current = setTimeout(() => {
+      updateOrigin();
+      triggerDockPulse();
       setIsOpen(true);
       window.dispatchEvent(
         new CustomEvent("dale:brief-menu-open", { detail: menuRef.current }),
@@ -120,6 +165,8 @@ export function ShoppingBriefMenu({
       setIsOpen(false);
       setIsPinned(false);
     } else {
+      updateOrigin();
+      triggerDockPulse();
       setIsOpen(true);
       setIsPinned(true);
       window.dispatchEvent(
@@ -194,7 +241,7 @@ export function ShoppingBriefMenu({
       <button
         ref={triggerRef}
         type="button"
-        className={`brief-menu-trigger ${isOpen ? "active" : ""}`}
+        className={`brief-menu-trigger ${isOpen ? "active" : ""} ${dockPulsing ? "dock-pulse" : ""}`}
         onClick={toggleOpen}
         aria-expanded={isOpen}
         aria-haspopup="dialog"
