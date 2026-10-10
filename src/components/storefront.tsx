@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import {
@@ -46,6 +46,7 @@ import { GroupPolicySettings } from "./group-policy-settings";
 import { ProviderReconciliation } from "./provider-reconciliation";
 import { CinematicIntro } from "./cinematic-intro";
 import { ShoppingBriefMenu } from "./shopping-brief-menu";
+import { DaleMorphCard } from "./dale-morph-card";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
@@ -125,10 +126,14 @@ export default function Storefront() {
           : "discover";
   const setTab = useCallback(
     (next: Tab) => {
-      router.push(next === "discover" ? "/" : `/${next}`, {
+      const target = next === "discover" ? "/shop" : `/${next}`;
+      if (typeof window !== "undefined") {
+        window.history.pushState({}, "", target);
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+      router.push(target, {
         scroll: false,
       });
-      window.scrollTo({ top: 0, behavior: "instant" });
     },
     [router],
   );
@@ -152,6 +157,8 @@ export default function Storefront() {
     [briefDirty, setBriefDirty] = useState(false);
   const [heroPrompt, setHeroPrompt] = useState("");
   const [sidebarTask, setSidebarTask] = useState("");
+  const heroAnchorRef = useRef<HTMLDivElement>(null);
+  const sidebarAnchorRef = useRef<HTMLElement>(null);
 
   const handleHeroSubmit = useCallback((customText?: string) => {
     const query = (customText || heroPrompt).trim();
@@ -568,7 +575,7 @@ export default function Storefront() {
           </div>
         )}
         {isBuyer &&
-          (tab === "support" || tab === "orders") && (
+          (pathname === "/" || tab === "support" || tab === "orders") && (
             <AgentSurface
               orderPage={tab === "orders"}
               inspection={session?.agentRuns.at(-1)?.orders !== undefined}
@@ -639,55 +646,80 @@ export default function Storefront() {
             <EditorialHero
               onView={(product) => setModal({ kind: "product", product })}
             />
-            <div className="hero-dale-bar" id="hero-dale">
-              <div className="hero-dale-inner">
-                <div className="hero-dale-badge">
-                  <Sparkles size={14} />
-                  <span>DALE · AI SHOPPING ADVOCATE</span>
-                </div>
-                <h2>Ask DALE anything. Live shopping guidance beside your catalog.</h2>
-                <p className="hero-dale-sub">
-                  Tell DALE your specs or device needs. DALE stays pinned beside the products so you can chat continuously while browsing.
-                </p>
-                <div className="hero-dale-input-wrap">
-                  <input
-                    type="text"
-                    placeholder="e.g. Find me a quiet Bluetooth mouse under $30, or a compact 65W charger..."
-                    value={heroPrompt}
-                    onChange={(e) => setHeroPrompt(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
-                        handleHeroSubmit();
-                      }
-                    }}
-                  />
-                  <button
-                    type="button"
-                    className="button primary small"
-                    onClick={() => handleHeroSubmit()}
-                  >
-                    <span>Ask DALE</span> <ArrowRight size={15} />
-                  </button>
-                </div>
-                <div className="hero-dale-chips">
-                  {[
-                    "Silent Bluetooth mouse",
-                    "Compact 65W charger",
-                    "USB-C dock with HDMI",
-                    "Travel essentials bundle",
-                  ].map((chip) => (
-                    <button
-                      key={chip}
-                      type="button"
-                      className="hero-chip"
-                      onClick={() => handleHeroSubmit(chip)}
-                    >
-                      {chip} <ArrowRight size={12} />
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
+            {pathname !== "/" && (
+              <>
+                <div
+                  ref={heroAnchorRef}
+                  className="hero-dale-anchor"
+                  id="hero-dale"
+                />
+                <DaleMorphCard
+                  heroPrompt={heroPrompt}
+                  setHeroPrompt={setHeroPrompt}
+                  onHeroSubmit={handleHeroSubmit}
+                  heroAnchorRef={heroAnchorRef}
+                  sidebarAnchorRef={sidebarAnchorRef}
+                  session={session}
+                  sidebarTask={sidebarTask}
+                  restoring={restoring}
+                  busy={busy}
+                  model={model}
+                  budget={Math.max(
+                    1,
+                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                  )}
+                  briefDirty={briefDirty}
+                  applyAgent={applyAgent}
+                  onGroupCommit={(offer) => {
+                    void run(async () => {
+                      if (briefDirty)
+                        throw new Error(
+                          "Save your current needs before committing to a group.",
+                        );
+                      await action({
+                        action: "agent_group_commit",
+                        productId: offer.productId,
+                        briefVersion: offer.briefVersion,
+                        policyVersion: offer.policyVersion,
+                      });
+                      setNotice(
+                        "Group commitment recorded without payment. Another shopper is required before your discounted checkout.",
+                      );
+                    });
+                  }}
+                  onReview={(product, groupId) => {
+                    const latest = session?.agentRuns.at(-1);
+                    if (
+                      !latest?.briefVersion ||
+                      latest.briefVersion !== session?.brief?.version ||
+                      briefDirty
+                    ) {
+                      setError(
+                        "Your brief changed. Send a new agent task before reviewing this option.",
+                      );
+                      return;
+                    }
+                    void choose(product, groupId);
+                  }}
+                  voice={
+                    <VoiceCompanion
+                      pending={restoring || busy}
+                      key={`sidebar:${pathname}:${session?.actor.userId || "visitor"}`}
+                      model={model}
+                      budget={Math.max(
+                        1,
+                        Math.min(
+                          100000,
+                          Math.round(Number(budget) * 100) || 8000,
+                        ),
+                      )}
+                      actorId={session?.actor.userId}
+                      onResult={applyVoice}
+                    />
+                  }
+                />
+              </>
+            )}
             <section
               className="collection-section"
               id="collections"
@@ -751,69 +783,12 @@ export default function Storefront() {
               id="shop"
               aria-label="Personal shopping"
             >
-              <aside className="dale-companion-aside" id="dale-chat">
-                <AgentWorkspace
-                  key={`sidebar:${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
-                  variant="sidebar"
-                  initialTask={sidebarTask}
-                  session={session}
-                  restoring={restoring || busy}
-                  model={model}
-                  budget={Math.max(
-                    1,
-                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
-                  )}
-                  briefDirty={briefDirty}
-                  onResult={applyAgent}
-                  onGroupCommit={(offer) => {
-                    void run(async () => {
-                      if (briefDirty)
-                        throw new Error(
-                          "Save your current needs before committing to a group.",
-                        );
-                      await action({
-                        action: "agent_group_commit",
-                        productId: offer.productId,
-                        briefVersion: offer.briefVersion,
-                        policyVersion: offer.policyVersion,
-                      });
-                      setNotice(
-                        "Group commitment recorded without payment. Another shopper is required before your discounted checkout.",
-                      );
-                    });
-                  }}
-                  onReview={(product, groupId) => {
-                    const latest = session?.agentRuns.at(-1);
-                    if (
-                      !latest?.briefVersion ||
-                      latest.briefVersion !== session?.brief?.version ||
-                      briefDirty
-                    ) {
-                      setError(
-                        "Your brief changed. Send a new agent task before reviewing this option.",
-                      );
-                      return;
-                    }
-                    void choose(product, groupId);
-                  }}
-                  voice={
-                    <VoiceCompanion
-                      pending={restoring || busy}
-                      key={`sidebar:${pathname}:${session?.actor.userId || "visitor"}`}
-                      model={model}
-                      budget={Math.max(
-                        1,
-                        Math.min(
-                          100000,
-                          Math.round(Number(budget) * 100) || 8000,
-                        ),
-                      )}
-                      actorId={session?.actor.userId}
-                      onResult={applyVoice}
-                    />
-                  }
-                />
-              </aside>
+              <aside
+                ref={sidebarAnchorRef}
+                className="dale-companion-slot"
+                id="dale-companion-slot"
+                aria-hidden="true"
+              />
               <div className="results">
                 <div className="section-heading">
                   <div>
@@ -851,6 +826,143 @@ export default function Storefront() {
                       {briefDirty ? "preview options" : "compatible options"}
                     </span>
                   </div>
+                </div>
+                <div
+                  className="catalog-brief-strip"
+                  role="search"
+                  aria-label="Catalog filters and device brief"
+                >
+                  <div className="brief-strip-grid">
+                    <label>
+                      Your device
+                      <select
+                        value={model}
+                        onChange={(e) => {
+                          setModel(e.target.value);
+                          setBriefDirty(true);
+                        }}
+                      >
+                        {models.map((m) => (
+                          <option key={m} value={m}>
+                            {deviceLabel(m)}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+                    <label>
+                      Looking for
+                      <select
+                        aria-label="Looking for"
+                        value={category}
+                        onChange={(e) => {
+                          setCategory(e.target.value);
+                          setBriefDirty(true);
+                        }}
+                      >
+                        {Object.entries({
+                          chargers: "Chargers",
+                          docks: "Docks & hubs",
+                          storage: "Storage",
+                          audio: "Headphones",
+                          accessories: "Accessories",
+                          "": "Everything",
+                        }).map(([value, label]) => (
+                          <option value={value} key={value}>
+                            {label}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+                    <label>
+                      Maximum budget, USD
+                      <div className="money-input">
+                        <span>$</span>
+                        <input
+                          aria-label="Maximum budget, USD"
+                          type="number"
+                          min="1"
+                          max="1000"
+                          value={budget}
+                          onChange={(e) => {
+                            setBudget(e.target.value);
+                            setBriefDirty(true);
+                          }}
+                        />
+                      </div>
+                    </label>
+                    <label>
+                      Feature to prioritize
+                      <input
+                        aria-label="Feature to prioritize"
+                        value={preference}
+                        maxLength={80}
+                        placeholder="65W, Ethernet, braided cable…"
+                        onChange={(e) => {
+                          setPreference(e.target.value);
+                          setBriefDirty(true);
+                        }}
+                      />
+                    </label>
+                    <div className="brief-strip-actions">
+                      <label className="brief-strip-weights">
+                        <input
+                          type="checkbox"
+                          aria-label="Use explicit preference weights"
+                          checked={!!weights}
+                          onChange={(event) => {
+                            setWeights(
+                              event.target.checked
+                                ? { price: 50, features: 50 }
+                                : undefined,
+                            );
+                            setBriefDirty(true);
+                          }}
+                        />
+                        <span>Use explicit preference weights</span>
+                      </label>
+                      {weights && (
+                        <label className="brief-strip-slider">
+                          <span>Price weight, {weights.price}%</span>
+                          <input
+                            aria-label="Price preference weight"
+                            type="range"
+                            min="0"
+                            max="100"
+                            value={weights.price}
+                            onChange={(event) => {
+                              const price = Number(event.target.value);
+                              setWeights({ price, features: 100 - price });
+                              setBriefDirty(true);
+                            }}
+                          />
+                        </label>
+                      )}
+                      <button
+                        className="button primary small"
+                        disabled={busy}
+                        onClick={() => void findProducts()}
+                      >
+                        {busy ? (
+                          <LoaderCircle className="spin" size={15} />
+                        ) : (
+                          <Search size={15} />
+                        )}{" "}
+                        Find my match
+                      </button>
+                    </div>
+                  </div>
+                  {weights && (
+                    <p className="muted">
+                      Matching feature weight: {weights.features}%. Device fit
+                      and budget remain required before ranking.
+                    </p>
+                  )}
+                  {briefDirty && (
+                    <p className="muted" role="status">
+                      Brief changed. Find my match saves it and replaces older
+                      unpaid approvals.
+                    </p>
+                  )}
                 </div>
                 <div
                   className="category-index"
@@ -1233,26 +1345,28 @@ export default function Storefront() {
                 </details>
               </div>
             </section>
-            <div className="mobile-dale-dock" aria-label="Mobile DALE Chat Dock">
-              <button
-                type="button"
-                className="mobile-dale-dock-btn"
-                onClick={() => {
-                  const el = document.getElementById("dale-chat");
-                  if (el) {
-                    el.scrollIntoView({ behavior: "smooth" });
-                    const input = el.querySelector("textarea");
-                    input?.focus();
-                  }
-                }}
-              >
-                <span className="live-status-pulse" />
-                <span className="mobile-dale-text">
-                  <strong>Chat with DALE</strong> · Live advice beside products
-                </span>
-                <ArrowRight size={14} />
-              </button>
-            </div>
+            {pathname !== "/" && (
+              <div className="mobile-dale-dock" aria-label="Mobile DALE Chat Dock">
+                <button
+                  type="button"
+                  className="mobile-dale-dock-btn"
+                  onClick={() => {
+                    const el = document.getElementById("dale-chat");
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                      const input = el.querySelector("textarea");
+                      input?.focus();
+                    }
+                  }}
+                >
+                  <span className="live-status-pulse" />
+                  <span className="mobile-dale-text">
+                    <strong>Chat with DALE</strong> · Live advice beside products
+                  </span>
+                  <ArrowRight size={14} />
+                </button>
+              </div>
+            )}
           </>
         )}
         {tab === "groups" && (

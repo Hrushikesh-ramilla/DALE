@@ -69,50 +69,74 @@ export function ShoppingBriefMenu({
   compatibleCount,
 }: ShoppingBriefMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const [isPinned, setIsPinned] = useState(false);
   const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
+  const unmountTimeout = useRef<NodeJS.Timeout | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
-  const clearTimer = () => {
+  const clearTimers = useCallback(() => {
     if (hoverTimeout.current) {
       clearTimeout(hoverTimeout.current);
       hoverTimeout.current = null;
     }
-  };
+    if (unmountTimeout.current) {
+      clearTimeout(unmountTimeout.current);
+      unmountTimeout.current = null;
+    }
+  }, []);
+
+  const openMenu = useCallback(() => {
+    clearTimers();
+    setIsMounted(true);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setIsOpen(true);
+      });
+    });
+  }, [clearTimers]);
+
+  const closeMenu = useCallback((force = false) => {
+    clearTimers();
+    setIsOpen(false);
+    if (force) {
+      setIsPinned(false);
+    }
+    unmountTimeout.current = setTimeout(() => {
+      setIsMounted(false);
+    }, 480);
+  }, [clearTimers]);
 
   const handleMouseEnter = () => {
     if (isPinned) return;
-    clearTimer();
+    clearTimers();
     hoverTimeout.current = setTimeout(() => {
-      setIsOpen(true);
-    }, 70);
+      openMenu();
+    }, 120);
   };
 
   const handleMouseLeave = () => {
     if (isPinned) return;
-    clearTimer();
+    clearTimers();
     hoverTimeout.current = setTimeout(() => {
-      setIsOpen(false);
-    }, 240);
+      closeMenu();
+    }, 340);
   };
 
   const toggleOpen = () => {
-    clearTimer();
+    clearTimers();
     if (isOpen) {
-      setIsOpen(false);
-      setIsPinned(false);
+      closeMenu(true);
     } else {
-      setIsOpen(true);
       setIsPinned(true);
+      openMenu();
     }
   };
 
   const handleClose = useCallback(() => {
-    clearTimer();
-    setIsOpen(false);
-    setIsPinned(false);
-  }, []);
+    closeMenu(true);
+  }, [closeMenu]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -177,7 +201,7 @@ export function ShoppingBriefMenu({
       </button>
 
       {/* Flyout Glass Menu Overlay */}
-      {isOpen && (
+      {isMounted && (
         <>
           <div
             className={`brief-menu-backdrop ${isOpen ? "visible" : ""}`}

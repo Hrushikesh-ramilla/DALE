@@ -154,8 +154,9 @@ export function AgentWorkspace({
   return (
     <section
       className={`agent-workspace ${variant === "sidebar" ? "sidebar-mode" : ""}`}
-      aria-labelledby="agent-title"
-      id="agent"
+      aria-labelledby={variant === "sidebar" ? undefined : "agent-title"}
+      aria-label={variant === "sidebar" ? "DALE shopping advocate" : undefined}
+      id={variant === "sidebar" ? "sidebar-agent" : "agent"}
     >
       {variant === "sidebar" ? (
         <div className="sidebar-agent-header">
