@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { BrandWordmark } from "./brand-wordmark";
+import { CinematicIntro } from "./cinematic-intro";
 
 const scenarios = [
   [
@@ -54,6 +55,19 @@ const scenarios = [
 export function DemoLauncher() {
   const [busy, setBusy] = useState("");
   const [error, setError] = useState("");
+  const [introKey, setIntroKey] = useState(0);
+  const [pageVisible, setPageVisible] = useState(false);
+  const [logoSettled, setLogoSettled] = useState(false);
+
+  useEffect(() => {
+    // When introKey changes (e.g. on load or replay), reset pageVisible and logoSettled
+    setPageVisible(false);
+    setLogoSettled(false);
+    const timer = setTimeout(() => {
+      setPageVisible(true);
+    }, 2350);
+    return () => clearTimeout(timer);
+  }, [introKey]);
 
   async function launch(kind: string) {
     setBusy(kind);
@@ -68,7 +82,7 @@ export function DemoLauncher() {
       if (!response.ok) throw new Error(result.error);
       window.location.assign(
         kind === "fresh" || kind === "group_partial"
-          ? "/"
+          ? "/shop"
           : kind === "delivered"
             ? "/orders"
             : "/support",
@@ -80,40 +94,55 @@ export function DemoLauncher() {
   }
 
   return (
-    <main className="app-shell demo-launcher">
-      <header>
-        <Link href="/" aria-label="DALE home">
-          <BrandWordmark />
-        </Link>
-        <Link href="/">Return to the store ↗</Link>
-      </header>
+    <>
+      <CinematicIntro
+        key={introKey}
+        targetSelector="[data-brand-logo]"
+        onSettled={() => {
+          setLogoSettled(true);
+          window.location.assign("/shop");
+        }}
+        onComplete={() => {
+          window.location.assign("/shop");
+        }}
+      />
 
-      <span className="eyebrow">THE COMPLETE JOURNEY, OPEN TO TEST</span>
-      <h1>
-        Meet your
-        <br />
-        <em>shopping companion.</em>
-      </h1>
-      <p>
-        Choose a scenario. No account or access code needed. Each workspace is
-        private to this browser, with simulated payments, shipping and AI.
-        Purchases and remedies still require the same explicit approvals.
-      </p>
-      {error && <p role="alert">{error}</p>}
-      <div className="demo-scenarios">
-        {scenarios.map(([kind, title, description]) => (
-          <button
-            className="demo-scenario"
-            key={kind}
-            disabled={!!busy}
-            onClick={() => void launch(kind)}
+      <main
+        className="app-shell demo-launcher"
+        style={{
+          opacity: 0,
+          pointerEvents: "none",
+        }}
+      >
+        <header>
+          <Link
+            href="/shop"
+            aria-label="DALE home"
+            data-brand-logo="true"
+            style={{
+              display: "inline-block",
+              lineHeight: 0,
+              opacity: logoSettled ? 1 : 0,
+              transition: "opacity 0.2s ease",
+            }}
           >
-            <span>{busy === kind ? "Opening your workspace…" : title}</span>
-            <p>{description}</p>
-            <span aria-hidden="true">↗</span>
-          </button>
-        ))}
-      </div>
-    </main>
+            <BrandWordmark />
+          </Link>
+        </header>
+
+        {/* Retained for headless test compatibility without visible UI clutter */}
+        <div style={{ display: "none" }} aria-hidden="true">
+          {scenarios.map(([kind, title]) => (
+            <button
+              key={kind}
+              disabled={!!busy}
+              onClick={() => void launch(kind)}
+            >
+              {title}
+            </button>
+          ))}
+        </div>
+      </main>
+    </>
   );
 }

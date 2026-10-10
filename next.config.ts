@@ -22,7 +22,13 @@ const config: NextConfig = {
     ],
   },
   async redirects() {
-    return [];
+    return [
+      {
+        source: "/demo",
+        destination: "/",
+        permanent: false,
+      },
+    ];
   },
   async headers() {
     return [
