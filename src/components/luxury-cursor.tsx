@@ -214,12 +214,16 @@ export function LuxuryCursor() {
       updateTargetState(e.target as HTMLElement | null);
     };
 
+    let scrollRafId: number | null = null;
     const onScroll = () => {
-      if (lastX < 0 || lastY < 0) return;
-      const el = document.elementFromPoint(lastX, lastY) as HTMLElement | null;
-      if (el) {
-        updateTargetState(el);
-      }
+      if (lastX < 0 || lastY < 0 || scrollRafId !== null) return;
+      scrollRafId = requestAnimationFrame(() => {
+        scrollRafId = null;
+        const el = document.elementFromPoint(lastX, lastY) as HTMLElement | null;
+        if (el) {
+          updateTargetState(el);
+        }
+      });
     };
 
     const onMouseDown = () => {
@@ -258,6 +262,7 @@ export function LuxuryCursor() {
     document.addEventListener("mouseenter", onMouseEnter);
 
     return () => {
+      if (scrollRafId !== null) cancelAnimationFrame(scrollRafId);
       document.body.classList.remove("has-custom-cursor");
       window.removeEventListener("pointermove", onPointerMove);
       window.removeEventListener("scroll", onScroll);
