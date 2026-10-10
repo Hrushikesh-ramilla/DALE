@@ -159,13 +159,13 @@ it("a changed real shopping requirement invalidates an earlier unpaid approval",
   );
 });
 it("uses the direct Gemini protocol for planning and validated evidence comparison", async () => {
-  const actor = await buyer(false);
   const plan = fallbackPlan(input);
   const mock = native(plan, {
     productId: "R001",
     sourceIds: ["air13", "dynamic"],
     reasons: ["lowest_complete_cost", "manufacturer_fit"],
   });
+  const actor = await buyer(false);
   const data = await runAgent(actor, input);
   expect(data.run.mode).toBe("model");
   expect(data.run.recommendation?.productId).toBe("R001");
@@ -179,8 +179,36 @@ it("uses the direct Gemini protocol for planning and validated evidence comparis
   expect(JSON.parse(body.contents[0].parts[0].text).task).toBe(input.task);
   expect(data.snapshot.orders).toHaveLength(0);
 });
-it("lets semantic model interpretation propose an unfamiliar phrasing without confirming invented constraints", async () => {
+it("accepts a model's explicit no-match comparison without invented evidence", async () => {
+  const task = {
+    ...input,
+    task: input.task.replace(
+      "Normal charging is fine.",
+      "I want fast charging.",
+    ),
+  };
+  native(fallbackPlan(task), { productId: null, sourceIds: [], reasons: [] });
   const actor = await buyer(false);
+  const data = await runAgent(actor, task);
+  expect(data.run.mode).toBe("model");
+  expect(data.run.recommendation).toEqual({
+    productId: null,
+    sourceIds: [],
+    reasons: [],
+  });
+  expect(data.run.status).toBe("needs_input");
+  expect(data.run.productIds).toHaveLength(0);
+  expect(data.snapshot.orders).toHaveLength(0);
+  native({
+    productId: null,
+    sourceIds: ["70w"],
+    reasons: ["lowest_complete_cost"],
+  });
+  await expect(compareWithModel(data.run.research!)).rejects.toThrow(
+    "without eligible evidence",
+  );
+});
+it("lets semantic model interpretation propose an unfamiliar phrasing without confirming invented constraints", async () => {
   const task =
     "Help me power the little thirteen-inch Air I bought in 2022; spend less than fifty dollars";
   native({
@@ -191,6 +219,7 @@ it("lets semantic model interpretation propose an unfamiliar phrasing without co
     fastCharging: false,
     deviceFamily: "m2air",
   });
+  const actor = await buyer(false);
   const data = await runAgent(actor, { ...input, task });
   expect(data.run.mode).toBe("model");
   expect(data.run.proposedTask).toContain("under $50.00");
@@ -242,6 +271,15 @@ it("makes no provider call until all no-billing gates are explicit, including en
   process.env.AI_BILLING_DISABLED = "true";
   const actor = await buyer();
   expect((await runAgent(actor, input)).run.mode).toBe("catalog");
+  expect(fetch).not.toHaveBeenCalled();
+});
+it("keeps an ordinary shopper's fixture AI mode when the host later enables live planning", async () => {
+  const actor = await buyer(false);
+  process.env.AI_MODE = "live";
+  process.env.AGENT_MODEL_ENABLED = "true";
+  process.env.AI_BILLING_DISABLED = "true";
+  const data = await runAgent(actor, input);
+  expect(data.run.mode).toBe("catalog");
   expect(fetch).not.toHaveBeenCalled();
 });
 it("falls back safely when quota is exhausted and does not retry before a long Retry-After", async () => {

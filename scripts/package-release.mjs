@@ -57,6 +57,8 @@ values.BUILD_ID = execFileSync("git", ["rev-parse", "HEAD"], {
 if (process.env.DEPLOY_AI_MODE) values.AI_MODE = process.env.DEPLOY_AI_MODE;
 // Live voice is opt-in only after the owner verifies free quota and disabled billing.
 values.VOICE_MODE = "disabled";
+values.AGENT_MODEL_ENABLED = "false";
+values.AI_BILLING_DISABLED = "false";
 values.VOICE_MODEL = "gemini-3.8-live";
 values.VOICE_FREE_TIER_CONFIRMED = "false";
 values.VOICE_BILLING_DISABLED = "false";

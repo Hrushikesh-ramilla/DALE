@@ -1,5 +1,11 @@
 import { getDatabase } from "./database";
-import { audit, getWorkspace, mutateWorkspace, type Actor } from "./state";
+import {
+  audit,
+  getWorkspace,
+  mutateWorkspace,
+  type Actor,
+  type Workspace,
+} from "./state";
 import { executeRefund } from "./service";
 import {
   getPayment,
@@ -10,6 +16,11 @@ import {
 import { paypalAmount } from "../domain/money";
 import { quotePaymentMode } from "../domain/guard";
 import { enqueueJob, processJobs } from "./jobs";
+import {
+  recordProviderWakeup,
+  reconcileProviderAdjustments,
+  preflightProviderOrder,
+} from "./provider-adjustments";
 
 // Verified webhook events are wake-up signals. Financial status always comes from a provider GET.
 export async function acceptWebhook(
@@ -25,14 +36,29 @@ export async function acceptWebhook(
       [event.id],
     );
     if (!receipt.rows.length) return { duplicate: true };
-    const workspaces = await sql.query<{ id: string }>(
-      "SELECT id FROM workspaces WHERE state->'operations' @> '[{\"state\":\"pending\"}]'::jsonb OR state->'operations' @> '[{\"state\":\"unknown\"}]'::jsonb",
+    const workspaces = await sql.query<{ id: string; state: Workspace }>(
+      "SELECT id,state FROM workspaces WHERE jsonb_array_length(state->'orders')>0 OR state->'operations' @> '[{\"state\":\"pending\"}]'::jsonb OR state->'operations' @> '[{\"state\":\"unknown\"}]'::jsonb FOR UPDATE",
     );
-    for (const workspace of workspaces.rows)
+    for (const workspace of workspaces.rows) {
+      if (workspace.state.archivedAt) continue;
+      const changed = recordProviderWakeup(workspace.state, event);
+      if (changed)
+        await sql.query("UPDATE workspaces SET state=$2::jsonb WHERE id=$1", [
+          workspace.id,
+          JSON.stringify(workspace.state),
+        ]);
+      if (
+        !changed &&
+        !workspace.state.operations.some((operation) =>
+          ["pending", "unknown"].includes(operation.state),
+        )
+      )
+        continue;
       await enqueueJob(sql, workspace.id, "reconcile", {
         eventId: event.id,
         type: event.event_type,
       });
+    }
     return { duplicate: false };
   });
 }
@@ -130,8 +156,22 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
         audit(state, actor, "checkout.expired", order.id);
       }
   });
-  const state = await getWorkspace(workspaceId);
+  const beforeProviderScan = await getWorkspace(workspaceId);
   let failures = 0;
+  for (const order of beforeProviderScan.orders
+    .filter(
+      (entry) =>
+        entry.captureId &&
+        quotePaymentMode(entry.quote) === "sandbox" &&
+        (!entry.providerScan ||
+          Date.parse(entry.providerScan.nextCheckAt) <= now),
+    )
+    .slice(0, 2))
+    failures += (
+      await preflightProviderOrder(workspaceId, order.id, false, now)
+    ).failures;
+  failures += (await reconcileProviderAdjustments(workspaceId, now)).failures;
+  const state = await getWorkspace(workspaceId);
   // Approval and operation preparation are separate durable steps. Recover a crash between them too.
   for (const item of state.cases.filter(
     (item) =>

@@ -4,6 +4,8 @@
 
 For stable management access, use [Systems Manager instead of changing local-IP SSH rules](DEPLOYMENT_ACCESS.md). The connection script is prepared; activating the instance role/agent and an authenticated AWS identity is still required.
 
+For an existing installation, upload `deploy/upgrade.sh` alongside the installer and run `sudo bash upgrade.sh <release-id> <expected-sha256>`. It checks the transferred archive before changing services, retains a private database/evidence/environment snapshot and the previous release, and restores the previous code/environment on installation failure. It does not automatically overwrite a database with a backup. Schema compatibility must be reviewed before code rollback. Use the ignored restricted local SSH key copy documented in DEPLOYMENT_ACCESS.md.
+
 The demo uses an existing Ubuntu instance with 1 GiB RAM. Build locally with `npm run build`, then `node scripts/package-release.mjs`; the release archive excludes all environment files and unnecessary native build binaries. Native Node.js, PostgreSQL, Caddy, and systemd avoid compiling on the small host.
 
 Install Ubuntu packages `nodejs postgresql caddy`. Copy the generated archive, private `production.env`, private `database.sql`, and `deploy/install.sh` to `/home/ubuntu`, then run `sudo bash install.sh <unique-release-id>`. The script creates a dedicated service account, database role, persistent `/var/lib/buyerguard` evidence directory, and versioned `/opt/buyerguard/releases` checkout. The environment is readable by the service account only.

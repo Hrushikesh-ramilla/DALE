@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import {
@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 import {
   catalog,
-  models,
+  knownModels as models,
   deviceLabel,
   deviceText,
   productById,
@@ -42,6 +42,8 @@ import { DemoToolbar } from "./demo-toolbar";
 import { VoiceCompanion, type VoiceResult } from "./voice-companion";
 import { AgentWorkspace, type AgentResult } from "./agent-workspace";
 import type { ScenarioKind } from "@/server/scenarios";
+import { GroupPolicySettings } from "./group-policy-settings";
+import { ProviderReconciliation } from "./provider-reconciliation";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
@@ -89,6 +91,25 @@ async function api<T>(
   if (!response.ok) throw new Error(data.error || "Please try again.");
   return data;
 }
+function AgentSurface({
+  orderPage,
+  inspection,
+  children,
+}: {
+  orderPage: boolean;
+  inspection: boolean;
+  children: ReactNode;
+}) {
+  if (!orderPage) return <>{children}</>;
+  return (
+    <details className="order-agent" open={inspection}>
+      <summary>
+        Ask DALE about your orders <span>Tracking, returns and voice</span>
+      </summary>
+      {children}
+    </details>
+  );
+}
 export default function Storefront() {
   const pathname = usePathname();
   const router = useRouter();
@@ -121,6 +142,9 @@ export default function Storefront() {
     [message, setMessage] = useState(""),
     [preference, setPreference] = useState(""),
     [priority, setPriority] = useState<"price" | "features">("price"),
+    [weights, setWeights] = useState<
+      { price: number; features: number } | undefined
+    >(),
     [briefDirty, setBriefDirty] = useState(false);
   const [summary, setSummary] = useState(
     "Tell us what you need. We'll keep compatibility, your budget, and your choices at the center.",
@@ -158,6 +182,7 @@ export default function Storefront() {
       setMessage(input.message);
       setPreference(input.preference);
       setPriority(input.priority);
+      setWeights(input.weights);
       setProducts(data.brief.clarificationRequired ? [] : searchCatalog(input));
       setQuestions(clarifyBrief(input));
       if (data.conversation.length) setSummary(data.conversation.at(-1)!.text);
@@ -220,6 +245,7 @@ export default function Storefront() {
   };
   const applyVoice = useCallback(
     (data: VoiceResult) => {
+      if (data.snapshot) restoreSession(data.snapshot);
       if (data.intent.kind === "shopping" && data.result && data.snapshot) {
         restoreSession(data.snapshot);
         setProducts(data.result.products);
@@ -260,7 +286,11 @@ export default function Storefront() {
         setSummary(data.result.analysis.summary);
         setCatalogQuery("");
         if (tab !== "discover") setTab("discover");
-      } else applyVoice(data);
+      } else if (
+        data.intent.kind === "navigate" ||
+        data.intent.kind === "support_draft"
+      )
+        applyVoice(data);
     },
     [restoreSession, applyVoice, setTab, tab],
   );
@@ -281,6 +311,7 @@ export default function Storefront() {
         budget: Math.round(Number(budget) * 100),
         preference,
         priority,
+        weights,
         confirmConstraints,
       });
       setProducts(result.products);
@@ -332,6 +363,7 @@ export default function Storefront() {
             budget: Math.round(Number(budget) * 100),
             preference,
             priority,
+            weights,
           }),
     );
     setSummary(
@@ -347,7 +379,11 @@ export default function Storefront() {
     form: FormData,
     target: { caseId?: string; orderId?: string },
   ) {
-    const file = form.get("image") as File;
+    const photo = form.get("image") as File;
+    const video = form.get("video") as File;
+    if (photo?.size && video?.size)
+      throw new Error("Submit one photo or video per evidence record.");
+    const file = video?.size ? video : photo;
     const input = {
       ...target,
       checkpoint: String(form.get("checkpoint")),
@@ -360,7 +396,7 @@ export default function Storefront() {
         if (value !== undefined) body.set(key, value);
       const captureSessionId = form.get("captureSessionId");
       if (captureSessionId) body.set("captureSessionId", captureSessionId);
-      body.set("image", file);
+      body.set(video?.size ? "video" : "image", file);
       const response = await fetch("/api/evidence", { method: "POST", body });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error);
@@ -471,49 +507,77 @@ export default function Storefront() {
             {notice}
           </div>
         )}
-        {isBuyer && (tab === "discover" || tab === "support") && (
-          <AgentWorkspace
-            key={`${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
-            session={session}
-            restoring={restoring || busy}
-            model={model}
-            budget={Math.max(
-              1,
-              Math.min(100000, Math.round(Number(budget) * 100) || 8000),
-            )}
-            briefDirty={briefDirty}
-            onResult={applyAgent}
-            onReview={(product) => {
-              const latest = session?.agentRuns.at(-1);
-              if (
-                !latest?.briefVersion ||
-                latest.briefVersion !== session?.brief?.version ||
-                briefDirty
-              ) {
-                setError(
-                  "Your brief changed. Send a new agent task before reviewing this option.",
-                );
-                return;
-              }
-              void choose(product);
-            }}
-            voice={
-              tab === "discover" || tab === "support" ? (
-                <VoiceCompanion
-                  pending={restoring || busy}
-                  key={`${pathname}:${session?.actor.userId || "visitor"}`}
-                  model={model}
-                  budget={Math.max(
-                    1,
-                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
-                  )}
-                  actorId={session?.actor.userId}
-                  onResult={applyVoice}
-                />
-              ) : null
-            }
-          />
-        )}
+        {isBuyer &&
+          (tab === "discover" || tab === "support" || tab === "orders") && (
+            <AgentSurface
+              orderPage={tab === "orders"}
+              inspection={session?.agentRuns.at(-1)?.orders !== undefined}
+            >
+              <AgentWorkspace
+                key={`${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
+                session={session}
+                restoring={restoring || busy}
+                model={model}
+                budget={Math.max(
+                  1,
+                  Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                )}
+                briefDirty={briefDirty}
+                onResult={applyAgent}
+                onGroupCommit={(offer) => {
+                  void run(async () => {
+                    if (briefDirty)
+                      throw new Error(
+                        "Save your current needs before committing to a group.",
+                      );
+                    await action({
+                      action: "agent_group_commit",
+                      productId: offer.productId,
+                      briefVersion: offer.briefVersion,
+                      policyVersion: offer.policyVersion,
+                    });
+                    setNotice(
+                      "Group commitment recorded without payment. Another shopper is required before your discounted checkout.",
+                    );
+                  });
+                }}
+                onReview={(product, groupId) => {
+                  const latest = session?.agentRuns.at(-1);
+                  if (
+                    !latest?.briefVersion ||
+                    latest.briefVersion !== session?.brief?.version ||
+                    briefDirty
+                  ) {
+                    setError(
+                      "Your brief changed. Send a new agent task before reviewing this option.",
+                    );
+                    return;
+                  }
+                  void choose(product, groupId);
+                }}
+                voice={
+                  tab === "discover" ||
+                  tab === "support" ||
+                  tab === "orders" ? (
+                    <VoiceCompanion
+                      pending={restoring || busy}
+                      key={`${pathname}:${session?.actor.userId || "visitor"}`}
+                      model={model}
+                      budget={Math.max(
+                        1,
+                        Math.min(
+                          100000,
+                          Math.round(Number(budget) * 100) || 8000,
+                        ),
+                      )}
+                      actorId={session?.actor.userId}
+                      onResult={applyVoice}
+                    />
+                  ) : null
+                }
+              />
+            </AgentSurface>
+          )}
         {tab === "discover" && (
           <>
             <EditorialHero
@@ -694,6 +758,44 @@ export default function Storefront() {
                     </option>
                   </select>
                 </label>
+                <label>
+                  <span>Use explicit preference weights</span>
+                  <input
+                    type="checkbox"
+                    checked={!!weights}
+                    onChange={(event) => {
+                      setWeights(
+                        event.target.checked
+                          ? { price: 50, features: 50 }
+                          : undefined,
+                      );
+                      setBriefDirty(true);
+                    }}
+                  />
+                </label>
+                {weights && (
+                  <>
+                    <label>
+                      Price weight, {weights.price}%
+                      <input
+                        aria-label="Price preference weight"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value={weights.price}
+                        onChange={(event) => {
+                          const price = Number(event.target.value);
+                          setWeights({ price, features: 100 - price });
+                          setBriefDirty(true);
+                        }}
+                      />
+                    </label>
+                    <p className="muted">
+                      Matching feature weight: {weights.features}%. Device fit
+                      and budget remain required before ranking.
+                    </p>
+                  </>
+                )}
                 {briefDirty && (
                   <p className="muted" role="status">
                     Brief changed. Find my match saves it and replaces older
@@ -856,9 +958,11 @@ export default function Storefront() {
                           </button>
                           {index === 0 && (
                             <span className="card-badge">
-                              {priority === "features"
-                                ? "Top match for your brief"
-                                : "Best price for your brief"}
+                              {weights
+                                ? "Top weighted match for your brief"
+                                : priority === "features"
+                                  ? "Top match for your brief"
+                                  : "Best price for your brief"}
                             </span>
                           )}
                         </div>
@@ -892,14 +996,16 @@ export default function Storefront() {
                           </div>
                           <small className="muted">
                             Source: {product.source}.{" "}
-                            {priority === "features" &&
-                            preference &&
-                            product.specs
-                              .join(" ")
-                              .toLowerCase()
-                              .includes(preference.toLowerCase())
-                              ? `Matches “${preference}” in listed specifications.`
-                              : "Ranked by listed price."}
+                            {weights
+                              ? `Ranked with price weight ${weights.price} and feature weight ${weights.features}; feature match uses the listed specifications.`
+                              : priority === "features" &&
+                                  preference &&
+                                  product.specs
+                                    .join(" ")
+                                    .toLowerCase()
+                                    .includes(preference.toLowerCase())
+                                ? `Matches “${preference}” in listed specifications.`
+                                : "Ranked by listed price."}
                           </small>
                           <div className="price-row">
                             <strong>{formatMoney(product.price)}</strong>
@@ -1100,9 +1206,10 @@ export default function Storefront() {
                 <details>
                   <summary>How does a group purchase work?</summary>
                   <p>
-                    Two commitments unlock 10% off with a 30-minute approval
-                    window. Each participant checks out independently. Another
-                    participant declining does not reprice your locked purchase.
+                    The merchant publishes a minimum shopper count, discount and
+                    checkout window for each group. Each participant checks out
+                    independently. Another participant declining does not
+                    reprice your locked purchase.
                   </p>
                 </details>
               </div>
@@ -1114,7 +1221,7 @@ export default function Storefront() {
             <PageHeading
               eyebrow="GOOD DEALS, TOGETHER"
               title="A little buying power."
-              detail="Two commitments unlock 10% off. Each shopper pays independently. Your locked price stays yours."
+              detail="Each group shows its approved shopper threshold, discount and deadline. Each shopper pays independently. Your locked price stays yours."
             />
             {session?.demo && (
               <div className="invite-panel">
@@ -1164,20 +1271,21 @@ export default function Storefront() {
                         </span>
                         <h3>{product.name}</h3>
                         <p>
-                          {deviceLabel(group.model)} · {group.memberCount} of 2
+                          {deviceLabel(group.model)} · {group.memberCount} of{" "}
+                          {group.terms.minimumMembers}
                           commitments
                         </p>
                         <div className="progress">
                           <span
                             style={{
-                              width: `${Math.min(100, group.memberCount * 50)}%`,
+                              width: `${Math.min(100, (group.memberCount / group.terms.minimumMembers) * 100)}%`,
                             }}
                           />
                         </div>
                         <p className="muted">
                           {group.status === "ready"
                             ? `Your price: ${formatMoney(group.amount!)}. Valid until ${new Date(group.checkoutExpiresAt!).toLocaleTimeString()}.`
-                            : "No payment is taken until you approve checkout."}
+                            : `${group.terms.discountPercent}% off if the threshold is met. No payment is taken until you approve checkout.`}
                         </p>
                         {group.joined && group.status === "ready" ? (
                           <button
@@ -1318,6 +1426,23 @@ export default function Storefront() {
                         </div>
                       ))}
                     </div>
+                    <ProviderReconciliation
+                      order={order}
+                      reviewer={session.actor.role === "reviewer"}
+                      busy={busy}
+                      refresh={async (refundReferences) => {
+                        await run(async () => {
+                          await action({
+                            action: "provider_reconcile",
+                            orderId: order.id,
+                            refundReferences,
+                          });
+                          setNotice(
+                            "Provider facts refreshed. Pending or ambiguous adjustments still require reconciliation; no new money action was performed.",
+                          );
+                        });
+                      }}
+                    />
                     <div className="order-footer">
                       <small className="muted">
                         {order.captureId
@@ -1619,7 +1744,11 @@ export default function Storefront() {
                               target="_blank"
                               rel="noreferrer"
                             >
-                              View original image <ChevronRight size={12} />
+                              View original{" "}
+                              {entry.mime?.startsWith("video/")
+                                ? "video"
+                                : "image"}{" "}
+                              <ChevronRight size={12} />
                             </a>
                           )}
                           <small>
@@ -1638,6 +1767,12 @@ export default function Storefront() {
                               reviewer can check the context.
                             </small>
                           )}
+                          {entry.mime?.startsWith("video/") && (
+                            <small>
+                              Video retained for human review; image analysis
+                              does not inspect video.
+                            </small>
+                          )}
                         </div>
                       ))}
                     </div>
@@ -1649,6 +1784,52 @@ export default function Storefront() {
                         </h4>
                         {item.analysis.observations.map((observation, i) => (
                           <p key={i}>{observation}</p>
+                        ))}
+                        {item.analysis.propositions?.map((claim) => (
+                          <details key={claim.id} className="claim-proposition">
+                            <summary>
+                              {claim.statement} · {claim.outcome}
+                            </summary>
+                            {claim.observations.map((observation, i) => (
+                              <p key={i}>
+                                {observation.text} (
+                                {observation.basis.replaceAll("_", " ")})
+                              </p>
+                            ))}
+                            {claim.sourceIds.map((id) => {
+                              const source = item.evidence.find(
+                                (entry) => entry.id === id,
+                              );
+                              return (
+                                source && (
+                                  <p key={id}>
+                                    Source:{" "}
+                                    {source.checkpoint.replaceAll("_", " ")} ·{" "}
+                                    {source.id.slice(0, 8)}{" "}
+                                    {source.assetKey && (
+                                      <a
+                                        href={`/api/evidence?id=${id}`}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                      >
+                                        View original{" "}
+                                        {source.mime?.startsWith("video/")
+                                          ? "video"
+                                          : "image"}
+                                      </a>
+                                    )}
+                                  </p>
+                                )
+                              );
+                            })}
+                            {claim.missingFacts.map((fact) => (
+                              <p key={fact}>Missing: {fact}</p>
+                            ))}
+                            {claim.uncertainty.map((limitation) => (
+                              <p key={limitation}>{limitation}</p>
+                            ))}
+                            <p>{claim.nextAction}</p>
+                          </details>
                         ))}
                         <strong>{item.analysis.nextStep}</strong>
                       </div>
@@ -1811,7 +1992,10 @@ export default function Storefront() {
         </footer>
         <div className="footer-bottom">
           <span>DALE / The considered collection</span>
-          <span>Test storefront · Synthetic catalog & shipping · USD</span>
+          <span>
+            Test storefront · Sourced products + sample catalog · Simulated
+            shipping · USD
+          </span>
         </div>
         <div className="closing-wordmark" aria-hidden="true">
           <BrandWordmark />
@@ -1848,6 +2032,25 @@ export default function Storefront() {
                 This fixture workspace is archived. Its financial and evidence
                 audit records are preserved.
               </p>
+            )}
+            {session.actor.role === "reviewer" && (
+              <GroupPolicySettings
+                key={session.groupPolicy.version}
+                policy={session.groupPolicy}
+                busy={busy}
+                onSave={(policy, expectedVersion) =>
+                  run(async () => {
+                    await action({
+                      action: "group_policy",
+                      policy,
+                      expectedVersion,
+                    });
+                    setNotice(
+                      "Group policy approved. Existing groups keep their frozen terms.",
+                    );
+                  })
+                }
+              />
             )}
             {session.actor.role === "reviewer" && !session.demo && (
               <form
@@ -2119,6 +2322,16 @@ export default function Storefront() {
                       <p>Confirmed fit: {deviceLabel(modal.quote.model)}</p>
                     </div>
                   </div>
+                  {modal.quote.productId.startsWith("R") && (
+                    <p className="fixture-note">
+                      Real manufacturer product identity; simulated DALE
+                      merchant offer. This does not order from Apple or promise
+                      physical fulfillment.{" "}
+                      {modal.quote.productId === "R003"
+                        ? "Adapter and 60W charging cable included."
+                        : "Adapter only; uses the charging cable confirmed in your brief."}
+                    </p>
+                  )}
                   {modal.quote.deliveryBy && (
                     <p>
                       Delivery promise:{" "}
@@ -2482,6 +2695,19 @@ export default function Storefront() {
                         capture="environment"
                       />
                     </label>
+                    <label>
+                      Video (optional, MP4 or WebM, up to 8 MB)
+                      <input
+                        type="file"
+                        name="video"
+                        accept="video/mp4,video/webm"
+                      />
+                    </label>
+                    <p className="muted">
+                      Choose one photo or video per record, or submit your
+                      description alone. Videos are private records for human
+                      review; image analysis does not inspect video.
+                    </p>
                     <input
                       type="hidden"
                       name="captureSessionId"

@@ -1,6 +1,8 @@
 import { knownModels as models, deviceLabel } from "./catalog";
-import { realModels } from "./research";
+import { resolveDevices } from "./device-registry";
 export function canonicalModel(label: string): string | null {
+  const devices = resolveDevices(label);
+  if (devices.length === 1) return devices[0].model;
   const normalized = label
     .normalize("NFKC")
     .replace(/[\u200b-\u200d\ufeff]/g, "")
@@ -38,14 +40,9 @@ export function mentionedModels(text: string) {
       ...matches
         .map(canonicalModel)
         .filter((value): value is string => Boolean(value)),
-      ...realModels.filter((model, index) => {
-        const size = index === 0 ? "13" : "15";
-        return (
-          /macbook\s+air/i.test(normalized) &&
-          /\bm2\b/i.test(normalized) &&
-          new RegExp(`\\b${size}(?:\\.\\d)?(?:[ -]?inch)?\\b`).test(normalized)
-        );
-      }),
+      ...(resolveDevices(normalized).length === 1
+        ? resolveDevices(normalized).map((device) => device.model)
+        : []),
     ]),
   ];
 }

@@ -1,8 +1,36 @@
-# Manual acceptance tests
+# Sourced buyer-agent acceptance journey
 
-## Visible DALE task workspace
+## Compound shopping and group savings
 
-Use the revised local application at http://localhost:3000/ for these steps. The public EC2 build remains older until deployment access is restored.
+This new journey requires the conversational-group release; check docs/VALIDATION.md for its hosted rollout status. In a fresh guest workspace, type **Find a charger for my MacBook Air M2 13-inch under $53. I need a cable included. Normal charging. Use grouping to reduce the cost.** Expect research and group-discovery receipts, a rejected $58 standalone bundle and a conditional $52.20 full bundle. No partner, order or group commitment exists yet.
+
+Click **Commit to group**: expect one member and no charge. Use the owned demo toolbar's second-shopper persona, join the same bundle/model through Group deals, then switch back to Shopper. Refresh the opening conversation: **Review group offer** becomes available. Expect $52.20, actual deadline and full quote disclosures; closing it creates no order. Only **Approve simulated purchase** records the paid fixture order. A declined/absent second shopper cannot grant checkout before the group is ready.
+
+Change the budget or cable requirement before committing: stale offers must be disabled/rejected. **No grouping, my budget is $60** removes the retained savings goal. **Use grouping to reduce the cost** after a confirmed brief inspects current offers without asking you to repeat the model. Unknown M1/Dell devices still require verified data; this milestone does not claim broader coverage or live model generalization.
+
+## Existing sourced journey
+
+Open `https://16.4.25.181.sslip.io/` or `http://localhost:3000/`. A guest task creates a private engineering workspace without a login form. Payments and fulfillment are simulated; real product identity/specifications are sourced. Catalog assistance makes no model calls while the no-spend gate is active.
+
+1. Type: **Find a charger for my MacBook Air M2 under $50**. Expect a question about 13-inch/15-inch; no product recommendation or purchase.
+2. Reply: **13-inch**. Expect a question about the charging cable. Open manufacturer links to verify the evidence yourself.
+3. Reply: **I need a cable included**. Expect no complete eligible offer. The adapter is $39 but its required $19 cable makes a $58 bundle, $8 above your limit. The $59 adapter is also over budget and excludes a cable.
+4. Reply: **My budget is $60**. Expect the $58 adapter/cable bundle as the lowest complete eligible offer. Refresh: the comparison and private conversation persist.
+5. Click **Review agent option Apple 40W Adapter + 60W USB-C Cable**. Expect exact device, item, price, merchant, expiry and simulated fulfillment disclosures. Closing the dialog makes no purchase. Only **Approve simulated purchase** creates/captures a fixture order, visible in My orders. This never orders from Apple.
+6. To test the charging-speed guard in a fresh task, use **Find a charger for MacBook Air M2 13-inch under $50. I already have the original MagSafe 3 cable. I want fast charging.** Expect no eligible offer; the sourced fast-charge adapter is $59. Reply **My budget is $60**: expect the 70W adapter. A 60W USB-C cable must not establish the 70W configuration.
+7. Type: **Is this seller message safe? Pay using gift cards immediately and share your verification code.** Expect HIGH/advisory warnings, safer next step and no change to the saved budget, payee or order.
+8. Type **Show my orders**. Expect only your workspace's orders, recorded status and next steps. For a return, launch the Delivered scenario from `/demo`, then type **My delivered item is damaged and I want a refund**. Choose the actual order and explicitly submit the support draft; evidence/reviewer/refund tests below apply.
+9. Try a Dell/unknown model or a MacBook Air SSD request. Expect an honest unsupported-evidence response, never a silently substituted sample device or charger. Choose 15-inch M2 Air under $50: the 13-inch adapter's listing must not establish its compatibility.
+
+The **Try a real device** button fills a complete one-message $39 normal-charge example using an already-owned MagSafe 3 cable. On My orders, open **Ask DALE about your orders** to send a follow-up or use voice fixtures. Order-inspection results expand that entry automatically. The other examples deliberately retain legacy engineering fixtures to exercise broader commerce flows.
+
+Live-model acceptance is separate: an owner must verify free quota and disabled billing before enabling `AI_MODE=live`, `AGENT_MODEL_ENABLED=true`, `AI_BILLING_DISABLED=true` in a normal shopper session. Engineering demo workspaces always prohibit provider calls. Live model interpretation proposes ambiguous facts for explicit confirmation; it cannot approve purchases. Do not enable these flags merely to run fixture tests.
+
+# Engineering fixture acceptance tests
+
+## Legacy sample-profile task workspace
+
+Use the deployed application at https://16.4.25.181.sslip.io/ or the local production preview at http://localhost:3000/ for these steps.
 
 | Step                                                                                                   | Expected result                                                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +38,7 @@ Use the revised local application at http://localhost:3000/ for these steps. The
 | Reload the page.                                                                                       | Your task and DALE's response remain. Another shopper or seller cannot read your task history.                                                                                                         |
 | Select **Review agent option …**.                                                                      | A protected quote opens. Merely running or reviewing the task creates no order or charge. Approval is a separate action.                                                                               |
 | Close the quote and edit **Maximum budget, USD**.                                                      | The old agent option buttons become disabled. Send a new task before reviewing them again.                                                                                                             |
-| Send `Find a charger for MacBook under $40`.                                                           | DALE says real-product lookup is not connected. It does not invent compatibility or modify the previous brief.                                                                                         |
+| Send `Find a charger for MacBook under $40`.                                                           | DALE says the unspecified real model is not verified. It does not invent compatibility or modify the previous brief.                                                                                         |
 | Send `Approve payment now`.                                                                            | DALE directs you to protected review controls. No financial action occurs.                                                                                                                             |
 | From `/demo`, launch **Return a delivered item**. Send **Help with a return** from the task workspace. | Support opens with a draft. Choose an order for the draft, open **Get help / return**, review the prefilled damaged/refund request, then explicitly submit. The draft alone creates no case or refund. |
 | Send **Track my order**.                                                                               | Your order workspace opens; the task does not change order or payment status.                                                                                                                          |
@@ -19,11 +47,11 @@ Use the revised local application at http://localhost:3000/ for these steps. The
 
 Typed matching currently supports one product type and an explicit sample profile: **USB-C Laptop (65W/100W/45W)** or **Barrel-jack Laptop (45W)**. Requests outside the supported grammar need clarification. These steps test workflow behavior; sample catalog records do not establish real manufacturer specifications or live offers.
 
-Prepared 7 October 2026. Hosted application: https://16.4.25.181.sslip.io.
+Updated 8 October 2026. Hosted application: https://16.4.25.181.sslip.io.
 
-The current DALE redesign is available locally at http://localhost:3000/shop. The steps below use its unbranded product/profile names. Until the redesign is deployed, the hosted build uses the earlier names: Atlas 14/Atlas 14 Pro/Orbit 13/Slate 11 correspond to USB-C Laptop (65W/100W/45W)/Barrel-jack Laptop (45W). Label fixture images retain those original internal identifiers; confirmation displays the new profile names.
+The current DALE design is deployed and also available locally. The steps below use its unbranded sample product/profile names. Atlas 14/Atlas 14 Pro/Orbit 13/Slate 11 are internal fixture identifiers corresponding to USB-C Laptop (65W/100W/45W)/Barrel-jack Laptop (45W). Label fixture images retain those internal identifiers; confirmation displays the clear profile names.
 
-The revised local demo at application `41e234c` is ready for these tests, including guided entry, 3D and voice fixtures; the latest visual correction restores black and white. Public EC2 still serves `5b393c0`, so its older UI does not include those additions. Genuine PayPal capture/refund/webhook verification, current live Gemini accuracy, controlled physical captures and independent human acceptance remain open. Documentation commits do not change either running application build. Check `/api/health` and Environment details when recording results.
+The revised local sourced-agent release includes guided entry, 3D and voice fixtures and retains the black-and-white design. Public EC2 and the local preview serve application `2c9b845`, including the sourced agent and these additions. Genuine PayPal capture/refund/webhook verification, current live Gemini accuracy, controlled physical captures and independent human acceptance remain open. Documentation commits do not change either running application build. Check `/api/health` and Environment details when recording results.
 
 These are instructions and expected results, not a claim that a human has executed them. Existing automated and hosted evidence is in [VALIDATION.md](VALIDATION.md). Record your actual observations, including failures.
 

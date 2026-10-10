@@ -8,6 +8,7 @@ import {
   addEvidence,
   evidenceBytes,
 } from "@/server/service";
+import { MAX_EVIDENCE_VIDEO_BYTES } from "@/server/storage";
 const inputSchema = z.object({
   caseId: z.string().uuid().optional(),
   orderId: z.string().uuid().optional(),
@@ -31,25 +32,39 @@ export async function POST(request: Request) {
     let fields: Record<string, unknown>;
     let file: { bytes: Buffer; mime: string };
     if (contentType.startsWith("multipart/form-data")) {
-      const bytes = await limitedBody(request, 4 * 1024 * 1024 + 65536);
+      const bytes = await limitedBody(
+        request,
+        MAX_EVIDENCE_VIDEO_BYTES + 65536,
+      );
       const form = await new Request(request.url, {
         method: "POST",
         headers: { "Content-Type": contentType },
         body: new Uint8Array(bytes),
       }).formData();
       fields = Object.fromEntries(form);
-      const image = form.get("image");
-      if (!(image instanceof File))
-        throw new Error("An image file is required.");
+      const image = form.get("image"),
+        video = form.get("video");
+      if (
+        image instanceof File &&
+        image.size &&
+        video instanceof File &&
+        video.size
+      )
+        throw new Error("Submit one photo or video per evidence record.");
+      const media = video instanceof File && video.size ? video : image;
+      if (!(media instanceof File) || !media.size)
+        throw new Error(
+          "An image or video file is required; descriptions can be submitted without media.",
+        );
       file = {
-        bytes: Buffer.from(await image.arrayBuffer()),
-        mime: image.type,
+        bytes: Buffer.from(await media.arrayBuffer()),
+        mime: media.type,
       };
     } else {
       // Compatibility for the original engineering client. New UI submissions keep notes out of URLs.
       fields = Object.fromEntries(new URL(request.url).searchParams);
       file = {
-        bytes: await limitedBody(request, 4 * 1024 * 1024),
+        bytes: await limitedBody(request, MAX_EVIDENCE_VIDEO_BYTES),
         mime: contentType,
       };
     }
@@ -81,6 +96,7 @@ export async function GET(request: Request) {
         "Content-Type": mime,
         "Cache-Control": "private, no-store",
         "Content-Disposition": "inline",
+        "X-Content-Type-Options": "nosniff",
       },
     });
   } catch (error) {

@@ -37,6 +37,7 @@ const orderSchema = z.object({
 const refundSchema = z.object({
   id: z.string(),
   status: z.string(),
+  update_time: z.string().optional(),
   amount: z.object({ value: z.string(), currency_code: z.string() }),
   links: z.array(z.object({ rel: z.string(), href: z.string() })),
 });
@@ -229,6 +230,82 @@ export async function getRefund(
     ),
     { ...expected, refundId },
   );
+}
+export async function getProviderRefund(refundId: string) {
+  const result = refundSchema.parse(
+    await paypalRequest(`/v2/payments/refunds/${encodeURIComponent(refundId)}`),
+  );
+  if (result.id !== refundId)
+    throw new Error("Provider refund reference mismatch.");
+  return result;
+}
+const providerMoney = z.object({
+  value: z.string(),
+  currency_code: z.string(),
+});
+export async function getProviderCapture(captureId: string) {
+  const result = z
+    .object({
+      id: z.string(),
+      status: z.string(),
+      amount: providerMoney,
+      update_time: z.string().optional(),
+    })
+    .parse(
+      await paypalRequest(
+        `/v2/payments/captures/${encodeURIComponent(captureId)}`,
+      ),
+    );
+  if (result.id !== captureId)
+    throw new Error("Provider capture reference mismatch.");
+  return result;
+}
+export async function getProviderDispute(disputeId: string) {
+  const result = z
+    .object({
+      dispute_id: z.string(),
+      status: z.string(),
+      update_time: z.string().optional(),
+      disputed_transactions: z
+        .array(z.object({ seller_transaction_id: z.string() }))
+        .min(1)
+        .max(10),
+      dispute_amount: providerMoney,
+      dispute_outcome: z
+        .object({
+          outcome_code: z.string(),
+          amount_refunded: providerMoney.optional(),
+        })
+        .optional(),
+    })
+    .parse(
+      await paypalRequest(
+        `/v1/customer/disputes/${encodeURIComponent(disputeId)}`,
+      ),
+    );
+  if (result.dispute_id !== disputeId)
+    throw new Error("Provider dispute reference mismatch.");
+  return result;
+}
+export async function getProviderDisputesForCapture(captureId: string) {
+  // One bounded page: a next link means absence/completeness cannot be established and must fail closed.
+  const result = z
+    .object({
+      items: z
+        .array(z.object({ dispute_id: z.string().min(1).max(255) }))
+        .max(50),
+      links: z.array(z.object({ rel: z.string(), href: z.string() })).max(20),
+    })
+    .parse(
+      await paypalRequest(
+        `/v1/customer/disputes?disputed_transaction_id=${encodeURIComponent(captureId)}&page_size=50`,
+      ),
+    );
+  if (result.links.some((link) => link.rel === "next"))
+    throw new Error(
+      "Provider dispute discovery is paginated; complete reconciliation requires review.",
+    );
+  return result.items;
 }
 export async function verifyWebhook(headers: Headers, event: unknown) {
   if (!process.env.PAYPAL_WEBHOOK_ID)

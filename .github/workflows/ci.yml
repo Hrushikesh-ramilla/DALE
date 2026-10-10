@@ -25,8 +25,19 @@ jobs:
             .data/reports/mock-model-evaluation.json
           retention-days: 7
       - run: npm run build
+      - run: node scripts/prepare-production-browser.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+        env:
+          E2E_SERVER_MODE: production
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: production-browser-report
+          path: |
+            playwright-report
+            test-results
+          retention-days: 7
   containers:
     runs-on: ubuntu-latest
     timeout-minutes: 15

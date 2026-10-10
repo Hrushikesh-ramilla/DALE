@@ -2,6 +2,35 @@
 
 Each implementation milestone records behavior, validation, and remaining limitations. Git commits provide the corresponding source history.
 
+## 2026-10-08 — Composed shopping and resolution contracts
+
+- Connected multi-goal native planning and confirmed voice transcripts to sourced research, conditional group savings, private order/case inspection, seller-message checks and unsubmitted support drafts. Unknown devices remain unresolved; semantic proposals require confirmation and generated plans cannot authorize money. Added reviewed M1 Air/13-inch Pro records, metadata-based aliases and bounded manufacturer HTTP receipts; seven actual public pages matched.
+- Added persisted price/feature weights and versioned reviewer-approved merchant thresholds/discount windows. Existing commitments retain frozen terms; stale policy/brief changes cannot authorize checkout.
+- Added source-linked claim propositions, uncertainty/next actions, original-integrity receipts and optional private MP4/WebM for manual review. Reports do not infer physical honesty, causation or automatically deny/refund claims.
+- Implemented signed provider-event wake-ups, sandbox capture/refund/dispute reads, bounded worker/pre-remedy discovery and reviewer reconciliation. Exact refund references credit once, completed amounts remain immutable, partial refunds reduce approved remaining amounts, and unresolved/ambiguous financial outcomes pause another remedy.
+- Lint/typecheck and 250 unit/contract/database tests pass, including 39 focused financial contracts. Evaluation suites pass 107 deterministic, 300 frozen, 180 native mock and 200 seeded trace checks. Production browser coverage passed 37 journeys and the reconciliation mock's focused rerun; final full release evidence is recorded in VALIDATION.md. No model billing, provider financial call or paid resource was required.
+- Tested original acceptance advances to **80% complete / 20% pending (16 of 20 checkpoints)**. Genuine sandbox financial completion, no-spend live AI accuracy, staged physical labels and five independent testers remain unexecuted. New manual journeys are in CURRENT_ACCEPTANCE.md; public release identity is recorded separately.
+
+## 2026-10-08 — Group-agent release acceptance
+
+- Deployed application ee4e5d8 on the existing EC2 instance and relaunched the local production preview. The checksum/backup installer restarted app/worker and public health matches the release. Archive inventory excludes environment/private keys; its identity is recorded in VALIDATION.
+- All 56 hosted agent/group/shopping/scenario checks pass. GitHub run 37745181417 passes quality and production app/worker/PostgreSQL container jobs, including 33 browser journeys in each. A separate later SSH restart probe timed out and is not counted; no additional credential or AI spend was needed.
+- Closed conversational group discovery/participation checkpoint 7. Progress is **55% complete / 45% pending (11 of 20 checkpoints)**. Remaining semantic/data/configuration/dispute implementation and genuine-provider/physical/human acceptance are explicit; credentials alone cannot close them.
+
+## 2026-10-08 — Conversational group savings
+
+- Added bounded ordered tool workflows, retained group-savings goals across clarification, read-only compatible group discovery, conditional full-cost comparisons and explicit in-conversation commitment/review controls. No partner, payment or membership is invented by discovery. Declining grouping clears the retained goal.
+- Bound commitments to the current private brief with eligibility/version checks repeated under the workspace lock. Discounted real-product quotes still require complete cable/compatibility/charging evidence and the final approved budget. Native planner responses and malformed/duplicate/unauthorized tools are contract-tested without provider calls.
+- Lint/typecheck, 194 unit/contract/database tests, 107 deterministic scenarios, 300 frozen synthetic records, 180 mocked native checks, 200 seeded traces and all 33 packaged-production browser journeys pass (2.3 minutes). A focused mobile group purchase rerun covers 390px overflow and explicit discounted checkout. Added a provider-free hosted verifier and updated the shared action/OpenAPI contract.
+- Acceptance progress remains 50% complete / 50% pending until hosted verification closes the conversational-group checkpoint. This milestone does not complete broader semantic task planning, worldwide product retrieval or genuine provider/human acceptance.
+
+## 2026-10-08 — Original master-plan audit
+
+- Audited the original 5 October plan and initial brief against the implemented agent, buying and resolution services, test definitions and recorded release evidence. Added `docs/PLAN_AUDIT.md` with all seven capability statuses, original release gates and remaining implementation/acceptance milestones.
+- Corrected master-plan and implementation-status completion language: the released two-model recovery demonstration does not complete the original unified shopping agent. Recorded missing conversational group orchestration, preference weights and external dispute reconciliation separately from unverified provider, physical and human acceptance.
+- Added the owner's requested progress tracker: 10 of 20 acceptance checkpoints closed, 50% complete / 50% pending. Partial/live-unverified checkpoints stay open; percentages measure checklist closure, not remaining hours.
+- Local and public health both returned ready at application 2c9b845. No application source, deployment, provider call or spend changed; existing suites were reviewed rather than rerun for this documentation audit.
+
 ## 2026-10-07 — Dark editorial agent opening
 
 - Replaced the bright agent opening and composer with charcoal and deeper black surfaces, soft ivory text, muted warm-gray captions and restrained borders. Added a Cormorant Garamond serif headline to match the requested magazine character. Agent response cards, receipts, task/voice inputs, focus indicators and action buttons follow the scoped palette; teal remains confined to the closing footer.
@@ -258,3 +287,27 @@ Added manufacturer-backed records for two exact M2 MacBook Air models, two adapt
 # Buyer-agent recovery: structured tools and private conversation
 
 Implemented direct-Gemini structured planning over research, own-order inspection, support preparation and advisory message checks. Semantic device/budget interpretations require shopper confirmation; generated choices and evidence IDs are validated against tool results. Private follow-up context survives reload, and changes invalidate old approvals. Model calls require explicit no-billing gates; fixtures never contact a provider. Added protocol, adversarial, quota and purchase-journey tests.
+# Buyer-agent release verification
+
+Application 84a6b3a passes 180 unit tests, all 32 packaged-production browser journeys and the existing evaluation/workflow suites. Local preview and sourced comparison were verified. Added checksum/backup/rollback deployment tooling and a single-connection SSH stream; hosted installation remains blocked by intermittent SSH timeouts. No live AI spend or billing was enabled. Detailed evidence and remaining external gates are recorded in docs/VALIDATION.md.
+# Grounded comparison no-match contract
+
+Corrected the native model comparison contract so an empty eligible set can return an explicit null recommendation with empty evidence/reason arrays. A no-match result cannot claim product compatibility or a purchase rationale. Added the complete mocked two-pass agent case; live calls remain disabled.
+
+The task runner also respects the workspace's saved fixture AI mode when the host configuration later changes to live. The no-billing gate cannot accidentally promote an existing fixture shopper to provider calls.
+
+The delivery-to-return browser journey now waits for the seller's recorded shipment and delivery states before refreshing the buyer. This removes a cross-session race exposed by the PostgreSQL container run without relaxing the required delivered status.
+
+The complete evidence/refund journey now starts with the sourced agent's real-device recommendation. It checks the shopper's recorded delivery through the agent, prepares an order-specific damaged-item draft without submitting it, then exercises explicit submission, both-party evidence and an authorized fixture refund.
+
+This multi-party journey uses a normal shopper workspace so configured operator access applies. Guest engineering workspaces intentionally require their owner's persona selector instead; the guest sourced-checkout journey verifies that separate entry path.
+
+The extended journey also exposed that order navigation hid the agent's result and composer. Order pages now retain the buyer agent and voice controls, so recorded order inspection and follow-up support remain usable after navigation.
+
+CI browser acceptance now uses the optimized standalone application built by its quality job, with browser assets copied explicitly and failure reports retained. The featured-budget test waits for the interactive task control and visible product dialog before asserting purchase controls; it no longer treats an absent dialog as successful verification.
+
+Order pages use a compact Ask DALE entry that expands for recorded order-inspection results, preserving the visible order heading during ordinary navigation. Sourced checkout asserts the order card independently of the retained comparison, and verifies the agent can be opened there. Featured readiness uses an enabled example button; an empty task's Send control correctly remains disabled.
+
+# 8 October — Hosted sourced-agent acceptance
+
+Deployed application 2c9b845 with checksum verification and a protected pre-upgrade environment/database/evidence snapshot; previous release retained. Both production CI jobs pass all 32 browser journeys, and the local packaged suite also passes all 32. Added an executable public-HTTPS source-to-refund fixture verifier and a separate observed-restart check with a private hashed-state baseline. All 47 hosted sourced-agent/shopping/scenario/restart checks pass, plus existing session/order/private-image persistence. The visible public browser also completed the four-message exact-device/cable/budget conversation. Live Gemini and genuine PayPal financial completion remain explicit external gates; no model calls or real payments were made by acceptance checks.

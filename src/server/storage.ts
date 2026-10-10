@@ -30,6 +30,32 @@ export function validateImage(bytes: Buffer, mime: string) {
       "Use a PNG, JPEG, or WebP image with a matching file type.",
     );
 }
+export const MAX_EVIDENCE_VIDEO_BYTES = 8 * 1024 * 1024;
+export function validateEvidenceMedia(bytes: Buffer, mime: string) {
+  if (mime.startsWith("image/")) return validateImage(bytes, mime);
+  if (!bytes.length || bytes.length > MAX_EVIDENCE_VIDEO_BYTES)
+    throw new Error("Evidence videos must be between 1 byte and 8 MB.");
+  const mp4 =
+    mime === "video/mp4" &&
+    bytes.length >= 16 &&
+    bytes.subarray(4, 8).toString("ascii") === "ftyp" &&
+    bytes.readUInt32BE(0) >= 16 &&
+    bytes.readUInt32BE(0) <= bytes.length &&
+    ["isom", "iso2", "mp41", "mp42", "avc1", "M4V "].includes(
+      bytes.subarray(8, 12).toString("ascii"),
+    );
+  const webm =
+    mime === "video/webm" &&
+    bytes.subarray(0, 4).equals(Buffer.from([0x1a, 0x45, 0xdf, 0xa3])) &&
+    bytes
+      .subarray(4, 4096)
+      .includes(Buffer.from([0x42, 0x82, 0x84, 0x77, 0x65, 0x62, 0x6d]));
+  if (!mp4 && !webm)
+    throw new Error(
+      "Use a PNG, JPEG, WebP image or MP4/WebM video with a matching file type.",
+    );
+  // Container signatures limit accepted uploads; they are not a decoder or proof of playable, honest footage.
+}
 function client() {
   if (
     !process.env.S3_BUCKET ||
@@ -56,7 +82,7 @@ function localPath(key: string) {
   return target;
 }
 export async function putAsset(key: string, bytes: Buffer, mime: string) {
-  validateImage(bytes, mime);
+  validateEvidenceMedia(bytes, mime);
   if (process.env.STORAGE_MODE === "s3")
     await client().send(
       new PutObjectCommand({
