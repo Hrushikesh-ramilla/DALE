@@ -1217,7 +1217,7 @@ export default function Storefront() {
               </div>
             </section>
             )}
-            {/* ATELIER CONCIERGE & HOUSE PROTOCOLS (Replaces redundant trust-row & white advocacy-section) */}
+            {/* DALE BUYER ASSURANCE (Professional Production-Grade Service Standards) */}
             <motion.section
               className="concierge-suite"
               aria-labelledby="concierge-title"
@@ -1228,13 +1228,13 @@ export default function Storefront() {
               <div className="concierge-header">
                 <div className="concierge-eyebrow">
                   <Sparkles size={13} />
-                  <span>CLIENT CONCIERGE & HOUSE PROTOCOLS</span>
+                  <span>BUYER ASSURANCE</span>
                 </div>
                 <h2 id="concierge-title" className="concierge-title">
-                  Engineered for absolute certainty.
+                  Guaranteed fit. Protected checkout.
                 </h2>
                 <p className="concierge-subtitle">
-                  Direct hardware verification, cryptographically sealed PayPal escrow, and unconditional human arbiter oversight.
+                  Hardware-verified compatibility, secure payment with PayPal Buyer Protection, and dedicated customer support.
                 </p>
               </div>
 
@@ -1246,11 +1246,11 @@ export default function Storefront() {
                       <div className="concierge-icon-frame">
                         <ShieldCheck size={20} />
                       </div>
-                      <span className="concierge-badge">TELEMETRY VERIFIED</span>
+                      <span className="concierge-badge">VERIFIED FIT</span>
                     </div>
-                    <h3 className="concierge-card-title">Telemetry-Verified Fit</h3>
+                    <h3 className="concierge-card-title">Guaranteed Device Fit</h3>
                     <p className="concierge-card-desc">
-                      Every accessory is tested against OEM voltage tolerances, USB-C PD pinouts, and thermal envelopes. Zero paid placements.
+                      Accessories are matched to your device specifications and verified for standard wattage and connection tolerances. Zero sponsored rankings.
                     </p>
                   </div>
                   <button
@@ -1271,7 +1271,7 @@ export default function Storefront() {
                       }
                     }}
                   >
-                    <span>Verify with DALE</span>
+                    <span>Check compatibility with DALE</span>
                     <ArrowRight size={13} />
                   </button>
                 </div>
@@ -1283,11 +1283,11 @@ export default function Storefront() {
                       <div className="concierge-icon-frame">
                         <Lock size={19} />
                       </div>
-                      <span className="concierge-badge">PAYPAL ESCROW</span>
+                      <span className="concierge-badge">PAYPAL PROTECTION</span>
                     </div>
-                    <h3 className="concierge-card-title">Explicit Buyer Escrow</h3>
+                    <h3 className="concierge-card-title">Secure Checkout & Protection</h3>
                     <p className="concierge-card-desc">
-                      Funds remain locked in PayPal buyer protection until physical delivery is recorded. Zero stealth subscriptions or unapproved substitutes.
+                      Upfront pricing with full PayPal Buyer Protection. No hidden charges, unexpected recurring fees, or unapproved substitutions.
                     </p>
                   </div>
                   <button
@@ -1298,7 +1298,7 @@ export default function Storefront() {
                       setModal({ kind: "scam" });
                     }}
                   >
-                    <span>Inspect suspicious message</span>
+                    <span>Check a seller message</span>
                     <ChevronRight size={13} />
                   </button>
                 </div>
@@ -1310,11 +1310,11 @@ export default function Storefront() {
                       <div className="concierge-icon-frame">
                         <HeartHandshake size={20} />
                       </div>
-                      <span className="concierge-badge">HUMAN ARBITER</span>
+                      <span className="concierge-badge">CUSTOMER SUPPORT</span>
                     </div>
-                    <h3 className="concierge-card-title">Human Arbiter on Demand</h3>
+                    <h3 className="concierge-card-title">30-Day Returns & Support</h3>
                     <p className="concierge-card-desc">
-                      Automated vision never rejects a return. Instant merchant-paid shipping labels with guaranteed human review for edge cases.
+                      Straightforward 30-day return window with prepaid labels. All cases and exceptions receive dedicated human review.
                     </p>
                   </div>
                   <button
@@ -1322,20 +1322,20 @@ export default function Storefront() {
                     className="concierge-card-btn"
                     onClick={() => setTab("support")}
                   >
-                    <span>Open Support Dossier</span>
+                    <span>Visit Customer Support</span>
                     <ArrowRight size={13} />
                   </button>
                 </div>
               </div>
             </motion.section>
 
-            {/* LUXURY INQUIRY SECTION (Streamlined, Low-Profile "Before You Decide") */}
+            {/* STREAMLINED INQUIRY SECTION */}
             <section className="luxury-inquiry-section" aria-labelledby="inquiry-title">
               <div className="inquiry-meta">
-                <span className="inquiry-eyebrow">A LITTLE CLARITY</span>
+                <span className="inquiry-eyebrow">FREQUENTLY ASKED</span>
                 <h2 id="inquiry-title" className="inquiry-title">Before you decide.</h2>
                 <p className="inquiry-desc">
-                  Core guarantees regarding compatibility filters, escrow releases, and return arbitration.
+                  Essential details on compatibility, payments, and our return policy.
                 </p>
                 <button
                   type="button"
@@ -1356,7 +1356,7 @@ export default function Storefront() {
                   }}
                 >
                   <Sparkles size={13} />
-                  <span>Ask DALE directly</span>
+                  <span>Ask DALE a question</span>
                 </button>
               </div>
 
@@ -1367,34 +1367,34 @@ export default function Storefront() {
                     <span className="inquiry-toggle-icon">+</span>
                   </summary>
                   <p>
-                    We filter strictly by your hardware model and budget limit. Sponsored placement never alters organic ranking. Conflicting requests require explicit user confirmation.
+                    We filter products strictly by your hardware specifications and budget. Sponsored listings never influence results, and conflicting preferences always require your confirmation.
                   </p>
                 </details>
                 <details className="inquiry-item">
                   <summary>
-                    <span>What happens if I need to return something?</span>
+                    <span>What happens if I need to make a return?</span>
                     <span className="inquiry-toggle-icon">+</span>
                   </summary>
                   <p>
-                    Open a claim from My Orders for an instant merchant-paid return label or no-return exception. A human reviewer handles any late, damaged, or anomalous deliveries.
+                    You can request a return directly from My Orders within 30 days of delivery. We provide prepaid return labels, and our support team reviews any special circumstances.
                   </p>
                 </details>
                 <details className="inquiry-item">
                   <summary>
-                    <span>Can automated AI deny my claim?</span>
+                    <span>How are support and return requests reviewed?</span>
                     <span className="inquiry-toggle-icon">+</span>
                   </summary>
                   <p>
-                    Never. Machine evidence analysis is strictly advisory. Automated checks cannot deny your request; both sides submit proof, and a human makes the final decision.
+                    Automated checks assist with initial intake, but every claim is reviewed by human support specialists before any decision is made.
                   </p>
                 </details>
                 <details className="inquiry-item">
                   <summary>
-                    <span>How does a group purchase work?</span>
+                    <span>How do group purchase discounts work?</span>
                     <span className="inquiry-toggle-icon">+</span>
                   </summary>
                   <p>
-                    The merchant sets a threshold and checkout window. Each participant purchases independently; another shopper dropping out never reprices your locked deal.
+                    Each participant completes checkout independently. If group participation changes, your locked purchase terms and price remain unchanged.
                   </p>
                 </details>
               </div>
