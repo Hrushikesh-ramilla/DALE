@@ -46,6 +46,8 @@ export function AgentWorkspace({
   onReview,
   onGroupCommit,
   briefDirty,
+  variant = "default",
+  initialTask = "",
 }: {
   session: Session | null;
   restoring: boolean;
@@ -56,13 +58,21 @@ export function AgentWorkspace({
   onResult: (result: AgentResult) => void;
   onReview: (product: Product, groupId?: string) => void;
   onGroupCommit: (offer: AgentGroupOffer) => void;
+  variant?: "default" | "sidebar";
+  initialTask?: string;
 }) {
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState(initialTask || "");
   const [pending, setPending] = useState(false);
   const [phase, setPhase] = useState("");
   const [error, setError] = useState("");
   const generation = useRef(0);
   const active = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    if (initialTask) {
+      setTask(initialTask);
+    }
+  }, [initialTask]);
   const startedSession = useRef<Session | null>(null);
   useEffect(() => {
     const current = generation.current;
@@ -143,28 +153,65 @@ export function AgentWorkspace({
   };
   return (
     <section
-      className="agent-workspace"
+      className={`agent-workspace ${variant === "sidebar" ? "sidebar-mode" : ""}`}
       aria-labelledby="agent-title"
       id="agent"
     >
-      <div className="agent-intro">
-        <span className="agent-eyebrow">DALE / Your shopping agent</span>
-        <h1 id="agent-title">What can I help you with?</h1>
-        <p>
-          Give me a task. I’ll help you choose, follow an order, or prepare a
-          return. You keep the final say.
-        </p>
-      </div>
-      <div className="agent-console">
-        <div className="agent-capability-note">
-          <strong>Buyer advocate</strong>
-          <span>
-            Manufacturer-backed MacBook Air M1/M2 and 13-inch Pro M1 charger
-            comparisons, message safety, group savings and order support. Review
-            the sources and approve each commitment, purchase or remedy
-            yourself.
-          </span>
+      {variant === "sidebar" ? (
+        <div className="sidebar-agent-header">
+          <div className="sidebar-agent-brand">
+            <span className="live-status-pulse" aria-hidden="true" />
+            <div>
+              <strong>DALE</strong>
+              <span className="sidebar-agent-sub">AI Shopping Advocate</span>
+            </div>
+          </div>
+          <div className="sidebar-agent-actions">
+            {voice}
+            {latest && (
+              <button
+                type="button"
+                className="sidebar-clear-btn"
+                onClick={() => setTask("")}
+                title="New prompt"
+              >
+                New task
+              </button>
+            )}
+          </div>
         </div>
+      ) : (
+        <div className="agent-intro">
+          <span className="agent-eyebrow">DALE / Your shopping agent</span>
+          <h1 id="agent-title">What can I help you with?</h1>
+          <p>
+            Give me a task. I’ll help you choose, follow an order, or prepare a
+            return. You keep the final say.
+          </p>
+        </div>
+      )}
+      <div className="agent-console">
+        {variant === "sidebar" && !latest && (
+          <div className="sidebar-welcome-card">
+            <p className="welcome-intro">
+              I’m <strong>DALE</strong>, your personal buyer advocate.
+            </p>
+            <p className="welcome-sub">
+              Ask me about connector fit, fast charging, or finding deals while browsing the catalog right beside us.
+            </p>
+          </div>
+        )}
+        {variant !== "sidebar" && (
+          <div className="agent-capability-note">
+            <strong>Buyer advocate</strong>
+            <span>
+              Manufacturer-backed MacBook Air M1/M2 and 13-inch Pro M1 charger
+              comparisons, message safety, group savings and order support. Review
+              the sources and approve each commitment, purchase or remedy
+              yourself.
+            </span>
+          </div>
+        )}
         <form
           onSubmit={(event) => {
             event.preventDefault();
@@ -212,7 +259,7 @@ export function AgentWorkspace({
             </button>
           ))}
         </div>
-        {voice}
+        {variant !== "sidebar" && voice}
         {error && (
           <p className="agent-error" role="alert">
             {error}

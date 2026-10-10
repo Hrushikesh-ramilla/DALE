@@ -45,6 +45,7 @@ import type { ScenarioKind } from "@/server/scenarios";
 import { GroupPolicySettings } from "./group-policy-settings";
 import { ProviderReconciliation } from "./provider-reconciliation";
 import { CinematicIntro } from "./cinematic-intro";
+import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
@@ -149,6 +150,19 @@ export default function Storefront() {
       { price: number; features: number } | undefined
     >(),
     [briefDirty, setBriefDirty] = useState(false);
+  const [heroPrompt, setHeroPrompt] = useState("");
+  const [sidebarTask, setSidebarTask] = useState("");
+
+  const handleHeroSubmit = useCallback((customText?: string) => {
+    const query = (customText || heroPrompt).trim();
+    if (!query) return;
+    setSidebarTask(query);
+    setHeroPrompt("");
+    const shopEl = document.getElementById("shop");
+    if (shopEl) {
+      shopEl.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [heroPrompt]);
   const [summary, setSummary] = useState(
     "Tell us what you need. We'll keep compatibility, your budget, and your choices at the center.",
   );
@@ -469,32 +483,59 @@ export default function Storefront() {
             ),
           )}
         </nav>
-        {session ? (
-          <button
-            className="account"
-            onClick={() =>
-              void run(async () => {
-                await api("/api/session", undefined, "DELETE");
-                setSession(null);
-                setSupportDraft(null);
-                setTab("discover");
-              })
-            }
-          >
-            <span className="avatar">
-              {isBuyer ? "S" : session.actor.role[0].toUpperCase()}
-            </span>
-            {isBuyer ? "Shopper" : session.actor.role} · Sign out
-          </button>
-        ) : (
-          <button
-            className="button primary small"
-            onClick={startShopping}
-            disabled={restoring}
-          >
-            Start shopping <ArrowRight size={15} />
-          </button>
-        )}
+        <div className="header-actions">
+          <ShoppingBriefMenu
+            model={model}
+            models={models}
+            setModel={setModel}
+            deviceLabel={deviceLabel}
+            category={category}
+            setCategory={setCategory}
+            budget={budget}
+            setBudget={setBudget}
+            message={message}
+            setMessage={setMessage}
+            preference={preference}
+            setPreference={setPreference}
+            priority={priority}
+            setPriority={setPriority}
+            weights={weights}
+            setWeights={setWeights}
+            briefDirty={briefDirty}
+            setBriefDirty={setBriefDirty}
+            busy={busy}
+            restoring={restoring}
+            findProducts={findProducts}
+            onIdentify={() => setModal({ kind: "identify" })}
+            compatibleCount={visibleProducts.length}
+          />
+          {session ? (
+            <button
+              className="account"
+              onClick={() =>
+                void run(async () => {
+                  await api("/api/session", undefined, "DELETE");
+                  setSession(null);
+                  setSupportDraft(null);
+                  setTab("discover");
+                })
+              }
+            >
+              <span className="avatar">
+                {isBuyer ? "S" : session.actor.role[0].toUpperCase()}
+              </span>
+              {isBuyer ? "Shopper" : session.actor.role} · Sign out
+            </button>
+          ) : (
+            <button
+              className="button primary small"
+              onClick={startShopping}
+              disabled={restoring}
+            >
+              Start shopping <ArrowRight size={15} />
+            </button>
+          )}
+        </div>
       </header>
       <main id="main" className="main-content" inert={!!modal} tabIndex={-1}>
         {session?.demo && <DemoToolbar session={session} />}
@@ -527,7 +568,7 @@ export default function Storefront() {
           </div>
         )}
         {isBuyer &&
-          (tab === "discover" || tab === "support" || tab === "orders") && (
+          (tab === "support" || tab === "orders") && (
             <AgentSurface
               orderPage={tab === "orders"}
               inspection={session?.agentRuns.at(-1)?.orders !== undefined}
@@ -575,24 +616,20 @@ export default function Storefront() {
                   void choose(product, groupId);
                 }}
                 voice={
-                  tab === "discover" ||
-                  tab === "support" ||
-                  tab === "orders" ? (
-                    <VoiceCompanion
-                      pending={restoring || busy}
-                      key={`${pathname}:${session?.actor.userId || "visitor"}`}
-                      model={model}
-                      budget={Math.max(
-                        1,
-                        Math.min(
-                          100000,
-                          Math.round(Number(budget) * 100) || 8000,
-                        ),
-                      )}
-                      actorId={session?.actor.userId}
-                      onResult={applyVoice}
-                    />
-                  ) : null
+                  <VoiceCompanion
+                    pending={restoring || busy}
+                    key={`${pathname}:${session?.actor.userId || "visitor"}`}
+                    model={model}
+                    budget={Math.max(
+                      1,
+                      Math.min(
+                        100000,
+                        Math.round(Number(budget) * 100) || 8000,
+                      ),
+                    )}
+                    actorId={session?.actor.userId}
+                    onResult={applyVoice}
+                  />
                 }
               />
             </AgentSurface>
@@ -602,6 +639,55 @@ export default function Storefront() {
             <EditorialHero
               onView={(product) => setModal({ kind: "product", product })}
             />
+            <div className="hero-dale-bar" id="hero-dale">
+              <div className="hero-dale-inner">
+                <div className="hero-dale-badge">
+                  <Sparkles size={14} />
+                  <span>DALE · AI SHOPPING ADVOCATE</span>
+                </div>
+                <h2>Ask DALE anything. Live shopping guidance beside your catalog.</h2>
+                <p className="hero-dale-sub">
+                  Tell DALE your specs or device needs. DALE stays pinned beside the products so you can chat continuously while browsing.
+                </p>
+                <div className="hero-dale-input-wrap">
+                  <input
+                    type="text"
+                    placeholder="e.g. Find me a quiet Bluetooth mouse under $30, or a compact 65W charger..."
+                    value={heroPrompt}
+                    onChange={(e) => setHeroPrompt(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        handleHeroSubmit();
+                      }
+                    }}
+                  />
+                  <button
+                    type="button"
+                    className="button primary small"
+                    onClick={() => handleHeroSubmit()}
+                  >
+                    <span>Ask DALE</span> <ArrowRight size={15} />
+                  </button>
+                </div>
+                <div className="hero-dale-chips">
+                  {[
+                    "Silent Bluetooth mouse",
+                    "Compact 65W charger",
+                    "USB-C dock with HDMI",
+                    "Travel essentials bundle",
+                  ].map((chip) => (
+                    <button
+                      key={chip}
+                      type="button"
+                      className="hero-chip"
+                      onClick={() => handleHeroSubmit(chip)}
+                    >
+                      {chip} <ArrowRight size={12} />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
             <section
               className="collection-section"
               id="collections"
@@ -665,178 +751,68 @@ export default function Storefront() {
               id="shop"
               aria-label="Personal shopping"
             >
-              <aside className="brief-panel">
-                <div className="panel-title">
-                  <Sparkles size={19} />
-                  <h2>Your shopping brief</h2>
-                </div>
-                <p className="muted">
-                  Choose a demo device profile. Exact connectors and power
-                  requirements matter.
-                </p>
-                <label>
-                  Your device
-                  <select
-                    value={model}
-                    onChange={(e) => {
-                      setModel(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                  >
-                    {models.map((m) => (
-                      <option key={m} value={m}>
-                        {deviceLabel(m)}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <button
-                  className="button secondary small"
-                  onClick={() => setModal({ kind: "identify" })}
-                  disabled={restoring}
-                >
-                  Identify device from label
-                </button>
-                <label>
-                  Looking for
-                  <select
-                    value={category}
-                    onChange={(e) => {
-                      setCategory(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                  >
-                    {Object.entries({
-                      chargers: "Chargers",
-                      docks: "Docks & hubs",
-                      storage: "Storage",
-                      audio: "Headphones",
-                      accessories: "Accessories",
-                      "": "Everything",
-                    }).map(([value, label]) => (
-                      <option value={value} key={value}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label>
-                  Maximum budget, USD
-                  <div className="money-input">
-                    <span>$</span>
-                    <input
-                      type="number"
-                      min="1"
-                      max="1000"
-                      value={budget}
-                      onChange={(e) => {
-                        setBudget(e.target.value);
-                        setBriefDirty(true);
-                      }}
-                    />
-                  </div>
-                </label>
-                <label>
-                  Anything else?
-                  <textarea
-                    placeholder="A lighter charger for my commute…"
-                    value={message}
-                    onChange={(e) => {
-                      setMessage(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                    rows={3}
-                  />
-                </label>
-                <label>
-                  Feature to prioritize
-                  <input
-                    value={preference}
-                    maxLength={80}
-                    placeholder="65W, Ethernet, braided cable…"
-                    onChange={(e) => {
-                      setPreference(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                  />
-                </label>
-                <label>
-                  Rank by
-                  <select
-                    value={priority}
-                    onChange={(e) => {
-                      setPriority(e.target.value as "price" | "features");
-                      setBriefDirty(true);
-                    }}
-                  >
-                    <option value="price">
-                      Lowest price, then matching features
-                    </option>
-                    <option value="features">
-                      Matching features, then lowest price
-                    </option>
-                  </select>
-                </label>
-                <label>
-                  <span>Use explicit preference weights</span>
-                  <input
-                    type="checkbox"
-                    checked={!!weights}
-                    onChange={(event) => {
-                      setWeights(
-                        event.target.checked
-                          ? { price: 50, features: 50 }
-                          : undefined,
+              <aside className="dale-companion-aside" id="dale-chat">
+                <AgentWorkspace
+                  key={`sidebar:${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
+                  variant="sidebar"
+                  initialTask={sidebarTask}
+                  session={session}
+                  restoring={restoring || busy}
+                  model={model}
+                  budget={Math.max(
+                    1,
+                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                  )}
+                  briefDirty={briefDirty}
+                  onResult={applyAgent}
+                  onGroupCommit={(offer) => {
+                    void run(async () => {
+                      if (briefDirty)
+                        throw new Error(
+                          "Save your current needs before committing to a group.",
+                        );
+                      await action({
+                        action: "agent_group_commit",
+                        productId: offer.productId,
+                        briefVersion: offer.briefVersion,
+                        policyVersion: offer.policyVersion,
+                      });
+                      setNotice(
+                        "Group commitment recorded without payment. Another shopper is required before your discounted checkout.",
                       );
-                      setBriefDirty(true);
-                    }}
-                  />
-                </label>
-                {weights && (
-                  <>
-                    <label>
-                      Price weight, {weights.price}%
-                      <input
-                        aria-label="Price preference weight"
-                        type="range"
-                        min="0"
-                        max="100"
-                        value={weights.price}
-                        onChange={(event) => {
-                          const price = Number(event.target.value);
-                          setWeights({ price, features: 100 - price });
-                          setBriefDirty(true);
-                        }}
-                      />
-                    </label>
-                    <p className="muted">
-                      Matching feature weight: {weights.features}%. Device fit
-                      and budget remain required before ranking.
-                    </p>
-                  </>
-                )}
-                {briefDirty && (
-                  <p className="muted" role="status">
-                    Brief changed. Find my match saves it and replaces older
-                    unpaid approvals.
-                  </p>
-                )}
-                <button
-                  className="button primary full"
-                  disabled={busy}
-                  onClick={() => void findProducts()}
-                >
-                  {busy ? (
-                    <LoaderCircle className="spin" size={17} />
-                  ) : (
-                    <Search size={17} />
-                  )}{" "}
-                  Find my match
-                </button>
-                <div className="brief-foot">
-                  <ShieldCheck size={16} />
-                  <span>Paid placement never improves organic ranking.</span>
-                </div>
+                    });
+                  }}
+                  onReview={(product, groupId) => {
+                    const latest = session?.agentRuns.at(-1);
+                    if (
+                      !latest?.briefVersion ||
+                      latest.briefVersion !== session?.brief?.version ||
+                      briefDirty
+                    ) {
+                      setError(
+                        "Your brief changed. Send a new agent task before reviewing this option.",
+                      );
+                      return;
+                    }
+                    void choose(product, groupId);
+                  }}
+                  voice={
+                    <VoiceCompanion
+                      pending={restoring || busy}
+                      key={`sidebar:${pathname}:${session?.actor.userId || "visitor"}`}
+                      model={model}
+                      budget={Math.max(
+                        1,
+                        Math.min(
+                          100000,
+                          Math.round(Number(budget) * 100) || 8000,
+                        ),
+                      )}
+                      actorId={session?.actor.userId}
+                      onResult={applyVoice}
+                    />
+                  }
+                />
               </aside>
               <div className="results">
                 <div className="section-heading">
@@ -844,10 +820,37 @@ export default function Storefront() {
                     <div className="eyebrow">CURATED FOR YOUR NEEDS</div>
                     <h2>Selected for you.</h2>
                   </div>
-                  <span className="muted">
-                    {visibleProducts.length}{" "}
-                    {briefDirty ? "preview options" : "compatible options"}
-                  </span>
+                  <div className="catalog-heading-controls">
+                    <ShoppingBriefMenu
+                      model={model}
+                      models={models}
+                      setModel={setModel}
+                      deviceLabel={deviceLabel}
+                      category={category}
+                      setCategory={setCategory}
+                      budget={budget}
+                      setBudget={setBudget}
+                      message={message}
+                      setMessage={setMessage}
+                      preference={preference}
+                      setPreference={setPreference}
+                      priority={priority}
+                      setPriority={setPriority}
+                      weights={weights}
+                      setWeights={setWeights}
+                      briefDirty={briefDirty}
+                      setBriefDirty={setBriefDirty}
+                      busy={busy}
+                      restoring={restoring}
+                      findProducts={findProducts}
+                      onIdentify={() => setModal({ kind: "identify" })}
+                      compatibleCount={visibleProducts.length}
+                    />
+                    <span className="muted">
+                      {visibleProducts.length}{" "}
+                      {briefDirty ? "preview options" : "compatible options"}
+                    </span>
+                  </div>
                 </div>
                 <div
                   className="category-index"
@@ -1230,6 +1233,26 @@ export default function Storefront() {
                 </details>
               </div>
             </section>
+            <div className="mobile-dale-dock" aria-label="Mobile DALE Chat Dock">
+              <button
+                type="button"
+                className="mobile-dale-dock-btn"
+                onClick={() => {
+                  const el = document.getElementById("dale-chat");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                    const input = el.querySelector("textarea");
+                    input?.focus();
+                  }
+                }}
+              >
+                <span className="live-status-pulse" />
+                <span className="mobile-dale-text">
+                  <strong>Chat with DALE</strong> · Live advice beside products
+                </span>
+                <ArrowRight size={14} />
+              </button>
+            </div>
           </>
         )}
         {tab === "groups" && (
