@@ -957,12 +957,9 @@ export default function Storefront() {
                   {visibleProducts
                     .slice(0, visibleLimit)
                     .map((product, index) => (
-                      <motion.article
+                      <article
                         className="product-card"
                         key={product.id}
-                        layout
-                        initial={false}
-                        animate={{ opacity: 1 }}
                       >
                         <div className="card-visual">
                           <ProductArt product={product} />
@@ -1061,7 +1058,7 @@ export default function Storefront() {
                             </button>
                           </div>
                         </div>
-                      </motion.article>
+                      </article>
                     ))}
                 </div>
                 {visibleProducts.length > visibleLimit && (

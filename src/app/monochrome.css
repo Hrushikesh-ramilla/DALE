@@ -36,6 +36,8 @@ body {
   border-bottom: 1px solid #ffffff20;
   box-shadow: none;
   backdrop-filter: blur(16px);
+  will-change: transform;
+  transform: translateZ(0);
 }
 .brand-wordmark {
   width: 100px;
@@ -355,6 +357,13 @@ select option {
   color: #f5f5f7;
   border-radius: 18px;
   overflow: hidden;
+  contain: layout style;
+}
+.product-card:hover .product-art svg,
+.collection-tile:hover .product-art svg,
+.product-card:hover .product-art,
+.collection-tile:hover .product-art {
+  transform: none !important;
 }
 .card-visual,
 .card-visual .product-art {

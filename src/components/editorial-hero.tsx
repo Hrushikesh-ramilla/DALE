@@ -4,8 +4,6 @@ import gsap from "gsap";
 import {
   motion,
   useReducedMotion,
-  useScroll,
-  useTransform,
 } from "motion/react";
 import { ArrowDown, ArrowLeft, ArrowRight } from "lucide-react";
 import { catalog, type Product } from "@/domain/catalog";
@@ -22,11 +20,6 @@ export function EditorialHero({
   const [index, setIndex] = useState(0);
   const stage = useRef<HTMLElement>(null);
   const reduced = useReducedMotion();
-  const { scrollYProgress } = useScroll({
-    target: stage,
-    offset: ["start start", "end start"],
-  });
-  const artY = useTransform(scrollYProgress, [0, 1], [0, -45]);
   const product = edit[index];
   useEffect(() => {
     if (reduced || !stage.current) return;
@@ -79,7 +72,7 @@ export function EditorialHero({
       <div className="hero-stage">
         <div className="stage-orbit" aria-hidden="true" />
         <span className="stage-label">The everyday edit</span>
-        <motion.div className="stage-object" style={{ y: reduced ? 0 : artY }}>
+        <div className="stage-object">
           <motion.div
             initial={false}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
@@ -88,7 +81,7 @@ export function EditorialHero({
           >
             <ProductViewer product={product} />
           </motion.div>
-        </motion.div>
+        </div>
         <div className="stage-caption">
           <div>
             <span className="stage-number">0{index + 1} / 04</span>
