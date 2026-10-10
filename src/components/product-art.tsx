@@ -52,18 +52,9 @@ export function ProductArt({
             <stop stopColor="#000" stopOpacity=".32" />
             <stop offset="1" stopColor="#000" stopOpacity="0" />
           </radialGradient>
-          <filter
-            id={`${id}-lift`}
-            x="-50%"
-            y="-50%"
-            width="200%"
-            height="200%"
-          >
-            <feDropShadow dx="4" dy="14" stdDeviation="9" floodOpacity=".22" />
-          </filter>
         </defs>
         <ellipse cx="210" cy="282" rx="137" ry="23" fill={paint("shadow")} />
-        <g filter={paint("lift")}>
+        <g>
           {product.category === "audio" ? (
             <g transform="rotate(-16 210 165)">
               <path

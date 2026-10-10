@@ -289,13 +289,17 @@ body {
   background: #1d1d1f;
   color: #f5f5f7;
   border-radius: 18px;
+  contain: layout style;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.collection-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.3);
 }
 .collection-tile:nth-child(1) {
   background: #f5f5f7;
   color: #1d1d1f;
-}
-.collection-tile .product-art svg {
-  filter: grayscale(1);
 }
 .collection-caption {
   border-color: #ffffff1f;
@@ -358,19 +362,28 @@ select option {
   border-radius: 18px;
   overflow: hidden;
   contain: layout style;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  border: 1px solid #28282b;
+  will-change: transform;
 }
-.product-card:hover .product-art svg,
-.collection-tile:hover .product-art svg,
-.product-card:hover .product-art,
-.collection-tile:hover .product-art {
-  transform: none !important;
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.36);
+  border-color: #3e3e44;
+}
+.card-visual {
+  overflow: hidden;
 }
 .card-visual,
 .card-visual .product-art {
   background: #f5f5f7;
 }
-.product-art svg {
-  filter: grayscale(1);
+.product-art {
+  will-change: transform;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.product-card:hover .product-art {
+  transform: scale(1.02);
 }
 .card-details {
   padding: 22px;
