@@ -45,8 +45,8 @@ function Rounded({
         width,
         height,
         depth,
-        3,
-        Math.min(width, height, depth) * 0.14,
+        1,
+        Math.min(width, height, depth) * 0.12,
       ),
     [width, height, depth],
   );
@@ -54,15 +54,21 @@ function Rounded({
   return (
     <mesh position={position}>
       <primitive attach="geometry" object={geometry} />
-      <meshPhysicalMaterial
-        color={color}
-        roughness={glass ? 0.08 : 0.28}
-        metalness={glass ? 0.05 : 0.65}
-        transmission={glass ? 0.7 : 0}
-        thickness={0.3}
-        clearcoat={1}
-        clearcoatRoughness={0.15}
-      />
+      {glass ? (
+        <meshStandardMaterial
+          color="#f0f0f3"
+          roughness={0.12}
+          metalness={0.1}
+          transparent
+          opacity={0.88}
+        />
+      ) : (
+        <meshStandardMaterial
+          color={color}
+          roughness={0.28}
+          metalness={0.65}
+        />
+      )}
     </mesh>
   );
 }
@@ -93,7 +99,11 @@ function ObjectModel({
           9,
           Math.min(delta, 0.05),
         );
-    if (Math.abs(remaining) > 0.001) invalidate();
+    if (Math.abs(remaining) > 0.0005) {
+      invalidate();
+    } else {
+      group.current.rotation.y = target;
+    }
   });
   const dark = "#171719";
   return (
@@ -232,7 +242,7 @@ export default function ProductScene({ product }: { product: Product }) {
     if (!element) return;
     const observer = new IntersectionObserver(
       (entries) => setInView(entries[0].isIntersecting && !document.hidden),
-      { rootMargin: "200px" },
+      { rootMargin: "800px" },
     );
     observer.observe(element);
     return () => observer.disconnect();
@@ -256,12 +266,13 @@ export default function ProductScene({ product }: { product: Product }) {
           <Suspense fallback={<ProductArt product={product} />}>
             <Canvas
               frameloop="demand"
-              dpr={[1, 1.5]}
+              dpr={1}
               camera={{ position: [0, 0.5, 5.4], fov: 38 }}
               gl={{
                 antialias: true,
                 alpha: true,
-                powerPreference: "low-power",
+                powerPreference: "high-performance",
+                precision: "mediump",
               }}
               onCreated={({ gl }) => {
                 gl.domElement.dataset.scene = "ready";

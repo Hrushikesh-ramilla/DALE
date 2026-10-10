@@ -209,6 +209,13 @@ body {
   background: transparent;
   border: 0;
   box-shadow: none;
+  contain: layout style;
+}
+.stage-object,
+.product-viewer,
+.product-scene {
+  contain: layout style;
+  will-change: transform;
 }
 .product-viewer {
   height: 360px;
