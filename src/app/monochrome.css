@@ -92,35 +92,304 @@ body {
 .voice-companion {
   margin: 4px 0 14px;
 }
-.advocacy-section {
-  color: #1d1d1f;
+.advocacy-section,
+.trust-row,
+.service-faq {
+  display: none !important;
 }
-.advocacy-section h2,
-.service-faq h2,
+
 .modal h2 {
   font-family: "DM Sans", Arial, sans-serif;
   font-weight: 600;
   letter-spacing: -0.045em;
 }
-.advocacy-section h2 {
-  font-size: clamp(35px, 4vw, 58px);
-  line-height: 1.1;
+
+/* ==========================================================================
+   THE CONCIERGE SUITE & CLIENT STANDARDS (Dark Luxury Redesign)
+   ========================================================================== */
+.concierge-suite {
+  background: linear-gradient(180deg, rgba(20, 20, 24, 0.75) 0%, rgba(12, 12, 14, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 24px;
+  padding: clamp(28px, 4vw, 42px) clamp(24px, 4vw, 44px);
+  margin: 44px 0 28px;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
 }
-.advocacy-section h2 em {
-  font-style: normal;
-  font-weight: inherit;
+
+.concierge-suite::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  pointer-events: none;
 }
-.advocacy-section p,
-.advocacy-section .eyebrow,
-.advocacy-step > span {
-  color: #6e6e73;
+
+.concierge-header {
+  margin-bottom: 28px;
+  max-width: 680px;
 }
-.advocacy-section .button {
-  color: #1d1d1f;
-  border-color: #86868b;
+
+.concierge-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a1a1a6;
+  margin-bottom: 8px;
 }
-.service-faq h2 {
-  font-size: 38px;
+
+.concierge-title {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: clamp(26px, 3.2vw, 38px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.concierge-subtitle {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #8e8e93;
+  margin: 0;
+}
+
+.concierge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.concierge-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.concierge-card:hover {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.concierge-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.concierge-icon-frame {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f7;
+}
+
+.concierge-badge {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #a1a1a6;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.concierge-card-title {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.concierge-card-desc {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #a1a1a6;
+  margin: 0 0 18px;
+  flex-grow: 1;
+}
+
+.concierge-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f5f5f7;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.concierge-card-btn:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.concierge-card-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.concierge-card-btn:hover svg {
+  transform: translateX(2px);
+}
+
+/* ==========================================================================
+   LUXURY INQUIRY SECTION (Streamlined, Low-Profile "Before You Decide")
+   ========================================================================== */
+.luxury-inquiry-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  padding: 28px 0 20px;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  align-items: start;
+}
+
+.inquiry-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.inquiry-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8e8e93;
+  margin-bottom: 6px;
+}
+
+.inquiry-title {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.inquiry-desc {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #a1a1a6;
+  margin: 0 0 16px;
+}
+
+.inquiry-dale-btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #f5f5f7;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.inquiry-dale-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+}
+
+.inquiry-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.inquiry-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.inquiry-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.inquiry-item summary {
+  padding: 12px 0;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #f5f5f7;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  list-style: none;
+  transition: color 0.15s ease;
+}
+
+.inquiry-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.inquiry-item summary:hover {
+  color: #ffffff;
+}
+
+.inquiry-toggle-icon {
+  font-size: 16px;
+  font-weight: 300;
+  color: #8e8e93;
+  transition: transform 0.2s ease, color 0.2s ease;
+  width: 20px;
+  text-align: right;
+}
+
+.inquiry-item[open] .inquiry-toggle-icon {
+  transform: rotate(45deg);
+  color: #ffffff;
+}
+
+.inquiry-item p {
+  margin: 0;
+  padding: 0 0 12px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #a1a1a6;
 }
 .modal,
 .evidence-card,
@@ -1673,6 +1942,15 @@ select option {
   }
   .hero-dale-bar {
     padding: 24px 20px;
+  }
+  .concierge-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .luxury-inquiry-section {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 24px 0 16px;
   }
 }
 

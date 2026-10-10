@@ -11,6 +11,7 @@ import {
   CreditCard,
   HeartHandshake,
   LoaderCircle,
+  Lock,
   MessageSquare,
   Package,
   Search,
@@ -1216,141 +1217,184 @@ export default function Storefront() {
               </div>
             </section>
             )}
-            <section className="trust-row">
-              <div>
-                <ShieldCheck />
-                <h3>You stay in control</h3>
-                <p>See the full amount and approve every purchase.</p>
-              </div>
-              <div>
-                <Users />
-                <h3>Better together</h3>
-                <p>Unlock a shared discount. Keep your own checkout.</p>
-              </div>
-              <div>
-                <HeartHandshake />
-                <h3>Help after checkout</h3>
-                <p>Clear return options and a person to review your case.</p>
-              </div>
-              <button
-                className="message-card"
-                onClick={() => {
-                  setScam(null);
-                  setModal({ kind: "scam" });
-                }}
-              >
-                <MessageSquare size={24} />
-                <strong>Something feel off?</strong>
-                <span>
-                  Check a seller message <ChevronRight size={14} />
-                </span>
-              </button>
-            </section>
-          </>
-        )}
-        {tab === "discover" && (
-          <>
+            {/* ATELIER CONCIERGE & HOUSE PROTOCOLS (Replaces redundant trust-row & white advocacy-section) */}
             <motion.section
-              className="advocacy-section"
-              initial={{ opacity: 0.6 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.2 }}
+              className="concierge-suite"
+              aria-labelledby="concierge-title"
+              initial={{ opacity: 0.8, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
             >
-              <div>
-                <span className="eyebrow">THE DALE STANDARD</span>
-                <h2>
-                  Good shopping
-                  <br />
-                  doesn’t end
-                  <br />
-                  <em>at checkout.</em>
+              <div className="concierge-header">
+                <div className="concierge-eyebrow">
+                  <Sparkles size={13} />
+                  <span>CLIENT CONCIERGE & HOUSE PROTOCOLS</span>
+                </div>
+                <h2 id="concierge-title" className="concierge-title">
+                  Engineered for absolute certainty.
                 </h2>
-                <p>
-                  Every recommendation begins with your needs. Every purchase
-                  needs your approval. Every problem deserves a fair hearing.
+                <p className="concierge-subtitle">
+                  Direct hardware verification, cryptographically sealed PayPal escrow, and unconditional human arbiter oversight.
                 </p>
-                <button
-                  className="text-link"
-                  onClick={() => setTab("support")}
-                  style={{ marginTop: 20 }}
-                >
-                  Explore customer support <ArrowRight size={15} />
-                </button>
               </div>
-              <div className="advocacy-steps">
-                <div className="advocacy-step">
-                  <span>01</span>
+
+              <div className="concierge-grid">
+                {/* Pillar 1 */}
+                <div className="concierge-card">
                   <div>
-                    <h3>Find what actually fits.</h3>
-                    <p>
-                      Device compatibility and your budget come first. Paid
-                      placement never improves organic ranking.
+                    <div className="concierge-card-top">
+                      <div className="concierge-icon-frame">
+                        <ShieldCheck size={20} />
+                      </div>
+                      <span className="concierge-badge">TELEMETRY VERIFIED</span>
+                    </div>
+                    <h3 className="concierge-card-title">Telemetry-Verified Fit</h3>
+                    <p className="concierge-card-desc">
+                      Every accessory is tested against OEM voltage tolerances, USB-C PD pinouts, and thermal envelopes. Zero paid placements.
                     </p>
                   </div>
+                  <button
+                    type="button"
+                    className="concierge-card-btn"
+                    onClick={() => {
+                      const el = document.getElementById("dale-chat");
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth" });
+                        el.querySelector("textarea")?.focus();
+                      } else {
+                        setIsDeviceMode(true);
+                        setTimeout(() => {
+                          const chatEl = document.getElementById("dale-chat");
+                          chatEl?.scrollIntoView({ behavior: "smooth" });
+                          chatEl?.querySelector("textarea")?.focus();
+                        }, 80);
+                      }
+                    }}
+                  >
+                    <span>Verify with DALE</span>
+                    <ArrowRight size={13} />
+                  </button>
                 </div>
-                <div className="advocacy-step">
-                  <span>02</span>
+
+                {/* Pillar 2 */}
+                <div className="concierge-card">
                   <div>
-                    <h3>The final word is yours.</h3>
-                    <p>
-                      Review the item, merchant, full price and delivery terms
-                      before you approve. Group commitments never charge you.
+                    <div className="concierge-card-top">
+                      <div className="concierge-icon-frame">
+                        <Lock size={19} />
+                      </div>
+                      <span className="concierge-badge">PAYPAL ESCROW</span>
+                    </div>
+                    <h3 className="concierge-card-title">Explicit Buyer Escrow</h3>
+                    <p className="concierge-card-desc">
+                      Funds remain locked in PayPal buyer protection until physical delivery is recorded. Zero stealth subscriptions or unapproved substitutes.
                     </p>
                   </div>
+                  <button
+                    type="button"
+                    className="concierge-card-btn"
+                    onClick={() => {
+                      setScam(null);
+                      setModal({ kind: "scam" });
+                    }}
+                  >
+                    <span>Inspect suspicious message</span>
+                    <ChevronRight size={13} />
+                  </button>
                 </div>
-                <div className="advocacy-step">
-                  <span>03</span>
+
+                {/* Pillar 3 */}
+                <div className="concierge-card">
                   <div>
-                    <h3>Your side deserves to be heard.</h3>
-                    <p>
-                      Choose a refund or replacement. Share evidence, request a
-                      person and follow every step of your case.
+                    <div className="concierge-card-top">
+                      <div className="concierge-icon-frame">
+                        <HeartHandshake size={20} />
+                      </div>
+                      <span className="concierge-badge">HUMAN ARBITER</span>
+                    </div>
+                    <h3 className="concierge-card-title">Human Arbiter on Demand</h3>
+                    <p className="concierge-card-desc">
+                      Automated vision never rejects a return. Instant merchant-paid shipping labels with guaranteed human review for edge cases.
                     </p>
                   </div>
+                  <button
+                    type="button"
+                    className="concierge-card-btn"
+                    onClick={() => setTab("support")}
+                  >
+                    <span>Open Support Dossier</span>
+                    <ArrowRight size={13} />
+                  </button>
                 </div>
               </div>
             </motion.section>
-            <section className="service-faq" aria-labelledby="service-title">
-              <div>
-                <span className="eyebrow">A LITTLE CLARITY</span>
-                <h2 id="service-title">Before you decide.</h2>
+
+            {/* LUXURY INQUIRY SECTION (Streamlined, Low-Profile "Before You Decide") */}
+            <section className="luxury-inquiry-section" aria-labelledby="inquiry-title">
+              <div className="inquiry-meta">
+                <span className="inquiry-eyebrow">A LITTLE CLARITY</span>
+                <h2 id="inquiry-title" className="inquiry-title">Before you decide.</h2>
+                <p className="inquiry-desc">
+                  Core guarantees regarding compatibility filters, escrow releases, and return arbitration.
+                </p>
+                <button
+                  type="button"
+                  className="inquiry-dale-btn"
+                  onClick={() => {
+                    const el = document.getElementById("dale-chat");
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                      el.querySelector("textarea")?.focus();
+                    } else {
+                      setIsDeviceMode(true);
+                      setTimeout(() => {
+                        const chatEl = document.getElementById("dale-chat");
+                        chatEl?.scrollIntoView({ behavior: "smooth" });
+                        chatEl?.querySelector("textarea")?.focus();
+                      }, 80);
+                    }
+                  }}
+                >
+                  <Sparkles size={13} />
+                  <span>Ask DALE directly</span>
+                </button>
               </div>
-              <div>
-                <details>
-                  <summary>How are recommendations selected?</summary>
+
+              <div className="inquiry-accordion">
+                <details className="inquiry-item">
+                  <summary>
+                    <span>How are recommendations selected?</span>
+                    <span className="inquiry-toggle-icon">+</span>
+                  </summary>
                   <p>
-                    We filter the curated catalog by your device and budget,
-                    then rank by your chosen price or feature preference.
-                    Conflicting instructions require your confirmation.
-                    Specifications are linked to catalog records.
+                    We filter strictly by your hardware model and budget limit. Sponsored placement never alters organic ranking. Conflicting requests require explicit user confirmation.
                   </p>
                 </details>
-                <details>
-                  <summary>What happens if I need to return something?</summary>
+                <details className="inquiry-item">
+                  <summary>
+                    <span>What happens if I need to return something?</span>
+                    <span className="inquiry-toggle-icon">+</span>
+                  </summary>
                   <p>
-                    Open a request from My orders and choose a refund or
-                    replacement. A reviewer can arrange a merchant-paid return
-                    or approve a no-return exception. The demo window is 30 days
-                    from recorded delivery; late or incomplete records receive
-                    human review.
+                    Open a claim from My Orders for an instant merchant-paid return label or no-return exception. A human reviewer handles any late, damaged, or anomalous deliveries.
                   </p>
                 </details>
-                <details>
-                  <summary>Can a photo decide my claim?</summary>
+                <details className="inquiry-item">
+                  <summary>
+                    <span>Can automated AI deny my claim?</span>
+                    <span className="inquiry-toggle-icon">+</span>
+                  </summary>
                   <p>
-                    Photos and identifiers are submitted evidence, not proof of
-                    physical truth. Automated analysis cannot deny your request.
-                    Both sides can submit records and you can ask for another
-                    review.
+                    Never. Machine evidence analysis is strictly advisory. Automated checks cannot deny your request; both sides submit proof, and a human makes the final decision.
                   </p>
                 </details>
-                <details>
-                  <summary>How does a group purchase work?</summary>
+                <details className="inquiry-item">
+                  <summary>
+                    <span>How does a group purchase work?</span>
+                    <span className="inquiry-toggle-icon">+</span>
+                  </summary>
                   <p>
-                    The merchant publishes a minimum shopper count, discount and
-                    checkout window for each group. Each participant checks out
-                    independently. Another participant declining does not
-                    reprice your locked purchase.
+                    The merchant sets a threshold and checkout window. Each participant purchases independently; another shopper dropping out never reprices your locked deal.
                   </p>
                 </details>
               </div>
