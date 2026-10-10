@@ -636,3 +636,64 @@ select option {
     transition: none;
   }
 }
+
+/* Luxury Custom Cursor */
+.luxury-cursor-container {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  user-select: none;
+}
+
+.luxury-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  margin-top: -2.5px;
+  margin-left: -2.5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform;
+  mix-blend-mode: difference;
+  z-index: 1000000;
+}
+
+.luxury-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  margin-left: -16px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background-color: transparent;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, border-color, background-color;
+  mix-blend-mode: difference;
+  z-index: 999999;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body.has-custom-cursor {
+    cursor: none;
+  }
+  body.has-custom-cursor a,
+  body.has-custom-cursor button,
+  body.has-custom-cursor input,
+  body.has-custom-cursor select,
+  body.has-custom-cursor textarea,
+  body.has-custom-cursor [role="button"],
+  body.has-custom-cursor .button {
+    cursor: none;
+  }
+}
+
