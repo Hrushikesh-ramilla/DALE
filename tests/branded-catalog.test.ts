@@ -1,3 +1,6 @@
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { CatalogEvidence } from "../src/components/catalog-evidence";
 import { beforeAll, expect, it } from "vitest";
 import { brandedCatalog } from "../src/domain/branded-catalog";
 import {
@@ -128,4 +131,20 @@ it("blocks checkout and group commitments for identity-only records", async () =
   await expect(joinGroup(actor, "B028", "not-required")).rejects.toThrow(
     "comparison-only",
   );
+});
+
+it("renders manufacturer links and sandbox provenance for every public record, including legacy Apple bundles", () => {
+  for (const product of publicCatalog) {
+    const html = renderToStaticMarkup(
+      createElement(CatalogEvidence, { product }),
+    );
+    expect(html).toContain('href="https://');
+    expect(html).toContain("sandbox offer");
+    expect(html).not.toContain("Engineering fixture");
+  }
+  expect(
+    renderToStaticMarkup(
+      createElement(CatalogEvidence, { product: productById("R003") }),
+    ).match(/href=/g),
+  ).toHaveLength(2);
 });

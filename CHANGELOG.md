@@ -3,6 +3,7 @@
 ## 2026-10-11 — Sourced branded catalogue
 
 - Replace ordinary invented inventory with 35 manufacturer-linked branded records, preserving sample SKU histories. Add phones, laptops, tablets and nested department/category/type navigation.
+- Render primary-source links for the retained Apple charging references and bundle, with a contract for every public record.
 - Suppress recommendation/ranking claims until preview constraints are confirmed.
 - Present department selection as navigation, reset stale preview constraints and distinguish exact-variant confirmation from device fit.
 - Feature sourced products in the hero; remove unsourced compatibility/protection guarantees while retaining the accepted design.
