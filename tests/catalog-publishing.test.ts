@@ -102,7 +102,7 @@ it("paginates a full 500-record publication without duplicates or fixture leakag
       model: "not-required",
       budget: 15000,
       category: "fragrance",
-      requirements: { brand: template.attributes.brand },
+      requirements: { brand: template.attributes!.brand },
       preference: "CapacityPreferenceFact",
       ...scoring,
     });
