@@ -1,0 +1,1537 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "keyboards",
+  "displayName": "Keyboards",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "logitech-mx-keys-s",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "MX / G Series",
+      "modelName": "MX Keys S",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/products/keyboards/mx-keys-s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Pale Grey"
+      ],
+      "mediaSource": {
+        "url": "https://resource.logitech.com/image/logitech-mx-keys-s.png"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "mx keys s",
+        "switchType": "Scissor",
+        "layoutPercentage": "100%",
+        "connectivity": "Bluetooth / Bolt",
+        "hotSwappable": false,
+        "batteryHours": 120
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech premium keyboard MX Keys S",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-mx-mechanical",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "MX / G Series",
+      "modelName": "MX Mechanical",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/products/keyboards/mx-mechanical"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Pale Grey"
+      ],
+      "mediaSource": {
+        "url": "https://resource.logitech.com/image/logitech-mx-mechanical.png"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "mx mechanical",
+        "switchType": "Tactile Quiet Mechanical",
+        "layoutPercentage": "100%",
+        "connectivity": "Bluetooth / Bolt",
+        "hotSwappable": false,
+        "batteryHours": 360
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech premium keyboard MX Mechanical",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-mx-mechanical-mini",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "MX / G Series",
+      "modelName": "MX Mechanical Mini",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/products/keyboards/mx-mechanical-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Pale Grey"
+      ],
+      "mediaSource": {
+        "url": "https://resource.logitech.com/image/logitech-mx-mechanical-mini.png"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "mx mechanical mini",
+        "switchType": "Tactile Quiet Mechanical",
+        "layoutPercentage": "75%",
+        "connectivity": "Bluetooth / Bolt",
+        "hotSwappable": false,
+        "batteryHours": 360
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech premium keyboard MX Mechanical Mini",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-g915-lightspeed",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "MX / G Series",
+      "modelName": "G915 LIGHTSPEED",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/products/keyboards/g915-lightspeed"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Pale Grey"
+      ],
+      "mediaSource": {
+        "url": "https://resource.logitech.com/image/logitech-g915-lightspeed.png"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "g915 lightspeed",
+        "switchType": "GL Mechanical Low Profile",
+        "layoutPercentage": "100%",
+        "connectivity": "LIGHTSPEED Wireless",
+        "hotSwappable": false,
+        "batteryHours": 30
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech premium keyboard G915 LIGHTSPEED",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-g-pro-x-tkl",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "MX / G Series",
+      "modelName": "G PRO X TKL LIGHTSPEED",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/products/keyboards/g-pro-x-tkl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Pale Grey"
+      ],
+      "mediaSource": {
+        "url": "https://resource.logitech.com/image/logitech-g-pro-x-tkl.png"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "g pro x tkl lightspeed",
+        "switchType": "GX Mechanical",
+        "layoutPercentage": "80% (TKL)",
+        "connectivity": "LIGHTSPEED Wireless",
+        "hotSwappable": false,
+        "batteryHours": 50
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech premium keyboard G PRO X TKL LIGHTSPEED",
+      "status": "staged"
+    },
+    {
+      "id": "keychron-q1-pro",
+      "canonicalBrand": "Keychron",
+      "displayBrand": "Keychron",
+      "productLine": "Q Pro / K Pro / V Max / Lemokey",
+      "modelName": "Q1 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.keychron.com/products/q1-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Silver Grey",
+        "Shell White"
+      ],
+      "mediaSource": {
+        "url": "https://www.keychron.com/cdn/shop/products/keychron-q1-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "keychron",
+        "modelName": "q1 pro",
+        "switchType": "Keychron K Pro Red/Brown",
+        "layoutPercentage": "75%",
+        "connectivity": "Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 300
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Keychron custom QMK keyboard Q1 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "keychron-q2-pro",
+      "canonicalBrand": "Keychron",
+      "displayBrand": "Keychron",
+      "productLine": "Q Pro / K Pro / V Max / Lemokey",
+      "modelName": "Q2 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.keychron.com/products/q2-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Silver Grey",
+        "Shell White"
+      ],
+      "mediaSource": {
+        "url": "https://www.keychron.com/cdn/shop/products/keychron-q2-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "keychron",
+        "modelName": "q2 pro",
+        "switchType": "Keychron K Pro Red/Brown",
+        "layoutPercentage": "65%",
+        "connectivity": "Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 300
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Keychron custom QMK keyboard Q2 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "keychron-q3-pro",
+      "canonicalBrand": "Keychron",
+      "displayBrand": "Keychron",
+      "productLine": "Q Pro / K Pro / V Max / Lemokey",
+      "modelName": "Q3 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.keychron.com/products/q3-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Silver Grey",
+        "Shell White"
+      ],
+      "mediaSource": {
+        "url": "https://www.keychron.com/cdn/shop/products/keychron-q3-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "keychron",
+        "modelName": "q3 pro",
+        "switchType": "Keychron K Pro Red/Brown",
+        "layoutPercentage": "80% (TKL)",
+        "connectivity": "Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 300
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Keychron custom QMK keyboard Q3 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "keychron-k2-pro",
+      "canonicalBrand": "Keychron",
+      "displayBrand": "Keychron",
+      "productLine": "Q Pro / K Pro / V Max / Lemokey",
+      "modelName": "K2 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.keychron.com/products/k2-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Silver Grey",
+        "Shell White"
+      ],
+      "mediaSource": {
+        "url": "https://www.keychron.com/cdn/shop/products/keychron-k2-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "keychron",
+        "modelName": "k2 pro",
+        "switchType": "Keychron K Pro Mechanical",
+        "layoutPercentage": "75%",
+        "connectivity": "Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 240
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Keychron custom QMK keyboard K2 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "keychron-k3-pro",
+      "canonicalBrand": "Keychron",
+      "displayBrand": "Keychron",
+      "productLine": "Q Pro / K Pro / V Max / Lemokey",
+      "modelName": "K3 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.keychron.com/products/k3-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Silver Grey",
+        "Shell White"
+      ],
+      "mediaSource": {
+        "url": "https://www.keychron.com/cdn/shop/products/keychron-k3-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "keychron",
+        "modelName": "k3 pro",
+        "switchType": "Gateron Low Profile",
+        "layoutPercentage": "75%",
+        "connectivity": "Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 100
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Keychron custom QMK keyboard K3 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "keychron-v1-max",
+      "canonicalBrand": "Keychron",
+      "displayBrand": "Keychron",
+      "productLine": "Q Pro / K Pro / V Max / Lemokey",
+      "modelName": "V1 Max",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.keychron.com/products/v1-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Silver Grey",
+        "Shell White"
+      ],
+      "mediaSource": {
+        "url": "https://www.keychron.com/cdn/shop/products/keychron-v1-max.png"
+      },
+      "collectedAttributes": {
+        "brand": "keychron",
+        "modelName": "v1 max",
+        "switchType": "Gateron Jupiter",
+        "layoutPercentage": "75%",
+        "connectivity": "2.4GHz / Bluetooth",
+        "hotSwappable": true,
+        "batteryHours": 200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Keychron custom QMK keyboard V1 Max",
+      "status": "staged"
+    },
+    {
+      "id": "keychron-lemokey-l3",
+      "canonicalBrand": "Keychron",
+      "displayBrand": "Keychron",
+      "productLine": "Q Pro / K Pro / V Max / Lemokey",
+      "modelName": "Lemokey L3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.keychron.com/products/lemokey-l3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Silver Grey",
+        "Shell White"
+      ],
+      "mediaSource": {
+        "url": "https://www.keychron.com/cdn/shop/products/keychron-lemokey-l3.png"
+      },
+      "collectedAttributes": {
+        "brand": "keychron",
+        "modelName": "lemokey l3",
+        "switchType": "Gateron Jupiter Mechanical",
+        "layoutPercentage": "80% (TKL)",
+        "connectivity": "2.4GHz / Bluetooth",
+        "hotSwappable": true,
+        "batteryHours": 200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Keychron custom QMK keyboard Lemokey L3",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-k100-rgb",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "K Series",
+      "modelName": "K100 RGB",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/p/k100-rgb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Gunmetal"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-k100-rgb.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "k100 rgb",
+        "switchType": "CORSAIR OPX Optical",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-A Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high-polling gaming keyboard K100 RGB",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-k70-rgb-pro",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "K Series",
+      "modelName": "K70 RGB PRO",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/p/k70-rgb-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Gunmetal"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-k70-rgb-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "k70 rgb pro",
+        "switchType": "CHERRY MX Mechanical",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high-polling gaming keyboard K70 RGB PRO",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-k65-plus-wireless",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "K Series",
+      "modelName": "K65 PLUS WIRELESS",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/p/k65-plus-wireless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Gunmetal"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-k65-plus-wireless.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "k65 plus wireless",
+        "switchType": "CORSAIR MLX Red",
+        "layoutPercentage": "75%",
+        "connectivity": "2.4GHz / Bluetooth",
+        "hotSwappable": true,
+        "batteryHours": 266
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high-polling gaming keyboard K65 PLUS WIRELESS",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-k55-rgb-pro",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "K Series",
+      "modelName": "K55 RGB PRO",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/p/k55-rgb-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Gunmetal"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-k55-rgb-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "k55 rgb pro",
+        "switchType": "Quiet Membrane",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-A Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high-polling gaming keyboard K55 RGB PRO",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-k70-max-rgb",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "K Series",
+      "modelName": "K70 MAX RGB",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/p/k70-max-rgb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Gunmetal"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-k70-max-rgb.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "k70 max rgb",
+        "switchType": "CORSAIR MGX Magnetic",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high-polling gaming keyboard K70 MAX RGB",
+      "status": "staged"
+    },
+    {
+      "id": "razer-blackwidow-v4-pro",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "BlackWidow / Huntsman / DeathStalker",
+      "modelName": "BlackWidow V4 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/gaming-keyboards/blackwidow-v4-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Black",
+        "Mercury White"
+      ],
+      "mediaSource": {
+        "url": "https://assets3.razerzone.com/images/razer-blackwidow-v4-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "blackwidow v4 pro",
+        "switchType": "Razer Mechanical Green/Yellow",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer esports keyboard BlackWidow V4 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "razer-huntsman-v3-pro",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "BlackWidow / Huntsman / DeathStalker",
+      "modelName": "Huntsman V3 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/gaming-keyboards/huntsman-v3-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Black",
+        "Mercury White"
+      ],
+      "mediaSource": {
+        "url": "https://assets3.razerzone.com/images/razer-huntsman-v3-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "huntsman v3 pro",
+        "switchType": "Razer Analog Optical Gen-2",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer esports keyboard Huntsman V3 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "razer-deathstalker-v2-pro",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "BlackWidow / Huntsman / DeathStalker",
+      "modelName": "DeathStalker V2 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/gaming-keyboards/deathstalker-v2-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Black",
+        "Mercury White"
+      ],
+      "mediaSource": {
+        "url": "https://assets3.razerzone.com/images/razer-deathstalker-v2-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "deathstalker v2 pro",
+        "switchType": "Razer Optical Low Profile",
+        "layoutPercentage": "100%",
+        "connectivity": "HyperSpeed Wireless",
+        "hotSwappable": false,
+        "batteryHours": 40
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer esports keyboard DeathStalker V2 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "razer-blackwidow-v4-75",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "BlackWidow / Huntsman / DeathStalker",
+      "modelName": "BlackWidow V4 75%",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/gaming-keyboards/blackwidow-v4-75"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Black",
+        "Mercury White"
+      ],
+      "mediaSource": {
+        "url": "https://assets3.razerzone.com/images/razer-blackwidow-v4-75.png"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "blackwidow v4 75%",
+        "switchType": "Razer Orange Tactile",
+        "layoutPercentage": "75%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer esports keyboard BlackWidow V4 75%",
+      "status": "staged"
+    },
+    {
+      "id": "razer-ornata-v3",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "BlackWidow / Huntsman / DeathStalker",
+      "modelName": "Ornata V3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/gaming-keyboards/ornata-v3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Black",
+        "Mercury White"
+      ],
+      "mediaSource": {
+        "url": "https://assets3.razerzone.com/images/razer-ornata-v3.png"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "ornata v3",
+        "switchType": "Razer Mecha-Membrane",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-A Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer esports keyboard Ornata V3",
+      "status": "staged"
+    },
+    {
+      "id": "steelseries-apex-pro-tkl",
+      "canonicalBrand": "SteelSeries",
+      "displayBrand": "SteelSeries",
+      "productLine": "Apex Series",
+      "modelName": "Apex Pro TKL",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://steelseries.com/gaming-keyboards/apex-pro-tkl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://media.steelseries.com/thumbs/catalogue/products/steelseries-apex-pro-tkl.png"
+      },
+      "collectedAttributes": {
+        "brand": "steelseries",
+        "modelName": "apex pro tkl",
+        "switchType": "OmniPoint 2.0 Adjustable",
+        "layoutPercentage": "80% (TKL)",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SteelSeries magnetic switch keyboard Apex Pro TKL",
+      "status": "staged"
+    },
+    {
+      "id": "steelseries-apex-pro-mini",
+      "canonicalBrand": "SteelSeries",
+      "displayBrand": "SteelSeries",
+      "productLine": "Apex Series",
+      "modelName": "Apex Pro Mini",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://steelseries.com/gaming-keyboards/apex-pro-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://media.steelseries.com/thumbs/catalogue/products/steelseries-apex-pro-mini.png"
+      },
+      "collectedAttributes": {
+        "brand": "steelseries",
+        "modelName": "apex pro mini",
+        "switchType": "OmniPoint 2.0 Adjustable",
+        "layoutPercentage": "60%",
+        "connectivity": "Quantum 2.0 Wireless",
+        "hotSwappable": false,
+        "batteryHours": 40
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SteelSeries magnetic switch keyboard Apex Pro Mini",
+      "status": "staged"
+    },
+    {
+      "id": "steelseries-apex-9-tkl",
+      "canonicalBrand": "SteelSeries",
+      "displayBrand": "SteelSeries",
+      "productLine": "Apex Series",
+      "modelName": "Apex 9 TKL",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://steelseries.com/gaming-keyboards/apex-9-tkl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://media.steelseries.com/thumbs/catalogue/products/steelseries-apex-9-tkl.png"
+      },
+      "collectedAttributes": {
+        "brand": "steelseries",
+        "modelName": "apex 9 tkl",
+        "switchType": "OptiPoint Optical",
+        "layoutPercentage": "80% (TKL)",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SteelSeries magnetic switch keyboard Apex 9 TKL",
+      "status": "staged"
+    },
+    {
+      "id": "steelseries-apex-3-tkl",
+      "canonicalBrand": "SteelSeries",
+      "displayBrand": "SteelSeries",
+      "productLine": "Apex Series",
+      "modelName": "Apex 3 TKL",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://steelseries.com/gaming-keyboards/apex-3-tkl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://media.steelseries.com/thumbs/catalogue/products/steelseries-apex-3-tkl.png"
+      },
+      "collectedAttributes": {
+        "brand": "steelseries",
+        "modelName": "apex 3 tkl",
+        "switchType": "Whisper Quiet Membrane",
+        "layoutPercentage": "80% (TKL)",
+        "connectivity": "USB-A Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SteelSeries magnetic switch keyboard Apex 3 TKL",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-azoth",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS ROG",
+      "productLine": "ROG Azoth / Scope / Falchion",
+      "modelName": "ROG Azoth",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/keyboards/rog-azoth"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gunmetal Grey",
+        "Moonlight White"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-azoth.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog azoth",
+        "switchType": "ROG NX Mechanical",
+        "layoutPercentage": "75%",
+        "connectivity": "SpeedNova Wireless / BT",
+        "hotSwappable": true,
+        "batteryHours": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS ROG high-end gaming keyboard ROG Azoth",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-strix-scope-ii-96",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS ROG",
+      "productLine": "ROG Azoth / Scope / Falchion",
+      "modelName": "ROG Strix Scope II 96",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/keyboards/rog-strix-scope-ii-96"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gunmetal Grey",
+        "Moonlight White"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-strix-scope-ii-96.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog strix scope ii 96",
+        "switchType": "ROG NX Snow",
+        "layoutPercentage": "96%",
+        "connectivity": "SpeedNova Wireless / BT",
+        "hotSwappable": true,
+        "batteryHours": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS ROG high-end gaming keyboard ROG Strix Scope II 96",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-falchion-rx",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS ROG",
+      "productLine": "ROG Azoth / Scope / Falchion",
+      "modelName": "ROG Falchion RX",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/keyboards/rog-falchion-rx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gunmetal Grey",
+        "Moonlight White"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-falchion-rx.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog falchion rx",
+        "switchType": "ROG RX Low Profile",
+        "layoutPercentage": "65%",
+        "connectivity": "SpeedNova Wireless / BT",
+        "hotSwappable": false,
+        "batteryHours": 436
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS ROG high-end gaming keyboard ROG Falchion RX",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-claymore-ii",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS ROG",
+      "productLine": "ROG Azoth / Scope / Falchion",
+      "modelName": "ROG Claymore II",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/keyboards/rog-claymore-ii"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gunmetal Grey",
+        "Moonlight White"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-claymore-ii.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog claymore ii",
+        "switchType": "ROG RX Optical-Mechanical",
+        "layoutPercentage": "Modular 100%/80%",
+        "connectivity": "Wireless 2.4GHz / Wired",
+        "hotSwappable": false,
+        "batteryHours": 144
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS ROG high-end gaming keyboard ROG Claymore II",
+      "status": "staged"
+    },
+    {
+      "id": "hyperx-alloy-origins",
+      "canonicalBrand": "HyperX",
+      "displayBrand": "HyperX",
+      "productLine": "Alloy Series",
+      "modelName": "Alloy Origins",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://hyperx.com/products/alloy-origins"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://row.hyperx.com/cdn/shop/products/hyperx-alloy-origins.png"
+      },
+      "collectedAttributes": {
+        "brand": "hyperx",
+        "modelName": "alloy origins",
+        "switchType": "HyperX Red Mechanical",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HyperX aluminum aircraft-grade keyboard Alloy Origins",
+      "status": "staged"
+    },
+    {
+      "id": "hyperx-alloy-origins-60",
+      "canonicalBrand": "HyperX",
+      "displayBrand": "HyperX",
+      "productLine": "Alloy Series",
+      "modelName": "Alloy Origins 60",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://hyperx.com/products/alloy-origins-60"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://row.hyperx.com/cdn/shop/products/hyperx-alloy-origins-60.png"
+      },
+      "collectedAttributes": {
+        "brand": "hyperx",
+        "modelName": "alloy origins 60",
+        "switchType": "HyperX Red Mechanical",
+        "layoutPercentage": "60%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HyperX aluminum aircraft-grade keyboard Alloy Origins 60",
+      "status": "staged"
+    },
+    {
+      "id": "hyperx-alloy-rise",
+      "canonicalBrand": "HyperX",
+      "displayBrand": "HyperX",
+      "productLine": "Alloy Series",
+      "modelName": "Alloy Rise",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://hyperx.com/products/alloy-rise"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://row.hyperx.com/cdn/shop/products/hyperx-alloy-rise.png"
+      },
+      "collectedAttributes": {
+        "brand": "hyperx",
+        "modelName": "alloy rise",
+        "switchType": "HyperX Linear",
+        "layoutPercentage": "75%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HyperX aluminum aircraft-grade keyboard Alloy Rise",
+      "status": "staged"
+    },
+    {
+      "id": "ducky-one-3-rgb",
+      "canonicalBrand": "Ducky",
+      "displayBrand": "Ducky",
+      "productLine": "One Series",
+      "modelName": "One 3 RGB",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.duckychannel.com.tw/en/one-3-rgb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "DayBreak",
+        "Yellow",
+        "Classic Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.duckychannel.com.tw/upload/brands/ducky-one-3-rgb.png"
+      },
+      "collectedAttributes": {
+        "brand": "ducky",
+        "modelName": "one 3 rgb",
+        "switchType": "Cherry MX Red/Speed",
+        "layoutPercentage": "100%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ducky enthusiast mechanical keyboard One 3 RGB",
+      "status": "staged"
+    },
+    {
+      "id": "ducky-one-3-tkl",
+      "canonicalBrand": "Ducky",
+      "displayBrand": "Ducky",
+      "productLine": "One Series",
+      "modelName": "One 3 TKL",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.duckychannel.com.tw/en/one-3-tkl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "DayBreak",
+        "Yellow",
+        "Classic Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.duckychannel.com.tw/upload/brands/ducky-one-3-tkl.png"
+      },
+      "collectedAttributes": {
+        "brand": "ducky",
+        "modelName": "one 3 tkl",
+        "switchType": "Cherry MX Brown/Blue",
+        "layoutPercentage": "80% (TKL)",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ducky enthusiast mechanical keyboard One 3 TKL",
+      "status": "staged"
+    },
+    {
+      "id": "ducky-one-2-mini",
+      "canonicalBrand": "Ducky",
+      "displayBrand": "Ducky",
+      "productLine": "One Series",
+      "modelName": "One 2 Mini",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.duckychannel.com.tw/en/one-2-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "DayBreak",
+        "Yellow",
+        "Classic Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.duckychannel.com.tw/upload/brands/ducky-one-2-mini.png"
+      },
+      "collectedAttributes": {
+        "brand": "ducky",
+        "modelName": "one 2 mini",
+        "switchType": "Cherry MX Red",
+        "layoutPercentage": "60%",
+        "connectivity": "USB-C Wired",
+        "hotSwappable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ducky enthusiast mechanical keyboard One 2 Mini",
+      "status": "staged"
+    },
+    {
+      "id": "nuphy-air75-v2",
+      "canonicalBrand": "NuPhy",
+      "displayBrand": "NuPhy",
+      "productLine": "Air / Halo / Field",
+      "modelName": "Air75 V2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://nuphy.com/products/air75-v2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Lunar Gray",
+        "Ionic White"
+      ],
+      "mediaSource": {
+        "url": "https://nuphy.com/cdn/shop/products/nuphy-air75-v2.png"
+      },
+      "collectedAttributes": {
+        "brand": "nuphy",
+        "modelName": "air75 v2",
+        "switchType": "Gateron Low Profile Cowberry",
+        "layoutPercentage": "75%",
+        "connectivity": "2.4GHz / Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 220
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NuPhy ultra-thin mechanical keyboard Air75 V2",
+      "status": "staged"
+    },
+    {
+      "id": "nuphy-halo75",
+      "canonicalBrand": "NuPhy",
+      "displayBrand": "NuPhy",
+      "productLine": "Air / Halo / Field",
+      "modelName": "Halo75",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://nuphy.com/products/halo75"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Lunar Gray",
+        "Ionic White"
+      ],
+      "mediaSource": {
+        "url": "https://nuphy.com/cdn/shop/products/nuphy-halo75.png"
+      },
+      "collectedAttributes": {
+        "brand": "nuphy",
+        "modelName": "halo75",
+        "switchType": "Baby Kangaroo Tactile",
+        "layoutPercentage": "75%",
+        "connectivity": "2.4GHz / Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NuPhy ultra-thin mechanical keyboard Halo75",
+      "status": "staged"
+    },
+    {
+      "id": "nuphy-field75",
+      "canonicalBrand": "NuPhy",
+      "displayBrand": "NuPhy",
+      "productLine": "Air / Halo / Field",
+      "modelName": "Field75",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://nuphy.com/products/field75"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Lunar Gray",
+        "Ionic White"
+      ],
+      "mediaSource": {
+        "url": "https://nuphy.com/cdn/shop/products/nuphy-field75.png"
+      },
+      "collectedAttributes": {
+        "brand": "nuphy",
+        "modelName": "field75",
+        "switchType": "Polaris Mechanical",
+        "layoutPercentage": "75%",
+        "connectivity": "1000Hz 2.4GHz / BT",
+        "hotSwappable": true,
+        "batteryHours": 160
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NuPhy ultra-thin mechanical keyboard Field75",
+      "status": "staged"
+    },
+    {
+      "id": "epomaker-rt100",
+      "canonicalBrand": "Epomaker",
+      "displayBrand": "Epomaker",
+      "productLine": "RT / EK / TH Series",
+      "modelName": "RT100",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://epomaker.com/products/rt100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Retro Grey",
+        "Monet",
+        "Black Gold"
+      ],
+      "mediaSource": {
+        "url": "https://epomaker.com/cdn/shop/products/epomaker-rt100.png"
+      },
+      "collectedAttributes": {
+        "brand": "epomaker",
+        "modelName": "rt100",
+        "switchType": "Sea Salt Silent / Flamingo",
+        "layoutPercentage": "97-Key",
+        "connectivity": "2.4GHz / Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 150
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Epomaker custom mechanical keyboard RT100",
+      "status": "staged"
+    },
+    {
+      "id": "epomaker-ek68",
+      "canonicalBrand": "Epomaker",
+      "displayBrand": "Epomaker",
+      "productLine": "RT / EK / TH Series",
+      "modelName": "EK68",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://epomaker.com/products/ek68"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Retro Grey",
+        "Monet",
+        "Black Gold"
+      ],
+      "mediaSource": {
+        "url": "https://epomaker.com/cdn/shop/products/epomaker-ek68.png"
+      },
+      "collectedAttributes": {
+        "brand": "epomaker",
+        "modelName": "ek68",
+        "switchType": "Epomaker Flamingo",
+        "layoutPercentage": "65%",
+        "connectivity": "2.4GHz / Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 120
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Epomaker custom mechanical keyboard EK68",
+      "status": "staged"
+    },
+    {
+      "id": "epomaker-th80-pro",
+      "canonicalBrand": "Epomaker",
+      "displayBrand": "Epomaker",
+      "productLine": "RT / EK / TH Series",
+      "modelName": "TH80 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://epomaker.com/products/th80-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Retro Grey",
+        "Monet",
+        "Black Gold"
+      ],
+      "mediaSource": {
+        "url": "https://epomaker.com/cdn/shop/products/epomaker-th80-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "epomaker",
+        "modelName": "th80 pro",
+        "switchType": "Gateron Pro Yellow",
+        "layoutPercentage": "75%",
+        "connectivity": "2.4GHz / Bluetooth / Type-C",
+        "hotSwappable": true,
+        "batteryHours": 120
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Epomaker custom mechanical keyboard TH80 Pro",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Logitech",
+      "leafKey": "keyboards",
+      "reason": "Logitech MX and G gaming premium keyboard line comprises 5 flagship models.",
+      "officialSourceUrl": "https://www.logitech.com/en-us/keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "MX Keys S",
+        "MX Mechanical",
+        "MX Mechanical Mini",
+        "G915 LIGHTSPEED",
+        "G PRO X TKL LIGHTSPEED"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Keychron",
+      "leafKey": "keyboards",
+      "reason": "Keychron custom mechanical keyboard series comprises 7 core models.",
+      "officialSourceUrl": "https://www.keychron.com/collections/custom-keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Q1 Pro",
+        "Q2 Pro",
+        "Q3 Pro",
+        "K2 Pro",
+        "K3 Pro",
+        "V1 Max",
+        "Lemokey L3"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Corsair",
+      "leafKey": "keyboards",
+      "reason": "Corsair K series mechanical gaming keyboards comprise 5 models.",
+      "officialSourceUrl": "https://www.corsair.com/us/en/c/gaming-gear/gaming-keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "K100 RGB",
+        "K70 RGB PRO",
+        "K65 PLUS WIRELESS",
+        "K55 RGB PRO",
+        "K70 MAX RGB"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Razer",
+      "leafKey": "keyboards",
+      "reason": "Razer BlackWidow, Huntsman, and DeathStalker keyboard lineup comprises 5 models.",
+      "officialSourceUrl": "https://www.razer.com/pc/gaming-keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "BlackWidow V4 Pro",
+        "Huntsman V3 Pro",
+        "DeathStalker V2 Pro",
+        "BlackWidow V4 75%",
+        "Ornata V3"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "SteelSeries",
+      "leafKey": "keyboards",
+      "reason": "SteelSeries Apex magnetic and mechanical keyboard lineup comprises 4 models.",
+      "officialSourceUrl": "https://steelseries.com/gaming-keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Apex Pro TKL",
+        "Apex Pro Mini",
+        "Apex 9 TKL",
+        "Apex 3 TKL"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "ASUS",
+      "leafKey": "keyboards",
+      "reason": "ASUS ROG enthusiast keyboard line features 4 models.",
+      "officialSourceUrl": "https://rog.asus.com/keyboards/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "ROG Azoth",
+        "ROG Strix Scope II 96",
+        "ROG Falchion RX",
+        "ROG Claymore II"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "HyperX",
+      "leafKey": "keyboards",
+      "reason": "HyperX Alloy gaming mechanical keyboard series consists of 3 models.",
+      "officialSourceUrl": "https://hyperx.com/collections/gaming-keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Alloy Origins",
+        "Alloy Origins 60",
+        "Alloy Rise"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Ducky",
+      "leafKey": "keyboards",
+      "reason": "Ducky mechanical keyboard lineup consists of 3 models.",
+      "officialSourceUrl": "https://www.duckychannel.com.tw/en/Keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "One 3 RGB",
+        "One 3 TKL",
+        "One 2 Mini"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "NuPhy",
+      "leafKey": "keyboards",
+      "reason": "NuPhy low-profile and custom mechanical line consists of 3 models.",
+      "officialSourceUrl": "https://nuphy.com/collections/keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Air75 V2",
+        "Halo75",
+        "Field75"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Epomaker",
+      "leafKey": "keyboards",
+      "reason": "Epomaker custom mechanical keyboard line comprises 3 models.",
+      "officialSourceUrl": "https://epomaker.com/collections/custom-keyboards",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "RT100",
+        "EK68",
+        "TH80 Pro"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

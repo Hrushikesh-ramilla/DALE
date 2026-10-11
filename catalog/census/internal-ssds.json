@@ -1,0 +1,1655 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "internal-ssds",
+  "displayName": "Internal SSDs (NVMe & SATA)",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "samsung-990-pro",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO / PRO",
+      "modelName": "990 PRO NVMe M.2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://semiconductor.samsung.com/consumer-storage/internal-ssd/990-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-990-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "990 pro nvme m.2",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7450,
+        "sequentialWriteMBps": 6900,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung internal drive 990 PRO NVMe M.2",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-990-evo",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO / PRO",
+      "modelName": "990 EVO NVMe M.2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://semiconductor.samsung.com/consumer-storage/internal-ssd/990-evo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-990-evo.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "990 evo nvme m.2",
+        "pcieGen": "PCIe 4.0/5.0 x2",
+        "sequentialReadMBps": 5000,
+        "sequentialWriteMBps": 4200,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung internal drive 990 EVO NVMe M.2",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-980-pro",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO / PRO",
+      "modelName": "980 PRO NVMe M.2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://semiconductor.samsung.com/consumer-storage/internal-ssd/980-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-980-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "980 pro nvme m.2",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7000,
+        "sequentialWriteMBps": 5100,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung internal drive 980 PRO NVMe M.2",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-970-evo-plus",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO / PRO",
+      "modelName": "970 EVO Plus NVMe M.2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://semiconductor.samsung.com/consumer-storage/internal-ssd/970-evo-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-970-evo-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "970 evo plus nvme m.2",
+        "pcieGen": "PCIe 3.0",
+        "sequentialReadMBps": 3500,
+        "sequentialWriteMBps": 3300,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung internal drive 970 EVO Plus NVMe M.2",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-870-evo",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO / PRO",
+      "modelName": "870 EVO SATA 2.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://semiconductor.samsung.com/consumer-storage/internal-ssd/870-evo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-870-evo.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "870 evo sata 2.5\"",
+        "pcieGen": "SATA III",
+        "sequentialReadMBps": 560,
+        "sequentialWriteMBps": 530,
+        "formFactor": "2.5 inch",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung internal drive 870 EVO SATA 2.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "wd-black-sn850x",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "WD_BLACK / Blue / Red",
+      "modelName": "WD_BLACK SN850X NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/internal-drives/black-sn850x"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn850x.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd_black sn850x nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7300,
+        "sequentialWriteMBps": 6600,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD internal solid state drive WD_BLACK SN850X NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "wd-black-sn770",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "WD_BLACK / Blue / Red",
+      "modelName": "WD_BLACK SN770 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/internal-drives/black-sn770"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn770.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd_black sn770 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 5150,
+        "sequentialWriteMBps": 4900,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD internal solid state drive WD_BLACK SN770 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "wd-blue-sn580",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "WD_BLACK / Blue / Red",
+      "modelName": "WD Blue SN580 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/internal-drives/blue-sn580"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-sn580.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd blue sn580 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 4150,
+        "sequentialWriteMBps": 4150,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD internal solid state drive WD Blue SN580 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "wd-red-sn700",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "WD_BLACK / Blue / Red",
+      "modelName": "WD Red SN700 NVMe NAS",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/internal-drives/red-sn700"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-red-sn700.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd red sn700 nvme nas",
+        "pcieGen": "PCIe 3.0",
+        "sequentialReadMBps": 3430,
+        "sequentialWriteMBps": 3100,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD internal solid state drive WD Red SN700 NVMe NAS",
+      "status": "staged"
+    },
+    {
+      "id": "wd-blue-sa510",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "WD_BLACK / Blue / Red",
+      "modelName": "WD Blue SA510 SATA 2.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/internal-drives/blue-sa510"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-sa510.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd blue sa510 sata 2.5\"",
+        "pcieGen": "SATA III",
+        "sequentialReadMBps": 560,
+        "sequentialWriteMBps": 520,
+        "formFactor": "2.5 inch",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD internal solid state drive WD Blue SA510 SATA 2.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "wd-black-sn750-se",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "WD_BLACK / Blue / Red",
+      "modelName": "WD_BLACK SN750 SE NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/internal-drives/black-sn750-se"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn750-se.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd_black sn750 se nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 3600,
+        "sequentialWriteMBps": 2830,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD internal solid state drive WD_BLACK SN750 SE NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "crucial-t705-gen5",
+      "canonicalBrand": "Crucial",
+      "displayBrand": "Crucial",
+      "productLine": "T-Series / P-Series / MX",
+      "modelName": "Crucial T705 Gen5 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crucial.com/ssd/t705-gen5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-t705-gen5.png"
+      },
+      "collectedAttributes": {
+        "brand": "crucial",
+        "modelName": "crucial t705 gen5 nvme",
+        "pcieGen": "PCIe 5.0",
+        "sequentialReadMBps": 14500,
+        "sequentialWriteMBps": 12700,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crucial internal SSD Crucial T705 Gen5 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "crucial-t700-gen5",
+      "canonicalBrand": "Crucial",
+      "displayBrand": "Crucial",
+      "productLine": "T-Series / P-Series / MX",
+      "modelName": "Crucial T700 Gen5 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crucial.com/ssd/t700-gen5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-t700-gen5.png"
+      },
+      "collectedAttributes": {
+        "brand": "crucial",
+        "modelName": "crucial t700 gen5 nvme",
+        "pcieGen": "PCIe 5.0",
+        "sequentialReadMBps": 12400,
+        "sequentialWriteMBps": 11800,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crucial internal SSD Crucial T700 Gen5 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "crucial-t500-gen4",
+      "canonicalBrand": "Crucial",
+      "displayBrand": "Crucial",
+      "productLine": "T-Series / P-Series / MX",
+      "modelName": "Crucial T500 Gen4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crucial.com/ssd/t500-gen4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-t500-gen4.png"
+      },
+      "collectedAttributes": {
+        "brand": "crucial",
+        "modelName": "crucial t500 gen4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7400,
+        "sequentialWriteMBps": 7000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crucial internal SSD Crucial T500 Gen4 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "crucial-p3-plus-gen4",
+      "canonicalBrand": "Crucial",
+      "displayBrand": "Crucial",
+      "productLine": "T-Series / P-Series / MX",
+      "modelName": "Crucial P3 Plus Gen4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crucial.com/ssd/p3-plus-gen4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-p3-plus-gen4.png"
+      },
+      "collectedAttributes": {
+        "brand": "crucial",
+        "modelName": "crucial p3 plus gen4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 5000,
+        "sequentialWriteMBps": 4200,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crucial internal SSD Crucial P3 Plus Gen4 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "crucial-mx500-sata",
+      "canonicalBrand": "Crucial",
+      "displayBrand": "Crucial",
+      "productLine": "T-Series / P-Series / MX",
+      "modelName": "Crucial MX500 SATA 2.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crucial.com/ssd/mx500-sata"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-mx500-sata.png"
+      },
+      "collectedAttributes": {
+        "brand": "crucial",
+        "modelName": "crucial mx500 sata 2.5\"",
+        "pcieGen": "SATA III",
+        "sequentialReadMBps": 560,
+        "sequentialWriteMBps": 510,
+        "formFactor": "2.5 inch",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crucial internal SSD Crucial MX500 SATA 2.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-kc3000-nvme",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "KC / FURY / NV",
+      "modelName": "KC3000 PCIe 4.0 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/ssd/kc3000-nvme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://media.kingston.com/kingston/product/kingston-kc3000-nvme.png"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "kc3000 pcie 4.0 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7000,
+        "sequentialWriteMBps": 7000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston high reliability drive KC3000 PCIe 4.0 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-fury-renegade-nvme",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "KC / FURY / NV",
+      "modelName": "FURY Renegade PCIe 4.0 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/ssd/fury-renegade-nvme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://media.kingston.com/kingston/product/kingston-fury-renegade-nvme.png"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "fury renegade pcie 4.0 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7300,
+        "sequentialWriteMBps": 7000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston high reliability drive FURY Renegade PCIe 4.0 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-nv2-nvme",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "KC / FURY / NV",
+      "modelName": "NV2 PCIe 4.0 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/ssd/nv2-nvme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://media.kingston.com/kingston/product/kingston-nv2-nvme.png"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "nv2 pcie 4.0 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 3500,
+        "sequentialWriteMBps": 2800,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston high reliability drive NV2 PCIe 4.0 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-kc600-sata",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "KC / FURY / NV",
+      "modelName": "KC600 SATA 2.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/ssd/kc600-sata"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://media.kingston.com/kingston/product/kingston-kc600-sata.png"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "kc600 sata 2.5\"",
+        "pcieGen": "SATA III",
+        "sequentialReadMBps": 550,
+        "sequentialWriteMBps": 520,
+        "formFactor": "2.5 inch",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston high reliability drive KC600 SATA 2.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "seagate-firecuda-540",
+      "canonicalBrand": "Seagate",
+      "displayBrand": "Seagate",
+      "productLine": "FireCuda / BarraCuda",
+      "modelName": "FireCuda 540 PCIe Gen5 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.seagate.com/products/firecuda-540"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.seagate.com/content/dam/seagate/products/seagate-firecuda-540.png"
+      },
+      "collectedAttributes": {
+        "brand": "seagate",
+        "modelName": "firecuda 540 pcie gen5 nvme",
+        "pcieGen": "PCIe 5.0",
+        "sequentialReadMBps": 10000,
+        "sequentialWriteMBps": 10000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seagate FireCuda gaming SSD FireCuda 540 PCIe Gen5 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "seagate-firecuda-530",
+      "canonicalBrand": "Seagate",
+      "displayBrand": "Seagate",
+      "productLine": "FireCuda / BarraCuda",
+      "modelName": "FireCuda 530 PCIe Gen4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.seagate.com/products/firecuda-530"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.seagate.com/content/dam/seagate/products/seagate-firecuda-530.png"
+      },
+      "collectedAttributes": {
+        "brand": "seagate",
+        "modelName": "firecuda 530 pcie gen4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7300,
+        "sequentialWriteMBps": 6900,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seagate FireCuda gaming SSD FireCuda 530 PCIe Gen4 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "seagate-barracuda-510",
+      "canonicalBrand": "Seagate",
+      "displayBrand": "Seagate",
+      "productLine": "FireCuda / BarraCuda",
+      "modelName": "BarraCuda 510 PCIe Gen3 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.seagate.com/products/barracuda-510"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.seagate.com/content/dam/seagate/products/seagate-barracuda-510.png"
+      },
+      "collectedAttributes": {
+        "brand": "seagate",
+        "modelName": "barracuda 510 pcie gen3 nvme",
+        "pcieGen": "PCIe 3.0",
+        "sequentialReadMBps": 3400,
+        "sequentialWriteMBps": 3000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seagate FireCuda gaming SSD BarraCuda 510 PCIe Gen3 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "sk-hynix-platinum-p41",
+      "canonicalBrand": "SK hynix",
+      "displayBrand": "SK hynix",
+      "productLine": "Platinum / Gold",
+      "modelName": "Platinum P41 PCIe 4.0 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ssd.skhynix.com/platinum-p41"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://ssd.skhynix.com/assets/images/sk-hynix-platinum-p41.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk hynix",
+        "modelName": "platinum p41 pcie 4.0 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7000,
+        "sequentialWriteMBps": 6500,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK hynix 176-layer TLC SSD Platinum P41 PCIe 4.0 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "sk-hynix-gold-p31",
+      "canonicalBrand": "SK hynix",
+      "displayBrand": "SK hynix",
+      "productLine": "Platinum / Gold",
+      "modelName": "Gold P31 PCIe 3.0 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ssd.skhynix.com/gold-p31"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://ssd.skhynix.com/assets/images/sk-hynix-gold-p31.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk hynix",
+        "modelName": "gold p31 pcie 3.0 nvme",
+        "pcieGen": "PCIe 3.0",
+        "sequentialReadMBps": 3500,
+        "sequentialWriteMBps": 3200,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK hynix 176-layer TLC SSD Gold P31 PCIe 3.0 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "sk-hynix-gold-s31",
+      "canonicalBrand": "SK hynix",
+      "displayBrand": "SK hynix",
+      "productLine": "Platinum / Gold",
+      "modelName": "Gold S31 SATA 2.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ssd.skhynix.com/gold-s31"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://ssd.skhynix.com/assets/images/sk-hynix-gold-s31.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk hynix",
+        "modelName": "gold s31 sata 2.5\"",
+        "pcieGen": "SATA III",
+        "sequentialReadMBps": 560,
+        "sequentialWriteMBps": 525,
+        "formFactor": "2.5 inch",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK hynix 176-layer TLC SSD Gold S31 SATA 2.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "solidigm-p44-pro",
+      "canonicalBrand": "Solidigm",
+      "displayBrand": "Solidigm",
+      "productLine": "P44 / P41 / D5",
+      "modelName": "Solidigm P44 Pro PCIe 4.0 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.solidigm.com/products/client/p44-pro.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.solidigm.com/images/solidigm-p44-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "solidigm",
+        "modelName": "solidigm p44 pro pcie 4.0 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7000,
+        "sequentialWriteMBps": 6500,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Solidigm architecture drive Solidigm P44 Pro PCIe 4.0 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "solidigm-p41-plus",
+      "canonicalBrand": "Solidigm",
+      "displayBrand": "Solidigm",
+      "productLine": "P44 / P41 / D5",
+      "modelName": "Solidigm P41 Plus PCIe 4.0 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.solidigm.com/products/client/p41-plus.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.solidigm.com/images/solidigm-p41-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "solidigm",
+        "modelName": "solidigm p41 plus pcie 4.0 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 4125,
+        "sequentialWriteMBps": 3325,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Solidigm architecture drive Solidigm P41 Plus PCIe 4.0 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "solidigm-d5-p5430",
+      "canonicalBrand": "Solidigm",
+      "displayBrand": "Solidigm",
+      "productLine": "P44 / P41 / D5",
+      "modelName": "Solidigm D5-P5430 Enterprise NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.solidigm.com/products/client/d5-p5430.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.solidigm.com/images/solidigm-d5-p5430.png"
+      },
+      "collectedAttributes": {
+        "brand": "solidigm",
+        "modelName": "solidigm d5-p5430 enterprise nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7000,
+        "sequentialWriteMBps": 3000,
+        "formFactor": "U.2 / E3.S",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Solidigm architecture drive Solidigm D5-P5430 Enterprise NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-mp700-pro",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "MP Series",
+      "modelName": "MP700 PRO Gen5 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/storage/mp700-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-mp700-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "mp700 pro gen5 nvme",
+        "pcieGen": "PCIe 5.0",
+        "sequentialReadMBps": 12400,
+        "sequentialWriteMBps": 11800,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high performance drive MP700 PRO Gen5 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-mp600-pro-lpx",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "MP Series",
+      "modelName": "MP600 PRO LPX Gen4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/storage/mp600-pro-lpx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-mp600-pro-lpx.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "mp600 pro lpx gen4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7100,
+        "sequentialWriteMBps": 6800,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high performance drive MP600 PRO LPX Gen4 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-mp600-elite",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "MP Series",
+      "modelName": "MP600 ELITE Gen4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/storage/mp600-elite"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-mp600-elite.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "mp600 elite gen4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7000,
+        "sequentialWriteMBps": 6500,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high performance drive MP600 ELITE Gen4 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-mp600-core-xt",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "MP Series",
+      "modelName": "MP600 CORE XT Gen4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/storage/mp600-core-xt"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://assets.corsair.com/image/upload/corsair-mp600-core-xt.png"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "mp600 core xt gen4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 5000,
+        "sequentialWriteMBps": 4400,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair high performance drive MP600 CORE XT Gen4 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "sabrent-rocket-5",
+      "canonicalBrand": "Sabrent",
+      "displayBrand": "Sabrent",
+      "productLine": "Rocket",
+      "modelName": "Rocket 5 PCIe Gen 5 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://sabrent.com/products/rocket-5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://sabrent.com/cdn/shop/products/sabrent-rocket-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "sabrent",
+        "modelName": "rocket 5 pcie gen 5 nvme",
+        "pcieGen": "PCIe 5.0",
+        "sequentialReadMBps": 14000,
+        "sequentialWriteMBps": 12000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sabrent Rocket speed drive Rocket 5 PCIe Gen 5 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "sabrent-rocket-4-plus-g",
+      "canonicalBrand": "Sabrent",
+      "displayBrand": "Sabrent",
+      "productLine": "Rocket",
+      "modelName": "Rocket 4 Plus-G Gaming NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://sabrent.com/products/rocket-4-plus-g"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://sabrent.com/cdn/shop/products/sabrent-rocket-4-plus-g.png"
+      },
+      "collectedAttributes": {
+        "brand": "sabrent",
+        "modelName": "rocket 4 plus-g gaming nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7300,
+        "sequentialWriteMBps": 6900,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sabrent Rocket speed drive Rocket 4 Plus-G Gaming NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "sabrent-rocket-4-plus",
+      "canonicalBrand": "Sabrent",
+      "displayBrand": "Sabrent",
+      "productLine": "Rocket",
+      "modelName": "Rocket 4 Plus NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://sabrent.com/products/rocket-4-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://sabrent.com/cdn/shop/products/sabrent-rocket-4-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "sabrent",
+        "modelName": "rocket 4 plus nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7100,
+        "sequentialWriteMBps": 6600,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sabrent Rocket speed drive Rocket 4 Plus NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "sabrent-rocket-q4",
+      "canonicalBrand": "Sabrent",
+      "displayBrand": "Sabrent",
+      "productLine": "Rocket",
+      "modelName": "Rocket Q4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://sabrent.com/products/rocket-q4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://sabrent.com/cdn/shop/products/sabrent-rocket-q4.png"
+      },
+      "collectedAttributes": {
+        "brand": "sabrent",
+        "modelName": "rocket q4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 4800,
+        "sequentialWriteMBps": 4000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sabrent Rocket speed drive Rocket Q4 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "adata-xpg-gammix-s70-blade",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "XPG / Legend / Ultimate",
+      "modelName": "XPG GAMMIX S70 BLADE PCIe Gen4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/xpg-gammix-s70-blade"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/upload/downloadfile/adata-xpg-gammix-s70-blade.png"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "xpg gammix s70 blade pcie gen4",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7400,
+        "sequentialWriteMBps": 6800,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA XPG gaming internal SSD XPG GAMMIX S70 BLADE PCIe Gen4",
+      "status": "staged"
+    },
+    {
+      "id": "adata-legend-960-max",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "XPG / Legend / Ultimate",
+      "modelName": "Legend 960 MAX PCIe Gen4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/legend-960-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/upload/downloadfile/adata-legend-960-max.png"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "legend 960 max pcie gen4",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7400,
+        "sequentialWriteMBps": 6800,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA XPG gaming internal SSD Legend 960 MAX PCIe Gen4",
+      "status": "staged"
+    },
+    {
+      "id": "adata-legend-850-lite",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "XPG / Legend / Ultimate",
+      "modelName": "Legend 850 LITE PCIe Gen4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/legend-850-lite"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/upload/downloadfile/adata-legend-850-lite.png"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "legend 850 lite pcie gen4",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 5000,
+        "sequentialWriteMBps": 4200,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA XPG gaming internal SSD Legend 850 LITE PCIe Gen4",
+      "status": "staged"
+    },
+    {
+      "id": "adata-ultimate-su800",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "XPG / Legend / Ultimate",
+      "modelName": "Ultimate SU800 SATA 2.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/ultimate-su800"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/upload/downloadfile/adata-ultimate-su800.png"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "ultimate su800 sata 2.5\"",
+        "pcieGen": "SATA III",
+        "sequentialReadMBps": 560,
+        "sequentialWriteMBps": 520,
+        "formFactor": "2.5 inch",
+        "heatsinkIncluded": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA XPG gaming internal SSD Ultimate SU800 SATA 2.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "nextorage-nem-pa-gen4",
+      "canonicalBrand": "Nextorage",
+      "displayBrand": "Nextorage",
+      "productLine": "NEM / NN / G Series",
+      "modelName": "NEM-PA Series Gen4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nextorage.net/en/ssds/nem-pa-gen4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.nextorage.net/images/nextorage-nem-pa-gen4.png"
+      },
+      "collectedAttributes": {
+        "brand": "nextorage",
+        "modelName": "nem-pa series gen4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7300,
+        "sequentialWriteMBps": 6900,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nextorage Japanese engineered internal SSD NEM-PA Series Gen4 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "nextorage-nn5pro-gen5",
+      "canonicalBrand": "Nextorage",
+      "displayBrand": "Nextorage",
+      "productLine": "NEM / NN / G Series",
+      "modelName": "NN5PRO Series Gen5 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nextorage.net/en/ssds/nn5pro-gen5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.nextorage.net/images/nextorage-nn5pro-gen5.png"
+      },
+      "collectedAttributes": {
+        "brand": "nextorage",
+        "modelName": "nn5pro series gen5 nvme",
+        "pcieGen": "PCIe 5.0",
+        "sequentialReadMBps": 10000,
+        "sequentialWriteMBps": 10000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nextorage Japanese engineered internal SSD NN5PRO Series Gen5 NVMe",
+      "status": "staged"
+    },
+    {
+      "id": "nextorage-g-series-gen4",
+      "canonicalBrand": "Nextorage",
+      "displayBrand": "Nextorage",
+      "productLine": "NEM / NN / G Series",
+      "modelName": "G Series Gen4 NVMe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nextorage.net/en/ssds/g-series-gen4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.nextorage.net/images/nextorage-g-series-gen4.png"
+      },
+      "collectedAttributes": {
+        "brand": "nextorage",
+        "modelName": "g series gen4 nvme",
+        "pcieGen": "PCIe 4.0",
+        "sequentialReadMBps": 7400,
+        "sequentialWriteMBps": 7000,
+        "formFactor": "M.2 2280",
+        "heatsinkIncluded": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nextorage Japanese engineered internal SSD G Series Gen4 NVMe",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Samsung",
+      "leafKey": "internal-ssds",
+      "reason": "Samsung active consumer internal SSD lineup consists of 5 core chassis across 990, 980, 970, and 870 series.",
+      "officialSourceUrl": "https://semiconductor.samsung.com/consumer-storage/internal-ssd/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "990 PRO NVMe M.2",
+        "990 EVO NVMe M.2",
+        "980 PRO NVMe M.2",
+        "970 EVO Plus NVMe M.2",
+        "870 EVO SATA 2.5\""
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "WD",
+      "leafKey": "internal-ssds",
+      "reason": "Western Digital consumer and gaming internal SSD lines comprise 6 distinct series.",
+      "officialSourceUrl": "https://www.westerndigital.com/products/internal-drives",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "WD_BLACK SN850X NVMe",
+        "WD_BLACK SN770 NVMe",
+        "WD Blue SN580 NVMe",
+        "WD Red SN700 NVMe NAS",
+        "WD Blue SA510 SATA 2.5\"",
+        "WD_BLACK SN750 SE NVMe"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Crucial",
+      "leafKey": "internal-ssds",
+      "reason": "Crucial active internal SSD lineup features 5 core models across Gen5, Gen4, and SATA.",
+      "officialSourceUrl": "https://www.crucial.com/products/ssd/internal-ssds",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Crucial T705 Gen5 NVMe",
+        "Crucial T700 Gen5 NVMe",
+        "Crucial T500 Gen4 NVMe",
+        "Crucial P3 Plus Gen4 NVMe",
+        "Crucial MX500 SATA 2.5\""
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Kingston",
+      "leafKey": "internal-ssds",
+      "reason": "Kingston consumer and enthusiast internal SSD range includes 4 core models.",
+      "officialSourceUrl": "https://www.kingston.com/en/ssd/internal",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "KC3000 PCIe 4.0 NVMe",
+        "FURY Renegade PCIe 4.0 NVMe",
+        "NV2 PCIe 4.0 NVMe",
+        "KC600 SATA 2.5\""
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Seagate",
+      "leafKey": "internal-ssds",
+      "reason": "Seagate gaming and client internal SSD portfolio comprises 3 models.",
+      "officialSourceUrl": "https://www.seagate.com/products/gaming-drives/pc-gaming/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "FireCuda 540 PCIe Gen5 NVMe",
+        "FireCuda 530 PCIe Gen4 NVMe",
+        "BarraCuda 510 PCIe Gen3 NVMe"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "SK hynix",
+      "leafKey": "internal-ssds",
+      "reason": "SK hynix consumer SSD product range consists of 3 distinct models.",
+      "officialSourceUrl": "https://ssd.skhynix.com/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Platinum P41 PCIe 4.0 NVMe",
+        "Gold P31 PCIe 3.0 NVMe",
+        "Gold S31 SATA 2.5\""
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Solidigm",
+      "leafKey": "internal-ssds",
+      "reason": "Solidigm client internal SSD range consists of 3 models.",
+      "officialSourceUrl": "https://www.solidigm.com/products/client.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Solidigm P44 Pro PCIe 4.0 NVMe",
+        "Solidigm P41 Plus PCIe 4.0 NVMe",
+        "Solidigm D5-P5430 Enterprise NVMe"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Corsair",
+      "leafKey": "internal-ssds",
+      "reason": "Corsair MP series internal M.2 SSD line comprises 4 models.",
+      "officialSourceUrl": "https://www.corsair.com/us/en/c/storage/internal-ssds",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "MP700 PRO Gen5 NVMe",
+        "MP600 PRO LPX Gen4 NVMe",
+        "MP600 ELITE Gen4 NVMe",
+        "MP600 CORE XT Gen4 NVMe"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Sabrent",
+      "leafKey": "internal-ssds",
+      "reason": "Sabrent Rocket internal M.2 SSD series comprises 4 models.",
+      "officialSourceUrl": "https://sabrent.com/collections/internal-ssds",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Rocket 5 PCIe Gen 5 NVMe",
+        "Rocket 4 Plus-G Gaming NVMe",
+        "Rocket 4 Plus NVMe",
+        "Rocket Q4 NVMe"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "ADATA",
+      "leafKey": "internal-ssds",
+      "reason": "ADATA / XPG internal consumer and gaming SSD lineup includes 4 models.",
+      "officialSourceUrl": "https://www.adata.com/en/consumer/category/ssds/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "XPG GAMMIX S70 BLADE PCIe Gen4",
+        "Legend 960 MAX PCIe Gen4",
+        "Legend 850 LITE PCIe Gen4",
+        "Ultimate SU800 SATA 2.5\""
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Nextorage",
+      "leafKey": "internal-ssds",
+      "reason": "Nextorage gaming and creator internal SSD lineup comprises 3 models.",
+      "officialSourceUrl": "https://www.nextorage.net/en/ssds/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "NEM-PA Series Gen4 NVMe",
+        "NN5PRO Series Gen5 NVMe",
+        "G Series Gen4 NVMe"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

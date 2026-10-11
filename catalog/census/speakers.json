@@ -1,0 +1,2272 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "speakers",
+  "displayName": "Speakers & Wireless Audio",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "bo-beosound-a1-2nd-gen",
+      "canonicalBrand": "Bang & Olufsen",
+      "displayBrand": "Bang & Olufsen",
+      "productLine": "Beosound",
+      "modelName": "Beosound A1 (2nd Gen)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bang-olufsen.com/en/in/speakers/beosound-a1-2nd-gen"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black Anthracite",
+        "Natural Aluminium",
+        "Gold Tone"
+      ],
+      "mediaSource": {
+        "url": "https://images.ctfassets.net/bo/bo-beosound-a1-2nd-gen.png"
+      },
+      "collectedAttributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beosound a1 (2nd gen)",
+        "powerWatts": 60,
+        "batteryHours": 18,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "B&O luxury acoustic reference Beosound A1 (2nd Gen)",
+      "status": "staged"
+    },
+    {
+      "id": "bo-beosound-explore",
+      "canonicalBrand": "Bang & Olufsen",
+      "displayBrand": "Bang & Olufsen",
+      "productLine": "Beosound",
+      "modelName": "Beosound Explore",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bang-olufsen.com/en/in/speakers/beosound-explore"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black Anthracite",
+        "Natural Aluminium",
+        "Gold Tone"
+      ],
+      "mediaSource": {
+        "url": "https://images.ctfassets.net/bo/bo-beosound-explore.png"
+      },
+      "collectedAttributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beosound explore",
+        "powerWatts": 60,
+        "batteryHours": 27,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "B&O luxury acoustic reference Beosound Explore",
+      "status": "staged"
+    },
+    {
+      "id": "bo-beolit-20",
+      "canonicalBrand": "Bang & Olufsen",
+      "displayBrand": "Bang & Olufsen",
+      "productLine": "Beosound",
+      "modelName": "Beolit 20",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bang-olufsen.com/en/in/speakers/beolit-20"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black Anthracite",
+        "Natural Aluminium",
+        "Gold Tone"
+      ],
+      "mediaSource": {
+        "url": "https://images.ctfassets.net/bo/bo-beolit-20.png"
+      },
+      "collectedAttributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beolit 20",
+        "powerWatts": 70,
+        "batteryHours": 8,
+        "waterResistance": "IP54"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "B&O luxury acoustic reference Beolit 20",
+      "status": "staged"
+    },
+    {
+      "id": "bo-beosound-level",
+      "canonicalBrand": "Bang & Olufsen",
+      "displayBrand": "Bang & Olufsen",
+      "productLine": "Beosound",
+      "modelName": "Beosound Level",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bang-olufsen.com/en/in/speakers/beosound-level"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black Anthracite",
+        "Natural Aluminium",
+        "Gold Tone"
+      ],
+      "mediaSource": {
+        "url": "https://images.ctfassets.net/bo/bo-beosound-level.png"
+      },
+      "collectedAttributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beosound level",
+        "powerWatts": 105,
+        "batteryHours": 16,
+        "waterResistance": "IP54"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "B&O luxury acoustic reference Beosound Level",
+      "status": "staged"
+    },
+    {
+      "id": "bo-beosound-2-3rd-gen",
+      "canonicalBrand": "Bang & Olufsen",
+      "displayBrand": "Bang & Olufsen",
+      "productLine": "Beosound",
+      "modelName": "Beosound 2 (3rd Gen)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bang-olufsen.com/en/in/speakers/beosound-2-3rd-gen"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black Anthracite",
+        "Natural Aluminium",
+        "Gold Tone"
+      ],
+      "mediaSource": {
+        "url": "https://images.ctfassets.net/bo/bo-beosound-2-3rd-gen.png"
+      },
+      "collectedAttributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beosound 2 (3rd gen)",
+        "powerWatts": 100,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "B&O luxury acoustic reference Beosound 2 (3rd Gen)",
+      "status": "staged"
+    },
+    {
+      "id": "bose-soundlink-flex",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "SoundLink / Smart Speaker",
+      "modelName": "SoundLink Flex",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/speakers/soundlink-flex"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Triple Black",
+        "White Smoke",
+        "Blue Dusk"
+      ],
+      "mediaSource": {
+        "url": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose-soundlink-flex.png"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "soundlink flex",
+        "powerWatts": 20,
+        "batteryHours": 12,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose SoundLink Flex acoustic portable speaker",
+      "status": "staged"
+    },
+    {
+      "id": "bose-soundlink-max",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "SoundLink / Smart Speaker",
+      "modelName": "SoundLink Max",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/speakers/soundlink-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Triple Black",
+        "White Smoke",
+        "Blue Dusk"
+      ],
+      "mediaSource": {
+        "url": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose-soundlink-max.png"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "soundlink max",
+        "powerWatts": 50,
+        "batteryHours": 20,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose SoundLink Max acoustic portable speaker",
+      "status": "staged"
+    },
+    {
+      "id": "bose-soundlink-revolve-plus-ii",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "SoundLink / Smart Speaker",
+      "modelName": "SoundLink Revolve+ II",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/speakers/soundlink-revolve-plus-ii"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Triple Black",
+        "White Smoke",
+        "Blue Dusk"
+      ],
+      "mediaSource": {
+        "url": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose-soundlink-revolve-plus-ii.png"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "soundlink revolve+ ii",
+        "powerWatts": 30,
+        "batteryHours": 17,
+        "waterResistance": "IP55"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose SoundLink Revolve+ II acoustic portable speaker",
+      "status": "staged"
+    },
+    {
+      "id": "bose-soundlink-micro",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "SoundLink / Smart Speaker",
+      "modelName": "SoundLink Micro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/speakers/soundlink-micro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Triple Black",
+        "White Smoke",
+        "Blue Dusk"
+      ],
+      "mediaSource": {
+        "url": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose-soundlink-micro.png"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "soundlink micro",
+        "powerWatts": 10,
+        "batteryHours": 6,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose SoundLink Micro acoustic portable speaker",
+      "status": "staged"
+    },
+    {
+      "id": "bose-smart-speaker-500",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "SoundLink / Smart Speaker",
+      "modelName": "Smart Speaker 500",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/speakers/smart-speaker-500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Triple Black",
+        "White Smoke",
+        "Blue Dusk"
+      ],
+      "mediaSource": {
+        "url": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose-smart-speaker-500.png"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "smart speaker 500",
+        "powerWatts": 60,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose Smart Speaker 500 acoustic portable speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sony-srs-xb100",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "SRS / ULT",
+      "modelName": "SRS-XB100",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/speakers/wireless-speakers/p/srs-xb100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Forest Gray",
+        "Orange"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/image/sony-srs-xb100.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "srs-xb100",
+        "powerWatts": 5,
+        "batteryHours": 16,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony SRS-XB100 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sony-srs-xe200",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "SRS / ULT",
+      "modelName": "SRS-XE200",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/speakers/wireless-speakers/p/srs-xe200"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Forest Gray",
+        "Orange"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/image/sony-srs-xe200.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "srs-xe200",
+        "powerWatts": 20,
+        "batteryHours": 16,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony SRS-XE200 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sony-srs-xe300",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "SRS / ULT",
+      "modelName": "SRS-XE300",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/speakers/wireless-speakers/p/srs-xe300"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Forest Gray",
+        "Orange"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/image/sony-srs-xe300.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "srs-xe300",
+        "powerWatts": 35,
+        "batteryHours": 24,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony SRS-XE300 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sony-srs-xg300",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "SRS / ULT",
+      "modelName": "SRS-XG300",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/speakers/wireless-speakers/p/srs-xg300"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Forest Gray",
+        "Orange"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/image/sony-srs-xg300.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "srs-xg300",
+        "powerWatts": 50,
+        "batteryHours": 25,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony SRS-XG300 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sony-srs-xv500",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "SRS / ULT",
+      "modelName": "SRS-XV500",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/speakers/wireless-speakers/p/srs-xv500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Forest Gray",
+        "Orange"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/image/sony-srs-xv500.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "srs-xv500",
+        "powerWatts": 90,
+        "batteryHours": 25,
+        "waterResistance": "IPX4"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony SRS-XV500 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ult-field-1",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "SRS / ULT",
+      "modelName": "ULT FIELD 1",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/speakers/wireless-speakers/p/ult-field-1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Forest Gray",
+        "Orange"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/image/sony-ult-field-1.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ult field 1",
+        "powerWatts": 30,
+        "batteryHours": 12,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony ULT FIELD 1 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ult-field-7",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "SRS / ULT",
+      "modelName": "ULT FIELD 7",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/speakers/wireless-speakers/p/ult-field-7"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Forest Gray",
+        "Orange"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/image/sony-ult-field-7.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ult field 7",
+        "powerWatts": 80,
+        "batteryHours": 30,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony ULT FIELD 7 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ult-tower-10",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "SRS / ULT",
+      "modelName": "ULT TOWER 10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/speakers/wireless-speakers/p/ult-tower-10"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Forest Gray",
+        "Orange"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/image/sony-ult-tower-10.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ult tower 10",
+        "powerWatts": 150,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony ULT TOWER 10 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-flip-6",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Flip 6",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/flip-6.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-flip-6.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "flip 6",
+        "powerWatts": 30,
+        "batteryHours": 12,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Flip 6 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-charge-5",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Charge 5",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/charge-5.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-charge-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "charge 5",
+        "powerWatts": 40,
+        "batteryHours": 20,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Charge 5 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-xtreme-4",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Xtreme 4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/xtreme-4.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-xtreme-4.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "xtreme 4",
+        "powerWatts": 100,
+        "batteryHours": 24,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Xtreme 4 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-boombox-3",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Boombox 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/boombox-3.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-boombox-3.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "boombox 3",
+        "powerWatts": 180,
+        "batteryHours": 24,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Boombox 3 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-partybox-stage-320",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "PartyBox Stage 320",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/partybox-stage-320.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-partybox-stage-320.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "partybox stage 320",
+        "powerWatts": 240,
+        "batteryHours": 18,
+        "waterResistance": "IPX4"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound PartyBox Stage 320 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-clip-4",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Clip 4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/clip-4.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-clip-4.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "clip 4",
+        "powerWatts": 5,
+        "batteryHours": 10,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Clip 4 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-go-3",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Go 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/go-3.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-go-3.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "go 3",
+        "powerWatts": 4,
+        "batteryHours": 5,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Go 3 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-authentics-300",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Authentics 300",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/authentics-300.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-authentics-300.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "authentics 300",
+        "powerWatts": 100,
+        "batteryHours": 8,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Authentics 300 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-authentics-500",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Authentics 500",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/authentics-500.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-authentics-500.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "authentics 500",
+        "powerWatts": 270,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Authentics 500 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-pulse-5",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Portable / PartyBox / Authentics",
+      "modelName": "Pulse 5",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/bluetooth-speakers/pulse-5.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Blue",
+        "Squad",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/jbl-pulse-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "pulse 5",
+        "powerWatts": 40,
+        "batteryHours": 12,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL Pro Sound Pulse 5 wireless speaker",
+      "status": "staged"
+    },
+    {
+      "id": "marshall-willen",
+      "canonicalBrand": "Marshall",
+      "displayBrand": "Marshall",
+      "productLine": "Portable / Home",
+      "modelName": "Willen",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marshallheadphones.com/in/en/willen.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black and Brass",
+        "Cream",
+        "Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.marshallheadphones.com/media/catalog/product/marshall-willen.png"
+      },
+      "collectedAttributes": {
+        "brand": "marshall",
+        "modelName": "willen",
+        "powerWatts": 10,
+        "batteryHours": 15,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marshall signature sound Willen speaker",
+      "status": "staged"
+    },
+    {
+      "id": "marshall-emberton-ii",
+      "canonicalBrand": "Marshall",
+      "displayBrand": "Marshall",
+      "productLine": "Portable / Home",
+      "modelName": "Emberton II",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marshallheadphones.com/in/en/emberton-ii.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black and Brass",
+        "Cream",
+        "Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.marshallheadphones.com/media/catalog/product/marshall-emberton-ii.png"
+      },
+      "collectedAttributes": {
+        "brand": "marshall",
+        "modelName": "emberton ii",
+        "powerWatts": 20,
+        "batteryHours": 30,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marshall signature sound Emberton II speaker",
+      "status": "staged"
+    },
+    {
+      "id": "marshall-middleton",
+      "canonicalBrand": "Marshall",
+      "displayBrand": "Marshall",
+      "productLine": "Portable / Home",
+      "modelName": "Middleton",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marshallheadphones.com/in/en/middleton.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black and Brass",
+        "Cream",
+        "Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.marshallheadphones.com/media/catalog/product/marshall-middleton.png"
+      },
+      "collectedAttributes": {
+        "brand": "marshall",
+        "modelName": "middleton",
+        "powerWatts": 60,
+        "batteryHours": 20,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marshall signature sound Middleton speaker",
+      "status": "staged"
+    },
+    {
+      "id": "marshall-kilburn-ii",
+      "canonicalBrand": "Marshall",
+      "displayBrand": "Marshall",
+      "productLine": "Portable / Home",
+      "modelName": "Kilburn II",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marshallheadphones.com/in/en/kilburn-ii.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black and Brass",
+        "Cream",
+        "Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.marshallheadphones.com/media/catalog/product/marshall-kilburn-ii.png"
+      },
+      "collectedAttributes": {
+        "brand": "marshall",
+        "modelName": "kilburn ii",
+        "powerWatts": 36,
+        "batteryHours": 20,
+        "waterResistance": "IPX2"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marshall signature sound Kilburn II speaker",
+      "status": "staged"
+    },
+    {
+      "id": "marshall-acton-iii",
+      "canonicalBrand": "Marshall",
+      "displayBrand": "Marshall",
+      "productLine": "Portable / Home",
+      "modelName": "Acton III",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marshallheadphones.com/in/en/acton-iii.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black and Brass",
+        "Cream",
+        "Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.marshallheadphones.com/media/catalog/product/marshall-acton-iii.png"
+      },
+      "collectedAttributes": {
+        "brand": "marshall",
+        "modelName": "acton iii",
+        "powerWatts": 60,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marshall signature sound Acton III speaker",
+      "status": "staged"
+    },
+    {
+      "id": "marshall-stanmore-iii",
+      "canonicalBrand": "Marshall",
+      "displayBrand": "Marshall",
+      "productLine": "Portable / Home",
+      "modelName": "Stanmore III",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marshallheadphones.com/in/en/stanmore-iii.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black and Brass",
+        "Cream",
+        "Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.marshallheadphones.com/media/catalog/product/marshall-stanmore-iii.png"
+      },
+      "collectedAttributes": {
+        "brand": "marshall",
+        "modelName": "stanmore iii",
+        "powerWatts": 80,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marshall signature sound Stanmore III speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-roam-2",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Roam / Move / Era",
+      "modelName": "Roam 2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/roam-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-roam-2.png"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "roam 2",
+        "powerWatts": 15,
+        "batteryHours": 10,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos multi-room wireless speaker Roam 2",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-move-2",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Roam / Move / Era",
+      "modelName": "Move 2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/move-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-move-2.png"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "move 2",
+        "powerWatts": 45,
+        "batteryHours": 24,
+        "waterResistance": "IP56"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos multi-room wireless speaker Move 2",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-era-100",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Roam / Move / Era",
+      "modelName": "Era 100",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/era-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-era-100.png"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "era 100",
+        "powerWatts": 40,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos multi-room wireless speaker Era 100",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-era-300",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Roam / Move / Era",
+      "modelName": "Era 300",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/era-300"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-era-300.png"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "era 300",
+        "powerWatts": 85,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos multi-room wireless speaker Era 300",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-five",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Roam / Move / Era",
+      "modelName": "Five",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/five"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-five.png"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "five",
+        "powerWatts": 120,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos multi-room wireless speaker Five",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-sub-mini",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Roam / Move / Era",
+      "modelName": "Sub Mini",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/sub-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-sub-mini.png"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "sub mini",
+        "powerWatts": 100,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos multi-room wireless speaker Sub Mini",
+      "status": "staged"
+    },
+    {
+      "id": "hk-onyx-studio-8",
+      "canonicalBrand": "Harman Kardon",
+      "displayBrand": "Harman Kardon",
+      "productLine": "Onyx / Aura / SoundSticks",
+      "modelName": "Onyx Studio 8",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.harmankardon.in/wireless-speakers/onyx-studio-8.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Grey",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.harmankardon.in/images/products/hk-onyx-studio-8.png"
+      },
+      "collectedAttributes": {
+        "brand": "harman kardon",
+        "modelName": "onyx studio 8",
+        "powerWatts": 50,
+        "batteryHours": 8,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Harman Kardon iconic acoustic design Onyx Studio 8",
+      "status": "staged"
+    },
+    {
+      "id": "hk-aura-studio-4",
+      "canonicalBrand": "Harman Kardon",
+      "displayBrand": "Harman Kardon",
+      "productLine": "Onyx / Aura / SoundSticks",
+      "modelName": "Aura Studio 4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.harmankardon.in/wireless-speakers/aura-studio-4.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Grey",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.harmankardon.in/images/products/hk-aura-studio-4.png"
+      },
+      "collectedAttributes": {
+        "brand": "harman kardon",
+        "modelName": "aura studio 4",
+        "powerWatts": 130,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Harman Kardon iconic acoustic design Aura Studio 4",
+      "status": "staged"
+    },
+    {
+      "id": "hk-go-plus-play-3",
+      "canonicalBrand": "Harman Kardon",
+      "displayBrand": "Harman Kardon",
+      "productLine": "Onyx / Aura / SoundSticks",
+      "modelName": "Go + Play 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.harmankardon.in/wireless-speakers/go-plus-play-3.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Grey",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.harmankardon.in/images/products/hk-go-plus-play-3.png"
+      },
+      "collectedAttributes": {
+        "brand": "harman kardon",
+        "modelName": "go + play 3",
+        "powerWatts": 160,
+        "batteryHours": 8,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Harman Kardon iconic acoustic design Go + Play 3",
+      "status": "staged"
+    },
+    {
+      "id": "hk-soundsticks-4",
+      "canonicalBrand": "Harman Kardon",
+      "displayBrand": "Harman Kardon",
+      "productLine": "Onyx / Aura / SoundSticks",
+      "modelName": "SoundSticks 4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.harmankardon.in/wireless-speakers/soundsticks-4.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Grey",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.harmankardon.in/images/products/hk-soundsticks-4.png"
+      },
+      "collectedAttributes": {
+        "brand": "harman kardon",
+        "modelName": "soundsticks 4",
+        "powerWatts": 140,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Harman Kardon iconic acoustic design SoundSticks 4",
+      "status": "staged"
+    },
+    {
+      "id": "hk-luna",
+      "canonicalBrand": "Harman Kardon",
+      "displayBrand": "Harman Kardon",
+      "productLine": "Onyx / Aura / SoundSticks",
+      "modelName": "Luna",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.harmankardon.in/wireless-speakers/luna.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Grey",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.harmankardon.in/images/products/hk-luna.png"
+      },
+      "collectedAttributes": {
+        "brand": "harman kardon",
+        "modelName": "luna",
+        "powerWatts": 40,
+        "batteryHours": 12,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Harman Kardon iconic acoustic design Luna",
+      "status": "staged"
+    },
+    {
+      "id": "edifier-d12",
+      "canonicalBrand": "Edifier",
+      "displayBrand": "Edifier",
+      "productLine": "Bookshelf / Tabletop",
+      "modelName": "D12",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edifier.com/product-d12.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Wood Grain",
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.edifier.com/images/products/edifier-d12.png"
+      },
+      "collectedAttributes": {
+        "brand": "edifier",
+        "modelName": "d12",
+        "powerWatts": 70,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Edifier active bookshelf speaker D12",
+      "status": "staged"
+    },
+    {
+      "id": "edifier-r1280dbs",
+      "canonicalBrand": "Edifier",
+      "displayBrand": "Edifier",
+      "productLine": "Bookshelf / Tabletop",
+      "modelName": "R1280DBs",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edifier.com/product-r1280dbs.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Wood Grain",
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.edifier.com/images/products/edifier-r1280dbs.png"
+      },
+      "collectedAttributes": {
+        "brand": "edifier",
+        "modelName": "r1280dbs",
+        "powerWatts": 42,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Edifier active bookshelf speaker R1280DBs",
+      "status": "staged"
+    },
+    {
+      "id": "edifier-s880db",
+      "canonicalBrand": "Edifier",
+      "displayBrand": "Edifier",
+      "productLine": "Bookshelf / Tabletop",
+      "modelName": "S880DB",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edifier.com/product-s880db.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Wood Grain",
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.edifier.com/images/products/edifier-s880db.png"
+      },
+      "collectedAttributes": {
+        "brand": "edifier",
+        "modelName": "s880db",
+        "powerWatts": 88,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Edifier active bookshelf speaker S880DB",
+      "status": "staged"
+    },
+    {
+      "id": "edifier-ms50a",
+      "canonicalBrand": "Edifier",
+      "displayBrand": "Edifier",
+      "productLine": "Bookshelf / Tabletop",
+      "modelName": "MS50A",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edifier.com/product-ms50a.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Wood Grain",
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.edifier.com/images/products/edifier-ms50a.png"
+      },
+      "collectedAttributes": {
+        "brand": "edifier",
+        "modelName": "ms50a",
+        "powerWatts": 40,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Edifier active bookshelf speaker MS50A",
+      "status": "staged"
+    },
+    {
+      "id": "edifier-mp230",
+      "canonicalBrand": "Edifier",
+      "displayBrand": "Edifier",
+      "productLine": "Bookshelf / Tabletop",
+      "modelName": "MP230",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edifier.com/product-mp230.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Wood Grain",
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.edifier.com/images/products/edifier-mp230.png"
+      },
+      "collectedAttributes": {
+        "brand": "edifier",
+        "modelName": "mp230",
+        "powerWatts": 20,
+        "batteryHours": 9,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Edifier active bookshelf speaker MP230",
+      "status": "staged"
+    },
+    {
+      "id": "edifier-qd35",
+      "canonicalBrand": "Edifier",
+      "displayBrand": "Edifier",
+      "productLine": "Bookshelf / Tabletop",
+      "modelName": "QD35 Tabletop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edifier.com/product-qd35.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Wood Grain",
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.edifier.com/images/products/edifier-qd35.png"
+      },
+      "collectedAttributes": {
+        "brand": "edifier",
+        "modelName": "qd35 tabletop",
+        "powerWatts": 40,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Edifier active bookshelf speaker QD35 Tabletop",
+      "status": "staged"
+    },
+    {
+      "id": "audioengine-a2-plus-wireless",
+      "canonicalBrand": "Audioengine",
+      "displayBrand": "Audioengine",
+      "productLine": "A-Series / HD-Series",
+      "modelName": "A2+ Wireless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://audioengine.com/shop/wirelessspeakers/a2-plus-wireless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin Black",
+        "Hi-Gloss White",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://audioengine.com/images/products/audioengine-a2-plus-wireless.png"
+      },
+      "collectedAttributes": {
+        "brand": "audioengine",
+        "modelName": "a2+ wireless",
+        "powerWatts": 60,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Audioengine precision studio speaker A2+ Wireless",
+      "status": "staged"
+    },
+    {
+      "id": "audioengine-a5-plus-wireless",
+      "canonicalBrand": "Audioengine",
+      "displayBrand": "Audioengine",
+      "productLine": "A-Series / HD-Series",
+      "modelName": "A5+ Wireless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://audioengine.com/shop/wirelessspeakers/a5-plus-wireless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin Black",
+        "Hi-Gloss White",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://audioengine.com/images/products/audioengine-a5-plus-wireless.png"
+      },
+      "collectedAttributes": {
+        "brand": "audioengine",
+        "modelName": "a5+ wireless",
+        "powerWatts": 150,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Audioengine precision studio speaker A5+ Wireless",
+      "status": "staged"
+    },
+    {
+      "id": "audioengine-hd3-wireless",
+      "canonicalBrand": "Audioengine",
+      "displayBrand": "Audioengine",
+      "productLine": "A-Series / HD-Series",
+      "modelName": "HD3 Wireless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://audioengine.com/shop/wirelessspeakers/hd3-wireless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin Black",
+        "Hi-Gloss White",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://audioengine.com/images/products/audioengine-hd3-wireless.png"
+      },
+      "collectedAttributes": {
+        "brand": "audioengine",
+        "modelName": "hd3 wireless",
+        "powerWatts": 60,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Audioengine precision studio speaker HD3 Wireless",
+      "status": "staged"
+    },
+    {
+      "id": "audioengine-b2-wireless",
+      "canonicalBrand": "Audioengine",
+      "displayBrand": "Audioengine",
+      "productLine": "A-Series / HD-Series",
+      "modelName": "B2 Wireless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://audioengine.com/shop/wirelessspeakers/b2-wireless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin Black",
+        "Hi-Gloss White",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://audioengine.com/images/products/audioengine-b2-wireless.png"
+      },
+      "collectedAttributes": {
+        "brand": "audioengine",
+        "modelName": "b2 wireless",
+        "powerWatts": 60,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Audioengine precision studio speaker B2 Wireless",
+      "status": "staged"
+    },
+    {
+      "id": "bw-zeppelin",
+      "canonicalBrand": "Bowers & Wilkins",
+      "displayBrand": "Bowers & Wilkins",
+      "productLine": "Zeppelin / Formation",
+      "modelName": "Zeppelin",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bowerswilkins.com/en-us/product/wireless-speakers/zeppelin"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Grey",
+        "Pearl Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.bowerswilkins.com/images/bw-zeppelin.png"
+      },
+      "collectedAttributes": {
+        "brand": "bowers & wilkins",
+        "modelName": "zeppelin",
+        "powerWatts": 240,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "B&W audiophile wireless speaker Zeppelin",
+      "status": "staged"
+    },
+    {
+      "id": "bw-formation-wedge",
+      "canonicalBrand": "Bowers & Wilkins",
+      "displayBrand": "Bowers & Wilkins",
+      "productLine": "Zeppelin / Formation",
+      "modelName": "Formation Wedge",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bowerswilkins.com/en-us/product/wireless-speakers/formation-wedge"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Grey",
+        "Pearl Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.bowerswilkins.com/images/bw-formation-wedge.png"
+      },
+      "collectedAttributes": {
+        "brand": "bowers & wilkins",
+        "modelName": "formation wedge",
+        "powerWatts": 240,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "B&W audiophile wireless speaker Formation Wedge",
+      "status": "staged"
+    },
+    {
+      "id": "bw-formation-flex",
+      "canonicalBrand": "Bowers & Wilkins",
+      "displayBrand": "Bowers & Wilkins",
+      "productLine": "Zeppelin / Formation",
+      "modelName": "Formation Flex",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bowerswilkins.com/en-us/product/wireless-speakers/formation-flex"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Grey",
+        "Pearl Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.bowerswilkins.com/images/bw-formation-flex.png"
+      },
+      "collectedAttributes": {
+        "brand": "bowers & wilkins",
+        "modelName": "formation flex",
+        "powerWatts": 100,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "B&W audiophile wireless speaker Formation Flex",
+      "status": "staged"
+    },
+    {
+      "id": "kef-lsx-ii-lt",
+      "canonicalBrand": "KEF",
+      "displayBrand": "KEF",
+      "productLine": "LS Wireless / Muo",
+      "modelName": "LSX II LT",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.kef.com/products/lsx-ii-lt"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Mineral White",
+        "Stone White"
+      ],
+      "mediaSource": {
+        "url": "https://us.kef.com/images/kef-lsx-ii-lt.png"
+      },
+      "collectedAttributes": {
+        "brand": "kef",
+        "modelName": "lsx ii lt",
+        "powerWatts": 200,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "KEF Uni-Q acoustic driver speaker LSX II LT",
+      "status": "staged"
+    },
+    {
+      "id": "kef-ls50-wireless-ii",
+      "canonicalBrand": "KEF",
+      "displayBrand": "KEF",
+      "productLine": "LS Wireless / Muo",
+      "modelName": "LS50 Wireless II",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.kef.com/products/ls50-wireless-ii"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Mineral White",
+        "Stone White"
+      ],
+      "mediaSource": {
+        "url": "https://us.kef.com/images/kef-ls50-wireless-ii.png"
+      },
+      "collectedAttributes": {
+        "brand": "kef",
+        "modelName": "ls50 wireless ii",
+        "powerWatts": 760,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "KEF Uni-Q acoustic driver speaker LS50 Wireless II",
+      "status": "staged"
+    },
+    {
+      "id": "kef-muo-portable",
+      "canonicalBrand": "KEF",
+      "displayBrand": "KEF",
+      "productLine": "LS Wireless / Muo",
+      "modelName": "Muo Portable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.kef.com/products/muo-portable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Mineral White",
+        "Stone White"
+      ],
+      "mediaSource": {
+        "url": "https://us.kef.com/images/kef-muo-portable.png"
+      },
+      "collectedAttributes": {
+        "brand": "kef",
+        "modelName": "muo portable",
+        "powerWatts": 20,
+        "batteryHours": 12,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "KEF Uni-Q acoustic driver speaker Muo Portable",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-the-one-plus",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Heritage Wireless / Music City",
+      "modelName": "The One Plus",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/the-one-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ebony",
+        "Matte Black",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/klipsch-the-one-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "the one plus",
+        "powerWatts": 60,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch tractrix horn audio The One Plus",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-the-three-plus",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Heritage Wireless / Music City",
+      "modelName": "The Three Plus",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/the-three-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ebony",
+        "Matte Black",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/klipsch-the-three-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "the three plus",
+        "powerWatts": 120,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch tractrix horn audio The Three Plus",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-heritage-groove",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Heritage Wireless / Music City",
+      "modelName": "Heritage Groove",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/heritage-groove"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ebony",
+        "Matte Black",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/klipsch-heritage-groove.png"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "heritage groove",
+        "powerWatts": 20,
+        "batteryHours": 8,
+        "waterResistance": "Indoor"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch tractrix horn audio Heritage Groove",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-nashville",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Heritage Wireless / Music City",
+      "modelName": "Nashville",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/nashville"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ebony",
+        "Matte Black",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/klipsch-nashville.png"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "nashville",
+        "powerWatts": 20,
+        "batteryHours": 24,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch tractrix horn audio Nashville",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-detroit",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Heritage Wireless / Music City",
+      "modelName": "Detroit",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/detroit"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ebony",
+        "Matte Black",
+        "Walnut"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/klipsch-detroit.png"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "detroit",
+        "powerWatts": 30,
+        "batteryHours": 20,
+        "waterResistance": "IP67"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch tractrix horn audio Detroit",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Bang & Olufsen",
+      "leafKey": "speakers",
+      "reason": "Bang & Olufsen maintains 5 luxury portable and home wireless speakers in active production.",
+      "officialSourceUrl": "https://www.bang-olufsen.com/en/in/speakers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Beosound A1 (2nd Gen)",
+        "Beosound Explore",
+        "Beolit 20",
+        "Beosound Level",
+        "Beosound 2 (3rd Gen)"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Bose",
+      "leafKey": "speakers",
+      "reason": "Bose portable & smart speaker lineup comprises 5 active models.",
+      "officialSourceUrl": "https://www.bose.com/c/portable-speakers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "SoundLink Flex",
+        "SoundLink Max",
+        "SoundLink Revolve+ II",
+        "SoundLink Micro",
+        "Smart Speaker 500"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Marshall",
+      "leafKey": "speakers",
+      "reason": "Marshall produces 6 distinct portable and home Bluetooth speaker chassis.",
+      "officialSourceUrl": "https://www.marshallheadphones.com/in/en/speakers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Willen",
+        "Emberton II",
+        "Middleton",
+        "Kilburn II",
+        "Acton III",
+        "Stanmore III"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Sonos",
+      "leafKey": "speakers",
+      "reason": "Sonos portfolio of standalone wireless music speakers consists of 6 active models.",
+      "officialSourceUrl": "https://www.sonos.com/en-us/shop/wireless-speakers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Roam 2",
+        "Move 2",
+        "Era 100",
+        "Era 300",
+        "Five",
+        "Sub Mini"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Harman Kardon",
+      "leafKey": "speakers",
+      "reason": "Harman Kardon produces 5 iconic wireless living room and portable speakers.",
+      "officialSourceUrl": "https://www.harmankardon.in/wireless-speakers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Onyx Studio 8",
+        "Aura Studio 4",
+        "Go + Play 3",
+        "SoundSticks 4",
+        "Luna"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Edifier",
+      "leafKey": "speakers",
+      "reason": "Edifier wireless premium bookshelf and tabletop speakers feature 6 key models.",
+      "officialSourceUrl": "https://www.edifier.com/category-speakers.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "D12",
+        "R1280DBs",
+        "S880DB",
+        "MS50A",
+        "MP230",
+        "QD35 Tabletop"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Audioengine",
+      "leafKey": "speakers",
+      "reason": "Audioengine manufactures 4 dedicated wireless home audio models.",
+      "officialSourceUrl": "https://audioengine.com/shop/wirelessspeakers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "A2+ Wireless",
+        "A5+ Wireless",
+        "HD3 Wireless",
+        "B2 Wireless"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Bowers & Wilkins",
+      "leafKey": "speakers",
+      "reason": "Bowers & Wilkins produces 3 wireless hi-fi speakers in the Formation and Zeppelin series.",
+      "officialSourceUrl": "https://www.bowerswilkins.com/en-us/category/wireless-speakers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Zeppelin",
+        "Formation Wedge",
+        "Formation Flex"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "KEF",
+      "leafKey": "speakers",
+      "reason": "KEF produces 3 wireless active speaker systems.",
+      "officialSourceUrl": "https://us.kef.com/collections/wireless-hi-fi-speakers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "LSX II LT",
+        "LS50 Wireless II",
+        "Muo Portable"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Klipsch",
+      "leafKey": "speakers",
+      "reason": "Klipsch heritage and portable wireless lineup consists of 5 models.",
+      "officialSourceUrl": "https://www.klipsch.com/heritage-wireless",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "The One Plus",
+        "The Three Plus",
+        "Heritage Groove",
+        "Nashville",
+        "Detroit"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Sony",
+      "leafKey": "speakers",
+      "reason": "Sony produces 8 active portable wireless and party speakers in the XB, XE, XG, and ULT series.",
+      "officialSourceUrl": "https://electronics.sony.com/audio/speakers/wireless-speakers/c/all-wireless-speakers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "SRS-XB100",
+        "SRS-XE200",
+        "SRS-XE300",
+        "SRS-XG300",
+        "SRS-XV500",
+        "ULT FIELD 1",
+        "ULT FIELD 7",
+        "ULT TOWER 10"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

@@ -1,0 +1,3541 @@
+{
+  "schemaVersion": "catalog-manifest-v2",
+  "id": "wall-chargers-core-2026-10-11-v2",
+  "reviewedBy": "operator-census-compiler:wall-chargers",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "www.apple.com",
+    "www.samsung.com",
+    "store.google.com",
+    "www.oneplus.in",
+    "ambraneindia.com",
+    "www.portronics.com",
+    "www.anker.com",
+    "www.ugreen.com",
+    "www.belkin.com",
+    "www.stuffcool.com",
+    "www.mi.com",
+    "www.baseus.com"
+  ],
+  "products": [
+    {
+      "id": "PROD-WALL-CHARGERS-APPLE-APPLE-20W-USB-C-POWER-ADAPTER",
+      "name": "Apple Apple 20W USB-C Power Adapter",
+      "category": "chargers",
+      "description": "Apple Apple 20W USB-C Power Adapter (2020). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: Apple 20W USB-C Power Adapter",
+        "Line: Power Adapter",
+        "Generation / Release: 2020",
+        "totalWatts: 20",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/3A, 9V/2.22A",
+        "compatibleEcosystems: iPhone, iPad, Apple Watch, AirPods"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "India Pin",
+      "source": "https://www.apple.com/in/shop/product/MHJE3HN/A/20w-usb-c-power-adapter",
+      "familyId": "apple:apple-20w-usb-c-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "apple 20w usb-c power adapter",
+        "totalWatts": 20,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/2.22A",
+        "compatibleEcosystems": "iPhone, iPad, Apple Watch, AirPods"
+      },
+      "media": {
+        "url": "https://www.apple.com/images/products/apple-20w-usb-c-power-adapter.jpg",
+        "source": "https://www.apple.com/in/shop/product/MHJE3HN/A/20w-usb-c-power-adapter",
+        "alt": "Apple Apple 20W USB-C Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Apple 20W USB-C Power Adapter",
+      "skuVariant": "India Pin",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 20,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-APPLE-APPLE-30W-USB-C-POWER-ADAPTER",
+      "name": "Apple Apple 30W USB-C Power Adapter",
+      "category": "chargers",
+      "description": "Apple Apple 30W USB-C Power Adapter (2021). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: Apple 30W USB-C Power Adapter",
+        "Line: Power Adapter",
+        "Generation / Release: 2021",
+        "totalWatts: 30",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/2A, 20V/1.5A",
+        "compatibleEcosystems: MacBook Air 13, iPad Pro, iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.apple.com/in/shop/product/MY1W2HN/A/30w-usb-c-power-adapter",
+      "familyId": "apple:apple-30w-usb-c-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "apple 30w usb-c power adapter",
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A",
+        "compatibleEcosystems": "MacBook Air 13, iPad Pro, iPhone"
+      },
+      "media": {
+        "url": "https://www.apple.com/images/products/apple-30w-usb-c-power-adapter.jpg",
+        "source": "https://www.apple.com/in/shop/product/MY1W2HN/A/30w-usb-c-power-adapter",
+        "alt": "Apple Apple 30W USB-C Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Apple 30W USB-C Power Adapter",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 30,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-APPLE-APPLE-35W-DUAL-COMPACT-ADAPTER",
+      "name": "Apple Apple 35W Dual USB-C Port Compact Power Adapter",
+      "category": "chargers",
+      "description": "Apple Apple 35W Dual USB-C Port Compact Power Adapter (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 3999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: Apple 35W Dual USB-C Port Compact Power Adapter",
+        "Line: Power Adapter",
+        "Generation / Release: 2022",
+        "totalWatts: 35",
+        "connectorType: 2x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: Dynamic power sharing (up to 35W single, 27W+7.5W dual)",
+        "compatibleEcosystems: MacBook Air, iPhone, Apple Watch"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White Dual USB-C",
+      "source": "https://www.apple.com/in/shop/product/MNWM3HN/A/35w-dual-usb-c-port-power-adapter",
+      "familyId": "apple:apple-35w-dual-compact-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "apple 35w dual usb-c port compact power adapter",
+        "totalWatts": 35,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "Dynamic power sharing (up to 35W single, 27W+7.5W dual)",
+        "compatibleEcosystems": "MacBook Air, iPhone, Apple Watch"
+      },
+      "media": {
+        "url": "https://www.apple.com/images/products/apple-35w-dual-compact-adapter.jpg",
+        "source": "https://www.apple.com/in/shop/product/MNWM3HN/A/35w-dual-usb-c-port-power-adapter",
+        "alt": "Apple Apple 35W Dual USB-C Port Compact Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Apple 35W Dual USB-C Port Compact Power Adapter",
+      "skuVariant": "White Dual USB-C",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 35,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-APPLE-APPLE-35W-DUAL-POWER-ADAPTER",
+      "name": "Apple Apple 35W Dual USB-C Port Power Adapter",
+      "category": "chargers",
+      "description": "Apple Apple 35W Dual USB-C Port Power Adapter (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 3999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: Apple 35W Dual USB-C Port Power Adapter",
+        "Line: Power Adapter",
+        "Generation / Release: 2022",
+        "totalWatts: 35",
+        "connectorType: 2x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/2.33A, 20V/1.75A",
+        "compatibleEcosystems: MacBook Air, iPad, iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White with Removable Duckhead",
+      "source": "https://www.apple.com/in/shop/product/MNWP3HN/A/35w-dual-usb-c-port-power-adapter",
+      "familyId": "apple:apple-35w-dual-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "apple 35w dual usb-c port power adapter",
+        "totalWatts": 35,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2.33A, 20V/1.75A",
+        "compatibleEcosystems": "MacBook Air, iPad, iPhone"
+      },
+      "media": {
+        "url": "https://www.apple.com/images/products/apple-35w-dual-power-adapter.jpg",
+        "source": "https://www.apple.com/in/shop/product/MNWP3HN/A/35w-dual-usb-c-port-power-adapter",
+        "alt": "Apple Apple 35W Dual USB-C Port Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Apple 35W Dual USB-C Port Power Adapter",
+      "skuVariant": "White with Removable Duckhead",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 35,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-APPLE-APPLE-70W-USB-C-POWER-ADAPTER",
+      "name": "Apple Apple 70W USB-C Power Adapter",
+      "category": "chargers",
+      "description": "Apple Apple 70W USB-C Power Adapter (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: Apple 70W USB-C Power Adapter",
+        "Line: Power Adapter",
+        "Generation / Release: 2023",
+        "totalWatts: 70",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/3A, 20.6V/3.4A",
+        "compatibleEcosystems: MacBook Air 15, MacBook Pro 14 (M3)"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.apple.com/in/shop/product/MQLN3HN/A/70w-usb-c-power-adapter",
+      "familyId": "apple:apple-70w-usb-c-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "apple 70w usb-c power adapter",
+        "totalWatts": 70,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20.6V/3.4A",
+        "compatibleEcosystems": "MacBook Air 15, MacBook Pro 14 (M3)"
+      },
+      "media": {
+        "url": "https://www.apple.com/images/products/apple-70w-usb-c-power-adapter.jpg",
+        "source": "https://www.apple.com/in/shop/product/MQLN3HN/A/70w-usb-c-power-adapter",
+        "alt": "Apple Apple 70W USB-C Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Apple 70W USB-C Power Adapter",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 70,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-APPLE-APPLE-140W-USB-C-POWER-ADAPTER",
+      "name": "Apple Apple 140W USB-C Power Adapter",
+      "category": "chargers",
+      "description": "Apple Apple 140W USB-C Power Adapter (2021). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: Apple 140W USB-C Power Adapter",
+        "Line: Power Adapter",
+        "Generation / Release: 2021",
+        "totalWatts: 140",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.1 (EPR 28V)",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/5A, 20.5V/5A, 28V/5A",
+        "compatibleEcosystems: MacBook Pro 16, MagSafe 3"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.apple.com/in/shop/product/MLYU3HN/A/140w-usb-c-power-adapter",
+      "familyId": "apple:apple-140w-usb-c-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "apple 140w usb-c power adapter",
+        "totalWatts": 140,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.1 (EPR 28V)",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/5A, 20.5V/5A, 28V/5A",
+        "compatibleEcosystems": "MacBook Pro 16, MagSafe 3"
+      },
+      "media": {
+        "url": "https://www.apple.com/images/products/apple-140w-usb-c-power-adapter.jpg",
+        "source": "https://www.apple.com/in/shop/product/MLYU3HN/A/140w-usb-c-power-adapter",
+        "alt": "Apple Apple 140W USB-C Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Apple 140W USB-C Power Adapter",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 140,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-SAMSUNG-SAMSUNG-25W-POWER-ADAPTER-EP-T2510N",
+      "name": "Samsung Samsung 25W Power Adapter (EP-T2510N)",
+      "category": "chargers",
+      "description": "Samsung Samsung 25W Power Adapter (EP-T2510N) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Samsung 25W Power Adapter (EP-T2510N)",
+        "Line: Super Fast Charging",
+        "Generation / Release: 2023",
+        "totalWatts: 25",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: true",
+        "voltageProfiles: PDO: 5V/3A, 9V/2.77A | PPS: 3.3-5.9V/3A, 3.3-11.0V/2.25A",
+        "compatibleEcosystems: Galaxy S24, S23, A55, iPhone, Pixel"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.samsung.com/in/mobile-accessories/25w-power-adapter-black-ep-t2510nbeginu/",
+      "familyId": "samsung:samsung-25w-power-adapter-ep-t2510n",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "samsung 25w power adapter (ep-t2510n)",
+        "totalWatts": 25,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "PDO: 5V/3A, 9V/2.77A | PPS: 3.3-5.9V/3A, 3.3-11.0V/2.25A",
+        "compatibleEcosystems": "Galaxy S24, S23, A55, iPhone, Pixel"
+      },
+      "media": {
+        "url": "https://www.samsung.com/images/products/samsung-25w-power-adapter-ep-t2510n.jpg",
+        "source": "https://www.samsung.com/in/mobile-accessories/25w-power-adapter-black-ep-t2510nbeginu/",
+        "alt": "Samsung Samsung 25W Power Adapter (EP-T2510N) official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Samsung 25W Power Adapter (EP-T2510N)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 25,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-SAMSUNG-SAMSUNG-45W-POWER-ADAPTER-EP-T4511X",
+      "name": "Samsung Samsung 45W Power Adapter (EP-T4511X)",
+      "category": "chargers",
+      "description": "Samsung Samsung 45W Power Adapter (EP-T4511X) (2024). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 3999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Samsung 45W Power Adapter (EP-T4511X)",
+        "Line: Super Fast Charging",
+        "Generation / Release: 2024",
+        "totalWatts: 45",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: true",
+        "voltageProfiles: PDO: 5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: 3.3-20.0V/2.25A (45W)",
+        "compatibleEcosystems: Galaxy S24 Ultra, Tab S9 Ultra, Book4, Steam Deck"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.samsung.com/in/mobile-accessories/45w-power-adapter-black-ep-t4511xbeginu/",
+      "familyId": "samsung:samsung-45w-power-adapter-ep-t4511x",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "samsung 45w power adapter (ep-t4511x)",
+        "totalWatts": 45,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "PDO: 5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: 3.3-20.0V/2.25A (45W)",
+        "compatibleEcosystems": "Galaxy S24 Ultra, Tab S9 Ultra, Book4, Steam Deck"
+      },
+      "media": {
+        "url": "https://www.samsung.com/images/products/samsung-45w-power-adapter-ep-t4511x.jpg",
+        "source": "https://www.samsung.com/in/mobile-accessories/45w-power-adapter-black-ep-t4511xbeginu/",
+        "alt": "Samsung Samsung 45W Power Adapter (EP-T4511X) official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Samsung 45W Power Adapter (EP-T4511X)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 45,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-SAMSUNG-SAMSUNG-65W-TRIO-ADAPTER-EP-T6530N",
+      "name": "Samsung Samsung 65W Trio Power Adapter (EP-T6530N)",
+      "category": "chargers",
+      "description": "Samsung Samsung 65W Trio Power Adapter (EP-T6530N) (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Samsung 65W Trio Power Adapter (EP-T6530N)",
+        "Line: Power Adapter Trio",
+        "Generation / Release: 2022",
+        "totalWatts: 65",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: true",
+        "voltageProfiles: USB-C1: up to 65W, USB-C2: up to 25W, USB-A: up to 15W",
+        "compatibleEcosystems: Galaxy Book, Galaxy Phones, Galaxy Watch"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.samsung.com/in/mobile-accessories/power-adapter-trio-65w-black-ep-t6530nbeginu/",
+      "familyId": "samsung:samsung-65w-trio-adapter-ep-t6530n",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "samsung 65w trio power adapter (ep-t6530n)",
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1: up to 65W, USB-C2: up to 25W, USB-A: up to 15W",
+        "compatibleEcosystems": "Galaxy Book, Galaxy Phones, Galaxy Watch"
+      },
+      "media": {
+        "url": "https://www.samsung.com/images/products/samsung-65w-trio-adapter-ep-t6530n.jpg",
+        "source": "https://www.samsung.com/in/mobile-accessories/power-adapter-trio-65w-black-ep-t6530nbeginu/",
+        "alt": "Samsung Samsung 65W Trio Power Adapter (EP-T6530N) official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Samsung 65W Trio Power Adapter (EP-T6530N)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-SAMSUNG-SAMSUNG-50W-DUAL-PORT-EP-T5020",
+      "name": "Samsung Samsung 50W Dual Port Charger (EP-T5020)",
+      "category": "chargers",
+      "description": "Samsung Samsung 50W Dual Port Charger (EP-T5020) (2024). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Samsung 50W Dual Port Charger (EP-T5020)",
+        "Line: Super Fast Charging",
+        "Generation / Release: 2024",
+        "totalWatts: 50",
+        "connectorType: 2x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: true",
+        "voltageProfiles: C1: 50W max (or 25W+25W dual simultaneous)",
+        "compatibleEcosystems: Galaxy Phones, Galaxy Tablets"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.samsung.com/in/mobile-accessories/50w-power-adapter-black-ep-t5020nbeginu/",
+      "familyId": "samsung:samsung-50w-dual-port-ep-t5020",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "samsung 50w dual port charger (ep-t5020)",
+        "totalWatts": 50,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "C1: 50W max (or 25W+25W dual simultaneous)",
+        "compatibleEcosystems": "Galaxy Phones, Galaxy Tablets"
+      },
+      "media": {
+        "url": "https://www.samsung.com/images/products/samsung-50w-dual-port-ep-t5020.jpg",
+        "source": "https://www.samsung.com/in/mobile-accessories/50w-power-adapter-black-ep-t5020nbeginu/",
+        "alt": "Samsung Samsung 50W Dual Port Charger (EP-T5020) official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Samsung 50W Dual Port Charger (EP-T5020)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 50,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-SAMSUNG-SAMSUNG-15W-POWER-ADAPTER-EP-T1510N",
+      "name": "Samsung Samsung 15W Power Adapter (EP-T1510N)",
+      "category": "chargers",
+      "description": "Samsung Samsung 15W Power Adapter (EP-T1510N) (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Samsung 15W Power Adapter (EP-T1510N)",
+        "Line: Adaptive Fast Charging",
+        "Generation / Release: 2022",
+        "totalWatts: 15",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 2.0",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/2A, 9V/1.67A",
+        "compatibleEcosystems: Galaxy A05, M14, Buds"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.samsung.com/in/mobile-accessories/15w-power-adapter-black-ep-t1510nbeginu/",
+      "familyId": "samsung:samsung-15w-power-adapter-ep-t1510n",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "samsung 15w power adapter (ep-t1510n)",
+        "totalWatts": 15,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 2.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/2A, 9V/1.67A",
+        "compatibleEcosystems": "Galaxy A05, M14, Buds"
+      },
+      "media": {
+        "url": "https://www.samsung.com/images/products/samsung-15w-power-adapter-ep-t1510n.jpg",
+        "source": "https://www.samsung.com/in/mobile-accessories/15w-power-adapter-black-ep-t1510nbeginu/",
+        "alt": "Samsung Samsung 15W Power Adapter (EP-T1510N) official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Samsung 15W Power Adapter (EP-T1510N)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 15,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-SAMSUNG-SAMSUNG-35W-POWER-ADAPTER-DUO-EP-TA220N",
+      "name": "Samsung Samsung 35W Power Adapter Duo (EP-TA220N)",
+      "category": "chargers",
+      "description": "Samsung Samsung 35W Power Adapter Duo (EP-TA220N) (2021). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 3999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Samsung 35W Power Adapter Duo (EP-TA220N)",
+        "Line: Power Adapter Duo",
+        "Generation / Release: 2021",
+        "totalWatts: 35",
+        "connectorType: 1x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: true",
+        "voltageProfiles: USB-C: up to 35W | USB-A: up to 15W",
+        "compatibleEcosystems: Galaxy Phones, USB-A legacy accessories"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.samsung.com/in/mobile-accessories/power-adapter-duo-35w-black-ep-ta220nbeginu/",
+      "familyId": "samsung:samsung-35w-power-adapter-duo-ep-ta220n",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "samsung 35w power adapter duo (ep-ta220n)",
+        "totalWatts": 35,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C: up to 35W | USB-A: up to 15W",
+        "compatibleEcosystems": "Galaxy Phones, USB-A legacy accessories"
+      },
+      "media": {
+        "url": "https://www.samsung.com/images/products/samsung-35w-power-adapter-duo-ep-ta220n.jpg",
+        "source": "https://www.samsung.com/in/mobile-accessories/power-adapter-duo-35w-black-ep-ta220nbeginu/",
+        "alt": "Samsung Samsung 35W Power Adapter Duo (EP-TA220N) official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Samsung 35W Power Adapter Duo (EP-TA220N)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 35,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-GOOGLE-GOOGLE-45W-USB-C-CHARGER",
+      "name": "Google Google 45W USB-C Charger",
+      "category": "chargers",
+      "description": "Google Google 45W USB-C Charger (2024). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 3999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Google",
+        "Model: Google 45W USB-C Charger",
+        "Line: Pixel",
+        "Generation / Release: 2024",
+        "totalWatts: 45",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.1 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: up to 21V/2.25A",
+        "compatibleEcosystems: Pixel 9 Pro XL, Pixel 9 Pro, Pixel 9, Chromebooks"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Snow White",
+      "source": "https://store.google.com/in/product/google_45w_usb_c_charger",
+      "familyId": "google:google-45w-usb-c-charger",
+      "provenance": "manufacturer_evidence",
+      "brand": "Google",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "google",
+        "modelName": "google 45w usb-c charger",
+        "totalWatts": 45,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.1 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: up to 21V/2.25A",
+        "compatibleEcosystems": "Pixel 9 Pro XL, Pixel 9 Pro, Pixel 9, Chromebooks"
+      },
+      "media": {
+        "url": "https://store.google.com/images/products/google-45w-usb-c-charger.jpg",
+        "source": "https://store.google.com/in/product/google_45w_usb_c_charger",
+        "alt": "Google Google 45W USB-C Charger official technical reference",
+        "attribution": "Product specifications and photography © Google",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Google 45W USB-C Charger",
+      "skuVariant": "Snow White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 45,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-GOOGLE-GOOGLE-30W-USB-C-CHARGER",
+      "name": "Google Google 30W USB-C Charger",
+      "category": "chargers",
+      "description": "Google Google 30W USB-C Charger (2021). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Google",
+        "Model: Google 30W USB-C Charger",
+        "Line: Pixel",
+        "Generation / Release: 2021",
+        "totalWatts: 30",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 11V/3A, 16V/2A, 21V/1.5A",
+        "compatibleEcosystems: Pixel 8, Pixel 7, Pixel 6 series"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://store.google.com/in/product/usb_c_30w_charger",
+      "familyId": "google:google-30w-usb-c-charger",
+      "provenance": "manufacturer_evidence",
+      "brand": "Google",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "google",
+        "modelName": "google 30w usb-c charger",
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 11V/3A, 16V/2A, 21V/1.5A",
+        "compatibleEcosystems": "Pixel 8, Pixel 7, Pixel 6 series"
+      },
+      "media": {
+        "url": "https://store.google.com/images/products/google-30w-usb-c-charger.jpg",
+        "source": "https://store.google.com/in/product/usb_c_30w_charger",
+        "alt": "Google Google 30W USB-C Charger official technical reference",
+        "attribution": "Product specifications and photography © Google",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Google 30W USB-C Charger",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 30,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-GOOGLE-GOOGLE-18W-USB-C-POWER-ADAPTER",
+      "name": "Google Google 18W USB-C Power Adapter",
+      "category": "chargers",
+      "description": "Google Google 18W USB-C Power Adapter (2020). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Google",
+        "Model: Google 18W USB-C Power Adapter",
+        "Line: Pixel",
+        "Generation / Release: 2020",
+        "totalWatts: 18",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 2.0",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/3A, 9V/2A",
+        "compatibleEcosystems: Pixel 5, Pixel 4a, Pixel Stand"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://store.google.com/in/product/usb_c_18w_power_adapter",
+      "familyId": "google:google-18w-usb-c-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "Google",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "google",
+        "modelName": "google 18w usb-c power adapter",
+        "totalWatts": 18,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 2.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/2A",
+        "compatibleEcosystems": "Pixel 5, Pixel 4a, Pixel Stand"
+      },
+      "media": {
+        "url": "https://store.google.com/images/products/google-18w-usb-c-power-adapter.jpg",
+        "source": "https://store.google.com/in/product/usb_c_18w_power_adapter",
+        "alt": "Google Google 18W USB-C Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © Google",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Google 18W USB-C Power Adapter",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 18,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ONEPLUS-ONEPLUS-SUPERVOOC-100W-DUAL-PORTS",
+      "name": "OnePlus OnePlus SUPERVOOC 100W Dual Ports Power Adapter",
+      "category": "chargers",
+      "description": "OnePlus OnePlus SUPERVOOC 100W Dual Ports Power Adapter (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 7499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus SUPERVOOC 100W Dual Ports Power Adapter",
+        "Line: SUPERVOOC",
+        "Generation / Release: 2023",
+        "totalWatts: 100",
+        "connectorType: 1x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 65W / SUPERVOOC 100W",
+        "ppsSupported: true",
+        "voltageProfiles: SUPERVOOC: 100W max | USB-PD: up to 65W",
+        "compatibleEcosystems: OnePlus 12, OnePlus 11, Laptops (65W PD)"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White with Red Accents",
+      "source": "https://www.oneplus.in/product/oneplus-supervooc-100w-dual-ports-power-adapter",
+      "familyId": "oneplus:oneplus-supervooc-100w-dual-ports",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus supervooc 100w dual ports power adapter",
+        "totalWatts": 100,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 65W / SUPERVOOC 100W",
+        "ppsSupported": true,
+        "voltageProfiles": "SUPERVOOC: 100W max | USB-PD: up to 65W",
+        "compatibleEcosystems": "OnePlus 12, OnePlus 11, Laptops (65W PD)"
+      },
+      "media": {
+        "url": "https://www.oneplus.in/images/products/oneplus-supervooc-100w-dual-ports.jpg",
+        "source": "https://www.oneplus.in/product/oneplus-supervooc-100w-dual-ports-power-adapter",
+        "alt": "OnePlus OnePlus SUPERVOOC 100W Dual Ports Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "OnePlus SUPERVOOC 100W Dual Ports Power Adapter",
+      "skuVariant": "White with Red Accents",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 100,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ONEPLUS-ONEPLUS-SUPERVOOC-80W-POWER-ADAPTER",
+      "name": "OnePlus OnePlus SUPERVOOC 80W Power Adapter",
+      "category": "chargers",
+      "description": "OnePlus OnePlus SUPERVOOC 80W Power Adapter (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus SUPERVOOC 80W Power Adapter",
+        "Line: SUPERVOOC",
+        "Generation / Release: 2022",
+        "totalWatts: 80",
+        "connectorType: 1x USB-A",
+        "pdVersion: SUPERVOOC Proprietary",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/2A or 5-11V/7.3A (80W max)",
+        "compatibleEcosystems: OnePlus 10 Pro, Nord 4, Nord CE4"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.oneplus.in/product/oneplus-supervooc-80w-power-adapter",
+      "familyId": "oneplus:oneplus-supervooc-80w-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus supervooc 80w power adapter",
+        "totalWatts": 80,
+        "connectorType": "1x USB-A",
+        "pdVersion": "SUPERVOOC Proprietary",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/2A or 5-11V/7.3A (80W max)",
+        "compatibleEcosystems": "OnePlus 10 Pro, Nord 4, Nord CE4"
+      },
+      "media": {
+        "url": "https://www.oneplus.in/images/products/oneplus-supervooc-80w-power-adapter.jpg",
+        "source": "https://www.oneplus.in/product/oneplus-supervooc-80w-power-adapter",
+        "alt": "OnePlus OnePlus SUPERVOOC 80W Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "OnePlus SUPERVOOC 80W Power Adapter",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 80,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ONEPLUS-ONEPLUS-SUPERVOOC-160W-POWER-ADAPTER",
+      "name": "OnePlus OnePlus SUPERVOOC 160W Power Adapter",
+      "category": "chargers",
+      "description": "OnePlus OnePlus SUPERVOOC 160W Power Adapter (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus SUPERVOOC 160W Power Adapter",
+        "Line: SUPERVOOC",
+        "Generation / Release: 2022",
+        "totalWatts: 160",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 45W / SUPERVOOC 160W",
+        "ppsSupported: false",
+        "voltageProfiles: SUPERVOOC: 160W max | USB-PD: up to 45W",
+        "compatibleEcosystems: OnePlus 10T"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.oneplus.in/product/oneplus-supervooc-160w-power-adapter",
+      "familyId": "oneplus:oneplus-supervooc-160w-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus supervooc 160w power adapter",
+        "totalWatts": 160,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 45W / SUPERVOOC 160W",
+        "ppsSupported": false,
+        "voltageProfiles": "SUPERVOOC: 160W max | USB-PD: up to 45W",
+        "compatibleEcosystems": "OnePlus 10T"
+      },
+      "media": {
+        "url": "https://www.oneplus.in/images/products/oneplus-supervooc-160w-power-adapter.jpg",
+        "source": "https://www.oneplus.in/product/oneplus-supervooc-160w-power-adapter",
+        "alt": "OnePlus OnePlus SUPERVOOC 160W Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "OnePlus SUPERVOOC 160W Power Adapter",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 160,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ONEPLUS-ONEPLUS-SUPERVOOC-65W-POWER-ADAPTER",
+      "name": "OnePlus OnePlus SUPERVOOC 65W Power Adapter",
+      "category": "chargers",
+      "description": "OnePlus OnePlus SUPERVOOC 65W Power Adapter (2021). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus SUPERVOOC 65W Power Adapter",
+        "Line: SUPERVOOC",
+        "Generation / Release: 2021",
+        "totalWatts: 65",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 45W / Warp 65W",
+        "ppsSupported: true",
+        "voltageProfiles: 10V/6.5A (65W) | PD: 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A",
+        "compatibleEcosystems: OnePlus 9 series, 8T, Laptops up to 45W"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.oneplus.in/product/oneplus-warp-charge-65-power-adapter",
+      "familyId": "oneplus:oneplus-supervooc-65w-power-adapter",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus supervooc 65w power adapter",
+        "totalWatts": 65,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 45W / Warp 65W",
+        "ppsSupported": true,
+        "voltageProfiles": "10V/6.5A (65W) | PD: 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A",
+        "compatibleEcosystems": "OnePlus 9 series, 8T, Laptops up to 45W"
+      },
+      "media": {
+        "url": "https://www.oneplus.in/images/products/oneplus-supervooc-65w-power-adapter.jpg",
+        "source": "https://www.oneplus.in/product/oneplus-warp-charge-65-power-adapter",
+        "alt": "OnePlus OnePlus SUPERVOOC 65W Power Adapter official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "OnePlus SUPERVOOC 65W Power Adapter",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-G65",
+      "name": "Ambrane Ambrane Raap G65 (65W GaN Charger)",
+      "category": "chargers",
+      "description": "Ambrane Ambrane Raap G65 (65W GaN Charger) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2299,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Ambrane",
+        "Model: Ambrane Raap G65 (65W GaN Charger)",
+        "Line: Raap GaN",
+        "Generation / Release: 2023",
+        "totalWatts: 65",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: C1: 65W max, C2: 33W, USB-A: 30W QC",
+        "compatibleEcosystems: MacBook, Dell XPS, Galaxy S24 (PPS), iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://ambraneindia.com/products/raap-g65-65w-gan-charger",
+      "familyId": "ambrane:ambrane-raap-g65",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ambrane",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "ambrane",
+        "modelName": "ambrane raap g65 (65w gan charger)",
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "C1: 65W max, C2: 33W, USB-A: 30W QC",
+        "compatibleEcosystems": "MacBook, Dell XPS, Galaxy S24 (PPS), iPhone"
+      },
+      "media": {
+        "url": "https://ambraneindia.com/images/products/ambrane-raap-g65.jpg",
+        "source": "https://ambraneindia.com/products/raap-g65-65w-gan-charger",
+        "alt": "Ambrane Ambrane Raap G65 (65W GaN Charger) official technical reference",
+        "attribution": "Product specifications and photography © Ambrane",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Ambrane Raap G65 (65W GaN Charger)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-G100",
+      "name": "Ambrane Ambrane Raap G100 (100W GaN Fast Charger)",
+      "category": "chargers",
+      "description": "Ambrane Ambrane Raap G100 (100W GaN Fast Charger) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 3499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Ambrane",
+        "Model: Ambrane Raap G100 (100W GaN Fast Charger)",
+        "Line: Raap GaN",
+        "Generation / Release: 2023",
+        "totalWatts: 100",
+        "connectorType: 3x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: C1/C2: 100W max | Multi-port dynamic allocation",
+        "compatibleEcosystems: MacBook Pro 16, ThinkPad, Galaxy, iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://ambraneindia.com/products/raap-g100-100w-gan-charger",
+      "familyId": "ambrane:ambrane-raap-g100",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ambrane",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "ambrane",
+        "modelName": "ambrane raap g100 (100w gan fast charger)",
+        "totalWatts": 100,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "C1/C2: 100W max | Multi-port dynamic allocation",
+        "compatibleEcosystems": "MacBook Pro 16, ThinkPad, Galaxy, iPhone"
+      },
+      "media": {
+        "url": "https://ambraneindia.com/images/products/ambrane-raap-g100.jpg",
+        "source": "https://ambraneindia.com/products/raap-g100-100w-gan-charger",
+        "alt": "Ambrane Ambrane Raap G100 (100W GaN Fast Charger) official technical reference",
+        "attribution": "Product specifications and photography © Ambrane",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Ambrane Raap G100 (100W GaN Fast Charger)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 100,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-S33",
+      "name": "Ambrane Ambrane Raap S33 (33W Fast Charger)",
+      "category": "chargers",
+      "description": "Ambrane Ambrane Raap S33 (33W Fast Charger) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 1299,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Ambrane",
+        "Model: Ambrane Raap S33 (33W Fast Charger)",
+        "Line: Raap",
+        "Generation / Release: 2023",
+        "totalWatts: 33",
+        "connectorType: 1x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS / QC 3.0",
+        "ppsSupported: true",
+        "voltageProfiles: Type-C: up to 33W PPS | USB-A: 18W QC",
+        "compatibleEcosystems: Galaxy Phones (25W PPS), iPhone, Redmi"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://ambraneindia.com/products/raap-s33-33w-charger",
+      "familyId": "ambrane:ambrane-raap-s33",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ambrane",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "ambrane",
+        "modelName": "ambrane raap s33 (33w fast charger)",
+        "totalWatts": 33,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS / QC 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "Type-C: up to 33W PPS | USB-A: 18W QC",
+        "compatibleEcosystems": "Galaxy Phones (25W PPS), iPhone, Redmi"
+      },
+      "media": {
+        "url": "https://ambraneindia.com/images/products/ambrane-raap-s33.jpg",
+        "source": "https://ambraneindia.com/products/raap-s33-33w-charger",
+        "alt": "Ambrane Ambrane Raap S33 (33W Fast Charger) official technical reference",
+        "attribution": "Product specifications and photography © Ambrane",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Ambrane Raap S33 (33W Fast Charger)",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 33,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-M20",
+      "name": "Ambrane Ambrane Raap M20 (20W PD Charger)",
+      "category": "chargers",
+      "description": "Ambrane Ambrane Raap M20 (20W PD Charger) (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Ambrane",
+        "Model: Ambrane Raap M20 (20W PD Charger)",
+        "Line: Raap",
+        "Generation / Release: 2022",
+        "totalWatts: 20",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/3A, 9V/2.22A, 12V/1.67A",
+        "compatibleEcosystems: iPhone 12-16, AirPods, iPad"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://ambraneindia.com/products/raap-m20-20w-charger",
+      "familyId": "ambrane:ambrane-raap-m20",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ambrane",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "ambrane",
+        "modelName": "ambrane raap m20 (20w pd charger)",
+        "totalWatts": 20,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/2.22A, 12V/1.67A",
+        "compatibleEcosystems": "iPhone 12-16, AirPods, iPad"
+      },
+      "media": {
+        "url": "https://ambraneindia.com/images/products/ambrane-raap-m20.jpg",
+        "source": "https://ambraneindia.com/products/raap-m20-20w-charger",
+        "alt": "Ambrane Ambrane Raap M20 (20W PD Charger) official technical reference",
+        "attribution": "Product specifications and photography © Ambrane",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Ambrane Raap M20 (20W PD Charger)",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 20,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-H20",
+      "name": "Ambrane Ambrane Raap H20 (20W Dual Port Charger)",
+      "category": "chargers",
+      "description": "Ambrane Ambrane Raap H20 (20W Dual Port Charger) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Ambrane",
+        "Model: Ambrane Raap H20 (20W Dual Port Charger)",
+        "Line: Raap",
+        "Generation / Release: 2023",
+        "totalWatts: 20",
+        "connectorType: 1x USB-C + 1x USB-A",
+        "pdVersion: USB-PD + QC 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: Type-C: 20W max | USB-A: 18W max",
+        "compatibleEcosystems: iPhone, Android phones"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://ambraneindia.com/products/raap-h20-charger",
+      "familyId": "ambrane:ambrane-raap-h20",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ambrane",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "ambrane",
+        "modelName": "ambrane raap h20 (20w dual port charger)",
+        "totalWatts": 20,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD + QC 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "Type-C: 20W max | USB-A: 18W max",
+        "compatibleEcosystems": "iPhone, Android phones"
+      },
+      "media": {
+        "url": "https://ambraneindia.com/images/products/ambrane-raap-h20.jpg",
+        "source": "https://ambraneindia.com/products/raap-h20-charger",
+        "alt": "Ambrane Ambrane Raap H20 (20W Dual Port Charger) official technical reference",
+        "attribution": "Product specifications and photography © Ambrane",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Ambrane Raap H20 (20W Dual Port Charger)",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 20,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-65-PRO",
+      "name": "Portronics Portronics Adapto 65 Pro (65W GaN Fast Charger)",
+      "category": "chargers",
+      "description": "Portronics Portronics Adapto 65 Pro (65W GaN Fast Charger) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2299,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Portronics",
+        "Model: Portronics Adapto 65 Pro (65W GaN Fast Charger)",
+        "Line: Adapto",
+        "Generation / Release: 2023",
+        "totalWatts: 65",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: Type-C1: 65W, Type-C2: 33W, USB-A: 30W",
+        "compatibleEcosystems: MacBook, Type-C Laptops, Galaxy, iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.portronics.com/products/adapto-65-pro",
+      "familyId": "portronics:portronics-adapto-65-pro",
+      "provenance": "manufacturer_evidence",
+      "brand": "Portronics",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "portronics",
+        "modelName": "portronics adapto 65 pro (65w gan fast charger)",
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Type-C1: 65W, Type-C2: 33W, USB-A: 30W",
+        "compatibleEcosystems": "MacBook, Type-C Laptops, Galaxy, iPhone"
+      },
+      "media": {
+        "url": "https://www.portronics.com/images/products/portronics-adapto-65-pro.jpg",
+        "source": "https://www.portronics.com/products/adapto-65-pro",
+        "alt": "Portronics Portronics Adapto 65 Pro (65W GaN Fast Charger) official technical reference",
+        "attribution": "Product specifications and photography © Portronics",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Portronics Adapto 65 Pro (65W GaN Fast Charger)",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-100",
+      "name": "Portronics Portronics Adapto 100 (100W GaN Multiport Charger)",
+      "category": "chargers",
+      "description": "Portronics Portronics Adapto 100 (100W GaN Multiport Charger) (2024). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 3499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Portronics",
+        "Model: Portronics Adapto 100 (100W GaN Multiport Charger)",
+        "Line: Adapto",
+        "Generation / Release: 2024",
+        "totalWatts: 100",
+        "connectorType: 3x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: USB-C1/C2: 100W max | 4-port smart power distribution",
+        "compatibleEcosystems: High-performance Laptops, Tablets, Smartphones"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black with Carbon Finish",
+      "source": "https://www.portronics.com/products/adapto-100",
+      "familyId": "portronics:portronics-adapto-100",
+      "provenance": "manufacturer_evidence",
+      "brand": "Portronics",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "portronics",
+        "modelName": "portronics adapto 100 (100w gan multiport charger)",
+        "totalWatts": 100,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1/C2: 100W max | 4-port smart power distribution",
+        "compatibleEcosystems": "High-performance Laptops, Tablets, Smartphones"
+      },
+      "media": {
+        "url": "https://www.portronics.com/images/products/portronics-adapto-100.jpg",
+        "source": "https://www.portronics.com/products/adapto-100",
+        "alt": "Portronics Portronics Adapto 100 (100W GaN Multiport Charger) official technical reference",
+        "attribution": "Product specifications and photography © Portronics",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Portronics Adapto 100 (100W GaN Multiport Charger)",
+      "skuVariant": "Black with Carbon Finish",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 100,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-45",
+      "name": "Portronics Portronics Adapto 45 (45W Dual Type-C GaN Charger)",
+      "category": "chargers",
+      "description": "Portronics Portronics Adapto 45 (45W Dual Type-C GaN Charger) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 1799,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Portronics",
+        "Model: Portronics Adapto 45 (45W Dual Type-C GaN Charger)",
+        "Line: Adapto",
+        "Generation / Release: 2023",
+        "totalWatts: 45",
+        "connectorType: 2x USB-C",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: Single port 45W PPS | Dual port 25W + 20W",
+        "compatibleEcosystems: Samsung 45W phones, iPhone, iPad, MacBook Air"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.portronics.com/products/adapto-45",
+      "familyId": "portronics:portronics-adapto-45",
+      "provenance": "manufacturer_evidence",
+      "brand": "Portronics",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "portronics",
+        "modelName": "portronics adapto 45 (45w dual type-c gan charger)",
+        "totalWatts": 45,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single port 45W PPS | Dual port 25W + 20W",
+        "compatibleEcosystems": "Samsung 45W phones, iPhone, iPad, MacBook Air"
+      },
+      "media": {
+        "url": "https://www.portronics.com/images/products/portronics-adapto-45.jpg",
+        "source": "https://www.portronics.com/products/adapto-45",
+        "alt": "Portronics Portronics Adapto 45 (45W Dual Type-C GaN Charger) official technical reference",
+        "attribution": "Product specifications and photography © Portronics",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Portronics Adapto 45 (45W Dual Type-C GaN Charger)",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 45,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-33",
+      "name": "Portronics Portronics Adapto 33 (33W Fast Charger)",
+      "category": "chargers",
+      "description": "Portronics Portronics Adapto 33 (33W Fast Charger) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 1299,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Portronics",
+        "Model: Portronics Adapto 33 (33W Fast Charger)",
+        "Line: Adapto",
+        "Generation / Release: 2023",
+        "totalWatts: 33",
+        "connectorType: 1x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS / QC 3.0",
+        "ppsSupported: true",
+        "voltageProfiles: Type-C: 33W PPS | USB-A: 18W QC",
+        "compatibleEcosystems: Samsung, Xiaomi, Vivo, iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.portronics.com/products/adapto-33",
+      "familyId": "portronics:portronics-adapto-33",
+      "provenance": "manufacturer_evidence",
+      "brand": "Portronics",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "portronics",
+        "modelName": "portronics adapto 33 (33w fast charger)",
+        "totalWatts": 33,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS / QC 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "Type-C: 33W PPS | USB-A: 18W QC",
+        "compatibleEcosystems": "Samsung, Xiaomi, Vivo, iPhone"
+      },
+      "media": {
+        "url": "https://www.portronics.com/images/products/portronics-adapto-33.jpg",
+        "source": "https://www.portronics.com/products/adapto-33",
+        "alt": "Portronics Portronics Adapto 33 (33W Fast Charger) official technical reference",
+        "attribution": "Product specifications and photography © Portronics",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Portronics Adapto 33 (33W Fast Charger)",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 33,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-20",
+      "name": "Portronics Portronics Adapto 20 (20W Fast Charger)",
+      "category": "chargers",
+      "description": "Portronics Portronics Adapto 20 (20W Fast Charger) (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Portronics",
+        "Model: Portronics Adapto 20 (20W Fast Charger)",
+        "Line: Adapto",
+        "Generation / Release: 2022",
+        "totalWatts: 20",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: 5V/3A, 9V/2.22A, 12V/1.67A",
+        "compatibleEcosystems: iPhone, iPad, Pixel"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.portronics.com/products/adapto-20",
+      "familyId": "portronics:portronics-adapto-20",
+      "provenance": "manufacturer_evidence",
+      "brand": "Portronics",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "portronics",
+        "modelName": "portronics adapto 20 (20w fast charger)",
+        "totalWatts": 20,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/2.22A, 12V/1.67A",
+        "compatibleEcosystems": "iPhone, iPad, Pixel"
+      },
+      "media": {
+        "url": "https://www.portronics.com/images/products/portronics-adapto-20.jpg",
+        "source": "https://www.portronics.com/products/adapto-20",
+        "alt": "Portronics Portronics Adapto 20 (20W Fast Charger) official technical reference",
+        "attribution": "Product specifications and photography © Portronics",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Portronics Adapto 20 (20W Fast Charger)",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 20,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ANKER-ANKER-735-CHARGER-GANPRIME-65W",
+      "name": "Anker Anker 735 Charger (GaNPrime 65W)",
+      "category": "chargers",
+      "description": "Anker Anker 735 Charger (GaNPrime 65W) (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Anker",
+        "Model: Anker 735 Charger (GaNPrime 65W)",
+        "Line: GaNPrime",
+        "Generation / Release: 2022",
+        "totalWatts: 65",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: PowerIQ 4.0 with Dynamic Power Distribution",
+        "ppsSupported: true",
+        "voltageProfiles: Single port 65W max | PowerIQ 4.0 with ActiveShield 2.0",
+        "compatibleEcosystems: MacBook, XPS, Galaxy, iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.anker.com/products/a2668",
+      "familyId": "anker:anker-735-charger-ganprime-65w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker",
+        "modelName": "anker 735 charger (ganprime 65w)",
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "PowerIQ 4.0 with Dynamic Power Distribution",
+        "ppsSupported": true,
+        "voltageProfiles": "Single port 65W max | PowerIQ 4.0 with ActiveShield 2.0",
+        "compatibleEcosystems": "MacBook, XPS, Galaxy, iPhone"
+      },
+      "media": {
+        "url": "https://www.anker.com/images/products/anker-735-charger-ganprime-65w.jpg",
+        "source": "https://www.anker.com/products/a2668",
+        "alt": "Anker Anker 735 Charger (GaNPrime 65W) official technical reference",
+        "attribution": "Product specifications and photography © Anker",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Anker 735 Charger (GaNPrime 65W)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ANKER-ANKER-737-CHARGER-GANPRIME-120W",
+      "name": "Anker Anker 737 Charger (GaNPrime 120W)",
+      "category": "chargers",
+      "description": "Anker Anker 737 Charger (GaNPrime 120W) (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Anker",
+        "Model: Anker 737 Charger (GaNPrime 120W)",
+        "Line: GaNPrime",
+        "Generation / Release: 2022",
+        "totalWatts: 120",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: PowerIQ 4.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: Single port 100W max | Dynamic allocation up to 120W total",
+        "compatibleEcosystems: MacBook Pro 16, Dell XPS, Galaxy, iPad"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.anker.com/products/a2148",
+      "familyId": "anker:anker-737-charger-ganprime-120w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker",
+        "modelName": "anker 737 charger (ganprime 120w)",
+        "totalWatts": 120,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "PowerIQ 4.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single port 100W max | Dynamic allocation up to 120W total",
+        "compatibleEcosystems": "MacBook Pro 16, Dell XPS, Galaxy, iPad"
+      },
+      "media": {
+        "url": "https://www.anker.com/images/products/anker-737-charger-ganprime-120w.jpg",
+        "source": "https://www.anker.com/products/a2148",
+        "alt": "Anker Anker 737 Charger (GaNPrime 120W) official technical reference",
+        "attribution": "Product specifications and photography © Anker",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Anker 737 Charger (GaNPrime 120W)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 120,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ANKER-ANKER-PRIME-67W-GAN-WALL-CHARGER",
+      "name": "Anker Anker Prime 67W GaN Wall Charger",
+      "category": "chargers",
+      "description": "Anker Anker Prime 67W GaN Wall Charger (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Anker",
+        "Model: Anker Prime 67W GaN Wall Charger",
+        "Line: Anker Prime",
+        "Generation / Release: 2023",
+        "totalWatts: 67",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: PowerIQ 4.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: Single USB-C: 67W max | Dual USB-C: 65W shared",
+        "compatibleEcosystems: MacBook Air/Pro, Windows Ultrabooks, iPhone, Galaxy"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.anker.com/products/a2669",
+      "familyId": "anker:anker-prime-67w-gan-wall-charger",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker",
+        "modelName": "anker prime 67w gan wall charger",
+        "totalWatts": 67,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "PowerIQ 4.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single USB-C: 67W max | Dual USB-C: 65W shared",
+        "compatibleEcosystems": "MacBook Air/Pro, Windows Ultrabooks, iPhone, Galaxy"
+      },
+      "media": {
+        "url": "https://www.anker.com/images/products/anker-prime-67w-gan-wall-charger.jpg",
+        "source": "https://www.anker.com/products/a2669",
+        "alt": "Anker Anker Prime 67W GaN Wall Charger official technical reference",
+        "attribution": "Product specifications and photography © Anker",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Anker Prime 67W GaN Wall Charger",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 67,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ANKER-ANKER-PRIME-100W-GAN-WALL-CHARGER",
+      "name": "Anker Anker Prime 100W GaN Wall Charger",
+      "category": "chargers",
+      "description": "Anker Anker Prime 100W GaN Wall Charger (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 7499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Anker",
+        "Model: Anker Prime 100W GaN Wall Charger",
+        "Line: Anker Prime",
+        "Generation / Release: 2023",
+        "totalWatts: 100",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: PowerIQ 4.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: Single port 100W max | Multi-port dynamic power sharing",
+        "compatibleEcosystems: Heavy Workstation Laptops, Galaxy Tablets, iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.anker.com/products/a2343",
+      "familyId": "anker:anker-prime-100w-gan-wall-charger",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker",
+        "modelName": "anker prime 100w gan wall charger",
+        "totalWatts": 100,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "PowerIQ 4.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single port 100W max | Multi-port dynamic power sharing",
+        "compatibleEcosystems": "Heavy Workstation Laptops, Galaxy Tablets, iPhone"
+      },
+      "media": {
+        "url": "https://www.anker.com/images/products/anker-prime-100w-gan-wall-charger.jpg",
+        "source": "https://www.anker.com/products/a2343",
+        "alt": "Anker Anker Prime 100W GaN Wall Charger official technical reference",
+        "attribution": "Product specifications and photography © Anker",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Anker Prime 100W GaN Wall Charger",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 100,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ANKER-ANKER-511-CHARGER-NANO-3-30W",
+      "name": "Anker Anker 511 Charger (Nano 3 30W)",
+      "category": "chargers",
+      "description": "Anker Anker 511 Charger (Nano 3 30W) (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Anker",
+        "Model: Anker 511 Charger (Nano 3 30W)",
+        "Line: Nano",
+        "Generation / Release: 2022",
+        "totalWatts: 30",
+        "connectorType: 1x USB-C",
+        "pdVersion: PowerIQ 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 3.3-11V/3A",
+        "compatibleEcosystems: iPhone 15/16, iPad Air, MacBook Air, Pixel, Galaxy"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Phantom Black",
+      "source": "https://www.anker.com/products/a2147",
+      "familyId": "anker:anker-511-charger-nano-3-30w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker",
+        "modelName": "anker 511 charger (nano 3 30w)",
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "PowerIQ 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 3.3-11V/3A",
+        "compatibleEcosystems": "iPhone 15/16, iPad Air, MacBook Air, Pixel, Galaxy"
+      },
+      "media": {
+        "url": "https://www.anker.com/images/products/anker-511-charger-nano-3-30w.jpg",
+        "source": "https://www.anker.com/products/a2147",
+        "alt": "Anker Anker 511 Charger (Nano 3 30W) official technical reference",
+        "attribution": "Product specifications and photography © Anker",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Anker 511 Charger (Nano 3 30W)",
+      "skuVariant": "Phantom Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 30,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-ANKER-ANKER-313-CHARGER-ACE-45W",
+      "name": "Anker Anker 313 Charger (Ace 45W for Samsung)",
+      "category": "chargers",
+      "description": "Anker Anker 313 Charger (Ace 45W for Samsung) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 3999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Anker",
+        "Model: Anker 313 Charger (Ace 45W for Samsung)",
+        "Line: Ace",
+        "Generation / Release: 2023",
+        "totalWatts: 45",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0 with Super Fast Charging 2.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: 3.3-11V/4.05A (45W)",
+        "compatibleEcosystems: Galaxy S24 Ultra, S23+, Tab S9 series"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.anker.com/products/a2677",
+      "familyId": "anker:anker-313-charger-ace-45w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker",
+        "modelName": "anker 313 charger (ace 45w for samsung)",
+        "totalWatts": 45,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0 with Super Fast Charging 2.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: 3.3-11V/4.05A (45W)",
+        "compatibleEcosystems": "Galaxy S24 Ultra, S23+, Tab S9 series"
+      },
+      "media": {
+        "url": "https://www.anker.com/images/products/anker-313-charger-ace-45w.jpg",
+        "source": "https://www.anker.com/products/a2677",
+        "alt": "Anker Anker 313 Charger (Ace 45W for Samsung) official technical reference",
+        "attribution": "Product specifications and photography © Anker",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Anker 313 Charger (Ace 45W for Samsung)",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 45,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-UGREEN-UGREEN-NEXODE-65W-3PORT",
+      "name": "UGREEN UGREEN Nexode 65W 3-Port GaN Fast Charger",
+      "category": "chargers",
+      "description": "UGREEN UGREEN Nexode 65W 3-Port GaN Fast Charger (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: UGREEN",
+        "Model: UGREEN Nexode 65W 3-Port GaN Fast Charger",
+        "Line: Nexode",
+        "Generation / Release: 2022",
+        "totalWatts: 65",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS / QC 4+",
+        "ppsSupported: true",
+        "voltageProfiles: USB-C1: 65W max, USB-C2: 65W max, USB-A: 22.5W",
+        "compatibleEcosystems: MacBook, Dell, HP, ThinkPad, Galaxy, iPhone"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Space Gray",
+      "source": "https://www.ugreen.com/products/ugreen-nexode-65w-usb-c-wall-charger",
+      "familyId": "ugreen:ugreen-nexode-65w-3port",
+      "provenance": "manufacturer_evidence",
+      "brand": "UGREEN",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "ugreen",
+        "modelName": "ugreen nexode 65w 3-port gan fast charger",
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS / QC 4+",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1: 65W max, USB-C2: 65W max, USB-A: 22.5W",
+        "compatibleEcosystems": "MacBook, Dell, HP, ThinkPad, Galaxy, iPhone"
+      },
+      "media": {
+        "url": "https://www.ugreen.com/images/products/ugreen-nexode-65w-3port.jpg",
+        "source": "https://www.ugreen.com/products/ugreen-nexode-65w-usb-c-wall-charger",
+        "alt": "UGREEN UGREEN Nexode 65W 3-Port GaN Fast Charger official technical reference",
+        "attribution": "Product specifications and photography © UGREEN",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "UGREEN Nexode 65W 3-Port GaN Fast Charger",
+      "skuVariant": "Space Gray",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-UGREEN-UGREEN-NEXODE-100W-4PORT",
+      "name": "UGREEN UGREEN Nexode 100W 4-Port GaN Fast Charger",
+      "category": "chargers",
+      "description": "UGREEN UGREEN Nexode 100W 4-Port GaN Fast Charger (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 7499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: UGREEN",
+        "Model: UGREEN Nexode 100W 4-Port GaN Fast Charger",
+        "Line: Nexode",
+        "Generation / Release: 2022",
+        "totalWatts: 100",
+        "connectorType: 3x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: C1/C2: 100W max | C3: 22.5W | USB-A: 22.5W",
+        "compatibleEcosystems: MacBook Pro 16, iPad Pro, iPhone, Galaxy S24 Ultra"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Space Gray",
+      "source": "https://www.ugreen.com/products/100w-4-port-gan-charger",
+      "familyId": "ugreen:ugreen-nexode-100w-4port",
+      "provenance": "manufacturer_evidence",
+      "brand": "UGREEN",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "ugreen",
+        "modelName": "ugreen nexode 100w 4-port gan fast charger",
+        "totalWatts": 100,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "C1/C2: 100W max | C3: 22.5W | USB-A: 22.5W",
+        "compatibleEcosystems": "MacBook Pro 16, iPad Pro, iPhone, Galaxy S24 Ultra"
+      },
+      "media": {
+        "url": "https://www.ugreen.com/images/products/ugreen-nexode-100w-4port.jpg",
+        "source": "https://www.ugreen.com/products/100w-4-port-gan-charger",
+        "alt": "UGREEN UGREEN Nexode 100W 4-Port GaN Fast Charger official technical reference",
+        "attribution": "Product specifications and photography © UGREEN",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "UGREEN Nexode 100W 4-Port GaN Fast Charger",
+      "skuVariant": "Space Gray",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 100,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-UGREEN-UGREEN-NEXODE-140W-3PORT",
+      "name": "UGREEN UGREEN Nexode 140W 3-Port GaN Fast Charger (PD 3.1)",
+      "category": "chargers",
+      "description": "UGREEN UGREEN Nexode 140W 3-Port GaN Fast Charger (PD 3.1) (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: UGREEN",
+        "Model: UGREEN Nexode 140W 3-Port GaN Fast Charger (PD 3.1)",
+        "Line: Nexode",
+        "Generation / Release: 2023",
+        "totalWatts: 140",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.1 (EPR 28V/5A)",
+        "ppsSupported: true",
+        "voltageProfiles: USB-C1: 140W (28V/5A), USB-C2: 100W, USB-A: 22.5W",
+        "compatibleEcosystems: MacBook Pro 16 (140W), Dell XPS, Gaming Laptops"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Space Gray with 240W Cable",
+      "source": "https://www.ugreen.com/products/ugreen-nexode-140w-usb-c-wall-charger",
+      "familyId": "ugreen:ugreen-nexode-140w-3port",
+      "provenance": "manufacturer_evidence",
+      "brand": "UGREEN",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "ugreen",
+        "modelName": "ugreen nexode 140w 3-port gan fast charger (pd 3.1)",
+        "totalWatts": 140,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.1 (EPR 28V/5A)",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1: 140W (28V/5A), USB-C2: 100W, USB-A: 22.5W",
+        "compatibleEcosystems": "MacBook Pro 16 (140W), Dell XPS, Gaming Laptops"
+      },
+      "media": {
+        "url": "https://www.ugreen.com/images/products/ugreen-nexode-140w-3port.jpg",
+        "source": "https://www.ugreen.com/products/ugreen-nexode-140w-usb-c-wall-charger",
+        "alt": "UGREEN UGREEN Nexode 140W 3-Port GaN Fast Charger (PD 3.1) official technical reference",
+        "attribution": "Product specifications and photography © UGREEN",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "UGREEN Nexode 140W 3-Port GaN Fast Charger (PD 3.1)",
+      "skuVariant": "Space Gray with 240W Cable",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 140,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-BELKIN-BELKIN-BOOSTCHARGE-PRO-65W-DUAL",
+      "name": "Belkin BoostCharge Pro 65W Dual USB-C GaN Charger with PPS",
+      "category": "chargers",
+      "description": "Belkin BoostCharge Pro 65W Dual USB-C GaN Charger with PPS (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Belkin",
+        "Model: BoostCharge Pro 65W Dual USB-C GaN Charger with PPS",
+        "Line: BoostCharge Pro",
+        "Generation / Release: 2022",
+        "totalWatts: 65",
+        "connectorType: 2x USB-C",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: Single USB-C: 65W | Dual USB-C: 45W + 20W",
+        "compatibleEcosystems: MacBook Pro + iPhone simultaneous, Galaxy PPS"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.belkin.com/in/dual-usb-c-gan-wall-charger-with-pps-65w/WCH013inWH.html",
+      "familyId": "belkin:belkin-boostcharge-pro-65w-dual",
+      "provenance": "manufacturer_evidence",
+      "brand": "Belkin",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge pro 65w dual usb-c gan charger with pps",
+        "totalWatts": 65,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single USB-C: 65W | Dual USB-C: 45W + 20W",
+        "compatibleEcosystems": "MacBook Pro + iPhone simultaneous, Galaxy PPS"
+      },
+      "media": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-pro-65w-dual.jpg",
+        "source": "https://www.belkin.com/in/dual-usb-c-gan-wall-charger-with-pps-65w/WCH013inWH.html",
+        "alt": "Belkin BoostCharge Pro 65W Dual USB-C GaN Charger with PPS official technical reference",
+        "attribution": "Product specifications and photography © Belkin",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "BoostCharge Pro 65W Dual USB-C GaN Charger with PPS",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-BELKIN-BELKIN-BOOSTCHARGE-PRO-140W-4PORT",
+      "name": "Belkin BoostCharge Pro 140W 4-Port GaN Wall Charger",
+      "category": "chargers",
+      "description": "Belkin BoostCharge Pro 140W 4-Port GaN Wall Charger (2023). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Belkin",
+        "Model: BoostCharge Pro 140W 4-Port GaN Wall Charger",
+        "Line: BoostCharge Pro",
+        "Generation / Release: 2023",
+        "totalWatts: 140",
+        "connectorType: 3x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.1 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: USB-C1: 140W max | Multi-port intelligent power sharing",
+        "compatibleEcosystems: MacBook Pro 16, PC Laptops, iPhone, iPad"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White with Interchangeable International Plugs",
+      "source": "https://www.belkin.com/in/4-port-usb-c-gan-wall-charger-140w/WCH014inWH.html",
+      "familyId": "belkin:belkin-boostcharge-pro-140w-4port",
+      "provenance": "manufacturer_evidence",
+      "brand": "Belkin",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge pro 140w 4-port gan wall charger",
+        "totalWatts": 140,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.1 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1: 140W max | Multi-port intelligent power sharing",
+        "compatibleEcosystems": "MacBook Pro 16, PC Laptops, iPhone, iPad"
+      },
+      "media": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-pro-140w-4port.jpg",
+        "source": "https://www.belkin.com/in/4-port-usb-c-gan-wall-charger-140w/WCH014inWH.html",
+        "alt": "Belkin BoostCharge Pro 140W 4-Port GaN Wall Charger official technical reference",
+        "attribution": "Product specifications and photography © Belkin",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "BoostCharge Pro 140W 4-Port GaN Wall Charger",
+      "skuVariant": "White with Interchangeable International Plugs",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 140,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-BELKIN-BELKIN-BOOSTCHARGE-30W-USB-C-PPS",
+      "name": "Belkin BoostCharge 30W USB-C GaN Wall Charger with PPS",
+      "category": "chargers",
+      "description": "Belkin BoostCharge 30W USB-C GaN Wall Charger with PPS (2022). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Belkin",
+        "Model: BoostCharge 30W USB-C GaN Wall Charger with PPS",
+        "Line: BoostCharge",
+        "Generation / Release: 2022",
+        "totalWatts: 30",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 3.3-11V/2.72A",
+        "compatibleEcosystems: iPhone 15/16, Galaxy S24, iPad Air"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.belkin.com/in/usb-c-gan-wall-charger-with-pps-30w/WCH009inWH.html",
+      "familyId": "belkin:belkin-boostcharge-30w-usb-c-pps",
+      "provenance": "manufacturer_evidence",
+      "brand": "Belkin",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge 30w usb-c gan wall charger with pps",
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 3.3-11V/2.72A",
+        "compatibleEcosystems": "iPhone 15/16, Galaxy S24, iPad Air"
+      },
+      "media": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-30w-usb-c-pps.jpg",
+        "source": "https://www.belkin.com/in/usb-c-gan-wall-charger-with-pps-30w/WCH009inWH.html",
+        "alt": "Belkin BoostCharge 30W USB-C GaN Wall Charger with PPS official technical reference",
+        "attribution": "Product specifications and photography © Belkin",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "BoostCharge 30W USB-C GaN Wall Charger with PPS",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 30,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-STUFFCOOL-STUFFCOOL-NAPOLEON-65W",
+      "name": "Stuffcool Napoleon 65W GaN Charger",
+      "category": "chargers",
+      "description": "Stuffcool Napoleon 65W GaN Charger (Current). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Stuffcool",
+        "Model: Napoleon 65W GaN Charger",
+        "Line: GaN Fast Charger",
+        "Generation / Release: Current",
+        "totalWatts: 65",
+        "connectorType: 1x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 65W Max Output",
+        "compatibleEcosystems: iPhone, iPad, MacBook Air, Samsung Galaxy"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.stuffcool.com/products/napoleon-65w",
+      "familyId": "stuffcool:stuffcool-napoleon-65w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Stuffcool",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "stuffcool",
+        "modelName": "napoleon 65w gan charger",
+        "totalWatts": 65,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "65W Max Output",
+        "compatibleEcosystems": "iPhone, iPad, MacBook Air, Samsung Galaxy"
+      },
+      "media": {
+        "url": "https://www.stuffcool.com/images/products/stuffcool-napoleon-65w.jpg",
+        "source": "https://www.stuffcool.com/products/napoleon-65w",
+        "alt": "Stuffcool Napoleon 65W GaN Charger official technical reference",
+        "attribution": "Product specifications and photography © Stuffcool",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Napoleon 65W GaN Charger",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-STUFFCOOL-STUFFCOOL-CENTURION-100W",
+      "name": "Stuffcool Centurion 100W 4-Port GaN Charger",
+      "category": "chargers",
+      "description": "Stuffcool Centurion 100W 4-Port GaN Charger (Current). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 7499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Stuffcool",
+        "Model: Centurion 100W 4-Port GaN Charger",
+        "Line: GaN Fast Charger",
+        "Generation / Release: Current",
+        "totalWatts: 100",
+        "connectorType: 2x USB-C + 2x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 100W Max Output",
+        "compatibleEcosystems: iPhone, iPad, MacBook Air, Samsung Galaxy"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.stuffcool.com/products/centurion-100w",
+      "familyId": "stuffcool:stuffcool-centurion-100w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Stuffcool",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "stuffcool",
+        "modelName": "centurion 100w 4-port gan charger",
+        "totalWatts": 100,
+        "connectorType": "2x USB-C + 2x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "100W Max Output",
+        "compatibleEcosystems": "iPhone, iPad, MacBook Air, Samsung Galaxy"
+      },
+      "media": {
+        "url": "https://www.stuffcool.com/images/products/stuffcool-centurion-100w.jpg",
+        "source": "https://www.stuffcool.com/products/centurion-100w",
+        "alt": "Stuffcool Centurion 100W 4-Port GaN Charger official technical reference",
+        "attribution": "Product specifications and photography © Stuffcool",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Centurion 100W 4-Port GaN Charger",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 100,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-STUFFCOOL-STUFFCOOL-FLOW-33W",
+      "name": "Stuffcool Flow 33W Dual Port GaN Charger",
+      "category": "chargers",
+      "description": "Stuffcool Flow 33W Dual Port GaN Charger (Current). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Stuffcool",
+        "Model: Flow 33W Dual Port GaN Charger",
+        "Line: GaN Fast Charger",
+        "Generation / Release: Current",
+        "totalWatts: 33",
+        "connectorType: 1x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 33W Max Output",
+        "compatibleEcosystems: iPhone, iPad, MacBook Air, Samsung Galaxy"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.stuffcool.com/products/flow-33w",
+      "familyId": "stuffcool:stuffcool-flow-33w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Stuffcool",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "stuffcool",
+        "modelName": "flow 33w dual port gan charger",
+        "totalWatts": 33,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "33W Max Output",
+        "compatibleEcosystems": "iPhone, iPad, MacBook Air, Samsung Galaxy"
+      },
+      "media": {
+        "url": "https://www.stuffcool.com/images/products/stuffcool-flow-33w.jpg",
+        "source": "https://www.stuffcool.com/products/flow-33w",
+        "alt": "Stuffcool Flow 33W Dual Port GaN Charger official technical reference",
+        "attribution": "Product specifications and photography © Stuffcool",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Flow 33W Dual Port GaN Charger",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 33,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-STUFFCOOL-STUFFCOOL-NEUTRON-20W",
+      "name": "Stuffcool Neutron 20W Tiny USB-C Charger",
+      "category": "chargers",
+      "description": "Stuffcool Neutron 20W Tiny USB-C Charger (Current). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Stuffcool",
+        "Model: Neutron 20W Tiny USB-C Charger",
+        "Line: GaN Fast Charger",
+        "Generation / Release: Current",
+        "totalWatts: 20",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: 20W Max Output",
+        "compatibleEcosystems: iPhone, iPad, MacBook Air, Samsung Galaxy"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.stuffcool.com/products/neutron-20w",
+      "familyId": "stuffcool:stuffcool-neutron-20w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Stuffcool",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "stuffcool",
+        "modelName": "neutron 20w tiny usb-c charger",
+        "totalWatts": 20,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "20W Max Output",
+        "compatibleEcosystems": "iPhone, iPad, MacBook Air, Samsung Galaxy"
+      },
+      "media": {
+        "url": "https://www.stuffcool.com/images/products/stuffcool-neutron-20w.jpg",
+        "source": "https://www.stuffcool.com/products/neutron-20w",
+        "alt": "Stuffcool Neutron 20W Tiny USB-C Charger official technical reference",
+        "attribution": "Product specifications and photography © Stuffcool",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Neutron 20W Tiny USB-C Charger",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 20,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-XIAOMI-XIAOMI-67W-SONICCHARGE",
+      "name": "Xiaomi Xiaomi 67W SonicCharge 3.0 Combo",
+      "category": "chargers",
+      "description": "Xiaomi Xiaomi 67W SonicCharge 3.0 Combo (Current). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Xiaomi",
+        "Model: Xiaomi 67W SonicCharge 3.0 Combo",
+        "Line: SonicCharge / HyperCharge",
+        "Generation / Release: Current",
+        "totalWatts: 67",
+        "connectorType: 1x USB-A",
+        "pdVersion: Qualcomm QC 3.0 / SonicCharge",
+        "ppsSupported: false",
+        "voltageProfiles: 67W Flash Charge",
+        "compatibleEcosystems: Xiaomi, Redmi, POCO, USB Devices"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.mi.com/in/product/67w-soniccharge",
+      "familyId": "xiaomi:xiaomi-67w-soniccharge",
+      "provenance": "manufacturer_evidence",
+      "brand": "Xiaomi",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "xiaomi",
+        "modelName": "xiaomi 67w soniccharge 3.0 combo",
+        "totalWatts": 67,
+        "connectorType": "1x USB-A",
+        "pdVersion": "Qualcomm QC 3.0 / SonicCharge",
+        "ppsSupported": false,
+        "voltageProfiles": "67W Flash Charge",
+        "compatibleEcosystems": "Xiaomi, Redmi, POCO, USB Devices"
+      },
+      "media": {
+        "url": "https://www.mi.com/images/products/xiaomi-67w-soniccharge.jpg",
+        "source": "https://www.mi.com/in/product/67w-soniccharge",
+        "alt": "Xiaomi Xiaomi 67W SonicCharge 3.0 Combo official technical reference",
+        "attribution": "Product specifications and photography © Xiaomi",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Xiaomi 67W SonicCharge 3.0 Combo",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 67,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-XIAOMI-XIAOMI-33W-SONICCHARGE",
+      "name": "Xiaomi Xiaomi 33W SonicCharge 2.0 Fast Charger",
+      "category": "chargers",
+      "description": "Xiaomi Xiaomi 33W SonicCharge 2.0 Fast Charger (Current). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Xiaomi",
+        "Model: Xiaomi 33W SonicCharge 2.0 Fast Charger",
+        "Line: SonicCharge / HyperCharge",
+        "Generation / Release: Current",
+        "totalWatts: 33",
+        "connectorType: 1x USB-A",
+        "pdVersion: Qualcomm QC 3.0",
+        "ppsSupported: false",
+        "voltageProfiles: 33W Flash Charge",
+        "compatibleEcosystems: Xiaomi, Redmi, POCO, USB Devices"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.mi.com/in/product/33w-soniccharge",
+      "familyId": "xiaomi:xiaomi-33w-soniccharge",
+      "provenance": "manufacturer_evidence",
+      "brand": "Xiaomi",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "xiaomi",
+        "modelName": "xiaomi 33w soniccharge 2.0 fast charger",
+        "totalWatts": 33,
+        "connectorType": "1x USB-A",
+        "pdVersion": "Qualcomm QC 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "33W Flash Charge",
+        "compatibleEcosystems": "Xiaomi, Redmi, POCO, USB Devices"
+      },
+      "media": {
+        "url": "https://www.mi.com/images/products/xiaomi-33w-soniccharge.jpg",
+        "source": "https://www.mi.com/in/product/33w-soniccharge",
+        "alt": "Xiaomi Xiaomi 33W SonicCharge 2.0 Fast Charger official technical reference",
+        "attribution": "Product specifications and photography © Xiaomi",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Xiaomi 33W SonicCharge 2.0 Fast Charger",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 33,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-XIAOMI-XIAOMI-120W-HYPERCHARGE",
+      "name": "Xiaomi Xiaomi 120W HyperCharge Adapter Combo",
+      "category": "chargers",
+      "description": "Xiaomi Xiaomi 120W HyperCharge Adapter Combo (Current). Official manufacturer specification recorded from IN technical documentation. DALE offer price and stock are simulated.",
+      "price": 2499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Xiaomi",
+        "Model: Xiaomi 120W HyperCharge Adapter Combo",
+        "Line: SonicCharge / HyperCharge",
+        "Generation / Release: Current",
+        "totalWatts: 120",
+        "connectorType: 1x USB-A",
+        "pdVersion: HyperCharge / PD",
+        "ppsSupported: false",
+        "voltageProfiles: 120W Flash Charge",
+        "compatibleEcosystems: Xiaomi, Redmi, POCO, USB Devices"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.mi.com/in/product/120w-hypercharge",
+      "familyId": "xiaomi:xiaomi-120w-hypercharge",
+      "provenance": "manufacturer_evidence",
+      "brand": "Xiaomi",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "IN verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "xiaomi",
+        "modelName": "xiaomi 120w hypercharge adapter combo",
+        "totalWatts": 120,
+        "connectorType": "1x USB-A",
+        "pdVersion": "HyperCharge / PD",
+        "ppsSupported": false,
+        "voltageProfiles": "120W Flash Charge",
+        "compatibleEcosystems": "Xiaomi, Redmi, POCO, USB Devices"
+      },
+      "media": {
+        "url": "https://www.mi.com/images/products/xiaomi-120w-hypercharge.jpg",
+        "source": "https://www.mi.com/in/product/120w-hypercharge",
+        "alt": "Xiaomi Xiaomi 120W HyperCharge Adapter Combo official technical reference",
+        "attribution": "Product specifications and photography © Xiaomi",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Xiaomi 120W HyperCharge Adapter Combo",
+      "skuVariant": "White",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 120,
+        "ppsSupported": false
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-BASEUS-BASEUS-GAN5-PRO-65W",
+      "name": "Baseus Baseus GaN5 Pro 65W Fast Charger",
+      "category": "chargers",
+      "description": "Baseus Baseus GaN5 Pro 65W Fast Charger (Current). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 4999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Baseus",
+        "Model: Baseus GaN5 Pro 65W Fast Charger",
+        "Line: GaN Pro Series",
+        "Generation / Release: Current",
+        "totalWatts: 65",
+        "connectorType: 2x USB-C + 1x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 65W GaN Output",
+        "compatibleEcosystems: MacBook Pro, iPhone, Galaxy, iPad"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.baseus.com/products/gan5-pro-65w",
+      "familyId": "baseus:baseus-gan5-pro-65w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Baseus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "baseus",
+        "modelName": "baseus gan5 pro 65w fast charger",
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "65W GaN Output",
+        "compatibleEcosystems": "MacBook Pro, iPhone, Galaxy, iPad"
+      },
+      "media": {
+        "url": "https://www.baseus.com/images/products/baseus-gan5-pro-65w.jpg",
+        "source": "https://www.baseus.com/products/gan5-pro-65w",
+        "alt": "Baseus Baseus GaN5 Pro 65W Fast Charger official technical reference",
+        "attribution": "Product specifications and photography © Baseus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Baseus GaN5 Pro 65W Fast Charger",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 65,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-BASEUS-BASEUS-GAN3-PRO-100W",
+      "name": "Baseus Baseus GaN3 Pro 100W 4-Port Charger",
+      "category": "chargers",
+      "description": "Baseus Baseus GaN3 Pro 100W 4-Port Charger (Current). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7499,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Baseus",
+        "Model: Baseus GaN3 Pro 100W 4-Port Charger",
+        "Line: GaN Pro Series",
+        "Generation / Release: Current",
+        "totalWatts: 100",
+        "connectorType: 2x USB-C + 2x USB-A",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 100W GaN Output",
+        "compatibleEcosystems: MacBook Pro, iPhone, Galaxy, iPad"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.baseus.com/products/gan3-pro-100w",
+      "familyId": "baseus:baseus-gan3-pro-100w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Baseus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "baseus",
+        "modelName": "baseus gan3 pro 100w 4-port charger",
+        "totalWatts": 100,
+        "connectorType": "2x USB-C + 2x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "100W GaN Output",
+        "compatibleEcosystems": "MacBook Pro, iPhone, Galaxy, iPad"
+      },
+      "media": {
+        "url": "https://www.baseus.com/images/products/baseus-gan3-pro-100w.jpg",
+        "source": "https://www.baseus.com/products/gan3-pro-100w",
+        "alt": "Baseus Baseus GaN3 Pro 100W 4-Port Charger official technical reference",
+        "attribution": "Product specifications and photography © Baseus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Baseus GaN3 Pro 100W 4-Port Charger",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 100,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    },
+    {
+      "id": "PROD-WALL-CHARGERS-BASEUS-BASEUS-GAN5-30W",
+      "name": "Baseus Baseus GaN5 30W Mini Fast Charger",
+      "category": "chargers",
+      "description": "Baseus Baseus GaN5 30W Mini Fast Charger (Current). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 2999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Baseus",
+        "Model: Baseus GaN5 30W Mini Fast Charger",
+        "Line: GaN Pro Series",
+        "Generation / Release: Current",
+        "totalWatts: 30",
+        "connectorType: 1x USB-C",
+        "pdVersion: USB-PD 3.0 PPS",
+        "ppsSupported: true",
+        "voltageProfiles: 30W GaN Output",
+        "compatibleEcosystems: MacBook Pro, iPhone, Galaxy, iPad"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.baseus.com/products/gan5-30w",
+      "familyId": "baseus:baseus-gan5-30w",
+      "provenance": "manufacturer_evidence",
+      "brand": "Baseus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "baseus",
+        "modelName": "baseus gan5 30w mini fast charger",
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "30W GaN Output",
+        "compatibleEcosystems": "MacBook Pro, iPhone, Galaxy, iPad"
+      },
+      "media": {
+        "url": "https://www.baseus.com/images/products/baseus-gan5-30w.jpg",
+        "source": "https://www.baseus.com/products/gan5-30w",
+        "alt": "Baseus Baseus GaN5 30W Mini Fast Charger official technical reference",
+        "attribution": "Product specifications and photography © Baseus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "wall-chargers",
+      "modelName": "Baseus GaN5 30W Mini Fast Charger",
+      "skuVariant": "Black",
+      "accessoryProtocols": {
+        "pdSupported": true,
+        "totalWatts": 30,
+        "ppsSupported": true
+      },
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra",
+        "pixel-9-pro"
+      ]
+    }
+  ]
+}

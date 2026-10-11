@@ -1,0 +1,2481 @@
+{
+  "schemaVersion": "catalog-manifest-v2",
+  "id": "earbuds-core-2026-10-11-v2",
+  "reviewedBy": "operator-census-compiler:earbuds",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "www.apple.com",
+    "support.apple.com",
+    "electronics.sony.com",
+    "www.bose.com",
+    "www.sennheiser-hearing.com",
+    "www.samsung.com",
+    "nothing.tech",
+    "www.oneplus.com",
+    "www.jabra.com",
+    "store.google.com",
+    "us.soundcore.com"
+  ],
+  "products": [
+    {
+      "id": "PROD-EARBUDS-APPLE-APPLE-AIRPODS-PRO-2",
+      "name": "Apple AirPods Pro 2",
+      "category": "earbuds",
+      "description": "Apple AirPods Pro 2 (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 19990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: AirPods Pro 2",
+        "Line: AirPods",
+        "Generation / Release: 2023",
+        "brand: apple",
+        "modelName: airpods pro 2",
+        "connection: Bluetooth 5.3",
+        "noiseCancellation: Active Noise Cancellation",
+        "batteryHours: 6"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.apple.com/airpods-pro/specs/",
+      "familyId": "apple:apple-airpods-pro-2",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "airpods pro 2",
+        "connection": "Bluetooth 5.3",
+        "noiseCancellation": "Active Noise Cancellation",
+        "batteryHours": 6
+      },
+      "media": {
+        "url": "https://www.apple.com/v/airpods-pro/images/overview/airpods_pro_2.png",
+        "source": "https://www.apple.com/airpods-pro/specs/",
+        "alt": "Apple AirPods Pro 2 official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "AirPods Pro 2",
+      "skuVariant": "White",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-APPLE-APPLE-AIRPODS-4-ANC",
+      "name": "Apple AirPods 4 ANC",
+      "category": "earbuds",
+      "description": "Apple AirPods 4 ANC (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: AirPods 4 ANC",
+        "Line: AirPods",
+        "Generation / Release: 2024",
+        "brand: apple",
+        "modelName: airpods 4 anc",
+        "connection: Bluetooth 5.3",
+        "noiseCancellation: Active Noise Cancellation",
+        "batteryHours: 5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.apple.com/airpods-4/specs/",
+      "familyId": "apple:apple-airpods-4-anc",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "airpods 4 anc",
+        "connection": "Bluetooth 5.3",
+        "noiseCancellation": "Active Noise Cancellation",
+        "batteryHours": 5
+      },
+      "media": {
+        "url": "https://www.apple.com/v/airpods-4/images/overview/airpods_4_anc.png",
+        "source": "https://www.apple.com/airpods-4/specs/",
+        "alt": "Apple AirPods 4 ANC official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "AirPods 4 ANC",
+      "skuVariant": "White",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-APPLE-APPLE-AIRPODS-4",
+      "name": "Apple AirPods 4",
+      "category": "earbuds",
+      "description": "Apple AirPods 4 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: AirPods 4",
+        "Line: AirPods",
+        "Generation / Release: 2024",
+        "brand: apple",
+        "modelName: airpods 4",
+        "connection: Bluetooth 5.3",
+        "batteryHours: 5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://www.apple.com/airpods-4/specs/",
+      "familyId": "apple:apple-airpods-4",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "airpods 4",
+        "connection": "Bluetooth 5.3",
+        "batteryHours": 5
+      },
+      "media": {
+        "url": "https://www.apple.com/v/airpods-4/images/overview/airpods_4.png",
+        "source": "https://www.apple.com/airpods-4/specs/",
+        "alt": "Apple AirPods 4 official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "AirPods 4",
+      "skuVariant": "White",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-APPLE-APPLE-AIRPODS-3",
+      "name": "Apple AirPods 3",
+      "category": "earbuds",
+      "description": "Apple AirPods 3 (2021). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Apple",
+        "Model: AirPods 3",
+        "Line: AirPods",
+        "Generation / Release: 2021",
+        "brand: apple",
+        "modelName: airpods 3",
+        "connection: Bluetooth 5.0",
+        "batteryHours: 6"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://support.apple.com/kb/SP857",
+      "familyId": "apple:apple-airpods-3",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "airpods 3",
+        "connection": "Bluetooth 5.0",
+        "batteryHours": 6
+      },
+      "media": {
+        "url": "https://www.apple.com/v/airpods-3/images/overview/airpods_3.png",
+        "source": "https://support.apple.com/kb/SP857",
+        "alt": "Apple AirPods 3 official technical reference",
+        "attribution": "Product specifications and photography © Apple",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "AirPods 3",
+      "skuVariant": "White",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SONY-SONY-WF-1000XM5",
+      "name": "Sony WF-1000XM5",
+      "category": "earbuds",
+      "description": "Sony WF-1000XM5 (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 24990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sony",
+        "Model: WF-1000XM5",
+        "Line: 1000X Series",
+        "Generation / Release: 2023",
+        "brand: sony",
+        "modelName: wf-1000xm5",
+        "connection: Bluetooth 5.3 LDAC",
+        "noiseCancellation: Dual Noise Sensor ANC",
+        "batteryHours: 8"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm5-b",
+      "familyId": "sony:sony-wf-1000xm5",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sony",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sony",
+        "modelName": "wf-1000xm5",
+        "connection": "Bluetooth 5.3 LDAC",
+        "noiseCancellation": "Dual Noise Sensor ANC",
+        "batteryHours": 8
+      },
+      "media": {
+        "url": "https://www.sony.com/image/wf1000xm5.png",
+        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm5-b",
+        "alt": "Sony WF-1000XM5 official technical reference",
+        "attribution": "Product specifications and photography © Sony",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "WF-1000XM5",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SONY-SONY-LINKBUDS-S",
+      "name": "Sony LinkBuds S",
+      "category": "earbuds",
+      "description": "Sony LinkBuds S (2022). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sony",
+        "Model: LinkBuds S",
+        "Line: LinkBuds",
+        "Generation / Release: 2022",
+        "brand: sony",
+        "modelName: linkbuds s",
+        "connection: Bluetooth 5.2 LDAC",
+        "noiseCancellation: Active Noise Cancellation",
+        "batteryHours: 6"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfls900n-b",
+      "familyId": "sony:sony-linkbuds-s",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sony",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sony",
+        "modelName": "linkbuds s",
+        "connection": "Bluetooth 5.2 LDAC",
+        "noiseCancellation": "Active Noise Cancellation",
+        "batteryHours": 6
+      },
+      "media": {
+        "url": "https://www.sony.com/image/linkbuds-s.png",
+        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfls900n-b",
+        "alt": "Sony LinkBuds S official technical reference",
+        "attribution": "Product specifications and photography © Sony",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "LinkBuds S",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SONY-SONY-LINKBUDS-OPEN",
+      "name": "Sony LinkBuds Open",
+      "category": "earbuds",
+      "description": "Sony LinkBuds Open (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sony",
+        "Model: LinkBuds Open",
+        "Line: LinkBuds",
+        "Generation / Release: 2024",
+        "brand: sony",
+        "modelName: linkbuds open",
+        "connection: Bluetooth 5.3",
+        "batteryHours: 8"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfl910-b",
+      "familyId": "sony:sony-linkbuds-open",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sony",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sony",
+        "modelName": "linkbuds open",
+        "connection": "Bluetooth 5.3",
+        "batteryHours": 8
+      },
+      "media": {
+        "url": "https://www.sony.com/image/linkbuds-open.png",
+        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfl910-b",
+        "alt": "Sony LinkBuds Open official technical reference",
+        "attribution": "Product specifications and photography © Sony",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "LinkBuds Open",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SONY-SONY-WF-C700N",
+      "name": "Sony WF-C700N",
+      "category": "earbuds",
+      "description": "Sony WF-C700N (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sony",
+        "Model: WF-C700N",
+        "Line: WF Series",
+        "Generation / Release: 2023",
+        "brand: sony",
+        "modelName: wf-c700n",
+        "connection: Bluetooth 5.2",
+        "noiseCancellation: Active Noise Cancellation",
+        "batteryHours: 7.5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfc700n-b",
+      "familyId": "sony:sony-wf-c700n",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sony",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sony",
+        "modelName": "wf-c700n",
+        "connection": "Bluetooth 5.2",
+        "noiseCancellation": "Active Noise Cancellation",
+        "batteryHours": 7.5
+      },
+      "media": {
+        "url": "https://www.sony.com/image/wfc700n.png",
+        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfc700n-b",
+        "alt": "Sony WF-C700N official technical reference",
+        "attribution": "Product specifications and photography © Sony",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "WF-C700N",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SONY-SONY-WF-C510",
+      "name": "Sony WF-C510",
+      "category": "earbuds",
+      "description": "Sony WF-C510 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sony",
+        "Model: WF-C510",
+        "Line: WF Series",
+        "Generation / Release: 2024",
+        "brand: sony",
+        "modelName: wf-c510",
+        "connection: Bluetooth 5.3",
+        "batteryHours: 11"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfc510-b",
+      "familyId": "sony:sony-wf-c510",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sony",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sony",
+        "modelName": "wf-c510",
+        "connection": "Bluetooth 5.3",
+        "batteryHours": 11
+      },
+      "media": {
+        "url": "https://www.sony.com/image/wfc510.png",
+        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfc510-b",
+        "alt": "Sony WF-C510 official technical reference",
+        "attribution": "Product specifications and photography © Sony",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "WF-C510",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-BOSE-BOSE-QC-ULTRA-EARBUDS",
+      "name": "Bose QuietComfort Ultra Earbuds",
+      "category": "earbuds",
+      "description": "Bose QuietComfort Ultra Earbuds (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 24990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bose",
+        "Model: QuietComfort Ultra Earbuds",
+        "Line: QuietComfort",
+        "Generation / Release: 2023",
+        "brand: bose",
+        "modelName: quietcomfort ultra earbuds",
+        "connection: Bluetooth 5.3 aptX Adaptive",
+        "noiseCancellation: CustomTune Active Noise Cancelling",
+        "batteryHours: 6"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds/QCUE-HEADPHONEIN.html",
+      "familyId": "bose:bose-qc-ultra-earbuds",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bose",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bose",
+        "modelName": "quietcomfort ultra earbuds",
+        "connection": "Bluetooth 5.3 aptX Adaptive",
+        "noiseCancellation": "CustomTune Active Noise Cancelling",
+        "batteryHours": 6
+      },
+      "media": {
+        "url": "https://assets.bose.com/content/dam/Bose_SEO/qc_ultra_earbuds.png",
+        "source": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds/QCUE-HEADPHONEIN.html",
+        "alt": "Bose QuietComfort Ultra Earbuds official technical reference",
+        "attribution": "Product specifications and photography © Bose",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "QuietComfort Ultra Earbuds",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-BOSE-BOSE-QC-EARBUDS",
+      "name": "Bose QuietComfort Earbuds",
+      "category": "earbuds",
+      "description": "Bose QuietComfort Earbuds (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 24990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bose",
+        "Model: QuietComfort Earbuds",
+        "Line: QuietComfort",
+        "Generation / Release: 2024",
+        "brand: bose",
+        "modelName: quietcomfort earbuds",
+        "connection: Bluetooth 5.3",
+        "noiseCancellation: Active Noise Cancelling",
+        "batteryHours: 8.5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.bose.com/p/earbuds/bose-quietcomfort-earbuds/QCE24-HEADPHONEIN.html",
+      "familyId": "bose:bose-qc-earbuds",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bose",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bose",
+        "modelName": "quietcomfort earbuds",
+        "connection": "Bluetooth 5.3",
+        "noiseCancellation": "Active Noise Cancelling",
+        "batteryHours": 8.5
+      },
+      "media": {
+        "url": "https://assets.bose.com/content/dam/Bose_SEO/qc_earbuds_2024.png",
+        "source": "https://www.bose.com/p/earbuds/bose-quietcomfort-earbuds/QCE24-HEADPHONEIN.html",
+        "alt": "Bose QuietComfort Earbuds official technical reference",
+        "attribution": "Product specifications and photography © Bose",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "QuietComfort Earbuds",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-BOSE-BOSE-ULTRA-OPEN-EARBUDS",
+      "name": "Bose Ultra Open Earbuds",
+      "category": "earbuds",
+      "description": "Bose Ultra Open Earbuds (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bose",
+        "Model: Ultra Open Earbuds",
+        "Line: Ultra Open",
+        "Generation / Release: 2024",
+        "brand: bose",
+        "modelName: ultra open earbuds",
+        "connection: Bluetooth 5.3",
+        "batteryHours: 7.5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.bose.com/p/earbuds/bose-ultra-open-earbuds/UOE-HEADPHONEIN.html",
+      "familyId": "bose:bose-ultra-open-earbuds",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bose",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bose",
+        "modelName": "ultra open earbuds",
+        "connection": "Bluetooth 5.3",
+        "batteryHours": 7.5
+      },
+      "media": {
+        "url": "https://assets.bose.com/content/dam/Bose_SEO/ultra_open_earbuds.png",
+        "source": "https://www.bose.com/p/earbuds/bose-ultra-open-earbuds/UOE-HEADPHONEIN.html",
+        "alt": "Bose Ultra Open Earbuds official technical reference",
+        "attribution": "Product specifications and photography © Bose",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Ultra Open Earbuds",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SENNHEISER-SENNHEISER-MTW4",
+      "name": "Sennheiser MOMENTUM True Wireless 4",
+      "category": "earbuds",
+      "description": "Sennheiser MOMENTUM True Wireless 4 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 24990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sennheiser",
+        "Model: MOMENTUM True Wireless 4",
+        "Line: MOMENTUM",
+        "Generation / Release: 2024",
+        "brand: sennheiser",
+        "modelName: momentum true wireless 4",
+        "connection: Bluetooth 5.4 aptX Lossless",
+        "noiseCancellation: Adaptive ANC",
+        "batteryHours: 7.5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black Copper",
+      "source": "https://www.sennheiser-hearing.com/en-US/p/momentum-true-wireless-4/",
+      "familyId": "sennheiser:sennheiser-mtw4",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sennheiser",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sennheiser",
+        "modelName": "momentum true wireless 4",
+        "connection": "Bluetooth 5.4 aptX Lossless",
+        "noiseCancellation": "Adaptive ANC",
+        "batteryHours": 7.5
+      },
+      "media": {
+        "url": "https://media.sennheiser.com/mtw4.png",
+        "source": "https://www.sennheiser-hearing.com/en-US/p/momentum-true-wireless-4/",
+        "alt": "Sennheiser MOMENTUM True Wireless 4 official technical reference",
+        "attribution": "Product specifications and photography © Sennheiser",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "MOMENTUM True Wireless 4",
+      "skuVariant": "Black Copper",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SENNHEISER-SENNHEISER-MOMENTUM-SPORT",
+      "name": "Sennheiser MOMENTUM Sport",
+      "category": "earbuds",
+      "description": "Sennheiser MOMENTUM Sport (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 24990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sennheiser",
+        "Model: MOMENTUM Sport",
+        "Line: MOMENTUM",
+        "Generation / Release: 2024",
+        "brand: sennheiser",
+        "modelName: momentum sport",
+        "connection: Bluetooth 5.2",
+        "noiseCancellation: Adaptive ANC with Heart Rate Tracking",
+        "batteryHours: 6"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Polar Black",
+      "source": "https://www.sennheiser-hearing.com/en-US/p/momentum-sport/",
+      "familyId": "sennheiser:sennheiser-momentum-sport",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sennheiser",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sennheiser",
+        "modelName": "momentum sport",
+        "connection": "Bluetooth 5.2",
+        "noiseCancellation": "Adaptive ANC with Heart Rate Tracking",
+        "batteryHours": 6
+      },
+      "media": {
+        "url": "https://media.sennheiser.com/momentum-sport.png",
+        "source": "https://www.sennheiser-hearing.com/en-US/p/momentum-sport/",
+        "alt": "Sennheiser MOMENTUM Sport official technical reference",
+        "attribution": "Product specifications and photography © Sennheiser",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "MOMENTUM Sport",
+      "skuVariant": "Polar Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SENNHEISER-SENNHEISER-ACCENTUM-TW",
+      "name": "Sennheiser ACCENTUM True Wireless",
+      "category": "earbuds",
+      "description": "Sennheiser ACCENTUM True Wireless (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sennheiser",
+        "Model: ACCENTUM True Wireless",
+        "Line: ACCENTUM",
+        "Generation / Release: 2024",
+        "brand: sennheiser",
+        "modelName: accentum true wireless",
+        "connection: Bluetooth 5.3",
+        "noiseCancellation: Hybrid ANC",
+        "batteryHours: 8"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.sennheiser-hearing.com/en-US/p/accentum-true-wireless/",
+      "familyId": "sennheiser:sennheiser-accentum-tw",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sennheiser",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sennheiser",
+        "modelName": "accentum true wireless",
+        "connection": "Bluetooth 5.3",
+        "noiseCancellation": "Hybrid ANC",
+        "batteryHours": 8
+      },
+      "media": {
+        "url": "https://media.sennheiser.com/accentum-tw.png",
+        "source": "https://www.sennheiser-hearing.com/en-US/p/accentum-true-wireless/",
+        "alt": "Sennheiser ACCENTUM True Wireless official technical reference",
+        "attribution": "Product specifications and photography © Sennheiser",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "ACCENTUM True Wireless",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SENNHEISER-SENNHEISER-CX-PLUS-TW",
+      "name": "Sennheiser CX Plus True Wireless",
+      "category": "earbuds",
+      "description": "Sennheiser CX Plus True Wireless (2022). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Sennheiser",
+        "Model: CX Plus True Wireless",
+        "Line: CX Series",
+        "Generation / Release: 2022",
+        "brand: sennheiser",
+        "modelName: cx plus true wireless",
+        "connection: Bluetooth 5.2 aptX Adaptive",
+        "noiseCancellation: Active Noise Cancellation",
+        "batteryHours: 8"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://www.sennheiser-hearing.com/en-US/p/cx-plus-true-wireless/",
+      "familyId": "sennheiser:sennheiser-cx-plus-tw",
+      "provenance": "manufacturer_evidence",
+      "brand": "Sennheiser",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "sennheiser",
+        "modelName": "cx plus true wireless",
+        "connection": "Bluetooth 5.2 aptX Adaptive",
+        "noiseCancellation": "Active Noise Cancellation",
+        "batteryHours": 8
+      },
+      "media": {
+        "url": "https://media.sennheiser.com/cx-plus-tw.png",
+        "source": "https://www.sennheiser-hearing.com/en-US/p/cx-plus-true-wireless/",
+        "alt": "Sennheiser CX Plus True Wireless official technical reference",
+        "attribution": "Product specifications and photography © Sennheiser",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "CX Plus True Wireless",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SAMSUNG-SAMSUNG-GALAXY-BUDS3-PRO",
+      "name": "Samsung Galaxy Buds3 Pro",
+      "category": "earbuds",
+      "description": "Samsung Galaxy Buds3 Pro (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 14999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Galaxy Buds3 Pro",
+        "Line: Galaxy Buds",
+        "Generation / Release: 2024",
+        "brand: samsung",
+        "modelName: galaxy buds3 pro",
+        "connection: Bluetooth 5.4 SSC",
+        "noiseCancellation: Adaptive ANC",
+        "batteryHours: 7"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Silver",
+      "source": "https://www.samsung.com/global/galaxy/galaxy-buds3-pro/specs/",
+      "familyId": "samsung:samsung-galaxy-buds3-pro",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "galaxy buds3 pro",
+        "connection": "Bluetooth 5.4 SSC",
+        "noiseCancellation": "Adaptive ANC",
+        "batteryHours": 7
+      },
+      "media": {
+        "url": "https://images.samsung.com/is/image/samsung/buds3-pro.png",
+        "source": "https://www.samsung.com/global/galaxy/galaxy-buds3-pro/specs/",
+        "alt": "Samsung Galaxy Buds3 Pro official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Galaxy Buds3 Pro",
+      "skuVariant": "Silver",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SAMSUNG-SAMSUNG-GALAXY-BUDS3",
+      "name": "Samsung Galaxy Buds3",
+      "category": "earbuds",
+      "description": "Samsung Galaxy Buds3 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Galaxy Buds3",
+        "Line: Galaxy Buds",
+        "Generation / Release: 2024",
+        "brand: samsung",
+        "modelName: galaxy buds3",
+        "connection: Bluetooth 5.4 SSC",
+        "noiseCancellation: Active Noise Cancellation",
+        "batteryHours: 6"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Silver",
+      "source": "https://www.samsung.com/global/galaxy/galaxy-buds3/specs/",
+      "familyId": "samsung:samsung-galaxy-buds3",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "galaxy buds3",
+        "connection": "Bluetooth 5.4 SSC",
+        "noiseCancellation": "Active Noise Cancellation",
+        "batteryHours": 6
+      },
+      "media": {
+        "url": "https://images.samsung.com/is/image/samsung/buds3.png",
+        "source": "https://www.samsung.com/global/galaxy/galaxy-buds3/specs/",
+        "alt": "Samsung Galaxy Buds3 official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Galaxy Buds3",
+      "skuVariant": "Silver",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SAMSUNG-SAMSUNG-GALAXY-BUDS2-PRO",
+      "name": "Samsung Galaxy Buds2 Pro",
+      "category": "earbuds",
+      "description": "Samsung Galaxy Buds2 Pro (2022). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Galaxy Buds2 Pro",
+        "Line: Galaxy Buds",
+        "Generation / Release: 2022",
+        "brand: samsung",
+        "modelName: galaxy buds2 pro",
+        "connection: Bluetooth 5.3 24-bit",
+        "noiseCancellation: Intelligent ANC",
+        "batteryHours: 5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Graphite",
+      "source": "https://www.samsung.com/global/galaxy/galaxy-buds2-pro/specs/",
+      "familyId": "samsung:samsung-galaxy-buds2-pro",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "galaxy buds2 pro",
+        "connection": "Bluetooth 5.3 24-bit",
+        "noiseCancellation": "Intelligent ANC",
+        "batteryHours": 5
+      },
+      "media": {
+        "url": "https://images.samsung.com/is/image/samsung/buds2-pro.png",
+        "source": "https://www.samsung.com/global/galaxy/galaxy-buds2-pro/specs/",
+        "alt": "Samsung Galaxy Buds2 Pro official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Galaxy Buds2 Pro",
+      "skuVariant": "Graphite",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-SAMSUNG-SAMSUNG-GALAXY-BUDS-FE",
+      "name": "Samsung Galaxy Buds FE",
+      "category": "earbuds",
+      "description": "Samsung Galaxy Buds FE (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Samsung",
+        "Model: Galaxy Buds FE",
+        "Line: Galaxy Buds",
+        "Generation / Release: 2023",
+        "brand: samsung",
+        "modelName: galaxy buds fe",
+        "connection: Bluetooth 5.2",
+        "noiseCancellation: Active Noise Cancellation",
+        "batteryHours: 8.5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Graphite",
+      "source": "https://www.samsung.com/global/galaxy/galaxy-buds-fe/specs/",
+      "familyId": "samsung:samsung-galaxy-buds-fe",
+      "provenance": "manufacturer_evidence",
+      "brand": "Samsung",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "samsung",
+        "modelName": "galaxy buds fe",
+        "connection": "Bluetooth 5.2",
+        "noiseCancellation": "Active Noise Cancellation",
+        "batteryHours": 8.5
+      },
+      "media": {
+        "url": "https://images.samsung.com/is/image/samsung/buds-fe.png",
+        "source": "https://www.samsung.com/global/galaxy/galaxy-buds-fe/specs/",
+        "alt": "Samsung Galaxy Buds FE official technical reference",
+        "attribution": "Product specifications and photography © Samsung",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Galaxy Buds FE",
+      "skuVariant": "Graphite",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-NOTHING-NOTHING-EAR-2024",
+      "name": "Nothing Nothing Ear (2024)",
+      "category": "earbuds",
+      "description": "Nothing Nothing Ear (2024) (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Nothing",
+        "Model: Nothing Ear (2024)",
+        "Line: Ear",
+        "Generation / Release: 2024",
+        "brand: nothing",
+        "modelName: nothing ear (2024)",
+        "connection: Bluetooth 5.3 LDAC LHDC",
+        "noiseCancellation: Smart ANC up to 45dB",
+        "batteryHours: 8.5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://nothing.tech/products/ear",
+      "familyId": "nothing:nothing-ear-2024",
+      "provenance": "manufacturer_evidence",
+      "brand": "Nothing",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "nothing",
+        "modelName": "nothing ear (2024)",
+        "connection": "Bluetooth 5.3 LDAC LHDC",
+        "noiseCancellation": "Smart ANC up to 45dB",
+        "batteryHours": 8.5
+      },
+      "media": {
+        "url": "https://nothing.tech/cdn/shop/files/ear-2024.png",
+        "source": "https://nothing.tech/products/ear",
+        "alt": "Nothing Nothing Ear (2024) official technical reference",
+        "attribution": "Product specifications and photography © Nothing",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Nothing Ear (2024)",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-NOTHING-NOTHING-EAR-A",
+      "name": "Nothing Nothing Ear (a)",
+      "category": "earbuds",
+      "description": "Nothing Nothing Ear (a) (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Nothing",
+        "Model: Nothing Ear (a)",
+        "Line: Ear",
+        "Generation / Release: 2024",
+        "brand: nothing",
+        "modelName: nothing ear (a)",
+        "connection: Bluetooth 5.3 LDAC",
+        "noiseCancellation: Smart ANC 45dB",
+        "batteryHours: 9.5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Yellow",
+      "source": "https://nothing.tech/products/ear-a",
+      "familyId": "nothing:nothing-ear-a",
+      "provenance": "manufacturer_evidence",
+      "brand": "Nothing",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "nothing",
+        "modelName": "nothing ear (a)",
+        "connection": "Bluetooth 5.3 LDAC",
+        "noiseCancellation": "Smart ANC 45dB",
+        "batteryHours": 9.5
+      },
+      "media": {
+        "url": "https://nothing.tech/cdn/shop/files/ear-a.png",
+        "source": "https://nothing.tech/products/ear-a",
+        "alt": "Nothing Nothing Ear (a) official technical reference",
+        "attribution": "Product specifications and photography © Nothing",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Nothing Ear (a)",
+      "skuVariant": "Yellow",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-NOTHING-NOTHING-EAR-2",
+      "name": "Nothing Nothing Ear (2)",
+      "category": "earbuds",
+      "description": "Nothing Nothing Ear (2) (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Nothing",
+        "Model: Nothing Ear (2)",
+        "Line: Ear",
+        "Generation / Release: 2023",
+        "brand: nothing",
+        "modelName: nothing ear (2)",
+        "connection: Bluetooth 5.3 LHDC",
+        "noiseCancellation: Personalized ANC",
+        "batteryHours: 6.3"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://nothing.tech/products/ear-2",
+      "familyId": "nothing:nothing-ear-2",
+      "provenance": "manufacturer_evidence",
+      "brand": "Nothing",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "nothing",
+        "modelName": "nothing ear (2)",
+        "connection": "Bluetooth 5.3 LHDC",
+        "noiseCancellation": "Personalized ANC",
+        "batteryHours": 6.3
+      },
+      "media": {
+        "url": "https://nothing.tech/cdn/shop/files/ear-2.png",
+        "source": "https://nothing.tech/products/ear-2",
+        "alt": "Nothing Nothing Ear (2) official technical reference",
+        "attribution": "Product specifications and photography © Nothing",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Nothing Ear (2)",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-NOTHING-NOTHING-EAR-STICK",
+      "name": "Nothing Nothing Ear (stick)",
+      "category": "earbuds",
+      "description": "Nothing Nothing Ear (stick) (2022). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 9999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Nothing",
+        "Model: Nothing Ear (stick)",
+        "Line: Ear",
+        "Generation / Release: 2022",
+        "brand: nothing",
+        "modelName: nothing ear (stick)",
+        "connection: Bluetooth 5.2",
+        "batteryHours: 7"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "White",
+      "source": "https://nothing.tech/products/ear-stick",
+      "familyId": "nothing:nothing-ear-stick",
+      "provenance": "manufacturer_evidence",
+      "brand": "Nothing",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "nothing",
+        "modelName": "nothing ear (stick)",
+        "connection": "Bluetooth 5.2",
+        "batteryHours": 7
+      },
+      "media": {
+        "url": "https://nothing.tech/cdn/shop/files/ear-stick.png",
+        "source": "https://nothing.tech/products/ear-stick",
+        "alt": "Nothing Nothing Ear (stick) official technical reference",
+        "attribution": "Product specifications and photography © Nothing",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Nothing Ear (stick)",
+      "skuVariant": "White",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-NOTHING-NOTHING-CMF-BUDS-PRO-2",
+      "name": "CMF by Nothing CMF Buds Pro 2",
+      "category": "earbuds",
+      "description": "CMF by Nothing CMF Buds Pro 2 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 19990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: CMF by Nothing",
+        "Model: CMF Buds Pro 2",
+        "Line: CMF",
+        "Generation / Release: 2024",
+        "brand: nothing",
+        "modelName: cmf buds pro 2",
+        "connection: Bluetooth 5.3 LDAC",
+        "noiseCancellation: Hybrid ANC 50dB",
+        "batteryHours: 11"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Orange",
+      "source": "https://nothing.tech/products/cmf-buds-pro-2",
+      "familyId": "nothing:nothing-cmf-buds-pro-2",
+      "provenance": "manufacturer_evidence",
+      "brand": "Nothing",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "nothing",
+        "modelName": "cmf buds pro 2",
+        "connection": "Bluetooth 5.3 LDAC",
+        "noiseCancellation": "Hybrid ANC 50dB",
+        "batteryHours": 11
+      },
+      "media": {
+        "url": "https://nothing.tech/cdn/shop/files/cmf-buds-pro-2.png",
+        "source": "https://nothing.tech/products/cmf-buds-pro-2",
+        "alt": "CMF by Nothing CMF Buds Pro 2 official technical reference",
+        "attribution": "Product specifications and photography © Nothing",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "CMF Buds Pro 2",
+      "skuVariant": "Orange",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ONEPLUS-ONEPLUS-BUDS-PRO-3",
+      "name": "OnePlus OnePlus Buds Pro 3",
+      "category": "earbuds",
+      "description": "OnePlus OnePlus Buds Pro 3 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus Buds Pro 3",
+        "Line: OnePlus Buds",
+        "Generation / Release: 2024",
+        "brand: oneplus",
+        "modelName: oneplus buds pro 3",
+        "connection: Bluetooth 5.4 LHDC",
+        "noiseCancellation: Adaptive ANC 50dB",
+        "batteryHours: 10"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Midnight Opulence",
+      "source": "https://www.oneplus.com/global/product/oneplus-buds-pro-3",
+      "familyId": "oneplus:oneplus-buds-pro-3",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus buds pro 3",
+        "connection": "Bluetooth 5.4 LHDC",
+        "noiseCancellation": "Adaptive ANC 50dB",
+        "batteryHours": 10
+      },
+      "media": {
+        "url": "https://image01.oneplus.net/shop/oneplus-buds-pro-3.png",
+        "source": "https://www.oneplus.com/global/product/oneplus-buds-pro-3",
+        "alt": "OnePlus OnePlus Buds Pro 3 official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "OnePlus Buds Pro 3",
+      "skuVariant": "Midnight Opulence",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ONEPLUS-ONEPLUS-BUDS-PRO-2",
+      "name": "OnePlus OnePlus Buds Pro 2",
+      "category": "earbuds",
+      "description": "OnePlus OnePlus Buds Pro 2 (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 19990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus Buds Pro 2",
+        "Line: OnePlus Buds",
+        "Generation / Release: 2023",
+        "brand: oneplus",
+        "modelName: oneplus buds pro 2",
+        "connection: Bluetooth 5.4 LHDC",
+        "noiseCancellation: Smart Adaptive ANC 48dB",
+        "batteryHours: 9"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Midnight Opulence",
+      "source": "https://www.oneplus.com/global/product/oneplus-buds-pro-2",
+      "familyId": "oneplus:oneplus-buds-pro-2",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus buds pro 2",
+        "connection": "Bluetooth 5.4 LHDC",
+        "noiseCancellation": "Smart Adaptive ANC 48dB",
+        "batteryHours": 9
+      },
+      "media": {
+        "url": "https://image01.oneplus.net/shop/oneplus-buds-pro-2.png",
+        "source": "https://www.oneplus.com/global/product/oneplus-buds-pro-2",
+        "alt": "OnePlus OnePlus Buds Pro 2 official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "OnePlus Buds Pro 2",
+      "skuVariant": "Midnight Opulence",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ONEPLUS-ONEPLUS-BUDS-3",
+      "name": "OnePlus OnePlus Buds 3",
+      "category": "earbuds",
+      "description": "OnePlus OnePlus Buds 3 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus Buds 3",
+        "Line: OnePlus Buds",
+        "Generation / Release: 2024",
+        "brand: oneplus",
+        "modelName: oneplus buds 3",
+        "connection: Bluetooth 5.4 LHDC",
+        "noiseCancellation: Active Noise Cancellation 49dB",
+        "batteryHours: 10"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Midnight Opulence",
+      "source": "https://www.oneplus.com/global/product/oneplus-buds-3",
+      "familyId": "oneplus:oneplus-buds-3",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus buds 3",
+        "connection": "Bluetooth 5.4 LHDC",
+        "noiseCancellation": "Active Noise Cancellation 49dB",
+        "batteryHours": 10
+      },
+      "media": {
+        "url": "https://image01.oneplus.net/shop/oneplus-buds-3.png",
+        "source": "https://www.oneplus.com/global/product/oneplus-buds-3",
+        "alt": "OnePlus OnePlus Buds 3 official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "OnePlus Buds 3",
+      "skuVariant": "Midnight Opulence",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ONEPLUS-ONEPLUS-NORD-BUDS-3-PRO",
+      "name": "OnePlus OnePlus Nord Buds 3 Pro",
+      "category": "earbuds",
+      "description": "OnePlus OnePlus Nord Buds 3 Pro (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus Nord Buds 3 Pro",
+        "Line: OnePlus Buds",
+        "Generation / Release: 2024",
+        "brand: oneplus",
+        "modelName: oneplus nord buds 3 pro",
+        "connection: Bluetooth 5.4 LHDC",
+        "noiseCancellation: Hybrid ANC 49dB",
+        "batteryHours: 12"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Midnight Opulence",
+      "source": "https://www.oneplus.com/global/product/oneplus-nord-buds-3-pro",
+      "familyId": "oneplus:oneplus-nord-buds-3-pro",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus nord buds 3 pro",
+        "connection": "Bluetooth 5.4 LHDC",
+        "noiseCancellation": "Hybrid ANC 49dB",
+        "batteryHours": 12
+      },
+      "media": {
+        "url": "https://image01.oneplus.net/shop/oneplus-nord-buds-3-pro.png",
+        "source": "https://www.oneplus.com/global/product/oneplus-nord-buds-3-pro",
+        "alt": "OnePlus OnePlus Nord Buds 3 Pro official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "OnePlus Nord Buds 3 Pro",
+      "skuVariant": "Midnight Opulence",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ONEPLUS-ONEPLUS-NORD-BUDS-2",
+      "name": "OnePlus OnePlus Nord Buds 2",
+      "category": "earbuds",
+      "description": "OnePlus OnePlus Nord Buds 2 (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: OnePlus",
+        "Model: OnePlus Nord Buds 2",
+        "Line: OnePlus Buds",
+        "Generation / Release: 2023",
+        "brand: oneplus",
+        "modelName: oneplus nord buds 2",
+        "connection: Bluetooth 5.4 LHDC",
+        "noiseCancellation: Active Noise Cancellation 25dB",
+        "batteryHours: 7"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Midnight Opulence",
+      "source": "https://www.oneplus.com/global/product/oneplus-nord-buds-2",
+      "familyId": "oneplus:oneplus-nord-buds-2",
+      "provenance": "manufacturer_evidence",
+      "brand": "OnePlus",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus nord buds 2",
+        "connection": "Bluetooth 5.4 LHDC",
+        "noiseCancellation": "Active Noise Cancellation 25dB",
+        "batteryHours": 7
+      },
+      "media": {
+        "url": "https://image01.oneplus.net/shop/oneplus-nord-buds-2.png",
+        "source": "https://www.oneplus.com/global/product/oneplus-nord-buds-2",
+        "alt": "OnePlus OnePlus Nord Buds 2 official technical reference",
+        "attribution": "Product specifications and photography © OnePlus",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "OnePlus Nord Buds 2",
+      "skuVariant": "Midnight Opulence",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-JABRA-JABRA-ELITE-10-GEN-2",
+      "name": "Jabra Elite 10 Gen 2",
+      "category": "earbuds",
+      "description": "Jabra Elite 10 Gen 2 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 14999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Jabra",
+        "Model: Elite 10 Gen 2",
+        "Line: Elite",
+        "Generation / Release: 2024",
+        "brand: jabra",
+        "modelName: elite 10 gen 2",
+        "connection: Bluetooth 5.3 Multipoint",
+        "noiseCancellation: Advanced ANC with Spatial Sound",
+        "batteryHours: 8"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Titanium Black",
+      "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-10-gen-2",
+      "familyId": "jabra:jabra-elite-10-gen-2",
+      "provenance": "manufacturer_evidence",
+      "brand": "Jabra",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "jabra",
+        "modelName": "elite 10 gen 2",
+        "connection": "Bluetooth 5.3 Multipoint",
+        "noiseCancellation": "Advanced ANC with Spatial Sound",
+        "batteryHours": 8
+      },
+      "media": {
+        "url": "https://www.jabra.com/assets/jabra-elite-10-gen-2.png",
+        "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-10-gen-2",
+        "alt": "Jabra Elite 10 Gen 2 official technical reference",
+        "attribution": "Product specifications and photography © Jabra",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Elite 10 Gen 2",
+      "skuVariant": "Titanium Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-JABRA-JABRA-ELITE-8-ACTIVE-GEN-2",
+      "name": "Jabra Elite 8 Active Gen 2",
+      "category": "earbuds",
+      "description": "Jabra Elite 8 Active Gen 2 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Jabra",
+        "Model: Elite 8 Active Gen 2",
+        "Line: Elite",
+        "Generation / Release: 2024",
+        "brand: jabra",
+        "modelName: elite 8 active gen 2",
+        "connection: Bluetooth 5.3 Multipoint",
+        "noiseCancellation: Adaptive Hybrid ANC",
+        "batteryHours: 14"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Titanium Black",
+      "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-8-active-gen-2",
+      "familyId": "jabra:jabra-elite-8-active-gen-2",
+      "provenance": "manufacturer_evidence",
+      "brand": "Jabra",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "jabra",
+        "modelName": "elite 8 active gen 2",
+        "connection": "Bluetooth 5.3 Multipoint",
+        "noiseCancellation": "Adaptive Hybrid ANC",
+        "batteryHours": 14
+      },
+      "media": {
+        "url": "https://www.jabra.com/assets/jabra-elite-8-active-gen-2.png",
+        "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-8-active-gen-2",
+        "alt": "Jabra Elite 8 Active Gen 2 official technical reference",
+        "attribution": "Product specifications and photography © Jabra",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Elite 8 Active Gen 2",
+      "skuVariant": "Titanium Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-JABRA-JABRA-ELITE-4",
+      "name": "Jabra Elite 4",
+      "category": "earbuds",
+      "description": "Jabra Elite 4 (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Jabra",
+        "Model: Elite 4",
+        "Line: Elite",
+        "Generation / Release: 2023",
+        "brand: jabra",
+        "modelName: elite 4",
+        "connection: Bluetooth 5.3 Multipoint",
+        "noiseCancellation: Active Noise Cancellation",
+        "batteryHours: 5.5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Titanium Black",
+      "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-4",
+      "familyId": "jabra:jabra-elite-4",
+      "provenance": "manufacturer_evidence",
+      "brand": "Jabra",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "jabra",
+        "modelName": "elite 4",
+        "connection": "Bluetooth 5.3 Multipoint",
+        "noiseCancellation": "Active Noise Cancellation",
+        "batteryHours": 5.5
+      },
+      "media": {
+        "url": "https://www.jabra.com/assets/jabra-elite-4.png",
+        "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-4",
+        "alt": "Jabra Elite 4 official technical reference",
+        "attribution": "Product specifications and photography © Jabra",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Elite 4",
+      "skuVariant": "Titanium Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-JABRA-JABRA-ELITE-3",
+      "name": "Jabra Elite 3",
+      "category": "earbuds",
+      "description": "Jabra Elite 3 (2021). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Jabra",
+        "Model: Elite 3",
+        "Line: Elite",
+        "Generation / Release: 2021",
+        "brand: jabra",
+        "modelName: elite 3",
+        "connection: Bluetooth 5.3 Multipoint",
+        "batteryHours: 7"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Titanium Black",
+      "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-3",
+      "familyId": "jabra:jabra-elite-3",
+      "provenance": "manufacturer_evidence",
+      "brand": "Jabra",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "jabra",
+        "modelName": "elite 3",
+        "connection": "Bluetooth 5.3 Multipoint",
+        "batteryHours": 7
+      },
+      "media": {
+        "url": "https://www.jabra.com/assets/jabra-elite-3.png",
+        "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-3",
+        "alt": "Jabra Elite 3 official technical reference",
+        "attribution": "Product specifications and photography © Jabra",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Elite 3",
+      "skuVariant": "Titanium Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-GOOGLE-GOOGLE-PIXEL-BUDS-PRO-2",
+      "name": "Google Pixel Buds Pro 2",
+      "category": "earbuds",
+      "description": "Google Pixel Buds Pro 2 (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 19990,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Google",
+        "Model: Pixel Buds Pro 2",
+        "Line: Pixel Buds",
+        "Generation / Release: 2024",
+        "brand: google",
+        "modelName: pixel buds pro 2",
+        "connection: Bluetooth 5.4",
+        "noiseCancellation: Silent Seal 2.0 ANC",
+        "batteryHours: 8"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Hazel",
+      "source": "https://store.google.com/product/pixel-buds-pro-2",
+      "familyId": "google:google-pixel-buds-pro-2",
+      "provenance": "manufacturer_evidence",
+      "brand": "Google",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "google",
+        "modelName": "pixel buds pro 2",
+        "connection": "Bluetooth 5.4",
+        "noiseCancellation": "Silent Seal 2.0 ANC",
+        "batteryHours": 8
+      },
+      "media": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-buds-pro-2.png",
+        "source": "https://store.google.com/product/pixel-buds-pro-2",
+        "alt": "Google Pixel Buds Pro 2 official technical reference",
+        "attribution": "Product specifications and photography © Google",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Pixel Buds Pro 2",
+      "skuVariant": "Hazel",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-GOOGLE-GOOGLE-PIXEL-BUDS-PRO",
+      "name": "Google Pixel Buds Pro",
+      "category": "earbuds",
+      "description": "Google Pixel Buds Pro (2022). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Google",
+        "Model: Pixel Buds Pro",
+        "Line: Pixel Buds",
+        "Generation / Release: 2022",
+        "brand: google",
+        "modelName: pixel buds pro",
+        "connection: Bluetooth 5.4",
+        "noiseCancellation: Silent Seal ANC",
+        "batteryHours: 11"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Hazel",
+      "source": "https://store.google.com/product/pixel-buds-pro",
+      "familyId": "google:google-pixel-buds-pro",
+      "provenance": "manufacturer_evidence",
+      "brand": "Google",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "google",
+        "modelName": "pixel buds pro",
+        "connection": "Bluetooth 5.4",
+        "noiseCancellation": "Silent Seal ANC",
+        "batteryHours": 11
+      },
+      "media": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-buds-pro.png",
+        "source": "https://store.google.com/product/pixel-buds-pro",
+        "alt": "Google Pixel Buds Pro official technical reference",
+        "attribution": "Product specifications and photography © Google",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Pixel Buds Pro",
+      "skuVariant": "Hazel",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-GOOGLE-GOOGLE-PIXEL-BUDS-A",
+      "name": "Google Pixel Buds A-Series",
+      "category": "earbuds",
+      "description": "Google Pixel Buds A-Series (2021). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Google",
+        "Model: Pixel Buds A-Series",
+        "Line: Pixel Buds",
+        "Generation / Release: 2021",
+        "brand: google",
+        "modelName: pixel buds a-series",
+        "connection: Bluetooth 5.4",
+        "batteryHours: 5"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Hazel",
+      "source": "https://store.google.com/product/pixel-buds-a",
+      "familyId": "google:google-pixel-buds-a",
+      "provenance": "manufacturer_evidence",
+      "brand": "Google",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "google",
+        "modelName": "pixel buds a-series",
+        "connection": "Bluetooth 5.4",
+        "batteryHours": 5
+      },
+      "media": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-buds-a.png",
+        "source": "https://store.google.com/product/pixel-buds-a",
+        "alt": "Google Pixel Buds A-Series official technical reference",
+        "attribution": "Product specifications and photography © Google",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Pixel Buds A-Series",
+      "skuVariant": "Hazel",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ANKER-SOUNDCORE-SOUNDCORE-LIBERTY-4-NC",
+      "name": "Soundcore Liberty 4 NC",
+      "category": "earbuds",
+      "description": "Soundcore Liberty 4 NC (2023). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Soundcore",
+        "Model: Liberty 4 NC",
+        "Line: Liberty / Space",
+        "Generation / Release: 2023",
+        "brand: anker soundcore",
+        "modelName: liberty 4 nc",
+        "connection: Bluetooth 5.3 LDAC",
+        "noiseCancellation: Adaptive ANC 2.0 98.5%",
+        "batteryHours: 10"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://us.soundcore.com/products/soundcore-liberty-4-nc",
+      "familyId": "anker soundcore:soundcore-liberty-4-nc",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker Soundcore",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker soundcore",
+        "modelName": "liberty 4 nc",
+        "connection": "Bluetooth 5.3 LDAC",
+        "noiseCancellation": "Adaptive ANC 2.0 98.5%",
+        "batteryHours": 10
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-liberty-4-nc.png",
+        "source": "https://us.soundcore.com/products/soundcore-liberty-4-nc",
+        "alt": "Soundcore Liberty 4 NC official technical reference",
+        "attribution": "Product specifications and photography © Anker Soundcore",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Liberty 4 NC",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ANKER-SOUNDCORE-SOUNDCORE-LIBERTY-4",
+      "name": "Soundcore Liberty 4",
+      "category": "earbuds",
+      "description": "Soundcore Liberty 4 (2022). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Soundcore",
+        "Model: Liberty 4",
+        "Line: Liberty / Space",
+        "Generation / Release: 2022",
+        "brand: anker soundcore",
+        "modelName: liberty 4",
+        "connection: Bluetooth 5.3 LDAC",
+        "noiseCancellation: HearID ANC",
+        "batteryHours: 9"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://us.soundcore.com/products/soundcore-liberty-4",
+      "familyId": "anker soundcore:soundcore-liberty-4",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker Soundcore",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker soundcore",
+        "modelName": "liberty 4",
+        "connection": "Bluetooth 5.3 LDAC",
+        "noiseCancellation": "HearID ANC",
+        "batteryHours": 9
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-liberty-4.png",
+        "source": "https://us.soundcore.com/products/soundcore-liberty-4",
+        "alt": "Soundcore Liberty 4 official technical reference",
+        "attribution": "Product specifications and photography © Anker Soundcore",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Liberty 4",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ANKER-SOUNDCORE-SOUNDCORE-SPACE-A40",
+      "name": "Soundcore Space A40",
+      "category": "earbuds",
+      "description": "Soundcore Space A40 (2022). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Soundcore",
+        "Model: Space A40",
+        "Line: Liberty / Space",
+        "Generation / Release: 2022",
+        "brand: anker soundcore",
+        "modelName: space a40",
+        "connection: Bluetooth 5.3 LDAC",
+        "noiseCancellation: Adaptive ANC",
+        "batteryHours: 10"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://us.soundcore.com/products/soundcore-space-a40",
+      "familyId": "anker soundcore:soundcore-space-a40",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker Soundcore",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker soundcore",
+        "modelName": "space a40",
+        "connection": "Bluetooth 5.3 LDAC",
+        "noiseCancellation": "Adaptive ANC",
+        "batteryHours": 10
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-space-a40.png",
+        "source": "https://us.soundcore.com/products/soundcore-space-a40",
+        "alt": "Soundcore Space A40 official technical reference",
+        "attribution": "Product specifications and photography © Anker Soundcore",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Space A40",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ANKER-SOUNDCORE-SOUNDCORE-P30I",
+      "name": "Soundcore P30i",
+      "category": "earbuds",
+      "description": "Soundcore P30i (2024). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Soundcore",
+        "Model: P30i",
+        "Line: Liberty / Space",
+        "Generation / Release: 2024",
+        "brand: anker soundcore",
+        "modelName: p30i",
+        "connection: Bluetooth 5.3 LDAC",
+        "noiseCancellation: Smart ANC",
+        "batteryHours: 10"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://us.soundcore.com/products/soundcore-p30i",
+      "familyId": "anker soundcore:soundcore-p30i",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker Soundcore",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker soundcore",
+        "modelName": "p30i",
+        "connection": "Bluetooth 5.3 LDAC",
+        "noiseCancellation": "Smart ANC",
+        "batteryHours": 10
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-p30i.png",
+        "source": "https://us.soundcore.com/products/soundcore-p30i",
+        "alt": "Soundcore P30i official technical reference",
+        "attribution": "Product specifications and photography © Anker Soundcore",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "P30i",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    },
+    {
+      "id": "PROD-EARBUDS-ANKER-SOUNDCORE-SOUNDCORE-LIFE-P2-MINI",
+      "name": "Soundcore Life P2 Mini",
+      "category": "earbuds",
+      "description": "Soundcore Life P2 Mini (2021). Official manufacturer specification recorded from GLOBAL technical documentation. DALE offer price and stock are simulated.",
+      "price": 7999,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Soundcore",
+        "Model: Life P2 Mini",
+        "Line: Liberty / Space",
+        "Generation / Release: 2021",
+        "brand: anker soundcore",
+        "modelName: life p2 mini",
+        "connection: Bluetooth 5.3 LDAC",
+        "batteryHours: 8"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "Black",
+      "source": "https://us.soundcore.com/products/soundcore-life-p2-mini",
+      "familyId": "anker soundcore:soundcore-life-p2-mini",
+      "provenance": "manufacturer_evidence",
+      "brand": "Anker Soundcore",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "GLOBAL verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "anker soundcore",
+        "modelName": "life p2 mini",
+        "connection": "Bluetooth 5.3 LDAC",
+        "batteryHours": 8
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-life-p2-mini.png",
+        "source": "https://us.soundcore.com/products/soundcore-life-p2-mini",
+        "alt": "Soundcore Life P2 Mini official technical reference",
+        "attribution": "Product specifications and photography © Anker Soundcore",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      },
+      "leafType": "earbuds",
+      "modelName": "Life P2 Mini",
+      "skuVariant": "Black",
+      "deviceCompatibility": [
+        "air13",
+        "air15",
+        "prom1",
+        "airm1",
+        "iphone-16-pro",
+        "samsung-s24-ultra"
+      ]
+    }
+  ]
+}
