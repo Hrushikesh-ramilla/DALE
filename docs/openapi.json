@@ -671,8 +671,60 @@
               "docks",
               "storage",
               "audio",
-              "accessories"
+              "accessories",
+              "clothing",
+              "fragrance",
+              "bags",
+              "home",
+              "beauty"
             ]
+          },
+          "requirements": {
+            "type": "object",
+            "properties": {
+              "productType": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60
+              },
+              "material": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60
+              },
+              "size": {
+                "type": "string",
+                "enum": [
+                  "S",
+                  "M",
+                  "L"
+                ]
+              },
+              "scent": {
+                "type": "string",
+                "enum": [
+                  "citrus",
+                  "floral",
+                  "woody",
+                  "gourmand",
+                  "fresh",
+                  "amber",
+                  "aromatic",
+                  "spicy"
+                ]
+              },
+              "use": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60
+              },
+              "volumeMl": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 1000
+              }
+            },
+            "additionalProperties": false
           },
           "budget": {
             "type": "integer",
@@ -748,9 +800,97 @@
     }
   },
   "paths": {
+    "/api/catalog": {
+      "get": {
+        "description": "Public persisted catalog: strict department attributes, name, budget and page queries. Returns up to 48 exact variant records, totals and provenance. Sample stock is not proof of physical inventory.",
+        "security": [],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "budget",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "productType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "material",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "scent",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "volumeMl",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Paginated catalog records and six departments."
+          },
+          "400": {
+            "description": "Invalid fields, unsafe state transition, changed approval, or integrity error."
+          }
+        }
+      }
+    },
     "/api/agent": {
       "post": {
-        "description": "Buyer-only bounded task execution: explicit sample-device shopping, own-order navigation and support draft preparation. No arbitrary real-product research, model request or financial authorization. Persists a private receipt of completed actions, bounded to twelve tasks per shopper. Session identity guards prevent stale browser tasks. Limit 10 tasks/actor/minute, shared demo analysis lifetime limit of 50. Mutations require an Origin header matching the configured app origin.",
+        "description": "Buyer-only validated tool workflows: sourced electronics research, six-department exact-variant shopping, group discovery, own-order navigation and support draft preparation. Financial authorization remains separate; arbitrary external-store inventory is not connected. Persists a private receipt of completed actions, bounded to twelve tasks per shopper. Session identity guards prevent stale browser tasks. Limit 10 tasks/actor/minute, shared demo analysis lifetime limit of 50. Mutations require an Origin header matching the configured app origin.",
         "security": [
           {
             "session": []
@@ -779,7 +919,8 @@
                       "MacBook Air (13-inch, M2, 2022)",
                       "MacBook Air (15-inch, M2, 2023)",
                       "MacBook Air (M1, 2020)",
-                      "MacBook Pro (13-inch, M1, 2020)"
+                      "MacBook Pro (13-inch, M1, 2020)",
+                      "not-required"
                     ]
                   },
                   "budget": {
@@ -1061,7 +1202,8 @@
                       "MacBook Air (13-inch, M2, 2022)",
                       "MacBook Air (15-inch, M2, 2023)",
                       "MacBook Air (M1, 2020)",
-                      "MacBook Pro (13-inch, M1, 2020)"
+                      "MacBook Pro (13-inch, M1, 2020)",
+                      "not-required"
                     ]
                   },
                   "budget": {
@@ -1358,7 +1500,7 @@
     },
     "/api/shopping": {
       "post": {
-        "description": "Save the brief and retrieve compatible, budget-eligible catalog results plus labeled fixture/live analysis. Mutations require an Origin header matching the configured app origin.",
+        "description": "Save the brief and retrieve device- or attribute-eligible catalog variants within budget, with labeled fixture/live analysis. Mutations require an Origin header matching the configured app origin.",
         "security": [
           {
             "session": []

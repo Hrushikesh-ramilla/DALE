@@ -1,16 +1,32 @@
 import { z } from "zod";
+import { categoryIds } from "./departments";
 
 export const briefSchema = z.object({
   message: z.string().max(2000),
   model: z.string().max(80),
-  category: z.enum([
-    "",
-    "chargers",
-    "docks",
-    "storage",
-    "audio",
-    "accessories",
-  ]),
+  category: z.enum(["", ...categoryIds]),
+  requirements: z
+    .object({
+      productType: z.string().trim().toLowerCase().min(1).max(60).optional(),
+      material: z.string().trim().toLowerCase().min(1).max(60).optional(),
+      size: z.enum(["S", "M", "L"]).optional(),
+      scent: z
+        .enum([
+          "citrus",
+          "floral",
+          "woody",
+          "gourmand",
+          "fresh",
+          "amber",
+          "aromatic",
+          "spicy",
+        ])
+        .optional(),
+      use: z.string().trim().toLowerCase().min(1).max(60).optional(),
+      volumeMl: z.number().int().min(1).max(1000).optional(),
+    })
+    .strict()
+    .optional(),
   budget: z.number().int().min(1).max(100000),
   preference: z.string().trim().max(80).default(""),
   priority: z.enum(["price", "features"]).default("price"),

@@ -7,7 +7,8 @@ import { resolve } from "node:path";
 const release = process.argv[2];
 if (!release || !/^[a-zA-Z0-9._-]+$/.test(release))
   throw new Error("Supply a unique release identifier.");
-const instanceHost = "ec2-3-7-253-85.ap-south-1.compute.amazonaws.com";
+const instanceHost = process.env.DEPLOY_SSH_HOST || "65.0.19.200";
+if (!/^[a-zA-Z0-9.-]+$/.test(instanceHost)) throw new Error("Invalid deployment hostname.");
 const connection = process.argv.slice(3);
 if (
   connection.length &&

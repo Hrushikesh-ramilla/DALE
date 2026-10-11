@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { isRetailCategory } from "./departments";
 import { knownModels as models } from "./catalog";
 import type { ResearchContext } from "./agent-plan";
 import type { ResearchReport } from "./research";
@@ -67,7 +68,7 @@ export function understandAgent(input: AgentRequest): VoiceIntent {
     model: input.model,
     budget: input.budget,
   });
-  if (intent.kind !== "shopping") return intent;
+  if (intent.kind !== "shopping" || isRetailCategory(intent.brief.category)) return intent;
   // A free-text real device must never silently inherit the default demo model.
   if (!mentionedModels(input.task).length)
     return {

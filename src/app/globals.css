@@ -2956,3 +2956,9 @@ summary {
     grid-template-columns: 1fr;
   }
 }
+
+/* Department requirements stay alongside the agent and exact variants. */
+.retail-filters { display: flex; flex-wrap: wrap; gap: 16px; padding: 20px 0; border-bottom: 1px solid #ffffff24; }
+.retail-filters label { display: grid; gap: 8px; min-width: 150px; font-size: 13px; }
+.retail-filters select { background: #191919; color: #eee9df; border: 1px solid #ffffff30; border-radius: 8px; padding: 10px 12px; }
+.retail-filters p { flex-basis: 100%; margin: 0; font-size: 12px; }

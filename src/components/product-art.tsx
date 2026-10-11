@@ -1,4 +1,6 @@
 "use client";
+import { isRetailCategory } from "@/domain/departments";
+import { RetailArt } from "./retail-art";
 import { useId } from "react";
 import type { Product } from "@/domain/catalog";
 
@@ -10,6 +12,7 @@ export function ProductArt({
   compact?: boolean;
 }) {
   const id = useId().replaceAll(":", "");
+  if (isRetailCategory(product.category)) return <RetailArt product={product} compact={compact} id={id} />;
   const paint = (name: string) => `url(#${id}-${name})`;
   const finish = product.name.split(" · ")[1];
   const body =

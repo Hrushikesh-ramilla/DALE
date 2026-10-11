@@ -1,4 +1,6 @@
 "use client";
+import { RetailFilters } from "./retail-filters";
+import { categoryTitles as titles, categoryIds, departments, isRetailCategory, lifestyleProfile } from "@/domain/departments";
 import { CustomerEntry } from "./customer-entry";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
@@ -27,6 +29,8 @@ import {
   deviceLabel,
   deviceText,
   productById,
+  productFits,
+  type RetailRequirements,
   searchCatalog,
   type Product,
 } from "@/domain/catalog";
@@ -50,66 +54,14 @@ import { CinematicIntro } from "./cinematic-intro";
 import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 
-const categoryTitles: Record<string, string> = {
-  chargers: "Power & Charging",
-  docks: "Desk & Connectivity",
-  audio: "Sound & Acoustics",
-  storage: "High-Speed Storage & Carry",
-  accessories: "Precision Input & Essentials",
-};
-
-const parallaxCategories = [
-  {
-    id: "chargers",
-    numeral: "01 / 05",
-    tagline: "POWER & ENERGY",
-    title: "Power & Charging",
-    desc: "Precision gallium nitride (GaN) architecture engineered for thermal efficiency, ultra-compact form factors, and verified fast-charging protocols across USB-C PD and legacy profiles.",
-    tags: ["65W–100W GaN", "USB-C PD 3.0", "Thermal Guard", "Braided Cabling"],
-    featured: catalog[0],
-    count: catalog.filter((item) => item.category === "chargers").length,
-  },
-  {
-    id: "docks",
-    numeral: "02 / 05",
-    tagline: "CONNECTIVITY & EXPANSION",
-    title: "Desk & Connectivity",
-    desc: "Transform single-port setups into unified multi-display workstations. Certified DisplayPort alt-mode, 4K HDMI streaming, gigabit Ethernet, and high-wattage power passthrough.",
-    tags: ["4K HDMI", "DisplayPort Alt-Mode", "60W Passthrough", "Multi-Port Hub"],
-    featured: catalog[3],
-    count: catalog.filter((item) => item.category === "docks").length,
-  },
-  {
-    id: "audio",
-    numeral: "03 / 05",
-    tagline: "ACOUSTICS & FOCUS",
-    title: "Sound & Acoustics",
-    desc: "Acoustic-sealed wireless audio crafted for deep focus, travel, and clean voice clarity. Low-latency transmission with USB-C fast recharging and fold-flat portability.",
-    tags: ["High-Fidelity Audio", "Active Isolation", "USB-C Fast Recharge", "Fold-Flat"],
-    featured: catalog[5],
-    count: catalog.filter((item) => item.category === "audio").length,
-  },
-  {
-    id: "storage",
-    numeral: "04 / 05",
-    tagline: "DATA & MOBILITY",
-    title: "High-Speed Storage & Carry",
-    desc: "Solid-state storage encased in aerospace-grade anodized aluminum. High-bandwidth NVMe read/write speeds with universal USB-C and USB-A legacy versatility.",
-    tags: ["1050 MB/s NVMe", "Anodized Aluminum", "Shock Resistant", "512GB Capacity"],
-    featured: catalog[4],
-    count: catalog.filter((item) => item.category === "storage").length,
-  },
-  {
-    id: "accessories",
-    numeral: "05 / 05",
-    tagline: "PRECISION & TACTILE",
-    title: "Precision Input & Essentials",
-    desc: "Silent-click mechanical switches, ergonomic palm contours, and reinforced high-amperage cables designed for seamless everyday execution.",
-    tags: ["Silent Switches", "Ergonomic Sculpt", "Braided Sleeving", "Low-Latency Optical"],
-    featured: catalog[6],
-    count: catalog.filter((item) => item.category === "accessories").length,
-  },
-];
+const categoryTitles: Record<string, string> = titles;
+const parallaxCategories = departments.map((department, index) => ({
+  id: department.categories[0], numeral: `0${index + 1} / 06`, tagline: "SHOP WITH DALE",
+  title: department.title, desc: department.description,
+  tags: department.id === "electronics" ? ["Device requirements", "Protected approval"] : ["Exact variants", "Attribute comparison", "Group savings"],
+  featured: catalog.find((product) => department.categories.some((category) => category === product.category))!,
+  count: catalog.filter((product) => department.categories.some((category) => category === product.category)).length,
+}));
 
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
@@ -243,6 +195,7 @@ export default function Storefront() {
     [workspaceId, setWorkspaceId] = useState(""),
     [invite, setInvite] = useState("");
   const [questions, setQuestions] = useState<string[]>([]);
+  const [requirements, setRequirements] = useState<RetailRequirements>({});
   const [catalogQuery, setCatalogQuery] = useState("");
   const [visibleLimit, setVisibleLimit] = useState(12);
   const visibleProducts = products.filter((product) =>
@@ -263,6 +216,7 @@ export default function Storefront() {
       const input = data.brief.input;
       setModel(input.model);
       setCategory(input.category);
+      setRequirements(input.requirements || {});
       setBudget(String(input.budget / 100));
       setMessage(input.message);
       setPreference(input.preference);
@@ -426,6 +380,7 @@ export default function Storefront() {
         priority,
         weights,
         confirmConstraints,
+        requirements: isRetailCategory(category) ? requirements : undefined,
       });
       setProducts(result.products);
       setVisibleLimit(12);
@@ -466,14 +421,16 @@ export default function Storefront() {
   function browseCollection(nextCategory: string) {
     setVisibleLimit(12);
     setCategory(nextCategory);
+    const nextModel = isRetailCategory(nextCategory) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model;
+    setModel(nextModel);
+    setRequirements({});
+    setQuestions([]);
     setIsDeviceMode(false);
     setBriefDirty(true);
     setCatalogQuery("");
     setProducts(
-      questions.length
-        ? []
-        : searchCatalog({
-            model,
+      searchCatalog({
+            model: nextModel,
             category: nextCategory,
             budget: Math.round(Number(budget) * 100),
             preference,
@@ -483,7 +440,7 @@ export default function Storefront() {
     );
     setSummary(
       nextCategory
-        ? `Viewing ${categoryTitles[nextCategory] || nextCategory}. Chat with DALE beside the products for voltage, fit, and warranty assistance.`
+        ? `Viewing ${categoryTitles[nextCategory] || nextCategory}. Ask DALE to compare recorded attributes, exact variants and group savings.`
         : "Collection preview. Save your device, budget and preferences with Find my match before reviewing a purchase.",
     );
     setTimeout(() => {
@@ -592,7 +549,7 @@ export default function Storefront() {
             setModel={setModel}
             deviceLabel={deviceLabel}
             category={category}
-            setCategory={setCategory}
+            setCategory={(value) => { setCategory(value); setModel(isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
             budget={budget}
             setBudget={setBudget}
             message={message}
@@ -749,12 +706,12 @@ export default function Storefront() {
                 </div>
                 <h2>Ask DALE anything. Live shopping guidance beside your catalog.</h2>
                 <p className="hero-dale-sub">
-                  Tell DALE your specs or device needs. DALE stays pinned beside the products so you can chat continuously while browsing.
+                  Tell DALE your needs, budget and preferences. DALE stays pinned beside the products so you can chat continuously while browsing.
                 </p>
                 <div className="hero-dale-input-wrap">
                   <input
                     type="text"
-                    placeholder="Ask DALE anything (e.g. Find me a quiet Bluetooth mouse under $30, or a compact 65W charger)..."
+                    placeholder="Ask DALE: a linen shirt in size M under $60, or a citrus fragrance in 50 ml..."
                     value={heroPrompt}
                     onChange={(e) => setHeroPrompt(e.target.value)}
                     onKeyDown={(e) => {
@@ -782,7 +739,7 @@ export default function Storefront() {
                 <div className="eyebrow">CURATED COLLECTIONS</div>
                 <h2 id="collection-title">Objects for everyday life.</h2>
                 <p>
-                  Explore each category individually, or view all verified accessories tailored specifically to your device.
+                  Six departments, one customer-first agent. Compare recorded facts, find a group and approve the exact offer yourself.
                 </p>
               </div>
               <div className="parallax-stack">
@@ -824,7 +781,7 @@ export default function Storefront() {
                         <ProductArt product={col.featured} />
                       </div>
                       <span className="parallax-count-pill">
-                        {col.count} certified products
+                        {col.count} exact variants
                       </span>
                     </div>
                   </div>
@@ -834,7 +791,7 @@ export default function Storefront() {
                 <div>
                   <h3>Filter across all categories for your device</h3>
                   <p>
-                    Need all accessories matched to your {deviceLabel(model)}? View every compatible charger, dock, audio device, and cable together.
+                    Need electronics matched to a device profile? View every compatible charger, dock, audio device, and cable together.
                   </p>
                 </div>
                 <button
@@ -940,18 +897,18 @@ export default function Storefront() {
                     </button>
                     <div className="eyebrow">
                       {isDeviceMode
-                        ? "VERIFIED DEVICE ECOSYSTEM"
+                        ? "YOUR SAVED SHOPPING BRIEF"
                         : `CURATED COLLECTION · ${category ? category.toUpperCase() : "ALL OBJECTS"}`}
                     </div>
                     <h2>
                       {isDeviceMode
-                        ? `All essentials for ${deviceLabel(model)}`
+                        ? isRetailCategory(category) ? categoryTitles[category] : `All essentials for ${deviceLabel(model)}`
                         : (categoryTitles[category] || "Selected for you")}
                     </h2>
                     <p style={{ fontSize: "14px", color: "#a1a1a6", margin: "4px 0 0" }}>
                       {isDeviceMode
-                        ? `Showing all chargers, docks, audio, cables and storage certified compatible with your ${deviceLabel(model)}.`
-                        : `Showing certified models tested for voltage, thermal management, and connection fit.`}
+                        ? `Showing eligible offers for ${deviceLabel(model)}. Review each source and exact variant.`
+                        : `Compare merchant-authored sample specifications. These listings do not claim verified physical inventory.`}
                     </p>
                   </div>
                   <div className="catalog-heading-controls">
@@ -961,7 +918,7 @@ export default function Storefront() {
                       setModel={setModel}
                       deviceLabel={deviceLabel}
                       category={category}
-                      setCategory={setCategory}
+                      setCategory={(value) => { setCategory(value); setModel(isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
                       budget={budget}
                       setBudget={setBudget}
                       message={message}
@@ -982,7 +939,7 @@ export default function Storefront() {
                     />
                     <span className="muted">
                       {visibleProducts.length}{" "}
-                      {briefDirty ? "preview options" : "compatible options"}
+                      {briefDirty ? "preview options" : "matching variants"}
                     </span>
                   </div>
                 </div>
@@ -995,10 +952,11 @@ export default function Storefront() {
                     className={`cat-pill ${isDeviceMode && category === "" ? "active" : ""}`}
                     onClick={() => {
                       setIsDeviceMode(true);
+                      setModel(model === lifestyleProfile ? "Atlas 14" : model);
                       setCategory("");
                       setProducts(
                         searchCatalog({
-                          model,
+                          model: model === lifestyleProfile ? "Atlas 14" : model,
                           category: "",
                           budget: Math.round(Number(budget) * 100),
                           preference,
@@ -1008,19 +966,20 @@ export default function Storefront() {
                       );
                     }}
                   >
-                    All for my device ({catalog.filter((p) => p.compatibleModels.includes(model)).length})
+                    Electronics for my device ({catalog.filter((p) => p.compatibleModels.includes(model === lifestyleProfile ? "Atlas 14" : model)).length})
                   </button>
-                  {parallaxCategories.map((col) => (
+                  {categoryIds.map((id) => (
                     <button
-                      key={col.id}
+                      key={id}
                       type="button"
-                      className={`cat-pill ${category === col.id ? "active" : ""}`}
-                      onClick={() => browseCollection(col.id)}
+                      className={`cat-pill ${category === id ? "active" : ""}`}
+                      onClick={() => browseCollection(id)}
                     >
-                      {col.title} ({catalog.filter((p) => p.category === col.id).length})
+                      {categoryTitles[id]} ({catalog.filter((p) => p.category === id).length})
                     </button>
                   ))}
                 </div>
+                <RetailFilters category={category} value={requirements} onChange={(value) => { setRequirements(value); setBriefDirty(true); }} />
                 <div className="assistant-note">
                   <span className="assistant-icon">
                     <Sparkles size={17} />
@@ -1038,7 +997,7 @@ export default function Storefront() {
                       disabled={busy || !models.includes(model)}
                       onClick={() => void findProducts(true)}
                     >
-                      Use selected device and budget
+                      Confirm selected requirements and budget
                     </button>
                   </div>
                 )}
@@ -1139,7 +1098,7 @@ export default function Storefront() {
                               <Check size={12} />{" "}
                               {briefDirty
                                 ? "Update your brief to confirm fit"
-                                : `Fits ${deviceLabel(model)}`}
+                                : isRetailCategory(product.category) ? "Matches recorded attributes" : `Fits ${deviceLabel(model)}`}
                             </span>
                             {product.sponsored && (
                               <span className="sponsored">Sponsored</span>
@@ -2408,8 +2367,8 @@ export default function Storefront() {
                       ))}
                     </ul>
                     <p>
-                      Compatible with:{" "}
-                      {modal.product.compatibleModels
+                      {isRetailCategory(modal.product.category) ? "Variant attributes: " : "Recorded device profiles: "}
+                      {isRetailCategory(modal.product.category) ? Object.entries(modal.product.attributes || {}).map(([key, value]) => `${key}: ${value}`).join(" · ") : modal.product.compatibleModels
                         .map(deviceLabel)
                         .join(", ")}
                     </p>
@@ -2426,7 +2385,7 @@ export default function Storefront() {
                       order.
                     </div>
                     {!briefDirty &&
-                    modal.product.compatibleModels.includes(model) &&
+                    productFits(modal.product, model) &&
                     modal.product.price <= Number(budget) * 100 &&
                     (!category || category === modal.product.category) ? (
                       <button
@@ -2446,7 +2405,7 @@ export default function Storefront() {
                           browseCollection(nextCategory);
                         }}
                       >
-                        Match this collection to my device{" "}
+                        Set requirements for this collection{" "}
                         <ArrowRight size={16} />
                       </button>
                     )}
@@ -2559,7 +2518,7 @@ export default function Storefront() {
                     />
                     <div>
                       <strong>{productById(modal.quote.productId).name}</strong>
-                      <p>Confirmed fit: {deviceLabel(modal.quote.model)}</p>
+                      <p>{isRetailCategory(productById(modal.quote.productId).category) ? "Exact variant selected; review its recorded attributes." : `Confirmed profile: ${deviceLabel(modal.quote.model)}`}</p>
                     </div>
                   </div>
                   {modal.quote.productId.startsWith("R") && (

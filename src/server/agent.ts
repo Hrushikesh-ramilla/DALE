@@ -1,5 +1,7 @@
+import { retailFollowup } from "@/domain/retail-conversation";
 import { randomUUID } from "node:crypto";
 import { deviceLabel, productById } from "@/domain/catalog";
+import { categoryTitles, lifestyleProfile } from "@/domain/departments";
 import { formatMoney } from "@/domain/money";
 import {
   agentRequest,
@@ -39,11 +41,12 @@ export async function runAgent(actor: Actor, raw: AgentRequest) {
   let previous = before.agentRuns.at(-1)?.context;
   if (previous && declinesGroupSavings(input.task))
     previous = { ...previous, groupSavings: undefined };
+  const planningInput = retailFollowup(input, before.brief?.input);
   // Engineering fixtures never incur model spend, even if the host is live.
   const planned =
     before.fixtureWorkspace || before.modes.ai !== "live"
-      ? { ...fallbackWorkflow(input, previous), mode: "catalog" as const }
-      : await planAgent(input, previous, before.agentRuns);
+      ? { ...fallbackWorkflow(planningInput, previous), mode: "catalog" as const }
+      : await planAgent(planningInput, previous, before.agentRuns);
   let intent: VoiceIntent = { kind: "clarification", message: "" };
   const run: AgentRun = {
     id: randomUUID(),
@@ -109,6 +112,17 @@ export async function runAgent(actor: Actor, raw: AgentRequest) {
         "Requested explicit confirmation; did not save the proposal as a purchase brief or create a quote.",
       );
       intent = { kind: "clarification", message: run.reply };
+    } else if (plan.tool === "search_retail") {
+      run.context = undefined;
+      intent = { kind: "shopping", brief: { message: input.task, model: lifestyleProfile, category: plan.category, budget: plan.budget, requirements: plan.requirements, preference: plan.preference, priority: "price" } };
+      result = await shop(intent.brief, actor, "fixture");
+      run.productIds = result.products.slice(0, 6).map((product) => product.id);
+      run.briefVersion = result.brief?.version;
+      run.status = result.products.length ? "ready_for_review" : "needs_input";
+      run.reply = result.products.length
+        ? `Compared ${result.products.length} ${categoryTitles[plan.category].toLowerCase()} variants within ${formatMoney(plan.budget)} against your stated attributes. ${result.products[0].name} is the lowest-priced matching SKU at ${formatMoney(result.products[0].price)}. These are merchant-authored engineering offers, not independently verified manufacturer products. ${plan.category === "clothing" ? "Review the size measurements before choosing." : plan.category === "fragrance" ? "Scent enjoyment is personal; compare the listed notes." : plan.category === "beauty" ? "Review ingredients; no medical or allergy-safety claim is made." : "Check the recorded dimensions before choosing."} No purchase has been made.`
+        : "No recorded variant meets all of your attributes and budget. I have not relaxed them or invented inventory. Change a constraint explicitly to compare alternatives.";
+      run.steps.push("Searched the merchant catalog by department, exact size, material, scent and volume where stated.", "Applied eligibility before price ranking and returned source records for each exact variant.", "Kept group commitment and purchase approval separate; no money moved.");
     } else if (plan.tool === "research_products") {
       const { model, budget, cable, fastCharging, deviceFamily } = plan;
       run.context = {

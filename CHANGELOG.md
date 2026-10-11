@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-11 — Six-department agent shopping
+
+- Add 60 distinct lifestyle families with 180 exact clothing/fragrance/bag/home/beauty SKUs, alongside existing electronics. Clearly separate merchant sample specifications from reviewed manufacturer identity.
+- Persist an indexed PostgreSQL catalog read model and add strict, paginated public attribute queries. Add department controls, category illustrations and exact size/material/type/scent/volume filtering.
+- Extend structured agent planning with a validated retail search tool, retained brief refinements and dependent group discovery. Keep exact-variant membership, budget, immutable approval and own-order safeguards.
+- Add retail database/agent/guard contracts and browser fixture checkout coverage. Preserve the existing visual composition, customer data and provider configuration. Hosted verification remains a release step.
+
 ## 2026-10-11 — Independent customer accounts and shared group buying
 
 - Add persistent guest/account identities, salted scrypt sign-in and identity-preserving guest conversion. Ordinary customers share a persisted merchant store while conversations, orders and evidence remain customer-scoped. Existing isolated demos remain separate.

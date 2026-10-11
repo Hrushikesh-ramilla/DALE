@@ -1,7 +1,9 @@
+import { mentionedRetailTypes } from "./retail-types";
 import { z } from "zod";
 import { knownModels as models } from "./catalog";
 import { mentionedModels } from "./identification";
 import { briefSchema, type ShoppingBrief } from "./brief";
+import { isRetailCategory, lifestyleProfile } from "./departments";
 export const voiceRequest = z.object({
   transcript: z.string().trim().min(1).max(2000),
   model: z.enum(models as [string, ...string[]]),
@@ -87,7 +89,7 @@ export function understandVoice(
       ),
       (_, phrase: string) => number(phrase) + "W",
     );
-  if (/\b(?:euros?|pounds?|rupees?|inr|eur|gbp)\b|[€£₹]/i.test(text))
+  if (/\b(?:euros?|pounds?|rupees?|inr|eur|gbp)\b|[â‚¬Â£â‚¹]/i.test(text))
     return {
       kind: "clarification",
       message:
@@ -155,22 +157,142 @@ export function understandVoice(
     ["storage", /\b(?:ssd|storage|drive)\b/i],
     ["audio", /\b(?:headphones?|audio|headset)\b/i],
     ["docks", /\b(?:docks?|hubs?|ethernet)\b/i],
-    ["accessories", /\b(?:mouse|accessories)\b/i],
+    ["accessories", /\b(?:mouse|computer accessories)\b/i],
+    [
+      "clothing",
+      /\b(?:clothes|clothing|t-?shirt|shirts?|sweater|hoodie|dress|trousers?|jeans|jacket|shorts|tank top)\b/i,
+    ],
+    ["fragrance", /\b(?:perfumes?|fragrances?|eau de|cologne)\b/i],
+    [
+      "bags",
+      /\b(?:bags?|backpacks?|tote|duffel|wallet|pouch|card holder|packing cubes?)\b/i,
+    ],
+    [
+      "home",
+      /\b(?:towels?|cushions?|bowls?|mugs?|carafe|serving board|blanket|organizer|vase|storage box|table runner|bookends)\b/i,
+    ],
+    [
+      "beauty",
+      /\b(?:hand wash|hand cream|lotion|shower gel|conditioner|cleanser|body oil|facial mist|hair oil|body butter|foot cream|shampoo|beauty|skincare)\b/i,
+    ],
   ] as const;
-  const found = categories.filter(([, pattern]) => pattern.test(text));
+  const found = categories
+    .filter(([, pattern]) => pattern.test(text))
+    .filter(
+      ([category]) => !(category === "storage" && /storage box/i.test(text)),
+    );
   if (found.length !== 1)
     return {
       kind: "clarification",
       message:
-        "Choose one product type: charger, dock, SSD, headphones or mouse.",
+        "Choose one product category to compare: electronics, clothing, fragrance, bags, home or beauty. Separate purchases keep each variant and approval clear.",
     };
+  const retail = isRetailCategory(found[0][0]);
+  const productTypes = retail
+    ? mentionedRetailTypes(
+        text,
+        found[0][0] as import("./departments").RetailCategory,
+      )
+    : [];
+  if (productTypes.length > 1)
+    return {
+      kind: "clarification",
+      message:
+        "Choose one exact product type for this comparison; each purchase keeps its own approval.",
+    };
+  const statedSize = text.match(/\bsize\s+([a-z0-9]+)\b/i)?.[1];
+  if (
+    retail &&
+    found[0][0] === "clothing" &&
+    statedSize &&
+    !/^(?:s|m|l|small|medium|large)$/i.test(statedSize)
+  )
+    return {
+      kind: "clarification",
+      message:
+        "That size is not recorded in this catalog. I will not substitute S, M or L for it.",
+    };
+  const sizes = [
+    ...text.matchAll(/\bsize\s+(S|M|L|small|medium|large)\b/gi),
+  ].map(
+    (m) =>
+      ({ small: "S", medium: "M", large: "L" })[m[1].toLowerCase()] ||
+      m[1].toUpperCase(),
+  );
+  const volumes = [...text.matchAll(/\b(\d+)\s*ml\b/gi)].map((m) =>
+    Number(m[1]),
+  );
+  const materials = [
+    "cotton",
+    "linen",
+    "merino wool",
+    "wool blend",
+    "denim",
+    "recycled polyester",
+    "canvas",
+    "nylon",
+    "leather",
+    "ceramic",
+    "stoneware",
+    "glass",
+    "acacia wood",
+    "steel",
+    "bamboo",
+  ].filter((v) => new RegExp(`\\b${v}\\b`, "i").test(text));
+  const scents = [
+    "citrus",
+    "floral",
+    "woody",
+    "gourmand",
+    "fresh",
+    "amber",
+    "aromatic",
+    "spicy",
+  ].filter((v) => new RegExp(`\\b${v}\\b`, "i").test(text));
+  if (
+    retail &&
+    (new Set(sizes).size > 1 ||
+      new Set(volumes).size > 1 ||
+      materials.length > 1 ||
+      scents.length > 1)
+  )
+    return {
+      kind: "clarification",
+      message:
+        "You mentioned alternative attributes. Choose one size, volume, material or scent family for this comparison.",
+    };
+  if (
+    retail &&
+    /\b(?:allerg|cure|treat|eczema|safe for|hypoallergenic)\b/i.test(text)
+  )
+    return {
+      kind: "clarification",
+      message:
+        "I can show recorded ingredients, but cannot establish medical or allergy safety. Which ingredient or product would you like to inspect?",
+    };
+  const requirements = retail
+    ? {
+        ...(productTypes[0] ? { productType: productTypes[0] } : {}),
+        ...(sizes[0] && found[0][0] === "clothing" ? { size: sizes[0] } : {}),
+        ...(volumes[0] && ["fragrance", "beauty"].includes(found[0][0])
+          ? { volumeMl: volumes[0] }
+          : {}),
+        ...(materials[0] && ["clothing", "bags", "home"].includes(found[0][0])
+          ? { material: materials[0] }
+          : {}),
+        ...(scents[0] && found[0][0] === "fragrance"
+          ? { scent: scents[0] }
+          : {}),
+      }
+    : undefined;
   const preference =
     text.match(/\b\d{2,3}\s*w\b/i)?.[0].replace(/\s/g, "") || "";
   return {
     kind: "shopping",
     brief: briefSchema.parse({
       message: text,
-      model: devices[0] || input.model,
+      model: retail ? lifestyleProfile : devices[0] || input.model,
+      requirements,
       budget,
       category: found[0][0],
       preference,

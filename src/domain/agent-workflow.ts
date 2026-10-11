@@ -90,7 +90,7 @@ export function fallbackWorkflow(
   const steps: WorkflowStep[] = [primary];
   if (
     groupSavingsEnabled(input.task, context?.groupSavings) &&
-    (primary.tool === "research_products" || primary.tool === "legacy_task")
+    (primary.tool === "research_products" || primary.tool === "search_retail" || primary.tool === "legacy_task")
   )
     steps.push({ tool: "discover_groups" });
   if (!protectedRequest) {
@@ -172,7 +172,7 @@ export function validateWorkflow(
   if (new Set(steps.map((step) => step.tool)).size !== steps.length)
     throw new Error("A tool may run only once per task.");
   const researchIndex = steps.findIndex(
-    (step) => step.tool === "research_products",
+    (step) => step.tool === "research_products" || step.tool === "search_retail",
   );
   const groupIndex = steps.findIndex((step) => step.tool === "discover_groups");
   if (researchIndex >= 0 && groupIndex >= 0 && groupIndex < researchIndex)
@@ -220,7 +220,7 @@ export function validateWorkflow(
     if (step.tool === "discover_groups") {
       if (
         declinesGroupSavings(input.task) ||
-        !["research_products", "legacy_task"].some((tool) =>
+        !["research_products", "search_retail", "legacy_task"].some((tool) =>
           steps.some((s) => s.tool === tool),
         )
       )
@@ -247,6 +247,7 @@ export function validateWorkflow(
   if (
     groupSavingsEnabled(input.task, context?.groupSavings) &&
     (validated.tool === "research_products" ||
+      validated.tool === "search_retail" ||
       validated.tool === "legacy_task") &&
     !seen.has("discover_groups")
   )

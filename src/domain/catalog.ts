@@ -1,6 +1,11 @@
 import { realModels, realProducts } from "./research";
-export type Category =
-  "chargers" | "docks" | "storage" | "audio" | "accessories";
+import {
+  isRetailCategory,
+  lifestyleProfile,
+  type Category,
+} from "./departments";
+import { retailCatalog } from "./retail-catalog";
+export type { Category } from "./departments";
 export type Product = {
   id: string;
   name: string;
@@ -13,10 +18,22 @@ export type Product = {
   stock: number;
   color: string;
   source: string;
+  familyId?: string;
+  provenance?: "merchant_sample";
+  attributes?: {
+    productType?: string;
+    material?: string;
+    size?: string;
+    scent?: string;
+    use?: string;
+    volumeMl?: number;
+    finish?: string;
+  };
 };
 export const models = ["Atlas 14", "Atlas 14 Pro", "Orbit 13", "Slate 11"];
-export const knownModels = [...models, ...realModels];
+export const knownModels = [...models, ...realModels, lifestyleProfile];
 export const deviceProfiles: Record<string, string> = {
+  [lifestyleProfile]: "Lifestyle shopping (no device)",
   "Atlas 14": "USB-C Laptop (65W)",
   "Atlas 14 Pro": "USB-C Laptop (100W)",
   "Orbit 13": "USB-C Laptop (45W)",
@@ -125,19 +142,50 @@ const families: Omit<Product, "id" | "source">[] = [
     color: "lilac",
   },
 ];
-export const catalog: Product[] = Array.from({ length: 5 }, (_, variant) =>
+const electronicsCatalog: Product[] = Array.from({ length: 5 }, (_, variant) =>
   families.map((family, i) => ({
     ...family,
     id: `P${String(variant * 8 + i + 1).padStart(3, "0")}`,
     name:
       family.name +
       (variant
-        ? ` · ${["", "Silver", "Ivory", "Midnight", "Stone"][variant]}`
+        ? ` Â· ${["", "Silver", "Ivory", "Midnight", "Stone"][variant]}`
         : ""),
     price: family.price + variant * 500,
     source: `catalog:${variant * 8 + i + 1}:v1`,
   })),
 ).flat();
+
+export const catalog: Product[] = [...electronicsCatalog, ...retailCatalog];
+export function productFits(product: Product, model: string) {
+  return isRetailCategory(product.category)
+    ? model === lifestyleProfile
+    : product.compatibleModels.includes(model);
+}
+export type RetailRequirements = {
+  productType?: string;
+  material?: string;
+  size?: string;
+  scent?: string;
+  use?: string;
+  volumeMl?: number;
+};
+export function meetsRetailRequirements(
+  product: Product,
+  requirements?: RetailRequirements,
+) {
+  return (
+    !requirements ||
+    Object.entries(requirements).every(
+      ([key, value]) =>
+        String(
+          product.attributes?.[
+            key as keyof NonNullable<Product["attributes"]>
+          ] ?? "",
+        ).toLowerCase() === String(value).toLowerCase(),
+    )
+  );
+}
 
 export function productById(id: string): Product {
   const product = [...catalog, ...realProducts].find((item) => item.id === id);
@@ -145,14 +193,18 @@ export function productById(id: string): Product {
   return product;
 }
 
-export function searchCatalog(input: {
-  model: string;
-  category?: string;
-  budget: number;
-  preference?: string;
-  priority?: "price" | "features";
-  weights?: { price: number; features: number };
-}) {
+export function searchCatalog(
+  input: {
+    model: string;
+    category?: string;
+    budget: number;
+    preference?: string;
+    priority?: "price" | "features";
+    weights?: { price: number; features: number };
+    requirements?: RetailRequirements;
+  },
+  records?: Product[],
+) {
   if (
     input.weights &&
     (!Number.isFinite(input.weights.price + input.weights.features) ||
@@ -161,10 +213,13 @@ export function searchCatalog(input: {
   )
     throw new Error("Invalid shopper preference weights.");
   if (!knownModels.includes(input.model)) return [];
-  return (realModels.includes(input.model) ? realProducts : catalog)
+  return (
+    records || (realModels.includes(input.model) ? realProducts : catalog)
+  )
     .filter(
       (product) =>
-        product.compatibleModels.includes(input.model) &&
+        productFits(product, input.model) &&
+        meetsRetailRequirements(product, input.requirements) &&
         product.price <= input.budget &&
         (!input.category || product.category === input.category),
     )

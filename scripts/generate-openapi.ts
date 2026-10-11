@@ -76,9 +76,17 @@ const spec = {
     },
   },
   paths: {
+    "/api/catalog": {
+      get: {
+        description: "Public persisted catalog: strict department attributes, name, budget and page queries. Returns up to 48 exact variant records, totals and provenance. Sample stock is not proof of physical inventory.",
+        security: [],
+        parameters: ["category", "query", "budget", "page", "productType", "size", "material", "scent", "volumeMl"].map((name) => ({ name, in: "query", required: false, schema: { type: ["budget", "page", "volumeMl"].includes(name) ? "integer" : "string" } })),
+        responses: { "200": { description: "Paginated catalog records and six departments." }, "400": responses["400"] },
+      },
+    },
     "/api/agent": {
       post: command(
-        "Buyer-only bounded task execution: explicit sample-device shopping, own-order navigation and support draft preparation. No arbitrary real-product research, model request or financial authorization. Persists a private receipt of completed actions, bounded to twelve tasks per shopper. Session identity guards prevent stale browser tasks. Limit 10 tasks/actor/minute, shared demo analysis lifetime limit of 50.",
+        "Buyer-only validated tool workflows: sourced electronics research, six-department exact-variant shopping, group discovery, own-order navigation and support draft preparation. Financial authorization remains separate; arbitrary external-store inventory is not connected. Persists a private receipt of completed actions, bounded to twelve tasks per shopper. Session identity guards prevent stale browser tasks. Limit 10 tasks/actor/minute, shared demo analysis lifetime limit of 50.",
         jsonSchema(agentRequest),
       ),
     },
@@ -183,7 +191,7 @@ const spec = {
     },
     "/api/shopping": {
       post: command(
-        "Save the brief and retrieve compatible, budget-eligible catalog results plus labeled fixture/live analysis.",
+        "Save the brief and retrieve device- or attribute-eligible catalog variants within budget, with labeled fixture/live analysis.",
         { $ref: "#/components/schemas/ShoppingBrief" },
       ),
     },

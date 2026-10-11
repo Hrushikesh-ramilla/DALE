@@ -1,4 +1,7 @@
 import { z } from "zod";
+import { briefSchema } from "./brief";
+import { retailCategories } from "./departments";
+import { understandVoice } from "./voice";
 import { realModels, type Cable, type ResearchNeed } from "./research";
 import { mentionedModels } from "./identification";
 import { scanMessage } from "./scams";
@@ -10,6 +13,15 @@ import {
 } from "./device-registry";
 
 export const plannerSchema = z.discriminatedUnion("tool", [
+  z
+    .object({
+      tool: z.literal("search_retail"),
+      category: z.enum(retailCategories),
+      budget: z.number().int().min(1).max(100000),
+      requirements: briefSchema.shape.requirements,
+      preference: z.string().max(80).default(""),
+    })
+    .strict(),
   z
     .object({
       tool: z.literal("research_products"),
@@ -110,11 +122,30 @@ export function fallbackPlan(
     /\b(?:my cases?|claim status|return status|evidence report)\b/i.test(text)
   )
     return { tool: "inspect_claims" };
-  if (/\b(?:inr|rupees?|euros?|pounds?|eur|gbp)\b|[₹€£]/i.test(text))
+  if (/\b(?:inr|rupees?|euros?|pounds?|eur|gbp)\b|[â‚¹â‚¬Â£]/i.test(text))
     return {
       tool: "clarify",
       question:
         "This comparison uses US reference prices and USD demo offers. What is your maximum budget in USD?",
+    };
+  const retailIntent = understandVoice({
+    transcript: text,
+    model: input.model,
+    budget: input.budget,
+  });
+  if (
+    retailIntent.kind === "shopping" &&
+    retailCategories.some(
+      (category) => category === retailIntent.brief.category,
+    )
+  )
+    return {
+      tool: "search_retail",
+      category: retailIntent.brief
+        .category as (typeof retailCategories)[number],
+      budget: retailIntent.brief.budget,
+      requirements: retailIntent.brief.requirements,
+      preference: retailIntent.brief.preference,
     };
   const real = mentionedModels(text).filter((model) =>
     realModels.includes(model),

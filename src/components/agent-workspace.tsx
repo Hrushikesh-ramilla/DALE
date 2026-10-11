@@ -175,9 +175,9 @@ export function AgentWorkspace({
               Hello, I’m <strong>DALE</strong>.
             </p>
             <p className="welcome-sub">
-              Ask me anything about compatibility, connector fit, charging
-              speeds, or scam prevention. Tell me what you need, and I’ll help
-              you find the right match.
+              Ask about device requirements, clothing sizes, fragrance notes,
+              materials or group savings. I’ll compare recorded facts and keep
+              each purchase under your control.
             </p>
           </div>
         )}
@@ -185,8 +185,8 @@ export function AgentWorkspace({
           <div className="agent-capability-note">
             <strong>Buyer advocate</strong>
             <span>
-              Manufacturer-backed device fit and charger comparisons, message
-              safety, group savings and order support. Review the sources and
+              Sourced electronics research, six-department variant comparison,
+              message safety, group savings and order support. Review the sources and
               approve each commitment yourself.
             </span>
           </div>
@@ -247,7 +247,7 @@ export function AgentWorkspace({
               {latest.mode === "model"
                 ? "Model structured planning · validated tool results"
                 : latest.mode === "unavailable"
-                  ? "Model unavailable · verified catalog and safety rules"
+                  ? "Model unavailable · recorded catalog and safety rules"
                   : "Catalog assistance · no model calls or AI spend"}
             </small>
             <p className="agent-user-task">You: {latest.task}</p>

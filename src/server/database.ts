@@ -16,6 +16,9 @@ declare global {
   var buyerGuardDatabase: Promise<Database> | undefined;
 }
 const schema = `
+CREATE TABLE IF NOT EXISTS catalog_products (id text PRIMARY KEY, category text NOT NULL, price integer NOT NULL CHECK(price>0), record jsonb NOT NULL);
+CREATE INDEX IF NOT EXISTS catalog_category_price ON catalog_products(category,price,id);
+CREATE INDEX IF NOT EXISTS catalog_attributes ON catalog_products USING gin ((record->'attributes'));
 CREATE TABLE IF NOT EXISTS workspaces (id text PRIMARY KEY, state jsonb NOT NULL);
 CREATE TABLE IF NOT EXISTS storefronts (id text PRIMARY KEY, workspace_id text NOT NULL REFERENCES workspaces(id));
 CREATE TABLE IF NOT EXISTS customer_accounts (id text PRIMARY KEY, email text UNIQUE, name text NOT NULL, password_hash text, created_at timestamptz NOT NULL DEFAULT now());
