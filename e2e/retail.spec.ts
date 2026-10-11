@@ -1,5 +1,56 @@
 import { expect, test } from "@playwright/test";
 const origin = process.env.E2E_BASE_URL || "http://127.0.0.1:3100";
+test("phone agent preserves an exact Pro Max model with sourced photographs and unknown RAM", async ({
+  page,
+}) => {
+  expect(
+    (
+      await page.request.post(origin + "/api/account", {
+        headers: { Origin: origin },
+        data: { action: "guest" },
+      })
+    ).ok(),
+  ).toBe(true);
+  await page.goto("/shop");
+  const chat = page.locator("#dale-chat");
+  await chat
+    .getByLabel("Your conversation with DALE")
+    .fill("Find Apple iPhone 18 Pro Max with 256GB storage under $1500");
+  await chat.getByRole("button", { name: "Send message", exact: true }).click();
+  const result = chat.getByLabel("DALE task result");
+  await expect(
+    result.getByRole("button", {
+      name: /Review agent option Apple iPhone 18 Pro Max/,
+    }),
+  ).toBeVisible();
+  const state = await (await page.request.get(origin + "/api/session")).json();
+  expect(state.agentRuns.at(-1).productIds).toEqual(["PHONE-APPLE-148591"]);
+  const product = state.catalogReferences.find(
+    (item: { id: string }) => item.id === "PHONE-APPLE-148591",
+  );
+  expect(product.attributes.ramGb).toBeUndefined();
+  expect(product.attributes.storageGb).toBe(256);
+  expect(state.orders).toEqual([]);
+  const photo = page.locator(".product-photograph img").first();
+  await expect(photo).toBeVisible();
+  await expect
+    .poll(() => photo.evaluate((image: HTMLImageElement) => image.naturalWidth))
+    .toBeGreaterThan(0);
+  await result
+    .getByRole("button", {
+      name: /Review agent option Apple iPhone 18 Pro Max/,
+    })
+    .click();
+  await expect(page.getByRole("dialog")).toContainText(
+    "Apple iPhone 18 Pro Max",
+  );
+  await expect(page.getByRole("dialog")).toContainText(
+    "Approve simulated purchase",
+  );
+  expect(
+    (await (await page.request.get(origin + "/api/session")).json()).orders,
+  ).toEqual([]);
+});
 test("manufacturer photographs render in watches and sunglasses with a visible failure state", async ({
   page,
 }) => {
@@ -231,7 +282,7 @@ test("public catalog supports all departments and strict paginated attribute que
   const response = await request.get("/api/catalog");
   expect(response.ok()).toBe(true);
   const catalog = await response.json();
-  expect(catalog.total).toBe(75);
+  expect(catalog.total).toBe(85);
   expect(catalog.departments).toHaveLength(8);
   expect(catalog.products).toHaveLength(48);
   const filtered = await request.get(

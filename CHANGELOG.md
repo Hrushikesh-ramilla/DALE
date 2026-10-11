@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Apple phone model depth
+
+- Add ten distinct models from official technical documentation, including iPhone 18 Pro/Pro Max, 17 Pro/Pro Max, 17e, Air, 16e, 16 Pro/Pro Max and 16 Plus. Together with the existing iPhone 17 record, Apple has eleven published phone models.
+- Record exact reviewed capacity, display, chip and finish; retain source fingerprints and verified model photographs. Do not invent RAM, battery mAh, current retail availability or carrier compatibility. Distinguish manufacturer model imagery from the selected offer finish.
+- Validate required section parsing, identity/media rejection and longer Pro/Max model selection. Catalog grows to 85 source-reviewed records; remaining brand and department depth is pending.
+
 ## 2026-10-11 — Reviewed Ray-Ban eyewear and model identity guards
 
 - Add ten distinct selected Ray-Ban references reviewed in the official storefront, with exact UPCs, observed frame/lens colours, optional size/polarization and attributed photographs. Verify every photograph endpoint; explicitly disclose unavailable dimensions, UV and fit information.

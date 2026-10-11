@@ -39,8 +39,8 @@ try {
   );
   const catalog = await (await contexts[0].get("/api/catalog")).json();
   check(
-    "PostgreSQL catalog has eight departments and 75 sourced records",
-    catalog.total === 75 &&
+    "PostgreSQL catalog has eight departments and 85 sourced records",
+    catalog.total === 85 &&
       catalog.departments.length === 8 &&
       catalog.products.length === 48,
   );
@@ -48,7 +48,7 @@ try {
     "Ordinary browsing excludes invented and identity-only inventory",
     catalog.products.every(
       (product: { id: string; comparisonOnly?: boolean }) =>
-        !/^[PL]/.test(product.id) && !product.comparisonOnly,
+        !/^[PL]\d+$/.test(product.id) && !product.comparisonOnly,
     ),
   );
   const phones = await (
