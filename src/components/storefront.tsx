@@ -197,8 +197,8 @@ export default function Storefront() {
   const [requirements, setRequirements] = useState<RetailRequirements>({});
   const [catalogQuery, setCatalogQuery] = useState("");
   const [visibleLimit, setVisibleLimit] = useState(12);
-  const databaseCatalog = usePublishedCatalog({ enabled: !session?.fixtureWorkspace && briefDirty && !isDeviceMode, category, query: catalogQuery, requirements });
-  const displayedProducts = !session?.fixtureWorkspace && briefDirty && !isDeviceMode ? databaseCatalog.products : products;
+  const databaseCatalog = usePublishedCatalog({ enabled: !session?.fixtureWorkspace && briefDirty && !isDeviceMode && Boolean(category), category, query: catalogQuery, requirements });
+  const displayedProducts = !category && !isDeviceMode ? [] : !session?.fixtureWorkspace && briefDirty && !isDeviceMode ? databaseCatalog.products : products;
   const resolveProduct = (id: string) => databaseCatalog.products.find(p => p.id === id) || session?.catalogReferences.find(p => p.id === id) || products.find(p => p.id === id) || productById(id);
   const catalogCount = (category: string) => databaseCatalog.summary ? databaseCatalog.summary.counts[category] || 0 : publicCatalog.filter(p => p.category === category).length;
   const parallaxCategories = departments.filter(d => d.categories.some(c => catalogCount(c) > 0)).map((department, index) => ({
@@ -435,6 +435,11 @@ export default function Storefront() {
   }
   function openDepartment(id: string) {
     setDepartmentId(id);
+    const categories = departments.find(department => department.id === id)?.categories.filter(category => catalogCount(category) > 0) || [];
+    if (categories.length === 1) {
+      browseCollection(categories[0]);
+      return;
+    }
     setCategory("");
     setProducts([]);
     setIsDeviceMode(false);
@@ -764,7 +769,7 @@ export default function Storefront() {
                 <div className="eyebrow">CURATED COLLECTIONS</div>
                 <h2 id="collection-title">Objects for everyday life.</h2>
                 <p>
-                  Six departments, one customer-first agent. Compare recorded facts, find a group and approve the exact offer yourself.
+                  {parallaxCategories.length} departments, one customer-first agent. Compare recorded facts, find a group and approve the exact offer yourself.
                 </p>
               </div>
               <div className="parallax-stack">

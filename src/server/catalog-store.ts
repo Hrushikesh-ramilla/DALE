@@ -144,7 +144,8 @@ export async function catalogLanguageContext(task: string) {
   const rows = await database.query<{ record: Product }>(
     `SELECT record FROM catalog_products WHERE publication='published'
     AND ((length(record->>'brand')>1 AND (strpos(lower($1),lower(record->>'brand'))>0
-      OR strpos(regexp_replace(lower($1),'[^a-z0-9]','','g'),regexp_replace(lower(record->>'brand'),'[^a-z0-9]','','g'))>0))
+      OR (length(regexp_replace(lower(record->>'brand'),'[^a-z0-9]','','g'))>1
+        AND strpos(regexp_replace(lower($1),'[^a-z0-9]','','g'),regexp_replace(lower(record->>'brand'),'[^a-z0-9]','','g'))>0)))
     OR (length(record->'attributes'->>'modelName')>2 AND strpos(lower($1),lower(record->'attributes'->>'modelName'))>0))
     ORDER BY id LIMIT 100`,
     [task],

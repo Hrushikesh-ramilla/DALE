@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Category navigation and dependable manufacturer image delivery
+
+- Open single-category departments directly; show no mixed inventory before selecting an electronics category. Derive department counts from published inventory.
+- Deliver attributed manufacturer photographs through native image optimization, an explicit HTTPS host/path allowlist, zero redirects, a five-megabyte upstream limit, local-network rejection and a 256 MiB disk cache cap. Preserve visible source attribution and image-failure feedback.
+- Verify actual product-grid image decoding, Ray-Ban brand filtering, exact phone review, empty electronics landing grids and disallowed image targets. Keep publication and full-assortment statuses separate from this rendering repair.
+
 ## 2026-10-11 — Apple phone model depth
 
 - Add ten distinct models from official technical documentation, including iPhone 18 Pro/Pro Max, 17 Pro/Pro Max, 17e, Air, 16e, 16 Pro/Pro Max and 16 Plus. Together with the existing iPhone 17 record, Apple has eleven published phone models.
