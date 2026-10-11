@@ -53,4 +53,16 @@ The isolated runner `npx tsx scripts/verify-catalog-capacity.ts` creates 10,000 
 
 ## Remaining enlarged-scope gates
 
+Operator commands (source retrieval only; review and publication remain separate):
+
+```powershell
+npx tsx scripts/collect-manufacturer-fragrances.ts pdm
+npx tsx scripts/collect-manufacturer-fragrances.ts amouage
+npx tsx scripts/collect-manufacturer-fragrances.ts initio
+```
+
+On EC2, use `node /home/ubuntu/catalog-operator/collect-manufacturer-fragrances.mjs MANUFACTURER` from an operator-owned working directory, outside the application checkout. Existing immutable manifest paths are never replaced. A changed feed/profile for an existing collection date fails for review; do not delete checkpoints to disguise a change or automatically overwrite a published SKU. Checkpoints protect process interruptions, not disk failure or commercial offer freshness.
+
+The manufacturer fragrance collector now keeps resumable operator checkpoints under ignored `.data/catalog-ingestion`. They are bound to a feed snapshot, profile and date, and persist only reviewed product/observation results. Re-running the same input reuses completed models; changed inputs or modified checkpoint contents fail for operator review. Four tests cover reconstruction of the identical fourteen-model PDM manifest after interruption, concurrent/idempotent writers, changed inputs and tampering. Five additional [actual Linux filesystem checks](evaluations/catalog-checkpoint-linux-20261011.json) pass for the packaged tool installed in `/home/ubuntu/catalog-operator`, separate from the application release. This does not automatically refresh published inventory or close the worker queue/SKU revision gate. The web application release remains `9547200`; collection is an operator task, never a public request handler.
+
 The requested 2,000-product catalog and per-category, per-brand depth are not implemented by these initial batches. Exact manufacturer manifests, real media, category-specific evidence and shortages must be recorded for every subsequent batch. Watches and sunglasses are populated; footwear and appliances remain hidden until reviewed records are published. Inventory/price refresh jobs, licensed media delivery, full assortment and EC2 commercial load gates remain pending. The original AI, payment and support acceptance statuses remain separate from catalog expansion. No new provider call, AI billing or paid resource is required for fixture acceptance.

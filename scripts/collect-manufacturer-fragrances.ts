@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import { catalogManifestSchema } from "../src/domain/catalog-manifest";
+import { catalogCheckpoint } from "./catalog-checkpoint";
 import {
   parseManufacturerFragrance,
   normalizeFragranceName,
@@ -138,7 +139,25 @@ if (!Array.isArray(feed.products))
   throw new Error("Unexpected public manufacturer catalog.");
 const products = [],
   observations = [];
+const journal = await catalogCheckpoint(
+  `.data/catalog-ingestion/fragrance-${profile.key}-${checkedAt}`,
+  {
+    profile,
+    checkedAt,
+    feedSha256: createHash("sha256").update(feedText).digest("hex"),
+  },
+);
 for (const model of profile.models) {
+  const retained = await journal.get<{
+    product: ReturnType<typeof parseManufacturerFragrance>;
+    observation: unknown;
+  }>(model);
+  if (retained) {
+    products.push(retained.product);
+    observations.push(retained.observation);
+    console.log(`Resumed reviewed ${retained.product.name}`);
+    continue;
+  }
   const matches = feed.products.filter(
     (p) =>
       normalizeFragranceName(p.title) === normalizeFragranceName(model) &&
@@ -171,14 +190,16 @@ for (const model of profile.models) {
   )
     throw new Error(`Manufacturer photograph requires review for ${model}.`);
   products.push(product);
-  observations.push({
+  const observation = {
     source,
     catalogProduct: feedProductIdentitySchema.parse(item),
     htmlSha256: createHash("sha256").update(html).digest("hex"),
     imageStatus: image.status,
     imageType: image.headers.get("content-type"),
     imageBytes: Number(image.headers.get("content-length")) || null,
-  });
+  };
+  await journal.put(model, { product, observation });
+  observations.push(observation);
   console.log(`Reviewed ${product.name}`);
 }
 const id = `fragrance-${profile.key}-${checkedAt}-v1`;

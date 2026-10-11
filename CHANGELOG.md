@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Resumable operator source collection
+
+- Retain per-model reviewed product/observation checkpoints bound to the exact feed hash, profile and collection date. A retry reuses completed records and validates the complete manifest before staging; changed inputs require a new review.
+- Publish checkpoint files atomically without replacement; competing writes cannot silently overwrite evidence. Truncated temporary files are ignored and modified saved content is rejected.
+- Verify interruption/resumption against the fourteen-model PDM manifest, duplicate/concurrent writers, changed source/profile and tampered evidence. This is operator collection tooling, separate from automated refresh queues and commercial feed integration.
+
 ## 2026-10-11 — Verified 142-record hosted release
 
 - Correct restoration coverage to locate the exact restored product independently of first-page placement. All 410 unit/contract checks and ten Linux production browser journeys pass.

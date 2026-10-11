@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-11",
+  "platform": "linux",
+  "host": "65.0.19.200",
+  "operatorDirectory": "/home/ubuntu/catalog-operator",
+  "passed": true,
+  "checks": 5,
+  "scenarios": [
+    "Previously reviewed record survives a new journal instance",
+    "Concurrent identical writers remain idempotent",
+    "Conflicting record cannot replace reviewed content",
+    "Changed source identity is rejected",
+    "Interrupted temporary file is not used as reviewed evidence"
+  ],
+  "limitations": "Isolated filesystem checks for packaged operator collection tooling. No upstream source request, public inventory mutation, model call or payment request. Automated refresh queues and SKU revisions remain separate gates. Web application stays on 9547200."
+}
