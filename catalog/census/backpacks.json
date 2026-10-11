@@ -1,0 +1,3180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "backpacks",
+  "displayName": "Backpacks & Daypacks",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "lv-christopher-mm",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Christopher MM Backpack (Monogram Macassar)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/christopher-mm-monogram-macassar-nvprod3980062v/M46332"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Monogram Macassar Canvas / Black Leather Trim"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "christopher mm backpack (monogram macassar)",
+        "volumeLiters": 26,
+        "laptopCompartmentInches": 15,
+        "material": "monogram coated canvas with cowhide leather trim",
+        "waterResistant": true,
+        "dimensionsCm": "38 x 44 x 12.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rugged hiking-inspired luxury rucksack with side flap pockets and leather straps.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-christopher-pm-epi",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Christopher PM Backpack (Epi Leather)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/christopher-pm-epi-009138/M50159"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Noir Epi / Silver Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "christopher pm backpack (epi leather)",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 13,
+        "material": "epi grained cowhide leather",
+        "waterResistant": true,
+        "dimensionsCm": "34 x 41 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact urban version of the Christopher rendered in structured Epi leather.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-discovery-pm",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Discovery PM Backpack (Monogram Eclipse)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/discovery-backpack-pm-monogram-eclipse-nvprod2630048v/M43186"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Monogram Eclipse / Ruthenium Metal"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "discovery pm backpack (monogram eclipse)",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 15,
+        "material": "monogram eclipse coated canvas",
+        "waterResistant": true,
+        "dimensionsCm": "29 x 38 x 20"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Streamlined modern commuter daypack with front zip pocket and iPad sleeve.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-montsouris-pm",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Montsouris PM Backpack (Monogram Empreinte)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/montsouris-pm-monogram-empreinte-nvprod2400030v/M45205"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Empreinte Leather / Gold Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "montsouris pm backpack (monogram empreinte)",
+        "volumeLiters": 14,
+        "laptopCompartmentInches": 11,
+        "material": "monogram empreinte embossed cowhide leather",
+        "waterResistant": true,
+        "dimensionsCm": "27.5 x 33 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Feminine archive reissue of the 1994 Montsouris bucket backpack with buckle flap.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-palm-springs-mini",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Palm Springs Mini Backpack (Monogram Canvas)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/palm-springs-mini-monogram-nvprod4160086v/M44873"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Monogram Canvas / Foam Backing"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "palm springs mini backpack (monogram canvas)",
+        "volumeLiters": 8,
+        "laptopCompartmentInches": 0,
+        "material": "monogram coated canvas with calfskin trim",
+        "waterResistant": true,
+        "dimensionsCm": "17 x 22 x 10"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Quilted leather cross-body backpack converted for everyday city chic.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-dean-backpack",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Dean Backpack (Damier Infini Onyx Leather)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/dean-backpack-damier-infini-nvprod2790032v/N40379"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Damier Infini Onyx / Embossed Check"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "dean backpack (damier infini onyx leather)",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "damier infini cowhide leather",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 41.5 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Professional business backpack with embossed Damier Infini geometric checkerboard.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-josh-nv",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Josh NV Backpack (Damier Ebene Canvas)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/josh-nv-damier-ebene-nvprod2220087v/N40365"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Damier Ebene / Cowhide Leather Trim"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "josh nv backpack (damier ebene canvas)",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 15,
+        "material": "damier ebene coated canvas",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 40 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean minimalist dome-top rucksack engineered for lightweight transit.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-avenue-slingbag",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Avenue Slingbag (Damier Graphite Canvas)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/avenue-slingbag-damier-graphite-nvprod2630046v/N41719"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Damier Graphite / Single Crossbody Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "avenue slingbag (damier graphite canvas)",
+        "volumeLiters": 7,
+        "laptopCompartmentInches": 9,
+        "material": "damier graphite canvas",
+        "waterResistant": true,
+        "dimensionsCm": "20 x 31 x 10"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Urban single-strap sling backpack with two D-rings for left or right shoulder carry.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-trio-backpack",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Trio Backpack (Monogram Eclipse Reverse)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/trio-backpack-monogram-eclipse-reverse-canvas-nvprod3430062v/M45538"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Monogram Eclipse Reverse / Three Outer Pockets"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "trio backpack (monogram eclipse reverse)",
+        "volumeLiters": 24,
+        "laptopCompartmentInches": 15,
+        "material": "monogram eclipse reverse coated canvas",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 44 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spacious utility rucksack with three outer zipped pockets for fast access.",
+      "status": "staged"
+    },
+    {
+      "id": "lv-aerogram-backpack",
+      "canonicalBrand": "Louis Vuitton",
+      "displayBrand": "Louis Vuitton",
+      "modelName": "Aerogram Backpack (Grained Calfskin)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/takeoff-backpack-lv-aerogram-nvprod3980061v/M57079"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Aerogram Calfskin / Matte Black LV"
+      ],
+      "collectedAttributes": {
+        "brand": "louis vuitton",
+        "modelName": "aerogram backpack (grained calfskin)",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "grained calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 43 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Aviation-inspired sleek leather rucksack with envelope-shaped front pocket and leather tag.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-medium-backpack",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Re-Nylon Medium Backpack with Saffiano Details",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/re-nylon-medium-backpack/1BZ811_RV44_F0002_V_OTO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Re-Nylon / Enamel Triangle Logo"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon medium backpack with saffiano details",
+        "volumeLiters": 16,
+        "laptopCompartmentInches": 13,
+        "material": "re-nylon regenerated yarn with saffiano leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 32 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miuccia Prada's 1984 landmark industrial Pocone nylon backpack crafted in sustainable Re-Nylon.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-technical-backpack",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Re-Nylon and Saffiano Leather Technical Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/re-nylon-and-saffiano-leather-backpack/2VZ019_2DMG_F0002_V_OOL"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Re-Nylon / Side Release Buckles"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon and saffiano leather technical backpack",
+        "volumeLiters": 25,
+        "laptopCompartmentInches": 16,
+        "material": "re-nylon and saffiano leather",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 53.5 x 16.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Utilitarian technical mountaineering rucksack with padded back and multiple buckle pockets.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-saffiano-leather-backpack",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Saffiano Leather Minimalist Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/saffiano-leather-backpack/2VZ032_9Z2_F0002_V_OOO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Saffiano Cuir Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "saffiano leather minimalist backpack",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 15,
+        "material": "saffiano leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 40 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Executive business backpack sculpted entirely from scratch-resistant Saffiano leather.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-single-strap",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Re-Nylon Single-Strap Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/re-nylon-and-saffiano-leather-one-shoulder-backpack/2VZ092_2DMG_F0002_V_OOO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Re-Nylon / Monostrap Sling"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon single-strap backpack",
+        "volumeLiters": 9,
+        "laptopCompartmentInches": 10,
+        "material": "re-nylon with saffiano trim",
+        "waterResistant": true,
+        "dimensionsCm": "21 x 37.5 x 10"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Asymmetric single-shoulder sling pack designed for ergonomic metropolitan mobility.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-padded-backpack",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Re-Nylon Padded Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/padded-re-nylon-backpack/1BZ072_2DX8_F0002_V_OO1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Padded Quilted Nylon"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon padded backpack",
+        "volumeLiters": 15,
+        "laptopCompartmentInches": 13,
+        "material": "padded re-nylon",
+        "waterResistant": true,
+        "dimensionsCm": "28 x 33 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Puffy quilted texture delivering lightweight thermal-style softness.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-technical-fabric-backpack",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Technical Fabric Backpack with Buckles",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/technical-fabric-backpack/2VZ048_2DMG_F0002_V_OOO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black High-Tenacity Technical Fabric"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "technical fabric backpack with buckles",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "technical fabric with saffiano details",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 43.5 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic dual-buckle front flap daypack with breathable padded mesh back panel.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-multi-pocket",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Re-Nylon Multi-Pocket Large Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/re-nylon-backpack/2VZ135_2DMG_F0002_V_HOL"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Re-Nylon / Four Cargo Pockets"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon multi-pocket large backpack",
+        "volumeLiters": 28,
+        "laptopCompartmentInches": 16,
+        "material": "re-nylon and saffiano leather",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 45 x 17"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Expedition-class cargo backpack featuring four external utility pouches.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-brushed-leather-city-backpack",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Brushed Leather Luxury City Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/brushed-leather-backpack/2VZ089_ZO6_F0002_V_OOO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Spazzolato Brushed Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "brushed leather luxury city backpack",
+        "volumeLiters": 16,
+        "laptopCompartmentInches": 14,
+        "material": "brushed spazzolato calfskin",
+        "waterResistant": true,
+        "dimensionsCm": "29 x 38 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polished spazzolato leather luxury backpack showcasing sharp modernist lines.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-small-backpack",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Re-Nylon Small Backpack with Front Pockets",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/small-re-nylon-backpack/1BZ677_RV44_F0002_V_OOO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Re-Nylon / Dual Buckled Pouches"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon small backpack with front pockets",
+        "volumeLiters": 12,
+        "laptopCompartmentInches": 0,
+        "material": "re-nylon with saffiano leather accents",
+        "waterResistant": true,
+        "dimensionsCm": "23.5 x 28 x 12"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Petite iconic 1980s dual front pocket backpack for effortless daily essentials.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-bungee-technical-backpack",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "Bungee Cord Technical Nylon Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/re-nylon-backpack/2VZ025_2DMG_F0002_V_OOO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Elastic Bungee Netting"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "bungee cord technical nylon backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "re-nylon with technical elastic cords",
+        "waterResistant": true,
+        "dimensionsCm": "29 x 41 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sporty performance pack equipped with front criss-cross elastic bungee cargo cord.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-city-backpack-matte-leather",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "City Backpack in Matte Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/city-backpack-in-matte-leather-5349670AY3F1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Matte Calfskin / Silver Embossed Logo"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "city backpack in matte leather",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "matte calfskin leather with canvas lining",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 41 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The quintessential luxury collegiate daypack featuring headphone port and card slot.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-city-backpack-nylon",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "City Backpack in Nylon and Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/city-backpack-in-nylon-534967GIV3F1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Technical Nylon / Calfskin Trim"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "city backpack in nylon and leather",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "durable nylon canvas with calfskin details",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 41 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight weather-resistant technical canvas backpack with Saint Laurent signature.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-city-trekking-backpack",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "City Trekking Backpack in Ripstop Nylon",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/city-trekking-backpack-6497652NC6Z1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Technical Ripstop / Clip Buckles"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "city trekking backpack in ripstop nylon",
+        "volumeLiters": 24,
+        "laptopCompartmentInches": 15,
+        "material": "ripstop nylon and leather",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 43 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Trekking-inspired urban pack equipped with front compression clips and padded back.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-joe-backpack-quilted",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "Joe Backpack in Quilted Lambskin",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/joe-backpack-in-quilted-lambskin-6726091EL011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Quilted Lambskin / Bronze YSL"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "joe backpack in quilted lambskin",
+        "volumeLiters": 11,
+        "laptopCompartmentInches": 0,
+        "material": "quilted lambskin with chevron stitching",
+        "waterResistant": true,
+        "dimensionsCm": "22 x 29 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Feminine bucket backpack with front chevron quilted pouch adorned with Cassandre logo.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sid-backpack-calfskin",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "Sid Backpack in Smooth Calfskin",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/sid-backpack-in-smooth-leather-58586716R1E1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Smooth Calfskin / Square Silhouette"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sid backpack in smooth calfskin",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 14,
+        "material": "smooth calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 39 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Structured boxy leather pack featuring clean minimalist zip geometry.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-gaby-backpack",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "Gaby Backpack in Quilted Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/gaby-backpack-in-quilted-leather-7023001EL011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Diamond-Quilted Lambskin"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "gaby backpack in quilted leather",
+        "volumeLiters": 13,
+        "laptopCompartmentInches": 11,
+        "material": "carré-quilted lambskin",
+        "waterResistant": true,
+        "dimensionsCm": "24 x 31 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Diamond-quilted lambskin backpack closed with magnetic drawstrings and flap.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-city-star-studded-backpack",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "City Star-Studded Canvas Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/city-backpack-with-star-studs-5349670AY1F1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Canvas / Silver Star Studs"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "city star-studded canvas backpack",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "cotton canvas with silver-toned metal studs",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 41 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Glam rock aesthetic embellished with miniature metallic star studs.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-monogram-canvas-city-backpack",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "YSL Monogram Canvas City Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/city-backpack-in-monogram-canvas-53496724Z2E1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Brown Monogram Coated Canvas"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "ysl monogram canvas city backpack",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "all-over monogram coated canvas",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 41 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "All-over archival Cassandre geometric monogram pattern canvas.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-camp-camera-rucksack",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "Camp Camera Rucksack in Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/camp-camera-backpack-6347171EL001000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Vintage Leather / Flap Pockets"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "camp camera rucksack in leather",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 13,
+        "material": "crinkled vintage calfskin",
+        "waterResistant": true,
+        "dimensionsCm": "28 x 36 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Military field camera rucksack reimagined in supple washed leather.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sac-de-jour-souple-backpack",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "Sac de Jour Souple Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/backpacks/sac-de-jour-souple-backpack-480585DTI0E1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Grained Calfskin / Accordion Gussets"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sac de jour souple leather backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "grained calfskin with accordion sides",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 40 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sac de Jour DNA translated into a backpack with accordion side gussets and padlock.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-intrecciato-classic-backpack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Intrecciato Leather Classic Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/classic-backpack-black-658097V0OZ08803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Intrecciato Calfskin / Matte Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "intrecciato leather classic backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "hand-woven intrecciato calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 42 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Timeless daypack constructed using signature hand-woven Intrecciato leather.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-padded-tech-cassette-backpack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Padded Tech Cassette Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/padded-tech-cassette-backpack-black-709848VBO818803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Technical Nylon / Maxi Intreccio"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "padded tech cassette backpack",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "padded technical nylon tape",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 44 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Orthogonal wide-weave padded technical webbing with magnetic flap buckle.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-intreccio-nylon-technical-backpack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Intreccio Nylon Technical Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/technical-backpack-black-653118V0E528803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Technical Nylon / Drawstring Closure"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "intreccio nylon technical backpack",
+        "volumeLiters": 26,
+        "laptopCompartmentInches": 16,
+        "material": "woven technical nylon",
+        "waterResistant": true,
+        "dimensionsCm": "34 x 48 x 17"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-capacity outdoor technical pack woven from durable nylon ribbons.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-fold-top-intrecciato-backpack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Fold-Top Intrecciato Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/fold-top-backpack-black-730873V2HL18803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Calfskin / Roll-Top Fold"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "fold-top intrecciato leather backpack",
+        "volumeLiters": 24,
+        "laptopCompartmentInches": 15,
+        "material": "intrecciato calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 45 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roll-and-fold top mechanism secured by solid aluminum parachute buckle.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-medium-intrecciato-daypack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Medium Intrecciato Leather Daypack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/medium-daypack-black-710112VCP408803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Fondant Brown Intrecciato Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "medium intrecciato leather daypack",
+        "volumeLiters": 17,
+        "laptopCompartmentInches": 13,
+        "material": "woven lambskin and calfskin",
+        "waterResistant": true,
+        "dimensionsCm": "28 x 38 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Mid-size luxury daypack proportioned for everyday laptop commute.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-compact-intrecciato-backpack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Compact Intrecciato Calfskin Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/compact-backpack-black-658147V0OZ08803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Calfskin / Rounded Top Dome"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "compact intrecciato calfskin backpack",
+        "volumeLiters": 14,
+        "laptopCompartmentInches": 11,
+        "material": "intrecciato calfskin",
+        "waterResistant": true,
+        "dimensionsCm": "25 x 34 x 12"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact rounded silhouette with padded adjustable ergonomic shoulder straps.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-hydrology-leather-commuter",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Hydrology Leather Commuter Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/hydrology-backpack-black-658149V0E518803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Water-Repellent Calfskin"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "hydrology leather commuter backpack",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "hydrology treated water-resistant calfskin",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 43 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Proprietary Hydrology treated calfskin repelling heavy rainfall and moisture.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-intrecciato-sling-backpack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Intrecciato Sling Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/sling-backpack-black-710058V0OZ08803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Woven Calfskin / Crossbody Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "intrecciato sling backpack",
+        "volumeLiters": 8,
+        "laptopCompartmentInches": 9,
+        "material": "intrecciato calfskin",
+        "waterResistant": true,
+        "dimensionsCm": "19 x 32 x 9"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crossbody sling pack featuring reversible hook for left or right chest wear.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-rubberized-canvas-backpack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Intreccio Rubberized Canvas Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/rubberized-backpack-black-653119V0E528803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Rubberized Technical Canvas"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "intreccio rubberized canvas backpack",
+        "volumeLiters": 23,
+        "laptopCompartmentInches": 15,
+        "material": "rubberized canvas with intreccio relief",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 44 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavy-duty matte rubber coating shielding delicate woven leather textures.",
+      "status": "staged"
+    },
+    {
+      "id": "bv-urban-leather-flap-backpack",
+      "canonicalBrand": "Bottega Veneta",
+      "displayBrand": "Bottega Veneta",
+      "modelName": "Urban Leather Flap Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/urban-flap-backpack-black-730874V2HL18803.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Smooth Calfskin Front / Woven Sides"
+      ],
+      "collectedAttributes": {
+        "brand": "bottega veneta",
+        "modelName": "urban leather flap backpack",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "calfskin and intrecciato leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 41 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated hybrid of smooth front leather flap and Intrecciato lateral panels.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-alpha-bravo-search",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Alpha Bravo Search Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/search-backpack-01424801041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Ballistic Nylon"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "alpha bravo search backpack",
+        "volumeLiters": 28,
+        "laptopCompartmentInches": 15,
+        "material": "fxt ballistic nylon",
+        "waterResistant": true,
+        "dimensionsCm": "35.5 x 43 x 21"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Commanding commuter backpack engineered from ultra-durable FXT ballistic nylon.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-alpha-bravo-navigation",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Alpha Bravo Navigation Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/navigation-backpack-01424791041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Ballistic Nylon / Gunmetal Zips"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "alpha bravo navigation backpack",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "fxt ballistic nylon",
+        "waterResistant": true,
+        "dimensionsCm": "35.5 x 40.5 x 18.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Expandable modern backpack equipped with daisy chain loops and TUMI Tracer.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-alpha-3-t-pass-business",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Alpha 3 T-Pass Business Class Brief Pack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/t-pass-business-class-brief-pack-01172971041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Ballistic Nylon / Leather Accents"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "alpha 3 t-pass business class brief pack",
+        "volumeLiters": 26,
+        "laptopCompartmentInches": 15,
+        "material": "fxt ballistic nylon",
+        "waterResistant": true,
+        "dimensionsCm": "30.5 x 42 x 20.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TSA checkpoint-friendly design allowing scan through airport security without removing laptop.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-alpha-3-compact-brief-pack",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Alpha 3 Compact Laptop Brief Pack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/compact-laptop-brief-pack-01172981041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black FXT Ballistic Nylon"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "alpha 3 compact laptop brief pack",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 15,
+        "material": "fxt ballistic nylon",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 40.5 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slimmer executive profile with U-zip pockets and waterproof umbrella pocket.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-voyageur-carson",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Voyageur Carson Laptop Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/carson-backpack-01099681041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Nylon / Gold Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "voyageur carson laptop backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "lightweight nylon with leather trim",
+        "waterResistant": true,
+        "dimensionsCm": "30.5 x 43 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spacious yet lightweight women's business backpack with water bottle pocket.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-voyageur-celina",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Voyageur Celina Nylon Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/celina-backpack-01465661041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Nylon / Gunmetal Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "voyageur celina nylon backpack",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 15,
+        "material": "recycled nylon with leather trim",
+        "waterResistant": true,
+        "dimensionsCm": "27 x 40.5 x 16.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versatile travel and business silhouette with add-a-bag luggage sleeve.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-harrison-william-leather",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Harrison William Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/william-backpack-01305711041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Supple Leather / Minimalist Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "harrison william leather backpack",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "supple textured leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 40.5 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated full-leather executive backpack with clean architectural face.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-harrison-bradner-leather",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Harrison Bradner Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/bradner-backpack-01305321041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Titanium Leather / Magnetic Slip Pocket"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "harrison bradner leather backpack",
+        "volumeLiters": 17,
+        "laptopCompartmentInches": 14,
+        "material": "smooth leather",
+        "waterResistant": true,
+        "dimensionsCm": "29 x 42 x 9"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-slim leather business backpack designed for minimal bulk on daily transit.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-19-degree-aluminum-trim",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "19 Degree Aluminum-Trim Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/19-degree-backpack-01485601041/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Molded Aluminum Contours"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "19 degree aluminum-trim backpack",
+        "volumeLiters": 23,
+        "laptopCompartmentInches": 15,
+        "material": "molded polymer and ballistic nylon with aluminum",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 44 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rigid protective shell echoing the 19 Degree fluid contour luggage lines.",
+      "status": "staged"
+    },
+    {
+      "id": "tumi-tahoe-finch",
+      "canonicalBrand": "Tumi",
+      "displayBrand": "Tumi",
+      "modelName": "Tahoe Finch Technical Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tumi.com/p/finch-backpack-0798673D/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Technical Polyester / Integrated Rain Cover"
+      ],
+      "collectedAttributes": {
+        "brand": "tumi",
+        "modelName": "tahoe finch technical backpack",
+        "volumeLiters": 24,
+        "laptopCompartmentInches": 15,
+        "material": "water-repellent technical fabric",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 46.5 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Street-inspired technical commuter pack featuring built-in deployable rain cover.",
+      "status": "staged"
+    },
+    {
+      "id": "rimowa-never-still-large",
+      "canonicalBrand": "Rimowa",
+      "displayBrand": "Rimowa",
+      "modelName": "Never Still Flap Backpack Large (Canvas & Leather)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rimowa.com/us/en/bags/backpacks/large-backpack/52500003.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Water-Repellent Canvas / Full-Grain Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "rimowa",
+        "modelName": "never still flap backpack large (canvas & leather)",
+        "volumeLiters": 23,
+        "laptopCompartmentInches": 16,
+        "material": "water-repellent canvas and full-grain leather",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 44 x 17"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Grooved aluminum buckle closure inspired by Rimowa's iconic luggage ribs.",
+      "status": "staged"
+    },
+    {
+      "id": "rimowa-never-still-small",
+      "canonicalBrand": "Rimowa",
+      "displayBrand": "Rimowa",
+      "modelName": "Never Still Flap Backpack Small (Canvas & Leather)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rimowa.com/us/en/bags/backpacks/small-backpack/52500001.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Desert Rose / Full-Grain Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "rimowa",
+        "modelName": "never still flap backpack small (canvas & leather)",
+        "volumeLiters": 15,
+        "laptopCompartmentInches": 13,
+        "material": "canvas and full-grain leather",
+        "waterResistant": true,
+        "dimensionsCm": "23 x 30 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Petite daily carry edition with grooved front leather pocket and monogram hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "rimowa-never-still-leather",
+      "canonicalBrand": "Rimowa",
+      "displayBrand": "Rimowa",
+      "modelName": "Never Still Backpack (Full Grain Leather)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rimowa.com/us/en/bags/backpacks/backpack/52500002.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Full-Grain Leather / Padded Straps"
+      ],
+      "collectedAttributes": {
+        "brand": "rimowa",
+        "modelName": "never still backpack (full grain leather)",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 15,
+        "material": "premium full-grain italian leather",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 42 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "All-leather luxury executive backpack engineered in Cologne with luggage pass-through band.",
+      "status": "staged"
+    },
+    {
+      "id": "rimowa-original-cabin-sling",
+      "canonicalBrand": "Rimowa",
+      "displayBrand": "Rimowa",
+      "modelName": "Original Cabin Aluminum Sling Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rimowa.com/us/en/bags/cross-body-bags/aluminum-sling/52500004.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Anodized Silver Grooved Aluminum"
+      ],
+      "collectedAttributes": {
+        "brand": "rimowa",
+        "modelName": "original cabin aluminum sling backpack",
+        "volumeLiters": 6,
+        "laptopCompartmentInches": 0,
+        "material": "anodized aluminum and italian leather",
+        "waterResistant": true,
+        "dimensionsCm": "18 x 28 x 8"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hard-shell anodized aluminum crossbody sling pack protecting fragile electronics.",
+      "status": "staged"
+    },
+    {
+      "id": "rimowa-never-still-utility",
+      "canonicalBrand": "Rimowa",
+      "displayBrand": "Rimowa",
+      "modelName": "Never Still Utility Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rimowa.com/us/en/bags/backpacks/utility-backpack/52500005.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Khaki Green Canvas / Matte Black Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "rimowa",
+        "modelName": "never still utility backpack",
+        "volumeLiters": 25,
+        "laptopCompartmentInches": 16,
+        "material": "heavyweight canvas and leather",
+        "waterResistant": true,
+        "dimensionsCm": "34 x 46 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Outdoor utility rucksack with dual lateral water bottle pockets and magnetic buckles.",
+      "status": "staged"
+    },
+    {
+      "id": "rimowa-essential-polycarbonate-sleeve",
+      "canonicalBrand": "Rimowa",
+      "displayBrand": "Rimowa",
+      "modelName": "Essential Polycarbonate Sleeve Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rimowa.com/us/en/bags/backpacks/essential-backpack/52500006.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Gloss Black Polycarbonate / Technical Fabric"
+      ],
+      "collectedAttributes": {
+        "brand": "rimowa",
+        "modelName": "essential polycarbonate sleeve backpack",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 15,
+        "material": "polycarbonate and technical textile",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 41 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-impact grooved polycarbonate face fused to an ergonomic lightweight backpack.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-meisterstuck-selection-soft",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "Meisterstück Selection Soft Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145101.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Soft Calfskin / Palladium Emblem"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "meisterstück selection soft leather backpack",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 15,
+        "material": "soft full-grain calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 41 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tribute to the Meisterstück pen nib with pen-nib stitching and soft calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-sartorial-medium",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "Sartorial Medium Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145102.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Saffiano Leather / Clean Business Profile"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "sartorial medium leather backpack",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 15,
+        "material": "saffiano print full-grain bovine leather",
+        "waterResistant": true,
+        "dimensionsCm": "28 x 39 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Saffiano-print business backpack equipped with three zip compartments and satellite system.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-extreme-3-m-lock",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "Extreme 3.0 Backpack with M LOCK 4810 Buckle",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145103.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Extreme 3.0 Leather / Climbing Buckle"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "extreme 3.0 backpack with m lock 4810 buckle",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "embossed full-grain bovine leather",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 46 x 17"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Climbing-inspired M LOCK 4810 quick-release buckle honoring Mont Blanc peak altitude.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-extreme-3-medium",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "Extreme 3.0 Medium Backpack with Carbon Finish",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145104.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Forged Iron Carbon Print / Black Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "extreme 3.0 medium backpack with carbon finish",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 15,
+        "material": "carbon-look textured leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 42 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Durable carbon-weave embossed leather engineered for demanding urban environments.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-nightflight-medium",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "Nightflight Medium Nylon and Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145105.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Ribbed Nylon / Water-Repellent Shield"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "nightflight medium nylon and leather backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "ribbed nylon with fine-rib leather trim",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 43 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight travel pack with integrated storm-proof deployable nylon cover.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-meisterstuck-urban",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "Meisterstück Urban Leather City Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145106.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black Calfskin / Clean Minimal Face"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "meisterstück urban leather city backpack",
+        "volumeLiters": 16,
+        "laptopCompartmentInches": 14,
+        "material": "smooth calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "29 x 38 x 12"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slim city commuter pack tailored for formal boardroom appointments.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-sartorial-large-double-zip",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "Sartorial Large Double-Zip Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145107.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Saffiano Leather / Dual Full-Depth Zips"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "sartorial large double-zip leather backpack",
+        "volumeLiters": 25,
+        "laptopCompartmentInches": 16,
+        "material": "saffiano embossed leather",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 43 x 17"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Generous dual-chamber backpack with dedicated padded tech divider and document file.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-mb-01-commuter",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "MB 01 Leather Commuter Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145108.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Grained Leather / Headphone Loop"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "mb 01 leather commuter backpack",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 15,
+        "material": "grained bovine leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 40 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Designed specifically to complement Montblanc MB 01 wireless smart headphones.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-extreme-3-compact-sling",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "Extreme 3.0 Compact Leather Sling Pack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145109.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black Extreme Pattern / Crossbody Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "extreme 3.0 compact leather sling pack",
+        "volumeLiters": 7,
+        "laptopCompartmentInches": 9,
+        "material": "extreme 3.0 embossed leather",
+        "waterResistant": true,
+        "dimensionsCm": "19 x 31 x 8"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hands-free single-strap sling pack with M LOCK 4810 safety closure.",
+      "status": "staged"
+    },
+    {
+      "id": "montblanc-1858-geosphere-backpack",
+      "canonicalBrand": "Montblanc",
+      "displayBrand": "Montblanc",
+      "modelName": "1858 Geosphere Exploration Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.montblanc.com/en-us/backpacks_cod1647597311145110.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Glacier Blue & Black / Mountaineering Clips"
+      ],
+      "collectedAttributes": {
+        "brand": "montblanc",
+        "modelName": "1858 geosphere exploration backpack",
+        "volumeLiters": 26,
+        "laptopCompartmentInches": 15,
+        "material": "reinforced technical fabric and leather",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 46 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Expedition pack inspired by the Seven Summits mountaineering challenge.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-classic-plus",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Classic Backpack Plus 24L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/classic-backpack-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Recycled Dura Nylon"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "classic backpack plus 24l",
+        "volumeLiters": 24,
+        "laptopCompartmentInches": 16,
+        "material": "water-resistant recycled dura nylon",
+        "waterResistant": true,
+        "dimensionsCm": "37 x 53 x 20"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined 24L commuter workhorse with dual work/life compartment separation.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-transit-backpack-28",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Transit Backpack 28L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/transit-backpack"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Nightsky / Baida Nylon"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "transit backpack 28l",
+        "volumeLiters": 28,
+        "laptopCompartmentInches": 16,
+        "material": "water-resistant recycled woven fabric",
+        "waterResistant": true,
+        "dimensionsCm": "39 x 53 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Carry-on compliant travel pack with external access to laptop and passport.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-transit-workpack-20",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Transit Workpack 20L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/transit-workpack"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Clamshell Opening"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "transit workpack 20l",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 16,
+        "material": "recycled ripstop and dura nylon",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 50 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Streamlined daily workpack with full clamshell zip opening for easy packing.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-apex-backpack-26",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Apex Backpack 26L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/apex-backpack"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Baida Nylon / Magnetic Snaps"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "apex backpack 26l",
+        "volumeLiters": 26,
+        "laptopCompartmentInches": 16,
+        "material": "custom baida nylon and environmentally certified leather",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 53 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellroy's flagship pinnacle design with magnetic Fidlock clasps and expanding volume.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-tokyo-totepack-20",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Tokyo Totepack 20L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/tokyo-totepack"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Desert / Convertible Straps"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "tokyo totepack 20l",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "recycled water-resistant woven fabric",
+        "waterResistant": true,
+        "dimensionsCm": "37 x 43 x 10"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Convertible design switching effortlessly between tote bag and comfortable backpack.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-lite-daypack-20",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Lite Daypack 20L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/lite-daypack"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Chalk / Diamond Ripstop"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "lite daypack 20l",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "diamond ripstop from 100% recycled PET bottles",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 48 x 17"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultralight daypack weighing 350 grams, made from durable recycled diamond ripstop.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-melbourne-compact-12",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Melbourne Backpack Compact 12L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/melbourne-backpack-compact"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Magnetic MagSnap Fold"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "melbourne backpack compact 12l",
+        "volumeLiters": 12,
+        "laptopCompartmentInches": 13,
+        "material": "recycled woven fabric",
+        "waterResistant": true,
+        "dimensionsCm": "28 x 40 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean clean-face urban pack with quick-access magnetic MagSnap hood closure.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-venture-backpack-22",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Venture Backpack 22L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/venture-backpack"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight / Dual Side Access"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "venture backpack 22l",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 16,
+        "material": "water-resistant recycled fabric",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 49 x 19"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Outdoor adventure pack featuring dual side zips for gear retrieval on the go.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-classic-compact-16",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Classic Backpack Compact 16L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/classic-backpack-compact"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze / Water-Resistant Canvas"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "classic backpack compact 16l",
+        "volumeLiters": 16,
+        "laptopCompartmentInches": 13,
+        "material": "recycled fabric and leather accents",
+        "waterResistant": true,
+        "dimensionsCm": "27 x 40 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Downsized classic silhouette tailored for smaller frames and lighter carry.",
+      "status": "staged"
+    },
+    {
+      "id": "bellroy-transit-travel-38",
+      "canonicalBrand": "Bellroy",
+      "displayBrand": "Bellroy",
+      "modelName": "Transit Travel Pack 38L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://bellroy.com/products/transit-backpack-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Maximum Overhead Carry-On"
+      ],
+      "collectedAttributes": {
+        "brand": "bellroy",
+        "modelName": "transit travel pack 38l",
+        "volumeLiters": 38,
+        "laptopCompartmentInches": 16,
+        "material": "recycled baida nylon",
+        "waterResistant": true,
+        "dimensionsCm": "39 x 55 x 24"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Maximum-capacity one-bag travel pack with compression straps and shoe pocket.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-tanker-rucksack",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Tanker Rucksack Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/105786.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Sage Green / Safety Orange Rescue Lining"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "tanker rucksack backpack",
+        "volumeLiters": 16,
+        "laptopCompartmentInches": 13,
+        "material": "3-layer nylon twill bonding (flight jacket ma-1 inspired)",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 43 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kichizo Yoshida's 1983 masterpiece inspired by the US Air Force MA-1 flight jacket.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-tanker-daypack-19",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Tanker Daypack 19L",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/105787.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Orange Lining"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "tanker daypack 19l",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 15,
+        "material": "nylon twill with polyester cotton bonding",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 43 x 12"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic teardrop daypack with dual front snap-and-velcro bellows pockets.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-tanker-3way-briefcase",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Tanker 3Way Briefcase Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/105788.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Blue / 3-Way Convertible"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "tanker 3way briefcase backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "3-layer bonded nylon twill",
+        "waterResistant": true,
+        "dimensionsCm": "42 x 30 x 12.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Converts effortlessly from briefcase to shoulder messenger to backpack.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-heat-daypack",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Heat Daypack Ballistic Nylon",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/101234.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Includes Maglite Flashlight"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "heat daypack ballistic nylon",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 15,
+        "material": "varister nylon (ballistic nylon) and tarpaulin",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 43 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Indestructible ballistic nylon daypack equipped with removable working Maglite zipper pull.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-force-rucksack",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Force Rucksack Tactical Nylon",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/102345.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Olive Drab / Subtle Fabric Dye Nuances"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "force rucksack tactical nylon",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "industrial nylon oxford with quilted ripstop lining",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 45 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Military motif rucksack featuring subtle irregular panel color shades.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-smoky-rucksack",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Smoky Rucksack Cordura Duck",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/103456.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey / Zimbabwe Cotton Cordura"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "smoky rucksack cordura duck",
+        "volumeLiters": 17,
+        "laptopCompartmentInches": 13,
+        "material": "cordura duck (organic cotton and cordura nylon)",
+        "waterResistant": true,
+        "dimensionsCm": "28 x 38 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Proprietary textile weaving organic Zimbabwe cotton with high-tensile Cordura nylon.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-flying-ace-backpack",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Flying Ace Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/104567.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Nylon Cordura Military"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "flying ace backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "high-density nylon ox with military webbing",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 42 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Based on 1950s US Air Force flying suit gear with parachute cord zip pulls.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-bridge-daypack",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Bridge Daypack Canvas & Nylon",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/105678.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Beige Canvas / Black Nylon Base"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "bridge daypack canvas & nylon",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 15,
+        "material": "cotton canvas and durable nylon",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 42 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hybrid material construction combining natural canvas and technical nylon base.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-stand-daypack",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Stand Daypack Water-Repellent",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/106789.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Self-Standing Rigid Bottom"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "stand daypack water-repellent",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "water-repellent teflon-coated nylon",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 44 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Self-standing structural base engineered not to tip over on floor surfaces.",
+      "status": "staged"
+    },
+    {
+      "id": "porter-flash-daypack",
+      "canonicalBrand": "Porter-Yoshida",
+      "displayBrand": "Porter-Yoshida",
+      "modelName": "Flash Daypack Lightweight Nylon",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.yoshidakaban.com/product/107890.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Navy / YKK Water-Guard Zippers"
+      ],
+      "collectedAttributes": {
+        "brand": "porter-yoshida",
+        "modelName": "flash daypack lightweight nylon",
+        "volumeLiters": 16,
+        "laptopCompartmentInches": 13,
+        "material": "lightweight bonded nylon with water-repellent coating",
+        "waterResistant": true,
+        "dimensionsCm": "28 x 40 x 12"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-light bonded daily rucksack with concealed taped weatherproof zippers.",
+      "status": "staged"
+    },
+    {
+      "id": "filson-rugged-twill-rucksack",
+      "canonicalBrand": "Filson",
+      "displayBrand": "Filson",
+      "modelName": "Rugged Twill Rucksack (Tan)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.filson.com/bags-luggage/backpacks/rugged-twill-rucksack.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Tan Rugged Twill / Bridle Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "filson",
+        "modelName": "rugged twill rucksack (tan)",
+        "volumeLiters": 28,
+        "laptopCompartmentInches": 15,
+        "material": "100% cotton rugged twill with bridle leather straps",
+        "waterResistant": true,
+        "dimensionsCm": "38 x 44 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Legendary Seattle heritage rucksack built from industrial-strength water-repellent twill.",
+      "status": "staged"
+    },
+    {
+      "id": "filson-dryden-ballistic-backpack",
+      "canonicalBrand": "Filson",
+      "displayBrand": "Filson",
+      "modelName": "Dryden Ballistic Nylon Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.filson.com/bags-luggage/backpacks/dryden-backpack.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Otter Green / 1000D Cordura"
+      ],
+      "collectedAttributes": {
+        "brand": "filson",
+        "modelName": "dryden ballistic nylon backpack",
+        "volumeLiters": 25,
+        "laptopCompartmentInches": 15,
+        "material": "1000d cordura nylon with bridle leather",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 46 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tough Cordura ballistic nylon daypack with dual-layer reinforced base.",
+      "status": "staged"
+    },
+    {
+      "id": "filson-journeyman-backpack",
+      "canonicalBrand": "Filson",
+      "displayBrand": "Filson",
+      "modelName": "Journeyman Rugged Twill Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.filson.com/bags-luggage/backpacks/journeyman-backpack.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Otter Green / Oil Finish Tin Cloth"
+      ],
+      "collectedAttributes": {
+        "brand": "filson",
+        "modelName": "journeyman rugged twill backpack",
+        "volumeLiters": 23,
+        "laptopCompartmentInches": 15,
+        "material": "rugged twill and 14-oz oil finish tin cloth",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 44 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Low-profile commuter pack combining oil-finish Tin Cloth and dry Rugged Twill.",
+      "status": "staged"
+    },
+    {
+      "id": "filson-roll-top-dry-backpack",
+      "canonicalBrand": "Filson",
+      "displayBrand": "Filson",
+      "modelName": "Roll-Top Dry Waterproof Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.filson.com/bags-luggage/backpacks/dry-roll-top-backpack.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Green / Submersible TPU Coated"
+      ],
+      "collectedAttributes": {
+        "brand": "filson",
+        "modelName": "roll-top dry waterproof backpack",
+        "volumeLiters": 28,
+        "laptopCompartmentInches": 0,
+        "material": "840d nylon with clear thermoplastic polyurethane coating",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 51 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Submersible roll-top backpack engineered for whitewater rafting and heavy storms.",
+      "status": "staged"
+    },
+    {
+      "id": "filson-ripstop-nylon-commuter",
+      "canonicalBrand": "Filson",
+      "displayBrand": "Filson",
+      "modelName": "Ripstop Nylon Commuter Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.filson.com/bags-luggage/backpacks/ripstop-nylon-backpack.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Surplus Green / 500D Cordura Ripstop"
+      ],
+      "collectedAttributes": {
+        "brand": "filson",
+        "modelName": "ripstop nylon commuter backpack",
+        "volumeLiters": 24,
+        "laptopCompartmentInches": 15,
+        "material": "500d cordura ripstop nylon",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 48 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight field backpack built with tear-resistant Cordura ripstop and breathable back.",
+      "status": "staged"
+    },
+    {
+      "id": "filson-tin-cloth-compact-backpack",
+      "canonicalBrand": "Filson",
+      "displayBrand": "Filson",
+      "modelName": "Tin Cloth Compact Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.filson.com/bags-luggage/backpacks/tin-cloth-backpack.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Tan / Waxed Canvas"
+      ],
+      "collectedAttributes": {
+        "brand": "filson",
+        "modelName": "tin cloth compact backpack",
+        "volumeLiters": 16,
+        "laptopCompartmentInches": 13,
+        "material": "oil finish tin cloth waxed canvas",
+        "waterResistant": true,
+        "dimensionsCm": "28 x 38 x 12"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional Pacific Northwest rainwear canvas impregnated with paraffin wax.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg-black-backpack",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG Black Backpack in GG Supreme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/bags-for-men/backpacks-for-men/gg-black-backpack-p-495563K9RRN1095"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black/Grey GG Supreme / Web Straps"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg black backpack in gg supreme",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "gg supreme canvas with leather trim",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 41 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Urban black GG Supreme canvas backpack accented with blue and red Web strap.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-ophidia-gg-medium",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "Ophidia GG Medium Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/bags-for-men/backpacks-for-men/ophidia-gg-medium-backpack-p-54796596IWT8745"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Beige/Ebony GG Supreme / Green Red Web"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "ophidia gg medium backpack",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "gg supreme canvas with brown leather trim",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 40 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage archive style featuring green and red Web inlay and double G emblem.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-off-the-grid-backpack",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "Gucci Off The Grid Backpack (Recycled Nylon)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/bags-for-men/backpacks-for-men/gucci-off-the-grid-backpack-p-626160H9HFN1000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black GG Econyl Regenerated Nylon"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gucci off the grid backpack (recycled nylon)",
+        "volumeLiters": 23,
+        "laptopCompartmentInches": 15,
+        "material": "econyl regenerated nylon with metal-free leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 44 x 18"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Circular design initiative using Econyl regenerated nylon from recycled fishnets.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg-marmont-leather-backpack",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG Marmont Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/handbags/backpacks-for-women/gg-marmont-backpack-p-528129DRW4T1000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Chevron Quilted Calfskin"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg marmont leather backpack",
+        "volumeLiters": 14,
+        "laptopCompartmentInches": 11,
+        "material": "matelassé chevron calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "25 x 30 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Feminine rounded backpack with Double G hardware and chevron quilted leather.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-savoy-medium-backpack",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "Gucci Savoy Medium Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/bags-for-men/backpacks-for-men/gucci-savoy-medium-backpack-p-72464192THG8563"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "GG Supreme / Brown Leather Details"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gucci savoy medium backpack",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "gg supreme canvas and leather",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 42 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gucci Valigeria heritage luggage tribute named after London's Savoy Hotel.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-horsebit-1955-backpack",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "Gucci Horsebit 1955 Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/handbags/backpacks-for-women/gucci-horsebit-1955-backpack-p-62084992TCG8563"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "GG Supreme Canvas / Gold Horsebit"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gucci horsebit 1955 backpack",
+        "volumeLiters": 15,
+        "laptopCompartmentInches": 12,
+        "material": "gg supreme canvas with leather trim",
+        "waterResistant": true,
+        "dimensionsCm": "27 x 35 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Equestrian double-ring and bar hardware adorning a tailored bucket backpack.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-interlocking-g-technical",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "Interlocking G Technical Canvas Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/bags-for-men/backpacks-for-men/technical-canvas-backpack-p-643878H9H101000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Heavy Canvas / Rubber Logo Patch"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "interlocking g technical canvas backpack",
+        "volumeLiters": 25,
+        "laptopCompartmentInches": 15,
+        "material": "technical canvas and mesh",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 45 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavy-duty technical canvas daypack with padded air-mesh back and side buckle clips.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg-embossed-backpack",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG Embossed Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/bags-for-men/backpacks-for-men/gg-embossed-backpack-p-6257701W3BN1000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Embossed Calfskin / Monogram Depth"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg embossed leather backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "gg embossed perforated calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 41 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-relief heat-embossed GG monogram pressed into perforated full-grain leather.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-web-drawstring-backpack",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "Gucci Web Stripe Drawstring Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/bags-for-men/backpacks-for-men/drawstring-backpack-p-473872K9RVT8863"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Soft GG Supreme / Rope Straps"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gucci web stripe drawstring backpack",
+        "volumeLiters": 16,
+        "laptopCompartmentInches": 13,
+        "material": "soft micro-fiber gg supreme coated canvas",
+        "waterResistant": true,
+        "dimensionsCm": "38 x 45 x 6"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage gym sack silhouette upgraded with supple GG Supreme canvas and twin tote handles.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-jumbo-gg-canvas",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "Jumbo GG Canvas Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/bags-for-men/backpacks-for-men/jumbo-gg-backpack-p-674147UKMDN1000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel and Ebony Jumbo GG"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "jumbo gg canvas backpack",
+        "volumeLiters": 24,
+        "laptopCompartmentInches": 15,
+        "material": "jumbo gg canvas and leather",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 44 x 17"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Aria collection maximalist reinterpretation enlarging the 1930s GG monogram.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-harper-leather-backpack",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Harper Leather Laptop Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/harper-leather-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Grained Bovine Leather / Bally Stripe"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "harper leather laptop backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "grained bovine leather",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 42 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Swiss craftsmanship executive backpack carrying the red-and-white Bally train stripe.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-crew-nylon-leather",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Crew Nylon and Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/crew-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Water-Resistant Nylon / Leather Trim"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "crew nylon and leather backpack",
+        "volumeLiters": 22,
+        "laptopCompartmentInches": 15,
+        "material": "recycled technical nylon and leather",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 44 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight urban utility pack featuring front zip organizer and padded straps.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-mythos-coated-canvas",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Mythos Coated Canvas Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/mythos-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Bally Red Stripe / Coated Canvas"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "mythos coated canvas backpack",
+        "volumeLiters": 19,
+        "laptopCompartmentInches": 15,
+        "material": "recycled coated canvas with leather accents",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 41 x 13"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Weatherproof coated canvas construction designed for heavy daily commuting.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-chandos-leather-daypack",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Chandos Leather Daypack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/chandos-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Smooth Calf Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "chandos leather daypack",
+        "volumeLiters": 17,
+        "laptopCompartmentInches": 14,
+        "material": "smooth calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "29 x 39 x 12"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slim tailored silhouette with concealed zip pockets for formal boardroom travel.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-balen-striped-backpack",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Balen Striped Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/balen-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Ink Blue Calf Leather / White Stripe"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "balen striped leather backpack",
+        "volumeLiters": 21,
+        "laptopCompartmentInches": 15,
+        "material": "calf leather and technical mesh",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 43 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sporty leather backpack featuring an off-center vertical Bally heritage stripe.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-ferdi-technical-nylon",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Ferdi Technical Nylon Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/ferdi-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Cordura Nylon / Paracord Pulls"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "ferdi technical nylon backpack",
+        "volumeLiters": 24,
+        "laptopCompartmentInches": 15,
+        "material": "cordura technical nylon",
+        "waterResistant": true,
+        "dimensionsCm": "33 x 45 x 16"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Active lifestyle pack with outdoor cord pulls and ergonomic padded sternum strap.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-skill-lightweight-commuter",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Skill Lightweight Commuter Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/skill-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Ultra-Light Nylon"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "skill lightweight commuter backpack",
+        "volumeLiters": 18,
+        "laptopCompartmentInches": 15,
+        "material": "ultra-light technical nylon",
+        "waterResistant": true,
+        "dimensionsCm": "30 x 40 x 14"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Featherweight minimalist daypack designed for effortless everyday laptop carry.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-veltan-embossed-backpack",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Veltan Embossed Leather Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/veltan-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Bally Pennant Geometric Embossed Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "veltan embossed leather backpack",
+        "volumeLiters": 20,
+        "laptopCompartmentInches": 15,
+        "material": "geometric embossed calfskin",
+        "waterResistant": true,
+        "dimensionsCm": "31 x 42 x 15"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Textured geometric pennant embossing celebrating 170 years of Swiss leather tradition.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-zariel-technical-rucksack",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "Zariel Technical Fabric Rucksack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/zariel-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Flap Buckle / Olive and Black"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "zariel technical fabric rucksack",
+        "volumeLiters": 25,
+        "laptopCompartmentInches": 16,
+        "material": "technical ballistic canvas",
+        "waterResistant": true,
+        "dimensionsCm": "32 x 46 x 17"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Top-flap rucksack secured by dual aluminum compression buckles.",
+      "status": "staged"
+    },
+    {
+      "id": "bally-b-chain-compact-backpack",
+      "canonicalBrand": "Bally",
+      "displayBrand": "Bally",
+      "modelName": "B-Chain Compact City Backpack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bally.com/en-us/bags/mens-backpacks/b-chain-backpack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Leather / Interlocking B Clasp"
+      ],
+      "collectedAttributes": {
+        "brand": "bally",
+        "modelName": "b-chain compact city backpack",
+        "volumeLiters": 15,
+        "laptopCompartmentInches": 13,
+        "material": "smooth calfskin leather",
+        "waterResistant": true,
+        "dimensionsCm": "27 x 36 x 12"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elegant compact city daypack featuring the interlocking gold-finish B-Chain metal logo.",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Rimowa",
+      "leafKey": "backpacks",
+      "reason": "Rimowa lifestyle travel collection focuses on 6 specialized daily and transit backpack designs.",
+      "officialSourceUrl": "https://www.rimowa.com/us/en/bags/backpacks/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Never Still Flap Backpack Large",
+        "Never Still Flap Backpack Small",
+        "Never Still Backpack Leather",
+        "Original Cabin Aluminum Sling Backpack",
+        "Never Still Utility Backpack",
+        "Essential Polycarbonate Sleeve Backpack"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "DE"
+    },
+    {
+      "brand": "Filson",
+      "leafKey": "backpacks",
+      "reason": "Filson heritage rugged luggage collection centers on 6 heavy-duty twill and tin cloth backpacks.",
+      "officialSourceUrl": "https://www.filson.com/bags-luggage/backpacks.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Rugged Twill Rucksack",
+        "Dryden Ballistic Nylon Backpack",
+        "Journeyman Rugged Twill Backpack",
+        "Roll-Top Dry Waterproof Backpack",
+        "Ripstop Nylon Commuter Backpack",
+        "Tin Cloth Compact Backpack"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "US"
+    }
+  ]
+}

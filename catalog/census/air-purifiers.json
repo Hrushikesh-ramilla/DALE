@@ -1,0 +1,3519 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "air-purifiers",
+  "displayName": "Air Purifiers",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "dyson-purifier-big-quiet-bp03",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Purifier Big+Quiet Formaldehyde BP03",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/purifier-big-quiet-bp03"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-purifier-big-quiet-bp03.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "purifier big+quiet formaldehyde bp03",
+        "cadrCfm": 515,
+        "roomAreaSqFt": 1076,
+        "filterClass": "True HEPA H13 Sealed",
+        "noiseLevelDb": 24,
+        "powerWatts": 50,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Purifier Big+Quiet Formaldehyde BP03",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-purifier-big-quiet-bp04",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Purifier Big+Quiet Formaldehyde BP04",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/purifier-big-quiet-bp04"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-purifier-big-quiet-bp04.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "purifier big+quiet formaldehyde bp04",
+        "cadrCfm": 515,
+        "roomAreaSqFt": 1076,
+        "filterClass": "True HEPA H13 & K-Carbon",
+        "noiseLevelDb": 24,
+        "powerWatts": 50,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Purifier Big+Quiet Formaldehyde BP04",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-purifier-hot-cool-hp09",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Purifier Hot+Cool Formaldehyde HP09",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/purifier-hot-cool-hp09"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-purifier-hot-cool-hp09.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "purifier hot+cool formaldehyde hp09",
+        "cadrCfm": 190,
+        "roomAreaSqFt": 400,
+        "filterClass": "True HEPA H13 Sealed",
+        "noiseLevelDb": 35,
+        "powerWatts": 40,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Purifier Hot+Cool Formaldehyde HP09",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-purifier-cool-tp09",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Purifier Cool Formaldehyde TP09",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/purifier-cool-tp09"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-purifier-cool-tp09.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "purifier cool formaldehyde tp09",
+        "cadrCfm": 290,
+        "roomAreaSqFt": 600,
+        "filterClass": "True HEPA H13 & Catalytic",
+        "noiseLevelDb": 32,
+        "powerWatts": 40,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Purifier Cool Formaldehyde TP09",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-purifier-hot-cool-hp10",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Purifier Hot+Cool Gen1 HP10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/purifier-hot-cool-hp10"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-purifier-hot-cool-hp10.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "purifier hot+cool gen1 hp10",
+        "cadrCfm": 190,
+        "roomAreaSqFt": 400,
+        "filterClass": "True HEPA H13",
+        "noiseLevelDb": 35,
+        "powerWatts": 40,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Purifier Hot+Cool Gen1 HP10",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-purifier-cool-tp10",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Purifier Cool Gen1 TP10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/purifier-cool-tp10"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-purifier-cool-tp10.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "purifier cool gen1 tp10",
+        "cadrCfm": 290,
+        "roomAreaSqFt": 600,
+        "filterClass": "True HEPA H13",
+        "noiseLevelDb": 32,
+        "powerWatts": 40,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Purifier Cool Gen1 TP10",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-purifier-humidify-cool-ph04",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Purifier Humidify+Cool Formaldehyde PH04",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/purifier-humidify-cool-ph04"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-purifier-humidify-cool-ph04.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "purifier humidify+cool formaldehyde ph04",
+        "cadrCfm": 210,
+        "roomAreaSqFt": 450,
+        "filterClass": "True HEPA H13 & Carbon",
+        "noiseLevelDb": 36,
+        "powerWatts": 45,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Purifier Humidify+Cool Formaldehyde PH04",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-purifier-humidify-cool-ph03",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Purifier Humidify+Cool Autoreact PH03",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/purifier-humidify-cool-ph03"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-purifier-humidify-cool-ph03.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "purifier humidify+cool autoreact ph03",
+        "cadrCfm": 210,
+        "roomAreaSqFt": 450,
+        "filterClass": "True HEPA H13",
+        "noiseLevelDb": 36,
+        "powerWatts": 45,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Purifier Humidify+Cool Autoreact PH03",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-pure-cool-link-tower-tp02",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Pure Cool Link Tower TP02",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/pure-cool-link-tower-tp02"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-pure-cool-link-tower-tp02.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "pure cool link tower tp02",
+        "cadrCfm": 250,
+        "roomAreaSqFt": 500,
+        "filterClass": "360 Glass HEPA",
+        "noiseLevelDb": 35,
+        "powerWatts": 56,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Pure Cool Link Tower TP02",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-pure-hot-cool-hp00",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Pure Hot+Cool HP00",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/pure-hot-cool-hp00"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-pure-hot-cool-hp00.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "pure hot+cool hp00",
+        "cadrCfm": 180,
+        "roomAreaSqFt": 350,
+        "filterClass": "360 Glass HEPA",
+        "noiseLevelDb": 38,
+        "powerWatts": 44,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Pure Hot+Cool HP00",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-zone-purifying-headphones",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Purifier Big+Quiet & Hot+Cool",
+      "modelName": "Dyson Zone Air-Purifying Headphones",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/air-treatment/air-purifiers/zone-purifying-headphones"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Gold",
+        "Nickel / Blue",
+        "Prussian Blue / Copper"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-zone-purifying-headphones.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "dyson zone air-purifying headphones",
+        "cadrCfm": 50,
+        "roomAreaSqFt": 50,
+        "filterClass": "Electrostatic Micro-HEPA",
+        "noiseLevelDb": 20,
+        "powerWatts": 15,
+        "smartConnectivity": "Bluetooth & App"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson sealed HEPA air purifier Dyson Zone Air-Purifying Headphones",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-protect-7770i",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Protect 7770i",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/protect-7770i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-protect-7770i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "protect 7770i",
+        "cadrCfm": 435,
+        "roomAreaSqFt": 674,
+        "filterClass": "HEPASilent Ultra H13",
+        "noiseLevelDb": 25,
+        "powerWatts": 72,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Protect 7770i",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-protect-7470i",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Protect 7470i",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/protect-7470i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-protect-7470i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "protect 7470i",
+        "cadrCfm": 280,
+        "roomAreaSqFt": 418,
+        "filterClass": "HEPASilent Ultra H13",
+        "noiseLevelDb": 22,
+        "powerWatts": 43,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Protect 7470i",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-protect-7340i",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Protect 7340i",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/protect-7340i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-protect-7340i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "protect 7340i",
+        "cadrCfm": 210,
+        "roomAreaSqFt": 310,
+        "filterClass": "HEPASilent Ultra H13",
+        "noiseLevelDb": 22,
+        "powerWatts": 38,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Protect 7340i",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-blue-pure-211-plus-max",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Blue Pure 211+ Max",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/blue-pure-211-plus-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-blue-pure-211-plus-max.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "blue pure 211+ max",
+        "cadrCfm": 410,
+        "roomAreaSqFt": 635,
+        "filterClass": "HEPASilent Dual-Stage",
+        "noiseLevelDb": 23,
+        "powerWatts": 38,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Blue Pure 211+ Max",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-blue-pure-311i-plus-max",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Blue Pure 311i+ Max",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/blue-pure-311i-plus-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-blue-pure-311i-plus-max.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "blue pure 311i+ max",
+        "cadrCfm": 250,
+        "roomAreaSqFt": 387,
+        "filterClass": "HEPASilent Dual-Stage",
+        "noiseLevelDb": 23,
+        "powerWatts": 30,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Blue Pure 311i+ Max",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-blue-pure-411i-max",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Blue Pure 411i Max",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/blue-pure-411i-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-blue-pure-411i-max.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "blue pure 411i max",
+        "cadrCfm": 141,
+        "roomAreaSqFt": 219,
+        "filterClass": "HEPASilent Dual-Stage",
+        "noiseLevelDb": 18,
+        "powerWatts": 20,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Blue Pure 411i Max",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-classic-680i",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Classic 680i",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/classic-680i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-classic-680i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "classic 680i",
+        "cadrCfm": 500,
+        "roomAreaSqFt": 775,
+        "filterClass": "HEPASilent DualProtection",
+        "noiseLevelDb": 32,
+        "powerWatts": 100,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Classic 680i",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-classic-480i",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Classic 480i",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/classic-480i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-classic-480i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "classic 480i",
+        "cadrCfm": 300,
+        "roomAreaSqFt": 434,
+        "filterClass": "HEPASilent Particle/Carbon",
+        "noiseLevelDb": 32,
+        "powerWatts": 60,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Classic 480i",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-classic-280i",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Classic 280i",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/classic-280i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-classic-280i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "classic 280i",
+        "cadrCfm": 180,
+        "roomAreaSqFt": 279,
+        "filterClass": "HEPASilent Particle",
+        "noiseLevelDb": 32,
+        "powerWatts": 45,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Classic 280i",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-dustmagnet-5440i",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "DustMagnet 5440i",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/dustmagnet-5440i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-dustmagnet-5440i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "dustmagnet 5440i",
+        "cadrCfm": 212,
+        "roomAreaSqFt": 356,
+        "filterClass": "DustMagnet Combo HEPA",
+        "noiseLevelDb": 23,
+        "powerWatts": 42,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier DustMagnet 5440i",
+      "status": "staged"
+    },
+    {
+      "id": "blueair-blue-pure-fan",
+      "canonicalBrand": "Blueair",
+      "displayBrand": "Blueair",
+      "productLine": "Protect & Blue Pure Series",
+      "modelName": "Blue Pure Fan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.blueair.com/us/air-purifiers/blue-pure-fan"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Arctic Trail",
+        "Stockholm Fog",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.blueair.com/images/blueair-blue-pure-fan.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "blueair",
+        "modelName": "blue pure fan",
+        "cadrCfm": 180,
+        "roomAreaSqFt": 300,
+        "filterClass": "Particle Filter",
+        "noiseLevelDb": 31,
+        "powerWatts": 61,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blueair HEPASilent filtration air purifier Blue Pure Fan",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-4000i-ac4236",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "Series 4000i Dual Scan AC4236/10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/series-4000i-ac4236"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-4000i-ac4236"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "series 4000i dual scan ac4236/10",
+        "cadrCfm": 350,
+        "roomAreaSqFt": 780,
+        "filterClass": "NanoProtect HEPA H13",
+        "noiseLevelDb": 20,
+        "powerWatts": 46,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier Series 4000i Dual Scan AC4236/10",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-3000i-ac3033",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "Series 3000i AC3033/10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/series-3000i-ac3033"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-3000i-ac3033"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "series 3000i ac3033/10",
+        "cadrCfm": 310,
+        "roomAreaSqFt": 645,
+        "filterClass": "NanoProtect HEPA H13",
+        "noiseLevelDb": 24,
+        "powerWatts": 40,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier Series 3000i AC3033/10",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-2000i-ac2936",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "Series 2000i AC2936/13",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/series-2000i-ac2936"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-2000i-ac2936"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "series 2000i ac2936/13",
+        "cadrCfm": 220,
+        "roomAreaSqFt": 450,
+        "filterClass": "NanoProtect HEPA H13",
+        "noiseLevelDb": 20,
+        "powerWatts": 40,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier Series 2000i AC2936/13",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-1000i-ac1715",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "Series 1000i AC1715/20",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/series-1000i-ac1715"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-1000i-ac1715"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "series 1000i ac1715/20",
+        "cadrCfm": 180,
+        "roomAreaSqFt": 390,
+        "filterClass": "NanoProtect HEPA H13",
+        "noiseLevelDb": 19,
+        "powerWatts": 27,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier Series 1000i AC1715/20",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-800-ac0820",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "Series 800 Compact AC0820/20",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/series-800-ac0820"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-800-ac0820"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "series 800 compact ac0820/20",
+        "cadrCfm": 112,
+        "roomAreaSqFt": 250,
+        "filterClass": "NanoProtect HEPA",
+        "noiseLevelDb": 19,
+        "powerWatts": 20,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier Series 800 Compact AC0820/20",
+      "status": "staged"
+    },
+    {
+      "id": "philips-dehumidifier-purifier-de5205",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "2-in-1 Air Dehumidifier & Purifier DE5205",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/dehumidifier-purifier-de5205"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-dehumidifier-purifier-de5205"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "2-in-1 air dehumidifier & purifier de5205",
+        "cadrCfm": 160,
+        "roomAreaSqFt": 350,
+        "filterClass": "NanoProtect HEPA",
+        "noiseLevelDb": 35,
+        "powerWatts": 350,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier 2-in-1 Air Dehumidifier & Purifier DE5205",
+      "status": "staged"
+    },
+    {
+      "id": "philips-fan-heater-purifier-amf220",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "3-in-1 Air Purifier Fan & Heater AMF220/15",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/fan-heater-purifier-amf220"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-fan-heater-purifier-amf220"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "3-in-1 air purifier fan & heater amf220/15",
+        "cadrCfm": 100,
+        "roomAreaSqFt": 220,
+        "filterClass": "3-layer HEPA Filtration",
+        "noiseLevelDb": 30,
+        "powerWatts": 40,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier 3-in-1 Air Purifier Fan & Heater AMF220/15",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-6000-ac6608",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "Series 6000 AC6608/00",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/series-6000-ac6608"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-6000-ac6608"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "series 6000 ac6608/00",
+        "cadrCfm": 420,
+        "roomAreaSqFt": 880,
+        "filterClass": "Dual NanoProtect HEPA",
+        "noiseLevelDb": 28,
+        "powerWatts": 65,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier Series 6000 AC6608/00",
+      "status": "staged"
+    },
+    {
+      "id": "philips-humidifier-purifier-ac2729",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "2000 Series Air Humidifier & Purifier AC2729",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/humidifier-purifier-ac2729"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-humidifier-purifier-ac2729"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "2000 series air humidifier & purifier ac2729",
+        "cadrCfm": 200,
+        "roomAreaSqFt": 430,
+        "filterClass": "NanoProtect HEPA",
+        "noiseLevelDb": 20,
+        "powerWatts": 35,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier 2000 Series Air Humidifier & Purifier AC2729",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-7000-compact-ac0650",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Series 4000i & NanoProtect",
+      "modelName": "Series 7000 Compact AC0650/10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/air-purifier-and-air-humidifier/series-7000-compact-ac0650"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Metallic Grey",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-7000-compact-ac0650"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "series 7000 compact ac0650/10",
+        "cadrCfm": 100,
+        "roomAreaSqFt": 200,
+        "filterClass": "NanoProtect HEPA",
+        "noiseLevelDb": 19,
+        "powerWatts": 12,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips NanoProtect HEPA air purifier Series 7000 Compact AC0650/10",
+      "status": "staged"
+    },
+    {
+      "id": "iqair-healthpro-plus",
+      "canonicalBrand": "IQAir",
+      "displayBrand": "IQAir",
+      "productLine": "HyperHEPA Medical Grade Purification",
+      "modelName": "HealthPro Plus",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iqair.com/us/air-purifiers/healthpro-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Swiss Medical White",
+        "Titanium Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.iqair.com/images/iqair-healthpro-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iqair",
+        "modelName": "healthpro plus",
+        "cadrCfm": 300,
+        "roomAreaSqFt": 1125,
+        "filterClass": "HyperHEPA H14 & V5-Cell Gas",
+        "noiseLevelDb": 22,
+        "powerWatts": 27,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "IQAir Swiss HyperHEPA medical-grade air purifier HealthPro Plus",
+      "status": "staged"
+    },
+    {
+      "id": "iqair-healthpro-compact",
+      "canonicalBrand": "IQAir",
+      "displayBrand": "IQAir",
+      "productLine": "HyperHEPA Medical Grade Purification",
+      "modelName": "HealthPro Compact",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iqair.com/us/air-purifiers/healthpro-compact"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Swiss Medical White",
+        "Titanium Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.iqair.com/images/iqair-healthpro-compact.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iqair",
+        "modelName": "healthpro compact",
+        "cadrCfm": 300,
+        "roomAreaSqFt": 1000,
+        "filterClass": "HyperHEPA H14 Medical Grade",
+        "noiseLevelDb": 22,
+        "powerWatts": 27,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "IQAir Swiss HyperHEPA medical-grade air purifier HealthPro Compact",
+      "status": "staged"
+    },
+    {
+      "id": "iqair-healthpro-standard",
+      "canonicalBrand": "IQAir",
+      "displayBrand": "IQAir",
+      "productLine": "HyperHEPA Medical Grade Purification",
+      "modelName": "HealthPro Standard",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iqair.com/us/air-purifiers/healthpro-standard"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Swiss Medical White",
+        "Titanium Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.iqair.com/images/iqair-healthpro-standard.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iqair",
+        "modelName": "healthpro standard",
+        "cadrCfm": 300,
+        "roomAreaSqFt": 1000,
+        "filterClass": "HyperHEPA H14 PreMax",
+        "noiseLevelDb": 22,
+        "powerWatts": 27,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "IQAir Swiss HyperHEPA medical-grade air purifier HealthPro Standard",
+      "status": "staged"
+    },
+    {
+      "id": "iqair-gc-multigas",
+      "canonicalBrand": "IQAir",
+      "displayBrand": "IQAir",
+      "productLine": "HyperHEPA Medical Grade Purification",
+      "modelName": "GC MultiGas",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iqair.com/us/air-purifiers/gc-multigas"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Swiss Medical White",
+        "Titanium Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.iqair.com/images/iqair-gc-multigas.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iqair",
+        "modelName": "gc multigas",
+        "cadrCfm": 260,
+        "roomAreaSqFt": 900,
+        "filterClass": "HyperHEPA & 4 MultiGas Cartridges",
+        "noiseLevelDb": 25,
+        "powerWatts": 30,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "IQAir Swiss HyperHEPA medical-grade air purifier GC MultiGas",
+      "status": "staged"
+    },
+    {
+      "id": "iqair-atem-5in1-desk-purifier",
+      "canonicalBrand": "IQAir",
+      "displayBrand": "IQAir",
+      "productLine": "HyperHEPA Medical Grade Purification",
+      "modelName": "Atem 5-in-1 Desk Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iqair.com/us/air-purifiers/atem-5in1-desk-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Swiss Medical White",
+        "Titanium Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.iqair.com/images/iqair-atem-5in1-desk-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iqair",
+        "modelName": "atem 5-in-1 desk purifier",
+        "cadrCfm": 39,
+        "roomAreaSqFt": 150,
+        "filterClass": "HyperHEPA Personal Diffuser",
+        "noiseLevelDb": 20,
+        "powerWatts": 3,
+        "smartConnectivity": "Bluetooth & App"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "IQAir Swiss HyperHEPA medical-grade air purifier Atem 5-in-1 Desk Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "iqair-atem-car-air-purifier",
+      "canonicalBrand": "IQAir",
+      "displayBrand": "IQAir",
+      "productLine": "HyperHEPA Medical Grade Purification",
+      "modelName": "Atem Car Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iqair.com/us/air-purifiers/atem-car-air-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Swiss Medical White",
+        "Titanium Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.iqair.com/images/iqair-atem-car-air-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iqair",
+        "modelName": "atem car air purifier",
+        "cadrCfm": 40,
+        "roomAreaSqFt": 80,
+        "filterClass": "HyperHEPA Plus Car Filter",
+        "noiseLevelDb": 25,
+        "powerWatts": 4,
+        "smartConnectivity": "Bluetooth & App"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "IQAir Swiss HyperHEPA medical-grade air purifier Atem Car Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "iqair-cleanzone-sl-commercial",
+      "canonicalBrand": "IQAir",
+      "displayBrand": "IQAir",
+      "productLine": "HyperHEPA Medical Grade Purification",
+      "modelName": "CleanZone SL Commercial Slim",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iqair.com/us/air-purifiers/cleanzone-sl-commercial"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Swiss Medical White",
+        "Titanium Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.iqair.com/images/iqair-cleanzone-sl-commercial.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iqair",
+        "modelName": "cleanzone sl commercial slim",
+        "cadrCfm": 480,
+        "roomAreaSqFt": 1500,
+        "filterClass": "HyperHEPA Commercial Silent",
+        "noiseLevelDb": 30,
+        "powerWatts": 85,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "IQAir Swiss HyperHEPA medical-grade air purifier CleanZone SL Commercial Slim",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-400s",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 400S",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-400s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-400s.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 400s",
+        "cadrCfm": 340,
+        "roomAreaSqFt": 1560,
+        "filterClass": "True HEPA Max2 GreenHEPA",
+        "noiseLevelDb": 22,
+        "powerWatts": 66,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 400S",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-400",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 400",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-400"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-400.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 400",
+        "cadrCfm": 340,
+        "roomAreaSqFt": 1560,
+        "filterClass": "True HEPA Max2 GreenHEPA",
+        "noiseLevelDb": 22,
+        "powerWatts": 66,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 400",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-300s",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 300S",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-300s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-300s.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 300s",
+        "cadrCfm": 285,
+        "roomAreaSqFt": 1256,
+        "filterClass": "True HEPA Max2 GreenHEPA",
+        "noiseLevelDb": 22,
+        "powerWatts": 56,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 300S",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-300",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 300",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-300"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-300.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 300",
+        "cadrCfm": 285,
+        "roomAreaSqFt": 1256,
+        "filterClass": "True HEPA Max2 GreenHEPA",
+        "noiseLevelDb": 22,
+        "powerWatts": 56,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 300",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-250s",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 250S",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-250s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-250s.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 250s",
+        "cadrCfm": 249,
+        "roomAreaSqFt": 930,
+        "filterClass": "True HEPA GreenHEPA",
+        "noiseLevelDb": 22,
+        "powerWatts": 60,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 250S",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-250",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 250",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-250"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-250.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 250",
+        "cadrCfm": 249,
+        "roomAreaSqFt": 930,
+        "filterClass": "True HEPA GreenHEPA",
+        "noiseLevelDb": 22,
+        "powerWatts": 60,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 250",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-200m",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 200M",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-200m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-200m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 200m",
+        "cadrCfm": 232,
+        "roomAreaSqFt": 361,
+        "filterClass": "True HEPA 4-stage Filter",
+        "noiseLevelDb": 24,
+        "powerWatts": 70,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 200M",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-150",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 150",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-150"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-150.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 150",
+        "cadrCfm": 147,
+        "roomAreaSqFt": 214,
+        "filterClass": "True HEPA GreenHEPA",
+        "noiseLevelDb": 20,
+        "powerWatts": 35,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 150",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-ap-1512hh",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega AP-1512HH Mighty",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-ap-1512hh"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-ap-1512hh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega ap-1512hh mighty",
+        "cadrCfm": 240,
+        "roomAreaSqFt": 361,
+        "filterClass": "True HEPA & Vital Ion",
+        "noiseLevelDb": 24,
+        "powerWatts": 77,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega AP-1512HH Mighty",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-aim",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega AIM 2-in-1 Fan Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-aim"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-aim.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega aim 2-in-1 fan purifier",
+        "cadrCfm": 180,
+        "roomAreaSqFt": 400,
+        "filterClass": "True HEPA GreenHEPA",
+        "noiseLevelDb": 24,
+        "powerWatts": 42,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega AIM 2-in-1 Fan Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "coway-airmega-100",
+      "canonicalBrand": "Coway",
+      "displayBrand": "Coway",
+      "productLine": "Airmega Series",
+      "modelName": "Airmega 100 Compact",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://cowaymega.com/products/airmega-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Graphite Grey",
+        "Sage Green"
+      ],
+      "mediaSource": {
+        "url": "https://cowaymega.com/images/coway-airmega-100.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "coway",
+        "modelName": "airmega 100 compact",
+        "cadrCfm": 82,
+        "roomAreaSqFt": 150,
+        "filterClass": "True HEPA 360",
+        "noiseLevelDb": 20,
+        "powerWatts": 25,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Coway Airmega GreenHEPA air purifier Airmega 100 Compact",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-fxj80uw-plasmacluster-smart",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "FXJ80UW Smart Plasmacluster Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/fxj80uw-plasmacluster-smart"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-fxj80uw-plasmacluster-smart.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "fxj80uw smart plasmacluster air purifier",
+        "cadrCfm": 300,
+        "roomAreaSqFt": 502,
+        "filterClass": "True HEPA & Plasmacluster 25000",
+        "noiseLevelDb": 21,
+        "powerWatts": 48,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier FXJ80UW Smart Plasmacluster Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-fpj80m-h-aloft",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "FPJ80M-H Aloft Plasmacluster",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/fpj80m-h-aloft"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-fpj80m-h-aloft.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "fpj80m-h aloft plasmacluster",
+        "cadrCfm": 280,
+        "roomAreaSqFt": 667,
+        "filterClass": "True HEPA & Plasmacluster Ion",
+        "noiseLevelDb": 23,
+        "powerWatts": 48,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier FPJ80M-H Aloft Plasmacluster",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-fpj60m-w-plasmacluster",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "FPJ60M-W Plasmacluster Ion Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/fpj60m-w-plasmacluster"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-fpj60m-w-plasmacluster.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "fpj60m-w plasmacluster ion purifier",
+        "cadrCfm": 240,
+        "roomAreaSqFt": 516,
+        "filterClass": "True HEPA & Deodorizing",
+        "noiseLevelDb": 23,
+        "powerWatts": 38,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier FPJ60M-W Plasmacluster Ion Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-fpj40m-w-plasmacluster",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "FPJ40M-W Air Purifier with Plasmacluster",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/fpj40m-w-plasmacluster"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-fpj40m-w-plasmacluster.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "fpj40m-w air purifier with plasmacluster",
+        "cadrCfm": 141,
+        "roomAreaSqFt": 333,
+        "filterClass": "True HEPA & Carbon",
+        "noiseLevelDb": 23,
+        "powerWatts": 31,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier FPJ40M-W Air Purifier with Plasmacluster",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-fpj30m-b-compact",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "FPJ30M-B Compact Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/fpj30m-b-compact"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-fpj30m-b-compact.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "fpj30m-b compact air purifier",
+        "cadrCfm": 106,
+        "roomAreaSqFt": 250,
+        "filterClass": "True HEPA Filter",
+        "noiseLevelDb": 23,
+        "powerWatts": 30,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier FPJ30M-B Compact Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-kcg60m-w-humidifier-purifier",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "KCG60M-W Air Purifier with Humidifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/kcg60m-w-humidifier-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-kcg60m-w-humidifier-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "kcg60m-w air purifier with humidifier",
+        "cadrCfm": 240,
+        "roomAreaSqFt": 516,
+        "filterClass": "True HEPA & Humidifying Mesh",
+        "noiseLevelDb": 24,
+        "powerWatts": 53,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier KCG60M-W Air Purifier with Humidifier",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-kcf30m-w-humidifying-purifier",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "KCF30M-W Plasmacluster Humidifying Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/kcf30m-w-humidifying-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-kcf30m-w-humidifying-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "kcf30m-w plasmacluster humidifying purifier",
+        "cadrCfm": 112,
+        "roomAreaSqFt": 226,
+        "filterClass": "True HEPA & Humidifier",
+        "noiseLevelDb": 23,
+        "powerWatts": 27,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier KCF30M-W Plasmacluster Humidifying Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-fpj50m-h-aloft-high-perf",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "FPJ50M-H Aloft High Performance",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/fpj50m-h-aloft-high-perf"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-fpj50m-h-aloft-high-perf.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "fpj50m-h aloft high performance",
+        "cadrCfm": 210,
+        "roomAreaSqFt": 430,
+        "filterClass": "True HEPA Plasmacluster",
+        "noiseLevelDb": 23,
+        "powerWatts": 35,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier FPJ50M-H Aloft High Performance",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-fpf30m-h-compact-hazy",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "FPF30M-H Compact Hazy Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/fpf30m-h-compact-hazy"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-fpf30m-h-compact-hazy.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "fpf30m-h compact hazy air purifier",
+        "cadrCfm": 106,
+        "roomAreaSqFt": 226,
+        "filterClass": "True HEPA & Active Carbon",
+        "noiseLevelDb": 25,
+        "powerWatts": 30,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier FPF30M-H Compact Hazy Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "sharp-ig-gc2-car-ion-generator",
+      "canonicalBrand": "Sharp",
+      "displayBrand": "Sharp",
+      "productLine": "Plasmacluster Ion Purifiers",
+      "modelName": "IG-GC2 Plasmacluster Car Ion Generator",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharpusa.com/air-purifiers/ig-gc2-car-ion-generator"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharpusa.com/images/sharp-ig-gc2-car-ion-generator.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sharp",
+        "modelName": "ig-gc2 plasmacluster car ion generator",
+        "cadrCfm": 20,
+        "roomAreaSqFt": 40,
+        "filterClass": "High Density Plasmacluster 25000",
+        "noiseLevelDb": 19,
+        "powerWatts": 3,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp Plasmacluster ion air purifier IG-GC2 Plasmacluster Car Ion Generator",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-core-600s-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "Core 600S Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/core-600s-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-core-600s-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "core 600s smart air purifier",
+        "cadrCfm": 410,
+        "roomAreaSqFt": 635,
+        "filterClass": "Custom High-Efficiency H13 HEPA",
+        "noiseLevelDb": 26,
+        "powerWatts": 49,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier Core 600S Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-core-400s-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "Core 400S Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/core-400s-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-core-400s-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "core 400s smart air purifier",
+        "cadrCfm": 260,
+        "roomAreaSqFt": 403,
+        "filterClass": "Custom High-Efficiency H13 HEPA",
+        "noiseLevelDb": 24,
+        "powerWatts": 38,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier Core 400S Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-core-300s-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "Core 300S Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/core-300s-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-core-300s-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "core 300s smart air purifier",
+        "cadrCfm": 141,
+        "roomAreaSqFt": 219,
+        "filterClass": "True HEPA H13 3-in-1",
+        "noiseLevelDb": 22,
+        "powerWatts": 23,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier Core 300S Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-core-300-true-hepa",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "Core 300 True HEPA Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/core-300-true-hepa"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-core-300-true-hepa.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "core 300 true hepa purifier",
+        "cadrCfm": 141,
+        "roomAreaSqFt": 219,
+        "filterClass": "True HEPA H13 3-in-1",
+        "noiseLevelDb": 24,
+        "powerWatts": 26,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier Core 300 True HEPA Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-core-200s-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "Core 200S Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/core-200s-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-core-200s-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "core 200s smart air purifier",
+        "cadrCfm": 118,
+        "roomAreaSqFt": 183,
+        "filterClass": "True HEPA H13 Filter",
+        "noiseLevelDb": 24,
+        "powerWatts": 26,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier Core 200S Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-core-mini-air-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "Core Mini Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/core-mini-air-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-core-mini-air-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "core mini air purifier",
+        "cadrCfm": 46,
+        "roomAreaSqFt": 178,
+        "filterClass": "3-stage Filtration",
+        "noiseLevelDb": 25,
+        "powerWatts": 7,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier Core Mini Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-everestair-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "EverestAir Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/everestair-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-everestair-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "everestair smart air purifier",
+        "cadrCfm": 360,
+        "roomAreaSqFt": 558,
+        "filterClass": "3-stage H13 True HEPA",
+        "noiseLevelDb": 24,
+        "powerWatts": 50,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier EverestAir Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-plasmapro-400s-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "PlasmaPro 400S Smart Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/plasmapro-400s-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-plasmapro-400s-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "plasmapro 400s smart purifier",
+        "cadrCfm": 260,
+        "roomAreaSqFt": 403,
+        "filterClass": "True HEPA H13 & PlasmaPro",
+        "noiseLevelDb": 24,
+        "powerWatts": 38,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier PlasmaPro 400S Smart Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-vital-200s-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "Vital 200S Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/vital-200s-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-vital-200s-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "vital 200s smart air purifier",
+        "cadrCfm": 242,
+        "roomAreaSqFt": 380,
+        "filterClass": "True HEPA H13 Pet-U-Clean",
+        "noiseLevelDb": 24,
+        "powerWatts": 50,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier Vital 200S Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-vital-100s-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "Vital 100S Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/vital-100s-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-vital-100s-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "vital 100s smart air purifier",
+        "cadrCfm": 143,
+        "roomAreaSqFt": 220,
+        "filterClass": "True HEPA H13 Washable Pre",
+        "noiseLevelDb": 23,
+        "powerWatts": 32,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier Vital 100S Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-lv-h134-tower-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "LV-H134 Tower Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/lv-h134-tower-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-lv-h134-tower-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "lv-h134 tower air purifier",
+        "cadrCfm": 312,
+        "roomAreaSqFt": 492,
+        "filterClass": "True HEPA 3-in-1",
+        "noiseLevelDb": 25,
+        "powerWatts": 45,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier LV-H134 Tower Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "levoit-lv-pur131s-smart-purifier",
+      "canonicalBrand": "Levoit",
+      "displayBrand": "Levoit",
+      "productLine": "Core & Vital Series",
+      "modelName": "LV-PUR131S Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://levoit.com/products/lv-pur131s-smart-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Matte Black"
+      ],
+      "mediaSource": {
+        "url": "https://levoit.com/images/levoit-lv-pur131s-smart-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "levoit",
+        "modelName": "lv-pur131s smart air purifier",
+        "cadrCfm": 135,
+        "roomAreaSqFt": 210,
+        "filterClass": "True HEPA & Activated Carbon",
+        "noiseLevelDb": 27,
+        "powerWatts": 40,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Levoit Core compact H13 HEPA purifier LV-PUR131S Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-smart-air-purifier-4-pro",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Smart Air Purifier 4 Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/smart-air-purifier-4-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-smart-air-purifier-4-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "smart air purifier 4 pro",
+        "cadrCfm": 294,
+        "roomAreaSqFt": 645,
+        "filterClass": "High-Efficiency 3-in-1 Filter",
+        "noiseLevelDb": 33,
+        "powerWatts": 50,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Smart Air Purifier 4 Pro",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-smart-air-purifier-4",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Smart Air Purifier 4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/smart-air-purifier-4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-smart-air-purifier-4.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "smart air purifier 4",
+        "cadrCfm": 235,
+        "roomAreaSqFt": 516,
+        "filterClass": "High-Efficiency 3-in-1 Filter",
+        "noiseLevelDb": 32,
+        "powerWatts": 30,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Smart Air Purifier 4",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-smart-air-purifier-4-compact",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Smart Air Purifier 4 Compact",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/smart-air-purifier-4-compact"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-smart-air-purifier-4-compact.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "smart air purifier 4 compact",
+        "cadrCfm": 135,
+        "roomAreaSqFt": 290,
+        "filterClass": "High-Efficiency 3-in-1 Filter",
+        "noiseLevelDb": 20,
+        "powerWatts": 27,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Smart Air Purifier 4 Compact",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-smart-air-purifier-elite",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Smart Air Purifier Elite",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/smart-air-purifier-elite"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-smart-air-purifier-elite.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "smart air purifier elite",
+        "cadrCfm": 353,
+        "roomAreaSqFt": 750,
+        "filterClass": "UV-LED & High-Efficiency Filter",
+        "noiseLevelDb": 20,
+        "powerWatts": 60,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Smart Air Purifier Elite",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-mi-air-purifier-3h",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Mi Air Purifier 3H",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-air-purifier-3h"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-mi-air-purifier-3h.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "mi air purifier 3h",
+        "cadrCfm": 223,
+        "roomAreaSqFt": 484,
+        "filterClass": "True HEPA Class 13",
+        "noiseLevelDb": 32,
+        "powerWatts": 38,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Mi Air Purifier 3H",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-mi-air-purifier-2s",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Mi Air Purifier 2S",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-air-purifier-2s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-mi-air-purifier-2s.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "mi air purifier 2s",
+        "cadrCfm": 182,
+        "roomAreaSqFt": 400,
+        "filterClass": "Toray High-Efficiency Filter",
+        "noiseLevelDb": 31,
+        "powerWatts": 31,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Mi Air Purifier 2S",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-mi-air-purifier-pro-h",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Mi Air Purifier Pro H",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-air-purifier-pro-h"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-mi-air-purifier-pro-h.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "mi air purifier pro h",
+        "cadrCfm": 353,
+        "roomAreaSqFt": 860,
+        "filterClass": "HEPA H13 High Performance",
+        "noiseLevelDb": 34,
+        "powerWatts": 70,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Mi Air Purifier Pro H",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-smart-air-purifier-4-lite",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Smart Air Purifier 4 Lite",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/smart-air-purifier-4-lite"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-smart-air-purifier-4-lite.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "smart air purifier 4 lite",
+        "cadrCfm": 211,
+        "roomAreaSqFt": 462,
+        "filterClass": "High-Efficiency Filter",
+        "noiseLevelDb": 35,
+        "powerWatts": 33,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Smart Air Purifier 4 Lite",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-mi-air-purifier-max",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Mi Air Purifier Max",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-air-purifier-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-mi-air-purifier-max.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "mi air purifier max",
+        "cadrCfm": 588,
+        "roomAreaSqFt": 1290,
+        "filterClass": "Dual High-Efficiency Filters",
+        "noiseLevelDb": 34,
+        "powerWatts": 86,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Mi Air Purifier Max",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-pet-air-purifier-specialized",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi & Smart Air Purifier 4 Series",
+      "modelName": "Xiaomi Pet Air Purifier Specialized",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/pet-air-purifier-specialized"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-pet-air-purifier-specialized.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "xiaomi pet air purifier specialized",
+        "cadrCfm": 200,
+        "roomAreaSqFt": 430,
+        "filterClass": "Pet Deodorization HEPA",
+        "noiseLevelDb": 25,
+        "powerWatts": 35,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi smart connected air purifier Xiaomi Pet Air Purifier Specialized",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-hpa300-true-hepa",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "HPA300 True HEPA Extra Large Room",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/hpa300-true-hepa"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-hpa300-true-hepa.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "hpa300 true hepa extra large room",
+        "cadrCfm": 300,
+        "roomAreaSqFt": 465,
+        "filterClass": "Certified True HEPA H13",
+        "noiseLevelDb": 30,
+        "powerWatts": 130,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier HPA300 True HEPA Extra Large Room",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-hpa200-true-hepa",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "HPA200 True HEPA Large Room",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/hpa200-true-hepa"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-hpa200-true-hepa.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "hpa200 true hepa large room",
+        "cadrCfm": 200,
+        "roomAreaSqFt": 310,
+        "filterClass": "Certified True HEPA H13",
+        "noiseLevelDb": 30,
+        "powerWatts": 84,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier HPA200 True HEPA Large Room",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-hpa100-true-hepa",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "HPA100 True HEPA Medium Room",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/hpa100-true-hepa"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-hpa100-true-hepa.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "hpa100 true hepa medium room",
+        "cadrCfm": 100,
+        "roomAreaSqFt": 155,
+        "filterClass": "Certified True HEPA H13",
+        "noiseLevelDb": 30,
+        "powerWatts": 50,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier HPA100 True HEPA Medium Room",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-hpa5300b-insight",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "HPA5300B InSight Professional",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/hpa5300b-insight"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-hpa5300b-insight.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "hpa5300b insight professional",
+        "cadrCfm": 325,
+        "roomAreaSqFt": 500,
+        "filterClass": "Certified True HEPA InSight",
+        "noiseLevelDb": 30,
+        "powerWatts": 110,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier HPA5300B InSight Professional",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-hpa5200b-insight",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "HPA5200B InSight Large Room",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/hpa5200b-insight"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-hpa5200b-insight.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "hpa5200b insight large room",
+        "cadrCfm": 243,
+        "roomAreaSqFt": 375,
+        "filterClass": "Certified True HEPA InSight",
+        "noiseLevelDb": 30,
+        "powerWatts": 80,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier HPA5200B InSight Large Room",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-hpa5100b-insight",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "HPA5100B InSight Medium Room",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/hpa5100b-insight"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-hpa5100b-insight.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "hpa5100b insight medium room",
+        "cadrCfm": 125,
+        "roomAreaSqFt": 190,
+        "filterClass": "Certified True HEPA InSight",
+        "noiseLevelDb": 30,
+        "powerWatts": 45,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier HPA5100B InSight Medium Room",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-air-touch-v4",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "Air Touch V4 Indoor Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/air-touch-v4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-air-touch-v4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "air touch v4 indoor air purifier",
+        "cadrCfm": 205,
+        "roomAreaSqFt": 375,
+        "filterClass": "H13 HEPA & Activated Carbon",
+        "noiseLevelDb": 29,
+        "powerWatts": 50,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier Air Touch V4 Indoor Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-air-touch-v2",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "Air Touch V2 Indoor Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/air-touch-v2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-air-touch-v2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "air touch v2 indoor air purifier",
+        "cadrCfm": 147,
+        "roomAreaSqFt": 250,
+        "filterClass": "H13 HEPA Filter",
+        "noiseLevelDb": 29,
+        "powerWatts": 35,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier Air Touch V2 Indoor Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-air-touch-u1",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "Air Touch U1 Smart Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/air-touch-u1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-air-touch-u1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "air touch u1 smart air purifier",
+        "cadrCfm": 382,
+        "roomAreaSqFt": 700,
+        "filterClass": "H13 True HEPA with Silver Ion",
+        "noiseLevelDb": 28,
+        "powerWatts": 70,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier Air Touch U1 Smart Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "honeywell-hpa030b-tower",
+      "canonicalBrand": "Honeywell",
+      "displayBrand": "Honeywell",
+      "productLine": "InSight & Air Touch Series",
+      "modelName": "HPA030B Designer Tower True HEPA",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.honeywellpluggedin.com/air-purifiers/hpa030b-tower"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.honeywellpluggedin.com/images/honeywell-hpa030b-tower.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "honeywell",
+        "modelName": "hpa030b designer tower true hepa",
+        "cadrCfm": 130,
+        "roomAreaSqFt": 200,
+        "filterClass": "Certified True HEPA",
+        "noiseLevelDb": 32,
+        "powerWatts": 40,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Honeywell certified True HEPA air purifier HPA030B Designer Tower True HEPA",
+      "status": "staged"
+    },
+    {
+      "id": "winix-5500-2-air-purifier",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix 5500-2 Air Purifier with PlasmaWave",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/5500-2-air-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-5500-2-air-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix 5500-2 air purifier with plasmawave",
+        "cadrCfm": 243,
+        "roomAreaSqFt": 360,
+        "filterClass": "True HEPA 99.97% & PlasmaWave",
+        "noiseLevelDb": 28,
+        "powerWatts": 70,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix 5500-2 Air Purifier with PlasmaWave",
+      "status": "staged"
+    },
+    {
+      "id": "winix-5300-2-air-purifier",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix 5300-2 Air Purifier with PlasmaWave",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/5300-2-air-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-5300-2-air-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix 5300-2 air purifier with plasmawave",
+        "cadrCfm": 236,
+        "roomAreaSqFt": 360,
+        "filterClass": "True HEPA & PlasmaWave",
+        "noiseLevelDb": 28,
+        "powerWatts": 70,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix 5300-2 Air Purifier with PlasmaWave",
+      "status": "staged"
+    },
+    {
+      "id": "winix-am90-smart-wifi",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix AM90 Smart Wi-Fi Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/am90-smart-wifi"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-am90-smart-wifi.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix am90 smart wi-fi air purifier",
+        "cadrCfm": 240,
+        "roomAreaSqFt": 360,
+        "filterClass": "True HEPA & PlasmaWave",
+        "noiseLevelDb": 27,
+        "powerWatts": 65,
+        "smartConnectivity": "Wi-Fi & App Control"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix AM90 Smart Wi-Fi Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "winix-hr900-ultimate-pet",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix HR900 Ultimate Pet Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/hr900-ultimate-pet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-hr900-ultimate-pet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix hr900 ultimate pet air purifier",
+        "cadrCfm": 200,
+        "roomAreaSqFt": 300,
+        "filterClass": "True HEPA 5-stage Pet Filter",
+        "noiseLevelDb": 27,
+        "powerWatts": 90,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix HR900 Ultimate Pet Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "winix-zero-pro-dual-sensor",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix ZERO Pro Dual Sensor Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/zero-pro-dual-sensor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-zero-pro-dual-sensor.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix zero pro dual sensor air purifier",
+        "cadrCfm": 276,
+        "roomAreaSqFt": 500,
+        "filterClass": "True HEPA H13 Cleancel",
+        "noiseLevelDb": 28,
+        "powerWatts": 90,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix ZERO Pro Dual Sensor Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "winix-zero-all-in-one",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix ZERO All-in-One Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/zero-all-in-one"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-zero-all-in-one.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix zero all-in-one air purifier",
+        "cadrCfm": 229,
+        "roomAreaSqFt": 400,
+        "filterClass": "True HEPA & PlasmaWave",
+        "noiseLevelDb": 27,
+        "powerWatts": 70,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix ZERO All-in-One Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "winix-zero-s-air-purifier",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix ZERO S Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/zero-s-air-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-zero-s-air-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix zero s air purifier",
+        "cadrCfm": 241,
+        "roomAreaSqFt": 430,
+        "filterClass": "True HEPA & PlasmaWave 2.0",
+        "noiseLevelDb": 27,
+        "powerWatts": 50,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix ZERO S Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "winix-a231-compact-tower",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix A231 Compact Tower Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/a231-compact-tower"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-a231-compact-tower.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix a231 compact tower air purifier",
+        "cadrCfm": 153,
+        "roomAreaSqFt": 230,
+        "filterClass": "All-in-One True HEPA",
+        "noiseLevelDb": 25,
+        "powerWatts": 40,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix A231 Compact Tower Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "winix-a230-compact-purifier",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix A230 Compact Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/a230-compact-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-a230-compact-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix a230 compact air purifier",
+        "cadrCfm": 153,
+        "roomAreaSqFt": 230,
+        "filterClass": "All-in-One True HEPA",
+        "noiseLevelDb": 25,
+        "powerWatts": 40,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix A230 Compact Air Purifier",
+      "status": "staged"
+    },
+    {
+      "id": "winix-d480-air-purifier",
+      "canonicalBrand": "Winix",
+      "displayBrand": "Winix",
+      "productLine": "PlasmaWave & ZERO Series",
+      "modelName": "Winix D480 Air Purifier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.winixamerica.com/product/d480-air-purifier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Grey",
+        "Pure White"
+      ],
+      "mediaSource": {
+        "url": "https://www.winixamerica.com/images/winix-d480-air-purifier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "winix",
+        "modelName": "winix d480 air purifier",
+        "cadrCfm": 280,
+        "roomAreaSqFt": 430,
+        "filterClass": "True HEPA & Carbon",
+        "noiseLevelDb": 28,
+        "powerWatts": 65,
+        "smartConnectivity": "None / Manual"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winix PlasmaWave True HEPA air purifier Winix D480 Air Purifier",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "IQAir",
+      "leafKey": "air-purifiers",
+      "reason": "IQAir precision HyperHEPA air purification line strictly comprises 7 specialized chassis models.",
+      "officialSourceUrl": "https://www.iqair.com/us/air-purifiers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "HealthPro Plus",
+        "HealthPro Compact",
+        "HealthPro Standard",
+        "GC MultiGas",
+        "Atem 5-in-1 Desk Purifier",
+        "Atem Car Air Purifier",
+        "CleanZone SL Commercial Slim"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

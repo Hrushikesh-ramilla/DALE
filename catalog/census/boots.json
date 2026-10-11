@@ -1,0 +1,2948 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "boots",
+  "displayName": "Luxury, Heritage & Workwear Boots",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "john-lobb-lawry-chelsea-boot",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Lawry",
+      "modelName": "Lawry Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/lawry-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "lawry chelsea boot",
+        "style": "chelsea",
+        "last": "8695",
+        "construction": "Goodyear welted",
+        "upper": "Black Museum Calf",
+        "sole": "Prestige leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "John Lobb's benchmark wholecut-look Chelsea boot with seamless clean lines.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-alder-lace-up-boot",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Alder",
+      "modelName": "Alder Lace-Up Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/alder-boot-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "alder lace-up boot",
+        "style": "derby-boot",
+        "last": "8695",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Grained Calf",
+        "sole": "Rubber commando sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rugged yet refined country derby boot with speed hooks and storm welt.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-william-ii-boot",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "William Series",
+      "modelName": "William II Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/william-ii-boot.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "william ii boot",
+        "style": "monk-boot",
+        "last": "9795",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "hardware": "Twin silver buckles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top double monk strap boot adapting the iconic William shoe pattern.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-peak-jodhpur-boot",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Peak",
+      "modelName": "Peak Jodhpur Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/peak-jodhpur-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "peak jodhpur boot",
+        "style": "jodhpur",
+        "last": "7000",
+        "construction": "Goodyear welted",
+        "upper": "Museum Calf",
+        "hardware": "Cross-ankle wrap strap and brass buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic equestrian Jodhpur boot with wraparound ankle strap and brass buckle.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-foundry-work-boot",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Foundry",
+      "modelName": "Foundry Work Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/foundry-leather-boot.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "foundry work boot",
+        "style": "work-boot",
+        "last": "0016",
+        "construction": "Norwegian welted",
+        "upper": "Waxed Calfskin",
+        "sole": "Heavy Vibram rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Industrial-inspired luxury utility boot built with heavy Norwegian reverse welt.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-abbots-jodhpur-boot",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Abbots",
+      "modelName": "Abbots Jodhpur Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/abbots-jodhpur-suede.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "abbots jodhpur boot",
+        "style": "jodhpur",
+        "last": "8695",
+        "construction": "Goodyear welted",
+        "upper": "Velveteen Suede",
+        "hardware": "Palladium buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Suede Jodhpur boot with clean rounded toe and soft English lining.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-grove-chukkas-boot",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Grove",
+      "modelName": "Grove Chukkas Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/grove-chukka-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "grove chukkas boot",
+        "style": "chukka",
+        "last": "7000",
+        "construction": "Goodyear welted",
+        "upper": "Dark Brown Calf",
+        "eyelets": "2 blind eyelets"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Two-eyelet dress chukka boot with elegant, elongated proportions.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-ilford-balmoral-boot",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Prestige Collection",
+      "modelName": "Ilford Balmoral Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/ilford-balmoral-boot.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "ilford balmoral boot",
+        "style": "balmoral-boot",
+        "last": "8000",
+        "construction": "Prestige Goodyear welted",
+        "upper": "Calfskin & Suede shaft",
+        "sole": "Prestige leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Victorian-inspired formal Balmoral dress boot with contrast suede upper shaft.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-galway-field-boot",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Galway",
+      "modelName": "Galway Field Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/galway-dark-oak-walnut-country-calf-82-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "galway field boot",
+        "style": "field-boot",
+        "last": "82 / 64",
+        "construction": "Goodyear welted with storm welt",
+        "upper": "Dark Oak Antique & Walnut Country Calf",
+        "sole": "Ridgeway rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The gold standard in English field boots, combining smooth calf with grained country calf shaft.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-cranleigh-split-toe-boot",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Dover Boot Series",
+      "modelName": "Cranleigh Split-Toe Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/cranleigh-dark-oak-antique-202-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "cranleigh split-toe boot",
+        "style": "split-toe-boot",
+        "last": "202",
+        "construction": "Boar-bristle handsewn apron",
+        "upper": "Dark Oak Antique Calf",
+        "sole": "R1 rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top boot version of the legendary Dover split-toe derby with hand-sewn pig bristle apron.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-camden-chelsea-boot",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Camden",
+      "modelName": "Camden Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/camden-black-calf-82-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "camden chelsea boot",
+        "style": "chelsea",
+        "last": "82",
+        "construction": "Goodyear welted",
+        "upper": "Black Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined city Chelsea boot on the elegant 82 last with twin elastic goring.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-shanklin-unlined-chukka-boot",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Shanklin",
+      "modelName": "Shanklin Unlined Chukka Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/shanklin-snuff-suede-202-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "shanklin unlined chukka boot",
+        "style": "chukka",
+        "last": "202",
+        "construction": "Goodyear welted unlined",
+        "upper": "Snuff Suede",
+        "sole": "R1 flexible rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Supremely supple unlined two-eyelet chukka boot in English snuff suede.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-newmarket-jodhpur-boot",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Newmarket",
+      "modelName": "Newmarket Jodhpur Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/newmarket-dark-oak-antique-82-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "newmarket jodhpur boot",
+        "style": "jodhpur",
+        "last": "82",
+        "construction": "Goodyear welted",
+        "upper": "Dark Oak Antique Calf",
+        "hardware": "Brass buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Equestrian-heritage Jodhpur boot with crossover ankle strap.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-halifax-derby-boot",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Halifax",
+      "modelName": "Halifax Derby Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/halifax-burgundy-cruiser-202-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "halifax derby boot",
+        "style": "derby-boot",
+        "last": "202",
+        "construction": "Goodyear welted",
+        "upper": "Cruiser Calf",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Three-eyelet high chukka/derby boot built for country pursuits.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-bedale-cap-toe-boot",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Bedale",
+      "modelName": "Bedale Cap-Toe Derby Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/bedale-black-calf-888-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "bedale cap-toe derby boot",
+        "style": "cap-toe-boot",
+        "last": "888",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Dainite sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Straight cap-toe lace-up boot with speed hooks and chiseled profile.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-kentmere-country-boot",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Kentmere",
+      "modelName": "Kentmere Country Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/kentmere-rosewood-country-calf-72-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "kentmere country boot",
+        "style": "country-boot",
+        "last": "72",
+        "construction": "Goodyear welted with veldtschoen",
+        "upper": "Country Calf Grain",
+        "sole": "Ridgeway sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavy-duty waterproof country boot made with traditional Veldtschoen construction.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-brunico-leather-boot",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Brunico",
+      "modelName": "Brunico Leather Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/brunico-leather-boot/S5180-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "brunico leather boot",
+        "style": "hiking-boot",
+        "last": "Brunico",
+        "construction": "Norwegian welted",
+        "upper": "Venezia Calfskin",
+        "sole": "St. Moritz lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic alpine hiking boot designed for Greta Garbo in 1938, executed in patinated Venezia leather.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-scritto-patinated-chelsea-boot",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Chelsea Scritto",
+      "modelName": "Scritto Patinated Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/scritto-leather-chelsea-boot/S5250-V2.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "scritto patinated chelsea boot",
+        "style": "chelsea",
+        "last": "Demesure",
+        "construction": "Blake stitched",
+        "upper": "Scritto-engraved Venezia Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chelsea boot etched with historical 18th-century Scritto calligraphy and rich hand-patina.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-caractere-eclair-boot",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Caractère",
+      "modelName": "Caractère Éclair Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/caractere-eclair-leather-boot/S5120-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "caractère éclair boot",
+        "style": "zip-boot",
+        "last": "Éclair",
+        "construction": "Blake stitched",
+        "upper": "Venezia Calfskin",
+        "closure": "Side zip with patinated pull"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razor-sharp chisel-toe side-zip dress boot with aerodynamic lines.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-fast-track-leather-boot",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Fast Track",
+      "modelName": "Fast Track Leather Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/fast-track-leather-boot/S5340-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "fast track leather boot",
+        "style": "hybrid-boot",
+        "last": "Fast Track",
+        "construction": "Hybrid sneaker-boot",
+        "upper": "Venezia Leather",
+        "sole": "Athletic runner sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hybrid luxury ankle boot set atop a technical running outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-ultima-leather-lace-up-boot",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Ultima",
+      "modelName": "Ultima Leather Lace-Up Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/ultima-leather-boot/S5400-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "ultima leather lace-up boot",
+        "style": "derby-boot",
+        "last": "Ultima",
+        "construction": "Goodyear welted",
+        "upper": "Venezia Leather",
+        "sole": "Commando lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal combat boot combining high-shine Venezia leather with military speed lacing.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-alessandro-infini-boot",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Alessandro",
+      "modelName": "Alessandro Infini Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/alessandro-infini-boot/S5850-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "alessandro infini boot",
+        "style": "dress-boot",
+        "last": "Infini",
+        "construction": "Goodyear welted",
+        "upper": "Wholecut Venezia Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Wholecut ankle dress boot showcasing uninterrupted leather grading.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-shadow-knit-ankle-boot",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Shadow",
+      "modelName": "Shadow Knit Ankle Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/shadow-knit-boot/S5900-K1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "shadow knit ankle boot",
+        "style": "sock-boot",
+        "upper": "Engineered Technical Knit & Venezia Leather",
+        "sole": "Lightweight rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary sock-boot featuring engineered stretch knit and patinated leather heel counter.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-discovery-lug-boot",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Discovery",
+      "modelName": "Discovery Lug Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/discovery-lug-boot/S5950-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "discovery lug boot",
+        "style": "combat-boot",
+        "last": "Discovery",
+        "construction": "Norwegian welted",
+        "upper": "Waxed Venezia Leather",
+        "sole": "Chunky Vibram lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rugged urban exploration boot equipped with deep-lug Vibram outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-coniston-derby-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Coniston Cap-Toe Derby Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/coniston-tan-scotch-grain/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "coniston cap-toe derby boot",
+        "style": "derby-boot",
+        "last": "325",
+        "construction": "Goodyear welted with storm welt",
+        "upper": "Tan Scotch Grain",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The quintessential English country cap-toe derby boot in durable Scotch grain leather.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-chelsea-5-suede-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Chelsea 5 Rough-Out Suede Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/chelsea-5-dark-brown-rough-out-suede/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "chelsea 5 rough-out suede boot",
+        "style": "chelsea",
+        "last": "335",
+        "construction": "Goodyear welted",
+        "upper": "Waxed Rough-Out Suede",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Weatherproof Chelsea boot crafted in heavy waxed rough-out English suede.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-chelsea-8-leather-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Chelsea 8 Leather Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/chelsea-8-black-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "chelsea 8 leather boot",
+        "style": "chelsea",
+        "last": "341",
+        "construction": "Goodyear welted",
+        "upper": "Black Calfskin",
+        "sole": "City rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slim dress Chelsea boot on the contemporary 341 last with City rubber sole.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-islay-full-brogue-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Islay Full Brogue Derby Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/islay-dark-brown-scotch-grain/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "islay full brogue derby boot",
+        "style": "wingtip-boot",
+        "last": "365",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Dark Brown Scotch Grain",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full brogue wingtip country boot famously worn by James Bond in the Scottish Highlands in Skyfall.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-molton-chukka-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Molton Chukka Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/molton-dark-brown-rough-out-suede/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "molton chukka boot",
+        "style": "chukka",
+        "last": "336",
+        "construction": "Goodyear welted",
+        "upper": "Rough-Out Suede",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Three-eyelet rough-out suede chukka boot featured in No Time To Die.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-pembroke-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Pembroke Country Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/pembroke-boot-tan-grain/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "pembroke country boot",
+        "style": "brogue-boot",
+        "last": "325",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Grain Leather",
+        "sole": "Dainite sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top wingtip derby boot with storm welt and Scotch grain upper.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-snowdon-country-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Country Collection",
+      "modelName": "Snowdon Country Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/snowdon-oak-wax-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "snowdon country boot",
+        "style": "country-boot",
+        "last": "228",
+        "construction": "Veldtschoen waterproof welt",
+        "upper": "Waxed Calfskin",
+        "sole": "Commando rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Veldtschoen waterproof wholecut country boot engineered for extreme wet terrain.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-tetbury-chukka-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Tetbury Waxed Calf Chukka Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/tetbury-black-wax-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "tetbury waxed calf chukka boot",
+        "style": "chukka",
+        "last": "348",
+        "construction": "Goodyear welted",
+        "upper": "Waxed Calfskin",
+        "sole": "Dainite sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp chisel-toe two-eyelet chukka boot featured in Skyfall.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-ross-balmoral-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Ross Balmoral Derby Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/ross-dark-brown-country-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "ross balmoral derby boot",
+        "style": "derby-boot",
+        "last": "378",
+        "construction": "Goodyear welted",
+        "upper": "Country Calf",
+        "sole": "Vibram Cleated sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modernized derby boot with padded collar and rugged Vibram cleated sole.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-lingfield-jodhpur-boot",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Lingfield Jodhpur Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/lingfield-chestnut-burnished-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "lingfield jodhpur boot",
+        "style": "jodhpur",
+        "last": "348",
+        "construction": "Goodyear welted",
+        "upper": "Burnished Calf",
+        "hardware": "Brass buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Equestrian Jodhpur boot built on the contemporary chisel-toe 348 last.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-indy-boot-403-chromexcel",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Indy Boot",
+      "modelName": "Indy Boot 403 Chromexcel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/the-indy-boot-brown-chromexcel-403/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "indy boot 403 chromexcel",
+        "style": "work-boot",
+        "last": "Trubalance Last",
+        "construction": "Goodyear welted 360 reverse welt",
+        "upper": "Brown Horween Chromexcel",
+        "sole": "Neoprene cork sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The legendary work boot chosen by Harrison Ford for Indiana Jones, crafted in Horween Chromexcel.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-indy-boot-405-original",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Indy Boot",
+      "modelName": "Indy Boot 405 Original Work Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/the-indy-boot-405/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "indy boot 405 original work boot",
+        "style": "work-boot",
+        "last": "Trubalance Last",
+        "construction": "Goodyear welted",
+        "upper": "Auburn Cowhide",
+        "sole": "Neocork sole with Thomas heel"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The original historical Alden 405 orthopedic work boot with signature moc-stitch toe.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-tanker-boot-cordovan",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Shell Cordovan",
+      "modelName": "Tanker Boot Shell Cordovan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/tanker-boot-color-8-shell-cordovan-40219hc/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "tanker boot shell cordovan",
+        "style": "norwegian-boot",
+        "last": "Barrie Last",
+        "construction": "Handsewn split-toe Goodyear welted",
+        "upper": "Horween Color 8 Shell Cordovan",
+        "sole": "Commando lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Holy grail split-toe tanker boot handcrafted in Horween Color 8 Shell Cordovan with commando sole.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-plain-toe-boot-barrie-last",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Plain Toe Boot",
+      "modelName": "Plain Toe Boot Barrie Last",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/plain-toe-boot-color-8-shell-cordovan-45148h/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "plain toe boot barrie last",
+        "style": "plain-toe-boot",
+        "last": "Barrie Last",
+        "construction": "Goodyear welted 360 welt",
+        "upper": "Horween Shell Cordovan",
+        "sole": "Double oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic American military-spec plain-toe service boot in Shell Cordovan.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-george-boot-monk-dress-boot",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Monk Boots",
+      "modelName": "George Boot Monk Dress Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/george-boot-shell-cordovan/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "george boot monk dress boot",
+        "style": "monk-boot",
+        "last": "Aberdeen Last",
+        "construction": "Goodyear welted",
+        "upper": "Shell Cordovan",
+        "hardware": "Brass buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top officer's George boot with single buckle monk strap closure.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-straight-tip-boot-shell-cordovan",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Shell Cordovan",
+      "modelName": "Straight Tip Boot Shell Cordovan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/straight-tip-boot-color-8-shell-cordovan-3917h/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "straight tip boot shell cordovan",
+        "style": "cap-toe-boot",
+        "last": "Plaza Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Shell Cordovan",
+        "sole": "Double leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal straight cap-toe boot lasted on the softly squared Plaza last.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-chukka-boot-1339-cordovan",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Shell Cordovan",
+      "modelName": "Chukka Boot 1339 Shell Cordovan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/chukka-boot-color-8-shell-cordovan-1339/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "chukka boot 1339 shell cordovan",
+        "style": "chukka",
+        "last": "Barrie Last",
+        "construction": "Goodyear welted 360 reverse welt",
+        "upper": "Horween Color 8 Shell Cordovan",
+        "sole": "Double oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alden's iconic two-eyelet chukka boot crafted in genuine Horween Color 8 Shell Cordovan.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-unlined-suede-chukka-boot-1493",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Flex Welt",
+      "modelName": "Unlined Suede Chukka Boot 1493",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/unlined-chukka-boot-snuff-suede-1493/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "unlined suede chukka boot 1493",
+        "style": "chukka",
+        "last": "Leydon Last",
+        "construction": "Flex welt system unlined",
+        "upper": "Snuff Suede",
+        "sole": "Oiled flex leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Beloved unlined summer chukka boot known for slipper-like flexibility.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-houston-leather-chelsea-boot",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Houston",
+      "modelName": "Houston Leather Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/boots/product.houston_prestige_calf_chelsea_boot.ETC004_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "houston leather chelsea boot",
+        "style": "chelsea",
+        "last": "136",
+        "construction": "Goodyear welted",
+        "upper": "Prestige Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined English Chelsea boot with elegant almond toe and woven pull tabs.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-prenton-suede-chelsea-boot",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Prenton",
+      "modelName": "Prenton Suede Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/boots/product.prenton_suede_chelsea_boot.ETC001_9VJ_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "prenton suede chelsea boot",
+        "style": "chelsea",
+        "last": "103",
+        "construction": "Goodyear welted",
+        "upper": "Castoro Suede",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual Chelsea boot in rich Castoro suede set on all-weather Dainite rubber soles.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-bletsoe-jodhpur-boot",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Bletsoe",
+      "modelName": "Bletsoe Jodhpur Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/boots/product.bletsoe_calf_jodhpur_boot.ETC003_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "bletsoe jodhpur boot",
+        "style": "jodhpur",
+        "last": "173",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "hardware": "Crossed strap with brass buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional equestrian Jodhpur boot built on the historical 173 last.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-shannon-boot-polished-binder",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Shannon",
+      "modelName": "Shannon Boot Polished Binder",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/boots/product.shannon_boot_polished_binder.ETC010_9XV_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "shannon boot polished binder",
+        "style": "derby-boot",
+        "last": "103",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Polished Binder Leather",
+        "sole": "Double leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top boot iteration of Church's legendary wholecut-effect Shannon derby.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-mcfarlane-2-commando-boot",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Mcfarlane",
+      "modelName": "Mcfarlane 2 Commando Sole Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/boots/product.mcfarlane_2_highland_grain_boot.ETC008_9XU_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "mcfarlane 2 commando sole boot",
+        "style": "brogue-boot",
+        "last": "103",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Highland Grain Calf",
+        "sole": "Commando rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavy-duty full brogue country boot with rugged Highland grain leather and Commando tread.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-coalport-grained-leather-boot",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Coalport",
+      "modelName": "Coalport Grained Leather Derby Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/boots/product.coalport_grain_derby_boot.ETC012_9XU_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "coalport grained leather derby boot",
+        "style": "derby-boot",
+        "last": "103",
+        "construction": "Goodyear welted",
+        "upper": "Country Grain Leather",
+        "sole": "Commando sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Utilitarian plain-toe military-style derby boot featuring rugged commando outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-ryder-3-suede-chukka-boot",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Ryder",
+      "modelName": "Ryder 3 Suede Chukka Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/boots/product.ryder_3_suede_chukka_boot.ETC002_9VJ_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "ryder 3 suede chukka boot",
+        "style": "chukka",
+        "last": "81",
+        "construction": "Goodyear welted",
+        "upper": "Castoro Suede",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic English two-eyelet chukka boot on the rounded 81 last famously worn in James Bond films.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-danzey-leather-chelsea-boot",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Danzey",
+      "modelName": "Danzey Leather Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/boots/product.danzey_calf_chelsea_boot.ETC015_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "danzey leather chelsea boot",
+        "style": "chelsea",
+        "last": "173",
+        "construction": "Goodyear welted",
+        "upper": "Nevada Calf",
+        "sole": "Diamond rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Urban Chelsea boot equipped with low-profile diamond-tread rubber sole for winter city wear.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-wyatt-40-chelsea-boot-suede",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Wyatt",
+      "modelName": "Wyatt 40 Chelsea Boot in Suede",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/wyatt-chelsea-boots-in-suede-443190BT3009870.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "wyatt 40 chelsea boot in suede",
+        "style": "chelsea",
+        "heel": "40mm stacked leather heel",
+        "upper": "Calfskin Suede",
+        "toe": "Clean almond toe",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hedi Slimane's definitive rock 'n' roll Chelsea boot with iconic 40mm Cuban heel.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-wyatt-40-harness-boot-leather",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Wyatt",
+      "modelName": "Wyatt 40 Harness Boot in Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/wyatt-harness-boots-in-smooth-leather-4968800N5001000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "wyatt 40 harness boot in leather",
+        "style": "harness-boot",
+        "heel": "40mm stacked heel",
+        "hardware": "Metal O-ring harness with snap studs",
+        "upper": "Smooth Calfskin",
+        "closure": "Side zip"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic harness boot featuring side zipper, brass O-ring hardware, and 40mm stacked heel.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-wyatt-30-jodhpur-boot",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Wyatt",
+      "modelName": "Wyatt 30 Jodhpur Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/wyatt-30-jodhpur-boots-in-suede-498372BT3009870.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "wyatt 30 jodhpur boot",
+        "style": "jodhpur",
+        "heel": "30mm heel",
+        "upper": "Suede",
+        "hardware": "Ankle strap with silver metal buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek low-heel Jodhpur boot with ankle buckle closure.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-lukas-40-western-boot",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Lukas",
+      "modelName": "Lukas 40 Western Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/lukas-boots-in-suede-5311210RR009870.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "lukas 40 western boot",
+        "style": "western-boot",
+        "heel": "40mm slanted Cuban heel",
+        "upper": "Suede",
+        "toe": "Pointed toe",
+        "closure": "Inner ankle zip"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Western-inspired pointed-toe boot with slanted Cuban heel and side zipper.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-army-20-lace-up-boot",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Army",
+      "modelName": "Army 20 Lace-Up Leather Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/army-20-lace-up-boots-in-smooth-leather-6323451Y7001000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "army 20 lace-up leather boot",
+        "style": "combat-boot",
+        "heel": "20mm low heel",
+        "upper": "Smooth Calfskin",
+        "sole": "Lugged rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Utilitarian military combat boot with smooth calfskin upper and speed lacing.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-vassili-60-pointed-toe-boot",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Vassili",
+      "modelName": "Vassili 60 Pointed Toe Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/vassili-60-zipped-boot-in-leather-603515003001000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "vassili 60 pointed toe boot",
+        "style": "dress-boot",
+        "heel": "60mm high Cuban heel",
+        "toe": "Exaggerated pointed toe",
+        "upper": "Glossy Calfskin"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dramatic runway dress boot featuring high 60mm heel and sharp pointed silhouette.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-nino-suede-chelsea-boot",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Nino",
+      "modelName": "Nino Suede Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/nino-chelsea-boots-in-suede-668584BT3009870.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "nino suede chelsea boot",
+        "style": "chelsea",
+        "heel": "25mm low heel",
+        "upper": "Velvety Suede",
+        "sole": "Crepe rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Relaxed low-profile Chelsea boot set on comfortable natural crepe sole.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-combat-boot-smooth-leather",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Combat Series",
+      "modelName": "Combat Boot in Smooth Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/combat-boots-in-smooth-leather-6035171Y7001000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "combat boot in smooth leather",
+        "style": "combat-boot",
+        "upper": "Semi-matte Calfskin",
+        "hardware": "Gunmetal eyelets",
+        "sole": "Chunky lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic 8-eyelet combat boot with padded collar and lugged outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-nevill-zip-ankle-boot",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Nevill",
+      "modelName": "Nevill Zip Ankle Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/nevill-zip-boot-in-leather-632349003001000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "nevill zip ankle boot",
+        "style": "zip-boot",
+        "heel": "30mm heel",
+        "upper": "Smooth Calfskin",
+        "closure": "Inner ankle zip"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist side-zip ankle boot with seamless vamp and flush zipper.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-west-45-zip-boot",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "West",
+      "modelName": "West 45 Zip Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/west-45-zip-boot-in-leather-632355003001000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "west 45 zip boot",
+        "style": "western-boot",
+        "heel": "45mm slanted heel",
+        "upper": "Calfskin",
+        "toe": "Almond toe"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Western-influenced ankle boot with back pull tab and stacked Cuban heel.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-monolith-leather-and-nylon-combat-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Monolith",
+      "modelName": "Monolith Leather and Nylon Combat Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/monolith-leather-and-nylon-boots/2UE007_3L09_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "monolith leather and nylon combat boot",
+        "style": "combat-boot",
+        "upper": "Spazzolato Brushed Leather & Re-Nylon",
+        "accessories": "Removable zippered nylon pouch with enamel triangle logo",
+        "sole": "55mm Monolith extreme lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miuccia Prada's defining combat boot of the 2020s, featuring removable ankle utility pouches.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-brushed-leather-chelsea-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Classic Footwear",
+      "modelName": "Brushed Leather Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/brushed-leather-chelsea-boots/2TE168_053_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "brushed leather chelsea boot",
+        "style": "chelsea",
+        "upper": "Spazzolato Brushed Calfskin",
+        "sole": "Rubber tread sole",
+        "details": "Embossed rubber logo on heel"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural Chelsea boot crafted in high-shine brushed leather with geometric heel bumper.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-brushed-leather-combat-ankle-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Combat Series",
+      "modelName": "Brushed Leather Combat Ankle Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/brushed-leather-lace-up-booties/2UE011_053_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "brushed leather combat ankle boot",
+        "style": "combat-boot",
+        "upper": "Spazzolato Leather",
+        "hardware": "Metal eyelets & speed hooks",
+        "sole": "Notched rubber lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lace-up combat boot combining classic military lines with glossy luxury leather.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-monolith-lace-up-leather-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Monolith",
+      "modelName": "Monolith Lace-Up Leather Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/monolith-brushed-leather-boots/2UE008_053_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "monolith lace-up leather boot",
+        "style": "combat-boot",
+        "upper": "Brushed Calfskin",
+        "sole": "Maxi lug Monolith sole (55mm)"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top combat boot resting on the oversized sculptural Monolith lug sole.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-renylon-and-leather-lug-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Re-Nylon",
+      "modelName": "Re-Nylon and Leather Lug Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/re-nylon-and-brushed-leather-boots/2TE170_3LFV_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon and leather lug boot",
+        "style": "hybrid-boot",
+        "upper": "Re-Nylon & Spazzolato Leather",
+        "hardware": "Enamel triangle logo"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight utility boot crafted from sustainable recycled nylon and brushed calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-chocolate-brushed-leather-ankle-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Chocolate",
+      "modelName": "Chocolate Brushed Leather Ankle Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/chocolate-brushed-leather-booties/2TE180_053_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "chocolate brushed leather ankle boot",
+        "style": "ankle-boot",
+        "upper": "Spazzolato Leather",
+        "hardware": "Enamelled metal triangle plaque",
+        "sole": "Notched rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ankle boot matching the iconic Chocolate loafer, featuring the enameled metal triangle on the vamp.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-downtown-ankle-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Downtown",
+      "modelName": "Downtown Ankle Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/downtown-leather-booties/2TE185_3LJ6_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "downtown ankle boot",
+        "style": "sneaker-boot",
+        "upper": "Calfskin",
+        "styleDetail": "Basketball hybrid boot"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Court-sneaker inspired padded ankle boot with high-top basketball collar.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-spazzolato-formal-dress-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Formal Series",
+      "modelName": "Spazzolato Formal Dress Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/brushed-leather-dress-boots/2TE190_053_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "spazzolato formal dress boot",
+        "style": "dress-boot",
+        "upper": "Spazzolato Calfskin",
+        "closure": "Concealed inner side zip",
+        "sole": "Leather sole with rubber insert"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal tailored dress boot with razor-clean silhouette for black-tie tailoring.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-neoprene-and-leather-trekking-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Linea Rossa",
+      "modelName": "Neoprene and Leather Trekking Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/linea-rossa-trekking-boots/4T3560_3L09_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "neoprene and leather trekking boot",
+        "style": "trekking-boot",
+        "branding": "Linea Rossa red stripe",
+        "upper": "Neoprene & Rubberized Leather",
+        "sole": "Vibram sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-performance mountain trekking boot with Linea Rossa racing emblem.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-scuba-and-brushed-leather-high-boot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Monolith High",
+      "modelName": "Scuba and Brushed Leather High Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/scuba-and-leather-high-boots/2UE015_3LFV_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "scuba and brushed leather high boot",
+        "style": "tall-boot",
+        "upper": "Scuba Jersey & Brushed Calfskin",
+        "sole": "Monolith lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Knee-high architectural hybrid boot combining fitted scuba jersey with structured leather.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-wg-lace-up-winter-gommino-ankle-boot",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "W.G.",
+      "modelName": "W.G. Lace-Up Winter Gommino Ankle Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Tod's-W.-G.-in-Suede/p/XXM09J00640RE0S800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "w.g. lace-up winter gommino ankle boot",
+        "style": "winter-boot",
+        "upper": "Calfskin Suede",
+        "sole": "Heavy lug sole with macro-gommini rubber pebbles",
+        "lining": "Shearling or leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The Winter Gommino work boot originally created in the 1980s, reinterpreted by Creative Director Walter Chiapponi.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-suede-chelsea-boot-gommini-heel",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Chelsea Classic",
+      "modelName": "Suede Chelsea Boot with Gommini Heel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Chelsea-Boots-in-Suede/p/XXM04H00P20RE0S800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "suede chelsea boot with gommini heel",
+        "style": "chelsea",
+        "upper": "Suede",
+        "heel": "Rubber gommini heel studs",
+        "sole": "Rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic suede Chelsea boot adorned with signature rubber gommini pebbles on the heel.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-brushed-leather-combat-boot",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Combat Series",
+      "modelName": "Brushed Leather Combat Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Combat-Boots-in-Leather/p/XXM08H00P20AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "brushed leather combat boot",
+        "style": "combat-boot",
+        "upper": "Semi-shiny Calf Leather",
+        "closure": "Lace-up front with side zip",
+        "sole": "Lugged rubber sole with gommini"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Combat boot in hand-burnished semi-shiny calfskin with quick side zipper access.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-desert-boot-in-suede",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Desert Series",
+      "modelName": "Desert Boot in Suede",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Desert-Boots-in-Suede/p/XXM02G00010RE0S800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "desert boot in suede",
+        "style": "desert-boot",
+        "upper": "Water-repellent Suede",
+        "sole": "Crepe-texture rubber sole with gommini"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Three-eyelet desert chukka boot combining supple suede with textured rubber sole.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-timeless-leather-chelsea-boot",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "T Timeless",
+      "modelName": "Timeless Leather Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/T-Timeless-Chelsea-Boots/p/XXM04H0EP40AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "timeless leather chelsea boot",
+        "style": "chelsea",
+        "upper": "Smooth Calf Leather",
+        "hardware": "Metal T Timeless buckle on side pull tab"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Metropolitan Chelsea boot punctuated by metal T Timeless accessory hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-lug-sole-lace-up-leather-boot",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Lug Series",
+      "modelName": "Lug Sole Lace-Up Leather Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Lace-Up-Boots-in-Leather/p/XXM09J0EP50AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "lug sole lace-up leather boot",
+        "style": "derby-boot",
+        "upper": "Polished Calfskin",
+        "sole": "Cleated rubber commando sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rugged city boot featuring polished leather upper and cleated commando outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-polacco-suede-ankle-boot",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Polacco",
+      "modelName": "Polacco Suede Ankle Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Polacco-Boots-in-Suede/p/XXM02G0EP60RE0S800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "polacco suede ankle boot",
+        "style": "chukka",
+        "upper": "Castoro Suede",
+        "lining": "Warm wool fleece",
+        "sole": "Rubber gommini sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual winter polacco boot lined with soft insulating wool fleece.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-t-vintage-leather-hiker-boot",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "T Vintage",
+      "modelName": "T Vintage Leather Hiker Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Vintage-Hiker-Boots/p/XXM09J0EP70AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "t vintage leather hiker boot",
+        "style": "hiker-boot",
+        "upper": "Waxed Leather",
+        "hardware": "D-ring speed hooks & bicolor laces"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage alpine hiking boot with metal D-ring lacing and padded ankle collar.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-urban-chukka-boot-in-leather",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Urban Series",
+      "modelName": "Urban Chukka Boot in Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Urban-Chukka-Boots/p/XXM02G0EP80AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "urban chukka boot in leather",
+        "style": "chukka",
+        "upper": "Grained Calfskin",
+        "sole": "Lightweight EVA sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight city chukka boot engineered for commuter walking comfort.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-gommino-winter-suede-chukka-boot",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Winter Gommino",
+      "modelName": "Gommino Winter Suede Chukka Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Winter-Gommino-Chukka/p/XXM09J0EP90RE0S800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "gommino winter suede chukka boot",
+        "style": "chukka",
+        "upper": "Oiled Suede",
+        "sole": "Protruding rubber gommini pebbles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winterized chukka boot resting on high-profile rubber gommini outsoles.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-craftsman-yearling-chelsea-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Craftsman",
+      "modelName": "Craftsman Yearling Leather Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/craftsman-boot-chestnut-yearling-leather.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "craftsman yearling leather chelsea boot",
+        "style": "chelsea",
+        "construction": "One piece of leather, sewn-welts",
+        "upper": "Yearling Leather",
+        "toe": "Classic chisel square toe",
+        "sole": "Sewn welt leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Australia's legendary wholecut boot handcrafted from a single piece of yearling leather in Adelaide.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-comfort-craftsman-chelsea-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Comfort Craftsman",
+      "modelName": "Comfort Craftsman Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/comfort-craftsman-boot-black-yearling-leather.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "comfort craftsman chelsea boot",
+        "style": "chelsea",
+        "construction": "Single piece leather",
+        "insole": "Padded Comfort insole",
+        "sole": "Oil-resistant rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The best-selling modern Craftsman boot equipped with cushioned insole and rubber sole.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-dynamic-flex-craftsman-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Dynamic Flex",
+      "modelName": "Dynamic Flex Craftsman Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/dynamic-flex-craftsman-boot-chestnut.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "dynamic flex craftsman boot",
+        "style": "chelsea",
+        "construction": "Dynamic Flex system",
+        "sole": "Combination leather and rubber sole with removable orthotic footbed"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Engineered with Dynamic Flex sole technology ideal for frequent travelers and orthotic wearers.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-classic-craftsman-leather-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Craftsman",
+      "modelName": "Classic Craftsman Leather Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/classic-craftsman-boot-dark-tan.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "classic craftsman leather boot",
+        "style": "chelsea",
+        "construction": "Traditional brass-screwed leather sole",
+        "upper": "Yearling Leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional bush boot built with historical brass-screwed leather outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-chinchilla-burnished-chelsea-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Chinchilla",
+      "modelName": "Chinchilla Burnished Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/chinchilla-boot-cognac.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "chinchilla burnished chelsea boot",
+        "style": "chelsea",
+        "upper": "Hand-burnished Italian Crust Calfskin",
+        "finish": "Artisanal hand-applied patina",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Prestige wholecut boot burnished by hand using artisanal dye techniques.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-tambo-wide-fit-chelsea-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Tambo",
+      "modelName": "Tambo Wide-Fit Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/tambo-boot-black.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "tambo wide-fit chelsea boot",
+        "style": "chelsea",
+        "fit": "Extra-wide X-fit width",
+        "upper": "Yearling Leather",
+        "sole": "Rubber comfort sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Wide-fitting edition of the chisel-toe boot designed for broad feet.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-macquarie-narrow-toe-chelsea-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Macquarie",
+      "modelName": "Macquarie Narrow-Toe Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/macquarie-boot-chestnut.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "macquarie narrow-toe chelsea boot",
+        "style": "chelsea",
+        "toe": "Narrow rounded toe",
+        "upper": "Yearling Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slimmer, tailored profile featuring a sleek narrow rounded toe.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-gardener-heavy-duty-work-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Gardener",
+      "modelName": "Gardener Heavy-Duty Work Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/gardener-boot-greasy-kip-black.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "gardener heavy-duty work boot",
+        "style": "work-boot",
+        "upper": "Oiled Heavy Kip Leather",
+        "toe": "Round work toe",
+        "sole": "Heavy-duty treaded rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tough outback work boot made with heavy oiled kip leather and non-slip rubber tread.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-turnout-round-toe-chelsea-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Turnout",
+      "modelName": "Turnout Round-Toe Chelsea Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/turnout-boot-chestnut.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "turnout round-toe chelsea boot",
+        "style": "chelsea",
+        "toe": "Classic round toe",
+        "upper": "Yearling Leather",
+        "sole": "Sewn welt leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional round-toe bush Chelsea boot with double woven branded tugs.",
+      "status": "staged"
+    },
+    {
+      "id": "rm-williams-signature-craftsman-calf-boot",
+      "canonicalBrand": "R.M. Williams",
+      "displayBrand": "R.M. Williams",
+      "productLine": "Signature",
+      "modelName": "Signature Craftsman Calf Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rmwilliams.com/signature-craftsman-boot-black.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "AU",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "r.m. williams",
+        "modelName": "signature craftsman calf boot",
+        "style": "chelsea",
+        "upper": "French Veal Calfskin",
+        "sole": "Brass-screwed fine leather sole with brass plaque",
+        "signed": "Individually signed by master craftsman"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pinnacle flagship boot made from French veal calfskin and signed by the master cordwainer.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-iron-ranger-8111-amber-harness",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Heritage Collection",
+      "modelName": "Iron Ranger 8111 Amber Harness",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Iron-Ranger-08111.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "iron ranger 8111 amber harness",
+        "style": "work-boot",
+        "last": "No. 8 Last",
+        "upper": "Amber Harness Leather (oil-tanned)",
+        "toe": "Double-layer leather cap toe",
+        "hardware": "Nickel eyelets & speed hooks",
+        "sole": "Vibram 430 Mini-Lug"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "America's iconic iron mining boot featuring double-layer cap toe and Vibram 430 mini-lug sole.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-classic-moc-toe-875-oro-legacy",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Heritage Collection",
+      "modelName": "Classic Moc Toe 875 Oro Legacy",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Classic-Moc-00875.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "classic moc toe 875 oro legacy",
+        "style": "moc-toe",
+        "last": "No. 23 Last",
+        "upper": "Oro Legacy Full Grain Leather",
+        "toe": "U-shaped hand-stitched moc toe",
+        "sole": "Traction Tred white wedge sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The quintessential 6-inch American work boot with white Traction Tred crepe sole.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-classic-moc-toe-877-8-inch-boot",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Heritage Collection",
+      "modelName": "Classic Moc Toe 877 8-Inch Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Classic-Moc-00877.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "classic moc toe 877 8-inch boot",
+        "style": "8-inch-moc",
+        "height": "8 inches",
+        "upper": "Oro Legacy Leather",
+        "sole": "Traction Tred wedge sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The original 1952 8-inch high hunting and sport boot that established the Red Wing silhouette.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-blacksmith-3343-copper-rough-tough",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Heritage Collection",
+      "modelName": "Blacksmith 3343 Copper Rough & Tough",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Blacksmith-03343.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "blacksmith 3343 copper rough & tough",
+        "style": "work-boot",
+        "last": "No. 8 Last",
+        "upper": "Copper Rough & Tough Leather (pull-up leather)",
+        "toe": "Round plain toe",
+        "sole": "Vibram 430 Mini-Lug"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versatile round-toe work boot historically worn by village blacksmiths.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-beckman-boot-9011-black-cherry",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Beckman Series",
+      "modelName": "Beckman Boot 9011 Black Cherry",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Beckman-09011.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "beckman boot 9011 black cherry",
+        "style": "dress-work-boot",
+        "upper": "Featherstone Dress Leather",
+        "founder": "Named for founder Charles Beckman",
+        "sole": "Roccia half-sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gentleman's dress work boot named after Red Wing founder Charles Beckman.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-silversmith-heritage-boot",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Women's Heritage",
+      "modelName": "Silversmith Women's Heritage Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/womens/Silversmith-03361.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "silversmith women's heritage boot",
+        "style": "tall-work-boot",
+        "height": "7 inches",
+        "upper": "Black Boundary Leather",
+        "sole": "Vibram 430 Mini-Lug"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tall 7-inch lace-up boot providing ankle stability with women's tailored fit.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-rover-round-toe-boot",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Rover Series",
+      "modelName": "Rover Round Toe Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Rover-02950.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "rover round toe boot",
+        "style": "round-toe",
+        "upper": "Hawthorne Muleskinner Roughout Leather",
+        "sole": "Coffee Cushion Crepe wedge sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Round-toe work boot named for machine operators in early 20th-century cotton mills.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-merchant-work-boot",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Merchant",
+      "modelName": "Merchant Work Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Merchant-08061.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "merchant work boot",
+        "style": "plain-toe",
+        "upper": "Ebony Harness Leather",
+        "toeBox": "Unstructured soft toe box",
+        "sole": "Chemi Gum sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Unstructured toe box work boot that collapses gently over time for personalized drape.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-sawmill-cold-weather-boot",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Outdoor Heritage",
+      "modelName": "Sawmill Cold-Weather Boot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Sawmill-02927.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "sawmill cold-weather boot",
+        "style": "winter-moc",
+        "lining": "Cambrelle & Wool felt collar",
+        "upper": "Briar Oil Slick Leather",
+        "sole": "Vibram Lug TC-4 Plus"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rugged winter moc-toe boot lined with insulating wool felt and Vibram cold-weather lug sole.",
+      "status": "staged"
+    },
+    {
+      "id": "red-wing-work-chukka-3141",
+      "canonicalBrand": "Red Wing",
+      "displayBrand": "Red Wing",
+      "productLine": "Heritage Collection",
+      "modelName": "Work Chukka 3141",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.redwingshoes.com/heritage/mens/Work-Chukka-03141.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "red wing",
+        "modelName": "work chukka 3141",
+        "style": "chukka",
+        "last": "No. 210 Last",
+        "upper": "Briar Oil Slick Leather",
+        "sole": "Atlas Tred white polyurethane sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Three-eyelet indoor carpenter chukka boot with lightweight Atlas Tred sole.",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "John Lobb",
+      "leafKey": "boots",
+      "reason": "Northampton bootmaker John Lobb crafts 8 core ready-to-wear artisanal Goodyear-welted Chelsea, Jodhpur, and country boots.",
+      "officialSourceUrl": "https://www.johnlobb.com/en_us/mens-shoes/boots.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Lawry Chelsea Boot",
+        "Alder Lace-Up Boot",
+        "William II Boot",
+        "Peak Jodhpur Boot",
+        "Foundry Work Boot",
+        "Abbots Jodhpur Boot",
+        "Grove Chukkas Boot",
+        "Ilford Balmoral Boot"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "Edward Green",
+      "leafKey": "boots",
+      "reason": "English benchmade bootmaker Edward Green limits its ready-to-wear boot range to 8 field, Chelsea, and chukka models.",
+      "officialSourceUrl": "https://www.edwardgreen.com/shop/shoes/boots.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Galway Field Boot",
+        "Cranleigh Split-Toe Boot",
+        "Camden Chelsea Boot",
+        "Shanklin Unlined Chukka Boot",
+        "Newmarket Jodhpur Boot",
+        "Halifax Derby Boot",
+        "Bedale Cap-Toe Derby Boot",
+        "Kentmere Country Boot"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "Berluti",
+      "leafKey": "boots",
+      "reason": "Parisian bottier Berluti offers 8 sculptural hand-patinated Venezia leather dress and mountain boot silhouettes.",
+      "officialSourceUrl": "https://www.berluti.com/en-us/shoes/boots/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Brunico Leather Boot",
+        "Scritto Patinated Chelsea Boot",
+        "Caractère Éclair Boot",
+        "Fast Track Leather Boot",
+        "Ultima Leather Lace-Up Boot",
+        "Alessandro Infini Boot",
+        "Shadow Knit Ankle Boot",
+        "Discovery Lug Boot"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "FR"
+    },
+    {
+      "brand": "Alden",
+      "leafKey": "boots",
+      "reason": "New England cordwainer Alden manufactures 8 benchmark Horween Shell Cordovan and Chromexcel field, work, and chukka boots.",
+      "officialSourceUrl": "https://aldenmadison.com/product-category/boots/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Indy Boot 403 Chromexcel",
+        "Indy Boot 405 Original Work Boot",
+        "Tanker Boot Shell Cordovan",
+        "Plain Toe Boot Barrie Last",
+        "George Boot Monk Dress Boot",
+        "Straight Tip Boot Shell Cordovan",
+        "Chukka Boot 1339 Shell Cordovan",
+        "Unlined Suede Chukka Boot 1493"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "US"
+    },
+    {
+      "brand": "Church's",
+      "leafKey": "boots",
+      "reason": "Heritage British cordwainer Church's produces 8 classic Goodyear-welted Chelsea, Jodhpur, and country boots.",
+      "officialSourceUrl": "https://www.church-footwear.com/us/en/men/style/boots.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Houston Leather Chelsea Boot",
+        "Prenton Suede Chelsea Boot",
+        "Bletsoe Jodhpur Boot",
+        "Shannon Boot Polished Binder",
+        "Mcfarlane 2 Commando Sole Boot",
+        "Coalport Grained Leather Derby Boot",
+        "Ryder 3 Suede Chukka Boot",
+        "Danzey Leather Chelsea Boot"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    }
+  ]
+}

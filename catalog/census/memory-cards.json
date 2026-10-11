@@ -1,0 +1,3348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "memory-cards",
+  "displayName": "Memory Cards (SD & microSD)",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "sandisk-extreme-pro-sdxc-uhs-ii-v90",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Extreme PRO",
+      "modelName": "Extreme PRO SDXC UHS-II V90",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-extreme-pro-uhs-ii-sd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-extreme-pro-sdxc-uhs-ii-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "extreme pro sdxc uhs-ii v90",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 260,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Extreme PRO SDXC UHS-II V90",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-extreme-pro-microsdxc-uhs-i-v30",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Extreme PRO",
+      "modelName": "Extreme PRO microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-extreme-pro-uhs-i-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-extreme-pro-microsdxc-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "extreme pro microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 200,
+        "writeSpeedMBps": 140,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Extreme PRO microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-extreme-sdxc-uhs-i-v30",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Extreme",
+      "modelName": "Extreme SDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-extreme-uhs-i-sd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-extreme-sdxc-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "extreme sdxc uhs-i v30",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 180,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Extreme SDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-extreme-microsdxc-uhs-i-v30",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Extreme",
+      "modelName": "Extreme microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-extreme-uhs-i-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-extreme-microsdxc-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "extreme microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 190,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Extreme microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ultra-sdxc-uhs-i",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Ultra",
+      "modelName": "Ultra SDXC UHS-I Class 10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-ultra-uhs-i-sd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ultra-sdxc-uhs-i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ultra sdxc uhs-i class 10",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 150,
+        "writeSpeedMBps": 45,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Ultra SDXC UHS-I Class 10",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ultra-microsdxc-uhs-i",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Ultra",
+      "modelName": "Ultra microSDXC UHS-I Class 10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-ultra-uhs-i-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ultra-microsdxc-uhs-i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ultra microsdxc uhs-i class 10",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 150,
+        "writeSpeedMBps": 40,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Ultra microSDXC UHS-I Class 10",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-high-endurance-microsdxc",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Endurance Series",
+      "modelName": "High Endurance microSDXC V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-high-endurance-uhs-i-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-high-endurance-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "high endurance microsdxc v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 40,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: High Endurance microSDXC V30",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-max-endurance-microsdxc",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Endurance Series",
+      "modelName": "MAX Endurance microSDXC V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-max-endurance-uhs-i-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-max-endurance-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "max endurance microsdxc v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 40,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: MAX Endurance microSDXC V30",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-extreme-pro-cfexpress-type-b",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "CFexpress Pro",
+      "modelName": "Extreme PRO CFexpress Card Type B",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-extreme-pro-cfexpress-type-b"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-extreme-pro-cfexpress-type-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "extreme pro cfexpress card type b",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Raw 4K/8K",
+        "readSpeedMBps": 1700,
+        "writeSpeedMBps": 1400,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Extreme PRO CFexpress Card Type B",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-extreme-pro-cfexpress-type-a",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "CFexpress Pro",
+      "modelName": "Extreme PRO CFexpress Card Type A",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-extreme-pro-cfexpress-type-a"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-extreme-pro-cfexpress-type-a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "extreme pro cfexpress card type a",
+        "cardFormat": "CFexpress Type A",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "VPG200",
+        "readSpeedMBps": 800,
+        "writeSpeedMBps": 700,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Extreme PRO CFexpress Card Type A",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-licensed-nintendo-switch-microsd",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Gaming Licensed",
+      "modelName": "microSDXC Card for Nintendo Switch",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-nintendo-switch-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-licensed-nintendo-switch-microsd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "microsdxc card for nintendo switch",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "U3",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 90,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: microSDXC Card for Nintendo Switch",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-creator-series-sdxc-uhs-ii-v60",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Creator Series",
+      "modelName": "Creator Series SDXC UHS-II V60",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/memory-cards/sandisk-creator-uhs-ii-sd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-creator-series-sdxc-uhs-ii-v60.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "creator series sdxc uhs-ii v60",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 280,
+        "writeSpeedMBps": 150,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified memory-cards model: Creator Series SDXC UHS-II V60",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-pro-ultimate-sdxc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "PRO Ultimate",
+      "modelName": "PRO Ultimate Full Size SDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/pro-ultimate-full-size-sdxc-128gb-mb-sy128b-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-pro-ultimate-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "pro ultimate full size sdxc uhs-i v30",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 200,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: PRO Ultimate Full Size SDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-pro-ultimate-microsdxc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "PRO Ultimate",
+      "modelName": "PRO Ultimate microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/pro-ultimate-microsd-128gb-mb-my128sa-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-pro-ultimate-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "pro ultimate microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 200,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: PRO Ultimate microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-pro-plus-sdxc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "PRO Plus",
+      "modelName": "PRO Plus Full Size SDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/pro-plus-full-size-sdxc-128gb-mb-sd128s-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-pro-plus-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "pro plus full size sdxc uhs-i v30",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 180,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: PRO Plus Full Size SDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-pro-plus-microsdxc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "PRO Plus",
+      "modelName": "PRO Plus microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/pro-plus-microsd-128gb-mb-md128sa-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-pro-plus-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "pro plus microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 180,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: PRO Plus microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-evo-plus-sdxc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO Plus",
+      "modelName": "EVO Plus Full Size SDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/evo-plus-full-size-sdxc-128gb-mb-sc128k-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-evo-plus-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "evo plus full size sdxc uhs-i v30",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 130,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: EVO Plus Full Size SDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-evo-plus-microsdxc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO Plus",
+      "modelName": "EVO Plus microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/evo-plus-microsd-128gb-mb-mc128ka-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-evo-plus-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "evo plus microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 130,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: EVO Plus microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-pro-endurance-microsdxc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "PRO Endurance",
+      "modelName": "PRO Endurance microSDXC UHS-I",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/pro-endurance-microsd-128gb-mb-mj128ka-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-pro-endurance-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "pro endurance microsdxc uhs-i",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 40,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: PRO Endurance microSDXC UHS-I",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-evo-select-microsdxc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO Select",
+      "modelName": "EVO Select microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/evo-select-microsd-128gb-mb-me128ka-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-evo-select-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "evo select microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 130,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: EVO Select microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-evo-plus-microsd-2024",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "EVO Plus 2024",
+      "modelName": "EVO Plus microSDXC UHS-I 2024 Edition (160MBps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/evo-plus-microsd-2024/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-evo-plus-microsd-2024.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "evo plus microsdxc uhs-i 2024 edition (160mbps)",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 160,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: EVO Plus microSDXC UHS-I 2024 Edition (160MBps)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-pro-plus-sdxc-2024",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "PRO Plus 2024",
+      "modelName": "PRO Plus SDXC UHS-I 2024 Edition",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/memory-cards/pro-plus-sd-2024/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-pro-plus-sdxc-2024.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "pro plus sdxc uhs-i 2024 edition",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 180,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified memory-cards model: PRO Plus SDXC UHS-I 2024 Edition",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-canvas-react-plus-sdxc-v90",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Canvas React Plus",
+      "modelName": "Canvas React Plus SDXC UHS-II V90",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/canvas-react-plus-sd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-canvas-react-plus-sdxc-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "canvas react plus sdxc uhs-ii v90",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 260,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Canvas React Plus SDXC UHS-II V90",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-canvas-react-plus-microsdxc-v90",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Canvas React Plus",
+      "modelName": "Canvas React Plus microSDXC UHS-II V90",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/canvas-react-plus-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-canvas-react-plus-microsdxc-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "canvas react plus microsdxc uhs-ii v90",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 285,
+        "writeSpeedMBps": 165,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Canvas React Plus microSDXC UHS-II V90",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-canvas-go-plus-sdxc-v30",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Canvas Go! Plus",
+      "modelName": "Canvas Go! Plus SDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/canvas-go-plus-sd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-canvas-go-plus-sdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "canvas go! plus sdxc uhs-i v30",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 170,
+        "writeSpeedMBps": 90,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Canvas Go! Plus SDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-canvas-go-plus-microsdxc-v30",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Canvas Go! Plus",
+      "modelName": "Canvas Go! Plus microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/canvas-go-plus-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-canvas-go-plus-microsdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "canvas go! plus microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 170,
+        "writeSpeedMBps": 90,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Canvas Go! Plus microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-canvas-select-plus-sdxc",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Canvas Select Plus",
+      "modelName": "Canvas Select Plus SDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/canvas-select-plus-sd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-canvas-select-plus-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "canvas select plus sdxc uhs-i v30",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 85,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Canvas Select Plus SDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-canvas-select-plus-microsdxc",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Canvas Select Plus",
+      "modelName": "Canvas Select Plus microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/canvas-select-plus-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-canvas-select-plus-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "canvas select plus microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 85,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Canvas Select Plus microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-high-endurance-microsdxc",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Endurance Series",
+      "modelName": "High Endurance microSDXC Class 10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/high-endurance-microsd-card"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-high-endurance-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "high endurance microsdxc class 10",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 95,
+        "writeSpeedMBps": 45,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: High Endurance microSDXC Class 10",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-industrial-temperature-microsdxc",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Industrial Grade",
+      "modelName": "Industrial Temperature microSDXC UHS-I",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/industrial-microsd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-industrial-temperature-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "industrial temperature microsdxc uhs-i",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Industrial Temperature microSDXC UHS-I",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-industrial-temperature-sdxc",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Industrial Grade",
+      "modelName": "Industrial Temperature SDXC UHS-I",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/industrial-sd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-industrial-temperature-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "industrial temperature sdxc uhs-i",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Industrial Temperature SDXC UHS-I",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-canvas-react-plus-cfexpress-type-b",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "Canvas React Plus",
+      "modelName": "Canvas React Plus CFexpress Type B",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/memory-cards/canvas-react-plus-cfexpress"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-canvas-react-plus-cfexpress-type-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "canvas react plus cfexpress type b",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Raw 4K/8K",
+        "readSpeedMBps": 1700,
+        "writeSpeedMBps": 1000,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified memory-cards model: Canvas React Plus CFexpress Type B",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-2000x-sdxc-v90",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional GOLD",
+      "modelName": "Professional 2000x SDXC UHS-II V90 GOLD",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-2000x-sdxc-uhs-ii-card-gold-series/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-2000x-sdxc-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional 2000x sdxc uhs-ii v90 gold",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 260,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional 2000x SDXC UHS-II V90 GOLD",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-1800x-sdxc-v60",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional GOLD",
+      "modelName": "Professional 1800x SDXC UHS-II V60 GOLD",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-1800x-sdxc-uhs-ii-card-gold-series/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-1800x-sdxc-v60.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional 1800x sdxc uhs-ii v60 gold",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 270,
+        "writeSpeedMBps": 180,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional 1800x SDXC UHS-II V60 GOLD",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-1066x-sdxc-v30",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional SILVER",
+      "modelName": "Professional 1066x SDXC UHS-I V30 SILVER",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-1066x-sdxc-uhs-i-card-silver-series/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-1066x-sdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional 1066x sdxc uhs-i v30 silver",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 160,
+        "writeSpeedMBps": 120,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional 1066x SDXC UHS-I V30 SILVER",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-1066x-microsdxc-v30",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional SILVER",
+      "modelName": "Professional 1066x microSDXC UHS-I V30 SILVER",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-1066x-microsdxc-uhs-i-card-silver-series/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-1066x-microsdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional 1066x microsdxc uhs-i v30 silver",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 160,
+        "writeSpeedMBps": 120,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional 1066x microSDXC UHS-I V30 SILVER",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-1000x-microsdxc-v60",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional",
+      "modelName": "Professional 1000x microSDXC UHS-II V60",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-1000x-microsdxc-uhs-ii-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-1000x-microsdxc-v60.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional 1000x microsdxc uhs-ii v60",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 150,
+        "writeSpeedMBps": 90,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional 1000x microSDXC UHS-II V60",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-gold-cfexpress-type-b",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional GOLD",
+      "modelName": "Professional GOLD CFexpress Type B Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-cfexpress-type-b-card-gold-series/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-gold-cfexpress-type-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional gold cfexpress type b card",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Raw 8K",
+        "readSpeedMBps": 1750,
+        "writeSpeedMBps": 1500,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional GOLD CFexpress Type B Card",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-silver-cfexpress-type-b",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional SILVER",
+      "modelName": "Professional SILVER CFexpress Type B Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-cfexpress-type-b-card-silver-series/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-silver-cfexpress-type-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional silver cfexpress type b card",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Raw 4K",
+        "readSpeedMBps": 1750,
+        "writeSpeedMBps": 1300,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional SILVER CFexpress Type B Card",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-gold-cfexpress-type-a",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional GOLD",
+      "modelName": "Professional GOLD CFexpress Type A Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-cfexpress-type-a-card-gold-series/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-gold-cfexpress-type-a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional gold cfexpress type a card",
+        "cardFormat": "CFexpress Type A",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "VPG400",
+        "readSpeedMBps": 900,
+        "writeSpeedMBps": 800,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional GOLD CFexpress Type A Card",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-play-microsdxc-uhs-i",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "PLAY Gaming",
+      "modelName": "PLAY microSDXC UHS-I Card (150MBps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-play-microsdxc-uhs-i-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-play-microsdxc-uhs-i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "play microsdxc uhs-i card (150mbps)",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 150,
+        "writeSpeedMBps": 75,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: PLAY microSDXC UHS-I Card (150MBps)",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-high-endurance-microsdxc-v30",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "High-Endurance",
+      "modelName": "High-Endurance microSDXC UHS-I V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-high-endurance-microsdxc-uhs-i-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-high-endurance-microsdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "high-endurance microsdxc uhs-i v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 45,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: High-Endurance microSDXC UHS-I V30",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-professional-1667x-sdxc-v60",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Professional SILVER",
+      "modelName": "Professional 1667x SDXC UHS-II V60 SILVER",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-professional-1667x-sdxc-uhs-ii-card-silver-series/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-professional-1667x-sdxc-v60.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "professional 1667x sdxc uhs-ii v60 silver",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 250,
+        "writeSpeedMBps": 120,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: Professional 1667x SDXC UHS-II V60 SILVER",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-e-series-microsdxc",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "Everyday Series",
+      "modelName": "E-Series microSDXC UHS-I Class 10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-e-series-microsdxc-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-e-series-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "e-series microsdxc uhs-i class 10",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 30,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified memory-cards model: E-Series microSDXC UHS-I Class 10",
+      "status": "staged"
+    },
+    {
+      "id": "sony-sf-g-tough-sdxc-uhs-ii-v90",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "TOUGH Series",
+      "modelName": "SF-G Series TOUGH SDXC UHS-II V90",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/sfg128t"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-sf-g-tough-sdxc-uhs-ii-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "sf-g series tough sdxc uhs-ii v90",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 299,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: SF-G Series TOUGH SDXC UHS-II V90",
+      "status": "staged"
+    },
+    {
+      "id": "sony-sf-m-tough-sdxc-uhs-ii-v60",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "TOUGH Series",
+      "modelName": "SF-M Series TOUGH SDXC UHS-II V60",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/sfm128t"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-sf-m-tough-sdxc-uhs-ii-v60.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "sf-m series tough sdxc uhs-ii v60",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 277,
+        "writeSpeedMBps": 150,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: SF-M Series TOUGH SDXC UHS-II V60",
+      "status": "staged"
+    },
+    {
+      "id": "sony-sf-e-sdxc-uhs-ii-v30",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "E-Series",
+      "modelName": "SF-E Series SDXC UHS-II V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/sfe128"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-sf-e-sdxc-uhs-ii-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "sf-e series sdxc uhs-ii v30",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 270,
+        "writeSpeedMBps": 120,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: SF-E Series SDXC UHS-II V30",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ceb-g-cfexpress-type-b",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "CFexpress TOUGH",
+      "modelName": "CEB-G Series CFexpress Type B TOUGH",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/cebg128"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ceb-g-cfexpress-type-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ceb-g series cfexpress type b tough",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Raw 8K",
+        "readSpeedMBps": 1700,
+        "writeSpeedMBps": 1480,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: CEB-G Series CFexpress Type B TOUGH",
+      "status": "staged"
+    },
+    {
+      "id": "sony-cea-g-cfexpress-type-a-tough",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "CFexpress TOUGH",
+      "modelName": "CEA-G Series CFexpress Type A TOUGH",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/ceag160t"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-cea-g-cfexpress-type-a-tough.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "cea-g series cfexpress type a tough",
+        "cardFormat": "CFexpress Type A",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "VPG400",
+        "readSpeedMBps": 800,
+        "writeSpeedMBps": 700,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: CEA-G Series CFexpress Type A TOUGH",
+      "status": "staged"
+    },
+    {
+      "id": "sony-cea-m-cfexpress-type-a",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "M-Series CFexpress",
+      "modelName": "CEA-M Series CFexpress Type A Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/ceam960t"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-cea-m-cfexpress-type-a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "cea-m series cfexpress type a card",
+        "cardFormat": "CFexpress Type A",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "VPG200",
+        "readSpeedMBps": 800,
+        "writeSpeedMBps": 700,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: CEA-M Series CFexpress Type A Card",
+      "status": "staged"
+    },
+    {
+      "id": "sony-sr-vm-high-endurance-microsd",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "High Endurance",
+      "modelName": "SR-VM Series High Endurance microSDXC",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/srvm128"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-sr-vm-high-endurance-microsd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "sr-vm series high endurance microsdxc",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 95,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: SR-VM Series High Endurance microSDXC",
+      "status": "staged"
+    },
+    {
+      "id": "sony-sr-uy3a-microsdxc",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "UY3A Series",
+      "modelName": "SR-UY3A microSDXC UHS-I Class 10",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/sruy128"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-sr-uy3a-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "sr-uy3a microsdxc uhs-i class 10",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 90,
+        "writeSpeedMBps": 40,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: SR-UY3A microSDXC UHS-I Class 10",
+      "status": "staged"
+    },
+    {
+      "id": "sony-sf-m-standard-sdxc",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "Standard Series",
+      "modelName": "SF-M Series Standard SDXC UHS-II",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/sfm128"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-sf-m-standard-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "sf-m series standard sdxc uhs-ii",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 277,
+        "writeSpeedMBps": 150,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: SF-M Series Standard SDXC UHS-II",
+      "status": "staged"
+    },
+    {
+      "id": "sony-sf-g-standard-sdxc",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "Standard Series",
+      "modelName": "SF-G Series Standard SDXC UHS-II",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/imaging/imaging-accessories/media/p/sfg128"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-sf-g-standard-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "sf-g series standard sdxc uhs-ii",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 299,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified memory-cards model: SF-G Series Standard SDXC UHS-II",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-sdxc-340s-uhs-i-v30",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "340S High Performance",
+      "modelName": "SDXC 340S UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/memory-card/sdxc-sduc-340s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-sdxc-340s-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "sdxc 340s uhs-i v30 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 160,
+        "writeSpeedMBps": 90,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: SDXC 340S UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-sdxc-330s-uhs-i-v30",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "330S Performance",
+      "modelName": "SDXC 330S UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/memory-card/sdxc-sduc-330s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-sdxc-330s-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "sdxc 330s uhs-i v30 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 85,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: SDXC 330S UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-microsdxc-350v-high-endurance",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "350V High Endurance",
+      "modelName": "microSDXC 350V High Endurance V30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/memory-card/microsdxc-350v"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-microsdxc-350v-high-endurance.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "microsdxc 350v high endurance v30",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 40,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: microSDXC 350V High Endurance V30",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-microsdxc-340s-uhs-i-v30",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "340S Gaming",
+      "modelName": "microSDXC 340S UHS-I V30 Gaming Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/memory-card/microsdxc-340s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-microsdxc-340s-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "microsdxc 340s uhs-i v30 gaming card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 160,
+        "writeSpeedMBps": 125,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: microSDXC 340S UHS-I V30 Gaming Card",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-microsdxc-300s-uhs-i-v30",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "300S Everyday",
+      "modelName": "microSDXC 300S UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/memory-card/microsdxc-300s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-microsdxc-300s-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "microsdxc 300s uhs-i v30 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 40,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: microSDXC 300S UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-sdxc-700s-uhs-ii-v90",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "700S Cinema",
+      "modelName": "SDXC 700S UHS-II V90 Professional Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/memory-card/sdxc-sduc-700s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-sdxc-700s-uhs-ii-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "sdxc 700s uhs-ii v90 professional card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 285,
+        "writeSpeedMBps": 180,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: SDXC 700S UHS-II V90 Professional Card",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-sdxc-500s-uhs-i-v30",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "500S MLC",
+      "modelName": "SDXC 500S UHS-I V30 MLC Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/memory-card/sdxc-sduc-500s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-sdxc-500s-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "sdxc 500s uhs-i v30 mlc card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 95,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: SDXC 500S UHS-I V30 MLC Card",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-microsdxc-500s-uhs-i-v30",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "500S MLC",
+      "modelName": "microSDXC 500S UHS-I V30 MLC Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/memory-card/microsdxc-500s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-microsdxc-500s-uhs-i-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "microsdxc 500s uhs-i v30 mlc card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 95,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: microSDXC 500S UHS-I V30 MLC Card",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-industrial-temp-sdxc420t",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "Industrial Grade",
+      "modelName": "Industrial Temp SDXC420T Wide Temperature",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/embedded/product/memory-cards/sd-card-sdc420t"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-industrial-temp-sdxc420t.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "industrial temp sdxc420t wide temperature",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 95,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: Industrial Temp SDXC420T Wide Temperature",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-industrial-temp-microsd230i",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "Industrial Grade",
+      "modelName": "Industrial Temp microSD230I Wide Temperature",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/embedded/product/memory-cards/microsd-card-usd230i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-industrial-temp-microsd230i.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "industrial temp microsd230i wide temperature",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 95,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified memory-cards model: Industrial Temp microSD230I Wide Temperature",
+      "status": "staged"
+    },
+    {
+      "id": "adata-premier-one-sdxc-v90",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Premier ONE",
+      "modelName": "Premier ONE SDXC UHS-II V90 3D MLC",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/premier-one-sdxc-uhs-ii-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-premier-one-sdxc-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "premier one sdxc uhs-ii v90 3d mlc",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 290,
+        "writeSpeedMBps": 260,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: Premier ONE SDXC UHS-II V90 3D MLC",
+      "status": "staged"
+    },
+    {
+      "id": "adata-premier-pro-sdxc-v30",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Premier Pro",
+      "modelName": "Premier Pro SDXC UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/premier-pro-sdxc-uhs-i-u3-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-premier-pro-sdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "premier pro sdxc uhs-i v30 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: Premier Pro SDXC UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "adata-premier-pro-microsdxc-v30",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Premier Pro",
+      "modelName": "Premier Pro microSDXC UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/premier-pro-microsdxc-uhs-i-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-premier-pro-microsdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "premier pro microsdxc uhs-i v30 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: Premier Pro microSDXC UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "adata-premier-microsdxc-class-10",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Premier Everyday",
+      "modelName": "Premier microSDXC UHS-I Class 10 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/premier-microsdxc-uhs-i-class-10-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-premier-microsdxc-class-10.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "premier microsdxc uhs-i class 10 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 25,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: Premier microSDXC UHS-I Class 10 Card",
+      "status": "staged"
+    },
+    {
+      "id": "adata-high-endurance-microsdxc-v30",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "High Endurance",
+      "modelName": "High Endurance microSDXC UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/high-endurance-microsdxc-uhs-i-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-high-endurance-microsdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "high endurance microsdxc uhs-i v30 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: High Endurance microSDXC UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "adata-premier-extreme-sdxc",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Premier Extreme",
+      "modelName": "Premier Extreme SDXC UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/premier-extreme-sdxc-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-premier-extreme-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "premier extreme sdxc uhs-i v30 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 150,
+        "writeSpeedMBps": 90,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: Premier Extreme SDXC UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "adata-xpg-gaming-microsdxc",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "XPG Gaming",
+      "modelName": "XPG Gaming microSDXC UHS-I Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/xpg-gaming-microsdxc-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-xpg-gaming-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "xpg gaming microsdxc uhs-i card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 85,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: XPG Gaming microSDXC UHS-I Card",
+      "status": "staged"
+    },
+    {
+      "id": "adata-industrial-grade-microsd",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Industrial Grade",
+      "modelName": "Industrial Grade microSD UHS-I Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://industrial.adata.com/en/product/microsd-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://industrial.adata.com/images/products/adata-industrial-grade-microsd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "industrial grade microsd uhs-i card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 80,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: Industrial Grade microSD UHS-I Card",
+      "status": "staged"
+    },
+    {
+      "id": "adata-premier-sdxc-class-10",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Premier Everyday",
+      "modelName": "Premier SDXC UHS-I Class 10 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/premier-sdxc-class-10-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-premier-sdxc-class-10.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "premier sdxc uhs-i class 10 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 25,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: Premier SDXC UHS-I Class 10 Card",
+      "status": "staged"
+    },
+    {
+      "id": "adata-premier-pro-high-capacity-sdhc",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Premier Pro",
+      "modelName": "Premier Pro High Capacity SDHC UHS-I",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/memory-cards/premier-pro-sdhc-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-premier-pro-high-capacity-sdhc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "premier pro high capacity sdhc uhs-i",
+        "cardFormat": "SDHC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 80,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified memory-cards model: Premier Pro High Capacity SDHC UHS-I",
+      "status": "staged"
+    },
+    {
+      "id": "pny-pro-elite-sdxc-v90",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "PRO Elite",
+      "modelName": "PRO Elite SDXC UHS-II V90 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/pro-elite-sd-card-v90"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-pro-elite-sdxc-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "pro elite sdxc uhs-ii v90 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 280,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: PRO Elite SDXC UHS-II V90 Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-pro-elite-microsdxc-v30",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "PRO Elite",
+      "modelName": "PRO Elite microSDXC UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/pro-elite-microsd-card-v30"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-pro-elite-microsdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "pro elite microsdxc uhs-i v30 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 90,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: PRO Elite microSDXC UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-elitex-pro-sdxc-v60",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "EliteX-PRO",
+      "modelName": "EliteX-PRO SDXC UHS-II V60 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/elitex-pro-sd-card-v60"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-elitex-pro-sdxc-v60.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "elitex-pro sdxc uhs-ii v60 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 280,
+        "writeSpeedMBps": 180,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: EliteX-PRO SDXC UHS-II V60 Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-premier-x-microsdxc-v30",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Premier-X",
+      "modelName": "Premier-X microSDXC UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/premier-x-microsd-card-v30"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-premier-x-microsdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "premier-x microsdxc uhs-i v30 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: Premier-X microSDXC UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-elite-x-microsdxc-v30",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Elite-X",
+      "modelName": "Elite-X microSDXC UHS-I V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/elite-x-microsd-card"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-elite-x-microsdxc-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "elite-x microsdxc uhs-i v30 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: Elite-X microSDXC UHS-I V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-elite-microsdxc-class-10",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Elite Everyday",
+      "modelName": "Elite microSDXC UHS-I Class 10 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/elite-microsd-card"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-elite-microsdxc-class-10.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "elite microsdxc uhs-i class 10 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 20,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: Elite microSDXC UHS-I Class 10 Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-performance-plus-sdxc",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Performance Plus",
+      "modelName": "Performance Plus SDXC UHS-I Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/performance-plus-sd-card"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-performance-plus-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "performance plus sdxc uhs-i card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 30,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: Performance Plus SDXC UHS-I Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-pro-elite-cfexpress-type-b",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "PRO Elite CFexpress",
+      "modelName": "PRO Elite CFexpress Type B Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/pro-elite-cfexpress-type-b-card"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-pro-elite-cfexpress-type-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "pro elite cfexpress type b card",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Raw 4K/8K",
+        "readSpeedMBps": 1700,
+        "writeSpeedMBps": 1400,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: PRO Elite CFexpress Type B Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-high-endurance-microsdxc",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "High Endurance",
+      "modelName": "High Endurance microSDXC Class 10 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/high-endurance-microsd-card"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-high-endurance-microsdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "high endurance microsdxc class 10 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "Class 10",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 30,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: High Endurance microSDXC Class 10 Card",
+      "status": "staged"
+    },
+    {
+      "id": "pny-turbo-performance-sdxc",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Turbo Performance",
+      "modelName": "Turbo Performance SDXC UHS-I U3 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/turbo-performance-sd-card"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-turbo-performance-sdxc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "turbo performance sdxc uhs-i u3 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 60,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified memory-cards model: Turbo Performance SDXC UHS-I U3 Card",
+      "status": "staged"
+    },
+    {
+      "id": "prograde-sdxc-uhs-ii-v90-cobalt",
+      "canonicalBrand": "ProGrade Digital",
+      "displayBrand": "ProGrade Digital",
+      "productLine": "Cobalt Series",
+      "modelName": "SDXC UHS-II V90 Cobalt Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://progradedigital.com/product/sdxc-uhs-ii-v90-cobalt-memory-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://progradedigital.com/images/products/prograde-sdxc-uhs-ii-v90-cobalt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "prograde digital",
+        "modelName": "sdxc uhs-ii v90 cobalt card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 250,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ProGrade Digital verified memory-cards model: SDXC UHS-II V90 Cobalt Card",
+      "status": "staged"
+    },
+    {
+      "id": "prograde-sdxc-uhs-ii-v60-gold",
+      "canonicalBrand": "ProGrade Digital",
+      "displayBrand": "ProGrade Digital",
+      "productLine": "Gold Series",
+      "modelName": "SDXC UHS-II V60 Gold Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://progradedigital.com/product/sdxc-uhs-ii-v60-gold-memory-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://progradedigital.com/images/products/prograde-sdxc-uhs-ii-v60-gold.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "prograde digital",
+        "modelName": "sdxc uhs-ii v60 gold card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 250,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ProGrade Digital verified memory-cards model: SDXC UHS-II V60 Gold Card",
+      "status": "staged"
+    },
+    {
+      "id": "prograde-cfexpress-4-0-type-b-cobalt",
+      "canonicalBrand": "ProGrade Digital",
+      "displayBrand": "ProGrade Digital",
+      "productLine": "Cobalt PCIe 4.0",
+      "modelName": "CFexpress 4.0 Type B Cobalt Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://progradedigital.com/product/cfexpress-4-0-type-b-cobalt-memory-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://progradedigital.com/images/products/prograde-cfexpress-4-0-type-b-cobalt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "prograde digital",
+        "modelName": "cfexpress 4.0 type b cobalt card",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen4",
+        "videoSpeedClass": "Cinema 8K RAW",
+        "readSpeedMBps": 3400,
+        "writeSpeedMBps": 3000,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ProGrade Digital verified memory-cards model: CFexpress 4.0 Type B Cobalt Card",
+      "status": "staged"
+    },
+    {
+      "id": "prograde-cfexpress-2-0-type-b-gold",
+      "canonicalBrand": "ProGrade Digital",
+      "displayBrand": "ProGrade Digital",
+      "productLine": "Gold PCIe 3.0",
+      "modelName": "CFexpress 2.0 Type B Gold Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://progradedigital.com/product/cfexpress-type-b-gold-memory-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://progradedigital.com/images/products/prograde-cfexpress-2-0-type-b-gold.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "prograde digital",
+        "modelName": "cfexpress 2.0 type b gold card",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Cinema RAW",
+        "readSpeedMBps": 1700,
+        "writeSpeedMBps": 1500,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ProGrade Digital verified memory-cards model: CFexpress 2.0 Type B Gold Card",
+      "status": "staged"
+    },
+    {
+      "id": "prograde-cfexpress-type-a-cobalt",
+      "canonicalBrand": "ProGrade Digital",
+      "displayBrand": "ProGrade Digital",
+      "productLine": "Cobalt Type A",
+      "modelName": "CFexpress Type A Cobalt Card (VPG400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://progradedigital.com/product/cfexpress-type-a-cobalt-memory-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://progradedigital.com/images/products/prograde-cfexpress-type-a-cobalt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "prograde digital",
+        "modelName": "cfexpress type a cobalt card (vpg400)",
+        "cardFormat": "CFexpress Type A",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "VPG400",
+        "readSpeedMBps": 800,
+        "writeSpeedMBps": 700,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ProGrade Digital verified memory-cards model: CFexpress Type A Cobalt Card (VPG400)",
+      "status": "staged"
+    },
+    {
+      "id": "prograde-cfexpress-type-a-gold",
+      "canonicalBrand": "ProGrade Digital",
+      "displayBrand": "ProGrade Digital",
+      "productLine": "Gold Type A",
+      "modelName": "CFexpress Type A Gold Card (VPG200)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://progradedigital.com/product/cfexpress-type-a-gold-memory-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://progradedigital.com/images/products/prograde-cfexpress-type-a-gold.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "prograde digital",
+        "modelName": "cfexpress type a gold card (vpg200)",
+        "cardFormat": "CFexpress Type A",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "VPG200",
+        "readSpeedMBps": 800,
+        "writeSpeedMBps": 700,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ProGrade Digital verified memory-cards model: CFexpress Type A Gold Card (VPG200)",
+      "status": "staged"
+    },
+    {
+      "id": "prograde-microsdxc-uhs-ii-v60-gold",
+      "canonicalBrand": "ProGrade Digital",
+      "displayBrand": "ProGrade Digital",
+      "productLine": "Gold Series",
+      "modelName": "microSDXC UHS-II V60 Gold Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://progradedigital.com/product/microsdxc-uhs-ii-v60-gold-memory-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://progradedigital.com/images/products/prograde-microsdxc-uhs-ii-v60-gold.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "prograde digital",
+        "modelName": "microsdxc uhs-ii v60 gold card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 250,
+        "writeSpeedMBps": 130,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ProGrade Digital verified memory-cards model: microSDXC UHS-II V60 Gold Card",
+      "status": "staged"
+    },
+    {
+      "id": "prograde-cfast-2-0-cobalt",
+      "canonicalBrand": "ProGrade Digital",
+      "displayBrand": "ProGrade Digital",
+      "productLine": "Cobalt CFast",
+      "modelName": "CFast 2.0 Cobalt Cinema Memory Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://progradedigital.com/product/cfast-2-0-cobalt-memory-card/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://progradedigital.com/images/products/prograde-cfast-2-0-cobalt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "prograde digital",
+        "modelName": "cfast 2.0 cobalt cinema memory card",
+        "cardFormat": "CFast 2.0",
+        "uhsClass": "SATA III",
+        "videoSpeedClass": "VPG130",
+        "readSpeedMBps": 550,
+        "writeSpeedMBps": 520,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ProGrade Digital verified memory-cards model: CFast 2.0 Cobalt Cinema Memory Card",
+      "status": "staged"
+    },
+    {
+      "id": "angelbird-av-pro-sd-mk2-v90",
+      "canonicalBrand": "Angelbird",
+      "displayBrand": "Angelbird",
+      "productLine": "AV PRO",
+      "modelName": "AV PRO SD MK2 V90 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.angelbird.com/prod/av-pro-sd-mk2-v90/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.angelbird.com/images/products/angelbird-av-pro-sd-mk2-v90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "angelbird",
+        "modelName": "av pro sd mk2 v90 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 280,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angelbird verified memory-cards model: AV PRO SD MK2 V90 Card",
+      "status": "staged"
+    },
+    {
+      "id": "angelbird-av-pro-sd-mk2-v60",
+      "canonicalBrand": "Angelbird",
+      "displayBrand": "Angelbird",
+      "productLine": "AV PRO",
+      "modelName": "AV PRO SD MK2 V60 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.angelbird.com/prod/av-pro-sd-mk2-v60/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.angelbird.com/images/products/angelbird-av-pro-sd-mk2-v60.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "angelbird",
+        "modelName": "av pro sd mk2 v60 card",
+        "cardFormat": "SDXC",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V60",
+        "readSpeedMBps": 280,
+        "writeSpeedMBps": 160,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angelbird verified memory-cards model: AV PRO SD MK2 V60 Card",
+      "status": "staged"
+    },
+    {
+      "id": "angelbird-av-pro-cfexpress-b-mk2",
+      "canonicalBrand": "Angelbird",
+      "displayBrand": "Angelbird",
+      "productLine": "AV PRO",
+      "modelName": "AV PRO CFexpress Type B MK2 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.angelbird.com/prod/av-pro-cfexpress-type-b-mk2/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.angelbird.com/images/products/angelbird-av-pro-cfexpress-b-mk2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "angelbird",
+        "modelName": "av pro cfexpress type b mk2 card",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Raw 12K",
+        "readSpeedMBps": 1785,
+        "writeSpeedMBps": 1550,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angelbird verified memory-cards model: AV PRO CFexpress Type B MK2 Card",
+      "status": "staged"
+    },
+    {
+      "id": "angelbird-av-pro-cfexpress-a",
+      "canonicalBrand": "Angelbird",
+      "displayBrand": "Angelbird",
+      "productLine": "AV PRO",
+      "modelName": "AV PRO CFexpress Type A Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.angelbird.com/prod/av-pro-cfexpress-type-a/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.angelbird.com/images/products/angelbird-av-pro-cfexpress-a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "angelbird",
+        "modelName": "av pro cfexpress type a card",
+        "cardFormat": "CFexpress Type A",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "VPG400",
+        "readSpeedMBps": 820,
+        "writeSpeedMBps": 730,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angelbird verified memory-cards model: AV PRO CFexpress Type A Card",
+      "status": "staged"
+    },
+    {
+      "id": "angelbird-av-pro-cf-mk2",
+      "canonicalBrand": "Angelbird",
+      "displayBrand": "Angelbird",
+      "productLine": "AV PRO",
+      "modelName": "AV PRO CF MK2 CompactFlash Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.angelbird.com/prod/av-pro-cf-mk2/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.angelbird.com/images/products/angelbird-av-pro-cf-mk2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "angelbird",
+        "modelName": "av pro cf mk2 compactflash card",
+        "cardFormat": "CompactFlash",
+        "uhsClass": "UDMA 7",
+        "videoSpeedClass": "VPG65",
+        "readSpeedMBps": 160,
+        "writeSpeedMBps": 150,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angelbird verified memory-cards model: AV PRO CF MK2 CompactFlash Card",
+      "status": "staged"
+    },
+    {
+      "id": "angelbird-av-pro-edge-cfexpress-b",
+      "canonicalBrand": "Angelbird",
+      "displayBrand": "Angelbird",
+      "productLine": "AV PRO Edge",
+      "modelName": "AV PRO Edge CFexpress Type B Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.angelbird.com/prod/av-pro-edge-cfexpress-type-b/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.angelbird.com/images/products/angelbird-av-pro-edge-cfexpress-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "angelbird",
+        "modelName": "av pro edge cfexpress type b card",
+        "cardFormat": "CFexpress Type B",
+        "uhsClass": "PCIe Gen3",
+        "videoSpeedClass": "Raw 8K",
+        "readSpeedMBps": 1785,
+        "writeSpeedMBps": 1550,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angelbird verified memory-cards model: AV PRO Edge CFexpress Type B Card",
+      "status": "staged"
+    },
+    {
+      "id": "angelbird-av-pro-microsd-v30",
+      "canonicalBrand": "Angelbird",
+      "displayBrand": "Angelbird",
+      "productLine": "AV PRO",
+      "modelName": "AV PRO microSD V30 Card",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.angelbird.com/prod/av-pro-microsd-v30/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.angelbird.com/images/products/angelbird-av-pro-microsd-v30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "angelbird",
+        "modelName": "av pro microsd v30 card",
+        "cardFormat": "microSDXC",
+        "uhsClass": "UHS-I",
+        "videoSpeedClass": "V30",
+        "readSpeedMBps": 100,
+        "writeSpeedMBps": 90,
+        "v90Certified": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angelbird verified memory-cards model: AV PRO microSD V30 Card",
+      "status": "staged"
+    },
+    {
+      "id": "angelbird-match-pack-cinema",
+      "canonicalBrand": "Angelbird",
+      "displayBrand": "Angelbird",
+      "productLine": "Match Pack",
+      "modelName": "Match Pack for Cinema Cameras (Dual V90 SDXC)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.angelbird.com/prod/match-pack/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.angelbird.com/images/products/angelbird-match-pack-cinema.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "angelbird",
+        "modelName": "match pack for cinema cameras (dual v90 sdxc)",
+        "cardFormat": "SDXC Dual-Pack",
+        "uhsClass": "UHS-II",
+        "videoSpeedClass": "V90",
+        "readSpeedMBps": 300,
+        "writeSpeedMBps": 280,
+        "v90Certified": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angelbird verified memory-cards model: Match Pack for Cinema Cameras (Dual V90 SDXC)",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "ProGrade Digital",
+      "leafKey": "memory-cards",
+      "reason": "ProGrade Digital specializes in professional photography & cinema media across 8 distinct memory card models.",
+      "officialSourceUrl": "https://progradedigital.com/prograde-digital-memory-cards/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "SDXC UHS-II V90 Cobalt Card",
+        "SDXC UHS-II V60 Gold Card",
+        "CFexpress 4.0 Type B Cobalt Card",
+        "CFexpress 2.0 Type B Gold Card",
+        "CFexpress Type A Cobalt Card (VPG400)",
+        "CFexpress Type A Gold Card (VPG200)",
+        "microSDXC UHS-II V60 Gold Card",
+        "CFast 2.0 Cobalt Cinema Memory Card"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Angelbird",
+      "leafKey": "memory-cards",
+      "reason": "Angelbird manufactures 8 Austrian-engineered audio/video production and camera memory cards.",
+      "officialSourceUrl": "https://www.angelbird.com/category/memory-cards/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "AV PRO SD MK2 V90 Card",
+        "AV PRO SD MK2 V60 Card",
+        "AV PRO CFexpress Type B MK2 Card",
+        "AV PRO CFexpress Type A Card",
+        "AV PRO CF MK2 CompactFlash Card",
+        "AV PRO Edge CFexpress Type B Card",
+        "AV PRO microSD V30 Card",
+        "Match Pack for Cinema Cameras (Dual V90 SDXC)"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

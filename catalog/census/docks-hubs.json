@@ -1,0 +1,3508 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "docks-hubs",
+  "displayName": "Docks & USB-C Hubs",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "anker-575-usb-c-dock-12-in-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Docking",
+      "modelName": "575 USB-C Docking Station (12-in-1 Triple Display 85W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8392"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-575-usb-c-dock-12-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "575 usb-c docking station (12-in-1 triple display 85w)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Triple Display (Dual HDMI + DP 4K@60Hz)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS (macOS SST)"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 575 USB-C Docking Station (12-in-1 Triple Display 85W)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-778-thunderbolt-4-dock-12-in-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Anker Prime / Series 7",
+      "modelName": "778 Thunderbolt 4 Docking Station (12-in-1 100W 8K)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a83a9"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-778-thunderbolt-4-dock-12-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "778 thunderbolt 4 docking station (12-in-1 100w 8k)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Quad Display (Single 8K@30Hz / Triple 4K@60Hz)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 778 Thunderbolt 4 Docking Station (12-in-1 100W 8K)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-568-usb4-dock-11-in-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 USB4",
+      "modelName": "568 USB4 Docking Station (11-in-1 100W Dual 4K)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a83a1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-568-usb4-dock-11-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "568 usb4 docking station (11-in-1 100w dual 4k)",
+        "hostProtocol": "USB4 40Gbps",
+        "displayOutputs": "Triple Display (Single 8K / Dual 4K@60Hz)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 568 USB4 Docking Station (11-in-1 100W Dual 4K)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-332-usb-c-hub-5-in-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 3 Compact",
+      "modelName": "332 USB-C Hub (5-in-1 4K HDMI 85W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8355"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-332-usb-c-hub-5-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "332 usb-c hub (5-in-1 4k hdmi 85w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Universal macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 332 USB-C Hub (5-in-1 4K HDMI 85W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-555-usb-c-hub-8-in-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Multiport",
+      "modelName": "555 USB-C Hub (8-in-1 100W PD 10Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8383"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-555-usb-c-hub-8-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "555 usb-c hub (8-in-1 100w pd 10gbps)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Universal macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 555 USB-C Hub (8-in-1 100W PD 10Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-565-usb-c-hub-11-in-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Multiport",
+      "modelName": "565 USB-C Hub (11-in-1 Dual Display 10Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8388"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-565-usb-c-hub-11-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "565 usb-c hub (11-in-1 dual display 10gbps)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Dual Display (HDMI + DisplayPort 4K@60Hz)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 565 USB-C Hub (11-in-1 Dual Display 10Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-547-usb-c-hub-for-macbook",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Dual USB-C",
+      "modelName": "547 USB-C Hub (7-in-2 for MacBook MagSafe Compatible)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8354"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-547-usb-c-hub-for-macbook.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "547 usb-c hub (7-in-2 for macbook magsafe compatible)",
+        "hostProtocol": "Dual Thunderbolt USB-C",
+        "displayOutputs": "Dual Display (Thunderbolt 5K + HDMI 4K)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "None",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS MacBook Pro / Air"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 547 USB-C Hub (7-in-2 for MacBook MagSafe Compatible)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-powerexpand-9-in-1-pd-dock",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "PowerExpand",
+      "modelName": "PowerExpand 9-in-1 USB-C PD Docking Station (60W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8394"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-powerexpand-9-in-1-pd-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "powerexpand 9-in-1 usb-c pd docking station (60w)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Dual Display (HDMI + DisplayPort 4K@30Hz)",
+        "passthroughWatts": 60,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: PowerExpand 9-in-1 USB-C PD Docking Station (60W)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-675-usb-c-dock-monitor-stand",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 6 Workspace",
+      "modelName": "675 USB-C Docking Station Monitor Stand (12-in-1 100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a83a4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-675-usb-c-dock-monitor-stand.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "675 usb-c docking station monitor stand (12-in-1 100w)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 675 USB-C Docking Station Monitor Stand (12-in-1 100W)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-553-usb-c-hub-8-in-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Dual Display",
+      "modelName": "553 USB-C Hub (8-in-1 Dual 4K HDMI 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8380"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-553-usb-c-hub-8-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "553 usb-c hub (8-in-1 dual 4k hdmi 100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Dual 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 553 USB-C Hub (8-in-1 Dual 4K HDMI 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-341-usb-c-hub-7-in-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 3 Everyday",
+      "modelName": "341 USB-C Hub (7-in-1 4K HDMI 85W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8346"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-341-usb-c-hub-7-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "341 usb-c hub (7-in-1 4k hdmi 85w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "None",
+        "cardReader": true,
+        "hostPlatformSupport": "Universal macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 341 USB-C Hub (7-in-1 4K HDMI 85W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-777-thunderbolt-4-dock-apex",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Apex Series",
+      "modelName": "777 Thunderbolt 4 Dock Apex (12-in-1 90W Full Aluminum)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8397"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-777-thunderbolt-4-dock-apex.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "777 thunderbolt 4 dock apex (12-in-1 90w full aluminum)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Triple 4K@60Hz (Dual HDMI + TB4 Downstream)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified docks-hubs model: 777 Thunderbolt 4 Dock Apex (12-in-1 90W Full Aluminum)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-pro-thunderbolt-4-dock",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Pro",
+      "modelName": "Connect Pro Thunderbolt 4 Dock (Dual 4K@60Hz 90W 12-Port)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/thunderbolt-4-dock-pro/INC006.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-pro-thunderbolt-4-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect pro thunderbolt 4 dock (dual 4k@60hz 90w 12-port)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Triple Display (Single 8K@30Hz / Dual 4K@60Hz HDMI)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect Pro Thunderbolt 4 Dock (Dual 4K@60Hz 90W 12-Port)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-universal-triple-display-dock",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Universal",
+      "modelName": "Connect Universal USB-C Triple Display Dock (DisplayLink 85W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-triple-display-dock/INC007.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-universal-triple-display-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect universal usb-c triple display dock (displaylink 85w)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Triple 4K@60Hz (2x HDMI + 1x DP DisplayLink)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect Universal USB-C Triple Display Dock (DisplayLink 85W)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-usb-c-11-in-1-dock-stand",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Multiport",
+      "modelName": "Connect USB-C 11-in-1 Multiport Dock Stand (100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-11-in-1-multiport-dock/INC004.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-usb-c-11-in-1-dock-stand.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect usb-c 11-in-1 multiport dock stand (100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Triple Display (HDMI + DP + VGA)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect USB-C 11-in-1 Multiport Dock Stand (100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-usb-c-7-in-1-hub",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Portable",
+      "modelName": "Connect USB-C 7-in-1 Multiport Hub (4K HDMI 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-7-in-1-multiport-hub/AVC009.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-usb-c-7-in-1-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect usb-c 7-in-1 multiport hub (4k hdmi 100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "None",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect USB-C 7-in-1 Multiport Hub (4K HDMI 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-usb-c-4-in-1-adapter",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Multiport",
+      "modelName": "Connect USB-C 4-in-1 Multiport Adapter (HDMI/VGA/DVI/USB)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-video-adapter/AVC005.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-usb-c-4-in-1-adapter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect usb-c 4-in-1 multiport adapter (hdmi/vga/dvi/usb)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K HDMI or VGA/DVI",
+        "passthroughWatts": 0,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Universal macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect USB-C 4-in-1 Multiport Adapter (HDMI/VGA/DVI/USB)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-thunderbolt-4-core-hub",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Hub",
+      "modelName": "Connect Thunderbolt 4 Core Hub (5-in-1 Dual 4K 96W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/thunderbolt-4-core-hub/INZ004.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-thunderbolt-4-core-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect thunderbolt 4 core hub (5-in-1 dual 4k 96w)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz or Single 8K (TB4 Downstream)",
+        "passthroughWatts": 96,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect Thunderbolt 4 Core Hub (5-in-1 Dual 4K 96W)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-usb-c-6-in-1-hub",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Portable",
+      "modelName": "Connect USB-C 6-in-1 Multiport Hub (100W PD Gigabit)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-6-in-1-multiport-hub/AVC008.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-usb-c-6-in-1-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect usb-c 6-in-1 multiport hub (100w pd gigabit)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect USB-C 6-in-1 Multiport Hub (100W PD Gigabit)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-dual-display-dock-85w",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Dual Display",
+      "modelName": "Connect USB-C Dual Display Docking Station (85W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-dual-display-dock/INC002.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-dual-display-dock-85w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect usb-c dual display docking station (85w)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Dual 1080p HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect USB-C Dual Display Docking Station (85W)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-usb-c-5-in-1-adapter",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect Multiport",
+      "modelName": "Connect USB-C 5-in-1 Multiport Adapter (4K 60Hz 86W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-5-in-1-multiport-adapter/AVC007.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-usb-c-5-in-1-adapter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect usb-c 5-in-1 multiport adapter (4k 60hz 86w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 86,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect USB-C 5-in-1 Multiport Adapter (4K 60Hz 86W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-core-gan-usb-c-dock",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect GaN",
+      "modelName": "Connect Core GaN USB-C Dock (Triple Display 130W Integrated Power)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/gan-usb-c-dock/INC014.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-core-gan-usb-c-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect core gan usb-c dock (triple display 130w integrated power)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Triple Display (Dual HDMI + DP 4K@60Hz)",
+        "passthroughWatts": 96,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified docks-hubs model: Connect Core GaN USB-C Dock (Triple Display 130W Integrated Power)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-pro-210-usb-c-dock",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Pro",
+      "modelName": "Revodok Pro 210 USB-C Dock (10-in-1 Dual 4K HDMI 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-pro-210-usb-c-docking-station"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-pro-210-usb-c-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok pro 210 usb-c dock (10-in-1 dual 4k hdmi 100w pd)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Dual 4K@60Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok Pro 210 USB-C Dock (10-in-1 Dual 4K HDMI 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-pro-313-thunderbolt-4",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Max",
+      "modelName": "Revodok Pro 313 Thunderbolt 4 Dock (13-in-1 Triple 8K 85W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-max-313-thunderbolt-4-dock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-pro-313-thunderbolt-4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok pro 313 thunderbolt 4 dock (13-in-1 triple 8k 85w)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Triple Display (Single 8K@30Hz / Dual 4K@60Hz)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok Pro 313 Thunderbolt 4 Dock (13-in-1 Triple 8K 85W)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-max-213-thunderbolt-4",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Max",
+      "modelName": "Revodok Max 213 Thunderbolt 4 Dock (13-in-1 90W Dual 4K)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-max-213-docking-station"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-max-213-thunderbolt-4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok max 213 thunderbolt 4 dock (13-in-1 90w dual 4k)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz / Single 8K@60Hz",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok Max 213 Thunderbolt 4 Dock (13-in-1 90W Dual 4K)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-107-usb-c-hub",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Core",
+      "modelName": "Revodok 107 USB-C Hub (7-in-1 4K@60Hz HDMI 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-107-usb-c-hub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-107-usb-c-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok 107 usb-c hub (7-in-1 4k@60hz hdmi 100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Universal macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok 107 USB-C Hub (7-in-1 4K@60Hz HDMI 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-109-usb-c-hub",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Core",
+      "modelName": "Revodok 109 USB-C Hub (9-in-1 Dual 4K HDMI 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-109-usb-c-hub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-109-usb-c-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok 109 usb-c hub (9-in-1 dual 4k hdmi 100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Dual 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok 109 USB-C Hub (9-in-1 Dual 4K HDMI 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-105-usb-c-hub",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Core",
+      "modelName": "Revodok 105 USB-C Hub (5-in-1 4K HDMI 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-105-usb-c-hub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-105-usb-c-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok 105 usb-c hub (5-in-1 4k hdmi 100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Universal macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok 105 USB-C Hub (5-in-1 4K HDMI 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-pro-209-displaylink",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Pro",
+      "modelName": "Revodok Pro 209 USB-C Dock (9-in-1 Dual 4K DisplayLink 100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-pro-209-docking-station"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-pro-209-displaylink.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok pro 209 usb-c dock (9-in-1 dual 4k displaylink 100w)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Dual 4K@60Hz (2x HDMI + 2x DP DisplayLink)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS M1/M2/M3 / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok Pro 209 USB-C Dock (9-in-1 Dual 4K DisplayLink 100W)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-206-usb-c-hub",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Core",
+      "modelName": "Revodok 206 USB-C Hub (6-in-1 Gigabit Ethernet 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-206-usb-c-hub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-206-usb-c-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok 206 usb-c hub (6-in-1 gigabit ethernet 100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok 206 USB-C Hub (6-in-1 Gigabit Ethernet 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-pro-311-usb4",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Max",
+      "modelName": "Revodok Pro 311 USB4 Docking Station (11-in-1 8K 100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-pro-311-usb4-dock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-pro-311-usb4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok pro 311 usb4 docking station (11-in-1 8k 100w)",
+        "hostProtocol": "USB4 40Gbps",
+        "displayOutputs": "Single 8K@60Hz / Dual 4K@60Hz",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok Pro 311 USB4 Docking Station (11-in-1 8K 100W)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-dual-usb-c-macbook",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok for Mac",
+      "modelName": "Revodok Dual USB-C Hub for MacBook (6-in-2 4K HDMI)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-dual-usb-c-hub-for-macbook"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-dual-usb-c-macbook.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok dual usb-c hub for macbook (6-in-2 4k hdmi)",
+        "hostProtocol": "Dual USB-C",
+        "displayOutputs": "Single 4K@60Hz HDMI + TB3 Pass-Through",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "None",
+        "cardReader": true,
+        "hostPlatformSupport": "MacBook Pro / MacBook Air"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok Dual USB-C Hub for MacBook (6-in-2 4K HDMI)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-108-usb-c-hub",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Revodok Core",
+      "modelName": "Revodok 108 USB-C Hub (8-in-1 4K@60Hz 10Gbps USB-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-revodok-108-usb-c-hub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-108-usb-c-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok 108 usb-c hub (8-in-1 4k@60hz 10gbps usb-c)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Universal macOS / Windows / Linux"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok 108 USB-C Hub (8-in-1 4K@60Hz 10Gbps USB-C)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-revodok-steam-deck-dock",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Gaming Docks",
+      "modelName": "Revodok Steam Deck & ROG Ally Docking Station (6-in-1 4K 100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-steam-deck-docking-station"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-revodok-steam-deck-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "revodok steam deck & rog ally docking station (6-in-1 4k 100w)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Steam Deck / ROG Ally / Legion Go / iPad"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified docks-hubs model: Revodok Steam Deck & ROG Ally Docking Station (6-in-1 4K 100W)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-tbt4-udz-dock",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Flagship Thunderbolt",
+      "modelName": "TBT4-UDZ Thunderbolt 4 Dock (16-in-1 Quad Display 100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/tbt4-udz"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-tbt4-udz-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "tbt4-udz thunderbolt 4 dock (16-in-1 quad display 100w)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Quad Display (2x HDMI + 2x DisplayPort 4K@60Hz)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: TBT4-UDZ Thunderbolt 4 Dock (16-in-1 Quad Display 100W)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-ud-ultc4k-triple-dock",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Universal Triple Display",
+      "modelName": "UD-ULTC4K USB-C Triple 4K Display Dock (100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/ud-ultc4k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-ud-ultc4k-triple-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "ud-ultc4k usb-c triple 4k display dock (100w pd)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Triple 4K@60Hz (3x HDMI + 3x DP)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: UD-ULTC4K USB-C Triple 4K Display Dock (100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-ud-3900z-dual-dock",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Classic Horizontal",
+      "modelName": "UD-3900Z Dual Monitor Horizontal Docking Station",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/ud-3900z"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-ud-3900z-dual-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "ud-3900z dual monitor horizontal docking station",
+        "hostProtocol": "USB 3.0 / USB-C",
+        "displayOutputs": "Dual Display (HDMI + DVI/VGA 1080p)",
+        "passthroughWatts": 0,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: UD-3900Z Dual Monitor Horizontal Docking Station",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-usbc-7in1-hub",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Portable Multiport",
+      "modelName": "USBC-7IN1 USB-C Multiport Hub with Pass-Through (87W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/usbc-7in1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-usbc-7in1-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "usbc-7in1 usb-c multiport hub with pass-through (87w)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 87,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: USBC-7IN1 USB-C Multiport Hub with Pass-Through (87W)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-usbc-11in1e-dock",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Multiport Stand",
+      "modelName": "USBC-11IN1E USB-C 11-in-1 Multiport Dock with Ethernet (100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/usbc-11in1e"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-usbc-11in1e-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "usbc-11in1e usb-c 11-in-1 multiport dock with ethernet (100w)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Triple Display (2x HDMI + 1x VGA 1080p)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: USBC-11IN1E USB-C 11-in-1 Multiport Dock with Ethernet (100W)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-tbt3-udz-thunderbolt-3",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Dual 4K Series",
+      "modelName": "TBT3-UDZ Thunderbolt 3 and USB-C Dual 4K Dock (96W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/tbt3-udz"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-tbt3-udz-thunderbolt-3.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "tbt3-udz thunderbolt 3 and usb-c dual 4k dock (96w)",
+        "hostProtocol": "Thunderbolt 3",
+        "displayOutputs": "Dual 4K@60Hz (HDMI / DisplayPort)",
+        "passthroughWatts": 96,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: TBT3-UDZ Thunderbolt 3 and USB-C Dual 4K Dock (96W)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-ud-6950pdz-triple-dock",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Triple 4K Series",
+      "modelName": "UD-6950PDZ USB-C Triple Display Dock (DisplayLink 60W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/ud-6950pdz"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-ud-6950pdz-triple-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "ud-6950pdz usb-c triple display dock (displaylink 60w)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Triple 4K@60Hz (3x HDMI + 3x DP)",
+        "passthroughWatts": 60,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: UD-6950PDZ USB-C Triple Display Dock (DisplayLink 60W)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-usbc-4in1-adapter",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Ultra Compact",
+      "modelName": "USBC-4IN1 USB-C Multiport Adapter (4K HDMI 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/usbc-4in1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-usbc-4in1-adapter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "usbc-4in1 usb-c multiport adapter (4k hdmi 100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Universal macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: USBC-4IN1 USB-C Multiport Adapter (4K HDMI 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-tbt4-hub3c-thunderbolt-4-hub",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Thunderbolt Hubs",
+      "modelName": "TBT4-HUB3C Thunderbolt 4 Hub (60W Host 4-Port)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/tbt4-hub3c"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-tbt4-hub3c-thunderbolt-4-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "tbt4-hub3c thunderbolt 4 hub (60w host 4-port)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz or Single 8K@30Hz (TB4 Downstream)",
+        "passthroughWatts": 60,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: TBT4-HUB3C Thunderbolt 4 Hub (60W Host 4-Port)",
+      "status": "staged"
+    },
+    {
+      "id": "plugable-usbc-md101-dual-dock",
+      "canonicalBrand": "Plugable",
+      "displayBrand": "Plugable",
+      "productLine": "Compact Dual Display",
+      "modelName": "USBC-MD101 USB-C Dual 4K Display Dock (Silicon Motion 100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://plugable.com/products/usbc-md101"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://plugable.com/images/products/plugable-usbc-md101-dual-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "plugable",
+        "modelName": "usbc-md101 usb-c dual 4k display dock (silicon motion 100w)",
+        "hostProtocol": "USB-C Silicon Motion",
+        "displayOutputs": "Dual 4K@60Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plugable verified docks-hubs model: USBC-MD101 USB-C Dual 4K Display Dock (Silicon Motion 100W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd5700t-thunderbolt-4",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "SD5700T Series",
+      "modelName": "SD5700T Thunderbolt 4 Dual 4K Docking Station (90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5700t-thunderbolt-4-dual-4k-docking-station-with-90w-pd-winmac/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd5700t-thunderbolt-4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd5700t thunderbolt 4 dual 4k docking station (90w)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz or Single 8K@30Hz",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD5700T Thunderbolt 4 Dual 4K Docking Station (90W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd4849pv-usb-c-triple-dock",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "Driverless Series",
+      "modelName": "SD4849Pv USB-C Triple Video Driverless Dock (100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd4849pv-usb-c-triple-video-driverless-docking-station-100w-pd-dpdp-hdmi-win/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd4849pv-usb-c-triple-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd4849pv usb-c triple video driverless dock (100w)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Triple Display (2x DP + 1x HDMI 1080p / Dual 4K)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS (macOS Mirror)"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD4849Pv USB-C Triple Video Driverless Dock (100W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd4780p-usb-c-hybrid",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "Hybrid Series",
+      "modelName": "SD4780P USB-C & USB 3.0 Dual 4K Hybrid Dock (100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd4780p-usb-c-usb-a-10gbps-dual-4k-hybrid-docking-station-100w-pd-dpdp-hdmihdmi-winmacchrome/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd4780p-usb-c-hybrid.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd4780p usb-c & usb 3.0 dual 4k hybrid dock (100w)",
+        "hostProtocol": "USB-C / USB-A DisplayLink",
+        "displayOutputs": "Dual 4K@60Hz (2x HDMI + 2x DP)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD4780P USB-C & USB 3.0 Dual 4K Hybrid Dock (100W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd1600p-usb-c-mobile-dock",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "Mobile Docks",
+      "modelName": "SD1600P USB-C Mobile Dock with Pass-Through (100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd1600p-usb-c-4k-pass-through-power-mobile-docking-station-with-charging-winmacchromesurface/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd1600p-usb-c-mobile-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd1600p usb-c mobile dock with pass-through (100w)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K HDMI or Full HD VGA",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD1600P USB-C Mobile Dock with Pass-Through (100W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd2600t-thunderbolt-4-nano",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "Nano Series",
+      "modelName": "SD2600T Thunderbolt 4 Dual 4K Nano Dock (65W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd2600t-thunderbolt-4-dual-4k-nano-docking-station-65w-pd-winmac/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd2600t-thunderbolt-4-nano.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd2600t thunderbolt 4 dual 4k nano dock (65w)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz (TB4 Downstream)",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD2600T Thunderbolt 4 Dual 4K Nano Dock (65W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd5780t-thunderbolt-4-enterprise",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "Enterprise Series",
+      "modelName": "SD5780T Thunderbolt 4 Dual 4K Enterprise Dock (96W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5780t-thunderbolt-4-dual-4k-docking-station-96w-pd-winmac/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd5780t-thunderbolt-4-enterprise.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd5780t thunderbolt 4 dual 4k enterprise dock (96w)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz or Single 8K@60Hz",
+        "passthroughWatts": 96,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD5780T Thunderbolt 4 Dual 4K Enterprise Dock (96W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd4750p-usb-c-dual-4k",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "DisplayLink Series",
+      "modelName": "SD4750P USB-C Dual 4K Docking Station (85W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd4750p-usb-c-usb-a-dual-4k-docking-station-85w-pd-winmacchrome/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd4750p-usb-c-dual-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd4750p usb-c dual 4k docking station (85w)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Dual 4K@60Hz (HDMI / DisplayPort)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD4750P USB-C Dual 4K Docking Station (85W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-uh1400p-usb-c-mobile-hub",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "Mobile Hubs",
+      "modelName": "UH1400P USB-C 8-in-1 Driverless Mobile Hub (85W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/uh1400p-usb-c-8-in-1-driverless-mobile-hub-85w-pd/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-uh1400p-usb-c-mobile-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "uh1400p usb-c 8-in-1 driverless mobile hub (85w)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Universal macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: UH1400P USB-C 8-in-1 Driverless Mobile Hub (85W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd1650p-usb-c-ipad-macbook",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "Studio Series",
+      "modelName": "SD1650P USB-C iPad / MacBook Mobile Dock (100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd1650p-usb-c-pass-through-mobile-docking-station-100w-pd/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd1650p-usb-c-ipad-macbook.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd1650p usb-c ipad / macbook mobile dock (100w)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "iPadOS / macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD1650P USB-C iPad / MacBook Mobile Dock (100W)",
+      "status": "staged"
+    },
+    {
+      "id": "kensington-sd5800t-thunderbolt-4-quad",
+      "canonicalBrand": "Kensington",
+      "displayBrand": "Kensington",
+      "productLine": "Enterprise Hybrid",
+      "modelName": "SD5800T Thunderbolt 4 Quad 4K Hybrid Dock (98W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5800t-thunderbolt-4-quad-4k-hybrid-docking-station-98w-pd/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kensington.com/images/products/kensington-sd5800t-thunderbolt-4-quad.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kensington",
+        "modelName": "sd5800t thunderbolt 4 quad 4k hybrid dock (98w)",
+        "hostProtocol": "Thunderbolt 4 / USB4",
+        "displayOutputs": "Quad 4K@60Hz (2x HDMI + 2x DP)",
+        "passthroughWatts": 98,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kensington verified docks-hubs model: SD5800T Thunderbolt 4 Quad 4K Hybrid Dock (98W)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-tb4cdock-thunderbolt-4-quad",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Thunderbolt Enterprise",
+      "modelName": "TB4CDOCK Thunderbolt 4 Dock Quad Display (96W 11-Port)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/tb4cdock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-tb4cdock-thunderbolt-4-quad.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "tb4cdock thunderbolt 4 dock quad display (96w 11-port)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Quad Display (Single 8K@30Hz / Quad 4K@60Hz)",
+        "passthroughWatts": 96,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: TB4CDOCK Thunderbolt 4 Dock Quad Display (96W 11-Port)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-dk30ch2dep-usb-c-triple-dock",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Commercial Multi-Display",
+      "modelName": "DK30CH2DEP USB-C Triple 4K Monitor Dock (100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/dk30ch2dep"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-dk30ch2dep-usb-c-triple-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "dk30ch2dep usb-c triple 4k monitor dock (100w pd)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Triple 4K@60Hz (2x DisplayPort + 1x HDMI)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: DK30CH2DEP USB-C Triple 4K Monitor Dock (100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-dkt30chpd3-usb-c-multiport",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Travel Multiport",
+      "modelName": "DKT30CHPD3 USB-C Multiport Adapter 4K HDMI (100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/dkt30chpd3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-dkt30chpd3-usb-c-multiport.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "dkt30chpd3 usb-c multiport adapter 4k hdmi (100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Universal macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: DKT30CHPD3 USB-C Multiport Adapter 4K HDMI (100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-dk30a2dh-dual-4k-dock",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Universal Hybrid",
+      "modelName": "DK30A2DH Dual 4K DisplayLink USB-C / USB-A Dock (60W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/dk30a2dh"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-dk30a2dh-dual-4k-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "dk30a2dh dual 4k displaylink usb-c / usb-a dock (60w)",
+        "hostProtocol": "USB-C / USB-A DisplayLink",
+        "displayOutputs": "Dual 4K@60Hz (HDMI + DisplayPort)",
+        "passthroughWatts": 60,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: DK30A2DH Dual 4K DisplayLink USB-C / USB-A Dock (60W)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-dkt31chdvw-dual-display-travel",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Travel Dual Video",
+      "modelName": "DKT31CHDVW USB-C Travel Dock Dual Display (100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/dkt31chdvw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-dkt31chdvw-dual-display-travel.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "dkt31chdvw usb-c travel dock dual display (100w pd)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Dual Display (HDMI + DisplayPort 4K@60Hz)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Windows / macOS (macOS SST)"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: DKT31CHDVW USB-C Travel Dock Dual Display (100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-tb3dk2dhv-thunderbolt-3-dock",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Dual 4K Series",
+      "modelName": "TB3DK2DHV Thunderbolt 3 Dual 4K Docking Station (85W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/tb3dk2dhv"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-tb3dk2dhv-thunderbolt-3-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "tb3dk2dhv thunderbolt 3 dual 4k docking station (85w)",
+        "hostProtocol": "Thunderbolt 3",
+        "displayOutputs": "Dual 4K@60Hz (HDMI + DisplayPort)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: TB3DK2DHV Thunderbolt 3 Dual 4K Docking Station (85W)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-dkt30csdhpd-8-in-1-hub",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Multiport Adapters",
+      "modelName": "DKT30CSDHPD 8-in-1 USB-C Multiport Hub (100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/dkt30csdhpd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-dkt30csdhpd-8-in-1-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "dkt30csdhpd 8-in-1 usb-c multiport hub (100w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: DKT30CSDHPD 8-in-1 USB-C Multiport Hub (100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-mst14dp123dp-mst-hub",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "MST Display Hubs",
+      "modelName": "MST14DP123DP USB-C to DisplayPort MST Hub (Triple Monitor)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/audio-video-products/mst14dp123dp"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-mst14dp123dp-mst-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "mst14dp123dp usb-c to displayport mst hub (triple monitor)",
+        "hostProtocol": "USB-C DP-Alt 1.4",
+        "displayOutputs": "Triple DisplayPort 4K Monitors",
+        "passthroughWatts": 0,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows MST"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: MST14DP123DP USB-C to DisplayPort MST Hub (Triple Monitor)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-dkt30chvgpd-multiport",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Commercial Adapters",
+      "modelName": "DKT30CHVGPD USB-C Multiport Adapter VGA/HDMI (60W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/dkt30chvgpd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-dkt30chvgpd-multiport.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "dkt30chvgpd usb-c multiport adapter vga/hdmi (60w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K HDMI or VGA",
+        "passthroughWatts": 60,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: DKT30CHVGPD USB-C Multiport Adapter VGA/HDMI (60W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-tb4hub3a-thunderbolt-4-hub",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Compact Thunderbolt",
+      "modelName": "TB4HUB3A Thunderbolt 4 4-Port Hub (96W Power Delivery)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cards-adapters/tb4hub3a"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-tb4hub3a-thunderbolt-4-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "tb4hub3a thunderbolt 4 4-port hub (96w power delivery)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz or Single 8K@30Hz (TB4 Downstream)",
+        "passthroughWatts": 96,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified docks-hubs model: TB4HUB3A Thunderbolt 4 4-Port Hub (96W Power Delivery)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-wd19s-130w-dock",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Commercial Docking",
+      "modelName": "WD19S 130W USB-C Commercial Docking Station",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-dock-wd19s-130w/apd/210-azbg/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-wd19s-130w-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "wd19s 130w usb-c commercial docking station",
+        "hostProtocol": "USB-C DP-Alt",
+        "displayOutputs": "Triple Display (2x DP + 1x HDMI 4K)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows (130W Dell / 90W Non-Dell) / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: WD19S 130W USB-C Commercial Docking Station",
+      "status": "staged"
+    },
+    {
+      "id": "dell-wd22tb4-thunderbolt-4-dock",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Modular Thunderbolt",
+      "modelName": "WD22TB4 Thunderbolt 4 Modular Dock (130W Dell / 90W Non-Dell)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-thunderbolt-dock-wd22tb4/apd/210-bdqh/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-wd22tb4-thunderbolt-4-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "wd22tb4 thunderbolt 4 modular dock (130w dell / 90w non-dell)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Quad Display (Single 8K / Quad 4K@60Hz)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: WD22TB4 Thunderbolt 4 Modular Dock (130W Dell / 90W Non-Dell)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-hd22q-dual-charge-dock",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Dual Charge Docks",
+      "modelName": "HD22Q Dual Charge Dock with Qi Wireless Charging (90W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-dual-charge-dock-hd22q/apd/210-bdes/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-hd22q-dual-charge-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "hd22q dual charge dock with qi wireless charging (90w pd)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Dual Display (HDMI 4K@60Hz + DP 8K@30Hz)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: HD22Q Dual Charge Dock with Qi Wireless Charging (90W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-da310-usb-c-mobile-adapter",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Mobile Adapter Puck",
+      "modelName": "DA310 USB-C 7-in-1 Mobile Adapter (Compact Puck)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-usb-c-mobile-adapter-da310/apd/470-aetl/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-da310-usb-c-mobile-adapter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "da310 usb-c 7-in-1 mobile adapter (compact puck)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Single 4K@60Hz (HDMI / DisplayPort / USB-C / VGA)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Universal Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: DA310 USB-C 7-in-1 Mobile Adapter (Compact Puck)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-ud22-universal-dual-dock",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Universal DisplayLink",
+      "modelName": "UD22 Universal Dual 4K Docking Station (96W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-universal-dock-ud22/apd/210-bexr/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-ud22-universal-dual-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "ud22 universal dual 4k docking station (96w pd)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Quad Display (2x DP + 1x HDMI 4K@60Hz)",
+        "passthroughWatts": 96,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: UD22 Universal Dual 4K Docking Station (96W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-wd19tbs-thunderbolt-3-dock",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Commercial Thunderbolt",
+      "modelName": "WD19TBS Thunderbolt 3 Commercial Dock (130W Dell)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-thunderbolt-dock-wd19tbs/apd/210-azdm/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-wd19tbs-thunderbolt-3-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "wd19tbs thunderbolt 3 commercial dock (130w dell)",
+        "hostProtocol": "Thunderbolt 3",
+        "displayOutputs": "Triple Display (Dual 4K@60Hz + Single 4K@30Hz)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: WD19TBS Thunderbolt 3 Commercial Dock (130W Dell)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-da305-usb-c-6in1-adapter",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Mobile Adapter",
+      "modelName": "DA305 USB-C 6-in-1 Multiport Adapter (90W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-6-in-1-usb-c-multiport-adapter-da305/apd/470-afku/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-da305-usb-c-6in1-adapter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "da305 usb-c 6-in-1 multiport adapter (90w pd)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Single 4K@60Hz (HDMI / DisplayPort)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Universal Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: DA305 USB-C 6-in-1 Multiport Adapter (90W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-wd19dcs-dual-usb-c-dock",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Performance Workstation",
+      "modelName": "WD19DCS Dual USB-C Performance Dock (210W Dell Workstation)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-performance-dock-wd19dcs/apd/210-azbm/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-wd19dcs-dual-usb-c-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "wd19dcs dual usb-c performance dock (210w dell workstation)",
+        "hostProtocol": "Dual USB-C DP-Alt",
+        "displayOutputs": "Triple 4K@60Hz (2x DP + 1x HDMI)",
+        "passthroughWatts": 210,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Dell Precision / XPS / Latitude"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: WD19DCS Dual USB-C Performance Dock (210W Dell Workstation)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-mh3021p-speakerphone-adapter",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Conferencing Docks",
+      "modelName": "MH3021P Speakerphone USB-C Multiport Adapter (90W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-speakerphone-with-multiport-adapter-mh3021p/apd/520-aaru/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-mh3021p-speakerphone-adapter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "mh3021p speakerphone usb-c multiport adapter (90w pd)",
+        "hostProtocol": "USB-C 10Gbps",
+        "displayOutputs": "Single 4K@60Hz HDMI",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS Teams/Zoom Certified"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: MH3021P Speakerphone USB-C Multiport Adapter (90W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-d3100-usb-3-0-dock",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Classic DisplayLink",
+      "modelName": "D3100 USB 3.0 Triple Display Docking Station",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-docking-station-usb-30-d3100/apd/452-bbpg/docks-docking-stations"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-d3100-usb-3-0-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "d3100 usb 3.0 triple display docking station",
+        "hostProtocol": "USB 3.0 Type-A / Type-C",
+        "displayOutputs": "Triple Display (Single 4K + Dual 1080p)",
+        "passthroughWatts": 0,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified docks-hubs model: D3100 USB 3.0 Triple Display Docking Station",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-thinkpad-universal-tb4-dock",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "ThinkPad Universal",
+      "modelName": "ThinkPad Universal Thunderbolt 4 Dock (100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-thunderbolt/40b00135us"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-universal-tb4-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "thinkpad universal thunderbolt 4 dock (100w pd)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Quad Display (Single 8K@30Hz / Triple 4K@60Hz)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS / Linux"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: ThinkPad Universal Thunderbolt 4 Dock (100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-thinkpad-universal-usb-c-v2",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "ThinkPad Universal",
+      "modelName": "ThinkPad Universal USB-C Dock v2 (90W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-usb-c/40ay0090us"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-universal-usb-c-v2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "thinkpad universal usb-c dock v2 (90w pd)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Triple Display (2x DP + 1x HDMI 4K)",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: ThinkPad Universal USB-C Dock v2 (90W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-thinkpad-hybrid-usb-c-dock",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "ThinkPad Hybrid",
+      "modelName": "ThinkPad Hybrid USB-C with USB-A Dock (135W AC 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-usb-c/40af0135us"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-hybrid-usb-c-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "thinkpad hybrid usb-c with usb-a dock (135w ac 100w pd)",
+        "hostProtocol": "USB-C / USB-A DisplayLink",
+        "displayOutputs": "Dual 4K@60Hz (2x HDMI + 2x DP)",
+        "passthroughWatts": 60,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: ThinkPad Hybrid USB-C with USB-A Dock (135W AC 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-usb-c-7-in-1-hub",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Everyday Multiport",
+      "modelName": "Lenovo USB-C 7-in-1 Hub (4K HDMI 100W PD Aluminum)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-usb-c/4x90v55523"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-usb-c-7-in-1-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo usb-c 7-in-1 hub (4k hdmi 100w pd aluminum)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "None",
+        "cardReader": true,
+        "hostPlatformSupport": "Universal Windows / macOS / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: Lenovo USB-C 7-in-1 Hub (4K HDMI 100W PD Aluminum)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-thinkpad-tb3-workstation-dock",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "ThinkPad Workstation",
+      "modelName": "ThinkPad Thunderbolt 3 Workstation Dock Gen 2 (230W/170W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-thunderbolt/40any230us"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-tb3-workstation-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "thinkpad thunderbolt 3 workstation dock gen 2 (230w/170w)",
+        "hostProtocol": "Thunderbolt 3 Combo Cable",
+        "displayOutputs": "Triple 4K@60Hz",
+        "passthroughWatts": 170,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Lenovo ThinkPad P-Series / T-Series"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: ThinkPad Thunderbolt 3 Workstation Dock Gen 2 (230W/170W)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-usb-c-dual-display-travel-dock",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Travel Series",
+      "modelName": "Lenovo USB-C Dual Display Travel Dock (65W PD Pass-Through)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-usb-c/40b90065us"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-usb-c-dual-display-travel-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo usb-c dual display travel dock (65w pd pass-through)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Dual Display (HDMI + DisplayPort 4K@30Hz)",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: Lenovo USB-C Dual Display Travel Dock (65W PD Pass-Through)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-go-usb-c-wireless-charging-kit",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Lenovo Go Workspace",
+      "modelName": "Lenovo Go USB-C Wireless Charging Hub & Mat (65W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/chargers-and-batteries/chargers/4x21b84024"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-go-usb-c-wireless-charging-kit.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo go usb-c wireless charging hub & mat (65w)",
+        "hostProtocol": "USB-C Wireless Induction",
+        "displayOutputs": "None (Charging Hub)",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Universal Windows / macOS Laptops"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: Lenovo Go USB-C Wireless Charging Hub & Mat (65W)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-thinkpad-smart-usb-c-dock",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "ThinkPad Smart Cloud",
+      "modelName": "ThinkPad Universal USB-C Smart Dock (Cloud Managed 100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-usb-c/40b20135us"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-smart-usb-c-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "thinkpad universal usb-c smart dock (cloud managed 100w)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Triple Display (2x DP + 1x HDMI 4K)",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS with Cloud Telemetry"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: ThinkPad Universal USB-C Smart Dock (Cloud Managed 100W)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-powered-usb-c-travel-hub",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Travel Series",
+      "modelName": "Lenovo Powered USB-C Travel Hub (Slim Wrap-Around Cable)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-usb-c/4x90s92381"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-powered-usb-c-travel-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo powered usb-c travel hub (slim wrap-around cable)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K HDMI or VGA",
+        "passthroughWatts": 45,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: Lenovo Powered USB-C Travel Hub (Slim Wrap-Around Cable)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-500-usb-c-universal-dock",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Lenovo 500 Series",
+      "modelName": "Lenovo 500 USB-C Universal Dock (100W PD Dual 4K)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/docking-stations/docking-stations-usb-c/40b10135us"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-500-usb-c-universal-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo 500 usb-c universal dock (100w pd dual 4k)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Dual 4K@60Hz (HDMI + DisplayPort)",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified docks-hubs model: Lenovo 500 USB-C Universal Dock (100W PD Dual 4K)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-thunderbolt-dock-120w-g4",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "HP Thunderbolt G4",
+      "modelName": "HP Thunderbolt Dock 120W G4 with Sure Start Security",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-thunderbolt-dock-120w-g4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-thunderbolt-dock-120w-g4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp thunderbolt dock 120w g4 with sure start security",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Quad Display (Single 8K / Triple 4K@60Hz)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP Thunderbolt Dock 120W G4 with Sure Start Security",
+      "status": "staged"
+    },
+    {
+      "id": "hp-usb-c-dock-g5",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "HP Commercial G5",
+      "modelName": "HP USB-C Dock G5 (Dual 4K 100W Power Delivery)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-usb-c-dock-g5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-usb-c-dock-g5.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp usb-c dock g5 (dual 4k 100w power delivery)",
+        "hostProtocol": "USB-C 5Gbps DP-Alt",
+        "displayOutputs": "Triple Display (2x DP + 1x HDMI 1080p / Dual 4K)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP USB-C Dock G5 (Dual 4K 100W Power Delivery)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-universal-usb-c-multiport-hub",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "Multiport Travel",
+      "modelName": "HP Universal USB-C Multiport Hub (4K HDMI 65W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-universal-usb-c-multiport-hub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-universal-usb-c-multiport-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp universal usb-c multiport hub (4k hdmi 65w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "Universal Windows / macOS / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP Universal USB-C Multiport Hub (4K HDMI 65W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-thunderbolt-dock-280w-g4-combo",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "HP Workstation G4",
+      "modelName": "HP Thunderbolt Dock 280W G4 with Combo Cable (ZBook Workstation)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-thunderbolt-dock-280w-g4-with-combo-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-thunderbolt-dock-280w-g4-combo.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp thunderbolt dock 280w g4 with combo cable (zbook workstation)",
+        "hostProtocol": "Thunderbolt 4 Combo",
+        "displayOutputs": "Quad 4K@60Hz / Single 8K@60Hz",
+        "passthroughWatts": 230,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "HP ZBook / High-Power Workstations"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP Thunderbolt Dock 280W G4 with Combo Cable (ZBook Workstation)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-usb-c-a-universal-dock-g2",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "DisplayLink Universal",
+      "modelName": "HP USB-C/A Universal Dock G2 (DisplayLink 100W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-usb-c-a-universal-dock-g2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-usb-c-a-universal-dock-g2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp usb-c/a universal dock g2 (displaylink 100w pd)",
+        "hostProtocol": "USB-C / USB-A DisplayLink",
+        "displayOutputs": "Dual 4K@60Hz (2x DisplayPort + 1x HDMI)",
+        "passthroughWatts": 100,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / ChromeOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP USB-C/A Universal Dock G2 (DisplayLink 100W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-usb-c-travel-hub-g2",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "Travel Hubs",
+      "modelName": "HP USB-C Travel Hub G2 (Pass-Through 65W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-usb-c-travel-hub-g2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-usb-c-travel-hub-g2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp usb-c travel hub g2 (pass-through 65w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K HDMI or VGA",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP USB-C Travel Hub G2 (Pass-Through 65W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-elite-usb-c-docking-station",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "Elite Series",
+      "modelName": "HP Elite USB-C Docking Station (90W PD Dual Monitor)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-elite-usb-c-docking-station"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-elite-usb-c-docking-station.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp elite usb-c docking station (90w pd dual monitor)",
+        "hostProtocol": "USB-C DP-Alt",
+        "displayOutputs": "Dual Display (HDMI + DisplayPort)",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "HP EliteBook / ProBook"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP Elite USB-C Docking Station (90W PD Dual Monitor)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-usb-c-essential-power-display-hub",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "Essential Series",
+      "modelName": "HP USB-C Essential Power/Display Hub (65W PD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-usb-c-essential-hub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-usb-c-essential-power-display-hub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp usb-c essential power/display hub (65w pd)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 65,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP USB-C Essential Power/Display Hub (65W PD)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-dual-displayport-usb-c-mini-dock",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "Mini Docks",
+      "modelName": "HP Dual DisplayPort USB-C Mini Dock (Dual 4K)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-usb-c-mini-dock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-dual-displayport-usb-c-mini-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp dual displayport usb-c mini dock (dual 4k)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Dual 4K@60Hz DisplayPort",
+        "passthroughWatts": 60,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP Dual DisplayPort USB-C Mini Dock (Dual 4K)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-usb-c-to-multi-port-hub-compact",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "Everyday Multiport",
+      "modelName": "HP USB-C to Multi-Port Hub (Compact HDMI + USB-A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-usb-c-multi-port-hub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-usb-c-to-multi-port-hub-compact.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp usb-c to multi-port hub (compact hdmi + usb-a)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 45,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "Universal Windows / macOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified docks-hubs model: HP USB-C to Multi-Port Hub (Compact HDMI + USB-A)",
+      "status": "staged"
+    },
+    {
+      "id": "caldigit-ts4-thunderbolt-4",
+      "canonicalBrand": "CalDigit",
+      "displayBrand": "CalDigit",
+      "productLine": "Thunderbolt Station",
+      "modelName": "TS4 Thunderbolt 4 Station (18 Ports 98W Power Delivery)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.caldigit.com/thunderbolt-station-4/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.caldigit.com/images/products/caldigit-ts4-thunderbolt-4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "caldigit",
+        "modelName": "ts4 thunderbolt 4 station (18 ports 98w power delivery)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz or Single 8K@60Hz (DisplayPort + TB4)",
+        "passthroughWatts": 98,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "CalDigit verified docks-hubs model: TS4 Thunderbolt 4 Station (18 Ports 98W Power Delivery)",
+      "status": "staged"
+    },
+    {
+      "id": "caldigit-ts3-plus-thunderbolt-3",
+      "canonicalBrand": "CalDigit",
+      "displayBrand": "CalDigit",
+      "productLine": "Thunderbolt Station",
+      "modelName": "TS3 Plus Thunderbolt 3 Dock (15 Ports 87W Power Delivery)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.caldigit.com/ts3-plus/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.caldigit.com/images/products/caldigit-ts3-plus-thunderbolt-3.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "caldigit",
+        "modelName": "ts3 plus thunderbolt 3 dock (15 ports 87w power delivery)",
+        "hostProtocol": "Thunderbolt 3",
+        "displayOutputs": "Dual 4K@60Hz (DisplayPort + TB3)",
+        "passthroughWatts": 87,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "CalDigit verified docks-hubs model: TS3 Plus Thunderbolt 3 Dock (15 Ports 87W Power Delivery)",
+      "status": "staged"
+    },
+    {
+      "id": "caldigit-element-hub-thunderbolt-4",
+      "canonicalBrand": "CalDigit",
+      "displayBrand": "CalDigit",
+      "productLine": "Element Series",
+      "modelName": "Element Hub Thunderbolt 4 / USB4 (4 TB4 + 4 USB-A 60W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.caldigit.com/thunderbolt-4-element-hub/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.caldigit.com/images/products/caldigit-element-hub-thunderbolt-4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "caldigit",
+        "modelName": "element hub thunderbolt 4 / usb4 (4 tb4 + 4 usb-a 60w)",
+        "hostProtocol": "Thunderbolt 4 / USB4",
+        "displayOutputs": "Dual 4K@60Hz or Single 8K@30Hz (TB4 Downstream)",
+        "passthroughWatts": 60,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "CalDigit verified docks-hubs model: Element Hub Thunderbolt 4 / USB4 (4 TB4 + 4 USB-A 60W)",
+      "status": "staged"
+    },
+    {
+      "id": "caldigit-soho-dock-usb-c-gen2",
+      "canonicalBrand": "CalDigit",
+      "displayBrand": "CalDigit",
+      "productLine": "SOHO Series",
+      "modelName": "SOHO Dock USB-C Gen 2 (Dual Display 4K60 10Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.caldigit.com/usb-c-soho-dock/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.caldigit.com/images/products/caldigit-soho-dock-usb-c-gen2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "caldigit",
+        "modelName": "soho dock usb-c gen 2 (dual display 4k60 10gbps)",
+        "hostProtocol": "USB-C 10Gbps DP-Alt",
+        "displayOutputs": "Dual 4K@60Hz (HDMI + DisplayPort)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "None",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows (macOS Dual Mirror)"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "CalDigit verified docks-hubs model: SOHO Dock USB-C Gen 2 (Dual Display 4K60 10Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "caldigit-usb-c-pro-dock",
+      "canonicalBrand": "CalDigit",
+      "displayBrand": "CalDigit",
+      "productLine": "Pro Dock Series",
+      "modelName": "USB-C Pro Dock (Dual Display 85W TB3 & USB-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.caldigit.com/usb-c-pro-dock/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.caldigit.com/images/products/caldigit-usb-c-pro-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "caldigit",
+        "modelName": "usb-c pro dock (dual display 85w tb3 & usb-c)",
+        "hostProtocol": "Thunderbolt 3 / USB-C",
+        "displayOutputs": "Dual 4K@60Hz (2x DisplayPort)",
+        "passthroughWatts": 85,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "CalDigit verified docks-hubs model: USB-C Pro Dock (Dual Display 85W TB3 & USB-C)",
+      "status": "staged"
+    },
+    {
+      "id": "owc-thunderbolt-4-dock",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "Thunderbolt Docks",
+      "modelName": "Thunderbolt 4 Dock (11-Port 96W Power Delivery)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/thunderbolt-dock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/products/owc-thunderbolt-4-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "thunderbolt 4 dock (11-port 96w power delivery)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz or Single 8K@30Hz (3x TB4 Downstream)",
+        "passthroughWatts": 96,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC verified docks-hubs model: Thunderbolt 4 Dock (11-Port 96W Power Delivery)",
+      "status": "staged"
+    },
+    {
+      "id": "owc-thunderbolt-go-dock",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "Thunderbolt Go",
+      "modelName": "Thunderbolt Go Dock (Integrated Power Supply 90W 11-Port)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/thunderbolt-go-dock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/products/owc-thunderbolt-go-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "thunderbolt go dock (integrated power supply 90w 11-port)",
+        "hostProtocol": "Thunderbolt 4",
+        "displayOutputs": "Dual 4K@60Hz (HDMI + TB4 Downstream)",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "2.5Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC verified docks-hubs model: Thunderbolt Go Dock (Integrated Power Supply 90W 11-Port)",
+      "status": "staged"
+    },
+    {
+      "id": "owc-usb-c-dual-hdmi-4k-dock",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "DisplayLink Solutions",
+      "modelName": "USB-C Dual HDMI 4K Display Adapter Dock (DisplayLink 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/dual-hdmi-4k-display-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/products/owc-usb-c-dual-hdmi-4k-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "usb-c dual hdmi 4k display adapter dock (displaylink 90w)",
+        "hostProtocol": "USB-C DisplayLink",
+        "displayOutputs": "Dual 4K@60Hz HDMI",
+        "passthroughWatts": 90,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS M1/M2/M3 / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC verified docks-hubs model: USB-C Dual HDMI 4K Display Adapter Dock (DisplayLink 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "owc-thunderbolt-mini-dock",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "Travel Solutions",
+      "modelName": "Thunderbolt mini Dock (Dual 4K HDMI Bus-Powered)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/thunderbolt-3-mini-dock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/products/owc-thunderbolt-mini-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "thunderbolt mini dock (dual 4k hdmi bus-powered)",
+        "hostProtocol": "Thunderbolt 3",
+        "displayOutputs": "Dual 4K@60Hz HDMI",
+        "passthroughWatts": 0,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC verified docks-hubs model: Thunderbolt mini Dock (Dual 4K HDMI Bus-Powered)",
+      "status": "staged"
+    },
+    {
+      "id": "owc-usb-c-travel-dock-e",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "Travel Solutions",
+      "modelName": "USB-C Travel Dock E (6-Port 100W Pass-Through Gigabit)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/usb-c-travel-dock-e"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/products/owc-usb-c-travel-dock-e.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "usb-c travel dock e (6-port 100w pass-through gigabit)",
+        "hostProtocol": "USB-C 5Gbps",
+        "displayOutputs": "Single 4K@30Hz HDMI",
+        "passthroughWatts": 92,
+        "ethernetSpeed": "1Gbps",
+        "cardReader": true,
+        "hostPlatformSupport": "macOS / Windows / iPadOS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC verified docks-hubs model: USB-C Travel Dock E (6-Port 100W Pass-Through Gigabit)",
+      "status": "staged"
+    },
+    {
+      "id": "owc-express-4m2-multi-enclosure-dock",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "Storage Docks",
+      "modelName": "OWC Express 4M2 Multi-Enclosure NVMe Thunderbolt Dock",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/express-4m2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/products/owc-express-4m2-multi-enclosure-dock.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "owc express 4m2 multi-enclosure nvme thunderbolt dock",
+        "hostProtocol": "Thunderbolt 3",
+        "displayOutputs": "Single 4K DisplayPort",
+        "passthroughWatts": 0,
+        "ethernetSpeed": "None",
+        "cardReader": false,
+        "hostPlatformSupport": "macOS / Windows 4x NVMe M.2 Slots"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC verified docks-hubs model: OWC Express 4M2 Multi-Enclosure NVMe Thunderbolt Dock",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "CalDigit",
+      "leafKey": "docks-hubs",
+      "reason": "CalDigit specializes in premium Thunderbolt stations and portable USB-C hubs with 5 flagship models.",
+      "officialSourceUrl": "https://www.caldigit.com/docks/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "TS4 Thunderbolt 4 Station (18 Ports 98W Power Delivery)",
+        "TS3 Plus Thunderbolt 3 Dock (15 Ports 87W Power Delivery)",
+        "Element Hub Thunderbolt 4 / USB4 (4 TB4 + 4 USB-A 60W)",
+        "SOHO Dock USB-C Gen 2 (Dual Display 4K60 10Gbps)",
+        "USB-C Pro Dock (Dual Display 85W TB3 & USB-C)"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "OWC",
+      "leafKey": "docks-hubs",
+      "reason": "Other World Computing manufactures 6 specialized Thunderbolt and USB-C connectivity docks for Mac and PC creators.",
+      "officialSourceUrl": "https://www.owc.com/solutions/docks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Thunderbolt 4 Dock (11-Port 96W Power Delivery)",
+        "Thunderbolt Go Dock (Integrated Power Supply 90W 11-Port)",
+        "USB-C Dual HDMI 4K Display Adapter Dock (DisplayLink 90W)",
+        "Thunderbolt mini Dock (Dual 4K HDMI Bus-Powered)",
+        "USB-C Travel Dock E (6-Port 100W Pass-Through Gigabit)",
+        "OWC Express 4M2 Multi-Enclosure NVMe Thunderbolt Dock"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

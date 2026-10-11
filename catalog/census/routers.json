@@ -1,0 +1,3606 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "routers",
+  "displayName": "Routers & Mesh Networking",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "tp-link-archer-be800",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Archer Wi-Fi 7",
+      "modelName": "Archer BE800 (BE19000 Tri-Band Wi-Fi 7 Router Dual 10G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/home-networking/wifi-router/archer-be800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-archer-be800.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "archer be800 (be19000 tri-band wi-fi 7 router dual 10g)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 19000,
+        "ethernetPorts": "2x 10Gbps + 4x 2.5Gbps LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Archer BE800 (BE19000 Tri-Band Wi-Fi 7 Router Dual 10G)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-archer-axe75",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Archer Wi-Fi 6E",
+      "modelName": "Archer AXE75 (AXE5400 Tri-Band Gigabit Wi-Fi 6E Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/home-networking/wifi-router/archer-axe75/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-archer-axe75.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "archer axe75 (axe5400 tri-band gigabit wi-fi 6e router)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Archer AXE75 (AXE5400 Tri-Band Gigabit Wi-Fi 6E Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-archer-ax73",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Archer Wi-Fi 6",
+      "modelName": "Archer AX73 (AX5400 Dual-Band Gigabit Wi-Fi 6 Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/home-networking/wifi-router/archer-ax73/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-archer-ax73.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "archer ax73 (ax5400 dual-band gigabit wi-fi 6 router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Archer AX73 (AX5400 Dual-Band Gigabit Wi-Fi 6 Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-archer-ax55",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Archer Wi-Fi 6",
+      "modelName": "Archer AX55 (AX3000 Dual-Band Gigabit Wi-Fi 6 Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/home-networking/wifi-router/archer-ax55/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-archer-ax55.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "archer ax55 (ax3000 dual-band gigabit wi-fi 6 router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Archer AX55 (AX3000 Dual-Band Gigabit Wi-Fi 6 Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-archer-ax12",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Archer Wi-Fi 6",
+      "modelName": "Archer AX12 (AX1500 Dual-Band Wi-Fi 6 Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/home-networking/wifi-router/archer-ax12/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-archer-ax12.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "archer ax12 (ax1500 dual-band wi-fi 6 router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1500,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Archer AX12 (AX1500 Dual-Band Wi-Fi 6 Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-archer-c6",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Archer Wi-Fi 5",
+      "modelName": "Archer C6 (AC1200 Wireless MU-MIMO Gigabit Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/home-networking/wifi-router/archer-c6/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-archer-c6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "archer c6 (ac1200 wireless mu-mimo gigabit router)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1200,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Archer C6 (AC1200 Wireless MU-MIMO Gigabit Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-deco-be85",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Deco Mesh Wi-Fi 7",
+      "modelName": "Deco BE85 (BE22000 Tri-Band Whole Home Mesh Wi-Fi 7 System)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be85/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-deco-be85.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "deco be85 (be22000 tri-band whole home mesh wi-fi 7 system)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 22000,
+        "ethernetPorts": "2x 10Gbps + 2x 2.5Gbps Ports per node",
+        "meshCapable": true,
+        "coverageSqFt": 7600
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Deco BE85 (BE22000 Tri-Band Whole Home Mesh Wi-Fi 7 System)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-deco-xe75-pro",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Deco Mesh Wi-Fi 6E",
+      "modelName": "Deco XE75 Pro (AXE5400 Tri-Band Mesh System 2.5G Port)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-xe75-pro/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-deco-xe75-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "deco xe75 pro (axe5400 tri-band mesh system 2.5g port)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x 2.5Gbps + 2x Gigabit per node",
+        "meshCapable": true,
+        "coverageSqFt": 7200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Deco XE75 Pro (AXE5400 Tri-Band Mesh System 2.5G Port)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-deco-x50",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Deco Mesh Wi-Fi 6",
+      "modelName": "Deco X50 (AX3000 Whole Home Mesh Wi-Fi 6 System)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-x50/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-deco-x50.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "deco x50 (ax3000 whole home mesh wi-fi 6 system)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "3x Gigabit Ports per node",
+        "meshCapable": true,
+        "coverageSqFt": 6500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Deco X50 (AX3000 Whole Home Mesh Wi-Fi 6 System)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-deco-x20",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Deco Mesh Wi-Fi 6",
+      "modelName": "Deco X20 (AX1800 Whole Home Mesh Wi-Fi 6 System)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-x20/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-deco-x20.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "deco x20 (ax1800 whole home mesh wi-fi 6 system)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "2x Gigabit Ports per node",
+        "meshCapable": true,
+        "coverageSqFt": 5800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Deco X20 (AX1800 Whole Home Mesh Wi-Fi 6 System)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-archer-ge800",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Archer Gaming",
+      "modelName": "Archer GE800 (BE19000 Tri-Band Wi-Fi 7 Gaming Router Dual 10G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/home-networking/wifi-router/archer-ge800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-archer-ge800.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "archer ge800 (be19000 tri-band wi-fi 7 gaming router dual 10g)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 19000,
+        "ethernetPorts": "2x 10Gbps + 4x 2.5Gbps Game Ports",
+        "meshCapable": true,
+        "coverageSqFt": 3500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Archer GE800 (BE19000 Tri-Band Wi-Fi 7 Gaming Router Dual 10G)",
+      "status": "staged"
+    },
+    {
+      "id": "tp-link-archer-gx90",
+      "canonicalBrand": "TP-Link",
+      "displayBrand": "TP-Link",
+      "productLine": "Archer Gaming",
+      "modelName": "Archer GX90 (AX6600 Tri-Band Wi-Fi 6 Gaming Router 2.5G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tp-link.com/us/home-networking/wifi-router/archer-gx90/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tp-link.com/images/products/tp-link-archer-gx90.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tp-link",
+        "modelName": "archer gx90 (ax6600 tri-band wi-fi 6 gaming router 2.5g)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (Gaming Band 4.8Gbps)",
+        "maxSpeedMbps": 6600,
+        "ethernetPorts": "1x 2.5Gbps WAN/LAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TP-Link verified routers model: Archer GX90 (AX6600 Tri-Band Wi-Fi 6 Gaming Router 2.5G)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-rapture-gt-be98-pro",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG Gaming Flagship",
+      "modelName": "ROG Rapture GT-BE98 Pro (Quad-Band Wi-Fi 7 BE30000 Dual 10G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/networking/rog-rapture-gt-be98-pro/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://rog.asus.com/images/products/asus-rog-rapture-gt-be98-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog rapture gt-be98 pro (quad-band wi-fi 7 be30000 dual 10g)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Quad-Band (2.4GHz / 5GHz-1 / 5GHz-2 / 6GHz)",
+        "maxSpeedMbps": 30000,
+        "ethernetPorts": "2x 10Gbps + 4x 2.5Gbps LAN",
+        "meshCapable": true,
+        "coverageSqFt": 4000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: ROG Rapture GT-BE98 Pro (Quad-Band Wi-Fi 7 BE30000 Dual 10G)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-rapture-gt6",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG Mesh Gaming",
+      "modelName": "ROG Rapture GT6 (Tri-Band Wi-Fi 6 Mesh System AX10000 2.5G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/networking/rog-rapture-gt6-model/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://rog.asus.com/images/products/asus-rog-rapture-gt6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog rapture gt6 (tri-band wi-fi 6 mesh system ax10000 2.5g)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz-1 / 5GHz-2)",
+        "maxSpeedMbps": 10000,
+        "ethernetPorts": "1x 2.5Gbps WAN + 3x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 5800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: ROG Rapture GT6 (Tri-Band Wi-Fi 6 Mesh System AX10000 2.5G)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rt-be96u",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ASUS Wi-Fi 7",
+      "modelName": "RT-BE96U (BE19000 Tri-Band Wi-Fi 7 Router Dual 10G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-be96u/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-rt-be96u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rt-be96u (be19000 tri-band wi-fi 7 router dual 10g)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 19000,
+        "ethernetPorts": "2x 10Gbps + 4x 2.5Gbps Ports",
+        "meshCapable": true,
+        "coverageSqFt": 3500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: RT-BE96U (BE19000 Tri-Band Wi-Fi 7 Router Dual 10G)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rt-ax88u-pro",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ASUS Performance",
+      "modelName": "RT-AX88U Pro (Dual-Band Wi-Fi 6 AX6000 Dual 2.5G Ports)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax88u-pro/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-rt-ax88u-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rt-ax88u pro (dual-band wi-fi 6 ax6000 dual 2.5g ports)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 6000,
+        "ethernetPorts": "2x 2.5Gbps + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: RT-AX88U Pro (Dual-Band Wi-Fi 6 AX6000 Dual 2.5G Ports)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rt-ax86u-pro",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ASUS Gaming",
+      "modelName": "RT-AX86U Pro (Dual-Band Wi-Fi 6 AX5700 Mobile Game Mode)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax86u-pro/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-rt-ax86u-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rt-ax86u pro (dual-band wi-fi 6 ax5700 mobile game mode)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 5700,
+        "ethernetPorts": "1x 2.5Gbps Port + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: RT-AX86U Pro (Dual-Band Wi-Fi 6 AX5700 Mobile Game Mode)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rt-ax58u",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ASUS Everyday",
+      "modelName": "RT-AX58U (AX3000 Dual Band Wi-Fi 6 AiProtection Pro)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax58u/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-rt-ax58u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rt-ax58u (ax3000 dual band wi-fi 6 aiprotection pro)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: RT-AX58U (AX3000 Dual Band Wi-Fi 6 AiProtection Pro)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rt-ax53u",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ASUS Essential",
+      "modelName": "RT-AX53U (AX1800 Dual Band Wi-Fi 6 Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax53u/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-rt-ax53u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rt-ax53u (ax1800 dual band wi-fi 6 router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: RT-AX53U (AX1800 Dual Band Wi-Fi 6 Router)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rt-ac68u",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ASUS Classic",
+      "modelName": "RT-AC68U (Dual-Band Wi-Fi 5 AC1900 AiMesh Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ac68u/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-rt-ac68u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rt-ac68u (dual-band wi-fi 5 ac1900 aimesh router)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1900,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 1800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: RT-AC68U (Dual-Band Wi-Fi 5 AC1900 AiMesh Router)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-zenwifi-bq16",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ZenWiFi Mesh Wi-Fi 7",
+      "modelName": "ZenWiFi BQ16 (Quad-Band Wi-Fi 7 Mesh System BE25000 Dual 10G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/whole-home-mesh-wifi-system/zenwifi-wifi-systems/asus-zenwifi-bq16/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-zenwifi-bq16.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "zenwifi bq16 (quad-band wi-fi 7 mesh system be25000 dual 10g)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Quad-Band (2.4GHz / 5GHz-1 / 5GHz-2 / 6GHz)",
+        "maxSpeedMbps": 25000,
+        "ethernetPorts": "1x 10Gbps WAN + 1x 10Gbps LAN + 3x 2.5G",
+        "meshCapable": true,
+        "coverageSqFt": 8000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: ZenWiFi BQ16 (Quad-Band Wi-Fi 7 Mesh System BE25000 Dual 10G)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-zenwifi-xt9",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ZenWiFi Mesh Wi-Fi 6",
+      "modelName": "ZenWiFi XT9 (Tri-Band Wi-Fi 6 Mesh System AX7800 2.5G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/whole-home-mesh-wifi-system/zenwifi-wifi-systems/asus-zenwifi-xt9/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-zenwifi-xt9.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "zenwifi xt9 (tri-band wi-fi 6 mesh system ax7800 2.5g)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz-1 / 5GHz-2)",
+        "maxSpeedMbps": 7800,
+        "ethernetPorts": "1x 2.5Gbps WAN + 3x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 5700
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: ZenWiFi XT9 (Tri-Band Wi-Fi 6 Mesh System AX7800 2.5G)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-zenwifi-xd5",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ZenWiFi Mesh Wi-Fi 6",
+      "modelName": "ZenWiFi XD5 (Dual-Band Wi-Fi 6 Mesh System AX3000)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/whole-home-mesh-wifi-system/zenwifi-wifi-systems/asus-zenwifi-xd5/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-zenwifi-xd5.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "zenwifi xd5 (dual-band wi-fi 6 mesh system ax3000)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN/LAN + 1x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 4800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: ZenWiFi XD5 (Dual-Band Wi-Fi 6 Mesh System AX3000)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-tuf-gaming-ax4200",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "TUF Gaming",
+      "modelName": "TUF Gaming AX4200 (Dual-Band Wi-Fi 6 Gaming Router 2.5G Port)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/networking-iot-servers/wifi-routers/asus-gaming-routers/tuf-gaming-ax4200/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-tuf-gaming-ax4200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "tuf gaming ax4200 (dual-band wi-fi 6 gaming router 2.5g port)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 4200,
+        "ethernetPorts": "1x 2.5Gbps WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified routers model: TUF Gaming AX4200 (Dual-Band Wi-Fi 6 Gaming Router 2.5G Port)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-rs700s",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Wi-Fi 7",
+      "modelName": "Nighthawk RS700S (Tri-Band Wi-Fi 7 Router BE19000 10G Port)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/routers/rs700s/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-rs700s.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk rs700s (tri-band wi-fi 7 router be19000 10g port)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 19000,
+        "ethernetPorts": "1x 10Gbps Internet + 1x 10G LAN + 4x 1G",
+        "meshCapable": false,
+        "coverageSqFt": 3500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk RS700S (Tri-Band Wi-Fi 7 Router BE19000 10G Port)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-raxe500",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Wi-Fi 6E",
+      "modelName": "Nighthawk RAXE500 (Tri-Band Wi-Fi 6E Router AXE11000)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/routers/raxe500/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-raxe500.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk raxe500 (tri-band wi-fi 6e router axe11000)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 11000,
+        "ethernetPorts": "1x 2.5Gbps Multi-Gig + 5x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 3500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk RAXE500 (Tri-Band Wi-Fi 6E Router AXE11000)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-raxe300",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Wi-Fi 6E",
+      "modelName": "Nighthawk RAXE300 (Tri-Band Wi-Fi 6E Router AXE7800)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/routers/raxe300/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-raxe300.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk raxe300 (tri-band wi-fi 6e router axe7800)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 7800,
+        "ethernetPorts": "1x 2.5Gbps Multi-Gig + 5x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk RAXE300 (Tri-Band Wi-Fi 6E Router AXE7800)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-rax120",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Wi-Fi 6",
+      "modelName": "Nighthawk RAX120 (12-Stream Dual-Band Wi-Fi 6 Router AX6000 5G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/routers/rax120/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-rax120.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk rax120 (12-stream dual-band wi-fi 6 router ax6000 5g)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 6000,
+        "ethernetPorts": "1x 5Gbps Multi-Gig + 4x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 3500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk RAX120 (12-Stream Dual-Band Wi-Fi 6 Router AX6000 5G)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-rax50",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Wi-Fi 6",
+      "modelName": "Nighthawk RAX50 (6-Stream Dual-Band Wi-Fi 6 Router AX5400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/routers/rax50/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-rax50.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk rax50 (6-stream dual-band wi-fi 6 router ax5400)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk RAX50 (6-Stream Dual-Band Wi-Fi 6 Router AX5400)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-rax20",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Wi-Fi 6",
+      "modelName": "Nighthawk RAX20 (4-Stream Dual-Band Wi-Fi 6 Router AX1800)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/routers/rax20/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-rax20.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk rax20 (4-stream dual-band wi-fi 6 router ax1800)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk RAX20 (4-Stream Dual-Band Wi-Fi 6 Router AX1800)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-orbi-970-series-rbe973",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Orbi Mesh Wi-Fi 7",
+      "modelName": "Orbi 970 Series RBE973 (Quad-Band Wi-Fi 7 Mesh BE27000 10G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/mesh/rbe973/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-orbi-970-series-rbe973.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "orbi 970 series rbe973 (quad-band wi-fi 7 mesh be27000 10g)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Quad-Band (2.4GHz / 5GHz / 6GHz + Dedicated Backhaul)",
+        "maxSpeedMbps": 27000,
+        "ethernetPorts": "1x 10Gbps + 4x 2.5Gbps per node",
+        "meshCapable": true,
+        "coverageSqFt": 9000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Orbi 970 Series RBE973 (Quad-Band Wi-Fi 7 Mesh BE27000 10G)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-orbi-rbke963-wifi-6e",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Orbi Mesh Wi-Fi 6E",
+      "modelName": "Orbi Quad-Band WiFi 6E RBKE963 (AXE11000 Whole Home Mesh)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/mesh/rbke963/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-orbi-rbke963-wifi-6e.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "orbi quad-band wifi 6e rbke963 (axe11000 whole home mesh)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Quad-Band (2.4GHz / 5GHz-1 / 5GHz-2 / 6GHz)",
+        "maxSpeedMbps": 11000,
+        "ethernetPorts": "1x 2.5Gbps WAN + 1x 2.5G LAN + 3x 1G per node",
+        "meshCapable": true,
+        "coverageSqFt": 9000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Orbi Quad-Band WiFi 6E RBKE963 (AXE11000 Whole Home Mesh)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-orbi-wifi-6-rbk752",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Orbi Mesh Wi-Fi 6",
+      "modelName": "Orbi WiFi 6 RBK752 (AX4200 Whole Home Tri-Band Mesh)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/mesh/rbk752/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-orbi-wifi-6-rbk752.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "orbi wifi 6 rbk752 (ax4200 whole home tri-band mesh)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz + Dedicated Backhaul)",
+        "maxSpeedMbps": 4200,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 5000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Orbi WiFi 6 RBK752 (AX4200 Whole Home Tri-Band Mesh)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-pro-gaming-xr1000",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Gaming",
+      "modelName": "Nighthawk Pro Gaming XR1000 (Wi-Fi 6 AX5400 DumaOS 3.0)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/routers/xr1000/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-pro-gaming-xr1000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk pro gaming xr1000 (wi-fi 6 ax5400 dumaos 3.0)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk Pro Gaming XR1000 (Wi-Fi 6 AX5400 DumaOS 3.0)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-m6-pro-5g",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Mobile Hotspot",
+      "modelName": "Nighthawk M6 Pro 5G Mobile Router (MR6500 Wi-Fi 6E 2.5G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/mobile-wifi/hotspots/mr6500/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-m6-pro-5g.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk m6 pro 5g mobile router (mr6500 wi-fi 6e 2.5g)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (5G Sub-6 / mmWave Hotspot)",
+        "maxSpeedMbps": 3600,
+        "ethernetPorts": "1x 2.5Gbps Multi-Gig Port",
+        "meshCapable": false,
+        "coverageSqFt": 1000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk M6 Pro 5G Mobile Router (MR6500 Wi-Fi 6E 2.5G)",
+      "status": "staged"
+    },
+    {
+      "id": "netgear-nighthawk-ac1900-r7000p",
+      "canonicalBrand": "Netgear",
+      "displayBrand": "Netgear",
+      "productLine": "Nighthawk Classic",
+      "modelName": "Nighthawk AC1900 Smart WiFi Router (R7000P MU-MIMO)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.netgear.com/home/wifi/routers/r7000p/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.netgear.com/images/products/netgear-nighthawk-ac1900-r7000p.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "netgear",
+        "modelName": "nighthawk ac1900 smart wifi router (r7000p mu-mimo)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1900,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Netgear verified routers model: Nighthawk AC1900 Smart WiFi Router (R7000P MU-MIMO)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-aquila-pro-ai-m30",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "AQUILA PRO AI",
+      "modelName": "AQUILA PRO AI M30 (Wi-Fi 6 Mesh AX3000 Smart Antennas)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/m30-aquila-pro-ai-ax3000-smart-mesh-router"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-aquila-pro-ai-m30.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "aquila pro ai m30 (wi-fi 6 mesh ax3000 smart antennas)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: AQUILA PRO AI M30 (Wi-Fi 6 Mesh AX3000 Smart Antennas)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-aquila-pro-ai-m60",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "AQUILA PRO AI",
+      "modelName": "AQUILA PRO AI M60 (Wi-Fi 6 Mesh AX6000 2.5G WAN)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/m60-aquila-pro-ai-ax6000-smart-mesh-router"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-aquila-pro-ai-m60.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "aquila pro ai m60 (wi-fi 6 mesh ax6000 2.5g wan)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 6000,
+        "ethernetPorts": "1x 2.5Gbps WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: AQUILA PRO AI M60 (Wi-Fi 6 Mesh AX6000 2.5G WAN)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-eagle-pro-ai-r15",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "EAGLE PRO AI",
+      "modelName": "EAGLE PRO AI R15 (Wi-Fi 6 AX1500 Smart Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/r15-eagle-pro-ai-ax1500-smart-router"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-eagle-pro-ai-r15.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "eagle pro ai r15 (wi-fi 6 ax1500 smart router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1500,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2300
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: EAGLE PRO AI R15 (Wi-Fi 6 AX1500 Smart Router)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-eagle-pro-ai-m15",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "EAGLE PRO AI",
+      "modelName": "EAGLE PRO AI M15 (Wi-Fi 6 Mesh System AX1500)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/m15-eagle-pro-ai-ax1500-mesh-router"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-eagle-pro-ai-m15.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "eagle pro ai m15 (wi-fi 6 mesh system ax1500)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1500,
+        "ethernetPorts": "1x Gigabit WAN + 1x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 5400
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: EAGLE PRO AI M15 (Wi-Fi 6 Mesh System AX1500)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-dir-x5460",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "EXO AX Series",
+      "modelName": "DIR-X5460 (AX5400 Wi-Fi 6 High Power Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/dir-x5460-exo-pro-wifi-6-router-ax5400"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-dir-x5460.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "dir-x5460 (ax5400 wi-fi 6 high power router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: DIR-X5460 (AX5400 Wi-Fi 6 High Power Router)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-dir-x3060",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "EXO AX Series",
+      "modelName": "DIR-X3060 (AX3000 Wi-Fi 6 Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/dir-x3060-exo-pro-wifi-6-router-ax3000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-dir-x3060.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "dir-x3060 (ax3000 wi-fi 6 router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2400
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: DIR-X3060 (AX3000 Wi-Fi 6 Router)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-dir-x1860",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "EXO AX Series",
+      "modelName": "DIR-X1860 (AX1800 Wi-Fi 6 Gigabit Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/dir-x1860-exo-wifi-6-router-ax1800"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-dir-x1860.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "dir-x1860 (ax1800 wi-fi 6 gigabit router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: DIR-X1860 (AX1800 Wi-Fi 6 Gigabit Router)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-dir-x1560",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "EXO AX Series",
+      "modelName": "DIR-X1560 (AX1500 Wi-Fi 6 Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/dir-x1560-exo-wifi-6-router-ax1500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-dir-x1560.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "dir-x1560 (ax1500 wi-fi 6 router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1500,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 1800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: DIR-X1560 (AX1500 Wi-Fi 6 Router)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-dir-825",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "DIR Classic",
+      "modelName": "DIR-825 (AC1200 MU-MIMO Wi-Fi Gigabit Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/dir-825-ac1200-wi-fi-gigabit-router"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-dir-825.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "dir-825 (ac1200 mu-mimo wi-fi gigabit router)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1200,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: DIR-825 (AC1200 MU-MIMO Wi-Fi Gigabit Router)",
+      "status": "staged"
+    },
+    {
+      "id": "d-link-dwr-932c",
+      "canonicalBrand": "D-Link",
+      "displayBrand": "D-Link",
+      "productLine": "Mobile 4G LTE",
+      "modelName": "DWR-932C (4G LTE Mobile Wi-Fi Hotspot Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dlink.com/en/products/dwr-932c-4g-lte-mobile-router"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dlink.com/images/products/d-link-dwr-932c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "d-link",
+        "modelName": "dwr-932c (4g lte mobile wi-fi hotspot router)",
+        "wifiStandard": "Wi-Fi 4 (802.11n)",
+        "bands": "Single-Band (2.4GHz)",
+        "maxSpeedMbps": 300,
+        "ethernetPorts": "None (Micro-USB Battery)",
+        "meshCapable": false,
+        "coverageSqFt": 500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "D-Link verified routers model: DWR-932C (4G LTE Mobile Wi-Fi Hotspot Router)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-velop-pro-7",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Velop Pro Wi-Fi 7",
+      "modelName": "Velop Pro 7 (Cognitive Mesh Wi-Fi 7 Tri-Band BE11000)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/tri-band-mesh-wifi-7-router-velop-pro-7/MBE7000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-velop-pro-7.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "velop pro 7 (cognitive mesh wi-fi 7 tri-band be11000)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 11000,
+        "ethernetPorts": "1x 2.5Gbps WAN + 4x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: Velop Pro 7 (Cognitive Mesh Wi-Fi 7 Tri-Band BE11000)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-velop-pro-6e",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Velop Pro Wi-Fi 6E",
+      "modelName": "Velop Pro 6E (Cognitive Mesh Wi-Fi 6E AXE5400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/tri-band-mesh-wifi-6e-router-velop-pro-6e/MBE7001.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-velop-pro-6e.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "velop pro 6e (cognitive mesh wi-fi 6e axe5400)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x Gigabit WAN + 1x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: Velop Pro 6E (Cognitive Mesh Wi-Fi 6E AXE5400)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-hydra-pro-6e",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Hydra Series",
+      "modelName": "Hydra Pro 6E (Tri-Band Wi-Fi 6E Mesh Router AXE6600)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/tri-band-wifi-6e-router-hydra-pro-6e/MR7500.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-hydra-pro-6e.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "hydra pro 6e (tri-band wi-fi 6e mesh router axe6600)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 6600,
+        "ethernetPorts": "1x 5Gbps WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2700
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: Hydra Pro 6E (Tri-Band Wi-Fi 6E Mesh Router AXE6600)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-atlas-pro-6",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Atlas Pro Mesh",
+      "modelName": "Atlas Pro 6 (Dual-Band Wi-Fi 6 Mesh System AX5400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/dual-band-mesh-wifi-6-system-atlas-pro-6/MX5500.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-atlas-pro-6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "atlas pro 6 (dual-band wi-fi 6 mesh system ax5400)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 5400
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: Atlas Pro 6 (Dual-Band Wi-Fi 6 Mesh System AX5400)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-atlas-6",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Atlas Mesh",
+      "modelName": "Atlas 6 (Dual-Band Wi-Fi 6 Mesh System AX3000)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/dual-band-mesh-wifi-6-system-atlas-6/MX2000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-atlas-6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "atlas 6 (dual-band wi-fi 6 mesh system ax3000)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 4000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: Atlas 6 (Dual-Band Wi-Fi 6 Mesh System AX3000)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-mr7350-max-stream",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Max-Stream Series",
+      "modelName": "MR7350 (Max-Stream Wi-Fi 6 Mesh Router AX1800)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/dual-band-mesh-wifi-6-router-mr7350/MR7350.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-mr7350-max-stream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "mr7350 (max-stream wi-fi 6 mesh router ax1800)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 1700
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: MR7350 (Max-Stream Wi-Fi 6 Mesh Router AX1800)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-mr9600-dual-band",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Max-Stream Series",
+      "modelName": "MR9600 (Dual-Band Wi-Fi 6 Mesh Router AX6000)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/dual-band-mesh-wifi-6-router-mr9600/MR9600.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-mr9600-dual-band.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "mr9600 (dual-band wi-fi 6 mesh router ax6000)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 6000,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: MR9600 (Dual-Band Wi-Fi 6 Mesh Router AX6000)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-velop-micro-6-mesh",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Velop Micro",
+      "modelName": "Velop Micro 6 Mesh (Cognitive Wi-Fi 6 AX3000)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/velop-micro-6-mesh/LN1401.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-velop-micro-6-mesh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "velop micro 6 mesh (cognitive wi-fi 6 ax3000)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 1x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: Velop Micro 6 Mesh (Cognitive Wi-Fi 6 AX3000)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-wrt3200acm-open-source",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "WRT Pro Open Source",
+      "modelName": "WRT3200ACM (Dual-Band Open Source Wi-Fi 5 AC3200 MU-MIMO)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/ac3200-mu-mimo-gigabit-wifi-router/WRT3200ACM.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-wrt3200acm-open-source.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "wrt3200acm (dual-band open source wi-fi 5 ac3200 mu-mimo)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3200,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN + eSATA",
+        "meshCapable": false,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: WRT3200ACM (Dual-Band Open Source Wi-Fi 5 AC3200 MU-MIMO)",
+      "status": "staged"
+    },
+    {
+      "id": "linksys-mr2000-wi-fi-6",
+      "canonicalBrand": "Linksys",
+      "displayBrand": "Linksys",
+      "productLine": "Essential Series",
+      "modelName": "MR2000 (Dual-Band Wi-Fi 6 Mesh Router AX1800)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.linksys.com/mr2000-wifi-6-router/MR2000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.linksys.com/images/products/linksys-mr2000-wi-fi-6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "linksys",
+        "modelName": "mr2000 (dual-band wi-fi 6 mesh router ax1800)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Linksys verified routers model: MR2000 (Dual-Band Wi-Fi 6 Mesh Router AX1800)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-udm-pro-max",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "UniFi Cloud Gateway",
+      "modelName": "UniFi Dream Machine Pro Max (UDM-Pro-Max 10G Gateway)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/cloud-gateways-large-scale/products/udm-pro-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-udm-pro-max.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "unifi dream machine pro max (udm-pro-max 10g gateway)",
+        "wifiStandard": "UniFi Ecosystem Gateway",
+        "bands": "Multi-Gig Wired Gateway",
+        "maxSpeedMbps": 10000,
+        "ethernetPorts": "2x 10G SFP+ + 1x 2.5GbE RJ45 + 8x GbE LAN",
+        "meshCapable": true,
+        "coverageSqFt": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: UniFi Dream Machine Pro Max (UDM-Pro-Max 10G Gateway)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-udm-se",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "UniFi Cloud Gateway",
+      "modelName": "UniFi Dream Machine Special Edition (UDM-SE PoE Gateway)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/cloud-gateways-large-scale/products/udm-se"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-udm-se.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "unifi dream machine special edition (udm-se poe gateway)",
+        "wifiStandard": "UniFi Ecosystem Gateway",
+        "bands": "Multi-Gig PoE Gateway",
+        "maxSpeedMbps": 10000,
+        "ethernetPorts": "2x 10G SFP+ + 1x 2.5GbE WAN + 8x GbE PoE LAN",
+        "meshCapable": true,
+        "coverageSqFt": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: UniFi Dream Machine Special Edition (UDM-SE PoE Gateway)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-udr-dream-router",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "UniFi Dream Series",
+      "modelName": "UniFi Dream Router (UDR Wi-Fi 6 All-in-One Gateway)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/cloud-gateways-compact/products/udr"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-udr-dream-router.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "unifi dream router (udr wi-fi 6 all-in-one gateway)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x GbE WAN + 4x GbE LAN (2x PoE)",
+        "meshCapable": true,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: UniFi Dream Router (UDR Wi-Fi 6 All-in-One Gateway)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-unifi-express-ux",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "UniFi Express",
+      "modelName": "UniFi Express (UX Compact Wi-Fi 6 Cloud Gateway)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/cloud-gateways-compact/products/ux"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-unifi-express-ux.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "unifi express (ux compact wi-fi 6 cloud gateway)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x GbE WAN + 1x GbE LAN",
+        "meshCapable": true,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: UniFi Express (UX Compact Wi-Fi 6 Cloud Gateway)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-ucg-ultra",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "UniFi Cloud Gateway",
+      "modelName": "UniFi Cloud Gateway Ultra (UCG-Ultra 2.5G WAN)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/cloud-gateways-compact/products/ucg-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-ucg-ultra.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "unifi cloud gateway ultra (ucg-ultra 2.5g wan)",
+        "wifiStandard": "UniFi Ecosystem Gateway",
+        "bands": "Compact Wired Gateway",
+        "maxSpeedMbps": 2500,
+        "ethernetPorts": "1x 2.5GbE WAN + 4x GbE LAN",
+        "meshCapable": true,
+        "coverageSqFt": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: UniFi Cloud Gateway Ultra (UCG-Ultra 2.5G WAN)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-uxg-lite",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "UniFi Gateway Lite",
+      "modelName": "UniFi Gateway Lite (UXG-Lite Compact Security Gateway)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/cloud-gateways-compact/products/uxg-lite"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-uxg-lite.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "unifi gateway lite (uxg-lite compact security gateway)",
+        "wifiStandard": "UniFi Security Gateway",
+        "bands": "Wired Gateway",
+        "maxSpeedMbps": 1000,
+        "ethernetPorts": "1x GbE WAN + 1x GbE LAN",
+        "meshCapable": true,
+        "coverageSqFt": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: UniFi Gateway Lite (UXG-Lite Compact Security Gateway)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-amplifi-alien",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "AmpliFi Consumer Mesh",
+      "modelName": "AmpliFi Alien (Wi-Fi 6 Mesh Router Touchscreen Display)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amplifi.com/alien"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://amplifi.com/images/products/ubiquiti-amplifi-alien.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "amplifi alien (wi-fi 6 mesh router touchscreen display)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz-1 / 5GHz-2)",
+        "maxSpeedMbps": 7685,
+        "ethernetPorts": "1x Gigabit WAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: AmpliFi Alien (Wi-Fi 6 Mesh Router Touchscreen Display)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-udw-dream-wall",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "UniFi Wall Mount",
+      "modelName": "UniFi Dream Wall (UDW All-in-One Wall Mount Wi-Fi 6 Gateway)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/cloud-gateways-large-scale/products/udw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-udw-dream-wall.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "unifi dream wall (udw all-in-one wall mount wi-fi 6 gateway)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band Wi-Fi 6 + Multi-Gbps Switching",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "2x 10G SFP+ + 17x GbE (PoE+/PoE++)",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: UniFi Dream Wall (UDW All-in-One Wall Mount Wi-Fi 6 Gateway)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-uk-ultra-swiss-army-knife",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "UniFi Ultra Access",
+      "modelName": "UniFi Swiss Army Knife Ultra (UK-Ultra Compact Outdoor AP)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/all-wifi/products/uk-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-uk-ultra-swiss-army-knife.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "unifi swiss army knife ultra (uk-ultra compact outdoor ap)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1167,
+        "ethernetPorts": "1x GbE PoE In",
+        "meshCapable": true,
+        "coverageSqFt": 1250
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: UniFi Swiss Army Knife Ultra (UK-Ultra Compact Outdoor AP)",
+      "status": "staged"
+    },
+    {
+      "id": "ubiquiti-edgerouter-x",
+      "canonicalBrand": "Ubiquiti",
+      "displayBrand": "Ubiquiti",
+      "productLine": "EdgeMAX Series",
+      "modelName": "EdgeRouter X (ER-X 5-Port Gigabit Advanced Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.ui.com/us/en/pro/category/wired-edge-routing/products/er-x"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.ui.com/images/products/ubiquiti-edgerouter-x.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ubiquiti",
+        "modelName": "edgerouter x (er-x 5-port gigabit advanced router)",
+        "wifiStandard": "EdgeOS Wired Router",
+        "bands": "Wired Network Routing",
+        "maxSpeedMbps": 1000,
+        "ethernetPorts": "5x Gigabit RJ45 Ports (Passive PoE Passthrough)",
+        "meshCapable": false,
+        "coverageSqFt": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ubiquiti verified routers model: EdgeRouter X (ER-X 5-Port Gigabit Advanced Router)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-mesh-system-ax3000-ne",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mesh System",
+      "modelName": "Mesh System AX3000 NE (Wi-Fi 6 Whole Home Mesh)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/xiaomi-mesh-system-ax3000-ne/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-mesh-system-ax3000-ne.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "mesh system ax3000 ne (wi-fi 6 whole home mesh)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "4x Gigabit Auto-Sensing WAN/LAN per node",
+        "meshCapable": true,
+        "coverageSqFt": 5200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Mesh System AX3000 NE (Wi-Fi 6 Whole Home Mesh)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-router-ax3200",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "AX Series",
+      "modelName": "Router AX3200 (Wi-Fi 6 4x4 MU-MIMO 6 Antennas)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/xiaomi-router-ax3200/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-router-ax3200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "router ax3200 (wi-fi 6 4x4 mu-mimo 6 antennas)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3200,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Router AX3200 (Wi-Fi 6 4x4 MU-MIMO 6 Antennas)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-router-ax1800",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "AX Series",
+      "modelName": "Router AX1800 (Wi-Fi 6 Qualcomm 5-Core Tower)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-aiot-router-ax1800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-router-ax1800.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "router ax1800 (wi-fi 6 qualcomm 5-core tower)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 1800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Router AX1800 (Wi-Fi 6 Qualcomm 5-Core Tower)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-router-ax9000",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Gaming Flagship",
+      "modelName": "Router AX9000 (Tri-Band Wi-Fi 6 Gaming Router 2.5G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-router-ax9000/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-router-ax9000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "router ax9000 (tri-band wi-fi 6 gaming router 2.5g)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5.2GHz / 5.8GHz Gaming)",
+        "maxSpeedMbps": 9000,
+        "ethernetPorts": "1x 2.5Gbps WAN/LAN + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Router AX9000 (Tri-Band Wi-Fi 6 Gaming Router 2.5G)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-router-be7000",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Wi-Fi 7 Pro",
+      "modelName": "Router BE7000 (Wi-Fi 7 Quad-Port 2.5G USB 3.0)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/xiaomi-router-be7000/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-router-be7000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "router be7000 (wi-fi 7 quad-port 2.5g usb 3.0)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Tri-Band (2.4GHz / 5GHz MLO)",
+        "maxSpeedMbps": 7000,
+        "ethernetPorts": "4x 2.5Gbps WAN/LAN Ports",
+        "meshCapable": true,
+        "coverageSqFt": 3500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Router BE7000 (Wi-Fi 7 Quad-Port 2.5G USB 3.0)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-router-be3600",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Wi-Fi 7 Entry",
+      "modelName": "Router BE3600 (Wi-Fi 7 2.5G WAN MLO Aggregation)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/xiaomi-router-be3600-2.5g/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-router-be3600.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "router be3600 (wi-fi 7 2.5g wan mlo aggregation)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3600,
+        "ethernetPorts": "1x 2.5Gbps WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Router BE3600 (Wi-Fi 7 2.5G WAN MLO Aggregation)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-router-ac1200",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "AC Series",
+      "modelName": "Router AC1200 (Dual Band 4 High-Gain Antennas)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-router-4a-gigabit-edition/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-router-ac1200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "router ac1200 (dual band 4 high-gain antennas)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1200,
+        "ethernetPorts": "1x Fast Ethernet WAN + 2x Fast LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Router AC1200 (Dual Band 4 High-Gain Antennas)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-router-4a-gigabit",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "4A Series",
+      "modelName": "Router 4A Gigabit Edition (AC1200 Dual Core)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-router-4a-gigabit-edition/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-router-4a-gigabit.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "router 4a gigabit edition (ac1200 dual core)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1200,
+        "ethernetPorts": "1x Gigabit WAN + 2x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Router 4A Gigabit Edition (AC1200 Dual Core)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-router-4c-smart",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "4C Series",
+      "modelName": "Router 4C Smart (Single Band 4 Antennas 300Mbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/mi-router-4c/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-router-4c-smart.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "router 4c smart (single band 4 antennas 300mbps)",
+        "wifiStandard": "Wi-Fi 4 (802.11n)",
+        "bands": "Single-Band (2.4GHz)",
+        "maxSpeedMbps": 300,
+        "ethernetPorts": "1x 100M WAN + 2x 100M LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: Router 4C Smart (Single Band 4 Antennas 300Mbps)",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-wifi-range-extender-n300",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Extender Series",
+      "modelName": "WiFi Range Extender N300 (2x2 External Antennas)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/xiaomi-wifi-range-extender-n300/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.mi.com/images/products/xiaomi-wifi-range-extender-n300.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "wifi range extender n300 (2x2 external antennas)",
+        "wifiStandard": "Wi-Fi 4 (802.11n)",
+        "bands": "Single-Band (2.4GHz)",
+        "maxSpeedMbps": 300,
+        "ethernetPorts": "None (Wall Plug)",
+        "meshCapable": false,
+        "coverageSqFt": 800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi verified routers model: WiFi Range Extender N300 (2x2 External Antennas)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-tx12-pro-wi-fi-6",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "TX Series",
+      "modelName": "TX12 Pro (Dual-Band Wi-Fi 6 AX3000 Gigabit Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/tx12pro.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-tx12-pro-wi-fi-6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "tx12 pro (dual-band wi-fi 6 ax3000 gigabit router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: TX12 Pro (Dual-Band Wi-Fi 6 AX3000 Gigabit Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-tx27-pro-wi-fi-6e",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "TX Series",
+      "modelName": "TX27 Pro (Tri-Band Wi-Fi 6E AXE5700 Gigabit Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/tx27pro.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-tx27-pro-wi-fi-6e.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "tx27 pro (tri-band wi-fi 6e axe5700 gigabit router)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 5700,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: TX27 Pro (Tri-Band Wi-Fi 6E AXE5700 Gigabit Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-nova-mx12-mesh",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "Nova Mesh",
+      "modelName": "Nova MX12 (Tri-Band Wi-Fi 6 Mesh System AX3000)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/mx12.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-nova-mx12-mesh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "nova mx12 (tri-band wi-fi 6 mesh system ax3000)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz-1 / 5GHz-2)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "3x Gigabit Ports per node",
+        "meshCapable": true,
+        "coverageSqFt": 7000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: Nova MX12 (Tri-Band Wi-Fi 6 Mesh System AX3000)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-nova-mw6-mesh",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "Nova Mesh",
+      "modelName": "Nova MW6 (Whole Home Mesh Wi-Fi AC1200 Wave 2)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/mw6.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-nova-mw6-mesh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "nova mw6 (whole home mesh wi-fi ac1200 wave 2)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1200,
+        "ethernetPorts": "2x Gigabit Ports per node",
+        "meshCapable": true,
+        "coverageSqFt": 6000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: Nova MW6 (Whole Home Mesh Wi-Fi AC1200 Wave 2)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-rx9-pro-wi-fi-6",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "RX Series",
+      "modelName": "RX9 Pro (Dual-Band Wi-Fi 6 AX3000 Gigabit Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/rx9pro.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-rx9-pro-wi-fi-6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "rx9 pro (dual-band wi-fi 6 ax3000 gigabit router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: RX9 Pro (Dual-Band Wi-Fi 6 AX3000 Gigabit Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-rx12-pro-wi-fi-6",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "RX Series",
+      "modelName": "RX12 Pro (Dual-Band Wi-Fi 6 AX3000 Gigabit 5 Antennas)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/rx12pro.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-rx12-pro-wi-fi-6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "rx12 pro (dual-band wi-fi 6 ax3000 gigabit 5 antennas)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2400
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: RX12 Pro (Dual-Band Wi-Fi 6 AX3000 Gigabit 5 Antennas)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-ac23-ac2100",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "AC Series",
+      "modelName": "AC23 (Dual Band Gigabit AC2100 Smart Wi-Fi Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/ac23.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-ac23-ac2100.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "ac23 (dual band gigabit ac2100 smart wi-fi router)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 4x4)",
+        "maxSpeedMbps": 2100,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: AC23 (Dual Band Gigabit AC2100 Smart Wi-Fi Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-ac10-ac1200",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "AC Series",
+      "modelName": "AC10 (Dual Band Gigabit AC1200 Smart Wi-Fi Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/ac10.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-ac10-ac1200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "ac10 (dual band gigabit ac1200 smart wi-fi router)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1200,
+        "ethernetPorts": "1x Gigabit WAN + 3x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1600
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: AC10 (Dual Band Gigabit AC1200 Smart Wi-Fi Router)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-4g06-volte-router",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "4G LTE Gateway",
+      "modelName": "4G06 (300Mbps 4G VoLTE Wi-Fi Router with SIM Slot)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/4g06.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-4g06-volte-router.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "4g06 (300mbps 4g volte wi-fi router with sim slot)",
+        "wifiStandard": "Wi-Fi 4 (802.11n)",
+        "bands": "Single-Band (2.4GHz)",
+        "maxSpeedMbps": 300,
+        "ethernetPorts": "1x WAN/LAN + 1x LAN + 1x Tel Port",
+        "meshCapable": false,
+        "coverageSqFt": 1000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: 4G06 (300Mbps 4G VoLTE Wi-Fi Router with SIM Slot)",
+      "status": "staged"
+    },
+    {
+      "id": "tenda-f3-300mbps",
+      "canonicalBrand": "Tenda",
+      "displayBrand": "Tenda",
+      "productLine": "F Series",
+      "modelName": "F3 (Single Band 300Mbps 3 Antennas Wi-Fi Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tendacn.com/product/f3.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.tendacn.com/images/products/tenda-f3-300mbps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tenda",
+        "modelName": "f3 (single band 300mbps 3 antennas wi-fi router)",
+        "wifiStandard": "Wi-Fi 4 (802.11n)",
+        "bands": "Single-Band (2.4GHz)",
+        "maxSpeedMbps": 300,
+        "ethernetPorts": "1x 100M WAN + 3x 100M LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tenda verified routers model: F3 (Single Band 300Mbps 3 Antennas Wi-Fi Router)",
+      "status": "staged"
+    },
+    {
+      "id": "eero-max-7-mesh",
+      "canonicalBrand": "Amazon eero",
+      "displayBrand": "eero",
+      "productLine": "eero Max 7",
+      "modelName": "eero Max 7 (Tri-Band Wi-Fi 7 Mesh Router 10GbE)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://eero.com/shop/eero-max-7"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://eero.com/images/products/eero-max-7-mesh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "amazon eero",
+        "modelName": "eero max 7 (tri-band wi-fi 7 mesh router 10gbe)",
+        "wifiStandard": "Wi-Fi 7 (802.11be)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 9400,
+        "ethernetPorts": "2x 10GbE + 2x 2.5GbE Ports",
+        "meshCapable": true,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Amazon eero verified routers model: eero Max 7 (Tri-Band Wi-Fi 7 Mesh Router 10GbE)",
+      "status": "staged"
+    },
+    {
+      "id": "eero-pro-6e-mesh",
+      "canonicalBrand": "Amazon eero",
+      "displayBrand": "eero",
+      "productLine": "eero Pro 6E",
+      "modelName": "eero Pro 6E (Tri-Band Wi-Fi 6E Mesh Router 2.5GbE)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://eero.com/shop/eero-pro-6e"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://eero.com/images/products/eero-pro-6e-mesh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "amazon eero",
+        "modelName": "eero pro 6e (tri-band wi-fi 6e mesh router 2.5gbe)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "1x 2.5GbE + 1x 1GbE Auto-Sensing",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Amazon eero verified routers model: eero Pro 6E (Tri-Band Wi-Fi 6E Mesh Router 2.5GbE)",
+      "status": "staged"
+    },
+    {
+      "id": "eero-pro-6-mesh",
+      "canonicalBrand": "Amazon eero",
+      "displayBrand": "eero",
+      "productLine": "eero Pro 6",
+      "modelName": "eero Pro 6 (Tri-Band Wi-Fi 6 Mesh Router Gigabit)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://eero.com/shop/eero-pro-6"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://eero.com/images/products/eero-pro-6-mesh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "amazon eero",
+        "modelName": "eero pro 6 (tri-band wi-fi 6 mesh router gigabit)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz-1 / 5GHz-2)",
+        "maxSpeedMbps": 4200,
+        "ethernetPorts": "2x 1GbE Auto-Sensing Ports",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Amazon eero verified routers model: eero Pro 6 (Tri-Band Wi-Fi 6 Mesh Router Gigabit)",
+      "status": "staged"
+    },
+    {
+      "id": "eero-6-plus-mesh",
+      "canonicalBrand": "Amazon eero",
+      "displayBrand": "eero",
+      "productLine": "eero 6+",
+      "modelName": "eero 6+ (Dual-Band Wi-Fi 6 Mesh Router 160MHz)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://eero.com/shop/eero-6-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://eero.com/images/products/eero-6-plus-mesh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "amazon eero",
+        "modelName": "eero 6+ (dual-band wi-fi 6 mesh router 160mhz)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 160MHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "2x 1GbE Auto-Sensing Ports",
+        "meshCapable": true,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Amazon eero verified routers model: eero 6+ (Dual-Band Wi-Fi 6 Mesh Router 160MHz)",
+      "status": "staged"
+    },
+    {
+      "id": "eero-6-mesh",
+      "canonicalBrand": "Amazon eero",
+      "displayBrand": "eero",
+      "productLine": "eero 6",
+      "modelName": "eero 6 (Dual-Band Wi-Fi 6 Mesh Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://eero.com/shop/eero-6"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://eero.com/images/products/eero-6-mesh.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "amazon eero",
+        "modelName": "eero 6 (dual-band wi-fi 6 mesh router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "2x 1GbE Auto-Sensing Ports",
+        "meshCapable": true,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Amazon eero verified routers model: eero 6 (Dual-Band Wi-Fi 6 Mesh Router)",
+      "status": "staged"
+    },
+    {
+      "id": "eero-poe-6",
+      "canonicalBrand": "Amazon eero",
+      "displayBrand": "eero",
+      "productLine": "eero PoE",
+      "modelName": "eero PoE 6 (Power-over-Ethernet Wi-Fi 6 Access Point)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://eero.com/shop/eero-poe-6"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://eero.com/images/products/eero-poe-6.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "amazon eero",
+        "modelName": "eero poe 6 (power-over-ethernet wi-fi 6 access point)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 160MHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x 2.5GbE PoE In Port",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Amazon eero verified routers model: eero PoE 6 (Power-over-Ethernet Wi-Fi 6 Access Point)",
+      "status": "staged"
+    },
+    {
+      "id": "google-nest-wifi-pro",
+      "canonicalBrand": "Google Nest",
+      "displayBrand": "Google Nest",
+      "productLine": "Nest Wifi Pro",
+      "modelName": "Nest Wifi Pro (Wi-Fi 6E Tri-Band Mesh System)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.google.com/product/nest_wifi_pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.google.com/images/products/google-nest-wifi-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "google nest",
+        "modelName": "nest wifi pro (wi-fi 6e tri-band mesh system)",
+        "wifiStandard": "Wi-Fi 6E (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5GHz / 6GHz)",
+        "maxSpeedMbps": 5400,
+        "ethernetPorts": "2x 1Gbps Ethernet Ports per node",
+        "meshCapable": true,
+        "coverageSqFt": 2200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Nest verified routers model: Nest Wifi Pro (Wi-Fi 6E Tri-Band Mesh System)",
+      "status": "staged"
+    },
+    {
+      "id": "google-nest-wifi-router",
+      "canonicalBrand": "Google Nest",
+      "displayBrand": "Google Nest",
+      "productLine": "Nest Wifi",
+      "modelName": "Nest Wifi Router (Wi-Fi 5 AC2200 4x4 MU-MIMO)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.google.com/product/nest_wifi"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.google.com/images/products/google-nest-wifi-router.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "google nest",
+        "modelName": "nest wifi router (wi-fi 5 ac2200 4x4 mu-mimo)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 4x4)",
+        "maxSpeedMbps": 2200,
+        "ethernetPorts": "1x Gigabit WAN + 1x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2200
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Nest verified routers model: Nest Wifi Router (Wi-Fi 5 AC2200 4x4 MU-MIMO)",
+      "status": "staged"
+    },
+    {
+      "id": "google-wifi-ac1200",
+      "canonicalBrand": "Google Nest",
+      "displayBrand": "Google",
+      "productLine": "Google Wifi",
+      "modelName": "Google Wifi (Wi-Fi 5 AC1200 Mesh Router Point)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.google.com/product/google_wifi_2nd_gen"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.google.com/images/products/google-wifi-ac1200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "google nest",
+        "modelName": "google wifi (wi-fi 5 ac1200 mesh router point)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 2x2)",
+        "maxSpeedMbps": 1200,
+        "ethernetPorts": "2x Gigabit Ethernet Ports",
+        "meshCapable": true,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Nest verified routers model: Google Wifi (Wi-Fi 5 AC1200 Mesh Router Point)",
+      "status": "staged"
+    },
+    {
+      "id": "google-nest-wifi-point",
+      "canonicalBrand": "Google Nest",
+      "displayBrand": "Google Nest",
+      "productLine": "Nest Wifi",
+      "modelName": "Nest Wifi Point (AC1200 Mesh Point with Google Assistant Speaker)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.google.com/product/nest_wifi_point"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.google.com/images/products/google-nest-wifi-point.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "google nest",
+        "modelName": "nest wifi point (ac1200 mesh point with google assistant speaker)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 2x2)",
+        "maxSpeedMbps": 1200,
+        "ethernetPorts": "None (Wireless Mesh Extender + Speaker)",
+        "meshCapable": true,
+        "coverageSqFt": 1600
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Nest verified routers model: Nest Wifi Point (AC1200 Mesh Point with Google Assistant Speaker)",
+      "status": "staged"
+    },
+    {
+      "id": "synology-rt6600ax",
+      "canonicalBrand": "Synology",
+      "displayBrand": "Synology",
+      "productLine": "Synology Router",
+      "modelName": "RT6600ax (Tri-Band Wi-Fi 6 Router 2.5GbE SRM 1.3)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.synology.com/en-us/products/RT6600ax"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.synology.com/images/products/synology-rt6600ax.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "synology",
+        "modelName": "rt6600ax (tri-band wi-fi 6 router 2.5gbe srm 1.3)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Tri-Band (2.4GHz / 5.2GHz / 5.8GHz)",
+        "maxSpeedMbps": 6600,
+        "ethernetPorts": "1x 2.5GbE WAN/LAN + 4x GbE LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Synology verified routers model: RT6600ax (Tri-Band Wi-Fi 6 Router 2.5GbE SRM 1.3)",
+      "status": "staged"
+    },
+    {
+      "id": "synology-wrx560",
+      "canonicalBrand": "Synology",
+      "displayBrand": "Synology",
+      "productLine": "Synology Router",
+      "modelName": "WRX560 (Dual-Band Wi-Fi 6 Mesh Router 2.5GbE)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.synology.com/en-us/products/WRX560"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.synology.com/images/products/synology-wrx560.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "synology",
+        "modelName": "wrx560 (dual-band wi-fi 6 mesh router 2.5gbe)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 160MHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x 2.5GbE WAN/LAN + 4x GbE LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Synology verified routers model: WRX560 (Dual-Band Wi-Fi 6 Mesh Router 2.5GbE)",
+      "status": "staged"
+    },
+    {
+      "id": "synology-rt2600ac",
+      "canonicalBrand": "Synology",
+      "displayBrand": "Synology",
+      "productLine": "Synology Router",
+      "modelName": "RT2600ac (Dual-Band Wi-Fi 5 AC2600 4x4 MU-MIMO)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.synology.com/en-us/products/RT2600ac"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.synology.com/images/products/synology-rt2600ac.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "synology",
+        "modelName": "rt2600ac (dual-band wi-fi 5 ac2600 4x4 mu-mimo)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 2600,
+        "ethernetPorts": "1x GbE WAN + 4x GbE LAN (Dual WAN)",
+        "meshCapable": true,
+        "coverageSqFt": 2500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Synology verified routers model: RT2600ac (Dual-Band Wi-Fi 5 AC2600 4x4 MU-MIMO)",
+      "status": "staged"
+    },
+    {
+      "id": "synology-mr2200ac",
+      "canonicalBrand": "Synology",
+      "displayBrand": "Synology",
+      "productLine": "Synology Mesh",
+      "modelName": "MR2200ac (Tri-Band Mesh Wi-Fi AC2200 Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.synology.com/en-us/products/MR2200ac"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.synology.com/images/products/synology-mr2200ac.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "synology",
+        "modelName": "mr2200ac (tri-band mesh wi-fi ac2200 router)",
+        "wifiStandard": "Wi-Fi 5 (802.11ac)",
+        "bands": "Tri-Band (2.4GHz / 5GHz-1 / 5GHz-2)",
+        "maxSpeedMbps": 2200,
+        "ethernetPorts": "1x GbE WAN + 1x GbE LAN",
+        "meshCapable": true,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Synology verified routers model: MR2200ac (Tri-Band Mesh Wi-Fi AC2200 Router)",
+      "status": "staged"
+    },
+    {
+      "id": "synology-ds224-gateway-nas",
+      "canonicalBrand": "Synology",
+      "displayBrand": "Synology",
+      "productLine": "DiskStation",
+      "modelName": "DS224+ (DiskStation Gateway Network Controller & Storage)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.synology.com/en-us/products/DS224+"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.synology.com/images/products/synology-ds224-gateway-nas.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "synology",
+        "modelName": "ds224+ (diskstation gateway network controller & storage)",
+        "wifiStandard": "DSM Network Services",
+        "bands": "Dual Gigabit Network Routing",
+        "maxSpeedMbps": 2000,
+        "ethernetPorts": "2x 1GbE RJ-45 LAN with Failover",
+        "meshCapable": false,
+        "coverageSqFt": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Synology verified routers model: DS224+ (DiskStation Gateway Network Controller & Storage)",
+      "status": "staged"
+    },
+    {
+      "id": "glinet-flint-2-gl-mt6000",
+      "canonicalBrand": "GL.iNet",
+      "displayBrand": "GL.iNet",
+      "productLine": "Flint Home Router",
+      "modelName": "Flint 2 GL-MT6000 (Wi-Fi 6 Dual 2.5G OpenWrt Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gl-inet.com/products/gl-mt6000/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gl-inet.com/images/products/glinet-flint-2-gl-mt6000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gl.inet",
+        "modelName": "flint 2 gl-mt6000 (wi-fi 6 dual 2.5g openwrt router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 160MHz)",
+        "maxSpeedMbps": 6000,
+        "ethernetPorts": "2x 2.5G + 4x Gigabit LAN",
+        "meshCapable": true,
+        "coverageSqFt": 3000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "GL.iNet verified routers model: Flint 2 GL-MT6000 (Wi-Fi 6 Dual 2.5G OpenWrt Router)",
+      "status": "staged"
+    },
+    {
+      "id": "glinet-beryl-ax-gl-mt3000",
+      "canonicalBrand": "GL.iNet",
+      "displayBrand": "GL.iNet",
+      "productLine": "Travel Router",
+      "modelName": "Beryl AX GL-MT3000 (Pocket Wi-Fi 6 Travel Router 2.5G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gl-inet.com/products/gl-mt3000/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gl-inet.com/images/products/glinet-beryl-ax-gl-mt3000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gl.inet",
+        "modelName": "beryl ax gl-mt3000 (pocket wi-fi 6 travel router 2.5g)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz 160MHz)",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x 2.5G WAN + 1x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "GL.iNet verified routers model: Beryl AX GL-MT3000 (Pocket Wi-Fi 6 Travel Router 2.5G)",
+      "status": "staged"
+    },
+    {
+      "id": "glinet-slate-ax-gl-axt1800",
+      "canonicalBrand": "GL.iNet",
+      "displayBrand": "GL.iNet",
+      "productLine": "Travel Router",
+      "modelName": "Slate AX GL-AXT1800 (Gigabit Wi-Fi 6 Travel Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gl-inet.com/products/gl-axt1800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gl-inet.com/images/products/glinet-slate-ax-gl-axt1800.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gl.inet",
+        "modelName": "slate ax gl-axt1800 (gigabit wi-fi 6 travel router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band (2.4GHz / 5GHz)",
+        "maxSpeedMbps": 1800,
+        "ethernetPorts": "1x Gigabit WAN + 2x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 800
+      },
+      "missingAttributes": [],
+      "inclusionReason": "GL.iNet verified routers model: Slate AX GL-AXT1800 (Gigabit Wi-Fi 6 Travel Router)",
+      "status": "staged"
+    },
+    {
+      "id": "glinet-brume-2-gl-mt2500",
+      "canonicalBrand": "GL.iNet",
+      "displayBrand": "GL.iNet",
+      "productLine": "Security Gateway",
+      "modelName": "Brume 2 GL-MT2500 (Security Gateway OpenWrt VPN)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gl-inet.com/products/gl-mt2500/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gl-inet.com/images/products/glinet-brume-2-gl-mt2500.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gl.inet",
+        "modelName": "brume 2 gl-mt2500 (security gateway openwrt vpn)",
+        "wifiStandard": "Wired VPN Gateway",
+        "bands": "Wired Security Appliance",
+        "maxSpeedMbps": 2500,
+        "ethernetPorts": "1x 2.5G WAN + 1x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "GL.iNet verified routers model: Brume 2 GL-MT2500 (Security Gateway OpenWrt VPN)",
+      "status": "staged"
+    },
+    {
+      "id": "glinet-spitz-ax-gl-x3000",
+      "canonicalBrand": "GL.iNet",
+      "displayBrand": "GL.iNet",
+      "productLine": "Cellular Gateway",
+      "modelName": "Spitz AX GL-X3000 (5G NR Wi-Fi 6 Cellular Gateway Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gl-inet.com/products/gl-x3000/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gl-inet.com/images/products/glinet-spitz-ax-gl-x3000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gl.inet",
+        "modelName": "spitz ax gl-x3000 (5g nr wi-fi 6 cellular gateway router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band + 5G Sub-6 Dual SIM",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x 2.5G WAN + 1x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 2000
+      },
+      "missingAttributes": [],
+      "inclusionReason": "GL.iNet verified routers model: Spitz AX GL-X3000 (5G NR Wi-Fi 6 Cellular Gateway Router)",
+      "status": "staged"
+    },
+    {
+      "id": "glinet-puli-ax-gl-xe3000",
+      "canonicalBrand": "GL.iNet",
+      "displayBrand": "GL.iNet",
+      "productLine": "Cellular Portable",
+      "modelName": "Puli AX GL-XE3000 (5G Wi-Fi 6 Battery Cellular Router)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gl-inet.com/products/gl-xe3000/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gl-inet.com/images/products/glinet-puli-ax-gl-xe3000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gl.inet",
+        "modelName": "puli ax gl-xe3000 (5g wi-fi 6 battery cellular router)",
+        "wifiStandard": "Wi-Fi 6 (802.11ax)",
+        "bands": "Dual-Band + 5G Sub-6 Hotspot",
+        "maxSpeedMbps": 3000,
+        "ethernetPorts": "1x 2.5G WAN + 1x Gigabit LAN",
+        "meshCapable": false,
+        "coverageSqFt": 1500
+      },
+      "missingAttributes": [],
+      "inclusionReason": "GL.iNet verified routers model: Puli AX GL-XE3000 (5G Wi-Fi 6 Battery Cellular Router)",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Amazon eero",
+      "leafKey": "routers",
+      "reason": "Amazon eero produces 6 dedicated whole-home mesh networking routers in the eero Max and Pro families.",
+      "officialSourceUrl": "https://eero.com/shop",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "eero Max 7 (Tri-Band Wi-Fi 7 Mesh Router 10GbE)",
+        "eero Pro 6E (Tri-Band Wi-Fi 6E Mesh Router 2.5GbE)",
+        "eero Pro 6 (Tri-Band Wi-Fi 6 Mesh Router Gigabit)",
+        "eero 6+ (Dual-Band Wi-Fi 6 Mesh Router 160MHz)",
+        "eero 6 (Dual-Band Wi-Fi 6 Mesh Router)",
+        "eero PoE 6 (Power-over-Ethernet Wi-Fi 6 Access Point)"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Google Nest",
+      "leafKey": "routers",
+      "reason": "Google produces 4 mesh networking devices across its Nest Wifi Pro and Google Wifi product generations.",
+      "officialSourceUrl": "https://store.google.com/category/connected_home?hl=en-US",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Nest Wifi Pro (Wi-Fi 6E Tri-Band Mesh System)",
+        "Nest Wifi Router (Wi-Fi 5 AC2200 4x4 MU-MIMO)",
+        "Google Wifi (Wi-Fi 5 AC1200 Mesh Router Point)",
+        "Nest Wifi Point (AC1200 Mesh Point with Google Assistant Speaker)"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Synology",
+      "leafKey": "routers",
+      "reason": "Synology manufactures 5 networking and router products powered by the Synology Router Manager (SRM) OS.",
+      "officialSourceUrl": "https://www.synology.com/en-us/products/routers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "RT6600ax (Tri-Band Wi-Fi 6 Router 2.5GbE SRM 1.3)",
+        "WRX560 (Dual-Band Wi-Fi 6 Mesh Router 2.5GbE)",
+        "RT2600ac (Dual-Band Wi-Fi 5 AC2600 4x4 MU-MIMO)",
+        "MR2200ac (Tri-Band Mesh Wi-Fi AC2200 Router)",
+        "DS224+ (DiskStation Gateway Network Controller & Storage)"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "GL.iNet",
+      "leafKey": "routers",
+      "reason": "GL.iNet manufactures 6 OpenWrt-based travel routers, home mesh routers, and cellular gateways.",
+      "officialSourceUrl": "https://www.gl-inet.com/products/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Flint 2 GL-MT6000 (Wi-Fi 6 Dual 2.5G OpenWrt Router)",
+        "Beryl AX GL-MT3000 (Pocket Wi-Fi 6 Travel Router 2.5G)",
+        "Slate AX GL-AXT1800 (Gigabit Wi-Fi 6 Travel Router)",
+        "Brume 2 GL-MT2500 (Security Gateway OpenWrt VPN)",
+        "Spitz AX GL-X3000 (5G NR Wi-Fi 6 Cellular Gateway Router)",
+        "Puli AX GL-XE3000 (5G Wi-Fi 6 Battery Cellular Router)"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

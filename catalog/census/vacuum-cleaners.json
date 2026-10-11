@@ -1,0 +1,3757 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "vacuum-cleaners",
+  "displayName": "Vacuum Cleaners",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "dyson-gen5detect-absolute",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "Gen5detect Absolute",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/gen5detect-absolute"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-gen5detect-absolute.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "gen5detect absolute",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 280,
+        "batteryMinutes": 70,
+        "filtrationType": "Whole-machine HEPA",
+        "binCapacityLiters": 0.77,
+        "weightKg": 3.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Gen5detect Absolute",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-gen5outsize-cordless",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "Gen5outsize Cordless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/gen5outsize-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-gen5outsize-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "gen5outsize cordless",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 280,
+        "batteryMinutes": 70,
+        "filtrationType": "Whole-machine HEPA",
+        "binCapacityLiters": 1.9,
+        "weightKg": 3.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Gen5outsize Cordless",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-v15-detect-absolute",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "V15 Detect Absolute",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/v15-detect-absolute"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-v15-detect-absolute.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "v15 detect absolute",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 240,
+        "batteryMinutes": 60,
+        "filtrationType": "Whole-machine HEPA",
+        "binCapacityLiters": 0.77,
+        "weightKg": 3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner V15 Detect Absolute",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-v12-detect-slim-total-clean",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "V12 Detect Slim Total Clean",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/v12-detect-slim-total-clean"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-v12-detect-slim-total-clean.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "v12 detect slim total clean",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 150,
+        "batteryMinutes": 60,
+        "filtrationType": "Whole-machine Filtration",
+        "binCapacityLiters": 0.35,
+        "weightKg": 2.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner V12 Detect Slim Total Clean",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-v8-absolute-cordless",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "V8 Absolute Cordless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/v8-absolute-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-v8-absolute-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "v8 absolute cordless",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 115,
+        "batteryMinutes": 40,
+        "filtrationType": "Whole-machine Filtration",
+        "binCapacityLiters": 0.54,
+        "weightKg": 2.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner V8 Absolute Cordless",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-360-vis-nav-robot",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "Dyson 360 Vis Nav Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/360-vis-nav-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-360-vis-nav-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "dyson 360 vis nav robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 65,
+        "batteryMinutes": 50,
+        "filtrationType": "HEPA Sealed Filtration",
+        "binCapacityLiters": 0.57,
+        "weightKg": 3.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Dyson 360 Vis Nav Robot",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-v15s-detect-submarine",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "V15s Detect Submarine Wet & Dry",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/v15s-detect-submarine"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-v15s-detect-submarine.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "v15s detect submarine wet & dry",
+        "vacuumType": "Cordless Wet & Dry",
+        "airWatts": 240,
+        "batteryMinutes": 60,
+        "filtrationType": "Whole-machine HEPA",
+        "binCapacityLiters": 0.77,
+        "weightKg": 4.1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner V15s Detect Submarine Wet & Dry",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-washg1-wet-floor-cleaner",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "WashG1 Wet Floor Cleaner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/washg1-wet-floor-cleaner"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-washg1-wet-floor-cleaner.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "washg1 wet floor cleaner",
+        "vacuumType": "Cordless Wet Hard Floor",
+        "airWatts": 0,
+        "batteryMinutes": 35,
+        "filtrationType": "Dual Water Separation",
+        "binCapacityLiters": 1,
+        "weightKg": 4.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner WashG1 Wet Floor Cleaner",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-omni-glide-cordless",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "Omni-glide Multi-Directional",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/omni-glide-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-omni-glide-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "omni-glide multi-directional",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 50,
+        "batteryMinutes": 20,
+        "filtrationType": "Whole-machine Filtration",
+        "binCapacityLiters": 0.2,
+        "weightKg": 1.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Omni-glide Multi-Directional",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-ball-animal-3-extra-upright",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "Ball Animal 3 Extra Upright",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/ball-animal-3-extra-upright"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-ball-animal-3-extra-upright.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "ball animal 3 extra upright",
+        "vacuumType": "Upright Bagless",
+        "airWatts": 290,
+        "batteryMinutes": 0,
+        "filtrationType": "Whole-machine HEPA",
+        "binCapacityLiters": 1.7,
+        "weightKg": 7.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Ball Animal 3 Extra Upright",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-cinetic-big-ball-animal",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "Cinetic Big Ball Animal Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/cinetic-big-ball-animal"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-cinetic-big-ball-animal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "cinetic big ball animal canister",
+        "vacuumType": "Canister Bagless",
+        "airWatts": 250,
+        "batteryMinutes": 0,
+        "filtrationType": "Cinetic Lifetime Filter",
+        "binCapacityLiters": 1.6,
+        "weightKg": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Cinetic Big Ball Animal Canister",
+      "status": "staged"
+    },
+    {
+      "id": "dyson-outsize-absolute-plus",
+      "canonicalBrand": "Dyson",
+      "displayBrand": "Dyson",
+      "productLine": "Gen5, V15 & Ball Series",
+      "modelName": "Outsize Absolute+ Cordless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dyson.com/vacuum-cleaners/outsize-absolute-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron / Nickel",
+        "Prussian Blue / Copper",
+        "Yellow / Nickel"
+      ],
+      "mediaSource": {
+        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-outsize-absolute-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dyson",
+        "modelName": "outsize absolute+ cordless",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 220,
+        "batteryMinutes": 120,
+        "filtrationType": "Whole-machine HEPA",
+        "binCapacityLiters": 1.9,
+        "weightKg": 3.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Outsize Absolute+ Cordless",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-s8-maxv-ultra",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "S8 MaxV Ultra Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/s8-maxv-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-s8-maxv-ultra.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "s8 maxv ultra robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 45,
+        "batteryMinutes": 180,
+        "filtrationType": "Washable E11 Filter",
+        "binCapacityLiters": 0.35,
+        "weightKg": 4.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner S8 MaxV Ultra Robot",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-s8-pro-ultra",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "S8 Pro Ultra Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/s8-pro-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-s8-pro-ultra.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "s8 pro ultra robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 45,
+        "batteryMinutes": 180,
+        "filtrationType": "Washable E11 Filter",
+        "binCapacityLiters": 0.35,
+        "weightKg": 4.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner S8 Pro Ultra Robot",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-s8-plus",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "S8+ Robot Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/s8-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-s8-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "s8+ robot vacuum",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 45,
+        "batteryMinutes": 180,
+        "filtrationType": "E11 Filter",
+        "binCapacityLiters": 0.35,
+        "weightKg": 4.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner S8+ Robot Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-q-revo-maxv",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "Q Revo MaxV Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/q-revo-maxv"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-q-revo-maxv.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "q revo maxv robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 180,
+        "filtrationType": "Washable E11 Filter",
+        "binCapacityLiters": 0.33,
+        "weightKg": 4.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Q Revo MaxV Robot",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-q-revo-pro",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "Q Revo Pro Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/q-revo-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-q-revo-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "q revo pro robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 180,
+        "filtrationType": "Washable E11 Filter",
+        "binCapacityLiters": 0.33,
+        "weightKg": 4.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Q Revo Pro Robot",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-q-revo-s",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "Q Revo S Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/q-revo-s"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-q-revo-s.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "q revo s robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 180,
+        "filtrationType": "Washable E11 Filter",
+        "binCapacityLiters": 0.33,
+        "weightKg": 4.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Q Revo S Robot",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-q8-max-plus",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "Q8 Max+ Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/q8-max-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-q8-max-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "q8 max+ robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 35,
+        "batteryMinutes": 240,
+        "filtrationType": "E11 Filter",
+        "binCapacityLiters": 0.47,
+        "weightKg": 4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Q8 Max+ Robot",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-q5-pro-plus",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "Q5 Pro+ Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/q5-pro-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-q5-pro-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "q5 pro+ robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 35,
+        "batteryMinutes": 240,
+        "filtrationType": "E11 Filter",
+        "binCapacityLiters": 0.77,
+        "weightKg": 3.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Q5 Pro+ Robot",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-dyad-pro-wet-dry",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "Dyad Pro Wet & Dry Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/dyad-pro-wet-dry"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-dyad-pro-wet-dry.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "dyad pro wet & dry stick",
+        "vacuumType": "Wet & Dry Cordless",
+        "airWatts": 170,
+        "batteryMinutes": 43,
+        "filtrationType": "Multi-stage HEPA",
+        "binCapacityLiters": 0.9,
+        "weightKg": 4.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Dyad Pro Wet & Dry Stick",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-dyad-pro-combo",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "Dyad Pro Combo 5-in-1",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/dyad-pro-combo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-dyad-pro-combo.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "dyad pro combo 5-in-1",
+        "vacuumType": "Wet & Dry Cordless Stick",
+        "airWatts": 170,
+        "batteryMinutes": 60,
+        "filtrationType": "HEPA Sealed",
+        "binCapacityLiters": 0.77,
+        "weightKg": 5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Dyad Pro Combo 5-in-1",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-flexi-pro-wet-dry",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "Flexi Pro Wet & Dry Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/flexi-pro-wet-dry"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-flexi-pro-wet-dry.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "flexi pro wet & dry vacuum",
+        "vacuumType": "Wet & Dry Cordless",
+        "airWatts": 170,
+        "batteryMinutes": 50,
+        "filtrationType": "Sealed HEPA",
+        "binCapacityLiters": 0.73,
+        "weightKg": 5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Flexi Pro Wet & Dry Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "roborock-h7-cordless-stick",
+      "canonicalBrand": "Roborock",
+      "displayBrand": "Roborock",
+      "productLine": "S-Series & Q Revo Robot",
+      "modelName": "H7 Cordless Stick Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.roborock.com/pages/h7-cordless-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://us.roborock.com/images/roborock-h7-cordless-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "roborock",
+        "modelName": "h7 cordless stick vacuum",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 160,
+        "batteryMinutes": 90,
+        "filtrationType": "5-stage HEPA Filtration",
+        "binCapacityLiters": 0.5,
+        "weightKg": 1.46
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roborock intelligent robotic vacuum cleaner H7 Cordless Stick Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-x40-ultra-robot",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "X40 Ultra Robot Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/x40-ultra-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-x40-ultra-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "x40 ultra robot vacuum",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 55,
+        "batteryMinutes": 260,
+        "filtrationType": "High Efficiency HEPA",
+        "binCapacityLiters": 0.3,
+        "weightKg": 4.3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner X40 Ultra Robot Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-x30-ultra-robot",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "X30 Ultra Robot Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/x30-ultra-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-x30-ultra-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "x30 ultra robot vacuum",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 50,
+        "batteryMinutes": 260,
+        "filtrationType": "High Efficiency HEPA",
+        "binCapacityLiters": 0.3,
+        "weightKg": 4.3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner X30 Ultra Robot Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-l20-ultra-robot",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "L20 Ultra Robot Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/l20-ultra-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-l20-ultra-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "l20 ultra robot vacuum",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 45,
+        "batteryMinutes": 260,
+        "filtrationType": "High Efficiency HEPA",
+        "binCapacityLiters": 0.3,
+        "weightKg": 4.3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner L20 Ultra Robot Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-l10s-pro-ultra-heat",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "L10s Pro Ultra Heat Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/l10s-pro-ultra-heat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-l10s-pro-ultra-heat.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "l10s pro ultra heat robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 210,
+        "filtrationType": "High Efficiency HEPA",
+        "binCapacityLiters": 0.35,
+        "weightKg": 4.1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner L10s Pro Ultra Heat Robot",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-d10-plus-gen2-robot",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "D10 Plus Gen 2 Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/d10-plus-gen2-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-d10-plus-gen2-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "d10 plus gen 2 robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 35,
+        "batteryMinutes": 285,
+        "filtrationType": "Washable E11",
+        "binCapacityLiters": 0.57,
+        "weightKg": 3.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner D10 Plus Gen 2 Robot",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-h12-pro-wet-dry",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "H12 Pro Wet and Dry Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/h12-pro-wet-dry"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-h12-pro-wet-dry.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "h12 pro wet and dry vacuum",
+        "vacuumType": "Wet & Dry Cordless",
+        "airWatts": 200,
+        "batteryMinutes": 35,
+        "filtrationType": "Multi-stage Filter",
+        "binCapacityLiters": 0.9,
+        "weightKg": 4.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner H12 Pro Wet and Dry Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-h13-pro-wet-dry",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "H13 Pro Wet and Dry Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/h13-pro-wet-dry"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-h13-pro-wet-dry.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "h13 pro wet and dry vacuum",
+        "vacuumType": "Wet & Dry Cordless",
+        "airWatts": 220,
+        "batteryMinutes": 40,
+        "filtrationType": "High Efficiency Washable",
+        "binCapacityLiters": 0.9,
+        "weightKg": 5.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner H13 Pro Wet and Dry Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-r20-cordless-stick",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "R20 Cordless Stick Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/r20-cordless-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-r20-cordless-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "r20 cordless stick vacuum",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 190,
+        "batteryMinutes": 90,
+        "filtrationType": "5-stage HEPA 99.9%",
+        "binCapacityLiters": 0.6,
+        "weightKg": 1.67
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner R20 Cordless Stick Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-z10-station-cordless",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "Z10 Station Cordless with Auto-Empty",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/z10-station-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-z10-station-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "z10 station cordless with auto-empty",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 150,
+        "batteryMinutes": 65,
+        "filtrationType": "5-layer Filtration",
+        "binCapacityLiters": 0.6,
+        "weightKg": 2.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner Z10 Station Cordless with Auto-Empty",
+      "status": "staged"
+    },
+    {
+      "id": "dreame-r10-pro-cordless-stick",
+      "canonicalBrand": "Dreame",
+      "displayBrand": "Dreame",
+      "productLine": "X & L Series Intelligent Cleaners",
+      "modelName": "R10 Pro Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dreametech.com/products/r10-pro-cordless-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black / Gold"
+      ],
+      "mediaSource": {
+        "url": "https://www.dreametech.com/images/dreame-r10-pro-cordless-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dreame",
+        "modelName": "r10 pro cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 150,
+        "batteryMinutes": 65,
+        "filtrationType": "5-stage Filtration",
+        "binCapacityLiters": 0.6,
+        "weightKg": 1.65
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dreame high-suction intelligent vacuum cleaner R10 Pro Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-x2-omni-robot",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot X2 Omni Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-x2-omni-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-x2-omni-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot x2 omni robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 50,
+        "batteryMinutes": 210,
+        "filtrationType": "High Efficiency E11 Filter",
+        "binCapacityLiters": 0.42,
+        "weightKg": 4.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot X2 Omni Robot",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-t30s-combo",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot T30S Combo Robot & Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-t30s-combo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-t30s-combo.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot t30s combo robot & stick",
+        "vacuumType": "Robot Vacuum & Mop with Stick",
+        "airWatts": 45,
+        "batteryMinutes": 200,
+        "filtrationType": "Washable High Efficiency",
+        "binCapacityLiters": 0.3,
+        "weightKg": 4.1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot T30S Combo Robot & Stick",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-t30-pro-omni",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot T30 Pro Omni Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-t30-pro-omni"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-t30-pro-omni.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot t30 pro omni robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 45,
+        "batteryMinutes": 200,
+        "filtrationType": "Washable High Efficiency",
+        "binCapacityLiters": 0.3,
+        "weightKg": 4.1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot T30 Pro Omni Robot",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-t20-omni",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot T20 Omni Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-t20-omni"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-t20-omni.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot t20 omni robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 170,
+        "filtrationType": "High Efficiency E11",
+        "binCapacityLiters": 0.3,
+        "weightKg": 4.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot T20 Omni Robot",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-n20-plus",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot N20 Plus Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-n20-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-n20-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot n20 plus robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 35,
+        "batteryMinutes": 300,
+        "filtrationType": "PureCyclonic Filtration",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot N20 Plus Robot",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-x1-omni",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot X1 Omni Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-x1-omni"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-x1-omni.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot x1 omni robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 260,
+        "filtrationType": "3-layer High Efficiency",
+        "binCapacityLiters": 0.4,
+        "weightKg": 4.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot X1 Omni Robot",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-y1-pro",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot Y1 Pro Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-y1-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-y1-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot y1 pro robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 30,
+        "batteryMinutes": 200,
+        "filtrationType": "Washable Filter",
+        "binCapacityLiters": 0.45,
+        "weightKg": 3.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot Y1 Pro Robot",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-n10-plus",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot N10 Plus Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-n10-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-n10-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot n10 plus robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 30,
+        "batteryMinutes": 300,
+        "filtrationType": "E11 Antibacterial Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot N10 Plus Robot",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-winbot-w2-omni",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Winbot W2 Omni Window Cleaner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/winbot-w2-omni"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-winbot-w2-omni.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "winbot w2 omni window cleaner",
+        "vacuumType": "Window Robot",
+        "airWatts": 25,
+        "batteryMinutes": 110,
+        "filtrationType": "Bounded Filter",
+        "binCapacityLiters": 0,
+        "weightKg": 1.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Winbot W2 Omni Window Cleaner",
+      "status": "staged"
+    },
+    {
+      "id": "ecovacs-deebot-t9-plus",
+      "canonicalBrand": "Ecovacs",
+      "displayBrand": "Ecovacs",
+      "productLine": "Deebot Omni & Winbot",
+      "modelName": "Deebot T9+ Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-t9-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ecovacs.com/images/ecovacs-deebot-t9-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ecovacs",
+        "modelName": "deebot t9+ robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 30,
+        "batteryMinutes": 175,
+        "filtrationType": "High Efficiency Filter",
+        "binCapacityLiters": 0.42,
+        "weightKg": 3.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ecovacs robotic vacuum and mop cleaner Deebot T9+ Robot",
+      "status": "staged"
+    },
+    {
+      "id": "miele-complete-c3-brilliant",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Complete C3 Brilliant Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/complete-c3-brilliant"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-complete-c3-brilliant.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "complete c3 brilliant canister",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 300,
+        "batteryMinutes": 0,
+        "filtrationType": "HEPA AirClean 50 Filter",
+        "binCapacityLiters": 4.5,
+        "weightKg": 7.3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Complete C3 Brilliant Canister",
+      "status": "staged"
+    },
+    {
+      "id": "miele-complete-c3-marin",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Complete C3 Marin Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/complete-c3-marin"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-complete-c3-marin.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "complete c3 marin canister",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 300,
+        "batteryMinutes": 0,
+        "filtrationType": "HEPA AirClean 50 Filter",
+        "binCapacityLiters": 4.5,
+        "weightKg": 7.3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Complete C3 Marin Canister",
+      "status": "staged"
+    },
+    {
+      "id": "miele-complete-c3-kona",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Complete C3 Kona Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/complete-c3-kona"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-complete-c3-kona.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "complete c3 kona canister",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 300,
+        "batteryMinutes": 0,
+        "filtrationType": "HEPA AirClean Filter",
+        "binCapacityLiters": 4.5,
+        "weightKg": 7.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Complete C3 Kona Canister",
+      "status": "staged"
+    },
+    {
+      "id": "miele-complete-c3-calima",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Complete C3 Calima Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/complete-c3-calima"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-complete-c3-calima.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "complete c3 calima canister",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 300,
+        "batteryMinutes": 0,
+        "filtrationType": "AirClean 3D Filter",
+        "binCapacityLiters": 4.5,
+        "weightKg": 7.1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Complete C3 Calima Canister",
+      "status": "staged"
+    },
+    {
+      "id": "miele-compact-c1-pure-suction",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Compact C1 Pure Suction Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/compact-c1-pure-suction"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-compact-c1-pure-suction.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "compact c1 pure suction canister",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 250,
+        "batteryMinutes": 0,
+        "filtrationType": "AirClean Filter",
+        "binCapacityLiters": 3.5,
+        "weightKg": 6.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Compact C1 Pure Suction Canister",
+      "status": "staged"
+    },
+    {
+      "id": "miele-blizzard-cx1-cat-dog",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Blizzard CX1 Cat & Dog Bagless Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/blizzard-cx1-cat-dog"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-blizzard-cx1-cat-dog.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "blizzard cx1 cat & dog bagless canister",
+        "vacuumType": "Canister Bagless",
+        "airWatts": 250,
+        "batteryMinutes": 0,
+        "filtrationType": "HEPA Lifetime Filter",
+        "binCapacityLiters": 2,
+        "weightKg": 8.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Blizzard CX1 Cat & Dog Bagless Canister",
+      "status": "staged"
+    },
+    {
+      "id": "miele-blizzard-cx1-pure-suction",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Blizzard CX1 Pure Suction Bagless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/blizzard-cx1-pure-suction"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-blizzard-cx1-pure-suction.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "blizzard cx1 pure suction bagless",
+        "vacuumType": "Canister Bagless",
+        "airWatts": 250,
+        "batteryMinutes": 0,
+        "filtrationType": "Hygiene Lifetime Filter",
+        "binCapacityLiters": 2,
+        "weightKg": 8.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Blizzard CX1 Pure Suction Bagless",
+      "status": "staged"
+    },
+    {
+      "id": "miele-triflex-hx2-pro-cordless",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Triflex HX2 Pro Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/triflex-hx2-pro-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-triflex-hx2-pro-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "triflex hx2 pro cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 170,
+        "batteryMinutes": 120,
+        "filtrationType": "HEPA Lifetime Filter",
+        "binCapacityLiters": 0.5,
+        "weightKg": 3.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Triflex HX2 Pro Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "miele-triflex-hx2-cat-dog",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Triflex HX2 Cat & Dog Cordless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/triflex-hx2-cat-dog"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-triflex-hx2-cat-dog.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "triflex hx2 cat & dog cordless",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 170,
+        "batteryMinutes": 60,
+        "filtrationType": "HEPA Lifetime Filter",
+        "binCapacityLiters": 0.5,
+        "weightKg": 3.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Triflex HX2 Cat & Dog Cordless",
+      "status": "staged"
+    },
+    {
+      "id": "miele-triflex-hx2-performance",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Triflex HX2 Performance Cordless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/triflex-hx2-performance"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-triflex-hx2-performance.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "triflex hx2 performance cordless",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 170,
+        "batteryMinutes": 120,
+        "filtrationType": "Hygiene Lifetime Filter",
+        "binCapacityLiters": 0.5,
+        "weightKg": 3.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Triflex HX2 Performance Cordless",
+      "status": "staged"
+    },
+    {
+      "id": "miele-boost-cx1-bagless",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Boost CX1 Bagless Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/boost-cx1-bagless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-boost-cx1-bagless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "boost cx1 bagless canister",
+        "vacuumType": "Compact Canister Bagless",
+        "airWatts": 220,
+        "batteryMinutes": 0,
+        "filtrationType": "Hygiene AirClean Filter",
+        "binCapacityLiters": 1,
+        "weightKg": 7.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Boost CX1 Bagless Canister",
+      "status": "staged"
+    },
+    {
+      "id": "miele-scout-rx3-home-vision-hd",
+      "canonicalBrand": "Miele",
+      "displayBrand": "Miele",
+      "productLine": "Complete C3 & Triflex HX2",
+      "modelName": "Scout RX3 Home Vision HD Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/scout-rx3-home-vision-hd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Bronze Pearl Finish",
+        "Obsidian Black",
+        "Lotus White"
+      ],
+      "mediaSource": {
+        "url": "https://media.miele.com/images/miele-scout-rx3-home-vision-hd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "miele",
+        "modelName": "scout rx3 home vision hd robot",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 20,
+        "batteryMinutes": 120,
+        "filtrationType": "AirClean Plus Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miele German engineered vacuum cleaner Scout RX3 Home Vision HD Robot",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-combo-j9-plus",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba Combo j9+ Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-combo-j9-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-combo-j9-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba combo j9+ robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 35,
+        "batteryMinutes": 120,
+        "filtrationType": "High-Efficiency Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba Combo j9+ Robot",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-j9-plus",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba j9+ Robot Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-j9-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-j9-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba j9+ robot vacuum",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 35,
+        "batteryMinutes": 120,
+        "filtrationType": "High-Efficiency Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba j9+ Robot Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-combo-j7-plus",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba Combo j7+ Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-combo-j7-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-combo-j7-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba combo j7+ robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 30,
+        "batteryMinutes": 120,
+        "filtrationType": "High-Efficiency Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba Combo j7+ Robot",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-j7-plus",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba j7+ Self-Emptying Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-j7-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-j7-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba j7+ self-emptying robot",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 30,
+        "batteryMinutes": 120,
+        "filtrationType": "High-Efficiency Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba j7+ Self-Emptying Robot",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-s9-plus",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba s9+ Robot Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-s9-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-s9-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba s9+ robot vacuum",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 40,
+        "batteryMinutes": 120,
+        "filtrationType": "Anti-Allergen System HEPA",
+        "binCapacityLiters": 0.5,
+        "weightKg": 3.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba s9+ Robot Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-combo-10-max",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba Combo 10 Max Robot & Dock",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-combo-10-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-combo-10-max.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba combo 10 max robot & dock",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 180,
+        "filtrationType": "Sealed High-Efficiency",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba Combo 10 Max Robot & Dock",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-combo-i5-plus",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba Combo i5+ Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-combo-i5-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-combo-i5-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba combo i5+ robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 25,
+        "batteryMinutes": 90,
+        "filtrationType": "High-Efficiency Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba Combo i5+ Robot",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-i3-plus-evo",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba i3+ EVO Self-Emptying",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-i3-plus-evo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-i3-plus-evo.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba i3+ evo self-emptying",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 25,
+        "batteryMinutes": 90,
+        "filtrationType": "High-Efficiency Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba i3+ EVO Self-Emptying",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-braava-jet-m6-mop",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Braava jet m6 Robot Mop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/braava-jet-m6-mop"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-braava-jet-m6-mop.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "braava jet m6 robot mop",
+        "vacuumType": "Robot Mop",
+        "airWatts": 0,
+        "batteryMinutes": 150,
+        "filtrationType": "Washable Wet/Dry Pads",
+        "binCapacityLiters": 0.45,
+        "weightKg": 2.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Braava jet m6 Robot Mop",
+      "status": "staged"
+    },
+    {
+      "id": "irobot-roomba-combo-essential",
+      "canonicalBrand": "iRobot",
+      "displayBrand": "iRobot",
+      "productLine": "Roomba & Braava Robotic Cleaners",
+      "modelName": "Roomba Combo Essential Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.irobot.com/roomba/roomba-combo-essential"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Graphite",
+        "Matte Black",
+        "Woven Neutral Dock"
+      ],
+      "mediaSource": {
+        "url": "https://www.irobot.com/images/irobot-roomba-combo-essential.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "irobot",
+        "modelName": "roomba combo essential robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 20,
+        "batteryMinutes": 120,
+        "filtrationType": "Washable Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 2.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba Combo Essential Robot",
+      "status": "staged"
+    },
+    {
+      "id": "shark-stratos-cordless-clean-sense",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Stratos Cordless with Clean Sense IQ",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/stratos-cordless-clean-sense"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-stratos-cordless-clean-sense.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "stratos cordless with clean sense iq",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 180,
+        "batteryMinutes": 60,
+        "filtrationType": "Anti-Allergen Complete Seal HEPA",
+        "binCapacityLiters": 0.7,
+        "weightKg": 4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Stratos Cordless with Clean Sense IQ",
+      "status": "staged"
+    },
+    {
+      "id": "shark-stratos-upright-duoclean",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Stratos Upright Vacuum with DuoClean",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/stratos-upright-duoclean"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-stratos-upright-duoclean.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "stratos upright vacuum with duoclean",
+        "vacuumType": "Upright Bagless",
+        "airWatts": 280,
+        "batteryMinutes": 0,
+        "filtrationType": "Anti-Allergen Complete Seal HEPA",
+        "binCapacityLiters": 1.3,
+        "weightKg": 7.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Stratos Upright Vacuum with DuoClean",
+      "status": "staged"
+    },
+    {
+      "id": "shark-powerdetect-nevertouch-pro",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "PowerDetect NeverTouch Pro Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/powerdetect-nevertouch-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-powerdetect-nevertouch-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "powerdetect nevertouch pro robot",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 180,
+        "filtrationType": "HEPA Sealed Base",
+        "binCapacityLiters": 0.35,
+        "weightKg": 4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum PowerDetect NeverTouch Pro Robot",
+      "status": "staged"
+    },
+    {
+      "id": "shark-matrix-plus-2in1-robot",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Matrix Plus 2-in-1 Robot with XL HEPA Base",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/matrix-plus-2in1-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-matrix-plus-2in1-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "matrix plus 2-in-1 robot with xl hepa base",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 35,
+        "batteryMinutes": 120,
+        "filtrationType": "True HEPA Filtration",
+        "binCapacityLiters": 0.3,
+        "weightKg": 3.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Matrix Plus 2-in-1 Robot with XL HEPA Base",
+      "status": "staged"
+    },
+    {
+      "id": "shark-vertex-pro-cordless",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Vertex Pro Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/vertex-pro-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-vertex-pro-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "vertex pro cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 160,
+        "batteryMinutes": 60,
+        "filtrationType": "Anti-Allergen Complete Seal HEPA",
+        "binCapacityLiters": 0.95,
+        "weightKg": 4.1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Vertex Pro Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "shark-vertex-duoclean-powerfins-upright",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Vertex DuoClean PowerFins Upright",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/vertex-duoclean-powerfins-upright"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-vertex-duoclean-powerfins-upright.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "vertex duoclean powerfins upright",
+        "vacuumType": "Upright Bagless",
+        "airWatts": 260,
+        "batteryMinutes": 0,
+        "filtrationType": "Anti-Allergen Complete Seal HEPA",
+        "binCapacityLiters": 1,
+        "weightKg": 7.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Vertex DuoClean PowerFins Upright",
+      "status": "staged"
+    },
+    {
+      "id": "shark-wandvac-system-cordless",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Wandvac System Ultra-Lightweight Cordless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/wandvac-system-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-wandvac-system-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "wandvac system ultra-lightweight cordless",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 80,
+        "batteryMinutes": 25,
+        "filtrationType": "Washable Fabric Filter",
+        "binCapacityLiters": 0.12,
+        "weightKg": 2.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Wandvac System Ultra-Lightweight Cordless",
+      "status": "staged"
+    },
+    {
+      "id": "shark-hydrovac-cordless-pro-xl",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "HydroVac Cordless Pro XL Wet/Dry",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/hydrovac-cordless-pro-xl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-hydrovac-cordless-pro-xl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "hydrovac cordless pro xl wet/dry",
+        "vacuumType": "Wet & Dry Cordless",
+        "airWatts": 150,
+        "batteryMinutes": 25,
+        "filtrationType": "Anti-Microbial Filter",
+        "binCapacityLiters": 0.5,
+        "weightKg": 4.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum HydroVac Cordless Pro XL Wet/Dry",
+      "status": "staged"
+    },
+    {
+      "id": "shark-navigator-lift-away-deluxe",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Navigator Lift-Away Deluxe Upright",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/navigator-lift-away-deluxe"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-navigator-lift-away-deluxe.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "navigator lift-away deluxe upright",
+        "vacuumType": "Upright Bagless",
+        "airWatts": 220,
+        "batteryMinutes": 0,
+        "filtrationType": "Anti-Allergen Complete Seal HEPA",
+        "binCapacityLiters": 1.1,
+        "weightKg": 5.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Navigator Lift-Away Deluxe Upright",
+      "status": "staged"
+    },
+    {
+      "id": "shark-rotator-lift-away-truepet",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Rotator Lift-Away TruePet Upright",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/rotator-lift-away-truepet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-rotator-lift-away-truepet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "rotator lift-away truepet upright",
+        "vacuumType": "Upright Bagless",
+        "airWatts": 250,
+        "batteryMinutes": 0,
+        "filtrationType": "True HEPA Complete Seal",
+        "binCapacityLiters": 1.4,
+        "weightKg": 6.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Rotator Lift-Away TruePet Upright",
+      "status": "staged"
+    },
+    {
+      "id": "shark-cordless-pro-clean-sense",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Cordless Pro with Clean Sense IQ",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/cordless-pro-clean-sense"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-cordless-pro-clean-sense.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "cordless pro with clean sense iq",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 140,
+        "batteryMinutes": 40,
+        "filtrationType": "Anti-Allergen Complete Seal",
+        "binCapacityLiters": 0.72,
+        "weightKg": 3.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Cordless Pro with Clean Sense IQ",
+      "status": "staged"
+    },
+    {
+      "id": "shark-detect-pro-auto-empty",
+      "canonicalBrand": "Shark",
+      "displayBrand": "Shark",
+      "productLine": "Stratos & Vertex Cleaners",
+      "modelName": "Detect Pro Auto-Empty Cordless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sharkclean.com/vacuums/detect-pro-auto-empty"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold",
+        "Charcoal Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.sharkclean.com/images/shark-detect-pro-auto-empty.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shark",
+        "modelName": "detect pro auto-empty cordless",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 150,
+        "batteryMinutes": 40,
+        "filtrationType": "True HEPA Sealed",
+        "binCapacityLiters": 0.42,
+        "weightKg": 2.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shark high-performance sealed HEPA vacuum Detect Pro Auto-Empty Cordless",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-pure-f9-cordless-stick",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "Pure F9 Cordless Stick Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/pure-f9-cordless-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-pure-f9-cordless-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "pure f9 cordless stick vacuum",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 160,
+        "batteryMinutes": 60,
+        "filtrationType": "5-stage Micro-Dust Filtration",
+        "binCapacityLiters": 0.7,
+        "weightKg": 3.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure F9 Cordless Stick Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-ultimatehome-900-cordless",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "UltimateHome 900 Cordless Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/ultimatehome-900-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-ultimatehome-900-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "ultimatehome 900 cordless vacuum",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 150,
+        "batteryMinutes": 120,
+        "filtrationType": "5-step Sealed HEPA",
+        "binCapacityLiters": 0.4,
+        "weightKg": 2.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner UltimateHome 900 Cordless Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-ultimatehome-700-cordless",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "UltimateHome 700 Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/ultimatehome-700-cordless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-ultimatehome-700-cordless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "ultimatehome 700 cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 130,
+        "batteryMinutes": 50,
+        "filtrationType": "5-step HEPA Filter",
+        "binCapacityLiters": 0.3,
+        "weightKg": 2.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner UltimateHome 700 Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-pure-c9-bagless-canister",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "Pure C9 Bagless Canister Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/pure-c9-bagless-canister"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-pure-c9-bagless-canister.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "pure c9 bagless canister vacuum",
+        "vacuumType": "Canister Bagless",
+        "airWatts": 220,
+        "batteryMinutes": 0,
+        "filtrationType": "Sealed HEPA Lifetime 3D",
+        "binCapacityLiters": 1.6,
+        "weightKg": 7.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure C9 Bagless Canister Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-pure-d9-bagged-canister",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "Pure D9 Bagged Canister Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/pure-d9-bagged-canister"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-pure-d9-bagged-canister.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "pure d9 bagged canister vacuum",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 260,
+        "batteryMinutes": 0,
+        "filtrationType": "Allergy Plus Washable Filter",
+        "binCapacityLiters": 5,
+        "weightKg": 7.1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure D9 Bagged Canister Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-pure-q9-cordless-stick",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "Pure Q9 2-in-1 Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/pure-q9-cordless-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-pure-q9-cordless-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "pure q9 2-in-1 cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 120,
+        "batteryMinutes": 55,
+        "filtrationType": "5-stage Filter",
+        "binCapacityLiters": 0.3,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure Q9 2-in-1 Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-well-q7-cordless-stick",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "Well Q7 Cordless Stick Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/well-q7-cordless-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-well-q7-cordless-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "well q7 cordless stick vacuum",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 110,
+        "batteryMinutes": 50,
+        "filtrationType": "5-step Filtration with E10",
+        "binCapacityLiters": 0.3,
+        "weightKg": 2.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Well Q7 Cordless Stick Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-pure-i9-2-3d-vision-robot",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "Pure i9.2 3D Vision Robot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/pure-i9-2-3d-vision-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-pure-i9-2-3d-vision-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "pure i9.2 3d vision robot",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 25,
+        "batteryMinutes": 120,
+        "filtrationType": "Washable XXL Filter",
+        "binCapacityLiters": 0.7,
+        "weightKg": 3.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure i9.2 3D Vision Robot",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-ultraflex-bagless-canister",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "UltraFlex Bagless Canister Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/ultraflex-bagless-canister"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-ultraflex-bagless-canister.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "ultraflex bagless canister vacuum",
+        "vacuumType": "Canister Bagless",
+        "airWatts": 240,
+        "batteryMinutes": 0,
+        "filtrationType": "Sealed HEPA H12",
+        "binCapacityLiters": 1.6,
+        "weightKg": 7.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner UltraFlex Bagless Canister Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "electrolux-ergorapido-classic-stick",
+      "canonicalBrand": "Electrolux",
+      "displayBrand": "Electrolux",
+      "productLine": "Pure & UltimateHome Cleaners",
+      "modelName": "Ergorapido Classic 2-in-1 Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.electrolux.com/vacuums/ergorapido-classic-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Satin White",
+        "Urban Grey",
+        "Denim Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.electrolux.com/images/electrolux-ergorapido-classic-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "electrolux",
+        "modelName": "ergorapido classic 2-in-1 stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 90,
+        "batteryMinutes": 35,
+        "filtrationType": "Double Filtration",
+        "binCapacityLiters": 0.5,
+        "weightKg": 2.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Ergorapido Classic 2-in-1 Stick",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-bespoke-jet-ai-stick",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Bespoke Jet AI Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/bespoke-jet-ai-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-bespoke-jet-ai-stick"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "bespoke jet ai cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 280,
+        "batteryMinutes": 100,
+        "filtrationType": "99.999% Multi-layered HEPA",
+        "binCapacityLiters": 0.5,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Bespoke Jet AI Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-bespoke-jet-pro-extra",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Bespoke Jet Pro Extra Cordless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/bespoke-jet-pro-extra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-bespoke-jet-pro-extra"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "bespoke jet pro extra cordless",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 210,
+        "batteryMinutes": 120,
+        "filtrationType": "99.999% Multi-layered HEPA",
+        "binCapacityLiters": 0.5,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Bespoke Jet Pro Extra Cordless",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-jet-90-complete-stick",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Jet 90 Complete Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/jet-90-complete-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-jet-90-complete-stick"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "jet 90 complete cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 200,
+        "batteryMinutes": 60,
+        "filtrationType": "5-layered HEPA System",
+        "binCapacityLiters": 0.8,
+        "weightKg": 2.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Jet 90 Complete Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-jet-85-pet-stick",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Jet 85 Pet Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/jet-85-pet-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-jet-85-pet-stick"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "jet 85 pet cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 210,
+        "batteryMinutes": 60,
+        "filtrationType": "99.999% Multi-layer Filtration",
+        "binCapacityLiters": 0.8,
+        "weightKg": 2.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Jet 85 Pet Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-jet-75-complete-stick",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Jet 75 Complete Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/jet-75-complete-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-jet-75-complete-stick"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "jet 75 complete cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 200,
+        "batteryMinutes": 60,
+        "filtrationType": "5-layer HEPA Filtration",
+        "binCapacityLiters": 0.8,
+        "weightKg": 2.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Jet 75 Complete Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-jet-60-pet-stick",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Jet 60 Pet Lightweight Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/jet-60-pet-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-jet-60-pet-stick"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "jet 60 pet lightweight stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 150,
+        "batteryMinutes": 40,
+        "filtrationType": "5-layer Micro Filtration",
+        "binCapacityLiters": 0.8,
+        "weightKg": 2.3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Jet 60 Pet Lightweight Stick",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-bespoke-jet-bot-combo-ai",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Bespoke Jet Bot Combo AI Steam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/bespoke-jet-bot-combo-ai"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-bespoke-jet-bot-combo-ai"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "bespoke jet bot combo ai steam",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 45,
+        "batteryMinutes": 180,
+        "filtrationType": "Washable Fine Dust Filter",
+        "binCapacityLiters": 0.3,
+        "weightKg": 4.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Bespoke Jet Bot Combo AI Steam",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-jet-bot-ai-plus-robot",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Jet Bot AI+ Robot with LiDAR & Camera",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/jet-bot-ai-plus-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-jet-bot-ai-plus-robot"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "jet bot ai+ robot with lidar & camera",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 40,
+        "batteryMinutes": 90,
+        "filtrationType": "99.999% Multi-layered Filtration",
+        "binCapacityLiters": 0.2,
+        "weightKg": 4.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Jet Bot AI+ Robot with LiDAR & Camera",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-jet-bot-plus-robot",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Jet Bot+ Robot Vacuum with Clean Station",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/jet-bot-plus-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-jet-bot-plus-robot"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "jet bot+ robot vacuum with clean station",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 30,
+        "batteryMinutes": 90,
+        "filtrationType": "High-Efficiency Washable",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Jet Bot+ Robot Vacuum with Clean Station",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-jet-bot-robot-vacuum",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Bespoke Jet & Jet Bot Cleaners",
+      "modelName": "Jet Bot Robot Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/home-appliances/vacuums/jet-bot-robot-vacuum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Woody Green",
+        "Misty White"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-jet-bot-robot-vacuum"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "jet bot robot vacuum",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 30,
+        "batteryMinutes": 90,
+        "filtrationType": "Washable Dust Filter",
+        "binCapacityLiters": 0.4,
+        "weightKg": 3.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Bespoke high-filtration vacuum cleaner Jet Bot Robot Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-a9-kompressor-tower",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero A9 Kompressor with All-in-One Tower",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-a9-kompressor-tower"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-a9-kompressor-tower.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero a9 kompressor with all-in-one tower",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 220,
+        "batteryMinutes": 120,
+        "filtrationType": "5-step HEPA Filtration",
+        "binCapacityLiters": 0.44,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero A9 Kompressor with All-in-One Tower",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-a9-ultimate-stick",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero A9 Ultimate Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-a9-ultimate-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-a9-ultimate-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero a9 ultimate cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 200,
+        "batteryMinutes": 120,
+        "filtrationType": "5-stage HEPA Filtration",
+        "binCapacityLiters": 0.44,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero A9 Ultimate Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-a9-charge-stick",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero A9 Charge Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-a9-charge-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-a9-charge-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero a9 charge cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 160,
+        "batteryMinutes": 80,
+        "filtrationType": "5-stage Filtration System",
+        "binCapacityLiters": 0.44,
+        "weightKg": 2.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero A9 Charge Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-all-in-one-mop",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero All-in-One Cordless Stick & Mop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-all-in-one-mop"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-all-in-one-mop.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero all-in-one cordless stick & mop",
+        "vacuumType": "Cordless Wet & Dry Stick",
+        "airWatts": 220,
+        "batteryMinutes": 120,
+        "filtrationType": "5-stage HEPA System",
+        "binCapacityLiters": 0.44,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero All-in-One Cordless Stick & Mop",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-thinq-robot-r9",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero ThinQ Robot Vacuum R9",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-thinq-robot-r9"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-thinq-robot-r9.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero thinq robot vacuum r9",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 50,
+        "batteryMinutes": 90,
+        "filtrationType": "5-step HEPA Filtration",
+        "binCapacityLiters": 0.6,
+        "weightKg": 4.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero ThinQ Robot Vacuum R9",
+      "status": "staged"
+    },
+    {
+      "id": "lg-hom-bot-square-robot",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "Hom-Bot Square Robotic Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/hom-bot-square-robot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-hom-bot-square-robot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "hom-bot square robotic vacuum",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 20,
+        "batteryMinutes": 100,
+        "filtrationType": "Dual Eye HEPA Filter",
+        "binCapacityLiters": 0.6,
+        "weightKg": 3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner Hom-Bot Square Robotic Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-canister-bagless",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero Canister Bagless Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-canister-bagless"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-canister-bagless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero canister bagless vacuum",
+        "vacuumType": "Canister Bagless",
+        "airWatts": 240,
+        "batteryMinutes": 40,
+        "filtrationType": "Kompressor HEPA 14",
+        "binCapacityLiters": 1.2,
+        "weightKg": 7.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero Canister Bagless Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-bedding-cleaner",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero Bedding Cleaner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-bedding-cleaner"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-bedding-cleaner.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero bedding cleaner",
+        "vacuumType": "Cordless Upholstery Vacuum",
+        "airWatts": 100,
+        "batteryMinutes": 30,
+        "filtrationType": "Dual HEPA Punch Filter",
+        "binCapacityLiters": 0.2,
+        "weightKg": 1.9
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero Bedding Cleaner",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-a937kg-stick",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero A937KG Kompressor Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-a937kg-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-a937kg-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero a937kg kompressor stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 200,
+        "batteryMinutes": 120,
+        "filtrationType": "5-stage HEPA Filtration",
+        "binCapacityLiters": 0.44,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero A937KG Kompressor Stick",
+      "status": "staged"
+    },
+    {
+      "id": "lg-cordzero-a916bm-stick",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "CordZero & Hom-Bot Cleaners",
+      "modelName": "CordZero A916BM Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/vacuums/cordzero-a916bm-stick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Iron Grey",
+        "Calming Beige",
+        "Matte Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/us/images/vacuums/lg-cordzero-a916bm-stick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "cordzero a916bm cordless stick",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 160,
+        "batteryMinutes": 100,
+        "filtrationType": "5-step Washable Filter",
+        "binCapacityLiters": 0.44,
+        "weightKg": 2.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero A916BM Cordless Stick",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": []
+}

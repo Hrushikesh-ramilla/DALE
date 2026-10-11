@@ -1,0 +1,3413 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "home-textiles",
+  "displayName": "Bedding & Home Textiles",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "frette-ultimate-sateen-sheet-set",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Ultimate Sateen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/ultimate-sateen-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-ultimate-sateen-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "ultimate sateen sheet set",
+        "fiberType": "100% Extra Long-Staple Egyptian Cotton",
+        "threadCount": 1000,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold, line dry recommended"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Ultimate Sateen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "frette-links-embroidered-duvet-cover",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Links Embroidered Sateen Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/links-embroidered-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-links-embroidered-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "links embroidered sateen duvet cover",
+        "fiberType": "100% Long-Staple Egyptian Cotton",
+        "threadCount": 500,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold, tumble dry low"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Links Embroidered Sateen Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "frette-hotel-classic-percale-sheet-set",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Hotel Classic Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/hotel-classic-percale-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-hotel-classic-percale-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "hotel classic percale sheet set",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 300,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm, tumble dry medium"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Hotel Classic Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "frette-chains-luxury-jacquard-duvet",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Chains Luxury Jacquard Duvet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/chains-luxury-jacquard-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-chains-luxury-jacquard-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "chains luxury jacquard duvet set",
+        "fiberType": "100% Giza Egyptian Cotton",
+        "threadCount": 600,
+        "weaveType": "Jacquard",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold, iron damp"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Chains Luxury Jacquard Duvet Set",
+      "status": "staged"
+    },
+    {
+      "id": "frette-herringbone-cashmere-throw",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Luxury Herringbone Cashmere Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/herringbone-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-herringbone-cashmere-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "luxury herringbone cashmere throw blanket",
+        "fiberType": "100% Pure Mongolian Cashmere",
+        "threadCount": 0,
+        "weaveType": "Twill",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Luxury Herringbone Cashmere Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "frette-pure-silk-charmeuse-quilt",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Pure Silk Charmeuse Quilt",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/pure-silk-charmeuse-quilt"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-pure-silk-charmeuse-quilt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "pure silk charmeuse quilt",
+        "fiberType": "100% Mulberry Silk with Cotton Backing",
+        "threadCount": 0,
+        "weaveType": "Sateen Quilted",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Pure Silk Charmeuse Quilt",
+      "status": "staged"
+    },
+    {
+      "id": "frette-doppio-ajour-hemstitch-sheets",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Doppio Ajour Hemstitch Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/doppio-ajour-hemstitch-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-doppio-ajour-hemstitch-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "doppio ajour hemstitch sheet set",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 500,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold, tumble dry low"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Doppio Ajour Hemstitch Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "frette-illusion-jacquard-coverlet",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Illusion Geometric Jacquard Coverlet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/illusion-jacquard-coverlet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-illusion-jacquard-coverlet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "illusion geometric jacquard coverlet",
+        "fiberType": "100% Mercerized Cotton",
+        "threadCount": 400,
+        "weaveType": "Jacquard",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Illusion Geometric Jacquard Coverlet",
+      "status": "staged"
+    },
+    {
+      "id": "frette-bi-color-sateen-pillowcases",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Bi-Color Sateen Border Pillowcases",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/bi-color-sateen-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-bi-color-sateen-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "bi-color sateen border pillowcases",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 300,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Bi-Color Sateen Border Pillowcases",
+      "status": "staged"
+    },
+    {
+      "id": "frette-waffle-weave-pique-bedspread",
+      "canonicalBrand": "Frette",
+      "displayBrand": "Frette",
+      "productLine": "Italian Luxury Linens",
+      "modelName": "Waffle Weave Piqué Bedspread",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.frette.com/en_US/waffle-weave-pique-bedspread"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King",
+        "Cal King"
+      ],
+      "mediaSource": {
+        "url": "https://www.frette.com/images/frette-waffle-weave-pique-bedspread.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "frette",
+        "modelName": "waffle weave piqué bedspread",
+        "fiberType": "100% Combed Cotton",
+        "threadCount": 0,
+        "weaveType": "Piqué Waffle",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Frette Italian master heritage linen Waffle Weave Piqué Bedspread",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-tre-bouquets-angel-fleece",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Tre Bouquets Angel Fleece Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/tre-bouquets-angel-fleece"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-tre-bouquets-angel-fleece.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "tre bouquets angel fleece sheet set",
+        "fiberType": "100% Long-Staple Egyptian Combed Cotton",
+        "threadCount": 600,
+        "weaveType": "Percale (Angel Fleece)",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash gentle cold, tumble dry low"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Tre Bouquets Angel Fleece Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-chain-classic-sateen-duvet",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Chain Classic Sateen Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/chain-classic-sateen-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-chain-classic-sateen-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "chain classic sateen duvet cover",
+        "fiberType": "100% Egyptian Giza Cotton",
+        "threadCount": 600,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold, line dry"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Chain Classic Sateen Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-dolce-vita-sateen-sheets",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Dolce Vita Sateen Hemstitch Sheets",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/dolce-vita-sateen-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-dolce-vita-sateen-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "dolce vita sateen hemstitch sheets",
+        "fiberType": "100% Extra Long-Staple Cotton",
+        "threadCount": 400,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Dolce Vita Sateen Hemstitch Sheets",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-butterfly-percale-pillowcases",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Butterfly Embroidered Percale Pillowcase Pair",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/butterfly-percale-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-butterfly-percale-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "butterfly embroidered percale pillowcase pair",
+        "fiberType": "100% Egyptian Cotton",
+        "threadCount": 500,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold, iron warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Butterfly Embroidered Percale Pillowcase Pair",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-queen-cashmere-wool-throw",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Queen Cashmere & Wool Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/queen-cashmere-wool-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-queen-cashmere-wool-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "queen cashmere & wool throw",
+        "fiberType": "70% Virgin Wool 30% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Herringbone Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Queen Cashmere & Wool Throw",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-clessidra-jacquard-duvet",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Clessidra Hourglass Jacquard Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/clessidra-jacquard-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-clessidra-jacquard-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "clessidra hourglass jacquard duvet cover",
+        "fiberType": "100% Mercerized Cotton",
+        "threadCount": 500,
+        "weaveType": "Jacquard",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Clessidra Hourglass Jacquard Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-linea-hemstitched-linen-duvet",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Linea Hemstitched Linen Duvet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/linea-hemstitched-linen-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-linea-hemstitched-linen-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "linea hemstitched linen duvet set",
+        "fiberType": "100% Italian Washed Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Plain Linen Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Linea Hemstitched Linen Duvet Set",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-sfumato-silk-quilt",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Sfumato Degrade Silk Quilt",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/sfumato-silk-quilt"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-sfumato-silk-quilt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "sfumato degrade silk quilt",
+        "fiberType": "100% Italian Silk with Pure Wool Filling",
+        "threadCount": 0,
+        "weaveType": "Quilted Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Sfumato Degrade Silk Quilt",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-intreccio-pique-bedspread",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Intreccio Woven Piqué Bedspread",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/intreccio-pique-bedspread"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-intreccio-pique-bedspread.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "intreccio woven piqué bedspread",
+        "fiberType": "100% Combed Cotton",
+        "threadCount": 0,
+        "weaveType": "Textured Piqué",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Intreccio Woven Piqué Bedspread",
+      "status": "staged"
+    },
+    {
+      "id": "pratesi-monogram-percale-sheet-set",
+      "canonicalBrand": "Pratesi",
+      "displayBrand": "Pratesi",
+      "productLine": "Tuscan Artisan Bedding",
+      "modelName": "Monogram Custom Finish Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pratesi.com/en-us/products/monogram-percale-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.pratesi.com/images/pratesi-monogram-percale-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pratesi",
+        "modelName": "monogram custom finish percale sheet set",
+        "fiberType": "100% Giza Cotton",
+        "threadCount": 600,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pratesi Tuscan heritage luxury linen Monogram Custom Finish Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-giza-45-sateen-sheet-set",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Giza 45 Sateen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/giza-45-sateen-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-giza-45-sateen-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "giza 45 sateen sheet set",
+        "fiberType": "100% Giza 45 Egyptian Cotton",
+        "threadCount": 1050,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash gentle cold, line dry recommended"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Giza 45 Sateen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-giza-45-percale-sheet-set",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Giza 45 Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/giza-45-percale-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-giza-45-percale-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "giza 45 percale sheet set",
+        "fiberType": "100% Giza 45 Egyptian Cotton",
+        "threadCount": 800,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash gentle cold, warm iron"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Giza 45 Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-celeste-classic-percale-duvet",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Celeste Classic Percale Duvet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/celeste-classic-percale-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-celeste-classic-percale-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "celeste classic percale duvet set",
+        "fiberType": "100% Extra Long-Staple Cotton",
+        "threadCount": 406,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold, tumble dry low"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Celeste Classic Percale Duvet Set",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-finna-sateen-duvet-cover",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Finna Sateen Embroidered Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/finna-sateen-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-finna-sateen-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "finna sateen embroidered duvet cover",
+        "fiberType": "100% Extra Long-Staple Cotton",
+        "threadCount": 600,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Finna Sateen Embroidered Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-milos-washed-linen-sheet-set",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Milos Washed Italian Linen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/milos-washed-linen-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-milos-washed-linen-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "milos washed italian linen sheet set",
+        "fiberType": "100% Pure Italian Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Plain Linen Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash gentle cold, line dry"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Milos Washed Italian Linen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-giotto-classic-luxe-sateen",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Giotto Classic Luxe Sateen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/giotto-classic-luxe-sateen"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-giotto-classic-luxe-sateen.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "giotto classic luxe sateen sheet set",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 590,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash gentle cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Giotto Classic Luxe Sateen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-bello-diamond-weave-blanket",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Bello Diamond Weave Cotton Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/bello-diamond-weave-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-bello-diamond-weave-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "bello diamond weave cotton blanket",
+        "fiberType": "100% Long-Staple Combed Cotton",
+        "threadCount": 0,
+        "weaveType": "Dobby Diamond Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Bello Diamond Weave Cotton Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-dorsey-herringbone-cashmere-throw",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Dorsey Herringbone Cashmere Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/dorsey-herringbone-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-dorsey-herringbone-cashmere-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "dorsey herringbone cashmere throw",
+        "fiberType": "100% Pure Cashmere",
+        "threadCount": 0,
+        "weaveType": "Twill Weave with Fringe",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Dorsey Herringbone Cashmere Throw",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-grande-hotel-percale-sheet-set",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Grande Hotel Two-Tone Hemstitch Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/grande-hotel-percale-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-grande-hotel-percale-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "grande hotel two-tone hemstitch sheet set",
+        "fiberType": "100% Combed Cotton",
+        "threadCount": 200,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Grande Hotel Two-Tone Hemstitch Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-orlo-tailored-sateen-pillowcases",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Orlo Tailored Sateen Pillowcase Pair",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/orlo-tailored-sateen-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-orlo-tailored-sateen-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "orlo tailored sateen pillowcase pair",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 500,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Orlo Tailored Sateen Pillowcase Pair",
+      "status": "staged"
+    },
+    {
+      "id": "sferra-terzo-classic-hemstitch-flat-sheet",
+      "canonicalBrand": "SFERRA",
+      "displayBrand": "SFERRA",
+      "productLine": "Giza 45 & Fine Linens",
+      "modelName": "Terzo Classic Double Hemstitch Flat Sheet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sferra.com/products/terzo-classic-hemstitch-flat-sheet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Ivory",
+        "Tin Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.sferra.com/images/sferra-terzo-classic-hemstitch-flat-sheet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sferra",
+        "modelName": "terzo classic double hemstitch flat sheet",
+        "fiberType": "100% Egyptian Cotton",
+        "threadCount": 300,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Terzo Classic Double Hemstitch Flat Sheet",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-triomphe-sateen-sheet-set",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Triomphe Silky Sateen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/triomphe-sateen-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-triomphe-sateen-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "triomphe silky sateen sheet set",
+        "fiberType": "100% Organic Long-Staple Combed Cotton",
+        "threadCount": 300,
+        "weaveType": "Sateen",
+        "originCountry": "France",
+        "careInstructions": "Machine wash warm gentle, tumble dry low"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Triomphe Silky Sateen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-athena-percale-duvet-cover",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Athena Embroidered Classic Percale Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/athena-percale-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-athena-percale-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "athena embroidered classic percale duvet cover",
+        "fiberType": "100% Organic Long-Staple Combed Cotton",
+        "threadCount": 500,
+        "weaveType": "Percale",
+        "originCountry": "France",
+        "careInstructions": "Machine wash warm gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Athena Embroidered Classic Percale Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-etoile-micro-cotton-textile",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Étoile Luxury Micro-Cotton Towel & Bathrobe Textile",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/etoile-micro-cotton-textile"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-etoile-micro-cotton-textile.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "étoile luxury micro-cotton towel & bathrobe textile",
+        "fiberType": "83% Organic Cotton 17% Modal",
+        "threadCount": 0,
+        "weaveType": "Terry Velour",
+        "originCountry": "France",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Étoile Luxury Micro-Cotton Towel & Bathrobe Textile",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-walton-percale-sheet-set",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Walton Tailored Hemstitched Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/walton-percale-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-walton-percale-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "walton tailored hemstitched percale sheet set",
+        "fiberType": "100% Organic Combed Cotton",
+        "threadCount": 400,
+        "weaveType": "Percale",
+        "originCountry": "France",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Walton Tailored Hemstitched Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-nectar-botanical-sateen-duvet",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Nectar Botanical Print Sateen Duvet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/nectar-botanical-sateen-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-nectar-botanical-sateen-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "nectar botanical print sateen duvet set",
+        "fiberType": "100% Organic Cotton Sateen",
+        "threadCount": 300,
+        "weaveType": "Sateen",
+        "originCountry": "France",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Nectar Botanical Print Sateen Duvet Set",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-iosis-tapestry-throw-pillow",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Iosis Tapestry Jacquard Throw Pillow Textile",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/iosis-tapestry-throw-pillow"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-iosis-tapestry-throw-pillow.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "iosis tapestry jacquard throw pillow textile",
+        "fiberType": "100% Woven Cotton Tapestry",
+        "threadCount": 0,
+        "weaveType": "Tapestry Jacquard",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Iosis Tapestry Jacquard Throw Pillow Textile",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-alveole-honeycomb-coverlet",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Alveole Honeycomb Cotton Coverlet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/alveole-honeycomb-coverlet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-alveole-honeycomb-coverlet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "alveole honeycomb cotton coverlet",
+        "fiberType": "100% Combed Cotton",
+        "threadCount": 0,
+        "weaveType": "Waffle Honeycomb",
+        "originCountry": "France",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Alveole Honeycomb Cotton Coverlet",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-bel-ami-washed-percale-duvet",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Bel Ami Washed Cotton Percale Duvet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/bel-ami-washed-percale-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-bel-ami-washed-percale-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "bel ami washed cotton percale duvet set",
+        "fiberType": "100% Washed Organic Cotton",
+        "threadCount": 200,
+        "weaveType": "Washed Percale",
+        "originCountry": "France",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Bel Ami Washed Cotton Percale Duvet Set",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-caliopea-quilted-bedspread",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Caliopea Floral Sateen Quilted Bedspread",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/caliopea-quilted-bedspread"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-caliopea-quilted-bedspread.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "caliopea floral sateen quilted bedspread",
+        "fiberType": "100% Cotton Sateen with Polyester Fill",
+        "threadCount": 300,
+        "weaveType": "Quilted Sateen",
+        "originCountry": "France",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Caliopea Floral Sateen Quilted Bedspread",
+      "status": "staged"
+    },
+    {
+      "id": "yves-delorme-heritage-wool-cashmere-blanket",
+      "canonicalBrand": "Yves Delorme",
+      "displayBrand": "Yves Delorme",
+      "productLine": "Linge de Lit Français",
+      "modelName": "Heritage Wool & Cashmere Fringed Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yvesdelorme.com/products/heritage-wool-cashmere-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yvesdelorme.com/images/yves-delorme-heritage-wool-cashmere-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yves delorme",
+        "modelName": "heritage wool & cashmere fringed blanket",
+        "fiberType": "80% Wool 20% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Woollen Twill",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yves Delorme French haute couture bed linen Heritage Wool & Cashmere Fringed Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-lowell-tailored-sateen-sheet-set",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Lowell Tailored Sateen Sheet Set with 1-Inch Trim",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/lowell-tailored-sateen-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-lowell-tailored-sateen-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "lowell tailored sateen sheet set with 1-inch trim",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 600,
+        "weaveType": "Sateen",
+        "originCountry": "USA of Italian fabric",
+        "careInstructions": "Machine wash warm gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Lowell Tailored Sateen Sheet Set with 1-Inch Trim",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-lucca-washed-linen-duvet-cover",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Lucca Classic Washed Linen Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/lucca-washed-linen-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-lucca-washed-linen-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "lucca classic washed linen duvet cover",
+        "fiberType": "100% Washed European Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Plain Weave",
+        "originCountry": "USA of Italian fabric",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Lucca Classic Washed Linen Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-sierra-hemstitch-percale-sheets",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Sierra Hemstitch Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/sierra-hemstitch-percale-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-sierra-hemstitch-percale-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "sierra hemstitch percale sheet set",
+        "fiberType": "100% Long-Staple Combed Cotton",
+        "threadCount": 350,
+        "weaveType": "Percale",
+        "originCountry": "USA of Italian fabric",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Sierra Hemstitch Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-gatsby-ultra-luxe-sateen-sheets",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Gatsby Ultra-Luxe Sateen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/gatsby-ultra-luxe-sateen-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-gatsby-ultra-luxe-sateen-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "gatsby ultra-luxe sateen sheet set",
+        "fiberType": "100% Giza Egyptian Cotton",
+        "threadCount": 1000,
+        "weaveType": "Sateen",
+        "originCountry": "USA of Italian fabric",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Gatsby Ultra-Luxe Sateen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-bel-canto-crisp-percale-sheets",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Bel Canto Crisp Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/bel-canto-crisp-percale-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-bel-canto-crisp-percale-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "bel canto crisp percale sheet set",
+        "fiberType": "100% Giza Cotton",
+        "threadCount": 500,
+        "weaveType": "Percale",
+        "originCountry": "USA of Italian fabric",
+        "careInstructions": "Machine wash warm gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Bel Canto Crisp Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-pezzo-brushed-cotton-throw",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Pezzo Brushed Cotton Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/pezzo-brushed-cotton-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-pezzo-brushed-cotton-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "pezzo brushed cotton throw",
+        "fiberType": "100% Cotton",
+        "threadCount": 0,
+        "weaveType": "Brushed Flannel Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Pezzo Brushed Cotton Throw",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-dream-modal-coverlet",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Dream Modal & Cotton Coverlet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/dream-modal-coverlet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-dream-modal-coverlet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "dream modal & cotton coverlet",
+        "fiberType": "60% Cotton 40% Modal",
+        "threadCount": 0,
+        "weaveType": "Matelassé Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Dream Modal & Cotton Coverlet",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-essex-monogram-pillowcases",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Essex Custom Monogram Sateen Pillowcases",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/essex-monogram-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-essex-monogram-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "essex custom monogram sateen pillowcases",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 600,
+        "weaveType": "Sateen",
+        "originCountry": "USA of Italian fabric",
+        "careInstructions": "Machine wash gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Essex Custom Monogram Sateen Pillowcases",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-butterfield-scalloped-duvet",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Butterfield Scalloped Percale Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/butterfield-scalloped-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-butterfield-scalloped-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "butterfield scalloped percale duvet cover",
+        "fiberType": "100% Combed Cotton",
+        "threadCount": 500,
+        "weaveType": "Percale",
+        "originCountry": "USA of Italian fabric",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Butterfield Scalloped Percale Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "matouk-alba-heavyweight-waffle-blanket",
+      "canonicalBrand": "Matouk",
+      "displayBrand": "Matouk",
+      "productLine": "Handcrafted Luxury Linens",
+      "modelName": "Alba Heavyweight Waffle Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.matouk.com/products/alba-heavyweight-waffle-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Navy Trim",
+        "White / Charcoal",
+        "Champagne"
+      ],
+      "mediaSource": {
+        "url": "https://www.matouk.com/images/matouk-alba-heavyweight-waffle-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "matouk",
+        "modelName": "alba heavyweight waffle blanket",
+        "fiberType": "100% Organic Cotton",
+        "threadCount": 0,
+        "weaveType": "Chunky Waffle Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Matouk tailored luxury bed linen Alba Heavyweight Waffle Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-basilico-stone-washed-linen-set",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Basilico Stone Washed Pure Linen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/basilico-stone-washed-linen-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-basilico-stone-washed-linen-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "basilico stone washed pure linen sheet set",
+        "fiberType": "100% Pure Washed Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Stone Washed Linen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm, line dry"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Basilico Stone Washed Pure Linen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-nido-dape-waffle-bedspread",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Nido d'Ape Pure Cotton Waffle Bedspread",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/nido-dape-waffle-bedspread"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-nido-dape-waffle-bedspread.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "nido d'ape pure cotton waffle bedspread",
+        "fiberType": "100% Pure Combed Cotton",
+        "threadCount": 0,
+        "weaveType": "Honeycomb Waffle Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Nido d'Ape Pure Cotton Waffle Bedspread",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-sateen-300-mercerized-sheet-set",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Sateen 300 Mercerized Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/sateen-300-mercerized-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-sateen-300-mercerized-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "sateen 300 mercerized sheet set",
+        "fiberType": "100% Extra Long-Staple Cotton",
+        "threadCount": 300,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Sateen 300 Mercerized Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-percalle-200-crisp-duvet-cover",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Percalle 200 Crisp Cotton Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/percalle-200-crisp-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-percalle-200-crisp-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "percalle 200 crisp cotton duvet cover",
+        "fiberType": "100% Fine Combed Cotton",
+        "threadCount": 200,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Percalle 200 Crisp Cotton Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-cortina-wool-cashmere-throw",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Cortina Wool & Cashmere Checked Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/cortina-wool-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-cortina-wool-cashmere-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "cortina wool & cashmere checked throw",
+        "fiberType": "85% Virgin Wool 15% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Woollen Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Cortina Wool & Cashmere Checked Throw",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-oxford-tailored-border-sheets",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Oxford Tailored Border Percale Sheets",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/oxford-tailored-border-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-oxford-tailored-border-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "oxford tailored border percale sheets",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 250,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Oxford Tailored Border Percale Sheets",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-fiandra-jacquard-damask-bedspread",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Fiandra Classic Jacquard Damask Bedspread",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/fiandra-jacquard-damask-bedspread"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-fiandra-jacquard-damask-bedspread.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "fiandra classic jacquard damask bedspread",
+        "fiberType": "100% Mercerized Cotton",
+        "threadCount": 400,
+        "weaveType": "Damask Jacquard",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Fiandra Classic Jacquard Damask Bedspread",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-stone-washed-percale-duvet",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Stone Washed Percale Relaxed Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/stone-washed-percale-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-stone-washed-percale-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "stone washed percale relaxed duvet cover",
+        "fiberType": "100% Garment-washed Cotton",
+        "threadCount": 200,
+        "weaveType": "Washed Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Stone Washed Percale Relaxed Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-rigato-striped-linen-pillowcases",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Rigato Striped Linen Pillowcases Pair",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/rigato-striped-linen-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-rigato-striped-linen-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "rigato striped linen pillowcases pair",
+        "fiberType": "100% Pure Italian Linen",
+        "threadCount": 0,
+        "weaveType": "Yarn-dyed Linen Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Rigato Striped Linen Pillowcases Pair",
+      "status": "staged"
+    },
+    {
+      "id": "bellora-cashmere-soft-wool-blanket",
+      "canonicalBrand": "Bellora",
+      "displayBrand": "Bellora",
+      "productLine": "Milanese Fine Bedding",
+      "modelName": "Cashmere Soft Wool Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bellora1883.com/en/products/cashmere-soft-wool-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Queen",
+        "King"
+      ],
+      "mediaSource": {
+        "url": "https://www.bellora1883.com/images/bellora-cashmere-soft-wool-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bellora",
+        "modelName": "cashmere soft wool blanket",
+        "fiberType": "100% Virgin Merino Wool",
+        "threadCount": 0,
+        "weaveType": "Brushed Wool Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bellora 1883 Milanese pure linen and cotton bedding Cashmere Soft Wool Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-rem-froisse-flat-sheet",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Rem Froissé Washed Linen Flat Sheet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/rem-froisse-flat-sheet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-rem-froisse-flat-sheet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "rem froissé washed linen flat sheet",
+        "fiberType": "100% Pure Froissé Linen",
+        "threadCount": 0,
+        "weaveType": "Creased Washed Linen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle, no ironing needed"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Rem Froissé Washed Linen Flat Sheet",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-nite-extra-fine-duvet",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Nite Extra-Fine Cotton Percale Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/nite-extra-fine-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-nite-extra-fine-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "nite extra-fine cotton percale duvet cover",
+        "fiberType": "100% Garment-dyed Cotton",
+        "threadCount": 300,
+        "weaveType": "Extra-Fine Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Nite Extra-Fine Cotton Percale Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-plum-gauze-cotton-throw",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Plum Gauze Cotton Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/plum-gauze-cotton-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-plum-gauze-cotton-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "plum gauze cotton throw blanket",
+        "fiberType": "100% Multi-layer Cotton Gauze",
+        "threadCount": 0,
+        "weaveType": "Open Crêpe Gauze",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Plum Gauze Cotton Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-maya-wool-alpaca-throw",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Maya Wool & Alpaca Bouclé Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/maya-wool-alpaca-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-maya-wool-alpaca-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "maya wool & alpaca bouclé throw",
+        "fiberType": "50% Alpaca 50% Virgin Wool",
+        "threadCount": 0,
+        "weaveType": "Bouclé Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Maya Wool & Alpaca Bouclé Throw",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-onde-waffle-coverlet",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Onde Waffle Weave Cotton Coverlet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/onde-waffle-coverlet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-onde-waffle-coverlet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "onde waffle weave cotton coverlet",
+        "fiberType": "100% Organic Combed Cotton",
+        "threadCount": 0,
+        "weaveType": "Textured Wave Piqué",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash gentle cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Onde Waffle Weave Cotton Coverlet",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-trac-printed-pillowcases",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Trac Printed Linen Pillowcases Pair",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/trac-printed-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-trac-printed-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "trac printed linen pillowcases pair",
+        "fiberType": "100% Pure Italian Linen",
+        "threadCount": 0,
+        "weaveType": "Printed Washed Linen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Trac Printed Linen Pillowcases Pair",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-tab-froisse-tablecloth",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Tab Froissé Heavy Linen Tablecloth Textile",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/tab-froisse-tablecloth"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-tab-froisse-tablecloth.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "tab froissé heavy linen tablecloth textile",
+        "fiberType": "100% Heavyweight Froissé Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Heavy Linen Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Tab Froissé Heavy Linen Tablecloth Textile",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-des-cotton-voile-sheets",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Des Washed Cotton Voile Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/des-cotton-voile-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-des-cotton-voile-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "des washed cotton voile sheet set",
+        "fiberType": "100% Featherlight Cotton Voile",
+        "threadCount": 200,
+        "weaveType": "Voile Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Des Washed Cotton Voile Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-drap-cashmere-blanket",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Drap Garment-Dyed Cashmere Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/drap-cashmere-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-drap-cashmere-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "drap garment-dyed cashmere blanket",
+        "fiberType": "100% Pure Cashmere",
+        "threadCount": 0,
+        "weaveType": "Garment-dyed Twill",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Drap Garment-Dyed Cashmere Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "society-limonta-bio-organic-fitted-sheet",
+      "canonicalBrand": "Society Limonta",
+      "displayBrand": "Society Limonta",
+      "productLine": "Garment-Dyed Home Couture",
+      "modelName": "Bio Organic Cotton Percale Fitted Sheet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.societylimonta.com/en-us/products/bio-organic-fitted-sheet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Garment-Dyed Pervinca",
+        "Mastice",
+        "Bianco"
+      ],
+      "mediaSource": {
+        "url": "https://www.societylimonta.com/images/society-limonta-bio-organic-fitted-sheet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "society limonta",
+        "modelName": "bio organic cotton percale fitted sheet",
+        "fiberType": "100% Certified Organic Cotton",
+        "threadCount": 200,
+        "weaveType": "Crisp Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Society Limonta Italian garment-dyed textile Bio Organic Cotton Percale Fitted Sheet",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-organic-cotton-percale-sheet-set",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "Organic Cotton Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/organic-cotton-percale-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-organic-cotton-percale-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "organic cotton percale sheet set",
+        "fiberType": "100% Organic Long-Staple Cotton",
+        "threadCount": 300,
+        "weaveType": "Crisp Percale",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm, tumble dry medium"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding Organic Cotton Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-organic-cotton-percale-duvet-cover",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "Organic Cotton Percale Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/organic-cotton-percale-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-organic-cotton-percale-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "organic cotton percale duvet cover",
+        "fiberType": "100% Organic Long-Staple Cotton",
+        "threadCount": 300,
+        "weaveType": "Crisp Percale",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding Organic Cotton Percale Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-french-flax-linen-sheet-set",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "100% French Flax Linen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/french-flax-linen-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-french-flax-linen-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "100% french flax linen sheet set",
+        "fiberType": "100% European Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Stonewashed Plain Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash gentle warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding 100% French Flax Linen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-french-flax-linen-duvet-cover",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "100% French Flax Linen Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/french-flax-linen-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-french-flax-linen-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "100% french flax linen duvet cover",
+        "fiberType": "100% European Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Stonewashed Plain Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash gentle warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding 100% French Flax Linen Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-pure-new-wool-blanket-throw",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "Pure New Wool Blanket Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/pure-new-wool-blanket-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-pure-new-wool-blanket-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "pure new wool blanket throw",
+        "fiberType": "100% Pure New Virgin Wool",
+        "threadCount": 0,
+        "weaveType": "Twill Weave with Fringes",
+        "originCountry": "Lithuania",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding Pure New Wool Blanket Throw",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-pure-lambswool-plaid-throw",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "Pure Lambswool Plaid Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/pure-lambswool-plaid-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-pure-lambswool-plaid-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "pure lambswool plaid throw blanket",
+        "fiberType": "100% Superfine Lambswool",
+        "threadCount": 0,
+        "weaveType": "Checked Twill",
+        "originCountry": "Lithuania",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding Pure Lambswool Plaid Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-organic-cotton-poplin-sheet",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "Organic Cotton Poplin Sleepwear & Bedding Sheet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/organic-cotton-poplin-sheet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-organic-cotton-poplin-sheet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "organic cotton poplin sleepwear & bedding sheet",
+        "fiberType": "100% Organic Combed Cotton",
+        "threadCount": 250,
+        "weaveType": "Poplin Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding Organic Cotton Poplin Sleepwear & Bedding Sheet",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-classic-striped-percale-pillowcases",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "Classic Striped Percale Pillowcase Pair",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/classic-striped-percale-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-classic-striped-percale-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "classic striped percale pillowcase pair",
+        "fiberType": "100% Organic Cotton",
+        "threadCount": 300,
+        "weaveType": "Percale",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding Classic Striped Percale Pillowcase Pair",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-heavy-poplin-monochrome-duvet",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "Heavy Poplin Monochrome Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/heavy-poplin-monochrome-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-heavy-poplin-monochrome-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "heavy poplin monochrome duvet cover",
+        "fiberType": "100% Organic Cotton",
+        "threadCount": 280,
+        "weaveType": "Poplin",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding Heavy Poplin Monochrome Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "tekla-mohair-wool-brushed-blanket",
+      "canonicalBrand": "Tekla",
+      "displayBrand": "Tekla",
+      "productLine": "Architectural Bedding & Blankets",
+      "modelName": "Mohair & Wool Blend Brushed Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://teklafabrics.com/products/mohair-wool-brushed-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Blue",
+        "Kodiak Brown",
+        "Plum"
+      ],
+      "mediaSource": {
+        "url": "https://teklafabrics.com/images/tekla-mohair-wool-brushed-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "tekla",
+        "modelName": "mohair & wool blend brushed blanket",
+        "fiberType": "70% Mohair 30% Virgin Wool",
+        "threadCount": 0,
+        "weaveType": "Brushed Open Weave",
+        "originCountry": "Spain",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tekla architectural Scandinavian bedding Mohair & Wool Blend Brushed Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-savoy-800tc-sheet-set",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Savoy 800 Thread Count Egyptian Cotton Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/savoy-800tc-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-savoy-800tc-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "savoy 800 thread count egyptian cotton sheet set",
+        "fiberType": "100% Egyptian Cotton",
+        "threadCount": 800,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm, tumble dry low"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Savoy 800 Thread Count Egyptian Cotton Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-symons-1000tc-duvet",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Symons 1000 Thread Count Egyptian Cotton Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/symons-1000tc-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-symons-1000tc-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "symons 1000 thread count egyptian cotton duvet cover",
+        "fiberType": "100% Egyptian Cotton",
+        "threadCount": 1000,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Symons 1000 Thread Count Egyptian Cotton Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-classic-200tc-percale-sheet",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Classic 200 Thread Count Cotton Percale Flat Sheet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/classic-200tc-percale-sheet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-classic-200tc-percale-sheet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "classic 200 thread count cotton percale flat sheet",
+        "fiberType": "100% Combed Cotton",
+        "threadCount": 200,
+        "weaveType": "Crisp Percale",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Classic 200 Thread Count Cotton Percale Flat Sheet",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-audley-border-sateen-set",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Audley Border Embroidered Sateen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/audley-border-sateen-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-audley-border-sateen-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "audley border embroidered sateen sheet set",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 400,
+        "weaveType": "Sateen",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Audley Border Embroidered Sateen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-pure-belgian-linen-duvet",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Pure Belgian Washed Linen Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/pure-belgian-linen-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-pure-belgian-linen-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "pure belgian washed linen duvet cover",
+        "fiberType": "100% Belgian Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Washed Linen Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash gentle warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Pure Belgian Washed Linen Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-faux-fur-throw-blanket",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Super-Soft Faux Fur Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/faux-fur-throw-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-faux-fur-throw-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "super-soft faux fur throw blanket",
+        "fiberType": "100% Polyester Plush with Velvet Back",
+        "threadCount": 0,
+        "weaveType": "Plush Faux Fur",
+        "originCountry": "UK",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Super-Soft Faux Fur Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-ribbed-cashmere-throw",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Ribbed Pure Cashmere Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/ribbed-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-ribbed-cashmere-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "ribbed pure cashmere throw",
+        "fiberType": "100% Pure Cashmere",
+        "threadCount": 0,
+        "weaveType": "Ribbed Knit",
+        "originCountry": "UK",
+        "careInstructions": "Hand wash cold or dry clean"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Ribbed Pure Cashmere Throw",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-albany-cord-percale-duvet",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Albany Cord Embroidered Cotton Percale Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/albany-cord-percale-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-albany-cord-percale-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "albany cord embroidered cotton percale duvet cover",
+        "fiberType": "100% Cotton",
+        "threadCount": 300,
+        "weaveType": "Percale",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Albany Cord Embroidered Cotton Percale Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-highgrove-velvet-quilt",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Highgrove Velvet Hand-Stitched Quilt",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/highgrove-velvet-quilt"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-highgrove-velvet-quilt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "highgrove velvet hand-stitched quilt",
+        "fiberType": "100% Cotton Velvet with Cotton Fill",
+        "threadCount": 0,
+        "weaveType": "Quilted Velvet",
+        "originCountry": "India",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Highgrove Velvet Hand-Stitched Quilt",
+      "status": "staged"
+    },
+    {
+      "id": "the-white-company-cellular-organic-blanket",
+      "canonicalBrand": "The White Company",
+      "displayBrand": "The White Company",
+      "productLine": "Savoy & Symons Bedding",
+      "modelName": "Cellular Pure Organic Cotton Baby/Day Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.thewhitecompany.com/us/products/cellular-organic-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White",
+        "Silver Grey",
+        "Mink"
+      ],
+      "mediaSource": {
+        "url": "https://www.thewhitecompany.com/images/the-white-company-cellular-organic-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "the white company",
+        "modelName": "cellular pure organic cotton baby/day blanket",
+        "fiberType": "100% Organic Cotton",
+        "threadCount": 0,
+        "weaveType": "Cellular Open Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The White Company British luxury linen Cellular Pure Organic Cotton Baby/Day Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-wyatt-sateen-624tc-sheet-set",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Wyatt Sateen 624 Thread Count Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/wyatt-sateen-624tc-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-wyatt-sateen-624tc-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "wyatt sateen 624 thread count sheet set",
+        "fiberType": "100% Extra Long-Staple Cotton",
+        "threadCount": 624,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Wyatt Sateen 624 Thread Count Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-spencer-embroidered-sateen-duvet",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Spencer Embroidered Sateen Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/spencer-embroidered-sateen-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-spencer-embroidered-sateen-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "spencer embroidered sateen duvet cover",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 300,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Spencer Embroidered Sateen Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-langdon-sateen-624tc-pillowcases",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Langdon Sateen 624 Thread Count Pillowcases Pair",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/langdon-sateen-624tc-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-langdon-sateen-624tc-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "langdon sateen 624 thread count pillowcases pair",
+        "fiberType": "100% Extra Long-Staple Cotton",
+        "threadCount": 624,
+        "weaveType": "Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Langdon Sateen 624 Thread Count Pillowcases Pair",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-oxford-cloth-button-down-sheets",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Oxford Cloth Button-Down Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/oxford-cloth-button-down-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-oxford-cloth-button-down-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "oxford cloth button-down sheet set",
+        "fiberType": "100% Yarn-Dyed Combed Cotton",
+        "threadCount": 200,
+        "weaveType": "Oxford Weave",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Oxford Cloth Button-Down Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-glen-plaid-cashmere-throw",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Glen Plaid Cashmere Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/glen-plaid-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-glen-plaid-cashmere-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "glen plaid cashmere throw blanket",
+        "fiberType": "100% Pure Cashmere",
+        "threadCount": 0,
+        "weaveType": "Glen Plaid Twill",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Glen Plaid Cashmere Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-cable-knit-cotton-throw",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Cable-Knit Cotton Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/cable-knit-cotton-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-cable-knit-cotton-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "cable-knit cotton throw blanket",
+        "fiberType": "100% Combed Cotton",
+        "threadCount": 0,
+        "weaveType": "Chunky Cable Knit",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Cable-Knit Cotton Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-modern-equestrian-wool-blanket",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Modern Equestrian Leather-Trimmed Wool Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/modern-equestrian-wool-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-modern-equestrian-wool-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "modern equestrian leather-trimmed wool blanket",
+        "fiberType": "80% Virgin Wool 20% Polyamide",
+        "threadCount": 0,
+        "weaveType": "Woollen Twill with Leather",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Modern Equestrian Leather-Trimmed Wool Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-montgomery-plaid-flannel-sheets",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Montgomery Plaid Flannel Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/montgomery-plaid-flannel-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-montgomery-plaid-flannel-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "montgomery plaid flannel sheet set",
+        "fiberType": "100% Brushed Cotton Flannel",
+        "threadCount": 0,
+        "weaveType": "Brushed Flannel",
+        "originCountry": "Portugal",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Montgomery Plaid Flannel Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-palmer-464tc-percale-sheet-set",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Palmer 464 Thread Count Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/palmer-464tc-percale-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-palmer-464tc-percale-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "palmer 464 thread count percale sheet set",
+        "fiberType": "100% Egyptian Cotton",
+        "threadCount": 464,
+        "weaveType": "Percale",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Palmer 464 Thread Count Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-hadley-diamond-quilted-coverlet",
+      "canonicalBrand": "Ralph Lauren Home",
+      "displayBrand": "Ralph Lauren Home",
+      "productLine": "Ralph Lauren Home Bedding",
+      "modelName": "Hadley Diamond Quilted Silk Coverlet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/home-bedding/hadley-diamond-quilted-coverlet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Cream",
+        "Classic Navy",
+        "Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/ralph-lauren-hadley-diamond-quilted-coverlet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren home",
+        "modelName": "hadley diamond quilted silk coverlet",
+        "fiberType": "100% Silk Habotai with Cotton Lining",
+        "threadCount": 0,
+        "weaveType": "Diamond Quilted",
+        "originCountry": "USA of imported fabric",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ralph Lauren Home classic American luxury bedding Hadley Diamond Quilted Silk Coverlet",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": []
+}

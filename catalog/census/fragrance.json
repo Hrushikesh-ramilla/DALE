@@ -1,0 +1,4043 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "fragrance",
+  "displayName": "Fragrances & Perfumes",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "creed-aventus",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Aventus Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/aventus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "aventus eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "fruity chypre",
+        "topNotes": "Lemon, Pink Pepper, Apple, Bergamot, Blackcurrant",
+        "heartNotes": "Pineapple, Jasmine, Patchouli",
+        "baseNotes": "Birch, Ambergris, Cedarwood, Oakmoss, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic flagship chypre fruité fragrance from the House of Creed.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-silver-mountain-water",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Silver Mountain Water Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/silver-mountain-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "silver mountain water eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "fresh citrus",
+        "topNotes": "Bergamot, Mandarin, Neroli",
+        "heartNotes": "Green Tea, Blackcurrant Bud",
+        "baseNotes": "Sandalwood, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Signature alpine fresh fragrance inspired by snow-capped Swiss mountains.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-green-irish-tweed",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Green Irish Tweed Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/green-irish-tweed"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "green irish tweed eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "fougère aromatic",
+        "topNotes": "Lemon, Peppermint, Verbena",
+        "heartNotes": "Violet Leaves, Geranium",
+        "baseNotes": "Florentine Iris, Sandalwood, Ambergris"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic countryside fougère created for gentlemen of distinction.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-millesime-imperial",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Millésime Impérial Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/millesime-imperial"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "millésime impérial eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "marine citrus",
+        "topNotes": "Fruit Notes, Sea Salt",
+        "heartNotes": "Sicilian Lemon, Bergamot, Iris, Mandarin",
+        "baseNotes": "Marine Notes, Musk, Woody Notes"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Warm and salty marine composition celebrating royal heritage.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-virgin-island-water",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Virgin Island Water Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/virgin-island-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "virgin island water eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "tropical citrus",
+        "topNotes": "Lime, Coconut, Mandarin, Bergamot",
+        "heartNotes": "Ginger, Ylang-Ylang, Jasmine, Hibiscus",
+        "baseNotes": "White Rum, Sugar Cane, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Caribbean voyage inspired tropical scent featuring coconut and lime.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-royal-oud",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Royal Oud Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/royal-oud"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "royal oud eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody amber",
+        "topNotes": "Lemon, Pink Pepper, Bergamot",
+        "heartNotes": "Cedarwood, Galbanum, Angelica",
+        "baseNotes": "Indian Oud, Sandalwood, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Regal spicy wood composition built around subtle aristocratic oud.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-viking",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Viking Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/viking"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "viking eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Calabrian Bergamot, Sicilian Lemon, Pink Pepper",
+        "heartNotes": "Peppercorn, Bulgarian Rose, Peppermint",
+        "baseNotes": "Indian Sandalwood, Haitian Vetiver, Patchouli"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fiery spicy men's scent celebrating fearless voyages of exploration.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-original-vetiver",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Original Vetiver Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/original-vetiver"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "original vetiver eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "fresh green woody",
+        "topNotes": "Ginger, Mandarin, Bergamot",
+        "heartNotes": "Vetiver Leaves, White Pepper, Coriander",
+        "baseNotes": "Mysore Sandalwood, Vetiver Roots, Ambergris"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Infusion of vetiver leaves and roots delivering fresh sparkling greenness.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-aventus-cologne",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Aventus Cologne Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/aventus-cologne"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "aventus cologne eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "citrus aromatic",
+        "topNotes": "Mandarin, Ginger, Pink Peppercorn",
+        "heartNotes": "Vetiver, Patchouli, Pineapple",
+        "baseNotes": "Birch, Styrax, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lighter, more urban cologne interpretation of the iconic Aventus profile.",
+      "status": "staged"
+    },
+    {
+      "id": "creed-carmina",
+      "canonicalBrand": "Creed",
+      "displayBrand": "Creed",
+      "modelName": "Carmina Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://creedboutique.com/products/carmina"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "creed",
+        "modelName": "carmina eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral amber",
+        "topNotes": "Black Cherry, Saffron, Pink Pepper",
+        "heartNotes": "Rose de Mai, Violet, Cashmere Wood",
+        "baseNotes": "Frankincense, Amber, Myrrh, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensual feminine floral amber highlighted by bold dark cherry.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-oud-wood",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Oud Wood Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/oud-wood"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "oud wood eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "woody amber",
+        "topNotes": "Rosewood, Cardamom, Chinese Pepper",
+        "heartNotes": "Oud Wood, Sandalwood, Vetiver",
+        "baseNotes": "Tonka Bean, Vanilla, Amber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Masterpiece smoky blend of rare oud wood and exotic spices.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-tobacco-vanille",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Tobacco Vanille Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/tobacco-vanille"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tobacco vanille eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "warm gourmand",
+        "topNotes": "Tobacco Leaf, Spicy Notes",
+        "heartNotes": "Tonka Bean, Tobacco Blossom, Vanilla, Cacao",
+        "baseNotes": "Dry Fruit Accord, Rich Wood Sap"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Opulent English gentleman's club aroma steeped in spiced tobacco and tonka.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-tuscan-leather",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Tuscan Leather Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/tuscan-leather"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tuscan leather eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "leather",
+        "topNotes": "Saffron, Raspberry, Thyme",
+        "heartNotes": "Olibanum, Night Blooming Jasmine",
+        "baseNotes": "Black Suede, Leather, Amberwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Raw yet refined artisanal leather accented with bittersweet raspberry.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-lost-cherry",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Lost Cherry Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/lost-cherry"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "lost cherry eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "fruity gourmand",
+        "topNotes": "Black Cherry, Cherry Liqueur, Bitter Almond",
+        "heartNotes": "Griotte Syrup, Turkish Rose, Jasmine Sambac",
+        "baseNotes": "Peru Balsam, Roasted Tonka, Sandalwood, Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Decadent gourmand scent capturing ripe luscious black cherries and liqueur.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-neroli-portofino",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Neroli Portofino Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/neroli-portofino"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "neroli portofino eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "fresh citrus",
+        "topNotes": "Tunisian Neroli, Italian Bergamot, Sicilian Lemon",
+        "heartNotes": "Yellow Mandarin, Orange Flower",
+        "baseNotes": "Lavender, Herbal Notes, Amber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crisp Italian Riviera breeze with sparkling citrus oils and neroli.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-soleil-blanc",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Soleil Blanc Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/soleil-blanc"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "soleil blanc eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "solar floral",
+        "topNotes": "Bergamot, Cardamom, Pink Pepper, Pistachio",
+        "heartNotes": "Ylang-Ylang, Tuberose, Jasmine",
+        "baseNotes": "Benzoin, Amber, Tonka Bean, Coconut Milk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Unexpected solar amber floral bouquet alive with seductive warmth.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-bitter-peach",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Bitter Peach Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/bitter-peach"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "bitter peach eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "fruity floral amber",
+        "topNotes": "Pêche de Vigne, Blood Orange, Cardamom",
+        "heartNotes": "Heliotrope, Davana, Rum Absolute, Cognac",
+        "baseNotes": "Patchouli, Sandalwood, Vanilla, Tonka Bean"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensual nectarous peach laced with rich rum and hypnotic patchouli.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-black-orchid",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Black Orchid Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/black-orchid"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "black orchid eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "floral amber",
+        "topNotes": "Black Truffle, Ylang-Ylang, Bergamot, Blackcurrant",
+        "heartNotes": "Black Orchid, Spices, Floral Notes",
+        "baseNotes": "Patchouli, Incense, Vetiver, Vanilla"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Luxurious timeless breakthrough scent of elusive black orchid petals.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-grey-vetiver",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Grey Vetiver Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/grey-vetiver"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "grey vetiver parfum",
+        "concentration": "parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "earthy woody",
+        "topNotes": "Sun-Drenched Citrus, Orange Flower",
+        "heartNotes": "Nutmeg, Pimento Berries",
+        "baseNotes": "Haitian Vetiver, Oakmoss, Amber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bold debonair celebration of vetiver heightened by luminous citrus.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-ebene-fume",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "modelName": "Ebene Fume Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomfordbeauty.com/product/ebene-fume"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "ebene fume eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "woody amber",
+        "topNotes": "Palo Santo Smoke, Black Pepper, Incense",
+        "heartNotes": "Cade Wood, Leather, Papyrus",
+        "baseNotes": "Guaiac Wood, Cistus Absolute, Amber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Meditative sacred cleansing essence of mystical Palo Santo wood smoke.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-bleu-de-chanel-parfum",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Bleu de Chanel Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/107180/bleu-de-chanel-parfum-spray/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "bleu de chanel parfum",
+        "concentration": "parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Lemon Zest, Bergamot, Mint, Artemisia",
+        "heartNotes": "Lavender, Geranium, Pineapple",
+        "baseNotes": "New Caledonian Sandalwood, Cedar, Amberwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Purest and most intense expression of Bleu de Chanel.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-bleu-de-chanel-edp",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Bleu de Chanel Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "bleu de chanel eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Grapefruit, Lemon, Mint, Pink Pepper",
+        "heartNotes": "Ginger, Nutmeg, Jasmine, Iso E Super",
+        "baseNotes": "Incense, Vetiver, Cedar, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Captivating aromatic woody fragrance representing masculine determination.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-allure-homme-sport-eau-extreme",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Allure Homme Sport Eau Extrême",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/123560/allure-homme-sport-eau-extreme-eau-de-parfum-spray/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "allure homme sport eau extrême",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Mandarin Orange, Mint, Cypress, Clary Sage",
+        "heartNotes": "Black Pepper",
+        "baseNotes": "Tonka Bean, Musk, Sandalwood, Cedar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Adrenaline rush of mint and musk with sensual Moroccan cypress.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-coco-mademoiselle-edp",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Coco Mademoiselle Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "coco mademoiselle eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral amber",
+        "topNotes": "Orange, Bergamot, Grapefruit",
+        "heartNotes": "Rose, Jasmine, Litchi",
+        "baseNotes": "Patchouli, Vetiver, Bourbon Vanilla, White Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Irreverently modern amber fragrance with a bold, free spirit.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-no-5-edp",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Chanel No. 5 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "chanel no. 5 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral aldehydic",
+        "topNotes": "Aldehydes, Ylang-Ylang, Neroli, Bergamot",
+        "heartNotes": "May Rose, Grasse Jasmine, Lily-of-the-Valley",
+        "baseNotes": "Sandalwood, Bourbon Vanilla, Amber, Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The quintessential legend of perfumery, rich with aldehydes and Grasse florals.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-chance-eau-tendre-edp",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Chance Eau Tendre Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/126260/chance-eau-tendre-eau-de-parfum-spray/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "chance eau tendre eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral fruity",
+        "topNotes": "Quince, Grapefruit",
+        "heartNotes": "Rose Essence, Jasmine Absolute",
+        "baseNotes": "White Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Delicate and radiant floral-fruity poetry celebrating optimism.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-coromandel-les-exclusifs",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Coromandel Les Exclusifs de Chanel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/122020/coromandel-les-exclusifs-de-chanel-eau-de-parfum/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "coromandel les exclusifs de chanel",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "amber woody",
+        "topNotes": "Bitter Orange, Neroli, Citruses",
+        "heartNotes": "Patchouli, Orris Root, Rose, Jasmine",
+        "baseNotes": "White Chocolate, Benzoin, Amber, Frankincense"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rich amber patchouli evoking the exotic folding Chinese lacquered screens.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sycomore-les-exclusifs",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Sycomore Les Exclusifs de Chanel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/122040/sycomore-les-exclusifs-de-chanel-eau-de-parfum/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sycomore les exclusifs de chanel",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "woody smoky",
+        "topNotes": "Pink Pepper, Juniper",
+        "heartNotes": "Aldehydes, Violet",
+        "baseNotes": "Smoky Vetiver, Cypress, Sandalwood, Tobacco"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sublime smoky vetiver masterpiece standing like a majestic tree in autumn.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-platinum-egoiste",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Platinum Égoïste Eau de Toilette",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "platinum égoïste eau de toilette",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "fougère green",
+        "topNotes": "Rosemary, Lavender, Neroli, Petitgrain",
+        "heartNotes": "Galbanum, Clary Sage, Geranium",
+        "baseNotes": "Amber, Sandalwood, Oakmoss, Vetiver, Cedar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Aromatic fougère for extroverted men who like to leave their mark.",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-antaeus",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "modelName": "Antaeus Eau de Toilette",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fragrance/p/118460/antaeus-eau-de-toilette-spray/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "antaeus eau de toilette",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "leather woody",
+        "topNotes": "Myrrh, Clary Sage, Coriander, Bergamot",
+        "heartNotes": "Rose, Thyme, Basil, Jasmine",
+        "baseNotes": "Castoreum, Oakmoss, Patchouli, Labdanum"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Powerhouse mythical leather scent combining heroic strength and sensitive nuances.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-sauvage-elixir",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Sauvage Elixir",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "60ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "sauvage elixir",
+        "concentration": "elixir",
+        "volumeMl": 60,
+        "olfactoryFamily": "spicy woody aromatic",
+        "topNotes": "Nutmeg, Cinnamon, Cardamom, Grapefruit",
+        "heartNotes": "Custom Bleue Lavender Essence",
+        "baseNotes": "Licorice, Sandalwood, Amber, Patchouli, Haitian Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Extremely concentrated iconic elixir steeped in signature Sauvage freshness and rich spices.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-sauvage-edp",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Sauvage Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-Y0785240.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "60ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "sauvage eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "citrus woody",
+        "topNotes": "Calabrian Bergamot",
+        "heartNotes": "Nutmeg, Star Anise, Sichuan Pepper, Lavender",
+        "baseNotes": "Papua New Guinean Vanilla Absolute, Ambroxan"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensual amber-faceted desert twilight interpretation of Sauvage.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-homme-intense",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Dior Homme Intense Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/dior-homme-intense-Y0479200.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior homme intense eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody floral musk",
+        "topNotes": "Tuscan Iris",
+        "heartNotes": "Ecuadorian Ambrette Seed, Pear",
+        "baseNotes": "Virginia Cedarwood, Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined nocturnal iris elegance balanced with noble woods and ambrette.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-fahrenheit",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Fahrenheit Eau de Toilette",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/fahrenheit-eau-de-toilette-Y0062400.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "fahrenheit eau de toilette",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody leather",
+        "topNotes": "Sicilian Mandarin, Nutmeg, Lavender",
+        "heartNotes": "Violet Leaf Accord, Nutmeg, Honeysuckle",
+        "baseNotes": "Leather Accord, Vetiver, Cedar, Patchouli"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Revolutionary contrast of fresh mandarin and magnetic violet-leather warmth.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-gris-dior",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Gris Dior (La Collection Privée)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/gris-dior-Y0996000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "125ml",
+        "250ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "gris dior (la collection privée)",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "chypre floral",
+        "topNotes": "Bergamot",
+        "heartNotes": "Damascena Rose, Jasmine",
+        "baseNotes": "Oakmoss, Patchouli, Amber, Cedar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The olfactory expression of grey, the iconic colour of the House of Dior.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-ambre-nuit",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Ambre Nuit (La Collection Privée)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/ambre-nuit-Y0996040.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "125ml",
+        "250ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "ambre nuit (la collection privée)",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "amber floral",
+        "topNotes": "Bergamot, Grapefruit",
+        "heartNotes": "Damascena Rose, Pink Pepper",
+        "baseNotes": "Ambergris, Guaiac Wood, Cedar, Patchouli"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Encounter between the nocturnal animal facet of amber and velvet Turkish rose.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-oud-ispahan",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Oud Ispahan (La Collection Privée)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/oud-ispahan-Y0996160.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "125ml",
+        "250ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "oud ispahan (la collection privée)",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "oriental floral",
+        "topNotes": "Labdanum",
+        "heartNotes": "Rose, Patchouli, Saffron",
+        "baseNotes": "Oud Wood, Sandalwood, Cedar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensual voyage into an oriental palace draped in damask rose and woody oud.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-bois-dargent",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Bois d'Argent (La Collection Privée)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/bois-dargent-Y0996020.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "125ml",
+        "250ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "bois d'argent (la collection privée)",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "woody powdery",
+        "topNotes": "Iris, Cypress, Juniper Berries",
+        "heartNotes": "Myrrh, Patchouli",
+        "baseNotes": "Vanilla, Musk, Amber, Leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensual silhouette of powdery Florentine iris wrapped in smoky Yemeni myrrh.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-miss-dior-edp",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "Miss Dior Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/miss-dior-eau-de-parfum-Y0996387.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "miss dior eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral bouquet",
+        "topNotes": "Lily-of-the-Valley, Peony, Iris",
+        "heartNotes": "Centifolia Rose, Peach, Apricot",
+        "baseNotes": "Papua New Guinean Vanilla, Tonka Bean, Sandalwood, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Millefiori floral awakening vibrating with radiant centifolia rose petals.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-jadore-lor",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "modelName": "J'adore l'Or Essence de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/jadore-lor-Y0996489.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "j'adore l'or essence de parfum",
+        "concentration": "essence de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "pure floral",
+        "topNotes": "Orange Blossom",
+        "heartNotes": "Grasse Jasmine Grandiflorum, Centifolia Rose",
+        "baseNotes": "Vanilla, Amber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Solar golden concentrate distilled by Francis Kurkdjian for Dior.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-terre-dhermes-parfum",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Terre d'Hermès Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/terre-d-hermes-parfum-V20320/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "terre d'hermès parfum",
+        "concentration": "parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "woody mineral",
+        "topNotes": "Grapefruit, Orange",
+        "heartNotes": "Flint, Pepper, Geranium",
+        "baseNotes": "Cedar, Oakmoss, Benzoin, Woody Notes"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pure mineral and earthy fragrance narrating man's dialogue with the elements.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-terre-dhermes-eau-givree",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Terre d'Hermès Eau Givrée",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/terre-d-hermes-eau-givree-eau-de-parfum-V109963V0/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "terre d'hermès eau givrée",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "citrus mineral",
+        "topNotes": "Citron",
+        "heartNotes": "Juniper Berry, Timut Pepper",
+        "baseNotes": "Mineral Notes, Woody Notes"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Icy invigorating breath combining vigorous citron and sharp Timut pepper.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-h24-edp",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "H24 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/h24-eau-de-parfum-V109395V0/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "h24 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "aromatic green woody",
+        "topNotes": "Clary Sage",
+        "heartNotes": "Oakmoss",
+        "baseNotes": "Sclarene, Rosewood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary masculine expression blending enveloping sage and dense moss.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-twilly-dhermes",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Twilly d'Hermès Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/twilly-d-hermes-eau-de-parfum-V20612/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "85ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "twilly d'hermès eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 85,
+        "olfactoryFamily": "floral spicy",
+        "topNotes": "Ginger, Bitter Orange, Bergamot",
+        "heartNotes": "Tuberose, Orange Blossom, Jasmine",
+        "baseNotes": "Sandalwood, Vanilla"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Playful feminine irreverence spiced with fresh pungent ginger and tuberose.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-un-jardin-sur-le-nil",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Un Jardin sur le Nil Eau de Toilette",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/un-jardin-sur-le-nil-eau-de-toilette-V20302/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "un jardin sur le nil eau de toilette",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "fruity green",
+        "topNotes": "Green Mango, Grapefruit, Tomato Stem, Carrot",
+        "heartNotes": "Lotus, Peony, Bulrush, Orange",
+        "baseNotes": "Frankincense, Sycamore Wood, Cinnamon, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Impressionistic stroll through the island garden sanctuaries of Aswan.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-eau-de-citron-noir",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Eau de Citron Noir Eau de Cologne",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/eau-de-citron-noir-eau-de-cologne-V20755/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "100ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "eau de citron noir eau de cologne",
+        "concentration": "eau de cologne",
+        "volumeMl": 100,
+        "olfactoryFamily": "citrus smoky",
+        "topNotes": "Black Lemon, Calabrian Lemon",
+        "heartNotes": "Black Tea, Ceylon Tea",
+        "baseNotes": "Guaiac Wood, Smoky Woods"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Surprising contrast of incandescent citrus vitality and smoky black lime.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-ambre-narguile",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Ambre Narguilé (Hermessence)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/ambre-narguile-eau-de-toilette-V20427/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "100ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "ambre narguilé (hermessence)",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "oriental gourmand",
+        "topNotes": "Cinnamon, Honey, Rum",
+        "heartNotes": "Caramel, Tonka Bean, Sesame Seed",
+        "baseNotes": "Tobacco, Vanilla, White Orchid, Labdanum"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sweet intoxicating swirl of honeyed amber and spiced narghile fruit tobacco.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-poivre-samarcande",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Poivre Samarcande (Hermessence)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/poivre-samarcande-eau-de-toilette-V20428/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "poivre samarcande (hermessence)",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody spicy",
+        "topNotes": "Black Pepper, Pink Pepper",
+        "heartNotes": "Caraway, Paprika",
+        "baseNotes": "Oakwood, Cedarwood, Patchouli"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spicy road tribute honoring burning black pepper and aged oak barrels.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-osmanthe-yunnan",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Osmanthe Yunnan (Hermessence)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/osmanthe-yunnan-eau-de-toilette-V20431/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "osmanthe yunnan (hermessence)",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral fruity tea",
+        "topNotes": "Orange, Yunnan Tea",
+        "heartNotes": "Osmanthes Flower, Freesia",
+        "baseNotes": "Apricot Leather, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Poetic tea contemplation scented with velvety apricot and delicate osmanthus.",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-voyage-dhermes",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "modelName": "Voyage d'Hermès Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/product/voyage-d-hermes-parfum-V20353/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "35ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "voyage d'hermès parfum",
+        "concentration": "parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody fresh amber",
+        "topNotes": "Cardamom, Lemon, Spices",
+        "heartNotes": "Hedione, Green Notes, Tea",
+        "baseNotes": "Warm Amber, White Woods, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nomadic journey invitation featuring bright cardamom and luminous amber woods.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-gypsy-water",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Gypsy Water Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/gypsy-water-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "gypsy water eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Bergamot, Lemon, Pepper, Juniper Berries",
+        "heartNotes": "Incense, Pine Needles, Orris",
+        "baseNotes": "Amber, Vanilla, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Glamorization of the Romany lifestyle steeped in pine needles and campfire smoke.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-bal-dafrique",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Bal d'Afrique Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/bal-d-afrique-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "bal d'afrique eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "warm floral woody",
+        "topNotes": "African Marigold, Bergamot, Buchu, Lemon, Neroli",
+        "heartNotes": "Cyclamen, Violet, Jasmine",
+        "baseNotes": "Black Amber, Moroccan Cedarwood, Musk, Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Love letter to 1920s Paris and the vibrant embrace of African culture and dance.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-mojave-ghost",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Mojave Ghost Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/mojave-ghost-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "mojave ghost eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "woody floral",
+        "topNotes": "Ambrette, Jamaican Nesberry",
+        "heartNotes": "Violet, Sandalwood, Magnolia",
+        "baseNotes": "Chantilly Musk, Crisp Amber, Cedarwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tribute to the ghost flower blooming against the harsh arid Mojave desert.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-blanche",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Blanche Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/blanche-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "blanche eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "clean floral aldehydic",
+        "topNotes": "Aldehydes, White Rose, Pink Pepper",
+        "heartNotes": "Peony, Violet, Neroli",
+        "baseNotes": "Musk, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Exploration of the color white, pure clean cotton sheets and untainted beauty.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-rose-of-no-mans-land",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Rose of No Man's Land Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/rose-of-no-man-s-land-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "rose of no man's land eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "floral spicy",
+        "topNotes": "Pink Pepper, Turkish Rose Petals",
+        "heartNotes": "Raspberry Blossom, Turkish Rose Absolute",
+        "baseNotes": "Papyrus, White Amber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Homage to the brave First World War frontline volunteer nurses.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-black-saffron",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Black Saffron Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/black-saffron-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "black saffron eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "leather spicy",
+        "topNotes": "Pomelo, Saffron, Juniper Berries",
+        "heartNotes": "Black Violet, Cristal Rose, Leather Accord",
+        "baseNotes": "Blonde Woods, Raspberry, Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Holy Indian saffron roots blended with leather and sweet wild raspberry.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-super-cedar",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Super Cedar Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/super-cedar-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "super cedar eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "woody clean",
+        "topNotes": "Rose Petals",
+        "heartNotes": "Virginian Cedarwood",
+        "baseNotes": "Haitian Vetiver, Silk Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nostalgic scent of cedarwood pencil shavings and cozy Scandinavian timber.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-bibliotheque",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Bibliothèque Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/bibliotheque-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "bibliothèque eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "leather fruity woody",
+        "topNotes": "Peach, Plum",
+        "heartNotes": "Peony, Violet",
+        "baseNotes": "Leather, Patchouli, Vanilla"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Atmospheric hush of an ancient library filled with calfskin bindings and aged oak shelves.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-mixed-emotions",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Mixed Emotions Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/mixed-emotions-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "mixed emotions eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "woody aromatic fruity",
+        "topNotes": "Maté, Blackcurrant",
+        "heartNotes": "Ceylon Black Tea, Violet Leaves",
+        "baseNotes": "Birch Wood, Papyrus"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Turbulent synthesis of soothing black tea and sharp tannic blackcurrant.",
+      "status": "staged"
+    },
+    {
+      "id": "byredo-eyes-closed",
+      "canonicalBrand": "Byredo",
+      "displayBrand": "Byredo",
+      "modelName": "Eyes Closed Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.byredo.com/us_en/eyes-closed-eau-de-parfum-50ml"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "SE",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "byredo",
+        "modelName": "eyes closed eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "spicy woody powdery",
+        "topNotes": "Cinnamon, Cardamom",
+        "heartNotes": "Carrot, Orris Butter, Ginger",
+        "baseNotes": "Papyrus, Patchouli"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Intimate psychic connection rendered in creamy powdery orris and ancient cinnamon.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-santal-33",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Santal 33 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/santal-33-146.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "santal 33 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Violet Accord, Cardamom",
+        "heartNotes": "Iris, Ambrox",
+        "baseNotes": "Cedarwood, Leather, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic cult fragrance capturing the American myth of the open frontier.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-another-13",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Another 13 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/another-13-157.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "another 13 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "amber woody musk",
+        "topNotes": "Pear, Citrus, Apple",
+        "heartNotes": "Ambrette Seeds, Salicylate, Jasmine",
+        "baseNotes": "Ambroxan, Cetalox, Helvetolide Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hypnotic addictive collaboration with AnOther magazine centered on synthetic ambroxan.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-the-noir-29",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Thé Noir 29 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/the-noir-29-158.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "thé noir 29 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "aromatic tea woody",
+        "topNotes": "Fig, Bay Leaf, Bergamot",
+        "heartNotes": "Cedarwood, Vetiver, Musk",
+        "baseNotes": "Black Tea Leaf Absolute, Tobacco, Hay"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensuous ode to the noble black tea leaf with dry fig and tobacco nuances.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-rose-31",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Rose 31 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/rose-31-145.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "rose 31 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral woody spicy",
+        "topNotes": "Rose, Cumin",
+        "heartNotes": "Rose, Vetiver, Cedarwood",
+        "baseNotes": "Musk, Guaiac Wood, Agarwood, Olibanum"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subversive transformation of the famous Grasse rose into a virile spicy wood scent.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-bergamote-22",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Bergamote 22 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/bergamote-22-144.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "bergamote 22 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "citrus woody",
+        "topNotes": "Bergamot, Grapefruit, Petitgrain",
+        "heartNotes": "Orange Blossom, Nutmeg",
+        "baseNotes": "Cedarwood, Vetiver, Amber, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dazzling bergamot firework combining freshness, sweetness and spicy sensuality.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-baie-19",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Baie 19 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/baie-19-482.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "baie 19 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "fresh green ozonic",
+        "topNotes": "Dry Juniper Berry, Green Leaves",
+        "heartNotes": "Patchouli, Ozone Accord",
+        "baseNotes": "Ambroxan, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crisp and wet petrichor aroma of heavy rain after a prolonged summer drought.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-matcha-26",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Thé Matcha 26 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/the-matcha-26-499.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "thé matcha 26 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody contemplative",
+        "topNotes": "Matcha Tea Accord, Fig",
+        "heartNotes": "Bitter Orange, Sesame",
+        "baseNotes": "Cedarwood, Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Skin scent celebrating solitary contemplation, noble matcha and creamy fig.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-vetiver-46",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Vetiver 46 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/vetiver-46-147.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "vetiver 46 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody smoky incense",
+        "topNotes": "Bergamot, Black Pepper",
+        "heartNotes": "Clove, Cedar, Labdanum",
+        "baseNotes": "Haitian Vetiver, Frankincense, Amber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The rolls-royce of vetivers cloaked in sacred frankincense and rich pepper.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-lys-41",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Lys 41 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/lys-41-152.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "lys 41 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "white floral",
+        "topNotes": "White Lily",
+        "heartNotes": "Jasmine, Tuberose Absolute",
+        "baseNotes": "Noble Woods, Madagascar Vanilla, Musks"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Overwhelmingly hypnotic white floral blast of pure lily, tuberose and jasmine.",
+      "status": "staged"
+    },
+    {
+      "id": "le-labo-lavande-31",
+      "canonicalBrand": "Le Labo",
+      "displayBrand": "Le Labo",
+      "modelName": "Lavande 31 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lelabofragrances.com/lavande-31-507.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "le labo",
+        "modelName": "lavande 31 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "aromatic floral",
+        "topNotes": "Bergamot, Neroli",
+        "heartNotes": "Lavender True",
+        "baseNotes": "Amber, Musk, Tonka Bean"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Radical reinvention of lavender stripping away all granny retro associations.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-philosykos",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Philosykos Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/philosykos-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "philosykos eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "woody green",
+        "topNotes": "Fig Leaf, Fig Fruit",
+        "heartNotes": "Green Notes, Coconut",
+        "baseNotes": "Fig Tree Bark, Cedar, Woody Notes"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Greek Mount Pelion memory capturing the entire fig tree from leaves to bark.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-tam-dao",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Tam Dao Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/tam-dao-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "tam dao eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "woody",
+        "topNotes": "Italian Cypress, Myrtle, Rose",
+        "heartNotes": "Goan Sandalwood, Cedarwood",
+        "baseNotes": "Amber, Spices, White Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sacred childhood memory of the dense tropical forests of Indochina and sandalwood.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-fleur-de-peau",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Fleur de Peau Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/fleur-de-peau-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "fleur de peau eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "musky floral",
+        "topNotes": "Aldehydes, Pink Pepper, Angelica, Bergamot",
+        "heartNotes": "Iris, Turkish Rose",
+        "baseNotes": "Musk, Ambrette, Ambergris, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tribute to the mythical love of Psyche and Eros rendered in cottony soft musk and iris.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-do-son",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Do Son Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/do-son-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "do son eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "floral marine",
+        "topNotes": "African Orange Flower, Rose",
+        "heartNotes": "Tuberose, Pink Pepper",
+        "baseNotes": "Benzoin, White Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seaside memory of Ha Long Bay laden with spicy fresh night-blooming tuberose.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-eau-duelle",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Eau Duelle Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/eau-duelle-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "eau duelle eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "oriental spicy vanilla",
+        "topNotes": "Pink Peppercorn, Juniper Berry, Cardamom",
+        "heartNotes": "Somalian Frankincense, Black Tea, Saffron",
+        "baseNotes": "Bourbon Vanilla, Vetiver, Cypriol"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spicy voyage along the spice route tracing luminous and dark Bourbon vanilla.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-orpheon",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Orphéon Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/orpheon-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "orphéon eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "woody floral",
+        "topNotes": "Juniper Berries",
+        "heartNotes": "Jasmine",
+        "baseNotes": "Powdery Notes, Cedarwood, Tonka Bean"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portrait of the vibrant 1960s Saint-Germain bar where Diptyque's founders met.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-lombre-dans-leau",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "L'Ombre dans l'Eau Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/l-ombre-dans-l-eau-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "l'ombre dans l'eau eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "green floral",
+        "topNotes": "Blackcurrant Leaf",
+        "heartNotes": "Damascena Rose",
+        "baseNotes": "Petitgrain, Ambergris"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Summer daydream beside a tranquil river bordered by weeping willows and roses.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-eau-capitale",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Eau Capitale Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/eau-capitale-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "eau capitale eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "chypre floral",
+        "topNotes": "Pink Peppercorn, Bergamot",
+        "heartNotes": "Rose",
+        "baseNotes": "Patchouli, Akigalawood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Parisian tribute celebrating the enigmatic architectural elegance of chypre.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-vetyverio",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Vetyverio Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/vetyverio-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "vetyverio eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "woody floral",
+        "topNotes": "Mandarin, Grapefruit",
+        "heartNotes": "Turkish Rose, Patchouli",
+        "baseNotes": "Haitian Vetiver, Java Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Duality of Haitian and Javan vetiver, oscillating between smoke and velvet rose.",
+      "status": "staged"
+    },
+    {
+      "id": "diptyque-eau-rose",
+      "canonicalBrand": "Diptyque",
+      "displayBrand": "Diptyque",
+      "modelName": "Eau Rose Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.diptyqueparis.com/en_us/p/eau-rose-eau-de-parfum-75ml.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "diptyque",
+        "modelName": "eau rose eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "floral fruity",
+        "topNotes": "Litchi",
+        "heartNotes": "Damascena Rose, Centifolia Rose, Chamomile",
+        "baseNotes": "Artichoke, Cedarwood, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Surprising modern bouquet pairing Centifolia roses with green artichoke accord.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-angels-share",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Angels' Share Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/81729/perfume/angels-share"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "angels' share eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the liquors gourmand",
+        "topNotes": "Cognac Essence",
+        "heartNotes": "Cinnamon Bark, Oak Absolute, Tonka Bean",
+        "baseNotes": "Praline, Vanilla, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heritage tribute to Hennessy cognac distilling the legendary angel's share evaporation.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-black-phantom",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Black Phantom Memento Mori",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/49492/perfume/black-phantom-memento-mori"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "black phantom memento mori",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the cellars gourmand",
+        "topNotes": "Martinique Rum",
+        "heartNotes": "Java Coffee, Vetiver, Cyanide Accord",
+        "baseNotes": "Sugar Cane, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pirate ship galleon drenched in dark rum, bitter espresso and burnt sugar cane.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-love-dont-be-shy",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Love, Don't Be Shy Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/43977/perfume/love-dont-be-shy"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "love, don't be shy eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the narcotics gourmand",
+        "topNotes": "Neroli, Bergamot, Pink Pepper, Coriander",
+        "heartNotes": "Orange Blossom, Honeysuckle, Jasmine, Marshmallow",
+        "baseNotes": "Sugar, Vanilla, Caramel, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sweet mouth-watering seduction reminiscent of plush gourmet marshmallows.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-straight-to-heaven",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Straight to Heaven White Cristal",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/43981/perfume/straight-to-heaven"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "straight to heaven white cristal",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the cellars woody",
+        "topNotes": "Dark Rum",
+        "heartNotes": "Nutmeg, Dried Fruits, Hedione",
+        "baseNotes": "Patchouli, Cedarwood, Amber, Vanilla, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Addictive potion radiating sultry Caribbean rum and dense Indonesian patchouli.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-vodka-on-the-rocks",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Vodka on the Rocks Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/43988/perfume/vodka-on-the-rocks"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "vodka on the rocks eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the fresh aromatic",
+        "topNotes": "Cardamom, Coriander, Aldehydes",
+        "heartNotes": "Rhubarb, Lily-of-the-Valley, Pink Rose",
+        "baseNotes": "Oakmoss, Ambroxan, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Icy sensation of Russian vodka served chilled in a crystalline tumbler.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-moonlight-in-heaven",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Moonlight in Heaven Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/43979/perfume/moonlight-in-heaven"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "moonlight in heaven eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the fresh fruity",
+        "topNotes": "Grapefruit, Lemon, Pink Pepper",
+        "heartNotes": "Coconut Milk, Rice, Mango",
+        "baseNotes": "Tonka Bean, Vetiver"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Romantic nocturnal escape infused with sticky mango rice and warm coconut milk.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-intoxicated",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Intoxicated Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/43976/perfume/intoxicated"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "intoxicated eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the cellars spicy",
+        "topNotes": "Cardamom",
+        "heartNotes": "Cinnamon Bark, Nutmeg",
+        "baseNotes": "Turkish Mocha Coffee, Caramelized Sugar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rich cup of steaming Turkish coffee spiked with green crushed cardamom seeds.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-rolling-in-love",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Rolling in Love Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/70477/perfume/rolling-in-love"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "rolling in love eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the narcotics floral",
+        "topNotes": "Almond Milk, Ambrette",
+        "heartNotes": "Iris, Freesia",
+        "baseNotes": "Tuberose, Vanilla, Tonka Bean, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Monochromatic red passion captured in creamy almond milk and velvet iris.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-apple-brandy",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Apple Brandy on the Rocks",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/93437/perfume/apple-brandy-on-the-rocks"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "apple brandy on the rocks",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the liquors fruity",
+        "topNotes": "Bergamot, Apple, Cardamom",
+        "heartNotes": "Rum, Brandy, Moss, Vanilla",
+        "baseNotes": "Cedarwood, Ambroxan"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nighttime tribute to New York cocktail culture mingling crisp apple with brandy.",
+      "status": "staged"
+    },
+    {
+      "id": "kilian-smoking-hot",
+      "canonicalBrand": "Kilian",
+      "displayBrand": "Kilian",
+      "modelName": "Smoking Hot Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bykilian.com/product/19797/116904/perfume/smoking-hot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml"
+      ],
+      "collectedAttributes": {
+        "brand": "kilian",
+        "modelName": "smoking hot eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "the smokes gourmand",
+        "topNotes": "Apple Hookah Accord, Cinnamon Bark",
+        "heartNotes": "Kentucky Tobacco Absolute",
+        "baseNotes": "Bourbon Vanilla, Oakmoss"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensual forbidden smoke blending caramelized apple shisha and rich tobacco.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-the-tragedy-of-lord-george",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "The Tragedy of Lord George Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/the-tragedy-of-lord-george-000000000065130777"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "the tragedy of lord george eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "woody amber fougère",
+        "topNotes": "Rum",
+        "heartNotes": "Tonka Bean",
+        "baseNotes": "Ambrox, Shaving Soap"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The noble patriarch of the Portraits family: respectable, traditional and loyal.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-the-coveted-duchess-rose",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "The Coveted Duchess Rose Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/the-coveted-duchess-rose-000000000065130778"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "the coveted duchess rose eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "delicate woody floral",
+        "topNotes": "Mandarin",
+        "heartNotes": "Centifolia Rose",
+        "baseNotes": "Musky Wood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fresh dewy English rose concealing deceptive and sensual woody secrets.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-halfeti",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "Halfeti Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/halfeti-000000000065130545"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "halfeti eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody floral amber",
+        "topNotes": "Grapefruit, Bergamot, Green Notes, Armoise",
+        "heartNotes": "Cumin, Nutmeg, Violet, Saffron, Rose, Jasmine",
+        "baseNotes": "Leather, Oud, Amber, Resins, Tonka, Vanilla, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The legendary black roses blooming exclusively along the banks of the Euphrates.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-juniper-sling",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "Juniper Sling Eau de Toilette",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/juniper-sling-000000000065130543"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "juniper sling eau de toilette",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody spicy fresh",
+        "topNotes": "Cinnamon, Orange Brandy, Angelica, Juniper Berry",
+        "heartNotes": "Cardamom, Leather, Black Pepper, Orris Wood",
+        "baseNotes": "Brown Sugar, Black Cherry, Vetiver, Ambrox"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tribute to 1920s London cocktail culture and crisp refreshing dry gin.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-endymion-concentre",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "Endymion Concentré",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/endymion-concentre-000000000065130541"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "endymion concentré",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "semi-oriental woody",
+        "topNotes": "Bergamot, Lavender, Sage",
+        "heartNotes": "Geranium, Suede Accord",
+        "baseNotes": "Leather, Incense, Nutmeg"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seductive moonlit fragrance celebrating the handsome mythological shepherd.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-sartorial",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "Sartorial Eau de Toilette",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/sartorial-000000000065130554"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "sartorial eau de toilette",
+        "concentration": "eau de toilette",
+        "volumeMl": 100,
+        "olfactoryFamily": "fougère metallic",
+        "topNotes": "Aldehydes, Ozonic Effect, Metallic Effect, Violet Leaf, Neroli",
+        "heartNotes": "Beeswax, Cyclamen, Linden Blossom, Lavender, Leather",
+        "baseNotes": "Gurgum Wood, Patchouli, Myrrh, Cedarwood, Tonka Bean"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bespoke tailoring atmosphere of Norton & Sons workrooms on Savile Row.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-the-blazing-mr-sam",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "The Blazing Mr Sam Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/the-blazing-mr-sam-000000000065130784"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "the blazing mr sam eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "woody spicy",
+        "topNotes": "Cardamom, Cinnamon",
+        "heartNotes": "Cumin, Saffron, Black Pepper",
+        "baseNotes": "Vanilla, Patchouli, Cedarwood, Tobacco"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loud, wealthy American visitor who lives fast and charms London high society.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-terrible-teddy",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "Terrible Teddy Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/terrible-teddy-000000000065147814"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "terrible teddy eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "leathery incense",
+        "topNotes": "Incense",
+        "heartNotes": "Leather",
+        "baseNotes": "Ambroxan"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sharp hunter who lives for the chase, masked in incense and raw leather.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-babylon",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "Babylon Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/babylon-000000000065163152"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "babylon eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "oriental woody vanilla",
+        "topNotes": "Saffron, Nutmeg, Coriander",
+        "heartNotes": "Cypriol",
+        "baseNotes": "Sandalwood, Cedarwood, Vanilla"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Majestic cradle of civilization wrapped in rich warm vanilla and sacred cedar.",
+      "status": "staged"
+    },
+    {
+      "id": "penhaligons-cairo",
+      "canonicalBrand": "Penhaligon's",
+      "displayBrand": "Penhaligon's",
+      "modelName": "Cairo Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.penhaligons.com/us/en/product/cairo-000000000065146030"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "penhaligon's",
+        "modelName": "cairo eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral amber woody",
+        "topNotes": "Damascena Rose, Saffron",
+        "heartNotes": "Labdanum, Cypriol, Vanilla",
+        "baseNotes": "Patchouli, Cedarwood, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Golden Egyptian sunrise illuminating ancient minarets and Damascena roses.",
+      "status": "staged"
+    },
+    {
+      "id": "serge-lutens-chergui",
+      "canonicalBrand": "Serge Lutens",
+      "displayBrand": "Serge Lutens",
+      "modelName": "Chergui Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sergelutens.com/products/chergui"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "serge lutens",
+        "modelName": "chergui eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "amber spicy",
+        "topNotes": "Hay Sugar, Immortelle",
+        "heartNotes": "Tobacco Leaf, Honey, Iris",
+        "baseNotes": "Amber, Musk, Sandalwood, Incense"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fiery Moroccan desert wind blowing over tobacco leaves and crystallized honey.",
+      "status": "staged"
+    },
+    {
+      "id": "serge-lutens-ambre-sultan",
+      "canonicalBrand": "Serge Lutens",
+      "displayBrand": "Serge Lutens",
+      "modelName": "Ambre Sultan Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sergelutens.com/products/ambre-sultan"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "serge lutens",
+        "modelName": "ambre sultan eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "oriental amber",
+        "topNotes": "Coriander, Bay Leaf, Oregano",
+        "heartNotes": "Myrrh, Angelica Root, Resins",
+        "baseNotes": "Amber, Benzoin, Vanilla, Patchouli"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Artisanal benchmark amber fragrance inspired by raw resin pieces found in Marrakech souks.",
+      "status": "staged"
+    },
+    {
+      "id": "serge-lutens-feminite-du-bois",
+      "canonicalBrand": "Serge Lutens",
+      "displayBrand": "Serge Lutens",
+      "modelName": "Féminité du Bois Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sergelutens.com/products/feminite-du-bois"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "serge lutens",
+        "modelName": "féminité du bois eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "woody fruity",
+        "topNotes": "Virginia Cedar, Plum, Cinnamon, Peach",
+        "heartNotes": "Clove, Ginger, Violet, Ylang-Ylang, Rose",
+        "baseNotes": "Vanilla, Sandalwood, Benzoin, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pioneering cedarwood revolution in feminine perfumery loaded with dark sweet plums.",
+      "status": "staged"
+    },
+    {
+      "id": "serge-lutens-la-fille-de-berlin",
+      "canonicalBrand": "Serge Lutens",
+      "displayBrand": "Serge Lutens",
+      "modelName": "La Fille de Berlin Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sergelutens.com/products/la-fille-de-berlin"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "serge lutens",
+        "modelName": "la fille de berlin eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "floral spicy",
+        "topNotes": "Rose, Geranium",
+        "heartNotes": "Palmarosa",
+        "baseNotes": "Patchouli, Moss, Honey"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "A rose with thorns: strong, unapologetic and fiercely romantic.",
+      "status": "staged"
+    },
+    {
+      "id": "serge-lutens-santal-majuscule",
+      "canonicalBrand": "Serge Lutens",
+      "displayBrand": "Serge Lutens",
+      "modelName": "Santal Majuscule Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sergelutens.com/products/santal-majuscule"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "serge lutens",
+        "modelName": "santal majuscule eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "woody gourmand",
+        "topNotes": "Damascena Rose",
+        "heartNotes": "Bitter Cacao",
+        "baseNotes": "Sandalwood, Tonka Bean"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Capitalized sandalwood grandeur bathed in dark powdered cacao and Turkish rose.",
+      "status": "staged"
+    },
+    {
+      "id": "serge-lutens-fleurs-doranger",
+      "canonicalBrand": "Serge Lutens",
+      "displayBrand": "Serge Lutens",
+      "modelName": "Fleurs d'Oranger Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sergelutens.com/products/fleurs-doranger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "serge lutens",
+        "modelName": "fleurs d'oranger eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "floral white",
+        "topNotes": "Orange Blossom, White Jasmine",
+        "heartNotes": "Indian Tuberose, White Rose",
+        "baseNotes": "Cumin, Nutmeg, Musk, Woody Notes"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Drunken Moroccan orange blossom harvest warmed with cumin and white jasmine.",
+      "status": "staged"
+    },
+    {
+      "id": "serge-lutens-lorpheline",
+      "canonicalBrand": "Serge Lutens",
+      "displayBrand": "Serge Lutens",
+      "modelName": "L'Orpheline Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sergelutens.com/products/lorpheline"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "serge lutens",
+        "modelName": "l'orpheline eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 50,
+        "olfactoryFamily": "incense musky",
+        "topNotes": "Frankincense",
+        "heartNotes": "Castoreum, Pepper",
+        "baseNotes": "Grey Musk, Woody Notes"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ghostly meditative poetry of cold grey incense and pristine white musks.",
+      "status": "staged"
+    },
+    {
+      "id": "serge-lutens-cuir-mauresque",
+      "canonicalBrand": "Serge Lutens",
+      "displayBrand": "Serge Lutens",
+      "modelName": "Cuir Mauresque Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sergelutens.com/products/cuir-mauresque"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "serge lutens",
+        "modelName": "cuir mauresque eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "leather amber",
+        "topNotes": "Cinnamon, Nutmeg, Clove",
+        "heartNotes": "Orange Blossom, Cedar, Incense",
+        "baseNotes": "Moorish Leather, Civet, Amber, Myrrh"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rich Moorish leather steeped in precious spices, candied orange blossom and resins.",
+      "status": "staged"
+    },
+    {
+      "id": "pdm-layton",
+      "canonicalBrand": "Parfums de Marly",
+      "displayBrand": "Parfums de Marly",
+      "modelName": "Layton Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://parfums-de-marly.com/products/layton"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "125ml"
+      ],
+      "collectedAttributes": {
+        "brand": "parfums de marly",
+        "modelName": "layton eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "oriental floral",
+        "topNotes": "Apple, Bergamot, Lavender",
+        "heartNotes": "Jasmine, Violet, Geranium",
+        "baseNotes": "Vanilla, Pepper, Guaiac Wood, Patchouli"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Addictive royal Versailles signature combining crisp apple, warm vanilla and woods.",
+      "status": "staged"
+    },
+    {
+      "id": "pdm-herod",
+      "canonicalBrand": "Parfums de Marly",
+      "displayBrand": "Parfums de Marly",
+      "modelName": "Herod Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://parfums-de-marly.com/products/herod"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "125ml"
+      ],
+      "collectedAttributes": {
+        "brand": "parfums de marly",
+        "modelName": "herod eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "woody gourmand",
+        "topNotes": "Cinnamon, Pepperwood",
+        "heartNotes": "Tobacco Leaf, Incense, Cistus, Osmanthus",
+        "baseNotes": "Vanilla Pod, Musk, Patchouli, Cedarwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smoky sweet tribute to the victorious 18th-century stallion Herod.",
+      "status": "staged"
+    },
+    {
+      "id": "pdm-pegasus",
+      "canonicalBrand": "Parfums de Marly",
+      "displayBrand": "Parfums de Marly",
+      "modelName": "Pegasus Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://parfums-de-marly.com/products/pegasus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "125ml"
+      ],
+      "collectedAttributes": {
+        "brand": "parfums de marly",
+        "modelName": "pegasus eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "oriental fougère",
+        "topNotes": "Cypress, Bergamot, Heliotrope",
+        "heartNotes": "Jasmine, Lavender, Bitter Almond",
+        "baseNotes": "Vanilla, Amber, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Noble metallic and powdery fougère laced with bitter almond and lavender.",
+      "status": "staged"
+    },
+    {
+      "id": "pdm-carlisle",
+      "canonicalBrand": "Parfums de Marly",
+      "displayBrand": "Parfums de Marly",
+      "modelName": "Carlisle Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://parfums-de-marly.com/products/carlisle"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "125ml"
+      ],
+      "collectedAttributes": {
+        "brand": "parfums de marly",
+        "modelName": "carlisle eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "floral spicy woody",
+        "topNotes": "Green Apple, Nutmeg",
+        "heartNotes": "Tonka Bean, Osmanthus, Rose, Davana",
+        "baseNotes": "Vanilla, Patchouli, Opoponax Resinoid"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dark magnetic contrast of crisp green apple and velvety rich tonka.",
+      "status": "staged"
+    },
+    {
+      "id": "pdm-greenley",
+      "canonicalBrand": "Parfums de Marly",
+      "displayBrand": "Parfums de Marly",
+      "modelName": "Greenley Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://parfums-de-marly.com/products/greenley"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "125ml"
+      ],
+      "collectedAttributes": {
+        "brand": "parfums de marly",
+        "modelName": "greenley eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "citrus woody",
+        "topNotes": "Sicilian Bergamot, Mandarin, Green Apple, Cashmeran",
+        "heartNotes": "Cedarwood, Petitgrain, Violet, Pomarose",
+        "baseNotes": "Oakmoss, Musk, Amberwood Accord"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vibrant splash of crisp green apple and luminous petitgrain celebrating nature.",
+      "status": "staged"
+    },
+    {
+      "id": "pdm-sedley",
+      "canonicalBrand": "Parfums de Marly",
+      "displayBrand": "Parfums de Marly",
+      "modelName": "Sedley Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://parfums-de-marly.com/products/sedley"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml",
+        "125ml"
+      ],
+      "collectedAttributes": {
+        "brand": "parfums de marly",
+        "modelName": "sedley eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Bergamot, Spearmint, Watery Accord",
+        "heartNotes": "Geranium, Bourbon Geranium, Lavender",
+        "baseNotes": "Sandalwood, Incense, White Musk, Cedarwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Effervescent freshness of spearmint and bergamot resting on noble woods.",
+      "status": "staged"
+    },
+    {
+      "id": "pdm-delina",
+      "canonicalBrand": "Parfums de Marly",
+      "displayBrand": "Parfums de Marly",
+      "modelName": "Delina Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://parfums-de-marly.com/products/delina"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "75ml"
+      ],
+      "collectedAttributes": {
+        "brand": "parfums de marly",
+        "modelName": "delina eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 75,
+        "olfactoryFamily": "floral woody",
+        "topNotes": "Rhubarb, Lychee, Bergamot",
+        "heartNotes": "Turkish Rose, Peony, Vanilla",
+        "baseNotes": "Cashmeran, Musk, Vetiver, Cedarwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sultry triumph of Turkish rose dominated by crisp tart rhubarb and lychee.",
+      "status": "staged"
+    },
+    {
+      "id": "pdm-haltane",
+      "canonicalBrand": "Parfums de Marly",
+      "displayBrand": "Parfums de Marly",
+      "modelName": "Haltane Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://parfums-de-marly.com/products/haltane"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "125ml"
+      ],
+      "collectedAttributes": {
+        "brand": "parfums de marly",
+        "modelName": "haltane eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 125,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Bergamot, Lavender, Clary Sage",
+        "heartNotes": "Saffron, Cedarwood, Praline, Elder Wood",
+        "baseNotes": "Patchouli, Vetiver, Musk, Leather, Agarwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Aristocratic woody aromatic scent celebrating traditional dark woods and sweet praline.",
+      "status": "staged"
+    },
+    {
+      "id": "amouage-interlude-man",
+      "canonicalBrand": "Amouage",
+      "displayBrand": "Amouage",
+      "modelName": "Interlude Man Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amouage.com/products/interlude-man"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "OM",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "amouage",
+        "modelName": "interlude man eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "spicy woody amber",
+        "topNotes": "Bergamot, Oregano, Pimento Berry Oil",
+        "heartNotes": "Amber, Frankincense, Cistus, Opoponax",
+        "baseNotes": "Leather, Agarwood Smoke, Patchouli, Sandalwood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Known as the Blue Beast: a chaotic yet harmonized storm of incense and oregano.",
+      "status": "staged"
+    },
+    {
+      "id": "amouage-reflection-man",
+      "canonicalBrand": "Amouage",
+      "displayBrand": "Amouage",
+      "modelName": "Reflection Man Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amouage.com/products/reflection-man"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "OM",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "amouage",
+        "modelName": "reflection man eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody floral musk",
+        "topNotes": "Rosemary, Red Pepper Berries, Bitter Orange Leaves",
+        "heartNotes": "Neroli, Orris, Jasmine, Ylang-Ylang",
+        "baseNotes": "Vetiver, Cedarwood, Sandalwood, Patchouli"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated modern floral elegance radiating refined gentlemanly charm.",
+      "status": "staged"
+    },
+    {
+      "id": "amouage-jubilation-xxv-man",
+      "canonicalBrand": "Amouage",
+      "displayBrand": "Amouage",
+      "modelName": "Jubilation XXV Man",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amouage.com/products/jubilation-xxv-man"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "OM",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "amouage",
+        "modelName": "jubilation xxv man",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "oriental fougère",
+        "topNotes": "Labdanum Ciste, Coriander, Orange, Davana, Frankincense, Blackberry",
+        "heartNotes": "Honey, Bay, Cinnamon, Orchid, Rose, Clove, Celery Seeds, Guaiac Wood",
+        "baseNotes": "Patchouli, Opoponax, Myrrh, Atlas Cedarwood, Musk, Moss, Ambergris, Oud Wood, Immortelle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Royal silver jubilee celebration of Oman: opulent blackberry, incense and myrrh.",
+      "status": "staged"
+    },
+    {
+      "id": "amouage-guidance",
+      "canonicalBrand": "Amouage",
+      "displayBrand": "Amouage",
+      "modelName": "Guidance Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amouage.com/products/guidance"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "OM",
+      "lifecycle": "active",
+      "variants": [
+        "50ml",
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "amouage",
+        "modelName": "guidance eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "floral amber gourmand",
+        "topNotes": "Pear, Frankincense, Hazelnut",
+        "heartNotes": "Saffron, Rose, Jasmine Sambac, Osmanthus",
+        "baseNotes": "Cistus, Sandalwood, Akigalawood, Ambergris, Vanilla"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Enchanting tale of frankincense and osmanthus swirled with roasted hazelnut and pear.",
+      "status": "staged"
+    },
+    {
+      "id": "amouage-beach-hut-man",
+      "canonicalBrand": "Amouage",
+      "displayBrand": "Amouage",
+      "modelName": "Beach Hut Man Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amouage.com/products/beach-hut-man"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "OM",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "amouage",
+        "modelName": "beach hut man eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "woody aromatic green",
+        "topNotes": "Mint, Orange Blossom, Galbanum",
+        "heartNotes": "Vetiver, Moss, Ivy",
+        "baseNotes": "Patchouli, Myrrh, Dry Woods"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Untamed solitary escape along a deserted beach overgrown with ivy and wild mint.",
+      "status": "staged"
+    },
+    {
+      "id": "amouage-epic-man",
+      "canonicalBrand": "Amouage",
+      "displayBrand": "Amouage",
+      "modelName": "Epic Man Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amouage.com/products/epic-man"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "OM",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "amouage",
+        "modelName": "epic man eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "oriental woody",
+        "topNotes": "Pink Pepper Berry, Frankincense, Cumin, Cardamom, Saffron, Mace, Nutmeg, Myrtle",
+        "heartNotes": "Geranium, Myrrh",
+        "baseNotes": "Oud, Sandalwood, Patchouli, Leather, Cedarwood, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Legend of the ancient Silk Road connecting Arabia to China with frankincense and jade.",
+      "status": "staged"
+    },
+    {
+      "id": "amouage-enclave",
+      "canonicalBrand": "Amouage",
+      "displayBrand": "Amouage",
+      "modelName": "Enclave Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amouage.com/products/enclave"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "OM",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "amouage",
+        "modelName": "enclave eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "oriental fougère minty",
+        "topNotes": "Cardamom Oil, Spearmint Oil, Pink Pepper CO2, Cinnamon Bark Oil",
+        "heartNotes": "Rose Absolute, Patchouli Heart, Olibanum Oil, Vetiver Oil",
+        "baseNotes": "Saffiano, AmberXtreme, Labdanum Resinoid"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dramatic sunset over the Musandam fjords where icy mint meets fiery warm earth.",
+      "status": "staged"
+    },
+    {
+      "id": "amouage-royal-tobacco",
+      "canonicalBrand": "Amouage",
+      "displayBrand": "Amouage",
+      "modelName": "Royal Tobacco Extrait",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://amouage.com/products/royal-tobacco"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "OM",
+      "lifecycle": "active",
+      "variants": [
+        "100ml"
+      ],
+      "collectedAttributes": {
+        "brand": "amouage",
+        "modelName": "royal tobacco extrait",
+        "concentration": "extrait de parfum",
+        "volumeMl": 100,
+        "olfactoryFamily": "amber aromatic tobacco",
+        "topNotes": "Frankincense Oil, Elemi, Cardamom, Anise, Basil, Bergamot",
+        "heartNotes": "Tobacco Absolute, Licorice Root, Lavender, Prunol, Fenugreek, Orange Blossom, Osmanthus, Rose",
+        "baseNotes": "Frankincense Resinoid, Peru Balsam, Benzoin, Labdanum, Myrrh, Birch Tar, Tonka Bean, Vanilla, Vetiver, Guaiac Wood, Oud Assafi, Musks"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Regal voyage linking El Lector tradition and royal frankincense through dark tobacco.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-baccarat-rouge-540-edp",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Baccarat Rouge 540 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/baccarat-rouge-540-eau-de-parfum-RA14232.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "baccarat rouge 540 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "woody amber",
+        "topNotes": "Jasmine, Saffron",
+        "heartNotes": "Cedarwood",
+        "baseNotes": "Ambergris Accord, Fir Resin"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Luminous and intense signature alchemy of scarlet crystal and golden amber.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-baccarat-rouge-540-extrait",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Baccarat Rouge 540 Extrait de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/baccarat-rouge-540-extrait-de-parfum-RA142322.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "baccarat rouge 540 extrait de parfum",
+        "concentration": "extrait de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "woody amber floral",
+        "topNotes": "Grandiflorum Jasmine from Egypt, Bitter Almond from Morocco",
+        "heartNotes": "Cedarwood",
+        "baseNotes": "Ambergris Accord, Woody Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Concentrated power of scarlet crystal deepened with bitter almond and musk.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-grand-soir",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Grand Soir Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/grand-soir-eau-de-parfum-RA122521.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "grand soir eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "amber",
+        "topNotes": "Spanish Labdanum",
+        "heartNotes": "Benzoin from Siam, Tonka Bean from Brazil",
+        "baseNotes": "Vanilla, Deep Amber Accord"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Splendour of a Parisian evening dressed in warm Siamese benzoin and vanilla.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-oud-satin-mood",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Oud Satin Mood Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/oud-satin-mood-eau-de-parfum-RA12342.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "oud satin mood eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "oriental floral woody",
+        "topNotes": "Violet Accord",
+        "heartNotes": "Damascena Rose from Turkey, Centifolia Rose from Tunisia",
+        "baseNotes": "Natural Oud from Laos, Amber Vanilla Accord"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensual desire to wrap oneself in shimmering flowing Orient satin silk.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-aqua-universalis-forte",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Aqua Universalis Forte",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/aqua-universalis-forte-eau-de-parfum-RA10222.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "aqua universalis forte",
+        "concentration": "eau de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "citrus floral musky",
+        "topNotes": "Calabrian Bergamot, Sicilian Lemon",
+        "heartNotes": "White Flowers, Egyptian Jasmine, Moroccan Rose",
+        "baseNotes": "Light Musks, Wood"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sunlit radiance elevating the airy freshness of white flowers and bergamot.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-724",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "724 Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/724-eau-de-parfum-RA172402.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml",
+        "200ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "724 eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "musky floral",
+        "topNotes": "Aldehydes, Calabrian Bergamot",
+        "heartNotes": "Egyptian Jasmine, Sweet Pea, Mock Orange",
+        "baseNotes": "White Sandalwood, White Musks"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Urban electric energy alive 24 hours a day, 7 days a week.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-gentle-fluidity-silver",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Gentle Fluidity Silver",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/gentle-fluidity-silver-eau-de-parfum-RA12162.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "gentle fluidity silver",
+        "concentration": "eau de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Juniper Berries, Nutmeg",
+        "heartNotes": "Coriander Seeds",
+        "baseNotes": "Amber Woods, Vanilla, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vibrant dynamism of juniper berries and aromatic nutmeg in silver balance.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-gentle-fluidity-gold",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Gentle Fluidity Gold",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/gentle-fluidity-gold-eau-de-parfum-RA12152.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "gentle fluidity gold",
+        "concentration": "eau de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "oriental musky",
+        "topNotes": "Juniper Berries, Nutmeg",
+        "heartNotes": "Coriander Seeds",
+        "baseNotes": "Vanilla, Amber Woods, Musk"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Generous enveloping cocoon of warm Madagascar vanilla and amber woods.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-amyris-homme-extrait",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Amyris Homme Extrait de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/amyris-homme-extrait-de-parfum-RA12022.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "amyris homme extrait de parfum",
+        "concentration": "extrait de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "woody aromatic",
+        "topNotes": "Mandarin Blossom, Rosemary",
+        "heartNotes": "Amyris from Jamaica, Iris from Florence",
+        "baseNotes": "Tonka Bean, Cinnamon, Vanilla"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Effortless elegance sparked by the collision of Jamaican amyris and Florentine iris.",
+      "status": "staged"
+    },
+    {
+      "id": "mfk-petit-matin",
+      "canonicalBrand": "Maison Francis Kurkdjian",
+      "displayBrand": "Maison Francis Kurkdjian",
+      "modelName": "Petit Matin Eau de Parfum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA12242.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "70ml"
+      ],
+      "collectedAttributes": {
+        "brand": "maison francis kurkdjian",
+        "modelName": "petit matin eau de parfum",
+        "concentration": "eau de parfum",
+        "volumeMl": 70,
+        "olfactoryFamily": "citrus floral",
+        "topNotes": "Litsea Cubeba, Calabrian Lemon",
+        "heartNotes": "Lavandin, Orange Blossom, Hawthorn",
+        "baseNotes": "Musk, Ambroxan"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Luminous freshness of an early morning stroll through the deserted streets of Paris.",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Serge Lutens",
+      "leafKey": "fragrance",
+      "reason": "Serge Lutens maintains exactly 8 core catalog references in its iconic Collection Noire luxury portfolio.",
+      "officialSourceUrl": "https://www.sergelutens.com/products/collection-noire",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Chergui Eau de Parfum",
+        "Ambre Sultan Eau de Parfum",
+        "Féminité du Bois Eau de Parfum",
+        "La Fille de Berlin Eau de Parfum",
+        "Santal Majuscule Eau de Parfum",
+        "Fleurs d'Oranger Eau de Parfum",
+        "L'Orpheline Eau de Parfum",
+        "Cuir Mauresque Eau de Parfum"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "FR"
+    },
+    {
+      "brand": "Parfums de Marly",
+      "leafKey": "fragrance",
+      "reason": "Parfums de Marly active catalog focuses on 8 distinct masculine and feminine haute parfumerie pillar creations.",
+      "officialSourceUrl": "https://parfums-de-marly.com/collections/eau-de-parfum",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Layton Eau de Parfum",
+        "Herod Eau de Parfum",
+        "Pegasus Eau de Parfum",
+        "Carlisle Eau de Parfum",
+        "Greenley Eau de Parfum",
+        "Sedley Eau de Parfum",
+        "Delina Eau de Parfum",
+        "Haltane Eau de Parfum"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "FR"
+    },
+    {
+      "brand": "Amouage",
+      "leafKey": "fragrance",
+      "reason": "Amouage High Perfumery collection centers on 8 iconic Renaissance and Odyssey chapter extraits and eau de parfums.",
+      "officialSourceUrl": "https://amouage.com/collections/fragrance",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Interlude Man Eau de Parfum",
+        "Reflection Man Eau de Parfum",
+        "Jubilation XXV Man",
+        "Guidance Eau de Parfum",
+        "Beach Hut Man Eau de Parfum",
+        "Epic Man Eau de Parfum",
+        "Enclave Eau de Parfum",
+        "Royal Tobacco Extrait"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "OM"
+    }
+  ]
+}

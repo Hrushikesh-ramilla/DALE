@@ -1,0 +1,3703 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "webcams",
+  "displayName": "Webcams & Streaming Cameras",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "logitech-mx-brio-4k",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Master Series",
+      "modelName": "MX Brio 4K Ultra HD Collaboration Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/mx-brio-4k-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-mx-brio-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "mx brio 4k ultra hd collaboration webcam",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 90,
+        "autofocusType": "Advanced AI Phase Autofocus",
+        "microphoneType": "Dual Beamforming Noise-Reducing",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: MX Brio 4K Ultra HD Collaboration Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-brio-500",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Brio Series",
+      "modelName": "Brio 500 Full HD Webcam (Show Mode)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/brio-500-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-brio-500.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "brio 500 full hd webcam (show mode)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "RightLight 4 Autofocus",
+        "microphoneType": "Dual Noise-Cancelling Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: Brio 500 Full HD Webcam (Show Mode)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-brio-4k-pro",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Brio Series",
+      "modelName": "Brio 4K Pro Webcam (Windows Hello HDR)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/brio-4k-hdr-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-brio-4k-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "brio 4k pro webcam (windows hello hdr)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 90,
+        "fovDegrees": 90,
+        "autofocusType": "Autofocus with 5x HD Zoom",
+        "microphoneType": "Dual Omnidirectional Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: Brio 4K Pro Webcam (Windows Hello HDR)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-streamcam",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Streaming Series",
+      "modelName": "StreamCam Full HD 60fps Vertical Video",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/streamcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-streamcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "streamcam full hd 60fps vertical video",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 78,
+        "autofocusType": "Smart Facial Tracking Autofocus",
+        "microphoneType": "Dual Omnidirectional with Noise Filter",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: StreamCam Full HD 60fps Vertical Video",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-c920s-hd-pro",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "HD Pro Series",
+      "modelName": "C920s HD Pro Webcam with Privacy Shutter",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/c920s-pro-hd-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-c920s-hd-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "c920s hd pro webcam with privacy shutter",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Full HD Glass Lens Autofocus",
+        "microphoneType": "Dual Stereo Audio Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: C920s HD Pro Webcam with Privacy Shutter",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-c922-pro-stream",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Streaming Series",
+      "modelName": "C922 Pro Stream Webcam (1080p30 / 720p60)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/c922-pro-stream-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-c922-pro-stream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "c922 pro stream webcam (1080p30 / 720p60)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 78,
+        "autofocusType": "Autofocus Fast Frame Rate",
+        "microphoneType": "Dual Stereo Omnidirectional",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: C922 Pro Stream Webcam (1080p30 / 720p60)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-c930e-business",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Business Solutions",
+      "modelName": "C930e Business Webcam (90-degree Wide FOV)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/c930e-business-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-c930e-business.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "c930e business webcam (90-degree wide fov)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "RightLight 2 with 4x Zoom Autofocus",
+        "microphoneType": "Integrated Dual Stereo",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: C930e Business Webcam (90-degree Wide FOV)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-c920x-pro-hd",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "HD Pro Series",
+      "modelName": "C920x Pro HD Webcam (Stereo Audio)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/c920x-pro-hd-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-c920x-pro-hd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "c920x pro hd webcam (stereo audio)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Automatic Light Correction Autofocus",
+        "microphoneType": "Dual Stereo Microphones",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: C920x Pro HD Webcam (Stereo Audio)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-c920e-business",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Business Solutions",
+      "modelName": "C920e Business 1080p Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/c920e-business-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-c920e-business.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "c920e business 1080p webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "HD Autofocus",
+        "microphoneType": "Dual Omnidirectional (App Enabled)",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: C920e Business 1080p Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-c505e-hd",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Long-Range Audio",
+      "modelName": "C505e HD Webcam (Long-Range Microphone)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/c505e-business-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-c505e-hd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "c505e hd webcam (long-range microphone)",
+        "resolution": "1280x720 (720p HD)",
+        "fpsMax": 30,
+        "fovDegrees": 60,
+        "autofocusType": "Fixed Focus",
+        "microphoneType": "Long-Range Omnidirectional Mic (3m)",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: C505e HD Webcam (Long-Range Microphone)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-c270-hd",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Essential Series",
+      "modelName": "C270 HD Webcam (RightLight Mono Mic)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/c270-hd-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-c270-hd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "c270 hd webcam (rightlight mono mic)",
+        "resolution": "1280x720 (720p HD)",
+        "fpsMax": 30,
+        "fovDegrees": 60,
+        "autofocusType": "Fixed Focus",
+        "microphoneType": "Built-in Noise-Reducing Mono Mic",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: C270 HD Webcam (RightLight Mono Mic)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-brio-300",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Brio Series",
+      "modelName": "Brio 300 Full HD Webcam (Cone Design USB-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/brio-300-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-brio-300.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "brio 300 full hd webcam (cone design usb-c)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 70,
+        "autofocusType": "Fixed Focus RightLight 2",
+        "microphoneType": "Mono Noise-Reducing Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: Brio 300 Full HD Webcam (Cone Design USB-C)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-brio-100",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Brio Series",
+      "modelName": "Brio 100 Full HD Everyday Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/brio-100-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-brio-100.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "brio 100 full hd everyday webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 58,
+        "autofocusType": "Fixed Focus Auto-Light",
+        "microphoneType": "Built-in Omnidirectional Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: Brio 100 Full HD Everyday Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-brio-105",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Business Series",
+      "modelName": "Brio 105 Business 1080p Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/brio-105-business-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-brio-105.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "brio 105 business 1080p webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 58,
+        "autofocusType": "Fixed Focus",
+        "microphoneType": "Integrated Microphone",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: Brio 105 Business 1080p Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-rally-camera",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "ConferenceCam PTZ",
+      "modelName": "Rally Camera Ultra-HD PTZ Camera (RightSight)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/video-conferencing/conference-cameras/rally-ultra-hd-ptz-camera.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-rally-camera.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "rally camera ultra-hd ptz camera (rightsight)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "15x HD Zoom PTZ Auto-Framing",
+        "microphoneType": "External Modular Mic Pod Support",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: Rally Camera Ultra-HD PTZ Camera (RightSight)",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-reach-camera",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Articulating Series",
+      "modelName": "Logitech Reach Articulating Camera",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/reach.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-reach-camera.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "logitech reach articulating camera",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 78,
+        "autofocusType": "Continuous Fast Autofocus with Overhead Articulation",
+        "microphoneType": "Built-in Microphone",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: Logitech Reach Articulating Camera",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-ptz-pro-2",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "ConferenceCam PTZ",
+      "modelName": "PTZ Pro 2 Video Camera for Conference Rooms",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/video-conferencing/conference-cameras/ptz-pro-2.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-ptz-pro-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "ptz pro 2 video camera for conference rooms",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "Motorized Pan-Tilt-Zoom 10x Lossless",
+        "microphoneType": "Conference System Audio Pass-through",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: PTZ Pro 2 Video Camera for Conference Rooms",
+      "status": "staged"
+    },
+    {
+      "id": "logitech-brio-505",
+      "canonicalBrand": "Logitech",
+      "displayBrand": "Logitech",
+      "productLine": "Business Series",
+      "modelName": "Brio 505 Business 1080p Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.logitech.com/en-us/products/webcams/brio-505-business-webcam.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.logitech.com/images/products/logitech-brio-505.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "logitech",
+        "modelName": "brio 505 business 1080p webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "RightLight 4 Autofocus",
+        "microphoneType": "Dual Noise-Cancelling Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Logitech verified webcams model: Brio 505 Business 1080p Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-iris-4k-ai-sony",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "Iris Professional",
+      "modelName": "Iris 4K AI Sony Sensor Webcam with Remote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/iris-4k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-iris-4k-ai-sony.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "iris 4k ai sony sensor webcam with remote",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 87,
+        "autofocusType": "AI Facial Tracking Autofocus",
+        "microphoneType": "Dual Omnidirectional Noise-Cancelling",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: Iris 4K AI Sony Sensor Webcam with Remote",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-hellocam-windows-hello",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "HelloCam Security",
+      "modelName": "HelloCam 1080p Facial Recognition Windows Hello",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/hellocam-windows-hello-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-hellocam-windows-hello.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "hellocam 1080p facial recognition windows hello",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 85,
+        "autofocusType": "Auto Facial Recognition IR",
+        "microphoneType": "Dual Noise-Cancelling Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: HelloCam 1080p Facial Recognition Windows Hello",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n930af-fhd-autofocus",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "N930 Series",
+      "modelName": "N930AF 1080p FHD Autofocus Webcam with Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n930af-1080p-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n930af-fhd-autofocus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n930af 1080p fhd autofocus webcam with cover",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 65,
+        "autofocusType": "Smart Fast Autofocus",
+        "microphoneType": "Built-in Noise-Cancelling Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N930AF 1080p FHD Autofocus Webcam with Cover",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n960e-60fps-ring-light",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "Streaming Light",
+      "modelName": "N960E 1080p 60fps Webcam with Ring Light",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n960e-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n960e-60fps-ring-light.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n960e 1080p 60fps webcam with ring light",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 75,
+        "autofocusType": "Fast Autofocus with 3-Level Ring Light",
+        "microphoneType": "Built-in Dual Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N960E 1080p 60fps Webcam with Ring Light",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n60-1080p-dual-mic",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "Essential Series",
+      "modelName": "N60 1080p Dual Mic Webcam (110-degree Wide)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n60-1080p-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n60-1080p-dual-mic.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n60 1080p dual mic webcam (110-degree wide)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 110,
+        "autofocusType": "Fixed Focus Wide Angle",
+        "microphoneType": "Dual Noise-Reduction Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N60 1080p Dual Mic Webcam (110-degree Wide)",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n940p-2k-qhd-60fps",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "N940 Series",
+      "modelName": "N940P 2K QHD 60fps Webcam with Remote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n940p-2k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n940p-2k-qhd-60fps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n940p 2k qhd 60fps webcam with remote",
+        "resolution": "2560x1440 (2K QHD)",
+        "fpsMax": 60,
+        "fovDegrees": 90,
+        "autofocusType": "Autofocus with 3x Digital Zoom",
+        "microphoneType": "Dual Stereo Noise-Reduction Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N940P 2K QHD 60fps Webcam with Remote",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-meet-4k-ai-framing",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "Conference Series",
+      "modelName": "Meet 4K AI Auto-Framing Conference Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/meet-4k-conference-camera"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-meet-4k-ai-framing.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "meet 4k ai auto-framing conference webcam",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 120,
+        "autofocusType": "AI Auto-Framing Wide Field",
+        "microphoneType": "Quad Omnidirectional Array with AEC",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: Meet 4K AI Auto-Framing Conference Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n950p-4k-qhd-remote",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "N950 Series",
+      "modelName": "N950P 4K QHD Pro Webcam with Remote Control",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n950p-4k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n950p-4k-qhd-remote.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n950p 4k qhd pro webcam with remote control",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "Autofocus with 5x Digital Zoom",
+        "microphoneType": "Dual Stereo Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N950P 4K QHD Pro Webcam with Remote Control",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n980p-1080p-60fps-ai",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "N980 Series",
+      "modelName": "N980P 1080p 60fps AI Auto-Framing Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n980p-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n980p-1080p-60fps-ai.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n980p 1080p 60fps ai auto-framing webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 120,
+        "autofocusType": "AI Intelligent Tracking",
+        "microphoneType": "Dual Noise-Canceling Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N980P 1080p 60fps AI Auto-Framing Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n680e-1080p-ring-light",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "Streaming Light",
+      "modelName": "N680E 1080p Streaming Webcam with Built-in Ring Light",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n680e-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n680e-1080p-ring-light.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n680e 1080p streaming webcam with built-in ring light",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 80,
+        "autofocusType": "Fast Autofocus with Touch Light",
+        "microphoneType": "Dual Stereo Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N680E 1080p Streaming Webcam with Built-in Ring Light",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n620e-60fps-fhd",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "Streaming Light",
+      "modelName": "N620E 1080p 60fps Webcam with Ring Light",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n620e-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n620e-60fps-fhd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n620e 1080p 60fps webcam with ring light",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 75,
+        "autofocusType": "Fast Autofocus with 3-Level Ring Light",
+        "microphoneType": "Dual Omnidirectional Noise-Cancelling",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N620E 1080p 60fps Webcam with Ring Light",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n970p-4k-uhd",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "N970 Series",
+      "modelName": "N970P 4K Zoom Conference Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n970p-4k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n970p-4k-uhd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n970p 4k zoom conference webcam",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 80,
+        "autofocusType": "Fast Autofocus with Remote Control Zoom",
+        "microphoneType": "Dual Stereo Noise-Reduction Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N970P 4K Zoom Conference Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "nexigo-n660p-1080p-60fps",
+      "canonicalBrand": "NexiGo",
+      "displayBrand": "NexiGo",
+      "productLine": "N660 Series",
+      "modelName": "N660P 1080p 60fps Dual Mic Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nexigo.com/products/n660p-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.nexigo.com/images/products/nexigo-n660p-1080p-60fps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "nexigo",
+        "modelName": "n660p 1080p 60fps dual mic webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 90,
+        "autofocusType": "Autofocus Fast Tracking",
+        "microphoneType": "Dual Stereo Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "NexiGo verified webcams model: N660P 1080p 60fps Dual Mic Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-smartcam-c960-1080p",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "SmartCam Series",
+      "modelName": "SmartCam C960 1080p Full HD Webcam (Dual Mic)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/webcam-c960"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-smartcam-c960-1080p.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "smartcam c960 1080p full hd webcam (dual mic)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "Fixed Focus Auto Light Correction",
+        "microphoneType": "Dual Omnidirectional Noise-Cancelling",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: SmartCam C960 1080p Full HD Webcam (Dual Mic)",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-smartcam-s600-4k",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "SmartCam Stream",
+      "modelName": "SmartCam S600 4K 60fps Ultra HD Streaming Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/streamcam-s600"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-smartcam-s600-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "smartcam s600 4k 60fps ultra hd streaming webcam",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 88,
+        "autofocusType": "TOF Ultra-Fast Autofocus",
+        "microphoneType": "Dual Noise-Cancelling Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: SmartCam S600 4K 60fps Ultra HD Streaming Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-smartcam-c980-pro-3-in-1",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "All-in-One Series",
+      "modelName": "SmartCam C980 Pro 3-in-1 (Camera + 4 Mics + 2 Speakers)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/webcam-c980-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-smartcam-c980-pro-3-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "smartcam c980 pro 3-in-1 (camera + 4 mics + 2 speakers)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "Fixed Focus All-in-One",
+        "microphoneType": "Quad Array Mic with Built-in Speaker",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: SmartCam C980 Pro 3-in-1 (Camera + 4 Mics + 2 Speakers)",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-meeting-capsule-360",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "Meeting Capsule",
+      "modelName": "Meeting Capsule 360-degree All-in-One Conference Cam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/meeting-capsule"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-meeting-capsule-360.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "meeting capsule 360-degree all-in-one conference cam",
+        "resolution": "1920x1080 (1080p FHD 360 Panoramic)",
+        "fpsMax": 30,
+        "fovDegrees": 360,
+        "autofocusType": "AI Voice & Face Tracking",
+        "microphoneType": "8 Omnidirectional Mic Array (18ft)",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: Meeting Capsule 360-degree All-in-One Conference Cam",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-smartcam-nova-1080p",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "SmartCam Series",
+      "modelName": "SmartCam Nova 1080p Autofocus Dual Mic Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/webcam-nova"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-smartcam-nova-1080p.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "smartcam nova 1080p autofocus dual mic webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 96,
+        "autofocusType": "Fast Glass Lens Autofocus",
+        "microphoneType": "Dual Noise-Cancelling Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: SmartCam Nova 1080p Autofocus Dual Mic Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-smartcam-jupiter-ai",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "Jupiter Series",
+      "modelName": "SmartCam Jupiter AI Auto-Framing All-in-One Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/webcam-jupiter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-smartcam-jupiter-ai.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "smartcam jupiter ai auto-framing all-in-one webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 96,
+        "autofocusType": "AI Intelligent Zoom & Framing",
+        "microphoneType": "Quad Mic Array + Built-in Speaker",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: SmartCam Jupiter AI Auto-Framing All-in-One Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-smartcam-c950-ultra-compact",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "Ultra-Compact",
+      "modelName": "SmartCam C950 Ultra-Compact 1080p Pocket Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/webcam-c950"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-smartcam-c950-ultra-compact.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "smartcam c950 ultra-compact 1080p pocket webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 70,
+        "autofocusType": "Fixed Focus Ultra Lightweight",
+        "microphoneType": "Noise-Cancelling Mono Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: SmartCam C950 Ultra-Compact 1080p Pocket Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-smartcam-c970l-60fps",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "StreamLight Series",
+      "modelName": "SmartCam C970L 1080p 60fps Webcam with Ring Light",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/webcam-c970l"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-smartcam-c970l-60fps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "smartcam c970l 1080p 60fps webcam with ring light",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 75,
+        "autofocusType": "Autofocus with 3-Mode Fill Light",
+        "microphoneType": "Dual Noise-Cancelling Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: SmartCam C970L 1080p 60fps Webcam with Ring Light",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-meeting-capsule-pro-4k",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "Meeting Capsule",
+      "modelName": "Meeting Capsule Pro 4K Dual-Lens Conference Camera",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/meeting-capsule-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-meeting-capsule-pro-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "meeting capsule pro 4k dual-lens conference camera",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 360,
+        "autofocusType": "Dual-Lens AI Framing PTZ",
+        "microphoneType": "10-Mic Beamforming Array (18ft)",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: Meeting Capsule Pro 4K Dual-Lens Conference Camera",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-streamcam-one-wireless",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "Wireless Multi-Cam",
+      "modelName": "StreamCam One Wireless Multi-Camera Live Streaming",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/streamcam-one"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-streamcam-one-wireless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "streamcam one wireless multi-camera live streaming",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 73,
+        "autofocusType": "Wireless Battery Powered Autofocus",
+        "microphoneType": "Dual Mic + Wireless Clip-on Mic",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: StreamCam One Wireless Multi-Camera Live Streaming",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-smartcam-c965-60fps",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "SmartCam Series",
+      "modelName": "SmartCam C965 1080p 60fps Fixed Focus Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/webcam-c965"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-smartcam-c965-60fps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "smartcam c965 1080p 60fps fixed focus webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 96,
+        "autofocusType": "Fixed Focus 60fps High Frame",
+        "microphoneType": "Dual Noise-Cancelling Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: SmartCam C965 1080p 60fps Fixed Focus Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "emeet-meeting-bar-a20",
+      "canonicalBrand": "EMEET",
+      "displayBrand": "EMEET",
+      "productLine": "Meeting Bar",
+      "modelName": "Meeting Bar A20 All-in-One Conference Camera Bar",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.emeet.com/products/meeting-bar-a20"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.emeet.com/images/products/emeet-meeting-bar-a20.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "emeet",
+        "modelName": "meeting bar a20 all-in-one conference camera bar",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 120,
+        "autofocusType": "AI Voice-Tracking Auto-Framing ePTZ",
+        "microphoneType": "8-Mic Array + 10W Hi-Fi Speaker",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "EMEET verified webcams model: Meeting Bar A20 All-in-One Conference Camera Bar",
+      "status": "staged"
+    },
+    {
+      "id": "razer-kiyo-pro-ultra",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "Kiyo Flagship",
+      "modelName": "Kiyo Pro Ultra (4K 30fps 1/1.2\" Sony STARVIS 2)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/streaming-cameras/razer-kiyo-pro-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.razer.com/images/products/razer-kiyo-pro-ultra.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "kiyo pro ultra (4k 30fps 1/1.2\" sony starvis 2)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 82,
+        "autofocusType": "AI Face Tracking Phase Detection",
+        "microphoneType": "Built-in Omnidirectional Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer verified webcams model: Kiyo Pro Ultra (4K 30fps 1/1.2\" Sony STARVIS 2)",
+      "status": "staged"
+    },
+    {
+      "id": "razer-kiyo-pro",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "Kiyo Series",
+      "modelName": "Kiyo Pro (1080p 60fps HDR STARVIS Sensor)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/streaming-cameras/razer-kiyo-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.razer.com/images/products/razer-kiyo-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "kiyo pro (1080p 60fps hdr starvis sensor)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 103,
+        "autofocusType": "Ultra-Sensitive Light Autofocus",
+        "microphoneType": "Omnidirectional Stereo Microphone",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer verified webcams model: Kiyo Pro (1080p 60fps HDR STARVIS Sensor)",
+      "status": "staged"
+    },
+    {
+      "id": "razer-kiyo",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "Kiyo Series",
+      "modelName": "Kiyo (1080p 30fps Built-in Ring Light)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/streaming-cameras/razer-kiyo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.razer.com/images/products/razer-kiyo.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "kiyo (1080p 30fps built-in ring light)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 81.6,
+        "autofocusType": "Fast Accurate Autofocus",
+        "microphoneType": "Built-in Omnidirectional Mic",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer verified webcams model: Kiyo (1080p 30fps Built-in Ring Light)",
+      "status": "staged"
+    },
+    {
+      "id": "razer-kiyo-x",
+      "canonicalBrand": "Razer",
+      "displayBrand": "Razer",
+      "productLine": "Kiyo Series",
+      "modelName": "Kiyo X Full HD Streaming Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.razer.com/streaming-cameras/razer-kiyo-x"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.razer.com/images/products/razer-kiyo-x.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "razer",
+        "modelName": "kiyo x full hd streaming webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 82,
+        "autofocusType": "Smart Autofocus",
+        "microphoneType": "Built-in Omnidirectional Mic",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Razer verified webcams model: Kiyo X Full HD Streaming Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "elgato-facecam-pro",
+      "canonicalBrand": "Elgato",
+      "displayBrand": "Elgato",
+      "productLine": "Facecam Pro",
+      "modelName": "Facecam Pro (4K 60fps Ultra HD PTZ Optics)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.elgato.com/us/en/p/facecam-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.elgato.com/images/products/elgato-facecam-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "elgato",
+        "modelName": "facecam pro (4k 60fps ultra hd ptz optics)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 90,
+        "autofocusType": "Sony STARVIS 4K60 Autofocus PTZ",
+        "microphoneType": "None (Designed for Wave Mic Audio)",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elgato verified webcams model: Facecam Pro (4K 60fps Ultra HD PTZ Optics)",
+      "status": "staged"
+    },
+    {
+      "id": "elgato-facecam-mk2",
+      "canonicalBrand": "Elgato",
+      "displayBrand": "Elgato",
+      "productLine": "Facecam Series",
+      "modelName": "Facecam MK.2 (1080p 60fps HDR Uncompressed)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.elgato.com/us/en/p/facecam-mk2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.elgato.com/images/products/elgato-facecam-mk2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "elgato",
+        "modelName": "facecam mk.2 (1080p 60fps hdr uncompressed)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 84,
+        "autofocusType": "Prime Lens Fixed Focus with Manual Controls",
+        "microphoneType": "None (Studio Video Only)",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elgato verified webcams model: Facecam MK.2 (1080p 60fps HDR Uncompressed)",
+      "status": "staged"
+    },
+    {
+      "id": "elgato-facecam-original",
+      "canonicalBrand": "Elgato",
+      "displayBrand": "Elgato",
+      "productLine": "Facecam Series",
+      "modelName": "Facecam (Original 1080p 60fps Studio Lens)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.elgato.com/us/en/p/facecam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.elgato.com/images/products/elgato-facecam-original.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "elgato",
+        "modelName": "facecam (original 1080p 60fps studio lens)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 82,
+        "autofocusType": "All-Glass Prime Fixed Focus 24mm",
+        "microphoneType": "None",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elgato verified webcams model: Facecam (Original 1080p 60fps Studio Lens)",
+      "status": "staged"
+    },
+    {
+      "id": "elgato-cam-link-4k",
+      "canonicalBrand": "Elgato",
+      "displayBrand": "Elgato",
+      "productLine": "Cam Link",
+      "modelName": "Cam Link 4K (DSLR to USB Broadcast Webcam Dongle)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.elgato.com/us/en/p/cam-link-4k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.elgato.com/images/products/elgato-cam-link-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "elgato",
+        "modelName": "cam link 4k (dslr to usb broadcast webcam dongle)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 0,
+        "autofocusType": "DSLR / Mirrorless Camera Native AF",
+        "microphoneType": "HDMI Embedded Audio Pass-Through",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elgato verified webcams model: Cam Link 4K (DSLR to USB Broadcast Webcam Dongle)",
+      "status": "staged"
+    },
+    {
+      "id": "elgato-prompter",
+      "canonicalBrand": "Elgato",
+      "displayBrand": "Elgato",
+      "productLine": "Studio Hardware",
+      "modelName": "Prompter with Built-in 9-inch Display & Camera Mount",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.elgato.com/us/en/p/prompter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.elgato.com/images/products/elgato-prompter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "elgato",
+        "modelName": "prompter with built-in 9-inch display & camera mount",
+        "resolution": "1024x600 (Built-in Display)",
+        "fpsMax": 60,
+        "fovDegrees": 90,
+        "autofocusType": "Universal Webcam / Lens Mount System",
+        "microphoneType": "None",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elgato verified webcams model: Prompter with Built-in 9-inch Display & Camera Mount",
+      "status": "staged"
+    },
+    {
+      "id": "insta360-link-2",
+      "canonicalBrand": "Insta360",
+      "displayBrand": "Insta360",
+      "productLine": "Link AI Gimbal",
+      "modelName": "Link 2 (4K AI Powered 2-Axis Gimbal Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.insta360.com/product/link-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.insta360.com/images/products/insta360-link-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "insta360",
+        "modelName": "link 2 (4k ai powered 2-axis gimbal webcam)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 79.5,
+        "autofocusType": "AI 2-Axis Gimbal Auto-Tracking True Focus",
+        "microphoneType": "AI Noise-Cancelling Dual Mic Array",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Insta360 verified webcams model: Link 2 (4K AI Powered 2-Axis Gimbal Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "insta360-link-2c",
+      "canonicalBrand": "Insta360",
+      "displayBrand": "Insta360",
+      "productLine": "Link Compact",
+      "modelName": "Link 2C (4K AI Powered Compact Fixed Mount Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.insta360.com/product/link-2c"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.insta360.com/images/products/insta360-link-2c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "insta360",
+        "modelName": "link 2c (4k ai powered compact fixed mount webcam)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 79.5,
+        "autofocusType": "AI Auto-Framing 1/2\" Sensor True Focus",
+        "microphoneType": "AI Dual Mic Array (Voice Focus)",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Insta360 verified webcams model: Link 2C (4K AI Powered Compact Fixed Mount Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "insta360-link-original",
+      "canonicalBrand": "Insta360",
+      "displayBrand": "Insta360",
+      "productLine": "Link AI Gimbal",
+      "modelName": "Link (Original 4K 3-Axis Gimbal AI Tracking Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.insta360.com/product/link"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.insta360.com/images/products/insta360-link-original.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "insta360",
+        "modelName": "link (original 4k 3-axis gimbal ai tracking webcam)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 79.5,
+        "autofocusType": "3-Axis Gimbal AI Tracking Phase Detection",
+        "microphoneType": "Dual Omnidirectional Noise-Cancelling",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Insta360 verified webcams model: Link (Original 4K 3-Axis Gimbal AI Tracking Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "insta360-link-2-pro",
+      "canonicalBrand": "Insta360",
+      "displayBrand": "Insta360",
+      "productLine": "Link Professional",
+      "modelName": "Link 2 Pro Enterprise Business Edition",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://store.insta360.com/product/link-2-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://store.insta360.com/images/products/insta360-link-2-pro.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "insta360",
+        "modelName": "link 2 pro enterprise business edition",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 79.5,
+        "autofocusType": "AI Gimbal Whiteboard & Overhead Mode",
+        "microphoneType": "AI Audio Beamforming Array",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Insta360 verified webcams model: Link 2 Pro Enterprise Business Edition",
+      "status": "staged"
+    },
+    {
+      "id": "dell-ultrasharp-wb7022-4k",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "UltraSharp Webcam",
+      "modelName": "UltraSharp WB7022 4K Webcam (Sony 4K STARVIS Windows Hello)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-ultrasharp-4k-webcam-wb7022/apd/319-bbif/pc-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-ultrasharp-wb7022-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "ultrasharp wb7022 4k webcam (sony 4k starvis windows hello)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 90,
+        "autofocusType": "Advanced Digital Overlap HDR Autofocus",
+        "microphoneType": "None (Video Dedicated)",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified webcams model: UltraSharp WB7022 4K Webcam (Sony 4K STARVIS Windows Hello)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-pro-webcam-wb5023",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Pro Series",
+      "modelName": "Pro Webcam WB5023 (2K QHD 60fps Sony STARVIS HDR)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-pro-webcam-wb5023/apd/319-bbik/pc-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-pro-webcam-wb5023.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "pro webcam wb5023 (2k qhd 60fps sony starvis hdr)",
+        "resolution": "2560x1440 (2K QHD)",
+        "fpsMax": 60,
+        "fovDegrees": 78,
+        "autofocusType": "AI Auto-Framing Facial Detection AF",
+        "microphoneType": "Built-in Noise Reduction Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified webcams model: Pro Webcam WB5023 (2K QHD 60fps Sony STARVIS HDR)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-essential-webcam-wb3023",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Essential Series",
+      "modelName": "Essential Webcam WB3023 (2K QHD Dual Noise-Reducing Mic)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-webcam-wb3023/apd/319-bbil/pc-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-essential-webcam-wb3023.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "essential webcam wb3023 (2k qhd dual noise-reducing mic)",
+        "resolution": "2560x1440 (2K QHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Auto Light Correction Fixed/Auto",
+        "microphoneType": "Built-in Dual Noise-Reduction Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified webcams model: Essential Webcam WB3023 (2K QHD Dual Noise-Reducing Mic)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-ultrasharp-wb7024-enterprise",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "UltraSharp Enterprise",
+      "modelName": "UltraSharp WB7024 Enterprise 4K AI Conference Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-ultrasharp-webcam-wb7024/apd/319-bbim/pc-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-ultrasharp-wb7024-enterprise.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "ultrasharp wb7024 enterprise 4k ai conference webcam",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 90,
+        "autofocusType": "AI Auto-Framing 4K Sony Sensor",
+        "microphoneType": "Omnidirectional Microphone Array",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified webcams model: UltraSharp WB7024 Enterprise 4K AI Conference Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "dell-slim-video-sb522a",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Conferencing Soundbar",
+      "modelName": "Slim Conferencing Soundbar & Camera SB522A",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-slim-conferencing-soundbar-sb522a/apd/520-aawu/pc-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-slim-video-sb522a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "slim conferencing soundbar & camera sb522a",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Fixed Focus Integrated Soundbar",
+        "microphoneType": "Dual Mic with AI Noise Cancellation",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified webcams model: Slim Conferencing Soundbar & Camera SB522A",
+      "status": "staged"
+    },
+    {
+      "id": "hp-960-4k-streaming-webcam",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "HP 900 Series",
+      "modelName": "HP 960 4K Streaming Webcam (AI Framing 18-degree Tilt)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-960-4k-streaming-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-960-4k-streaming-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp 960 4k streaming webcam (ai framing 18-degree tilt)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 100,
+        "autofocusType": "AI Face Tracking Auto-Framing",
+        "microphoneType": "Dual Noise-Canceling Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified webcams model: HP 960 4K Streaming Webcam (AI Framing 18-degree Tilt)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-620-fhd-webcam",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "HP 600 Series",
+      "modelName": "HP 620 FHD Webcam (Windows Hello Facial Recognition IR)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-620-fhd-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-620-fhd-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp 620 fhd webcam (windows hello facial recognition ir)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Autofocus Windows Hello IR Camera",
+        "microphoneType": "Dual Noise-Reduction Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified webcams model: HP 620 FHD Webcam (Windows Hello Facial Recognition IR)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-430-fhd-webcam",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "HP 400 Series",
+      "modelName": "HP 430 FHD Webcam (Dual Noise-Reducing Mics Wide View)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-430-fhd-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-430-fhd-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp 430 fhd webcam (dual noise-reducing mics wide view)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 85,
+        "autofocusType": "Auto Focus Auto-Light",
+        "microphoneType": "Dual Noise-Reduction Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified webcams model: HP 430 FHD Webcam (Dual Noise-Reducing Mics Wide View)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-320-fhd-webcam",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP",
+      "productLine": "HP 300 Series",
+      "modelName": "HP 320 FHD Webcam (Plug-and-Play Everyday Video)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hp.com/us-en/shop/pdp/hp-320-fhd-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.hp.com/images/products/hp-320-fhd-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "hp 320 fhd webcam (plug-and-play everyday video)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 66,
+        "autofocusType": "Fixed Focus 360 Swivel",
+        "microphoneType": "Built-in Noise-Reduction Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified webcams model: HP 320 FHD Webcam (Plug-and-Play Everyday Video)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-poly-studio-p5",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP Poly",
+      "productLine": "Poly Professional",
+      "modelName": "Poly Studio P5 Professional Webcam (Directional Mic)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.poly.com/us/en/products/video-conferencing/studio/studio-p5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.poly.com/images/products/hp-poly-studio-p5.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "poly studio p5 professional webcam (directional mic)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 80,
+        "autofocusType": "Autofocus with 4x Digital Zoom",
+        "microphoneType": "Directional Microphone Optimized for Voice",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified webcams model: Poly Studio P5 Professional Webcam (Directional Mic)",
+      "status": "staged"
+    },
+    {
+      "id": "hp-poly-studio-p15",
+      "canonicalBrand": "HP",
+      "displayBrand": "HP Poly",
+      "productLine": "Poly Video Bar",
+      "modelName": "Poly Studio P15 Personal Video Bar (4K Auto-Framing)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.poly.com/us/en/products/video-conferencing/studio/studio-p15"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.poly.com/images/products/hp-poly-studio-p15.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hp",
+        "modelName": "poly studio p15 personal video bar (4k auto-framing)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "Automatic Camera Framing 4K",
+        "microphoneType": "Acoustic Fence Noise-Block Multi-Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HP verified webcams model: Poly Studio P15 Personal Video Bar (4K Auto-Framing)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-thinksmart-cam",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "ThinkSmart Collaboration",
+      "modelName": "ThinkSmart Cam (4K AI Conference Auto-Framing)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/webcams-and-video/webcams/4y71c41660"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-thinksmart-cam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "thinksmart cam (4k ai conference auto-framing)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 125,
+        "autofocusType": "AI Speaker Tracking & Auto-Framing",
+        "microphoneType": "Integrated Dual Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified webcams model: ThinkSmart Cam (4K AI Conference Auto-Framing)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-performance-fhd-webcam",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Performance Series",
+      "modelName": "Lenovo Performance FHD Webcam (Windows Hello IR)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/webcams-and-video/webcams/4xc1d66055"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-performance-fhd-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo performance fhd webcam (windows hello ir)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 95,
+        "autofocusType": "Autofocus Facial Recognition Windows Hello",
+        "microphoneType": "Dual Integrated Noise-Cancelling Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified webcams model: Lenovo Performance FHD Webcam (Windows Hello IR)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-300-fhd-webcam",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Lenovo 300 Series",
+      "modelName": "Lenovo 300 FHD Webcam (Dual Stereo Microphones)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/webcams-and-video/webcams/gxc1055297"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-300-fhd-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo 300 fhd webcam (dual stereo microphones)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 95,
+        "autofocusType": "Fixed Focus Ultra-Wide Lens",
+        "microphoneType": "Dual Stereo Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified webcams model: Lenovo 300 FHD Webcam (Dual Stereo Microphones)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-510-fhd-webcam",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Lenovo 500 Series",
+      "modelName": "Lenovo 510 FHD Webcam (Windows Hello Facial Recognition)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/webcams-and-video/webcams/gxc1e71383"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-510-fhd-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo 510 fhd webcam (windows hello facial recognition)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 95,
+        "autofocusType": "Autofocus Windows Hello Facial Login",
+        "microphoneType": "Dual Omnidirectional Stereo Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified webcams model: Lenovo 510 FHD Webcam (Windows Hello Facial Recognition)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-go-4k-pro-webcam",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Lenovo Go Workspace",
+      "modelName": "Lenovo Go 4K Pro Wired Webcam (4K HDR Ambient Light)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/webcams-and-video/webcams/4xc1b34802"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-go-4k-pro-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo go 4k pro wired webcam (4k hdr ambient light)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "Autofocus High Dynamic Range (HDR)",
+        "microphoneType": "Dual Noise-Cancelling Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified webcams model: Lenovo Go 4K Pro Wired Webcam (4K HDR Ambient Light)",
+      "status": "staged"
+    },
+    {
+      "id": "lenovo-essential-fhd-webcam",
+      "canonicalBrand": "Lenovo",
+      "displayBrand": "Lenovo",
+      "productLine": "Essential Series",
+      "modelName": "Lenovo Essential FHD Webcam (Sliding Privacy Cover)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lenovo.com/us/en/p/accessories-and-monitors/webcams-and-video/webcams/4xc1b34803"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lenovo.com/images/products/lenovo-essential-fhd-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lenovo",
+        "modelName": "lenovo essential fhd webcam (sliding privacy cover)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Fixed Focus Everyday Video",
+        "microphoneType": "Integrated Noise-Canceling Microphone",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lenovo verified webcams model: Lenovo Essential FHD Webcam (Sliding Privacy Cover)",
+      "status": "staged"
+    },
+    {
+      "id": "avermedia-live-streamer-cam-513",
+      "canonicalBrand": "AVerMedia",
+      "displayBrand": "AVerMedia",
+      "productLine": "Live Streamer Series",
+      "modelName": "Live Streamer CAM 513 PW513 (4K 30fps 94-degree FOV)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.avermedia.com/product-detail/PW513"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.avermedia.com/images/products/avermedia-live-streamer-cam-513.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "avermedia",
+        "modelName": "live streamer cam 513 pw513 (4k 30fps 94-degree fov)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 60,
+        "fovDegrees": 94,
+        "autofocusType": "Fixed Focus Ultra-Wide Distortion-Free",
+        "microphoneType": "Dual Stereo Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AVerMedia verified webcams model: Live Streamer CAM 513 PW513 (4K 30fps 94-degree FOV)",
+      "status": "staged"
+    },
+    {
+      "id": "avermedia-live-streamer-cam-313",
+      "canonicalBrand": "AVerMedia",
+      "displayBrand": "AVerMedia",
+      "productLine": "Live Streamer Series",
+      "modelName": "Live Streamer CAM 313 PW313 (1080p Dual Mono Mics)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.avermedia.com/product-detail/PW313"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.avermedia.com/images/products/avermedia-live-streamer-cam-313.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "avermedia",
+        "modelName": "live streamer cam 313 pw313 (1080p dual mono mics)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 65,
+        "autofocusType": "Fixed Focus 360 Swivel Design",
+        "microphoneType": "Dual Mono Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AVerMedia verified webcams model: Live Streamer CAM 313 PW313 (1080p Dual Mono Mics)",
+      "status": "staged"
+    },
+    {
+      "id": "avermedia-pw315-60fps",
+      "canonicalBrand": "AVerMedia",
+      "displayBrand": "AVerMedia",
+      "productLine": "Classroom / Stream",
+      "modelName": "PW315 Full HD 60fps Webcam (95-degree Ultra-Wide)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.avermedia.com/product-detail/PW315"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.avermedia.com/images/products/avermedia-pw315-60fps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "avermedia",
+        "modelName": "pw315 full hd 60fps webcam (95-degree ultra-wide)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 95,
+        "autofocusType": "Fixed Focus Ultra-Wide Angle",
+        "microphoneType": "Dual Omnidirectional Stereo Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AVerMedia verified webcams model: PW315 Full HD 60fps Webcam (95-degree Ultra-Wide)",
+      "status": "staged"
+    },
+    {
+      "id": "avermedia-pw310p-hd-autofocus",
+      "canonicalBrand": "AVerMedia",
+      "displayBrand": "AVerMedia",
+      "productLine": "Home Office Series",
+      "modelName": "PW310P HD 1080p Autofocus Webcam with Shutter",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.avermedia.com/product-detail/PW310P"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.avermedia.com/images/products/avermedia-pw310p-hd-autofocus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "avermedia",
+        "modelName": "pw310p hd 1080p autofocus webcam with shutter",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Fast Precise Autofocus",
+        "microphoneType": "Built-in Omnidirectional Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AVerMedia verified webcams model: PW310P HD 1080p Autofocus Webcam with Shutter",
+      "status": "staged"
+    },
+    {
+      "id": "avermedia-dualcam-pw313d",
+      "canonicalBrand": "AVerMedia",
+      "displayBrand": "AVerMedia",
+      "productLine": "DualCam Series",
+      "modelName": "DualCam PW313D (Dual Lens Overhead & Facecam 2K/1080p)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.avermedia.com/product-detail/PW313D"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.avermedia.com/images/products/avermedia-dualcam-pw313d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "avermedia",
+        "modelName": "dualcam pw313d (dual lens overhead & facecam 2k/1080p)",
+        "resolution": "2560x1440 (2K QHD Right) + 1080p (Left)",
+        "fpsMax": 30,
+        "fovDegrees": 76,
+        "autofocusType": "Dual Independent Sensor Autofocus",
+        "microphoneType": "Dual Microphones with AI Noise Reduction",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AVerMedia verified webcams model: DualCam PW313D (Dual Lens Overhead & Facecam 2K/1080p)",
+      "status": "staged"
+    },
+    {
+      "id": "avermedia-versati-go-streaming",
+      "canonicalBrand": "AVerMedia",
+      "displayBrand": "AVerMedia",
+      "productLine": "Creator Series",
+      "modelName": "Versati Go USB Streaming Video Camera",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.avermedia.com/product-detail/versati-go"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.avermedia.com/images/products/avermedia-versati-go-streaming.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "avermedia",
+        "modelName": "versati go usb streaming video camera",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 80,
+        "autofocusType": "Autofocus Fast Capture",
+        "microphoneType": "High Sensitivity Mic",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AVerMedia verified webcams model: Versati Go USB Streaming Video Camera",
+      "status": "staged"
+    },
+    {
+      "id": "creative-live-cam-sync-4k",
+      "canonicalBrand": "Creative",
+      "displayBrand": "Creative",
+      "productLine": "Live! Cam Series",
+      "modelName": "Live! Cam Sync 4K (4K UHD Dual Mics UVC Plug-and-Play)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.creative.com/p/webcams/creative-live-cam-sync-4k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.creative.com/images/products/creative-live-cam-sync-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "creative",
+        "modelName": "live! cam sync 4k (4k uhd dual mics uvc plug-and-play)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 95,
+        "autofocusType": "Manual Focus Ring & Digital Zoom",
+        "microphoneType": "Dual Omnidirectional Digital Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Creative verified webcams model: Live! Cam Sync 4K (4K UHD Dual Mics UVC Plug-and-Play)",
+      "status": "staged"
+    },
+    {
+      "id": "creative-live-cam-sync-1080p-v2",
+      "canonicalBrand": "Creative",
+      "displayBrand": "Creative",
+      "productLine": "Live! Cam Series",
+      "modelName": "Live! Cam Sync 1080p V2 (SmartComms Kit Dual Mics)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.creative.com/p/webcams/creative-live-cam-sync-1080p-v2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.creative.com/images/products/creative-live-cam-sync-1080p-v2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "creative",
+        "modelName": "live! cam sync 1080p v2 (smartcomms kit dual mics)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 77,
+        "autofocusType": "Fixed Focus Wide View",
+        "microphoneType": "Dual Microphones with VoiceDetect & NoiseClean",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Creative verified webcams model: Live! Cam Sync 1080p V2 (SmartComms Kit Dual Mics)",
+      "status": "staged"
+    },
+    {
+      "id": "creative-live-cam-sync-v3-2k",
+      "canonicalBrand": "Creative",
+      "displayBrand": "Creative",
+      "productLine": "Live! Cam Series",
+      "modelName": "Live! Cam Sync 1080p V3 (2K QHD 4X Digital Zoom)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.creative.com/p/webcams/creative-live-cam-sync-v3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.creative.com/images/products/creative-live-cam-sync-v3-2k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "creative",
+        "modelName": "live! cam sync 1080p v3 (2k qhd 4x digital zoom)",
+        "resolution": "2560x1440 (2K QHD)",
+        "fpsMax": 30,
+        "fovDegrees": 95,
+        "autofocusType": "Fixed Focus with 4X Digital Zoom",
+        "microphoneType": "Dual Omnidirectional Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Creative verified webcams model: Live! Cam Sync 1080p V3 (2K QHD 4X Digital Zoom)",
+      "status": "staged"
+    },
+    {
+      "id": "creative-live-cam-ip-smart",
+      "canonicalBrand": "Creative",
+      "displayBrand": "Creative",
+      "productLine": "Smart Video Series",
+      "modelName": "Live! Cam IP SmartHome Wireless HD Camera",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.creative.com/p/webcams/creative-live-cam-ip-smart"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.creative.com/images/products/creative-live-cam-ip-smart.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "creative",
+        "modelName": "live! cam ip smarthome wireless hd camera",
+        "resolution": "1280x720 (720p HD)",
+        "fpsMax": 30,
+        "fovDegrees": 110,
+        "autofocusType": "Night Vision Fixed Focus",
+        "microphoneType": "Two-Way Audio Talkback Mic",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Creative verified webcams model: Live! Cam IP SmartHome Wireless HD Camera",
+      "status": "staged"
+    },
+    {
+      "id": "creative-stage-360-conferencing-cam",
+      "canonicalBrand": "Creative",
+      "displayBrand": "Creative",
+      "productLine": "Conference Series",
+      "modelName": "Stage 360 Full HD Conferencing Desktop Cam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.creative.com/p/webcams/stage-360-cam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.creative.com/images/products/creative-stage-360-conferencing-cam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "creative",
+        "modelName": "stage 360 full hd conferencing desktop cam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 85,
+        "autofocusType": "Autofocus Desktop Camera",
+        "microphoneType": "Integrated Noise-Canceling Microphone",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Creative verified webcams model: Stage 360 Full HD Conferencing Desktop Cam",
+      "status": "staged"
+    },
+    {
+      "id": "obsbot-tiny-2-4k-ai-ptz",
+      "canonicalBrand": "OBSBOT",
+      "displayBrand": "OBSBOT",
+      "productLine": "Tiny 2 Series",
+      "modelName": "Tiny 2 (4K AI PTZ 1/1.5\" CMOS Voice Control)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.obsbot.com/obsbot-tiny-2-4k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.obsbot.com/images/products/obsbot-tiny-2-4k-ai-ptz.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "obsbot",
+        "modelName": "tiny 2 (4k ai ptz 1/1.5\" cmos voice control)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 85.5,
+        "autofocusType": "All-Pixel PDAF 2-Axis PTZ AI Auto-Tracking",
+        "microphoneType": "Dual Omnidirectional Mics with Noise Reduction",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OBSBOT verified webcams model: Tiny 2 (4K AI PTZ 1/1.5\" CMOS Voice Control)",
+      "status": "staged"
+    },
+    {
+      "id": "obsbot-tiny-2-lite",
+      "canonicalBrand": "OBSBOT",
+      "displayBrand": "OBSBOT",
+      "productLine": "Tiny 2 Series",
+      "modelName": "Tiny 2 Lite (4K AI PTZ Compact Tracking Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.obsbot.com/obsbot-tiny-2-lite-4k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.obsbot.com/images/products/obsbot-tiny-2-lite.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "obsbot",
+        "modelName": "tiny 2 lite (4k ai ptz compact tracking webcam)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 79.4,
+        "autofocusType": "AI Body Part Tracking 2-Axis Gimbal PDAF",
+        "microphoneType": "Dual Omnidirectional Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OBSBOT verified webcams model: Tiny 2 Lite (4K AI PTZ Compact Tracking Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "obsbot-tiny-4k-original",
+      "canonicalBrand": "OBSBOT",
+      "displayBrand": "OBSBOT",
+      "productLine": "Tiny Series",
+      "modelName": "Tiny 4K (Original 4K AI Tracking PTZ Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.obsbot.com/obsbot-tiny-4k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.obsbot.com/images/products/obsbot-tiny-4k-original.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "obsbot",
+        "modelName": "tiny 4k (original 4k ai tracking ptz webcam)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 86,
+        "autofocusType": "2-Axis Gimbal AI Auto-Tracking & Gesture Control",
+        "microphoneType": "Dual Omnidirectional Noise-Canceling Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OBSBOT verified webcams model: Tiny 4K (Original 4K AI Tracking PTZ Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "obsbot-meet-2-4k-compact",
+      "canonicalBrand": "OBSBOT",
+      "displayBrand": "OBSBOT",
+      "productLine": "Meet Series",
+      "modelName": "Meet 2 (4K AI Autofocus Compact Pocket Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.obsbot.com/obsbot-meet-2-4k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.obsbot.com/images/products/obsbot-meet-2-4k-compact.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "obsbot",
+        "modelName": "meet 2 (4k ai autofocus compact pocket webcam)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 79.4,
+        "autofocusType": "PDAF Fast Autofocus AI Auto-Framing",
+        "microphoneType": "Dual Omnidirectional Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OBSBOT verified webcams model: Meet 2 (4K AI Autofocus Compact Pocket Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "obsbot-meet-4k-ai-framing",
+      "canonicalBrand": "OBSBOT",
+      "displayBrand": "OBSBOT",
+      "productLine": "Meet Series",
+      "modelName": "Meet 4K (4K HDR AI Auto-Framing Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.obsbot.com/obsbot-meet-4k-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.obsbot.com/images/products/obsbot-meet-4k-ai-framing.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "obsbot",
+        "modelName": "meet 4k (4k hdr ai auto-framing webcam)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 86,
+        "autofocusType": "AI Auto-Framing Virtual Backgrounds",
+        "microphoneType": "Dual Noise-Canceling Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OBSBOT verified webcams model: Meet 4K (4K HDR AI Auto-Framing Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "obsbot-tail-air-4k-ndi-ptz",
+      "canonicalBrand": "OBSBOT",
+      "displayBrand": "OBSBOT",
+      "productLine": "Tail Air Series",
+      "modelName": "Tail Air 4K AI NDI PTZ Live Streaming Camera",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.obsbot.com/obsbot-tail-air-ptz-streaming-camera"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.obsbot.com/images/products/obsbot-tail-air-4k-ndi-ptz.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "obsbot",
+        "modelName": "tail air 4k ai ndi ptz live streaming camera",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 80,
+        "autofocusType": "AI Multi-Target Tracking 2-Axis PTZ NDI",
+        "microphoneType": "Dual Stereo Mics + 3.5mm Audio In",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OBSBOT verified webcams model: Tail Air 4K AI NDI PTZ Live Streaming Camera",
+      "status": "staged"
+    },
+    {
+      "id": "microsoft-modern-webcam",
+      "canonicalBrand": "Microsoft",
+      "displayBrand": "Microsoft",
+      "productLine": "Modern Series",
+      "modelName": "Modern Webcam (1080p HDR Certified for Microsoft Teams)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.microsoft.com/en-us/d/microsoft-modern-webcam/8w59dq877543"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.microsoft.com/images/products/microsoft-modern-webcam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "microsoft",
+        "modelName": "modern webcam (1080p hdr certified for microsoft teams)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Fixed Focus with HDR & True Look",
+        "microphoneType": "Integrated Noise-Reducing Microphone",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Microsoft verified webcams model: Modern Webcam (1080p HDR Certified for Microsoft Teams)",
+      "status": "staged"
+    },
+    {
+      "id": "microsoft-lifecam-hd-3000",
+      "canonicalBrand": "Microsoft",
+      "displayBrand": "Microsoft",
+      "productLine": "LifeCam Series",
+      "modelName": "LifeCam HD-3000 (720p TrueColor Noise Canceling)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.microsoft.com/en-us/d/microsoft-lifecam-hd-3000/8rqd13hh1p4w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.microsoft.com/images/products/microsoft-lifecam-hd-3000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "microsoft",
+        "modelName": "lifecam hd-3000 (720p truecolor noise canceling)",
+        "resolution": "1280x720 (720p HD)",
+        "fpsMax": 30,
+        "fovDegrees": 68.5,
+        "autofocusType": "Fixed Focus TrueColor Technology",
+        "microphoneType": "Omnidirectional Noise-Canceling Mic",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Microsoft verified webcams model: LifeCam HD-3000 (720p TrueColor Noise Canceling)",
+      "status": "staged"
+    },
+    {
+      "id": "microsoft-lifecam-studio",
+      "canonicalBrand": "Microsoft",
+      "displayBrand": "Microsoft",
+      "productLine": "LifeCam Series",
+      "modelName": "LifeCam Studio (1080p Sensor Wide-Angle Glass Lens)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.microsoft.com/en-us/d/microsoft-lifecam-studio/8w59dq877544"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.microsoft.com/images/products/microsoft-lifecam-studio.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "microsoft",
+        "modelName": "lifecam studio (1080p sensor wide-angle glass lens)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 75,
+        "autofocusType": "High-Precision Glass Element Autofocus",
+        "microphoneType": "Wideband Microphone for Natural Sound",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Microsoft verified webcams model: LifeCam Studio (1080p Sensor Wide-Angle Glass Lens)",
+      "status": "staged"
+    },
+    {
+      "id": "microsoft-surface-hub-2-camera",
+      "canonicalBrand": "Microsoft",
+      "displayBrand": "Microsoft",
+      "productLine": "Surface Hub Series",
+      "modelName": "Surface Hub 2 Camera (4K Ultra-Wide USB-C Magnetic)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.microsoft.com/en-us/d/surface-hub-2-camera/8w59dq877545"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.microsoft.com/images/products/microsoft-surface-hub-2-camera.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "microsoft",
+        "modelName": "surface hub 2 camera (4k ultra-wide usb-c magnetic)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "Full Frame Wide-Angle Anti-Flicker",
+        "microphoneType": "None (Designed for Surface Mic Array)",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Microsoft verified webcams model: Surface Hub 2 Camera (4K Ultra-Wide USB-C Magnetic)",
+      "status": "staged"
+    },
+    {
+      "id": "microsoft-lifecam-cinema",
+      "canonicalBrand": "Microsoft",
+      "displayBrand": "Microsoft",
+      "productLine": "LifeCam Series",
+      "modelName": "LifeCam Cinema (720p Aluminum Body ClearFrame)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.microsoft.com/en-us/d/microsoft-lifecam-cinema/8w59dq877546"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.microsoft.com/images/products/microsoft-lifecam-cinema.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "microsoft",
+        "modelName": "lifecam cinema (720p aluminum body clearframe)",
+        "resolution": "1280x720 (720p HD)",
+        "fpsMax": 30,
+        "fovDegrees": 73,
+        "autofocusType": "Autofocus High-Precision Glass Element",
+        "microphoneType": "Digital Noise-Canceling Microphone",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Microsoft verified webcams model: LifeCam Cinema (720p Aluminum Body ClearFrame)",
+      "status": "staged"
+    },
+    {
+      "id": "ankerwork-powerconf-c300",
+      "canonicalBrand": "AnkerWork",
+      "displayBrand": "AnkerWork",
+      "productLine": "PowerConf Series",
+      "modelName": "PowerConf C300 (1080p 60fps AI Zoom & Framing)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.ankerwork.com/products/a3361"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.ankerwork.com/images/products/ankerwork-powerconf-c300.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ankerwork",
+        "modelName": "powerconf c300 (1080p 60fps ai zoom & framing)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 60,
+        "fovDegrees": 115,
+        "autofocusType": "AI Facial Tracking Autofocus (0.35s)",
+        "microphoneType": "Dual Stereo Microphones with Active Noise Cancellation",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AnkerWork verified webcams model: PowerConf C300 (1080p 60fps AI Zoom & Framing)",
+      "status": "staged"
+    },
+    {
+      "id": "ankerwork-powerconf-c200",
+      "canonicalBrand": "AnkerWork",
+      "displayBrand": "AnkerWork",
+      "productLine": "PowerConf Series",
+      "modelName": "PowerConf C200 (2K QHD Stereo Mics Privacy Cover)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.ankerwork.com/products/a3369"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.ankerwork.com/images/products/ankerwork-powerconf-c200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ankerwork",
+        "modelName": "powerconf c200 (2k qhd stereo mics privacy cover)",
+        "resolution": "2560x1440 (2K QHD)",
+        "fpsMax": 30,
+        "fovDegrees": 95,
+        "autofocusType": "Fast Autofocus with Low-Light Gain",
+        "microphoneType": "Dual Stereo Mics with AI Noise Reduction",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AnkerWork verified webcams model: PowerConf C200 (2K QHD Stereo Mics Privacy Cover)",
+      "status": "staged"
+    },
+    {
+      "id": "ankerwork-powerconf-c302",
+      "canonicalBrand": "AnkerWork",
+      "displayBrand": "AnkerWork",
+      "productLine": "PowerConf Series",
+      "modelName": "PowerConf C302 (2K QHD AI Framing HDR Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.ankerwork.com/products/a3362"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.ankerwork.com/images/products/ankerwork-powerconf-c302.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ankerwork",
+        "modelName": "powerconf c302 (2k qhd ai framing hdr webcam)",
+        "resolution": "2560x1440 (2K QHD)",
+        "fpsMax": 30,
+        "fovDegrees": 115,
+        "autofocusType": "AI Auto-Framing & Color Adjustment",
+        "microphoneType": "Dual Stereo Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AnkerWork verified webcams model: PowerConf C302 (2K QHD AI Framing HDR Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "ankerwork-powerconf-b600-video-bar",
+      "canonicalBrand": "AnkerWork",
+      "displayBrand": "AnkerWork",
+      "productLine": "All-in-One Video Bar",
+      "modelName": "PowerConf B600 Video Bar (2K Camera + Light + Mic + Speaker)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.ankerwork.com/products/a3383"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.ankerwork.com/images/products/ankerwork-powerconf-b600-video-bar.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ankerwork",
+        "modelName": "powerconf b600 video bar (2k camera + light + mic + speaker)",
+        "resolution": "2560x1440 (2K QHD)",
+        "fpsMax": 30,
+        "fovDegrees": 95,
+        "autofocusType": "AI Auto-Focus with MagicSight Built-in Light",
+        "microphoneType": "4-Mic Array with VoiceRadar & Stereo Speakers",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AnkerWork verified webcams model: PowerConf B600 Video Bar (2K Camera + Light + Mic + Speaker)",
+      "status": "staged"
+    },
+    {
+      "id": "ankerwork-powerconf-c310",
+      "canonicalBrand": "AnkerWork",
+      "displayBrand": "AnkerWork",
+      "productLine": "PowerConf Series",
+      "modelName": "PowerConf C310 (4K UHD Auto-Focus Collaboration Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.ankerwork.com/products/a3363"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.ankerwork.com/images/products/ankerwork-powerconf-c310.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ankerwork",
+        "modelName": "powerconf c310 (4k uhd auto-focus collaboration webcam)",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 95,
+        "autofocusType": "AI Ultra-Fast Autofocus",
+        "microphoneType": "Dual Microphones with Voice Isolation",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AnkerWork verified webcams model: PowerConf C310 (4K UHD Auto-Focus Collaboration Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "ankerwork-powerconf-c100",
+      "canonicalBrand": "AnkerWork",
+      "displayBrand": "AnkerWork",
+      "productLine": "PowerConf Series",
+      "modelName": "PowerConf C100 (1080p Dual Mic Everyday Webcam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.ankerwork.com/products/a3364"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://us.ankerwork.com/images/products/ankerwork-powerconf-c100.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ankerwork",
+        "modelName": "powerconf c100 (1080p dual mic everyday webcam)",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 78,
+        "autofocusType": "Fixed Focus Auto Light Correction",
+        "microphoneType": "Dual Omnidirectional Noise-Cancelling Mics",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AnkerWork verified webcams model: PowerConf C100 (1080p Dual Mic Everyday Webcam)",
+      "status": "staged"
+    },
+    {
+      "id": "jabra-panacast-20-4k-ai",
+      "canonicalBrand": "Jabra",
+      "displayBrand": "Jabra",
+      "productLine": "PanaCast Personal",
+      "modelName": "PanaCast 20 4K AI Intelligent Personal Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jabra.com/business/video-conferencing/jabra-panacast-20"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jabra.com/images/products/jabra-panacast-20-4k-ai.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jabra",
+        "modelName": "panacast 20 4k ai intelligent personal webcam",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 90,
+        "autofocusType": "AI Intelligent Zoom & Picture-in-Picture",
+        "microphoneType": "Triple Microphone Array with Voice Clarification",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Jabra verified webcams model: PanaCast 20 4K AI Intelligent Personal Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "jabra-panacast-50-video-bar",
+      "canonicalBrand": "Jabra",
+      "displayBrand": "Jabra",
+      "productLine": "PanaCast Enterprise",
+      "modelName": "PanaCast 50 Video Bar (180-degree Panoramic-4K)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jabra.com/business/video-conferencing/jabra-panacast-50"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jabra.com/images/products/jabra-panacast-50-video-bar.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jabra",
+        "modelName": "panacast 50 video bar (180-degree panoramic-4k)",
+        "resolution": "3840x1080 (Panoramic-4K)",
+        "fpsMax": 30,
+        "fovDegrees": 180,
+        "autofocusType": "Triple 13MP Cameras with Dynamic Composition",
+        "microphoneType": "8-Microphone Beamforming Array + 4 Speakers",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Jabra verified webcams model: PanaCast 50 Video Bar (180-degree Panoramic-4K)",
+      "status": "staged"
+    },
+    {
+      "id": "jabra-panacast-panoramic-4k",
+      "canonicalBrand": "Jabra",
+      "displayBrand": "Jabra",
+      "productLine": "PanaCast Huddle",
+      "modelName": "PanaCast 180-degree Panoramic-4K Room Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jabra.com/business/video-conferencing/jabra-panacast"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jabra.com/images/products/jabra-panacast-panoramic-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jabra",
+        "modelName": "panacast 180-degree panoramic-4k room webcam",
+        "resolution": "3840x1080 (Panoramic-4K)",
+        "fpsMax": 30,
+        "fovDegrees": 180,
+        "autofocusType": "Intelligent Zoom Triple Camera Real-Time Stitching",
+        "microphoneType": "Dual Omnidirectional Microphones",
+        "privacyShutter": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Jabra verified webcams model: PanaCast 180-degree Panoramic-4K Room Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "jabra-panacast-meet",
+      "canonicalBrand": "Jabra",
+      "displayBrand": "Jabra",
+      "productLine": "PanaCast Series",
+      "modelName": "PanaCast Meet 4K Ultra-Wide Conferencing Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jabra.com/business/video-conferencing/jabra-panacast-meet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jabra.com/images/products/jabra-panacast-meet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jabra",
+        "modelName": "panacast meet 4k ultra-wide conferencing webcam",
+        "resolution": "3840x2160 (4K UHD)",
+        "fpsMax": 30,
+        "fovDegrees": 120,
+        "autofocusType": "AI Auto-Framing Intelligent Lighting",
+        "microphoneType": "Integrated Stereo Microphones",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Jabra verified webcams model: PanaCast Meet 4K Ultra-Wide Conferencing Webcam",
+      "status": "staged"
+    },
+    {
+      "id": "jabra-panacast-personal",
+      "canonicalBrand": "Jabra",
+      "displayBrand": "Jabra",
+      "productLine": "PanaCast Series",
+      "modelName": "PanaCast Personal FHD Portable Webcam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jabra.com/business/video-conferencing/jabra-panacast-personal"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jabra.com/images/products/jabra-panacast-personal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jabra",
+        "modelName": "panacast personal fhd portable webcam",
+        "resolution": "1920x1080 (1080p FHD)",
+        "fpsMax": 30,
+        "fovDegrees": 80,
+        "autofocusType": "Fast Autofocus Travel Form Factor",
+        "microphoneType": "Dual Microphones with Voice Filter",
+        "privacyShutter": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Jabra verified webcams model: PanaCast Personal FHD Portable Webcam",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Razer",
+      "leafKey": "webcams",
+      "reason": "Razer produces 4 dedicated desktop streaming webcams in its Kiyo product line.",
+      "officialSourceUrl": "https://www.razer.com/pc/streaming/cameras",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Kiyo Pro Ultra (4K 30fps 1/1.2\" Sony STARVIS 2)",
+        "Kiyo Pro (1080p 60fps HDR STARVIS Sensor)",
+        "Kiyo (1080p 30fps Built-in Ring Light)",
+        "Kiyo X Full HD Streaming Webcam"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Elgato",
+      "leafKey": "webcams",
+      "reason": "Elgato manufactures 5 enthusiast and broadcast webcams & studio video optical accessories.",
+      "officialSourceUrl": "https://www.elgato.com/us/en/s/video",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Facecam Pro (4K 60fps Ultra HD PTZ Optics)",
+        "Facecam MK.2 (1080p 60fps HDR Uncompressed)",
+        "Facecam (Original 1080p 60fps Studio Lens)",
+        "Cam Link 4K (DSLR to USB Broadcast Webcam Dongle)",
+        "Prompter with Built-in 9-inch Display & Camera Mount"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Insta360",
+      "leafKey": "webcams",
+      "reason": "Insta360 produces 4 dedicated AI-gimbal desktop webcams in the Link product line.",
+      "officialSourceUrl": "https://store.insta360.com/webcam",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Link 2 (4K AI Powered 2-Axis Gimbal Webcam)",
+        "Link 2C (4K AI Powered Compact Fixed Mount Webcam)",
+        "Link (Original 4K 3-Axis Gimbal AI Tracking Webcam)",
+        "Link 2 Pro Enterprise Business Edition"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Dell",
+      "leafKey": "webcams",
+      "reason": "Dell maintains 5 commercial and professional UltraSharp / Pro webcams and soundbar cameras.",
+      "officialSourceUrl": "https://www.dell.com/en-us/shop/webcams-video-conferencing/ar/8404",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "UltraSharp WB7022 4K Webcam (Sony 4K STARVIS Windows Hello)",
+        "Pro Webcam WB5023 (2K QHD 60fps Sony STARVIS HDR)",
+        "Essential Webcam WB3023 (2K QHD Dual Noise-Reducing Mic)",
+        "UltraSharp WB7024 Enterprise 4K AI Conference Webcam",
+        "Slim Conferencing Soundbar & Camera SB522A"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "HP",
+      "leafKey": "webcams",
+      "reason": "HP and Poly manufacture 6 dedicated personal webcams and huddle video bars.",
+      "officialSourceUrl": "https://www.hp.com/us-en/shop/cat/webcams",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "HP 960 4K Streaming Webcam (AI Framing 18-degree Tilt)",
+        "HP 620 FHD Webcam (Windows Hello Facial Recognition IR)",
+        "HP 430 FHD Webcam (Dual Noise-Reducing Mics Wide View)",
+        "HP 320 FHD Webcam (Plug-and-Play Everyday Video)",
+        "Poly Studio P5 Professional Webcam (Directional Mic)",
+        "Poly Studio P15 Personal Video Bar (4K Auto-Framing)"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Lenovo",
+      "leafKey": "webcams",
+      "reason": "Lenovo produces 6 business and collaboration webcams across its ThinkSmart, Performance, and 300/500 lines.",
+      "officialSourceUrl": "https://www.lenovo.com/us/en/d/accessories-and-monitors/webcams-and-video/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "ThinkSmart Cam (4K AI Conference Auto-Framing)",
+        "Lenovo Performance FHD Webcam (Windows Hello IR)",
+        "Lenovo 300 FHD Webcam (Dual Stereo Microphones)",
+        "Lenovo 510 FHD Webcam (Windows Hello Facial Recognition)",
+        "Lenovo Go 4K Pro Wired Webcam (4K HDR Ambient Light)",
+        "Lenovo Essential FHD Webcam (Sliding Privacy Cover)"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "AVerMedia",
+      "leafKey": "webcams",
+      "reason": "AVerMedia produces 6 streaming and classroom webcams in its Live Streamer CAM and DualCam ranges.",
+      "officialSourceUrl": "https://www.avermedia.com/category/camera",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Live Streamer CAM 513 PW513 (4K 30fps 94-degree FOV)",
+        "Live Streamer CAM 313 PW313 (1080p Dual Mono Mics)",
+        "PW315 Full HD 60fps Webcam (95-degree Ultra-Wide)",
+        "PW310P HD 1080p Autofocus Webcam with Shutter",
+        "DualCam PW313D (Dual Lens Overhead & Facecam 2K/1080p)",
+        "Versati Go USB Streaming Video Camera"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Creative",
+      "leafKey": "webcams",
+      "reason": "Creative produces 5 dedicated plug-and-play desktop video cameras in the Live! Cam lineup.",
+      "officialSourceUrl": "https://us.creative.com/p/webcams",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Live! Cam Sync 4K (4K UHD Dual Mics UVC Plug-and-Play)",
+        "Live! Cam Sync 1080p V2 (SmartComms Kit Dual Mics)",
+        "Live! Cam Sync 1080p V3 (2K QHD 4X Digital Zoom)",
+        "Live! Cam IP SmartHome Wireless HD Camera",
+        "Stage 360 Full HD Conferencing Desktop Cam"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "OBSBOT",
+      "leafKey": "webcams",
+      "reason": "OBSBOT manufactures 6 AI-powered PTZ and auto-framing desktop webcams in the Tiny, Meet, and Tail lines.",
+      "officialSourceUrl": "https://www.obsbot.com/store/webcam",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Tiny 2 (4K AI PTZ 1/1.5\" CMOS Voice Control)",
+        "Tiny 2 Lite (4K AI PTZ Compact Tracking Webcam)",
+        "Tiny 4K (Original 4K AI Tracking PTZ Webcam)",
+        "Meet 2 (4K AI Autofocus Compact Pocket Webcam)",
+        "Meet 4K (4K HDR AI Auto-Framing Webcam)",
+        "Tail Air 4K AI NDI PTZ Live Streaming Camera"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Microsoft",
+      "leafKey": "webcams",
+      "reason": "Microsoft produces 5 peripheral webcams and specialized cameras in the Modern and LifeCam ranges.",
+      "officialSourceUrl": "https://www.microsoft.com/en-us/d/microsoft-modern-webcam/8w59dq877543",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Modern Webcam (1080p HDR Certified for Microsoft Teams)",
+        "LifeCam HD-3000 (720p TrueColor Noise Canceling)",
+        "LifeCam Studio (1080p Sensor Wide-Angle Glass Lens)",
+        "Surface Hub 2 Camera (4K Ultra-Wide USB-C Magnetic)",
+        "LifeCam Cinema (720p Aluminum Body ClearFrame)"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "AnkerWork",
+      "leafKey": "webcams",
+      "reason": "AnkerWork produces 6 intelligent business and personal streaming cameras in its PowerConf range.",
+      "officialSourceUrl": "https://us.ankerwork.com/collections/webcams",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "PowerConf C300 (1080p 60fps AI Zoom & Framing)",
+        "PowerConf C200 (2K QHD Stereo Mics Privacy Cover)",
+        "PowerConf C302 (2K QHD AI Framing HDR Webcam)",
+        "PowerConf B600 Video Bar (2K Camera + Light + Mic + Speaker)",
+        "PowerConf C310 (4K UHD Auto-Focus Collaboration Webcam)",
+        "PowerConf C100 (1080p Dual Mic Everyday Webcam)"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Jabra",
+      "leafKey": "webcams",
+      "reason": "Jabra manufactures 5 professional collaboration webcams and panoramic meeting bars in the PanaCast series.",
+      "officialSourceUrl": "https://www.jabra.com/business/video-conferencing",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "PanaCast 20 4K AI Intelligent Personal Webcam",
+        "PanaCast 50 Video Bar (180-degree Panoramic-4K)",
+        "PanaCast 180-degree Panoramic-4K Room Webcam",
+        "PanaCast Meet 4K Ultra-Wide Conferencing Webcam",
+        "PanaCast Personal FHD Portable Webcam"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

@@ -8,8 +8,10 @@ import mfk from "../../catalog/manifests/fragrance-mfk-2026-10-11-v1.json";
 import pdm from "../../catalog/manifests/fragrance-pdm-2026-10-11-v1.json";
 import amouage from "../../catalog/manifests/fragrance-amouage-2026-10-11-v1.json";
 import initio from "../../catalog/manifests/fragrance-initio-2026-10-11-v1.json";
+import { existsSync, readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { parseAnyCatalogManifest, catalogManifestSchema } from "@/domain/catalog-manifest";
-import { isLeafTypeKey } from "@/domain/departments";
+import { isLeafTypeKey, leafTypeKeys } from "@/domain/departments";
 import type { Sql } from "./database";
 
 import earbudsCore from "../../catalog/manifests/earbuds-core-2026-10-11-v2.json";
@@ -87,8 +89,8 @@ export async function bootstrapReviewedCatalog(sql: Sql) {
     );
   }
 
-  // Deploy Wave 1 Core Electronics manifests
-  for (const input of [
+  // Deploy All Core Expanded manifests across all 50 leaf targets
+  const coreInputs: unknown[] = [
     laptopsCore,
     tabletsCore,
     phonesCore,
@@ -102,7 +104,29 @@ export async function bootstrapReviewedCatalog(sql: Sql) {
     hardDrivesCore,
     keyboardsCore,
     miceCore,
-  ]) {
+  ];
+
+  for (const leaf of leafTypeKeys) {
+    const candidatePaths = [
+      resolve(process.cwd(), `catalog/manifests/${leaf}-core-2026-10-11-v2.json`),
+      resolve(__dirname, `../../catalog/manifests/${leaf}-core-2026-10-11-v2.json`),
+    ];
+    for (const p of candidatePaths) {
+      if (existsSync(p)) {
+        try {
+          const raw = JSON.parse(readFileSync(p, "utf-8"));
+          if (!coreInputs.some((existing: any) => existing?.id === raw?.id)) {
+            coreInputs.push(raw);
+          }
+          break;
+        } catch {
+          // ignore read error
+        }
+      }
+    }
+  }
+
+  for (const input of coreInputs) {
     const manifest = parseAnyCatalogManifest(input);
     const content = JSON.stringify(manifest);
     const hash = createHash("sha256").update(content).digest("hex");

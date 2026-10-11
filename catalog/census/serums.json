@@ -1,0 +1,3505 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "serums",
+  "displayName": "Facial Serums & Treatments",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "la-prairie-skin-caviar-liquid-lift",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Treatment",
+      "modelName": "Skin Caviar Liquid Lift",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/serums/skin-caviar-liquid-lift"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-skin-caviar-liquid-lift.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "skin caviar liquid lift",
+        "activeConcentrations": "Caviar Micro-Nutrients",
+        "skinConcern": "Firming & Lifting",
+        "formulationType": "Dual-Chamber Emulsion",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship active serum Skin Caviar Liquid Lift",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-white-caviar-pearl-infusion",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Treatment",
+      "modelName": "White Caviar Illuminating Pearl Infusion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/serums/white-caviar-pearl-infusion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-white-caviar-pearl-infusion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "white caviar illuminating pearl infusion",
+        "activeConcentrations": "Golden Caviar & Lumidose",
+        "skinConcern": "Dark Spots & Brightening",
+        "formulationType": "Encapsulated Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship active serum White Caviar Illuminating Pearl Infusion",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-platinum-rare-elixir",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Treatment",
+      "modelName": "Platinum Rare Haute-Rejuvenation Elixir",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/serums/platinum-rare-elixir"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-platinum-rare-elixir.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "platinum rare haute-rejuvenation elixir",
+        "activeConcentrations": "Platinum Multi-Peptide",
+        "skinConcern": "Cellular Rejuvenation",
+        "formulationType": "Elixir Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship active serum Platinum Rare Haute-Rejuvenation Elixir",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-pure-gold-radiance-concentrate",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Treatment",
+      "modelName": "Pure Gold Radiance Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/serums/pure-gold-radiance-concentrate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-pure-gold-radiance-concentrate.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "pure gold radiance concentrate",
+        "activeConcentrations": "Pure Gold Diffusion System",
+        "skinConcern": "Radiance & Glow",
+        "formulationType": "Fluid Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship active serum Pure Gold Radiance Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-skin-caviar-harmony-extrait",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Treatment",
+      "modelName": "Skin Caviar Harmony L'Extrait",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/serums/skin-caviar-harmony-extrait"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-skin-caviar-harmony-extrait.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "skin caviar harmony l'extrait",
+        "activeConcentrations": "Caviar Infinite Peptides",
+        "skinConcern": "Facial Contouring",
+        "formulationType": "Micro-Fluidic Gel",
+        "volumeMl": 20,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship active serum Skin Caviar Harmony L'Extrait",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-cellular-night-elixir-platinum",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Treatment",
+      "modelName": "Cellular Night Elixir Platinum Rare",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/serums/cellular-night-elixir-platinum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-cellular-night-elixir-platinum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "cellular night elixir platinum rare",
+        "activeConcentrations": "Platinum Peptide Matrix",
+        "skinConcern": "Overnight Renewal",
+        "formulationType": "Night Serum",
+        "volumeMl": 20,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship active serum Cellular Night Elixir Platinum Rare",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-skin-caviar-eye-lift",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Treatment",
+      "modelName": "Skin Caviar Eye Lift",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/serums/skin-caviar-eye-lift"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-skin-caviar-eye-lift.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "skin caviar eye lift",
+        "activeConcentrations": "Caviar Premier & Micro-Nutrients",
+        "skinConcern": "Eye Contouring",
+        "formulationType": "Dual-Phase Serum",
+        "volumeMl": 20,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship active serum Skin Caviar Eye Lift",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-the-concentrate",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Treatment",
+      "modelName": "The Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/serums/the-concentrate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-the-concentrate.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the concentrate",
+        "activeConcentrations": "Concentrated Miracle Broth",
+        "skinConcern": "Barrier Recovery & Soothing",
+        "formulationType": "Velvet Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer concentrated serum The Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-the-regenerating-serum",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Treatment",
+      "modelName": "The Regenerating Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/serums/the-regenerating-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-the-regenerating-serum.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the regenerating serum",
+        "activeConcentrations": "Metabolic Ferment & Miracle Broth",
+        "skinConcern": "Anti-Aging & Wrinkles",
+        "formulationType": "Silk Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer concentrated serum The Regenerating Serum",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-the-lifting-firming-serum",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Treatment",
+      "modelName": "The Lifting Firming Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/serums/the-lifting-firming-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-the-lifting-firming-serum.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the lifting firming serum",
+        "activeConcentrations": "Restructuring Ferment & Miracle Broth",
+        "skinConcern": "Sculpting & Firming",
+        "formulationType": "Fluid Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer concentrated serum The Lifting Firming Serum",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-hydrating-infused-emulsion",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Treatment",
+      "modelName": "The Hydrating Infused Emulsion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/serums/hydrating-infused-emulsion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-hydrating-infused-emulsion.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the hydrating infused emulsion",
+        "activeConcentrations": "Kelp Ferment & Miracle Broth",
+        "skinConcern": "Deep Hydration",
+        "formulationType": "Lightweight Emulsion",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer concentrated serum The Hydrating Infused Emulsion",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-revitalizing-hydrating-serum",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Treatment",
+      "modelName": "The Revitalizing Hydrating Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/serums/revitalizing-hydrating-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-revitalizing-hydrating-serum.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the revitalizing hydrating serum",
+        "activeConcentrations": "Deep Hydration Ferment",
+        "skinConcern": "Plumping Hydration",
+        "formulationType": "Water-Gel Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer concentrated serum The Revitalizing Hydrating Serum",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-night-recovery-serum",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Treatment",
+      "modelName": "The Night Recovery Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/serums/night-recovery-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-night-recovery-serum.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the night recovery serum",
+        "activeConcentrations": "Youth Activating Ferment",
+        "skinConcern": "Overnight Repair",
+        "formulationType": "Rich Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer concentrated serum The Night Recovery Serum",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-rejuvenating-night-oil-serum",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Treatment",
+      "modelName": "The Rejuvenating Night Oil Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/serums/rejuvenating-night-oil-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-rejuvenating-night-oil-serum.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the rejuvenating night oil serum",
+        "activeConcentrations": "Essential Marine Lipids",
+        "skinConcern": "Nourishing Anti-Aging",
+        "formulationType": "Dual-Phase Oil Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer concentrated serum The Rejuvenating Night Oil Serum",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-the-serum",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Sérum Suprême",
+      "modelName": "The Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/the-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-the-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "the serum",
+        "activeConcentrations": "Skin-Empowering Illuminator & Kelplex",
+        "skinConcern": "Radiance Awakening",
+        "formulationType": "First-Step Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté corrective serum The Serum",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-firming-serum-supreme",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Sérum Suprême",
+      "modelName": "Firming Serum Supreme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/firming-serum-supreme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-firming-serum-supreme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "firming serum supreme",
+        "activeConcentrations": "Root Hybrid Complex & Golden Silk",
+        "skinConcern": "Lifting & Elasticity",
+        "formulationType": "Velvet Serum",
+        "volumeMl": 40,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté corrective serum Firming Serum Supreme",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-brightening-serum-supreme",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Sérum Suprême",
+      "modelName": "Brightening Serum Supreme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/brightening-serum-supreme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-brightening-serum-supreme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "brightening serum supreme",
+        "activeConcentrations": "Sea Breeze Extract & 4MSK",
+        "skinConcern": "Dark Spot Correction",
+        "formulationType": "Brightening Fluid",
+        "volumeMl": 40,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté corrective serum Brightening Serum Supreme",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-wrinkle-smoothing-serum",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Sérum Suprême",
+      "modelName": "Wrinkle Smoothing Serum Supreme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/wrinkle-smoothing-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-wrinkle-smoothing-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "wrinkle smoothing serum supreme",
+        "activeConcentrations": "Pure Retinol & Hydro-Wrap",
+        "skinConcern": "Fine Lines & Wrinkles",
+        "formulationType": "Targeted Serum",
+        "volumeMl": 20,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté corrective serum Wrinkle Smoothing Serum Supreme",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-concentrated-brightening-eye",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Sérum Suprême",
+      "modelName": "Concentrated Brightening Eye Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/concentrated-brightening-eye"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "15ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-concentrated-brightening-eye.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "concentrated brightening eye serum",
+        "activeConcentrations": "Chroma-Cell Complex & 4MSK",
+        "skinConcern": "Under-Eye Radiance",
+        "formulationType": "Eye Serum",
+        "volumeMl": 15,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté corrective serum Concentrated Brightening Eye Serum",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-synactif-serum",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Sérum Suprême",
+      "modelName": "Synactif Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/synactif-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-synactif-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "synactif serum",
+        "activeConcentrations": "MACC-PD & Golden Mulberry",
+        "skinConcern": "Lymphatic Drainage & Contouring",
+        "formulationType": "Ultra-Fluid Serum",
+        "volumeMl": 40,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté corrective serum Synactif Serum",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-hydro-clarifying-serum",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Sérum Suprême",
+      "modelName": "Hydro-Clarifying Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/hydro-clarifying-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-hydro-clarifying-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "hydro-clarifying serum",
+        "activeConcentrations": "Hyaluronic Acid & Plant Squalane",
+        "skinConcern": "Pore Refining",
+        "formulationType": "Clarifying Serum",
+        "volumeMl": 40,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté corrective serum Hydro-Clarifying Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-sisleya-firming-concentrated-serum",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Sisleÿa L'Intégral Anti-Âge Firming Concentrated Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/sisleya-firming-concentrated-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-sisleya-firming-concentrated-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "sisleÿa l'intégral anti-âge firming concentrated serum",
+        "activeConcentrations": "Sweet Marjoram & Lindera",
+        "skinConcern": "Firming & Densifying",
+        "formulationType": "Fluid Gel Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Sisleÿa L'Intégral Anti-Âge Firming Concentrated Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-sisleya-anti-wrinkle-serum",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Sisleÿa L'Intégral Anti-Âge Anti-Wrinkle Concentrated Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/sisleya-anti-wrinkle-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-sisleya-anti-wrinkle-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "sisleÿa l'intégral anti-âge anti-wrinkle concentrated serum",
+        "activeConcentrations": "Cacao & Persian Acacia",
+        "skinConcern": "Deep Wrinkles",
+        "formulationType": "Emulsion Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Sisleÿa L'Intégral Anti-Âge Anti-Wrinkle Concentrated Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-sisleya-radiance-dark-spot-serum",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Sisleÿa L'Intégral Anti-Âge Radiance Anti-Dark Spot Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/sisleya-radiance-dark-spot-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-sisleya-radiance-dark-spot-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "sisleÿa l'intégral anti-âge radiance anti-dark spot serum",
+        "activeConcentrations": "Lansium Extract & Hexylresorcinol",
+        "skinConcern": "Pigmentation",
+        "formulationType": "Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Sisleÿa L'Intégral Anti-Âge Radiance Anti-Dark Spot Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-hydra-global-serum",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Hydra-Global Intense Anti-Aging Hydration Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/hydra-global-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-hydra-global-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "hydra-global intense anti-aging hydration serum",
+        "activeConcentrations": "Yeast & Wild Pansy",
+        "skinConcern": "Dehydration",
+        "formulationType": "Gel Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Hydra-Global Intense Anti-Aging Hydration Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-black-rose-face-oil-serum",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Black Rose Precious Face Oil Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/black-rose-face-oil-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "25ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-black-rose-face-oil-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "black rose precious face oil serum",
+        "activeConcentrations": "Black Rose Extract & Plum Oil",
+        "skinConcern": "Nourishing Plump",
+        "formulationType": "Oil Serum",
+        "volumeMl": 25,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Black Rose Precious Face Oil Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-supremya-at-night-serum",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Supremÿa At Night The Supreme Anti-Aging Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/supremya-at-night-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-supremya-at-night-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "supremÿa at night the supreme anti-aging serum",
+        "activeConcentrations": "LC12 Phyto-Complex",
+        "skinConcern": "Cellular Night Repair",
+        "formulationType": "Lotion Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Supremÿa At Night The Supreme Anti-Aging Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-phyto-blanc-le-concentre",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Phyto-Blanc Le Concentré Pure Brightening Activating Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/phyto-blanc-le-concentre"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-phyto-blanc-le-concentre.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "phyto-blanc le concentré pure brightening activating serum",
+        "activeConcentrations": "Palmaria Palmata & Vitamin C",
+        "skinConcern": "Dark Spots",
+        "formulationType": "Serum",
+        "volumeMl": 20,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Phyto-Blanc Le Concentré Pure Brightening Activating Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-intensive-serum-tropical-resins",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Intensive Serum with Tropical Resins",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/intensive-serum-tropical-resins"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-intensive-serum-tropical-resins.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "intensive serum with tropical resins",
+        "activeConcentrations": "Tropical Resins & Java Tea",
+        "skinConcern": "Blemish Control & Pores",
+        "formulationType": "Mattifying Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Intensive Serum with Tropical Resins",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-ecological-compound-advanced",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Ecological Compound Advanced Formula",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/ecological-compound-advanced"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-ecological-compound-advanced.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "ecological compound advanced formula",
+        "activeConcentrations": "Ginseng & Rosemary",
+        "skinConcern": "Skin Barrier Balance",
+        "formulationType": "Water-Milk Emulsion",
+        "volumeMl": 60,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Ecological Compound Advanced Formula",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-phyto-svelt-global-serum",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Phyto Treatment",
+      "modelName": "Phyto-Svelt Global Slimming & Contouring Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/serums/phyto-svelt-global-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-phyto-svelt-global-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "phyto-svelt global slimming & contouring serum",
+        "activeConcentrations": "Bitter Orange & Caffeine",
+        "skinConcern": "Contouring",
+        "formulationType": "Fluid",
+        "volumeMl": 200,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris active botanical serum Phyto-Svelt Global Slimming & Contouring Serum",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-advanced-youth-watery-oil",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Abeille Royale Advanced Youth Watery Oil Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-advanced-youth-watery-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-advanced-youth-watery-oil.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale advanced youth watery oil serum",
+        "activeConcentrations": "Dynamic BlackBee Repair Honey",
+        "skinConcern": "Plumping Radiance",
+        "formulationType": "Watery Oil Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Abeille Royale Advanced Youth Watery Oil Serum",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-double-r-serum",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Abeille Royale Double R Renew & Repair Advanced Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-double-r-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-double-r-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale double r renew & repair advanced serum",
+        "activeConcentrations": "White Honey AHA & Royal Jelly",
+        "skinConcern": "Lifting & Resurfacing",
+        "formulationType": "Dual Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Abeille Royale Double R Renew & Repair Advanced Serum",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-micro-lift",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Orchidée Impériale The Micro-Lift Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-micro-lift"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-micro-lift.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale the micro-lift concentrate",
+        "activeConcentrations": "Orchid Totum & Micro-Capsules",
+        "skinConcern": "Sculpting & Elasticity",
+        "formulationType": "Micro-Encapsulated Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Orchidée Impériale The Micro-Lift Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-longevity-concentrate",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Orchidée Impériale The Longevity Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-longevity-concentrate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-longevity-concentrate.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale the longevity concentrate",
+        "activeConcentrations": "Gold Orchid Molecular Extract",
+        "skinConcern": "Longevity Cellular Renewal",
+        "formulationType": "Silk Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Orchidée Impériale The Longevity Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-daily-repair-serum",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Abeille Royale Daily Repair Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-daily-repair-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-daily-repair-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale daily repair serum",
+        "activeConcentrations": "Pure Royal Jelly Concentrate",
+        "skinConcern": "Tissue Firmness",
+        "formulationType": "Micro-Drops Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Abeille Royale Daily Repair Serum",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-black-the-serum",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Orchidée Impériale Black The Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-black-the-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-black-the-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale black the serum",
+        "activeConcentrations": "Black Orchid Tissue Tech",
+        "skinConcern": "Supreme Cellular Regeneration",
+        "formulationType": "Cream Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Orchidée Impériale Black The Serum",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-super-aqua-serum",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Super Aqua-Serum Intense Hydration Wrinkle Plumper",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/super-aqua-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-super-aqua-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "super aqua-serum intense hydration wrinkle plumper",
+        "activeConcentrations": "Aquacomplex Advanced",
+        "skinConcern": "Deep Hydration",
+        "formulationType": "Milk Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Super Aqua-Serum Intense Hydration Wrinkle Plumper",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-scalp-oil-serum",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Abeille Royale Scalp & Hair Youth Oil-in-Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-scalp-oil-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-scalp-oil-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale scalp & hair youth oil-in-serum",
+        "activeConcentrations": "BlackBee Honey & Panthenol",
+        "skinConcern": "Hair & Scalp Revitalizing",
+        "formulationType": "Oil-in-Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Abeille Royale Scalp & Hair Youth Oil-in-Serum",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-night-recovery-oil",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Abeille Royale Night Recovery Oil Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-night-recovery-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-night-recovery-oil.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale night recovery oil serum",
+        "activeConcentrations": "Ouessant Honey Complex",
+        "skinConcern": "Overnight Repair",
+        "formulationType": "Oil Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Abeille Royale Night Recovery Oil Serum",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-blanc-de-perle-serum",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Serums",
+      "modelName": "Blanc de Perle Rosy Glow Brightening Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/blanc-de-perle-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-blanc-de-perle-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "blanc de perle rosy glow brightening serum",
+        "activeConcentrations": "P.E.A.R.L. Complex",
+        "skinConcern": "Luminosity & Dark Spots",
+        "formulationType": "Essence Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée active serum Blanc de Perle Rosy Glow Brightening Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-facial-treatment-essence",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Essence & Serums",
+      "modelName": "Facial Treatment Essence",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/facial-treatment-essence"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "75ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-facial-treatment-essence.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "facial treatment essence",
+        "activeConcentrations": "90%+ PITERA Ferment",
+        "skinConcern": "Skin Transformation & Clarity",
+        "formulationType": "Miracle Water Essence",
+        "volumeMl": 75,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II concentrated PITERA serum Facial Treatment Essence",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-genoptics-ultraura-essence",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Essence & Serums",
+      "modelName": "GenOptics Ultraura Essence Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/genoptics-ultraura-essence"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-genoptics-ultraura-essence.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "genoptics ultraura essence serum",
+        "activeConcentrations": "PITERA & Niacinamide & Snow Lotus",
+        "skinConcern": "Aura Radiance & Yellow Dullness",
+        "formulationType": "Milky Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II concentrated PITERA serum GenOptics Ultraura Essence Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-skinpower-advanced-airy-serum",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Essence & Serums",
+      "modelName": "Skinpower Advanced Airy Milky Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/skinpower-advanced-airy-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-skinpower-advanced-airy-serum.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "skinpower advanced airy milky serum",
+        "activeConcentrations": "PITERA & Kinoki Peptides",
+        "skinConcern": "Skin Elasticity & Pore Tightening",
+        "formulationType": "Light Milky Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II concentrated PITERA serum Skinpower Advanced Airy Milky Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-genoptics-spot-essence",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Essence & Serums",
+      "modelName": "GenOptics Spot Essence Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/genoptics-spot-essence"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-genoptics-spot-essence.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "genoptics spot essence serum",
+        "activeConcentrations": "PITERA & Lumina Kelp",
+        "skinConcern": "Stubborn Dark Spots",
+        "formulationType": "Concentrated Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II concentrated PITERA serum GenOptics Spot Essence Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-lxp-ultimate-perfecting-serum",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Essence & Serums",
+      "modelName": "LXP Ultimate Perfecting Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/lxp-ultimate-perfecting-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-lxp-ultimate-perfecting-serum.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "lxp ultimate perfecting serum",
+        "activeConcentrations": "8x Concentrated PITERA & Centella",
+        "skinConcern": "Supreme Rejuvenation",
+        "formulationType": "Gold Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II concentrated PITERA serum LXP Ultimate Perfecting Serum",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-facial-treatment-repair-c",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Essence & Serums",
+      "modelName": "Facial Treatment Repair C",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/facial-treatment-repair-c"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-facial-treatment-repair-c.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "facial treatment repair c",
+        "activeConcentrations": "PITERA & Hyaluronic Acid",
+        "skinConcern": "Fine Lines & Dryness",
+        "formulationType": "Concentrated Gel Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II concentrated PITERA serum Facial Treatment Repair C",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-l-essence-fondamentale",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Sublimage L'Essence Fondamentale",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-l-essence-fondamentale"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-l-essence-fondamentale.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage l'essence fondamentale",
+        "activeConcentrations": "Solidago Extract & Vanilla Planifolia",
+        "skinConcern": "Redensifying & Firming",
+        "formulationType": "Emulsion Serum",
+        "volumeMl": 40,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Sublimage L'Essence Fondamentale",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-l-essence-lumiere",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Sublimage L'Essence Lumière",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-l-essence-lumiere"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-l-essence-lumiere.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage l'essence lumière",
+        "activeConcentrations": "Anthyllis Extract & Vanilla Planifolia",
+        "skinConcern": "Pigmentation & Glow",
+        "formulationType": "Radiant Serum",
+        "volumeMl": 40,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Sublimage L'Essence Lumière",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-no1-revitalizing-serum",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "N°1 de Chanel Revitalizing Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/no1-revitalizing-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-no1-revitalizing-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "n°1 de chanel revitalizing serum",
+        "activeConcentrations": "Red Camellia Extract",
+        "skinConcern": "Anti-Pollution & Vitality",
+        "formulationType": "Gel Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum N°1 de Chanel Revitalizing Serum",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-hydra-beauty-micro-serum",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Hydra Beauty Micro Sérum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/hydra-beauty-micro-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-hydra-beauty-micro-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "hydra beauty micro sérum",
+        "activeConcentrations": "White Camellia Micro-Droplets",
+        "skinConcern": "Intense Plumping Hydration",
+        "formulationType": "Microfluidic Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Hydra Beauty Micro Sérum",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-lift-serum",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Le Lift Sérum Smooths-Firms",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-lift-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-lift-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le lift sérum smooths-firms",
+        "activeConcentrations": "Botanical Alfalfa Concentrate",
+        "skinConcern": "Firming & Anti-Wrinkle",
+        "formulationType": "Velvet Gel Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Le Lift Sérum Smooths-Firms",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-lift-pro-concentre-contours",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Le Lift Pro Concentré Contours",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-lift-pro-concentre-contours"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-lift-pro-concentre-contours.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le lift pro concentré contours",
+        "activeConcentrations": "Melipona Enzymatic Honey",
+        "skinConcern": "Facial Oval Contouring",
+        "formulationType": "Fluid Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Le Lift Pro Concentré Contours",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-blue-serum-longevity",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Blue Serum Longevity Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/blue-serum-longevity"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-blue-serum-longevity.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "blue serum longevity serum",
+        "activeConcentrations": "Green Coffee & Olive & Lentisk",
+        "skinConcern": "Skin Longevity",
+        "formulationType": "Fresh Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Blue Serum Longevity Serum",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-hydra-beauty-micro-levres",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Hydra Beauty Micro Sérum Lèvres",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/hydra-beauty-micro-levres"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "11ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-hydra-beauty-micro-levres.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "hydra beauty micro sérum lèvres",
+        "activeConcentrations": "Camellia Micro-Droplets",
+        "skinConcern": "Lip Hydration Plump",
+        "formulationType": "Fluid Lip Serum",
+        "volumeMl": 11,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Hydra Beauty Micro Sérum Lèvres",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-l-extrait-de-nuit",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Sublimage L'Extrait de Nuit",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-l-extrait-de-nuit"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-l-extrait-de-nuit.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage l'extrait de nuit",
+        "activeConcentrations": "Swertia & Vanilla Planifolia",
+        "skinConcern": "Overnight Intensive Repair",
+        "formulationType": "Oil-Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Sublimage L'Extrait de Nuit",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-blanc-serum-healthy-light",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Le Blanc Sérum Healthy Light Creator",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-blanc-serum-healthy-light"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-blanc-serum-healthy-light.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le blanc sérum healthy light creator",
+        "activeConcentrations": "TXC Molecule & Gardenia Extract",
+        "skinConcern": "Brightening & Even Tone",
+        "formulationType": "Milky Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Le Blanc Sérum Healthy Light Creator",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-boy-de-chanel-fortifying-gel",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Boy de Chanel Fortifying Gel Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/boy-de-chanel-fortifying-gel"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-boy-de-chanel-fortifying-gel.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "boy de chanel fortifying gel serum",
+        "activeConcentrations": "Hyaluronic Acid & Green Coffee",
+        "skinConcern": "Men Barrier Defense",
+        "formulationType": "Fresh Gel",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Boy de Chanel Fortifying Gel Serum",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-hydra-beauty-camellia-water-cream",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Chanel Sérums & Soins",
+      "modelName": "Hydra Beauty Camellia Water Cream Radiance Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/hydra-beauty-camellia-water-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-hydra-beauty-camellia-water-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "hydra beauty camellia water cream radiance serum",
+        "activeConcentrations": "Camellia Floral Water",
+        "skinConcern": "Glow Booster",
+        "formulationType": "Liquid Cream Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision treatment serum Hydra Beauty Camellia Water Cream Radiance Serum",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-totale-le-serum",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Capture Totale Le Sérum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-totale-le-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-totale-le-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture totale le sérum",
+        "activeConcentrations": "Fermented Longoza & Iris Root Extract",
+        "skinConcern": "Multi-Recovery Anti-Aging",
+        "formulationType": "Micro-Infused Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Capture Totale Le Sérum",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-la-micro-huile-de-rose",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Dior Prestige La Micro-Huile de Rose Advanced Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-la-micro-huile-de-rose"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-la-micro-huile-de-rose.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior prestige la micro-huile de rose advanced serum",
+        "activeConcentrations": "22 Micro-Nutrients of Rose de Granville",
+        "skinConcern": "Cellular Revitalization",
+        "formulationType": "Micro-Nutritive Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Dior Prestige La Micro-Huile de Rose Advanced Serum",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-le-nectar-premier",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Dior Prestige Le Nectar Premier",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-le-nectar-premier"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-le-nectar-premier.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior prestige le nectar premier",
+        "activeConcentrations": "First Buds of Rose de Granville",
+        "skinConcern": "Youth Regeneration",
+        "formulationType": "Concentrated Nectar Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Dior Prestige Le Nectar Premier",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-totale-retishot",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Capture Totale Retishot",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-totale-retishot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-totale-retishot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture totale retishot",
+        "activeConcentrations": "0.1% Pure Retinol & Longoza",
+        "skinConcern": "Deep Wrinkles & Texture",
+        "formulationType": "Night Shot Treatment",
+        "volumeMl": 20,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Capture Totale Retishot",
+      "status": "staged"
+    },
+    {
+      "id": "dior-one-essential-skin-boosting-serum",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "One Essential Skin Boosting Super Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/one-essential-skin-boosting-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-one-essential-skin-boosting-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "one essential skin boosting super serum",
+        "activeConcentrations": "Red Hibiscus Extract",
+        "skinConcern": "Cellular Detox & Booster",
+        "formulationType": "Fresh Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum One Essential Skin Boosting Super Serum",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-light-in-white-la-solution",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Dior Prestige Light-in-White La Solution Lumière",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-light-in-white-la-solution"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-light-in-white-la-solution.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior prestige light-in-white la solution lumière",
+        "activeConcentrations": "White Rose Extract & Rosapeptide",
+        "skinConcern": "Dark Spots & Radiance",
+        "formulationType": "Whitening Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Dior Prestige Light-in-White La Solution Lumière",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-youth-glow-booster",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Capture Youth Glow Booster Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-youth-glow-booster"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-youth-glow-booster.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture youth glow booster serum",
+        "activeConcentrations": "Murunga Plum & Vitamin C 80x",
+        "skinConcern": "Dullness & Fatigue",
+        "formulationType": "Fluid Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Capture Youth Glow Booster Serum",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-youth-plump-filler",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Capture Youth Plump Filler Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-youth-plump-filler"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-youth-plump-filler.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture youth plump filler serum",
+        "activeConcentrations": "Botanical Hyaluronic Acid",
+        "skinConcern": "Deep Dehydration Plump",
+        "formulationType": "Water-Gel Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Capture Youth Plump Filler Serum",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-youth-lift-sculptor",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Capture Youth Lift Sculptor Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-youth-lift-sculptor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-youth-lift-sculptor.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture youth lift sculptor serum",
+        "activeConcentrations": "Green Tea & White Tea Polyphenols",
+        "skinConcern": "Skin Laxity",
+        "formulationType": "Tightening Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Capture Youth Lift Sculptor Serum",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-totale-hyalushot",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Capture Totale Hyalushot Targeted Wrinkle Corrector",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-totale-hyalushot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "15ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-totale-hyalushot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture totale hyalushot targeted wrinkle corrector",
+        "activeConcentrations": "Hyaluronic Acid Duo & Longoza",
+        "skinConcern": "Expression Lines",
+        "formulationType": "Targeted Gel",
+        "volumeMl": 15,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Capture Totale Hyalushot Targeted Wrinkle Corrector",
+      "status": "staged"
+    },
+    {
+      "id": "dior-l-or-de-vie-le-serum",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "L'Or de Vie Le Sérum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/l-or-de-vie-le-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-l-or-de-vie-le-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "l'or de vie le sérum",
+        "activeConcentrations": "Yquem Vine Sap Concentrate",
+        "skinConcern": "Supreme Global Anti-Aging",
+        "formulationType": "Gold Elixir Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum L'Or de Vie Le Sérum",
+      "status": "staged"
+    },
+    {
+      "id": "dior-sauvage-the-serum",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Capture Totale & Prestige",
+      "modelName": "Sauvage The Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/sauvage-the-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-sauvage-the-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "sauvage the serum",
+        "activeConcentrations": "Cactus Aqueous Extract",
+        "skinConcern": "Men Hydration Defense",
+        "formulationType": "Lightweight Gel Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige active treatment serum Sauvage The Serum",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-advanced-night-repair-synchronized",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Advanced Night Repair Synchronized Multi-Recovery Complex",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/advanced-night-repair-synchronized"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-advanced-night-repair-synchronized.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "advanced night repair synchronized multi-recovery complex",
+        "activeConcentrations": "Chronolux Power Signal Technology & Bifida",
+        "skinConcern": "Lines & Firmness",
+        "formulationType": "Miracle Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Advanced Night Repair Synchronized Multi-Recovery Complex",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-perfectionist-pro-rapid-firm",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Perfectionist Pro Rapid Firm + Lift Serum with Hexapeptide-8",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/perfectionist-pro-rapid-firm"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-perfectionist-pro-rapid-firm.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "perfectionist pro rapid firm + lift serum with hexapeptide-8",
+        "activeConcentrations": "Hexapeptides 8+9",
+        "skinConcern": "Sagging & Elasticity",
+        "formulationType": "Velvet Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Perfectionist Pro Rapid Firm + Lift Serum with Hexapeptide-8",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-perfectionist-pro-rapid-brightening",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Perfectionist Pro Rapid Brightening Treatment with Ferment³ + Vitamin C",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/perfectionist-pro-rapid-brightening"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-perfectionist-pro-rapid-brightening.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "perfectionist pro rapid brightening treatment with ferment³ + vitamin c",
+        "activeConcentrations": "Vitamin C & Molasses Ferment",
+        "skinConcern": "Dark Spots & Acne Marks",
+        "formulationType": "Light Fluid",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Perfectionist Pro Rapid Brightening Treatment with Ferment³ + Vitamin C",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-diamond-dual-infusion",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Re-Nutriv Ultimate Diamond Transformative Energy Dual Infusion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/re-nutriv-diamond-dual-infusion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-diamond-dual-infusion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv ultimate diamond transformative energy dual infusion",
+        "activeConcentrations": "Black Diamond Truffle Extract",
+        "skinConcern": "Supreme Firming",
+        "formulationType": "Dual Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Re-Nutriv Ultimate Diamond Transformative Energy Dual Infusion",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-ultimate-lift-serum",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Re-Nutriv Ultimate Lift Regenerating Youth Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/re-nutriv-ultimate-lift-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-ultimate-lift-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv ultimate lift regenerating youth serum",
+        "activeConcentrations": "Floralixir Dew",
+        "skinConcern": "Cellular Renewal",
+        "formulationType": "Micro-Droplet Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Re-Nutriv Ultimate Lift Regenerating Youth Serum",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-anr-rescue-solution",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Advanced Night Repair Rescue Solution with 15% Bifida Ferment",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/anr-rescue-solution"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-anr-rescue-solution.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "advanced night repair rescue solution with 15% bifida ferment",
+        "activeConcentrations": "15% Bifida Ferment & Tripeptide-32",
+        "skinConcern": "Redness & Irritation",
+        "formulationType": "Soothing Fluid",
+        "volumeMl": 20,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Advanced Night Repair Rescue Solution with 15% Bifida Ferment",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-perfectionist-pro-retinol",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Perfectionist Pro Rapid Wrinkle Correcting Serum with 8.5% PHA + Retinol",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/perfectionist-pro-retinol"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-perfectionist-pro-retinol.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "perfectionist pro rapid wrinkle correcting serum with 8.5% pha + retinol",
+        "activeConcentrations": "Micro-Dose Retinol & PHA",
+        "skinConcern": "Fine Lines & Wrinkles",
+        "formulationType": "Resurfacing Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Perfectionist Pro Rapid Wrinkle Correcting Serum with 8.5% PHA + Retinol",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-anr-eye-supercharged",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Advanced Night Repair Eye Supercharged Gel-Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/anr-eye-supercharged"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "15ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-anr-eye-supercharged.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "advanced night repair eye supercharged gel-serum",
+        "activeConcentrations": "Hyaluronic Acid & Chronolux",
+        "skinConcern": "Eye Dark Circles",
+        "formulationType": "Gel Serum",
+        "volumeMl": 15,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Advanced Night Repair Eye Supercharged Gel-Serum",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-perfectionist-cp-r",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Perfectionist CP+R Wrinkle Lifting/Firming Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/perfectionist-cp-r"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-perfectionist-cp-r.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "perfectionist cp+r wrinkle lifting/firming serum",
+        "activeConcentrations": "CPR-75 Peptides",
+        "skinConcern": "Collagen Booster",
+        "formulationType": "Silk Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Perfectionist CP+R Wrinkle Lifting/Firming Serum",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-micro-essence-lotion",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Micro Essence Skin Activating Treatment Lotion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/micro-essence-lotion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-micro-essence-lotion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "micro essence skin activating treatment lotion",
+        "activeConcentrations": "Bio-Ferment Micro-Nutrients",
+        "skinConcern": "Barrier Strengthening",
+        "formulationType": "Essence Liquid",
+        "volumeMl": 200,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Micro Essence Skin Activating Treatment Lotion",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-diamond-sculpted",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Re-Nutriv Ultimate Diamond Sculpted Transformation Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/re-nutriv-diamond-sculpted"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-diamond-sculpted.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv ultimate diamond sculpted transformation serum",
+        "activeConcentrations": "Black Diamond Truffle & Sirtuin Tech",
+        "skinConcern": "Contour Definition",
+        "formulationType": "Elixir Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Re-Nutriv Ultimate Diamond Sculpted Transformation Serum",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-nutritious-radiant-emulsion",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Advanced Night Repair & Re-Nutriv",
+      "modelName": "Nutritious Radiant Essence Emulsion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/688/product-catalog/skincare/repair-serum/nutritious-radiant-emulsion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-nutritious-radiant-emulsion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "nutritious radiant essence emulsion",
+        "activeConcentrations": "Sweet Kelp & Red Algae",
+        "skinConcern": "Redness & Oil Control",
+        "formulationType": "Lightweight Milky Serum",
+        "volumeMl": 100,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder targeted treatment serum Nutritious Radiant Essence Emulsion",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-ultimune-power-infusing-concentrate",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Ultimune Power Infusing Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/ultimune-power-infusing-concentrate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-ultimune-power-infusing-concentrate.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "ultimune power infusing concentrate",
+        "activeConcentrations": "Lifeblood Technology & Reishi Mushroom",
+        "skinConcern": "Skin Immunity & Resilience",
+        "formulationType": "Iconic Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Ultimune Power Infusing Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-future-solution-lx-legendary-serum",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Future Solution LX Legendary Enmei Ultimate Luminance Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/future-solution-lx-legendary-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-future-solution-lx-legendary-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "future solution lx legendary enmei ultimate luminance serum",
+        "activeConcentrations": "Enmei Herb & Green Treasured Silk",
+        "skinConcern": "Supreme Luminosity",
+        "formulationType": "Elixir Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Future Solution LX Legendary Enmei Ultimate Luminance Serum",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-vital-perfection-liftdefine-serum",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Vital Perfection LiftDefine Radiance Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/vital-perfection-liftdefine-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-vital-perfection-liftdefine-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "vital perfection liftdefine radiance serum",
+        "activeConcentrations": "KURENAI-TruLift Complex & 4MSK",
+        "skinConcern": "Sagging Contours & Pigmentation",
+        "formulationType": "Milk Serum",
+        "volumeMl": 40,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Vital Perfection LiftDefine Radiance Serum",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-bio-performance-skin-filler-duo",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Bio-Performance Skin Filler Bio-Hyaluronic Duo Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/bio-performance-skin-filler-duo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-bio-performance-skin-filler-duo.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "bio-performance skin filler bio-hyaluronic duo serum",
+        "activeConcentrations": "Infill & Full Expansion Hyaluronic Acid",
+        "skinConcern": "Volumizing & Plumping",
+        "formulationType": "Dual Day/Night Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Bio-Performance Skin Filler Bio-Hyaluronic Duo Serum",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-white-lucent-illuminating-serum",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "White Lucent Illuminating Micro-Spot Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/white-lucent-illuminating-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-white-lucent-illuminating-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "white lucent illuminating micro-spot serum",
+        "activeConcentrations": "SAKURA-Bright Complex & 4MSK",
+        "skinConcern": "Dark Spots",
+        "formulationType": "Fresh Gel-Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum White Lucent Illuminating Micro-Spot Serum",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-ultimune-eye-concentrate",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Ultimune Power Infusing Eye Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/ultimune-eye-concentrate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "15ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-ultimune-eye-concentrate.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "ultimune power infusing eye concentrate",
+        "activeConcentrations": "ImuGenerationRED Tech",
+        "skinConcern": "Eye Barrier & Dark Circles",
+        "formulationType": "Eye Serum",
+        "volumeMl": 15,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Ultimune Power Infusing Eye Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-benefiance-wrinkle-contour-serum",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Benefiance Wrinkle Smoothing Contour Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/benefiance-wrinkle-contour-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-benefiance-wrinkle-contour-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "benefiance wrinkle smoothing contour serum",
+        "activeConcentrations": "ReNeura Technology+ & KOMBU-Bounce",
+        "skinConcern": "Express Lines & Wrinkles",
+        "formulationType": "Velvet Fluid",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Benefiance Wrinkle Smoothing Contour Serum",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-men-ultimune-power-infusing",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Shiseido Men Ultimune Power Infusing Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/men-ultimune-power-infusing"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "75ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-men-ultimune-power-infusing.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "shiseido men ultimune power infusing concentrate",
+        "activeConcentrations": "Triple TSUBAKI Technology",
+        "skinConcern": "Men Barrier Strength",
+        "formulationType": "Refreshing Serum",
+        "volumeMl": 75,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Shiseido Men Ultimune Power Infusing Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-waso-shikulime-tinted-serum",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Waso Shikulime Color Control Oil-Free Tinted Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/waso-shikulime-tinted-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-waso-shikulime-tinted-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "waso shikulime color control oil-free tinted serum",
+        "activeConcentrations": "Japanese Shikuwasa",
+        "skinConcern": "Skin Tone Correction",
+        "formulationType": "Tinted Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Waso Shikulime Color Control Oil-Free Tinted Serum",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-future-solution-lx-intensive-firming",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Future Solution LX Intensive Firming Contour Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/future-solution-lx-intensive-firming"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-future-solution-lx-intensive-firming.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "future solution lx intensive firming contour serum",
+        "activeConcentrations": "Enmei Herb & Licorice Extract",
+        "skinConcern": "Skin Laxity",
+        "formulationType": "Sculpting Emulsion",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Future Solution LX Intensive Firming Contour Serum",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-revitalessence-skin-glow-serum",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Revitalessence Skin Glow Serum Treatment",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/revitalessence-skin-glow-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-revitalessence-skin-glow-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "revitalessence skin glow serum treatment",
+        "activeConcentrations": "Fermented Kefir+ & Niacinamide",
+        "skinConcern": "Barrier Hydration Glow",
+        "formulationType": "Hybrid Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Revitalessence Skin Glow Serum Treatment",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-bio-performance-super-refining",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Ultimune & Future Solution",
+      "modelName": "Bio-Performance Super Refining Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/serums/bio-performance-super-refining"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-bio-performance-super-refining.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "bio-performance super refining serum",
+        "activeConcentrations": "Super Bio-Hyaluronic Acid",
+        "skinConcern": "Texture Smoothing",
+        "formulationType": "Fluid Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese active serum Bio-Performance Super Refining Serum",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-advanced-genifique-youth-concentrate",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Advanced Génifique Youth Activating Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/advanced-genifique-youth-concentrate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-advanced-genifique-youth-concentrate.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "advanced génifique youth activating concentrate",
+        "activeConcentrations": "7 Pre- & Probiotic Fractions & Hyaluronic Acid",
+        "skinConcern": "Skin Microbiome & Radiance",
+        "formulationType": "Iconic Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Advanced Génifique Youth Activating Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-renergie-hcf-triple-serum",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Rénergie H.C.F. Triple Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/renergie-hcf-triple-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-renergie-hcf-triple-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "rénergie h.c.f. triple serum",
+        "activeConcentrations": "Hyaluronic Acid, C+Niacinamide, Ferulic Acid",
+        "skinConcern": "Volume Loss & Wrinkles & Dark Spots",
+        "formulationType": "Triple-Dose Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Rénergie H.C.F. Triple Serum",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-the-serum",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Absolue The Serum Intensive Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/absolue-the-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-the-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue the serum intensive concentrate",
+        "activeConcentrations": "Grand Rose Extracts & Pro-Xylane",
+        "skinConcern": "Supreme Cellular Longevity",
+        "formulationType": "Velvet Serum",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Absolue The Serum Intensive Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-l-extrait-elixir",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Absolue L'Extrait Ultimate Elixir Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/absolue-l-extrait-elixir"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-l-extrait-elixir.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue l'extrait ultimate elixir serum",
+        "activeConcentrations": "Lancôme Rose Native Cells",
+        "skinConcern": "Supreme Tissue Regeneration",
+        "formulationType": "Pearlescent Elixir",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Absolue L'Extrait Ultimate Elixir Serum",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-clarifique-pro-solution-serum",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Clarifique Pro-Solution Brightening Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/clarifique-pro-solution-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "30ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-clarifique-pro-solution-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "clarifique pro-solution brightening serum",
+        "activeConcentrations": "10% PHA & Niacinamide & Beech Bud",
+        "skinConcern": "Dark Spots & Post-Acne Marks",
+        "formulationType": "Resurfacing Fluid",
+        "volumeMl": 30,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Clarifique Pro-Solution Brightening Serum",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-genifique-ultimate-recovery-serum",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Génifique Ultimate Recovery Dual Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/genifique-ultimate-recovery-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-genifique-ultimate-recovery-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "génifique ultimate recovery dual serum",
+        "activeConcentrations": "Tripeptide-1 & Bifida Ferment",
+        "skinConcern": "Fast Barrier Recovery",
+        "formulationType": "Dual Serum",
+        "volumeMl": 20,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Génifique Ultimate Recovery Dual Serum",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-genifique-yeux-light-pearl",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Advanced Génifique Yeux Light-Pearl Youth Activating Eye & Lash Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/genifique-yeux-light-pearl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-genifique-yeux-light-pearl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "advanced génifique yeux light-pearl youth activating eye & lash serum",
+        "activeConcentrations": "Bifida Ferment & Caffeine",
+        "skinConcern": "Eye Puffiness & Lashes",
+        "formulationType": "Cooling Pearl Serum",
+        "volumeMl": 20,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Advanced Génifique Yeux Light-Pearl Youth Activating Eye & Lash Serum",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-renergie-multi-lift-ultra-serum",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Rénergie Multi-Lift Ultra Full Spectrum Anti-Aging Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/renergie-multi-lift-ultra-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-renergie-multi-lift-ultra-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "rénergie multi-lift ultra full spectrum anti-aging serum",
+        "activeConcentrations": "Flaxseed Extract & Resorcinol",
+        "skinConcern": "Tightening & Spot Correction",
+        "formulationType": "Milk Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Rénergie Multi-Lift Ultra Full Spectrum Anti-Aging Serum",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-clarifique-dual-essence-treatment",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Clarifique Dual Essence Enzymatic Refining Treatment",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/clarifique-dual-essence-treatment"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-clarifique-dual-essence-treatment.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "clarifique dual essence enzymatic refining treatment",
+        "activeConcentrations": "French Beech Bud & Grapeseed Oil",
+        "skinConcern": "Texture Refining",
+        "formulationType": "Dual Essence Fluid",
+        "volumeMl": 150,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Clarifique Dual Essence Enzymatic Refining Treatment",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-precious-cells-rose-drop",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Absolue Precious Cells Rose Drop Night Peeling Concentrate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/absolue-precious-cells-rose-drop"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "15ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-precious-cells-rose-drop.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue precious cells rose drop night peeling concentrate",
+        "activeConcentrations": "Glycolic Acid & Rose Essential Oil",
+        "skinConcern": "Exfoliation & Radiance",
+        "formulationType": "Dual Peeling Serum",
+        "volumeMl": 15,
+        "dayNightUse": "Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Absolue Precious Cells Rose Drop Night Peeling Concentrate",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-visionnaire-advanced-corrector",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Visionnaire Advanced Skin Corrector Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/visionnaire-advanced-corrector"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-visionnaire-advanced-corrector.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "visionnaire advanced skin corrector serum",
+        "activeConcentrations": "LR 2412 Molecule",
+        "skinConcern": "Pores & Texture & Wrinkles",
+        "formulationType": "Velvet Fluid",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Visionnaire Advanced Skin Corrector Serum",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-hydra-zen-glow-liquid-serum",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Génifique & Absolue Serums",
+      "modelName": "Hydra Zen Glow Liquid Moisturizing Serum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-serums/hydra-zen-glow-liquid-serum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-hydra-zen-glow-liquid-serum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "hydra zen glow liquid moisturizing serum",
+        "activeConcentrations": "Centella Asiatica & Amino Acids",
+        "skinConcern": "Stress Dehydration",
+        "formulationType": "Milky Serum",
+        "volumeMl": 50,
+        "dayNightUse": "Day & Night"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme active anti-aging serum Hydra Zen Glow Liquid Moisturizing Serum",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "La Prairie",
+      "leafKey": "serums",
+      "reason": "La Prairie cellular luxury serum portfolio strictly comprises 7 core flagship treatment formulations.",
+      "officialSourceUrl": "https://www.laprairie.com/en-us/collection/serums",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Skin Caviar Liquid Lift",
+        "White Caviar Illuminating Pearl Infusion",
+        "Platinum Rare Haute-Rejuvenation Elixir",
+        "Pure Gold Radiance Concentrate",
+        "Skin Caviar Harmony L'Extrait",
+        "Cellular Night Elixir Platinum Rare",
+        "Skin Caviar Eye Lift"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "La Mer",
+      "leafKey": "serums",
+      "reason": "La Mer maintains exactly 7 proprietary Miracle Broth concentrated treatment serums.",
+      "officialSourceUrl": "https://www.cremedelamer.com/products/20606/serums",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "The Concentrate",
+        "The Regenerating Serum",
+        "The Lifting Firming Serum",
+        "The Hydrating Infused Emulsion",
+        "The Revitalizing Hydrating Serum",
+        "The Night Recovery Serum",
+        "The Rejuvenating Night Oil Serum"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Clé de Peau Beauté",
+      "leafKey": "serums",
+      "reason": "Clé de Peau Beauté prestige facial serum line comprises 7 specialized corrective treatments.",
+      "officialSourceUrl": "https://www.cledepeau-beaute.com/us/skincare/serums/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "The Serum",
+        "Firming Serum Supreme",
+        "Brightening Serum Supreme",
+        "Wrinkle Smoothing Serum Supreme",
+        "Concentrated Brightening Eye Serum",
+        "Synactif Serum",
+        "Hydro-Clarifying Serum"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "SK-II",
+      "leafKey": "serums",
+      "reason": "SK-II PITERA active serum and essence portfolio comprises exactly 6 core formulations.",
+      "officialSourceUrl": "https://www.sk-ii.com/skincare/serum",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Facial Treatment Essence",
+        "GenOptics Ultraura Essence Serum",
+        "Skinpower Advanced Airy Milky Serum",
+        "GenOptics Spot Essence Serum",
+        "LXP Ultimate Perfecting Serum",
+        "Facial Treatment Repair C"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

@@ -1,0 +1,3573 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "monitors",
+  "displayName": "Monitors & Displays",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "dell-ultrasharp-u2724de",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "UltraSharp",
+      "modelName": "UltraSharp U2724DE (27\" 1440p 120Hz IPS Black USB-C Hub 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-ultrasharp-27-thunderbolt-hub-monitor-u2724de/apd/210-bksk/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-ultrasharp-u2724de.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "ultrasharp u2724de (27\" 1440p 120hz ips black usb-c hub 90w)",
+        "panelType": "IPS Black",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 120,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: UltraSharp U2724DE (27\" 1440p 120Hz IPS Black USB-C Hub 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-ultrasharp-u3224kb",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "UltraSharp",
+      "modelName": "UltraSharp U3224KB (32\" 6K IPS Black HDR600 Thunderbolt 4 140W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-ultrasharp-32-6k-monitor-u3224kb/apd/210-bhzz/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-ultrasharp-u3224kb.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "ultrasharp u3224kb (32\" 6k ips black hdr600 thunderbolt 4 140w)",
+        "panelType": "IPS Black",
+        "resolution": "6144x3456 (6K)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 140,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: UltraSharp U3224KB (32\" 6K IPS Black HDR600 Thunderbolt 4 140W)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-ultrasharp-u4025qw",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "UltraSharp Curved",
+      "modelName": "UltraSharp U4025QW (40\" 5K2K Curved Thunderbolt 4 140W 120Hz)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-ultrasharp-40-curved-thunderbolt-hub-monitor-u4025qw/apd/210-bmdp/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-ultrasharp-u4025qw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "ultrasharp u4025qw (40\" 5k2k curved thunderbolt 4 140w 120hz)",
+        "panelType": "IPS Black",
+        "resolution": "5120x2160 (5K2K)",
+        "refreshHz": 120,
+        "usbCPowertWatts": 140,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: UltraSharp U4025QW (40\" 5K2K Curved Thunderbolt 4 140W 120Hz)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-ultrasharp-u2723qe",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "UltraSharp",
+      "modelName": "UltraSharp U2723QE (27\" 4K UHD IPS Black USB-C Hub 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bdpf/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-ultrasharp-u2723qe.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "ultrasharp u2723qe (27\" 4k uhd ips black usb-c hub 90w)",
+        "panelType": "IPS Black",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: UltraSharp U2723QE (27\" 4K UHD IPS Black USB-C Hub 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-p2723de",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "P-Series Professional",
+      "modelName": "P2723DE (27\" 1440p IPS USB-C Hub 90W RJ45)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-27-usb-c-hub-monitor-p2723de/apd/210-bdfl/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-p2723de.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "p2723de (27\" 1440p ips usb-c hub 90w rj45)",
+        "panelType": "IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: P2723DE (27\" 1440p IPS USB-C Hub 90W RJ45)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-p2422h",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "P-Series Professional",
+      "modelName": "P2422H (24\" 1080p IPS Full Ergonomic Pivot)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-24-monitor-p2422h/apd/210-bbcv/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-p2422h.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "p2422h (24\" 1080p ips full ergonomic pivot)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: P2422H (24\" 1080p IPS Full Ergonomic Pivot)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-s2722qc",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "S-Series Lifestyle",
+      "modelName": "S2722QC (27\" 4K UHD IPS USB-C 65W Integrated Speakers)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-27-4k-uhd-usb-c-monitor-s2722qc/apd/210-bbqt/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-s2722qc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "s2722qc (27\" 4k uhd ips usb-c 65w integrated speakers)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 65,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: S2722QC (27\" 4K UHD IPS USB-C 65W Integrated Speakers)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-s3422dwg",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "S-Series Gaming",
+      "modelName": "S3422DWG (34\" Curved WQHD 144Hz VA 1800R HDR400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-34-curved-gaming-monitor-s3422dwg/apd/210-azep/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-s3422dwg.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "s3422dwg (34\" curved wqhd 144hz va 1800r hdr400)",
+        "panelType": "VA Curved",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 90%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: S3422DWG (34\" Curved WQHD 144Hz VA 1800R HDR400)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-alienware-aw3423dwf",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Alienware Gaming",
+      "modelName": "Alienware AW3423DWF (34\" QD-OLED 165Hz Curved 0.1ms)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/alienware-34-curved-qd-oled-gaming-monitor-aw3423dwf/apd/210-bfrp/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-alienware-aw3423dwf.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "alienware aw3423dwf (34\" qd-oled 165hz curved 0.1ms)",
+        "panelType": "QD-OLED",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 99.3%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: Alienware AW3423DWF (34\" QD-OLED 165Hz Curved 0.1ms)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-alienware-aw3225qf",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Alienware Gaming",
+      "modelName": "Alienware AW3225QF (32\" 4K QD-OLED 240Hz Curved Dolby Vision)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/alienware-32-4k-qd-oled-gaming-monitor-aw3225qf/apd/210-bllv/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-alienware-aw3225qf.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "alienware aw3225qf (32\" 4k qd-oled 240hz curved dolby vision)",
+        "panelType": "QD-OLED",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: Alienware AW3225QF (32\" 4K QD-OLED 240Hz Curved Dolby Vision)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-alienware-aw2725df",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Alienware Gaming",
+      "modelName": "Alienware AW2725DF (27\" 1440p QD-OLED 360Hz 0.03ms)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/alienware-27-360hz-qd-oled-gaming-monitor-aw2725df/apd/210-blkg/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-alienware-aw2725df.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "alienware aw2725df (27\" 1440p qd-oled 360hz 0.03ms)",
+        "panelType": "QD-OLED",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 360,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 99.3%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: Alienware AW2725DF (27\" 1440p QD-OLED 360Hz 0.03ms)",
+      "status": "staged"
+    },
+    {
+      "id": "dell-g2724d",
+      "canonicalBrand": "Dell",
+      "displayBrand": "Dell",
+      "productLine": "Dell Gaming",
+      "modelName": "Dell G2724D (27\" 1440p Fast IPS 165Hz FreeSync Premium)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dell.com/en-us/shop/dell-27-gaming-monitor-g2724d/apd/210-bhxc/monitors-monitor-accessories"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dell.com/images/products/dell-g2724d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dell",
+        "modelName": "dell g2724d (27\" 1440p fast ips 165hz freesync premium)",
+        "panelType": "Fast IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dell verified monitors model: Dell G2724D (27\" 1440p Fast IPS 165Hz FreeSync Premium)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-ultrafine-27md5kl",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "UltraFine",
+      "modelName": "UltraFine 27MD5KL (27\" 5K IPS Thunderbolt 3 94W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-27md5kl-b-5k-uhd-led-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-ultrafine-27md5kl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "ultrafine 27md5kl (27\" 5k ips thunderbolt 3 94w)",
+        "panelType": "IPS",
+        "resolution": "5120x2880 (5K)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 94,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: UltraFine 27MD5KL (27\" 5K IPS Thunderbolt 3 94W)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-ultrafine-32un880-b-ergo",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "UltraFine Ergo",
+      "modelName": "UltraFine 32UN880-B Ergo (32\" 4K IPS USB-C 60W Ergo Arm)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-32un880-b-4k-uhd-led-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-ultrafine-32un880-b-ergo.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "ultrafine 32un880-b ergo (32\" 4k ips usb-c 60w ergo arm)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 60,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: UltraFine 32UN880-B Ergo (32\" 4K IPS USB-C 60W Ergo Arm)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-ultragear-27gs95qe",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "UltraGear OLED",
+      "modelName": "UltraGear 27GS95QE (27\" OLED 240Hz 0.03ms QHD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-27gs95qe-b-gaming-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-ultragear-27gs95qe.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "ultragear 27gs95qe (27\" oled 240hz 0.03ms qhd)",
+        "panelType": "OLED",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 98.5%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: UltraGear 27GS95QE (27\" OLED 240Hz 0.03ms QHD)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-ultragear-32gs95ue",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "UltraGear OLED",
+      "modelName": "UltraGear 32GS95UE (32\" 4K OLED Dual-Hz 480Hz/240Hz)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-32gs95ue-b-gaming-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-ultragear-32gs95ue.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "ultragear 32gs95ue (32\" 4k oled dual-hz 480hz/240hz)",
+        "panelType": "OLED",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 98.5%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: UltraGear 32GS95UE (32\" 4K OLED Dual-Hz 480Hz/240Hz)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-ultragear-34gs95qe",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "UltraGear OLED",
+      "modelName": "UltraGear 34GS95QE (34\" Curved 800R OLED 240Hz UWQHD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-34gs95qe-b-gaming-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-ultragear-34gs95qe.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "ultragear 34gs95qe (34\" curved 800r oled 240hz uwqhd)",
+        "panelType": "Curved OLED",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 98.5%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: UltraGear 34GS95QE (34\" Curved 800R OLED 240Hz UWQHD)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-ultragear-27gp850-b",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "UltraGear Nano IPS",
+      "modelName": "UltraGear 27GP850-B (27\" Nano IPS 180Hz 1ms QHD)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-27gp850-b-gaming-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-ultragear-27gp850-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "ultragear 27gp850-b (27\" nano ips 180hz 1ms qhd)",
+        "panelType": "Nano IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 180,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: UltraGear 27GP850-B (27\" Nano IPS 180Hz 1ms QHD)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-dualup-28mq780-b",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "DualUp Ergo",
+      "modelName": "DualUp 28MQ780-B (28\" 16:18 SDQHD Ergo USB-C 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-28mq780-b-dualup-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-dualup-28mq780-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "dualup 28mq780-b (28\" 16:18 sdqhd ergo usb-c 90w)",
+        "panelType": "Nano IPS",
+        "resolution": "2560x2880 (SDQHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: DualUp 28MQ780-B (28\" 16:18 SDQHD Ergo USB-C 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-myview-smart-32sr83u",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "MyView Smart Monitor",
+      "modelName": "MyView Smart Monitor 32SR83U (32\" 4K IPS webOS USB-C 65W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-32sr83u-w-smart-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-myview-smart-32sr83u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "myview smart monitor 32sr83u (32\" 4k ips webos usb-c 65w)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 65,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: MyView Smart Monitor 32SR83U (32\" 4K IPS webOS USB-C 65W)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-27uk500-b",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "4K UHD Series",
+      "modelName": "27UK500-B (27\" 4K UHD IPS HDR10 AMD FreeSync)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-27uk500-b-4k-uhd-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-27uk500-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "27uk500-b (27\" 4k uhd ips hdr10 amd freesync)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: 27UK500-B (27\" 4K UHD IPS HDR10 AMD FreeSync)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-34wp65c-b",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "UltraWide Curved",
+      "modelName": "34WP65C-B (34\" Curved UWQHD 160Hz VA sRGB 99%)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-34wp65c-b-ultrawide-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-34wp65c-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "34wp65c-b (34\" curved uwqhd 160hz va srgb 99%)",
+        "panelType": "VA Curved",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 160,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: 34WP65C-B (34\" Curved UWQHD 160Hz VA sRGB 99%)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-24mp400-b",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "Everyday Essential",
+      "modelName": "24MP400-B (24\" 1080p IPS FreeSync 75Hz)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-24mp400-b-led-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-24mp400-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "24mp400-b (24\" 1080p ips freesync 75hz)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "NTSC 72%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: 24MP400-B (24\" 1080p IPS FreeSync 75Hz)",
+      "status": "staged"
+    },
+    {
+      "id": "lg-ultrawide-38wn95c-w",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "UltraWide Thunderbolt",
+      "modelName": "UltraWide 38WN95C-W (38\" Curved Nano IPS Thunderbolt 3 94W 144Hz)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/monitors/lg-38wn95c-w-ultrawide-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-ultrawide-38wn95c-w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "ultrawide 38wn95c-w (38\" curved nano ips thunderbolt 3 94w 144hz)",
+        "panelType": "Nano IPS Curved",
+        "resolution": "3840x1600 (WQHD+)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 94,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified monitors model: UltraWide 38WN95C-W (38\" Curved Nano IPS Thunderbolt 3 94W 144Hz)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-viewfinity-s9-s90pc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "ViewFinity S9",
+      "modelName": "ViewFinity S9 S90PC (27\" 5K IPS Matte Thunderbolt 4 90W 4K Cam)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/5k/27-viewfinity-s9-5k-ips-smart-monitor-ls27c900panxgo/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-viewfinity-s9-s90pc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "viewfinity s9 s90pc (27\" 5k ips matte thunderbolt 4 90w 4k cam)",
+        "panelType": "IPS Matte",
+        "resolution": "5120x2880 (5K)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: ViewFinity S9 S90PC (27\" 5K IPS Matte Thunderbolt 4 90W 4K Cam)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-viewfinity-s8-s80pb",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "ViewFinity S8",
+      "modelName": "ViewFinity S8 S80PB (27\" 4K UHD IPS Matte USB-C 90W LAN)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/uhd-and-wqhd/27-viewfinity-s80pb-uhd-monitor-ls27b800panxgo/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-viewfinity-s8-s80pb.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "viewfinity s8 s80pb (27\" 4k uhd ips matte usb-c 90w lan)",
+        "panelType": "IPS Matte",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: ViewFinity S8 S80PB (27\" 4K UHD IPS Matte USB-C 90W LAN)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-smart-monitor-m8-m80d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Smart Monitor M8",
+      "modelName": "Smart Monitor M8 M80D (32\" 4K UHD SlimFit Cam USB-C 65W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/smart-monitors/32-m80d-smart-monitor-ls32dm801unxgo/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-smart-monitor-m8-m80d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "smart monitor m8 m80d (32\" 4k uhd slimfit cam usb-c 65w)",
+        "panelType": "VA",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 65,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Smart Monitor M8 M80D (32\" 4K UHD SlimFit Cam USB-C 65W)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-smart-monitor-m7-m70d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Smart Monitor M7",
+      "modelName": "Smart Monitor M7 M70D (32\" 4K UHD Tizen OS USB-C 65W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/smart-monitors/32-m70d-smart-monitor-ls32dm700unxgo/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-smart-monitor-m7-m70d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "smart monitor m7 m70d (32\" 4k uhd tizen os usb-c 65w)",
+        "panelType": "VA",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 65,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Smart Monitor M7 M70D (32\" 4K UHD Tizen OS USB-C 65W)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-odyssey-oled-g9-g95sc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Odyssey OLED G9",
+      "modelName": "Odyssey OLED G9 G95SC (49\" Curved Dual QHD 240Hz 0.03ms)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/gaming/49-odyssey-oled-g9-g95sc-dqhd-neo-quantum-processor-pro-ls49cg954snxza/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-odyssey-oled-g9-g95sc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "odyssey oled g9 g95sc (49\" curved dual qhd 240hz 0.03ms)",
+        "panelType": "QD-OLED Curved",
+        "resolution": "5120x1440 (Dual QHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 65,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Odyssey OLED G9 G95SC (49\" Curved Dual QHD 240Hz 0.03ms)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-odyssey-oled-g8-g80sd",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Odyssey OLED G8",
+      "modelName": "Odyssey OLED G8 G80SD (32\" 4K UHD OLED 240Hz 0.03ms NQ8 AI)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/gaming/32-odyssey-oled-g8-g80sd-4k-uhd-240hz-0-03ms-smart-gaming-monitor-ls32dg802snxza/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-odyssey-oled-g8-g80sd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "odyssey oled g8 g80sd (32\" 4k uhd oled 240hz 0.03ms nq8 ai)",
+        "panelType": "QD-OLED",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 65,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Odyssey OLED G8 G80SD (32\" 4K UHD OLED 240Hz 0.03ms NQ8 AI)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-odyssey-oled-g6-g60sd",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Odyssey OLED G6",
+      "modelName": "Odyssey OLED G6 G60SD (27\" 1440p OLED 360Hz 0.03ms)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/gaming/27-odyssey-oled-g6-g60sd-qhd-360hz-0-03ms-gaming-monitor-ls27dg602snxza/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-odyssey-oled-g6-g60sd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "odyssey oled g6 g60sd (27\" 1440p oled 360hz 0.03ms)",
+        "panelType": "QD-OLED",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 360,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Odyssey OLED G6 G60SD (27\" 1440p OLED 360Hz 0.03ms)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-odyssey-neo-g9-g95nc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Odyssey Neo G9",
+      "modelName": "Odyssey Neo G9 G95NC (57\" Dual 4K UHD Mini-LED 240Hz 1000R)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/gaming/57-odyssey-neo-g9-dual-4k-uhd-quantum-mini-led-240hz-1ms-hdr-1000-curved-gaming-monitor-ls57cg952nnxza/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-odyssey-neo-g9-g95nc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "odyssey neo g9 g95nc (57\" dual 4k uhd mini-led 240hz 1000r)",
+        "panelType": "Mini-LED Curved",
+        "resolution": "7680x2160 (Dual 4K)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Odyssey Neo G9 G95NC (57\" Dual 4K UHD Mini-LED 240Hz 1000R)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-odyssey-g5-g55c",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Odyssey G5",
+      "modelName": "Odyssey G5 G55C (32\" Curved QHD 165Hz 1ms VA 1000R)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/gaming/32-odyssey-g55c-qhd-165hz-1ms-mprt-curved-gaming-monitor-ls32cg552enxza/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-odyssey-g5-g55c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "odyssey g5 g55c (32\" curved qhd 165hz 1ms va 1000r)",
+        "panelType": "VA Curved",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "NTSC 72%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Odyssey G5 G55C (32\" Curved QHD 165Hz 1ms VA 1000R)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-viewfinity-s6-s65uc",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "ViewFinity S6",
+      "modelName": "ViewFinity S6 S65UC (34\" Ultra-WQHD Curved USB-C 90W LAN)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/uhd-and-wqhd/34-viewfinity-s65uc-ultra-wqhd-curved-monitor-ls34c652uanxgo/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-viewfinity-s6-s65uc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "viewfinity s6 s65uc (34\" ultra-wqhd curved usb-c 90w lan)",
+        "panelType": "VA Curved",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 100,
+        "usbCPowertWatts": 90,
+        "colorGamut": "sRGB 100%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: ViewFinity S6 S65UC (34\" Ultra-WQHD Curved USB-C 90W LAN)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-odyssey-g7-g70b",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Odyssey G7",
+      "modelName": "Odyssey G7 G70B (28\" 4K UHD IPS 144Hz 1ms Gaming Hub)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/gaming/28-odyssey-g70b-4k-uhd-ips-144hz-1ms-smart-gaming-monitor-ls28bg700enxza/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-odyssey-g7-g70b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "odyssey g7 g70b (28\" 4k uhd ips 144hz 1ms gaming hub)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 90%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Odyssey G7 G70B (28\" 4K UHD IPS 144Hz 1ms Gaming Hub)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-essential-monitor-s3-s31c",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Essential Series",
+      "modelName": "Essential Monitor S3 S31C (24\" 1080p IPS 75Hz Eye Saver)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/monitors/flat/24-essential-monitor-s30c-ls24c310eanxgo/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-essential-monitor-s3-s31c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "essential monitor s3 s31c (24\" 1080p ips 75hz eye saver)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "NTSC 72%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified monitors model: Essential Monitor S3 S31C (24\" 1080p IPS 75Hz Eye Saver)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-proart-pa279crv",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ProArt Professional",
+      "modelName": "ProArt PA279CRV (27\" 4K UHD IPS USB-C 96W DCI-P3 99%)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/displays-desktops/monitors/proart/proart-display-pa279crv/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-proart-pa279crv.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "proart pa279crv (27\" 4k uhd ips usb-c 96w dci-p3 99%)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 96,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ProArt PA279CRV (27\" 4K UHD IPS USB-C 96W DCI-P3 99%)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-proart-pa329crv",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ProArt Professional",
+      "modelName": "ProArt PA329CRV (32\" 4K UHD IPS USB-C 96W HDR400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/displays-desktops/monitors/proart/proart-display-pa329crv/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-proart-pa329crv.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "proart pa329crv (32\" 4k uhd ips usb-c 96w hdr400)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 96,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ProArt PA329CRV (32\" 4K UHD IPS USB-C 96W HDR400)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-proart-pa348cgv",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ProArt Ultrawide",
+      "modelName": "ProArt PA348CGV (34\" UWQHD 120Hz IPS USB-C 90W FreeSync)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/displays-desktops/monitors/proart/proart-display-pa348cgv/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-proart-pa348cgv.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "proart pa348cgv (34\" uwqhd 120hz ips usb-c 90w freesync)",
+        "panelType": "IPS",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 120,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ProArt PA348CGV (34\" UWQHD 120Hz IPS USB-C 90W FreeSync)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-swift-oled-pg32ucdm",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG Swift OLED",
+      "modelName": "ROG Swift OLED PG32UCDM (32\" 4K QD-OLED 240Hz Type-C 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/monitors/32-to-34-inches/rog-swift-oled-pg32ucdm/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://rog.asus.com/images/products/asus-rog-swift-oled-pg32ucdm.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog swift oled pg32ucdm (32\" 4k qd-oled 240hz type-c 90w)",
+        "panelType": "QD-OLED",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ROG Swift OLED PG32UCDM (32\" 4K QD-OLED 240Hz Type-C 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-swift-oled-pg27aqdm",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG Swift OLED",
+      "modelName": "ROG Swift OLED PG27AQDM (27\" 1440p OLED 240Hz 0.03ms)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/monitors/27-to-31-5-inches/rog-swift-oled-pg27aqdm/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://rog.asus.com/images/products/asus-rog-swift-oled-pg27aqdm.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog swift oled pg27aqdm (27\" 1440p oled 240hz 0.03ms)",
+        "panelType": "OLED",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ROG Swift OLED PG27AQDM (27\" 1440p OLED 240Hz 0.03ms)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-swift-pg27aqn",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG Swift Esports",
+      "modelName": "ROG Swift PG27AQN (27\" 1440p Fast IPS 360Hz G-SYNC)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/monitors/27-to-31-5-inches/rog-swift-360hz-pg27aqn/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://rog.asus.com/images/products/asus-rog-swift-pg27aqn.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog swift pg27aqn (27\" 1440p fast ips 360hz g-sync)",
+        "panelType": "Fast IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 360,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ROG Swift PG27AQN (27\" 1440p Fast IPS 360Hz G-SYNC)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-strix-xg27acs",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG Strix Gaming",
+      "modelName": "ROG Strix XG27ACS (27\" 1440p Fast IPS 180Hz USB-C Phone Stand)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://rog.asus.com/monitors/27-to-31-5-inches/rog-strix-xg27acs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://rog.asus.com/images/products/asus-rog-strix-xg27acs.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog strix xg27acs (27\" 1440p fast ips 180hz usb-c phone stand)",
+        "panelType": "Fast IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 180,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 97%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ROG Strix XG27ACS (27\" 1440p Fast IPS 180Hz USB-C Phone Stand)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-tuf-gaming-vg27aq3a",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "TUF Gaming",
+      "modelName": "TUF Gaming VG27AQ3A (27\" 1440p Fast IPS 180Hz ELMB Sync)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg27aq3a/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-tuf-gaming-vg27aq3a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "tuf gaming vg27aq3a (27\" 1440p fast ips 180hz elmb sync)",
+        "panelType": "Fast IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 180,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 130%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: TUF Gaming VG27AQ3A (27\" 1440p Fast IPS 180Hz ELMB Sync)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-tuf-gaming-vg249q1r",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "TUF Gaming",
+      "modelName": "TUF Gaming VG249Q1R (24\" 1080p IPS 165Hz FreeSync Premium)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg249q1r/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-tuf-gaming-vg249q1r.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "tuf gaming vg249q1r (24\" 1080p ips 165hz freesync premium)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 100%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: TUF Gaming VG249Q1R (24\" 1080p IPS 165Hz FreeSync Premium)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-zenscreen-mb16ahv",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ZenScreen Portable",
+      "modelName": "ZenScreen MB16AHV Portable (15.6\" 1080p IPS USB-C Kickstand)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/displays-desktops/monitors/zenscreen/zenscreen-mb16ahv/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-zenscreen-mb16ahv.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "zenscreen mb16ahv portable (15.6\" 1080p ips usb-c kickstand)",
+        "panelType": "IPS Portable",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 100%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ZenScreen MB16AHV Portable (15.6\" 1080p IPS USB-C Kickstand)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-proart-pa169cdv-pen",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ProArt Pen Display",
+      "modelName": "ProArt PA169CDV Pen Display (15.6\" 4K IPS Wacom EMR Dual Dial)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/displays-desktops/monitors/proart/proart-display-pa169cdv/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-proart-pa169cdv-pen.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "proart pa169cdv pen display (15.6\" 4k ips wacom emr dual dial)",
+        "panelType": "IPS Touch/Pen",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 100%",
+        "vesaMountable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: ProArt PA169CDV Pen Display (15.6\" 4K IPS Wacom EMR Dual Dial)",
+      "status": "staged"
+    },
+    {
+      "id": "asus-eye-care-va24ehe",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "Eye Care Everyday",
+      "modelName": "Eye Care VA24EHE (24\" 1080p IPS 75Hz Frameless)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asus.com/displays-desktops/monitors/eye-care/va24ehe/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.asus.com/images/products/asus-eye-care-va24ehe.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "eye care va24ehe (24\" 1080p ips 75hz frameless)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS verified monitors model: Eye Care VA24EHE (24\" 1080p IPS 75Hz Frameless)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-designvue-pd2706u",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ",
+      "productLine": "DesignVue Creator",
+      "modelName": "DesignVue PD2706U (27\" 4K IPS USB-C 90W Calman Verified)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.benq.com/en-us/monitor/designer/pd2706u.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.benq.com/images/products/benq-designvue-pd2706u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "designvue pd2706u (27\" 4k ips usb-c 90w calman verified)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: DesignVue PD2706U (27\" 4K IPS USB-C 90W Calman Verified)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-designvue-pd3205u",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ",
+      "productLine": "DesignVue Creator",
+      "modelName": "DesignVue PD3205U (32\" 4K IPS USB-C 90W HDR10 Hotkey Puck)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.benq.com/en-us/monitor/designer/pd3205u.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.benq.com/images/products/benq-designvue-pd3205u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "designvue pd3205u (32\" 4k ips usb-c 90w hdr10 hotkey puck)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: DesignVue PD3205U (32\" 4K IPS USB-C 90W HDR10 Hotkey Puck)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-photovue-sw272u",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ",
+      "productLine": "PhotoVue Color Management",
+      "modelName": "PhotoVue SW272U (27\" 4K AdobeRGB 99% Hardware Calibration USB-C 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.benq.com/en-us/monitor/photographer/sw272u.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.benq.com/images/products/benq-photovue-sw272u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "photovue sw272u (27\" 4k adobergb 99% hardware calibration usb-c 90w)",
+        "panelType": "Fine-Coating IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "AdobeRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: PhotoVue SW272U (27\" 4K AdobeRGB 99% Hardware Calibration USB-C 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-mobiuz-ex2710q",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ",
+      "productLine": "MOBIUZ Gaming",
+      "modelName": "MOBIUZ EX2710Q (27\" 1440p IPS 165Hz treVolo 2.1ch Audio)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.benq.com/en-us/monitor/gaming/ex2710q.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.benq.com/images/products/benq-mobiuz-ex2710q.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "mobiuz ex2710q (27\" 1440p ips 165hz trevolo 2.1ch audio)",
+        "panelType": "IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: MOBIUZ EX2710Q (27\" 1440p IPS 165Hz treVolo 2.1ch Audio)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-mobiuz-ex3210u",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ",
+      "productLine": "MOBIUZ Gaming",
+      "modelName": "MOBIUZ EX3210U (32\" 4K IPS 144Hz HDMI 2.1 Remote Control)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.benq.com/en-us/monitor/gaming/ex3210u.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.benq.com/images/products/benq-mobiuz-ex3210u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "mobiuz ex3210u (32\" 4k ips 144hz hdmi 2.1 remote control)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 0,
+        "colorGamut": "AdobeRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: MOBIUZ EX3210U (32\" 4K IPS 144Hz HDMI 2.1 Remote Control)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-zowie-xl2546k",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ ZOWIE",
+      "productLine": "ZOWIE Esports",
+      "modelName": "ZOWIE XL2546K (24.5\" 240Hz Fast TN DyAc+ Esports)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://zowie.benq.com/en-us/monitor/xl2546k.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://zowie.benq.com/images/products/benq-zowie-xl2546k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "zowie xl2546k (24.5\" 240hz fast tn dyac+ esports)",
+        "panelType": "Fast TN",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: ZOWIE XL2546K (24.5\" 240Hz Fast TN DyAc+ Esports)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-zowie-xl2566k",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ ZOWIE",
+      "productLine": "ZOWIE Esports",
+      "modelName": "ZOWIE XL2566K (24.5\" 360Hz Fast TN DyAc+ Esports Flagship)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://zowie.benq.com/en-us/monitor/xl2566k.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://zowie.benq.com/images/products/benq-zowie-xl2566k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "zowie xl2566k (24.5\" 360hz fast tn dyac+ esports flagship)",
+        "panelType": "Fast TN",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 360,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: ZOWIE XL2566K (24.5\" 360Hz Fast TN DyAc+ Esports Flagship)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-gw2790qt",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ",
+      "productLine": "Eye-Care Coding",
+      "modelName": "GW2790QT (27\" 1440p IPS Eye-Care USB-C 65W Daisy Chain)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.benq.com/en-us/monitor/home/gw2790qt.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.benq.com/images/products/benq-gw2790qt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "gw2790qt (27\" 1440p ips eye-care usb-c 65w daisy chain)",
+        "panelType": "IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 65,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: GW2790QT (27\" 1440p IPS Eye-Care USB-C 65W Daisy Chain)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-gw2480",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ",
+      "productLine": "Eye-Care Everyday",
+      "modelName": "GW2480 (24\" 1080p IPS Brightness Intelligence Sensor)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.benq.com/en-us/monitor/home/gw2480.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.benq.com/images/products/benq-gw2480.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "gw2480 (24\" 1080p ips brightness intelligence sensor)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 0,
+        "colorGamut": "NTSC 72%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: GW2480 (24\" 1080p IPS Brightness Intelligence Sensor)",
+      "status": "staged"
+    },
+    {
+      "id": "benq-rd280u-programmer",
+      "canonicalBrand": "BenQ",
+      "displayBrand": "BenQ",
+      "productLine": "RD Programming Series",
+      "modelName": "RD280U Programmer Monitor (28.2\" 3:2 4K+ Fine-Coated USB-C 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.benq.com/en-us/monitor/programmer/rd280u.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.benq.com/images/products/benq-rd280u-programmer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "benq",
+        "modelName": "rd280u programmer monitor (28.2\" 3:2 4k+ fine-coated usb-c 90w)",
+        "panelType": "Fine-Coated IPS",
+        "resolution": "3840x2560 (4K+ 3:2)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "BenQ verified monitors model: RD280U Programmer Monitor (28.2\" 3:2 4K+ Fine-Coated USB-C 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-mpg-321urx-qd-oled",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "MPG Gaming",
+      "modelName": "MPG 321URX QD-OLED (32\" 4K QD-OLED 240Hz Type-C 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Monitor/MPG-321URX-QD-OLED"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-mpg-321urx-qd-oled.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "mpg 321urx qd-oled (32\" 4k qd-oled 240hz type-c 90w)",
+        "panelType": "QD-OLED",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: MPG 321URX QD-OLED (32\" 4K QD-OLED 240Hz Type-C 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-mag-271qpx-qd-oled",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "MAG Gaming",
+      "modelName": "MAG 271QPX QD-OLED (27\" 1440p QD-OLED 360Hz 0.03ms Type-C 15W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Monitor/MAG-271QPX-QD-OLED"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-mag-271qpx-qd-oled.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "mag 271qpx qd-oled (27\" 1440p qd-oled 360hz 0.03ms type-c 15w)",
+        "panelType": "QD-OLED",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 360,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: MAG 271QPX QD-OLED (27\" 1440p QD-OLED 360Hz 0.03ms Type-C 15W)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-optix-mag274qrf-qd",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "Optix MAG",
+      "modelName": "Optix MAG274QRF-QD (27\" 1440p Rapid IPS Quantum Dot 165Hz)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Monitor/Optix-MAG274QRF-QD"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-optix-mag274qrf-qd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "optix mag274qrf-qd (27\" 1440p rapid ips quantum dot 165hz)",
+        "panelType": "Rapid IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 97%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: Optix MAG274QRF-QD (27\" 1440p Rapid IPS Quantum Dot 165Hz)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-g274qpf-qd",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "G-Series Gaming",
+      "modelName": "G274QPF-QD (27\" 1440p Rapid IPS 170Hz Type-C 15W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Monitor/G274QPF-QD"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-g274qpf-qd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "g274qpf-qd (27\" 1440p rapid ips 170hz type-c 15w)",
+        "panelType": "Rapid IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 170,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 93%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: G274QPF-QD (27\" 1440p Rapid IPS 170Hz Type-C 15W)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-modern-md272upsw",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "Modern Business",
+      "modelName": "Modern MD272UPSW (27\" 4K IPS Type-C 65W KVM White)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Business-Productivity-Monitor/Modern-MD272UPSW"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-modern-md272upsw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "modern md272upsw (27\" 4k ips type-c 65w kvm white)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 65,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: Modern MD272UPSW (27\" 4K IPS Type-C 65W KVM White)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-modern-md2412p",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "Modern Business",
+      "modelName": "Modern MD2412P (24\" 1080p IPS 100Hz Type-C 15W EyesErgo)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Business-Productivity-Monitor/Modern-MD2412P"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-modern-md2412p.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "modern md2412p (24\" 1080p ips 100hz type-c 15w eyesergo)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 100,
+        "usbCPowertWatts": 15,
+        "colorGamut": "sRGB 114%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: Modern MD2412P (24\" 1080p IPS 100Hz Type-C 15W EyesErgo)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-pro-mp273a",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "PRO Commercial",
+      "modelName": "PRO MP273A (27\" 1080p IPS 100Hz Speakers DisplayKit)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Business-Productivity-Monitor/PRO-MP273A"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-pro-mp273a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "pro mp273a (27\" 1080p ips 100hz speakers displaykit)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 100,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 106%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: PRO MP273A (27\" 1080p IPS 100Hz Speakers DisplayKit)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-mag-341cqp-qd-oled",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "MAG Ultrawide",
+      "modelName": "MAG 341CQP QD-OLED (34\" Curved UWQHD 175Hz 0.03ms Type-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Monitor/MAG-341CQP-QD-OLED"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-mag-341cqp-qd-oled.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "mag 341cqp qd-oled (34\" curved uwqhd 175hz 0.03ms type-c)",
+        "panelType": "QD-OLED Curved",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 175,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: MAG 341CQP QD-OLED (34\" Curved UWQHD 175Hz 0.03ms Type-C)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-g321cu-curved-4k",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "G-Series Curved",
+      "modelName": "G321CU (31.5\" 4K UHD Curved 144Hz 1ms VA 1500R Type-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Monitor/G321CU"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-g321cu-curved-4k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "g321cu (31.5\" 4k uhd curved 144hz 1ms va 1500r type-c)",
+        "panelType": "VA Curved",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 15,
+        "colorGamut": "sRGB 114%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: G321CU (31.5\" 4K UHD Curved 144Hz 1ms VA 1500R Type-C)",
+      "status": "staged"
+    },
+    {
+      "id": "msi-summit-ms321up",
+      "canonicalBrand": "MSI",
+      "displayBrand": "MSI",
+      "productLine": "Summit Creator",
+      "modelName": "Summit MS321UP (32\" 4K UHD IPS Creator Monitor Type-C 65W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.msi.com/Business-Productivity-Monitor/Summit-MS321UP"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.msi.com/images/products/msi-summit-ms321up.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "msi",
+        "modelName": "summit ms321up (32\" 4k uhd ips creator monitor type-c 65w)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 65,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "MSI verified monitors model: Summit MS321UP (32\" 4K UHD IPS Creator Monitor Type-C 65W)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-predator-x34-v",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "Predator Gaming",
+      "modelName": "Predator X34 V (34\" UWQHD OLED 175Hz Curved 1800R Type-C 65W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/predator/monitors/x34-v"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-predator-x34-v.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "predator x34 v (34\" uwqhd oled 175hz curved 1800r type-c 65w)",
+        "panelType": "OLED Curved",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 175,
+        "usbCPowertWatts": 65,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: Predator X34 V (34\" UWQHD OLED 175Hz Curved 1800R Type-C 65W)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-predator-xb273u-v3",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "Predator Gaming",
+      "modelName": "Predator XB273U V3 (27\" 1440p Fast IPS 180Hz 0.5ms HDR400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/predator/monitors/xb3/pdp/UM.HX3AA.302"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-predator-xb273u-v3.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "predator xb273u v3 (27\" 1440p fast ips 180hz 0.5ms hdr400)",
+        "panelType": "Fast IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 180,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: Predator XB273U V3 (27\" 1440p Fast IPS 180Hz 0.5ms HDR400)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-nitro-vg271u-m3",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "Nitro Gaming",
+      "modelName": "Nitro VG271U M3 (27\" 1440p IPS 180Hz FreeSync Premium)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/monitors/gaming/nitro-vg1/pdp/UM.HV1AA.301"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-nitro-vg271u-m3.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "nitro vg271u m3 (27\" 1440p ips 180hz freesync premium)",
+        "panelType": "IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 180,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: Nitro VG271U M3 (27\" 1440p IPS 180Hz FreeSync Premium)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-nitro-xv272u-vbmiiprx",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "Nitro Gaming",
+      "modelName": "Nitro XV272U Vbmiiprx (27\" 1440p Agile-Splendor IPS 170Hz)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/monitors/gaming/nitro-xv2/pdp/UM.HX2AA.V02"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-nitro-xv272u-vbmiiprx.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "nitro xv272u vbmiiprx (27\" 1440p agile-splendor ips 170hz)",
+        "panelType": "Agile-Splendor IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 170,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: Nitro XV272U Vbmiiprx (27\" 1440p Agile-Splendor IPS 170Hz)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-nitro-kg241y",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "Nitro Gaming",
+      "modelName": "Nitro KG241Y (23.8\" 1080p VA 165Hz 1ms FreeSync Premium)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/monitors/gaming/nitro-kg1/pdp/UM.QX1AA.S01"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-nitro-kg241y.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "nitro kg241y (23.8\" 1080p va 165hz 1ms freesync premium)",
+        "panelType": "VA",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: Nitro KG241Y (23.8\" 1080p VA 165Hz 1ms FreeSync Premium)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-predator-x32-fp",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "Predator Mini-LED",
+      "modelName": "Predator X32 FP (32\" 4K Mini-LED 160Hz HDMI 2.1 Type-C 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/predator/monitors/x32-fp"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-predator-x32-fp.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "predator x32 fp (32\" 4k mini-led 160hz hdmi 2.1 type-c 90w)",
+        "panelType": "Mini-LED IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 160,
+        "usbCPowertWatts": 90,
+        "colorGamut": "AdobeRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: Predator X32 FP (32\" 4K Mini-LED 160Hz HDMI 2.1 Type-C 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-cb272u",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "CB2 Commercial",
+      "modelName": "CB272U (27\" 1440p IPS ZeroFrame Ergonomic Stand)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/monitors/business/cb2/pdp/UM.HB2AA.001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-cb272u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "cb272u (27\" 1440p ips zeroframe ergonomic stand)",
+        "panelType": "IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: CB272U (27\" 1440p IPS ZeroFrame Ergonomic Stand)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-vero-br277",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "Vero Eco-Friendly",
+      "modelName": "Vero BR277 (27\" 1080p IPS Post-Consumer Recycled Plastic)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/monitors/business/vero-b7/pdp/UM.HB7AA.003"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-vero-br277.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "vero br277 (27\" 1080p ips post-consumer recycled plastic)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: Vero BR277 (27\" 1080p IPS Post-Consumer Recycled Plastic)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-sa240y",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "SA0 Ultra-Thin",
+      "modelName": "SA240Y (23.8\" Ultra-Thin 1080p IPS 75Hz FreeSync)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/monitors/everyday/sa0/pdp/UM.QS0AA.A01"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-sa240y.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "sa240y (23.8\" ultra-thin 1080p ips 75hz freesync)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "NTSC 72%",
+        "vesaMountable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: SA240Y (23.8\" Ultra-Thin 1080p IPS 75Hz FreeSync)",
+      "status": "staged"
+    },
+    {
+      "id": "acer-predator-bifrost-x27u",
+      "canonicalBrand": "Acer",
+      "displayBrand": "Acer",
+      "productLine": "Predator OLED",
+      "modelName": "Predator BiFrost X27U (27\" 1440p OLED 240Hz Type-C 90W KVM)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.acer.com/us-en/predator/monitors/x27u"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.acer.com/images/products/acer-predator-bifrost-x27u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "acer",
+        "modelName": "predator bifrost x27u (27\" 1440p oled 240hz type-c 90w kvm)",
+        "panelType": "OLED",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Acer verified monitors model: Predator BiFrost X27U (27\" 1440p OLED 240Hz Type-C 90W KVM)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-agon-pro-ag276qzd",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "AGON PRO OLED",
+      "modelName": "AGON PRO AG276QZD (27\" OLED 240Hz 0.03ms QHD Light FX)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/gaming/products/monitors/ag276qzd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-agon-pro-ag276qzd.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "agon pro ag276qzd (27\" oled 240hz 0.03ms qhd light fx)",
+        "panelType": "OLED",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 98.5%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: AGON PRO AG276QZD (27\" OLED 240Hz 0.03ms QHD Light FX)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-agon-ag275qzn",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "AGON Gaming",
+      "modelName": "AGON AG275QZN (27\" 1440p Fast VA 240Hz 1ms HDR400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/gaming/products/monitors/ag275qzn-eu"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-agon-ag275qzn.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "agon ag275qzn (27\" 1440p fast va 240hz 1ms hdr400)",
+        "panelType": "Fast VA",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 100%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: AGON AG275QZN (27\" 1440p Fast VA 240Hz 1ms HDR400)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-gaming-24g2sp",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "AOC Gaming G2",
+      "modelName": "Gaming 24G2SP (23.8\" 1080p IPS 165Hz Height Adjustable)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/gaming/products/monitors/24g2sp-bk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-gaming-24g2sp.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "gaming 24g2sp (23.8\" 1080p ips 165hz height adjustable)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 126%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: Gaming 24G2SP (23.8\" 1080p IPS 165Hz Height Adjustable)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-gaming-27g2sp",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "AOC Gaming G2",
+      "modelName": "Gaming 27G2SP (27\" 1080p IPS 165Hz FreeSync Premium)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/gaming/products/monitors/27g2sp-bk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-gaming-27g2sp.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "gaming 27g2sp (27\" 1080p ips 165hz freesync premium)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 122%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: Gaming 27G2SP (27\" 1080p IPS 165Hz FreeSync Premium)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-q27g2s-eu",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "AOC Gaming G2",
+      "modelName": "Q27G2S/EU (27\" 1440p IPS 165Hz 1ms G-SYNC Compatible)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/gaming/products/monitors/q27g2s-eu"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-q27g2s-eu.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "q27g2s/eu (27\" 1440p ips 165hz 1ms g-sync compatible)",
+        "panelType": "IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 131%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: Q27G2S/EU (27\" 1440p IPS 165Hz 1ms G-SYNC Compatible)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-gaming-cq32g3su",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "AOC Gaming G3 Curved",
+      "modelName": "Gaming CQ32G3SU (31.5\" Curved QHD 165Hz 1000R VA Speakers)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/gaming/products/monitors/cq32g3su-bk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-gaming-cq32g3su.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "gaming cq32g3su (31.5\" curved qhd 165hz 1000r va speakers)",
+        "panelType": "VA Curved",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 120%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: Gaming CQ32G3SU (31.5\" Curved QHD 165Hz 1000R VA Speakers)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-u27v4",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "V4 Everyday 4K",
+      "modelName": "AOC U27V4 (27\" 4K UHD IPS 60Hz 3-Sided Frameless)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/products/monitors/u27v4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-u27v4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "aoc u27v4 (27\" 4k uhd ips 60hz 3-sided frameless)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 60,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 112%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: AOC U27V4 (27\" 4K UHD IPS 60Hz 3-Sided Frameless)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-24v2q",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "V2 Ultra-Slim",
+      "modelName": "AOC 24V2Q (23.8\" Frameless 1080p IPS 75Hz FreeSync)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/products/monitors/24v2q"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-24v2q.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "aoc 24v2q (23.8\" frameless 1080p ips 75hz freesync)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "NTSC 72%",
+        "vesaMountable": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: AOC 24V2Q (23.8\" Frameless 1080p IPS 75Hz FreeSync)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-agon-ag344uxm",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "AGON Mini-LED",
+      "modelName": "AGON AG344UXM (34\" Mini-LED UWQHD 170Hz Type-C 90W KVM)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/gaming/products/monitors/ag344uxm"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-agon-ag344uxm.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "agon ag344uxm (34\" mini-led uwqhd 170hz type-c 90w kvm)",
+        "panelType": "Mini-LED IPS",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 170,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 97%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: AGON AG344UXM (34\" Mini-LED UWQHD 170Hz Type-C 90W KVM)",
+      "status": "staged"
+    },
+    {
+      "id": "aoc-27b2h",
+      "canonicalBrand": "AOC",
+      "displayBrand": "AOC",
+      "productLine": "B2 Series Value",
+      "modelName": "AOC 27B2H (27\" 1080p IPS 75Hz Low Blue Light)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aoc.com/en/products/monitors/27b2h"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://aoc.com/images/products/aoc-27b2h.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "aoc",
+        "modelName": "aoc 27b2h (27\" 1080p ips 75hz low blue light)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 100%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "AOC verified monitors model: AOC 27B2H (27\" 1080p IPS 75Hz Low Blue Light)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-evnia-34m2c8600",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Evnia 8000 OLED",
+      "modelName": "Evnia 34M2C8600 (34\" QD-OLED 175Hz Curved Ambiglow Type-C 90W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/34M2C8600_00/evnia-curved-gaming-monitor-qd-oled-gaming-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-evnia-34m2c8600.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "evnia 34m2c8600 (34\" qd-oled 175hz curved ambiglow type-c 90w)",
+        "panelType": "QD-OLED Curved",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 175,
+        "usbCPowertWatts": 90,
+        "colorGamut": "DCI-P3 99.3%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: Evnia 34M2C8600 (34\" QD-OLED 175Hz Curved Ambiglow Type-C 90W)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-evnia-27m2c5500w",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Evnia 5000 Curved",
+      "modelName": "Evnia 27M2C5500W (27\" Curved QHD 240Hz 1000R Fast VA)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/27M2C5500W_00/evnia-curved-gaming-monitor-quad-hd-gaming-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-evnia-27m2c5500w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "evnia 27m2c5500w (27\" curved qhd 240hz 1000r fast va)",
+        "panelType": "Fast VA Curved",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 119%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: Evnia 27M2C5500W (27\" Curved QHD 240Hz 1000R Fast VA)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-evnia-25m2n3200w",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Evnia 3000 Esports",
+      "modelName": "Evnia 25M2N3200W (24.5\" 1080p 240Hz 0.5ms Fast VA)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/25M2N3200W_00/evnia-gaming-monitor-full-hd-gaming-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-evnia-25m2n3200w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "evnia 25m2n3200w (24.5\" 1080p 240hz 0.5ms fast va)",
+        "panelType": "Fast VA",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 120%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: Evnia 25M2N3200W (24.5\" 1080p 240Hz 0.5ms Fast VA)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-27e1n5600ae",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "5000 Series Lifestyle",
+      "modelName": "27E1N5600AE (27\" 1440p IPS USB-C 65W Ergonomic Speakers)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/27E1N5600AE_00/qhd-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-27e1n5600ae.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "27e1n5600ae (27\" 1440p ips usb-c 65w ergonomic speakers)",
+        "panelType": "IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 65,
+        "colorGamut": "sRGB 114%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: 27E1N5600AE (27\" 1440p IPS USB-C 65W Ergonomic Speakers)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-346e2lae",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "UltraWide 5000",
+      "modelName": "346E2LAE (34\" UWQHD Curved 100Hz USB-C 65W VA Speakers)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/346E2LAE_00/curved-ultrawide-lcd-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-346e2lae.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "346e2lae (34\" uwqhd curved 100hz usb-c 65w va speakers)",
+        "panelType": "VA Curved",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 100,
+        "usbCPowertWatts": 65,
+        "colorGamut": "sRGB 121%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: 346E2LAE (34\" UWQHD Curved 100Hz USB-C 65W VA Speakers)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-241e1s",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "E-Line Everyday",
+      "modelName": "241E1S (23.8\" 1080p IPS 75Hz FreeSync LowBlue)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/241E1S_00/lcd-monitor"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-241e1s.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "241e1s (23.8\" 1080p ips 75hz freesync lowblue)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "NTSC 88%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: 241E1S (23.8\" 1080p IPS 75Hz FreeSync LowBlue)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-279m1rv",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Momentum Console Gaming",
+      "modelName": "279M1RV (27\" 4K Nano IPS 144Hz Designed for Xbox HDMI 2.1)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/279M1RV_00/momentum-4k-hdr-display-with-ambiglow"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-279m1rv.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "279m1rv (27\" 4k nano ips 144hz designed for xbox hdmi 2.1)",
+        "panelType": "Nano IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 65,
+        "colorGamut": "DCI-P3 98%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: 279M1RV (27\" 4K Nano IPS 144Hz Designed for Xbox HDMI 2.1)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-momentum-329m1rv",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Momentum Console Gaming",
+      "modelName": "Momentum 329M1RV (31.5\" 4K IPS 144Hz Ambiglow Type-C 65W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/329M1RV_00/momentum-4k-hdr-display-with-ambiglow"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-momentum-329m1rv.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "momentum 329m1rv (31.5\" 4k ips 144hz ambiglow type-c 65w)",
+        "panelType": "IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 65,
+        "colorGamut": "DCI-P3 97%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: Momentum 329M1RV (31.5\" 4K IPS 144Hz Ambiglow Type-C 65W)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-273b9",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "B-Line Business",
+      "modelName": "273B9 (27\" 1080p IPS Docking Monitor USB-C 65W RJ45)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/273B9_00/lcd-monitor-with-usb-c-dock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-273b9.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "273b9 (27\" 1080p ips docking monitor usb-c 65w rj45)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 65,
+        "colorGamut": "sRGB 104%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: 273B9 (27\" 1080p IPS Docking Monitor USB-C 65W RJ45)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-242b1h",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "B-Line Business",
+      "modelName": "242B1H (24\" 1080p IPS Pop-up Webcam Windows Hello Sensor)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/242B1H_00/lcd-monitor-with-pop-up-webcam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-242b1h.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "242b1h (24\" 1080p ips pop-up webcam windows hello sensor)",
+        "panelType": "IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 75,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 104%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified monitors model: 242B1H (24\" 1080p IPS Pop-up Webcam Windows Hello Sensor)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-aorus-fo32u2p",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "AORUS Gaming Flagship",
+      "modelName": "AORUS FO32U2P (32\" 4K QD-OLED 240Hz DisplayPort 2.1 UHBR20)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/AORUS-FO32U2P"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-aorus-fo32u2p.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "aorus fo32u2p (32\" 4k qd-oled 240hz displayport 2.1 uhbr20)",
+        "panelType": "QD-OLED",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 240,
+        "usbCPowertWatts": 65,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: AORUS FO32U2P (32\" 4K QD-OLED 240Hz DisplayPort 2.1 UHBR20)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-aorus-fo27q3",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "AORUS Gaming",
+      "modelName": "AORUS FO27Q3 (27\" 1440p QD-OLED 360Hz 0.03ms)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/AORUS-FO27Q3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-aorus-fo27q3.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "aorus fo27q3 (27\" 1440p qd-oled 360hz 0.03ms)",
+        "panelType": "QD-OLED",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 360,
+        "usbCPowertWatts": 18,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: AORUS FO27Q3 (27\" 1440p QD-OLED 360Hz 0.03ms)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-m27q",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "M-Series KVM",
+      "modelName": "M27Q (27\" 1440p SS-IPS 170Hz 0.5ms KVM Switch USB-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/M27Q"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-m27q.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "m27q (27\" 1440p ss-ips 170hz 0.5ms kvm switch usb-c)",
+        "panelType": "Super Speed IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 170,
+        "usbCPowertWatts": 10,
+        "colorGamut": "DCI-P3 92%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: M27Q (27\" 1440p SS-IPS 170Hz 0.5ms KVM Switch USB-C)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-m28u",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "M-Series KVM",
+      "modelName": "M28U (28\" 4K SS-IPS 144Hz 1ms KVM HDMI 2.1 Type-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/M28U"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-m28u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "m28u (28\" 4k ss-ips 144hz 1ms kvm hdmi 2.1 type-c)",
+        "panelType": "Super Speed IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 94%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: M28U (28\" 4K SS-IPS 144Hz 1ms KVM HDMI 2.1 Type-C)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-m32u",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "M-Series KVM",
+      "modelName": "M32U (31.5\" 4K SS-IPS 144Hz 1ms KVM HDMI 2.1)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/M32U"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-m32u.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "m32u (31.5\" 4k ss-ips 144hz 1ms kvm hdmi 2.1)",
+        "panelType": "Super Speed IPS",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 90%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: M32U (31.5\" 4K SS-IPS 144Hz 1ms KVM HDMI 2.1)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-m34wq",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "M-Series Ultrawide",
+      "modelName": "M34WQ (34\" UWQHD Flat IPS 144Hz KVM USB-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/M34WQ"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-m34wq.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "m34wq (34\" uwqhd flat ips 144hz kvm usb-c)",
+        "panelType": "IPS",
+        "resolution": "3440x1440 (UWQHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 15,
+        "colorGamut": "DCI-P3 91%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: M34WQ (34\" UWQHD Flat IPS 144Hz KVM USB-C)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-g24f-2",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "G-Series Gaming",
+      "modelName": "G24F 2 (23.8\" 1080p SS-IPS 165Hz/180Hz Overclock)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/G24F-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-g24f-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "g24f 2 (23.8\" 1080p ss-ips 165hz/180hz overclock)",
+        "panelType": "Super Speed IPS",
+        "resolution": "1920x1080 (FHD)",
+        "refreshHz": 180,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 95%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: G24F 2 (23.8\" 1080p SS-IPS 165Hz/180Hz Overclock)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-g27q",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "G-Series Gaming",
+      "modelName": "G27Q (27\" 1440p IPS 144Hz FreeSync Premium Speakers)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/G27Q"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-g27q.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "g27q (27\" 1440p ips 144hz freesync premium speakers)",
+        "panelType": "IPS",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 0,
+        "colorGamut": "DCI-P3 92%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: G27Q (27\" 1440p IPS 144Hz FreeSync Premium Speakers)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-aorus-co49dq",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "AORUS Super Ultra-Wide",
+      "modelName": "AORUS CO49DQ (49\" Super Ultra-Wide OLED 144Hz 0.03ms KVM)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/AORUS-CO49DQ"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-aorus-co49dq.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "aorus co49dq (49\" super ultra-wide oled 144hz 0.03ms kvm)",
+        "panelType": "OLED Curved",
+        "resolution": "5120x1440 (Dual QHD)",
+        "refreshHz": 144,
+        "usbCPowertWatts": 18,
+        "colorGamut": "DCI-P3 99%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: AORUS CO49DQ (49\" Super Ultra-Wide OLED 144Hz 0.03ms KVM)",
+      "status": "staged"
+    },
+    {
+      "id": "gigabyte-gs27qc",
+      "canonicalBrand": "Gigabyte",
+      "displayBrand": "Gigabyte",
+      "productLine": "GS-Series Curved",
+      "modelName": "GS27QC (27\" Curved 1440p 165Hz 1500R VA FreeSync)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gigabyte.com/Monitor/GS27QC"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.gigabyte.com/images/products/gigabyte-gs27qc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "gigabyte",
+        "modelName": "gs27qc (27\" curved 1440p 165hz 1500r va freesync)",
+        "panelType": "VA Curved",
+        "resolution": "2560x1440 (QHD)",
+        "refreshHz": 165,
+        "usbCPowertWatts": 0,
+        "colorGamut": "sRGB 108%",
+        "vesaMountable": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gigabyte verified monitors model: GS27QC (27\" Curved 1440p 165Hz 1500R VA FreeSync)",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": []
+}
