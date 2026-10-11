@@ -5,7 +5,7 @@
 - Fix the branded hero path that displayed pale text-only identity cards on a transparent light stage.
 - Render original shaded category illustrations for phone, fragrance, bag and clothing slides. Identify illustrations explicitly; retain sourced product names, sandbox prices and detail actions.
 - Bound artwork responsively and add desktop/mobile browser coverage for all four slides, wraparound controls, visible silhouette geometry and horizontal overflow.
-- Local production build, 378 unit/contract tests and five production browser journeys pass, including all featured slides at 1920px and 390px. Hosted release verification follows the checked application commit.
+- Application ddc8361 is deployed. Local and Linux production builds, 378 unit/contract tests, five production browser journeys and 11 packaged OCR checks pass. The actual public-site artwork journey passes at 1920px and 390px across all four slides; HTTPS health reports the expected build and both services are active. Existing private configuration fields are unchanged. Evidence: docs/evaluations/featured-artwork-ddc8361.json.
 
 ## 2026-10-11 — Sourced branded catalogue
 
