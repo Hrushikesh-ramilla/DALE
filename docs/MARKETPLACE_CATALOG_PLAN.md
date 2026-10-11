@@ -1,6 +1,6 @@
 # Marketplace catalogue expansion
 
-Status: planned; no product import, application change or deployment is claimed by this document. Existing application and customer data remain in place. This supersedes the mixed electronics brand shortlist, not the core customer-first agent goals in MASTER_PLAN.md.
+Status: implementation in progress. Database publication/search foundation and initial reviewed Oakley/Tissot batches are implemented; full assortment depth is pending. See CATALOG_ACCEPTANCE.md for verified release scope. Existing application and customer data remain in place. This supersedes the mixed electronics brand shortlist, not the core customer-first agent goals in MASTER_PLAN.md.
 
 Expanded 11 October: sunglasses and a production implementation specification are included below. The full specification is in [MARKETPLACE_ARCHITECTURE.md](MARKETPLACE_ARCHITECTURE.md). The first deliverable remains a reviewed exact-product manifest; document completion is not storefront expansion completion.
 

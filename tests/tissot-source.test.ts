@@ -50,7 +50,10 @@ it("publishes ten separate collections and grounds requested movement and diamet
   expect(
     new Set(manifest.products.map((p) => p.attributes.modelName)).size,
   ).toBe(10);
-  const watches = await browseCatalog({ category: "watches" });
+  const watches = await browseCatalog({
+    category: "watches",
+    requirements: { brand: "tissot" },
+  });
   expect(watches.total).toBe(10);
   const input = {
     task: "Find a Tissot quartz watch with a 40mm case under $600 and use group buying",

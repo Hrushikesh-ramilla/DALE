@@ -1,0 +1,500 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "watches-rolex-2026-10-11-v1",
+  "reviewedBy": "manufacturer-structured-source-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "www.rolex.com"
+  ],
+  "products": [
+    {
+      "id": "WATCH-m124060-0001",
+      "name": "Rolex Submariner · m124060-0001",
+      "category": "watches",
+      "description": "Exact Submariner reference m124060-0001: 41mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m124060-0001",
+        "Case diameter: 41mm",
+        "Case material: Oystersteel",
+        "Movement: Perpetual, mechanical, self-winding",
+        "Manufacturer-stated water resistance: 300m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://www.rolex.com/watches/submariner/m124060-0001",
+      "familyId": "rolex:submariner",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "oystersteel",
+        "brand": "rolex",
+        "modelName": "submariner",
+        "movement": "automatic",
+        "caseDiameterMm": 41,
+        "waterResistanceM": 300
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m124060-0001",
+        "source": "https://www.rolex.com/watches/submariner/m124060-0001",
+        "alt": "Rolex Submariner reference m124060-0001, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m126334-0033",
+      "name": "Rolex Datejust · m126334-0033",
+      "category": "watches",
+      "description": "Exact Datejust reference m126334-0033: 41mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m126334-0033",
+        "Case diameter: 41mm",
+        "Case material: White Rolesor - combination of Oystersteel and white gold",
+        "Movement: Perpetual, mechanical, self-winding",
+        "Manufacturer-stated water resistance: 100m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Green ombré",
+      "source": "https://www.rolex.com/watches/datejust/m126334-0033",
+      "familyId": "rolex:datejust",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "white rolesor - combination of oystersteel and white gold",
+        "brand": "rolex",
+        "modelName": "datejust",
+        "movement": "automatic",
+        "caseDiameterMm": 41,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126334-0033",
+        "source": "https://www.rolex.com/watches/datejust/m126334-0033",
+        "alt": "Rolex Datejust reference m126334-0033, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m126710blnr-0003",
+      "name": "Rolex GMT-Master II · m126710blnr-0003",
+      "category": "watches",
+      "description": "Exact GMT-Master II reference m126710blnr-0003: 40mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m126710blnr-0003",
+        "Case diameter: 40mm",
+        "Case material: Oystersteel",
+        "Movement: Perpetual, mechanical, self-winding, GMT function",
+        "Manufacturer-stated water resistance: 100m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://www.rolex.com/watches/gmt-master-ii/m126710blnr-0003",
+      "familyId": "rolex:gmt-master-ii",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "oystersteel",
+        "brand": "rolex",
+        "modelName": "gmt-master ii",
+        "movement": "automatic",
+        "caseDiameterMm": 40,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126710blnr-0003",
+        "source": "https://www.rolex.com/watches/gmt-master-ii/m126710blnr-0003",
+        "alt": "Rolex GMT-Master II reference m126710blnr-0003, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m126506-0001",
+      "name": "Rolex Cosmograph Daytona · m126506-0001",
+      "category": "watches",
+      "description": "Exact Cosmograph Daytona reference m126506-0001: 40mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m126506-0001",
+        "Case diameter: 40mm",
+        "Case material: Platinum",
+        "Movement: Perpetual, mechanical chronograph, self-winding",
+        "Manufacturer-stated water resistance: 100m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Ice blue, chestnut brown counter rings",
+      "source": "https://www.rolex.com/watches/cosmograph-daytona/m126506-0001",
+      "familyId": "rolex:cosmograph-daytona",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "platinum",
+        "brand": "rolex",
+        "modelName": "cosmograph daytona",
+        "movement": "automatic",
+        "caseDiameterMm": 40,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126506-0001",
+        "source": "https://www.rolex.com/watches/cosmograph-daytona/m126506-0001",
+        "alt": "Rolex Cosmograph Daytona reference m126506-0001, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m224270-0001",
+      "name": "Rolex Explorer · m224270-0001",
+      "category": "watches",
+      "description": "Exact Explorer reference m224270-0001: 40mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m224270-0001",
+        "Case diameter: 40mm",
+        "Case material: Oystersteel",
+        "Movement: Perpetual, mechanical, self-winding",
+        "Manufacturer-stated water resistance: 100m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://www.rolex.com/watches/explorer/m224270-0001",
+      "familyId": "rolex:explorer",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "oystersteel",
+        "brand": "rolex",
+        "modelName": "explorer",
+        "movement": "automatic",
+        "caseDiameterMm": 40,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m224270-0001",
+        "source": "https://www.rolex.com/watches/explorer/m224270-0001",
+        "alt": "Rolex Explorer reference m224270-0001, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m134303-0001",
+      "name": "Rolex Oyster Perpetual · m134303-0001",
+      "category": "watches",
+      "description": "Exact Oyster Perpetual reference m134303-0001: 41mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m134303-0001",
+        "Case diameter: 41mm",
+        "Case material: Yellow Rolesor - combination of Oystersteel and yellow gold",
+        "Movement: Perpetual, mechanical, self-winding",
+        "Manufacturer-stated water resistance: 100m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Slate",
+      "source": "https://www.rolex.com/watches/oyster-perpetual/m134303-0001",
+      "familyId": "rolex:oyster-perpetual",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "yellow rolesor - combination of oystersteel and yellow gold",
+        "brand": "rolex",
+        "modelName": "oyster perpetual",
+        "movement": "automatic",
+        "caseDiameterMm": 41,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m134303-0001",
+        "source": "https://www.rolex.com/watches/oyster-perpetual/m134303-0001",
+        "alt": "Rolex Oyster Perpetual reference m134303-0001, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m228236-0018",
+      "name": "Rolex Day-Date · m228236-0018",
+      "category": "watches",
+      "description": "Exact Day-Date reference m228236-0018: 40mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m228236-0018",
+        "Case diameter: 40mm",
+        "Case material: Platinum",
+        "Movement: Perpetual, mechanical, self-winding",
+        "Manufacturer-stated water resistance: 100m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Ice blue",
+      "source": "https://www.rolex.com/watches/day-date/m228236-0018",
+      "familyId": "rolex:day-date",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "platinum",
+        "brand": "rolex",
+        "modelName": "day-date",
+        "movement": "automatic",
+        "caseDiameterMm": 40,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m228236-0018",
+        "source": "https://www.rolex.com/watches/day-date/m228236-0018",
+        "alt": "Rolex Day-Date reference m228236-0018, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m336935-0008",
+      "name": "Rolex Sky-Dweller · m336935-0008",
+      "category": "watches",
+      "description": "Exact Sky-Dweller reference m336935-0008: 42mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m336935-0008",
+        "Case diameter: 42mm",
+        "Case material: 18 ct Everose gold",
+        "Movement: Perpetual, mechanical, self-winding, dual time zones, annual calendar",
+        "Manufacturer-stated water resistance: 100m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Slate",
+      "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
+      "familyId": "rolex:sky-dweller",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "18 ct everose gold",
+        "brand": "rolex",
+        "modelName": "sky-dweller",
+        "movement": "automatic",
+        "caseDiameterMm": 42,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m336935-0008",
+        "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
+        "alt": "Rolex Sky-Dweller reference m336935-0008, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m226658-0001",
+      "name": "Rolex Yacht-Master · m226658-0001",
+      "category": "watches",
+      "description": "Exact Yacht-Master reference m226658-0001: 42mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m226658-0001",
+        "Case diameter: 42mm",
+        "Case material: 18 ct yellow gold",
+        "Movement: Perpetual, mechanical, self-winding",
+        "Manufacturer-stated water resistance: 100m"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://www.rolex.com/watches/yacht-master/m226658-0001",
+      "familyId": "rolex:yacht-master",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "18 ct yellow gold",
+        "brand": "rolex",
+        "modelName": "yacht-master",
+        "movement": "automatic",
+        "caseDiameterMm": 42,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m226658-0001",
+        "source": "https://www.rolex.com/watches/yacht-master/m226658-0001",
+        "alt": "Rolex Yacht-Master reference m226658-0001, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-m126603-0001",
+      "name": "Rolex Sea-Dweller · m126603-0001",
+      "category": "watches",
+      "description": "Exact Sea-Dweller reference m126603-0001: 43mm case and recorded automatic movement. DALE is an independent test storefront; no manufacturer affiliation or commercial stock is claimed.",
+      "price": 800000,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: m126603-0001",
+        "Case diameter: 43mm",
+        "Case material: Yellow Rolesor - combination of Oystersteel and yellow gold",
+        "Movement: Perpetual, mechanical, self-winding"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Intense black",
+      "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
+      "familyId": "rolex:sea-dweller",
+      "provenance": "manufacturer_evidence",
+      "brand": "Rolex",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "International manufacturer specification",
+        "missing": [
+          "The USD 8,000 DALE offer and stock are simulated, not a Rolex retail price or availability claim.",
+          "Individual wrist fit, authenticity of a physical item and suitability for water activities require separate verification.",
+          "Exact water resistance is not recorded."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "yellow rolesor - combination of oystersteel and yellow gold",
+        "brand": "rolex",
+        "modelName": "sea-dweller",
+        "movement": "automatic",
+        "caseDiameterMm": 43
+      },
+      "media": {
+        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126603-0001",
+        "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
+        "alt": "Rolex Sea-Dweller reference m126603-0001, manufacturer photograph",
+        "attribution": "Product photograph © Rolex; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

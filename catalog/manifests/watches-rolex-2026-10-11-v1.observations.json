@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-11",
+  "observations": [
+    {
+      "source": "https://www.rolex.com/watches/submariner/m124060-0001",
+      "sha256": "6a896eddd14b085b02a2603602b119556d462dc550755b28cc2dd97cca29692e",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/datejust/m126334-0033",
+      "sha256": "361b304c18f8973b4f7ce786fce6a37273ba6a80bb8948c3b9d08361f49fd48b",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/gmt-master-ii/m126710blnr-0003",
+      "sha256": "79e02d913bcb7831379d839f2cdb1e0fe156d37a0ac066f2d7ba5554654a4775",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/cosmograph-daytona/m126506-0001",
+      "sha256": "eabc59f051fa2f819fe0fb0196f7eb5b3ccbbc4ac644cd924abefbf45e2169e8",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/explorer/m224270-0001",
+      "sha256": "4746886f35a0ce687ad574a8ccf9684e0114bce20a9083552585c2c599c3ff5e",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/oyster-perpetual/m134303-0001",
+      "sha256": "adde650674353e664ef79e28f6c3618ed0de3c563fc2ede4faea7afd890e0a81",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/day-date/m228236-0018",
+      "sha256": "0974bd170cb7e859144e2b5af84daea6816fa8faa508b508a7a34e6bbe776932",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
+      "sha256": "03076f98d5dcfa6b4b6390626a297cdfac360d96ff65a0c9ff9006369f67982c",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/yacht-master/m226658-0001",
+      "sha256": "9e38194bacbdf5d7d64404375c909a611446cf690797280c81db8fa2ce78b848",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
+      "sha256": "030af8f628d9a91b77b1833dd2199ae7345829ee7def16a88cd45f593cb9ba2d",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    }
+  ]
+}

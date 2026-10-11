@@ -1,5 +1,33 @@
 import { expect, test } from "@playwright/test";
 const origin = process.env.E2E_BASE_URL || "http://127.0.0.1:3100";
+test("manufacturer photographs render in watches and sunglasses with a visible failure state", async ({
+  page,
+}) => {
+  for (const department of ["Watches", "Sunglasses"]) {
+    await page.goto("/shop");
+    await page
+      .getByRole("button", { name: `Explore ${department}`, exact: true })
+      .click();
+    const photo = page.locator(".product-photograph img").first();
+    await expect(photo).toBeVisible();
+    await expect
+      .poll(() =>
+        photo.evaluate((image: HTMLImageElement) => image.naturalWidth),
+      )
+      .toBeGreaterThan(0);
+    await expect(
+      page.locator(".product-photograph figcaption a").first(),
+    ).toBeVisible();
+  }
+  await page.route("https://assets2.oakley.com/**", (route) => route.abort());
+  await page.reload();
+  await page
+    .getByRole("button", { name: "Explore Sunglasses", exact: true })
+    .click();
+  await expect(
+    page.getByText("Manufacturer photograph unavailable.").first(),
+  ).toBeVisible();
+});
 test("reviewed watches flow from agent recommendations through independent group purchases", async ({
   browser,
 }) => {
@@ -194,7 +222,7 @@ test("public catalog supports all departments and strict paginated attribute que
   const response = await request.get("/api/catalog");
   expect(response.ok()).toBe(true);
   const catalog = await response.json();
-  expect(catalog.total).toBe(55);
+  expect(catalog.total).toBe(65);
   expect(catalog.departments).toHaveLength(8);
   expect(catalog.products).toHaveLength(48);
   const filtered = await request.get(

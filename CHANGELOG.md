@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Reviewed Rolex watch collections
+
+- Add ten distinct official collections, exact manufacturer references and photographs. Parse explicit JSON-LD case diameter, material, dial colour, movement and water resistance; reject identity/media mismatches and absent required specifications.
+- Preserve source fingerprints and successful photograph observations. Disclose the fixed sandbox offer separately from manufacturer prices, stock, affiliation and physical authenticity.
+- Add source contract and database/agent filter coverage, and a browser photo rendering/failure check. Public assortment becomes 65 reviewed records across eight nonempty departments; the complete per-brand expansion remains pending.
+
 ## 2026-10-11 — Reviewed Tissot watches and imported-product agent approvals
 
 - Add ten distinct manufacturer collections with exact reference numbers, attributed photographs, recorded movement/case dimensions and optional explicitly stated water resistance. Preserve missing-fit and sandbox inventory boundaries.
