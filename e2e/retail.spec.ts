@@ -303,9 +303,25 @@ test("public catalog supports all departments and strict paginated attribute que
   const response = await request.get("/api/catalog");
   expect(response.ok()).toBe(true);
   const catalog = await response.json();
-  expect(catalog.total).toBe(85);
+  expect(catalog.total).toBe(99);
   expect(catalog.departments).toHaveLength(8);
   expect(catalog.products).toHaveLength(48);
+  const continuation = await (
+    await request.get(`/api/catalog?cursor=${catalog.nextCursor}`)
+  ).json();
+  expect(continuation.products).toHaveLength(48);
+  expect(
+    continuation.products.some((p: { id: string }) =>
+      catalog.products.some((first: { id: string }) => first.id === p.id),
+    ),
+  ).toBe(false);
+  expect(
+    (
+      await request.get(
+        `/api/catalog?category=phones&cursor=${catalog.nextCursor}`,
+      )
+    ).status(),
+  ).toBe(400);
   const filtered = await request.get(
     "/api/catalog?category=fragrance&brand=tom%20ford&volumeMl=50&budget=40000",
   );

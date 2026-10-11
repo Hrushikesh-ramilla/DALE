@@ -14,6 +14,12 @@ const config: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "www.franciskurkdjian.com",
+        pathname:
+          "/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/**",
+      },
+      {
+        protocol: "https",
         hostname: "assets2.oakley.com",
         pathname: "/prod-onecp-record-files/**",
       },

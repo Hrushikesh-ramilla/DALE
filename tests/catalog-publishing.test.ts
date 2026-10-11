@@ -87,12 +87,33 @@ it("paginates a full 500-record publication without duplicates or fixture leakag
     cursor = result.nextCursor || undefined;
   } while (cursor);
   expect(continuedIds).toEqual(ids);
+  // A feature-preferred record beyond the cheapest 100 still has to be retrieved.
+  const database = await getDatabase();
+  const preferredId = ids.at(-1)!;
+  await database.query(
+    "UPDATE catalog_products SET record=jsonb_set(record,'{specs}',$2::jsonb) WHERE id=$1",
+    [preferredId, JSON.stringify(["CapacityPreferenceFact"])],
+  );
+  for (const scoring of [
+    { priority: "features" as const },
+    { weights: { price: 1, features: 100 } },
+  ]) {
+    const candidates = await searchStoredCatalog({
+      model: "not-required",
+      budget: 15000,
+      category: "fragrance",
+      requirements: { brand: template.attributes.brand },
+      preference: "CapacityPreferenceFact",
+      ...scoring,
+    });
+    expect(candidates).toHaveLength(100);
+    expect(candidates[0].id).toBe(preferredId);
+  }
   const first = await browseCatalog({ query: "IsolatedCapacity" });
   await expect(
     browseCatalog({ query: "different", cursor: first.nextCursor! }),
   ).rejects.toThrow("continuation");
   // Withdrawing an earlier record must not shift the next page or repeat IDs.
-  const database = await getDatabase();
   await database.query(
     "UPDATE catalog_products SET publication='retired' WHERE id=$1",
     [ids[0]],

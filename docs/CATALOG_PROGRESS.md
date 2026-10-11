@@ -1,6 +1,6 @@
 # Marketplace assortment implementation
 
-Updated 11 October 2026. This measures the enlarged catalog, not overall project readiness. The implemented manifests contain 85 published offer records representing 81 distinct product families: 4.05% of the 2,000-family target. The original 35-record assortment had 31 families; five reviewed batches add 50 distinct models. Size variants do not increase the family count.
+Updated 11 October 2026. This measures the enlarged catalog, not overall project readiness. Source-reviewed implementation contains 99 offer records representing 95 distinct product families: 4.75% of the 2,000-family target. The original 35-record assortment had 31 families; five ten-model batches and fourteen distinct MFK fragrances add 64 families. Size variants do not increase the count. The actual public release currently contains 85 records; the MFK batch is undergoing release verification.
 
 | Category | Records | Distinct families | Published brands |
 | --- | ---: | ---: | --- |
@@ -12,14 +12,14 @@ Updated 11 October 2026. This measures the enlarged catalog, not overall project
 | Keyboards/mice | 2 | 2 | Logitech |
 | Charging | 3 | 3 | Existing sourced device/accessory records |
 | Clothing | 6 | 2 | Givenchy, Valentino |
-| Fragrance | 8 | 8 | MFK, CHANEL, Tom Ford, Creed, Amouage, Serge Lutens, Maison Margiela, Parfums de Marly |
+| Fragrance | 22 | 22 | MFK, CHANEL, Tom Ford, Creed, Amouage, Serge Lutens, Maison Margiela, Parfums de Marly |
 | Bags | 4 | 4 | Gucci, Louis Vuitton, Hermès, Michael Kors |
 | Beauty | 2 | 2 | Lancôme, CHANEL |
 | Home | 1 | 1 | Hermès |
 | Watches | 20 | 20 | Rolex, Tissot |
 | Sunglasses | 20 | 20 | Oakley, Ray-Ban |
 
-Apple has eleven distinct phone models including the existing iPhone 17. Rolex, Tissot, Oakley and Ray-Ban each have ten distinct models. No other brand has reached the requested model-depth gate. Footwear, appliance and further electronics department types remain hidden until reviewed records are published.
+Apple has eleven distinct phone models including the existing iPhone 17. Rolex, Tissot, Oakley and Ray-Ban each have ten distinct models. MFK has fifteen distinct fragrances in the reviewed implementation. Other houses have not reached their model-depth gates. Footwear, appliance and further electronics department types remain hidden until reviewed records are published.
 
 ## Completed implementation milestones
 
@@ -48,5 +48,6 @@ Use the local fixture preview to avoid provider calls and payment spend. Enter a
 - `Find a Tissot quartz watch with a 40mm case under $600 and use group buying` — matching quartz/40mm records, conditional group offers and commitment without payment. A different browser profile joins the same product; the first customer's group becomes ready. Payment still requires approval of the quote.
 - `Find Rayban sunglasses under $250 and use group buying` — the Ray-Ban filter resolves despite the compact spelling. A request for polarized lenses cannot treat unverified lens information as a match.
 - `Find Oakley Holbrook XL sunglasses under $250` — clarification instead of a substitution with base Holbrook.
+- `Find MFK APOM eau de parfum 70ml under $400 and use group buying` — exact APOM bottle, concentration and volume; conditional group terms with a separate commitment. Allergy-safety requests must not become guarantees.
 
 Browse **Electronics**: choose a category before any products appear. Browse **Watches** or **Sunglasses**: a product grid opens directly, and brand/model filters use published database facts. Product photographs must decode inside the grid; a failed image must show its product name and a clear failure message with the source still available.

@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-11 — Maison Francis Kurkdjian assortment depth
+
+- Add fourteen distinct eau de parfum families from reviewed official pages, preserving exact reference, selected 70 ml bottle, manufacturer olfactory label and decoded product photograph. Together with Baccarat Rouge 540, the house now has fifteen models.
+- Support the existing MFK brand alias in database retrieval. Reject inconsistent variant controls, unidentified photographs and unsupported medical/performance claims. The ordinary browser journey verifies exact APOM selection and actual product-grid photograph decoding.
+- Rank and apply compatibility eligibility in database retrieval before the 100-candidate bound; feature-preferred products beyond the first hundred prices remain reachable. The 500-record contract verifies preference and weighted ranking.
+- Source-reviewed assortment becomes 99 records / 95 distinct families. Full per-brand/category depth remains pending; hosted release identity and original provider gates are recorded separately.
+
 ## 2026-10-11 — Catalog continuation and capacity qualification
 
 - Added filter-bound cursor pagination ordered by price and stable SKU, retaining page-number compatibility. Storefront load-more uses continuations; retiring an earlier record no longer shifts the next page.

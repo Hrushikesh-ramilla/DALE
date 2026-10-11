@@ -16,7 +16,7 @@ jobs:
       - run: npm run build
       - run: npx tsx scripts/verify-local-ocr-http.ts
       - run: npx playwright install --with-deps chromium
-      - run: npx playwright test e2e/customers.spec.ts e2e/retail.spec.ts
+      - run: npx playwright test e2e/customers.spec.ts e2e/retail.spec.ts e2e/fragrance.spec.ts
         env:
           E2E_SERVER_MODE: production
       - run: node scripts/package-linux-app.mjs

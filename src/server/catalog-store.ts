@@ -1,5 +1,10 @@
-import { searchCatalog, type Product } from "@/domain/catalog";
-import { departments } from "@/domain/departments";
+import { knownModels, searchCatalog, type Product } from "@/domain/catalog";
+import {
+  departments,
+  retailCategories,
+  lifestyleProfile,
+} from "@/domain/departments";
+import { expandCatalogBrandAliases } from "@/domain/branded-shopping";
 import { getDatabase, type Sql } from "./database";
 import {
   catalogFilterHash,
@@ -140,16 +145,33 @@ export async function searchStoredCatalog(
   input: Parameters<typeof searchCatalog>[0],
   fixtures = false,
 ) {
+  // Validate the domain scoring contract before evaluating SQL weights.
+  searchCatalog(input, []);
+  if (!knownModels.includes(input.model) || input.budget <= 0) return [];
   const database = await getDatabase();
   const rows = await database.query<{ record: Product }>(
-    `SELECT record FROM catalog_products WHERE price<=$1 AND ($2='' OR category=$2)
+    `WITH candidates AS (SELECT record,id,price,
+    CASE WHEN $8<>'' AND strpos(lower(array_to_string(ARRAY(SELECT jsonb_array_elements_text(record->'specs')),' ')),lower($8))>0 THEN 1 ELSE 0 END AS feature_match
+    FROM catalog_products WHERE price<=$1 AND ($2='' OR category=$2)
     AND coalesce(record->'attributes','{}'::jsonb) @> $3::jsonb AND (publication='published' OR ($4 AND publication='fixture'))
-    ORDER BY price,id LIMIT 100`,
+    AND CASE WHEN category=ANY($6::text[]) OR record->>'provenance'='manufacturer_evidence'
+      THEN $5=$7 ELSE coalesce(record->'compatibleModels','[]'::jsonb) ? $5 END)
+    SELECT record FROM candidates ORDER BY
+      CASE WHEN $9::boolean THEN -($10::float8*(1-price::float8/$1)+$11::float8*feature_match) ELSE 0 END,
+      CASE WHEN $12::boolean THEN -feature_match ELSE 0 END,price,-feature_match,id LIMIT 100`,
     [
       input.budget,
       input.category || "",
       JSON.stringify(input.requirements || {}),
       fixtures,
+      input.model,
+      [...retailCategories],
+      lifestyleProfile,
+      input.preference || "",
+      Boolean(input.weights),
+      input.weights?.price || 0,
+      input.weights?.features || 0,
+      !input.weights && input.priority === "features",
     ],
   );
   return searchCatalog(
@@ -168,7 +190,7 @@ export async function catalogLanguageContext(task: string) {
         AND strpos(regexp_replace(lower($1),'[^a-z0-9]','','g'),regexp_replace(lower(record->>'brand'),'[^a-z0-9]','','g'))>0)))
     OR (length(record->'attributes'->>'modelName')>2 AND strpos(lower($1),lower(record->'attributes'->>'modelName'))>0))
     ORDER BY id LIMIT 100`,
-    [task],
+    [expandCatalogBrandAliases(task)],
   );
   return rows.rows.map((row) => row.record);
 }
