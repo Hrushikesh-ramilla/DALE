@@ -1,6 +1,7 @@
 import { catalog, publicCatalog } from "@/domain/catalog";
 import { brandedCatalog } from "@/domain/branded-catalog";
 import type { Sql } from "./database";
+import { bootstrapReviewedCatalog } from "./bundled-catalog";
 
 /** Classify legacy IDs once; never overwrite imported records during a read or restart. */
 export async function bootstrapCatalog(sql: Sql) {
@@ -43,4 +44,5 @@ export async function bootstrapCatalog(sql: Sql) {
       ],
     );
   }
+  await bootstrapReviewedCatalog(sql);
 }

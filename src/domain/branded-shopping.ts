@@ -80,7 +80,14 @@ export function brandedShopping(
     ...new Set([
       ...named.map((p) => p.category),
       ...categoryPatterns
-        .filter(([category, regex]) => regex.test(text) && !(category === "headphones" && named.some(p => p.category === "audio")))
+        .filter(
+          ([category, regex]) =>
+            regex.test(text) &&
+            !(
+              category === "headphones" &&
+              named.some((p) => p.category === "audio")
+            ),
+        )
         .map(([category]) => category),
     ]),
   ];
@@ -154,6 +161,15 @@ export function brandedShopping(
     return clarify(
       "Those performance requirements need a specification comparison. Review the recorded manufacturer facts; I will not treat an unverified requirement as matched.",
     );
+  if (
+    categories.includes("sunglasses") &&
+    /\b(?:uv400|uv protection|prescription|fits my face|fit my face)\b/i.test(
+      text,
+    )
+  )
+    return clarify(
+      "Those lens or individual-fit requirements need exact manufacturer evidence. Review the recorded reference; I will not assume UV protection, prescription suitability or face fit.",
+    );
   const amounts = [
     ...text.matchAll(
       /(?:under|below|up to|budget(?: of| is|:)?|maximum(?: of| is|:)?)\s*\$?\s*(\d+(?:\.\d{1,2})?)/gi,
@@ -177,7 +193,12 @@ export function brandedShopping(
     return clarify(
       "That exact model is not recorded. I will not substitute a different model; choose a sourced model from the category filters.",
     );
-  if (/\biphone\s*17\s*(?:pro|max|plus|e)\b/i.test(text) && !modelNames.some(name => /\biphone\s*17\s*(?:pro|max|plus|e)\b/i.test(name)))
+  if (
+    /\biphone\s*17\s*(?:pro|max|plus|e)\b/i.test(text) &&
+    !modelNames.some((name) =>
+      /\biphone\s*17\s*(?:pro|max|plus|e)\b/i.test(name),
+    )
+  )
     return clarify(
       "The reviewed record is the base iPhone 17. That variant is not verified, so I will not substitute it.",
     );
@@ -281,6 +302,15 @@ export function brandedShopping(
       priority: "price",
       preference: "",
       requirements: {
+        ...(category === "sunglasses" && /\bsquare\b/i.test(text)
+          ? { frameShape: "square" }
+          : category === "sunglasses" &&
+              /\b(?:rectangle|rectangular)\b/i.test(text)
+            ? { frameShape: "rectangle" }
+            : category === "sunglasses" && /\bshield\b/i.test(text)
+              ? { frameShape: "shield" }
+              : {}),
+
         ...(category === "sunglasses" &&
         /\b(?:non[- ]polarized|not polarized)\b/i.test(text)
           ? { polarization: "non-polarized" }

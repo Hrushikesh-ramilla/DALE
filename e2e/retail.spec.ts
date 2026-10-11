@@ -69,9 +69,9 @@ test("public catalog supports all departments and strict paginated attribute que
   const response = await request.get("/api/catalog");
   expect(response.ok()).toBe(true);
   const catalog = await response.json();
-  expect(catalog.total).toBe(35);
-  expect(catalog.departments).toHaveLength(6);
-  expect(catalog.products).toHaveLength(35);
+  expect(catalog.total).toBe(45);
+  expect(catalog.departments).toHaveLength(7);
+  expect(catalog.products).toHaveLength(45);
   const filtered = await request.get(
     "/api/catalog?category=fragrance&brand=tom%20ford&volumeMl=50&budget=40000",
   );

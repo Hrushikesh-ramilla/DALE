@@ -112,8 +112,8 @@ it("does not waive conflicting size, unavailable variants or medical safety", ()
 });
 it("persists and queries a paginated PostgreSQL catalog with strict attributes", async () => {
   const all = await browseCatalog({});
-  expect(all.total).toBe(35);
-  expect(all.products).toHaveLength(35);
+  expect(all.total).toBe(45);
+  expect(all.products).toHaveLength(45);
   const next = await browseCatalog({ page: 2 });
   expect(
     next.products.some((p) => all.products.some((a) => a.id === p.id)),

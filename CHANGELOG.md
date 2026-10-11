@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-11 — Reviewed Oakley sunglasses batch
+
+- Add ten distinct manufacturer-referenced sunglasses models: Holbrook, Frogskins, Sutro, Flak 2.0 XL, Gascan, Batwolf, Jawbreaker, Half Jacket 2.0 XL, Split Shot and Radar EV Pitch.
+- Publish exact-reference photographs with attribution, reviewed frame material/shape and explicit missing lens/UV/fit information. All ten manufacturer image endpoints return HTTP 200 image/png. Prices and stock are sandbox offers.
+- Apply the immutable batch once at database initialization; preserve operator withdrawal across restarts and restore only against the original reviewed hash.
+- Add eyewear publication, exact-attribute search and withdrawal/restoration contracts. Catalog grows from 35 to 45 records across seven nonempty departments; this batch is not the completed 2,000-product assortment.
+
 ## 2026-10-11 — Database catalog publication foundation
 
 - Classify legacy catalog IDs once during initialization; ordinary reads no longer overwrite database records or rely on a public SKU whitelist. Preserve retired product records for orders and groups.
