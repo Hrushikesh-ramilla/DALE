@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { categoryIds } from "@/domain/departments";
+import { categoryIds, leafTypeKeys } from "@/domain/departments";
 import { briefSchema } from "@/domain/brief";
 import { browseCatalog } from "@/server/catalog-store";
 import { apiError, json } from "@/server/http";
@@ -23,7 +23,8 @@ const querySchema = z
     batteryHours: z.coerce.number().positive().max(10000).optional(),
     voltage: z.coerce.number().positive().max(10000).optional(),
     capacityLitres: z.coerce.number().positive().max(10000).optional(),
-    category: z.enum(["", ...categoryIds]).default(""),
+    category: z.string().trim().max(80).default(""),
+    leafType: z.enum(["", ...leafTypeKeys]).default(""),
     query: z.string().trim().max(100).default(""),
     budget: z.coerce.number().int().min(1).max(1000000).default(1000000),
     page: z.coerce.number().int().min(1).max(1000).default(1),
@@ -108,7 +109,7 @@ export async function GET(request: Request) {
         ramGb,
       }).filter(([, value]) => value !== undefined),
     ) as Record<string, string | number>;
-    return json(await browseCatalog({ ...input, requirements }));
+    return json(await browseCatalog({ ...input, brand, requirements }));
   } catch (error) {
     return apiError(error);
   }
