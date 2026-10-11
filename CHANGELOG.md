@@ -9,7 +9,7 @@
 - Feature sourced products in the hero; remove unsourced compatibility/protection guarantees while retaining the accepted design.
 - Preserve Armani/Giorgio Armani and Maison Martin Margiela/Maison Margiela house aliases; an unavailable house must not become an unrelated offer.
 - Carry exact brand/model, size, concentration, RAM/storage and budget constraints through persisted queries, agent plans, groups and purchase guards. Withhold incomplete apparel candidates; disclose missing facts and simulated offers.
-- Add branded query/guard/refinement contracts and desktop/mobile browser coverage. Preserve provider configuration and customer data. Application 3653478 is deployed: 377 unit/contract tests, four production browser journeys, 20 actual hosted checks and eight actual restart checks pass. Provider settings and existing customer data are preserved. No live-model call or real payment capture occurs. Full release evidence is tracked in docs/BRANDED_CATALOG.md.
+- Add branded query/guard/refinement contracts and desktop/mobile browser coverage. Preserve provider configuration and customer data. Application ee45425 is deployed: 378 unit/contract tests, four production browser journeys, 20 actual hosted checks and eight actual restart checks pass. Provider settings and existing customer data are preserved. No live-model call or real payment capture occurs. Full release evidence is tracked in docs/BRANDED_CATALOG.md.
 
 ## 2026-10-11 — Six-department agent shopping
 
