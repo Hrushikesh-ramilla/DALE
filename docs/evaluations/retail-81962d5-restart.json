@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-11T00:36:23.050Z",
+  "source": "81962d56d8f6ed659cf05ec0933fcd6ac15f469c",
+  "url": "https://65.0.19.200.sslip.io",
+  "mode": "real-postgres/customers; isolated-agent/payment-fixtures",
+  "checks": [
+    {
+      "scenario": "Public ready build matches release",
+      "passed": true
+    },
+    {
+      "scenario": "PostgreSQL catalog has six departments and 223 records",
+      "passed": true
+    },
+    {
+      "scenario": "Observed actual app restart",
+      "passed": true
+    },
+    {
+      "scenario": "Customer 1 session and exact-variant group persist",
+      "passed": true
+    },
+    {
+      "scenario": "Customer 2 session and exact-variant group persist",
+      "passed": true
+    },
+    {
+      "scenario": "Fixture conversation and captured order persist",
+      "passed": true
+    }
+  ]
+}

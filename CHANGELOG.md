@@ -5,7 +5,7 @@
 - Add 60 distinct lifestyle families with 180 exact clothing/fragrance/bag/home/beauty SKUs, alongside existing electronics. Clearly separate merchant sample specifications from reviewed manufacturer identity.
 - Persist an indexed PostgreSQL catalog read model and add strict, paginated public attribute queries. Add department controls, category illustrations and exact size/material/type/scent/volume filtering.
 - Extend structured agent planning with a validated retail search tool, retained brief refinements and dependent group discovery. Keep exact-variant membership, budget, immutable approval and own-order safeguards.
-- Add retail database/agent/guard contracts and browser fixture checkout coverage. Preserve the existing visual composition, customer data and provider configuration. Hosted verification remains a release step.
+- Add retail database/agent/guard contracts and browser fixture checkout coverage. Preserve the existing visual composition, customer data and provider configuration. Application 81962d5 passes 354 unit/contract checks, three production browser journeys, 15 actual hosted checks and six actual restart checks; checksum/backup deployment succeeds. No model call, real payment capture, billing change or new infrastructure resource occurs.
 
 ## 2026-10-11 — Independent customer accounts and shared group buying
 

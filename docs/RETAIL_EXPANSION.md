@@ -27,6 +27,14 @@ Customers can refine a retained lifestyle brief (for example “Actually size L 
 
 The seven original capabilities remain central: AgentGuard protects each approval; BuyTogether uses real shared commitments; ScamPause isolates seller instructions; PartsMatch stays an electronics capability; Buyer’s Advocate retains customer authority; ReturnShield records evidence for human review; RescueMyOrder reads the customer’s own order state. This expansion does not add unrelated social or seller-marketplace features.
 
+## Release evidence — 11 October 2026
+
+Application `81962d56d8f6ed659cf05ec0933fcd6ac15f469c` is deployed at https://65.0.19.200.sslip.io/shop and runs locally at http://localhost:3000. This expansion's seven release gates are closed: lint/typecheck; 354 unit/contract checks; Windows production build; Linux production build/artifact and three browser journeys; 15 actual hosted retail checks; six persistence checks after completed app/worker restart; public HTTPS/source identity. **7/7 expansion release gates (100%)** is a scope-specific acceptance count, not a claim that the original project's remaining provider/physical gates or an Amazon-scale commercial rollout are complete.
+
+[Linux release verification](https://github.com/Hrushikesh-ramilla/DALE/actions/runs/38098671243) passes all 354 checks, the packaged OCR checks, the independent-customer browser journey and both retail browser journeys. The deployed 63,222,920-byte Linux x64/Node 22 archive has SHA-256 `cf3704c204ab0ca75b250f08805d4463c215832b283d735e6795cacc1942ec85`. The checksum/backup installer retained the previous release and a private pre-upgrade database snapshot.
+
+Actual hosted reports are [retail journey](evaluations/retail-81962d5-prepare.json) and [restart persistence](evaluations/retail-81962d5-restart.json). They use real PostgreSQL/customer sessions, isolated fixture agent/payment flows and no model calls or real payment capture. Source identity, catalog, two independent customers, exact size enforcement, all five new departments, retained refinement, explicit fixture capture and privacy pass. Sessions, both group memberships, conversation and captured fixture order survive actual service restart. Services are active. Private credentials/cookies remain in ignored, restricted local files. The existing provider configuration was preserved; no billing or infrastructure resource was added.
+
 ## Manual acceptance
 
 1. Open `/shop`. Confirm six department cards and appropriate illustrations. Explore Clothing. Choose Size M and Material linen, then save through Brief & Filters → Find my match. The results must contain only matching variants; unsaved changes must block purchase review.
