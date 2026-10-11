@@ -67,12 +67,13 @@ function groupOnlyRequest(text: string) {
 export function fallbackWorkflow(
   input: AgentRequest,
   context?: ResearchContext,
+  records?: import("./catalog").Product[],
 ) {
-  const guard = fallbackPlan(input, context);
+  const guard = fallbackPlan(input, context, records);
   const protectedRequest =
     guard.tool === "scan_message" || financialRequest(input.task);
   const shopping = shoppingInput(input);
-  const research = fallbackPlan(shopping, context);
+  const research = fallbackPlan(shopping, context, records);
   const primary =
     !protectedRequest &&
     research.tool === "research_products" &&
@@ -90,7 +91,9 @@ export function fallbackWorkflow(
   const steps: WorkflowStep[] = [primary];
   if (
     groupSavingsEnabled(input.task, context?.groupSavings) &&
-    (primary.tool === "research_products" || primary.tool === "search_retail" || primary.tool === "legacy_task")
+    (primary.tool === "research_products" ||
+      primary.tool === "search_retail" ||
+      primary.tool === "legacy_task")
   )
     steps.push({ tool: "discover_groups" });
   if (!protectedRequest) {
@@ -165,6 +168,7 @@ export function validateWorkflow(
   response: z.infer<typeof workflowResponseSchema>,
   input: AgentRequest,
   context?: ResearchContext,
+  records?: import("./catalog").Product[],
 ) {
   const steps: WorkflowStep[] =
     "steps" in response ? response.steps : [response];
@@ -172,13 +176,14 @@ export function validateWorkflow(
   if (new Set(steps.map((step) => step.tool)).size !== steps.length)
     throw new Error("A tool may run only once per task.");
   const researchIndex = steps.findIndex(
-    (step) => step.tool === "research_products" || step.tool === "search_retail",
+    (step) =>
+      step.tool === "research_products" || step.tool === "search_retail",
   );
   const groupIndex = steps.findIndex((step) => step.tool === "discover_groups");
   if (researchIndex >= 0 && groupIndex >= 0 && groupIndex < researchIndex)
     throw new Error("Research must precede dependent group discovery.");
   if (primary.tool === "discover_groups") {
-    const guard = fallbackPlan(input, context);
+    const guard = fallbackPlan(input, context, records);
     if (
       steps.length !== 1 ||
       !groupOnlyRequest(input.task) ||
@@ -186,9 +191,9 @@ export function validateWorkflow(
       /\b(?:approve|pay|purchase|execute|transfer|delete)\b/i.test(input.task)
     )
       throw new Error("Group discovery needs a shopper savings request.");
-    return { plan: fallbackPlan(input, context), steps };
+    return { plan: fallbackPlan(input, context, records), steps };
   }
-  const guard = fallbackPlan(input, context);
+  const guard = fallbackPlan(input, context, records);
   if (
     financialRequest(input.task) &&
     guard.tool !== "scan_message" &&
@@ -204,12 +209,12 @@ export function validateWorkflow(
     );
   const validated =
     primary.tool === "research_products"
-      ? validateModelPlan(primary, shoppingInput(input), context)
+      ? validateModelPlan(primary, shoppingInput(input), context, records)
       : ["inspect_orders", "inspect_claims"].includes(primary.tool)
         ? primary
         : primary.tool === "prepare_support" && supportGoal(input.task)
           ? validateSupport(primary, input)
-          : validateModelPlan(primary, input, context);
+          : validateModelPlan(primary, input, context, records);
   if (validated.tool === "confirm_interpretation")
     return { plan: validated, steps: [validated] as WorkflowStep[] };
   const seen = new Set<string>([validated.tool]);

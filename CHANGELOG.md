@@ -1,5 +1,13 @@
 # Change log
 
+## 2026-10-11 — Database catalog publication foundation
+
+- Classify legacy catalog IDs once during initialization; ordinary reads no longer overwrite database records or rely on a public SKU whitelist. Preserve retired product records for orders and groups.
+- Add immutable reviewed manifests, private staging, atomic publication, hash checks, collision rejection and reversible retirement through a privileged operator CLI.
+- Connect catalog search, public counts, category facets, imported-product shopping, groups, checkout and historical rendering to persisted records. Add indexed text search and bounded server pagination.
+- Add separate headphones, earbuds, watches, shoes, sunglasses and appliance types, typed category facts, manufacturer-photo attribution and visible image failures. Empty departments remain hidden until records are published.
+- Verify isolated publication/purchase/group/retirement contracts and dynamic brand/model recognition without model calls or paid infrastructure. Large real-brand assortments and operational scale gates remain pending.
+
 ## 2026-10-11 — Marketplace architecture and eyewear planning
 
 - Add sunglasses/eyewear with selected Oakley/Ray-Ban and an 18-house candidate shortlist, exact lens/frame variant facts and evidence boundaries.

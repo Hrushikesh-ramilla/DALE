@@ -1,6 +1,7 @@
 "use client";
 import { departments, categoryTitles } from "@/domain/departments";
 import { publicCatalog } from "@/domain/catalog";
+import type { CatalogSummary } from "./use-published-catalog";
 import {
   ArrowRight,
   Smartphone,
@@ -20,11 +21,13 @@ const icons = {
   chargers: Plug,
 };
 export function DepartmentBrowser({
+  summary,
   departmentId,
   category,
   onDepartment,
   onCategory,
 }: {
+  summary?: CatalogSummary | null;
   departmentId: string;
   category: string;
   onDepartment: (id: string) => void;
@@ -32,7 +35,17 @@ export function DepartmentBrowser({
 }) {
   const department = departments.find((d) => d.id === departmentId);
   const records = publicCatalog.filter((p) => p.category === category);
-  const types = [
+  const counts =
+    summary?.counts ||
+    Object.fromEntries(
+      departments.flatMap((d) =>
+        d.categories.map((c) => [
+          c,
+          publicCatalog.filter((p) => p.category === c).length,
+        ]),
+      ),
+    );
+  const types = summary?.facets[category]?.productType || [
     ...new Set(
       records
         .map((p) => p.attributes?.productType)
@@ -45,16 +58,18 @@ export function DepartmentBrowser({
       aria-label="Browse departments and categories"
     >
       <nav className="department-tabs" aria-label="Departments">
-        {departments.map((d) => (
-          <button
-            type="button"
-            key={d.id}
-            aria-pressed={d.id === departmentId}
-            onClick={() => onDepartment(d.id)}
-          >
-            {d.title}
-          </button>
-        ))}
+        {departments
+          .filter((d) => d.categories.some((c) => counts[c] > 0))
+          .map((d) => (
+            <button
+              type="button"
+              key={d.id}
+              aria-pressed={d.id === departmentId}
+              onClick={() => onDepartment(d.id)}
+            >
+              {d.title}
+            </button>
+          ))}
       </nav>
       {department && (
         <>
@@ -80,12 +95,10 @@ export function DepartmentBrowser({
           </h3>
           <div className="department-grid">
             {department.categories
-              .filter((c) => publicCatalog.some((p) => p.category === c))
+              .filter((c) => counts[c] > 0)
               .map((c) => {
                 const Icon = icons[c as keyof typeof icons] || ShoppingBag;
-                const count = publicCatalog.filter(
-                  (p) => p.category === c,
-                ).length;
+                const count = counts[c] || 0;
                 return (
                   <button
                     className="department-tile"

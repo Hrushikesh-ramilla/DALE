@@ -1,5 +1,14 @@
 import type { RetailCategory } from "./departments";
 export const retailTypes: Record<RetailCategory, string[]> = {
+  watches: ["watch"],
+  footwear: ["sneaker", "loafer", "boot", "sandal", "dress shoe"],
+  sunglasses: ["sunglasses"],
+  appliances: [
+    "refrigerator",
+    "washing machine",
+    "vacuum cleaner",
+    "air purifier",
+  ],
   phones: ["phone"],
   laptops: ["laptop"],
   tablets: ["tablet"],

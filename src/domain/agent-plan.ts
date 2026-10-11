@@ -75,6 +75,7 @@ export type ResearchContext = Omit<ResearchNeed, "model" | "budget"> & {
 export function fallbackPlan(
   input: AgentRequest,
   previous?: ResearchContext,
+  records?: import("./catalog").Product[],
 ): AgentPlan {
   const text = input.task;
   // Quoted seller instructions are analyzed, never executed.
@@ -128,16 +129,20 @@ export function fallbackPlan(
       question:
         "This comparison uses US reference prices and USD demo offers. What is your maximum budget in USD?",
     };
-  const retailIntent = understandVoice({
-    transcript: text,
-    model: input.model,
-    budget: input.budget,
-  });
+  const retailIntent = understandVoice(
+    {
+      transcript: text,
+      model: input.model,
+      budget: input.budget,
+    },
+    records,
+  );
   if (
     retailIntent.kind === "shopping" &&
-    (retailIntent.brief.model === lifestyleProfile || retailCategories.some(
-      (category) => category === retailIntent.brief.category,
-    ))
+    (retailIntent.brief.model === lifestyleProfile ||
+      retailCategories.some(
+        (category) => category === retailIntent.brief.category,
+      ))
   )
     return {
       tool: "search_retail",
@@ -263,8 +268,9 @@ export function validateModelPlan(
   plan: AgentPlan,
   input: AgentRequest,
   previous?: ResearchContext,
+  records?: import("./catalog").Product[],
 ) {
-  const explicit = fallbackPlan(input, previous);
+  const explicit = fallbackPlan(input, previous, records);
   if (
     plan.tool === "research_products" &&
     explicit.tool === "research_products"

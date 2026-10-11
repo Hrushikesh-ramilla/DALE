@@ -28,7 +28,32 @@ export const briefSchema = z.object({
       modelName: z.string().trim().toLowerCase().min(1).max(80).optional(),
       storageGb: z.number().int().min(1).max(8192).optional(),
       ramGb: z.number().int().min(1).max(256).optional(),
-      concentration: z.enum(["eau de parfum", "eau de toilette", "eau de cologne"]).optional(),
+      movement: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      caseDiameterMm: z.number().positive().max(10000).optional(),
+      waterResistanceM: z.number().positive().max(10000).optional(),
+      frameShape: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      frameMaterial: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      lensWidthMm: z.number().positive().max(10000).optional(),
+      bridgeMm: z.number().positive().max(10000).optional(),
+      templeMm: z.number().positive().max(10000).optional(),
+      polarization: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      uvProtection: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      sizeSystem: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      shoeSize: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      connection: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      noiseCancellation: z
+        .string()
+        .trim()
+        .toLowerCase()
+        .min(1)
+        .max(80)
+        .optional(),
+      batteryHours: z.number().positive().max(10000).optional(),
+      voltage: z.number().positive().max(10000).optional(),
+      capacityLitres: z.number().positive().max(10000).optional(),
+      concentration: z
+        .enum(["eau de parfum", "eau de toilette", "eau de cologne"])
+        .optional(),
     })
     .strict()
     .optional(),

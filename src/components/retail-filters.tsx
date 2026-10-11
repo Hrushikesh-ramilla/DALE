@@ -4,11 +4,13 @@ import type { RetailRequirements } from "@/domain/catalog";
 import { publicCatalog } from "@/domain/catalog";
 import { isRetailCategory } from "@/domain/departments";
 export function RetailFilters({
+  facets,
   category,
   value,
   onChange,
   fixtures = false,
 }: {
+  facets?: Record<string, string[]>;
   category: string;
   value: RetailRequirements;
   onChange: (value: RetailRequirements) => void;
@@ -16,18 +18,20 @@ export function RetailFilters({
 }) {
   if (
     !isRetailCategory(category) &&
+    !facets?.brand?.length &&
     !publicCatalog.some((p) => p.category === category && p.brand)
   )
     return null;
   const records = publicCatalog.filter((p) => p.category === category);
-  const recorded = (key: keyof RetailRequirements) => [
-    ...new Set(
-      records
-        .map((p) => p.attributes?.[key])
-        .filter((v) => v !== undefined)
-        .map(String),
-    ),
-  ];
+  const recorded = (key: keyof RetailRequirements) =>
+    facets?.[key] || [
+      ...new Set(
+        records
+          .map((p) => p.attributes?.[key])
+          .filter((v) => v !== undefined)
+          .map(String),
+      ),
+    ];
   function select(
     key: keyof RetailRequirements,
     label: string,
@@ -43,7 +47,19 @@ export function RetailFilters({
             const next = { ...value };
             if (event.target.value)
               Object.assign(next, {
-                [key]: ["volumeMl", "storageGb", "ramGb"].includes(key)
+                [key]: [
+                  "volumeMl",
+                  "storageGb",
+                  "ramGb",
+                  "caseDiameterMm",
+                  "waterResistanceM",
+                  "lensWidthMm",
+                  "bridgeMm",
+                  "templeMm",
+                  "batteryHours",
+                  "voltage",
+                  "capacityLitres",
+                ].includes(key)
                   ? Number(event.target.value)
                   : event.target.value,
               });
@@ -74,6 +90,45 @@ export function RetailFilters({
         <>
           {select("storageGb", "Storage (GB)", recorded("storageGb"))}
           {select("ramGb", "RAM (GB)", recorded("ramGb"))}
+        </>
+      )}
+      {category === "watches" && (
+        <>
+          {select("movement", "Movement", recorded("movement"))}
+          {select(
+            "caseDiameterMm",
+            "Case diameter (mm)",
+            recorded("caseDiameterMm"),
+          )}
+          {select(
+            "waterResistanceM",
+            "Stated water resistance (m)",
+            recorded("waterResistanceM"),
+          )}
+        </>
+      )}
+      {category === "sunglasses" && (
+        <>
+          {select("frameShape", "Frame shape", recorded("frameShape"))}
+          {select("frameMaterial", "Frame material", recorded("frameMaterial"))}
+          {select("polarization", "Polarization", recorded("polarization"))}
+          {select("lensWidthMm", "Lens width (mm)", recorded("lensWidthMm"))}
+        </>
+      )}
+      {category === "footwear" && (
+        <>
+          {select("sizeSystem", "Sizing system", recorded("sizeSystem"))}
+          {select("shoeSize", "Shoe size", recorded("shoeSize"))}
+        </>
+      )}
+      {["headphones", "earbuds", "audio"].includes(category) && (
+        <>
+          {select("connection", "Connection", recorded("connection"))}
+          {select(
+            "noiseCancellation",
+            "Noise cancellation",
+            recorded("noiseCancellation"),
+          )}
         </>
       )}
       {category === "fragrance" &&

@@ -1,4 +1,5 @@
 "use client";
+import { usePublishedCatalog } from "./use-published-catalog";
 import { RetailFilters } from "./retail-filters";
 import { DepartmentBrowser } from "./department-browser";
 import { CatalogEvidence } from "./catalog-evidence";
@@ -58,13 +59,7 @@ import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 
 const categoryTitles: Record<string, string> = titles;
-const parallaxCategories = departments.map((department, index) => ({
-  id: department.id, numeral: `0${index + 1} / 06`, tagline: "SHOP WITH DALE",
-  title: department.title, desc: department.description,
-  tags: department.id === "electronics" ? ["Device requirements", "Protected approval"] : ["Exact variants", "Attribute comparison", "Group savings"],
-  featured: publicCatalog.find((product) => department.categories.some((category) => category === product.category))!,
-  count: publicCatalog.filter((product) => department.categories.some((category) => category === product.category)).length,
-}));
+
 
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
@@ -202,7 +197,19 @@ export default function Storefront() {
   const [requirements, setRequirements] = useState<RetailRequirements>({});
   const [catalogQuery, setCatalogQuery] = useState("");
   const [visibleLimit, setVisibleLimit] = useState(12);
-  const visibleProducts = products.filter((product) =>
+  const databaseCatalog = usePublishedCatalog({ enabled: !session?.fixtureWorkspace && briefDirty && !isDeviceMode, category, query: catalogQuery, requirements });
+  const displayedProducts = !session?.fixtureWorkspace && briefDirty && !isDeviceMode ? databaseCatalog.products : products;
+  const resolveProduct = (id: string) => databaseCatalog.products.find(p => p.id === id) || session?.catalogReferences.find(p => p.id === id) || products.find(p => p.id === id) || productById(id);
+  const catalogCount = (category: string) => databaseCatalog.summary ? databaseCatalog.summary.counts[category] || 0 : publicCatalog.filter(p => p.category === category).length;
+  const parallaxCategories = departments.filter(d => d.categories.some(c => catalogCount(c) > 0)).map((department, index) => ({
+  id: department.id, numeral: `${String(index + 1).padStart(2, "0")} / ${departments.filter(d => d.categories.some(c => catalogCount(c) > 0)).length}`, tagline: "SHOP WITH DALE",
+  title: department.title, desc: department.description,
+  tags: department.id === "electronics" ? ["Device requirements", "Protected approval"] : ["Exact variants", "Attribute comparison", "Group savings"],
+  featured: (databaseCatalog.summary?.featured || publicCatalog).find((product) => department.categories.some((category) => category === product.category))!,
+  count: department.categories.reduce((count, category) => count + (databaseCatalog.summary?.counts[category] ?? publicCatalog.filter(p => p.category === category).length), 0),
+}));
+
+  const visibleProducts = !session?.fixtureWorkspace && briefDirty && !isDeviceMode ? displayedProducts : displayedProducts.filter((product) =>
     [product.name, product.description, ...product.specs]
       .join(" ")
       .toLowerCase()
@@ -227,6 +234,10 @@ export default function Storefront() {
       setPriority(input.priority);
       setWeights(input.weights);
       setProducts(data.brief.clarificationRequired ? [] : searchCatalog(input, data.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog));
+      if (!data.fixtureWorkspace && !data.brief.clarificationRequired) {
+        const params = new URLSearchParams({ category: input.category, budget: String(input.budget), ...Object.fromEntries(Object.entries(input.requirements || {}).map(([key, value]) => [key, String(value)])) });
+        void api<{ products: Product[] }>(`/api/catalog?${params}`).then(result => setProducts(searchCatalog(input, result.products))).catch(() => setError("Your saved catalog search could not be restored. Please retry Find my match."));
+      }
       setQuestions(clarifyBrief(input));
       if (data.conversation.length) setSummary(data.conversation.at(-1)!.text);
       setBriefDirty(false);
@@ -956,7 +967,7 @@ export default function Storefront() {
                     </span>
                   </div>
                 </div>
-                <DepartmentBrowser departmentId={departmentId || departments.find(d => d.categories.some(c => c === category))?.id || "electronics"} category={category} onDepartment={openDepartment} onCategory={browseCollection} />
+                <DepartmentBrowser summary={databaseCatalog.summary} departmentId={departmentId || departments.find(d => d.categories.some(c => c === category))?.id || "electronics"} category={category} onDepartment={openDepartment} onCategory={browseCollection} />
                 {session?.fixtureWorkspace && <div
                   className="catalog-category-pills"
                   aria-label="Filter product category"
@@ -993,7 +1004,8 @@ export default function Storefront() {
                     </button>
                   ))}
                 </div>}
-                <RetailFilters category={category} fixtures={Boolean(session?.fixtureWorkspace)} value={requirements} onChange={(value) => { setRequirements(value); setBriefDirty(true); setProducts(searchCatalog({ model, category, budget: 1000000, requirements: value }, session?.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog)); }} />
+                <RetailFilters facets={databaseCatalog.summary?.facets[category]} category={category} fixtures={Boolean(session?.fixtureWorkspace)} value={requirements} onChange={(value) => { setRequirements(value); setBriefDirty(true); setProducts(searchCatalog({ model, category, budget: 1000000, requirements: value }, session?.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog)); }} />
+                {databaseCatalog.error && <p role="alert">{databaseCatalog.error}</p>}
                 <div className="assistant-note">
                   <span className="assistant-icon">
                     <Sparkles size={17} />
@@ -1185,15 +1197,15 @@ export default function Storefront() {
                       </article>
                     ))}
                 </div>
-                {visibleProducts.length > visibleLimit && (
+                {(visibleProducts.length > visibleLimit || (!session?.fixtureWorkspace && briefDirty && databaseCatalog.total > visibleProducts.length)) && (
                   <div className="catalog-pagination">
                     <p>
                       Showing {Math.min(visibleLimit, visibleProducts.length)}{" "}
-                      of {visibleProducts.length} matching products
+                      of {!session?.fixtureWorkspace && briefDirty ? databaseCatalog.total : visibleProducts.length} matching products
                     </p>
                     <button
                       className="editorial-link"
-                      onClick={() => setVisibleLimit((limit) => limit + 12)}
+                      onClick={() => { if (!session?.fixtureWorkspace && briefDirty && visibleLimit >= visibleProducts.length) databaseCatalog.loadMore(); setVisibleLimit(limit => limit + 12); }}
                     >
                       Show more products <ArrowRight size={16} />
                     </button>
@@ -1465,7 +1477,7 @@ export default function Storefront() {
             {session?.groups.length ? (
               <div className="group-grid">
                 {session.groups.map((group) => {
-                  const product = productById(group.productId);
+                  const product = resolveProduct(group.productId);
                   return (
                     <article className="group-card" key={group.id}>
                       <ProductArt product={product} compact />
@@ -1588,14 +1600,14 @@ export default function Storefront() {
                   <article className="order-card" key={order.id}>
                     <div className="order-heading">
                       <ProductArt
-                        product={productById(order.quote.productId)}
+                        product={resolveProduct(order.quote.productId)}
                         compact
                       />
                       <div>
                         <span className="eyebrow">
                           ORDER {order.id.slice(0, 8).toUpperCase()}
                         </span>
-                        <h3>{productById(order.quote.productId).name}</h3>
+                        <h3>{resolveProduct(order.quote.productId).name}</h3>
                         <p>
                           {deviceLabel(order.quote.model)} ·{" "}
                           {order.replacementOf
@@ -2528,12 +2540,12 @@ export default function Storefront() {
                   </p>
                   <div className="quote-product">
                     <ProductArt
-                      product={productById(modal.quote.productId)}
+                      product={resolveProduct(modal.quote.productId)}
                       compact
                     />
                     <div>
-                      <strong>{productById(modal.quote.productId).name}</strong>
-                      <p>{isRetailCategory(productById(modal.quote.productId).category) ? "Exact variant selected; review its recorded attributes." : `Confirmed profile: ${deviceLabel(modal.quote.model)}`}</p>
+                      <strong>{resolveProduct(modal.quote.productId).name}</strong>
+                      <p>{isRetailCategory(resolveProduct(modal.quote.productId).category) ? "Exact variant selected; review its recorded attributes." : `Confirmed profile: ${deviceLabel(modal.quote.model)}`}</p>
                     </div>
                   </div>
                   {modal.quote.productId.startsWith("R") && (

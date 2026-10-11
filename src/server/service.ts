@@ -2,7 +2,6 @@ import { randomUUID } from "node:crypto";
 import {
   knownModels as models,
   models as sampleModels,
-  productById,
   productFits,
   meetsRetailRequirements,
 } from "../domain/catalog";
@@ -35,7 +34,11 @@ import {
 import { aiMode, evidenceAnalysis, scamAnalysis, shoppingSummary } from "./ai";
 import { evidenceHash, getAsset, putAsset } from "./storage";
 import { getDatabase } from "./database";
-import { searchStoredCatalog } from "./catalog-store";
+import {
+  searchStoredCatalog,
+  getStoredProduct,
+  getStoredProducts,
+} from "./catalog-store";
 import { customerProfile } from "./customers";
 import { selectVisionEvidence } from "./vision";
 import { briefSchema, type ShoppingBrief } from "../domain/brief";
@@ -105,8 +108,16 @@ function activeStock(
 }
 export async function snapshot(actor: Actor) {
   const state = await getWorkspace(actor.workspaceId);
+  const visibleOrders = state.orders.filter(
+    (o) => actor.role !== "buyer" || o.buyerId === actor.userId,
+  );
+  const catalogReferences = await getStoredProducts([
+    ...state.groups.map((g) => g.productId),
+    ...visibleOrders.map((o) => o.quote.productId),
+  ]);
   return {
     actor,
+    catalogReferences,
     customer: await customerProfile(actor),
     brief: state.briefs?.find((brief) => brief.buyerId === actor.userId),
     conversation:
@@ -169,7 +180,12 @@ export async function snapshot(actor: Actor) {
     groupPolicy: state.groupPolicy || defaultGroupPolicy,
     groups: state.groups.map((g) => ({
       ...g,
-      terms: g.terms || groupTerms(undefined, productById(g.productId)),
+      terms:
+        g.terms ||
+        groupTerms(
+          undefined,
+          catalogReferences.find((p) => p.id === g.productId)!,
+        ),
       members: undefined,
       memberCount: g.members.length,
       joined: g.members.includes(actor.userId),
@@ -376,7 +392,7 @@ export async function makeQuote(
   groupId?: string,
 ) {
   buyer(actor);
-  const product = productById(productId);
+  const product = await getStoredProduct(productId, undefined, true);
   if (product.comparisonOnly)
     throw new Error(
       "This manufacturer record is comparison-only until the exact purchasable variant is verified.",
@@ -495,7 +511,7 @@ export async function joinGroup(
   expectedPolicyVersion?: number,
 ) {
   buyer(actor);
-  const product = productById(productId);
+  const product = await getStoredProduct(productId, undefined, true);
   if (product.comparisonOnly)
     throw new Error(
       "This comparison-only record has no verified purchasable variant.",
@@ -622,7 +638,7 @@ export async function updateGroupPolicy(
   reviewer(actor);
   const policy = groupPolicySchema.parse(input);
   for (const tier of policy.productTiers) {
-    const product = productById(tier.productId);
+    const product = await getStoredProduct(tier.productId, undefined, true);
     if (tier.minimumMembers > product.stock)
       throw new Error(
         "The approved group threshold exceeds this product's stock.",
@@ -664,64 +680,67 @@ export async function checkout(
   fingerprint: string,
 ) {
   buyer(actor);
-  const prepared = await mutateWorkspace(actor.workspaceId, (state) => {
-    const quote = state.quotes.find(
-      (q) => q.id === quoteId && q.buyerId === actor.userId,
-    );
-    if (!quote) throw new Error("Quote not found");
-    assertCurrentQuote(state, quote);
-    checkPurchase(quote, fingerprint, quote);
-    const existing = state.orders.find((o) => o.quote.id === quoteId);
-    if (existing)
-      return {
-        order: existing,
-        operation: state.operations.find(
-          (op) => op.kind === "create" && op.orderId === existing.id,
-        )!,
-      };
-    if (
-      quote.groupId &&
-      state.orders.some(
-        (order) =>
-          order.quote.groupId === quote.groupId &&
-          order.buyerId === actor.userId &&
-          order.status !== "canceled",
+  const prepared = await mutateWorkspace(
+    actor.workspaceId,
+    async (state, sql) => {
+      const quote = state.quotes.find(
+        (q) => q.id === quoteId && q.buyerId === actor.userId,
+      );
+      if (!quote) throw new Error("Quote not found");
+      assertCurrentQuote(state, quote);
+      checkPurchase(quote, fingerprint, quote);
+      const existing = state.orders.find((o) => o.quote.id === quoteId);
+      if (existing)
+        return {
+          order: existing,
+          operation: state.operations.find(
+            (op) => op.kind === "create" && op.orderId === existing.id,
+          )!,
+        };
+      if (
+        quote.groupId &&
+        state.orders.some(
+          (order) =>
+            order.quote.groupId === quote.groupId &&
+            order.buyerId === actor.userId &&
+            order.status !== "canceled",
+        )
       )
-    )
-      throw new Error(
-        "Your group purchase already exists. Continue it from your orders.",
-      );
-    if (
-      activeStock(state, quote.productId, quote.groupId, actor.userId) >=
-      productById(quote.productId).stock
-    )
-      throw new Error(
-        "The last item was reserved. Please review another option.",
-      );
-    const order: Order = {
-      id: randomUUID(),
-      buyerId: actor.userId,
-      quote,
-      status: "checkout_pending",
-      createdAt: new Date().toISOString(),
-      refundedAmount: 0,
-      dispatchEvidence: [],
-      events: [],
-    };
-    const operation: Operation = {
-      id: randomUUID(),
-      orderId: order.id,
-      kind: "create",
-      state: "pending",
-      amount: quote.amount,
-      createdAt: new Date().toISOString(),
-    };
-    state.orders.push(order);
-    state.operations.push(operation);
-    event(order, "Purchase approved. Checkout is awaiting payment.");
-    audit(state, actor, "checkout.approved", order.id);
-    return { order, operation };
-  });
+        throw new Error(
+          "Your group purchase already exists. Continue it from your orders.",
+        );
+      if (
+        activeStock(state, quote.productId, quote.groupId, actor.userId) >=
+        (await getStoredProduct(quote.productId, sql, true)).stock
+      )
+        throw new Error(
+          "The last item was reserved. Please review another option.",
+        );
+      const order: Order = {
+        id: randomUUID(),
+        buyerId: actor.userId,
+        quote,
+        status: "checkout_pending",
+        createdAt: new Date().toISOString(),
+        refundedAmount: 0,
+        dispatchEvidence: [],
+        events: [],
+      };
+      const operation: Operation = {
+        id: randomUUID(),
+        orderId: order.id,
+        kind: "create",
+        state: "pending",
+        amount: quote.amount,
+        createdAt: new Date().toISOString(),
+      };
+      state.orders.push(order);
+      state.operations.push(operation);
+      event(order, "Purchase approved. Checkout is awaiting payment.");
+      audit(state, actor, "checkout.approved", order.id);
+      return { order, operation };
+    },
+  );
   if (prepared.order.providerOrderId) return prepared.order;
   try {
     const result = await createPayment(
@@ -1115,7 +1134,7 @@ export async function resolveCase(
         throw new Error(
           "Refund work exists. Reconcile it before choosing a replacement.",
         );
-      const product = productById(order.quote.productId);
+      const product = await getStoredProduct(order.quote.productId, sql, true);
       if (activeStock(state, product.id) >= product.stock)
         throw new Error(
           "Replacement stock is unavailable. Ask the customer to choose a refund.",
