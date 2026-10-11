@@ -111,9 +111,16 @@ export async function snapshot(actor: Actor) {
   const visibleOrders = state.orders.filter(
     (o) => actor.role !== "buyer" || o.buyerId === actor.userId,
   );
+  const visibleRuns = (state.agentRuns || []).filter(
+    (run) => actor.role === "buyer" && run.buyerId === actor.userId,
+  );
   const catalogReferences = await getStoredProducts([
     ...state.groups.map((g) => g.productId),
     ...visibleOrders.map((o) => o.quote.productId),
+    ...visibleRuns.flatMap((run) => [
+      ...run.productIds,
+      ...(run.groupOffers || []).map((offer) => offer.productId),
+    ]),
   ]);
   return {
     actor,
@@ -123,36 +130,34 @@ export async function snapshot(actor: Actor) {
     conversation:
       state.conversations?.find((item) => item.buyerId === actor.userId)
         ?.turns || [],
-    agentRuns: (state.agentRuns || [])
-      .filter((run) => actor.role === "buyer" && run.buyerId === actor.userId)
-      .map((run) => ({
-        id: run.id,
-        task: run.task,
-        at: run.at,
-        status: run.status,
-        reply: run.reply,
-        steps: run.steps,
-        productIds: run.productIds,
-        briefVersion: run.briefVersion,
-        intent: run.intent,
-        mode: run.mode,
-        proposedTask: run.proposedTask,
-        recommendation: run.recommendation,
-        context: run.context,
-        research: run.research,
-        sourceReceipts: run.sourceReceipts,
-        claims: run.claims,
-        safety: run.safety,
-        groupOffers: run.groupOffers?.map((offer) => ({
-          ...offer,
-          policyVersion: offer.policyVersion ?? 1,
-          minimumMembers: offer.minimumMembers ?? 2,
-          discountPercent: offer.discountPercent ?? 10,
-          checkoutMinutes: offer.checkoutMinutes ?? 30,
-        })),
-        toolCalls: run.toolCalls,
-        orders: run.orders,
+    agentRuns: visibleRuns.map((run) => ({
+      id: run.id,
+      task: run.task,
+      at: run.at,
+      status: run.status,
+      reply: run.reply,
+      steps: run.steps,
+      productIds: run.productIds,
+      briefVersion: run.briefVersion,
+      intent: run.intent,
+      mode: run.mode,
+      proposedTask: run.proposedTask,
+      recommendation: run.recommendation,
+      context: run.context,
+      research: run.research,
+      sourceReceipts: run.sourceReceipts,
+      claims: run.claims,
+      safety: run.safety,
+      groupOffers: run.groupOffers?.map((offer) => ({
+        ...offer,
+        policyVersion: offer.policyVersion ?? 1,
+        minimumMembers: offer.minimumMembers ?? 2,
+        discountPercent: offer.discountPercent ?? 10,
+        checkoutMinutes: offer.checkoutMinutes ?? 30,
       })),
+      toolCalls: run.toolCalls,
+      orders: run.orders,
+    })),
     fixtureWorkspace: !!state.fixtureWorkspace,
     signedWebhookReceipts: (state.signedWebhookReceipts || [])
       .map((receipt) => ({

@@ -302,6 +302,14 @@ export function brandedShopping(
       priority: "price",
       preference: "",
       requirements: {
+        ...(category === "watches" && text.match(/\b(\d+(?:\.\d+)?)\s*mm\b/i)
+          ? {
+              caseDiameterMm: Number(
+                text.match(/\b(\d+(?:\.\d+)?)\s*mm\b/i)![1],
+              ),
+            }
+          : {}),
+
         ...(category === "sunglasses" && /\bsquare\b/i.test(text)
           ? { frameShape: "square" }
           : category === "sunglasses" &&

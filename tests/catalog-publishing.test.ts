@@ -16,6 +16,7 @@ import {
 import { bootstrapCatalog } from "../src/server/catalog-bootstrap";
 import { getDatabase, closeDatabase } from "../src/server/database";
 import { customerSession } from "../src/server/customers";
+import { actionSchema } from "../src/domain/actions";
 import {
   makeQuote,
   checkout,
@@ -57,6 +58,46 @@ function manifest(id: string) {
     ],
   };
 }
+it("paginates a full 500-record publication without duplicates or fixture leakage", async () => {
+  const input = manifest("batch-capacity");
+  const template = input.products[0];
+  input.products = Array.from({ length: 500 }, (_, index) => ({
+    ...template,
+    id: `isolated-capacity-${index.toString().padStart(4, "0")}`,
+    name: `IsolatedCapacity ${index}`,
+    price: 10000 + index,
+  }));
+  const staged = await stageCatalog(input);
+  expect((await browseCatalog({ query: "IsolatedCapacity" })).total).toBe(0);
+  await publishCatalog(staged.id, staged.hash);
+  const ids: string[] = [];
+  for (let page = 1; page <= 11; page++) {
+    const result = await browseCatalog({ query: "IsolatedCapacity", page });
+    expect(result.total).toBe(500);
+    expect(result.products.length).toBe(page === 11 ? 20 : 48);
+    ids.push(...result.products.map((product) => product.id));
+  }
+  expect(new Set(ids).size).toBe(500);
+  expect(ids).toEqual(input.products.map((product) => product.id));
+  await retireCatalog(staged.id);
+  expect((await browseCatalog({ query: "IsolatedCapacity" })).total).toBe(0);
+});
+it("accepts full manifest product IDs for explicit commerce approvals", () => {
+  const productId = "record-" + "x".repeat(73);
+  for (const action of ["quote", "join_group"]) {
+    expect(
+      actionSchema.safeParse({ action, productId, model: "not-required" })
+        .success,
+    ).toBe(true);
+    expect(
+      actionSchema.safeParse({
+        action,
+        productId: productId + "x",
+        model: "not-required",
+      }).success,
+    ).toBe(false);
+  }
+});
 it("stages privately, publishes without a code whitelist, and preserves new-product commerce and retirement history", async () => {
   const input = manifest("lifecycle");
   const id = input.products[0].id;

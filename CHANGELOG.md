@@ -1,5 +1,13 @@
 # Change log
 
+## 2026-10-11 — Reviewed Tissot watches and imported-product agent approvals
+
+- Add ten distinct manufacturer collections with exact reference numbers, attributed photographs, recorded movement/case dimensions and optional explicitly stated water resistance. Preserve missing-fit and sandbox inventory boundaries.
+- Add a bounded official-source collector, source fingerprints and identity/media/currency validation. Product publication remains an immutable reviewed batch.
+- Resolve imported recommendations and group offers through persisted customer-visible product references; support manifest IDs through explicit commerce actions.
+- Verify a 500-record isolated publication across eleven pages, withdrawal, full ID limits and a browser journey covering photographs, retained agent recommendations, independent group members, explicit simulated purchase and order privacy.
+- Catalog scope is 55 records across eight nonempty departments. This does not complete the planned 2,000-product assortment or commercial load qualification.
+
 ## 2026-10-11 — Reviewed Oakley sunglasses batch
 
 - Add ten distinct manufacturer-referenced sunglasses models: Holbrook, Frogskins, Sutro, Flak 2.0 XL, Gascan, Batwolf, Jawbreaker, Half Jacket 2.0 XL, Split Shot and Radar EV Pitch.

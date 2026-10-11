@@ -11,7 +11,16 @@ export const actionSchema = z.discriminatedUnion("action", [
   z.object({
     action: z.literal("provider_reconcile"),
     orderId: id,
-    refundReferences: z.array(z.string().min(1).max(255).regex(/^[A-Za-z0-9-]+$/)).max(5).default([]),
+    refundReferences: z
+      .array(
+        z
+          .string()
+          .min(1)
+          .max(255)
+          .regex(/^[A-Za-z0-9-]+$/),
+      )
+      .max(5)
+      .default([]),
   }),
   z.object({
     action: z.literal("group_policy"),
@@ -20,7 +29,7 @@ export const actionSchema = z.discriminatedUnion("action", [
   }),
   z.object({
     action: z.literal("agent_group_commit"),
-    productId: z.string().min(1).max(100),
+    productId: z.string().min(1).max(80),
     briefVersion: z.number().int().min(1),
     policyVersion: z.number().int().min(1),
   }),
@@ -55,13 +64,13 @@ export const actionSchema = z.discriminatedUnion("action", [
   }),
   z.object({
     action: z.literal("quote"),
-    productId: z.string().max(20),
+    productId: z.string().min(1).max(80),
     model: z.string().max(80),
     groupId: id.optional(),
   }),
   z.object({
     action: z.literal("join_group"),
-    productId: z.string().max(20),
+    productId: z.string().min(1).max(80),
     model: z.string().max(80),
   }),
   z.object({ action: z.literal("leave_group"), groupId: id }),

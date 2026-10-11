@@ -121,6 +121,11 @@ export function AgentWorkspace({
   }
   const runs = session?.agentRuns || [];
   const latest = runs.at(-1);
+  const resolveProduct = (id: string) =>
+    session?.catalogReferences.find((product) => product.id === id) ||
+    [...catalog, ...publicCatalog, ...realProducts].find(
+      (product) => product.id === id,
+    );
   const reviewCurrent =
     !!latest?.briefVersion &&
     latest.briefVersion === session?.brief?.version &&
@@ -188,8 +193,8 @@ export function AgentWorkspace({
             <strong>Buyer advocate</strong>
             <span>
               Sourced electronics research, six-department variant comparison,
-              message safety, group savings and order support. Review the sources and
-              approve each commitment yourself.
+              message safety, group savings and order support. Review the
+              sources and approve each commitment yourself.
             </span>
           </div>
         )}
@@ -435,7 +440,8 @@ export function AgentWorkspace({
                 </p>
                 <div className="agent-options">
                   {latest.groupOffers.map((offer) => {
-                    const product = productById(offer.productId);
+                    const product = resolveProduct(offer.productId);
+                    if (!product) return null;
                     const group = session?.groups.find(
                       (item) =>
                         item.productId === offer.productId &&
@@ -524,9 +530,7 @@ export function AgentWorkspace({
                   </p>
                 )}
                 {latest.productIds.map((id) => {
-                  const product = [...catalog, ...publicCatalog, ...realProducts].find(
-                    (item) => item.id === id,
-                  );
+                  const product = resolveProduct(id);
                   return product ? (
                     <article key={id}>
                       <strong>{product.name}</strong>
