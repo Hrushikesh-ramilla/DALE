@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { briefSchema } from "./brief";
-import { retailCategories } from "./departments";
+import { retailCategories, categoryIds, lifestyleProfile } from "./departments";
 import { understandVoice } from "./voice";
 import { realModels, type Cable, type ResearchNeed } from "./research";
 import { mentionedModels } from "./identification";
@@ -16,8 +16,8 @@ export const plannerSchema = z.discriminatedUnion("tool", [
   z
     .object({
       tool: z.literal("search_retail"),
-      category: z.enum(retailCategories),
-      budget: z.number().int().min(1).max(100000),
+      category: z.enum(categoryIds),
+      budget: z.number().int().min(1).max(1000000),
       requirements: briefSchema.shape.requirements,
       preference: z.string().max(80).default(""),
     })
@@ -135,9 +135,9 @@ export function fallbackPlan(
   });
   if (
     retailIntent.kind === "shopping" &&
-    retailCategories.some(
+    (retailIntent.brief.model === lifestyleProfile || retailCategories.some(
       (category) => category === retailIntent.brief.category,
-    )
+    ))
   )
     return {
       tool: "search_retail",

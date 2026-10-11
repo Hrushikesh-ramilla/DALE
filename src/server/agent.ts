@@ -45,7 +45,10 @@ export async function runAgent(actor: Actor, raw: AgentRequest) {
   // Engineering fixtures never incur model spend, even if the host is live.
   const planned =
     before.fixtureWorkspace || before.modes.ai !== "live"
-      ? { ...fallbackWorkflow(planningInput, previous), mode: "catalog" as const }
+      ? {
+          ...fallbackWorkflow(planningInput, previous),
+          mode: "catalog" as const,
+        }
       : await planAgent(planningInput, previous, before.agentRuns);
   let intent: VoiceIntent = { kind: "clarification", message: "" };
   const run: AgentRun = {
@@ -114,15 +117,33 @@ export async function runAgent(actor: Actor, raw: AgentRequest) {
       intent = { kind: "clarification", message: run.reply };
     } else if (plan.tool === "search_retail") {
       run.context = undefined;
-      intent = { kind: "shopping", brief: { message: input.task, model: lifestyleProfile, category: plan.category, budget: plan.budget, requirements: plan.requirements, preference: plan.preference, priority: "price" } };
+      intent = {
+        kind: "shopping",
+        brief: {
+          message: input.task,
+          model: lifestyleProfile,
+          category: plan.category,
+          budget: plan.budget,
+          requirements: plan.requirements,
+          preference: plan.preference,
+          priority: "price",
+        },
+      };
       result = await shop(intent.brief, actor, "fixture");
-      run.productIds = result.products.slice(0, 6).map((product) => product.id);
+      run.productIds = result.products
+        .filter((product) => !product.comparisonOnly)
+        .slice(0, 6)
+        .map((product) => product.id);
       run.briefVersion = result.brief?.version;
-      run.status = result.products.length ? "ready_for_review" : "needs_input";
+      run.status = run.productIds.length ? "ready_for_review" : "needs_input";
       run.reply = result.products.length
-        ? `Compared ${result.products.length} ${categoryTitles[plan.category].toLowerCase()} variants within ${formatMoney(plan.budget)} against your stated attributes. ${result.products[0].name} is the lowest-priced matching SKU at ${formatMoney(result.products[0].price)}. These are merchant-authored engineering offers, not independently verified manufacturer products. ${plan.category === "clothing" ? "Review the size measurements before choosing." : plan.category === "fragrance" ? "Scent enjoyment is personal; compare the listed notes." : plan.category === "beauty" ? "Review ingredients; no medical or allergy-safety claim is made." : "Check the recorded dimensions before choosing."} No purchase has been made.`
+        ? `Compared ${result.products.length} ${categoryTitles[plan.category].toLowerCase()} records within ${formatMoney(plan.budget)} against your stated attributes. ${result.products[0].name} has the lowest listed offer at ${formatMoney(result.products[0].price)}. ${before.fixtureWorkspace ? "These are merchant-authored engineering offers, not independently verified manufacturer products." : "Product identities and recorded facts link to manufacturer sources; DALE prices and stock are simulated sandbox offers. Missing facts are disclosed, never guessed."} ${result.products.every((p) => p.comparisonOnly) ? "These records are comparison-only: exact variants need verification before purchase or group commitment." : plan.category === "clothing" ? "Size labels do not guarantee fit; review the available measurements." : plan.category === "fragrance" ? "Scent enjoyment is personal; compare the listed notes and concentration." : plan.category === "beauty" ? "Review ingredients; no medical or allergy-safety claim is made." : "Recorded specifications do not prove compatibility with another device."} No purchase has been made.`
         : "No recorded variant meets all of your attributes and budget. I have not relaxed them or invented inventory. Change a constraint explicitly to compare alternatives.";
-      run.steps.push("Searched the merchant catalog by department, exact size, material, scent and volume where stated.", "Applied eligibility before price ranking and returned source records for each exact variant.", "Kept group commitment and purchase approval separate; no money moved.");
+      run.steps.push(
+        "Searched the merchant catalog by department, exact size, material, scent and volume where stated.",
+        "Applied eligibility before price ranking and returned source records for each exact variant.",
+        "Kept group commitment and purchase approval separate; no money moved.",
+      );
     } else if (plan.tool === "research_products") {
       const { model, budget, cable, fastCharging, deviceFamily } = plan;
       run.context = {

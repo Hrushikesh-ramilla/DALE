@@ -24,10 +24,15 @@ export const briefSchema = z.object({
         .optional(),
       use: z.string().trim().toLowerCase().min(1).max(60).optional(),
       volumeMl: z.number().int().min(1).max(1000).optional(),
+      brand: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      modelName: z.string().trim().toLowerCase().min(1).max(80).optional(),
+      storageGb: z.number().int().min(1).max(8192).optional(),
+      ramGb: z.number().int().min(1).max(256).optional(),
+      concentration: z.enum(["eau de parfum", "eau de toilette", "eau de cologne"]).optional(),
     })
     .strict()
     .optional(),
-  budget: z.number().int().min(1).max(100000),
+  budget: z.number().int().min(1).max(1000000),
   preference: z.string().trim().max(80).default(""),
   priority: z.enum(["price", "features"]).default("price"),
   weights: z

@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Sourced branded catalogue
+
+- Replace ordinary invented inventory with 35 manufacturer-linked branded records, preserving sample SKU histories. Add phones, laptops, tablets and nested department/category/type navigation.
+- Carry exact brand/model, size, concentration, RAM/storage and budget constraints through persisted queries, agent plans, groups and purchase guards. Withhold incomplete apparel candidates; disclose missing facts and simulated offers.
+- Add branded query/guard/refinement contracts and desktop/mobile browser coverage. Preserve provider configuration and customer data. Final release evidence is tracked in docs/BRANDED_CATALOG.md.
+
 ## 2026-10-11 — Six-department agent shopping
 
 - Add 60 distinct lifestyle families with 180 exact clothing/fragrance/bag/home/beauty SKUs, alongside existing electronics. Clearly separate merchant sample specifications from reviewed manufacturer identity.

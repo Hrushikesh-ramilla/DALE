@@ -39,10 +39,10 @@ try {
   );
   const catalog = await (await contexts[0].get("/api/catalog")).json();
   check(
-    "PostgreSQL catalog has six departments and 223 records",
-    catalog.total === 223 &&
+    "PostgreSQL catalog has six departments and 35 sourced records",
+    catalog.total === 35 &&
       catalog.departments.length === 6 &&
-      catalog.products.length === 48,
+      catalog.products.length === 35,
   );
   if (restart) {
     check("Observed actual app restart", health.instance !== saved.instance);
@@ -80,11 +80,16 @@ try {
         owners[0].actor.workspaceId === owners[1].actor.workspaceId,
     );
     const brief = {
-      message: "linen shirt size M",
+      message: "Givenchy cotton t-shirt size M",
       model: "not-required",
       category: "clothing",
-      budget: 6000,
-      requirements: { productType: "shirt", material: "linen", size: "M" },
+      budget: 60000,
+      requirements: {
+        brand: "givenchy",
+        productType: "t-shirt",
+        material: "cotton",
+        size: "M",
+      },
       preference: "",
       priority: "price",
     };
@@ -92,12 +97,12 @@ try {
       await post(context, "/api/brief", brief);
     const first = await post(contexts[0], "/api/actions", {
       action: "join_group",
-      productId: "L005",
+      productId: "B23",
       model: "not-required",
     });
     const second = await post(contexts[1], "/api/actions", {
       action: "join_group",
-      productId: "L005",
+      productId: "B23",
       model: "not-required",
     });
     check(
@@ -111,7 +116,7 @@ try {
         ),
     );
     const wrong = await contexts[0].post("/api/actions", {
-      data: { action: "quote", productId: "L004", model: "not-required" },
+      data: { action: "quote", productId: "B22", model: "not-required" },
     });
     check("Server refuses a different size", !wrong.ok());
     const fixture = await post(contexts[2], "/api/demo", {

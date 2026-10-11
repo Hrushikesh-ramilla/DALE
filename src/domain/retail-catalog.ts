@@ -12,7 +12,7 @@ type Family = {
   use: string;
   detail: string;
 };
-const families: Record<RetailCategory, Family[]> = {
+const families: Record<Exclude<RetailCategory, "phones" | "laptops" | "tablets">, Family[]> = {
   clothing: [
     {
       name: "Cotton Crew-Neck T-Shirt",

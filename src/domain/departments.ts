@@ -1,4 +1,7 @@
 export const categoryIds = [
+  "phones",
+  "laptops",
+  "tablets",
   "chargers",
   "docks",
   "storage",
@@ -12,6 +15,9 @@ export const categoryIds = [
 ] as const;
 export type Category = (typeof categoryIds)[number];
 export const retailCategories = [
+  "phones",
+  "laptops",
+  "tablets",
   "clothing",
   "fragrance",
   "bags",
@@ -25,6 +31,9 @@ export const isRetailCategory = (
 ): category is RetailCategory =>
   retailCategories.some((value) => value === category);
 export const categoryTitles: Record<Category, string> = {
+  phones: "Mobile Phones",
+  laptops: "Laptops",
+  tablets: "Tablets",
   chargers: "Power & Charging",
   docks: "Desk & Connectivity",
   storage: "Storage",
@@ -40,9 +49,18 @@ export const departments = [
   {
     id: "electronics",
     title: "Electronics",
-    categories: ["chargers", "docks", "storage", "audio", "accessories"],
+    categories: [
+      "phones",
+      "laptops",
+      "tablets",
+      "chargers",
+      "docks",
+      "storage",
+      "audio",
+      "accessories",
+    ],
     description:
-      "Ports, power and recorded device requirements. Compatibility is checked before review.",
+      "Phones, laptops, tablets and peripherals. Compare recorded specifications; accessory compatibility needs separate evidence.",
   },
   {
     id: "clothing",

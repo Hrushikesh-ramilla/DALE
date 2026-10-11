@@ -2962,3 +2962,20 @@ summary {
 .retail-filters label { display: grid; gap: 8px; min-width: 150px; font-size: 13px; }
 .retail-filters select { background: #191919; color: #eee9df; border: 1px solid #ffffff30; border-radius: 8px; padding: 10px 12px; }
 .retail-filters p { flex-basis: 100%; margin: 0; font-size: 12px; }
+
+/* Manufacturer collections and nested category browsing. */
+.department-browser{margin:24px 0 28px;padding:24px;border:1px solid #343434;border-radius:18px;background:#101010}
+.department-tabs,.department-types{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.department-tabs button,.department-types button{background:#191919;color:#ddd;border:1px solid #393939;border-radius:999px;padding:10px 16px;display:flex;gap:12px;align-items:center}
+.department-tabs button[aria-pressed=true]{background:#eceae4;color:#171717}
+.department-breadcrumb{display:flex;gap:10px;align-items:center;font-size:12px;color:#aaa;margin:18px 0}
+.department-breadcrumb button{border:0;background:none;color:inherit;padding:0}
+.department-browser h3{font-size:28px;margin:12px 0 22px}
+.department-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.department-tile{display:flex;flex-direction:column;align-items:flex-start;gap:12px;text-align:left;min-height:170px;padding:22px;background:linear-gradient(145deg,#242424,#111);border:1px solid #383838;border-radius:12px;color:#e8e6df;transition:transform .2s,border-color .2s}
+.department-tile:hover{transform:translateY(-3px);border-color:#9c9b94}.department-tile[aria-pressed=true]{border-color:#d9d6cd}
+.department-tile small{color:#aaa}.department-types{margin-top:18px}
+.catalog-evidence{display:flex;flex-direction:column;gap:7px;margin:14px 0;font-size:12px;line-height:1.6;color:#b5b3ad;overflow-wrap:anywhere}.catalog-evidence a{color:#e4e0d5;text-decoration:underline;text-underline-offset:3px}.catalog-evidence details{padding:8px 0}.catalog-evidence ul{padding-left:18px}
+.branded-product-art{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;background:radial-gradient(ellipse at 50% 30%,#333,#111 70%);padding:28px;color:#e6e2d8;min-height:240px}
+.branded-product-art strong{font-family:var(--font-serif),Georgia,serif;font-size:clamp(24px,3vw,42px);font-weight:500;line-height:1.1;max-width:100%}.branded-product-art>span{font-size:13px;letter-spacing:.06em;max-width:90%}.branded-product-art .brand-art-category,.branded-product-art small{font-size:10px;letter-spacing:.2em;color:#aaa}.branded-product-art.compact{min-height:150px}
+@media(max-width:600px){.department-browser{padding:16px}.department-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.department-tile{padding:14px;min-height:150px}.department-tabs button{font-size:12px;padding:8px 10px}}

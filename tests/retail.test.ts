@@ -112,8 +112,8 @@ it("does not waive conflicting size, unavailable variants or medical safety", ()
 });
 it("persists and queries a paginated PostgreSQL catalog with strict attributes", async () => {
   const all = await browseCatalog({});
-  expect(all.total).toBe(223);
-  expect(all.products).toHaveLength(48);
+  expect(all.total).toBe(35);
+  expect(all.products).toHaveLength(35);
   const next = await browseCatalog({ page: 2 });
   expect(
     next.products.some((p) => all.products.some((a) => a.id === p.id)),
@@ -121,17 +121,18 @@ it("persists and queries a paginated PostgreSQL catalog with strict attributes",
   const matched = await browseCatalog({
     category: "clothing",
     query: "shirt",
-    requirements: { material: "linen", size: "M" },
+    requirements: { brand: "givenchy", material: "cotton", size: "M" },
   });
   expect(matched.total).toBe(1);
-  expect(matched.products[0].id).toBe("L005");
+  expect(matched.products[0].id).toBe("B23");
   const input = {
     model: lifestyleProfile,
     category: "fragrance",
     budget: 4000,
     requirements: { scent: "citrus", volumeMl: 50 },
   };
-  expect(await searchStoredCatalog(input)).toEqual(searchCatalog(input));
+  expect(await searchStoredCatalog(input, true)).toEqual(searchCatalog(input));
+  expect(await searchStoredCatalog(input)).toEqual([]);
 });
 it("validates a retail model plan, group dependency and financial refusal", () => {
   const input = {
@@ -166,17 +167,17 @@ it("executes a real shared retail journey with exact-variant approval and privac
   const a = await customerSession({ action: "guest" }),
     b = await customerSession({ action: "guest" });
   const task = {
-    task: "Find a linen shirt in size M under $60 and use group buying",
+    task: "Find a Givenchy cotton t-shirt in size M under $600 and use group buying",
     model: "Atlas 14",
-    budget: 8000,
+    budget: 60000,
   };
   const result = await runAgent(a.actor, task);
-  expect(result.run.productIds).toEqual(["L005"]);
+  expect(result.run.productIds).toEqual(["B23"]);
   expect(
-    result.run.groupOffers?.some((offer) => offer.productId === "L005"),
+    result.run.groupOffers?.some((offer) => offer.productId === "B23"),
   ).toBe(true);
   expect(result.snapshot.orders).toEqual([]);
-  await expect(makeQuote(a.actor, "L004", lifestyleProfile)).rejects.toThrow(
+  await expect(makeQuote(a.actor, "B22", lifestyleProfile)).rejects.toThrow(
     "exact variant",
   );
   const brief = result.intent.kind === "shopping" ? result.intent.brief : null;
@@ -184,22 +185,22 @@ it("executes a real shared retail journey with exact-variant approval and privac
   await shop(brief, b.actor, "fixture");
   const group = await joinGroup(
     a.actor,
-    "L005",
+    "B23",
     lifestyleProfile,
     result.run.briefVersion,
   );
-  await joinGroup(b.actor, "L005", lifestyleProfile);
-  const quote = await makeQuote(a.actor, "L005", lifestyleProfile, group);
-  expect(quote.amount).toBe(3780);
+  await joinGroup(b.actor, "B23", lifestyleProfile);
+  const quote = await makeQuote(a.actor, "B23", lifestyleProfile, group);
+  expect(quote.amount).toBe(53100);
   const order = await checkout(a.actor, quote.id, quote.fingerprint);
   await capture(a.actor, order.id);
-  expect((await snapshot(a.actor)).orders[0].quote.productId).toBe("L005");
+  expect((await snapshot(a.actor)).orders[0].quote.productId).toBe("B23");
   expect((await snapshot(b.actor)).orders).toEqual([]);
   await expect(capture(b.actor, order.id)).rejects.toThrow();
-  const old = await makeQuote(b.actor, "L005", lifestyleProfile, group);
+  const old = await makeQuote(b.actor, "B23", lifestyleProfile, group);
   await updateBrief(b.actor, {
     ...brief,
-    requirements: { material: "linen", size: "L" },
+    requirements: { brand: "givenchy", material: "cotton", size: "L" },
   });
   await expect(checkout(b.actor, old.id, old.fingerprint)).rejects.toThrow(
     "brief changed",

@@ -1,5 +1,7 @@
 # Current operating status
 
+11 October sourced-catalogue update: ordinary shoppers now use 35 manufacturer-linked records, nested department/category/product-type navigation and strict brand/model/capacity constraints. Legacy engineering records remain for fixtures/history. See [BRANDED_CATALOG](BRANDED_CATALOG.md) for selection, missing facts and manual acceptance. Deployment verification is pending; the previous retail milestone below is historical.
+
 11 October retail release: application `81962d56d8f6ed659cf05ec0933fcd6ac15f469c` is deployed at https://65.0.19.200.sslip.io/shop and running locally at http://localhost:3000. Six departments expose 220 engineering SKUs plus three separately sourced identities; new lifestyle data is explicitly merchant-authored sample inventory. PostgreSQL catalog queries, typed model-tool contracts, exact variants, retained refinements, real shared customer/group state and protected checkout pass 354 unit/contract checks and three production browser journeys. Fifteen actual hosted retail checks and six checks after completed app/worker restart pass. All seven expansion release gates are closed (100% of this release scope); no claim is made of new live-model/payment-provider qualification or commercial-scale operations. Existing provider configuration/data are preserved. See [RETAIL_EXPANSION.md](RETAIL_EXPANSION.md) for evidence, manual tasks and boundaries.
 
 ## Previous customer milestone — 11 October

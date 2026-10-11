@@ -1,4 +1,10 @@
-import { productById, searchCatalog } from "@/domain/catalog";
+import {
+  productById,
+  searchCatalog,
+  publicCatalog,
+  catalog,
+  models as sampleModels,
+} from "@/domain/catalog";
 import { realModels, researchProducts } from "@/domain/research";
 import type { AgentGroupOffer } from "@/domain/agent-workflow";
 import { getWorkspace, type Actor, type Workspace } from "./state";
@@ -19,8 +25,16 @@ function offers(state: Workspace, actor: Actor): AgentGroupOffer[] {
       })
         .findings.filter((f) => f.eligible)
         .map((f) => productById(f.productId))
-    : searchCatalog({ ...input, budget: 100000 });
+    : searchCatalog(
+        { ...input, budget: 1000000 },
+        state.fixtureWorkspace
+          ? [...catalog, ...publicCatalog]
+          : sampleModels.includes(input.model)
+            ? undefined
+            : publicCatalog,
+      );
   return products
+    .filter((product) => !product.comparisonOnly)
     .flatMap((product): AgentGroupOffer[] => {
       const existing = state.groups.filter(
         (g) =>

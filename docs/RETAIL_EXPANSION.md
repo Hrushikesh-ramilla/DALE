@@ -1,5 +1,7 @@
 # Multi-department retail expansion
 
+11 October sourced-catalogue update: ordinary shoppers now use 35 manufacturer-linked records, nested department/category/product-type navigation and strict brand/model/capacity constraints. Legacy engineering records remain for fixtures/history. See [BRANDED_CATALOG](BRANDED_CATALOG.md) for selection, missing facts and manual acceptance. Deployment verification is pending; the previous retail milestone below is historical.
+
 DALE is a customer-first shopping agent operating a managed merchant storefront. This release expands that storefront into six departments without replacing its agent, consent, payment or evidence contracts.
 
 ## Implemented scope

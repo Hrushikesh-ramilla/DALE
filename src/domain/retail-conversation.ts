@@ -6,7 +6,12 @@ export function retailFollowup(
   input: AgentRequest,
   previous?: ShoppingBrief,
 ): AgentRequest {
-  if (!previous || !isRetailCategory(previous.category)) return input;
+  if (
+    !previous ||
+    (!isRetailCategory(previous.category) &&
+      previous.model !== lifestyleProfile)
+  )
+    return input;
   if (
     /\b(?:seller|message|scam|approve|pay|purchase|execute|transfer|delete|orders?|refund|return|replacement|damaged|claim|track)\b/i.test(
       input.task,
@@ -20,7 +25,7 @@ export function retailFollowup(
   });
   if (direct.kind === "shopping") return input;
   if (
-    !/\b(?:size|small|medium|large|material|cotton|linen|canvas|leather|nylon|scent|citrus|floral|woody|fresh|volume|ml|budget|under|below|instead)\b/i.test(
+    !/\b(?:size|small|medium|large|material|cotton|linen|canvas|leather|nylon|scent|citrus|floral|woody|fresh|volume|ml|budget|under|below|instead|gb|ram|storage|brand|model)\b/i.test(
       input.task,
     )
   )
@@ -28,7 +33,7 @@ export function retailFollowup(
   if (/\b(?:no|not|without|remove|any|either|or)\b/i.test(input.task))
     return input;
   const parsed = understandVoice({
-    transcript: `${previous.category} ${input.task}`,
+    transcript: `${previous.category} ${previous.requirements?.brand || ""} ${input.task}`,
     model: lifestyleProfile,
     budget: previous.budget,
   });
@@ -44,7 +49,11 @@ export function retailFollowup(
         ? `size ${value}`
         : key === "volumeMl"
           ? `${value} ml`
-          : String(value),
+          : key === "storageGb"
+            ? `${value}GB storage`
+            : key === "ramGb"
+              ? `${value}GB RAM`
+              : String(value),
     )
     .join(" ");
   return {

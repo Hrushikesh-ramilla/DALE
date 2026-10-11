@@ -5,6 +5,7 @@ import {
   type Category,
 } from "./departments";
 import { retailCatalog } from "./retail-catalog";
+import { brandedCatalog } from "./branded-catalog";
 export type { Category } from "./departments";
 export type Product = {
   id: string;
@@ -19,7 +20,16 @@ export type Product = {
   color: string;
   source: string;
   familyId?: string;
-  provenance?: "merchant_sample";
+  provenance?: "merchant_sample" | "manufacturer_evidence";
+  brand?: string;
+  evidence?: {
+    checkedAt: string;
+    region: string;
+    missing: string[];
+    review: "specifications" | "product_identity";
+  };
+  comparisonOnly?: boolean;
+  offerKind?: "sandbox";
   attributes?: {
     productType?: string;
     material?: string;
@@ -28,12 +38,20 @@ export type Product = {
     use?: string;
     volumeMl?: number;
     finish?: string;
+    brand?: string;
+    modelName?: string;
+    storageGb?: number;
+    ramGb?: number;
+    displayInches?: number;
+    refreshHz?: number;
+    batteryMah?: number;
+    concentration?: string;
   };
 };
 export const models = ["Atlas 14", "Atlas 14 Pro", "Orbit 13", "Slate 11"];
 export const knownModels = [...models, ...realModels, lifestyleProfile];
 export const deviceProfiles: Record<string, string> = {
-  [lifestyleProfile]: "Lifestyle shopping (no device)",
+  [lifestyleProfile]: "Product purchase (no accessory fit check)",
   "Atlas 14": "USB-C Laptop (65W)",
   "Atlas 14 Pro": "USB-C Laptop (100W)",
   "Orbit 13": "USB-C Laptop (45W)",
@@ -156,9 +174,19 @@ const electronicsCatalog: Product[] = Array.from({ length: 5 }, (_, variant) =>
   })),
 ).flat();
 
-export const catalog: Product[] = [...electronicsCatalog, ...retailCatalog];
+export const sampleCatalog: Product[] = [
+  ...electronicsCatalog,
+  ...retailCatalog,
+];
+// Historical samples retain their identities for existing orders and guided fixtures.
+export const catalog: Product[] = sampleCatalog;
+export const publicCatalog: Product[] = [
+  ...brandedCatalog.filter((product) => !product.comparisonOnly),
+  ...realProducts,
+];
 export function productFits(product: Product, model: string) {
-  return isRetailCategory(product.category)
+  return isRetailCategory(product.category) ||
+    product.provenance === "manufacturer_evidence"
     ? model === lifestyleProfile
     : product.compatibleModels.includes(model);
 }
@@ -169,6 +197,11 @@ export type RetailRequirements = {
   scent?: string;
   use?: string;
   volumeMl?: number;
+  brand?: string;
+  modelName?: string;
+  storageGb?: number;
+  ramGb?: number;
+  concentration?: string;
 };
 export function meetsRetailRequirements(
   product: Product,
@@ -188,7 +221,9 @@ export function meetsRetailRequirements(
 }
 
 export function productById(id: string): Product {
-  const product = [...catalog, ...realProducts].find((item) => item.id === id);
+  const product = [...catalog, ...brandedCatalog, ...realProducts].find(
+    (item) => item.id === id,
+  );
   if (!product) throw new Error("Unknown product");
   return product;
 }

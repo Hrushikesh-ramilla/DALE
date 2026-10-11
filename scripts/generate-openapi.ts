@@ -78,10 +78,42 @@ const spec = {
   paths: {
     "/api/catalog": {
       get: {
-        description: "Public persisted catalog: strict department attributes, name, budget and page queries. Returns up to 48 exact variant records, totals and provenance. Sample stock is not proof of physical inventory.",
+        description:
+          "Public persisted catalog: strict department attributes, name, budget and page queries. Returns up to 48 exact variant records, totals and provenance. Sample stock is not proof of physical inventory.",
         security: [],
-        parameters: ["category", "query", "budget", "page", "productType", "size", "material", "scent", "volumeMl"].map((name) => ({ name, in: "query", required: false, schema: { type: ["budget", "page", "volumeMl"].includes(name) ? "integer" : "string" } })),
-        responses: { "200": { description: "Paginated catalog records and six departments." }, "400": responses["400"] },
+        parameters: [
+          "category",
+          "query",
+          "budget",
+          "page",
+          "productType",
+          "size",
+          "material",
+          "scent",
+          "volumeMl",
+          "brand",
+          "modelName",
+          "concentration",
+          "storageGb",
+          "ramGb",
+        ].map((name) => ({
+          name,
+          in: "query",
+          required: false,
+          schema: {
+            type: ["budget", "page", "volumeMl", "storageGb", "ramGb"].includes(
+              name,
+            )
+              ? "integer"
+              : "string",
+          },
+        })),
+        responses: {
+          "200": {
+            description: "Paginated catalog records and six departments.",
+          },
+          "400": responses["400"],
+        },
       },
     },
     "/api/agent": {

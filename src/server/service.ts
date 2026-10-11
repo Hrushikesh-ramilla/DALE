@@ -1,6 +1,7 @@
 import { randomUUID } from "node:crypto";
 import {
   knownModels as models,
+  models as sampleModels,
   productById,
   productFits,
   meetsRetailRequirements,
@@ -281,7 +282,17 @@ export async function shop(
     (actor ? workspaceAiMode(await getWorkspace(actor.workspaceId)) : aiMode());
   const products = questions.length
     ? []
-    : (await searchStoredCatalog(normalized)).filter(
+    : (
+        await searchStoredCatalog(
+          normalized,
+          sampleModels.includes(normalized.model) ||
+            (actor
+              ? Boolean(
+                  (await getWorkspace(actor.workspaceId)).fixtureWorkspace,
+                )
+              : false),
+        )
+      ).filter(
         (product) =>
           !research ||
           research.findings.some(
@@ -366,6 +377,10 @@ export async function makeQuote(
 ) {
   buyer(actor);
   const product = productById(productId);
+  if (product.comparisonOnly)
+    throw new Error(
+      "This manufacturer record is comparison-only until the exact purchasable variant is verified.",
+    );
   if (!models.includes(model) || !productFits(product, model))
     throw new Error(
       "This product is not confirmed compatible with your device.",
@@ -390,7 +405,9 @@ export async function makeQuote(
         );
     }
     if (brief && !meetsRetailRequirements(product, brief.input.requirements))
-      throw new Error("The exact variant does not meet your saved size, material, scent or volume. Update the brief first.");
+      throw new Error(
+        "The exact variant does not meet your saved size, material, scent or volume. Update the brief first.",
+      );
     if (brief?.clarificationRequired)
       throw new Error(
         "Confirm the device and budget with Find my match before choosing a purchase.",
@@ -479,6 +496,10 @@ export async function joinGroup(
 ) {
   buyer(actor);
   const product = productById(productId);
+  if (product.comparisonOnly)
+    throw new Error(
+      "This comparison-only record has no verified purchasable variant.",
+    );
   if (!productFits(product, model))
     throw new Error("The group product must fit your device.");
   return mutateWorkspace(actor.workspaceId, (state) => {
@@ -504,10 +525,20 @@ export async function joinGroup(
       throw new Error(
         "Group terms changed. Refresh the offers before committing.",
       );
-    const savedBrief = state.briefs?.find((item) => item.buyerId === actor.userId);
-    if (product.provenance === "merchant_sample" && savedBrief &&
-      (!meetsRetailRequirements(product, savedBrief.input.requirements) || savedBrief.input.category !== product.category || savedBrief.input.model !== model || savedBrief.clarificationRequired))
-      throw new Error("This exact group variant differs from your saved shopping brief.");
+    const savedBrief = state.briefs?.find(
+      (item) => item.buyerId === actor.userId,
+    );
+    if (
+      product.provenance &&
+      savedBrief &&
+      (!meetsRetailRequirements(product, savedBrief.input.requirements) ||
+        savedBrief.input.category !== product.category ||
+        savedBrief.input.model !== model ||
+        savedBrief.clarificationRequired)
+    )
+      throw new Error(
+        "This exact group variant differs from your saved shopping brief.",
+      );
     if (expectedBriefVersion !== undefined) {
       const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
       if (

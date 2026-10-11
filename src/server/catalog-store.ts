@@ -1,6 +1,11 @@
-import { catalog, searchCatalog, type Product } from "@/domain/catalog";
-import { realProducts } from "@/domain/research";
+import {
+  catalog,
+  publicCatalog,
+  searchCatalog,
+  type Product,
+} from "@/domain/catalog";
 import { departments } from "@/domain/departments";
+import { brandedCatalog } from "@/domain/branded-catalog";
 import { getDatabase, type Database } from "./database";
 const initialized = new WeakMap<Database, Promise<void>>();
 async function catalogDatabase() {
@@ -8,7 +13,11 @@ async function catalogDatabase() {
   let pending = initialized.get(database);
   if (!pending) {
     pending = database.transaction(async (sql) => {
-      const products = [...catalog, ...realProducts].map((product) => ({
+      const products = [
+        ...catalog,
+        ...publicCatalog,
+        ...brandedCatalog.filter((product) => product.comparisonOnly),
+      ].map((product) => ({
         id: product.id,
         category: product.category,
         price: product.price,
@@ -34,24 +43,32 @@ export async function browseCatalog(input: {
   budget?: number;
   page?: number;
   requirements?: Record<string, string | number>;
+  fixtures?: boolean;
 }) {
   const database = await catalogDatabase();
   const values = [
     input.category || "",
     input.query || "",
-    input.budget ?? 100000,
+    input.budget ?? 1000000,
     JSON.stringify(input.requirements || {}),
   ];
   const where = `($1='' OR category=$1) AND ($2='' OR strpos(lower(record->>'name'),lower($2))>0)
-    AND price<=$3 AND coalesce(record->'attributes','{}'::jsonb) @> $4::jsonb`;
+    AND price<=$3 AND coalesce(record->'attributes','{}'::jsonb) @> $4::jsonb
+    AND id=ANY($5::text[])`;
+  const queryValues = [
+    ...values.slice(0, 4),
+    (input.fixtures ? [...catalog, ...publicCatalog] : publicCatalog).map(
+      (p) => p.id,
+    ),
+  ];
   const total = await database.query<{ count: string }>(
     `SELECT count(*) FROM catalog_products WHERE ${where}`,
-    values,
+    queryValues,
   );
   const rows = await database.query<{ record: Product }>(
     `SELECT record FROM catalog_products WHERE ${where}
-    ORDER BY price,id LIMIT 48 OFFSET $5`,
-    [...values, ((input.page || 1) - 1) * 48],
+    ORDER BY price,id LIMIT 48 OFFSET $6`,
+    [...queryValues, ((input.page || 1) - 1) * 48],
   );
   return {
     products: rows.rows.map((row) => row.record),
@@ -60,20 +77,24 @@ export async function browseCatalog(input: {
     pageSize: 48,
     departments,
     provenance:
-      "Merchant-authored lifestyle samples; reviewed manufacturer records are separately sourced. Stock and fulfillment are simulated.",
+      "Manufacturer product identities and recorded specifications; DALE offer prices, stock, payments and fulfillment are sandbox data. Missing facts are disclosed per record.",
   };
 }
 export async function searchStoredCatalog(
   input: Parameters<typeof searchCatalog>[0],
+  fixtures = false,
 ) {
   const database = await catalogDatabase();
   const rows = await database.query<{ record: Product }>(
     `SELECT record FROM catalog_products
-    WHERE price<=$1 AND ($2='' OR category=$2) AND coalesce(record->'attributes','{}'::jsonb) @> $3::jsonb`,
+    WHERE price<=$1 AND ($2='' OR category=$2) AND coalesce(record->'attributes','{}'::jsonb) @> $3::jsonb AND id=ANY($4::text[])`,
     [
       input.budget,
       input.category || "",
       JSON.stringify(input.requirements || {}),
+      (fixtures ? [...catalog, ...publicCatalog] : publicCatalog).map(
+        (p) => p.id,
+      ),
     ],
   );
   return searchCatalog(

@@ -1,5 +1,7 @@
 "use client";
 import { RetailFilters } from "./retail-filters";
+import { DepartmentBrowser } from "./department-browser";
+import { CatalogEvidence } from "./catalog-evidence";
 import { categoryTitles as titles, categoryIds, departments, isRetailCategory, lifestyleProfile } from "@/domain/departments";
 import { CustomerEntry } from "./customer-entry";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
@@ -25,6 +27,7 @@ import {
 } from "lucide-react";
 import {
   catalog,
+  publicCatalog,
   knownModels as models,
   deviceLabel,
   deviceText,
@@ -56,11 +59,11 @@ type Session = Awaited<ReturnType<typeof snapshot>>;
 
 const categoryTitles: Record<string, string> = titles;
 const parallaxCategories = departments.map((department, index) => ({
-  id: department.categories[0], numeral: `0${index + 1} / 06`, tagline: "SHOP WITH DALE",
+  id: department.id, numeral: `0${index + 1} / 06`, tagline: "SHOP WITH DALE",
   title: department.title, desc: department.description,
   tags: department.id === "electronics" ? ["Device requirements", "Protected approval"] : ["Exact variants", "Attribute comparison", "Group savings"],
-  featured: catalog.find((product) => department.categories.some((category) => category === product.category))!,
-  count: catalog.filter((product) => department.categories.some((category) => category === product.category)).length,
+  featured: publicCatalog.find((product) => department.categories.some((category) => category === product.category))!,
+  count: publicCatalog.filter((product) => department.categories.some((category) => category === product.category)).length,
 }));
 
 type Tab = "discover" | "groups" | "orders" | "support";
@@ -154,7 +157,7 @@ export default function Storefront() {
   const [showIntro, setShowIntro] = useState(true);
   const [logoSettled, setLogoSettled] = useState(false);
   const [products, setProducts] = useState<Product[]>(
-    searchCatalog({ model: "Atlas 14", budget: 8000 }),
+    publicCatalog,
   );
   const [model, setModel] = useState("Atlas 14"),
     [category, setCategory] = useState(""),
@@ -167,6 +170,7 @@ export default function Storefront() {
     >(),
     [briefDirty, setBriefDirty] = useState(false);
   const [isDeviceMode, setIsDeviceMode] = useState(false);
+  const [departmentId, setDepartmentId] = useState("");
   const [heroPrompt, setHeroPrompt] = useState("");
   const [sidebarTask, setSidebarTask] = useState("");
 
@@ -222,7 +226,7 @@ export default function Storefront() {
       setPreference(input.preference);
       setPriority(input.priority);
       setWeights(input.weights);
-      setProducts(data.brief.clarificationRequired ? [] : searchCatalog(input));
+      setProducts(data.brief.clarificationRequired ? [] : searchCatalog(input, data.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog));
       setQuestions(clarifyBrief(input));
       if (data.conversation.length) setSummary(data.conversation.at(-1)!.text);
       setBriefDirty(false);
@@ -380,7 +384,7 @@ export default function Storefront() {
         priority,
         weights,
         confirmConstraints,
-        requirements: isRetailCategory(category) ? requirements : undefined,
+        requirements: model === lifestyleProfile || isRetailCategory(category) ? requirements : undefined,
       });
       setProducts(result.products);
       setVisibleLimit(12);
@@ -418,25 +422,32 @@ export default function Storefront() {
       setModal({ kind: "quote", quote });
     });
   }
-  function browseCollection(nextCategory: string) {
+  function openDepartment(id: string) {
+    setDepartmentId(id);
+    setCategory("");
+    setProducts([]);
+    setIsDeviceMode(false);
+    setTimeout(() => document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" }), 50);
+  }
+  function browseCollection(nextCategory: string, productType?: string) {
     setVisibleLimit(12);
     setCategory(nextCategory);
-    const nextModel = isRetailCategory(nextCategory) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model;
+    const nextModel = session?.fixtureWorkspace && !isRetailCategory(nextCategory) ? model === lifestyleProfile ? "Atlas 14" : model : lifestyleProfile;
     setModel(nextModel);
-    setRequirements({});
+    setRequirements(productType ? { productType } : {});
     setQuestions([]);
     setIsDeviceMode(false);
     setBriefDirty(true);
     setCatalogQuery("");
     setProducts(
-      searchCatalog({
+      session?.fixtureWorkspace ? searchCatalog({
             model: nextModel,
             category: nextCategory,
             budget: Math.round(Number(budget) * 100),
             preference,
             priority,
             weights,
-          }),
+          }) : publicCatalog.filter(p => p.category === nextCategory && (!productType || p.attributes?.productType === productType)),
     );
     setSummary(
       nextCategory
@@ -549,7 +560,7 @@ export default function Storefront() {
             setModel={setModel}
             deviceLabel={deviceLabel}
             category={category}
-            setCategory={(value) => { setCategory(value); setModel(isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
+            setCategory={(value) => { setCategory(value); setModel(!session?.fixtureWorkspace || isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
             budget={budget}
             setBudget={setBudget}
             message={message}
@@ -639,7 +650,7 @@ export default function Storefront() {
                 model={model}
                 budget={Math.max(
                   1,
-                  Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                  Math.min(1000000, Math.round(Number(budget) * 100) || 8000),
                 )}
                 briefDirty={briefDirty}
                 onResult={applyAgent}
@@ -682,7 +693,7 @@ export default function Storefront() {
                     budget={Math.max(
                       1,
                       Math.min(
-                        100000,
+                        1000000,
                         Math.round(Number(budget) * 100) || 8000,
                       ),
                     )}
@@ -747,7 +758,7 @@ export default function Storefront() {
                   <div
                     key={col.id}
                     className="parallax-category-card"
-                    onClick={() => browseCollection(col.id)}
+                    onClick={() => openDepartment(col.id)}
                   >
                     <div className="parallax-card-content">
                       <div className="parallax-card-badge">
@@ -769,7 +780,7 @@ export default function Storefront() {
                         className="parallax-card-cta"
                         onClick={(e) => {
                           e.stopPropagation();
-                          browseCollection(col.id);
+                          openDepartment(col.id);
                         }}
                       >
                         <span>Explore {col.title}</span>
@@ -810,7 +821,7 @@ export default function Storefront() {
                 </button>
               </div>
             </section>
-            {(category !== "" || isDeviceMode) && (
+            {(departmentId !== "" || category !== "" || isDeviceMode) && (
               <section
                 className="shopping-area"
                 id="shop"
@@ -826,7 +837,7 @@ export default function Storefront() {
                   model={model}
                   budget={Math.max(
                     1,
-                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                    Math.min(1000000, Math.round(Number(budget) * 100) || 8000),
                   )}
                   briefDirty={briefDirty}
                   onResult={applyAgent}
@@ -869,7 +880,7 @@ export default function Storefront() {
                       budget={Math.max(
                         1,
                         Math.min(
-                          100000,
+                          1000000,
                           Math.round(Number(budget) * 100) || 8000,
                         ),
                       )}
@@ -908,7 +919,7 @@ export default function Storefront() {
                     <p style={{ fontSize: "14px", color: "#a1a1a6", margin: "4px 0 0" }}>
                       {isDeviceMode
                         ? `Showing eligible offers for ${deviceLabel(model)}. Review each source and exact variant.`
-                        : `Compare merchant-authored sample specifications. These listings do not claim verified physical inventory.`}
+                        : `Compare manufacturer records. DALE prices, stock and fulfillment are simulated sandbox offers.`}
                     </p>
                   </div>
                   <div className="catalog-heading-controls">
@@ -918,7 +929,7 @@ export default function Storefront() {
                       setModel={setModel}
                       deviceLabel={deviceLabel}
                       category={category}
-                      setCategory={(value) => { setCategory(value); setModel(isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
+                      setCategory={(value) => { setCategory(value); setModel(!session?.fixtureWorkspace || isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
                       budget={budget}
                       setBudget={setBudget}
                       message={message}
@@ -943,7 +954,8 @@ export default function Storefront() {
                     </span>
                   </div>
                 </div>
-                <div
+                <DepartmentBrowser departmentId={departmentId || departments.find(d => d.categories.some(c => c === category))?.id || "electronics"} category={category} onDepartment={openDepartment} onCategory={browseCollection} />
+                {session?.fixtureWorkspace && <div
                   className="catalog-category-pills"
                   aria-label="Filter product category"
                 >
@@ -978,8 +990,8 @@ export default function Storefront() {
                       {categoryTitles[id]} ({catalog.filter((p) => p.category === id).length})
                     </button>
                   ))}
-                </div>
-                <RetailFilters category={category} value={requirements} onChange={(value) => { setRequirements(value); setBriefDirty(true); }} />
+                </div>}
+                <RetailFilters category={category} fixtures={Boolean(session?.fixtureWorkspace)} value={requirements} onChange={(value) => { setRequirements(value); setBriefDirty(true); setProducts(searchCatalog({ model, category, budget: 1000000, requirements: value }, session?.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog)); }} />
                 <div className="assistant-note">
                   <span className="assistant-icon">
                     <Sparkles size={17} />
@@ -1098,7 +1110,7 @@ export default function Storefront() {
                               <Check size={12} />{" "}
                               {briefDirty
                                 ? "Update your brief to confirm fit"
-                                : isRetailCategory(product.category) ? "Matches recorded attributes" : `Fits ${deviceLabel(model)}`}
+                                : isRetailCategory(product.category) || product.brand ? "Matches recorded attributes" : `Fits ${deviceLabel(model)}`}
                             </span>
                             {product.sponsored && (
                               <span className="sponsored">Sponsored</span>
@@ -1121,7 +1133,6 @@ export default function Storefront() {
                             ))}
                           </div>
                           <small className="muted">
-                            Source: {product.source}.{" "}
                             {weights
                               ? `Ranked with price weight ${weights.price} and feature weight ${weights.features}; feature match uses the listed specifications.`
                               : priority === "features" &&
@@ -1133,14 +1144,15 @@ export default function Storefront() {
                                 ? `Matches “${preference}” in listed specifications.`
                                 : "Ranked by listed price."}
                           </small>
+                          <CatalogEvidence product={product} />
                           <div className="price-row">
                             <strong>{formatMoney(product.price)}</strong>
-                            <small>Full price · shipping included</small>
+                            <small>{product.offerKind === "sandbox" ? "Sandbox offer · simulated stock" : "Full price · shipping included"}</small>
                           </div>
                           <div className="card-actions">
                             <button
                               className="button primary"
-                              disabled={busy || !isBuyer}
+                              disabled={busy || !isBuyer || product.comparisonOnly}
                               onClick={() => void choose(product)}
                             >
                               Review purchase <ArrowRight size={14} />
@@ -1148,7 +1160,7 @@ export default function Storefront() {
                             <button
                               className="group-button"
                               aria-label={`Join group deal for ${product.name}`}
-                              disabled={busy || !isBuyer}
+                              disabled={busy || !isBuyer || product.comparisonOnly}
                               onClick={() => {
                                 if (!session) {
                                   startShopping();
@@ -2373,12 +2385,12 @@ export default function Storefront() {
                         .join(", ")}
                     </p>
                     <p className="muted">
-                      Source: {modal.product.source} ·{" "}
                       {modal.product.sponsored
                         ? "Sponsored listing. Organic ranking is independent of sponsorship."
                         : "Curated catalog listing."}{" "}
                       Product visual is a catalog illustration.
                     </p>
+                    <CatalogEvidence product={modal.product} />
                     <div className="policy-note">
                       You review the full amount and merchant before approving.
                       Returns and replacements remain available through your

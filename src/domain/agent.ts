@@ -11,7 +11,7 @@ import { understandVoice, type VoiceIntent } from "./voice";
 export const agentRequest = z.object({
   task: z.string().trim().min(1).max(2000),
   model: z.enum(models as [string, ...string[]]),
-  budget: z.number().int().min(1).max(100000),
+  budget: z.number().int().min(1).max(1000000),
   expectedWorkspaceId: z.uuid().optional(),
   expectedBuyerId: z.string().min(1).max(100).optional(),
 });
@@ -68,7 +68,7 @@ export function understandAgent(input: AgentRequest): VoiceIntent {
     model: input.model,
     budget: input.budget,
   });
-  if (intent.kind !== "shopping" || isRetailCategory(intent.brief.category)) return intent;
+  if (intent.kind !== "shopping" || intent.brief.model === "not-required" || isRetailCategory(intent.brief.category)) return intent;
   // A free-text real device must never silently inherit the default demo model.
   if (!mentionedModels(input.task).length)
     return {

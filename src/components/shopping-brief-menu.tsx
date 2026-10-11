@@ -306,7 +306,7 @@ export function ShoppingBriefMenu({
               <div className="flyout-column">
                 <span className="column-eyebrow">{isRetailCategory(category) ? "CATEGORY REQUIREMENTS" : "DEVICE & COMPATIBILITY"}</span>
                 <label className="flyout-label">
-                  {isRetailCategory(category) ? "Lifestyle shopping" : "Your device"}
+                  {isRetailCategory(category) ? "Product purchase" : "Your device"}
                   <select
                     className="flyout-select"
                     disabled={isRetailCategory(category)}
@@ -368,7 +368,7 @@ export function ShoppingBriefMenu({
                     <input
                       type="number"
                       min="1"
-                      max="1000"
+                      max="10000"
                       value={budget}
                       onChange={(e) => {
                         setBudget(e.target.value);

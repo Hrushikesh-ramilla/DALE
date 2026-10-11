@@ -24,17 +24,20 @@ test("six departments, retail agent, variant filters and protected checkout", as
   const chat = page.locator("#dale-chat");
   await chat
     .getByLabel("Your conversation with DALE")
-    .fill("Find a linen shirt in size M under $60 and use group buying");
+    .fill(
+      "Find a Givenchy cotton t-shirt in size M under $600 and use group buying",
+    );
   await chat.getByRole("button", { name: "Send message", exact: true }).click();
   const result = chat.getByLabel("DALE task result");
-  await expect(result).toContainText("Linen Short-Sleeve Shirt · M");
-  await expect(result).toContainText("merchant-authored engineering offers");
+  await expect(result).toContainText("Givenchy");
+  await expect(result).toContainText("Product identities and recorded facts");
   await expect(page.getByLabel("Size", { exact: true })).toHaveValue("M");
   const stored = await (await page.request.get(origin + "/api/session")).json();
   expect(stored.brief.input.requirements).toEqual({
     size: "M",
-    material: "linen",
-    productType: "shirt",
+    brand: "givenchy",
+    material: "cotton",
+    productType: "t-shirt",
   });
   expect(stored.orders).toEqual([]);
   await result
@@ -42,7 +45,7 @@ test("six departments, retail agent, variant filters and protected checkout", as
     .first()
     .click();
   const dialog = page.getByRole("dialog");
-  await expect(dialog).toContainText("Linen Short-Sleeve Shirt · M");
+  await expect(dialog).toContainText("Givenchy");
   await expect(dialog).toContainText("Approve simulated purchase");
   await dialog
     .getByRole("button", { name: "Approve simulated purchase", exact: true })
@@ -52,7 +55,7 @@ test("six departments, retail agent, variant filters and protected checkout", as
     await page.request.get(origin + "/api/session")
   ).json();
   expect(purchased.orders).toHaveLength(1);
-  expect(purchased.orders[0].quote.productId).toBe("L005");
+  expect(purchased.orders[0].quote.productId).toBe("B23");
   expect(purchased.orders[0].captureId).toBeTruthy();
   await page.reload();
   expect(
@@ -66,20 +69,55 @@ test("public catalog supports all departments and strict paginated attribute que
   const response = await request.get("/api/catalog");
   expect(response.ok()).toBe(true);
   const catalog = await response.json();
-  expect(catalog.total).toBe(223);
+  expect(catalog.total).toBe(35);
   expect(catalog.departments).toHaveLength(6);
-  expect(catalog.products).toHaveLength(48);
+  expect(catalog.products).toHaveLength(35);
   const filtered = await request.get(
-    "/api/catalog?category=fragrance&scent=citrus&volumeMl=50&budget=4000",
+    "/api/catalog?category=fragrance&brand=tom%20ford&volumeMl=50&budget=40000",
   );
   const result = await filtered.json();
-  expect(result.total).toBe(2);
+  expect(result.total).toBe(1);
   expect(
     result.products.every(
-      (product: { attributes: { scent: string; volumeMl: number } }) =>
-        product.attributes.scent === "citrus" &&
+      (product: { attributes: { brand: string; volumeMl: number } }) =>
+        product.attributes.brand === "tom ford" &&
         product.attributes.volumeMl === 50,
     ),
   ).toBe(true);
   expect((await request.get("/api/catalog?category=unknown")).ok()).toBe(false);
+});
+
+test("electronics opens a nested device browser on desktop and mobile", async ({
+  page,
+}) => {
+  for (const viewport of [
+    { width: 1440, height: 900 },
+    { width: 390, height: 844 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.goto("/shop");
+    await page
+      .getByRole("button", { name: "Explore Electronics", exact: true })
+      .click();
+    const browser = page.getByRole("region", {
+      name: "Browse departments and categories",
+    });
+    await expect(browser.getByRole("button", { name: /Phones/ })).toBeVisible();
+    await expect(
+      browser.getByRole("button", { name: /Laptops/ }),
+    ).toBeVisible();
+    await expect(
+      browser.getByRole("button", { name: /Tablets/ }),
+    ).toBeVisible();
+    await browser.getByRole("button", { name: /Phones/ }).click();
+    await expect(page.getByLabel("Brand", { exact: true })).toBeVisible();
+    await page.getByLabel("Brand", { exact: true }).selectOption("apple");
+    await expect(page.locator(".product-grid")).toContainText("iPhone 17");
+    await expect(page.locator(".product-grid")).not.toContainText("OnePlus");
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth,
+      ),
+    ).toBe(true);
+  }
 });

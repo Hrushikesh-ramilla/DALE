@@ -667,6 +667,9 @@
             "type": "string",
             "enum": [
               "",
+              "phones",
+              "laptops",
+              "tablets",
               "chargers",
               "docks",
               "storage",
@@ -722,6 +725,34 @@
                 "type": "integer",
                 "minimum": 1,
                 "maximum": 1000
+              },
+              "brand": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "modelName": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "storageGb": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 8192
+              },
+              "ramGb": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 256
+              },
+              "concentration": {
+                "type": "string",
+                "enum": [
+                  "eau de parfum",
+                  "eau de toilette",
+                  "eau de cologne"
+                ]
               }
             },
             "additionalProperties": false
@@ -729,7 +760,7 @@
           "budget": {
             "type": "integer",
             "minimum": 1,
-            "maximum": 100000
+            "maximum": 1000000
           },
           "preference": {
             "default": "",
@@ -876,6 +907,46 @@
             "schema": {
               "type": "integer"
             }
+          },
+          {
+            "name": "brand",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "modelName",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "concentration",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "storageGb",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "ramGb",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -926,7 +997,7 @@
                   "budget": {
                     "type": "integer",
                     "minimum": 1,
-                    "maximum": 100000
+                    "maximum": 1000000
                   },
                   "expectedWorkspaceId": {
                     "type": "string",
@@ -1209,7 +1280,7 @@
                   "budget": {
                     "type": "integer",
                     "minimum": 1,
-                    "maximum": 100000
+                    "maximum": 1000000
                   }
                 },
                 "required": [

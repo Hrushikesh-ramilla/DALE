@@ -1,4 +1,5 @@
 import { mentionedRetailTypes } from "./retail-types";
+import { brandedShopping } from "./branded-shopping";
 import { z } from "zod";
 import { knownModels as models } from "./catalog";
 import { mentionedModels } from "./identification";
@@ -7,7 +8,7 @@ import { isRetailCategory, lifestyleProfile } from "./departments";
 export const voiceRequest = z.object({
   transcript: z.string().trim().min(1).max(2000),
   model: z.enum(models as [string, ...string[]]),
-  budget: z.number().int().min(1).max(100000),
+  budget: z.number().int().min(1).max(1000000),
 });
 export type VoiceIntent =
   | { kind: "shopping"; brief: ShoppingBrief }
@@ -128,6 +129,8 @@ export function understandVoice(
     return { kind: "navigate", destination: "orders" };
   if (/\b(?:support|customer care|help with (?:my )?order)\b/i.test(text))
     return { kind: "navigate", destination: "support" };
+  const branded = brandedShopping(text, input.budget);
+  if (branded) return branded;
   const amounts = [
     ...text.matchAll(
       /(?:under|below|up to|budget(?: of| is)?|maximum(?: of)?)\s*\$?\s*(\d+(?:\.\d{1,2})?)(?:\s*(?:dollars?|usd))?/gi,

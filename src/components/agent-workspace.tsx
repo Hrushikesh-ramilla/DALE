@@ -1,8 +1,10 @@
 "use client";
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { CatalogEvidence } from "./catalog-evidence";
 import { ArrowRight, Check, LoaderCircle } from "lucide-react";
 import {
   catalog,
+  publicCatalog,
   deviceText,
   productById,
   type Product,
@@ -522,7 +524,7 @@ export function AgentWorkspace({
                   </p>
                 )}
                 {latest.productIds.map((id) => {
-                  const product = [...catalog, ...realProducts].find(
+                  const product = [...catalog, ...publicCatalog, ...realProducts].find(
                     (item) => item.id === id,
                   );
                   return product ? (
@@ -530,12 +532,7 @@ export function AgentWorkspace({
                       <strong>{product.name}</strong>
                       <span>{formatMoney(product.price)}</span>
                       <p>{product.specs.join(" · ")}</p>
-                      <small>
-                        {id.startsWith("R")
-                          ? "Manufacturer evidence:"
-                          : "Sample source:"}{" "}
-                        {product.source}
-                      </small>
+                      <CatalogEvidence product={product} />
                       <button
                         className="button secondary"
                         disabled={pending || restoring || !reviewCurrent}
