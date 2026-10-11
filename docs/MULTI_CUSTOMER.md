@@ -60,3 +60,25 @@ artifact with the full unit suite, packaged OCR and new production customer
 browser journey. The broader historical UI suite remains a separate workflow;
 its old persona/removed-page assumptions need to be evaluated against the revised
 ordinary entry rather than silently counted as passing.
+
+## Hosted release — 11 October 2026
+
+Application `13d90bc308cbe8bf73c1531bcffc763d85bf532d` is deployed at
+https://65.0.19.200.sslip.io with checksum-verified Linux artifact
+`9bffa8ff56e9b1bf9f3b205e6efa34802b5c3161c23ba03d6db8711e4b568bb1`.
+[Linux release verification](https://github.com/Hrushikesh-ramilla/DALE/actions/runs/38096983290)
+passes lint, typecheck, all 340 unit/contract checks, production build, isolated
+packaged OCR and the production independent-browser journey. The local preview
+also runs this application with retained local data.
+
+Actual public PostgreSQL acceptance passes 17 checks: independent ordinary guest
+identities, shared group discovery/threshold/idempotency, preserved registration,
+fresh-device sign-in, wrong-password/origin rejection, private member identities,
+locked quote, genuine PayPal sandbox order creation, and other-buyer order/capture
+rejection. No PayPal payment was captured. After an actual app/worker restart,
+five additional checks pass for build identity, retained sessions, both group
+commitments, fresh account sign-in and private retained order ownership.
+Sanitized receipts are in `docs/evaluations/customers-13d90bc-*.json`; passwords
+and cookies remain ignored. This preserves the currently configured inference
+provider; it does not qualify self-hosted models, enable billing, or establish a
+physical two-laptop exercise. Broader catalog expansion remains planned.

@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-11 — Independent customer accounts and shared group buying
+
+- Add persistent guest/account identities, salted scrypt sign-in and identity-preserving guest conversion. Ordinary customers share a persisted merchant store while conversations, orders and evidence remain customer-scoped. Existing isolated demos remain separate.
+- Ordinary DALE task entry now creates a customer guest session. Add account entry, shareable store links and three-second authenticated group refresh. Correct pre-existing lint failures without altering visual composition.
+- Application 13d90bc: 340 unit/contract checks, 23 focused final checks, production build and Linux release verification pass. Two independent browser contexts verify group joining/live update, account registration and third-context sign-in.
+- Checksum/backup deployment to the existing EC2 succeeds. Seventeen actual PostgreSQL/customer/sandbox-order checks and five checks after actual app/worker restart pass. No sandbox payment capture, cloud generation, billing change or additional resource provisioning occurs. Detailed evidence and remaining category-expansion scope are in docs/MULTI_CUSTOMER.md.
+
 ## 2026-10-09 — Isolated OCR packaging, restart acceptance and bounded follow-ups
 
 - Actual packaged OCR initially failed because its separate worker dependency graph was absent. Explicitly trace the helper/worker and copy their production dependencies. Run the HTTP verifier outside the checkout, preventing Node from borrowing development modules. All 11 isolated HTTP checks now pass, including access/origin guards, recognition, confirmation, unchanged shopper state and fixture isolation.
