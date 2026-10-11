@@ -44,6 +44,31 @@ try {
       catalog.departments.length === 6 &&
       catalog.products.length === 35,
   );
+  check(
+    "Ordinary browsing excludes invented and identity-only inventory",
+    catalog.products.every(
+      (product: { id: string; comparisonOnly?: boolean }) =>
+        !/^[PL]/.test(product.id) && !product.comparisonOnly,
+    ),
+  );
+  const phones = await (
+    await contexts[0].get(
+      "/api/catalog?category=phones&ramGb=12&storageGb=256&budget=100000",
+    )
+  ).json();
+  check(
+    "Manufacturer phone attributes filter without guessed Apple RAM",
+    phones.total === 3 &&
+      phones.products.every(
+        (product: {
+          attributes: { ramGb: number; storageGb: number };
+          source: string;
+        }) =>
+          product.attributes.ramGb === 12 &&
+          product.attributes.storageGb === 256 &&
+          product.source.startsWith("https://"),
+      ),
+  );
   if (restart) {
     check("Observed actual app restart", health.instance !== saved.instance);
     for (const index of [0, 1]) {
@@ -130,6 +155,9 @@ try {
         fixture.modes.payments === "fixture",
     );
     for (const [task, category] of [
+      ["Compare phones with 12GB RAM and 256GB storage under $1000", "phones"],
+      ["Find MFK Baccarat Rouge 540 perfume in 70ml under $400", "fragrance"],
+      ["Find Gucci leather key pouch under $700", "bags"],
       ["Find a linen shirt size M under $60 and use group buying", "clothing"],
       ["Actually size L instead", "clothing"],
       ["Compare citrus perfumes in 50 ml under $40", "fragrance"],

@@ -96,6 +96,9 @@ test("electronics opens a nested device browser on desktop and mobile", async ({
   ]) {
     await page.setViewportSize(viewport);
     await page.goto("/shop");
+    await expect(
+      page.getByRole("region", { name: "The everyday edit" }),
+    ).toContainText("iPhone 17");
     await page
       .getByRole("button", { name: "Explore Electronics", exact: true })
       .click();

@@ -1,17 +1,14 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import {
-  motion,
-  useReducedMotion,
-} from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { ArrowDown, ArrowLeft, ArrowRight } from "lucide-react";
-import { catalog, type Product } from "@/domain/catalog";
+import { productById, type Product } from "@/domain/catalog";
 import { formatMoney } from "@/domain/money";
 import { BrandWordmark } from "./brand-wordmark";
 import { ProductViewer } from "./product-viewer";
 
-const edit = [catalog[5], catalog[4], catalog[3], catalog[6]];
+const edit = ["B001", "B010", "B016", "B23"].map(productById);
 export function EditorialHero({
   onView,
 }: {
@@ -60,10 +57,10 @@ export function EditorialHero({
         <span>Personal shopping, considered.</span>
       </div>
       <div className="hero-type">
-        <h2>Explore the sample collection.</h2>
+        <h2>Explore the considered collection.</h2>
         <p>
-          Recorded specifications. Simulated listings. <br />A place to test the
-          shopping workflow.
+          Iconic houses. Recorded manufacturer facts. <br />
+          Your agent, your final say.
         </p>
         <a className="editorial-link" href="#shop">
           Find your fit <ArrowRight size={17} />
@@ -87,7 +84,8 @@ export function EditorialHero({
             <span className="stage-number">0{index + 1} / 04</span>
             <strong>{product.name}</strong>
             <small>
-              {formatMoney(product.price)} · Original product illustration
+              {formatMoney(product.price)} · DALE sandbox offer · Editorial
+              identity card
             </small>
           </div>
           <button

@@ -1228,10 +1228,10 @@ export default function Storefront() {
                   <span>BUYER ASSURANCE</span>
                 </div>
                 <h2 id="concierge-title" className="concierge-title">
-                  Guaranteed fit. Protected checkout.
+                  Sourced choices. Your approval.
                 </h2>
                 <p className="concierge-subtitle">
-                  Hardware-verified compatibility, secure payment with PayPal Buyer Protection, and dedicated customer support.
+                  Manufacturer-linked specifications, separately approved checkout and evidence-based support.
                 </p>
               </div>
 
@@ -1243,11 +1243,11 @@ export default function Storefront() {
                       <div className="concierge-icon-frame">
                         <ShieldCheck size={20} />
                       </div>
-                      <span className="concierge-badge">VERIFIED FIT</span>
+                      <span className="concierge-badge">RECORDED FACTS</span>
                     </div>
-                    <h3 className="concierge-card-title">Guaranteed Device Fit</h3>
+                    <h3 className="concierge-card-title">Evidence Before Recommendation</h3>
                     <p className="concierge-card-desc">
-                      Accessories are matched to your device specifications and verified for standard wattage and connection tolerances. Zero sponsored rankings.
+                      Compare exact recorded variants. Reviewed charging compatibility is separate from device purchases; missing specifications are disclosed.
                     </p>
                   </div>
                   <button
@@ -1284,7 +1284,7 @@ export default function Storefront() {
                     </div>
                     <h3 className="concierge-card-title">Secure Checkout & Protection</h3>
                     <p className="concierge-card-desc">
-                      Upfront pricing with full PayPal Buyer Protection. No hidden charges, unexpected recurring fees, or unapproved substitutions.
+                      Review the exact sandbox amount and merchant before approval. PayPal eligibility depends on its terms; no unapproved substitutions.
                     </p>
                   </div>
                   <button
@@ -1311,7 +1311,7 @@ export default function Storefront() {
                     </div>
                     <h3 className="concierge-card-title">30-Day Returns & Support</h3>
                     <p className="concierge-card-desc">
-                      Straightforward 30-day return window with prepaid labels. All cases and exceptions receive dedicated human review.
+                      A 30-day demo return policy with customer-selected remedies, recorded evidence and human review. Shipping labels are simulated.
                     </p>
                   </div>
                   <button
@@ -1373,7 +1373,7 @@ export default function Storefront() {
                     <span className="inquiry-toggle-icon">+</span>
                   </summary>
                   <p>
-                    You can request a return directly from My Orders within 30 days of delivery. We provide prepaid return labels, and our support team reviews any special circumstances.
+                    You can request a return directly from My Orders within 30 days of delivery. Demo return labels are simulated, and cases require human review.
                   </p>
                 </details>
                 <details className="inquiry-item">
@@ -2329,7 +2329,7 @@ export default function Storefront() {
           <div className="footer-bottom">
             <span>DALE / The considered collection</span>
             <span>
-              Test storefront · Sourced products + sample catalog · Simulated
+              Test storefront · Manufacturer-linked catalogue + isolated fixtures · Simulated
               shipping · USD
             </span>
           </div>
@@ -2379,8 +2379,8 @@ export default function Storefront() {
                       ))}
                     </ul>
                     <p>
-                      {isRetailCategory(modal.product.category) ? "Variant attributes: " : "Recorded device profiles: "}
-                      {isRetailCategory(modal.product.category) ? Object.entries(modal.product.attributes || {}).map(([key, value]) => `${key}: ${value}`).join(" · ") : modal.product.compatibleModels
+                      {isRetailCategory(modal.product.category) || modal.product.brand ? "Variant attributes: " : "Recorded device profiles: "}
+                      {isRetailCategory(modal.product.category) || modal.product.brand ? Object.entries(modal.product.attributes || {}).map(([key, value]) => `${key}: ${value}`).join(" · ") : modal.product.compatibleModels
                         .map(deviceLabel)
                         .join(", ")}
                     </p>
@@ -2388,7 +2388,7 @@ export default function Storefront() {
                       {modal.product.sponsored
                         ? "Sponsored listing. Organic ranking is independent of sponsorship."
                         : "Curated catalog listing."}{" "}
-                      Product visual is a catalog illustration.
+                      Product visual is an editorial identity card or original illustration.
                     </p>
                     <CatalogEvidence product={modal.product} />
                     <div className="policy-note">
