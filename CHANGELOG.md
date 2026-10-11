@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-11 — Verified 142-record hosted release
+
+- Correct restoration coverage to locate the exact restored product independently of first-page placement. All 410 unit/contract checks and ten Linux production browser journeys pass.
+- Deploy the exact checked artifact, preserving customer data and private provider/runtime configuration. Verify twenty hosted commerce checks and eight actual restart checks.
+- Verify decoded manufacturer photographs for four fifteen-family fragrance houses, stable public cursor traversal and a bounded ten-concurrent-reader burst. Retain Linux 10,000-record query receipts separately from actual inventory and commercial capacity claims.
+
+
 ## 2026-10-11 — Three additional manufacturer fragrance houses
 
 - Add fourteen distinct Parfums de Marly models, fourteen Amouage models and fifteen Initio models from the manufacturers' public catalogs and exact product pages. Existing Layton and Reflection Man identities remain intact; each of these houses and MFK now has fifteen reviewed families.

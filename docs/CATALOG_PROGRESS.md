@@ -1,6 +1,6 @@
 # Marketplace assortment implementation
 
-Updated 11 October 2026. This measures the enlarged catalog, not overall project readiness. Source-reviewed implementation contains 142 offer records representing 138 distinct product families: 6.9% of the 2,000-family target. The original 35-record assortment had 31 families; five ten-model batches and 57 distinct fragrances add 107 families. Size variants do not increase the count. The actual public release currently contains 85 records; the additional fragrance batches are undergoing release verification.
+Updated 11 October 2026. This measures the enlarged catalog, not overall project readiness. Source-reviewed implementation contains 142 offer records representing 138 distinct product families: 6.9% of the 2,000-family target. The original 35-record assortment had 31 families; five ten-model batches and 57 distinct fragrances add 107 families. Size variants do not increase the count. The actual public release `9547200` now contains all 142 records; the fragrance batches passed release and hosted/restart verification. This count does not establish completed brand depth or overall project readiness.
 
 | Category | Records | Distinct families | Published brands |
 | --- | ---: | ---: | --- |
@@ -37,7 +37,7 @@ Verification and actual deployed build are recorded in [CATALOG_ACCEPTANCE.md](C
 2. Expand electronics facts and device/accessory relationships; separate headphones and earbuds from legacy audio without breaking existing orders. Qualify each compatibility claim against explicit protocol/device evidence.
 3. Expand clothing, fragrance, watches, bags, shoes, sunglasses, beauty, home and appliances to their per-brand depth gates, with category-specific fact boundaries. Clothing size is not individual fit; fragrance notes are not enjoyment; watch water resistance is not activity suitability; skincare facts do not establish medical safety.
 4. Complete general multi-category agent evaluation, contextual refinements, source-backed comparison and unknown-model/unknown-fact cases. Preset fixtures remain testing tools and do not establish live model quality.
-5. Add durable ingestion/refresh jobs, reviewed SKU revisions, merchant price/stock feeds and licensed media workflows. Filter-bound cursor pagination and an isolated 10,000-record query-plan/traversal gate are implemented; EC2 HTTP/concurrency and commercial load receipts remain pending.
+5. Add durable ingestion/refresh jobs, reviewed SKU revisions, merchant price/stock feeds and licensed media workflows. Filter-bound cursor pagination and an isolated 10,000-record query-plan/traversal gate are implemented. A fifty-request EC2 catalog burst at concurrency ten passes against 142 records; sustained commercial and 2,000-record HTTP load gates remain pending.
 6. Verify import withdrawal/restoration, migrations, independent-account commerce and app/worker restart on the actual host for each release. Retain the working release and existing customer/provider data.
 
 ## Manual checks for the reviewed batches
@@ -49,5 +49,9 @@ Use the local fixture preview to avoid provider calls and payment spend. Enter a
 - `Find Rayban sunglasses under $250 and use group buying` — the Ray-Ban filter resolves despite the compact spelling. A request for polarized lenses cannot treat unverified lens information as a match.
 - `Find Oakley Holbrook XL sunglasses under $250` — clarification instead of a substitution with base Holbrook.
 - `Find MFK APOM eau de parfum 70ml under $400 and use group buying` — exact APOM bottle, concentration and volume; conditional group terms with a separate commitment. Allergy-safety requests must not become guarantees.
+- `Find PDM Delina Exclusif parfum 75ml under $400` — the exact source-classified Parfum record, not an invented eau de parfum substitution.
+- `Find Initio Rehab extrait de parfum 90ml under $400` — the documented extrait record. `Find Initio Atomic Rose extrait de parfum` must ask for clarification because that concentration is not documented for the reviewed Atomic Rose offer.
+
+Browse **Fragrance**, then select MFK, Parfums de Marly, Amouage or Initio in **Brand**: each returns fifteen distinct families with manufacturer photos and source links. Clear filters and use **Load more**: 142 records arrive across three pages (48/48/46). These published products do not need sample role switching to be discovered. Independent browsers retain separate accounts and shared eligible group state; fixture tests isolate financial operations from genuine PayPal capture.
 
 Browse **Electronics**: choose a category before any products appear. Browse **Watches** or **Sunglasses**: a product grid opens directly, and brand/model filters use published database facts. Product photographs must decode inside the grid; a failed image must show its product name and a clear failure message with the source still available.

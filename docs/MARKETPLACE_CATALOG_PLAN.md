@@ -1,6 +1,6 @@
 # Marketplace catalogue expansion
 
-Status: implementation in progress. Database publication/search foundation and initial reviewed Oakley/Tissot batches are implemented; full assortment depth is pending. See CATALOG_ACCEPTANCE.md for verified release scope. Existing application and customer data remain in place. This supersedes the mixed electronics brand shortlist, not the core customer-first agent goals in MASTER_PLAN.md.
+Status: implementation in progress. Application 9547200 is deployed with 142 offers / 138 distinct families across eight nonempty departments. Nine reviewed brand batches, database publication/search, filter-bound cursors and isolated capacity checks are implemented; full assortment depth and ingestion/refresh operations remain pending. See CATALOG_ACCEPTANCE.md for verified release scope. Existing application and customer data remain in place. This supersedes the mixed electronics brand shortlist, not the core customer-first agent goals in MASTER_PLAN.md.
 
 Expanded 11 October: sunglasses and a production implementation specification are included below. The full specification is in [MARKETPLACE_ARCHITECTURE.md](MARKETPLACE_ARCHITECTURE.md). The first deliverable remains a reviewed exact-product manifest; document completion is not storefront expansion completion.
 
@@ -10,7 +10,7 @@ On 11 October 2026, direct browser inspection of Amazon India showed 44 search-s
 
 References: https://www.amazon.in/ and https://www.amazon.in/electronics/b/?node=976419031 . Navigation is a structural reference, not authorization to copy Amazon inventory, images, prices or seller stock. Manufacturer records supply product facts; merchant feeds supply actual offers and fulfilment claims.
 
-Current DALE has six departments and 13 category IDs in src/domain/departments.ts. The released ordinary catalogue has 35 source-linked records. Historical/sample identities and customer orders must remain addressable. Expansion must preserve the shopping agent, exact-variant group commitments, separately approved PayPal checkout and evidence-based remedies.
+At the initial planning baseline, DALE had six departments, 13 category IDs and 35 source-linked records. Current counts and the deployed build are maintained in CATALOG_PROGRESS.md and CATALOG_ACCEPTANCE.md. Historical/sample identities and customer orders must remain addressable. Expansion must preserve the shopping agent, exact-variant group commitments, separately approved PayPal checkout and evidence-based remedies.
 
 ## Navigation and approved assortment
 
