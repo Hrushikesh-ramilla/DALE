@@ -87,6 +87,51 @@ test("public catalog supports all departments and strict paginated attribute que
   expect((await request.get("/api/catalog?category=unknown")).ok()).toBe(false);
 });
 
+test("featured products render visible artwork on desktop and mobile", async ({
+  page,
+}) => {
+  for (const viewport of [
+    { width: 1920, height: 1080 },
+    { width: 390, height: 844 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.goto("/shop");
+    const hero = page.getByRole("region", { name: "The everyday edit" });
+    for (const name of [
+      "Apple",
+      "Maison Francis Kurkdjian",
+      "Louis Vuitton",
+      "Givenchy",
+    ]) {
+      const illustration = hero.getByRole("img", {
+        name: new RegExp(`${name}.*original category illustration`),
+      });
+      await expect(illustration).toBeVisible();
+      const bounds = await illustration.boundingBox();
+      expect(bounds!.width).toBeGreaterThan(200);
+      expect(bounds!.height).toBeGreaterThan(200);
+      // A drawn silhouette is required; typographic identity cards caused the regression.
+      expect(
+        await illustration.locator("path, rect, circle").count(),
+      ).toBeGreaterThan(3);
+      await expect(hero.locator(".stage-caption")).toContainText(
+        "Original category illustration",
+      );
+      await hero
+        .getByRole("button", { name: "Next featured product", exact: true })
+        .click();
+    }
+    await expect(
+      hero.getByRole("img", { name: /Apple.*original category illustration/ }),
+    ).toBeVisible();
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth,
+      ),
+    ).toBe(true);
+  }
+});
+
 test("electronics opens a nested device browser on desktop and mobile", async ({
   page,
 }) => {

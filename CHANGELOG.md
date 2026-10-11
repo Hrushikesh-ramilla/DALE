@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-11 — Featured product rendering repair
+
+- Fix the branded hero path that displayed pale text-only identity cards on a transparent light stage.
+- Render original shaded category illustrations for phone, fragrance, bag and clothing slides. Identify illustrations explicitly; retain sourced product names, sandbox prices and detail actions.
+- Bound artwork responsively and add desktop/mobile browser coverage for all four slides, wraparound controls, visible silhouette geometry and horizontal overflow.
+- Local production build, 378 unit/contract tests and five production browser journeys pass, including all featured slides at 1920px and 390px. Hosted release verification follows the checked application commit.
+
 ## 2026-10-11 — Sourced branded catalogue
 
 - Replace ordinary invented inventory with 35 manufacturer-linked branded records, preserving sample SKU histories. Add phones, laptops, tablets and nested department/category/type navigation.

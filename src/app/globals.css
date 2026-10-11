@@ -2979,3 +2979,9 @@ summary {
 .branded-product-art{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;background:radial-gradient(ellipse at 50% 30%,#333,#111 70%);padding:28px;color:#e6e2d8;min-height:240px}
 .branded-product-art strong{font-family:var(--font-serif),Georgia,serif;font-size:clamp(24px,3vw,42px);font-weight:500;line-height:1.1;max-width:100%}.branded-product-art>span{font-size:13px;letter-spacing:.06em;max-width:90%}.branded-product-art .brand-art-category,.branded-product-art small{font-size:10px;letter-spacing:.2em;color:#aaa}.branded-product-art.compact{min-height:150px}
 @media(max-width:600px){.department-browser{padding:16px}.department-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.department-tile{padding:14px;min-height:150px}.department-tabs button{font-size:12px;padding:8px 10px}}
+
+/* Featured artwork must remain visible on the light editorial stage. */
+.featured-product-art { width:100%; height:100%; display:grid; place-items:center; }
+.featured-product-art svg { display:block; width:100%; height:100%; max-width:600px; }
+.stage-object .product-viewer { height:clamp(260px,30vw,430px); }
+@media (max-width:600px) { .stage-object .product-viewer { height:280px; } }

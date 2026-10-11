@@ -84,8 +84,8 @@ export function EditorialHero({
             <span className="stage-number">0{index + 1} / 04</span>
             <strong>{product.name}</strong>
             <small>
-              {formatMoney(product.price)} · DALE sandbox offer · Editorial
-              identity card
+              {formatMoney(product.price)} · DALE sandbox offer · Original
+              category illustration
             </small>
           </div>
           <button
