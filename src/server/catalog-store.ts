@@ -1,6 +1,11 @@
 import { searchCatalog, type Product } from "@/domain/catalog";
 import { departments } from "@/domain/departments";
 import { getDatabase, type Sql } from "./database";
+import {
+  catalogFilterHash,
+  decodeCatalogCursor,
+  encodeCatalogCursor,
+} from "./catalog-cursor";
 
 export async function catalogSummary() {
   const database = await getDatabase();
@@ -74,10 +79,15 @@ export async function browseCatalog(input: {
   query?: string;
   budget?: number;
   page?: number;
+  cursor?: string;
   requirements?: Record<string, string | number>;
   fixtures?: boolean;
 }) {
   const database = await getDatabase();
+  const filter = catalogFilterHash(input);
+  const position = input.cursor
+    ? decodeCatalogCursor(input.cursor, filter)
+    : undefined;
   const values = [
     input.category || "",
     input.query || "",
@@ -93,14 +103,24 @@ export async function browseCatalog(input: {
     values,
   );
   const rows = await database.query<{ record: Product }>(
-    `SELECT record FROM catalog_products WHERE ${where} ORDER BY price,id LIMIT 48 OFFSET $6`,
-    [...values, ((input.page || 1) - 1) * 48],
+    position
+      ? `SELECT record FROM catalog_products WHERE ${where} AND (price,id)>($6,$7) ORDER BY price,id LIMIT 49`
+      : `SELECT record FROM catalog_products WHERE ${where} ORDER BY price,id LIMIT 49 OFFSET $6`,
+    position
+      ? [...values, position.price, position.id]
+      : [...values, ((input.page || 1) - 1) * 48],
   );
   const counts = await database.query<{ category: string; count: string }>(
     "SELECT category,count(*) FROM catalog_products WHERE publication='published' GROUP BY category ORDER BY category",
   );
+  const products = rows.rows.slice(0, 48).map((row) => row.record);
+  const last = products.at(-1);
   return {
-    products: rows.rows.map((row) => row.record),
+    products,
+    nextCursor:
+      rows.rows.length > 48 && last
+        ? encodeCatalogCursor(filter, last.price, last.id)
+        : null,
     total: Number(total.rows[0].count),
     page: input.page || 1,
     pageSize: 48,

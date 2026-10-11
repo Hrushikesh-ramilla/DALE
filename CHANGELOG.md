@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Catalog continuation and capacity qualification
+
+- Added filter-bound cursor pagination ordered by price and stable SKU, retaining page-number compatibility. Storefront load-more uses continuations; retiring an earlier record no longer shifts the next page.
+- Added an isolated 10,000-record database capacity runner with complete traversal, equal-price ties, concurrent typed filters, fixture leakage checks and query-plan receipt. This qualifies the local query contract, not EC2 commercial throughput or source-reviewed assortment size.
+- Verified the 85-record application release with 401 unit tests, nine production browser journeys, twenty hosted commerce checks and eight checks after an actual app/worker restart. Existing private configuration and customer data were retained.
+
 ## 2026-10-11 — Category navigation and dependable manufacturer image delivery
 
 - Open single-category departments directly; show no mixed inventory before selecting an electronics category. Derive department counts from published inventory.

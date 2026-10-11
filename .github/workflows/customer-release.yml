@@ -12,6 +12,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - run: npx tsx scripts/verify-catalog-capacity.ts
       - run: npm run build
       - run: npx tsx scripts/verify-local-ocr-http.ts
       - run: npx playwright install --with-deps chromium
@@ -31,3 +32,4 @@ jobs:
           path: |
             playwright-report
             test-results
+            .data/evaluations/catalog-capacity.json

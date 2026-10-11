@@ -79,6 +79,29 @@ it("paginates a full 500-record publication without duplicates or fixture leakag
   }
   expect(new Set(ids).size).toBe(500);
   expect(ids).toEqual(input.products.map((product) => product.id));
+  const continuedIds: string[] = [];
+  let cursor: string | undefined;
+  do {
+    const result = await browseCatalog({ query: "IsolatedCapacity", cursor });
+    continuedIds.push(...result.products.map((product) => product.id));
+    cursor = result.nextCursor || undefined;
+  } while (cursor);
+  expect(continuedIds).toEqual(ids);
+  const first = await browseCatalog({ query: "IsolatedCapacity" });
+  await expect(
+    browseCatalog({ query: "different", cursor: first.nextCursor! }),
+  ).rejects.toThrow("continuation");
+  // Withdrawing an earlier record must not shift the next page or repeat IDs.
+  const database = await getDatabase();
+  await database.query(
+    "UPDATE catalog_products SET publication='retired' WHERE id=$1",
+    [ids[0]],
+  );
+  const second = await browseCatalog({
+    query: "IsolatedCapacity",
+    cursor: first.nextCursor!,
+  });
+  expect(second.products.map((p) => p.id)).toEqual(ids.slice(48, 96));
   await retireCatalog(staged.id);
   expect((await browseCatalog({ query: "IsolatedCapacity" })).total).toBe(0);
 });
