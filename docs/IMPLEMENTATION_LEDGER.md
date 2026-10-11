@@ -16,8 +16,8 @@
 | Milestone | Description | Status | Evidence / Exit Gate |
 |---|---|---|---|
 | **I0** | Baseline, coverage registry & census framework | **COMPLETED** | `catalog/coverage-targets.json` (50 leaves), `src/domain/coverage-targets.ts` (Zod schemas), `scripts/coverage-report.ts` (auditing CLI), 5 priority censuses committed in `catalog/census/` (Laptops: 113, Tablets: 57, Headphones: 78, Wall Chargers: 41, Portable SSDs: 23; 289 models across 61 brand entries with documented supply exceptions). 58 test suites, 419 tests passing (`npm test`), `tsc --noEmit` clean. |
-| **I1** | Additive model, leaf taxonomy & revision contracts | **IN PROGRESS** | Additive schema migration, v1 release hash stability, immutable revisions |
-| **I2** | Durable ingestion, review & publication pipeline | Pending | Idempotent extractors, operator collection checkpoints, staged publishing |
+| **I1** | Additive model, leaf taxonomy & revision contracts | **COMPLETED** | Additive columns (`leaf_type`, `brand`, `model_name`, `sku_variant`, `revision_id`) & tables (`catalog_fact_revisions`, `catalog_device_accessories`, `catalog_operator_jobs`) in `src/server/database.ts`. Non-breaking `catalogManifestV2Schema` & `parseAnyCatalogManifest` in `src/domain/catalog-manifest.ts` preserving v1 serialization & bootstrap hashes. `createProductRevision` & `rollbackProductRevision` with immutable audit trail in `src/server/catalog-publishing.ts`. 5 new unit/integration tests in `tests/catalog-revisions.test.ts` passing; 59 test suites / 424 tests passing; `tsc --noEmit` 0 errors. |
+| **I2** | Durable ingestion, review & publication pipeline | **IN PROGRESS** | Operator jobs service (`catalog_operator_jobs`), review workflow, fixture loader |
 | **I3** | Search, navigation, product details & revision paging | Pending | Department → leaf navigation, faceted filters, cursor pagination |
 | **I4** | Electronics core (13 types, 100–150 models/type) | Pending | Laptops, Tablets, Phones, Audio, Storage, Chargers with Ambrane/Portronics |
 | **I5** | Remaining electronics (8 types) | Pending | Monitors, Docks, Cables, Webcams, Routers, etc. |

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { categoryIds } from "./departments";
+import { categoryIds, leafTypeKeys, resolveParentCategory } from "./departments";
 import type { Product } from "./catalog";
 
 const httpsUrl = z.url().refine((value) => {
@@ -140,3 +140,62 @@ export const catalogManifestSchema = z
 export type CatalogManifest = z.infer<typeof catalogManifestSchema>;
 export const manifestProducts = (manifest: CatalogManifest): Product[] =>
   manifest.products;
+
+const productV2 = product.extend({
+  leafType: z.enum(leafTypeKeys).optional(),
+  modelName: z.string().min(1).max(120).optional(),
+  skuVariant: z.string().max(80).optional(),
+  revisionId: z.string().max(80).optional(),
+  accessoryProtocols: z.record(z.string(), z.any()).optional(),
+  deviceCompatibility: z.array(z.string().max(80)).optional(),
+});
+export type ProductV2 = z.infer<typeof productV2>;
+
+export const catalogManifestV2Schema = z
+  .object({
+    schemaVersion: z.literal("catalog-manifest-v2"),
+    id: z.string().regex(/^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/),
+    reviewedBy: z.string().min(3).max(100),
+    reviewedAt: z.iso.date(),
+    approvedSourceHosts: z
+      .array(z.string().regex(/^[a-z0-9.-]+$/))
+      .min(1)
+      .max(100),
+    products: z.array(productV2).min(1).max(500),
+  })
+  .strict()
+  .superRefine((manifest, context) => {
+    const ids = new Set<string>();
+    for (const record of manifest.products) {
+      if (ids.has(record.id))
+        context.addIssue({
+          code: "custom",
+          message: `Duplicate product ID: ${record.id}`,
+        });
+      ids.add(record.id);
+      if (
+        !manifest.approvedSourceHosts.includes(new URL(record.source).hostname)
+      )
+        context.addIssue({
+          code: "custom",
+          message: `Source origin is not reviewed for ${record.id}`,
+        });
+    }
+  });
+export type CatalogManifestV2 = z.infer<typeof catalogManifestV2Schema>;
+
+export const anyCatalogManifestSchema = z.union([
+  catalogManifestSchema,
+  catalogManifestV2Schema,
+]);
+export type AnyCatalogManifest = z.infer<typeof anyCatalogManifestSchema>;
+
+export function parseAnyCatalogManifest(input: unknown): AnyCatalogManifest {
+  if (typeof input === "object" && input !== null && "schemaVersion" in input) {
+    if (input.schemaVersion === "catalog-manifest-v2") {
+      return catalogManifestV2Schema.parse(input);
+    }
+  }
+  return catalogManifestSchema.parse(input);
+}
+

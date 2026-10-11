@@ -144,3 +144,157 @@ export const departments = [
       "Compare capacity, dimensions, voltage and manufacturer energy specifications.",
   },
 ] as const;
+
+export const leafTypeKeys = [
+  // Wave 1: Electronics Core (13)
+  "phones",
+  "laptops",
+  "tablets",
+  "headphones",
+  "earbuds",
+  "speakers",
+  "wall-chargers",
+  "power-banks",
+  "portable-ssds",
+  "internal-ssds",
+  "hard-drives",
+  "keyboards",
+  "mice",
+  // Wave 2: Electronics Remaining (8)
+  "soundbars",
+  "cables",
+  "memory-cards",
+  "usb-flash-drives",
+  "monitors",
+  "docks-hubs",
+  "webcams",
+  "routers",
+  // Wave 3: Clothing (9)
+  "shirts",
+  "t-shirts",
+  "knitwear",
+  "trousers",
+  "denim",
+  "dresses",
+  "suits",
+  "jackets",
+  "coats",
+  // Wave 4: Lifestyle (15)
+  "fragrance",
+  "watches",
+  "sunglasses",
+  "handbags",
+  "backpacks",
+  "wallets",
+  "loafers",
+  "formal-shoes",
+  "running-shoes",
+  "lifestyle-sneakers",
+  "boots",
+  "cleansers",
+  "serums",
+  "moisturizers",
+  "sunscreens",
+  // Wave 5: Home & Appliances (5)
+  "kitchenware",
+  "decor",
+  "home-textiles",
+  "vacuum-cleaners",
+  "air-purifiers",
+] as const;
+
+export type LeafTypeKey = (typeof leafTypeKeys)[number];
+
+export const isLeafTypeKey = (key?: string): key is LeafTypeKey =>
+  typeof key === "string" && (leafTypeKeys as readonly string[]).includes(key);
+
+export const leafToParentCategory: Record<LeafTypeKey, Category> = {
+  // Wave 1: Electronics Core
+  phones: "phones",
+  laptops: "laptops",
+  tablets: "tablets",
+  headphones: "headphones",
+  earbuds: "earbuds",
+  speakers: "audio",
+  "wall-chargers": "chargers",
+  "power-banks": "chargers",
+  "portable-ssds": "storage",
+  "internal-ssds": "storage",
+  "hard-drives": "storage",
+  keyboards: "accessories",
+  mice: "accessories",
+  // Wave 2: Electronics Remaining
+  soundbars: "audio",
+  cables: "accessories",
+  "memory-cards": "storage",
+  "usb-flash-drives": "storage",
+  monitors: "accessories",
+  "docks-hubs": "docks",
+  webcams: "accessories",
+  routers: "accessories",
+  // Wave 3: Clothing
+  shirts: "clothing",
+  "t-shirts": "clothing",
+  knitwear: "clothing",
+  trousers: "clothing",
+  denim: "clothing",
+  dresses: "clothing",
+  suits: "clothing",
+  jackets: "clothing",
+  coats: "clothing",
+  // Wave 4: Lifestyle
+  fragrance: "fragrance",
+  watches: "watches",
+  sunglasses: "sunglasses",
+  handbags: "bags",
+  backpacks: "bags",
+  wallets: "bags",
+  loafers: "footwear",
+  "formal-shoes": "footwear",
+  "running-shoes": "footwear",
+  "lifestyle-sneakers": "footwear",
+  boots: "footwear",
+  cleansers: "beauty",
+  serums: "beauty",
+  moisturizers: "beauty",
+  sunscreens: "beauty",
+  // Wave 5: Home & Appliances
+  kitchenware: "home",
+  decor: "home",
+  "home-textiles": "home",
+  "vacuum-cleaners": "appliances",
+  "air-purifiers": "appliances",
+};
+
+export const categoryToDefaultLeaf: Record<Category, LeafTypeKey> = {
+  phones: "phones",
+  laptops: "laptops",
+  tablets: "tablets",
+  chargers: "wall-chargers",
+  docks: "docks-hubs",
+  storage: "portable-ssds",
+  audio: "speakers",
+  headphones: "headphones",
+  earbuds: "earbuds",
+  accessories: "keyboards",
+  clothing: "shirts",
+  fragrance: "fragrance",
+  bags: "handbags",
+  home: "decor",
+  beauty: "serums",
+  watches: "watches",
+  footwear: "lifestyle-sneakers",
+  sunglasses: "sunglasses",
+  appliances: "vacuum-cleaners",
+};
+
+export function resolveParentCategory(leafOrCategory: string): Category {
+  if (isLeafTypeKey(leafOrCategory)) {
+    return leafToParentCategory[leafOrCategory];
+  }
+  if ((categoryIds as readonly string[]).includes(leafOrCategory)) {
+    return leafOrCategory as Category;
+  }
+  return "accessories";
+}
+
