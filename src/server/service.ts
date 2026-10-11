@@ -33,6 +33,7 @@ import {
 import { aiMode, evidenceAnalysis, scamAnalysis, shoppingSummary } from "./ai";
 import { evidenceHash, getAsset, putAsset } from "./storage";
 import { getDatabase } from "./database";
+import { customerProfile } from "./customers";
 import { selectVisionEvidence } from "./vision";
 import { briefSchema, type ShoppingBrief } from "../domain/brief";
 import { enqueueJob, recoveryStatus } from "./jobs";
@@ -103,6 +104,7 @@ export async function snapshot(actor: Actor) {
   const state = await getWorkspace(actor.workspaceId);
   return {
     actor,
+    customer: await customerProfile(actor),
     brief: state.briefs?.find((brief) => brief.buyerId === actor.userId),
     conversation:
       state.conversations?.find((item) => item.buyerId === actor.userId)

@@ -1,0 +1,33 @@
+name: Customer release verification
+on: [workflow_dispatch]
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+      - run: npx tsx scripts/verify-local-ocr-http.ts
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test e2e/customers.spec.ts
+        env:
+          E2E_SERVER_MODE: production
+      - run: node scripts/package-linux-app.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-app-release
+          path: .data/linux-artifact
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: customer-browser-report
+          path: |
+            playwright-report
+            test-results

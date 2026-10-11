@@ -4,12 +4,10 @@ import {
   useRef,
   useEffect,
   useCallback,
-  type ReactNode,
 } from "react";
 import { createPortal } from "react-dom";
 import {
   Sparkles,
-  SlidersHorizontal,
   X,
   Search,
   LoaderCircle,
@@ -61,7 +59,6 @@ export function ShoppingBriefMenu({
   setPriority,
   weights,
   setWeights,
-  briefDirty,
   setBriefDirty,
   busy,
   restoring,
@@ -77,7 +74,8 @@ export function ShoppingBriefMenu({
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    setMounted(true);
+    const frame = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   const updateOrigin = useCallback(() => {

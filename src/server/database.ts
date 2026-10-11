@@ -17,6 +17,8 @@ declare global {
 }
 const schema = `
 CREATE TABLE IF NOT EXISTS workspaces (id text PRIMARY KEY, state jsonb NOT NULL);
+CREATE TABLE IF NOT EXISTS storefronts (id text PRIMARY KEY, workspace_id text NOT NULL REFERENCES workspaces(id));
+CREATE TABLE IF NOT EXISTS customer_accounts (id text PRIMARY KEY, email text UNIQUE, name text NOT NULL, password_hash text, created_at timestamptz NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS sessions (token_hash text PRIMARY KEY, workspace_id text NOT NULL REFERENCES workspaces(id), user_id text NOT NULL, role text NOT NULL CHECK (role IN ('buyer','seller','reviewer')), expires_at timestamptz NOT NULL);
 CREATE TABLE IF NOT EXISTS assets (id text PRIMARY KEY, workspace_id text NOT NULL REFERENCES workspaces(id), case_id text NOT NULL, owner_id text NOT NULL, checkpoint text NOT NULL, mime text NOT NULL, hash text NOT NULL, storage_key text NOT NULL, created_at timestamptz NOT NULL DEFAULT now());
 CREATE INDEX IF NOT EXISTS sessions_expiry ON sessions(expires_at);

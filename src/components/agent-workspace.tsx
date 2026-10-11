@@ -50,9 +50,9 @@ export function AgentWorkspace({
   const active = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    if (initialTask) {
-      setTask(initialTask);
-    }
+    if (!initialTask) return;
+    const frame = requestAnimationFrame(() => setTask(initialTask));
+    return () => cancelAnimationFrame(frame);
   }, [initialTask]);
   const startedSession = useRef<Session | null>(null);
   useEffect(() => {
@@ -87,11 +87,8 @@ export function AgentWorkspace({
       };
       let owner = session || startedSession.current;
       if (!owner) {
-        setPhase("Starting your private demo workspace…");
-        owner = await request<Session>("/api/demo", {
-          action: "launch",
-          kind: "fresh",
-        });
+        setPhase("Starting your private shopping session…");
+        owner = await request<Session>("/api/account", { action: "guest" });
         startedSession.current = owner;
       }
       if (current !== generation.current) return;
@@ -178,7 +175,9 @@ export function AgentWorkspace({
               Hello, I’m <strong>DALE</strong>.
             </p>
             <p className="welcome-sub">
-              Ask me anything about compatibility, connector fit, charging speeds, or scam prevention. Tell me what you need, and I’ll help you find the right match.
+              Ask me anything about compatibility, connector fit, charging
+              speeds, or scam prevention. Tell me what you need, and I’ll help
+              you find the right match.
             </p>
           </div>
         )}
@@ -186,7 +185,9 @@ export function AgentWorkspace({
           <div className="agent-capability-note">
             <strong>Buyer advocate</strong>
             <span>
-              Manufacturer-backed device fit and charger comparisons, message safety, group savings and order support. Review the sources and approve each commitment yourself.
+              Manufacturer-backed device fit and charger comparisons, message
+              safety, group savings and order support. Review the sources and
+              approve each commitment yourself.
             </span>
           </div>
         )}

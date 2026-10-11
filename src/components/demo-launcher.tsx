@@ -54,19 +54,21 @@ const scenarios = [
 
 export function DemoLauncher() {
   const [busy, setBusy] = useState("");
-  const [error, setError] = useState("");
-  const [introKey, setIntroKey] = useState(0);
-  const [pageVisible, setPageVisible] = useState(false);
+  const [, setError] = useState("");
+  const [introKey] = useState(0);
+  const [, setPageVisible] = useState(false);
   const [logoSettled, setLogoSettled] = useState(false);
 
   useEffect(() => {
     // When introKey changes (e.g. on load or replay), reset pageVisible and logoSettled
-    setPageVisible(false);
-    setLogoSettled(false);
+    const frame = requestAnimationFrame(() => {
+      setPageVisible(false);
+      setLogoSettled(false);
+    });
     const timer = setTimeout(() => {
       setPageVisible(true);
     }, 2350);
-    return () => clearTimeout(timer);
+    return () => { cancelAnimationFrame(frame); clearTimeout(timer); };
   }, [introKey]);
 
   async function launch(kind: string) {

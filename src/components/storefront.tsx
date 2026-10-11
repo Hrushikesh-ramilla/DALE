@@ -1,4 +1,5 @@
 "use client";
+import { CustomerEntry } from "./customer-entry";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
@@ -10,7 +11,6 @@ import {
   Copy,
   CreditCard,
   HeartHandshake,
-  LoaderCircle,
   Lock,
   MessageSquare,
   Package,
@@ -295,6 +295,32 @@ export default function Storefront() {
       active = false;
     };
   }, [restoreSession]);
+  const pollingUser = session?.actor.userId;
+  const pollingDemo = Boolean(session?.demo);
+  useEffect(() => {
+    if (!pollingUser || pollingDemo) return;
+    let stopped = false,
+      active = false;
+    const timer = window.setInterval(async () => {
+      if (stopped || active || busy || document.hidden) return;
+      active = true;
+      try {
+        const data = await api<Session>("/api/session");
+        if (!stopped)
+          setSession((previous) =>
+            previous?.actor.userId === data.actor.userId ? data : previous,
+          );
+      } catch {
+        /* Retain the screen during transient connectivity loss. */
+      } finally {
+        active = false;
+      }
+    }, 3000);
+    return () => {
+      stopped = true;
+      window.clearInterval(timer);
+    };
+  }, [pollingUser, pollingDemo, busy]);
   const run = useCallback(async (fn: () => Promise<void>) => {
     setBusy(true);
     setError("");
@@ -1437,6 +1463,7 @@ export default function Storefront() {
                 </p>
               </div>
             )}
+            {session?.actor.role === "buyer" && !session.demo && <button className="button secondary" onClick={() => { setRole("buyer"); setModal({ kind: "login" }); }}>Account / sign in</button>}
             {session?.invite && !session.demo && (
               <div className="invite-panel">
                 <div>
@@ -1450,9 +1477,9 @@ export default function Storefront() {
                   className="button secondary"
                   onClick={() =>
                     void run(async () => {
-                      await navigator.clipboard.writeText(session.invite!);
+                      await navigator.clipboard.writeText(`${window.location.origin}/groups`);
                       setNotice(
-                        "Invitation copied. Enter it in another shopper's Start shopping dialog.",
+                        "Store link copied. Open it on another device, start shopping and commit to the same product group.",
                       );
                     })
                   }
@@ -2438,9 +2465,13 @@ export default function Storefront() {
                   </h2>
                   <p className="muted">
                     {role === "buyer"
-                      ? "Start an isolated test session, or join with a group invitation."
+                      ? "Shop together from separate devices. Each customer keeps private orders and payment approval."
                       : "Use a separate browser profile. Operator roles require the configured access code."}
                   </p>
+                  {role === "buyer" ? <CustomerEntry onComplete={async () => {
+                    restoreSession(await api<Session>("/api/session"));
+                    setModal(null); setTab("discover");
+                  }} /> : (
                   <form
                     onSubmit={(e) => {
                       e.preventDefault();
@@ -2506,7 +2537,9 @@ export default function Storefront() {
                     <button className="button primary full" disabled={busy}>
                       Enter workspace <ArrowRight size={16} />
                     </button>
-                  </form>
+                  </form>                  )}
+                  {role === "buyer" && <button className="button secondary" onClick={() => setRole("seller")}>Operator access</button>}
+
                 </>
               )}
               {modal.kind === "quote" && (
