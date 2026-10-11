@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Per-type and per-brand depth specification
+
+- Replace the aggregate 2,000-family completion criterion with independent coverage gates for 50 leaf product types: normally ten eligible brands and ten distinct models per brand, targeting 100–150 per type. Document manufacturer-backed exceptions where an actual brand range is smaller.
+- Separate headphone/earbud/speaker, charging/accessory, storage, computer peripheral and clothing-type targets. Prioritize sparse electronics; fragrance additions cannot close unrelated category gaps.
+- Specify a nominal 5,000–7,500-placement sourcing budget, exact-model censuses, reusable typed ingestion, durable review/refresh jobs, accessory evidence, connected AI/commerce tests and measured production acceptance. Retain existing working code and historical test receipts; no inventory or runtime change is made by this planning revision.
+
 ## 2026-10-11 — Resumable operator source collection
 
 - Retain per-model reviewed product/observation checkpoints bound to the exact feed hash, profile and collection date. A retry reuses completed records and validates the complete manifest before staging; changed inputs require a new review.

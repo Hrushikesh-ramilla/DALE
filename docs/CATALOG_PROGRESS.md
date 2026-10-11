@@ -1,5 +1,7 @@
 # Marketplace assortment implementation
 
+Scope revised 11 October: [ASSORTMENT_DEPTH_MASTER_PLAN](ASSORTMENT_DEPTH_MASTER_PLAN.md) requires depth separately for each leaf type: normally ten eligible brands × ten distinct models, with source-enumerated smaller-range exceptions. The 50-type matrix has a nominal 5,000–7,500-placement sourcing budget. The previous 2,000-family target and 6.9% count below are historical; they no longer measure completion. Published inventory remains 142 offers. Its previously counted 138 families require an audit under the stricter variant rules. No leaf type currently has a qualified ten-brand/ten-model coverage receipt under this new matrix. Planning changes do not alter the deployed build or invalidate prior scope-specific test receipts.
+
 Updated 11 October 2026. This measures the enlarged catalog, not overall project readiness. Source-reviewed implementation contains 142 offer records representing 138 distinct product families: 6.9% of the 2,000-family target. The original 35-record assortment had 31 families; five ten-model batches and 57 distinct fragrances add 107 families. Size variants do not increase the count. The actual public release `9547200` now contains all 142 records; the fragrance batches passed release and hosted/restart verification. This count does not establish completed brand depth or overall project readiness.
 
 | Category | Records | Distinct families | Published brands |
