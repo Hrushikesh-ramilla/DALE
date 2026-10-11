@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-11 — Marketplace architecture and eyewear planning
+
+- Add sunglasses/eyewear with selected Oakley/Ray-Ban and an 18-house candidate shortlist, exact lens/frame variant facts and evidence boundaries.
+- Expand the catalog plan into a production implementation specification: 12 priority departments, distinct-product depth targets, additive data model, staged imports/media, database publication, typed search, accessory relationships, transactional commerce and operator workflows.
+- Audit the current static public registry/search path and actual EC2 capacity. Specify load, migration, privacy, agent, independent-shopper, rollback and hosted acceptance gates without claiming they have passed.
+- Connect the specification to MASTER_PLAN and CURRENT_STATUS. Planning only: no runtime change, product import, provider call or infrastructure purchase.
+
 ## 2026-10-11 — Featured product rendering repair
 
 - Fix the branded hero path that displayed pale text-only identity cards on a transparent light stage.

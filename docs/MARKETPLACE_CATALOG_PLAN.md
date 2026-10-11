@@ -2,6 +2,8 @@
 
 Status: planned; no product import, application change or deployment is claimed by this document. Existing application and customer data remain in place. This supersedes the mixed electronics brand shortlist, not the core customer-first agent goals in MASTER_PLAN.md.
 
+Expanded 11 October: sunglasses and a production implementation specification are included below. The full specification is in [MARKETPLACE_ARCHITECTURE.md](MARKETPLACE_ARCHITECTURE.md). The first deliverable remains a reviewed exact-product manifest; document completion is not storefront expansion completion.
+
 ## Research and current state
 
 On 11 October 2026, direct browser inspection of Amazon India showed 44 search-selector options including All Categories: 43 named selections. These include services, digital content, overlapping departments and shopping filters; they are not 43 independent physical-product departments. Its electronics page separately navigates computing, tablets, headphones, speakers, cameras, smartwatches, storage, networking, printers, components and gaming.
@@ -31,6 +33,7 @@ Other explicitly selected departments:
 - Watches: Jaeger-LeCoultre, Rolex, Omega, Patek Philippe, Audemars Piguet, Vacheron Constantin, A. Lange & Söhne, IWC, TAG Heuer, Tissot. Treat repeated Jaeger/LeCoultre mentions as one brand. Tissot is the presumed normalization of "Pissot". Exact reference numbers identify models; mechanical watches are distinct from electronic smartwatches.
 - Footwear: Loro Piana, Brunello Cucinelli, Ferragamo, Nike, Adidas. Types: loafers, formal shoes, sneakers, running shoes, boots, sandals and heels. Preserve regional size systems and model-specific charts.
 - Beauty and skincare: prepare a manufacturer-backed shortlist including Chanel, Dior, Lancôme, Guerlain, La Mer, La Prairie, Clé de Peau Beauté, Sisley Paris, Shiseido and Estée Lauder. These are proposals under the user's luxury-brand direction, not yet a product manifest. Separate skincare, makeup, haircare, bodycare and tools.
+- Sunglasses and eyewear: Oakley and Ray-Ban are explicitly selected. Further candidates: Persol, Maui Jim, Oliver Peoples, Jacques Marie Mage, DITA, Cutler and Gross, MOSCOT, Garrett Leight, MYKITA, LINDBERG, Gentle Monster, Cartier, Tom Ford, Prada, Gucci, Saint Laurent, Bottega Veneta and Chanel. The 20-brand shortlist offers specialist and fashion houses; source ten distinct frame models per selected house where verified supply supports it, rather than counting lens colours as models. Exact model/lens/size variants record frame dimensions, material, lens type, polarization and explicitly documented protection claims. Smart glasses are cross-listed in electronics with one canonical SKU. Prescription suitability requires the exact manufacturer's prescription eligibility, not inferred medical advice.
 
 Keep bags/accessories and home/living and expand their internal types. Add appliances, home/kitchen, furniture/lighting, sports/outdoors, books/stationery, toys/games, luggage/travel, tools/home improvement, pet supplies, pantry/household and automotive accessories as data and test gates permit. Every new category needs its own sourcing and evaluation; no empty or generic category page is a completed feature.
 
