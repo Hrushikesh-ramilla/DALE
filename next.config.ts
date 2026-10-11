@@ -14,6 +14,21 @@ const config: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "cdn.shopify.com",
+        pathname: "/s/files/1/0555/6279/7250/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.shopify.com",
+        pathname: "/s/files/1/0823/5099/7796/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.shopify.com",
+        pathname: "/s/files/1/0607/4816/9444/**",
+      },
+      {
+        protocol: "https",
         hostname: "www.franciskurkdjian.com",
         pathname:
           "/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/**",

@@ -1,6 +1,6 @@
 # Marketplace assortment implementation
 
-Updated 11 October 2026. This measures the enlarged catalog, not overall project readiness. Source-reviewed implementation contains 99 offer records representing 95 distinct product families: 4.75% of the 2,000-family target. The original 35-record assortment had 31 families; five ten-model batches and fourteen distinct MFK fragrances add 64 families. Size variants do not increase the count. The actual public release currently contains 85 records; the MFK batch is undergoing release verification.
+Updated 11 October 2026. This measures the enlarged catalog, not overall project readiness. Source-reviewed implementation contains 142 offer records representing 138 distinct product families: 6.9% of the 2,000-family target. The original 35-record assortment had 31 families; five ten-model batches and 57 distinct fragrances add 107 families. Size variants do not increase the count. The actual public release currently contains 85 records; the additional fragrance batches are undergoing release verification.
 
 | Category | Records | Distinct families | Published brands |
 | --- | ---: | ---: | --- |
@@ -12,14 +12,14 @@ Updated 11 October 2026. This measures the enlarged catalog, not overall project
 | Keyboards/mice | 2 | 2 | Logitech |
 | Charging | 3 | 3 | Existing sourced device/accessory records |
 | Clothing | 6 | 2 | Givenchy, Valentino |
-| Fragrance | 22 | 22 | MFK, CHANEL, Tom Ford, Creed, Amouage, Serge Lutens, Maison Margiela, Parfums de Marly |
+| Fragrance | 65 | 65 | MFK, CHANEL, Tom Ford, Creed, Amouage, Serge Lutens, Maison Margiela, Parfums de Marly, Initio |
 | Bags | 4 | 4 | Gucci, Louis Vuitton, Hermès, Michael Kors |
 | Beauty | 2 | 2 | Lancôme, CHANEL |
 | Home | 1 | 1 | Hermès |
 | Watches | 20 | 20 | Rolex, Tissot |
 | Sunglasses | 20 | 20 | Oakley, Ray-Ban |
 
-Apple has eleven distinct phone models including the existing iPhone 17. Rolex, Tissot, Oakley and Ray-Ban each have ten distinct models. MFK has fifteen distinct fragrances in the reviewed implementation. Other houses have not reached their model-depth gates. Footwear, appliance and further electronics department types remain hidden until reviewed records are published.
+Apple has eleven distinct phone models including the existing iPhone 17. Rolex, Tissot, Oakley and Ray-Ban each have ten distinct models. MFK, Parfums de Marly, Amouage and Initio each have fifteen distinct fragrances in the reviewed implementation. Other houses have not reached their model-depth gates. Footwear, appliance and further electronics department types remain hidden until reviewed records are published.
 
 ## Completed implementation milestones
 

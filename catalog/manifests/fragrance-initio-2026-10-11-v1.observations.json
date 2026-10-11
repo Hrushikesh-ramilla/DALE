@@ -1,0 +1,853 @@
+{
+  "checkedAt": "2026-10-11",
+  "profile": {
+    "key": "initio",
+    "host": "us.initioparfums.com",
+    "brand": "Initio",
+    "mediaPath": "/s/files/1/0607/4816/9444/",
+    "concentration": "product_categories",
+    "models": [
+      "OUD FOR GREATNESS",
+      "OUD FOR GREATNESS NEO",
+      "OUD FOR HAPPINESS",
+      "SIDE EFFECT",
+      "ATOMIC ROSE",
+      "PSYCHEDELIC LOVE",
+      "HIGH FREQUENCY",
+      "ADDICTIVE VIBRATION",
+      "BLESSED BARAKA",
+      "NARCOTIC DELIGHT",
+      "MYSTIC EXPERIENCE",
+      "REHAB",
+      "MUSK THERAPY",
+      "PARAGON",
+      "POWER SELF"
+    ]
+  },
+  "feedUrl": "https://us.initioparfums.com/products.json?limit=250",
+  "feedSha256": "afb130c2068fc19e5fe7b41b9e2218079a307eb2c5db13f4b2c7bf02a05f3fbb",
+  "observations": [
+    {
+      "source": "https://us.initioparfums.com/products/oud-for-greatness",
+      "catalogProduct": {
+        "id": 7561652928740,
+        "title": "OUD FOR GREATNESS",
+        "handle": "oud-for-greatness",
+        "product_type": "Black Gold Project",
+        "tags": [
+          "50ml",
+          "black gold project"
+        ],
+        "variants": [
+          {
+            "id": 42512741597412,
+            "title": "90ML",
+            "sku": "NINBG0001SP",
+            "featured_image": {
+              "id": 59584777748826
+            }
+          },
+          {
+            "id": 48192329679194,
+            "title": "50ML",
+            "sku": "NINBG0011SP",
+            "featured_image": {
+              "id": 59584777748826
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 72801001865562,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OFG_NEW_MCUS.png?v=1780587800",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777552218,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_ProductImages_Desktop_1_e30f56d4-3c02-49f4-b493-78c2d11a1ed0.png?v=1763732592",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777683290,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_ProductImages_Desktop_2_9034e0b6-3b05-4e4b-84f9-f910aae5b84d.png?v=1763732592",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777584986,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_ProductImages_Desktop_3_dd408a4a-2e38-4aa2-816c-2aec56419e1b.png?v=1763732592",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777716058,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_ProductImages_Desktop_4_6190fe36-242f-437f-bbc7-132be6d60836.png?v=1763732592",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777748826,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_MasterProductPackshot_1cc0a9e3-e99c-4c2d-814c-a1f46c9b4584.png?v=1763732592",
+            "variant_ids": [
+              42512741597412,
+              48192329679194
+            ]
+          }
+        ]
+      },
+      "htmlSha256": "0f1d5961cf90e0cb2430478b7f06fdffd246bbe569ea273848306dabfa1a3fe0",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 2799374
+    },
+    {
+      "source": "https://us.initioparfums.com/products/oud-for-greatness-neo",
+      "catalogProduct": {
+        "id": 8937938059610,
+        "title": "OUD FOR GREATNESS NEO",
+        "handle": "oud-for-greatness-neo",
+        "product_type": "Black Gold Project",
+        "tags": [],
+        "variants": [
+          {
+            "id": 48192642023770,
+            "title": "90ML",
+            "sku": "NINBG0004SP",
+            "featured_image": {
+              "id": 59584777781594
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584777781594,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NEOOUDFORGREATNESS_MasterProductPackshot_08d597bb-8176-4df1-ae36-d051e5e470a6.png?v=1761284598",
+            "variant_ids": [
+              48192642023770
+            ]
+          },
+          {
+            "id": 59584777519450,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NEOOUDFORGREATNESS_ProductImages_Desktop_1_2fe8d875-3d74-44a5-88f7-c1163c60f5ae.png?v=1761284598",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777388378,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NEOOUDFORGREATNESS_ProductImages_Desktop_2_7fe04eae-6679-47a2-a054-e2f9b6643ee5.png?v=1761284598",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777486682,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NEOOUDFORGREATNESS_ProductImages_Desktop_3_94ce6319-088f-43f1-8f97-9a29f1b325ad.png?v=1761284598",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777421146,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NEOOUDFORGREATNESS_ProductImages_Desktop_4_50fcb402-edd8-4c53-9654-0c4ecaf88750.png?v=1761284598",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "aa20a401d46c06d5e6525ff53aa2606d4f4a140fa49d3943807a054d55e4c58a",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 2790272
+    },
+    {
+      "source": "https://us.initioparfums.com/products/oud-for-happiness",
+      "catalogProduct": {
+        "id": 7561653190884,
+        "title": "OUD FOR HAPPINESS",
+        "handle": "oud-for-happiness",
+        "product_type": "Black Gold Project",
+        "tags": [
+          "black gold project"
+        ],
+        "variants": [
+          {
+            "id": 42512742088932,
+            "title": "90ML",
+            "sku": "INBG0002SP",
+            "featured_image": {
+              "id": 59584777355610
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584777355610,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORHAPPINESS_MasterProductPackshot_517cbedc-e6f8-40c6-bca6-447066de9d95.png?v=1761284632",
+            "variant_ids": [
+              42512742088932
+            ]
+          },
+          {
+            "id": 59584777453914,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORHAPPINESS_ProductImages_Desktop_1_02e7bee8-7abe-4ff2-aed8-29dff00dd400.png?v=1761284632",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777322842,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORHAPPINESS_ProductImages_Desktop_2_a17d482a-4431-4690-b85d-98445b8afc83.png?v=1761284632",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "e5c46b119bc9be8f9e120a34aaab1be1fcd08ad437bed312fa945bb84deb8cb0",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 2696191
+    },
+    {
+      "source": "https://us.initioparfums.com/products/side-effect",
+      "catalogProduct": {
+        "id": 7561651060964,
+        "title": "SIDE EFFECT",
+        "handle": "side-effect",
+        "product_type": "The Carnal Blends",
+        "tags": [
+          "50ml",
+          "new 50ml",
+          "stock-alert-us",
+          "the carnal blends"
+        ],
+        "variants": [
+          {
+            "id": 42512739795172,
+            "title": "90ML",
+            "sku": "NINCB0001SP",
+            "featured_image": {
+              "id": 59584774046042
+            }
+          },
+          {
+            "id": 48192323715418,
+            "title": "50ML",
+            "sku": "NINCB0011SP",
+            "featured_image": {
+              "id": 59584774046042
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584774046042,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/SIDEEFFECT_MasterProductPackshot_8713eda8-0884-482b-a35c-a88fbbaf7fba.png?v=1763732676",
+            "variant_ids": [
+              42512739795172,
+              48192323715418
+            ]
+          },
+          {
+            "id": 59584774144346,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/SIDEEFFECT_ProductImages_Desktop_1_0c2cc9ac-92ee-4a16-95d1-030cf3b68f4b.png?v=1763732676",
+            "variant_ids": []
+          },
+          {
+            "id": 64936320500058,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/Initio_lag_SE_6.jpg?v=1763732676",
+            "variant_ids": []
+          },
+          {
+            "id": 59584774111578,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/SIDEEFFECT_ProductImages_Desktop_4_f576e33e-1ea0-46a8-8f95-eeb889f1e6da.png?v=1763732676",
+            "variant_ids": []
+          },
+          {
+            "id": 59584774242650,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/SIDEEFFECT_ProductImages_Desktop_3_dd588317-ca2e-4a8d-a146-27edc153e656.png?v=1763732676",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "afa8dcb7c5997bae1a515064df65f09cf517474146fb36dd95d4a1d21c4732a4",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 2200399
+    },
+    {
+      "source": "https://us.initioparfums.com/products/atomic-rose",
+      "catalogProduct": {
+        "id": 7561652109540,
+        "title": "ATOMIC ROSE",
+        "handle": "atomic-rose",
+        "product_type": "The Carnal Blends",
+        "tags": [
+          "50ml",
+          "the carnal blends"
+        ],
+        "variants": [
+          {
+            "id": 42512740450532,
+            "title": "90ML",
+            "sku": "NINCB0004SP",
+            "featured_image": {
+              "id": 59584774209882
+            }
+          },
+          {
+            "id": 48192311656794,
+            "title": "50ML",
+            "sku": "NINCB0014SP",
+            "featured_image": {
+              "id": 59584774209882
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584774209882,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_MasterProductPackshot_0_a9874dd8-6459-4d30-b525-44839e2c9ad6.png?v=1763734440",
+            "variant_ids": [
+              42512740450532,
+              48192311656794
+            ]
+          },
+          {
+            "id": 59584774504794,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_ProductImages_Desktop_1_a73ebd39-eb0c-4582-8d14-937a8c869c97.png?v=1763734440",
+            "variant_ids": []
+          },
+          {
+            "id": 59584774177114,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_ProductImages_Desktop_2_c481297f-d1ce-4350-b0cd-0a9067a094ac.png?v=1763734440",
+            "variant_ids": []
+          },
+          {
+            "id": 59584773816666,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_ProductImages_Desktop_3_202a03b4-bed2-4a86-9378-fbf08116b73e.png?v=1763734440",
+            "variant_ids": []
+          },
+          {
+            "id": 59584774275418,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_ProductImages_Desktop_4_fd19b63f-e818-4d80-9e1e-a075ac00465d.png?v=1763734440",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "7be458005bbd331e47c55bdd0f1ef108b3d74cdd4488f3f20a14df3484f6a8bd",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 2201040
+    },
+    {
+      "source": "https://us.initioparfums.com/products/psychedelic-love",
+      "catalogProduct": {
+        "id": 7561651880164,
+        "title": "PSYCHEDELIC LOVE",
+        "handle": "psychedelic-love",
+        "product_type": "The Carnal Blends",
+        "tags": [
+          "the carnal blends"
+        ],
+        "variants": [
+          {
+            "id": 42512740188388,
+            "title": "90ML",
+            "sku": "NINCB0003SP",
+            "featured_image": {
+              "id": 59584777257306
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584777257306,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PSYCHEDELIC_LOVE_MasterProductPackshot_524708b6-4956-40df-8411-83784853ccc5.png?v=1761284526",
+            "variant_ids": [
+              42512740188388
+            ]
+          },
+          {
+            "id": 59584777224538,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PSYCHEDELIC_LOVE_ProductImages_Desktop_1_bdba7d5e-93f5-4e7f-acef-8deb49d5f723.png?v=1761284526",
+            "variant_ids": []
+          },
+          {
+            "id": 59584777191770,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PSYCHEDELIC_LOVE_ProductImages_Desktop_2_1200e13e-c95f-485a-9078-acbf5484088d.png?v=1761284526",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "1a901bfd8ebd97142fc515e9ec07f7a43477a7c3554575e61cd9704d29b94e74",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 2207923
+    },
+    {
+      "source": "https://us.initioparfums.com/products/high-frequency",
+      "catalogProduct": {
+        "id": 7561651683556,
+        "title": "HIGH FREQUENCY",
+        "handle": "high-frequency",
+        "product_type": "The Carnal Blends",
+        "tags": [
+          "the carnal blends"
+        ],
+        "variants": [
+          {
+            "id": 42512739991780,
+            "title": "90ML",
+            "sku": "NINCB0002SP",
+            "featured_image": {
+              "id": 59584773882202
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584773882202,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/HIGHFREQUENCY_MasterProductPackshot_fbd12691-bb78-44e4-a276-e1eef2f35b01.png?v=1761284540",
+            "variant_ids": [
+              42512739991780
+            ]
+          },
+          {
+            "id": 59584773914970,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/HIGHFREQUENCY_ProductImages_Desktop_1_18fd7f38-a35d-455b-8ff7-c000c58671c8.png?v=1761284540",
+            "variant_ids": []
+          },
+          {
+            "id": 59584773849434,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/HIGHFREQUENCY_ProductImages_Desktop_2_8258a2c0-b022-4e6a-8ef3-6d1e8123a5af.png?v=1761284540",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "6924b9c41eec64db235bb93f0adbec79c064e65b7d74671328e48406148f469e",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 2206644
+    },
+    {
+      "source": "https://us.initioparfums.com/products/addictive-vibration",
+      "catalogProduct": {
+        "id": 7561650864356,
+        "title": "ADDICTIVE VIBRATION",
+        "handle": "addictive-vibration",
+        "product_type": "The Absolutes",
+        "tags": [
+          "the absolutes"
+        ],
+        "variants": [
+          {
+            "id": 42512739401956,
+            "title": "90ML",
+            "sku": "NINAB0005SP",
+            "featured_image": {
+              "id": 59584785219930
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584785219930,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ADDICTIVEVIBRATION_MasterProductPackshot_0_fcf7d970-b29e-4c6d-a4d2-fc476233a8aa.png?v=1761284554",
+            "variant_ids": [
+              42512739401956
+            ]
+          },
+          {
+            "id": 59584785056090,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ADDICTIVEVIBRATION_ProductImages_Desktop_1_86438b1a-c6f1-4b44-b918-d061fa5286e1.png?v=1761284554",
+            "variant_ids": []
+          },
+          {
+            "id": 59584784761178,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ADDICTIVEVIBRATION_ProductImages_Desktop_2_c0bb2a3e-f34b-4682-a095-962ba783ad20.png?v=1761284554",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "450d79bebe7f081e3b2ddc5c1744d1516dbdf2b14376c800a5aa622ea9966b74",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 1692002
+    },
+    {
+      "source": "https://us.initioparfums.com/products/blessed-baraka",
+      "catalogProduct": {
+        "id": 7561650536676,
+        "title": "BLESSED BARAKA",
+        "handle": "blessed-baraka",
+        "product_type": "The Absolutes",
+        "tags": [
+          "the absolutes"
+        ],
+        "variants": [
+          {
+            "id": 42512739008740,
+            "title": "90ML",
+            "sku": "NINAB0002SP",
+            "featured_image": {
+              "id": 59584779977050
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584779977050,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/BLESSEDBARAKA_MasterProductPackshot_BlessedBaraka_63438446-6603-4a72-a86f-6ceca29e8a5c.png?v=1761284575",
+            "variant_ids": [
+              42512739008740
+            ]
+          },
+          {
+            "id": 59584779911514,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/BLESSEDBARAKA_ProductImages_Desktop_1_a6e6a8f6-67aa-4621-86fe-fb718e7de6ba.png?v=1761284575",
+            "variant_ids": []
+          },
+          {
+            "id": 59584779780442,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/BLESSEDBARAKA_ProductImages_Desktop_2_3f4369c2-0f84-42bd-acc8-b8145e9a17ea.png?v=1761284575",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "11696c0679ca744c4ebeb6c6e492b0800412e0fa49eb4c6ed2be6d2e48fd2b3b",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 1686931
+    },
+    {
+      "source": "https://us.initioparfums.com/products/narcotic-delight",
+      "catalogProduct": {
+        "id": 8674987082074,
+        "title": "NARCOTIC DELIGHT",
+        "handle": "narcotic-delight",
+        "product_type": "The Carnal Blends",
+        "tags": [
+          "50ml"
+        ],
+        "variants": [
+          {
+            "id": 47455704088922,
+            "title": "90ML",
+            "sku": "NINCB0005SP",
+            "featured_image": {
+              "id": 59584773947738
+            }
+          },
+          {
+            "id": 50339691528538,
+            "title": "50ML",
+            "sku": "NINCB0015SP",
+            "featured_image": {
+              "id": 59584773947738
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584773947738,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_MasterProductPackshot_25a2d42b-3dd0-4bc9-81f0-ce6d7cddb4cc.png?v=1761284609",
+            "variant_ids": [
+              47455704088922,
+              50339691528538
+            ]
+          },
+          {
+            "id": 59584774078810,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_ProductImages_Desktop_1_a9e57afa-7699-4d4d-aa90-e274f0dfe681.png?v=1761284609",
+            "variant_ids": []
+          },
+          {
+            "id": 59584773980506,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_ProductImages_Desktop_2_825156da-0c06-4541-b185-ee600988f4f6.png?v=1761284609",
+            "variant_ids": []
+          },
+          {
+            "id": 59584774013274,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_ProductImages_Desktop_3_7b313b59-20c8-4223-b87c-85292ab0a261.png?v=1761284609",
+            "variant_ids": []
+          },
+          {
+            "id": 59584774537562,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_ProductImages_Desktop_4_aa556471-e6b0-491b-8fda-95d3afc00ebc.png?v=1761284609",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "df21f16803fa2a2fe10aab2c71d3fbb4e23e258c92acb439b56b1a458a4b17f3",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 2208844
+    },
+    {
+      "source": "https://us.initioparfums.com/products/mystic-experience",
+      "catalogProduct": {
+        "id": 7561650667748,
+        "title": "MYSTIC EXPERIENCE",
+        "handle": "mystic-experience",
+        "product_type": "The Absolutes",
+        "tags": [
+          "the absolutes"
+        ],
+        "variants": [
+          {
+            "id": 42512739172580,
+            "title": "90ML",
+            "sku": "NINAB0001SP",
+            "featured_image": {
+              "id": 59584785776986
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584785776986,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MYSTICEXPERIENCE_MasterProductPackshot_84c8b619-08aa-40db-8e69-c4baae1e75b6.png?v=1761284566",
+            "variant_ids": [
+              42512739172580
+            ]
+          },
+          {
+            "id": 59584784859482,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MYSTICEXPERIENCE_ProductImages_Desktop_1_6977a70a-4383-4b63-8110-459e8746eb6a.png?v=1761284566",
+            "variant_ids": []
+          },
+          {
+            "id": 59584784630106,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MYSTICEXPERIENCE_ProductImages_Desktop_2_79f7c832-9640-4450-8998-5f0c10400ffa.png?v=1761284566",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "9198917faa50eaad748d8497f96f4b06c3e76e182b4c1aeb885923b46bdffbaf",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 1689641
+    },
+    {
+      "source": "https://us.initioparfums.com/products/rehab",
+      "catalogProduct": {
+        "id": 7561652666596,
+        "title": "REHAB",
+        "handle": "rehab",
+        "product_type": "Hedonist",
+        "tags": [
+          "hedonist"
+        ],
+        "variants": [
+          {
+            "id": 42512741335268,
+            "title": "90ML",
+            "sku": "NINLI0001SP",
+            "featured_image": {
+              "id": 59584779813210
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584779813210,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/REHAB_MasterProductPackshot_077032ad-052d-4f8a-aeba-bc213bf5bedd.png?v=1761284648",
+            "variant_ids": [
+              42512741335268
+            ]
+          },
+          {
+            "id": 59584779845978,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/REHAB_ProductImages_Desktop_1_714a2212-6de4-4a71-bfdb-5bd3cdb6ef1a.png?v=1761284648",
+            "variant_ids": []
+          },
+          {
+            "id": 59584779551066,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/REHAB_ProductImages_Desktop_2_b82437d7-a525-4473-85a1-e570959e3fea.png?v=1761284648",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "88b69bdfc41afb5f41b761df80bdf9568eccc629a48b9c5d02d89b0b65756350",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 1048588
+    },
+    {
+      "source": "https://us.initioparfums.com/products/musk-therapy",
+      "catalogProduct": {
+        "id": 7561652469988,
+        "title": "MUSK THERAPY",
+        "handle": "musk-therapy",
+        "product_type": "Hedonist",
+        "tags": [
+          "50ml",
+          "hedonist",
+          "stock-alert-us"
+        ],
+        "variants": [
+          {
+            "id": 42512741105892,
+            "title": "90ML",
+            "sku": "NINLI0002SP",
+            "featured_image": {
+              "id": 59584779878746
+            }
+          },
+          {
+            "id": 48192325976410,
+            "title": "50ML",
+            "sku": "NINLI0023SP",
+            "featured_image": {
+              "id": 59584779878746
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584779878746,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MasterProductPackshot_MuskTherapy_Desktop_2c4ae589-3c2a-4d9c-b25b-1666cbf80bf3.png?v=1763732624",
+            "variant_ids": [
+              42512741105892,
+              48192325976410
+            ]
+          },
+          {
+            "id": 59584779518298,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MuskTherapy_ProductImages_Desktop_1_56695d60-d581-4606-83a9-d24d0f8d809b.jpg?v=1763732624",
+            "variant_ids": []
+          },
+          {
+            "id": 59584779682138,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MuskTherapy_ProductImages_Desktop_2_9ba9f0f6-6f12-4e0d-a8fd-d10c037c055f.jpg?v=1763732624",
+            "variant_ids": []
+          },
+          {
+            "id": 59584779649370,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MuskTherapy_ProductImages_Desktop_3_9518bc50-db2f-4130-8953-7b1bc1d6b293.jpg?v=1763732624",
+            "variant_ids": []
+          },
+          {
+            "id": 59584779485530,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MuskTherapy_ProductImages_Desktop_4_d60d6369-4408-4585-938a-de144f863872.jpg?v=1763732624",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "4751f1514512d5b1f8996a4fbf808b332bf21c18261a96be40e471eb16a39732",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 963259
+    },
+    {
+      "source": "https://us.initioparfums.com/products/paragon",
+      "catalogProduct": {
+        "id": 7817115107556,
+        "title": "PARAGON",
+        "handle": "paragon",
+        "product_type": "Hedonist",
+        "tags": [
+          "hedonist"
+        ],
+        "variants": [
+          {
+            "id": 43463350354148,
+            "title": "90ML",
+            "sku": "NINLI0003SP",
+            "featured_image": {
+              "id": 59584779583834
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59584779583834,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PARAGON_MasterProductPackshot_15e005e8-6d8b-4ef1-9b8c-3937dfc94315.png?v=1761284622",
+            "variant_ids": [
+              43463350354148
+            ]
+          },
+          {
+            "id": 59584779616602,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PARAGON_ProductImages_Desktop_1_3b25f1a7-a126-444c-a3df-662057e348c7.png?v=1761284622",
+            "variant_ids": []
+          },
+          {
+            "id": 59584779452762,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PARAGON_ProductImages_Desktop_2_d380bf97-c012-4f48-8c0b-4b56168cdbb7.png?v=1761284622",
+            "variant_ids": []
+          },
+          {
+            "id": 59584779387226,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PARAGON_ProductImages_Desktop_4_1c9939a1-55fe-4281-af29-1412a8c6cc43.png?v=1761284622",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "7d32e112e19d0474ed5f8616600000955375768d3dbb40611ec8db1bab97bc12",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 1291969
+    },
+    {
+      "source": "https://us.initioparfums.com/products/power-self",
+      "catalogProduct": {
+        "id": 10062171603290,
+        "title": "POWER SELF",
+        "handle": "power-self",
+        "product_type": "Hedonist",
+        "tags": [
+          "50ml",
+          "hedonist",
+          "new 50ml"
+        ],
+        "variants": [
+          {
+            "id": 50623096652122,
+            "title": "90ML",
+            "sku": "NINLI0004SP",
+            "featured_image": {
+              "id": 59730725536090
+            }
+          },
+          {
+            "id": 54167357817178,
+            "title": "50ML",
+            "sku": "NINLI0014SP",
+            "featured_image": {
+              "id": 72424089944410
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 59730725536090,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/POWERSELF_MasterProductPackshot_e08a2867-fec2-4d16-bf2c-f70825b9acf9.png?v=1763732562",
+            "variant_ids": [
+              50623096652122
+            ]
+          },
+          {
+            "id": 59730725667162,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/POWERSELF_ProductImages_Desktop_1_530e173d-b2f6-4688-912b-6e3ae539a387.png?v=1763732562",
+            "variant_ids": []
+          },
+          {
+            "id": 59730725306714,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/POWERSELF_ProductImages_Desktop_2_6b1e5c36-12d1-429c-8bc6-46527b0bfb8c.png?v=1763732562",
+            "variant_ids": []
+          },
+          {
+            "id": 59730725372250,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/POWERSELF_ProductImages_Desktop_3_2ea1b403-d544-4cf9-b0ac-fc164a369b82.png?v=1763732562",
+            "variant_ids": []
+          },
+          {
+            "id": 59730725405018,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/POWERSELF_ProductImages_Desktop_4_8b1a047b-1222-49bb-920c-dabd8cf94ea3.png?v=1763732562",
+            "variant_ids": []
+          },
+          {
+            "id": 72424089944410,
+            "src": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NITIO_50ML_POWER_SELF_BOTTLE_TOP_SHOT.png?v=1779115290",
+            "variant_ids": [
+              54167357817178
+            ]
+          }
+        ]
+      },
+      "htmlSha256": "ab510a3b3600cd759dfa88e7692591e1a3a67e25ee2cc4184fcdfa5093402f47",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 1071006
+    }
+  ]
+}

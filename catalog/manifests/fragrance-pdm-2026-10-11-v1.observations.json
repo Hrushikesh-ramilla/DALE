@@ -1,0 +1,946 @@
+{
+  "checkedAt": "2026-10-11",
+  "profile": {
+    "key": "pdm",
+    "host": "us.parfums-de-marly.com",
+    "brand": "Parfums de Marly",
+    "mediaPath": "/s/files/1/0555/6279/7250/",
+    "concentration": "title",
+    "models": [
+      "Herod",
+      "Carlisle",
+      "Althaïr",
+      "Valaya",
+      "Delina Exclusif",
+      "Delina La Rosée",
+      "Oriana",
+      "Pegasus",
+      "Pegasus Exclusif",
+      "Percival",
+      "Greenley",
+      "Sedley",
+      "Haltane",
+      "Palatine"
+    ]
+  },
+  "feedUrl": "https://us.parfums-de-marly.com/products.json?limit=250",
+  "feedSha256": "6687f476ece6df82003cdc3f1e9060e0e857518935ef8b2577b48113ebe5b3d3",
+  "observations": [
+    {
+      "source": "https://us.parfums-de-marly.com/products/herod",
+      "catalogProduct": {
+        "id": 6743044554946,
+        "title": "Herod",
+        "handle": "herod",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "gifts for men",
+          "men",
+          "most loved",
+          "to share"
+        ],
+        "variants": [
+          {
+            "id": 40036845125826,
+            "title": "75ml",
+            "sku": "NPM0703PV",
+            "featured_image": {
+              "id": 66483384385883
+            }
+          },
+          {
+            "id": 40036845093058,
+            "title": "125ml",
+            "sku": "NPM0700PV",
+            "featured_image": {
+              "id": 66483384582491
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66483384582491,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-125-PACK1-1X1_CENTERED_3e70cfc5-b970-4b93-b7dc-9142dd852943.png?v=1758885289",
+            "variant_ids": [
+              40036845093058
+            ]
+          },
+          {
+            "id": 66483384549723,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-125-PACK2_1X1_7cf0cd70-0a15-4a47-b9df-f6e3074f674a.png?v=1758885289",
+            "variant_ids": []
+          },
+          {
+            "id": 66483384385883,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-75-PACK1-1X1_CENTERED_fba9c88d-7cf1-4202-bb2a-1ee9c9c8d82d.png?v=1758885289",
+            "variant_ids": [
+              40036845125826
+            ]
+          },
+          {
+            "id": 66483384484187,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-125-PACK3-1X1_2.png?v=1758885289",
+            "variant_ids": []
+          },
+          {
+            "id": 66483384451419,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-125-PACK4-1x1_1.png?v=1758885289",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "e4ea8582a315ab6a1dc7c46cf35a6e4a7fc0a4bfc05717fdfdab74ab623003f3",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 305565
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/carlisle",
+      "catalogProduct": {
+        "id": 6743043211458,
+        "title": "Carlisle",
+        "handle": "carlisle",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "gifts for men",
+          "men",
+          "most loved",
+          "to share"
+        ],
+        "variants": [
+          {
+            "id": 40036835786946,
+            "title": "125ml",
+            "sku": "NPM1700PV",
+            "featured_image": {
+              "id": 66475843158363
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66475843158363,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/CARLISLE-PERFUME-125-PACK1-1X1-NO_SHADOW_CENTERED.png?v=1758872209",
+            "variant_ids": [
+              40036835786946
+            ]
+          },
+          {
+            "id": 66475880186203,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/CARLISLE-PERFUME-125-PACK2_-1x1.png?v=1758872209",
+            "variant_ids": []
+          },
+          {
+            "id": 66475880841563,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/CARLISLE-PERFUME-125-PACK3-1x1_1_40063189-e717-4d82-87ad-41e31dedbdab.png?v=1758872209",
+            "variant_ids": []
+          },
+          {
+            "id": 66475879203163,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/CARLISLE-PERFUME-125-PACK4-1x1_3_547f00bd-9761-4353-8833-5348206cb166.png?v=1758872209",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "79496eb4b4de07cd411b3bf552cd032e7661bb1468fae1f7aa8a07b393e80150",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 240735
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/althair",
+      "catalogProduct": {
+        "id": 8543827394907,
+        "title": "Althaïr",
+        "handle": "althair",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "iconics",
+          "men",
+          "most loved",
+          "to share",
+          "unisex"
+        ],
+        "variants": [
+          {
+            "id": 47052878414171,
+            "title": "75ml",
+            "sku": "NPM2903PV",
+            "featured_image": {
+              "id": 66477872316763
+            }
+          },
+          {
+            "id": 47052878381403,
+            "title": "125ml",
+            "sku": "NPM2900PV",
+            "featured_image": {
+              "id": 66478056898907
+            }
+          },
+          {
+            "id": 52897418117467,
+            "title": "200ml",
+            "sku": "NPM2905PV",
+            "featured_image": {
+              "id": 72136244101467
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66478056898907,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-125-PACK1-1X1_CENTERED_1_04b177cf-0bde-4900-8332-7f56ec21ad6f.png?v=1758873962",
+            "variant_ids": [
+              47052878381403
+            ]
+          },
+          {
+            "id": 66477875331419,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-125-PCK2_1x1_9b2a4f64-99fb-4487-8ade-735ae47d33d1.png?v=1758873962",
+            "variant_ids": []
+          },
+          {
+            "id": 66477872316763,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-75-PACK1-1X1_CENTERED_8e536321-9220-4ece-91fd-de6b13f6896d.png?v=1758873962",
+            "variant_ids": [
+              47052878414171
+            ]
+          },
+          {
+            "id": 66477875003739,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-75-PACK3-1X1png_1_d296a4a1-680d-47eb-b75f-7b2d1a0e89e3.png?v=1758873962",
+            "variant_ids": []
+          },
+          {
+            "id": 66477874970971,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-125-PACK4-1x1_1_bfc2bba9-00e1-4638-9aa1-1c7d0a3a3ad1.png?v=1758873962",
+            "variant_ids": []
+          },
+          {
+            "id": 72136244101467,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/Parfum_Althair_200ml_Face_MIDDLE_CENTERED_WITH_SHADOW.png?v=1777534293",
+            "variant_ids": [
+              52897418117467
+            ]
+          }
+        ]
+      },
+      "htmlSha256": "ab925edeb6b6d0fbf4b28d66dbd210fb55de11d63c8c812371d3c650d69941b9",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 279948
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/valaya",
+      "catalogProduct": {
+        "id": 7600831955138,
+        "title": "Valaya",
+        "handle": "valaya",
+        "product_type": "Feminine Fragrance",
+        "tags": [
+          "fragrances",
+          "iconics",
+          "most loved",
+          "women"
+        ],
+        "variants": [
+          {
+            "id": 42840987173058,
+            "title": "75ml",
+            "sku": "NPM0114PV",
+            "featured_image": {
+              "id": 66494012948827
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66494012948827,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/VALAYA-PERFUME-75-PACK1-1X1_CENTERED_1_4d701a3c-bf47-4f28-8872-c018a0200cf9.png?v=1758898206",
+            "variant_ids": [
+              42840987173058
+            ]
+          },
+          {
+            "id": 66494012555611,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/VALAYA-PERFUME-75-PACK2_1X1_6f812e49-7bfe-49b8-8e37-c3023a67d46a.png?v=1758898206",
+            "variant_ids": []
+          },
+          {
+            "id": 66494012260699,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/VALAYA-PERFUME-75-PACK3-1x1_1_291ef53a-d016-4401-9bfa-841e7fde5a13.png?v=1758898206",
+            "variant_ids": []
+          },
+          {
+            "id": 66494012293467,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/VALAYA-PERFUME-75-PACK4-1x1_1_9fcc7aac-cd11-406e-96ce-463647fe8245.png?v=1758898206",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "433d322665c1cddcd1161a9e42ee45178a56041c79d4988c3280510e849cf10a",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 286305
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/delina-exclusif",
+      "catalogProduct": {
+        "id": 6743043440834,
+        "title": "Delina Exclusif",
+        "handle": "delina-exclusif",
+        "product_type": "Feminine Fragrance",
+        "tags": [
+          "collections",
+          "delina line",
+          "fragrances",
+          "iconics",
+          "most loved",
+          "women"
+        ],
+        "variants": [
+          {
+            "id": 40036837687490,
+            "title": "75ml",
+            "sku": "NPM0007PV",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 73250500346203,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALL_MARIE-CLAIRE_DELINA_E-RETAIL_S_EXCLUSIF-PERFUME-75_1080x1080_NOBACKGROUND.png?v=1781763983",
+            "variant_ids": []
+          },
+          {
+            "id": 66493280158043,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/DELINA-EXCLUSIF-PERFUME-75-PACK2-1X1_669a30f7-fcae-4a6a-aa24-c8ee427a2739.png?v=1758896917",
+            "variant_ids": []
+          },
+          {
+            "id": 66493279142235,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/DELINA-EXCLUSIF-PERFUME-75-PACK3-1x1_e8735b8d-0c47-4087-953d-7d08bec95598.png?v=1758896917",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "d5d7a896cd244cc92ce8b8688e27d9f469b8dcfdb634a3743b1f2f87d5e004d8",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 449652
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/delina-la-rosee",
+      "catalogProduct": {
+        "id": 6743043866818,
+        "title": "Delina La Rosée",
+        "handle": "delina-la-rosee",
+        "product_type": "Feminine Fragrance",
+        "tags": [
+          "collections",
+          "delina line",
+          "fragrances",
+          "gifts for her",
+          "iconics",
+          "most loved",
+          "women"
+        ],
+        "variants": [
+          {
+            "id": 40036838965442,
+            "title": "75ml",
+            "sku": "NPM0009PV",
+            "featured_image": {
+              "id": 66584724341083
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66584724341083,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/DELINA_LAROSEE-PERFUME-75-PACK1-1X1_CENTERED_2.png?v=1759125422",
+            "variant_ids": [
+              40036838965442
+            ]
+          },
+          {
+            "id": 66584724373851,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/DELINA-LAROSEE-PERFUME-75-PACK2_1X1_c003eee4-3668-49f5-8f31-e4d611a8b348.png?v=1759125422",
+            "variant_ids": []
+          },
+          {
+            "id": 66584724308315,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/DELINA-LA-ROSEE-PERFUME-75-PACK3-1x1_1_4aa46e57-8126-4808-ad7f-8c324900fcde.png?v=1759125422",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "4c797bda29b1a4d3e6c98fa4d34ae93aad87f8a2807b6deae0c2f45afe6a0c5c",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 348966
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/oriana",
+      "catalogProduct": {
+        "id": 6967868358850,
+        "title": "Oriana",
+        "handle": "oriana",
+        "product_type": "Feminine Fragrance",
+        "tags": [
+          "fragrances",
+          "most loved",
+          "women"
+        ],
+        "variants": [
+          {
+            "id": 40772283564226,
+            "title": "75ml",
+            "sku": "PM0012PV",
+            "featured_image": {
+              "id": 66584848007515
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66584848007515,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ORIANA-PERFUME-75-PACK1-1X1_CENTERED_41587dc8-ff0d-4d24-9384-ccbc54ae44f2.png?v=1759126193",
+            "variant_ids": [
+              40772283564226
+            ]
+          },
+          {
+            "id": 66584847974747,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ORIANA-PERFUME-75-PACK2_1X1_1.png?v=1759126193",
+            "variant_ids": []
+          },
+          {
+            "id": 66584847941979,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ORIANA-PERFUME-75-PACK3-WITHOUT_SHADOW-1x1.png?v=1759126193",
+            "variant_ids": []
+          },
+          {
+            "id": 66584847909211,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ORIANA-PERFUME-75-PACK4-1x1_1.png?v=1759126193",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "a83c8bb1e4ea8f945b01dc785d30a2121fe825c795d0af4dcbcf0f7774059ee4",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 362546
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/pegasus",
+      "catalogProduct": {
+        "id": 6743045472450,
+        "title": "Pegasus",
+        "handle": "pegasus",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "men",
+          "most loved",
+          "to share",
+          "unisex"
+        ],
+        "variants": [
+          {
+            "id": 40036850434242,
+            "title": "75ml",
+            "sku": "NPM0603PV",
+            "featured_image": {
+              "id": 66482973901147
+            }
+          },
+          {
+            "id": 40036850401474,
+            "title": "125ml",
+            "sku": "NPM0600PV",
+            "featured_image": {
+              "id": 66482983993691
+            }
+          },
+          {
+            "id": 46906382811483,
+            "title": "200ml",
+            "sku": "NPM0606PV",
+            "featured_image": {
+              "id": 66482983731547
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66482983993691,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-125-PACK1-1X1_CENTERED_d3297627-c8b1-4b62-b09f-d14238ee595d.png?v=1758884206",
+            "variant_ids": [
+              40036850401474
+            ]
+          },
+          {
+            "id": 66483044974939,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-125-PACK2_1X1_db4e62e6-d00c-4820-b800-4826ef7b5d7a.png?v=1758884206",
+            "variant_ids": []
+          },
+          {
+            "id": 66482973901147,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-75-PACK1-1X1_CENTERED_54e9798a-d4d6-4527-988c-d0927f891047.png?v=1758884206",
+            "variant_ids": [
+              40036850434242
+            ]
+          },
+          {
+            "id": 66482983731547,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-200-PACK1-1X1_CENTERED_dd195688-b944-4bbf-904c-570a5617422b.png?v=1758884206",
+            "variant_ids": [
+              46906382811483
+            ]
+          },
+          {
+            "id": 66482974523739,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-125-PACK3-1x1_2.png?v=1758884206",
+            "variant_ids": []
+          },
+          {
+            "id": 66482983928155,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-125-PACK4-1x1_1_7c247c3c-9dc1-49ce-83a5-75f75265bca8.png?v=1758884206",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "8c2c8d172283984d4f5e32fd91604da51cd584e731e4ff87a4e3d247686ec38f",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 171026
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/pegasus-exclusif",
+      "catalogProduct": {
+        "id": 6743045537986,
+        "title": "Pegasus Exclusif",
+        "handle": "pegasus-exclusif",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "men",
+          "most loved"
+        ],
+        "variants": [
+          {
+            "id": 40036851777730,
+            "title": "75ml",
+            "sku": "NPM2303PV",
+            "featured_image": {
+              "id": 66476302893403
+            }
+          },
+          {
+            "id": 40036851744962,
+            "title": "125ml",
+            "sku": "NPM2300PV",
+            "featured_image": {
+              "id": 66476308660571
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66476308660571,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS_EXCLUSIF-PERFUME-125-PACK1-1X1_CENTERED_e69422dc-6c7e-46e6-bbcb-767790bd0db1.png?v=1758872495",
+            "variant_ids": [
+              40036851744962
+            ]
+          },
+          {
+            "id": 66476306956635,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-EXCLUSIF-PERFUME-125-1x1-PACK2_7bf5534b-842f-44b2-8bed-a35db9d81fb2.png?v=1758872495",
+            "variant_ids": []
+          },
+          {
+            "id": 66476302893403,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS_EXCLUSIF-PERFUME-75-PACK1-1X1-NO-SHADOW_CENTERED.png?v=1758872495",
+            "variant_ids": [
+              40036851777730
+            ]
+          },
+          {
+            "id": 66476306071899,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-EXCLUSIF-PERFUME-125-PACK3-1x1_1.png?v=1758872495",
+            "variant_ids": []
+          },
+          {
+            "id": 66476304761179,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-EXCLUSIF-PERFUME-125-PACK4-1x1_1.png?v=1758872495",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "c972edb9f09bd9fceee76b1133204b430eb16339c140a72d864e44fe9e99b164",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 297125
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/percival",
+      "catalogProduct": {
+        "id": 6743045701826,
+        "title": "Percival",
+        "handle": "percival",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "gifts for men",
+          "iconics",
+          "men",
+          "most loved"
+        ],
+        "variants": [
+          {
+            "id": 40036852498626,
+            "title": "75ml",
+            "sku": "NPM1903PV",
+            "featured_image": {
+              "id": 66482745016667
+            }
+          },
+          {
+            "id": 40036852465858,
+            "title": "125ml",
+            "sku": "NPM1900PV",
+            "featured_image": {
+              "id": 66482757632347
+            }
+          },
+          {
+            "id": 46906386448731,
+            "title": "200ml",
+            "sku": "NPM1905PV",
+            "featured_image": {
+              "id": 66482755928411
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66482757632347,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PERCIVAL-PERFUME-125-PACK1-1X1_CENTERED_1.png?v=1758883511",
+            "variant_ids": [
+              40036852465858
+            ]
+          },
+          {
+            "id": 66482757599579,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PERCIVAL-PERFUME-125-PACK2_1X1_1_5a45a308-0515-49bc-a714-ec1f04f567c2.png?v=1758883511",
+            "variant_ids": []
+          },
+          {
+            "id": 66482745016667,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PERCIVAL-PERFUME-75-PACK1-1X1_CENTERED_b270011d-8164-4d7c-93a7-67df5ce4ec30.png?v=1758883511",
+            "variant_ids": [
+              40036852498626
+            ]
+          },
+          {
+            "id": 66482755928411,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PERCIVAL-PERFUME-200-PACK1-1X1_CENTERED_d59a6f40-8ac2-47f8-af51-e51fc18136ef.png?v=1758883511",
+            "variant_ids": [
+              46906386448731
+            ]
+          },
+          {
+            "id": 66482745770331,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PERCIVAL-PERFUME-125-PACK3-1X1_2.png?v=1758883511",
+            "variant_ids": []
+          },
+          {
+            "id": 66482746196315,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PERCIVAL-PERFUME-125-PACK4-1x1_1.png?v=1758883511",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "015da5e4df711b6082c1d810e5a34bf18482053efd591aa09ab4b0c0488b49e6",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 288702
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/greenley",
+      "catalogProduct": {
+        "id": 6743044325570,
+        "title": "Greenley",
+        "handle": "greenley",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "gifts for men",
+          "men",
+          "threshold",
+          "to share",
+          "unisex"
+        ],
+        "variants": [
+          {
+            "id": 40036844372162,
+            "title": "75ml",
+            "sku": "NPM2503PV",
+            "featured_image": {
+              "id": 66483435110747
+            }
+          },
+          {
+            "id": 40036844273858,
+            "title": "125ml",
+            "sku": "NPM2500PV",
+            "featured_image": {
+              "id": 66483433898331
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66483433898331,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-125-PACK1-1X1_CENTERED_11a7cc98-7117-44dd-9963-d896c74970dd.png?v=1758885424",
+            "variant_ids": [
+              40036844273858
+            ]
+          },
+          {
+            "id": 66483436487003,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-125-PACK2_07151cf4-1cc1-40aa-abda-e29ee300ba36.png?v=1758885457",
+            "variant_ids": []
+          },
+          {
+            "id": 66483435110747,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-75-PACK1-1X1_CENTERED_9e131bf3-fd70-42ec-b2e1-6ca6cc4c6dc3.png?v=1758885457",
+            "variant_ids": [
+              40036844372162
+            ]
+          },
+          {
+            "id": 66483435897179,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-125-PACK3-1x1_2.png?v=1758885434",
+            "variant_ids": []
+          },
+          {
+            "id": 66483435798875,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-125-PACK4-1x1_1.png?v=1758885434",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "1e260fa8c520581615963fc0cd6faa86ee1e6b20c8b2eee4103ae9232e08f516",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 319427
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/sedley",
+      "catalogProduct": {
+        "id": 6743045865666,
+        "title": "Sedley",
+        "handle": "sedley",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "men"
+        ],
+        "variants": [
+          {
+            "id": 40036852891842,
+            "title": "75ml",
+            "sku": "NPM2203PV",
+            "featured_image": {
+              "id": 66492478325083
+            }
+          },
+          {
+            "id": 40036852859074,
+            "title": "125ml",
+            "sku": "NPM2200PV",
+            "featured_image": {
+              "id": 66492482126171
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66492482126171,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-125-PACK1-1X1_CENTERED_fc558275-a756-43b7-a5ca-c1076cb6f98b.png?v=1758896287",
+            "variant_ids": [
+              40036852859074
+            ]
+          },
+          {
+            "id": 66492481274203,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-125-PACK2_1x1_0d5d3522-c8eb-4557-8b8a-8f55676281e9.png?v=1758896287",
+            "variant_ids": []
+          },
+          {
+            "id": 66492478325083,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-75-PACK1-1X1_CENTERED_59e33992-c200-4c8e-b6bf-11d576281c8c.png?v=1758896287",
+            "variant_ids": [
+              40036852891842
+            ]
+          },
+          {
+            "id": 66492480258395,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-125-PACK3-1X1_2_ac95585e-ab28-4190-9d78-cd0ba142bae0.png?v=1758896287",
+            "variant_ids": []
+          },
+          {
+            "id": 66492480029019,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-125-PACK4-1x1_1_443a5e46-3f20-4497-be9c-1cf052f17e84.png?v=1758896287",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "81dc1300b08dcb878f2086d45cb8984d7fa1db738ddfc9d2031a96a2a09b7af6",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 298736
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/haltane",
+      "catalogProduct": {
+        "id": 7379435487426,
+        "title": "Haltane",
+        "handle": "haltane",
+        "product_type": "Masculine Fragrance",
+        "tags": [
+          "fragrances",
+          "iconics",
+          "men",
+          "most loved"
+        ],
+        "variants": [
+          {
+            "id": 47192384602459,
+            "title": "75ml",
+            "sku": "NPM2603PV",
+            "featured_image": {
+              "id": 66477111345499
+            }
+          },
+          {
+            "id": 41955993649346,
+            "title": "125ml",
+            "sku": "NPM2600PV",
+            "featured_image": {
+              "id": 66477113573723
+            }
+          },
+          {
+            "id": 52087020323163,
+            "title": "200ml",
+            "sku": "NPM2605PV",
+            "featured_image": {
+              "id": 70137835094363
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66477113573723,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTHANE-PERFUME-125-PACK1-1X1_CENTERED_1_3f3f50ac-61c9-43f1-a3fe-39108f25b209.png?v=1758873094",
+            "variant_ids": [
+              41955993649346
+            ]
+          },
+          {
+            "id": 66477113508187,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTANE-PERFUME-75-PACK2_1X1_1_84de240e-d1cd-497f-8bd0-26844c85e087.png?v=1758873094",
+            "variant_ids": []
+          },
+          {
+            "id": 66477111345499,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTHANE-PERFUME-75-PACK1-1X1_CENTERED_bc074d01-77e0-4df9-99ae-3bb391d60be9.png?v=1758873094",
+            "variant_ids": [
+              47192384602459
+            ]
+          },
+          {
+            "id": 70137835094363,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTHANE-PERFUME-200-PACK1-1X1_CENTERED_1.png?v=1770627803",
+            "variant_ids": [
+              52087020323163
+            ]
+          },
+          {
+            "id": 66477112459611,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTANE-PERFUME-125-PACK3-1x1_1_989a4d54-b30d-47c4-b9d0-0badbc33ee93.png?v=1770627803",
+            "variant_ids": []
+          },
+          {
+            "id": 66477112361307,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTANE-PERFUME-125-PACK4-1x1_1_5ec60f3b-18c3-41d5-a750-ba1c40bcb8d9.png?v=1770627803",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "c7543bca21c76b43ef0fd2451c6bf1ed7d4207ce309c81396cf497c4be75b342",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 306708
+    },
+    {
+      "source": "https://us.parfums-de-marly.com/products/palatine",
+      "catalogProduct": {
+        "id": 9355367088475,
+        "title": "Palatine",
+        "handle": "palatine",
+        "product_type": "Feminine Fragrance",
+        "tags": [
+          "fragrances",
+          "iconics",
+          "women"
+        ],
+        "variants": [
+          {
+            "id": 48730155352411,
+            "title": "75ml",
+            "sku": "NPM0017PV",
+            "featured_image": {
+              "id": 66584833294683
+            }
+          }
+        ],
+        "images": [
+          {
+            "id": 66584833294683,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PALATINE-PERFUME-75-PACK1-1X1_CENTERED_2.png?v=1759126084",
+            "variant_ids": [
+              48730155352411
+            ]
+          },
+          {
+            "id": 66584833392987,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PALATINE-PERFUME-75-PACK2_1X1_1_3c490ae7-6f3e-46a6-9cac-bdf679b89d97.png?v=1759126084",
+            "variant_ids": []
+          },
+          {
+            "id": 66584833261915,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PALATINE-PERFUME-75-PACK3-1x1_1_4541abe8-4ec7-455a-ac24-f3ea9a77caa7.png?v=1759126084",
+            "variant_ids": []
+          },
+          {
+            "id": 66584833229147,
+            "src": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PALATINE-PERFUME-75-PACK4-1x1_1_212e39c8-0ba1-4321-8d61-e6a3cdc6a52c.png?v=1759126084",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "50c19a385c32f05a647c7ab3e121f7c8ea0416c2e13c2eabebb69b3290dd5055",
+      "imageStatus": 200,
+      "imageType": "image/png",
+      "imageBytes": 379085
+    }
+  ]
+}

@@ -39,8 +39,8 @@ try {
   );
   const catalog = await (await contexts[0].get("/api/catalog")).json();
   check(
-    "PostgreSQL catalog has eight departments and 99 sourced records",
-    catalog.total === 99 &&
+    "PostgreSQL catalog has eight departments and 142 sourced records",
+    catalog.total === 142 &&
       catalog.departments.length === 8 &&
       catalog.products.length === 48,
   );

@@ -1,0 +1,655 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "fragrance-pdm-2026-10-11-v1",
+  "reviewedBy": "manufacturer-catalog-and-product-page-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "us.parfums-de-marly.com"
+  ],
+  "products": [
+    {
+      "id": "FRAGRANCE-PDM-40036845125826",
+      "name": "Parfums de Marly Herod · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Herod, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM0703PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/herod",
+      "familyId": "pdm:herod",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "herod",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-75-PACK1-1X1_CENTERED_fba9c88d-7cf1-4202-bb2a-1ee9c9c8d82d.png?v=1758885289",
+        "source": "https://us.parfums-de-marly.com/products/herod",
+        "alt": "Parfums de Marly Herod selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40036835786946",
+      "name": "Parfums de Marly Carlisle · Eau De Parfum · 125ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Carlisle, selected 125ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM1700PV",
+        "Concentration: eau de parfum",
+        "Volume: 125ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/carlisle",
+      "familyId": "pdm:carlisle",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 125,
+        "brand": "parfums de marly",
+        "modelName": "carlisle",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/CARLISLE-PERFUME-125-PACK1-1X1-NO_SHADOW_CENTERED.png?v=1758872209",
+        "source": "https://us.parfums-de-marly.com/products/carlisle",
+        "alt": "Parfums de Marly Carlisle selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-47052878414171",
+      "name": "Parfums de Marly Althaïr · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Althaïr, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM2903PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/althair",
+      "familyId": "pdm:althair",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "althaïr",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-75-PACK1-1X1_CENTERED_8e536321-9220-4ece-91fd-de6b13f6896d.png?v=1758873962",
+        "source": "https://us.parfums-de-marly.com/products/althair",
+        "alt": "Parfums de Marly Althaïr selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-42840987173058",
+      "name": "Parfums de Marly Valaya · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Valaya, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM0114PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/valaya",
+      "familyId": "pdm:valaya",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "valaya",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/VALAYA-PERFUME-75-PACK1-1X1_CENTERED_1_4d701a3c-bf47-4f28-8872-c018a0200cf9.png?v=1758898206",
+        "source": "https://us.parfums-de-marly.com/products/valaya",
+        "alt": "Parfums de Marly Valaya selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40036837687490",
+      "name": "Parfums de Marly Delina Exclusif · Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Delina Exclusif, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM0007PV",
+        "Concentration: parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/delina-exclusif",
+      "familyId": "pdm:delina-exclusif",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "delina exclusif",
+        "concentration": "parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALL_MARIE-CLAIRE_DELINA_E-RETAIL_S_EXCLUSIF-PERFUME-75_1080x1080_NOBACKGROUND.png?v=1781763983",
+        "source": "https://us.parfums-de-marly.com/products/delina-exclusif",
+        "alt": "Parfums de Marly Delina Exclusif selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40036838965442",
+      "name": "Parfums de Marly Delina La Rosée · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Delina La Rosée, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM0009PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/delina-la-rosee",
+      "familyId": "pdm:delina-la-rosee",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "delina la rosée",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/DELINA_LAROSEE-PERFUME-75-PACK1-1X1_CENTERED_2.png?v=1759125422",
+        "source": "https://us.parfums-de-marly.com/products/delina-la-rosee",
+        "alt": "Parfums de Marly Delina La Rosée selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40772283564226",
+      "name": "Parfums de Marly Oriana · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Oriana, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: PM0012PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/oriana",
+      "familyId": "pdm:oriana",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "oriana",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ORIANA-PERFUME-75-PACK1-1X1_CENTERED_41587dc8-ff0d-4d24-9384-ccbc54ae44f2.png?v=1759126193",
+        "source": "https://us.parfums-de-marly.com/products/oriana",
+        "alt": "Parfums de Marly Oriana selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40036850434242",
+      "name": "Parfums de Marly Pegasus · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Pegasus, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM0603PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/pegasus",
+      "familyId": "pdm:pegasus",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "pegasus",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-75-PACK1-1X1_CENTERED_54e9798a-d4d6-4527-988c-d0927f891047.png?v=1758884206",
+        "source": "https://us.parfums-de-marly.com/products/pegasus",
+        "alt": "Parfums de Marly Pegasus selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40036851777730",
+      "name": "Parfums de Marly Pegasus Exclusif · Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Pegasus Exclusif, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM2303PV",
+        "Concentration: parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/pegasus-exclusif",
+      "familyId": "pdm:pegasus-exclusif",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "pegasus exclusif",
+        "concentration": "parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS_EXCLUSIF-PERFUME-75-PACK1-1X1-NO-SHADOW_CENTERED.png?v=1758872495",
+        "source": "https://us.parfums-de-marly.com/products/pegasus-exclusif",
+        "alt": "Parfums de Marly Pegasus Exclusif selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40036852498626",
+      "name": "Parfums de Marly Percival · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Percival, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM1903PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/percival",
+      "familyId": "pdm:percival",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "percival",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PERCIVAL-PERFUME-75-PACK1-1X1_CENTERED_b270011d-8164-4d7c-93a7-67df5ce4ec30.png?v=1758883511",
+        "source": "https://us.parfums-de-marly.com/products/percival",
+        "alt": "Parfums de Marly Percival selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40036844372162",
+      "name": "Parfums de Marly Greenley · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Greenley, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM2503PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/greenley",
+      "familyId": "pdm:greenley",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "greenley",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-75-PACK1-1X1_CENTERED_9e131bf3-fd70-42ec-b2e1-6ca6cc4c6dc3.png?v=1758885457",
+        "source": "https://us.parfums-de-marly.com/products/greenley",
+        "alt": "Parfums de Marly Greenley selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-40036852891842",
+      "name": "Parfums de Marly Sedley · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Sedley, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM2203PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/sedley",
+      "familyId": "pdm:sedley",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "sedley",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-75-PACK1-1X1_CENTERED_59e33992-c200-4c8e-b6bf-11d576281c8c.png?v=1758896287",
+        "source": "https://us.parfums-de-marly.com/products/sedley",
+        "alt": "Parfums de Marly Sedley selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-47192384602459",
+      "name": "Parfums de Marly Haltane · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Haltane, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM2603PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/haltane",
+      "familyId": "pdm:haltane",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "haltane",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTHANE-PERFUME-75-PACK1-1X1_CENTERED_bc074d01-77e0-4df9-99ae-3bb391d60be9.png?v=1758873094",
+        "source": "https://us.parfums-de-marly.com/products/haltane",
+        "alt": "Parfums de Marly Haltane selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-PDM-48730155352411",
+      "name": "Parfums de Marly Palatine · Eau De Parfum · 75ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Palatine, selected 75ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NPM0017PV",
+        "Concentration: eau de parfum",
+        "Volume: 75ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.parfums-de-marly.com/products/palatine",
+      "familyId": "pdm:palatine",
+      "provenance": "manufacturer_evidence",
+      "brand": "Parfums de Marly",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 75,
+        "brand": "parfums de marly",
+        "modelName": "palatine",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PALATINE-PERFUME-75-PACK1-1X1_CENTERED_2.png?v=1759126084",
+        "source": "https://us.parfums-de-marly.com/products/palatine",
+        "alt": "Parfums de Marly Palatine selected bottle photograph",
+        "attribution": "Parfums de Marly official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

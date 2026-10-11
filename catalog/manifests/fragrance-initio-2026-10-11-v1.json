@@ -1,0 +1,701 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "fragrance-initio-2026-10-11-v1",
+  "reviewedBy": "manufacturer-catalog-and-product-page-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "us.initioparfums.com"
+  ],
+  "products": [
+    {
+      "id": "FRAGRANCE-INITIO-42512741597412",
+      "name": "Initio OUD FOR GREATNESS · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed OUD FOR GREATNESS, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINBG0001SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/oud-for-greatness",
+      "familyId": "initio:oud-for-greatness",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "oud for greatness",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_MasterProductPackshot_1cc0a9e3-e99c-4c2d-814c-a1f46c9b4584.png?v=1763732592",
+        "source": "https://us.initioparfums.com/products/oud-for-greatness",
+        "alt": "Initio OUD FOR GREATNESS selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-48192642023770",
+      "name": "Initio OUD FOR GREATNESS NEO · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed OUD FOR GREATNESS NEO, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINBG0004SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/oud-for-greatness-neo",
+      "familyId": "initio:oud-for-greatness-neo",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "oud for greatness neo",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NEOOUDFORGREATNESS_MasterProductPackshot_08d597bb-8176-4df1-ae36-d051e5e470a6.png?v=1761284598",
+        "source": "https://us.initioparfums.com/products/oud-for-greatness-neo",
+        "alt": "Initio OUD FOR GREATNESS NEO selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512742088932",
+      "name": "Initio OUD FOR HAPPINESS · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed OUD FOR HAPPINESS, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: INBG0002SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/oud-for-happiness",
+      "familyId": "initio:oud-for-happiness",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "oud for happiness",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORHAPPINESS_MasterProductPackshot_517cbedc-e6f8-40c6-bca6-447066de9d95.png?v=1761284632",
+        "source": "https://us.initioparfums.com/products/oud-for-happiness",
+        "alt": "Initio OUD FOR HAPPINESS selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512739795172",
+      "name": "Initio SIDE EFFECT · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed SIDE EFFECT, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINCB0001SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/side-effect",
+      "familyId": "initio:side-effect",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "side effect",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/SIDEEFFECT_MasterProductPackshot_8713eda8-0884-482b-a35c-a88fbbaf7fba.png?v=1763732676",
+        "source": "https://us.initioparfums.com/products/side-effect",
+        "alt": "Initio SIDE EFFECT selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512740450532",
+      "name": "Initio ATOMIC ROSE · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed ATOMIC ROSE, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINCB0004SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/atomic-rose",
+      "familyId": "initio:atomic-rose",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "atomic rose",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_MasterProductPackshot_0_a9874dd8-6459-4d30-b525-44839e2c9ad6.png?v=1763734440",
+        "source": "https://us.initioparfums.com/products/atomic-rose",
+        "alt": "Initio ATOMIC ROSE selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512740188388",
+      "name": "Initio PSYCHEDELIC LOVE · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed PSYCHEDELIC LOVE, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINCB0003SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/psychedelic-love",
+      "familyId": "initio:psychedelic-love",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "psychedelic love",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PSYCHEDELIC_LOVE_MasterProductPackshot_524708b6-4956-40df-8411-83784853ccc5.png?v=1761284526",
+        "source": "https://us.initioparfums.com/products/psychedelic-love",
+        "alt": "Initio PSYCHEDELIC LOVE selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512739991780",
+      "name": "Initio HIGH FREQUENCY · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed HIGH FREQUENCY, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINCB0002SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/high-frequency",
+      "familyId": "initio:high-frequency",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "high frequency",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/HIGHFREQUENCY_MasterProductPackshot_fbd12691-bb78-44e4-a276-e1eef2f35b01.png?v=1761284540",
+        "source": "https://us.initioparfums.com/products/high-frequency",
+        "alt": "Initio HIGH FREQUENCY selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512739401956",
+      "name": "Initio ADDICTIVE VIBRATION · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed ADDICTIVE VIBRATION, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINAB0005SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/addictive-vibration",
+      "familyId": "initio:addictive-vibration",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "addictive vibration",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ADDICTIVEVIBRATION_MasterProductPackshot_0_fcf7d970-b29e-4c6d-a4d2-fc476233a8aa.png?v=1761284554",
+        "source": "https://us.initioparfums.com/products/addictive-vibration",
+        "alt": "Initio ADDICTIVE VIBRATION selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512739008740",
+      "name": "Initio BLESSED BARAKA · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed BLESSED BARAKA, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINAB0002SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/blessed-baraka",
+      "familyId": "initio:blessed-baraka",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "blessed baraka",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/BLESSEDBARAKA_MasterProductPackshot_BlessedBaraka_63438446-6603-4a72-a86f-6ceca29e8a5c.png?v=1761284575",
+        "source": "https://us.initioparfums.com/products/blessed-baraka",
+        "alt": "Initio BLESSED BARAKA selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-47455704088922",
+      "name": "Initio NARCOTIC DELIGHT · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed NARCOTIC DELIGHT, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINCB0005SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/narcotic-delight",
+      "familyId": "initio:narcotic-delight",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "narcotic delight",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_MasterProductPackshot_25a2d42b-3dd0-4bc9-81f0-ce6d7cddb4cc.png?v=1761284609",
+        "source": "https://us.initioparfums.com/products/narcotic-delight",
+        "alt": "Initio NARCOTIC DELIGHT selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512739172580",
+      "name": "Initio MYSTIC EXPERIENCE · Eau De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed MYSTIC EXPERIENCE, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINAB0001SP",
+        "Concentration: eau de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/mystic-experience",
+      "familyId": "initio:mystic-experience",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "mystic experience",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MYSTICEXPERIENCE_MasterProductPackshot_84c8b619-08aa-40db-8e69-c4baae1e75b6.png?v=1761284566",
+        "source": "https://us.initioparfums.com/products/mystic-experience",
+        "alt": "Initio MYSTIC EXPERIENCE selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512741335268",
+      "name": "Initio REHAB · Extrait De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed REHAB, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINLI0001SP",
+        "Concentration: extrait de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/rehab",
+      "familyId": "initio:rehab",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "extrait de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "rehab",
+        "concentration": "extrait de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/REHAB_MasterProductPackshot_077032ad-052d-4f8a-aeba-bc213bf5bedd.png?v=1761284648",
+        "source": "https://us.initioparfums.com/products/rehab",
+        "alt": "Initio REHAB selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-42512741105892",
+      "name": "Initio MUSK THERAPY · Extrait De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed MUSK THERAPY, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINLI0002SP",
+        "Concentration: extrait de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/musk-therapy",
+      "familyId": "initio:musk-therapy",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "extrait de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "musk therapy",
+        "concentration": "extrait de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MasterProductPackshot_MuskTherapy_Desktop_2c4ae589-3c2a-4d9c-b25b-1666cbf80bf3.png?v=1763732624",
+        "source": "https://us.initioparfums.com/products/musk-therapy",
+        "alt": "Initio MUSK THERAPY selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-43463350354148",
+      "name": "Initio PARAGON · Extrait De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed PARAGON, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINLI0003SP",
+        "Concentration: extrait de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/paragon",
+      "familyId": "initio:paragon",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "extrait de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "paragon",
+        "concentration": "extrait de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PARAGON_MasterProductPackshot_15e005e8-6d8b-4ef1-9b8c-3937dfc94315.png?v=1761284622",
+        "source": "https://us.initioparfums.com/products/paragon",
+        "alt": "Initio PARAGON selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-INITIO-50623096652122",
+      "name": "Initio POWER SELF · Extrait De Parfum · 90ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed POWER SELF, selected 90ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: NINLI0004SP",
+        "Concentration: extrait de parfum",
+        "Volume: 90ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://us.initioparfums.com/products/power-self",
+      "familyId": "initio:power-self",
+      "provenance": "manufacturer_evidence",
+      "brand": "Initio",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "extrait de parfum",
+        "volumeMl": 90,
+        "brand": "initio",
+        "modelName": "power self",
+        "concentration": "extrait de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/POWERSELF_MasterProductPackshot_e08a2867-fec2-4d16-bf2c-f70825b9acf9.png?v=1763732562",
+        "source": "https://us.initioparfums.com/products/power-self",
+        "alt": "Initio POWER SELF selected bottle photograph",
+        "attribution": "Initio official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

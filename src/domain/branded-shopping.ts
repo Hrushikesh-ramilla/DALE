@@ -7,6 +7,8 @@ import type { VoiceIntent } from "./voice";
 const aliases: Record<string, string[]> = {
   "ray-ban": ["ray-ban", "ray ban", "rayban"],
   "maison francis kurkdjian": ["maison francis kurkdjian", "mfk"],
+  "parfums de marly": ["parfums de marly", "pdm"],
+  initio: ["initio", "initio parfums privés", "initio parfums prives"],
   "saint laurent": ["saint laurent", "ysl"],
   "giorgio armani": ["giorgio armani", "armani"],
   "maison margiela": ["maison margiela", "maison martin margiela"],
@@ -140,7 +142,7 @@ export function brandedShopping(
       "DALE sandbox offers are currently denominated in USD. Confirm a USD budget; I will not guess an exchange rate.",
     );
   if (
-    /\b(?:extrait|intense|elixir|bleu de chanel|coco mademoiselle|aventus cologne|silver mountain water|reflection 45|black|white|blue|pink|green|red|silver|gold|grey|gray)\b/i.test(
+    /\b(?:intense|elixir|bleu de chanel|coco mademoiselle|aventus cologne|silver mountain water|reflection 45|black|white|blue|pink|green|red|silver|gold|grey|gray)\b/i.test(
       text,
     )
   )
@@ -300,6 +302,25 @@ export function brandedShopping(
   const types = ["eau de parfum", "eau de toilette", "eau de cologne"].filter(
     (v, index) => has(text, v) || has(text, ["edp", "edt", "edc"][index]),
   );
+  if (has(text, "extrait")) {
+    const candidates = named.length
+      ? named
+      : records.filter(
+          (p) =>
+            !statedBrands.length ||
+            statedBrands.includes(p.brand?.toLowerCase() || ""),
+        );
+    if (
+      !candidates.some(
+        (p) => p.attributes?.concentration === "extrait de parfum",
+      )
+    )
+      return clarify(
+        "That extrait concentration is not recorded for the requested model or house. I will not substitute another concentration.",
+      );
+    types.push("extrait de parfum");
+  }
+  if (!types.length && has(text, "parfum")) types.push("parfum");
   if (types.length > 1) return clarify("Choose one fragrance concentration.");
   const productType =
     category === "clothing"

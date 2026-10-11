@@ -303,7 +303,7 @@ test("public catalog supports all departments and strict paginated attribute que
   const response = await request.get("/api/catalog");
   expect(response.ok()).toBe(true);
   const catalog = await response.json();
-  expect(catalog.total).toBe(99);
+  expect(catalog.total).toBe(142);
   expect(catalog.departments).toHaveLength(8);
   expect(catalog.products).toHaveLength(48);
   const continuation = await (

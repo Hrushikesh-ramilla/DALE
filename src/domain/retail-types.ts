@@ -25,7 +25,13 @@ export const retailTypes: Record<RetailCategory, string[]> = {
     "tank top",
     "polo",
   ],
-  fragrance: ["eau de toilette", "eau de parfum", "eau de cologne"],
+  fragrance: [
+    "eau de toilette",
+    "eau de parfum",
+    "eau de cologne",
+    "parfum",
+    "extrait de parfum",
+  ],
   bags: [
     "tote",
     "backpack",

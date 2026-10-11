@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-11 — Three additional manufacturer fragrance houses
+
+- Add fourteen distinct Parfums de Marly models, fourteen Amouage models and fifteen Initio models from the manufacturers' public catalogs and exact product pages. Existing Layton and Reflection Man identities remain intact; each of these houses and MFK now has fifteen reviewed families.
+- Bind selected bottle volume, manufacturer reference and photographs to product/variant IDs and approved media tenants. Record explicit Parfum and Extrait concentrations, including Initio's source-classified extraits, without replacing them with eau de parfum.
+- Exclude gift sets, sample/travel packs, body creams and hair perfumes. Ignore marketing claims about health or psychological effects; unrecorded notes, ingredients and release years remain disclosed gaps. Retain source fingerprints and bounded source/media checks rather than copying marketing descriptions.
+- Extend concentration filters, the agent contract, brand aliases and exact-category query tests. Browser acceptance checks real product-grid photographs for all four imported fragrance houses. Assortment becomes 142 offers / 138 distinct families; the broad-catalog and remaining per-brand/category gates remain open.
+
 ## 2026-10-11 — Maison Francis Kurkdjian assortment depth
 
 - Add fourteen distinct eau de parfum families from reviewed official pages, preserving exact reference, selected 70 ml bottle, manufacturer olfactory label and decoded product photograph. Together with Baccarat Rouge 540, the house now has fifteen models.
