@@ -1,10 +1,10 @@
 # Multi-department retail expansion
 
-11 October sourced-catalogue update: ordinary shoppers now use 35 manufacturer-linked records, nested department/category/product-type navigation and strict brand/model/capacity constraints. Legacy engineering records remain for fixtures/history. See [BRANDED_CATALOG](BRANDED_CATALOG.md) for selection, missing facts and manual acceptance. Deployment verification is pending; the previous retail milestone below is historical.
+11 October sourced-catalogue release: application `365347809346f9d5458f0cd0cdcce80e44eaecc2` is deployed at https://65.0.19.200.sslip.io/shop and ready locally at http://localhost:3000. Ordinary shoppers see 35 manufacturer-linked records across six departments, with nested category/type navigation and strict brand/model/size/concentration/RAM/storage constraints. Legacy samples remain in isolated fixtures and historical orders; incomplete apparel candidates are withheld. All 377 unit/contract checks, four production browser journeys, 20 actual hosted checks and eight actual restart checks pass. All release gates for this catalogue update are closed (100% of this scope). Provider settings and customer data are preserved; prices/stock/fulfilment remain sandbox data. See [BRANDED_CATALOG](BRANDED_CATALOG.md). Earlier milestone descriptions below are historical.
 
 DALE is a customer-first shopping agent operating a managed merchant storefront. This release expands that storefront into six departments without replacing its agent, consent, payment or evidence contracts.
 
-## Implemented scope
+## Historical engineering-catalogue scope
 
 | Department | Inventory | Decision inputs |
 | --- | --- | --- |

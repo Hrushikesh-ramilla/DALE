@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-11T09:45:54.703Z",
+  "source": "365347809346f9d5458f0cd0cdcce80e44eaecc2",
+  "url": "https://65.0.19.200.sslip.io",
+  "mode": "real-postgres/customers; isolated-agent/payment-fixtures",
+  "checks": [
+    {
+      "scenario": "Public ready build matches release",
+      "passed": true
+    },
+    {
+      "scenario": "PostgreSQL catalog has six departments and 35 sourced records",
+      "passed": true
+    },
+    {
+      "scenario": "Ordinary browsing excludes invented and identity-only inventory",
+      "passed": true
+    },
+    {
+      "scenario": "Manufacturer phone attributes filter without guessed Apple RAM",
+      "passed": true
+    },
+    {
+      "scenario": "Observed actual app restart",
+      "passed": true
+    },
+    {
+      "scenario": "Customer 1 session and exact-variant group persist",
+      "passed": true
+    },
+    {
+      "scenario": "Customer 2 session and exact-variant group persist",
+      "passed": true
+    },
+    {
+      "scenario": "Fixture conversation and captured order persist",
+      "passed": true
+    }
+  ]
+}

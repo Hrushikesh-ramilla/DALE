@@ -6,6 +6,8 @@ import type { VoiceIntent } from "./voice";
 const aliases: Record<string, string[]> = {
   "maison francis kurkdjian": ["maison francis kurkdjian", "mfk"],
   "saint laurent": ["saint laurent", "ysl"],
+  "giorgio armani": ["giorgio armani", "armani"],
+  "maison margiela": ["maison margiela", "maison martin margiela"],
   "louis vuitton": ["louis vuitton", "lv"],
   hermès: ["hermès", "hermes"],
   lancôme: ["lancôme", "lancome"],

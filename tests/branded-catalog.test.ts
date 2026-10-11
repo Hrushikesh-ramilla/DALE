@@ -148,3 +148,24 @@ it("renders manufacturer links and sandbox provenance for every public record, i
     ).match(/href=/g),
   ).toHaveLength(2);
 });
+
+it("honours the shopper's Armani and Maison Martin Margiela names without substituting another house", () => {
+  const armani = understandAgent({
+    task: "Find Armani cotton t-shirt size M under $1000",
+    model: "Atlas 14",
+    budget: 100000,
+  });
+  if (armani.kind !== "shopping") throw new Error("Expected shopping");
+  expect(armani.brief.requirements?.brand).toBe("giorgio armani");
+  expect(searchCatalog(armani.brief, publicCatalog)).toEqual([]);
+  const margiela = understandAgent({
+    task: "Find Maison Martin Margiela Jazz Club perfume in 100ml under $200",
+    model: "Atlas 14",
+    budget: 100000,
+  });
+  if (margiela.kind !== "shopping") throw new Error("Expected shopping");
+  expect(margiela.brief.requirements?.brand).toBe("maison margiela");
+  expect(searchCatalog(margiela.brief, publicCatalog).map((p) => p.id)).toEqual(
+    ["B013"],
+  );
+});

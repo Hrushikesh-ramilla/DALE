@@ -28,4 +28,10 @@ The same typed constraints run through chat, validated model workflow output, pa
 
 ## Release evidence
 
-Implementation and controlled verification are in progress. Record the final tested build and hosted/restart receipts here after installation. Existing provider configuration and customer data must be preserved.
+Application 365347809346f9d5458f0cd0cdcce80e44eaecc2 is deployed at https://65.0.19.200.sslip.io/shop and compiled locally at http://localhost:3000. Linux customer-release workflow 38129029279 passes lint, TypeScript, all 377 unit/contract tests, eleven isolated packaged OCR checks and four production browser journeys. The browser journeys cover independent customers, exact Givenchy fixture checkout/reload, public query validation and desktop/mobile nested navigation with no premature ranking claim.
+
+The 63246603-byte Linux archive has SHA-256 19807eda38316c858a3d7bff1beeee257a969a81b92f14b6772ebcb632c6f29a. The authenticated installer verifies its identity/checksum, preserves the previous release and private database backup, and restarts app/worker successfully. All 20 actual hosted journey checks and eight post-restart checks pass; receipts are in docs/evaluations/retail-3653478-prepare.json and retail-3653478-restart.json. Two ordinary sessions finalize one exact Givenchy M SKU and retain private orders. Branded agent checks and capture are explicitly isolated fixtures; no model generation or real payment capture occurs.
+
+Retained-fixture PostgreSQL pagination separately passes 255 records and two disjoint 48-record pages. Public queries exclude those samples and the four incomplete apparel records. Before/after private configuration fingerprints match for every existing setting except BUILD_ID. No credentials, provider selection, billing, paid resource or customer database reset is introduced.
+
+All catalogue release gates are closed: 100% of this update. This is not a claim of commercial inventory, unlimited external research or new live-model/payment-provider qualification. Subsequent documentation-only commits preserve this exact application build identity.
