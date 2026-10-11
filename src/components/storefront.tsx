@@ -427,6 +427,9 @@ export default function Storefront() {
     setCategory("");
     setProducts([]);
     setIsDeviceMode(false);
+    setRequirements({});
+    setBriefDirty(true);
+    if (!session?.fixtureWorkspace) setModel(lifestyleProfile);
     setTimeout(() => document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" }), 50);
   }
   function browseCollection(nextCategory: string, productType?: string) {
@@ -914,7 +917,7 @@ export default function Storefront() {
                     <h2>
                       {isDeviceMode
                         ? isRetailCategory(category) ? categoryTitles[category] : `All essentials for ${deviceLabel(model)}`
-                        : (categoryTitles[category] || "Selected for you")}
+                        : (categoryTitles[category] || departments.find(d => d.id === departmentId)?.title || "Selected for you")}
                     </h2>
                     <p style={{ fontSize: "14px", color: "#a1a1a6", margin: "4px 0 0" }}>
                       {isDeviceMode
@@ -949,8 +952,7 @@ export default function Storefront() {
                       compatibleCount={visibleProducts.length}
                     />
                     <span className="muted">
-                      {visibleProducts.length}{" "}
-                      {briefDirty ? "preview options" : "matching variants"}
+                      {category || isDeviceMode ? <>{visibleProducts.length}{" "}{briefDirty ? "preview options" : "matching variants"}</> : "Choose a category"}
                     </span>
                   </div>
                 </div>
@@ -1109,8 +1111,8 @@ export default function Storefront() {
                             <span className="fit-label">
                               <Check size={12} />{" "}
                               {briefDirty
-                                ? "Update your brief to confirm fit"
-                                : isRetailCategory(product.category) || product.brand ? "Matches recorded attributes" : `Fits ${deviceLabel(model)}`}
+                                ? "Confirm the exact variant and budget"
+                                : isRetailCategory(product.category) || product.brand ? "Matches recorded attributes" : productFits(product, model) ? `Fits ${deviceLabel(model)}` : "Device fit requires confirmation"}
                             </span>
                             {product.sponsored && (
                               <span className="sponsored">Sponsored</span>
@@ -1202,12 +1204,13 @@ export default function Storefront() {
                     title={
                       catalogQuery
                         ? "Nothing in this selection"
+                        : !category && !isDeviceMode ? "Choose a category above"
                         : "Let's refine your search"
                     }
                     detail={
                       catalogQuery
                         ? "Try another name or specification, or clear the search to see your matches."
-                        : "We won't guess compatibility. Try a known model or a larger budget."
+                        : !category && !isDeviceMode ? "Open a product category to explore its sourced records and filters." : "No recorded variant matches these constraints. Adjust your filters or budget; missing facts are not guessed."
                     }
                   />
                 )}

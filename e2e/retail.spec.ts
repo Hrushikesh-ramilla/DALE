@@ -102,6 +102,12 @@ test("electronics opens a nested device browser on desktop and mobile", async ({
     await page
       .getByRole("button", { name: "Explore Electronics", exact: true })
       .click();
+    await expect(
+      page.getByRole("heading", {
+        name: "Choose a category above",
+        exact: true,
+      }),
+    ).toBeVisible();
     const browser = page.getByRole("region", {
       name: "Browse departments and categories",
     });
