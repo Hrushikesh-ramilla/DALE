@@ -119,6 +119,9 @@ test("electronics opens a nested device browser on desktop and mobile", async ({
       browser.getByRole("button", { name: /Tablets/ }),
     ).toBeVisible();
     await browser.getByRole("button", { name: /Phones/ }).click();
+    await expect(page.locator(".product-grid")).not.toContainText(
+      "Best price for your brief",
+    );
     await expect(page.getByLabel("Brand", { exact: true })).toBeVisible();
     await page.getByLabel("Brand", { exact: true }).selectOption("apple");
     await expect(page.locator(".product-grid")).toContainText("iPhone 17");

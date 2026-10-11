@@ -1096,7 +1096,7 @@ export default function Storefront() {
                           >
                             <ArrowRight size={17} />
                           </button>
-                          {index === 0 && (
+                          {index === 0 && !briefDirty && (
                             <span className="card-badge">
                               {weights
                                 ? "Top weighted match for your brief"
