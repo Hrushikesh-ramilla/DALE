@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-10-11",
+  "method": "Official manufacturer visible product pages; selected variant facts and displayed photograph URLs",
+  "observations": [
+    {
+      "model": "RB2140",
+      "upc": "805289126577",
+      "slug": "RB2140original%20wayfarer%20classic-black",
+      "name": "ORIGINAL WAYFARER CLASSIC",
+      "frame": "Polished Black",
+      "lenses": "G-15 Green",
+      "size": "50-22",
+      "polarization": "non-polarized",
+      "asset": "aa3935f3-184a-4e17-a880-b35d00c65c8a/0RB2140__901__P21__shad__qt.png"
+    },
+    {
+      "model": "RB3016",
+      "upc": "805289304456",
+      "slug": "RB3016clubmaster%20classic-tortoise%20on%20gold",
+      "name": "CLUBMASTER CLASSIC",
+      "frame": "Polished Tortoise On Gold",
+      "lenses": "G-15 Green",
+      "size": "51-21",
+      "polarization": "non-polarized",
+      "asset": "786b4a58-fc3f-441f-89ff-b35d00cfe3ad/0RB3016__W0366__STD__shad__qt.png"
+    },
+    {
+      "model": "RB2132",
+      "upc": "805289052418",
+      "slug": "RB2132new%20wayfarer%20classic-black",
+      "name": "NEW WAYFARER CLASSIC",
+      "frame": "Polished Black",
+      "lenses": "G-15 Green",
+      "asset": "01bf9a6d-0908-433e-8127-b35d00dd222d/0RB2132__901L__STD__shad__qt.png"
+    },
+    {
+      "model": "RB3025",
+      "upc": "805289602057",
+      "slug": "RB3025aviator%20classic-arista%20gold",
+      "name": "AVIATOR CLASSIC",
+      "frame": "Polished Arista Gold",
+      "lenses": "G-15 Green",
+      "size": "58-14",
+      "polarization": "non-polarized",
+      "asset": "6ad42b4b-f1af-45cc-a6c6-b35d00db1f85/0RB3025__L0205__STD__shad__qt.png"
+    },
+    {
+      "model": "RB4171",
+      "upc": "805289742470",
+      "slug": "RB4171erika%20classic-rubber%20havana",
+      "name": "ERIKA CLASSIC",
+      "frame": "Matte Rubber Havana",
+      "lenses": "Brown",
+      "asset": "75cb6ac1-760f-4e23-b595-b35d00dd61e9/0RB4171__865_13__STD__shad__qt.png"
+    },
+    {
+      "model": "RB4165",
+      "upc": "805289526575",
+      "slug": "RB4165%20UNISEX%20justin%20classic-rubber%20black",
+      "name": "JUSTIN CLASSIC",
+      "frame": "Matte Rubber Black",
+      "lenses": "Dark Grey",
+      "size": "54-16",
+      "asset": "988e2333-b578-4644-995e-b42600a49e41/0RB4165__601_8G__P21__shad__qt.png"
+    },
+    {
+      "model": "RB2234",
+      "upc": "8056262975671",
+      "slug": "RB2234brunel-havana",
+      "name": "BRUNEL",
+      "frame": "Polished Havana",
+      "lenses": "Dark Green",
+      "size": "56-19",
+      "asset": "93295ee2-043b-42a9-a26f-b44e01096109/0RB2234__902_31__P21__shad__qt.png"
+    },
+    {
+      "model": "RB4456",
+      "upc": "8056262453933",
+      "slug": "RB4456zaya%20bio-based-havana",
+      "name": "ZAYA BIO-BASED",
+      "frame": "Polished Havana",
+      "lenses": "Dark Grey",
+      "size": "53-19",
+      "asset": "8803950f-aafb-49dd-bb24-b3a0012b17b6/0RB4456__135987__P21__shad__qt.png"
+    },
+    {
+      "model": "RB2198",
+      "upc": "8056597529679",
+      "slug": "RB2198bill-havana%20on%20transparent%20brown",
+      "name": "BILL",
+      "frame": "Polished Havana On Transparent Brown",
+      "lenses": "Light Brown Gradient",
+      "size": "56-14",
+      "asset": "abaa47ec-48b4-4b87-9dfe-b36100d39455/0RB2198__129251__STD__shad__qt.png"
+    },
+    {
+      "model": "RB3447",
+      "upc": "805289439899",
+      "slug": "RB3447round%20metal-arista%20gold",
+      "name": "ROUND METAL",
+      "frame": "Polished Arista Gold",
+      "lenses": "G-15 Green",
+      "size": "50-21",
+      "polarization": "non-polarized",
+      "asset": "a5410c76-c6b3-482b-bf78-b35d00d09da3/0RB3447__001__STD__shad__qt.png"
+    }
+  ]
+}

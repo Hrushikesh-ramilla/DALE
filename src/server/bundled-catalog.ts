@@ -1,13 +1,14 @@
 import { createHash } from "node:crypto";
 import watches from "../../catalog/manifests/watches-tissot-2026-10-11-v1.json";
 import rolex from "../../catalog/manifests/watches-rolex-2026-10-11-v1.json";
+import rayBan from "../../catalog/manifests/eyewear-ray-ban-2026-10-11-v1.json";
 import eyewear from "../../catalog/manifests/eyewear-oakley-2026-10-11-v1.json";
 import { catalogManifestSchema } from "@/domain/catalog-manifest";
 import type { Sql } from "./database";
 
 /** Deploy the reviewed starter batch once. Withdrawal survives subsequent restarts. */
 export async function bootstrapReviewedCatalog(sql: Sql) {
-  for (const input of [eyewear, watches, rolex]) {
+  for (const input of [eyewear, watches, rolex, rayBan]) {
     const manifest = catalogManifestSchema.parse(input);
     const content = JSON.stringify(manifest);
     const hash = createHash("sha256").update(content).digest("hex");

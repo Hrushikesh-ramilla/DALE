@@ -5,6 +5,7 @@ import { lifestyleProfile, type Category } from "./departments";
 import type { VoiceIntent } from "./voice";
 
 const aliases: Record<string, string[]> = {
+  "ray-ban": ["ray-ban", "ray ban", "rayban"],
   "maison francis kurkdjian": ["maison francis kurkdjian", "mfk"],
   "saint laurent": ["saint laurent", "ysl"],
   "giorgio armani": ["giorgio armani", "armani"],
@@ -74,7 +75,11 @@ export function brandedShopping(
     (aliases[brand] || [brand]).some((alias) => has(text, alias)),
   );
   const named = records.filter(
-    (p) => p.attributes?.modelName && has(text, p.attributes.modelName),
+    (p) =>
+      p.attributes?.modelName &&
+      has(text, p.attributes.modelName) &&
+      (!statedBrands.length ||
+        statedBrands.includes(p.brand?.toLowerCase() || "")),
   );
   const categories = [
     ...new Set([
@@ -182,7 +187,24 @@ export function brandedShopping(
   const budget = amounts[0] ?? defaultBudget;
   if (budget < 1 || budget > 1000000)
     return clarify("Choose a sandbox budget between $0.01 and $10,000 USD.");
-  const modelNames = [...new Set(named.map((p) => p.attributes!.modelName!))];
+  const modelNames = [
+    ...new Set(named.map((p) => p.attributes!.modelName!)),
+  ].filter(
+    (name, _index, names) =>
+      !names.some((other) => other !== name && has(other, name)),
+  );
+  if (
+    modelNames.some((name) =>
+      ["xl", "pro", "max", "plus", "mini", "ultra", "date"].some(
+        (suffix) =>
+          has(text, `${name} ${suffix}`) &&
+          !modelNames.some((other) => has(other, `${name} ${suffix}`)),
+      ),
+    )
+  )
+    return clarify(
+      "That exact model variant is not recorded. I will not substitute a base model.",
+    );
   if (
     devicePurchase &&
     /\b(?:iphone\s*\d+|galaxy\s+s\d+|xiaomi\s*\d+|oneplus\s*\d+|macbook\s+air\s+m\d+|ipad\s+(?:air|pro))\b/i.test(

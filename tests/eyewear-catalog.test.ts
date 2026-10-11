@@ -22,9 +22,12 @@ it("publishes ten distinct reviewed models with exact-reference media and no inv
   expect(new Set(parsed.products.map((p) => p.attributes.modelName)).size).toBe(
     10,
   );
-  const result = await browseCatalog({ category: "sunglasses" });
+  const result = await browseCatalog({
+    category: "sunglasses",
+    requirements: { brand: "oakley" },
+  });
   expect(result.total).toBe(10);
-  expect((await catalogSummary()).counts.sunglasses).toBe(10);
+  expect((await catalogSummary()).counts.sunglasses).toBe(20);
   for (const product of result.products) {
     expect(product.media?.url).toContain("assets2.oakley.com");
     expect(product.name).toContain(product.id.replace("EYE-", ""));
@@ -74,7 +77,21 @@ it("preserves withdrawal across bootstrap/restart and supports reviewed restorat
   );
   await retireCatalog(manifest.id);
   await database.transaction((sql) => bootstrapCatalog(sql));
-  expect((await browseCatalog({ category: "sunglasses" })).total).toBe(0);
+  expect(
+    (
+      await browseCatalog({
+        category: "sunglasses",
+        requirements: { brand: "oakley" },
+      })
+    ).total,
+  ).toBe(0);
   await restoreCatalog(manifest.id, release.rows[0].content_hash);
-  expect((await browseCatalog({ category: "sunglasses" })).total).toBe(10);
+  expect(
+    (
+      await browseCatalog({
+        category: "sunglasses",
+        requirements: { brand: "oakley" },
+      })
+    ).total,
+  ).toBe(10);
 });

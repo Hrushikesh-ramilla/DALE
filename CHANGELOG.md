@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Reviewed Ray-Ban eyewear and model identity guards
+
+- Add ten distinct selected Ray-Ban references reviewed in the official storefront, with exact UPCs, observed frame/lens colours, optional size/polarization and attributed photographs. Verify every photograph endpoint; explicitly disclose unavailable dimensions, UV and fit information.
+- Support Ray-Ban, Ray Ban and Rayban task spellings using database-resolved brand context. Prefer a longer explicitly named model and refuse unsupported XL/Pro/Max variants instead of substituting base models.
+- Add publication, alias, missing-fact and model-substitution contracts and Ray-Ban browser photography coverage. Assortment becomes 75 reviewed records; the full enlarged scope remains pending.
+
 ## 2026-10-11 — Reviewed Rolex watch collections
 
 - Add ten distinct official collections, exact manufacturer references and photographs. Parse explicit JSON-LD case diameter, material, dial colour, movement and water resistance; reject identity/media mismatches and absent required specifications.

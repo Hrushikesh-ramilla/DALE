@@ -19,7 +19,16 @@ test("manufacturer photographs render in watches and sunglasses with a visible f
       page.locator(".product-photograph figcaption a").first(),
     ).toBeVisible();
   }
+  await page.getByLabel("Brand", { exact: true }).selectOption("ray-ban");
+  const rayBanPhoto = page.locator(".product-photograph img").first();
+  await expect(rayBanPhoto).toBeVisible();
+  await expect
+    .poll(() =>
+      rayBanPhoto.evaluate((image: HTMLImageElement) => image.naturalWidth),
+    )
+    .toBeGreaterThan(0);
   await page.route("https://assets2.oakley.com/**", (route) => route.abort());
+  await page.route("https://images2.ray-ban.com/**", (route) => route.abort());
   await page.reload();
   await page
     .getByRole("button", { name: "Explore Sunglasses", exact: true })
@@ -222,7 +231,7 @@ test("public catalog supports all departments and strict paginated attribute que
   const response = await request.get("/api/catalog");
   expect(response.ok()).toBe(true);
   const catalog = await response.json();
-  expect(catalog.total).toBe(65);
+  expect(catalog.total).toBe(75);
   expect(catalog.departments).toHaveLength(8);
   expect(catalog.products).toHaveLength(48);
   const filtered = await request.get(
