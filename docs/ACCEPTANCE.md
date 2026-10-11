@@ -1,6 +1,6 @@
 # Independent engineer and physical-evidence acceptance
 
-Use the hosted build at https://16.4.25.181.sslip.io. Obtain private access codes from the owner; never put them in this form or public issues. Record the actual build from `/api/health`, time, browser/device, and adapter modes. This pack is ready for testing; it is not evidence that five people have tested it.
+Use the current verified build identified in VALIDATION.md, locally at http://localhost:3000 or at https://16.4.25.181.sslip.io after its BUILD_ID matches the candidate. Open `/demo` for isolated no-account fixture exercises. Operator access outside demos is private; never record access codes in forms or issues. Record the actual build from `/api/health`, time, browser/device and adapter modes. This pack is ready for testing; it is not evidence that five people have tested it.
 
 ## Five independent testers
 
@@ -8,7 +8,7 @@ Give at least five people separate browser profiles and isolated fixture workspa
 
 | Task | Expected visible outcome | Requirement |
 | --- | --- | --- |
-| Find a charger for Slate 11 within $30; compare options | Only curated compatible products within budget; source-backed facts and explicit purchase approval | BG01/BG04/BG06 |
+| Find a charger for MacBook Air M1 under $60, include a cable and ask for group savings; compare options | Reviewed sources, complete $58 bundle, conditional group terms, no automatic membership/payment; explicit purchase approval | BG01/BG02/BG04/BG06 |
 | Put a different model/budget in the message | Clarification before candidates/approval; explicit confirmation or corrected controls required | BG04 |
 | Upload readable, unknown and contradictory label fixtures | Suggestion requires confirmation; no guessing on unknown/ambiguous labels | BG06 |
 | Invite a second buyer, leave before finalization, rejoin and complete a group purchase | No payment on commitment; locked 10% price; purchases remain private | BG02 |

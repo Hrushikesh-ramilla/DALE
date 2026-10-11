@@ -73,7 +73,7 @@ export function understandAgent(input: AgentRequest): VoiceIntent {
     return {
       kind: "clarification",
       message:
-        "Give the exact device model and year. Reviewed charging evidence covers MacBook Air M1/M2 and 13-inch MacBook Pro M1. Sample tasks can explicitly use USB-C Laptop (65W), USB-C Laptop (100W), USB-C Laptop (45W) or Barrel-jack Laptop (45W).",
+        "That device is not verified yet. Give the exact model and year. Reviewed charging evidence covers MacBook Air M1/M2 and 13-inch MacBook Pro M1. Sample tasks can explicitly use USB-C Laptop (65W), USB-C Laptop (100W), USB-C Laptop (45W) or Barrel-jack Laptop (45W).",
     };
   if (
     /\b(?:macbook|iphone|ipad|thinkpad|surface|galaxy|dell|lenovo|asus|acer|samsung|apple|hewlett|zenbook|ideapad|pavilion|latitude|inspiron)\b/i.test(
