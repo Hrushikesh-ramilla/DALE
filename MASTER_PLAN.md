@@ -1,5 +1,7 @@
 # DALE master plan
 
+Agent execution handover: [IMPLEMENTATION_PLAN](IMPLEMENTATION_PLAN.md). Start there for the current-state audit, existing code map, ordered implementation milestones, preservation rules, test gates, publication/deployment procedure and continuation ledger. The depth specification below supplies the product/brand requirements; the implementation plan turns them into executable work.
+
 ## Governing assortment revision — 11 October 2026
 
 [ASSORTMENT_DEPTH_MASTER_PLAN](docs/ASSORTMENT_DEPTH_MASTER_PLAN.md) now governs expansion. The requirement is per leaf product type and per brand: normally at least ten eligible brands with ten distinct manufacturer models each, targeting 100–150 models per type; a smaller brand range requires an enumerated manufacturer-backed supply exception. Headphones/earbuds/speakers, storage types, computer accessories and clothing types have independent gates. The matrix contains 50 type targets and a nominal 5,000–7,500-placement budget before deduplication/supply exceptions. This supersedes the earlier global 2,000-family completion target. The existing 142 offers are a verified starter release, not completed breadth or depth. D0-D7 define census, durable ingestion, balanced electronics/lifestyle expansion and agent/commerce/operational acceptance. This revision is planning only and changes no runtime/customer data. The original seven capabilities and customer-first safeguards below remain mandatory; prior percentages and receipts are historical, scope-specific evidence.

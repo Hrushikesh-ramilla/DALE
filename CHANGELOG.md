@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-11 — Agent implementation handover
+
+- Add root IMPLEMENTATION_PLAN.md with a verified baseline, existing code map, per-type coverage contracts and ordered I0–I9 milestones with explicit exit gates.
+- Document additive taxonomy/revision migrations, immutable v1 manifest compatibility, customer-scoped queue separation, revision-aware cursors and independently derived hosted count expectations.
+- Specify source census/ingestion, balanced electronics/lifestyle depth, connected agent/commerce evaluations, exact-artifact deployment and a resumable implementation ledger. Planning only; no application, catalog, credentials or deployment changes.
+
 ## 2026-10-11 — Per-type and per-brand depth specification
 
 - Replace the aggregate 2,000-family completion criterion with independent coverage gates for 50 leaf product types: normally ten eligible brands and ten distinct models per brand, targeting 100–150 per type. Document manufacturer-backed exceptions where an actual brand range is smaller.
