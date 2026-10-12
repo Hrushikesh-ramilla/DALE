@@ -61,6 +61,12 @@ jobs:
             playwright-report
             test-results
           retention-days: 7
+      - run: node scripts/package-linux-app.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-app-release
+          path: .data/linux-artifact
+          retention-days: 7
   containers:
     runs-on: ubuntu-latest
     timeout-minutes: 15

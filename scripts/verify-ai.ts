@@ -36,6 +36,7 @@ const report = await recordLiveChecks(".data/reports/ai-integration.json", [
   {
     scenario: "Coercive payment message",
     check: async () => {
+      await new Promise((resolve) => setTimeout(resolve, 4000));
       const scam = await scamAnalysis(
         "Send your verification code and pay with gift cards immediately or your account will be suspended.",
       );
@@ -47,6 +48,7 @@ const report = await recordLiveChecks(".data/reports/ai-integration.json", [
   {
     scenario: "Vision input with insufficient evidence",
     check: async () => {
+      await new Promise((resolve) => setTimeout(resolve, 4000));
       const photo = Buffer.from(
         "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=",
         "base64",
