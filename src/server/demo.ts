@@ -18,6 +18,9 @@ import { takeRequestBudget } from "./budgets";
 import { getDatabase } from "./database";
 import { z } from "zod";
 import { scenarioKind } from "./scenarios";
+// Five independent engineers can each exercise nine scenarios in a burst.
+// The lifetime workspace/storage ceilings remain independent of this window.
+export const publicDemoLaunchLimit = 60;
 export const demoRequestSchema = z.discriminatedUnion("action", [
   z.object({ action: z.literal("launch"), kind: scenarioKind }),
   z.object({ action: z.literal("reset"), kind: scenarioKind }),
@@ -58,7 +61,7 @@ export async function launchDemo(
     userId: "launches",
     role: "buyer",
   } satisfies Actor;
-  await takeRequestBudget(limiter, "launch", 20);
+  await takeRequestBudget(limiter, "launch", publicDemoLaunchLimit);
   // A lifetime ceiling bounds demo storage without deleting audit/payment records.
   await takeRequestBudget(
     limiter,

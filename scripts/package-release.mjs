@@ -3,6 +3,8 @@ import { build } from "esbuild";
 import { execFileSync } from "node:child_process";
 import { parse } from "dotenv";
 import { randomBytes } from "node:crypto";
+import { releaseProviderConfig } from "./release-provider-config.mjs";
+import { validateReleaseRuntime } from "./validate-release-runtime.mjs";
 const directory = ".data/deploy";
 await mkdir(directory, { recursive: true });
 await build({
@@ -16,6 +18,11 @@ await build({
 await cp(".next/static", ".next/standalone/.next/static", { recursive: true });
 await cp("public", ".next/standalone/public", { recursive: true });
 await cp("deploy", ".next/standalone/deploy", { recursive: true });
+await mkdir(".next/standalone/scripts", { recursive: true });
+await cp(
+  "scripts/download-model-artifact.mjs",
+  ".next/standalone/scripts/download-model-artifact.mjs",
+);
 const source = parse(await readFile(".env"));
 let values;
 try {
@@ -54,14 +61,17 @@ for (const key of [
 values.BUILD_ID = execFileSync("git", ["rev-parse", "HEAD"], {
   encoding: "utf8",
 }).trim();
-if (process.env.DEPLOY_AI_MODE) values.AI_MODE = process.env.DEPLOY_AI_MODE;
-// Live voice is opt-in only after the owner verifies free quota and disabled billing.
-values.VOICE_MODE = "disabled";
-values.AGENT_MODEL_ENABLED = "false";
-values.AI_BILLING_DISABLED = "false";
-values.VOICE_MODEL = "gemini-3.8-live";
-values.VOICE_FREE_TIER_CONFIRMED = "false";
-values.VOICE_BILLING_DISABLED = "false";
+Object.assign(values, releaseProviderConfig(source, values, process.env));
+validateReleaseRuntime(
+  values,
+  JSON.parse(await readFile("deploy/model-candidates.json", "utf8")),
+);
+// Reviewed public manufacturer HTTP is independent of model billing. Demo
+// workspaces remain snapshot-only; an explicit owner setting is preserved.
+values.REAL_RESEARCH_REFRESH_ENABLED =
+  source.REAL_RESEARCH_REFRESH_ENABLED ||
+  values.REAL_RESEARCH_REFRESH_ENABLED ||
+  "true";
 await writeFile(
   `${directory}/production.env`,
   Object.entries(values)

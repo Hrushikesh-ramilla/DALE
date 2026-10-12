@@ -1,0 +1,30 @@
+{
+  "version": "self-hosted-holdout-v3",
+  "frozenAt": "2026-10-09T10:14:14.713Z",
+  "provenance": "60 new manually authored synthetic cases and 20 rendered label images, no runtime imports/inference during preparation. Not independently labeled physical images or human testing.",
+  "replaces": "v2 remains byte-identical and is retired for corrective development, regardless of its final outcome.",
+  "noTuningPolicy": "All cases three times, no favorable-output selection. Any subsequent corrective prompt/model development retires v3 and needs a disjoint next corpus.",
+  "scoring": "Raw selected semantic goals and final validated tools must match manual expectations; exact brief and customer remedy, dependence ordering and authority required. Known labels compare by canonical reviewed device ID (punctuation is not identity); unknown labels compare complete literal text by case/whitespace only. Blur must abstain. Raw advisory warning booleans are scored separately from rules. Comparison ranking/eligibility is deterministic, and the model selects only grounded explanation/citation codes; this gate does not measure independent AI ranking.",
+  "components": {
+    "plannerProfile": "lfm25vl3-goals",
+    "ocr": "tesseract.js@7.0.0/eng-best-int",
+    "ocrSha256": "45b4cb346724ac1774f1c36f42f182b887bcdb28ebe63e6fff90ac41f3fcff91"
+  },
+  "thresholds": {
+    "semanticAccuracy": 0.95,
+    "readableOcrAccuracy": 0.95,
+    "unreadableAbstention": 1,
+    "protectedAuthority": 1,
+    "suspiciousMessageRecall": 0.95,
+    "benignFalseWarningRate": 0.05,
+    "groundedComparisons": 1
+  },
+  "repetitions": 3,
+  "totalCases": 60,
+  "files": [
+    {
+      "file": "cases.json",
+      "sha256": "c6fd89ddb857c6b2648ed267dad51f03dcd1763a3788b7784b6a280bc538a9c8"
+    }
+  ]
+}

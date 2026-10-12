@@ -1,12 +1,16 @@
 # Deployment
 
+## Persistent local preview on Windows
+
+Run `npm run build`, then `npm run preview:start`. Build copies production browser assets automatically. The hidden supervisor serves http://localhost:3000/demo, preserves `.data/local-final` and restarts an unexpectedly exited child with bounded retries. `npm run preview:status` reports readiness and restart history; `npm run preview:stop` stops the owned preview and retains data. Stop before rebuilding on Windows. Logs live in ignored `.data/local-preview`; this is a fixture preview, not a Windows boot service or EC2 deployment. `npm run verify:preview` tests one child interruption and retained state. See [CURRENT_STATUS.md](CURRENT_STATUS.md).
+
 ## Existing EC2 instance
 
 For stable management access, use [Systems Manager instead of changing local-IP SSH rules](DEPLOYMENT_ACCESS.md). The connection script is prepared; activating the instance role/agent and an authenticated AWS identity is still required.
 
 For an existing installation, upload `deploy/upgrade.sh` alongside the installer and run `sudo bash upgrade.sh <release-id> <expected-sha256>`. It checks the transferred archive before changing services, retains a private database/evidence/environment snapshot and the previous release, and restores the previous code/environment on installation failure. It does not automatically overwrite a database with a backup. Schema compatibility must be reviewed before code rollback. Use the ignored restricted local SSH key copy documented in DEPLOYMENT_ACCESS.md.
 
-The demo uses an existing Ubuntu instance with 1 GiB RAM. Build locally with `npm run build`, then `node scripts/package-release.mjs`; the release archive excludes all environment files and unnecessary native build binaries. Native Node.js, PostgreSQL, Caddy, and systemd avoid compiling on the small host.
+The owner reports resizing the existing Ubuntu instance to t3.medium with 4 GiB RAM. Its current public address and restricted SSH access remain pending. Build locally with `npm run build`, then `node scripts/package-release.mjs`; the release archive excludes all environment files and unnecessary native build binaries. Native Node.js, PostgreSQL, Caddy, and systemd avoid compiling on the host. Packaging rejects live self-hosted inference without a qualified manifest selection and rejects Windows local-speech paths. No local model is qualified; production inference service installation and joint memory/restart acceptance remain open. Existing app/worker limits were sized for the earlier fixture release; the 380 MB app limit must be reassessed before enabling child-process Whisper recognition. Do not infer deployment readiness from artifact download or fixture CI alone.
 
 Install Ubuntu packages `nodejs postgresql caddy`. Copy the generated archive, private `production.env`, private `database.sql`, and `deploy/install.sh` to `/home/ubuntu`, then run `sudo bash install.sh <unique-release-id>`. The script creates a dedicated service account, database role, persistent `/var/lib/buyerguard` evidence directory, and versioned `/opt/buyerguard/releases` checkout. The environment is readable by the service account only.
 
@@ -19,6 +23,14 @@ Buyer and operator access codes are saved locally in ignored `.data/deploy/acces
 Evidence is private on the existing instance's persistent disk to keep the demo cost low. Configure `STORAGE_MODE=s3` and the S3 variables for off-instance storage. Do not claim disaster recovery from a single disk. Before important tests, save a database dump and evidence archive to protected storage. No new paid AWS service is required by the current deployment.
 
 To update, package a fresh local build, upload it, and run the installer with a new identifier. Preserve `production.env` and the database password. To roll back code, point `/opt/buyerguard/current` at a verified earlier release, then restart app and worker; check schema compatibility before reverting. Keep at least the previous release until the new release passes hosted checks.
+
+## Private CPU runtime installation
+
+The installer now invokes `deploy/prepare-runtime.mjs` before starting the app. Fixture/disabled settings download no inference artifacts. Explicit local speech installs the pinned Linux Whisper runtime/model and writes Linux paths into the private environment; the app cgroup grows from 380 to 768 MiB to include its recognizer child. Live self-hosting requires a qualified manifest selection matching AI_MODEL. The manifest remains unselected; downloading a candidate cannot enable a live release.
+
+The private model service uses authenticated 127.0.0.1:8081, one slot/two CPU threads, context 4096, batch/ubatch 128, bounded restarts and no GPU/offload. Its default cgroup limit is 2048 MiB; LOCAL_MODEL_MEMORY_MAX_MIB can preserve a measured, explicitly configured limit. The installer checks app plus model plus 240 MiB worker and 640 MiB OS/PostgreSQL/Caddy reserve against OS-visible RAM. This capacity check is not proof of adequacy; measure peak joint load and latency on EC2 before acceptance. Runtime artifacts are pinned/checksummed, root-owned, and readable through the service group. Cloud keys are not sent to the local service.
+
+Upgrade snapshots now include model service/key/environment, app/model resource overrides and the previous runtime link; failure restores them alongside application configuration. Artifacts are retained. The model must return the selected alias on an authenticated models request before app installation proceeds. That startup check establishes service identity, not inference quality. Fresh Linux CI downloads real pinned binaries, recognizes owned synthesized audio as the service account, validates model unit syntax and speech reinstallation without model generation. Target EC2/model inference remains separately required.
 
 ## Local Docker alternative
 

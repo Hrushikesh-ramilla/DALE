@@ -5,7 +5,22 @@ const config: NextConfig = {
   outputFileTracingRoot: process.cwd(),
   poweredByHeader: false,
   agentRules: false,
-  serverExternalPackages: ["@electric-sql/pglite", "pg"],
+  serverExternalPackages: [
+    "@electric-sql/pglite",
+    "pg",
+    "sharp",
+    "tesseract.js",
+    "tesseract.js-core",
+    "@tesseract.js-data/eng",
+  ],
+  outputFileTracingIncludes: {
+    "/*": [
+      "./node_modules/tesseract.js/**/*",
+      "./node_modules/tesseract.js-core/**/*",
+      "./node_modules/@tesseract.js-data/eng/**/*",
+      "./deploy/local-ocr.mjs",
+    ],
+  },
   async headers() {
     return [
       {

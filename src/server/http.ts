@@ -59,6 +59,7 @@ export function apiError(error: unknown) {
       event: "api.error",
       reference,
       status,
+      message,
       at: new Date().toISOString(),
     }),
   );

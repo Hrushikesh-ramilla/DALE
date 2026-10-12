@@ -230,7 +230,7 @@ export function AgentWorkspace({
             </div>
             <small className="agent-mode">
               {latest.mode === "model"
-                ? "Gemini structured planning · validated tool results"
+                ? "Model structured planning · validated tool results"
                 : latest.mode === "unavailable"
                   ? "Model unavailable · verified catalog and safety rules"
                   : "Catalog assistance · no model calls or AI spend"}

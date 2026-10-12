@@ -1,0 +1,16 @@
+{
+  "version": "owned-speech-v1",
+  "provenance": "Owned Windows SAPI speech synthesis, PCM16 mono 16 kHz. Synthetic fixture; not independent human/microphone acceptance.",
+  "cases": [
+    {
+      "file": "orders.wav",
+      "expected": "show my orders",
+      "sha256": "3088ca7fc13c12dc658a8594fef2dc588f27100b31451668a7d01fdae3a943b3"
+    },
+    {
+      "file": "replacement.wav",
+      "expected": "my item arrived broken and i want a replacement",
+      "sha256": "75f95907ec33a30412eda579a9333e0c2197899a01fe076fa6395eeb2e9fedd2"
+    }
+  ]
+}

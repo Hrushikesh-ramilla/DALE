@@ -179,7 +179,7 @@ it("uses the direct Gemini protocol for planning and validated evidence comparis
   expect(JSON.parse(body.contents[0].parts[0].text).task).toBe(input.task);
   expect(data.snapshot.orders).toHaveLength(0);
 });
-it("accepts a model's explicit no-match comparison without invented evidence", async () => {
+it("retains model planning but skips comparison when server evidence establishes no complete match", async () => {
   const task = {
     ...input,
     task: input.task.replace(
@@ -187,26 +187,21 @@ it("accepts a model's explicit no-match comparison without invented evidence", a
       "I want fast charging.",
     ),
   };
-  native(fallbackPlan(task), { productId: null, sourceIds: [], reasons: [] });
+  const modelFetch = native(fallbackPlan(task));
   const actor = await buyer(false);
   const data = await runAgent(actor, task);
   expect(data.run.mode).toBe("model");
-  expect(data.run.recommendation).toEqual({
+  expect(data.run.recommendation).toBeUndefined();
+  expect(modelFetch).toHaveBeenCalledTimes(1);
+  expect(data.run.status).toBe("needs_input");
+  expect(data.run.productIds).toHaveLength(0);
+  expect(data.snapshot.orders).toHaveLength(0);
+  expect(await compareWithModel(data.run.research!)).toEqual({
     productId: null,
     sourceIds: [],
     reasons: [],
   });
-  expect(data.run.status).toBe("needs_input");
-  expect(data.run.productIds).toHaveLength(0);
-  expect(data.snapshot.orders).toHaveLength(0);
-  native({
-    productId: null,
-    sourceIds: ["70w"],
-    reasons: ["lowest_complete_cost"],
-  });
-  await expect(compareWithModel(data.run.research!)).rejects.toThrow(
-    "without eligible evidence",
-  );
+  expect(modelFetch).toHaveBeenCalledTimes(1);
 });
 it("lets semantic model interpretation propose an unfamiliar phrasing without confirming invented constraints", async () => {
   const task =

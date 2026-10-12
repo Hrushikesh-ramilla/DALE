@@ -14,6 +14,7 @@ import {
 } from "../src/domain/agent-workflow";
 import { createWorkspace, type Actor } from "../src/server/state";
 import { runAgent } from "../src/server/agent";
+import { compareWithModel } from "../src/server/agent-planner";
 import {
   retrieveSource,
   retrieveManufacturerEvidence,
@@ -50,6 +51,21 @@ async function buyer(fixture = true): Promise<Actor> {
     role: "buyer",
   };
 }
+it("does not request a model comparison when no complete offer meets the confirmed constraints", async () => {
+  const report = researchProducts({
+    model: realModels[2],
+    budget: 5300,
+    cable: "none",
+    fastCharging: false,
+  });
+  expect(report.findings.every((finding) => !finding.eligible)).toBe(true);
+  expect(await compareWithModel(report)).toEqual({
+    productId: null,
+    sourceIds: [],
+    reasons: [],
+  });
+  expect(fetch).not.toHaveBeenCalled();
+});
 it("uses registry records without assuming M1 means Air, and distinguishes Pro power/cable needs", () => {
   expect(resolveDevices("MacBook M1")).toHaveLength(2);
   expect(resolveDevices("MacBook Air M1")[0].normalWatts).toBe(30);

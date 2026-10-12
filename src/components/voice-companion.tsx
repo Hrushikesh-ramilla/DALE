@@ -9,7 +9,12 @@ import type {
 } from "@google/genai";
 import type { snapshot, shop } from "@/server/service";
 import type { VoiceIntent } from "@/domain/voice";
-import { Pcm16Encoder, audioBase64, decodeAudio } from "@/lib/voice-audio";
+import {
+  Pcm16Encoder,
+  audioBase64,
+  decodeAudio,
+  speechWav,
+} from "@/lib/voice-audio";
 import { deviceText, deviceLabel } from "@/domain/catalog";
 export type VoiceResult = {
   intent: VoiceIntent;
@@ -17,7 +22,7 @@ export type VoiceResult = {
   snapshot?: Awaited<ReturnType<typeof snapshot>>;
 };
 type Availability = {
-  mode: "fixture" | "disabled" | "live";
+  mode: "fixture" | "disabled" | "live" | "local";
   message: string;
   token?: string;
   model?: string;
@@ -72,6 +77,7 @@ export function VoiceCompanion({
     abort?: AbortController;
     nextAudio: number;
     input: string;
+    finishRecording?: () => void;
   }>({ generation: 0, sources: new Set(), nextAudio: 0, input: "" });
   const stop = useCallback(() => {
     const current = resources.current;
@@ -106,6 +112,8 @@ export function VoiceCompanion({
     current.output = undefined;
     current.nextAudio = 0;
     current.input = "";
+    current.finishRecording = undefined;
+    window.speechSynthesis?.cancel();
   }, []);
   useEffect(() => () => stop(), [stop, path, actorId]);
   useEffect(() => {
@@ -177,6 +185,158 @@ export function VoiceCompanion({
         }
       });
     }, 350);
+  }
+  async function startLocal() {
+    stop();
+    const current = resources.current;
+    const generation = current.generation;
+    const active = () => resources.current.generation === generation;
+    setError("");
+    setTranscript("");
+    setReply("");
+    setStatus("Connecting");
+    try {
+      if (!window.isSecureContext || !navigator.mediaDevices?.getUserMedia)
+        throw new Error(
+          "Microphone access needs HTTPS or localhost in a supported browser.",
+        );
+      const stream = await navigator.mediaDevices.getUserMedia({
+        audio: {
+          echoCancellation: true,
+          noiseSuppression: true,
+          channelCount: 1,
+        },
+      });
+      if (!active()) {
+        stream.getTracks().forEach((track) => track.stop());
+        return;
+      }
+      current.stream = stream;
+      const capture = new AudioContext();
+      current.capture = capture;
+      await capture.audioWorklet.addModule("/voice-capture.js");
+      if (!active()) return;
+      await capture.resume();
+      if (!active()) return;
+      const source = capture.createMediaStreamSource(stream);
+      current.source = source;
+      const node = new AudioWorkletNode(capture, "dale-voice-capture");
+      current.node = node;
+      const gain = capture.createGain();
+      gain.gain.value = 0;
+      current.gain = gain;
+      source.connect(node);
+      node.connect(gain);
+      gain.connect(capture.destination);
+      const encoder = new Pcm16Encoder(capture.sampleRate);
+      const chunks: Uint8Array[] = [];
+      let size = 0;
+      let finished = false;
+      const finish = async () => {
+        if (!active() || finished) return;
+        finished = true;
+        if (current.timer) clearTimeout(current.timer);
+        current.timer = undefined;
+        current.finishRecording = undefined;
+        node.port.onmessage = null;
+        node.disconnect();
+        source.disconnect();
+        gain.disconnect();
+        stream.getTracks().forEach((track) => track.stop());
+        current.stream = undefined;
+        current.node = undefined;
+        current.source = undefined;
+        current.gain = undefined;
+        await capture.close();
+        current.capture = undefined;
+        if (!active()) return;
+        setStatus("Processing");
+        const controller = new AbortController();
+        current.abort = controller;
+        try {
+          const wav = speechWav(chunks);
+          chunks.length = 0;
+          const response = await fetch("/api/voice/transcribe", {
+            method: "POST",
+            headers: { "Content-Type": "audio/wav" },
+            body: new Uint8Array(wav).buffer,
+            signal: controller.signal,
+          });
+          const data = await response.json();
+          if (!response.ok) throw new Error(data.error);
+          if (!active()) return;
+          setTranscript(data.transcript);
+          setStatus("Ready");
+          setReply(
+            "Review or edit the transcript, then choose Use this request. No action has been taken.",
+          );
+        } catch (error) {
+          if (active()) {
+            setStatus("Unavailable");
+            setError(
+              error instanceof Error
+                ? error.message
+                : "Recognition failed. Typed shopping remains available.",
+            );
+          }
+        } finally {
+          chunks.length = 0;
+        }
+      };
+      current.finishRecording = () => void finish();
+      node.port.onmessage = (event) => {
+        if (!active() || finished) return;
+        const bytes = encoder
+          .encode(event.data as Float32Array)
+          .slice(0, Math.max(0, 15 * 32000 - size));
+        if (bytes.length) {
+          chunks.push(bytes);
+          size += bytes.length;
+        }
+        if (size >= 15 * 32000) void finish();
+      };
+      current.timer = setTimeout(() => void finish(), 15000);
+      setStatus("Listening");
+    } catch (error) {
+      if (active()) {
+        stop();
+        setStatus("Unavailable");
+        setError(
+          error instanceof Error
+            ? error.message
+            : "Microphone could not start.",
+        );
+      }
+    }
+  }
+  function speakReply() {
+    stop();
+    const generation = resources.current.generation;
+    const voice = window.speechSynthesis
+      ?.getVoices()
+      .find(
+        (voice) =>
+          voice.localService && voice.lang.toLowerCase().startsWith("en"),
+      );
+    if (!voice) {
+      setError(
+        "No installed local English voice is available. Read the reply on screen.",
+      );
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(reply);
+    utterance.voice = voice;
+    utterance.onend = () => {
+      if (resources.current.generation === generation) setStatus("Ready");
+    };
+    utterance.onerror = () => {
+      if (resources.current.generation === generation) {
+        setStatus("Unavailable");
+        setError("Local playback stopped. The reply remains on screen.");
+      }
+    };
+    setStatus("Speaking");
+    window.speechSynthesis.speak(utterance);
   }
   async function startLive() {
     stop();
@@ -455,7 +615,7 @@ export function VoiceCompanion({
         <Mic size={16} /> Talk to DALE
       </button>
       <span>Describe a need. Keep the final say.</span>
-      {availability?.mode === "live" &&
+      {["live", "local"].includes(availability?.mode || "") &&
         ["Connecting", "Listening", "Processing", "Speaking"].includes(
           status,
         ) && (
@@ -527,6 +687,34 @@ export function VoiceCompanion({
                 >
                   <Mic size={16} /> Start microphone conversation
                 </button>
+              )}
+              {availability?.mode === "local" && (
+                <>
+                  <button
+                    className="button primary"
+                    disabled={[
+                      "Connecting",
+                      "Processing",
+                      "Listening",
+                    ].includes(status)}
+                    onClick={() => void startLocal()}
+                  >
+                    <Mic size={16} /> Record a request
+                  </button>
+                  {status === "Listening" && (
+                    <button
+                      className="button secondary"
+                      onClick={() => resources.current.finishRecording?.()}
+                    >
+                      Finish recording
+                    </button>
+                  )}
+                  {reply && (
+                    <button className="button secondary" onClick={speakReply}>
+                      <Volume2 size={16} /> Read reply aloud
+                    </button>
+                  )}
+                </>
               )}
               {availability?.mode === "disabled" && (
                 <a href="/demo">Try the provider-free voice demo ↗</a>

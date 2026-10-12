@@ -1,8 +1,21 @@
 # Project progress
 
-Updated 8 October 2026. **16 of 20 acceptance checkpoints closed: 80% complete, 20% pending.** This is a transparent checkpoint count, not an estimate of remaining hours or a claim that 20% of the code is unwritten. Each checkpoint has equal weight (5 percentage points). Partially implemented or externally unverified checkpoints remain open; mock results never close a live-provider checkpoint.
+Updated 9 October 2026. **Release acceptance is 15/20 (75% passed / 25% pending). This is not engineering completion.** Deployment checkpoint 20 reopened when the owner replaced Gemini and resized EC2. Existing code was not removed. Historical 80% described the previously accepted deployment. It must not be presented as an estimate of remaining code or time.
 
-The last verified public release is application `ee4e5d8`. The new local candidate implements the remaining scoped code milestones, including composed planning, weights/policy, reviewed retrieval, claim reports/media and external reconciliation. Hosting availability is established; publishing this candidate requires a verified administrative connection and matching hosted BUILD_ID. Genuine acceptance still needs actual provider, physical and independent-human executions rather than a credential replacement.
+## Engineering versus acceptance
+
+| Work | Engineering | Acceptance |
+| --- | --- | --- |
+| Shopper agent tools, product grounding, group approval, payments and customer remedy/evidence workflows | Implemented and verified with unit/browser/container/fixture checks | Genuine AI/provider and independent evidence checks remain separate |
+| Private self-hosted text/vision adapter and protected configuration | Implemented; native read-only tool selection, locked facts, validated OCR and no cloud fallback | LFM2.5-VL-3B passes five development checks; full quality/resource qualification remains engineering work, not a missing key |
+| Local speech capture, transcript review, CPU recognition and cancellation | Implemented; real Windows and Linux recognition, HTTP and browser recovery checks pass | Target workload and human microphone checks are distinct |
+| Linux model/speech installation, systemd restart policy, combined-memory guard and upgrade rollback | Implemented; focused policy tests, actual Linux speech reinstallation, pinned model executable loading and unit validation pass | Actual selected-model/EC2 joint-load/restart execution required; unit validation is not an observed model restart |
+| Genuine PayPal journey and signed receipt capture | Implemented; resumable verifier and provider contracts pass | Existing merchant rejects checkout currency; usable account configuration and actual capture/refund remain required |
+| Physical evidence labels and five independent users | Test protocols implemented | Actual people/captures have not supplied records; these are acceptance activities, not unimplemented feature code |
+
+The owner's goal is a product requiring only deployment/provider configuration. That goal is not yet achieved: the self-hosted agent has no qualified model. Human/physical gates must not be used to imply code is missing, and completed adapters must not be used to claim a failed model works. [CURRENT_STATUS.md](CURRENT_STATUS.md) and [SELF_HOSTED_AI.md](SELF_HOSTED_AI.md) identify current source/runtime evidence.
+
+## Release acceptance checkpoints
 
 | # | Acceptance checkpoint | Status | Evidence or remaining work |
 | --- | --- | --- | --- |
@@ -16,23 +29,25 @@ The last verified public release is application `ee4e5d8`. The new local candida
 | 8 | Advisory message analysis with safe outage fallback | Closed | Rule/adapter/benign/obfuscation contracts and fixture journeys; accuracy belongs to checkpoint 17. |
 | 9 | Exact quote/approval, ownership and changed-term guards | Closed | Guard and service tests; hosted forged-approval rejection. |
 | 10 | Durable capture/refund operation contracts and idempotency | Closed | Persisted operation, provider contract, retry and reconciliation tests. |
-| 11 | Genuine sandbox approval/capture/refund and verified webhooks | Open | Only actual OAuth/create/retrieve recorded. |
+| 11 | Genuine sandbox approval/capture/refund and verified webhooks | Open | Fresh 8 October OAuth, webhook registration lookup, order creation and buyer login passed; PayPal again rejected the merchant's USD currency before approval. No capture/refund was issued. Resumable application acceptance and signed own-order receipt recording are implemented. |
 | 12 | Four evidence checkpoints, scoped originals, hashes and capture provenance | Closed | Provenance/privacy/report/browser/restart checks. |
 | 13 | Planned claim-level sourced report and optional media scope | Closed | Sourced per-proposition reports, uncertainty/integrity receipts, optional private MP4/WebM and explicit manual video review; 59 focused contracts and production original/privacy/report/reload journey. Physical labels remain checkpoint 18. |
 | 14 | Customer remedy choice, paid return shipping, reviewer authority and appeal | Closed | Return-shipping/remedy/appeal fixture journeys. |
 | 15 | Late/canceled order choices, replacement links, deadline and job recovery | Closed | Order-options/recovery/queue/seeded trace checks. |
 | 16 | External dispute and provider-adjustment reconciliation | Closed | Typed sandbox reads, signature-verified wake-ups, bounded worker/pre-remedy discovery, exact capture/currency/immutable refund credit, partial remaining-balance guards and reviewer refresh; 39 focused contracts and production receipt/permission browser test. Genuine provider execution remains checkpoint 11. |
-| 17 | Genuine text/vision/voice acceptance and measured semantic/OCR performance | Open | Implemented adapters, mocked transport; free quota unavailable, no spend authorized. |
+| 17 | Genuine text/vision/voice acceptance and measured semantic/OCR performance | Open | Entirely self-hosted is confirmed. Seven multimodal CPU candidates and two small classifier development experiments did not qualify. The revised LFM3/Tesseract v3 run completed 151/180 but missed semantic/OCR/benign-warning gates. Linux capped inference/auth/restart passes; real human speech and target joint performance remain open. |
 | 18 | Staged physical evidence and independent claim labels/accuracy | Open | Manifest has no captured/labeled cases. |
 | 19 | Five independent testers and recorded usability acceptance | Open | Result template has no participant records. |
-| 20 | Deployable app/worker/database, production checks, backup/restore and restart persistence | Closed | Recorded CI/release/restore/HTTPS/restart results; permanent SSM access remains an operational follow-up. |
+| 20 | Deployable app/worker/database, production checks, backup/restore and restart persistence | Open again | Earlier app/worker/database release passed CI/HTTPS/restart. Replacement model/speech runtime is not installed or jointly verified on resized EC2; old address times out. New deployment/restart/memory evidence is required. |
 
 After each implementation milestone, update this table, the count and pending percentage; record executed evidence, commit identity and release status in CHANGELOG/VALIDATION. An implementation can improve while its acceptance checkpoint stays open. Do not claim code deployment, provider success or human acceptance from credentials being supplied.
 
-No additional credentials are needed to continue the independent implementation and mocked provider contracts. Existing configured secrets stay ignored. Genuine external checks later need usable no-spend Gemini quota, a USD-capable sandbox merchant/buyer and owner-authorized buyer approval; physical/human acceptance requires actual recorded exercises. Those gates are not one-step API-key replacements.
+No additional API key is needed for the requested self-hosted implementation. Existing configured secrets stay ignored. External deployment/payment acceptance needs current restricted EC2 connectivity and a merchant accepting a PayPal-supported currency. Selection/evaluation requires actual working inference, while physical/human acceptance requires recorded exercises.
 
 The detailed requirement audit is [PLAN_AUDIT.md](PLAN_AUDIT.md). The original product and release gates remain in [MASTER_PLAN.md](../MASTER_PLAN.md).
 
-Milestone history: audit baseline `fb50d0a` closed 10/20 (50%); application `ee4e5d8` plus hosted verification closes checkpoint 7, reaching 11/20 (55%). Live semantic/OCR/provider and physical/human gates remain open rather than receiving credit for mocks.
+## Historical milestones
 
-Current local milestone closes checkpoints 3, 4, 5, 13 and 16: 250 unit/contract/database tests pass; the production browser run passed 37 journeys and the corrected complete-response mock passes its focused reconciliation rerun. Full final release validation, commit and hosted identity are recorded in VALIDATION.md. Live providers and human/physical tests stay open. Existing no-spend constraints remain in force.
+Audit baseline `fb50d0a` closed 10/20 (50%); application `ee4e5d8` plus hosted verification closed checkpoint 7, reaching 11/20 (55%). Live semantic/OCR/provider and physical/human gates remained open rather than receiving credit for mocks.
+
+Original released milestone closed checkpoints 3, 4, 5, 13 and 16: 251 unit/contract/database tests, 38 production browser journeys in each CI job, 72 public fixture checks and four actual upgrade/restart persistence checks passed. Full release evidence, archive and commit identities are recorded in VALIDATION.md. These original-release results do not establish completion of the later self-hosted runtime migration.

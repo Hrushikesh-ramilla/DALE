@@ -101,7 +101,7 @@ const spec = {
       get: {
         security: [{ session: [] }],
         description:
-          "Buyer-only availability: fixture, disabled or live. Fixture never uses microphone recognition or provider calls. Live requires owner-confirmed free quota and disabled billing.",
+          "Buyer-only availability: fixture, disabled, local or live. Guided fixtures never call a recognizer/provider. Local uses private CPU Whisper, temporary audio cleanup and transcript review; native cloud Live requires owner-confirmed free quota and disabled billing.",
         responses,
       },
       post: {
@@ -113,9 +113,23 @@ const spec = {
     },
     "/api/voice/intent": {
       post: command(
-        "Buyer-only transcript-to-validated-intent preparation. Deterministic catalog matching, support drafting or own-order navigation only. Financial approval/code execution requests are rejected. USD/English bounded intent grammar; ambiguity requires clarification. At most 10 requests/actor/minute and shared demo analysis lifetime limit. Does not send another model request.",
+        "Buyer-only reviewed transcript preparation using the same private agent planner, source tools and approval boundaries as typed tasks. Live analysis can call the explicitly selected model; fixture workspaces cannot. Financial approval/code execution requests are rejected. At most 10 requests/actor/minute and shared demo analysis lifetime limit.",
         jsonSchema(voiceRequest),
       ),
+    },
+    "/api/voice/transcribe": {
+      post: {
+        security: [{ session: [] }],
+        description:
+          "Same-origin buyer-only local recognition when explicitly configured in an ordinary workspace. Accepts canonical mono 16 kHz PCM16 WAV, 0.1–15 seconds, maximum 480044 bytes. Two attempts/actor/minute, six globally/minute, one concurrent CPU job. Rejects silence and malformed input. Temporary audio is deleted after processing/cancellation. Returns an editable transcript; never prepares or executes an agent task. No cloud fallback.",
+        requestBody: {
+          required: true,
+          content: {
+            "audio/wav": { schema: { type: "string", format: "binary" } },
+          },
+        },
+        responses,
+      },
     },
     "/api/health": {
       get: {

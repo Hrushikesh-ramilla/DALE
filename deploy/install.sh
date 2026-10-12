@@ -17,6 +17,9 @@ chown -R buyerguard:buyerguard "$target"
 ln -sfn "$target" /opt/buyerguard/current
 install -m 644 "$target/deploy/buyerguard.service" /etc/systemd/system/
 install -m 644 "$target/deploy/buyerguard-worker.service" /etc/systemd/system/
+# Prepare pinned Linux inference/speech and enforce total memory policy before
+# starting the application. Disabled fixture releases do not download models.
+node "$target/deploy/prepare-runtime.mjs"
 # Caddy's service reads only the public hostname, never payment or model credentials.
 install -d /etc/systemd/system/caddy.service.d
 host=$(sed -n 's/^APP_HOST="\([^"]*\)"$/\1/p' /etc/buyerguard.env)

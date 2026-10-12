@@ -1,3 +1,7 @@
+Current 9 October status: use localhost after the supervised preview is started. The old public address times out after the EC2 resize. Guided scenarios are fixtures; a successful fixture is not a live-model or PayPal payment result. See CURRENT_STATUS.md.
+
+Local speech tests: run `npm run voice:setup`, then `npx tsx scripts/verify-local-speech.ts --prepared` for actual CPU recognition of frozen owned recordings. `npm run verify:voice:http` starts and stops its own isolated packaged app and exercises actual recognition/authentication without model or payment calls. `npx playwright test e2e/local-voice.spec.ts` tests microphone transport with a mocked recognizer. In an ordinary workspace configured with VOICE_MODE=local and absolute LOCAL_SPEECH_EXECUTABLE/MODEL paths, open Talk to DALE, Record a request, Finish recording, edit/review, and Use this request. Stop must release the microphone. Recognition alone cannot buy or prepare a task. Guided workspaces deliberately retain synthetic voice. Read reply aloud uses only installed local voices, otherwise text remains available.
+
 # Sourced buyer-agent acceptance journey
 
 The expanded release tests (M1 devices, several goals, weights, merchant terms and video claim reports) are in [CURRENT_ACCEPTANCE.md](CURRENT_ACCEPTANCE.md). Check VALIDATION for the actual deployed build.

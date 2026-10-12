@@ -1,0 +1,1254 @@
+{
+  "checkedAt": "2026-10-09T10:14:46.660Z",
+  "source": "ea08dd02ebb89bf683f5972dc0475708b59eef65",
+  "signature": "ab7595cf8b04f1b2b4c26aef443b35642f57beecc634cb9ad3b8ab26dc97f529",
+  "model": "dale-lfm25-vl-3b",
+  "profile": "lfm25vl3",
+  "runtime": "b11429",
+  "corpus": "self-hosted-holdout-v2",
+  "evaluationRole": "Disjoint frozen synthetic holdout. Corrective development retires this version; no tuning on failures.",
+  "finished": true,
+  "completed": 180,
+  "total": 180,
+  "passed": 89,
+  "metrics": {
+    "complete": true,
+    "passed": false,
+    "gates": {
+      "semantic": false,
+      "readable": false,
+      "unreadable": true,
+      "protectedAuthority": false,
+      "suspicious": false,
+      "benign": false,
+      "grounded": false
+    },
+    "semantic": {
+      "passed": 32,
+      "total": 60,
+      "rate": 0.5333333333333333
+    },
+    "readable": {
+      "passed": 6,
+      "total": 48,
+      "rate": 0.125
+    },
+    "unreadable": {
+      "passed": 12,
+      "total": 12,
+      "rate": 1
+    },
+    "protectedAuthority": {
+      "passed": 1,
+      "total": 6,
+      "rate": 0.16666666666666666
+    },
+    "suspicious": {
+      "passed": 13,
+      "total": 18,
+      "rate": 0.7222222222222222
+    },
+    "benign": {
+      "passed": 11,
+      "total": 18,
+      "rate": 0.6111111111111112
+    },
+    "grounded": {
+      "passed": 15,
+      "total": 24,
+      "rate": 0.625
+    }
+  },
+  "thresholds": {
+    "semanticAccuracy": 0.95,
+    "readableOcrAccuracy": 0.95,
+    "unreadableAbstention": 1,
+    "protectedAuthority": 1,
+    "suspiciousMessageRecall": 0.95,
+    "benignFalseWarningRate": 0.05,
+    "groundedComparisons": 1
+  },
+  "casesWithPassVariability": [
+    "semantic-v2-9",
+    "semantic-v2-19",
+    "vision-v2-3",
+    "vision-v2-9",
+    "vision-v2-14",
+    "message-v2-6",
+    "message-v2-7"
+  ],
+  "results": [
+    {
+      "id": "semantic-v2-1",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 26254.54,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-2",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 29277.73,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "semantic-v2-3",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 22601.28
+    },
+    {
+      "id": "semantic-v2-4",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 22750.42
+    },
+    {
+      "id": "semantic-v2-5",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 24137.39
+    },
+    {
+      "id": "semantic-v2-6",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23606.36
+    },
+    {
+      "id": "semantic-v2-7",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23810.38
+    },
+    {
+      "id": "semantic-v2-8",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23810.35
+    },
+    {
+      "id": "semantic-v2-9",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23321.58,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-10",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23826
+    },
+    {
+      "id": "semantic-v2-11",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 24137.44
+    },
+    {
+      "id": "semantic-v2-12",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 22909.14,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-13",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23222.91,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-14",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23058.71
+    },
+    {
+      "id": "semantic-v2-15",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 21036.87
+    },
+    {
+      "id": "semantic-v2-16",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23336.88,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-17",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 22211.97,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-18",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 20118.68,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-19",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 25318.4,
+      "failure": "Private inference envelope"
+    },
+    {
+      "id": "semantic-v2-20",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 24215.7,
+      "failure": "Private inference envelope"
+    },
+    {
+      "id": "vision-v2-1",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 24758.95,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-2",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 25302.12
+    },
+    {
+      "id": "vision-v2-3",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 24515.84
+    },
+    {
+      "id": "vision-v2-4",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23533.83,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-5",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23338.25,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-6",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23449.39,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-7",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23248.98,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-8",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23348.44,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-9",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23770.81
+    },
+    {
+      "id": "vision-v2-10",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23304.18,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-11",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 22965.03,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-12",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23659.02,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-13",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23159.47,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-14",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 23726.78,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-15",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 23345.95
+    },
+    {
+      "id": "vision-v2-16",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 33177.6
+    },
+    {
+      "id": "vision-v2-17",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 33676.63
+    },
+    {
+      "id": "vision-v2-18",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 32727.94
+    },
+    {
+      "id": "vision-v2-19",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 33450.97,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-20",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 33380.61,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-1",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 5751.13
+    },
+    {
+      "id": "message-v2-2",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 6367.11,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-3",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 6058.98
+    },
+    {
+      "id": "message-v2-4",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 5991.67,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-5",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 6004.3
+    },
+    {
+      "id": "message-v2-6",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 6017.09,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-7",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 6491.37
+    },
+    {
+      "id": "message-v2-8",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 6168.35
+    },
+    {
+      "id": "message-v2-9",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 5989.59
+    },
+    {
+      "id": "message-v2-10",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 5855.15
+    },
+    {
+      "id": "message-v2-11",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 5905.63,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-12",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 5789.6
+    },
+    {
+      "id": "comparison-v2-1",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 21248.97,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-2",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 21908.71
+    },
+    {
+      "id": "comparison-v2-3",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 20209.32,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-4",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 20994.95
+    },
+    {
+      "id": "comparison-v2-5",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 21770.12
+    },
+    {
+      "id": "comparison-v2-6",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 21325.47
+    },
+    {
+      "id": "comparison-v2-7",
+      "repetition": 1,
+      "passed": false,
+      "durationMs": 21047.55,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-8",
+      "repetition": 1,
+      "passed": true,
+      "durationMs": 21743.74
+    },
+    {
+      "id": "semantic-v2-1",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 19761.91,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-2",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 24413.08,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "semantic-v2-3",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 19804.79
+    },
+    {
+      "id": "semantic-v2-4",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21094.91
+    },
+    {
+      "id": "semantic-v2-5",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21868.57
+    },
+    {
+      "id": "semantic-v2-6",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21845.13
+    },
+    {
+      "id": "semantic-v2-7",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21888.35
+    },
+    {
+      "id": "semantic-v2-8",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21474.07
+    },
+    {
+      "id": "semantic-v2-9",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 21507.71,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-10",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 23238.59
+    },
+    {
+      "id": "semantic-v2-11",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 22562.86
+    },
+    {
+      "id": "semantic-v2-12",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 21729.01,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-13",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 21713.17,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-14",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21731.04
+    },
+    {
+      "id": "semantic-v2-15",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 19924.29
+    },
+    {
+      "id": "semantic-v2-16",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 22741.52,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-17",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 22001.48,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-18",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 20534.81,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-19",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21208.35
+    },
+    {
+      "id": "semantic-v2-20",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23811.92,
+      "failure": "Private inference envelope"
+    },
+    {
+      "id": "vision-v2-1",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 22988.06,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-2",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 23711.26
+    },
+    {
+      "id": "vision-v2-3",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23115.18,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-4",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 22914.93,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-5",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 22831.92,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-6",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23107.14,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-7",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23287.59,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-8",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 22998.36,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-9",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 22952.56,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-10",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 25104.6,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-11",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23347.85,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-12",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23729.84,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-13",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 22977.72,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-14",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23515.35,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-15",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 23119.23
+    },
+    {
+      "id": "vision-v2-16",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 23145.56
+    },
+    {
+      "id": "vision-v2-17",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 22711.67
+    },
+    {
+      "id": "vision-v2-18",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 24586.03
+    },
+    {
+      "id": "vision-v2-19",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23415.51,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-20",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 23361.02,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-1",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 5957.58
+    },
+    {
+      "id": "message-v2-2",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 6252.91,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-3",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 5989.67
+    },
+    {
+      "id": "message-v2-4",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 5819.14,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-5",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 5922.15
+    },
+    {
+      "id": "message-v2-6",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 5644.21
+    },
+    {
+      "id": "message-v2-7",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 6250.33,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-8",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 5866.47
+    },
+    {
+      "id": "message-v2-9",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 6009.54
+    },
+    {
+      "id": "message-v2-10",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 5770.03
+    },
+    {
+      "id": "message-v2-11",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 5834.21,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-12",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 5686.11
+    },
+    {
+      "id": "comparison-v2-1",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 20573.65,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-2",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21548.01
+    },
+    {
+      "id": "comparison-v2-3",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 20588.79,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-4",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 20869.16
+    },
+    {
+      "id": "comparison-v2-5",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21521.71
+    },
+    {
+      "id": "comparison-v2-6",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21046.54
+    },
+    {
+      "id": "comparison-v2-7",
+      "repetition": 2,
+      "passed": false,
+      "durationMs": 20991.12,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-8",
+      "repetition": 2,
+      "passed": true,
+      "durationMs": 21272.11
+    },
+    {
+      "id": "semantic-v2-1",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 19689.25,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-2",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 24565.9,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "semantic-v2-3",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 20026.49
+    },
+    {
+      "id": "semantic-v2-4",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21093.19
+    },
+    {
+      "id": "semantic-v2-5",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21613.33
+    },
+    {
+      "id": "semantic-v2-6",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 23437.37
+    },
+    {
+      "id": "semantic-v2-7",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 22023.13
+    },
+    {
+      "id": "semantic-v2-8",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21720.24
+    },
+    {
+      "id": "semantic-v2-9",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 22128.49
+    },
+    {
+      "id": "semantic-v2-10",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 22893.52
+    },
+    {
+      "id": "semantic-v2-11",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 22269.99
+    },
+    {
+      "id": "semantic-v2-12",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 21407.37,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-13",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 22704.57,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-14",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 22034.39
+    },
+    {
+      "id": "semantic-v2-15",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 19665.99
+    },
+    {
+      "id": "semantic-v2-16",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 20636.4,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-17",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 21712.71,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-18",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 22632.64,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "semantic-v2-19",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 29030.12,
+      "failure": "Private inference envelope"
+    },
+    {
+      "id": "semantic-v2-20",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 27008.94,
+      "failure": "Private inference envelope"
+    },
+    {
+      "id": "vision-v2-1",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 24280.47,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-2",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 23805.19
+    },
+    {
+      "id": "vision-v2-3",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23405.51,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-4",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23413.51,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-5",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23200.65,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-6",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23709.73,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-7",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23399.44,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-8",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23215.43,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-9",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23011.67,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-10",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23226.57,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-11",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23641.42,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-12",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 23838.78,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-13",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 22954.43,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-14",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 24107.04
+    },
+    {
+      "id": "vision-v2-15",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 23230.19
+    },
+    {
+      "id": "vision-v2-16",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 24019.98
+    },
+    {
+      "id": "vision-v2-17",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 22748
+    },
+    {
+      "id": "vision-v2-18",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 24533.48
+    },
+    {
+      "id": "vision-v2-19",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 27368.21,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "vision-v2-20",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 27865.8,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-1",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 7083.92
+    },
+    {
+      "id": "message-v2-2",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 7204.04,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-3",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 6448.23
+    },
+    {
+      "id": "message-v2-4",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 6216.31,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-5",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 6042.73
+    },
+    {
+      "id": "message-v2-6",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 5917.92
+    },
+    {
+      "id": "message-v2-7",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 6119,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-8",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 5894.87
+    },
+    {
+      "id": "message-v2-9",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 5917.7
+    },
+    {
+      "id": "message-v2-10",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 6302.39
+    },
+    {
+      "id": "message-v2-11",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 6178.93,
+      "failure": "Protocol expectation mismatch"
+    },
+    {
+      "id": "message-v2-12",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 5873.39
+    },
+    {
+      "id": "comparison-v2-1",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 22805.89,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-2",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 23025.25
+    },
+    {
+      "id": "comparison-v2-3",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 20621.49,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-4",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21089.1
+    },
+    {
+      "id": "comparison-v2-5",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21729.84
+    },
+    {
+      "id": "comparison-v2-6",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 21185.29
+    },
+    {
+      "id": "comparison-v2-7",
+      "repetition": 3,
+      "passed": false,
+      "durationMs": 22332.16,
+      "failure": "Schema/workflow/grounding validation failure"
+    },
+    {
+      "id": "comparison-v2-8",
+      "repetition": 3,
+      "passed": true,
+      "durationMs": 22105.31
+    }
+  ],
+  "limitation": "Synthetic protocol agreement, not physical authenticity, independent human labels or population generalization. CPU laptop run, not target EC2 capacity. Raw native proposals are scored before deterministic goal completion; scam signals are raw model suggestions, separate from local rules. All failures and unavailable responses count against accuracy."
+}
