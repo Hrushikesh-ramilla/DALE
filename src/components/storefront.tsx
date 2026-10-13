@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import {
+  ArrowLeft,
   ArrowRight,
   Check,
   ChevronRight,
@@ -45,7 +46,70 @@ import type { ScenarioKind } from "@/server/scenarios";
 import { GroupPolicySettings } from "./group-policy-settings";
 import { ProviderReconciliation } from "./provider-reconciliation";
 import { CinematicIntro } from "./cinematic-intro";
+import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
+
+const categoryTitles: Record<string, string> = {
+  chargers: "Power & Charging",
+  docks: "Desk & Connectivity",
+  audio: "Sound & Acoustics",
+  storage: "High-Speed Storage & Carry",
+  accessories: "Precision Input & Essentials",
+};
+
+const parallaxCategories = [
+  {
+    id: "chargers",
+    numeral: "01 / 05",
+    tagline: "POWER & ENERGY",
+    title: "Power & Charging",
+    desc: "Precision gallium nitride (GaN) architecture engineered for thermal efficiency, ultra-compact form factors, and verified fast-charging protocols across USB-C PD and legacy profiles.",
+    tags: ["65W–100W GaN", "USB-C PD 3.0", "Thermal Guard", "Braided Cabling"],
+    featured: catalog[0],
+    count: catalog.filter((item) => item.category === "chargers").length,
+  },
+  {
+    id: "docks",
+    numeral: "02 / 05",
+    tagline: "CONNECTIVITY & EXPANSION",
+    title: "Desk & Connectivity",
+    desc: "Transform single-port setups into unified multi-display workstations. Certified DisplayPort alt-mode, 4K HDMI streaming, gigabit Ethernet, and high-wattage power passthrough.",
+    tags: ["4K HDMI", "DisplayPort Alt-Mode", "60W Passthrough", "Multi-Port Hub"],
+    featured: catalog[3],
+    count: catalog.filter((item) => item.category === "docks").length,
+  },
+  {
+    id: "audio",
+    numeral: "03 / 05",
+    tagline: "ACOUSTICS & FOCUS",
+    title: "Sound & Acoustics",
+    desc: "Acoustic-sealed wireless audio crafted for deep focus, travel, and clean voice clarity. Low-latency transmission with USB-C fast recharging and fold-flat portability.",
+    tags: ["High-Fidelity Audio", "Active Isolation", "USB-C Fast Recharge", "Fold-Flat"],
+    featured: catalog[5],
+    count: catalog.filter((item) => item.category === "audio").length,
+  },
+  {
+    id: "storage",
+    numeral: "04 / 05",
+    tagline: "DATA & MOBILITY",
+    title: "High-Speed Storage & Carry",
+    desc: "Solid-state storage encased in aerospace-grade anodized aluminum. High-bandwidth NVMe read/write speeds with universal USB-C and USB-A legacy versatility.",
+    tags: ["1050 MB/s NVMe", "Anodized Aluminum", "Shock Resistant", "512GB Capacity"],
+    featured: catalog[4],
+    count: catalog.filter((item) => item.category === "storage").length,
+  },
+  {
+    id: "accessories",
+    numeral: "05 / 05",
+    tagline: "PRECISION & TACTILE",
+    title: "Precision Input & Essentials",
+    desc: "Silent-click mechanical switches, ergonomic palm contours, and reinforced high-amperage cables designed for seamless everyday execution.",
+    tags: ["Silent Switches", "Ergonomic Sculpt", "Braided Sleeving", "Low-Latency Optical"],
+    featured: catalog[6],
+    count: catalog.filter((item) => item.category === "accessories").length,
+  },
+];
+
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
   | { kind: "login" }
@@ -149,6 +213,23 @@ export default function Storefront() {
       { price: number; features: number } | undefined
     >(),
     [briefDirty, setBriefDirty] = useState(false);
+  const [isDeviceMode, setIsDeviceMode] = useState(false);
+  const [heroPrompt, setHeroPrompt] = useState("");
+  const [sidebarTask, setSidebarTask] = useState("");
+
+  const handleHeroSubmit = useCallback((customText?: string) => {
+    const query = (customText || heroPrompt).trim();
+    if (!query) return;
+    setSidebarTask(query);
+    setHeroPrompt("");
+    setIsDeviceMode(true);
+    setTimeout(() => {
+      const shopEl = document.getElementById("shop");
+      if (shopEl) {
+        shopEl.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 50);
+  }, [heroPrompt]);
   const [summary, setSummary] = useState(
     "Tell us what you need. We'll keep compatibility, your budget, and your choices at the center.",
   );
@@ -255,6 +336,7 @@ export default function Storefront() {
         setQuestions(data.result.questions);
         setSummary(data.result.analysis.summary);
         setTab("discover");
+        setIsDeviceMode(true);
         setNotice(
           "Voice brief saved. Review device fit and cost before choosing a product.",
         );
@@ -288,6 +370,7 @@ export default function Storefront() {
         setQuestions(data.result.questions);
         setSummary(data.result.analysis.summary);
         setCatalogQuery("");
+        setIsDeviceMode(true);
         if (tab !== "discover") setTab("discover");
       } else if (
         data.intent.kind === "navigate" ||
@@ -323,6 +406,7 @@ export default function Storefront() {
       setSummary(result.analysis.summary);
       setQuestions(result.questions);
       setBriefDirty(false);
+      setIsDeviceMode(true);
       setNotice(
         "Your brief is saved. Older unpaid approvals require a fresh quote.",
       );
@@ -355,6 +439,7 @@ export default function Storefront() {
   function browseCollection(nextCategory: string) {
     setVisibleLimit(12);
     setCategory(nextCategory);
+    setIsDeviceMode(false);
     setBriefDirty(true);
     setCatalogQuery("");
     setProducts(
@@ -370,13 +455,17 @@ export default function Storefront() {
           }),
     );
     setSummary(
-      "Collection preview. Save your device, budget and preferences with Find my match before reviewing a purchase.",
+      nextCategory
+        ? `Viewing ${categoryTitles[nextCategory] || nextCategory}. Chat with DALE beside the products for voltage, fit, and warranty assistance.`
+        : "Collection preview. Save your device, budget and preferences with Find my match before reviewing a purchase.",
     );
-    document.getElementById("shop")?.scrollIntoView({
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ? "instant"
-        : "smooth",
-    });
+    setTimeout(() => {
+      document.getElementById("shop")?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "instant"
+          : "smooth",
+      });
+    }, 50);
   }
   async function upload(
     form: FormData,
@@ -469,32 +558,59 @@ export default function Storefront() {
             ),
           )}
         </nav>
-        {session ? (
-          <button
-            className="account"
-            onClick={() =>
-              void run(async () => {
-                await api("/api/session", undefined, "DELETE");
-                setSession(null);
-                setSupportDraft(null);
-                setTab("discover");
-              })
-            }
-          >
-            <span className="avatar">
-              {isBuyer ? "S" : session.actor.role[0].toUpperCase()}
-            </span>
-            {isBuyer ? "Shopper" : session.actor.role} · Sign out
-          </button>
-        ) : (
-          <button
-            className="button primary small"
-            onClick={startShopping}
-            disabled={restoring}
-          >
-            Start shopping <ArrowRight size={15} />
-          </button>
-        )}
+        <div className="header-actions">
+          <ShoppingBriefMenu
+            model={model}
+            models={models}
+            setModel={setModel}
+            deviceLabel={deviceLabel}
+            category={category}
+            setCategory={setCategory}
+            budget={budget}
+            setBudget={setBudget}
+            message={message}
+            setMessage={setMessage}
+            preference={preference}
+            setPreference={setPreference}
+            priority={priority}
+            setPriority={setPriority}
+            weights={weights}
+            setWeights={setWeights}
+            briefDirty={briefDirty}
+            setBriefDirty={setBriefDirty}
+            busy={busy}
+            restoring={restoring}
+            findProducts={findProducts}
+            onIdentify={() => setModal({ kind: "identify" })}
+            compatibleCount={visibleProducts.length}
+          />
+          {session ? (
+            <button
+              className="account"
+              onClick={() =>
+                void run(async () => {
+                  await api("/api/session", undefined, "DELETE");
+                  setSession(null);
+                  setSupportDraft(null);
+                  setTab("discover");
+                })
+              }
+            >
+              <span className="avatar">
+                {isBuyer ? "S" : session.actor.role[0].toUpperCase()}
+              </span>
+              {isBuyer ? "Shopper" : session.actor.role} · Sign out
+            </button>
+          ) : (
+            <button
+              className="button primary small"
+              onClick={startShopping}
+              disabled={restoring}
+            >
+              Start shopping <ArrowRight size={15} />
+            </button>
+          )}
+        </div>
       </header>
       <main id="main" className="main-content" inert={!!modal} tabIndex={-1}>
         {session?.demo && <DemoToolbar session={session} />}
@@ -527,7 +643,7 @@ export default function Storefront() {
           </div>
         )}
         {isBuyer &&
-          (tab === "discover" || tab === "support" || tab === "orders") && (
+          (tab === "support" || tab === "orders") && (
             <AgentSurface
               orderPage={tab === "orders"}
               inspection={session?.agentRuns.at(-1)?.orders !== undefined}
@@ -575,12 +691,196 @@ export default function Storefront() {
                   void choose(product, groupId);
                 }}
                 voice={
-                  tab === "discover" ||
-                  tab === "support" ||
-                  tab === "orders" ? (
+                  <VoiceCompanion
+                    pending={restoring || busy}
+                    key={`${pathname}:${session?.actor.userId || "visitor"}`}
+                    model={model}
+                    budget={Math.max(
+                      1,
+                      Math.min(
+                        100000,
+                        Math.round(Number(budget) * 100) || 8000,
+                      ),
+                    )}
+                    actorId={session?.actor.userId}
+                    onResult={applyVoice}
+                  />
+                }
+              />
+            </AgentSurface>
+          )}
+        {tab === "discover" && (
+          <>
+            <EditorialHero
+              onView={(product) => setModal({ kind: "product", product })}
+            />
+            <div className="hero-dale-bar" id="hero-dale">
+              <div className="hero-dale-inner">
+                <div className="hero-dale-badge">
+                  <Sparkles size={14} />
+                  <span>DALE · AI SHOPPING ADVOCATE</span>
+                </div>
+                <h2>Ask DALE anything. Live shopping guidance beside your catalog.</h2>
+                <p className="hero-dale-sub">
+                  Tell DALE your specs or device needs. DALE stays pinned beside the products so you can chat continuously while browsing.
+                </p>
+                <div className="hero-dale-input-wrap">
+                  <input
+                    type="text"
+                    placeholder="Ask DALE anything (e.g. Find me a quiet Bluetooth mouse under $30, or a compact 65W charger)..."
+                    value={heroPrompt}
+                    onChange={(e) => setHeroPrompt(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        handleHeroSubmit();
+                      }
+                    }}
+                  />
+                  <button
+                    type="button"
+                    className="button primary small"
+                    onClick={() => handleHeroSubmit()}
+                  >
+                    <span>Ask DALE</span> <ArrowRight size={15} />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <section
+              className="parallax-categories-section"
+              id="collections"
+              aria-labelledby="collection-title"
+            >
+              <div className="parallax-section-header">
+                <div className="eyebrow">CURATED COLLECTIONS</div>
+                <h2 id="collection-title">Objects for everyday life.</h2>
+                <p>
+                  Explore each category individually, or view all verified accessories tailored specifically to your device.
+                </p>
+              </div>
+              <div className="parallax-stack">
+                {parallaxCategories.map((col) => (
+                  <div
+                    key={col.id}
+                    className="parallax-category-card"
+                    onClick={() => browseCollection(col.id)}
+                  >
+                    <div className="parallax-card-content">
+                      <div className="parallax-card-badge">
+                        <span>{col.numeral}</span>
+                        <span className="dot">·</span>
+                        <span>{col.tagline}</span>
+                      </div>
+                      <h3 className="parallax-card-title">{col.title}</h3>
+                      <p className="parallax-card-desc">{col.desc}</p>
+                      <div className="parallax-card-tags">
+                        {col.tags.map((tag) => (
+                          <span key={tag} className="parallax-card-tag">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <button
+                        type="button"
+                        className="parallax-card-cta"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          browseCollection(col.id);
+                        }}
+                      >
+                        <span>Explore {col.title}</span>
+                        <ArrowRight size={15} />
+                      </button>
+                    </div>
+                    <div className="parallax-card-visual">
+                      <div className="art-frame">
+                        <ProductArt product={col.featured} />
+                      </div>
+                      <span className="parallax-count-pill">
+                        {col.count} certified products
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="device-fit-trigger-card">
+                <div>
+                  <h3>Filter across all categories for your device</h3>
+                  <p>
+                    Need all accessories matched to your {deviceLabel(model)}? View every compatible charger, dock, audio device, and cable together.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="device-fit-btn"
+                  onClick={() => {
+                    setIsDeviceMode(true);
+                    setCategory("");
+                    setTimeout(() => {
+                      document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" });
+                    }, 50);
+                  }}
+                >
+                  <span>View all for my device</span>
+                  <ArrowRight size={14} />
+                </button>
+              </div>
+            </section>
+            {(category !== "" || isDeviceMode) && (
+              <section
+                className="shopping-area"
+                id="shop"
+                aria-label="Personal shopping"
+              >
+              <aside className="dale-companion-aside" id="dale-chat">
+                <AgentWorkspace
+                  key={`sidebar:${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
+                  variant="sidebar"
+                  initialTask={sidebarTask}
+                  session={session}
+                  restoring={restoring || busy}
+                  model={model}
+                  budget={Math.max(
+                    1,
+                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                  )}
+                  briefDirty={briefDirty}
+                  onResult={applyAgent}
+                  onGroupCommit={(offer) => {
+                    void run(async () => {
+                      if (briefDirty)
+                        throw new Error(
+                          "Save your current needs before committing to a group.",
+                        );
+                      await action({
+                        action: "agent_group_commit",
+                        productId: offer.productId,
+                        briefVersion: offer.briefVersion,
+                        policyVersion: offer.policyVersion,
+                      });
+                      setNotice(
+                        "Group commitment recorded without payment. Another shopper is required before your discounted checkout.",
+                      );
+                    });
+                  }}
+                  onReview={(product, groupId) => {
+                    const latest = session?.agentRuns.at(-1);
+                    if (
+                      !latest?.briefVersion ||
+                      latest.briefVersion !== session?.brief?.version ||
+                      briefDirty
+                    ) {
+                      setError(
+                        "Your brief changed. Send a new agent task before reviewing this option.",
+                      );
+                      return;
+                    }
+                    void choose(product, groupId);
+                  }}
+                  voice={
                     <VoiceCompanion
                       pending={restoring || busy}
-                      key={`${pathname}:${session?.actor.userId || "visitor"}`}
+                      key={`sidebar:${pathname}:${session?.actor.userId || "visitor"}`}
                       model={model}
                       budget={Math.max(
                         1,
@@ -592,281 +892,105 @@ export default function Storefront() {
                       actorId={session?.actor.userId}
                       onResult={applyVoice}
                     />
-                  ) : null
-                }
-              />
-            </AgentSurface>
-          )}
-        {tab === "discover" && (
-          <>
-            <EditorialHero
-              onView={(product) => setModal({ kind: "product", product })}
-            />
-            <section
-              className="collection-section"
-              id="collections"
-              aria-labelledby="collection-title"
-            >
-              <div className="collection-heading">
-                <h2 id="collection-title">Objects for everyday life.</h2>
-                <p>Power. Connection. Sound. Storage. Everyday essentials.</p>
-              </div>
-              <div className="collection-grid">
-                {[
-                  {
-                    id: "chargers",
-                    title: "Power & charging",
-                    product: catalog[0],
-                  },
-                  {
-                    id: "docks",
-                    title: "Desk & connection",
-                    product: catalog[3],
-                  },
-                  { id: "audio", title: "Sound & focus", product: catalog[5] },
-                  {
-                    id: "storage",
-                    title: "Storage & carry",
-                    product: catalog[4],
-                  },
-                  {
-                    id: "accessories",
-                    title: "Everyday essentials",
-                    product: catalog[6],
-                  },
-                ].map((collection) => (
-                  <button
-                    key={collection.id}
-                    className="collection-tile"
-                    aria-pressed={category === collection.id}
-                    onClick={() => browseCollection(collection.id)}
-                  >
-                    <ProductArt product={collection.product} />
-                    <span className="collection-caption">
-                      <span>
-                        {collection.title}
-                        <small>
-                          {
-                            catalog.filter(
-                              (item) => item.category === collection.id,
-                            ).length
-                          }{" "}
-                          products
-                        </small>
-                      </span>
-                      <ArrowRight size={15} />
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </section>
-            <section
-              className="shopping-area"
-              id="shop"
-              aria-label="Personal shopping"
-            >
-              <aside className="brief-panel">
-                <div className="panel-title">
-                  <Sparkles size={19} />
-                  <h2>Your shopping brief</h2>
-                </div>
-                <p className="muted">
-                  Choose a demo device profile. Exact connectors and power
-                  requirements matter.
-                </p>
-                <label>
-                  Your device
-                  <select
-                    value={model}
-                    onChange={(e) => {
-                      setModel(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                  >
-                    {models.map((m) => (
-                      <option key={m} value={m}>
-                        {deviceLabel(m)}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <button
-                  className="button secondary small"
-                  onClick={() => setModal({ kind: "identify" })}
-                  disabled={restoring}
-                >
-                  Identify device from label
-                </button>
-                <label>
-                  Looking for
-                  <select
-                    value={category}
-                    onChange={(e) => {
-                      setCategory(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                  >
-                    {Object.entries({
-                      chargers: "Chargers",
-                      docks: "Docks & hubs",
-                      storage: "Storage",
-                      audio: "Headphones",
-                      accessories: "Accessories",
-                      "": "Everything",
-                    }).map(([value, label]) => (
-                      <option value={value} key={value}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label>
-                  Maximum budget, USD
-                  <div className="money-input">
-                    <span>$</span>
-                    <input
-                      type="number"
-                      min="1"
-                      max="1000"
-                      value={budget}
-                      onChange={(e) => {
-                        setBudget(e.target.value);
-                        setBriefDirty(true);
-                      }}
-                    />
-                  </div>
-                </label>
-                <label>
-                  Anything else?
-                  <textarea
-                    placeholder="A lighter charger for my commute…"
-                    value={message}
-                    onChange={(e) => {
-                      setMessage(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                    rows={3}
-                  />
-                </label>
-                <label>
-                  Feature to prioritize
-                  <input
-                    value={preference}
-                    maxLength={80}
-                    placeholder="65W, Ethernet, braided cable…"
-                    onChange={(e) => {
-                      setPreference(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                  />
-                </label>
-                <label>
-                  Rank by
-                  <select
-                    value={priority}
-                    onChange={(e) => {
-                      setPriority(e.target.value as "price" | "features");
-                      setBriefDirty(true);
-                    }}
-                  >
-                    <option value="price">
-                      Lowest price, then matching features
-                    </option>
-                    <option value="features">
-                      Matching features, then lowest price
-                    </option>
-                  </select>
-                </label>
-                <label>
-                  <span>Use explicit preference weights</span>
-                  <input
-                    type="checkbox"
-                    checked={!!weights}
-                    onChange={(event) => {
-                      setWeights(
-                        event.target.checked
-                          ? { price: 50, features: 50 }
-                          : undefined,
-                      );
-                      setBriefDirty(true);
-                    }}
-                  />
-                </label>
-                {weights && (
-                  <>
-                    <label>
-                      Price weight, {weights.price}%
-                      <input
-                        aria-label="Price preference weight"
-                        type="range"
-                        min="0"
-                        max="100"
-                        value={weights.price}
-                        onChange={(event) => {
-                          const price = Number(event.target.value);
-                          setWeights({ price, features: 100 - price });
-                          setBriefDirty(true);
-                        }}
-                      />
-                    </label>
-                    <p className="muted">
-                      Matching feature weight: {weights.features}%. Device fit
-                      and budget remain required before ranking.
-                    </p>
-                  </>
-                )}
-                {briefDirty && (
-                  <p className="muted" role="status">
-                    Brief changed. Find my match saves it and replaces older
-                    unpaid approvals.
-                  </p>
-                )}
-                <button
-                  className="button primary full"
-                  disabled={busy}
-                  onClick={() => void findProducts()}
-                >
-                  {busy ? (
-                    <LoaderCircle className="spin" size={17} />
-                  ) : (
-                    <Search size={17} />
-                  )}{" "}
-                  Find my match
-                </button>
-                <div className="brief-foot">
-                  <ShieldCheck size={16} />
-                  <span>Paid placement never improves organic ranking.</span>
-                </div>
+                  }
+                />
               </aside>
               <div className="results">
                 <div className="section-heading">
                   <div>
-                    <div className="eyebrow">CURATED FOR YOUR NEEDS</div>
-                    <h2>Selected for you.</h2>
+                    <button
+                      type="button"
+                      className="back-to-categories-btn"
+                      onClick={() => {
+                        setCategory("");
+                        setIsDeviceMode(false);
+                        setTimeout(() => {
+                          document.getElementById("collections")?.scrollIntoView({ behavior: "smooth" });
+                        }, 50);
+                      }}
+                    >
+                      <ArrowLeft size={13} /> Back to all categories
+                    </button>
+                    <div className="eyebrow">
+                      {isDeviceMode
+                        ? "VERIFIED DEVICE ECOSYSTEM"
+                        : `CURATED COLLECTION · ${category ? category.toUpperCase() : "ALL OBJECTS"}`}
+                    </div>
+                    <h2>
+                      {isDeviceMode
+                        ? `All essentials for ${deviceLabel(model)}`
+                        : (categoryTitles[category] || "Selected for you")}
+                    </h2>
+                    <p style={{ fontSize: "14px", color: "#a1a1a6", margin: "4px 0 0" }}>
+                      {isDeviceMode
+                        ? `Showing all chargers, docks, audio, cables and storage certified compatible with your ${deviceLabel(model)}.`
+                        : `Showing certified models tested for voltage, thermal management, and connection fit.`}
+                    </p>
                   </div>
-                  <span className="muted">
-                    {visibleProducts.length}{" "}
-                    {briefDirty ? "preview options" : "compatible options"}
-                  </span>
+                  <div className="catalog-heading-controls">
+                    <ShoppingBriefMenu
+                      model={model}
+                      models={models}
+                      setModel={setModel}
+                      deviceLabel={deviceLabel}
+                      category={category}
+                      setCategory={setCategory}
+                      budget={budget}
+                      setBudget={setBudget}
+                      message={message}
+                      setMessage={setMessage}
+                      preference={preference}
+                      setPreference={setPreference}
+                      priority={priority}
+                      setPriority={setPriority}
+                      weights={weights}
+                      setWeights={setWeights}
+                      briefDirty={briefDirty}
+                      setBriefDirty={setBriefDirty}
+                      busy={busy}
+                      restoring={restoring}
+                      findProducts={findProducts}
+                      onIdentify={() => setModal({ kind: "identify" })}
+                      compatibleCount={visibleProducts.length}
+                    />
+                    <span className="muted">
+                      {visibleProducts.length}{" "}
+                      {briefDirty ? "preview options" : "compatible options"}
+                    </span>
+                  </div>
                 </div>
                 <div
-                  className="category-index"
+                  className="catalog-category-pills"
                   aria-label="Filter product category"
                 >
-                  {[
-                    ["", "All objects"],
-                    ["chargers", "Chargers"],
-                    ["docks", "Docks & hubs"],
-                    ["audio", "Headphones"],
-                    ["storage", "Storage"],
-                    ["accessories", "Accessories"],
-                  ].map(([id, label]) => (
+                  <button
+                    type="button"
+                    className={`cat-pill ${isDeviceMode && category === "" ? "active" : ""}`}
+                    onClick={() => {
+                      setIsDeviceMode(true);
+                      setCategory("");
+                      setProducts(
+                        searchCatalog({
+                          model,
+                          category: "",
+                          budget: Math.round(Number(budget) * 100),
+                          preference,
+                          priority,
+                          weights,
+                        }),
+                      );
+                    }}
+                  >
+                    All for my device ({catalog.filter((p) => p.compatibleModels.includes(model)).length})
+                  </button>
+                  {parallaxCategories.map((col) => (
                     <button
-                      key={id}
-                      aria-pressed={category === id}
-                      onClick={() => browseCollection(id)}
+                      key={col.id}
+                      type="button"
+                      className={`cat-pill ${category === col.id ? "active" : ""}`}
+                      onClick={() => browseCollection(col.id)}
                     >
-                      {label}
+                      {col.title} ({catalog.filter((p) => p.category === col.id).length})
                     </button>
                   ))}
                 </div>
@@ -1091,6 +1215,7 @@ export default function Storefront() {
                 )}
               </div>
             </section>
+            )}
             <section className="trust-row">
               <div>
                 <ShieldCheck />
@@ -1230,6 +1355,26 @@ export default function Storefront() {
                 </details>
               </div>
             </section>
+            <div className="mobile-dale-dock" aria-label="Mobile DALE Chat Dock">
+              <button
+                type="button"
+                className="mobile-dale-dock-btn"
+                onClick={() => {
+                  const el = document.getElementById("dale-chat");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                    const input = el.querySelector("textarea");
+                    input?.focus();
+                  }
+                }}
+              >
+                <span className="live-status-pulse" />
+                <span className="mobile-dale-text">
+                  <strong>Chat with DALE</strong> · Live advice beside products
+                </span>
+                <ArrowRight size={14} />
+              </button>
+            </div>
           </>
         )}
         {tab === "groups" && (

@@ -5,6 +5,7 @@ import "@fontsource/dm-sans/600.css";
 import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
 import { MotionProvider } from "@/components/motion-provider";
+import { LuxuryCursor } from "@/components/luxury-cursor";
 import "lenis/dist/lenis.css";
 import "./fonts.css";
 import "./globals.css";
@@ -24,7 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="auto">
       <body>
-        <MotionProvider>{children}</MotionProvider>
+        <MotionProvider>
+          {children}
+          <LuxuryCursor />
+        </MotionProvider>
       </body>
     </html>
   );
