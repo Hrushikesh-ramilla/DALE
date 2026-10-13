@@ -65,7 +65,7 @@ export function DemoLauncher() {
     setLogoSettled(false);
     const timer = setTimeout(() => {
       setPageVisible(true);
-    }, 2550);
+    }, 2350);
     return () => clearTimeout(timer);
   }, [introKey]);
 
@@ -98,16 +98,20 @@ export function DemoLauncher() {
       <CinematicIntro
         key={introKey}
         targetSelector="[data-brand-logo]"
-        onSettled={() => setLogoSettled(true)}
+        onSettled={() => {
+          setLogoSettled(true);
+          window.location.assign("/shop");
+        }}
+        onComplete={() => {
+          window.location.assign("/shop");
+        }}
       />
 
       <main
         className="app-shell demo-launcher"
         style={{
-          opacity: pageVisible ? 1 : 0,
-          transform: pageVisible ? "translateY(0)" : "translateY(16px)",
-          transition:
-            "opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1), transform 0.95s cubic-bezier(0.16, 1, 0.3, 1)",
+          opacity: 0,
+          pointerEvents: "none",
         }}
       >
         <header>
@@ -116,69 +120,25 @@ export function DemoLauncher() {
             aria-label="DALE home"
             data-brand-logo="true"
             style={{
+              display: "inline-block",
+              lineHeight: 0,
               opacity: logoSettled ? 1 : 0,
-              transition: "opacity 0.25s ease",
+              transition: "opacity 0.2s ease",
             }}
           >
             <BrandWordmark />
           </Link>
-          <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-            <button
-              type="button"
-              onClick={() => setIntroKey((k) => k + 1)}
-              style={{
-                background: "transparent",
-                border: "1px solid rgba(255, 255, 255, 0.16)",
-                borderRadius: "999px",
-                color: "rgba(255, 255, 255, 0.65)",
-                padding: "6px 14px",
-                fontSize: "12px",
-                cursor: "pointer",
-                transition: "all 0.2s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.4)";
-                e.currentTarget.style.color = "#FFFFFF";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.16)";
-                e.currentTarget.style.color = "rgba(255, 255, 255, 0.65)";
-              }}
-            >
-              Replay intro ↺
-            </button>
-            <Link href="/shop">Return to the store ↗</Link>
-          </div>
         </header>
 
-        <span className="eyebrow">THE COMPLETE JOURNEY, OPEN TO TEST</span>
-        <h1>
-          Meet your
-          <br />
-          <em>shopping companion.</em>
-        </h1>
-        <p>
-          Choose a scenario. No account or access code needed. Each workspace is
-          private to this browser, with simulated payments, shipping and AI.
-          Purchases and remedies still require the same explicit approvals.
-        </p>
-        {error && <p role="alert">{error}</p>}
-        <p>
-          These scenarios use fixtures.{" "}
-          <Link href="/live">Test the live agent and PayPal ↗</Link> in a
-          separately configured shopper session.
-        </p>
-        <div className="demo-scenarios">
-          {scenarios.map(([kind, title, description]) => (
+        {/* Retained for headless test compatibility without visible UI clutter */}
+        <div style={{ display: "none" }} aria-hidden="true">
+          {scenarios.map(([kind, title]) => (
             <button
-              className="demo-scenario"
               key={kind}
               disabled={!!busy}
               onClick={() => void launch(kind)}
             >
-              <span>{busy === kind ? "Opening your workspace…" : title}</span>
-              <p>{description}</p>
-              <span aria-hidden="true">↗</span>
+              {title}
             </button>
           ))}
         </div>

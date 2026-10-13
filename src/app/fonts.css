@@ -1,0 +1,73 @@
+/* Boska — Luxury Editorial Display Serif (Designed by Barbara Bigosinska / Indian Type Foundry) */
+@font-face {
+  font-family: 'Boska';
+  src: url('/fonts/boska/Boska-Variable.woff2') format('woff2');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boska';
+  src: url('/fonts/boska/Boska-VariableItalic.woff2') format('woff2');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Boska';
+  src: url('/fonts/boska/Boska-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boska';
+  src: url('/fonts/boska/Boska-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boska';
+  src: url('/fonts/boska/Boska-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boska';
+  src: url('/fonts/boska/Boska-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Britney — Contemporary Display Typeface (Designed by Diana Ovezea & Sabina Chipara) */
+@font-face {
+  font-family: 'Britney';
+  src: url('/fonts/britney/Britney-Variable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Britney';
+  src: url('/fonts/britney/Britney-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Britney';
+  src: url('/fonts/britney/Britney-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
