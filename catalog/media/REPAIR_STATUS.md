@@ -7,7 +7,8 @@ Updated 2026-10-13. This is an incomplete repair, not a catalog certification.
 - Audited 5,666 manifest records and 5,936 existing local assets.
 - Found all manifest image provenance overwritten with local paths.
 - Restored original image source metadata for 107 records across nine existing v1 manifests without changing product IDs, prices, stock, or other facts.
-- Recovered 136 image candidates; approved 112 after source and visual review. Approval does not certify every specification on the associated record.
+- Recovered 165 image candidates; approved 141 after source and visual review. Approval does not certify every specification on the associated record.
+- The additional 29 fragrances use manufacturer product handles, exact bottle volumes and SKU-bound photograph associations. Their evidence is retained in `evidence/fragrance-feed-variants-2026-10-13.json`.
 - Approved images are content-addressed WebP, at most 960 pixels per dimension and 140,000 bytes, with source URLs and hashes recorded in `verified-product-images.json`.
 - Storefront rendering and public catalog API responses reject unapproved images, identity/variant mismatches and unsafe asset references. Failed photographs never fall back to another product.
 
@@ -23,7 +24,9 @@ Do not execute the legacy `generate-all-missing-packshots.ts` script: it draws g
 
 Run `node scripts/audit-product-media.mjs` for local asset inventory and contact sheets. Run `node scripts/collect-exact-photo-candidates.mjs` for resumable bounded source discovery, then `node scripts/prepare-exact-photo-candidates.mjs` to prepare unapproved manufacturer candidates. These scripts do not publish records or automatically approve candidates.
 
-Run `npx vitest run tests/verified-product-image.test.ts tests/verified-product-image-assets.test.ts tests/product-media-presentation.test.ts` for the image gate and asset integrity. Type checking passed before the final API projection change and must be rerun afterward.
+Run `npx vitest run tests/verified-product-image.test.ts tests/verified-product-image-assets.test.ts tests/product-media-presentation.test.ts` for the image gate and asset integrity. All five tests passed after the latest photograph batch; type checking also passed after the API projection change. The local Layton detail API returned HTTP 200 and its verified image and manufacturer source.
+
+Run `node scripts/report-product-media-repair.mjs` for the full per-record JSON/CSV ledger. Current scope is 5,666 records, 141 approved images and 5,525 pending. No catalog records or original assets were deleted. Missing images remain incomplete work; hiding them does not count as repairing them. Candidate preparation checkpoints the registry atomically after each image to preserve progress if interrupted.
 
 The broader regression run reported 14 failed, 533 passed and 6 skipped tests. Existing expanded-catalog count assumptions, source mismatches, bootstrap timeouts and legacy heuristic-image expectations remain unresolved. Full lint also contains errors in the crashed agent's existing changes. This checkout is not ready for release.
 

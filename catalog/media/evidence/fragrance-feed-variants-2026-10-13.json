@@ -1,0 +1,360 @@
+{
+  "observedAt": "2026-10-13",
+  "scope": "Manufacturer SKU-to-photograph associations; visual review required, not certification of every product fact",
+  "candidates": [
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-LAYTON",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/LAYTON-PERFUME-125-PACK1-1X1_CENTERED_3_2f1f594a-44ab-4241-b739-4eefd3086b09.png?v=1758874428"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/layton",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM1600PV",
+      "manufacturerProductId": 6743044784322,
+      "manufacturerVariantId": 40036846928066,
+      "volumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-HEROD",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-125-PACK1-1X1_CENTERED_3e70cfc5-b970-4b93-b7dc-9142dd852943.png?v=1758885289"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/herod",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM0700PV",
+      "manufacturerProductId": 6743044554946,
+      "manufacturerVariantId": 40036845093058,
+      "volumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-PEGASUS",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-125-PACK1-1X1_CENTERED_d3297627-c8b1-4b62-b09f-d14238ee595d.png?v=1758884206"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/pegasus",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM0600PV",
+      "manufacturerProductId": 6743045472450,
+      "manufacturerVariantId": 40036850401474,
+      "volumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-CARLISLE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/CARLISLE-PERFUME-125-PACK1-1X1-NO_SHADOW_CENTERED.png?v=1758872209"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/carlisle",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM1700PV",
+      "manufacturerProductId": 6743043211458,
+      "manufacturerVariantId": 40036835786946,
+      "volumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-GREENLEY",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-125-PACK1-1X1_CENTERED_11a7cc98-7117-44dd-9963-d896c74970dd.png?v=1758885424"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/greenley",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM2500PV",
+      "manufacturerProductId": 6743044325570,
+      "manufacturerVariantId": 40036844273858,
+      "volumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-SEDLEY",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-125-PACK1-1X1_CENTERED_fc558275-a756-43b7-a5ca-c1076cb6f98b.png?v=1758896287"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/sedley",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM2200PV",
+      "manufacturerProductId": 6743045865666,
+      "manufacturerVariantId": 40036852859074,
+      "volumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-DELINA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/DELINA-PERFUME-75-PACK1-1X1_CENTERED_1.png?v=1758898607"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/delina",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM0006PV",
+      "manufacturerProductId": 6743043309762,
+      "manufacturerVariantId": 40036836081858,
+      "volumeMl": 75
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-HALTANE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTHANE-PERFUME-125-PACK1-1X1_CENTERED_1_3f3f50ac-61c9-43f1-a3fe-39108f25b209.png?v=1758873094"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/haltane",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM2600PV",
+      "manufacturerProductId": 7379435487426,
+      "manufacturerVariantId": 41955993649346,
+      "volumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-ALTHAIR",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-125-PACK1-1X1_CENTERED_1_04b177cf-0bde-4900-8332-7f56ec21ad6f.png?v=1758873962"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/althair",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM2900PV",
+      "manufacturerProductId": 8543827394907,
+      "manufacturerVariantId": 47052878381403,
+      "volumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-VALAYA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/VALAYA-PERFUME-75-PACK1-1X1_CENTERED_1_4d701a3c-bf47-4f28-8872-c018a0200cf9.png?v=1758898206"
+      ],
+      "sourcePage": "https://us.parfums-de-marly.com/products/valaya",
+      "sourceHash": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+      "sku": "NPM0114PV",
+      "manufacturerProductId": 7600831955138,
+      "manufacturerVariantId": 42840987173058,
+      "volumeMl": 75
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-INTERLUDE-MAN",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/INTERLUDE_MAN_100_ML.jpg?v=1758794506"
+      ],
+      "sourcePage": "https://amouage.com/products/interlude-man-100ml",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41019",
+      "manufacturerProductId": 8897004044580,
+      "manufacturerVariantId": 47515478589732,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-REFLECTION-MAN",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/REFLECTION_100_ML.jpg?v=1758803038"
+      ],
+      "sourcePage": "https://amouage.com/products/reflection-man-100ml",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41005",
+      "manufacturerProductId": 8897002799396,
+      "manufacturerVariantId": 47515451130148,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-JUBILATION-XXV-MAN",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/JUBILATION_MAN_100_ML.jpg?v=1759211804"
+      ],
+      "sourcePage": "https://amouage.com/products/jubilation-xxv-man",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41007",
+      "manufacturerProductId": 8897004667172,
+      "manufacturerVariantId": 47564197789988,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-GUIDANCE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GUIDANCE_100_ML.jpg?v=1758540475"
+      ],
+      "sourcePage": "https://amouage.com/products/100ml-guidance",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41045",
+      "manufacturerProductId": 8897012072740,
+      "manufacturerVariantId": 47515458601252,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-EPIC-MAN",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/EPIC_MAN_100ML.jpg?v=1758788909"
+      ],
+      "sourcePage": "https://amouage.com/products/epic-man-100ml",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41011",
+      "manufacturerProductId": 8897003356452,
+      "manufacturerVariantId": 47564134580516,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-HONOUR-MAN",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_MAN.jpg?v=1758790986"
+      ],
+      "sourcePage": "https://amouage.com/products/honour-man",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41015",
+      "manufacturerProductId": 8896982679844,
+      "manufacturerVariantId": 47496344043812,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-DIA-MAN",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/DIA_MAN_100_ML.jpg?v=1758788196"
+      ],
+      "sourcePage": "https://amouage.com/products/dia-man",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41003",
+      "manufacturerProductId": 8897004208420,
+      "manufacturerVariantId": 47553946452260,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-GOLD-MAN",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_MAN_100_ML.jpg?v=1758789828"
+      ],
+      "sourcePage": "https://amouage.com/products/gold-man",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41017",
+      "manufacturerProductId": 8897006666020,
+      "manufacturerVariantId": 47564213977380,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-ENCLAVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/ENCLAVE_100_ML_MAN.jpg?v=1758872638"
+      ],
+      "sourcePage": "https://amouage.com/products/enclave",
+      "sourceHash": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "sku": "41129",
+      "manufacturerProductId": 8897005748516,
+      "manufacturerVariantId": 47565308363044,
+      "volumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-OUD-FOR-GREATNESS",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_MasterProductPackshot_1cc0a9e3-e99c-4c2d-814c-a1f46c9b4584.png?v=1763732592"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/oud-for-greatness",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINBG0001SP",
+      "manufacturerProductId": 7561652928740,
+      "manufacturerVariantId": 42512741597412,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-SIDE-EFFECT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/SIDEEFFECT_MasterProductPackshot_8713eda8-0884-482b-a35c-a88fbbaf7fba.png?v=1763732676"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/side-effect",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINCB0001SP",
+      "manufacturerProductId": 7561651060964,
+      "manufacturerVariantId": 42512739795172,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-ATOMIC-ROSE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_MasterProductPackshot_0_a9874dd8-6459-4d30-b525-44839e2c9ad6.png?v=1763734440"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/atomic-rose",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINCB0004SP",
+      "manufacturerProductId": 7561652109540,
+      "manufacturerVariantId": 42512740450532,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-MUSK-THERAPY",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MasterProductPackshot_MuskTherapy_Desktop_2c4ae589-3c2a-4d9c-b25b-1666cbf80bf3.png?v=1763732624"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/musk-therapy",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINLI0002SP",
+      "manufacturerProductId": 7561652469988,
+      "manufacturerVariantId": 42512741105892,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-REHAB",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/REHAB_MasterProductPackshot_077032ad-052d-4f8a-aeba-bc213bf5bedd.png?v=1761284648"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/rehab",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINLI0001SP",
+      "manufacturerProductId": 7561652666596,
+      "manufacturerVariantId": 42512741335268,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-PSYCHEDELIC-LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PSYCHEDELIC_LOVE_MasterProductPackshot_524708b6-4956-40df-8411-83784853ccc5.png?v=1761284526"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/psychedelic-love",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINCB0003SP",
+      "manufacturerProductId": 7561651880164,
+      "manufacturerVariantId": 42512740188388,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-PARAGON",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PARAGON_MasterProductPackshot_15e005e8-6d8b-4ef1-9b8c-3937dfc94315.png?v=1761284622"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/paragon",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINLI0003SP",
+      "manufacturerProductId": 7817115107556,
+      "manufacturerVariantId": 43463350354148,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-NARCOTIC-DELIGHT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_MasterProductPackshot_25a2d42b-3dd0-4bc9-81f0-ce6d7cddb4cc.png?v=1761284609"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/narcotic-delight",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINCB0005SP",
+      "manufacturerProductId": 8674987082074,
+      "manufacturerVariantId": 47455704088922,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-BLESSED-BARAKA",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/BLESSEDBARAKA_MasterProductPackshot_BlessedBaraka_63438446-6603-4a72-a86f-6ceca29e8a5c.png?v=1761284575"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/blessed-baraka",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "NINAB0002SP",
+      "manufacturerProductId": 7561650536676,
+      "manufacturerVariantId": 42512739008740,
+      "volumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-INITIO-INITIO-OUD-FOR-HAPPINESS",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORHAPPINESS_MasterProductPackshot_517cbedc-e6f8-40c6-bca6-447066de9d95.png?v=1761284632"
+      ],
+      "sourcePage": "https://us.initioparfums.com/products/oud-for-happiness",
+      "sourceHash": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+      "sku": "INBG0002SP",
+      "manufacturerProductId": 7561653190884,
+      "manufacturerVariantId": 42512742088932,
+      "volumeMl": 90
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-ROYAL-TOBACCO",
+      "reason": "exact source and model not uniquely matched"
+    }
+  ]
+}
