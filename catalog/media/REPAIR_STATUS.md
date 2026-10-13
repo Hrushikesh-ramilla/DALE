@@ -14,6 +14,16 @@ Updated 2026-10-13. This is an incomplete repair, not a catalog certification.
 
 ## Outstanding work
 
+The first inspection pass now covers every original record:
+
+- 4,607 originals exactly reproduce the legacy generic SVG drawing generator and are rejected as product photographs.
+- 993 other original images were visually inspected in 42 labeled contact sheets: 246 have concrete visual mismatches and 747 require further exact model/variant/source verification.
+- 66 other originals already have reviewed replacements.
+
+These sets total 5,666 records. The deterministic classification and per-record hashes are retained in `evidence/original-image-classification-2026-10-13.json`; manual decisions, reasons and sheet positions are retained in `original-image-visual-reviews.json`. The pure drawing functions are archived as forensic evidence, not used to produce storefront imagery. A nonmatching reconstruction or plausible thumbnail never automatically grants approval. The current 141 approved replacements include some records whose originals were generated drawings; do not add 141 to the inspection sets as if they were different records.
+
+Six focused verification tests pass, including a completeness check requiring an exact generated-image rejection, explicit manual review, or approved replacement for every original record. This validates coverage and asset integrity, not the completion of the remaining replacement work.
+
 The bounded source recovery pass inspected 5,529 grouped URLs. It recorded 2,543 HTTP 404 responses, 1,345 pages without exact-model image evidence and 1,010 URLs deferred after their origins repeatedly denied access. Other responses include redirects, removed pages and network failures. A blocked or dead URL alone does not prove a product is fictitious.
 
 User authorization now includes correcting product records. Remaining work must use manufacturer-identified products and source evidence. Correct facts on the same physical SKU through immutable revisions; retire unidentifiable offers and create replacements with new IDs rather than substituting a different item under an ordered ID. Preserve order snapshots, approvals, payments, stock history and existing private configuration.

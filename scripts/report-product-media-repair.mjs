@@ -23,8 +23,30 @@ const sourceResults = await Promise.all(
 const sourceByProduct = new Map(
   sourceResults.flatMap((r) => (r.products || []).map((p) => [p.id, r.status])),
 );
+let classification = { records: [] };
+try {
+  classification = JSON.parse(
+    await readFile(root + "/original-image-classification.json", "utf8"),
+  );
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
+const originalByProduct = new Map(classification.records.map((r) => [r.id, r]));
+let visualReviews = { records: [] };
+try {
+  visualReviews = JSON.parse(
+    await readFile("catalog/media/original-image-visual-reviews.json", "utf8"),
+  );
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
+const visualByProduct = new Map(visualReviews.records.map((r) => [r.id, r]));
 const records = products.map((p) => {
   const image = registry.entries[p.id];
+  const original = originalByProduct.get(p.id);
+  const visual = visualByProduct.get(p.id);
+  const currentVisual =
+    visual?.originalSha256 === original?.originalSha256 ? visual : undefined;
   return {
     id: p.id,
     name: p.name,
@@ -32,6 +54,10 @@ const records = products.map((p) => {
     leafType: p.leafType || p.category,
     sourcePage: p.source,
     sourceStatus: sourceByProduct.get(p.id) || "not-in-source-recovery-pass",
+    originalImage: original?.originalImage || "",
+    originalImageReview:
+      currentVisual?.status || original?.status || "not-inspected",
+    originalImageReviewReason: currentVisual?.reason || "",
     imageStatus: image?.verified
       ? "approved"
       : image
@@ -65,6 +91,9 @@ const keys = [
   "leafType",
   "sourcePage",
   "sourceStatus",
+  "originalImage",
+  "originalImageReview",
+  "originalImageReviewReason",
   "imageStatus",
   "reviewedImage",
   "reviewMethod",
