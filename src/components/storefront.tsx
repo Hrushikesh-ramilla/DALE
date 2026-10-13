@@ -1,4 +1,9 @@
 "use client";
+import { RetailFilters } from "./retail-filters";
+import { DepartmentBrowser } from "./department-browser";
+import { CatalogEvidence } from "./catalog-evidence";
+import { categoryTitles as titles, categoryIds, departments, isRetailCategory, lifestyleProfile } from "@/domain/departments";
+import { CustomerEntry } from "./customer-entry";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
@@ -10,7 +15,7 @@ import {
   Copy,
   CreditCard,
   HeartHandshake,
-  LoaderCircle,
+  Lock,
   MessageSquare,
   Package,
   Search,
@@ -22,10 +27,13 @@ import {
 } from "lucide-react";
 import {
   catalog,
+  publicCatalog,
   knownModels as models,
   deviceLabel,
   deviceText,
   productById,
+  productFits,
+  type RetailRequirements,
   searchCatalog,
   type Product,
 } from "@/domain/catalog";
@@ -49,66 +57,14 @@ import { CinematicIntro } from "./cinematic-intro";
 import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 
-const categoryTitles: Record<string, string> = {
-  chargers: "Power & Charging",
-  docks: "Desk & Connectivity",
-  audio: "Sound & Acoustics",
-  storage: "High-Speed Storage & Carry",
-  accessories: "Precision Input & Essentials",
-};
-
-const parallaxCategories = [
-  {
-    id: "chargers",
-    numeral: "01 / 05",
-    tagline: "POWER & ENERGY",
-    title: "Power & Charging",
-    desc: "Precision gallium nitride (GaN) architecture engineered for thermal efficiency, ultra-compact form factors, and verified fast-charging protocols across USB-C PD and legacy profiles.",
-    tags: ["65W–100W GaN", "USB-C PD 3.0", "Thermal Guard", "Braided Cabling"],
-    featured: catalog[0],
-    count: catalog.filter((item) => item.category === "chargers").length,
-  },
-  {
-    id: "docks",
-    numeral: "02 / 05",
-    tagline: "CONNECTIVITY & EXPANSION",
-    title: "Desk & Connectivity",
-    desc: "Transform single-port setups into unified multi-display workstations. Certified DisplayPort alt-mode, 4K HDMI streaming, gigabit Ethernet, and high-wattage power passthrough.",
-    tags: ["4K HDMI", "DisplayPort Alt-Mode", "60W Passthrough", "Multi-Port Hub"],
-    featured: catalog[3],
-    count: catalog.filter((item) => item.category === "docks").length,
-  },
-  {
-    id: "audio",
-    numeral: "03 / 05",
-    tagline: "ACOUSTICS & FOCUS",
-    title: "Sound & Acoustics",
-    desc: "Acoustic-sealed wireless audio crafted for deep focus, travel, and clean voice clarity. Low-latency transmission with USB-C fast recharging and fold-flat portability.",
-    tags: ["High-Fidelity Audio", "Active Isolation", "USB-C Fast Recharge", "Fold-Flat"],
-    featured: catalog[5],
-    count: catalog.filter((item) => item.category === "audio").length,
-  },
-  {
-    id: "storage",
-    numeral: "04 / 05",
-    tagline: "DATA & MOBILITY",
-    title: "High-Speed Storage & Carry",
-    desc: "Solid-state storage encased in aerospace-grade anodized aluminum. High-bandwidth NVMe read/write speeds with universal USB-C and USB-A legacy versatility.",
-    tags: ["1050 MB/s NVMe", "Anodized Aluminum", "Shock Resistant", "512GB Capacity"],
-    featured: catalog[4],
-    count: catalog.filter((item) => item.category === "storage").length,
-  },
-  {
-    id: "accessories",
-    numeral: "05 / 05",
-    tagline: "PRECISION & TACTILE",
-    title: "Precision Input & Essentials",
-    desc: "Silent-click mechanical switches, ergonomic palm contours, and reinforced high-amperage cables designed for seamless everyday execution.",
-    tags: ["Silent Switches", "Ergonomic Sculpt", "Braided Sleeving", "Low-Latency Optical"],
-    featured: catalog[6],
-    count: catalog.filter((item) => item.category === "accessories").length,
-  },
-];
+const categoryTitles: Record<string, string> = titles;
+const parallaxCategories = departments.map((department, index) => ({
+  id: department.id, numeral: `0${index + 1} / 06`, tagline: "SHOP WITH DALE",
+  title: department.title, desc: department.description,
+  tags: department.id === "electronics" ? ["Device requirements", "Protected approval"] : ["Exact variants", "Attribute comparison", "Group savings"],
+  featured: publicCatalog.find((product) => department.categories.some((category) => category === product.category))!,
+  count: publicCatalog.filter((product) => department.categories.some((category) => category === product.category)).length,
+}));
 
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
@@ -201,7 +157,7 @@ export default function Storefront() {
   const [showIntro, setShowIntro] = useState(true);
   const [logoSettled, setLogoSettled] = useState(false);
   const [products, setProducts] = useState<Product[]>(
-    searchCatalog({ model: "Atlas 14", budget: 8000 }),
+    publicCatalog,
   );
   const [model, setModel] = useState("Atlas 14"),
     [category, setCategory] = useState(""),
@@ -214,6 +170,7 @@ export default function Storefront() {
     >(),
     [briefDirty, setBriefDirty] = useState(false);
   const [isDeviceMode, setIsDeviceMode] = useState(false);
+  const [departmentId, setDepartmentId] = useState("");
   const [heroPrompt, setHeroPrompt] = useState("");
   const [sidebarTask, setSidebarTask] = useState("");
 
@@ -242,6 +199,7 @@ export default function Storefront() {
     [workspaceId, setWorkspaceId] = useState(""),
     [invite, setInvite] = useState("");
   const [questions, setQuestions] = useState<string[]>([]);
+  const [requirements, setRequirements] = useState<RetailRequirements>({});
   const [catalogQuery, setCatalogQuery] = useState("");
   const [visibleLimit, setVisibleLimit] = useState(12);
   const visibleProducts = products.filter((product) =>
@@ -262,12 +220,13 @@ export default function Storefront() {
       const input = data.brief.input;
       setModel(input.model);
       setCategory(input.category);
+      setRequirements(input.requirements || {});
       setBudget(String(input.budget / 100));
       setMessage(input.message);
       setPreference(input.preference);
       setPriority(input.priority);
       setWeights(input.weights);
-      setProducts(data.brief.clarificationRequired ? [] : searchCatalog(input));
+      setProducts(data.brief.clarificationRequired ? [] : searchCatalog(input, data.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog));
       setQuestions(clarifyBrief(input));
       if (data.conversation.length) setSummary(data.conversation.at(-1)!.text);
       setBriefDirty(false);
@@ -294,6 +253,32 @@ export default function Storefront() {
       active = false;
     };
   }, [restoreSession]);
+  const pollingUser = session?.actor.userId;
+  const pollingDemo = Boolean(session?.demo);
+  useEffect(() => {
+    if (!pollingUser || pollingDemo) return;
+    let stopped = false,
+      active = false;
+    const timer = window.setInterval(async () => {
+      if (stopped || active || busy || document.hidden) return;
+      active = true;
+      try {
+        const data = await api<Session>("/api/session");
+        if (!stopped)
+          setSession((previous) =>
+            previous?.actor.userId === data.actor.userId ? data : previous,
+          );
+      } catch {
+        /* Retain the screen during transient connectivity loss. */
+      } finally {
+        active = false;
+      }
+    }, 3000);
+    return () => {
+      stopped = true;
+      window.clearInterval(timer);
+    };
+  }, [pollingUser, pollingDemo, busy]);
   const run = useCallback(async (fn: () => Promise<void>) => {
     setBusy(true);
     setError("");
@@ -399,6 +384,7 @@ export default function Storefront() {
         priority,
         weights,
         confirmConstraints,
+        requirements: model === lifestyleProfile || isRetailCategory(category) ? requirements : undefined,
       });
       setProducts(result.products);
       setVisibleLimit(12);
@@ -436,27 +422,39 @@ export default function Storefront() {
       setModal({ kind: "quote", quote });
     });
   }
-  function browseCollection(nextCategory: string) {
+  function openDepartment(id: string) {
+    setDepartmentId(id);
+    setCategory("");
+    setProducts([]);
+    setIsDeviceMode(false);
+    setRequirements({});
+    setBriefDirty(true);
+    if (!session?.fixtureWorkspace) setModel(lifestyleProfile);
+    setTimeout(() => document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" }), 50);
+  }
+  function browseCollection(nextCategory: string, productType?: string) {
     setVisibleLimit(12);
     setCategory(nextCategory);
+    const nextModel = session?.fixtureWorkspace && !isRetailCategory(nextCategory) ? model === lifestyleProfile ? "Atlas 14" : model : lifestyleProfile;
+    setModel(nextModel);
+    setRequirements(productType ? { productType } : {});
+    setQuestions([]);
     setIsDeviceMode(false);
     setBriefDirty(true);
     setCatalogQuery("");
     setProducts(
-      questions.length
-        ? []
-        : searchCatalog({
-            model,
+      session?.fixtureWorkspace ? searchCatalog({
+            model: nextModel,
             category: nextCategory,
             budget: Math.round(Number(budget) * 100),
             preference,
             priority,
             weights,
-          }),
+          }) : publicCatalog.filter(p => p.category === nextCategory && (!productType || p.attributes?.productType === productType)),
     );
     setSummary(
       nextCategory
-        ? `Viewing ${categoryTitles[nextCategory] || nextCategory}. Chat with DALE beside the products for voltage, fit, and warranty assistance.`
+        ? `Viewing ${categoryTitles[nextCategory] || nextCategory}. Ask DALE to compare recorded attributes, exact variants and group savings.`
         : "Collection preview. Save your device, budget and preferences with Find my match before reviewing a purchase.",
     );
     setTimeout(() => {
@@ -565,7 +563,7 @@ export default function Storefront() {
             setModel={setModel}
             deviceLabel={deviceLabel}
             category={category}
-            setCategory={setCategory}
+            setCategory={(value) => { setCategory(value); setModel(!session?.fixtureWorkspace || isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
             budget={budget}
             setBudget={setBudget}
             message={message}
@@ -655,7 +653,7 @@ export default function Storefront() {
                 model={model}
                 budget={Math.max(
                   1,
-                  Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                  Math.min(1000000, Math.round(Number(budget) * 100) || 8000),
                 )}
                 briefDirty={briefDirty}
                 onResult={applyAgent}
@@ -698,7 +696,7 @@ export default function Storefront() {
                     budget={Math.max(
                       1,
                       Math.min(
-                        100000,
+                        1000000,
                         Math.round(Number(budget) * 100) || 8000,
                       ),
                     )}
@@ -722,12 +720,12 @@ export default function Storefront() {
                 </div>
                 <h2>Ask DALE anything. Live shopping guidance beside your catalog.</h2>
                 <p className="hero-dale-sub">
-                  Tell DALE your specs or device needs. DALE stays pinned beside the products so you can chat continuously while browsing.
+                  Tell DALE your needs, budget and preferences. DALE stays pinned beside the products so you can chat continuously while browsing.
                 </p>
                 <div className="hero-dale-input-wrap">
                   <input
                     type="text"
-                    placeholder="Ask DALE anything (e.g. Find me a quiet Bluetooth mouse under $30, or a compact 65W charger)..."
+                    placeholder="Ask DALE: a linen shirt in size M under $60, or a citrus fragrance in 50 ml..."
                     value={heroPrompt}
                     onChange={(e) => setHeroPrompt(e.target.value)}
                     onKeyDown={(e) => {
@@ -755,7 +753,7 @@ export default function Storefront() {
                 <div className="eyebrow">CURATED COLLECTIONS</div>
                 <h2 id="collection-title">Objects for everyday life.</h2>
                 <p>
-                  Explore each category individually, or view all verified accessories tailored specifically to your device.
+                  Six departments, one customer-first agent. Compare recorded facts, find a group and approve the exact offer yourself.
                 </p>
               </div>
               <div className="parallax-stack">
@@ -763,7 +761,7 @@ export default function Storefront() {
                   <div
                     key={col.id}
                     className="parallax-category-card"
-                    onClick={() => browseCollection(col.id)}
+                    onClick={() => openDepartment(col.id)}
                   >
                     <div className="parallax-card-content">
                       <div className="parallax-card-badge">
@@ -785,7 +783,7 @@ export default function Storefront() {
                         className="parallax-card-cta"
                         onClick={(e) => {
                           e.stopPropagation();
-                          browseCollection(col.id);
+                          openDepartment(col.id);
                         }}
                       >
                         <span>Explore {col.title}</span>
@@ -797,7 +795,7 @@ export default function Storefront() {
                         <ProductArt product={col.featured} />
                       </div>
                       <span className="parallax-count-pill">
-                        {col.count} certified products
+                        {col.count} exact variants
                       </span>
                     </div>
                   </div>
@@ -807,7 +805,7 @@ export default function Storefront() {
                 <div>
                   <h3>Filter across all categories for your device</h3>
                   <p>
-                    Need all accessories matched to your {deviceLabel(model)}? View every compatible charger, dock, audio device, and cable together.
+                    Need electronics matched to a device profile? View every compatible charger, dock, audio device, and cable together.
                   </p>
                 </div>
                 <button
@@ -826,7 +824,7 @@ export default function Storefront() {
                 </button>
               </div>
             </section>
-            {(category !== "" || isDeviceMode) && (
+            {(departmentId !== "" || category !== "" || isDeviceMode) && (
               <section
                 className="shopping-area"
                 id="shop"
@@ -842,7 +840,7 @@ export default function Storefront() {
                   model={model}
                   budget={Math.max(
                     1,
-                    Math.min(100000, Math.round(Number(budget) * 100) || 8000),
+                    Math.min(1000000, Math.round(Number(budget) * 100) || 8000),
                   )}
                   briefDirty={briefDirty}
                   onResult={applyAgent}
@@ -885,7 +883,7 @@ export default function Storefront() {
                       budget={Math.max(
                         1,
                         Math.min(
-                          100000,
+                          1000000,
                           Math.round(Number(budget) * 100) || 8000,
                         ),
                       )}
@@ -913,18 +911,18 @@ export default function Storefront() {
                     </button>
                     <div className="eyebrow">
                       {isDeviceMode
-                        ? "VERIFIED DEVICE ECOSYSTEM"
+                        ? "YOUR SAVED SHOPPING BRIEF"
                         : `CURATED COLLECTION · ${category ? category.toUpperCase() : "ALL OBJECTS"}`}
                     </div>
                     <h2>
                       {isDeviceMode
-                        ? `All essentials for ${deviceLabel(model)}`
-                        : (categoryTitles[category] || "Selected for you")}
+                        ? isRetailCategory(category) ? categoryTitles[category] : `All essentials for ${deviceLabel(model)}`
+                        : (categoryTitles[category] || departments.find(d => d.id === departmentId)?.title || "Selected for you")}
                     </h2>
                     <p style={{ fontSize: "14px", color: "#a1a1a6", margin: "4px 0 0" }}>
                       {isDeviceMode
-                        ? `Showing all chargers, docks, audio, cables and storage certified compatible with your ${deviceLabel(model)}.`
-                        : `Showing certified models tested for voltage, thermal management, and connection fit.`}
+                        ? `Showing eligible offers for ${deviceLabel(model)}. Review each source and exact variant.`
+                        : `Compare manufacturer records. DALE prices, stock and fulfillment are simulated sandbox offers.`}
                     </p>
                   </div>
                   <div className="catalog-heading-controls">
@@ -934,7 +932,7 @@ export default function Storefront() {
                       setModel={setModel}
                       deviceLabel={deviceLabel}
                       category={category}
-                      setCategory={setCategory}
+                      setCategory={(value) => { setCategory(value); setModel(!session?.fixtureWorkspace || isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
                       budget={budget}
                       setBudget={setBudget}
                       message={message}
@@ -954,12 +952,12 @@ export default function Storefront() {
                       compatibleCount={visibleProducts.length}
                     />
                     <span className="muted">
-                      {visibleProducts.length}{" "}
-                      {briefDirty ? "preview options" : "compatible options"}
+                      {category || isDeviceMode ? <>{visibleProducts.length}{" "}{briefDirty ? "preview options" : "matching variants"}</> : "Choose a category"}
                     </span>
                   </div>
                 </div>
-                <div
+                <DepartmentBrowser departmentId={departmentId || departments.find(d => d.categories.some(c => c === category))?.id || "electronics"} category={category} onDepartment={openDepartment} onCategory={browseCollection} />
+                {session?.fixtureWorkspace && <div
                   className="catalog-category-pills"
                   aria-label="Filter product category"
                 >
@@ -968,10 +966,11 @@ export default function Storefront() {
                     className={`cat-pill ${isDeviceMode && category === "" ? "active" : ""}`}
                     onClick={() => {
                       setIsDeviceMode(true);
+                      setModel(model === lifestyleProfile ? "Atlas 14" : model);
                       setCategory("");
                       setProducts(
                         searchCatalog({
-                          model,
+                          model: model === lifestyleProfile ? "Atlas 14" : model,
                           category: "",
                           budget: Math.round(Number(budget) * 100),
                           preference,
@@ -981,19 +980,20 @@ export default function Storefront() {
                       );
                     }}
                   >
-                    All for my device ({catalog.filter((p) => p.compatibleModels.includes(model)).length})
+                    Electronics for my device ({catalog.filter((p) => p.compatibleModels.includes(model === lifestyleProfile ? "Atlas 14" : model)).length})
                   </button>
-                  {parallaxCategories.map((col) => (
+                  {categoryIds.map((id) => (
                     <button
-                      key={col.id}
+                      key={id}
                       type="button"
-                      className={`cat-pill ${category === col.id ? "active" : ""}`}
-                      onClick={() => browseCollection(col.id)}
+                      className={`cat-pill ${category === id ? "active" : ""}`}
+                      onClick={() => browseCollection(id)}
                     >
-                      {col.title} ({catalog.filter((p) => p.category === col.id).length})
+                      {categoryTitles[id]} ({catalog.filter((p) => p.category === id).length})
                     </button>
                   ))}
-                </div>
+                </div>}
+                <RetailFilters category={category} fixtures={Boolean(session?.fixtureWorkspace)} value={requirements} onChange={(value) => { setRequirements(value); setBriefDirty(true); setProducts(searchCatalog({ model, category, budget: 1000000, requirements: value }, session?.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog)); }} />
                 <div className="assistant-note">
                   <span className="assistant-icon">
                     <Sparkles size={17} />
@@ -1011,7 +1011,7 @@ export default function Storefront() {
                       disabled={busy || !models.includes(model)}
                       onClick={() => void findProducts(true)}
                     >
-                      Use selected device and budget
+                      Confirm selected requirements and budget
                     </button>
                   </div>
                 )}
@@ -1096,7 +1096,7 @@ export default function Storefront() {
                           >
                             <ArrowRight size={17} />
                           </button>
-                          {index === 0 && (
+                          {index === 0 && !briefDirty && (
                             <span className="card-badge">
                               {weights
                                 ? "Top weighted match for your brief"
@@ -1111,8 +1111,8 @@ export default function Storefront() {
                             <span className="fit-label">
                               <Check size={12} />{" "}
                               {briefDirty
-                                ? "Update your brief to confirm fit"
-                                : `Fits ${deviceLabel(model)}`}
+                                ? "Confirm the exact variant and budget"
+                                : isRetailCategory(product.category) || product.brand ? "Matches recorded attributes" : productFits(product, model) ? `Fits ${deviceLabel(model)}` : "Device fit requires confirmation"}
                             </span>
                             {product.sponsored && (
                               <span className="sponsored">Sponsored</span>
@@ -1135,7 +1135,6 @@ export default function Storefront() {
                             ))}
                           </div>
                           <small className="muted">
-                            Source: {product.source}.{" "}
                             {weights
                               ? `Ranked with price weight ${weights.price} and feature weight ${weights.features}; feature match uses the listed specifications.`
                               : priority === "features" &&
@@ -1147,14 +1146,15 @@ export default function Storefront() {
                                 ? `Matches “${preference}” in listed specifications.`
                                 : "Ranked by listed price."}
                           </small>
+                          <CatalogEvidence product={product} />
                           <div className="price-row">
                             <strong>{formatMoney(product.price)}</strong>
-                            <small>Full price · shipping included</small>
+                            <small>{product.offerKind === "sandbox" ? "Sandbox offer · simulated stock" : "Full price · shipping included"}</small>
                           </div>
                           <div className="card-actions">
                             <button
                               className="button primary"
-                              disabled={busy || !isBuyer}
+                              disabled={busy || !isBuyer || product.comparisonOnly}
                               onClick={() => void choose(product)}
                             >
                               Review purchase <ArrowRight size={14} />
@@ -1162,7 +1162,7 @@ export default function Storefront() {
                             <button
                               className="group-button"
                               aria-label={`Join group deal for ${product.name}`}
-                              disabled={busy || !isBuyer}
+                              disabled={busy || !isBuyer || product.comparisonOnly}
                               onClick={() => {
                                 if (!session) {
                                   startShopping();
@@ -1204,153 +1204,197 @@ export default function Storefront() {
                     title={
                       catalogQuery
                         ? "Nothing in this selection"
+                        : !category && !isDeviceMode ? "Choose a category above"
                         : "Let's refine your search"
                     }
                     detail={
                       catalogQuery
                         ? "Try another name or specification, or clear the search to see your matches."
-                        : "We won't guess compatibility. Try a known model or a larger budget."
+                        : !category && !isDeviceMode ? "Open a product category to explore its sourced records and filters." : "No recorded variant matches these constraints. Adjust your filters or budget; missing facts are not guessed."
                     }
                   />
                 )}
               </div>
             </section>
             )}
-            <section className="trust-row">
-              <div>
-                <ShieldCheck />
-                <h3>You stay in control</h3>
-                <p>See the full amount and approve every purchase.</p>
-              </div>
-              <div>
-                <Users />
-                <h3>Better together</h3>
-                <p>Unlock a shared discount. Keep your own checkout.</p>
-              </div>
-              <div>
-                <HeartHandshake />
-                <h3>Help after checkout</h3>
-                <p>Clear return options and a person to review your case.</p>
-              </div>
-              <button
-                className="message-card"
-                onClick={() => {
-                  setScam(null);
-                  setModal({ kind: "scam" });
-                }}
-              >
-                <MessageSquare size={24} />
-                <strong>Something feel off?</strong>
-                <span>
-                  Check a seller message <ChevronRight size={14} />
-                </span>
-              </button>
-            </section>
-          </>
-        )}
-        {tab === "discover" && (
-          <>
+            {/* DALE BUYER ASSURANCE (Professional Production-Grade Service Standards) */}
             <motion.section
-              className="advocacy-section"
-              initial={{ opacity: 0.6 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.2 }}
+              className="concierge-suite"
+              aria-labelledby="concierge-title"
+              initial={{ opacity: 0.8, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
             >
-              <div>
-                <span className="eyebrow">THE DALE STANDARD</span>
-                <h2>
-                  Good shopping
-                  <br />
-                  doesn’t end
-                  <br />
-                  <em>at checkout.</em>
+              <div className="concierge-header">
+                <div className="concierge-eyebrow">
+                  <Sparkles size={13} />
+                  <span>BUYER ASSURANCE</span>
+                </div>
+                <h2 id="concierge-title" className="concierge-title">
+                  Sourced choices. Your approval.
                 </h2>
-                <p>
-                  Every recommendation begins with your needs. Every purchase
-                  needs your approval. Every problem deserves a fair hearing.
+                <p className="concierge-subtitle">
+                  Manufacturer-linked specifications, separately approved checkout and evidence-based support.
                 </p>
-                <button
-                  className="text-link"
-                  onClick={() => setTab("support")}
-                  style={{ marginTop: 20 }}
-                >
-                  Explore customer support <ArrowRight size={15} />
-                </button>
               </div>
-              <div className="advocacy-steps">
-                <div className="advocacy-step">
-                  <span>01</span>
+
+              <div className="concierge-grid">
+                {/* Pillar 1 */}
+                <div className="concierge-card">
                   <div>
-                    <h3>Find what actually fits.</h3>
-                    <p>
-                      Device compatibility and your budget come first. Paid
-                      placement never improves organic ranking.
+                    <div className="concierge-card-top">
+                      <div className="concierge-icon-frame">
+                        <ShieldCheck size={20} />
+                      </div>
+                      <span className="concierge-badge">RECORDED FACTS</span>
+                    </div>
+                    <h3 className="concierge-card-title">Evidence Before Recommendation</h3>
+                    <p className="concierge-card-desc">
+                      Compare exact recorded variants. Reviewed charging compatibility is separate from device purchases; missing specifications are disclosed.
                     </p>
                   </div>
+                  <button
+                    type="button"
+                    className="concierge-card-btn"
+                    onClick={() => {
+                      const el = document.getElementById("dale-chat");
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth" });
+                        el.querySelector("textarea")?.focus();
+                      } else {
+                        setIsDeviceMode(true);
+                        setTimeout(() => {
+                          const chatEl = document.getElementById("dale-chat");
+                          chatEl?.scrollIntoView({ behavior: "smooth" });
+                          chatEl?.querySelector("textarea")?.focus();
+                        }, 80);
+                      }
+                    }}
+                  >
+                    <span>Check compatibility with DALE</span>
+                    <ArrowRight size={13} />
+                  </button>
                 </div>
-                <div className="advocacy-step">
-                  <span>02</span>
+
+                {/* Pillar 2 */}
+                <div className="concierge-card">
                   <div>
-                    <h3>The final word is yours.</h3>
-                    <p>
-                      Review the item, merchant, full price and delivery terms
-                      before you approve. Group commitments never charge you.
+                    <div className="concierge-card-top">
+                      <div className="concierge-icon-frame">
+                        <Lock size={19} />
+                      </div>
+                      <span className="concierge-badge">PAYPAL PROTECTION</span>
+                    </div>
+                    <h3 className="concierge-card-title">Secure Checkout & Protection</h3>
+                    <p className="concierge-card-desc">
+                      Review the exact sandbox amount and merchant before approval. PayPal eligibility depends on its terms; no unapproved substitutions.
                     </p>
                   </div>
+                  <button
+                    type="button"
+                    className="concierge-card-btn"
+                    onClick={() => {
+                      setScam(null);
+                      setModal({ kind: "scam" });
+                    }}
+                  >
+                    <span>Check a seller message</span>
+                    <ChevronRight size={13} />
+                  </button>
                 </div>
-                <div className="advocacy-step">
-                  <span>03</span>
+
+                {/* Pillar 3 */}
+                <div className="concierge-card">
                   <div>
-                    <h3>Your side deserves to be heard.</h3>
-                    <p>
-                      Choose a refund or replacement. Share evidence, request a
-                      person and follow every step of your case.
+                    <div className="concierge-card-top">
+                      <div className="concierge-icon-frame">
+                        <HeartHandshake size={20} />
+                      </div>
+                      <span className="concierge-badge">CUSTOMER SUPPORT</span>
+                    </div>
+                    <h3 className="concierge-card-title">30-Day Returns & Support</h3>
+                    <p className="concierge-card-desc">
+                      A 30-day demo return policy with customer-selected remedies, recorded evidence and human review. Shipping labels are simulated.
                     </p>
                   </div>
+                  <button
+                    type="button"
+                    className="concierge-card-btn"
+                    onClick={() => setTab("support")}
+                  >
+                    <span>Visit Customer Support</span>
+                    <ArrowRight size={13} />
+                  </button>
                 </div>
               </div>
             </motion.section>
-            <section className="service-faq" aria-labelledby="service-title">
-              <div>
-                <span className="eyebrow">A LITTLE CLARITY</span>
-                <h2 id="service-title">Before you decide.</h2>
+
+            {/* STREAMLINED INQUIRY SECTION */}
+            <section className="luxury-inquiry-section" aria-labelledby="inquiry-title">
+              <div className="inquiry-meta">
+                <span className="inquiry-eyebrow">FREQUENTLY ASKED</span>
+                <h2 id="inquiry-title" className="inquiry-title">Before you decide.</h2>
+                <p className="inquiry-desc">
+                  Essential details on compatibility, payments, and our return policy.
+                </p>
+                <button
+                  type="button"
+                  className="inquiry-dale-btn"
+                  onClick={() => {
+                    const el = document.getElementById("dale-chat");
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                      el.querySelector("textarea")?.focus();
+                    } else {
+                      setIsDeviceMode(true);
+                      setTimeout(() => {
+                        const chatEl = document.getElementById("dale-chat");
+                        chatEl?.scrollIntoView({ behavior: "smooth" });
+                        chatEl?.querySelector("textarea")?.focus();
+                      }, 80);
+                    }
+                  }}
+                >
+                  <Sparkles size={13} />
+                  <span>Ask DALE a question</span>
+                </button>
               </div>
-              <div>
-                <details>
-                  <summary>How are recommendations selected?</summary>
+
+              <div className="inquiry-accordion">
+                <details className="inquiry-item">
+                  <summary>
+                    <span>How are recommendations selected?</span>
+                    <span className="inquiry-toggle-icon">+</span>
+                  </summary>
                   <p>
-                    We filter the curated catalog by your device and budget,
-                    then rank by your chosen price or feature preference.
-                    Conflicting instructions require your confirmation.
-                    Specifications are linked to catalog records.
+                    We filter products strictly by your hardware specifications and budget. Sponsored listings never influence results, and conflicting preferences always require your confirmation.
                   </p>
                 </details>
-                <details>
-                  <summary>What happens if I need to return something?</summary>
+                <details className="inquiry-item">
+                  <summary>
+                    <span>What happens if I need to make a return?</span>
+                    <span className="inquiry-toggle-icon">+</span>
+                  </summary>
                   <p>
-                    Open a request from My orders and choose a refund or
-                    replacement. A reviewer can arrange a merchant-paid return
-                    or approve a no-return exception. The demo window is 30 days
-                    from recorded delivery; late or incomplete records receive
-                    human review.
+                    You can request a return directly from My Orders within 30 days of delivery. Demo return labels are simulated, and cases require human review.
                   </p>
                 </details>
-                <details>
-                  <summary>Can a photo decide my claim?</summary>
+                <details className="inquiry-item">
+                  <summary>
+                    <span>How are support and return requests reviewed?</span>
+                    <span className="inquiry-toggle-icon">+</span>
+                  </summary>
                   <p>
-                    Photos and identifiers are submitted evidence, not proof of
-                    physical truth. Automated analysis cannot deny your request.
-                    Both sides can submit records and you can ask for another
-                    review.
+                    Automated checks assist with initial intake, but every claim is reviewed by human support specialists before any decision is made.
                   </p>
                 </details>
-                <details>
-                  <summary>How does a group purchase work?</summary>
+                <details className="inquiry-item">
+                  <summary>
+                    <span>How do group purchase discounts work?</span>
+                    <span className="inquiry-toggle-icon">+</span>
+                  </summary>
                   <p>
-                    The merchant publishes a minimum shopper count, discount and
-                    checkout window for each group. Each participant checks out
-                    independently. Another participant declining does not
-                    reprice your locked purchase.
+                    Each participant completes checkout independently. If group participation changes, your locked purchase terms and price remain unchanged.
                   </p>
                 </details>
               </div>
@@ -1393,6 +1437,7 @@ export default function Storefront() {
                 </p>
               </div>
             )}
+            {session?.actor.role === "buyer" && !session.demo && <button className="button secondary" onClick={() => { setRole("buyer"); setModal({ kind: "login" }); }}>Account / sign in</button>}
             {session?.invite && !session.demo && (
               <div className="invite-panel">
                 <div>
@@ -1406,9 +1451,9 @@ export default function Storefront() {
                   className="button secondary"
                   onClick={() =>
                     void run(async () => {
-                      await navigator.clipboard.writeText(session.invite!);
+                      await navigator.clipboard.writeText(`${window.location.origin}/groups`);
                       setNotice(
-                        "Invitation copied. Enter it in another shopper's Start shopping dialog.",
+                        "Store link copied. Open it on another device, start shopping and commit to the same product group.",
                       );
                     })
                   }
@@ -2287,7 +2332,7 @@ export default function Storefront() {
           <div className="footer-bottom">
             <span>DALE / The considered collection</span>
             <span>
-              Test storefront · Sourced products + sample catalog · Simulated
+              Test storefront · Manufacturer-linked catalogue + isolated fixtures · Simulated
               shipping · USD
             </span>
           </div>
@@ -2337,25 +2382,25 @@ export default function Storefront() {
                       ))}
                     </ul>
                     <p>
-                      Compatible with:{" "}
-                      {modal.product.compatibleModels
+                      {isRetailCategory(modal.product.category) || modal.product.brand ? "Variant attributes: " : "Recorded device profiles: "}
+                      {isRetailCategory(modal.product.category) || modal.product.brand ? Object.entries(modal.product.attributes || {}).map(([key, value]) => `${key}: ${value}`).join(" · ") : modal.product.compatibleModels
                         .map(deviceLabel)
                         .join(", ")}
                     </p>
                     <p className="muted">
-                      Source: {modal.product.source} ·{" "}
                       {modal.product.sponsored
                         ? "Sponsored listing. Organic ranking is independent of sponsorship."
                         : "Curated catalog listing."}{" "}
-                      Product visual is a catalog illustration.
+                      Product visual is an editorial identity card or original illustration.
                     </p>
+                    <CatalogEvidence product={modal.product} />
                     <div className="policy-note">
                       You review the full amount and merchant before approving.
                       Returns and replacements remain available through your
                       order.
                     </div>
                     {!briefDirty &&
-                    modal.product.compatibleModels.includes(model) &&
+                    productFits(modal.product, model) &&
                     modal.product.price <= Number(budget) * 100 &&
                     (!category || category === modal.product.category) ? (
                       <button
@@ -2375,7 +2420,7 @@ export default function Storefront() {
                           browseCollection(nextCategory);
                         }}
                       >
-                        Match this collection to my device{" "}
+                        Set requirements for this collection{" "}
                         <ArrowRight size={16} />
                       </button>
                     )}
@@ -2394,9 +2439,13 @@ export default function Storefront() {
                   </h2>
                   <p className="muted">
                     {role === "buyer"
-                      ? "Start an isolated test session, or join with a group invitation."
+                      ? "Shop together from separate devices. Each customer keeps private orders and payment approval."
                       : "Use a separate browser profile. Operator roles require the configured access code."}
                   </p>
+                  {role === "buyer" ? <CustomerEntry onComplete={async () => {
+                    restoreSession(await api<Session>("/api/session"));
+                    setModal(null); setTab("discover");
+                  }} /> : (
                   <form
                     onSubmit={(e) => {
                       e.preventDefault();
@@ -2462,7 +2511,9 @@ export default function Storefront() {
                     <button className="button primary full" disabled={busy}>
                       Enter workspace <ArrowRight size={16} />
                     </button>
-                  </form>
+                  </form>                  )}
+                  {role === "buyer" && <button className="button secondary" onClick={() => setRole("seller")}>Operator access</button>}
+
                 </>
               )}
               {modal.kind === "quote" && (
@@ -2482,7 +2533,7 @@ export default function Storefront() {
                     />
                     <div>
                       <strong>{productById(modal.quote.productId).name}</strong>
-                      <p>Confirmed fit: {deviceLabel(modal.quote.model)}</p>
+                      <p>{isRetailCategory(productById(modal.quote.productId).category) ? "Exact variant selected; review its recorded attributes." : `Confirmed profile: ${deviceLabel(modal.quote.model)}`}</p>
                     </div>
                   </div>
                   {modal.quote.productId.startsWith("R") && (

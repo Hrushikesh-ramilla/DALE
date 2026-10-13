@@ -34,10 +34,6 @@ async function main() {
   await page.waitForTimeout(500);
   const info = await page.evaluate(() => {
     const full = document.getElementById('fullText');
-    const d = document.getElementById('tD');
-    const a = document.getElementById('tA');
-    const l = document.getElementById('tL');
-    const e = document.getElementById('tE');
     return {
       fullLength: full.getComputedTextLength(),
       subStringLengths: {

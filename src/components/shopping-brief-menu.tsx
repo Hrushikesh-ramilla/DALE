@@ -4,12 +4,11 @@ import {
   useRef,
   useEffect,
   useCallback,
-  type ReactNode,
 } from "react";
+import { categoryTitles, isRetailCategory } from "@/domain/departments";
 import { createPortal } from "react-dom";
 import {
   Sparkles,
-  SlidersHorizontal,
   X,
   Search,
   LoaderCircle,
@@ -61,7 +60,6 @@ export function ShoppingBriefMenu({
   setPriority,
   weights,
   setWeights,
-  briefDirty,
   setBriefDirty,
   busy,
   restoring,
@@ -77,7 +75,8 @@ export function ShoppingBriefMenu({
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    setMounted(true);
+    const frame = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   const updateOrigin = useCallback(() => {
@@ -305,11 +304,12 @@ export function ShoppingBriefMenu({
             <div className="flyout-grid">
               {/* Column 1: Device Profile */}
               <div className="flyout-column">
-                <span className="column-eyebrow">DEVICE & COMPATIBILITY</span>
+                <span className="column-eyebrow">{isRetailCategory(category) ? "CATEGORY REQUIREMENTS" : "DEVICE & COMPATIBILITY"}</span>
                 <label className="flyout-label">
-                  Your device
+                  {isRetailCategory(category) ? "Product purchase" : "Your device"}
                   <select
                     className="flyout-select"
+                    disabled={isRetailCategory(category)}
                     value={model}
                     onChange={(e) => {
                       setModel(e.target.value);
@@ -330,14 +330,13 @@ export function ShoppingBriefMenu({
                     handleClose();
                     onIdentify();
                   }}
-                  disabled={restoring}
+                  disabled={restoring || isRetailCategory(category)}
                 >
                   <Camera size={14} /> Identify device from label
                 </button>
                 <div className="flyout-tip">
                   <span>
-                    Power wattage, port standards, and certified protocols
-                    guaranteed before purchase.
+                    Compare recorded requirements before purchase. Personal fit, enjoyment and medical safety cannot be guaranteed.
                   </span>
                 </div>
               </div>
@@ -355,14 +354,7 @@ export function ShoppingBriefMenu({
                       setBriefDirty(true);
                     }}
                   >
-                    {Object.entries({
-                      chargers: "Chargers",
-                      docks: "Docks & hubs",
-                      storage: "Storage",
-                      audio: "Headphones",
-                      accessories: "Accessories",
-                      "": "Everything",
-                    }).map(([value, label]) => (
+                    {Object.entries({ ...categoryTitles, "": "All eligible categories" }).map(([value, label]) => (
                       <option value={value} key={value}>
                         {label}
                       </option>
@@ -376,7 +368,7 @@ export function ShoppingBriefMenu({
                     <input
                       type="number"
                       min="1"
-                      max="1000"
+                      max="10000"
                       value={budget}
                       onChange={(e) => {
                         setBudget(e.target.value);
@@ -386,13 +378,7 @@ export function ShoppingBriefMenu({
                   </div>
                 </label>
                 <div className="flyout-category-pills">
-                  {[
-                    ["", "All"],
-                    ["chargers", "Chargers"],
-                    ["docks", "Docks"],
-                    ["audio", "Audio"],
-                    ["storage", "Storage"],
-                  ].map(([id, label]) => (
+                  {Object.entries(categoryTitles).map(([id, label]) => (
                     <button
                       key={id}
                       type="button"

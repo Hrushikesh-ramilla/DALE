@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-11T00:06:32.080Z",
+  "stage": "prepare",
+  "checks": [
+    {
+      "name": "Expected deployed source",
+      "passed": true
+    },
+    {
+      "name": "Both independent guest sessions created",
+      "passed": true
+    },
+    {
+      "name": "Shared database store and distinct buyers",
+      "passed": true
+    },
+    {
+      "name": "Ordinary sandbox store, no demo personas",
+      "passed": true
+    },
+    {
+      "name": "First real commitment persisted",
+      "passed": true
+    },
+    {
+      "name": "Other customer discovers same group",
+      "passed": true
+    },
+    {
+      "name": "Second independent commitment unlocks discount",
+      "passed": true
+    },
+    {
+      "name": "Repeated commitment is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Guest conversion preserves identity",
+      "passed": true
+    },
+    {
+      "name": "New-device sign-in restores commitments",
+      "passed": true
+    },
+    {
+      "name": "Wrong password rejected",
+      "passed": true
+    },
+    {
+      "name": "Foreign-origin mutation rejected",
+      "passed": true
+    },
+    {
+      "name": "Membership does not disclose other buyer IDs",
+      "passed": true
+    },
+    {
+      "name": "Discounted buyer-bound quote persisted",
+      "passed": true
+    },
+    {
+      "name": "Actual sandbox order creation through protected group quote",
+      "passed": true
+    },
+    {
+      "name": "Other customer cannot see this order",
+      "passed": true
+    },
+    {
+      "name": "Other customer cannot capture this order",
+      "passed": true
+    }
+  ],
+  "limitation": "Actual hosted HTTP/PostgreSQL and independently authenticated customers. No browser PayPal approval, capture/refund, AI call or physical two-laptop exercise.",
+  "build": "13d90bc308cbe8bf73c1531bcffc763d85bf532d"
+}

@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import type { Product } from "@/domain/catalog";
+import { ProductArt } from "./product-art";
 const Scene = dynamic(() => import("./product-scene"), {
   ssr: false,
   loading: () => (
@@ -8,6 +9,12 @@ const Scene = dynamic(() => import("./product-scene"), {
   ),
 });
 export function ProductViewer({ product }: { product: Product }) {
+  if (product.brand)
+    return (
+      <div className="product-viewer">
+        <ProductArt product={product} />
+      </div>
+    );
   return (
     <div className="product-viewer">
       <Scene product={product} />

@@ -1,5 +1,28 @@
 # Change log
 
+## 2026-10-11 — Sourced branded catalogue
+
+- Replace ordinary invented inventory with 35 manufacturer-linked branded records, preserving sample SKU histories. Add phones, laptops, tablets and nested department/category/type navigation.
+- Suppress recommendation/ranking claims until preview constraints are confirmed.
+- Present department selection as navigation, reset stale preview constraints and distinguish exact-variant confirmation from device fit.
+- Feature sourced products in the hero; remove unsourced compatibility/protection guarantees while retaining the accepted design.
+- Carry exact brand/model, size, concentration, RAM/storage and budget constraints through persisted queries, agent plans, groups and purchase guards. Withhold incomplete apparel candidates; disclose missing facts and simulated offers.
+- Add branded query/guard/refinement contracts and desktop/mobile browser coverage. Preserve provider configuration and customer data. Final release evidence is tracked in docs/BRANDED_CATALOG.md.
+
+## 2026-10-11 — Six-department agent shopping
+
+- Add 60 distinct lifestyle families with 180 exact clothing/fragrance/bag/home/beauty SKUs, alongside existing electronics. Clearly separate merchant sample specifications from reviewed manufacturer identity.
+- Persist an indexed PostgreSQL catalog read model and add strict, paginated public attribute queries. Add department controls, category illustrations and exact size/material/type/scent/volume filtering.
+- Extend structured agent planning with a validated retail search tool, retained brief refinements and dependent group discovery. Keep exact-variant membership, budget, immutable approval and own-order safeguards.
+- Add retail database/agent/guard contracts and browser fixture checkout coverage. Preserve the existing visual composition, customer data and provider configuration. Application 81962d5 passes 354 unit/contract checks, three production browser journeys, 15 actual hosted checks and six actual restart checks; checksum/backup deployment succeeds. No model call, real payment capture, billing change or new infrastructure resource occurs.
+
+## 2026-10-11 — Independent customer accounts and shared group buying
+
+- Add persistent guest/account identities, salted scrypt sign-in and identity-preserving guest conversion. Ordinary customers share a persisted merchant store while conversations, orders and evidence remain customer-scoped. Existing isolated demos remain separate.
+- Ordinary DALE task entry now creates a customer guest session. Add account entry, shareable store links and three-second authenticated group refresh. Correct pre-existing lint failures without altering visual composition.
+- Application 13d90bc: 340 unit/contract checks, 23 focused final checks, production build and Linux release verification pass. Two independent browser contexts verify group joining/live update, account registration and third-context sign-in.
+- Checksum/backup deployment to the existing EC2 succeeds. Seventeen actual PostgreSQL/customer/sandbox-order checks and five checks after actual app/worker restart pass. No sandbox payment capture, cloud generation, billing change or additional resource provisioning occurs. Detailed evidence and remaining category-expansion scope are in docs/MULTI_CUSTOMER.md.
+
 ## 2026-10-09 — Isolated OCR packaging, restart acceptance and bounded follow-ups
 
 - Actual packaged OCR initially failed because its separate worker dependency graph was absent. Explicitly trace the helper/worker and copy their production dependencies. Run the HTTP verifier outside the checkout, preventing Node from borrowing development modules. All 11 isolated HTTP checks now pass, including access/origin guards, recognition, confirmation, unchanged shopper state and fixture isolation.

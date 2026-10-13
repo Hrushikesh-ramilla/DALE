@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { lifestyleProfile } from "@/domain/departments";
 import type { Product } from "../domain/catalog";
 import type { ClaimAnalysis, Evidence } from "../domain/claims";
 import { analyzeClaims } from "../domain/claims";
@@ -150,7 +151,7 @@ export async function shoppingSummary(
 ) {
   const fallback = {
     summary: products.length
-      ? `These options fit ${model} and your budget. Compare the specifications, then choose what suits you.`
+      ? model === lifestyleProfile ? "These recorded variants meet your stated attributes and budget. Review measurements, ingredients or notes; personal suitability is not guaranteed." : `These options fit ${model} and your budget. Compare the specifications, then choose what suits you.`
       : "There are no confirmed matches. Try a larger budget or choose a known device model.",
     sources: products.slice(0, 3).map((p) => p.source),
     mode: "fixture",

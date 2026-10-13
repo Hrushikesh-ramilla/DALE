@@ -1,8 +1,10 @@
 "use client";
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { CatalogEvidence } from "./catalog-evidence";
 import { ArrowRight, Check, LoaderCircle } from "lucide-react";
 import {
   catalog,
+  publicCatalog,
   deviceText,
   productById,
   type Product,
@@ -50,9 +52,9 @@ export function AgentWorkspace({
   const active = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    if (initialTask) {
-      setTask(initialTask);
-    }
+    if (!initialTask) return;
+    const frame = requestAnimationFrame(() => setTask(initialTask));
+    return () => cancelAnimationFrame(frame);
   }, [initialTask]);
   const startedSession = useRef<Session | null>(null);
   useEffect(() => {
@@ -87,11 +89,8 @@ export function AgentWorkspace({
       };
       let owner = session || startedSession.current;
       if (!owner) {
-        setPhase("Starting your private demo workspace…");
-        owner = await request<Session>("/api/demo", {
-          action: "launch",
-          kind: "fresh",
-        });
+        setPhase("Starting your private shopping session…");
+        owner = await request<Session>("/api/account", { action: "guest" });
         startedSession.current = owner;
       }
       if (current !== generation.current) return;
@@ -178,7 +177,9 @@ export function AgentWorkspace({
               Hello, I’m <strong>DALE</strong>.
             </p>
             <p className="welcome-sub">
-              Ask me anything about compatibility, connector fit, charging speeds, or scam prevention. Tell me what you need, and I’ll help you find the right match.
+              Ask about device requirements, clothing sizes, fragrance notes,
+              materials or group savings. I’ll compare recorded facts and keep
+              each purchase under your control.
             </p>
           </div>
         )}
@@ -186,7 +187,9 @@ export function AgentWorkspace({
           <div className="agent-capability-note">
             <strong>Buyer advocate</strong>
             <span>
-              Manufacturer-backed device fit and charger comparisons, message safety, group savings and order support. Review the sources and approve each commitment yourself.
+              Sourced electronics research, six-department variant comparison,
+              message safety, group savings and order support. Review the sources and
+              approve each commitment yourself.
             </span>
           </div>
         )}
@@ -246,7 +249,7 @@ export function AgentWorkspace({
               {latest.mode === "model"
                 ? "Model structured planning · validated tool results"
                 : latest.mode === "unavailable"
-                  ? "Model unavailable · verified catalog and safety rules"
+                  ? "Model unavailable · recorded catalog and safety rules"
                   : "Catalog assistance · no model calls or AI spend"}
             </small>
             <p className="agent-user-task">You: {latest.task}</p>
@@ -521,7 +524,7 @@ export function AgentWorkspace({
                   </p>
                 )}
                 {latest.productIds.map((id) => {
-                  const product = [...catalog, ...realProducts].find(
+                  const product = [...catalog, ...publicCatalog, ...realProducts].find(
                     (item) => item.id === id,
                   );
                   return product ? (
@@ -529,12 +532,7 @@ export function AgentWorkspace({
                       <strong>{product.name}</strong>
                       <span>{formatMoney(product.price)}</span>
                       <p>{product.specs.join(" · ")}</p>
-                      <small>
-                        {id.startsWith("R")
-                          ? "Manufacturer evidence:"
-                          : "Sample source:"}{" "}
-                        {product.source}
-                      </small>
+                      <CatalogEvidence product={product} />
                       <button
                         className="button secondary"
                         disabled={pending || restoring || !reviewCurrent}

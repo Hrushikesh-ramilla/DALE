@@ -1,6 +1,12 @@
 import { realModels, realProducts } from "./research";
-export type Category =
-  "chargers" | "docks" | "storage" | "audio" | "accessories";
+import {
+  isRetailCategory,
+  lifestyleProfile,
+  type Category,
+} from "./departments";
+import { retailCatalog } from "./retail-catalog";
+import { brandedCatalog } from "./branded-catalog";
+export type { Category } from "./departments";
 export type Product = {
   id: string;
   name: string;
@@ -13,10 +19,39 @@ export type Product = {
   stock: number;
   color: string;
   source: string;
+  familyId?: string;
+  provenance?: "merchant_sample" | "manufacturer_evidence";
+  brand?: string;
+  evidence?: {
+    checkedAt: string;
+    region: string;
+    missing: string[];
+    review: "specifications" | "product_identity";
+  };
+  comparisonOnly?: boolean;
+  offerKind?: "sandbox";
+  attributes?: {
+    productType?: string;
+    material?: string;
+    size?: string;
+    scent?: string;
+    use?: string;
+    volumeMl?: number;
+    finish?: string;
+    brand?: string;
+    modelName?: string;
+    storageGb?: number;
+    ramGb?: number;
+    displayInches?: number;
+    refreshHz?: number;
+    batteryMah?: number;
+    concentration?: string;
+  };
 };
 export const models = ["Atlas 14", "Atlas 14 Pro", "Orbit 13", "Slate 11"];
-export const knownModels = [...models, ...realModels];
+export const knownModels = [...models, ...realModels, lifestyleProfile];
 export const deviceProfiles: Record<string, string> = {
+  [lifestyleProfile]: "Product purchase (no accessory fit check)",
   "Atlas 14": "USB-C Laptop (65W)",
   "Atlas 14 Pro": "USB-C Laptop (100W)",
   "Orbit 13": "USB-C Laptop (45W)",
@@ -125,34 +160,86 @@ const families: Omit<Product, "id" | "source">[] = [
     color: "lilac",
   },
 ];
-export const catalog: Product[] = Array.from({ length: 5 }, (_, variant) =>
+const electronicsCatalog: Product[] = Array.from({ length: 5 }, (_, variant) =>
   families.map((family, i) => ({
     ...family,
     id: `P${String(variant * 8 + i + 1).padStart(3, "0")}`,
     name:
       family.name +
       (variant
-        ? ` · ${["", "Silver", "Ivory", "Midnight", "Stone"][variant]}`
+        ? ` Â· ${["", "Silver", "Ivory", "Midnight", "Stone"][variant]}`
         : ""),
     price: family.price + variant * 500,
     source: `catalog:${variant * 8 + i + 1}:v1`,
   })),
 ).flat();
 
+export const sampleCatalog: Product[] = [
+  ...electronicsCatalog,
+  ...retailCatalog,
+];
+// Historical samples retain their identities for existing orders and guided fixtures.
+export const catalog: Product[] = sampleCatalog;
+export const publicCatalog: Product[] = [
+  ...brandedCatalog.filter((product) => !product.comparisonOnly),
+  ...realProducts,
+];
+export function productFits(product: Product, model: string) {
+  return isRetailCategory(product.category) ||
+    product.provenance === "manufacturer_evidence"
+    ? model === lifestyleProfile
+    : product.compatibleModels.includes(model);
+}
+export type RetailRequirements = {
+  productType?: string;
+  material?: string;
+  size?: string;
+  scent?: string;
+  use?: string;
+  volumeMl?: number;
+  brand?: string;
+  modelName?: string;
+  storageGb?: number;
+  ramGb?: number;
+  concentration?: string;
+};
+export function meetsRetailRequirements(
+  product: Product,
+  requirements?: RetailRequirements,
+) {
+  return (
+    !requirements ||
+    Object.entries(requirements).every(
+      ([key, value]) =>
+        String(
+          product.attributes?.[
+            key as keyof NonNullable<Product["attributes"]>
+          ] ?? "",
+        ).toLowerCase() === String(value).toLowerCase(),
+    )
+  );
+}
+
 export function productById(id: string): Product {
-  const product = [...catalog, ...realProducts].find((item) => item.id === id);
+  const product = [...catalog, ...brandedCatalog, ...realProducts].find(
+    (item) => item.id === id,
+  );
   if (!product) throw new Error("Unknown product");
   return product;
 }
 
-export function searchCatalog(input: {
-  model: string;
-  category?: string;
-  budget: number;
-  preference?: string;
-  priority?: "price" | "features";
-  weights?: { price: number; features: number };
-}) {
+export function searchCatalog(
+  input: {
+    model: string;
+    category?: string;
+    budget: number;
+    preference?: string;
+    priority?: "price" | "features";
+    weights?: { price: number; features: number };
+    requirements?: RetailRequirements;
+  },
+  records?: Product[],
+) {
   if (
     input.weights &&
     (!Number.isFinite(input.weights.price + input.weights.features) ||
@@ -161,10 +248,13 @@ export function searchCatalog(input: {
   )
     throw new Error("Invalid shopper preference weights.");
   if (!knownModels.includes(input.model)) return [];
-  return (realModels.includes(input.model) ? realProducts : catalog)
+  return (
+    records || (realModels.includes(input.model) ? realProducts : catalog)
+  )
     .filter(
       (product) =>
-        product.compatibleModels.includes(input.model) &&
+        productFits(product, input.model) &&
+        meetsRetailRequirements(product, input.requirements) &&
         product.price <= input.budget &&
         (!input.category || product.category === input.category),
     )

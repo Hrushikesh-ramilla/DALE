@@ -1,5 +1,15 @@
 # Current operating status
 
+11 October sourced-catalogue update: ordinary shoppers now use 35 manufacturer-linked records, nested department/category/product-type navigation and strict brand/model/capacity constraints. Legacy engineering records remain for fixtures/history. See [BRANDED_CATALOG](BRANDED_CATALOG.md) for selection, missing facts and manual acceptance. Deployment verification is pending; the previous retail milestone below is historical.
+
+11 October retail release: application `81962d56d8f6ed659cf05ec0933fcd6ac15f469c` is deployed at https://65.0.19.200.sslip.io/shop and running locally at http://localhost:3000. Six departments expose 220 engineering SKUs plus three separately sourced identities; new lifestyle data is explicitly merchant-authored sample inventory. PostgreSQL catalog queries, typed model-tool contracts, exact variants, retained refinements, real shared customer/group state and protected checkout pass 354 unit/contract checks and three production browser journeys. Fifteen actual hosted retail checks and six checks after completed app/worker restart pass. All seven expansion release gates are closed (100% of this release scope); no claim is made of new live-model/payment-provider qualification or commercial-scale operations. Existing provider configuration/data are preserved. See [RETAIL_EXPANSION.md](RETAIL_EXPANSION.md) for evidence, manual tasks and boundaries.
+
+## Previous customer milestone — 11 October
+
+11 October 2026: application `13d90bc308cbe8bf73c1531bcffc763d85bf532d` is ready locally and on https://65.0.19.200.sslip.io. The new shared-store customer/group milestone is deployed; authenticated PostgreSQL, actual PayPal sandbox order creation and app/worker restart persistence pass. Registration/sign-in/guest conversion and two independent browser contexts are verified. No payment capture or model call was performed by this milestone, and existing provider configuration was preserved. See [MULTI_CUSTOMER.md](MULTI_CUSTOMER.md) for scope, limitations, release evidence and two-laptop instructions. The former 16.4.25.181 address is stale.
+
+## Historical operating status — 9 October
+
 Updated 9 October 2026. The local application was found stopped: no Node process and no listener on port 3000. Its previous launch had no retained exit log, so the precise termination cause is unknown. No source changes or database reset were required to recover it.
 
 The local preview uses a persistent supervisor, retained embedded PostgreSQL and the guided scenario engine; its compiled identity is reported by health/status. The independent background worker is validated in Docker/EC2 PostgreSQL, not run concurrently against the local embedded database. Local OCR passes eleven actual isolated packaged HTTP checks. Local Whisper passes two CPU recordings and ten HTTP checks. The latest Linux inference gate passes capped text/image/auth/restart; full frozen v3 quality fails. The 9d3a7e7 quality job caught two citation regressions, now corrected and awaiting fresh CI. Public installation remains blocked by current instance access.

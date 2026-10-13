@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-11T00:06:58.526Z",
+  "stage": "restart",
+  "checks": [
+    {
+      "name": "Expected deployed source",
+      "passed": true
+    },
+    {
+      "name": "Existing sessions survive service restart",
+      "passed": true
+    },
+    {
+      "name": "Persisted group retains both commitments",
+      "passed": true
+    },
+    {
+      "name": "Account survives restart and fresh sign-in",
+      "passed": true
+    },
+    {
+      "name": "Buyer order privacy retained",
+      "passed": true
+    }
+  ],
+  "limitation": "Actual hosted HTTP/PostgreSQL and independently authenticated customers. No browser PayPal approval, capture/refund, AI call or physical two-laptop exercise.",
+  "build": "13d90bc308cbe8bf73c1531bcffc763d85bf532d"
+}

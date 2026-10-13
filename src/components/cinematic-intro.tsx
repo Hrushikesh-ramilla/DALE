@@ -33,17 +33,24 @@ export function CinematicIntro({
   } | null>(null);
 
   const onSettledRef = useRef(onSettled);
-  onSettledRef.current = onSettled;
+
 
   const onCompleteRef = useRef(onComplete);
-  onCompleteRef.current = onComplete;
+
+
+  useEffect(() => {
+    onSettledRef.current = onSettled;
+    onCompleteRef.current = onComplete;
+  }, [onSettled, onComplete]);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setStep(9);
-      onSettledRef.current?.();
-      onCompleteRef.current?.();
-      return;
+      const frame = requestAnimationFrame(() => {
+        setStep(9);
+        onSettledRef.current?.();
+        onCompleteRef.current?.();
+      });
+      return () => cancelAnimationFrame(frame);
     }
 
     const timers: NodeJS.Timeout[] = [];

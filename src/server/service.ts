@@ -1,8 +1,10 @@
 import { randomUUID } from "node:crypto";
 import {
   knownModels as models,
+  models as sampleModels,
   productById,
-  searchCatalog,
+  productFits,
+  meetsRetailRequirements,
 } from "../domain/catalog";
 import { realModels, researchProducts } from "../domain/research";
 import {
@@ -33,6 +35,8 @@ import {
 import { aiMode, evidenceAnalysis, scamAnalysis, shoppingSummary } from "./ai";
 import { evidenceHash, getAsset, putAsset } from "./storage";
 import { getDatabase } from "./database";
+import { searchStoredCatalog } from "./catalog-store";
+import { customerProfile } from "./customers";
 import { selectVisionEvidence } from "./vision";
 import { briefSchema, type ShoppingBrief } from "../domain/brief";
 import { enqueueJob, recoveryStatus } from "./jobs";
@@ -103,6 +107,7 @@ export async function snapshot(actor: Actor) {
   const state = await getWorkspace(actor.workspaceId);
   return {
     actor,
+    customer: await customerProfile(actor),
     brief: state.briefs?.find((brief) => brief.buyerId === actor.userId),
     conversation:
       state.conversations?.find((item) => item.buyerId === actor.userId)
@@ -277,7 +282,17 @@ export async function shop(
     (actor ? workspaceAiMode(await getWorkspace(actor.workspaceId)) : aiMode());
   const products = questions.length
     ? []
-    : searchCatalog(normalized).filter(
+    : (
+        await searchStoredCatalog(
+          normalized,
+          sampleModels.includes(normalized.model) ||
+            (actor
+              ? Boolean(
+                  (await getWorkspace(actor.workspaceId)).fixtureWorkspace,
+                )
+              : false),
+        )
+      ).filter(
         (product) =>
           !research ||
           research.findings.some(
@@ -362,7 +377,11 @@ export async function makeQuote(
 ) {
   buyer(actor);
   const product = productById(productId);
-  if (!models.includes(model) || !product.compatibleModels.includes(model))
+  if (product.comparisonOnly)
+    throw new Error(
+      "This manufacturer record is comparison-only until the exact purchasable variant is verified.",
+    );
+  if (!models.includes(model) || !productFits(product, model))
     throw new Error(
       "This product is not confirmed compatible with your device.",
     );
@@ -385,6 +404,10 @@ export async function makeQuote(
           "The sourced offer does not meet your confirmed device, cable, charging speed and budget. Run a new agent task.",
         );
     }
+    if (brief && !meetsRetailRequirements(product, brief.input.requirements))
+      throw new Error(
+        "The exact variant does not meet your saved size, material, scent or volume. Update the brief first.",
+      );
     if (brief?.clarificationRequired)
       throw new Error(
         "Confirm the device and budget with Find my match before choosing a purchase.",
@@ -473,7 +496,11 @@ export async function joinGroup(
 ) {
   buyer(actor);
   const product = productById(productId);
-  if (!product.compatibleModels.includes(model))
+  if (product.comparisonOnly)
+    throw new Error(
+      "This comparison-only record has no verified purchasable variant.",
+    );
+  if (!productFits(product, model))
     throw new Error("The group product must fit your device.");
   return mutateWorkspace(actor.workspaceId, (state) => {
     const available = state.groups.find(
@@ -498,6 +525,20 @@ export async function joinGroup(
       throw new Error(
         "Group terms changed. Refresh the offers before committing.",
       );
+    const savedBrief = state.briefs?.find(
+      (item) => item.buyerId === actor.userId,
+    );
+    if (
+      product.provenance &&
+      savedBrief &&
+      (!meetsRetailRequirements(product, savedBrief.input.requirements) ||
+        savedBrief.input.category !== product.category ||
+        savedBrief.input.model !== model ||
+        savedBrief.clarificationRequired)
+    )
+      throw new Error(
+        "This exact group variant differs from your saved shopping brief.",
+      );
     if (expectedBriefVersion !== undefined) {
       const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
       if (
@@ -506,6 +547,7 @@ export async function joinGroup(
         brief.clarificationRequired ||
         brief.input.model !== model ||
         (brief.input.category && brief.input.category !== product.category) ||
+        !meetsRetailRequirements(product, brief.input.requirements) ||
         terms.amount > brief.input.budget
       )
         throw new Error(

@@ -1,4 +1,4 @@
-import { knownModels as models, type Product } from "./catalog";
+import { knownModels as models, productFits, type Product } from "./catalog";
 import type { ShoppingBrief } from "./brief";
 import { mentionedModels } from "./identification";
 import { formatMoney } from "./money";
@@ -32,7 +32,9 @@ export function comparisonFacts(products: Product[], model: string) {
     name: product.name,
     price: product.price,
     currency: "USD",
-    compatible: product.compatibleModels.includes(model),
+    compatible: product.compatibleModels.length ? productFits(product, model) : null,
+    attributes: product.attributes,
+    provenance: product.provenance || (product.id.startsWith("R") ? "manufacturer_evidence" : "engineering_sample"),
     specs: product.specs,
     source: product.source,
     missingSpecs: product.specs.length === 0,
