@@ -1,0 +1,9 @@
+:global(.pdp-visual-pane):has(.frame) {
+  align-self: start;
+  height: clamp(360px, 70svh, 640px);
+  min-height: 0;
+}
+
+:global(.pdp-visual-pane) > .frame {
+  min-height: 0;
+}

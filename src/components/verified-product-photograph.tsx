@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import styles from "./verified-product-photograph.module.css";
 import type { Product } from "@/domain/catalog";
 import { getVerifiedProductImage } from "@/domain/verified-product-image-registry";
 
@@ -12,11 +14,12 @@ export function VerifiedProductPhotograph({
   compact?: boolean;
 }) {
   const resolved = getVerifiedProductImage(product);
+  const detailPage = usePathname()?.startsWith("/product/");
   const [failedSource, setFailedSource] = useState<string | null>(null);
   const available = !!resolved.url && failedSource !== resolved.url;
   return (
     <figure
-      className={`product-art product-photograph ${compact ? "compact" : ""}`}
+      className={`product-art product-photograph ${styles.frame} ${compact ? "compact" : ""}`}
       data-product-id={product.id}
       data-image-verification={resolved.url ? "verified" : "unverified"}
       style={{
@@ -50,7 +53,11 @@ export function VerifiedProductPhotograph({
             alt={product.name}
             width={resolved.width}
             height={resolved.height}
-            sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+            sizes={
+              detailPage
+                ? "(max-width: 640px) 90vw, 50vw"
+                : "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+            }
             quality={75}
             loading="lazy"
             decoding="async"

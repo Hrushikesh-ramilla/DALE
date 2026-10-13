@@ -1,4 +1,6 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
+import { tsImport } from "tsx/esm/api";
+const { resolveVerifiedProductImage } = await tsImport("../src/domain/verified-product-image.ts",import.meta.url);
 
 const root = ".data/product-media-audit";
 const registry = JSON.parse(
@@ -43,6 +45,7 @@ try {
 const visualByProduct = new Map(visualReviews.records.map((r) => [r.id, r]));
 const records = products.map((p) => {
   const image = registry.entries[p.id];
+  const usableImage=resolveVerifiedProductImage(p,registry.entries);
   const original = originalByProduct.get(p.id);
   const visual = visualByProduct.get(p.id);
   const currentVisual =
@@ -58,12 +61,13 @@ const records = products.map((p) => {
     originalImageReview:
       currentVisual?.status || original?.status || "not-inspected",
     originalImageReviewReason: currentVisual?.reason || "",
-    imageStatus: image?.verified
+    imageStatus: usableImage.url
       ? "approved"
+      : image?.verified ? "record-repair-required"
       : image
         ? "candidate-not-approved"
         : "replacement-pending",
-    reviewedImage: image?.verified ? image.url : "",
+    reviewedImage: usableImage.url,
     reviewMethod: image?.reviewMethod || "",
   };
 });
@@ -77,6 +81,7 @@ const result = {
   at: new Date().toISOString(),
   total: records.length,
   approved: records.filter((r) => r.imageStatus === "approved").length,
+  approvedPhotographs:Object.values(registry.entries).filter(image=>image.verified).length,
   categories: counts,
   records,
 };

@@ -1,8 +1,33 @@
 import { expect, it } from "vitest";
 import {
   resolveVerifiedProductImage,
+  hasConsistentBottleVolume,
   type VerifiedImage,
 } from "../src/domain/verified-product-image";
+it("rejects contradictions between bottle specifications and selected/displayed variants", () => {
+  expect(
+    hasConsistentBottleVolume({
+      name: "Perfume",
+      color: "75ml",
+      skuVariant: "75ml",
+      attributes: { volumeMl: 125 },
+    }),
+  ).toBe(false);
+  expect(
+    hasConsistentBottleVolume({
+      name: "Perfume · 70ml",
+      skuVariant: "35ml",
+      attributes: { volumeMl: 70 },
+    }),
+  ).toBe(false);
+  expect(
+    hasConsistentBottleVolume({
+      name: "Perfume · 70ml",
+      skuVariant: "70ml-spray",
+      attributes: { volumeMl: 70 },
+    }),
+  ).toBe(true);
+});
 const product = {
   id: "A",
   name: "Exact 65W Charger",

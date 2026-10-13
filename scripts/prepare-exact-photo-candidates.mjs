@@ -138,7 +138,7 @@ for (const candidate of discoveries) {
         reviewMethod:
           "exact structured product name; visual-and-variant-review-pending",
         sourcePageHash: candidate.sourceHash,
-        sourceSku: candidate.sku,
+        sourceSku: candidate.sku == null ? null : String(candidate.sku),
         sha256: hash,
         bytes: output.length,
         width: dimensions.width,

@@ -1,6 +1,18 @@
 # Product photograph and identity repair
 
-Updated 2026-10-13. This is an incomplete repair, not a catalog certification.
+Updated 2026-10-14. This is an incomplete repair, not a catalog certification.
+
+## Latest repair checkpoint
+
+The previous 141-approval figure was too broad: 17 bottle photographs were withdrawn after finding contradictions between selected 50/75 ml variants and recorded 100/125 ml specifications. A volume consistency gate now rejects those contradictions. The preserved conflict report contains 157 records. Six Parfums de Marly 75 ml records and Baccarat Rouge 540 35 ml now have exact photographs and tested fact-revision recipes.
+
+There are currently 141 approved photograph bindings: 124 match unchanged original manifests, seven require reviewed fact corrections, and ten belong to manufacturer-identified Serge Lutens replacements. The ten replacements use new IDs for physical SKU changes; their old records are retained and their offers retired atomically. All seventeen changes were applied only to the isolated preview database, not production. The unchanged-manifest ledger therefore still reports 5,542 pending records; it does not pretend local database revisions are already deployed.
+
+The replacement service checks current record hashes, preserves old records, writes an operator audit, rejects altered replays and commits new offers plus old-offer withdrawal in one transaction. Thirteen focused tests and type checking passed. Browser verification showed the exact Chergui 100 ml photograph, source link and specifications, with no reported JavaScript errors. The local detail page has a pre-existing text contrast problem; correcting its image does not certify its entire design.
+
+To apply reviewed corrections to an authorized target database: run `npx tsx scripts/apply-reviewed-media-repairs.ts review catalog/media/reviewed-bottle-repairs.json`, then its `apply` command. For the ten replacements, run `npx tsx scripts/publish-reviewed-media-replacements.ts review catalog/media/evidence/serge-lutens-replacement-batch.json`, then its `apply` command. Confirm the target environment before using either privileged operator command. Both support checked replays; neither calls an AI/payment provider or deletes old product records. The complete catalog repair and production deployment remain unfinished.
+
+The following inspection statistics describe the earlier checkpoint; approval figures are superseded above.
 
 ## Verified results
 

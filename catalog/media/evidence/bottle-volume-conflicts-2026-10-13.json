@@ -1,0 +1,1261 @@
+{
+  "requiresRecordRepair": true,
+  "conflicts": [
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-INTERLUDE-MAN",
+      "name": "Amouage Interlude Man Eau de Parfum",
+      "source": "https://amouage.com/products/interlude-man-100ml",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-REFLECTION-MAN",
+      "name": "Amouage Reflection Man Eau de Parfum",
+      "source": "https://amouage.com/products/reflection-man-100ml",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-JUBILATION-XXV-MAN",
+      "name": "Amouage Jubilation XXV Man Eau de Parfum",
+      "source": "https://amouage.com/products/jubilation-xxv-man",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-GUIDANCE",
+      "name": "Amouage Guidance Eau de Parfum",
+      "source": "https://amouage.com/products/100ml-guidance",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-EPIC-MAN",
+      "name": "Amouage Epic Man Eau de Parfum",
+      "source": "https://amouage.com/products/epic-man-100ml",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-HONOUR-MAN",
+      "name": "Amouage Honour Man Eau de Parfum",
+      "source": "https://amouage.com/products/honour-man",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-DIA-MAN",
+      "name": "Amouage Dia Man Eau de Parfum",
+      "source": "https://amouage.com/products/dia-man",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-GOLD-MAN",
+      "name": "Amouage Gold Man Eau de Parfum",
+      "source": "https://amouage.com/products/gold-man",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-ENCLAVE",
+      "name": "Amouage Enclave Eau de Parfum",
+      "source": "https://amouage.com/products/enclave",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CHANEL-CHANEL-BLEU-DE-CHANEL-PARFUM",
+      "name": "Chanel Bleu de Chanel Parfum",
+      "source": "https://www.chanel.com/us/fragrance/p/107180/bleu-de-chanel-parfum-spray/",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CHANEL-CHANEL-BLEU-DE-CHANEL-EDP",
+      "name": "Chanel Bleu de Chanel Eau de Parfum",
+      "source": "https://www.chanel.com/us/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CHANEL-CHANEL-ALLURE-HOMME-SPORT-EAU-EXTREME",
+      "name": "Chanel Allure Homme Sport Eau Extrême",
+      "source": "https://www.chanel.com/us/fragrance/p/123560/allure-homme-sport-eau-extreme-eau-de-parfum-spray/",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CHANEL-CHANEL-COCO-MADEMOISELLE-EDP",
+      "name": "Chanel Coco Mademoiselle Eau de Parfum",
+      "source": "https://www.chanel.com/us/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CHANEL-CHANEL-NO-5-EDP",
+      "name": "Chanel Chanel No. 5 Eau de Parfum",
+      "source": "https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CHANEL-CHANEL-CHANCE-EAU-TENDRE-EDP",
+      "name": "Chanel Chance Eau Tendre Eau de Parfum",
+      "source": "https://www.chanel.com/us/fragrance/p/126260/chance-eau-tendre-eau-de-parfum-spray/",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CHANEL-CHANEL-PLATINUM-EGOISTE",
+      "name": "Chanel Platinum Égoïste Eau de Toilette",
+      "source": "https://www.chanel.com/us/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CHANEL-CHANEL-ANTAEUS",
+      "name": "Chanel Antaeus Eau de Toilette",
+      "source": "https://www.chanel.com/us/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-AVENTUS",
+      "name": "Creed Aventus Eau de Parfum",
+      "source": "https://creedboutique.com/products/aventus",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-SILVER-MOUNTAIN-WATER",
+      "name": "Creed Silver Mountain Water Eau de Parfum",
+      "source": "https://creedboutique.com/products/silver-mountain-water",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-GREEN-IRISH-TWEED",
+      "name": "Creed Green Irish Tweed Eau de Parfum",
+      "source": "https://creedboutique.com/products/green-irish-tweed",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-MILLESIME-IMPERIAL",
+      "name": "Creed Millésime Impérial Eau de Parfum",
+      "source": "https://creedboutique.com/products/millesime-imperial",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-VIRGIN-ISLAND-WATER",
+      "name": "Creed Virgin Island Water Eau de Parfum",
+      "source": "https://creedboutique.com/products/virgin-island-water",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-ROYAL-OUD",
+      "name": "Creed Royal Oud Eau de Parfum",
+      "source": "https://creedboutique.com/products/royal-oud",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-VIKING",
+      "name": "Creed Viking Eau de Parfum",
+      "source": "https://creedboutique.com/products/viking",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-ORIGINAL-VETIVER",
+      "name": "Creed Original Vetiver Eau de Parfum",
+      "source": "https://creedboutique.com/products/original-vetiver",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-AVENTUS-COLOGNE",
+      "name": "Creed Aventus Cologne Eau de Parfum",
+      "source": "https://creedboutique.com/products/aventus-cologne",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-CREED-CREED-CARMINA",
+      "name": "Creed Carmina Eau de Parfum",
+      "source": "https://creedboutique.com/products/carmina",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DIOR-DIOR-SAUVAGE-EDP",
+      "name": "Dior Sauvage Eau de Parfum",
+      "source": "https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-Y0785220.html",
+      "selectedVariant": "60ml",
+      "color": "60ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DIOR-DIOR-HOMME-INTENSE",
+      "name": "Dior Dior Homme Intense Eau de Parfum",
+      "source": "https://www.dior.com/en_us/beauty/products/dior-homme-intense-Y0479200.html",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DIOR-DIOR-FAHRENHEIT",
+      "name": "Dior Fahrenheit Eau de Toilette",
+      "source": "https://www.dior.com/en_us/beauty/products/fahrenheit-Y0067001.html",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DIOR-DIOR-GRIS-DIOR",
+      "name": "Dior Gris Dior (La Collection Privée)",
+      "source": "https://www.dior.com/en_us/beauty/products/gris-dior-Y0959160.html",
+      "selectedVariant": "40ml",
+      "color": "40ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-DIOR-DIOR-AMBRE-NUIT",
+      "name": "Dior Ambre Nuit (La Collection Privée)",
+      "source": "https://www.dior.com/en_us/beauty/products/ambre-nuit-Y0907150.html",
+      "selectedVariant": "40ml",
+      "color": "40ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-DIOR-DIOR-OUD-ISPAHAN",
+      "name": "Dior Oud Ispahan (La Collection Privée)",
+      "source": "https://www.dior.com/en_us/beauty/products/oud-ispahan-Y0959180.html",
+      "selectedVariant": "40ml",
+      "color": "40ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-DIOR-DIOR-BOIS-DARGENT",
+      "name": "Dior Bois d'Argent (La Collection Privée)",
+      "source": "https://www.dior.com/en_us/beauty/products/bois-dargent-Y0959140.html",
+      "selectedVariant": "40ml",
+      "color": "40ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-DIOR-DIOR-MISS-DIOR-EDP",
+      "name": "Dior Miss Dior Eau de Parfum",
+      "source": "https://www.dior.com/en_us/beauty/products/miss-dior-eau-de-parfum-Y0996347.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DOLCE---GABBANA-DG-LIGHT-BLUE-POUR-HOMME",
+      "name": "Dolce & Gabbana Light Blue Pour Homme Eau de Toilette",
+      "source": "https://www.dolcegabbana.com/en/beauty/fragrances/men/light-blue-pour-homme",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-DOLCE---GABBANA-DG-LIGHT-BLUE-POUR-FEMME",
+      "name": "Dolce & Gabbana Light Blue Eau de Toilette",
+      "source": "https://www.dolcegabbana.com/en/beauty/fragrances/women/light-blue",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DOLCE---GABBANA-DG-THE-ONE-FOR-MEN-EDP",
+      "name": "Dolce & Gabbana The One for Men Eau de Parfum",
+      "source": "https://www.dolcegabbana.com/en/beauty/fragrances/men/the-one-for-men-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DOLCE---GABBANA-DG-THE-ONE-FOR-WOMEN-EDP",
+      "name": "Dolce & Gabbana The One Eau de Parfum",
+      "source": "https://www.dolcegabbana.com/en/beauty/fragrances/women/the-one",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 75
+    },
+    {
+      "id": "PROD-FRAGRANCE-DOLCE---GABBANA-DG-K-BY-DOLCE-GABBANA-EDP",
+      "name": "Dolce & Gabbana K by Dolce & Gabbana Eau de Parfum",
+      "source": "https://www.dolcegabbana.com/en/beauty/fragrances/men/k-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DOLCE---GABBANA-DG-Q-BY-DOLCE-GABBANA-EDP",
+      "name": "Dolce & Gabbana Q by Dolce & Gabbana Eau de Parfum",
+      "source": "https://www.dolcegabbana.com/en/beauty/fragrances/women/q-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DOLCE---GABBANA-DG-DEVOTION-EDP",
+      "name": "Dolce & Gabbana Devotion Eau de Parfum",
+      "source": "https://www.dolcegabbana.com/en/beauty/fragrances/women/devotion",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-DOLCE---GABBANA-DG-LIGHT-BLUE-EAU-INTENSE-POUR-HOMME",
+      "name": "Dolce & Gabbana Light Blue Eau Intense Pour Homme",
+      "source": "https://www.dolcegabbana.com/en/beauty/fragrances/men/light-blue-eau-intense-pour-homme",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-GIORGIO-ARMANI-ARMANI-ACQUA-DI-GIO-PARFUM",
+      "name": "Giorgio Armani Acqua di Giò Parfum",
+      "source": "https://www.armani.com/en-us/experience/giorgio-armani/acqua-di-gio-parfum",
+      "selectedVariant": "40ml",
+      "color": "40ml",
+      "specificationVolumeMl": 75
+    },
+    {
+      "id": "PROD-FRAGRANCE-GIORGIO-ARMANI-ARMANI-ACQUA-DI-GIO-PROFONDO",
+      "name": "Giorgio Armani Acqua di Giò Profondo Eau de Parfum",
+      "source": "https://www.armani.com/en-us/experience/giorgio-armani/acqua-di-gio-profondo",
+      "selectedVariant": "40ml",
+      "color": "40ml",
+      "specificationVolumeMl": 75
+    },
+    {
+      "id": "PROD-FRAGRANCE-GIORGIO-ARMANI-ARMANI-CODE-PARFUM",
+      "name": "Giorgio Armani Armani Code Parfum",
+      "source": "https://www.armani.com/en-us/experience/giorgio-armani/armani-code-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 75
+    },
+    {
+      "id": "PROD-FRAGRANCE-GIORGIO-ARMANI-ARMANI-SI-EAU-DE-PARFUM-INTENSE",
+      "name": "Giorgio Armani Sì Eau de Parfum Intense",
+      "source": "https://www.armani.com/en-us/experience/giorgio-armani/si-edp-intense",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-GIORGIO-ARMANI-ARMANI-STRONGER-WITH-YOU-INTENSELY",
+      "name": "Giorgio Armani Emporio Armani Stronger With You Intensely",
+      "source": "https://www.armani.com/en-us/experience/emporio-armani/stronger-with-you-intensely",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-GIORGIO-ARMANI-ARMANI-MY-WAY-PARFUM",
+      "name": "Giorgio Armani My Way Parfum",
+      "source": "https://www.armani.com/en-us/experience/giorgio-armani/my-way-parfum",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-GIORGIO-ARMANI-ARMANI-ACQUA-DI-GIO-EAU-DE-TOILETTE",
+      "name": "Giorgio Armani Acqua di Giò Eau de Toilette",
+      "source": "https://www.armani.com/en-us/experience/giorgio-armani/acqua-di-gio-edt",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-LHOMME-IDEAL-EDP",
+      "name": "Guerlain L'Homme Idéal Eau de Parfum",
+      "source": "https://www.guerlain.com/us/en-us/fragrance/men/lhomme-ideal-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-SHALIMAR-EDP",
+      "name": "Guerlain Shalimar Eau de Parfum",
+      "source": "https://www.guerlain.com/us/en-us/fragrance/women/shalimar-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-MON-GUERLAIN-EDP",
+      "name": "Guerlain Mon Guerlain Eau de Parfum",
+      "source": "https://www.guerlain.com/us/en-us/fragrance/women/mon-guerlain-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-VETIVER-EDT",
+      "name": "Guerlain Vétiver Eau de Toilette",
+      "source": "https://www.guerlain.com/us/en-us/fragrance/men/vetiver-edt",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-HERM-S-HERMES-TERRE-DHERMES-EAU-GIVREE",
+      "name": "Hermès Terre d'Hermès Eau Givrée",
+      "source": "https://www.hermes.com/us/en/product/terre-d-hermes-eau-givree-eau-de-parfum-V109968V0/",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-HERM-S-HERMES-H24-EDP",
+      "name": "Hermès H24 Eau de Parfum",
+      "source": "https://www.hermes.com/us/en/product/h24-eau-de-parfum-V109673V0/",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-HERM-S-HERMES-TWILLY-DHERMES",
+      "name": "Hermès Twilly d'Hermès Eau de Parfum",
+      "source": "https://www.hermes.com/us/en/product/twilly-d-hermes-eau-de-parfum-V37609/",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 85
+    },
+    {
+      "id": "PROD-FRAGRANCE-HERM-S-HERMES-UN-JARDIN-SUR-LE-NIL",
+      "name": "Hermès Un Jardin sur le Nil Eau de Toilette",
+      "source": "https://www.hermes.com/us/en/product/un-jardin-sur-le-nil-eau-de-toilette-V20272/",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-HERM-S-HERMES-VOYAGE-DHERMES",
+      "name": "Hermès Voyage d'Hermès Parfum",
+      "source": "https://www.hermes.com/us/en/product/voyage-d-hermes-parfum-V20421/",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-LE-MALE-EDT",
+      "name": "Jean Paul Gaultier Le Male Eau de Toilette",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/men/le-male-edt",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-LE-MALE-LE-PARFUM",
+      "name": "Jean Paul Gaultier Le Male Le Parfum",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/men/le-male-le-parfum",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-LE-MALE-ELIXIR",
+      "name": "Jean Paul Gaultier Le Male Elixir Parfum",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/men/le-male-elixir",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-ULTRA-MALE",
+      "name": "Jean Paul Gaultier Ultra Male Eau de Toilette Intense",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/men/ultra-male",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-LE-BEAU-LE-PARFUM",
+      "name": "Jean Paul Gaultier Le Beau Le Parfum",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/men/le-beau-le-parfum",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-SCANDAL-POUR-HOMME",
+      "name": "Jean Paul Gaultier Scandal Pour Homme Eau de Toilette",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/men/scandal-pour-homme",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-SCANDAL-POUR-FEMME-EDP",
+      "name": "Jean Paul Gaultier Scandal Eau de Parfum",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/women/scandal",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 80
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-LA-BELLE-LE-PARFUM",
+      "name": "Jean Paul Gaultier La Belle Le Parfum",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/women/la-belle-le-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-CLASSIQUE-EDT",
+      "name": "Jean Paul Gaultier Classique Eau de Toilette",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/women/classique-edt",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-JEAN-PAUL-GAULTIER-JPG-DIVINE-EDP",
+      "name": "Jean Paul Gaultier Gaultier Divine Eau de Parfum",
+      "source": "https://www.jeanpaulgaultier.com/us/en/fragrances/women/gaultier-divine",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-FRANCIS-KURKDJIAN-MFK-BACCARAT-ROUGE-540-EDP",
+      "name": "Maison Francis Kurkdjian Baccarat Rouge 540 Eau de Parfum",
+      "source": "https://www.franciskurkdjian.com/us-en/p/baccarat-rouge-540-eau-de-parfum-RA14232.html",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 70
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-FRANCIS-KURKDJIAN-MFK-BACCARAT-ROUGE-540-EXTRAIT",
+      "name": "Maison Francis Kurkdjian Baccarat Rouge 540 Extrait de Parfum",
+      "source": "https://www.franciskurkdjian.com/us-en/p/baccarat-rouge-540-extrait-de-parfum-RA14233.html",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 70
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-FRANCIS-KURKDJIAN-MFK-GRAND-SOIR",
+      "name": "Maison Francis Kurkdjian Grand Soir Eau de Parfum",
+      "source": "https://www.franciskurkdjian.com/us-en/p/grand-soir-eau-de-parfum-RA122521.html",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 70
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-FRANCIS-KURKDJIAN-MFK-OUD-SATIN-MOOD",
+      "name": "Maison Francis Kurkdjian Oud Satin Mood Eau de Parfum",
+      "source": "https://www.franciskurkdjian.com/us-en/p/oud-satin-mood-eau-de-parfum-RA122221.html",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 70
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-FRANCIS-KURKDJIAN-MFK-724",
+      "name": "Maison Francis Kurkdjian 724 Eau de Parfum",
+      "source": "https://www.franciskurkdjian.com/us-en/p/724-eau-de-parfum-RA12352.html",
+      "selectedVariant": "35ml",
+      "color": "35ml",
+      "specificationVolumeMl": 70
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-JAZZ-CLUB",
+      "name": "Maison Margiela Replica Jazz Club Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-jazz-club/MM001.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-BY-THE-FIREPLACE",
+      "name": "Maison Margiela Replica By the Fireplace Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-by-the-fireplace/MM002.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-BEACH-WALK",
+      "name": "Maison Margiela Replica Beach Walk Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-beach-walk/MM003.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-SAILING-DAY",
+      "name": "Maison Margiela Replica Sailing Day Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-sailing-day/MM004.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-LAZY-SUNDAY-MORNING",
+      "name": "Maison Margiela Replica Lazy Sunday Morning Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-lazy-sunday-morning/MM005.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-COFFEE-BREAK",
+      "name": "Maison Margiela Replica Coffee Break Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-coffee-break/MM006.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-WHISPERS-IN-THE-LIBRARY",
+      "name": "Maison Margiela Replica Whispers in the Library Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-whispers-in-the-library/MM007.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-UNDER-THE-LEMON-TREES",
+      "name": "Maison Margiela Replica Under the Lemon Trees Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-under-the-lemon-trees/MM008.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-AUTUMN-VIBES",
+      "name": "Maison Margiela Replica Autumn Vibes Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-autumn-vibes/MM009.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-MAISON-MARGIELA-MARGIELA-WHEN-THE-RAIN-STOPS",
+      "name": "Maison Margiela Replica When the Rain Stops Eau de Toilette",
+      "source": "https://www.maisonmargiela-fragrances.us/fragrances/replica-when-the-rain-stops/MM010.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-1-MILLION-EDT",
+      "name": "Paco Rabanne 1 Million Eau de Toilette",
+      "source": "https://www.rabanne.com/us/en/fragrance/men/1-million-edt",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-1-MILLION-ELIXIR",
+      "name": "Paco Rabanne 1 Million Elixir Parfum Intense",
+      "source": "https://www.rabanne.com/us/en/fragrance/men/1-million-elixir",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-1-MILLION-ROYAL",
+      "name": "Paco Rabanne 1 Million Royal Parfum",
+      "source": "https://www.rabanne.com/us/en/fragrance/men/1-million-royal",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-INVICTUS-EDT",
+      "name": "Paco Rabanne Invictus Eau de Toilette",
+      "source": "https://www.rabanne.com/us/en/fragrance/men/invictus-edt",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-INVICTUS-VICTORY-ELIXIR",
+      "name": "Paco Rabanne Invictus Victory Elixir Parfum Intense",
+      "source": "https://www.rabanne.com/us/en/fragrance/men/invictus-victory-elixir",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-PHANTOM-EDT",
+      "name": "Paco Rabanne Phantom Eau de Toilette",
+      "source": "https://www.rabanne.com/us/en/fragrance/men/phantom-edt",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-PHANTOM-PARFUM",
+      "name": "Paco Rabanne Phantom Parfum",
+      "source": "https://www.rabanne.com/us/en/fragrance/men/phantom-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-OLYMPEA-EDP",
+      "name": "Paco Rabanne Olympéa Eau de Parfum",
+      "source": "https://www.rabanne.com/us/en/fragrance/women/olympea-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 80
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-FAME-EDP",
+      "name": "Paco Rabanne Fame Eau de Parfum",
+      "source": "https://www.rabanne.com/us/en/fragrance/women/fame-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 80
+    },
+    {
+      "id": "PROD-FRAGRANCE-PACO-RABANNE-RABANNE-PURE-XS-POUR-HOMME",
+      "name": "Paco Rabanne Pure XS Eau de Toilette",
+      "source": "https://www.rabanne.com/us/en/fragrance/men/pure-xs",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-LAYTON",
+      "name": "Parfums de Marly Layton Eau de Parfum",
+      "source": "https://us.parfums-de-marly.com/products/layton",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-HEROD",
+      "name": "Parfums de Marly Herod Eau de Parfum",
+      "source": "https://us.parfums-de-marly.com/products/herod",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-PEGASUS",
+      "name": "Parfums de Marly Pegasus Eau de Parfum",
+      "source": "https://us.parfums-de-marly.com/products/pegasus",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-CARLISLE",
+      "name": "Parfums de Marly Carlisle Eau de Parfum",
+      "source": "https://us.parfums-de-marly.com/products/carlisle",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-GREENLEY",
+      "name": "Parfums de Marly Greenley Eau de Parfum",
+      "source": "https://us.parfums-de-marly.com/products/greenley",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-SEDLEY",
+      "name": "Parfums de Marly Sedley Eau de Parfum",
+      "source": "https://us.parfums-de-marly.com/products/sedley",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-HALTANE",
+      "name": "Parfums de Marly Haltane Eau de Parfum",
+      "source": "https://us.parfums-de-marly.com/products/haltane",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-ALTHAIR",
+      "name": "Parfums de Marly Althaïr Eau de Parfum",
+      "source": "https://us.parfums-de-marly.com/products/althair",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-LUNA-ROSSA-BLACK",
+      "name": "Prada Luna Rossa Black Eau de Parfum",
+      "source": "https://www.prada.com/us/en/men/fragrances/luna-rossa/product.luna-rossa-black-edp.html",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-LUNA-ROSSA-OCEAN-EDP",
+      "name": "Prada Luna Rossa Ocean Eau de Parfum",
+      "source": "https://www.prada.com/us/en/men/fragrances/luna-rossa/product.luna-rossa-ocean-edp.html",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-LHOMME-PRADA-EDT",
+      "name": "Prada L'Homme Prada Eau de Toilette",
+      "source": "https://www.prada.com/us/en/men/fragrances/lhomme/product.lhomme-prada-edt.html",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-LHOMME-PRADA-INTENSE",
+      "name": "Prada L'Homme Prada Intense",
+      "source": "https://www.prada.com/us/en/men/fragrances/lhomme/product.lhomme-prada-intense.html",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-PARADOXE-EDP",
+      "name": "Prada Prada Paradoxe Eau de Parfum",
+      "source": "https://www.prada.com/us/en/women/fragrances/prada-paradoxe/product.paradoxe-edp.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-PARADOXE-INTENSE",
+      "name": "Prada Prada Paradoxe Intense",
+      "source": "https://www.prada.com/us/en/women/fragrances/prada-paradoxe/product.paradoxe-intense.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-CANDY-EDP",
+      "name": "Prada Prada Candy Eau de Parfum",
+      "source": "https://www.prada.com/us/en/women/fragrances/prada-candy/product.prada-candy-edp.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 80
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-LUNA-ROSSA-CARBON",
+      "name": "Prada Luna Rossa Carbon Eau de Toilette",
+      "source": "https://www.prada.com/us/en/men/fragrances/luna-rossa/product.luna-rossa-carbon.html",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-PRADA-PRADA-AMBER-POUR-HOMME",
+      "name": "Prada Prada Amber Pour Homme",
+      "source": "https://www.prada.com/us/en/men/fragrances/prada-amber/product.amber-pour-homme.html",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-CHERGUI",
+      "name": "Serge Lutens Chergui Eau de Parfum",
+      "source": "https://www.sergelutens.com/products/chergui-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-AMBRE-SULTAN",
+      "name": "Serge Lutens Ambre Sultan Eau de Parfum",
+      "source": "https://www.sergelutens.com/products/ambre-sultan-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FEMINITE-DU-BOIS",
+      "name": "Serge Lutens Féminité du Bois Eau de Parfum",
+      "source": "https://www.sergelutens.com/products/feminite-du-bois-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-LA-FILLE-DE-BERLIN",
+      "name": "Serge Lutens La Fille de Berlin Eau de Parfum",
+      "source": "https://www.sergelutens.com/products/la-fille-de-berlin-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-SANTAL-MAJUSCULE",
+      "name": "Serge Lutens Santal Majuscule Eau de Parfum",
+      "source": "https://www.sergelutens.com/products/santal-majuscule-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FLEURS-DORANGER",
+      "name": "Serge Lutens Fleurs d'Oranger Eau de Parfum",
+      "source": "https://www.sergelutens.com/products/fleurs-doranger-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-LORPHELINE",
+      "name": "Serge Lutens L'Orpheline Eau de Parfum",
+      "source": "https://www.sergelutens.com/products/lorpheline-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-UN-BOIS-VANILLE",
+      "name": "Serge Lutens Un Bois Vanille Eau de Parfum",
+      "source": "https://www.sergelutens.com/products/un-bois-vanille-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FIVE-OCLOCK-AU-GINGEMBRE",
+      "name": "Serge Lutens Five O'Clock Au Gingembre",
+      "source": "https://www.sergelutens.com/products/five-oclock-au-gingembre-eau-de-parfum",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-BORN-IN-ROMA-UOMO-EDT",
+      "name": "Valentino Born in Roma Uomo Eau de Toilette",
+      "source": "https://www.valentino.com/en-us/fragrances/born-in-roma-uomo-edt",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-BORN-IN-ROMA-UOMO-INTENSE",
+      "name": "Valentino Born in Roma Uomo Intense",
+      "source": "https://www.valentino.com/en-us/fragrances/born-in-roma-uomo-intense",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-BORN-IN-ROMA-DONNA-EDP",
+      "name": "Valentino Born in Roma Donna Eau de Parfum",
+      "source": "https://www.valentino.com/en-us/fragrances/born-in-roma-donna-edp",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-BORN-IN-ROMA-DONNA-INTENSE",
+      "name": "Valentino Born in Roma Donna Intense",
+      "source": "https://www.valentino.com/en-us/fragrances/born-in-roma-donna-intense",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-BORN-IN-ROMA-UOMO-CORAL-FANTASY",
+      "name": "Valentino Born in Roma Uomo Coral Fantasy",
+      "source": "https://www.valentino.com/en-us/fragrances/born-in-roma-uomo-coral-fantasy",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-UOMO-INTENSE-EDP",
+      "name": "Valentino Valentino Uomo Intense Eau de Parfum",
+      "source": "https://www.valentino.com/en-us/fragrances/valentino-uomo-intense",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-VOCE-VIVA-EDP",
+      "name": "Valentino Voce Viva Eau de Parfum",
+      "source": "https://www.valentino.com/en-us/fragrances/voce-viva",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-VOCE-VIVA-INTENSA",
+      "name": "Valentino Voce Viva Intensa Eau de Parfum",
+      "source": "https://www.valentino.com/en-us/fragrances/voce-viva-intensa",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-UOMO-BORN-IN-ROMA-GREEN-STRAVAGANZA",
+      "name": "Valentino Born in Roma Uomo Green Stravaganza",
+      "source": "https://www.valentino.com/en-us/fragrances/born-in-roma-green-stravaganza",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VALENTINO-VALENTINO-DONNA-BORN-IN-ROMA-GREEN-STRAVAGANZA",
+      "name": "Valentino Born in Roma Donna Green Stravaganza",
+      "source": "https://www.valentino.com/en-us/fragrances/born-in-roma-donna-green-stravaganza",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-EROS-EDT",
+      "name": "Versace Eros Eau de Toilette",
+      "source": "https://www.versace.com/us/en/fragrances/men/eros-edt",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-EROS-EDP",
+      "name": "Versace Eros Eau de Parfum",
+      "source": "https://www.versace.com/us/en/fragrances/men/eros-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-EROS-FLAME",
+      "name": "Versace Eros Flame Eau de Parfum",
+      "source": "https://www.versace.com/us/en/fragrances/men/eros-flame",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-DYLAN-BLUE-POUR-HOMME",
+      "name": "Versace Pour Homme Dylan Blue Eau de Toilette",
+      "source": "https://www.versace.com/us/en/fragrances/men/dylan-blue",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-POUR-HOMME-EDT",
+      "name": "Versace Versace Pour Homme Eau de Toilette",
+      "source": "https://www.versace.com/us/en/fragrances/men/versace-pour-homme",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-EAU-FRAICHE",
+      "name": "Versace Versace Man Eau Fraîche",
+      "source": "https://www.versace.com/us/en/fragrances/men/eau-fraiche",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-BRIGHT-CRYSTAL-EDT",
+      "name": "Versace Bright Crystal Eau de Toilette",
+      "source": "https://www.versace.com/us/en/fragrances/women/bright-crystal",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-CRYSTAL-NOIR-EDP",
+      "name": "Versace Crystal Noir Eau de Parfum",
+      "source": "https://www.versace.com/us/en/fragrances/women/crystal-noir",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-EROS-POUR-FEMME-EDP",
+      "name": "Versace Eros Pour Femme Eau de Parfum",
+      "source": "https://www.versace.com/us/en/fragrances/women/eros-pour-femme",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-VERSACE-VERSACE-DYLAN-PURPLE",
+      "name": "Versace Dylan Purple Eau de Parfum",
+      "source": "https://www.versace.com/us/en/fragrances/women/dylan-purple",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-BVLGARI-BVLGARI-MAN-IN-BLACK-EDP",
+      "name": "Bvlgari Bvlgari Man in Black Eau de Parfum",
+      "source": "https://www.bulgari.com/en-us/fragrances/men/bvlgari-man-in-black-edp",
+      "selectedVariant": "60ml",
+      "color": "60ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-BVLGARI-BVLGARI-MAN-WOOD-ESSENCE",
+      "name": "Bvlgari Bvlgari Man Wood Essence",
+      "source": "https://www.bulgari.com/en-us/fragrances/men/bvlgari-man-wood-essence",
+      "selectedVariant": "60ml",
+      "color": "60ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-BVLGARI-BVLGARI-MAN-RAIN-ESSENCE",
+      "name": "Bvlgari Bvlgari Man Rain Essence",
+      "source": "https://www.bulgari.com/en-us/fragrances/men/bvlgari-man-rain-essence",
+      "selectedVariant": "60ml",
+      "color": "60ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-BVLGARI-BVLGARI-AQVA-POUR-HOMME",
+      "name": "Bvlgari Aqva Pour Homme Eau de Toilette",
+      "source": "https://www.bulgari.com/en-us/fragrances/men/aqva-pour-homme",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-BVLGARI-BVLGARI-AQVA-AMARA",
+      "name": "Bvlgari Aqva Amara Eau de Toilette",
+      "source": "https://www.bulgari.com/en-us/fragrances/men/aqva-amara",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-BVLGARI-BVLGARI-OMNIA-CRYSTALLINE",
+      "name": "Bvlgari Omnia Crystalline Eau de Toilette",
+      "source": "https://www.bulgari.com/en-us/fragrances/women/omnia-crystalline",
+      "selectedVariant": "40ml",
+      "color": "40ml",
+      "specificationVolumeMl": 65
+    },
+    {
+      "id": "PROD-FRAGRANCE-BVLGARI-BVLGARI-POUR-HOMME-EDP",
+      "name": "Bvlgari Bvlgari Pour Homme Eau de Parfum",
+      "source": "https://www.bulgari.com/en-us/fragrances/men/bvlgari-pour-homme-edp",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-BVLGARI-BVLGARI-GOLDEA-THE-ROMAN-NIGHT",
+      "name": "Bvlgari Goldea The Roman Night",
+      "source": "https://www.bulgari.com/en-us/fragrances/women/goldea-the-roman-night",
+      "selectedVariant": "50ml",
+      "color": "50ml",
+      "specificationVolumeMl": 75
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-Y-EAU-DE-PARFUM",
+      "name": "Yves Saint Laurent Y Eau de Parfum",
+      "source": "https://www.yslbeautyus.com/fragrance/mens-fragrance/y/y-eau-de-parfum/675YSL.html",
+      "selectedVariant": "60ml",
+      "color": "60ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-LA-NUIT-DE-LHOMME",
+      "name": "Yves Saint Laurent La Nuit de L'Homme Eau de Toilette",
+      "source": "https://www.yslbeautyus.com/fragrance/mens-fragrance/l-homme/la-nuit-de-l-homme-eau-de-toilette/124YSL.html",
+      "selectedVariant": "60ml",
+      "color": "60ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-LIBRE-EDP",
+      "name": "Yves Saint Laurent Libre Eau de Parfum",
+      "source": "https://www.yslbeautyus.com/fragrance/womens-fragrance/libre/libre-eau-de-parfum/WW-50478YSL.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-LIBRE-LE-PARFUM",
+      "name": "Yves Saint Laurent Libre Le Parfum",
+      "source": "https://www.yslbeautyus.com/fragrance/womens-fragrance/libre/libre-le-parfum/WW-50923YSL.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-BLACK-OPIUM-EDP",
+      "name": "Yves Saint Laurent Black Opium Eau de Parfum",
+      "source": "https://www.yslbeautyus.com/fragrance/womens-fragrance/black-opium/black-opium-eau-de-parfum/375YSL.html",
+      "selectedVariant": "30ml",
+      "color": "30ml",
+      "specificationVolumeMl": 90
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-MYSLF-EDP",
+      "name": "Yves Saint Laurent MYSLF Eau de Parfum",
+      "source": "https://www.yslbeautyus.com/fragrance/mens-fragrance/myslf/myslf-eau-de-parfum/WW-50953YSL.html",
+      "selectedVariant": "40ml",
+      "color": "40ml",
+      "specificationVolumeMl": 100
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-TUXEDO-LE-VESTIAIRE",
+      "name": "Yves Saint Laurent Tuxedo (Le Vestiaire des Parfums)",
+      "source": "https://www.yslbeautyus.com/fragrance/le-vestiaire-des-parfums/tuxedo/WW-50346YSL.html",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-BABYCAT-LE-VESTIAIRE",
+      "name": "Yves Saint Laurent Babycat (Le Vestiaire des Parfums)",
+      "source": "https://www.yslbeautyus.com/fragrance/le-vestiaire-des-parfums/babycat/WW-50851YSL.html",
+      "selectedVariant": "75ml",
+      "color": "75ml",
+      "specificationVolumeMl": 125
+    },
+    {
+      "id": "PROD-FRAGRANCE-YVES-SAINT-LAURENT-YSL-LHOMME-EDT",
+      "name": "Yves Saint Laurent L'Homme Eau de Toilette",
+      "source": "https://www.yslbeautyus.com/fragrance/mens-fragrance/l-homme/l-homme-eau-de-toilette/121YSL.html",
+      "selectedVariant": "60ml",
+      "color": "60ml",
+      "specificationVolumeMl": 100
+    }
+  ]
+}
