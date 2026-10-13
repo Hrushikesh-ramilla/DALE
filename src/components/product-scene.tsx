@@ -223,7 +223,7 @@ function ContextGuard({ onLost }: { onLost: () => void }) {
 }
 export default function ProductScene({ product }: { product: Product }) {
   const root = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [inView, setInView] = useState(true);
   const [failed, setFailed] = useState(false);
   const [angle, setAngle] = useState(0);
   const reduced = !!useReducedMotion();
@@ -231,21 +231,11 @@ export default function ProductScene({ product }: { product: Product }) {
     const element = root.current;
     if (!element) return;
     const observer = new IntersectionObserver(
-      (entries) => setVisible(entries[0].isIntersecting && !document.hidden),
-      { rootMargin: "100px" },
+      (entries) => setInView(entries[0].isIntersecting && !document.hidden),
+      { rootMargin: "200px" },
     );
     observer.observe(element);
-    const visibility = () =>
-      setVisible(
-        !document.hidden &&
-          element.getBoundingClientRect().bottom > 0 &&
-          element.getBoundingClientRect().top < innerHeight + 100,
-      );
-    document.addEventListener("visibilitychange", visibility);
-    return () => {
-      observer.disconnect();
-      document.removeEventListener("visibilitychange", visibility);
-    };
+    return () => observer.disconnect();
   }, []);
   const fallback = (
     <div className="scene-fallback" data-scene="fallback">
@@ -261,7 +251,7 @@ export default function ProductScene({ product }: { product: Product }) {
     >
       {failed ? (
         fallback
-      ) : visible ? (
+      ) : inView ? (
         <SceneBoundary fallback={fallback}>
           <Suspense fallback={<ProductArt product={product} />}>
             <Canvas
@@ -301,7 +291,7 @@ export default function ProductScene({ product }: { product: Product }) {
           </Suspense>
         </SceneBoundary>
       ) : (
-        <ProductArt product={product} />
+        fallback
       )}
       {!failed && (
         <div className="scene-controls" aria-label="3D view controls">

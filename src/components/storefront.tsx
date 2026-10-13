@@ -124,7 +124,7 @@ export default function Storefront() {
           : "discover";
   const setTab = useCallback(
     (next: Tab) => {
-      router.push(next === "discover" ? "/shop" : `/${next}`, {
+      router.push(next === "discover" ? "/" : `/${next}`, {
         scroll: false,
       });
       window.scrollTo({ top: 0, behavior: "instant" });
@@ -134,14 +134,8 @@ export default function Storefront() {
   const [session, setSession] = useState<Session | null>(null),
     [modal, setModal] = useState<Modal>(null);
   const [restoring, setRestoring] = useState(true);
-  const [showIntro, setShowIntro] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return !sessionStorage.getItem("dale_intro_seen");
-  });
-  const [logoSettled, setLogoSettled] = useState(() => {
-    if (typeof window === "undefined") return true;
-    return Boolean(sessionStorage.getItem("dale_intro_seen"));
-  });
+  const [showIntro, setShowIntro] = useState(true);
+  const [logoSettled, setLogoSettled] = useState(false);
   const [products, setProducts] = useState<Product[]>(
     searchCatalog({ model: "Atlas 14", budget: 8000 }),
   );
@@ -421,12 +415,7 @@ export default function Storefront() {
       {showIntro && (
         <CinematicIntro
           targetSelector="[data-brand-logo]"
-          onSettled={() => {
-            setLogoSettled(true);
-            try {
-              sessionStorage.setItem("dale_intro_seen", "true");
-            } catch {}
-          }}
+          onSettled={() => setLogoSettled(true)}
           onComplete={() => setShowIntro(false)}
         />
       )}
@@ -968,12 +957,9 @@ export default function Storefront() {
                   {visibleProducts
                     .slice(0, visibleLimit)
                     .map((product, index) => (
-                      <motion.article
+                      <article
                         className="product-card"
                         key={product.id}
-                        layout
-                        initial={false}
-                        animate={{ opacity: 1 }}
                       >
                         <div className="card-visual">
                           <ProductArt product={product} />
@@ -1072,7 +1058,7 @@ export default function Storefront() {
                             </button>
                           </div>
                         </div>
-                      </motion.article>
+                      </article>
                     ))}
                 </div>
                 {visibleProducts.length > visibleLimit && (
@@ -1967,69 +1953,7 @@ export default function Storefront() {
             )}
           </>
         )}
-        <footer className="site-footer">
-          <div className="footer-brand">
-            <div className="brand">
-              <BrandWordmark />
-              <span className="sr-only">DALE</span>
-            </div>
-            <p>
-              Considered choices. Customer-first commerce. From your first
-              search to a fair resolution.
-            </p>
-          </div>
-          <div className="footer-links">
-            <strong>The collection</strong>
-            <button
-              onClick={() => {
-                setTab("discover");
-                window.scrollTo({
-                  top: 0,
-                  behavior: window.matchMedia(
-                    "(prefers-reduced-motion: reduce)",
-                  ).matches
-                    ? "instant"
-                    : "smooth",
-                });
-              }}
-            >
-              Discover essentials
-            </button>
-            <button onClick={() => setTab("groups")}>Buy together</button>
-            <button onClick={() => setTab("orders")}>Track an order</button>
-          </div>
-          <div className="footer-links">
-            <strong>At your service</strong>
-            <button onClick={() => setTab("support")}>Returns & support</button>
-            <button
-              onClick={() => {
-                setScam(null);
-                setModal({ kind: "scam" });
-              }}
-            >
-              Check a message
-            </button>
-            <button
-              onClick={() => {
-                setRole("seller");
-                setWorkspaceId(session?.actor.workspaceId || "");
-                setModal({ kind: "login" });
-              }}
-            >
-              Operator workspace
-            </button>
-          </div>
-        </footer>
-        <div className="footer-bottom">
-          <span>DALE / The considered collection</span>
-          <span>
-            Test storefront · Sourced products + sample catalog · Simulated
-            shipping · USD
-          </span>
-        </div>
-        <div className="closing-wordmark" aria-hidden="true">
-          <BrandWordmark />
-        </div>
+
         {session && (
           <details className="engineering-details">
             <summary>Environment details</summary>
@@ -2160,6 +2084,70 @@ export default function Storefront() {
           </details>
         )}
       </main>
+      <footer className="site-footer-wrap" inert={!!modal}>
+        <div className="site-footer-inner">
+          <div className="site-footer">
+            <div className="footer-brand">
+              <div className="brand">
+                <BrandWordmark />
+                <span className="sr-only">DALE</span>
+              </div>
+              <p>
+                Considered choices. Customer-first commerce. From your first
+                search to a fair resolution.
+              </p>
+            </div>
+            <div className="footer-links">
+              <strong>The collection</strong>
+              <button
+                onClick={() => {
+                  setTab("discover");
+                  window.scrollTo({
+                    top: 0,
+                    behavior: window.matchMedia(
+                      "(prefers-reduced-motion: reduce)",
+                    ).matches
+                      ? "instant"
+                      : "smooth",
+                  });
+                }}
+              >
+                Discover essentials
+              </button>
+              <button onClick={() => setTab("groups")}>Buy together</button>
+              <button onClick={() => setTab("orders")}>Track an order</button>
+            </div>
+            <div className="footer-links">
+              <strong>At your service</strong>
+              <button onClick={() => setTab("support")}>Returns & support</button>
+              <button
+                onClick={() => {
+                  setScam(null);
+                  setModal({ kind: "scam" });
+                }}
+              >
+                Check a message
+              </button>
+              <button
+                onClick={() => {
+                  setRole("seller");
+                  setWorkspaceId(session?.actor.workspaceId || "");
+                  setModal({ kind: "login" });
+                }}
+              >
+                Operator workspace
+              </button>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <span>DALE / The considered collection</span>
+            <span>
+              Test storefront · Sourced products + sample catalog · Simulated
+              shipping · USD
+            </span>
+          </div>
+        </div>
+      </footer>
       <AnimatePresence>
         {modal && (
           <motion.div

@@ -5,6 +5,7 @@ import "@fontsource/dm-sans/600.css";
 import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
 import { MotionProvider } from "@/components/motion-provider";
+import "lenis/dist/lenis.css";
 import "./fonts.css";
 import "./globals.css";
 import "./monochrome.css";
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
+    <html lang="en" data-scroll-behavior="auto">
       <body>
         <MotionProvider>{children}</MotionProvider>
       </body>

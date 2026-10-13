@@ -22,7 +22,7 @@ test("3D product selection, rotation and context-loss fallback retain catalog ac
   await expect(async () =>
     expect((await canvas.screenshot()).equals(before)).toBe(false),
   ).toPass();
-  await page.locator(".closing-wordmark").scrollIntoViewIfNeeded();
+  await page.locator(".site-footer-wrap").scrollIntoViewIfNeeded();
   await expect(canvas).toHaveCount(0);
   await page
     .getByRole("button", { name: "Next featured product" })
@@ -74,11 +74,11 @@ test("monochrome controls and isolated teal footer remain readable at narrow wid
         () => document.documentElement.scrollWidth <= innerWidth,
       ),
     ).toBe(true);
-    await page.locator(".closing-wordmark").scrollIntoViewIfNeeded();
-    await expect(page.locator(".closing-wordmark")).toBeVisible();
+    await page.locator(".site-footer-wrap").scrollIntoViewIfNeeded();
+    await expect(page.locator(".site-footer-wrap")).toBeVisible();
     expect(
       await page
-        .locator(".closing-wordmark")
+        .locator(".site-footer-wrap")
         .evaluate((el) => getComputedStyle(el).backgroundColor),
     ).toBe("rgb(41, 71, 69)");
   }

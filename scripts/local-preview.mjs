@@ -46,7 +46,7 @@ if (mode === "status") {
   console.log(
     JSON.stringify(
       {
-        url: `${url}/demo`,
+        url: url,
         supervisorRunning: Boolean(state?.pid && alive(state.pid)),
         state: state?.status || "not started",
         restarts: state?.restarts || 0,

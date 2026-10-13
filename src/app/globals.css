@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scroll-padding-top: 110px;
 }
 /* Focused voice controls must stay under the pointer when brought into view. */
