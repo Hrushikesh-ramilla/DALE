@@ -19,11 +19,9 @@ test("MFK exact-model task uses published volume/concentration evidence and a de
   const chat = page.locator("#dale-chat");
   await chat.getByRole("button", { name: "Send message", exact: true }).click();
   await expect(
-    chat
-      .getByLabel("DALE task result")
-      .getByRole("button", {
-        name: /Review agent option Maison Francis Kurkdjian APOM/,
-      }),
+    chat.getByLabel("DALE task result").getByRole("button", {
+      name: /Review agent option Maison Francis Kurkdjian APOM/,
+    }),
   ).toBeVisible();
   const state = await (await page.request.get("/api/session")).json();
   expect(state.agentRuns.at(-1).productIds).toEqual(["FRAGRANCE-MFK-RA120421"]);
@@ -63,4 +61,28 @@ test("MFK exact-model task uses published volume/concentration evidence and a de
       ),
     ).size,
   ).toBe(15);
+  for (const brand of ["parfums de marly", "amouage", "initio"]) {
+    await page.getByLabel("Brand", { exact: true }).selectOption(brand);
+    const photo = page.locator(".product-grid .product-photograph img").first();
+    await expect(photo).toBeVisible();
+    await photo.scrollIntoViewIfNeeded();
+    await expect
+      .poll(() =>
+        photo.evaluate((image: HTMLImageElement) => image.naturalWidth),
+      )
+      .toBeGreaterThan(0);
+    const result = await (
+      await page.request.get(
+        `/api/catalog?category=fragrance&brand=${encodeURIComponent(brand)}`,
+      )
+    ).json();
+    expect(result.total).toBe(15);
+    expect(
+      new Set(
+        result.products.map(
+          (p: { familyId?: string; id: string }) => p.familyId || p.id,
+        ),
+      ).size,
+    ).toBe(15);
+  }
 });

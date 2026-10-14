@@ -1,0 +1,655 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "fragrance-amouage-2026-10-11-v1",
+  "reviewedBy": "manufacturer-catalog-and-product-page-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "amouage.com"
+  ],
+  "products": [
+    {
+      "id": "FRAGRANCE-AMOUAGE-47515478589732",
+      "name": "Amouage Interlude Man · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Interlude Man, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41019",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/interlude-man-100ml",
+      "familyId": "amouage:interlude-man-100ml",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "interlude man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/INTERLUDE_MAN_100_ML.jpg?v=1758794506",
+        "source": "https://amouage.com/products/interlude-man-100ml",
+        "alt": "Amouage Interlude Man selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47564134580516",
+      "name": "Amouage Epic Man · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Epic Man, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41011",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/epic-man-100ml",
+      "familyId": "amouage:epic-man-100ml",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "epic man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/EPIC_MAN_100ML.jpg?v=1758788909",
+        "source": "https://amouage.com/products/epic-man-100ml",
+        "alt": "Amouage Epic Man selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47564197789988",
+      "name": "Amouage Jubilation XXV Man · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Jubilation XXV Man, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41007",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/jubilation-xxv-man",
+      "familyId": "amouage:jubilation-xxv-man",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "jubilation xxv man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/JUBILATION_MAN_100_ML.jpg?v=1759211804",
+        "source": "https://amouage.com/products/jubilation-xxv-man",
+        "alt": "Amouage Jubilation XXV Man selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47496344043812",
+      "name": "Amouage Honour Man · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Honour Man, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41015",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/honour-man",
+      "familyId": "amouage:honour-man",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "honour man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_MAN.jpg?v=1758790986",
+        "source": "https://amouage.com/products/honour-man",
+        "alt": "Amouage Honour Man selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47553946452260",
+      "name": "Amouage Dia Man · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Dia Man, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41003",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/dia-man",
+      "familyId": "amouage:dia-man",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "dia man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/DIA_MAN_100_ML.jpg?v=1758788196",
+        "source": "https://amouage.com/products/dia-man",
+        "alt": "Amouage Dia Man selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47564213977380",
+      "name": "Amouage Gold Man · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Gold Man, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41017",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/gold-man",
+      "familyId": "amouage:gold-man",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "gold man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_MAN_100_ML.jpg?v=1758789828",
+        "source": "https://amouage.com/products/gold-man",
+        "alt": "Amouage Gold Man selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47515464171812",
+      "name": "Amouage Honour Woman · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Honour Woman, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41111",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/honour-woman-100ml",
+      "familyId": "amouage:honour-woman-100ml",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "honour woman",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_WOMAN_100_ML.jpg?v=1758540357",
+        "source": "https://amouage.com/products/honour-woman-100ml",
+        "alt": "Amouage Honour Woman selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47565295681828",
+      "name": "Amouage Dia Woman · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Dia Woman, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41110",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/dia-woman-100ml",
+      "familyId": "amouage:dia-woman-100ml",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "dia woman",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Dia_100_ML_copy.jpg?v=1758787918",
+        "source": "https://amouage.com/products/dia-woman-100ml",
+        "alt": "Amouage Dia Woman selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47564210012452",
+      "name": "Amouage Gold Woman · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Gold Woman, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41018",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/gold-woman-100ml",
+      "familyId": "amouage:gold-woman-100ml",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "gold woman",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_WOMAN_100_ML_copy.jpg?v=1758790692",
+        "source": "https://amouage.com/products/gold-woman-100ml",
+        "alt": "Amouage Gold Woman selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47515458601252",
+      "name": "Amouage Guidance · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Guidance, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41045",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/100ml-guidance",
+      "familyId": "amouage:100ml-guidance",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "guidance",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GUIDANCE_100_ML.jpg?v=1758540475",
+        "source": "https://amouage.com/products/100ml-guidance",
+        "alt": "Amouage Guidance selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47564101320996",
+      "name": "Amouage Purpose · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Purpose, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41043",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/100ml-purpose",
+      "familyId": "amouage:100ml-purpose",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "purpose",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/PURPOSE_100_ML.jpg?v=1758540575",
+        "source": "https://amouage.com/products/100ml-purpose",
+        "alt": "Amouage Purpose selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-50461472194852",
+      "name": "Amouage Existence · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Existence, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41117",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/new-existence",
+      "familyId": "amouage:new-existence",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "existence",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/ODYSSEY11_100_ML.jpg?v=1770724711",
+        "source": "https://amouage.com/products/new-existence",
+        "alt": "Amouage Existence selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-50461536747812",
+      "name": "Amouage Decision · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Decision, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41118",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/new-decision",
+      "familyId": "amouage:new-decision",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "decision",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Odyssey12_100_ML.jpg?v=1770724676",
+        "source": "https://amouage.com/products/new-decision",
+        "alt": "Amouage Decision selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-AMOUAGE-47565583909156",
+      "name": "Amouage Lineage · Eau De Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-listed Lineage, selected 100ml bottle. Concentration and reference are recorded from the official storefront. DALE's selling price, inventory and fulfilment are simulated.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: 41042",
+        "Concentration: eau de parfum",
+        "Volume: 100ml"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://amouage.com/products/100ml-lineage",
+      "familyId": "amouage:100ml-lineage",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "Global manufacturer storefront",
+        "missing": [
+          "Olfactory notes, release year and ingredients were not recorded in this reviewed import.",
+          "Enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+          "Real merchant price, stock, authenticity and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "lineage",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/LINEAGE_100_ML.jpg?v=1758874076",
+        "source": "https://amouage.com/products/100ml-lineage",
+        "alt": "Amouage Lineage selected bottle photograph",
+        "attribution": "Amouage official storefront product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

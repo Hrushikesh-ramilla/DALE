@@ -52,7 +52,13 @@ export const briefSchema = z.object({
       voltage: z.number().positive().max(10000).optional(),
       capacityLitres: z.number().positive().max(10000).optional(),
       concentration: z
-        .enum(["eau de parfum", "eau de toilette", "eau de cologne"])
+        .enum([
+          "eau de parfum",
+          "eau de toilette",
+          "eau de cologne",
+          "parfum",
+          "extrait de parfum",
+        ])
         .optional(),
     })
     .strict()

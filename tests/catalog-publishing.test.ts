@@ -333,9 +333,12 @@ it("restores a withdrawn reviewed release without replacing product identities o
   await restoreCatalog(staged.id, staged.hash);
   expect(await getStoredProduct(before.id)).toEqual(before);
   expect(
-    (await browseCatalog({ category: "fragrance" })).products.some(
-      (p) => p.id === before.id,
-    ),
+    (
+      await browseCatalog({
+        category: "fragrance",
+        query: "isolated publication fixture",
+      })
+    ).products.some((p) => p.id === before.id),
   ).toBe(true);
   expect(await restoreCatalog(staged.id, staged.hash)).toMatchObject({
     existing: true,

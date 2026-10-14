@@ -5,12 +5,25 @@ import rayBan from "../../catalog/manifests/eyewear-ray-ban-2026-10-11-v1.json";
 import applePhones from "../../catalog/manifests/phones-apple-2026-10-11-v1.json";
 import eyewear from "../../catalog/manifests/eyewear-oakley-2026-10-11-v1.json";
 import mfk from "../../catalog/manifests/fragrance-mfk-2026-10-11-v1.json";
+import pdm from "../../catalog/manifests/fragrance-pdm-2026-10-11-v1.json";
+import amouage from "../../catalog/manifests/fragrance-amouage-2026-10-11-v1.json";
+import initio from "../../catalog/manifests/fragrance-initio-2026-10-11-v1.json";
 import { catalogManifestSchema } from "@/domain/catalog-manifest";
 import type { Sql } from "./database";
 
 /** Deploy the reviewed starter batch once. Withdrawal survives subsequent restarts. */
 export async function bootstrapReviewedCatalog(sql: Sql) {
-  for (const input of [eyewear, watches, rolex, rayBan, applePhones, mfk]) {
+  for (const input of [
+    eyewear,
+    watches,
+    rolex,
+    rayBan,
+    applePhones,
+    mfk,
+    pdm,
+    amouage,
+    initio,
+  ]) {
     const manifest = catalogManifestSchema.parse(input);
     const content = JSON.stringify(manifest);
     const hash = createHash("sha256").update(content).digest("hex");

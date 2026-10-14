@@ -1,5 +1,23 @@
 # Catalog expansion acceptance
 
+## Verified 142-record release — 11 October 2026
+
+Application **9547200** is ready locally and deployed at https://65.0.19.200.sslip.io/shop. It contains 142 offers / 138 distinct families, across eight populated departments. MFK, Parfums de Marly, Amouage and Initio each have fifteen reviewed fragrance families. Product pages and variant metadata bind the concentration, volume, reference and photograph; missing notes, ingredients and performance evidence are not invented. Prices, inventory and fulfilment remain sandbox merchant terms, independent of manufacturer product identity.
+
+[GitHub release verification](https://github.com/Hrushikesh-ramilla/DALE/actions/runs/38153912756) passes lint, type checks, **410 tests in 56 files**, **ten Linux production browser journeys**, **eleven packaged OCR checks**, Linux build and the isolated 10,000-record capacity gate. The local production build and persistent preview also pass. The corrected restoration test looks up the restored record directly rather than assuming it appears on the first 48-record page.
+
+Actual hosted evidence:
+
+- [Twenty customer/commerce checks](evaluations/retail-9547200-prepare.json), using real hosted PostgreSQL and independent owned customer sessions with isolated agent/payment fixtures.
+- [Eight persistence checks](evaluations/retail-9547200-restart.json) after an actual app and worker restart; both services report active.
+- [Four-house photograph and read-burst receipt](evaluations/fragrance-9547200-hosted.json): actual browser image decoding, fifteen distinct families per house, fifty requests in five waves of ten; network-inclusive p95 425 ms.
+- Public cursor traversal: 48/48/46 records, 142 unique IDs. [Linux capacity receipt](evaluations/catalog-capacity-linux-9547200.json): 10,000 isolated synthetic records, 209 pages, ten concurrent typed filters, no fixture leakage, query p95 250 ms. The isolated receipt is not EC2 HTTP throughput or public inventory.
+
+The exact CI artifact was checksum-checked and installed with a pre-upgrade snapshot. Every private setting except BUILD_ID was preserved; no database reset, new model request, billing change or genuine payment capture occurred. The real instance reports 1,905 MiB RAM, so an earlier owner-reported 4 GiB is not used as a measured capacity claim.
+
+This release closes the batch gates. It does **not** close the 2,000-family/per-brand assortment, all category/accessory facts, durable refresh/revision operations, full agent evaluation, genuine payment-provider qualification or sustained commercial-load requirements.
+
+
 ## Database publication foundation — 11 October 2026
 
 The application reads published inventory from PostgreSQL/PGlite, rather than a bundled ID whitelist. Legacy records are classified once at database initialization and are never overwritten on ordinary reads. Imported records can be searched, quoted, purchased in fixtures, grouped between independent shoppers and resolved in historical orders. Withdrawal blocks new checkout while retaining history; restoration requires the original reviewed hash.

@@ -1,0 +1,727 @@
+{
+  "checkedAt": "2026-10-11",
+  "profile": {
+    "key": "amouage",
+    "host": "amouage.com",
+    "brand": "Amouage",
+    "mediaPath": "/s/files/1/0823/5099/7796/",
+    "concentration": "catalog_type",
+    "models": [
+      "Interlude Man",
+      "Epic Man",
+      "Jubilation XXV Man",
+      "Honour Man",
+      "Dia Man",
+      "Gold Man",
+      "Honour Woman",
+      "Dia Woman",
+      "Gold Woman",
+      "Guidance",
+      "Purpose",
+      "Existence",
+      "Decision",
+      "Lineage"
+    ]
+  },
+  "feedUrl": "https://amouage.com/products.json?limit=250",
+  "feedSha256": "ff0087369a65338a8d9a39ce343de6fbadfb4bf6e4d661a3815dd1c9902a4c54",
+  "observations": [
+    {
+      "source": "https://amouage.com/products/interlude-man-100ml",
+      "catalogProduct": {
+        "id": 8897004044580,
+        "title": "Interlude Man",
+        "handle": "interlude-man-100ml",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47515478589732,
+            "title": "100ml",
+            "sku": "41019",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53025240547620,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/INTERLUDE_MAN_100_ML.jpg?v=1758794506",
+            "variant_ids": []
+          },
+          {
+            "id": 53025240580388,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/INTERLUDE_MAN_BOX_100ML.jpg?v=1758794575",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "3d3fd210248da2cdb92c25a9b3f5ae411c31fa5b3e18ec632d9c93f5108de26c",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 181597
+    },
+    {
+      "source": "https://amouage.com/products/epic-man-100ml",
+      "catalogProduct": {
+        "id": 8897003356452,
+        "title": "Epic Man",
+        "handle": "epic-man-100ml",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47564134580516,
+            "title": "100ml",
+            "sku": "41011",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53024814989604,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/EPIC_MAN_100ML.jpg?v=1758788909",
+            "variant_ids": []
+          },
+          {
+            "id": 53024814956836,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/EPIC_MAN_BOX.jpg?v=1758788833",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "164ef3c23ee0f0559f46900b1b424e72e9196a1a74f0c344a759e3ff881e0cb1",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 180384
+    },
+    {
+      "source": "https://amouage.com/products/jubilation-xxv-man",
+      "catalogProduct": {
+        "id": 8897004667172,
+        "title": "Jubilation XXV Man",
+        "handle": "jubilation-xxv-man",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47564197789988,
+            "title": "100ml",
+            "sku": "41007",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53050714128676,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/JUBILATION_MAN_100_ML.jpg?v=1759211804",
+            "variant_ids": []
+          },
+          {
+            "id": 53050714161444,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Amouage_CS_Photo_Box_JubilationXXV_09f11ac1-030d-400b-b9c7-c2adf3982e42.jpg?v=1759211804",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "68770abd28d80d408a67e6d69eb16f600da68c42eae618a040f357b16c3f72db",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 192747
+    },
+    {
+      "source": "https://amouage.com/products/honour-man",
+      "catalogProduct": {
+        "id": 8896982679844,
+        "title": "Honour Man",
+        "handle": "honour-man",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47496344043812,
+            "title": "100ml",
+            "sku": "41015",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53025060290852,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_MAN.jpg?v=1758790986",
+            "variant_ids": []
+          },
+          {
+            "id": 53025060323620,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_MAN_BOX.jpg?v=1758790974",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "5261e149c400bc20817d051b166a7e0ae6ae25a2e5ea5be8485ba934d05191df",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 165656
+    },
+    {
+      "source": "https://amouage.com/products/dia-man",
+      "catalogProduct": {
+        "id": 8897004208420,
+        "title": "Dia Man",
+        "handle": "dia-man",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47553946452260,
+            "title": "100ml",
+            "sku": "41003",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53024775045412,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/DIA_MAN_100_ML.jpg?v=1758788196",
+            "variant_ids": []
+          },
+          {
+            "id": 53024774783268,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/DIA_MAN_BOX_100ML_copy.jpg?v=1758788202",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "699dfb5c70b9e27f5afd2229a8414c161b962f783e24ec7346437dedfc5ab3a2",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 192544
+    },
+    {
+      "source": "https://amouage.com/products/gold-man",
+      "catalogProduct": {
+        "id": 8897006666020,
+        "title": "Gold Man",
+        "handle": "gold-man",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47564213977380,
+            "title": "100ml",
+            "sku": "41017",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53024988528932,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_MAN_100_ML.jpg?v=1758789828",
+            "variant_ids": []
+          },
+          {
+            "id": 53024988234020,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_MAN_BOX.jpg?v=1758789827",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "845481aacc1967b81a09bc44eb1a0e84d50c446a782b4f940c19048e932bdfbc",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 194747
+    },
+    {
+      "source": "https://amouage.com/products/honour-woman-100ml",
+      "catalogProduct": {
+        "id": 8897002701092,
+        "title": "Honour Woman",
+        "handle": "honour-woman-100ml",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47515464171812,
+            "title": "100ml",
+            "sku": "41111",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53006190739748,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_WOMAN_100_ML.jpg?v=1758540357",
+            "variant_ids": []
+          },
+          {
+            "id": 53006190412068,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_WOMAN_BOX.jpg?v=1758540357",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "036e99d8b91f5feb7702137d3cc40ff4bed685be64a43671482ae0925d669d4d",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 165416
+    },
+    {
+      "source": "https://amouage.com/products/dia-woman-100ml",
+      "catalogProduct": {
+        "id": 8897003290916,
+        "title": "Dia Woman",
+        "handle": "dia-woman-100ml",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47565295681828,
+            "title": "100ml",
+            "sku": "41110",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53024750534948,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Dia_100_ML_copy.jpg?v=1758787918",
+            "variant_ids": []
+          },
+          {
+            "id": 53024750502180,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/DIA_Woman_100ML_Box.jpg?v=1758787867",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "f57b770b0cd843c2767edf91468eece676e8afb7726970737ceb659349337a53",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 175767
+    },
+    {
+      "source": "https://amouage.com/products/gold-woman-100ml",
+      "catalogProduct": {
+        "id": 8897005388068,
+        "title": "Gold Woman",
+        "handle": "gold-woman-100ml",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47564210012452,
+            "title": "100ml",
+            "sku": "41018",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53025049051428,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_WOMAN_100_ML_copy.jpg?v=1758790692",
+            "variant_ids": []
+          },
+          {
+            "id": 53025048985892,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_WOMAN.jpg?v=1758790834",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "28031ac03acd5e6ec2431c0789d282a5e904486465fa1b092e5ffc5cf1cfef74",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 175715
+    },
+    {
+      "source": "https://amouage.com/products/100ml-guidance",
+      "catalogProduct": {
+        "id": 8897012072740,
+        "title": "Guidance",
+        "handle": "100ml-guidance",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Gifts. Gifts: Universal gift",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47515458601252,
+            "title": "100ml",
+            "sku": "41045",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53006200602916,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GUIDANCE_100_ML.jpg?v=1758540475",
+            "variant_ids": []
+          },
+          {
+            "id": 53006200635684,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GUIDANCE_BOX_100ML.jpg?v=1758540475",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "8a2f7273bbb6aac0e1b1e90ff375dbb18acc4ea90a1b0fd588d8f7269eb02297",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 168877
+    },
+    {
+      "source": "https://amouage.com/products/100ml-purpose",
+      "catalogProduct": {
+        "id": 8897012302116,
+        "title": "Purpose",
+        "handle": "100ml-purpose",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47564101320996,
+            "title": "100ml",
+            "sku": "41043",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53006203978020,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/PURPOSE_100_ML.jpg?v=1758540575",
+            "variant_ids": []
+          },
+          {
+            "id": 53006204010788,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/PURPOSE_BOX.jpg?v=1758540575",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "a3941c920c3472ef40e1660e941551b1307a1e9f2cdb19f6d44c34dc48ea6814",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 164292
+    },
+    {
+      "source": "https://amouage.com/products/new-existence",
+      "catalogProduct": {
+        "id": 10027474387236,
+        "title": "Existence",
+        "handle": "new-existence",
+        "product_type": "EDP",
+        "tags": [
+          "lunar-year"
+        ],
+        "variants": [
+          {
+            "id": 50461472194852,
+            "title": "100ml",
+            "sku": "41117",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53173475672356,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/ODYSSEY11_100_ML.jpg?v=1770724711",
+            "variant_ids": []
+          },
+          {
+            "id": 53173506474276,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Amouage_CS_Photo_Box_Odyssey_Existence_f1f1cffe-ccab-4bd1-ba67-dab770d2acba.jpg?v=1770724711",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "ce43747dfe5575fce7008c54684baff5f1c854dfb07303fefbacdbb97f3e9f4d",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 154506
+    },
+    {
+      "source": "https://amouage.com/products/new-decision",
+      "catalogProduct": {
+        "id": 10027495620900,
+        "title": "Decision",
+        "handle": "new-decision",
+        "product_type": "EDP",
+        "tags": [
+          "lunar-year"
+        ],
+        "variants": [
+          {
+            "id": 50461536747812,
+            "title": "100ml",
+            "sku": "41118",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53173475705124,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Odyssey12_100_ML.jpg?v=1770724676",
+            "variant_ids": []
+          },
+          {
+            "id": 53173506507044,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Amouage_CS_Photo_Box_Odyssey_Decision_c13822ed-de5e-4305-bd83-17443cdfe0ce.jpg?v=1770724676",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "b5a2439756709d125fc1e31da3adb9e9c7322418b3d8650c69e2bf1fed617c20",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 161310
+    },
+    {
+      "source": "https://amouage.com/products/100ml-lineage",
+      "catalogProduct": {
+        "id": 8897012269348,
+        "title": "Lineage",
+        "handle": "100ml-lineage",
+        "product_type": "EDP",
+        "tags": [
+          "Admin",
+          "Africa Dollar $",
+          "Asia Dollar $",
+          "Bahrain",
+          "Canada Dollar",
+          "Channel Islands Pound",
+          "EU",
+          "Euro",
+          "Italy",
+          "Kuwait",
+          "Oman",
+          "Pound Sterling",
+          "Qatar",
+          "Saudi Arabia",
+          "South America Dollar $",
+          "UAE",
+          "US Dollar $"
+        ],
+        "variants": [
+          {
+            "id": 47565583909156,
+            "title": "100ml",
+            "sku": "41042",
+            "featured_image": null
+          }
+        ],
+        "images": [
+          {
+            "id": 53029455266084,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/LINEAGE_100_ML.jpg?v=1758874076",
+            "variant_ids": []
+          },
+          {
+            "id": 53029455233316,
+            "src": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/LINEAGE_BOX.jpg?v=1758874076",
+            "variant_ids": []
+          }
+        ]
+      },
+      "htmlSha256": "7290274be77af38c3e21d575748eb23f9c320c2323425042f7b15cc4afa050af",
+      "imageStatus": 200,
+      "imageType": "image/jpeg",
+      "imageBytes": 164323
+    }
+  ]
+}
