@@ -2,6 +2,7 @@ import { PGlite } from "@electric-sql/pglite";
 import { Pool } from "pg";
 import { mkdir } from "node:fs/promises";
 import path from "node:path";
+import { bootstrapCatalog } from "./catalog-bootstrap";
 export interface Sql {
   query<T = Record<string, unknown>>(
     sql: string,
@@ -19,6 +20,11 @@ const schema = `
 CREATE TABLE IF NOT EXISTS catalog_products (id text PRIMARY KEY, category text NOT NULL, price integer NOT NULL CHECK(price>0), record jsonb NOT NULL);
 CREATE INDEX IF NOT EXISTS catalog_category_price ON catalog_products(category,price,id);
 CREATE INDEX IF NOT EXISTS catalog_attributes ON catalog_products USING gin ((record->'attributes'));
+ALTER TABLE catalog_products ADD COLUMN IF NOT EXISTS publication text NOT NULL DEFAULT 'unclassified';
+ALTER TABLE catalog_products ADD COLUMN IF NOT EXISTS release_id text;
+CREATE INDEX IF NOT EXISTS catalog_search_document ON catalog_products USING gin (to_tsvector('simple',coalesce(record->>'name','') || ' ' || coalesce(record->>'description','') || ' ' || coalesce(record->>'specs','')));
+CREATE INDEX IF NOT EXISTS catalog_publication_category ON catalog_products(publication,category,price,id);
+CREATE TABLE IF NOT EXISTS catalog_releases (id text PRIMARY KEY, content_hash text NOT NULL, status text NOT NULL CHECK(status IN ('staged','published','retired')), manifest jsonb NOT NULL, reviewed_by text NOT NULL, created_at timestamptz NOT NULL DEFAULT now(), published_at timestamptz);
 CREATE TABLE IF NOT EXISTS workspaces (id text PRIMARY KEY, state jsonb NOT NULL);
 CREATE TABLE IF NOT EXISTS storefronts (id text PRIMARY KEY, workspace_id text NOT NULL REFERENCES workspaces(id));
 CREATE TABLE IF NOT EXISTS customer_accounts (id text PRIMARY KEY, email text UNIQUE, name text NOT NULL, password_hash text, created_at timestamptz NOT NULL DEFAULT now());
@@ -74,6 +80,7 @@ async function initialize(): Promise<Database> {
       // App and worker may start together on a fresh host. Serialize compatible DDL.
       await sql.query("SELECT pg_advisory_xact_lock(72190461)");
       await sql.query(schema);
+      await bootstrapCatalog(sql);
     });
     return db;
   }
@@ -94,6 +101,7 @@ async function initialize(): Promise<Database> {
       return { rows: result.rows };
     },
   });
+  await engine.transaction((tx) => bootstrapCatalog(wrap(tx)));
   return {
     ...wrap(engine),
     close: () => engine.close(),

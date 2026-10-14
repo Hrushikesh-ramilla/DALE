@@ -1,13 +1,64 @@
 # Change log
 
+## 2026-10-11 — Reviewed Ray-Ban eyewear and model identity guards
+
+- Add ten distinct selected Ray-Ban references reviewed in the official storefront, with exact UPCs, observed frame/lens colours, optional size/polarization and attributed photographs. Verify every photograph endpoint; explicitly disclose unavailable dimensions, UV and fit information.
+- Support Ray-Ban, Ray Ban and Rayban task spellings using database-resolved brand context. Prefer a longer explicitly named model and refuse unsupported XL/Pro/Max variants instead of substituting base models.
+- Add publication, alias, missing-fact and model-substitution contracts and Ray-Ban browser photography coverage. Assortment becomes 75 reviewed records; the full enlarged scope remains pending.
+
+## 2026-10-11 — Reviewed Rolex watch collections
+
+- Add ten distinct official collections, exact manufacturer references and photographs. Parse explicit JSON-LD case diameter, material, dial colour, movement and water resistance; reject identity/media mismatches and absent required specifications.
+- Preserve source fingerprints and successful photograph observations. Disclose the fixed sandbox offer separately from manufacturer prices, stock, affiliation and physical authenticity.
+- Add source contract and database/agent filter coverage, and a browser photo rendering/failure check. Public assortment becomes 65 reviewed records across eight nonempty departments; the complete per-brand expansion remains pending.
+
+## 2026-10-11 — Reviewed Tissot watches and imported-product agent approvals
+
+- Add ten distinct manufacturer collections with exact reference numbers, attributed photographs, recorded movement/case dimensions and optional explicitly stated water resistance. Preserve missing-fit and sandbox inventory boundaries.
+- Add a bounded official-source collector, source fingerprints and identity/media/currency validation. Product publication remains an immutable reviewed batch.
+- Resolve imported recommendations and group offers through persisted customer-visible product references; support manifest IDs through explicit commerce actions.
+- Verify a 500-record isolated publication across eleven pages, withdrawal, full ID limits and a browser journey covering photographs, retained agent recommendations, independent group members, explicit simulated purchase and order privacy.
+- Catalog scope is 55 records across eight nonempty departments. This does not complete the planned 2,000-product assortment or commercial load qualification.
+
+## 2026-10-11 — Reviewed Oakley sunglasses batch
+
+- Add ten distinct manufacturer-referenced sunglasses models: Holbrook, Frogskins, Sutro, Flak 2.0 XL, Gascan, Batwolf, Jawbreaker, Half Jacket 2.0 XL, Split Shot and Radar EV Pitch.
+- Publish exact-reference photographs with attribution, reviewed frame material/shape and explicit missing lens/UV/fit information. All ten manufacturer image endpoints return HTTP 200 image/png. Prices and stock are sandbox offers.
+- Apply the immutable batch once at database initialization; preserve operator withdrawal across restarts and restore only against the original reviewed hash.
+- Add eyewear publication, exact-attribute search and withdrawal/restoration contracts. Catalog grows from 35 to 45 records across seven nonempty departments; this batch is not the completed 2,000-product assortment.
+
+## 2026-10-11 — Database catalog publication foundation
+
+- Classify legacy catalog IDs once during initialization; ordinary reads no longer overwrite database records or rely on a public SKU whitelist. Preserve retired product records for orders and groups.
+- Add immutable reviewed manifests, private staging, atomic publication, hash checks, collision rejection and reversible retirement through a privileged operator CLI.
+- Connect catalog search, public counts, category facets, imported-product shopping, groups, checkout and historical rendering to persisted records. Add indexed text search and bounded server pagination.
+- Add separate headphones, earbuds, watches, shoes, sunglasses and appliance types, typed category facts, manufacturer-photo attribution and visible image failures. Empty departments remain hidden until records are published.
+- Verify isolated publication/purchase/group/retirement contracts and dynamic brand/model recognition without model calls or paid infrastructure. Large real-brand assortments and operational scale gates remain pending.
+
+## 2026-10-11 — Marketplace architecture and eyewear planning
+
+- Add sunglasses/eyewear with selected Oakley/Ray-Ban and an 18-house candidate shortlist, exact lens/frame variant facts and evidence boundaries.
+- Expand the catalog plan into a production implementation specification: 12 priority departments, distinct-product depth targets, additive data model, staged imports/media, database publication, typed search, accessory relationships, transactional commerce and operator workflows.
+- Audit the current static public registry/search path and actual EC2 capacity. Specify load, migration, privacy, agent, independent-shopper, rollback and hosted acceptance gates without claiming they have passed.
+- Connect the specification to MASTER_PLAN and CURRENT_STATUS. Planning only: no runtime change, product import, provider call or infrastructure purchase.
+
+## 2026-10-11 — Featured product rendering repair
+
+- Fix the branded hero path that displayed pale text-only identity cards on a transparent light stage.
+- Render original shaded category illustrations for phone, fragrance, bag and clothing slides. Identify illustrations explicitly; retain sourced product names, sandbox prices and detail actions.
+- Bound artwork responsively and add desktop/mobile browser coverage for all four slides, wraparound controls, visible silhouette geometry and horizontal overflow.
+- Application ddc8361 is deployed. Local and Linux production builds, 378 unit/contract tests, five production browser journeys and 11 packaged OCR checks pass. The actual public-site artwork journey passes at 1920px and 390px across all four slides; HTTPS health reports the expected build and both services are active. Existing private configuration fields are unchanged. Evidence: docs/evaluations/featured-artwork-ddc8361.json.
+
 ## 2026-10-11 — Sourced branded catalogue
 
 - Replace ordinary invented inventory with 35 manufacturer-linked branded records, preserving sample SKU histories. Add phones, laptops, tablets and nested department/category/type navigation.
+- Render primary-source links for the retained Apple charging references and bundle, with a contract for every public record.
 - Suppress recommendation/ranking claims until preview constraints are confirmed.
 - Present department selection as navigation, reset stale preview constraints and distinguish exact-variant confirmation from device fit.
 - Feature sourced products in the hero; remove unsourced compatibility/protection guarantees while retaining the accepted design.
+- Preserve Armani/Giorgio Armani and Maison Martin Margiela/Maison Margiela house aliases; an unavailable house must not become an unrelated offer.
 - Carry exact brand/model, size, concentration, RAM/storage and budget constraints through persisted queries, agent plans, groups and purchase guards. Withhold incomplete apparel candidates; disclose missing facts and simulated offers.
-- Add branded query/guard/refinement contracts and desktop/mobile browser coverage. Preserve provider configuration and customer data. Final release evidence is tracked in docs/BRANDED_CATALOG.md.
+- Add branded query/guard/refinement contracts and desktop/mobile browser coverage. Preserve provider configuration and customer data. Application ee45425 is deployed: 378 unit/contract tests, four production browser journeys, 20 actual hosted checks and eight actual restart checks pass. Provider settings and existing customer data are preserved. No live-model call or real payment capture occurs. Full release evidence is tracked in docs/BRANDED_CATALOG.md.
 
 ## 2026-10-11 — Six-department agent shopping
 

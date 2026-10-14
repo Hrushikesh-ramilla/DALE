@@ -6,12 +6,18 @@ export const categoryIds = [
   "docks",
   "storage",
   "audio",
+  "headphones",
+  "earbuds",
   "accessories",
   "clothing",
   "fragrance",
   "bags",
   "home",
   "beauty",
+  "watches",
+  "footwear",
+  "sunglasses",
+  "appliances",
 ] as const;
 export type Category = (typeof categoryIds)[number];
 export const retailCategories = [
@@ -23,6 +29,10 @@ export const retailCategories = [
   "bags",
   "home",
   "beauty",
+  "watches",
+  "footwear",
+  "sunglasses",
+  "appliances",
 ] as const;
 export type RetailCategory = (typeof retailCategories)[number];
 export const lifestyleProfile = "not-required";
@@ -37,7 +47,13 @@ export const categoryTitles: Record<Category, string> = {
   chargers: "Power & Charging",
   docks: "Desk & Connectivity",
   storage: "Storage",
-  audio: "Sound & Focus",
+  audio: "Audio & Speakers",
+  headphones: "Headphones",
+  earbuds: "Earphones & Earbuds",
+  watches: "Watches",
+  footwear: "Shoes",
+  sunglasses: "Sunglasses",
+  appliances: "Appliances",
   accessories: "Computer Accessories",
   clothing: "Clothing",
   fragrance: "Fragrance",
@@ -57,6 +73,8 @@ export const departments = [
       "docks",
       "storage",
       "audio",
+      "headphones",
+      "earbuds",
       "accessories",
     ],
     description:
@@ -96,5 +114,33 @@ export const departments = [
     categories: ["beauty"],
     description:
       "Routine essentials with stated ingredients and volume. No medical or allergy-safety promises.",
+  },
+  {
+    id: "watches",
+    title: "Watches",
+    categories: ["watches"],
+    description:
+      "Compare exact references, movements, case dimensions and stated water resistance.",
+  },
+  {
+    id: "footwear",
+    title: "Shoes",
+    categories: ["footwear"],
+    description:
+      "Compare construction, materials and sizing systems. Fit requires your measurements.",
+  },
+  {
+    id: "eyewear",
+    title: "Sunglasses",
+    categories: ["sunglasses"],
+    description:
+      "Compare exact frames, lens treatments and measurements. Polarization is separate from UV protection.",
+  },
+  {
+    id: "appliances",
+    title: "Appliances",
+    categories: ["appliances"],
+    description:
+      "Compare capacity, dimensions, voltage and manufacturer energy specifications.",
   },
 ] as const;

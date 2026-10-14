@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-10-11",
+  "observations": [
+    {
+      "reference": "T1254171703100",
+      "source": "https://www.tissotwatches.com/en-us/T1254171703100.html",
+      "sha256": "5a0dd6234b96dfed4f70ea9cabae8be2d3930973aa9463675136f56d7c845b74",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T1374101104100",
+      "source": "https://www.tissotwatches.com/en-us/T1374101104100.html",
+      "sha256": "5fa774182502e8f42a098be31fff46d1df470e283b2da866704cfb4f64d3e699",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T1294103626100",
+      "source": "https://www.tissotwatches.com/en-us/T1294103626100.html",
+      "sha256": "18d86e70309d914b633276a6307ac6c72f7ae19808cf020468273261939d9d5b",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T1274101104100",
+      "source": "https://www.tissotwatches.com/en-us/T1274101104100.html",
+      "sha256": "923090a0aed10a32c7561669d8dbe96cc6ff2b775158b462ecf315d5d68d25e8",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T0064072209300",
+      "source": "https://www.tissotwatches.com/en-us/T0064072209300.html",
+      "sha256": "dc94f09af381c9810c2c973670640f50f30657897955b55080b933439c0c20eb",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T1564101104100",
+      "source": "https://www.tissotwatches.com/en-us/T1564101104100.html",
+      "sha256": "2aa0e08f925eac2f01f8a9627ecb8642993dfb1e4eb8997dcb8755f1f55d68e1",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T1504101601100",
+      "source": "https://www.tissotwatches.com/en-us/T1504101601100.html",
+      "sha256": "97614ea4048d924058ec00608cd0ac61cefb73b25deeb3ea34e076f331849e72",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T1202171704100",
+      "source": "https://www.tissotwatches.com/en-us/T1202171704100.html",
+      "sha256": "2fb620318af40f0f89ba21bd0b258a7100d040f77aa20963e3e9d0df7a1cf4e4",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T1522231149600",
+      "source": "https://www.tissotwatches.com/en-us/T1522231149600.html",
+      "sha256": "cb01fdbfcec5075fc4b689c65440c9b6ca8470f83127dadbe9c1785c55510a5c",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "reference": "T0580093303100",
+      "source": "https://www.tissotwatches.com/en-us/T0580093303100.html",
+      "sha256": "5f8ac10c632e5fd9f77ee2ab1428fb507583e19ceb014d1ae082a193262432ba",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    }
+  ]
+}

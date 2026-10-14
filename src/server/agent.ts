@@ -1,6 +1,7 @@
+import { catalogLanguageContext } from "./catalog-store";
 import { retailFollowup } from "@/domain/retail-conversation";
 import { randomUUID } from "node:crypto";
-import { deviceLabel, productById } from "@/domain/catalog";
+import { deviceLabel } from "@/domain/catalog";
 import { categoryTitles, lifestyleProfile } from "@/domain/departments";
 import { formatMoney } from "@/domain/money";
 import {
@@ -43,13 +44,19 @@ export async function runAgent(actor: Actor, raw: AgentRequest) {
     previous = { ...previous, groupSavings: undefined };
   const planningInput = retailFollowup(input, before.brief?.input);
   // Engineering fixtures never incur model spend, even if the host is live.
+  const catalogContext = await catalogLanguageContext(planningInput.task);
   const planned =
     before.fixtureWorkspace || before.modes.ai !== "live"
       ? {
-          ...fallbackWorkflow(planningInput, previous),
+          ...fallbackWorkflow(planningInput, previous, catalogContext),
           mode: "catalog" as const,
         }
-      : await planAgent(planningInput, previous, before.agentRuns);
+      : await planAgent(
+          planningInput,
+          previous,
+          before.agentRuns,
+          catalogContext,
+        );
   let intent: VoiceIntent = { kind: "clarification", message: "" };
   const run: AgentRun = {
     id: randomUUID(),
@@ -291,7 +298,10 @@ export async function runAgent(actor: Actor, raw: AgentRequest) {
     ) {
       run.orders = before.orders.map((order) => ({
         id: order.id,
-        product: productById(order.quote.productId).name,
+        product:
+          before.catalogReferences.find(
+            (product) => product.id === order.quote.productId,
+          )?.name || order.quote.productId,
         status: order.status,
         nextStep: order.providerObservations?.some(
           (observation) => observation.state !== "verified",

@@ -1,11 +1,15 @@
+import type { Product } from "./catalog";
 import { brandedCatalog } from "./branded-catalog";
 import { briefSchema } from "./brief";
 import { lifestyleProfile, type Category } from "./departments";
 import type { VoiceIntent } from "./voice";
 
 const aliases: Record<string, string[]> = {
+  "ray-ban": ["ray-ban", "ray ban", "rayban"],
   "maison francis kurkdjian": ["maison francis kurkdjian", "mfk"],
   "saint laurent": ["saint laurent", "ysl"],
+  "giorgio armani": ["giorgio armani", "armani"],
+  "maison margiela": ["maison margiela", "maison martin margiela"],
   "louis vuitton": ["louis vuitton", "lv"],
   hermès: ["hermès", "hermes"],
   lancôme: ["lancôme", "lancome"],
@@ -45,24 +49,50 @@ const categoryPatterns: [Category, RegExp][] = [
   ["beauty", /\b(?:beauty|skincare|serum|cleanser|cream)\b/i],
   ["home", /\b(?:mug|porcelain|homeware)\b/i],
   ["accessories", /\b(?:keyboard|mouse)\b/i],
-  ["audio", /\b(?:headphones|headset)\b/i],
+  ["headphones", /\b(?:headphones|headset)\b/i],
+  ["earbuds", /\b(?:earbuds?|earphones?)\b/i],
+  ["sunglasses", /\b(?:sunglasses|shades)\b/i],
+  ["watches", /\b(?:watches|watch|timepiece)\b/i],
+  ["footwear", /\b(?:shoes|sneakers|loafers|boots|sandals)\b/i],
+  [
+    "appliances",
+    /\b(?:refrigerator|washing machine|vacuum cleaner|air purifier)\b/i,
+  ],
   ["storage", /\b(?:ssd|portable drive)\b/i],
 ];
 export function brandedShopping(
   text: string,
   defaultBudget: number,
+  records: Product[] = brandedCatalog,
 ): VoiceIntent | undefined {
-  const statedBrands = brands.filter((brand) =>
+  const availableBrands = [
+    ...new Set([
+      ...brands,
+      ...records.flatMap((p) => (p.brand ? [p.brand.toLowerCase()] : [])),
+    ]),
+  ];
+  const statedBrands = availableBrands.filter((brand) =>
     (aliases[brand] || [brand]).some((alias) => has(text, alias)),
   );
-  const named = brandedCatalog.filter(
-    (p) => p.attributes?.modelName && has(text, p.attributes.modelName),
+  const named = records.filter(
+    (p) =>
+      p.attributes?.modelName &&
+      has(text, p.attributes.modelName) &&
+      (!statedBrands.length ||
+        statedBrands.includes(p.brand?.toLowerCase() || "")),
   );
   const categories = [
     ...new Set([
       ...named.map((p) => p.category),
       ...categoryPatterns
-        .filter(([, regex]) => regex.test(text))
+        .filter(
+          ([category, regex]) =>
+            regex.test(text) &&
+            !(
+              category === "headphones" &&
+              named.some((p) => p.category === "audio")
+            ),
+        )
         .map(([category]) => category),
     ]),
   ];
@@ -76,7 +106,21 @@ export function brandedShopping(
   const devicePurchase = categories.some((c) =>
     ["phones", "laptops", "tablets"].includes(c),
   );
-  if (!statedBrands.length && !named.length && !devicePurchase)
+  if (
+    !statedBrands.length &&
+    !named.length &&
+    !devicePurchase &&
+    !categories.some((c) =>
+      [
+        "headphones",
+        "earbuds",
+        "sunglasses",
+        "watches",
+        "footwear",
+        "appliances",
+      ].includes(c),
+    )
+  )
     return undefined;
   const clarify = (message: string): VoiceIntent => ({
     kind: "clarification",
@@ -122,6 +166,15 @@ export function brandedShopping(
     return clarify(
       "Those performance requirements need a specification comparison. Review the recorded manufacturer facts; I will not treat an unverified requirement as matched.",
     );
+  if (
+    categories.includes("sunglasses") &&
+    /\b(?:uv400|uv protection|prescription|fits my face|fit my face)\b/i.test(
+      text,
+    )
+  )
+    return clarify(
+      "Those lens or individual-fit requirements need exact manufacturer evidence. Review the recorded reference; I will not assume UV protection, prescription suitability or face fit.",
+    );
   const amounts = [
     ...text.matchAll(
       /(?:under|below|up to|budget(?: of| is|:)?|maximum(?: of| is|:)?)\s*\$?\s*(\d+(?:\.\d{1,2})?)/gi,
@@ -134,7 +187,24 @@ export function brandedShopping(
   const budget = amounts[0] ?? defaultBudget;
   if (budget < 1 || budget > 1000000)
     return clarify("Choose a sandbox budget between $0.01 and $10,000 USD.");
-  const modelNames = [...new Set(named.map((p) => p.attributes!.modelName!))];
+  const modelNames = [
+    ...new Set(named.map((p) => p.attributes!.modelName!)),
+  ].filter(
+    (name, _index, names) =>
+      !names.some((other) => other !== name && has(other, name)),
+  );
+  if (
+    modelNames.some((name) =>
+      ["xl", "pro", "max", "plus", "mini", "ultra", "date"].some(
+        (suffix) =>
+          has(text, `${name} ${suffix}`) &&
+          !modelNames.some((other) => has(other, `${name} ${suffix}`)),
+      ),
+    )
+  )
+    return clarify(
+      "That exact model variant is not recorded. I will not substitute a base model.",
+    );
   if (
     devicePurchase &&
     /\b(?:iphone\s*\d+|galaxy\s+s\d+|xiaomi\s*\d+|oneplus\s*\d+|macbook\s+air\s+m\d+|ipad\s+(?:air|pro))\b/i.test(
@@ -145,7 +215,12 @@ export function brandedShopping(
     return clarify(
       "That exact model is not recorded. I will not substitute a different model; choose a sourced model from the category filters.",
     );
-  if (/\biphone\s*17\s*(?:pro|max|plus|e)\b/i.test(text))
+  if (
+    /\biphone\s*17\s*(?:pro|max|plus|e)\b/i.test(text) &&
+    !modelNames.some((name) =>
+      /\biphone\s*17\s*(?:pro|max|plus|e)\b/i.test(name),
+    )
+  )
     return clarify(
       "The reviewed record is the base iPhone 17. That variant is not verified, so I will not substitute it.",
     );
@@ -249,6 +324,35 @@ export function brandedShopping(
       priority: "price",
       preference: "",
       requirements: {
+        ...(category === "watches" && text.match(/\b(\d+(?:\.\d+)?)\s*mm\b/i)
+          ? {
+              caseDiameterMm: Number(
+                text.match(/\b(\d+(?:\.\d+)?)\s*mm\b/i)![1],
+              ),
+            }
+          : {}),
+
+        ...(category === "sunglasses" && /\bsquare\b/i.test(text)
+          ? { frameShape: "square" }
+          : category === "sunglasses" &&
+              /\b(?:rectangle|rectangular)\b/i.test(text)
+            ? { frameShape: "rectangle" }
+            : category === "sunglasses" && /\bshield\b/i.test(text)
+              ? { frameShape: "shield" }
+              : {}),
+
+        ...(category === "sunglasses" &&
+        /\b(?:non[- ]polarized|not polarized)\b/i.test(text)
+          ? { polarization: "non-polarized" }
+          : category === "sunglasses" && /\bpolarized\b/i.test(text)
+            ? { polarization: "polarized" }
+            : {}),
+        ...(category === "watches" && /\bautomatic\b/i.test(text)
+          ? { movement: "automatic" }
+          : category === "watches" && /\bquartz\b/i.test(text)
+            ? { movement: "quartz" }
+            : {}),
+
         ...(statedBrands[0] ? { brand: statedBrands[0] } : {}),
         ...(modelNames[0] ? { modelName: modelNames[0] } : {}),
         ...(productType ? { productType } : {}),

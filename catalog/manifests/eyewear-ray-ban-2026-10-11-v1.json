@@ -1,0 +1,465 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "eyewear-ray-ban-2026-10-11-v1",
+  "reviewedBy": "manufacturer-visible-variant-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "www.ray-ban.com"
+  ],
+  "products": [
+    {
+      "id": "EYE-RB-805289126577",
+      "name": "Ray-Ban Original Wayfarer Classic · RB2140",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB2140, exact UPC 805289126577. Observed Polished Black frame and G-15 Green lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB2140; UPC: 805289126577",
+        "Frame colour: Polished Black",
+        "Lens colour: G-15 Green",
+        "Manufacturer size label: 50-22",
+        "Selected lens: non-polarized"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Black",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB2140original%20wayfarer%20classic-black/805289126577",
+      "familyId": "ray-ban:RB2140",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "original wayfarer classic",
+        "polarization": "non-polarized"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/aa3935f3-184a-4e17-a880-b35d00c65c8a/0RB2140__901__P21__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB2140original%20wayfarer%20classic-black/805289126577",
+        "alt": "Ray-Ban ORIGINAL WAYFARER CLASSIC, RB2140, Polished Black manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-805289304456",
+      "name": "Ray-Ban Clubmaster Classic · RB3016",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB3016, exact UPC 805289304456. Observed Polished Tortoise On Gold frame and G-15 Green lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB3016; UPC: 805289304456",
+        "Frame colour: Polished Tortoise On Gold",
+        "Lens colour: G-15 Green",
+        "Manufacturer size label: 51-21",
+        "Selected lens: non-polarized"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Tortoise On Gold",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB3016clubmaster%20classic-tortoise%20on%20gold/805289304456",
+      "familyId": "ray-ban:RB3016",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "clubmaster classic",
+        "polarization": "non-polarized"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/786b4a58-fc3f-441f-89ff-b35d00cfe3ad/0RB3016__W0366__STD__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB3016clubmaster%20classic-tortoise%20on%20gold/805289304456",
+        "alt": "Ray-Ban CLUBMASTER CLASSIC, RB3016, Polished Tortoise On Gold manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-805289052418",
+      "name": "Ray-Ban New Wayfarer Classic · RB2132",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB2132, exact UPC 805289052418. Observed Polished Black frame and G-15 Green lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB2132; UPC: 805289052418",
+        "Frame colour: Polished Black",
+        "Lens colour: G-15 Green"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Black",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB2132new%20wayfarer%20classic-black/805289052418",
+      "familyId": "ray-ban:RB2132",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability.",
+          "Selected frame size is not recorded.",
+          "Selected polarization is not verified."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "new wayfarer classic"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/01bf9a6d-0908-433e-8127-b35d00dd222d/0RB2132__901L__STD__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB2132new%20wayfarer%20classic-black/805289052418",
+        "alt": "Ray-Ban NEW WAYFARER CLASSIC, RB2132, Polished Black manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-805289602057",
+      "name": "Ray-Ban Aviator Classic · RB3025",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB3025, exact UPC 805289602057. Observed Polished Arista Gold frame and G-15 Green lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB3025; UPC: 805289602057",
+        "Frame colour: Polished Arista Gold",
+        "Lens colour: G-15 Green",
+        "Manufacturer size label: 58-14",
+        "Selected lens: non-polarized"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Arista Gold",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB3025aviator%20classic-arista%20gold/805289602057",
+      "familyId": "ray-ban:RB3025",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "aviator classic",
+        "polarization": "non-polarized"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/6ad42b4b-f1af-45cc-a6c6-b35d00db1f85/0RB3025__L0205__STD__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB3025aviator%20classic-arista%20gold/805289602057",
+        "alt": "Ray-Ban AVIATOR CLASSIC, RB3025, Polished Arista Gold manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-805289742470",
+      "name": "Ray-Ban Erika Classic · RB4171",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB4171, exact UPC 805289742470. Observed Matte Rubber Havana frame and Brown lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB4171; UPC: 805289742470",
+        "Frame colour: Matte Rubber Havana",
+        "Lens colour: Brown"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Matte Rubber Havana",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB4171erika%20classic-rubber%20havana/805289742470",
+      "familyId": "ray-ban:RB4171",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability.",
+          "Selected frame size is not recorded.",
+          "Selected polarization is not verified."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "erika classic"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/75cb6ac1-760f-4e23-b595-b35d00dd61e9/0RB4171__865_13__STD__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB4171erika%20classic-rubber%20havana/805289742470",
+        "alt": "Ray-Ban ERIKA CLASSIC, RB4171, Matte Rubber Havana manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-805289526575",
+      "name": "Ray-Ban Justin Classic · RB4165",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB4165, exact UPC 805289526575. Observed Matte Rubber Black frame and Dark Grey lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB4165; UPC: 805289526575",
+        "Frame colour: Matte Rubber Black",
+        "Lens colour: Dark Grey",
+        "Manufacturer size label: 54-16"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Matte Rubber Black",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB4165%20UNISEX%20justin%20classic-rubber%20black/805289526575",
+      "familyId": "ray-ban:RB4165",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability.",
+          "Selected polarization is not verified."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "justin classic"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/988e2333-b578-4644-995e-b42600a49e41/0RB4165__601_8G__P21__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB4165%20UNISEX%20justin%20classic-rubber%20black/805289526575",
+        "alt": "Ray-Ban JUSTIN CLASSIC, RB4165, Matte Rubber Black manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-8056262975671",
+      "name": "Ray-Ban Brunel · RB2234",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB2234, exact UPC 8056262975671. Observed Polished Havana frame and Dark Green lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB2234; UPC: 8056262975671",
+        "Frame colour: Polished Havana",
+        "Lens colour: Dark Green",
+        "Manufacturer size label: 56-19"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Havana",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB2234brunel-havana/8056262975671",
+      "familyId": "ray-ban:RB2234",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability.",
+          "Selected polarization is not verified."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "brunel"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/93295ee2-043b-42a9-a26f-b44e01096109/0RB2234__902_31__P21__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB2234brunel-havana/8056262975671",
+        "alt": "Ray-Ban BRUNEL, RB2234, Polished Havana manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-8056262453933",
+      "name": "Ray-Ban Zaya Bio-Based · RB4456",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB4456, exact UPC 8056262453933. Observed Polished Havana frame and Dark Grey lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB4456; UPC: 8056262453933",
+        "Frame colour: Polished Havana",
+        "Lens colour: Dark Grey",
+        "Manufacturer size label: 53-19"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Havana",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB4456zaya%20bio-based-havana/8056262453933",
+      "familyId": "ray-ban:RB4456",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability.",
+          "Selected polarization is not verified."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "zaya bio-based"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/8803950f-aafb-49dd-bb24-b3a0012b17b6/0RB4456__135987__P21__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB4456zaya%20bio-based-havana/8056262453933",
+        "alt": "Ray-Ban ZAYA BIO-BASED, RB4456, Polished Havana manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-8056597529679",
+      "name": "Ray-Ban Bill · RB2198",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB2198, exact UPC 8056597529679. Observed Polished Havana On Transparent Brown frame and Light Brown Gradient lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB2198; UPC: 8056597529679",
+        "Frame colour: Polished Havana On Transparent Brown",
+        "Lens colour: Light Brown Gradient",
+        "Manufacturer size label: 56-14"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Havana On Transparent Brown",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB2198bill-havana%20on%20transparent%20brown/8056597529679",
+      "familyId": "ray-ban:RB2198",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability.",
+          "Selected polarization is not verified."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "bill"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/abaa47ec-48b4-4b87-9dfe-b36100d39455/0RB2198__129251__STD__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB2198bill-havana%20on%20transparent%20brown/8056597529679",
+        "alt": "Ray-Ban BILL, RB2198, Polished Havana On Transparent Brown manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-RB-805289439899",
+      "name": "Ray-Ban Round Metal · RB3447",
+      "category": "sunglasses",
+      "description": "Manufacturer model RB3447, exact UPC 805289439899. Observed Polished Arista Gold frame and G-15 Green lenses. DALE is an independent test storefront with simulated prices and stock.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Model: RB3447; UPC: 805289439899",
+        "Frame colour: Polished Arista Gold",
+        "Lens colour: G-15 Green",
+        "Manufacturer size label: 50-21",
+        "Selected lens: non-polarized"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Arista Gold",
+      "source": "https://www.ray-ban.com/usa/sunglasses/RB3447round%20metal-arista%20gold/805289439899",
+      "familyId": "ray-ban:RB3447",
+      "provenance": "manufacturer_evidence",
+      "brand": "Ray-Ban",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer selected variant",
+        "missing": [
+          "Frame geometry/material, numeric lens/bridge/temple dimensions, UV protection and individual fit are not verified.",
+          "DALE prices and stock are simulated, not manufacturer retail prices or availability."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "ray-ban",
+        "modelName": "round metal",
+        "polarization": "non-polarized"
+      },
+      "media": {
+        "url": "https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/a5410c76-c6b3-482b-bf78-b35d00d09da3/0RB3447__001__STD__shad__qt.png?impolicy=RB_Product_clone&width=720&bgc=%23f2f2f2",
+        "source": "https://www.ray-ban.com/usa/sunglasses/RB3447round%20metal-arista%20gold/805289439899",
+        "alt": "Ray-Ban ROUND METAL, RB3447, Polished Arista Gold manufacturer photograph",
+        "attribution": "Product photograph © Ray-Ban/Luxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

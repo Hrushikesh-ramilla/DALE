@@ -1,0 +1,481 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "eyewear-oakley-2026-10-11-v1",
+  "reviewedBy": "manufacturer-source-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "www.oakley.com"
+  ],
+  "products": [
+    {
+      "id": "EYE-OO9102-E855",
+      "name": "Oakley Holbrook · OO9102-E855",
+      "category": "sunglasses",
+      "description": "Holbrook frame in Matte Black, recorded under manufacturer reference OO9102-E855. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9102-E855",
+        "Frame material: O Matter",
+        "Frame shape: square"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Matte Black",
+      "source": "https://www.oakley.com/en-us/product/W0OO9102",
+      "familyId": "oakley:9102",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "holbrook",
+        "frameShape": "square",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/1f72ef2f-ec05-4ccc-b594-b35f0080ecab/0OO9102__9102E8__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9102",
+        "alt": "Oakley Holbrook, manufacturer reference OO9102-E855, Matte Black frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9013-C455",
+      "name": "Oakley Frogskins · OO9013-C455",
+      "category": "sunglasses",
+      "description": "Frogskins frame in Polished Black, recorded under manufacturer reference OO9013-C455. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9013-C455",
+        "Frame material: O Matter",
+        "Frame shape: square"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Black",
+      "source": "https://www.oakley.com/en-us/product/W0OO9013",
+      "familyId": "oakley:9013",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "frogskins",
+        "frameShape": "square",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/5755a2da-e1de-415e-a42d-b35f0057a232/0OO9013__9013C4__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9013",
+        "alt": "Oakley Frogskins, manufacturer reference OO9013-C455, Polished Black frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9406-9037",
+      "name": "Oakley Sutro · OO9406-9037",
+      "category": "sunglasses",
+      "description": "Sutro frame in Polished Black, recorded under manufacturer reference OO9406-9037. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9406-9037",
+        "Frame material: O Matter",
+        "Frame shape: rectangle"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Black",
+      "source": "https://www.oakley.com/en-us/product/W0OO9406",
+      "familyId": "oakley:9406",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "sutro",
+        "frameShape": "rectangle",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/34ad4760-a813-4142-96af-b3610056ecd8/0OO9406__940690__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9406",
+        "alt": "Oakley Sutro, manufacturer reference OO9406-9037, Polished Black frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9188-7359",
+      "name": "Oakley Flak 2.0 XL · OO9188-7359",
+      "category": "sunglasses",
+      "description": "Flak 2.0 XL frame in Matte Black, recorded under manufacturer reference OO9188-7359. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9188-7359",
+        "Frame material: O Matter",
+        "Frame shape: rectangle"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Matte Black",
+      "source": "https://www.oakley.com/en-us/product/W0OO9188",
+      "familyId": "oakley:9188",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "flak 2.0 xl",
+        "frameShape": "rectangle",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/d5f483ce-afd6-4844-ba82-b35f004c727e/0OO9188__918873__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9188",
+        "alt": "Oakley Flak 2.0 XL, manufacturer reference OO9188-7359, Matte Black frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9014-D360",
+      "name": "Oakley Gascan · OO9014-D360",
+      "category": "sunglasses",
+      "description": "Gascan frame in Matte Grey Ink, recorded under manufacturer reference OO9014-D360. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9014-D360",
+        "Frame material: O Matter",
+        "Frame shape: rectangle"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Matte Grey Ink",
+      "source": "https://www.oakley.com/en-us/product/W0OO9014",
+      "familyId": "oakley:9014",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "gascan",
+        "frameShape": "rectangle",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/6613e9b9-6e3f-4b8d-9337-b3a1013bad18/0OO9014__9014D3__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9014",
+        "alt": "Oakley Gascan, manufacturer reference OO9014-D360, Matte Grey Ink frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9101-5727",
+      "name": "Oakley Batwolf · OO9101-5727",
+      "category": "sunglasses",
+      "description": "Batwolf frame in Black Ink, recorded under manufacturer reference OO9101-5727. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9101-5727",
+        "Frame material: O Matter",
+        "Frame shape: shield"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black Ink",
+      "source": "https://www.oakley.com/en-us/product/W0OO9101",
+      "familyId": "oakley:9101",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "batwolf",
+        "frameShape": "shield",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/f3afd995-0b29-455c-b1b7-b35f00cea5cc/0OO9101__910157__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9101",
+        "alt": "Oakley Batwolf, manufacturer reference OO9101-5727, Black Ink frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9290-2031",
+      "name": "Oakley Jawbreaker · OO9290-2031",
+      "category": "sunglasses",
+      "description": "Jawbreaker frame in Matte Black, recorded under manufacturer reference OO9290-2031. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9290-2031",
+        "Frame material: O Matter",
+        "Frame shape: shield"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Matte Black",
+      "source": "https://www.oakley.com/en-us/product/W0OO9290",
+      "familyId": "oakley:9290",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "jawbreaker",
+        "frameShape": "shield",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/641fe7b2-3742-492f-8693-b35e01503e8b/0OO9290__929020__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9290",
+        "alt": "Oakley Jawbreaker, manufacturer reference OO9290-2031, Matte Black frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9154-6762",
+      "name": "Oakley Half Jacket 2.0 XL · OO9154-6762",
+      "category": "sunglasses",
+      "description": "Half Jacket 2.0 XL frame in Matte Black, recorded under manufacturer reference OO9154-6762. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9154-6762",
+        "Frame material: O Matter",
+        "Frame shape: rectangle"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Matte Black",
+      "source": "https://www.oakley.com/en-us/product/W0OO9154",
+      "familyId": "oakley:9154",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "half jacket 2.0 xl",
+        "frameShape": "rectangle",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/c8ea2ebc-d000-43ad-bb58-b360010347eb/0OO9154__915467__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9154",
+        "alt": "Oakley Half Jacket 2.0 XL, manufacturer reference OO9154-6762, Matte Black frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9416-0264",
+      "name": "Oakley Split Shot · OO9416-0264",
+      "category": "sunglasses",
+      "description": "Split Shot frame in Matte Carbon, recorded under manufacturer reference OO9416-0264. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9416-0264",
+        "Frame material: O Matter",
+        "Frame shape: rectangle"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Matte Carbon",
+      "source": "https://www.oakley.com/en-us/product/W0OO9416",
+      "familyId": "oakley:9416",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "split shot",
+        "frameShape": "rectangle",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/9b5a3efa-c28b-45f3-94de-b35f012acda3/0OO9416__941602__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9416",
+        "alt": "Oakley Split Shot, manufacturer reference OO9416-0264, Matte Carbon frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "EYE-OO9211-1738",
+      "name": "Oakley Radar EV Pitch · OO9211-1738",
+      "category": "sunglasses",
+      "description": "Radar EV Pitch frame in Polished Black, recorded under manufacturer reference OO9211-1738. Review the source for current lens options. DALE price and stock are simulated test offers.",
+      "price": 20000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: OO9211-1738",
+        "Frame material: O Matter",
+        "Frame shape: shield"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Polished Black",
+      "source": "https://www.oakley.com/en-us/product/W0OO9211",
+      "familyId": "oakley:9211",
+      "provenance": "manufacturer_evidence",
+      "brand": "Oakley",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Exact lens treatment and polarization are not verified in this snapshot.",
+          "Exact lens/bridge/temple measurements and individual fit are not verified.",
+          "UV certification is not recorded for this exact reference.",
+          "Commercial inventory, retail price and current manufacturer availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oakley",
+        "modelName": "radar ev pitch",
+        "frameShape": "shield",
+        "frameMaterial": "o matter"
+      },
+      "media": {
+        "url": "https://assets2.oakley.com/prod-onecp-record-files/pieyewear/78da1234-6d1a-4039-a303-b35f00c85ba4/0OO9211__921117__P21__shad__qt.png?impolicy=OO_ratio&width=768",
+        "source": "https://www.oakley.com/en-us/product/W0OO9211",
+        "alt": "Oakley Radar EV Pitch, manufacturer reference OO9211-1738, Polished Black frame",
+        "attribution": "Product photograph © Oakley / EssilorLuxottica; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

@@ -30,6 +30,14 @@ export type Product = {
   };
   comparisonOnly?: boolean;
   offerKind?: "sandbox";
+  media?: {
+    url: string;
+    source: string;
+    alt: string;
+    attribution: string;
+    reviewedAt: string;
+    usage: "licensed" | "external_reference";
+  };
   attributes?: {
     productType?: string;
     material?: string;
@@ -46,6 +54,23 @@ export type Product = {
     refreshHz?: number;
     batteryMah?: number;
     concentration?: string;
+    movement?: string;
+    caseDiameterMm?: number;
+    waterResistanceM?: number;
+    frameShape?: string;
+    frameMaterial?: string;
+    lensWidthMm?: number;
+    bridgeMm?: number;
+    templeMm?: number;
+    polarization?: string;
+    uvProtection?: string;
+    sizeSystem?: string;
+    shoeSize?: string;
+    connection?: string;
+    noiseCancellation?: string;
+    batteryHours?: number;
+    voltage?: number;
+    capacityLitres?: number;
   };
 };
 export const models = ["Atlas 14", "Atlas 14 Pro", "Orbit 13", "Slate 11"];
@@ -202,6 +227,23 @@ export type RetailRequirements = {
   storageGb?: number;
   ramGb?: number;
   concentration?: string;
+  movement?: string;
+  caseDiameterMm?: number;
+  waterResistanceM?: number;
+  frameShape?: string;
+  frameMaterial?: string;
+  lensWidthMm?: number;
+  bridgeMm?: number;
+  templeMm?: number;
+  polarization?: string;
+  uvProtection?: string;
+  sizeSystem?: string;
+  shoeSize?: string;
+  connection?: string;
+  noiseCancellation?: string;
+  batteryHours?: number;
+  voltage?: number;
+  capacityLitres?: number;
 };
 export function meetsRetailRequirements(
   product: Product,

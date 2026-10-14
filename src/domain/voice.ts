@@ -22,6 +22,7 @@ export type VoiceIntent =
   | { kind: "clarification" | "review_required"; message: string };
 export function understandVoice(
   input: z.infer<typeof voiceRequest>,
+  records?: import("./catalog").Product[],
 ): VoiceIntent {
   const words: Record<string, number> = {
     zero: 0,
@@ -129,7 +130,7 @@ export function understandVoice(
     return { kind: "navigate", destination: "orders" };
   if (/\b(?:support|customer care|help with (?:my )?order)\b/i.test(text))
     return { kind: "navigate", destination: "support" };
-  const branded = brandedShopping(text, input.budget);
+  const branded = brandedShopping(text, input.budget, records);
   if (branded) return branded;
   const amounts = [
     ...text.matchAll(

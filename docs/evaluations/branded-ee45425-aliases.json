@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-11T09:58:51.074Z",
+  "source": "ee454253aeebdb4a6459554c3bf69cd8399434ea",
+  "url": "https://65.0.19.200.sslip.io",
+  "mode": "isolated-agent-fixtures; no model generation or payment capture",
+  "checks": [
+    {
+      "scenario": "Armani alias preserves the house and returns no substitute for an unavailable variant",
+      "passed": true
+    },
+    {
+      "scenario": "Maison Martin Margiela alias resolves only the recorded Jazz Club 100ml variant",
+      "passed": true
+    },
+    {
+      "scenario": "Both alias requests retain separate purchase authorization",
+      "passed": true
+    }
+  ]
+}

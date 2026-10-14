@@ -7,6 +7,7 @@ if (process.platform !== "linux" || process.arch !== "x64")
 const directory = ".data/linux-artifact";
 await mkdir(directory, { recursive: true });
 await build({ entryPoints: ["scripts/worker.ts"], bundle: true, platform: "node", format: "cjs", outfile: ".next/standalone/worker.cjs", external: ["pg", "@electric-sql/pglite", "@aws-sdk/client-s3"] });
+await build({ entryPoints: ["scripts/catalog-release.ts"], bundle: true, platform: "node", format: "esm", outfile: ".next/standalone/scripts/catalog-release.mjs", external: ["pg", "@electric-sql/pglite", "dotenv/config"] });
 await cp("deploy", ".next/standalone/deploy", { recursive: true });
 await mkdir(".next/standalone/scripts", { recursive: true });
 await cp("scripts/download-model-artifact.mjs", ".next/standalone/scripts/download-model-artifact.mjs");

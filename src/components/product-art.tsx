@@ -3,6 +3,7 @@ import { isRetailCategory } from "@/domain/departments";
 import { RetailArt } from "./retail-art";
 import { useId } from "react";
 import type { Product } from "@/domain/catalog";
+import { ProductPhotograph } from "./product-photograph";
 
 export function ProductArt({
   product,
@@ -12,6 +13,7 @@ export function ProductArt({
   compact?: boolean;
 }) {
   const id = useId().replaceAll(":", "");
+  if (product.media) return <ProductPhotograph key={product.media.url} product={product} compact={compact} />;
   if (product.brand) return <div className={`product-art branded-product-art ${compact ? "compact" : ""}`} role="img" aria-label={`${product.name}; editorial product identity card, not a product photograph`}>
     <span className="brand-art-category">{product.category.toUpperCase()}</span>
     <strong>{product.brand}</strong>

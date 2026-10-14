@@ -1,7 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
 import type { Product } from "@/domain/catalog";
-import { ProductArt } from "./product-art";
+import { FeaturedProductArt } from "./featured-product-art";
+import { ProductPhotograph } from "./product-photograph";
 const Scene = dynamic(() => import("./product-scene"), {
   ssr: false,
   loading: () => (
@@ -9,10 +10,11 @@ const Scene = dynamic(() => import("./product-scene"), {
   ),
 });
 export function ProductViewer({ product }: { product: Product }) {
+  if (product.media) return <div className="product-viewer"><ProductPhotograph key={product.media.url} product={product} /></div>;
   if (product.brand)
     return (
       <div className="product-viewer">
-        <ProductArt product={product} />
+        <FeaturedProductArt product={product} />
       </div>
     );
   return (

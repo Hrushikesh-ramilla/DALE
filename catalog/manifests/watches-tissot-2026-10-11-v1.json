@@ -1,0 +1,501 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "watches-tissot-2026-10-11-v1",
+  "reviewedBy": "manufacturer-structured-source-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "www.tissotwatches.com"
+  ],
+  "products": [
+    {
+      "id": "WATCH-T1254171703100",
+      "name": "Tissot Supersport NBA 2026 42mm · T1254171703100",
+      "category": "watches",
+      "description": "Tissot Supersport NBA 2026 42mm, manufacturer reference T1254171703100. Recorded quartz movement and 42mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 52500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T1254171703100",
+        "Movement Quartz chronograph PowerDrive ",
+        "Case diameter: 42mm",
+        "Case Water resistance Water-resistant up to a pressure of 10 bar (100 m / 330 ft)",
+        "Case material: 316L stainless steel"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Grey",
+      "source": "https://www.tissotwatches.com/en-us/T1254171703100.html",
+      "familyId": "tissot:tissot-supersport-nba-2026-42mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel",
+        "brand": "tissot",
+        "modelName": "supersport nba 2026",
+        "movement": "quartz",
+        "caseDiameterMm": 42,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb27aaf68/product-pictures/595e6141-1f04-4b20-bb08-b734d519efb0_T125-417-17-031-00_Shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T1254171703100.html",
+        "alt": "Tissot Supersport NBA 2026 42mm, reference T1254171703100, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T1374101104100",
+      "name": "Tissot PRX 40mm · T1374101104100",
+      "category": "watches",
+      "description": "Tissot PRX 40mm, manufacturer reference T1374101104100. Recorded quartz movement and 40mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 45000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T1374101104100",
+        "Movement Quartz three hands",
+        "Case diameter: 40mm",
+        "Case Water resistance Water-resistant up to a pressure of 10 bar (100 m / 330 ft)",
+        "Case material: 316L stainless steel"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Blue",
+      "source": "https://www.tissotwatches.com/en-us/T1374101104100.html",
+      "familyId": "tissot:tissot-prx-40mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel",
+        "brand": "tissot",
+        "modelName": "prx",
+        "movement": "quartz",
+        "caseDiameterMm": 40,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9b840963/product-pictures/739cc440-025b-42e8-a5f9-ae33b31479b2_T137-410-11-041-00_shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T1374101104100.html",
+        "alt": "Tissot PRX 40mm, reference T1374101104100, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T1294103626100",
+      "name": "Tissot Classic Dream 42mm · T1294103626100",
+      "category": "watches",
+      "description": "Tissot Classic Dream 42mm, manufacturer reference T1294103626100. Recorded quartz movement and 42mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 35000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T1294103626100",
+        "Movement Quartz three hands",
+        "Case diameter: 42mm",
+        "Case Water resistance Water-resistant up to a pressure of 5 bar (50 m / 165 ft)",
+        "Case material: 316L stainless steel & PVD coating"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Ivory",
+      "source": "https://www.tissotwatches.com/en-us/T1294103626100.html",
+      "familyId": "tissot:tissot-classic-dream-42mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel & pvd coating",
+        "brand": "tissot",
+        "modelName": "classic dream",
+        "movement": "quartz",
+        "caseDiameterMm": 42,
+        "waterResistanceM": 50
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf4adea29/product-pictures/a626e880-0f3f-49c3-8f0c-7624b2a323d5_T129-410-36-261-00_shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T1294103626100.html",
+        "alt": "Tissot Classic Dream 42mm, reference T1294103626100, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T1274101104100",
+      "name": "Tissot Gentleman 40mm · T1274101104100",
+      "category": "watches",
+      "description": "Tissot Gentleman 40mm, manufacturer reference T1274101104100. Recorded quartz movement and 40mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 49500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T1274101104100",
+        "Movement Quartz three hands",
+        "Case diameter: 40mm",
+        "Case Water resistance Water-resistant up to a pressure of 10 bar (100 m / 330 ft)",
+        "Case material: 316L stainless steel"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Blue",
+      "source": "https://www.tissotwatches.com/en-us/T1274101104100.html",
+      "familyId": "tissot:tissot-gentleman-40mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel",
+        "brand": "tissot",
+        "modelName": "gentleman",
+        "movement": "quartz",
+        "caseDiameterMm": 40,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8e91e5a1/product-pictures/d77ce645-e2ac-41d7-b4b9-5a360ed43ace_T127-410-11-041-00_shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T1274101104100.html",
+        "alt": "Tissot Gentleman 40mm, reference T1274101104100, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T0064072209300",
+      "name": "Tissot Le Locle 39.3mm · T0064072209300",
+      "category": "watches",
+      "description": "Tissot Le Locle 39.3mm, manufacturer reference T0064072209300. Recorded automatic movement and 39.3mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 89500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T0064072209300",
+        "Movement Swiss automatic",
+        "Case diameter: 39.3mm",
+        "Case Water resistance Water-resistant up to a pressure of 3 bar (30 m / 100 ft)",
+        "Case material: 316L stainless steel & PVD coating"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Green",
+      "source": "https://www.tissotwatches.com/en-us/T0064072209300.html",
+      "familyId": "tissot:tissot-le-locle-39-3mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel & pvd coating",
+        "brand": "tissot",
+        "modelName": "le locle",
+        "movement": "automatic",
+        "caseDiameterMm": 39.3,
+        "waterResistanceM": 30
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2e5f4e97/product-pictures/f7b3a93c-1db6-4f05-826e-22231c293826_T006-407-22-093-00_shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T0064072209300.html",
+        "alt": "Tissot Le Locle 39.3mm, reference T0064072209300, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T1564101104100",
+      "name": "Tissot Ballade 40mm · T1564101104100",
+      "category": "watches",
+      "description": "Tissot Ballade 40mm, manufacturer reference T1564101104100. Recorded quartz movement and 40mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 40000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T1564101104100",
+        "Movement Quartz three hands",
+        "Case diameter: 40mm",
+        "Case Water resistance Water-resistant up to a pressure of 10 bar (100 m / 330 ft)",
+        "Case material: 316L stainless steel"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Blue",
+      "source": "https://www.tissotwatches.com/en-us/T1564101104100.html",
+      "familyId": "tissot:tissot-ballade-40mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel",
+        "brand": "tissot",
+        "modelName": "ballade",
+        "movement": "quartz",
+        "caseDiameterMm": 40,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2becd257/product-pictures/0b48ea59-e96f-4c95-b952-465ba367e151_T156-410-11-041-00_Shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T1564101104100.html",
+        "alt": "Tissot Ballade 40mm, reference T1564101104100, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T1504101601100",
+      "name": "Tissot PR 100 40mm · T1504101601100",
+      "category": "watches",
+      "description": "Tissot PR 100 40mm, manufacturer reference T1504101601100. Recorded quartz movement and 40mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T1504101601100",
+        "Movement Quartz three hands",
+        "Case diameter: 40mm",
+        "Case Water resistance Water-resistant up to a pressure of 10 bar (100 m / 330 ft)",
+        "Case material: 316L stainless steel"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "White",
+      "source": "https://www.tissotwatches.com/en-us/T1504101601100.html",
+      "familyId": "tissot:tissot-pr-100-40mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel",
+        "brand": "tissot",
+        "modelName": "pr 100",
+        "movement": "quartz",
+        "caseDiameterMm": 40,
+        "waterResistanceM": 100
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw3fed57e3/product-pictures/eb88b2ac-c2b9-4196-a45b-5563fb6cf965_T150-410-16-011-00_Shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T1504101601100.html",
+        "alt": "Tissot PR 100 40mm, reference T1504101601100, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T1202171704100",
+      "name": "Tissot Seastar 1000 38mm · T1202171704100",
+      "category": "watches",
+      "description": "Tissot Seastar 1000 38mm, manufacturer reference T1202171704100. Recorded quartz movement and 38mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 59500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T1202171704100",
+        "Movement Quartz chronograph PowerDrive ",
+        "Case diameter: 38mm",
+        "Case Water resistance Water-resistant up to a pressure of 30 bar (300 m / 1000 ft) with screw-down crown and push-buttons",
+        "Case material: 316L stainless steel"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Blue gradient",
+      "source": "https://www.tissotwatches.com/en-us/T1202171704100.html",
+      "familyId": "tissot:tissot-seastar-1000-38mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel",
+        "brand": "tissot",
+        "modelName": "seastar 1000",
+        "movement": "quartz",
+        "caseDiameterMm": 38,
+        "waterResistanceM": 300
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwad684032/product-pictures/c5bbfbc6-fe8c-4327-bdd9-9262fdc83f8b_T120-217-17-041-00_Shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T1202171704100.html",
+        "alt": "Tissot Seastar 1000 38mm, reference T1202171704100, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T1522231149600",
+      "name": "Tissot Desir 29.6mm · T1522231149600",
+      "category": "watches",
+      "description": "Tissot Desir 29.6mm, manufacturer reference T1522231149600. Recorded quartz movement and 29.6mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 55000,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T1522231149600",
+        "Movement Quartz three hands",
+        "Case diameter: 29.6mm",
+        "Case Water resistance Water-resistant up to a pressure of 5 bar (50 m / 165 ft)",
+        "Case material: 316L stainless steel"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Blue",
+      "source": "https://www.tissotwatches.com/en-us/T1522231149600.html",
+      "familyId": "tissot:tissot-desir-29-6mm",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel",
+        "brand": "tissot",
+        "modelName": "desir",
+        "movement": "quartz",
+        "caseDiameterMm": 29.6,
+        "waterResistanceM": 50
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw08add161/product-pictures/69c7ae7c-a66e-4e97-b514-bb2738461695_T152-223-11-496-00_Shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T1522231149600.html",
+        "alt": "Tissot Desir 29.6mm, reference T1522231149600, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "WATCH-T0580093303100",
+      "name": "Tissot Lovely · T0580093303100",
+      "category": "watches",
+      "description": "Tissot Lovely, manufacturer reference T0580093303100. Recorded quartz movement and 19.5mm case diameter. DALE offers and stock are simulated; listed water resistance is not a diving or activity guarantee.",
+      "price": 49500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer reference: T0580093303100",
+        "Movement Quartz two hands",
+        "Case diameter: 19.5mm",
+        "Case Water resistance Water-resistant up to a pressure of 3 bar (30 m / 100 ft)",
+        "Case material: 316L stainless steel & PVD coating"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Silver",
+      "source": "https://www.tissotwatches.com/en-us/T0580093303100.html",
+      "familyId": "tissot:tissot-lovely",
+      "provenance": "manufacturer_evidence",
+      "brand": "Tissot",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer reference",
+        "missing": [
+          "Individual wrist fit and suitability for diving or other water activities are not verified.",
+          "Commercial stock, retail price and availability are not synchronized."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "watch",
+        "material": "316l stainless steel & pvd coating",
+        "brand": "tissot",
+        "modelName": "lovely",
+        "movement": "quartz",
+        "caseDiameterMm": 19.5,
+        "waterResistanceM": 30
+      },
+      "media": {
+        "url": "https://www.tissotwatches.com/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwec5fc891/product-pictures/a7e770fc-375d-4f2d-ab8f-604672a549bf_T058-009-33-031-00_shadow.png",
+        "source": "https://www.tissotwatches.com/en-us/T0580093303100.html",
+        "alt": "Tissot Lovely, reference T0580093303100, manufacturer photograph",
+        "attribution": "Product photograph © Tissot SA; manufacturer reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

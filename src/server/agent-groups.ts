@@ -1,17 +1,15 @@
-import {
-  productById,
-  searchCatalog,
-  publicCatalog,
-  catalog,
-  models as sampleModels,
-} from "@/domain/catalog";
+import { productById } from "@/domain/catalog";
 import { realModels, researchProducts } from "@/domain/research";
 import type { AgentGroupOffer } from "@/domain/agent-workflow";
 import { getWorkspace, type Actor, type Workspace } from "./state";
 import { joinGroup } from "./service";
 import { groupTerms } from "@/domain/group-policy";
+import { searchStoredCatalog } from "./catalog-store";
 
-function offers(state: Workspace, actor: Actor): AgentGroupOffer[] {
+async function offers(
+  state: Workspace,
+  actor: Actor,
+): Promise<AgentGroupOffer[]> {
   if (actor.role !== "buyer" || state.archivedAt) return [];
   const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
   if (!brief || brief.clarificationRequired) return [];
@@ -25,13 +23,9 @@ function offers(state: Workspace, actor: Actor): AgentGroupOffer[] {
       })
         .findings.filter((f) => f.eligible)
         .map((f) => productById(f.productId))
-    : searchCatalog(
+    : await searchStoredCatalog(
         { ...input, budget: 1000000 },
-        state.fixtureWorkspace
-          ? [...catalog, ...publicCatalog]
-          : sampleModels.includes(input.model)
-            ? undefined
-            : publicCatalog,
+        Boolean(state.fixtureWorkspace),
       );
   return products
     .filter((product) => !product.comparisonOnly)
@@ -110,9 +104,9 @@ export async function commitAgentGroup(
 ) {
   if (actor.role !== "buyer")
     throw new Error("Only the shopper can commit to a group.");
-  const candidate = offers(await getWorkspace(actor.workspaceId), actor).find(
-    (offer) => offer.productId === productId && offer.eligible,
-  );
+  const candidate = (
+    await offers(await getWorkspace(actor.workspaceId), actor)
+  ).find((offer) => offer.productId === productId && offer.eligible);
   if (
     !candidate ||
     candidate.briefVersion !== briefVersion ||

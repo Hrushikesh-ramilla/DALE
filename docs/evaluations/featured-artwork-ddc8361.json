@@ -1,0 +1,22 @@
+{
+  "scope": "Featured product rendering repair",
+  "applicationBuild": "ddc836192b172fcf09a5e35b2cc6bf4bb29281ae",
+  "url": "https://65.0.19.200.sslip.io/shop",
+  "cause": "Branded products bypassed artwork in favor of text-only cards; the hero made their dark background transparent while retaining pale text.",
+  "resolution": "Original shaded category illustrations for the four featured products, responsive sizing and explicit illustration labels.",
+  "local": { "productionBuild": "passed", "unitContractTests": 378, "browserJourneys": 5 },
+  "linuxRelease": { "run": "https://github.com/Hrushikesh-ramilla/DALE/actions/runs/38131242894", "status": "success", "browserJourneys": 5, "packagedOcrChecks": 11 },
+  "hosted": {
+    "artworkJourney": "passed",
+    "viewports": [ { "width": 1920, "height": 1080 }, { "width": 390, "height": 844 } ],
+    "slides": ["Apple", "Maison Francis Kurkdjian", "Louis Vuitton", "Givenchy"],
+    "assertions": ["Visible SVG artwork", "Silhouette geometry present", "Artwork dimensions above 200px", "Correct illustration caption", "Next control cycles through four slides and wraps", "No horizontal overflow"],
+    "httpsHealth": "ready",
+    "buildMatches": true,
+    "appService": "active",
+    "workerService": "active",
+    "privateConfigurationPreserved": true
+  },
+  "manualCheck": "Reload /shop and use the four carousel dots or next arrow. Each slide should show a phone, bottle, bag or shirt illustration with the matching caption. Check on mobile too.",
+  "boundary": "These are original category illustrations, not manufacturer photographs. No AI generation, real payment transaction, provider configuration change or additional infrastructure was required."
+}

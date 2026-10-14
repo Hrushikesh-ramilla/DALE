@@ -1,13 +1,36 @@
 import type { Product } from "@/domain/catalog";
+import { researchSources } from "@/domain/research";
 export function CatalogEvidence({ product }: { product: Product }) {
+  const reviewed = product.source.startsWith("apple:")
+    ? researchSources.filter((source) =>
+        product.source.split(":")[1].split("+").includes(source.id),
+      )
+    : [];
   return (
     <div className="catalog-evidence">
       {product.source.startsWith("https://") ? (
         <a href={product.source} target="_blank" rel="noopener noreferrer">
           Manufacturer source ↗
         </a>
+      ) : reviewed.length ? (
+        reviewed.map((source) => (
+          <a
+            key={source.id}
+            href={source.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {source.title} ↗
+          </a>
+        ))
       ) : (
         <span>Engineering fixture · {product.source}</span>
+      )}
+      {!!reviewed.length && (
+        <small>
+          Reviewed Apple sources · DALE sandbox offer · simulated price and
+          stock
+        </small>
       )}
       {product.evidence && (
         <small>

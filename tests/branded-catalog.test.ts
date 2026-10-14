@@ -1,3 +1,6 @@
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { CatalogEvidence } from "../src/components/catalog-evidence";
 import { beforeAll, expect, it } from "vitest";
 import { brandedCatalog } from "../src/domain/branded-catalog";
 import {
@@ -127,5 +130,42 @@ it("blocks checkout and group commitments for identity-only records", async () =
   );
   await expect(joinGroup(actor, "B028", "not-required")).rejects.toThrow(
     "comparison-only",
+  );
+});
+
+it("renders manufacturer links and sandbox provenance for every public record, including legacy Apple bundles", () => {
+  for (const product of publicCatalog) {
+    const html = renderToStaticMarkup(
+      createElement(CatalogEvidence, { product }),
+    );
+    expect(html).toContain('href="https://');
+    expect(html).toContain("sandbox offer");
+    expect(html).not.toContain("Engineering fixture");
+  }
+  expect(
+    renderToStaticMarkup(
+      createElement(CatalogEvidence, { product: productById("R003") }),
+    ).match(/href=/g),
+  ).toHaveLength(2);
+});
+
+it("honours the shopper's Armani and Maison Martin Margiela names without substituting another house", () => {
+  const armani = understandAgent({
+    task: "Find Armani cotton t-shirt size M under $1000",
+    model: "Atlas 14",
+    budget: 100000,
+  });
+  if (armani.kind !== "shopping") throw new Error("Expected shopping");
+  expect(armani.brief.requirements?.brand).toBe("giorgio armani");
+  expect(searchCatalog(armani.brief, publicCatalog)).toEqual([]);
+  const margiela = understandAgent({
+    task: "Find Maison Martin Margiela Jazz Club perfume in 100ml under $200",
+    model: "Atlas 14",
+    budget: 100000,
+  });
+  if (margiela.kind !== "shopping") throw new Error("Expected shopping");
+  expect(margiela.brief.requirements?.brand).toBe("maison margiela");
+  expect(searchCatalog(margiela.brief, publicCatalog).map((p) => p.id)).toEqual(
+    ["B013"],
   );
 });
