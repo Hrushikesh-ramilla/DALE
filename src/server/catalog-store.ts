@@ -1,6 +1,16 @@
-import { searchCatalog, type Product } from "@/domain/catalog";
-import { departments } from "@/domain/departments";
+import { knownModels, searchCatalog, type Product } from "@/domain/catalog";
+import {
+  departments,
+  retailCategories,
+  lifestyleProfile,
+} from "@/domain/departments";
+import { expandCatalogBrandAliases } from "@/domain/branded-shopping";
 import { getDatabase, type Sql } from "./database";
+import {
+  catalogFilterHash,
+  decodeCatalogCursor,
+  encodeCatalogCursor,
+} from "./catalog-cursor";
 
 export async function catalogSummary() {
   const database = await getDatabase();
@@ -74,10 +84,15 @@ export async function browseCatalog(input: {
   query?: string;
   budget?: number;
   page?: number;
+  cursor?: string;
   requirements?: Record<string, string | number>;
   fixtures?: boolean;
 }) {
   const database = await getDatabase();
+  const filter = catalogFilterHash(input);
+  const position = input.cursor
+    ? decodeCatalogCursor(input.cursor, filter)
+    : undefined;
   const values = [
     input.category || "",
     input.query || "",
@@ -93,14 +108,24 @@ export async function browseCatalog(input: {
     values,
   );
   const rows = await database.query<{ record: Product }>(
-    `SELECT record FROM catalog_products WHERE ${where} ORDER BY price,id LIMIT 48 OFFSET $6`,
-    [...values, ((input.page || 1) - 1) * 48],
+    position
+      ? `SELECT record FROM catalog_products WHERE ${where} AND (price,id)>($6,$7) ORDER BY price,id LIMIT 49`
+      : `SELECT record FROM catalog_products WHERE ${where} ORDER BY price,id LIMIT 49 OFFSET $6`,
+    position
+      ? [...values, position.price, position.id]
+      : [...values, ((input.page || 1) - 1) * 48],
   );
   const counts = await database.query<{ category: string; count: string }>(
     "SELECT category,count(*) FROM catalog_products WHERE publication='published' GROUP BY category ORDER BY category",
   );
+  const products = rows.rows.slice(0, 48).map((row) => row.record);
+  const last = products.at(-1);
   return {
-    products: rows.rows.map((row) => row.record),
+    products,
+    nextCursor:
+      rows.rows.length > 48 && last
+        ? encodeCatalogCursor(filter, last.price, last.id)
+        : null,
     total: Number(total.rows[0].count),
     page: input.page || 1,
     pageSize: 48,
@@ -120,16 +145,33 @@ export async function searchStoredCatalog(
   input: Parameters<typeof searchCatalog>[0],
   fixtures = false,
 ) {
+  // Validate the domain scoring contract before evaluating SQL weights.
+  searchCatalog(input, []);
+  if (!knownModels.includes(input.model) || input.budget <= 0) return [];
   const database = await getDatabase();
   const rows = await database.query<{ record: Product }>(
-    `SELECT record FROM catalog_products WHERE price<=$1 AND ($2='' OR category=$2)
+    `WITH candidates AS (SELECT record,id,price,
+    CASE WHEN $8<>'' AND strpos(lower(array_to_string(ARRAY(SELECT jsonb_array_elements_text(record->'specs')),' ')),lower($8))>0 THEN 1 ELSE 0 END AS feature_match
+    FROM catalog_products WHERE price<=$1 AND ($2='' OR category=$2)
     AND coalesce(record->'attributes','{}'::jsonb) @> $3::jsonb AND (publication='published' OR ($4 AND publication='fixture'))
-    ORDER BY price,id LIMIT 100`,
+    AND CASE WHEN category=ANY($6::text[]) OR record->>'provenance'='manufacturer_evidence'
+      THEN $5=$7 ELSE coalesce(record->'compatibleModels','[]'::jsonb) ? $5 END)
+    SELECT record FROM candidates ORDER BY
+      CASE WHEN $9::boolean THEN -($10::float8*(1-price::float8/$1)+$11::float8*feature_match) ELSE 0 END,
+      CASE WHEN $12::boolean THEN -feature_match ELSE 0 END,price,-feature_match,id LIMIT 100`,
     [
       input.budget,
       input.category || "",
       JSON.stringify(input.requirements || {}),
       fixtures,
+      input.model,
+      [...retailCategories],
+      lifestyleProfile,
+      input.preference || "",
+      Boolean(input.weights),
+      input.weights?.price || 0,
+      input.weights?.features || 0,
+      !input.weights && input.priority === "features",
     ],
   );
   return searchCatalog(
@@ -144,10 +186,11 @@ export async function catalogLanguageContext(task: string) {
   const rows = await database.query<{ record: Product }>(
     `SELECT record FROM catalog_products WHERE publication='published'
     AND ((length(record->>'brand')>1 AND (strpos(lower($1),lower(record->>'brand'))>0
-      OR strpos(regexp_replace(lower($1),'[^a-z0-9]','','g'),regexp_replace(lower(record->>'brand'),'[^a-z0-9]','','g'))>0))
+      OR (length(regexp_replace(lower(record->>'brand'),'[^a-z0-9]','','g'))>1
+        AND strpos(regexp_replace(lower($1),'[^a-z0-9]','','g'),regexp_replace(lower(record->>'brand'),'[^a-z0-9]','','g'))>0)))
     OR (length(record->'attributes'->>'modelName')>2 AND strpos(lower($1),lower(record->'attributes'->>'modelName'))>0))
     ORDER BY id LIMIT 100`,
-    [task],
+    [expandCatalogBrandAliases(task)],
   );
   return rows.rows.map((row) => row.record);
 }

@@ -1,0 +1,669 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "fragrance-mfk-2026-10-11-v1",
+  "reviewedBy": "manufacturer-visible-variant-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "www.franciskurkdjian.com"
+  ],
+  "products": [
+    {
+      "id": "FRAGRANCE-MFK-RA12402",
+      "name": "Maison Francis Kurkdjian Kurky · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "Kurky, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA12402",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: gourmand"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/kurky-eau-de-parfum-RA12402.html",
+      "familyId": "mfk:kurky",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "gourmand",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "kurky",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw6eec7be2/KURKY/FRAGRANCE/3700559623855_KURKY_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/kurky-eau-de-parfum-RA12402.html",
+        "alt": "Kurky Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA122521",
+      "name": "Maison Francis Kurkdjian Grand Soir · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "Grand Soir, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA122521",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: ambery woody"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/grand-soir-eau-de-parfum-RA122521.html",
+      "familyId": "mfk:grand-soir",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "ambery woody",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "grand soir",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dwf271d704/GRAND_SOIR/FRAGRANCE/3700559614242_GRAND_SOIR_EDP_70ML_1.png",
+        "source": "https://www.franciskurkdjian.com/us-en/p/grand-soir-eau-de-parfum-RA122521.html",
+        "alt": "Grand Soir Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA121221",
+      "name": "Maison Francis Kurkdjian OUD · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "OUD, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA121221",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: ambery woody"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/oud-eau-de-parfum-RA121221.html",
+      "familyId": "mfk:oud",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "ambery woody",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "oud",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dwa515a250/OUD/FRAGRANCE/3700559613337_OUD_70ML_EDP_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/oud-eau-de-parfum-RA121221.html",
+        "alt": "OUD Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA122221",
+      "name": "Maison Francis Kurkdjian OUD satin mood · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "OUD satin mood, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA122221",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: floral ambery woody"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/oud-satin-mood-eau-de-parfum-RA122221.html",
+      "familyId": "mfk:oud-satin-mood",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "floral ambery woody",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "oud satin mood",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dwd38a559b/OSAM/FRAGRANCE/3700559602607_OUD_SATIN_MOOD_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/oud-satin-mood-eau-de-parfum-RA122221.html",
+        "alt": "OUD satin mood Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA12172",
+      "name": "Maison Francis Kurkdjian OUD silk mood · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "OUD silk mood, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA12172",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: floral woody"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/oud-silk-mood-eau-de-parfum-RA12172.html",
+      "familyId": "mfk:oud-silk-mood",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "floral woody",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "oud silk mood",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dwbf04e460/OSILK/FRAGRANCE/3700559606513_OUD_SILK_MOOD_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/oud-silk-mood-eau-de-parfum-RA12172.html",
+        "alt": "OUD silk mood Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA12352",
+      "name": "Maison Francis Kurkdjian 724 · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "724, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA12352",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: floral"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/724-eau-de-parfum-RA12352.html",
+      "familyId": "mfk:724",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "floral",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "724",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw9fbe5b67/724/FRAGRANCE/3700559613610_724_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/724-eau-de-parfum-RA12352.html",
+        "alt": "724 Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA128722",
+      "name": "Maison Francis Kurkdjian À la rose · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "À la rose, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA128722",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: floral"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/a-la-rose-eau-de-parfum-RA128722.html",
+      "familyId": "mfk:a-la-rose",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "floral",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "à la rose",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw2ddda9d3/A_LA_ROSE/FRAGRANCE/3700559612255_A_LA_ROSE_EDP_70ML_1.png",
+        "source": "https://www.franciskurkdjian.com/us-en/p/a-la-rose-eau-de-parfum-RA128722.html",
+        "alt": "À la rose Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA12312",
+      "name": "Maison Francis Kurkdjian l’Homme À la rose · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "l’Homme À la rose, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA12312",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: floral woody"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/lhomme-a-la-rose-eau-de-parfum-RA12312.html",
+      "familyId": "mfk:l-homme-a-la-rose",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "floral woody",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "l’homme à la rose",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw2e91a2e1/HOMME_A_LA_ROSE/FRAGRANCE/3700559609989_HOMME_A_LA_ROSE_EDT_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/lhomme-a-la-rose-eau-de-parfum-RA12312.html",
+        "alt": "l’Homme À la rose Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA121322",
+      "name": "Maison Francis Kurkdjian Amyris femme · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "Amyris femme, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA121322",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: floral"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/amyris-femme-eau-de-parfum-RA121322.html",
+      "familyId": "mfk:amyris-femme",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "floral",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "amyris femme",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dwd61a3e49/AMYRIS/FEMME/FRAGRANCE/3700559620267_AMYRIS_FEMME_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/amyris-femme-eau-de-parfum-RA121322.html",
+        "alt": "Amyris femme Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA122021",
+      "name": "Maison Francis Kurkdjian féminin Pluriel · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "féminin Pluriel, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA122021",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: floral"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/feminin-pluriel-eau-de-parfum-RA122021.html",
+      "familyId": "mfk:feminin-pluriel",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "floral",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "féminin pluriel",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw47fccb94/PLURIEL/FEMININ/3700559613276_FEMININ_PLURIEL_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/feminin-pluriel-eau-de-parfum-RA122021.html",
+        "alt": "féminin Pluriel Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA122421",
+      "name": "Maison Francis Kurkdjian Petit Matin · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "Petit Matin, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA122421",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: citrus"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+      "familyId": "mfk:petit-matin",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "citrus",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "petit matin",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw76c221e3/PETIT_MATIN/FRAGRANCE/3700559614228_PETIT_MATIN_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+        "alt": "Petit Matin Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA120421",
+      "name": "Maison Francis Kurkdjian APOM · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "APOM, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA120421",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: floral ambery"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/apom-eau-de-parfum-RA120421.html",
+      "familyId": "mfk:apom",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "floral ambery",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "apom",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw3166b552/APOM/FRAGRANCE/3700559620472_APOM_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/apom-eau-de-parfum-RA120421.html",
+        "alt": "APOM Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA120621",
+      "name": "Maison Francis Kurkdjian Absolue Pour le Matin · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "Absolue Pour le Matin, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA120621",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: citrus"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/absolue-pour-le-matin-eau-de-parfum-RA120621.html",
+      "familyId": "mfk:absolue-pour-le-matin",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "citrus",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "absolue pour le matin",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dwe123659a/ABSOLUE_MATIN/FRAGRANCE/3700559622278_RA120621_ABSOLUE_MATIN_EDP_70ML_FULL_FACE_2000X2000.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/absolue-pour-le-matin-eau-de-parfum-RA120621.html",
+        "alt": "Absolue Pour le Matin Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "FRAGRANCE-MFK-RA120721",
+      "name": "Maison Francis Kurkdjian Absolue Pour le Soir · Eau de Parfum · 70ml",
+      "category": "fragrance",
+      "description": "Absolue Pour le Soir, manufacturer-identified eau de parfum, 70ml. DALE's price and inventory are simulated. Manufacturer olfactory descriptions do not establish enjoyment, performance or individual safety.",
+      "price": 32500,
+      "compatibleModels": [],
+      "specs": [
+        "Reference: RA120721",
+        "Concentration: Eau de Parfum",
+        "Volume: 70ml",
+        "Manufacturer olfactory family: ambery"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Manufacturer bottle",
+      "source": "https://www.franciskurkdjian.com/us-en/p/absolue-pour-le-soir-eau-de-parfum-RA120721.html",
+      "familyId": "mfk:absolue-pour-le-soir",
+      "provenance": "manufacturer_evidence",
+      "brand": "Maison Francis Kurkdjian",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "US",
+        "missing": [
+          "Scent enjoyment, longevity, projection and individual allergy safety are not established.",
+          "Real merchant stock, current selling price and fulfilment are not connected."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "scent": "ambery",
+        "volumeMl": 70,
+        "brand": "maison francis kurkdjian",
+        "modelName": "absolue pour le soir",
+        "concentration": "eau de parfum",
+        "productType": "eau de parfum"
+      },
+      "media": {
+        "url": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw9b790c36/ABSOLUE_SOIR/FRAGRANCE/3700559622308_RA120721_ABSOLUE_SOIR_EDP_70ML_FULL_FACE_2000X2000.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "source": "https://www.franciskurkdjian.com/us-en/p/absolue-pour-le-soir-eau-de-parfum-RA120721.html",
+        "alt": "Absolue Pour le Soir Eau de Parfum 70ml manufacturer photograph",
+        "attribution": "Maison Francis Kurkdjian product photography; external reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

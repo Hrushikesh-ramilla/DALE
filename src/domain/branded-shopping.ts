@@ -36,6 +36,15 @@ const has = (text: string, phrase: string) =>
   ` ${normalized(text).replace(/[^a-z0-9°]+/g, " ")} `.includes(
     ` ${normalized(phrase).replace(/[^a-z0-9°]+/g, " ")} `,
   );
+/** Make existing public brand aliases usable by bounded database retrieval. */
+export function expandCatalogBrandAliases(text: string) {
+  return [
+    text,
+    ...Object.entries(aliases)
+      .filter(([, names]) => names.some((name) => has(text, name)))
+      .map(([brand]) => brand),
+  ].join(" ");
+}
 const categoryPatterns: [Category, RegExp][] = [
   ["phones", /\b(?:phones?|mobiles?|smartphones?|iphone)\b/i],
   ["laptops", /\b(?:laptops?|macbook)\b/i],

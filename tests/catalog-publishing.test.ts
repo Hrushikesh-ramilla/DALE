@@ -79,6 +79,50 @@ it("paginates a full 500-record publication without duplicates or fixture leakag
   }
   expect(new Set(ids).size).toBe(500);
   expect(ids).toEqual(input.products.map((product) => product.id));
+  const continuedIds: string[] = [];
+  let cursor: string | undefined;
+  do {
+    const result = await browseCatalog({ query: "IsolatedCapacity", cursor });
+    continuedIds.push(...result.products.map((product) => product.id));
+    cursor = result.nextCursor || undefined;
+  } while (cursor);
+  expect(continuedIds).toEqual(ids);
+  // A feature-preferred record beyond the cheapest 100 still has to be retrieved.
+  const database = await getDatabase();
+  const preferredId = ids.at(-1)!;
+  await database.query(
+    "UPDATE catalog_products SET record=jsonb_set(record,'{specs}',$2::jsonb) WHERE id=$1",
+    [preferredId, JSON.stringify(["CapacityPreferenceFact"])],
+  );
+  for (const scoring of [
+    { priority: "features" as const },
+    { weights: { price: 1, features: 100 } },
+  ]) {
+    const candidates = await searchStoredCatalog({
+      model: "not-required",
+      budget: 15000,
+      category: "fragrance",
+      requirements: { brand: template.attributes!.brand },
+      preference: "CapacityPreferenceFact",
+      ...scoring,
+    });
+    expect(candidates).toHaveLength(100);
+    expect(candidates[0].id).toBe(preferredId);
+  }
+  const first = await browseCatalog({ query: "IsolatedCapacity" });
+  await expect(
+    browseCatalog({ query: "different", cursor: first.nextCursor! }),
+  ).rejects.toThrow("continuation");
+  // Withdrawing an earlier record must not shift the next page or repeat IDs.
+  await database.query(
+    "UPDATE catalog_products SET publication='retired' WHERE id=$1",
+    [ids[0]],
+  );
+  const second = await browseCatalog({
+    query: "IsolatedCapacity",
+    cursor: first.nextCursor!,
+  });
+  expect(second.products.map((p) => p.id)).toEqual(ids.slice(48, 96));
   await retireCatalog(staged.id);
   expect((await browseCatalog({ query: "IsolatedCapacity" })).total).toBe(0);
 });

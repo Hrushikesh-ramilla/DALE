@@ -27,6 +27,7 @@ const querySchema = z
     query: z.string().trim().max(100).default(""),
     budget: z.coerce.number().int().min(1).max(1000000).default(1000000),
     page: z.coerce.number().int().min(1).max(1000).default(1),
+    cursor: z.string().min(1).max(600).optional(),
     use: briefSchema.shape.requirements.unwrap().shape.use,
     productType: briefSchema.shape.requirements.unwrap().shape.productType,
     size: briefSchema.shape.requirements.unwrap().shape.size,

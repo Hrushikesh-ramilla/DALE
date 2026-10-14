@@ -11,7 +11,9 @@ export function usePublishedCatalog(input: {
   requirements: RetailRequirements;
 }) {
   const [summary, setSummary] = useState<CatalogSummary | null>(null);
-  const [page, setPage] = useState(1);
+  const [continuation, setContinuation] = useState({ key: "", cursor: "" });
+  const [nextCursor, setNextCursor] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
   const [total, setTotal] = useState(0);
   const [error, setError] = useState("");
@@ -37,10 +39,11 @@ export function usePublishedCatalog(input: {
     if (!input.enabled) return;
     const abort = new AbortController();
     const timer = setTimeout(() => {
-      const nextPage = loadedKey === key ? page : 1;
+      const cursor = continuation.key === key ? continuation.cursor : "";
+      setLoading(true);
       const params = new URLSearchParams({
         ...JSON.parse(key),
-        page: String(nextPage),
+        ...(cursor ? { cursor } : {}),
       });
       fetch(`/api/catalog?${params}`, { signal: abort.signal })
         .then(async (response) => {
@@ -49,7 +52,7 @@ export function usePublishedCatalog(input: {
           const result: Awaited<ReturnType<typeof browseCatalog>> =
             await response.json();
           setProducts((previous) =>
-            nextPage === 1
+            !cursor
               ? result.products
               : [
                   ...previous,
@@ -60,23 +63,31 @@ export function usePublishedCatalog(input: {
           );
           setTotal(result.total);
           setLoadedKey(key);
-          setPage(nextPage);
+          setNextCursor(result.nextCursor);
+          setLoading(false);
           setError("");
         })
         .catch((error) => {
-          if (!abort.signal.aborted) setError(error.message);
+          if (!abort.signal.aborted) {
+            setError(error.message);
+            setLoading(false);
+          }
         });
     }, 180);
     return () => {
       clearTimeout(timer);
       abort.abort();
     };
-  }, [input.enabled, key, loadedKey, page]);
+  }, [input.enabled, key, continuation]);
   return {
     summary,
     products: loadedKey === key ? products : emptyProducts,
     total: loadedKey === key ? total : 0,
     error,
-    loadMore: () => setPage((p) => p + 1),
+    loading: loading || (input.enabled && loadedKey !== key),
+    loadMore: () => {
+      if (!loading && loadedKey === key && nextCursor)
+        setContinuation({ key, cursor: nextCursor });
+    },
   };
 }

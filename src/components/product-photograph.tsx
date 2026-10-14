@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import type { Product } from "@/domain/catalog";
 export function ProductPhotograph({
   product,
@@ -20,9 +21,12 @@ export function ProductPhotograph({
           <p>Manufacturer photograph unavailable.</p>
         </div>
       ) : (
-        <img
+        <Image
           src={product.media.url}
           alt={product.media.alt}
+          width={768}
+          height={768}
+          sizes="(max-width: 640px) 85vw, (max-width: 1200px) 45vw, 25vw"
           loading="lazy"
           decoding="async"
           referrerPolicy="no-referrer"

@@ -1,0 +1,488 @@
+{
+  "schemaVersion": "catalog-manifest-v1",
+  "id": "phones-apple-2026-10-11-v1",
+  "reviewedBy": "manufacturer-technical-document-review",
+  "reviewedAt": "2026-10-11",
+  "approvedSourceHosts": [
+    "support.apple.com"
+  ],
+  "products": [
+    {
+      "id": "PHONE-APPLE-148590",
+      "name": "Apple iPhone 18 Pro · 256GB · Black",
+      "category": "phones",
+      "description": "iPhone 18 Pro, reviewed 256GB configuration. Manufacturer-stated 6.3-inch display and A20 Pro chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.3 inches",
+        "Chip: A20 Pro",
+        "Finish: Black",
+        "Adaptive refresh rate up to 120Hz"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://support.apple.com/en-us/148590",
+      "familyId": "apple:iphone-18-pro",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 18 pro",
+        "storageGb": 256,
+        "displayInches": 6.3,
+        "refreshHz": 120
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-18-pro.png",
+        "source": "https://support.apple.com/en-us/148590",
+        "alt": "iPhone 18 Pro, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-148591",
+      "name": "Apple iPhone 18 Pro Max · 256GB · Black",
+      "category": "phones",
+      "description": "iPhone 18 Pro Max, reviewed 256GB configuration. Manufacturer-stated 6.9-inch display and A20 Pro chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.9 inches",
+        "Chip: A20 Pro",
+        "Finish: Black",
+        "Adaptive refresh rate up to 120Hz"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://support.apple.com/en-us/148591",
+      "familyId": "apple:iphone-18-pro-max",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 18 pro max",
+        "storageGb": 256,
+        "displayInches": 6.9,
+        "refreshHz": 120
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-18-pro-max.png",
+        "source": "https://support.apple.com/en-us/148591",
+        "alt": "iPhone 18 Pro Max, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-126470",
+      "name": "Apple iPhone 17e · 256GB · Black",
+      "category": "phones",
+      "description": "iPhone 17e, reviewed 256GB configuration. Manufacturer-stated 6.1-inch display and A19 chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.1 inches",
+        "Chip: A19",
+        "Finish: Black"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://support.apple.com/en-us/126470",
+      "familyId": "apple:iphone-17e",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes.",
+          "A numeric display refresh rate is not recorded."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 17e",
+        "storageGb": 256,
+        "displayInches": 6.1
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-17e.png",
+        "source": "https://support.apple.com/en-us/126470",
+        "alt": "iPhone 17e, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-125091",
+      "name": "Apple iPhone 17 Pro Max · 256GB · Silver",
+      "category": "phones",
+      "description": "iPhone 17 Pro Max, reviewed 256GB configuration. Manufacturer-stated 6.9-inch display and A19 Pro chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.9 inches",
+        "Chip: A19 Pro",
+        "Finish: Silver",
+        "Adaptive refresh rate up to 120Hz"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Silver",
+      "source": "https://support.apple.com/en-us/125091",
+      "familyId": "apple:iphone-17-pro-max",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 17 pro max",
+        "storageGb": 256,
+        "displayInches": 6.9,
+        "refreshHz": 120
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-17-pro-17-pro-max-hero.png",
+        "source": "https://support.apple.com/en-us/125091",
+        "alt": "iPhone 17 Pro Max, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-125090",
+      "name": "Apple iPhone 17 Pro · 256GB · Silver",
+      "category": "phones",
+      "description": "iPhone 17 Pro, reviewed 256GB configuration. Manufacturer-stated 6.3-inch display and A19 Pro chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.3 inches",
+        "Chip: A19 Pro",
+        "Finish: Silver",
+        "Adaptive refresh rate up to 120Hz"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Silver",
+      "source": "https://support.apple.com/en-us/125090",
+      "familyId": "apple:iphone-17-pro",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 17 pro",
+        "storageGb": 256,
+        "displayInches": 6.3,
+        "refreshHz": 120
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-17-pro-17-pro-max-hero.png",
+        "source": "https://support.apple.com/en-us/125090",
+        "alt": "iPhone 17 Pro, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-125092",
+      "name": "Apple iPhone Air · 256GB · Space Black",
+      "category": "phones",
+      "description": "iPhone Air, reviewed 256GB configuration. Manufacturer-stated 6.5-inch display and A19 Pro chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.5 inches",
+        "Chip: A19 Pro",
+        "Finish: Space Black",
+        "Adaptive refresh rate up to 120Hz"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Space Black",
+      "source": "https://support.apple.com/en-us/125092",
+      "familyId": "apple:iphone-air",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone air",
+        "storageGb": 256,
+        "displayInches": 6.5,
+        "refreshHz": 120
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-air-hero.png",
+        "source": "https://support.apple.com/en-us/125092",
+        "alt": "iPhone Air, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-122208",
+      "name": "Apple iPhone 16e · 256GB · Black",
+      "category": "phones",
+      "description": "iPhone 16e, reviewed 256GB configuration. Manufacturer-stated 6.1-inch display and A18 chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.1 inches",
+        "Chip: A18",
+        "Finish: Black"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://support.apple.com/en-us/122208",
+      "familyId": "apple:iphone-16e",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes.",
+          "A numeric display refresh rate is not recorded."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 16e",
+        "storageGb": 256,
+        "displayInches": 6.1
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122208-iphone-16e.png",
+        "source": "https://support.apple.com/en-us/122208",
+        "alt": "iPhone 16e, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-121032",
+      "name": "Apple iPhone 16 Pro Max · 256GB · Black Titanium",
+      "category": "phones",
+      "description": "iPhone 16 Pro Max, reviewed 256GB configuration. Manufacturer-stated 6.9-inch display and A18 Pro chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.9 inches",
+        "Chip: A18 Pro",
+        "Finish: Black Titanium",
+        "Adaptive refresh rate up to 120Hz"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black Titanium",
+      "source": "https://support.apple.com/en-us/121032",
+      "familyId": "apple:iphone-16-pro-max",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 16 pro max",
+        "storageGb": 256,
+        "displayInches": 6.9,
+        "refreshHz": 120
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121032-iphone-16-pro-max.png",
+        "source": "https://support.apple.com/en-us/121032",
+        "alt": "iPhone 16 Pro Max, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-121031",
+      "name": "Apple iPhone 16 Pro · 256GB · Black Titanium",
+      "category": "phones",
+      "description": "iPhone 16 Pro, reviewed 256GB configuration. Manufacturer-stated 6.3-inch display and A18 Pro chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.3 inches",
+        "Chip: A18 Pro",
+        "Finish: Black Titanium",
+        "Adaptive refresh rate up to 120Hz"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black Titanium",
+      "source": "https://support.apple.com/en-us/121031",
+      "familyId": "apple:iphone-16-pro",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 16 pro",
+        "storageGb": 256,
+        "displayInches": 6.3,
+        "refreshHz": 120
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121031-iphone-16-pro.png",
+        "source": "https://support.apple.com/en-us/121031",
+        "alt": "iPhone 16 Pro, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    },
+    {
+      "id": "PHONE-APPLE-121030",
+      "name": "Apple iPhone 16 Plus · 256GB · Black",
+      "category": "phones",
+      "description": "iPhone 16 Plus, reviewed 256GB configuration. Manufacturer-stated 6.7-inch display and A18 chip. DALE offer and inventory are simulated; source documentation does not establish current commercial availability.",
+      "price": 99900,
+      "compatibleModels": [],
+      "specs": [
+        "Storage: 256GB",
+        "Display: 6.7 inches",
+        "Chip: A18",
+        "Finish: Black"
+      ],
+      "sponsored": false,
+      "stock": 20,
+      "color": "Black",
+      "source": "https://support.apple.com/en-us/121030",
+      "familyId": "apple:iphone-16-plus",
+      "provenance": "manufacturer_evidence",
+      "brand": "Apple",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-11",
+        "region": "United States manufacturer technical documentation",
+        "missing": [
+          "RAM and battery capacity in mAh are not manufacturer-verified in this record.",
+          "Commercial price/stock and individual carrier/region compatibility are not verified.",
+          "Manufacturer model photograph may include other finishes or companion model sizes.",
+          "A numeric display refresh rate is not recorded."
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "apple",
+        "modelName": "iphone 16 plus",
+        "storageGb": 256,
+        "displayInches": 6.7
+      },
+      "media": {
+        "url": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121030-iphone-16-plus.png",
+        "source": "https://support.apple.com/en-us/121030",
+        "alt": "iPhone 16 Plus, manufacturer model photograph; finish may differ from selected offer",
+        "attribution": "Product photograph © Apple; manufacturer technical reference",
+        "reviewedAt": "2026-10-11",
+        "usage": "external_reference"
+      }
+    }
+  ]
+}

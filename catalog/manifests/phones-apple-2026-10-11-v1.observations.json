@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-11",
+  "observations": [
+    {
+      "source": "https://support.apple.com/en-us/148590",
+      "sha256": "e52cc06c6488ff9395f8054e292387a0eb99b3c2301ccc36e78ba3eda8abeb8f",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/148591",
+      "sha256": "83619282046bca7aa2d5c1c56908dc9864db86cd7fc1ed63f5839c85354be74f",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/126470",
+      "sha256": "94004b12faa95535239b4f74d8c8c1b936ce78c9872b2819b18ef873a86adfdd",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/125091",
+      "sha256": "93646496fe575488ffa54b0ba516dbbbaaeb48fd9f0ad4fa6b1147f4fb802168",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/125090",
+      "sha256": "6d3561f24b18e7da9f927ef04a30462905271ee90f75c10e5287dcdd49c4b076",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/125092",
+      "sha256": "e85b5b9272665d2a22f1aff0dd6c19d6cb956e64bfe3731c72f6d095b587f279",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/122208",
+      "sha256": "70f6d50aa4f0cb6e181be4541c92e0b0a19b08a9baf8691d91bec4930845536e",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/121032",
+      "sha256": "fe90d4e169049f70ab19fc45a5669cdf07a603f247427116af6ce46c30c14f56",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/121031",
+      "sha256": "e6fefd2c236b4f455c11f731a82c0425b9c7bb9a53283581efe738a91cacf83b",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    },
+    {
+      "source": "https://support.apple.com/en-us/121030",
+      "sha256": "088fb2d16cabf089649671f5a7d21c5bc9568f8d0677aad46ee4de7365ac3f26",
+      "imageStatus": 200,
+      "imageType": "image/png"
+    }
+  ]
+}

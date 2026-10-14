@@ -1,5 +1,60 @@
 import { expect, test } from "@playwright/test";
 const origin = process.env.E2E_BASE_URL || "http://127.0.0.1:3100";
+test("phone agent preserves an exact Pro Max model with sourced photographs and unknown RAM", async ({
+  page,
+}) => {
+  expect(
+    (
+      await page.request.post(origin + "/api/account", {
+        headers: { Origin: origin },
+        data: { action: "guest" },
+      })
+    ).ok(),
+  ).toBe(true);
+  await page.goto("/shop");
+  const prompt = "Find Apple iPhone 18 Pro Max with 256GB storage under $1500";
+  await page.getByPlaceholder(/^Ask DALE:/).fill(prompt);
+  await page.getByRole("button", { name: "Ask DALE", exact: true }).click();
+  const chat = page.locator("#dale-chat");
+  await expect(chat.getByLabel("Your conversation with DALE")).toHaveValue(
+    prompt,
+  );
+  await chat.getByRole("button", { name: "Send message", exact: true }).click();
+  const result = chat.getByLabel("DALE task result");
+  await expect(
+    result.getByRole("button", {
+      name: /Review agent option Apple iPhone 18 Pro Max/,
+    }),
+  ).toBeVisible();
+  const state = await (await page.request.get(origin + "/api/session")).json();
+  expect(state.agentRuns.at(-1).productIds).toEqual(["PHONE-APPLE-148591"]);
+  const product = state.catalogReferences.find(
+    (item: { id: string }) => item.id === "PHONE-APPLE-148591",
+  );
+  expect(product.attributes.ramGb).toBeUndefined();
+  expect(product.attributes.storageGb).toBe(256);
+  expect(state.orders).toEqual([]);
+  const photo = page.locator(".product-grid .product-photograph img").first();
+  await expect(photo).toBeVisible();
+  await photo.scrollIntoViewIfNeeded();
+  await expect
+    .poll(() => photo.evaluate((image: HTMLImageElement) => image.naturalWidth))
+    .toBeGreaterThan(0);
+  await result
+    .getByRole("button", {
+      name: /Review agent option Apple iPhone 18 Pro Max/,
+    })
+    .click();
+  await expect(page.getByRole("dialog")).toContainText(
+    "Apple iPhone 18 Pro Max",
+  );
+  await expect(page.getByRole("dialog")).toContainText(
+    "Approve simulated purchase",
+  );
+  expect(
+    (await (await page.request.get(origin + "/api/session")).json()).orders,
+  ).toEqual([]);
+});
 test("manufacturer photographs render in watches and sunglasses with a visible failure state", async ({
   page,
 }) => {
@@ -8,27 +63,30 @@ test("manufacturer photographs render in watches and sunglasses with a visible f
     await page
       .getByRole("button", { name: `Explore ${department}`, exact: true })
       .click();
-    const photo = page.locator(".product-photograph img").first();
+    const photo = page.locator(".product-grid .product-photograph img").first();
     await expect(photo).toBeVisible();
+    await photo.scrollIntoViewIfNeeded();
     await expect
       .poll(() =>
         photo.evaluate((image: HTMLImageElement) => image.naturalWidth),
       )
       .toBeGreaterThan(0);
     await expect(
-      page.locator(".product-photograph figcaption a").first(),
+      page.locator(".product-grid .product-photograph figcaption a").first(),
     ).toBeVisible();
   }
   await page.getByLabel("Brand", { exact: true }).selectOption("ray-ban");
-  const rayBanPhoto = page.locator(".product-photograph img").first();
+  const rayBanPhoto = page
+    .locator(".product-grid .product-photograph img")
+    .first();
   await expect(rayBanPhoto).toBeVisible();
+  await rayBanPhoto.scrollIntoViewIfNeeded();
   await expect
     .poll(() =>
       rayBanPhoto.evaluate((image: HTMLImageElement) => image.naturalWidth),
     )
     .toBeGreaterThan(0);
-  await page.route("https://assets2.oakley.com/**", (route) => route.abort());
-  await page.route("https://images2.ray-ban.com/**", (route) => route.abort());
+  await page.route("**/_next/image?**", (route) => route.abort());
   await page.reload();
   await page
     .getByRole("button", { name: "Explore Sunglasses", exact: true })
@@ -36,6 +94,20 @@ test("manufacturer photographs render in watches and sunglasses with a visible f
   await expect(
     page.getByText("Manufacturer photograph unavailable.").first(),
   ).toBeVisible();
+});
+test("image delivery rejects unreviewed origins and local network URLs", async ({
+  request,
+}) => {
+  for (const url of [
+    "http://127.0.0.1:3100/api/health",
+    "https://example.com/unreviewed.png",
+  ]) {
+    const response = await request.get(
+      `/_next/image?url=${encodeURIComponent(url)}&w=384&q=75`,
+    );
+    expect(response.status()).toBe(400);
+    expect(await response.text()).toContain('"url" parameter');
+  }
 });
 test("reviewed watches flow from agent recommendations through independent group purchases", async ({
   browser,
@@ -231,9 +303,25 @@ test("public catalog supports all departments and strict paginated attribute que
   const response = await request.get("/api/catalog");
   expect(response.ok()).toBe(true);
   const catalog = await response.json();
-  expect(catalog.total).toBe(75);
+  expect(catalog.total).toBe(99);
   expect(catalog.departments).toHaveLength(8);
   expect(catalog.products).toHaveLength(48);
+  const continuation = await (
+    await request.get(`/api/catalog?cursor=${catalog.nextCursor}`)
+  ).json();
+  expect(continuation.products).toHaveLength(48);
+  expect(
+    continuation.products.some((p: { id: string }) =>
+      catalog.products.some((first: { id: string }) => first.id === p.id),
+    ),
+  ).toBe(false);
+  expect(
+    (
+      await request.get(
+        `/api/catalog?category=phones&cursor=${catalog.nextCursor}`,
+      )
+    ).status(),
+  ).toBe(400);
   const filtered = await request.get(
     "/api/catalog?category=fragrance&brand=tom%20ford&volumeMl=50&budget=40000",
   );
@@ -315,6 +403,7 @@ test("electronics opens a nested device browser on desktop and mobile", async ({
         exact: true,
       }),
     ).toBeVisible();
+    await expect(page.locator(".product-grid article")).toHaveCount(0);
     const browser = page.getByRole("region", {
       name: "Browse departments and categories",
     });

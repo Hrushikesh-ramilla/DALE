@@ -1,5 +1,30 @@
 # Change log
 
+## 2026-10-11 — Maison Francis Kurkdjian assortment depth
+
+- Add fourteen distinct eau de parfum families from reviewed official pages, preserving exact reference, selected 70 ml bottle, manufacturer olfactory label and decoded product photograph. Together with Baccarat Rouge 540, the house now has fifteen models.
+- Support the existing MFK brand alias in database retrieval. Reject inconsistent variant controls, unidentified photographs and unsupported medical/performance claims. The ordinary browser journey verifies exact APOM selection and actual product-grid photograph decoding.
+- Rank and apply compatibility eligibility in database retrieval before the 100-candidate bound; feature-preferred products beyond the first hundred prices remain reachable. The 500-record contract verifies preference and weighted ranking.
+- Source-reviewed assortment becomes 99 records / 95 distinct families. Full per-brand/category depth remains pending; hosted release identity and original provider gates are recorded separately.
+
+## 2026-10-11 — Catalog continuation and capacity qualification
+
+- Added filter-bound cursor pagination ordered by price and stable SKU, retaining page-number compatibility. Storefront load-more uses continuations; retiring an earlier record no longer shifts the next page.
+- Added an isolated 10,000-record database capacity runner with complete traversal, equal-price ties, concurrent typed filters, fixture leakage checks and query-plan receipt. This qualifies the local query contract, not EC2 commercial throughput or source-reviewed assortment size.
+- Verified the 85-record application release with 401 unit tests, nine production browser journeys, twenty hosted commerce checks and eight checks after an actual app/worker restart. Existing private configuration and customer data were retained.
+
+## 2026-10-11 — Category navigation and dependable manufacturer image delivery
+
+- Open single-category departments directly; show no mixed inventory before selecting an electronics category. Derive department counts from published inventory.
+- Deliver attributed manufacturer photographs through native image optimization, an explicit HTTPS host/path allowlist, zero redirects, a five-megabyte upstream limit, local-network rejection and a 256 MiB disk cache cap. Preserve visible source attribution and image-failure feedback.
+- Verify actual product-grid image decoding, Ray-Ban brand filtering, exact phone review, empty electronics landing grids and disallowed image targets. Keep publication and full-assortment statuses separate from this rendering repair.
+
+## 2026-10-11 — Apple phone model depth
+
+- Add ten distinct models from official technical documentation, including iPhone 18 Pro/Pro Max, 17 Pro/Pro Max, 17e, Air, 16e, 16 Pro/Pro Max and 16 Plus. Together with the existing iPhone 17 record, Apple has eleven published phone models.
+- Record exact reviewed capacity, display, chip and finish; retain source fingerprints and verified model photographs. Do not invent RAM, battery mAh, current retail availability or carrier compatibility. Distinguish manufacturer model imagery from the selected offer finish.
+- Validate required section parsing, identity/media rejection and longer Pro/Max model selection. Catalog grows to 85 source-reviewed records; remaining brand and department depth is pending.
+
 ## 2026-10-11 — Reviewed Ray-Ban eyewear and model identity guards
 
 - Add ten distinct selected Ray-Ban references reviewed in the official storefront, with exact UPCs, observed frame/lens colours, optional size/polarization and attributed photographs. Verify every photograph endpoint; explicitly disclose unavailable dimensions, UV and fit information.
