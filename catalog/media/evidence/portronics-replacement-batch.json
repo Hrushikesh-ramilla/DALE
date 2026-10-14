@@ -1,0 +1,340 @@
+{
+  "manifest": {
+    "schemaVersion": "catalog-manifest-v2",
+    "id": "chargers-portronics-media-repair-2026-10-14-v2",
+    "reviewedBy": "manufacturer-SKU-description-and-photo-review",
+    "reviewedAt": "2026-10-14",
+    "approvedSourceHosts": [
+      "www.portronics.com"
+    ],
+    "products": [
+      {
+        "id": "CHARGER-PORTRONICS-POR-2954",
+        "name": "Portronics Adapto 65B · 65W · White",
+        "category": "chargers",
+        "description": "Manufacturer-identified charger and exact SKU photograph. DALE price, stock, payment and delivery are simulated; exact device charging rates require additional voltage and port-sharing evidence.",
+        "price": 2299,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Portronics",
+          "Model: Adapto 65B",
+          "Manufacturer SKU: POR-2954",
+          "Total output: 65W",
+          "PPS supported"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://www.portronics.com/products/adapto-65b",
+        "familyId": "portronics:9881078530272",
+        "provenance": "manufacturer_evidence",
+        "brand": "Portronics",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "India manufacturer product description",
+          "missing": [
+            "voltageProfiles",
+            "pdVersion",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "portronics",
+          "modelName": "adapto 65b",
+          "totalWatts": 65,
+          "ppsSupported": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/1603/9553/files/portronics_adapto_65b_65w_fast_charging_adaptor.png?v=1782462177",
+          "source": "https://www.portronics.com/products/adapto-65b",
+          "alt": "Portronics Adapto 65B white charger",
+          "attribution": "Portronics manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Adapto 65B",
+        "skuVariant": "White",
+        "accessoryProtocols": {
+          "totalWatts": 65,
+          "ppsSupported": true
+        },
+        "deviceCompatibility": []
+      },
+      {
+        "id": "CHARGER-PORTRONICS-POR-2955",
+        "name": "Portronics Adapto 100 Pro · 100W · White",
+        "category": "chargers",
+        "description": "Manufacturer-identified charger and exact SKU photograph. DALE price, stock, payment and delivery are simulated; exact device charging rates require additional voltage and port-sharing evidence.",
+        "price": 3499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Portronics",
+          "Model: Adapto 100 Pro",
+          "Manufacturer SKU: POR-2955",
+          "Total output: 100W",
+          "PPS supported",
+          "Ports: 3x USB-C + 1x USB-A",
+          "GaN technology"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://www.portronics.com/products/adapto-100-pro",
+        "familyId": "portronics:9198995013856",
+        "provenance": "manufacturer_evidence",
+        "brand": "Portronics",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "India manufacturer product description",
+          "missing": [
+            "voltageProfiles",
+            "pdVersion",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "portronics",
+          "modelName": "adapto 100 pro",
+          "totalWatts": 100,
+          "ppsSupported": true,
+          "connectorType": "3x USB-C + 1x USB-A",
+          "ganTechnology": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/1603/9553/files/Portronics_Adapto_100_Pro_100W_Desk_Charger_with_GaN_technology.jpg?v=1771401681",
+          "source": "https://www.portronics.com/products/adapto-100-pro",
+          "alt": "Portronics Adapto 100 Pro white charger",
+          "attribution": "Portronics manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Adapto 100 Pro",
+        "skuVariant": "White",
+        "accessoryProtocols": {
+          "totalWatts": 100,
+          "ppsSupported": true,
+          "pdSupported": true
+        },
+        "deviceCompatibility": []
+      },
+      {
+        "id": "CHARGER-PORTRONICS-POR-3473",
+        "name": "Portronics Adapto 45 Plus · 45W · White",
+        "category": "chargers",
+        "description": "Manufacturer-identified charger and exact SKU photograph. DALE price, stock, payment and delivery are simulated; exact device charging rates require additional voltage and port-sharing evidence.",
+        "price": 1799,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Portronics",
+          "Model: Adapto 45 Plus",
+          "Manufacturer SKU: POR-3473",
+          "Total output: 45W",
+          "PPS supported",
+          "Ports: 1x USB-C + 1x USB-A",
+          "GaN technology"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://www.portronics.com/products/adapto-45-plus",
+        "familyId": "portronics:9691422163168",
+        "provenance": "manufacturer_evidence",
+        "brand": "Portronics",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "India manufacturer product description",
+          "missing": [
+            "voltageProfiles",
+            "pdVersion",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "portronics",
+          "modelName": "adapto 45 plus",
+          "totalWatts": 45,
+          "ppsSupported": true,
+          "connectorType": "1x USB-C + 1x USB-A",
+          "ganTechnology": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/1603/9553/files/portronics_adapto_45_plus_45w_dual_port_adaptor.jpg?v=1777462607",
+          "source": "https://www.portronics.com/products/adapto-45-plus",
+          "alt": "Portronics Adapto 45 Plus white charger",
+          "attribution": "Portronics manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Adapto 45 Plus",
+        "skuVariant": "White",
+        "accessoryProtocols": {
+          "totalWatts": 45,
+          "ppsSupported": true,
+          "pdSupported": true
+        },
+        "deviceCompatibility": []
+      },
+      {
+        "id": "CHARGER-PORTRONICS-POR-2021",
+        "name": "Portronics Adapto 20B · 20W · White",
+        "category": "chargers",
+        "description": "Manufacturer-identified charger and exact SKU photograph. DALE price, stock, payment and delivery are simulated; exact device charging rates require additional voltage and port-sharing evidence.",
+        "price": 999,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Portronics",
+          "Model: Adapto 20B",
+          "Manufacturer SKU: POR-2021",
+          "Total output: 20W",
+          "PPS supported",
+          "Ports: 1x USB-C + 1x USB-A"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://www.portronics.com/products/adapto-20b-1",
+        "familyId": "portronics:9264157950176",
+        "provenance": "manufacturer_evidence",
+        "brand": "Portronics",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "India manufacturer product description",
+          "missing": [
+            "voltageProfiles",
+            "pdVersion",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "portronics",
+          "modelName": "adapto 20b",
+          "totalWatts": 20,
+          "ppsSupported": true,
+          "connectorType": "1x USB-C + 1x USB-A"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/1603/9553/files/1500x1500_1_dc3eb196-1c15-4e1d-9e8b-6de0e2ec13ee.jpg?v=1772782922",
+          "source": "https://www.portronics.com/products/adapto-20b-1",
+          "alt": "Portronics Adapto 20B white charger",
+          "attribution": "Portronics manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Adapto 20B",
+        "skuVariant": "White",
+        "accessoryProtocols": {
+          "totalWatts": 20,
+          "ppsSupported": true,
+          "pdSupported": true
+        },
+        "deviceCompatibility": []
+      }
+    ]
+  },
+  "replacements": [
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-65-PRO",
+      "newProductId": "CHARGER-PORTRONICS-POR-2954"
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-100",
+      "newProductId": "CHARGER-PORTRONICS-POR-2955"
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-45",
+      "newProductId": "CHARGER-PORTRONICS-POR-3473"
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-PORTRONICS-PORTRONICS-ADAPTO-20",
+      "newProductId": "CHARGER-PORTRONICS-POR-2021"
+    }
+  ],
+  "evidence": [
+    {
+      "productId": "CHARGER-PORTRONICS-POR-2954",
+      "source": "https://www.portronics.com/products/adapto-65b",
+      "manufacturerSku": "POR-2954",
+      "manufacturerProductId": 9881078530272,
+      "manufacturerVariantId": 53202219466976,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1603/9553/files/portronics_adapto_65b_65w_fast_charging_adaptor.png?v=1782462177",
+      "feedSha256": "4877305ccdbfb602de5e646821ef7bf66e4bb333bf7c471c5c493fe61d654b72",
+      "descriptionSha256": "c071f4906d47eac63569021f328cbab8280ae04962e6a9a0e56ccc057fb526f2",
+      "reviewedFacts": {
+        "brand": "portronics",
+        "modelName": "adapto 65b",
+        "totalWatts": 65,
+        "ppsSupported": true
+      }
+    },
+    {
+      "productId": "CHARGER-PORTRONICS-POR-2955",
+      "source": "https://www.portronics.com/products/adapto-100-pro",
+      "manufacturerSku": "POR-2955",
+      "manufacturerProductId": 9198995013856,
+      "manufacturerVariantId": 48767980241120,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1603/9553/files/Portronics_Adapto_100_Pro_100W_Desk_Charger_with_GaN_technology.jpg?v=1771401681",
+      "feedSha256": "4877305ccdbfb602de5e646821ef7bf66e4bb333bf7c471c5c493fe61d654b72",
+      "descriptionSha256": "ea2e6b442d62c456f3eab98e8333b1668a42b23a2b4ae9f7c7453c913b6dfa74",
+      "reviewedFacts": {
+        "brand": "portronics",
+        "modelName": "adapto 100 pro",
+        "totalWatts": 100,
+        "ppsSupported": true,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "ganTechnology": true
+      }
+    },
+    {
+      "productId": "CHARGER-PORTRONICS-POR-3473",
+      "source": "https://www.portronics.com/products/adapto-45-plus",
+      "manufacturerSku": "POR-3473",
+      "manufacturerProductId": 9691422163168,
+      "manufacturerVariantId": 52141837222112,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1603/9553/files/portronics_adapto_45_plus_45w_dual_port_adaptor.jpg?v=1777462607",
+      "feedSha256": "4877305ccdbfb602de5e646821ef7bf66e4bb333bf7c471c5c493fe61d654b72",
+      "descriptionSha256": "8e3d89fbfe33734992c95223ad3042948e9c4048ce6ce23dba647c153c8e07c9",
+      "reviewedFacts": {
+        "brand": "portronics",
+        "modelName": "adapto 45 plus",
+        "totalWatts": 45,
+        "ppsSupported": true,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "ganTechnology": true
+      }
+    },
+    {
+      "productId": "CHARGER-PORTRONICS-POR-2021",
+      "source": "https://www.portronics.com/products/adapto-20b-1",
+      "manufacturerSku": "POR-2021",
+      "manufacturerProductId": 9264157950176,
+      "manufacturerVariantId": 48900616487136,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1603/9553/files/1500x1500_1_dc3eb196-1c15-4e1d-9e8b-6de0e2ec13ee.jpg?v=1772782922",
+      "feedSha256": "4877305ccdbfb602de5e646821ef7bf66e4bb333bf7c471c5c493fe61d654b72",
+      "descriptionSha256": "4276b32ce0c1efad613ed723e77cd423ff52f50791f3096a7e6546eb1601bc53",
+      "reviewedFacts": {
+        "brand": "portronics",
+        "modelName": "adapto 20b",
+        "totalWatts": 20,
+        "ppsSupported": true,
+        "connectorType": "1x USB-C + 1x USB-A"
+      }
+    }
+  ],
+  "publication": "not-published; visual review and atomic replacement required"
+}
