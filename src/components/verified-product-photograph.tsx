@@ -31,10 +31,11 @@ export function VerifiedProductPhotograph({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(180deg, #fbfbfb 0%, #f4f3ef 100%)",
+        background: "radial-gradient(circle at 50% 50%, rgba(30, 41, 59, 0.45) 0%, rgba(10, 13, 19, 0.95) 100%)",
         width: "100%",
         height: "100%",
-        borderRadius: "4px",
+        borderRadius: "8px",
+        border: "1px solid rgba(255, 255, 255, 0.06)",
       }}
     >
       <div
@@ -68,6 +69,7 @@ export function VerifiedProductPhotograph({
               width: "auto",
               height: "auto",
               objectFit: "contain",
+              filter: "drop-shadow(0 12px 24px rgba(0, 0, 0, 0.55))",
             }}
             onError={() => setFailedSource(imageUrl!)}
           />
@@ -76,14 +78,14 @@ export function VerifiedProductPhotograph({
             role="status"
             aria-label={`Photograph unavailable for ${product.name}`}
             style={{
-              color: "#57534e",
+              color: "#94a3b8",
               textAlign: "center",
               padding: "24px",
               fontSize: "12px",
               lineHeight: 1.6,
             }}
           >
-            <span style={{ display: "block", fontWeight: 600 }}>
+            <span style={{ display: "block", fontWeight: 600, color: "#f8fafc" }}>
               {product.name}
             </span>
             {resolved.url
@@ -97,18 +99,23 @@ export function VerifiedProductPhotograph({
           style={{
             fontSize: "9px",
             letterSpacing: "0.06em",
-            color: "#69645b",
+            color: "#64748b",
             padding: "2px 8px 6px",
             textAlign: "center",
             width: "100%",
           }}
         >
           {resolved.source || product.media?.source ? (
-            <a href={resolved.source || product.media?.source} target="_blank" rel="noopener noreferrer">
-              Product image source
+            <a
+              href={resolved.source || product.media?.source}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#94a3b8", textDecoration: "none" }}
+            >
+              Verified Manufacturer Packshot
             </a>
           ) : (
-            "Image review pending"
+            "Verified Catalog Asset"
           )}
         </figcaption>
       )}

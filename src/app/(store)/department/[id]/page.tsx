@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound, redirect } from "next/navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import {
   getDepartmentById,
   getDepartmentLeafs,
@@ -10,6 +11,8 @@ import {
 } from "@/domain/departments";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ProductArt } from "@/components/product-art";
+import { getDepartmentPreviews } from "@/server/catalog-store";
+import { formatMoney } from "@/domain/money";
 
 const leafDescriptions: Partial<Record<LeafTypeKey, string>> = {
   // Electronics
@@ -130,6 +133,7 @@ export default async function DepartmentPage({
   }
 
   const leafs = getDepartmentLeafs(department.id);
+  const previews = await getDepartmentPreviews(leafs);
 
   return (
     <div className="department-page">
@@ -146,7 +150,7 @@ export default async function DepartmentPage({
         <p>{department.description}</p>
         <div className="department-stats-bar">
           <span className="pill">{leafs.length} Categories</span>
-          <span>Verified luxury houses & technical specifications</span>
+          <span>Verified luxury houses & authenticated technical specifications</span>
         </div>
       </header>
 
@@ -157,22 +161,14 @@ export default async function DepartmentPage({
             const desc =
               leafDescriptions[leaf] ||
               "Explore verified models with technical attributes and authenticated provenance.";
-            const brands = leafBrandHighlights[leaf];
-            const categoryProduct = {
-              id: `dept-preview-${leaf}`,
-              name: title,
-              category: (leafToParentCategory[leaf] || department.id) as any,
-              leafType: leaf,
-              brand: brands?.split(" · ")[0] || "",
-              description: desc,
-              price: 0,
-              specs: [],
-              compatibleModels: [],
-              sponsored: false,
-              stock: 1,
-              color: "",
-              source: "",
-            };
+            const preview = previews[leaf];
+            const heroProduct = preview?.heroProduct;
+            const count = preview?.count || 0;
+            const minPrice = preview?.minPrice;
+            const brands = preview?.brands?.length
+              ? preview.brands.slice(0, 5).join(" · ")
+              : leafBrandHighlights[leaf];
+            const imageUrl = heroProduct?.media?.url;
 
             return (
               <Link
@@ -181,15 +177,39 @@ export default async function DepartmentPage({
                 className="department-category-card"
               >
                 <div className="card-visual">
-                  <ProductArt product={categoryProduct} />
-                  <span className="count-badge">Direct Access</span>
+                  {imageUrl ? (
+                    <Image
+                      src={imageUrl}
+                      alt={heroProduct?.name || title}
+                      width={380}
+                      height={260}
+                      quality={85}
+                      style={{
+                        maxWidth: "86%",
+                        maxHeight: "86%",
+                        objectFit: "contain",
+                      }}
+                    />
+                  ) : heroProduct ? (
+                    <ProductArt product={heroProduct} />
+                  ) : (
+                    <div style={{ color: "#94a3b8", fontSize: 13 }}>{title}</div>
+                  )}
+                  <span className="count-badge">
+                    {count > 0 ? `${count} Models` : "Curated Collection"}
+                  </span>
+                  {minPrice ? (
+                    <span className="price-badge">
+                      From {formatMoney(minPrice)}
+                    </span>
+                  ) : null}
                 </div>
                 <div className="card-content">
                   <h3>{title}</h3>
                   <p className="card-desc">{desc}</p>
                   {brands && <div className="card-brands">{brands}</div>}
                   <span className="card-action">
-                    <span>Browse {title}</span>
+                    <span>Explore {title}</span>
                     <ArrowRight size={14} />
                   </span>
                 </div>

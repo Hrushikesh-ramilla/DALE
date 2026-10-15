@@ -1,7 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import type { Product, RetailRequirements } from "@/domain/catalog";
-import type { catalogSummary, browseCatalog } from "@/server/catalog-store";
+import type {
+  catalogSummary,
+  browseCatalog,
+  CategoryBrandSummary,
+} from "@/server/catalog-store";
 const emptyProducts: Product[] = [];
 export type CatalogSummary = Awaited<ReturnType<typeof catalogSummary>>;
 export function usePublishedCatalog(input: {
@@ -10,6 +14,7 @@ export function usePublishedCatalog(input: {
   leafType?: string;
   brand?: string;
   query?: string;
+  budget?: number;
   requirements?: RetailRequirements;
 }) {
   const [summary, setSummary] = useState<CatalogSummary | null>(null);
@@ -18,12 +23,15 @@ export function usePublishedCatalog(input: {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
   const [total, setTotal] = useState(0);
+  const [categoryBrands, setCategoryBrands] = useState<CategoryBrandSummary[]>([]);
+  const [availableBrands, setAvailableBrands] = useState<string[]>([]);
   const [error, setError] = useState("");
   const key = JSON.stringify({
     category: input.category || "",
     leafType: input.leafType || "",
     brand: input.brand || "",
     query: input.query || "",
+    budget: input.budget || "",
     ...(input.requirements || {}),
   });
   const [loadedKey, setLoadedKey] = useState("");
@@ -68,6 +76,8 @@ export function usePublishedCatalog(input: {
                 ],
           );
           setTotal(result.total);
+          if (result.categoryBrands) setCategoryBrands(result.categoryBrands);
+          if (result.availableBrands) setAvailableBrands(result.availableBrands);
           setLoadedKey(key);
           setNextCursor(result.nextCursor);
           setLoading(false);
@@ -89,6 +99,8 @@ export function usePublishedCatalog(input: {
     summary,
     products: loadedKey === key ? products : emptyProducts,
     total: loadedKey === key ? total : 0,
+    categoryBrands,
+    availableBrands,
     error,
     loading: loading || (input.enabled && loadedKey !== key),
     loadMore: () => {
