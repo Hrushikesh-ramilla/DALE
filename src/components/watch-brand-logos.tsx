@@ -647,32 +647,20 @@ export const BlancpainLogo: FC<LogoProps> = ({ className = "", size = 80, width,
   </svg>
 );
 
-// 10g. Apple Watch:  WATCH
+// 10g. Apple: Iconic  Emblem
 export const AppleWatchLogo: FC<LogoProps> = ({ className = "", size = 80, width, height, ...props }) => (
   <svg
-    viewBox="0 0 200 80"
-    width={width ?? size * 2.5}
+    viewBox="0 0 100 80"
+    width={width ?? size * 1.25}
     height={height ?? size}
     fill="currentColor"
     className={className}
     {...props}
   >
-    <g transform="translate(68, 20) scale(0.95)" fill="currentColor">
+    <g transform="translate(50, 36) scale(1.3)" fill="currentColor">
       <path d="M12 -4 C13 -8 11 -12 7 -14 C6 -10 9 -6 12 -4 Z" fill="currentColor" />
       <path d="M7 -2 C4 -2 2 -4 -2 -4 C-6 -4 -9 -2 -11 1 C-15 7 -13 18 -8 24 C-6 27 -3 30 0 30 C3 30 5 28 8 28 C11 28 13 30 16 30 C19 30 22 27 24 24 C26 21 27 18 27 17 C26 16.5 21 14.5 21 9 C21 4.5 25 2.5 25 2 C22 -2 18 -2.5 16 -2.5 C12 -2.5 9 -2 7 -2 Z" />
     </g>
-    <text
-      x="122"
-      y="46"
-      textAnchor="middle"
-      fontFamily="'-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Helvetica Neue', sans-serif"
-      fontSize="24"
-      fontWeight="700"
-      letterSpacing="2.5"
-      fill="currentColor"
-    >
-      WATCH
-    </text>
   </svg>
 );
 

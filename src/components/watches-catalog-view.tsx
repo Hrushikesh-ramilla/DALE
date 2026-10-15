@@ -25,6 +25,7 @@ import { useStore } from "./store-context";
 import { formatMoney } from "@/domain/money";
 import type { Product } from "@/domain/catalog";
 import { WatchBrandLogo } from "./watch-brand-logos";
+import { HorologicalDial } from "./horological-dial";
 
 // The 14 Authentic Horology Houses
 export interface WatchBrandInfo {
@@ -254,9 +255,11 @@ function WatchesCatalogContent() {
   const brandParam = searchParams.get("brand") || "";
   const viewParam = searchParams.get("view") || "";
 
-  // Two distinct views:
   // isCatalogSpace is true ONLY when a specific brand is selected OR view="all" is requested!
   const isCatalogSpace = Boolean(brandParam || viewParam === "all" || viewParam === "catalog");
+
+  // Hub display mode: "dial" (interactive watch movement) or "matrix" (all 21 houses)
+  const [hubDisplayMode, setHubDisplayMode] = useState<"dial" | "matrix">("dial");
 
   // Filter state in catalog space
   const [allProducts, setAllProducts] = useState<Product[]>([]);
@@ -529,11 +532,11 @@ function WatchesCatalogContent() {
         <header className="watches-hero hub-hero">
           <div className="eyebrow">
             <Shield size={14} className="icon-gold" />
-            <span>HAUTE HORLOGERIE · 100% AUTHENTICATED MANUFACTURES</span>
+            <span>HAUTE HORLOGERIE</span>
           </div>
           <h1>Precision &amp; Luxury Watches</h1>
           <p className="watches-hero-subtitle">
-            Explore {allProducts.length || 185} certified timepieces across 21 prestigious horological houses and smart manufactures. In-house mechanical calibres, certified chronometers, and connected micro-engineering.
+            21 Prestigious Houses &middot; {allProducts.length || 185} Authenticated Timepieces
           </p>
 
           <div className="hub-hero-actions">
@@ -541,32 +544,47 @@ function WatchesCatalogContent() {
               href="/category/watches?view=all"
               className="button primary explore-all-hero-btn"
             >
-              <span>Explore All Timepieces ({allProducts.length || 185} Watches)</span>
+              <span>Explore All 185 Timepieces</span>
               <ArrowRight size={16} />
             </Link>
-
-            <div className="watches-hero-stats">
-              <span className="stat-pill">21 Prestigious Houses</span>
-              <span className="stat-pill">{allProducts.length || 185} Certified Models</span>
-              <span className="stat-pill">Automatic · Mechanical · Quartz · Smartwatch</span>
-            </div>
           </div>
         </header>
 
-        {/* The 21 Horological Houses with Floating 3D Pop-Out Brand Logos */}
+        {/* The Horological Houses Experience: Interactive Movement Dial OR 21-House Matrix */}
         <section className="watches-houses-section" aria-label="Horological Houses">
-          <div className="section-head">
-            <div className="eyebrow">THE MANUFACTURES</div>
-            <h2>Explore By Horology House</h2>
-            <p>
-              Select any house below to view its dedicated authenticated collection, or click <strong>Explore All Timepieces</strong> to browse the complete catalog.
-            </p>
+          {/* Mode Switcher */}
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div className="hub-mode-switcher">
+              <button
+                type="button"
+                className={`mode-switch-btn ${hubDisplayMode === "dial" ? "active" : ""}`}
+                onClick={() => setHubDisplayMode("dial")}
+              >
+                <Compass size={14} />
+                <span>Horological Dial (Winder)</span>
+              </button>
+              <button
+                type="button"
+                className={`mode-switch-btn ${hubDisplayMode === "matrix" ? "active" : ""}`}
+                onClick={() => setHubDisplayMode("matrix")}
+              >
+                <Layers size={14} />
+                <span>All 21 Houses</span>
+              </button>
+            </div>
           </div>
 
-          <div className="brand-logos-grid">
-            {WATCH_BRANDS.map((brand) => {
-              const liveCount = brandCounts[brand.name] || brand.count;
-              return (
+          {/* VIEW A: Interactive Horological Dial & Winder */}
+          {hubDisplayMode === "dial" ? (
+            <HorologicalDial
+              brands={WATCH_BRANDS}
+              brandCounts={brandCounts}
+              onSelectBrand={(brandName) => router.push(`/category/watches?brand=${encodeURIComponent(brandName)}`)}
+            />
+          ) : (
+            /* VIEW B: Floating 3D Vector Logos (Zero Boxes, Zero Redundant Gray Text) */
+            <div className="brand-logos-grid">
+              {WATCH_BRANDS.map((brand) => (
                 <Link
                   key={brand.name}
                   href={`/category/watches?brand=${encodeURIComponent(brand.name)}`}
@@ -576,22 +594,17 @@ function WatchesCatalogContent() {
                   <div className="brand-logo-3d-wrapper">
                     <WatchBrandLogo brand={brand.name} size={110} className="brand-tile-svg" />
                   </div>
-                  <span className="brand-tile-meta">
-                    <span>{brand.name}</span>
-                    <span className="brand-meta-dot">·</span>
-                    <span>{liveCount} Models</span>
-                  </span>
                 </Link>
-              );
-            })}
-          </div>
+              ))}
+            </div>
+          )}
 
           {/* Bottom Explore All CTA */}
           <div className="hub-bottom-cta">
             <div className="hub-bottom-card">
               <div>
-                <h3>Looking for all models across all houses?</h3>
-                <p>Browse our complete catalog of {allProducts.length || 185} certified timepieces with full sorting and technical filters.</p>
+                <h3>Complete Horology Collection</h3>
+                <p>Filter by movement calibre, complication, or manufacture house.</p>
               </div>
               <Link
                 href="/category/watches?view=all"
@@ -667,19 +680,15 @@ function WatchesCatalogContent() {
         </div>
       </header>
 
-      {/* DALE AI HOROLOGY CONCIERGE (Always Present) */}
-      <section className="dale-watch-concierge-panel" aria-label="AI Watch Concierge">
-        <div className="concierge-header">
-          <div className="concierge-title-row">
+      {/* HOROLOGY CONCIERGE (Filter & Search) */}
+      <section className="dale-watch-concierge-panel" aria-label="Horology Concierge">
+        <div className="concierge-header" style={{ marginBottom: 12 }}>
+          <div className="concierge-title-row" style={{ marginBottom: 0 }}>
             <div className="concierge-badge">
-              <Sparkles size={16} className="sparkle-icon" />
-              <span>DALE AI HOROLOGY CONCIERGE</span>
+              <Sparkles size={15} className="sparkle-icon" />
+              <span>HOROLOGY CONCIERGE &amp; INTELLIGENT FILTER</span>
             </div>
-            <span className="concierge-status">Always active · Instant natural language filter</span>
           </div>
-          <p className="concierge-desc">
-            Tell DALE what you are looking for. Say <em>&ldquo;Show Rolex under $15k&rdquo;</em>, <em>&ldquo;Automatic movements only&rdquo;</em>, <em>&ldquo;Filter by quartz&rdquo;</em>, or <em>&ldquo;Sort price low to high&rdquo;</em> and DALE will configure the filters for you.
-          </p>
         </div>
 
         <form
@@ -696,7 +705,7 @@ function WatchesCatalogContent() {
               className="concierge-input"
               value={aiPrompt}
               onChange={(e) => setAiPrompt(e.target.value)}
-              placeholder='Tell DALE: e.g. "Show Rolex watches under $15,000", "Quartz movements", "Sort by price"'
+              placeholder='Search references or ask: e.g. "Rolex under $15,000", "Automatic movements", "Filter by quartz"'
               disabled={aiThinking}
             />
             <button
