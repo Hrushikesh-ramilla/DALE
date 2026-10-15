@@ -27,7 +27,7 @@ const querySchema = z
     category: z.string().trim().max(80).default(""),
     leafType: z.enum(["", ...leafTypeKeys]).default(""),
     query: z.string().trim().max(100).default(""),
-    budget: z.coerce.number().int().min(1).max(1000000).default(1000000),
+    budget: z.coerce.number().int().min(1).max(100000000).default(100000000),
     page: z.coerce.number().int().min(1).max(1000).default(1),
     cursor: z.string().min(1).max(600).optional(),
     use: briefSchema.shape.requirements.unwrap().shape.use,

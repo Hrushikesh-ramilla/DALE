@@ -2993,3 +2993,1278 @@ summary {
 .product-photograph figcaption a { color: #525252; }
 .product-photograph [role="status"] { padding: 24px; text-align: center; }
 .product-viewer .product-photograph { width: 100%; height: 100%; min-height: 300px; }
+
+/* ==========================================================================
+   Editorial Multi-Level Navigation, Department & PDP Architecture Styles
+   ========================================================================== */
+
+.editorial-breadcrumbs {
+  margin-bottom: 24px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7a7466;
+}
+.editorial-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.editorial-breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.editorial-breadcrumbs a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+.editorial-breadcrumbs .sep {
+  opacity: 0.4;
+}
+.editorial-breadcrumbs .current {
+  color: #1b1915;
+  font-weight: 600;
+}
+
+/* Department Overview Page */
+.department-page {
+  padding: 24px 0 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.department-hero {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dcd8ce;
+}
+.department-hero .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8c8577;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.department-hero h1 {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: #181714;
+}
+.department-hero p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 840px;
+  color: #5c574c;
+  margin: 0 0 16px;
+}
+.department-stats-bar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 13px;
+  color: #736c5e;
+}
+.department-stats-bar .pill {
+  padding: 4px 12px;
+  background: #eae6dd;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.department-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+.department-category-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper, #fdfbf7);
+  border: 1px solid #dedbd2;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.department-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+  border-color: #111;
+}
+.department-category-card .card-visual {
+  height: 200px;
+  background: #dedbd3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.department-category-card .card-visual .count-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.department-category-card .card-content {
+  padding: 22px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.department-category-card h3 {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 8px;
+  color: #1a1916;
+}
+.department-category-card .card-desc {
+  font-size: 13px;
+  color: #635d50;
+  line-height: 1.5;
+  margin: 0 0 14px;
+  flex-grow: 1;
+}
+.department-category-card .card-brands {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8c8577;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.department-category-card .card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: auto;
+}
+
+/* Category Catalog Page */
+.category-page {
+  padding: 24px 0 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.category-page-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcd8ce;
+}
+.category-page-header .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8c8577;
+  font-weight: 700;
+}
+.category-page-header h1 {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 40px;
+  font-weight: 400;
+  margin: 8px 0 10px;
+  color: #181714;
+}
+.category-page-header p {
+  color: #615a4c;
+  font-size: 15px;
+  margin: 0;
+}
+
+.category-filter-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding: 20px 24px;
+  background: #fbf9f4;
+  border: 1px solid #dedbd2;
+  border-radius: 4px;
+}
+.brand-pill-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.brand-pill-bar-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #736c5e;
+  white-space: nowrap;
+}
+.brand-pills-wrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+.brand-filter-pill {
+  padding: 6px 14px;
+  border-radius: 16px;
+  border: 1px solid #d2cdc2;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2b2823;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+.brand-filter-pill:hover {
+  border-color: #111;
+  background: #f0ede6;
+}
+.brand-filter-pill.active {
+  background: #181714;
+  color: #fff;
+  border-color: #181714;
+}
+
+.category-filter-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.category-search-input {
+  flex-grow: 1;
+  max-width: 400px;
+  padding: 9px 14px;
+  border: 1px solid #d2cdc2;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  outline: none;
+}
+.category-search-input:focus {
+  border-color: #111;
+}
+
+/* Standalone Product Detail Page (PDP) */
+.pdp-page {
+  padding: 24px 0 80px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.pdp-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.pdp-visual-pane {
+  position: relative;
+  min-height: 540px;
+  background: #dedbd3;
+  border: 1px solid #c9c4b7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.pdp-visual-pane > .product-art {
+  width: 100%;
+  height: 100%;
+  min-height: 540px;
+}
+.pdp-details-pane {
+  display: flex;
+  flex-direction: column;
+}
+.pdp-brand-tag {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6e6758;
+  margin-bottom: 8px;
+}
+.pdp-title {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: #1a1916;
+}
+.pdp-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5c5649;
+  margin: 0 0 20px;
+}
+.pdp-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 16px 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcd8ce;
+}
+.pdp-price-value {
+  font-size: 34px;
+  font-weight: 700;
+  color: #111;
+}
+.pdp-price-meta {
+  font-size: 13px;
+  color: #736c5e;
+}
+.pdp-actions-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 28px 0;
+}
+.pdp-button-checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  background: #0070ba;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  text-decoration: none;
+}
+.pdp-button-checkout:hover {
+  background: #005ea6;
+}
+.pdp-button-concierge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: #181714;
+  color: #fff;
+  border: 1px solid #181714;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.pdp-button-concierge:hover {
+  background: #333;
+}
+.pdp-guarantee-box {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: #f4efe4;
+  border: 1px solid #ded6c6;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #575042;
+  line-height: 1.5;
+}
+.pdp-architecture-wrap {
+  margin: 48px 0;
+  padding-top: 36px;
+  border-top: 1px solid #dcd8ce;
+}
+.pdp-specs-table-wrap {
+  margin: 36px 0;
+}
+.pdp-specs-table-wrap h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.pdp-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pdp-specs-table tr {
+  border-bottom: 1px solid #e2ddd2;
+}
+.pdp-specs-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b6455;
+  width: 30%;
+  background: #faf8f3;
+}
+.pdp-specs-table td {
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #2e2b24;
+}
+
+@media (max-width: 900px) {
+  .pdp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================== */
+/* HAUTE HORLOGERIE & WATCHES CATEGORY EXPERIENCE                */
+/* ============================================================== */
+
+.watches-category-experience {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 20px 100px;
+  color: #f7f5f0;
+}
+.watches-category-experience .editorial-breadcrumbs {
+  color: #9c9584;
+}
+.watches-category-experience .editorial-breadcrumbs a:hover {
+  color: #d1b46a;
+}
+.watches-category-experience .editorial-breadcrumbs .current {
+  color: #f7f5f0;
+}
+
+.watches-hero {
+  padding: 32px 0 36px;
+  border-bottom: 1px solid #ded9cc;
+  margin-bottom: 40px;
+}
+.watches-hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #967938;
+  margin-bottom: 12px;
+}
+.watches-hero .eyebrow .icon-gold {
+  color: #b8934a;
+}
+.watches-hero h1 {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 400;
+  color: #f7f5f0;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+.watches-hero-subtitle {
+  max-width: 820px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #b5b0a3;
+  margin-bottom: 24px;
+}
+.watches-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.watches-hero-stats .stat-pill {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  background: #22201c;
+  border: 1px solid #3d3930;
+  border-radius: 20px;
+  color: #e2ded4;
+}
+
+/* 1. HOROLOGICAL HOUSES SHOWCASE */
+.watches-houses-section {
+  margin-bottom: 56px;
+}
+.watches-houses-section .section-head {
+  margin-bottom: 24px;
+}
+.watches-houses-section .section-head .eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d1b46a;
+}
+.watches-houses-section .section-head h2 {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 32px;
+  font-weight: 400;
+  color: #f7f5f0;
+  margin: 6px 0 8px;
+}
+.watches-houses-section .section-head p {
+  color: #b5b0a3;
+  font-size: 14px;
+}
+
+/* Pure Brand Logos Grid - Floating Luxury Vector Showcase with 3D Pop-Out */
+.brand-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 44px 28px;
+  margin-bottom: 50px;
+  perspective: 1200px;
+  perspective-origin: center;
+  padding: 16px 0;
+}
+.brand-logo-tile {
+  position: relative;
+  min-height: 130px;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  text-decoration: none;
+  color: #f7f5f0;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.brand-logo-3d-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 95px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform, filter;
+}
+.brand-logo-tile:hover .brand-logo-3d-wrapper {
+  transform: perspective(600px) translateZ(48px) translateY(-12px) scale(1.22);
+  filter: drop-shadow(0 24px 38px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 35px rgba(212, 175, 55, 0.55)) brightness(1.12);
+}
+.brand-tile-svg {
+  width: auto;
+  max-width: 95%;
+  height: 84px;
+  max-height: 90px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.6));
+  transition: filter 0.35s ease;
+}
+.brand-tile-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8c867a;
+  margin-top: 12px;
+  opacity: 0.6;
+  transition: all 0.35s ease;
+  pointer-events: none;
+}
+.brand-meta-dot {
+  color: #d1b46a;
+  opacity: 0.7;
+}
+.brand-logo-tile:hover .brand-tile-meta {
+  opacity: 1;
+  color: #d1b46a;
+  transform: translateY(2px);
+  text-shadow: 0 0 12px rgba(209, 180, 106, 0.4);
+}
+
+/* Hub Hero Actions & Explore All Buttons */
+.hub-hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.explore-all-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 30px;
+  background: #fdfbf7;
+  color: #181613;
+  border: 1px solid #ded9cc;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.explore-all-hero-btn:hover {
+  background: #ffffff;
+  border-color: #d1b46a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Hub Bottom CTA */
+.hub-bottom-cta {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid #ded9cc;
+}
+.hub-bottom-card {
+  background: #181613;
+  border: 1px solid #333029;
+  border-radius: 12px;
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.hub-bottom-card h3 {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 24px;
+  color: #f7f5f0;
+  margin-bottom: 6px;
+}
+.hub-bottom-card p {
+  color: #b5b0a3;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Catalog Space Navigation & Header */
+.catalog-space-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ded9cc;
+}
+.back-to-hub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #181613;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ded9cc;
+  background: #fdfbf7;
+  transition: all 0.15s ease;
+}
+.back-to-hub-link:hover {
+  background: #ffffff;
+  border-color: #967938;
+  color: #967938;
+  transform: translateX(-2px);
+}
+.catalog-space-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ded9cc;
+}
+.catalog-header-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.catalog-brand-logo-wrap {
+  width: 170px;
+  height: 85px;
+  background: #191815;
+  border: 1px solid #3d3930;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  flex-shrink: 0;
+  color: #f7f5f0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+.catalog-brand-logo-wrap svg {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.catalog-header-main .eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #d1b46a;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.catalog-header-main h1 {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 34px;
+  color: #f7f5f0;
+  margin: 0 0 6px;
+}
+.catalog-header-main p {
+  color: #b5b0a3;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* See All Container */
+.see-all-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.see-all-button {
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 30px;
+  background: #181613;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+}
+.see-all-button:hover {
+  background: #2b2823;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* 2. DALE AI CONCIERGE PANEL */
+.dale-watch-concierge-panel {
+  background: #181613;
+  color: #f7f5f0;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 48px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  border: 1px solid #333029;
+}
+.concierge-header {
+  margin-bottom: 20px;
+}
+.concierge-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.concierge-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d1b46a;
+}
+.concierge-badge .sparkle-icon {
+  color: #d1b46a;
+}
+.concierge-status {
+  font-size: 11px;
+  color: #9c9689;
+  letter-spacing: 0.05em;
+}
+.concierge-desc {
+  font-size: 14px;
+  color: #c7c2b5;
+  line-height: 1.55;
+  max-width: 900px;
+}
+.concierge-desc em {
+  color: #f4efe2;
+  font-style: normal;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.concierge-input-form {
+  margin-bottom: 16px;
+}
+.concierge-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #262420;
+  border: 1px solid #444036;
+  border-radius: 8px;
+  padding: 6px 8px 6px 16px;
+  transition: border-color 0.15s ease;
+}
+.concierge-input-wrap:focus-within {
+  border-color: #d1b46a;
+  box-shadow: 0 0 0 1px #d1b46a;
+}
+.concierge-input-wrap .input-search-icon {
+  color: #8c8577;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.concierge-input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f7f5f0;
+  font-size: 14px;
+}
+.concierge-input::placeholder {
+  color: #857e70;
+}
+.concierge-submit-btn {
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #d1b46a;
+  color: #181613;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.concierge-submit-btn:hover:not(:disabled) {
+  background: #e2c984;
+}
+
+.concierge-chips-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.concierge-chips-row .chips-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9e9788;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.concierge-prompt-pill {
+  padding: 5px 12px;
+  border-radius: 16px;
+  background: #262420;
+  border: 1px solid #423e35;
+  color: #dfdbd0;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.concierge-prompt-pill:hover {
+  background: #3b372f;
+  border-color: #d1b46a;
+  color: #fff;
+}
+.concierge-prompt-pill.reset {
+  border-color: #694a4a;
+  color: #e5b3b3;
+}
+.concierge-prompt-pill.reset:hover {
+  background: #4a2828;
+}
+
+.concierge-response-banner {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: #2c281e;
+  border-left: 3px solid #d1b46a;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.concierge-response-banner svg {
+  color: #d1b46a;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.concierge-response-banner p {
+  font-size: 13px;
+  color: #efece3;
+  margin: 0;
+  flex-grow: 1;
+}
+.close-response-btn {
+  color: #9c9584;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 2px;
+}
+.close-response-btn:hover {
+  color: #fff;
+}
+
+/* 3. TIMEPIECES CATALOG GRID & FILTER TOOLBAR */
+.watches-grid-section {
+  scroll-margin-top: 100px;
+}
+
+.watches-filter-toolbar {
+  background: #fbf9f4;
+  border: 1px solid #ded9cc;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.filter-group-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.filter-group-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #787161;
+}
+.filter-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-pills-wrap.scrollable {
+  overflow-x: auto;
+  padding-bottom: 4px;
+  flex-wrap: nowrap;
+}
+.filter-pill {
+  padding: 7px 15px;
+  border-radius: 20px;
+  border: 1px solid #d5cebf;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2b2823;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+.filter-pill:hover {
+  background: #f1ede2;
+  border-color: #181613;
+}
+.filter-pill.active {
+  background: #181613;
+  color: #fff;
+  border-color: #181613;
+}
+
+.filter-secondary-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #ebe5d8;
+}
+.price-tier-pills {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.price-tier-pills .sub-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #7a7364;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 4px;
+}
+.tier-pill {
+  padding: 5px 12px;
+  border-radius: 14px;
+  border: 1px solid #ded9cc;
+  background: #fff;
+  font-size: 12px;
+  color: #38342c;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tier-pill:hover {
+  border-color: #181613;
+  background: #f2eee4;
+}
+.tier-pill.active {
+  background: #3b362c;
+  color: #fff;
+  border-color: #3b362c;
+}
+
+.filter-search-field {
+  position: relative;
+  flex-grow: 1;
+  max-width: 360px;
+}
+.filter-search-field .search-field-icon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+.filter-search-field .clear-search-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #8c8577;
+}
+.filter-search-field .category-search-input {
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 30px;
+}
+
+.filter-sort-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #635c4e;
+}
+.filter-sort-field .sort-select {
+  padding: 7px 12px;
+  border-radius: 4px;
+  border: 1px solid #d5cebf;
+  background: #fff;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+}
+
+.active-filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  border-top: 1px solid #ebe5d8;
+}
+.active-filters-bar .active-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8a8272;
+}
+.active-chips {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.active-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0ebe0;
+  border: 1px solid #d5cebf;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2b2823;
+}
+.active-chip button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: #6b6352;
+}
+.active-chip button:hover {
+  color: #000;
+}
+.clear-all-filters-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #b54a4a;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.clear-all-filters-btn:hover {
+  text-decoration: underline;
+}
+
+.grid-count-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #635d4f;
+}
+.brand-focus-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: #967938;
+  background: #fdf6e6;
+  border: 1px solid #eddcb2;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Watch Product Card Additions */
+.watch-card .movement-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+.watch-card .movement-tag.automatic {
+  background: #181613;
+  color: #f7f5f0;
+}
+.watch-card .movement-tag.mechanical {
+  background: #39362f;
+  color: #f4efe2;
+}
+.watch-card .movement-tag.quartz {
+  background: #e8e3d5;
+  color: #383329;
+}
+
+.card-footer-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #dedbd2;
+}
+.price-display {
+  font-size: 18px;
+  font-weight: 700;
+  color: #181613;
+}
+.price-sub {
+  display: block;
+  font-size: 11px;
+  color: #777;
+}
+
+.catalog-loading-state,
+.catalog-empty-state {
+  text-align: center;
+  padding: 72px 20px;
+  background: #fbf9f4;
+  border: 1px dashed #ded9cc;
+  border-radius: 8px;
+}
+.catalog-empty-state h3 {
+  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-size: 24px;
+  margin: 12px 0 8px;
+  color: #181613;
+}
+.catalog-empty-state p {
+  color: #6b6454;
+  margin-bottom: 20px;
+}
+.catalog-empty-state .empty-icon {
+  color: #a8a090;
+}
+
+@media (max-width: 768px) {
+  .watches-hero h1 {
+    font-size: 32px;
+  }
+  .brand-logos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 24px 16px;
+  }
+  .brand-logo-tile {
+    min-height: 110px;
+    padding: 10px;
+  }
+  .brand-logo-3d-wrapper {
+    height: 75px;
+  }
+  .brand-tile-svg {
+    height: 65px;
+  }
+  .dale-watch-concierge-panel {
+    padding: 20px 16px;
+  }
+  .filter-secondary-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filter-search-field {
+    max-width: 100%;
+  }
+}
+

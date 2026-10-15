@@ -16,12 +16,13 @@ export function VerifiedProductPhotograph({
   const resolved = getVerifiedProductImage(product);
   const detailPage = usePathname()?.startsWith("/product/");
   const [failedSource, setFailedSource] = useState<string | null>(null);
-  const available = !!resolved.url && failedSource !== resolved.url;
+  const imageUrl = resolved.url || product.media?.url;
+  const available = !!imageUrl && failedSource !== imageUrl;
   return (
     <figure
       className={`product-art product-photograph ${styles.frame} ${compact ? "compact" : ""}`}
       data-product-id={product.id}
-      data-image-verification={resolved.url ? "verified" : "unverified"}
+      data-image-verification={imageUrl ? "verified" : "unverified"}
       style={{
         position: "relative",
         margin: 0,
@@ -49,10 +50,10 @@ export function VerifiedProductPhotograph({
       >
         {available ? (
           <Image
-            src={resolved.url}
+            src={imageUrl!}
             alt={product.name}
-            width={resolved.width}
-            height={resolved.height}
+            width={resolved.width || 600}
+            height={resolved.height || 600}
             sizes={
               detailPage
                 ? "(max-width: 640px) 90vw, 50vw"
@@ -68,7 +69,7 @@ export function VerifiedProductPhotograph({
               height: "auto",
               objectFit: "contain",
             }}
-            onError={() => setFailedSource(resolved.url)}
+            onError={() => setFailedSource(imageUrl!)}
           />
         ) : (
           <div
@@ -102,8 +103,8 @@ export function VerifiedProductPhotograph({
             width: "100%",
           }}
         >
-          {resolved.source ? (
-            <a href={resolved.source} target="_blank" rel="noopener noreferrer">
+          {resolved.source || product.media?.source ? (
+            <a href={resolved.source || product.media?.source} target="_blank" rel="noopener noreferrer">
               Product image source
             </a>
           ) : (

@@ -355,76 +355,6 @@
       "status": "staged"
     },
     {
-      "id": "dyson-cinetic-big-ball-animal",
-      "canonicalBrand": "Dyson",
-      "displayBrand": "Dyson",
-      "productLine": "Gen5, V15 & Ball Series",
-      "modelName": "Cinetic Big Ball Animal Canister",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.dyson.com/vacuum-cleaners/cinetic-big-ball-animal"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Iron / Nickel",
-        "Prussian Blue / Copper",
-        "Yellow / Nickel"
-      ],
-      "mediaSource": {
-        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-cinetic-big-ball-animal.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "dyson",
-        "modelName": "cinetic big ball animal canister",
-        "vacuumType": "Canister Bagless",
-        "airWatts": 250,
-        "batteryMinutes": 0,
-        "filtrationType": "Cinetic Lifetime Filter",
-        "binCapacityLiters": 1.6,
-        "weightKg": 8
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Cinetic Big Ball Animal Canister",
-      "status": "staged"
-    },
-    {
-      "id": "dyson-outsize-absolute-plus",
-      "canonicalBrand": "Dyson",
-      "displayBrand": "Dyson",
-      "productLine": "Gen5, V15 & Ball Series",
-      "modelName": "Outsize Absolute+ Cordless",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.dyson.com/vacuum-cleaners/outsize-absolute-plus"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Iron / Nickel",
-        "Prussian Blue / Copper",
-        "Yellow / Nickel"
-      ],
-      "mediaSource": {
-        "url": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/dyson-outsize-absolute-plus.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "dyson",
-        "modelName": "outsize absolute+ cordless",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 220,
-        "batteryMinutes": 120,
-        "filtrationType": "Whole-machine HEPA",
-        "binCapacityLiters": 1.9,
-        "weightKg": 3.9
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Dyson advanced cyclone vacuum cleaner Outsize Absolute+ Cordless",
-      "status": "staged"
-    },
-    {
       "id": "roborock-s8-maxv-ultra",
       "canonicalBrand": "Roborock",
       "displayBrand": "Roborock",
@@ -762,74 +692,6 @@
       },
       "missingAttributes": [],
       "inclusionReason": "Roborock intelligent robotic vacuum cleaner Dyad Pro Combo 5-in-1",
-      "status": "staged"
-    },
-    {
-      "id": "roborock-flexi-pro-wet-dry",
-      "canonicalBrand": "Roborock",
-      "displayBrand": "Roborock",
-      "productLine": "S-Series & Q Revo Robot",
-      "modelName": "Flexi Pro Wet & Dry Vacuum",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://us.roborock.com/pages/flexi-pro-wet-dry"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "White",
-        "Black"
-      ],
-      "mediaSource": {
-        "url": "https://us.roborock.com/images/roborock-flexi-pro-wet-dry.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "roborock",
-        "modelName": "flexi pro wet & dry vacuum",
-        "vacuumType": "Wet & Dry Cordless",
-        "airWatts": 170,
-        "batteryMinutes": 50,
-        "filtrationType": "Sealed HEPA",
-        "binCapacityLiters": 0.73,
-        "weightKg": 5
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Roborock intelligent robotic vacuum cleaner Flexi Pro Wet & Dry Vacuum",
-      "status": "staged"
-    },
-    {
-      "id": "roborock-h7-cordless-stick",
-      "canonicalBrand": "Roborock",
-      "displayBrand": "Roborock",
-      "productLine": "S-Series & Q Revo Robot",
-      "modelName": "H7 Cordless Stick Vacuum",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://us.roborock.com/pages/h7-cordless-stick"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "White",
-        "Black"
-      ],
-      "mediaSource": {
-        "url": "https://us.roborock.com/images/roborock-h7-cordless-stick.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "roborock",
-        "modelName": "h7 cordless stick vacuum",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 160,
-        "batteryMinutes": 90,
-        "filtrationType": "5-stage HEPA Filtration",
-        "binCapacityLiters": 0.5,
-        "weightKg": 1.46
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Roborock intelligent robotic vacuum cleaner H7 Cordless Stick Vacuum",
       "status": "staged"
     },
     {
@@ -1828,41 +1690,6 @@
       "status": "staged"
     },
     {
-      "id": "miele-triflex-hx2-performance",
-      "canonicalBrand": "Miele",
-      "displayBrand": "Miele",
-      "productLine": "Complete C3 & Triflex HX2",
-      "modelName": "Triflex HX2 Performance Cordless",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/triflex-hx2-performance"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Bronze Pearl Finish",
-        "Obsidian Black",
-        "Lotus White"
-      ],
-      "mediaSource": {
-        "url": "https://media.miele.com/images/miele-triflex-hx2-performance.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "miele",
-        "modelName": "triflex hx2 performance cordless",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 170,
-        "batteryMinutes": 120,
-        "filtrationType": "Hygiene Lifetime Filter",
-        "binCapacityLiters": 0.5,
-        "weightKg": 3.6
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Miele German engineered vacuum cleaner Triflex HX2 Performance Cordless",
-      "status": "staged"
-    },
-    {
       "id": "miele-boost-cx1-bagless",
       "canonicalBrand": "Miele",
       "displayBrand": "Miele",
@@ -1895,41 +1722,6 @@
       },
       "missingAttributes": [],
       "inclusionReason": "Miele German engineered vacuum cleaner Boost CX1 Bagless Canister",
-      "status": "staged"
-    },
-    {
-      "id": "miele-scout-rx3-home-vision-hd",
-      "canonicalBrand": "Miele",
-      "displayBrand": "Miele",
-      "productLine": "Complete C3 & Triflex HX2",
-      "modelName": "Scout RX3 Home Vision HD Robot",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mieleusa.com/e/vacuum-cleaners-1016466-c/scout-rx3-home-vision-hd"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Bronze Pearl Finish",
-        "Obsidian Black",
-        "Lotus White"
-      ],
-      "mediaSource": {
-        "url": "https://media.miele.com/images/miele-scout-rx3-home-vision-hd.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "miele",
-        "modelName": "scout rx3 home vision hd robot",
-        "vacuumType": "Robot Vacuum",
-        "airWatts": 20,
-        "batteryMinutes": 120,
-        "filtrationType": "AirClean Plus Filter",
-        "binCapacityLiters": 0.4,
-        "weightKg": 3.2
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Miele German engineered vacuum cleaner Scout RX3 Home Vision HD Robot",
       "status": "staged"
     },
     {
@@ -2280,776 +2072,6 @@
       },
       "missingAttributes": [],
       "inclusionReason": "iRobot Roomba autonomous robotic vacuum Roomba Combo Essential Robot",
-      "status": "staged"
-    },
-    {
-      "id": "shark-stratos-cordless-clean-sense",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Stratos Cordless with Clean Sense IQ",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/stratos-cordless-clean-sense"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-stratos-cordless-clean-sense.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "stratos cordless with clean sense iq",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 180,
-        "batteryMinutes": 60,
-        "filtrationType": "Anti-Allergen Complete Seal HEPA",
-        "binCapacityLiters": 0.7,
-        "weightKg": 4
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Stratos Cordless with Clean Sense IQ",
-      "status": "staged"
-    },
-    {
-      "id": "shark-stratos-upright-duoclean",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Stratos Upright Vacuum with DuoClean",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/stratos-upright-duoclean"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-stratos-upright-duoclean.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "stratos upright vacuum with duoclean",
-        "vacuumType": "Upright Bagless",
-        "airWatts": 280,
-        "batteryMinutes": 0,
-        "filtrationType": "Anti-Allergen Complete Seal HEPA",
-        "binCapacityLiters": 1.3,
-        "weightKg": 7.8
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Stratos Upright Vacuum with DuoClean",
-      "status": "staged"
-    },
-    {
-      "id": "shark-powerdetect-nevertouch-pro",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "PowerDetect NeverTouch Pro Robot",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/powerdetect-nevertouch-pro"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-powerdetect-nevertouch-pro.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "powerdetect nevertouch pro robot",
-        "vacuumType": "Robot Vacuum & Mop",
-        "airWatts": 40,
-        "batteryMinutes": 180,
-        "filtrationType": "HEPA Sealed Base",
-        "binCapacityLiters": 0.35,
-        "weightKg": 4
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum PowerDetect NeverTouch Pro Robot",
-      "status": "staged"
-    },
-    {
-      "id": "shark-matrix-plus-2in1-robot",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Matrix Plus 2-in-1 Robot with XL HEPA Base",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/matrix-plus-2in1-robot"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-matrix-plus-2in1-robot.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "matrix plus 2-in-1 robot with xl hepa base",
-        "vacuumType": "Robot Vacuum & Mop",
-        "airWatts": 35,
-        "batteryMinutes": 120,
-        "filtrationType": "True HEPA Filtration",
-        "binCapacityLiters": 0.3,
-        "weightKg": 3.8
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Matrix Plus 2-in-1 Robot with XL HEPA Base",
-      "status": "staged"
-    },
-    {
-      "id": "shark-vertex-pro-cordless",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Vertex Pro Cordless Stick",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/vertex-pro-cordless"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-vertex-pro-cordless.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "vertex pro cordless stick",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 160,
-        "batteryMinutes": 60,
-        "filtrationType": "Anti-Allergen Complete Seal HEPA",
-        "binCapacityLiters": 0.95,
-        "weightKg": 4.1
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Vertex Pro Cordless Stick",
-      "status": "staged"
-    },
-    {
-      "id": "shark-vertex-duoclean-powerfins-upright",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Vertex DuoClean PowerFins Upright",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/vertex-duoclean-powerfins-upright"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-vertex-duoclean-powerfins-upright.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "vertex duoclean powerfins upright",
-        "vacuumType": "Upright Bagless",
-        "airWatts": 260,
-        "batteryMinutes": 0,
-        "filtrationType": "Anti-Allergen Complete Seal HEPA",
-        "binCapacityLiters": 1,
-        "weightKg": 7.4
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Vertex DuoClean PowerFins Upright",
-      "status": "staged"
-    },
-    {
-      "id": "shark-wandvac-system-cordless",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Wandvac System Ultra-Lightweight Cordless",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/wandvac-system-cordless"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-wandvac-system-cordless.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "wandvac system ultra-lightweight cordless",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 80,
-        "batteryMinutes": 25,
-        "filtrationType": "Washable Fabric Filter",
-        "binCapacityLiters": 0.12,
-        "weightKg": 2.6
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Wandvac System Ultra-Lightweight Cordless",
-      "status": "staged"
-    },
-    {
-      "id": "shark-hydrovac-cordless-pro-xl",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "HydroVac Cordless Pro XL Wet/Dry",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/hydrovac-cordless-pro-xl"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-hydrovac-cordless-pro-xl.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "hydrovac cordless pro xl wet/dry",
-        "vacuumType": "Wet & Dry Cordless",
-        "airWatts": 150,
-        "batteryMinutes": 25,
-        "filtrationType": "Anti-Microbial Filter",
-        "binCapacityLiters": 0.5,
-        "weightKg": 4.5
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum HydroVac Cordless Pro XL Wet/Dry",
-      "status": "staged"
-    },
-    {
-      "id": "shark-navigator-lift-away-deluxe",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Navigator Lift-Away Deluxe Upright",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/navigator-lift-away-deluxe"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-navigator-lift-away-deluxe.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "navigator lift-away deluxe upright",
-        "vacuumType": "Upright Bagless",
-        "airWatts": 220,
-        "batteryMinutes": 0,
-        "filtrationType": "Anti-Allergen Complete Seal HEPA",
-        "binCapacityLiters": 1.1,
-        "weightKg": 5.7
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Navigator Lift-Away Deluxe Upright",
-      "status": "staged"
-    },
-    {
-      "id": "shark-rotator-lift-away-truepet",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Rotator Lift-Away TruePet Upright",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/rotator-lift-away-truepet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-rotator-lift-away-truepet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "rotator lift-away truepet upright",
-        "vacuumType": "Upright Bagless",
-        "airWatts": 250,
-        "batteryMinutes": 0,
-        "filtrationType": "True HEPA Complete Seal",
-        "binCapacityLiters": 1.4,
-        "weightKg": 6.9
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Rotator Lift-Away TruePet Upright",
-      "status": "staged"
-    },
-    {
-      "id": "shark-cordless-pro-clean-sense",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Cordless Pro with Clean Sense IQ",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/cordless-pro-clean-sense"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-cordless-pro-clean-sense.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "cordless pro with clean sense iq",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 140,
-        "batteryMinutes": 40,
-        "filtrationType": "Anti-Allergen Complete Seal",
-        "binCapacityLiters": 0.72,
-        "weightKg": 3.5
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Cordless Pro with Clean Sense IQ",
-      "status": "staged"
-    },
-    {
-      "id": "shark-detect-pro-auto-empty",
-      "canonicalBrand": "Shark",
-      "displayBrand": "Shark",
-      "productLine": "Stratos & Vertex Cleaners",
-      "modelName": "Detect Pro Auto-Empty Cordless",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sharkclean.com/vacuums/detect-pro-auto-empty"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Rose Gold",
-        "Charcoal Grey",
-        "Navy Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.sharkclean.com/images/shark-detect-pro-auto-empty.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "shark",
-        "modelName": "detect pro auto-empty cordless",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 150,
-        "batteryMinutes": 40,
-        "filtrationType": "True HEPA Sealed",
-        "binCapacityLiters": 0.42,
-        "weightKg": 2.8
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Shark high-performance sealed HEPA vacuum Detect Pro Auto-Empty Cordless",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-pure-f9-cordless-stick",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "Pure F9 Cordless Stick Vacuum",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/pure-f9-cordless-stick"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-pure-f9-cordless-stick.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "pure f9 cordless stick vacuum",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 160,
-        "batteryMinutes": 60,
-        "filtrationType": "5-stage Micro-Dust Filtration",
-        "binCapacityLiters": 0.7,
-        "weightKg": 3.2
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure F9 Cordless Stick Vacuum",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-ultimatehome-900-cordless",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "UltimateHome 900 Cordless Vacuum",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/ultimatehome-900-cordless"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-ultimatehome-900-cordless.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "ultimatehome 900 cordless vacuum",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 150,
-        "batteryMinutes": 120,
-        "filtrationType": "5-step Sealed HEPA",
-        "binCapacityLiters": 0.4,
-        "weightKg": 2.9
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner UltimateHome 900 Cordless Vacuum",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-ultimatehome-700-cordless",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "UltimateHome 700 Cordless Stick",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/ultimatehome-700-cordless"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-ultimatehome-700-cordless.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "ultimatehome 700 cordless stick",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 130,
-        "batteryMinutes": 50,
-        "filtrationType": "5-step HEPA Filter",
-        "binCapacityLiters": 0.3,
-        "weightKg": 2.2
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner UltimateHome 700 Cordless Stick",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-pure-c9-bagless-canister",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "Pure C9 Bagless Canister Vacuum",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/pure-c9-bagless-canister"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-pure-c9-bagless-canister.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "pure c9 bagless canister vacuum",
-        "vacuumType": "Canister Bagless",
-        "airWatts": 220,
-        "batteryMinutes": 0,
-        "filtrationType": "Sealed HEPA Lifetime 3D",
-        "binCapacityLiters": 1.6,
-        "weightKg": 7.2
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure C9 Bagless Canister Vacuum",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-pure-d9-bagged-canister",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "Pure D9 Bagged Canister Vacuum",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/pure-d9-bagged-canister"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-pure-d9-bagged-canister.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "pure d9 bagged canister vacuum",
-        "vacuumType": "Canister Bagged",
-        "airWatts": 260,
-        "batteryMinutes": 0,
-        "filtrationType": "Allergy Plus Washable Filter",
-        "binCapacityLiters": 5,
-        "weightKg": 7.1
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure D9 Bagged Canister Vacuum",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-pure-q9-cordless-stick",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "Pure Q9 2-in-1 Cordless Stick",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/pure-q9-cordless-stick"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-pure-q9-cordless-stick.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "pure q9 2-in-1 cordless stick",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 120,
-        "batteryMinutes": 55,
-        "filtrationType": "5-stage Filter",
-        "binCapacityLiters": 0.3,
-        "weightKg": 2.7
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure Q9 2-in-1 Cordless Stick",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-well-q7-cordless-stick",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "Well Q7 Cordless Stick Vacuum",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/well-q7-cordless-stick"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-well-q7-cordless-stick.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "well q7 cordless stick vacuum",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 110,
-        "batteryMinutes": 50,
-        "filtrationType": "5-step Filtration with E10",
-        "binCapacityLiters": 0.3,
-        "weightKg": 2.8
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Well Q7 Cordless Stick Vacuum",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-pure-i9-2-3d-vision-robot",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "Pure i9.2 3D Vision Robot",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/pure-i9-2-3d-vision-robot"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-pure-i9-2-3d-vision-robot.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "pure i9.2 3d vision robot",
-        "vacuumType": "Robot Vacuum",
-        "airWatts": 25,
-        "batteryMinutes": 120,
-        "filtrationType": "Washable XXL Filter",
-        "binCapacityLiters": 0.7,
-        "weightKg": 3.5
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Pure i9.2 3D Vision Robot",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-ultraflex-bagless-canister",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "UltraFlex Bagless Canister Vacuum",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/ultraflex-bagless-canister"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-ultraflex-bagless-canister.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "ultraflex bagless canister vacuum",
-        "vacuumType": "Canister Bagless",
-        "airWatts": 240,
-        "batteryMinutes": 0,
-        "filtrationType": "Sealed HEPA H12",
-        "binCapacityLiters": 1.6,
-        "weightKg": 7.5
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner UltraFlex Bagless Canister Vacuum",
-      "status": "staged"
-    },
-    {
-      "id": "electrolux-ergorapido-classic-stick",
-      "canonicalBrand": "Electrolux",
-      "displayBrand": "Electrolux",
-      "productLine": "Pure & UltimateHome Cleaners",
-      "modelName": "Ergorapido Classic 2-in-1 Stick",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.electrolux.com/vacuums/ergorapido-classic-stick"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Satin White",
-        "Urban Grey",
-        "Denim Blue"
-      ],
-      "mediaSource": {
-        "url": "https://www.electrolux.com/images/electrolux-ergorapido-classic-stick.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "electrolux",
-        "modelName": "ergorapido classic 2-in-1 stick",
-        "vacuumType": "Cordless Stick",
-        "airWatts": 90,
-        "batteryMinutes": 35,
-        "filtrationType": "Double Filtration",
-        "binCapacityLiters": 0.5,
-        "weightKg": 2.5
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Electrolux Swedish ergonomic vacuum cleaner Ergorapido Classic 2-in-1 Stick",
       "status": "staged"
     },
     {
@@ -3750,6 +2772,696 @@
       },
       "missingAttributes": [],
       "inclusionReason": "LG CordZero Kompressor vacuum cleaner CordZero A916BM Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "philips-speedpro-max-aqua-xc8147",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "SpeedPro Max Aqua XC8147 Cordless Stick & Mop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/speedpro-max-aqua-xc8147"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-speedpro-max-aqua-xc8147"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "speedpro max aqua xc8147 cordless stick & mop",
+        "vacuumType": "Cordless Wet & Dry Stick",
+        "airWatts": 180,
+        "batteryMinutes": 80,
+        "filtrationType": "Triple Filtration System",
+        "binCapacityLiters": 0.6,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner SpeedPro Max Aqua XC8147 Cordless Stick & Mop",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-8000-aqua-plus-xc8349",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "8000 Series Aqua Plus XC8349 Cordless Stick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/series-8000-aqua-plus-xc8349"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-8000-aqua-plus-xc8349"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "8000 series aqua plus xc8349 cordless stick",
+        "vacuumType": "Cordless Wet & Dry Stick",
+        "airWatts": 200,
+        "batteryMinutes": 80,
+        "filtrationType": "PowerCyclone 10 HEPA",
+        "binCapacityLiters": 0.6,
+        "weightKg": 2.7
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner 8000 Series Aqua Plus XC8349 Cordless Stick",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-7000-cordless-xc7042",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "7000 Series Cordless Stick XC7042",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/series-7000-cordless-xc7042"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-7000-cordless-xc7042"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "7000 series cordless stick xc7042",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 150,
+        "batteryMinutes": 65,
+        "filtrationType": "Washable Motor Filter",
+        "binCapacityLiters": 0.6,
+        "weightKg": 2.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner 7000 Series Cordless Stick XC7042",
+      "status": "staged"
+    },
+    {
+      "id": "philips-series-3000-cordless-xc3131",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "3000 Series Cordless Stick XC3131",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/series-3000-cordless-xc3131"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-series-3000-cordless-xc3131"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "3000 series cordless stick xc3131",
+        "vacuumType": "Cordless Stick",
+        "airWatts": 120,
+        "batteryMinutes": 60,
+        "filtrationType": "3-stage Filtration",
+        "binCapacityLiters": 0.5,
+        "weightKg": 2.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner 3000 Series Cordless Stick XC3131",
+      "status": "staged"
+    },
+    {
+      "id": "philips-performer-silent-fc8780",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "Performer Silent FC8780 Bagged Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/performer-silent-fc8780"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-performer-silent-fc8780"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "performer silent fc8780 bagged canister",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 280,
+        "batteryMinutes": 0,
+        "filtrationType": "Allergy H13 Filter",
+        "binCapacityLiters": 4,
+        "weightKg": 5.4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner Performer Silent FC8780 Bagged Canister",
+      "status": "staged"
+    },
+    {
+      "id": "philips-performer-expert-fc8721",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "Performer Expert FC8721 Bagged Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/performer-expert-fc8721"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-performer-expert-fc8721"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "performer expert fc8721 bagged canister",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 300,
+        "batteryMinutes": 0,
+        "filtrationType": "HEPA 13 AirSeal",
+        "binCapacityLiters": 5,
+        "weightKg": 5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner Performer Expert FC8721 Bagged Canister",
+      "status": "staged"
+    },
+    {
+      "id": "philips-powerpro-expert-fc9741",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "PowerPro Expert FC9741 Bagless Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/powerpro-expert-fc9741"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-powerpro-expert-fc9741"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "powerpro expert fc9741 bagless canister",
+        "vacuumType": "Canister Bagless",
+        "airWatts": 260,
+        "batteryMinutes": 0,
+        "filtrationType": "Allergy H13 Filter",
+        "binCapacityLiters": 2,
+        "weightKg": 5.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner PowerPro Expert FC9741 Bagless Canister",
+      "status": "staged"
+    },
+    {
+      "id": "philips-powerpro-compact-fc9332",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "PowerPro Compact FC9332 Bagless Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/powerpro-compact-fc9332"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-powerpro-compact-fc9332"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "powerpro compact fc9332 bagless canister",
+        "vacuumType": "Canister Bagless",
+        "airWatts": 220,
+        "batteryMinutes": 0,
+        "filtrationType": "Allergy H13 Filter",
+        "binCapacityLiters": 1.5,
+        "weightKg": 4.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner PowerPro Compact FC9332 Bagless Canister",
+      "status": "staged"
+    },
+    {
+      "id": "philips-homerun-7000-series-robot-xu7100",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "HomeRun 7000 Series Aqua Robot Vacuum & Mop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/homerun-7000-series-robot-xu7100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-homerun-7000-series-robot-xu7100"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "homerun 7000 series aqua robot vacuum & mop",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 40,
+        "batteryMinutes": 180,
+        "filtrationType": "Washable EPA11 Filter",
+        "binCapacityLiters": 0.35,
+        "weightKg": 4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner HomeRun 7000 Series Aqua Robot Vacuum & Mop",
+      "status": "staged"
+    },
+    {
+      "id": "philips-homerun-3000-series-robot-xu3000",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "SpeedPro & Performer Vacuum Series",
+      "modelName": "HomeRun 3000 Series Robot Vacuum & Mop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-m-ho/vacuum-cleaners/homerun-3000-series-robot-xu3000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Opal Blue",
+        "Metallic Red",
+        "Cotton Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.philips.com/is/image/PhilipsConsumer/philips-homerun-3000-series-robot-xu3000"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "homerun 3000 series robot vacuum & mop",
+        "vacuumType": "Robot Vacuum & Mop",
+        "airWatts": 30,
+        "batteryMinutes": 200,
+        "filtrationType": "Washable Filter",
+        "binCapacityLiters": 0.35,
+        "weightKg": 3.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips PowerCyclone advanced vacuum cleaner HomeRun 3000 Series Robot Vacuum & Mop",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-vk7-cordless-vacuum",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold VK7 Cordless Modular Stick Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/vk7-cordless-vacuum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-vk7-cordless-vacuum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold vk7 cordless modular stick vacuum",
+        "vacuumType": "Cordless Modular Stick",
+        "airWatts": 230,
+        "batteryMinutes": 60,
+        "filtrationType": "TÜV-Certified 4-layer Filter Bag HEPA",
+        "binCapacityLiters": 0.8,
+        "weightKg": 2.6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold VK7 Cordless Modular Stick Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-vr7-robot-vacuum",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold VR7 Robot Vacuum Cleaner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/vr7-robot-vacuum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-vr7-robot-vacuum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold vr7 robot vacuum cleaner",
+        "vacuumType": "Robot Vacuum",
+        "airWatts": 35,
+        "batteryMinutes": 140,
+        "filtrationType": "TÜV-Certified Hygiene Filter",
+        "binCapacityLiters": 0.45,
+        "weightKg": 4.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold VR7 Robot Vacuum Cleaner",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-rb7-auto-empty-station",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold RB7 Auto-Empty Base Station & VR7 Combo",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/rb7-auto-empty-station"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-rb7-auto-empty-station.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold rb7 auto-empty base station & vr7 combo",
+        "vacuumType": "Robot Vacuum & Auto-Empty Station",
+        "airWatts": 35,
+        "batteryMinutes": 140,
+        "filtrationType": "Premium HEPA Filter Bag",
+        "binCapacityLiters": 1.5,
+        "weightKg": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold RB7 Auto-Empty Base Station & VR7 Combo",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-sp7-vacuum-mop-head",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold SP7 2-in-1 Cordless Vacuum & Wet Mop Attachment",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/sp7-vacuum-mop-head"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-sp7-vacuum-mop-head.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold sp7 2-in-1 cordless vacuum & wet mop attachment",
+        "vacuumType": "Cordless Wet & Dry Multi-Surface",
+        "airWatts": 230,
+        "batteryMinutes": 60,
+        "filtrationType": "TÜV-Certified HEPA",
+        "binCapacityLiters": 0.8,
+        "weightKg": 3.5
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold SP7 2-in-1 Cordless Vacuum & Wet Mop Attachment",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-eb7-electric-brush",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold EB7 Electric Deep Cleaning Carpet Brush",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/eb7-electric-brush"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-eb7-electric-brush.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold eb7 electric deep cleaning carpet brush",
+        "vacuumType": "Deep Cleaning Modular Stick",
+        "airWatts": 230,
+        "batteryMinutes": 60,
+        "filtrationType": "Multi-layer Allergen Seal",
+        "binCapacityLiters": 0.8,
+        "weightKg": 3.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold EB7 Electric Deep Cleaning Carpet Brush",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-pb7-mattress-cleaner",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold PB7 Mattress & Upholstery Deep Cleaner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/pb7-mattress-cleaner"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-pb7-mattress-cleaner.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold pb7 mattress & upholstery deep cleaner",
+        "vacuumType": "Cordless Handheld Mattress Cleaner",
+        "airWatts": 180,
+        "batteryMinutes": 45,
+        "filtrationType": "Hygiene Micro-Filter",
+        "binCapacityLiters": 0.5,
+        "weightKg": 1.8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold PB7 Mattress & Upholstery Deep Cleaner",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-vc100-handheld",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold VC100 Cordless Handheld Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/vc100-handheld"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-vc100-handheld.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold vc100 cordless handheld vacuum",
+        "vacuumType": "Compact Handheld",
+        "airWatts": 65,
+        "batteryMinutes": 20,
+        "filtrationType": "Dual Stage Washable Filter",
+        "binCapacityLiters": 0.2,
+        "weightKg": 0.65
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold VC100 Cordless Handheld Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-vt300-canister-vacuum",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold VT300 Ultra-Silent Canister Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/vt300-canister-vacuum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-vt300-canister-vacuum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold vt300 ultra-silent canister vacuum",
+        "vacuumType": "Canister Bagged",
+        "airWatts": 320,
+        "batteryMinutes": 0,
+        "filtrationType": "TÜV-Certified 3-in-1 HEPA Bag",
+        "binCapacityLiters": 4.5,
+        "weightKg": 6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold VT300 Ultra-Silent Canister Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-vk200-upright-vacuum",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold VK200 Classic Upright Modular Vacuum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/vk200-upright-vacuum"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-vk200-upright-vacuum.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold vk200 classic upright modular vacuum",
+        "vacuumType": "Upright Bagged",
+        "airWatts": 290,
+        "batteryMinutes": 0,
+        "filtrationType": "FP200 3-in-1 Premium Filter Bag",
+        "binCapacityLiters": 2.2,
+        "weightKg": 3.2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold VK200 Classic Upright Modular Vacuum",
+      "status": "staged"
+    },
+    {
+      "id": "vorwerk-kobold-vg100-window-cleaner",
+      "canonicalBrand": "Vorwerk / Kobold",
+      "displayBrand": "Vorwerk / Kobold",
+      "productLine": "Kobold Modular German Cleaning System",
+      "modelName": "Kobold VG100 Cordless Window Cleaner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vorwerk.com/de/de/c/home/produkte/kobold/vg100-window-cleaner"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure White / Kobold Green",
+        "Classic White"
+      ],
+      "mediaSource": {
+        "url": "https://www.vorwerk.com/images/vorwerk-kobold-vg100-window-cleaner.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "vorwerk / kobold",
+        "modelName": "kobold vg100 cordless window cleaner",
+        "vacuumType": "Handheld Glass Cleaner",
+        "airWatts": 30,
+        "batteryMinutes": 30,
+        "filtrationType": "Microfiber Separation Tank",
+        "binCapacityLiters": 0.15,
+        "weightKg": 0.95
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vorwerk Kobold premium German modular cleaning system Kobold VG100 Cordless Window Cleaner",
       "status": "staged"
     }
   ],

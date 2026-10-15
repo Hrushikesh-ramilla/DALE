@@ -10,13 +10,13 @@ const Scene = dynamic(() => import("./product-scene"), {
   ),
 });
 export function ProductViewer({ product }: { product: Product }) {
-  if (product.media) return <div className="product-viewer"><ProductPhotograph key={product.media.url} product={product} /></div>;
-  if (product.brand)
+  if (product.media || product.brand || product.category) {
     return (
       <div className="product-viewer">
-        <FeaturedProductArt product={product} />
+        <ProductPhotograph product={product} />
       </div>
     );
+  }
   return (
     <div className="product-viewer">
       <Scene product={product} />

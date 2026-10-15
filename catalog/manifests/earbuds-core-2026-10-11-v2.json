@@ -57,12 +57,12 @@
         "batteryHours": 6
       },
       "media": {
-        "url": "https://www.apple.com/v/airpods-pro/images/overview/airpods_pro_2.png",
-        "source": "https://www.apple.com/airpods-pro/specs/",
-        "alt": "Apple AirPods Pro 2 official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-apple-apple-airpods-pro-2.webp",
+        "source": "https://5.imimg.com/data5/SELLER/Default/2023/4/303979049/BM/KB/WN/187894646/apple-airpods-pro-2-imported-a-quality-1000x1000.jpeg",
+        "alt": "Apple AirPods Pro 2 official luxury photography",
+        "attribution": "Product photography © Apple",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "AirPods Pro 2",
@@ -116,12 +116,12 @@
         "batteryHours": 5
       },
       "media": {
-        "url": "https://www.apple.com/v/airpods-4/images/overview/airpods_4_anc.png",
-        "source": "https://www.apple.com/airpods-4/specs/",
-        "alt": "Apple AirPods 4 ANC official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-apple-apple-airpods-4-anc.webp",
+        "source": "https://m-cdn.phonearena.com/images/articles/419898-image/Screenshot-2024-09-10-at-15.05.52.jpg",
+        "alt": "Apple AirPods 4 ANC official luxury photography",
+        "attribution": "Product photography © Apple",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "AirPods 4 ANC",
@@ -173,12 +173,12 @@
         "batteryHours": 5
       },
       "media": {
-        "url": "https://www.apple.com/v/airpods-4/images/overview/airpods_4.png",
-        "source": "https://www.apple.com/airpods-4/specs/",
-        "alt": "Apple AirPods 4 official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-apple-apple-airpods-4.webp",
+        "source": "https://www.superplanshet.ru/images/AirPods_4_9210147.jpg",
+        "alt": "Apple AirPods 4 official luxury photography",
+        "attribution": "Product photography © Apple",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "AirPods 4",
@@ -230,12 +230,12 @@
         "batteryHours": 6
       },
       "media": {
-        "url": "https://www.apple.com/v/airpods-3/images/overview/airpods_3.png",
-        "source": "https://support.apple.com/kb/SP857",
-        "alt": "Apple AirPods 3 official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-apple-apple-airpods-3.webp",
+        "source": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6376/6376551cv13d.jpg",
+        "alt": "Apple AirPods 3 official luxury photography",
+        "attribution": "Product photography © Apple",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "AirPods 3",
@@ -289,12 +289,12 @@
         "batteryHours": 8
       },
       "media": {
-        "url": "https://www.sony.com/image/wf1000xm5.png",
-        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm5-b",
-        "alt": "Sony WF-1000XM5 official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sony-sony-wf-1000xm5.webp",
+        "source": "https://www.gizmochina.com/wp-content/uploads/2023/06/Sony-WF-1000XM5-Silver1.jpeg",
+        "alt": "Sony WF-1000XM5 official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "WF-1000XM5",
@@ -348,12 +348,12 @@
         "batteryHours": 6
       },
       "media": {
-        "url": "https://www.sony.com/image/linkbuds-s.png",
-        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfls900n-b",
-        "alt": "Sony LinkBuds S official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sony-sony-linkbuds-s.webp",
+        "source": "https://www.gizmochina.com/wp-content/uploads/2022/04/sony-linkbuds-s.jpg",
+        "alt": "Sony LinkBuds S official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "LinkBuds S",
@@ -405,12 +405,12 @@
         "batteryHours": 8
       },
       "media": {
-        "url": "https://www.sony.com/image/linkbuds-open.png",
-        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfl910-b",
-        "alt": "Sony LinkBuds Open official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sony-sony-linkbuds-open.webp",
+        "source": "https://sonycenter.md/wp-content/uploads/2024/10/LinkBudsOpen-v.jpg",
+        "alt": "Sony LinkBuds Open official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "LinkBuds Open",
@@ -464,12 +464,12 @@
         "batteryHours": 7.5
       },
       "media": {
-        "url": "https://www.sony.com/image/wfc700n.png",
-        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfc700n-b",
-        "alt": "Sony WF-C700N official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sony-sony-wf-c700n.webp",
+        "source": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/b6421743-8af3-4bc4-9591-d436c75f3df3.__CR0,0,800,600_PT0_SX800_V1___.jpg",
+        "alt": "Sony WF-C700N official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "WF-C700N",
@@ -521,12 +521,12 @@
         "batteryHours": 11
       },
       "media": {
-        "url": "https://www.sony.com/image/wfc510.png",
-        "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfc510-b",
-        "alt": "Sony WF-C510 official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sony-sony-wf-c510.webp",
+        "source": "https://media.johnlewiscontent.com/i/JohnLewis/89733105_1_1?fmt=auto&amp;$background-off-white$",
+        "alt": "Sony WF-C510 official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "WF-C510",
@@ -580,12 +580,12 @@
         "batteryHours": 6
       },
       "media": {
-        "url": "https://assets.bose.com/content/dam/Bose_SEO/qc_ultra_earbuds.png",
-        "source": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds/QCUE-HEADPHONEIN.html",
-        "alt": "Bose QuietComfort Ultra Earbuds official technical reference",
-        "attribution": "Product specifications and photography © Bose",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-bose-bose-qc-ultra-earbuds.webp",
+        "source": "https://azaudio.vn/wp-content/uploads/2023/12/bose-quietcomfort-ultra-earbuds-black-1.jpg",
+        "alt": "Bose Bose QuietComfort Ultra Earbuds",
+        "attribution": "Product photography © Bose",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "QuietComfort Ultra Earbuds",
@@ -639,12 +639,12 @@
         "batteryHours": 8.5
       },
       "media": {
-        "url": "https://assets.bose.com/content/dam/Bose_SEO/qc_earbuds_2024.png",
-        "source": "https://www.bose.com/p/earbuds/bose-quietcomfort-earbuds/QCE24-HEADPHONEIN.html",
-        "alt": "Bose QuietComfort Earbuds official technical reference",
-        "attribution": "Product specifications and photography © Bose",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-bose-bose-qc-earbuds.webp",
+        "source": "https://helios-i.mashable.com/imagery/reviews/02MLCWwMJUO617vHD9A581s/images-1.fill.size_1400x1400.v1700263918.jpg",
+        "alt": "Bose Bose QuietComfort Earbuds",
+        "attribution": "Product photography © Bose",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "QuietComfort Earbuds",
@@ -696,12 +696,12 @@
         "batteryHours": 7.5
       },
       "media": {
-        "url": "https://assets.bose.com/content/dam/Bose_SEO/ultra_open_earbuds.png",
-        "source": "https://www.bose.com/p/earbuds/bose-ultra-open-earbuds/UOE-HEADPHONEIN.html",
-        "alt": "Bose Ultra Open Earbuds official technical reference",
-        "attribution": "Product specifications and photography © Bose",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-bose-bose-ultra-open-earbuds.webp",
+        "source": "https://img.shoplineapp.com/media/image_clips/660ce05e92e6a50023fcd48a/original.jpg?1712119902",
+        "alt": "Bose Bose Ultra Open Earbuds",
+        "attribution": "Product photography © Bose",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Ultra Open Earbuds",
@@ -755,12 +755,12 @@
         "batteryHours": 7.5
       },
       "media": {
-        "url": "https://media.sennheiser.com/mtw4.png",
-        "source": "https://www.sennheiser-hearing.com/en-US/p/momentum-true-wireless-4/",
-        "alt": "Sennheiser MOMENTUM True Wireless 4 official technical reference",
-        "attribution": "Product specifications and photography © Sennheiser",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sennheiser-sennheiser-mtw4.webp",
+        "source": "https://media.karousell.com/media/photos/products/2020/03/08/sennheiser_momentum_true_wireless_earbuds_1583658753_f439c266.jpg",
+        "alt": "Sennheiser Sennheiser MOMENTUM True Wireless 4",
+        "attribution": "Product photography © Sennheiser",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "MOMENTUM True Wireless 4",
@@ -814,12 +814,12 @@
         "batteryHours": 6
       },
       "media": {
-        "url": "https://media.sennheiser.com/momentum-sport.png",
-        "source": "https://www.sennheiser-hearing.com/en-US/p/momentum-sport/",
-        "alt": "Sennheiser MOMENTUM Sport official technical reference",
-        "attribution": "Product specifications and photography © Sennheiser",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sennheiser-sennheiser-momentum-sport.webp",
+        "source": "https://www.chip.cz/sites/default/files/excel_import_zip/Sennheiser Momentum Sport.jpg",
+        "alt": "Sennheiser MOMENTUM Sport official luxury photography",
+        "attribution": "Product photography © Sennheiser",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "MOMENTUM Sport",
@@ -873,12 +873,12 @@
         "batteryHours": 8
       },
       "media": {
-        "url": "https://media.sennheiser.com/accentum-tw.png",
-        "source": "https://www.sennheiser-hearing.com/en-US/p/accentum-true-wireless/",
-        "alt": "Sennheiser ACCENTUM True Wireless official technical reference",
-        "attribution": "Product specifications and photography © Sennheiser",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sennheiser-sennheiser-accentum-tw.webp",
+        "source": "https://cdn.hmv.com/r/w-640/hmv/files/cc/cc184c04-64e1-4b34-815d-c4f848896bb7.jpg",
+        "alt": "Sennheiser ACCENTUM True Wireless official luxury photography",
+        "attribution": "Product photography © Sennheiser",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "ACCENTUM True Wireless",
@@ -932,12 +932,12 @@
         "batteryHours": 8
       },
       "media": {
-        "url": "https://media.sennheiser.com/cx-plus-tw.png",
-        "source": "https://www.sennheiser-hearing.com/en-US/p/cx-plus-true-wireless/",
-        "alt": "Sennheiser CX Plus True Wireless official technical reference",
-        "attribution": "Product specifications and photography © Sennheiser",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-sennheiser-sennheiser-cx-plus-tw.webp",
+        "source": "https://th-test-11.slatic.net/p/2f02d7d7040def3866e79c1e6010f877.jpg",
+        "alt": "Sennheiser CX Plus True Wireless official luxury photography",
+        "attribution": "Product photography © Sennheiser",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "CX Plus True Wireless",
@@ -991,12 +991,12 @@
         "batteryHours": 7
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/buds3-pro.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-buds3-pro/specs/",
-        "alt": "Samsung Galaxy Buds3 Pro official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-samsung-samsung-galaxy-buds3-pro.webp",
+        "source": "https://pakistanstore.pk/wp-content/uploads/2024/12/Samsung-Galaxy-Buds3-Pro.jpg",
+        "alt": "Samsung Galaxy Buds3 Pro official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Galaxy Buds3 Pro",
@@ -1050,12 +1050,12 @@
         "batteryHours": 6
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/buds3.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-buds3/specs/",
-        "alt": "Samsung Galaxy Buds3 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-samsung-samsung-galaxy-buds3.webp",
+        "source": "https://images.samsung.com/id/galaxy-buds3-pro/feature/galaxy-buds3-pro-new-design-colorchip-white01-pc.jpg",
+        "alt": "Samsung Galaxy Buds3 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Galaxy Buds3",
@@ -1109,12 +1109,12 @@
         "batteryHours": 5
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/buds2-pro.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-buds2-pro/specs/",
-        "alt": "Samsung Galaxy Buds2 Pro official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-samsung-samsung-galaxy-buds2-pro.webp",
+        "source": "https://img.global.news.samsung.com/my/wp-content/uploads/2023/02/001_product_galaxy_buds2pro_borapurple_graphite_white.jpg",
+        "alt": "Samsung Galaxy Buds2 Pro official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Galaxy Buds2 Pro",
@@ -1168,12 +1168,12 @@
         "batteryHours": 8.5
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/buds-fe.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-buds-fe/specs/",
-        "alt": "Samsung Galaxy Buds FE official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-samsung-samsung-galaxy-buds-fe.webp",
+        "source": "https://media.tatacroma.com/Croma Assets/Entertainment/Wireless Earbuds/Images/302218_0_maio5w.png",
+        "alt": "Samsung Galaxy Buds FE official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Galaxy Buds FE",
@@ -1227,12 +1227,12 @@
         "batteryHours": 8.5
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/ear-2024.png",
-        "source": "https://nothing.tech/products/ear",
-        "alt": "Nothing Nothing Ear (2024) official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-nothing-nothing-ear-2024.webp",
+        "source": "https://mtscdn.ru/upload/iblock/ad2/nothing_3044305_4.png",
+        "alt": "Nothing Nothing Ear (2024) official luxury photography",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Nothing Ear (2024)",
@@ -1286,12 +1286,12 @@
         "batteryHours": 9.5
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/ear-a.png",
-        "source": "https://nothing.tech/products/ear-a",
-        "alt": "Nothing Nothing Ear (a) official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-nothing-nothing-ear-a.webp",
+        "source": "https://www.soundguys.com/wp-content/uploads/2024/04/Nothing-Ear-a-accessories-768x432.jpg",
+        "alt": "Nothing Nothing Nothing Ear (a)",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Nothing Ear (a)",
@@ -1345,12 +1345,12 @@
         "batteryHours": 6.3
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/ear-2.png",
-        "source": "https://nothing.tech/products/ear-2",
-        "alt": "Nothing Nothing Ear (2) official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-nothing-nothing-ear-2.webp",
+        "source": "https://static.androidplanet.nl/orca/products/23327/nothing-ear-2.png",
+        "alt": "Nothing Nothing Ear (2) official luxury photography",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Nothing Ear (2)",
@@ -1402,12 +1402,12 @@
         "batteryHours": 7
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/ear-stick.png",
-        "source": "https://nothing.tech/products/ear-stick",
-        "alt": "Nothing Nothing Ear (stick) official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-nothing-nothing-ear-stick.webp",
+        "source": "https://cdn.shopify.com/s/files/1/0579/8091/1768/products/ear-stick-product.png?v=1668676417",
+        "alt": "Nothing Nothing Ear (stick) official luxury photography",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Nothing Ear (stick)",
@@ -1461,12 +1461,12 @@
         "batteryHours": 11
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/cmf-buds-pro-2.png",
-        "source": "https://nothing.tech/products/cmf-buds-pro-2",
-        "alt": "CMF by Nothing CMF Buds Pro 2 official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-nothing-nothing-cmf-buds-pro-2.webp",
+        "source": "https://cdn.gqmobiles.lk/wp-content/uploads/2024/07/gq-mobiles-cmf-by-nothing-buds-pro-2-orange-2.png",
+        "alt": "CMF CMF by Nothing CMF Buds Pro 2",
+        "attribution": "Product photography © CMF",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "CMF Buds Pro 2",
@@ -1520,12 +1520,12 @@
         "batteryHours": 10
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-buds-pro-3.png",
-        "source": "https://www.oneplus.com/global/product/oneplus-buds-pro-3",
-        "alt": "OnePlus OnePlus Buds Pro 3 official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-oneplus-oneplus-buds-pro-3.webp",
+        "source": "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma Assets/Entertainment/Headphones and Earphones/Images/316448_0_kcgrlt.png",
+        "alt": "OnePlus OnePlus OnePlus Buds Pro 3",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "OnePlus Buds Pro 3",
@@ -1579,12 +1579,12 @@
         "batteryHours": 9
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-buds-pro-2.png",
-        "source": "https://www.oneplus.com/global/product/oneplus-buds-pro-2",
-        "alt": "OnePlus OnePlus Buds Pro 2 official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-oneplus-oneplus-buds-pro-2.webp",
+        "source": "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma Assets/Entertainment/Headphones and Earphones/Images/316448_0_kcgrlt.png",
+        "alt": "OnePlus OnePlus OnePlus Buds Pro 2",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "OnePlus Buds Pro 2",
@@ -1638,12 +1638,12 @@
         "batteryHours": 10
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-buds-3.png",
-        "source": "https://www.oneplus.com/global/product/oneplus-buds-3",
-        "alt": "OnePlus OnePlus Buds 3 official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-oneplus-oneplus-buds-3.webp",
+        "source": "https://m.media-amazon.com/images/I/51h7CQTRJ1L._SL1500_.jpg",
+        "alt": "OnePlus OnePlus Buds 3 official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "OnePlus Buds 3",
@@ -1697,12 +1697,12 @@
         "batteryHours": 12
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-nord-buds-3-pro.png",
-        "source": "https://www.oneplus.com/global/product/oneplus-nord-buds-3-pro",
-        "alt": "OnePlus OnePlus Nord Buds 3 Pro official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-oneplus-oneplus-nord-buds-3-pro.webp",
+        "source": "https://m.media-amazon.com/images/I/51RaySTbIVL._AC_.jpg",
+        "alt": "OnePlus OnePlus Nord Buds 3 Pro official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "OnePlus Nord Buds 3 Pro",
@@ -1756,12 +1756,12 @@
         "batteryHours": 7
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-nord-buds-2.png",
-        "source": "https://www.oneplus.com/global/product/oneplus-nord-buds-2",
-        "alt": "OnePlus OnePlus Nord Buds 2 official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-oneplus-oneplus-nord-buds-2.webp",
+        "source": "https://5.imimg.com/data5/SELLER/Default/2023/4/302311803/JF/VQ/CW/13363033/oneplus-nord-buds-2-1000x1000.png",
+        "alt": "OnePlus OnePlus Nord Buds 2 official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "OnePlus Nord Buds 2",
@@ -1815,12 +1815,12 @@
         "batteryHours": 8
       },
       "media": {
-        "url": "https://www.jabra.com/assets/jabra-elite-10-gen-2.png",
-        "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-10-gen-2",
-        "alt": "Jabra Elite 10 Gen 2 official technical reference",
-        "attribution": "Product specifications and photography © Jabra",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-jabra-jabra-elite-10-gen-2.webp",
+        "source": "https://images.hometheaterreview.com/htr-stateless/2024/12/601ee13f-1933-4130-983b-edadf0402008.jpg",
+        "alt": "Jabra Jabra Elite 10 Gen 2",
+        "attribution": "Product photography © Jabra",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Elite 10 Gen 2",
@@ -1874,12 +1874,12 @@
         "batteryHours": 14
       },
       "media": {
-        "url": "https://www.jabra.com/assets/jabra-elite-8-active-gen-2.png",
-        "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-8-active-gen-2",
-        "alt": "Jabra Elite 8 Active Gen 2 official technical reference",
-        "attribution": "Product specifications and photography © Jabra",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-jabra-jabra-elite-8-active-gen-2.webp",
+        "source": "https://socialandtech.net/wp-content/uploads/2024/06/Jabra-Elite-10-G2-Angle-4-Denim-LB-Large-CMYK-1.jpg",
+        "alt": "Jabra Elite 8 Active Gen 2 official luxury photography",
+        "attribution": "Product photography © Jabra",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Elite 8 Active Gen 2",
@@ -1933,12 +1933,12 @@
         "batteryHours": 5.5
       },
       "media": {
-        "url": "https://www.jabra.com/assets/jabra-elite-4.png",
-        "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-4",
-        "alt": "Jabra Elite 4 official technical reference",
-        "attribution": "Product specifications and photography © Jabra",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-jabra-jabra-elite-4.webp",
+        "source": "https://assets2.jabra.com/1/6/a/1/16a1659c9fec03bbbbbd7c72485f1a3cf1d12b38_elite_4_active_black_02.png",
+        "alt": "Jabra Elite 4 official luxury photography",
+        "attribution": "Product photography © Jabra",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Elite 4",
@@ -1990,12 +1990,12 @@
         "batteryHours": 7
       },
       "media": {
-        "url": "https://www.jabra.com/assets/jabra-elite-3.png",
-        "source": "https://www.jabra.com/bluetooth-headsets/jabra-elite-3",
-        "alt": "Jabra Elite 3 official technical reference",
-        "attribution": "Product specifications and photography © Jabra",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-jabra-jabra-elite-3.webp",
+        "source": "https://assets2.jabra.com/c/9/6/4/c9643ef767b651c5c23ba19ac941e89eaa156547_elite_3_dark_grey_01.png",
+        "alt": "Jabra Elite 3 official luxury photography",
+        "attribution": "Product photography © Jabra",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Elite 3",
@@ -2049,12 +2049,12 @@
         "batteryHours": 8
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-buds-pro-2.png",
-        "source": "https://store.google.com/product/pixel-buds-pro-2",
-        "alt": "Google Pixel Buds Pro 2 official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-google-google-pixel-buds-pro-2.webp",
+        "source": "https://res.cloudinary.com/telia-pim/image/upload/v1723108312/pood/tootja-markimata/korvaklapid/pixel-buds-pro-2/tumehall/ga05762-eu/google-pixel-buds-pro-2-korvaklapid-tumehallid-laadimiskarbist-valjas.png",
+        "alt": "Google Pixel Buds Pro 2 official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Pixel Buds Pro 2",
@@ -2108,12 +2108,12 @@
         "batteryHours": 11
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-buds-pro.png",
-        "source": "https://store.google.com/product/pixel-buds-pro",
-        "alt": "Google Pixel Buds Pro official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-google-google-pixel-buds-pro.webp",
+        "source": "https://m.media-amazon.com/images/I/61DGBXMDMpL._AC_SL1500_.jpg",
+        "alt": "Google Pixel Buds Pro official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Pixel Buds Pro",
@@ -2165,12 +2165,12 @@
         "batteryHours": 5
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-buds-a.png",
-        "source": "https://store.google.com/product/pixel-buds-a",
-        "alt": "Google Pixel Buds A-Series official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-google-google-pixel-buds-a.webp",
+        "source": "https://eezepc.com/wp-content/uploads/2022/10/Google-Pixel-Buds-A-Series-price-in-pakistan-eezepc-10.jpg",
+        "alt": "Google Pixel Buds A-Series official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Pixel Buds A-Series",
@@ -2224,12 +2224,12 @@
         "batteryHours": 10
       },
       "media": {
-        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-liberty-4-nc.png",
-        "source": "https://us.soundcore.com/products/soundcore-liberty-4-nc",
-        "alt": "Soundcore Liberty 4 NC official technical reference",
-        "attribution": "Product specifications and photography © Anker Soundcore",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-anker-soundcore-soundcore-liberty-4-nc.webp",
+        "source": "https://www.technolife.com/image/color_image_TLP-28525_1a1a1a_327c482c-ad67-4894-9bb0-493c9376e62e.png",
+        "alt": "Soundcore Liberty 4 NC official luxury photography",
+        "attribution": "Product photography © Anker Soundcore",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Liberty 4 NC",
@@ -2283,12 +2283,12 @@
         "batteryHours": 9
       },
       "media": {
-        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-liberty-4.png",
-        "source": "https://us.soundcore.com/products/soundcore-liberty-4",
-        "alt": "Soundcore Liberty 4 official technical reference",
-        "attribution": "Product specifications and photography © Anker Soundcore",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-anker-soundcore-soundcore-liberty-4.webp",
+        "source": "https://m.media-amazon.com/images/I/51snKP8HWiL._AC_SL1200_.jpg",
+        "alt": "Soundcore Liberty 4 official luxury photography",
+        "attribution": "Product photography © Anker Soundcore",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Liberty 4",
@@ -2342,12 +2342,12 @@
         "batteryHours": 10
       },
       "media": {
-        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-space-a40.png",
-        "source": "https://us.soundcore.com/products/soundcore-space-a40",
-        "alt": "Soundcore Space A40 official technical reference",
-        "attribution": "Product specifications and photography © Anker Soundcore",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-anker-soundcore-soundcore-space-a40.webp",
+        "source": "https://gadgetfabriek.nl/wp-content/uploads/2022/08/anker-soundcore-space-a40-oordopjes-alle-kleuren-850x850.jpg",
+        "alt": "Soundcore Space A40 official luxury photography",
+        "attribution": "Product photography © Anker Soundcore",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Space A40",
@@ -2401,12 +2401,12 @@
         "batteryHours": 10
       },
       "media": {
-        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-p30i.png",
-        "source": "https://us.soundcore.com/products/soundcore-p30i",
-        "alt": "Soundcore P30i official technical reference",
-        "attribution": "Product specifications and photography © Anker Soundcore",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-anker-soundcore-soundcore-p30i.webp",
+        "source": "https://novatechtechnologies.co.ke/wp-content/uploads/2026/01/Anker-Soundcore-P30i-White1.jpg",
+        "alt": "Soundcore P30i official luxury photography",
+        "attribution": "Product photography © Anker Soundcore",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "P30i",
@@ -2458,12 +2458,12 @@
         "batteryHours": 8
       },
       "media": {
-        "url": "https://cdn.shopify.com/s/files/1/0493/soundcore-life-p2-mini.png",
-        "source": "https://us.soundcore.com/products/soundcore-life-p2-mini",
-        "alt": "Soundcore Life P2 Mini official technical reference",
-        "attribution": "Product specifications and photography © Anker Soundcore",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/earbuds-prod-earbuds-anker-soundcore-soundcore-life-p2-mini.webp",
+        "source": "https://ae01.alicdn.com/kf/H398d239c86cf418088b8df92eb7ef755T.jpg",
+        "alt": "Soundcore Life P2 Mini official luxury photography",
+        "attribution": "Product photography © Anker Soundcore",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "earbuds",
       "modelName": "Life P2 Mini",

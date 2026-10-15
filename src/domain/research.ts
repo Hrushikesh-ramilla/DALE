@@ -78,6 +78,15 @@ export const realProducts: Product[] = [
     stock: 10,
     color: "ivory",
     source: "apple:dynamic:2026-10-07",
+    brand: "Apple",
+    media: {
+      url: "/images/products/chargers-apple-40w-dynamic-adapter.webp",
+      source: "/images/products/chargers-apple-40w-dynamic-adapter.webp",
+      alt: "Apple 40W Dynamic Power Adapter official packshot",
+      attribution: "Product photography © Apple",
+      reviewedAt: "2026-10-13",
+      usage: "licensed",
+    },
   },
   {
     id: "R002",
@@ -96,6 +105,15 @@ export const realProducts: Product[] = [
     stock: 10,
     color: "ivory",
     source: "apple:70w:2026-10-07",
+    brand: "Apple",
+    media: {
+      url: "/images/products/chargers-apple-70w-usbc-adapter.webp",
+      source: "/images/products/chargers-apple-70w-usbc-adapter.webp",
+      alt: "Apple 70W USB-C Power Adapter official packshot",
+      attribution: "Product photography © Apple",
+      reviewedAt: "2026-10-13",
+      usage: "licensed",
+    },
   },
   {
     id: "R003",
@@ -114,6 +132,15 @@ export const realProducts: Product[] = [
     stock: 10,
     color: "ivory",
     source: "apple:dynamic+cable60:2026-10-07",
+    brand: "Apple",
+    media: {
+      url: "/images/products/chargers-apple-40w-adapter-60w-cable.webp",
+      source: "/images/products/chargers-apple-40w-adapter-60w-cable.webp",
+      alt: "Apple 40W Adapter + 60W USB-C Cable official packshot",
+      attribution: "Product photography © Apple",
+      reviewedAt: "2026-10-13",
+      usage: "licensed",
+    },
   },
 ];
 export type ResearchFinding = {

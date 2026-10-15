@@ -22,6 +22,10 @@ export type Product = {
   familyId?: string;
   provenance?: "merchant_sample" | "manufacturer_evidence";
   brand?: string;
+  leafType?: string;
+  modelName?: string;
+  skuVariant?: string;
+  revisionId?: string;
   evidence?: {
     checkedAt: string;
     region: string;
@@ -36,7 +40,7 @@ export type Product = {
     alt: string;
     attribution: string;
     reviewedAt: string;
-    usage: "licensed" | "external_reference";
+    usage: "licensed" | "external_reference" | "catalog_packshot";
   };
   attributes?: {
     productType?: string;
@@ -71,6 +75,12 @@ export type Product = {
     batteryHours?: number;
     voltage?: number;
     capacityLitres?: number;
+    perfumer?: string;
+    topNotes?: string;
+    heartNotes?: string;
+    baseNotes?: string;
+    olfactoryFamily?: string;
+    [key: string]: unknown;
   };
 };
 export const models = ["Atlas 14", "Atlas 14 Pro", "Orbit 13", "Slate 11"];
@@ -244,6 +254,11 @@ export type RetailRequirements = {
   batteryHours?: number;
   voltage?: number;
   capacityLitres?: number;
+  perfumer?: string;
+  topNotes?: string;
+  heartNotes?: string;
+  baseNotes?: string;
+  olfactoryFamily?: string;
 };
 export function meetsRetailRequirements(
   product: Product,

@@ -1,5 +1,5 @@
-export const metadata = { title: "The collection — DALE" };
+import { redirect } from "next/navigation";
 
-export default function Shop() {
-  return null;
+export default function ShopPage() {
+  redirect("/department/electronics");
 }

@@ -2,17 +2,22 @@ import { z } from "zod";
 import { categoryIds, leafTypeKeys, resolveParentCategory } from "./departments";
 import type { Product } from "./catalog";
 
-const httpsUrl = z.url().refine((value) => {
-  const url = new URL(value);
-  return (
-    url.protocol === "https:" &&
-    !url.username &&
-    !url.password &&
-    !url.port &&
-    !/^(localhost|\d+\.\d+\.\d+\.\d+)$/.test(url.hostname) &&
-    !url.hostname.includes(":")
-  );
-}, "Use a public HTTPS source without credentials or a custom port.");
+const httpsUrl = z.string().refine((value) => {
+  if (value.startsWith("/images/products/")) return true;
+  try {
+    const url = new URL(value);
+    return (
+      url.protocol === "https:" &&
+      !url.username &&
+      !url.password &&
+      !url.port &&
+      !/^(localhost|\d+\.\d+\.\d+\.\d+)$/.test(url.hostname) &&
+      !url.hostname.includes(":")
+    );
+  } catch {
+    return false;
+  }
+}, "Use a public HTTPS source or local /images/products/ path without credentials.");
 const attributes = z
   .object({
     productType: z.string().min(1).max(60).optional(),
@@ -47,6 +52,11 @@ const attributes = z
     batteryHours: z.number().positive().max(10000).optional(),
     voltage: z.number().positive().max(10000).optional(),
     capacityLitres: z.number().positive().max(10000).optional(),
+    perfumer: z.string().trim().min(1).max(200).optional(),
+    topNotes: z.string().trim().min(1).max(500).optional(),
+    heartNotes: z.string().trim().min(1).max(500).optional(),
+    baseNotes: z.string().trim().min(1).max(500).optional(),
+    olfactoryFamily: z.string().trim().min(1).max(200).optional(),
   })
   .strict();
 const productBase = z
@@ -83,7 +93,7 @@ const productBase = z
         alt: z.string().min(3).max(300),
         attribution: z.string().min(1).max(300),
         reviewedAt: z.iso.date(),
-        usage: z.enum(["licensed", "external_reference"]),
+        usage: z.enum(["licensed", "external_reference", "catalog_packshot"]),
       })
       .strict()
       .optional(),

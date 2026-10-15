@@ -345,74 +345,6 @@
       "status": "staged"
     },
     {
-      "id": "le-creuset-tri-ply-stainless-saucepan",
-      "canonicalBrand": "Le Creuset",
-      "displayBrand": "Le Creuset",
-      "productLine": "Signature Enameled Cast Iron",
-      "modelName": "Tri-Ply Stainless Steel Saucepan",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.lecreuset.com/cookware/tri-ply-stainless-saucepan"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Cerise Red",
-        "Volcanic Flame",
-        "Marseille Blue"
-      ],
-      "mediaSource": {
-        "url": "https://images.lecreuset.com/products/le-creuset-tri-ply-stainless-saucepan.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "le creuset",
-        "modelName": "tri-ply stainless steel saucepan",
-        "materialAlloy": "3-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 260,
-        "capacityLiters": 2.8,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Le Creuset French enameled cookware Tri-Ply Stainless Steel Saucepan",
-      "status": "staged"
-    },
-    {
-      "id": "le-creuset-signature-chefs-oven",
-      "canonicalBrand": "Le Creuset",
-      "displayBrand": "Le Creuset",
-      "productLine": "Signature Enameled Cast Iron",
-      "modelName": "Signature Chef's Oven",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.lecreuset.com/cookware/signature-chefs-oven"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Cerise Red",
-        "Volcanic Flame",
-        "Marseille Blue"
-      ],
-      "mediaSource": {
-        "url": "https://images.lecreuset.com/products/le-creuset-signature-chefs-oven.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "le creuset",
-        "modelName": "signature chef's oven",
-        "materialAlloy": "Enameled Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 260,
-        "capacityLiters": 4.7,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Le Creuset French enameled cookware Signature Chef's Oven",
-      "status": "staged"
-    },
-    {
       "id": "staub-round-cocotte-dutch-oven",
       "canonicalBrand": "Staub",
       "displayBrand": "Staub",
@@ -750,74 +682,6 @@
       },
       "missingAttributes": [],
       "inclusionReason": "Staub French enameled cast iron Cast Iron Fondue Set",
-      "status": "staged"
-    },
-    {
-      "id": "staub-stackable-rectangular-roaster",
-      "canonicalBrand": "Staub",
-      "displayBrand": "Staub",
-      "productLine": "Alsace Enameled Cast Iron",
-      "modelName": "Cast Iron Stackable Rectangular Roaster",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/staub/cookware/stackable-rectangular-roaster"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Matte Black",
-        "Grenadine",
-        "Graphite Grey"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/dw/image/v2/products/staub-stackable-rectangular-roaster.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "staub",
-        "modelName": "cast iron stackable rectangular roaster",
-        "materialAlloy": "Enameled Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 260,
-        "capacityLiters": 4.7,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Staub French enameled cast iron Cast Iron Stackable Rectangular Roaster",
-      "status": "staged"
-    },
-    {
-      "id": "staub-cast-iron-tea-pot-kettle",
-      "canonicalBrand": "Staub",
-      "displayBrand": "Staub",
-      "productLine": "Alsace Enameled Cast Iron",
-      "modelName": "Cast Iron Tea Pot Kettle",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/staub/cookware/cast-iron-tea-pot-kettle"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Matte Black",
-        "Grenadine",
-        "Graphite Grey"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/dw/image/v2/products/staub-cast-iron-tea-pot-kettle.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "staub",
-        "modelName": "cast iron tea pot kettle",
-        "materialAlloy": "Enameled Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 260,
-        "capacityLiters": 1.15,
-        "dishwasherSafe": false
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Staub French enameled cast iron Cast Iron Tea Pot Kettle",
       "status": "staged"
     },
     {
@@ -1481,72 +1345,6 @@
       "status": "staged"
     },
     {
-      "id": "all-clad-ha1-hard-anodized-fry-pan-10",
-      "canonicalBrand": "All-Clad",
-      "displayBrand": "All-Clad",
-      "productLine": "D3, D5 & Copper Core",
-      "modelName": "HA1 Hard Anodized Nonstick 10-Inch Fry Pan",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.all-clad.com/cookware/ha1-hard-anodized-fry-pan-10"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Polished Stainless Steel",
-        "Brushed Stainless"
-      ],
-      "mediaSource": {
-        "url": "https://www.all-clad.com/images/products/all-clad-ha1-hard-anodized-fry-pan-10.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "all-clad",
-        "modelName": "ha1 hard anodized nonstick 10-inch fry pan",
-        "materialAlloy": "Heavy Gauge Hard-Anodized",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 260,
-        "capacityLiters": 2,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "All-Clad American bonded clad cookware HA1 Hard Anodized Nonstick 10-Inch Fry Pan",
-      "status": "staged"
-    },
-    {
-      "id": "all-clad-stainless-roaster-rack",
-      "canonicalBrand": "All-Clad",
-      "displayBrand": "All-Clad",
-      "productLine": "D3, D5 & Copper Core",
-      "modelName": "Stainless Steel Large Flared Roaster with Rack",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.all-clad.com/cookware/stainless-roaster-rack"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Polished Stainless Steel",
-        "Brushed Stainless"
-      ],
-      "mediaSource": {
-        "url": "https://www.all-clad.com/images/products/all-clad-stainless-roaster-rack.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "all-clad",
-        "modelName": "stainless steel large flared roaster with rack",
-        "materialAlloy": "3-Ply Stainless Steel",
-        "cooktopCompatibility": "Gas, Electric, Ceramic",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 8,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "All-Clad American bonded clad cookware Stainless Steel Large Flared Roaster with Rack",
-      "status": "staged"
-    },
-    {
       "id": "zwilling-pro-8-inch-chef-knife",
       "canonicalBrand": "Zwilling",
       "displayBrand": "Zwilling",
@@ -1874,72 +1672,6 @@
       },
       "missingAttributes": [],
       "inclusionReason": "Zwilling German cutlery and cookware Passion 18/10 Stainless Steel 6-Quart Dutch Oven",
-      "status": "staged"
-    },
-    {
-      "id": "zwilling-twin-gourmet-carving-knife-8",
-      "canonicalBrand": "Zwilling",
-      "displayBrand": "Zwilling",
-      "productLine": "Zwilling Pro & Cookware",
-      "modelName": "Twin Gourmet 8-Inch Carving Knife",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/kitchenware/twin-gourmet-carving-knife-8"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Stainless Steel / Polyoxymethylene",
-        "Brushed Metal"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/zwilling-twin-gourmet-carving-knife-8.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "zwilling",
-        "modelName": "twin gourmet 8-inch carving knife",
-        "materialAlloy": "FRIODUR Ice-Hardened Steel",
-        "cooktopCompatibility": "Knife / Food Prep",
-        "ovenSafeMaxTempC": 120,
-        "capacityLiters": 0,
-        "dishwasherSafe": false
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Zwilling German cutlery and cookware Twin Gourmet 8-Inch Carving Knife",
-      "status": "staged"
-    },
-    {
-      "id": "zwilling-twin-master-cleaver-6",
-      "canonicalBrand": "Zwilling",
-      "displayBrand": "Zwilling",
-      "productLine": "Zwilling Pro & Cookware",
-      "modelName": "Twin Master Cleaver 6-Inch",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/kitchenware/twin-master-cleaver-6"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Stainless Steel / Polyoxymethylene",
-        "Brushed Metal"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/zwilling-twin-master-cleaver-6.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "zwilling",
-        "modelName": "twin master cleaver 6-inch",
-        "materialAlloy": "Special High Carbon Steel",
-        "cooktopCompatibility": "Knife / Food Prep",
-        "ovenSafeMaxTempC": 120,
-        "capacityLiters": 0,
-        "dishwasherSafe": false
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Zwilling German cutlery and cookware Twin Master Cleaver 6-Inch",
       "status": "staged"
     },
     {
@@ -2273,326 +2005,6 @@
       "status": "staged"
     },
     {
-      "id": "demeyere-atlantis-7ply-proline-fry-pan-11",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Atlantis 7-Ply 11-Inch Proline Frying Pan",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/atlantis-7ply-proline-fry-pan-11"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-atlantis-7ply-proline-fry-pan-11.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "atlantis 7-ply 11-inch proline frying pan",
-        "materialAlloy": "7-Ply Multilayer Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.5,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Atlantis 7-Ply 11-Inch Proline Frying Pan",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-atlantis-7ply-saute-pan-3-5qt",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Atlantis 7-Ply 3.5-Quart Saute Pan with Lid",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/atlantis-7ply-saute-pan-3-5qt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-atlantis-7ply-saute-pan-3-5qt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "atlantis 7-ply 3.5-quart saute pan with lid",
-        "materialAlloy": "7-Ply Stainless Steel with InductoSeal",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 3.3,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Atlantis 7-Ply 3.5-Quart Saute Pan with Lid",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-atlantis-7ply-dutch-oven-5-5qt",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Atlantis 7-Ply 5.5-Quart Dutch Oven",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/atlantis-7ply-dutch-oven-5-5qt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-atlantis-7ply-dutch-oven-5-5qt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "atlantis 7-ply 5.5-quart dutch oven",
-        "materialAlloy": "7-Ply Multilayer Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 5.2,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Atlantis 7-Ply 5.5-Quart Dutch Oven",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-atlantis-7ply-conical-sauteuse-2-3qt",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Atlantis 7-Ply 2.3-Quart Conical Sauteuse",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/atlantis-7ply-conical-sauteuse-2-3qt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-atlantis-7ply-conical-sauteuse-2-3qt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "atlantis 7-ply 2.3-quart conical sauteuse",
-        "materialAlloy": "7-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.2,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Atlantis 7-Ply 2.3-Quart Conical Sauteuse",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-industry-5ply-fry-pan-11",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Industry 5-Ply 11-Inch Stainless Steel Fry Pan",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/industry-5ply-fry-pan-11"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-industry-5ply-fry-pan-11.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "industry 5-ply 11-inch stainless steel fry pan",
-        "materialAlloy": "5-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.5,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Industry 5-Ply 11-Inch Stainless Steel Fry Pan",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-industry-5ply-saucepan-3qt",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Industry 5-Ply 3-Quart Saucepan with Lid",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/industry-5ply-saucepan-3qt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-industry-5ply-saucepan-3qt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "industry 5-ply 3-quart saucepan with lid",
-        "materialAlloy": "5-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.8,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Industry 5-Ply 3-Quart Saucepan with Lid",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-industry-5ply-stockpot-8qt",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Industry 5-Ply 8-Quart Stockpot",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/industry-5ply-stockpot-8qt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-industry-5ply-stockpot-8qt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "industry 5-ply 8-quart stockpot",
-        "materialAlloy": "5-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 7.6,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Industry 5-Ply 8-Quart Stockpot",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-resto-3ply-skillet-10",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Resto 3-Ply 10-Inch Stainless Steel Skillet",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/resto-3ply-skillet-10"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-resto-3ply-skillet-10.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "resto 3-ply 10-inch stainless steel skillet",
-        "materialAlloy": "3-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 260,
-        "capacityLiters": 2,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Resto 3-Ply 10-Inch Stainless Steel Skillet",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-resto-stainless-wok-12",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Resto Stainless Steel Wok 12-Inch",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/resto-stainless-wok-12"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-resto-stainless-wok-12.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "resto stainless steel wok 12-inch",
-        "materialAlloy": "3-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 260,
-        "capacityLiters": 4,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Resto Stainless Steel Wok 12-Inch",
-      "status": "staged"
-    },
-    {
-      "id": "demeyere-apollo-7ply-conical-saucepan",
-      "canonicalBrand": "Demeyere",
-      "displayBrand": "Demeyere",
-      "productLine": "Atlantis 7-Ply & Industry",
-      "modelName": "Apollo 7-Ply Conical Saucepan",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.zwilling.com/us/demeyere/cookware/apollo-7ply-conical-saucepan"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Silvinox Surface Finish"
-      ],
-      "mediaSource": {
-        "url": "https://www.zwilling.com/images/products/demeyere-apollo-7ply-conical-saucepan.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "demeyere",
-        "modelName": "apollo 7-ply conical saucepan",
-        "materialAlloy": "7-Ply Multilayer Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 1.9,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Demeyere Belgian 7-ply professional cookware Apollo 7-Ply Conical Saucepan",
-      "status": "staged"
-    },
-    {
       "id": "de-buyer-mineral-b-round-fry-pan",
       "canonicalBrand": "De Buyer",
       "displayBrand": "De Buyer",
@@ -2923,663 +2335,963 @@
       "status": "staged"
     },
     {
-      "id": "cristel-strate-l-fry-pan-11",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Strate L 11-Inch Removable Handle Frying Pan",
+      "id": "smeg-dg-2-slice-toaster",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love 2-Slice Toaster",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.cristelusa.com/products/strate-l-fry-pan-11"
+        "https://example.com/products/kitchenware/smeg-dg-2-slice-toaster"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-strate-l-fry-pan-11.jpg"
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-2-slice-toaster.jpg"
       },
       "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "strate l 11-inch removable handle frying pan",
-        "materialAlloy": "3-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.4,
-        "dishwasherSafe": true
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love 2-slice toaster",
+        "materialAlloy": "Deep Drawn Sheet Steel with Enamel",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 2,
+        "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Strate L 11-Inch Removable Handle Frying Pan",
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love 2-Slice Toaster",
       "status": "staged"
     },
     {
-      "id": "cristel-strate-l-saute-pan-3-5qt",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Strate L 3.5-Quart Saute Pan with Glass Lid",
+      "id": "smeg-dg-4-slice-toaster",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love 4-Slice Toaster",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.cristelusa.com/products/strate-l-saute-pan-3-5qt"
+        "https://example.com/products/kitchenware/smeg-dg-4-slice-toaster"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-strate-l-saute-pan-3-5qt.jpg"
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-4-slice-toaster.jpg"
       },
       "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "strate l 3.5-quart saute pan with glass lid",
-        "materialAlloy": "3-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 3.3,
-        "dishwasherSafe": true
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love 4-slice toaster",
+        "materialAlloy": "Enameled Steel & Polished Chrome",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 4,
+        "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Strate L 3.5-Quart Saute Pan with Glass Lid",
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love 4-Slice Toaster",
       "status": "staged"
     },
     {
-      "id": "cristel-strate-l-saucepan-3qt",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Strate L 3-Quart Saucepan",
+      "id": "smeg-dg-electric-kettle",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love Electric Kettle",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.cristelusa.com/products/strate-l-saucepan-3qt"
+        "https://example.com/products/kitchenware/smeg-dg-electric-kettle"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-strate-l-saucepan-3qt.jpg"
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-electric-kettle.jpg"
       },
       "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "strate l 3-quart saucepan",
-        "materialAlloy": "3-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.8,
-        "dishwasherSafe": true
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love electric kettle",
+        "materialAlloy": "Stainless Steel with Enamel Print",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 1.7,
+        "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Strate L 3-Quart Saucepan",
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love Electric Kettle",
       "status": "staged"
     },
     {
-      "id": "cristel-strate-l-stockpot-7-5qt",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Strate L 7.5-Quart Stockpot",
+      "id": "smeg-dg-variable-temp-kettle",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love Variable Temperature Kettle",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.cristelusa.com/products/strate-l-stockpot-7-5qt"
+        "https://example.com/products/kitchenware/smeg-dg-variable-temp-kettle"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-strate-l-stockpot-7-5qt.jpg"
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-variable-temp-kettle.jpg"
       },
       "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "strate l 7.5-quart stockpot",
-        "materialAlloy": "3-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 7.1,
-        "dishwasherSafe": true
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love variable temperature kettle",
+        "materialAlloy": "Stainless Steel & Chrome Base",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 1.7,
+        "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Strate L 7.5-Quart Stockpot",
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love Variable Temperature Kettle",
       "status": "staged"
     },
     {
-      "id": "cristel-mutine-fry-pan-10",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Mutine 18/10 Stainless Steel 10-Inch Fry Pan",
+      "id": "smeg-dg-citrus-juicer",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love Citrus Juicer",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.cristelusa.com/products/mutine-fry-pan-10"
+        "https://example.com/products/kitchenware/smeg-dg-citrus-juicer"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-mutine-fry-pan-10.jpg"
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-citrus-juicer.jpg"
       },
       "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "mutine 18/10 stainless steel 10-inch fry pan",
-        "materialAlloy": "18/10 Stainless Steel Base",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love citrus juicer",
+        "materialAlloy": "Die-Cast Aluminum & Tritan",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 0.5,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love Citrus Juicer",
+      "status": "staged"
+    },
+    {
+      "id": "smeg-dg-slow-juicer",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love Slow Juicer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/smeg-dg-slow-juicer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-slow-juicer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love slow juicer",
+        "materialAlloy": "Stainless Steel & Tritan BPA-Free",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 1,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love Slow Juicer",
+      "status": "staged"
+    },
+    {
+      "id": "smeg-dg-blender",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love 1.5L Blender",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/smeg-dg-blender"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-blender.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love 1.5l blender",
+        "materialAlloy": "Die-Cast Aluminum & Tritan Jug",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 1.5,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love 1.5L Blender",
+      "status": "staged"
+    },
+    {
+      "id": "smeg-dg-espresso-machine",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love Espresso Coffee Machine",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/smeg-dg-espresso-machine"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-espresso-machine.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love espresso coffee machine",
+        "materialAlloy": "Stainless Steel & Thermoblock",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 1,
+        "dishwasherSafe": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love Espresso Coffee Machine",
+      "status": "staged"
+    },
+    {
+      "id": "smeg-dg-stand-mixer",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love Stand Mixer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/smeg-dg-stand-mixer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-stand-mixer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love stand mixer",
+        "materialAlloy": "Die-Cast Aluminum & Polished Bowl",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 4.8,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love Stand Mixer",
+      "status": "staged"
+    },
+    {
+      "id": "smeg-dg-drip-coffee-maker",
+      "canonicalBrand": "Smeg x Dolce & Gabbana",
+      "displayBrand": "Smeg x Dolce & Gabbana",
+      "productLine": "Sicily Is My Love Collection",
+      "modelName": "Sicily Is My Love Drip Filter Coffee Maker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/smeg-dg-drip-coffee-maker"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/smeg-dg-drip-coffee-maker.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "smeg x dolce & gabbana",
+        "modelName": "sicily is my love drip filter coffee maker",
+        "materialAlloy": "Painted Steel & Glass Carafe",
+        "cooktopCompatibility": "Countertop Electric Appliance",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 1.4,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smeg x Dolce & Gabbana luxury culinary centerpiece Sicily Is My Love Drip Filter Coffee Maker",
+      "status": "staged"
+    },
+    {
+      "id": "christofle-mood-24-piece-flatware",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "MOOD by Christofle 24-Piece Silver-Plated Flatware",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/christofle-mood-24-piece-flatware"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/christofle-mood-24-piece-flatware.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "christofle",
+        "modelName": "mood by christofle 24-piece silver-plated flatware",
+        "materialAlloy": "Silver Plated Alloy in Mirror Steel Egg",
+        "cooktopCompatibility": "Tabletop Fine Dining",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 24,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Christofle luxury culinary centerpiece MOOD by Christofle 24-Piece Silver-Plated Flatware",
+      "status": "staged"
+    },
+    {
+      "id": "christofle-mood-gold-24-piece",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "MOOD Gold 24-Piece 24K Gilded Flatware Canteen",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/christofle-mood-gold-24-piece"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/christofle-mood-gold-24-piece.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "christofle",
+        "modelName": "mood gold 24-piece 24k gilded flatware canteen",
+        "materialAlloy": "24K Gold Gilded Alloy in Brass Shell",
+        "cooktopCompatibility": "Tabletop Fine Dining",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 24,
+        "dishwasherSafe": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Christofle luxury culinary centerpiece MOOD Gold 24-Piece 24K Gilded Flatware Canteen",
+      "status": "staged"
+    },
+    {
+      "id": "christofle-mood-party-tray",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "MOOD Party Tray with Porcelain Dishes & Cutlery",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/christofle-mood-party-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/christofle-mood-party-tray.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "christofle",
+        "modelName": "mood party tray with porcelain dishes & cutlery",
+        "materialAlloy": "Silver Plated and Limoges Porcelain",
+        "cooktopCompatibility": "Tabletop Cocktail Service",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 6,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Christofle luxury culinary centerpiece MOOD Party Tray with Porcelain Dishes & Cutlery",
+      "status": "staged"
+    },
+    {
+      "id": "christofle-albi-carving-set",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "Albi Silver-Plated 2-Piece Carving Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/christofle-albi-carving-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/christofle-albi-carving-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "christofle",
+        "modelName": "albi silver-plated 2-piece carving set",
+        "materialAlloy": "Silver Plated Heavy Alloy & Steel Blade",
+        "cooktopCompatibility": "Tabletop Carving",
+        "ovenSafeMaxTempC": 0,
         "capacityLiters": 2,
         "dishwasherSafe": true
       },
       "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Mutine 18/10 Stainless Steel 10-Inch Fry Pan",
+      "inclusionReason": "Christofle luxury culinary centerpiece Albi Silver-Plated 2-Piece Carving Set",
       "status": "staged"
     },
     {
-      "id": "cristel-mutine-saucepan-2-5qt",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Mutine 18/10 Stainless Steel 2.5-Quart Saucepan",
+      "id": "christofle-vertigo-champagne-cooler",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "Vertigo Silver-Plated Champagne Bucket",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.cristelusa.com/products/mutine-saucepan-2-5qt"
+        "https://example.com/products/kitchenware/christofle-vertigo-champagne-cooler"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-mutine-saucepan-2-5qt.jpg"
+        "url": "https://images.luxurykitchen.com/products/christofle-vertigo-champagne-cooler.jpg"
       },
       "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "mutine 18/10 stainless steel 2.5-quart saucepan",
-        "materialAlloy": "18/10 Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.4,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Mutine 18/10 Stainless Steel 2.5-Quart Saucepan",
-      "status": "staged"
-    },
-    {
-      "id": "cristel-castel-pro-5ply-skillet-11",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Castel'Pro 5-Ply Ultramount 11-Inch Skillet",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.cristelusa.com/products/castel-pro-5ply-skillet-11"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
-      ],
-      "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-castel-pro-5ply-skillet-11.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "castel'pro 5-ply ultramount 11-inch skillet",
-        "materialAlloy": "5-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.4,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Castel'Pro 5-Ply Ultramount 11-Inch Skillet",
-      "status": "staged"
-    },
-    {
-      "id": "cristel-castel-pro-5ply-saute-pan-4qt",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Castel'Pro 5-Ply 4-Quart Saute Pan",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.cristelusa.com/products/castel-pro-5ply-saute-pan-4qt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
-      ],
-      "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-castel-pro-5ply-saute-pan-4qt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "castel'pro 5-ply 4-quart saute pan",
-        "materialAlloy": "5-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 3.8,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Castel'Pro 5-Ply 4-Quart Saute Pan",
-      "status": "staged"
-    },
-    {
-      "id": "cristel-castel-pro-curved-saucier-2qt",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Castel'Pro 5-Ply Curved Saucier 2-Quart",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.cristelusa.com/products/castel-pro-curved-saucier-2qt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
-      ],
-      "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-castel-pro-curved-saucier-2qt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "castel'pro 5-ply curved saucier 2-quart",
-        "materialAlloy": "5-Ply Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 1.9,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Castel'Pro 5-Ply Curved Saucier 2-Quart",
-      "status": "staged"
-    },
-    {
-      "id": "cristel-strate-nonstick-fry-pan",
-      "canonicalBrand": "Cristel",
-      "displayBrand": "Cristel",
-      "productLine": "Strate L & Castel'Pro",
-      "modelName": "Strate Nonstick Round Frying Pan Exceliss",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.cristelusa.com/products/strate-nonstick-fry-pan"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Brushed Finish",
-        "Mirror Stainless"
-      ],
-      "mediaSource": {
-        "url": "https://www.cristelusa.com/images/cristel-strate-nonstick-fry-pan.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "cristel",
-        "modelName": "strate nonstick round frying pan exceliss",
-        "materialAlloy": "Nonstick Stainless Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 220,
-        "capacityLiters": 2.2,
-        "dishwasherSafe": true
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Cristel French modular removable-handle cookware Strate Nonstick Round Frying Pan Exceliss",
-      "status": "staged"
-    },
-    {
-      "id": "lodge-cast-iron-skillet-10-25",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Pre-Seasoned Cast Iron 10.25-Inch Skillet",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.lodgecastiron.com/product/cast-iron-skillet-10-25"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
-      ],
-      "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-cast-iron-skillet-10-25.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "pre-seasoned cast iron 10.25-inch skillet",
-        "materialAlloy": "Seasoned Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 1.9,
+        "brand": "christofle",
+        "modelName": "vertigo silver-plated champagne bucket",
+        "materialAlloy": "Silver Plated Brass with Asymmetric Ring",
+        "cooktopCompatibility": "Wine & Bar Service",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 5,
         "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Pre-Seasoned Cast Iron 10.25-Inch Skillet",
+      "inclusionReason": "Christofle luxury culinary centerpiece Vertigo Silver-Plated Champagne Bucket",
       "status": "staged"
     },
     {
-      "id": "lodge-cast-iron-skillet-12",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Pre-Seasoned Cast Iron 12-Inch Skillet",
+      "id": "christofle-malmaison-serving-platter",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "Malmaison Silver-Plated Round Serving Platter",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.lodgecastiron.com/product/cast-iron-skillet-12"
+        "https://example.com/products/kitchenware/christofle-malmaison-serving-platter"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-cast-iron-skillet-12.jpg"
+        "url": "https://images.luxurykitchen.com/products/christofle-malmaison-serving-platter.jpg"
       },
       "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "pre-seasoned cast iron 12-inch skillet",
-        "materialAlloy": "Seasoned Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
+        "brand": "christofle",
+        "modelName": "malmaison silver-plated round serving platter",
+        "materialAlloy": "Silver Plated Heavy Gauge Brass",
+        "cooktopCompatibility": "Service Ware & Presentation",
+        "ovenSafeMaxTempC": 100,
+        "capacityLiters": 3.5,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Christofle luxury culinary centerpiece Malmaison Silver-Plated Round Serving Platter",
+      "status": "staged"
+    },
+    {
+      "id": "christofle-jardin-d-eden-fish-set",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "Jardin d'Eden Silver-Plated Fish Cutlery Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/christofle-jardin-d-eden-fish-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/christofle-jardin-d-eden-fish-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "christofle",
+        "modelName": "jardin d'eden silver-plated fish cutlery set",
+        "materialAlloy": "Silver Plated Engraved Alloy",
+        "cooktopCompatibility": "Tabletop Fine Dining",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 12,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Christofle luxury culinary centerpiece Jardin d'Eden Silver-Plated Fish Cutlery Set",
+      "status": "staged"
+    },
+    {
+      "id": "christofle-perles-sauce-boat",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "Perles Silver-Plated Sauce Boat with Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/christofle-perles-sauce-boat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/christofle-perles-sauce-boat.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "christofle",
+        "modelName": "perles silver-plated sauce boat with tray",
+        "materialAlloy": "Silver Plated Brass with Beaded Border",
+        "cooktopCompatibility": "Tabletop Sauce Service",
+        "ovenSafeMaxTempC": 100,
+        "capacityLiters": 0.4,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Christofle luxury culinary centerpiece Perles Silver-Plated Sauce Boat with Tray",
+      "status": "staged"
+    },
+    {
+      "id": "christofle-concorde-24-piece-canteen",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "Concorde Stainless Steel 24-Piece Flatware Canteen",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/christofle-concorde-24-piece-canteen"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/christofle-concorde-24-piece-canteen.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "christofle",
+        "modelName": "concorde stainless steel 24-piece flatware canteen",
+        "materialAlloy": "18/10 Mirror Finished Stainless Steel",
+        "cooktopCompatibility": "Tabletop Everyday Luxury",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 24,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Christofle luxury culinary centerpiece Concorde Stainless Steel 24-Piece Flatware Canteen",
+      "status": "staged"
+    },
+    {
+      "id": "christofle-mood-coffee-spoons",
+      "canonicalBrand": "Christofle",
+      "displayBrand": "Christofle",
+      "productLine": "Haute Orfèvrerie & Tableware",
+      "modelName": "MOOD Coffee 6-Piece Silver-Plated Espresso Spoon Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/christofle-mood-coffee-spoons"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/christofle-mood-coffee-spoons.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "christofle",
+        "modelName": "mood coffee 6-piece silver-plated espresso spoon set",
+        "materialAlloy": "Silver Plated Alloy in Compact Egg",
+        "cooktopCompatibility": "Coffee & Tea Service",
+        "ovenSafeMaxTempC": 0,
+        "capacityLiters": 6,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Christofle luxury culinary centerpiece MOOD Coffee 6-Piece Silver-Plated Espresso Spoon Set",
+      "status": "staged"
+    },
+    {
+      "id": "ruffoni-historia-hammered-copper-stockpot",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Historia Hammered Copper Stockpot with Acorn Finial",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/ruffoni-historia-hammered-copper-stockpot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/ruffoni-historia-hammered-copper-stockpot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ruffoni",
+        "modelName": "historia hammered copper stockpot with acorn finial",
+        "materialAlloy": "Solid Hand-Hammered Copper with Tin Lining",
+        "cooktopCompatibility": "Gas, Electric, Ceramic (Oven Safe)",
+        "ovenSafeMaxTempC": 230,
+        "capacityLiters": 7.5,
+        "dishwasherSafe": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Historia Hammered Copper Stockpot with Acorn Finial",
+      "status": "staged"
+    },
+    {
+      "id": "ruffoni-historia-copper-braiser",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Historia Hammered Copper Braiser with Artichoke Knob",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/ruffoni-historia-copper-braiser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/ruffoni-historia-copper-braiser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ruffoni",
+        "modelName": "historia hammered copper braiser with artichoke knob",
+        "materialAlloy": "Solid Hammered Copper with Tin Interior",
+        "cooktopCompatibility": "Gas, Electric, Ceramic (Oven Safe)",
+        "ovenSafeMaxTempC": 230,
+        "capacityLiters": 4.5,
+        "dishwasherSafe": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Historia Hammered Copper Braiser with Artichoke Knob",
+      "status": "staged"
+    },
+    {
+      "id": "ruffoni-historia-copper-risotto-pan",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Historia Hammered Copper Risotto Pan with Wood Spatula",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/ruffoni-historia-copper-risotto-pan"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/ruffoni-historia-copper-risotto-pan.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ruffoni",
+        "modelName": "historia hammered copper risotto pan with wood spatula",
+        "materialAlloy": "Solid Copper with Hand-Wiped Tin Lining",
+        "cooktopCompatibility": "Gas, Electric, Ceramic",
+        "ovenSafeMaxTempC": 230,
+        "capacityLiters": 3.8,
+        "dishwasherSafe": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Historia Hammered Copper Risotto Pan with Wood Spatula",
+      "status": "staged"
+    },
+    {
+      "id": "ruffoni-symphonia-cupra-cookware-set",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Symphonia Cupra 7-Piece Copper Clad Cookware Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/ruffoni-symphonia-cupra-cookware-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/ruffoni-symphonia-cupra-cookware-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ruffoni",
+        "modelName": "symphonia cupra 7-piece copper clad cookware set",
+        "materialAlloy": "Copper Clad Stainless Steel Composite",
+        "cooktopCompatibility": "All Cooktops incl. Induction",
+        "ovenSafeMaxTempC": 260,
+        "capacityLiters": 14,
+        "dishwasherSafe": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Symphonia Cupra 7-Piece Copper Clad Cookware Set",
+      "status": "staged"
+    },
+    {
+      "id": "ruffoni-omegma-saute-pan",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Omegna Stainless Clad 3.5-Qt Sauté Pan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/ruffoni-omegma-saute-pan"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/ruffoni-omegma-saute-pan.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ruffoni",
+        "modelName": "omegna stainless clad 3.5-qt sauté pan",
+        "materialAlloy": "Multi-Ply Copper Core Stainless Steel",
+        "cooktopCompatibility": "All Cooktops incl. Induction",
+        "ovenSafeMaxTempC": 260,
+        "capacityLiters": 3.3,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Omegna Stainless Clad 3.5-Qt Sauté Pan",
+      "status": "staged"
+    },
+    {
+      "id": "ruffoni-historia-copper-gratin-pan",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Historia Copper Gratin Pan with Cast Brass Handles",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/ruffoni-historia-copper-gratin-pan"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/ruffoni-historia-copper-gratin-pan.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ruffoni",
+        "modelName": "historia copper gratin pan with cast brass handles",
+        "materialAlloy": "Solid Copper with Tin Lining",
+        "cooktopCompatibility": "Gas, Ceramic, Oven & Broiler",
+        "ovenSafeMaxTempC": 230,
         "capacityLiters": 2.8,
         "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Pre-Seasoned Cast Iron 12-Inch Skillet",
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Historia Copper Gratin Pan with Cast Brass Handles",
       "status": "staged"
     },
     {
-      "id": "lodge-cast-iron-dutch-oven-5qt",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Pre-Seasoned Cast Iron 5-Quart Dutch Oven",
+      "id": "ruffoni-symphonia-cupra-fry-pan",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Symphonia Cupra 11-Inch Frying Pan",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.lodgecastiron.com/product/cast-iron-dutch-oven-5qt"
+        "https://example.com/products/kitchenware/ruffoni-symphonia-cupra-fry-pan"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-cast-iron-dutch-oven-5qt.jpg"
+        "url": "https://images.luxurykitchen.com/products/ruffoni-symphonia-cupra-fry-pan.jpg"
       },
       "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "pre-seasoned cast iron 5-quart dutch oven",
-        "materialAlloy": "Seasoned Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 4.7,
+        "brand": "ruffoni",
+        "modelName": "symphonia cupra 11-inch frying pan",
+        "materialAlloy": "Copper Exterior with 18/10 Stainless Interior",
+        "cooktopCompatibility": "All Cooktops incl. Induction",
+        "ovenSafeMaxTempC": 260,
+        "capacityLiters": 2.2,
         "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Pre-Seasoned Cast Iron 5-Quart Dutch Oven",
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Symphonia Cupra 11-Inch Frying Pan",
       "status": "staged"
     },
     {
-      "id": "lodge-cast-iron-round-griddle-10-5",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Pre-Seasoned Cast Iron 10.5-Inch Round Griddle",
+      "id": "ruffoni-historia-copper-saucepan",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Historia Hammered Copper Saucepan with Fig Finial",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.lodgecastiron.com/product/cast-iron-round-griddle-10-5"
+        "https://example.com/products/kitchenware/ruffoni-historia-copper-saucepan"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-cast-iron-round-griddle-10-5.jpg"
+        "url": "https://images.luxurykitchen.com/products/ruffoni-historia-copper-saucepan.jpg"
       },
       "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "pre-seasoned cast iron 10.5-inch round griddle",
-        "materialAlloy": "Seasoned Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 1.2,
+        "brand": "ruffoni",
+        "modelName": "historia hammered copper saucepan with fig finial",
+        "materialAlloy": "Solid Hammered Copper & Cast Brass",
+        "cooktopCompatibility": "Gas, Electric, Ceramic",
+        "ovenSafeMaxTempC": 230,
+        "capacityLiters": 2,
         "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Pre-Seasoned Cast Iron 10.5-Inch Round Griddle",
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Historia Hammered Copper Saucepan with Fig Finial",
       "status": "staged"
     },
     {
-      "id": "lodge-cast-iron-square-grill-pan-10-5",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Pre-Seasoned Cast Iron 10.5-Inch Square Grill Pan",
+      "id": "ruffoni-omegma-hammered-soup-pot",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Omegna Hammered Stainless Steel Soup Pot",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.lodgecastiron.com/product/cast-iron-square-grill-pan-10-5"
+        "https://example.com/products/kitchenware/ruffoni-omegma-hammered-soup-pot"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "GLOBAL",
       "lifecycle": "active",
       "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
+        "Standard"
       ],
       "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-cast-iron-square-grill-pan-10-5.jpg"
+        "url": "https://images.luxurykitchen.com/products/ruffoni-omegma-hammered-soup-pot.jpg"
       },
       "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "pre-seasoned cast iron 10.5-inch square grill pan",
-        "materialAlloy": "Seasoned Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
+        "brand": "ruffoni",
+        "modelName": "omegna hammered stainless steel soup pot",
+        "materialAlloy": "Tri-Ply Hammered Stainless Steel",
+        "cooktopCompatibility": "All Cooktops incl. Induction",
+        "ovenSafeMaxTempC": 260,
+        "capacityLiters": 5.5,
+        "dishwasherSafe": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Omegna Hammered Stainless Steel Soup Pot",
+      "status": "staged"
+    },
+    {
+      "id": "ruffoni-historia-copper-fondue-set",
+      "canonicalBrand": "Ruffoni",
+      "displayBrand": "Ruffoni",
+      "productLine": "Historia & Symphonia Handcrafted Copper",
+      "modelName": "Historia Copper Fondue Set with Burner & Forks",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://example.com/products/kitchenware/ruffoni-historia-copper-fondue-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.luxurykitchen.com/products/ruffoni-historia-copper-fondue-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ruffoni",
+        "modelName": "historia copper fondue set with burner & forks",
+        "materialAlloy": "Solid Hammered Copper & Cast Iron Stand",
+        "cooktopCompatibility": "Burner & Stovetop Safe",
+        "ovenSafeMaxTempC": 200,
         "capacityLiters": 1.8,
         "dishwasherSafe": false
       },
       "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Pre-Seasoned Cast Iron 10.5-Inch Square Grill Pan",
-      "status": "staged"
-    },
-    {
-      "id": "lodge-blacklock-96-skillet",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Blacklock '96 Triple Seasoned 10.25-Inch Skillet",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.lodgecastiron.com/product/blacklock-96-skillet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
-      ],
-      "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-blacklock-96-skillet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "blacklock '96 triple seasoned 10.25-inch skillet",
-        "materialAlloy": "Lightweight Triple-Seasoned Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 1.9,
-        "dishwasherSafe": false
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Blacklock '96 Triple Seasoned 10.25-Inch Skillet",
-      "status": "staged"
-    },
-    {
-      "id": "lodge-blacklock-39-dutch-oven",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Blacklock '39 Triple Seasoned 5.5-Quart Dutch Oven",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.lodgecastiron.com/product/blacklock-39-dutch-oven"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
-      ],
-      "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-blacklock-39-dutch-oven.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "blacklock '39 triple seasoned 5.5-quart dutch oven",
-        "materialAlloy": "Triple-Seasoned Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 5.2,
-        "dishwasherSafe": false
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Blacklock '39 Triple Seasoned 5.5-Quart Dutch Oven",
-      "status": "staged"
-    },
-    {
-      "id": "lodge-enameled-dutch-oven-6qt",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Enameled Cast Iron 6-Quart Dutch Oven",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.lodgecastiron.com/product/enameled-dutch-oven-6qt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
-      ],
-      "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-enameled-dutch-oven-6qt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "enameled cast iron 6-quart dutch oven",
-        "materialAlloy": "Enameled Cast Iron",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 260,
-        "capacityLiters": 5.7,
-        "dishwasherSafe": false
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Enameled Cast Iron 6-Quart Dutch Oven",
-      "status": "staged"
-    },
-    {
-      "id": "lodge-seasoned-carbon-steel-skillet-12",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Seasoned Carbon Steel 12-Inch Skillet",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.lodgecastiron.com/product/seasoned-carbon-steel-skillet-12"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
-      ],
-      "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-seasoned-carbon-steel-skillet-12.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "seasoned carbon steel 12-inch skillet",
-        "materialAlloy": "Heavy Gauge Seasoned Carbon Steel",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 2.5,
-        "dishwasherSafe": false
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Seasoned Carbon Steel 12-Inch Skillet",
-      "status": "staged"
-    },
-    {
-      "id": "lodge-cast-iron-combo-cooker",
-      "canonicalBrand": "Lodge",
-      "displayBrand": "Lodge",
-      "productLine": "Classic & Blacklock Cast Iron",
-      "modelName": "Pre-Seasoned Cast Iron Combo Cooker",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.lodgecastiron.com/product/cast-iron-combo-cooker"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pre-Seasoned Black",
-        "Red Enamel"
-      ],
-      "mediaSource": {
-        "url": "https://www.lodgecastiron.com/images/lodge-cast-iron-combo-cooker.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "lodge",
-        "modelName": "pre-seasoned cast iron combo cooker",
-        "materialAlloy": "Seasoned Cast Iron Skillet & Deep Pot",
-        "cooktopCompatibility": "All cooktops incl. Induction",
-        "ovenSafeMaxTempC": 315,
-        "capacityLiters": 3,
-        "dishwasherSafe": false
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Lodge American seasoned cast iron cookware Pre-Seasoned Cast Iron Combo Cooker",
+      "inclusionReason": "Ruffoni luxury culinary centerpiece Historia Copper Fondue Set with Burner & Forks",
       "status": "staged"
     }
   ],

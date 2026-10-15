@@ -63,12 +63,12 @@
         "weightKg": 1.24
       },
       "media": {
-        "url": "https://www.apple.com/v/macbook-air/s/images/overview/design/design_mba_13_midnight__c105x63a3p6a_large.jpg",
-        "source": "https://www.apple.com/in/macbook-air-13-and-15-m2/specs/",
-        "alt": "Apple MacBook Air 13 (M2) official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-apple-apple-macbook-air-13-m2.webp",
+        "source": "https://assets.getmobil.com/uploads/205d5f1a-8a76-4b48-80d8-879dfd54942c/getmobil-apple-macbook-air-13-2020-gumus-1-.webp",
+        "alt": "Apple MacBook Air 13 (M2) official luxury photography",
+        "attribution": "Product photography © Apple",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "MacBook Air 13 (M2)",
@@ -119,12 +119,12 @@
         "weightKg": 1.24
       },
       "media": {
-        "url": "https://www.apple.com/newsroom/images/2024/03/apple-unveils-the-new-13-and-15-inch-macbook-air-with-the-powerful-m3-chip/article/Apple-MacBook-Air-M3-midnight-front_inline.jpg.large.jpg",
-        "source": "https://www.apple.com/in/macbook-air/specs/",
-        "alt": "Apple MacBook Air 13 (M3) official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-apple-apple-macbook-air-13-m3.webp",
+        "source": "https://assets.getmobil.com/uploads/205d5f1a-8a76-4b48-80d8-879dfd54942c/getmobil-apple-macbook-air-13-2020-gumus-1-.webp",
+        "alt": "Apple MacBook Air 13 (M3) official luxury photography",
+        "attribution": "Product photography © Apple",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "MacBook Air 13 (M3)",
@@ -175,12 +175,12 @@
         "weightKg": 1.51
       },
       "media": {
-        "url": "https://www.apple.com/v/macbook-air/s/images/overview/design/design_mba_15_starlight__bb58265a7m0y_large.jpg",
-        "source": "https://www.apple.com/in/macbook-air/specs/",
-        "alt": "Apple MacBook Air 15 (M3) official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-apple-apple-macbook-air-15-m3.webp",
+        "source": "https://www.dict.com.na/wp-content/uploads/2024/02/DICT-Apple-MacBook-Air-15-Laptop-01.jpg",
+        "alt": "Apple MacBook Air 15 (M3) official luxury photography",
+        "attribution": "Product photography © Apple",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "MacBook Air 15 (M3)",
@@ -231,12 +231,12 @@
         "weightKg": 1.55
       },
       "media": {
-        "url": "https://www.apple.com/v/macbook-pro/ak/images/overview/welcome/hero_endframe__b9nnfg631tqq_large.jpg",
-        "source": "https://www.apple.com/in/macbook-pro/specs/",
-        "alt": "Apple MacBook Pro 14 (M3) official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-apple-apple-macbook-pro-14-m3.webp",
+        "source": "https://img.freepik.com/premium-photo/isolated-apple-macbook-pro-laptop-front-view-showcasing-its-retin-white-background-clean_655090-799153.jpg?w=996",
+        "alt": "Apple MacBook Pro 14 (M3) official luxury photography",
+        "attribution": "Product photography © Apple",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "MacBook Pro 14 (M3)",
@@ -287,12 +287,12 @@
         "weightKg": 1.61
       },
       "media": {
-        "url": "https://www.apple.com/v/macbook-pro/ak/images/overview/welcome/hero_endframe__b9nnfg631tqq_large.jpg",
-        "source": "https://www.apple.com/in/macbook-pro/specs/",
-        "alt": "Apple MacBook Pro 14 (M3 Pro/Max) official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-apple-apple-macbook-pro-14-m3-pro-max.webp",
+        "attribution": "Product photography © Apple",
+        "usage": "catalog_packshot",
+        "source": "https://img.freepik.com/premium-photo/isolated-apple-macbook-pro-laptop-front-view-showcasing-its-retin-white-background-clean_655090-799153.jpg?w=996",
+        "alt": "Apple Apple MacBook Pro 14 (M3 Pro/Max)",
+        "reviewedAt": "2026-10-14"
       },
       "leafType": "laptops",
       "modelName": "MacBook Pro 14 (M3 Pro/Max)",
@@ -343,12 +343,12 @@
         "weightKg": 2.14
       },
       "media": {
-        "url": "https://www.apple.com/v/macbook-pro/ak/images/overview/welcome/hero_endframe__b9nnfg631tqq_large.jpg",
-        "source": "https://www.apple.com/in/macbook-pro/specs/",
-        "alt": "Apple MacBook Pro 16 (M3 Pro/Max) official technical reference",
-        "attribution": "Product specifications and photography © Apple",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-apple-apple-macbook-pro-16-m3-pro-max.webp",
+        "attribution": "Product photography © Apple",
+        "usage": "catalog_packshot",
+        "source": "https://img.freepik.com/premium-photo/isolated-apple-macbook-pro-laptop-front-view-showcasing-its-retin-white-background-clean_655090-799153.jpg?w=996",
+        "alt": "Apple Apple MacBook Pro 16 (M3 Pro/Max)",
+        "reviewedAt": "2026-10-14"
       },
       "leafType": "laptops",
       "modelName": "MacBook Pro 16 (M3 Pro/Max)",
@@ -399,12 +399,12 @@
         "weightKg": 1.19
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-xps-13-9340.jpg",
-        "source": "https://www.dell.com/en-in/shop/laptops-2-in-1-pcs/xps-13-laptop/spd/xps-13-9340-laptop",
-        "alt": "Dell XPS 13 (9340) official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-xps-13-9340.webp",
+        "source": "https://i.pinimg.com/originals/68/6c/62/686c62e9940dec3da4e8d7d27d749297.png",
+        "alt": "Dell XPS 13 (9340) official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "XPS 13 (9340)",
@@ -455,12 +455,12 @@
         "weightKg": 1.68
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-xps-14-9440.jpg",
-        "source": "https://www.dell.com/en-in/shop/laptops-2-in-1-pcs/xps-14-laptop/spd/xps-14-9440-laptop",
-        "alt": "Dell XPS 14 (9440) official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-xps-14-9440.webp",
+        "source": "https://laptops.vn/wp-content/uploads/2024/06/platinum-dell-xps-14-2024_1710930899_640.jpg",
+        "alt": "Dell XPS 14 (9440) official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "XPS 14 (9440)",
@@ -511,12 +511,12 @@
         "weightKg": 2.13
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-xps-16-9640.jpg",
-        "source": "https://www.dell.com/en-in/shop/laptops-2-in-1-pcs/xps-16-laptop/spd/xps-16-9640-laptop",
-        "alt": "Dell XPS 16 (9640) official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-xps-16-9640.webp",
+        "source": "https://cdn.neowin.com/news/images/uploaded/2025/06/1750949203_1280x720-ghost-white-solid-color-background-fotor-20250626194556_story.webp",
+        "alt": "Dell XPS 16 (9640) official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "XPS 16 (9640)",
@@ -567,12 +567,12 @@
         "weightKg": 1.6
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-inspiron-14-plus-7440.jpg",
-        "source": "https://www.dell.com/en-in/shop/laptops-2-in-1-pcs/inspiron-14-plus-laptop/spd/inspiron-14-7440-laptop",
-        "alt": "Dell Inspiron 14 Plus (7440) official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-inspiron-14-plus-7440.webp",
+        "source": "https://laptoptcc.com/media/product/45559-dell-inspiron-14-plus-7441-20242-1721199858.jpeg",
+        "alt": "Dell Inspiron 14 Plus (7440) official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Inspiron 14 Plus (7440)",
@@ -623,12 +623,12 @@
         "weightKg": 2.2
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-inspiron-16-plus-7640.jpg",
-        "source": "https://www.dell.com/en-in/shop/laptops-2-in-1-pcs/inspiron-16-plus-laptop/spd/inspiron-16-7640-laptop",
-        "alt": "Dell Inspiron 16 Plus (7640) official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-inspiron-16-plus-7640.webp",
+        "source": "https://ecsmedia.pl/c/den-4107-dell-inspiron-16-plus-7630-i7-13700h-2tb-16gb-16-2560x1600-win11-pro-rtx-3050-6gb-laptop-dell-7630-16-plus-wqxga-i7-13700h-16gb-2tb-rtx-3050-6gb-120hz-win-11pro-b-iext163688716.jpg",
+        "alt": "Dell Inspiron 16 Plus (7640) official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Inspiron 16 Plus (7640)",
@@ -679,12 +679,12 @@
         "weightKg": 1.33
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-latitude-7450.jpg",
-        "source": "https://www.dell.com/en-in/shop/dell-laptops/latitude-7450-laptop/spd/latitude-14-7450-2-in-1-laptop",
-        "alt": "Dell Latitude 7450 official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-latitude-7450.webp",
+        "source": "https://laptopmedia.com/wp-content/uploads/2024/10/7-15.jpg",
+        "alt": "Dell Latitude 7450 official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Latitude 7450",
@@ -735,12 +735,12 @@
         "weightKg": 1.53
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-latitude-9450-2in1.jpg",
-        "source": "https://www.dell.com/en-in/shop/dell-laptops/latitude-9450-2-in-1-laptop/spd/latitude-14-9450-2-in-1-laptop",
-        "alt": "Dell Latitude 9450 2-in-1 official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-latitude-9450-2in1.webp",
+        "source": "https://static1.xdaimages.com/wordpress/wp-content/uploads/2024/02/dell-latitude-9450-press-01.png",
+        "alt": "Dell Latitude 9450 2-in-1 official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Latitude 9450 2-in-1",
@@ -791,12 +791,12 @@
         "weightKg": 1.79
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-precision-3591.jpg",
-        "source": "https://www.dell.com/en-in/shop/workstations/precision-3591-workstation/spd/precision-15-3591-laptop",
-        "alt": "Dell Precision 3591 official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-precision-3591.webp",
+        "source": "https://image.ceneostatic.pl/data/products/165836307/i-dell-precision-3591-15-6-ultra7-16gb-512gb-win11-n101p3591emea-vp.jpg",
+        "alt": "Dell Precision 3591 official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Precision 3591",
@@ -847,12 +847,12 @@
         "weightKg": 2.17
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-precision-5690.jpg",
-        "source": "https://www.dell.com/en-in/shop/workstations/precision-5690-workstation/spd/precision-16-5690-laptop",
-        "alt": "Dell Precision 5690 official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-precision-5690.webp",
+        "source": "https://kdtec.cl/wp-content/uploads/2025/04/Notebook-Dell-Precision-5690-11-scaled.jpg",
+        "alt": "Dell Precision 5690 official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Precision 5690",
@@ -903,12 +903,12 @@
         "weightKg": 2.61
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-alienware-m16-r2.jpg",
-        "source": "https://www.dell.com/en-in/shop/gaming-laptops/alienware-m16-r2-gaming-laptop/spd/alienware-m16-r2-laptop",
-        "alt": "Alienware Alienware m16 R2 official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-alienware-m16-r2.webp",
+        "source": "https://cdn.mos.cms.futurecdn.net/ht4C4qRVGg5NnwQm3WLsrK.jpg",
+        "alt": "Alienware Alienware m16 R2 official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Alienware m16 R2",
@@ -959,12 +959,12 @@
         "weightKg": 4.23
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-alienware-m18-r2.jpg",
-        "source": "https://www.dell.com/en-in/shop/gaming-laptops/alienware-m18-r2-gaming-laptop/spd/alienware-m18-r2-laptop",
-        "alt": "Alienware Alienware m18 R2 official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-alienware-m18-r2.webp",
+        "source": "https://m.media-amazon.com/images/I/71cXdhZg-BL._AC_.jpg",
+        "alt": "Alienware Alienware m18 R2 official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Alienware m18 R2",
@@ -1015,12 +1015,12 @@
         "weightKg": 2.72
       },
       "media": {
-        "url": "https://www.dell.com/images/products/dell-alienware-x16-r2.jpg",
-        "source": "https://www.dell.com/en-in/shop/gaming-laptops/alienware-x16-r2-gaming-laptop/spd/alienware-x16-r2-laptop",
-        "alt": "Alienware Alienware x16 R2 official technical reference",
-        "attribution": "Product specifications and photography © Dell",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-dell-dell-alienware-x16-r2.webp",
+        "source": "https://acko-cms.ackoassets.com/Dell_Alienware_x16_R2_2_5163b77158.jpg",
+        "alt": "Alienware Alienware x16 R2 official luxury photography",
+        "attribution": "Product photography © Dell",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Alienware x16 R2",
@@ -1071,12 +1071,12 @@
         "weightKg": 1.44
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-spectre-x360-14-2024.jpg",
-        "source": "https://www.hp.com/in-en/shop/hp-spectre-x360-2-in-1-laptop-14-eu0004tu-9y3p2pa.html",
-        "alt": "HP Spectre x360 14 (2024) official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-spectre-x360-14-2024.webp",
+        "source": "https://www.hp.com/content/dam/sites/worldwide/personal-computers/consumer/laptops-and-2-n-1s/spectre/version-2023/HP Spectre x360 14__Mobile@2x.png",
+        "alt": "HP Spectre x360 14 (2024) official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Spectre x360 14 (2024)",
@@ -1127,12 +1127,12 @@
         "weightKg": 1.95
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-spectre-x360-16-2024.jpg",
-        "source": "https://www.hp.com/in-en/shop/laptops-tablets/spectre-laptops.html",
-        "alt": "HP Spectre x360 16 (2024) official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-spectre-x360-16-2024.webp",
+        "source": "https://api.priceinkenya.com/media/132551/conversions/HP-Spectre-x360-16-F0010CA-b-original.webp",
+        "alt": "HP Spectre x360 16 (2024) official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Spectre x360 16 (2024)",
@@ -1183,12 +1183,12 @@
         "weightKg": 1.39
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-envy-x360-14-2024.jpg",
-        "source": "https://www.hp.com/in-en/shop/hp-envy-x360-2-in-1-laptop-14-fc0002tu-9y3p1pa.html",
-        "alt": "HP Envy x360 14 (2024) official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-envy-x360-14-2024.webp",
+        "source": "https://api.priceinkenya.com/media/132303/conversions/HP-Envy-x360-14-ES0013DX-b-original.webp",
+        "alt": "HP Envy x360 14 (2024) official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Envy x360 14 (2024)",
@@ -1239,12 +1239,12 @@
         "weightKg": 1.88
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-envy-x360-16-2024.jpg",
-        "source": "https://www.hp.com/in-en/shop/laptops-tablets/envy-laptops.html",
-        "alt": "HP Envy x360 16 (2024) official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-envy-x360-16-2024.webp",
+        "source": "https://www.hp.com/pl-pl/shop/media/catalog/product/h/p/hp_envy_14_x360_laptop_pc_glacier_silver_grand_tent_4__cus.png?store=pl-pl&amp;image-type=image&amp;auto=avif&amp;quality=100&amp;format=jpg&amp;bg-color=ffffff&amp;type=image-product&amp;width=960&amp;fit=bounds",
+        "alt": "HP Envy x360 16 (2024) official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Envy x360 16 (2024)",
@@ -1295,12 +1295,12 @@
         "weightKg": 1.4
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-pavilion-plus-14.jpg",
-        "source": "https://www.hp.com/in-en/shop/laptops-tablets/pavilion-laptops.html",
-        "alt": "HP Pavilion Plus 14 official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-pavilion-plus-14.webp",
+        "source": "https://jp.ext.hp.com/content/dam/jp-ext-hp-com/jp/ja/ec/notebooks/personal/pavilion_plus_14_ew/images/move_top_full.jpg",
+        "alt": "HP Pavilion Plus 14 official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Pavilion Plus 14",
@@ -1351,12 +1351,12 @@
         "weightKg": 1.89
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-pavilion-plus-16.jpg",
-        "source": "https://www.hp.com/in-en/shop/laptops-tablets/pavilion-laptops.html",
-        "alt": "HP Pavilion Plus 16 official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-pavilion-plus-16.webp",
+        "source": "https://www.pcguia.pt/wp-content/uploads/2024/04/HP-Pavilion-Plus-16.png",
+        "alt": "HP Pavilion Plus 16 official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Pavilion Plus 16",
@@ -1407,12 +1407,12 @@
         "weightKg": 1.63
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-omen-transcend-14.jpg",
-        "source": "https://www.hp.com/in-en/shop/hp-omen-transcend-gaming-laptop-14-fb0007tx-9y3p3pa.html",
-        "alt": "HP OMEN Transcend 14 official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-omen-transcend-14.webp",
+        "source": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/Group-71@2x.jpg",
+        "alt": "HP OMEN Transcend 14 official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "OMEN Transcend 14",
@@ -1463,12 +1463,12 @@
         "weightKg": 2.17
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-omen-transcend-16.jpg",
-        "source": "https://www.hp.com/in-en/shop/gaming-laptops/omen-laptops.html",
-        "alt": "HP OMEN Transcend 16 official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-omen-transcend-16.webp",
+        "source": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend-intel/hero-1-v2-2x-1.png",
+        "alt": "HP OMEN Transcend 16 official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "OMEN Transcend 16",
@@ -1519,12 +1519,12 @@
         "weightKg": 2.37
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-omen-16-2024.jpg",
-        "source": "https://www.hp.com/in-en/shop/gaming-laptops/omen-laptops.html",
-        "alt": "HP OMEN 16 (2024) official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-omen-16-2024.webp",
+        "source": "https://my-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/h/p/hp-omen-16-dojo-front_1_.png",
+        "alt": "HP OMEN 16 (2024) official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "OMEN 16 (2024)",
@@ -1575,12 +1575,12 @@
         "weightKg": 2.31
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-victus-16-2024.jpg",
-        "source": "https://www.hp.com/in-en/shop/gaming-laptops/victus-laptops.html",
-        "alt": "HP Victus 16 (2024) official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-victus-16-2024.webp",
+        "source": "https://s13emagst.akamaized.net/products/47933/47932701/images/res_62b22e9e058440e411b146b32494a372.jpg",
+        "alt": "HP Victus 16 (2024) official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Victus 16 (2024)",
@@ -1631,12 +1631,12 @@
         "weightKg": 1.41
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-elitebook-840-g11.jpg",
-        "source": "https://www.hp.com/in-en/shop/laptops-tablets/business-laptops.html",
-        "alt": "HP EliteBook 840 G11 official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-elitebook-840-g11.webp",
+        "source": "https://cdn.cs.1worldsync.com/b5/85/b58579cc-1244-44a1-aef6-adb49e717c5b.jpg",
+        "alt": "HP EliteBook 840 G11 official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "EliteBook 840 G11",
@@ -1687,12 +1687,12 @@
         "weightKg": 1.18
       },
       "media": {
-        "url": "https://www.hp.com/images/products/hp-elitebook-1040-g11.jpg",
-        "source": "https://www.hp.com/in-en/shop/laptops-tablets/business-laptops.html",
-        "alt": "HP EliteBook 1040 G11 official technical reference",
-        "attribution": "Product specifications and photography © HP",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-hp-hp-elitebook-1040-g11.webp",
+        "source": "https://i5.walmartimages.com/seo/HP-EliteBook-1040-G11-14-Touchscreen-Notebook-WUXGA-Intel-Core-Ultra-7-165H-32-GB-512-SSD-English-Keyboard-Chip-1920-x-1200-Windows-11-Pro-Arc-Graphi_1ae4c9d5-e2f1-4982-b638-57c2dbdef82b.1c61f9b28c67ecf54a90c7a15961632a.jpeg",
+        "alt": "HP EliteBook 1040 G11 official luxury photography",
+        "attribution": "Product photography © HP",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "EliteBook 1040 G11",
@@ -1743,12 +1743,12 @@
         "weightKg": 1.2
       },
       "media": {
-        "url": "https://www.asus.com/images/products/asus-zenbook-14-oled-ux3405.jpg",
-        "source": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-14-oled-ux3405/",
-        "alt": "ASUS Zenbook 14 OLED (UX3405) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-zenbook-14-oled-ux3405.webp",
+        "source": "https://cdn.mediapark.uz/imgs/efa793d2-3e59-4791-854f-368f8d7a9bb9_Artboard-11300.webp",
+        "alt": "ASUS Zenbook 14 OLED (UX3405) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Zenbook 14 OLED (UX3405)",
@@ -1799,12 +1799,12 @@
         "weightKg": 1.65
       },
       "media": {
-        "url": "https://www.asus.com/images/products/asus-zenbook-duo-ux8406.jpg",
-        "source": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-duo-2024-ux8406/",
-        "alt": "ASUS Zenbook DUO (UX8406) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-zenbook-duo-ux8406.webp",
+        "source": "https://m.media-amazon.com/images/I/71xZUkl5dyL.jpg",
+        "alt": "ASUS Zenbook DUO (UX8406) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Zenbook DUO (UX8406)",
@@ -1855,12 +1855,12 @@
         "weightKg": 1.5
       },
       "media": {
-        "url": "https://www.asus.com/images/products/asus-zenbook-s-16-um5606.jpg",
-        "source": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-s-16-um5606/",
-        "alt": "ASUS Zenbook S 16 (UM5606) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-zenbook-s-16-um5606.webp",
+        "source": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/a0546608-6081-4dda-b865-f41d70e106f4.jpg",
+        "alt": "ASUS Zenbook S 16 (UM5606) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Zenbook S 16 (UM5606)",
@@ -1911,12 +1911,12 @@
         "weightKg": 1.3
       },
       "media": {
-        "url": "https://www.asus.com/images/products/asus-vivobook-s-14-oled-m5406.jpg",
-        "source": "https://www.asus.com/in/laptops/for-home/vivobook/asus-vivobook-s-14-oled-m5406/",
-        "alt": "ASUS Vivobook S 14 OLED (M5406) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-vivobook-s-14-oled-m5406.webp",
+        "source": "https://laptopmedia.com/wp-content/uploads/2024/01/download-3-2-e1704969850717.jpg",
+        "alt": "ASUS Vivobook S 14 OLED (M5406) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Vivobook S 14 OLED (M5406)",
@@ -1967,12 +1967,12 @@
         "weightKg": 1.42
       },
       "media": {
-        "url": "https://www.asus.com/images/products/asus-vivobook-s-15-oled-s5507.jpg",
-        "source": "https://www.asus.com/in/laptops/for-home/vivobook/asus-vivobook-s-15-s5507/",
-        "alt": "ASUS Vivobook S 15 OLED (S5507) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-vivobook-s-15-oled-s5507.webp",
+        "source": "https://noteboochek.com.ua/image/cache/catalog/products/32091/asus-vivobook-s-15-oled-k5504vn-solar-blue-k5504vn-l1023ws-3-600x600.jpeg",
+        "alt": "ASUS Vivobook S 15 OLED (S5507) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Vivobook S 15 OLED (S5507)",
@@ -2023,12 +2023,12 @@
         "weightKg": 1.8
       },
       "media": {
-        "url": "https://www.asus.com/images/products/asus-vivobook-pro-15-oled-n6506.jpg",
-        "source": "https://www.asus.com/in/laptops/for-creators/vivobook/asus-vivobook-pro-15-oled-n6506/",
-        "alt": "ASUS Vivobook Pro 15 OLED (N6506) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-vivobook-pro-15-oled-n6506.webp",
+        "source": "https://compujordan.com/image/cache/catalog/products/pc and laptops/laptops/ASUS/N6506MV-MA022/N6506MV-MA022 (2)-1200x1200.jpg",
+        "alt": "ASUS Vivobook Pro 15 OLED (N6506) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Vivobook Pro 15 OLED (N6506)",
@@ -2079,12 +2079,12 @@
         "weightKg": 1.5
       },
       "media": {
-        "url": "https://rog.asus.com/images/products/asus-rog-zephyrus-g14-ga403.jpg",
-        "source": "https://rog.asus.com/in/laptops/rog-zephyrus/rog-zephyrus-g14-2024/",
-        "alt": "ROG ROG Zephyrus G14 (GA403) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-rog-zephyrus-g14-ga403.webp",
+        "source": "https://microless.com/cdn/products/c7581effbc1728fc2e529294f6cd892d-hi.jpg",
+        "alt": "ROG ROG Zephyrus G14 (GA403) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ROG Zephyrus G14 (GA403)",
@@ -2135,12 +2135,12 @@
         "weightKg": 1.85
       },
       "media": {
-        "url": "https://rog.asus.com/images/products/asus-rog-zephyrus-g16-gu605.jpg",
-        "source": "https://rog.asus.com/in/laptops/rog-zephyrus/rog-zephyrus-g16-2024/",
-        "alt": "ROG ROG Zephyrus G16 (GU605) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-rog-zephyrus-g16-gu605.webp",
+        "source": "https://cdn.media.amplience.net/i/xcite/654541-02?img404=default&amp;w=2048&amp;qlt=75&amp;fmt=auto",
+        "alt": "ROG ROG Zephyrus G16 (GU605) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ROG Zephyrus G16 (GU605)",
@@ -2191,12 +2191,12 @@
         "weightKg": 2.65
       },
       "media": {
-        "url": "https://rog.asus.com/images/products/asus-rog-strix-scar-16-g634.jpg",
-        "source": "https://rog.asus.com/in/laptops/rog-strix/rog-strix-scar-16-2024/",
-        "alt": "ROG ROG Strix SCAR 16 (G634) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-rog-strix-scar-16-g634.webp",
+        "source": "https://m.media-amazon.com/images/I/71JBLqI6HbL._AC_.jpg",
+        "alt": "ROG ROG Strix SCAR 16 (G634) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ROG Strix SCAR 16 (G634)",
@@ -2247,12 +2247,12 @@
         "weightKg": 3.1
       },
       "media": {
-        "url": "https://rog.asus.com/images/products/asus-rog-strix-scar-18-g834.jpg",
-        "source": "https://rog.asus.com/in/laptops/rog-strix/rog-strix-scar-18-2024/",
-        "alt": "ROG ROG Strix SCAR 18 (G834) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-rog-strix-scar-18-g834.webp",
+        "source": "https://static.tweaktown.com/news/1/0/102448_405_asus-rog-strix-scar-16-18-gaming-laptops-core-ultra-9-275hx-geforce-rtx-5090-laptop-gpu.png",
+        "alt": "ROG ROG Strix SCAR 18 (G834) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ROG Strix SCAR 18 (G834)",
@@ -2303,12 +2303,12 @@
         "weightKg": 1.18
       },
       "media": {
-        "url": "https://rog.asus.com/images/products/asus-rog-flow-z13-gz301.jpg",
-        "source": "https://rog.asus.com/in/laptops/rog-flow/rog-flow-z13-2023/",
-        "alt": "ROG ROG Flow Z13 (GZ301) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-rog-flow-z13-gz301.webp",
+        "source": "https://s.yimg.com/lo/mysterio/api/d6af178d9613c5de0a705520b94d1888c1d59154819ae5ad30e1e7db65993a44/lightyear_networkapi/resizefill_w976;quality_80;format_webp/https://media.zenfs.com/en/laptopmag_536/87711aa8c678689f581521af2cb9b2d6",
+        "alt": "ROG ROG Flow Z13 (GZ301) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ROG Flow Z13 (GZ301)",
@@ -2359,12 +2359,12 @@
         "weightKg": 2.2
       },
       "media": {
-        "url": "https://www.asus.com/images/products/asus-tuf-gaming-a15-fa507.jpg",
-        "source": "https://www.asus.com/in/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15-2024/",
-        "alt": "ASUS TUF Gaming A15 (FA507) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-tuf-gaming-a15-fa507.webp",
+        "source": "https://dlcdnwebimgs.asus.com/gain/a25d4381-0f1a-48bd-86d6-3bd59f017f19/",
+        "alt": "ASUS TUF Gaming A15 (FA507) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "TUF Gaming A15 (FA507)",
@@ -2415,12 +2415,12 @@
         "weightKg": 0.99
       },
       "media": {
-        "url": "https://www.asus.com/images/products/asus-expertbook-b9-oled-b9403.jpg",
-        "source": "https://www.asus.com/in/laptops/for-work/expertbook/expertbook-b9-oled-b9403-13th-gen-intel/",
-        "alt": "ASUS ExpertBook B9 OLED (B9403) official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-asus-asus-expertbook-b9-oled-b9403.webp",
+        "source": "https://www.techpowerup.com/img/GvdTKmbntpE8pVq7.jpg",
+        "alt": "ASUS ExpertBook B9 OLED (B9403) official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ExpertBook B9 OLED (B9403)",
@@ -2471,12 +2471,12 @@
         "weightKg": 1.09
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-x1-carbon-gen-12.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-12-(14-inch-intel)/len101t0083",
-        "alt": "Lenovo ThinkPad X1 Carbon Gen 12 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-thinkpad-x1-carbon-gen-12.webp",
+        "source": "https://aztechshop.az/image/cache/catalog/Lenovo Think/LENOVO ThinkPad X1 Carbon Gen 12 Black paint Trackpad (6)sayt -1000x832.png",
+        "alt": "Lenovo ThinkPad X1 Carbon Gen 12 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ThinkPad X1 Carbon Gen 12",
@@ -2527,12 +2527,12 @@
         "weightKg": 1.32
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-x1-2in1-gen-9.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-2-in-1-gen-9-(14-inch-intel)/len101t0084",
-        "alt": "Lenovo ThinkPad X1 2-in-1 Gen 9 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-thinkpad-x1-2in1-gen-9.webp",
+        "source": "https://media.ldlc.com/r1600/ld/products/00/06/14/87/LD0006148709.jpg",
+        "alt": "Lenovo ThinkPad X1 2-in-1 Gen 9 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ThinkPad X1 2-in-1 Gen 9",
@@ -2583,12 +2583,12 @@
         "weightKg": 1.24
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-t14s-gen-5.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadt/thinkpad-t14s-gen-5-(14-inch-intel)/len101t0088",
-        "alt": "Lenovo ThinkPad T14s Gen 5 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-thinkpad-t14s-gen-5.webp",
+        "source": "https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_T14s_Gen_5/ThinkPad_T14s_Gen_5_CT2_01.png",
+        "alt": "Lenovo ThinkPad T14s Gen 5 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ThinkPad T14s Gen 5",
@@ -2639,12 +2639,12 @@
         "weightKg": 1.63
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-t16-gen-3.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadt/thinkpad-t16-gen-3-(16-inch-intel)/len101t0092",
-        "alt": "Lenovo ThinkPad T16 Gen 3 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-thinkpad-t16-gen-3.webp",
+        "source": "https://techblog-lenovo.com/wp-content/uploads/2024/03/ThinkPad-T16-Gen-3.png",
+        "alt": "Lenovo ThinkPad T16 Gen 3 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ThinkPad T16 Gen 3",
@@ -2695,12 +2695,12 @@
         "weightKg": 1.82
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-p1-gen-7.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadp/thinkpad-p1-gen-7-(16-inch-intel)/len101t0097",
-        "alt": "Lenovo ThinkPad P1 Gen 7 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-thinkpad-p1-gen-7.webp",
+        "source": "https://m.media-amazon.com/images/I/71-p2MFqUgL._AC_SL1500_.jpg",
+        "alt": "Lenovo ThinkPad P1 Gen 7 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ThinkPad P1 Gen 7",
@@ -2751,12 +2751,12 @@
         "weightKg": 2.95
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-thinkpad-p16-gen-2.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadp/thinkpad-p16-gen-2-(16-inch-intel)/len101t0069",
-        "alt": "Lenovo ThinkPad P16 Gen 2 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-thinkpad-p16-gen-2.webp",
+        "source": "https://www.laphard.pl/userdata/public/gfx/78006/Lenovo_ThinkPad_P16_G2_03.jpg",
+        "alt": "Lenovo ThinkPad P16 Gen 2 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "ThinkPad P16 Gen 2",
@@ -2807,12 +2807,12 @@
         "weightKg": 1.35
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-yoga-9i-2in1-gen-9.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/yoga/yoga-2-in-1-series/yoga-9i-2-in-1-gen-9-(14-inch-intel)/len101y0043",
-        "alt": "Lenovo Yoga 9i 2-in-1 Gen 9 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-yoga-9i-2in1-gen-9.webp",
+        "source": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc4/header-09_Yoga_9i_2-in-1_14_9_Luna_Grey_Laptop_mode_3Q_front_facing_left_elevated.jpg",
+        "alt": "Lenovo Yoga 9i 2-in-1 Gen 9 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Yoga 9i 2-in-1 Gen 9",
@@ -2863,12 +2863,12 @@
         "weightKg": 2.23
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-yoga-pro-9i-16-gen-9.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/yoga/yoga-pro-series/yoga-pro-9i-gen-9-(16-inch-intel)/len101y0039",
-        "alt": "Lenovo Yoga Pro 9i 16 Gen 9 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-yoga-pro-9i-16-gen-9.webp",
+        "source": "https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc4/01_Yoga_Pro_9i_16_9_Luna_Grey_3200_mini-led_glass_NVIDIA.jpg",
+        "alt": "Lenovo Yoga Pro 9i 16 Gen 9 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Yoga Pro 9i 16 Gen 9",
@@ -2919,12 +2919,12 @@
         "weightKg": 1.28
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-yoga-slim-7x-gen-9.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/yoga/yoga-slim-series/yoga-slim-7x-gen-9-(14-inch-snapdragon)/len101y0049",
-        "alt": "Lenovo Yoga Slim 7x Gen 9 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-yoga-slim-7x-gen-9.webp",
+        "source": "https://www.notebookcheck.net/fileadmin/_processed_/0/c/csm_yoga-slim-7x-header_d6db3d2b84.png",
+        "alt": "Lenovo Yoga Slim 7x Gen 9 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Yoga Slim 7x Gen 9",
@@ -2975,12 +2975,12 @@
         "weightKg": 1.46
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-ideapad-slim-5-14.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/ideapad/ideapad-s-series/ideapad-slim-5-gen-9-(14-inch-intel)/len101i0096",
-        "alt": "Lenovo IdeaPad Slim 5 14 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-ideapad-slim-5-14.webp",
+        "source": "https://www.notebookcheck.net/fileadmin/_processed_/d/6/csm_IdeaPad_Slim_5_14_Zoll_Cloud_Grey_02_d0ccae643d.png",
+        "alt": "Lenovo IdeaPad Slim 5 14 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "IdeaPad Slim 5 14",
@@ -3031,12 +3031,12 @@
         "weightKg": 1.94
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-ideapad-pro-5-16.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/ideapad/ideapad-500-series/ideapad-pro-5-gen-9-(16-inch-intel)/len101i0095",
-        "alt": "Lenovo IdeaPad Pro 5 16 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-ideapad-pro-5-16.webp",
+        "source": "https://static1.xdaimages.com/wordpress/wp-content/uploads/2023/07/lenovo-ideapad-pro-5-render-with-an-open-lid-to-show-the-screen-on-a-white-background.jpg",
+        "alt": "Lenovo IdeaPad Pro 5 16 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "IdeaPad Pro 5 16",
@@ -3087,12 +3087,12 @@
         "weightKg": 2.24
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-legion-7i-gen-9.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/legion-laptops/legion-7-series/legion-7i-gen-9-(16-inch-intel)/len101g0037",
-        "alt": "Legion Legion 7i Gen 9 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-legion-7i-gen-9.webp",
+        "source": "https://p2-ofp.static.pub/fes/cms/2024/09/13/wc4h682pudzpv3dnk9agks0ne5dim9064458.png",
+        "alt": "Legion Legion 7i Gen 9 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Legion 7i Gen 9",
@@ -3143,12 +3143,12 @@
         "weightKg": 2.56
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-legion-9i-gen-9.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/legion-laptops/legion-9-series/legion-9i-gen-9-(16-inch-intel)/len101g0038",
-        "alt": "Legion Legion 9i Gen 9 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-legion-9i-gen-9.webp",
+        "source": "https://m.media-amazon.com/images/I/81x7P1JQHAL.jpg",
+        "alt": "Legion Legion 9i Gen 9 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Legion 9i Gen 9",
@@ -3199,12 +3199,12 @@
         "weightKg": 2.5
       },
       "media": {
-        "url": "https://www.lenovo.com/images/products/lenovo-legion-pro-5i-gen-9.jpg",
-        "source": "https://www.lenovo.com/in/en/p/laptops/legion-laptops/legion-5-series/legion-pro-5i-gen-9-(16-inch-intel)/len101g0033",
-        "alt": "Legion Legion Pro 5i Gen 9 official technical reference",
-        "attribution": "Product specifications and photography © Lenovo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lenovo-lenovo-legion-pro-5i-gen-9.webp",
+        "source": "https://p2-ofp.static.pub/fes/cms/2024/09/12/zha09aecdvjsr1vn0c82igmns4guy7499292.png",
+        "alt": "Legion Legion Pro 5i Gen 9 official luxury photography",
+        "attribution": "Product photography © Lenovo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Legion Pro 5i Gen 9",
@@ -3255,12 +3255,12 @@
         "weightKg": 1.32
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-swift-go-14-sfg14.jpg",
-        "source": "https://www.acer.com/in-en/laptops/swift/swift-go-14",
-        "alt": "Acer Swift Go 14 (SFG14) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-swift-go-14-sfg14.webp",
+        "source": "https://m.media-amazon.com/images/I/81QboUhMoNL._AC_.jpg",
+        "alt": "Acer Swift Go 14 (SFG14) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Swift Go 14 (SFG14)",
@@ -3311,12 +3311,12 @@
         "weightKg": 1.6
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-swift-go-16-sfg16.jpg",
-        "source": "https://www.acer.com/in-en/laptops/swift/swift-go-16",
-        "alt": "Acer Swift Go 16 (SFG16) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-swift-go-16-sfg16.webp",
+        "source": "https://www.techpowerup.com/img/5Qk6MCRFgm4JoTjf.jpg",
+        "alt": "Acer Swift Go 16 (SFG16) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Swift Go 16 (SFG16)",
@@ -3367,12 +3367,12 @@
         "weightKg": 1.23
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-swift-edge-16-sfe16.jpg",
-        "source": "https://www.acer.com/in-en/laptops/swift/swift-edge-16",
-        "alt": "Acer Swift Edge 16 (SFE16) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-swift-edge-16-sfe16.webp",
+        "source": "https://media-cdn.bnn.in.th/249220/Acer-Notebook-Swift-Edge-SFA16-01.jpg",
+        "alt": "Acer Swift Edge 16 (SFE16) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Swift Edge 16 (SFE16)",
@@ -3423,12 +3423,12 @@
         "weightKg": 1.55
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-swift-x-14-sfx14.jpg",
-        "source": "https://www.acer.com/in-en/laptops/swift/swift-x-14",
-        "alt": "Acer Swift X 14 (SFX14) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-swift-x-14-sfx14.webp",
+        "source": "https://m.media-amazon.com/images/I/71d5rAq4YaL._AC_SL1500_.jpg",
+        "alt": "Acer Swift X 14 (SFX14) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Swift X 14 (SFX14)",
@@ -3479,12 +3479,12 @@
         "weightKg": 1.78
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-aspire-5-15-a515.jpg",
-        "source": "https://www.acer.com/in-en/laptops/aspire/aspire-5-intel",
-        "alt": "Acer Aspire 5 15 (A515) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-aspire-5-15-a515.webp",
+        "source": "https://notebookspec.com/storage/notebook/14427-2.png",
+        "alt": "Acer Aspire 5 15 (A515) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Aspire 5 15 (A515)",
@@ -3535,12 +3535,12 @@
         "weightKg": 1.8
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-aspire-vero-16-av16.jpg",
-        "source": "https://www.acer.com/in-en/laptops/aspire/aspire-vero",
-        "alt": "Acer Aspire Vero 16 (AV16) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-aspire-vero-16-av16.webp",
+        "source": "https://www.ictplus.gr/wp-content/uploads/2024/01/ACER_08012024.jpg",
+        "alt": "Acer Aspire Vero 16 (AV16) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Aspire Vero 16 (AV16)",
@@ -3591,12 +3591,12 @@
         "weightKg": 2.7
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-predator-helios-16-ph16.jpg",
-        "source": "https://www.acer.com/in-en/predator/laptops/helios/helios-16",
-        "alt": "Predator Predator Helios 16 (PH16) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-predator-helios-16-ph16.webp",
+        "source": "https://laptopmedia.com/wp-content/uploads/2024/04/predator-helios-neo-16-phn16-72-4zone-backlit-on-wallpaper-logo-black-03-custom-scaled-e1714424558651.jpg",
+        "alt": "Predator Predator Helios 16 (PH16) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Predator Helios 16 (PH16)",
@@ -3647,12 +3647,12 @@
         "weightKg": 3.25
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-predator-helios-18-ph18.jpg",
-        "source": "https://www.acer.com/in-en/predator/laptops/helios/helios-18",
-        "alt": "Predator Predator Helios 18 (PH18) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-predator-helios-18-ph18.webp",
+        "source": "https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/g/e/6a425465d365db98f884de48006f6740/geyming-laptop-acer---predator-helios-18-ai--18----wqxga--ultra-9--250hz--rtx-5080-30.jpg",
+        "alt": "Predator Predator Helios 18 (PH18) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Predator Helios 18 (PH18)",
@@ -3703,12 +3703,12 @@
         "weightKg": 2.05
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-predator-triton-neo-16-ptn16.jpg",
-        "source": "https://www.acer.com/in-en/predator/laptops/triton/triton-neo-16",
-        "alt": "Predator Predator Triton Neo 16 (PTN16) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-predator-triton-neo-16-ptn16.webp",
+        "source": "https://www.gadgetvoize.com/wp-content/uploads/2024/03/PREDATOR-TRITON-NEO-16-PTN16-51-04-1024x819.webp",
+        "alt": "Predator Predator Triton Neo 16 (PTN16) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Predator Triton Neo 16 (PTN16)",
@@ -3759,12 +3759,12 @@
         "weightKg": 2.5
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-nitro-16-an16.jpg",
-        "source": "https://www.acer.com/in-en/laptops/nitro/nitro-16-amd",
-        "alt": "Acer Nitro 16 (AN16) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-nitro-16-an16.webp",
+        "source": "https://m.media-amazon.com/images/I/81ShI4duOGL._SL1500_.jpg",
+        "alt": "Acer Nitro 16 (AN16) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Nitro 16 (AN16)",
@@ -3815,12 +3815,12 @@
         "weightKg": 1.1
       },
       "media": {
-        "url": "https://www.acer.com/images/products/acer-travelmate-p6-14-tmp614.jpg",
-        "source": "https://www.acer.com/in-en/laptops/travelmate/travelmate-p6-14",
-        "alt": "Acer TravelMate P6 14 (TMP614) official technical reference",
-        "attribution": "Product specifications and photography © Acer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-acer-acer-travelmate-p6-14-tmp614.webp",
+        "source": "https://cdn.uc.assets.prezly.com/7fe97811-a028-4d46-a82b-f99c129b83b0/TravelMate-P6-14-AI_TMP614-54(T)-02.jpg",
+        "alt": "Acer TravelMate P6 14 (TMP614) official luxury photography",
+        "attribution": "Product photography © Acer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "TravelMate P6 14 (TMP614)",
@@ -3871,12 +3871,12 @@
         "weightKg": 3.6
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-titan-18-hx-a14v.jpg",
-        "source": "https://www.msi.com/Laptop/Titan-18-HX-A14VX",
-        "alt": "MSI Titan 18 HX (A14V) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-titan-18-hx-a14v.webp",
+        "source": "https://cdn.sforum.vn/sforum/wp-content/uploads/2023/12/MSI-TITAN-18-HX-14900HX-RTX-4090-2.jpeg",
+        "alt": "MSI Titan 18 HX (A14V) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Titan 18 HX (A14V)",
@@ -3927,12 +3927,12 @@
         "weightKg": 3.1
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-raider-ge78-hx-14v.jpg",
-        "source": "https://www.msi.com/Laptop/Raider-GE78-HX-14VX",
-        "alt": "MSI Raider GE78 HX (14V) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-raider-ge78-hx-14v.webp",
+        "source": "https://storage-asset.msi.com/global/picture/image/feature/nb/GE/Raider-GE78-HX-13V/kv-pd.png",
+        "alt": "MSI Raider GE78 HX (14V) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Raider GE78 HX (14V)",
@@ -3983,12 +3983,12 @@
         "weightKg": 1.99
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-stealth-16-ai-studio-a1v.jpg",
-        "source": "https://www.msi.com/Laptop/Stealth-16-AI-Studio-A1VX",
-        "alt": "MSI Stealth 16 AI Studio (A1V) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-stealth-16-ai-studio-a1v.webp",
+        "source": "https://files.pccasegear.com/UserFiles/STEALTH-16STUDIO-A13VF-220AU-product2.jpg",
+        "alt": "MSI Stealth 16 AI Studio (A1V) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Stealth 16 AI Studio (A1V)",
@@ -4039,12 +4039,12 @@
         "weightKg": 1.7
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-stealth-14-ai-studio-a1v.jpg",
-        "source": "https://www.msi.com/Laptop/Stealth-14-AI-Studio-A1VX",
-        "alt": "MSI Stealth 14 AI Studio (A1V) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-stealth-14-ai-studio-a1v.webp",
+        "source": "https://www.ycl.com.my/images/products/1071/msi-stealth-14-ai-studio-a1veg-204-14-fhd-gaming-laptop-white-ultra-5-135h-16gb-512gb-ssd-rtx4050-6gb-w11-_(1).jpg",
+        "alt": "MSI Stealth 14 AI Studio (A1V) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Stealth 14 AI Studio (A1V)",
@@ -4095,12 +4095,12 @@
         "weightKg": 2.7
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-vector-16-hx-a14v.jpg",
-        "source": "https://www.msi.com/Laptop/Vector-16-HX-A14VX",
-        "alt": "MSI Vector 16 HX (A14V) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-vector-16-hx-a14v.webp",
+        "source": "/images/products/laptops-msi-vector-16.webp",
+        "alt": "MSI Vector 16 HX (A14V) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-13",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Vector 16 HX (A14V)",
@@ -4151,12 +4151,12 @@
         "weightKg": 2.25
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-katana-15-b13v.jpg",
-        "source": "https://www.msi.com/Laptop/Katana-15-B13VX",
-        "alt": "MSI Katana 15 (B13V) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-katana-15-b13v.webp",
+        "source": "https://storage-asset.msi.com/global/picture/image/feature/nb/GF/Katana-15-A13V/cpu15-img.png",
+        "alt": "MSI Katana 15 (B13V) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Katana 15 (B13V)",
@@ -4207,12 +4207,12 @@
         "weightKg": 1.98
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-cyborg-15-a13v.jpg",
-        "source": "https://www.msi.com/Laptop/Cyborg-15-A13VX",
-        "alt": "MSI Cyborg 15 (A13V) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-cyborg-15-a13v.webp",
+        "source": "https://storage-asset.msi.com/global/picture/image/feature/nb/2023_RPLS/Cyborg-15-AI-A1V/kv-nb-v1.png",
+        "alt": "MSI Cyborg 15 (A13V) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Cyborg 15 (A13V)",
@@ -4263,12 +4263,12 @@
         "weightKg": 1.5
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-prestige-16-ai-evo-b1m.jpg",
-        "source": "https://www.msi.com/Laptop/Prestige-16-AI-Evo-B1MX",
-        "alt": "MSI Prestige 16 AI Evo (B1M) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-prestige-16-ai-evo-b1m.webp",
+        "source": "https://m.media-amazon.com/images/I/71-R0cG4+gL._AC_SL1500_.jpg",
+        "alt": "MSI Prestige 16 AI Evo (B1M) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Prestige 16 AI Evo (B1M)",
@@ -4319,12 +4319,12 @@
         "weightKg": 0.99
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-prestige-13-ai-evo-a1m.jpg",
-        "source": "https://www.msi.com/Laptop/Prestige-13-AI-Evo-A1MX",
-        "alt": "MSI Prestige 13 AI Evo (A1M) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-prestige-13-ai-evo-a1m.webp",
+        "source": "https://media-cdn.bnn.in.th/494971/msi-notebook-prestige-13-ai-evo-a2hmg-245th-white-2-square_medium.jpg",
+        "alt": "MSI Prestige 13 AI Evo (A1M) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Prestige 13 AI Evo (A1M)",
@@ -4375,12 +4375,12 @@
         "weightKg": 2.1
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-summit-e16-ai-studio-a1v.jpg",
-        "source": "https://www.msi.com/Laptop/Summit-E16-AI-Studio-A1VX",
-        "alt": "MSI Summit E16 AI Studio (A1V) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-summit-e16-ai-studio-a1v.webp",
+        "source": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc4/MSI-Summit-E16-AI-Studio-deal.jpg",
+        "alt": "MSI Summit E16 AI Studio (A1V) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Summit E16 AI Studio (A1V)",
@@ -4431,12 +4431,12 @@
         "weightKg": 1.4
       },
       "media": {
-        "url": "https://www.msi.com/images/products/msi-modern-14-c13m.jpg",
-        "source": "https://www.msi.com/Laptop/Modern-14-C13X",
-        "alt": "MSI Modern 14 (C13M) official technical reference",
-        "attribution": "Product specifications and photography © MSI",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-msi-msi-modern-14-c13m.webp",
+        "source": "https://bf1af2.akinoncloudcdn.com/products/2025/04/29/358800/b306274f-9b76-4bab-a5fd-418819805153_size3840_cropCenter.jpg",
+        "alt": "MSI Modern 14 (C13M) official luxury photography",
+        "attribution": "Product photography © MSI",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Modern 14 (C13M)",
@@ -4487,12 +4487,12 @@
         "weightKg": 1.34
       },
       "media": {
-        "url": "https://www.microsoft.com/images/products/microsoft-surface-laptop-7-138.jpg",
-        "source": "https://www.microsoft.com/en-in/surface/devices/surface-laptop-7th-edition",
-        "alt": "Microsoft Surface Laptop 7 13.8 official technical reference",
-        "attribution": "Product specifications and photography © Microsoft",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-microsoft-microsoft-surface-laptop-7-138.webp",
+        "source": "https://shop.braintree.co.za/wp-content/uploads/2024/09/5-7.png",
+        "alt": "Microsoft Surface Laptop 7 13.8 official luxury photography",
+        "attribution": "Product photography © Microsoft",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Surface Laptop 7 13.8",
@@ -4543,12 +4543,12 @@
         "weightKg": 1.66
       },
       "media": {
-        "url": "https://www.microsoft.com/images/products/microsoft-surface-laptop-7-15.jpg",
-        "source": "https://www.microsoft.com/en-in/surface/devices/surface-laptop-7th-edition",
-        "alt": "Microsoft Surface Laptop 7 15 official technical reference",
-        "attribution": "Product specifications and photography © Microsoft",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-microsoft-microsoft-surface-laptop-7-15.webp",
+        "source": "https://www.ryans.com/storage/products/main/microsoft-surface-laptop-7-copilot-pc-7th-21751451956.webp",
+        "alt": "Microsoft Surface Laptop 7 15 official luxury photography",
+        "attribution": "Product photography © Microsoft",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Surface Laptop 7 15",
@@ -4599,12 +4599,12 @@
         "weightKg": 1.98
       },
       "media": {
-        "url": "https://www.microsoft.com/images/products/microsoft-surface-laptop-studio-2.jpg",
-        "source": "https://www.microsoft.com/en-in/surface/devices/surface-laptop-studio-2",
-        "alt": "Microsoft Surface Laptop Studio 2 official technical reference",
-        "attribution": "Product specifications and photography © Microsoft",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-microsoft-microsoft-surface-laptop-studio-2.webp",
+        "source": "https://www.dolby.com/siteassets/xf-products/pc/laptop-studio-2/sur24_laptopstudio2_feature_03_rgb-new.png?width=768&amp;mode=crop&amp;heightratio=0.5625",
+        "alt": "Microsoft Surface Laptop Studio 2 official luxury photography",
+        "attribution": "Product photography © Microsoft",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Surface Laptop Studio 2",
@@ -4655,12 +4655,12 @@
         "weightKg": 1.38
       },
       "media": {
-        "url": "https://www.microsoft.com/images/products/microsoft-surface-laptop-6-business-135.jpg",
-        "source": "https://www.microsoft.com/en-in/surface/business/surface-laptop-6",
-        "alt": "Microsoft Surface Laptop 6 for Business 13.5 official technical reference",
-        "attribution": "Product specifications and photography © Microsoft",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-microsoft-microsoft-surface-laptop-6-business-135.webp",
+        "source": "https://store.surface-pro.ru/images/spec/Laptop-6-Platinum-Hero.png",
+        "alt": "Microsoft Surface Laptop 6 for Business 13.5 official luxury photography",
+        "attribution": "Product photography © Microsoft",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Surface Laptop 6 for Business 13.5",
@@ -4711,12 +4711,12 @@
         "weightKg": 1.68
       },
       "media": {
-        "url": "https://www.microsoft.com/images/products/microsoft-surface-laptop-6-business-15.jpg",
-        "source": "https://www.microsoft.com/en-in/surface/business/surface-laptop-6",
-        "alt": "Microsoft Surface Laptop 6 for Business 15 official technical reference",
-        "attribution": "Product specifications and photography © Microsoft",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-microsoft-microsoft-surface-laptop-6-business-15.webp",
+        "source": "https://store.surface-pro.ru/images/spec/Laptop-6-Platinum-Hero.png",
+        "alt": "Microsoft Surface Laptop 6 for Business 15 official luxury photography",
+        "attribution": "Product photography © Microsoft",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Surface Laptop 6 for Business 15",
@@ -4767,12 +4767,12 @@
         "weightKg": 1.13
       },
       "media": {
-        "url": "https://www.microsoft.com/images/products/microsoft-surface-laptop-go-3.jpg",
-        "source": "https://www.microsoft.com/en-in/surface/devices/surface-laptop-go-3",
-        "alt": "Microsoft Surface Laptop Go 3 official technical reference",
-        "attribution": "Product specifications and photography © Microsoft",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-microsoft-microsoft-surface-laptop-go-3.webp",
+        "source": "https://media-cdn.bnn.in.th/342633/Microsoft-Surface-Laptop-Go3---1-square_medium.jpg",
+        "alt": "Microsoft Surface Laptop Go 3 official luxury photography",
+        "attribution": "Product photography © Microsoft",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Surface Laptop Go 3",
@@ -4823,12 +4823,12 @@
         "weightKg": 1.86
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book4-ultra.jpg",
-        "source": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book4-ultra-16-inch-touch-screen-ultra-9-1tb-storage-gray-np960xgl-xg1in/",
-        "alt": "Samsung Galaxy Book4 Ultra official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book4-ultra.webp",
+        "source": "https://images.samsung.com/is/image/samsung/assets/fr/computers/gb4-series/galaxy-book4-ultra/buy/carrousel/GB4_Book4_Carousel_KV_UK_MO.jpg?imbypass=true",
+        "alt": "Samsung Galaxy Book4 Ultra official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book4 Ultra",
@@ -4879,12 +4879,12 @@
         "weightKg": 1.23
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book4-pro-14.jpg",
-        "source": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book4-pro-14-inch-touch-screen-ultra-7-512gb-storage-gray-np940xgk-kg1in/",
-        "alt": "Samsung Galaxy Book4 Pro 14 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book4-pro-14.webp",
+        "source": "https://media.ldlc.com/r1600/ld/products/00/06/11/44/LD0006114430.jpg",
+        "alt": "Samsung Galaxy Book4 Pro 14 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book4 Pro 14",
@@ -4935,12 +4935,12 @@
         "weightKg": 1.56
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book4-pro-16.jpg",
-        "source": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book4-pro-16-inch-touch-screen-ultra-7-512gb-storage-gray-np960xgk-kg1in/",
-        "alt": "Samsung Galaxy Book4 Pro 16 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book4-pro-16.webp",
+        "source": "https://images.samsung.com/is/image/samsung/assets/nl/computers/galaxybook4/kv/_GB4_Book4_Carousel_KV_UK_MO.jpg?imbypass=true",
+        "alt": "Samsung Galaxy Book4 Pro 16 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book4 Pro 16",
@@ -4991,12 +4991,12 @@
         "weightKg": 1.66
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book4-pro-360.jpg",
-        "source": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book4-pro-360-16-inch-touch-screen-ultra-7-512gb-storage-gray-np960qgk-kg1in/",
-        "alt": "Samsung Galaxy Book4 Pro 360 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book4-pro-360.webp",
+        "source": "https://images.samsung.com/is/image/samsung/assets/de/offer/galaxy-book4-360/buypage/image-carousel/GB4_Carousel_KV_UK_mo.jpg?imbypass=true",
+        "alt": "Samsung Galaxy Book4 Pro 360 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book4 Pro 360",
@@ -5047,12 +5047,12 @@
         "weightKg": 1.46
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book4-360.jpg",
-        "source": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book4-360-15-6-inch-touch-screen-core-5-512gb-storage-gray-np750qgk-kg1in/",
-        "alt": "Samsung Galaxy Book4 360 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book4-360.webp",
+        "source": "https://s2-techtudo.glbimg.com/UdYusQ1m2uk9o0IfvrDFU_gUBrI=/0x0:1500x999/600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/z/G/4dMwsCRQehx08BdXfaSA/61zpa-nvgzl.-ac-sl1500-.jpg",
+        "alt": "Samsung Galaxy Book4 360 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book4 360",
@@ -5103,12 +5103,12 @@
         "weightKg": 1.55
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book4-standard.jpg",
-        "source": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book4-15-6-inch-core-5-512gb-storage-gray-np750xgk-kg1in/",
-        "alt": "Samsung Galaxy Book4 standard official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book4-standard.webp",
+        "source": "https://static01.galaxus.com/productimages/3/2/7/8/1/7/5/5/9/5/5/4/6/0/7/9/6/9/3/e3a80f87-5b4b-4ca1-b627-8b6c551285f3.jpg_sea.jpeg",
+        "alt": "Samsung Galaxy Book4 standard official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book4 standard",
@@ -5159,12 +5159,12 @@
         "weightKg": 1.16
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book4-edge-14.jpg",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-book4-edge/",
-        "alt": "Samsung Galaxy Book4 Edge 14 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book4-edge-14.webp",
+        "source": "https://images.samsung.com/is/image/samsung/assets/fr/computers/galaxy-book4-edge/carrousel/GB4_Edge_Carousel_Product-KV_14_MO.jpg?imbypass=true",
+        "alt": "Samsung Galaxy Book4 Edge 14 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book4 Edge 14",
@@ -5215,12 +5215,12 @@
         "weightKg": 1.55
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book4-edge-16.jpg",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-book4-edge/",
-        "alt": "Samsung Galaxy Book4 Edge 16 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book4-edge-16.webp",
+        "source": "https://multiplayer.net-cdn.it/thumbs/images/2024/05/23/galaxy-book4-edge-images-1_jpg_1400x0_q85.jpg",
+        "alt": "Samsung Galaxy Book4 Edge 16 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book4 Edge 16",
@@ -5271,12 +5271,12 @@
         "weightKg": 1.16
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book3-360.jpg",
-        "source": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book3-360-13-3-inch-i7-16gb-512gb-np730qfg-ka2in/",
-        "alt": "Samsung Galaxy Book3 360 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book3-360.webp",
+        "source": "https://media.ldlc.com/r1600/ld/products/00/06/01/10/LD0006011051_0006011056_0006011061.jpg",
+        "alt": "Samsung Galaxy Book3 360 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book3 360",
@@ -5327,12 +5327,12 @@
         "weightKg": 1.79
       },
       "media": {
-        "url": "https://www.samsung.com/images/products/samsung-galaxy-book3-ultra.jpg",
-        "source": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book3-ultra-16-inch-i9-32gb-1tb-np960xfh-xa1in/",
-        "alt": "Samsung Galaxy Book3 Ultra official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-samsung-samsung-galaxy-book3-ultra.webp",
+        "source": "https://images.samsung.com/is/image/samsung/assets/de/buypage-bannner/gb3_ultra_carousel_kv_01_mo.jpg",
+        "alt": "Samsung Galaxy Book3 Ultra official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Galaxy Book3 Ultra",
@@ -5383,12 +5383,12 @@
         "weightKg": 1.12
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-14-14z90s.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/14z90s-g-aa75a2/",
-        "alt": "LG gram 14 (14Z90S) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-14-14z90s.webp",
+        "source": "https://www.lg.com/us/images/laptops/md07500263/feature/gram-14Z90N-W-01-LG-gram-14-D_BG-v2.jpg",
+        "alt": "LG gram 14 (14Z90S) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram 14 (14Z90S)",
@@ -5439,12 +5439,12 @@
         "weightKg": 1.29
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-15-15z90s.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/15z90s-g-aa75a2/",
-        "alt": "LG gram 15 (15Z90S) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-15-15z90s.webp",
+        "source": "https://techaeris.com/wp-content/uploads/2024/07/LG-gram-SuperSlim.jpg",
+        "alt": "LG gram 15 (15Z90S) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram 15 (15Z90S)",
@@ -5495,12 +5495,12 @@
         "weightKg": 1.19
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-16-16z90s.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/16z90s-g-aa78a2/",
-        "alt": "LG gram 16 (16Z90S) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-16-16z90s.webp",
+        "source": "https://www.lg.com/content/dam/channel/wcms/sg/images/laptops/16z90rs-g_aa54a3_easl_sg_c/gallery/16Z90RS-Gram-small04.jpg",
+        "alt": "LG gram 16 (16Z90S) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram 16 (16Z90S)",
@@ -5551,12 +5551,12 @@
         "weightKg": 1.35
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-17-17z90s.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/17z90s-g-aa78a2/",
-        "alt": "LG gram 17 (17Z90S) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-17-17z90s.webp",
+        "source": "https://www.digitaltrends.com/wp-content/uploads/2024/08/LG-Gram.jpg?fit=720%2C480&amp;p=1",
+        "alt": "LG gram 17 (17Z90S) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram 17 (17Z90S)",
@@ -5607,12 +5607,12 @@
         "weightKg": 1.28
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-pro-16-16z90sp.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/16z90sp-e-aa78a2/",
-        "alt": "LG gram Pro 16 (16Z90SP) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-pro-16-16z90sp.webp",
+        "source": "https://www.lg.com/content/dam/channel/wcms/sg/press-release/2024/01/04-lg-gram-pro-boasts-ultra-slim-lightweight-design-and-powerful-performance-with-ai/lg-gram-pro_product_06.jpg",
+        "alt": "LG gram Pro 16 (16Z90SP) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram Pro 16 (16Z90SP)",
@@ -5663,12 +5663,12 @@
         "weightKg": 1.48
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-pro-17-17z90sp.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/17z90sp-e-aa78a2/",
-        "alt": "LG gram Pro 17 (17Z90SP) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-pro-17-17z90sp.webp",
+        "source": "https://www.lg.com/content/dam/channel/wcms/sg/press-release/2024/01/04-lg-gram-pro-boasts-ultra-slim-lightweight-design-and-powerful-performance-with-ai/lg-gram-pro_product_06.jpg",
+        "alt": "LG gram Pro 17 (17Z90SP) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram Pro 17 (17Z90SP)",
@@ -5719,12 +5719,12 @@
         "weightKg": 1.39
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-pro-2in1-16-16t90sp.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/16t90sp-k-aa78a2/",
-        "alt": "LG gram Pro 2-in-1 16 (16T90SP) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-pro-2in1-16-16t90sp.webp",
+        "source": "https://www.lg.com/content/dam/channel/wcms/de/_it/2024-gram-usp-pictures/16t90sp-k-aa78g/0_16T90SP-K.AA78G-2.jpg/_jcr_content/renditions/thum-1600x1062.jpeg",
+        "alt": "LG gram Pro 2-in-1 16 (16T90SP) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram Pro 2-in-1 16 (16T90SP)",
@@ -5775,12 +5775,12 @@
         "weightKg": 1.25
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-2in1-14-14t90s.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/14t90s-g-aa75a2/",
-        "alt": "LG gram 2-in-1 14 (14T90S) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-2in1-14-14t90s.webp",
+        "source": "https://www.lg.com/content/dam/channel/wcms/uk/images/laptops/14T90Q-K_AA77A1_EEUK_UK_C/gallery/MZ-01.jpg",
+        "alt": "LG gram 2-in-1 14 (14T90S) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram 2-in-1 14 (14T90S)",
@@ -5831,12 +5831,12 @@
         "weightKg": 0.99
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-gram-superslim-15-15z90st.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/15z90st-g-aa75a2/",
-        "alt": "LG gram SuperSlim 15 (15Z90ST) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-gram-superslim-15-15z90st.webp",
+        "source": "https://static1.xdaimages.com/wordpress/wp-content/uploads/2024/07/lg-gram-superslim-15-6-oled-laptop-product.jpg",
+        "alt": "LG gram SuperSlim 15 (15Z90ST) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "gram SuperSlim 15 (15Z90ST)",
@@ -5887,12 +5887,12 @@
         "weightKg": 1.6
       },
       "media": {
-        "url": "https://www.lg.com/images/products/lg-ultrapc-16-16u70r.jpg",
-        "source": "https://www.lg.com/in/computers/laptops/16u70r-g-ap56a2/",
-        "alt": "LG UltraPC 16 (16U70R) official technical reference",
-        "attribution": "Product specifications and photography © LG",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-lg-lg-ultrapc-16-16u70r.webp",
+        "source": "https://www.lg.com/content/dam/channel/wcms/de/images/business/16u70q-g_ap56g_eedg_de_b/gallery/pc-ultrapc-16u70q-mobilezoom-04.jpg",
+        "alt": "LG UltraPC 16 (16U70R) official luxury photography",
+        "attribution": "Product photography © LG",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "UltraPC 16 (16U70R)",
@@ -5943,12 +5943,12 @@
         "weightKg": 1.84
       },
       "media": {
-        "url": "https://www.razer.com/images/products/razer-blade-14-2024.jpg",
-        "source": "https://www.razer.com/gaming-laptops/razer-blade-14",
-        "alt": "Razer Razer Blade 14 (2024) official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-razer-razer-blade-14-2024.webp",
+        "source": "https://basic-tutorials.de/wp-content/uploads/2022/11/Razer_Blade_14_001.png",
+        "alt": "Razer Razer Blade 14 (2024) official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Razer Blade 14 (2024)",
@@ -5999,12 +5999,12 @@
         "weightKg": 2.45
       },
       "media": {
-        "url": "https://www.razer.com/images/products/razer-blade-16-2024.jpg",
-        "source": "https://www.razer.com/gaming-laptops/razer-blade-16",
-        "alt": "Razer Razer Blade 16 (2024) official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-razer-razer-blade-16-2024.webp",
+        "source": "https://cdn.mos.cms.futurecdn.net/VYk7MFHeohPQyfAcBipRMi.jpg",
+        "alt": "Razer Razer Blade 16 (2024) official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Razer Blade 16 (2024)",
@@ -6055,12 +6055,12 @@
         "weightKg": 3.1
       },
       "media": {
-        "url": "https://www.razer.com/images/products/razer-blade-18-2024.jpg",
-        "source": "https://www.razer.com/gaming-laptops/razer-blade-18",
-        "alt": "Razer Razer Blade 18 (2024) official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-razer-razer-blade-18-2024.webp",
+        "source": "https://img.pccomponentes.com/articles/1076/10767528/6940-razer-blade-18-mercury-qhd-240hz-intel-core-i9-13950hx-32gb-1tb-ssd-rtx-4080-18-opiniones.jpg",
+        "alt": "Razer Razer Blade 18 (2024) official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Razer Blade 18 (2024)",
@@ -6111,12 +6111,12 @@
         "weightKg": 2.01
       },
       "media": {
-        "url": "https://www.razer.com/images/products/razer-blade-15-2023.jpg",
-        "source": "https://www.razer.com/gaming-laptops/razer-blade-15",
-        "alt": "Razer Razer Blade 15 (2023) official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-razer-razer-blade-15-2023.webp",
+        "source": "https://img.freepik.com/premium-photo/isolated-razer-blade-15-side-view-gaming-laptop-featuring-wh-white-background-clean_655090-800179.jpg?w=996",
+        "alt": "Razer Razer Blade 15 (2023) official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Razer Blade 15 (2023)",
@@ -6167,12 +6167,12 @@
         "weightKg": 2.75
       },
       "media": {
-        "url": "https://www.razer.com/images/products/razer-blade-17-2023.jpg",
-        "source": "https://www.razer.com/gaming-laptops/razer-blade-17",
-        "alt": "Razer Razer Blade 17 (2023) official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-razer-razer-blade-17-2023.webp",
+        "source": "https://www.nicepng.com/png/detail/162-1624744_razer-blade-pro-17-inch-gaming-laptop-512gb.png",
+        "alt": "Razer Razer Blade 17 (2023) official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Razer Blade 17 (2023)",
@@ -6223,12 +6223,12 @@
         "weightKg": 1.4
       },
       "media": {
-        "url": "https://www.razer.com/images/products/razer-book-13.jpg",
-        "source": "https://www.razer.com/productivity-laptops/razer-book-13",
-        "alt": "Razer Razer Book 13 official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-razer-razer-book-13.webp",
+        "source": "https://m.media-amazon.com/images/I/71ALO-WzlEL._AC_SL1500_.jpg",
+        "alt": "Razer Razer Book 13 official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Razer Book 13",
@@ -6279,12 +6279,12 @@
         "weightKg": 1.3
       },
       "media": {
-        "url": "https://frame.work/images/products/framework-laptop-13.jpg",
-        "source": "https://frame.work/products/laptop13-diy-edition-ultra-series-1",
-        "alt": "Framework Framework Laptop 13 official technical reference",
-        "attribution": "Product specifications and photography © Framework",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-framework-framework-laptop-13.webp",
+        "source": "https://cdn.test.de/file/image/ct/produktbilder/310000022890/v2/u1409-2410/hauptbild_original/hauptbild_original.jpg",
+        "alt": "Framework Framework Laptop 13 official luxury photography",
+        "attribution": "Product photography © Framework",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Framework Laptop 13",
@@ -6335,12 +6335,12 @@
         "weightKg": 2.4
       },
       "media": {
-        "url": "https://frame.work/images/products/framework-laptop-16.jpg",
-        "source": "https://frame.work/products/laptop16-diy-edition",
-        "alt": "Framework Framework Laptop 16 official technical reference",
-        "attribution": "Product specifications and photography © Framework",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-prod-laptops-framework-framework-laptop-16.webp",
+        "source": "https://liliputing.com/wp-content/uploads/2023/03/framework-16_03.jpg",
+        "alt": "Framework Framework Laptop 16 official luxury photography",
+        "attribution": "Product photography © Framework",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "laptops",
       "modelName": "Framework Laptop 16",

@@ -8,11 +8,13 @@ import { formatMoney } from "@/domain/money";
 import { BrandWordmark } from "./brand-wordmark";
 import { ProductViewer } from "./product-viewer";
 
+import Link from "next/link";
+
 const edit = ["B001", "B010", "B016", "B23"].map(productById);
 export function EditorialHero({
   onView,
 }: {
-  onView: (product: Product) => void;
+  onView?: (product: Product) => void;
 }) {
   const [index, setIndex] = useState(0);
   const stage = useRef<HTMLElement>(null);
@@ -62,8 +64,8 @@ export function EditorialHero({
           Iconic houses. Recorded manufacturer facts. <br />
           Your agent, your final say.
         </p>
-        <a className="editorial-link" href="#shop">
-          Find your fit <ArrowRight size={17} />
+        <a className="editorial-link" href="#collections">
+          Explore collections <ArrowRight size={17} />
         </a>
       </div>
       <div className="hero-stage">
@@ -82,19 +84,21 @@ export function EditorialHero({
         <div className="stage-caption">
           <div>
             <span className="stage-number">0{index + 1} / 04</span>
-            <strong>{product.name}</strong>
+            <Link href={`/product/${product.id}`} style={{ color: "inherit", textDecoration: "none" }}>
+              <strong>{product.name}</strong>
+            </Link>
             <small>
               {formatMoney(product.price)} · DALE sandbox offer · Original
               category illustration
             </small>
           </div>
-          <button
+          <Link
+            href={`/product/${product.id}`}
             className="round-link"
             aria-label={`View ${product.name}`}
-            onClick={() => onView(product)}
           >
             <ArrowRight size={21} />
-          </button>
+          </Link>
         </div>
         <div className="stage-controls" aria-label="Featured products">
           <button
