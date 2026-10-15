@@ -28,6 +28,7 @@ Apple has eleven distinct phone models including the existing iPhone 17. Rolex, 
 - Ten-model Oakley, Tissot, Rolex, Ray-Ban and Apple batches, explicit evidence gaps, exact model/reference identities and attributed manufacturer photographs.
 - Independent-customer watch group purchase with retained recommendations and order privacy; exact Pro Max model review; category-specific browsing and empty electronics landing grids.
 - Reviewed image origin/path allowlist, local-network rejection, bounded image response/redirect/cache policies and visible image errors. External reference attribution is not a commercial image license.
+- Resumable operator fragrance collection checkpoints bind reviewed records to the feed hash, profile and date; interrupted work does not recollect completed models. Four regression tests and five packaged Linux filesystem checks pass. This does not replace a durable refresh queue or reviewed SKU revisions.
 
 Verification and actual deployed build are recorded in [CATALOG_ACCEPTANCE.md](CATALOG_ACCEPTANCE.md). A commit containing a manifest does not by itself establish that the public server has installed it.
 
