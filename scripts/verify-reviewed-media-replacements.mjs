@@ -4,10 +4,12 @@ import assert from "node:assert/strict";
 import sharp from "sharp";
 
 const [base, ...paths] = process.argv.slice(2);
-if (!base || !paths.length)
+if (!base)
   throw Error(
     "Usage: verify-reviewed-media-replacements.mjs <base-url> <batch.json> [...]",
   );
+if (!paths.length)
+  paths.push(...JSON.parse(await readFile("catalog/media/local-repair-batches.json", "utf8")).batches);
 const origin = new URL(base);
 if (
   !["http:", "https:"].includes(origin.protocol) ||

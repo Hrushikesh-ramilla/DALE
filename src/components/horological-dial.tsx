@@ -157,15 +157,7 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
 
   const activeBrand = brands[activeIndex] || brands[0];
   const activeCount = brandCounts[activeBrand.name] || activeBrand.count;
-
-  // Chapter ring tick marks (60 minute marks)
-  const ticks = useMemo(() => {
-    return Array.from({ length: 60 }).map((_, i) => ({
-      angle: i * 6,
-      isMajor: i % 5 === 0,
-      hourNum: i % 5 === 0 ? (i === 0 ? 12 : i / 5) : null,
-    }));
-  }, []);
+  const originCity = activeBrand.origin ? activeBrand.origin.split(",")[0].trim().toUpperCase() : "SWITZERLAND";
 
   return (
     <div className="horological-dial-experience">
@@ -184,7 +176,7 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             <div className="knurled-ridges">
               <span /><span /><span /><span /><span /><span />
             </div>
-            <div className="crown-jewel" />
+            <div className="crown-led-slit" />
           </button>
           <div className="crown-label">
             <span>&larr; PREV</span>
@@ -205,7 +197,7 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             <div className="knurled-ridges">
               <span /><span /><span /><span /><span /><span />
             </div>
-            <div className="crown-jewel" />
+            <div className="crown-led-slit" />
           </button>
           <div className="crown-label">
             <span>NEXT &rarr;</span>
@@ -216,61 +208,125 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
         {/* Ambient Warm Champagne Glow Halo */}
         <div className="dial-ambient-halo" />
 
-        {/* Circular Watch Dial Movement with 3D Perspective */}
+        {/* Circular 18k Brushed Gold Watch Dial */}
         <div
           ref={dialRef}
           className="horological-dial-circle"
-          style={{
-            transform: `perspective(1400px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-          }}
           onWheel={handleWheel}
           onPointerDown={handlePointerDown}
-          onPointerMove={handleStageMouseMove}
+          onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
           onPointerCancel={handlePointerUp}
-          onPointerLeave={handleStageMouseLeave}
         >
           {/* Curved Sapphire Crystal Lens Reflections & Guilloché Dial Bed */}
           <div className="dial-sapphire-reflection" />
           <div className="dial-guilloche-sunburst" />
 
-          {/* Bezel & Fluted Outer Ring with Multi-Tier Metallic Steps */}
+          {/* Chamfered 18k Gold Bezel Rim Highlights */}
           <div className="dial-fluted-bezel">
             <div className="bezel-metallic-shine" />
           </div>
 
-          {/* Chapter Ring with Minute & Hour Ticks */}
-          <svg className="dial-chapter-ring-svg" viewBox="0 0 700 700">
-            <circle cx="350" cy="350" r="338" fill="none" stroke="#262626" strokeWidth="1.5" />
-            <circle cx="350" cy="350" r="310" fill="none" stroke="#d4af37" strokeWidth="1" strokeOpacity="0.4" />
-            <circle cx="350" cy="350" r="230" fill="none" stroke="#333333" strokeWidth="1" strokeDasharray="3 4" strokeOpacity="0.5" />
-            <circle cx="350" cy="350" r="145" fill="none" stroke="#d4af37" strokeWidth="0.8" strokeOpacity="0.25" />
+          {/* Chapter Ring with 12 Luminous Hour Batons & 48 Minute Ticks */}
+          <svg className="dial-chapter-ring-svg" viewBox="0 0 800 800">
+            <defs>
+              <filter id="lumeGlowCardinal" x="-60%" y="-60%" width="220%" height="220%">
+                <feGaussianBlur stdDeviation="3.5" result="blur1" />
+                <feGaussianBlur stdDeviation="9" result="blur2" />
+                <feMerge>
+                  <feMergeNode in="blur2" />
+                  <feMergeNode in="blur1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+              <filter id="lumeGlowSub" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="2" result="blur1" />
+                <feGaussianBlur stdDeviation="6" result="blur2" />
+                <feMerge>
+                  <feMergeNode in="blur2" />
+                  <feMergeNode in="blur1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
 
-            {/* 60 Minute & Hour Markers */}
-            {ticks.map((t) => {
-              const rad = (t.angle * Math.PI) / 180;
-              const rOuter = 336;
-              const rInner = t.isMajor ? 318 : 326;
-              const x1 = 350 + rOuter * Math.cos(rad);
-              const y1 = 350 + rOuter * Math.sin(rad);
-              const x2 = 350 + rInner * Math.cos(rad);
-              const y2 = 350 + rInner * Math.sin(rad);
+            {/* Chapter ring concentric tracks */}
+            <circle cx="400" cy="400" r="388" fill="none" stroke="#1e293b" strokeWidth="1.5" />
+            <circle cx="400" cy="400" r="362" fill="none" stroke="#cbd5e1" strokeWidth="1" strokeOpacity="0.45" />
+            <circle cx="400" cy="400" r="338" fill="none" stroke="#334155" strokeWidth="0.8" strokeDasharray="3 4" strokeOpacity="0.5" />
+
+            {/* Dual Astronomical Complication Tracks (Concentric guide orbits for staggered houses) */}
+            <circle cx="400" cy="400" r="339" fill="none" stroke="#cbd5e1" strokeWidth="0.8" strokeDasharray="2 6" strokeOpacity="0.35" />
+            <circle cx="400" cy="400" r="262" fill="none" stroke="#cbd5e1" strokeWidth="0.8" strokeDasharray="2 6" strokeOpacity="0.35" />
+
+            {/* 48 Minute Ticks (Between the 12 hours) */}
+            {Array.from({ length: 60 }).map((_, i) => {
+              if (i % 5 === 0) return null;
+              const angleRad = (i * 6 * Math.PI) / 180;
+              const rOuter = 368;
+              const rInner = 358;
               return (
                 <line
-                  key={t.angle}
-                  x1={x1}
-                  y1={y1}
-                  x2={x2}
-                  y2={y2}
-                  stroke={t.isMajor ? "#d4af37" : "#52525b"}
-                  strokeWidth={t.isMajor ? 2.5 : 1}
+                  key={`tick-${i}`}
+                  x1={400 + rOuter * Math.sin(angleRad)}
+                  y1={400 - rOuter * Math.cos(angleRad)}
+                  x2={400 + rInner * Math.sin(angleRad)}
+                  y2={400 - rInner * Math.cos(angleRad)}
+                  stroke="#64748b"
+                  strokeWidth="1.2"
                   strokeLinecap="round"
+                  opacity="0.75"
                 />
+              );
+            })}
+
+            {/* 12 Glowing Luminous Hour Batons in Silver & Ice-White Phosphor */}
+            {Array.from({ length: 12 }).map((_, h) => {
+              const isCardinal = h % 3 === 0; // 12, 3, 6, 9
+              const angleDeg = h * 30;
+              const length = isCardinal ? 26 : 18;
+              const width = isCardinal ? 5.5 : 3.8;
+              const rOuter = 370;
+
+              return (
+                <g key={`hour-baton-${h}`} transform={`rotate(${angleDeg} 400 400)`}>
+                  {/* Luminous Glow Halo */}
+                  <rect
+                    x={400 - (width + 4) / 2}
+                    y={400 - rOuter - 2}
+                    width={width + 4}
+                    height={length + 4}
+                    rx={(width + 4) / 2}
+                    fill="rgba(226, 232, 240, 0.5)"
+                    filter={isCardinal ? "url(#lumeGlowCardinal)" : "url(#lumeGlowSub)"}
+                  />
+                  {/* Outer Silver / Platinum Frame */}
+                  <rect
+                    x={400 - width / 2}
+                    y={400 - rOuter}
+                    width={width}
+                    height={length}
+                    rx={width / 2}
+                    fill="#cbd5e1"
+                    stroke="#ffffff"
+                    strokeWidth="0.6"
+                  />
+                  {/* Inner Glowing Luminous Phosphor Core (Pure Brilliant Ice White) */}
+                  <rect
+                    x={400 - (width - 1.8) / 2}
+                    y={400 - rOuter + 1}
+                    width={width - 1.8}
+                    height={length - 2}
+                    rx={(width - 1.8) / 2}
+                    fill="#ffffff"
+                    filter={isCardinal ? "url(#lumeGlowCardinal)" : "url(#lumeGlowSub)"}
+                  />
+                </g>
               );
             })}
           </svg>
 
-          {/* Mechanical Skeleton Gear Wheels (Open-Heart Movement) */}
+          {/* Mechanical Calibre Gears (Subtle background open-heart horology) */}
           <div className="dial-skeleton-calibre">
             <div
               className="calibre-gear-large"
@@ -290,11 +346,18 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                   : "transform 0.65s cubic-bezier(0.2, 0.9, 0.3, 1)",
               }}
             />
-            <div className="calibre-escapement-wheel" />
             <div className="calibre-ruby-bearing" />
           </div>
 
-          {/* Rotating Orbital Track with Brand Nodes */}
+          {/* Double-Domed Sapphire Crystal Glass Cover (Mounted as base glass under floating appliques) */}
+          <div className="dial-sapphire-crystal-cover">
+            <div className="crystal-ar-sheen" />
+            <div className="crystal-glare-streak" />
+            <div className="crystal-secondary-reflection" />
+            <div className="crystal-beveled-prism-ring" />
+          </div>
+
+          {/* TOP LAYER: Floating Staggered Dual-Radius Orbital Track (Double Size, Zero Clipping) */}
           <div
             className="dial-orbital-track"
             style={{
@@ -307,35 +370,27 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             {brands.map((brand, i) => {
               const baseAngle = i * stepAngle;
               const rad = (baseAngle * Math.PI) / 180;
-              // Orbital path radius percentage (37.5% of dial diameter)
-              const radiusPct = 37.5;
+              // Staggered dual concentric orbits:
+              // Even indices: Outer ring (42.2% radius)
+              // Odd indices: Inner ring (32.8% radius)
+              // This doubles angular space between houses, allowing double-sized logos without crowding!
+              const isOuter = i % 2 === 0;
+              const radiusPct = isOuter ? 42.2 : 32.8;
               const xPct = 50 + radiusPct * Math.cos(rad);
               const yPct = 50 + radiusPct * Math.sin(rad);
-              // During opening sweep, keep all 21 visible on the ring
-              const isActive = !isOpeningSweep && i === activeIndex;
-
-              // Calculate current effective angle relative to top (12 o'clock)
-              const effectiveAngle = ((baseAngle + rotation + 90) % 360 + 360) % 360;
-              // Node scale & opacity based on proximity to 12 o'clock
-              const distFromTop = Math.min(effectiveAngle, 360 - effectiveAngle);
-              const depthRatio = 1 - (distFromTop / 180);
-              const nodeScale = 0.72 + (depthRatio * 0.32);
-              const nodeOpacity = isActive ? 0 : Math.max(0.72, depthRatio * 0.98);
+              const isActive = i === activeIndex;
 
               return (
                 <div
                   key={brand.name}
-                  className={`dial-brand-node ${isActive ? "active-node" : ""}`}
+                  className={`dial-brand-node ${isActive ? "active-node" : ""} ${isOuter ? "orbit-outer" : "orbit-inner"}`}
                   style={{
                     left: `${xPct}%`,
                     top: `${yPct}%`,
-                    transform: `translate(-50%, -50%) rotate(${-rotation}deg) scale(${nodeScale})`,
-                    opacity: nodeOpacity,
-                    pointerEvents: isActive ? "none" : "auto",
-                    zIndex: isActive ? 10 : Math.round(depthRatio * 20),
+                    transform: `translate(-50%, -50%) rotate(${-rotation}deg)`,
                     transition: isOpeningSweep
-                      ? "transform 2.2s cubic-bezier(0.2, 0.95, 0.3, 1), opacity 0.5s ease"
-                      : "transform 0.65s cubic-bezier(0.2, 0.9, 0.3, 1), opacity 0.35s ease",
+                      ? "transform 2.2s cubic-bezier(0.2, 0.95, 0.3, 1)"
+                      : "transform 0.65s cubic-bezier(0.2, 0.95, 0.3, 1)",
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
@@ -344,38 +399,39 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                   title={`Select ${brand.name} (EST. ${brand.est})`}
                 >
                   <div className="node-emblem-wrap">
-                    <WatchBrandLogo brand={brand.name} size={75} className="node-logo-svg" />
+                    <WatchBrandLogo brand={brand.name} size={150} className="node-logo-svg" />
                   </div>
                 </div>
               );
             })}
           </div>
 
-          {/* Center Stage: The Elevated 3D Complication Aperture (Popping Out!) */}
-          <div className="dial-center-stage">
+          {/* Center Stage: 3D Applied Sculpted Horological Emblem (Highest Top Layer) */}
+          <Link
+            href={`/category/watches?brand=${encodeURIComponent(activeBrand.name)}`}
+            className="dial-center-stage"
+            onClick={(e) => {
+              e.stopPropagation();
+              onSelectBrand(activeBrand.name);
+            }}
+            title={`Enter ${activeBrand.name} Collection (${activeCount} Timepieces)`}
+            aria-label={`Enter ${activeBrand.name} Collection`}
+          >
             <div className="stage-halo" />
-            <div className="stage-beveled-rim" />
-            <div className="stage-lens-glare" />
+            <div className="stage-dotted-ring" />
             <div className="stage-content">
-              {/* Grand 3D Popping Metallic Brand Emblem */}
-              <div className="stage-brand-emblem">
-                <WatchBrandLogo brand={activeBrand.name} size={180} className="active-stage-svg" />
+              {/* Sculpted Metal Emblem (Razor-Sharp Vector Resolution) */}
+              <div className="stage-brand-emblem-3d">
+                <WatchBrandLogo brand={activeBrand.name} size={100} className="active-stage-svg-3d" />
               </div>
 
-              {/* Enter House Luxury Obsidian Pill Button */}
-              <Link
-                href={`/category/watches?brand=${encodeURIComponent(activeBrand.name)}`}
-                className="stage-enter-btn"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onSelectBrand(activeBrand.name);
-                }}
-              >
-                <span>DISCOVER ({activeCount})</span>
-                <ArrowRight size={14} />
-              </Link>
+              {/* Minimalist Horological Collection Indicator */}
+              <div className="stage-collection-indicator">
+                <span className="indicator-count">{activeCount} TIMEPIECES</span>
+                <span className="indicator-arrow">&rarr;</span>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
