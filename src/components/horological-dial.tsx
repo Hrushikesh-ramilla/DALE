@@ -27,6 +27,8 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
   const [isOpeningSweep, setIsOpeningSweep] = useState(true);
   const [isWindingRight, setIsWindingRight] = useState(false);
   const [isWindingLeft, setIsWindingLeft] = useState(false);
+  // 3D Gyroscope Perspective Tilt
+  const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
   const dialRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
@@ -131,6 +133,28 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
     rotateToBrand(normalized);
   };
 
+  // 3D Mouse Gyroscope Parallax Tracking
+  const handleStageMouseMove = (e: React.PointerEvent) => {
+    if (isDragging.current) {
+      handlePointerMove(e);
+      return;
+    }
+    if (!dialRef.current) return;
+    const rect = dialRef.current.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    const dx = (e.clientX - cx) / (rect.width / 2);
+    const dy = (e.clientY - cy) / (rect.height / 2);
+    setTilt({
+      x: Math.max(-10, Math.min(10, -dy * 10)),
+      y: Math.max(-10, Math.min(10, dx * 10)),
+    });
+  };
+
+  const handleStageMouseLeave = () => {
+    setTilt({ x: 0, y: 0 });
+  };
+
   const activeBrand = brands[activeIndex] || brands[0];
   const activeCount = brandCounts[activeBrand.name] || activeBrand.count;
 
@@ -189,17 +213,28 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
           </div>
         </div>
 
-        {/* Circular Watch Dial Movement */}
+        {/* Ambient Warm Champagne Glow Halo */}
+        <div className="dial-ambient-halo" />
+
+        {/* Circular Watch Dial Movement with 3D Perspective */}
         <div
           ref={dialRef}
           className="horological-dial-circle"
+          style={{
+            transform: `perspective(1400px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+          }}
           onWheel={handleWheel}
           onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
+          onPointerMove={handleStageMouseMove}
           onPointerUp={handlePointerUp}
           onPointerCancel={handlePointerUp}
+          onPointerLeave={handleStageMouseLeave}
         >
-          {/* Bezel & Fluted Outer Ring */}
+          {/* Curved Sapphire Crystal Lens Reflections & Guilloché Dial Bed */}
+          <div className="dial-sapphire-reflection" />
+          <div className="dial-guilloche-sunburst" />
+
+          {/* Bezel & Fluted Outer Ring with Multi-Tier Metallic Steps */}
           <div className="dial-fluted-bezel">
             <div className="bezel-metallic-shine" />
           </div>
@@ -316,19 +351,15 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             })}
           </div>
 
-          {/* Center Stage: The Focal 12 O'Clock Showcase Aperture */}
+          {/* Center Stage: The Elevated 3D Complication Aperture (Popping Out!) */}
           <div className="dial-center-stage">
             <div className="stage-halo" />
+            <div className="stage-beveled-rim" />
+            <div className="stage-lens-glare" />
             <div className="stage-content">
-              <div className="stage-pedigree-tag">
-                <span>EST. {activeBrand.est}</span>
-                <span className="dot">·</span>
-                <span>{activeBrand.origin.split(",")[0].toUpperCase()}</span>
-              </div>
-
-              {/* Large 3D Floating Emblem */}
+              {/* Grand 3D Popping Metallic Brand Emblem */}
               <div className="stage-brand-emblem">
-                <WatchBrandLogo brand={activeBrand.name} size={160} className="active-stage-svg" />
+                <WatchBrandLogo brand={activeBrand.name} size={180} className="active-stage-svg" />
               </div>
 
               {/* Enter House Luxury Obsidian Pill Button */}
@@ -341,7 +372,7 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                 }}
               >
                 <span>DISCOVER ({activeCount})</span>
-                <ArrowRight size={13} />
+                <ArrowRight size={14} />
               </Link>
             </div>
           </div>
