@@ -3,7 +3,8 @@ import { resolve } from "node:path";
 
 async function main() {
   const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ viewport: { width: 1440, height: 1100 } });
+  // Test at standard laptop display resolution (1366x768)
+  const context = await browser.newContext({ viewport: { width: 1366, height: 768 } });
   const page = await context.newPage();
 
   const artifactDir = "C:/Users/ramil/.gemini/antigravity/brain/4ee11e1c-7282-4daa-83f5-b58765f2aefe";
@@ -12,7 +13,7 @@ async function main() {
   await page.goto("http://127.0.0.1:3000/category/watches", { waitUntil: "networkidle" });
   await page.waitForTimeout(1000);
 
-  // 1. Screenshot of the Horological Dial (Default View)
+  // 1. Screenshot of the Horological Dial (Standard Laptop 1366x768 Viewport)
   await page.screenshot({
     path: `${artifactDir}/horological-dial-movement-view.png`,
     fullPage: false,

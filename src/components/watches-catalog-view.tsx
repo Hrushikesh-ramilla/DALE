@@ -528,52 +528,55 @@ function WatchesCatalogContent() {
           ]}
         />
 
-        {/* Hero Banner with Direct "Explore All" Button */}
-        <header className="watches-hero hub-hero">
-          <div className="eyebrow">
-            <Shield size={14} className="icon-gold" />
-            <span>HAUTE HORLOGERIE</span>
-          </div>
-          <h1>Precision &amp; Luxury Watches</h1>
-          <p className="watches-hero-subtitle">
-            21 Prestigious Houses &middot; {allProducts.length || 185} Authenticated Timepieces
-          </p>
+        {/* Integrated Haute Horlogerie Console Header */}
+        <header className="watches-hero hub-console-header">
+          <div className="hub-console-row">
+            <div className="hub-console-identity">
+              <div className="eyebrow">
+                <Shield size={12} className="icon-gold" />
+                <span>HAUTE HORLOGERIE</span>
+              </div>
+              <h1>Precision &amp; Luxury Watches</h1>
+              <p className="watches-hero-subtitle">
+                21 Prestigious Houses &middot; {allProducts.length || 185} Authenticated Timepieces
+              </p>
+            </div>
 
-          <div className="hub-hero-actions">
-            <Link
-              href="/category/watches?view=all"
-              className="button primary explore-all-hero-btn"
-            >
-              <span>Explore All 185 Timepieces</span>
-              <ArrowRight size={16} />
-            </Link>
-          </div>
-        </header>
-
-        {/* The Horological Houses Experience: Interactive Movement Dial OR 21-House Matrix */}
-        <section className="watches-houses-section" aria-label="Horological Houses">
-          {/* Mode Switcher */}
-          <div style={{ display: "flex", justifyContent: "center" }}>
+            {/* Center: Mode Switcher (Dial vs 21 Houses) */}
             <div className="hub-mode-switcher">
               <button
                 type="button"
                 className={`mode-switch-btn ${hubDisplayMode === "dial" ? "active" : ""}`}
                 onClick={() => setHubDisplayMode("dial")}
               >
-                <Compass size={14} />
-                <span>Horological Dial (Winder)</span>
+                <Compass size={13} />
+                <span>Horological Dial</span>
               </button>
               <button
                 type="button"
                 className={`mode-switch-btn ${hubDisplayMode === "matrix" ? "active" : ""}`}
                 onClick={() => setHubDisplayMode("matrix")}
               >
-                <Layers size={14} />
+                <Layers size={13} />
                 <span>All 21 Houses</span>
               </button>
             </div>
-          </div>
 
+            {/* Right: Direct Unfiltered Catalog CTA */}
+            <div className="hub-console-actions">
+              <Link
+                href="/category/watches?view=all"
+                className="button primary explore-all-hero-btn"
+              >
+                <span>Explore All ({allProducts.length || 185})</span>
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+          </div>
+        </header>
+
+        {/* The Horological Houses Experience: Interactive Movement Dial OR 21-House Matrix */}
+        <section className="watches-houses-section" aria-label="Horological Houses">
           {/* VIEW A: Interactive Horological Dial & Winder */}
           {hubDisplayMode === "dial" ? (
             <HorologicalDial

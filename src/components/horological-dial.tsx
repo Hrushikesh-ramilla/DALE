@@ -152,7 +152,7 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
       <div className="dial-telemetry-bar">
         <div className="telemetry-item">
           <Shield size={13} className="telemetry-icon-gold" />
-          <span>CALIBRE MOVEMENT: <strong>ORBITAL 21-HOUSE</strong></span>
+          <span>HOROLOGY ARCHIVE: <strong>21 MANUFACTURES</strong></span>
         </div>
         <div className="telemetry-item power-reserve">
           <span className="reserve-label">MAINSPRING:</span>
@@ -259,10 +259,10 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             {brands.map((brand, i) => {
               const baseAngle = i * stepAngle;
               const rad = (baseAngle * Math.PI) / 180;
-              // Radius of orbital path
-              const radius = 265;
-              const x = 350 + radius * Math.cos(rad);
-              const y = 350 + radius * Math.sin(rad);
+              // Orbital path radius percentage (38.5% of dial diameter)
+              const radiusPct = 38.5;
+              const xPct = 50 + radiusPct * Math.cos(rad);
+              const yPct = 50 + radiusPct * Math.sin(rad);
               const isActive = i === activeIndex;
 
               // Calculate current effective angle relative to top (12 o'clock)
@@ -278,8 +278,8 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                   key={brand.name}
                   className={`dial-brand-node ${isActive ? "active-node" : ""}`}
                   style={{
-                    left: `${x}px`,
-                    top: `${y}px`,
+                    left: `${xPct}%`,
+                    top: `${yPct}%`,
                     transform: `translate(-50%, -50%) rotate(${-rotation}deg) scale(${nodeScale})`,
                     opacity: nodeOpacity,
                     pointerEvents: isActive ? "none" : "auto",
@@ -292,7 +292,7 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                   title={`Select ${brand.name}`}
                 >
                   <div className="node-emblem-wrap">
-                    <WatchBrandLogo brand={brand.name} size={48} className="node-logo-svg" />
+                    <WatchBrandLogo brand={brand.name} size={42} className="node-logo-svg" />
                   </div>
                 </div>
               );
@@ -311,15 +311,10 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
 
               {/* Large 3D Floating Emblem */}
               <div className="stage-brand-emblem">
-                <WatchBrandLogo brand={activeBrand.name} size={120} className="active-stage-svg" />
+                <WatchBrandLogo brand={activeBrand.name} size={96} className="active-stage-svg" />
               </div>
 
-              <div className="stage-calibre-note">
-                <small className="calibre-label">SIGNATURE CALIBRE</small>
-                <div className="calibre-name">{activeBrand.signatureCalibre}</div>
-              </div>
-
-              {/* Enter House Button */}
+              {/* Enter House Luxury Obsidian Pill Button */}
               <Link
                 href={`/category/watches?brand=${encodeURIComponent(activeBrand.name)}`}
                 className="stage-enter-btn"
@@ -328,8 +323,8 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                   onSelectBrand(activeBrand.name);
                 }}
               >
-                <span>Enter {activeBrand.name} Collection ({activeCount})</span>
-                <ArrowRight size={15} />
+                <span>DISCOVER ({activeCount})</span>
+                <ArrowRight size={13} />
               </Link>
             </div>
           </div>
