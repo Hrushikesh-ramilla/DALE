@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import Link from "next/link";
-import { ArrowRight, RotateCcw, Play, Pause, Compass, Shield } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { WatchBrandLogo } from "./watch-brand-logos";
 
 export interface WatchBrandInfo {
@@ -22,24 +22,23 @@ interface HorologicalDialProps {
 
 export function HorologicalDial({ brands, brandCounts, onSelectBrand }: HorologicalDialProps) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [rotation, setRotation] = useState(0);
-  const [isAutoWinding, setIsAutoWinding] = useState(false);
-  const [powerReserve, setPowerReserve] = useState(85);
-  const [isWindingCrown, setIsWindingCrown] = useState(false);
-  const [crownClicks, setCrownClicks] = useState(0);
-  
+  // Start rotation 360 degrees away (-450 = -90 - 360) so it animates a full 360-degree sweep on mount
+  const [rotation, setRotation] = useState(-450);
+  const [isOpeningSweep, setIsOpeningSweep] = useState(true);
+  const [isWindingRight, setIsWindingRight] = useState(false);
+  const [isWindingLeft, setIsWindingLeft] = useState(false);
+
   const dialRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
   const startAngle = useRef(0);
   const startRotation = useRef(0);
-  const autoWindingTimer = useRef<NodeJS.Timeout | null>(null);
 
   const numBrands = brands.length;
   const stepAngle = 360 / numBrands;
 
   // Sync rotation smoothly to active brand
   const rotateToBrand = useCallback((index: number) => {
-    const normalizedIndex = (index + numBrands) % numBrands;
+    const normalizedIndex = ((index % numBrands) + numBrands) % numBrands;
     setActiveIndex(normalizedIndex);
     // 12 o'clock position is -90 degrees from standard (0 = 3 o'clock)
     // To bring index i to 12 o'clock: angle_i + rotation = -90 => rotation = -90 - angle_i
@@ -51,43 +50,42 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
     });
   }, [numBrands, stepAngle]);
 
-  // "Wind the Watch Crown" mechanic
-  const windCrown = useCallback(() => {
-    setIsWindingCrown(true);
-    setCrownClicks((c) => c + 1);
-    setPowerReserve((prev) => Math.min(100, prev + 5));
+  // Initial 360-degree rotation entrance animation:
+  // Starts at oldest house (Blancpain, index 0), sweeps 360 degrees across the historical spectrum,
+  // and smoothly settles back on Blancpain at 12 o'clock.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setRotation(-90);
+      setActiveIndex(0);
+    }, 100);
 
-    // Advance to next house with a mechanical step
+    const sweepDone = setTimeout(() => {
+      setIsOpeningSweep(false);
+    }, 2400);
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(sweepDone);
+    };
+  }, []);
+
+  // "Wind Forward" mechanic (Right crown at 3 o'clock - Next House)
+  const windCrownForward = useCallback(() => {
+    setIsWindingRight(true);
     rotateToBrand(activeIndex + 1);
-
     setTimeout(() => {
-      setIsWindingCrown(false);
+      setIsWindingRight(false);
     }, 320);
   }, [activeIndex, rotateToBrand]);
 
+  // "Wind Reverse" mechanic (Left crown at 9 o'clock - Previous House)
   const windCrownReverse = useCallback(() => {
-    setIsWindingCrown(true);
-    setCrownClicks((c) => c + 1);
+    setIsWindingLeft(true);
     rotateToBrand(activeIndex - 1);
     setTimeout(() => {
-      setIsWindingCrown(false);
+      setIsWindingLeft(false);
     }, 320);
   }, [activeIndex, rotateToBrand]);
-
-  // Auto-sweep toggle (like an automatic watch rotor)
-  useEffect(() => {
-    if (isAutoWinding) {
-      autoWindingTimer.current = setInterval(() => {
-        setActiveIndex((prev) => (prev + 1) % numBrands);
-        setRotation((prev) => prev - stepAngle);
-      }, 3400);
-    } else {
-      if (autoWindingTimer.current) clearInterval(autoWindingTimer.current);
-    }
-    return () => {
-      if (autoWindingTimer.current) clearInterval(autoWindingTimer.current);
-    };
-  }, [isAutoWinding, numBrands, stepAngle]);
 
   // Drag & Wheel interactions
   const handleWheel = (e: React.WheelEvent) => {
@@ -128,7 +126,6 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
     if (!isDragging.current) return;
     isDragging.current = false;
     // Snap to closest brand
-    // rotation = -90 - index * stepAngle => index = (-90 - rotation) / stepAngle
     const computedIndex = Math.round((-90 - rotation) / stepAngle);
     const normalized = ((computedIndex % numBrands) + numBrands) % numBrands;
     rotateToBrand(normalized);
@@ -148,43 +145,17 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
 
   return (
     <div className="horological-dial-experience">
-      {/* Top Dial Telemetry Bar */}
-      <div className="dial-telemetry-bar">
-        <div className="telemetry-item">
-          <Shield size={13} className="telemetry-icon-gold" />
-          <span>HOROLOGY ARCHIVE: <strong>21 MANUFACTURES</strong></span>
-        </div>
-        <div className="telemetry-item power-reserve">
-          <span className="reserve-label">MAINSPRING:</span>
-          <div className="reserve-meter" title={`Power Reserve: ${powerReserve}%`}>
-            <div className="reserve-fill" style={{ width: `${powerReserve}%` }} />
-          </div>
-          <span className="reserve-val">{powerReserve}% WOUND</span>
-        </div>
-        <div className="telemetry-controls">
-          <button
-            type="button"
-            className="telemetry-btn"
-            onClick={() => setIsAutoWinding(!isAutoWinding)}
-            title={isAutoWinding ? "Pause automatic sweep" : "Engage automatic winding sweep"}
-          >
-            {isAutoWinding ? <Pause size={13} /> : <Play size={13} />}
-            <span>{isAutoWinding ? "PAUSE ROTOR" : "AUTO ROTOR"}</span>
-          </button>
-        </div>
-      </div>
-
-      {/* Main Horological Dial Container */}
+      {/* Main Horological Dial Container with Dual Twin-Crown Winders */}
       <div className="dial-stage-wrapper">
-        {/* Interactive Watch Crown at 3 O'Clock */}
-        <div className={`watch-crown-assembly ${isWindingCrown ? "winding-active" : ""}`}>
-          <div className="crown-stem" />
+        {/* Left Interactive Watch Crown at 9 O'Clock (Previous House) */}
+        <div className={`watch-crown-assembly left-crown ${isWindingLeft ? "winding-active" : ""}`}>
+          <div className="crown-stem stem-left" />
           <button
             type="button"
             className="watch-crown-knob"
-            onClick={windCrown}
-            title="Click to Wind Crown (Advance Horological Dial)"
-            aria-label="Wind Watch Crown"
+            onClick={windCrownReverse}
+            title="Wind Reverse to Previous House"
+            aria-label="Wind Watch Crown to Previous House"
           >
             <div className="knurled-ridges">
               <span /><span /><span /><span /><span /><span />
@@ -192,8 +163,29 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             <div className="crown-jewel" />
           </button>
           <div className="crown-label">
-            <span>WIND CROWN</span>
-            <small>Click to Advance</small>
+            <span>&larr; PREV</span>
+            <small>Rewind House</small>
+          </div>
+        </div>
+
+        {/* Right Interactive Watch Crown at 3 O'Clock (Next House) */}
+        <div className={`watch-crown-assembly right-crown ${isWindingRight ? "winding-active" : ""}`}>
+          <div className="crown-stem stem-right" />
+          <button
+            type="button"
+            className="watch-crown-knob"
+            onClick={windCrownForward}
+            title="Wind Forward to Next House"
+            aria-label="Wind Watch Crown to Next House"
+          >
+            <div className="knurled-ridges">
+              <span /><span /><span /><span /><span /><span />
+            </div>
+            <div className="crown-jewel" />
+          </button>
+          <div className="crown-label">
+            <span>NEXT &rarr;</span>
+            <small>Advance House</small>
           </div>
         </div>
 
@@ -216,8 +208,8 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
           <svg className="dial-chapter-ring-svg" viewBox="0 0 700 700">
             <circle cx="350" cy="350" r="338" fill="none" stroke="#262626" strokeWidth="1.5" />
             <circle cx="350" cy="350" r="310" fill="none" stroke="#d4af37" strokeWidth="1" strokeOpacity="0.4" />
-            <circle cx="350" cy="350" r="220" fill="none" stroke="#333333" strokeWidth="1" strokeDasharray="3 4" strokeOpacity="0.5" />
-            <circle cx="350" cy="350" r="140" fill="none" stroke="#d4af37" strokeWidth="0.8" strokeOpacity="0.25" />
+            <circle cx="350" cy="350" r="230" fill="none" stroke="#333333" strokeWidth="1" strokeDasharray="3 4" strokeOpacity="0.5" />
+            <circle cx="350" cy="350" r="145" fill="none" stroke="#d4af37" strokeWidth="0.8" strokeOpacity="0.25" />
 
             {/* 60 Minute & Hour Markers */}
             {ticks.map((t) => {
@@ -245,8 +237,24 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
 
           {/* Mechanical Skeleton Gear Wheels (Open-Heart Movement) */}
           <div className="dial-skeleton-calibre">
-            <div className="calibre-gear-large" style={{ transform: `rotate(${rotation * 1.6}deg)` }} />
-            <div className="calibre-gear-small" style={{ transform: `rotate(${-rotation * 2.8}deg)` }} />
+            <div
+              className="calibre-gear-large"
+              style={{
+                transform: `rotate(${rotation * 1.6}deg)`,
+                transition: isOpeningSweep
+                  ? "transform 2.2s cubic-bezier(0.2, 0.95, 0.3, 1)"
+                  : "transform 0.65s cubic-bezier(0.2, 0.9, 0.3, 1)",
+              }}
+            />
+            <div
+              className="calibre-gear-small"
+              style={{
+                transform: `rotate(${-rotation * 2.8}deg)`,
+                transition: isOpeningSweep
+                  ? "transform 2.2s cubic-bezier(0.2, 0.95, 0.3, 1)"
+                  : "transform 0.65s cubic-bezier(0.2, 0.9, 0.3, 1)",
+              }}
+            />
             <div className="calibre-escapement-wheel" />
             <div className="calibre-ruby-bearing" />
           </div>
@@ -254,24 +262,30 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
           {/* Rotating Orbital Track with Brand Nodes */}
           <div
             className="dial-orbital-track"
-            style={{ transform: `rotate(${rotation}deg)` }}
+            style={{
+              transform: `rotate(${rotation}deg)`,
+              transition: isOpeningSweep
+                ? "transform 2.2s cubic-bezier(0.2, 0.95, 0.3, 1)"
+                : "transform 0.65s cubic-bezier(0.2, 0.9, 0.3, 1)",
+            }}
           >
             {brands.map((brand, i) => {
               const baseAngle = i * stepAngle;
               const rad = (baseAngle * Math.PI) / 180;
-              // Orbital path radius percentage (38.5% of dial diameter)
-              const radiusPct = 38.5;
+              // Orbital path radius percentage (37.5% of dial diameter)
+              const radiusPct = 37.5;
               const xPct = 50 + radiusPct * Math.cos(rad);
               const yPct = 50 + radiusPct * Math.sin(rad);
-              const isActive = i === activeIndex;
+              // During opening sweep, keep all 21 visible on the ring
+              const isActive = !isOpeningSweep && i === activeIndex;
 
               // Calculate current effective angle relative to top (12 o'clock)
               const effectiveAngle = ((baseAngle + rotation + 90) % 360 + 360) % 360;
               // Node scale & opacity based on proximity to 12 o'clock
               const distFromTop = Math.min(effectiveAngle, 360 - effectiveAngle);
               const depthRatio = 1 - (distFromTop / 180);
-              const nodeScale = 0.65 + (depthRatio * 0.35);
-              const nodeOpacity = isActive ? 0 : Math.max(0.32, depthRatio * 0.92);
+              const nodeScale = 0.72 + (depthRatio * 0.32);
+              const nodeOpacity = isActive ? 0 : Math.max(0.72, depthRatio * 0.98);
 
               return (
                 <div
@@ -284,15 +298,18 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                     opacity: nodeOpacity,
                     pointerEvents: isActive ? "none" : "auto",
                     zIndex: isActive ? 10 : Math.round(depthRatio * 20),
+                    transition: isOpeningSweep
+                      ? "transform 2.2s cubic-bezier(0.2, 0.95, 0.3, 1), opacity 0.5s ease"
+                      : "transform 0.65s cubic-bezier(0.2, 0.9, 0.3, 1), opacity 0.35s ease",
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
                     rotateToBrand(i);
                   }}
-                  title={`Select ${brand.name}`}
+                  title={`Select ${brand.name} (EST. ${brand.est})`}
                 >
                   <div className="node-emblem-wrap">
-                    <WatchBrandLogo brand={brand.name} size={42} className="node-logo-svg" />
+                    <WatchBrandLogo brand={brand.name} size={75} className="node-logo-svg" />
                   </div>
                 </div>
               );
@@ -311,7 +328,7 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
 
               {/* Large 3D Floating Emblem */}
               <div className="stage-brand-emblem">
-                <WatchBrandLogo brand={activeBrand.name} size={96} className="active-stage-svg" />
+                <WatchBrandLogo brand={activeBrand.name} size={160} className="active-stage-svg" />
               </div>
 
               {/* Enter House Luxury Obsidian Pill Button */}
@@ -328,40 +345,6 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
               </Link>
             </div>
           </div>
-        </div>
-
-        {/* Winding Control Panel */}
-        <div className="dial-manual-controls">
-          <button
-            type="button"
-            className="control-step-btn"
-            onClick={windCrownReverse}
-            aria-label="Previous House"
-          >
-            <span>&larr;</span>
-            <small>Previous</small>
-          </button>
-
-          <button
-            type="button"
-            className="control-wind-main-btn"
-            onClick={windCrown}
-            aria-label="Wind Calibre to Next House"
-          >
-            <RotateCcw size={15} className={isWindingCrown ? "spin" : ""} />
-            <span>WIND CALIBRE</span>
-            <small>Advance to Next House</small>
-          </button>
-
-          <button
-            type="button"
-            className="control-step-btn"
-            onClick={windCrown}
-            aria-label="Next House"
-          >
-            <span>&rarr;</span>
-            <small>Next</small>
-          </button>
         </div>
       </div>
     </div>

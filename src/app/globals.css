@@ -4287,11 +4287,11 @@ summary {
 
 /* Hub View Integrated Console Header */
 .watches-category-experience.houses-hub-view {
-  padding: 6px 20px 20px;
+  padding: 4px 20px 10px;
 }
 .houses-hub-view .watches-hero.hub-console-header {
-  padding: 4px 0 8px;
-  margin-bottom: 8px;
+  padding: 2px 0 6px;
+  margin-bottom: 4px;
   border-bottom: 1px solid rgba(212, 175, 55, 0.12);
 }
 .hub-console-row {
@@ -4338,158 +4338,104 @@ summary {
   gap: 6px;
 }
 .houses-hub-view .watches-houses-section {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .horological-dial-experience {
   position: relative;
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto 10px;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Telemetry Header */
-.dial-telemetry-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 390px;
-  padding: 5px 12px;
-  background: rgba(18, 17, 15, 0.85);
-  border: 1px solid #2b2821;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  margin-bottom: 8px;
-  font-family: var(--font-mono, monospace);
-  font-size: 9px;
-  letter-spacing: 0.08em;
-  color: #9c9586;
-}
-.telemetry-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.telemetry-item strong {
-  color: #e5dfd3;
-}
-.telemetry-icon-gold {
-  color: #d4af37;
-}
-.power-reserve {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.reserve-meter {
-  width: 52px;
-  height: 5px;
-  background: #292620;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 1px solid #3d3930;
-}
-.reserve-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #d4af37 0%, #fae29c 100%);
-  border-radius: 3px;
-  transition: width 0.3s ease;
-  box-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
-}
-.reserve-val {
-  font-size: 8.5px;
-  color: #d4af37;
-  font-weight: 700;
-}
-.telemetry-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: #24221c;
-  border: 1px solid #454035;
-  color: #dfdbcf;
-  padding: 3px 8px;
-  border-radius: 14px;
-  font-size: 8.5px;
-  font-family: inherit;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.telemetry-btn:hover {
-  border-color: #d4af37;
-  color: #fff;
-  background: #333027;
-}
-
-/* Dial Stage & Positioning */
+/* Dial Stage & Positioning with Dual Twin Crowns */
 .dial-stage-wrapper {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 8px 0;
   width: 100%;
+  min-height: min(840px, 88vh);
 }
 
-/* Interactive Watch Crown at 3 O'Clock */
+/* Twin Interactive Watch Crowns (Left = Previous House, Right = Next House) */
 .watch-crown-assembly {
   position: absolute;
-  right: calc(50% - 232px);
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   z-index: 60;
 }
+.watch-crown-assembly.right-crown {
+  left: calc(50% + min(420px, 44vh) + 8px);
+}
+.watch-crown-assembly.left-crown {
+  right: calc(50% + min(420px, 44vh) + 8px);
+}
+
 .crown-stem {
   position: absolute;
-  left: -14px;
-  top: 13px;
-  width: 16px;
-  height: 10px;
+  top: 17px;
+  width: 18px;
+  height: 12px;
   background: linear-gradient(180deg, #59554a 0%, #2e2b24 50%, #59554a 100%);
   border-radius: 2px;
   z-index: -1;
 }
+.crown-stem.stem-right {
+  left: -16px;
+}
+.crown-stem.stem-left {
+  right: -16px;
+}
+
 .watch-crown-knob {
   position: relative;
-  width: 30px;
-  height: 38px;
+  width: 36px;
+  height: 46px;
   background: linear-gradient(180deg, #dfd7c2 0%, #998a68 25%, #423b2c 50%, #998a68 75%, #dfd7c2 100%);
-  border: 1px solid #75684a;
-  border-radius: 5px;
+  border: 1.5px solid #75684a;
+  border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7), inset 0 0 5px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8), inset 0 0 8px rgba(255, 255, 255, 0.4);
   transition: transform 0.15s ease, filter 0.15s ease;
   user-select: none;
 }
 .watch-crown-knob:hover {
-  filter: brightness(1.2);
-  transform: scale(1.05);
+  filter: brightness(1.25);
+  transform: scale(1.08);
 }
-.winding-active .watch-crown-knob {
-  animation: crownWind 0.3s cubic-bezier(0.3, 1.4, 0.5, 1);
+.right-crown.winding-active .watch-crown-knob {
+  animation: crownWindForward 0.3s cubic-bezier(0.3, 1.4, 0.5, 1);
 }
-@keyframes crownWind {
-  0% { transform: scale(1.05) rotate(0deg); }
+.left-crown.winding-active .watch-crown-knob {
+  animation: crownWindReverse 0.3s cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+
+@keyframes crownWindForward {
+  0% { transform: scale(1.08) rotate(0deg); }
   50% { transform: scale(0.96) rotate(35deg); }
-  100% { transform: scale(1.05) rotate(0deg); }
+  100% { transform: scale(1.08) rotate(0deg); }
 }
+@keyframes crownWindReverse {
+  0% { transform: scale(1.08) rotate(0deg); }
+  50% { transform: scale(0.96) rotate(-35deg); }
+  100% { transform: scale(1.08) rotate(0deg); }
+}
+
 .knurled-ridges {
   position: absolute;
-  inset: 3px 4px;
+  inset: 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4498,16 +4444,16 @@ summary {
 .knurled-ridges span {
   display: block;
   width: 100%;
-  height: 2px;
+  height: 2.5px;
   background: rgba(30, 27, 22, 0.6);
   border-bottom: 1px solid rgba(255, 248, 224, 0.35);
 }
 .crown-jewel {
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background: radial-gradient(circle at 35% 35%, #5dade2 0%, #1b4f72 70%, #0b253a 100%);
-  box-shadow: 0 0 5px rgba(93, 173, 226, 0.7);
+  box-shadow: 0 0 8px rgba(93, 173, 226, 0.8);
   border: 1px solid #2980b9;
 }
 .crown-label {
@@ -4516,32 +4462,32 @@ summary {
   align-items: center;
   text-align: center;
   font-family: var(--font-mono, monospace);
-  font-size: 7.5px;
-  letter-spacing: 0.1em;
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
   color: #d4af37;
   font-weight: 700;
   pointer-events: none;
 }
 .crown-label small {
-  color: #8c8577;
-  font-size: 6.5px;
+  color: #968f80;
+  font-size: 7.5px;
   letter-spacing: 0.04em;
   font-weight: 400;
 }
 
-/* The Grand Circular Watch Dial */
+/* The Grand Circular Watch Dial (Filling & Touching Screen Top & Bottom) */
 .horological-dial-circle {
   position: relative;
-  width: 390px;
-  height: 390px;
+  width: min(840px, 88vh);
+  height: min(840px, 88vh);
   border-radius: 50%;
   background: radial-gradient(circle at 50% 50%, #151411 0%, #0d0c0a 55%, #050505 100%);
   box-shadow:
-    0 0 0 6px #1a1815,
-    0 0 0 8px #3d372c,
-    0 0 0 10px #1a1815,
-    0 18px 45px rgba(0, 0, 0, 0.95),
-    inset 0 0 60px rgba(0, 0, 0, 0.9);
+    0 0 0 8px #1a1815,
+    0 0 0 11px #3d372c,
+    0 0 0 14px #1a1815,
+    0 24px 60px rgba(0, 0, 0, 0.96),
+    inset 0 0 90px rgba(0, 0, 0, 0.92);
   cursor: grab;
   user-select: none;
   touch-action: none;
@@ -4554,11 +4500,11 @@ summary {
 /* Fluted Metallic Bezel */
 .dial-fluted-bezel {
   position: absolute;
-  inset: -9px;
+  inset: -14px;
   border-radius: 50%;
   pointer-events: none;
-  border: 1.5px solid #574d39;
-  box-shadow: inset 0 0 8px rgba(212, 175, 55, 0.2);
+  border: 2px solid #574d39;
+  box-shadow: inset 0 0 14px rgba(212, 175, 55, 0.25);
 }
 .bezel-metallic-shine {
   position: absolute;
@@ -4592,8 +4538,8 @@ summary {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 210px;
-  height: 210px;
+  width: min(380px, 40vh);
+  height: min(380px, 40vh);
   border-radius: 50%;
   pointer-events: none;
   opacity: 0.28;
@@ -4602,39 +4548,37 @@ summary {
   position: absolute;
   top: 15%;
   left: 15%;
-  width: 90px;
-  height: 90px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: 2px dashed #6b5c3e;
-  box-shadow: inset 0 0 12px rgba(107, 92, 62, 0.4);
-  transition: transform 0.6s cubic-bezier(0.2, 0.9, 0.3, 1);
+  border: 2.5px dashed #6b5c3e;
+  box-shadow: inset 0 0 16px rgba(107, 92, 62, 0.4);
 }
 .calibre-gear-large::before {
   content: "";
   position: absolute;
-  inset: 12px;
+  inset: 18px;
   border-radius: 50%;
-  border: 1.5px solid #52462e;
+  border: 2px solid #52462e;
 }
 .calibre-gear-small {
   position: absolute;
   bottom: 20%;
   right: 18%;
-  width: 62px;
-  height: 62px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   border: 2px dashed #827250;
-  box-shadow: inset 0 0 10px rgba(130, 114, 80, 0.4);
-  transition: transform 0.6s cubic-bezier(0.2, 0.9, 0.3, 1);
+  box-shadow: inset 0 0 14px rgba(130, 114, 80, 0.4);
 }
 .calibre-escapement-wheel {
   position: absolute;
   bottom: 28%;
   left: 26%;
-  width: 34px;
-  height: 34px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  border: 1.5px solid #d4af37;
+  border: 2px solid #d4af37;
   animation: tourbillonPulse 2s ease-in-out infinite;
 }
 @keyframes tourbillonPulse {
@@ -4646,11 +4590,11 @@ summary {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 9px;
-  height: 9px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: radial-gradient(circle at 35% 35%, #ff4d6d 0%, #c9184a 60%, #590d22 100%);
-  box-shadow: 0 0 6px rgba(255, 77, 109, 0.8);
+  box-shadow: 0 0 8px rgba(255, 77, 109, 0.85);
   border: 1px solid #ff758f;
 }
 
@@ -4661,36 +4605,34 @@ summary {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  transition: transform 0.65s cubic-bezier(0.2, 0.9, 0.3, 1);
   will-change: transform;
 }
 .dial-brand-node {
   position: absolute;
   pointer-events: auto;
   cursor: pointer;
-  transition: transform 0.35s ease, opacity 0.35s ease;
   will-change: transform, opacity;
 }
 .node-emblem-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 6px;
+  padding: 4px 8px;
   color: #f7f5f0;
   transition: filter 0.25s ease, transform 0.25s ease;
 }
 .node-logo-svg {
   width: auto;
-  max-width: 42px;
-  height: 17px;
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.9));
+  max-width: 76px;
+  height: 28px;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.96));
 }
 .dial-brand-node:hover .node-emblem-wrap {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 14px rgba(212, 175, 55, 0.75)) brightness(1.2);
+  transform: scale(1.24);
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.95)) brightness(1.35);
 }
 .dial-brand-node.active-node .node-emblem-wrap {
-  filter: drop-shadow(0 0 18px rgba(212, 175, 55, 0.95)) brightness(1.25);
+  filter: drop-shadow(0 0 22px rgba(212, 175, 55, 0.98)) brightness(1.35);
 }
 
 /* Center Stage (The Focal Showcase Aperture) */
@@ -4699,15 +4641,15 @@ summary {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 195px;
-  height: 195px;
+  width: min(340px, 36vh);
+  height: min(340px, 36vh);
   border-radius: 50%;
   background: radial-gradient(circle at 50% 45%, rgba(26, 23, 18, 0.96) 0%, rgba(12, 11, 9, 0.98) 75%, rgba(6, 6, 5, 0.99) 100%);
-  border: 1.5px solid rgba(212, 175, 55, 0.4);
+  border: 2px solid rgba(212, 175, 55, 0.5);
   box-shadow:
-    0 0 30px rgba(0, 0, 0, 0.9),
-    inset 0 0 20px rgba(212, 175, 55, 0.08),
-    0 0 16px rgba(212, 175, 55, 0.2);
+    0 0 45px rgba(0, 0, 0, 0.92),
+    inset 0 0 35px rgba(212, 175, 55, 0.12),
+    0 0 25px rgba(212, 175, 55, 0.26);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4717,9 +4659,9 @@ summary {
 }
 .stage-halo {
   position: absolute;
-  inset: -4px;
+  inset: -5px;
   border-radius: 50%;
-  border: 1px dashed rgba(212, 175, 55, 0.25);
+  border: 1px dashed rgba(212, 175, 55, 0.3);
   pointer-events: none;
   animation: haloSpin 60s linear infinite;
 }
@@ -4731,37 +4673,37 @@ summary {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10px 8px;
+  padding: 14px 12px;
   width: 100%;
 }
 .stage-pedigree-tag {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   font-family: var(--font-mono, monospace);
-  font-size: 7.5px;
-  letter-spacing: 0.16em;
+  font-size: 10px;
+  letter-spacing: 0.18em;
   color: #d4af37;
   text-transform: uppercase;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
   font-weight: 600;
 }
 .stage-pedigree-tag .dot {
   color: #8c8474;
 }
 .stage-brand-emblem {
-  height: 50px;
+  height: min(78px, 8.5vh);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   color: #fff;
-  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 18px rgba(212, 175, 55, 0.45));
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.92)) drop-shadow(0 0 22px rgba(212, 175, 55, 0.5));
 }
 .active-stage-svg {
   width: auto;
-  max-width: 120px;
-  height: 42px;
+  max-width: min(180px, 20vh);
+  height: min(62px, 7vh);
 }
 
 /* Haute Horlogerie Obsidian Crystal Action Pill (Zero Generic Yellow) */
@@ -4769,22 +4711,22 @@ summary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  padding: 5px 12px;
-  border-radius: 16px;
-  background: rgba(18, 16, 13, 0.88);
-  border: 1px solid rgba(212, 175, 55, 0.5);
+  gap: 7px;
+  padding: 8px 22px;
+  border-radius: 22px;
+  background: rgba(18, 16, 13, 0.94);
+  border: 1.5px solid rgba(212, 175, 55, 0.6);
   color: #f7f3e8;
   font-family: var(--font-mono, monospace);
-  font-size: 8.5px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   text-decoration: none;
   box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.65),
-    inset 0 1px 0 rgba(255, 248, 220, 0.2),
-    0 0 8px rgba(212, 175, 55, 0.18);
+    0 5px 16px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 248, 220, 0.25),
+    0 0 12px rgba(212, 175, 55, 0.25);
   backdrop-filter: blur(8px);
   transition: all 0.22s cubic-bezier(0.2, 0.9, 0.3, 1);
 }
@@ -4794,135 +4736,14 @@ summary {
   color: #ffffff;
   transform: translateY(-1.5px) scale(1.04);
   box-shadow:
-    0 5px 16px rgba(0, 0, 0, 0.8),
+    0 6px 18px rgba(0, 0, 0, 0.85),
     inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    0 0 16px rgba(212, 175, 55, 0.5);
-}
-
-/* Winding Manual Controls Below Dial */
-.dial-manual-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 10px;
-}
-.control-step-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 32px;
-  border-radius: 6px;
-  background: #191815;
-  border: 1px solid #333027;
-  color: #c9c3b4;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.control-step-btn span {
-  font-size: 12px;
-  line-height: 1;
-}
-.control-step-btn small {
-  font-size: 7px;
-  color: #8c8475;
-}
-.control-step-btn:hover {
-  border-color: #d4af37;
-  color: #fff;
-  background: #25231c;
-}
-.control-wind-main-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 16px;
-  height: 32px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #2a2720 0%, #171612 100%);
-  border: 1px solid #d4af37;
-  color: #d4af37;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 0 8px rgba(212, 175, 55, 0.12);
-  transition: all 0.2s ease;
-}
-.control-wind-main-btn span {
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-}
-.control-wind-main-btn small {
-  font-size: 7px;
-  color: #a39c8c;
-  letter-spacing: 0.04em;
-}
-.control-wind-main-btn:hover {
-  background: linear-gradient(180deg, #3d372b 0%, #222019 100%);
-  box-shadow: 0 5px 18px rgba(212, 175, 55, 0.25);
-  transform: translateY(-2px);
-}
-
-@media (max-height: 850px) {
-  .houses-hub-view .watches-hero {
-    padding: 10px 0 14px;
-    margin-bottom: 12px;
-  }
-  .houses-hub-view .watches-hero h1 {
-    font-size: 28px;
-    margin-bottom: 4px;
-  }
-  .houses-hub-view .watches-hero-subtitle {
-    margin-bottom: 8px;
-    font-size: 13px;
-  }
-  .dial-telemetry-bar {
-    margin-bottom: 12px;
-    padding: 6px 14px;
-  }
-  .horological-dial-circle {
-    width: 440px;
-    height: 440px;
-  }
-  .watch-crown-assembly {
-    right: calc(50% - 262px);
-  }
-  .dial-center-stage {
-    width: 220px;
-    height: 220px;
-  }
-  .stage-brand-emblem {
-    height: 56px;
-    margin-bottom: 8px;
-  }
-  .active-stage-svg {
-    max-width: 140px;
-    height: 48px;
-  }
-  .dial-manual-controls {
-    margin-top: 14px;
-  }
+    0 0 18px rgba(212, 175, 55, 0.55);
 }
 
 @media (max-width: 900px) {
   .watch-crown-assembly {
     display: none;
-  }
-  .horological-dial-circle {
-    width: 440px;
-    height: 440px;
-  }
-  .dial-center-stage {
-    width: 220px;
-    height: 220px;
-  }
-  .stage-brand-emblem {
-    height: 54px;
-  }
-  .active-stage-svg {
-    height: 46px;
   }
 }
 
