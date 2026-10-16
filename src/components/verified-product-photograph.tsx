@@ -31,11 +31,11 @@ export function VerifiedProductPhotograph({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        background: "radial-gradient(circle at 50% 50%, rgba(30, 41, 59, 0.45) 0%, rgba(10, 13, 19, 0.95) 100%)",
+        background: "transparent",
         width: "100%",
         height: "100%",
-        borderRadius: "8px",
-        border: "1px solid rgba(255, 255, 255, 0.06)",
+        borderRadius: "0px",
+        border: "none",
       }}
     >
       <div
