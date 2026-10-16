@@ -10,6 +10,7 @@ import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { StoreContext, type StoreContextType } from "./store-context";
 import {
   ArrowLeft,
@@ -821,8 +822,37 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       </span>
                     </div>
                     <div className="parallax-card-visual">
-                      <div className="art-frame">
-                        <ProductArt product={col.featured} />
+                      <div className={`art-frame ${col.id === "electronics" ? "ecosystem-frame" : ""}`}>
+                        {col.id === "electronics" ? (
+                          <div
+                            style={{
+                              position: "relative",
+                              width: "100%",
+                              height: "100%",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              padding: "16px",
+                            }}
+                          >
+                            <Image
+                              src="/images/departments/electronics-apple-ecosystem-hero.webp"
+                              alt="Electronics Department: Full Ecosystem of Mac, MacBook, iPad & iPhone"
+                              width={800}
+                              height={530}
+                              quality={90}
+                              priority
+                              style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "contain",
+                                filter: "drop-shadow(0 18px 36px rgba(0,0,0,0.5))",
+                              }}
+                            />
+                          </div>
+                        ) : (
+                          <ProductArt product={col.featured} />
+                        )}
                       </div>
                       <span className="parallax-count-pill">
                         {col.count} exact variants

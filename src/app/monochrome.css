@@ -1298,6 +1298,12 @@ select option {
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.parallax-card-visual .art-frame.ecosystem-frame {
+  width: 100%;
+  max-width: 520px;
+  height: 360px;
+}
+
 .parallax-category-card:hover .parallax-card-visual .art-frame {
   transform: scale(1.05);
 }
