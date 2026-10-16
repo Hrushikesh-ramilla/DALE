@@ -1,0 +1,28 @@
+{
+  "entries": {
+    "REPAIR-BREITLING-A17328101B1A1": {
+      "productName": "Breitling Avenger Automatic 42 · A17328101B1A1",
+      "brand": "Breitling",
+      "color": "Black dial / Steel bracelet",
+      "attributes": {
+        "brand": "breitling",
+        "modelName": "avenger automatic 42",
+        "caseDiameterMm": 42
+      },
+      "url": "/images/verified/prod-watches-breitling-breitling-avenger-automatic-42-a2edc14f0fa34ebc.webp",
+      "sha256": "a2edc14f0fa34ebc01bf0d08534d5d61fa53732fea2817ce98e40e82f49882c8",
+      "sourceSha256": "1a85ca033aebe116d435afe3b4fc3f4f6f2bf0742a83f1a1daf228c1083bd221",
+      "bytes": 43134,
+      "width": 960,
+      "height": 960,
+      "alt": "Breitling Avenger Automatic 42 A17328101B1A1 with steel bracelet",
+      "sourcePage": "https://www.breitling.com/us-en/watches/avenger/avenger-automatic-42/A17328101B1A1/",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/a17328101b1a1-soldier_1c790088_thumbnail_1024.webp",
+      "sourceSku": "A17328101B1A1",
+      "attribution": "Breitling manufacturer product photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "Manually viewed fashion-watches-0.png position5: black dial and steel bracelet. Manufacturer structured product name and exact reference A17328101B1A1 bind photograph to source. New SKU record corrects old leather-strap contradiction and omits unverified specifications.",
+      "verified": true
+    }
+  }
+}

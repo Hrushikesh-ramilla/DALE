@@ -1,0 +1,2713 @@
+{
+  "manifest": {
+    "schemaVersion": "catalog-manifest-v2",
+    "id": "clothing-canali-media-repair-2026-10-14-v2",
+    "reviewedBy": "manufacturer-item-style-color-size-photo-review",
+    "reviewedAt": "2026-10-14",
+    "approvedSourceHosts": [
+      "intl.canali.com"
+    ],
+    "products": [
+      {
+        "id": "REPAIR-CANALI-CAC02367288",
+        "name": "Canali Slim-fit shirt in white cotton · CCLX0C3-GA60135-01 · 37",
+        "category": "clothing",
+        "description": "Cotton formal shirt with spread collar. Made in the most elegant of colours in the comfortable slim fit, and characterised by a refined design with pleats, it is an essential garment in any modern man's wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: CCLX0C3-GA60135-01",
+          "Manufacturer item SKU: CAC02367288",
+          "Size label: 37",
+          "Color: White",
+          "Manufacturer fit: Slim",
+          "Formal shirt",
+          "Spread collar",
+          "Collar height: 3.8 cm",
+          "Removable stays",
+          "Rear darts",
+          "Smooth front with no placket",
+          "Rounded cuffs",
+          "100% cotton",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://intl.canali.com/slim-fit-shirt-in-white-cotton-cclx0c3ga6013501/p",
+        "familyId": "canali:2966309",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "cclx0c3-ga60135-01",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/457007/CCLX0C3-GA60135-01_a_.jpg?v=638949961812630000",
+          "source": "https://intl.canali.com/slim-fit-shirt-in-white-cotton-cclx0c3ga6013501/p",
+          "alt": "Canali Slim-fit shirt in white cotton CCLX0C3-GA60135-01",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "CCLX0C3-GA60135-01",
+        "skuVariant": "White · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02446844",
+        "name": "Canali Sea Island light blue cotton twill regular-fit shirt · ECL7018-GX02451-401 · 37",
+        "category": "clothing",
+        "description": "High End Sea Island cotton twill dress shirt. The semi-spread collar and regular fit define a balanced and well-proportioned style, designed for formal wear. The mother-of-pearl buttons and clean construction, without placket, complete this highly tailored piece. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: ECL7018-GX02451-401",
+          "Manufacturer item SKU: CAC02446844",
+          "Size label: 37",
+          "Color: Light Blue",
+          "Manufacturer fit: Regular",
+          "Dress shirt",
+          "High End",
+          "Semi-spread collar",
+          "Collar height 4.2 cm",
+          "Smooth front with no placket",
+          "Removable ribs",
+          "Semi-rounded cuff",
+          "Mother of pearl buttons",
+          "100% Cotton",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Light Blue",
+        "source": "https://intl.canali.com/sea-island-light-blue-cotton-twill-regular-fit-shirt-ecl7018gx02451401/p",
+        "familyId": "canali:3230896",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ecl7018-gx02451-401",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/542500/ECL7018-GX02451-401_a_.jpg?v=639215359781670000",
+          "source": "https://intl.canali.com/sea-island-light-blue-cotton-twill-regular-fit-shirt-ecl7018gx02451401/p",
+          "alt": "Canali Sea Island light blue cotton twill regular-fit shirt ECL7018-GX02451-401",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "ECL7018-GX02451-401",
+        "skuVariant": "Light Blue · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02424402",
+        "name": "Canali Impeccabile light blue twill cotton regular-fit shirt · NCL7018-GR03721-401 · 37",
+        "category": "clothing",
+        "description": "Formal twill cotton shirt with a regular fit, a combination of traditional elegance and contemporary functionality. The compact fabric offers comfort and durability, while the semi-spread collar and clean lines enhance a refined silhouette. Part of Canali's Impeccabile selection, this garment is made from an especially high-performance, high-quality fabric whose resistance to wrinkling gives a consistently flawless appearance. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: NCL7018-GR03721-401",
+          "Manufacturer item SKU: CAC02424402",
+          "Size label: 37",
+          "Color: Light Blue",
+          "Manufacturer fit: Regular",
+          "Formal shirt",
+          "Impeccabile",
+          "Semi-spread collar",
+          "Collar height 4.2 cm",
+          "Removable ribs",
+          "Smooth back with no pleats",
+          "Smooth front with no placket",
+          "Semi-rounded cuff",
+          "100% Cotton",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Light Blue",
+        "source": "https://intl.canali.com/impeccabile-light-blue-twill-cotton-regular-fit-shirt-ncl7018gr03721401/p",
+        "familyId": "canali:3153158",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ncl7018-gr03721-401",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/523863/NCL7018-GR03721-401_a_.jpg?v=639086512330970000",
+          "source": "https://intl.canali.com/impeccabile-light-blue-twill-cotton-regular-fit-shirt-ncl7018gr03721401/p",
+          "alt": "Canali Impeccabile light blue twill cotton regular-fit shirt NCL7018-GR03721-401",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "NCL7018-GR03721-401",
+        "skuVariant": "Light Blue · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02420488",
+        "name": "Canali Impeccabile cream twill cotton regular-fit formal shirt · NCL7018-GR03441-701 · 37",
+        "category": "clothing",
+        "description": "Formal shirt made of twill cotton in a regular fit that provides comfort and clean lines. Ideal for the man who wants versatile elegance, suitable for both formal combinations with a tie and more relaxed looks. Part of Canali's Impeccabile selection, this garment is made from a particularly high-performance, high-quality fabric whose ability to resist wrinkling gives it a consistently flawless look. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: NCL7018-GR03441-701",
+          "Manufacturer item SKU: CAC02420488",
+          "Size label: 37",
+          "Color: White",
+          "Manufacturer fit: Regular",
+          "Formal shirt",
+          "Impeccabile",
+          "Semi-spread collar",
+          "Collar height 4.2 cm",
+          "Removable ribs",
+          "Smooth back with no pleats",
+          "Smooth front with no placket",
+          "Semi-rounded cuff",
+          "100% Cotton",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://intl.canali.com/impeccabile-cream-twill-cotton-regular-fit-formal-shirt-ncl7018gr03441701/p",
+        "familyId": "canali:3147014",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ncl7018-gr03441-701",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/528715/NCL7018-GR03441-701_a_.jpg?v=639093325613770000",
+          "source": "https://intl.canali.com/impeccabile-cream-twill-cotton-regular-fit-formal-shirt-ncl7018gr03441701/p",
+          "alt": "Canali Impeccabile cream twill cotton regular-fit formal shirt NCL7018-GR03441-701",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "NCL7018-GR03441-701",
+        "skuVariant": "White · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02375511",
+        "name": "Canali Impeccabile regular fit shirt in light blue cotton · NCL7098-GR03299-301 · 37",
+        "category": "clothing",
+        "description": "This shirt is made from pure Impeccabile cotton: a high-quality fabric that offers a truly flawless look. Presented in an evergreen colour in the comfortable lines of the regular fit, it represents a mix of style and functionality in the formal wardrobe of today's man. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: NCL7098-GR03299-301",
+          "Manufacturer item SKU: CAC02375511",
+          "Size label: 37",
+          "Color: Light Blue",
+          "Manufacturer fit: Slim",
+          "Formal shirt",
+          "Impeccabile fabric",
+          "Semi-spread collar",
+          "Collar height: 4.2 cm",
+          "Removable stays",
+          "Smooth back with no darts",
+          "Smooth front with no placket",
+          "Semi-rounded cuffs",
+          "100% cotton ",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Light Blue",
+        "source": "https://intl.canali.com/impeccabile-regular-fit-shirt-in-light-blue-cotton-ncl7098gr03299301/p",
+        "familyId": "canali:2996590",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ncl7098-gr03299-301",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/458675/NCL7098-GR03299-301_a_.jpg?v=639047028435030000",
+          "source": "https://intl.canali.com/impeccabile-regular-fit-shirt-in-light-blue-cotton-ncl7098gr03299301/p",
+          "alt": "Canali Impeccabile regular fit shirt in light blue cotton NCL7098-GR03299-301",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "NCL7098-GR03299-301",
+        "skuVariant": "Light Blue · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02369213",
+        "name": "Canali Regular fit shirt in light blue cotton · ECL7018-GX02022-402 · 37",
+        "category": "clothing",
+        "description": "Attention to detail and contemporary comfort intertwine in this Exclusive cotton poplin shirt in a distinctive colour scheme. An expression of gentle elegance, defined by soft, cosy lines and refined mother-of-pearl buttons, it tastefully enhances the most exclusive looks of the modern gentleman. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: ECL7018-GX02022-402",
+          "Manufacturer item SKU: CAC02369213",
+          "Size label: 37",
+          "Color: Light Blue",
+          "Manufacturer fit: Regular",
+          "Formal shirt",
+          "New classic collar",
+          "Collar height 4.2cm",
+          "Smooth front with no placket",
+          "Removable stays",
+          "Smooth back with no pleats",
+          "Semi-rounded cuffs",
+          "Mother-of-pearl buttons",
+          "100% double-twisted cotton",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Light Blue",
+        "source": "https://intl.canali.com/regular-fit-shirt-in-light-blue-cotton-ecl7018gx02022402/p",
+        "familyId": "canali:2971545",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ecl7018-gx02022-402",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/456167/ECL7018-GX02022-402_a_.jpg?v=639047032025430000",
+          "source": "https://intl.canali.com/regular-fit-shirt-in-light-blue-cotton-ecl7018gx02022402/p",
+          "alt": "Canali Regular fit shirt in light blue cotton ECL7018-GX02022-402",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "ECL7018-GX02022-402",
+        "skuVariant": "Light Blue · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02369202",
+        "name": "Canali Regular fit shirt in white cotton · ECL7018-GX02022-001 · 37",
+        "category": "clothing",
+        "description": "Made with the defined and comfortable lines of a regular fit, this formal cotton poplin shirt with a semi-spread collar expresses contemporary elegance. A garment with authentic taste to gracefully enhance every business look. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: ECL7018-GX02022-001",
+          "Manufacturer item SKU: CAC02369202",
+          "Size label: 37",
+          "Color: White",
+          "Manufacturer fit: Regular",
+          "Formal shirt",
+          "Semi-spread collar",
+          "Collar height 4.2cm",
+          "Removable stays",
+          "Smooth back with no darts",
+          "Smooth front with no box pleat",
+          "Semi-rounded cuffs",
+          "100% cotton 140/2",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://intl.canali.com/regular-fit-shirt-in-white-cotton-ecl7018gx02022001/p",
+        "familyId": "canali:2971544",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ecl7018-gx02022-001",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/455991/ECL7018-GX02022-001_a_.jpg?v=639047035591930000",
+          "source": "https://intl.canali.com/regular-fit-shirt-in-white-cotton-ecl7018gx02022001/p",
+          "alt": "Canali Regular fit shirt in white cotton ECL7018-GX02022-001",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "ECL7018-GX02022-001",
+        "skuVariant": "White · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02365797",
+        "name": "Canali Regular-fit shirt in white cotton · CCL7018-GA60135-01 · 37",
+        "category": "clothing",
+        "description": "Defined by the comfort of the regular fit, this cotton shirt with a semi-spread collar offers a guarantee of style and elegance. An essential garment for the modern gentleman in search of a well-groomed look for formal occasions. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: CCL7018-GA60135-01",
+          "Manufacturer item SKU: CAC02365797",
+          "Size label: 37",
+          "Color: White",
+          "Formal shirt",
+          "Semi-spread collar",
+          "Collar height 4.2cm",
+          "Removable stays",
+          "Smooth back with no darts",
+          "Smooth front with no placket",
+          "100% cotton ",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://intl.canali.com/regular-fit-shirt-in-white-cotton-ccl7018ga6013501/p",
+        "familyId": "canali:2962863",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ccl7018-ga60135-01",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/456035/CCL7018-GA60135-01_a_.jpg?v=638949966119030000",
+          "source": "https://intl.canali.com/regular-fit-shirt-in-white-cotton-ccl7018ga6013501/p",
+          "alt": "Canali Regular-fit shirt in white cotton CCL7018-GA60135-01",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "CCL7018-GA60135-01",
+        "skuVariant": "White · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02365786",
+        "name": "Canali Regular fit shirt with double-cuff in white cotton · CCL7018-GA60135-01P · 37",
+        "category": "clothing",
+        "description": "Defined by the comfort of the regular fit, this cotton shirt with a semi-spread collar offers a guarantee of style and elegance. An essential garment for the modern gentleman in search of a well-groomed look for formal occasions. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: CCL7018-GA60135-01P",
+          "Manufacturer item SKU: CAC02365786",
+          "Size label: 37",
+          "Color: White",
+          "Formal shirt",
+          "Semi-spread collar",
+          "Collar height 4.2cm",
+          "Removable stays",
+          "Smooth back with no darts",
+          "Smooth front with no placket",
+          "Semi-rounded and double cuff",
+          "100% cotton ",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://intl.canali.com/regular-fit-shirt-with-double-cuff-in-white-cotton-ccl7018ga6013501p/p",
+        "familyId": "canali:2962862",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ccl7018-ga60135-01p",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/489642/CCL7018-GA60135-01P_a_.jpg?v=639047047266930000",
+          "source": "https://intl.canali.com/regular-fit-shirt-with-double-cuff-in-white-cotton-ccl7018ga6013501p/p",
+          "alt": "Canali Regular fit shirt with double-cuff in white cotton CCL7018-GA60135-01P",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "CCL7018-GA60135-01P",
+        "skuVariant": "White · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-CAC02365775",
+        "name": "Canali Regular fit ceremony shirt with double cuffs in white cotton · CCL7090-GA60130-01P · 37",
+        "category": "clothing",
+        "description": "Cotton dress shirt Featuring a comfortable modern fit, it hugs the silhouette without being restrictive, ensuring lightweight comfort for the most special occasions. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 36900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: CCL7090-GA60130-01P",
+          "Manufacturer item SKU: CAC02365775",
+          "Size label: 37",
+          "Color: White",
+          "Dress shirt",
+          "Collar with concealed buttons",
+          "Semi-rounded and double cuff",
+          "Collar height 4.1cm",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://intl.canali.com/regular-fit-ceremony-shirt-with-double-cuffs-in-white-cotton-ccl7090ga6013001p/p",
+        "familyId": "canali:2962861",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "37",
+          "brand": "canali",
+          "modelName": "ccl7090-ga60130-01p",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/456333/CCL7090-GA60130-01P_a_.jpg?v=639047041752870000",
+          "source": "https://intl.canali.com/regular-fit-ceremony-shirt-with-double-cuffs-in-white-cotton-ccl7090ga6013001p/p",
+          "alt": "Canali Regular fit ceremony shirt with double cuffs in white cotton CCL7090-GA60130-01P",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "shirts",
+        "modelName": "CCL7090-GA60130-01P",
+        "skuVariant": "White · 37"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI05834968",
+        "name": "Canali Suit in navy blue wool · 12280/19-AS10315-31 · 44",
+        "category": "clothing",
+        "description": "Neat lines enhance the elegance of this pure wool suit, defined by the comfort of the regular fit. Consisting of a single-breasted jacket and pants with a practical, dartless design, it has been created for the businessman who likes to stand out with his style choices. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 12280/19-AS10315-31",
+          "Manufacturer item SKU: ABI05834968",
+          "Size label: 44",
+          "Color: Blue",
+          "Single-breasted jacket with two buttons",
+          "Slash pockets with flaps and slash breast pocket",
+          "Jacket length 75 cm in size 50",
+          "pants without pleats",
+          "Slanted pockets and two rear welt pockets",
+          "Cuff 19.5cm",
+          "4-button single-breasted waistcoat, piped pockets",
+          "100% wool",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/suit-in-navy-blue-wool-12280-19as1031531/p",
+        "familyId": "canali:3107333",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "12280/19-as10315-31",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/502907/12280-19-AS10315-31_a_.jpg?v=638995798262970000",
+          "source": "https://intl.canali.com/suit-in-navy-blue-wool-12280-19as1031531/p",
+          "alt": "Canali Suit in navy blue wool 12280/19-AS10315-31",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "12280/19-AS10315-31",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI06268196",
+        "name": "Canali Suit in navy blue wool · 12280/20-AS10315-31 · 44",
+        "category": "clothing",
+        "description": "Neat lines enhance the elegance of this pure wool suit, defined by the comfort of the regular fit. Consisting of a single-breasted jacket and pants with a practical, dartless design, it has been created for the businessman who likes to stand out with his style choices. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 12280/20-AS10315-31",
+          "Manufacturer item SKU: ABI06268196",
+          "Size label: 44",
+          "Color: Blue",
+          "Single-breasted jacket with two buttons",
+          "Slash pockets with flaps and slash breast pocket",
+          "Jacket length 75 cm in size 50",
+          "pants without pleats",
+          "Slanted pockets and two rear welt pockets",
+          "Cuff 19.5cm",
+          "100% wool",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/suit-in-navy-blue-wool-12280-20as1031531/p",
+        "familyId": "canali:3261227",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "12280/20-as10315-31",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/551165/12280-20-AS10315-31_a_.jpg?v=639269543454200000",
+          "source": "https://intl.canali.com/suit-in-navy-blue-wool-12280-20as1031531/p",
+          "alt": "Canali Suit in navy blue wool 12280/20-AS10315-31",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "12280/20-AS10315-31",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI06025618",
+        "name": "Canali Light blue denim-effect wool regular-fit suit · 22280/19-AA02524-405 · 44",
+        "category": "clothing",
+        "description": "This 150's pure wool single-breasted suit interprets contemporary elegance with lean lines and harmonious proportions. The modern fit offers balance and comfort, while the two-button jacket and pleatless pants define a clean, current profile. The fineness of the fabric gives the garment a soft touch and lets the pants fall impeccably. Ideal for the man who seeks sophistication and versatility on formal occasions. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 22280/19-AA02524-405",
+          "Manufacturer item SKU: ABI06025618",
+          "Size label: 44",
+          "Color: Light Blue",
+          "Manufacturer fit: Regular",
+          "Unlined single-breasted two-button jacket",
+          "Welted pockets with flap and slit breast pocket",
+          "Jacket length 75 cm in size 50",
+          "Pleatless pants",
+          "American-style pockets and two welted back pockets",
+          "Hem 19.5 cm",
+          "100% wool ",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Light Blue",
+        "source": "https://intl.canali.com/light-blue-denim-effect-wool-regular-fit-suit-22280-19aa02524405/p",
+        "familyId": "canali:3153643",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "22280/19-aa02524-405",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/527705/22280-19-AA02524-405_a_.jpg?v=639092630368630000",
+          "source": "https://intl.canali.com/light-blue-denim-effect-wool-regular-fit-suit-22280-19aa02524405/p",
+          "alt": "Canali Light blue denim-effect wool regular-fit suit 22280/19-AA02524-405",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "22280/19-AA02524-405",
+        "skuVariant": "Light Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI05977876",
+        "name": "Canali Black wool tuxedo with peak lapels · 12786/15-BF10915-10 · 44",
+        "category": "clothing",
+        "description": "Whether you are attending a black-tie event or want to make an impression at an evening soirée, a classic black tuxedo should always be on call in your wardrobe. This refined style, in pure wool, cuts an elegant silhouette and features silk lapels on the jacket and a silk waistband and stripes down the sides of the pants making for distinctive finishing touches. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 12786/15-BF10915-10",
+          "Manufacturer item SKU: ABI05977876",
+          "Size label: 44",
+          "Color: Black",
+          "Tuxedo, one button, besom pockets, breast welt pocket, silk peak lapel ",
+          "Pants: flat-front, quarter-top pockets, two back besom pockets, silk belt and side band, leg bottom: 19.5cm/7.7\" ",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://intl.canali.com/black-wool-tuxedo-with-peak-lapels-12786-15bf1091510/p",
+        "familyId": "canali:3124185",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "12786/15-bf10915-10",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/520666/12786-15-BF10915-10_a_.jpg?v=639076302321800000",
+          "source": "https://intl.canali.com/black-wool-tuxedo-with-peak-lapels-12786-15bf1091510/p",
+          "alt": "Canali Black wool tuxedo with peak lapels 12786/15-BF10915-10",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "12786/15-BF10915-10",
+        "skuVariant": "Black · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI06268313",
+        "name": "Canali Suit in blue wool · 12280/20-AS10315-32 · 44",
+        "category": "clothing",
+        "description": "Neat lines enhance the elegance of this pure wool suit, defined by the comfort of the regular fit. Consisting of a single-breasted jacket and pants with a practical, dartless design, it has been created for the businessman who likes to stand out with his style choices. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 12280/20-AS10315-32",
+          "Manufacturer item SKU: ABI06268313",
+          "Size label: 44",
+          "Color: Blue",
+          "Manufacturer fit: Regular",
+          "Single-breasted jacket with two buttons",
+          "Slash pockets with flaps and slash breast pocket",
+          "Jacket length 75 cm in size 50",
+          "pants without pleats",
+          "Slanted pockets and two rear welt pockets",
+          "Cuff 19.5cm",
+          "100% wool",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/suit-in-blue-wool-12280-20as1031532/p",
+        "familyId": "canali:3261236",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "12280/20-as10315-32",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/551087/12280-20-AS10315-32_a_.jpg?v=639269541782870000",
+          "source": "https://intl.canali.com/suit-in-blue-wool-12280-20as1031532/p",
+          "alt": "Canali Suit in blue wool 12280/20-AS10315-32",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "12280/20-AS10315-32",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI06268235",
+        "name": "Canali Charcoal grey pure wool suit · 12280/20-AS10316-12 · 44",
+        "category": "clothing",
+        "description": "The epitome of authentic and timeless elegance, this suit combines the comfort of a regular fit with a refined colour scheme. Made up of a single-breasted jacket and flat front pants, it is designed for gentlemen in search of a refined yet distinctive style. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 12280/20-AS10316-12",
+          "Manufacturer item SKU: ABI06268235",
+          "Size label: 44",
+          "Color: Grey",
+          "Manufacturer fit: Regular",
+          "Single-breasted two-button jacket",
+          "Slash pockets with flaps and a slash breast pocket",
+          "Jacket length: 75 cm in size 50",
+          "Flat front pants",
+          "Slanted pockets and two rear welt pockets",
+          "Hem width: 19.5 cm",
+          "100% wool",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Grey",
+        "source": "https://intl.canali.com/charcoal-grey-pure-wool-suit-12280-20as1031612/p",
+        "familyId": "canali:3261230",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "12280/20-as10316-12",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/551009/12280-20-AS10316-12_a_.jpg?v=639269540260700000",
+          "source": "https://intl.canali.com/charcoal-grey-pure-wool-suit-12280-20as1031612/p",
+          "alt": "Canali Charcoal grey pure wool suit 12280/20-AS10316-12",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "12280/20-AS10316-12",
+        "skuVariant": "Grey · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI06254295",
+        "name": "Canali Suit in black wool · 12280/20-AS10315-10 · 44",
+        "category": "clothing",
+        "description": "Neat lines enhance the elegance of this pure wool suit, defined by the comfort of the regular fit. Consisting of a single-breasted jacket and pants with a practical, dartless design, it has been created for the businessman who likes to stand out with his style choices. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 12280/20-AS10315-10",
+          "Manufacturer item SKU: ABI06254295",
+          "Size label: 44",
+          "Color: Black",
+          "Manufacturer fit: Regular",
+          "Single-breasted jacket with two buttons",
+          "Slash pockets with flaps and slash breast pocket",
+          "Jacket length 75 cm in size 50",
+          "pants without pleats",
+          "Slanted pockets and two rear welt pockets",
+          "Cuff 19.5cm",
+          "100% wool",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://intl.canali.com/suit-in-black-wool-12280-20as1031510/p",
+        "familyId": "canali:3261124",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "12280/20-as10315-10",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/551243/12280-20-AS10315-10_a_.jpg?v=639269545169930000",
+          "source": "https://intl.canali.com/suit-in-black-wool-12280-20as1031510/p",
+          "alt": "Canali Suit in black wool 12280/20-AS10315-10",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "12280/20-AS10315-10",
+        "skuVariant": "Black · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI06247241",
+        "name": "Canali Canali Travel navy blue cashmere modern-fit tuxedo · E15786/23-AX06219-301 · 44",
+        "category": "clothing",
+        "description": "Single-breasted Travel cashmere tuxedo with silk peak lapels and a single button closure. The jacket features piping pockets, while the pants are finished with a silk belt and side band. The lightweight construction and modern fit define contemporary proportions, for a formal wardrobe designed for the modern man. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: E15786/23-AX06219-301",
+          "Manufacturer item SKU: ABI06247241",
+          "Size label: 44",
+          "Color: Blue",
+          "Manufacturer fit: Modern",
+          "Single-breasted one-button tuxedo jacket",
+          "Silk peak lapels",
+          "Piping pockets and cut pocket",
+          "Jacket length 74 cm in size 50",
+          "Pleatless pants",
+          "Silk belt and silk band down the side",
+          "American-style pockets and two welted back pockets"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/canali-travel-navy-blue-cashmere-modern-fit-tuxedo-e15786-23ax06219301/p",
+        "familyId": "canali:3255419",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cashmere",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "e15786/23-ax06219-301",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/542671/E15786-23-AX06219-301_a_.jpg?v=639231878841830000",
+          "source": "https://intl.canali.com/canali-travel-navy-blue-cashmere-modern-fit-tuxedo-e15786-23ax06219301/p",
+          "alt": "Canali Canali Travel navy blue cashmere modern-fit tuxedo E15786/23-AX06219-301",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "E15786/23-AX06219-301",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI06195463",
+        "name": "Canali Navy blue 160’s wool herringbone single-breasted regular-fit suit · E12280/20-BX00232-316 · 44",
+        "category": "clothing",
+        "description": "Single-breasted 160's herringbone wool suit in a regular fit, featuring a two-button jacket with classic lapels and pleatless pants. In the Contemporary model, the jacket features a regular length and structured shoulders with a thin shoulder pad, naturally hugging the body. For the man seeking a balance between functionality and style, this versatile piece is a must-have for any formal wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: E12280/20-BX00232-316",
+          "Manufacturer item SKU: ABI06195463",
+          "Size label: 44",
+          "Color: Blue",
+          "Manufacturer fit: Regular",
+          "Single-breasted two-button jacket ",
+          "Classic lapels",
+          "Welted pockets with flap and slit breast pocket",
+          "Jacket length 75 cm in size 50",
+          "Pleatless pants",
+          "American-style pockets and two welted back pockets",
+          "Hem 19.5 cm",
+          "100% 160’s wool",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/navy-blue-160s-wool-herringbone-single-breasted-regular-fit-suit-e12280-20bx00232316/p",
+        "familyId": "canali:3230886",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "e12280/20-bx00232-316",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/548112/E12280-20-BX00232-316_a_.jpg?v=639247461270270000",
+          "source": "https://intl.canali.com/navy-blue-160s-wool-herringbone-single-breasted-regular-fit-suit-e12280-20bx00232316/p",
+          "alt": "Canali Navy blue 160’s wool herringbone single-breasted regular-fit suit E12280/20-BX00232-316",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "E12280/20-BX00232-316",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-ABI06195375",
+        "name": "Canali Walnut and light blue 150's wool and silk pinstriped herringbone regular-fit suit · E12280/20-BX05853-505 · 44",
+        "category": "clothing",
+        "description": "Single-breasted 150's wool and silk pinstriped herringbone suit in a regular fit, featuring a two-button jacket with classic lapels and pleatless pants. In the Contemporary model, the jacket features a regular length and structured shoulders with a thin shoulder pad, naturally hugging the body. For the man seeking a balance between functionality and style, this versatile piece is a must-have for any formal wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 275000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: E12280/20-BX05853-505",
+          "Manufacturer item SKU: ABI06195375",
+          "Size label: 44",
+          "Color: Brown",
+          "Manufacturer fit: Regular",
+          "Single-breasted two-button jacket ",
+          "Classic lapels",
+          "Welted pockets with flap and slit breast pocket",
+          "Jacket length 75 cm in size 50",
+          "Pleatless pants",
+          "American-style pockets and two welted back pockets",
+          "Hem 19.5 cm ",
+          "99% 150's wool 1% silk",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Brown",
+        "source": "https://intl.canali.com/walnut-and-light-blue-150s-wool-and-silk-pinstriped-herringbone-regular-fit-suit-e12280-20bx05853505/p",
+        "familyId": "canali:3230878",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "e12280/20-bx05853-505",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/544524/E12280-20-BX05853-505_a_.jpg?v=639244737030000000",
+          "source": "https://intl.canali.com/walnut-and-light-blue-150s-wool-and-silk-pinstriped-herringbone-regular-fit-suit-e12280-20bx05853505/p",
+          "alt": "Canali Walnut and light blue 150's wool and silk pinstriped herringbone regular-fit suit E12280/20-BX05853-505",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "suits",
+        "modelName": "E12280/20-BX05853-505",
+        "skuVariant": "Brown · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAN02373488",
+        "name": "Canali Anthracite Canali Impeccabile wool regular-fit pants · 72020-AR05285-112 · 44",
+        "category": "clothing",
+        "description": "Wool pants in a regular fit with a pleatless, simple construction. The line naturally follows the movements of the body, while the fabric defines a balanced presence. Part of the Canali Impeccabile selection, this piece is crafted from a high-quality, high-performance fabric whose resistance to wrinkles ensures a consistently impeccable look. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 72020-AR05285-112",
+          "Manufacturer item SKU: PAN02373488",
+          "Size label: 44",
+          "Color: Grey",
+          "Manufacturer fit: Regular",
+          "Pleatless pants",
+          "American-style pockets and two welted back pockets",
+          "Hem 19.5 cm  ",
+          "100% wool",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Grey",
+        "source": "https://intl.canali.com/anthracite-canali-impeccabile-wool-regular-fit-pants-72020ar05285112/p",
+        "familyId": "canali:3231072",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "72020-ar05285-112",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/545806/72020-AR05285-112_a_.jpg?v=639244783970200000",
+          "source": "https://intl.canali.com/anthracite-canali-impeccabile-wool-regular-fit-pants-72020ar05285112/p",
+          "alt": "Canali Anthracite Canali Impeccabile wool regular-fit pants 72020-AR05285-112",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "72020-AR05285-112",
+        "skuVariant": "Grey · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAN02373207",
+        "name": "Canali Charcoal Canali Impeccabile wool flannel regular-fit pants · 72120-AR03472-111 · 44",
+        "category": "clothing",
+        "description": "Single-pleated pants made with pure wool flannel, featuring clean lines and a regular fit. The soft texture of the flannel defines a balanced, formal aesthetic, while the Italian tailored construction ensures comfort and structure throughout the day.\nPart of Canali's Impeccabile selection, this garment is made from an especially high-performance, high-quality fabric whose ability to resist wrinkling gives it a consistently flawless appearance. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 72120-AR03472-111",
+          "Manufacturer item SKU: PAN02373207",
+          "Size label: 44",
+          "Color: Grey",
+          "Manufacturer fit: Regular",
+          "Pants with one pleat",
+          "American-style pockets and two welted back pockets",
+          "Hem 20 cm  ",
+          "100% wool                                                                                                                                             -Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Grey",
+        "source": "https://intl.canali.com/charcoal-canali-impeccabile-wool-flannel-regular-fit-pants-72120ar03472111/p",
+        "familyId": "canali:3230850",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "72120-ar03472-111",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/537579/72120-AR03472-111_a_.jpg?v=639210193101230000",
+          "source": "https://intl.canali.com/charcoal-canali-impeccabile-wool-flannel-regular-fit-pants-72120ar03472111/p",
+          "alt": "Canali Charcoal Canali Impeccabile wool flannel regular-fit pants 72120-AR03472-111",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "72120-AR03472-111",
+        "skuVariant": "Grey · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAC00051361",
+        "name": "Canali Sand-colored comfort cotton gabardine chinos · D91675-PT00417-514 · 44",
+        "category": "clothing",
+        "description": "Chinos in comfort cotton gabardine featuring a pleatless construction and meticulous details such as the double-welt back pockets with exposed buttons. The fabric hugs the silhouette naturally, offering comfort and freedom of movement. For the man seeking a balance between functionality and clean lines, this is an essential piece for his everyday wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: D91675-PT00417-514",
+          "Manufacturer item SKU: PAC00051361",
+          "Size label: 44",
+          "Color: Brown",
+          "Flat-front chinos",
+          "Central fastening with visible button",
+          "Double welt back pockets with exposed button",
+          "Hem 19 cm",
+          "Garment-dyed comfort gabardine",
+          "98% Cotton 2% Elastane",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Brown",
+        "source": "https://intl.canali.com/sand-colored-comfort-cotton-gabardine-chinos-d91675pt00417514/p",
+        "familyId": "canali:3223986",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "d91675-pt00417-514",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/538593/D91675-PT00417-514_a_.jpg?v=639210900907600000",
+          "source": "https://intl.canali.com/sand-colored-comfort-cotton-gabardine-chinos-d91675pt00417514/p",
+          "alt": "Canali Sand-colored comfort cotton gabardine chinos D91675-PT00417-514",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "D91675-PT00417-514",
+        "skuVariant": "Brown · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAS00307490",
+        "name": "Canali Five-pocket regular-fit stretch denim pants dark wash · 91719-PD00018-300 · 44",
+        "category": "clothing",
+        "description": "This classic 5-pocket denim pant is an essential for your casual collection thanks to its durability and versatility – style with anything from a button-down and jacket to a polo shirt. The regular fit and 20cm leg opening make for a very comfortable and relaxed feel while an embroidered “Canali 1934” logo on the inner belt adds an element of decorative sophistication. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 91719-PD00018-300",
+          "Manufacturer item SKU: PAS00307490",
+          "Size label: 44",
+          "Color: Blue",
+          "Manufacturer fit: Regular",
+          "Five-pocket denim jeans ",
+          "Central metal button fastening",
+          "Rear patch pockets",
+          "Genuine leather washable label on the back of the waistband",
+          "Cuff: 19 cm",
+          "Stretch denim",
+          "10 oz",
+          "98% cotton, 2% elastane ",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/five-pocket-regular-fit-stretch-denim-pants-dark-wash-91719pd00018300/p",
+        "familyId": "canali:2276498",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "91719-pd00018-300",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/514317/91719-PD00018-300_a_.jpg?v=639074558508270000",
+          "source": "https://intl.canali.com/five-pocket-regular-fit-stretch-denim-pants-dark-wash-91719pd00018300/p",
+          "alt": "Canali Five-pocket regular-fit stretch denim pants dark wash 91719-PD00018-300",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "91719-PD00018-300",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAN01054648",
+        "name": "Canali Pants in navy blue wool · 71019-AS10315-31 · 44",
+        "category": "clothing",
+        "description": "Comfort and essentiality define these pure wool pants, made with the defined and contemporary lines of a regular fit. A garment with refined taste, dedicated to the style-conscious gentleman. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 71019-AS10315-31",
+          "Manufacturer item SKU: PAN01054648",
+          "Size label: 44",
+          "Color: Blue",
+          "Pants without pleats",
+          "American-style pockets and two welt pockets at the back\t",
+          "Cuff: 19.5 cm",
+          "100% wool",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/pants-in-navy-blue-wool-71019as1031531/p",
+        "familyId": "canali:1508104",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "71019-as10315-31",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/431369/71019-AS10315-31_a_.jpg?v=638925169746900000",
+          "source": "https://intl.canali.com/pants-in-navy-blue-wool-71019as1031531/p",
+          "alt": "Canali Pants in navy blue wool 71019-AS10315-31",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "71019-AS10315-31",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAN02373227",
+        "name": "Canali Black and white wool flannel Prince of Wales regular-fit pants · 72120-BF06182-111 · 44",
+        "category": "clothing",
+        "description": "Single-pleated pants made with pure wool flannel, featuring the traditional black and white Prince of Wales check pattern. The regular fit defines a balanced wearability, while the Italian tailoring enhances the fabric's structure and the wool's natural drape. A style that seamlessly interprets the contemporary man's formal and smart-casual wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 72120-BF06182-111",
+          "Manufacturer item SKU: PAN02373227",
+          "Size label: 44",
+          "Color: Grey",
+          "Manufacturer fit: Regular",
+          "Pants with one pleat",
+          "American-style pockets and two welted back pockets",
+          "Hem 20 cm  ",
+          "100% wool                                                                                                                                                                 - Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Grey",
+        "source": "https://intl.canali.com/black-and-white-wool-flannel-prince-of-wales-regular-fit-pants-72120bf06182111/p",
+        "familyId": "canali:3230852",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Wool",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "72120-bf06182-111",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/532929/72120-BF06182-111_a_.jpg?v=639178221921470000",
+          "source": "https://intl.canali.com/black-and-white-wool-flannel-prince-of-wales-regular-fit-pants-72120bf06182111/p",
+          "alt": "Canali Black and white wool flannel Prince of Wales regular-fit pants 72120-BF06182-111",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "72120-BF06182-111",
+        "skuVariant": "Grey · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAS00432726",
+        "name": "Canali Gray comfort cotton and cashmere denim regular-fit jeans · 91719-PX01028-117 · 44",
+        "category": "clothing",
+        "description": "5-pocket jeans in comfort denim with a regular fit, defined by simple construction and meticulous details such as custom rivets and a genuine leather back strap label. The cashmere-infused fabric enhances softness and comfort, making them a natural companion for everyday wear. For the man seeking a balance between functionality and style, this versatile piece is a perfect addition to his casual wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 91719-PX01028-117",
+          "Manufacturer item SKU: PAS00432726",
+          "Size label: 44",
+          "Color: Grey",
+          "Manufacturer fit: Regular",
+          "Denim five-pockets ",
+          "Regular fit",
+          "Central fastening with metal logoed button",
+          " - Custom rivet clips ",
+          "Back patch pockets",
+          "Washable genuine leather back strap label ",
+          "Hem 19 cm",
+          "Comfort cotton and cashmere denim",
+          "Oz 9.5",
+          "93% Cotton 6% Cashmere 1% Elastomer",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Grey",
+        "source": "https://intl.canali.com/gray-comfort-cotton-and-cashmere-denim-regular-fit-jeans-91719px01028117/p",
+        "familyId": "canali:3220261",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "91719-px01028-117",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/539393/91719-PX01028-117_a_.jpg?v=639210927068470000",
+          "source": "https://intl.canali.com/gray-comfort-cotton-and-cashmere-denim-regular-fit-jeans-91719px01028117/p",
+          "alt": "Canali Gray comfort cotton and cashmere denim regular-fit jeans 91719-PX01028-117",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "91719-PX01028-117",
+        "skuVariant": "Grey · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAS00432474",
+        "name": "Canali Dark blue comfort cotton and cashmere denim regular-fit jeans · 91719-PX01028-301 · 44",
+        "category": "clothing",
+        "description": "5-pocket jeans in comfort denim with a regular fit, defined by simple construction and meticulous details such as custom rivets and a genuine leather back strap label. The cashmere-infused fabric enhances softness and comfort, making them a natural companion for everyday wear. For the man seeking a balance between functionality and style, this versatile piece is a perfect addition to his casual wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: 91719-PX01028-301",
+          "Manufacturer item SKU: PAS00432474",
+          "Size label: 44",
+          "Color: Blue",
+          "Manufacturer fit: Regular",
+          "Denim 5-pockets ",
+          "Regular fit",
+          "Central fastening with metal logoed button",
+          " - Custom rivet clips ",
+          "Back patch pockets",
+          "Washable genuine leather back strap label ",
+          "Hem 19 cm",
+          "Comfort cotton and cashmere denim",
+          "Oz 9.5",
+          "93% Cotton 6% Cashmere 1% Elastomer",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/dark-blue-comfort-cotton-and-cashmere-denim-regular-fit-jeans-91719px01028301/p",
+        "familyId": "canali:3219621",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "91719-px01028-301",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/545711/91719-PX01028-301_a_.jpg?v=639244780950630000",
+          "source": "https://intl.canali.com/dark-blue-comfort-cotton-and-cashmere-denim-regular-fit-jeans-91719px01028301/p",
+          "alt": "Canali Dark blue comfort cotton and cashmere denim regular-fit jeans 91719-PX01028-301",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "91719-PX01028-301",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAC00049029",
+        "name": "Canali Navy blue cotton and cashmere gabardine regular-fit chinos · D91697-PX01625-306 · 44",
+        "category": "clothing",
+        "description": "Regular-fit cotton and cashmere gabardine chinos featuring a pleatless construction and meticulous details such as the double-welt back pockets with buttons. The fabric enhances softness and structure, naturally hugging the silhouette. For the man seeking a balance between functionality and clean lines, this is an essential piece for his everyday wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: D91697-PX01625-306",
+          "Manufacturer item SKU: PAC00049029",
+          "Size label: 44",
+          "Color: Blue",
+          "Manufacturer fit: Regular",
+          "Flat-front chinos",
+          "Regular fit ",
+          "Fastening with side adjusters and button ",
+          "Double welt back pockets with button ",
+          "Hem 19 cm",
+          "Garment-dyed comfort cotton and cashmere gabardine",
+          "93% Cotton 5% Cashmere 2% Elastane",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://intl.canali.com/navy-blue-cotton-and-cashmere-gabardine-regular-fit-chinos-d91697px01625306/p",
+        "familyId": "canali:3218441",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "d91697-px01625-306",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/544891/D91697-PX01625-306_a_.jpg?v=639244749283730000",
+          "source": "https://intl.canali.com/navy-blue-cotton-and-cashmere-gabardine-regular-fit-chinos-d91697px01625306/p",
+          "alt": "Canali Navy blue cotton and cashmere gabardine regular-fit chinos D91697-PX01625-306",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "D91697-PX01625-306",
+        "skuVariant": "Blue · 44"
+      },
+      {
+        "id": "REPAIR-CANALI-PAC00048773",
+        "name": "Canali Light gray linen and cotton cargo pants with drawstring · D91608-PT01628-203 · 44",
+        "category": "clothing",
+        "description": "Cargo pants in a linen and cotton blend, featuring an elasticated drawstring waist for comfort and a natural fit. Functional cargo pockets and a woven drawstring with leather Freccia tips define a style that balances practicality and clean lines.\nA garment designed for the man who seeks lightness, functionality and stylistic continuity in his contemporary casual wardrobe. DALE price and inventory are simulated. Garment dimensions and fit suitability must not be inferred from the manufacturer size label.",
+        "price": 39900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Canali",
+          "Manufacturer style/color reference: D91608-PT01628-203",
+          "Manufacturer item SKU: PAC00048773",
+          "Size label: 44",
+          "Color: Grey",
+          "Cargo pants with drawstring and elastic waist",
+          "Central fastening with visible button and woven drawstring with leather Freccia tips",
+          "Front pockets inserted into the hips",
+          "Back welt pockets",
+          " - Cargo pockets with button closure",
+          "Hem 19 cm",
+          " - Cotton and linen fabric",
+          "54% Linen 46% Cotton",
+          "Made in Italy"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Grey",
+        "source": "https://intl.canali.com/light-gray-linen-and-cotton-cargo-pants-with-drawstring-d91608pt01628203/p",
+        "familyId": "canali:3212055",
+        "provenance": "manufacturer_evidence",
+        "brand": "Canali",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Canali official public storefront catalog",
+          "missing": [
+            "garmentMeasurements",
+            "bodyMeasurements",
+            "sizeConversion",
+            "personalFitGuarantee"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "material": "Cotton",
+          "size": "44",
+          "brand": "canali",
+          "modelName": "d91608-pt01628-203",
+          "sizeSystem": "Manufacturer size label"
+        },
+        "media": {
+          "url": "https://canali.vteximg.com.br/arquivos/ids/530126/D91608-PT01628-203_a_.jpg?v=639142897517300000",
+          "source": "https://intl.canali.com/light-gray-linen-and-cotton-cargo-pants-with-drawstring-d91608pt01628203/p",
+          "alt": "Canali Light gray linen and cotton cargo pants with drawstring D91608-PT01628-203",
+          "attribution": "Canali manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "trousers",
+        "modelName": "D91608-PT01628-203",
+        "skuVariant": "Grey · 44"
+      }
+    ]
+  },
+  "replacements": [
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-IMPECCABILE-WRINKLE-FREE-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02367288"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-FRENCH-CUFF-TWILL-FORMAL-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02446844"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-PURE-SILK-EVENING-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02424402"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-PURE-LINEN-CAPRI-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02420488"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-MICRO-JACQUARD-DRESS-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02375511"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-ROYAL-OXFORD-SPREAD-COLLAR-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02369213"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-CHAMBRAY-CUTAWAY-COLLAR-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02369202"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-BENGAL-STRIPE-COTTON-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02365797"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-MANDARIN-COLLAR-COTTON-LINEN-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02365786"
+    },
+    {
+      "oldProductId": "PROD-SHIRTS-CANALI-CANALI-FINE-HOUNDSTOOTH-DRESS-SHIRT",
+      "newProductId": "REPAIR-CANALI-CAC02365775"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-MILANO-SUPER150S-CLASSIC-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI05834968"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-SIENA-SOFT-SHOULDER-SUPER130S-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI06268196"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-IMPECCABILE-2-WATER-RESISTANT-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI06025618"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-DOUBLE-BREASTED-PEAK-LAPEL-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI05977876"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-BLACK-TIE-SHAWL-LAPEL-TUXEDO",
+      "newProductId": "REPAIR-CANALI-ABI06268313"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-VENEZIA-RELAXED-WOOL-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI06268235"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-TRAVEL-ESSENTIAL-STRETCH-WOOL-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI06254295"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-SUPER160S-MICRO-CHECK-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI06247241"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-THREE-PIECE-PLAID-WOOL-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI06195463"
+    },
+    {
+      "oldProductId": "PROD-SUITS-CANALI-CANALI-SILK-WOOL-BLEND-EVENING-SUIT",
+      "newProductId": "REPAIR-CANALI-ABI06195375"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-IMPECCABILE-WOOL-TROUSER",
+      "newProductId": "REPAIR-CANALI-PAN02373488"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-SINGLE-PLEAT-FLANNEL-TROUSER",
+      "newProductId": "REPAIR-CANALI-PAN02373207"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-STRETCH-COTTON-TWILL-CHINO",
+      "newProductId": "REPAIR-CANALI-PAC00051361"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-EXCLUSIVE-WOOL-SILK-LINEN-TROUSER",
+      "newProductId": "REPAIR-CANALI-PAS00307490"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-TRAVEL-ELASTICATED-BACK-TROUSER",
+      "newProductId": "REPAIR-CANALI-PAN01054648"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-SIDE-ADJUSTER-BARATHEA-TROUSER",
+      "newProductId": "REPAIR-CANALI-PAN02373227"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-GARMENT-DYED-CONTEMPORARY-CHINO",
+      "newProductId": "REPAIR-CANALI-PAS00432726"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-IRISH-LINEN-SUMMER-TROUSER",
+      "newProductId": "REPAIR-CANALI-PAS00432474"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-WOOL-CASHMERE-WINTER-TROUSER",
+      "newProductId": "REPAIR-CANALI-PAC00049029"
+    },
+    {
+      "oldProductId": "PROD-TROUSERS-CANALI-CANALI-SLIM-TROPICAL-WOOL-TROUSER",
+      "newProductId": "REPAIR-CANALI-PAC00048773"
+    }
+  ],
+  "evidence": [
+    {
+      "productId": "REPAIR-CANALI-CAC02367288",
+      "source": "https://intl.canali.com/slim-fit-shirt-in-white-cotton-cclx0c3ga6013501/p",
+      "manufacturerSku": "CAC02367288",
+      "manufacturerProductId": "2966309",
+      "manufacturerItemId": "27304",
+      "manufacturerStyleColorReference": "CCLX0C3-GA60135-01",
+      "manufacturerSize": "37",
+      "manufacturerColor": "White",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/457007/CCLX0C3-GA60135-01_a_.jpg?v=638949961812630000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-IMPECCABILE-WRINKLE-FREE-SHIRT",
+      "originalName": "Canali Impeccabile Wrinkle-Resistant Cotton Poplin Dress Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Formal shirt\n- Spread collar\n- Collar height: 3.8 cm\n- Removable stays\n- Rear darts\n- Smooth front with no placket\n- Rounded cuffs\n- 100% cotton\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Slim"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02446844",
+      "source": "https://intl.canali.com/sea-island-light-blue-cotton-twill-regular-fit-shirt-ecl7018gx02451401/p",
+      "manufacturerSku": "CAC02446844",
+      "manufacturerProductId": "3230896",
+      "manufacturerItemId": "43622",
+      "manufacturerStyleColorReference": "ECL7018-GX02451-401",
+      "manufacturerSize": "37",
+      "manufacturerColor": "Light Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/542500/ECL7018-GX02451-401_a_.jpg?v=639215359781670000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-FRENCH-CUFF-TWILL-FORMAL-SHIRT",
+      "originalName": "Canali Fine Two-Ply Cotton Twill French Cuff Dress Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Dress shirt\n- High End\n- Semi-spread collar\n- Collar height 4.2 cm\n- Smooth front with no placket\n- Removable ribs\n- Semi-rounded cuff\n- Mother of pearl buttons\n- 100% Cotton\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02424402",
+      "source": "https://intl.canali.com/impeccabile-light-blue-twill-cotton-regular-fit-shirt-ncl7018gr03721401/p",
+      "manufacturerSku": "CAC02424402",
+      "manufacturerProductId": "3153158",
+      "manufacturerItemId": "40155",
+      "manufacturerStyleColorReference": "NCL7018-GR03721-401",
+      "manufacturerSize": "37",
+      "manufacturerColor": "Light Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/523863/NCL7018-GR03721-401_a_.jpg?v=639086512330970000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-PURE-SILK-EVENING-SHIRT",
+      "originalName": "Canali Fly-Front Pure Silk Satin Formal Evening Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Formal shirt\n- Impeccabile\n- Semi-spread collar\n- Collar height 4.2 cm\n- Removable ribs\n- Smooth back with no pleats\n- Smooth front with no placket\n- Semi-rounded cuff\n- 100% Cotton\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02420488",
+      "source": "https://intl.canali.com/impeccabile-cream-twill-cotton-regular-fit-formal-shirt-ncl7018gr03441701/p",
+      "manufacturerSku": "CAC02420488",
+      "manufacturerProductId": "3147014",
+      "manufacturerItemId": "41031",
+      "manufacturerStyleColorReference": "NCL7018-GR03441-701",
+      "manufacturerSize": "37",
+      "manufacturerColor": "White",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/528715/NCL7018-GR03441-701_a_.jpg?v=639093325613770000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-PURE-LINEN-CAPRI-SHIRT",
+      "originalName": "Canali Garment-Washed Pure Linen Button-Down Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Formal shirt\n- Impeccabile\n- Semi-spread collar\n- Collar height 4.2 cm\n- Removable ribs\n- Smooth back with no pleats\n- Smooth front with no placket\n- Semi-rounded cuff\n- 100% Cotton\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02375511",
+      "source": "https://intl.canali.com/impeccabile-regular-fit-shirt-in-light-blue-cotton-ncl7098gr03299301/p",
+      "manufacturerSku": "CAC02375511",
+      "manufacturerProductId": "2996590",
+      "manufacturerItemId": "27562",
+      "manufacturerStyleColorReference": "NCL7098-GR03299-301",
+      "manufacturerSize": "37",
+      "manufacturerColor": "Light Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/458675/NCL7098-GR03299-301_a_.jpg?v=639047028435030000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-MICRO-JACQUARD-DRESS-SHIRT",
+      "originalName": "Canali Geometric Micro-Jacquard Two-Ply Cotton Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Formal shirt\n- Impeccabile fabric\n- Semi-spread collar\n- Collar height: 4.2 cm\n- Removable stays\n- Smooth back with no darts\n- Smooth front with no placket\n- Semi-rounded cuffs\n- 100% cotton \n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Slim"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02369213",
+      "source": "https://intl.canali.com/regular-fit-shirt-in-light-blue-cotton-ecl7018gx02022402/p",
+      "manufacturerSku": "CAC02369213",
+      "manufacturerProductId": "2971545",
+      "manufacturerItemId": "27202",
+      "manufacturerStyleColorReference": "ECL7018-GX02022-402",
+      "manufacturerSize": "37",
+      "manufacturerColor": "Light Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456167/ECL7018-GX02022-402_a_.jpg?v=639047032025430000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-ROYAL-OXFORD-SPREAD-COLLAR-SHIRT",
+      "originalName": "Canali High-Count Royal Oxford Two-Ply Cotton Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Formal shirt\n- New classic collar\n- Collar height 4.2cm\n- Smooth front with no placket\n- Removable stays\n- Smooth back with no pleats\n- Semi-rounded cuffs\n- Mother-of-pearl buttons\n- 100% double-twisted cotton\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02369202",
+      "source": "https://intl.canali.com/regular-fit-shirt-in-white-cotton-ecl7018gx02022001/p",
+      "manufacturerSku": "CAC02369202",
+      "manufacturerProductId": "2971544",
+      "manufacturerItemId": "27158",
+      "manufacturerStyleColorReference": "ECL7018-GX02022-001",
+      "manufacturerSize": "37",
+      "manufacturerColor": "White",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/455991/ECL7018-GX02022-001_a_.jpg?v=639047035591930000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-CHAMBRAY-CUTAWAY-COLLAR-SHIRT",
+      "originalName": "Canali Fine Cotton Chambray Cutaway Collar Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Formal shirt\n- Semi-spread collar\n- Collar height 4.2cm\n- Removable stays\n- Smooth back with no darts\n- Smooth front with no box pleat\n- Semi-rounded cuffs\n- 100% cotton 140/2\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02365797",
+      "source": "https://intl.canali.com/regular-fit-shirt-in-white-cotton-ccl7018ga6013501/p",
+      "manufacturerSku": "CAC02365797",
+      "manufacturerProductId": "2962863",
+      "manufacturerItemId": "27169",
+      "manufacturerStyleColorReference": "CCL7018-GA60135-01",
+      "manufacturerSize": "37",
+      "manufacturerColor": "White",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456035/CCL7018-GA60135-01_a_.jpg?v=638949966119030000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-BENGAL-STRIPE-COTTON-SHIRT",
+      "originalName": "Canali Two-Ply Cotton Poplin Bengal Stripe Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Formal shirt\n- Semi-spread collar\n- Collar height 4.2cm\n- Removable stays\n- Smooth back with no darts\n- Smooth front with no placket\n- 100% cotton \n- Made in Italy"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02365786",
+      "source": "https://intl.canali.com/regular-fit-shirt-with-double-cuff-in-white-cotton-ccl7018ga6013501p/p",
+      "manufacturerSku": "CAC02365786",
+      "manufacturerProductId": "2962862",
+      "manufacturerItemId": "33727",
+      "manufacturerStyleColorReference": "CCL7018-GA60135-01P",
+      "manufacturerSize": "37",
+      "manufacturerColor": "White",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/489642/CCL7018-GA60135-01P_a_.jpg?v=639047047266930000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-MANDARIN-COLLAR-COTTON-LINEN-SHIRT",
+      "originalName": "Canali Cotton-Linen Blend Band Collar Casual Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Formal shirt\n- Semi-spread collar\n- Collar height 4.2cm\n- Removable stays\n- Smooth back with no darts\n- Smooth front with no placket\n- Semi-rounded and double cuff\n- 100% cotton \n- Made in Italy"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-CAC02365775",
+      "source": "https://intl.canali.com/regular-fit-ceremony-shirt-with-double-cuffs-in-white-cotton-ccl7090ga6013001p/p",
+      "manufacturerSku": "CAC02365775",
+      "manufacturerProductId": "2962861",
+      "manufacturerItemId": "27240",
+      "manufacturerStyleColorReference": "CCL7090-GA60130-01P",
+      "manufacturerSize": "37",
+      "manufacturerColor": "White",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456333/CCL7090-GA60130-01P_a_.jpg?v=639047041752870000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SHIRTS-CANALI-CANALI-FINE-HOUNDSTOOTH-DRESS-SHIRT",
+      "originalName": "Canali Micro-Houndstooth Combed Cotton Twill Shirt",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Dress shirt\n- Collar with concealed buttons\n- Semi-rounded and double cuff\n- Collar height 4.1cm\n- Made in Italy"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI05834968",
+      "source": "https://intl.canali.com/suit-in-navy-blue-wool-12280-19as1031531/p",
+      "manufacturerSku": "ABI05834968",
+      "manufacturerProductId": "3107333",
+      "manufacturerItemId": "36278",
+      "manufacturerStyleColorReference": "12280/19-AS10315-31",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/502907/12280-19-AS10315-31_a_.jpg?v=638995798262970000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-MILANO-SUPER150S-CLASSIC-SUIT",
+      "originalName": "Canali Milano Classic Fit Super 150s Wool Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Single-breasted jacket with two buttons\n- Slash pockets with flaps and slash breast pocket\n- Jacket length 75 cm in size 50\n- pants without pleats\n- Slanted pockets and two rear welt pockets\n- Cuff 19.5cm\n- 4-button single-breasted waistcoat, piped pockets\n- 100% wool\n- Made in Italy"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI06268196",
+      "source": "https://intl.canali.com/suit-in-navy-blue-wool-12280-20as1031531/p",
+      "manufacturerSku": "ABI06268196",
+      "manufacturerProductId": "3261227",
+      "manufacturerItemId": "45187",
+      "manufacturerStyleColorReference": "12280/20-AS10315-31",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551165/12280-20-AS10315-31_a_.jpg?v=639269543454200000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-SIENA-SOFT-SHOULDER-SUPER130S-SUIT",
+      "originalName": "Canali Siena Soft Shoulder Super 130s Wool Twill Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Single-breasted jacket with two buttons\n- Slash pockets with flaps and slash breast pocket\n- Jacket length 75 cm in size 50\n- pants without pleats\n- Slanted pockets and two rear welt pockets\n- Cuff 19.5cm\n- 100% wool\n- Made in Italy"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI06025618",
+      "source": "https://intl.canali.com/light-blue-denim-effect-wool-regular-fit-suit-22280-19aa02524405/p",
+      "manufacturerSku": "ABI06025618",
+      "manufacturerProductId": "3153643",
+      "manufacturerItemId": "40924",
+      "manufacturerStyleColorReference": "22280/19-AA02524-405",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Light Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/527705/22280-19-AA02524-405_a_.jpg?v=639092630368630000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-IMPECCABILE-2-WATER-RESISTANT-SUIT",
+      "originalName": "Canali Impeccabile 2.0 Water-Resistant Crease-Resistant Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Unlined single-breasted two-button jacket\n- Welted pockets with flap and slit breast pocket\n- Jacket length 75 cm in size 50\n- Pleatless pants\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm\n- 100% wool \n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI05977876",
+      "source": "https://intl.canali.com/black-wool-tuxedo-with-peak-lapels-12786-15bf1091510/p",
+      "manufacturerSku": "ABI05977876",
+      "manufacturerProductId": "3124185",
+      "manufacturerItemId": "39591",
+      "manufacturerStyleColorReference": "12786/15-BF10915-10",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Black",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/520666/12786-15-BF10915-10_a_.jpg?v=639076302321800000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-DOUBLE-BREASTED-PEAK-LAPEL-SUIT",
+      "originalName": "Canali Double-Breasted Peak Lapel 6x2 Worsted Wool Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Tuxedo, one button, besom pockets, breast welt pocket, silk peak lapel \n- Pants: flat-front, quarter-top pockets, two back besom pockets, silk belt and side band, leg bottom: 19.5cm/7.7\" \n- Made in Italy"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI06268313",
+      "source": "https://intl.canali.com/suit-in-blue-wool-12280-20as1031532/p",
+      "manufacturerSku": "ABI06268313",
+      "manufacturerProductId": "3261236",
+      "manufacturerItemId": "45174",
+      "manufacturerStyleColorReference": "12280/20-AS10315-32",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551087/12280-20-AS10315-32_a_.jpg?v=639269541782870000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-BLACK-TIE-SHAWL-LAPEL-TUXEDO",
+      "originalName": "Canali Black Tie Shawl Lapel Wool-Mohair Tuxedo",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Single-breasted jacket with two buttons\n- Slash pockets with flaps and slash breast pocket\n- Jacket length 75 cm in size 50\n- pants without pleats\n- Slanted pockets and two rear welt pockets\n- Cuff 19.5cm\n- 100% wool\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI06268235",
+      "source": "https://intl.canali.com/charcoal-grey-pure-wool-suit-12280-20as1031612/p",
+      "manufacturerSku": "ABI06268235",
+      "manufacturerProductId": "3261230",
+      "manufacturerItemId": "45161",
+      "manufacturerStyleColorReference": "12280/20-AS10316-12",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Grey",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551009/12280-20-AS10316-12_a_.jpg?v=639269540260700000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-VENEZIA-RELAXED-WOOL-SUIT",
+      "originalName": "Canali Venezia Relaxed Drop-6 Contemporary Wool Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Single-breasted two-button jacket\n- Slash pockets with flaps and a slash breast pocket\n- Jacket length: 75 cm in size 50\n- Flat front pants\n- Slanted pockets and two rear welt pockets\n- Hem width: 19.5 cm\n- 100% wool\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI06254295",
+      "source": "https://intl.canali.com/suit-in-black-wool-12280-20as1031510/p",
+      "manufacturerSku": "ABI06254295",
+      "manufacturerProductId": "3261124",
+      "manufacturerItemId": "45200",
+      "manufacturerStyleColorReference": "12280/20-AS10315-10",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Black",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551243/12280-20-AS10315-10_a_.jpg?v=639269545169930000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-TRAVEL-ESSENTIAL-STRETCH-WOOL-SUIT",
+      "originalName": "Canali Travel Essential Wrinkle-Free Stretch Wool Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Single-breasted jacket with two buttons\n- Slash pockets with flaps and slash breast pocket\n- Jacket length 75 cm in size 50\n- pants without pleats\n- Slanted pockets and two rear welt pockets\n- Cuff 19.5cm\n- 100% wool\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI06247241",
+      "source": "https://intl.canali.com/canali-travel-navy-blue-cashmere-modern-fit-tuxedo-e15786-23ax06219301/p",
+      "manufacturerSku": "ABI06247241",
+      "manufacturerProductId": "3255419",
+      "manufacturerItemId": "43664",
+      "manufacturerStyleColorReference": "E15786/23-AX06219-301",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/542671/E15786-23-AX06219-301_a_.jpg?v=639231878841830000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-SUPER160S-MICRO-CHECK-SUIT",
+      "originalName": "Canali Exclusive Super 160s Micro-Check Tailored Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cashmere"
+      ],
+      "craftsmanshipEvidence": [
+        "- Single-breasted one-button tuxedo jacket\n- Silk peak lapels\n- Piping pockets and cut pocket\n- Jacket length 74 cm in size 50\n- Pleatless pants\n- Silk belt and silk band down the side\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm                                                                                                                                                                                                                   -96% cashmere, 4% elastane                                                                                                                                                                                                   -Made in Italy"
+      ],
+      "fitEvidence": [
+        "Modern"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI06195463",
+      "source": "https://intl.canali.com/navy-blue-160s-wool-herringbone-single-breasted-regular-fit-suit-e12280-20bx00232316/p",
+      "manufacturerSku": "ABI06195463",
+      "manufacturerProductId": "3230886",
+      "manufacturerItemId": "44655",
+      "manufacturerStyleColorReference": "E12280/20-BX00232-316",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/548112/E12280-20-BX00232-316_a_.jpg?v=639247461270270000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-THREE-PIECE-PLAID-WOOL-SUIT",
+      "originalName": "Canali Three-Piece Glen Urquhart Plaid Wool Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Single-breasted two-button jacket \n- Classic lapels\n- Welted pockets with flap and slit breast pocket\n- Jacket length 75 cm in size 50\n- Pleatless pants\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm\n- 100% 160’s wool\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-ABI06195375",
+      "source": "https://intl.canali.com/walnut-and-light-blue-150s-wool-and-silk-pinstriped-herringbone-regular-fit-suit-e12280-20bx05853505/p",
+      "manufacturerSku": "ABI06195375",
+      "manufacturerProductId": "3230878",
+      "manufacturerItemId": "43983",
+      "manufacturerStyleColorReference": "E12280/20-BX05853-505",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Brown",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/544524/E12280-20-BX05853-505_a_.jpg?v=639244737030000000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-SUITS-CANALI-CANALI-SILK-WOOL-BLEND-EVENING-SUIT",
+      "originalName": "Canali Silk-Wool Blend Formal Evening Suit",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Single-breasted two-button jacket \n- Classic lapels\n- Welted pockets with flap and slit breast pocket\n- Jacket length 75 cm in size 50\n- Pleatless pants\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm \n- 99% 150's wool 1% silk\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAN02373488",
+      "source": "https://intl.canali.com/anthracite-canali-impeccabile-wool-regular-fit-pants-72020ar05285112/p",
+      "manufacturerSku": "PAN02373488",
+      "manufacturerProductId": "3231072",
+      "manufacturerItemId": "44234",
+      "manufacturerStyleColorReference": "72020-AR05285-112",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Grey",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/545806/72020-AR05285-112_a_.jpg?v=639244783970200000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-IMPECCABILE-WOOL-TROUSER",
+      "originalName": "Canali Impeccabile 2.0 Water-Repellent Wool Trousers",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Pleatless pants\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm  \n- 100% wool\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAN02373207",
+      "source": "https://intl.canali.com/charcoal-canali-impeccabile-wool-flannel-regular-fit-pants-72120ar03472111/p",
+      "manufacturerSku": "PAN02373207",
+      "manufacturerProductId": "3230850",
+      "manufacturerItemId": "42676",
+      "manufacturerStyleColorReference": "72120-AR03472-111",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Grey",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/537579/72120-AR03472-111_a_.jpg?v=639210193101230000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-SINGLE-PLEAT-FLANNEL-TROUSER",
+      "originalName": "Canali Classic Single-Pleat Super 150s Wool Flannel Trousers",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Pants with one pleat\n- American-style pockets and two welted back pockets\n- Hem 20 cm  \n- 100% wool                                                                                                                                             -Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAC00051361",
+      "source": "https://intl.canali.com/sand-colored-comfort-cotton-gabardine-chinos-d91675pt00417514/p",
+      "manufacturerSku": "PAC00051361",
+      "manufacturerProductId": "3223986",
+      "manufacturerItemId": "42854",
+      "manufacturerStyleColorReference": "D91675-PT00417-514",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Brown",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/538593/D91675-PT00417-514_a_.jpg?v=639210900907600000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-STRETCH-COTTON-TWILL-CHINO",
+      "originalName": "Canali Flat-Front Stretch Cotton Twill Sartorial Chinos",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Flat-front chinos\n- Central fastening with visible button\n- Double welt back pockets with exposed button\n- Hem 19 cm\n- Garment-dyed comfort gabardine\n- 98% Cotton 2% Elastane\n- Made in Italy"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAS00307490",
+      "source": "https://intl.canali.com/five-pocket-regular-fit-stretch-denim-pants-dark-wash-91719pd00018300/p",
+      "manufacturerSku": "PAS00307490",
+      "manufacturerProductId": "2276498",
+      "manufacturerItemId": "38473",
+      "manufacturerStyleColorReference": "91719-PD00018-300",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/514317/91719-PD00018-300_a_.jpg?v=639074558508270000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-EXCLUSIVE-WOOL-SILK-LINEN-TROUSER",
+      "originalName": "Canali Exclusive Double-Pleated Wool-Silk-Linen Trousers",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Five-pocket denim jeans \n- Central metal button fastening\n- Rear patch pockets\n- Genuine leather washable label on the back of the waistband\n- Cuff: 19 cm\n- Stretch denim\n- 10 oz\n- 98% cotton, 2% elastane \n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAN01054648",
+      "source": "https://intl.canali.com/pants-in-navy-blue-wool-71019as1031531/p",
+      "manufacturerSku": "PAN01054648",
+      "manufacturerProductId": "1508104",
+      "manufacturerItemId": "22465",
+      "manufacturerStyleColorReference": "71019-AS10315-31",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/431369/71019-AS10315-31_a_.jpg?v=638925169746900000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-TRAVEL-ELASTICATED-BACK-TROUSER",
+      "originalName": "Canali Travel Elasticated-Back High-Twist Wool Trousers",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Pants without pleats\n- American-style pockets and two welt pockets at the back\t\n- Cuff: 19.5 cm\n- 100% wool\n- Made in Italy"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAN02373227",
+      "source": "https://intl.canali.com/black-and-white-wool-flannel-prince-of-wales-regular-fit-pants-72120bf06182111/p",
+      "manufacturerSku": "PAN02373227",
+      "manufacturerProductId": "3230852",
+      "manufacturerItemId": "41837",
+      "manufacturerStyleColorReference": "72120-BF06182-111",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Grey",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/532929/72120-BF06182-111_a_.jpg?v=639178221921470000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-SIDE-ADJUSTER-BARATHEA-TROUSER",
+      "originalName": "Canali High-Rise Side-Adjuster Wool Barathea Trousers",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Wool"
+      ],
+      "craftsmanshipEvidence": [
+        "- Pants with one pleat\n- American-style pockets and two welted back pockets\n- Hem 20 cm  \n- 100% wool                                                                                                                                                                 - Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAS00432726",
+      "source": "https://intl.canali.com/gray-comfort-cotton-and-cashmere-denim-regular-fit-jeans-91719px01028117/p",
+      "manufacturerSku": "PAS00432726",
+      "manufacturerProductId": "3220261",
+      "manufacturerItemId": "43013",
+      "manufacturerStyleColorReference": "91719-PX01028-117",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Grey",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/539393/91719-PX01028-117_a_.jpg?v=639210927068470000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-GARMENT-DYED-CONTEMPORARY-CHINO",
+      "originalName": "Canali Contemporary Fit Garment-Dyed Cotton Chinos",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Denim five-pockets \n- Regular fit\n- Central fastening with metal logoed button\n - Custom rivet clips \n- Back patch pockets\n- Washable genuine leather back strap label \n- Hem 19 cm\n- Comfort cotton and cashmere denim\n- Oz 9.5\n- 93% Cotton 6% Cashmere 1% Elastomer\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAS00432474",
+      "source": "https://intl.canali.com/dark-blue-comfort-cotton-and-cashmere-denim-regular-fit-jeans-91719px01028301/p",
+      "manufacturerSku": "PAS00432474",
+      "manufacturerProductId": "3219621",
+      "manufacturerItemId": "44215",
+      "manufacturerStyleColorReference": "91719-PX01028-301",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/545711/91719-PX01028-301_a_.jpg?v=639244780950630000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-IRISH-LINEN-SUMMER-TROUSER",
+      "originalName": "Canali Pure Irish Linen Relaxed Tailored Summer Trousers",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Denim 5-pockets \n- Regular fit\n- Central fastening with metal logoed button\n - Custom rivet clips \n- Back patch pockets\n- Washable genuine leather back strap label \n- Hem 19 cm\n- Comfort cotton and cashmere denim\n- Oz 9.5\n- 93% Cotton 6% Cashmere 1% Elastomer\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAC00049029",
+      "source": "https://intl.canali.com/navy-blue-cotton-and-cashmere-gabardine-regular-fit-chinos-d91697px01625306/p",
+      "manufacturerSku": "PAC00049029",
+      "manufacturerProductId": "3218441",
+      "manufacturerItemId": "44039",
+      "manufacturerStyleColorReference": "D91697-PX01625-306",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Blue",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/544891/D91697-PX01625-306_a_.jpg?v=639244749283730000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-WOOL-CASHMERE-WINTER-TROUSER",
+      "originalName": "Canali Tailored Wool-Cashmere Flannel Winter Trousers",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton"
+      ],
+      "craftsmanshipEvidence": [
+        "- Flat-front chinos\n- Regular fit \n- Fastening with side adjusters and button \n- Double welt back pockets with button \n- Hem 19 cm\n- Garment-dyed comfort cotton and cashmere gabardine\n- 93% Cotton 5% Cashmere 2% Elastane\n- Made in Italy"
+      ],
+      "fitEvidence": [
+        "Regular"
+      ]
+    },
+    {
+      "productId": "REPAIR-CANALI-PAC00048773",
+      "source": "https://intl.canali.com/light-gray-linen-and-cotton-cargo-pants-with-drawstring-d91608pt01628203/p",
+      "manufacturerSku": "PAC00048773",
+      "manufacturerProductId": "3212055",
+      "manufacturerItemId": "41196",
+      "manufacturerStyleColorReference": "D91608-PT01628-203",
+      "manufacturerSize": "44",
+      "manufacturerColor": "Grey",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/530126/D91608-PT01628-203_a_.jpg?v=639142897517300000",
+      "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+      "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+      "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+      "originalProductId": "PROD-TROUSERS-CANALI-CANALI-SLIM-TROPICAL-WOOL-TROUSER",
+      "originalName": "Canali Slim Fit Super 130s Tropical Wool Trousers",
+      "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+      "materialEvidence": [
+        "Cotton",
+        "Linen"
+      ],
+      "craftsmanshipEvidence": [
+        "- Cargo pants with drawstring and elastic waist\n- Central fastening with visible button and woven drawstring with leather Freccia tips\n- Front pockets inserted into the hips\n- Back welt pockets\n - Cargo pockets with button closure\n- Hem 19 cm\n - Cotton and linen fabric\n- 54% Linen 46% Cotton\n- Made in Italy"
+      ]
+    }
+  ],
+  "publication": "not-published; all30 exact manufacturer item/color/size records and packshots visually reviewed; ready for parent-controlled local publication"
+}

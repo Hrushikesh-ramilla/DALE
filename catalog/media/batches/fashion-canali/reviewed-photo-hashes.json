@@ -1,0 +1,185 @@
+{
+  "reviewedAt": "2026-10-14",
+  "entries": {
+    "REPAIR-CANALI-CAC02367288": {
+      "sha256": "89d64f5dc2f6ed74635edf3b65b4374902f528e695c0396afcc0ac9406fb3679",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/457007/CCLX0C3-GA60135-01_a_.jpg?v=638949961812630000",
+      "sourceSku": "CAC02367288",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02446844": {
+      "sha256": "45d21b9d9e92c37882b3f8a09ea5cee1f1b4b687a93cc0ee6d308429e6990dc2",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/542500/ECL7018-GX02451-401_a_.jpg?v=639215359781670000",
+      "sourceSku": "CAC02446844",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02424402": {
+      "sha256": "be3d957ccd27651c8c9994df8ed8d6c60515e9ddcdf27d2ca2cc0c79de620d41",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/523863/NCL7018-GR03721-401_a_.jpg?v=639086512330970000",
+      "sourceSku": "CAC02424402",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02420488": {
+      "sha256": "47470cfef9df7e8f5f09f30fa4a8add2d25190c5363787a5f1d7cef089c9a038",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/528715/NCL7018-GR03441-701_a_.jpg?v=639093325613770000",
+      "sourceSku": "CAC02420488",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02375511": {
+      "sha256": "c2b8b0a4ae65a173511ca30d3fb346373e601fea8ae6f2cf675b5767c553f8fa",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/458675/NCL7098-GR03299-301_a_.jpg?v=639047028435030000",
+      "sourceSku": "CAC02375511",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02369213": {
+      "sha256": "8c489670047754aeb364ceb4a8e52abcea6e75ef582afed3883997de50ddb144",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456167/ECL7018-GX02022-402_a_.jpg?v=639047032025430000",
+      "sourceSku": "CAC02369213",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02369202": {
+      "sha256": "8098dee5ec3d6212cfbf71340b5d5cdb71f188fa0a67749f4a82b7b2f7e08b18",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/455991/ECL7018-GX02022-001_a_.jpg?v=639047035591930000",
+      "sourceSku": "CAC02369202",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02365797": {
+      "sha256": "a90c3fcafb27bf7b35820bcf4f740c07849b3ed31abeac592b1e0d8746d2948f",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456035/CCL7018-GA60135-01_a_.jpg?v=638949966119030000",
+      "sourceSku": "CAC02365797",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02365786": {
+      "sha256": "b074c381ba1c6ee81b0eff5409dfa6316f454cdebb9cd38d968d7e291d403c54",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/489642/CCL7018-GA60135-01P_a_.jpg?v=639047047266930000",
+      "sourceSku": "CAC02365786",
+      "verified": true
+    },
+    "REPAIR-CANALI-CAC02365775": {
+      "sha256": "7e885c8a2356f7dc9ee32b6331717938d8ca7851ff97abec895391711fd54ae8",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456333/CCL7090-GA60130-01P_a_.jpg?v=639047041752870000",
+      "sourceSku": "CAC02365775",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI05834968": {
+      "sha256": "96e0b8fd4d0f10354b637731fd38e77b85c6ab5515d8aad6645381b8e963fba0",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/502907/12280-19-AS10315-31_a_.jpg?v=638995798262970000",
+      "sourceSku": "ABI05834968",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI06268196": {
+      "sha256": "c2071fd512d4c72bfd565ab2dcb58de5263f53c90b8d0a24ebd8bc5565d7fd60",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551165/12280-20-AS10315-31_a_.jpg?v=639269543454200000",
+      "sourceSku": "ABI06268196",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI06025618": {
+      "sha256": "4ab5789a3c9d9686265b2b8efaea6641fb858a76ec11ef2e405ce999f1c47042",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/527705/22280-19-AA02524-405_a_.jpg?v=639092630368630000",
+      "sourceSku": "ABI06025618",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI05977876": {
+      "sha256": "ac62e0fcbc1a3ae8560ea37c8cbd8faaab62aed6eee0fa344f3bb6dba366db2c",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/520666/12786-15-BF10915-10_a_.jpg?v=639076302321800000",
+      "sourceSku": "ABI05977876",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI06268313": {
+      "sha256": "2d226e20d31b40177ffda2da0c9692742dd0962a19ec47a311f10efe62620457",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551087/12280-20-AS10315-32_a_.jpg?v=639269541782870000",
+      "sourceSku": "ABI06268313",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI06268235": {
+      "sha256": "26976834435c6d569b947c835164b075c2cc11d08c362d5065ba5a62d84e3ed1",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551009/12280-20-AS10316-12_a_.jpg?v=639269540260700000",
+      "sourceSku": "ABI06268235",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI06254295": {
+      "sha256": "a61d7aef64b2532265dacd73583eb309da493a955d2f60066c6d176c5515c71d",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551243/12280-20-AS10315-10_a_.jpg?v=639269545169930000",
+      "sourceSku": "ABI06254295",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI06247241": {
+      "sha256": "9da66f4235062582dfbf23bc08285cb5253908b80429a930eef63a471b49d6e9",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/542671/E15786-23-AX06219-301_a_.jpg?v=639231878841830000",
+      "sourceSku": "ABI06247241",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI06195463": {
+      "sha256": "18fb25fb241fb25b98425ac4402834a748898918e5409861b119503e771f33fb",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/548112/E12280-20-BX00232-316_a_.jpg?v=639247461270270000",
+      "sourceSku": "ABI06195463",
+      "verified": true
+    },
+    "REPAIR-CANALI-ABI06195375": {
+      "sha256": "d4d3b14dbb7273233a56e337a6fcde05c3625d16933abecdd4ed9ec32d548543",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/544524/E12280-20-BX05853-505_a_.jpg?v=639244737030000000",
+      "sourceSku": "ABI06195375",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAN02373488": {
+      "sha256": "c2e1e60535e7a4c943849ce493a2c1252dfb9fe340734242af0c441ce819bd86",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/545806/72020-AR05285-112_a_.jpg?v=639244783970200000",
+      "sourceSku": "PAN02373488",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAN02373207": {
+      "sha256": "80499cd1ac540aa837d37944df107dc5a27ab19fe21e3c06df2b2332f0c5fc02",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/537579/72120-AR03472-111_a_.jpg?v=639210193101230000",
+      "sourceSku": "PAN02373207",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAC00051361": {
+      "sha256": "119fe1fd8565051c80dbd3dbf348107e11ad739a9ecedb5bdcfeba998ad9caff",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/538593/D91675-PT00417-514_a_.jpg?v=639210900907600000",
+      "sourceSku": "PAC00051361",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAS00307490": {
+      "sha256": "634adbdd3c656a059810b64560f6bfce2591d0b29aa2a9d25cfaf01dfad09d87",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/514317/91719-PD00018-300_a_.jpg?v=639074558508270000",
+      "sourceSku": "PAS00307490",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAN01054648": {
+      "sha256": "923d168263a3fda5069473fd2b4b93b978d6bdfac98835b60068edb6754237b3",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/431369/71019-AS10315-31_a_.jpg?v=638925169746900000",
+      "sourceSku": "PAN01054648",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAN02373227": {
+      "sha256": "b84eebde84179c96437d96830c203efcc21b996943a2c49b9d606b48633854f9",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/532929/72120-BF06182-111_a_.jpg?v=639178221921470000",
+      "sourceSku": "PAN02373227",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAS00432726": {
+      "sha256": "ffe2a771f42c334545e9e813c207a9c046bc40e801f893b7c7ed19020aed8e85",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/539393/91719-PX01028-117_a_.jpg?v=639210927068470000",
+      "sourceSku": "PAS00432726",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAS00432474": {
+      "sha256": "c109ddb41d3dea6686b544d48b5b8365372eba864bbc863b8b2636709f9270c4",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/545711/91719-PX01028-301_a_.jpg?v=639244780950630000",
+      "sourceSku": "PAS00432474",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAC00049029": {
+      "sha256": "7131f7de74658a035e6aab59eeaa75448d6ef9048d8b105ca03738592bf2d5d1",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/544891/D91697-PX01625-306_a_.jpg?v=639244749283730000",
+      "sourceSku": "PAC00049029",
+      "verified": true
+    },
+    "REPAIR-CANALI-PAC00048773": {
+      "sha256": "b8c52473fc837983cb8a5a034a7246a0b4432f5ff224f5e8586b2689175975fd",
+      "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/530126/D91608-PT01628-203_a_.jpg?v=639142897517300000",
+      "sourceSku": "PAC00048773",
+      "verified": true
+    }
+  }
+}

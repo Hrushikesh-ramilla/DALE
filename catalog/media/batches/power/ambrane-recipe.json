@@ -1,0 +1,373 @@
+{
+  "id": "power-ambrane-media-repair-2026-10-14-v2",
+  "brand": "Ambrane",
+  "sourceHost": "ambraneindia.com",
+  "mediaPrefix": "https://cdn.shopify.com/s/files/1/0003/7565/2399/",
+  "feedFile": ".data/product-media-audit/manufacturer-feeds/ambraneindia.com.json",
+  "outputDirectory": "catalog/media/batches/power/ambrane",
+  "selections": [
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-G65",
+      "handle": "charge-65",
+      "expectedTitle": "Charge R65",
+      "sku": "CHARGE-R65-BLACK",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "totalWatts",
+          "value": 65,
+          "contains": "65W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-G100",
+      "handle": "charge-d100",
+      "expectedTitle": "Charge D100",
+      "sku": "CHARGE-D100-BLUE",
+      "color": "Blue",
+      "facts": [
+        {
+          "key": "totalWatts",
+          "value": 100,
+          "contains": "100W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        },
+        {
+          "key": "connectorType",
+          "value": "2x USB-C + 1x USB-A",
+          "contains": "2 Type-C ports and 1 USB-A port"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-S33",
+      "handle": "charge-x33",
+      "expectedTitle": "Charge X33",
+      "sku": "Charge-X33-BLACK",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "totalWatts",
+          "value": 33,
+          "contains": "33W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-M20",
+      "handle": "charge-25",
+      "expectedTitle": "Charge 25",
+      "sku": "CHARGE-25-BLACK",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "totalWatts",
+          "value": 25,
+          "contains": "25W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        },
+        {
+          "key": "connectorType",
+          "value": "USB-C",
+          "contains": "Type-C port"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-H20",
+      "handle": "charge-i36",
+      "expectedTitle": "Charge i36",
+      "sku": "CHARGE-I36-BLACK",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "totalWatts",
+          "value": 36,
+          "contains": "36W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        },
+        {
+          "key": "connectorType",
+          "value": "USB-C",
+          "contains": "single Type-C port"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-STYLO-20K",
+      "handle": "stylo-n20",
+      "expectedTitle": "Stylo N20",
+      "sku": "STYLO-N20-BLACK",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "capacityMah",
+          "value": 20000,
+          "contains": "20000 mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 22.5,
+          "contains": "22.5W"
+        },
+        {
+          "key": "pdSupported",
+          "value": true,
+          "contains": "PD 3.0"
+        },
+        {
+          "key": "ppsSupported",
+          "value": true,
+          "contains": "PPS"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-STYLO-10K",
+      "handle": "stylo-n10",
+      "expectedTitle": "Stylo N10",
+      "sku": "STYLO-N10-BLACK",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "capacityMah",
+          "value": 10000,
+          "contains": "10000 mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 22.5,
+          "contains": "22.5W"
+        },
+        {
+          "key": "pdSupported",
+          "value": true,
+          "contains": "PD 3.0"
+        },
+        {
+          "key": "ppsSupported",
+          "value": true,
+          "contains": "PPS"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-POWERLIT-XL",
+      "handle": "powerlit-xl-lite",
+      "expectedTitle": "Powerlit XL Lite",
+      "sku": "POWERLIT-XL-LITE-BLACK",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "capacityMah",
+          "value": 20000,
+          "contains": "20000mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 22.5,
+          "contains": "22.5W Output"
+        },
+        {
+          "key": "pdSupported",
+          "value": true,
+          "contains": "Power Delivery"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-POWERLIT-ULTRA",
+      "handle": "powerlit-ultra-240",
+      "expectedTitle": "Powerlit Ultra 240",
+      "sku": "POWERLIT-ULTRA-240-GREY",
+      "color": "Grey",
+      "facts": [
+        {
+          "key": "capacityMah",
+          "value": 27000,
+          "contains": "27000 mAh"
+        },
+        {
+          "key": "totalWatts",
+          "value": 240,
+          "contains": "240W total output"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 140,
+          "contains": "140W fast laptop charging"
+        },
+        {
+          "key": "maxInputWatts",
+          "value": 100,
+          "contains": "100W PD input"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-AEROGLOW-10K",
+      "handle": "minicharge-20",
+      "expectedTitle": "MiniCharge 20",
+      "sku": "MINICHARGE-20-BLUE",
+      "color": "Blue",
+      "facts": [
+        {
+          "key": "capacityMah",
+          "value": 20000,
+          "contains": "20,000 mAh"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved",
+        "maxOutputWatts"
+      ]
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-STYLO-PRO-27K",
+      "handle": "stellar-40k",
+      "expectedTitle": "Stellar 40K",
+      "sku": "STELLAR-40K-BLUE",
+      "color": "Blue",
+      "facts": [
+        {
+          "key": "capacityMah",
+          "value": 40000,
+          "contains": "40000 mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 65,
+          "contains": "65W Type-C Output"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-POWERLIT-45W",
+      "handle": "powerlit-45",
+      "expectedTitle": "Powerlit 45",
+      "sku": "POWERLIT-45-BLACK",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "capacityMah",
+          "value": 15000,
+          "contains": "15000mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 45,
+          "contains": "45W output"
+        },
+        {
+          "key": "maxInputWatts",
+          "value": 45,
+          "contains": "45W input"
+        }
+      ],
+      "missing": [
+        "voltageProfiles",
+        "perPortPowerSharing",
+        "deviceSpecificCompatibility",
+        "weightGrams",
+        "flightApproved"
+      ]
+    }
+  ]
+}

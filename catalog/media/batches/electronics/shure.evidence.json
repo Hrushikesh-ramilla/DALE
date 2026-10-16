@@ -1,0 +1,68 @@
+{
+  "evidence": [
+    {
+      "productId": "PROD-HEADPHONES-SHURE-SHURE-SRH1840",
+      "source": "https://www.shure.com/en-US/products/headphones/srh1840",
+      "sourcePageSha256": "89e9d9c7e3926ad00fc3553504291268ffa10241cc801af0d8fced78140d6042",
+      "manufacturerTitle": "SRH1840",
+      "manufacturerSku": "SRH1840",
+      "sourceImage": "https://products.shureweb.eu/shure_product_db/product_main_images/files/42b/328/b3-/original/9846d721331f0d9f0d11c4b8c23d608e.webp",
+      "originalColor": "Aircraft-Grade Aluminum Yoke Black"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SHURE-SHURE-SRH1540",
+      "source": "https://www.shure.com/en-US/products/headphones/srh1540",
+      "sourcePageSha256": "1c63a73f3fdcf048848b312e11ea73276f35c487b6bfd6c818aa508d48f575ff",
+      "manufacturerTitle": "SRH1540",
+      "manufacturerSku": "SRH1540",
+      "sourceImage": "https://products.shureweb.eu/shure_product_db/product_main_images/files/cca/17c/1d-/original/60f2412037a8d80079664ea0832690a1.webp",
+      "originalColor": "Carbon Fiber and Aluminum Black"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SHURE-SHURE-SRH840A",
+      "source": "https://www.shure.com/en-US/products/headphones/srh840",
+      "sourcePageSha256": "6331cead15ef7f522b30a8d2ad8c25634d4df4805c5a76e123eb65e2a6303011",
+      "manufacturerTitle": "SRH840A",
+      "manufacturerSku": "SRH840A",
+      "sourceImage": "https://products.shureweb.eu/shure_product_db/product_main_images/files/ac7/0ac/2a-/original/868cc63ea8a2dba0a94c8e718fb5ee05.webp",
+      "originalColor": "Matte Black with Gold Accents"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SHURE-SHURE-SRH440A",
+      "source": "https://www.shure.com/en-US/products/headphones/srh440",
+      "sourcePageSha256": "d0ad92bafdc7be7415312b4be94181b047f0a277155a896319421c99c06e14ca",
+      "manufacturerTitle": "SRH440A",
+      "manufacturerSku": "SRH440A",
+      "sourceImage": "https://products.shureweb.eu/shure_product_db/product_main_images/files/9d3/cc6/f4-/original/4e626c0c3a34e538381c7c86363940b1.webp",
+      "originalColor": "Matte Black"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SHURE-SHURE-SRH240A",
+      "source": "https://www.shure.com/en-US/products/headphones/srh240a",
+      "sourcePageSha256": "1a17cfd3b6801bc092d8950be379d2b7506bb456d3e18801e5f91b972f6d73d2",
+      "manufacturerTitle": "SRH240A",
+      "manufacturerSku": "SRH240A",
+      "sourceImage": "https://products.shureweb.eu/shure_product_db/product_main_images/files/d62/652/88-/original/55c25ed369f5b44b6408b5307dde76e1.webp",
+      "originalColor": "Gloss Black"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SHURE-SHURE-AONIC-50-GEN-2",
+      "source": "https://www.shure.com/en-US/products/headphones/aonic50",
+      "sourcePageSha256": "4b0a7e347c5c96621fd5cf583c5b8268759b2e932f3b4de63a47d8d82a128eff",
+      "manufacturerTitle": "AONIC 50 GEN 2",
+      "manufacturerSku": "SBH50G2-BK",
+      "sourceImage": "https://products.shureweb.eu/shure_product_db/product_main_images/files/c25/16a/40-/original/ce632827adec4e1842caa762f10e643d.webp",
+      "originalColor": "Black Anodized Aluminum"
+    }
+  ],
+  "pending": [
+    {
+      "id": "PROD-HEADPHONES-SHURE-SHURE-SRH1440",
+      "reason": "Manufacturer model differs: undefined"
+    },
+    {
+      "id": "PROD-HEADPHONES-SHURE-SHURE-AONIC-40",
+      "reason": "Manufacturer model differs: undefined"
+    }
+  ]
+}

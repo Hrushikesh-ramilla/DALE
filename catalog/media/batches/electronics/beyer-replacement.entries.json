@@ -1,0 +1,79 @@
+{
+  "entries": {
+    "HEADPHONES-BEYERDYNAMIC-1000302": {
+      "productName": "Beyerdynamic DT 770 PRO X",
+      "brand": "Beyerdynamic",
+      "color": "Black / grey",
+      "attributes": {
+        "brand": "beyerdynamic",
+        "modelName": "DT 770 PRO X",
+        "productType": "over-ear headphones",
+        "connection": "Wired"
+      },
+      "url": "/images/verified/headphones-beyerdynamic-1000302-c3d04271bbed19dc.webp",
+      "sha256": "c3d04271bbed19dcb45e77c835a0c8d8ad7bda3ee37a4463471980ff10764cf9",
+      "sourceSha256": "87a0db0c346e761cce2e781a81de05603e201789611a3dfb83f966780fde40ac",
+      "bytes": 48890,
+      "width": 960,
+      "height": 960,
+      "alt": "Beyerdynamic DT 770 PRO X",
+      "sourcePage": "https://global.beyerdynamic.com/p/dt-770-pro-x",
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/d/t/dt-770-pro-x-beyerdynamic-perspective.png?store=www_en&image-type=small_image",
+      "sourceSku": "1000302",
+      "attribution": "Beyerdynamic manufacturer photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "exact current manufacturer model and unique SKU; visually reviewed exact manufacturer SKU product photograph on electronics/beyer-replacement.entries.review.png",
+      "verified": true
+    },
+    "HEADPHONES-BEYERDYNAMIC-1000310": {
+      "productName": "Beyerdynamic DT 1770 PRO MKII",
+      "brand": "Beyerdynamic",
+      "color": "Black / grey",
+      "attributes": {
+        "brand": "beyerdynamic",
+        "modelName": "DT 1770 PRO MKII",
+        "productType": "over-ear headphones",
+        "connection": "Wired"
+      },
+      "url": "/images/verified/headphones-beyerdynamic-1000310-de4a245ae26b70ab.webp",
+      "sha256": "de4a245ae26b70ab8464f8ad275c97016dd2002f940054e83f0d3a2044818708",
+      "sourceSha256": "25ab99250880d1d66f9ee576e38653c8d9928c4d984b04a7e49d5e645cc1c7af",
+      "bytes": 51798,
+      "width": 960,
+      "height": 960,
+      "alt": "Beyerdynamic DT 1770 PRO MKII",
+      "sourcePage": "https://global.beyerdynamic.com/p/dt-1770-pro-mk-2",
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/b/e/beyerdynamic-dt-1770-pro-mk-2-perspective-transparent.png?store=www_en&image-type=small_image",
+      "sourceSku": "1000310",
+      "attribution": "Beyerdynamic manufacturer photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "exact current manufacturer model and unique SKU; visually reviewed exact manufacturer SKU product photograph on electronics/beyer-replacement.entries.review.png",
+      "verified": true
+    },
+    "HEADPHONES-BEYERDYNAMIC-1000303": {
+      "productName": "Beyerdynamic DT 1990 PRO MKII",
+      "brand": "Beyerdynamic",
+      "color": "Black / grey",
+      "attributes": {
+        "brand": "beyerdynamic",
+        "modelName": "DT 1990 PRO MKII",
+        "productType": "over-ear headphones",
+        "connection": "Wired"
+      },
+      "url": "/images/verified/headphones-beyerdynamic-1000303-abeeffd5e9873645.webp",
+      "sha256": "abeeffd5e987364569a496876b3690230b732000baffdda031af53afa3d96d7b",
+      "sourceSha256": "77382ea54ee1acffcc1bafe3a3850e7eae4e35782c446c9e09eaedf97f499ac3",
+      "bytes": 57768,
+      "width": 960,
+      "height": 960,
+      "alt": "Beyerdynamic DT 1990 PRO MKII",
+      "sourcePage": "https://global.beyerdynamic.com/p/dt-1990-pro-mk-2",
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/b/e/beyerdynamic-dt-1990-pro-mk-2-perspective-transparent.png?store=www_en&image-type=small_image",
+      "sourceSku": "1000303",
+      "attribution": "Beyerdynamic manufacturer photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "exact current manufacturer model and unique SKU; visually reviewed exact manufacturer SKU product photograph on electronics/beyer-replacement.entries.review.png",
+      "verified": true
+    }
+  }
+}

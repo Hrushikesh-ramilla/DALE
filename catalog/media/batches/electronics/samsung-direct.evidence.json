@@ -1,0 +1,73 @@
+{
+  "evidence": [],
+  "pending": [
+    {
+      "id": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-A55-5G",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-A35-5G",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-S9-ULTRA",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-S9-PLUS",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-S9",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-S9-FE-PLUS",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-S9-FE",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-A9-PLUS",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-A9",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-S6-LITE-2024",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-ACTIVE5",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-TABLETS-SAMSUNG-SAMSUNG-GALAXY-TAB-ACTIVE4-PRO",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-PORTABLE-SSDS-SAMSUNG-SAMSUNG-T9-PORTABLE-SSD",
+      "reason": "No exact SKU primary photo"
+    },
+    {
+      "id": "PROD-PORTABLE-SSDS-SAMSUNG-SAMSUNG-T7-SHIELD-PORTABLE-SSD",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-PORTABLE-SSDS-SAMSUNG-SAMSUNG-T7-PORTABLE-SSD",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-PORTABLE-SSDS-SAMSUNG-SAMSUNG-T7-TOUCH-PORTABLE-SSD",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-PORTABLE-SSDS-SAMSUNG-SAMSUNG-T5-EVO-PORTABLE-SSD",
+      "reason": "HTTP 404"
+    }
+  ]
+}

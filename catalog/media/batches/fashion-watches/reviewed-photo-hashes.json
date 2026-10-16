@@ -1,0 +1,47 @@
+{
+  "reviewedAt": "2026-10-14",
+  "entries": {
+    "PROD-WATCHES-BREITLING-BREITLING-NAVITIMER-AUTOMATIC-41": {
+      "sha256": "1a937914241d24a3e433e94f6ceed7b0bbcc03187ac3ee6054acdd5093861f8e",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/a17326211g1p1-soldier_ffc5c12c_thumbnail_1024.webp",
+      "sourceSku": "A17326211G1P1",
+      "verified": true
+    },
+    "PROD-WATCHES-BREITLING-BREITLING-NAVITIMER-B01": {
+      "sha256": "de53612956f73fd1c0bec90ba8c7b5f6008a8c4c29bf2c1081ef87771c0b4531",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/ab0138241g1p1-soldier_35552a6f_thumbnail_1024.webp",
+      "sourceSku": "AB0138241G1P1",
+      "verified": true
+    },
+    "PROD-WATCHES-BREITLING-BREITLING-CHRONOMAT-B01-42": {
+      "sha256": "4daddca8db6af246db65a831c2b563c2e541016eeea945ae00b5600bb97c433e",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/ab0134101b1a1-soldier_626b1e42_thumbnail_1024.webp",
+      "sourceSku": "AB0134101B1A1",
+      "verified": true
+    },
+    "PROD-WATCHES-BREITLING-BREITLING-PREMIER-B01-CHRONOGRAPH-42": {
+      "sha256": "274634e230c3e196f7b3162e9d95c72f209ec1f4d364766fac7b4988c15dda10",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/ab0145221b1p1-soldier_433ddf1e_thumbnail_1024.webp",
+      "sourceSku": "AB0145221B1P1",
+      "verified": true
+    },
+    "PROD-WATCHES-BREITLING-BREITLING-AVENGER-AUTOMATIC-42": {
+      "sha256": "a2edc14f0fa34ebc01bf0d08534d5d61fa53732fea2817ce98e40e82f49882c8",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/a17328101b1a1-soldier_1c790088_thumbnail_1024.webp",
+      "sourceSku": "A17328101B1A1",
+      "verified": false
+    },
+    "PROD-WATCHES-BREITLING-BREITLING-SUPEROCEAN-HERITAGE-B20": {
+      "sha256": "bc69e12c12e0d1287fa7540bedd45d84d629c139790ecbc9eec138893df0a316",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/ab2010121b1a1-soldier_5025db65_thumbnail_1024.webp",
+      "sourceSku": "AB2010121B1A1",
+      "verified": true
+    },
+    "PROD-WATCHES-BREITLING-BREITLING-SUPEROCEAN-AUTOMATIC-42": {
+      "sha256": "f05ef9b2e1aa71d45c213c867bcb4f44a114919ed084efe0e413e50ffffe8131",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/a17375211b1s1-soldier_8ab31eb0_thumbnail_1024.webp",
+      "sourceSku": "A17375211B1S1",
+      "verified": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "entries": {
+    "REPAIR-OLIVER-PEOPLES-827934530409": {
+      "productName": "Oliver Peoples Edition 10 · 1731B1 · 51-19",
+      "brand": "Oliver Peoples",
+      "color": "Manufacturer color 1731B1",
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "oliver peoples",
+        "modelName": "edition 10",
+        "lensWidthMm": 51,
+        "bridgeMm": 19
+      },
+      "url": "/images/verified/repair-oliver-peoples-827934530409-321046fd22285484.webp",
+      "sha256": "321046fd22285484050a2b8a6ba7e26036a045d78ed25c41cf8289ec0dcff47a",
+      "sourceSha256": "a8b49990712b4c347ed76b74f28503eb3ef2e0f0406c13d9b85a71d990502f4b",
+      "bytes": 38200,
+      "width": 960,
+      "height": 480,
+      "alt": "Oliver Peoples Edition 10 1731B1 · 51-19",
+      "sourcePage": "https://www.oliverpeoples.com/products/0ov5642su-1731b1",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5642SU__1731B1__P21__shad__qt_5a0950bc40441af07a9dabd975a7157167a7c2c9580c5af8302587c3f8be82fe.png?v=1790766190",
+      "sourceSku": "827934530409",
+      "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "Exact manufacturer product/model/color reference and SKU; manufacturer-associated photograph; visual review pending",
+      "verified": false
+    },
+    "REPAIR-PERSOL-8056597441100": {
+      "productName": "Persol PO5006ST · 800556 · 47-20",
+      "brand": "Persol",
+      "color": "Manufacturer color 800556",
+      "attributes": {
+        "productType": "sunglasses",
+        "brand": "persol",
+        "modelName": "po5006st",
+        "lensWidthMm": 47,
+        "bridgeMm": 20
+      },
+      "url": "/images/verified/repair-persol-8056597441100-4d1fdb7158e7125a.webp",
+      "sha256": "4d1fdb7158e7125a42155fcf7f1459c0ba11672cbc1696c664ce9fab5541eb8f",
+      "sourceSha256": "90088f9d47a0f9b4d6bbe16b409bdd1ff1414008f16705e09d8287dc6f04ce2e",
+      "bytes": 39312,
+      "width": 960,
+      "height": 480,
+      "alt": "Persol PO5006ST 800556 · 47-20",
+      "sourcePage": "https://www.persol.com/products/0po5006st-800556",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO5006ST__800556__P21__shad__qt_48866d7b9a3e8199530b8fb72058676792a8b62bc955b7d4d47b6ecff528b430.png?v=1788798402",
+      "sourceSku": "8056597441100",
+      "attribution": "Persol manufacturer product photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "Exact manufacturer product/model/color reference and SKU; manufacturer-associated photograph; visual review pending",
+      "verified": false
+    }
+  }
+}

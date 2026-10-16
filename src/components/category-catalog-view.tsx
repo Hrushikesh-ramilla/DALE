@@ -375,18 +375,16 @@ function CategoryCatalogContent({
                   </div>
 
                   <div className="brand-preview-visual">
+                    <div className="brand-preview-stage-dome" />
+                    <div className="brand-preview-shadow" />
                     {brand.heroImage ? (
                       <Image
                         src={brand.heroImage}
                         alt={`${brand.name} ${title}`}
-                        width={240}
-                        height={160}
-                        quality={80}
-                        style={{
-                          maxWidth: "84%",
-                          maxHeight: "84%",
-                          objectFit: "contain",
-                        }}
+                        width={360}
+                        height={240}
+                        quality={90}
+                        className="brand-hero-img"
                       />
                     ) : brand.sampleProduct ? (
                       <ProductArt product={brand.sampleProduct} compact />

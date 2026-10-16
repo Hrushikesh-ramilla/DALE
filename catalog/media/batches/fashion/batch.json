@@ -1,0 +1,2140 @@
+{
+  "manifest": {
+    "schemaVersion": "catalog-manifest-v2",
+    "id": "sunglasses-fashion-media-repair-2026-10-14-v2",
+    "reviewedBy": "exact-manufacturer-SKU-color-photo-review",
+    "reviewedAt": "2026-10-14",
+    "approvedSourceHosts": [
+      "dita.com",
+      "www.oliverpeoples.com",
+      "www.persol.com"
+    ],
+    "products": [
+      {
+        "id": "REPAIR-DITA-7806-B-BLK-GLD-52-Z",
+        "name": "DITA FLIGHT.006 · Matte Black - 14K Gold / Grey to Clear Gradient",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: FLIGHT.006",
+          "Manufacturer SKU: 7806-B-BLK-GLD-52-Z",
+          "Selected variant: Matte Black - 14K Gold / Grey to Clear Gradient",
+          "Frame color: Matte Black - 14K Gold",
+          "Lens color: Grey to Clear Gradient"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Matte Black - 14K Gold",
+        "source": "https://dita.com/products/flight-006",
+        "familyId": "dita:7594694443241",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "flight.006"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/FLIGHT006_7806-B-BLK-GLD-52_ANGLE.jpg?v=1742233427",
+          "source": "https://dita.com/products/flight-006",
+          "alt": "DITA FLIGHT.006 Matte Black - 14K Gold / Grey to Clear Gradient",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "FLIGHT.006",
+        "skuVariant": "Matte Black - 14K Gold / Grey to Clear Gradient"
+      },
+      {
+        "id": "REPAIR-DITA-DTS477-A-01",
+        "name": "DITA FLIGHT.010 · Yellow Gold - Matte Black / Grey to Clear Gradient",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: FLIGHT.010",
+          "Manufacturer SKU: DTS477-A-01",
+          "Selected variant: Yellow Gold - Matte Black / Grey to Clear Gradient",
+          "Frame color: Yellow Gold - Matte Black",
+          "Lens color: Grey to Clear Gradient"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Yellow Gold - Matte Black",
+        "source": "https://dita.com/products/flight-010",
+        "familyId": "dita:9167137145065",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "flight.010"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/FLIGHT-010_DTS477-A-01_ANGLE.jpg?v=1767913894",
+          "source": "https://dita.com/products/flight-010",
+          "alt": "DITA FLIGHT.010 Yellow Gold - Matte Black / Grey to Clear Gradient",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "FLIGHT.010",
+        "skuVariant": "Yellow Gold - Matte Black / Grey to Clear Gradient"
+      },
+      {
+        "id": "REPAIR-DITA-DTS121-62-01-Z",
+        "name": "DITA MACH-SIX · Yellow Gold - Black Rhodium / Grey to Clear Gradient",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: MACH-SIX",
+          "Manufacturer SKU: DTS121-62-01-Z",
+          "Selected variant: Yellow Gold - Black Rhodium / Grey to Clear Gradient",
+          "Frame color: Yellow Gold - Black Rhodium",
+          "Lens color: Grey to Clear Gradient"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Yellow Gold - Black Rhodium",
+        "source": "https://dita.com/products/mach-six",
+        "familyId": "dita:7594698932457",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "mach-six"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/MACH-SIX_DTS121-62-01_ANGLE.jpg?v=1768951884",
+          "source": "https://dita.com/products/mach-six",
+          "alt": "DITA MACH-SIX Yellow Gold - Black Rhodium / Grey to Clear Gradient",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "MACH-SIX",
+        "skuVariant": "Yellow Gold - Black Rhodium / Grey to Clear Gradient"
+      },
+      {
+        "id": "REPAIR-DITA-DLS407-A-01-A",
+        "name": "DITA LSA-407 · Black - Black Gun / Land Lens - Brown Polarized",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: LSA-407",
+          "Manufacturer SKU: DLS407-A-01-A",
+          "Selected variant: Black - Black Gun / Land Lens - Brown Polarized",
+          "Frame color: Black - Black Gun",
+          "Lens color: Land Lens - Brown Polarized"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black - Black Gun",
+        "source": "https://dita.com/products/lsa-407",
+        "familyId": "dita:8346073333993",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "lsa-407"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-407_DLS407-A-01_angle.jpg?v=1708123370",
+          "source": "https://dita.com/products/lsa-407",
+          "alt": "DITA LSA-407 Black - Black Gun / Land Lens - Brown Polarized",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "LSA-407",
+        "skuVariant": "Black - Black Gun / Land Lens - Brown Polarized"
+      },
+      {
+        "id": "REPAIR-DITA-DTS141-A-04",
+        "name": "DITA SUBSYSTEM · Black Iron - Matte Black / Grey Polarized",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: SUBSYSTEM",
+          "Manufacturer SKU: DTS141-A-04",
+          "Selected variant: Black Iron - Matte Black / Grey Polarized",
+          "Frame color: Black Iron - Matte Black",
+          "Lens color: Grey Polarized"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black Iron - Matte Black",
+        "source": "https://dita.com/products/subsystem",
+        "familyId": "dita:7594701684969",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "subsystem"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/Subsystem_DTS141-A-04_Angle.jpg?v=1713465767",
+          "source": "https://dita.com/products/subsystem",
+          "alt": "DITA SUBSYSTEM Black Iron - Matte Black / Grey Polarized",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "SUBSYSTEM",
+        "skuVariant": "Black Iron - Matte Black / Grey Polarized"
+      },
+      {
+        "id": "REPAIR-DITA-DTS160-A-05",
+        "name": "DITA 424 ARTOA.92 · Yellow Gold - Smoke / Smoke Gradient",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: 424 ARTOA.92",
+          "Manufacturer SKU: DTS160-A-05",
+          "Selected variant: Yellow Gold - Smoke / Smoke Gradient",
+          "Frame color: Yellow Gold - Smoke",
+          "Lens color: Smoke Gradient"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Yellow Gold - Smoke",
+        "source": "https://dita.com/products/424-artoa-92",
+        "familyId": "dita:9395762200809",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "424 artoa.92"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/ARTOA-92_424-02_ANGLE.jpg?v=1787852338",
+          "source": "https://dita.com/products/424-artoa-92",
+          "alt": "DITA 424 ARTOA.92 Yellow Gold - Smoke / Smoke Gradient",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "424 ARTOA.92",
+        "skuVariant": "Yellow Gold - Smoke / Smoke Gradient"
+      },
+      {
+        "id": "REPAIR-DITA-DRX-2082-A-SLV-GLD-62-Z",
+        "name": "DITA Decade-Two · Black Palladium/Yellow Gold / Grey Gradient",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: Decade-Two",
+          "Manufacturer SKU: DRX-2082-A-SLV-GLD-62-Z",
+          "Selected variant: Black Palladium/Yellow Gold / Grey Gradient",
+          "Frame color: Black Palladium/Yellow Gold",
+          "Lens color: Grey Gradient"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black Palladium/Yellow Gold",
+        "source": "https://dita.com/products/decade-two",
+        "familyId": "dita:7594694050025",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "decade-two"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/DECADE-TWO_DRX_2082_A_SLV_GLD_62_ANGLE.jpg?v=1747854083",
+          "source": "https://dita.com/products/decade-two",
+          "alt": "DITA Decade-Two Black Palladium/Yellow Gold / Grey Gradient",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Decade-Two",
+        "skuVariant": "Black Palladium/Yellow Gold / Grey Gradient"
+      },
+      {
+        "id": "REPAIR-DITA-DTS138-A-03",
+        "name": "DITA GRAND-EVO ONE · Black Palladium / Grey To Clear",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: GRAND-EVO ONE",
+          "Manufacturer SKU: DTS138-A-03",
+          "Selected variant: Black Palladium / Grey To Clear",
+          "Frame color: Black Palladium",
+          "Lens color: Grey To Clear"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black Palladium",
+        "source": "https://dita.com/products/grand-evo-one",
+        "familyId": "dita:7594694574313",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "grand-evo one"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/GRAND-EVOONE_DTS138-A-03_Angle.jpg?v=1747855431",
+          "source": "https://dita.com/products/grand-evo-one",
+          "alt": "DITA GRAND-EVO ONE Black Palladium / Grey To Clear",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "GRAND-EVO ONE",
+        "skuVariant": "Black Palladium / Grey To Clear"
+      },
+      {
+        "id": "REPAIR-DITA-DLS451-A-01",
+        "name": "DITA LSA-451 · Matte Black - Gold Sand / Land Lens - Brown Polarized",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: LSA-451",
+          "Manufacturer SKU: DLS451-A-01",
+          "Selected variant: Matte Black - Gold Sand / Land Lens - Brown Polarized",
+          "Frame color: Matte Black - Gold Sand",
+          "Lens color: Land Lens - Brown Polarized"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Matte Black - Gold Sand",
+        "source": "https://dita.com/products/lsa-451",
+        "familyId": "dita:9281694236905",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "lsa-451"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-451_DLS451-A-01_ANGLE.jpg?v=1785431936",
+          "source": "https://dita.com/products/lsa-451",
+          "alt": "DITA LSA-451 Matte Black - Gold Sand / Land Lens - Brown Polarized",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "LSA-451",
+        "skuVariant": "Matte Black - Gold Sand / Land Lens - Brown Polarized"
+      },
+      {
+        "id": "REPAIR-DITA-DLS151-A-01",
+        "name": "DITA LSA-151 · Gold Sand / Land Lens - Brown Polarized",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 79900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: DITA",
+          "Model: LSA-151",
+          "Manufacturer SKU: DLS151-A-01",
+          "Selected variant: Gold Sand / Land Lens - Brown Polarized",
+          "Frame color: Gold Sand",
+          "Lens color: Land Lens - Brown Polarized"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Gold Sand",
+        "source": "https://dita.com/products/lsa-151",
+        "familyId": "dita:9281674477801",
+        "provenance": "manufacturer_evidence",
+        "brand": "DITA",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "dita",
+          "modelName": "lsa-151"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-151_DLS151-A-01_ANGLE.jpg?v=1785431577",
+          "source": "https://dita.com/products/lsa-151",
+          "alt": "DITA LSA-151 Gold Sand / Land Lens - Brown Polarized",
+          "attribution": "DITA manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "LSA-151",
+        "skuVariant": "Gold Sand / Land Lens - Brown Polarized"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934529120",
+        "name": "Oliver Peoples Gregory Peck Sun · 173553 · 50-23",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Gregory Peck Sun",
+          "Manufacturer SKU: 827934529120",
+          "Selected variant: 50-23",
+          "Manufacturer model/color reference: 0ov5217s-173553"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 173553",
+        "source": "https://www.oliverpeoples.com/products/0ov5217s-173553",
+        "familyId": "oliver peoples:16302562607439",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "gregory peck sun",
+          "lensWidthMm": 50,
+          "bridgeMm": 23
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5217S__173553__P21__shad__qt_cb9735492bce7ad10c92744abfa6cd02ec0a5fd25590fa8acfb9ef1e35a444f6.png?v=1788343397",
+          "source": "https://www.oliverpeoples.com/products/0ov5217s-173553",
+          "alt": "Oliver Peoples Gregory Peck Sun 173553 · 50-23",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Gregory Peck Sun",
+        "skuVariant": "173553 · 50-23"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934423848",
+        "name": "Oliver Peoples O'Malley Sun · 109452 · 48-22",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: O'Malley Sun",
+          "Manufacturer SKU: 827934423848",
+          "Selected variant: 48-22",
+          "Manufacturer model/color reference: 0ov5183s-109452"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 109452",
+        "source": "https://www.oliverpeoples.com/products/0ov5183s-109452",
+        "familyId": "oliver peoples:15615204720975",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "o'malley sun",
+          "lensWidthMm": 48,
+          "bridgeMm": 22
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5183S__109452__P21__shad__qt_9bdf79bcdb26a39b19f7860f2e7590a0191eba41225c2665a540926e201d3e0b.png?v=1790942572",
+          "source": "https://www.oliverpeoples.com/products/0ov5183s-109452",
+          "alt": "Oliver Peoples O'Malley Sun 109452 · 48-22",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "O'Malley Sun",
+        "skuVariant": "109452 · 48-22"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934526365",
+        "name": "Oliver Peoples Fairmont Sun · 1820GN · 49-21",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Fairmont Sun",
+          "Manufacturer SKU: 827934526365",
+          "Selected variant: 49-21",
+          "Manufacturer model/color reference: 0ov5219s-1820gn"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 1820GN",
+        "source": "https://www.oliverpeoples.com/products/0ov5219s-1820gn",
+        "familyId": "oliver peoples:15849101984079",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "fairmont sun",
+          "lensWidthMm": 49,
+          "bridgeMm": 21
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5219S__1820GN__P21__shad__qt_74aa002a44b71e9f79a67481a9efc7582e0cdafa7bf0380c007bb48f3fb95eda.png?v=1786874600",
+          "source": "https://www.oliverpeoples.com/products/0ov5219s-1820gn",
+          "alt": "Oliver Peoples Fairmont Sun 1820GN · 49-21",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Fairmont Sun",
+        "skuVariant": "1820GN · 49-21"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934529007",
+        "name": "Oliver Peoples Sheldrake Sun · 180153 · 49-22",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Sheldrake Sun",
+          "Manufacturer SKU: 827934529007",
+          "Selected variant: 49-22",
+          "Manufacturer model/color reference: 0ov5036s-180153"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 180153",
+        "source": "https://www.oliverpeoples.com/products/0ov5036s-180153",
+        "familyId": "oliver peoples:16302562410831",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "sheldrake sun",
+          "lensWidthMm": 49,
+          "bridgeMm": 22
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5036S__180153__P21__shad__qt_d8da663b950d9d7d6b12325bd7ca4e8f2fa3bb632d589d75984623c6d2a245ed.png?v=1790334170",
+          "source": "https://www.oliverpeoples.com/products/0ov5036s-180153",
+          "alt": "Oliver Peoples Sheldrake Sun 180153 · 49-22",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Sheldrake Sun",
+        "skuVariant": "180153 · 49-22"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934506305",
+        "name": "Oliver Peoples Lumar · 17830F · 51-19",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Lumar",
+          "Manufacturer SKU: 827934506305",
+          "Selected variant: 51-19",
+          "Manufacturer model/color reference: 0ov5565su-17830f"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 17830F",
+        "source": "https://www.oliverpeoples.com/products/0ov5565su-17830f",
+        "familyId": "oliver peoples:15615357321551",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "lumar",
+          "lensWidthMm": 51,
+          "bridgeMm": 19
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5565SU__17830F__P21__shad__qt_645ad91efb47880443f9811c21aa96ed1394ee2575d62fd9ba7f2298fa242ad5.png?v=1791198184",
+          "source": "https://www.oliverpeoples.com/products/0ov5565su-17830f",
+          "alt": "Oliver Peoples Lumar 17830F · 51-19",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Lumar",
+        "skuVariant": "17830F · 51-19"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934477131",
+        "name": "Oliver Peoples Sheldrake 1950 Exclusive · 1739R8 · 47-22",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Sheldrake 1950 Exclusive",
+          "Manufacturer SKU: 827934477131",
+          "Selected variant: 47-22",
+          "Manufacturer model/color reference: 0ov5471su-1739r8"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 1739R8",
+        "source": "https://www.oliverpeoples.com/products/0ov5471su-1739r8",
+        "familyId": "oliver peoples:15615263277391",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "sheldrake 1950 exclusive",
+          "lensWidthMm": 47,
+          "bridgeMm": 22
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5471SU__1739R8__STD__shad__fld_85beeb9a14294006e7c768977bd5d025395212d18dd22a1776809b61361815b8.png?v=1787403832",
+          "source": "https://www.oliverpeoples.com/products/0ov5471su-1739r8",
+          "alt": "Oliver Peoples Sheldrake 1950 Exclusive 1739R8 · 47-22",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Sheldrake 1950 Exclusive",
+        "skuVariant": "1739R8 · 47-22"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934530638",
+        "name": "Oliver Peoples Edition 10 · 1578R8 · 51-19",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Edition 10",
+          "Manufacturer SKU: 827934530638",
+          "Selected variant: 51-19",
+          "Manufacturer model/color reference: 0ov5642su-1578r8"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 1578R8",
+        "source": "https://www.oliverpeoples.com/products/0ov5642su-1578r8",
+        "familyId": "oliver peoples:16331608883535",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "edition 10",
+          "lensWidthMm": 51,
+          "bridgeMm": 19
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5642SU__1578R8__P21__shad__qt_980dfbade05079546db23e9ca3d8aab6ac0eda9f717d7e9af2b734429c4021e9.png?v=1790766191",
+          "source": "https://www.oliverpeoples.com/products/0ov5642su-1578r8",
+          "alt": "Oliver Peoples Edition 10 1578R8 · 51-19",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Edition 10",
+        "skuVariant": "1578R8 · 51-19"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934360532",
+        "name": "Oliver Peoples Clifton · 50363F · 58-15",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Clifton",
+          "Manufacturer SKU: 827934360532",
+          "Selected variant: 58-15",
+          "Manufacturer model/color reference: 0ov1150s-50363f"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 50363F",
+        "source": "https://www.oliverpeoples.com/products/0ov1150s-50363f",
+        "familyId": "oliver peoples:15615148228943",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "clifton",
+          "lensWidthMm": 58,
+          "bridgeMm": 15
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1150S__50363F__P21__shad__qt_9af6505fbcf923139fd4a557abff1647691483d69a8f157ab4284e1548f671dd.png?v=1786997000",
+          "source": "https://www.oliverpeoples.com/products/0ov1150s-50363f",
+          "alt": "Oliver Peoples Clifton 50363F · 58-15",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Clifton",
+        "skuVariant": "50363F · 58-15"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934530645",
+        "name": "Oliver Peoples Edition 7 · 534852 · 55-16",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Edition 7",
+          "Manufacturer SKU: 827934530645",
+          "Selected variant: 55-16",
+          "Manufacturer model/color reference: 0ov1385st-534852"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 534852",
+        "source": "https://www.oliverpeoples.com/products/0ov1385st-534852",
+        "familyId": "oliver peoples:16331608359247",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "edition 7",
+          "lensWidthMm": 55,
+          "bridgeMm": 16
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1385ST__534852__P21__shad__qt_2e58d43fe704ea778086bbaf8b9c486aaef653941247470e6cbe90330f55039a.png?v=1790766192",
+          "source": "https://www.oliverpeoples.com/products/0ov1385st-534852",
+          "alt": "Oliver Peoples Edition 7 534852 · 55-16",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Edition 7",
+        "skuVariant": "534852 · 55-16"
+      },
+      {
+        "id": "REPAIR-OLIVER-PEOPLES-827934524910",
+        "name": "Oliver Peoples Benedict · 5036GN · 59-16",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 42900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Oliver Peoples",
+          "Model: Benedict",
+          "Manufacturer SKU: 827934524910",
+          "Selected variant: 59-16",
+          "Manufacturer model/color reference: 0ov1002s-5036gn"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 5036GN",
+        "source": "https://www.oliverpeoples.com/products/0ov1002s-5036gn",
+        "familyId": "oliver peoples:15849090842959",
+        "provenance": "manufacturer_evidence",
+        "brand": "Oliver Peoples",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "oliver peoples",
+          "modelName": "benedict",
+          "lensWidthMm": 59,
+          "bridgeMm": 16
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1002S__5036GN__P21__shad__qt_9db1d9d2b1a5bc55efc3dbd6d588e1635aef71096bf206c4cec779b10ec4344.png?v=1787270603",
+          "source": "https://www.oliverpeoples.com/products/0ov1002s-5036gn",
+          "alt": "Oliver Peoples Benedict 5036GN · 59-16",
+          "attribution": "Oliver Peoples manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "Benedict",
+        "skuVariant": "5036GN · 59-16"
+      },
+      {
+        "id": "REPAIR-PERSOL-713132165331",
+        "name": "Persol 649 - Original · 24_57 · 54-20",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: 649 - Original",
+          "Manufacturer SKU: 713132165331",
+          "Selected variant: 54-20",
+          "Manufacturer model/color reference: 0po0649-24_57"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 24_57",
+        "source": "https://www.persol.com/products/0po0649-24_57",
+        "familyId": "persol:15046511034708",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "649 - original",
+          "lensWidthMm": 54,
+          "bridgeMm": 20
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO0649__24_57__P21__shad__qt_f53d293772384b020191a335fa29580e2578117a46cae15c9cb9772db1b4f703.png?v=1788797767",
+          "source": "https://www.persol.com/products/0po0649-24_57",
+          "alt": "Persol 649 - Original 24_57 · 54-20",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "649 - Original",
+        "skuVariant": "24_57 · 54-20"
+      },
+      {
+        "id": "REPAIR-PERSOL-8056262229248",
+        "name": "Persol PO3362S · 96_56 · 52-21",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: PO3362S",
+          "Manufacturer SKU: 8056262229248",
+          "Selected variant: 52-21",
+          "Manufacturer model/color reference: 0po3362s-96_56"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 96_56",
+        "source": "https://www.persol.com/products/0po3362s-96_56",
+        "familyId": "persol:15046535938388",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "po3362s",
+          "lensWidthMm": 52,
+          "bridgeMm": 21
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3362S__96_56__P21__shad__qt_fd3dc6b01950cbde911c5434828714d60d8fa66f80b6f3618fc8ff4aa7246764.png?v=1788798142",
+          "source": "https://www.persol.com/products/0po3362s-96_56",
+          "alt": "Persol PO3362S 96_56 · 52-21",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "PO3362S",
+        "skuVariant": "96_56 · 52-21"
+      },
+      {
+        "id": "REPAIR-PERSOL-8056597989169",
+        "name": "Persol PO3341S · 120757 · 55-19",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: PO3341S",
+          "Manufacturer SKU: 8056597989169",
+          "Selected variant: 55-19",
+          "Manufacturer model/color reference: 0po3341s-120757"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 120757",
+        "source": "https://www.persol.com/products/0po3341s-120757",
+        "familyId": "persol:15046532628820",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "po3341s",
+          "lensWidthMm": 55,
+          "bridgeMm": 19
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3341S__120757__P21__shad__qt_34e99749d2cfcc382f2cdac076b5d0649747adcdf65acb081b248344489c8d50.png?v=1788798049",
+          "source": "https://www.persol.com/products/0po3341s-120757",
+          "alt": "Persol PO3341S 120757 · 55-19",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "PO3341S",
+        "skuVariant": "120757 · 55-19"
+      },
+      {
+        "id": "REPAIR-PERSOL-8056597971409",
+        "name": "Persol PO3235S · 120271 · 55-20",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: PO3235S",
+          "Manufacturer SKU: 8056597971409",
+          "Selected variant: 55-20",
+          "Manufacturer model/color reference: 0po3235s-120271"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 120271",
+        "source": "https://www.persol.com/products/0po3235s-120271",
+        "familyId": "persol:15046522962260",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "po3235s",
+          "lensWidthMm": 55,
+          "bridgeMm": 20
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3235S__120271__P21__shad__qt_c16ab9782e8f5bd4661277059b5fb666d14d12b864aa179ec275f8aa69b89629.png?v=1788797926",
+          "source": "https://www.persol.com/products/0po3235s-120271",
+          "alt": "Persol PO3235S 120271 · 55-20",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "PO3235S",
+        "skuVariant": "120271 · 55-20"
+      },
+      {
+        "id": "REPAIR-PERSOL-8053672128949",
+        "name": "Persol PO3059S · 96_S3 · 54-18",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: PO3059S",
+          "Manufacturer SKU: 8053672128949",
+          "Selected variant: 54-18",
+          "Manufacturer model/color reference: 0po3059s-96_s3"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 96_S3",
+        "source": "https://www.persol.com/products/0po3059s-96_s3",
+        "familyId": "persol:15046521028948",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "po3059s",
+          "lensWidthMm": 54,
+          "bridgeMm": 18
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3059S__96_S3__P21__shad__qt_4f9490c2066cf2d9e6d2de343d8e40cf83a87f40b06abced11df11154c0df1e8.png?v=1788801142",
+          "source": "https://www.persol.com/products/0po3059s-96_s3",
+          "alt": "Persol PO3059S 96_S3 · 54-18",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "PO3059S",
+        "skuVariant": "96_S3 · 54-18"
+      },
+      {
+        "id": "REPAIR-PERSOL-8056597831253",
+        "name": "Persol 714SM - Steve McQueen · 95_B1 · 54-21",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: 714SM - Steve McQueen",
+          "Manufacturer SKU: 8056597831253",
+          "Selected variant: 54-21",
+          "Manufacturer model/color reference: 0po0714sm-95_b1"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 95_B1",
+        "source": "https://www.persol.com/products/0po0714sm-95_b1",
+        "familyId": "persol:15046513721684",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "714sm - steve mcqueen",
+          "lensWidthMm": 54,
+          "bridgeMm": 21
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO0714SM__95_B1__P21__shad__fld_3a37544180f3358dc9e8364cd73e8ea9c5193669a551c94225a462782ab10244.png?v=1788801025",
+          "source": "https://www.persol.com/products/0po0714sm-95_b1",
+          "alt": "Persol 714SM - Steve McQueen 95_B1 · 54-21",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "714SM - Steve McQueen",
+        "skuVariant": "95_B1 · 54-21"
+      },
+      {
+        "id": "REPAIR-PERSOL-8056597840309",
+        "name": "Persol PO1935S · 95_31 · 53-19",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: PO1935S",
+          "Manufacturer SKU: 8056597840309",
+          "Selected variant: 53-19",
+          "Manufacturer model/color reference: 0po1935s-95_31"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 95_31",
+        "source": "https://www.persol.com/products/0po1935s-95_31",
+        "familyId": "persol:15046518243668",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "po1935s",
+          "lensWidthMm": 53,
+          "bridgeMm": 19
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO1935S__95_31__P21__shad__qt_e365fb3df9deba4c08d5ce54315e80beb9adac9da7d040d0a8a977d7864bef3f.png?v=1788797866",
+          "source": "https://www.persol.com/products/0po1935s-95_31",
+          "alt": "Persol PO1935S 95_31 · 53-19",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "PO1935S",
+        "skuVariant": "95_31 · 53-19"
+      },
+      {
+        "id": "REPAIR-PERSOL-8056262229637",
+        "name": "Persol PO3355S · 1216B1 · 54-20",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: PO3355S",
+          "Manufacturer SKU: 8056262229637",
+          "Selected variant: 54-20",
+          "Manufacturer model/color reference: 0po3355s-1216b1"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 1216B1",
+        "source": "https://www.persol.com/products/0po3355s-1216b1",
+        "familyId": "persol:15046534529364",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "po3355s",
+          "lensWidthMm": 54,
+          "bridgeMm": 20
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3355S__1216B1__P21__shad__qt_733855370146469b25decc27a8de55ed759daa816f63e25c424b839ae9b40a9b.png?v=1788798106",
+          "source": "https://www.persol.com/products/0po3355s-1216b1",
+          "alt": "Persol PO3355S 1216B1 · 54-20",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "PO3355S",
+        "skuVariant": "1216B1 · 54-20"
+      },
+      {
+        "id": "REPAIR-PERSOL-8056597441117",
+        "name": "Persol PO5006ST · 8006B1 · 47-20",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: PO5006ST",
+          "Manufacturer SKU: 8056597441117",
+          "Selected variant: 47-20",
+          "Manufacturer model/color reference: 0po5006st-8006b1"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 8006B1",
+        "source": "https://www.persol.com/products/0po5006st-8006b1",
+        "familyId": "persol:15046545080660",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "po5006st",
+          "lensWidthMm": 47,
+          "bridgeMm": 20
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO5006ST__8006B1__P21__shad__qt_94430f3027215d497482b0cdf619215ab29176486080cca3a4678285257efd69.png?v=1788798403",
+          "source": "https://www.persol.com/products/0po5006st-8006b1",
+          "alt": "Persol PO5006ST 8006B1 · 47-20",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "PO5006ST",
+        "skuVariant": "8006B1 · 47-20"
+      },
+      {
+        "id": "REPAIR-PERSOL-8056597151337",
+        "name": "Persol PO5004ST · 800432 · 50-19",
+        "category": "sunglasses",
+        "description": "Manufacturer-identified sunglasses model and exact frame reference. DALE offer price and inventory are simulated. Only documented dimensions are recorded; unverified lens protection, polarization, fit and materials are not inferred.",
+        "price": 28900,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Persol",
+          "Model: PO5004ST",
+          "Manufacturer SKU: 8056597151337",
+          "Selected variant: 50-19",
+          "Manufacturer model/color reference: 0po5004st-800432"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Manufacturer color 800432",
+        "source": "https://www.persol.com/products/0po5004st-800432",
+        "familyId": "persol:15046544785748",
+        "provenance": "manufacturer_evidence",
+        "brand": "Persol",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "polarization",
+            "uvProtection",
+            "frameMaterial",
+            "frameShape",
+            "templeMm"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "sunglasses",
+          "brand": "persol",
+          "modelName": "po5004st",
+          "lensWidthMm": 50,
+          "bridgeMm": 19
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO5004ST__800432__P21__shad__qt_9eb2a1ceffc230f89729a3cfdc98089452000b72badd5ec324900a57e5624f00.png?v=1788798398",
+          "source": "https://www.persol.com/products/0po5004st-800432",
+          "alt": "Persol PO5004ST 800432 · 50-19",
+          "attribution": "Persol manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "sunglasses",
+        "modelName": "PO5004ST",
+        "skuVariant": "800432 · 50-19"
+      }
+    ]
+  },
+  "replacements": [
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-FLIGHT-006-AVIATOR-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-7806-B-BLK-GLD-52-Z"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-GRANDMASTER-SIX-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DTS477-A-01"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-MACH-SIX-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DTS121-62-01-Z"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-STATESMAN-SIX-BROWLINE-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DLS407-A-01-A"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-SUBSYSTEM-RECTANGULAR-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DTS141-A-04"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-BELIEVER-ROUND-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DTS160-A-05"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-DECADE-TWO-AVIATOR-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DRX-2082-A-SLV-GLD-62-Z"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-GRAND-EVO-ONE-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DTS138-A-03"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-INITIATOR-SQUARE-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DLS451-A-01"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-DITA-DITA-SEKTON-GEOMETRIC-SUNGLASSES",
+      "newProductId": "REPAIR-DITA-DLS151-A-01"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-GREGORY-PECK-SUN",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934529120"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-OMALLEY-SUN",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934423848"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-FAIRMONT-SUN",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934526365"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-SHELDRAKE-SUN",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934529007"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-FINLEY-VINTAGE-SUN",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934506305"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-CASSAVETES-SUN",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934477131"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-OLIVER-SUN",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934530638"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-CLIFTON-AVIATOR-SUNGLASSES",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934360532"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-BERNARDO-SQUARE-SUNGLASSES",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934530645"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-BENEDICT-PILOT-SUNGLASSES",
+      "newProductId": "REPAIR-OLIVER-PEOPLES-827934524910"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-649-ORIGINAL-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-713132165331"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-714-FOLDING-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8056262229248"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3019S-SQUARE-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8056597989169"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3092SM-ROUND-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8056597971409"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3268S-RECTANGULAR-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8053672128949"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3225S-NAVIGATOR-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8056597831253"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3199S-BROWLINE-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8056597840309"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-2422SJ-ROUND-METAL-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8056262229637"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3272S-OVAL-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8056597441117"
+    },
+    {
+      "oldProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-9649S-SLIM-AVIATOR-SUNGLASSES",
+      "newProductId": "REPAIR-PERSOL-8056597151337"
+    }
+  ],
+  "evidence": [
+    {
+      "productId": "REPAIR-DITA-7806-B-BLK-GLD-52-Z",
+      "source": "https://dita.com/products/flight-006",
+      "manufacturerSku": "7806-B-BLK-GLD-52-Z",
+      "manufacturerProductId": 7594694443241,
+      "manufacturerVariantId": 42629943230697,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/FLIGHT006_7806-B-BLK-GLD-52_ANGLE.jpg?v=1742233427",
+      "sourceProductHandle": "flight-006",
+      "feedSha256": "a4db7e22c5d528b01c6edd74067718be831b3647372529cbd939e37bcae1d679",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-FLIGHT-006-AVIATOR-SUNGLASSES",
+      "originalName": "DITA Flight.006 Aviator Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DTS477-A-01",
+      "source": "https://dita.com/products/flight-010",
+      "manufacturerSku": "DTS477-A-01",
+      "manufacturerProductId": 9167137145065,
+      "manufacturerVariantId": 49999183806697,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/FLIGHT-010_DTS477-A-01_ANGLE.jpg?v=1767913894",
+      "sourceProductHandle": "flight-010",
+      "feedSha256": "17c29a8431d31a1d2e8d96a0268046cd3d68c2dd521db6451fb328671135db21",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-GRANDMASTER-SIX-SUNGLASSES",
+      "originalName": "DITA Grandmaster-Six Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DTS121-62-01-Z",
+      "source": "https://dita.com/products/mach-six",
+      "manufacturerSku": "DTS121-62-01-Z",
+      "manufacturerProductId": 7594698932457,
+      "manufacturerVariantId": 42629972721897,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/MACH-SIX_DTS121-62-01_ANGLE.jpg?v=1768951884",
+      "sourceProductHandle": "mach-six",
+      "feedSha256": "a4db7e22c5d528b01c6edd74067718be831b3647372529cbd939e37bcae1d679",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-MACH-SIX-SUNGLASSES",
+      "originalName": "DITA Mach-Six Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DLS407-A-01-A",
+      "source": "https://dita.com/products/lsa-407",
+      "manufacturerSku": "DLS407-A-01-A",
+      "manufacturerProductId": 8346073333993,
+      "manufacturerVariantId": 46639810740457,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-407_DLS407-A-01_angle.jpg?v=1708123370",
+      "sourceProductHandle": "lsa-407",
+      "feedSha256": "17c29a8431d31a1d2e8d96a0268046cd3d68c2dd521db6451fb328671135db21",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-STATESMAN-SIX-BROWLINE-SUNGLASSES",
+      "originalName": "DITA Statesman-Six Browline Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DTS141-A-04",
+      "source": "https://dita.com/products/subsystem",
+      "manufacturerSku": "DTS141-A-04",
+      "manufacturerProductId": 7594701684969,
+      "manufacturerVariantId": 44449304084713,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/Subsystem_DTS141-A-04_Angle.jpg?v=1713465767",
+      "sourceProductHandle": "subsystem",
+      "feedSha256": "a4db7e22c5d528b01c6edd74067718be831b3647372529cbd939e37bcae1d679",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-SUBSYSTEM-RECTANGULAR-SUNGLASSES",
+      "originalName": "DITA Subsystem Rectangular Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DTS160-A-05",
+      "source": "https://dita.com/products/424-artoa-92",
+      "manufacturerSku": "DTS160-A-05",
+      "manufacturerProductId": 9395762200809,
+      "manufacturerVariantId": 51744263569641,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/ARTOA-92_424-02_ANGLE.jpg?v=1787852338",
+      "sourceProductHandle": "424-artoa-92",
+      "feedSha256": "17c29a8431d31a1d2e8d96a0268046cd3d68c2dd521db6451fb328671135db21",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-BELIEVER-ROUND-SUNGLASSES",
+      "originalName": "DITA Believer Round Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DRX-2082-A-SLV-GLD-62-Z",
+      "source": "https://dita.com/products/decade-two",
+      "manufacturerSku": "DRX-2082-A-SLV-GLD-62-Z",
+      "manufacturerProductId": 7594694050025,
+      "manufacturerVariantId": 42629940576489,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/DECADE-TWO_DRX_2082_A_SLV_GLD_62_ANGLE.jpg?v=1747854083",
+      "sourceProductHandle": "decade-two",
+      "feedSha256": "a4db7e22c5d528b01c6edd74067718be831b3647372529cbd939e37bcae1d679",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-DECADE-TWO-AVIATOR-SUNGLASSES",
+      "originalName": "DITA Decade-Two Aviator Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DTS138-A-03",
+      "source": "https://dita.com/products/grand-evo-one",
+      "manufacturerSku": "DTS138-A-03",
+      "manufacturerProductId": 7594694574313,
+      "manufacturerVariantId": 45650793431273,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/GRAND-EVOONE_DTS138-A-03_Angle.jpg?v=1747855431",
+      "sourceProductHandle": "grand-evo-one",
+      "feedSha256": "a4db7e22c5d528b01c6edd74067718be831b3647372529cbd939e37bcae1d679",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-GRAND-EVO-ONE-SUNGLASSES",
+      "originalName": "DITA Grand-Evo One Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DLS451-A-01",
+      "source": "https://dita.com/products/lsa-451",
+      "manufacturerSku": "DLS451-A-01",
+      "manufacturerProductId": 9281694236905,
+      "manufacturerVariantId": 51009944158441,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-451_DLS451-A-01_ANGLE.jpg?v=1785431936",
+      "sourceProductHandle": "lsa-451",
+      "feedSha256": "17c29a8431d31a1d2e8d96a0268046cd3d68c2dd521db6451fb328671135db21",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-INITIATOR-SQUARE-SUNGLASSES",
+      "originalName": "DITA Initiator Square Sunglasses"
+    },
+    {
+      "productId": "REPAIR-DITA-DLS151-A-01",
+      "source": "https://dita.com/products/lsa-151",
+      "manufacturerSku": "DLS151-A-01",
+      "manufacturerProductId": 9281674477801,
+      "manufacturerVariantId": 51009820229865,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-151_DLS151-A-01_ANGLE.jpg?v=1785431577",
+      "sourceProductHandle": "lsa-151",
+      "feedSha256": "17c29a8431d31a1d2e8d96a0268046cd3d68c2dd521db6451fb328671135db21",
+      "imageBinding": "exact-variant-featured-image",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-DITA-DITA-SEKTON-GEOMETRIC-SUNGLASSES",
+      "originalName": "DITA Sekton Geometric Sunglasses"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934529120",
+      "source": "https://www.oliverpeoples.com/products/0ov5217s-173553",
+      "manufacturerSku": "827934529120",
+      "manufacturerProductId": 16302562607439,
+      "manufacturerVariantId": 58638273020239,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5217S__173553__P21__shad__qt_cb9735492bce7ad10c92744abfa6cd02ec0a5fd25590fa8acfb9ef1e35a444f6.png?v=1788343397",
+      "sourceProductHandle": "0ov5217s-173553",
+      "feedSha256": "c610c443ff331b5864d4d3412aea233c8c1bd8090cfc9df23b47806b680b4914",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-GREGORY-PECK-SUN",
+      "originalName": "Oliver Peoples Gregory Peck Sun"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934423848",
+      "source": "https://www.oliverpeoples.com/products/0ov5183s-109452",
+      "manufacturerSku": "827934423848",
+      "manufacturerProductId": 15615204720975,
+      "manufacturerVariantId": 55942511657295,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5183S__109452__P21__shad__qt_9bdf79bcdb26a39b19f7860f2e7590a0191eba41225c2665a540926e201d3e0b.png?v=1790942572",
+      "sourceProductHandle": "0ov5183s-109452",
+      "feedSha256": "c610c443ff331b5864d4d3412aea233c8c1bd8090cfc9df23b47806b680b4914",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-OMALLEY-SUN",
+      "originalName": "Oliver Peoples O'Malley Sun"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934526365",
+      "source": "https://www.oliverpeoples.com/products/0ov5219s-1820gn",
+      "manufacturerSku": "827934526365",
+      "manufacturerProductId": 15849101984079,
+      "manufacturerVariantId": 56660959396175,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5219S__1820GN__P21__shad__qt_74aa002a44b71e9f79a67481a9efc7582e0cdafa7bf0380c007bb48f3fb95eda.png?v=1786874600",
+      "sourceProductHandle": "0ov5219s-1820gn",
+      "feedSha256": "9a325893b152a3ed09efd7e713b0d9c927f01dd7ee668d30a3ce802074420862",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-FAIRMONT-SUN",
+      "originalName": "Oliver Peoples Fairmont Sun"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934529007",
+      "source": "https://www.oliverpeoples.com/products/0ov5036s-180153",
+      "manufacturerSku": "827934529007",
+      "manufacturerProductId": 16302562410831,
+      "manufacturerVariantId": 58638272495951,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5036S__180153__P21__shad__qt_d8da663b950d9d7d6b12325bd7ca4e8f2fa3bb632d589d75984623c6d2a245ed.png?v=1790334170",
+      "sourceProductHandle": "0ov5036s-180153",
+      "feedSha256": "c610c443ff331b5864d4d3412aea233c8c1bd8090cfc9df23b47806b680b4914",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-SHELDRAKE-SUN",
+      "originalName": "Oliver Peoples Sheldrake Sun"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934506305",
+      "source": "https://www.oliverpeoples.com/products/0ov5565su-17830f",
+      "manufacturerSku": "827934506305",
+      "manufacturerProductId": 15615357321551,
+      "manufacturerVariantId": 55942941606223,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5565SU__17830F__P21__shad__qt_645ad91efb47880443f9811c21aa96ed1394ee2575d62fd9ba7f2298fa242ad5.png?v=1791198184",
+      "sourceProductHandle": "0ov5565su-17830f",
+      "feedSha256": "c610c443ff331b5864d4d3412aea233c8c1bd8090cfc9df23b47806b680b4914",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-FINLEY-VINTAGE-SUN",
+      "originalName": "Oliver Peoples Finley Vintage Sun"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934477131",
+      "source": "https://www.oliverpeoples.com/products/0ov5471su-1739r8",
+      "manufacturerSku": "827934477131",
+      "manufacturerProductId": 15615263277391,
+      "manufacturerVariantId": 55942811550031,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5471SU__1739R8__STD__shad__fld_85beeb9a14294006e7c768977bd5d025395212d18dd22a1776809b61361815b8.png?v=1787403832",
+      "sourceProductHandle": "0ov5471su-1739r8",
+      "feedSha256": "c610c443ff331b5864d4d3412aea233c8c1bd8090cfc9df23b47806b680b4914",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-CASSAVETES-SUN",
+      "originalName": "Oliver Peoples Cassavetes Sun"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934530638",
+      "source": "https://www.oliverpeoples.com/products/0ov5642su-1578r8",
+      "manufacturerSku": "827934530638",
+      "manufacturerProductId": 16331608883535,
+      "manufacturerVariantId": 58802929860943,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5642SU__1578R8__P21__shad__qt_980dfbade05079546db23e9ca3d8aab6ac0eda9f717d7e9af2b734429c4021e9.png?v=1790766191",
+      "sourceProductHandle": "0ov5642su-1578r8",
+      "feedSha256": "c610c443ff331b5864d4d3412aea233c8c1bd8090cfc9df23b47806b680b4914",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-OLIVER-SUN",
+      "originalName": "Oliver Peoples Oliver Sun"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934360532",
+      "source": "https://www.oliverpeoples.com/products/0ov1150s-50363f",
+      "manufacturerSku": "827934360532",
+      "manufacturerProductId": 15615148228943,
+      "manufacturerVariantId": 55942277529935,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1150S__50363F__P21__shad__qt_9af6505fbcf923139fd4a557abff1647691483d69a8f157ab4284e1548f671dd.png?v=1786997000",
+      "sourceProductHandle": "0ov1150s-50363f",
+      "feedSha256": "9a325893b152a3ed09efd7e713b0d9c927f01dd7ee668d30a3ce802074420862",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-CLIFTON-AVIATOR-SUNGLASSES",
+      "originalName": "Oliver Peoples Clifton Aviator Sunglasses"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934530645",
+      "source": "https://www.oliverpeoples.com/products/0ov1385st-534852",
+      "manufacturerSku": "827934530645",
+      "manufacturerProductId": 16331608359247,
+      "manufacturerVariantId": 58802924650831,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1385ST__534852__P21__shad__qt_2e58d43fe704ea778086bbaf8b9c486aaef653941247470e6cbe90330f55039a.png?v=1790766192",
+      "sourceProductHandle": "0ov1385st-534852",
+      "feedSha256": "c610c443ff331b5864d4d3412aea233c8c1bd8090cfc9df23b47806b680b4914",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-BERNARDO-SQUARE-SUNGLASSES",
+      "originalName": "Oliver Peoples Bernardo Square Sunglasses"
+    },
+    {
+      "productId": "REPAIR-OLIVER-PEOPLES-827934524910",
+      "source": "https://www.oliverpeoples.com/products/0ov1002s-5036gn",
+      "manufacturerSku": "827934524910",
+      "manufacturerProductId": 15849090842959,
+      "manufacturerVariantId": 56660894024015,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1002S__5036GN__P21__shad__qt_9db1d9d2b1a5bc55efc3dbd6d588e1635aef71096bf206c4cec779b10ec4344.png?v=1787270603",
+      "sourceProductHandle": "0ov1002s-5036gn",
+      "feedSha256": "9a325893b152a3ed09efd7e713b0d9c927f01dd7ee668d30a3ce802074420862",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-OLIVER-PEOPLES-OLIVER-PEOPLES-BENEDICT-PILOT-SUNGLASSES",
+      "originalName": "Oliver Peoples Benedict Pilot Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-713132165331",
+      "source": "https://www.persol.com/products/0po0649-24_57",
+      "manufacturerSku": "713132165331",
+      "manufacturerProductId": 15046511034708,
+      "manufacturerVariantId": 54032961995092,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO0649__24_57__P21__shad__qt_f53d293772384b020191a335fa29580e2578117a46cae15c9cb9772db1b4f703.png?v=1788797767",
+      "sourceProductHandle": "0po0649-24_57",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Exact model now identified with manufacturer SKU and selected color/size; prior generic identity retired",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-649-ORIGINAL-SUNGLASSES",
+      "originalName": "Persol 649 Original Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8056262229248",
+      "source": "https://www.persol.com/products/0po3362s-96_56",
+      "manufacturerSku": "8056262229248",
+      "manufacturerProductId": 15046535938388,
+      "manufacturerVariantId": 54032998793556,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3362S__96_56__P21__shad__qt_fd3dc6b01950cbde911c5434828714d60d8fa66f80b6f3618fc8ff4aa7246764.png?v=1788798142",
+      "sourceProductHandle": "0po3362s-96_56",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-714-FOLDING-SUNGLASSES",
+      "originalName": "Persol 714 Folding Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8056597989169",
+      "source": "https://www.persol.com/products/0po3341s-120757",
+      "manufacturerSku": "8056597989169",
+      "manufacturerProductId": 15046532628820,
+      "manufacturerVariantId": 54032992928084,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3341S__120757__P21__shad__qt_34e99749d2cfcc382f2cdac076b5d0649747adcdf65acb081b248344489c8d50.png?v=1788798049",
+      "sourceProductHandle": "0po3341s-120757",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3019S-SQUARE-SUNGLASSES",
+      "originalName": "Persol 3019S Square Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8056597971409",
+      "source": "https://www.persol.com/products/0po3235s-120271",
+      "manufacturerSku": "8056597971409",
+      "manufacturerProductId": 15046522962260,
+      "manufacturerVariantId": 54032977953108,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3235S__120271__P21__shad__qt_c16ab9782e8f5bd4661277059b5fb666d14d12b864aa179ec275f8aa69b89629.png?v=1788797926",
+      "sourceProductHandle": "0po3235s-120271",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3092SM-ROUND-SUNGLASSES",
+      "originalName": "Persol 3092SM Round Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8053672128949",
+      "source": "https://www.persol.com/products/0po3059s-96_s3",
+      "manufacturerSku": "8053672128949",
+      "manufacturerProductId": 15046521028948,
+      "manufacturerVariantId": 54032975495508,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3059S__96_S3__P21__shad__qt_4f9490c2066cf2d9e6d2de343d8e40cf83a87f40b06abced11df11154c0df1e8.png?v=1788801142",
+      "sourceProductHandle": "0po3059s-96_s3",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3268S-RECTANGULAR-SUNGLASSES",
+      "originalName": "Persol 3268S Rectangular Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8056597831253",
+      "source": "https://www.persol.com/products/0po0714sm-95_b1",
+      "manufacturerSku": "8056597831253",
+      "manufacturerProductId": 15046513721684,
+      "manufacturerVariantId": 54032965828948,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO0714SM__95_B1__P21__shad__fld_3a37544180f3358dc9e8364cd73e8ea9c5193669a551c94225a462782ab10244.png?v=1788801025",
+      "sourceProductHandle": "0po0714sm-95_b1",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3225S-NAVIGATOR-SUNGLASSES",
+      "originalName": "Persol 3225S Navigator Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8056597840309",
+      "source": "https://www.persol.com/products/0po1935s-95_31",
+      "manufacturerSku": "8056597840309",
+      "manufacturerProductId": 15046518243668,
+      "manufacturerVariantId": 54032971399508,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO1935S__95_31__P21__shad__qt_e365fb3df9deba4c08d5ce54315e80beb9adac9da7d040d0a8a977d7864bef3f.png?v=1788797866",
+      "sourceProductHandle": "0po1935s-95_31",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3199S-BROWLINE-SUNGLASSES",
+      "originalName": "Persol 3199S Browline Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8056262229637",
+      "source": "https://www.persol.com/products/0po3355s-1216b1",
+      "manufacturerSku": "8056262229637",
+      "manufacturerProductId": 15046534529364,
+      "manufacturerVariantId": 54032996303188,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3355S__1216B1__P21__shad__qt_733855370146469b25decc27a8de55ed759daa816f63e25c424b839ae9b40a9b.png?v=1788798106",
+      "sourceProductHandle": "0po3355s-1216b1",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-2422SJ-ROUND-METAL-SUNGLASSES",
+      "originalName": "Persol 2422SJ Round Metal Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8056597441117",
+      "source": "https://www.persol.com/products/0po5006st-8006b1",
+      "manufacturerSku": "8056597441117",
+      "manufacturerProductId": 15046545080660,
+      "manufacturerVariantId": 54033020420436,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO5006ST__8006B1__P21__shad__qt_94430f3027215d497482b0cdf619215ab29176486080cca3a4678285257efd69.png?v=1788798403",
+      "sourceProductHandle": "0po5006st-8006b1",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-3272S-OVAL-SUNGLASSES",
+      "originalName": "Persol 3272S Oval Sunglasses"
+    },
+    {
+      "productId": "REPAIR-PERSOL-8056597151337",
+      "source": "https://www.persol.com/products/0po5004st-800432",
+      "manufacturerSku": "8056597151337",
+      "manufacturerProductId": 15046544785748,
+      "manufacturerVariantId": 54033019666772,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO5004ST__800432__P21__shad__qt_9eb2a1ceffc230f89729a3cfdc98089452000b72badd5ec324900a57e5624f00.png?v=1788798398",
+      "sourceProductHandle": "0po5004st-800432",
+      "feedSha256": "b4ad3a406d20c276ac78759ef88ddfad1a02f535beb42523ec1f7f43eef25351",
+      "imageBinding": "manufacturer-single-color-product-primary-image-shared-by-frame-size-variants",
+      "replacementReason": "Prior model not identified in current manufacturer feed; explicit new current model under new product ID, old record preserved",
+      "originalProductId": "PROD-SUNGLASSES-PERSOL-PERSOL-9649S-SLIM-AVIATOR-SUNGLASSES",
+      "originalName": "Persol 9649S Slim Aviator Sunglasses"
+    }
+  ],
+  "publication": "not-published; exact manufacturer identities and all 30 photographs visually reviewed; ready for parent-controlled local publication"
+}
