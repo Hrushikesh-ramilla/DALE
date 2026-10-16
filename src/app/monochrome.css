@@ -1290,18 +1290,13 @@ select option {
 }
 
 .parallax-card-visual .art-frame {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  max-width: 540px;
+  height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.parallax-card-visual .art-frame.ecosystem-frame {
-  width: 100%;
-  max-width: 520px;
-  height: 360px;
 }
 
 .parallax-category-card:hover .parallax-card-visual .art-frame {

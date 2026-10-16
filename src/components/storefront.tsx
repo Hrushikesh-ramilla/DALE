@@ -64,6 +64,49 @@ type Session = Awaited<ReturnType<typeof snapshot>>;
 
 const categoryTitles: Record<string, string> = titles;
 
+const departmentHeroImages: Record<string, { src: string; alt: string }> = {
+  electronics: {
+    src: "/images/departments/electronics-apple-ecosystem-hero.webp",
+    alt: "Electronics Department: Mac, MacBook, iPad and iPhone Ecosystem",
+  },
+  clothing: {
+    src: "/images/departments/clothing-luxury-hero.webp",
+    alt: "Clothing Department: Luxury Bespoke Suits, Coats and Knitwear",
+  },
+  fragrance: {
+    src: "/images/departments/fragrance-luxury-hero.webp",
+    alt: "Fragrance Department: Haute Parfumerie, Baccarat Rouge and Creed Aventus",
+  },
+  bags: {
+    src: "/images/departments/bags-luxury-hero.webp",
+    alt: "Bags Department: Iconic Hermès Birkin, Louis Vuitton and Bottega Veneta",
+  },
+  home: {
+    src: "/images/departments/home-luxury-hero.webp",
+    alt: "Home & Decor Department: Baccarat Crystal, Le Creuset and Smeg Dolce & Gabbana",
+  },
+  beauty: {
+    src: "/images/departments/beauty-luxury-hero.webp",
+    alt: "Beauty Department: La Mer, Augustinus Bader and La Prairie Skin Caviar",
+  },
+  watches: {
+    src: "/images/departments/watches-luxury-hero.webp",
+    alt: "Watches Department: Audemars Piguet Royal Oak Offshore, Patek Philippe and Rolex",
+  },
+  footwear: {
+    src: "/images/departments/footwear-luxury-hero.webp",
+    alt: "Footwear Department: Christian Louboutin Red-Sole and Berluti Wholecut Oxford",
+  },
+  eyewear: {
+    src: "/images/departments/eyewear-luxury-hero.webp",
+    alt: "Eyewear Department: Cartier Santos, Celine Triomphe and Persol Frames",
+  },
+  appliances: {
+    src: "/images/departments/appliances-luxury-hero.webp",
+    alt: "Appliances Department: Smeg Dolce & Gabbana Espresso and Dyson Big+Quiet Purifier",
+  },
+};
+
 
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
@@ -822,8 +865,8 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       </span>
                     </div>
                     <div className="parallax-card-visual">
-                      <div className={`art-frame ${col.id === "electronics" ? "ecosystem-frame" : ""}`}>
-                        {col.id === "electronics" ? (
+                      <div className="art-frame">
+                        {departmentHeroImages[col.id] ? (
                           <div
                             style={{
                               position: "relative",
@@ -836,17 +879,17 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                             }}
                           >
                             <Image
-                              src="/images/departments/electronics-apple-ecosystem-hero.webp"
-                              alt="Electronics Department: Full Ecosystem of Mac, MacBook, iPad & iPhone"
-                              width={800}
-                              height={530}
-                              quality={90}
-                              priority
+                              src={departmentHeroImages[col.id].src}
+                              alt={departmentHeroImages[col.id].alt}
+                              width={1000}
+                              height={650}
+                              unoptimized
+                              priority={col.id === "electronics" || col.id === "clothing"}
                               style={{
                                 width: "100%",
                                 height: "100%",
                                 objectFit: "contain",
-                                filter: "drop-shadow(0 18px 36px rgba(0,0,0,0.5))",
+                                filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.6))",
                               }}
                             />
                           </div>
