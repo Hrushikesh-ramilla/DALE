@@ -1,5 +1,7 @@
 # Marketplace catalogue expansion
 
+Governing depth revision: [ASSORTMENT_DEPTH_MASTER_PLAN](ASSORTMENT_DEPTH_MASTER_PLAN.md). Each leaf product type has its own ten-brand × ten-model minimum, with source-proven smaller-range exceptions and a normal 100–150-model target. Its 50-row scope and 5,000–7,500-placement sourcing budget supersede the previous 2,000-family cap and smaller brand pools below. The retained lists are historical starting pools, not sufficient category acceptance.
+
 Status: implementation in progress. Application 9547200 is deployed with 142 offers / 138 distinct families across eight nonempty departments. Nine reviewed brand batches, database publication/search, filter-bound cursors and isolated capacity checks are implemented; full assortment depth and ingestion/refresh operations remain pending. See CATALOG_ACCEPTANCE.md for verified release scope. Existing application and customer data remain in place. This supersedes the mixed electronics brand shortlist, not the core customer-first agent goals in MASTER_PLAN.md.
 
 Expanded 11 October: sunglasses and a production implementation specification are included below. The full specification is in [MARKETPLACE_ARCHITECTURE.md](MARKETPLACE_ARCHITECTURE.md). The first deliverable remains a reviewed exact-product manifest; document completion is not storefront expansion completion.

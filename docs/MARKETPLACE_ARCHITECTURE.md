@@ -1,5 +1,7 @@
 # DALE marketplace expansion: implementation specification
 
+Scope amendment: [ASSORTMENT_DEPTH_MASTER_PLAN](ASSORTMENT_DEPTH_MASTER_PLAN.md) governs counts, leaf taxonomy, brand eligibility, supply exceptions and execution order. Its 50 type targets and nominal 5,000–7,500 placements supersede the older 2,000-family target below. Reuse the database/security/agent/commerce contracts in this architecture; the count amendment is planning only, not a claim of new published inventory or completed operations.
+
 Prepared 11 October 2026. Status: implementation in progress. The additive publication/search foundation and first exact-product manifests are deployed and verified in application 9547200. Preserve existing customer data and original MASTER_PLAN.md feature contracts; the complete assortment and scale requirements below remain acceptance targets.
 
 ## 1. Product and release objective
