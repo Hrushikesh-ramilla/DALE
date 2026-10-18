@@ -13,30 +13,36 @@ const positionSchema = z
 /** Bind continuation to the normalized filter, never to a customer/session. */
 export function catalogFilterHash(input: {
   category?: string;
+  leafType?: string;
+  brand?: string;
   query?: string;
   budget?: number;
   requirements?: Record<string, string | number>;
   fixtures?: boolean;
 }) {
+  const base: unknown[] = [
+    input.category || "",
+    input.query || "",
+    input.budget ?? 1_000_000,
+    Object.entries(input.requirements || {}).sort(([a], [b]) =>
+      a.localeCompare(b),
+    ),
+    Boolean(input.fixtures),
+  ];
+  if (input.leafType || input.brand) {
+    base.push(input.leafType || "", input.brand || "");
+  }
   return createHash("sha256")
-    .update(
-      JSON.stringify([
-        input.category || "",
-        input.query || "",
-        input.budget ?? 1_000_000,
-        Object.entries(input.requirements || {}).sort(([a], [b]) =>
-          a.localeCompare(b),
-        ),
-        Boolean(input.fixtures),
-      ]),
-    )
+    .update(JSON.stringify(base))
     .digest("hex");
 }
+
 export function encodeCatalogCursor(filter: string, price: number, id: string) {
   return Buffer.from(
     JSON.stringify(positionSchema.parse({ version: 1, filter, price, id })),
   ).toString("base64url");
 }
+
 export function decodeCatalogCursor(cursor: string, filter: string) {
   try {
     if (cursor.length > 600 || !/^[A-Za-z0-9_-]+$/.test(cursor))

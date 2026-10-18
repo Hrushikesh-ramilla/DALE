@@ -298,3 +298,61 @@ export function resolveParentCategory(leafOrCategory: string): Category {
   return "accessories";
 }
 
+export const leafTitles: Record<LeafTypeKey, string> = {
+  phones: "Smartphones",
+  laptops: "Laptops",
+  tablets: "Tablets",
+  headphones: "Over-Ear & On-Ear Headphones",
+  earbuds: "Wireless Earbuds",
+  speakers: "Portable & Home Speakers",
+  "wall-chargers": "Wall Chargers & Power Adapters",
+  "power-banks": "Power Banks",
+  "portable-ssds": "Portable SSDs",
+  "internal-ssds": "Internal SSDs (NVMe & SATA)",
+  "hard-drives": "External & Internal Hard Drives",
+  keyboards: "Keyboards",
+  mice: "Mice & Pointing Devices",
+  soundbars: "Soundbars & Home Audio",
+  cables: "Charging & Data Cables",
+  "memory-cards": "SD & MicroSD Memory Cards",
+  "usb-flash-drives": "USB Flash Drives",
+  monitors: "Computer Monitors",
+  "docks-hubs": "USB-C Docks & Hubs",
+  webcams: "Webcams",
+  routers: "Wi-Fi Routers & Mesh Systems",
+  shirts: "Button-Down Shirts",
+  "t-shirts": "T-Shirts",
+  knitwear: "Sweaters & Knitwear",
+  trousers: "Trousers & Chinos",
+  denim: "Jeans & Denim",
+  dresses: "Dresses",
+  suits: "Suits & Tailoring",
+  jackets: "Jackets & Blazers",
+  coats: "Outerwear & Coats",
+  fragrance: "Fragrances & Perfumes",
+  watches: "Luxury & Precision Watches",
+  sunglasses: "Sunglasses & Eyewear",
+  handbags: "Handbags & Totes",
+  backpacks: "Backpacks",
+  wallets: "Wallets & Cardholders",
+  loafers: "Loafers & Slip-Ons",
+  "formal-shoes": "Dress & Formal Shoes",
+  "running-shoes": "Running & Performance Shoes",
+  "lifestyle-sneakers": "Lifestyle Sneakers",
+  boots: "Boots",
+  cleansers: "Facial Cleansers",
+  serums: "Skin Serums",
+  moisturizers: "Moisturizers & Creams",
+  sunscreens: "Sunscreens & SPF",
+  kitchenware: "Cookware & Kitchenware",
+  decor: "Home Decor & Objects",
+  "home-textiles": "Bedding & Home Textiles",
+  "vacuum-cleaners": "Vacuums & Floor Care",
+  "air-purifiers": "Air Purifiers",
+};
+
+export function getCategoryLeafTypes(category: Category): LeafTypeKey[] {
+  return leafTypeKeys.filter((leaf) => leafToParentCategory[leaf] === category);
+}
+
+

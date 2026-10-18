@@ -17,6 +17,9 @@ export async function catalogSummary() {
   const counts = await database.query<{ category: string; count: string }>(
     "SELECT category,count(*) FROM catalog_products WHERE publication='published' GROUP BY category ORDER BY category",
   );
+  const leafCounts = await database.query<{ leaf_type: string; count: string }>(
+    "SELECT leaf_type,count(*) FROM catalog_products WHERE publication='published' AND leaf_type IS NOT NULL GROUP BY leaf_type ORDER BY leaf_type",
+  );
   const facets = await database.query<{
     category: string;
     key: string;
@@ -33,6 +36,9 @@ export async function catalogSummary() {
   return {
     counts: Object.fromEntries(
       counts.rows.map((row) => [row.category, Number(row.count)]),
+    ),
+    leafCounts: Object.fromEntries(
+      leafCounts.rows.map((row) => [row.leaf_type, Number(row.count)]),
     ),
     facets: Object.fromEntries(
       counts.rows.map((row) => [
@@ -81,6 +87,8 @@ export async function getStoredProducts(ids: string[]): Promise<Product[]> {
 }
 export async function browseCatalog(input: {
   category?: string;
+  leafType?: string;
+  brand?: string;
   query?: string;
   budget?: number;
   page?: number;
@@ -99,8 +107,13 @@ export async function browseCatalog(input: {
     input.budget ?? 1000000,
     JSON.stringify(input.requirements || {}),
     Boolean(input.fixtures),
+    input.leafType || "",
+    input.brand || "",
   ];
-  const where = `($1='' OR category=$1) AND ($2='' OR to_tsvector('simple',coalesce(record->>'name','') || ' ' || coalesce(record->>'description','') || ' ' || coalesce(record->>'specs','')) @@ plainto_tsquery('simple',$2))
+  const where = `($1='' OR category=$1 OR leaf_type=$1)
+    AND ($6='' OR leaf_type=$6 OR record->>'leafType'=$6)
+    AND ($7='' OR lower(coalesce(brand, record->>'brand', record->'attributes'->>'brand', ''))=lower($7))
+    AND ($2='' OR to_tsvector('simple',coalesce(record->>'name','') || ' ' || coalesce(record->>'description','') || ' ' || coalesce(record->>'specs','')) @@ plainto_tsquery('simple',$2))
     AND price<=$3 AND coalesce(record->'attributes','{}'::jsonb) @> $4::jsonb
     AND (publication='published' OR ($5 AND publication='fixture'))`;
   const total = await database.query<{ count: string }>(
@@ -109,14 +122,17 @@ export async function browseCatalog(input: {
   );
   const rows = await database.query<{ record: Product }>(
     position
-      ? `SELECT record FROM catalog_products WHERE ${where} AND (price,id)>($6,$7) ORDER BY price,id LIMIT 49`
-      : `SELECT record FROM catalog_products WHERE ${where} ORDER BY price,id LIMIT 49 OFFSET $6`,
+      ? `SELECT record FROM catalog_products WHERE ${where} AND (price,id)>($8,$9) ORDER BY price,id LIMIT 49`
+      : `SELECT record FROM catalog_products WHERE ${where} ORDER BY price,id LIMIT 49 OFFSET $8`,
     position
       ? [...values, position.price, position.id]
       : [...values, ((input.page || 1) - 1) * 48],
   );
   const counts = await database.query<{ category: string; count: string }>(
     "SELECT category,count(*) FROM catalog_products WHERE publication='published' GROUP BY category ORDER BY category",
+  );
+  const leafCounts = await database.query<{ leaf_type: string; count: string }>(
+    "SELECT leaf_type,count(*) FROM catalog_products WHERE publication='published' AND leaf_type IS NOT NULL GROUP BY leaf_type ORDER BY leaf_type",
   );
   const products = rows.rows.slice(0, 48).map((row) => row.record);
   const last = products.at(-1);
@@ -136,6 +152,9 @@ export async function browseCatalog(input: {
     ),
     categoryCounts: Object.fromEntries(
       counts.rows.map((row) => [row.category, Number(row.count)]),
+    ),
+    leafCounts: Object.fromEntries(
+      leafCounts.rows.map((row) => [row.leaf_type, Number(row.count)]),
     ),
     provenance:
       "Manufacturer product identities and recorded specifications; DALE offer prices, stock, payments and fulfillment are sandbox data. Missing facts are disclosed per record.",
