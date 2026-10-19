@@ -3,10 +3,34 @@ import { writeFile } from "node:fs/promises";
 import { setTimeout as delay } from "node:timers/promises";
 const qualityOnly = process.argv.includes("--quality-only");
 const quality = process.argv.includes("--gemini-quality") || qualityOnly;
-const paceMs = quality ? 8000 : 0;
+const paceMs = quality ? 15000 : 0;
+const requestTimeout = Number(
+  process.argv
+    .find((arg) => arg.startsWith("--request-timeout-ms="))
+    ?.split("=")[1] || 180000,
+);
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext();
 const page = await context.newPage();
+if (process.argv.includes("--trace-network")) {
+  page.on("request", (r) => {
+    const path = new URL(r.url()).pathname;
+    if (path.startsWith("/api/copilot/"))
+      console.log(
+        JSON.stringify({ event: "browser.request", method: r.method(), path }),
+      );
+  });
+  page.on("response", (r) => {
+    const path = new URL(r.url()).pathname;
+    if (path.startsWith("/api/copilot/"))
+      console.log(
+        JSON.stringify({ event: "browser.response", status: r.status(), path }),
+      );
+  });
+  page.on("pageerror", (e) =>
+    console.log(JSON.stringify({ event: "browser.error", error: e.message })),
+  );
+}
 const base = "http://localhost:3000";
 const checks = [];
 let inference;
@@ -53,7 +77,7 @@ try {
       (response) =>
         new URL(response.url()).pathname === "/api/copilot/chat" &&
         response.request().method() === "POST",
-      { timeout: 180000 },
+      { timeout: requestTimeout },
     );
     await page
       .getByRole("button", { name: "Send message", exact: true })
@@ -258,6 +282,11 @@ try {
     });
   }
 } catch (error) {
+  await page
+    .screenshot({
+      path: ".data/concierge-verification/buyer-browser-gemini-error.png",
+    })
+    .catch(() => undefined);
   checks.push({ passed: false, error: String(error) });
 } finally {
   await browser.close();

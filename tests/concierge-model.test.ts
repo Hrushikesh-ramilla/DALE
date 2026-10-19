@@ -161,6 +161,7 @@ function configureGemini() {
   vi.stubEnv("CONCIERGE_ALLOW_CLOUD", "true");
   vi.stubEnv("AI_BILLING_DISABLED", "true");
   vi.stubEnv("AI_FREE_QUOTA_CONFIRMED", "true");
+  vi.stubEnv("CONCIERGE_REASONING_EFFORT", "low");
 }
 
 it("uses Gemini explicitly and preserves opaque continuation signatures across native function results", async () => {
@@ -236,7 +237,12 @@ it("surfaces Gemini quota errors without invoking a local fallback", async () =>
   configureGemini();
   const transport = vi
     .fn()
-    .mockResolvedValue(new Response("quota exhausted", { status: 429 }));
+    .mockResolvedValue(
+      new Response("quota exhausted", {
+        status: 429,
+        headers: { "retry-after": "0" },
+      }),
+    );
   vi.stubGlobal("fetch", transport);
   await expect(
     modelTurn([{ role: "user", content: "hello" }], []),
@@ -247,4 +253,98 @@ it("surfaces Gemini quota errors without invoking a local fallback", async () =>
       String(url).startsWith("https://generativelanguage.googleapis.com/"),
     ),
   ).toBe(true);
+});
+
+it("honors Google's retry hint before regenerating an already observed native frame", async () => {
+  configureGemini();
+  const times: number[] = [];
+  const transport = vi.fn().mockImplementation(async () => {
+    times.push(Date.now());
+    return times.length === 1
+      ? Response.json(
+          [
+            {
+              error: {
+                details: [
+                  {
+                    "@type": "type.googleapis.com/google.rpc.RetryInfo",
+                    retryDelay: "0.05s",
+                  },
+                ],
+              },
+            },
+          ],
+          { status: 429 },
+        )
+      : Response.json({
+          choices: [
+            {
+              finish_reason: "stop",
+              message: { content: "Existing operation acknowledged." },
+            },
+          ],
+        });
+  });
+  vi.stubGlobal("fetch", transport);
+  const result = await modelTurn(
+    [{ role: "user", content: "Acknowledge the recorded result." }],
+    [],
+  );
+  expect(result.content).toBe("Existing operation acknowledged.");
+  expect(times).toHaveLength(2);
+  expect(times[1] - times[0]).toBeGreaterThanOrEqual(45);
+  expect(transport.mock.calls[0][1].body).toBe(transport.mock.calls[1][1].body);
+});
+
+it("does not retry a hard daily quota exhaustion", async () => {
+  configureGemini();
+  const transport = vi
+    .fn()
+    .mockResolvedValue(
+      Response.json(
+        {
+          error: {
+            details: [
+              {
+                violations: [
+                  {
+                    quotaId:
+                      "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+                  },
+                ],
+              },
+            ],
+          },
+        },
+        { status: 429 },
+      ),
+    );
+  vi.stubGlobal("fetch", transport);
+  await expect(
+    modelTurn([{ role: "user", content: "hello" }], []),
+  ).rejects.toThrow("HTTP 429");
+  expect(transport).toHaveBeenCalledTimes(1);
+});
+
+it("cancels a provider rate-limit wait without issuing a retry", async () => {
+  configureGemini();
+  const transport = vi
+    .fn()
+    .mockResolvedValue(
+      Response.json(
+        { error: {} },
+        { status: 429, headers: { "retry-after": "60" } },
+      ),
+    );
+  vi.stubGlobal("fetch", transport);
+  const abort = new AbortController();
+  const pending = modelTurn(
+    [{ role: "user", content: "hello" }],
+    [],
+    abort.signal,
+  );
+  const canceled = expect(pending).rejects.toThrow("stop retry");
+  setTimeout(() => abort.abort(new Error("stop retry")), 20);
+  await canceled;
+  expect(transport).toHaveBeenCalledTimes(1);
 });

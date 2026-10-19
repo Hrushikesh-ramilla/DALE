@@ -45,6 +45,58 @@ const answerSchema = z.object({
 /** No generation fixtures or language classifier. Every production reply is generated
  * by the selected provider; failures propagate as failures, never scripted answers. */
 let activeGenerations = 0;
+async function geminiRetryDelay(response: Response): Promise<number | null> {
+  const payload = await response
+    .clone()
+    .json()
+    .catch(() => undefined);
+  const error = Array.isArray(payload) ? payload[0]?.error : payload?.error;
+  const parsed = z
+    .array(
+      z.object({
+        "@type": z.string().optional(),
+        retryDelay: z.string().optional(),
+        violations: z
+          .array(
+            z.object({
+              quotaId: z.string().optional(),
+              quotaMetric: z.string().optional(),
+            }),
+          )
+          .optional(),
+      }),
+    )
+    .safeParse(error?.details || []);
+  const details = parsed.success ? parsed.data : [];
+  const violations = details.flatMap((d) => d.violations || []);
+  // Daily exhaustion cannot recover within an interactive request. Never enable
+  // billing or swap providers to evade it.
+  if (
+    violations.some((v) =>
+      /per.?day/i.test(`${v.quotaId || ""} ${v.quotaMetric || ""}`),
+    )
+  )
+    return null;
+  const header = response.headers.get("retry-after");
+  const retryInfo = details.find((d) => d["@type"]?.endsWith("RetryInfo"));
+  const seconds =
+    typeof retryInfo?.retryDelay === "string" &&
+    /^\d+(\.\d+)?s$/.test(retryInfo.retryDelay)
+      ? Number(retryInfo.retryDelay.slice(0, -1))
+      : undefined;
+  const headerMs =
+    header !== null
+      ? /^\d+(\.\d+)?$/.test(header)
+        ? Number(header) * 1000
+        : Date.parse(header) - Date.now()
+      : undefined;
+  const hints = [
+    headerMs,
+    seconds === undefined ? undefined : seconds * 1000,
+  ].filter((n): n is number => n !== undefined && Number.isFinite(n));
+  const ms = hints.length ? Math.max(0, ...hints) : 15000;
+  return ms <= 60000 ? Math.ceil(ms) : null;
+}
 export async function modelTurn(
   messages: NativeMessage[],
   tools: ToolDeclaration[],
@@ -133,7 +185,13 @@ async function generate(
     }
     if (![429, 500, 502, 503, 504].includes(response.status) || attempt === 1)
       break;
+    const retryMs =
+      provider === "gemini" && response.status === 429
+        ? await geminiRetryDelay(response)
+        : 700;
+    if (retryMs === null) break;
     await response.body?.cancel();
+    combined.throwIfAborted();
     await new Promise<void>((resolve, reject) => {
       const onAbort = () => {
         clearTimeout(timer);
@@ -142,14 +200,17 @@ async function generate(
       const timer = setTimeout(() => {
         combined.removeEventListener("abort", onAbort);
         resolve();
-      }, 700);
+      }, retryMs);
       combined.addEventListener("abort", onAbort, { once: true });
+      if (combined.aborted) onAbort();
     });
   }
-  if (!response?.ok)
+  if (!response?.ok) {
+    await response?.body?.cancel().catch(() => undefined);
     throw new Error(
       `Concierge inference returned HTTP ${response?.status ?? "unavailable"}. No scripted response was substituted.`,
     );
+  }
   const envelope = answerSchema.parse(await response.json());
   const choice = envelope.choices[0];
   if (!["stop", "tool_calls"].includes(choice.finish_reason))
