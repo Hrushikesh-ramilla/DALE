@@ -39,6 +39,8 @@ import {
   type NativeMessage,
 } from "../src/domain/concierge";
 import { registeredPath } from "../src/domain/site-routes";
+import { waitForConciergeChange } from "../src/server/concierge/changes";
+import { ownerKey } from "../src/server/concierge/store";
 import type { Actor } from "../src/server/state";
 import type { Product } from "../src/domain/catalog";
 import { classifyMovement } from "../src/domain/catalog-derived";
@@ -84,6 +86,35 @@ beforeAll(async () => {
 afterAll(async () => {
   await closeDatabase();
   vi.restoreAllMocks();
+});
+it("publishes only committed state and does not publish a rolled back mutation", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const revision = (await readConcierge(fresh)).revision;
+  const waiting = waitForConciergeChange(
+    ownerKey(fresh),
+    revision,
+    new AbortController().signal,
+  );
+  await changeConcierge(fresh, (state) => {
+    state.wishlist = [products[0].id];
+  });
+  expect(await waiting).toBe(true);
+  expect((await readConcierge(fresh)).wishlist).toEqual([products[0].id]);
+  const after = (await readConcierge(fresh)).revision;
+  const rolledBack = waitForConciergeChange(
+    ownerKey(fresh),
+    after,
+    new AbortController().signal,
+    20,
+  );
+  await expect(
+    changeConcierge(fresh, (state) => {
+      state.wishlist = [];
+      throw new Error("rollback probe");
+    }),
+  ).rejects.toThrow("rollback probe");
+  expect(await rolledBack).toBe(false);
+  expect((await readConcierge(fresh)).wishlist).toEqual([products[0].id]);
 });
 it("uses stable product references without changing stored identities or unrelated arguments", async () => {
   const p = products[0];

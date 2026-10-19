@@ -30,6 +30,7 @@ const context = uiContext.parse({
   current_page_type: "department",
 });
 const results: Record<string, unknown>[] = [];
+const measurements: Record<string, unknown>[] = [];
 let warmupMs: number | null = null;
 if (process.argv.includes("--warmup")) {
   const at = Date.now();
@@ -39,10 +40,16 @@ if (process.argv.includes("--warmup")) {
     JSON.stringify({ event: "buyer.live.warmup", elapsedMs: warmupMs }),
   );
 }
-if (process.argv.includes("--trace-model")) {
+if (
+  process.argv.includes("--trace-model") ||
+  process.argv.includes("--timings")
+) {
   const transport = globalThis.fetch;
   globalThis.fetch = async (...args) => {
-    if (String(args[0]).includes("/chat/completions")) {
+    if (
+      process.argv.includes("--trace-model") &&
+      String(args[0]).includes("/chat/completions")
+    ) {
       const sent = JSON.parse(String(args[1]?.body || "{}"));
       const last = sent.messages?.at(-1);
       if (last?.role === "tool")
@@ -53,12 +60,18 @@ if (process.argv.includes("--trace-model")) {
           }),
         );
     }
+    const started = performance.now();
     const result = await transport(...args);
     if (String(args[0]).includes("/chat/completions")) {
       const body = await result.clone().json();
-      console.log(
-        JSON.stringify({ event: "buyer.live.model", choices: body.choices }),
-      );
+      measurements.push({
+        elapsedMs: Math.round(performance.now() - started),
+        ...body.timings,
+      });
+      if (process.argv.includes("--trace-model"))
+        console.log(
+          JSON.stringify({ event: "buyer.live.model", choices: body.choices }),
+        );
     }
     return result;
   };
@@ -68,6 +81,7 @@ async function shopper() {
 }
 async function turn(actor: Actor, message: string) {
   const at = Date.now();
+  const measurementOffset = measurements.length;
   const view = await runConcierge(actor, {
     turn_id: randomUUID(),
     message,
@@ -82,6 +96,9 @@ async function turn(actor: Actor, message: string) {
     status: view.turn?.status,
     error: view.turn?.error,
     response,
+    ...(process.argv.includes("--timings")
+      ? { modelTimings: measurements.slice(measurementOffset) }
+      : {}),
     products: view.products.map((p) => ({
       id: p.id,
       name: p.name,
@@ -269,6 +286,17 @@ const report = {
   scope:
     "Actual local model and isolated real application database. No inference mocks, no payment calls. Seven shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
   passed: results.every((r) => r.passed),
+  latency: {
+    targetMs: 1000,
+    measuredCases: results.filter((r) => typeof r.elapsedMs === "number")
+      .length,
+    withinTarget: results.filter(
+      (r) => typeof r.elapsedMs === "number" && r.elapsedMs < 1000,
+    ).length,
+    allWithinTarget: results.every(
+      (r) => typeof r.elapsedMs === "number" && r.elapsedMs < 1000,
+    ),
+  },
   results,
 };
 await writeFile(

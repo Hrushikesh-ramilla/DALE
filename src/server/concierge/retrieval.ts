@@ -5,6 +5,7 @@ import { searchConstraints, type SearchConstraints } from "@/domain/concierge";
 import { conciergeDatabase } from "./store";
 import { classifyMovement, recordedAttributes } from "@/domain/catalog-derived";
 import { identityMatcher } from "./identity";
+import type { Sql } from "../database";
 
 export function productDocument(p: Product) {
   return JSON.stringify({
@@ -244,15 +245,39 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
         `(p.record->'attributes'->>${bind(key)} IS NOT NULL AND p.record->'attributes'->>${bind(key)}<>${bind(String(value))})`,
       );
   const useVectors = Boolean(c.query.trim() && c.match_mode === "semantic");
-  const rows = await db.query<{
-    record: Product;
-    vector: number[] | null;
-    content_hash: string | null;
-    model: string | null;
-  }>(
-    `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? "e.vector,e.content_hash,e.model" : "NULL AS vector,NULL AS content_hash,NULL AS model"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
-    bindings,
-  );
+  const fetchRows = (sql: Sql) =>
+    sql.query<{
+      record: Product;
+      vector: number[] | null;
+      content_hash: string | null;
+      model: string | null;
+    }>(
+      `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? "e.vector,e.content_hash,e.model" : "NULL AS vector,NULL AS content_hash,NULL AS model"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
+      bindings,
+    );
+  const { rows, matchIdentity } =
+    c.query.trim() && c.match_mode === "identity"
+      ? await db.transaction(async (sql) => {
+          // Brand vocabulary and candidate rows must refer to the same catalog
+          // snapshot, including aliases that are ambiguous across brands.
+          await sql.query(
+            "SET TRANSACTION ISOLATION LEVEL REPEATABLE READ, READ ONLY",
+          );
+          const vocabulary = await sql.query<{ brand: string }>(
+            `SELECT DISTINCT coalesce(p.record->>'brand','') AS brand FROM catalog_products p WHERE ${clauses.join(" AND ")}`,
+            bindings,
+          );
+          const matchIdentity = identityMatcher(
+            c.query,
+            vocabulary.rows.map((r) => r.brand),
+          );
+          if (matchIdentity.brands.length)
+            clauses.push(
+              `coalesce(p.record->>'brand','')=ANY(${bind(matchIdentity.brands)}::text[])`,
+            );
+          return { rows: await fetchRows(sql), matchIdentity };
+        })
+      : { rows: await fetchRows(db), matchIdentity: null };
   let mode = "structured";
   let degradation: string | null = null;
   let queryVector: number[] | undefined;
@@ -278,13 +303,6 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       .toLocaleLowerCase()
       .normalize("NFKC")
       .match(/[\p{L}\p{N}]+/gu) || [];
-  const matchIdentity =
-    c.query.trim() && c.match_mode === "identity"
-      ? identityMatcher(
-          c.query,
-          rows.rows.map((r) => r.record.brand || ""),
-        )
-      : null;
   if (matchIdentity) mode = "identity";
   let ranked = rows.rows
     .filter(({ record }) => {
@@ -301,12 +319,15 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
     })
     .map((row) => {
       const identity = matchIdentity?.(row.record);
-      const text = productDocument(row.record)
-        .toLocaleLowerCase()
-        .normalize("NFKC");
-      const lexical = terms.length
-        ? terms.filter((t) => text.includes(t)).length / terms.length
-        : 1;
+      const text =
+        !matchIdentity && terms.length
+          ? productDocument(row.record).toLocaleLowerCase().normalize("NFKC")
+          : "";
+      const lexical = matchIdentity
+        ? 0
+        : terms.length
+          ? terms.filter((t) => text.includes(t)).length / terms.length
+          : 1;
       const fresh =
         queryVector &&
         row.vector &&

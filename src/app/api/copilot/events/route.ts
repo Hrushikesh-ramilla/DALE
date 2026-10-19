@@ -3,6 +3,7 @@ import { takeRequestBudget } from "@/server/budgets";
 import { apiError } from "@/server/http";
 import { conciergeView } from "@/server/concierge/engine";
 import { ownerKey } from "@/server/concierge/store";
+import { waitForConciergeChange } from "@/server/concierge/changes";
 
 export const dynamic = "force-dynamic";
 const subscribers = new Set<string>();
@@ -38,16 +39,9 @@ export async function GET(request: Request) {
                 ),
               );
             }
-            await new Promise<void>((resolve) => {
-              const finish = () => {
-                clearTimeout(timer);
-                signal.removeEventListener("abort", finish);
-                resolve();
-              };
-              const timer = setTimeout(finish, 2000);
-              signal.addEventListener("abort", finish, { once: true });
-              if (signal.aborted) finish();
-            });
+            // Local commits wake immediately. The bounded poll still detects
+            // other workers' changes and revalidates authentication when idle.
+            await waitForConciergeChange(owner, revision, signal);
           }
         } catch {
           // The ordinary request/response path retains the actual error and recovery state.

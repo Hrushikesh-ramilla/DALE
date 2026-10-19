@@ -5,38 +5,74 @@ const context = await browser.newContext();
 const page = await context.newPage();
 const base = "http://localhost:3000";
 const checks = [];
+await page.addInitScript(() => {
+  const NativeEvents = globalThis.EventSource;
+  globalThis.EventSource = class extends NativeEvents {
+    constructor(...args) {
+      super(...args);
+      this.addEventListener("state", (event) => {
+        try {
+          const timing = globalThis.__buyerTiming;
+          const view = JSON.parse(event.data);
+          if (
+            timing &&
+            timing.firstResultMs === null &&
+            view.catalog_match_status &&
+            view.messages.some(
+              (m) => m.sender === "user" && m.text === timing.message,
+            )
+          )
+            timing.firstResultMs = Math.round(performance.now() - timing.start);
+        } catch {
+          /* Ordinary UI errors are checked through the actual chat response. */
+        }
+      });
+    }
+  };
+});
 try {
   await page.goto(`${base}/department/electronics`);
   await page.getByRole("button", { name: "Open DALE assistant" }).click();
   async function turn(message, label) {
-    const start = Date.now();
-    let firstResultMs = null;
     await page.getByLabel("Message DALE").fill(message);
+    const start = Date.now();
+    await page.evaluate((message) => {
+      globalThis.__buyerTiming = {
+        message,
+        start: performance.now(),
+        firstResultMs: null,
+      };
+    }, message);
+    const answered = page.waitForResponse(
+      (response) =>
+        new URL(response.url()).pathname === "/api/copilot/chat" &&
+        response.request().method() === "POST",
+      { timeout: 180000 },
+    );
     await page
       .getByRole("button", { name: "Send message", exact: true })
       .click();
-    let view;
-    while (Date.now() - start < 180000) {
-      await new Promise((done) => setTimeout(done, 1000));
-      const response = await context.request.get(`${base}/api/copilot/state`);
-      if (!response.ok()) continue;
-      view = await response.json();
-      if (!view.messages.some((m) => m.sender === "user" && m.text === message))
-        continue;
-      if (firstResultMs === null && view.catalog_match_status)
-        firstResultMs = Date.now() - start;
-      if (["completed", "failed", "canceled"].includes(view.turn?.status))
-        break;
-    }
+    const response = await answered;
+    const view = await response.json();
+    const httpCompleteMs = Date.now() - start;
     const reply = view?.messages
       .filter((m) => m.sender === "assistant")
       .at(-1)?.text;
+    if (reply)
+      await page
+        .getByText(reply, { exact: true })
+        .waitFor({ state: "visible", timeout: 10000 });
+    const elapsedMs = Date.now() - start;
+    const firstResultMs = await page.evaluate(
+      () => globalThis.__buyerTiming?.firstResultMs ?? null,
+    );
     await page.screenshot({
       path: `.data/concierge-verification/buyer-browser-${label}.png`,
     });
     return {
       message,
-      elapsedMs: Date.now() - start,
+      elapsedMs,
+      httpCompleteMs,
       firstResultMs,
       status: view?.turn?.status,
       error: view?.turn?.error,
@@ -159,6 +195,17 @@ const report = {
   scope:
     "Actual production browser, private self-hosted model and owned persisted application state. No provider interception or payment calls.",
   passed: checks.every((c) => c.passed),
+  latency: {
+    targetMs: 1000,
+    measurement:
+      "Click-to-visible complete response, excluding typing and screenshot encoding. httpCompleteMs is measured directly from the actual POST response; no one-second polling quantization. firstResultMs is a real committed-state SSE event, when observed.",
+    measuredCases: checks.filter((c) => c.elapsedMs > 0).length,
+    withinTarget: checks.filter((c) => c.elapsedMs > 0 && c.elapsedMs < 1000)
+      .length,
+    allWithinTarget: checks
+      .filter((c) => c.elapsedMs > 0)
+      .every((c) => c.elapsedMs < 1000),
+  },
   checks,
 };
 await writeFile(
