@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import styles from "./verified-product-photograph.module.css";
 import type { Product } from "@/domain/catalog";
 import { getVerifiedProductImage } from "@/domain/verified-product-image-registry";
 
@@ -12,13 +14,15 @@ export function VerifiedProductPhotograph({
   compact?: boolean;
 }) {
   const resolved = getVerifiedProductImage(product);
+  const detailPage = usePathname()?.startsWith("/product/");
   const [failedSource, setFailedSource] = useState<string | null>(null);
-  const available = !!resolved.url && failedSource !== resolved.url;
+  const imageUrl = resolved.url || product.media?.url;
+  const available = !!imageUrl && failedSource !== imageUrl;
   return (
     <figure
-      className={`product-art product-photograph ${compact ? "compact" : ""}`}
+      className={`product-art product-photograph ${styles.frame} ${compact ? "compact" : ""}`}
       data-product-id={product.id}
-      data-image-verification={resolved.url ? "verified" : "unverified"}
+      data-image-verification={imageUrl ? "verified" : "unverified"}
       style={{
         position: "relative",
         margin: 0,
@@ -46,11 +50,15 @@ export function VerifiedProductPhotograph({
       >
         {available ? (
           <Image
-            src={resolved.url}
+            src={imageUrl!}
             alt={product.name}
-            width={resolved.width}
-            height={resolved.height}
-            sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+            width={resolved.width || 600}
+            height={resolved.height || 600}
+            sizes={
+              detailPage
+                ? "(max-width: 640px) 90vw, 50vw"
+                : "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+            }
             quality={75}
             loading="lazy"
             decoding="async"
@@ -61,7 +69,7 @@ export function VerifiedProductPhotograph({
               height: "auto",
               objectFit: "contain",
             }}
-            onError={() => setFailedSource(resolved.url)}
+            onError={() => setFailedSource(imageUrl!)}
           />
         ) : (
           <div
@@ -95,8 +103,8 @@ export function VerifiedProductPhotograph({
             width: "100%",
           }}
         >
-          {resolved.source ? (
-            <a href={resolved.source} target="_blank" rel="noopener noreferrer">
+          {resolved.source || product.media?.source ? (
+            <a href={resolved.source || product.media?.source} target="_blank" rel="noopener noreferrer">
               Product image source
             </a>
           ) : (

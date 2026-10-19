@@ -1015,40 +1015,6 @@
       "status": "staged"
     },
     {
-      "id": "sferra-terzo-classic-hemstitch-flat-sheet",
-      "canonicalBrand": "SFERRA",
-      "displayBrand": "SFERRA",
-      "productLine": "Giza 45 & Fine Linens",
-      "modelName": "Terzo Classic Double Hemstitch Flat Sheet",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.sferra.com/products/terzo-classic-hemstitch-flat-sheet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "White",
-        "Ivory",
-        "Tin Grey"
-      ],
-      "mediaSource": {
-        "url": "https://www.sferra.com/images/sferra-terzo-classic-hemstitch-flat-sheet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "sferra",
-        "modelName": "terzo classic double hemstitch flat sheet",
-        "fiberType": "100% Egyptian Cotton",
-        "threadCount": 300,
-        "weaveType": "Percale",
-        "originCountry": "Italy",
-        "careInstructions": "Machine wash cold"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "SFERRA Giza 45 Italian luxury bed linen Terzo Classic Double Hemstitch Flat Sheet",
-      "status": "staged"
-    },
-    {
       "id": "yves-delorme-triomphe-sateen-sheet-set",
       "canonicalBrand": "Yves Delorme",
       "displayBrand": "Yves Delorme",
@@ -2389,686 +2355,6 @@
       "status": "staged"
     },
     {
-      "id": "tekla-organic-cotton-percale-sheet-set",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "Organic Cotton Percale Sheet Set",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/organic-cotton-percale-sheet-set"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-organic-cotton-percale-sheet-set.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "organic cotton percale sheet set",
-        "fiberType": "100% Organic Long-Staple Cotton",
-        "threadCount": 300,
-        "weaveType": "Crisp Percale",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm, tumble dry medium"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding Organic Cotton Percale Sheet Set",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-organic-cotton-percale-duvet-cover",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "Organic Cotton Percale Duvet Cover",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/organic-cotton-percale-duvet-cover"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-organic-cotton-percale-duvet-cover.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "organic cotton percale duvet cover",
-        "fiberType": "100% Organic Long-Staple Cotton",
-        "threadCount": 300,
-        "weaveType": "Crisp Percale",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding Organic Cotton Percale Duvet Cover",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-french-flax-linen-sheet-set",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "100% French Flax Linen Sheet Set",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/french-flax-linen-sheet-set"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-french-flax-linen-sheet-set.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "100% french flax linen sheet set",
-        "fiberType": "100% European Flax Linen",
-        "threadCount": 0,
-        "weaveType": "Stonewashed Plain Weave",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash gentle warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding 100% French Flax Linen Sheet Set",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-french-flax-linen-duvet-cover",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "100% French Flax Linen Duvet Cover",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/french-flax-linen-duvet-cover"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-french-flax-linen-duvet-cover.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "100% french flax linen duvet cover",
-        "fiberType": "100% European Flax Linen",
-        "threadCount": 0,
-        "weaveType": "Stonewashed Plain Weave",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash gentle warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding 100% French Flax Linen Duvet Cover",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-pure-new-wool-blanket-throw",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "Pure New Wool Blanket Throw",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/pure-new-wool-blanket-throw"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-pure-new-wool-blanket-throw.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "pure new wool blanket throw",
-        "fiberType": "100% Pure New Virgin Wool",
-        "threadCount": 0,
-        "weaveType": "Twill Weave with Fringes",
-        "originCountry": "Lithuania",
-        "careInstructions": "Dry clean only"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding Pure New Wool Blanket Throw",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-pure-lambswool-plaid-throw",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "Pure Lambswool Plaid Throw Blanket",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/pure-lambswool-plaid-throw"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-pure-lambswool-plaid-throw.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "pure lambswool plaid throw blanket",
-        "fiberType": "100% Superfine Lambswool",
-        "threadCount": 0,
-        "weaveType": "Checked Twill",
-        "originCountry": "Lithuania",
-        "careInstructions": "Dry clean only"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding Pure Lambswool Plaid Throw Blanket",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-organic-cotton-poplin-sheet",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "Organic Cotton Poplin Sleepwear & Bedding Sheet",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/organic-cotton-poplin-sheet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-organic-cotton-poplin-sheet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "organic cotton poplin sleepwear & bedding sheet",
-        "fiberType": "100% Organic Combed Cotton",
-        "threadCount": 250,
-        "weaveType": "Poplin Weave",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding Organic Cotton Poplin Sleepwear & Bedding Sheet",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-classic-striped-percale-pillowcases",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "Classic Striped Percale Pillowcase Pair",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/classic-striped-percale-pillowcases"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-classic-striped-percale-pillowcases.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "classic striped percale pillowcase pair",
-        "fiberType": "100% Organic Cotton",
-        "threadCount": 300,
-        "weaveType": "Percale",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding Classic Striped Percale Pillowcase Pair",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-heavy-poplin-monochrome-duvet",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "Heavy Poplin Monochrome Duvet Cover",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/heavy-poplin-monochrome-duvet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-heavy-poplin-monochrome-duvet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "heavy poplin monochrome duvet cover",
-        "fiberType": "100% Organic Cotton",
-        "threadCount": 280,
-        "weaveType": "Poplin",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding Heavy Poplin Monochrome Duvet Cover",
-      "status": "staged"
-    },
-    {
-      "id": "tekla-mohair-wool-brushed-blanket",
-      "canonicalBrand": "Tekla",
-      "displayBrand": "Tekla",
-      "productLine": "Architectural Bedding & Blankets",
-      "modelName": "Mohair & Wool Blend Brushed Blanket",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://teklafabrics.com/products/mohair-wool-brushed-blanket"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Clear Blue",
-        "Kodiak Brown",
-        "Plum"
-      ],
-      "mediaSource": {
-        "url": "https://teklafabrics.com/images/tekla-mohair-wool-brushed-blanket.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "tekla",
-        "modelName": "mohair & wool blend brushed blanket",
-        "fiberType": "70% Mohair 30% Virgin Wool",
-        "threadCount": 0,
-        "weaveType": "Brushed Open Weave",
-        "originCountry": "Spain",
-        "careInstructions": "Dry clean only"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Tekla architectural Scandinavian bedding Mohair & Wool Blend Brushed Blanket",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-savoy-800tc-sheet-set",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Savoy 800 Thread Count Egyptian Cotton Sheet Set",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/savoy-800tc-sheet-set"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-savoy-800tc-sheet-set.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "savoy 800 thread count egyptian cotton sheet set",
-        "fiberType": "100% Egyptian Cotton",
-        "threadCount": 800,
-        "weaveType": "Sateen",
-        "originCountry": "Italy",
-        "careInstructions": "Machine wash warm, tumble dry low"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Savoy 800 Thread Count Egyptian Cotton Sheet Set",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-symons-1000tc-duvet",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Symons 1000 Thread Count Egyptian Cotton Duvet Cover",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/symons-1000tc-duvet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-symons-1000tc-duvet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "symons 1000 thread count egyptian cotton duvet cover",
-        "fiberType": "100% Egyptian Cotton",
-        "threadCount": 1000,
-        "weaveType": "Sateen",
-        "originCountry": "Italy",
-        "careInstructions": "Machine wash warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Symons 1000 Thread Count Egyptian Cotton Duvet Cover",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-classic-200tc-percale-sheet",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Classic 200 Thread Count Cotton Percale Flat Sheet",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/classic-200tc-percale-sheet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-classic-200tc-percale-sheet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "classic 200 thread count cotton percale flat sheet",
-        "fiberType": "100% Combed Cotton",
-        "threadCount": 200,
-        "weaveType": "Crisp Percale",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Classic 200 Thread Count Cotton Percale Flat Sheet",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-audley-border-sateen-set",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Audley Border Embroidered Sateen Sheet Set",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/audley-border-sateen-set"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-audley-border-sateen-set.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "audley border embroidered sateen sheet set",
-        "fiberType": "100% Long-Staple Cotton",
-        "threadCount": 400,
-        "weaveType": "Sateen",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm gentle"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Audley Border Embroidered Sateen Sheet Set",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-pure-belgian-linen-duvet",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Pure Belgian Washed Linen Duvet Cover",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/pure-belgian-linen-duvet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-pure-belgian-linen-duvet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "pure belgian washed linen duvet cover",
-        "fiberType": "100% Belgian Flax Linen",
-        "threadCount": 0,
-        "weaveType": "Washed Linen Weave",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash gentle warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Pure Belgian Washed Linen Duvet Cover",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-faux-fur-throw-blanket",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Super-Soft Faux Fur Throw Blanket",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/faux-fur-throw-blanket"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-faux-fur-throw-blanket.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "super-soft faux fur throw blanket",
-        "fiberType": "100% Polyester Plush with Velvet Back",
-        "threadCount": 0,
-        "weaveType": "Plush Faux Fur",
-        "originCountry": "UK",
-        "careInstructions": "Dry clean only"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Super-Soft Faux Fur Throw Blanket",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-ribbed-cashmere-throw",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Ribbed Pure Cashmere Throw",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/ribbed-cashmere-throw"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-ribbed-cashmere-throw.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "ribbed pure cashmere throw",
-        "fiberType": "100% Pure Cashmere",
-        "threadCount": 0,
-        "weaveType": "Ribbed Knit",
-        "originCountry": "UK",
-        "careInstructions": "Hand wash cold or dry clean"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Ribbed Pure Cashmere Throw",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-albany-cord-percale-duvet",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Albany Cord Embroidered Cotton Percale Duvet Cover",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/albany-cord-percale-duvet"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-albany-cord-percale-duvet.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "albany cord embroidered cotton percale duvet cover",
-        "fiberType": "100% Cotton",
-        "threadCount": 300,
-        "weaveType": "Percale",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Albany Cord Embroidered Cotton Percale Duvet Cover",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-highgrove-velvet-quilt",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Highgrove Velvet Hand-Stitched Quilt",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/highgrove-velvet-quilt"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-highgrove-velvet-quilt.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "highgrove velvet hand-stitched quilt",
-        "fiberType": "100% Cotton Velvet with Cotton Fill",
-        "threadCount": 0,
-        "weaveType": "Quilted Velvet",
-        "originCountry": "India",
-        "careInstructions": "Dry clean only"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Highgrove Velvet Hand-Stitched Quilt",
-      "status": "staged"
-    },
-    {
-      "id": "the-white-company-cellular-organic-blanket",
-      "canonicalBrand": "The White Company",
-      "displayBrand": "The White Company",
-      "productLine": "Savoy & Symons Bedding",
-      "modelName": "Cellular Pure Organic Cotton Baby/Day Blanket",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.thewhitecompany.com/us/products/cellular-organic-blanket"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "GLOBAL",
-      "lifecycle": "active",
-      "variants": [
-        "Pure White",
-        "Silver Grey",
-        "Mink"
-      ],
-      "mediaSource": {
-        "url": "https://www.thewhitecompany.com/images/the-white-company-cellular-organic-blanket.jpg"
-      },
-      "collectedAttributes": {
-        "brand": "the white company",
-        "modelName": "cellular pure organic cotton baby/day blanket",
-        "fiberType": "100% Organic Cotton",
-        "threadCount": 0,
-        "weaveType": "Cellular Open Weave",
-        "originCountry": "Portugal",
-        "careInstructions": "Machine wash warm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The White Company British luxury linen Cellular Pure Organic Cotton Baby/Day Blanket",
-      "status": "staged"
-    },
-    {
       "id": "ralph-lauren-wyatt-sateen-624tc-sheet-set",
       "canonicalBrand": "Ralph Lauren Home",
       "displayBrand": "Ralph Lauren Home",
@@ -3406,6 +2692,1366 @@
       },
       "missingAttributes": [],
       "inclusionReason": "Ralph Lauren Home classic American luxury bedding Hadley Diamond Quilted Silk Coverlet",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-avalon-iii-throw-blanket",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "Avalon III Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/avalon-iii-throw-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-avalon-iii-throw-blanket"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "avalon iii throw blanket",
+        "fiberType": "90% Merinos Sheep Wool 10% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Jacquard H Weave with Whipstitch",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket Avalon III Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-avalon-iii-pillow",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "Avalon III Small Throw Pillow",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/avalon-iii-pillow"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-avalon-iii-pillow"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "avalon iii small throw pillow",
+        "fiberType": "90% Merinos Sheep Wool 10% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Jacquard H Weave",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket Avalon III Small Throw Pillow",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-avalon-tangram-throw",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "Avalon Tangram Cashmere Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/avalon-tangram-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-avalon-tangram-throw"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "avalon tangram cashmere throw",
+        "fiberType": "100% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Geometric Intarsia Jacquard",
+        "originCountry": "Great Britain",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket Avalon Tangram Cashmere Throw",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-avalon-epopee-baby-blanket",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "Avalon Épopée Jacquard Baby Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/avalon-epopee-baby-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-avalon-epopee-baby-blanket"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "avalon épopée jacquard baby blanket",
+        "fiberType": "100% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Whimsical Jacquard Knit",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket Avalon Épopée Jacquard Baby Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-h-diagonale-throw",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "H Diagonale Hand-Woven Cashmere Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/h-diagonale-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-h-diagonale-throw"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "h diagonale hand-woven cashmere blanket",
+        "fiberType": "100% Mongolian Cashmere",
+        "threadCount": 0,
+        "weaveType": "Diagonal Twill Hand-Woven",
+        "originCountry": "Nepal",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket H Diagonale Hand-Woven Cashmere Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-itineraire-jacquard-blanket",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "Itinéraire Geometric Wool & Cashmere Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/itineraire-jacquard-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-itineraire-jacquard-blanket"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "itinéraire geometric wool & cashmere blanket",
+        "fiberType": "85% Wool 15% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Screen-printed Jacquard",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket Itinéraire Geometric Wool & Cashmere Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-hermes-sellier-cotton-percale-sheet",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "Hermès Sellier Cotton Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/hermes-sellier-cotton-percale-sheet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-hermes-sellier-cotton-percale-sheet"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "hermès sellier cotton percale sheet set",
+        "fiberType": "100% Long-Staple Egyptian Cotton",
+        "threadCount": 400,
+        "weaveType": "Crisp Percale with Saddle Stitching",
+        "originCountry": "France",
+        "careInstructions": "Machine wash delicate cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket Hermès Sellier Cotton Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-h-en-voyage-quilted-bedspread",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "H en Voyage Quilted Silk & Cotton Bedspread",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/h-en-voyage-quilted-bedspread"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-h-en-voyage-quilted-bedspread"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "h en voyage quilted silk & cotton bedspread",
+        "fiberType": "60% Silk 40% Cotton",
+        "threadCount": 0,
+        "weaveType": "Hand-quilted Micro-H Motif",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket H en Voyage Quilted Silk & Cotton Bedspread",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-casaque-bi-color-cashmere-throw",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "Casaque Bi-Color Cashmere Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/casaque-bi-color-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-casaque-bi-color-cashmere-throw"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "casaque bi-color cashmere throw",
+        "fiberType": "100% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Double-face Twill",
+        "originCountry": "Great Britain",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket Casaque Bi-Color Cashmere Throw",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-home-passifolia-printed-linen-cushion",
+      "canonicalBrand": "Hermès Home",
+      "displayBrand": "Hermès Home",
+      "productLine": "Maison Textiles & Couvertures",
+      "modelName": "Passifolia Printed Linen Decorative Cushion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/blankets-and-pillows/passifolia-printed-linen-cushion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Ecru / Camel",
+        "Black / Gris",
+        "Navy / Blanc"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-home-passifolia-printed-linen-cushion"
+      },
+      "collectedAttributes": {
+        "brand": "hermès home",
+        "modelName": "passifolia printed linen decorative cushion",
+        "fiberType": "100% European Washed Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Botanical Screen-printed Plain Weave",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Home iconic luxury textile and Avalon blanket Passifolia Printed Linen Decorative Cushion",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-zelander-cashmere-throw",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Zelander Cashmere Plaid Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/zelander-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-zelander-cashmere-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "zelander cashmere plaid throw blanket",
+        "fiberType": "100% Superfine Mongolian Cashmere",
+        "threadCount": 0,
+        "weaveType": "Double-face Twill with Fringe",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Zelander Cashmere Plaid Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-altai-cashmere-blanket",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Altai Coarsehair Cashmere Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/altai-cashmere-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-altai-cashmere-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "altai coarsehair cashmere blanket",
+        "fiberType": "100% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Heavyweight Plain Weave with Suede Trim",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Altai Coarsehair Cashmere Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-pecora-nera-throw",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Pecora Nera Natural Wool Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/pecora-nera-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-pecora-nera-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "pecora nera natural wool blanket",
+        "fiberType": "100% Undyed New Zealand Dark Virgin Wool",
+        "threadCount": 0,
+        "weaveType": "Herringbone Woollen Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Pecora Nera Natural Wool Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-sherpas-cashmere-quilt",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Sherpas Cashmere & Silk Quilt",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/sherpas-cashmere-quilt"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-sherpas-cashmere-quilt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "sherpas cashmere & silk quilt",
+        "fiberType": "70% Cashmere 30% Silk",
+        "threadCount": 0,
+        "weaveType": "Hand-quilted Double-face Silk Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Sherpas Cashmere & Silk Quilt",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-clover-linen-sheet-set",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Clover Delave Washed Linen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/clover-linen-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-clover-linen-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "clover delave washed linen sheet set",
+        "fiberType": "100% Pure Italian Flax Linen",
+        "threadCount": 0,
+        "weaveType": "Delavé Washed Linen Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold line dry"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Clover Delave Washed Linen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-vicuna-rare-throw",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "The Gift of Kings Superfine Wool Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/vicuna-rare-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-vicuna-rare-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "the gift of kings superfine wool throw",
+        "fiberType": "100% 12-Micron Superfine Merino Wool",
+        "threadCount": 0,
+        "weaveType": "Ultra-fine Twill Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere The Gift of Kings Superfine Wool Throw",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-cashfur-decorative-cushion",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Cashfur Pure Cashmere Fur Cushion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/cashfur-decorative-cushion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-cashfur-decorative-cushion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "cashfur pure cashmere fur cushion",
+        "fiberType": "100% Shearling Cashfur on Silk Base",
+        "threadCount": 0,
+        "weaveType": "Cashmere Fleece Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Cashfur Pure Cashmere Fur Cushion",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-sunset-boucle-throw",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Sunset Alpaca & Cashmere Bouclé Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/sunset-boucle-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-sunset-boucle-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "sunset alpaca & cashmere bouclé throw",
+        "fiberType": "60% Alpaca 25% Cashmere 15% Silk",
+        "threadCount": 0,
+        "weaveType": "Textural Bouclé Weave",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Sunset Alpaca & Cashmere Bouclé Throw",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-flanella-sateen-bed-linen",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Flanella Cashmere-Touch Cotton Sateen Bedding",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/flanella-sateen-bed-linen"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-flanella-sateen-bed-linen.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "flanella cashmere-touch cotton sateen bedding",
+        "fiberType": "100% Brushed Giza Cotton",
+        "threadCount": 500,
+        "weaveType": "Brushed Sateen",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Flanella Cashmere-Touch Cotton Sateen Bedding",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-interiors-dune-melange-cashmere-blanket",
+      "canonicalBrand": "Loro Piana Interiors",
+      "displayBrand": "Loro Piana Interiors",
+      "productLine": "Noble Fibres & Cashmere Living",
+      "modelName": "Dune Mélange Ribbed Cashmere Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.loropiana.com/en/interiors/blankets/dune-melange-cashmere-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Vicuna Warm",
+        "Oatmeal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://images.loropiana.com/loro-piana-interiors-dune-melange-cashmere-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana interiors",
+        "modelName": "dune mélange ribbed cashmere blanket",
+        "fiberType": "100% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Ribbed Knit Weave with Contrast Border",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Loro Piana Interiors world-renowned noble fibre cashmere Dune Mélange Ribbed Cashmere Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-i-barocco-silk-duvet-cover",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "I Love Baroque Silk Twill Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/i-barocco-silk-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-i-barocco-silk-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "i love baroque silk twill duvet cover",
+        "fiberType": "100% Pure Mulberry Silk Twill",
+        "threadCount": 0,
+        "weaveType": "Printed Silk Twill",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding I Love Baroque Silk Twill Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-medusa-gala-cotton-sateen-sheets",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "Medusa Gala Cotton Sateen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/medusa-gala-cotton-sateen-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-medusa-gala-cotton-sateen-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "medusa gala cotton sateen sheet set",
+        "fiberType": "100% Extra Long-Staple Combed Cotton",
+        "threadCount": 600,
+        "weaveType": "Sateen with Gold Medusa Border",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash delicate cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding Medusa Gala Cotton Sateen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-barocco-mosaic-bathrobe-textile",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "Barocco Mosaic Terry Towel & Robe Textile",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/barocco-mosaic-bathrobe-textile"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-barocco-mosaic-bathrobe-textile.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "barocco mosaic terry towel & robe textile",
+        "fiberType": "100% High-absorbency Combed Cotton",
+        "threadCount": 0,
+        "weaveType": "Jacquard Terry Velour",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash warm"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding Barocco Mosaic Terry Towel & Robe Textile",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-virtus-quilted-velvet-bedspread",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "Virtus Quilted Velvet Bedspread",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/virtus-quilted-velvet-bedspread"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-virtus-quilted-velvet-bedspread.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "virtus quilted velvet bedspread",
+        "fiberType": "100% Silk-Cotton Velvet",
+        "threadCount": 0,
+        "weaveType": "Embroidered Baroque Velvet Quilt",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding Virtus Quilted Velvet Bedspread",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-medusa-renaissance-throw",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "Medusa Renaissance Wool & Silk Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/medusa-renaissance-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-medusa-renaissance-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "medusa renaissance wool & silk throw",
+        "fiberType": "70% Virgin Wool 30% Silk",
+        "threadCount": 0,
+        "weaveType": "Jacquard Weave with Fringed Edge",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding Medusa Renaissance Wool & Silk Throw",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-la-scala-del-palazzo-sateen-duvet",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "La Scala del Palazzo Printed Sateen Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/la-scala-del-palazzo-sateen-duvet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-la-scala-del-palazzo-sateen-duvet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "la scala del palazzo printed sateen duvet cover",
+        "fiberType": "100% Long-Staple Cotton",
+        "threadCount": 400,
+        "weaveType": "Sateen with Neoclassical Print",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding La Scala del Palazzo Printed Sateen Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-tresor-de-la-mer-silk-cushion",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "Trésor de la Mer Silk Foulard Cushion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/tresor-de-la-mer-silk-cushion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-tresor-de-la-mer-silk-cushion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "trésor de la mer silk foulard cushion",
+        "fiberType": "100% Silk Twill with Cotton Velvet Backing",
+        "threadCount": 0,
+        "weaveType": "Hand-stitched Silk Twill",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding Trésor de la Mer Silk Foulard Cushion",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-greca-greek-key-percale-sheet-set",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "Greca Greek Key Embroidered Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/greca-greek-key-percale-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-greca-greek-key-percale-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "greca greek key embroidered percale sheet set",
+        "fiberType": "100% Giza Cotton",
+        "threadCount": 500,
+        "weaveType": "Percale with Embroidered Greek Key Hem",
+        "originCountry": "Italy",
+        "careInstructions": "Machine wash cold gentle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding Greca Greek Key Embroidered Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-royal-barocco-cashmere-throw",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "Royal Barocco Pure Cashmere Fringed Throw",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/royal-barocco-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-royal-barocco-cashmere-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "royal barocco pure cashmere fringed throw",
+        "fiberType": "100% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Jacquard Cashmere Twill",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding Royal Barocco Pure Cashmere Fringed Throw",
+      "status": "staged"
+    },
+    {
+      "id": "versace-home-medusa-amplified-velvet-quilt",
+      "canonicalBrand": "Versace Home",
+      "displayBrand": "Versace Home",
+      "productLine": "Lingerie di Casa & Haute Linens",
+      "modelName": "Medusa Amplified Quilted Velvet Comforter",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.versace.com/us/en/home-collection/bed-linen/medusa-amplified-velvet-quilt"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Baroque",
+        "Black / Gold",
+        "Medusa Gala White"
+      ],
+      "mediaSource": {
+        "url": "https://www.versace.com/images/versace-home-medusa-amplified-velvet-quilt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "versace home",
+        "modelName": "medusa amplified quilted velvet comforter",
+        "fiberType": "100% Cotton Velvet with Down Fill",
+        "threadCount": 0,
+        "weaveType": "Diamond Channel Tufted Velvet",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versace Home opulent Italian silk and sateen bedding Medusa Amplified Quilted Velvet Comforter",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-toile-de-jouy-sateen-duvet-cover",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Toile de Jouy Cotton Sateen Duvet Cover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/toile-de-jouy-sateen-duvet-cover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-toile-de-jouy-sateen-duvet-cover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "toile de jouy cotton sateen duvet cover",
+        "fiberType": "100% Extra Long-Staple Combed Cotton",
+        "threadCount": 500,
+        "weaveType": "Sateen with Toile de Jouy Print",
+        "originCountry": "France",
+        "careInstructions": "Machine wash delicate cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Toile de Jouy Cotton Sateen Duvet Cover",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-cannage-embroidered-percale-sheets",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Cannage Embroidered Cotton Percale Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/cannage-embroidered-percale-sheets"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-cannage-embroidered-percale-sheets.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "cannage embroidered cotton percale sheet set",
+        "fiberType": "100% Egyptian Cotton",
+        "threadCount": 400,
+        "weaveType": "Percale with Iconic Cannage Embroidery",
+        "originCountry": "France",
+        "careInstructions": "Machine wash delicate cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Cannage Embroidered Cotton Percale Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-toile-de-jouy-cashmere-throw",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Toile de Jouy Fringed Cashmere Throw Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/toile-de-jouy-cashmere-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-toile-de-jouy-cashmere-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "toile de jouy fringed cashmere throw blanket",
+        "fiberType": "100% Pure Mongolian Cashmere",
+        "threadCount": 0,
+        "weaveType": "Double-face Jacquard Cashmere",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Toile de Jouy Fringed Cashmere Throw Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-mizza-leopard-silk-cushion",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Mizza Leopard Print Silk Velvet Throw Pillow",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/mizza-leopard-silk-cushion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-mizza-leopard-silk-cushion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "mizza leopard print silk velvet throw pillow",
+        "fiberType": "100% Silk Velvet with Feather Down Fill",
+        "threadCount": 0,
+        "weaveType": "Printed Silk Velvet",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Mizza Leopard Print Silk Velvet Throw Pillow",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-rose-des-vents-linen-sheet-set",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Rose des Vents Embroidered Washed Linen Sheet Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/rose-des-vents-linen-sheet-set"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-rose-des-vents-linen-sheet-set.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "rose des vents embroidered washed linen sheet set",
+        "fiberType": "100% European Flax Washed Linen",
+        "threadCount": 0,
+        "weaveType": "Washed Linen with Star Embroidery",
+        "originCountry": "France",
+        "careInstructions": "Machine wash cold line dry"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Rose des Vents Embroidered Washed Linen Sheet Set",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-lucky-star-cashmere-blanket",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Lucky Star Reversible Cashmere Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/lucky-star-cashmere-blanket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-lucky-star-cashmere-blanket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "lucky star reversible cashmere blanket",
+        "fiberType": "100% Pure Cashmere",
+        "threadCount": 0,
+        "weaveType": "Reversible Jacquard Knit",
+        "originCountry": "Great Britain",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Lucky Star Reversible Cashmere Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-lily-of-the-valley-quilted-coverlet",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Lily of the Valley Embroidered Sateen Coverlet",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/lily-of-the-valley-quilted-coverlet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-lily-of-the-valley-quilted-coverlet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "lily of the valley embroidered sateen coverlet",
+        "fiberType": "100% Cotton Sateen with Light Quilted Fill",
+        "threadCount": 300,
+        "weaveType": "Embroidered Floral Sateen",
+        "originCountry": "France",
+        "careInstructions": "Machine wash delicate cold"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Lily of the Valley Embroidered Sateen Coverlet",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-christian-dior-monogram-throw",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Christian Dior Signature Reversible Wool Blanket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/christian-dior-monogram-throw"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-christian-dior-monogram-throw.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "christian dior signature reversible wool blanket",
+        "fiberType": "90% Virgin Wool 10% Cashmere",
+        "threadCount": 0,
+        "weaveType": "Jacquard CD Logo Weave with Fringed Hem",
+        "originCountry": "Italy",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Christian Dior Signature Reversible Wool Blanket",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-cannage-pure-silk-pillowcases",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Cannage Pure Mulberry Silk Pillowcase Pair",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/cannage-pure-silk-pillowcases"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-cannage-pure-silk-pillowcases.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "cannage pure mulberry silk pillowcase pair",
+        "fiberType": "100% 22-Momme Mulberry Silk",
+        "threadCount": 0,
+        "weaveType": "Silk Charmeuse",
+        "originCountry": "France",
+        "careInstructions": "Hand wash cold or dry clean"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Cannage Pure Mulberry Silk Pillowcase Pair",
+      "status": "staged"
+    },
+    {
+      "id": "dior-maison-toile-de-jouy-soleil-quilt",
+      "canonicalBrand": "Dior Maison",
+      "displayBrand": "Dior Maison",
+      "productLine": "Linge de Lit & Plaids Haute Couture",
+      "modelName": "Toile de Jouy Soleil Quilted Velvet Bed Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/maison/textiles/toile-de-jouy-soleil-quilt"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Toile de Jouy Bleu",
+        "Cannage Blanc",
+        "Soleil Or"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/dior-maison-toile-de-jouy-soleil-quilt.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior maison",
+        "modelName": "toile de jouy soleil quilted velvet bed runner",
+        "fiberType": "100% Cotton Velvet and Silk Sateen",
+        "threadCount": 0,
+        "weaveType": "Sun Motif Quilted Velvet",
+        "originCountry": "France",
+        "careInstructions": "Dry clean only"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior Maison Parisian couture bed linen and cashmere throw Toile de Jouy Soleil Quilted Velvet Bed Runner",
       "status": "staged"
     }
   ],

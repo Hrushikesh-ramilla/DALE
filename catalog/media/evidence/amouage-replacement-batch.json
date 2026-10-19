@@ -1,0 +1,688 @@
+{
+  "manifest": {
+    "schemaVersion": "catalog-manifest-v2",
+    "id": "fragrance-amouage-media-repair-2026-10-14-v2",
+    "reviewedBy": "manufacturer-catalog-and-exact-variant-photo-review",
+    "reviewedAt": "2026-10-14",
+    "approvedSourceHosts": [
+      "amouage.com"
+    ],
+    "products": [
+      {
+        "id": "FRAGRANCE-AMOUAGE-41019",
+        "name": "Amouage Interlude Man · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Interlude Man",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41019"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/interlude-man-100ml",
+        "familyId": "amouage:8897004044580",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "interlude man",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/INTERLUDE_MAN_100_ML.jpg?v=1758794506",
+          "source": "https://amouage.com/products/interlude-man-100ml",
+          "alt": "Amouage Interlude Man 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Interlude Man",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41005",
+        "name": "Amouage Reflection Man · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Reflection Man",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41005"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/reflection-man-100ml",
+        "familyId": "amouage:8897002799396",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "reflection man",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/REFLECTION_100_ML.jpg?v=1758803038",
+          "source": "https://amouage.com/products/reflection-man-100ml",
+          "alt": "Amouage Reflection Man 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Reflection Man",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41007",
+        "name": "Amouage Jubilation XXV Man · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Jubilation XXV Man",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41007"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/jubilation-xxv-man",
+        "familyId": "amouage:8897004667172",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "jubilation xxv man",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/JUBILATION_MAN_100_ML.jpg?v=1759211804",
+          "source": "https://amouage.com/products/jubilation-xxv-man",
+          "alt": "Amouage Jubilation XXV Man 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Jubilation XXV Man",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41045",
+        "name": "Amouage Guidance · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Guidance",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41045"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/100ml-guidance",
+        "familyId": "amouage:8897012072740",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "guidance",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GUIDANCE_100_ML.jpg?v=1758540475",
+          "source": "https://amouage.com/products/100ml-guidance",
+          "alt": "Amouage Guidance 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Guidance",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41011",
+        "name": "Amouage Epic Man · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Epic Man",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41011"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/epic-man-100ml",
+        "familyId": "amouage:8897003356452",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "epic man",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/EPIC_MAN_100ML.jpg?v=1758788909",
+          "source": "https://amouage.com/products/epic-man-100ml",
+          "alt": "Amouage Epic Man 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Epic Man",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41015",
+        "name": "Amouage Honour Man · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Honour Man",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41015"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/honour-man",
+        "familyId": "amouage:8896982679844",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "honour man",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_MAN.jpg?v=1758790986",
+          "source": "https://amouage.com/products/honour-man",
+          "alt": "Amouage Honour Man 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Honour Man",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41003",
+        "name": "Amouage Dia Man · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Dia Man",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41003"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/dia-man",
+        "familyId": "amouage:8897004208420",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "dia man",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/DIA_MAN_100_ML.jpg?v=1758788196",
+          "source": "https://amouage.com/products/dia-man",
+          "alt": "Amouage Dia Man 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Dia Man",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41017",
+        "name": "Amouage Gold Man · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Gold Man",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41017"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/gold-man",
+        "familyId": "amouage:8897006666020",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "gold man",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_MAN_100_ML.jpg?v=1758789828",
+          "source": "https://amouage.com/products/gold-man",
+          "alt": "Amouage Gold Man 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Gold Man",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41129",
+        "name": "Amouage Enclave · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Enclave",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41129"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/enclave",
+        "familyId": "amouage:8897005748516",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "enclave",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/ENCLAVE_100_ML_MAN.jpg?v=1758872638",
+          "source": "https://amouage.com/products/enclave",
+          "alt": "Amouage Enclave 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Enclave",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-AMOUAGE-41059",
+        "name": "Amouage Opus XIV Royal Tobacco · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Amouage",
+          "Model: Opus XIV Royal Tobacco",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 41059"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://amouage.com/products/opus-xiv-royal-tobacco",
+        "familyId": "amouage:8897002537252",
+        "provenance": "manufacturer_evidence",
+        "brand": "Amouage",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "amouage",
+          "modelName": "opus xiv royal tobacco",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Amouage_Library_CS_Photo_OpusXIV_RoyalTobacco_1.jpg?v=1759220002",
+          "source": "https://amouage.com/products/opus-xiv-royal-tobacco",
+          "alt": "Amouage Opus XIV Royal Tobacco 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Opus XIV Royal Tobacco",
+        "skuVariant": "100ml"
+      }
+    ]
+  },
+  "replacements": [
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-INTERLUDE-MAN",
+      "newProductId": "FRAGRANCE-AMOUAGE-41019"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-REFLECTION-MAN",
+      "newProductId": "FRAGRANCE-AMOUAGE-41005"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-JUBILATION-XXV-MAN",
+      "newProductId": "FRAGRANCE-AMOUAGE-41007"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-GUIDANCE",
+      "newProductId": "FRAGRANCE-AMOUAGE-41045"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-EPIC-MAN",
+      "newProductId": "FRAGRANCE-AMOUAGE-41011"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-HONOUR-MAN",
+      "newProductId": "FRAGRANCE-AMOUAGE-41015"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-DIA-MAN",
+      "newProductId": "FRAGRANCE-AMOUAGE-41003"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-GOLD-MAN",
+      "newProductId": "FRAGRANCE-AMOUAGE-41017"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-ENCLAVE",
+      "newProductId": "FRAGRANCE-AMOUAGE-41129"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-ROYAL-TOBACCO",
+      "newProductId": "FRAGRANCE-AMOUAGE-41059"
+    }
+  ],
+  "evidence": [
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-INTERLUDE-MAN",
+      "productId": "FRAGRANCE-AMOUAGE-41019",
+      "source": "https://amouage.com/products/interlude-man-100ml",
+      "manufacturerProductId": 8897004044580,
+      "manufacturerVariantId": 47515478589732,
+      "manufacturerSku": "41019",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/INTERLUDE_MAN_100_ML.jpg?v=1758794506",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-REFLECTION-MAN",
+      "productId": "FRAGRANCE-AMOUAGE-41005",
+      "source": "https://amouage.com/products/reflection-man-100ml",
+      "manufacturerProductId": 8897002799396,
+      "manufacturerVariantId": 47515451130148,
+      "manufacturerSku": "41005",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/REFLECTION_100_ML.jpg?v=1758803038",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-JUBILATION-XXV-MAN",
+      "productId": "FRAGRANCE-AMOUAGE-41007",
+      "source": "https://amouage.com/products/jubilation-xxv-man",
+      "manufacturerProductId": 8897004667172,
+      "manufacturerVariantId": 47564197789988,
+      "manufacturerSku": "41007",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/JUBILATION_MAN_100_ML.jpg?v=1759211804",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-GUIDANCE",
+      "productId": "FRAGRANCE-AMOUAGE-41045",
+      "source": "https://amouage.com/products/100ml-guidance",
+      "manufacturerProductId": 8897012072740,
+      "manufacturerVariantId": 47515458601252,
+      "manufacturerSku": "41045",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GUIDANCE_100_ML.jpg?v=1758540475",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-EPIC-MAN",
+      "productId": "FRAGRANCE-AMOUAGE-41011",
+      "source": "https://amouage.com/products/epic-man-100ml",
+      "manufacturerProductId": 8897003356452,
+      "manufacturerVariantId": 47564134580516,
+      "manufacturerSku": "41011",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/EPIC_MAN_100ML.jpg?v=1758788909",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-HONOUR-MAN",
+      "productId": "FRAGRANCE-AMOUAGE-41015",
+      "source": "https://amouage.com/products/honour-man",
+      "manufacturerProductId": 8896982679844,
+      "manufacturerVariantId": 47496344043812,
+      "manufacturerSku": "41015",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/HONOUR_MAN.jpg?v=1758790986",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-DIA-MAN",
+      "productId": "FRAGRANCE-AMOUAGE-41003",
+      "source": "https://amouage.com/products/dia-man",
+      "manufacturerProductId": 8897004208420,
+      "manufacturerVariantId": 47553946452260,
+      "manufacturerSku": "41003",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/DIA_MAN_100_ML.jpg?v=1758788196",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-GOLD-MAN",
+      "productId": "FRAGRANCE-AMOUAGE-41017",
+      "source": "https://amouage.com/products/gold-man",
+      "manufacturerProductId": 8897006666020,
+      "manufacturerVariantId": 47564213977380,
+      "manufacturerSku": "41017",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GOLD_MAN_100_ML.jpg?v=1758789828",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-ENCLAVE",
+      "productId": "FRAGRANCE-AMOUAGE-41129",
+      "source": "https://amouage.com/products/enclave",
+      "manufacturerProductId": 8897005748516,
+      "manufacturerVariantId": 47565308363044,
+      "manufacturerSku": "41129",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/ENCLAVE_100_ML_MAN.jpg?v=1758872638",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-AMOUAGE-AMOUAGE-ROYAL-TOBACCO",
+      "productId": "FRAGRANCE-AMOUAGE-41059",
+      "source": "https://amouage.com/products/opus-xiv-royal-tobacco",
+      "manufacturerProductId": 8897002537252,
+      "manufacturerVariantId": 47563199709476,
+      "manufacturerSku": "41059",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/Amouage_Library_CS_Photo_OpusXIV_RoyalTobacco_1.jpg?v=1759220002",
+      "feedSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b"
+    }
+  ],
+  "publication": "not-published; requires visual review and atomic offer replacement"
+}

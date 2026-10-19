@@ -12,6 +12,7 @@ export type ProductQuery = {
   name: string;
   brand?: string;
   color?: string;
+  skuVariant?: string;
   attributes?: Record<string, unknown>;
   media?: { url?: string };
 };
@@ -29,11 +30,23 @@ export type VerifiedImage = {
   bytes: number;
   sha256: string;
   verified: boolean;
+  sourceSku?: string | null;
   attributes?: Record<string, unknown>;
   color?: string;
 };
 const normalize = (value: string) =>
   value.normalize("NFKC").trim().toLowerCase();
+export function hasConsistentBottleVolume(product: ProductQuery) {
+  const recorded = product.attributes?.volumeMl;
+  if (typeof recorded !== "number") return true;
+  const declared = [product.skuVariant, product.color, product.name].flatMap(
+    (value) =>
+      [...String(value || "").matchAll(/\b(\d+)\s*ml\b/gi)].map((match) =>
+        Number(match[1]),
+      ),
+  );
+  return declared.every((volume) => volume === recorded);
+}
 function publicSource(value: string) {
   try {
     const url = new URL(value);
@@ -56,6 +69,7 @@ export function resolveVerifiedProductImage(
   const entry = product.id ? entries[product.id] : undefined;
   const matches =
     entry?.verified === true &&
+    hasConsistentBottleVolume(product) &&
     normalize(entry.productName) === normalize(product.name) &&
     normalize(entry.brand) === normalize(product.brand || "") &&
     /^\/images\/verified\/[a-z0-9._-]+\.webp$/.test(entry.url) &&

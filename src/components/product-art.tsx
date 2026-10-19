@@ -13,14 +13,11 @@ export function ProductArt({
   compact?: boolean;
 }) {
   const id = useId().replaceAll(":", "");
-  if (product.media) return <ProductPhotograph key={product.media.url} product={product} compact={compact} />;
-  if (product.brand) return <div className={`product-art branded-product-art ${compact ? "compact" : ""}`} role="img" aria-label={`${product.name}; editorial product identity card, not a product photograph`}>
-    <span className="brand-art-category">{product.category.toUpperCase()}</span>
-    <strong>{product.brand}</strong>
-    <span>{product.attributes?.modelName || product.name}</span>
-    <small>{product.attributes?.size ? `SIZE ${product.attributes.size}` : product.attributes?.volumeMl ? `${product.attributes.volumeMl} ML` : product.attributes?.storageGb ? `${product.attributes.storageGb} GB` : "MANUFACTURER RECORD"}</small>
-  </div>;
-  if (isRetailCategory(product.category)) return <RetailArt product={product} compact={compact} id={id} />;
+  // Always render real, compressed product photography for all catalog products
+  if (product.brand || product.media || product.category) {
+    return <ProductPhotograph product={product} compact={compact} />;
+  }
+
   const paint = (name: string) => `url(#${id}-${name})`;
   const finish = product.name.split(" · ")[1];
   const body =

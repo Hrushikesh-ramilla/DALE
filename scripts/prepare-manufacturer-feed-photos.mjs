@@ -59,6 +59,19 @@ for (const [host, brand, mediaPath] of profiles) {
       continue;
     }
     const item = matches[0];
+    const declaredVolumes = [p.skuVariant, p.color, p.name].flatMap((value) =>
+      [...String(value || "").matchAll(/\b(\d+)\s*ml\b/gi)].map((match) =>
+        Number(match[1]),
+      ),
+    );
+    if (declaredVolumes.some((volume) => volume !== p.attributes?.volumeMl)) {
+      unresolved.push({
+        id: p.id,
+        reason:
+          "catalog volume contradicts selected/displayed bottle variant; repair facts before selecting photograph",
+      });
+      continue;
+    }
     const variants = item.variants.filter(
       (v) =>
         /^\d+\s*ml$/i.test(v.title) &&

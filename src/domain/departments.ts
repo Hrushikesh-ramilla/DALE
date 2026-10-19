@@ -355,4 +355,20 @@ export function getCategoryLeafTypes(category: Category): LeafTypeKey[] {
   return leafTypeKeys.filter((leaf) => leafToParentCategory[leaf] === category);
 }
 
+export function getDepartmentById(id: string) {
+  return departments.find((d) => d.id === id);
+}
+
+export function getDepartmentLeafs(deptId: string): LeafTypeKey[] {
+  const dept = departments.find((d) => d.id === deptId);
+  if (!dept) return [];
+  const catSet = new Set<string>(dept.categories);
+  return leafTypeKeys.filter((leaf) => catSet.has(leafToParentCategory[leaf]));
+}
+
+export function getDepartmentForLeaf(leaf: LeafTypeKey | string) {
+  const parentCat = leafToParentCategory[leaf as LeafTypeKey] || leaf;
+  return departments.find((d) => (d.categories as readonly string[]).includes(parentCat));
+}
+
 

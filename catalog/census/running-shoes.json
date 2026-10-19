@@ -1,618 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "leafKey": "running-shoes",
-  "displayName": "Performance & Technical Running Shoes",
+  "displayName": "Performance Running Shoes",
   "censusDate": "2026-10-11",
   "entries": [
-    {
-      "id": "nike-alphafly-3",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Adizero / Racing",
-      "modelName": "Alphafly 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/alphafly-3-mens-road-racing-shoes-53gnLw/FD8311-700"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "alphafly 3",
-        "category": "Marathon Racing",
-        "foam": "ZoomX",
-        "plate": "Flyplate Carbon-Fiber",
-        "airUnits": "Dual front Zoom Air pods",
-        "weight": "218g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Nike's pinnacle marathon super shoe featuring full ZoomX midsole and dual Zoom Air pods.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-vaporfly-3",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Racing",
-      "modelName": "Vaporfly 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/vaporfly-3-mens-road-racing-shoes-xsDgvM/DV4129-100"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "vaporfly 3",
-        "category": "Road Racing",
-        "foam": "ZoomX",
-        "plate": "Full-length Flyplate",
-        "weight": "198g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Benchmark road racing super shoe engineered for 5K to marathon distances.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-invincible-3",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Max Cushion",
-      "modelName": "Invincible 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/invincible-3-mens-road-running-shoes-WwQKzV/DR2615-101"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "invincible 3",
-        "category": "Recovery / Long Run",
-        "foam": "High-stack ZoomX",
-        "upper": "Flyknit",
-        "weight": "310g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Maximalist recovery trainer equipped with high-stack responsive ZoomX cushioning.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-pegasus-41",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Pegasus",
-      "modelName": "Pegasus 41",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/pegasus-41-mens-road-running-shoes-n6M71P/FD2722-100"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "pegasus 41",
-        "category": "Daily Trainer",
-        "foam": "ReactX",
-        "airUnits": "Dual Zoom Air units",
-        "weight": "281g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The 41st edition of running's most famous daily workhorse with responsive ReactX foam.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-infinityrn-4",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Infinity",
-      "modelName": "InfinityRN 4",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/infinityrn-4-mens-road-running-shoes-m1h0vP/DR2665-001"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "infinityrn 4",
-        "category": "Support / Stability",
-        "foam": "ReactX",
-        "upper": "Flyknit",
-        "rocker": "Curved rocker geometry"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Supportive daily running shoe designed for injury prevention and smooth transitions.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-vomero-17",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Vomero",
-      "modelName": "Vomero 17",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/vomero-17-mens-road-running-shoes-3Vb4r4/FB1309-001"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "vomero 17",
-        "category": "Plush Daily Trainer",
-        "foam": "Dual-density ZoomX & Cushlon 3.0",
-        "upper": "Engineered mesh"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Ultra-plush premium neutral daily trainer with dual-density stacked midsole.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-streakfly",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Short Distance Racing",
-      "modelName": "Streakfly",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/streakfly-road-racing-shoes-8gB3k6/DJ6566-100"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "streakfly",
-        "category": "5K / 10K Racing",
-        "foam": "ZoomX",
-        "plate": "Midfoot Pebax shank",
-        "weight": "172g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Lightweight short-distance road racing shoe prioritizing ground feel and speed.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-pegasus-turbo-next-nature",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Turbo Series",
-      "modelName": "Pegasus Turbo Next Nature",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/pegasus-turbo-next-nature-mens-road-running-shoes-8l7n4P/DM3413-001"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "pegasus turbo next nature",
-        "category": "Tempo / Daily",
-        "foam": "Recycled ZoomX scrap foam",
-        "upper": "Flyknit"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Sustainable tempo running shoe featuring recycled ZoomX midsole material.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-structure-25",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Structure",
-      "modelName": "Structure 25",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/structure-25-mens-road-running-shoes-28w2lM/DJ7883-001"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "structure 25",
-        "category": "Stability Daily Trainer",
-        "foam": "Cushlon 3.0",
-        "airUnits": "Forefoot Zoom Air"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Reliable stability workhorse delivering structured midfoot support.",
-      "status": "staged"
-    },
-    {
-      "id": "nike-ultrafly-trail",
-      "canonicalBrand": "Nike",
-      "displayBrand": "Nike",
-      "productLine": "Trail Racing",
-      "modelName": "Ultrafly Trail",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.nike.com/t/ultrafly-mens-trail-racing-shoes-v4Vj3p/DX1978-100"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "nike",
-        "modelName": "ultrafly trail",
-        "category": "Trail Super Shoe",
-        "foam": "ZoomX",
-        "plate": "Carbon Flyplate",
-        "outsole": "Vibram Megagrip Litebase"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Elite trail racing super shoe pairing carbon Flyplate with Vibram Megagrip traction.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-adizero-adios-pro-3",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Adizero",
-      "modelName": "Adizero Adios Pro 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/adizero-adios-pro-3-shoes/IG6442.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "adizero adios pro 3",
-        "category": "Marathon Racing",
-        "foam": "Lightstrike Pro (dual layer)",
-        "rods": "EnergyRods 2.0 Carbon",
-        "outsole": "Continental Rubber"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Record-shattering marathon racer featuring anatomical carbon EnergyRods 2.0.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-adizero-boston-12",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Adizero",
-      "modelName": "Adizero Boston 12",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/adizero-boston-12-shoes/HP9705.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "adizero boston 12",
-        "category": "Tempo / Long Run",
-        "foam": "Lightstrike Pro & Lightstrike 2.0",
-        "rods": "EnergyRods 2.0 fiberglass"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "High-mileage workout trainer replicating race-day geometry for training cycles.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-adizero-takumi-sen-10",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Adizero",
-      "modelName": "Adizero Takumi Sen 10",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/adizero-takumi-sen-10-shoes/IG3134.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "adizero takumi sen 10",
-        "category": "5K / 10K Racing",
-        "foam": "Lightstrike Pro",
-        "rods": "EnergyRods 2.0",
-        "weight": "198g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Short-distance racing shoe designed for explosive acceleration and agile cornering.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-adizero-prime-x-2-strung",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Adizero",
-      "modelName": "Adizero Prime X 2 Strung",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/adizero-prime-x-2-strung-shoes/HP9709.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "adizero prime x 2 strung",
-        "category": "Illegal Stack Racing",
-        "stack": "50mm",
-        "foam": "Triple-layer Lightstrike Pro",
-        "plate": "Dual carbon plates"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Boundary-breaking 50mm stack concept racer with Strung computational upper.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-ultraboost-light",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Ultraboost",
-      "modelName": "Ultraboost Light",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/ultraboost-light-running-shoes/GY9350.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "ultraboost light",
-        "category": "Lifestyle / Easy Runs",
-        "foam": "Light BOOST (30% lighter)",
-        "upper": "Primeknit+",
-        "system": "LEP Linear Energy Push"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Next-gen iteration of the iconic Boost cushioned runner utilizing molecular Light Boost foam.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-supernova-rise",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Supernova",
-      "modelName": "Supernova Rise",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/supernova-rise-running-shoes/IF9838.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "supernova rise",
-        "category": "Comfort Daily Trainer",
-        "foam": "Dreamstrike+ super foam",
-        "rods": "Support Rods system"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Everyday comfort trainer featuring PEBA-based Dreamstrike+ foam compound.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-adistar-2",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Adistar",
-      "modelName": "Adistar 2.0",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/adistar-2.0-shoes/HP5647.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "adistar 2.0",
-        "category": "Max Cushion Long Run",
-        "foam": "REPETITOR & REPETITOR+ dual density",
-        "rocker": "Forward rocker geometry"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Firm, rockered long slow distance trainer built for endless mileage accumulation.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-terrex-agravic-speed-ultra",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Terrex",
-      "modelName": "Terrex Agravic Speed Ultra",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/terrex-agravic-speed-ultra-trail-running-shoes/IH0139.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "terrex agravic speed ultra",
-        "category": "Trail Racing Super Shoe",
-        "foam": "Lightstrike Pro",
-        "rods": "EnergyRods",
-        "outsole": "Continental Trail"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Ultramarathon trail racing shoe incorporating race-proven road super shoe technology.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-adizero-sl-2",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Adizero",
-      "modelName": "Adizero SL 2",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/adizero-sl-2-running-shoes/IF6745.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "adizero sl 2",
-        "category": "Lightweight Daily Trainer",
-        "foam": "Full Lightstrike Pro core with Lightstrike frame",
-        "weight": "240g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Value-focused performance daily trainer embedding a full Lightstrike Pro puck.",
-      "status": "staged"
-    },
-    {
-      "id": "adidas-supernova-solution",
-      "canonicalBrand": "Adidas",
-      "displayBrand": "Adidas",
-      "productLine": "Supernova",
-      "modelName": "Supernova Solution",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.adidas.com/us/supernova-solution-shoes/IF9845.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "adidas",
-        "modelName": "supernova solution",
-        "category": "Stability Daily Trainer",
-        "foam": "Dreamstrike+",
-        "rods": "Dual-density Support Rods"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Structured version of the Supernova line offering tuned medial guidance.",
-      "status": "staged"
-    },
-    {
-      "id": "asics-metaspeed-sky-paris",
-      "canonicalBrand": "ASICS",
-      "displayBrand": "ASICS",
-      "productLine": "Metaspeed",
-      "modelName": "Metaspeed Sky Paris",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.asics.com/us/en-us/metaspeed-sky-paris/p/ANA_1013A123-700.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "asics",
-        "modelName": "metaspeed sky paris",
-        "category": "Stride-Style Racing",
-        "foam": "FlyteFoam Blast Turbo Plus",
-        "plate": "Carbon plate (high placement)",
-        "weight": "183g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Elite marathon racing shoe calibrated specifically for stride-increasing runners.",
-      "status": "staged"
-    },
-    {
-      "id": "asics-metaspeed-edge-paris",
-      "canonicalBrand": "ASICS",
-      "displayBrand": "ASICS",
-      "productLine": "Metaspeed",
-      "modelName": "Metaspeed Edge Paris",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.asics.com/us/en-us/metaspeed-edge-paris/p/ANA_1013A124-700.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "asics",
-        "modelName": "metaspeed edge paris",
-        "category": "Cadence-Style Racing",
-        "foam": "FF Blast Turbo Plus",
-        "plate": "Curved Carbon plate (low placement)",
-        "weight": "185g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Elite racing shoe tuned for cadence runners who increase tempo with faster turn-over.",
-      "status": "staged"
-    },
     {
       "id": "asics-gel-kayano-31",
       "canonicalBrand": "ASICS",
@@ -632,13 +23,15 @@
       "collectedAttributes": {
         "brand": "asics",
         "modelName": "gel-kayano 31",
-        "category": "Max Stability",
-        "foam": "FF BLAST PLUS ECO",
-        "gel": "PureGEL technology",
-        "system": "4D GUIDANCE SYSTEM"
+        "cushioningTechnology": "FF BLAST PLUS ECO and PureGEL",
+        "stackHeightMm": 40,
+        "heelDropMm": 10,
+        "weightGrams": 305,
+        "pronationSupport": "Overpronation (4D Guidance System)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "The industry standard in adaptive stability running with 4D Guidance System.",
+      "inclusionReason": "Flagship stability runner featuring revolutionary 4D Guidance System for adaptive biomechanical support.",
       "status": "staged"
     },
     {
@@ -660,20 +53,22 @@
       "collectedAttributes": {
         "brand": "asics",
         "modelName": "gel-nimbus 26",
-        "category": "Max Cushion Neutral",
-        "foam": "FF BLAST PLUS ECO",
-        "gel": "Rearfoot PureGEL",
-        "outsole": "HYBRID ASICSGRIP"
+        "cushioningTechnology": "FF BLAST PLUS ECO and PureGEL",
+        "stackHeightMm": 42,
+        "heelDropMm": 8,
+        "weightGrams": 304,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Plush maximalist neutral running shoe delivering cloud-like shock absorption.",
+      "inclusionReason": "Max-cushioned long-distance trainer pairing bio-based FF BLAST PLUS ECO foam with HYBRID ASICSGRIP outsole.",
       "status": "staged"
     },
     {
       "id": "asics-novablast-4",
       "canonicalBrand": "ASICS",
       "displayBrand": "ASICS",
-      "productLine": "Blast Series",
+      "productLine": "Novablast",
       "modelName": "Novablast 4",
       "generationOrYear": "Current",
       "sourceUrls": [
@@ -688,24 +83,26 @@
       "collectedAttributes": {
         "brand": "asics",
         "modelName": "novablast 4",
-        "category": "Bounce Daily Trainer",
-        "foam": "FF BLAST PLUS ECO",
-        "geometry": "Trampoline-inspired outsole",
-        "weight": "260g"
+        "cushioningTechnology": "FF BLAST PLUS ECO",
+        "stackHeightMm": 41,
+        "heelDropMm": 8,
+        "weightGrams": 260,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "High-energy trampoline-inspired everyday runner renowned for its springy ride.",
+      "inclusionReason": "Dynamic trampoline-inspired geometric midsole providing ultra-bouncy energy return for daily mileage.",
       "status": "staged"
     },
     {
-      "id": "asics-superblast",
+      "id": "asics-metaspeed-sky-paris",
       "canonicalBrand": "ASICS",
       "displayBrand": "ASICS",
-      "productLine": "Blast Series",
-      "modelName": "Superblast",
+      "productLine": "Metaspeed",
+      "modelName": "Metaspeed Sky Paris",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.asics.com/us/en-us/superblast/p/ANA_1013A127-101.html"
+        "https://www.asics.com/us/en-us/metaspeed-sky-paris/p/ANA_1013A123-700.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "JP",
@@ -715,25 +112,27 @@
       ],
       "collectedAttributes": {
         "brand": "asics",
-        "modelName": "superblast",
-        "category": "Max Stack Super Trainer",
-        "stack": "45.5mm",
-        "foam": "FF Turbo & FF Blast Plus",
-        "plate": "Plateless"
+        "modelName": "metaspeed sky paris",
+        "cushioningTechnology": "FF TURBO PLUS with Full Carbon Plate",
+        "stackHeightMm": 40,
+        "heelDropMm": 5,
+        "weightGrams": 183,
+        "pronationSupport": "Neutral (Elite Stride Racer)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Unplated maximalist super trainer utilizing race-grade FlyteFoam Turbo foam.",
+      "inclusionReason": "Elite marathon racing super-shoe engineered for stride runners with ultra-responsive FF TURBO PLUS foam.",
       "status": "staged"
     },
     {
-      "id": "asics-magic-speed-3",
+      "id": "asics-metaspeed-edge-paris",
       "canonicalBrand": "ASICS",
       "displayBrand": "ASICS",
-      "productLine": "Speed Series",
-      "modelName": "Magic Speed 3",
+      "productLine": "Metaspeed",
+      "modelName": "Metaspeed Edge Paris",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.asics.com/us/en-us/magic-speed-3/p/ANA_1011B703-100.html"
+        "https://www.asics.com/us/en-us/metaspeed-edge-paris/p/ANA_1013A124-700.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "JP",
@@ -743,24 +142,27 @@
       ],
       "collectedAttributes": {
         "brand": "asics",
-        "modelName": "magic speed 3",
-        "category": "Workout / Racing",
-        "foam": "FF Blast Plus",
-        "plate": "Full-length carbon plate"
+        "modelName": "metaspeed edge paris",
+        "cushioningTechnology": "FF TURBO PLUS with Angled Carbon Plate",
+        "stackHeightMm": 40,
+        "heelDropMm": 5,
+        "weightGrams": 185,
+        "pronationSupport": "Neutral (Elite Cadence Racer)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Accessible carbon-plated tempo shoe built for fast interval workouts and racing.",
+      "inclusionReason": "Marathon racing super-shoe optimized for cadence runners seeking rapid turn-over and forward propulsion.",
       "status": "staged"
     },
     {
-      "id": "asics-gt-2000-12",
+      "id": "asics-magic-speed-4",
       "canonicalBrand": "ASICS",
       "displayBrand": "ASICS",
-      "productLine": "GT Series",
-      "modelName": "GT-2000 12",
+      "productLine": "Magic Speed",
+      "modelName": "Magic Speed 4",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.asics.com/us/en-us/gt-2000-12/p/ANA_1011B688-001.html"
+        "https://www.asics.com/us/en-us/magic-speed-4/p/ANA_1011B875-100.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "JP",
@@ -770,14 +172,76 @@
       ],
       "collectedAttributes": {
         "brand": "asics",
-        "modelName": "gt-2000 12",
-        "category": "Light Stability Trainer",
-        "foam": "FF BLAST PLUS",
-        "gel": "PureGEL",
-        "system": "3D GUIDANCE SYSTEM"
+        "modelName": "magic speed 4",
+        "cushioningTechnology": "FF TURBO and FF BLAST PLUS with Carbon Plate",
+        "stackHeightMm": 43,
+        "heelDropMm": 8,
+        "weightGrams": 242,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Versatile lightweight stability trainer with smooth, unobtrusive support geometry.",
+      "inclusionReason": "Versatile carbon-plated tempo trainer providing marathon racing sensation at daily training durability.",
+      "status": "staged"
+    },
+    {
+      "id": "asics-superblast-2",
+      "canonicalBrand": "ASICS",
+      "displayBrand": "ASICS",
+      "productLine": "Superblast",
+      "modelName": "Superblast 2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asics.com/us/en-us/superblast-2/p/ANA_1013A142-100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "asics",
+        "modelName": "superblast 2",
+        "cushioningTechnology": "FF TURBO PLUS and FF BLAST PLUS ECO dual layer",
+        "stackHeightMm": 45,
+        "heelDropMm": 8,
+        "weightGrams": 249,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Non-plated super-trainer delivering maximalist 45mm stack height of elite marathon foam for effortless recovery runs.",
+      "status": "staged"
+    },
+    {
+      "id": "asics-gt-2000-13",
+      "canonicalBrand": "ASICS",
+      "displayBrand": "ASICS",
+      "productLine": "GT-2000",
+      "modelName": "GT-2000 13",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.asics.com/us/en-us/gt-2000-13/p/ANA_1011B862-001.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "asics",
+        "modelName": "gt-2000 13",
+        "cushioningTechnology": "FF BLAST PLUS and PureGEL",
+        "stackHeightMm": 37,
+        "heelDropMm": 8,
+        "weightGrams": 275,
+        "pronationSupport": "Overpronation (3D Guidance System)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Workhorse daily stability trainer utilizing the lightweight 3D Guidance System for smooth transitions.",
       "status": "staged"
     },
     {
@@ -799,24 +263,26 @@
       "collectedAttributes": {
         "brand": "asics",
         "modelName": "gel-cumulus 26",
-        "category": "Versatile Daily Neutral",
-        "foam": "FF BLAST PLUS",
-        "gel": "PureGEL",
-        "outsole": "FluidRide EVA-rubber blend"
+        "cushioningTechnology": "FF BLAST PLUS and PureGEL",
+        "stackHeightMm": 38,
+        "heelDropMm": 8,
+        "weightGrams": 255,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Lightweight everyday trainer combining soft landings with agile transitions.",
+      "inclusionReason": "Lightweight neutral daily trainer featuring innovative FLUIDRIDE EVA-rubber blend outsole.",
       "status": "staged"
     },
     {
-      "id": "asics-glideride-max",
+      "id": "asics-noosa-tri-16",
       "canonicalBrand": "ASICS",
       "displayBrand": "ASICS",
-      "productLine": "Rocker Series",
-      "modelName": "Glideride Max",
+      "productLine": "Noosa Tri",
+      "modelName": "Noosa Tri 16",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.asics.com/us/en-us/glideride-max/p/ANA_1011B903-001.html"
+        "https://www.asics.com/us/en-us/noosa-tri-16/p/ANA_1011B872-700.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "JP",
@@ -826,566 +292,916 @@
       ],
       "collectedAttributes": {
         "brand": "asics",
-        "modelName": "glideride max",
-        "category": "Energy Saving Long Run",
-        "technology": "GUIDESOLE curved rocker",
-        "foam": "FF Blast Max & FF Blast Plus Eco"
+        "modelName": "noosa tri 16",
+        "cushioningTechnology": "FF BLAST PLUS with GUIDESOLE rocker",
+        "stackHeightMm": 35,
+        "heelDropMm": 5,
+        "weightGrams": 215,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Energy-saving curved rocker distance trainer engineered to reduce ankle flexion.",
+      "inclusionReason": "Vibrant triathlon racing flat with curved GUIDESOLE rocker and quick-transition heel pull tabs.",
       "status": "staged"
     },
     {
-      "id": "saucony-endorphin-pro-4",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Endorphin",
-      "modelName": "Endorphin Pro 4",
+      "id": "adidas-adizero-adios-pro-3",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Adizero",
+      "modelName": "Adizero Adios Pro 3",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/endorphin-pro-4/58564M.html"
+        "https://www.adidas.com/us/adizero-adios-pro-3-running-shoes/IG6437.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "endorphin pro 4",
-        "category": "Marathon Racing",
-        "foam": "PWRRUN HG & PWRRUN PB dual layer",
-        "plate": "Full carbon plate",
-        "technology": "SPEEDROLL"
+        "brand": "adidas",
+        "modelName": "adizero adios pro 3",
+        "cushioningTechnology": "Lightstrike Pro with Carbon ENERGYRODS 2.0",
+        "stackHeightMm": 39,
+        "heelDropMm": 6,
+        "weightGrams": 215,
+        "pronationSupport": "Neutral (World Major Marathon Record Holder)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Flagship marathon carbon racer featuring dual-density HG and PB super foams.",
+      "inclusionReason": "Major marathon winner boasting two layers of resilient Lightstrike Pro foam and anatomically driven carbon ENERGYRODS.",
       "status": "staged"
     },
     {
-      "id": "saucony-endorphin-elite",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Endorphin",
-      "modelName": "Endorphin Elite",
+      "id": "adidas-ultraboost-5",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Ultraboost",
+      "modelName": "Ultraboost 5",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/endorphin-elite/53874M.html"
+        "https://www.adidas.com/us/ultraboost-5-running-shoes/ID8812.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "endorphin elite",
-        "category": "Aggressive Racing",
-        "foam": "PWRRUN HG (supercharged)",
-        "plate": "Slotted carbon plate",
-        "weight": "204g"
+        "brand": "adidas",
+        "modelName": "ultraboost 5",
+        "cushioningTechnology": "Light BOOST with Torsion System",
+        "stackHeightMm": 39,
+        "heelDropMm": 10,
+        "weightGrams": 292,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "High-rebound aggressive super shoe equipped with slotted fork carbon plate.",
+      "inclusionReason": "Next-gen Light BOOST midsole offering highest energy return with Continental rubber grip.",
       "status": "staged"
     },
     {
-      "id": "saucony-endorphin-speed-4",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Endorphin",
-      "modelName": "Endorphin Speed 4",
+      "id": "adidas-supernova-rise",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Supernova",
+      "modelName": "Supernova Rise",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/endorphin-speed-4/58565M.html"
+        "https://www.adidas.com/us/supernova-rise-running-shoes/IG5839.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "endorphin speed 4",
-        "category": "Tempo / Trainer",
-        "foam": "PWRRUN PB",
-        "plate": "Re-engineered winged nylon plate",
-        "technology": "SPEEDROLL"
+        "brand": "adidas",
+        "modelName": "supernova rise",
+        "cushioningTechnology": "Dreamstrike+ super foam with Support Rods",
+        "stackHeightMm": 36,
+        "heelDropMm": 10,
+        "weightGrams": 275,
+        "pronationSupport": "Neutral",
+        "originCountry": "Indonesia"
       },
       "missingAttributes": [],
-      "inclusionReason": "Universally acclaimed nylon-plated workout and daily performance trainer.",
+      "inclusionReason": "Engineered with re-tuned PEBA-based Dreamstrike+ foam for daily training comfort.",
       "status": "staged"
     },
     {
-      "id": "saucony-triumph-22",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Triumph",
-      "modelName": "Triumph 22",
+      "id": "adidas-adizero-boston-12",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Adizero",
+      "modelName": "Adizero Boston 12",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/triumph-22/58567M.html"
+        "https://www.adidas.com/us/adizero-boston-12-running-shoes/HP9756.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "triumph 22",
-        "category": "Max Cushion Neutral",
-        "foam": "100% PWRRUN PB super foam",
-        "upper": "Engineered mesh"
+        "brand": "adidas",
+        "modelName": "adizero boston 12",
+        "cushioningTechnology": "Lightstrike Pro and Lightstrike 2.0 with Glass-fiber ENERGYRODS",
+        "stackHeightMm": 38,
+        "heelDropMm": 6,
+        "weightGrams": 260,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Maximalist recovery cruiser upgraded to full-length PEBA-based PWRRUN PB.",
+      "inclusionReason": "Fast-day tempo trainer pairing race-day Lightstrike Pro foam with glass-fiber rods.",
       "status": "staged"
     },
     {
-      "id": "saucony-ride-17",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Ride",
-      "modelName": "Ride 17",
+      "id": "adidas-adizero-prime-x-2-strung",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Adizero",
+      "modelName": "Adizero Prime X 2 Strung",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/ride-17/58568M.html"
+        "https://www.adidas.com/us/adizero-prime-x-2-strung-running-shoes/HP9709.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "ride 17",
-        "category": "Daily Trainer",
-        "foam": "PWRRUN+ beaded TPU",
-        "drop": "8mm",
-        "upper": "Breathable mesh"
+        "brand": "adidas",
+        "modelName": "adizero prime x 2 strung",
+        "cushioningTechnology": "50mm Triple Lightstrike Pro with Dual Carbon Plates",
+        "stackHeightMm": 50,
+        "heelDropMm": 7,
+        "weightGrams": 295,
+        "pronationSupport": "Neutral (Illegal 50mm Monster Stack)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Responsive daily mileage trainer featuring springy beaded PWRRUN+ cushioning.",
+      "inclusionReason": "Unregulated 50mm stack height concept shoe with 3 layers of Lightstrike Pro and 2 carbon plates.",
       "status": "staged"
     },
     {
-      "id": "saucony-guide-17",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Guide",
-      "modelName": "Guide 17",
+      "id": "adidas-adizero-takumi-sen-10",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Adizero",
+      "modelName": "Adizero Takumi Sen 10",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/guide-17/58569M.html"
+        "https://www.adidas.com/us/adizero-takumi-sen-10-shoes/IG3129.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "guide 17",
-        "category": "Guidance Stability",
-        "technology": "CenterPath Technology",
-        "foam": "PWRRUN",
-        "sidewalls": "Elevated asymmetrical"
+        "brand": "adidas",
+        "modelName": "adizero takumi sen 10",
+        "cushioningTechnology": "Lightstrike Pro with Glass-fiber ENERGYRODS",
+        "stackHeightMm": 33,
+        "heelDropMm": 6,
+        "weightGrams": 175,
+        "pronationSupport": "Neutral (5K/10K Road Racer)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Modern guidance trainer offering broad base and high sidewall support.",
+      "inclusionReason": "Lightweight road racing weapon designed specifically for 5K and 10K road intervals and records.",
       "status": "staged"
     },
     {
-      "id": "saucony-kinvara-14",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Kinvara",
-      "modelName": "Kinvara 14",
+      "id": "adidas-adizero-sl-2",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Adizero",
+      "modelName": "Adizero SL 2",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/kinvara-14/53877M.html"
+        "https://www.adidas.com/us/adizero-sl-2-running-shoes/IF3722.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "kinvara 14",
-        "category": "Lightweight Natural",
-        "weight": "200g",
-        "drop": "4mm",
-        "foam": "PWRRUN with PWRRUN+ sockliner"
+        "brand": "adidas",
+        "modelName": "adizero sl 2",
+        "cushioningTechnology": "Full Lightstrike Pro puck within Lightstrike 2.0 carrier",
+        "stackHeightMm": 36,
+        "heelDropMm": 9,
+        "weightGrams": 240,
+        "pronationSupport": "Neutral",
+        "originCountry": "Indonesia"
       },
       "missingAttributes": [],
-      "inclusionReason": "Featherweight low-drop daily trainer prioritizing natural foot turnover.",
+      "inclusionReason": "Elite training experience made accessible with full Lightstrike Pro core drop-in.",
       "status": "staged"
     },
     {
-      "id": "saucony-tempus",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Tempus",
-      "modelName": "Tempus",
+      "id": "adidas-supernova-prima",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Supernova",
+      "modelName": "Supernova Prima",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/tempus/52324M.html"
+        "https://www.adidas.com/us/supernova-prima-running-shoes/IG5842.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "tempus",
-        "category": "Superfoam Stability",
-        "foam": "PWRRUN PB core with PWRRUN supportive frame"
+        "brand": "adidas",
+        "modelName": "supernova prima",
+        "cushioningTechnology": "Dreamstrike+ max cushion with bottom-loaded Support Rods",
+        "stackHeightMm": 38,
+        "heelDropMm": 8,
+        "weightGrams": 290,
+        "pronationSupport": "Neutral",
+        "originCountry": "Indonesia"
       },
       "missingAttributes": [],
-      "inclusionReason": "Pioneering performance stability shoe powered by PEBA super foam core.",
+      "inclusionReason": "Max-cushion cruiser packed with 13% more Dreamstrike+ foam for smooth distance miles.",
       "status": "staged"
     },
     {
-      "id": "saucony-peregrine-14",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Peregrine",
-      "modelName": "Peregrine 14",
+      "id": "adidas-4dfwd-3",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "4DFWD",
+      "modelName": "4DFWD 3",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/peregrine-14/58571M.html"
+        "https://www.adidas.com/us/4dfwd-3-running-shoes/ID0850.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "peregrine 14",
-        "category": "Trail Running",
-        "outsole": "PWRTRAC with 5mm lugs",
-        "foam": "PWRRUN",
-        "rockPlate": "Embedded rock shield"
+        "brand": "adidas",
+        "modelName": "4dfwd 3",
+        "cushioningTechnology": "3D-printed 4DFWD lattice forward-motion midsole",
+        "stackHeightMm": 32,
+        "heelDropMm": 11,
+        "weightGrams": 340,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Agile technical trail shoe with aggressive 5mm lugs for loose dirt and mud.",
+      "inclusionReason": "High-tech 3D printed lattice structure transforming vertical impact into forward horizontal motion.",
       "status": "staged"
     },
     {
-      "id": "saucony-sinister",
-      "canonicalBrand": "Saucony",
-      "displayBrand": "Saucony",
-      "productLine": "Racing Flats",
-      "modelName": "Sinister",
+      "id": "adidas-terrex-agravic-speed-ultra",
+      "canonicalBrand": "Adidas",
+      "displayBrand": "Adidas",
+      "productLine": "Terrex",
+      "modelName": "Terrex Agravic Speed Ultra",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.saucony.com/en/sinister/53878M.html"
+        "https://www.adidas.com/us/terrex-agravic-speed-ultra-trail-running-shoes/IF6590.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "DE",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "saucony",
-        "modelName": "sinister",
-        "category": "Short Distance Flat",
-        "weight": "140g",
-        "foam": "Full PWRRUN PB",
-        "plate": "Plateless"
+        "brand": "adidas",
+        "modelName": "terrex agravic speed ultra",
+        "cushioningTechnology": "Lightstrike Pro with Integrated Carbon ENERGYRODS",
+        "stackHeightMm": 38,
+        "heelDropMm": 8,
+        "weightGrams": 270,
+        "pronationSupport": "Neutral (Ultra-trail Marathon Racer)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Ultra-minimalist modern racing flat delivering raw speed and ground feel.",
+      "inclusionReason": "World-class ultra-trail racing super-shoe combining marathon road foam with Continental trail rubber.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fuelcell-sc-elite-v4",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "FuelCell SuperComp",
-      "modelName": "FuelCell SuperComp Elite v4",
+      "id": "balenciaga-runner-performance-sneaker",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Runner",
+      "modelName": "Balenciaga Runner Sneaker",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fuelcell-supercomp-elite-v4/MRCELV4-44280.html"
+        "https://www.balenciaga.com/en-us/runner-sneaker-white-677403W3RB19000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fuelcell supercomp elite v4",
-        "category": "Marathon Racing",
-        "foam": "100% PEBA FuelCell",
-        "plate": "Energy Arc curved carbon plate",
-        "weight": "237g"
+        "brand": "balenciaga",
+        "modelName": "balenciaga runner sneaker",
+        "cushioningTechnology": "Multi-density EVA shock absorbing running midsole",
+        "stackHeightMm": 42,
+        "heelDropMm": 10,
+        "weightGrams": 495,
+        "pronationSupport": "Neutral (Designer Performance Icon)",
+        "originCountry": "China"
       },
       "missingAttributes": [],
-      "inclusionReason": "New Balance's premier marathon racer with 100% PEBA foam and Energy Arc plate.",
+      "inclusionReason": "Demna's quintessential luxury running shoe, uniting high-rebound athletic foam with deconstructed raw aesthetic.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fuelcell-rebel-v4",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "FuelCell",
-      "modelName": "FuelCell Rebel v4",
+      "id": "balenciaga-3xl-runner-sneaker",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "3XL",
+      "modelName": "3XL Runner Sneaker",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fuelcell-rebel-v4/MFCXV4-44281.html"
+        "https://www.balenciaga.com/en-us/3xl-sneaker-grey-734734W3XL11000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fuelcell rebel v4",
-        "category": "Lightweight Tempo / Daily",
-        "foam": "PEBA/EVA blend FuelCell",
-        "plate": "Plateless",
-        "weight": "212g"
+        "brand": "balenciaga",
+        "modelName": "3xl runner sneaker",
+        "cushioningTechnology": "Wide-platform high-density EVA cushioning",
+        "stackHeightMm": 45,
+        "heelDropMm": 8,
+        "weightGrams": 520,
+        "pronationSupport": "Neutral (Super-wide stable base)",
+        "originCountry": "China"
       },
       "missingAttributes": [],
-      "inclusionReason": "Extremely fun, featherweight non-plated tempo and daily workhorse.",
+      "inclusionReason": "Ultra-wide footprint running trainer providing enormous lateral stability and pre-scuffed vintage treatments.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fresh-foam-x-1080v13",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "Fresh Foam X",
-      "modelName": "Fresh Foam X 1080v13",
+      "id": "balenciaga-circuit-technical-runner",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Circuit",
+      "modelName": "Circuit Technical Runner",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fresh-foam-x-1080v13/M1080V13-44282.html"
+        "https://www.balenciaga.com/en-us/circuit-sneaker-black-793420W2RA21000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fresh foam x 1080v13",
-        "category": "Plush Max Cushion",
-        "foam": "Fresh Foam X (ultra soft)",
-        "rocker": "Smooth toe spring",
-        "upper": "Engineered mesh"
+        "brand": "balenciaga",
+        "modelName": "circuit technical runner",
+        "cushioningTechnology": "High-arch ergonomic aerodynamic foam",
+        "stackHeightMm": 38,
+        "heelDropMm": 10,
+        "weightGrams": 360,
+        "pronationSupport": "Neutral",
+        "originCountry": "China"
       },
       "missingAttributes": [],
-      "inclusionReason": "Flagship luxury cushioned neutral road runner with cloud-like foam softness.",
+      "inclusionReason": "Aerodynamic lightweight performance trainer featuring an ergonomic sculpted high-arch bridge.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fresh-foam-x-more-v4",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "Fresh Foam X",
-      "modelName": "Fresh Foam X More v4",
+      "id": "balenciaga-track-performance-sneaker",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Track",
+      "modelName": "Track Performance Sneaker",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fresh-foam-x-more-v4/MMORV4-44283.html"
+        "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fresh foam x more v4",
-        "category": "Maximalist Cushion",
-        "foam": "Highest stack Fresh Foam X",
-        "platform": "Extra wide base"
+        "brand": "balenciaga",
+        "modelName": "track performance sneaker",
+        "cushioningTechnology": "Dynamic augmented-heel dual-density EVA",
+        "stackHeightMm": 40,
+        "heelDropMm": 10,
+        "weightGrams": 510,
+        "pronationSupport": "Neutral (Trail/Road Hybrid)",
+        "originCountry": "China"
       },
       "missingAttributes": [],
-      "inclusionReason": "Maximal stack recovery shoe delivering expansive surface area and soft impact absorption.",
+      "inclusionReason": "Trail and road technical running shoe constructed with 176 overlapping panels for protective stability.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fresh-foam-x-880v14",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "Fresh Foam X",
-      "modelName": "Fresh Foam X 880v14",
+      "id": "balenciaga-cargo-runner-sneaker",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Cargo",
+      "modelName": "Cargo Runner Sneaker",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fresh-foam-x-880v14/M880V14-44284.html"
+        "https://www.balenciaga.com/en-us/cargo-sneaker-grey-785750W2RA11000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fresh foam x 880v14",
-        "category": "Classic Daily Workhorse",
-        "foam": "Fresh Foam X",
-        "drop": "8mm",
-        "outsole": "Blown rubber"
+        "brand": "balenciaga",
+        "modelName": "cargo runner sneaker",
+        "cushioningTechnology": "Maximalist sculpted expanded EVA chassis",
+        "stackHeightMm": 52,
+        "heelDropMm": 10,
+        "weightGrams": 580,
+        "pronationSupport": "Neutral",
+        "originCountry": "China"
       },
       "missingAttributes": [],
-      "inclusionReason": "The reliable standard in durable, balanced everyday mileage training.",
+      "inclusionReason": "Monumental volume running trainer testing footwear scale on international runways.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fuelcell-sc-trainer-v2",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "FuelCell SuperComp",
-      "modelName": "FuelCell SuperComp Trainer v2",
+      "id": "balenciaga-defender-tire-tread-runner",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Defender",
+      "modelName": "Defender Tire Tread Runner",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fuelcell-supercomp-trainer-v2/MRCXV2-44285.html"
+        "https://www.balenciaga.com/en-us/defender-sneaker-black-685611W2RA61000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fuelcell supercomp trainer v2",
-        "category": "Super Trainer",
-        "stack": "40mm",
-        "foam": "FuelCell",
-        "plate": "Energy Arc Carbon Plate"
+        "brand": "balenciaga",
+        "modelName": "defender tire tread runner",
+        "cushioningTechnology": "Curved spherical rockered tire sole with EVA core",
+        "stackHeightMm": 55,
+        "heelDropMm": 12,
+        "weightGrams": 620,
+        "pronationSupport": "Neutral",
+        "originCountry": "China"
       },
       "missingAttributes": [],
-      "inclusionReason": "Carbon-plated maximum-cushion long run trainer engineered for high-energy turnover.",
+      "inclusionReason": "Curved tire tread rubber sole offering a continuous rocker motion across rugged outdoor terrain.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fuelcell-propel-v4",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "FuelCell",
-      "modelName": "FuelCell Propel v4",
+      "id": "balenciaga-speed-2-0-technical-runner",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Speed",
+      "modelName": "Speed 2.0 Technical Runner",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fuelcell-propel-v4/MFCPRV4-44286.html"
+        "https://www.balenciaga.com/en-us/speed-2.0-sneaker-black-617239W17011015.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fuelcell propel v4",
-        "category": "Plated Value Trainer",
-        "foam": "FuelCell",
-        "plate": "TPU plate"
+        "brand": "balenciaga",
+        "modelName": "speed 2.0 technical runner",
+        "cushioningTechnology": "5-segment articulated ergonomic molded foam",
+        "stackHeightMm": 35,
+        "heelDropMm": 10,
+        "weightGrams": 280,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
       },
       "missingAttributes": [],
-      "inclusionReason": "Accessible plated daily trainer offering propulsion for everyday runners.",
+      "inclusionReason": "Segmented articulated sole trainer allowing individual foot zone flex with 3D technical knit sock.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fuelcell-sc-pacer",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "FuelCell SuperComp",
-      "modelName": "FuelCell SuperComp Pacer",
+      "id": "balenciaga-track-2-open-air-runner",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Track",
+      "modelName": "Track.2 Open Air Runner",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fuelcell-supercomp-pacer/MFCPV1-44287.html"
+        "https://www.balenciaga.com/en-us/track.2-sneaker-white-568614W2GN19000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fuelcell supercomp pacer",
-        "category": "5K / 10K Racer",
-        "foam": "FuelCell",
-        "plate": "Carbon Fiber Energy Arc",
-        "stack": "Low stack 25mm"
+        "brand": "balenciaga",
+        "modelName": "track.2 open air runner",
+        "cushioningTechnology": "High-rebound dual-density EVA running sole",
+        "stackHeightMm": 40,
+        "heelDropMm": 10,
+        "weightGrams": 490,
+        "pronationSupport": "Neutral",
+        "originCountry": "China"
       },
       "missingAttributes": [],
-      "inclusionReason": "Low-profile carbon racing flat designed for tactical road 5Ks and 10Ks.",
+      "inclusionReason": "Open-cage athletic running structure with 176 laser-cut components providing continuous airflow.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fresh-foam-x-860v14",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "Fresh Foam X",
-      "modelName": "Fresh Foam X 860v14",
+      "id": "balenciaga-phantom-technical-runner",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Phantom",
+      "modelName": "Phantom Technical Runner",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fresh-foam-x-860v14/M860V14-44288.html"
+        "https://www.balenciaga.com/en-us/phantom-sneaker-white-678862W2RA29000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fresh foam x 860v14",
-        "category": "Stability Daily Trainer",
-        "technology": "Stability Plane EVA plate",
-        "foam": "Fresh Foam X"
+        "brand": "balenciaga",
+        "modelName": "phantom technical runner",
+        "cushioningTechnology": "Featherweight athletic EVA sole with aerodynamic spoiler",
+        "stackHeightMm": 36,
+        "heelDropMm": 8,
+        "weightGrams": 310,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
       },
       "missingAttributes": [],
-      "inclusionReason": "Stability cornerstone utilizing an internal EVA Stability Plane to control overpronation.",
+      "inclusionReason": "Lightweight running silhouette constructed from mono-layer breathable mesh and aerodynamic heel spoiler.",
       "status": "staged"
     },
     {
-      "id": "new-balance-fresh-foam-x-hierro-v8",
-      "canonicalBrand": "New Balance",
-      "displayBrand": "New Balance",
-      "productLine": "Hierro",
-      "modelName": "Fresh Foam X Hierro v8",
+      "id": "balenciaga-triple-s-track-performance",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "productLine": "Triple S",
+      "modelName": "Triple S Track Performance",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.newbalance.com/pd/fresh-foam-x-hierro-v8/MTHIER8-44289.html"
+        "https://www.balenciaga.com/en-us/triple-s-sneaker-black-533882W09E11000.html"
       ],
       "observationDate": "2026-10-11",
-      "sourceRegion": "US",
+      "sourceRegion": "FR",
       "lifecycle": "active",
       "variants": [
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "new balance",
-        "modelName": "fresh foam x hierro v8",
-        "category": "All-Terrain Trail",
-        "foam": "Fresh Foam X",
-        "outsole": "Vibram Megagrip with Traction Lug"
+        "brand": "balenciaga",
+        "modelName": "triple s track performance",
+        "cushioningTechnology": "Triple-layer molded composite running sole",
+        "stackHeightMm": 48,
+        "heelDropMm": 12,
+        "weightGrams": 640,
+        "pronationSupport": "Neutral",
+        "originCountry": "China"
       },
       "missingAttributes": [],
-      "inclusionReason": "All-terrain trail runner pairing plush Fresh Foam X cushion with Vibram Megagrip.",
+      "inclusionReason": "Triple-density sole molded from athletic molds creating maximalist suspension and street impact.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-chrono-running-sneaker",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Chrono",
+      "modelName": "Dior Chrono Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/KCK412NZL_S900-dior-chrono-sneaker-white-and-silver-tone-mesh"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior chrono sneaker",
+        "cushioningTechnology": "Ultra-lightweight molded EVA running sole with Dior star insert",
+        "stackHeightMm": 38,
+        "heelDropMm": 9,
+        "weightGrams": 320,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kim Jones' tribute to vintage marathon racers, featuring reflective CD branding, breathable mesh, and high-energy EVA.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-b30-technical-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "B30",
+      "modelName": "B30 Technical Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/3SN279ZLY_H960-b30-sneaker-black-mesh-and-technical-fabric"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "b30 technical runner",
+        "cushioningTechnology": "Aerodynamic sculpted EVA foam with rubber grip",
+        "stackHeightMm": 38,
+        "heelDropMm": 8,
+        "weightGrams": 340,
+        "pronationSupport": "Neutral (Designer Athleisure Icon)",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern running-inspired icon with reflective aerodynamic CD30 logo and ultra-lightweight foam core.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-b22-technical-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "B22",
+      "modelName": "B22 Technical Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/3SN231YUL_H960-b22-sneaker-black-technical-mesh-and-calfskin"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "b22 technical runner",
+        "cushioningTechnology": "Chunky sculpted athletic running sole with rubber pods",
+        "stackHeightMm": 42,
+        "heelDropMm": 10,
+        "weightGrams": 480,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chunky luxury athletic sneaker combining reflective piping, supple calfskin, and thick shock-absorbing sole.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-star-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Star",
+      "modelName": "Dior Star Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/KCK368RSC_S29W-dior-star-sneaker-white-calfskin"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior star runner",
+        "cushioningTechnology": "Lightweight flexible rubber and EVA compound",
+        "stackHeightMm": 32,
+        "heelDropMm": 7,
+        "weightGrams": 280,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Streamlined road runner adorned with metallic star insignia and supple calfskin panelling.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-b33-technical-mesh-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "B33",
+      "modelName": "B33 Technical Mesh Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/3SN295ZQH_H965-b33-sneaker-white-and-blue-dior-oblique"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "b33 technical mesh runner",
+        "cushioningTechnology": "High-density cushioned rubber sole with NFC authenticity chip",
+        "stackHeightMm": 35,
+        "heelDropMm": 8,
+        "weightGrams": 390,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern athletic trainer featuring Dior Oblique technical jacquard and embedded cryptographic NFC technology.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-b57-sport-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "B57",
+      "modelName": "B57 Sport Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/3SN293ZOH_H960-b57-mid-top-sneaker-black-and-white-smooth-calfskin"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "b57 sport runner",
+        "cushioningTechnology": "Cushioned bi-color EVA midsole",
+        "stackHeightMm": 36,
+        "heelDropMm": 8,
+        "weightGrams": 420,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sporty court and road trainer detailed with CD jacquard flanks and shock-absorbing rubber outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-explorer-athletic-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Explorer",
+      "modelName": "Dior Explorer Athletic Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/3SN272ZIJ_H965-dior-explorer-sneaker-black"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior explorer athletic runner",
+        "cushioningTechnology": "Notched cleated rubber running sole with CD Diamond",
+        "stackHeightMm": 40,
+        "heelDropMm": 10,
+        "weightGrams": 460,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Off-road luxury runner equipped with deep cleated rubber treads and reinforced calfskin mudguards.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-vibe-technical-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Vibe",
+      "modelName": "Dior Vibe Technical Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/KCK337LRU_S09W-dior-vibe-sneaker-white-and-gold-tone"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior vibe technical runner",
+        "cushioningTechnology": "Transparent rubber cushioning inserts with EVA core",
+        "stackHeightMm": 38,
+        "heelDropMm": 9,
+        "weightGrams": 350,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Retro-futuristic running silhouette combining transparent rubber overlays with iconic star heel emblem.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-b27-athletic-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "B27",
+      "modelName": "B27 Athletic Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/3SN272ZIJ_H965-b27-low-top-sneaker-white"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "b27 athletic runner",
+        "cushioningTechnology": "Multi-density shock-absorbing rubber cupsole",
+        "stackHeightMm": 34,
+        "heelDropMm": 8,
+        "weightGrams": 395,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Supple calfskin trainer featuring Dior Oblique Galaxy perforated side panels and cushioned cupsole.",
+      "status": "staged"
+    },
+    {
+      "id": "dior-b101-performance-runner",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "B101",
+      "modelName": "B101 Performance Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/3SN285ZRF_H965-b101-sneaker-white"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "b101 performance runner",
+        "cushioningTechnology": "Flexible low-profile EVA foam",
+        "stackHeightMm": 30,
+        "heelDropMm": 6,
+        "weightGrams": 310,
+        "pronationSupport": "Neutral",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist trainer cut from velvety nubuck and smooth calfskin with CD Diamond embossed sole.",
       "status": "staged"
     },
     {
@@ -1407,13 +1223,15 @@
       "collectedAttributes": {
         "brand": "hoka",
         "modelName": "clifton 9",
-        "category": "Daily Max Cushion",
-        "foam": "Compression-molded EVA",
-        "rocker": "Early stage MetaRocker",
-        "weight": "248g"
+        "cushioningTechnology": "Compression Molded EVA with Early-Stage Meta-Rocker",
+        "stackHeightMm": 32,
+        "heelDropMm": 5,
+        "weightGrams": 248,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "HOKA's franchise daily road runner delivering signature lightweight maximal cushion.",
+      "inclusionReason": "HOKA's benchmark daily mileage trainer, eliminating weight while adding 3mm of responsive stack height.",
       "status": "staged"
     },
     {
@@ -1424,7 +1242,7 @@
       "modelName": "Bondi 8",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.hoka.com/en/us/mens-everyday-run-walking/bondi-8/1123202.html"
+        "https://www.hoka.com/en/us/mens-everyday-run-walking/bondi-8/1127952.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "US",
@@ -1435,13 +1253,15 @@
       "collectedAttributes": {
         "brand": "hoka",
         "modelName": "bondi 8",
-        "category": "Ultra Max Cushion",
-        "foam": "Soft resilient EVA foam",
-        "heel": "Extended heel crash pad",
-        "stack": "39mm"
+        "cushioningTechnology": "Ultra-light resilient foam with extended heel crash pad",
+        "stackHeightMm": 39,
+        "heelDropMm": 4,
+        "weightGrams": 307,
+        "pronationSupport": "Neutral (Max Cushion King)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "The ultimate maximalist road runner engineered with extended heel billowed crash pad.",
+      "inclusionReason": "The definitive ultra-cushioned road shoe, engineered with a billowed rear crash pad for pillow-soft strides.",
       "status": "staged"
     },
     {
@@ -1452,7 +1272,7 @@
       "modelName": "Mach 6",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.hoka.com/en/us/mens-road/mach-6/1147790.html"
+        "https://www.hoka.com/en/us/mens-everyday-run-walking/mach-6/1147790.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "US",
@@ -1463,24 +1283,26 @@
       "collectedAttributes": {
         "brand": "hoka",
         "modelName": "mach 6",
-        "category": "Lightweight Tempo / Daily",
-        "foam": "Super critical EVA foam",
-        "plate": "Plateless",
-        "weight": "232g"
+        "cushioningTechnology": "Super Critical EVA foam with strategic rubber coverage",
+        "stackHeightMm": 37,
+        "heelDropMm": 5,
+        "weightGrams": 232,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Lively tempo trainer upgraded with bouncy supercritical foam midsole.",
+      "inclusionReason": "Featherweight speed trainer updated with single-layer super-critical EVA midsole foam.",
       "status": "staged"
     },
     {
       "id": "hoka-rocket-x-2",
       "canonicalBrand": "HOKA",
       "displayBrand": "HOKA",
-      "productLine": "Rocket",
+      "productLine": "Rocket X",
       "modelName": "Rocket X 2",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.hoka.com/en/us/mens-road/rocket-x-2/1127927.html"
+        "https://www.hoka.com/en/us/mens-race/rocket-x-2/1127927.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "US",
@@ -1491,24 +1313,26 @@
       "collectedAttributes": {
         "brand": "hoka",
         "modelName": "rocket x 2",
-        "category": "Marathon Racing",
-        "foam": "100% PEBA super foam",
-        "plate": "Spoon-shaped carbon fiber plate",
-        "weight": "236g"
+        "cushioningTechnology": "Dual-layer PEBA super foam with curved Carbon Fiber Plate",
+        "stackHeightMm": 36,
+        "heelDropMm": 5,
+        "weightGrams": 236,
+        "pronationSupport": "Neutral (Elite Marathon Racer)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Elite marathon racing super shoe with dual-layer PEBA foam and carbon plate.",
+      "inclusionReason": "HOKA's peak marathon weapon pairing dual-layer 100% PEBA foam with spoon-shaped carbon propulsion plate.",
       "status": "staged"
     },
     {
       "id": "hoka-cielo-x1",
       "canonicalBrand": "HOKA",
       "displayBrand": "HOKA",
-      "productLine": "Cielo",
+      "productLine": "Cielo X1",
       "modelName": "Cielo X1",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.hoka.com/en/us/mens-road/cielo-x1/1147910.html"
+        "https://www.hoka.com/en/us/mens-race/cielo-x1/1147910.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "US",
@@ -1519,13 +1343,15 @@
       "collectedAttributes": {
         "brand": "hoka",
         "modelName": "cielo x1",
-        "category": "Aggressive Marathon Super Shoe",
-        "foam": "Dual-layer PEBA",
-        "plate": "Winged carbon fiber plate with dynamic cutouts",
-        "rocker": "Early MetaRocker"
+        "cushioningTechnology": "Dual-density PEBA with winged Carbon Fiber Plate",
+        "stackHeightMm": 39,
+        "heelDropMm": 7,
+        "weightGrams": 264,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "High-energy rebound marathon racer with radical midsole cutouts and winged carbon plate.",
+      "inclusionReason": "Ultra-aggressive marathon racing shoe featuring extreme rocker geometry and cut-out sole core.",
       "status": "staged"
     },
     {
@@ -1547,23 +1373,26 @@
       "collectedAttributes": {
         "brand": "hoka",
         "modelName": "arahi 7",
-        "category": "Dynamic Stability",
-        "technology": "J-Frame support system",
-        "upper": "Flat knit upper"
+        "cushioningTechnology": "J-Frame stability technology with CMEVA foam",
+        "stackHeightMm": 34,
+        "heelDropMm": 5,
+        "weightGrams": 281,
+        "pronationSupport": "Overpronation (J-Frame Dynamic Support)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Streamlined stability shoe stabilizing the foot using firm J-Frame high-density foam.",
+      "inclusionReason": "Remarkably lightweight stability shoe utilizing patented J-Frame firmer foam to guide the foot without stiff posts.",
       "status": "staged"
     },
     {
-      "id": "hoka-rincon-3",
+      "id": "hoka-rincon-4",
       "canonicalBrand": "HOKA",
       "displayBrand": "HOKA",
       "productLine": "Rincon",
-      "modelName": "Rincon 3",
+      "modelName": "Rincon 4",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.hoka.com/en/us/mens-road/rincon-3/1119395.html"
+        "https://www.hoka.com/en/us/mens-everyday-run-walking/rincon-4/1155130.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "US",
@@ -1573,14 +1402,76 @@
       ],
       "collectedAttributes": {
         "brand": "hoka",
-        "modelName": "rincon 3",
-        "category": "Featherweight Trainer",
-        "weight": "210g",
-        "foam": "Full-compression EVA",
-        "upper": "Vented mesh"
+        "modelName": "rincon 4",
+        "cushioningTechnology": "Upgraded resilient CMEVA foam with rubberized EVA",
+        "stackHeightMm": 36,
+        "heelDropMm": 5,
+        "weightGrams": 228,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Ultra-lightweight high-cushion road shoe with remarkable strength-to-weight ratio.",
+      "inclusionReason": "Incredible cushioning-to-weight ratio delivering soft distance cruising in an ultralight package.",
+      "status": "staged"
+    },
+    {
+      "id": "hoka-skyward-x",
+      "canonicalBrand": "HOKA",
+      "displayBrand": "HOKA",
+      "productLine": "Skyward X",
+      "modelName": "Skyward X",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hoka.com/en/us/mens-everyday-run-walking/skyward-x/1147914.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "hoka",
+        "modelName": "skyward x",
+        "cushioningTechnology": "48mm PEBA core and super-critical EVA with convex Carbon Plate",
+        "stackHeightMm": 48,
+        "heelDropMm": 5,
+        "weightGrams": 320,
+        "pronationSupport": "Neutral (Max Super-Trainer)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Extreme 48mm super-trainer integrating PEBA foam and a convex carbon plate for trampoline rebound.",
+      "status": "staged"
+    },
+    {
+      "id": "hoka-speedgoat-6",
+      "canonicalBrand": "HOKA",
+      "displayBrand": "HOKA",
+      "productLine": "Speedgoat",
+      "modelName": "Speedgoat 6",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hoka.com/en/us/mens-trail/speedgoat-6/1147791.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "hoka",
+        "modelName": "speedgoat 6",
+        "cushioningTechnology": "CMEVA with Vibram Megagrip Traction Lug",
+        "stackHeightMm": 40,
+        "heelDropMm": 5,
+        "weightGrams": 278,
+        "pronationSupport": "Neutral (Trail Benchmark)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The gold standard of trail running, equipped with Vibram Megagrip with 5mm Traction Lugs.",
       "status": "staged"
     },
     {
@@ -1602,23 +1493,26 @@
       "collectedAttributes": {
         "brand": "hoka",
         "modelName": "challenger 7",
-        "category": "Door-to-Trail",
-        "outsole": "Durabrasion rubber with 4mm all-terrain lugs",
-        "foam": "CMEVA"
+        "cushioningTechnology": "Compression Molded EVA with 4mm all-terrain lugs",
+        "stackHeightMm": 31,
+        "heelDropMm": 5,
+        "weightGrams": 252,
+        "pronationSupport": "Neutral (Road-to-Trail)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Versatile hybrid runner transitioning effortlessly between paved roads and dirt trails.",
+      "inclusionReason": "Versatile door-to-trail hybrid combining road-shoe plush cushioning with gravel-ready multi-directional lugs.",
       "status": "staged"
     },
     {
-      "id": "hoka-speedgoat-5",
-      "canonicalBrand": "HOKA",
-      "displayBrand": "HOKA",
-      "productLine": "Speedgoat",
-      "modelName": "Speedgoat 5",
+      "id": "new-balance-fresh-foam-x-1080v13",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "Fresh Foam X",
+      "modelName": "Fresh Foam X 1080v13",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.hoka.com/en/us/mens-trail/speedgoat-5/1123157.html"
+        "https://www.newbalance.com/pd/fresh-foam-x-1080v13/M1080V13-44101.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "US",
@@ -1627,26 +1521,28 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "hoka",
-        "modelName": "speedgoat 5",
-        "category": "Technical Trail",
-        "outsole": "Vibram Megagrip with Traction Lug",
-        "foam": "CMEVA",
-        "lugs": "5mm"
+        "brand": "new balance",
+        "modelName": "fresh foam x 1080v13",
+        "cushioningTechnology": "Fresh Foam X with Ndurance rubber",
+        "stackHeightMm": 38,
+        "heelDropMm": 6,
+        "weightGrams": 262,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "The gold standard in ultramarathon mountain trail running shoes.",
+      "inclusionReason": "New Balance's premier daily trainer featuring their softest, most cloud-like Fresh Foam X formulation.",
       "status": "staged"
     },
     {
-      "id": "hoka-transport",
-      "canonicalBrand": "HOKA",
-      "displayBrand": "HOKA",
-      "productLine": "Transport",
-      "modelName": "Transport",
+      "id": "new-balance-fuelcell-supercomp-elite-v4",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "SuperComp",
+      "modelName": "FuelCell SuperComp Elite v4",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.hoka.com/en/us/mens-everyday-run-walking/transport/1123153.html"
+        "https://www.newbalance.com/pd/fuelcell-supercomp-elite-v4/MRCELV4-44105.html"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "US",
@@ -1655,21 +1551,623 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "hoka",
-        "modelName": "transport",
-        "category": "Commuter / Urban Run",
-        "outsole": "Vibram EcoStep Natural",
-        "midsole": "30% Sugarcane EVA",
-        "lacing": "Quick toggle lace"
+        "brand": "new balance",
+        "modelName": "fuelcell supercomp elite v4",
+        "cushioningTechnology": "100% PEBA FuelCell with Energy Arc Carbon Plate",
+        "stackHeightMm": 40,
+        "heelDropMm": 4,
+        "weightGrams": 237,
+        "pronationSupport": "Neutral (Marathon Racing Super-Shoe)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Sustainable city commuter running shoe built with sugarcane EVA midsole.",
+      "inclusionReason": "Top-tier marathon racer powered by 100% PEBA FuelCell foam and Energy Arc void carbon plate geometry.",
       "status": "staged"
     },
     {
-      "id": "on-cloudmonster-2",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
+      "id": "new-balance-fuelcell-rebel-v4",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "Rebel",
+      "modelName": "FuelCell Rebel v4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.newbalance.com/pd/fuelcell-rebel-v4/MFCXV4-44102.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "new balance",
+        "modelName": "fuelcell rebel v4",
+        "cushioningTechnology": "PEBA/EVA blend FuelCell with FantomFit upper",
+        "stackHeightMm": 30,
+        "heelDropMm": 6,
+        "weightGrams": 212,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-light non-plated tempo trainer offering explosive energy return in an agile featherweight package.",
+      "status": "staged"
+    },
+    {
+      "id": "new-balance-fresh-foam-x-more-v5",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "Fresh Foam X",
+      "modelName": "Fresh Foam X More v5",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.newbalance.com/pd/fresh-foam-x-more-v5/MMORV5-44108.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "new balance",
+        "modelName": "fresh foam x more v5",
+        "cushioningTechnology": "Max-stack Fresh Foam X with wide supportive base",
+        "stackHeightMm": 44,
+        "heelDropMm": 4,
+        "weightGrams": 312,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Highest stack of Fresh Foam X ever created, offering 44mm of maximalist shock absorption on a wide stable platform.",
+      "status": "staged"
+    },
+    {
+      "id": "new-balance-fresh-foam-x-880v14",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "Fresh Foam X",
+      "modelName": "Fresh Foam X 880v14",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.newbalance.com/pd/fresh-foam-x-880v14/M880V14-44104.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "new balance",
+        "modelName": "fresh foam x 880v14",
+        "cushioningTechnology": "Dual-layer Fresh Foam X with blown rubber forefoot",
+        "stackHeightMm": 35,
+        "heelDropMm": 8,
+        "weightGrams": 270,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic reliable workhorse trainer delivering balanced cushioning and high-mileage durability.",
+      "status": "staged"
+    },
+    {
+      "id": "new-balance-fuelcell-supercomp-trainer-v3",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "SuperComp",
+      "modelName": "FuelCell SuperComp Trainer v3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.newbalance.com/pd/fuelcell-supercomp-trainer-v3/MRCXV3-44110.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "new balance",
+        "modelName": "fuelcell supercomp trainer v3",
+        "cushioningTechnology": "High-stack PEBA FuelCell with Energy Arc Carbon Plate",
+        "stackHeightMm": 40,
+        "heelDropMm": 6,
+        "weightGrams": 260,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Carbon-plated daily training shoe engineered to withstand intense marathon preparation volume.",
+      "status": "staged"
+    },
+    {
+      "id": "new-balance-fuelcell-propel-v4",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "Propel",
+      "modelName": "FuelCell Propel v4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.newbalance.com/pd/fuelcell-propel-v4/MFCPRV4-44106.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "new balance",
+        "modelName": "fuelcell propel v4",
+        "cushioningTechnology": "FuelCell foam with TPU propulsion plate",
+        "stackHeightMm": 31,
+        "heelDropMm": 6,
+        "weightGrams": 295,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Accessible plated running shoe pairing energetic FuelCell foam with a snappy TPU propulsion plate.",
+      "status": "staged"
+    },
+    {
+      "id": "new-balance-fresh-foam-x-860v14",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "Fresh Foam X",
+      "modelName": "Fresh Foam X 860v14",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.newbalance.com/pd/fresh-foam-x-860v14/M860V14-44103.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "new balance",
+        "modelName": "fresh foam x 860v14",
+        "cushioningTechnology": "Fresh Foam X with Stability Plane EVA bridge",
+        "stackHeightMm": 36,
+        "heelDropMm": 8,
+        "weightGrams": 298,
+        "pronationSupport": "Overpronation (Stability Plane Technology)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reliable stability benchmark modernized with a subtle EVA Stability Plane between foam layers.",
+      "status": "staged"
+    },
+    {
+      "id": "new-balance-fuelcell-supercomp-pacer-v2",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "SuperComp",
+      "modelName": "FuelCell SuperComp Pacer v2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.newbalance.com/pd/fuelcell-supercomp-pacer-v2/MFCPV2-44112.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "new balance",
+        "modelName": "fuelcell supercomp pacer v2",
+        "cushioningTechnology": "100% PEBA FuelCell with Full Carbon Plate",
+        "stackHeightMm": 33,
+        "heelDropMm": 8,
+        "weightGrams": 198,
+        "pronationSupport": "Neutral (5K/10K Road Racer)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Aggressive low-to-mid stack road racing flat designed for razor-sharp cornering in 5K road events.",
+      "status": "staged"
+    },
+    {
+      "id": "new-balance-fresh-foam-x-hierro-v8",
+      "canonicalBrand": "New Balance",
+      "displayBrand": "New Balance",
+      "productLine": "Hierro",
+      "modelName": "Fresh Foam X Hierro v8",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.newbalance.com/pd/fresh-foam-x-hierro-v8/MTHIER8-44107.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "new balance",
+        "modelName": "fresh foam x hierro v8",
+        "cushioningTechnology": "Fresh Foam X with Vibram EcoStep Natural outsole",
+        "stackHeightMm": 32,
+        "heelDropMm": 8,
+        "weightGrams": 318,
+        "pronationSupport": "Neutral (Trail Cruiser)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plush all-terrain trail cruiser utilizing Vibram EcoStep Natural rubber with 4.5mm lugs.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-air-zoom-alphafly-next-3",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Alphafly",
+      "modelName": "Air Zoom Alphafly NEXT% 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/air-zoom-alphafly-3-mens-road-racing-shoes-5JxK1l/FD8311-700"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "air zoom alphafly next% 3",
+        "cushioningTechnology": "Dual Zoom Air pods, Full-length ZoomX foam, Full Flyplate Carbon Plate",
+        "stackHeightMm": 40,
+        "heelDropMm": 8,
+        "weightGrams": 218,
+        "pronationSupport": "Neutral (Men's & Women's Marathon World Record Holder)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The pinnacle of marathon racing engineering, holding both the official men's and women's world records.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-zoomx-vaporfly-3",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Vaporfly",
+      "modelName": "ZoomX Vaporfly 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/vaporfly-3-mens-road-racing-shoes-8VdWJk/DV4129-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "zoomx vaporfly 3",
+        "cushioningTechnology": "Full-length ZoomX foam with spoon-shaped Carbon Flyplate",
+        "stackHeightMm": 40,
+        "heelDropMm": 8,
+        "weightGrams": 198,
+        "pronationSupport": "Neutral (Sub-200g Marathon Racer)",
+        "originCountry": "China"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The all-distance racing benchmark, shaved down to sub-200 grams with web-rubber waffle outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-air-zoom-pegasus-41",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Pegasus",
+      "modelName": "Air Zoom Pegasus 41",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/pegasus-41-mens-road-running-shoes-bZ4NqV/FD2722-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "air zoom pegasus 41",
+        "cushioningTechnology": "ReactX foam with dual forefoot and heel Air Zoom units",
+        "stackHeightMm": 37,
+        "heelDropMm": 10,
+        "weightGrams": 297,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Running's most enduring icon since 1983, updated with eco-friendly ReactX foam offering 13% more energy return.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-zoomx-invincible-3",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Invincible",
+      "modelName": "ZoomX Invincible 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/invincible-3-mens-road-running-shoes-6QD1kL/DR2615-101"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "zoomx invincible 3",
+        "cushioningTechnology": "High-stack ZoomX foam with wide base and Flyknit upper",
+        "stackHeightMm": 40,
+        "heelDropMm": 9,
+        "weightGrams": 310,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Maximalist recovery cruiser packing a massive slab of bouncy ZoomX super-foam onto an ultra-wide base.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-infinityrn-4",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Infinity",
+      "modelName": "InfinityRN 4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/infinityrn-4-mens-road-running-shoes-dC8WbN/DR2665-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "infinityrn 4",
+        "cushioningTechnology": "ReactX foam with curved rocker sole and Flyknit upper",
+        "stackHeightMm": 39,
+        "heelDropMm": 9,
+        "weightGrams": 353,
+        "pronationSupport": "Neutral / Mild Stability",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Injury-prevention oriented cruiser featuring a supportive rocker geometry and sustainable ReactX foam.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-zoom-fly-6",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Zoom Fly",
+      "modelName": "Zoom Fly 6",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/zoom-fly-6-mens-road-running-shoes-8J8K1l/FN8454-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "zoom fly 6",
+        "cushioningTechnology": "ZoomX and SR-02 dual foam with Carbon Flyplate",
+        "stackHeightMm": 42,
+        "heelDropMm": 8,
+        "weightGrams": 265,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Carbon-plated training counterpart to the Vaporfly, engineered for brutal weekly workout mileage.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-vomero-17",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Vomero",
+      "modelName": "Vomero 17",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/vomero-17-mens-road-running-shoes-8RjB9L/FB8502-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "vomero 17",
+        "cushioningTechnology": "Dual-density ZoomX top layer over Cushlon 3.0 base",
+        "stackHeightMm": 39,
+        "heelDropMm": 10,
+        "weightGrams": 285,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual-foam plush cruiser combining bouncy ZoomX underfoot with durable Cushlon 3.0 base foam.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-pegasus-plus",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Pegasus Plus",
+      "modelName": "Pegasus Plus",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/pegasus-plus-mens-road-running-shoes-9K1L2m/FQ7260-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "pegasus plus",
+        "cushioningTechnology": "Full-length ZoomX foam with Flyknit upper and midfoot band",
+        "stackHeightMm": 34,
+        "heelDropMm": 10,
+        "weightGrams": 245,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spiritual successor to the beloved Pegasus Turbo, featuring a full-length ZoomX midsole without plate.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-streakfly",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Streakfly",
+      "modelName": "Streakfly",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/streakfly-road-racing-shoes-n6V34L/DJ6566-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "streakfly",
+        "cushioningTechnology": "ZoomX foam with midfoot Pebax shank",
+        "stackHeightMm": 32,
+        "heelDropMm": 6,
+        "weightGrams": 172,
+        "pronationSupport": "Neutral (5K/10K Road Racer)",
+        "originCountry": "China"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-featherweight 172g racing flat tuned specifically for tactical 5K and 10K road racing.",
+      "status": "staged"
+    },
+    {
+      "id": "nike-wildhorse-8",
+      "canonicalBrand": "Nike",
+      "displayBrand": "Nike",
+      "productLine": "Wildhorse",
+      "modelName": "Wildhorse 8",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.nike.com/t/wildhorse-8-mens-trail-running-shoes-7G5K1l/DR2686-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "nike",
+        "modelName": "wildhorse 8",
+        "cushioningTechnology": "React foam with rock plate and high-abrasion rubber lugs",
+        "stackHeightMm": 35,
+        "heelDropMm": 8,
+        "weightGrams": 348,
+        "pronationSupport": "Neutral (Rugged Trail)",
+        "originCountry": "China"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rugged technical trail runner with segmented rock plate and high-abrasion multi-directional lug outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "on-running-loewe-cloudtilt",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
+      "productLine": "Loewe x On",
+      "modelName": "Loewe x On Cloudtilt",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.on.com/en-us/products/cloudtilt-loewe-3me1017"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "on running",
+        "modelName": "loewe x on cloudtilt",
+        "cushioningTechnology": "CloudTec Phase with Helion superfoam",
+        "stackHeightMm": 35,
+        "heelDropMm": 7,
+        "weightGrams": 229,
+        "pronationSupport": "Neutral (Luxury Designer Icon)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-prestigious collaboration between luxury house LOEWE and On, featuring computer-optimized CloudTec Phase cushioning.",
+      "status": "staged"
+    },
+    {
+      "id": "on-running-loewe-cloudtilt-2",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
+      "productLine": "Loewe x On",
+      "modelName": "Loewe x On Cloudtilt 2.0",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.on.com/en-us/products/cloudtilt-2-loewe-3me1018"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "on running",
+        "modelName": "loewe x on cloudtilt 2.0",
+        "cushioningTechnology": "Sequential CloudTec Phase Helion superfoam with TPU toe cap",
+        "stackHeightMm": 36,
+        "heelDropMm": 7,
+        "weightGrams": 245,
+        "pronationSupport": "Neutral (Luxury Designer Icon)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Second generation Loewe collaboration with reinforced multi-layer technical mesh and anagram branding.",
+      "status": "staged"
+    },
+    {
+      "id": "on-running-cloudmonster-2",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
       "productLine": "Cloudmonster",
       "modelName": "Cloudmonster 2",
       "generationOrYear": "Current",
@@ -1683,26 +2181,28 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "on",
+        "brand": "on running",
         "modelName": "cloudmonster 2",
-        "category": "Monster Cushion",
-        "foam": "Helion superfoam dual-density",
-        "technology": "Extreme CloudTec",
-        "plate": "Nylon-blend Speedboard"
+        "cushioningTechnology": "Maximalist Dual-density Helion superfoam CloudTec with Speedboard",
+        "stackHeightMm": 35,
+        "heelDropMm": 6,
+        "weightGrams": 295,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Swiss-engineered maximalist road shoe delivering monster rebound with extreme CloudTec pods.",
+      "inclusionReason": "On's weirdest and wildest max-cushion icon, featuring colossal Cloud elements and snappy nylon-blend Speedboard.",
       "status": "staged"
     },
     {
-      "id": "on-cloudsurfer",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
+      "id": "on-running-cloudsurfer",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
       "productLine": "Cloudsurfer",
       "modelName": "Cloudsurfer",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.on.com/en-us/products/cloudsurfer-3md1042/mens/all-black-shoes-3MD10420485"
+        "https://www.on.com/en-us/products/cloudsurfer-3md1042/mens/black-eclipse-shoes-3MD10420286"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "CH",
@@ -1711,77 +2211,23 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "on",
+        "brand": "on running",
         "modelName": "cloudsurfer",
-        "category": "Smooth Road Daily",
-        "technology": "Computer-optimized CloudTec Phase",
-        "foam": "Helion superfoam",
-        "plate": "Plateless"
+        "cushioningTechnology": "Computer-optimized CloudTec Phase with Helion superfoam (No Speedboard)",
+        "stackHeightMm": 32,
+        "heelDropMm": 10,
+        "weightGrams": 245,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Plateless everyday running shoe featuring domino-collapsing CloudTec Phase cushioning.",
+      "inclusionReason": "First shoe featuring FEA computer-modeled domino-collapsing CloudTec Phase elements for buttery-smooth heel-to-toe transition.",
       "status": "staged"
     },
     {
-      "id": "on-cloudboom-echo-3",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
-      "productLine": "Cloudboom",
-      "modelName": "Cloudboom Echo 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.on.com/en-us/products/cloudboom-echo-3-3me1002/mens/white-black-shoes-3ME10020108"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "CH",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "on",
-        "modelName": "cloudboom echo 3",
-        "category": "Marathon Super Shoe",
-        "foam": "Pebax-based Helion HF superfoam",
-        "plate": "Carbon Speedboard",
-        "weight": "215g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Elite marathon racing super shoe powered by 100% Pebax Helion HF and carbon Speedboard.",
-      "status": "staged"
-    },
-    {
-      "id": "on-cloudstratus-3",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
-      "productLine": "Cloudstratus",
-      "modelName": "Cloudstratus 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.on.com/en-us/products/cloudstratus-3-3md3011/mens/white-black-shoes-3MD30110108"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "CH",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "on",
-        "modelName": "cloudstratus 3",
-        "category": "High Mileage Long Run",
-        "technology": "Double layer CloudTec",
-        "foam": "Helion superfoam",
-        "plate": "Speedboard"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Double layer CloudTec cushioning built for medium to long distance road runs.",
-      "status": "staged"
-    },
-    {
-      "id": "on-cloudrunner-2",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
+      "id": "on-running-cloudrunner-2",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
       "productLine": "Cloudrunner",
       "modelName": "Cloudrunner 2",
       "generationOrYear": "Current",
@@ -1795,25 +2241,58 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "on",
+        "brand": "on running",
         "modelName": "cloudrunner 2",
-        "category": "Support Daily Trainer",
-        "foam": "Helion superfoam upgrade",
-        "collar": "Plush support collar"
+        "cushioningTechnology": "Helion superfoam CloudTec with supportive cradle Speedboard",
+        "stackHeightMm": 31,
+        "heelDropMm": 10,
+        "weightGrams": 277,
+        "pronationSupport": "Mild Stability / Supportive Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Cushioned, supportive everyday shoe delivering confidence for beginner and regular runners.",
+      "inclusionReason": "Supportive daily cruiser updated with high-energy Helion superfoam and cradle heel clip.",
       "status": "staged"
     },
     {
-      "id": "on-cloudflow-4",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
+      "id": "on-running-cloudstratus-3",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
+      "productLine": "Cloudstratus",
+      "modelName": "Cloudstratus 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.on.com/en-us/products/cloudstratus-3-3md3011/mens/white-black-shoes-3MD30110106"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "on running",
+        "modelName": "cloudstratus 3",
+        "cushioningTechnology": "Double CloudTec layers with Helion superfoam and nylon Speedboard",
+        "stackHeightMm": 32,
+        "heelDropMm": 6,
+        "weightGrams": 290,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double layer of connected CloudTec elements providing doubled vertical and horizontal cushioning.",
+      "status": "staged"
+    },
+    {
+      "id": "on-running-cloudflow-4",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
       "productLine": "Cloudflow",
       "modelName": "Cloudflow 4",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.on.com/en-us/products/cloudflow-4-3md1064/mens/black-white-shoes-3MD10640107"
+        "https://www.on.com/en-us/products/cloudflow-4-3md1063/mens/black-white-shoes-3MD10630106"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "CH",
@@ -1822,26 +2301,28 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "on",
+        "brand": "on running",
         "modelName": "cloudflow 4",
-        "category": "Fast Tempo Trainer",
-        "foam": "Dual-density Helion superfoam",
-        "plate": "Spoon-shaped Speedboard",
-        "weight": "235g"
+        "cushioningTechnology": "Dual-density Helion superfoam with spoon-shaped Speedboard",
+        "stackHeightMm": 31,
+        "heelDropMm": 8,
+        "weightGrams": 235,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Lightweight and ultra-responsive tempo runner with forward-rolling spoon Speedboard.",
+      "inclusionReason": "Fast tempo shoe fitted with spoon-shaped glass-fiber infused Speedboard for forward propulsion.",
       "status": "staged"
     },
     {
-      "id": "on-cloudflyer-4",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
-      "productLine": "Cloudflyer",
-      "modelName": "Cloudflyer 4",
+      "id": "on-running-cloudboom-echo-3",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
+      "productLine": "Cloudboom",
+      "modelName": "Cloudboom Echo 3",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.on.com/en-us/products/cloudflyer-4-71m/mens/black-white-shoes-71.98671"
+        "https://www.on.com/en-us/products/cloudboom-echo-3-3me1006/mens/white-black-shoes-3ME10060106"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "CH",
@@ -1850,25 +2331,28 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "on",
-        "modelName": "cloudflyer 4",
-        "category": "Plush Stability",
-        "foam": "Helion & Zero-Gravity foam",
-        "elements": "Wider Cloud elements"
+        "brand": "on running",
+        "modelName": "cloudboom echo 3",
+        "cushioningTechnology": "Helion HF 100% Pebax superfoam with Carbon Speedboard",
+        "stackHeightMm": 39,
+        "heelDropMm": 9,
+        "weightGrams": 215,
+        "pronationSupport": "Neutral (Elite Marathon Racer)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Supreme comfort stability shoe with the plushest tongue and widest Cloud elements.",
+      "inclusionReason": "On's pinnacle marathon racing super-shoe combining bouncy Helion HF Pebax foam with full-length carbon Speedboard.",
       "status": "staged"
     },
     {
-      "id": "on-cloudgo",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
-      "productLine": "Cloudgo",
-      "modelName": "Cloudgo",
+      "id": "on-running-cloudvista",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
+      "productLine": "Cloudvista",
+      "modelName": "Cloudvista",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.on.com/en-us/products/cloudgo-55m/mens/black-white-shoes-55.98634"
+        "https://www.on.com/en-us/products/cloudvista-64/mens/eclipse-black-shoes-64.98319"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "CH",
@@ -1877,26 +2361,28 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "on",
-        "modelName": "cloudgo",
-        "category": "Entry Daily Trainer",
-        "foam": "Helion superfoam",
-        "plate": "TPU Speedboard",
-        "rocker": "Forefoot rocker"
+        "brand": "on running",
+        "modelName": "cloudvista",
+        "cushioningTechnology": "Helion superfoam CloudTec with Missiongrip rubber",
+        "stackHeightMm": 29,
+        "heelDropMm": 7,
+        "weightGrams": 280,
+        "pronationSupport": "Neutral (Light Trail)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Effortless introductory running shoe delivering energy return and step-in comfort.",
+      "inclusionReason": "Lightweight trail runner designed for packed dirt trails and park gravel with Missiongrip rubber.",
       "status": "staged"
     },
     {
-      "id": "on-cloudultra-2",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
-      "productLine": "Trail Collection",
+      "id": "on-running-cloudultra-2",
+      "canonicalBrand": "On Running",
+      "displayBrand": "On Running",
+      "productLine": "Cloudultra",
       "modelName": "Cloudultra 2",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://www.on.com/en-us/products/cloudultra-2-3md3028/mens/black-white-shoes-3MD30280107"
+        "https://www.on.com/en-us/products/cloudultra-2-3md1028/mens/black-white-shoes-3MD10280106"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "CH",
@@ -1905,601 +2391,24 @@
         "Standard"
       ],
       "collectedAttributes": {
-        "brand": "on",
+        "brand": "on running",
         "modelName": "cloudultra 2",
-        "category": "Ultra Trail",
-        "outsole": "Missiongrip with closed channel",
-        "foam": "Double Helion superfoam",
-        "fit": "FlipRelease fit adjust"
+        "cushioningTechnology": "Double Helion superfoam with FlipRelease fit tool",
+        "stackHeightMm": 32,
+        "heelDropMm": 5,
+        "weightGrams": 295,
+        "pronationSupport": "Neutral (Ultra-distance Trail)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "All-terrain ultra-distance trail runner with FlipRelease swelling adjustment clip.",
-      "status": "staged"
-    },
-    {
-      "id": "on-cloudeclipse",
-      "canonicalBrand": "On",
-      "displayBrand": "On",
-      "productLine": "Max Cushion",
-      "modelName": "Cloudeclipse",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.on.com/en-us/products/cloudeclipse-3md3009/mens/black-frost-shoes-3MD30090106"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "CH",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "on",
-        "modelName": "cloudeclipse",
-        "category": "Max Stack Neutral",
-        "technology": "Double CloudTec Phase",
-        "foam": "Helion superfoam",
-        "plate": "Flexible Speedboard shank"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "On's thickest road midsole shoe with double CloudTec Phase computer-engineered cushioning.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-ghost-16",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Ghost",
-      "modelName": "Ghost 16",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-16/110418.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "ghost 16",
-        "category": "Daily Workhorse Neutral",
-        "foam": "Nitrogen-infused DNA LOFT v3",
-        "drop": "12mm",
-        "weight": "269g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "America's best-selling neutral running shoe updated with nitrogen-infused DNA LOFT v3.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-glycerin-21",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Glycerin",
-      "modelName": "Glycerin 21",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-21/110411.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "glycerin 21",
-        "category": "Max Cushion Neutral",
-        "foam": "DNA LOFT v3 nitrogen infused (2mm added stack)",
-        "upper": "Engineered warp knit"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The benchmark in plush road running comfort with generous nitrogen-injected cushion.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-hyperion-max",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Hyperion",
-      "modelName": "Hyperion Max",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-max/110390.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "hyperion max",
-        "category": "Fast Tempo Trainer",
-        "foam": "DNA FLASH nitrogen infused",
-        "rocker": "Rapid Roll curved heel/toe",
-        "weight": "221g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Lightweight and fast non-plated workout trainer designed for quick cadence.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-hyperion-elite-4",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Hyperion Racing",
-      "modelName": "Hyperion Elite 4",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-elite-4/110419.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "hyperion elite 4",
-        "category": "Marathon Racing",
-        "foam": "DNA FLASH v2 super foam",
-        "plate": "SpeedVault Race carbon plate",
-        "weight": "221g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Brooks' flagship marathon carbon racing shoe featuring upgraded DNA FLASH v2 foam.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-adrenaline-gts-23",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Adrenaline GTS",
-      "modelName": "Adrenaline GTS 23",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/adrenaline-gts-23/110391.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "adrenaline gts 23",
-        "category": "Stability Daily Trainer",
-        "technology": "GuideRails holistic support system",
-        "foam": "DNA LOFT v2"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "The industry standard in holistic stability support with GuideRails knee-alignment technology.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-launch-10",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Launch",
-      "modelName": "Launch 10",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/launch-10/110398.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "launch 10",
-        "category": "Lightweight Daily Neutral",
-        "foam": "BioMoGo DNA",
-        "drop": "10mm",
-        "weight": "235g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Fast, dependable, value-oriented neutral trainer for tempo and track sessions.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-levitate-6",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Levitate",
-      "modelName": "Levitate 6",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/levitate-6/110395.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "levitate 6",
-        "category": "High Energy Return",
-        "foam": "DNA AMP v2 springy PU foam",
-        "arrowPoint": "Quick transition outsole pattern"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Maximum energy return trainer powered by polyurethane-encased DNA AMP v2 foam.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-ghost-max",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Ghost",
-      "modelName": "Ghost Max",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-max/110406.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "ghost max",
-        "category": "Max Stack Rocker",
-        "foam": "DNA LOFT v2 (high stack)",
-        "rocker": "GlideRoll Rocker",
-        "drop": "6mm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Maximal stack rockered cruiser providing lower heel drop and assisted rollover transitions.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-caldera-7",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Caldera",
-      "modelName": "Caldera 7",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/trail-running-shoes/caldera-7/110414.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "caldera 7",
-        "category": "Max Cushion Trail",
-        "foam": "DNA LOFT v3 nitrogen infused",
-        "outsole": "TrailTack Green rubber",
-        "sidewalls": "Raised foam perimeter"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Ultra-distance high-cushion trail runner equipped with nitrogen foam and wide stable base.",
-      "status": "staged"
-    },
-    {
-      "id": "brooks-catamount-3",
-      "canonicalBrand": "Brooks",
-      "displayBrand": "Brooks",
-      "productLine": "Catamount",
-      "modelName": "Catamount 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.brooksrunning.com/en_us/mens/shoes/trail-running-shoes/catamount-3/110415.html"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "US",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "brooks",
-        "modelName": "catamount 3",
-        "category": "Fast Trail Racing",
-        "foam": "DNA FLASH",
-        "plate": "SkyVault propulsion plate",
-        "outsole": "TrailTack rubber"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Agile mountain racing shoe with SkyVault propulsion plate for uphill push-offs.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-rider-27",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Wave Rider",
-      "modelName": "Wave Rider 27",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-rider-27-mens/411403"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave rider 27",
-        "category": "Classic Neutral Daily",
-        "plate": "Plant-based Wave Plate",
-        "foam": "MIZUNO ENERZY",
-        "drop": "12mm"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Mizuno's flagship running icon delivering reliable snap and heel-to-toe guidance.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-rebellion-pro-2",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Wave Rebellion",
-      "modelName": "Wave Rebellion Pro 2",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-rebellion-pro-2-mens/411425"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave rebellion pro 2",
-        "category": "Radical Marathon Racing",
-        "technology": "Smooth Speed Assist (beveled heel)",
-        "foam": "MIZUNO ENERZY LITE+",
-        "plate": "Carbon-infused Wave Plate"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Aggressive radical marathon racer with decoupled floating heel geometry.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-rebellion-flash-2",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Wave Rebellion",
-      "modelName": "Wave Rebellion Flash 2",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-rebellion-flash-2-mens/411426"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave rebellion flash 2",
-        "category": "Tempo / Training Super Shoe",
-        "foam": "ENERZY LITE+ & ENERZY",
-        "plate": "Glass-fiber infused Wave Plate"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Plated fast training partner engineered with Smooth Speed Assist technology.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-inspire-20",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Wave Inspire",
-      "modelName": "Wave Inspire 20",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-inspire-20-mens/411420"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave inspire 20",
-        "category": "Support Stability Daily",
-        "plate": "Anatomical Double Fan Wave Plate",
-        "foam": "MIZUNO ENERZY"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Benchmark support runner resisting arch collapse with double fan wave plate.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-sky-7",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Wave Sky",
-      "modelName": "Wave Sky 7",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-sky-7-mens/411411"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave sky 7",
-        "category": "Max Cushion Plateless",
-        "foam": "MIZUNO ENERZY & MIZUNO ENERZY CORE",
-        "technology": "Foam Wave"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Plush plateless max cushion cruiser pairing ENERZY and ultra-soft ENERZY Core.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-horizon-7",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Wave Horizon",
-      "modelName": "Wave Horizon 7",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-horizon-7-mens/411430"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave horizon 7",
-        "category": "Max Cushion Stability",
-        "foam": "Dual density Foam Wave with ENERZY Core",
-        "rubber": "Asymmetrical lateral rubber"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Maximal support luxury shoe with dual-wave geometrical guidance.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-neo-ultra",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Neo Series",
-      "modelName": "Wave Neo Ultra",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-neo-ultra-mens/411354"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave neo ultra",
-        "category": "Eco Max Cushion",
-        "foam": "ENERZY, ENERZY Core, ENERZY Lite trio",
-        "eco": "Castor oil bio-based materials"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Eco-pioneering luxury runner using a triple combination of ENERZY foams.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-daichi-8",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Trail Collection",
-      "modelName": "Wave Daichi 8",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-daichi-8-mens/411435"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave daichi 8",
-        "category": "All-Terrain Trail",
-        "outsole": "Vibram Megagrip",
-        "plate": "Reinforced EVA rock plate",
-        "foam": "MIZUNO ENERZY"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Versatile trail running shoe with Vibram Megagrip lugged outsole and protective plate.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-mujin-9",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Trail Collection",
-      "modelName": "Wave Mujin 9",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-mujin-9-mens/411388"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave mujin 9",
-        "category": "Rugged Mountain Trail",
-        "outsole": "Michelin rubber tread",
-        "protection": "TPU side supports"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Heavy-duty technical mountain running shoe with Michelin rubber grip.",
-      "status": "staged"
-    },
-    {
-      "id": "mizuno-wave-duel-pro",
-      "canonicalBrand": "Mizuno",
-      "displayBrand": "Mizuno",
-      "productLine": "Short Distance Racing",
-      "modelName": "Wave Duel Pro",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://www.mizunousa.com/us/product/running-wave-duel-pro-mens/411370"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "JP",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "mizuno",
-        "modelName": "wave duel pro",
-        "category": "5K / Track Racing",
-        "technology": "Smooth Speed Assist",
-        "plate": "Full-length carbon wave plate",
-        "weight": "190g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "High-speed midfoot-striking flat designed for 5K to 10K racing.",
+      "inclusionReason": "Ultra-marathon trail shoe featuring FlipRelease switch to relieve foot swelling over 100-mile distances.",
       "status": "staged"
     },
     {
       "id": "puma-deviate-nitro-elite-3",
       "canonicalBrand": "Puma",
       "displayBrand": "Puma",
-      "productLine": "Nitro Racing",
+      "productLine": "Deviate Nitro",
       "modelName": "Deviate Nitro Elite 3",
       "generationOrYear": "Current",
       "sourceUrls": [
@@ -2514,25 +2423,26 @@
       "collectedAttributes": {
         "brand": "puma",
         "modelName": "deviate nitro elite 3",
-        "category": "Marathon Racing",
-        "foam": "NITROFOAM Elite (aliphatic TPU)",
-        "plate": "PWRPLATE carbon fiber",
-        "outsole": "PUMAGRIP",
-        "weight": "194g"
+        "cushioningTechnology": "100% Aliphatic TPU NITROFOAM ELITE with spoon-shaped PWRPLATE",
+        "stackHeightMm": 40,
+        "heelDropMm": 8,
+        "weightGrams": 194,
+        "pronationSupport": "Neutral (Sub-200g Marathon Racer)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Olympic-caliber marathon racer pairing NITROFOAM Elite with carbon PWRPLATE.",
+      "inclusionReason": "Puma's premier marathon super-shoe, delivering extreme bounce under 200g with carbon fiber PWRPLATE.",
       "status": "staged"
     },
     {
       "id": "puma-deviate-nitro-3",
       "canonicalBrand": "Puma",
       "displayBrand": "Puma",
-      "productLine": "Nitro Performance",
+      "productLine": "Deviate Nitro",
       "modelName": "Deviate Nitro 3",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://us.puma.com/us/en/pd/deviate-nitro-3-mens-running-shoes/309720"
+        "https://us.puma.com/us/en/pd/deviate-nitro-3-mens-running-shoes/378440"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "DE",
@@ -2543,24 +2453,26 @@
       "collectedAttributes": {
         "brand": "puma",
         "modelName": "deviate nitro 3",
-        "category": "Plated Daily / Workout",
-        "foam": "Dual layer NITROFOAM Elite & NITROFOAM",
-        "plate": "Carbon PWRPLATE",
-        "outsole": "PUMAGRIP"
+        "cushioningTechnology": "Dual-layer NITROFOAM and NITROFOAM ELITE with Carbon PWRPLATE",
+        "stackHeightMm": 39,
+        "heelDropMm": 10,
+        "weightGrams": 265,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Carbon-plated training companion delivering super shoe propulsion for daily workouts.",
+      "inclusionReason": "Plated daily speed trainer featuring top-layer racing foam and PUMAGRIP all-weather traction.",
       "status": "staged"
     },
     {
       "id": "puma-velocity-nitro-3",
       "canonicalBrand": "Puma",
       "displayBrand": "Puma",
-      "productLine": "Velocity",
+      "productLine": "Velocity Nitro",
       "modelName": "Velocity Nitro 3",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://us.puma.com/us/en/pd/velocity-nitro-3-mens-running-shoes/309718"
+        "https://us.puma.com/us/en/pd/velocity-nitro-3-mens-running-shoes/377748"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "DE",
@@ -2571,51 +2483,26 @@
       "collectedAttributes": {
         "brand": "puma",
         "modelName": "velocity nitro 3",
-        "category": "Daily Workhorse Neutral",
-        "foam": "NITROFOAM top layer with PROFOAMLITE base",
-        "outsole": "PUMAGRIP"
+        "cushioningTechnology": "Nitrogen-infused NITROFOAM with PROFOAMLITE base",
+        "stackHeightMm": 36,
+        "heelDropMm": 10,
+        "weightGrams": 264,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Crowd favorite value daily trainer renowned for world-class PUMAGRIP wet traction.",
-      "status": "staged"
-    },
-    {
-      "id": "puma-fast-r-nitro-elite-2",
-      "canonicalBrand": "Puma",
-      "displayBrand": "Puma",
-      "productLine": "Fast-R",
-      "modelName": "Fast-R Nitro Elite 2",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://us.puma.com/us/en/pd/fast-r-nitro-elite-2-running-shoes/380083"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "puma",
-        "modelName": "fast-r nitro elite 2",
-        "category": "Decoupled Marathon Super Shoe",
-        "midsole": "Decoupled heel-forefoot architecture",
-        "plate": "Extended protruding PWRPLATE",
-        "foam": "NITROFOAM Elite"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Avant-garde two-piece decoupled racing super shoe with extended carbon lever.",
+      "inclusionReason": "One of running's best-value daily trainers, celebrated for its legendary wet-surface PUMAGRIP outsole.",
       "status": "staged"
     },
     {
       "id": "puma-magnify-nitro-2",
       "canonicalBrand": "Puma",
       "displayBrand": "Puma",
-      "productLine": "Magnify",
+      "productLine": "Magnify Nitro",
       "modelName": "Magnify Nitro 2",
       "generationOrYear": "Current",
       "sourceUrls": [
-        "https://us.puma.com/us/en/pd/magnify-nitro-2-mens-running-shoes/376909"
+        "https://us.puma.com/us/en/pd/magnify-nitro-2-mens-running-shoes/377540"
       ],
       "observationDate": "2026-10-11",
       "sourceRegion": "DE",
@@ -2626,12 +2513,45 @@
       "collectedAttributes": {
         "brand": "puma",
         "modelName": "magnify nitro 2",
-        "category": "Max Cushion Cruiser",
-        "foam": "Full 100% NITROFOAM midsole (high stack)",
-        "upper": "Engineered mesh with PWRTAPE"
+        "cushioningTechnology": "Max-stack 100% NITROFOAM with engineered knit upper",
+        "stackHeightMm": 40,
+        "heelDropMm": 10,
+        "weightGrams": 288,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Maximal stack recovery shoe loaded with full-length nitrogen-injected foam.",
+      "inclusionReason": "Full-slab nitrogen-infused max cushion shoe designed for effortless long recovery runs.",
+      "status": "staged"
+    },
+    {
+      "id": "puma-fast-r-nitro-elite-2",
+      "canonicalBrand": "Puma",
+      "displayBrand": "Puma",
+      "productLine": "Fast-R",
+      "modelName": "Fast-R Nitro Elite 2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.puma.com/us/en/pd/fast-r-nitro-elite-2-mens-running-shoes/380084"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "puma",
+        "modelName": "fast-r nitro elite 2",
+        "cushioningTechnology": "Decoupled midsole with NITROFOAM ELITE and extended exposed PWRPLATE",
+        "stackHeightMm": 40,
+        "heelDropMm": 8,
+        "weightGrams": 240,
+        "pronationSupport": "Neutral (Radical Decoupled Racer)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Radical decoupled super-shoe with visible elongated carbon plate bridging separated forefoot and heel pods.",
       "status": "staged"
     },
     {
@@ -2653,101 +2573,22 @@
       "collectedAttributes": {
         "brand": "puma",
         "modelName": "foreverrun nitro",
-        "category": "RunGuide Stability",
-        "foam": "Dual-density NITROFOAM",
-        "technology": "RUNGUIDE system with heel clip"
+        "cushioningTechnology": "Dual-density NITROFOAM with RUNGUIDE system",
+        "stackHeightMm": 36,
+        "heelDropMm": 10,
+        "weightGrams": 274,
+        "pronationSupport": "Overpronation (Dynamic RUNGUIDE Rim)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Targeted stability trainer keeping foot centered via dual-density rim and core.",
-      "status": "staged"
-    },
-    {
-      "id": "puma-electrify-nitro-3",
-      "canonicalBrand": "Puma",
-      "displayBrand": "Puma",
-      "productLine": "Electrify",
-      "modelName": "Electrify Nitro 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://us.puma.com/us/en/pd/electrify-nitro-3-mens-running-shoes/378455"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "puma",
-        "modelName": "electrify nitro 3",
-        "category": "Accessible Daily Trainer",
-        "foam": "NITROFOAM heel with PROFOAMLITE frame",
-        "outsole": "PUMAGRIP"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Lightweight and progressive introductory performance trainer.",
-      "status": "staged"
-    },
-    {
-      "id": "puma-voyage-nitro-3",
-      "canonicalBrand": "Puma",
-      "displayBrand": "Puma",
-      "productLine": "Trail Collection",
-      "modelName": "Voyage Nitro 3",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://us.puma.com/us/en/pd/voyage-nitro-3-mens-trail-running-shoes/378465"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "puma",
-        "modelName": "voyage nitro 3",
-        "category": "All-Terrain Trail",
-        "outsole": "PUMAGRIP ATR with 4mm multi-directional lugs",
-        "foam": "NITROFOAM"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Rugged all-terrain trail runner reinforced with water-shedding upper and PUMAGRIP ATR.",
-      "status": "staged"
-    },
-    {
-      "id": "puma-fast-fwd-nitro-elite",
-      "canonicalBrand": "Puma",
-      "displayBrand": "Puma",
-      "productLine": "Fast-FWD",
-      "modelName": "Fast-FWD Nitro Elite",
-      "generationOrYear": "Current",
-      "sourceUrls": [
-        "https://us.puma.com/us/en/pd/fast-fwd-nitro-elite-running-shoes/377755"
-      ],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "DE",
-      "lifecycle": "active",
-      "variants": [
-        "Standard"
-      ],
-      "collectedAttributes": {
-        "brand": "puma",
-        "modelName": "fast-fwd nitro elite",
-        "category": "5K / Track Racing Flat",
-        "geometry": "Extreme cutaways at heel and toe",
-        "foam": "NITROFOAM Elite",
-        "weight": "191g"
-      },
-      "missingAttributes": [],
-      "inclusionReason": "Extreme undercut racing flat engineered exclusively for aggressive forefoot strikers.",
+      "inclusionReason": "Guidance stability shoe incorporating firmer foam rim and Kaiser engineering heel clip to stabilize pronation.",
       "status": "staged"
     },
     {
       "id": "puma-liberate-nitro-2",
       "canonicalBrand": "Puma",
       "displayBrand": "Puma",
-      "productLine": "Liberate",
+      "productLine": "Liberate Nitro",
       "modelName": "Liberate Nitro 2",
       "generationOrYear": "Current",
       "sourceUrls": [
@@ -2762,13 +2603,405 @@
       "collectedAttributes": {
         "brand": "puma",
         "modelName": "liberate nitro 2",
-        "category": "Tempo / Short Runs",
-        "foam": "NITROFOAM",
-        "weight": "179g",
-        "plate": "Plateless"
+        "cushioningTechnology": "Ultra-light NITROFOAM with mono-mesh upper",
+        "stackHeightMm": 28,
+        "heelDropMm": 8,
+        "weightGrams": 184,
+        "pronationSupport": "Neutral (Sub-190g Featherweight)",
+        "originCountry": "Vietnam"
       },
       "missingAttributes": [],
-      "inclusionReason": "Super-lightweight plateless tempo shoe delivering unadulterated ground connection.",
+      "inclusionReason": "Featherweight non-plated tempo flat offering barefoot-like natural ground feel and high turnover.",
+      "status": "staged"
+    },
+    {
+      "id": "puma-fast-fwd-nitro-elite",
+      "canonicalBrand": "Puma",
+      "displayBrand": "Puma",
+      "productLine": "Fast-FWD",
+      "modelName": "Fast-FWD Nitro Elite",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.puma.com/us/en/pd/fast-fwd-nitro-elite-mens-running-shoes/377758"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "puma",
+        "modelName": "fast-fwd nitro elite",
+        "cushioningTechnology": "Aggressive undercut forefoot NITROFOAM ELITE with PWRPLATE",
+        "stackHeightMm": 35,
+        "heelDropMm": 9,
+        "weightGrams": 191,
+        "pronationSupport": "Neutral (5K Track-and-Road Specialist)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Radically undercut heel and toe profile engineered strictly for aggressive mid-to-forefoot 5K racing.",
+      "status": "staged"
+    },
+    {
+      "id": "puma-electrify-nitro-3",
+      "canonicalBrand": "Puma",
+      "displayBrand": "Puma",
+      "productLine": "Electrify Nitro",
+      "modelName": "Electrify Nitro 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.puma.com/us/en/pd/electrify-nitro-3-mens-running-shoes/378455"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "puma",
+        "modelName": "electrify nitro 3",
+        "cushioningTechnology": "Dual-density PROFOAMLITE and heel NITROFOAM with PUMAGRIP",
+        "stackHeightMm": 35,
+        "heelDropMm": 8,
+        "weightGrams": 260,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Accessible daily running trainer offering nitrogen-infused heel strike cushioning.",
+      "status": "staged"
+    },
+    {
+      "id": "puma-voyage-nitro-3",
+      "canonicalBrand": "Puma",
+      "displayBrand": "Puma",
+      "productLine": "Voyage Nitro",
+      "modelName": "Voyage Nitro 3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.puma.com/us/en/pd/voyage-nitro-3-mens-trail-running-shoes/377749"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "puma",
+        "modelName": "voyage nitro 3",
+        "cushioningTechnology": "NITROFOAM with PUMAGRIP ATR all-terrain 4.5mm lugs",
+        "stackHeightMm": 35,
+        "heelDropMm": 8,
+        "weightGrams": 306,
+        "pronationSupport": "Neutral (All-Terrain Trail)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "All-terrain trail runner pairing NITROFOAM responsiveness with PUMAGRIP ATR multi-surface lugs.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-endorphin-pro-4",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Endorphin",
+      "modelName": "Endorphin Pro 4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/endorphin-pro-4/58428M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "endorphin pro 4",
+        "cushioningTechnology": "Dual PWRRUN PB and PWRRUN HG superfoam with Carbon Plate",
+        "stackHeightMm": 39.5,
+        "heelDropMm": 8,
+        "weightGrams": 212,
+        "pronationSupport": "Neutral (Marathon Racing Super-Shoe)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Saucony's premier marathon super-shoe combining ultra-springy PWRRUN HG with PWRRUN PB and carbon plate.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-endorphin-speed-4",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Endorphin",
+      "modelName": "Endorphin Speed 4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/endorphin-speed-4/58429M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "endorphin speed 4",
+        "cushioningTechnology": "PWRRUN PB with Winged Nylon Plate and SPEEDROLL",
+        "stackHeightMm": 36,
+        "heelDropMm": 8,
+        "weightGrams": 233,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Beloved versatile tempo trainer pairing peba superfoam with flexible winged nylon plate.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-triumph-22",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Triumph",
+      "modelName": "Triumph 22",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/triumph-22/58793M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "triumph 22",
+        "cushioningTechnology": "PWRRUN PB beaded peba superfoam with wide platform",
+        "stackHeightMm": 37,
+        "heelDropMm": 10,
+        "weightGrams": 286,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Major upgrade introducing race-day PWRRUN PB beaded superfoam into a plush, durable daily cruiser.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-ride-17",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Ride",
+      "modelName": "Ride 17",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/ride-17/58427M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "ride 17",
+        "cushioningTechnology": "PWRRUN+ expanded TPU bead foam",
+        "stackHeightMm": 35,
+        "heelDropMm": 8,
+        "weightGrams": 282,
+        "pronationSupport": "Neutral",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Daily trainer upgraded with bouncy expanded TPU PWRRUN+ foam for long-lasting energy return.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-guide-17",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Guide",
+      "modelName": "Guide 17",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/guide-17/58430M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "guide 17",
+        "cushioningTechnology": "Center Path Technology with PWRRUN foam",
+        "stackHeightMm": 35,
+        "heelDropMm": 6,
+        "weightGrams": 269,
+        "pronationSupport": "Overpronation (Center Path Geometry)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Revolutionary stability redesign featuring Center Path Technology with wider base and asymmetrical sidewalls.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-endorphin-elite",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Endorphin",
+      "modelName": "Endorphin Elite",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/endorphin-elite/54128M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "endorphin elite",
+        "cushioningTechnology": "100% PWRRUN HG superfoam with slotted Carbon Plate",
+        "stackHeightMm": 39.5,
+        "heelDropMm": 8,
+        "weightGrams": 204,
+        "pronationSupport": "Neutral (Highest Energy Return)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Saucony's highest energy return racer featuring 95% rebound PWRRUN HG foam and forked carbon plate.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-kinvara-15",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Kinvara",
+      "modelName": "Kinvara 15",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/kinvara-15/58794M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "kinvara 15",
+        "cushioningTechnology": "PWRRUN foam with PWRRUN+ sockliner (4mm drop)",
+        "stackHeightMm": 29,
+        "heelDropMm": 4,
+        "weightGrams": 199,
+        "pronationSupport": "Neutral (Sub-200g Natural Trainer)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist natural running classic with 4mm heel-to-toe offset and sub-200 gram weight.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-tempus",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Tempus",
+      "modelName": "Tempus",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/tempus/52319M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "tempus",
+        "cushioningTechnology": "Full PWRRUN PB core with contoured PWRRUN supportive frame",
+        "stackHeightMm": 36.5,
+        "heelDropMm": 8,
+        "weightGrams": 252,
+        "pronationSupport": "Overpronation (Superfoam Stability)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pioneering stability shoe constructed around a peba superfoam PWRRUN PB core cradled by a supportive frame.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-hurricane-24",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Hurricane",
+      "modelName": "Hurricane 24",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/hurricane-24/58795M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "hurricane 24",
+        "cushioningTechnology": "Dual-layer PWRRUN PB over PWRRUN with Center Path Tech",
+        "stackHeightMm": 38,
+        "heelDropMm": 6,
+        "weightGrams": 302,
+        "pronationSupport": "Overpronation (Max Cushion Stability)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Max-cushion stability cruiser pairing peba superfoam with stabilizing Center Path geometry.",
+      "status": "staged"
+    },
+    {
+      "id": "saucony-peregrine-14",
+      "canonicalBrand": "Saucony",
+      "displayBrand": "Saucony",
+      "productLine": "Peregrine",
+      "modelName": "Peregrine 14",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.saucony.com/en/peregrine-14/58431M.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saucony",
+        "modelName": "peregrine 14",
+        "cushioningTechnology": "PWRRUN foam with PWRTRAC 5mm lugged outsole",
+        "stackHeightMm": 28,
+        "heelDropMm": 4,
+        "weightGrams": 267,
+        "pronationSupport": "Neutral (Trail Speed)",
+        "originCountry": "Vietnam"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Agile, nimble trail racer featuring tenacious 5mm PWRTRAC rubber lugs and integrated rock plate.",
       "status": "staged"
     }
   ],

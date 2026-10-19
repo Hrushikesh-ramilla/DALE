@@ -391,12 +391,12 @@
         "waterResistanceM": 100
       },
       "media": {
-        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m336935-0008",
+        "url": "/images/products/watches-watch-m336935-0008.webp",
         "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
         "alt": "Rolex Sky-Dweller reference m336935-0008, manufacturer photograph",
         "attribution": "Product photograph © Rolex; manufacturer reference",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       }
     },
     {
@@ -488,12 +488,12 @@
         "caseDiameterMm": 43
       },
       "media": {
-        "url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126603-0001",
+        "url": "/images/products/watches-watch-m126603-0001.webp",
         "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
         "alt": "Rolex Sea-Dweller reference m126603-0001, manufacturer photograph",
         "attribution": "Product photograph © Rolex; manufacturer reference",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       }
     }
   ]

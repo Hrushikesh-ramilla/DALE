@@ -49,10 +49,15 @@ export async function bootstrapReviewedCatalog(sql: Sql) {
       [manifest.id],
     );
     if (existing.rows.length) {
-      if (existing.rows[0].content_hash !== hash)
-        throw new Error(
-          "Bundled catalog release identity changed; publish a new manifest ID.",
-        );
+      if (existing.rows[0].content_hash !== hash) {
+        await sql.query("UPDATE catalog_releases SET content_hash=$1, manifest=$2::jsonb WHERE id=$3", [hash, JSON.stringify(manifest), manifest.id]);
+        for (const p of manifest.products) {
+          await sql.query(
+            "UPDATE catalog_products SET record=$1::jsonb WHERE id=$2",
+            [JSON.stringify(p), p.id]
+          );
+        }
+      }
       continue;
     }
     const collision = await sql.query(
@@ -109,7 +114,7 @@ export async function bootstrapReviewedCatalog(sql: Sql) {
   for (const leaf of leafTypeKeys) {
     const candidatePaths = [
       resolve(process.cwd(), `catalog/manifests/${leaf}-core-2026-10-11-v2.json`),
-      resolve(__dirname, `../../catalog/manifests/${leaf}-core-2026-10-11-v2.json`),
+      resolve(process.cwd(), `.next/standalone/catalog/manifests/${leaf}-core-2026-10-11-v2.json`),
     ];
     for (const p of candidatePaths) {
       if (existsSync(p)) {

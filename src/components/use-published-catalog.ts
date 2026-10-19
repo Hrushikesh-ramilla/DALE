@@ -6,9 +6,11 @@ const emptyProducts: Product[] = [];
 export type CatalogSummary = Awaited<ReturnType<typeof catalogSummary>>;
 export function usePublishedCatalog(input: {
   enabled: boolean;
-  category: string;
-  query: string;
-  requirements: RetailRequirements;
+  category?: string;
+  leafType?: string;
+  brand?: string;
+  query?: string;
+  requirements?: RetailRequirements;
 }) {
   const [summary, setSummary] = useState<CatalogSummary | null>(null);
   const [continuation, setContinuation] = useState({ key: "", cursor: "" });
@@ -18,9 +20,11 @@ export function usePublishedCatalog(input: {
   const [total, setTotal] = useState(0);
   const [error, setError] = useState("");
   const key = JSON.stringify({
-    category: input.category,
-    query: input.query,
-    ...input.requirements,
+    category: input.category || "",
+    leafType: input.leafType || "",
+    brand: input.brand || "",
+    query: input.query || "",
+    ...(input.requirements || {}),
   });
   const [loadedKey, setLoadedKey] = useState("");
   useEffect(() => {
@@ -41,10 +45,12 @@ export function usePublishedCatalog(input: {
     const timer = setTimeout(() => {
       const cursor = continuation.key === key ? continuation.cursor : "";
       setLoading(true);
-      const params = new URLSearchParams({
-        ...JSON.parse(key),
-        ...(cursor ? { cursor } : {}),
-      });
+      const parsedKey = JSON.parse(key);
+      const cleanEntries = Object.entries(parsedKey).filter(
+        ([, val]) => val !== "" && val !== undefined && val !== null,
+      ) as [string, string][];
+      if (cursor) cleanEntries.push(["cursor", cursor]);
+      const params = new URLSearchParams(cleanEntries);
       fetch(`/api/catalog?${params}`, { signal: abort.signal })
         .then(async (response) => {
           if (!response.ok)

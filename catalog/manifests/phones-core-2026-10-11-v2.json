@@ -58,12 +58,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s24-ultra.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
-        "alt": "Samsung Galaxy S24 Ultra official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-s24-ultra.webp",
+        "attribution": "Product photography © Samsung",
+        "usage": "catalog_packshot",
+        "source": "https://www.shutterstock.com/image-vector/realistic-vector-flat-samsung-galaxy-260nw-2432265035.jpg",
+        "alt": "Samsung Samsung Galaxy S24 Ultra",
+        "reviewedAt": "2026-10-14"
       },
       "leafType": "phones",
       "modelName": "Galaxy S24 Ultra",
@@ -112,12 +112,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s24-plus.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-s24/specs/",
-        "alt": "Samsung Galaxy S24+ official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-s24-plus.webp",
+        "attribution": "Product photography © Samsung",
+        "usage": "catalog_packshot",
+        "source": "https://st5.depositphotos.com/4960805/72870/i/1600/depositphotos_728701672-stock-photo-samsung-galaxy-s24-white-background.jpg",
+        "alt": "Samsung Samsung Galaxy S24+",
+        "reviewedAt": "2026-10-14"
       },
       "leafType": "phones",
       "modelName": "Galaxy S24+",
@@ -166,12 +166,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s24.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-s24/specs/",
-        "alt": "Samsung Galaxy S24 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-s24.webp",
+        "attribution": "Product photography © Samsung",
+        "usage": "catalog_packshot",
+        "source": "https://st5.depositphotos.com/4960805/72870/i/1600/depositphotos_728701672-stock-photo-samsung-galaxy-s24-white-background.jpg",
+        "alt": "Samsung Samsung Galaxy S24",
+        "reviewedAt": "2026-10-14"
       },
       "leafType": "phones",
       "modelName": "Galaxy S24",
@@ -220,12 +220,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-z-fold6.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-z-fold6/specs/",
-        "alt": "Samsung Galaxy Z Fold6 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-z-fold6.webp",
+        "attribution": "Product photography © Samsung",
+        "usage": "catalog_packshot",
+        "source": "https://virtual2web.com/26059-large_default/samsung-galaxy-z-fold6-5g-12gb-1tb-blanco-white-dual-sim.jpg",
+        "alt": "Samsung Samsung Galaxy Z Fold6",
+        "reviewedAt": "2026-10-14"
       },
       "leafType": "phones",
       "modelName": "Galaxy Z Fold6",
@@ -274,12 +274,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-z-flip6.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-z-flip6/specs/",
-        "alt": "Samsung Galaxy Z Flip6 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-z-flip6.webp",
+        "attribution": "Product photography © Samsung",
+        "usage": "catalog_packshot",
+        "source": "https://images.samsung.com/jp/smartphones/galaxy-z-flip6/images/galaxy-z-flip6-share-image.jpg",
+        "alt": "Samsung Samsung Galaxy Z Flip6",
+        "reviewedAt": "2026-10-14"
       },
       "leafType": "phones",
       "modelName": "Galaxy Z Flip6",
@@ -328,12 +328,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s24-fe.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-s24-fe/specs/",
-        "alt": "Samsung Galaxy S24 FE official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-s24-fe.webp",
+        "attribution": "Product photography © Samsung",
+        "usage": "catalog_packshot",
+        "source": "https://st5.depositphotos.com/4960805/72870/i/1600/depositphotos_728701672-stock-photo-samsung-galaxy-s24-white-background.jpg",
+        "alt": "Samsung Samsung Galaxy S24 FE",
+        "reviewedAt": "2026-10-14"
       },
       "leafType": "phones",
       "modelName": "Galaxy S24 FE",
@@ -382,12 +382,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-a55.png",
-        "source": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a55-5g-awesome-navy-128gb-sm-a556ezbdins/",
-        "alt": "Samsung Galaxy A55 5G official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-a55-5g.webp",
+        "source": "https://lifehacker.com/imagery/articles/01HRWCSKKVE4FJHQD0YCMTXMMQ/hero-image.fill.size_1248x702.v1710354440.png",
+        "alt": "Samsung Galaxy A55 5G official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Galaxy A55 5G",
@@ -436,12 +436,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-a35.png",
-        "source": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a35-5g-awesome-navy-128gb-sm-a356ezbdins/",
-        "alt": "Samsung Galaxy A35 5G official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-a35-5g.webp",
+        "source": "https://www.notebookcheck.net/fileadmin/_processed_/d/b/csm_Samsung_Galaxy_A35_5G_Leak2_60c562da64.jpg",
+        "alt": "Samsung Galaxy A35 5G official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Galaxy A35 5G",
@@ -490,12 +490,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s23-ultra.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-s23-ultra/specs/",
-        "alt": "Samsung Galaxy S23 Ultra official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-s23-ultra.webp",
+        "source": "https://m.media-amazon.com/images/I/611erMQuaLL._AC_SL1500_.jpg",
+        "alt": "Samsung Galaxy S23 Ultra official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Galaxy S23 Ultra",
@@ -544,12 +544,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s23.png",
-        "source": "https://www.samsung.com/global/galaxy/galaxy-s23/specs/",
-        "alt": "Samsung Galaxy S23 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-samsung-samsung-galaxy-s23.webp",
+        "source": "https://media.tatacroma.com/Croma Assets/Communication/Mobiles/Images/302149_gcbqab.png",
+        "alt": "Samsung Galaxy S23 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Galaxy S23",
@@ -598,12 +598,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-9-pro-xl.png",
-        "source": "https://store.google.com/product/pixel-9-pro-xl",
-        "alt": "Google Pixel 9 Pro XL official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-9-pro-xl.webp",
+        "source": "https://xmobile.lk/wp-content/uploads/2024/08/xmobile-pixel-9pro-porceline.jpg",
+        "alt": "Google Pixel 9 Pro XL official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 9 Pro XL",
@@ -652,12 +652,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-9-pro.png",
-        "source": "https://store.google.com/product/pixel-9-pro",
-        "alt": "Google Pixel 9 Pro official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-9-pro.webp",
+        "source": "https://storage.micromagma.ma/micromagma/5d77b4a6-cd3c-4e29-ac6a-9962e58111fe.png",
+        "alt": "Google Pixel 9 Pro official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 9 Pro",
@@ -706,12 +706,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-9.png",
-        "source": "https://store.google.com/product/pixel-9",
-        "alt": "Google Pixel 9 official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-9.webp",
+        "source": "https://www.smartmobsolution.com/wp-content/uploads/2024/07/Google-Pixel-9-white.jpg",
+        "alt": "Google Pixel 9 official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 9",
@@ -760,12 +760,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-9-pro-fold.png",
-        "source": "https://store.google.com/product/pixel-9-pro-fold",
-        "alt": "Google Pixel 9 Pro Fold official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-9-pro-fold.webp",
+        "source": "https://rakerock.com/media/iopt/catalog/product/1/3/1380828708683893978453a_1_1.webp",
+        "alt": "Google Pixel 9 Pro Fold official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 9 Pro Fold",
@@ -814,12 +814,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-8a.png",
-        "source": "https://store.google.com/product/pixel-8a",
-        "alt": "Google Pixel 8a official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-8a.webp",
+        "source": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6578/6578507_sd.jpg",
+        "alt": "Google Pixel 8a official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 8a",
@@ -868,12 +868,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-8-pro.png",
-        "source": "https://store.google.com/product/pixel-8-pro",
-        "alt": "Google Pixel 8 Pro official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-8-pro.webp",
+        "source": "https://m.media-amazon.com/images/I/71XEjCc4yLL._AC_SL1500_.jpg",
+        "alt": "Google Pixel 8 Pro official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 8 Pro",
@@ -922,12 +922,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-8.png",
-        "source": "https://store.google.com/product/pixel-8",
-        "alt": "Google Pixel 8 official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-8.webp",
+        "source": "https://m.media-amazon.com/images/I/71XEjCc4yLL._AC_SL1500_.jpg",
+        "alt": "Google Pixel 8 official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 8",
@@ -976,12 +976,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-7a.png",
-        "source": "https://store.google.com/product/pixel-7a",
-        "alt": "Google Pixel 7a official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-7a.webp",
+        "source": "https://www.dealabs.com/magazine/wp-content/uploads/2023/05/google-pixel-7a-blanc.webp",
+        "alt": "Google Pixel 7a official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 7a",
@@ -1030,12 +1030,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-7-pro.png",
-        "source": "https://store.google.com/product/pixel-7-pro",
-        "alt": "Google Pixel 7 Pro official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-7-pro.webp",
+        "source": "https://d2e6ccujb3mkqf.cloudfront.net/28490f42-bed1-4c33-aea2-47729331ef9b-1_a43b3386-cc21-4f8b-adeb-8569ef4835be.jpg",
+        "alt": "Google Pixel 7 Pro official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 7 Pro",
@@ -1084,12 +1084,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://lh3.googleusercontent.com/google-pixel-7.png",
-        "source": "https://store.google.com/product/pixel-7",
-        "alt": "Google Pixel 7 official technical reference",
-        "attribution": "Product specifications and photography © Google",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-google-google-pixel-7.webp",
+        "source": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2023/05/google-pixel-7.png",
+        "alt": "Google Pixel 7 official luxury photography",
+        "attribution": "Product photography © Google",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Pixel 7",
@@ -1138,12 +1138,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-12.png",
-        "source": "https://www.oneplus.com/global/12",
-        "alt": "OnePlus OnePlus 12 official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-12.webp",
+        "source": "https://www.digitaltrends.com/wp-content/uploads/2024/06/OnePlus-12-Glacial-White-against-box.jpg",
+        "alt": "OnePlus OnePlus 12 official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus 12",
@@ -1192,12 +1192,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-12r.png",
-        "source": "https://www.oneplus.com/global/12r",
-        "alt": "OnePlus OnePlus 12R official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-12r.webp",
+        "source": "https://static.cnbetacdn.com/article/2023/0721/77cd861ea099b18.png",
+        "alt": "OnePlus OnePlus 12R official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus 12R",
@@ -1246,12 +1246,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-open.png",
-        "source": "https://www.oneplus.com/global/open",
-        "alt": "OnePlus OnePlus Open official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-open.webp",
+        "source": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2023/10/oneplus-open.jpg",
+        "alt": "OnePlus OnePlus Open official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus Open",
@@ -1300,12 +1300,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-nord-4.png",
-        "source": "https://www.oneplus.com/global/nord-4",
-        "alt": "OnePlus OnePlus Nord 4 official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-nord-4.webp",
+        "source": "https://image01-eu.oneplus.net/media/202407/09/64d7f106899b3244dec3d4da7c443ba8.png?x-amz-process=image/format,webp/quality,Q_80",
+        "alt": "OnePlus OnePlus Nord 4 official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus Nord 4",
@@ -1354,12 +1354,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-nord-ce4.png",
-        "source": "https://www.oneplus.com/global/nord-ce4",
-        "alt": "OnePlus OnePlus Nord CE4 official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-nord-ce4.webp",
+        "source": "https://www.mymobileindia.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-21-at-4.12.07-PM.jpeg",
+        "alt": "OnePlus OnePlus Nord CE4 official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus Nord CE4",
@@ -1408,12 +1408,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-nord-ce4-lite.png",
-        "source": "https://www.oneplus.com/global/nord-ce4-lite",
-        "alt": "OnePlus OnePlus Nord CE4 Lite official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-nord-ce4-lite.webp",
+        "source": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-nord-ce4-lite-intl-2.jpg",
+        "alt": "OnePlus OnePlus Nord CE4 Lite official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus Nord CE4 Lite",
@@ -1462,12 +1462,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-11.png",
-        "source": "https://www.oneplus.com/global/11",
-        "alt": "OnePlus OnePlus 11 official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-11.webp",
+        "source": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2022/12/leaked-oneplus-11-official-render-on-white-background-1.jpg?q=50&amp;fit=crop&amp;w=750&amp;dpr=1.5",
+        "alt": "OnePlus OnePlus 11 official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus 11",
@@ -1516,12 +1516,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-11r.png",
-        "source": "https://www.oneplus.com/global/11r",
-        "alt": "OnePlus OnePlus 11R official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-11r.webp",
+        "source": "https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202302/02/kjgeQwHFysCxzQBY.png?x-amz-process=image/format,webp/quality,Q_80",
+        "alt": "OnePlus OnePlus 11R official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus 11R",
@@ -1570,12 +1570,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-10-pro.png",
-        "source": "https://www.oneplus.com/global/10-pro",
-        "alt": "OnePlus OnePlus 10 Pro official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-10-pro.webp",
+        "source": "https://sota.store/image/cache/catalog/Oneplus/oneplus-10-pro-wht-01-1600x1600.webp",
+        "alt": "OnePlus OnePlus 10 Pro official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus 10 Pro",
@@ -1624,12 +1624,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.oneplus.net/shop/oneplus-10t.png",
-        "source": "https://www.oneplus.com/global/10t",
-        "alt": "OnePlus OnePlus 10T official technical reference",
-        "attribution": "Product specifications and photography © OnePlus",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-oneplus-oneplus-10t.webp",
+        "source": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2022/06/Green-OnePlus-10T-leaked-render-3.jpg?q=50&amp;fit=contain&amp;w=1200&amp;h=800&amp;dpr=1.5",
+        "alt": "OnePlus OnePlus 10T official luxury photography",
+        "attribution": "Product photography © OnePlus",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "OnePlus 10T",
@@ -1678,12 +1678,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-14-ultra.png",
-        "source": "https://www.mi.com/global/product/14-ultra",
-        "alt": "Xiaomi Xiaomi 14 Ultra official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-14-ultra.webp",
+        "source": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_137560106/fee_786_587_png",
+        "alt": "Xiaomi Xiaomi 14 Ultra official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xiaomi 14 Ultra",
@@ -1732,12 +1732,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-14.png",
-        "source": "https://www.mi.com/global/product/14",
-        "alt": "Xiaomi Xiaomi 14 official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-14.webp",
+        "source": "https://www.dxomark.com/wp-content/uploads/medias/post-181351/Xiaomi-Redmi-Note-14-Pro-Plus-5G-_Featured-image-packshot-review-2-1024x691.jpg",
+        "alt": "Xiaomi Xiaomi 14 official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xiaomi 14",
@@ -1786,12 +1786,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-14-civi.png",
-        "source": "https://www.mi.com/global/product/14-civi",
-        "alt": "Xiaomi Xiaomi 14 CIVI official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-14-civi.webp",
+        "source": "https://cdn1.smartprix.com/rx-iZPqhqmkc-w280-h280/xiaomi-14-civi-limit.webp",
+        "alt": "Xiaomi Xiaomi 14 CIVI official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xiaomi 14 CIVI",
@@ -1840,12 +1840,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-13-pro.png",
-        "source": "https://www.mi.com/global/product/13-pro",
-        "alt": "Xiaomi Xiaomi 13 Pro official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-13-pro.webp",
+        "source": "https://media.ldlc.com/r1600/ld/products/00/06/01/65/LD0006016539.jpg",
+        "alt": "Xiaomi Xiaomi 13 Pro official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xiaomi 13 Pro",
@@ -1894,12 +1894,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-redmi-note-13-pro-plus.png",
-        "source": "https://www.mi.com/global/product/redmi-note-13-pro-plus",
-        "alt": "Xiaomi Redmi Note 13 Pro+ official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-redmi-note-13-pro-plus.webp",
+        "source": "https://www.ourfriday.co.uk/image/cache/catalog/Samsung/xiaomi-redmi-note-13-pro-plus-moonlight-white-1-1000x1000h.png",
+        "alt": "Xiaomi Redmi Note 13 Pro+ official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Redmi Note 13 Pro+",
@@ -1948,12 +1948,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-redmi-note-13-pro.png",
-        "source": "https://www.mi.com/global/product/redmi-note-13-pro",
-        "alt": "Xiaomi Redmi Note 13 Pro official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-redmi-note-13-pro.webp",
+        "source": "https://www.ourfriday.co.uk/image/cache/catalog/Samsung/xiaomi-redmi-note-13-pro-plus-moonlight-white-1-1000x1000h.png",
+        "alt": "Xiaomi Redmi Note 13 Pro official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Redmi Note 13 Pro",
@@ -2002,12 +2002,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-redmi-note-13.png",
-        "source": "https://www.mi.com/global/product/redmi-note-13",
-        "alt": "Xiaomi Redmi Note 13 5G official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-redmi-note-13.webp",
+        "source": "https://www.mistermobile.com.sg/wp-content/uploads/2024/01/Xiaomi-Redmi-Note-13-5G-Arctic-White-1.png",
+        "alt": "Xiaomi Redmi Note 13 5G official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Redmi Note 13 5G",
@@ -2056,12 +2056,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-redmi-13c.png",
-        "source": "https://www.mi.com/global/product/redmi-13c",
-        "alt": "Xiaomi Redmi 13C 5G official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-redmi-13c.webp",
+        "source": "https://welectronics.com/images/stories/virtuemart/product/XiaomiRedmi13Cwht1.jpg",
+        "alt": "Xiaomi Redmi 13C 5G official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Redmi 13C 5G",
@@ -2110,12 +2110,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-poco-f6-pro.png",
-        "source": "https://www.mi.com/global/product/poco-f6-pro",
-        "alt": "Xiaomi POCO F6 Pro official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-poco-f6-pro.webp",
+        "source": "https://m.media-amazon.com/images/I/61gDoLAo7qL._AC_.jpg",
+        "alt": "Xiaomi POCO F6 Pro official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "POCO F6 Pro",
@@ -2164,12 +2164,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-poco-x6-pro.png",
-        "source": "https://www.mi.com/global/product/poco-x6-pro",
-        "alt": "Xiaomi POCO X6 Pro official technical reference",
-        "attribution": "Product specifications and photography © Xiaomi",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-xiaomi-xiaomi-poco-x6-pro.webp",
+        "source": "https://www.powerplanetonline.com/cdnassets/xiaomi_poco_x6_5g_blanco_01_l.jpg",
+        "alt": "Xiaomi POCO X6 Pro official luxury photography",
+        "attribution": "Product photography © Xiaomi",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "POCO X6 Pro",
@@ -2218,12 +2218,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-edge-50-ultra.png",
-        "source": "https://www.motorola.com/us/edge-50-ultra",
-        "alt": "Motorola Edge 50 Ultra official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-edge-50-ultra.webp",
+        "source": "https://files.tecnoblog.net/wp-content/uploads/2025/02/Edge-50-Ultra-Wood.png",
+        "alt": "Motorola Edge 50 Ultra official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Edge 50 Ultra",
@@ -2272,12 +2272,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-edge-50-pro.png",
-        "source": "https://www.motorola.com/us/edge-50-pro",
-        "alt": "Motorola Edge 50 Pro official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-edge-50-pro.webp",
+        "source": "https://www.renderhub.com/rever-art/motorola-edge-50-pro-white/motorola-edge-50-pro-white-02.jpg?1713336749",
+        "alt": "Motorola Edge 50 Pro official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Edge 50 Pro",
@@ -2326,12 +2326,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-edge-50-fusion.png",
-        "source": "https://www.motorola.com/us/edge-50-fusion",
-        "alt": "Motorola Edge 50 Fusion official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-edge-50-fusion.webp",
+        "source": "https://m.media-amazon.com/images/I/71rvJzDrcrL.jpg",
+        "alt": "Motorola Edge 50 Fusion official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Edge 50 Fusion",
@@ -2380,12 +2380,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-razr-50-ultra.png",
-        "source": "https://www.motorola.com/us/razr-50-ultra",
-        "alt": "Motorola Razr 50 Ultra official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-razr-50-ultra.webp",
+        "source": "https://www.softbank.jp/mobile/set/data/support/manual/img/shared/motorola-razr-50-ultra.png",
+        "alt": "Motorola Razr 50 Ultra official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Razr 50 Ultra",
@@ -2434,12 +2434,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-razr-50.png",
-        "source": "https://www.motorola.com/us/razr-50",
-        "alt": "Motorola Razr 50 official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-razr-50.webp",
+        "source": "https://www.gizmochina.com/wp-content/uploads/2024/10/Screenshot-2024-11-01-040611-1-e1730414533737.png",
+        "alt": "Motorola Razr 50 official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Razr 50",
@@ -2488,12 +2488,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-g85.png",
-        "source": "https://www.motorola.com/us/g85",
-        "alt": "Motorola Moto G85 5G official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-g85.webp",
+        "source": "https://www.avcesar.com/source/actualites/00/00/A8/B2/motog85grischarbon-3d_greyBG.jpg",
+        "alt": "Motorola Moto G85 5G official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Moto G85 5G",
@@ -2542,12 +2542,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-g64.png",
-        "source": "https://www.motorola.com/us/g64",
-        "alt": "Motorola Moto G64 5G official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-g64.webp",
+        "source": "https://m.media-amazon.com/images/I/711mPymsOQL._AC_.jpg",
+        "alt": "Motorola Moto G64 5G official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Moto G64 5G",
@@ -2596,12 +2596,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-edge-40-neo.png",
-        "source": "https://www.motorola.com/us/edge-40-neo",
-        "alt": "Motorola Edge 40 Neo official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-edge-40-neo.webp",
+        "source": "https://cdn.kalvo.com/uploads/img/gallery/55337-motorola-edge-40-neo-3.jpg",
+        "alt": "Motorola Edge 40 Neo official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Edge 40 Neo",
@@ -2650,12 +2650,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-g54.png",
-        "source": "https://www.motorola.com/us/g54",
-        "alt": "Motorola Moto G54 5G official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-g54.webp",
+        "source": "https://d25-a.sdn.cz/d_25/c_img_QJ_H1/yV3pq5.jpeg",
+        "alt": "Motorola Moto G54 5G official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Moto G54 5G",
@@ -2704,12 +2704,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-thinkphone.png",
-        "source": "https://www.motorola.com/us/thinkphone",
-        "alt": "Motorola ThinkPhone by Motorola official technical reference",
-        "attribution": "Product specifications and photography © Motorola",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-motorola-moto-thinkphone.webp",
+        "source": "https://static1.xdaimages.com/wordpress/wp-content/uploads/2023/01/lenovo-thinkphone-by-motorola-from-all-angles-on-white-background.jpg",
+        "alt": "Motorola ThinkPhone by Motorola official luxury photography",
+        "attribution": "Product photography © Motorola",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "ThinkPhone by Motorola",
@@ -2758,12 +2758,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.sony.com/image/sony-xperia-1-vi.png",
-        "source": "https://electronics.sony.com/mobile/c/xperia-1-vi",
-        "alt": "Sony Xperia 1 VI official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-sony-sony-xperia-1-vi.webp",
+        "source": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-vi-1.jpg",
+        "alt": "Sony Xperia 1 VI official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xperia 1 VI",
@@ -2812,12 +2812,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.sony.com/image/sony-xperia-10-vi.png",
-        "source": "https://electronics.sony.com/mobile/c/xperia-10-vi",
-        "alt": "Sony Xperia 10 VI official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-sony-sony-xperia-10-vi.webp",
+        "source": "https://media.power-cdn.net/images/h-78b311cec348bd86cc1f82a3f737d889/products/3269612/3269612_9_600x600_t_g.webp",
+        "alt": "Sony Xperia 10 VI official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xperia 10 VI",
@@ -2866,12 +2866,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.sony.com/image/sony-xperia-1-v.png",
-        "source": "https://electronics.sony.com/mobile/c/xperia-1-v",
-        "alt": "Sony Xperia 1 V official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-sony-sony-xperia-1-v.webp",
+        "source": "https://m.media-amazon.com/images/I/91TDYB7rxEL._AC_SL1500_.jpg",
+        "alt": "Sony Xperia 1 V official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xperia 1 V",
@@ -2920,12 +2920,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.sony.com/image/sony-xperia-5-v.png",
-        "source": "https://electronics.sony.com/mobile/c/xperia-5-v",
-        "alt": "Sony Xperia 5 V official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-sony-sony-xperia-5-v.webp",
+        "source": "https://cdn.renderhub.com/rever-art/sony-xperia-5-v-white/sony-xperia-5-v-white-02.jpg",
+        "alt": "Sony Xperia 5 V official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xperia 5 V",
@@ -2974,12 +2974,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.sony.com/image/sony-xperia-10-v.png",
-        "source": "https://electronics.sony.com/mobile/c/xperia-10-v",
-        "alt": "Sony Xperia 10 V official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-sony-sony-xperia-10-v.webp",
+        "source": "https://cdn.kalvo.com/uploads/img/gallery/51593-sony-xperia-10-v-5.jpg",
+        "alt": "Sony Xperia 10 V official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xperia 10 V",
@@ -3028,12 +3028,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.sony.com/image/sony-xperia-pro-i.png",
-        "source": "https://electronics.sony.com/mobile/c/xperia-pro-i",
-        "alt": "Sony Xperia PRO-I official technical reference",
-        "attribution": "Product specifications and photography © Sony",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-sony-sony-xperia-pro-i.webp",
+        "source": "https://m.media-amazon.com/images/I/81YofuHBMZL._AC_.jpg",
+        "alt": "Sony Xperia PRO-I official luxury photography",
+        "attribution": "Product photography © Sony",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Xperia PRO-I",
@@ -3082,12 +3082,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/nothing-phone-2.png",
-        "source": "https://nothing.tech/products/phone-2",
-        "alt": "Nothing Phone (2) official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-nothing-nothing-phone-2.webp",
+        "source": "https://static.alaneesqatar.qa/2023/08/Nothing-Phone-2-12GB-512GB-Dark-Grey-1-1.png",
+        "alt": "Nothing Nothing Phone (2)",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Phone (2)",
@@ -3136,12 +3136,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/nothing-phone-2a-plus.png",
-        "source": "https://nothing.tech/products/phone-2a-plus",
-        "alt": "Nothing Phone (2a) Plus official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-nothing-nothing-phone-2a-plus.webp",
+        "source": "https://www.pakmobizone.pk/wp-content/uploads/2025/11/Nothing-Phone-3-White-2.png",
+        "alt": "Nothing Phone (2a) Plus official luxury photography",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Phone (2a) Plus",
@@ -3190,12 +3190,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/nothing-phone-2a.png",
-        "source": "https://nothing.tech/products/phone-2a",
-        "alt": "Nothing Phone (2a) official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-nothing-nothing-phone-2a.webp",
+        "source": "https://mgv.com.ar/wp-content/uploads/2025/08/NOTHING-PHONE-3-BLANCO.png",
+        "alt": "Nothing Phone (2a) official luxury photography",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Phone (2a)",
@@ -3244,12 +3244,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/nothing-phone-1.png",
-        "source": "https://nothing.tech/products/phone-1",
-        "alt": "Nothing Phone (1) official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-nothing-nothing-phone-1.webp",
+        "source": "https://mgv.com.ar/wp-content/uploads/2025/08/NOTHING-PHONE-3-BLANCO.png",
+        "alt": "Nothing Phone (1) official luxury photography",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Phone (1)",
@@ -3298,12 +3298,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://nothing.tech/cdn/shop/files/nothing-cmf-phone-1.png",
-        "source": "https://nothing.tech/products/cmf-phone-1",
-        "alt": "Nothing CMF Phone 1 official technical reference",
-        "attribution": "Product specifications and photography © Nothing",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-nothing-nothing-cmf-phone-1.webp",
+        "source": "https://m.media-amazon.com/images/I/41lMtIwI5tL._SL500_.jpg",
+        "alt": "Nothing CMF Phone 1 official luxury photography",
+        "attribution": "Product photography © Nothing",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "CMF Phone 1",
@@ -3352,12 +3352,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.vivo.com/images/in/vivo-x100-pro.png",
-        "source": "https://www.vivo.com/in/products/x100-pro",
-        "alt": "vivo X100 Pro official technical reference",
-        "attribution": "Product specifications and photography © vivo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-vivo-vivo-x100-pro.webp",
+        "source": "https://hitechcentury.com/wp-content/uploads/2024/04/vivo-X100-Pro-Moonlight-White-cover-1024x1024.jpeg",
+        "alt": "vivo X100 Pro official luxury photography",
+        "attribution": "Product photography © vivo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "X100 Pro",
@@ -3406,12 +3406,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.vivo.com/images/in/vivo-x100.png",
-        "source": "https://www.vivo.com/in/products/x100",
-        "alt": "vivo X100 official technical reference",
-        "attribution": "Product specifications and photography © vivo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-vivo-vivo-x100.webp",
+        "source": "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1708919754151/a069089d39d33ff0f9846a90f9dcef94.png",
+        "alt": "vivo X100 official luxury photography",
+        "attribution": "Product photography © vivo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "X100",
@@ -3460,12 +3460,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.vivo.com/images/in/vivo-x-fold3-pro.png",
-        "source": "https://www.vivo.com/in/products/x-fold3-pro",
-        "alt": "vivo X Fold3 Pro official technical reference",
-        "attribution": "Product specifications and photography © vivo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-vivo-vivo-x-fold3-pro.webp",
+        "source": "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1717559455590/50f4fe5287dfa7c4b0cafeef4dc1e931.png",
+        "alt": "vivo X Fold3 Pro official luxury photography",
+        "attribution": "Product photography © vivo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "X Fold3 Pro",
@@ -3514,12 +3514,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.vivo.com/images/in/vivo-v40-pro.png",
-        "source": "https://www.vivo.com/in/products/v40-pro",
-        "alt": "vivo V40 Pro official technical reference",
-        "attribution": "Product specifications and photography © vivo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-vivo-vivo-v40-pro.webp",
+        "source": "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1723118874894/0681a72f8694473dcd3953262bb5cdb0.png",
+        "alt": "vivo V40 Pro official luxury photography",
+        "attribution": "Product photography © vivo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "V40 Pro",
@@ -3568,12 +3568,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.vivo.com/images/in/vivo-v40.png",
-        "source": "https://www.vivo.com/in/products/v40",
-        "alt": "vivo V40 official technical reference",
-        "attribution": "Product specifications and photography © vivo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-vivo-vivo-v40.webp",
+        "source": "https://eu-exstatic-vivofs.vivo.com/8Xa6evfY85lu15Pb/1718369679777/4e4515aabac37e73135c995191c906ac.jpg",
+        "alt": "vivo V40 official luxury photography",
+        "attribution": "Product photography © vivo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "V40",
@@ -3622,12 +3622,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.vivo.com/images/in/vivo-t3-ultra.png",
-        "source": "https://www.vivo.com/in/products/t3-ultra",
-        "alt": "vivo T3 Ultra official technical reference",
-        "attribution": "Product specifications and photography © vivo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-vivo-vivo-t3-ultra.webp",
+        "source": "https://mjbtechtips.com/wp-content/uploads/2024/09/Vivo-T3-Ultra-Design-Display.webp",
+        "alt": "vivo T3 Ultra official luxury photography",
+        "attribution": "Product photography © vivo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "T3 Ultra",
@@ -3676,12 +3676,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.vivo.com/images/in/vivo-t3-pro.png",
-        "source": "https://www.vivo.com/in/products/t3-pro",
-        "alt": "vivo T3 Pro official technical reference",
-        "attribution": "Product specifications and photography © vivo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-vivo-vivo-t3-pro.webp",
+        "source": "https://www.notebookcheck.net/fileadmin/_processed_/2/2/csm_Vivo_T3_Pro_1e2ac63b00.jpg",
+        "alt": "vivo T3 Pro official luxury photography",
+        "attribution": "Product photography © vivo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "T3 Pro",
@@ -3730,12 +3730,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://www.vivo.com/images/in/vivo-y200-pro.png",
-        "source": "https://www.vivo.com/in/products/y200-pro",
-        "alt": "vivo Y200 Pro official technical reference",
-        "attribution": "Product specifications and photography © vivo",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-vivo-vivo-y200-pro.webp",
+        "source": "https://suprememobiles.in/cdn/shop/files/VivoY200Pro5G-5000MAHBatteryCapacity.png?height=2048&amp;v=1718016451&amp;width=2048",
+        "alt": "vivo Y200 Pro official luxury photography",
+        "attribution": "Product photography © vivo",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Y200 Pro",
@@ -3784,12 +3784,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.realme.net/general/realme-gt-6.png",
-        "source": "https://www.realme.com/in/gt-6",
-        "alt": "realme GT 6 official technical reference",
-        "attribution": "Product specifications and photography © realme",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-realme-realme-gt-6.webp",
+        "source": "https://cdn.kalvo.com/uploads/img/gallery/62509-realme-gt-6-2.jpg",
+        "alt": "realme GT 6 official luxury photography",
+        "attribution": "Product photography © realme",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "GT 6",
@@ -3838,12 +3838,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.realme.net/general/realme-gt-6t.png",
-        "source": "https://www.realme.com/in/gt-6t",
-        "alt": "realme GT 6T official technical reference",
-        "attribution": "Product specifications and photography © realme",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-realme-realme-gt-6t.webp",
+        "source": "https://app-area.riointernational.com.bd/productImages/G85961735383391.png",
+        "alt": "realme GT 6T official luxury photography",
+        "attribution": "Product photography © realme",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "GT 6T",
@@ -3892,12 +3892,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.realme.net/general/realme-13-pro-plus.png",
-        "source": "https://www.realme.com/in/13-pro-plus",
-        "alt": "realme 13 Pro+ official technical reference",
-        "attribution": "Product specifications and photography © realme",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-realme-realme-13-pro-plus.webp",
+        "source": "https://image01.realme.net/general/20240905/1725501844884c6e3765bc8894106ac0901c57f370238.png",
+        "alt": "realme 13 Pro+ official luxury photography",
+        "attribution": "Product photography © realme",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "13 Pro+",
@@ -3946,12 +3946,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.realme.net/general/realme-13-pro.png",
-        "source": "https://www.realme.com/in/13-pro",
-        "alt": "realme 13 Pro official technical reference",
-        "attribution": "Product specifications and photography © realme",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-realme-realme-13-pro.webp",
+        "source": "https://image01.realme.net/general/20240905/1725501844884c6e3765bc8894106ac0901c57f370238.png",
+        "alt": "realme 13 Pro official luxury photography",
+        "attribution": "Product photography © realme",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "13 Pro",
@@ -4000,12 +4000,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.realme.net/general/realme-12-pro-plus.png",
-        "source": "https://www.realme.com/in/12-pro-plus",
-        "alt": "realme 12 Pro+ official technical reference",
-        "attribution": "Product specifications and photography © realme",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-realme-realme-12-pro-plus.webp",
+        "source": "https://image01.realme.net/general/20240306/170969721620355d4cb94d6df459094e1f97ffa3689e7.png",
+        "alt": "realme 12 Pro+ official luxury photography",
+        "attribution": "Product photography © realme",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "12 Pro+",
@@ -4054,12 +4054,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.realme.net/general/realme-12-pro.png",
-        "source": "https://www.realme.com/in/12-pro",
-        "alt": "realme 12 Pro official technical reference",
-        "attribution": "Product specifications and photography © realme",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-realme-realme-12-pro.webp",
+        "source": "https://image01.realme.net/general/20240306/170969721620355d4cb94d6df459094e1f97ffa3689e7.png",
+        "alt": "realme 12 Pro official luxury photography",
+        "attribution": "Product photography © realme",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "12 Pro",
@@ -4108,12 +4108,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.realme.net/general/realme-narzo-70-pro.png",
-        "source": "https://www.realme.com/in/narzo-70-pro",
-        "alt": "realme Narzo 70 Pro official technical reference",
-        "attribution": "Product specifications and photography © realme",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-realme-realme-narzo-70-pro.webp",
+        "source": "https://image01.realme.net/general/20250812/175499487437114b2e02e478c4744ba44d9ee7d0b48ef.png?width=1080&amp;height=1080&amp;size=949071",
+        "alt": "realme Narzo 70 Pro official luxury photography",
+        "attribution": "Product photography © realme",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Narzo 70 Pro",
@@ -4162,12 +4162,12 @@
         "refreshHz": 120
       },
       "media": {
-        "url": "https://image01.realme.net/general/realme-p1-pro.png",
-        "source": "https://www.realme.com/in/p1-pro",
-        "alt": "realme P1 Pro official technical reference",
-        "attribution": "Product specifications and photography © realme",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-realme-realme-p1-pro.webp",
+        "source": "https://image01.realme.net/general/20251104/176223337780100ac97bf683c4226845bb61f3f517cf7.png?width=1080&amp;height=1080&amp;size=751097",
+        "alt": "realme P1 Pro official luxury photography",
+        "attribution": "Product photography © realme",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "P1 Pro",
@@ -4216,12 +4216,12 @@
         "refreshHz": 165
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-phone-8-pro.png",
-        "source": "https://rog.asus.com/phones/rog-phone-8-pro",
-        "alt": "ASUS ROG Phone 8 Pro official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-asus-asus-rog-phone-8-pro.webp",
+        "source": "https://www.renderhub.com/frezzy/asus-rog-phone-8-white/asus-rog-phone-8-white.jpg",
+        "alt": "ASUS ROG Phone 8 Pro official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "ROG Phone 8 Pro",
@@ -4270,12 +4270,12 @@
         "refreshHz": 165
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-phone-8.png",
-        "source": "https://rog.asus.com/phones/rog-phone-8",
-        "alt": "ASUS ROG Phone 8 official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-asus-asus-rog-phone-8.webp",
+        "source": "https://www.renderhub.com/frezzy/asus-rog-phone-8-white/asus-rog-phone-8-white.jpg",
+        "alt": "ASUS ROG Phone 8 official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "ROG Phone 8",
@@ -4324,12 +4324,12 @@
         "refreshHz": 165
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-zenfone-11-ultra.png",
-        "source": "https://rog.asus.com/phones/zenfone-11-ultra",
-        "alt": "ASUS Zenfone 11 Ultra official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-asus-asus-zenfone-11-ultra.webp",
+        "source": "https://www.shanethegamer.com/wp-content/uploads/2024/05/ASUS-Zenfone-11-Ultra.jpg",
+        "alt": "ASUS Zenfone 11 Ultra official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Zenfone 11 Ultra",
@@ -4378,12 +4378,12 @@
         "refreshHz": 165
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-zenfone-10.png",
-        "source": "https://rog.asus.com/phones/zenfone-10",
-        "alt": "ASUS Zenfone 10 official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-asus-asus-zenfone-10.webp",
+        "source": "https://media.ldlc.com/r1600/ld/products/00/06/04/79/LD0006047967.jpg",
+        "alt": "ASUS Zenfone 10 official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "Zenfone 10",
@@ -4432,12 +4432,12 @@
         "refreshHz": 165
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-phone-7-ultimate.png",
-        "source": "https://rog.asus.com/phones/rog-phone-7-ultimate",
-        "alt": "ASUS ROG Phone 7 Ultimate official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-prod-phones-asus-asus-rog-phone-7-ultimate.webp",
+        "source": "https://media-cdn.bnn.in.th/307698/Asus-ROG-Phone-7-Ultimate-(16%2B512GB)-White-7-square_medium.jpg",
+        "alt": "ASUS ROG Phone 7 Ultimate official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "phones",
       "modelName": "ROG Phone 7 Ultimate",

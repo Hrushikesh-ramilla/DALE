@@ -60,12 +60,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://resource.logitech.com/image/logitech-mx-keys-s.png",
-        "source": "https://www.logitech.com/products/keyboards/mx-keys-s",
-        "alt": "Logitech MX Keys S official technical reference",
-        "attribution": "Product specifications and photography © Logitech",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-logitech-logitech-mx-keys-s.webp",
+        "source": "https://www.logitechclub.com/cdn/shop/files/MX-KEYS-S_1800x1800.png?v=1741860356",
+        "alt": "Logitech MX Keys S official luxury photography",
+        "attribution": "Product photography © Logitech",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "MX Keys S",
@@ -116,12 +116,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://resource.logitech.com/image/logitech-mx-mechanical.png",
-        "source": "https://www.logitech.com/products/keyboards/mx-mechanical",
-        "alt": "Logitech MX Mechanical official technical reference",
-        "attribution": "Product specifications and photography © Logitech",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-logitech-logitech-mx-mechanical.webp",
+        "source": "https://retest.com.pl/wp-content/uploads/2024/01/IMG_5759-scaled.jpg",
+        "alt": "Logitech MX Mechanical official luxury photography",
+        "attribution": "Product photography © Logitech",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "MX Mechanical",
@@ -172,12 +172,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://resource.logitech.com/image/logitech-mx-mechanical-mini.png",
-        "source": "https://www.logitech.com/products/keyboards/mx-mechanical-mini",
-        "alt": "Logitech MX Mechanical Mini official technical reference",
-        "attribution": "Product specifications and photography © Logitech",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-logitech-logitech-mx-mechanical-mini.webp",
+        "source": "https://retest.com.pl/wp-content/uploads/2024/01/IMG_5759-scaled.jpg",
+        "alt": "Logitech MX Mechanical Mini official luxury photography",
+        "attribution": "Product photography © Logitech",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "MX Mechanical Mini",
@@ -228,12 +228,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://resource.logitech.com/image/logitech-g915-lightspeed.png",
-        "source": "https://www.logitech.com/products/keyboards/g915-lightspeed",
-        "alt": "Logitech G915 LIGHTSPEED official technical reference",
-        "attribution": "Product specifications and photography © Logitech",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-logitech-logitech-g915-lightspeed.webp",
+        "source": "https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/120e6c61c32b4afea05b9eaa5e2bc3f0_Original.jpg",
+        "alt": "Logitech G915 LIGHTSPEED official luxury photography",
+        "attribution": "Product photography © Logitech",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "G915 LIGHTSPEED",
@@ -284,12 +284,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://resource.logitech.com/image/logitech-g-pro-x-tkl.png",
-        "source": "https://www.logitech.com/products/keyboards/g-pro-x-tkl",
-        "alt": "Logitech G PRO X TKL LIGHTSPEED official technical reference",
-        "attribution": "Product specifications and photography © Logitech",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-logitech-logitech-g-pro-x-tkl.webp",
+        "source": "https://images.tokopedia.net/img/cache/700/VqbcmM/2023/8/23/6e1f7e33-1170-49b4-bbf8-a1568936971b.jpg",
+        "alt": "Logitech G PRO X TKL LIGHTSPEED official luxury photography",
+        "attribution": "Product photography © Logitech",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "G PRO X TKL LIGHTSPEED",
@@ -340,12 +340,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.keychron.com/cdn/shop/products/keychron-q1-pro.png",
-        "source": "https://www.keychron.com/products/q1-pro",
-        "alt": "Keychron Q1 Pro official technical reference",
-        "attribution": "Product specifications and photography © Keychron",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-keychron-keychron-q1-pro.webp",
+        "source": "https://cdn.shopify.com/s/files/1/0059/0630/1017/products/Keychron-Q1-Pro-QMK-VIA-wireless-custom-mechanical-keyboard-knob-75-percent-layout-full-aluminum-grey-frame-for-Mac-Windows-Linux-with-RGB-backlight-hot-swappable-K-Pro-switch-red_1800x1800.jpg?v=1673922200",
+        "alt": "Keychron Q1 Pro official luxury photography",
+        "attribution": "Product photography © Keychron",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Q1 Pro",
@@ -396,12 +396,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.keychron.com/cdn/shop/products/keychron-q2-pro.png",
-        "source": "https://www.keychron.com/products/q2-pro",
-        "alt": "Keychron Q2 Pro official technical reference",
-        "attribution": "Product specifications and photography © Keychron",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-keychron-keychron-q2-pro.webp",
+        "source": "https://keychron.de/cdn/shop/files/Keychron-Q2-Pro-QMK-VIA-wireless-custom-mechanical-keyboard-65-percent-layout-full-aluminum-white-frame-for-Mac-WIndows-Linux-with-RGB-backlight-and-hot-swappable-K-Pro-switch-brown_1.jpg?v=1682948708",
+        "alt": "Keychron Q2 Pro official luxury photography",
+        "attribution": "Product photography © Keychron",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Q2 Pro",
@@ -452,12 +452,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.keychron.com/cdn/shop/products/keychron-q3-pro.png",
-        "source": "https://www.keychron.com/products/q3-pro",
-        "alt": "Keychron Q3 Pro official technical reference",
-        "attribution": "Product specifications and photography © Keychron",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-keychron-keychron-q3-pro.webp",
+        "source": "https://cdn.shopify.com/s/files/1/0591/6318/1193/files/Keychron-Q3-Pro-QMK-Wireless-Mechanical-Keyboard-Special-Edition-Shell-White-2.jpg?v=1684049917",
+        "alt": "Keychron Q3 Pro official luxury photography",
+        "attribution": "Product photography © Keychron",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Q3 Pro",
@@ -508,12 +508,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.keychron.com/cdn/shop/products/keychron-k2-pro.png",
-        "source": "https://www.keychron.com/products/k2-pro",
-        "alt": "Keychron K2 Pro official technical reference",
-        "attribution": "Product specifications and photography © Keychron",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-keychron-keychron-k2-pro.webp",
+        "source": "https://numberonestore.net/image/cache/catalog/PRODUCT/COMPUTER ACCESSOIRES/GAMING KEYBOARD/KEYCHRON/k2 pro black red switch/keychron-k2-pro-red-switches-white-backlight-48-keys-wireless-mechanical-keyboard-black (6)-1100x1100.jpg",
+        "alt": "Keychron K2 Pro official luxury photography",
+        "attribution": "Product photography © Keychron",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "K2 Pro",
@@ -564,12 +564,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.keychron.com/cdn/shop/products/keychron-k3-pro.png",
-        "source": "https://www.keychron.com/products/k3-pro",
-        "alt": "Keychron K3 Pro official technical reference",
-        "attribution": "Product specifications and photography © Keychron",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-keychron-keychron-k3-pro.webp",
+        "source": "https://keychron.ca/cdn/shop/products/Keychron-Silicone-Palm-Rest-for-K8_K8Pro_C1_C1Pro.jpg?v=1704522960",
+        "alt": "Keychron K3 Pro official luxury photography",
+        "attribution": "Product photography © Keychron",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "K3 Pro",
@@ -620,12 +620,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.keychron.com/cdn/shop/products/keychron-v1-max.png",
-        "source": "https://www.keychron.com/products/v1-max",
-        "alt": "Keychron V1 Max official technical reference",
-        "attribution": "Product specifications and photography © Keychron",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-keychron-keychron-v1-max.webp",
+        "source": "https://keychron.ca/cdn/shop/products/Keychron-Silicone-Palm-Rest-for-K10_C2_C2Pro.jpg?v=1704522960",
+        "alt": "Keychron V1 Max official luxury photography",
+        "attribution": "Product photography © Keychron",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "V1 Max",
@@ -676,12 +676,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.keychron.com/cdn/shop/products/keychron-lemokey-l3.png",
-        "source": "https://www.keychron.com/products/lemokey-l3",
-        "alt": "Keychron Lemokey L3 official technical reference",
-        "attribution": "Product specifications and photography © Keychron",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-keychron-keychron-lemokey-l3.webp",
+        "source": "https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Lemokey-L3-QMK-VIA-Wireless-Mechanical-Keyboard-Full-Metal.jpg?v=1690365749",
+        "alt": "Keychron Lemokey L3 official luxury photography",
+        "attribution": "Product photography © Keychron",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Lemokey L3",
@@ -730,12 +730,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-k100-rgb.png",
-        "source": "https://www.corsair.com/p/k100-rgb",
-        "alt": "Corsair K100 RGB official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-corsair-corsair-k100-rgb.webp",
+        "source": "https://d1q3zw97enxzq2.cloudfront.net/images/K100_RGB_01300bby.width-1500.format-webp.webp",
+        "alt": "Corsair K100 RGB official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "K100 RGB",
@@ -784,12 +784,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-k70-rgb-pro.png",
-        "source": "https://www.corsair.com/p/k70-rgb-pro",
-        "alt": "Corsair K70 RGB PRO official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-corsair-corsair-k70-rgb-pro.webp",
+        "source": "https://gzhls.at/i/52/92/2825292-n0.jpg?ogircp",
+        "alt": "Corsair K70 RGB PRO official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "K70 RGB PRO",
@@ -840,12 +840,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-k65-plus-wireless.png",
-        "source": "https://www.corsair.com/p/k65-plus-wireless",
-        "alt": "Corsair K65 PLUS WIRELESS official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-corsair-corsair-k65-plus-wireless.webp",
+        "source": "https://technoyard.com/wp-content/uploads/2024/05/Corsair-K65-PLUS-box1.jpg",
+        "alt": "Corsair K65 PLUS WIRELESS official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "K65 PLUS WIRELESS",
@@ -894,12 +894,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-k55-rgb-pro.png",
-        "source": "https://www.corsair.com/p/k55-rgb-pro",
-        "alt": "Corsair K55 RGB PRO official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-corsair-corsair-k55-rgb-pro.webp",
+        "source": "https://product.hstatic.net/1000333506/product/rgb-pro-config-gallery-k55-rgb-pro-27_d2281983f9bf42308901148caef30ce8_6879b3f7cedf4b569129e9a53226f8e1.png",
+        "alt": "Corsair K55 RGB PRO official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "K55 RGB PRO",
@@ -948,12 +948,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-k70-max-rgb.png",
-        "source": "https://www.corsair.com/p/k70-max-rgb",
-        "alt": "Corsair K70 MAX RGB official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-corsair-corsair-k70-max-rgb.webp",
+        "source": "https://ecommerce.datablitz.com.ph/cdn/shop/files/CH-910961G_07_1024x.jpg?v=1692261252",
+        "alt": "Corsair K70 MAX RGB official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "K70 MAX RGB",
@@ -1002,12 +1002,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://assets3.razerzone.com/images/razer-blackwidow-v4-pro.png",
-        "source": "https://www.razer.com/gaming-keyboards/blackwidow-v4-pro",
-        "alt": "Razer BlackWidow V4 Pro official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-razer-razer-blackwidow-v4-pro.webp",
+        "source": "https://m.media-amazon.com/images/I/81gLk7Lz4bL.jpg",
+        "alt": "Razer BlackWidow V4 Pro official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "BlackWidow V4 Pro",
@@ -1056,12 +1056,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://assets3.razerzone.com/images/razer-huntsman-v3-pro.png",
-        "source": "https://www.razer.com/gaming-keyboards/huntsman-v3-pro",
-        "alt": "Razer Huntsman V3 Pro official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-razer-razer-huntsman-v3-pro.webp",
+        "source": "https://cdn.shopify.com/s/files/1/0814/7284/8167/files/desktop-amazon-top-970x600_8e6df231-34b5-407f-a789-70c08cde8b70.jpg?v=1715845771",
+        "alt": "Razer Huntsman V3 Pro official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Huntsman V3 Pro",
@@ -1112,12 +1112,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://assets3.razerzone.com/images/razer-deathstalker-v2-pro.png",
-        "source": "https://www.razer.com/gaming-keyboards/deathstalker-v2-pro",
-        "alt": "Razer DeathStalker V2 Pro official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-razer-razer-deathstalker-v2-pro.webp",
+        "source": "https://cdn.shopify.com/s/files/1/0644/2975/2572/files/RZ-00398-N0_a1.jpg?v=1697182980",
+        "alt": "Razer DeathStalker V2 Pro official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "DeathStalker V2 Pro",
@@ -1166,12 +1166,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://assets3.razerzone.com/images/razer-blackwidow-v4-75.png",
-        "source": "https://www.razer.com/gaming-keyboards/blackwidow-v4-75",
-        "alt": "Razer BlackWidow V4 75% official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-razer-razer-blackwidow-v4-75.webp",
+        "source": "https://www.tncstore.vn/media/product/13224-ban-phim-co-razer-blackwidow-v4-75-phantom-white-edition-2.jpg",
+        "alt": "Razer BlackWidow V4 75% official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "BlackWidow V4 75%",
@@ -1220,12 +1220,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://assets3.razerzone.com/images/razer-ornata-v3.png",
-        "source": "https://www.razer.com/gaming-keyboards/ornata-v3",
-        "alt": "Razer Ornata V3 official technical reference",
-        "attribution": "Product specifications and photography © Razer",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-razer-razer-ornata-v3.webp",
+        "source": "https://cdn.comfy.ua/media/catalog/product/o/r/ornata_v3_x_ukr_001_1_.jpg",
+        "alt": "Razer Ornata V3 official luxury photography",
+        "attribution": "Product photography © Razer",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Ornata V3",
@@ -1274,12 +1274,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://media.steelseries.com/thumbs/catalogue/products/steelseries-apex-pro-tkl.png",
-        "source": "https://steelseries.com/gaming-keyboards/apex-pro-tkl",
-        "alt": "SteelSeries Apex Pro TKL official technical reference",
-        "attribution": "Product specifications and photography © SteelSeries",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-steelseries-steelseries-apex-pro-tkl.webp",
+        "source": "https://cdn.4games.pro/storage/products/01K09HSEG2DWTDFTX17EQ5TX7K.jpg",
+        "alt": "SteelSeries Apex Pro TKL official luxury photography",
+        "attribution": "Product photography © SteelSeries",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Apex Pro TKL",
@@ -1330,12 +1330,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://media.steelseries.com/thumbs/catalogue/products/steelseries-apex-pro-mini.png",
-        "source": "https://steelseries.com/gaming-keyboards/apex-pro-mini",
-        "alt": "SteelSeries Apex Pro Mini official technical reference",
-        "attribution": "Product specifications and photography © SteelSeries",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-steelseries-steelseries-apex-pro-mini.webp",
+        "source": "https://whatnext.pl/wp-content/uploads/2025/10/IMG_20251026_090108-4000x3003.jpg",
+        "alt": "SteelSeries Apex Pro Mini official luxury photography",
+        "attribution": "Product photography © SteelSeries",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Apex Pro Mini",
@@ -1384,12 +1384,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://media.steelseries.com/thumbs/catalogue/products/steelseries-apex-9-tkl.png",
-        "source": "https://steelseries.com/gaming-keyboards/apex-9-tkl",
-        "alt": "SteelSeries Apex 9 TKL official technical reference",
-        "attribution": "Product specifications and photography © SteelSeries",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-steelseries-steelseries-apex-9-tkl.webp",
+        "source": "https://down-id.img.susercontent.com/file/cc7114630db74e6a7f5156e2a3628a36",
+        "alt": "SteelSeries Apex 9 TKL official luxury photography",
+        "attribution": "Product photography © SteelSeries",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Apex 9 TKL",
@@ -1438,12 +1438,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://media.steelseries.com/thumbs/catalogue/products/steelseries-apex-3-tkl.png",
-        "source": "https://steelseries.com/gaming-keyboards/apex-3-tkl",
-        "alt": "SteelSeries Apex 3 TKL official technical reference",
-        "attribution": "Product specifications and photography © SteelSeries",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-steelseries-steelseries-apex-3-tkl.webp",
+        "source": "https://images-na.ssl-images-amazon.com/images/I/71UnL+fUeWL.jpg",
+        "alt": "SteelSeries Apex 3 TKL official luxury photography",
+        "attribution": "Product photography © SteelSeries",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Apex 3 TKL",
@@ -1494,12 +1494,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-azoth.png",
-        "source": "https://rog.asus.com/keyboards/rog-azoth",
-        "alt": "ASUS ROG ROG Azoth official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-asus-asus-rog-azoth.webp",
+        "source": "https://hyperpc.ae/images/catalog/accessories/keyboard/asus/rog-azoth-ar/asus-m701-rog-azoth-wht.jpg",
+        "alt": "ASUS ROG ROG Azoth official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "ROG Azoth",
@@ -1550,12 +1550,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-strix-scope-ii-96.png",
-        "source": "https://rog.asus.com/keyboards/rog-strix-scope-ii-96",
-        "alt": "ASUS ROG ROG Strix Scope II 96 official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-asus-asus-rog-strix-scope-ii-96.webp",
+        "source": "https://rbtechngames.com/wp-content/uploads/2025/02/rbtech_asus_rog_strix_scope_ii_96_rx_wireless_x902.png",
+        "alt": "ASUS ROG ROG Strix Scope II 96 official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "ROG Strix Scope II 96",
@@ -1606,12 +1606,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-falchion-rx.png",
-        "source": "https://rog.asus.com/keyboards/rog-falchion-rx",
-        "alt": "ASUS ROG ROG Falchion RX official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-asus-asus-rog-falchion-rx.webp",
+        "source": "https://www.jib.co.th/img_master/product/original/2024121815055872313_3.jpg",
+        "alt": "ASUS ROG ROG Falchion RX official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "ROG Falchion RX",
@@ -1662,12 +1662,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-claymore-ii.png",
-        "source": "https://rog.asus.com/keyboards/rog-claymore-ii",
-        "alt": "ASUS ROG ROG Claymore II official technical reference",
-        "attribution": "Product specifications and photography © ASUS",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-asus-asus-rog-claymore-ii.webp",
+        "source": "https://enterbox.tw/wp-content/uploads/2023/06/02-3-scaled.jpg",
+        "alt": "ASUS ROG ROG Claymore II official luxury photography",
+        "attribution": "Product photography © ASUS",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "ROG Claymore II",
@@ -1716,12 +1716,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://row.hyperx.com/cdn/shop/products/hyperx-alloy-origins.png",
-        "source": "https://hyperx.com/products/alloy-origins",
-        "alt": "HyperX Alloy Origins official technical reference",
-        "attribution": "Product specifications and photography © HyperX",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-hyperx-hyperx-alloy-origins.webp",
+        "source": "https://au.hyperx.com/cdn/shop/articles/hx-press-alloy-origins-1000x611.png?v=1685586698",
+        "alt": "HyperX Alloy Origins official luxury photography",
+        "attribution": "Product photography © HyperX",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Alloy Origins",
@@ -1770,12 +1770,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://row.hyperx.com/cdn/shop/products/hyperx-alloy-origins-60.png",
-        "source": "https://hyperx.com/products/alloy-origins-60",
-        "alt": "HyperX Alloy Origins 60 official technical reference",
-        "attribution": "Product specifications and photography © HyperX",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-hyperx-hyperx-alloy-origins-60.webp",
+        "source": "https://down-sg.img.susercontent.com/file/ph-11134207-7qukw-linutgq9k9vq4f",
+        "alt": "HyperX Alloy Origins 60 official luxury photography",
+        "attribution": "Product photography © HyperX",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Alloy Origins 60",
@@ -1824,12 +1824,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://row.hyperx.com/cdn/shop/products/hyperx-alloy-rise.png",
-        "source": "https://hyperx.com/products/alloy-rise",
-        "alt": "HyperX Alloy Rise official technical reference",
-        "attribution": "Product specifications and photography © HyperX",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-hyperx-hyperx-alloy-rise.webp",
+        "source": "https://uk.hyperx.com/cdn/shop/files/HyperX_Bundle_-_Alloy_Rise_75_Wireless_Keyboard_Pulsefire_Haste_2_Wireless_White_1200x.jpg?v=1731485440",
+        "alt": "HyperX Alloy Rise official luxury photography",
+        "attribution": "Product photography © HyperX",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Alloy Rise",
@@ -1878,12 +1878,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.duckychannel.com.tw/upload/brands/ducky-one-3-rgb.png",
-        "source": "https://www.duckychannel.com.tw/en/one-3-rgb",
-        "alt": "Ducky One 3 RGB official technical reference",
-        "attribution": "Product specifications and photography © Ducky",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-ducky-ducky-one-3-rgb.webp",
+        "source": "https://ducky.global/cdn/shop/files/one3-rgb_asset_product_b80-1.jpg?v=1741165140&amp;width=768",
+        "alt": "Ducky One 3 RGB official luxury photography",
+        "attribution": "Product photography © Ducky",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "One 3 RGB",
@@ -1932,12 +1932,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://www.duckychannel.com.tw/upload/brands/ducky-one-3-tkl.png",
-        "source": "https://www.duckychannel.com.tw/en/one-3-tkl",
-        "alt": "Ducky One 3 TKL official technical reference",
-        "attribution": "Product specifications and photography © Ducky",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-ducky-ducky-one-3-tkl.webp",
+        "source": "https://gzhls.at/i/28/22/2822822-n6.jpg",
+        "alt": "Ducky One 3 TKL official luxury photography",
+        "attribution": "Product photography © Ducky",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "One 3 TKL",
@@ -1986,12 +1986,12 @@
         "hotSwappable": false
       },
       "media": {
-        "url": "https://www.duckychannel.com.tw/upload/brands/ducky-one-2-mini.png",
-        "source": "https://www.duckychannel.com.tw/en/one-2-mini",
-        "alt": "Ducky One 2 Mini official technical reference",
-        "attribution": "Product specifications and photography © Ducky",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-ducky-ducky-one-2-mini.webp",
+        "source": "https://static.insales-cdn.com/images/products/1/5989/513046373/6.jpg",
+        "alt": "Ducky One 2 Mini official luxury photography",
+        "attribution": "Product photography © Ducky",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "One 2 Mini",
@@ -2042,12 +2042,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://nuphy.com/cdn/shop/products/nuphy-air75-v2.png",
-        "source": "https://nuphy.com/products/air75-v2",
-        "alt": "NuPhy Air75 V2 official technical reference",
-        "attribution": "Product specifications and photography © NuPhy",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-nuphy-nuphy-air75-v2.webp",
+        "source": "https://cdn.imweb.me/thumbnail/20231212/6c26af13a20f8.jpg",
+        "alt": "NuPhy Air75 V2 official luxury photography",
+        "attribution": "Product photography © NuPhy",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Air75 V2",
@@ -2098,12 +2098,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://nuphy.com/cdn/shop/products/nuphy-halo75.png",
-        "source": "https://nuphy.com/products/halo75",
-        "alt": "NuPhy Halo75 official technical reference",
-        "attribution": "Product specifications and photography © NuPhy",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-nuphy-nuphy-halo75.webp",
+        "source": "https://i.shgcdn.com/50de298b-a0a5-4a2c-ab16-fca41110d177/-/format/auto/-/preview/3000x3000/-/quality/better/",
+        "alt": "NuPhy Halo75 official luxury photography",
+        "attribution": "Product photography © NuPhy",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Halo75",
@@ -2154,12 +2154,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://nuphy.com/cdn/shop/products/nuphy-field75.png",
-        "source": "https://nuphy.com/products/field75",
-        "alt": "NuPhy Field75 official technical reference",
-        "attribution": "Product specifications and photography © NuPhy",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-nuphy-nuphy-field75.webp",
+        "source": "https://cdn.imweb.me/thumbnail/20241010/6bda24dd97704.jpg",
+        "alt": "NuPhy Field75 official luxury photography",
+        "attribution": "Product photography © NuPhy",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "Field75",
@@ -2210,12 +2210,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://epomaker.com/cdn/shop/products/epomaker-rt100.png",
-        "source": "https://epomaker.com/products/rt100",
-        "alt": "Epomaker RT100 official technical reference",
-        "attribution": "Product specifications and photography © Epomaker",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-epomaker-epomaker-rt100.webp",
+        "source": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/r/t/rt100-retro-white_1.jpg",
+        "alt": "Epomaker RT100 official luxury photography",
+        "attribution": "Product photography © Epomaker",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "RT100",
@@ -2266,12 +2266,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://epomaker.com/cdn/shop/products/epomaker-ek68.png",
-        "source": "https://epomaker.com/products/ek68",
-        "alt": "Epomaker EK68 official technical reference",
-        "attribution": "Product specifications and photography © Epomaker",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-epomaker-epomaker-ek68.webp",
+        "source": "https://epomaker.kr/cdn/shop/files/IMG_9191_19ec8713-db5d-4c36-8d2b-a35d73d8405b.jpg?v=1715226349&amp;width=1946",
+        "alt": "Epomaker EK68 official luxury photography",
+        "attribution": "Product photography © Epomaker",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "EK68",
@@ -2322,12 +2322,12 @@
         "hotSwappable": true
       },
       "media": {
-        "url": "https://epomaker.com/cdn/shop/products/epomaker-th80-pro.png",
-        "source": "https://epomaker.com/products/th80-pro",
-        "alt": "Epomaker TH80 Pro official technical reference",
-        "attribution": "Product specifications and photography © Epomaker",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/keyboards-prod-keyboards-epomaker-epomaker-th80-pro.webp",
+        "source": "https://m.media-amazon.com/images/I/71WClQW5akL._AC_SL1500_.jpg",
+        "alt": "Epomaker TH80 Pro official luxury photography",
+        "attribution": "Product photography © Epomaker",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "keyboards",
       "modelName": "TH80 Pro",

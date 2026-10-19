@@ -3082,6 +3082,1126 @@
       "missingAttributes": [],
       "inclusionReason": "Allover embossed monogram texture highlighted by polished metallic Gancini lock.",
       "status": "staged"
+    },
+    {
+      "id": "fendi-peekaboo-iseeu-medium",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "Peekaboo ISeeU Medium Leather Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/peekaboo/peekaboo-iseeu-medium"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dove Grey Cuoio Romano / Palladium Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "peekaboo iseeu medium leather bag",
+        "leatherType": "cuoio romano calfskin",
+        "hardwareFinish": "palladium-finish hardware",
+        "closureType": "twist lock closure on both sides",
+        "dimensionsCm": "33.5 x 25.5 x 13",
+        "strapDropCm": 50
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic Fendi Peekaboo bag with partitioned interior and signature twist lock.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-peekaboo-iseeu-small",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "Peekaboo ISeeU Small Leather Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/peekaboo/peekaboo-iseeu-small"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Selleria Calfskin / Gold Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "peekaboo iseeu small leather bag",
+        "leatherType": "selleria calfskin",
+        "hardwareFinish": "gold-finish hardware",
+        "closureType": "twist lock closure",
+        "dimensionsCm": "26 x 21 x 11",
+        "strapDropCm": 52
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact Peekaboo ISeeU featuring hand-sewn macro topstitching.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-baguette-leather",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "Baguette Medium Leather Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/baguette/baguette-medium"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Soft Nappa Leather / Gold FF Clasp"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "baguette medium leather shoulder bag",
+        "leatherType": "soft nappa leather",
+        "hardwareFinish": "gold-finish ff motif clasp",
+        "closureType": "magnetic ff clasp",
+        "dimensionsCm": "27 x 15 x 6",
+        "strapDropCm": 41
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The iconic 1997 Baguette bag designed by Silvia Venturini Fendi.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-baguette-embroidery",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "Baguette All-Over Sequins Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/baguette/baguette-sequins"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Sequins / Tonal Leather Trim"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "baguette all-over sequins bag",
+        "leatherType": "satin embroidered with tonal sequins and leather trim",
+        "hardwareFinish": "palladium ff buckle",
+        "closureType": "magnetic ff clasp",
+        "dimensionsCm": "27 x 15 x 6",
+        "strapDropCm": 41
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Glamorous Baguette creation embellished with dazzling hand-embroidered sequins.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-first-small",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "Fendi First Small Leather Clutch",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/fendi-first/fendi-first-small"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Caramel Nappa Leather / Metal F Clasp"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "fendi first small leather clutch",
+        "leatherType": "buttery soft nappa leather",
+        "hardwareFinish": "metal f clasp bound in nappa leather",
+        "closureType": "oversized metal f clasp",
+        "dimensionsCm": "26 x 18 x 9.5",
+        "strapDropCm": 43
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kim Jones debut architectural clutch with tilted F monogram frame.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-sunshine-medium",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "Sunshine Medium Leather Shopper Tote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/totes/sunshine-medium"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Brown Calfskin / Tortoiseshell Plexiglass Handles"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "sunshine medium leather shopper tote",
+        "leatherType": "hot-stamped calfskin leather",
+        "hardwareFinish": "gold-finish metalware",
+        "closureType": "open top tote",
+        "dimensionsCm": "35 x 31 x 17",
+        "strapDropCm": 40
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spacious shopper tote hot-stamped with FENDI ROMA lettering and tortoiseshell plexiglass handles.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-cmon-mini",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "C'mon Mini Leather Flap Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/shoulder-bags/cmon-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Beige Smooth Calfskin / Vintage Gold FF Logo"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "c'mon mini leather flap shoulder bag",
+        "leatherType": "smooth calfskin leather",
+        "hardwareFinish": "vintage gold-finish ff logo clasp",
+        "closureType": "magnetic flap closure",
+        "dimensionsCm": "17 x 12 x 6.5",
+        "strapDropCm": 53
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Curved silhouette saddle bag featuring subtle vintage metal FF monogram.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-by-the-way-boston",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "By The Way Medium Boston Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/boston-bags/by-the-way-medium"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dove Grey Calfskin / Tortoiseshell Handles"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "by the way medium boston bag",
+        "leatherType": "soft calfskin leather",
+        "hardwareFinish": "palladium metalware",
+        "closureType": "top zip closure",
+        "dimensionsCm": "27 x 15 x 13",
+        "strapDropCm": 48
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versatile Boston satchel with tortoiseshell effect handles and customizable pendant.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-origami-mini",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "Origami Mini Transformable Leather Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/mini-bags/origami-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Taupe Full Grain Calfskin"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "origami mini transformable leather bag",
+        "leatherType": "full grain calfskin",
+        "hardwareFinish": "gold-finish metalware",
+        "closureType": "magnetic 8-magnet transformable closure",
+        "dimensionsCm": "15 x 18.5 x 15",
+        "strapDropCm": 50
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Innovative shape-shifting design folding between a bucket and geometric shopper tote.",
+      "status": "staged"
+    },
+    {
+      "id": "fendi-mon-tresor-bucket",
+      "canonicalBrand": "Fendi",
+      "displayBrand": "Fendi",
+      "modelName": "Mon Trésor Mini Leather Bucket Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fendi.com/us-en/woman/bags/bucket-bags/mon-tresor-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Brown Embossed FF Calfskin / Gold Charms"
+      ],
+      "collectedAttributes": {
+        "brand": "fendi",
+        "modelName": "mon trésor mini leather bucket bag",
+        "leatherType": "embossed ff calfskin leather",
+        "hardwareFinish": "gold-finish fendi logo charms",
+        "closureType": "drawstring closure",
+        "dimensionsCm": "12 x 18 x 10",
+        "strapDropCm": 56
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic bucket bag silhouette with embossed FF motif and detachable leather straps.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-saint-louis-pm",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Saint Louis PM Goyardine Canvas Tote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-saint-louis-pm.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black & Tan Goyardine / Chevroches Calfskin"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "saint louis pm goyardine canvas tote",
+        "leatherType": "goyardine canvas and chevroches calfskin trim",
+        "hardwareFinish": "silver-tone eyelets",
+        "closureType": "open top with detachable inner pochette",
+        "dimensionsCm": "34 x 28 x 15",
+        "strapDropCm": 18
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Historical reversible lightweight tote handcrafted from signature waterproof Goyardine chevron canvas.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-saint-louis-gm",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Saint Louis GM Goyardine Canvas Tote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-saint-louis-gm.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Blue Goyardine / Blue Chevroches Calfskin"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "saint louis gm goyardine canvas tote",
+        "leatherType": "goyardine canvas and chevroches calfskin trim",
+        "hardwareFinish": "silver-tone eyelets",
+        "closureType": "open top with detachable inner pouch",
+        "dimensionsCm": "40 x 34 x 20",
+        "strapDropCm": 21
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Large-capacity Goyardine travel tote renowned for featherlight durability.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-anjou-pm",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Anjou PM Reversible Goyardine & Leather Tote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-anjou-pm.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Green Goyardine / Green Grained Calfskin"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "anjou pm reversible goyardine & leather tote",
+        "leatherType": "reversible goyardine canvas and grained calfskin leather",
+        "hardwareFinish": "silver-tone grommets",
+        "closureType": "reversible open top",
+        "dimensionsCm": "34 x 28 x 15",
+        "strapDropCm": 18
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reversible luxury tote offering Goyardine canvas on one side and grained leather on the other.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-saigon-souple-mini",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Saïgon Souple Mini Handbag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-saigon-souple-mini.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Goyardine / Natural Beech Wood Handle"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "saïgon souple mini handbag",
+        "leatherType": "goyardine canvas and chevroches calfskin with beech wood handle",
+        "hardwareFinish": "palladium hardware",
+        "closureType": "tuck-in leather flap closure",
+        "dimensionsCm": "21 x 15 x 9",
+        "strapDropCm": 50
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Maison Goyard trunk-making heritage miniaturized with carved beechwood batons and handle.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-saigon-structure-mini",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Saïgon Structuré Mini Handbag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-saigon-structure-mini.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Burgundy Goyardine / Rigid Leather Trunk Corners"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "saïgon structuré mini handbag",
+        "leatherType": "goyardine canvas, rigid calfskin and beech wood structure",
+        "hardwareFinish": "silver-tone trunk corners and studs",
+        "closureType": "rigid leather tongue flap closure",
+        "dimensionsCm": "20 x 15 x 8.5",
+        "strapDropCm": 52
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Structured hard-case interpretation of the iconic Saïgon bag with trunk corners.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-artois-mm",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Artois MM Zippered Goyardine Tote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-artois-mm.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Grey Goyardine / Reinforced Calfskin Corners"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "artois mm zippered goyardine tote",
+        "leatherType": "goyardine canvas with reinforced leather corners",
+        "hardwareFinish": "palladium zipper",
+        "closureType": "top zip closure",
+        "dimensionsCm": "37 x 30 x 17",
+        "strapDropCm": 25
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Zippered structured tote bag engineered with reinforced leather protective corners.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-belvedere-pm",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Belvédère PM Goyardine Crossbody Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-belvedere-pm.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Orange Goyardine / Chevroches Leather Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "belvédère pm goyardine crossbody bag",
+        "leatherType": "goyardine canvas and chevroches calfskin",
+        "hardwareFinish": "palladium buckle",
+        "closureType": "outer metallic pull tab and leather strap closure",
+        "dimensionsCm": "22 x 16 x 7",
+        "strapDropCm": 52
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact messenger bag inspired by timber rafter bags from the Morvan forests.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-isabelle-tote",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Isabelle Goyardine Canvas Dual Compartment Tote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-isabelle.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Yellow Goyardine / Dual Inner Compartments"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "isabelle goyardine canvas dual compartment tote",
+        "leatherType": "goyardine canvas and chevroches leather",
+        "hardwareFinish": "silver-tone accents",
+        "closureType": "dual open compartments with central magnetic pocket",
+        "dimensionsCm": "34 x 28 x 15",
+        "strapDropCm": 20
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clever multi-compartment sister tote to the Saint Louis offering organized daily carrying.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-rouette-structure",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Rouette Structuré Goyardine Handbag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/sac-rouette-structure.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black & Tan Goyardine / Sliding Leather Straps"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "rouette structuré goyardine handbag",
+        "leatherType": "goyardine canvas and calfskin leather",
+        "hardwareFinish": "sliding chain and leather hardware",
+        "closureType": "magnetic flap with gussets",
+        "dimensionsCm": "31 x 23 x 14",
+        "strapDropCm": 48
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transformable shoulder bag with sliding dual straps adjusting to 4 distinct wearing styles.",
+      "status": "staged"
+    },
+    {
+      "id": "goyard-plumet-pocket-wallet",
+      "canonicalBrand": "Goyard",
+      "displayBrand": "Goyard",
+      "modelName": "Plumet Pocket Goyardine Crossbody Clutch",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goyard.com/us_en/pochette-plumet.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Sky Blue Goyardine / Removable Leather Crossbody Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "goyard",
+        "modelName": "plumet pocket goyardine crossbody clutch",
+        "leatherType": "goyardine canvas and chevroches calfskin",
+        "hardwareFinish": "palladium snap buttons",
+        "closureType": "dual snap button flap closure",
+        "dimensionsCm": "20.5 x 14 x 2.5",
+        "strapDropCm": 55
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Three-pocket modular clutch wallet derived from traditional trunk internal pouches.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-loco-small-shoulder-bag",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "Locò Small Leather Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-loco-small-shoulder-bag-1W2B0K53HVI_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Calfskin / Enamelled VLogo Clasp"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "locò small leather shoulder bag",
+        "leatherType": "smooth calfskin leather",
+        "hardwareFinish": "tonal metallic vlogo signature enamel and brass",
+        "closureType": "magnetic flap with vlogo clasp",
+        "dimensionsCm": "20 x 10 x 5",
+        "strapDropCm": 55
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact elongated baguette silhouette centered by the signature enameled VLogo clasp.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-roman-stud-shoulder-bag",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "Roman Stud Large Quilted Nappa Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-roman-stud-large-shoulder-bag-WW2B0I60BSF_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Ivory Quilted Lambskin / Antique Brass Maxi Studs"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "roman stud large quilted nappa shoulder bag",
+        "leatherType": "quilted lambskin nappa leather",
+        "hardwareFinish": "maxi antique brass-finish studs (18x18mm)",
+        "closureType": "turnlock clasp",
+        "dimensionsCm": "30 x 20 x 12",
+        "strapDropCm": 50
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural magnification of the iconic Rockstud motif into macro Roman architectural studs.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-one-stud-chain-bag",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "One Stud Small Leather Chain Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-one-stud-small-bag-1W2B0K21HHX_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Lipstick Red Nappa / Solitary 4x4cm Stud"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "one stud small leather chain bag",
+        "leatherType": "soft lambskin nappa leather",
+        "hardwareFinish": "single maxi 4x4cm metallic stud",
+        "closureType": "magnetic closure under stud",
+        "dimensionsCm": "19 x 14 x 11",
+        "strapDropCm": 55
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist statement flap bag featuring a solitary oversized metal pyramid stud.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-rockstud-grainy-crossbody",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "Rockstud Grainy Calfskin Crossbody Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-rockstud-grainy-crossbody-bag-WW2B0809VSF_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Poudre Grainy Leather / Platinum-Finish Studs"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "rockstud grainy calfskin crossbody bag",
+        "leatherType": "grainy calfskin leather",
+        "hardwareFinish": "platinum-finish rockstuds along borders",
+        "closureType": "flip-lock closure",
+        "dimensionsCm": "22.5 x 15 x 6",
+        "strapDropCm": 54
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic Rockstud camera bag framed with signature platinum-finish pyramid rivets.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-rockstud-medium-tote",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "Rockstud Medium Grainy Calfskin Tote",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-rockstud-medium-tote-WW2B0B70VSF_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Pebbled Leather / Platinum Pyramid Studs"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "rockstud medium grainy calfskin tote",
+        "leatherType": "pebbled calfskin leather",
+        "hardwareFinish": "platinum-finish metal pyramid studs",
+        "closureType": "flip-lock top clasp",
+        "dimensionsCm": "33 x 26 x 14",
+        "strapDropCm": 20
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spacious everyday luxury tote outlined with hand-applied platinum pyramid rockstuds.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-vlogo-moon-mini-hobo",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "VLogo Moon Mini Leather Hobo Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-vlogo-moon-mini-bag-4W2B0P73ZXL_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Beige Grained Calfskin / Gold VLogo Chain Handle"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "vlogo moon mini leather hobo bag",
+        "leatherType": "grained calfskin leather",
+        "hardwareFinish": "metallic gold-finish vlogo chain handle",
+        "closureType": "top zip closure",
+        "dimensionsCm": "20 x 12 x 8",
+        "strapDropCm": 52
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crescent moon hobo silhouette featuring an integrated gold-finish VLogo chain bracelet.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-loco-micro-bag",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "Locò Micro Calfskin Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-loco-micro-bag-1W2P0Y32VNL_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Emerald Green Polished Leather / Gold VLogo"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "locò micro calfskin bag",
+        "leatherType": "polished calfskin leather",
+        "hardwareFinish": "gold-finish vlogo signature clasp",
+        "closureType": "magnetic snap closure",
+        "dimensionsCm": "13 x 7 x 3.5",
+        "strapDropCm": 55
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-miniature edition of the Locò bag accented with sliding chain strap and VLogo.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-roman-stud-top-handle",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "Roman Stud Medium Top Handle Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-roman-stud-medium-handle-bag-WW2B0I97BSF_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Quilted Lambskin / Antique-Brass Studs"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "roman stud medium top handle bag",
+        "leatherType": "quilted lambskin nappa leather",
+        "hardwareFinish": "antique-brass finish macro pyramid studs",
+        "closureType": "twist-lock flap closure",
+        "dimensionsCm": "28 x 20 x 11",
+        "strapDropCm": 48
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Structured top-handle satchel with quilted rhombus pattern embellished with macro studs.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-rockstud-spike-chain",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "Rockstud Spike Medium Quilted Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-rockstud-spike-medium-bag-WW2B0122NAP_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Soft Pink Crinkled Lambskin / Micro Platinum Studs"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "rockstud spike medium quilted shoulder bag",
+        "leatherType": "crinkled lambskin leather",
+        "hardwareFinish": "micro platinum-finish rockstuds at quilt intersections",
+        "closureType": "turnlock flap closure",
+        "dimensionsCm": "23 x 16 x 6.5",
+        "strapDropCm": 50
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Punk-couture quilted leather bag studded across all geometric diamond quilt nodes.",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-vsling-small-shoulder-bag",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "modelName": "VSling Small Grainy Calfskin Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product-vsling-small-shoulder-bag-1W2B0F64KGW_0NO"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Opal Grey Grainy Leather / Leather-Wrapped VLogo"
+      ],
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "vsling small grainy calfskin shoulder bag",
+        "leatherType": "grainy calfskin leather",
+        "hardwareFinish": "leather-covered vlogo closure and gold chain",
+        "closureType": "magnetic closure with leather-wrapped vlogo",
+        "dimensionsCm": "18 x 16 x 8.5",
+        "strapDropCm": 54
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Structured flap handbag with leather-covered VLogo closure and extendable chain shoulder strap.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-hourglass-small",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Hourglass Small Calfskin Handbag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/hourglass-small-handbag-black-5935461QJ4M1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Box Calfskin / Aged-Silver B Logo"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "hourglass small calfskin handbag",
+        "leatherType": "box calfskin leather",
+        "hardwareFinish": "aged-silver b logo hardware",
+        "closureType": "magnetic flap closure with curvilinear base",
+        "dimensionsCm": "23 x 15 x 10",
+        "strapDropCm": 55
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Curvilinear hourglass base inspired by Cristóbal Balenciaga's iconic sculpted waistlines.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-hourglass-xs",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Hourglass XS Croc-Embossed Handbag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/hourglass-xs-handbag-black-5928331LR6Y1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Croc-Embossed Calfskin / Aged-Gold B Logo"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "hourglass xs croc-embossed handbag",
+        "leatherType": "croc-embossed calfskin leather",
+        "hardwareFinish": "aged-gold b logo hardware",
+        "closureType": "magnetic flap closure",
+        "dimensionsCm": "19 x 13 x 8",
+        "strapDropCm": 55
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Miniature Hourglass silhouette crafted in glossy croc-embossed calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-le-cagole-xs",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Le Cagole XS Arena Leather Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/le-cagole-xs-shoulder-bag-black-6713091VG9Y1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Arena Lambskin / Aged-Silver Studs"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "le cagole xs arena leather shoulder bag",
+        "leatherType": "arena lambskin leather",
+        "hardwareFinish": "aged-silver textured flat studs and buckles",
+        "closureType": "zipper closure with knotted leather pullers",
+        "dimensionsCm": "26 x 12 x 7",
+        "strapDropCm": 46
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Y2K maximalist rounded baguette bag with heart mirror charm and pouch.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-le-cagole-small",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Le Cagole Small Arena Leather Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/le-cagole-small-shoulder-bag-white-6713071VG9Y9000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Optic White Arena Lambskin / Braided Shoulder Pad"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "le cagole small arena leather shoulder bag",
+        "leatherType": "arena lambskin leather",
+        "hardwareFinish": "aged-silver metal studs and eyelets",
+        "closureType": "zip closure",
+        "dimensionsCm": "33 x 16 x 8.5",
+        "strapDropCm": 48
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roomier edition of the Le Cagole shoulder bag featuring braided shoulder pad.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-rodeo-medium",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Rodeo Medium Smooth Calfskin Handbag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/rodeo-medium-handbag-black-7897722AA3G1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Smooth Calfskin / Aged-Gold Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "rodeo medium smooth calfskin handbag",
+        "leatherType": "smooth calfskin leather with nappa lining",
+        "hardwareFinish": "aged-gold hardware with turnlock side closures",
+        "closureType": "open top with dual magnetic snap tabs",
+        "dimensionsCm": "35 x 23 x 11",
+        "strapDropCm": 45
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Relaxed slouchy luxury top-handle satchel with asymmetric front flap and key ring.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-downtown-small",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Downtown Small Leather Shoulder Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/downtown-small-shoulder-bag-black-6713052100O1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Quilted Calfskin / Matte Black B Clasp"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "downtown small leather shoulder bag",
+        "leatherType": "quilted calfskin leather",
+        "hardwareFinish": "matte black b logo hardware",
+        "closureType": "curved flap magnetic closure",
+        "dimensionsCm": "25 x 15 x 8.5",
+        "strapDropCm": 35
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Curved shoulder bag contouring naturally under the arm with monochrome hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-monaco-medium-chain",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Monaco Medium Quilted Leather Chain Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/monaco-medium-chain-bag-black-7654462AA401000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Crinkled Calfskin / Aged-Brass BB Monogram"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "monaco medium quilted leather chain bag",
+        "leatherType": "crinkled arena calfskin leather",
+        "hardwareFinish": "thick chain strap and metallic bb logo",
+        "closureType": "magnetic flap closure",
+        "dimensionsCm": "32 x 22 x 10",
+        "strapDropCm": 48
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Soft, pillowy oversized envelope bag stamped with brass BB monogram.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-neo-classic-city-mini",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Neo Classic Mini Grained Leather Handbag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/neo-classic-mini-handbag-black-63852411R171000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Grained Calfskin / Tonal Lacquered Pulls"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "neo classic mini grained leather handbag",
+        "leatherType": "grained calfskin leather",
+        "hardwareFinish": "tonal lacquered hardware and zip pulls",
+        "closureType": "top zip closure",
+        "dimensionsCm": "22 x 14 x 11",
+        "strapDropCm": 50
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural 20th anniversary update to the 2001 Motorcycle City bag.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-crush-medium-chain",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Crush Medium Quilted Leather Bag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/crush-medium-chain-bag-black-7163512101F1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Crushed Quilted Leather / Aged-Gold B Clasp"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "crush medium quilted leather bag",
+        "leatherType": "quilted crushed calfskin leather",
+        "hardwareFinish": "aged-gold curvilinear b clasp",
+        "closureType": "magnetic flap closure",
+        "dimensionsCm": "31 x 20 x 7",
+        "strapDropCm": 50
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Supple, deconstructed accordion flap bag with pointed hourglass base.",
+      "status": "staged"
+    },
+    {
+      "id": "balenciaga-bel-air-carry-all",
+      "canonicalBrand": "Balenciaga",
+      "displayBrand": "Balenciaga",
+      "modelName": "Bel Air Carry All Medium Leather Handbag",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/bel-air-carry-all-medium-black-7921822AA4K1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Black Calfskin / Engraved Metal Turnlocks"
+      ],
+      "collectedAttributes": {
+        "brand": "balenciaga",
+        "modelName": "bel air carry all medium leather handbag",
+        "leatherType": "smooth natural calfskin leather",
+        "hardwareFinish": "engraved metallic turnlocks and buckles",
+        "closureType": "front belted flap closure",
+        "dimensionsCm": "37 x 26 x 15",
+        "strapDropCm": 42
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heritage-inspired belted doctor's bag silhouette with wide gussets and leather lining.",
+      "status": "staged"
     }
   ],
   "supplyExceptions": []

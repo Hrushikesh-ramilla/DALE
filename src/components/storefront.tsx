@@ -3,11 +3,14 @@ import { usePublishedCatalog } from "./use-published-catalog";
 import { RetailFilters } from "./retail-filters";
 import { DepartmentBrowser } from "./department-browser";
 import { CatalogEvidence } from "./catalog-evidence";
+import { LuxuryArchitectureCard } from "./luxury-architecture-card";
 import { categoryTitles as titles, categoryIds, departments, isRetailCategory, lifestyleProfile } from "@/domain/departments";
 import { CustomerEntry } from "./customer-entry";
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
+import { StoreContext, type StoreContextType } from "./store-context";
 import {
   ArrowLeft,
   ArrowRight,
@@ -126,7 +129,7 @@ function AgentSurface({
     </details>
   );
 }
-export default function Storefront() {
+export default function Storefront({ children }: { children?: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const tab: Tab =
@@ -433,6 +436,24 @@ export default function Storefront() {
       setModal({ kind: "quote", quote });
     });
   }
+  const storeContextValue: StoreContextType = useMemo(
+    () => ({
+      session,
+      isBuyer,
+      restoring,
+      busy,
+      choose,
+      startShopping,
+      openIdentify: () => setModal({ kind: "identify" }),
+      setNotice,
+      setError,
+      model,
+      setModel,
+      budget,
+      setBudget,
+    }),
+    [session, isBuyer, restoring, busy, model, budget],
+  );
   function openDepartment(id: string) {
     setDepartmentId(id);
     const categories = departments.find(department => department.id === id)?.categories.filter(category => catalogCount(category) > 0) || [];
@@ -514,7 +535,7 @@ export default function Storefront() {
       });
   }
   return (
-    <>
+    <StoreContext.Provider value={storeContextValue}>
       {showIntro && (
         <CinematicIntro
           targetSelector="[data-brand-logo]"
@@ -723,7 +744,7 @@ export default function Storefront() {
               />
             </AgentSurface>
           )}
-        {tab === "discover" && (
+        {tab === "discover" && (pathname === "/" ? (
           <>
             <EditorialHero
               onView={(product) => setModal({ kind: "product", product })}
@@ -774,10 +795,10 @@ export default function Storefront() {
               </div>
               <div className="parallax-stack">
                 {parallaxCategories.map((col) => (
-                  <div
+                  <Link
                     key={col.id}
+                    href={col.id === "watches" ? "/category/watches" : `/department/${col.id}`}
                     className="parallax-category-card"
-                    onClick={() => openDepartment(col.id)}
                   >
                     <div className="parallax-card-content">
                       <div className="parallax-card-badge">
@@ -794,17 +815,10 @@ export default function Storefront() {
                           </span>
                         ))}
                       </div>
-                      <button
-                        type="button"
-                        className="parallax-card-cta"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          openDepartment(col.id);
-                        }}
-                      >
+                      <span className="parallax-card-cta">
                         <span>Explore {col.title}</span>
                         <ArrowRight size={15} />
-                      </button>
+                      </span>
                     </div>
                     <div className="parallax-card-visual">
                       <div className="art-frame">
@@ -814,7 +828,7 @@ export default function Storefront() {
                         {col.count} exact variants
                       </span>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
               <div className="device-fit-trigger-card">
@@ -824,20 +838,13 @@ export default function Storefront() {
                     Need electronics matched to a device profile? View every compatible charger, dock, audio device, and cable together.
                   </p>
                 </div>
-                <button
-                  type="button"
+                <Link
+                  href="/department/electronics"
                   className="device-fit-btn"
-                  onClick={() => {
-                    setIsDeviceMode(true);
-                    setCategory("");
-                    setTimeout(() => {
-                      document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" });
-                    }, 50);
-                  }}
                 >
                   <span>View all for my device</span>
                   <ArrowRight size={14} />
-                </button>
+                </Link>
               </div>
             </section>
             {(departmentId !== "" || category !== "" || isDeviceMode) && (
@@ -1103,16 +1110,16 @@ export default function Storefront() {
                         key={product.id}
                       >
                         <div className="card-visual">
-                          <ProductArt product={product} />
-                          <button
+                          <Link href={`/product/${product.id}`} style={{ display: "block", textDecoration: "none" }}>
+                            <ProductArt product={product} />
+                          </Link>
+                          <Link
+                            href={`/product/${product.id}`}
                             className="product-view"
                             aria-label={`View details for ${product.name}`}
-                            onClick={() =>
-                              setModal({ kind: "product", product })
-                            }
                           >
                             <ArrowRight size={17} />
-                          </button>
+                          </Link>
                           {index === 0 && !briefDirty && (
                             <span className="card-badge">
                               {weights
@@ -1136,14 +1143,13 @@ export default function Storefront() {
                             )}
                           </div>
                           <h3>
-                            <button
+                            <Link
+                              href={`/product/${product.id}`}
                               className="product-title"
-                              onClick={() =>
-                                setModal({ kind: "product", product })
-                              }
+                              style={{ textDecoration: "none", color: "inherit" }}
                             >
                               {product.name}
-                            </button>
+                            </Link>
                           </h3>
                           <p>{product.description}</p>
                           <div className="spec-tags">
@@ -1437,7 +1443,9 @@ export default function Storefront() {
               </button>
             </div>
           </>
-        )}
+        ) : (
+          children
+        ))}
         {tab === "groups" && (
           <>
             <PageHeading
@@ -2398,6 +2406,7 @@ export default function Storefront() {
                         </li>
                       ))}
                     </ul>
+                    <LuxuryArchitectureCard product={modal.product} />
                     <p>
                       {isRetailCategory(modal.product.category) || modal.product.brand ? "Variant attributes: " : "Recorded device profiles: "}
                       {isRetailCategory(modal.product.category) || modal.product.brand ? Object.entries(modal.product.attributes || {}).map(([key, value]) => `${key}: ${value}`).join(" · ") : modal.product.compatibleModels
@@ -3159,7 +3168,7 @@ export default function Storefront() {
         )}
       </AnimatePresence>
     </div>
-    </>
+    </StoreContext.Provider>
   );
 }
 function PageHeading({

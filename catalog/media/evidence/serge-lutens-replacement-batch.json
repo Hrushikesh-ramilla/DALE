@@ -1,0 +1,704 @@
+{
+  "manifest": {
+    "schemaVersion": "catalog-manifest-v2",
+    "id": "fragrance-serge-lutens-media-repair-2026-10-14-v2",
+    "reviewedBy": "manufacturer-catalog-and-exact-variant-photo-review",
+    "reviewedAt": "2026-10-14",
+    "approvedSourceHosts": [
+      "sergelutens.com"
+    ],
+    "products": [
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112359155",
+        "name": "Serge Lutens Chergui · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: Chergui",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112359155",
+          "Manufacturer olfactory family: RESINOUS / AMBERY"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/chergui-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444142063806",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "chergui",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "RESINOUS / AMBERY"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Chergui_100ml_Product_36112359155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801494",
+          "source": "https://sergelutens.com/products/chergui-eau-de-parfum-spray",
+          "alt": "Serge Lutens Chergui 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Chergui",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112356155",
+        "name": "Serge Lutens Ambre sultan · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: Ambre sultan",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112356155",
+          "Manufacturer olfactory family: RESINOUS"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/ambre-sultan-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444140589246",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "ambre sultan",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "RESINOUS"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Ambresultan_100ml_Product_36112356155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801400",
+          "source": "https://sergelutens.com/products/ambre-sultan-eau-de-parfum-spray",
+          "alt": "Serge Lutens Ambre sultan 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Ambre sultan",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112355155",
+        "name": "Serge Lutens Féminité du bois · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: Féminité du bois",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112355155"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/feminite-du-bois-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444146684094",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "féminité du bois",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Feminitedubois_100ml_Product_36112355155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801553",
+          "source": "https://sergelutens.com/products/feminite-du-bois-eau-de-parfum-spray",
+          "alt": "Serge Lutens Féminité du bois 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Féminité du bois",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112358155",
+        "name": "Serge Lutens La fille de Berlin · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: La fille de Berlin",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112358155",
+          "Manufacturer olfactory family: FLORAL"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/la-fille-de-berlin-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444148977854",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "la fille de berlin",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "FLORAL"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_LafilledeBerlin_100ml_Product_36112358155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801582",
+          "source": "https://sergelutens.com/products/la-fille-de-berlin-eau-de-parfum-spray",
+          "alt": "Serge Lutens La fille de Berlin 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "La fille de Berlin",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112365155",
+        "name": "Serge Lutens Santal majuscule · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: Santal majuscule",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112365155",
+          "Manufacturer olfactory family: WOODY/ CHYPRE"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/santal-majuscule-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444155171006",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "santal majuscule",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "WOODY/ CHYPRE"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Santalmajuscule_100ml_Product_36112365155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801848",
+          "source": "https://sergelutens.com/products/santal-majuscule-eau-de-parfum-spray",
+          "alt": "Serge Lutens Santal majuscule 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Santal majuscule",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112357155",
+        "name": "Serge Lutens Fleurs d'oranger · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: Fleurs d'oranger",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112357155",
+          "Manufacturer olfactory family: FLORAL"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/fleurs-d-oranger-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444147437758",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "fleurs d'oranger",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "FLORAL"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Fleursd_oranger_100ml_Product_36112357155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801644",
+          "source": "https://sergelutens.com/products/fleurs-d-oranger-eau-de-parfum-spray",
+          "alt": "Serge Lutens Fleurs d'oranger 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Fleurs d'oranger",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112366155",
+        "name": "Serge Lutens L'Orpheline · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: L'Orpheline",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112366155",
+          "Manufacturer olfactory family: MOHAIR"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/l-orpheline-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444150976702",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "l'orpheline",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "MOHAIR"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_L_orpheline_100ml_Product_36112366155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801735",
+          "source": "https://sergelutens.com/products/l-orpheline-eau-de-parfum-spray",
+          "alt": "Serge Lutens L'Orpheline 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "L'Orpheline",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-82100751101",
+        "name": "Serge Lutens Cuir mauresque · Eau de Parfum · 75ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 39500,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: Cuir mauresque",
+          "Bottle volume: 75ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 82100751101",
+          "Manufacturer olfactory family: RESINOUS"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "75ml",
+        "source": "https://sergelutens.com/products/cuir-mauresque-eau-de-parfum",
+        "familyId": "serge-lutens:15047708541254",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 75,
+          "brand": "serge lutens",
+          "modelName": "cuir mauresque",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "RESINOUS"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLBELLBOTTLES2025PACKSHOTCUIRMAURESQUE75mlProduct821007511013000x3000px300dpiRGB.png?v=1750169263",
+          "source": "https://sergelutens.com/products/cuir-mauresque-eau-de-parfum",
+          "alt": "Serge Lutens Cuir mauresque 75ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Cuir mauresque",
+        "skuVariant": "75ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112361155",
+        "name": "Serge Lutens Un bois vanille · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: Un bois vanille",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112361155",
+          "Manufacturer olfactory family: GOURMAND"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/un-bois-vanille-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444167033022",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "un bois vanille",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "GOURMAND"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Unboisvanille_100ml_Product_36112361155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801453",
+          "source": "https://sergelutens.com/products/un-bois-vanille-eau-de-parfum-spray",
+          "alt": "Serge Lutens Un bois vanille 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Un bois vanille",
+        "skuVariant": "100ml"
+      },
+      {
+        "id": "FRAGRANCE-SERGE-LUTENS-36112362155",
+        "name": "Serge Lutens Five o'clock au gingembre · Eau de Parfum · 100ml",
+        "category": "fragrance",
+        "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+        "price": 33000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Serge Lutens",
+          "Model: Five o'clock au gingembre",
+          "Bottle volume: 100ml",
+          "Concentration: Eau de Parfum",
+          "Manufacturer SKU: 36112362155"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "100ml",
+        "source": "https://sergelutens.com/products/five-o-clock-au-gingembre-eau-de-parfum-spray",
+        "familyId": "serge-lutens:7444147273918",
+        "provenance": "manufacturer_evidence",
+        "brand": "Serge Lutens",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public catalog",
+          "missing": [
+            "perfumer",
+            "topNotes",
+            "heartNotes",
+            "baseNotes"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "productType": "eau de parfum",
+          "volumeMl": 100,
+          "brand": "serge lutens",
+          "modelName": "five o'clock au gingembre",
+          "concentration": "eau de parfum"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Fiveo_clockaugingembre_100ml_Product_36112362155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801612",
+          "source": "https://sergelutens.com/products/five-o-clock-au-gingembre-eau-de-parfum-spray",
+          "alt": "Serge Lutens Five o'clock au gingembre 100ml",
+          "attribution": "Serge Lutens manufacturer product image; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "fragrance",
+        "modelName": "Five o'clock au gingembre",
+        "skuVariant": "100ml"
+      }
+    ]
+  },
+  "replacements": [
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-CHERGUI",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112359155"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-AMBRE-SULTAN",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112356155"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FEMINITE-DU-BOIS",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112355155"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-LA-FILLE-DE-BERLIN",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112358155"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-SANTAL-MAJUSCULE",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112365155"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FLEURS-DORANGER",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112357155"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-LORPHELINE",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112366155"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-CUIR-MAURESQUE",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-82100751101"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-UN-BOIS-VANILLE",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112361155"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FIVE-OCLOCK-AU-GINGEMBRE",
+      "newProductId": "FRAGRANCE-SERGE-LUTENS-36112362155"
+    }
+  ],
+  "evidence": [
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-CHERGUI",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112359155",
+      "source": "https://sergelutens.com/products/chergui-eau-de-parfum-spray",
+      "manufacturerProductId": 7444142063806,
+      "manufacturerVariantId": 42227870531774,
+      "manufacturerSku": "36112359155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Chergui_100ml_Product_36112359155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801494",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-AMBRE-SULTAN",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112356155",
+      "source": "https://sergelutens.com/products/ambre-sultan-eau-de-parfum-spray",
+      "manufacturerProductId": 7444140589246,
+      "manufacturerVariantId": 42227867910334,
+      "manufacturerSku": "36112356155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Ambresultan_100ml_Product_36112356155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801400",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FEMINITE-DU-BOIS",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112355155",
+      "source": "https://sergelutens.com/products/feminite-du-bois-eau-de-parfum-spray",
+      "manufacturerProductId": 7444146684094,
+      "manufacturerVariantId": 42227880558782,
+      "manufacturerSku": "36112355155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Feminitedubois_100ml_Product_36112355155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801553",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-LA-FILLE-DE-BERLIN",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112358155",
+      "source": "https://sergelutens.com/products/la-fille-de-berlin-eau-de-parfum-spray",
+      "manufacturerProductId": 7444148977854,
+      "manufacturerVariantId": 42227885211838,
+      "manufacturerSku": "36112358155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_LafilledeBerlin_100ml_Product_36112358155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801582",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-SANTAL-MAJUSCULE",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112365155",
+      "source": "https://sergelutens.com/products/santal-majuscule-eau-de-parfum-spray",
+      "manufacturerProductId": 7444155171006,
+      "manufacturerVariantId": 42227896680638,
+      "manufacturerSku": "36112365155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Santalmajuscule_100ml_Product_36112365155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801848",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FLEURS-DORANGER",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112357155",
+      "source": "https://sergelutens.com/products/fleurs-d-oranger-eau-de-parfum-spray",
+      "manufacturerProductId": 7444147437758,
+      "manufacturerVariantId": 42227881476286,
+      "manufacturerSku": "36112357155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Fleursd_oranger_100ml_Product_36112357155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801644",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-LORPHELINE",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112366155",
+      "source": "https://sergelutens.com/products/l-orpheline-eau-de-parfum-spray",
+      "manufacturerProductId": 7444150976702,
+      "manufacturerVariantId": 42227888226494,
+      "manufacturerSku": "36112366155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_L_orpheline_100ml_Product_36112366155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801735",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-CUIR-MAURESQUE",
+      "productId": "FRAGRANCE-SERGE-LUTENS-82100751101",
+      "source": "https://sergelutens.com/products/cuir-mauresque-eau-de-parfum",
+      "manufacturerProductId": 15047708541254,
+      "manufacturerVariantId": 54641573232966,
+      "manufacturerSku": "82100751101",
+      "volumeMl": 75,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLBELLBOTTLES2025PACKSHOTCUIRMAURESQUE75mlProduct821007511013000x3000px300dpiRGB.png?v=1750169263",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-UN-BOIS-VANILLE",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112361155",
+      "source": "https://sergelutens.com/products/un-bois-vanille-eau-de-parfum-spray",
+      "manufacturerProductId": 7444167033022,
+      "manufacturerVariantId": 42227917422782,
+      "manufacturerSku": "36112361155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Unboisvanille_100ml_Product_36112361155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801453",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    },
+    {
+      "oldProductId": "PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-FIVE-OCLOCK-AU-GINGEMBRE",
+      "productId": "FRAGRANCE-SERGE-LUTENS-36112362155",
+      "source": "https://sergelutens.com/products/five-o-clock-au-gingembre-eau-de-parfum-spray",
+      "manufacturerProductId": 7444147273918,
+      "manufacturerVariantId": 42227881246910,
+      "manufacturerSku": "36112362155",
+      "volumeMl": 100,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0631/1614/8926/files/SLCOLLECTIONNOIRE2025-PACKSHOT_Fiveo_clockaugingembre_100ml_Product_36112362155_Graybackground_RVB_2000x2000_300dpi_JPG.jpg?v=1779801612",
+      "feedSha256": "4ce6bc4541b2cf1545b1fa6d6790afcc24a3dec43ca487b90657c41b0d1be20e"
+    }
+  ],
+  "publication": "not-published; requires visual review and atomic offer replacement"
+}

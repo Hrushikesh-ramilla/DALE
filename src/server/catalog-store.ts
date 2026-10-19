@@ -104,14 +104,14 @@ export async function browseCatalog(input: {
   const values = [
     input.category || "",
     input.query || "",
-    input.budget ?? 1000000,
+    input.budget ?? 100000000,
     JSON.stringify(input.requirements || {}),
     Boolean(input.fixtures),
     input.leafType || "",
     input.brand || "",
   ];
   const where = `($1='' OR category=$1 OR leaf_type=$1)
-    AND ($6='' OR leaf_type=$6 OR record->>'leafType'=$6)
+    AND ($6='' OR leaf_type=$6 OR record->>'leafType'=$6 OR category=$6)
     AND ($7='' OR lower(coalesce(brand, record->>'brand', record->'attributes'->>'brand', ''))=lower($7))
     AND ($2='' OR to_tsvector('simple',coalesce(record->>'name','') || ' ' || coalesce(record->>'description','') || ' ' || coalesce(record->>'specs','')) @@ plainto_tsquery('simple',$2))
     AND price<=$3 AND coalesce(record->'attributes','{}'::jsonb) @> $4::jsonb

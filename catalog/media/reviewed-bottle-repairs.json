@@ -1,0 +1,67 @@
+{
+  "repairs": [
+    {
+      "productId": "PROD-FRAGRANCE-MAISON-FRANCIS-KURKDJIAN-MFK-BACCARAT-ROUGE-540-EDP",
+      "revisionId": "media-repair-br540-35ml-20261013",
+      "previousVolumeMl": 70,
+      "volumeMl": 35,
+      "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/baccarat-rouge-540-eau-de-parfum-RA12238.html",
+      "manufacturerSku": "RA12238",
+      "operatorAudit": "Correct duplicated 70ml specification to the existing selected 35ml offer; exact manufacturer SKU and 35ml photograph reviewed. Preserve ID, price, stock, selected variant and historical customer quotes."
+    },
+    {
+      "productId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-HEROD",
+      "revisionId": "media-repair-40036845125826-20261013",
+      "previousVolumeMl": 125,
+      "volumeMl": 75,
+      "sourceUrl": "https://us.parfums-de-marly.com/products/herod",
+      "manufacturerSku": "NPM0703PV",
+      "operatorAudit": "Correct generic 125ml specification to existing selected 75ml offer. Manufacturer catalog variant ID matches retained visually reviewed 75ml photograph. Preserve ID, price, stock, selected variant and historical quotes."
+    },
+    {
+      "productId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-PEGASUS",
+      "revisionId": "media-repair-40036850434242-20261013",
+      "previousVolumeMl": 125,
+      "volumeMl": 75,
+      "sourceUrl": "https://us.parfums-de-marly.com/products/pegasus",
+      "manufacturerSku": "NPM0603PV",
+      "operatorAudit": "Correct generic 125ml specification to existing selected 75ml offer. Manufacturer catalog variant ID matches retained visually reviewed 75ml photograph. Preserve ID, price, stock, selected variant and historical quotes."
+    },
+    {
+      "productId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-GREENLEY",
+      "revisionId": "media-repair-40036844372162-20261013",
+      "previousVolumeMl": 125,
+      "volumeMl": 75,
+      "sourceUrl": "https://us.parfums-de-marly.com/products/greenley",
+      "manufacturerSku": "NPM2503PV",
+      "operatorAudit": "Correct generic 125ml specification to existing selected 75ml offer. Manufacturer catalog variant ID matches retained visually reviewed 75ml photograph. Preserve ID, price, stock, selected variant and historical quotes."
+    },
+    {
+      "productId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-SEDLEY",
+      "revisionId": "media-repair-40036852891842-20261013",
+      "previousVolumeMl": 125,
+      "volumeMl": 75,
+      "sourceUrl": "https://us.parfums-de-marly.com/products/sedley",
+      "manufacturerSku": "NPM2203PV",
+      "operatorAudit": "Correct generic 125ml specification to existing selected 75ml offer. Manufacturer catalog variant ID matches retained visually reviewed 75ml photograph. Preserve ID, price, stock, selected variant and historical quotes."
+    },
+    {
+      "productId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-HALTANE",
+      "revisionId": "media-repair-47192384602459-20261013",
+      "previousVolumeMl": 125,
+      "volumeMl": 75,
+      "sourceUrl": "https://us.parfums-de-marly.com/products/haltane",
+      "manufacturerSku": "NPM2603PV",
+      "operatorAudit": "Correct generic 125ml specification to existing selected 75ml offer. Manufacturer catalog variant ID matches retained visually reviewed 75ml photograph. Preserve ID, price, stock, selected variant and historical quotes."
+    },
+    {
+      "productId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-ALTHAIR",
+      "revisionId": "media-repair-47052878414171-20261013",
+      "previousVolumeMl": 125,
+      "volumeMl": 75,
+      "sourceUrl": "https://us.parfums-de-marly.com/products/althair",
+      "manufacturerSku": "NPM2903PV",
+      "operatorAudit": "Correct generic 125ml specification to existing selected 75ml offer. Manufacturer catalog variant ID matches retained visually reviewed 75ml photograph. Preserve ID, price, stock, selected variant and historical quotes."
+    }
+  ]
+}

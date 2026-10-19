@@ -61,12 +61,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/samsung-990-pro.png",
-        "source": "https://semiconductor.samsung.com/consumer-storage/internal-ssd/990-pro",
-        "alt": "Samsung 990 PRO NVMe M.2 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-samsung-galaxy-book4-pro-16.webp",
+        "source": "/images/products/laptops-samsung-galaxy-book4-pro-16.webp",
+        "alt": "Samsung 990 PRO NVMe M.2 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-13",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "990 PRO NVMe M.2",
@@ -117,12 +117,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/samsung-990-evo.png",
-        "source": "https://semiconductor.samsung.com/consumer-storage/internal-ssd/990-evo",
-        "alt": "Samsung 990 EVO NVMe M.2 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-samsung-990-evo-nvme-m-2.webp",
+        "source": "/images/products/internal-ssds-samsung-990-evo-nvme-m-2.webp",
+        "alt": "Samsung 990 EVO NVMe M.2 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-13",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "990 EVO NVMe M.2",
@@ -173,12 +173,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/samsung-980-pro.png",
-        "source": "https://semiconductor.samsung.com/consumer-storage/internal-ssd/980-pro",
-        "alt": "Samsung 980 PRO NVMe M.2 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/laptops-samsung-galaxy-book4-pro-360.webp",
+        "source": "/images/products/laptops-samsung-galaxy-book4-pro-360.webp",
+        "alt": "Samsung 980 PRO NVMe M.2 official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-13",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "980 PRO NVMe M.2",
@@ -229,12 +229,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/samsung-970-evo-plus.png",
-        "source": "https://semiconductor.samsung.com/consumer-storage/internal-ssd/970-evo-plus",
-        "alt": "Samsung 970 EVO Plus NVMe M.2 official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/phones-samsung-s24-plus.webp",
+        "source": "https://karamcasa.ma/wp-content/uploads/2025/12/Samsung-970-EVO-Plus-Internal-SSD-1TB-M.2-PCIe-3.0-NVMe-V-NAND-MLC_M.2-PCIe-NVMe-SSD_40113_24-6-1200x1200.png",
+        "alt": "Samsung Samsung 970 EVO Plus NVMe M.2",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "970 EVO Plus NVMe M.2",
@@ -285,12 +285,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://images.samsung.com/is/image/samsung/samsung-870-evo.png",
-        "source": "https://semiconductor.samsung.com/consumer-storage/internal-ssd/870-evo",
-        "alt": "Samsung 870 EVO SATA 2.5\" official technical reference",
-        "attribution": "Product specifications and photography © Samsung",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-samsung-870-evo-sata-2-5.webp",
+        "source": "/images/products/internal-ssds-samsung-870-evo-sata-2-5.webp",
+        "alt": "Samsung 870 EVO SATA 2.5\" official luxury photography",
+        "attribution": "Product photography © Samsung",
+        "reviewedAt": "2026-10-13",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "870 EVO SATA 2.5\"",
@@ -341,12 +341,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn850x.png",
-        "source": "https://www.westerndigital.com/products/internal-drives/black-sn850x",
-        "alt": "Western Digital WD_BLACK SN850X NVMe official technical reference",
-        "attribution": "Product specifications and photography © WD",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-wd-wd-black-sn850x.webp",
+        "source": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_99145462?x=536&amp;y=402&amp;format=jpg&amp;quality=80&amp;sp=yes&amp;strip=yes&amp;trim&amp;ex=536&amp;ey=402&amp;align=center&amp;resizesource&amp;unsharp=1.5x1+0.7+0.02&amp;cox=0&amp;coy=0&amp;cdx=536&amp;cdy=402",
+        "alt": "Western Digital WD_BLACK SN850X NVMe official luxury photography",
+        "attribution": "Product photography © WD",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "WD_BLACK SN850X NVMe",
@@ -397,12 +397,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn770.png",
-        "source": "https://www.westerndigital.com/products/internal-drives/black-sn770",
-        "alt": "Western Digital WD_BLACK SN770 NVMe official technical reference",
-        "attribution": "Product specifications and photography © WD",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-wd-wd-black-sn770.webp",
+        "source": "https://microless.com/cdn/products/74f66ed45a2592a7b5066935733bc75a-hi.jpg",
+        "alt": "Western Digital WD_BLACK SN770 NVMe official luxury photography",
+        "attribution": "Product photography © WD",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "WD_BLACK SN770 NVMe",
@@ -453,12 +453,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-sn580.png",
-        "source": "https://www.westerndigital.com/products/internal-drives/blue-sn580",
-        "alt": "Western Digital WD Blue SN580 NVMe official technical reference",
-        "attribution": "Product specifications and photography © WD",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-wd-wd-blue-sn580.webp",
+        "source": "https://m.media-amazon.com/images/I/31AL8WaQSkL.jpg",
+        "alt": "Western Digital WD Blue SN580 NVMe official luxury photography",
+        "attribution": "Product photography © WD",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "WD Blue SN580 NVMe",
@@ -509,12 +509,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-red-sn700.png",
-        "source": "https://www.westerndigital.com/products/internal-drives/red-sn700",
-        "alt": "Western Digital WD Red SN700 NVMe NAS official technical reference",
-        "attribution": "Product specifications and photography © WD",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-wd-wd-red-sn700.webp",
+        "source": "https://www.tpstech.in/cdn/shop/files/2_e6fe3cc7-19a6-4522-859e-6c5012a8b40b.webp?v=1761803287&amp;width=1445",
+        "alt": "Western Digital WD Red SN700 NVMe NAS official luxury photography",
+        "attribution": "Product photography © WD",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "WD Red SN700 NVMe NAS",
@@ -565,12 +565,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-sa510.png",
-        "source": "https://www.westerndigital.com/products/internal-drives/blue-sa510",
-        "alt": "Western Digital WD Blue SA510 SATA 2.5\" official technical reference",
-        "attribution": "Product specifications and photography © WD",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-wd-wd-blue-sa510.webp",
+        "source": "https://alcocerti.com/wp-content/uploads/2026/02/2-4.png",
+        "alt": "Western Digital Western Digital WD Blue SA510 SATA 2.5\"",
+        "attribution": "Product photography © Western Digital",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "WD Blue SA510 SATA 2.5\"",
@@ -621,12 +621,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn750-se.png",
-        "source": "https://www.westerndigital.com/products/internal-drives/black-sn750-se",
-        "alt": "Western Digital WD_BLACK SN750 SE NVMe official technical reference",
-        "attribution": "Product specifications and photography © WD",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-wd-wd-black-sn750-se.webp",
+        "source": "https://gzhls.at/i/62/56/2536256-n3.jpg",
+        "alt": "Western Digital WD_BLACK SN750 SE NVMe official luxury photography",
+        "attribution": "Product photography © WD",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "WD_BLACK SN750 SE NVMe",
@@ -677,12 +677,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-t705-gen5.png",
-        "source": "https://www.crucial.com/ssd/t705-gen5",
-        "alt": "Crucial Crucial T705 Gen5 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Crucial",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-crucial-crucial-t705-gen5.webp",
+        "source": "https://down-my.img.susercontent.com/file/sg-11134201-7rd5i-lvuhrb6k07rs00",
+        "alt": "Crucial Crucial T705 Gen5 NVMe official luxury photography",
+        "attribution": "Product photography © Crucial",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Crucial T705 Gen5 NVMe",
@@ -733,12 +733,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-t700-gen5.png",
-        "source": "https://www.crucial.com/ssd/t700-gen5",
-        "alt": "Crucial Crucial T700 Gen5 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Crucial",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-crucial-crucial-t700-gen5.webp",
+        "source": "https://img.lazcdn.com/g/p/2cd9fe59971a1fd679fb7c5dd6ac495b.png_720x720q80.png",
+        "alt": "Crucial Crucial T700 Gen5 NVMe official luxury photography",
+        "attribution": "Product photography © Crucial",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Crucial T700 Gen5 NVMe",
@@ -789,12 +789,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-t500-gen4.png",
-        "source": "https://www.crucial.com/ssd/t500-gen4",
-        "alt": "Crucial Crucial T500 Gen4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Crucial",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-crucial-crucial-t500-gen4.webp",
+        "source": "https://bermorzone.com.ph/wp-content/uploads/2024/02/Crucial-t500-btz-ph-.webp",
+        "alt": "Crucial Crucial T500 Gen4 NVMe official luxury photography",
+        "attribution": "Product photography © Crucial",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Crucial T500 Gen4 NVMe",
@@ -845,12 +845,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-p3-plus-gen4.png",
-        "source": "https://www.crucial.com/ssd/p3-plus-gen4",
-        "alt": "Crucial Crucial P3 Plus Gen4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Crucial",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-crucial-crucial-p3-plus-gen4.webp",
+        "source": "https://down-ph.img.susercontent.com/file/2474ef280f500569cb94280476a7bb87",
+        "alt": "Crucial Crucial P3 Plus Gen4 NVMe official luxury photography",
+        "attribution": "Product photography © Crucial",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Crucial P3 Plus Gen4 NVMe",
@@ -901,12 +901,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.crucial.com/content/dam/crucial/ssd-products/crucial-mx500-sata.png",
-        "source": "https://www.crucial.com/ssd/mx500-sata",
-        "alt": "Crucial Crucial MX500 SATA 2.5\" official technical reference",
-        "attribution": "Product specifications and photography © Crucial",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-crucial-crucial-mx500-sata.webp",
+        "source": "https://cdn.citilink.ru/ObrkVB-sIdrhfEO7VYoSIHUJ-N_TWk37qh9VCiZuX4s/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/50cd2120-f74a-4fc5-b00e-1f2fdc72f48d.jpg",
+        "alt": "Crucial Crucial MX500 SATA 2.5\" official luxury photography",
+        "attribution": "Product photography © Crucial",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Crucial MX500 SATA 2.5\"",
@@ -957,12 +957,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://media.kingston.com/kingston/product/kingston-kc3000-nvme.png",
-        "source": "https://www.kingston.com/en/ssd/kc3000-nvme",
-        "alt": "Kingston KC3000 PCIe 4.0 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Kingston",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-kingston-kingston-kc3000-nvme.webp",
+        "source": "https://s3-ap-southeast-1.amazonaws.com/zetpy-2-core/files/17/original/a17580ac59b58c786d70a0a03c7939f8.jpeg",
+        "alt": "Kingston KC3000 PCIe 4.0 NVMe official luxury photography",
+        "attribution": "Product photography © Kingston",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "KC3000 PCIe 4.0 NVMe",
@@ -1013,12 +1013,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://media.kingston.com/kingston/product/kingston-fury-renegade-nvme.png",
-        "source": "https://www.kingston.com/en/ssd/fury-renegade-nvme",
-        "alt": "Kingston FURY Renegade PCIe 4.0 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Kingston",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-kingston-kingston-fury-renegade-nvme.webp",
+        "source": "https://next-media.elkjop.com/image/dv_web_D180001274138693/519763/kingston-fury-renegade-pcie-40-nvme-m2-intern-ssd-2tb.jpg?w=1200&amp;q=75",
+        "alt": "Kingston FURY Renegade PCIe 4.0 NVMe official luxury photography",
+        "attribution": "Product photography © Kingston",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "FURY Renegade PCIe 4.0 NVMe",
@@ -1069,12 +1069,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://media.kingston.com/kingston/product/kingston-nv2-nvme.png",
-        "source": "https://www.kingston.com/en/ssd/nv2-nvme",
-        "alt": "Kingston NV2 PCIe 4.0 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Kingston",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-kingston-kingston-nv2-nvme.webp",
+        "source": "https://vmart.pk/cdn/shop/files/Kingston-NV2-PCIe-4.0-NVMe-SSD-4TB_1200x.webp?v=1737576715",
+        "alt": "Kingston NV2 PCIe 4.0 NVMe official luxury photography",
+        "attribution": "Product photography © Kingston",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "NV2 PCIe 4.0 NVMe",
@@ -1125,12 +1125,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://media.kingston.com/kingston/product/kingston-kc600-sata.png",
-        "source": "https://www.kingston.com/en/ssd/kc600-sata",
-        "alt": "Kingston KC600 SATA 2.5\" official technical reference",
-        "attribution": "Product specifications and photography © Kingston",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-kingston-kingston-kc600-sata.webp",
+        "source": "https://dellwa.com/wp-content/uploads/2021/11/SKC600-256G.jpg",
+        "alt": "Kingston KC600 SATA 2.5\" official luxury photography",
+        "attribution": "Product photography © Kingston",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "KC600 SATA 2.5\"",
@@ -1181,12 +1181,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.seagate.com/content/dam/seagate/products/seagate-firecuda-540.png",
-        "source": "https://www.seagate.com/products/firecuda-540",
-        "alt": "Seagate FireCuda 540 PCIe Gen5 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Seagate",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-seagate-seagate-firecuda-540.webp",
+        "source": "https://img.unikoshardware.com/wp-content/uploads/2023/06/Seagate-FireCuda-540-SSD.webp",
+        "alt": "Seagate FireCuda 540 PCIe Gen5 NVMe official luxury photography",
+        "attribution": "Product photography © Seagate",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "FireCuda 540 PCIe Gen5 NVMe",
@@ -1237,12 +1237,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.seagate.com/content/dam/seagate/products/seagate-firecuda-530.png",
-        "source": "https://www.seagate.com/products/firecuda-530",
-        "alt": "Seagate FireCuda 530 PCIe Gen4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Seagate",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-seagate-seagate-firecuda-530.webp",
+        "source": "https://assets.msy.com.au/newsite/images/202208/source_img/SSD-Hard-Drives-Seagate-500GB-FireCuda-530-M-2-NVMe-SSD-with-Heatsink-3.jpg",
+        "alt": "Seagate FireCuda 530 PCIe Gen4 NVMe official luxury photography",
+        "attribution": "Product photography © Seagate",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "FireCuda 530 PCIe Gen4 NVMe",
@@ -1293,12 +1293,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.seagate.com/content/dam/seagate/products/seagate-barracuda-510.png",
-        "source": "https://www.seagate.com/products/barracuda-510",
-        "alt": "Seagate BarraCuda 510 PCIe Gen3 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Seagate",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-seagate-seagate-barracuda-510.webp",
+        "source": "https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/seagate-barracuda-510-3-bca9a2ef-dd8b-4c29-96c0-ae285b1b5f8f.jpg?v=1568458046467",
+        "alt": "Seagate BarraCuda 510 PCIe Gen3 NVMe official luxury photography",
+        "attribution": "Product photography © Seagate",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "BarraCuda 510 PCIe Gen3 NVMe",
@@ -1349,12 +1349,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://ssd.skhynix.com/assets/images/sk-hynix-platinum-p41.png",
-        "source": "https://ssd.skhynix.com/platinum-p41",
-        "alt": "SK hynix Platinum P41 PCIe 4.0 NVMe official technical reference",
-        "attribution": "Product specifications and photography © SK hynix",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-sk-hynix-sk-hynix-platinum-p41.webp",
+        "source": "https://idergame.ma/wp-content/uploads/2026/02/24.1-1200x1200.jpg",
+        "alt": "SK hynix Platinum P41 PCIe 4.0 NVMe official luxury photography",
+        "attribution": "Product photography © SK hynix",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Platinum P41 PCIe 4.0 NVMe",
@@ -1405,12 +1405,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://ssd.skhynix.com/assets/images/sk-hynix-gold-p31.png",
-        "source": "https://ssd.skhynix.com/gold-p31",
-        "alt": "SK hynix Gold P31 PCIe 3.0 NVMe official technical reference",
-        "attribution": "Product specifications and photography © SK hynix",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-sk-hynix-sk-hynix-gold-p31.webp",
+        "source": "https://promart.vteximg.com.br/arquivos/ids/7419375-1000-1000/image-f1842b9e9c304d78b64fdef96c084c8c.jpg?v=638272737824430000",
+        "alt": "SK hynix Gold P31 PCIe 3.0 NVMe official luxury photography",
+        "attribution": "Product photography © SK hynix",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Gold P31 PCIe 3.0 NVMe",
@@ -1461,12 +1461,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://ssd.skhynix.com/assets/images/sk-hynix-gold-s31.png",
-        "source": "https://ssd.skhynix.com/gold-s31",
-        "alt": "SK hynix Gold S31 SATA 2.5\" official technical reference",
-        "attribution": "Product specifications and photography © SK hynix",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-sk-hynix-sk-hynix-gold-s31.webp",
+        "source": "https://shop.pcpartslv.com/cdn/shop/files/18a26264-eb8f-4c2f-87a0-6ba5b9753de0.jpg?v=1760745503&amp;width=3840",
+        "alt": "SK hynix Gold S31 SATA 2.5\" official luxury photography",
+        "attribution": "Product photography © SK hynix",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Gold S31 SATA 2.5\"",
@@ -1517,12 +1517,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.solidigm.com/images/solidigm-p44-pro.png",
-        "source": "https://www.solidigm.com/products/client/p44-pro.html",
-        "alt": "Solidigm Solidigm P44 Pro PCIe 4.0 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Solidigm",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-solidigm-solidigm-p44-pro.webp",
+        "source": "https://i5.walmartimages.com/seo/Solidigm-P44-Pro-512GB-M-2-2280-PCIe-4-0-NVMe-Gen4-Gaming-TLC-Internal-Solid-State-Drive-SSD-SSDPFKKW512H7X1_ebd9d4e1-be8b-468d-b87b-0e665d745b56.097cd05b7ca9c7f641c8ef62ba15cc7b.jpeg",
+        "alt": "Solidigm Solidigm P44 Pro PCIe 4.0 NVMe official luxury photography",
+        "attribution": "Product photography © Solidigm",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Solidigm P44 Pro PCIe 4.0 NVMe",
@@ -1573,12 +1573,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.solidigm.com/images/solidigm-p41-plus.png",
-        "source": "https://www.solidigm.com/products/client/p41-plus.html",
-        "alt": "Solidigm Solidigm P41 Plus PCIe 4.0 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Solidigm",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-solidigm-solidigm-p41-plus.webp",
+        "source": "https://www.adorama.com/images/Large/SDKNU010TZX1.jpg",
+        "alt": "Solidigm Solidigm P41 Plus PCIe 4.0 NVMe official luxury photography",
+        "attribution": "Product photography © Solidigm",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Solidigm P41 Plus PCIe 4.0 NVMe",
@@ -1629,12 +1629,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://www.solidigm.com/images/solidigm-d5-p5430.png",
-        "source": "https://www.solidigm.com/products/client/d5-p5430.html",
-        "alt": "Solidigm Solidigm D5-P5430 Enterprise NVMe official technical reference",
-        "attribution": "Product specifications and photography © Solidigm",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-solidigm-solidigm-d5-p5430.webp",
+        "source": "https://product.onetrail.net/3party/Cnet/css/large/A5/0E/A50EF931-4B46-4F0B-83B3-1556668671D2.jpg",
+        "alt": "Solidigm Solidigm D5-P5430 Enterprise NVMe official luxury photography",
+        "attribution": "Product photography © Solidigm",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Solidigm D5-P5430 Enterprise NVMe",
@@ -1685,12 +1685,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-mp700-pro.png",
-        "source": "https://www.corsair.com/us/en/p/storage/mp700-pro",
-        "alt": "Corsair MP700 PRO Gen5 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-corsair-corsair-mp700-pro.webp",
+        "source": "https://m.media-amazon.com/images/I/711HC3od8jL._AC_SL1500_.jpg",
+        "alt": "Corsair MP700 PRO Gen5 NVMe official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "MP700 PRO Gen5 NVMe",
@@ -1741,12 +1741,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-mp600-pro-lpx.png",
-        "source": "https://www.corsair.com/us/en/p/storage/mp600-pro-lpx",
-        "alt": "Corsair MP600 PRO LPX Gen4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-corsair-corsair-mp600-pro-lpx.webp",
+        "source": "https://rbtechngames.com/wp-content/uploads/2024/04/rbtech_corsair_mp600_pro_lpx_1tb_WH_1.jpg",
+        "alt": "Corsair MP600 PRO LPX Gen4 NVMe official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "MP600 PRO LPX Gen4 NVMe",
@@ -1797,12 +1797,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-mp600-elite.png",
-        "source": "https://www.corsair.com/us/en/p/storage/mp600-elite",
-        "alt": "Corsair MP600 ELITE Gen4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-corsair-corsair-mp600-elite.webp",
+        "source": "https://www.tpstech.in/cdn/shop/files/2Corsair_MP600_Elite_1TB_PCIe_Gen4_NVMe_M.2_Internal_SSD-tpstech.in.webp?v=1763457564&amp;width=1946",
+        "alt": "Corsair MP600 ELITE Gen4 NVMe official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "MP600 ELITE Gen4 NVMe",
@@ -1853,12 +1853,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://assets.corsair.com/image/upload/corsair-mp600-core-xt.png",
-        "source": "https://www.corsair.com/us/en/p/storage/mp600-core-xt",
-        "alt": "Corsair MP600 CORE XT Gen4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Corsair",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-corsair-corsair-mp600-core-xt.webp",
+        "source": "https://img.yenieera22.com/cdn/1000/1-f33551.png",
+        "alt": "Corsair MP600 CORE XT Gen4 NVMe official luxury photography",
+        "attribution": "Product photography © Corsair",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "MP600 CORE XT Gen4 NVMe",
@@ -1909,12 +1909,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://sabrent.com/cdn/shop/products/sabrent-rocket-5.png",
-        "source": "https://sabrent.com/products/rocket-5",
-        "alt": "Sabrent Rocket 5 PCIe Gen 5 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Sabrent",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-sabrent-sabrent-rocket-5.webp",
+        "source": "https://m.media-amazon.com/images/I/61fKrsw5K9L._AC_.jpg",
+        "alt": "Sabrent Rocket 5 PCIe Gen 5 NVMe official luxury photography",
+        "attribution": "Product photography © Sabrent",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Rocket 5 PCIe Gen 5 NVMe",
@@ -1965,12 +1965,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://sabrent.com/cdn/shop/products/sabrent-rocket-4-plus-g.png",
-        "source": "https://sabrent.com/products/rocket-4-plus-g",
-        "alt": "Sabrent Rocket 4 Plus-G Gaming NVMe official technical reference",
-        "attribution": "Product specifications and photography © Sabrent",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-sabrent-sabrent-rocket-4-plus-g.webp",
+        "source": "https://pics.computerbase.de/1/0/4/4/9/6-330cb56d5e130383/3-1080.b7e585b6.jpg",
+        "alt": "Sabrent Rocket 4 Plus-G Gaming NVMe official luxury photography",
+        "attribution": "Product photography © Sabrent",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Rocket 4 Plus-G Gaming NVMe",
@@ -2021,12 +2021,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://sabrent.com/cdn/shop/products/sabrent-rocket-4-plus.png",
-        "source": "https://sabrent.com/products/rocket-4-plus",
-        "alt": "Sabrent Rocket 4 Plus NVMe official technical reference",
-        "attribution": "Product specifications and photography © Sabrent",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-sabrent-sabrent-rocket-4-plus.webp",
+        "source": "https://m.media-amazon.com/images/I/71VyFwKPVFL._SL1500_.jpg",
+        "alt": "Sabrent Rocket 4 Plus NVMe official luxury photography",
+        "attribution": "Product photography © Sabrent",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Rocket 4 Plus NVMe",
@@ -2077,12 +2077,12 @@
         "heatsinkIncluded": false
       },
       "media": {
-        "url": "https://sabrent.com/cdn/shop/products/sabrent-rocket-q4.png",
-        "source": "https://sabrent.com/products/rocket-q4",
-        "alt": "Sabrent Rocket Q4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Sabrent",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-sabrent-sabrent-rocket-q4.webp",
+        "source": "https://sabrent.com/cdn/shop/products/ROCKET4Q-Main-2_35704f74-6bc2-4e7f-a73b-2b2e05929dd3_2048x.jpg?v=1635798510",
+        "alt": "Sabrent Rocket Q4 NVMe official luxury photography",
+        "attribution": "Product photography © Sabrent",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Rocket Q4 NVMe",
@@ -2133,12 +2133,12 @@
         "heatsinkIncluded": true
       },
       "media": {
-        "url": "https://www.adata.com/upload/downloadfile/adata-xpg-gammix-s70-blade.png",
-        "source": "https://www.adata.com/en/consumer/xpg-gammix-s70-blade",
-        "alt": "ADATA XPG GAMMIX S70 BLADE PCIe Gen4 official technical reference",
-        "attribution": "Product specifications and photography © ADATA",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-adata-adata-xpg-gammix-s70-blade.webp",
+        "source": "https://files.pccasegear.com/images/AGAMMIXS70B-4T-CS-add5.jpg",
+        "alt": "ADATA XPG GAMMIX S70 BLADE PCIe Gen4 official luxury photography",
+        "attribution": "Product photography © ADATA",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "XPG GAMMIX S70 BLADE PCIe Gen4",
@@ -2189,12 +2189,12 @@
         "heatsinkIncluded": true
       },
       "media": {
-        "url": "https://www.adata.com/upload/downloadfile/adata-legend-960-max.png",
-        "source": "https://www.adata.com/en/consumer/legend-960-max",
-        "alt": "ADATA Legend 960 MAX PCIe Gen4 official technical reference",
-        "attribution": "Product specifications and photography © ADATA",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-adata-adata-legend-960-max.webp",
+        "source": "https://webapi3.adata.com/storage/product/legend_960_max_p_1_1000x1000_gd.jpg",
+        "alt": "ADATA Legend 960 MAX PCIe Gen4 official luxury photography",
+        "attribution": "Product photography © ADATA",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Legend 960 MAX PCIe Gen4",
@@ -2245,12 +2245,12 @@
         "heatsinkIncluded": true
       },
       "media": {
-        "url": "https://www.adata.com/upload/downloadfile/adata-legend-850-lite.png",
-        "source": "https://www.adata.com/en/consumer/legend-850-lite",
-        "alt": "ADATA Legend 850 LITE PCIe Gen4 official technical reference",
-        "attribution": "Product specifications and photography © ADATA",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-adata-adata-legend-850-lite.webp",
+        "source": "https://webapi3.adata.com/storage/product/legend_850_lite_3.png",
+        "alt": "ADATA Legend 850 LITE PCIe Gen4 official luxury photography",
+        "attribution": "Product photography © ADATA",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Legend 850 LITE PCIe Gen4",
@@ -2301,12 +2301,12 @@
         "heatsinkIncluded": true
       },
       "media": {
-        "url": "https://www.adata.com/upload/downloadfile/adata-ultimate-su800.png",
-        "source": "https://www.adata.com/en/consumer/ultimate-su800",
-        "alt": "ADATA Ultimate SU800 SATA 2.5\" official technical reference",
-        "attribution": "Product specifications and photography © ADATA",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-adata-adata-ultimate-su800.webp",
+        "source": "https://down-my.img.susercontent.com/file/15a2c957081050671e845b9f7d4657fe",
+        "alt": "ADATA Ultimate SU800 SATA 2.5\" official luxury photography",
+        "attribution": "Product photography © ADATA",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "Ultimate SU800 SATA 2.5\"",
@@ -2357,12 +2357,12 @@
         "heatsinkIncluded": true
       },
       "media": {
-        "url": "https://www.nextorage.net/images/nextorage-nem-pa-gen4.png",
-        "source": "https://www.nextorage.net/en/ssds/nem-pa-gen4",
-        "alt": "Nextorage NEM-PA Series Gen4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Nextorage",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-nextorage-nextorage-nem-pa-gen4.webp",
+        "source": "https://cdn.tsukumo.co.jp/static/img/4907953635418/02.jpg",
+        "alt": "Nextorage NEM-PA Series Gen4 NVMe official luxury photography",
+        "attribution": "Product photography © Nextorage",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "NEM-PA Series Gen4 NVMe",
@@ -2413,12 +2413,12 @@
         "heatsinkIncluded": true
       },
       "media": {
-        "url": "https://www.nextorage.net/images/nextorage-nn5pro-gen5.png",
-        "source": "https://www.nextorage.net/en/ssds/nn5pro-gen5",
-        "alt": "Nextorage NN5PRO Series Gen5 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Nextorage",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-nextorage-nextorage-nn5pro-gen5.webp",
+        "source": "https://m.media-amazon.com/images/I/618RS84QXGL._AC_.jpg",
+        "alt": "Nextorage NN5PRO Series Gen5 NVMe official luxury photography",
+        "attribution": "Product photography © Nextorage",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "NN5PRO Series Gen5 NVMe",
@@ -2469,12 +2469,12 @@
         "heatsinkIncluded": true
       },
       "media": {
-        "url": "https://www.nextorage.net/images/nextorage-g-series-gen4.png",
-        "source": "https://www.nextorage.net/en/ssds/g-series-gen4",
-        "alt": "Nextorage G Series Gen4 NVMe official technical reference",
-        "attribution": "Product specifications and photography © Nextorage",
-        "reviewedAt": "2026-10-11",
-        "usage": "external_reference"
+        "url": "/images/products/internal-ssds-prod-internal-ssds-nextorage-nextorage-g-series-gen4.webp",
+        "source": "https://cdn.visaovip.com/img/prod/ssd-nextorage-m2-1tb-g-series-le-nvme-nn4le-1tb2cngne/47434/670134.jpg",
+        "alt": "Nextorage G Series Gen4 NVMe official luxury photography",
+        "attribution": "Product photography © Nextorage",
+        "reviewedAt": "2026-10-14",
+        "usage": "catalog_packshot"
       },
       "leafType": "internal-ssds",
       "modelName": "G Series Gen4 NVMe",

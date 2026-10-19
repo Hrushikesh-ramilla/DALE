@@ -25,6 +25,7 @@ export interface ProductRevisionInput {
   specs?: string[];
   attributes?: Record<string, unknown>;
   media?: Product["media"];
+  expectedRecordHash?: string;
 }
 
 /** Privileged local operator service. No anonymous publish endpoint exists. */
@@ -72,7 +73,17 @@ export async function stageCatalog(input: unknown) {
   });
 }
 
-export async function publishCatalog(id: string, expectedHash: string) {
+export interface ReviewedOfferReplacement {
+  oldProductId: string;
+  newProductId: string;
+  expectedRecordHash: string;
+}
+
+export async function publishCatalog(
+  id: string,
+  expectedHash: string,
+  replacements: ReviewedOfferReplacement[] = [],
+) {
   const database = await getDatabase();
   return database.transaction(async (sql) => {
     await sql.query("SELECT pg_advisory_xact_lock(72190462)");
@@ -87,11 +98,72 @@ export async function publishCatalog(id: string, expectedHash: string) {
     const row = release.rows[0];
     if (!row || row.content_hash !== expectedHash)
       throw new Error("Reviewed release hash does not match.");
-    if (row.status === "published")
+    if (row.status === "published") {
+      if (replacements.length) {
+        const audit = await sql.query<{
+          payload: {
+            releaseHash: string;
+            replacements: ReviewedOfferReplacement[];
+          };
+        }>(
+          "SELECT payload FROM catalog_operator_jobs WHERE id=$1 AND status='completed'",
+          [`media-replacement:${id}`],
+        );
+        const payload = audit.rows[0]?.payload;
+        if (
+          payload?.releaseHash !== expectedHash ||
+          payload.replacements.length !== replacements.length ||
+          replacements.some((item, index) => {
+            const stored = payload.replacements[index];
+            return (
+              stored.oldProductId !== item.oldProductId ||
+              stored.newProductId !== item.newProductId ||
+              stored.expectedRecordHash !== item.expectedRecordHash
+            );
+          })
+        )
+          throw new Error("Published replacement audit does not match.");
+      }
       return { id, status: "published", existing: true };
+    }
     if (row.status !== "staged")
       throw new Error("A retired release cannot be republished.");
     const manifest = parseAnyCatalogManifest(row.manifest);
+    if (
+      new Set(replacements.map((item) => item.oldProductId)).size !==
+        replacements.length ||
+      new Set(replacements.map((item) => item.newProductId)).size !==
+        replacements.length
+    )
+      throw new Error("Replacement identities must be unique.");
+    for (const replacement of replacements) {
+      const next = manifest.products.find(
+        (product) => product.id === replacement.newProductId,
+      );
+      const previous = await sql.query<{
+        record: Product;
+        publication: string;
+      }>(
+        "SELECT record,publication FROM catalog_products WHERE id=$1 FOR UPDATE",
+        [replacement.oldProductId],
+      );
+      const old = previous.rows[0];
+      if (
+        !next ||
+        next.comparisonOnly ||
+        !old ||
+        old.publication !== "published" ||
+        next.id === replacement.oldProductId ||
+        next.category !== old.record.category ||
+        next.brand !== old.record.brand ||
+        createHash("sha256")
+          .update(JSON.stringify(old.record))
+          .digest("hex") !== replacement.expectedRecordHash
+      )
+        throw new Error(
+          "Replacement review is stale or product identities do not match.",
+        );
+    }
     if (
       manifest.products.some(
         (product) => !product.comparisonOnly && !product.media,
@@ -110,9 +182,7 @@ export async function publishCatalog(id: string, expectedHash: string) {
       const p2 = p as Record<string, unknown>;
       const brand = p.brand || p.attributes?.brand || null;
       const modelName =
-        (p2.modelName as string | undefined) ||
-        p.attributes?.modelName ||
-        null;
+        (p2.modelName as string | undefined) || p.attributes?.modelName || null;
       const leafType =
         (p2.leafType as string | undefined) ||
         (isLeafTypeKey(p.category) ? p.category : null);
@@ -138,6 +208,20 @@ export async function publishCatalog(id: string, expectedHash: string) {
       AS items(id text,category text,price integer,record jsonb,publication text,leaf_type text,brand text,model_name text,sku_variant text,revision_id text)`,
       [JSON.stringify(records), id],
     );
+
+    if (replacements.length) {
+      await sql.query(
+        "UPDATE catalog_products SET publication='retired' WHERE id=ANY($1::text[])",
+        [replacements.map((item) => item.oldProductId)],
+      );
+      await sql.query(
+        "INSERT INTO catalog_operator_jobs(id,kind,payload,status,completed_at) VALUES($1,'review_revision',$2::jsonb,'completed',now())",
+        [
+          `media-replacement:${id}`,
+          JSON.stringify({ releaseHash: expectedHash, replacements }),
+        ],
+      );
+    }
 
     // Persist device accessory relations if specified
     for (const p of manifest.products) {
@@ -244,6 +328,16 @@ export async function createProductRevision(input: ProductRevisionInput) {
       throw new Error(`Product ${input.productId} not found.`);
     }
     const current = productRes.rows[0];
+    if (
+      input.expectedRecordHash &&
+      createHash("sha256")
+        .update(JSON.stringify(current.record))
+        .digest("hex") !== input.expectedRecordHash
+    ) {
+      throw new Error(
+        "Product changed since repair review; inspect the current record before retrying.",
+      );
+    }
 
     const revCheck = await sql.query<{ revision_id: string }>(
       "SELECT revision_id FROM catalog_fact_revisions WHERE revision_id=$1",
@@ -278,7 +372,7 @@ export async function createProductRevision(input: ProductRevisionInput) {
     const skuVariant =
       input.skuVariant !== undefined
         ? input.skuVariant
-        : (current.sku_variant || current.record.attributes?.size || null);
+        : current.sku_variant || current.record.attributes?.size || null;
 
     await sql.query(
       `INSERT INTO catalog_fact_revisions (
@@ -309,6 +403,7 @@ export async function createProductRevision(input: ProductRevisionInput) {
     const updatedRecord: Product = {
       ...current.record,
       brand,
+      source: input.sourceUrl,
       price: input.price ?? current.price,
       specs: input.specs ?? current.record.specs,
       attributes: updatedAttributes as any,
