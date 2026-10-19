@@ -150,6 +150,39 @@ Final production artifact and visible-browser acceptance for runtime source base
 
 The local application is running at http://localhost:3000/department/electronics with the private model and embedding services. This completes the targeted local buyer regression repair. It does not close the release gates above: some contextual lookups and compound replies still take around 20 seconds, joint 4 GiB resource/concurrency acceptance remains open, and the hosted EC2 build has not been updated by this repair.
 
+### Local latency repair — 2026-10-19
+
+The CPU measurements above are historical. The local model launcher had forced `-ngl 0` even though this laptop has an NVIDIA RTX 3050 Laptop GPU (4 GiB VRAM). Runtime commit `c02fb13` adds an isolated, checksum-pinned CUDA 12.4 runtime and explicit CPU/GPU selection. It preserves the CPU runtime and refuses an incompatible or unverified GPU profile. The current ignored local profile selects CUDA, two CPU threads and main-model-verified n-gram speculative decoding for the existing LFM model; no cloud API, replacement answer cache or hardcoded prompt router is involved. Vision projection remains on CPU and was not requalified by these text-agent probes.
+
+Runtime commit `8ced00b` narrows named-product database reads to detected catalog brands inside a read-only repeatable-read transaction, skips irrelevant full-document scoring, and notifies SSE subscribers immediately after committed owned-state changes. The existing two-second cross-process/authentication fallback remains. Default prose is shorter without dropping requested operations. Prices, stock, identities, ownership and financial approval still come from the real services.
+
+Latest uncontended awake real-model run: **8/8 functional checks passed; 2/8 complete answers were within 1,000 ms**. The universal one-second requirement is **not met**. These are individual local samples, not population latency percentiles, concurrent-user results or cold-start guarantees.
+
+| Buyer workflow | Previous CPU | Current GPU |
+| --- | ---: | ---: |
+| Named LV listing absent; no unrelated substitution | 9.96 s | 1.05 s |
+| Misspelled Omega identity and variant prices | 5.59 s | 0.57 s |
+| Independent actual headphone and price | 13.49 s | 1.24 s |
+| Contextual wishlist save | 10.37 s | 1.25 s |
+| Compound collection correction, unrelated item retained | 20.23 s | 1.58 s |
+| General conversation, no shopping mutation | 8.71 s | 0.86 s |
+| Fresh lookup plus wishlist action | 21.00 s | 1.89 s |
+| Atomic wishlist-to-cart move | 11.69 s | 1.16 s |
+
+Raw receipts: `.data/concierge-verification/buyer-cpu-baseline.json` and `buyer-live-vision-baseline.json`. A prior GPU run with a roughly 60-second outlier is preserved as `buyer-gpu-power-interruption.json`; Windows recorded power-source change and Modern Standby/resume during that run at 22:14 IST. It is not silently discarded. Startup prompt warm-up is measured separately. The inference evaluator records actual per-generation runtime timings; the browser evaluator measures click-to-visible completion directly, without one-second polling quantization or screenshot encoding time.
+
+Focused contracts: **69/69 tests across five files pass**, including commit/rollback notifications, owner separation, notification races, identity ambiguity, transport, persisted references and atomic collection moves. Scoped lint passes. These overlapping counts must not be added to older suites. Final artifact and visible-browser evidence for this repair follow below.
+
+Final local artifact, source base `8ced00b`:
+
+- Production build passed compilation, TypeScript, all 37 static pages and standalone preparation. The local preview shares workspace public assets through the existing opt-in junction; it is not a portable release package.
+- **8/8 production-browser contracts passed in 1.1 minutes**, using a controlled provider and real application/database/browser services. These exercise identity behavior, group checkout review, actual browser effects, provider failures, cross-session isolation, recovery, authentication and manually selected filters.
+- **3/3 independent real-model category checks passed**: Creed Aventus exact offer in 1.33 s, Apple iPhone 16e 256 GB Black in 1.18 s, and Oakley Jawbreaker OO9290-2031 in 1.40 s. These are separate from the native eight-case run and do not certify every catalog record.
+- **6/6 actual production-browser correctness checks passed**: five replies plus reload persistence. Click-to-visible complete responses: LV absence **1.526 s**, Omega typo/variant clarification **0.533 s**, Creed exact price **1.285 s**, contextual wishlist save **1.289 s**, and atomic cart move **1.399 s**. Only **1/5** timed browser replies met the one-second target. The exact fragrance's committed catalog facts arrived through SSE at **0.805 s**, before its complete prose. Screenshots of the Omega choices and cart move were visually inspected; actual cart count is one, and reload preserves the source removal/destination addition. No payment was submitted.
+- Build and test logs: `buyer-gpu-build.log`, `buyer-gpu-unit.log`, `buyer-gpu-playwright.log`, `buyer-gpu-awake-live.log`, `buyer-gpu-catalog-live.log`, and `buyer-browser-gpu-final.log`, all under `.data/concierge-verification/`. Human-readable proof with before/after timings, raw receipts and screenshots: `buyer-report.html`, generated by `scripts/report-buyer-verification.mjs`. Functional passes are explicitly separated from the failed universal latency target.
+
+To reproduce the local acceleration, install `node scripts/setup-local-gpu-runtime.mjs` once on a compatible Windows NVIDIA machine, stop only the existing owned model process and wait for port 8081 to close, then run `node scripts/start-local-model.mjs`. The launcher reads the ignored `.data/self-hosted/local-runtime.json` profile; `LOCAL_MODEL_BACKEND=cpu` explicitly selects the retained CPU runtime, and `LOCAL_MODEL_SPECULATION=none` disables speculative decoding. Start the app with the existing local launcher. This section qualifies local text-agent behavior only. The app and private model/embedding services were left running locally after verification. No EC2 operation or cloud AI call was made for this repair.
+
 Historical receipts for earlier artifacts:
 
 - Continuation production artifact `ba3517a`: `npm run build` **passed**, including TypeScript and standalone preparation. Seven production-browser journeys **passed in 58.3 seconds**, including two independent guest sessions joining the same group, selecting the owned group in the actual cart UI, reload persistence and a discounted fixture checkout order with no captured payment. The six earlier journeys also remain green.
