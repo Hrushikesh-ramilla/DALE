@@ -74,6 +74,14 @@ const lookupArguments = z
     limit: z.number().int().min(1).max(6).default(3),
   })
   .strict();
+const catalogSearchArguments = searchConstraints.safeExtend({
+  replace_identity_scope: z
+    .boolean()
+    .default(false)
+    .describe(
+      "Set true only for alternatives or an independent search explicitly requested by the customer in this same turn. Otherwise an unavailable named product remains the primary result; exploratory searches cannot replace it.",
+    ),
+});
 const collectionArguments = basketInput.extend({
   action: basketInput.shape.action.exclude(["move"]),
 });
@@ -89,6 +97,10 @@ async function recordedSearch(
   actor: Actor,
   input: unknown,
   signal?: AbortSignal,
+  presentation: {
+    origin: "lookup" | "search";
+    replacesIdentityScope?: boolean;
+  } = { origin: "search" },
 ) {
   const result = await hybridSearch(input, signal);
   const id = randomUUID();
@@ -96,6 +108,7 @@ async function recordedSearch(
     s.resultSets.push({
       id,
       turnId: s.turn?.id,
+      ...presentation,
       matchStatus: !result.constraints.query.trim()
         ? "structured"
         : result.mode !== "identity"
@@ -328,6 +341,7 @@ export const tools: ToolDefinition[] = [
           in_stock: false,
         },
         signal,
+        { origin: "lookup" },
       );
       const exact = result.identity_matches.every((m) => m.kind === "identity");
       const status = !result.total
@@ -372,11 +386,16 @@ export const tools: ToolDefinition[] = [
   {
     name: "search_catalog",
     description:
-      "Search live products with exact constraints in integer USD cents. match_mode=identity finds named products without substitutions; match_mode=semantic ranks descriptive preferences and does not establish exact identity. Empty query applies structured filters. Save ordered results for followups.",
-    input: searchConstraints,
+      "Search live products with exact constraints in integer USD cents. match_mode=identity finds named products without substitutions; match_mode=semantic ranks descriptive preferences and does not establish exact identity. Empty query applies structured filters. Save ordered results for followups. Do not widen a failed named lookup unless alternatives or an independent search were explicitly requested.",
+    input: catalogSearchArguments,
     effect: "read",
-    async execute(input, { actor, signal }) {
-      return recordedSearch(actor, input, signal);
+    async execute(raw, { actor, signal }) {
+      const { replace_identity_scope, ...input } =
+        catalogSearchArguments.parse(raw);
+      return recordedSearch(actor, input, signal, {
+        origin: "search",
+        replacesIdentityScope: replace_identity_scope,
+      });
     },
   },
   {

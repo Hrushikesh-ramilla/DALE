@@ -1,7 +1,8 @@
 import { chromium } from "@playwright/test";
 import { writeFile } from "node:fs/promises";
 import { setTimeout as delay } from "node:timers/promises";
-const quality = process.argv.includes("--gemini-quality");
+const qualityOnly = process.argv.includes("--quality-only");
+const quality = process.argv.includes("--gemini-quality") || qualityOnly;
 const paceMs = quality ? 8000 : 0;
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext();
@@ -72,8 +73,18 @@ try {
     const firstResultMs = await page.evaluate(
       () => globalThis.__buyerTiming?.firstResultMs ?? null,
     );
+    console.log(
+      JSON.stringify({
+        event: "buyer.browser.turn",
+        message,
+        elapsedMs,
+        status: view?.turn?.status,
+        provider: inference?.provider,
+        reply,
+      }),
+    );
     await page.screenshot({
-      path: `.data/concierge-verification/buyer-browser-${label}.png`,
+      path: `.data/concierge-verification/buyer-browser-${quality ? "gemini-" : ""}${label}.png`,
     });
     return {
       message,
@@ -86,117 +97,123 @@ try {
       view,
     };
   }
-  const absent = await turn("get me lv imagination perfume", "lv");
-  checks.push({
-    ...absent,
-    view: undefined,
-    products: absent.view?.products.map((p) => ({ id: p.id, name: p.name })),
-    passed:
-      absent.status === "completed" &&
-      absent.view.catalog_match_status === "not_found" &&
-      absent.view.products.length === 0 &&
-      /not|no|couldn.t|unable/i.test(absent.reply || ""),
-  });
-  const omega = await turn(
-    "get me omega peedmater and wat the cost ??",
-    "omega",
-  );
-  checks.push({
-    ...omega,
-    view: undefined,
-    products: omega.view?.products.map((p) => ({
-      id: p.id,
-      name: p.name,
-      price: p.price,
-    })),
-    passed:
-      omega.status === "completed" &&
-      omega.view.catalog_match_status === "choose_variant" &&
-      omega.view.products.length > 0 &&
-      omega.view.products.every(
-        (p) => p.brand === "Omega" && /Speedmaster/i.test(p.name),
-      ) &&
-      /which|choose|variant|options/i.test(omega.reply || ""),
-  });
-  const response = await context.request.get(
-    `${base}/api/copilot/search?filters=${encodeURIComponent(JSON.stringify({ categories: ["fragrance"], offset: 7, limit: 1 }))}`,
-  );
-  const product = (await response.json()).products?.[0];
-  if (!product) throw new Error("Independent fragrance sample unavailable");
-  const exact = await turn(
-    `Do you have ${product.name}, and what does it cost?`,
-    "fragrance",
-  );
-  const price = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(product.price / 100);
-  checks.push({
-    ...exact,
-    view: undefined,
-    expectedId: product.id,
-    expectedPrice: price,
-    products: exact.view?.products.map((p) => ({
-      id: p.id,
-      name: p.name,
-      price: p.price,
-    })),
-    passed:
-      exact.status === "completed" &&
-      exact.view.products.length === 1 &&
-      exact.view.products[0].id === product.id &&
-      exact.reply?.includes(price),
-  });
-  const saved = await turn(
-    "Save that exact fragrance to my wishlist. Do not add it to my cart.",
-    "wishlist",
-  );
-  checks.push({
-    ...saved,
-    view: undefined,
-    passed:
-      saved.status === "completed" &&
-      saved.view.basket.wishlist.some(
-        (item) => item.productId === product.id,
-      ) &&
-      saved.view.basket.cart.length === 0,
-  });
-  const moved = await turn(
-    "Move that fragrance from my wishlist to my cart, quantity one. Do not checkout.",
-    "cart",
-  );
-  checks.push({
-    ...moved,
-    view: undefined,
-    passed:
-      moved.status === "completed" &&
-      !moved.view.basket.wishlist.some(
-        (item) => item.productId === product.id,
-      ) &&
-      moved.view.basket.cart.some(
-        (item) => item.productId === product.id && item.quantity === 1,
-      ) &&
-      moved.view.confirmations.length === 0,
-  });
-  await page.reload();
-  const persisted = await (
-    await context.request.get(`${base}/api/copilot/state`)
-  ).json();
-  checks.push({
-    message: "Reload preserves actual cart and wishlist changes",
-    elapsedMs: 0,
-    passed:
-      persisted.basket.cart.some(
-        (item) => item.productId === product.id && item.quantity === 1,
-      ) &&
-      !persisted.basket.wishlist.some((item) => item.productId === product.id),
-  });
+  if (!qualityOnly) {
+    const absent = await turn("get me lv imagination perfume", "lv");
+    checks.push({
+      ...absent,
+      view: undefined,
+      products: absent.view?.products.map((p) => ({ id: p.id, name: p.name })),
+      passed:
+        absent.status === "completed" &&
+        absent.view.catalog_match_status === "not_found" &&
+        absent.view.products.length === 0 &&
+        /not|no|couldn.t|unable/i.test(absent.reply || ""),
+    });
+    const omega = await turn(
+      "get me omega peedmater and wat the cost ??",
+      "omega",
+    );
+    checks.push({
+      ...omega,
+      view: undefined,
+      products: omega.view?.products.map((p) => ({
+        id: p.id,
+        name: p.name,
+        price: p.price,
+      })),
+      passed:
+        omega.status === "completed" &&
+        omega.view.catalog_match_status === "choose_variant" &&
+        omega.view.products.length > 0 &&
+        omega.view.products.every(
+          (p) => p.brand === "Omega" && /Speedmaster/i.test(p.name),
+        ) &&
+        /which|choose|variant|options/i.test(omega.reply || ""),
+    });
+    const response = await context.request.get(
+      `${base}/api/copilot/search?filters=${encodeURIComponent(JSON.stringify({ categories: ["fragrance"], offset: 7, limit: 1 }))}`,
+    );
+    const product = (await response.json()).products?.[0];
+    if (!product) throw new Error("Independent fragrance sample unavailable");
+    const exact = await turn(
+      `Do you have ${product.name}, and what does it cost?`,
+      "fragrance",
+    );
+    const price = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+    }).format(product.price / 100);
+    checks.push({
+      ...exact,
+      view: undefined,
+      expectedId: product.id,
+      expectedPrice: price,
+      products: exact.view?.products.map((p) => ({
+        id: p.id,
+        name: p.name,
+        price: p.price,
+      })),
+      passed:
+        exact.status === "completed" &&
+        exact.view.products.length === 1 &&
+        exact.view.products[0].id === product.id &&
+        exact.reply?.includes(price),
+    });
+    const saved = await turn(
+      "Save that exact fragrance to my wishlist. Do not add it to my cart.",
+      "wishlist",
+    );
+    checks.push({
+      ...saved,
+      view: undefined,
+      passed:
+        saved.status === "completed" &&
+        saved.view.basket.wishlist.some(
+          (item) => item.productId === product.id,
+        ) &&
+        saved.view.basket.cart.length === 0,
+    });
+    const moved = await turn(
+      "Move that fragrance from my wishlist to my cart, quantity one. Do not checkout.",
+      "cart",
+    );
+    checks.push({
+      ...moved,
+      view: undefined,
+      passed:
+        moved.status === "completed" &&
+        !moved.view.basket.wishlist.some(
+          (item) => item.productId === product.id,
+        ) &&
+        moved.view.basket.cart.some(
+          (item) => item.productId === product.id && item.quantity === 1,
+        ) &&
+        moved.view.confirmations.length === 0,
+    });
+    await page.reload();
+    const persisted = await (
+      await context.request.get(`${base}/api/copilot/state`)
+    ).json();
+    checks.push({
+      message: "Reload preserves actual cart and wishlist changes",
+      elapsedMs: 0,
+      passed:
+        persisted.basket.cart.some(
+          (item) => item.productId === product.id && item.quantity === 1,
+        ) &&
+        !persisted.basket.wishlist.some(
+          (item) => item.productId === product.id,
+        ),
+    });
+  }
   if (quality) {
-    await page.getByText("Powered by Gemini", { exact: true }).waitFor();
+    const opener = page.getByRole("button", { name: "Open DALE assistant" });
+    if (await opener.isVisible()) await opener.click();
     const preference = await turn(
       "hmm any tom forb that smells like baby powder",
-      "gemini-preferences",
+      "preferences",
     );
+    await page.getByText("Powered by Gemini", { exact: true }).waitFor();
     checks.push({
       ...preference,
       view: undefined,
@@ -209,16 +226,18 @@ try {
       passed:
         preference.status === "completed" &&
         preference.view.inference?.provider === "gemini" &&
-        preference.view.catalog_match_status === "semantic_candidates" &&
         preference.view.products.length > 0 &&
         preference.view.products.every(
           (p) => p.brand.toLowerCase() === "tom ford",
         ) &&
-        !/tom forrest/i.test(preference.reply || ""),
+        !/tom forrest/i.test(preference.reply || "") &&
+        /powder|soft|talc|iris|cosmetic|musk|suede/i.test(
+          preference.reply || "",
+        ),
     });
     const explanation = await turn(
       "What does powdery mean in a perfume? Explain casually, I'm new to fragrances.",
-      "gemini-conversation",
+      "conversation",
     );
     checks.push({
       ...explanation,
@@ -250,14 +269,14 @@ const report = {
     measuredCases: checks.filter((c) => c.elapsedMs > 0).length,
     withinTarget: checks.filter((c) => c.elapsedMs > 0 && c.elapsedMs < 1000)
       .length,
-    allWithinTarget: checks
-      .filter((c) => c.elapsedMs > 0)
-      .every((c) => c.elapsedMs < 1000),
+    allWithinTarget:
+      checks.some((c) => c.elapsedMs > 0) &&
+      checks.filter((c) => c.elapsedMs > 0).every((c) => c.elapsedMs < 1000),
   },
   checks,
 };
 await writeFile(
-  `.data/concierge-verification/buyer-browser${quality ? "-gemini" : ""}.json`,
+  `.data/concierge-verification/buyer-browser${quality ? "-gemini" : ""}${qualityOnly ? "-quality-only" : ""}.json`,
   JSON.stringify(report, null, 2),
 );
 console.log(JSON.stringify(report, null, 2));

@@ -116,6 +116,44 @@ it("publishes only committed state and does not publish a rolled back mutation",
   expect(await rolledBack).toBe(false);
   expect((await readConcierge(fresh)).wishlist).toEqual([products[0].id]);
 });
+it("keeps a missing named identity primary unless the customer explicitly requests independent results or alternatives", async () => {
+  for (const alternatives of [false, true]) {
+    const buyer = (await customerSession({ action: "guest" })).actor;
+    vi.mocked(modelTurn).mockReset();
+    vi.mocked(modelTurn)
+      .mockResolvedValueOnce(
+        call("lookup_product", {
+          name: "nonexistent-identity-" + randomUUID(),
+        }),
+      )
+      .mockResolvedValueOnce(
+        call("search_catalog", {
+          categories: [products[0].category],
+          limit: 3,
+          replace_identity_scope: alternatives,
+        }),
+      )
+      .mockResolvedValueOnce({
+        role: "assistant",
+        content: alternatives
+          ? "The named item is absent; here are the requested alternatives."
+          : "The named item is absent.",
+      });
+    const view = await runConcierge(buyer, {
+      turn_id: randomUUID(),
+      message: alternatives
+        ? "Find an unavailable item, and show alternatives if absent."
+        : "Find my named item.",
+      client_context: context,
+    });
+    expect(view.turn?.status).toBe("completed");
+    expect(view.catalog_match_status).toBe(
+      alternatives ? "structured" : "not_found",
+    );
+    expect(view.products.length).toBe(alternatives ? 3 : 0);
+  }
+});
+
 it("uses stable product references without changing stored identities or unrelated arguments", async () => {
   const p = products[0];
   const encoded = (await modelProductReferences({
