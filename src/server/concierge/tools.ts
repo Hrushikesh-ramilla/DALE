@@ -74,6 +74,17 @@ const lookupArguments = z
     limit: z.number().int().min(1).max(6).default(3),
   })
   .strict();
+const collectionArguments = basketInput.extend({
+  action: basketInput.shape.action.exclude(["move"]),
+});
+const moveArguments = z
+  .object({
+    source_collection: z.enum(["cart", "wishlist"]),
+    destination_collection: z.enum(["cart", "wishlist"]),
+    items: basketInput.shape.items,
+    expected_revision: basketInput.shape.expected_revision,
+  })
+  .strict();
 async function recordedSearch(
   actor: Actor,
   input: unknown,
@@ -133,6 +144,34 @@ const basketProduct = (
   stock: p.stock,
   source: p.source,
 });
+async function changeCollection(raw: unknown, actor: Actor) {
+  const input = basketInput.parse(raw);
+  const state = await readConcierge(actor);
+  if (
+    ["add", "set", "move"].includes(input.action) &&
+    state.resultSets.some(
+      (set) =>
+        set.turnId === state.turn?.id &&
+        set.matchStatus === "choose_variant" &&
+        input.items.some((item) => set.productIds.includes(item.productId)),
+    )
+  )
+    throw new Error(
+      "The lookup has multiple or approximate variants. Ask the customer to choose the exact product before changing their collection.",
+    );
+  const result = await manageBasket(actor, input);
+  return {
+    ...result,
+    cart: result.cart.map((i) => ({
+      ...i,
+      product: i.product ? basketProduct(i.product) : null,
+    })),
+    wishlist: result.wishlist.map((i) => ({
+      ...i,
+      product: i.product ? basketProduct(i.product) : null,
+    })),
+  };
+}
 const contextArguments = z
   .object({
     result_set_id: z.string().uuid().optional(),
@@ -498,38 +537,36 @@ export const tools: ToolDefinition[] = [
     },
   },
   {
-    name: "manage_collection",
+    name: "move_collection",
     description:
-      "Manage owner cart or wishlist with exact product IDs. remove deletes only items[]; clear deletes EVERYTHING and is only for an explicit request to empty the whole collection. Preserve other items. groupId is only for select_group; forming groups cannot check out. Adding does not purchase or reserve stock. No automatic mutation retries.",
-    input: basketInput,
+      "Move exact items FROM source_collection TO destination_collection in one transaction. Removes the source entry; adds the stated quantity to an existing destination cart quantity. Other items are preserved. This is not checkout. Both collections must differ; source items must already exist.",
+    input: moveArguments,
     effect: "write",
     async execute(raw, { actor }) {
-      const input = basketInput.parse(raw);
-      const state = await readConcierge(actor);
-      if (
-        ["add", "set"].includes(input.action) &&
-        state.resultSets.some(
-          (set) =>
-            set.turnId === state.turn?.id &&
-            set.matchStatus === "choose_variant" &&
-            input.items.some((item) => set.productIds.includes(item.productId)),
-        )
-      )
+      const input = moveArguments.parse(raw);
+      if (input.source_collection === input.destination_collection)
         throw new Error(
-          "The lookup has multiple or approximate variants. Ask the customer to choose the exact product before changing their collection.",
+          "Source and destination must differ. No collection was changed.",
         );
-      const result = await manageBasket(actor, input);
-      return {
-        ...result,
-        cart: result.cart.map((i) => ({
-          ...i,
-          product: i.product ? basketProduct(i.product) : null,
-        })),
-        wishlist: result.wishlist.map((i) => ({
-          ...i,
-          product: i.product ? basketProduct(i.product) : null,
-        })),
-      };
+      return changeCollection(
+        {
+          collection: input.destination_collection,
+          action: "move",
+          items: input.items,
+          expected_revision: input.expected_revision,
+        },
+        actor,
+      );
+    },
+  },
+  {
+    name: "manage_collection",
+    description:
+      "Add, set quantity, remove or read owner cart/wishlist with exact product IDs. To MOVE between collections use move_collection instead. remove deletes only items[]; clear deletes EVERYTHING and needs an explicit empty-all request. Preserve other items. groupId is only for select_group. Adding does not purchase or reserve stock. No automatic mutation retries.",
+    input: collectionArguments,
+    effect: "write",
+    async execute(raw, { actor }) {
+      return changeCollection(raw, actor);
     },
   },
   {
@@ -829,6 +866,7 @@ export const toolOutputs: Record<string, z.ZodType> = {
     ]),
   }),
   manage_collection: collectionOutput,
+  move_collection: collectionOutput,
   get_user_account_context: z.object({
     purchase_requirements: z
       .object({ version: z.number().int(), input: briefSchema })

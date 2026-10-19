@@ -77,23 +77,17 @@ test("named lookup never renders an unrelated replacement and marks ambiguous va
       "No matching product was found under the requested identity and filters.",
     ),
   ).toBeVisible();
-  responses = [
-    nativeCall("lookup_product", { name: "omega peedmater" }),
-    {
-      role: "assistant",
-      content:
-        "Controlled provider: several watch variants match; choose the exact model.",
-    },
-  ];
+  responses = [nativeCall("lookup_product", { name: "omega peedmater" })];
   await page
     .getByLabel("Message DALE")
     .fill("get me omega peedmater and wat the cost");
   await page.getByRole("button", { name: "Send message", exact: true }).click();
   await expect(
     page.getByText(
-      "Controlled provider: several watch variants match; choose the exact model.",
+      /I found.*possible matches.*Which exact variant do you mean/,
     ),
   ).toBeVisible();
+  expect(responses).toHaveLength(0);
   const choices = await (await page.request.get("/api/copilot/state")).json();
   expect(choices.catalog_match_status).toBe("choose_variant");
   expect(choices.products.length).toBeGreaterThan(1);

@@ -43,9 +43,15 @@ if (process.argv.includes("--trace-model")) {
   const transport = globalThis.fetch;
   globalThis.fetch = async (...args) => {
     if (String(args[0]).includes("/chat/completions")) {
-      const sent=JSON.parse(String(args[1]?.body||"{}"));
-      const last=sent.messages?.at(-1);
-      if(last?.role === "tool") console.log(JSON.stringify({event:"buyer.live.observation",content:last.content}));
+      const sent = JSON.parse(String(args[1]?.body || "{}"));
+      const last = sent.messages?.at(-1);
+      if (last?.role === "tool")
+        console.log(
+          JSON.stringify({
+            event: "buyer.live.observation",
+            content: last.content,
+          }),
+        );
     }
     const result = await transport(...args);
     if (String(args[0]).includes("/chat/completions")) {
@@ -230,6 +236,21 @@ try {
       combined.view.basket.cart.length === 0 &&
       combined.view.confirmations.length === 0,
   });
+  const moved = await turn(
+    combinedActor,
+    "Move that item from my wishlist to my cart, quantity one. Do not checkout.",
+  );
+  results.push({
+    ...moved.result,
+    capability: "natural move request removes source and persists destination",
+    passed:
+      moved.view.turn?.status === "completed" &&
+      !moved.view.basket.wishlist.some((item) => item.productId === p.id) &&
+      moved.view.basket.cart.some(
+        (item) => item.productId === p.id && item.quantity === 1,
+      ) &&
+      moved.view.confirmations.length === 0,
+  });
 } catch (error) {
   results.push({
     passed: false,
@@ -246,7 +267,7 @@ const report = {
   candidate,
   warmupMs,
   scope:
-    "Actual local model and isolated real application database. No inference mocks, no payment calls. Six shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
+    "Actual local model and isolated real application database. No inference mocks, no payment calls. Seven shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
   passed: results.every((r) => r.passed),
   results,
 };

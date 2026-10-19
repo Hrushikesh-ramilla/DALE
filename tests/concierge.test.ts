@@ -150,6 +150,153 @@ it("uses stable product references without changing stored identities or unrelat
   );
   expect(JSON.stringify(operation)).toContain(encodeURIComponent(p.id));
 });
+it("moves only the requested item atomically in both directions and invalidates pending cart approval", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const [p, sentinel] = products.filter(
+    (p) => !p.comparisonOnly && p.stock > 2,
+  );
+  await manageBasket(fresh, {
+    collection: "wishlist",
+    action: "add",
+    items: [{ productId: p.id }, { productId: sentinel.id }],
+  });
+  await manageBasket(fresh, {
+    collection: "cart",
+    action: "add",
+    items: [{ productId: sentinel.id, quantity: 2 }],
+  });
+  const ref = ((await modelProductReferences({ id: p.id })) as { id: string })
+    .id;
+  await expect(
+    executeTool(
+      "move_collection",
+      {
+        source_collection: "wishlist",
+        destination_collection: "wishlist",
+        items: [{ productId: ref }],
+      },
+      { actor: fresh, ui: context },
+    ),
+  ).rejects.toThrow("must differ");
+  await executeTool(
+    "move_collection",
+    {
+      source_collection: "wishlist",
+      destination_collection: "cart",
+      items: [{ productId: ref, quantity: 1 }],
+    },
+    { actor: fresh, ui: context },
+  );
+  let state = await readConcierge(fresh);
+  expect(state.wishlist).toEqual([sentinel.id]);
+  expect(state.cart).toEqual(
+    expect.arrayContaining([
+      { productId: p.id, quantity: 1 },
+      { productId: sentinel.id, quantity: 2 },
+    ]),
+  );
+  const prepared = await prepareConfirmation(
+    fresh,
+    "checkout",
+    {},
+    "Test pending cart approval",
+  );
+  await manageBasket(fresh, {
+    collection: "wishlist",
+    action: "move",
+    items: [{ productId: p.id }],
+  });
+  state = await readConcierge(fresh);
+  expect(state.cart).toEqual([{ productId: sentinel.id, quantity: 2 }]);
+  expect(state.wishlist).toEqual([sentinel.id, p.id]);
+  expect(
+    Date.parse(
+      state.confirmations.find((c) => c.id === prepared.confirmation_id)!
+        .expiresAt,
+    ),
+  ).toBeLessThan(Date.now());
+  expect((await readConcierge(other)).cart).toEqual([]);
+  await expect(
+    manageBasket(fresh, {
+      collection: "wishlist",
+      action: "move",
+      items: [{ productId: p.id }],
+    }),
+  ).rejects.toThrow("source collection");
+});
+
+it("rolls back the whole move when one source product is unavailable", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const p = products.find((p) => !p.comparisonOnly && p.stock > 0)!;
+  await changeConcierge(fresh, (s) => {
+    s.wishlist = [p.id, "withdrawn-test-product"];
+  });
+  await expect(
+    manageBasket(fresh, {
+      collection: "cart",
+      action: "move",
+      items: [{ productId: p.id }, { productId: "withdrawn-test-product" }],
+    }),
+  ).rejects.toThrow("unavailable");
+  const state = await readConcierge(fresh);
+  expect(state.wishlist).toEqual([p.id, "withdrawn-test-product"]);
+  expect(state.cart).toEqual([]);
+  await expect(
+    manageBasket(fresh, { collection: "cart", action: "move", items: [] }),
+  ).rejects.toThrow("exact items");
+});
+it("merges a moved item with the existing cart quantity instead of silently reducing it", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const p = products.find((p) => !p.comparisonOnly && p.stock > 3)!;
+  await manageBasket(fresh, {
+    collection: "cart",
+    action: "add",
+    items: [{ productId: p.id, quantity: 3 }],
+  });
+  await manageBasket(fresh, {
+    collection: "wishlist",
+    action: "add",
+    items: [{ productId: p.id }],
+  });
+  await manageBasket(fresh, {
+    collection: "cart",
+    action: "move",
+    items: [{ productId: p.id, quantity: 1 }],
+  });
+  const state = await readConcierge(fresh);
+  expect(state.cart).toEqual([{ productId: p.id, quantity: 4 }]);
+  expect(state.wishlist).toEqual([]);
+});
+
+it("rejects a move out of the cart while checkout is executing", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const p = products.find((p) => !p.comparisonOnly && p.stock > 0)!;
+  await manageBasket(fresh, {
+    collection: "cart",
+    action: "add",
+    items: [{ productId: p.id }],
+  });
+  const confirmation = await prepareConfirmation(
+    fresh,
+    "checkout",
+    {},
+    "Test executing checkout",
+  );
+  await changeConcierge(fresh, (s) => {
+    s.confirmations.find((c) => c.id === confirmation.confirmation_id)!.status =
+      "executing";
+  });
+  await expect(
+    manageBasket(fresh, {
+      collection: "wishlist",
+      action: "move",
+      items: [{ productId: p.id }],
+    }),
+  ).rejects.toThrow("Checkout is executing");
+  expect((await readConcierge(fresh)).cart).toEqual([
+    { productId: p.id, quantity: 1 },
+  ]);
+});
 
 it("keeps variant ambiguity visible after reading details and blocks silently adding a candidate", async () => {
   const fresh = (await customerSession({ action: "guest" })).actor;
@@ -359,7 +506,8 @@ it("ends ambiguous single-item lookup at a truthful customer choice without anot
   expect(view.products.length).toBeGreaterThan(1);
   const text = view.messages.at(-1)?.text || "";
   expect(text).toContain("Which exact variant");
-  for (const p of view.products) expect(text).toContain(p.name);
+  expect(text).toContain(`${view.products.length} possible matches`);
+  expect(text).toContain("Recorded sandbox offer");
   expect(view.basket.wishlist).toEqual([]);
   expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
 });
