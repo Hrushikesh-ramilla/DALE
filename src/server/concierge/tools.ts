@@ -122,6 +122,16 @@ const summaryProduct = (
   missing: p.evidence?.missing || [],
   url: productPath(p.id),
 });
+const basketProduct = (
+  p: Awaited<ReturnType<typeof productDetails>>[number],
+) => ({
+  id: p.id,
+  name: p.name,
+  price_cents: p.price,
+  formatted_price: formatMoney(p.price),
+  stock: p.stock,
+  source: p.source,
+});
 const contextArguments = z
   .object({
     result_set_id: z.string().uuid().optional(),
@@ -306,13 +316,22 @@ export const tools: ToolDefinition[] = [
       return {
         status,
         products: status === "exact_product" ? records : [],
-        choices: status === "choose_variant" ? records : [],
+        choices:
+          status === "choose_variant"
+            ? records.map((p) => ({
+                id: p.id,
+                name: p.name,
+                formatted_price: p.formatted_price,
+                availability: p.comparisonOnly
+                  ? "comparison_only"
+                  : p.stock
+                    ? "available"
+                    : "out_of_stock",
+              }))
+            : [],
         total: result.total,
-        mode: result.mode,
-        match_scope:
-          "named_identity_only; approximate spellings and multiple variants require confirmation",
-        identity_matches: result.identity_matches,
-        result_set_id: result.result_set_id,
+        selection_required: status === "choose_variant",
+        ...(result.total ? { result_set_id: result.result_set_id } : {}),
       };
     },
   },
@@ -475,7 +494,7 @@ export const tools: ToolDefinition[] = [
   {
     name: "manage_collection",
     description:
-      "Read/add/set quantity/remove/clear persistent owner cart or wishlist. select_group selects an owned same-product group via items[].groupId (null clears it), one unit per shopper. Forming groups cannot check out yet. Exact product IDs; adding does not purchase or reserve stock. Mutations are not automatically retried.",
+      "Manage owner cart or wishlist with exact product IDs. remove deletes only items[]; clear deletes EVERYTHING and is only for an explicit request to empty the whole collection. Preserve other items. groupId is only for select_group; forming groups cannot check out. Adding does not purchase or reserve stock. No automatic mutation retries.",
     input: basketInput,
     effect: "write",
     async execute(input, { actor }) {
@@ -484,11 +503,11 @@ export const tools: ToolDefinition[] = [
         ...result,
         cart: result.cart.map((i) => ({
           ...i,
-          product: i.product ? summaryProduct(i.product) : null,
+          product: i.product ? basketProduct(i.product) : null,
         })),
         wishlist: result.wishlist.map((i) => ({
           ...i,
-          product: i.product ? summaryProduct(i.product) : null,
+          product: i.product ? basketProduct(i.product) : null,
         })),
       };
     },
@@ -713,15 +732,18 @@ const collectionOutput = z
 export const toolOutputs: Record<string, z.ZodType> = {
   lookup_product: z.object({
     status: z.enum(["not_found", "exact_product", "choose_variant"]),
-    choices: z.array(recordedProduct),
+    choices: z.array(
+      z.object({
+        id: z.string(),
+        name: z.string(),
+        formatted_price: z.string(),
+        availability: z.enum(["comparison_only", "available", "out_of_stock"]),
+      }),
+    ),
     products: z.array(recordedProduct),
     total: z.number().int().min(0),
-    mode: z.literal("identity"),
-    match_scope: z.string(),
-    identity_matches: z.array(
-      z.object({ product_id: z.string(), kind: z.string() }),
-    ),
-    result_set_id: z.string().uuid(),
+    selection_required: z.boolean(),
+    result_set_id: z.string().uuid().optional(),
   }),
   get_categories_and_brands: z.object({
     currency: z.literal("USD"),

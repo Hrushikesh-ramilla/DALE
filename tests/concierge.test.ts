@@ -179,6 +179,29 @@ it("does not display prior search cards under a new request", async () => {
   });
   expect(next.products).toEqual([]);
   expect((await readConcierge(fresh)).resultSets.length).toBe(1);
+  expect(
+    vi.mocked(modelTurn).mock.calls[0][0].find((m) => m.role === "user")
+      ?.content,
+  ).toBe("Look up a named product");
+});
+
+it("does not expose an empty search tracking ID as an apparent product identity", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const observation = await executeTool(
+    "lookup_product",
+    { name: `absent-${randomUUID()}` },
+    { actor: fresh, ui: context },
+  );
+  expect(observation.data).toEqual({
+    status: "not_found",
+    products: [],
+    choices: [],
+    total: 0,
+    selection_required: false,
+  });
+  expect((await readConcierge(fresh)).resultSets.at(-1)?.productIds).toEqual(
+    [],
+  );
 });
 
 it("persists cart and wishlist separately and rejects excess stock and foreign state", async () => {

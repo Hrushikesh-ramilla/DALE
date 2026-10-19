@@ -89,24 +89,32 @@ async function generate(
   let response: Response | undefined;
   for (let attempt = 0; attempt < 2; attempt++) {
     combined.throwIfAborted();
-    response = await fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(key ? { Authorization: `Bearer ${key}` } : {}),
-      },
-      body: JSON.stringify({
-        model,
-        messages,
-        tools: tools.map((t) => ({ type: "function", function: t })),
-        tool_choice: "auto",
-        parallel_tool_calls: false,
-        temperature: 0.2,
-        max_tokens: 1800,
-        stream: false,
-      }),
-      signal: combined,
-    });
+    try {
+      response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(provider === "self_hosted" ? { Connection: "close" } : {}),
+          ...(key ? { Authorization: `Bearer ${key}` } : {}),
+        },
+        body: JSON.stringify({
+          model,
+          messages,
+          tools: tools.map((t) => ({ type: "function", function: t })),
+          tool_choice: "auto",
+          parallel_tool_calls: provider === "self_hosted",
+          temperature: 0.2,
+          max_tokens: 1800,
+          stream: false,
+        }),
+        signal: combined,
+      });
+    } catch (error) {
+      // Generation has no customer-side effects. Retrying its transport once is
+      // safe; tool execution occurs only after a complete validated response.
+      if (combined.aborted || attempt === 1) throw error;
+      continue;
+    }
     if (![429, 500, 502, 503, 504].includes(response.status) || attempt === 1)
       break;
     await response.body?.cancel();

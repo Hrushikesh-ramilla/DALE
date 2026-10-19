@@ -92,6 +92,13 @@ it("forbids remote URLs disguised as self-hosted inference", async () => {
     modelTurn([{ role: "user", content: "task" }], []),
   ).rejects.toThrow("loopback");
 });
+it("validates a dedicated buyer endpoint with the same loopback boundary", async () => {
+  configure();
+  vi.stubEnv("CONCIERGE_SELF_HOSTED_BASE_URL", "https://example.com/v1");
+  await expect(
+    modelTurn([{ role: "user", content: "task" }], []),
+  ).rejects.toThrow("loopback");
+});
 it("rejects concurrent generations before contacting the provider", async () => {
   configure();
   let release!: (response: Response) => void;
@@ -121,4 +128,27 @@ it("rejects concurrent generations before contacting the provider", async () => 
     }),
   );
   await first;
+});
+it("recovers once from a stale inference connection without replaying customer actions", async () => {
+  configure();
+  const transport = vi
+    .fn()
+    .mockRejectedValueOnce(new TypeError("fetch failed"))
+    .mockResolvedValueOnce(
+      Response.json({
+        choices: [
+          {
+            finish_reason: "stop",
+            message: { content: "Recovered generation" },
+          },
+        ],
+      }),
+    );
+  vi.stubGlobal("fetch", transport);
+  expect(
+    (await modelTurn([{ role: "user", content: "independent task" }], []))
+      .content,
+  ).toBe("Recovered generation");
+  expect(transport).toHaveBeenCalledTimes(2);
+  expect(transport.mock.calls[0][1].headers.Connection).toBe("close");
 });
