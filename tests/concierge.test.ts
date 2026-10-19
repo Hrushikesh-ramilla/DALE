@@ -184,6 +184,16 @@ it("does not display prior search cards under a new request", async () => {
       ?.content,
   ).toBe("Look up a named product");
 });
+it("retains a customer's full named product when model arguments shorten it", async () => {
+  const p = products[0];
+  const result = await hybridSearch(
+    { query: p.name.split(/\s+/).slice(0, 2).join(" "), in_stock: false },
+    undefined,
+    `What does ${p.name} cost?`,
+  );
+  expect(result.products.length).toBeGreaterThan(0);
+  expect(result.products.every((item) => item.name === p.name)).toBe(true);
+});
 
 it("does not expose an empty search tracking ID as an apparent product identity", async () => {
   const fresh = (await customerSession({ action: "guest" })).actor;
@@ -192,13 +202,14 @@ it("does not expose an empty search tracking ID as an apparent product identity"
     { name: `absent-${randomUUID()}` },
     { actor: fresh, ui: context },
   );
-  expect(observation.data).toEqual({
+  expect(observation.data).toMatchObject({
     status: "not_found",
     products: [],
     choices: [],
     total: 0,
     selection_required: false,
   });
+  expect(observation.data).not.toHaveProperty("result_set_id");
   expect((await readConcierge(fresh)).resultSets.at(-1)?.productIds).toEqual(
     [],
   );

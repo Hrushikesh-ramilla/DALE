@@ -3,9 +3,39 @@ import {
   identityMatcher,
   brandVocabulary,
   canonicalBrand,
+  mentionedIdentities,
 } from "../src/server/concierge/identity";
 import type { Product } from "../src/domain/catalog";
 const product = (name: string, brand: string) => ({ name, brand }) as Product;
+it("keeps model numbers separate from measured variant quantities", () => {
+  expect(
+    identityMatcher("Acme Aurora 12 128GB", ["Acme"])(
+      product("Acme Aurora 128 12GB", "Acme"),
+    ),
+  ).toBeNull();
+  expect(
+    identityMatcher("128GB Acme Aurora12", ["Acme"])(
+      product("Acme Aurora 12 128 GB", "Acme"),
+    )?.kind,
+  ).toBe("identity");
+});
+it("anchors full names without confusing a shorter family or other edition", () => {
+  const family = product("Acme Aurora", "Acme");
+  const exact = product("Acme Aurora 12 Pro 128GB", "Acme");
+  const other = product("Acme Aurora 12 Pro 256GB", "Acme");
+  expect(
+    mentionedIdentities(
+      "Do you have Acme Aurora 12 Pro 128GB, and what does it cost?",
+      [family, exact, other],
+    ),
+  ).toEqual([exact]);
+  expect(
+    mentionedIdentities(
+      "Compare Acme Aurora 12 Pro 128GB and Acme Aurora 12 Pro 256GB",
+      [family, exact, other],
+    ),
+  ).toEqual([exact, other]);
+});
 
 it("resolves abbreviations from catalog vocabulary without brand-specific rules", () => {
   const brands = ["Arcadia House", "Meridian Instruments"];

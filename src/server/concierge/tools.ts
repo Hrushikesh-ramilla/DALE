@@ -77,8 +77,9 @@ async function recordedSearch(
   actor: Actor,
   input: unknown,
   signal?: AbortSignal,
+  utterance?: string,
 ) {
-  const result = await hybridSearch(input, signal);
+  const result = await hybridSearch(input, signal, utterance);
   const id = randomUUID();
   await changeConcierge(actor, (s) => {
     s.resultSets.push({
@@ -274,11 +275,14 @@ export const tools: ToolDefinition[] = [
   {
     name: "lookup_product",
     description:
-      "Find a named product. Extract model name and brand separately; omit commands and generic type words. Handles brand initials and typos. not_found means absent; choose_variant requires choosing an exact variant. No substitutes.",
+      "Find a named product. Keep its full model name, generation, size/storage and suffixes; omit commands. Optional brand/category constrain the search. not_found means no match under searched_identity. choose_variant requires a choice. No substitutes.",
     input: lookupArguments,
     effect: "read",
     async execute(raw, { actor, signal }) {
       const input = lookupArguments.parse(raw);
+      const utterance = (await readConcierge(actor)).transcript
+        .filter((m) => m.sender === "user")
+        .at(-1)?.text;
       const capabilities = await catalogCapabilities();
       const brand = input.brand
         ? canonicalBrand(
@@ -297,6 +301,7 @@ export const tools: ToolDefinition[] = [
           in_stock: false,
         },
         signal,
+        utterance,
       );
       const exact = result.identity_matches.every((m) => m.kind === "identity");
       const status = !result.total
@@ -331,6 +336,11 @@ export const tools: ToolDefinition[] = [
             : [],
         total: result.total,
         selection_required: status === "choose_variant",
+        searched_identity: {
+          name: input.name,
+          ...(brand ? { brand } : {}),
+          ...(input.category ? { category: input.category } : {}),
+        },
         ...(result.total ? { result_set_id: result.result_set_id } : {}),
       };
     },
@@ -743,6 +753,11 @@ export const toolOutputs: Record<string, z.ZodType> = {
     products: z.array(recordedProduct),
     total: z.number().int().min(0),
     selection_required: z.boolean(),
+    searched_identity: z.object({
+      name: z.string(),
+      brand: z.string().optional(),
+      category: z.string().optional(),
+    }),
     result_set_id: z.string().uuid().optional(),
   }),
   get_categories_and_brands: z.object({

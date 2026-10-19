@@ -4,7 +4,7 @@ import type { Product } from "@/domain/catalog";
 import { searchConstraints, type SearchConstraints } from "@/domain/concierge";
 import { conciergeDatabase } from "./store";
 import { classifyMovement, recordedAttributes } from "@/domain/catalog-derived";
-import { identityMatcher } from "./identity";
+import { identityMatcher, mentionedIdentities } from "./identity";
 
 export function productDocument(p: Product) {
   return JSON.stringify({
@@ -187,7 +187,11 @@ export async function productDetails(ids: string[]) {
     .map((id) => rows.rows.find((r) => r.record.id === id)?.record)
     .filter((p): p is Product => Boolean(p));
 }
-export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
+export async function hybridSearch(
+  raw: unknown,
+  signal?: AbortSignal,
+  utterance?: string,
+) {
   const c = searchConstraints.parse(raw);
   const db = await conciergeDatabase();
   const bindings: unknown[] = [];
@@ -278,13 +282,26 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       .toLocaleLowerCase()
       .normalize("NFKC")
       .match(/[\p{L}\p{N}]+/gu) || [];
-  const matchIdentity =
+  let matchIdentity =
     c.query.trim() && c.match_mode === "identity"
       ? identityMatcher(
           c.query,
           rows.rows.map((r) => r.record.brand || ""),
         )
       : null;
+  if (matchIdentity && utterance) {
+    const mentioned = mentionedIdentities(
+      utterance,
+      rows.rows.map((r) => r.record),
+    ).filter((p) => matchIdentity?.(p));
+    if (mentioned.length === 1) {
+      // The model may shorten a name while extracting arguments. The customer's
+      // explicitly written full identity takes precedence over that shortening.
+      const exactName = mentioned[0].name;
+      matchIdentity = (p) =>
+        p.name === exactName ? { score: 1, kind: "identity" } : null;
+    }
+  }
   if (matchIdentity) mode = "identity";
   let ranked = rows.rows
     .filter(({ record }) => {

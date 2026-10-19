@@ -21,7 +21,7 @@ if (process.argv.includes("--text-candidate")) {
 process.env.LOCAL_DATA_DIR = ":memory:";
 const results = [];
 try {
-  for (const category of ["fragrance", "smartphones", "sunglasses"]) {
+  for (const category of ["fragrance", "phones", "sunglasses"]) {
     const product = (
       await hybridSearch({ categories: [category], offset: 7, limit: 1 })
     ).products[0];
@@ -63,6 +63,7 @@ try {
       passed:
         view.turn?.status === "completed" &&
         view.products.some((p) => p.id === product.id) &&
+        view.products.every((p) => p.id === product.id) &&
         response.includes(formatMoney(product.price)) &&
         view.basket.cart.length === 0 &&
         view.confirmations.length === 0,
