@@ -1,4 +1,5 @@
 "use client";
+import {classifyMovement,type WatchMovement} from "@/domain/catalog-derived";
 
 import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
@@ -209,43 +210,7 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
   },
 ];
 
-type MovementType = "all" | "automatic" | "mechanical" | "quartz" | "smartwatch";
-
-function classifyMovement(movement: string = "", specs: string[] = []): "automatic" | "mechanical" | "quartz" | "smartwatch" {
-  const text = `${movement} ${specs.join(" ")}`.toLowerCase();
-  if (
-    text.includes("smartwatch") ||
-    text.includes("sip") ||
-    text.includes("exynos") ||
-    text.includes("apple watch") ||
-    text.includes("galaxy watch") ||
-    text.includes("neural engine")
-  ) {
-    return "smartwatch";
-  }
-  if (text.includes("quartz") || text.includes("solargraph") || text.includes("superquartz") || text.includes("solar")) {
-    return "quartz";
-  }
-  if (
-    text.includes("hand-wound") ||
-    text.includes("manual") ||
-    text.includes("hand wound") ||
-    text.includes("hand wind") ||
-    text.includes("l121.1") ||
-    text.includes("l093.1") ||
-    text.includes("l951") ||
-    text.includes("l043")
-  ) {
-    return "mechanical";
-  }
-  if (text.includes("automatic") || text.includes("powermatic") || text.includes("self-winding")) {
-    return "automatic";
-  }
-  if (text.includes("mechanical")) {
-    return "mechanical";
-  }
-  return "automatic";
-}
+type MovementType = "all" | WatchMovement;
 
 function WatchesCatalogContent() {
   const router = useRouter();
@@ -310,7 +275,7 @@ function WatchesCatalogContent() {
 
   // Movement counts computed across all loaded watches
   const movementCounts = useMemo(() => {
-    const counts = { all: allProducts.length, automatic: 0, mechanical: 0, quartz: 0, smartwatch: 0 };
+    const counts = { all: allProducts.length, automatic: 0, mechanical: 0, quartz: 0, smartwatch: 0, unknown: 0 };
     for (const p of allProducts) {
       const mv = classifyMovement(p.attributes?.movement, p.specs);
       counts[mv]++;
@@ -334,9 +299,13 @@ function WatchesCatalogContent() {
     try { await copilot.sendMessage(command);setAiPrompt(""); } finally { setAiThinking(false); }
   };
   useEffect(() => {
-    window.dispatchEvent(new CustomEvent("dale:ui-state",{detail:{categories:["watches"],brands:selectedBrand?[selectedBrand]:[],query:searchQuery,max_price:typeof maxBudget==="number"?maxBudget*100:null,attributes:selectedMovement==="all"?{}:{movement:selectedMovement}}}));
+    const tiers:Record<string,[number|null,number|null]>={all:[null,null],sub1k:[null,100000],"1k-5k":[100000,500000],"5k-15k":[500000,1500000],"15k+":[1500000,null]};
+    const [minimum,tierMaximum]=tiers[priceTier];
+    const budgetMaximum=typeof maxBudget==="number" && maxBudget>0?Math.floor(maxBudget*100+1e-7):null;
+    const maximum=tierMaximum===null?budgetMaximum:budgetMaximum===null?tierMaximum:Math.min(tierMaximum,budgetMaximum);
+    window.dispatchEvent(new CustomEvent("dale:ui-state",{detail:{categories:["watches"],brands:selectedBrand?[selectedBrand]:[],query:searchQuery,min_price:minimum,max_price:maximum,max_exclusive:tierMaximum!==null && maximum===tierMaximum,sort:sortOrder==="price-asc"?"price_asc":sortOrder==="price-desc"?"price_desc":sortOrder==="brand-asc"?"brand_asc":"relevance",attributes:selectedMovement==="all"?{}:{movement_class:selectedMovement}}}));
     return()=>{window.dispatchEvent(new CustomEvent("dale:ui-state",{detail:{}}));};
-  },[selectedBrand,searchQuery,maxBudget,selectedMovement]);
+  },[selectedBrand,searchQuery,maxBudget,selectedMovement,priceTier,sortOrder]);
 
   // Filtered & Sorted products (for Catalog Space)
   const filteredProducts = useMemo(() => {
@@ -710,7 +679,7 @@ function WatchesCatalogContent() {
                 className={`filter-pill ${selectedMovement === "quartz" ? "active" : ""}`}
                 onClick={() => setSelectedMovement("quartz")}
               >
-                Quartz &amp; Solargraph ({movementCounts.quartz})
+                Quartz ({movementCounts.quartz})
               </button>
               <button
                 type="button"
@@ -989,7 +958,7 @@ function WatchesCatalogContent() {
                         <Check size={12} /> {product.brand || "Swiss Manufacture"}
                       </span>
                       <span className={`movement-tag ${mv}`}>
-                        {mv === "automatic" ? "Automatic" : mv === "mechanical" ? "Manual-Wind" : "Quartz"}
+                        {mv === "unknown" ? "Movement not recorded" : mv === "smartwatch" ? "Smartwatch" : mv === "automatic" ? "Automatic" : mv === "mechanical" ? "Mechanical" : "Quartz"}
                       </span>
                     </div>
 

@@ -3,6 +3,7 @@ import { z } from "zod";
 import type { Product } from "@/domain/catalog";
 import { searchConstraints, type SearchConstraints } from "@/domain/concierge";
 import { conciergeDatabase } from "./store";
+import { classifyMovement, recordedAttributes } from "@/domain/catalog-derived";
 
 export function productDocument(p: Product) {
   return JSON.stringify({
@@ -219,6 +220,7 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       "coalesce((p.record->>'stock')::integer,0)>0 AND coalesce((p.record->>'comparisonOnly')::boolean,false)=false",
     );
   for (const [key, value] of Object.entries(c.attributes)) {
+    if (key === "movement_class") continue;
     if (typeof value === "object") {
       const field = `p.record->'attributes'->>${bind(key)}`;
       const numeric = `CASE WHEN (${field}) ~ '^-?[0-9]+(\\.[0-9]+)?$' THEN (${field})::numeric ELSE NULL END`;
@@ -236,9 +238,10 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       );
   }
   for (const [key, value] of Object.entries(c.exclude_attributes))
-    clauses.push(
-      `(p.record->'attributes'->>${bind(key)} IS NOT NULL AND p.record->'attributes'->>${bind(key)}<>${bind(String(value))})`,
-    );
+    if (key !== "movement_class")
+      clauses.push(
+        `(p.record->'attributes'->>${bind(key)} IS NOT NULL AND p.record->'attributes'->>${bind(key)}<>${bind(String(value))})`,
+      );
   const rows = await db.query<{
     record: Product;
     vector: number[] | null;
@@ -274,6 +277,18 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       .normalize("NFKC")
       .match(/[\p{L}\p{N}]+/gu) || [];
   const ranked = rows.rows
+    .filter(({ record }) => {
+      const positive = c.attributes.movement_class,
+        negative = c.exclude_attributes.movement_class;
+      if (positive === undefined && negative === undefined) return true;
+      if (record.category !== "watches") return false;
+      const movement = recordedAttributes(record).movement_class;
+      return (
+        (positive === undefined || positive === movement) &&
+        (negative === undefined ||
+          (movement !== "unknown" && movement !== negative))
+      );
+    })
     .map((row) => {
       const text = productDocument(row.record)
         .toLocaleLowerCase()
@@ -317,7 +332,9 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
           ? b.product.price - a.product.price
           : c.sort === "name_asc"
             ? a.product.name.localeCompare(b.product.name)
-            : b.score - a.score) || a.product.id.localeCompare(b.product.id),
+            : c.sort === "brand_asc"
+              ? (a.product.brand || "").localeCompare(b.product.brand || "")
+              : b.score - a.score) || a.product.id.localeCompare(b.product.id),
   );
   return {
     products: ranked.slice(c.offset, c.offset + c.limit).map((r) => r.product),
@@ -339,8 +356,23 @@ export async function catalogFacets(raw: unknown) {
     `SELECT a.key,array_agg(DISTINCT a.value ORDER BY a.value) AS values FROM catalog_products p CROSS JOIN LATERAL jsonb_each_text(coalesce(p.record->'attributes','{}'::jsonb)) a WHERE p.publication='published' AND ($1::text[]='{}'::text[] OR p.category=ANY($1::text[]) OR p.leaf_type=ANY($1::text[])) GROUP BY a.key`,
     [c.categories],
   );
+  const attributes: Record<string, string[]> = Object.fromEntries(
+    rows.rows.map((r) => [r.key, r.values]),
+  );
+  if (!c.categories.length || c.categories.includes("watches")) {
+    const watches = await db.query<{ record: Product }>(
+      "SELECT record FROM catalog_products WHERE publication='published' AND category='watches'",
+    );
+    attributes.movement_class = [
+      ...new Set(
+        watches.rows.map(({ record }) =>
+          classifyMovement(record.attributes?.movement, record.specs),
+        ),
+      ),
+    ].sort();
+  }
   return {
-    attributes: Object.fromEntries(rows.rows.map((r) => [r.key, r.values])),
+    attributes,
     matching_count: result.total,
     scope:
       "Attribute values for the selected categories; matching_count applies all exact constraints.",

@@ -27,10 +27,16 @@ try {
       .getByRole("button", { name: "Send message", exact: true })
       .click();
     let view;
-    while (Date.now() - at < 210000) {
+    // The application may suspend for a browser receipt and resume a new bounded
+    // inference request. Measure the complete journey rather than stopping after
+    // one request's time budget. Long latency remains visible in the report.
+    while (Date.now() - at < 420000) {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       const result = await context.request.get(`${base}/api/copilot/state`);
-      if (!result.ok()) throw new Error(`Owned state unavailable (HTTP ${result.status()}); no model outcome claimed.`);
+      if (!result.ok())
+        throw new Error(
+          `Owned state unavailable (HTTP ${result.status()}); no model outcome claimed.`,
+        );
       view = await result.json();
       if (
         view.messages.some((m) => m.sender === "user" && m.text === message) &&
@@ -97,6 +103,8 @@ try {
         (i) => i.productId === product.id && i.quantity === 1,
       ),
     });
+    await page.getByRole("button", { name: "Open DALE assistant" }).click();
+    await page.getByRole("complementary", { name: "DALE assistant" }).waitFor();
   }
   await page.screenshot({
     path: ".data/concierge-verification/live-browser.png",
@@ -117,11 +125,13 @@ const report = {
   provider: "self_hosted",
   transport: "actual browser and production HTTP; no inference mocks",
   checks,
-  complete: checks.length >= 3 && checks.every((c) => c.passed),
+  scope:
+    "Two functional live-model checks and reload persistence only; not performance, generalization or production acceptance.",
+  functionalJourneyPassed: checks.length >= 3 && checks.every((c) => c.passed),
 };
 await writeFile(
   ".data/concierge-verification/live-browser.json",
   JSON.stringify(report, null, 2),
 );
 console.log(JSON.stringify(report, null, 2));
-if (!report.complete) process.exitCode = 1;
+if (!report.functionalJourneyPassed) process.exitCode = 1;

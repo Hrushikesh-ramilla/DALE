@@ -263,7 +263,7 @@ test("reload recovers a persisted browser action and continues the same turn", a
       client_context: {
         current_url: "/shop",
         current_page_type: "shop",
-        revision: 0,
+        revision: 2000,
       },
     },
   });
@@ -341,4 +341,45 @@ test("state streaming requires a session and limits each owner to one stream", a
     hasOwner: true,
     revoked: true,
   });
+});
+
+test("a budget patch preserves a brand manually chosen on a category page", async ({
+  page,
+}) => {
+  const source = await page.request.get(
+    `/api/copilot/search?filters=${encodeURIComponent(JSON.stringify({ categories: ["headphones"], limit: 1 }))}`,
+  );
+  const product = (await source.json()).products[0];
+  expect(product.brand).toBeTruthy();
+  responses = [
+    nativeCall("operate_ui", {
+      operation: "filter",
+      constraints: { max_price: product.price + 100 },
+      clear_existing: false,
+    }),
+    {
+      role: "assistant",
+      content: "Manual category context retained while the budget changed.",
+    },
+  ];
+  await page.goto(
+    `/category/headphones?brand=${encodeURIComponent(product.brand)}`,
+  );
+  await expect(page.locator("article[data-product-id]").first()).toBeVisible();
+  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  await page
+    .getByLabel("Message DALE")
+    .fill("Adjust only the budget; retain the house I chose manually");
+  await page.getByRole("button", { name: "Send message", exact: true }).click();
+  await expect(page).toHaveURL(/\/search\?filters=/);
+  const filters = JSON.parse(new URL(page.url()).searchParams.get("filters")!);
+  expect(filters.brands).toEqual([product.brand]);
+  expect(filters.categories).toEqual(["headphones"]);
+  expect(filters.max_price).toBe(product.price + 100);
+  await expect(
+    page.getByText(
+      "Manual category context retained while the budget changed.",
+      { exact: true },
+    ),
+  ).toBeVisible();
 });

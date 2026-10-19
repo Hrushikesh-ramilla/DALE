@@ -93,6 +93,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       current.current.revision > v.revision
     )
       return;
+    revision.current = Math.max(
+      revision.current,
+      ...v.actions.map((action) => action.expectedRevision),
+    );
     current.current = v;
     setState(v);
   }, []);
@@ -112,10 +116,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   }, [isThinking, state?.owner_id, apply]);
   const context = useCallback((): UIContext => {
     const url = new URL(window.location.href);
-    let filters: Record<string, unknown> = {
-      ...Object.fromEntries(url.searchParams),
-      ...(manual.current.path === url.pathname ? manual.current.filters : {}),
-    };
+    let filters: Record<string, unknown> =
+      manual.current.path === url.pathname
+        ? { ...manual.current.filters }
+        : Object.fromEntries(url.searchParams);
     try {
       if (url.searchParams.has("filters"))
         filters = JSON.parse(url.searchParams.get("filters")!);

@@ -173,6 +173,7 @@ function Page() {
                 <option value="price_asc">Price: low to high</option>
                 <option value="price_desc">Price: high to low</option>
                 <option value="name_asc">Name</option>
+                <option value="brand_asc">Brand</option>
               </select>
             </label>
             <button>Apply filters</button>

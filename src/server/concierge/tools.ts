@@ -32,6 +32,7 @@ import {
 } from "./shopping";
 import type { ToolDeclaration } from "./model";
 import { formatMoney } from "@/domain/money";
+import { recordedAttributes } from "@/domain/catalog-derived";
 
 type ToolContext = { actor: Actor; ui: UIContext; signal?: AbortSignal };
 type ToolDefinition = {
@@ -248,14 +249,14 @@ export const tools: ToolDefinition[] = [
           attributes: input.attribute_keys
             ? Object.fromEntries(
                 input.attribute_keys
-                  .filter((k) => p.attributes?.[k] !== undefined)
-                  .map((k) => [k, p.attributes![k]]),
+                  .filter((k) => Object.hasOwn(recordedAttributes(p), k))
+                  .map((k) => [k, recordedAttributes(p)[k]]),
               )
-            : p.attributes,
+            : recordedAttributes(p),
           specs: input.include_specs ? p.specs : undefined,
           missing_attribute_keys:
             input.attribute_keys?.filter(
-              (k) => p.attributes?.[k] === undefined,
+              (k) => !Object.hasOwn(recordedAttributes(p), k),
             ) || [],
         })),
         missing_ids: input.product_ids.filter(
@@ -310,7 +311,10 @@ export const tools: ToolDefinition[] = [
       let operation: BrowserOperation;
       if (input.operation === "filter") {
         const state = await readConcierge(actor);
-        const current = searchConstraints.safeParse(ui.active_filters);
+        const current = z
+          .object(searchConstraints.shape)
+          .strip()
+          .safeParse(ui.active_filters);
         const base = input.clear_existing
           ? {}
           : current.success

@@ -82,7 +82,7 @@ function CategoryCatalogContent({
   const parsedBudget = Number(budgetParameter);
   const maxBudget = budgetOverride?.parameter === budgetParameter
     ? budgetOverride.value
-    : Number.isFinite(parsedBudget) && parsedBudget > 0 ? parsedBudget * 100 : null;
+    : Number.isFinite(parsedBudget) && parsedBudget > 0 ? Math.floor(parsedBudget * 100+1e-7) : null;
   const setMaxBudget = (value:number|null) => setBudgetOverride({parameter:budgetParameter,value});
   const [sortOrder, setSortOrder] = useState<"featured" | "price-asc" | "price-desc" | "brand-asc">("featured");
 
@@ -144,7 +144,7 @@ function CategoryCatalogContent({
   }, [filteredProducts, sortOrder]);
 
   useEffect(() => {
-    window.dispatchEvent(new CustomEvent("dale:ui-state", {detail: {categories:[leaf],brands:brandParam?[brandParam]:[],query:searchQuery,max_price:maxBudget,sort:sortOrder === "price-asc" ? "price_asc" : sortOrder === "price-desc" ? "price_desc" : "relevance"}}));
+    window.dispatchEvent(new CustomEvent("dale:ui-state", {detail: {categories:[leaf],brands:brandParam?[brandParam]:[],query:searchQuery,max_price:maxBudget,sort:sortOrder === "price-asc" ? "price_asc" : sortOrder === "price-desc" ? "price_desc" : sortOrder === "brand-asc" ? "brand_asc" : "relevance"}}));
     return () => { window.dispatchEvent(new CustomEvent("dale:ui-state", {detail:{}})); };
   }, [leaf,brandParam,searchQuery,maxBudget,sortOrder]);
   const handleAiFilter = async (text: string) => {

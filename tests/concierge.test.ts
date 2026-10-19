@@ -37,6 +37,7 @@ import {
 import { registeredPath } from "../src/domain/site-routes";
 import type { Actor } from "../src/server/state";
 import type { Product } from "../src/domain/catalog";
+import { classifyMovement } from "../src/domain/catalog-derived";
 import { lifestyleProfile } from "../src/domain/departments";
 import {
   checkout as checkoutOffer,
@@ -254,6 +255,7 @@ it("preserves manual filter constraints while a later patch modifies only one fi
           categories: [products[0].category],
           brands: products[0].brand ? [products[0].brand] : [],
           min_price: 100,
+          max_price: 50,
         },
       },
     },
@@ -616,4 +618,59 @@ it("pages a named older result set without reinterpreting its original ordering"
       { actor, ui: context },
     ),
   ).rejects.toThrow("no longer available");
+});
+
+it("reads only owned metadata keys and leaves prototype names unavailable", async () => {
+  const result = await executeTool(
+    "get_product_details",
+    {
+      product_ids: [products[0].id],
+      attribute_keys: ["constructor", "toString"],
+      include_specs: false,
+    },
+    { actor, ui: context },
+  );
+  const data = result.data as {
+    products: {
+      attributes: Record<string, unknown>;
+      missing_attribute_keys: string[];
+    }[];
+  };
+  expect(Object.keys(data.products[0].attributes)).toEqual([]);
+  expect(data.products[0].missing_attribute_keys).toEqual([
+    "constructor",
+    "toString",
+  ]);
+});
+it("classifies recorded movements without guessing a missing winding type from model names", () => {
+  expect(classifyMovement("", ["Swiss made", "Water resistant"])).toBe(
+    "unknown",
+  );
+  expect(
+    classifyMovement("Unspecified calibre", [
+      "Automatic appears in unrelated marketing",
+    ]),
+  ).toBe("unknown");
+  expect(classifyMovement("Self-winding")).toBe("automatic");
+  expect(classifyMovement("Mechanical")).toBe("mechanical");
+  expect(classifyMovement("Quartz")).toBe("quartz");
+  expect(classifyMovement("Smartwatch")).toBe("smartwatch");
+});
+it("uses the shared watch classification as an exact constraint before hybrid ranking", async () => {
+  const result = await hybridSearch({
+    categories: ["watches"],
+    attributes: { movement_class: "quartz" },
+    sort: "brand_asc",
+    limit: 24,
+  });
+  expect(result.total).toBeGreaterThan(0);
+  for (const p of result.products)
+    expect(
+      `${p.attributes?.movement || ""} ${p.specs.filter((s) => /^(movement|calib(?:er|re))\s*:/i.test(s)).join(" ")}`,
+    ).toMatch(/quartz/i);
+  expect(result.products.map((p) => p.brand || "")).toEqual(
+    result.products
+      .map((p) => p.brand || "")
+      .sort((a, b) => a.localeCompare(b)),
+  );
 });
