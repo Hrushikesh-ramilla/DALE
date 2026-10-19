@@ -1,78 +1,69 @@
 import { chromium } from "playwright";
-import { resolve } from "node:path";
 
 async function main() {
   const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ viewport: { width: 1440, height: 1100 } });
-  const page = await context.newPage();
 
   const artifactDir = ".data/verification";
 
-  console.log("Navigating to http://127.0.0.1:3000/category/watches ...");
-  await page.goto("http://127.0.0.1:3000/category/watches", { waitUntil: "networkidle" });
-  await page.waitForTimeout(1000);
+  console.log("Testing 3D dial at Full HD 1920x1080...");
+  const context1080 = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
+  const page1080 = await context1080.newPage();
 
-  // 1. Screenshot of the Horological Dial (Default View)
-  await page.screenshot({
-    path: `${artifactDir}/horological-dial-movement-view.png`,
-    fullPage: false,
-  });
-  console.log("Saved: horological-dial-movement-view.png");
+  await page1080.goto("http://127.0.0.1:3000/category/watches", { waitUntil: "networkidle" });
+  await page1080.waitForTimeout(2800);
 
-  // 2. Click the Watch Crown (Wind Calibre) to advance
-  console.log("Winding Watch Crown...");
-  const crown = page.locator(".watch-crown-knob");
-  if (await crown.isVisible()) {
-    await crown.click();
-    await page.waitForTimeout(800);
+  // Focus on dial
+  const dialElement = page1080.locator(".horological-dial-circle");
+  if (await dialElement.isVisible()) {
+    await dialElement.scrollIntoViewIfNeeded();
+    await page1080.waitForTimeout(400);
   }
 
-  // Screenshot after winding
-  await page.screenshot({
-    path: `${artifactDir}/horological-dial-wound-state.png`,
+  // 1. Initial 3D Pop-Out View (Blancpain centered, no est year, elevated stage)
+  await page1080.screenshot({
+    path: `${artifactDir}/horological-dial-3d-popout.png`,
     fullPage: false,
   });
-  console.log("Saved: horological-dial-wound-state.png");
+  console.log("Saved: horological-dial-3d-popout.png");
 
-  // 3. Switch to "All 21 Houses" view
-  console.log("Switching to All 21 Houses matrix...");
-  const matrixBtn = page.locator("button:has-text('All 21 Houses')");
-  if (await matrixBtn.isVisible()) {
-    await matrixBtn.click();
-    await page.waitForTimeout(800);
-  }
-
-  await page.screenshot({
-    path: `${artifactDir}/watches-houses-clean-matrix.png`,
-    fullPage: false,
-  });
-  console.log("Saved: watches-houses-clean-matrix.png");
-
-  // Hover on Apple logo in matrix to verify no merging and pure emblem
-  const appleTile = page.locator("a[href*='brand=Apple']");
-  if (await appleTile.isVisible()) {
-    await appleTile.hover();
-    await page.waitForTimeout(400);
-    await page.screenshot({
-      path: `${artifactDir}/watches-apple-emblem-hover.png`,
+  // 2. Interactive 3D Parallax Tilt: Hover top-right of dial
+  const box = await dialElement.boundingBox();
+  if (box) {
+    console.log("Simulating 3D mouse parallax tilt (top-right)...");
+    await page1080.mouse.move(box.x + box.width * 0.82, box.y + box.height * 0.22);
+    await page1080.waitForTimeout(400);
+    await page1080.screenshot({
+      path: `${artifactDir}/horological-dial-3d-tilt-topright.png`,
       fullPage: false,
     });
-    console.log("Saved: watches-apple-emblem-hover.png");
+    console.log("Saved: horological-dial-3d-tilt-topright.png");
+
+    console.log("Simulating 3D mouse parallax tilt (bottom-left)...");
+    await page1080.mouse.move(box.x + box.width * 0.2, box.y + box.height * 0.8);
+    await page1080.waitForTimeout(400);
+    await page1080.screenshot({
+      path: `${artifactDir}/horological-dial-3d-tilt-bottomleft.png`,
+      fullPage: false,
+    });
+    console.log("Saved: horological-dial-3d-tilt-bottomleft.png");
   }
 
-  // 4. Navigate into catalog space to verify AI text removal
-  console.log("Navigating to catalog space ?view=all ...");
-  await page.goto("http://127.0.0.1:3000/category/watches?view=all", { waitUntil: "networkidle" });
-  await page.waitForTimeout(1000);
+  // 3. Hover over the center brand emblem to verify 3D extrusion zoom
+  const centerEmblem = page1080.locator(".stage-brand-emblem");
+  if (await centerEmblem.isVisible()) {
+    console.log("Hovering center brand emblem...");
+    await centerEmblem.hover();
+    await page1080.waitForTimeout(400);
+    await page1080.screenshot({
+      path: `${artifactDir}/horological-dial-3d-emblem-hover.png`,
+      fullPage: false,
+    });
+    console.log("Saved: horological-dial-3d-emblem-hover.png");
+  }
 
-  await page.screenshot({
-    path: `${artifactDir}/watches-catalog-clean-concierge.png`,
-    fullPage: false,
-  });
-  console.log("Saved: watches-catalog-clean-concierge.png");
-
+  await context1080.close();
   await browser.close();
-  console.log("Verification finished successfully!");
+  console.log("3D dial verification completed successfully!");
   process.exit(0);
 }
 
