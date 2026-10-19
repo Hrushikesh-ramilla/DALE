@@ -1,10 +1,14 @@
 import { chromium } from "@playwright/test";
 import { writeFile } from "node:fs/promises";
+import { setTimeout as delay } from "node:timers/promises";
+const quality = process.argv.includes("--gemini-quality");
+const paceMs = quality ? 8000 : 0;
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext();
 const page = await context.newPage();
 const base = "http://localhost:3000";
 const checks = [];
+let inference;
 await page.addInitScript(() => {
   const NativeEvents = globalThis.EventSource;
   globalThis.EventSource = class extends NativeEvents {
@@ -34,6 +38,7 @@ try {
   await page.goto(`${base}/department/electronics`);
   await page.getByRole("button", { name: "Open DALE assistant" }).click();
   async function turn(message, label) {
+    if (paceMs) await delay(paceMs);
     await page.getByLabel("Message DALE").fill(message);
     const start = Date.now();
     await page.evaluate((message) => {
@@ -54,6 +59,7 @@ try {
       .click();
     const response = await answered;
     const view = await response.json();
+    inference = view?.inference;
     const httpCompleteMs = Date.now() - start;
     const reply = view?.messages
       .filter((m) => m.sender === "assistant")
@@ -185,6 +191,46 @@ try {
       ) &&
       !persisted.basket.wishlist.some((item) => item.productId === product.id),
   });
+  if (quality) {
+    await page.getByText("Powered by Gemini", { exact: true }).waitFor();
+    const preference = await turn(
+      "hmm any tom forb that smells like baby powder",
+      "gemini-preferences",
+    );
+    checks.push({
+      ...preference,
+      view: undefined,
+      products: preference.view.products.map((p) => ({
+        id: p.id,
+        name: p.name,
+        brand: p.brand,
+        description: p.description,
+      })),
+      passed:
+        preference.status === "completed" &&
+        preference.view.inference?.provider === "gemini" &&
+        preference.view.catalog_match_status === "semantic_candidates" &&
+        preference.view.products.length > 0 &&
+        preference.view.products.every(
+          (p) => p.brand.toLowerCase() === "tom ford",
+        ) &&
+        !/tom forrest/i.test(preference.reply || ""),
+    });
+    const explanation = await turn(
+      "What does powdery mean in a perfume? Explain casually, I'm new to fragrances.",
+      "gemini-conversation",
+    );
+    checks.push({
+      ...explanation,
+      view: undefined,
+      passed:
+        explanation.status === "completed" &&
+        /soft|talc|powder|makeup|cosmetic/i.test(explanation.reply || "") &&
+        explanation.reply.length > 100 &&
+        JSON.stringify(explanation.view.basket) ===
+          JSON.stringify(preference.view.basket),
+    });
+  }
 } catch (error) {
   checks.push({ passed: false, error: String(error) });
 } finally {
@@ -192,8 +238,10 @@ try {
 }
 const report = {
   at: new Date().toISOString(),
+  inference,
+  paceMs,
   scope:
-    "Actual production browser, private self-hosted model and owned persisted application state. No provider interception or payment calls.",
+    "Actual production browser, configured model and owned persisted application state. No provider interception or payment calls. Optional pacing happens before the click timer, to respect free API rate limits.",
   passed: checks.every((c) => c.passed),
   latency: {
     targetMs: 1000,
@@ -209,7 +257,7 @@ const report = {
   checks,
 };
 await writeFile(
-  ".data/concierge-verification/buyer-browser.json",
+  `.data/concierge-verification/buyer-browser${quality ? "-gemini" : ""}.json`,
   JSON.stringify(report, null, 2),
 );
 console.log(JSON.stringify(report, null, 2));

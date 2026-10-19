@@ -113,6 +113,7 @@ async function generate(
           tool_choice: "auto",
           parallel_tool_calls: provider === "self_hosted",
           temperature: provider === "self_hosted" ? 0 : 0.2,
+          ...(provider === "gemini" ? { reasoning_effort: "minimal" } : {}),
           max_tokens: 1800,
           stream: false,
         }),
