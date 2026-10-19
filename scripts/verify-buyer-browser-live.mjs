@@ -9,6 +9,14 @@ const requestTimeout = Number(
     .find((arg) => arg.startsWith("--request-timeout-ms="))
     ?.split("=")[1] || 180000,
 );
+if (
+  !Number.isFinite(requestTimeout) ||
+  requestTimeout < 1000 ||
+  requestTimeout > 180000
+)
+  throw new Error(
+    "Request timeout must be between 1000 and 180000 milliseconds.",
+  );
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext();
 const page = await context.newPage();
@@ -86,7 +94,11 @@ try {
     const view = await response.json();
     inference = view?.inference;
     const httpCompleteMs = Date.now() - start;
-    const assistant = view?.messages
+    const userIndex =
+      view?.messages?.findLastIndex(
+        (m) => m.sender === "user" && m.id === view.turn?.id,
+      ) ?? -1;
+    const assistant = (userIndex < 0 ? [] : view.messages.slice(userIndex + 1))
       .filter((m) => m.sender === "assistant")
       .at(-1);
     const reply = assistant?.text;
@@ -303,11 +315,20 @@ const report = {
     measurement:
       "Click-to-visible complete response, excluding typing and screenshot encoding. httpCompleteMs is measured directly from the actual POST response; no one-second polling quantization. firstResultMs is a real committed-state SSE event, when observed.",
     measuredCases: checks.filter((c) => c.elapsedMs > 0).length,
-    withinTarget: checks.filter((c) => c.elapsedMs > 0 && c.elapsedMs < 1000)
-      .length,
+    withinTarget: checks.filter(
+      (c) =>
+        c.passed &&
+        c.status === "completed" &&
+        c.elapsedMs > 0 &&
+        c.elapsedMs < 1000,
+    ).length,
     allWithinTarget:
       checks.some((c) => c.elapsedMs > 0) &&
-      checks.filter((c) => c.elapsedMs > 0).every((c) => c.elapsedMs < 1000),
+      checks
+        .filter((c) => c.elapsedMs > 0)
+        .every(
+          (c) => c.passed && c.status === "completed" && c.elapsedMs < 1000,
+        ),
   },
   checks,
 };
