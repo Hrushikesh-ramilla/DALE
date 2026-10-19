@@ -363,6 +363,28 @@ it("ends ambiguous single-item lookup at a truthful customer choice without anot
   expect(view.basket.wishlist).toEqual([]);
   expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
 });
+it("continues a compound lookup frame instead of discarding its independent results", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const frame = call("lookup_product", { name: "omega peedmater" });
+  frame.tool_calls!.push(
+    ...call("lookup_product", { name: products[0].name }).tool_calls!,
+  );
+  const answer = `I found ${products[0].name}. Which Omega Speedmaster variant do you mean?`;
+  vi.mocked(modelTurn)
+    .mockReset()
+    .mockResolvedValueOnce(frame)
+    .mockResolvedValueOnce({ role: "assistant", content: answer });
+  const view = await runConcierge(fresh, {
+    turn_id: randomUUID(),
+    message: `Find omega peedmater and also ${products[0].name}`,
+    client_context: context,
+  });
+  expect(view.turn?.status).toBe("completed");
+  expect(view.messages.at(-1)?.text).toBe(answer);
+  expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(2);
+  const frames = (await readConcierge(fresh)).messages;
+  expect(frames.filter((m) => m.role === "tool")).toHaveLength(2);
+});
 it("does not offer discovery of core functions that are already callable", () => {
   const discovery = declarations(["lookup_product", "manage_collection"]).find(
     (t) => t.name === "discover_tools",

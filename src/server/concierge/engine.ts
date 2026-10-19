@@ -348,7 +348,11 @@ async function continueTurn(
     // input boundary. Do not spend another generation reinterpreting its facts
     // or silently pick a candidate. Exact lookups continue through all actions.
     // Mixed-effect frames continue so their real effects can be acknowledged.
-    if (clarifications.length && !nonReadEffect) {
+    if (
+      message.tool_calls.length === 1 &&
+      clarifications.length &&
+      !nonReadEffect
+    ) {
       await changeConcierge(actor, (s) => {
         const text = clarifications.join("\n\n");
         s.messages.push({ role: "assistant", content: text });
