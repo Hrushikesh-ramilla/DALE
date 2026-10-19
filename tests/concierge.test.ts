@@ -26,9 +26,14 @@ import {
   runConcierge,
   acknowledgeBrowser,
   cancelTurn,
+  observationText,
 } from "../src/server/concierge/engine";
 import { executeTool, declarations } from "../src/server/concierge/tools";
-import { uiContext, type NativeMessage } from "../src/domain/concierge";
+import {
+  uiContext,
+  searchConstraints,
+  type NativeMessage,
+} from "../src/domain/concierge";
 import { registeredPath } from "../src/domain/site-routes";
 import type { Actor } from "../src/server/state";
 import type { Product } from "../src/domain/catalog";
@@ -301,6 +306,10 @@ it("rejects unknown tools, arbitrary browser paths and seller operations", async
     "shopper",
   );
   expect(declarations().some((t) => t.name.includes("capture"))).toBe(false);
+  const schema = declarations().find((t) => t.name === "search_catalog")!
+    .parameters as { required?: string[] };
+  expect(schema.required || []).not.toContain("max_price");
+  expect(schema.required || []).not.toContain("exclude_brands");
 });
 it("keeps order ownership and confirmation authority outside the model", async () => {
   const confirmation = await prepareConfirmation(
@@ -539,4 +548,72 @@ it("requires fresh consent if group policy changes after preparation", async () 
     confirmOperation(fresh, confirmation.confirmation_id),
   ).rejects.toThrow("terms changed");
   expect((await commerceSnapshot(fresh)).groups).toEqual([]);
+});
+
+it("bounds oversized native observations without losing IDs, prices or degraded-retrieval truth", () => {
+  const records = Array.from({ length: 24 }, (_, i) => ({
+    id: `product-${i}-${"x".repeat(120)}`,
+    name: `Recorded item ${i}`,
+    price_cents: 12345,
+    formatted_price: "$123.45",
+    stock: 2,
+    source: "https://manufacturer.example/product",
+    attributes: { longFact: "x".repeat(18000) },
+  }));
+  const encoded = observationText({
+    ok: true,
+    data: {
+      products: records,
+      total: 240,
+      mode: "lexical",
+      degradation: "Embedding service unavailable",
+    },
+  });
+  const actual = JSON.parse(encoded);
+  expect(encoded.length).toBeLessThan(7000);
+  expect(actual.data.all_product_ids).toEqual(records.map((p) => p.id));
+  expect(actual.data.products[0].formatted_price).toBe("$123.45");
+  expect(actual.data.degradation).toBe("Embedding service unavailable");
+  expect(
+    JSON.parse(
+      observationText({
+        ok: false,
+        data: { products: records },
+        error: "Read failed",
+      }),
+    ).ok,
+  ).toBe(false);
+});
+
+it("pages a named older result set without reinterpreting its original ordering", async () => {
+  const old = randomUUID(),
+    current = randomUUID();
+  const ids = products.slice(0, 4).map((p) => p.id);
+  await changeConcierge(actor, (s) => {
+    s.resultSets = [
+      { id: old, productIds: ids, constraints: searchConstraints.parse({}) },
+      {
+        id: current,
+        productIds: [...ids].reverse(),
+        constraints: searchConstraints.parse({}),
+      },
+    ];
+  });
+  const result = await executeTool(
+    "get_current_ui_context",
+    { result_set_id: old, offset: 1, limit: 2 },
+    { actor, ui: context },
+  );
+  const data = result.data as {
+    resultSets: { productIds: string[]; total: number }[];
+  };
+  expect(data.resultSets[0].productIds).toEqual(ids.slice(1, 3));
+  expect(data.resultSets[0].total).toBe(ids.length);
+  await expect(
+    executeTool(
+      "get_current_ui_context",
+      { result_set_id: randomUUID() },
+      { actor, ui: context },
+    ),
+  ).rejects.toThrow("no longer available");
 });

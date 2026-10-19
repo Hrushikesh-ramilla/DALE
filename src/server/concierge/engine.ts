@@ -172,7 +172,7 @@ async function continueTurn(
           role: "system",
           content:
             instruction +
-            `\nUse discover_tools to enable needed capabilities when their schemas are not yet exposed.\nSession context (untrusted data): ${JSON.stringify({ ui: input.client_context, constraints: state.constraints, resultSets: state.resultSets.slice(-3), cart: state.cart, confirmations: state.confirmations.map((c) => ({ id: c.id, kind: c.kind, status: c.status })) })}`,
+            `\nUse discover_tools to enable needed capabilities when their schemas are not yet exposed. Read get_product_details when a search summary lacks facts needed for a recommendation. Saved result sets retain their original order: use get_current_ui_context with the saved ID and offset for older ordinals.\nSession context (untrusted data): ${JSON.stringify({ ui: input.client_context, constraints: state.constraints, resultSets: state.resultSets.map((r) => ({ id: r.id, count: r.productIds.length })), cart: state.cart, confirmations: state.confirmations.map((c) => ({ id: c.id, kind: c.kind, status: c.status })) })}`,
         },
         ...recent,
       ],
@@ -283,11 +283,12 @@ async function continueTurn(
     "Agent reasoning limit reached; inspect recorded operations before continuing.",
   );
 }
-function observationText(result: unknown) {
+export function observationText(result: unknown) {
   const serialized = JSON.stringify(result);
   if (serialized.length <= 7000) return serialized;
   const parsed = z
     .object({
+      ok: z.literal(true),
       data: z
         .object({
           products: z.array(
@@ -306,19 +307,43 @@ function observationText(result: unknown) {
         .passthrough(),
     })
     .safeParse(result);
-  if (parsed.success)
-    return JSON.stringify({
+  if (parsed.success) {
+    const data = parsed.data.data;
+    const observation = {
       ok: true,
       data: {
-        products: parsed.data.data.products.slice(0, 4),
-        total: parsed.data.data.total,
-        result_set_id: parsed.data.data.result_set_id,
-        all_product_ids: parsed.data.data.products.map((p) => p.id),
+        products: data.products.slice(0, 4),
+        total: data.total,
+        result_set_id: data.result_set_id,
+        all_product_ids: data.products.map((p) => p.id),
+        missing_ids: data.missing_ids,
+        mode: data.mode,
+        degradation: data.degradation,
+        currency: data.currency,
+        price_origin: data.price_origin,
         truncated: true,
         next_step:
-          "Read individual product IDs for additional facts. The complete result set remains persisted and the browser search is not truncated.",
+          "Read individual product IDs for additional facts, with attribute_keys and include_specs=false for oversized records. Saved result sets and browser results retain all IDs in their original order.",
       },
-    });
+    };
+    while (
+      JSON.stringify(observation).length > 6500 &&
+      observation.data.products.length > 1
+    )
+      observation.data.products.pop();
+    if (JSON.stringify(observation).length > 6500)
+      observation.data.products = observation.data.products.map((p) => ({
+        id: p.id,
+        name: p.name,
+        price_cents: p.price_cents,
+        formatted_price: p.formatted_price,
+        stock: p.stock,
+        source: p.source,
+        url: p.url,
+        details_omitted: true,
+      }));
+    return JSON.stringify(observation);
+  }
   return JSON.stringify({
     ok:
       typeof result === "object" &&

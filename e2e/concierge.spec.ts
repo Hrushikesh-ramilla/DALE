@@ -308,11 +308,27 @@ test("state streaming requires a session and limits each owner to one stream", a
         text += new TextDecoder().decode(chunk.value);
       }
       const duplicate = await fetch("/api/copilot/events");
+      const logout = await fetch("/api/session", { method: "DELETE" });
+      if (!logout.ok) throw new Error("Logout failed");
+      let timer;
+      const revoked = await Promise.race([
+        (async () => {
+          while (true) {
+            const chunk = await reader.read();
+            if (chunk.done) return true;
+          }
+        })(),
+        new Promise<boolean>((resolve) => {
+          timer = setTimeout(() => resolve(false), 7000);
+        }),
+      ]);
+      clearTimeout(timer);
       return {
         status: response.status,
         type: response.headers.get("content-type"),
         duplicate: duplicate.status,
         hasOwner: text.includes('"owner_id"'),
+        revoked,
       };
     } finally {
       await reader.cancel();
@@ -323,5 +339,6 @@ test("state streaming requires a session and limits each owner to one stream", a
     type: "text/event-stream",
     duplicate: 429,
     hasOwner: true,
+    revoked: true,
   });
 });

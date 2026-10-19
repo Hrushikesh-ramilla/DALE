@@ -53,8 +53,14 @@ const filterPatch = z
   )
   .strict();
 const ids = z.array(z.string().min(1).max(150)).min(1).max(12);
-const productArguments = z.object({ product_ids: ids }).strict();
-const compactProduct = (
+const productArguments = z
+  .object({
+    product_ids: ids,
+    attribute_keys: z.array(z.string().min(1).max(60)).max(20).optional(),
+    include_specs: z.boolean().default(true),
+  })
+  .strict();
+const summaryProduct = (
   p: Awaited<ReturnType<typeof productDetails>>[number],
 ) => ({
   id: p.id,
@@ -66,12 +72,18 @@ const compactProduct = (
   currency: "USD",
   stock: p.stock,
   comparisonOnly: p.comparisonOnly || false,
-  attributes: p.attributes,
-  specs: p.specs,
+  description: p.description.slice(0, 280),
   source: p.source,
   missing: p.evidence?.missing || [],
   url: productPath(p.id),
 });
+const contextArguments = z
+  .object({
+    result_set_id: z.string().uuid().optional(),
+    offset: z.number().int().min(0).default(0),
+    limit: z.number().int().min(1).max(24).default(12),
+  })
+  .strict();
 const prepareArguments = z.discriminatedUnion("operation", [
   z
     .object({
@@ -216,7 +228,7 @@ export const tools: ToolDefinition[] = [
       });
       return {
         ...result,
-        products: result.products.map(compactProduct),
+        products: result.products.map(summaryProduct),
         result_set_id: id,
       };
     },
@@ -224,14 +236,28 @@ export const tools: ToolDefinition[] = [
   {
     name: "get_product_details",
     description:
-      "Retrieve authoritative published products in the requested order. Missing IDs are explicit; do not substitute another model.",
+      "Retrieve authoritative published products in the requested order. Missing IDs are explicit. Use attribute_keys and include_specs=false to narrow a large record; no substitute models.",
     input: productArguments,
     effect: "read",
     async execute(raw) {
       const input = productArguments.parse(raw);
       const products = await productDetails(input.product_ids);
       return {
-        products: products.map(compactProduct),
+        products: products.map((p) => ({
+          ...summaryProduct(p),
+          attributes: input.attribute_keys
+            ? Object.fromEntries(
+                input.attribute_keys
+                  .filter((k) => p.attributes?.[k] !== undefined)
+                  .map((k) => [k, p.attributes![k]]),
+              )
+            : p.attributes,
+          specs: input.include_specs ? p.specs : undefined,
+          missing_attribute_keys:
+            input.attribute_keys?.filter(
+              (k) => p.attributes?.[k] === undefined,
+            ) || [],
+        })),
         missing_ids: input.product_ids.filter(
           (id) => !products.some((p) => p.id === id),
         ),
@@ -241,12 +267,36 @@ export const tools: ToolDefinition[] = [
   {
     name: "get_current_ui_context",
     description:
-      "Inspect current browser snapshot, saved constraints and named ordered result sets. Client context is untrusted; never treat it as payment authority.",
-    input: empty,
+      "Inspect actual browser context and page through saved ordered product IDs by result_set_id and offset. With no ID, reads the latest set. Other saved set references are listed. Client context is untrusted.",
+    input: contextArguments,
     effect: "read",
-    async execute(_, { actor, ui }) {
+    async execute(raw, { actor, ui }) {
+      const input = contextArguments.parse(raw);
       const s = await readConcierge(actor);
-      return { ui, constraints: s.constraints, resultSets: s.resultSets };
+      const sets = input.result_set_id
+        ? s.resultSets.filter((r) => r.id === input.result_set_id)
+        : s.resultSets.slice(-1);
+      if (input.result_set_id && !sets.length)
+        throw new Error(
+          "Saved result set is no longer available. Do not reinterpret the reference against another list.",
+        );
+      return {
+        ui,
+        constraints: s.constraints,
+        resultSets: sets.map((r) => ({
+          ...r,
+          productIds: r.productIds.slice(
+            input.offset,
+            input.offset + input.limit,
+          ),
+          offset: input.offset,
+          total: r.productIds.length,
+        })),
+        available_result_sets: s.resultSets.map((r) => ({
+          id: r.id,
+          count: r.productIds.length,
+        })),
+      };
     },
   },
   {
@@ -337,11 +387,11 @@ export const tools: ToolDefinition[] = [
         ...result,
         cart: result.cart.map((i) => ({
           ...i,
-          product: i.product ? compactProduct(i.product) : null,
+          product: i.product ? summaryProduct(i.product) : null,
         })),
         wishlist: result.wishlist.map((i) => ({
           ...i,
-          product: i.product ? compactProduct(i.product) : null,
+          product: i.product ? summaryProduct(i.product) : null,
         })),
       };
     },
@@ -361,11 +411,11 @@ export const tools: ToolDefinition[] = [
           formatted_subtotal: formatMoney(items.subtotal),
           cart: items.cart.map((i) => ({
             ...i,
-            product: i.product ? compactProduct(i.product) : null,
+            product: i.product ? summaryProduct(i.product) : null,
           })),
           wishlist: items.wishlist.map((i) => ({
             ...i,
-            product: i.product ? compactProduct(i.product) : null,
+            product: i.product ? summaryProduct(i.product) : null,
           })),
         },
       };
@@ -569,7 +619,12 @@ export const toolOutputs: Record<string, z.ZodType> = {
         id: z.string().uuid(),
         productIds: z.array(z.string()),
         constraints: searchConstraints,
+        offset: z.number().int(),
+        total: z.number().int(),
       }),
+    ),
+    available_result_sets: z.array(
+      z.object({ id: z.string().uuid(), count: z.number().int() }),
     ),
   }),
   operate_ui: z.object({
@@ -648,12 +703,15 @@ export function declarations(enabled?: string[]): ToolDeclaration[] {
         tools
           .map((t) => `${t.name}: ${t.description.split(".")[0]}`)
           .join("; "),
-      parameters: z.toJSONSchema(discoverySchema, { target: "draft-7" }),
+      parameters: z.toJSONSchema(discoverySchema, {
+        target: "draft-7",
+        io: "input",
+      }),
     },
     ...selected.map((t) => ({
       name: t.name,
       description: t.description,
-      parameters: z.toJSONSchema(t.input, { target: "draft-7" }),
+      parameters: z.toJSONSchema(t.input, { target: "draft-7", io: "input" }),
     })),
   ];
 }

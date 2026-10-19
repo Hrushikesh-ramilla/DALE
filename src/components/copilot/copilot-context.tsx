@@ -134,7 +134,17 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           Array.from(
             document.querySelectorAll<HTMLElement>("[data-product-id]"),
           )
-            .filter((el) => el.getBoundingClientRect().height > 0)
+            .filter((el) => {
+              const rect = el.getBoundingClientRect();
+              return (
+                rect.height > 0 &&
+                rect.width > 0 &&
+                rect.bottom > 0 &&
+                rect.top < window.innerHeight &&
+                rect.right > 0 &&
+                rect.left < window.innerWidth
+              );
+            })
             .map((el) => el.dataset.productId!)
             .filter(Boolean),
         ),
