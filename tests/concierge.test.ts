@@ -606,6 +606,89 @@ it("persists cart and wishlist separately and rejects excess stock and foreign s
     }),
   ).rejects.toThrow("changed");
 });
+it("keeps observed basket revisions valid through native chat bookkeeping but rejects real stale edits", async () => {
+  const buyer = (await customerSession({ action: "guest" })).actor;
+  const p = products[0];
+  await manageBasket(buyer, {
+    collection: "wishlist",
+    action: "add",
+    items: [{ productId: p.id }],
+  });
+  vi.mocked(modelTurn).mockReset();
+  vi.mocked(modelTurn)
+    .mockResolvedValueOnce(
+      call("manage_collection", { action: "get", collection: "wishlist" }),
+    )
+    .mockImplementationOnce(async (messages) => {
+      const observation = JSON.parse(messages.at(-1)!.content!);
+      return call("move_collection", {
+        source_collection: "wishlist",
+        destination_collection: "cart",
+        expected_revision: observation.data.revision,
+        items: [{ productId: p.id, quantity: 1 }],
+      });
+    })
+    .mockResolvedValueOnce({
+      role: "assistant",
+      content: "Moved the requested item.",
+    });
+  const view = await runConcierge(buyer, {
+    turn_id: randomUUID(),
+    message: "Move my saved item into my cart.",
+    client_context: context,
+  });
+  expect(view.turn?.status).toBe("completed");
+  expect(view.basket.cart).toEqual([
+    expect.objectContaining({ productId: p.id, quantity: 1 }),
+  ]);
+  expect(view.basket.wishlist).toEqual([]);
+  const observed = view.basket.revision;
+  await manageBasket(buyer, {
+    collection: "cart",
+    action: "set",
+    items: [{ productId: p.id, quantity: 2 }],
+    expected_revision: observed,
+  });
+  await expect(
+    manageBasket(buyer, {
+      collection: "cart",
+      action: "remove",
+      items: [{ productId: p.id }],
+      expected_revision: observed,
+    }),
+  ).rejects.toThrow("changed");
+  expect((await basket(buyer)).cart[0].quantity).toBe(2);
+});
+
+it("initializes legacy basket versions without clearing saved items or staling an observed revision", async () => {
+  const buyer = (await customerSession({ action: "guest" })).actor;
+  const p = products[0];
+  await manageBasket(buyer, {
+    collection: "wishlist",
+    action: "add",
+    items: [{ productId: p.id }],
+  });
+  await (
+    await getDatabase()
+  ).query(
+    "UPDATE concierge_documents SET state=state-'basketRevision' WHERE owner=$1",
+    [ownerKey(buyer)],
+  );
+  const observed = await basket(buyer);
+  await changeConcierge(buyer, (s) => {
+    s.messages.push({ role: "user", content: "Unrelated chat bookkeeping" });
+  });
+  expect((await basket(buyer)).revision).toBe(observed.revision);
+  await manageBasket(buyer, {
+    collection: "cart",
+    action: "move",
+    items: [{ productId: p.id }],
+    expected_revision: observed.revision,
+  });
+  expect((await basket(buyer)).wishlist).toEqual([]);
+  expect((await basket(buyer)).cart[0].productId).toBe(p.id);
+});
+
 it("chains native calls through actual search and persistent mutations, and replays the turn without duplicating", async () => {
   vi.mocked(modelTurn).mockReset();
   const id = randomUUID();

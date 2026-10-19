@@ -47,7 +47,14 @@ export const basketInput = z
       )
       .max(50)
       .default([]),
-    expected_revision: z.number().int().min(0).optional(),
+    expected_revision: z
+      .number()
+      .int()
+      .min(0)
+      .describe(
+        "Optional basket revision from the latest collection result; never use a conversation/document revision or invent a value.",
+      )
+      .optional(),
   })
   .strict();
 
@@ -58,7 +65,7 @@ export async function basket(actor: Actor) {
     ...new Set([...state.cart.map((i) => i.productId), ...state.wishlist]),
   ]);
   return {
-    revision: state.revision,
+    revision: state.basketRevision ?? state.revision,
     cart: state.cart.map((item) => ({
       ...item,
       product: products.find((p) => p.id === item.productId) || null,
@@ -142,7 +149,7 @@ export async function manageBasket(actor: Actor, raw: unknown) {
       );
     if (
       input.expected_revision !== undefined &&
-      state.revision !== input.expected_revision
+      (state.basketRevision ?? state.revision) !== input.expected_revision
     )
       throw new Error("Basket changed. Refresh before editing it.");
     if (input.action === "move") {

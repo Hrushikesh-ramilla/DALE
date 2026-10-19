@@ -10,6 +10,7 @@ import { uiContext } from "../src/domain/concierge";
 import { formatMoney } from "../src/domain/money";
 import { manageBasket } from "../src/server/concierge/shopping";
 import type { Actor } from "../src/server/state";
+import { setTimeout as delay } from "node:timers/promises";
 
 Object.assign(
   process.env,
@@ -30,6 +31,11 @@ const context = uiContext.parse({
   current_page_type: "department",
 });
 const results: Record<string, unknown>[] = [];
+const paceMs = Number(
+  process.argv.find((arg) => arg.startsWith("--pace-ms="))?.split("=")[1] || 0,
+);
+if (!Number.isInteger(paceMs) || paceMs < 0 || paceMs > 15000)
+  throw new Error("Invalid evaluation pacing.");
 const measurements: Record<string, unknown>[] = [];
 let warmupMs: number | null = null;
 if (process.argv.includes("--warmup")) {
@@ -80,6 +86,7 @@ async function shopper() {
   return (await customerSession({ action: "guest" })).actor;
 }
 async function turn(actor: Actor, message: string) {
+  if (paceMs) await delay(paceMs); // Outside the measured request; respects free API rate limits.
   const at = Date.now();
   const measurementOffset = measurements.length;
   const view = await runConcierge(actor, {
@@ -280,11 +287,12 @@ await mkdir(".data/concierge-verification", { recursive: true });
 const report = {
   at: new Date().toISOString(),
   model: process.env.CONCIERGE_MODEL,
-  provider: "self_hosted",
+  provider: process.env.CONCIERGE_PROVIDER || "self_hosted",
   candidate,
   warmupMs,
+  paceMs,
   scope:
-    "Actual local model and isolated real application database. No inference mocks, no payment calls. Seven shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
+    "Actual configured model and isolated real application database. No inference mocks, no payment calls. Seven shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work. Local model prefix caching does not apply to cloud inference.",
   passed: results.every((r) => r.passed),
   latency: {
     targetMs: 1000,
@@ -300,7 +308,7 @@ const report = {
   results,
 };
 await writeFile(
-  `.data/concierge-verification/buyer-live-${candidate ? "text-candidate" : "vision-baseline"}.json`,
+  `.data/concierge-verification/buyer-live-${process.env.CONCIERGE_PROVIDER === "gemini" ? "gemini" : candidate ? "text-candidate" : "vision-baseline"}.json`,
   JSON.stringify(report, null, 2),
 );
 console.log(JSON.stringify(report, null, 2));

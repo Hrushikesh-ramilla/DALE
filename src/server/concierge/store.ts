@@ -44,6 +44,7 @@ export const ownerKey = (actor: Actor) =>
   `${actor.workspaceId}:${actor.userId}`;
 const empty = (): ConciergeState => ({
   revision: 0,
+  basketRevision: 0,
   messages: [],
   transcript: [],
   cart: [],
@@ -87,7 +88,14 @@ export async function changeConcierge<T>(
       throw new Error(
         "The originating turn is no longer active. No new mutation was applied.",
       );
+    // Chat/tool bookkeeping must not stale a shopper's basket observation.
+    // Legacy documents start at their last public revision without data loss.
+    const basketRevision = state.basketRevision ?? state.revision;
+    const beforeBasket = JSON.stringify([state.cart, state.wishlist]);
     const value = await fn(state, sql);
+    state.basketRevision =
+      basketRevision +
+      Number(beforeBasket !== JSON.stringify([state.cart, state.wishlist]));
     state.revision++;
     state.transcript = state.transcript.slice(-100);
     if (state.messages.length > 160) {
