@@ -30,6 +30,10 @@ import {
 } from "../src/server/concierge/engine";
 import { executeTool, declarations } from "../src/server/concierge/tools";
 import {
+  modelProductReferences,
+  resolveProductReferences,
+} from "../src/server/concierge/product-references";
+import {
   uiContext,
   searchConstraints,
   type NativeMessage,
@@ -80,6 +84,117 @@ beforeAll(async () => {
 afterAll(async () => {
   await closeDatabase();
   vi.restoreAllMocks();
+});
+it("uses stable product references without changing stored identities or unrelated arguments", async () => {
+  const p = products[0];
+  const encoded = (await modelProductReferences({
+    id: p.id,
+    url: `/product/${p.id}`,
+    order_id: randomUUID(),
+  })) as { id: string; url: string; order_id: string };
+  expect(encoded.id).toMatch(/^item:[1-9][0-9]*$/);
+  expect(encoded.url).toBe(`/product/${p.id}`);
+  await modelProductReferences({ id: products[1].id });
+  expect(
+    ((await modelProductReferences({ id: p.id })) as { id: string }).id,
+  ).toBe(encoded.id);
+  expect(
+    await resolveProductReferences({
+      product_ids: [encoded.id],
+      items: [{ productId: encoded.id }],
+      note: encoded.id,
+      order_id: encoded.id,
+    }),
+  ).toEqual({
+    product_ids: [p.id],
+    items: [{ productId: p.id }],
+    note: encoded.id,
+    order_id: encoded.id,
+  });
+  expect(
+    await resolveProductReferences({
+      destination: "category",
+      entity_id: encoded.id,
+    }),
+  ).toEqual({ destination: "category", entity_id: encoded.id });
+  expect(
+    await resolveProductReferences({
+      destination: "product",
+      entity_id: encoded.id,
+    }),
+  ).toEqual({ destination: "product", entity_id: p.id });
+  await expect(
+    resolveProductReferences({ product_ids: ["item:9223372036854775807"] }),
+  ).rejects.toThrow("Unknown product reference");
+  await expect(
+    resolveProductReferences({ product_id: "item:invalid" }),
+  ).rejects.toThrow("Invalid product reference");
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  await executeTool(
+    "manage_collection",
+    {
+      collection: "wishlist",
+      action: "add",
+      items: [{ productId: encoded.id }],
+    },
+    { actor: fresh, ui: context },
+  );
+  expect((await basket(fresh)).wishlist.map((i) => i.productId)).toEqual([
+    p.id,
+  ]);
+  expect((await basket(other)).wishlist).toEqual([]);
+  const operation = await executeTool(
+    "operate_ui",
+    { operation: "navigate", destination: "product", entity_id: encoded.id },
+    { actor: fresh, ui: context },
+  );
+  expect(JSON.stringify(operation)).toContain(encodeURIComponent(p.id));
+});
+
+it("keeps variant ambiguity visible after reading details and blocks silently adding a candidate", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const turnId = randomUUID();
+  await changeConcierge(fresh, (s) => {
+    s.turn = {
+      id: turnId,
+      status: "running",
+      calls: 0,
+      leaseUntil: Date.now() + 60000,
+    };
+    s.resultSets = [
+      {
+        id: randomUUID(),
+        turnId,
+        matchStatus: "choose_variant",
+        productIds: products.slice(0, 2).map((p) => p.id),
+        constraints: searchConstraints.parse({}),
+      },
+    ];
+  });
+  const result = await executeTool(
+    "get_product_details",
+    { product_ids: [products[0].id], include_specs: false },
+    { actor: fresh, ui: context },
+  );
+  expect(result.data).toMatchObject({ selection_required: true });
+  // An unrelated lookup must not erase a pending variant choice.
+  await executeTool(
+    "lookup_product",
+    { name: products[2].name },
+    { actor: fresh, ui: context },
+  );
+  await expect(
+    executeTool(
+      "manage_collection",
+      {
+        collection: "cart",
+        action: "add",
+        items: [{ productId: products[0].id }],
+      },
+      { actor: fresh, ui: context },
+    ),
+  ).rejects.toThrow("Ask the customer");
+  expect((await basket(fresh)).cart).toEqual([]);
 });
 it("discovers live brands and supports strict inclusive/exclusive limits across independently selected categories", async () => {
   const capabilities = await catalogCapabilities();
@@ -228,6 +343,25 @@ it("does not expose an empty search tracking ID as an apparent product identity"
   expect((await readConcierge(fresh)).resultSets.at(-1)?.productIds).toEqual(
     [],
   );
+});
+it("ends ambiguous single-item lookup at a truthful customer choice without another generation or a guessed mutation", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  vi.mocked(modelTurn)
+    .mockReset()
+    .mockResolvedValueOnce(call("lookup_product", { name: "omega peedmater" }));
+  const view = await runConcierge(fresh, {
+    turn_id: randomUUID(),
+    message: "Find omega peedmater and save it to my wishlist",
+    client_context: context,
+  });
+  expect(view.turn?.status).toBe("completed");
+  expect(view.catalog_match_status).toBe("choose_variant");
+  expect(view.products.length).toBeGreaterThan(1);
+  const text = view.messages.at(-1)?.text || "";
+  expect(text).toContain("Which exact variant");
+  for (const p of view.products) expect(text).toContain(p.name);
+  expect(view.basket.wishlist).toEqual([]);
+  expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
 });
 it("does not offer discovery of core functions that are already callable", () => {
   const discovery = declarations(["lookup_product", "manage_collection"]).find(
@@ -1074,7 +1208,11 @@ it("pages a named older result set without reinterpreting its original ordering"
   const data = result.data as {
     resultSets: { productIds: string[]; total: number }[];
   };
-  expect(data.resultSets[0].productIds).toEqual(ids.slice(1, 3));
+  expect(
+    await resolveProductReferences({
+      product_ids: data.resultSets[0].productIds,
+    }),
+  ).toEqual({ product_ids: ids.slice(1, 3) });
   expect(data.resultSets[0].total).toBe(ids.length);
   await expect(
     executeTool(

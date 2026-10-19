@@ -105,6 +105,50 @@ try {
       exact.view.products[0].id === product.id &&
       exact.reply?.includes(price),
   });
+  const saved = await turn(
+    "Save that exact fragrance to my wishlist. Do not add it to my cart.",
+    "wishlist",
+  );
+  checks.push({
+    ...saved,
+    view: undefined,
+    passed:
+      saved.status === "completed" &&
+      saved.view.basket.wishlist.some(
+        (item) => item.productId === product.id,
+      ) &&
+      saved.view.basket.cart.length === 0,
+  });
+  const moved = await turn(
+    "Move that fragrance from my wishlist to my cart, quantity one. Do not checkout.",
+    "cart",
+  );
+  checks.push({
+    ...moved,
+    view: undefined,
+    passed:
+      moved.status === "completed" &&
+      !moved.view.basket.wishlist.some(
+        (item) => item.productId === product.id,
+      ) &&
+      moved.view.basket.cart.some(
+        (item) => item.productId === product.id && item.quantity === 1,
+      ) &&
+      moved.view.confirmations.length === 0,
+  });
+  await page.reload();
+  const persisted = await (
+    await context.request.get(`${base}/api/copilot/state`)
+  ).json();
+  checks.push({
+    message: "Reload preserves actual cart and wishlist changes",
+    elapsedMs: 0,
+    passed:
+      persisted.basket.cart.some(
+        (item) => item.productId === product.id && item.quantity === 1,
+      ) &&
+      !persisted.basket.wishlist.some((item) => item.productId === product.id),
+  });
 } catch (error) {
   checks.push({ passed: false, error: String(error) });
 } finally {

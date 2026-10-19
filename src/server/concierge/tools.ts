@@ -35,6 +35,10 @@ import { formatMoney } from "@/domain/money";
 import { recordedAttributes } from "@/domain/catalog-derived";
 import { briefSchema } from "@/domain/brief";
 import { knownModels } from "@/domain/catalog";
+import {
+  modelProductReferences,
+  resolveProductReferences,
+} from "./product-references";
 import { compatibilityArguments, deviceCompatibility } from "./compatibility";
 
 type ToolContext = { actor: Actor; ui: UIContext; signal?: AbortSignal };
@@ -342,10 +346,21 @@ export const tools: ToolDefinition[] = [
       "Retrieve authoritative published products in the requested order. Missing IDs are explicit. Use attribute_keys and include_specs=false to narrow a large record; no substitute models.",
     input: productArguments,
     effect: "read",
-    async execute(raw) {
+    async execute(raw, { actor }) {
       const input = productArguments.parse(raw);
       const products = await productDetails(input.product_ids);
+      const state = await readConcierge(actor);
+      const ambiguous = state.resultSets.findLast(
+        (set) =>
+          set.turnId === state.turn?.id &&
+          set.matchStatus === "choose_variant" &&
+          input.product_ids.some((id) => set.productIds.includes(id)),
+      );
       return {
+        selection_required: Boolean(ambiguous),
+        selection_note: ambiguous
+          ? "These are details of candidate variants, not a customer selection. Ask which variant they want; do not pick the first one."
+          : null,
         products: products.map((p) => ({
           ...summaryProduct(p),
           attributes: input.attribute_keys
@@ -488,7 +503,21 @@ export const tools: ToolDefinition[] = [
       "Manage owner cart or wishlist with exact product IDs. remove deletes only items[]; clear deletes EVERYTHING and is only for an explicit request to empty the whole collection. Preserve other items. groupId is only for select_group; forming groups cannot check out. Adding does not purchase or reserve stock. No automatic mutation retries.",
     input: basketInput,
     effect: "write",
-    async execute(input, { actor }) {
+    async execute(raw, { actor }) {
+      const input = basketInput.parse(raw);
+      const state = await readConcierge(actor);
+      if (
+        ["add", "set"].includes(input.action) &&
+        state.resultSets.some(
+          (set) =>
+            set.turnId === state.turn?.id &&
+            set.matchStatus === "choose_variant" &&
+            input.items.some((item) => set.productIds.includes(item.productId)),
+        )
+      )
+        throw new Error(
+          "The lookup has multiple or approximate variants. Ask the customer to choose the exact product before changing their collection.",
+        );
       const result = await manageBasket(actor, input);
       return {
         ...result,
@@ -774,6 +803,8 @@ export const toolOutputs: Record<string, z.ZodType> = {
   get_product_details: z.object({
     products: z.array(recordedProduct),
     missing_ids: z.array(z.string()),
+    selection_required: z.boolean(),
+    selection_note: z.string().nullable(),
   }),
   get_current_ui_context: z.object({
     ui: z.unknown(),
@@ -953,7 +984,7 @@ export async function executeTool(
   const tool = tools.find((t) => t.name === name);
   if (!tool)
     throw new Error("Unknown tool. Use the registered capability list.");
-  const input = tool.input.parse(raw);
+  const input = tool.input.parse(await resolveProductReferences(raw));
   const result = toolOutputs[name].parse(
     await tool.execute(input as never, context),
   );
@@ -964,5 +995,9 @@ export async function executeTool(
       effect: z.enum(["read", "write", "browser", "prepare"]),
       data: z.unknown(),
     })
-    .parse({ ok: true, effect: tool.effect, data: result });
+    .parse({
+      ok: true,
+      effect: tool.effect,
+      data: await modelProductReferences(result),
+    });
 }
