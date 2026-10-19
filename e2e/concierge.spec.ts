@@ -49,6 +49,105 @@ test.afterAll(async () => {
     server.close((e) => (e ? reject(e) : resolve())),
   );
 });
+
+test("two independent shoppers unlock a group discount that survives cart reload and checkout review", async ({
+  page,
+  browser,
+  baseURL,
+}) => {
+  const second = await browser.newContext({ baseURL });
+  const headers = { Origin: baseURL! };
+  try {
+    for (const client of [page.request, second.request]) {
+      const started = await client.post("/api/copilot/state", {
+        headers,
+        data: { action: "start" },
+      });
+      expect(started.ok()).toBeTruthy();
+    }
+    const source = await page.request.get(
+      "/api/copilot/search?filters=%7B%22limit%22%3A1%7D",
+    );
+    const product = (await source.json()).products[0];
+    const firstJoin = await page.request.post("/api/actions", {
+      headers,
+      data: {
+        action: "join_group",
+        productId: product.id,
+        model: "not-required",
+      },
+    });
+    expect(firstJoin.ok()).toBeTruthy();
+    const groupId = (await firstJoin.json()).result;
+    const secondJoin = await second.request.post("/api/actions", {
+      headers,
+      data: {
+        action: "join_group",
+        productId: product.id,
+        model: "not-required",
+      },
+    });
+    expect(secondJoin.ok()).toBeTruthy();
+    expect((await secondJoin.json()).result).toBe(groupId);
+    const added = await page.request.post("/api/copilot/state", {
+      headers,
+      data: {
+        collection: "cart",
+        action: "add",
+        items: [{ productId: product.id }],
+      },
+    });
+    expect(added.ok()).toBeTruthy();
+    await page.goto("/cart");
+    const selection = page.getByLabel(`Group offer ${product.id}`, {
+      exact: true,
+    });
+    await selection.selectOption(groupId);
+    await expect
+      .poll(
+        async () =>
+          (await (await page.request.get("/api/copilot/state")).json()).basket
+            .cart[0].groupId,
+      )
+      .toBe(groupId);
+    await page.reload();
+    await expect(selection).toHaveValue(groupId);
+    await page
+      .getByRole("button", { name: "Prepare checkout", exact: true })
+      .click();
+    await expect(
+      page.getByRole("heading", { name: "Review checkout" }),
+    ).toBeVisible();
+    const state = await (await page.request.get("/api/copilot/state")).json();
+    const approval = state.confirmations.find(
+      (c: { kind: string; status: string }) =>
+        c.kind === "checkout" && c.status === "pending",
+    );
+    expect(approval.terms.quotes[0].groupId).toBe(groupId);
+    expect(approval.terms.quotes[0].amount).toBeLessThan(product.price);
+    await page
+      .getByRole("button", { name: "Confirm checkout", exact: true })
+      .click();
+    await expect(
+      page.getByRole("heading", { name: "Checkout preparation recorded" }),
+    ).toBeVisible();
+    const final = await (await page.request.get("/api/copilot/state")).json();
+    const result = final.confirmations.find(
+      (c: { id: string }) => c.id === approval.id,
+    ).result;
+    expect(result.captured).toBe(false);
+    expect(result.outcomes[0].order.quote.groupId).toBe(groupId);
+    expect(result.outcomes[0].order.quote.amount).toBe(
+      approval.terms.quotes[0].amount,
+    );
+    expect(
+      (await (await second.request.get("/api/copilot/state")).json()).basket
+        .cart,
+    ).toEqual([]);
+  } finally {
+    await second.close();
+  }
+});
 test("real search, navigation acknowledgment, server cart, reload, comparison and wishlist", async ({
   page,
 }) => {
