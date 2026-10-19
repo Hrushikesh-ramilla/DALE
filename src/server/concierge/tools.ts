@@ -71,6 +71,7 @@ const lookupArguments = z
     brand: z.string().max(100).optional(),
     category: z.string().max(80).optional(),
     limit: z.number().int().min(1).max(6).default(3),
+    finish_with_cards: z.boolean().default(false),
   })
   .strict();
 async function recordedSearch(
@@ -274,7 +275,7 @@ export const tools: ToolDefinition[] = [
   {
     name: "lookup_product",
     description:
-      "Find a named product. Keep its full model name, generation, size/storage and suffixes; omit commands. Optional brand/category constrain the search. not_found means no match under searched_identity. choose_variant requires a choice. No substitutes.",
+      "Find a named product with its full generation, size/storage and suffixes. For ONLY finding a product or its price, set finish_with_cards=true: verified cards complete the answer immediately. Keep false when further actions/analysis are requested. Optional brand/category constrain identity; not_found is scoped, choose_variant needs a choice. No substitutes.",
     input: lookupArguments,
     effect: "read",
     async execute(raw, { actor, signal }) {
@@ -331,6 +332,7 @@ export const tools: ToolDefinition[] = [
             : [],
         total: result.total,
         selection_required: status === "choose_variant",
+        finish_with_cards: input.finish_with_cards,
         searched_identity: {
           name: input.name,
           ...(brand ? { brand } : {}),
@@ -748,6 +750,7 @@ export const toolOutputs: Record<string, z.ZodType> = {
     products: z.array(recordedProduct),
     total: z.number().int().min(0),
     selection_required: z.boolean(),
+    finish_with_cards: z.boolean(),
     searched_identity: z.object({
       name: z.string(),
       brand: z.string().optional(),
@@ -905,19 +908,39 @@ export function declarations(enabled?: string[]): ToolDeclaration[] {
     enabled === undefined
       ? tools
       : tools.filter((t) => enabled.includes(t.name));
+  const remaining = tools.filter(
+    (t) => !selected.some((s) => s.name === t.name),
+  );
   return [
-    {
-      name: "discover_tools",
-      description:
-        "Enable up to four functions for the next step: " +
-        tools
-          .map((t) => `${t.name}: ${t.description.split(".")[0].slice(0, 55)}`)
-          .join("; "),
-      parameters: z.toJSONSchema(discoverySchema, {
-        target: "draft-7",
-        io: "input",
-      }),
-    },
+    ...(remaining.length
+      ? [
+          {
+            name: "discover_tools",
+            description:
+              "Enable functions NOT already listed below. Call listed functions directly. Available to enable: " +
+              remaining
+                .map(
+                  (t) =>
+                    `${t.name}: ${t.description.split(".")[0].slice(0, 55)}`,
+                )
+                .join("; "),
+            parameters: z.toJSONSchema(
+              z
+                .object({
+                  names: z
+                    .array(z.enum(remaining.map((t) => t.name)))
+                    .min(1)
+                    .max(4),
+                })
+                .strict(),
+              {
+                target: "draft-7",
+                io: "input",
+              },
+            ),
+          },
+        ]
+      : []),
     ...selected.map((t) => ({
       name: t.name,
       description: t.description,

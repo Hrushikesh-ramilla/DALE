@@ -64,7 +64,9 @@ try {
         view.turn?.status === "completed" &&
         view.products.some((p) => p.id === product.id) &&
         view.products.every((p) => p.id === product.id) &&
-        response.includes(formatMoney(product.price)) &&
+        (view.turn?.presentation === "catalog" ||
+          response.includes(formatMoney(product.price))) &&
+        view.products.every((p) => p.price === product.price) &&
         view.basket.cart.length === 0 &&
         view.confirmations.length === 0,
     };

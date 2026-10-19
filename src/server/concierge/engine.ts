@@ -212,7 +212,7 @@ async function continueTurn(
       // Core shopping actions are usable on the first turn. Discovery still
       // loads other schemas on demand, without requiring a small model to learn
       // a capability-enabling step before it can perform any useful action.
-      declarations(state.enabledTools ?? coreTools),
+      declarations([...new Set([...coreTools, ...(state.enabledTools || [])])]),
       signal,
     );
     if (
@@ -307,6 +307,23 @@ async function continueTurn(
           content: observationText(result),
         });
       });
+      const direct = z
+        .object({
+          ok: z.literal(true),
+          data: z.object({ finish_with_cards: z.literal(true) }),
+        })
+        .safeParse(result);
+      if (
+        call.function.name === "lookup_product" &&
+        message.tool_calls.length === 1 &&
+        direct.success
+      ) {
+        await changeConcierge(actor, (s) => {
+          s.turn!.presentation = "catalog";
+          s.turn!.status = "completed";
+        });
+        return;
+      }
     }
     if (browserPending) {
       await changeConcierge(actor, (s) => {
