@@ -4,16 +4,9 @@ import { parse } from "dotenv";
 const source = parse(await readFile(".data/concierge.env", "utf8"));
 const args = process.argv.includes("--index")
   ? ["--import", "tsx", "scripts/index-concierge.ts"]
-  : [
-      "node_modules/next/dist/bin/next",
-      "start",
-      "--hostname",
-      "127.0.0.1",
-      "--port",
-      "3000",
-    ];
+  : [".next/standalone/server.js"];
 const child = spawn(process.execPath, args, {
-  env: { ...process.env, ...source },
+  env: { ...process.env, ...source, HOSTNAME: "127.0.0.1", PORT: "3000" },
   stdio: "inherit",
   windowsHide: true,
 });

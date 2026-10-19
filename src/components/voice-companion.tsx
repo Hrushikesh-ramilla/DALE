@@ -16,6 +16,7 @@ import {
   speechWav,
 } from "@/lib/voice-audio";
 import { deviceText, deviceLabel } from "@/domain/catalog";
+import {useCopilot} from "./copilot/copilot-context";
 export type VoiceResult = {
   intent: VoiceIntent;
   result?: Awaited<ReturnType<typeof shop>>;
@@ -56,6 +57,7 @@ export function VoiceCompanion({
   onResult: (result: VoiceResult) => void;
 }) {
   const path = usePathname();
+  const copilot=useCopilot();
   const [open, setOpen] = useState(false);
   const [availability, setAvailability] = useState<Availability | null>(null);
   const [status, setStatus] = useState<Status>("Ready");
@@ -141,6 +143,11 @@ export function VoiceCompanion({
   ) {
     setStatus("Processing");
     setError("");
+    if(availability?.mode!=="fixture"){
+      await copilot.sendMessage(text);
+      setStatus("Ready");
+      return null;
+    }
     const controller = new AbortController();
     resources.current.abort = controller;
     const response = await fetch("/api/voice/intent", {

@@ -137,7 +137,9 @@ const uiArguments = z.discriminatedUnion("operation", [
       clear_existing: z.boolean().default(false),
     })
     .strict(),
-  z.object({ operation: z.literal("compare"), product_ids: ids }).strict(),
+  z
+    .object({ operation: z.literal("compare"), product_ids: ids.min(2) })
+    .strict(),
   z.object({ operation: z.literal("tabs"), product_ids: ids.max(6) }).strict(),
 ]);
 

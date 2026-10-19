@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, access } from "node:fs/promises";
 import { resolve } from "node:path";
 import { parse } from "dotenv";
+import { randomBytes } from "node:crypto";
 const source = parse(await readFile(".env", "utf8"));
 const candidate = JSON.parse(
   await readFile(".data/self-hosted/candidate.json", "utf8"),
@@ -9,8 +10,29 @@ const key = (await readFile(".data/self-hosted/api-key", "utf8")).trim();
 const directory = resolve(
   source.LOCAL_DATA_DIR || ".data/local-final",
 ).replaceAll("\\", "/");
+await mkdir(directory, { recursive: true });
+let sessionSecret = source.SESSION_SECRET;
+if (!sessionSecret) {
+  const secretFile = resolve(directory, "session-secret");
+  try {
+    sessionSecret = (await readFile(secretFile, "utf8")).trim();
+  } catch {
+    try {
+      await writeFile(secretFile, randomBytes(32).toString("hex"), {
+        flag: "wx",
+        mode: 0o600,
+      });
+    } catch (error) {
+      if (error.code !== "EEXIST") throw error;
+    }
+    sessionSecret = (await readFile(secretFile, "utf8")).trim();
+  }
+}
+if (sessionSecret.length < 32)
+  throw new Error("Local session secret must contain at least 32 characters.");
 const environment = {
   ...source,
+  SESSION_SECRET: sessionSecret,
   LOCAL_DATA_DIR: directory,
   DATABASE_URL: "",
   ALLOW_EMBEDDED_DATABASE: "true",

@@ -11,6 +11,9 @@ import "./fonts.css";
 import "./globals.css";
 import "./monochrome.css";
 import "./agent.css";
+import "./copilot.css";
+import { CopilotProvider } from "@/components/copilot/copilot-context";
+import { DaleCopilotSidecar } from "@/components/copilot/dale-copilot-sidecar";
 export const metadata: Metadata = {
   title: "DALE — shop with confidence",
   applicationName: "DALE",
@@ -26,7 +29,10 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="auto">
       <body>
         <MotionProvider>
-          {children}
+          <CopilotProvider>
+            {children}
+            <DaleCopilotSidecar />
+          </CopilotProvider>
           <LuxuryCursor />
         </MotionProvider>
       </body>

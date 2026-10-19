@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, Suspense } from "react";
+import { useState, useMemo, Suspense, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -25,8 +25,8 @@ import { usePublishedCatalog } from "./use-published-catalog";
 import { ProductArt } from "./product-art";
 import { Breadcrumbs } from "./breadcrumbs";
 import { useStore } from "./store-context";
+import { useCopilot } from "./copilot/copilot-context";
 import { formatMoney } from "@/domain/money";
-import type { Product } from "@/domain/catalog";
 import type { CategoryBrandSummary } from "@/server/catalog-store";
 
 function getSmartChipsForLeaf(leaf: LeafTypeKey): string[] {
@@ -68,6 +68,7 @@ function CategoryCatalogContent({
   const router = useRouter();
   const searchParams = useSearchParams();
   const store = useStore();
+  const copilot = useCopilot();
 
   const brandParam = searchParams.get("brand") || "";
   const viewParam = searchParams.get("view") || "";
@@ -76,7 +77,13 @@ function CategoryCatalogContent({
   const isCatalogSpace = Boolean(brandParam || viewParam === "all" || viewParam === "catalog");
 
   const [searchQuery, setSearchQuery] = useState("");
-  const [maxBudget, setMaxBudget] = useState<number | null>(null);
+  const budgetParameter = searchParams.get("budget");
+  const [budgetOverride, setBudgetOverride] = useState<{parameter:string|null;value:number|null}|null>(null);
+  const parsedBudget = Number(budgetParameter);
+  const maxBudget = budgetOverride?.parameter === budgetParameter
+    ? budgetOverride.value
+    : Number.isFinite(parsedBudget) && parsedBudget > 0 ? parsedBudget * 100 : null;
+  const setMaxBudget = (value:number|null) => setBudgetOverride({parameter:budgetParameter,value});
   const [sortOrder, setSortOrder] = useState<"featured" | "price-asc" | "price-desc" | "brand-asc">("featured");
 
   // AI Assistant state
@@ -136,75 +143,15 @@ function CategoryCatalogContent({
     return list;
   }, [filteredProducts, sortOrder]);
 
-  // Handle AI Assistant queries
-  const handleAiFilter = (text: string) => {
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent("dale:ui-state", {detail: {categories:[leaf],brands:brandParam?[brandParam]:[],query:searchQuery,max_price:maxBudget,sort:sortOrder === "price-asc" ? "price_asc" : sortOrder === "price-desc" ? "price_desc" : "relevance"}}));
+    return () => { window.dispatchEvent(new CustomEvent("dale:ui-state", {detail:{}})); };
+  }, [leaf,brandParam,searchQuery,maxBudget,sortOrder]);
+  const handleAiFilter = async (text: string) => {
     if (!text.trim()) return;
     setIsAiFiltering(true);
-    const lower = text.toLowerCase();
-
-    // Check for clear/reset
-    if (lower.includes("clear") || lower.includes("reset")) {
-      setMaxBudget(null);
-      setSearchQuery("");
-      router.push(`/category/${leaf}?view=all`);
-      setAiFeedback("Cleared active filters · Showing complete collection");
-      setIsAiFiltering(false);
-      return;
-    }
-
-    // Check for price patterns: e.g. "under $3,500", "under 1000", "< $2000"
-    const budgetMatch = lower.match(/(?:under|below|less than|within|<|\$)\s*[\$]?\s*([\d,]+)/);
-    let matchedBudget: number | null = null;
-    if (budgetMatch && budgetMatch[1]) {
-      const num = parseInt(budgetMatch[1].replace(/,/g, ""), 10);
-      if (!isNaN(num) && num > 0) {
-        matchedBudget = num * 100;
-        setMaxBudget(matchedBudget);
-      }
-    }
-
-    // Check for brand match in brandsList
-    let matchedBrand: string | null = null;
-    for (const b of brandsList) {
-      if (lower.includes(b.name.toLowerCase())) {
-        matchedBrand = b.name;
-        break;
-      }
-    }
-
-    const feedbackParts: string[] = [];
-    if (matchedBrand) {
-      router.push(`/category/${leaf}?brand=${encodeURIComponent(matchedBrand)}`);
-      feedbackParts.push(`Brand: ${matchedBrand}`);
-    } else if (!isCatalogSpace) {
-      router.push(`/category/${leaf}?view=all`);
-    }
-
-    if (matchedBudget) {
-      feedbackParts.push(`Max: ${formatMoney(matchedBudget)}`);
-    }
-
-    // Keyword filtering - thoroughly remove price phrases and stop words
-    const cleanQuery = text
-      .replace(/(?:under|below|less than|within|<|\$)\s*[\$]?\s*[\d,]+/gi, "")
-      .replace(new RegExp(matchedBrand ? `\\b${matchedBrand}\\b` : "$^", "gi"), "")
-      .replace(/\b(?:show|me|find|looking|for|please|filter|models|items|in|with|of|suits|t-shirts|shirts|phones|laptops|fragrance)\b/gi, "")
-      .replace(/[^\w\s]/g, "")
-      .trim();
-
-    if (cleanQuery.length > 2 && !cleanQuery.toLowerCase().includes("under")) {
-      setSearchQuery(cleanQuery);
-      feedbackParts.push(`"${cleanQuery}"`);
-    } else {
-      setSearchQuery("");
-    }
-
-    setAiFeedback(
-      feedbackParts.length > 0
-        ? `AI Applied: ${feedbackParts.join(" · ")}`
-        : `AI Filtered by "${text}"`,
-    );
-    setTimeout(() => setIsAiFiltering(false), 300);
+    setAiFeedback(null);
+    try { await copilot.sendMessage(text); } finally { setIsAiFiltering(false); }
   };
 
   const smartChips = getSmartChipsForLeaf(leaf);
@@ -529,7 +476,7 @@ function CategoryCatalogContent({
                 <SlidersHorizontal size={14} /> Sort:
                 <select
                   value={sortOrder}
-                  onChange={(e) => setSortOrder(e.target.value as any)}
+                  onChange={(e) => setSortOrder(e.target.value as typeof sortOrder)}
                   className="category-sort-select"
                 >
                   <option value="featured">Featured Sequence</option>
@@ -554,7 +501,7 @@ function CategoryCatalogContent({
             <section aria-label="Product list">
               <div className="product-grid">
                 {sortedProducts.map((product) => (
-                  <article className="product-card" key={product.id}>
+                  <article className="product-card" key={product.id} data-product-id={product.id}>
                     <div className="card-visual">
                       <Link
                         href={`/product/${product.id}`}
@@ -616,7 +563,7 @@ function CategoryCatalogContent({
                             {formatMoney(product.price)}
                           </strong>
                           <small style={{ display: "block", fontSize: 11, color: "#64748b" }}>
-                            USD · Insured Delivery
+                            USD · Sandbox offer
                           </small>
                         </div>
 

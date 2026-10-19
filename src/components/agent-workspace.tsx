@@ -15,6 +15,7 @@ import type { AgentRun } from "@/domain/agent";
 import type { AgentGroupOffer } from "@/domain/agent-workflow";
 import type { runAgent } from "@/server/agent";
 import type { snapshot } from "@/server/service";
+import { useCopilot } from "./copilot/copilot-context";
 
 export type AgentResult = Awaited<ReturnType<typeof runAgent>>;
 type Session = Awaited<ReturnType<typeof snapshot>>;
@@ -45,6 +46,7 @@ export function AgentWorkspace({
   initialTask?: string;
 }) {
   const [task, setTask] = useState(initialTask || "");
+  const copilot = useCopilot();
   const [pending, setPending] = useState(false);
   const [phase, setPhase] = useState("");
   const [error, setError] = useState("");
@@ -67,6 +69,11 @@ export function AgentWorkspace({
   }, []);
   async function submit() {
     if (!task.trim() || restoring || active.current) return;
+    if (!session?.demo && !session?.fixtureWorkspace) {
+      await copilot.sendMessage(task);
+      setTask("");
+      return;
+    }
     const controller = new AbortController();
     active.current = controller;
     const current = generation.current;

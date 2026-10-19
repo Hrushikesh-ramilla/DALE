@@ -6,10 +6,14 @@ import { snapshot } from "@/server/service";
 import { takeRequestBudget } from "@/server/budgets";
 import { takeDemoBudget } from "@/server/demo";
 import { runAgent } from "@/server/agent";
+import { getWorkspace } from "@/server/state";
 export async function POST(request: Request) {
   try {
     requireSameOrigin(request);
     const actor = await actorFromRequest();
+    const workspace = await getWorkspace(actor.workspaceId);
+    if (!workspace.demo && !workspace.fixtureWorkspace)
+      throw new Error("Legacy voice interpretation is only available in isolated engineering fixtures. Use DALE voice input for shopping.");
     if (actor.role !== "buyer")
       throw new Error("Only the shopper can prepare a voice request.");
     await takeRequestBudget(actor, "voice-intent", 10);

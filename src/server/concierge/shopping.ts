@@ -88,7 +88,10 @@ export async function manageBasket(actor: Actor, raw: unknown) {
           `SELECT (record->>'stock')::integer AS stock,coalesce((record->>'comparisonOnly')::boolean,false) AS comparison FROM catalog_products WHERE id=$1 AND publication='published' FOR SHARE`,
           [item.productId],
         );
-        if (!rows.rows[0] || rows.rows[0].comparison)
+        if (
+          !rows.rows[0] ||
+          (input.collection === "cart" && rows.rows[0].comparison)
+        )
           throw new Error("Product is unavailable for purchase.");
         const existing = state.cart.find((i) => i.productId === item.productId);
         const quantity =
@@ -252,7 +255,7 @@ export async function confirmOperation(
       c.status === "executing" &&
       c.executionLeaseUntil !== undefined &&
       c.executionLeaseUntil < Date.now();
-    if(c.status !== "executing" && Date.parse(c.expiresAt) <= Date.now())
+    if (c.status !== "executing" && Date.parse(c.expiresAt) <= Date.now())
       throw new Error("Confirmation expired. Prepare fresh terms.");
     if (c.status !== "pending" && !recovering)
       throw new Error(
