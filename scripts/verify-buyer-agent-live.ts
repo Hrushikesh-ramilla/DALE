@@ -246,7 +246,7 @@ const report = {
   candidate,
   warmupMs,
   scope:
-    "Actual local model and isolated real application database. No inference mocks, no payment calls. Five shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
+    "Actual local model and isolated real application database. No inference mocks, no payment calls. Six shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
   passed: results.every((r) => r.passed),
   results,
 };
