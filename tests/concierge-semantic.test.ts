@@ -53,12 +53,19 @@ it("ranks semantic matches from a real persisted index and still enforces exact 
   expect((await indexCatalog()).updated).toBe(1);
   const result = await hybridSearch({
     query: "winter landscape",
+    match_mode: "semantic",
     max_price: 3800,
   });
   expect(result.products[0].id).toBe("independent-vector-fixture");
   expect(result.mode).toBe("hybrid");
   expect(
-    (await hybridSearch({ query: "winter landscape", max_price: 3799 })).total,
+    (
+      await hybridSearch({
+        query: "winter landscape",
+        match_mode: "semantic",
+        max_price: 3799,
+      })
+    ).total,
   ).toBe(0);
 });
 it("rejects stale vectors immediately when metadata changes, before reindexing", async () => {
@@ -66,7 +73,10 @@ it("rejects stale vectors immediately when metadata changes, before reindexing",
   await db.query(
     "UPDATE catalog_products SET record=jsonb_set(record,'{description}','\"Revised document\"'::jsonb) WHERE id='independent-vector-fixture'",
   );
-  const result = await hybridSearch({ query: "winter landscape" });
+  const result = await hybridSearch({
+    query: "winter landscape",
+    match_mode: "semantic",
+  });
   expect(result.products).toEqual([]);
   expect(result.degradation).toContain("current semantic vector");
   expect((await indexCatalog()).updated).toBe(1);

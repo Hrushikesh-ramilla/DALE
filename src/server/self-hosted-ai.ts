@@ -15,8 +15,8 @@ export class LocalInferenceError extends Error {
   }
 }
 
-export function selfHostedEndpoint() {
-  const base = process.env.AI_SELF_HOSTED_BASE_URL;
+export function selfHostedEndpoint(override?: string) {
+  const base = override || process.env.AI_SELF_HOSTED_BASE_URL;
   if (!base) throw new Error("Self-hosted model endpoint is not configured.");
   const endpoint = new URL(`${base.replace(/\/$/, "")}/chat/completions`);
   if (

@@ -119,10 +119,68 @@ it("does not invent matches for unknown attributes, broadening or malformed curr
     ).total,
   ).toBe(0);
   await expect(hybridSearch({ currency: "INR" })).rejects.toThrow();
-  const result = await hybridSearch({ query: randomUUID() });
+  const result = await hybridSearch({
+    query: randomUUID(),
+    match_mode: "semantic",
+  });
   expect(result.total).toBe(0);
   expect(result.degradation).toContain("Semantic");
 });
+it("returns named identities only and does not send identity requests to embeddings", async () => {
+  const before = process.env.CONCIERGE_EMBEDDING_MODEL;
+  process.env.CONCIERGE_EMBEDDING_MODEL = "must-not-be-called-for-identity";
+  const request = vi.spyOn(globalThis, "fetch");
+  try {
+    const p = products[0];
+    const lookup = await hybridSearch({ query: p.name, in_stock: false });
+    expect(lookup.products.some((item) => item.id === p.id)).toBe(true);
+    expect(lookup.mode).toBe("identity");
+    expect(
+      (
+        await hybridSearch({ query: "lv imagination perfume", in_stock: false })
+      ).products.every(
+        (item) =>
+          item.brand === "Louis Vuitton" &&
+          item.name.toLowerCase().includes("imagination"),
+      ),
+    ).toBe(true);
+    expect((await hybridSearch({ query: randomUUID() })).products).toEqual([]);
+    expect(request).not.toHaveBeenCalled();
+  } finally {
+    request.mockRestore();
+    if (before === undefined) delete process.env.CONCIERGE_EMBEDDING_MODEL;
+    else process.env.CONCIERGE_EMBEDDING_MODEL = before;
+  }
+});
+
+it("does not display prior search cards under a new request", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  vi.mocked(modelTurn)
+    .mockReset()
+    .mockResolvedValueOnce(call("lookup_product", { name: products[0].name }))
+    .mockResolvedValueOnce({
+      role: "assistant",
+      content: "Observed identity lookup",
+    });
+  const previous = await runConcierge(fresh, {
+    turn_id: randomUUID(),
+    message: "Look up a named product",
+    client_context: context,
+  });
+  expect(previous.products.length).toBeGreaterThan(0);
+  vi.mocked(modelTurn).mockResolvedValueOnce({
+    role: "assistant",
+    content: "A separate general conversation",
+  });
+  const next = await runConcierge(fresh, {
+    turn_id: randomUUID(),
+    message: "A different request",
+    client_context: context,
+  });
+  expect(next.products).toEqual([]);
+  expect((await readConcierge(fresh)).resultSets.length).toBe(1);
+});
+
 it("persists cart and wishlist separately and rejects excess stock and foreign state", async () => {
   const p = products[0];
   await manageBasket(actor, {

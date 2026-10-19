@@ -50,6 +50,68 @@ test.afterAll(async () => {
   );
 });
 
+test("named lookup never renders an unrelated replacement and marks ambiguous variants", async ({
+  page,
+}) => {
+  responses = [
+    nativeCall("lookup_product", {
+      name: "Imagination",
+      brand: "LV",
+      category: "fragrance",
+    }),
+    {
+      role: "assistant",
+      content: "Controlled provider: no recorded named listing was found.",
+    },
+  ];
+  await page.goto("/department/electronics");
+  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  await page.getByLabel("Message DALE").fill("get me lv imagination perfume");
+  await page.getByRole("button", { name: "Send message", exact: true }).click();
+  await expect(
+    page.getByText("Controlled provider: no recorded named listing was found."),
+  ).toBeVisible({ timeout: 60000 });
+  const absent = await (await page.request.get("/api/copilot/state")).json();
+  expect(absent.catalog_match_status).toBe("not_found");
+  expect(absent.products).toEqual([]);
+  await expect(
+    page.getByText(
+      "No matching product was found under the requested identity and filters.",
+    ),
+  ).toBeVisible();
+  responses = [
+    nativeCall("lookup_product", { name: "omega peedmater" }),
+    {
+      role: "assistant",
+      content:
+        "Controlled provider: several watch variants match; choose the exact model.",
+    },
+  ];
+  await page
+    .getByLabel("Message DALE")
+    .fill("get me omega peedmater and wat the cost");
+  await page.getByRole("button", { name: "Send message", exact: true }).click();
+  await expect(
+    page.getByText(
+      "Controlled provider: several watch variants match; choose the exact model.",
+    ),
+  ).toBeVisible();
+  const choices = await (await page.request.get("/api/copilot/state")).json();
+  expect(choices.catalog_match_status).toBe("choose_variant");
+  expect(choices.products.length).toBeGreaterThan(1);
+  expect(
+    choices.products.every(
+      (p: { name: string; brand: string }) =>
+        p.brand === "Omega" && /speedmaster/i.test(p.name),
+    ),
+  ).toBe(true);
+  await expect(
+    page.getByText(
+      "Matching variants — choose the exact product before adding it.",
+    ),
+  ).toBeVisible();
+});
+
 test("two independent shoppers unlock a group discount that survives cart reload and checkout review", async ({
   page,
   browser,
