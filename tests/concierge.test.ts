@@ -184,15 +184,30 @@ it("does not display prior search cards under a new request", async () => {
       ?.content,
   ).toBe("Look up a named product");
 });
-it("retains a customer's full named product when model arguments shorten it", async () => {
+it("uses requested lookup identity rather than interpreting other utterance mentions as selection", async () => {
   const p = products[0];
-  const result = await hybridSearch(
-    { query: p.name.split(/\s+/).slice(0, 2).join(" "), in_stock: false },
-    undefined,
-    `What does ${p.name} cost?`,
-  );
-  expect(result.products.length).toBeGreaterThan(0);
-  expect(result.products.every((item) => item.name === p.name)).toBe(true);
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  for (const message of [
+    `I already own ${products[1].name}; show me ${p.name} instead`,
+    `Compare ${p.name} with ${products[1].name}`,
+  ]) {
+    await changeConcierge(fresh, (s) => {
+      s.transcript.push({
+        id: randomUUID(),
+        sender: "user",
+        text: message,
+        timestamp: Date.now(),
+      });
+    });
+    await executeTool(
+      "lookup_product",
+      { name: p.name },
+      { actor: fresh, ui: context },
+    );
+    const set = (await readConcierge(fresh)).resultSets.at(-1)!;
+    expect(set.productIds).toContain(p.id);
+    expect(set.productIds).not.toContain(products[1].id);
+  }
 });
 
 it("does not expose an empty search tracking ID as an apparent product identity", async () => {

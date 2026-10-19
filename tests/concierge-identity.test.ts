@@ -3,7 +3,6 @@ import {
   identityMatcher,
   brandVocabulary,
   canonicalBrand,
-  mentionedIdentities,
 } from "../src/server/concierge/identity";
 import type { Product } from "../src/domain/catalog";
 const product = (name: string, brand: string) => ({ name, brand }) as Product;
@@ -19,22 +18,12 @@ it("keeps model numbers separate from measured variant quantities", () => {
     )?.kind,
   ).toBe("identity");
 });
-it("anchors full names without confusing a shorter family or other edition", () => {
+it("keeps a requested family distinct from its longer variant", () => {
   const family = product("Acme Aurora", "Acme");
   const exact = product("Acme Aurora 12 Pro 128GB", "Acme");
-  const other = product("Acme Aurora 12 Pro 256GB", "Acme");
-  expect(
-    mentionedIdentities(
-      "Do you have Acme Aurora 12 Pro 128GB, and what does it cost?",
-      [family, exact, other],
-    ),
-  ).toEqual([exact]);
-  expect(
-    mentionedIdentities(
-      "Compare Acme Aurora 12 Pro 128GB and Acme Aurora 12 Pro 256GB",
-      [family, exact, other],
-    ),
-  ).toEqual([exact, other]);
+  const lookup = identityMatcher("Acme Aurora", ["Acme"]);
+  expect(lookup(family)?.kind).toBe("identity");
+  expect(lookup(exact)?.kind).toBe("partial_family");
 });
 
 it("resolves abbreviations from catalog vocabulary without brand-specific rules", () => {

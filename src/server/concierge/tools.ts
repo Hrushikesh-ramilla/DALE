@@ -77,9 +77,8 @@ async function recordedSearch(
   actor: Actor,
   input: unknown,
   signal?: AbortSignal,
-  utterance?: string,
 ) {
-  const result = await hybridSearch(input, signal, utterance);
+  const result = await hybridSearch(input, signal);
   const id = randomUUID();
   await changeConcierge(actor, (s) => {
     s.resultSets.push({
@@ -280,9 +279,6 @@ export const tools: ToolDefinition[] = [
     effect: "read",
     async execute(raw, { actor, signal }) {
       const input = lookupArguments.parse(raw);
-      const utterance = (await readConcierge(actor)).transcript
-        .filter((m) => m.sender === "user")
-        .at(-1)?.text;
       const capabilities = await catalogCapabilities();
       const brand = input.brand
         ? canonicalBrand(
@@ -301,7 +297,6 @@ export const tools: ToolDefinition[] = [
           in_stock: false,
         },
         signal,
-        utterance,
       );
       const exact = result.identity_matches.every((m) => m.kind === "identity");
       const status = !result.total

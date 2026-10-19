@@ -26,22 +26,6 @@ function numericIdentity(value: string): {
     );
   return { measures, models: remainder.match(/\d+/g) || [] };
 }
-/** Recognize full catalog names actually written by the customer. A shorter
- * prefix cannot override a more specific named variant. No brand/model tables. */
-export function mentionedIdentities(utterance: string, products: Product[]) {
-  const text = ` ${key(utterance)} `;
-  const matches = products.filter(
-    (p) => words(p.name).length >= 2 && text.includes(` ${key(p.name)} `),
-  );
-  return matches.filter(
-    (p) =>
-      !matches.some(
-        (other) =>
-          key(other.name) !== key(p.name) &&
-          ` ${key(other.name)} `.includes(` ${key(p.name)} `),
-      ),
-  );
-}
 
 /** Aliases are derived from the published brand vocabulary, never a product-specific
  * conversational routing table. Ambiguous initials are deliberately not resolved. */
