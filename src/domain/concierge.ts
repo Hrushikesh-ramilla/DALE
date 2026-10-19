@@ -179,7 +179,6 @@ export type ConciergeState = {
     status: "running" | "awaiting_ui" | "completed" | "failed" | "canceled";
     leaseUntil: number;
     calls: number;
-    presentation?: "catalog";
     error?: string;
   };
   context?: UIContext;

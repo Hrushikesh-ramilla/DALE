@@ -229,30 +229,6 @@ it("does not expose an empty search tracking ID as an apparent product identity"
     [],
   );
 });
-it("presents verified catalog cards without another generation when the model explicitly chooses them", async () => {
-  const fresh = (await customerSession({ action: "guest" })).actor;
-  vi.mocked(modelTurn)
-    .mockReset()
-    .mockResolvedValueOnce(
-      call("lookup_product", {
-        name: products[0].name,
-        finish_with_cards: true,
-      }),
-    );
-  const view = await runConcierge(fresh, {
-    turn_id: randomUUID(),
-    message: "Find the named product and its price",
-    client_context: context,
-  });
-  expect(view.turn?.status).toBe("completed");
-  expect(view.turn?.presentation).toBe("catalog");
-  expect(
-    view.products.some(
-      (p) => p.id === products[0].id && p.price === products[0].price,
-    ),
-  ).toBe(true);
-  expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
-});
 it("does not offer discovery of core functions that are already callable", () => {
   const discovery = declarations(["lookup_product", "manage_collection"]).find(
     (t) => t.name === "discover_tools",

@@ -55,9 +55,7 @@ test("named lookup never renders an unrelated replacement and marks ambiguous va
 }) => {
   responses = [
     nativeCall("lookup_product", {
-      name: "Imagination",
-      brand: "LV",
-      category: "fragrance",
+      name: "LV Imagination",
     }),
     {
       role: "assistant",

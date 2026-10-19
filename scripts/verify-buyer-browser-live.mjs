@@ -39,18 +39,12 @@ try {
       elapsedMs: Date.now() - start,
       firstResultMs,
       status: view?.turn?.status,
-      presentation: view?.turn?.presentation,
       error: view?.turn?.error,
       reply,
       view,
     };
   }
   const absent = await turn("get me lv imagination perfume", "lv");
-  await page
-    .getByText(
-      "No matching product was found under the requested identity and filters.",
-    )
-    .waitFor();
   checks.push({
     ...absent,
     view: undefined,
@@ -59,16 +53,12 @@ try {
       absent.status === "completed" &&
       absent.view.catalog_match_status === "not_found" &&
       absent.view.products.length === 0 &&
-      (absent.presentation === "catalog" ||
-        /not|no|couldn.t|unable/i.test(absent.reply || "")),
+      /not|no|couldn.t|unable/i.test(absent.reply || ""),
   });
   const omega = await turn(
     "get me omega peedmater and wat the cost ??",
     "omega",
   );
-  await page
-    .getByText("Matching variants — choose the exact product before adding it.")
-    .waitFor();
   checks.push({
     ...omega,
     view: undefined,
@@ -84,8 +74,7 @@ try {
       omega.view.products.every(
         (p) => p.brand === "Omega" && /Speedmaster/i.test(p.name),
       ) &&
-      (omega.presentation === "catalog" ||
-        /which|choose|variant|options/i.test(omega.reply || "")),
+      /which|choose|variant|options/i.test(omega.reply || ""),
   });
   const response = await context.request.get(
     `${base}/api/copilot/search?filters=${encodeURIComponent(JSON.stringify({ categories: ["fragrance"], offset: 7, limit: 1 }))}`,
@@ -100,10 +89,6 @@ try {
     style: "currency",
     currency: "USD",
   }).format(product.price / 100);
-  await page
-    .locator('section[aria-label="Retrieved catalog products"]')
-    .getByText(price, { exact: false })
-    .waitFor();
   checks.push({
     ...exact,
     view: undefined,
@@ -118,8 +103,7 @@ try {
       exact.status === "completed" &&
       exact.view.products.length === 1 &&
       exact.view.products[0].id === product.id &&
-      exact.view.products[0].price === product.price &&
-      (exact.presentation === "catalog" || exact.reply?.includes(price)),
+      exact.reply?.includes(price),
   });
 } catch (error) {
   checks.push({ passed: false, error: String(error) });

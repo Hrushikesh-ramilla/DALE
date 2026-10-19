@@ -1,4 +1,4 @@
-import { cp, writeFile, mkdir } from "node:fs/promises";
+import { cp, writeFile, mkdir, symlink } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { resolve, dirname, sep } from "node:path";
@@ -6,7 +6,17 @@ import { resolve, dirname, sep } from "node:path";
 // Serve the optimized application and the same browser assets used by a release.
 // Provider configuration and credentials are not needed for fixture acceptance.
 await cp(".next/static", ".next/standalone/.next/static", { recursive: true });
-await cp("public", ".next/standalone/public", { recursive: true });
+if (process.env.LOCAL_PREVIEW_LINK_PUBLIC === "true") {
+  // Local iteration can share immutable workspace assets instead of copying
+  // thousands of files through a synced directory. Release builds keep copies.
+  await symlink(
+    resolve("public"),
+    ".next/standalone/public",
+    process.platform === "win32" ? "junction" : "dir",
+  );
+} else {
+  await cp("public", ".next/standalone/public", { recursive: true });
+}
 await mkdir(".next/standalone/deploy", { recursive: true });
 await cp("deploy/local-ocr.mjs", ".next/standalone/deploy/local-ocr.mjs");
 // The OCR helper is a separate executable, outside the route import graph.

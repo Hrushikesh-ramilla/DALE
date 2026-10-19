@@ -114,9 +114,7 @@ try {
       noSubstitution &&
       (truth.total > 0
         ? absent.view.products.length > 0
-        : (absent.view.turn?.presentation === "catalog" &&
-            absent.view.catalog_match_status === "not_found") ||
-          /not.*(?:found|available|listed|carry)|(?:don.t|do not|doesn.t).*?(?:have|carry)|(?:couldn.t|wasn.t able to) find|no.*(?:match|listing)|not in/i.test(
+        : /not.*(?:found|available|listed|carry)|(?:don.t|do not|doesn.t).*?(?:have|carry)|(?:couldn.t|wasn.t able to) find|no.*(?:match|listing)|not in/i.test(
             absent.result.response,
           )),
   });
@@ -129,9 +127,7 @@ try {
     capability: "reported typo and price",
     passed:
       typo.view.turn?.status === "completed" &&
-      ((typo.view.turn?.presentation === "catalog" &&
-        typo.view.catalog_match_status === "choose_variant") ||
-        typo.view.products.length === 1 ||
+      (typo.view.products.length === 1 ||
         /which|variant|options|multiple|choose|did you mean/i.test(
           typo.result.response,
         ) ||
@@ -140,10 +136,9 @@ try {
       typo.view.products.every(
         (p) => p.brand === "Omega" && /speedmaster/i.test(p.name),
       ) &&
-      (typo.view.turn?.presentation === "catalog" ||
-        typo.view.products.some((p) =>
-          typo.result.response.includes(formatMoney(p.price)),
-        )),
+      typo.view.products.some((p) =>
+        typo.result.response.includes(formatMoney(p.price)),
+      ),
   });
   const p = (
     await hybridSearch({ categories: ["headphones"], offset: 6, limit: 1 })
@@ -161,11 +156,7 @@ try {
     passed:
       named.view.turn?.status === "completed" &&
       named.view.products.some((v) => v.id === p.id) &&
-      ((named.view.turn?.presentation === "catalog" &&
-        named.view.products.some(
-          (v) => v.id === p.id && v.price === p.price,
-        )) ||
-        named.result.response.includes(formatMoney(p.price))),
+      named.result.response.includes(formatMoney(p.price)),
   });
   const saved = await turn(
     actor,
@@ -227,7 +218,7 @@ try {
   );
   results.push({
     ...combined.result,
-    capability: "combined lookup and action must continue beyond product cards",
+    capability: "combined lookup and wishlist action",
     passed:
       combined.view.turn?.status === "completed" &&
       combined.view.basket.wishlist.some((v) => v.productId === p.id) &&

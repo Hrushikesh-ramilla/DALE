@@ -36,7 +36,6 @@ import { recordedAttributes } from "@/domain/catalog-derived";
 import { briefSchema } from "@/domain/brief";
 import { knownModels } from "@/domain/catalog";
 import { compatibilityArguments, deviceCompatibility } from "./compatibility";
-import { brandVocabulary, canonicalBrand } from "./identity";
 
 type ToolContext = { actor: Actor; ui: UIContext; signal?: AbortSignal };
 type ToolDefinition = {
@@ -68,10 +67,7 @@ const productArguments = z
 const lookupArguments = z
   .object({
     name: z.string().trim().min(1).max(180),
-    brand: z.string().max(100).optional(),
-    category: z.string().max(80).optional(),
     limit: z.number().int().min(1).max(6).default(3),
-    finish_with_cards: z.boolean().default(false),
   })
   .strict();
 async function recordedSearch(
@@ -275,25 +271,16 @@ export const tools: ToolDefinition[] = [
   {
     name: "lookup_product",
     description:
-      "Find a named product with its full generation, size/storage and suffixes. For ONLY finding a product or its price, set finish_with_cards=true: verified cards complete the answer immediately. Keep false when further actions/analysis are requested. Optional brand/category constrain identity; not_found is scoped, choose_variant needs a choice. No substitutes.",
+      "Find a named product. Include the BRAND and full model, generation, size/storage and suffixes together in name. Brand aliases and typos are resolved against the catalog. not_found is scoped to that full identity; choose_variant needs a choice. No substitutes.",
     input: lookupArguments,
     effect: "read",
     async execute(raw, { actor, signal }) {
       const input = lookupArguments.parse(raw);
-      const capabilities = await catalogCapabilities();
-      const brand = input.brand
-        ? canonicalBrand(
-            input.brand,
-            brandVocabulary(capabilities.collections.map((c) => c.brand)),
-          ) || input.brand
-        : undefined;
       const result = await recordedSearch(
         actor,
         {
           query: input.name,
           match_mode: "identity",
-          brands: brand ? [brand] : [],
-          categories: input.category ? [input.category] : [],
           limit: input.limit,
           in_stock: false,
         },
@@ -332,11 +319,8 @@ export const tools: ToolDefinition[] = [
             : [],
         total: result.total,
         selection_required: status === "choose_variant",
-        finish_with_cards: input.finish_with_cards,
         searched_identity: {
           name: input.name,
-          ...(brand ? { brand } : {}),
-          ...(input.category ? { category: input.category } : {}),
         },
         ...(result.total ? { result_set_id: result.result_set_id } : {}),
       };
@@ -750,7 +734,6 @@ export const toolOutputs: Record<string, z.ZodType> = {
     products: z.array(recordedProduct),
     total: z.number().int().min(0),
     selection_required: z.boolean(),
-    finish_with_cards: z.boolean(),
     searched_identity: z.object({
       name: z.string(),
       brand: z.string().optional(),
