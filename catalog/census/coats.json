@@ -1,0 +1,3602 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "coats",
+  "displayName": "Coats & Outerwear",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "mackintosh-oxford-bonded-cotton-trench",
+      "canonicalBrand": "Mackintosh",
+      "displayBrand": "Mackintosh",
+      "productLine": "Handmade Rubberised Collection",
+      "modelName": "Mackintosh Oxford Bonded Cotton Classic Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://mackintosh.com/collections/coats/oxford-bonded-cotton-trench"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Fawn Beige",
+        "Ink Blue",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://mackintosh.com/images/products/mackintosh-oxford-bonded-cotton-trench.jpg",
+        "attribution": "Official catalog photography © Mackintosh"
+      },
+      "collectedAttributes": {
+        "brand": "mackintosh",
+        "modelName": "mackintosh oxford bonded cotton classic trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Heavyweight 600gsm",
+        "weatherResistance": "100% Waterproof Rubberised Taped Seams",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic hand-glued rubberised bonded cotton trench coat crafted in Scotland with taped seams and brass eyelet ventilation",
+      "status": "staged"
+    },
+    {
+      "id": "mackintosh-dunkeld-bonded-cotton-mac",
+      "canonicalBrand": "Mackintosh",
+      "displayBrand": "Mackintosh",
+      "productLine": "Handmade Rubberised Collection",
+      "modelName": "Mackintosh Dunkeld Bonded Cotton Raincoat / Mac",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://mackintosh.com/collections/coats/dunkeld-bonded-cotton-mac"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Dunkeld Navy",
+        "Khaki Olive",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://mackintosh.com/images/products/mackintosh-dunkeld-bonded-cotton-mac.jpg",
+        "attribution": "Official catalog photography © Mackintosh"
+      },
+      "collectedAttributes": {
+        "brand": "mackintosh",
+        "modelName": "mackintosh dunkeld bonded cotton raincoat / mac",
+        "coatStyle": "Car Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 520gsm",
+        "weatherResistance": "100% Waterproof Rubberised Taped Seams",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The quintessential British single-breasted macintosh coat with concealed button placket and throat latch",
+      "status": "staged"
+    },
+    {
+      "id": "mackintosh-cambridge-reversible-mac",
+      "canonicalBrand": "Mackintosh",
+      "displayBrand": "Mackintosh",
+      "productLine": "Reversible Outerwear",
+      "modelName": "Mackintosh Cambridge Reversible Wool-Cotton Mac Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://mackintosh.com/collections/coats/cambridge-reversible-mac"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Houndstooth Wool / Fawn Cotton",
+        "Navy Twill / Olive"
+      ],
+      "mediaSource": {
+        "url": "https://mackintosh.com/images/products/mackintosh-cambridge-reversible-mac.jpg",
+        "attribution": "Official catalog photography © Mackintosh"
+      },
+      "collectedAttributes": {
+        "brand": "mackintosh",
+        "modelName": "mackintosh cambridge reversible wool-cotton mac coat",
+        "coatStyle": "Balmacaan Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 680gsm",
+        "weatherResistance": "Water-Repellent Cotton and Pure Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reversible balmacaan raglan coat presenting British houndstooth tweed on one side and weatherproof cotton on the other",
+      "status": "staged"
+    },
+    {
+      "id": "mackintosh-dunoon-hooded-raincoat",
+      "canonicalBrand": "Mackintosh",
+      "displayBrand": "Mackintosh",
+      "productLine": "Modern Rubberised",
+      "modelName": "Mackintosh Dunoon Classic Bonded Hooded Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://mackintosh.com/collections/coats/dunoon-hooded-raincoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Olive",
+        "Deep Navy"
+      ],
+      "mediaSource": {
+        "url": "https://mackintosh.com/images/products/mackintosh-dunoon-hooded-raincoat.jpg",
+        "attribution": "Official catalog photography © Mackintosh"
+      },
+      "collectedAttributes": {
+        "brand": "mackintosh",
+        "modelName": "mackintosh dunoon classic bonded hooded coat",
+        "coatStyle": "Parka Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 480gsm",
+        "weatherResistance": "100% Waterproof Rubberised Taped Seams",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Handcrafted hooded raincoat designed with a streamlined silhouette and underarm brass vents",
+      "status": "staged"
+    },
+    {
+      "id": "mackintosh-dalmally-wool-chesterfield",
+      "canonicalBrand": "Mackintosh",
+      "displayBrand": "Mackintosh",
+      "productLine": "Tailored Collection",
+      "modelName": "Mackintosh Dalmally Wool-Cashmere Chesterfield Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://mackintosh.com/collections/coats/dalmally-wool-chesterfield"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Melange",
+        "Camel Tan"
+      ],
+      "mediaSource": {
+        "url": "https://mackintosh.com/images/products/mackintosh-dalmally-wool-chesterfield.jpg",
+        "attribution": "Official catalog photography © Mackintosh"
+      },
+      "collectedAttributes": {
+        "brand": "mackintosh",
+        "modelName": "mackintosh dalmally wool-cashmere chesterfield overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Cashmere Wool Lining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "British tailored single-breasted overcoat woven from soft melton wool and cashmere with horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-the-kensington-heritage-trench",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Trench",
+      "modelName": "Burberry The Kensington Heritage Double-Breasted Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/the-kensington-heritage-trench-coat-p80245870.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Honey Beige",
+        "Coal Black",
+        "Midnight Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-the-kensington-heritage-trench.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry the kensington heritage double-breasted trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 550gsm",
+        "weatherResistance": "Waterproof Shower-Resistant Gabardine",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The canonical British luxury trench coat invented by Thomas Burberry, woven in Yorkshire from weatherproof bespoke cotton gabardine",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-the-chelsea-heritage-slim-trench",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Trench",
+      "modelName": "Burberry The Chelsea Heritage Slim Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/the-chelsea-heritage-slim-trench-coat-p80245871.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Honey Beige",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-the-chelsea-heritage-slim-trench.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry the chelsea heritage slim trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 520gsm",
+        "weatherResistance": "Waterproof Shower-Resistant Gabardine",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Burberry's slimmest trench coat cut featuring narrow shoulders, cinched waist, and vintage check undercollar",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-the-westminster-heritage-relaxed-trench",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Trench",
+      "modelName": "Burberry The Westminster Heritage Relaxed Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/the-westminster-heritage-relaxed-trench-p80245872.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Military Green",
+        "Honey Beige"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-the-westminster-heritage-relaxed-trench.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry the westminster heritage relaxed trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Heavyweight 600gsm",
+        "weatherResistance": "Waterproof Shower-Resistant Gabardine",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Relaxed-fit heritage trench coat with raglan sleeves and fluid drape designed for effortless layering over suits",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-the-waterloo-heritage-long-trench",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Trench",
+      "modelName": "Burberry The Waterloo Heritage Long Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/the-waterloo-heritage-long-trench-p80245873.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Honey Beige Long",
+        "Black Long"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-the-waterloo-heritage-long-trench.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry the waterloo heritage long trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 560gsm",
+        "weatherResistance": "Waterproof Shower-Resistant Gabardine",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dramatic full-length trench silhouette offering extended calf coverage, D-ring belt loops, and storm shield",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-the-camden-heritage-car-coat",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Trench",
+      "modelName": "Burberry The Camden Heritage Single-Breasted Car Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/the-camden-heritage-car-coat-p80245874.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Honey Beige",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-the-camden-heritage-car-coat.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry the camden heritage single-breasted car coat",
+        "coatStyle": "Car Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 500gsm",
+        "weatherResistance": "Waterproof Shower-Resistant Gabardine",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist single-breasted car coat featuring clean concealed button placket and A-line silhouette",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-castleford-wool-cashmere-trench",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Runway Outerwear",
+      "modelName": "Burberry Castleford Double-Breasted Wool-Cashmere Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/castleford-wool-cashmere-trench-p80245875.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Knight Blue",
+        "Dark Otter Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-castleford-wool-cashmere-trench.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry castleford double-breasted wool-cashmere trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Winter interpretation of the classic trench crafted in substantial Italian wool-cashmere with exaggerated storm flap",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-chesterfield-wool-overcoat",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Tailored Collection",
+      "modelName": "Burberry Double-Breasted Wool Chesterfield Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/chesterfield-wool-overcoat-p80245876.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Melange",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-chesterfield-wool-overcoat.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry double-breasted wool chesterfield overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 780gsm",
+        "weatherResistance": "Treated Shower-Proof Melton",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal Savile Row-informed double-breasted overcoat featuring structured roped shoulders and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-cashmere-single-breasted-overcoat",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Tailored Collection",
+      "modelName": "Burberry Cashmere Single-Breasted Tailored Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/cashmere-single-breasted-overcoat-p80245877.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Hair Melange",
+        "Black Cashmere"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-cashmere-single-breasted-overcoat.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry cashmere single-breasted tailored overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Cashmere Wool Lining",
+        "fabricWeight": "Heavyweight 700gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pinnacle luxury tailored coat crafted from pure Italian-spun cashmere with notched lapels and B-Shield cupro lining",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-wool-duffle-coat-buffalo-horn",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Outerwear",
+      "modelName": "Burberry Wool Duffle Coat with Buffalo Horn Toggles",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/wool-duffle-coat-p80245878.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Warm Brown",
+        "Dark Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-wool-duffle-coat-buffalo-horn.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry wool duffle coat with buffalo horn toggles",
+        "coatStyle": "Duffle Coat",
+        "insulation": "Heavy Wool Double-Face",
+        "fabricWeight": "Super Heavyweight 900gsm",
+        "weatherResistance": "Natural Water-Resistant Heavy Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Historic British naval duffle coat with pancake hood, genuine buffalo horn toggles, and braided jute loops",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-reversible-vintage-check-car-coat",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Icon Outerwear",
+      "modelName": "Burberry Reversible Vintage Check Wool Blend Car Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/reversible-vintage-check-car-coat-p80245879.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Archive Beige Check / Solid Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-reversible-vintage-check-car-coat.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "burberry reversible vintage check wool blend car coat",
+        "coatStyle": "Car Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 520gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versatile reversible car coat featuring archival Burberry check on one side and sleek solid black gabardine on the reverse",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-101801-icon-coat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Icon Coats",
+      "modelName": "Max Mara 101801 Iconic Double-Breasted Wool-Cashmere Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/101801-icon-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel",
+        "Tobacco",
+        "Black",
+        "Sand"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-101801-icon-coat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara 101801 iconic double-breasted wool-cashmere coat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Designed by Anne-Marie Beretta in 1981, the legendary 101801 coat is one of the most famous and influential luxury coats in history featuring kimono sleeves and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-manuela-camel-hair-wrap-coat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Icon Coats",
+      "modelName": "Max Mara Manuela Belted Camel Hair Wrap Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/manuela-belted-camel-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Camel Hair",
+        "Black Camel Hair",
+        "Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-manuela-camel-hair-wrap-coat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara manuela belted camel hair wrap coat",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Pure Camel Hair Double-Weave",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Fibers",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Signature wrap coat crafted from pure brushed camel hair with lustrous wavy zibeline finish and coordinating tie belt",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-teddy-bear-icon-coat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Icon Coats",
+      "modelName": "Max Mara Teddy Bear Icon Camel Hair and Silk Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/teddy-bear-icon-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Camel",
+        "Sand Ecru",
+        "Ruby Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-teddy-bear-icon-coat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara teddy bear icon camel hair and silk coat",
+        "coatStyle": "Overcoat",
+        "insulation": "Plush Camel Hair and Silk Faux Fur Pile",
+        "fabricWeight": "Super Heavyweight 950gsm",
+        "weatherResistance": "Cold-Proof Dense Pile",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cult outerwear phenomenon designed by Ian Griffiths combining lush camel hair on a pure silk base in an oversized cocoon volume",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-madame-double-breasted-coat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Icon Coats",
+      "modelName": "Max Mara Madame Double-Breasted Wool-Cashmere Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/madame-double-breasted-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Melange",
+        "Anthracite Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-madame-double-breasted-coat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara madame double-breasted wool-cashmere overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool-Cashmere Interlining",
+        "fabricWeight": "Heavyweight 820gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic double-breasted coat featuring tailored lapels, welt pockets, and matching self-tie belt",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-labbro-double-cashmere-wrap-coat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Icon Coats",
+      "modelName": "Max Mara Labbro Pure Double Cashmere Wrap Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/labbro-pure-double-cashmere-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Cashmere",
+        "Midnight Black",
+        "Dove Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-labbro-double-cashmere-wrap-coat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara labbro pure double cashmere wrap coat",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Double-Faced 100% Cashmere",
+        "fabricWeight": "Heavyweight 700gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pinnacle luxury hand-stitched double-face cashmere coat offering weightless warmth, kimono sleeves, and flared hem",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-rialto-hooded-camel-coat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Heritage Collection",
+      "modelName": "Max Mara Rialto Hooded Belted Camel Hair Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/rialto-hooded-camel-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Tan",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-rialto-hooded-camel-coat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara rialto hooded belted camel hair coat",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Pure Camel Hair",
+        "fabricWeight": "Medium-Weight 650gsm",
+        "weatherResistance": "Natural Water-Resistant Fibers",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern city wrap coat featuring a protective integrated hood, shawl collar, and patch pockets",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-resina-single-breasted-coat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Tailored Collection",
+      "modelName": "Max Mara Resina Pure Virgin Wool Single-Breasted Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/resina-single-breasted-wool-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Melange",
+        "Camel",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-resina-single-breasted-coat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara resina pure virgin wool single-breasted coat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 720gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Streamlined single-breasted tailored coat with clean lapels, flap pockets, and back vent",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-ludmilla-double-faced-cashmere-coat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Atelier Collection",
+      "modelName": "Max Mara Ludmilla Double-Faced Pure Cashmere Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/ludmilla-cashmere-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Tobacco Tan"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-ludmilla-double-faced-cashmere-coat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara ludmilla double-faced pure cashmere coat",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Double-Face Pure Cashmere Zibeline",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "A-line flared wrap coat featuring wavy zibeline cashmere, patch pockets, and hand-sewn invisible seams",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-paul-double-breasted-overcoat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Tailored Collection",
+      "modelName": "Max Mara Paul Tailored Double-Breasted Wool Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/paul-double-breasted-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Blue Serge",
+        "Grey Melange"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-paul-double-breasted-overcoat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara paul tailored double-breasted wool overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 780gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Masculine-inspired tailored double-breasted coat featuring broad peak lapels and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "max-mara-teddy-short-wool-silk-peacoat",
+      "canonicalBrand": "Max Mara",
+      "displayBrand": "Max Mara",
+      "productLine": "Icon Coats",
+      "modelName": "Max Mara Teddy Short Icon Wool-Silk Peacoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.maxmara.com/en-us/products/teddy-short-icon-peacoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Pile",
+        "Sand Ecru"
+      ],
+      "mediaSource": {
+        "url": "https://www.maxmara.com/images/products/max-mara-teddy-short-wool-silk-peacoat.jpg",
+        "attribution": "Official catalog photography © Max Mara"
+      },
+      "collectedAttributes": {
+        "brand": "max mara",
+        "modelName": "max mara teddy short icon wool-silk peacoat",
+        "coatStyle": "Pea Coat",
+        "insulation": "Camel Hair and Silk Teddy Pile",
+        "fabricWeight": "Super Heavyweight 900gsm",
+        "weatherResistance": "Cold-Proof Dense Pile",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double-breasted peacoat variation of the iconic Teddy Bear coat with oversized lapels and horn button closure",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-winter-voyager-cashmere-parka",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Storm System Outerwear",
+      "modelName": "Loro Piana Winter Voyager Cashmere Storm System Parka",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/winter-voyager-cashmere-parka"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy",
+        "Vicuna Tan",
+        "Charcoal Melange"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-winter-voyager-cashmere-parka.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana winter voyager cashmere storm system parka",
+        "coatStyle": "Parka Coat",
+        "insulation": "90/10 Goose Down Padding",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Water-Repellent Storm System",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Expedition parka combining pure water-resistant cashmere shell with goose down insulation and detachable beaver fur collar trim",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-spenser-double-cashmere-chesterfield",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Sartorial Coats",
+      "modelName": "Loro Piana Spenser Double Cashmere Chesterfield Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/spenser-double-cashmere-chesterfield"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Blue",
+        "Camel Brown",
+        "Anthracite"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-spenser-double-cashmere-chesterfield.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana spenser double cashmere chesterfield coat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Double-Face Pure Baby Cashmere",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Masterpiece of Italian double-cashmere craftsmanship where two fabric layers are hand-split and stitched invisibly at the edges",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-icer-storm-system-ski-coat",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Storm System Outerwear",
+      "modelName": "Loro Piana Icer Storm System Down Insulated Ski Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/icer-storm-system-ski-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Ice White",
+        "Navy Blue",
+        "Dark Red"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-icer-storm-system-ski-coat.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana icer storm system down insulated ski coat",
+        "coatStyle": "Parka Coat",
+        "insulation": "Goose Down Fill",
+        "fabricWeight": "Heavyweight 820gsm",
+        "weatherResistance": "Weather-Sealed Loro Piana Rain System",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Technical alpine coat worn by the Italian Alpine Ski Team featuring cashmere treated with Storm System membrane",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-martingala-cashmere-overcoat",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Classic Tailoring",
+      "modelName": "Loro Piana Martingala Cashmere Double-Breasted Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/martingala-cashmere-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Navy",
+        "Vicuna Melange"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-martingala-cashmere-overcoat.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana martingala cashmere double-breasted overcoat",
+        "coatStyle": "Polo Coat",
+        "insulation": "Pure Cashmere Interlining",
+        "fabricWeight": "Heavyweight 850gsm",
+        "weatherResistance": "Natural Water-Resistant Cashmere",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional polo coat cut with double-breasted closure, broad peak lapels, and half-belt martingala back pleat",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-traveller-windcoat",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Traveller Collection",
+      "modelName": "Loro Piana Traveller Storm System Hooded Windcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/traveller-storm-system-windcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Desert Dune",
+        "Dark Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-traveller-windcoat.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana traveller storm system hooded windcoat",
+        "coatStyle": "Car Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 450gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Longline version of the iconic Traveller jacket with stowable hood and internal drawstring waist",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-spagna-mandarin-cashmere-coat",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Spagna Collection",
+      "modelName": "Loro Piana Spagna Mandarin Collar Cashmere Long Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/spagna-mandarin-cashmere-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Navy",
+        "Flannel Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-spagna-mandarin-cashmere-coat.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana spagna mandarin collar cashmere long coat",
+        "coatStyle": "Overcoat",
+        "insulation": "Cashmere Wool Lining",
+        "fabricWeight": "Heavyweight 720gsm",
+        "weatherResistance": "Natural Water-Resistant Cashmere",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spanish equestrian-inspired Mandarin standing collar coat crafted in double-face cashmere with horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-city-car-coat-windmate",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "City Outerwear",
+      "modelName": "Loro Piana City Car Coat in Windmate Microfibre",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/city-car-coat-windmate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Navy",
+        "Olive Melange"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-city-car-coat-windmate.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana city car coat in windmate microfibre",
+        "coatStyle": "Car Coat",
+        "insulation": "Cashmere Knit Lining",
+        "fabricWeight": "Medium-Weight 550gsm",
+        "weatherResistance": "Water-Repellent Storm System",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist executive car coat pairing microfibre shell with a full cashmere knit lining for thermal comfort",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-vicuna-tailored-overcoat",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Vicuña Exclusive",
+      "modelName": "Loro Piana Vicuña Classic Tailored Single-Breasted Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/vicuna-tailored-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Vicuña Golden Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-vicuna-tailored-overcoat.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana vicuña classic tailored single-breasted overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Double Vicuña Lining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The pinnacle of luxury outerwear crafted from 100% legal harvest Peruvian vicuña, the finest animal fiber in the world",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-open-walk-belted-reversible-coat",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Reversible Outerwear",
+      "modelName": "Loro Piana Open Walk Belted Reversible Cashmere Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/open-walk-belted-reversible-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Navy / Vicuna Reversible",
+        "Grey / Ecru"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-open-walk-belted-reversible-coat.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana open walk belted reversible cashmere coat",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Double-Face Pure Cashmere",
+        "fabricWeight": "Heavyweight 780gsm",
+        "weatherResistance": "Water-Repellent Treated Cashmere",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reversible wrap coat offering contrasting color faces in buttery double-face cashmere with patch pockets",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-horsey-technical-rain-coat",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Horsey Heritage",
+      "modelName": "Loro Piana Horsey Technical Rain System Field Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.loropiana.com/en-us/clothing/coats/horsey-technical-rain-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Hunter Green",
+        "Dark Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.loropiana.com/images/products/loro-piana-horsey-technical-rain-coat.jpg",
+        "attribution": "Official catalog photography © Loro Piana"
+      },
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "loro piana horsey technical rain system field coat",
+        "coatStyle": "Parka Coat",
+        "insulation": "Thermoregulation Quilted Layer",
+        "fabricWeight": "Heavyweight 700gsm",
+        "weatherResistance": "Weather-Sealed Loro Piana Rain System",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Equestrian coat originally created for the 1992 Italian Olympic Equestrian team with storm-proof membrane and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-wool-gabardine-officer-trench",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Permanent Outerwear",
+      "modelName": "Saint Laurent Double-Breasted Wool Gabardine Officer Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/wool-gabardine-officer-trench-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Noir Deep Black",
+        "Dark Khaki"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-wool-gabardine-officer-trench.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent double-breasted wool gabardine officer trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Heavyweight 700gsm",
+        "weatherResistance": "Dense Shower-Resistant Wool Gabardine",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Military officer-inspired black trench coat cut with structured roped shoulders, metal buttons, and matching buckled belt",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-single-breasted-chesterfield-coat",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Tailored Outerwear",
+      "modelName": "Saint Laurent Single-Breasted Chesterfield Wool Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/single-breasted-chesterfield-wool-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Noir",
+        "Anthracite"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-single-breasted-chesterfield-coat.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent single-breasted chesterfield wool overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic slim-fit Parisian city overcoat featuring razor-sharp narrow notch lapels and concealed horn button closure",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-classic-melton-peacoat",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Permanent Collection",
+      "modelName": "Saint Laurent Classic Peacoat in Heavy Melton Wool",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/classic-peacoat-melton-wool"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Marine Navy",
+        "Noir"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-classic-melton-peacoat.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent classic peacoat in heavy melton wool",
+        "coatStyle": "Pea Coat",
+        "insulation": "Heavy Melton Wool",
+        "fabricWeight": "Super Heavyweight 900gsm",
+        "weatherResistance": "Dense Water-Repellent Melton",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Authentic naval caban peacoat cut with broad convertible notch lapels, anchor-embossed buttons, and vertical slash handwarmers",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-belted-robe-cashmere-coat",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Runway Collection",
+      "modelName": "Saint Laurent Belted Robe Coat in Double-Face Cashmere",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/belted-robe-cashmere-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Tan",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-belted-robe-cashmere-coat.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent belted robe coat in double-face cashmere",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Double-Faced 100% Cashmere",
+        "fabricWeight": "Heavyweight 720gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fluid wrap overcoat cut with dramatic shawl lapels, tie belt, and ankle-skimming hemline",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-military-serge-greatcoat",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Runway Outerwear",
+      "modelName": "Saint Laurent Military Wool Serge Long Greatcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/military-wool-serge-greatcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Serge with Gold Crest Buttons",
+        "Deep Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-military-serge-greatcoat.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent military wool serge long greatcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Super Heavyweight 950gsm",
+        "weatherResistance": "Dense Weather-Proof Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Commanding full-length military greatcoat featuring high back pleat, sword slit, and ornate crest buttons",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-raglan-balmacaan-coat",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Casual Outerwear",
+      "modelName": "Saint Laurent Raglan Sleeve Wool Gabardine Balmacaan Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/raglan-wool-gabardine-balmacaan-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Beige Gabardine",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-raglan-balmacaan-coat.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent raglan sleeve wool gabardine balmacaan coat",
+        "coatStyle": "Balmacaan Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 550gsm",
+        "weatherResistance": "Waterproof Shower-Resistant Gabardine",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist balmacaan silhouette with raglan shoulders, convertible Prussian collar, and concealed buttoning",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-shearling-trimmed-wool-trench",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Winter Runway",
+      "modelName": "Saint Laurent Shearling Trimmed Heavy Wool Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/shearling-trimmed-wool-trench"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Noir Wool with Black Shearling Collar"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-shearling-trimmed-wool-trench.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent shearling trimmed heavy wool trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Shearling Lining and Wool Interlining",
+        "fabricWeight": "Super Heavyweight 950gsm",
+        "weatherResistance": "Dense Water-Repellent Wool",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavy runway statement coat pairing double-breasted trench styling with plush shearling collar",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-slim-tailored-city-overcoat",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Permanent Tailoring",
+      "modelName": "Saint Laurent Slim Notch Lapel Tailored City Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/slim-notch-lapel-city-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Grey Glen Plaid",
+        "Black Solid"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-slim-tailored-city-overcoat.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent slim notch lapel tailored city overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slim tailored knee-length overcoat featuring high armholes, horn buttons, and pure silk lining",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-flannel-duffle-coat",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Outerwear Archive",
+      "modelName": "Saint Laurent Flannel Duffle Coat with Leather Frogs",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/flannel-duffle-coat-leather-frogs"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-flannel-duffle-coat.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent flannel duffle coat with leather frogs",
+        "coatStyle": "Duffle Coat",
+        "insulation": "Double-Weave Flannel",
+        "fabricWeight": "Heavyweight 850gsm",
+        "weatherResistance": "Dense Heavy Flannel",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Schoolboy-inspired duffle coat refined with leather frog closures, wooden toggles, and lined hood",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-satin-lapel-evening-smoking-overcoat",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Le Smoking Cerimonia",
+      "modelName": "Saint Laurent Satin Lapel Evening Smoking Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/products/satin-lapel-evening-smoking-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Jet Black Grain de Poudre"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-satin-lapel-evening-smoking-overcoat.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "saint laurent satin lapel evening smoking overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Lightweight Silk Interlining",
+        "fabricWeight": "Heavyweight 700gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal gala overcoat designed to be worn over Le Smoking tuxedo with silk satin peak lapels",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-padded-trench-coat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Re-Nylon Collection",
+      "modelName": "Prada Double-Breasted Re-Nylon Gabardine Padded Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/re-nylon-padded-trench-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Re-Nylon",
+        "Navy Blue",
+        "Khaki"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-re-nylon-padded-trench-coat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada double-breasted re-nylon gabardine padded trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Thermoregulation Quilted Layer",
+        "fabricWeight": "Medium-Weight 520gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern technical trench coat featuring Prada's signature regenerated Econyl nylon, matching belt, and triangle logo",
+      "status": "staged"
+    },
+    {
+      "id": "prada-single-breasted-wool-serge-overcoat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Tailored Collection",
+      "modelName": "Prada Single-Breasted Virgin Wool Serge Tailored Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/single-breasted-wool-serge-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Serge",
+        "Charcoal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-single-breasted-wool-serge-overcoat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada single-breasted virgin wool serge tailored overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist Italian single-breasted coat featuring crisp wool serge weave, narrow lapels, and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-down-puffer-parka",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Re-Nylon Outerwear",
+      "modelName": "Prada Re-Nylon Down Puffer Parka with Enamelled Triangle",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/re-nylon-down-puffer-parka"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Steel Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-re-nylon-down-puffer-parka.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada re-nylon down puffer parka with enamelled triangle",
+        "coatStyle": "Parka Coat",
+        "insulation": "Goose Down Fill",
+        "fabricWeight": "Heavyweight 780gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-volume down insulated winter coat crafted in water-repellent Re-Nylon with signature chest triangle badge",
+      "status": "staged"
+    },
+    {
+      "id": "prada-belted-double-faced-cashmere-coat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Luxury Outerwear",
+      "modelName": "Prada Belted Double-Faced Cashmere Wrap Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/belted-double-faced-cashmere-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Beige",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-belted-double-faced-cashmere-coat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada belted double-faced cashmere wrap coat",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Double-Faced 100% Cashmere",
+        "fabricWeight": "Heavyweight 700gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hand-finished double-face cashmere coat with relaxed kimono cut, patch pockets, and sash tie belt",
+      "status": "staged"
+    },
+    {
+      "id": "prada-concealed-placket-wool-car-coat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Minimalist Outerwear",
+      "modelName": "Prada Minimalist Concealed Placket Wool Car Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/concealed-placket-wool-car-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Anthracite",
+        "Midnight Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-concealed-placket-wool-car-coat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada minimalist concealed placket wool car coat",
+        "coatStyle": "Car Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Medium-Weight 600gsm",
+        "weatherResistance": "Water-Repellent Treated Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Understated city car coat with hidden snap-button fly and clean standing collar",
+      "status": "staged"
+    },
+    {
+      "id": "prada-double-breasted-mohair-greatcoat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Runway Tailoring",
+      "modelName": "Prada Double-Breasted Wool-Mohair Greatcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/double-breasted-mohair-greatcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Black Mohair",
+        "Lead Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-double-breasted-mohair-greatcoat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada double-breasted wool-mohair greatcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural structured runway greatcoat woven with mohair for crisp structural rigidity and deep black saturation",
+      "status": "staged"
+    },
+    {
+      "id": "prada-heavy-wool-melton-navy-peacoat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Classic Outerwear",
+      "modelName": "Prada Heavy Wool Melton Classic Navy Peacoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/heavy-wool-melton-peacoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Navy Melton",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-heavy-wool-melton-navy-peacoat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada heavy wool melton classic navy peacoat",
+        "coatStyle": "Pea Coat",
+        "insulation": "Heavy Melton Wool",
+        "fabricWeight": "Super Heavyweight 920gsm",
+        "weatherResistance": "Dense Water-Repellent Melton",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional 8-button naval peacoat featuring heavy dense melton wool and enameled triangle on back yoke",
+      "status": "staged"
+    },
+    {
+      "id": "prada-technical-gabardine-hooded-raincoat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Technical Outerwear",
+      "modelName": "Prada Technical Gabardine Hooded Raincoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/technical-gabardine-hooded-raincoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Military Khaki",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-technical-gabardine-hooded-raincoat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada technical gabardine hooded raincoat",
+        "coatStyle": "Parka Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 450gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Long technical raincoat equipped with taped seams, storm hood, and adjustable cuffs",
+      "status": "staged"
+    },
+    {
+      "id": "prada-shearling-collar-heavy-wool-coat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Winter Runway",
+      "modelName": "Prada Shearling Collar Heavy Wool Winter Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/shearling-collar-heavy-wool-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Espresso Brown Wool with White Shearling"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-shearling-collar-heavy-wool-coat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada shearling collar heavy wool winter coat",
+        "coatStyle": "Overcoat",
+        "insulation": "Shearling Lining",
+        "fabricWeight": "Super Heavyweight 950gsm",
+        "weatherResistance": "Dense Heavy Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cold-weather statement coat combining heavyweight twill wool with detachable plush curly shearling collar",
+      "status": "staged"
+    },
+    {
+      "id": "prada-velvet-collar-chesterfield-coat",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Tailored Collection",
+      "modelName": "Prada Contrast Velvet Collar Chesterfield Wool Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/en-us/products/velvet-collar-chesterfield-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Wool with Black Velvet Collar"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-velvet-collar-chesterfield-coat.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prada contrast velvet collar chesterfield wool coat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Authentic 19th-century Chesterfield coat silhouette updated with black silk-velvet top collar and fly front",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-purple-label-gregory-cashmere-overcoat",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Ralph Lauren Purple Label",
+      "modelName": "Purple Label Gregory Handcrafted Double Cashmere Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/purple-label-gregory-cashmere-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Vicuna",
+        "Navy Solid",
+        "Charcoal Melange"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-purple-label-gregory-cashmere-overcoat.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "purple label gregory handcrafted double cashmere overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Double-Face Pure Cashmere",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pinnacle Purple Label tailored overcoat handcrafted by Italian master artisans from double-faced cashmere with pick-stitched lapels",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-purple-label-kent-wool-polo-coat",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Ralph Lauren Purple Label",
+      "modelName": "Purple Label Kent Peak Lapel Wool Polo Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/purple-label-kent-polo-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Hair Melange",
+        "Dark Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-purple-label-kent-wool-polo-coat.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "purple label kent peak lapel wool polo coat",
+        "coatStyle": "Polo Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Super Heavyweight 880gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic American double-breasted polo coat with broad peak lapels, patch-and-flap pockets, and half-belt back",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-purple-label-officer-wool-trench",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Ralph Lauren Purple Label",
+      "modelName": "Purple Label Belted Officer Wool Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/purple-label-officer-wool-trench"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy Wool Serge",
+        "Olive Drab"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-purple-label-officer-wool-trench.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "purple label belted officer wool trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Water-Repellent Wool Serge",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Military officer trench coat crafted in heavy Italian wool serge with horn buckle belt and epaulettes",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-purple-label-shearling-greatcoat",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Ralph Lauren Purple Label",
+      "modelName": "Purple Label Shearling Aviator Winter Greatcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/purple-label-shearling-greatcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Antiqued Espresso Suede with Cream Shearling"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-purple-label-shearling-greatcoat.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "purple label shearling aviator winter greatcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Shearling Lining",
+        "fabricWeight": "Super Heavyweight 950gsm",
+        "weatherResistance": "Dense Natural Leather and Fur",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double-breasted shearling overcoat combining distressed Spanish lambskin with plush merino wool shearling interior",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-classic-wool-polo-coat",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo Classic Wool-Blend Polo Coat with Half-Belt",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/polo-classic-wool-polo-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Brown",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-classic-wool-polo-coat.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo classic wool-blend polo coat with half-belt",
+        "coatStyle": "Polo Coat",
+        "insulation": "Wool-Blend Quilted Lining",
+        "fabricWeight": "Heavyweight 820gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The definitive Ivy League polo coat featuring authentic double-breasted buttoning, envelope pockets, and turned-back cuffs",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-heritage-melton-peacoat",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo Heritage Heavy Melton Wool Peacoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/polo-heritage-melton-peacoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Navy Melton",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-heritage-melton-peacoat.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo heritage heavy melton wool peacoat",
+        "coatStyle": "Pea Coat",
+        "insulation": "Heavy Melton Wool",
+        "fabricWeight": "Super Heavyweight 900gsm",
+        "weatherResistance": "Dense Water-Repellent Melton",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nautical peacoat featuring heavy 32oz wool melton, engraved anchor buttons, and corduroy-lined handwarmer pockets",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-plaid-wool-balmacaan",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo Double-Breasted Plaid Wool Balmacaan",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/polo-plaid-wool-balmacaan"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Watch Tartan",
+        "Brown Houndstooth Plaid"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-plaid-wool-balmacaan.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo double-breasted plaid wool balmacaan",
+        "coatStyle": "Balmacaan Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heritage Scottish tartan wool coat featuring raglan sleeve construction and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-classic-wool-duffle-coat",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo Classic Wool Duffle Coat with Toggle Closure",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/polo-classic-wool-duffle-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy",
+        "Camel Tan"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-classic-wool-duffle-coat.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo classic wool duffle coat with toggle closure",
+        "coatStyle": "Duffle Coat",
+        "insulation": "Double-Face Wool Flannel",
+        "fabricWeight": "Heavyweight 850gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional duffle coat featuring attached hood, genuine horn toggles with leather loops, and patch pockets",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-cotton-chino-trench-coat",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo Water-Repellent Cotton Chino Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/polo-cotton-chino-trench-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Khaki Sand",
+        "Polo Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-cotton-chino-trench-coat.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo water-repellent cotton chino trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 500gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic American double-breasted trench coat with leather-covered buckles, storm flap, and plaid lining",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-chesterfield-velvet-collar",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo Classic Wool Chesterfield with Velvet Collar",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-coats/polo-chesterfield-velvet-collar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Herringbone with Black Velvet",
+        "Navy Solid"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-chesterfield-velvet-collar.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo classic wool chesterfield with velvet collar",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 780gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Town overcoat crafted in British herringbone wool with black velvet top collar and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-shelton-cashmere-chesterfield",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Shelton Collection",
+      "modelName": "Tom Ford Shelton Peak Lapel Cashmere Chesterfield Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/shelton-cashmere-chesterfield-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Cashmere",
+        "Navy Blue",
+        "Camel Vicuna"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-shelton-cashmere-chesterfield.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford shelton peak lapel cashmere chesterfield overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Cashmere Wool Lining",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Authoritative tailored overcoat featuring dramatic Tom Ford peak lapels, ticket pocket, and roped shoulders",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-windsor-double-breasted-greatcoat",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Windsor Collection",
+      "modelName": "Tom Ford Windsor Double-Breasted Heavy Wool Greatcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/windsor-double-breasted-greatcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Chalk Stripe",
+        "Charcoal Herringbone"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-windsor-double-breasted-greatcoat.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford windsor double-breasted heavy wool greatcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Super Heavyweight 900gsm",
+        "weatherResistance": "Dense Weather-Proof Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Powerhouse 6-button double-breasted overcoat with pagota roped shoulders, gauntlet cuffs, and deep back pleat",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-leather-trimmed-melton-peacoat",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Outerwear Collection",
+      "modelName": "Tom Ford Leather Trimmed Wool Melton Military Peacoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/leather-trimmed-melton-peacoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy with Black Leather Welts",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-leather-trimmed-melton-peacoat.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford leather trimmed wool melton military peacoat",
+        "coatStyle": "Pea Coat",
+        "insulation": "Heavy Melton Wool",
+        "fabricWeight": "Super Heavyweight 920gsm",
+        "weatherResistance": "Dense Water-Repellent Melton",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Naval peacoat elevated with leather trim on collar stand and welt pockets, featuring custom engraved horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-quilted-cashmere-down-parka",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Luxury Outerwear",
+      "modelName": "Tom Ford Quilted Cashmere Down Winter Parka",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/quilted-cashmere-down-parka"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Melange",
+        "Dark Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-quilted-cashmere-down-parka.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford quilted cashmere down winter parka",
+        "coatStyle": "Parka Coat",
+        "insulation": "Goose Down Fill",
+        "fabricWeight": "Heavyweight 850gsm",
+        "weatherResistance": "Water-Repellent Storm System",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Substantial winter parka pairing waterproof treated cashmere flannel with goose down fill and coyote fur trim",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-suede-belted-trench-coat",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Leather Collection",
+      "modelName": "Tom Ford Suede Belted Trench Coat with Horn Buckles",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/suede-belted-trench-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Tobacco Brown Suede",
+        "Black Suede"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-suede-belted-trench-coat.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford suede belted trench coat with horn buckles",
+        "coatStyle": "Trench Coat",
+        "insulation": "Silk Blend Lining",
+        "fabricWeight": "Heavyweight 850gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Opulent suede trench coat crafted from hand-selected calf suede with buffalo horn buckles and storm flap",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-oconnor-wool-silk-car-coat",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "O'Connor Collection",
+      "modelName": "Tom Ford O'Connor Single-Breasted Wool-Silk Car Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/oconnor-wool-silk-car-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Navy",
+        "Black Solid"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-oconnor-wool-silk-car-coat.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford o'connor single-breasted wool-silk car coat",
+        "coatStyle": "Car Coat",
+        "insulation": "Silk Cupro Lining",
+        "fabricWeight": "Medium-Weight 600gsm",
+        "weatherResistance": "Water-Repellent Treated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek car coat cut with O'Connor slim tailoring lines, fly front closure, and lambskin leather undercollar",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-shearling-lined-flight-overcoat",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Winter Outerwear",
+      "modelName": "Tom Ford Shearling Lined Flight Aviator Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/shearling-lined-flight-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Chocolate Distressed Leather with Ecru Shearling"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-shearling-lined-flight-overcoat.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford shearling lined flight aviator overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Shearling Lining",
+        "fabricWeight": "Super Heavyweight 980gsm",
+        "weatherResistance": "Dense Natural Leather and Fur",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Calf-length aviator trench crafted in waxed calfskin with full plush shearling lining and collar",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-atticus-peak-lapel-evening-overcoat",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Atticus Collection",
+      "modelName": "Tom Ford Atticus Dramatic Peak Lapel Evening Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/atticus-evening-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Jet Black Wool-Cashmere with Satin Lapels"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-atticus-peak-lapel-evening-overcoat.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford atticus dramatic peak lapel evening overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Silk Satin Lining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal evening overcoat featuring satin peak lapels, designed to be worn over black-tie eveningwear",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-concealed-placket-wool-raincoat",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Travel Tailoring",
+      "modelName": "Tom Ford Minimalist Concealed Placket Wool Raincoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/concealed-placket-wool-raincoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Navy",
+        "Lead Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-concealed-placket-wool-raincoat.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford minimalist concealed placket wool raincoat",
+        "coatStyle": "Car Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 520gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Weather-resistant wool raincoat engineered with hidden horn button placket and leather piped collar",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-baby-cashmere-wrap-robe-coat",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Couture Outerwear",
+      "modelName": "Tom Ford Double-Face Baby Cashmere Wrap Robe Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/en-us/products/baby-cashmere-wrap-robe-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Vicuna",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-baby-cashmere-wrap-robe-coat.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "tom ford double-face baby cashmere wrap robe coat",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Double-Face Pure Cashmere",
+        "fabricWeight": "Heavyweight 780gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sensual robe overcoat featuring generous shawl lapel, unlined double-face cashmere, and self-tie belt",
+      "status": "staged"
+    },
+    {
+      "id": "dior-tailleur-oblique-double-breasted-overcoat",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Tailleur Oblique",
+      "modelName": "Dior Men Tailleur Oblique Double-Breasted Wool Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/tailleur-oblique-double-breasted-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Virgin Wool",
+        "Dior Pearl Grey",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-tailleur-oblique-double-breasted-overcoat.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men tailleur oblique double-breasted wool overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sculptural Kim Jones tailoring silhouette translating the diagonal Oblique cross-over closure into a long winter overcoat",
+      "status": "staged"
+    },
+    {
+      "id": "dior-belted-gabardine-trench-cd-buckle",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Permanent Outerwear",
+      "modelName": "Dior Men Belted Wool Gabardine Trench Coat with CD Buckle",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/belted-wool-gabardine-trench-cd-buckle"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Beige Gabardine",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-belted-gabardine-trench-cd-buckle.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men belted wool gabardine trench coat with cd buckle",
+        "coatStyle": "Trench Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 560gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double-breasted trench coat distinguished by Matthew Williams' industrial CD aluminum buckle on the belt",
+      "status": "staged"
+    },
+    {
+      "id": "dior-classic-chesterfield-wool-coat",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Permanent Tailoring",
+      "modelName": "Dior Men Classic Single-Breasted Chesterfield Wool Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/classic-chesterfield-wool-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Blue Twill",
+        "Charcoal Grey",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-classic-chesterfield-wool-coat.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men classic single-breasted chesterfield wool coat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Core House tailoring overcoat cut in virgin wool twill with horn buttons and CD jacquard lining",
+      "status": "staged"
+    },
+    {
+      "id": "dior-officer-collar-military-greatcoat",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Runway Collection",
+      "modelName": "Dior Men Officer Collar Double-Breasted Military Greatcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/officer-collar-military-greatcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black",
+        "Deep Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-officer-collar-military-greatcoat.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men officer collar double-breasted military greatcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Super Heavyweight 920gsm",
+        "weatherResistance": "Dense Heavy Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural stand-collar greatcoat featuring embossed metal CD buttons and sharp tailored shoulder box",
+      "status": "staged"
+    },
+    {
+      "id": "dior-oblique-technical-down-parka",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Dior Oblique",
+      "modelName": "Dior Men Oblique Jacquard Technical Down Parka",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/oblique-technical-down-parka"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Blue Dior Oblique Jacquard",
+        "Black Oblique"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-oblique-technical-down-parka.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men oblique jacquard technical down parka",
+        "coatStyle": "Parka Coat",
+        "insulation": "Goose Down Fill",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-performance cold weather parka showcasing all-over tonal Dior Oblique jacquard and storm hood",
+      "status": "staged"
+    },
+    {
+      "id": "dior-suede-collar-wool-mohair-peacoat",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Tailoring Outerwear",
+      "modelName": "Dior Men Suede Collar Wool-Mohair Peacoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/suede-collar-wool-mohair-peacoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Blue with Brown Suede Collar",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-suede-collar-wool-mohair-peacoat.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men suede collar wool-mohair peacoat",
+        "coatStyle": "Pea Coat",
+        "insulation": "Wool-Mohair Blend",
+        "fabricWeight": "Heavyweight 850gsm",
+        "weatherResistance": "Dense Water-Repellent Melton",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double-breasted naval peacoat updated with supple calfskin suede top collar and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "dior-raglan-houndstooth-balmacaan-coat",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Heritage Collection",
+      "modelName": "Dior Men Raglan Sleeve Houndstooth Wool Balmacaan Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/raglan-houndstooth-balmacaan-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black-White Houndstooth",
+        "Brown Tweed"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-raglan-houndstooth-balmacaan-coat.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men raglan sleeve houndstooth wool balmacaan coat",
+        "coatStyle": "Balmacaan Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic balmacaan silhouette displaying Monsieur Dior's favorite graphic micro-houndstooth motif",
+      "status": "staged"
+    },
+    {
+      "id": "dior-atelier-cashmere-tailored-overcoat",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Christian Dior Atelier",
+      "modelName": "Dior Men Christian Dior Atelier Cashmere Tailored Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/atelier-cashmere-tailored-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Melange",
+        "Deep Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-atelier-cashmere-tailored-overcoat.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men christian dior atelier cashmere tailored overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "100% Cashmere Interlining",
+        "fabricWeight": "Heavyweight 780gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tribute coat paying homage to the historic Paris tailoring atelier at 30 Avenue Montaigne in pure Italian cashmere",
+      "status": "staged"
+    },
+    {
+      "id": "dior-reversible-oblique-hooded-raincoat",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Travel Collection",
+      "modelName": "Dior Men Reversible Dior Oblique Hooded Raincoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/reversible-oblique-hooded-raincoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Oblique / Solid Navy"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-reversible-oblique-hooded-raincoat.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men reversible dior oblique hooded raincoat",
+        "coatStyle": "Parka Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 450gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reversible longline technical rain jacket with drawcord hood and all-over jacquard Dior Oblique pattern",
+      "status": "staged"
+    },
+    {
+      "id": "dior-evening-barathea-gala-overcoat",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior Men",
+      "productLine": "Ceremony Eveningwear",
+      "modelName": "Dior Men Evening Barathea Wool Silk Lapel Gala Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en-us/fashion/products/evening-barathea-gala-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Total Black Barathea with Silk Lapels"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-evening-barathea-gala-overcoat.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior men evening barathea wool silk lapel gala overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Silk Satin Lining",
+        "fabricWeight": "Heavyweight 720gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal gala evening coat crafted from pure wool barathea with silk satin peak lapels",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-soho-unstructured-overcoat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Soho Line",
+      "modelName": "Giorgio Armani Soho Unstructured Fluid Wool-Cashmere Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/soho-unstructured-wool-cashmere-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Armani Navy",
+        "Lead Grey",
+        "Camel Tan"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-soho-unstructured-overcoat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani soho unstructured fluid wool-cashmere overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Cashmere Wool Lining",
+        "fabricWeight": "Medium-Weight 650gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fluid deconstructed overcoat embodying Giorgio Armani's soft shoulder philosophy and unlined Italian drape",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-double-breasted-crepe-greatcoat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Sartoriale",
+      "modelName": "Giorgio Armani Double-Breasted Low Stance Wool Crepe Greatcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/double-breasted-crepe-greatcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Anthracite"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-double-breasted-crepe-greatcoat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani double-breasted low stance wool crepe greatcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Signature low button stance double-breasted coat offering sweeping drape without rigid padding",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-belted-kimono-wrap-coat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Runway Outerwear",
+      "modelName": "Giorgio Armani Belted Kimono Wrap Coat in Pure Cashmere",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/belted-kimono-cashmere-wrap-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Greige Melange",
+        "Deep Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-belted-kimono-wrap-coat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani belted kimono wrap coat in pure cashmere",
+        "coatStyle": "Wrap Coat",
+        "insulation": "Double-Face Pure Cashmere",
+        "fabricWeight": "Heavyweight 720gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Eastern minimalism-inspired kimono wrap coat with clean collarless neck and self-tie sash",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-technical-microfibre-car-coat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Travel Line",
+      "modelName": "Giorgio Armani Technical Microfibre Storm System City Car Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/microfibre-city-car-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy",
+        "Lead Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-technical-microfibre-car-coat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani technical microfibre storm system city car coat",
+        "coatStyle": "Car Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 480gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Wrinkle-recovery technical microfibre car coat designed for international business travel",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-heavy-melton-naval-peacoat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Classic Outerwear",
+      "modelName": "Giorgio Armani Heavy Wool Melton Naval Peacoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/heavy-melton-naval-peacoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy Melton",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-heavy-melton-naval-peacoat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani heavy wool melton naval peacoat",
+        "coatStyle": "Pea Coat",
+        "insulation": "Heavy Melton Wool",
+        "fabricWeight": "Super Heavyweight 900gsm",
+        "weatherResistance": "Dense Water-Repellent Melton",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Italian luxury interpretation of the double-breasted peacoat with softened shoulders and horn buttons",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-concealed-button-wool-coat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Modernist Tailoring",
+      "modelName": "Giorgio Armani Single-Breasted Concealed Button Wool Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/concealed-button-wool-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Charcoal Melange",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-concealed-button-wool-coat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani single-breasted concealed button wool coat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 720gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean minimalist city overcoat with fly front closure and discreet slash welt pockets",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-shearling-lined-nappa-coat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Leather Collection",
+      "modelName": "Giorgio Armani Shearling Lined Winter Nappa Leather Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/shearling-lined-nappa-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Nappa with Charcoal Shearling"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-shearling-lined-nappa-coat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani shearling lined winter nappa leather coat",
+        "coatStyle": "Overcoat",
+        "insulation": "Shearling Lining",
+        "fabricWeight": "Super Heavyweight 980gsm",
+        "weatherResistance": "Dense Natural Leather and Fur",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-luxurious calf-length leather overcoat lined with shaved Spanish merino shearling",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-chevron-jacquard-overcoat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Sartorial Jacquard",
+      "modelName": "Giorgio Armani Chevron Jacquard Wool Tailored Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/chevron-jacquard-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Grey/Black Chevron",
+        "Navy Micro-Grid"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-chevron-jacquard-overcoat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani chevron jacquard wool tailored overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 760gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subtle chevron patterned weave overcoat bringing rich textural sophistication to executive outerwear",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-stand-collar-zippered-raincoat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Technical Outerwear",
+      "modelName": "Giorgio Armani Stand Collar Zippered Wool Raincoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/stand-collar-zippered-raincoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Black",
+        "Steel Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-stand-collar-zippered-raincoat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani stand collar zippered wool raincoat",
+        "coatStyle": "Car Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Medium-Weight 520gsm",
+        "weatherResistance": "Waterproof Shower-Resistant",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern city raincoat featuring water-repellent bonded wool and two-way gunmetal zip closure",
+      "status": "staged"
+    },
+    {
+      "id": "giorgio-armani-velvet-shawl-evening-gala-overcoat",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Cerimonia",
+      "modelName": "Giorgio Armani Velvet Shawl Evening Gala Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/products/velvet-shawl-evening-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue Velvet",
+        "Deep Black Velvet"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/giorgio-armani-velvet-shawl-evening-gala-overcoat.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani velvet shawl evening gala overcoat",
+        "coatStyle": "Overcoat",
+        "insulation": "Silk Satin Lining",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Grand evening overcoat cut from plush silk velvet with curved shawl collar for formal gala events",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-brunico-double-faced-cashmere-overcoat",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Brunico Collection",
+      "modelName": "Brioni Brunico Single-Breasted Double-Faced Cashmere Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/brunico-double-faced-cashmere-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Blue",
+        "Charcoal Melange",
+        "Vicuna Camel"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-brunico-double-faced-cashmere-overcoat.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni brunico single-breasted double-faced cashmere overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Double-Face Pure Cashmere",
+        "fabricWeight": "Heavyweight 800gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Flagship Roman tailored overcoat crafted from double-faced cashmere requiring over 300 hand operations in Penne, Abruzzo",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-plume-ultralight-raincoat",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Plume Collection",
+      "modelName": "Brioni Plume Ultra-Light Unlined Silk-Wool Raincoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/plume-ultralight-raincoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Sky Blue",
+        "Dark Navy",
+        "Lead Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-plume-ultralight-raincoat.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni plume ultra-light unlined silk-wool raincoat",
+        "coatStyle": "Car Coat",
+        "insulation": "Uninsulated Shell",
+        "fabricWeight": "Lightweight 380gsm",
+        "weatherResistance": "Water-Repellent Silk-Wool Membrane",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Weightless luxury raincoat weighing under 450 grams made of breathable silk-wool blend with taped seams",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-martingala-cashmere-polo-coat",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Classic Tailoring",
+      "modelName": "Brioni Martingala Double-Breasted Wool-Cashmere Polo Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/martingala-cashmere-polo-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Hair Tan",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-martingala-cashmere-polo-coat.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni martingala double-breasted wool-cashmere polo coat",
+        "coatStyle": "Polo Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Super Heavyweight 900gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Commanding double-breasted polo coat with broad peak lapels, turn-back cuffs, and martingala half-belt back",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-continental-flannel-chesterfield",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Continental Collection",
+      "modelName": "Brioni Continental Flannel Notch Lapel Chesterfield Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/continental-flannel-chesterfield"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Grey Flannel Herringbone",
+        "Navy Flannel"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-continental-flannel-chesterfield.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni continental flannel notch lapel chesterfield coat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Wool Felt Interlining",
+        "fabricWeight": "Heavyweight 780gsm",
+        "weatherResistance": "Natural Water-Resistant Wool",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined town overcoat tailored in woolen flannel with horn buttons and structured Roman shoulder line",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-reversible-cashmere-silk-storm-coat",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Travel Outerwear",
+      "modelName": "Brioni Reversible Cashmere and Technical Silk Storm Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/reversible-cashmere-silk-storm-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Cashmere / Sky Blue Silk Reversible"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-reversible-cashmere-silk-storm-coat.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni reversible cashmere and technical silk storm coat",
+        "coatStyle": "Car Coat",
+        "insulation": "Pure Cashmere Reversible Face",
+        "fabricWeight": "Heavyweight 750gsm",
+        "weatherResistance": "Weather-Sealed Loro Piana Rain System",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reversible car coat featuring rich double cashmere on one side and weather-sealed technical silk on the reverse",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-suede-belted-trench-coat",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Leather Collection",
+      "modelName": "Brioni Suede Leather Belted Trench Coat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/suede-belted-trench-coat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Camel Tan Suede",
+        "Chocolate Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-suede-belted-trench-coat.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni suede leather belted trench coat",
+        "coatStyle": "Trench Coat",
+        "insulation": "Cupro Lining",
+        "fabricWeight": "Heavyweight 850gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Supple calfskin suede double-breasted trench coat with genuine horn buckle belt and raglan shoulders",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-double-breasted-melton-peacoat",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Casual Sartorial",
+      "modelName": "Brioni Double-Breasted Heavy Melton Wool Peacoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/double-breasted-melton-peacoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Melton",
+        "Charcoal Melange"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-double-breasted-melton-peacoat.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni double-breasted heavy melton wool peacoat",
+        "coatStyle": "Pea Coat",
+        "insulation": "Heavy Melton Wool",
+        "fabricWeight": "Super Heavyweight 920gsm",
+        "weatherResistance": "Dense Water-Repellent Melton",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Naval peacoat hand-finished with horn buttons, broad lapels, and cashmere-lined handwarmer pockets",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-vicuna-tailored-winter-overcoat",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Exclusive Vicuña",
+      "modelName": "Brioni Vicuña Tailored Executive Winter Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/vicuna-tailored-winter-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Golden Vicuña"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-vicuna-tailored-winter-overcoat.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni vicuña tailored executive winter overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Double-Face Pure Vicuña",
+        "fabricWeight": "Heavyweight 760gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rare bespoke-grade overcoat tailored from certified sustainable Peruvian vicuña with pure silk lining",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-shearling-collar-quilted-parka",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Winter Outerwear",
+      "modelName": "Brioni Shearling Collar Quilted Down Travel Parka",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/shearling-collar-quilted-parka"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy Weatherproof Wool",
+        "Espresso"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-shearling-collar-quilted-parka.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni shearling collar quilted down travel parka",
+        "coatStyle": "Parka Coat",
+        "insulation": "90/10 Goose Down Padding",
+        "fabricWeight": "Heavyweight 850gsm",
+        "weatherResistance": "Water-Repellent Storm System",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Expedition travel coat featuring weather-sealed wool shell, goose down fill, and detachable Spanish shearling collar",
+      "status": "staged"
+    },
+    {
+      "id": "brioni-velvet-collar-evening-barathea-overcoat",
+      "canonicalBrand": "Brioni",
+      "displayBrand": "Brioni",
+      "productLine": "Cerimonia",
+      "modelName": "Brioni Velvet Collar Evening Barathea Overcoat",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brioni.com/en-us/products/velvet-collar-evening-barathea-overcoat"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Black Barathea"
+      ],
+      "mediaSource": {
+        "url": "https://www.brioni.com/images/products/brioni-velvet-collar-evening-barathea-overcoat.jpg",
+        "attribution": "Official catalog photography © Brioni"
+      },
+      "collectedAttributes": {
+        "brand": "brioni",
+        "modelName": "brioni velvet collar evening barathea overcoat",
+        "coatStyle": "Chesterfield Coat",
+        "insulation": "Silk Satin Lining",
+        "fabricWeight": "Heavyweight 740gsm",
+        "weatherResistance": "Dry-Clean Only Untreated",
+        "belted": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal evening Chesterfield coat crafted from British barathea wool with plush velvet collar for black-tie galas",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Mackintosh",
+      "leafKey": "coats",
+      "reason": "Mackintosh Cumbernauld workshop in Scotland handcrafts 5 canonical rubberised and bonded outerwear silhouettes (Oxford Trench, Dunkeld Mac, Cambridge Reversible, Dunoon Hooded Coat, Dalmally Chesterfield).",
+      "officialSourceUrl": "https://mackintosh.com/collections/coats",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Mackintosh Oxford Bonded Cotton Classic Trench Coat",
+        "Mackintosh Dunkeld Bonded Cotton Raincoat / Mac",
+        "Mackintosh Cambridge Reversible Wool-Cotton Mac Coat",
+        "Mackintosh Dunoon Classic Bonded Hooded Coat",
+        "Mackintosh Dalmally Wool-Cashmere Chesterfield Overcoat"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GB"
+    }
+  ]
+}

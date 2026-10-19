@@ -1,0 +1,3474 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "denim",
+  "displayName": "Jeans & Denim",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "jacob-cohen-bard-j688-slim-jeans",
+      "canonicalBrand": "Jacob Cohën",
+      "displayBrand": "Jacob Cohën",
+      "productLine": "Luxury Sartorial Denim",
+      "modelName": "Bard (J688) Slim-Fit Comfort Stretch Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://jacobcohen.com/en-us/products/bard-slim-fit-jeans-j688"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Indigo Wash",
+        "Mid-Blue Faded",
+        "Rinse Black"
+      ],
+      "mediaSource": {
+        "url": "https://jacobcohen.com/images/products/jacob-cohen-bard-j688-slim-jeans.jpg",
+        "attribution": "Official catalog photography © Jacob Cohën"
+      },
+      "collectedAttributes": {
+        "brand": "jacob cohën",
+        "modelName": "bard (j688) slim-fit comfort stretch jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic flagship Italian tailor-made denim model featuring pony hair back patch and matching silk handkerchief",
+      "status": "staged"
+    },
+    {
+      "id": "jacob-cohen-nick-j622-low-rise-jeans",
+      "canonicalBrand": "Jacob Cohën",
+      "displayBrand": "Jacob Cohën",
+      "productLine": "Luxury Sartorial Denim",
+      "modelName": "Nick (J622) Low-Rise Slim Fit Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://jacobcohen.com/en-us/products/nick-low-rise-slim-fit-jeans-j622"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Blue Wash",
+        "Charcoal Grey"
+      ],
+      "mediaSource": {
+        "url": "https://jacobcohen.com/images/products/jacob-cohen-nick-j622-low-rise-jeans.jpg",
+        "attribution": "Official catalog photography © Jacob Cohën"
+      },
+      "collectedAttributes": {
+        "brand": "jacob cohën",
+        "modelName": "nick (j622) low-rise slim fit jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Extra Slim Fit",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary lower-rise silhouette with tapered leg opening and custom silver-plated buttons",
+      "status": "staged"
+    },
+    {
+      "id": "jacob-cohen-bobby-straight-classic-jeans",
+      "canonicalBrand": "Jacob Cohën",
+      "displayBrand": "Jacob Cohën",
+      "productLine": "Classic Collection",
+      "modelName": "Bobby Straight Leg Classic 5-Pocket Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://jacobcohen.com/en-us/products/bobby-straight-leg-classic-jeans"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Indigo",
+        "Stonewash Blue"
+      ],
+      "mediaSource": {
+        "url": "https://jacobcohen.com/images/products/jacob-cohen-bobby-straight-classic-jeans.jpg",
+        "attribution": "Official catalog photography © Jacob Cohën"
+      },
+      "collectedAttributes": {
+        "brand": "jacob cohën",
+        "modelName": "bobby straight leg classic 5-pocket jeans",
+        "denimWeightOz": 13,
+        "selvedge": true,
+        "fitCut": "Classic Straight Leg",
+        "riseType": "Mid-to-High Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional 5-pocket denim cut with comfortable straight leg and Kurabo Japanese selvedge denim",
+      "status": "staged"
+    },
+    {
+      "id": "jacob-cohen-eduard-regular-selvedge-jeans",
+      "canonicalBrand": "Jacob Cohën",
+      "displayBrand": "Jacob Cohën",
+      "productLine": "Limited Edition",
+      "modelName": "Eduard Regular Fit Selvedge Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://jacobcohen.com/en-us/products/eduard-regular-selvedge-jeans"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Raw Indigo with Red Selvedge ID"
+      ],
+      "mediaSource": {
+        "url": "https://jacobcohen.com/images/products/jacob-cohen-eduard-regular-selvedge-jeans.jpg",
+        "attribution": "Official catalog photography © Jacob Cohën"
+      },
+      "collectedAttributes": {
+        "brand": "jacob cohën",
+        "modelName": "eduard regular fit selvedge denim jeans",
+        "denimWeightOz": 14,
+        "selvedge": true,
+        "fitCut": "Regular Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Numbered limited edition crafted from rigid 14oz Japanese shuttle-loom selvedge denim with chain-stitched hems",
+      "status": "staged"
+    },
+    {
+      "id": "jacob-cohen-kimberly-high-rise-crop-jeans",
+      "canonicalBrand": "Jacob Cohën",
+      "displayBrand": "Jacob Cohën",
+      "productLine": "Womenswear",
+      "modelName": "Kimberly High-Rise Slim Cropped Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://jacobcohen.com/en-us/products/kimberly-high-rise-cropped-jeans"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Light Wash",
+        "Dark Rinse"
+      ],
+      "mediaSource": {
+        "url": "https://jacobcohen.com/images/products/jacob-cohen-kimberly-high-rise-crop-jeans.jpg",
+        "attribution": "Official catalog photography © Jacob Cohën"
+      },
+      "collectedAttributes": {
+        "brand": "jacob cohën",
+        "modelName": "kimberly high-rise slim cropped jeans",
+        "denimWeightOz": 11,
+        "selvedge": false,
+        "fitCut": "Slim Cropped Fit",
+        "riseType": "High-Rise",
+        "stretchPercentage": 4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Feminine high-waisted cropped silhouette with soft stretch recovery and embroidered logo detail",
+      "status": "staged"
+    },
+    {
+      "id": "jacob-cohen-scott-relaxed-tapered-jeans",
+      "canonicalBrand": "Jacob Cohën",
+      "displayBrand": "Jacob Cohën",
+      "productLine": "Casual Collection",
+      "modelName": "Scott Relaxed Tapered Fit Selvedge Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://jacobcohen.com/en-us/products/scott-relaxed-tapered-jeans"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Fade Blue",
+        "Dirty Wash Ecru"
+      ],
+      "mediaSource": {
+        "url": "https://jacobcohen.com/images/products/jacob-cohen-scott-relaxed-tapered-jeans.jpg",
+        "attribution": "Official catalog photography © Jacob Cohën"
+      },
+      "collectedAttributes": {
+        "brand": "jacob cohën",
+        "modelName": "scott relaxed tapered fit selvedge jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": true,
+        "fitCut": "Relaxed Tapered Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern relaxed top block with clean taper down to ankle, crafted using hand-whiskered Italian denim",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-traditional-selvedge-13oz-jeans",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Sartorial Denim",
+      "modelName": "Traditional Fit Selvedge 13oz Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brunellocucinelli.com/en-us/men/clothing/denim/traditional-fit-selvedge-jeans-242M051.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Indigo Rinse",
+        "Medium Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.brunellocucinelli.com/images/products/cucinelli-traditional-selvedge-13oz-jeans.jpg",
+        "attribution": "Official catalog photography © Brunello Cucinelli"
+      },
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "traditional fit selvedge 13oz denim jeans",
+        "denimWeightOz": 13,
+        "selvedge": true,
+        "fitCut": "Traditional Straight Fit",
+        "riseType": "Mid-to-High Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Solomeo hand-tailored five-pocket jeans crafted from Japanese shuttle-loom selvedge denim",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-leisure-fit-drawstring-tapered-jeans",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Leisure Luxury",
+      "modelName": "Leisure Fit Drawstring Waist Tapered Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brunellocucinelli.com/en-us/men/clothing/denim/leisure-drawstring-tapered-jeans-242M052.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Washed Light Blue",
+        "Grey Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.brunellocucinelli.com/images/products/cucinelli-leisure-fit-drawstring-tapered-jeans.jpg",
+        "attribution": "Official catalog photography © Brunello Cucinelli"
+      },
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "leisure fit drawstring waist tapered jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Relaxed Tapered Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hybrid luxury denim featuring elasticated drawstring waistband and tailored permanent front crease",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-slim-fit-comfort-denim-jeans",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Essential Denim",
+      "modelName": "Slim Fit Comfort Denim 5-Pocket Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brunellocucinelli.com/en-us/men/clothing/denim/slim-fit-comfort-denim-jeans-242M053.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Wash",
+        "Black Rinse",
+        "Panama Ecru"
+      ],
+      "mediaSource": {
+        "url": "https://www.brunellocucinelli.com/images/products/cucinelli-slim-fit-comfort-denim-jeans.jpg",
+        "attribution": "Official catalog photography © Brunello Cucinelli"
+      },
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "slim fit comfort denim 5-pocket jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tailored slim five-pocket jeans with genuine buffalo horn button closure and suede leather back patch",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-high-rise-wide-pleated-denim",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Runway Denim",
+      "modelName": "High-Rise Wide-Leg Pleated Denim Trousers",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brunellocucinelli.com/en-us/men/clothing/denim/wide-leg-pleated-denim-trousers-242M054.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Bleached Indigo",
+        "Dark Raw"
+      ],
+      "mediaSource": {
+        "url": "https://www.brunellocucinelli.com/images/products/cucinelli-high-rise-wide-pleated-denim.jpg",
+        "attribution": "Official catalog photography © Brunello Cucinelli"
+      },
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "high-rise wide-leg pleated denim trousers",
+        "denimWeightOz": 11,
+        "selvedge": false,
+        "fitCut": "Wide Leg Pleated",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sartorial trouser-cut denim featuring forward front pleats and fluid wide-leg silhouette",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-classic-straight-12oz-jeans",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Classic Collection",
+      "modelName": "Classic Straight Fit 12oz Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.brunellocucinelli.com/en-us/men/clothing/denim/classic-straight-fit-jeans-242M055.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Indigo",
+        "Sun-Bleached Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.brunellocucinelli.com/images/products/cucinelli-classic-straight-12oz-jeans.jpg",
+        "attribution": "Official catalog photography © Brunello Cucinelli"
+      },
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "classic straight fit 12oz denim jeans",
+        "denimWeightOz": 12,
+        "selvedge": true,
+        "fitCut": "Straight Leg",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Timeless straight-leg five-pocket jeans balancing artisanal wash with soft Italian cotton hand",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d02-skinny-stretch-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Permanent Collection",
+      "modelName": "Skinny Fit Low-Rise D02 Jeans in Stretch Denim",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/d02-skinny-low-rise-jeans-391659.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Used Medium Blue",
+        "Raw Black",
+        "Coated Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d02-skinny-stretch-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "skinny fit low-rise d02 jeans in stretch denim",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Skinny Fit (15.5cm Leg Opening)",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The definitive rock-and-roll skinny jean cut engineered with signature low rise and tight calf",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d01-slim-raw-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Permanent Collection",
+      "modelName": "Slim Fit Mid-Rise D01 Jeans in Raw Denim",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/d01-slim-mid-rise-jeans-391660.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Indigo",
+        "Dry Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d01-slim-raw-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "slim fit mid-rise d01 jeans in raw denim",
+        "denimWeightOz": 12.5,
+        "selvedge": true,
+        "fitCut": "Slim Fit (17cm Leg Opening)",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic slim unwashed raw denim jean with clean tailoring lines and embossed leather patch",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d10-straight-selvedge-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Heritage Denim",
+      "modelName": "Straight Fit D10 Jeans in Japanese Selvedge Denim",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/d10-straight-selvedge-jeans-391661.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Rigid Indigo with Red Selvedge ID",
+        "Dark Vintage Fade"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d10-straight-selvedge-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "straight fit d10 jeans in japanese selvedge denim",
+        "denimWeightOz": 13.5,
+        "selvedge": true,
+        "fitCut": "Straight Leg (19cm Leg Opening)",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Premium heavyweight Japanese selvedge denim cut straight through the leg for boot wear",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d14-flared-bootcut-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Runway Collection",
+      "modelName": "Flared Bootcut D14 Jeans in Washed Indigo Denim",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/d14-flared-bootcut-jeans-391662.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Dirty Vintage Blue",
+        "Black Fade"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d14-flared-bootcut-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "flared bootcut d14 jeans in washed indigo denim",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Flared Bootcut",
+        "riseType": "Mid-to-High Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic 1970s rock silhouette with subtle knee break opening to a flared bootcut over Wyatt boots",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d20-high-rise-wide-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Runway Collection",
+      "modelName": "High-Rise Wide Leg D20 Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/d20-high-rise-wide-leg-jeans-391663.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Light Blue Bleach",
+        "Washed Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d20-high-rise-wide-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "high-rise wide leg d20 denim jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Wide Leg",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary Anthony Vaccarello runway design featuring dramatic high waist and wide fluid leg",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d05-carrot-tapered-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Casual Collection",
+      "modelName": "Carrot Fit Tapered D05 Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/d05-carrot-fit-tapered-jeans-391664.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Medium Vintage Blue",
+        "Washed Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d05-carrot-tapered-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "carrot fit tapered d05 denim jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Carrot Fit (Roomy Thigh, Narrow Hem)",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Relaxed upper block with aggressive taper to a narrow cuff, creating a sculptural urban profile",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d04-boyfriend-relaxed-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Womenswear / Unisex",
+      "modelName": "Boyfriend Relaxed Fit D04 Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/d04-boyfriend-relaxed-jeans-391665.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Light Blue",
+        "Bleached Stone"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d04-boyfriend-relaxed-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "boyfriend relaxed fit d04 denim jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": true,
+        "fitCut": "Boyfriend Relaxed Fit",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slouchy low-slung boyfriend jean featuring authentic vintage hand-distressing and rolled cuffs",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-classic-raw-edge-denim-shorts",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Summer Casual",
+      "modelName": "Classic Cut Raw Edge Denim Bermuda Cutoff",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/raw-edge-denim-bermuda-shorts-391666.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Faded Vintage Indigo",
+        "Washed Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-classic-raw-edge-denim-shorts.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "classic cut raw edge denim bermuda cutoff",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Bermuda Cutoff",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Festival-ready raw frayed hem denim cutoffs with handcrafted distressed abrasions",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d02-knee-slash-skinny-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Runway Icons",
+      "modelName": "Distressed Knee-Slash D02 Skinny Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/knee-slash-d02-skinny-jeans-391667.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Blue with Knee Slashes",
+        "Solid Black Distressed"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d02-knee-slash-skinny-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "distressed knee-slash d02 skinny jeans",
+        "denimWeightOz": 11,
+        "selvedge": false,
+        "fitCut": "Skinny Fit",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The legendary Hedi Slimane rock jean featuring razor-sharp horizontal knee blowouts",
+      "status": "staged"
+    },
+    {
+      "id": "saint-laurent-d18-high-rise-stovepipe-jeans",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Womenswear",
+      "modelName": "High-Rise Stovepipe Leg D18 Rigid Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/denim/d18-high-rise-stovepipe-jeans-391668.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Indigo",
+        "Ivory Rigid"
+      ],
+      "mediaSource": {
+        "url": "https://www.ysl.com/images/products/saint-laurent-d18-high-rise-stovepipe-jeans.jpg",
+        "attribution": "Official catalog photography © Saint Laurent"
+      },
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "high-rise stovepipe leg d18 rigid denim jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": true,
+        "fitCut": "Straight Stovepipe Cut",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural vintage 1980s stovepipe straight leg crafted from pure non-stretch rigid denim",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-tline-selvedge-raw-jeans",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "T-Line Collection",
+      "modelName": "T-Line Japanese Selvedge Raw Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/tline-selvedge-raw-jeans-TF901.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Rigid Raw Indigo"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-tline-selvedge-raw-jeans.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "t-line japanese selvedge raw denim jeans",
+        "denimWeightOz": 14,
+        "selvedge": true,
+        "fitCut": "Slim-Straight Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tom Ford flagship raw selvedge jean woven on historic Japanese shuttle looms with 18k gold-plated rivets",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-slim-fit-comfort-stretch-jeans",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Essential Denim",
+      "modelName": "Slim Fit 5-Pocket Comfort Stretch Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/slim-comfort-stretch-jeans-TF902.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Indigo Wash",
+        "Charcoal Grey",
+        "Clean Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-slim-fit-comfort-stretch-jeans.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "slim fit 5-pocket comfort stretch jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Everyday luxury five-pocket jean with leather suede back patch and signature 'T' stitch on back pockets",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-regular-fit-straight-leg-jeans",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Classic Denim",
+      "modelName": "Regular Fit Straight Leg 13.5oz Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/regular-straight-jeans-TF903.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Medium Vintage Blue",
+        "Rinse Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-regular-fit-straight-leg-jeans.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "regular fit straight leg 13.5oz jeans",
+        "denimWeightOz": 13.5,
+        "selvedge": true,
+        "fitCut": "Regular Straight Fit",
+        "riseType": "Classic Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional masculine straight leg jean with substantial 13.5oz weight and custom copper button fly",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-high-rise-wide-leg-rigid-trousers",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Runway Denim",
+      "modelName": "High-Rise Wide Leg Rigid Denim Trousers",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/high-rise-wide-leg-rigid-trousers-TF904.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Bleached Cloud Blue",
+        "Raw Indigo"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-high-rise-wide-leg-rigid-trousers.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "high-rise wide leg rigid denim trousers",
+        "denimWeightOz": 13,
+        "selvedge": false,
+        "fitCut": "Wide Leg",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dramatic wide-leg runway cut pairing tailored trouser waistband construction with rigid denim",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-western-bootcut-5pocket-jeans",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Western Collection",
+      "modelName": "Western Cut Bootcut 5-Pocket Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/western-bootcut-5pocket-jeans-TF905.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Stonewash",
+        "Dark Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-western-bootcut-5pocket-jeans.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "western cut bootcut 5-pocket jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Bootcut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "American Western heritage silhouette with subtle knee break tailored to sit cleanly over cowboy boots",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-slim-tapered-garment-dyed-jeans",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Color Denim",
+      "modelName": "Slim Tapered Garment-Dyed Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/slim-tapered-garment-dyed-jeans-TF906.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Chalk White",
+        "Olive Drab",
+        "Tobacco Brown"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-slim-tapered-garment-dyed-jeans.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "slim tapered garment-dyed denim jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Slim Tapered",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Garment-dyed bull denim five-pocket jeans with velvety soft hand and tonal metal hardware",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-low-rise-tight-stretch-jeans",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Rock Denim",
+      "modelName": "Low-Rise Tight Fit Stretch Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/low-rise-tight-stretch-jeans-TF907.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Jet Black",
+        "Washed Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-low-rise-tight-stretch-jeans.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "low-rise tight fit stretch denim jeans",
+        "denimWeightOz": 10.5,
+        "selvedge": false,
+        "fitCut": "Tight Skinny Fit",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek evening rock denim offering extreme comfort stretch with high recovery and matte black rivets",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-pleated-front-tailored-denim",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Sartorial Denim",
+      "modelName": "Pleated Front Tailored Denim Trousers",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/pleated-front-tailored-denim-TF908.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy Indigo",
+        "Medium Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-pleated-front-tailored-denim.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "pleated front tailored denim trousers",
+        "denimWeightOz": 11,
+        "selvedge": false,
+        "fitCut": "Tailored Tapered Leg with Turnback Cuffs",
+        "riseType": "High-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sartorial hybrid replacing 5-pocket styling with single pleats, side slash pockets and tailored cuffs",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-relaxed-carpenter-denim-jeans",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Workwear Luxury",
+      "modelName": "Relaxed Carpenter 5-Pocket Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/relaxed-carpenter-denim-jeans-TF909.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Workwear Indigo Wash",
+        "Ecru"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-relaxed-carpenter-denim-jeans.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "relaxed carpenter 5-pocket denim jeans",
+        "denimWeightOz": 13,
+        "selvedge": false,
+        "fitCut": "Relaxed Straight Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Utilitarian carpenter jeans elevated with leather hammer loop and subtle Tom Ford branded rivets",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-heavyweight-vintage-fade-straight",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Heritage Denim",
+      "modelName": "Heavyweight 14oz Vintage Fade Straight Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.tomford.com/men/clothing/jeans/heavyweight-vintage-fade-jeans-TF910.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Artisanal Sun Fade Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.tomford.com/images/products/tom-ford-heavyweight-vintage-fade-straight.jpg",
+        "attribution": "Official catalog photography © Tom Ford"
+      },
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "heavyweight 14oz vintage fade straight jeans",
+        "denimWeightOz": 14,
+        "selvedge": true,
+        "fitCut": "Straight Leg",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Substantial 14oz rigid denim subjected to hand-rubbed fading replicating genuine decade-old wear",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-rrl-slim-fit-selvedge-jeans",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Double RL (RRL)",
+      "modelName": "RRL Slim Fit Japanese Selvedge Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/rrl-slim-fit-selvedge-jean/645501.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Rigid Indigo",
+        "Once Washed Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-rrl-slim-fit-selvedge-jeans.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "rrl slim fit japanese selvedge jeans",
+        "denimWeightOz": 15.5,
+        "selvedge": true,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Collector-grade American workwear denim woven in Japan on narrow shuttle looms and hand-finished in the USA",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-rrl-straight-rigid-selvedge",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Double RL (RRL)",
+      "modelName": "RRL Straight Fit Rigid Indigo Selvedge Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/rrl-straight-fit-selvedge-jean/645502.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Rigid Raw Indigo"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-rrl-straight-rigid-selvedge.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "rrl straight fit rigid indigo selvedge jeans",
+        "denimWeightOz": 16,
+        "selvedge": true,
+        "fitCut": "Straight Leg",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavyweight 16oz raw unwashed denim built with chain-stitched waistband and hidden back pocket rivets",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-rrl-low-straight-distressed",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Double RL (RRL)",
+      "modelName": "RRL Low Straight Fit Distressed Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/rrl-low-straight-distressed-jean/645503.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Canyon Creek Wash",
+        "Dusty Trail Fade"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-rrl-low-straight-distressed.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "rrl low straight fit distressed denim jeans",
+        "denimWeightOz": 13.5,
+        "selvedge": true,
+        "fitCut": "Low Straight Cut",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hand-distressed vintage wash reproducing natural patina, knee abrasions and oxidized copper rivets",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-rrl-high-slim-right-hand-twill",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Double RL (RRL)",
+      "modelName": "RRL High Slim Fit Right-Hand Twill Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/rrl-high-slim-fit-jean/645504.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Blue Wash",
+        "Black Rinse"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-rrl-high-slim-right-hand-twill.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "rrl high slim fit right-hand twill jeans",
+        "denimWeightOz": 14.5,
+        "selvedge": true,
+        "fitCut": "High-Rise Slim",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "1940s workwear fit combining high waist with trim leg profile and authentic right-hand twill weave",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-sullivan-slim-stretch",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo RL Sullivan Slim Stretch Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/sullivan-slim-stretch-jean/645505.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Rinse Indigo",
+        "Faded Blue",
+        "Black Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-sullivan-slim-stretch.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo rl sullivan slim stretch jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Low-to-Mid Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The core Polo Ralph Lauren modern slim jean offering all-day comfort stretch and signature leather patch",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-varick-slim-straight",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo RL Varick Slim Straight Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/varick-slim-straight-jean/645506.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Rinse",
+        "Medium Stone Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-varick-slim-straight.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo rl varick slim straight jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Straight Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Balanced versatile silhouette fitted through the thigh with an easy straight leg down to the ankle",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-hampton-relaxed-straight",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo RL Hampton Relaxed Straight Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/hampton-relaxed-straight-jean/645507.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Blue Stonewash",
+        "Washed Tint"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-hampton-relaxed-straight.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo rl hampton relaxed straight jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Relaxed Straight Fit",
+        "riseType": "Classic Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional relaxed American five-pocket jean with generous room through seat and thigh",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-purple-label-japanese-selvedge",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Purple Label",
+      "modelName": "Purple Label Slim Fit Japanese Selvedge Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/purple-label-japanese-selvedge-jean/645508.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Indigo Rinse",
+        "Midnight Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-purple-label-japanese-selvedge.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "purple label slim fit japanese selvedge jeans",
+        "denimWeightOz": 13,
+        "selvedge": true,
+        "fitCut": "Tailored Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Handcrafted in Italy luxury denim featuring custom sterling silver-plated buttons and purple leather patch",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-polo-eldridge-skinny-stretch",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Polo Ralph Lauren",
+      "modelName": "Polo RL Eldridge Skinny Stretch Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/eldridge-skinny-stretch-jean/645509.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Worn",
+        "Light Indigo Destroyed"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-polo-eldridge-skinny-stretch.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "polo rl eldridge skinny stretch jeans",
+        "denimWeightOz": 10.5,
+        "selvedge": false,
+        "fitCut": "Skinny Fit",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary skinny cut with high stretch retention designed for modern casual streetwear pairings",
+      "status": "staged"
+    },
+    {
+      "id": "ralph-lauren-rrl-officers-field-tapered-denim",
+      "canonicalBrand": "Ralph Lauren",
+      "displayBrand": "Ralph Lauren",
+      "productLine": "Double RL (RRL)",
+      "modelName": "RRL Officer's Field Tapered Denim Pants",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.ralphlauren.com/men-clothing-jeans/rrl-officers-field-denim-pant/645510.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Indigo Canvas Wash",
+        "Surplus Olive Tint"
+      ],
+      "mediaSource": {
+        "url": "https://www.ralphlauren.com/images/products/ralph-lauren-rrl-officers-field-tapered-denim.jpg",
+        "attribution": "Official catalog photography © Ralph Lauren"
+      },
+      "collectedAttributes": {
+        "brand": "ralph lauren",
+        "modelName": "rrl officer's field tapered denim pants",
+        "denimWeightOz": 12.5,
+        "selvedge": true,
+        "fitCut": "Tapered Officer Cut",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage military field trousers tailored in Japanese selvedge denim with donut buttons and coin pocket flap",
+      "status": "staged"
+    },
+    {
+      "id": "prada-5pocket-slim-rigid-bull-denim",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Denim Collection",
+      "modelName": "5-Pocket Slim Fit Rigid Bull Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/slim-rigid-bull-denim-gep331.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Navy Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-5pocket-slim-rigid-bull-denim.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "5-pocket slim fit rigid bull denim jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Impeccably clean five-pocket bull denim jean featuring the enameled metal triangle logo on the rear pocket",
+      "status": "staged"
+    },
+    {
+      "id": "prada-straight-bleached-denim-triangle",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Runway Collection",
+      "modelName": "Straight Fit Bleached Denim Jeans with Enamel Triangle",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/straight-bleached-denim-gep332.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Bleached Light Blue",
+        "Acid Wash Marble"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-straight-bleached-denim-triangle.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "straight fit bleached denim jeans with enamel triangle",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Straight Leg",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Striking runway bleach treatment creating an artisanal cloud effect across classic straight jeans",
+      "status": "staged"
+    },
+    {
+      "id": "prada-relaxed-japanese-selvedge-jeans",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Premium Denim",
+      "modelName": "Relaxed Fit Japanese Selvedge Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/relaxed-japanese-selvedge-gep333.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Raw Indigo"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-relaxed-japanese-selvedge-jeans.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "relaxed fit japanese selvedge denim jeans",
+        "denimWeightOz": 13.5,
+        "selvedge": true,
+        "fitCut": "Relaxed Straight Fit",
+        "riseType": "Mid-to-High Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crafted from Japanese shuttle-loom denim in raw indigo with selvedge coin pocket detail",
+      "status": "staged"
+    },
+    {
+      "id": "prada-high-waisted-wide-raw-denim-trousers",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Runway Collection",
+      "modelName": "High-Waisted Wide Leg Raw Denim Trousers",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/high-waisted-wide-raw-denim-gep334.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Rinse Indigo",
+        "Deep Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-high-waisted-wide-raw-denim-trousers.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "high-waisted wide leg raw denim trousers",
+        "denimWeightOz": 13,
+        "selvedge": false,
+        "fitCut": "Wide Leg Trousers",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural tailored trouser silhouette rendered in dark unwashed rigid denim with sharp front crease",
+      "status": "staged"
+    },
+    {
+      "id": "prada-cropped-tapered-rinse-denim-jeans",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Ready-To-Wear",
+      "modelName": "Cropped Tapered Rinse Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/cropped-tapered-rinse-denim-gep335.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Blue Rinse",
+        "Medium Fade"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-cropped-tapered-rinse-denim-jeans.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "cropped tapered rinse denim jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Cropped Tapered Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ankle-skimming cropped silhouette designed specifically to showcase Prada chunky lug-sole loafers",
+      "status": "staged"
+    },
+    {
+      "id": "prada-re-nylon-trim-5pocket-denim",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Re-Nylon Hybrid",
+      "modelName": "Re-Nylon Trim 5-Pocket Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/re-nylon-trim-denim-gep336.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Denim with Black Re-Nylon",
+        "Blue Denim with Black Trim"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-re-nylon-trim-5pocket-denim.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon trim 5-pocket denim jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hybrid luxury five-pocket jean with regenerated Re-Nylon coin pocket and enameled triangle plaque",
+      "status": "staged"
+    },
+    {
+      "id": "prada-baggy-skater-heavyweight-denim",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Youth Culture",
+      "modelName": "Baggy Skater Fit Heavyweight Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/baggy-skater-heavy-denim-gep337.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Wash Blue",
+        "Dirty Sand Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-baggy-skater-heavyweight-denim.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "baggy skater fit heavyweight denim jeans",
+        "denimWeightOz": 14,
+        "selvedge": false,
+        "fitCut": "Baggy Skater Cut",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Voluminous 1990s skater-inspired baggy jeans with reinforced seams and pooling leg openings",
+      "status": "staged"
+    },
+    {
+      "id": "prada-bootcut-stretch-denim-jeans",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Ready-To-Wear",
+      "modelName": "Bootcut Stretch Denim 5-Pocket Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/bootcut-stretch-denim-gep338.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Indigo",
+        "Washed Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-bootcut-stretch-denim-jeans.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "bootcut stretch denim 5-pocket jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Slim Bootcut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tailored bootcut silhouette with subtle flare below knee, designed to rest elegantly over boots",
+      "status": "staged"
+    },
+    {
+      "id": "prada-padded-denim-utility-carpenter",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Winter Denim",
+      "modelName": "Padded Denim Utility Carpenter Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/padded-denim-utility-carpenter-gep339.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Stone Wash Blue",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-padded-denim-utility-carpenter.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "padded denim utility carpenter jeans",
+        "denimWeightOz": 13,
+        "selvedge": false,
+        "fitCut": "Relaxed Carpenter Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight quilted polyester lined winter denim with double-knee panels and utility tool loops",
+      "status": "staged"
+    },
+    {
+      "id": "prada-vintage-wash-straight-125oz-jeans",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Classic Denim",
+      "modelName": "Vintage Wash Straight Leg 12.5oz Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/men/ready_to_wear/denim/vintage-wash-straight-jeans-gep340.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Washed Medium Blue",
+        "Light Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.prada.com/images/products/prada-vintage-wash-straight-125oz-jeans.jpg",
+        "attribution": "Official catalog photography © Prada"
+      },
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "vintage wash straight leg 12.5oz jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Straight Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Understated classic straight jean finished with hand-applied whiskering and Prada signature hardware",
+      "status": "staged"
+    },
+    {
+      "id": "dior-19cm-slim-selvedge-raw-jeans",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Essentials",
+      "modelName": "Dior 19cm Slim Fit Japanese Selvedge Raw Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/19cm-selvedge-raw-jeans-013D001AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Indigo with Blue Selvedge ID",
+        "Black Raw"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-19cm-slim-selvedge-raw-jeans.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior 19cm slim fit japanese selvedge raw jeans",
+        "denimWeightOz": 13,
+        "selvedge": true,
+        "fitCut": "Slim Fit (19cm Leg Opening)",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The legendary Hedi Slimane Dior Homme cut with 19cm hem, darted back pockets and engraved CD clasp",
+      "status": "staged"
+    },
+    {
+      "id": "dior-175cm-skinny-stretch-denim-jeans",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Essentials",
+      "modelName": "Dior 17.5cm Skinny Fit Stretch Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/175cm-skinny-stretch-jeans-013D002AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Washed Black",
+        "Vintage Blue",
+        "Bleached Light Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-175cm-skinny-stretch-denim-jeans.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior 17.5cm skinny fit stretch denim jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Skinny Fit (17.5cm Leg Opening)",
+        "riseType": "Low-to-Mid Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slimmer Dior silhouette featuring narrow 17.5cm ankle opening and signature horizontal back pocket scar",
+      "status": "staged"
+    },
+    {
+      "id": "dior-21cm-regular-straight-jeans",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Classic Collection",
+      "modelName": "Dior 21cm Regular Straight Fit Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/21cm-regular-straight-jeans-013D003AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Blue",
+        "Stone Wash Medium"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-21cm-regular-straight-jeans.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior 21cm regular straight fit denim jeans",
+        "denimWeightOz": 13.5,
+        "selvedge": true,
+        "fitCut": "Regular Straight Fit (21cm Leg Opening)",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic straight-leg cut offering generous room through the leg with authentic Japanese selvedge finish",
+      "status": "staged"
+    },
+    {
+      "id": "dior-oblique-jacquard-inset-slim-jeans",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Oblique",
+      "modelName": "Dior Oblique Jacquard Inset Slim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/oblique-jacquard-inset-jeans-113D010AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Indigo with Blue Oblique",
+        "Black with Grey Oblique"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-oblique-jacquard-inset-slim-jeans.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior oblique jacquard inset slim jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-concept luxury denim featuring the iconic Dior Oblique jacquard canvas revealed at cuffs and coin pocket",
+      "status": "staged"
+    },
+    {
+      "id": "dior-relaxed-fit-carpenter-denim-pants",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Workwear Collection",
+      "modelName": "Relaxed Fit Carpenter Denim Pants",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/relaxed-carpenter-denim-pants-213D015AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Bleached Blue with CD Rivets",
+        "Ecru Raw"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-relaxed-fit-carpenter-denim-pants.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "relaxed fit carpenter denim pants",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Relaxed Carpenter Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kim Jones utility workwear denim featuring Christian Dior leather back patch and hammer loop",
+      "status": "staged"
+    },
+    {
+      "id": "dior-high-rise-flared-vintage-wash-jeans",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Runway Collection",
+      "modelName": "High-Rise Flared Leg Vintage Wash Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/high-rise-flared-vintage-jeans-313D020AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Sun-Bleached Indigo",
+        "Washed Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-high-rise-flared-vintage-wash-jeans.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "high-rise flared leg vintage wash jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Flared Bootcut",
+        "riseType": "High-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elongated 1970s silhouette with high rise and dramatic flare designed to drape over B27 sneakers",
+      "status": "staged"
+    },
+    {
+      "id": "dior-tears-tapered-selvedge-jeans",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Tears Collaboration",
+      "modelName": "Dior Tears Collaboration Tapered Selvedge Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/dior-tears-tapered-selvedge-jeans-393D025AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Ivy Blue Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-tears-tapered-selvedge-jeans.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior tears collaboration tapered selvedge jeans",
+        "denimWeightOz": 13,
+        "selvedge": true,
+        "fitCut": "Tapered Ivy League Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Celebrated capsule collaboration celebrating 1950s black Ivy League jazz musicians and denim heritage",
+      "status": "staged"
+    },
+    {
+      "id": "dior-distressed-painted-slub-denim",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Artisanal Denim",
+      "modelName": "Distressed Painted Slub Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/distressed-painted-slub-denim-243D030AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Paint Splatter Vintage Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-distressed-painted-slub-denim.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "distressed painted slub denim jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Atelier hand-painted splashes and subtle abrasions recalling Christian Dior's historic art gallery roots",
+      "status": "staged"
+    },
+    {
+      "id": "dior-cd-diamond-motif-straight-jeans",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "CD Diamond",
+      "modelName": "CD Diamond Motif Straight Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/cd-diamond-motif-straight-jeans-283D035AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Blue with Laser-Etched Diamond",
+        "Black Diamond"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-cd-diamond-motif-straight-jeans.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "cd diamond motif straight denim jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Straight Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Precision laser-etched all-over CD Diamond geometric pattern on premium Italian cotton denim",
+      "status": "staged"
+    },
+    {
+      "id": "dior-cropped-wide-rigid-denim-trousers",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Modernist Denim",
+      "modelName": "Cropped Wide Leg Rigid Denim Trousers",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/products/cropped-wide-rigid-denim-343D040AY978.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Dark Blue",
+        "Ecru Bull Denim"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/images/products/dior-cropped-wide-rigid-denim-trousers.jpg",
+        "attribution": "Official catalog photography © Dior"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "cropped wide leg rigid denim trousers",
+        "denimWeightOz": 13,
+        "selvedge": true,
+        "fitCut": "Cropped Wide Cut",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist cropped trouser cut in stiff raw denim with deep turn-up selvedge cuffs",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-straight-denim-pant-web-cuff",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Heritage Collection",
+      "modelName": "Straight Leg Denim Pant with Gucci Web Cuff",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/straight-denim-pant-web-cuff-p-624263XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Blue Rinse with Green/Red Web",
+        "Medium Stonewash"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-straight-denim-pant-web-cuff.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "straight leg denim pant with gucci web cuff",
+        "denimWeightOz": 12.5,
+        "selvedge": true,
+        "fitCut": "Straight Leg",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "House classic straight-leg denim featuring the signature green and red Web ribbon inside the cuff turn-up",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-flared-silhouette-1970s-jeans",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Vintage Collection",
+      "modelName": "Flared Silhouette 1970s Stone-Washed Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/flared-1970s-stone-washed-jeans-p-624264XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Light Blue",
+        "Washed Ecru"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-flared-silhouette-1970s-jeans.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "flared silhouette 1970s stone-washed jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Flared Bootcut",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Retro 1970s rock flare with stone-washed fade, orange contrast stitching and metallic Gucci label",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-tapered-eco-washed-organic-jeans",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Gucci Circular Lines",
+      "modelName": "Tapered Fit Eco Washed Organic Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/tapered-eco-washed-organic-jeans-p-624265XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Eco Washed Blue",
+        "Black Enzyme Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-tapered-eco-washed-organic-jeans.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "tapered fit eco washed organic denim jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Tapered Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sustainably produced organic cotton denim washed using water-saving eco enzyme technology",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-slim-fit-stretch-denim-pant",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Classic Denim",
+      "modelName": "Slim Fit Stretch Denim Pant with Leather Patch",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/slim-fit-stretch-denim-pant-p-624266XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Blue Rinse",
+        "Black Stretch"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-slim-fit-stretch-denim-pant.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "slim fit stretch denim pant with leather patch",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tailored five-pocket denim pants with embossed brown leather Gucci logo patch on back waistband",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-oversized-baggy-skate-denim",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Runway Collection",
+      "modelName": "Oversized Baggy Fit Skate Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/oversized-baggy-skate-denim-p-624267XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Bleached Blue Vintage",
+        "Dirty Mud Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-oversized-baggy-skate-denim.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "oversized baggy fit skate denim jeans",
+        "denimWeightOz": 13,
+        "selvedge": false,
+        "fitCut": "Baggy Oversized Fit",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nineties skate culture silhouette featuring extreme volume, deep pockets and slouchy pooling cuffs",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-denim-carpenter-pant-hammer-loop",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Workwear Luxury",
+      "modelName": "Denim Carpenter Pant with Hammer Loop",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/denim-carpenter-pant-p-624268XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Indigo Canvas with Contrast Stitching",
+        "Ecru Drill"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-denim-carpenter-pant-hammer-loop.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "denim carpenter pant with hammer loop",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Relaxed Straight Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Workwear utility pants detailed with double-knee panels, tool pockets and green/red Web hammer loop",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-high-waisted-mom-fit-rigid-jeans",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Womenswear",
+      "modelName": "High-Waisted Mom Fit Rigid Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/ready-to-wear-for-women/denim-for-women/high-waisted-mom-fit-rigid-jeans-p-624269XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Light Wash",
+        "Washed Grey"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-high-waisted-mom-fit-rigid-jeans.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "high-waisted mom fit rigid denim jeans",
+        "denimWeightOz": 12,
+        "selvedge": true,
+        "fitCut": "Tapered Mom Fit",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Authentic vintage high-waisted cut snug through hips with classic 1980s tapered leg profile",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-bootcut-indigo-denim-gg-buttons",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Ready-To-Wear",
+      "modelName": "Bootcut Indigo Denim Pant with GG Buttons",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/bootcut-indigo-denim-pant-p-624270XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Indigo",
+        "Light Blue Bleached"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-bootcut-indigo-denim-gg-buttons.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "bootcut indigo denim pant with gg buttons",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Bootcut Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Flattering bootcut silhouette accentuated by enameled Interlocking G gold-tone shank buttons",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-distressed-washed-denim-rips",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Runway Distressed",
+      "modelName": "Distressed Washed Denim Pant with Rips",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/distressed-washed-denim-pant-p-624271XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Stone Washed Blue with Open Rips"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-distressed-washed-denim-rips.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "distressed washed denim pant with rips",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Straight Relaxed Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Statement runway jean showcasing artisanal hand-cut rips, frayed pocket edges and distressed hemline",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-tailored-creased-denim-wide-trouser",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Sartorial Denim",
+      "modelName": "Tailored Creased Denim Wide Trouser",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/ready-to-wear-for-men/denim-for-men/tailored-creased-denim-wide-trouser-p-624272XDBBC.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Indigo Rinse",
+        "White Denim"
+      ],
+      "mediaSource": {
+        "url": "https://www.gucci.com/images/products/gucci-tailored-creased-denim-wide-trouser.jpg",
+        "attribution": "Official catalog photography © Gucci"
+      },
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "tailored creased denim wide trouser",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Wide Leg Trouser Cut",
+        "riseType": "High-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tailored trouser aesthetic executed in dark rinse denim with sharp pressed center crease and side slash pockets",
+      "status": "staged"
+    },
+    {
+      "id": "armani-giorgio-tailored-wool-denim-straight",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Giorgio Armani",
+      "modelName": "Giorgio Armani Tailored Wool-Denim Blend Straight Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/giorgio-armani/tailored-wool-denim-straight-ga301.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Navy Indigo",
+        "Deep Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-giorgio-tailored-wool-denim-straight.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani tailored wool-denim blend straight jeans",
+        "denimWeightOz": 11,
+        "selvedge": false,
+        "fitCut": "Tailored Straight Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-luxurious hybrid fabric weaving virgin wool with cotton denim for fluid drape and refined sheen",
+      "status": "staged"
+    },
+    {
+      "id": "armani-giorgio-selvedge-denim-slim-5pocket",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Giorgio Armani",
+      "modelName": "Giorgio Armani Selvedge Denim Slim 5-Pocket Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/giorgio-armani/selvedge-denim-slim-jeans-ga302.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Rinse Indigo",
+        "Faded Slate"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-giorgio-selvedge-denim-slim-5pocket.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani selvedge denim slim 5-pocket jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": true,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Masterpiece Italian selvedge jeans with hand-stitched leather GA crest on rear coin pocket",
+      "status": "staged"
+    },
+    {
+      "id": "armani-emporio-j06-slim-fit-stretch",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Emporio Armani",
+      "productLine": "Emporio Armani Denim",
+      "modelName": "Emporio Armani J06 Slim Fit Stretch Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/emporio-armani/j06-slim-fit-stretch-jeans-ea303.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Denim Blue",
+        "Black Rinse",
+        "Dark Vintage Fade"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-emporio-j06-slim-fit-stretch.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "emporio armani j06 slim fit stretch jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Low-to-Mid Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Emporio Armani benchmark modern slim five-pocket jean with eagle logo metal plaque on back pocket",
+      "status": "staged"
+    },
+    {
+      "id": "armani-emporio-j45-regular-straight",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Emporio Armani",
+      "productLine": "Emporio Armani Denim",
+      "modelName": "Emporio Armani J45 Regular Fit Straight Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/emporio-armani/j45-regular-fit-straight-jeans-ea304.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Mid Stone Blue",
+        "Rinsed Indigo"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-emporio-j45-regular-straight.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "emporio armani j45 regular fit straight jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Regular Straight Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic straight-leg comfort denim designed with generous leg width and traditional 5-pocket styling",
+      "status": "staged"
+    },
+    {
+      "id": "armani-emporio-j21-regular-bootcut",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Emporio Armani",
+      "productLine": "Emporio Armani Denim",
+      "modelName": "Emporio Armani J21 Regular Fit Bootcut Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/emporio-armani/j21-regular-fit-bootcut-jeans-ea305.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Indigo",
+        "Washed Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-emporio-j21-regular-bootcut.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "emporio armani j21 regular fit bootcut jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Bootcut Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Comfortable bootcut jeans opening gently from knee to cuff, engineered to sit over leather boots",
+      "status": "staged"
+    },
+    {
+      "id": "armani-emporio-j20-extra-slim-stretch",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Emporio Armani",
+      "productLine": "Emporio Armani Denim",
+      "modelName": "Emporio Armani J20 Extra Slim Fit Stretch Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/emporio-armani/j20-extra-slim-stretch-jeans-ea306.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Clean",
+        "Dark Grey Stone Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-emporio-j20-extra-slim-stretch.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "emporio armani j20 extra slim fit stretch jeans",
+        "denimWeightOz": 10.5,
+        "selvedge": false,
+        "fitCut": "Extra Slim Fit",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contoured skinny stretch jeans offering maximum flexibility and form-fitting urban silhouette",
+      "status": "staged"
+    },
+    {
+      "id": "armani-giorgio-pleated-wide-denim-trousers",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Giorgio Armani",
+      "modelName": "Giorgio Armani Pleated Wide-Leg Denim Trousers",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/giorgio-armani/pleated-wide-leg-denim-trousers-ga307.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Bleached Indigo",
+        "Ecru"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-giorgio-pleated-wide-denim-trousers.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani pleated wide-leg denim trousers",
+        "denimWeightOz": 10.5,
+        "selvedge": false,
+        "fitCut": "Wide Leg Pleated",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Runway tailored trouser cut in lightweight washed denim featuring front pleats and fluid movement",
+      "status": "staged"
+    },
+    {
+      "id": "armani-emporio-tapered-carrot-denim",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Emporio Armani",
+      "productLine": "Emporio Armani Denim",
+      "modelName": "Emporio Armani Tapered Carrot Fit Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/emporio-armani/tapered-carrot-fit-denim-ea308.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Acid Wash Grey",
+        "Mid Wash Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-emporio-tapered-carrot-denim.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "emporio armani tapered carrot fit denim jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Carrot Tapered Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual street-style carrot silhouette with dropped crotch and tapered ankle hem",
+      "status": "staged"
+    },
+    {
+      "id": "armani-giorgio-rinse-wash-comfort-denim",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Giorgio Armani",
+      "productLine": "Giorgio Armani",
+      "modelName": "Giorgio Armani Rinse Wash Comfort Denim Pant",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/giorgio-armani/rinse-wash-comfort-denim-ga309.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue Rinse"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-giorgio-rinse-wash-comfort-denim.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "giorgio armani rinse wash comfort denim pant",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Tailored Modern Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subtle luxury five-pocket trouser treated with single rinse wash to preserve dark monochromatic purity",
+      "status": "staged"
+    },
+    {
+      "id": "armani-emporio-loose-fit-skater-jeans",
+      "canonicalBrand": "Armani",
+      "displayBrand": "Emporio Armani",
+      "productLine": "Emporio Armani Denim",
+      "modelName": "Emporio Armani Loose Fit Skater Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.armani.com/en-us/emporio-armani/loose-fit-skater-jeans-ea310.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Light Blue",
+        "Washed Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.armani.com/images/products/armani-emporio-loose-fit-skater-jeans.jpg",
+        "attribution": "Official catalog photography © Armani"
+      },
+      "collectedAttributes": {
+        "brand": "armani",
+        "modelName": "emporio armani loose fit skater jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Loose Skater Fit",
+        "riseType": "Low-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Youth-culture loose denim with wide leg opening and 1990s vintage wash fading",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-japanese-denim-check-inset-jeans",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Denim",
+      "modelName": "Slim Fit Japanese Denim Jeans with Check Inset",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/slim-fit-japanese-denim-jeans-check-inset-p8018901.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Indigo Rinse",
+        "Washed Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-japanese-denim-check-inset-jeans.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "slim fit japanese denim jeans with check inset",
+        "denimWeightOz": 12.5,
+        "selvedge": true,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Japanese selvedge denim featuring archival Vintage Check lining revealed when cuffs are turned up",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-straight-indigo-rigid-denim-jeans",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Classic Denim",
+      "modelName": "Straight Leg Indigo Wash Rigid Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/straight-leg-indigo-denim-jeans-p8018902.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Deep Indigo",
+        "Once Washed Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-straight-indigo-rigid-denim-jeans.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "straight leg indigo wash rigid denim jeans",
+        "denimWeightOz": 13.5,
+        "selvedge": true,
+        "fitCut": "Straight Leg",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Unwashed rigid denim jean with classic British five-pocket tailoring and embossed leather TB patch",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-relaxed-bleached-blue-denim-jeans",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Daniel Lee Collection",
+      "modelName": "Relaxed Fit Bleached Blue Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/relaxed-fit-bleached-denim-jeans-p8018903.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Bleached Knight Blue Wash",
+        "Chalk Bleach"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-relaxed-bleached-blue-denim-jeans.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "relaxed fit bleached blue denim jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Relaxed Straight Cut",
+        "riseType": "Mid-to-High Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary bleached blue denim with Daniel Lee's signature Knight Blue thread bartacks",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-high-rise-wide-vintage-wash-jeans",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Runway Collection",
+      "modelName": "High-Rise Wide-Leg Vintage Wash Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/high-rise-wide-leg-vintage-jeans-p8018904.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Faded Blue",
+        "Washed Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-high-rise-wide-vintage-wash-jeans.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "high-rise wide-leg vintage wash jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Wide Leg",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Voluminous high-waisted denim silhouette showcasing sweeping fluid drape over statement boots",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-skinny-fit-stretch-indigo-jeans",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Essentials",
+      "modelName": "Skinny Fit Stretch Indigo Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/skinny-fit-stretch-indigo-jeans-p8018905.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Black Rinse",
+        "Dark Indigo Clean"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-skinny-fit-stretch-indigo-jeans.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "skinny fit stretch indigo denim jeans",
+        "denimWeightOz": 10.5,
+        "selvedge": false,
+        "fitCut": "Skinny Fit",
+        "riseType": "Low-to-Mid Rise",
+        "stretchPercentage": 3
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean-line skinny jeans utilizing high-recovery dual-core stretch denim yarn for shape retention",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-bootcut-denim-contrast-stitching",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Denim",
+      "modelName": "Bootcut Denim Jeans with Contrast Topstitching",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/bootcut-denim-contrast-stitching-p8018906.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Mid Vintage Blue",
+        "Raw Indigo"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-bootcut-denim-contrast-stitching.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "bootcut denim jeans with contrast topstitching",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Bootcut Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic bootcut silhouette highlighted by prominent tobacco gold contrast stitching across all seams",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-carpenter-pocket-heavy-twill-denim",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Country Collection",
+      "modelName": "Carpenter Pocket Heavy Twill Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/carpenter-heavy-twill-denim-jeans-p8018907.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Rinse Indigo",
+        "Ecru Drill"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-carpenter-pocket-heavy-twill-denim.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "carpenter pocket heavy twill denim jeans",
+        "denimWeightOz": 13.5,
+        "selvedge": false,
+        "fitCut": "Relaxed Carpenter Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Durable British workwear denim equipped with functional tool pockets and reinforced double-layered knees",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-cropped-kick-flare-raw-edge-jeans",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Womenswear",
+      "modelName": "Cropped Kick-Flare Raw Edge Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/cropped-kick-flare-raw-edge-jeans-p8018908.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Wash",
+        "Black Washed"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-cropped-kick-flare-raw-edge-jeans.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "cropped kick-flare raw edge denim jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Cropped Kick-Flare",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chic cropped kick-flare silhouette with raw frayed hem designed to display footwear",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-ekd-embroidered-pocket-slim-jeans",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Daniel Lee Collection",
+      "modelName": "EKD Embroidered Pocket Slim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/ekd-embroidered-pocket-slim-jeans-p8018909.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Blue Stone Wash",
+        "Black Clean"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-ekd-embroidered-pocket-slim-jeans.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "ekd embroidered pocket slim jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tailored five-pocket denim detailed with the historic Equestrian Knight Design embroidered in contrast thread",
+      "status": "staged"
+    },
+    {
+      "id": "burberry-dark-indigo-raw-selvedge-straight",
+      "canonicalBrand": "Burberry",
+      "displayBrand": "Burberry",
+      "productLine": "Heritage Denim",
+      "modelName": "Dark Indigo Raw Selvedge Straight Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.burberry.com/en-us/dark-indigo-raw-selvedge-straight-p8018910.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Unwashed Raw Indigo"
+      ],
+      "mediaSource": {
+        "url": "https://www.burberry.com/images/products/burberry-dark-indigo-raw-selvedge-straight.jpg",
+        "attribution": "Official catalog photography © Burberry"
+      },
+      "collectedAttributes": {
+        "brand": "burberry",
+        "modelName": "dark indigo raw selvedge straight jeans",
+        "denimWeightOz": 14,
+        "selvedge": true,
+        "fitCut": "Straight Fit",
+        "riseType": "Classic Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pure unwashed 14oz Japanese selvedge denim designed to develop personalized fades with extended wear",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-rtw-slim-fit-indigo-jeans",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Ready-To-Wear",
+      "modelName": "Valentino Ready-To-Wear Slim Fit Indigo Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/slim-fit-indigo-jeans-1V3DE011.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Indigo Rinse",
+        "Medium Blue Vintage"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-rtw-slim-fit-indigo-jeans.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "valentino ready-to-wear slim fit indigo jeans",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Impeccably tailored luxury Italian denim jeans with subtle VLogo embroidery on the coin pocket",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-vlogo-back-pocket-straight-jeans",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "VLogo Signature",
+      "modelName": "VLogo Signature Back Pocket Straight Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/vlogo-signature-straight-jeans-1V3DE012.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Wash Blue",
+        "Black Rinse"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-vlogo-back-pocket-straight-jeans.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "vlogo signature back pocket straight jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Straight Leg",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Distinguished by the stitched leather VLogo signature applique on the back right pocket",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-rockstud-rivet-stretch-denim",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Rockstud Collection",
+      "modelName": "Rockstud Rivet Detail Stretch Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/rockstud-rivet-stretch-jeans-1V3DE013.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black with Platinum Studs",
+        "Dark Blue with Ruthenium Studs"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-rockstud-rivet-stretch-denim.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "rockstud rivet detail stretch denim jeans",
+        "denimWeightOz": 11,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Low-to-Mid Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic Rockstud pyramid metal studs replacing traditional rivets along pockets and coin pocket",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-wide-leg-high-waisted-vintage-wash",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Runway Collection",
+      "modelName": "Wide Leg High-Waisted Vintage Washed Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/wide-leg-high-waisted-vintage-jeans-1V3DE014.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Sun-Faded Vintage Blue",
+        "Chalk White"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-wide-leg-high-waisted-vintage-wash.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "wide leg high-waisted vintage washed jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Wide Leg",
+        "riseType": "High-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Couture volume translated to denim with deep high-rise waist and pooling wide-leg hemline",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-loose-fit-14oz-denim-trousers",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Ready-To-Wear",
+      "modelName": "Loose Fit Heavyweight 14oz Denim Trousers",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/loose-fit-14oz-denim-trousers-1V3DE015.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Indigo",
+        "Washed Charcoal"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-loose-fit-14oz-denim-trousers.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "loose fit heavyweight 14oz denim trousers",
+        "denimWeightOz": 14,
+        "selvedge": true,
+        "fitCut": "Loose Straight Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavyweight 14oz rigid Italian denim tailored with trouser-like precision and pressed creases",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-tapered-crop-raw-indigo-jeans",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Modernist Denim",
+      "modelName": "Tapered Crop Raw Indigo 5-Pocket Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/tapered-crop-raw-indigo-jeans-1V3DE016.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Indigo Raw"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-tapered-crop-raw-indigo-jeans.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "tapered crop raw indigo 5-pocket jeans",
+        "denimWeightOz": 12,
+        "selvedge": true,
+        "fitCut": "Tapered Cropped Cut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crisp dark raw indigo denim featuring tailored cropped length and selvedge edge detail",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-flared-leg-1970s-denim-jeans",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Heritage Collection",
+      "modelName": "Flared Leg 1970s Silhouette Denim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/flared-leg-1970s-denim-jeans-1V3DE017.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Blue Faded",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-flared-leg-1970s-denim-jeans.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "flared leg 1970s silhouette denim jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Flared Bootcut",
+        "riseType": "High-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Homage to Valentino Garavani's 1970s jet-set tailoring with high-waisted flared cut",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-contrast-stitching-relaxed-jeans",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Casual Collection",
+      "modelName": "Contrast Stitching Relaxed Fit Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/contrast-stitching-relaxed-jeans-1V3DE018.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Blue with Ochre Stitching",
+        "Ecru with Brown Stitching"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-contrast-stitching-relaxed-jeans.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "contrast stitching relaxed fit jeans",
+        "denimWeightOz": 12.5,
+        "selvedge": false,
+        "fitCut": "Relaxed Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 0
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Highlighted by bold contrast topstitching that accentuates the architectural five-pocket pattern",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-bootcut-denim-v-detail",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Ready-To-Wear",
+      "modelName": "Bootcut Denim Trousers with V-Detail",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/bootcut-denim-v-detail-1V3DE019.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Medium Blue Wash",
+        "Charcoal Wash"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-bootcut-denim-v-detail.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "bootcut denim trousers with v-detail",
+        "denimWeightOz": 12,
+        "selvedge": false,
+        "fitCut": "Slim Bootcut",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 2
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek bootcut fit featuring signature metallic V-shaped buckle cinch at back waist",
+      "status": "staged"
+    },
+    {
+      "id": "valentino-distressed-slub-denim-slim-jeans",
+      "canonicalBrand": "Valentino",
+      "displayBrand": "Valentino",
+      "productLine": "Runway Distressed",
+      "modelName": "Distressed Slub Denim Slim Jeans",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.valentino.com/en-us/product/distressed-slub-denim-slim-jeans-1V3DE020.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Faded Blue with Slits"
+      ],
+      "mediaSource": {
+        "url": "https://www.valentino.com/images/products/valentino-distressed-slub-denim-slim-jeans.jpg",
+        "attribution": "Official catalog photography © Valentino"
+      },
+      "collectedAttributes": {
+        "brand": "valentino",
+        "modelName": "distressed slub denim slim jeans",
+        "denimWeightOz": 11.5,
+        "selvedge": false,
+        "fitCut": "Slim Fit",
+        "riseType": "Mid-Rise",
+        "stretchPercentage": 1
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hand-worked distressing with subtle whiskering and knee abrasions crafted in Italian workshops",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Jacob Cohën",
+      "leafKey": "denim",
+      "reason": "Jacob Cohën sartorial denim atelier in Veneto, Italy, produces 6 canonical ready-to-wear cuts (Bard, Nick, Bobby, Eduard, Kimberly, Scott).",
+      "officialSourceUrl": "https://jacobcohen.com/en-us/collections/men-jeans",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Bard (J688) Slim-Fit Comfort Stretch Jeans",
+        "Nick (J622) Low-Rise Slim Fit Jeans",
+        "Bobby Straight Leg Classic 5-Pocket Jeans",
+        "Eduard Regular Fit Selvedge Denim Jeans",
+        "Kimberly High-Rise Slim Cropped Jeans",
+        "Scott Relaxed Tapered Fit Selvedge Jeans"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "IT"
+    },
+    {
+      "brand": "Brunello Cucinelli",
+      "leafKey": "denim",
+      "reason": "Brunello Cucinelli Solomeo denim range comprises 5 tailored luxury cuts crafted with Japanese and Italian shuttle-loom selvedge fabrics.",
+      "officialSourceUrl": "https://www.brunellocucinelli.com/en-us/men/clothing/denim",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Traditional Fit Selvedge 13oz Denim Jeans",
+        "Leisure Fit Drawstring Waist Tapered Jeans",
+        "Slim Fit Comfort Denim 5-Pocket Jeans",
+        "High-Rise Wide-Leg Pleated Denim Trousers",
+        "Classic Straight Fit 12oz Denim Jeans"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "IT"
+    }
+  ]
+}

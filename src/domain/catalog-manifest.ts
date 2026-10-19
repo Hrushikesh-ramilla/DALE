@@ -49,7 +49,7 @@ const attributes = z
     capacityLitres: z.number().positive().max(10000).optional(),
   })
   .strict();
-const product = z
+const productBase = z
   .object({
     id: z.string().regex(/^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/),
     name: z.string().min(3).max(250),
@@ -88,24 +88,25 @@ const product = z
       .strict()
       .optional(),
   })
-  .strict()
-  .superRefine((value, context) => {
-    if (value.brand.toLowerCase() !== value.attributes.brand.toLowerCase())
-      context.addIssue({
-        code: "custom",
-        message: "Brand identity and normalized attributes must agree.",
-      });
-    if (value.evidence.review === "product_identity" && !value.comparisonOnly)
-      context.addIssue({
-        code: "custom",
-        message: "Identity-only records cannot become purchasable offers.",
-      });
-    if (value.evidence.review === "product_identity" && value.stock !== 0)
-      context.addIssue({
-        code: "custom",
-        message: "Identity-only stock must be zero.",
-      });
-  });
+  .strict();
+
+const product = productBase.superRefine((value, context) => {
+  if (value.brand.toLowerCase() !== value.attributes.brand.toLowerCase())
+    context.addIssue({
+      code: "custom",
+      message: "Brand identity and normalized attributes must agree.",
+    });
+  if (value.evidence.review === "product_identity" && !value.comparisonOnly)
+    context.addIssue({
+      code: "custom",
+      message: "Identity-only records cannot become purchasable offers.",
+    });
+  if (value.evidence.review === "product_identity" && value.stock !== 0)
+    context.addIssue({
+      code: "custom",
+      message: "Identity-only stock must be zero.",
+    });
+});
 export const catalogManifestSchema = z
   .object({
     schemaVersion: z.literal("catalog-manifest-v1"),
@@ -141,13 +142,32 @@ export type CatalogManifest = z.infer<typeof catalogManifestSchema>;
 export const manifestProducts = (manifest: CatalogManifest): Product[] =>
   manifest.products;
 
-const productV2 = product.extend({
+const productV2Base = productBase.extend({
+  attributes: attributes.passthrough(),
   leafType: z.enum(leafTypeKeys).optional(),
   modelName: z.string().min(1).max(120).optional(),
   skuVariant: z.string().max(80).optional(),
   revisionId: z.string().max(80).optional(),
   accessoryProtocols: z.record(z.string(), z.any()).optional(),
   deviceCompatibility: z.array(z.string().max(80)).optional(),
+});
+
+const productV2 = productV2Base.superRefine((value, context) => {
+  if (value.brand.toLowerCase() !== value.attributes.brand.toLowerCase())
+    context.addIssue({
+      code: "custom",
+      message: "Brand identity and normalized attributes must agree.",
+    });
+  if (value.evidence.review === "product_identity" && !value.comparisonOnly)
+    context.addIssue({
+      code: "custom",
+      message: "Identity-only records cannot become purchasable offers.",
+    });
+  if (value.evidence.review === "product_identity" && value.stock !== 0)
+    context.addIssue({
+      code: "custom",
+      message: "Identity-only stock must be zero.",
+    });
 });
 export type ProductV2 = z.infer<typeof productV2>;
 

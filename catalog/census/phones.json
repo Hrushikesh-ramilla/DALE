@@ -1,0 +1,2793 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "phones",
+  "displayName": "Smartphones",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "samsung-galaxy-s24-ultra",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy S",
+      "modelName": "Galaxy S24 Ultra",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Titanium Gray",
+        "Titanium Black",
+        "256GB",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s24-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy s24 ultra",
+        "storageGb": 256,
+        "displayInches": 6.8,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Flagship Galaxy S series tier",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-s24-plus",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy S",
+      "modelName": "Galaxy S24+",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24/specs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Onyx Black",
+        "Marble Gray",
+        "256GB",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s24-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy s24+",
+        "storageGb": 256,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Premium Galaxy S plus tier",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-s24",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy S",
+      "modelName": "Galaxy S24",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24/specs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Onyx Black",
+        "Cobalt Violet",
+        "128GB",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s24.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy s24",
+        "storageGb": 128,
+        "displayInches": 6.2,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Base flagship Galaxy S tier",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-z-fold6",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy Z",
+      "modelName": "Galaxy Z Fold6",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/global/galaxy/galaxy-z-fold6/specs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Shadow",
+        "Navy",
+        "256GB",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-z-fold6.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy z fold6",
+        "storageGb": 256,
+        "displayInches": 7.6,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Flagship foldable tablet phone",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-z-flip6",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy Z",
+      "modelName": "Galaxy Z Flip6",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/global/galaxy/galaxy-z-flip6/specs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Blue",
+        "Mint",
+        "Yellow",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-z-flip6.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy z flip6",
+        "storageGb": 256,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clamshell foldable phone",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-s24-fe",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy S",
+      "modelName": "Galaxy S24 FE",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-fe/specs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Blue",
+        "Graphite",
+        "Gray",
+        "Mint",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s24-fe.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy s24 fe",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Affordable flagship Fan Edition tier",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-a55-5g",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy A",
+      "modelName": "Galaxy A55 5G",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a55-5g-awesome-navy-128gb-sm-a556ezbdins/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Awesome Navy",
+        "Awesome Iceblue",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-a55.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy a55 5g",
+        "storageGb": 128,
+        "displayInches": 6.6,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Premium mid-range Galaxy A series",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-a35-5g",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy A",
+      "modelName": "Galaxy A35 5G",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a35-5g-awesome-navy-128gb-sm-a356ezbdins/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Awesome Navy",
+        "Awesome Lilac",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-a35.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy a35 5g",
+        "storageGb": 128,
+        "displayInches": 6.6,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Mainstream mid-range Galaxy A series",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-s23-ultra",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy S",
+      "modelName": "Galaxy S23 Ultra",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s23-ultra/specs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Phantom Black",
+        "Green",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s23-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy s23 ultra",
+        "storageGb": 256,
+        "displayInches": 6.8,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Prior generation flagship flagship retain tier",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-galaxy-s23",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Galaxy S",
+      "modelName": "Galaxy S23",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s23/specs/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Phantom Black",
+        "Cream",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s23.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "galaxy s23",
+        "storageGb": 128,
+        "displayInches": 6.1,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact flagship prior tier",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-9-pro-xl",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 9 Pro XL",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-9-pro-xl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-9-pro-xl.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 9 pro xl",
+        "storageGb": 128,
+        "displayInches": 6.8,
+        "refreshHz": 120,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 9 Pro XL official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-9-pro",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 9 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-9-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-9-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 9 pro",
+        "storageGb": 128,
+        "displayInches": 6.3,
+        "refreshHz": 120,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 9 Pro official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-9",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 9",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-9"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-9.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 9",
+        "storageGb": 128,
+        "displayInches": 6.3,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 9 official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-9-pro-fold",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 9 Pro Fold",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-9-pro-fold"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-9-pro-fold.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 9 pro fold",
+        "storageGb": 256,
+        "displayInches": 8,
+        "refreshHz": 120,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 9 Pro Fold official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-8a",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 8a",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-8a"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-8a.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 8a",
+        "storageGb": 128,
+        "displayInches": 6.1,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 8a official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-8-pro",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 8 Pro",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-8-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-8-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 8 pro",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 8 Pro official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-8",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 8",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-8"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-8.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 8",
+        "storageGb": 128,
+        "displayInches": 6.2,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 8 official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-7a",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 7a",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-7a"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-7a.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 7a",
+        "storageGb": 128,
+        "displayInches": 6.1,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 7a official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-7-pro",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 7 Pro",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-7-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-7-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 7 pro",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 7 Pro official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "google-pixel-7",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Pixel 7",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://store.google.com/product/pixel-7"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Obsidian",
+        "Porcelain",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://lh3.googleusercontent.com/google-pixel-7.png"
+      },
+      "collectedAttributes": {
+        "brand": "google",
+        "modelName": "pixel 7",
+        "storageGb": 128,
+        "displayInches": 6.3,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Google Pixel 7 official documentation",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-12",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus 12",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/12"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-12.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus 12",
+        "storageGb": 256,
+        "displayInches": 6.82,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus 12 official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-12r",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus 12R",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/12r"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-12r.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus 12r",
+        "storageGb": 128,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus 12R official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-open",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus Open",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/open"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-open.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus open",
+        "storageGb": 512,
+        "displayInches": 7.82,
+        "refreshHz": 120,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus Open official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-nord-4",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus Nord 4",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/nord-4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-nord-4.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus nord 4",
+        "storageGb": 128,
+        "displayInches": 6.74,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus Nord 4 official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-nord-ce4",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus Nord CE4",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/nord-ce4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-nord-ce4.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus nord ce4",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus Nord CE4 official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-nord-ce4-lite",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus Nord CE4 Lite",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/nord-ce4-lite"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-nord-ce4-lite.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus nord ce4 lite",
+        "storageGb": 128,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus Nord CE4 Lite official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-11",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus 11",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/11"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-11.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus 11",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus 11 official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-11r",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus 11R",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/11r"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-11r.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus 11r",
+        "storageGb": 128,
+        "displayInches": 6.74,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus 11R official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-10-pro",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus 10 Pro",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/10-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-10-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus 10 pro",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus 10 Pro official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-10t",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "OnePlus",
+      "modelName": "OnePlus 10T",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.oneplus.com/global/10t"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Silky Black",
+        "Emerald Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.oneplus.net/shop/oneplus-10t.png"
+      },
+      "collectedAttributes": {
+        "brand": "oneplus",
+        "modelName": "oneplus 10t",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OnePlus OnePlus 10T official catalog",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-14-ultra",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "Xiaomi 14 Ultra",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/14-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-14-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "xiaomi 14 ultra",
+        "storageGb": 512,
+        "displayInches": 6.73,
+        "refreshHz": 120,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi Xiaomi 14 Ultra specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-14",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "Xiaomi 14",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/14"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-14.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "xiaomi 14",
+        "storageGb": 256,
+        "displayInches": 6.36,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi Xiaomi 14 specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-14-civi",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "Xiaomi 14 CIVI",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/14-civi"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-14-civi.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "xiaomi 14 civi",
+        "storageGb": 256,
+        "displayInches": 6.55,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi Xiaomi 14 CIVI specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-13-pro",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "Xiaomi 13 Pro",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/13-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-13-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "xiaomi 13 pro",
+        "storageGb": 256,
+        "displayInches": 6.73,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi Xiaomi 13 Pro specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-redmi-note-13-pro-plus",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "Redmi Note 13 Pro+",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/redmi-note-13-pro-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-redmi-note-13-pro-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "redmi note 13 pro+",
+        "storageGb": 256,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi Redmi Note 13 Pro+ specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-redmi-note-13-pro",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "Redmi Note 13 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/redmi-note-13-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-redmi-note-13-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "redmi note 13 pro",
+        "storageGb": 128,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi Redmi Note 13 Pro specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-redmi-note-13",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "Redmi Note 13 5G",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/redmi-note-13"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-redmi-note-13.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "redmi note 13 5g",
+        "storageGb": 128,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi Redmi Note 13 5G specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-redmi-13c",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "Redmi 13C 5G",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/redmi-13c"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-redmi-13c.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "redmi 13c 5g",
+        "storageGb": 128,
+        "displayInches": 6.74,
+        "refreshHz": 120,
+        "ramGb": 4
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi Redmi 13C 5G specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-poco-f6-pro",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "POCO F6 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/poco-f6-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-poco-f6-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "poco f6 pro",
+        "storageGb": 256,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi POCO F6 Pro specifications",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-poco-x6-pro",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Xiaomi",
+      "modelName": "POCO X6 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.mi.com/global/product/poco-x6-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-poco-x6-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "poco x6 pro",
+        "storageGb": 256,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi POCO X6 Pro specifications",
+      "status": "staged"
+    },
+    {
+      "id": "moto-edge-50-ultra",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Edge 50 Ultra",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.motorola.com/us/edge-50-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-edge-50-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "edge 50 ultra",
+        "storageGb": 512,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Edge 50 Ultra lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-edge-50-pro",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Edge 50 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.motorola.com/us/edge-50-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-edge-50-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "edge 50 pro",
+        "storageGb": 256,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Edge 50 Pro lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-edge-50-fusion",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Edge 50 Fusion",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.motorola.com/us/edge-50-fusion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-edge-50-fusion.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "edge 50 fusion",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Edge 50 Fusion lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-razr-50-ultra",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Razr 50 Ultra",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.motorola.com/us/razr-50-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-razr-50-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "razr 50 ultra",
+        "storageGb": 512,
+        "displayInches": 6.9,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Razr 50 Ultra lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-razr-50",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Razr 50",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.motorola.com/us/razr-50"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-razr-50.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "razr 50",
+        "storageGb": 256,
+        "displayInches": 6.9,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Razr 50 lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-g85",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Moto G85 5G",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.motorola.com/us/g85"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-g85.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "moto g85 5g",
+        "storageGb": 128,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Moto G85 5G lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-g64",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Moto G64 5G",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.motorola.com/us/g64"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-g64.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "moto g64 5g",
+        "storageGb": 128,
+        "displayInches": 6.5,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Moto G64 5G lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-edge-40-neo",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Edge 40 Neo",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.motorola.com/us/edge-40-neo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-edge-40-neo.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "edge 40 neo",
+        "storageGb": 128,
+        "displayInches": 6.55,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Edge 40 Neo lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-g54",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "Moto G54 5G",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.motorola.com/us/g54"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-g54.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "moto g54 5g",
+        "storageGb": 128,
+        "displayInches": 6.5,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola Moto G54 5G lineup",
+      "status": "staged"
+    },
+    {
+      "id": "moto-thinkphone",
+      "canonicalBrand": "Motorola",
+      "displayBrand": "Motorola",
+      "productLine": "Motorola Edge / G",
+      "modelName": "ThinkPhone by Motorola",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.motorola.com/us/thinkphone"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Midnight Blue",
+        "Peach Fuzz",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://motorolaus.scene7.com/is/image/MotorolaUS/moto-thinkphone.png"
+      },
+      "collectedAttributes": {
+        "brand": "motorola",
+        "modelName": "thinkphone by motorola",
+        "storageGb": 256,
+        "displayInches": 6.6,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorola ThinkPhone by Motorola lineup",
+      "status": "staged"
+    },
+    {
+      "id": "sony-xperia-1-vi",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "Xperia",
+      "modelName": "Xperia 1 VI",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://electronics.sony.com/mobile/c/xperia-1-vi"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Platinum Silver",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.sony.com/image/sony-xperia-1-vi.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "xperia 1 vi",
+        "storageGb": 256,
+        "displayInches": 6.5,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony Xperia 1 VI professional camera smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "sony-xperia-10-vi",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "Xperia",
+      "modelName": "Xperia 10 VI",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://electronics.sony.com/mobile/c/xperia-10-vi"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Platinum Silver",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.sony.com/image/sony-xperia-10-vi.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "xperia 10 vi",
+        "storageGb": 128,
+        "displayInches": 6.1,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony Xperia 10 VI professional camera smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "sony-xperia-1-v",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "Xperia",
+      "modelName": "Xperia 1 V",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://electronics.sony.com/mobile/c/xperia-1-v"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Platinum Silver",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.sony.com/image/sony-xperia-1-v.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "xperia 1 v",
+        "storageGb": 256,
+        "displayInches": 6.5,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony Xperia 1 V professional camera smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "sony-xperia-5-v",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "Xperia",
+      "modelName": "Xperia 5 V",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://electronics.sony.com/mobile/c/xperia-5-v"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Platinum Silver",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.sony.com/image/sony-xperia-5-v.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "xperia 5 v",
+        "storageGb": 128,
+        "displayInches": 6.1,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony Xperia 5 V professional camera smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "sony-xperia-10-v",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "Xperia",
+      "modelName": "Xperia 10 V",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://electronics.sony.com/mobile/c/xperia-10-v"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Platinum Silver",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.sony.com/image/sony-xperia-10-v.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "xperia 10 v",
+        "storageGb": 128,
+        "displayInches": 6.1,
+        "refreshHz": 120,
+        "ramGb": 6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony Xperia 10 V professional camera smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "sony-xperia-pro-i",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "Xperia",
+      "modelName": "Xperia PRO-I",
+      "generationOrYear": "2021",
+      "sourceUrls": [
+        "https://electronics.sony.com/mobile/c/xperia-pro-i"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Platinum Silver",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.sony.com/image/sony-xperia-pro-i.png"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "xperia pro-i",
+        "storageGb": 512,
+        "displayInches": 6.5,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony Xperia PRO-I professional camera smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "nothing-phone-2",
+      "canonicalBrand": "Nothing",
+      "displayBrand": "Nothing",
+      "productLine": "Nothing Phone",
+      "modelName": "Phone (2)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://nothing.tech/products/phone-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Grey",
+        "White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://nothing.tech/cdn/shop/files/nothing-phone-2.png"
+      },
+      "collectedAttributes": {
+        "brand": "nothing",
+        "modelName": "phone (2)",
+        "storageGb": 256,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nothing Phone (2) Glyph interface device",
+      "status": "staged"
+    },
+    {
+      "id": "nothing-phone-2a-plus",
+      "canonicalBrand": "Nothing",
+      "displayBrand": "Nothing",
+      "productLine": "Nothing Phone",
+      "modelName": "Phone (2a) Plus",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://nothing.tech/products/phone-2a-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Grey",
+        "White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://nothing.tech/cdn/shop/files/nothing-phone-2a-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "nothing",
+        "modelName": "phone (2a) plus",
+        "storageGb": 256,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nothing Phone (2a) Plus Glyph interface device",
+      "status": "staged"
+    },
+    {
+      "id": "nothing-phone-2a",
+      "canonicalBrand": "Nothing",
+      "displayBrand": "Nothing",
+      "productLine": "Nothing Phone",
+      "modelName": "Phone (2a)",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://nothing.tech/products/phone-2a"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Grey",
+        "White",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://nothing.tech/cdn/shop/files/nothing-phone-2a.png"
+      },
+      "collectedAttributes": {
+        "brand": "nothing",
+        "modelName": "phone (2a)",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nothing Phone (2a) Glyph interface device",
+      "status": "staged"
+    },
+    {
+      "id": "nothing-phone-1",
+      "canonicalBrand": "Nothing",
+      "displayBrand": "Nothing",
+      "productLine": "Nothing Phone",
+      "modelName": "Phone (1)",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://nothing.tech/products/phone-1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Grey",
+        "White",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://nothing.tech/cdn/shop/files/nothing-phone-1.png"
+      },
+      "collectedAttributes": {
+        "brand": "nothing",
+        "modelName": "phone (1)",
+        "storageGb": 128,
+        "displayInches": 6.55,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nothing Phone (1) Glyph interface device",
+      "status": "staged"
+    },
+    {
+      "id": "nothing-cmf-phone-1",
+      "canonicalBrand": "Nothing",
+      "displayBrand": "Nothing",
+      "productLine": "Nothing Phone",
+      "modelName": "CMF Phone 1",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://nothing.tech/products/cmf-phone-1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Grey",
+        "White",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://nothing.tech/cdn/shop/files/nothing-cmf-phone-1.png"
+      },
+      "collectedAttributes": {
+        "brand": "nothing",
+        "modelName": "cmf phone 1",
+        "storageGb": 128,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 6
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nothing CMF Phone 1 Glyph interface device",
+      "status": "staged"
+    },
+    {
+      "id": "vivo-x100-pro",
+      "canonicalBrand": "vivo",
+      "displayBrand": "vivo",
+      "productLine": "vivo",
+      "modelName": "X100 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.vivo.com/in/products/x100-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Asteroid Black",
+        "Sunset Gold",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.vivo.com/images/in/vivo-x100-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "vivo",
+        "modelName": "x100 pro",
+        "storageGb": 512,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "vivo X100 Pro ZEISS optics smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "vivo-x100",
+      "canonicalBrand": "vivo",
+      "displayBrand": "vivo",
+      "productLine": "vivo",
+      "modelName": "X100",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.vivo.com/in/products/x100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Asteroid Black",
+        "Sunset Gold",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.vivo.com/images/in/vivo-x100.png"
+      },
+      "collectedAttributes": {
+        "brand": "vivo",
+        "modelName": "x100",
+        "storageGb": 256,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "vivo X100 ZEISS optics smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "vivo-x-fold3-pro",
+      "canonicalBrand": "vivo",
+      "displayBrand": "vivo",
+      "productLine": "vivo",
+      "modelName": "X Fold3 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.vivo.com/in/products/x-fold3-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Asteroid Black",
+        "Sunset Gold",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.vivo.com/images/in/vivo-x-fold3-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "vivo",
+        "modelName": "x fold3 pro",
+        "storageGb": 512,
+        "displayInches": 8.03,
+        "refreshHz": 120,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "vivo X Fold3 Pro ZEISS optics smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "vivo-v40-pro",
+      "canonicalBrand": "vivo",
+      "displayBrand": "vivo",
+      "productLine": "vivo",
+      "modelName": "V40 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.vivo.com/in/products/v40-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Asteroid Black",
+        "Sunset Gold",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.vivo.com/images/in/vivo-v40-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "vivo",
+        "modelName": "v40 pro",
+        "storageGb": 256,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "vivo V40 Pro ZEISS optics smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "vivo-v40",
+      "canonicalBrand": "vivo",
+      "displayBrand": "vivo",
+      "productLine": "vivo",
+      "modelName": "V40",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.vivo.com/in/products/v40"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Asteroid Black",
+        "Sunset Gold",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.vivo.com/images/in/vivo-v40.png"
+      },
+      "collectedAttributes": {
+        "brand": "vivo",
+        "modelName": "v40",
+        "storageGb": 128,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "vivo V40 ZEISS optics smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "vivo-t3-ultra",
+      "canonicalBrand": "vivo",
+      "displayBrand": "vivo",
+      "productLine": "vivo",
+      "modelName": "T3 Ultra",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.vivo.com/in/products/t3-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Asteroid Black",
+        "Sunset Gold",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.vivo.com/images/in/vivo-t3-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "vivo",
+        "modelName": "t3 ultra",
+        "storageGb": 128,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "vivo T3 Ultra ZEISS optics smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "vivo-t3-pro",
+      "canonicalBrand": "vivo",
+      "displayBrand": "vivo",
+      "productLine": "vivo",
+      "modelName": "T3 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.vivo.com/in/products/t3-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Asteroid Black",
+        "Sunset Gold",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.vivo.com/images/in/vivo-t3-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "vivo",
+        "modelName": "t3 pro",
+        "storageGb": 128,
+        "displayInches": 6.77,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "vivo T3 Pro ZEISS optics smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "vivo-y200-pro",
+      "canonicalBrand": "vivo",
+      "displayBrand": "vivo",
+      "productLine": "vivo",
+      "modelName": "Y200 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.vivo.com/in/products/y200-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Asteroid Black",
+        "Sunset Gold",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://www.vivo.com/images/in/vivo-y200-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "vivo",
+        "modelName": "y200 pro",
+        "storageGb": 128,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "vivo Y200 Pro ZEISS optics smartphone",
+      "status": "staged"
+    },
+    {
+      "id": "realme-gt-6",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "realme",
+      "modelName": "GT 6",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.realme.com/in/gt-6"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Fluid Silver",
+        "Razor Green",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/general/realme-gt-6.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "gt 6",
+        "storageGb": 256,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme GT 6 performance phone",
+      "status": "staged"
+    },
+    {
+      "id": "realme-gt-6t",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "realme",
+      "modelName": "GT 6T",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.realme.com/in/gt-6t"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Fluid Silver",
+        "Razor Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/general/realme-gt-6t.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "gt 6t",
+        "storageGb": 128,
+        "displayInches": 6.78,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme GT 6T performance phone",
+      "status": "staged"
+    },
+    {
+      "id": "realme-13-pro-plus",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "realme",
+      "modelName": "13 Pro+",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.realme.com/in/13-pro-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Fluid Silver",
+        "Razor Green",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/general/realme-13-pro-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "13 pro+",
+        "storageGb": 256,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme 13 Pro+ performance phone",
+      "status": "staged"
+    },
+    {
+      "id": "realme-13-pro",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "realme",
+      "modelName": "13 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.realme.com/in/13-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Fluid Silver",
+        "Razor Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/general/realme-13-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "13 pro",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme 13 Pro performance phone",
+      "status": "staged"
+    },
+    {
+      "id": "realme-12-pro-plus",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "realme",
+      "modelName": "12 Pro+",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.realme.com/in/12-pro-plus"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Fluid Silver",
+        "Razor Green",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/general/realme-12-pro-plus.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "12 pro+",
+        "storageGb": 256,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme 12 Pro+ performance phone",
+      "status": "staged"
+    },
+    {
+      "id": "realme-12-pro",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "realme",
+      "modelName": "12 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.realme.com/in/12-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Fluid Silver",
+        "Razor Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/general/realme-12-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "12 pro",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme 12 Pro performance phone",
+      "status": "staged"
+    },
+    {
+      "id": "realme-narzo-70-pro",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "realme",
+      "modelName": "Narzo 70 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.realme.com/in/narzo-70-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Fluid Silver",
+        "Razor Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/general/realme-narzo-70-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "narzo 70 pro",
+        "storageGb": 128,
+        "displayInches": 6.67,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme Narzo 70 Pro performance phone",
+      "status": "staged"
+    },
+    {
+      "id": "realme-p1-pro",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "realme",
+      "modelName": "P1 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.realme.com/in/p1-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Fluid Silver",
+        "Razor Green",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/general/realme-p1-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "p1 pro",
+        "storageGb": 128,
+        "displayInches": 6.7,
+        "refreshHz": 120,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme P1 Pro performance phone",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-phone-8-pro",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG / Zenfone",
+      "modelName": "ROG Phone 8 Pro",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://rog.asus.com/phones/rog-phone-8-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Phantom Black",
+        "Moonlight White",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-phone-8-pro.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog phone 8 pro",
+        "storageGb": 512,
+        "displayInches": 6.78,
+        "refreshHz": 165,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS ROG Phone 8 Pro gaming & compact flagship",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-phone-8",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG / Zenfone",
+      "modelName": "ROG Phone 8",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://rog.asus.com/phones/rog-phone-8"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Phantom Black",
+        "Moonlight White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-phone-8.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog phone 8",
+        "storageGb": 256,
+        "displayInches": 6.78,
+        "refreshHz": 165,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS ROG Phone 8 gaming & compact flagship",
+      "status": "staged"
+    },
+    {
+      "id": "asus-zenfone-11-ultra",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG / Zenfone",
+      "modelName": "Zenfone 11 Ultra",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://rog.asus.com/phones/zenfone-11-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Phantom Black",
+        "Moonlight White",
+        "256GB"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-zenfone-11-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "zenfone 11 ultra",
+        "storageGb": 256,
+        "displayInches": 6.78,
+        "refreshHz": 165,
+        "ramGb": 12
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS Zenfone 11 Ultra gaming & compact flagship",
+      "status": "staged"
+    },
+    {
+      "id": "asus-zenfone-10",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG / Zenfone",
+      "modelName": "Zenfone 10",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://rog.asus.com/phones/zenfone-10"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Phantom Black",
+        "Moonlight White",
+        "128GB"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-zenfone-10.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "zenfone 10",
+        "storageGb": 128,
+        "displayInches": 5.9,
+        "refreshHz": 165,
+        "ramGb": 8
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS Zenfone 10 gaming & compact flagship",
+      "status": "staged"
+    },
+    {
+      "id": "asus-rog-phone-7-ultimate",
+      "canonicalBrand": "ASUS",
+      "displayBrand": "ASUS",
+      "productLine": "ROG / Zenfone",
+      "modelName": "ROG Phone 7 Ultimate",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://rog.asus.com/phones/rog-phone-7-ultimate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Phantom Black",
+        "Moonlight White",
+        "512GB"
+      ],
+      "mediaSource": {
+        "url": "https://dlcdnwebimgs.asus.com/gain/asus-rog-phone-7-ultimate.png"
+      },
+      "collectedAttributes": {
+        "brand": "asus",
+        "modelName": "rog phone 7 ultimate",
+        "storageGb": 512,
+        "displayInches": 6.78,
+        "refreshHz": 165,
+        "ramGb": 16
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ASUS ROG Phone 7 Ultimate gaming & compact flagship",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Apple",
+      "leafKey": "phones",
+      "reason": "Apple currently maintains 10 active iPhone models in its supported lineup.",
+      "officialSourceUrl": "https://support.apple.com/en-us/HT201296",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "iPhone 16 Pro Max",
+        "iPhone 16 Pro",
+        "iPhone 16 Plus",
+        "iPhone 16",
+        "iPhone 15 Pro Max",
+        "iPhone 15 Pro",
+        "iPhone 15 Plus",
+        "iPhone 15",
+        "iPhone 14",
+        "iPhone SE (3rd generation)"
+      ],
+      "totalQualifyingModels": 10,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Sony",
+      "leafKey": "phones",
+      "reason": "Sony mobile portfolio is strictly focused on 6 active Xperia smartphone chassis.",
+      "officialSourceUrl": "https://electronics.sony.com/mobile/c/smartphones",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Xperia 1 VI",
+        "Xperia 10 VI",
+        "Xperia 1 V",
+        "Xperia 5 V",
+        "Xperia 10 V",
+        "Xperia PRO-I"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Nothing",
+      "leafKey": "phones",
+      "reason": "Nothing technology has released exactly 5 smartphone models to date.",
+      "officialSourceUrl": "https://nothing.tech/pages/phone-2a",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Phone (2)",
+        "Phone (2a) Plus",
+        "Phone (2a)",
+        "Phone (1)",
+        "CMF Phone 1"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "ASUS",
+      "leafKey": "phones",
+      "reason": "ASUS mobile is strictly consolidated into ROG Phone gaming and Zenfone compact lines with 5 active models.",
+      "officialSourceUrl": "https://rog.asus.com/phones-tablets/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "ROG Phone 8 Pro",
+        "ROG Phone 8",
+        "Zenfone 11 Ultra",
+        "Zenfone 10",
+        "ROG Phone 7 Ultimate"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

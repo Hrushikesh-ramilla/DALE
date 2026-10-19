@@ -1,0 +1,1941 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "power-banks",
+  "displayName": "Power Banks & Portable Battery Packs",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "ambrane-stylo-20k",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Stylo / Powerlit",
+      "modelName": "Stylo 20K 20000mAh 20W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/stylo-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Green",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/cdn/shop/products/ambrane-stylo-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "stylo 20k 20000mah 20w",
+        "capacityMah": 20000,
+        "maxOutputWatts": 20,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 410,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane value fast charging battery pack Stylo 20K 20000mAh 20W",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-stylo-10k",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Stylo / Powerlit",
+      "modelName": "Stylo 10K 10000mAh 20W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/stylo-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Green",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/cdn/shop/products/ambrane-stylo-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "stylo 10k 10000mah 20w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 20,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 230,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane value fast charging battery pack Stylo 10K 10000mAh 20W",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-powerlit-xl",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Stylo / Powerlit",
+      "modelName": "Powerlit XL 20000mAh 22.5W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/powerlit-xl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Green",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/cdn/shop/products/ambrane-powerlit-xl.png"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "powerlit xl 20000mah 22.5w",
+        "capacityMah": 20000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 420,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane value fast charging battery pack Powerlit XL 20000mAh 22.5W",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-powerlit-ultra",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Stylo / Powerlit",
+      "modelName": "Powerlit Ultra 25000mAh 100W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/powerlit-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Green",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/cdn/shop/products/ambrane-powerlit-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "powerlit ultra 25000mah 100w",
+        "capacityMah": 25000,
+        "maxOutputWatts": 100,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 520,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane value fast charging battery pack Powerlit Ultra 25000mAh 100W",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-aeroglow-10k",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Stylo / Powerlit",
+      "modelName": "AeroGlow 10000mAh 22.5W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/aeroglow-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Green",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/cdn/shop/products/ambrane-aeroglow-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "aeroglow 10000mah 22.5w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 220,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane value fast charging battery pack AeroGlow 10000mAh 22.5W",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-stylo-pro-27k",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Stylo / Powerlit",
+      "modelName": "Stylo Pro 27000mAh 65W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/stylo-pro-27k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Green",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/cdn/shop/products/ambrane-stylo-pro-27k.png"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "stylo pro 27000mah 65w",
+        "capacityMah": 27000,
+        "maxOutputWatts": 65,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 550,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane value fast charging battery pack Stylo Pro 27000mAh 65W",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-powerlit-45w",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Stylo / Powerlit",
+      "modelName": "Powerlit 45W 20000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/powerlit-45w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Green",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/cdn/shop/products/ambrane-powerlit-45w.png"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "powerlit 45w 20000mah",
+        "capacityMah": 20000,
+        "maxOutputWatts": 45,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 430,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane value fast charging battery pack Powerlit 45W 20000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-luxcell-b-10k",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Luxcell / Power Brick",
+      "modelName": "Luxcell B 10000mAh 22.5W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/luxcell-b-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/cdn/shop/products/portronics-luxcell-b-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "luxcell b 10000mah 22.5w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 210,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics portable power bank Luxcell B 10000mAh 22.5W",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-luxcell-wireless-10k",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Luxcell / Power Brick",
+      "modelName": "Luxcell Wireless 10000mAh 15W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/luxcell-wireless-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/cdn/shop/products/portronics-luxcell-wireless-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "luxcell wireless 10000mah 15w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 225,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics portable power bank Luxcell Wireless 10000mAh 15W",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-power-brick-ii",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Luxcell / Power Brick",
+      "modelName": "Power Brick II 10000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/power-brick-ii"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/cdn/shop/products/portronics-power-brick-ii.png"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "power brick ii 10000mah",
+        "capacityMah": 10000,
+        "maxOutputWatts": 12,
+        "pdSupported": false,
+        "portCount": 2,
+        "weightGrams": 220,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics portable power bank Power Brick II 10000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-power-45-20k",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Luxcell / Power Brick",
+      "modelName": "Power 45 20000mAh 45W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/power-45-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/cdn/shop/products/portronics-power-45-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "power 45 20000mah 45w",
+        "capacityMah": 20000,
+        "maxOutputWatts": 45,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 430,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics portable power bank Power 45 20000mAh 45W",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-ampcharge-65w",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Luxcell / Power Brick",
+      "modelName": "AmpCharge 20000mAh 65W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/ampcharge-65w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/cdn/shop/products/portronics-ampcharge-65w.png"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "ampcharge 20000mah 65w",
+        "capacityMah": 20000,
+        "maxOutputWatts": 65,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 460,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics portable power bank AmpCharge 20000mAh 65W",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-power-bank-20k",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Luxcell / Power Brick",
+      "modelName": "Power Bank 20000mAh 22.5W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/power-bank-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/cdn/shop/products/portronics-power-bank-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "power bank 20000mah 22.5w",
+        "capacityMah": 20000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 420,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics portable power bank Power Bank 20000mAh 22.5W",
+      "status": "staged"
+    },
+    {
+      "id": "anker-prime-27650mah-250w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Prime / MagGo / PowerCore",
+      "modelName": "Prime 27650mAh (250W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/prime-27650mah-250w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/anker/anker-prime-27650mah-250w.png"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "prime 27650mah (250w)",
+        "capacityMah": 27650,
+        "maxOutputWatts": 250,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 665,
+        "flightApproved": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker high-wattage battery pack Prime 27650mAh (250W)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-prime-20000mah-200w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Prime / MagGo / PowerCore",
+      "modelName": "Prime 20000mAh (200W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/prime-20000mah-200w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/anker/anker-prime-20000mah-200w.png"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "prime 20000mah (200w)",
+        "capacityMah": 20000,
+        "maxOutputWatts": 200,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 540,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker high-wattage battery pack Prime 20000mAh (200W)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-prime-12000mah-130w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Prime / MagGo / PowerCore",
+      "modelName": "Prime 12000mAh (130W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/prime-12000mah-130w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/anker/anker-prime-12000mah-130w.png"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "prime 12000mah (130w)",
+        "capacityMah": 12000,
+        "maxOutputWatts": 130,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 360,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker high-wattage battery pack Prime 12000mAh (130W)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-737-power-bank-140w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Prime / MagGo / PowerCore",
+      "modelName": "737 Power Bank (PowerCore 24K 140W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/737-power-bank-140w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/anker/anker-737-power-bank-140w.png"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "737 power bank (powercore 24k 140w)",
+        "capacityMah": 24000,
+        "maxOutputWatts": 140,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 630,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker high-wattage battery pack 737 Power Bank (PowerCore 24K 140W)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-533-power-bank-30w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Prime / MagGo / PowerCore",
+      "modelName": "533 Power Bank 30W 10000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/533-power-bank-30w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/anker/anker-533-power-bank-30w.png"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "533 power bank 30w 10000mah",
+        "capacityMah": 10000,
+        "maxOutputWatts": 30,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 215,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker high-wattage battery pack 533 Power Bank 30W 10000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "anker-maggo-10000mah-qi2",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Prime / MagGo / PowerCore",
+      "modelName": "MagGo Power Bank 10000mAh (Qi2 15W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/maggo-10000mah-qi2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/anker/anker-maggo-10000mah-qi2.png"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "maggo power bank 10000mah (qi2 15w)",
+        "capacityMah": 10000,
+        "maxOutputWatts": 27,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 250,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker high-wattage battery pack MagGo Power Bank 10000mAh (Qi2 15W)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-325-power-bank-20k",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Prime / MagGo / PowerCore",
+      "modelName": "325 Power Bank 20000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/325-power-bank-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/anker/anker-325-power-bank-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "325 power bank 20000mah",
+        "capacityMah": 20000,
+        "maxOutputWatts": 15,
+        "pdSupported": false,
+        "portCount": 2,
+        "weightGrams": 465,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker high-wattage battery pack 325 Power Bank 20000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-nexode-145w-25k",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode",
+      "modelName": "Nexode 145W 25000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/nexode-145w-25k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Space Gray",
+        "Midnight Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-nexode-145w-25k.png"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "nexode 145w 25000mah",
+        "capacityMah": 25000,
+        "maxOutputWatts": 145,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 505,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN Nexode PD 3.1 power bank Nexode 145W 25000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-nexode-100w-20k",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode",
+      "modelName": "Nexode 100W 20000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/nexode-100w-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Space Gray",
+        "Midnight Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-nexode-100w-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "nexode 100w 20000mah",
+        "capacityMah": 20000,
+        "maxOutputWatts": 100,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 420,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN Nexode PD 3.1 power bank Nexode 100W 20000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-nexode-130w-20k",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode",
+      "modelName": "Nexode 130W 20000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/nexode-130w-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Space Gray",
+        "Midnight Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-nexode-130w-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "nexode 130w 20000mah",
+        "capacityMah": 20000,
+        "maxOutputWatts": 130,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 476,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN Nexode PD 3.1 power bank Nexode 130W 20000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-nexode-30w-10k",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode",
+      "modelName": "Nexode 30W 10000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/nexode-30w-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Space Gray",
+        "Midnight Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-nexode-30w-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "nexode 30w 10000mah",
+        "capacityMah": 10000,
+        "maxOutputWatts": 30,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 220,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN Nexode PD 3.1 power bank Nexode 30W 10000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-magnetic-10k-15w",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode",
+      "modelName": "Magnetic 10000mAh 15W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/magnetic-10k-15w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Space Gray",
+        "Midnight Black"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-magnetic-10k-15w.png"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "magnetic 10000mah 15w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 20,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 225,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN Nexode PD 3.1 power bank Magnetic 10000mAh 15W",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-pro-mag-10k",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge",
+      "modelName": "BoostCharge Pro Magnetic Wireless 10K (Qi2)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/p/boostcharge-pro-mag-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/belkin-boostcharge-pro-mag-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge pro magnetic wireless 10k (qi2)",
+        "capacityMah": 10000,
+        "maxOutputWatts": 20,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 240,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin reliable BoostCharge battery BoostCharge Pro Magnetic Wireless 10K (Qi2)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-20k-30w",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge",
+      "modelName": "BoostCharge 20000mAh 30W PD",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/p/boostcharge-20k-30w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/belkin-boostcharge-20k-30w.png"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge 20000mah 30w pd",
+        "capacityMah": 20000,
+        "maxOutputWatts": 30,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 450,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin reliable BoostCharge battery BoostCharge 20000mAh 30W PD",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-10k-20w",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge",
+      "modelName": "BoostCharge 10000mAh 20W PD",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/p/boostcharge-10k-20w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/belkin-boostcharge-10k-20w.png"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge 10000mah 20w pd",
+        "capacityMah": 10000,
+        "maxOutputWatts": 20,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 220,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin reliable BoostCharge battery BoostCharge 10000mAh 20W PD",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-hybrid-5k",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge",
+      "modelName": "BoostCharge Hybrid 5K",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/p/boostcharge-hybrid-5k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/belkin-boostcharge-hybrid-5k.png"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge hybrid 5k",
+        "capacityMah": 5000,
+        "maxOutputWatts": 25,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 190,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin reliable BoostCharge battery BoostCharge Hybrid 5K",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-50w-power-bank-20k",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi / Redmi Power Bank",
+      "modelName": "50W Power Bank 20000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/in/product/50w-power-bank-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-50w-power-bank-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "50w power bank 20000mah",
+        "capacityMah": 20000,
+        "maxOutputWatts": 50,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 440,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi high density power bank 50W Power Bank 20000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-33w-pocket-pro-10k",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi / Redmi Power Bank",
+      "modelName": "33W Power Bank 10000mAh Pocket Pro",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/in/product/33w-pocket-pro-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-33w-pocket-pro-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "33w power bank 10000mah pocket pro",
+        "capacityMah": 10000,
+        "maxOutputWatts": 33,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 212,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi high density power bank 33W Power Bank 10000mAh Pocket Pro",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-22-5w-power-bank-10k",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi / Redmi Power Bank",
+      "modelName": "22.5W Power Bank 10000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/in/product/22-5w-power-bank-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/xiaomi-22-5w-power-bank-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "22.5w power bank 10000mah",
+        "capacityMah": 10000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 225,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi high density power bank 22.5W Power Bank 10000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "redmi-20000mah-18w",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi / Redmi Power Bank",
+      "modelName": "Redmi 20000mAh 18W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/in/product/redmi-20000mah-18w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/redmi-20000mah-18w.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "redmi 20000mah 18w",
+        "capacityMah": 20000,
+        "maxOutputWatts": 18,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 447,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi high density power bank Redmi 20000mAh 18W",
+      "status": "staged"
+    },
+    {
+      "id": "redmi-10000mah-10w",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "Mi / Redmi Power Bank",
+      "modelName": "Redmi 10000mAh 10W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/in/product/redmi-10000mah-10w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "mediaSource": {
+        "url": "https://i01.appmifile.com/webfile/globalimg/redmi-10000mah-10w.png"
+      },
+      "collectedAttributes": {
+        "brand": "xiaomi",
+        "modelName": "redmi 10000mah 10w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 10,
+        "pdSupported": false,
+        "portCount": 2,
+        "weightGrams": 246,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi high density power bank Redmi 10000mAh 10W",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-eb-p3400-25w-10k",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Battery Pack",
+      "modelName": "25W 10000mAh Battery Pack (EB-P3400)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/eb-p3400-25w-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Beige",
+        "Dark Gray"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-eb-p3400-25w-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "25w 10000mah battery pack (eb-p3400)",
+        "capacityMah": 10000,
+        "maxOutputWatts": 25,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 210,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Super Fast Charging battery 25W 10000mAh Battery Pack (EB-P3400)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-eb-p4520-45w-20k",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Battery Pack",
+      "modelName": "45W 20000mAh Battery Pack (EB-P4520)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/eb-p4520-45w-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Beige",
+        "Dark Gray"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-eb-p4520-45w-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "45w 20000mah battery pack (eb-p4520)",
+        "capacityMah": 20000,
+        "maxOutputWatts": 45,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 402,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Super Fast Charging battery 45W 20000mAh Battery Pack (EB-P4520)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-eb-u2510-wireless-10k",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Battery Pack",
+      "modelName": "Wireless Battery Pack 10000mAh (EB-U2510)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/eb-u2510-wireless-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Beige",
+        "Dark Gray"
+      ],
+      "mediaSource": {
+        "url": "https://images.samsung.com/is/image/samsung/samsung-eb-u2510-wireless-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "wireless battery pack 10000mah (eb-u2510)",
+        "capacityMah": 10000,
+        "maxOutputWatts": 25,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 222,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung Super Fast Charging battery Wireless Battery Pack 10000mAh (EB-U2510)",
+      "status": "staged"
+    },
+    {
+      "id": "stuffcool-centurion-20k-65w",
+      "canonicalBrand": "Stuffcool",
+      "displayBrand": "Stuffcool",
+      "productLine": "Centurion / Major / Palm",
+      "modelName": "Centurion 20000mAh 65W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.stuffcool.com/products/centurion-20k-65w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.stuffcool.com/cdn/shop/products/stuffcool-centurion-20k-65w.png"
+      },
+      "collectedAttributes": {
+        "brand": "stuffcool",
+        "modelName": "centurion 20000mah 65w",
+        "capacityMah": 20000,
+        "maxOutputWatts": 65,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 430,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Stuffcool compact fast charging battery Centurion 20000mAh 65W",
+      "status": "staged"
+    },
+    {
+      "id": "stuffcool-major-max-20k-35w",
+      "canonicalBrand": "Stuffcool",
+      "displayBrand": "Stuffcool",
+      "productLine": "Centurion / Major / Palm",
+      "modelName": "Major Max 20000mAh 35W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.stuffcool.com/products/major-max-20k-35w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.stuffcool.com/cdn/shop/products/stuffcool-major-max-20k-35w.png"
+      },
+      "collectedAttributes": {
+        "brand": "stuffcool",
+        "modelName": "major max 20000mah 35w",
+        "capacityMah": 20000,
+        "maxOutputWatts": 35,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 410,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Stuffcool compact fast charging battery Major Max 20000mAh 35W",
+      "status": "staged"
+    },
+    {
+      "id": "stuffcool-mega-10k-30w",
+      "canonicalBrand": "Stuffcool",
+      "displayBrand": "Stuffcool",
+      "productLine": "Centurion / Major / Palm",
+      "modelName": "Mega 10000mAh 30W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.stuffcool.com/products/mega-10k-30w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.stuffcool.com/cdn/shop/products/stuffcool-mega-10k-30w.png"
+      },
+      "collectedAttributes": {
+        "brand": "stuffcool",
+        "modelName": "mega 10000mah 30w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 30,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 215,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Stuffcool compact fast charging battery Mega 10000mAh 30W",
+      "status": "staged"
+    },
+    {
+      "id": "stuffcool-palm-10k-22-5w",
+      "canonicalBrand": "Stuffcool",
+      "displayBrand": "Stuffcool",
+      "productLine": "Centurion / Major / Palm",
+      "modelName": "Palm 10000mAh 22.5W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.stuffcool.com/products/palm-10k-22-5w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "mediaSource": {
+        "url": "https://www.stuffcool.com/cdn/shop/products/stuffcool-palm-10k-22-5w.png"
+      },
+      "collectedAttributes": {
+        "brand": "stuffcool",
+        "modelName": "palm 10000mah 22.5w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 180,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Stuffcool compact fast charging battery Palm 10000mAh 22.5W",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-blade-hd-100w-20k",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Blade / Adaman",
+      "modelName": "Blade HD 100W 20000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/blade-hd-100w-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-blade-hd-100w-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "blade hd 100w 20000mah",
+        "capacityMah": 20000,
+        "maxOutputWatts": 100,
+        "pdSupported": true,
+        "portCount": 4,
+        "weightGrams": 445,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus ultra-thin high-wattage power bank Blade HD 100W 20000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-blade-2-65w-12k",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Blade / Adaman",
+      "modelName": "Blade 2 65W 12000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/blade-2-65w-12k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-blade-2-65w-12k.png"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "blade 2 65w 12000mah",
+        "capacityMah": 12000,
+        "maxOutputWatts": 65,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 328,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus ultra-thin high-wattage power bank Blade 2 65W 12000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-adaman-65w-20k",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Blade / Adaman",
+      "modelName": "Adaman 65W 20000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/adaman-65w-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-adaman-65w-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "adaman 65w 20000mah",
+        "capacityMah": 20000,
+        "maxOutputWatts": 65,
+        "pdSupported": true,
+        "portCount": 4,
+        "weightGrams": 450,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus ultra-thin high-wattage power bank Adaman 65W 20000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-magnetic-mini-10k-20w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Blade / Adaman",
+      "modelName": "Magnetic Mini 10000mAh 20W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/magnetic-mini-10k-20w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Silver"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-magnetic-mini-10k-20w.png"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "magnetic mini 10000mah 20w",
+        "capacityMah": 10000,
+        "maxOutputWatts": 20,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 208,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus ultra-thin high-wattage power bank Magnetic Mini 10000mAh 20W",
+      "status": "staged"
+    },
+    {
+      "id": "boat-energyshroom-pb400-20k",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "EnergyShroom",
+      "modelName": "EnergyShroom PB400 20000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/energyshroom-pb400-20k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Steel Blue"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/boat/boat-energyshroom-pb400-20k.png"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "energyshroom pb400 20000mah",
+        "capacityMah": 20000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 420,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt EnergyShroom power bank EnergyShroom PB400 20000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "boat-energyshroom-pb300-10k",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "EnergyShroom",
+      "modelName": "EnergyShroom PB300 10000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/energyshroom-pb300-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Steel Blue"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/boat/boat-energyshroom-pb300-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "energyshroom pb300 10000mah",
+        "capacityMah": 10000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 220,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt EnergyShroom power bank EnergyShroom PB300 10000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "boat-energyshroom-pb500-30k",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "EnergyShroom",
+      "modelName": "EnergyShroom PB500 30000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/energyshroom-pb500-30k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon Black",
+        "Steel Blue"
+      ],
+      "mediaSource": {
+        "url": "https://cdn.shopify.com/s/files/boat/boat-energyshroom-pb500-30k.png"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "energyshroom pb500 30000mah",
+        "capacityMah": 30000,
+        "maxOutputWatts": 22.5,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 620,
+        "flightApproved": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt EnergyShroom power bank EnergyShroom PB500 30000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "realme-30w-dart-10k",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "Dart Charge Power Bank",
+      "modelName": "30W Dart Charge 10000mAh",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.realme.com/in/30w-dart-10k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Yellow",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/realme-30w-dart-10k.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "30w dart charge 10000mah",
+        "capacityMah": 10000,
+        "maxOutputWatts": 30,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 230,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme fast charging power bank 30W Dart Charge 10000mAh",
+      "status": "staged"
+    },
+    {
+      "id": "realme-20k-18w-power-bank-2",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "Dart Charge Power Bank",
+      "modelName": "20000mAh 18W Power Bank 2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.realme.com/in/20k-18w-power-bank-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Yellow",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/realme-20k-18w-power-bank-2.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "20000mah 18w power bank 2",
+        "capacityMah": 20000,
+        "maxOutputWatts": 18,
+        "pdSupported": true,
+        "portCount": 3,
+        "weightGrams": 495,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme fast charging power bank 20000mAh 18W Power Bank 2",
+      "status": "staged"
+    },
+    {
+      "id": "realme-10k-30w-power-bank",
+      "canonicalBrand": "realme",
+      "displayBrand": "realme",
+      "productLine": "Dart Charge Power Bank",
+      "modelName": "10000mAh 30W Power Bank",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.realme.com/in/10k-30w-power-bank"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Yellow",
+        "Black"
+      ],
+      "mediaSource": {
+        "url": "https://image01.realme.net/realme-10k-30w-power-bank.png"
+      },
+      "collectedAttributes": {
+        "brand": "realme",
+        "modelName": "10000mah 30w power bank",
+        "capacityMah": 10000,
+        "maxOutputWatts": 30,
+        "pdSupported": true,
+        "portCount": 2,
+        "weightGrams": 225,
+        "flightApproved": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "realme fast charging power bank 10000mAh 30W Power Bank",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Samsung",
+      "leafKey": "power-banks",
+      "reason": "Samsung active official battery pack portfolio comprises 3 models.",
+      "officialSourceUrl": "https://www.samsung.com/in/mobile-accessories/all-mobile-accessories/?power-banks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "25W 10000mAh Battery Pack (EB-P3400)",
+        "45W 20000mAh Battery Pack (EB-P4520)",
+        "Wireless Battery Pack 10000mAh (EB-U2510)"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Belkin",
+      "leafKey": "power-banks",
+      "reason": "Belkin active BoostCharge portable battery pack line consists of 4 core chassis.",
+      "officialSourceUrl": "https://www.belkin.com/products/power-banks/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "BoostCharge Pro Magnetic Wireless 10K (Qi2)",
+        "BoostCharge 20000mAh 30W PD",
+        "BoostCharge 10000mAh 20W PD",
+        "BoostCharge Hybrid 5K"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Stuffcool",
+      "leafKey": "power-banks",
+      "reason": "Stuffcool active high-speed power bank line consists of 4 distinct models.",
+      "officialSourceUrl": "https://www.stuffcool.com/collections/power-banks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Centurion 20000mAh 65W",
+        "Major Max 20000mAh 35W",
+        "Mega 10000mAh 30W",
+        "Palm 10000mAh 22.5W"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "IN"
+    },
+    {
+      "brand": "realme",
+      "leafKey": "power-banks",
+      "reason": "realme produces 3 fast-charging battery packs.",
+      "officialSourceUrl": "https://www.realme.com/in/accessories",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "30W Dart Charge 10000mAh",
+        "20000mAh 18W Power Bank 2",
+        "10000mAh 30W Power Bank"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "IN"
+    },
+    {
+      "brand": "boAt",
+      "leafKey": "power-banks",
+      "reason": "boAt EnergyShroom battery pack line comprises 3 models.",
+      "officialSourceUrl": "https://www.boat-lifestyle.com/collections/power-banks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "EnergyShroom PB400 20000mAh",
+        "EnergyShroom PB300 10000mAh",
+        "EnergyShroom PB500 30000mAh"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "IN"
+    },
+    {
+      "brand": "Baseus",
+      "leafKey": "power-banks",
+      "reason": "Baseus high-wattage Blade and Adaman series features 4 key models.",
+      "officialSourceUrl": "https://www.baseus.com/collections/power-banks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Blade HD 100W 20000mAh",
+        "Blade 2 65W 12000mAh",
+        "Adaman 65W 20000mAh",
+        "Magnetic Mini 10000mAh 20W"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Xiaomi",
+      "leafKey": "power-banks",
+      "reason": "Xiaomi official power bank line includes 5 models across Xiaomi and Redmi.",
+      "officialSourceUrl": "https://www.mi.com/in/product-list/power-banks/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "50W Power Bank 20000mAh",
+        "33W Power Bank 10000mAh Pocket Pro",
+        "22.5W Power Bank 10000mAh",
+        "Redmi 20000mAh 18W",
+        "Redmi 10000mAh 10W"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "IN"
+    },
+    {
+      "brand": "UGREEN",
+      "leafKey": "power-banks",
+      "reason": "UGREEN Nexode power bank range consists of 5 high-output models.",
+      "officialSourceUrl": "https://www.ugreen.com/collections/power-banks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Nexode 145W 25000mAh",
+        "Nexode 100W 20000mAh",
+        "Nexode 130W 20000mAh",
+        "Nexode 30W 10000mAh",
+        "Magnetic 10000mAh 15W"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Portronics",
+      "leafKey": "power-banks",
+      "reason": "Portronics produces 6 fast-charging power banks across Luxcell, AmpCharge, and Power Brick series.",
+      "officialSourceUrl": "https://www.portronics.com/collections/power-banks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Luxcell B 10000mAh 22.5W",
+        "Luxcell Wireless 10000mAh 15W",
+        "Power Brick II 10000mAh",
+        "Power 45 20000mAh 45W",
+        "AmpCharge 20000mAh 65W",
+        "Power Bank 20000mAh 22.5W"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "IN"
+    },
+    {
+      "brand": "Ambrane",
+      "leafKey": "power-banks",
+      "reason": "Ambrane Stylo and Powerlit power banks comprise 7 models.",
+      "officialSourceUrl": "https://ambraneindia.com/collections/power-banks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Stylo 20K 20000mAh 20W",
+        "Stylo 10K 10000mAh 20W",
+        "Powerlit XL 20000mAh 22.5W",
+        "Powerlit Ultra 25000mAh 100W",
+        "AeroGlow 10000mAh 22.5W",
+        "Stylo Pro 27000mAh 65W",
+        "Powerlit 45W 20000mAh"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "IN"
+    },
+    {
+      "brand": "Anker",
+      "leafKey": "power-banks",
+      "reason": "Anker Prime and MagGo fast-charging power banks comprise 7 flagship models.",
+      "officialSourceUrl": "https://www.anker.com/collections/power-banks",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Prime 27650mAh (250W)",
+        "Prime 20000mAh (200W)",
+        "Prime 12000mAh (130W)",
+        "737 Power Bank (PowerCore 24K 140W)",
+        "533 Power Bank 30W 10000mAh",
+        "MagGo Power Bank 10000mAh (Qi2 15W)",
+        "325 Power Bank 20000mAh"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

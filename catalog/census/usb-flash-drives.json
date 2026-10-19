@@ -1,0 +1,3436 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "usb-flash-drives",
+  "displayName": "USB Flash Drives",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "sandisk-extreme-pro-usb-3-2-solid-state",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Extreme PRO",
+      "modelName": "Extreme PRO USB 3.2 Solid State Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-extreme-pro-usb-3-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-extreme-pro-usb-3-2-solid-state.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "extreme pro usb 3.2 solid state flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 420,
+        "casingMaterial": "Aluminum Metal",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Extreme PRO USB 3.2 Solid State Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ultra-dual-drive-luxe-type-c",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Ultra Dual Drive Luxe",
+      "modelName": "Ultra Dual Drive Luxe USB Type-C Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-ultra-dual-drive-luxe-usb-3-1-type-c"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ultra-dual-drive-luxe-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ultra dual drive luxe usb type-c flash drive",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 400,
+        "casingMaterial": "All-Metal Swivel",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Ultra Dual Drive Luxe USB Type-C Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ultra-dual-drive-go-type-c",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Ultra Dual Drive Go",
+      "modelName": "Ultra Dual Drive Go USB Type-C Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-ultra-dual-drive-go-usb-type-c"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ultra-dual-drive-go-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ultra dual drive go usb type-c flash drive",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 400,
+        "casingMaterial": "Swivel Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Ultra Dual Drive Go USB Type-C Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ultra-flair-usb-3-0",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Ultra Flair",
+      "modelName": "Ultra Flair USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-ultra-flair-usb-3-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ultra-flair-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ultra flair usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Metal Casing",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Ultra Flair USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ultra-luxe-usb-3-1",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Ultra Luxe",
+      "modelName": "Ultra Luxe USB 3.1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-ultra-luxe-usb-3-1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ultra-luxe-usb-3-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ultra luxe usb 3.1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Cast Metal",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Ultra Luxe USB 3.1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-cruzer-blade-usb-2-0",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Cruzer Blade",
+      "modelName": "Cruzer Blade USB 2.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-cruzer-blade-usb-2-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-cruzer-blade-usb-2-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "cruzer blade usb 2.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 20,
+        "casingMaterial": "Compact Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Cruzer Blade USB 2.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-cruzer-glide-usb-3-0",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Cruzer Glide",
+      "modelName": "Cruzer Glide USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-cruzer-glide-usb-3-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-cruzer-glide-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "cruzer glide usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Retractable Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Cruzer Glide USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ixpand-flash-drive-luxe",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "iXpand Luxe",
+      "modelName": "iXpand Flash Drive Luxe (Lightning/Type-C)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-ixpand-luxe"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ixpand-flash-drive-luxe.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ixpand flash drive luxe (lightning/type-c)",
+        "connectorType": "Dual Lightning & USB-C",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 150,
+        "casingMaterial": "All-Metal Swivel",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: iXpand Flash Drive Luxe (Lightning/Type-C)",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ultra-fit-usb-3-1",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Ultra Fit",
+      "modelName": "Ultra Fit USB 3.1 Low-Profile Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-ultra-fit-usb-3-1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ultra-fit-usb-3-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ultra fit usb 3.1 low-profile flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Nano Low-Profile Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Ultra Fit USB 3.1 Low-Profile Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-extreme-go-usb-3-2",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Extreme Go",
+      "modelName": "Extreme Go USB 3.2 Flash Drive (Retractable)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-extreme-go-usb-3-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-extreme-go-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "extreme go usb 3.2 flash drive (retractable)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 400,
+        "casingMaterial": "Retractable Premium Metal",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Extreme Go USB 3.2 Flash Drive (Retractable)",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-ultra-dual-drive-m3-0",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Ultra Dual Drive m3.0",
+      "modelName": "Ultra Dual Drive m3.0 (OTG Micro-USB & Type-A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-ultra-dual-drive-m3-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-ultra-dual-drive-m3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "ultra dual drive m3.0 (otg micro-usb & type-a)",
+        "connectorType": "Dual Micro-USB & USB-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Retractable Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Ultra Dual Drive m3.0 (OTG Micro-USB & Type-A)",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-cruzer-snap-usb-2-0",
+      "canonicalBrand": "SanDisk",
+      "displayBrand": "SanDisk",
+      "productLine": "Cruzer Snap",
+      "modelName": "Cruzer Snap USB 2.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/usb-flash-drives/sandisk-cruzer-snap-usb-2-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/products/sandisk-cruzer-snap-usb-2-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk",
+        "modelName": "cruzer snap usb 2.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 20,
+        "casingMaterial": "Capless Retractable Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk verified usb-flash-drives model: Cruzer Snap USB 2.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-max-usb-c",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler Max",
+      "modelName": "DataTraveler Max USB-C 3.2 Gen 2 (1000MBps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-max"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-max-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler max usb-c 3.2 gen 2 (1000mbps)",
+        "connectorType": "USB Type-C",
+        "usbStandard": "USB 3.2 Gen 2",
+        "readSpeedMBps": 1000,
+        "casingMaterial": "Ridged Casing with Keyring Loop",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler Max USB-C 3.2 Gen 2 (1000MBps)",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-max-type-a",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler Max",
+      "modelName": "DataTraveler Max Type-A 3.2 Gen 2 (1000MBps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-max-type-a"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-max-type-a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler max type-a 3.2 gen 2 (1000mbps)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 2",
+        "readSpeedMBps": 1000,
+        "casingMaterial": "Sliding Cap Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler Max Type-A 3.2 Gen 2 (1000MBps)",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-kyson-metal",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler Kyson",
+      "modelName": "DataTraveler Kyson Metal USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-kyson"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-kyson-metal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler kyson metal usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 200,
+        "casingMaterial": "Capless Metal with Functional Loop",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler Kyson Metal USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-exodia-m",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler Exodia",
+      "modelName": "DataTraveler Exodia M USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-exodia-m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-exodia-m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler exodia m usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Moving Cap Design",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler Exodia M USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-micro-metal",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler Micro",
+      "modelName": "DataTraveler Micro Ultra-Compact Metal Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-micro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-micro-metal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler micro ultra-compact metal drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 200,
+        "casingMaterial": "Ultra-Small Premium Metal",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler Micro Ultra-Compact Metal Drive",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-ironkey-d300s-encrypted",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "IronKey Military",
+      "modelName": "IronKey D300S Hardware Encrypted Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/ironkey-d300s-encrypted-usb-flash-drive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-ironkey-d300s-encrypted.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "ironkey d300s hardware encrypted flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 250,
+        "casingMaterial": "Zinc Casing Waterproof to 4ft",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: IronKey D300S Hardware Encrypted Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-ironkey-vault-privacy-50",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "IronKey Vault Privacy",
+      "modelName": "IronKey Vault Privacy 50 USB 3.2 Hardware Encrypted",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/ironkey-vault-privacy-50-encrypted-usb-flash-drive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-ironkey-vault-privacy-50.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "ironkey vault privacy 50 usb 3.2 hardware encrypted",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 250,
+        "casingMaterial": "Zinc Casing FIPS 197 Certified",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: IronKey Vault Privacy 50 USB 3.2 Hardware Encrypted",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-ironkey-keypad-200",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "IronKey Keypad",
+      "modelName": "IronKey Keypad 200 Hardware Encrypted (Alphanumeric)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/ironkey-kp200-encrypted-usb-flash-drive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-ironkey-keypad-200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "ironkey keypad 200 hardware encrypted (alphanumeric)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 145,
+        "casingMaterial": "Alphanumeric Keypad Waterproof IP57",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: IronKey Keypad 200 Hardware Encrypted (Alphanumeric)",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-70-usb-c",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler 70",
+      "modelName": "DataTraveler 70 USB-C Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-70"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-70-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler 70 usb-c flash drive",
+        "connectorType": "USB Type-C",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Matte Black Plastic with Protective Cap",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler 70 USB-C Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-se9-g3",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler SE9",
+      "modelName": "DataTraveler SE9 G3 Premium Metal Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-se9-g3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-se9-g3.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler se9 g3 premium metal flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 220,
+        "casingMaterial": "Gold Metal Keyring Casing",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler SE9 G3 Premium Metal Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-duo-dual-interface",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler Duo",
+      "modelName": "DataTraveler Duo Dual USB-C & USB-A Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-duo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-duo-dual-interface.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler duo dual usb-c & usb-a flash drive",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Dual Sliding Cap Casing",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler Duo Dual USB-C & USB-A Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "kingston-datatraveler-exodia-onyx",
+      "canonicalBrand": "Kingston",
+      "displayBrand": "Kingston",
+      "productLine": "DataTraveler Exodia",
+      "modelName": "DataTraveler Exodia Onyx USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.kingston.com/en/usb-flash-drives/datatraveler-exodia-onyx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.kingston.com/images/products/kingston-datatraveler-exodia-onyx.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "kingston",
+        "modelName": "datatraveler exodia onyx usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Sleek Matte Black Sliding Cap",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kingston verified usb-flash-drives model: DataTraveler Exodia Onyx USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-930c-dual-connector",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 930C",
+      "modelName": "JetFlash 930C Dual-Connector USB 3.2 (Type-C & Type-A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-930c"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-930c-dual-connector.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 930c dual-connector usb 3.2 (type-c & type-a)",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 420,
+        "casingMaterial": "Aluminum Metallic Finish",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 930C Dual-Connector USB 3.2 (Type-C & Type-A)",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-920-high-endurance",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 920",
+      "modelName": "JetFlash 920 High Endurance 420MBps Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-920"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-920-high-endurance.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 920 high endurance 420mbps flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 420,
+        "casingMaterial": "Sandblasted Aluminum",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 920 High Endurance 420MBps Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-890-dual-usb-c",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 890",
+      "modelName": "JetFlash 890 Dual USB Type-C OTG Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-890"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-890-dual-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 890 dual usb type-c otg flash drive",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Compact Metallic with Cap",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 890 Dual USB Type-C OTG Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-790-capless",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 790",
+      "modelName": "JetFlash 790 Capless Retractable USB 3.1 Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-790"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-790-capless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 790 capless retractable usb 3.1 drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Retractable Slider Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 790 Capless Retractable USB 3.1 Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-780-premium",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 780",
+      "modelName": "JetFlash 780 Premium High-Speed USB 3.1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-780"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-780-premium.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 780 premium high-speed usb 3.1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 210,
+        "casingMaterial": "Checkerboard Gloss Finish",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 780 Premium High-Speed USB 3.1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-710-super-mini",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 710",
+      "modelName": "JetFlash 710 Super Mini Metal USB 3.1 Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-710"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-710-super-mini.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 710 super mini metal usb 3.1 drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 90,
+        "casingMaterial": "Ultra-Small Rugged Metal",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 710 Super Mini Metal USB 3.1 Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-880-otg-micro-usb",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 880",
+      "modelName": "JetFlash 880 OTG Micro-USB Metal Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-880"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-880-otg-micro-usb.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 880 otg micro-usb metal flash drive",
+        "connectorType": "Dual Micro-USB & USB-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Zinc Alloy Metal",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 880 OTG Micro-USB Metal Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-380-ultra-compact",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 380",
+      "modelName": "JetFlash 380 Ultra Compact OTG USB 2.0 Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-380"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-380-ultra-compact.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 380 ultra compact otg usb 2.0 drive",
+        "connectorType": "Dual Micro-USB & USB-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 20,
+        "casingMaterial": "Gold Metal COB Enclosure",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 380 Ultra Compact OTG USB 2.0 Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-910-high-performance",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "JetFlash 910",
+      "modelName": "JetFlash 910 High Performance USB 3.1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/usb-flash-drive/jetflash-910"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-910-high-performance.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 910 high performance usb 3.1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 420,
+        "casingMaterial": "Aluminum Metal",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 910 High Performance USB 3.1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-jetflash-280-industrial-grade",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "Industrial Grade",
+      "modelName": "JetFlash 280 Industrial Grade USB 3.1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/embedded/product/usb-flash-drives/jetflash-280t"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/products/transcend-jetflash-280-industrial-grade.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "jetflash 280 industrial grade usb 3.1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 140,
+        "casingMaterial": "Industrial Ruggedized Casing",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend verified usb-flash-drives model: JetFlash 280 Industrial Grade USB 3.1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-ue800-type-c-1000mbps",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Elite Series",
+      "modelName": "UE800 USB 3.2 Gen 2 Type-C 1000MBps Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/elite-ue800-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-ue800-type-c-1000mbps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "ue800 usb 3.2 gen 2 type-c 1000mbps flash drive",
+        "connectorType": "USB Type-C",
+        "usbStandard": "USB 3.2 Gen 2",
+        "readSpeedMBps": 1000,
+        "casingMaterial": "Sliding Metal Casing",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UE800 USB 3.2 Gen 2 Type-C 1000MBps Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-uv350-metal-capless",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "UV Series",
+      "modelName": "UV350 Metal Capless USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/uv350-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-uv350-metal-capless.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "uv350 metal capless usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Polished Nickel Metal",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UV350 Metal Capless USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-uv128-retractable-sliding",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "UV Series",
+      "modelName": "UV128 Retractable Sliding USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/uv128-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-uv128-retractable-sliding.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "uv128 retractable sliding usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Thumb-Slide Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UV128 Retractable Sliding USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-uv250-minimalist-metallic",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "UV Series",
+      "modelName": "UV250 Minimalist Metallic USB 2.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/uv250-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-uv250-minimalist-metallic.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "uv250 minimalist metallic usb 2.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 30,
+        "casingMaterial": "Seamless Zinc Alloy",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UV250 Minimalist Metallic USB 2.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-uc300-swivel-type-c",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "UC Series",
+      "modelName": "UC300 Swivel Type-C USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/uc300-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-uc300-swivel-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "uc300 swivel type-c usb 3.2 flash drive",
+        "connectorType": "USB Type-C",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Swivel Capless Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UC300 Swivel Type-C USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-uv150-classic-cap",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "UV Series",
+      "modelName": "UV150 Classic Cap USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/uv150-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-uv150-classic-cap.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "uv150 classic cap usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Glossy Plastic with Snap-on Cap",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UV150 Classic Cap USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-uv320-push-slide",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "UV Series",
+      "modelName": "UV320 Push-Slide USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/uv320-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-uv320-push-slide.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "uv320 push-slide usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Retractable Slide Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UV320 Push-Slide USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-dashdrive-elite-ue700",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "DashDrive Elite",
+      "modelName": "DashDrive Elite UE700 USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/dashdrive-elite-ue700/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-dashdrive-elite-ue700.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "dashdrive elite ue700 usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 220,
+        "casingMaterial": "Brushed Aluminum with Blue LED",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: DashDrive Elite UE700 USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-uc310-push-cap",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "UC Series",
+      "modelName": "UC310 Push-Cap USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/uc310-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-uc310-push-cap.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "uc310 push-cap usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Swivel Rotating Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UC310 Push-Cap USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "adata-uv131-zinc-alloy",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "UV Series",
+      "modelName": "UV131 Zinc-Alloy USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/category/usb-flash-drives/uv131-usb-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/products/adata-uv131-zinc-alloy.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "uv131 zinc-alloy usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 90,
+        "casingMaterial": "Chromium Grey Zinc Alloy",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA verified usb-flash-drives model: UV131 Zinc-Alloy USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-elite-x-fit-usb-3-1",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Elite-X Fit",
+      "modelName": "Elite-X Fit USB 3.1 Low Profile Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/elite-x-fit-usb-3-1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-elite-x-fit-usb-3-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "elite-x fit usb 3.1 low profile flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 200,
+        "casingMaterial": "Micro Low Profile Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Elite-X Fit USB 3.1 Low Profile Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-turbo-attache-4-usb-3-0",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Turbo Attaché",
+      "modelName": "Turbo Attaché 4 USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/turbo-attache-4-usb-3-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-turbo-attache-4-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "turbo attaché 4 usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Sliding Collar Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Turbo Attaché 4 USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-attache-3-usb-2-0",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Attaché",
+      "modelName": "Attaché 3 USB 2.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/attache-3-usb-2-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-attache-3-usb-2-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "attaché 3 usb 2.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 20,
+        "casingMaterial": "Sliding Collar Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Attaché 3 USB 2.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-elite-x-type-c-usb-3-2",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Elite-X Type-C",
+      "modelName": "Elite-X Type-C USB 3.2 200MBps Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/elite-x-type-c-usb-3-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-elite-x-type-c-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "elite-x type-c usb 3.2 200mbps flash drive",
+        "connectorType": "USB Type-C",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 200,
+        "casingMaterial": "Compact Sliding Type-C",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Elite-X Type-C USB 3.2 200MBps Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-duo-link-ios-usb-3-2",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Duo Link",
+      "modelName": "Duo Link iOS USB 3.2 OTG Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/duo-link-ios-usb-3-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-duo-link-ios-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "duo link ios usb 3.2 otg flash drive",
+        "connectorType": "Dual Lightning & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Metal Swivel Casing",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Duo Link iOS USB 3.2 OTG Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-duo-link-type-c-dual",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Duo Link",
+      "modelName": "Duo Link Type-C Dual USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/duo-link-type-c-usb-3-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-duo-link-type-c-dual.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "duo link type-c dual usb 3.2 flash drive",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 200,
+        "casingMaterial": "Textured Metal Dual-Port",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Duo Link Type-C Dual USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-metal-executive-usb-3-0",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Executive",
+      "modelName": "Metal Executive USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/metal-executive-usb-3-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-metal-executive-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "metal executive usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 115,
+        "casingMaterial": "Stainless Steel Premium Finish",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Metal Executive USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-loop-metallic-usb-3-0",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Loop Metallic",
+      "modelName": "Loop Metallic USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/loop-metallic-usb-3-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-loop-metallic-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "loop metallic usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 115,
+        "casingMaterial": "Integrated Metal Carabiner Loop",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Loop Metallic USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-turbo-steel-usb-3-0",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Turbo Steel",
+      "modelName": "Turbo Steel USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/turbo-steel-usb-3-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-turbo-steel-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "turbo steel usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 115,
+        "casingMaterial": "Heavy-Duty Stainless Steel",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Turbo Steel USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "pny-wave-attache-usb-3-2",
+      "canonicalBrand": "PNY",
+      "displayBrand": "PNY",
+      "productLine": "Wave Attaché",
+      "modelName": "Wave Attaché USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.pny.com/wave-attache-usb-3-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.pny.com/images/products/pny-wave-attache-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "pny",
+        "modelName": "wave attaché usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Wave Textured Ergonomic Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "PNY verified usb-flash-drives model: Wave Attaché USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-p30-usb-3-2",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive P30",
+      "modelName": "JumpDrive P30 USB 3.2 Gen 1 Flash Drive (450MBps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-p30-usb-3-2-gen-1-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-p30-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive p30 usb 3.2 gen 1 flash drive (450mbps)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 450,
+        "casingMaterial": "Metallic Alloy with Leather Sheath",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive P30 USB 3.2 Gen 1 Flash Drive (450MBps)",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-dual-drive-d400-type-c",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive Dual",
+      "modelName": "JumpDrive Dual Drive D400 USB 3.1 Type-C",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-dual-drive-d400-usb-3-1-type-c/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-dual-drive-d400-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive dual drive d400 usb 3.1 type-c",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Zinc-Alloy Swivel",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive Dual Drive D400 USB 3.1 Type-C",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-dual-drive-d35c",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive Dual",
+      "modelName": "JumpDrive Dual Drive D35c USB 3.0 Type-C",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-dual-drive-d35c-usb-3-0-type-c/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-dual-drive-d35c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive dual drive d35c usb 3.0 type-c",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Compact Metal Rotating Housing",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive Dual Drive D35c USB 3.0 Type-C",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-s80-high-speed",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive S80",
+      "modelName": "JumpDrive S80 High Speed USB 3.1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-s80-usb-3-1-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-s80-high-speed.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive s80 high speed usb 3.1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Retractable Capless Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive S80 High Speed USB 3.1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-m45-metal",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive M45",
+      "modelName": "JumpDrive M45 Metal USB 3.1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-m45-usb-3-1-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-m45-metal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive m45 metal usb 3.1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 250,
+        "casingMaterial": "Seamless Metal Keyring Design",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive M45 Metal USB 3.1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-v400-usb-3-0",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive V400",
+      "modelName": "JumpDrive V400 USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-v400-usb-3-0-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-v400-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive v400 usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Compact Lightweight Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive V400 USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-fingerprint-f35",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive F35",
+      "modelName": "JumpDrive Fingerprint F35 Encrypted USB 3.0",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-f35-usb-3-0-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-fingerprint-f35.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive fingerprint f35 encrypted usb 3.0",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 300,
+        "casingMaterial": "Biometric Sensor Metal/Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive Fingerprint F35 Encrypted USB 3.0",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-dual-drive-d30c",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive Dual",
+      "modelName": "JumpDrive Dual Drive D30c USB 3.1 Type-C",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-dual-drive-d30c-usb-3-1-type-c/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-dual-drive-d30c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive dual drive d30c usb 3.1 type-c",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Metal Swivel Casing",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive Dual Drive D30c USB 3.1 Type-C",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-s47-low-profile",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive S47",
+      "modelName": "JumpDrive S47 Low-Profile USB 3.1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-s47-usb-3-1-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-s47-low-profile.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive s47 low-profile usb 3.1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 250,
+        "casingMaterial": "Nano Low Profile Plastic",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive S47 Low-Profile USB 3.1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "lexar-jumpdrive-v40-usb-2-0",
+      "canonicalBrand": "Lexar",
+      "displayBrand": "Lexar",
+      "productLine": "JumpDrive V40",
+      "modelName": "JumpDrive V40 USB 2.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lexar.com/product/lexar-jumpdrive-v40-usb-2-0-flash-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lexar.com/images/products/lexar-jumpdrive-v40-usb-2-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lexar",
+        "modelName": "jumpdrive v40 usb 2.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 25,
+        "casingMaterial": "Reliable Daily Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lexar verified usb-flash-drives model: JumpDrive V40 USB 2.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-store-n-go-dual-usb-c",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "Store 'n' Go Dual",
+      "modelName": "Store 'n' Go Dual USB Flash Drive Type-C",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/dual-usb-drive-type-c/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-store-n-go-dual-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "store 'n' go dual usb flash drive type-c",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Swivel Aluminum Casing",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Store 'n' Go Dual USB Flash Drive Type-C",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-store-n-go-v3-usb-3-0",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "Store 'n' Go V3",
+      "modelName": "Store 'n' Go V3 USB 3.0 Drive (Slide & Lock)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/v3-usb-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-store-n-go-v3-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "store 'n' go v3 usb 3.0 drive (slide & lock)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Slide and Lock Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Store 'n' Go V3 USB 3.0 Drive (Slide & Lock)",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-store-n-go-pinstripe",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "PinStripe",
+      "modelName": "Store 'n' Go PinStripe USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/pinstripe-usb-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-store-n-go-pinstripe.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "store 'n' go pinstripe usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Push and Pull PinStripe Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Store 'n' Go PinStripe USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-metal-executive-gold",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "Metal Executive",
+      "modelName": "Metal Executive Gold USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/metal-executive-gold/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-metal-executive-gold.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "metal executive gold usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 120,
+        "casingMaterial": "Waterproof Gold Metal Housing",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Metal Executive Gold USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-toughmax-military-grade",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "ToughMAX",
+      "modelName": "ToughMAX Military-Grade Crush-Resistant USB 3.0",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/toughmax-usb-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-toughmax-military-grade.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "toughmax military-grade crush-resistant usb 3.0",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 120,
+        "casingMaterial": "KyronMAX Composite Crush Resistant",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: ToughMAX Military-Grade Crush-Resistant USB 3.0",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-store-n-click-usb-3-2",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "Store 'n' Click",
+      "modelName": "Store 'n' Click USB 3.2 Gen 1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/store-n-click-usb-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-store-n-click-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "store 'n' click usb 3.2 gen 1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 80,
+        "casingMaterial": "Click Retractable Mechanism",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Store 'n' Click USB 3.2 Gen 1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-fingerprint-secure-usb-3-0",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "Fingerprint Secure",
+      "modelName": "Fingerprint Secure USB 3.0 Drive (Hardware Encrypted)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/fingerprint-secure-usb-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-fingerprint-secure-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "fingerprint secure usb 3.0 drive (hardware encrypted)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 160,
+        "casingMaterial": "Biometric Fingerprint Metal Housing",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Fingerprint Secure USB 3.0 Drive (Hardware Encrypted)",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-keypad-secure-usb-3-2",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "Keypad Secure",
+      "modelName": "Keypad Secure USB 3.2 Gen 1 Hardware Encrypted",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/keypad-secure-usb-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-keypad-secure-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "keypad secure usb 3.2 gen 1 hardware encrypted",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 160,
+        "casingMaterial": "Alphanumeric Keypad Housing",
+        "hardwareEncryption": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Keypad Secure USB 3.2 Gen 1 Hardware Encrypted",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-store-n-go-swivel-usb",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "Swivel Series",
+      "modelName": "Store 'n' Go Swivel USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/swivel-usb-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-store-n-go-swivel-usb.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "store 'n' go swivel usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Swivel Capless Metal/Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Store 'n' Go Swivel USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "verbatim-store-n-go-nano-usb",
+      "canonicalBrand": "Verbatim",
+      "displayBrand": "Verbatim",
+      "productLine": "Nano Series",
+      "modelName": "Store 'n' Go Nano USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.verbatim.com/prod/usb-drives/nano-usb-drive/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.verbatim.com/images/products/verbatim-store-n-go-nano-usb.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "verbatim",
+        "modelName": "store 'n' go nano usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 90,
+        "casingMaterial": "Low Profile Nano Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Verbatim verified usb-flash-drives model: Store 'n' Go Nano USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-blaze-b02",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Blaze Series",
+      "modelName": "Blaze B02 Textured USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Blaze_B02"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-blaze-b02.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "blaze b02 textured usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Hairline Finish Cap Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Blaze B02 Textured USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-marvel-m01",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Marvel Series",
+      "modelName": "Marvel M01 Aluminum USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Marvel_M01"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-marvel-m01.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "marvel m01 aluminum usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Scratch-Resistant Aluminum",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Marvel M01 Aluminum USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-mobile-c80-dual-usb-c",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Mobile C80",
+      "modelName": "Mobile C80 Dual USB Type-C & Type-A Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Mobile_C80"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-mobile-c80-dual-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "mobile c80 dual usb type-c & type-a drive",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Zinc Alloy 360 Swivel",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Mobile C80 Dual USB Type-C & Type-A Drive",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-mobile-c50-triple-interface",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Mobile C50",
+      "modelName": "Mobile C50 Triple-Interface Flash Drive (C/A/Micro)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Mobile_C50"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-mobile-c50-triple-interface.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "mobile c50 triple-interface flash drive (c/a/micro)",
+        "connectorType": "Triple USB-C, Type-A & Micro-USB",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Elastic Rubber Protective Cap",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Mobile C50 Triple-Interface Flash Drive (C/A/Micro)",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-touch-t01-mini-metal",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Touch Series",
+      "modelName": "Touch T01 Mini Metal USB 2.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Touch_T01"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-touch-t01-mini-metal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "touch t01 mini metal usb 2.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 20,
+        "casingMaterial": "Brushed Metal COB Waterproof",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Touch T01 Mini Metal USB 2.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-blaze-b20-diamond",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Blaze Series",
+      "modelName": "Blaze B20 Diamond Pattern Retractable USB 3.2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Blaze_B20"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-blaze-b20-diamond.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "blaze b20 diamond pattern retractable usb 3.2",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Diamond Cut Retractable Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Blaze B20 Diamond Pattern Retractable USB 3.2",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-firma-f80-classic-ring",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Firma F80",
+      "modelName": "Firma F80 Classic Ring Zinc-Alloy USB 2.0",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Firma_F80"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-firma-f80-classic-ring.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "firma f80 classic ring zinc-alloy usb 2.0",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 25,
+        "casingMaterial": "Unibody Zinc Alloy Ring",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Firma F80 Classic Ring Zinc-Alloy USB 2.0",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-touch-t07-rubber-waterproof",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Touch Series",
+      "modelName": "Touch T07 Rubber Waterproof USB 2.0 Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Touch_T07"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-touch-t07-rubber-waterproof.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "touch t07 rubber waterproof usb 2.0 drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 20,
+        "casingMaterial": "Rubberized Shockproof & Waterproof",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Touch T07 Rubber Waterproof USB 2.0 Drive",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-jewel-j80-titanium",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Jewel Series",
+      "modelName": "Jewel J80 Titanium Finish USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Jewel_J80"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-jewel-j80-titanium.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "jewel j80 titanium finish usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 120,
+        "casingMaterial": "Titanium Metal Ring Unibody",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Jewel J80 Titanium Finish USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "silicon-power-ultima-u02-classic",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Ultima Series",
+      "modelName": "Ultima U02 Classic Hairline USB 2.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/web/product-Ultima_U02"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/products/silicon-power-ultima-u02-classic.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "ultima u02 classic hairline usb 2.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 20,
+        "casingMaterial": "Hairline Matte Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power verified usb-flash-drives model: Ultima U02 Classic Hairline USB 2.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-c212-extreme-speed-1000mbps",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "C212 Extreme",
+      "modelName": "C212 Extreme Speed USB 3.2 Gen 2 (1000MBps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/c212/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-c212-extreme-speed-1000mbps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "c212 extreme speed usb 3.2 gen 2 (1000mbps)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 2",
+        "readSpeedMBps": 1000,
+        "casingMaterial": "Push-Slide Matte Black",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: C212 Extreme Speed USB 3.2 Gen 2 (1000MBps)",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-c175-pearl-usb-3-2",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "C175 Pearl",
+      "modelName": "C175 Pearl USB 3.2 Gen 1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/c175/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-c175-pearl-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "c175 pearl usb 3.2 gen 1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Streamlined Glossy Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: C175 Pearl USB 3.2 Gen 1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-c183-chic-usb-3-2",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "C183 Chic",
+      "modelName": "C183 Chic USB 3.2 Gen 1 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/c183/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-c183-chic-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "c183 chic usb 3.2 gen 1 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Classic Sleek Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: C183 Chic USB 3.2 Gen 1 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-m211-dual-usb-c",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "M211 Dual",
+      "modelName": "M211 Dual USB 3.2 Gen 1 Type-C Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/m211/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-m211-dual-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "m211 dual usb 3.2 gen 1 type-c flash drive",
+        "connectorType": "Dual USB-C & USB-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 150,
+        "casingMaterial": "COB Metal Swivel Casing",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: M211 Dual USB 3.2 Gen 1 Type-C Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-c211-gentleman-metal",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "C211 Gentleman",
+      "modelName": "C211 Subtle Gentleman Metal USB 3.2 Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/c211/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-c211-gentleman-metal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "c211 subtle gentleman metal usb 3.2 drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Aluminum Alloy Blue Metal",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: C211 Subtle Gentleman Metal USB 3.2 Drive",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-c186-push-pull",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "C186 Series",
+      "modelName": "C186 Push-Pull Retractable USB 3.2 Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/c186/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-c186-push-pull.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "c186 push-pull retractable usb 3.2 drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Push-Pull Capless Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: C186 Push-Pull Retractable USB 3.2 Drive",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-t183-tool-flash-drive",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "T183 Multi-Function",
+      "modelName": "T183 Tool Flash Drive Multi-Function Metal USB 3.2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/t183/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-t183-tool-flash-drive.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "t183 tool flash drive multi-function metal usb 3.2",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Zinc Alloy Ruler / Bottle Opener Tool",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: T183 Tool Flash Drive Multi-Function Metal USB 3.2",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-c171-minimalist-usb-2-0",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "C171 Series",
+      "modelName": "C171 Minimalist Compact USB 2.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/c171/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-c171-minimalist-usb-2-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "c171 minimalist compact usb 2.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 2.0",
+        "readSpeedMBps": 20,
+        "casingMaterial": "Compact Unibody Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: C171 Minimalist Compact USB 2.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-c162-modern-metal",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "C162 Modern",
+      "modelName": "C162 Modern Metal USB 3.2 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/c162/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-c162-modern-metal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "c162 modern metal usb 3.2 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 100,
+        "casingMaterial": "Zinc Alloy Ergonomic Grip",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: C162 Modern Metal USB 3.2 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "teamgroup-c143-swivel-cap",
+      "canonicalBrand": "TeamGroup",
+      "displayBrand": "TeamGroup",
+      "productLine": "C143 Series",
+      "modelName": "C143 Swivel Cap USB 3.0 Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.teamgroupinc.com/en/product-detail/usb-drive/team/c143/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.teamgroupinc.com/images/products/teamgroup-c143-swivel-cap.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "teamgroup",
+        "modelName": "c143 swivel cap usb 3.0 flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 90,
+        "casingMaterial": "Stainless Steel Rotating Swivel",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TeamGroup verified usb-flash-drives model: C143 Swivel Cap USB 3.0 Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-bar-plus-usb-3-1-metal",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "BAR Plus",
+      "modelName": "BAR Plus USB 3.1 Flash Drive (400MBps Metal)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/usb-flash-drives/usb-3-1-flash-drive-bar-plus-128gb-titan-gray-muf-128be3-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-bar-plus-usb-3-1-metal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "bar plus usb 3.1 flash drive (400mbps metal)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 400,
+        "casingMaterial": "Titan Gray Rugged Metal Unibody",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified usb-flash-drives model: BAR Plus USB 3.1 Flash Drive (400MBps Metal)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-fit-plus-usb-3-1-low-profile",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "FIT Plus",
+      "modelName": "FIT Plus USB 3.1 Low Profile Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/usb-flash-drives/usb-3-1-flash-drive-fit-plus-128gb-muf-128ab-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-fit-plus-usb-3-1-low-profile.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "fit plus usb 3.1 low profile flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 400,
+        "casingMaterial": "Seamless Low-Profile Nano Plastic",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified usb-flash-drives model: FIT Plus USB 3.1 Low Profile Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-type-c-flash-drive-blue",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Type-C Flash Drive",
+      "modelName": "Type-C Flash Drive USB 3.1 (400MBps Blue)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/usb-flash-drives/type-c-usb-flash-drive-128gb-muf-128da-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-type-c-flash-drive-blue.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "type-c flash drive usb 3.1 (400mbps blue)",
+        "connectorType": "USB Type-C",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 400,
+        "casingMaterial": "Ergonomic Blue Finish with Lanyard Hole",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified usb-flash-drives model: Type-C Flash Drive USB 3.1 (400MBps Blue)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-type-c-flash-drive-2024",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Type-C Flash Drive",
+      "modelName": "Type-C Flash Drive 2024 Edition (Aurora Silver)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/usb-flash-drives/type-c-usb-flash-drive-2024/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-type-c-flash-drive-2024.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "type-c flash drive 2024 edition (aurora silver)",
+        "connectorType": "USB Type-C",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 400,
+        "casingMaterial": "Aurora Silver Metal Coating",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified usb-flash-drives model: Type-C Flash Drive 2024 Edition (Aurora Silver)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-duo-plus-usb-3-1-dual",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "DUO Plus",
+      "modelName": "DUO Plus USB 3.1 Dual-Interface Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/usb-flash-drives/duo-plus-128gb-muf-128db-am/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-duo-plus-usb-3-1-dual.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "duo plus usb 3.1 dual-interface flash drive",
+        "connectorType": "Dual USB-C & USB-A (Attached Adapter)",
+        "usbStandard": "USB 3.1 Gen 1",
+        "readSpeedMBps": 400,
+        "casingMaterial": "Modular Dual-Port Plastic/Metal",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified usb-flash-drives model: DUO Plus USB 3.1 Dual-Interface Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-usb-3-0-metal-silver",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Metal Series",
+      "modelName": "USB 3.0 Flash Drive Metal Silver Classic",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/computing/memory-storage/usb-flash-drives/usb-3-0-drive-metal-silver/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-usb-3-0-metal-silver.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "usb 3.0 flash drive metal silver classic",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Stainless Steel Metal Unibody",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified usb-flash-drives model: USB 3.0 Flash Drive Metal Silver Classic",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-flash-voyager-gtx-usb-3-2",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "Flash Voyager GTX",
+      "modelName": "Flash Voyager GTX USB 3.2 High-Speed (440MBps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/usb-flash-drives/cmfvygtx3c-128gb/flash-voyager-gtx-usb-3-1-128gb-flash-drive-cmfvygtx3c-128gb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.corsair.com/images/products/corsair-flash-voyager-gtx-usb-3-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "flash voyager gtx usb 3.2 high-speed (440mbps)",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.2 Gen 1",
+        "readSpeedMBps": 440,
+        "casingMaterial": "Zinc-Alloy Housing with Aluminum Accents",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair verified usb-flash-drives model: Flash Voyager GTX USB 3.2 High-Speed (440MBps)",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-flash-voyager-gt-usb-3-0",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "Flash Voyager GT",
+      "modelName": "Flash Voyager GT USB 3.0 Rugged Flash Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/usb-flash-drives/cmfvygt3b-128gb/flash-voyager-gt-usb-3-0-128gb-flash-drive-cmfvygt3b-128gb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.corsair.com/images/products/corsair-flash-voyager-gt-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "flash voyager gt usb 3.0 rugged flash drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 190,
+        "casingMaterial": "All-Rubber Shockproof Water-Resistant",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair verified usb-flash-drives model: Flash Voyager GT USB 3.0 Rugged Flash Drive",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-flash-voyager-usb-3-0",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "Flash Voyager",
+      "modelName": "Flash Voyager USB 3.0 Water-Resistant Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/usb-flash-drives/cmfvy3a-128gb/flash-voyager-usb-3-0-128gb-flash-drive-cmfvy3a-128gb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.corsair.com/images/products/corsair-flash-voyager-usb-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "flash voyager usb 3.0 water-resistant drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 150,
+        "casingMaterial": "Durable Rubberized Waterproof Casing",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair verified usb-flash-drives model: Flash Voyager USB 3.0 Water-Resistant Drive",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-flash-survivor-stealth-mil-spec",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "Flash Survivor Stealth",
+      "modelName": "Flash Survivor Stealth Mil-Spec Aircraft Aluminum",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/usb-flash-drives/cmfss3b-128gb/flash-survivor-stealth-64gb-usb-3-0-flash-drive-cmfss3b-128gb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.corsair.com/images/products/corsair-flash-survivor-stealth-mil-spec.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "flash survivor stealth mil-spec aircraft aluminum",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 140,
+        "casingMaterial": "Aircraft-Grade CNC Aluminum 200m Waterproof",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair verified usb-flash-drives model: Flash Survivor Stealth Mil-Spec Aircraft Aluminum",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-flash-voyager-vega-compact",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "Flash Voyager Vega",
+      "modelName": "Flash Voyager Vega Ultra-Compact Metal Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/usb-flash-drives/cmfvyvega-128gb/flash-voyager-vega-usb-3-0-128gb-flash-drive-cmfvyvega-128gb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.corsair.com/images/products/corsair-flash-voyager-vega-compact.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "flash voyager vega ultra-compact metal drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Scratch-Resistant Zinc Alloy Low Profile",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair verified usb-flash-drives model: Flash Voyager Vega Ultra-Compact Metal Drive",
+      "status": "staged"
+    },
+    {
+      "id": "corsair-flash-voyager-slider-x1",
+      "canonicalBrand": "Corsair",
+      "displayBrand": "Corsair",
+      "productLine": "Flash Voyager Slider",
+      "modelName": "Flash Voyager Slider X1 Capless USB 3.0 Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.corsair.com/us/en/p/usb-flash-drives/cmfsl3x1-128gb/flash-voyager-slider-x1-128gb-usb-3-0-flash-drive-cmfsl3x1-128gb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.corsair.com/images/products/corsair-flash-voyager-slider-x1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "corsair",
+        "modelName": "flash voyager slider x1 capless usb 3.0 drive",
+        "connectorType": "USB Type-A",
+        "usbStandard": "USB 3.0",
+        "readSpeedMBps": 130,
+        "casingMaterial": "Capless Sliding Housing with Blue Activity LED",
+        "hardwareEncryption": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Corsair verified usb-flash-drives model: Flash Voyager Slider X1 Capless USB 3.0 Drive",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Samsung",
+      "leafKey": "usb-flash-drives",
+      "reason": "Samsung manufactures 6 flagship USB flash drives across its BAR Plus, FIT Plus, and Type-C lines.",
+      "officialSourceUrl": "https://www.samsung.com/us/computing/memory-storage/usb-flash-drives/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "BAR Plus USB 3.1 Flash Drive (400MBps Metal)",
+        "FIT Plus USB 3.1 Low Profile Flash Drive",
+        "Type-C Flash Drive USB 3.1 (400MBps Blue)",
+        "Type-C Flash Drive 2024 Edition (Aurora Silver)",
+        "DUO Plus USB 3.1 Dual-Interface Flash Drive",
+        "USB 3.0 Flash Drive Metal Silver Classic"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Corsair",
+      "leafKey": "usb-flash-drives",
+      "reason": "Corsair produces 6 high-durability and high-speed enthusiast flash drives in its Flash Voyager and Flash Survivor families.",
+      "officialSourceUrl": "https://www.corsair.com/us/en/c/usb-flash-drives",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Flash Voyager GTX USB 3.2 High-Speed (440MBps)",
+        "Flash Voyager GT USB 3.0 Rugged Flash Drive",
+        "Flash Voyager USB 3.0 Water-Resistant Drive",
+        "Flash Survivor Stealth Mil-Spec Aircraft Aluminum",
+        "Flash Voyager Vega Ultra-Compact Metal Drive",
+        "Flash Voyager Slider X1 Capless USB 3.0 Drive"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

@@ -1,0 +1,3472 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "cleansers",
+  "displayName": "Facial Cleansers",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "la-prairie-foam-cleanser",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Cleansing",
+      "modelName": "Foam Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/cleansers/foam-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-foam-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "foam cleanser",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Cellular Complex",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship Swiss cleanser Foam Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-purifying-cream-cleanser",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Cleansing",
+      "modelName": "Purifying Cream Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/cleansers/purifying-cream-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-purifying-cream-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "purifying cream cleanser",
+        "skinTypeTarget": "Dry & Sensitive",
+        "textureType": "Cream",
+        "volumeMl": 200,
+        "keyIngredients": "Cellular Complex & Plant Lipids",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship Swiss cleanser Purifying Cream Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-cellular-cleansing-water",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Cleansing",
+      "modelName": "Cellular Cleansing Water for Eyes and Face",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/cleansers/cellular-cleansing-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-cellular-cleansing-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "cellular cleansing water for eyes and face",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 150,
+        "keyIngredients": "Glacier Water & Cellular Complex",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship Swiss cleanser Cellular Cleansing Water for Eyes and Face",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-supreme-balm-cleanser",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Cleansing",
+      "modelName": "Supreme Balm Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/cleansers/supreme-balm-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-supreme-balm-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "supreme balm cleanser",
+        "skinTypeTarget": "Mature & Dry",
+        "textureType": "Balm",
+        "volumeMl": 100,
+        "keyIngredients": "Caviar Premier & Precious Oils",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship Swiss cleanser Supreme Balm Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-crystal-micellar-water",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Cleansing",
+      "modelName": "Crystal Micellar Water Eyes & Face",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/cleansers/crystal-micellar-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-crystal-micellar-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "crystal micellar water eyes & face",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Micellar Water",
+        "volumeMl": 150,
+        "keyIngredients": "Liquid Crystal Technology",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship Swiss cleanser Crystal Micellar Water Eyes & Face",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-gentle-eye-makeup-remover",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Cleansing",
+      "modelName": "Gentle Eye Makeup Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/cleansers/gentle-eye-makeup-remover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-gentle-eye-makeup-remover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "gentle eye makeup remover",
+        "skinTypeTarget": "Sensitive Eye Area",
+        "textureType": "Liquid",
+        "volumeMl": 125,
+        "keyIngredients": "Cellular Soothing Complex",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship Swiss cleanser Gentle Eye Makeup Remover",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-cleansing-foam",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Cleansing",
+      "modelName": "The Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/cleansers/cleansing-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-cleansing-foam.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the cleansing foam",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Miracle Broth & Sea Algae Fibers",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth cleanser The Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-cleansing-gel",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Cleansing",
+      "modelName": "The Cleansing Gel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/cleansers/cleansing-gel"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-cleansing-gel.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the cleansing gel",
+        "skinTypeTarget": "Oily & Combination",
+        "textureType": "Gel",
+        "volumeMl": 200,
+        "keyIngredients": "Miracle Broth & Deconstructed Waters",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth cleanser The Cleansing Gel",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-cleansing-lotion",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Cleansing",
+      "modelName": "The Cleansing Lotion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/cleansers/cleansing-lotion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-cleansing-lotion.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the cleansing lotion",
+        "skinTypeTarget": "Dry & Normal",
+        "textureType": "Cream",
+        "volumeMl": 200,
+        "keyIngredients": "Miracle Broth & Sea Pearl Extracts",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth cleanser The Cleansing Lotion",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-cleansing-oil",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Cleansing",
+      "modelName": "The Cleansing Oil",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/cleansers/cleansing-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-cleansing-oil.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the cleansing oil",
+        "skinTypeTarget": "Dry & Sensitive",
+        "textureType": "Oil",
+        "volumeMl": 200,
+        "keyIngredients": "Marine Oils & Miracle Broth",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth cleanser The Cleansing Oil",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-cleansing-micellar-water",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Cleansing",
+      "modelName": "The Cleansing Micellar Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/cleansers/cleansing-micellar-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-cleansing-micellar-water.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the cleansing micellar water",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 200,
+        "keyIngredients": "Marine Micelles & Miracle Broth",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth cleanser The Cleansing Micellar Water",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-essence-foaming-cleanser",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Cleansing",
+      "modelName": "The Essence Foaming Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/cleansers/essence-foaming-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-essence-foaming-cleanser.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the essence foaming cleanser",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Concentrated Miracle Broth",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth cleanser The Essence Foaming Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-resurfacing-treatment-wash",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Cleansing",
+      "modelName": "The Resurfacing Treatment Clarifying Wash",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/cleansers/resurfacing-treatment-wash"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-resurfacing-treatment-wash.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the resurfacing treatment clarifying wash",
+        "skinTypeTarget": "Combination & Uneven",
+        "textureType": "Gel",
+        "volumeMl": 100,
+        "keyIngredients": "Marine Enzyme Acid Complex",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth cleanser The Resurfacing Treatment Clarifying Wash",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-softening-cleansing-foam",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Prestige Cleansing Ritual",
+      "modelName": "Softening Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/softening-cleansing-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-softening-cleansing-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "softening cleansing foam",
+        "skinTypeTarget": "Normal to Dry",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Skin-Empowering Illuminator & Tremella",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury cleanser Softening Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-clarifying-cleansing-foam",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Prestige Cleansing Ritual",
+      "modelName": "Clarifying Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/clarifying-cleansing-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-clarifying-cleansing-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "clarifying cleansing foam",
+        "skinTypeTarget": "Oily to Combination",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Peony Extract & Micro-Beads",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury cleanser Clarifying Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-cleansing-cream-oil",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Prestige Cleansing Ritual",
+      "modelName": "Cleansing Cream Oil",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/cleansing-cream-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "130ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-cleansing-cream-oil.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "cleansing cream oil",
+        "skinTypeTarget": "Dry & Mature",
+        "textureType": "Cream",
+        "volumeMl": 130,
+        "keyIngredients": "Meadowfoam Seed Oil & Argan",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury cleanser Cleansing Cream Oil",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-cleansing-clay-scrub",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Prestige Cleansing Ritual",
+      "modelName": "Cleansing Clay Scrub",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/cleansing-clay-scrub"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-cleansing-clay-scrub.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "cleansing clay scrub",
+        "skinTypeTarget": "Congested & Uneven",
+        "textureType": "Clay",
+        "volumeMl": 100,
+        "keyIngredients": "Natural Mineral Clay & Rose Apple",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury cleanser Cleansing Clay Scrub",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-micellar-cleansing-water",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Prestige Cleansing Ritual",
+      "modelName": "Micellar Cleansing Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/micellar-cleansing-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-micellar-cleansing-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "micellar cleansing water",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 200,
+        "keyIngredients": "Rosemary Leaf Water & Hyaluronic",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury cleanser Micellar Cleansing Water",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-eye-lip-makeup-remover",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Prestige Cleansing Ritual",
+      "modelName": "Eye and Lip Makeup Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/eye-lip-makeup-remover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-eye-lip-makeup-remover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "eye and lip makeup remover",
+        "skinTypeTarget": "Delicate Eye/Lip Area",
+        "textureType": "Liquid",
+        "volumeMl": 125,
+        "keyIngredients": "Camellia Oil & Bio-Hyaluronic",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury cleanser Eye and Lip Makeup Remover",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-synactif-soap",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Prestige Cleansing Ritual",
+      "modelName": "Synactif Soap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/synactif-soap"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-synactif-soap.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "synactif soap",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Solid Bar",
+        "volumeMl": 100,
+        "keyIngredients": "MACC-PD Lymphatic Complex",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury cleanser Synactif Soap",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-lyslait-cleansing-milk",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Lyslait Cleansing Milk",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/lyslait-cleansing-milk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "250ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-lyslait-cleansing-milk.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "lyslait cleansing milk",
+        "skinTypeTarget": "Dry & Sensitive",
+        "textureType": "Milk",
+        "volumeMl": 250,
+        "keyIngredients": "White Lily Extract & Orange Blossom",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Lyslait Cleansing Milk",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-cleansing-milk-with-sage",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Cleansing Milk with Sage",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/cleansing-milk-with-sage"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "250ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-cleansing-milk-with-sage.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "cleansing milk with sage",
+        "skinTypeTarget": "Combination & Oily",
+        "textureType": "Milk",
+        "volumeMl": 250,
+        "keyIngredients": "Sage Extract & Essential Oils",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Cleansing Milk with Sage",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-gentle-cleansing-gel-tropical-resins",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Gentle Cleansing Gel with Tropical Resins",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/gentle-cleansing-gel-tropical-resins"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "120ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-gentle-cleansing-gel-tropical-resins.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "gentle cleansing gel with tropical resins",
+        "skinTypeTarget": "Blemish-prone & Oily",
+        "textureType": "Gel",
+        "volumeMl": 120,
+        "keyIngredients": "Tropical Resins & Marshmallow",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Gentle Cleansing Gel with Tropical Resins",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-buff-and-wash-facial-gel",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Buff and Wash Facial Gel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/buff-and-wash-facial-gel"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-buff-and-wash-facial-gel.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "buff and wash facial gel",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Exfoliating Gel",
+        "volumeMl": 100,
+        "keyIngredients": "Bamboo Microspheres & Lemon",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Buff and Wash Facial Gel",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-radiance-foaming-cream",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Radiance Foaming Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/radiance-foaming-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-radiance-foaming-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "radiance foaming cream",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Peony & Grapefruit Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Radiance Foaming Cream",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-triple-oil-balm-makeup-remover",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Triple-Oil Balm Make-Up Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/triple-oil-balm-makeup-remover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-triple-oil-balm-makeup-remover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "triple-oil balm make-up remover",
+        "skinTypeTarget": "Dry & Mature",
+        "textureType": "Balm",
+        "volumeMl": 125,
+        "keyIngredients": "Babassu & Shea & Macadamia Oil",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Triple-Oil Balm Make-Up Remover",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-eau-efficace-micellar-water",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Eau Efficace Gentle Cleansing Micellar Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/eau-efficace-micellar-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "300ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-eau-efficace-micellar-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "eau efficace gentle cleansing micellar water",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 300,
+        "keyIngredients": "Plant Sap & Linden Blossom",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Eau Efficace Gentle Cleansing Micellar Water",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-soapless-cleansing-bar",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Soapless Facial Cleansing Bar",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/soapless-cleansing-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "85ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-soapless-cleansing-bar.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "soapless facial cleansing bar",
+        "skinTypeTarget": "Oily & Sensitive",
+        "textureType": "Solid Bar",
+        "volumeMl": 85,
+        "keyIngredients": "Calendula & Tropical Resins",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Soapless Facial Cleansing Bar",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-eye-lip-gel-remover",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Eye and Lip Gel Make-Up Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/eye-lip-gel-remover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "120ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-eye-lip-gel-remover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "eye and lip gel make-up remover",
+        "skinTypeTarget": "Sensitive Eyes",
+        "textureType": "Gel",
+        "volumeMl": 120,
+        "keyIngredients": "Cornflower & Neroli Extract",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Eye and Lip Gel Make-Up Remover",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-phyto-blanc-la-mousse",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Phyto-Cosmetology Cleansing",
+      "modelName": "Phyto-Blanc La Mousse Brightening Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/cleansers/phyto-blanc-la-mousse"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-phyto-blanc-la-mousse.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "phyto-blanc la mousse brightening foam",
+        "skinTypeTarget": "Dull & Uneven",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "White Mulberry & Vitamin C Complex",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical cleanser Phyto-Blanc La Mousse Brightening Foam",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-cleansing-care-in-mousse",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Abeille Royale Cleansing Care-in-Mousse",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-cleansing-care-in-mousse"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "175ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-cleansing-care-in-mousse.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale cleansing care-in-mousse",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 175,
+        "keyIngredients": "Dynamic BlackBee Repair Honey",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Abeille Royale Cleansing Care-in-Mousse",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-rich-cleansing-foam",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Orchidée Impériale The Rich Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-rich-cleansing-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-rich-cleansing-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale the rich cleansing foam",
+        "skinTypeTarget": "Mature & Dry",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Orchid Essential Water & Complex",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Orchidée Impériale The Rich Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-cleansing-oil",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Abeille Royale Cleansing Oil Anti-Pollution",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-cleansing-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-cleansing-oil.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale cleansing oil anti-pollution",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Oil",
+        "volumeMl": 150,
+        "keyIngredients": "Ouessant Honey & Royal Jelly",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Abeille Royale Cleansing Oil Anti-Pollution",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-mousse-de-beaute-gentle-foam",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Mousse de Beauté Gentle Foam Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/mousse-de-beaute-gentle-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-mousse-de-beaute-gentle-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "mousse de beauté gentle foam cleanser",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 150,
+        "keyIngredients": "Nigella Flower Oil",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Mousse de Beauté Gentle Foam Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-lait-de-beaute-cleansing-milk",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Lait de Beauté Cleansing Milk",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/lait-de-beaute-cleansing-milk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-lait-de-beaute-cleansing-milk.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "lait de beauté cleansing milk",
+        "skinTypeTarget": "Dry & Normal",
+        "textureType": "Milk",
+        "volumeMl": 200,
+        "keyIngredients": "Nigella Flower Oil & Meadowfoam",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Lait de Beauté Cleansing Milk",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-eau-de-beaute-micellar-water",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Eau de Beauté Micellar Cleansing Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/eau-de-beaute-micellar-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-eau-de-beaute-micellar-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "eau de beauté micellar cleansing water",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 200,
+        "keyIngredients": "Nigella Flower Water",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Eau de Beauté Micellar Cleansing Water",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-creme-de-beaute-cleansing-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Crème de Beauté Pure Radiance Cleansing Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/creme-de-beaute-cleansing-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-creme-de-beaute-cleansing-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "crème de beauté pure radiance cleansing cream",
+        "skinTypeTarget": "Dry & Mature",
+        "textureType": "Cream",
+        "volumeMl": 200,
+        "keyIngredients": "Camellia Oil & White Lily",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Crème de Beauté Pure Radiance Cleansing Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-essence-in-lotion",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Orchidée Impériale The Essence-in-Lotion Wash",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-essence-in-lotion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "140ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-essence-in-lotion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale the essence-in-lotion wash",
+        "skinTypeTarget": "Mature",
+        "textureType": "Lotion",
+        "volumeMl": 140,
+        "keyIngredients": "Orchid Molecular Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Orchidée Impériale The Essence-in-Lotion Wash",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-honey-whipped-cleanser",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Abeille Royale Honey Whipped Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-honey-whipped-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-honey-whipped-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale honey whipped cleanser",
+        "skinTypeTarget": "Dry & Sensitive",
+        "textureType": "Whipped Cream",
+        "volumeMl": 150,
+        "keyIngredients": "Royal Jelly & Corsican Honey",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Abeille Royale Honey Whipped Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-beaute-des-yeux-eye-remover",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Haute Beauté Cleansing",
+      "modelName": "Beauté des Yeux Bi-Phase Eye Makeup Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/beaute-des-yeux-eye-remover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-beaute-des-yeux-eye-remover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "beauté des yeux bi-phase eye makeup remover",
+        "skinTypeTarget": "Sensitive Eyes",
+        "textureType": "Liquid",
+        "volumeMl": 125,
+        "keyIngredients": "Cornflower Extract",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain Abeille Royale/Orchidée cleanser Beauté des Yeux Bi-Phase Eye Makeup Remover",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-facial-treatment-gentle-cleanser",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Cleansing Collection",
+      "modelName": "Facial Treatment Gentle Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/facial-treatment-gentle-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "120ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-facial-treatment-gentle-cleanser.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "facial treatment gentle cleanser",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 120,
+        "keyIngredients": "PITERA & White Willow Bark",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment cleanser Facial Treatment Gentle Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-facial-treatment-cleansing-oil",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Cleansing Collection",
+      "modelName": "Facial Treatment Cleansing Oil",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/facial-treatment-cleansing-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "250ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-facial-treatment-cleansing-oil.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "facial treatment cleansing oil",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Oil",
+        "volumeMl": 250,
+        "keyIngredients": "PITERA & Apple Seed Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment cleanser Facial Treatment Cleansing Oil",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-facial-treatment-cleansing-gel",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Cleansing Collection",
+      "modelName": "Facial Treatment Cleansing Gel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/facial-treatment-cleansing-gel"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "80ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-facial-treatment-cleansing-gel.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "facial treatment cleansing gel",
+        "skinTypeTarget": "Combination & Oily",
+        "textureType": "Gel",
+        "volumeMl": 80,
+        "keyIngredients": "PITERA & Marine Fennel",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment cleanser Facial Treatment Cleansing Gel",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-men-moisturizing-cleanser",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Cleansing Collection",
+      "modelName": "Men Moisturizing Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/men-moisturizing-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "120ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-men-moisturizing-cleanser.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "men moisturizing cleanser",
+        "skinTypeTarget": "Men / Oily Skin",
+        "textureType": "Foam",
+        "volumeMl": 120,
+        "keyIngredients": "PITERA & Menthol",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment cleanser Men Moisturizing Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-brightening-gentle-cleanser",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Cleansing Collection",
+      "modelName": "Brightening Gentle Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/brightening-gentle-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "120ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-brightening-gentle-cleanser.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "brightening gentle cleanser",
+        "skinTypeTarget": "Dull & Uneven",
+        "textureType": "Foam",
+        "volumeMl": 120,
+        "keyIngredients": "PITERA & Niacinamide",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment cleanser Brightening Gentle Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-masterpiece-cleansing-essence",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Cleansing Collection",
+      "modelName": "Masterpiece Pitera Cleansing Essence",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/masterpiece-cleansing-essence"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-masterpiece-cleansing-essence.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "masterpiece pitera cleansing essence",
+        "skinTypeTarget": "Mature & Dry",
+        "textureType": "Lotion",
+        "volumeMl": 150,
+        "keyIngredients": "Concentrated PITERA & Arakawa Peach",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment cleanser Masterpiece Pitera Cleansing Essence",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-la-mousse-cleansing-cream-to-foam",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "La Mousse Anti-Pollution Cleansing Cream-to-Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/la-mousse-cleansing-cream-to-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-la-mousse-cleansing-cream-to-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "la mousse anti-pollution cleansing cream-to-foam",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 150,
+        "keyIngredients": "Blue Micro-Algae & Marine Salicornia",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser La Mousse Anti-Pollution Cleansing Cream-to-Foam",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-l-huile-cleansing-oil",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "L'Huile Anti-Pollution Cleansing Oil",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/l-huile-cleansing-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-l-huile-cleansing-oil.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "l'huile anti-pollution cleansing oil",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Oil",
+        "volumeMl": 150,
+        "keyIngredients": "Blue Micro-Algae",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser L'Huile Anti-Pollution Cleansing Oil",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-lait-fraicheur-cleansing-milk",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "Le Lait Fraîcheur D'Onction Cleansing Milk-to-Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-lait-fraicheur-cleansing-milk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-lait-fraicheur-cleansing-milk.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le lait fraîcheur d'onction cleansing milk-to-water",
+        "skinTypeTarget": "Normal to Dry",
+        "textureType": "Milk",
+        "volumeMl": 150,
+        "keyIngredients": "Marine Active Complex",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser Le Lait Fraîcheur D'Onction Cleansing Milk-to-Water",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-l-eau-micellaire-cleansing-water",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "L'Eau Micellaire Anti-Pollution Cleansing Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/l-eau-micellaire-cleansing-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-l-eau-micellaire-cleansing-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "l'eau micellaire anti-pollution cleansing water",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 150,
+        "keyIngredients": "Marine Salicornia Water",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser L'Eau Micellaire Anti-Pollution Cleansing Water",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-gel-cleansing-gel",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "Le Gel Anti-Pollution Cleansing Gel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-gel-cleansing-gel"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-gel-cleansing-gel.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le gel anti-pollution cleansing gel",
+        "skinTypeTarget": "Combination & Oily",
+        "textureType": "Gel",
+        "volumeMl": 150,
+        "keyIngredients": "Blue Micro-Algae & Marine Water",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser Le Gel Anti-Pollution Cleansing Gel",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-les-grains-de-vanille",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "Sublimage Les Grains de Vanille Exfoliating Gel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-les-grains-de-vanille"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-les-grains-de-vanille.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage les grains de vanille exfoliating gel",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Exfoliating Gel",
+        "volumeMl": 50,
+        "keyIngredients": "Vanilla Planifolia Seeds & Jojoba",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser Sublimage Les Grains de Vanille Exfoliating Gel",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-l-eau-de-demaquillage",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "Sublimage L'Eau de Démaquillage",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-l-eau-de-demaquillage"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-l-eau-de-demaquillage.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage l'eau de démaquillage",
+        "skinTypeTarget": "Mature & Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 125,
+        "keyIngredients": "Vanilla Planifolia Water & Harungana",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser Sublimage L'Eau de Démaquillage",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-la-mousse",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "Sublimage La Mousse Radiance Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-la-mousse"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-la-mousse.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage la mousse radiance cleansing foam",
+        "skinTypeTarget": "Mature & Dry",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Vanilla Planifolia Water & Harungana",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser Sublimage La Mousse Radiance Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-demaquillant-yeux-intense",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "Démaquillant Yeux Intense Gentle Bi-Phase Eye Makeup Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/demaquillant-yeux-intense"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-demaquillant-yeux-intense.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "démaquillant yeux intense gentle bi-phase eye makeup remover",
+        "skinTypeTarget": "Sensitive Eyes",
+        "textureType": "Liquid",
+        "volumeMl": 100,
+        "keyIngredients": "Cornflower & Rose Floral Water",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser Démaquillant Yeux Intense Gentle Bi-Phase Eye Makeup Remover",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-no1-powder-to-foam-cleanser",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "N°1 de Chanel Powder-to-Foam Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/no1-powder-to-foam-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "25ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-no1-powder-to-foam-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "n°1 de chanel powder-to-foam cleanser",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Powder",
+        "volumeMl": 25,
+        "keyIngredients": "Red Camellia Extract & Camellia Oil",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser N°1 de Chanel Powder-to-Foam Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-masque-anti-pollution",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "Le Masque Anti-Pollution Vitamin Clay Mask Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-masque-anti-pollution"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "75ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-masque-anti-pollution.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le masque anti-pollution vitamin clay mask cleanser",
+        "skinTypeTarget": "Oily & Congested",
+        "textureType": "Clay",
+        "volumeMl": 75,
+        "keyIngredients": "French White Clay & Vitamin Complex",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser Le Masque Anti-Pollution Vitamin Clay Mask Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-tonique-invigorating-cleanser",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Soin Nettoyant",
+      "modelName": "Le Tonique Anti-Pollution Invigorating Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-tonique-invigorating-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "160ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-tonique-invigorating-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le tonique anti-pollution invigorating cleanser",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Lotion",
+        "volumeMl": 160,
+        "keyIngredients": "Blue Micro-Algae Active Water",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision skincare cleanser Le Tonique Anti-Pollution Invigorating Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "dior-la-mousse-off-on",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "La Mousse OFF/ON Foaming Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/la-mousse-off-on"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-la-mousse-off-on.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "la mousse off/on foaming cleanser",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 150,
+        "keyIngredients": "French Nymphea White Water Lily",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula La Mousse OFF/ON Foaming Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-totale-2in1-cleanser",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Capture Totale 2-in-1 Gentle Purifying Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-totale-2in1-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "110ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-totale-2in1-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture totale 2-in-1 gentle purifying cleanser",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 110,
+        "keyIngredients": "Fermented Longoza Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Capture Totale 2-in-1 Gentle Purifying Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-la-mousse-micellaire",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Prestige La Mousse Micellaire Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-la-mousse-micellaire"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "120ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-la-mousse-micellaire.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "prestige la mousse micellaire cleansing foam",
+        "skinTypeTarget": "Mature & Dry",
+        "textureType": "Foam",
+        "volumeMl": 120,
+        "keyIngredients": "Rose de Granville Micro-Nutrients",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Prestige La Mousse Micellaire Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-le-baume-demaquillant",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Prestige Le Baume Démaquillant Cleansing Balm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-le-baume-demaquillant"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-le-baume-demaquillant.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "prestige le baume démaquillant cleansing balm",
+        "skinTypeTarget": "Dry & Delicate",
+        "textureType": "Balm",
+        "volumeMl": 150,
+        "keyIngredients": "Rose de Granville Waxes",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Prestige Le Baume Démaquillant Cleansing Balm",
+      "status": "staged"
+    },
+    {
+      "id": "dior-l-huile-demaquillante",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "L'Huile Démaquillante Cleansing Oil",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/l-huile-demaquillante"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-l-huile-demaquillante.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "l'huile démaquillante cleansing oil",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Oil",
+        "volumeMl": 200,
+        "keyIngredients": "Purifying French Water Lily & Meadowfoam",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula L'Huile Démaquillante Cleansing Oil",
+      "status": "staged"
+    },
+    {
+      "id": "dior-le-lait-demaquillant",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Le Lait Démaquillant Cleansing Milk",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/le-lait-demaquillant"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-le-lait-demaquillant.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "le lait démaquillant cleansing milk",
+        "skinTypeTarget": "Dry & Sensitive",
+        "textureType": "Milk",
+        "volumeMl": 200,
+        "keyIngredients": "Nymphea Extract & Jasmine Wax",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Le Lait Démaquillant Cleansing Milk",
+      "status": "staged"
+    },
+    {
+      "id": "dior-l-eau-demaquillante",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "L'Eau Démaquillante Cleansing Micellar Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/l-eau-demaquillante"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-l-eau-demaquillante.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "l'eau démaquillante cleansing micellar water",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 200,
+        "keyIngredients": "French Water Lily & Hyaluronic",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula L'Eau Démaquillante Cleansing Micellar Water",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-totale-essence-lotion",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Capture Totale Intensive Essence Cleansing Lotion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-totale-essence-lotion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-totale-essence-lotion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture totale intensive essence cleansing lotion",
+        "skinTypeTarget": "Aging & Dull",
+        "textureType": "Lotion",
+        "volumeMl": 150,
+        "keyIngredients": "Fermented Longoza & Bio-Peptides",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Capture Totale Intensive Essence Cleansing Lotion",
+      "status": "staged"
+    },
+    {
+      "id": "dior-hydra-life-fresh-cleanser",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Hydra Life Fresh Cleanser Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/hydra-life-fresh-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "190ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-hydra-life-fresh-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "hydra life fresh cleanser foam",
+        "skinTypeTarget": "Dehydrated & Normal",
+        "textureType": "Foam",
+        "volumeMl": 190,
+        "keyIngredients": "White Tea Leaf & Mallow Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Hydra Life Fresh Cleanser Foam",
+      "status": "staged"
+    },
+    {
+      "id": "dior-hydra-life-micellar-milk",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Hydra Life Micellar Milk No-Rinse Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/hydra-life-micellar-milk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-hydra-life-micellar-milk.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "hydra life micellar milk no-rinse cleanser",
+        "skinTypeTarget": "Sensitive & Dry",
+        "textureType": "Micellar Milk",
+        "volumeMl": 200,
+        "keyIngredients": "Rice Milk & Mallow Extract",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Hydra Life Micellar Milk No-Rinse Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "dior-homme-dermo-system-cleanser",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Dior Homme Dermo System Cleansing Gel",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/homme-dermo-system-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-homme-dermo-system-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior homme dermo system cleansing gel",
+        "skinTypeTarget": "Men / Oily & Normal",
+        "textureType": "Gel",
+        "volumeMl": 125,
+        "keyIngredients": "Bio-Ferment & Vitamin E",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Dior Homme Dermo System Cleansing Gel",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-le-sucre-de-gommage",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Dior Skincare Cleansing",
+      "modelName": "Prestige Le Sucre de Gommage Exfoliating Polish",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-le-sucre-de-gommage"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-le-sucre-de-gommage.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "prestige le sucre de gommage exfoliating polish",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Sugar Scrub",
+        "volumeMl": 150,
+        "keyIngredients": "Rose Sugar Micro-Crystals",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige cleansing formula Prestige Le Sucre de Gommage Exfoliating Polish",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-advanced-night-cleansing-gelee",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Advanced Night Cleansing Gelée with 15 Amino Acids",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/advanced-night-cleansing-gelee"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-advanced-night-cleansing-gelee.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "advanced night cleansing gelée with 15 amino acids",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Gel",
+        "volumeMl": 100,
+        "keyIngredients": "15 Amino Acids & Night Peptide",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Advanced Night Cleansing Gelée with 15 Amino Acids",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-perfectly-clean-foam-cleanser",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Perfectly Clean Multi-Action Foam Cleanser / Purifying Mask",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/perfectly-clean-foam-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-perfectly-clean-foam-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "perfectly clean multi-action foam cleanser / purifying mask",
+        "skinTypeTarget": "Normal to Combination",
+        "textureType": "Foam",
+        "volumeMl": 150,
+        "keyIngredients": "Zinc PCA & Botanical Extracts",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Perfectly Clean Multi-Action Foam Cleanser / Purifying Mask",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-perfectly-clean-creme-cleanser",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Perfectly Clean Multi-Action Creme Cleanser / Moisture Mask",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/perfectly-clean-creme-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-perfectly-clean-creme-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "perfectly clean multi-action creme cleanser / moisture mask",
+        "skinTypeTarget": "Dry Skin",
+        "textureType": "Cream",
+        "volumeMl": 150,
+        "keyIngredients": "Moisture Barrier Lipids",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Perfectly Clean Multi-Action Creme Cleanser / Moisture Mask",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-perfectly-clean-triple-action",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Perfectly Clean Triple-Action Cleanser / Toner / Makeup Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/perfectly-clean-triple-action"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-perfectly-clean-triple-action.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "perfectly clean triple-action cleanser / toner / makeup remover",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 150,
+        "keyIngredients": "Waterlily Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Perfectly Clean Triple-Action Cleanser / Toner / Makeup Remover",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-advanced-night-cleansing-balm",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Advanced Night Cleansing Balm with Micro-Nutrients",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/advanced-night-cleansing-balm"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "70ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-advanced-night-cleansing-balm.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "advanced night cleansing balm with micro-nutrients",
+        "skinTypeTarget": "Dry & Normal",
+        "textureType": "Balm",
+        "volumeMl": 70,
+        "keyIngredients": "Lipid-Rich Plant Oils & Amino Acids",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Advanced Night Cleansing Balm with Micro-Nutrients",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-rich-creme-cleanser",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Re-Nutriv Rich Creme Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/re-nutriv-rich-creme-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-rich-creme-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv rich creme cleanser",
+        "skinTypeTarget": "Mature & Dry",
+        "textureType": "Cream",
+        "volumeMl": 125,
+        "keyIngredients": "Black Diamond Truffle Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Re-Nutriv Rich Creme Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-hydrating-foam",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Re-Nutriv Hydrating Foam Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/re-nutriv-hydrating-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-hydrating-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv hydrating foam cleanser",
+        "skinTypeTarget": "Mature",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Ultimate Lift Floralixir Dew",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Re-Nutriv Hydrating Foam Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-perfectly-clean-infusion-lotion",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Perfectly Clean Infusion Balancing Essence Lotion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/perfectly-clean-infusion-lotion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "400ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-perfectly-clean-infusion-lotion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "perfectly clean infusion balancing essence lotion",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Lotion",
+        "volumeMl": 400,
+        "keyIngredients": "Amino Acid Complex & Waterlily",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Perfectly Clean Infusion Balancing Essence Lotion",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-gentle-eye-makeup-remover",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Gentle Eye Makeup Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/gentle-eye-makeup-remover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-gentle-eye-makeup-remover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "gentle eye makeup remover",
+        "skinTypeTarget": "Sensitive Eyes",
+        "textureType": "Liquid",
+        "volumeMl": 100,
+        "keyIngredients": "Aloe Vera & Chamomile",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Gentle Eye Makeup Remover",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-take-it-away-lotion",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Take It Away Makeup Remover Lotion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/take-it-away-lotion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-take-it-away-lotion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "take it away makeup remover lotion",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Lotion",
+        "volumeMl": 200,
+        "keyIngredients": "Citrus Botanical Complex",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Take It Away Makeup Remover Lotion",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-nutritious-foam-cleanser",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Nutritious 2-in-1 Foam Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/nutritious-foam-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-nutritious-foam-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "nutritious 2-in-1 foam cleanser",
+        "skinTypeTarget": "Oily & Sensitive",
+        "textureType": "Clay",
+        "volumeMl": 125,
+        "keyIngredients": "Sweet Kelp & Red Algae Ferment",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Nutritious 2-in-1 Foam Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-micro-essence-infusion",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Perfectly Clean & Advanced Night",
+      "modelName": "Micro Essence Treatment Cleansing Infusion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/684/product-catalog/skincare/cleanser/micro-essence-infusion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-micro-essence-infusion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "micro essence treatment cleansing infusion",
+        "skinTypeTarget": "Dehydrated & Sensitive",
+        "textureType": "Lotion",
+        "volumeMl": 200,
+        "keyIngredients": "Postbiotic 12+ Ferment",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core cleanser Micro Essence Treatment Cleansing Infusion",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-clarifying-cleansing-foam",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Clarifying Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/clarifying-cleansing-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-clarifying-cleansing-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "clarifying cleansing foam",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Micro White Powder & White Clay",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Clarifying Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-complete-cleansing-microfoam",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Complete Cleansing Microfoam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/complete-cleansing-microfoam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "180ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-complete-cleansing-microfoam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "complete cleansing microfoam",
+        "skinTypeTarget": "Normal to Dry",
+        "textureType": "Foam",
+        "volumeMl": 180,
+        "keyIngredients": "Hydro-Wrap Vitalizing 7E & Rice Germ Oil",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Complete Cleansing Microfoam",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-deep-cleansing-foam",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Deep Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/deep-cleansing-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-deep-cleansing-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "deep cleansing foam",
+        "skinTypeTarget": "Oily to Combination",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Peony Root Extract & Sebum Absorbing Powder",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Deep Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-extra-rich-cleansing-milk",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Extra Rich Cleansing Milk",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/extra-rich-cleansing-milk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-extra-rich-cleansing-milk.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "extra rich cleansing milk",
+        "skinTypeTarget": "Dry & Sensitive",
+        "textureType": "Milk",
+        "volumeMl": 125,
+        "keyIngredients": "Yuzu Seed Extract & Mineral Spring Water",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Extra Rich Cleansing Milk",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-future-solution-lx-foam",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Future Solution LX Extra Rich Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/future-solution-lx-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-future-solution-lx-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "future solution lx extra rich cleansing foam",
+        "skinTypeTarget": "Mature & Aging",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Enmei Herb Extract & Oshima Sakura",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Future Solution LX Extra Rich Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-perfect-cleansing-oil",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Perfect Cleansing Oil",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/perfect-cleansing-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "180ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-perfect-cleansing-oil.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "perfect cleansing oil",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Oil",
+        "volumeMl": 180,
+        "keyIngredients": "Gentle Cleansing Agent & Mineral Oil-Free",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Perfect Cleansing Oil",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-refreshing-cleansing-water",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Refreshing Cleansing Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/refreshing-cleansing-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "180ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-refreshing-cleansing-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "refreshing cleansing water",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 180,
+        "keyIngredients": "Witch Hazel & Vitamin E",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Refreshing Cleansing Water",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-waso-shikulime-gel-oil",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Waso Shikulime Gel-to-Oil Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/waso-shikulime-gel-oil"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-waso-shikulime-gel-oil.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "waso shikulime gel-to-oil cleanser",
+        "skinTypeTarget": "Young & Normal",
+        "textureType": "Gel-to-Oil",
+        "volumeMl": 125,
+        "keyIngredients": "Shisandrine & Japanese Lime",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Waso Shikulime Gel-to-Oil Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-waso-satocane-scrub-mask",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Waso Satocane Pore Purifying Scrub Mask Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/waso-satocane-scrub-mask"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "80ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-waso-satocane-scrub-mask.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "waso satocane pore purifying scrub mask cleanser",
+        "skinTypeTarget": "Congested Pores",
+        "textureType": "Scrub",
+        "volumeMl": 80,
+        "keyIngredients": "Satokibi Sugarcane Clay",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Waso Satocane Pore Purifying Scrub Mask Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-men-cleansing-foam",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Men Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/men-cleansing-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-men-cleansing-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "men cleansing foam",
+        "skinTypeTarget": "Men / Oily Skin",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Dirt-Clearing Complex & Menthol",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Men Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-men-face-cleanser-2in1",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Men Face Cleanser 2-in-1",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/men-face-cleanser-2in1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-men-face-cleanser-2in1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "men face cleanser 2-in-1",
+        "skinTypeTarget": "Men / All Skin Types",
+        "textureType": "Cream",
+        "volumeMl": 125,
+        "keyIngredients": "Tsubaki Camellia Seed Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Men Face Cleanser 2-in-1",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-treatment-softener-enriched",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Japanese Cleansing Softeners",
+      "modelName": "Treatment Softener Enriched Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/cleansers/treatment-softener-enriched"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-treatment-softener-enriched.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "treatment softener enriched cleanser",
+        "skinTypeTarget": "Dry Skin",
+        "textureType": "Lotion",
+        "volumeMl": 150,
+        "keyIngredients": "Kirishima Mineral Spring Water",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision Japanese cleanser Treatment Softener Enriched Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-creme-radiance-clarifying-cleanser",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Crème Radiance Clarifying Cream-to-Foam Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/creme-radiance-clarifying-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-creme-radiance-clarifying-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "crème radiance clarifying cream-to-foam cleanser",
+        "skinTypeTarget": "Normal to Combination",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "White Lotus & Rose de France",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Crème Radiance Clarifying Cream-to-Foam Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-mousse-confort-creamy-foam",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Mousse Confort Comforting Creamy Foaming Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/mousse-confort-creamy-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-mousse-confort-creamy-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "mousse confort comforting creamy foaming cleanser",
+        "skinTypeTarget": "Dry & Sensitive",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Acacia Honey & Sweet Almond Oil",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Mousse Confort Comforting Creamy Foaming Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-galatee-confort-cleansing-milk",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Galatée Confort Comforting Cleansing Milk",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/galatee-confort-cleansing-milk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "400ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-galatee-confort-cleansing-milk.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "galatée confort comforting cleansing milk",
+        "skinTypeTarget": "Dry Skin",
+        "textureType": "Milk",
+        "volumeMl": 400,
+        "keyIngredients": "Honey & Almond Extract",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Galatée Confort Comforting Cleansing Milk",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-bi-facil-double-action-eye-remover",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Bi-Facil Double-Action Eye Makeup Remover",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/bi-facil-double-action-eye-remover"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-bi-facil-double-action-eye-remover.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "bi-facil double-action eye makeup remover",
+        "skinTypeTarget": "Sensitive Eyes",
+        "textureType": "Liquid",
+        "volumeMl": 125,
+        "keyIngredients": "Lipid & Water Phase Emulsion",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Bi-Facil Double-Action Eye Makeup Remover",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-eau-fraiche-douceur-micellar-water",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Eau Fraîche Douceur Micellar Cleansing Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/eau-fraiche-douceur-micellar-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-eau-fraiche-douceur-micellar-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "eau fraîche douceur micellar cleansing water",
+        "skinTypeTarget": "Sensitive",
+        "textureType": "Micellar Water",
+        "volumeMl": 200,
+        "keyIngredients": "Rose Centifolia Water",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Eau Fraîche Douceur Micellar Cleansing Water",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-oil-in-gel-cleanser",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Absolue Nurturing Brightening Oil-in-Gel Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/absolue-oil-in-gel-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-oil-in-gel-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue nurturing brightening oil-in-gel cleanser",
+        "skinTypeTarget": "Mature & Dry",
+        "textureType": "Oil-in-Gel",
+        "volumeMl": 125,
+        "keyIngredients": "Grand Rose Extracts",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Absolue Nurturing Brightening Oil-in-Gel Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-cleansing-foam",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Absolue Cleansing Foam",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/absolue-cleansing-foam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-cleansing-foam.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue cleansing foam",
+        "skinTypeTarget": "Mature",
+        "textureType": "Foam",
+        "volumeMl": 125,
+        "keyIngredients": "Pro-Xylane & Rose Essential Oil",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Absolue Cleansing Foam",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-tonique-confort-cleansing-toner",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Tonique Confort Re-Hydrating Cleansing Toner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/tonique-confort-cleansing-toner"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "400ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-tonique-confort-cleansing-toner.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "tonique confort re-hydrating cleansing toner",
+        "skinTypeTarget": "Dehydrated & Dry",
+        "textureType": "Lotion",
+        "volumeMl": 400,
+        "keyIngredients": "Hyaluronic Acid & Acacia Honey",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Tonique Confort Re-Hydrating Cleansing Toner",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-gel-eclat-clarifying-cleanser",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Gel Éclat Clarifying Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/gel-eclat-clarifying-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-gel-eclat-clarifying-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "gel éclat clarifying cleanser",
+        "skinTypeTarget": "Combination & Oily",
+        "textureType": "Gel",
+        "volumeMl": 125,
+        "keyIngredients": "Lotus Flower & French Cedar Bud",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Gel Éclat Clarifying Cleanser",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-lait-galateis-douceur-cleansing-milk",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Lait Galatéis Douceur Gentle Cleansing Milk",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/lait-galateis-douceur-cleansing-milk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "400ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-lait-galateis-douceur-cleansing-milk.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "lait galatéis douceur gentle cleansing milk",
+        "skinTypeTarget": "Normal to Combination",
+        "textureType": "Milk",
+        "volumeMl": 400,
+        "keyIngredients": "Papaya & Pineapple Enzymes",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Lait Galatéis Douceur Gentle Cleansing Milk",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-bi-facil-visage-micellar-water",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Bi-Facil Visage Bi-Phased Micellar Water",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/bi-facil-visage-micellar-water"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "200ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-bi-facil-visage-micellar-water.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "bi-facil visage bi-phased micellar water",
+        "skinTypeTarget": "All Skin Types",
+        "textureType": "Micellar Water",
+        "volumeMl": 200,
+        "keyIngredients": "Cleansing Micelles & Nourishing Oils",
+        "fragranceFree": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Bi-Facil Visage Bi-Phased Micellar Water",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-clarifique-dual-essence-cleanser",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Confort Nettoyants",
+      "modelName": "Clarifique Dual Essence Refining Cleanser",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/cleansers-and-toners/clarifique-dual-essence-cleanser"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "150ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-clarifique-dual-essence-cleanser.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "clarifique dual essence refining cleanser",
+        "skinTypeTarget": "Uneven Texture & Pores",
+        "textureType": "Foam",
+        "volumeMl": 150,
+        "keyIngredients": "French Beech Bud Extract & Salicylic",
+        "fragranceFree": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French floral cleanser Clarifique Dual Essence Refining Cleanser",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "La Prairie",
+      "leafKey": "cleansers",
+      "reason": "La Prairie maintains a highly curated Swiss luxury cleansing ritual comprising exactly 6 specialized facial cleansers.",
+      "officialSourceUrl": "https://www.laprairie.com/en-us/collection/cleansers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Foam Cleanser",
+        "Purifying Cream Cleanser",
+        "Cellular Cleansing Water for Eyes and Face",
+        "Supreme Balm Cleanser",
+        "Crystal Micellar Water Eyes & Face",
+        "Gentle Eye Makeup Remover"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "La Mer",
+      "leafKey": "cleansers",
+      "reason": "La Mer maintains exactly 7 proprietary Miracle Broth facial cleansers in its active production catalog.",
+      "officialSourceUrl": "https://www.cremedelamer.com/products/20608/cleansers-toners",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "The Cleansing Foam",
+        "The Cleansing Gel",
+        "The Cleansing Lotion",
+        "The Cleansing Oil",
+        "The Cleansing Micellar Water",
+        "The Essence Foaming Cleanser",
+        "The Resurfacing Treatment Clarifying Wash"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Clé de Peau Beauté",
+      "leafKey": "cleansers",
+      "reason": "Clé de Peau Beauté prestige facial cleansing collection comprises 7 core treatment formulations.",
+      "officialSourceUrl": "https://www.cledepeau-beaute.com/us/skincare/cleansers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Softening Cleansing Foam",
+        "Clarifying Cleansing Foam",
+        "Cleansing Cream Oil",
+        "Cleansing Clay Scrub",
+        "Micellar Cleansing Water",
+        "Eye and Lip Makeup Remover",
+        "Synactif Soap"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "SK-II",
+      "leafKey": "cleansers",
+      "reason": "SK-II PITERA cleansing ritual consists of exactly 6 active facial cleanser formulations.",
+      "officialSourceUrl": "https://www.sk-ii.com/skincare/cleanser",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Facial Treatment Gentle Cleanser",
+        "Facial Treatment Cleansing Oil",
+        "Facial Treatment Cleansing Gel",
+        "Men Moisturizing Cleanser",
+        "Brightening Gentle Cleanser",
+        "Masterpiece Pitera Cleansing Essence"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

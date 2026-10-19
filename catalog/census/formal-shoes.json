@@ -1,0 +1,3213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "formal-shoes",
+  "displayName": "Luxury & Heritage Formal Dress Shoes",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "john-lobb-city-ii-oxford",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Classic Collection",
+      "modelName": "City II Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/city-ii-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "city ii oxford",
+        "style": "oxford",
+        "last": "7000",
+        "construction": "Goodyear welted",
+        "upper": "Black Oxford Calf",
+        "sole": "Oak bark leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The definitive English cap-toe dress Oxford, crafted on the classic 7000 last.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-philip-ii-oxford",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Prestige Collection",
+      "modelName": "Philip II Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/philip-ii-prestige.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "philip ii oxford",
+        "style": "oxford",
+        "last": "7000",
+        "construction": "Prestige welted with bevelled waist",
+        "upper": "Museum Calf",
+        "sole": "Fiddleback leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Prestige line punched cap-toe Oxford with seamless bevelled waist and hand-wheeled welt.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-william-double-monk",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "William Series",
+      "modelName": "William Double Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/william-grained-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "william double monk strap",
+        "style": "monk-strap",
+        "last": "9795",
+        "construction": "Goodyear welted",
+        "upper": "Grained Calf / Calf",
+        "hardware": "Twin silver buckles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The original double monk strap shoe designed by William Lobb in 1945.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-chapel-double-monk",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Prestige Collection",
+      "modelName": "Chapel Double Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/chapel-museum-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "chapel double monk strap",
+        "style": "monk-strap",
+        "last": "8000",
+        "construction": "Prestige Goodyear welted",
+        "upper": "Museum Calfskin",
+        "sole": "Bevelled waist leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek chisel-toe double monk cut from a single piece of leather without side seams.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-becketts-wholecut-oxford",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Prestige Collection",
+      "modelName": "Becketts Wholecut Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/becketts-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "becketts wholecut oxford",
+        "style": "oxford",
+        "last": "8000",
+        "construction": "Prestige Goodyear welted",
+        "upper": "Full Grain Calf",
+        "sole": "Prestige leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Wholecut Oxford featuring distinctive twin-needle Adelaide brogueing.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-alder-derby",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Modern Classics",
+      "modelName": "Alder Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/alder-derby-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "alder derby",
+        "style": "derby",
+        "last": "8695",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Double leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic five-eyelet formal derby constructed with clean twin stitch lines.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-saunton-cap-toe-oxford",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Classic Collection",
+      "modelName": "Saunton Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/saunton-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "saunton cap-toe oxford",
+        "style": "oxford",
+        "last": "7000",
+        "construction": "Goodyear welted",
+        "upper": "Dark Brown Museum Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subtly punched straight cap-toe Oxford on the elegant 7000 last.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-darby-ii-brogue-oxford",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Classic Collection",
+      "modelName": "Darby II Brogue Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/darby-ii-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "darby ii brogue oxford",
+        "style": "oxford",
+        "last": "8695",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full wingtip Oxford brogue with decorative medallion punch on the toe.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-chelsea-cap-toe-oxford",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Chelsea Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/chelsea-black-calf-915-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "chelsea cap-toe oxford",
+        "style": "oxford",
+        "last": "915 / 202",
+        "construction": "Goodyear welted",
+        "upper": "Black Calfskin",
+        "sole": "Oak bark leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Edward Green's benchmark cap-toe Oxford, celebrated for its signature swan neck stitch.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-galway-formal-derby",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Country & Formal",
+      "modelName": "Galway Formal Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/galway-dark-oak-antique-82-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "galway formal derby",
+        "style": "derby",
+        "last": "82",
+        "construction": "Goodyear welted",
+        "upper": "Dark Oak Antique Calf",
+        "sole": "Dainite / Leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal low-profile split-toe derby variant of the world-famous Galway pattern.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-berkeley-punched-cap-oxford",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Berkeley Punched Cap Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/berkeley-dark-oak-antique-202-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "berkeley punched cap oxford",
+        "style": "oxford",
+        "last": "202",
+        "construction": "Goodyear welted",
+        "upper": "Dark Oak Antique Calf",
+        "sole": "Oak bark sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Punched cap Oxford featuring subtle brogueing along the toe seam.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-dover-split-toe-derby",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Masterpiece Collection",
+      "modelName": "Dover Split-Toe Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/dover-dark-oak-antique-32-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "dover split-toe derby",
+        "style": "derby",
+        "last": "32 / 202",
+        "construction": "Hand-sewn boar bristle Goodyear",
+        "upper": "Dark Oak Antique Calf",
+        "sole": "R1 Rubber / Leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Masterpiece Norwegian split-toe derby hand-sewn using pig bristle needle technique.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-westminster-double-monk",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Westminster Double Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/westminster-black-calf-888-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "westminster double monk strap",
+        "style": "monk-strap",
+        "last": "888",
+        "construction": "Goodyear welted",
+        "upper": "Black Calf",
+        "hardware": "Palladium buckles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double monk strap with soft square chisel toe and hand-finished edges.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-malvern-full-brogue-oxford",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Malvern Full Brogue Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/malvern-chestnut-antique-202-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "malvern full brogue oxford",
+        "style": "oxford",
+        "last": "202",
+        "construction": "Goodyear welted",
+        "upper": "Chestnut Antique Calf",
+        "sole": "Double leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional full English wingtip brogue with intricate toe medallion.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-elmsley-wholecut-oxford",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Prestige Collection",
+      "modelName": "Elmsley Wholecut Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/elmsley-black-calf-82-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "elmsley wholecut oxford",
+        "style": "oxford",
+        "last": "82",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Oak bark leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Flawless one-piece wholecut Oxford demonstrating absolute leather cutting perfection.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-inverness-wingtip-oxford",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Inverness Wingtip Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/inverness-dark-oak-antique-82-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "inverness wingtip oxford",
+        "style": "oxford",
+        "last": "82",
+        "construction": "Goodyear welted",
+        "upper": "Dark Oak Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Blind-wing brogue Oxford combining wingtip lines with a clean cap-less toe.",
+      "status": "staged"
+    },
+    {
+      "id": "gaziano-girling-oxford-cap-toe",
+      "canonicalBrand": "Gaziano & Girling",
+      "displayBrand": "Gaziano & Girling",
+      "productLine": "Benchmade",
+      "modelName": "Oxford Cap-Toe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gazianogirling.com/products/oxford-in-vintage-cherry-calf-tg73"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gaziano & girling",
+        "modelName": "oxford cap-toe",
+        "style": "oxford",
+        "last": "TG73",
+        "construction": "Goodyear welted with fiddleback waist",
+        "upper": "Vintage Cherry Calf",
+        "sole": "Oak bark sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Savile Row bespoke aesthetic cap-toe Oxford with radical fiddleback waist.",
+      "status": "staged"
+    },
+    {
+      "id": "gaziano-girling-st-james-ii-adelaides-oxford",
+      "canonicalBrand": "Gaziano & Girling",
+      "displayBrand": "Gaziano & Girling",
+      "productLine": "Benchmade",
+      "modelName": "St James II Adelaides Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gazianogirling.com/products/st-james-ii-in-vintage-oak-mh71"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gaziano & girling",
+        "modelName": "st james ii adelaides oxford",
+        "style": "oxford",
+        "last": "MH71",
+        "construction": "Fiddleback Goodyear",
+        "upper": "Vintage Oak Calf",
+        "sole": "Oak bark leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "G&G's most famous shoe, an Adelaide semi-brogue with wing-shaped eyelet facings.",
+      "status": "staged"
+    },
+    {
+      "id": "gaziano-girling-hove-split-toe-derby",
+      "canonicalBrand": "Gaziano & Girling",
+      "displayBrand": "Gaziano & Girling",
+      "productLine": "Benchmade",
+      "modelName": "Hove Split-Toe Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gazianogirling.com/products/hove-in-vintage-rioja-gg06"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gaziano & girling",
+        "modelName": "hove split-toe derby",
+        "style": "derby",
+        "last": "GG06",
+        "construction": "Hand-stitched apron",
+        "upper": "Vintage Rioja Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Split-toe derby featuring delicate hand-stitched pie-crust apron.",
+      "status": "staged"
+    },
+    {
+      "id": "gaziano-girling-savoy-wholecut-oxford",
+      "canonicalBrand": "Gaziano & Girling",
+      "displayBrand": "Gaziano & Girling",
+      "productLine": "Benchmade",
+      "modelName": "Savoy Wholecut Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gazianogirling.com/products/savoy-in-black-calf-tg73"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gaziano & girling",
+        "modelName": "savoy wholecut oxford",
+        "style": "oxford",
+        "last": "TG73",
+        "construction": "Goodyear welted",
+        "upper": "Black Calf",
+        "sole": "Oak bark fiddleback"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dramatic wholecut Oxford on the square chisel TG73 last with zero exterior seams.",
+      "status": "staged"
+    },
+    {
+      "id": "gaziano-girling-cambridge-quarter-brogue",
+      "canonicalBrand": "Gaziano & Girling",
+      "displayBrand": "Gaziano & Girling",
+      "productLine": "Benchmade",
+      "modelName": "Cambridge Quarter Brogue",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gazianogirling.com/products/cambridge-in-vintage-cedar-mh71"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gaziano & girling",
+        "modelName": "cambridge quarter brogue",
+        "style": "oxford",
+        "last": "MH71",
+        "construction": "Goodyear welted",
+        "upper": "Vintage Cedar Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Quarter brogue dress shoe with clean punched cap and throat detailing.",
+      "status": "staged"
+    },
+    {
+      "id": "gaziano-girling-antibes-single-monk",
+      "canonicalBrand": "Gaziano & Girling",
+      "displayBrand": "Gaziano & Girling",
+      "productLine": "Benchmade",
+      "modelName": "Antibes Single Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gazianogirling.com/products/antibes-in-mole-suede-kn14"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gaziano & girling",
+        "modelName": "antibes single monk strap",
+        "style": "monk-strap",
+        "last": "KN14",
+        "construction": "Goodyear welted",
+        "upper": "Suede / Calf",
+        "hardware": "Single buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Single monk strap shoe with swept-back strap line and sculpted waist.",
+      "status": "staged"
+    },
+    {
+      "id": "gaziano-girling-rothschild-full-brogue",
+      "canonicalBrand": "Gaziano & Girling",
+      "displayBrand": "Gaziano & Girling",
+      "productLine": "Benchmade",
+      "modelName": "Rothschild Full Brogue",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gazianogirling.com/products/rothschild-in-vintage-pine-mh71"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gaziano & girling",
+        "modelName": "rothschild full brogue",
+        "style": "oxford",
+        "last": "MH71",
+        "construction": "Goodyear welted",
+        "upper": "Vintage Pine Calf",
+        "sole": "Oak bark sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full brogue wingtip Oxford with exquisite micro-punching and medallion.",
+      "status": "staged"
+    },
+    {
+      "id": "gaziano-girling-mitchell-double-monk",
+      "canonicalBrand": "Gaziano & Girling",
+      "displayBrand": "Gaziano & Girling",
+      "productLine": "Benchmade",
+      "modelName": "Mitchell Double Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gazianogirling.com/products/mitchell-in-black-calf-tg73"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gaziano & girling",
+        "modelName": "mitchell double monk strap",
+        "style": "monk-strap",
+        "last": "TG73",
+        "construction": "Goodyear welted",
+        "upper": "Black Calf",
+        "hardware": "Nickel buckles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary double monk strap shoe with sharp angled straps on the TG73 chisel last.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-plain-toe-blucher-990-cordovan",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Shell Cordovan",
+      "modelName": "Plain Toe Blucher 990 Shell Cordovan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/plain-toe-blucher-990/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "plain toe blucher 990 shell cordovan",
+        "style": "blucher",
+        "last": "Barrie Last",
+        "construction": "Goodyear welted 360 pre-stitched reverse welt",
+        "upper": "Horween Color 8 Shell Cordovan",
+        "sole": "Double oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alden's legendary flagship wholecut vamp plain toe blucher in Horween Color 8 Shell Cordovan.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-cap-toe-balmoral-9015-cordovan",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Shell Cordovan",
+      "modelName": "Cap Toe Balmoral 9015 Shell Cordovan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/cap-toe-balmoral-color-8-shell-cordovan-9015/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "cap toe balmoral 9015 shell cordovan",
+        "style": "balmoral",
+        "last": "Hampton Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Color 8 Shell Cordovan",
+        "sole": "Oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal straight tip balmoral Oxford made from genuine Horween Shell Cordovan.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-longwing-blucher-975-cordovan",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Shell Cordovan",
+      "modelName": "Longwing Blucher 975 Shell Cordovan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/long-wing-blucher-color-8-shell-cordovan-975/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "longwing blucher 975 shell cordovan",
+        "style": "blucher",
+        "last": "Barrie Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Color 8 Shell Cordovan",
+        "sole": "Double oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The definitive American Longwing Blucher with wings extending full length around the heel.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-norwood-medallion-tip-blucher",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Dress Bluchers",
+      "modelName": "Norwood Medallion Tip Blucher",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/medallion-tip-blucher-calfskin-908/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "norwood medallion tip blucher",
+        "style": "blucher",
+        "last": "Hampton Last",
+        "construction": "Goodyear welted",
+        "upper": "Burgundy Aniline Calfskin",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined dress blucher accented with punched cap and intricate medallion tip.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-v-tip-blucher-54321",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Modified Last",
+      "modelName": "V-Tip Commando Blucher 54321",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/v-tip-blucher-color-8-shell-cordovan-54321/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "v-tip commando blucher 54321",
+        "style": "blucher",
+        "last": "Modified Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Color 8 Shell Cordovan",
+        "sole": "Commando / Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cult classic orthopedic-support V-Tip dress blucher on Alden's anatomical Modified last.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-straight-tip-balmoral-907-calfskin",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Classic Dress",
+      "modelName": "Straight Tip Balmoral 907 Calfskin",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/straight-tip-balmoral-black-calfskin-907/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "straight tip balmoral 907 calfskin",
+        "style": "balmoral",
+        "last": "Hampton Last",
+        "construction": "Goodyear welted",
+        "upper": "Black Calfskin",
+        "sole": "Single oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Essential American board-room cap-toe Oxford in lustrous black calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-plain-toe-blucher-947-all-weather",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "All Weather Walker",
+      "modelName": "Plain Toe Blucher 947 All Weather Walker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/all-weather-walker-brown-alpine-grain-947/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "plain toe blucher 947 all weather walker",
+        "style": "blucher",
+        "last": "Barrie Last",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Brown Alpine Grain Calf",
+        "sole": "Plantation crepe sole with leather tip"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Inclement weather dress blucher equipped with storm welt and plantation crepe outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-george-boot-monk-dress-shoe",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Monk Series",
+      "modelName": "George Boot Monk Dress Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/monk-strap-shoe-color-8-cordovan-1655/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "george boot monk dress shoe",
+        "style": "monk-strap",
+        "last": "Aberdeen Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Shell Cordovan",
+        "hardware": "Brass buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Single buckle monk dress shoe on the sleek Aberdeen last.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-alessandro-demesure-wholecut-oxford",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Alessandro",
+      "modelName": "Alessandro Demesure Wholecut Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/alessandro-demesure-leather-oxford/S1415-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "alessandro demesure wholecut oxford",
+        "style": "oxford",
+        "last": "Demesure",
+        "construction": "Blake stitched",
+        "upper": "Patinated Venezia Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The foundational Berluti model designed by Alessandro Berluti in 1895, cut from a single piece of leather without seams.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-alessandro-galet-leather-oxford",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Alessandro",
+      "modelName": "Alessandro Galet Leather Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/alessandro-galet-leather-oxford/S4152-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "alessandro galet leather oxford",
+        "style": "oxford",
+        "last": "Galet",
+        "construction": "Blake stitched",
+        "upper": "Venezia Gloria Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Wholecut Oxford shaped on the softer, more rounded Galet last.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-fast-track-dress-shoe",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Fast Track",
+      "modelName": "Fast Track Dress Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/fast-track-leather-derby/S4935-V2.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "fast track dress shoe",
+        "style": "derby",
+        "last": "Fast Track",
+        "construction": "Hybrid construction",
+        "upper": "Venezia Leather",
+        "sole": "Running rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hybrid luxury formal derby with hand-patinated upper and sporty running sole.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-caractere-eclair-monk-strap",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Caractère",
+      "modelName": "Caractère Éclair Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/caractere-eclair-leather-monk-strap/S5119-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "caractère éclair monk strap",
+        "style": "monk-strap",
+        "last": "Éclair",
+        "construction": "Blake stitched",
+        "upper": "Venezia Calfskin",
+        "hardware": "Single geometric buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Single buckle monk strap with sharp chisel toe and pure aerodynamic lines.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-equilibre-leather-oxford",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Équilibre",
+      "modelName": "Équilibre Leather Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/equilibre-leather-oxford/S5300-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "équilibre leather oxford",
+        "style": "oxford",
+        "last": "Équilibre",
+        "construction": "Goodyear welted",
+        "upper": "Venezia Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Goodyear-welted dress Oxford with architectural proportions and deep patina.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-stellar-cap-toe-oxford",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Stellar",
+      "modelName": "Stellar Cap Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/stellar-leather-oxford/S5450-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "stellar cap toe oxford",
+        "style": "oxford",
+        "last": "Demesure",
+        "construction": "Blake stitched",
+        "upper": "Patinated Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic straight cap-toe formal Oxford with subtle hand-burnished gradients.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-scritto-patinated-wholecut",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Alessandro Scritto",
+      "modelName": "Scritto Patinated Wholecut",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/alessandro-scritto-leather-oxford/S1415-V2.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "scritto patinated wholecut",
+        "style": "oxford",
+        "last": "Demesure",
+        "construction": "Blake stitched",
+        "upper": "Scritto Venezia Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Wholecut dress shoe laser-engraved with Olga Berluti's iconic 18th-century Scritto calligraphy.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-eris-monk-strap-shoe",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Eris",
+      "modelName": "Eris Monk Strap Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/eris-leather-monk-strap/S5650-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "eris monk strap shoe",
+        "style": "monk-strap",
+        "last": "Demesure",
+        "construction": "Blake stitched",
+        "upper": "Venezia Leather",
+        "hardware": "Twin brass buckles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double monk strap shoe with overlapping patinated straps and bevelled edges.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-audley-cap-toe-oxford",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Hand Grade",
+      "modelName": "Audley Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/audley-black-calf-handgrade/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "audley cap-toe oxford",
+        "style": "oxford",
+        "last": "337",
+        "construction": "Hand Grade Goodyear welted",
+        "upper": "Black Aniline Calf",
+        "sole": "Oak bark leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Flagship Hand Grade cap-toe Oxford with soft square toe and closed-channel oak bark soles.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-connaught-cap-toe-oxford",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Connaught Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/connaught-2-black-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "connaught cap-toe oxford",
+        "style": "oxford",
+        "last": "236",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional round-toe cap-toe Oxford on the historic 236 last.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-alex-wholecut-oxford",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Alex Wholecut Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/alex-black-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "alex wholecut oxford",
+        "style": "oxford",
+        "last": "348",
+        "construction": "Goodyear welted",
+        "upper": "Black Calfskin",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean wholecut Oxford famously worn by James Bond in Skyfall and Spectre.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-lowndes-double-monk",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Lowndes Double Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/lowndes-dark-brown-burnished-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "lowndes double monk strap",
+        "style": "monk-strap",
+        "last": "348",
+        "construction": "Goodyear welted",
+        "upper": "Burnished Calf",
+        "hardware": "Twin chrome buckles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chisel-toe double monk strap dress shoe built on the sharp 348 last.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-pembroke-full-brogue-derby",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Pembroke Full Brogue Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/pembroke-tan-scotch-grain/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "pembroke full brogue derby",
+        "style": "derby",
+        "last": "325",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Scotch Grain Leather",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sturdy wingtip country derby with storm welt and full brogue punching.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-westbourne-punched-cap-oxford",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Westbourne Punched Cap Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/westbourne-chestnut-burnished-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "westbourne punched cap oxford",
+        "style": "oxford",
+        "last": "348",
+        "construction": "Goodyear welted",
+        "upper": "Burnished Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Adelaide-style punched cap Oxford with U-throat brogue pattern.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-hallam-cap-toe-oxford",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Hallam Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/hallam-black-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "hallam cap-toe oxford",
+        "style": "oxford",
+        "last": "348",
+        "construction": "Goodyear welted",
+        "upper": "Black Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary straight cap Oxford built on the chisel-toe 348 last.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-clifford-wingtip-oxford",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Hand Grade",
+      "modelName": "Clifford Wingtip Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/clifford-tan-burnished-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "clifford wingtip oxford",
+        "style": "oxford",
+        "last": "337",
+        "construction": "Hand Grade welted",
+        "upper": "Tan Burnished Calf",
+        "sole": "Oak bark leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full wingtip Oxford from the Hand Grade collection with closed channel stitching.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-seymour-semi-brogue-oxford",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Hand Grade",
+      "modelName": "Seymour Semi-Brogue Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/seymour-black-calf-handgrade/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "seymour semi-brogue oxford",
+        "style": "oxford",
+        "last": "337",
+        "construction": "Hand Grade welted",
+        "upper": "Black Calf",
+        "sole": "Oak bark sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Semi-brogue Oxford with delicate toe medallion on the Hand Grade last.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-highbury-plain-derby",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Highbury Plain Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/highbury-black-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "highbury plain derby",
+        "style": "derby",
+        "last": "348",
+        "construction": "Goodyear welted",
+        "upper": "Black Calf",
+        "sole": "City rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Three-eyelet plain front formal derby as featured in No Time To Die.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-malton-semi-brogue-derby",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Malton Semi-Brogue Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/malton-chestnut-burnished-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "malton semi-brogue derby",
+        "style": "derby",
+        "last": "360",
+        "construction": "Goodyear welted",
+        "upper": "Burnished Calf",
+        "sole": "Dainite sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Semi-brogue derby combining punched cap with practical open lacing.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-consul-cap-toe-oxford",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Consul",
+      "modelName": "Consul Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/oxfords/product.consul_prestige_calf_leather_oxford.EEB003_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "consul cap-toe oxford",
+        "style": "oxford",
+        "last": "173",
+        "construction": "Goodyear welted",
+        "upper": "Prestige Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Church's quintessential English cap-toe Oxford, favored by British statesmen since 1945.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-diplomat-semi-brogue-oxford",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Diplomat",
+      "modelName": "Diplomat Semi-Brogue Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/oxfords/product.diplomat_prestige_calf_semi_brogue.EEB006_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "diplomat semi-brogue oxford",
+        "style": "oxford",
+        "last": "173",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Semi-brogue Oxford featuring punched toe cap and delicate gimping.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-chetwynd-full-brogue-oxford",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Chetwynd",
+      "modelName": "Chetwynd Full Brogue Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/oxfords/product.chetwynd_prestige_calf_full_brogue.EEB007_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "chetwynd full brogue oxford",
+        "style": "oxford",
+        "last": "173",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full wingtip English brogue with classic Church's medallion perforation.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-shannon-plain-derby",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Shannon",
+      "modelName": "Shannon Plain Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/derbys/product.shannon_polished_binder_derby.EEB001_9XV_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "shannon plain derby",
+        "style": "derby",
+        "last": "103",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Polished Binder Leather",
+        "sole": "Double leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic wholecut-look plain derby hand-sewn from a single piece of high-gloss polished binder leather.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-dubai-oxford-shoe",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Dubai",
+      "modelName": "Dubai Oxford Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/oxfords/product.dubai_prestige_calf_oxford.EEB017_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "dubai oxford shoe",
+        "style": "oxford",
+        "last": "136",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elongated formal Oxford featuring subtle topstitching on the cap.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-lancaster-oxford",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Lancaster",
+      "modelName": "Lancaster Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/oxfords/product.lancaster_prestige_calf_oxford.EEB020_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "lancaster oxford",
+        "style": "oxford",
+        "last": "173",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean-lined formal Oxford built for black-tie and board-room functions.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-grafton-heavy-brogue-derby",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Grafton",
+      "modelName": "Grafton Heavy Brogue Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/derbys/product.grafton_polished_binder_derby.EEB009_9XV_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "grafton heavy brogue derby",
+        "style": "derby",
+        "last": "173",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Polished Binder Leather",
+        "sole": "Triple leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Substantial full brogue longwing derby with triple leather sole and storm welt.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-burwood-wingtip-oxford",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Burwood",
+      "modelName": "Burwood Wingtip Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/oxfords/product.burwood_polished_binder_oxford.EEB002_9XV_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "burwood wingtip oxford",
+        "style": "oxford",
+        "last": "81",
+        "construction": "Goodyear welted",
+        "upper": "Polished Binder Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bold full brogue Oxford featuring oversized punched holes and pinking.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-leyton-plain-derby",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Leyton",
+      "modelName": "Leyton Plain Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/derbys/product.leyton_calf_derby.EEB045_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "leyton plain derby",
+        "style": "derby",
+        "last": "136",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Lightweight rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary lightweight derby shoe for business travel.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-hong-kong-cap-toe-oxford",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Hong Kong",
+      "modelName": "Hong Kong Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/oxfords/product.hong_kong_calf_oxford.EEB050_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "hong kong cap-toe oxford",
+        "style": "oxford",
+        "last": "136",
+        "construction": "Goodyear welted",
+        "upper": "Fine Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek elongated dress Oxford tailored for contemporary tailoring.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-woodbridge-derby-shoe",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Woodbridge",
+      "modelName": "Woodbridge Derby Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/derbys/product.woodbridge_calf_derby.EEB060_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "woodbridge derby shoe",
+        "style": "derby",
+        "last": "173",
+        "construction": "Goodyear welted",
+        "upper": "Grained Calf",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Four-eyelet split-apron derby shoe engineered with all-weather rubber sole.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-velatura-cap-toe-oxford",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Velatura",
+      "modelName": "Velatura Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/cap-toe-oxford-velatura-mcfo16960mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "velatura cap-toe oxford",
+        "style": "oxford",
+        "upper": "Hand-colored Calfskin",
+        "finish": "Velatura patina",
+        "sole": "Orange leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Santoni's signature formal Oxford featuring intricate Velatura hand-painted leather finish.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-double-buckle-monk-strap-shoe",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Double Buckle",
+      "modelName": "Double Buckle Monk Strap Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/double-buckle-monk-mcdc16961mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "double buckle monk strap shoe",
+        "style": "monk-strap",
+        "upper": "Hand-burnished Calfskin",
+        "hardware": "Antiqued buckles",
+        "sole": "Goodyear leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Santoni's globally acclaimed double buckle monk strap dress shoe.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-wholecut-leather-oxford",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Wholecut Series",
+      "modelName": "Wholecut Leather Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/wholecut-oxford-mcwc16962mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "wholecut leather oxford",
+        "style": "oxford",
+        "upper": "One-piece Calfskin",
+        "construction": "Blake rapid",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seamless wholecut Oxford showcasing uninterrupted leather grading.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-medallion-toe-oxford",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Classic Collection",
+      "modelName": "Medallion Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/medallion-oxford-mcme16963mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "medallion toe oxford",
+        "style": "oxford",
+        "upper": "Antiqued Calf",
+        "details": "Punched medallion",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elegantly proportioned Oxford adorned with artisanal toe medallion punching.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-goodyear-welted-cap-toe-oxford",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Goodyear Masters",
+      "modelName": "Goodyear Welted Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/goodyear-cap-toe-mcgy16964mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "goodyear welted cap-toe oxford",
+        "style": "oxford",
+        "construction": "Goodyear welted",
+        "upper": "Box Calfskin",
+        "sole": "Oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Master cordwainer Goodyear-welted cap-toe Oxford built for supreme longevity.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-wingtip-brogue-derby",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Classic Collection",
+      "modelName": "Wingtip Brogue Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/wingtip-derby-mcwt16965mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "wingtip brogue derby",
+        "style": "derby",
+        "upper": "Hand-patinated Calf",
+        "details": "Full brogue",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional wingtip derby elevated by hand-rubbed Italian patination.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-split-toe-norwegian-derby",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Norwegian Series",
+      "modelName": "Split Toe Norwegian Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/split-toe-derby-mcst16966mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "split toe norwegian derby",
+        "style": "derby",
+        "construction": "Norwegian welted",
+        "upper": "Grained Calf",
+        "sole": "Rubber / Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Norwegian welted split-toe derby with hand-sewn apron stitch.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-single-monk-strap-dress-shoe",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Monk Series",
+      "modelName": "Single Monk Strap Dress Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/single-monk-mcsm16967mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "single monk strap dress shoe",
+        "style": "monk-strap",
+        "upper": "Calfskin",
+        "hardware": "Chiseled single buckle",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Single buckle monk strap shoe with swept aerodynamic strap.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-classic-plain-toe-derby",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Classic Collection",
+      "modelName": "Classic Plain Toe Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/plain-derby-mcpd16968mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "classic plain toe derby",
+        "style": "derby",
+        "upper": "Smooth Calfskin",
+        "sole": "Leather sole",
+        "lacing": "5 eyelet"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist formal plain-toe derby in deep obsidian black calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-burnished-calfskin-oxford",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Burnished Series",
+      "modelName": "Burnished Calfskin Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/burnished-oxford-mcbo16969mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "burnished calfskin oxford",
+        "style": "oxford",
+        "upper": "Burnished Chestnut Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rich chestnut-hued cap-toe Oxford hand-burnished to a mirror gloss on toe.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-patent-leather-tuxedo-oxford",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Evening Series",
+      "modelName": "Patent Leather Tuxedo Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/patent-tuxedo-oxford-mctx16970mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "patent leather tuxedo oxford",
+        "style": "oxford",
+        "upper": "High-gloss Patent Leather",
+        "sole": "Leather sole",
+        "lining": "Silk satin lining"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Black-tie evening tuxedo Oxford crafted in mirror-finish patent leather.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-tramezza-cap-toe-oxford",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Tramezza",
+      "modelName": "Tramezza Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-cap-toe-02a123-712345"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "tramezza cap-toe oxford",
+        "style": "oxford",
+        "line": "Tramezza hand-lasted",
+        "construction": "Tramezza welted",
+        "upper": "Full Grain Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ferragamo's pinnacle Tramezza hand-crafted construction cap-toe Oxford with natural leather filler.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-tramezza-double-monk-strap",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Tramezza",
+      "modelName": "Tramezza Double Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/monkstraps/tramezza-double-monk-02b456-723456"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "tramezza double monk strap",
+        "style": "monk-strap",
+        "line": "Tramezza",
+        "hardware": "Antiqued brass buckles",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pinnacle artisanal double monk strap shoe with hand-beveled sole.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-tramezza-wholecut-oxford",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Tramezza",
+      "modelName": "Tramezza Wholecut Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-wholecut-02c789-734567"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "tramezza wholecut oxford",
+        "style": "oxford",
+        "line": "Tramezza",
+        "upper": "Single piece calfskin",
+        "sole": "Hand-finished leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tramezza one-piece wholecut Oxford demonstrating exceptional cordwaining expertise.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-tramezza-plain-derby",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Tramezza",
+      "modelName": "Tramezza Plain Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-derby-02d012-745678"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "tramezza plain derby",
+        "style": "derby",
+        "line": "Tramezza",
+        "upper": "Smooth Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hand-welted plain-front dress derby with hand-shaped waist.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-boston-cap-toe-oxford",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Classic Collection",
+      "modelName": "Boston Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/boston-oxford-020111-700111"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "boston cap-toe oxford",
+        "style": "oxford",
+        "upper": "Calfskin",
+        "sole": "Leather sole",
+        "construction": "Blake stitched"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic business cap-toe Oxford with clean stitch line.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-new-boston-oxford-shoe",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Classic Collection",
+      "modelName": "New Boston Oxford Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/new-boston-oxford-020222-700222"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "new boston oxford shoe",
+        "style": "oxford",
+        "upper": "Grained Calf",
+        "sole": "Leather sole with rubber insert"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modernized iteration of the Boston Oxford with enhanced arch cushion.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-wingtip-brogue-leather-shoe",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Classic Collection",
+      "modelName": "Wingtip Brogue Leather Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/wingtip-brogue-020333-700333"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "wingtip brogue leather shoe",
+        "style": "oxford",
+        "upper": "Calfskin",
+        "details": "Full brogue perforations",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full brogue wingtip dress shoe in burnished Italian calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-single-buckle-monk-shoe",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Monk Series",
+      "modelName": "Single Buckle Monk Shoe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/monkstraps/single-buckle-monk-020444-700444"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "single buckle monk shoe",
+        "style": "monk-strap",
+        "hardware": "Gancini shaped buckle",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Single strap monk shoe adorned with custom Gancini-profile buckle.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-tuxedo-patent-leather-oxford",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Evening Collection",
+      "modelName": "Tuxedo Patent Leather Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tuxedo-patent-oxford-020555-700555"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "tuxedo patent leather oxford",
+        "style": "oxford",
+        "upper": "Mirror Patent Leather",
+        "styleDetail": "Plain toe wholecut",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Evening gala tuxedo Oxford in brilliant patent leather.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-master-split-toe-derby",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Classic Collection",
+      "modelName": "Master Split-Toe Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/master-split-toe-020666-700666"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "master split-toe derby",
+        "style": "derby",
+        "upper": "Hammered Calfskin",
+        "sole": "Rubber tread sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Split-toe apron derby shoe combining dress elegance with commuter durability.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-plain-toe-dress-derby",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Classic Collection",
+      "modelName": "Plain Toe Dress Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/plain-derby-020777-700777"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "plain toe dress derby",
+        "style": "derby",
+        "upper": "Box Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist five-eyelet dress derby with tapered waist.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-lime-cap-toe-oxford",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "City Collection",
+      "modelName": "Lime Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-lime-oxford-in-black-calf-leather-p21"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "lime cap-toe oxford",
+        "style": "oxford",
+        "last": "11028",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Quintessential English cap-toe Oxford built on the timeless 11028 last in Desborough.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-alfred-cap-toe-oxford",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "Classic Collection",
+      "modelName": "Alfred Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-alfred-oxford-in-burnished-dark-leaf-calf-leather-p35"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "alfred cap-toe oxford",
+        "style": "oxford",
+        "last": "125",
+        "construction": "Goodyear welted",
+        "upper": "Burnished Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic straight cap Oxford on the 125th anniversary last.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-arthur-iii-full-brogue-oxford",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "Classic Collection",
+      "modelName": "Arthur III Full Brogue Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-arthur-iii-wingcap-brogue-in-dark-leaf-calf-leather-p25"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "arthur iii full brogue oxford",
+        "style": "oxford",
+        "last": "125",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full wingcap brogue with traditional English perforations and hand-burnished finish.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-deal-ii-plain-derby",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "Classic Collection",
+      "modelName": "Deal II Plain Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-deal-ii-derby-in-black-calf-leather-p15"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "deal ii plain derby",
+        "style": "derby",
+        "last": "175",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plain-front formal derby with four blind eyelets and refined round toe.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-wilfred-semi-brogue-oxford",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "City Collection",
+      "modelName": "Wilfred Semi-Brogue Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-wilfred-semi-brogue-in-black-calf-leather-p22"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "wilfred semi-brogue oxford",
+        "style": "oxford",
+        "last": "11028",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic semi-brogue Oxford featuring punched toe cap and floral medallion.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-broadgate-wholecut-oxford",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "City Collection",
+      "modelName": "Broadgate Wholecut Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-broadgate-wholecut-oxford-in-black-calf-p110"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "broadgate wholecut oxford",
+        "style": "oxford",
+        "last": "11028",
+        "construction": "Goodyear welted",
+        "upper": "One-piece Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Wholecut dress Oxford cut from a single piece of flawless calf leather.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-edmund-double-monk-strap",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "Classic Collection",
+      "modelName": "Edmund Double Monk Strap",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-edmund-double-monk-strap-in-dark-leaf-calf-p115"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "edmund double monk strap",
+        "style": "monk-strap",
+        "last": "125",
+        "construction": "Goodyear welted",
+        "upper": "Burnished Calf",
+        "hardware": "Twin brass buckles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double monk strap shoe with straight toe cap and antiqued brass buckles.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-avon-c-wingtip-country-derby",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "Country Collection",
+      "modelName": "Avon C Wingtip Country Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-avon-c-wingcap-brogue-in-almond-grain-leather-p30"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "avon c wingtip country derby",
+        "style": "derby",
+        "last": "12508",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Grain Leather",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavy country brogue derby featuring storm welt and grained hide.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-richmond-plain-derby",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "City Collection",
+      "modelName": "Richmond Plain Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-richmond-derby-in-black-calf-p120"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "richmond plain derby",
+        "style": "derby",
+        "last": "11028",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "City collection plain-front derby shoe tailored for tailored suits.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-francis-quarter-brogue-oxford",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "City Collection",
+      "modelName": "Francis Quarter Brogue Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-francis-quarter-brogue-in-black-calf-p125"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "francis quarter brogue oxford",
+        "style": "oxford",
+        "last": "11028",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subtly perforated quarter brogue Oxford with neat pinking along the cap.",
+      "status": "staged"
+    },
+    {
+      "id": "cheaney-chiswick-split-toe-derby",
+      "canonicalBrand": "Cheaney",
+      "displayBrand": "Cheaney",
+      "productLine": "Classic Collection",
+      "modelName": "Chiswick Split-Toe Derby",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cheaney.co.uk/cheaney-chiswick-split-toe-derby-p130"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "cheaney",
+        "modelName": "chiswick split-toe derby",
+        "style": "derby",
+        "last": "125",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Split-toe Norwegian apron derby with hand-stitched detailing.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-simpson-cap-toe-oxford",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Classic Collection",
+      "modelName": "Simpson Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/oxford-shoes/cap-toe-oxford-black-boxcalf-simpson-762"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "simpson cap-toe oxford",
+        "style": "oxford",
+        "last": "Simpson Last",
+        "construction": "Goodyear welted",
+        "upper": "Black Boxcalf",
+        "sole": "Oak bark leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Carmina's flagship cap-toe Oxford built on the chisel-toe Simpson last in Mallorca.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-rain-cap-toe-oxford",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Classic Collection",
+      "modelName": "Rain Cap-Toe Oxford",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/oxford-shoes/cap-toe-oxford-dark-brown-rain-80201"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "rain cap-toe oxford",
+        "style": "oxford",
+        "last": "Rain Last",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versatile cap-toe Oxford on the accommodating, softly squared Rain last.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-wholecut-oxford-910",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Wholecut Series",
+      "modelName": "Wholecut Oxford 910",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/oxford-shoes/wholecut-black-boxcalf-rain-910"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "wholecut oxford 910",
+        "style": "oxford",
+        "last": "Rain Last",
+        "construction": "Goodyear welted",
+        "upper": "One-piece Boxcalf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Masterfully lasted one-piece wholecut Oxford with clean lines.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-double-monk-strap-10003",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Monk Series",
+      "modelName": "Double Monk Strap 10003",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/monk-strap-shoes/double-monk-strap-shoes-brown-inca-10003"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "double monk strap 10003",
+        "style": "monk-strap",
+        "last": "Inca Last",
+        "construction": "Goodyear welted",
+        "upper": "Boxcalf",
+        "hardware": "Twin brass buckles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double monk strap dress shoe on the elegant Inca last.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-semi-brogue-oxford-80201",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Classic Collection",
+      "modelName": "Semi-Brogue Oxford 80201",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/oxford-shoes/semi-brogue-oxford-rain-80201"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "semi-brogue oxford 80201",
+        "style": "oxford",
+        "last": "Rain Last",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Semi-brogue Oxford with perforated medallion toe and gimping.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-longwing-derby-973",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Derby Series",
+      "modelName": "Longwing Derby 973",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/derby-shoes/longwing-blucher-cognac-forest-973"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "longwing derby 973",
+        "style": "derby",
+        "last": "Detroit Last",
+        "construction": "Goodyear welted storm welt",
+        "upper": "Calfskin",
+        "sole": "Double leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic longwing blucher with full perimeter wingtip perforations.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-cordovan-cap-toe-oxford-80105",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Shell Cordovan",
+      "modelName": "Cordovan Cap-Toe Oxford 80105",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/oxford-shoes/cordovan-cap-toe-oxford-rain-80105"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "cordovan cap-toe oxford 80105",
+        "style": "oxford",
+        "last": "Rain Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Shell Cordovan",
+        "sole": "Redenbach leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Prestige formal Oxford handcrafted from genuine Horween Shell Cordovan.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-cordovan-plain-toe-blucher-955",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Shell Cordovan",
+      "modelName": "Cordovan Plain Toe Blucher 955",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/derby-shoes/plain-toe-blucher-cordovan-detroit-955"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "cordovan plain toe blucher 955",
+        "style": "blucher",
+        "last": "Detroit Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Color 8 Cordovan",
+        "sole": "Double leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Substantial plain toe blucher crafted in Horween Shell Cordovan.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-adelaide-oxford-80373",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Classic Collection",
+      "modelName": "Adelaide Oxford 80373",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/oxford-shoes/adelaide-oxford-rain-80373"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "adelaide oxford 80373",
+        "style": "oxford",
+        "last": "Rain Last",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Adelaide-pattern Oxford with continuous U-throat brogue framing.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-wingtip-oxford-732",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Classic Collection",
+      "modelName": "Wingtip Oxford 732",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/oxford-shoes/full-brogue-oxford-forest-732"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "wingtip oxford 732",
+        "style": "oxford",
+        "last": "Forest Last",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full brogue wingtip Oxford with classic medallion on the Forest last.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-single-monk-strap-80156",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Monk Series",
+      "modelName": "Single Monk Strap 80156",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/monk-strap-shoes/single-monk-strap-inca-80156"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "single monk strap 80156",
+        "style": "monk-strap",
+        "last": "Inca Last",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "hardware": "Silver buckle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Single buckle monk strap dress shoe with elegant straight cap.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-u-throat-oxford-80567",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Classic Collection",
+      "modelName": "U-Throat Oxford 80567",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/oxford-shoes/u-throat-oxford-simpson-80567"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "u-throat oxford 80567",
+        "style": "oxford",
+        "last": "Simpson Last",
+        "construction": "Goodyear welted",
+        "upper": "Boxcalf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Distinctive U-throat facing cap-toe Oxford on the Simpson last.",
+      "status": "staged"
+    },
+    {
+      "id": "carmina-plain-toe-derby-531",
+      "canonicalBrand": "Carmina",
+      "displayBrand": "Carmina",
+      "productLine": "Derby Series",
+      "modelName": "Plain Toe Derby 531",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.carminashoemaker.com/derby-shoes/plain-toe-derby-forest-531"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "ES",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "carmina",
+        "modelName": "plain toe derby 531",
+        "style": "derby",
+        "last": "Forest Last",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean five-eyelet formal derby shoe in lustrous calfskin.",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "John Lobb",
+      "leafKey": "formal-shoes",
+      "reason": "Northampton master bootmaker John Lobb maintains an elite core collection of 8 bespoke-standard Goodyear-welted Oxfords, Derbies, and Monk straps.",
+      "officialSourceUrl": "https://www.johnlobb.com/en_us/mens-shoes/oxfords.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "City II Oxford",
+        "Philip II Oxford",
+        "William Double Monk Strap",
+        "Chapel Double Monk Strap",
+        "Becketts Wholecut Oxford",
+        "Alder Derby",
+        "Saunton Cap-Toe Oxford",
+        "Darby II Brogue Oxford"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "Edward Green",
+      "leafKey": "formal-shoes",
+      "reason": "English bench-made cordwainer Edward Green focuses on 8 timeless formal Oxford, Derby, and Monk shoe lasts in continuous production.",
+      "officialSourceUrl": "https://www.edwardgreen.com/shop/shoes/oxfords.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Chelsea Cap-Toe Oxford",
+        "Galway Formal Derby",
+        "Berkeley Punched Cap Oxford",
+        "Dover Split-Toe Derby",
+        "Westminster Double Monk Strap",
+        "Malvern Full Brogue Oxford",
+        "Elmsley Wholecut Oxford",
+        "Inverness Wingtip Oxford"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "Gaziano & Girling",
+      "leafKey": "formal-shoes",
+      "reason": "Savile Row and Kettering bespoke shoemaker Gaziano & Girling limits its ready-to-wear formal collection to 8 architectural, fiddleback-waist models.",
+      "officialSourceUrl": "https://www.gazianogirling.com/collections/oxfords",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Oxford Cap-Toe",
+        "St James II Adelaides Oxford",
+        "Hove Split-Toe Derby",
+        "Savoy Wholecut Oxford",
+        "Cambridge Quarter Brogue",
+        "Antibes Single Monk Strap",
+        "Rothschild Full Brogue",
+        "Mitchell Double Monk Strap"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "Alden",
+      "leafKey": "formal-shoes",
+      "reason": "Historic American shoemaker Alden crafts 8 benchmark formal dress bluchers, balmorals, and monks in Horween Shell Cordovan and aniline calfskin.",
+      "officialSourceUrl": "https://aldenmadison.com/product-category/dress-shoes/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Plain Toe Blucher 990 Shell Cordovan",
+        "Cap Toe Balmoral 9015 Shell Cordovan",
+        "Longwing Blucher 975 Shell Cordovan",
+        "Norwood Medallion Tip Blucher",
+        "V-Tip Commando Blucher 54321",
+        "Straight Tip Balmoral 907 Calfskin",
+        "Plain Toe Blucher 947 All Weather Walker",
+        "George Boot Monk Dress Shoe"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "US"
+    },
+    {
+      "brand": "Berluti",
+      "leafKey": "formal-shoes",
+      "reason": "Parisian high bottier Berluti curates 8 sculptural dress wholecuts, cap-toes, and monk shoes in hand-patinated Venezia leather.",
+      "officialSourceUrl": "https://www.berluti.com/en-us/shoes/oxfords-derbies/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Alessandro Demesure Wholecut Oxford",
+        "Alessandro Galet Leather Oxford",
+        "Fast Track Dress Shoe",
+        "Caractère Éclair Monk Strap",
+        "Équilibre Leather Oxford",
+        "Stellar Cap Toe Oxford",
+        "Scritto Patinated Wholecut",
+        "Eris Monk Strap Shoe"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "FR"
+    }
+  ]
+}

@@ -1,0 +1,3405 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "decor",
+  "displayName": "Home Decor & Objects",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "baccarat-eye-vase-oval",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Eye Vase Oval",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/eye-vase-oval"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-eye-vase-oval.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "eye vase oval",
+        "material": "Clear Crystal",
+        "dimensionsCm": "24 x 19 x 13",
+        "finish": "Polished Beveled Crystal",
+        "designer": "Nicolas Triboulot",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Eye Vase Oval",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-harcourt-1841-mizuwari-decanter",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Harcourt 1841 Mizuwari Decanter",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/harcourt-1841-mizuwari-decanter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-harcourt-1841-mizuwari-decanter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "harcourt 1841 mizuwari decanter",
+        "material": "Clear Crystal",
+        "dimensionsCm": "30 x 12 x 12",
+        "finish": "Hand-cut Faceted Crystal",
+        "designer": "Jean-François Bony",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Harcourt 1841 Mizuwari Decanter",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-louxor-round-vase",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Louxor Round Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/louxor-round-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-louxor-round-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "louxor round vase",
+        "material": "Clear Crystal",
+        "dimensionsCm": "20 x 15 x 15",
+        "finish": "Diamond Pyramid Cut",
+        "designer": "Thomas Bastide",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Louxor Round Vase",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-lucky-butterfly-sculpture",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Lucky Butterfly Sculpture",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/lucky-butterfly-sculpture"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-lucky-butterfly-sculpture.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "lucky butterfly sculpture",
+        "material": "Iridescent Crystal",
+        "dimensionsCm": "6.5 x 8 x 4",
+        "finish": "Iridescent Polish",
+        "designer": "Evelyne Julienne",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Lucky Butterfly Sculpture",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-flora-biseau-bud-vase",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Flora Biseau Bud Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/flora-biseau-bud-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-flora-biseau-bud-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "flora biseau bud vase",
+        "material": "Clear Crystal",
+        "dimensionsCm": "18 x 9 x 9",
+        "finish": "Fluted Geometric Cut",
+        "designer": "Baccarat Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Flora Biseau Bud Vase",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-bloom-crystal-flower",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Bloom Crystal Flower Sculpture",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/bloom-crystal-flower"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-bloom-crystal-flower.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "bloom crystal flower sculpture",
+        "material": "Amber Crystal",
+        "dimensionsCm": "9 x 9 x 4",
+        "finish": "Smooth Molten Crystal",
+        "designer": "Jan Tesař",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Bloom Crystal Flower Sculpture",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-heritage-colbert-carafe",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Heritage Colbert Wine Carafe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/heritage-colbert-carafe"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-heritage-colbert-carafe.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "heritage colbert wine carafe",
+        "material": "Clear Cut Crystal",
+        "dimensionsCm": "28 x 14 x 14",
+        "finish": "Classic Crosshatch Cut",
+        "designer": "Baccarat Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Heritage Colbert Wine Carafe",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-faunacrystopolis-figurine",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Faunacrystopolis Animal Figurine",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/faunacrystopolis-figurine"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-faunacrystopolis-figurine.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "faunacrystopolis animal figurine",
+        "material": "Clear Crystal",
+        "dimensionsCm": "12 x 8 x 7",
+        "finish": "Polished Whimsical Cut",
+        "designer": "Jaime Hayon",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Faunacrystopolis Animal Figurine",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-mille-nuits-votive",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Mille Nuits Votive Candleholder",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/mille-nuits-votive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-mille-nuits-votive.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "mille nuits votive candleholder",
+        "material": "Clear Crystal",
+        "dimensionsCm": "7 x 8 x 8",
+        "finish": "Concentric Ribbed Facets",
+        "designer": "Mathias",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Mille Nuits Votive Candleholder",
+      "status": "staged"
+    },
+    {
+      "id": "baccarat-spirale-vase",
+      "canonicalBrand": "Baccarat",
+      "displayBrand": "Baccarat",
+      "productLine": "Haute Cristallerie",
+      "modelName": "Spirale Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baccarat.com/en/spirale-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Pure Clear Crystal",
+        "Amber",
+        "Iridescent"
+      ],
+      "mediaSource": {
+        "url": "https://www.baccarat.com/images/baccarat-spirale-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baccarat",
+        "modelName": "spirale vase",
+        "material": "Clear Crystal",
+        "dimensionsCm": "22 x 12 x 12",
+        "finish": "Twisted Helical Facets",
+        "designer": "Baccarat Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baccarat French fine crystal decorative object Spirale Vase",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-bacchantes-round-vase",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Bacchantes Round Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/bacchantes-round-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-bacchantes-round-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "bacchantes round vase",
+        "material": "Frosted and Clear Crystal",
+        "dimensionsCm": "24 x 19 x 19",
+        "finish": "Satin-finished Relief",
+        "designer": "René Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Bacchantes Round Vase",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-champs-elysees-oak-bowl",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Champs-Élysées Oak Leaf Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/champs-elysees-oak-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-champs-elysees-oak-bowl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "champs-élysées oak leaf bowl",
+        "material": "Frosted and Clear Crystal",
+        "dimensionsCm": "19 x 46 x 19",
+        "finish": "Satin Crystal Leaves",
+        "designer": "Marc Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Champs-Élysées Oak Leaf Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-anemones-flower-sculpture",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Anémones Flower Sculpture",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/anemones-flower-sculpture"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-anemones-flower-sculpture.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "anémones flower sculpture",
+        "material": "Clear Crystal and Black Enamel",
+        "dimensionsCm": "10 x 11 x 11",
+        "finish": "Satin Crystal with Enamel Dots",
+        "designer": "René Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Anémones Flower Sculpture",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-tourbillons-spiral-vase",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Tourbillons Spiral Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/tourbillons-spiral-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-tourbillons-spiral-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "tourbillons spiral vase",
+        "material": "Amber Crystal",
+        "dimensionsCm": "20 x 20 x 20",
+        "finish": "High Relief Polished Waves",
+        "designer": "René Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Tourbillons Spiral Vase",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-mossi-geometric-vase",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Mossi Geometric Bubble Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/mossi-geometric-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-mossi-geometric-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "mossi geometric bubble vase",
+        "material": "Clear Crystal",
+        "dimensionsCm": "21 x 18 x 18",
+        "finish": "Cabochon Polished Prisms",
+        "designer": "René Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Mossi Geometric Bubble Vase",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-hirondelles-swallows-sculpture",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Hirondelles Swallows Wall Sculpture",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/hirondelles-swallows-sculpture"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-hirondelles-swallows-sculpture.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "hirondelles swallows wall sculpture",
+        "material": "Satin Crystal",
+        "dimensionsCm": "14 x 12 x 4",
+        "finish": "Satin Carved Relief",
+        "designer": "Lalique Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Hirondelles Swallows Wall Sculpture",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-muguet-votive",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Muguet Lily of the Valley Votive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/muguet-votive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-muguet-votive.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "muguet lily of the valley votive",
+        "material": "Clear Frosted Crystal",
+        "dimensionsCm": "8 x 8 x 8",
+        "finish": "Satin Relief Flowers",
+        "designer": "René Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Muguet Lily of the Valley Votive",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-languedoc-cactus-vase",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Languedoc Cactus Leaf Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/languedoc-cactus-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-languedoc-cactus-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "languedoc cactus leaf vase",
+        "material": "Emerald Crystal",
+        "dimensionsCm": "22 x 30 x 30",
+        "finish": "Embossed Botanical Relief",
+        "designer": "René Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Languedoc Cactus Leaf Vase",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-fish-crystal-figurine",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Fish Crystal Figurine",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/fish-crystal-figurine"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-fish-crystal-figurine.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "fish crystal figurine",
+        "material": "Turquoise Crystal",
+        "dimensionsCm": "4.5 x 5 x 3",
+        "finish": "Molded Satin Crystal",
+        "designer": "René Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Fish Crystal Figurine",
+      "status": "staged"
+    },
+    {
+      "id": "lalique-versailles-urn-vase",
+      "canonicalBrand": "Lalique",
+      "displayBrand": "Lalique",
+      "productLine": "Art & Décoration",
+      "modelName": "Versailles Classical Urn Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lalique.com/en/art/versailles-urn-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Frosted Satin",
+        "Clear Polish"
+      ],
+      "mediaSource": {
+        "url": "https://www.lalique.com/images/lalique-versailles-urn-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lalique",
+        "modelName": "versailles classical urn vase",
+        "material": "Clear and Satin Crystal",
+        "dimensionsCm": "34 x 26 x 26",
+        "finish": "Fluted Classical Relief",
+        "designer": "René Lalique",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lalique French frosted crystal sculpture Versailles Classical Urn Vase",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-h-deco-vide-poche",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "H Déco Porcelain Vide-Poche",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/h-deco-vide-poche"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-h-deco-vide-poche"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "h déco porcelain vide-poche",
+        "material": "Limoges Porcelain",
+        "dimensionsCm": "21 x 17 x 3",
+        "finish": "Glazed Enamel with Gold Trim",
+        "designer": "Hermès Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object H Déco Porcelain Vide-Poche",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-mosaique-change-tray",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "Mosaique au 24 Platinum Change Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/mosaique-change-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-mosaique-change-tray"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "mosaique au 24 platinum change tray",
+        "material": "Limoges Porcelain",
+        "dimensionsCm": "16 x 16 x 2",
+        "finish": "Screen-printed Platinum Mosaic",
+        "designer": "Hermès Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object Mosaique au 24 Platinum Change Tray",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-cheval-d-orient-plate",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "Cheval d'Orient Decorative Plate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/cheval-d-orient-plate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-cheval-d-orient-plate"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "cheval d'orient decorative plate",
+        "material": "Limoges Porcelain",
+        "dimensionsCm": "26 x 26 x 3",
+        "finish": "Persian Miniature Enamel",
+        "designer": "Hermès Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object Cheval d'Orient Decorative Plate",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-samarcande-paperweight",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "Samarcande Lacquered Wood Paperweight",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/samarcande-paperweight"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-samarcande-paperweight"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "samarcande lacquered wood paperweight",
+        "material": "Solid Lacquered Wood",
+        "dimensionsCm": "16 x 14 x 4",
+        "finish": "Gloss Lacquer",
+        "designer": "Hermès Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object Samarcande Lacquered Wood Paperweight",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-passifolia-centerpiece-bowl",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "Passifolia Porcelain Centerpiece Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/passifolia-centerpiece-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-passifolia-centerpiece-bowl"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "passifolia porcelain centerpiece bowl",
+        "material": "Limoges Porcelain",
+        "dimensionsCm": "28 x 28 x 9",
+        "finish": "Hand-applied Tropical Enamel",
+        "designer": "Nathalie Rolland-Huckel",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object Passifolia Porcelain Centerpiece Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-hippomobile-vide-poche",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "Hippomobile Ceramic Vide-Poche",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/hippomobile-vide-poche"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-hippomobile-vide-poche"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "hippomobile ceramic vide-poche",
+        "material": "Glazed Ceramic",
+        "dimensionsCm": "21 x 17 x 3",
+        "finish": "Whimsical Screen-printed Enamel",
+        "designer": "Gianpaolo Pagni",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object Hippomobile Ceramic Vide-Poche",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-bleus-d-ailleurs-vase",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "Bleus d'Ailleurs Porcelain Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/bleus-d-ailleurs-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-bleus-d-ailleurs-vase"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "bleus d'ailleurs porcelain vase",
+        "material": "Limoges Porcelain",
+        "dimensionsCm": "24 x 14 x 14",
+        "finish": "Cobalt Blue Enamel",
+        "designer": "Hermès Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object Bleus d'Ailleurs Porcelain Vase",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-pleiade-leather-tray",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "Pleiade Bridle Leather Desk Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/pleiade-leather-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-pleiade-leather-tray"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "pleiade bridle leather desk tray",
+        "material": "Taurillon Leather & Solid Walnut",
+        "dimensionsCm": "25 x 20 x 4",
+        "finish": "Saddle-stitched Leather",
+        "designer": "Hermès Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object Pleiade Bridle Leather Desk Tray",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-h-riviera-box",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "H Riviera Beechwood & Leather Box",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/h-riviera-box"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-h-riviera-box"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "h riviera beechwood & leather box",
+        "material": "Lacquered Beechwood",
+        "dimensionsCm": "22 x 18 x 8",
+        "finish": "Matt Lacquer with Leather Lid",
+        "designer": "Hermès Studio",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object H Riviera Beechwood & Leather Box",
+      "status": "staged"
+    },
+    {
+      "id": "hermes-soleils-tray",
+      "canonicalBrand": "Hermès",
+      "displayBrand": "Hermès",
+      "productLine": "Maison & Arts de la Table",
+      "modelName": "Soleils d'Hermès Porcelain Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/home/objects/soleils-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Limoges Blanc",
+        "Gold Accents"
+      ],
+      "mediaSource": {
+        "url": "https://assets.hermes.com/is/image/hermesproduct/hermes-soleils-tray"
+      },
+      "collectedAttributes": {
+        "brand": "hermès",
+        "modelName": "soleils d'hermès porcelain tray",
+        "material": "Limoges Porcelain",
+        "dimensionsCm": "19 x 19 x 2",
+        "finish": "Mediterranean Sun Enamel",
+        "designer": "Arielle de Brichambaut",
+        "originCountry": "France"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hermès Maison handcrafted decorative object Soleils d'Hermès Porcelain Tray",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-cobra-candleholder",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Cobra Stainless Steel Floor Candleholder",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/cobra-candleholder"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-cobra-candleholder.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "cobra stainless steel floor candleholder",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "40 x 9 x 9",
+        "finish": "High Mirror Polish",
+        "designer": "Constantin Wortmann",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Cobra Stainless Steel Floor Candleholder",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-bloom-botanica-vase",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Bloom Botanica Petal Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/bloom-botanica-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-bloom-botanica-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "bloom botanica petal vase",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "22 x 15 x 15",
+        "finish": "Curving Mirror Finish",
+        "designer": "Helle Damkjær",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Bloom Botanica Petal Vase",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-alfredo-vase",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Alfredo Ribbed Stainless Steel Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/alfredo-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-alfredo-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "alfredo ribbed stainless steel vase",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "25 x 15 x 15",
+        "finish": "High Gloss Polish",
+        "designer": "Alfredo Häberli",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Alfredo Ribbed Stainless Steel Vase",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-cafu-glass-vase",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Cafu Mouth-blown Glass Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/cafu-glass-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-cafu-glass-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "cafu mouth-blown glass vase",
+        "material": "Tinted Dark Blue Glass",
+        "dimensionsCm": "30 x 20 x 20",
+        "finish": "Gloss Translucent Glass",
+        "designer": "HolmbäckNordentoft",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Cafu Mouth-blown Glass Vase",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-bernadotte-pitcher",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Bernadotte Fluted Pitcher",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/bernadotte-pitcher"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-bernadotte-pitcher.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "bernadotte fluted pitcher",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "26 x 15 x 10",
+        "finish": "Fluted Art Deco Polish",
+        "designer": "Sigvard Bernadotte",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Bernadotte Fluted Pitcher",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-legacy-bonbonniere",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Legacy Bonbonniere Heart Box",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/legacy-bonbonniere"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-legacy-bonbonniere.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "legacy bonbonniere heart box",
+        "material": "Mirror-polished Chromium Steel",
+        "dimensionsCm": "12 x 12 x 6",
+        "finish": "Mirror Polish",
+        "designer": "Philip Bro Ludvigsen",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Legacy Bonbonniere Heart Box",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-urkiola-cylinder-vase",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Urkiola Fluted Cylinder Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/urkiola-cylinder-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-urkiola-cylinder-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "urkiola fluted cylinder vase",
+        "material": "Stainless Steel with Rose Gold PVD",
+        "dimensionsCm": "23 x 14 x 14",
+        "finish": "Dual Steel and PVD Finish",
+        "designer": "Patricia Urquiola",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Urkiola Fluted Cylinder Vase",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-koppel-hurricane-lantern",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Koppel Wave Hurricane Lantern",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/koppel-hurricane-lantern"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-koppel-hurricane-lantern.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "koppel wave hurricane lantern",
+        "material": "Mirror-polished Steel & Frosted Glass",
+        "dimensionsCm": "22 x 16 x 16",
+        "finish": "Mirror and Frosted Finish",
+        "designer": "Henning Koppel",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Koppel Wave Hurricane Lantern",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-matrix-wire-tray",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Matrix Wire Mesh Cube Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/matrix-wire-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-matrix-wire-tray.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "matrix wire mesh cube tray",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "14 x 14 x 5",
+        "finish": "Grid Geometric Polish",
+        "designer": "Monica Förster",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Matrix Wire Mesh Cube Tray",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-ilse-brass-bowl",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Ilse Solid Brass Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/ilse-brass-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-ilse-brass-bowl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "ilse solid brass bowl",
+        "material": "Solid Brass",
+        "dimensionsCm": "16 x 16 x 9",
+        "finish": "High Gloss Warm Brass",
+        "designer": "Ilse Crawford",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Ilse Solid Brass Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "georg-jensen-henning-koppel-pitcher-1952",
+      "canonicalBrand": "Georg Jensen",
+      "displayBrand": "Georg Jensen",
+      "productLine": "Scandinavian Living Objects",
+      "modelName": "Masterpieces Henning Koppel Pitcher 1952",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.georgjensen.com/en-us/living/henning-koppel-pitcher-1952"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Warm Brass"
+      ],
+      "mediaSource": {
+        "url": "https://www.georgjensen.com/images/products/georg-jensen-henning-koppel-pitcher-1952.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "georg jensen",
+        "modelName": "masterpieces henning koppel pitcher 1952",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "33 x 14 x 10",
+        "finish": "Iconic Sculptural Polish",
+        "designer": "Henning Koppel",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Georg Jensen Scandinavian sculptural object Masterpieces Henning Koppel Pitcher 1952",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-juicy-salif-citrus-squeezer",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Juicy Salif Citrus Squeezer Sculpture",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/juicy-salif-citrus-squeezer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-juicy-salif-citrus-squeezer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "juicy salif citrus squeezer sculpture",
+        "material": "Mirror-polished Die-cast Aluminum",
+        "dimensionsCm": "29 x 14 x 14",
+        "finish": "Polished Aluminum",
+        "designer": "Philippe Starck",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Juicy Salif Citrus Squeezer Sculpture",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-girotondo-round-bowl",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Girotondo Round Openwork Fruit Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/girotondo-round-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-girotondo-round-bowl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "girotondo round openwork fruit bowl",
+        "material": "Mirror-polished 18/10 Stainless Steel",
+        "dimensionsCm": "21 x 21 x 9",
+        "finish": "Laser-cut Openwork",
+        "designer": "King-Kong (Stefano Giovannoni)",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Girotondo Round Openwork Fruit Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-mediterraneo-coral-bowl",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Mediterraneo Sea Coral Fruit Holder",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/mediterraneo-coral-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-mediterraneo-coral-bowl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "mediterraneo sea coral fruit holder",
+        "material": "Red Epoxy Resin-coated Steel",
+        "dimensionsCm": "29 x 29 x 11",
+        "finish": "Gloss Enamel",
+        "designer": "LPWK & Emma Silvestris",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Mediterraneo Sea Coral Fruit Holder",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-trinity-vortex-bowl",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Trinity Dynamic Vortex Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/trinity-vortex-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-trinity-vortex-bowl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "trinity dynamic vortex bowl",
+        "material": "White Epoxy Resin Coated Steel",
+        "dimensionsCm": "33 x 33 x 8",
+        "finish": "Matte Lacquered Geometric",
+        "designer": "Adam Cornish",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Trinity Dynamic Vortex Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-cactus-pomegranate-bowl",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Cactus! Pomegranate Fruit Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/cactus-pomegranate-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-cactus-pomegranate-bowl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "cactus! pomegranate fruit bowl",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "29 x 29 x 11",
+        "finish": "Laser-cut Openwork",
+        "designer": "Marta Sansoni",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Cactus! Pomegranate Fruit Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-dressed-scalloped-centerpiece",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Dressed Scalloped Porcelain Centerpiece",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/dressed-scalloped-centerpiece"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-dressed-scalloped-centerpiece.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "dressed scalloped porcelain centerpiece",
+        "material": "White Porcelain with Relief Edge",
+        "dimensionsCm": "38 x 38 x 4",
+        "finish": "Glazed Relief",
+        "designer": "Marcel Wanders",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Dressed Scalloped Porcelain Centerpiece",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-blow-up-centerpiece",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Blow Up Bamboo Rod Centerpiece",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/blow-up-centerpiece"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-blow-up-centerpiece.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "blow up bamboo rod centerpiece",
+        "material": "Mirror-polished Chrome Steel Rods",
+        "dimensionsCm": "33 x 32 x 11",
+        "finish": "Dynamic Welded Finish",
+        "designer": "Campana Brothers",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Blow Up Bamboo Rod Centerpiece",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-bark-curved-centerpiece",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Bark Curved Steel Centerpiece",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/bark-curved-centerpiece"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-bark-curved-centerpiece.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "bark curved steel centerpiece",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "51 x 19 x 5",
+        "finish": "Pierced Bark Texture",
+        "designer": "Michel Boucquillon & Donia Maaoui",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Bark Curved Steel Centerpiece",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-crevasse-flower-vase",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Crevasse Angled Flower Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/crevasse-flower-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-crevasse-flower-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "crevasse angled flower vase",
+        "material": "Mirror-polished 18/10 Stainless Steel",
+        "dimensionsCm": "42 x 15 x 8",
+        "finish": "Diagonal Mirror Sheen",
+        "designer": "Zaha Hadid",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Crevasse Angled Flower Vase",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-kalisto-kitchen-canister",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "Kalistò Round Kitchen Canister",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/kalisto-kitchen-canister"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-kalisto-kitchen-canister.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "kalistò round kitchen canister",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "21 x 11 x 11",
+        "finish": "Mirror Sheen",
+        "designer": "CSA & Clare Brass",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object Kalistò Round Kitchen Canister",
+      "status": "staged"
+    },
+    {
+      "id": "alessi-9093-kettle-bird-whistle",
+      "canonicalBrand": "Alessi",
+      "displayBrand": "Alessi",
+      "productLine": "Italian Design Factory Objects",
+      "modelName": "9093 Kettle with Bird Whistle",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.alessi.com/products/9093-kettle-bird-whistle"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Mirror Stainless Steel",
+        "Color Epoxy"
+      ],
+      "mediaSource": {
+        "url": "https://us.alessi.com/images/alessi-9093-kettle-bird-whistle.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "alessi",
+        "modelName": "9093 kettle with bird whistle",
+        "material": "Mirror-polished 18/10 Stainless Steel",
+        "dimensionsCm": "22 x 22 x 22",
+        "finish": "Mirror Polish with Red Whistle",
+        "designer": "Michael Graves",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Alessi iconic Italian architecture and design object 9093 Kettle with Bird Whistle",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-aalto-savoy-vase-160mm",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Aalto Savoy Glass Vase 160mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/aalto-savoy-vase-160mm"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-aalto-savoy-vase-160mm.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "aalto savoy glass vase 160mm",
+        "material": "Mouth-blown Lead-free Glass",
+        "dimensionsCm": "16 x 20 x 17",
+        "finish": "Clear Polished Glass",
+        "designer": "Alvar Aalto",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Aalto Savoy Glass Vase 160mm",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-aalto-savoy-vase-220mm",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Aalto Savoy Glass Vase 220mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/aalto-savoy-vase-220mm"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-aalto-savoy-vase-220mm.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "aalto savoy glass vase 220mm",
+        "material": "Mouth-blown Moss Green Glass",
+        "dimensionsCm": "22 x 26 x 20",
+        "finish": "Tinted Smooth Glass",
+        "designer": "Alvar Aalto",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Aalto Savoy Glass Vase 220mm",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-kastehelmi-footed-bowl",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Kastehelmi Dewdrop Glass Footed Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/kastehelmi-footed-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-kastehelmi-footed-bowl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "kastehelmi dewdrop glass footed bowl",
+        "material": "Pressed Clear Glass",
+        "dimensionsCm": "10 x 11 x 11",
+        "finish": "Textured Dewdrop Relief",
+        "designer": "Oiva Toikka",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Kastehelmi Dewdrop Glass Footed Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-kastehelmi-votive",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Kastehelmi Dewdrop Glass Votive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/kastehelmi-votive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-kastehelmi-votive.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "kastehelmi dewdrop glass votive",
+        "material": "Cranberry Pressed Glass",
+        "dimensionsCm": "6.4 x 7 x 7",
+        "finish": "Beaded Glass Beads",
+        "designer": "Oiva Toikka",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Kastehelmi Dewdrop Glass Votive",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-birds-toikka-puffball",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Birds by Toikka Puffball Glass Sculpture",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/birds-toikka-puffball"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-birds-toikka-puffball.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "birds by toikka puffball glass sculpture",
+        "material": "Mouth-blown Art Glass",
+        "dimensionsCm": "5 x 7 x 5",
+        "finish": "Handcrafted Opaque Glass",
+        "designer": "Oiva Toikka",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Birds by Toikka Puffball Glass Sculpture",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-birds-toikka-barn-owl",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Birds by Toikka Barn Owl Glass Figurine",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/birds-toikka-barn-owl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-birds-toikka-barn-owl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "birds by toikka barn owl glass figurine",
+        "material": "Mouth-blown Handcrafted Glass",
+        "dimensionsCm": "15 x 10 x 10",
+        "finish": "Multi-colored Blown Glass",
+        "designer": "Oiva Toikka",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Birds by Toikka Barn Owl Glass Figurine",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-ruutu-diamond-vase",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Ruutu Diamond Blown Glass Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/ruutu-diamond-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-ruutu-diamond-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "ruutu diamond blown glass vase",
+        "material": "Mouth-blown Smoke Grey Glass",
+        "dimensionsCm": "20 x 18 x 9",
+        "finish": "Geometric Faceted Glass",
+        "designer": "Ronan & Erwan Bouroullec",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Ruutu Diamond Blown Glass Vase",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-nappula-candlestick",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Nappula Powder Coated Candlestick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/nappula-candlestick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-nappula-candlestick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "nappula powder coated candlestick",
+        "material": "Powder-coated Steel",
+        "dimensionsCm": "18 x 9 x 9",
+        "finish": "Matte Nordic White",
+        "designer": "Matti Klenell",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Nappula Powder Coated Candlestick",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-valkea-rippled-votive",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Valkea Rippled Glass Votive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/valkea-rippled-votive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-valkea-rippled-votive.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "valkea rippled glass votive",
+        "material": "Clear Ribbed Glass",
+        "dimensionsCm": "6 x 8 x 8",
+        "finish": "Concentric Ribbed Polish",
+        "designer": "Harri Koskinen",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Valkea Rippled Glass Votive",
+      "status": "staged"
+    },
+    {
+      "id": "iittala-teema-serving-platter",
+      "canonicalBrand": "Iittala",
+      "displayBrand": "Iittala",
+      "productLine": "Finnish Glassware & Design",
+      "modelName": "Teema Minimalist Ceramic Serving Platter",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iittala.com/en-us/interior/teema-serving-platter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Clear Glass",
+        "Moss Green",
+        "Cranberry"
+      ],
+      "mediaSource": {
+        "url": "https://images.iittala.com/products/iittala-teema-serving-platter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "iittala",
+        "modelName": "teema minimalist ceramic serving platter",
+        "material": "Glazed Vitrified Porcelain",
+        "dimensionsCm": "32 x 24 x 4",
+        "finish": "Smooth Gloss White",
+        "designer": "Kaj Franck",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iittala Finnish mouth-blown glass art Teema Minimalist Ceramic Serving Platter",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-tema-e-variazioni-plate-1",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Tema e Variazioni Wall Plate N. 1",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/tema-e-variazioni-plate-1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-tema-e-variazioni-plate-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "tema e variazioni wall plate n. 1",
+        "material": "Handcrafted Glazed Porcelain",
+        "dimensionsCm": "26 x 26 x 3",
+        "finish": "Hand-applied Decal and Gold",
+        "designer": "Piero Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Tema e Variazioni Wall Plate N. 1",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-tema-e-variazioni-plate-147",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Tema e Variazioni Wall Plate N. 147",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/tema-e-variazioni-plate-147"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-tema-e-variazioni-plate-147.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "tema e variazioni wall plate n. 147",
+        "material": "Glazed Porcelain",
+        "dimensionsCm": "26 x 26 x 3",
+        "finish": "Monochrome Silk-screened Enamel",
+        "designer": "Piero Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Tema e Variazioni Wall Plate N. 147",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-tema-e-variazioni-plate-399",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Tema e Variazioni Wall Plate N. 399",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/tema-e-variazioni-plate-399"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-tema-e-variazioni-plate-399.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "tema e variazioni wall plate n. 399",
+        "material": "Glazed Porcelain",
+        "dimensionsCm": "26 x 26 x 3",
+        "finish": "Iconic Lina Cavalieri Face Decal",
+        "designer": "Piero Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Tema e Variazioni Wall Plate N. 399",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-astronomici-scented-candle",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Astronomici Porcelain Scented Candle Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/astronomici-scented-candle"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-astronomici-scented-candle.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "astronomici porcelain scented candle bowl",
+        "material": "Glazed Ceramic with Wax",
+        "dimensionsCm": "15 x 9 x 9",
+        "finish": "Gilded Astrological Relief",
+        "designer": "Piero Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Astronomici Porcelain Scented Candle Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-architettura-magazine-rack",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Architettura Wooden Magazine Rack",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/architettura-magazine-rack"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-architettura-magazine-rack.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "architettura wooden magazine rack",
+        "material": "Screen-printed Lacquered Wood",
+        "dimensionsCm": "38 x 42 x 15",
+        "finish": "Brass Trim and Satin Lacquer",
+        "designer": "Piero Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Architettura Wooden Magazine Rack",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-bacio-lips-porcelain-vase",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Bacio Lina Cavalieri Lips Porcelain Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/bacio-lips-porcelain-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-bacio-lips-porcelain-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "bacio lina cavalieri lips porcelain vase",
+        "material": "Glazed Fine Porcelain",
+        "dimensionsCm": "30 x 13 x 13",
+        "finish": "Hand-painted Ceramic Gloss",
+        "designer": "Barnaba Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Bacio Lina Cavalieri Lips Porcelain Vase",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-malachite-tray",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Malachite Patterned Ceramic Ashtray / Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/malachite-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-malachite-tray.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "malachite patterned ceramic ashtray / tray",
+        "material": "Glazed Porcelain",
+        "dimensionsCm": "14 x 11 x 3",
+        "finish": "Green Malachite Veined Enamel",
+        "designer": "Piero Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Malachite Patterned Ceramic Ashtray / Tray",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-serpente-umbrella-stand",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Serpente Cylindrical Ceramic Umbrella Stand",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/serpente-umbrella-stand"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-serpente-umbrella-stand.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "serpente cylindrical ceramic umbrella stand",
+        "material": "Screen-printed Steel & Brass",
+        "dimensionsCm": "57 x 26 x 26",
+        "finish": "High Gloss Lacquer",
+        "designer": "Piero Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Serpente Cylindrical Ceramic Umbrella Stand",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-ortensia-scented-candle-jar",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Ortensia Scented Ceramic Candle Jar",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/ortensia-scented-candle-jar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-ortensia-scented-candle-jar.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "ortensia scented ceramic candle jar",
+        "material": "Glazed Ceramic",
+        "dimensionsCm": "15 x 10 x 10",
+        "finish": "Floral Decal with Otto Scent",
+        "designer": "Barnaba Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Ortensia Scented Ceramic Candle Jar",
+      "status": "staged"
+    },
+    {
+      "id": "fornasetti-don-giovanni-vide-poche",
+      "canonicalBrand": "Fornasetti",
+      "displayBrand": "Fornasetti",
+      "productLine": "Tema e Variazioni",
+      "modelName": "Don Giovanni Golden Ceramic Vide-Poche",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.fornasetti.com/en-us/products/don-giovanni-vide-poche"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black & White Decal",
+        "Gold Gilt"
+      ],
+      "mediaSource": {
+        "url": "https://www.fornasetti.com/images/fornasetti-don-giovanni-vide-poche.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "fornasetti",
+        "modelName": "don giovanni golden ceramic vide-poche",
+        "material": "Glazed Porcelain",
+        "dimensionsCm": "16 x 16 x 3",
+        "finish": "Gilded Theater Motif",
+        "designer": "Barnaba Fornasetti",
+        "originCountry": "Italy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fornasetti Italian surrealist ceramic art Don Giovanni Golden Ceramic Vide-Poche",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-unikko-flower-vase",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Unikko Poppy Stoneware Flower Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/unikko-flower-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-unikko-flower-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "unikko poppy stoneware flower vase",
+        "material": "Glazed Stoneware",
+        "dimensionsCm": "21 x 11 x 11",
+        "finish": "Matte Satin Glaze",
+        "designer": "Carina Seth Andersson",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Unikko Poppy Stoneware Flower Vase",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-flower-tinted-glass-vase",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Flower Mouth-Blown Tinted Glass Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/flower-tinted-glass-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-flower-tinted-glass-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "flower mouth-blown tinted glass vase",
+        "material": "Mouth-blown Olive Glass",
+        "dimensionsCm": "10 x 10 x 10",
+        "finish": "Smooth Translucent Gloss",
+        "designer": "Carina Seth Andersson",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Flower Mouth-Blown Tinted Glass Vase",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-ming-tinted-glass-vase",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Ming Sculptural Tinted Glass Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/ming-tinted-glass-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-ming-tinted-glass-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "ming sculptural tinted glass vase",
+        "material": "Mouth-blown Smoke Glass",
+        "dimensionsCm": "24 x 19 x 19",
+        "finish": "Translucent Bulbous Finish",
+        "designer": "Carina Seth Andersson",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Ming Sculptural Tinted Glass Vase",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-urna-large-glass-vase",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Urna Large Round Glass Centerpiece Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/urna-large-glass-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-urna-large-glass-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "urna large round glass centerpiece vase",
+        "material": "Mouth-blown Clear Glass",
+        "dimensionsCm": "21 x 30 x 30",
+        "finish": "Clear Molten Bubble Glass",
+        "designer": "Carina Seth Andersson",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Urna Large Round Glass Centerpiece Vase",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-oiva-unikko-plate",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Oiva Unikko Decorative Stoneware Plate",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/oiva-unikko-plate"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-oiva-unikko-plate.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "oiva unikko decorative stoneware plate",
+        "material": "White Stoneware",
+        "dimensionsCm": "20 x 20 x 2",
+        "finish": "Glazed Black Poppy Motif",
+        "designer": "Maija Isola",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Oiva Unikko Decorative Stoneware Plate",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-oiva-siirtolapuutarha-bowl",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Oiva Siirtolapuutarha Patterned Serving Bowl",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/oiva-siirtolapuutarha-bowl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-oiva-siirtolapuutarha-bowl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "oiva siirtolapuutarha patterned serving bowl",
+        "material": "White Vitrified Stoneware",
+        "dimensionsCm": "24 x 24 x 8",
+        "finish": "Monochrome Line Illustration Glaze",
+        "designer": "Maija Louekari",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Oiva Siirtolapuutarha Patterned Serving Bowl",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-kuusikossa-winter-mug",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Kuusikossa Winter Forest Stoneware Mug Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/kuusikossa-winter-mug"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-kuusikossa-winter-mug.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "kuusikossa winter forest stoneware mug set",
+        "material": "Glazed Stoneware",
+        "dimensionsCm": "10 x 8 x 8",
+        "finish": "Golden Tree Illustration",
+        "designer": "Maija Louekari",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Kuusikossa Winter Forest Stoneware Mug Set",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-putki-ribbed-lantern",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Putki Ribbed Mouth-blown Lantern",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/putki-ribbed-lantern"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-putki-ribbed-lantern.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "putki ribbed mouth-blown lantern",
+        "material": "Clear Ribbed Art Glass",
+        "dimensionsCm": "28 x 15 x 15",
+        "finish": "Textured Fluted Glass",
+        "designer": "Matti Klenell",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Putki Ribbed Mouth-blown Lantern",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-tiiliskivi-ceramic-planter",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Tiiliskivi Minimalist Ceramic Planter with Saucer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/tiiliskivi-ceramic-planter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-tiiliskivi-ceramic-planter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "tiiliskivi minimalist ceramic planter with saucer",
+        "material": "Glazed Stoneware",
+        "dimensionsCm": "16 x 16 x 14",
+        "finish": "Terracotta Matte",
+        "designer": "Armi Ratia",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Tiiliskivi Minimalist Ceramic Planter with Saucer",
+      "status": "staged"
+    },
+    {
+      "id": "marimekko-kokoelma-wood-tray",
+      "canonicalBrand": "Marimekko",
+      "displayBrand": "Marimekko",
+      "productLine": "Unikko & Finnish Living",
+      "modelName": "Kokoelma Organic Wood Serving Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.marimekko.com/us_en/home/decor/kokoelma-wood-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "White / Black Unikko",
+        "Clear Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.marimekko.com/images/marimekko-kokoelma-wood-tray.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "marimekko",
+        "modelName": "kokoelma organic wood serving tray",
+        "material": "Laminated Birch Plywood",
+        "dimensionsCm": "43 x 33 x 2",
+        "finish": "Clear Protective Matt Lacquer",
+        "designer": "Marimekko Studio",
+        "originCountry": "Finland"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Marimekko Finnish print and ceramic object Kokoelma Organic Wood Serving Tray",
+      "status": "staged"
+    },
+    {
+      "id": "hay-moroccan-recycled-glass-vase",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Moroccan Hand-blown Recycled Glass Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/moroccan-recycled-glass-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-moroccan-recycled-glass-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "moroccan hand-blown recycled glass vase",
+        "material": "Recycled Blown Glass",
+        "dimensionsCm": "29 x 19 x 19",
+        "finish": "Translucent Amber Glass",
+        "designer": "HAY Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Moroccan Hand-blown Recycled Glass Vase",
+      "status": "staged"
+    },
+    {
+      "id": "hay-bottoms-up-glass-vase",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Bottoms Up Two-Tone Glass Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/bottoms-up-glass-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-bottoms-up-glass-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "bottoms up two-tone glass vase",
+        "material": "Two-Tone Borosilicate Glass",
+        "dimensionsCm": "21 x 12 x 12",
+        "finish": "Dual-color Smooth Gloss",
+        "designer": "Ingrid Rutgers",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Bottoms Up Two-Tone Glass Vase",
+      "status": "staged"
+    },
+    {
+      "id": "hay-color-crate-storage",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Color Crate Recycled Plastic Storage Organizer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/color-crate-storage"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-color-crate-storage.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "color crate recycled plastic storage organizer",
+        "material": "100% Recycled Polypropylene",
+        "dimensionsCm": "34 x 26 x 14",
+        "finish": "Matte Perforated Plastic",
+        "designer": "HAY Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Color Crate Recycled Plastic Storage Organizer",
+      "status": "staged"
+    },
+    {
+      "id": "hay-flare-borosilicate-candlestick",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Flare Fluted Borosilicate Glass Candlestick",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/flare-borosilicate-candlestick"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-flare-borosilicate-candlestick.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "flare fluted borosilicate glass candlestick",
+        "material": "Borosilicate Glass",
+        "dimensionsCm": "14 x 11 x 11",
+        "finish": "Tinted Ribbed Rim",
+        "designer": "HAY Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Flare Fluted Borosilicate Glass Candlestick",
+      "status": "staged"
+    },
+    {
+      "id": "hay-time-30min-hourglass",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Time 30-Minute Hourglass",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/time-30min-hourglass"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-time-30min-hourglass.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "time 30-minute hourglass",
+        "material": "Tinted Glass and Glass Sand",
+        "dimensionsCm": "21 x 7 x 7",
+        "finish": "Smooth Transparent Glass",
+        "designer": "HAY Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Time 30-Minute Hourglass",
+      "status": "staged"
+    },
+    {
+      "id": "hay-kaleido-geometric-tray",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Kaleido Geometric Steel Powder-Coated Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/kaleido-geometric-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-kaleido-geometric-tray.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "kaleido geometric steel powder-coated tray",
+        "material": "Powder-coated Steel",
+        "dimensionsCm": "22 x 19 x 2",
+        "finish": "Matte Powder Paint",
+        "designer": "Clara von Zweigbergk",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Kaleido Geometric Steel Powder-Coated Tray",
+      "status": "staged"
+    },
+    {
+      "id": "hay-paper-porcelain-espresso-cup",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Paper Porcelain Decorative Espresso Cup & Saucer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/paper-porcelain-espresso-cup"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-paper-porcelain-espresso-cup.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "paper porcelain decorative espresso cup & saucer",
+        "material": "Fine Paper-Look Porcelain",
+        "dimensionsCm": "6 x 6 x 6",
+        "finish": "Unglazed Matte Paper Finish",
+        "designer": "Scholten & Baijings",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Paper Porcelain Decorative Espresso Cup & Saucer",
+      "status": "staged"
+    },
+    {
+      "id": "hay-ws-chubby-ceramic-sculpture",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "W&S Chubby Ceramic Stoneware Sculpture",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/ws-chubby-ceramic-sculpture"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-ws-chubby-ceramic-sculpture.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "w&s chubby ceramic stoneware sculpture",
+        "material": "Glazed Ceramic",
+        "dimensionsCm": "22 x 18 x 10",
+        "finish": "High Gloss Bubble Glaze",
+        "designer": "Wang & Söderström",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object W&S Chubby Ceramic Stoneware Sculpture",
+      "status": "staged"
+    },
+    {
+      "id": "hay-slit-mirror-polished-pedestal",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Slit Mirror Polished Round Accent Table/Pedestal",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/slit-mirror-polished-pedestal"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-slit-mirror-polished-pedestal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "slit mirror polished round accent table/pedestal",
+        "material": "Mirror-polished Stainless Steel",
+        "dimensionsCm": "35 x 45 x 45",
+        "finish": "High Mirror Sheen",
+        "designer": "HAY Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Slit Mirror Polished Round Accent Table/Pedestal",
+      "status": "staged"
+    },
+    {
+      "id": "hay-botanical-ceramic-flowerpot",
+      "canonicalBrand": "HAY",
+      "displayBrand": "HAY",
+      "productLine": "Contemporary Danish Living",
+      "modelName": "Botanical Ceramic Flowerpot with Saucer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.hay.com/products/botanical-ceramic-flowerpot"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Powder-Coated Steel",
+        "Recycled Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.hay.com/images/hay-botanical-ceramic-flowerpot.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "hay",
+        "modelName": "botanical ceramic flowerpot with saucer",
+        "material": "Glazed Polystone",
+        "dimensionsCm": "17 x 18 x 18",
+        "finish": "Textured Stone Matt",
+        "designer": "HAY Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "HAY Scandinavian contemporary home object Botanical Ceramic Flowerpot with Saucer",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-silent-scandinavian-glass-vase",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Silent Mouth-blown Scandinavian Glass Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/silent-scandinavian-glass-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-silent-scandinavian-glass-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "silent mouth-blown scandinavian glass vase",
+        "material": "Mouth-blown Lead-free Glass",
+        "dimensionsCm": "19 x 15 x 15",
+        "finish": "Pure Translucent Polish",
+        "designer": "Andreas Engesvik",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Silent Mouth-blown Scandinavian Glass Vase",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-ridge-terracotta-flower-vase",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Ridge Terracotta Architectural Flower Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/ridge-terracotta-flower-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-ridge-terracotta-flower-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "ridge terracotta architectural flower vase",
+        "material": "Earthenware Terracotta",
+        "dimensionsCm": "35 x 23 x 8",
+        "finish": "Raw Tactile Terracotta",
+        "designer": "Studio Kaksikko",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Ridge Terracotta Architectural Flower Vase",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-kink-curving-porcelain-vase",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Kink Curving Double-Stem Porcelain Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/kink-curving-porcelain-vase"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-kink-curving-porcelain-vase.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "kink curving double-stem porcelain vase",
+        "material": "Pigmented Glazed Porcelain",
+        "dimensionsCm": "26 x 27 x 12",
+        "finish": "Matte Fine-grained Exterior",
+        "designer": "Earnest Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Kink Curving Double-Stem Porcelain Vase",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-tub-organic-centerpiece-jug",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Tub Organic Ceramic Centerpiece Jug/Vase",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/tub-organic-centerpiece-jug"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-tub-organic-centerpiece-jug.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "tub organic ceramic centerpiece jug/vase",
+        "material": "Glazed Earthenware",
+        "dimensionsCm": "21 x 15 x 7",
+        "finish": "Smooth Scandinavian Glaze",
+        "designer": "French Designers Normal Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Tub Organic Ceramic Centerpiece Jug/Vase",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-the-dots-solid-oak-hooks",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "The Dots Solid Oak Wall Coat Hook Set",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/the-dots-solid-oak-hooks"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-the-dots-solid-oak-hooks.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "the dots solid oak wall coat hook set",
+        "material": "Solid First-Grade Oak Wood",
+        "dimensionsCm": "13 x 13 x 6",
+        "finish": "Clear Oiled Natural Wood",
+        "designer": "Lars Tornøe",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece The Dots Solid Oak Wall Coat Hook Set",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-restore-recycled-pet-basket",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Restore Recycled PET Felt Storage Basket",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/restore-recycled-pet-basket"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-restore-recycled-pet-basket.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "restore recycled pet felt storage basket",
+        "material": "Polymer Felt from Recycled Bottles",
+        "dimensionsCm": "23 x 35 x 48",
+        "finish": "Pressed Heathered Felt",
+        "designer": "Mika Tolvanen",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Restore Recycled PET Felt Storage Basket",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-platform-oak-ceramic-tray",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Platform Minimalist Oak & Ceramic Tray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/platform-oak-ceramic-tray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-platform-oak-ceramic-tray.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "platform minimalist oak & ceramic tray",
+        "material": "Oak Wood and Porcelain",
+        "dimensionsCm": "30 x 30 x 7",
+        "finish": "Natural Oak with White Glaze",
+        "designer": "Sam Hecht & Kim Colin",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Platform Minimalist Oak & Ceramic Tray",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-echo-textured-wool-rug",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Echo Textured Hand-woven Wool Rug Accent",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/echo-textured-wool-rug"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-echo-textured-wool-rug.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "echo textured hand-woven wool rug accent",
+        "material": "100% New Zealand Wool",
+        "dimensionsCm": "170 x 240 x 1",
+        "finish": "Hand-tufted Geometric Texture",
+        "designer": "Muuto Studio",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Echo Textured Hand-woven Wool Rug Accent",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-arrange-desktop-organizer",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Arrange Desktop Plastic & Aluminum Organizer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/arrange-desktop-organizer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-arrange-desktop-organizer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "arrange desktop plastic & aluminum organizer",
+        "material": "100% Recycled Plastic",
+        "dimensionsCm": "25 x 25 x 4",
+        "finish": "Matte Cork and Plastic",
+        "designer": "Big-Game",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Arrange Desktop Plastic & Aluminum Organizer",
+      "status": "staged"
+    },
+    {
+      "id": "muuto-framed-powder-coated-mirror",
+      "canonicalBrand": "Muuto",
+      "displayBrand": "Muuto",
+      "productLine": "New Nordic Perspective",
+      "modelName": "Framed Powder-Coated Architectural Wall Mirror",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.muuto.com/product/framed-powder-coated-mirror"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Natural Oak",
+        "Rose Steel",
+        "Mouth-blown Glass"
+      ],
+      "mediaSource": {
+        "url": "https://www.muuto.com/images/muuto-framed-powder-coated-mirror.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "muuto",
+        "modelName": "framed powder-coated architectural wall mirror",
+        "material": "Powder-coated Steel & Clear Mirror",
+        "dimensionsCm": "118 x 44 x 4",
+        "finish": "Rose Tinted Steel Frame",
+        "designer": "Anderssen & Voll",
+        "originCountry": "Denmark"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Muuto New Nordic design piece Framed Powder-Coated Architectural Wall Mirror",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": []
+}

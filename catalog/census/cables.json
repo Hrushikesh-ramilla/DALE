@@ -1,0 +1,3508 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "cables",
+  "displayName": "Cables & Interconnects",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "anker-765-usb-c-to-usb-c-140w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Anker Prime / Series 7",
+      "modelName": "765 USB-C to USB-C Cable (140W Nylon)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8865"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-765-usb-c-to-usb-c-140w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "765 usb-c to usb-c cable (140w nylon)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 140,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 765 USB-C to USB-C Cable (140W Nylon)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-543-usb-c-to-usb-c-100w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Eco",
+      "modelName": "543 USB-C to USB-C Cable (100W Bio-Based)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a80e5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-543-usb-c-to-usb-c-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "543 usb-c to usb-c cable (100w bio-based)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 543 USB-C to USB-C Cable (100W Bio-Based)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-544-usb-c-to-lightning",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Eco",
+      "modelName": "544 USB-C to Lightning Cable (Bio-Based)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8032"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-544-usb-c-to-lightning.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "544 usb-c to lightning cable (bio-based)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 30,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 544 USB-C to Lightning Cable (Bio-Based)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-333-usb-c-to-usb-c-100w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 3 Everyday",
+      "modelName": "333 USB-C to USB-C Cable (100W Nylon 6ft)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8758"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-333-usb-c-to-usb-c-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "333 usb-c to usb-c cable (100w nylon 6ft)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 333 USB-C to USB-C Cable (100W Nylon 6ft)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-515-usb4-cable-240w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Pro Data",
+      "modelName": "515 USB4 Cable (240W 40Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8486"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-515-usb4-cable-240w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "515 usb4 cable (240w 40gbps)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 240,
+        "dataTransferGbps": 40,
+        "displaySupport": "8K@60Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 515 USB4 Cable (240W 40Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-powerline-ii-usb-c-to-usb-a",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "PowerLine II",
+      "modelName": "PowerLine II USB-C to USB-A 3.1 Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8465"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-powerline-ii-usb-c-to-usb-a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "powerline ii usb-c to usb-a 3.1 cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 15,
+        "dataTransferGbps": 10,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: PowerLine II USB-C to USB-A 3.1 Cable",
+      "status": "staged"
+    },
+    {
+      "id": "anker-762-usb-c-to-lightning",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 7 Premium",
+      "modelName": "762 USB-C to Lightning Cable (Slim Braided)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8632"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-762-usb-c-to-lightning.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "762 usb-c to lightning cable (slim braided)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 30,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 762 USB-C to Lightning Cable (Slim Braided)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-ultra-high-speed-hdmi-2-1",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Anker AV",
+      "modelName": "Ultra High Speed HDMI 2.1 Cable (8K@60Hz 48Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8743"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-ultra-high-speed-hdmi-2-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "ultra high speed hdmi 2.1 cable (8k@60hz 48gbps)",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: Ultra High Speed HDMI 2.1 Cable (8K@60Hz 48Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-551-usb-c-to-hdmi",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 5 Display",
+      "modelName": "551 USB-C to HDMI 4K Cable (4K@60Hz)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8176"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-551-usb-c-to-hdmi.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "551 usb-c to hdmi 4k cable (4k@60hz)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 18,
+        "displaySupport": "4K@60Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 551 USB-C to HDMI 4K Cable (4K@60Hz)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-310-usb-a-to-usb-c",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Series 3 Everyday",
+      "modelName": "310 USB-A to USB-C Cable (Fast Charging)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a81e5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-310-usb-a-to-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "310 usb-a to usb-c cable (fast charging)",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 15,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 310 USB-A to USB-C Cable (Fast Charging)",
+      "status": "staged"
+    },
+    {
+      "id": "anker-737-magsafe-3-cable",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Anker Prime Power",
+      "modelName": "737 USB-C to MagSafe 3 Fast Charging Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8891"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-737-magsafe-3-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "737 usb-c to magsafe 3 fast charging cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "MagSafe 3",
+        "maxWatts": 140,
+        "dataTransferGbps": 0,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: 737 USB-C to MagSafe 3 Fast Charging Cable",
+      "status": "staged"
+    },
+    {
+      "id": "anker-powerline-flow-silicone-usb-c",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "PowerLine Flow",
+      "modelName": "PowerLine Flow Silicone USB-C to USB-C (100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.anker.com/products/a8552"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.anker.com/images/products/anker-powerline-flow-silicone-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "anker",
+        "modelName": "powerline flow silicone usb-c to usb-c (100w)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Anker verified cables model: PowerLine Flow Silicone USB-C to USB-C (100W)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-pro-flex-240w",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge Pro Flex",
+      "modelName": "BoostCharge Pro Flex Braided USB-C to USB-C 240W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-to-usb-c-cable-240w/CAB014.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-pro-flex-240w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge pro flex braided usb-c to usb-c 240w",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 240,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: BoostCharge Pro Flex Braided USB-C to USB-C 240W",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-braided-lightning",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge",
+      "modelName": "BoostCharge Braided USB-C to Lightning Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/boostcharge-braided-usb-c-to-lightning-cable/CAA004.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-braided-lightning.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge braided usb-c to lightning cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 30,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: BoostCharge Braided USB-C to Lightning Cable",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-usb-c-100w",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge",
+      "modelName": "BoostCharge USB-C to USB-C Cable 100W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-to-usb-c-cable-100w/CAB004.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-usb-c-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge usb-c to usb-c cable 100w",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: BoostCharge USB-C to USB-C Cable 100W",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-pro-flex-usb-a-to-usb-c",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge Pro Flex",
+      "modelName": "BoostCharge Pro Flex USB-A to USB-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/boostcharge-pro-flex-braided-usb-a-to-usb-c-cable/CAB008.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-pro-flex-usb-a-to-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge pro flex usb-a to usb-c cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 15,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: BoostCharge Pro Flex USB-A to USB-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-ultra-high-speed-8k-hdmi-2-1",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Ultra High Speed HDMI",
+      "modelName": "Ultra High Speed 8K HDMI 2.1 Cable (48Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/ultra-high-speed-8k-hdmi-2.1-cable/AV10175.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-ultra-high-speed-8k-hdmi-2-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "ultra high speed 8k hdmi 2.1 cable (48gbps)",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: Ultra High Speed 8K HDMI 2.1 Cable (48Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-thunderbolt-4-cable",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect High-Performance",
+      "modelName": "Connect Thunderbolt 4 Cable (100W 40Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/thunderbolt-4-cable/INZ001.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-thunderbolt-4-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect thunderbolt 4 cable (100w 40gbps)",
+        "connectorFrom": "USB-C (TB4)",
+        "connectorTo": "USB-C (TB4)",
+        "maxWatts": 100,
+        "dataTransferGbps": 40,
+        "displaySupport": "8K@60Hz / Dual 4K@60Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: Connect Thunderbolt 4 Cable (100W 40Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-pro-flex-60w",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge Pro Flex",
+      "modelName": "BoostCharge Pro Flex USB-C to USB-C 60W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/boostcharge-pro-flex-usb-c-to-usb-c-cable-60w/CAB011.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-pro-flex-60w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge pro flex usb-c to usb-c 60w",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: BoostCharge Pro Flex USB-C to USB-C 60W",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-usb-c-to-displayport-1-4",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect AV",
+      "modelName": "Connect USB-C to DisplayPort 1.4 Cable (8K)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-to-displayport-1.4-cable/AVC006.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-usb-c-to-displayport-1-4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect usb-c to displayport 1.4 cable (8k)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "DisplayPort Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 32.4,
+        "displaySupport": "8K@60Hz / 4K@144Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: Connect USB-C to DisplayPort 1.4 Cable (8K)",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-silicone-usb-c",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge Soft Touch",
+      "modelName": "BoostCharge Silicone USB-C to USB-C Cable 60W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/silicone-usb-c-cable/CAB009.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-boostcharge-silicone-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "boostcharge silicone usb-c to usb-c cable 60w",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: BoostCharge Silicone USB-C to USB-C Cable 60W",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-connect-usb-c-to-hdmi-2-1",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "Connect AV",
+      "modelName": "Connect USB-C to HDMI 2.1 8K Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.belkin.com/usb-c-to-hdmi-2.1-cable/AVC012.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.belkin.com/images/products/belkin-connect-usb-c-to-hdmi-2-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "belkin",
+        "modelName": "connect usb-c to hdmi 2.1 8k cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Belkin verified cables model: Connect USB-C to HDMI 2.1 8K Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-nexode-240w-usb-c-silicone",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode Power",
+      "modelName": "Nexode 240W USB-C to USB-C Silicone Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-240w-usb-c-to-usb-c-silicone-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-nexode-240w-usb-c-silicone.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "nexode 240w usb-c to usb-c silicone cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 240,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: Nexode 240W USB-C to USB-C Silicone Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-100w-right-angle-usb-c",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Gaming Pro",
+      "modelName": "100W Right Angle USB-C to USB-C Braided Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-100w-right-angle-usb-c-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-100w-right-angle-usb-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "100w right angle usb-c to usb-c braided cable",
+        "connectorFrom": "USB-C 90-degree",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: 100W Right Angle USB-C to USB-C Braided Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-usb4-gen3-40gbps-240w",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Pro Data Series",
+      "modelName": "USB4 Gen3 40Gbps 240W Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-usb4-40gbps-240w-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-usb4-gen3-40gbps-240w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "usb4 gen3 40gbps 240w cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 240,
+        "dataTransferGbps": 40,
+        "displaySupport": "8K@60Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: USB4 Gen3 40Gbps 240W Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-60w-usb-c-braided",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Aluminum Braided",
+      "modelName": "60W USB-C to USB-C Braided Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-60w-usb-c-braided-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-60w-usb-c-braided.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "60w usb-c to usb-c braided cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: 60W USB-C to USB-C Braided Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-8k-hdmi-2-1-ultra-high-speed",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Ultra High Speed HDMI",
+      "modelName": "8K HDMI 2.1 Ultra High Speed Cable (48Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-8k-hdmi-2-1-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-8k-hdmi-2-1-ultra-high-speed.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "8k hdmi 2.1 ultra high speed cable (48gbps)",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: 8K HDMI 2.1 Ultra High Speed Cable (48Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-displayport-2-1-cable",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "VESA Certified Display",
+      "modelName": "DisplayPort 2.1 VESA Certified Cable (80Gbps 16K)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-displayport-2-1-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-displayport-2-1-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "displayport 2.1 vesa certified cable (80gbps 16k)",
+        "connectorFrom": "DisplayPort Male",
+        "connectorTo": "DisplayPort Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 80,
+        "displaySupport": "16K@60Hz / 8K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: DisplayPort 2.1 VESA Certified Cable (80Gbps 16K)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-usb-c-to-lightning-mfi",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "MFi Series",
+      "modelName": "USB-C to Lightning MFi Braided Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-mfi-usb-c-to-lightning-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-usb-c-to-lightning-mfi.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "usb-c to lightning mfi braided cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 30,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: USB-C to Lightning MFi Braided Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-usb-a-to-usb-c-3-0",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Fast Charging",
+      "modelName": "USB-A to USB-C 3.0 Fast Charging Cable (3A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-usb-a-to-usb-c-3-0-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-usb-a-to-usb-c-3-0.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "usb-a to usb-c 3.0 fast charging cable (3a)",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 18,
+        "dataTransferGbps": 5,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: USB-A to USB-C 3.0 Fast Charging Cable (3A)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-usb-c-to-3-5mm-audio-cable",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Hi-Res Audio",
+      "modelName": "USB-C to 3.5mm Headphone Jack Cable (DAC)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-usb-c-to-3-5mm-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-usb-c-to-3-5mm-audio-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "usb-c to 3.5mm headphone jack cable (dac)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "3.5mm Aux Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 0,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: USB-C to 3.5mm Headphone Jack Cable (DAC)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-2-in-1-usb-c-micro-usb",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Multi-Connector",
+      "modelName": "2-in-1 USB-C and Micro USB Fast Charging Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-2-in-1-usb-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-2-in-1-usb-c-micro-usb.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "2-in-1 usb-c and micro usb fast charging cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Dual USB-C / Micro-USB",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: 2-in-1 USB-C and Micro USB Fast Charging Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-micro-hdmi-to-hdmi-cable",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "AV Adapter Series",
+      "modelName": "Micro HDMI to HDMI 4K Cable (Bi-directional)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-micro-hdmi-to-hdmi-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-micro-hdmi-to-hdmi-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "micro hdmi to hdmi 4k cable (bi-directional)",
+        "connectorFrom": "Micro HDMI",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 18,
+        "displaySupport": "4K@60Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: Micro HDMI to HDMI 4K Cable (Bi-directional)",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-usb-c-to-ethernet-adapter-cable",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Gigabit Network",
+      "modelName": "USB-C to Gigabit Ethernet Cable (1000Mbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-usb-c-to-ethernet-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.ugreen.com/images/products/ugreen-usb-c-to-ethernet-adapter-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ugreen",
+        "modelName": "usb-c to gigabit ethernet cable (1000mbps)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "RJ45 Ethernet",
+        "maxWatts": 0,
+        "dataTransferGbps": 1,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "UGREEN verified cables model: USB-C to Gigabit Ethernet Cable (1000Mbps)",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-neolink-100w-type-c",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "NeoLink Series",
+      "modelName": "NeoLink 100W Braided Type-C to Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/neolink-100w-type-c-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-neolink-100w-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "neolink 100w braided type-c to type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: NeoLink 100W Braided Type-C to Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-crest-60w-type-c",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Crest Series",
+      "modelName": "Crest 60W Type-C to Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/crest-60w-type-c-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-crest-60w-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "crest 60w type-c to type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: Crest 60W Type-C to Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-flare-3a-type-c",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Flare Fast Charge",
+      "modelName": "Flare 3A Type-C Fast Charging Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/flare-3a-type-c-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-flare-3a-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "flare 3a type-c fast charging cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: Flare 3A Type-C Fast Charging Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-raft-3a-micro-usb",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Raft Tough",
+      "modelName": "Raft 3A Micro-USB Durable Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/raft-3a-micro-usb-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-raft-3a-micro-usb.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "raft 3a micro-usb durable cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Micro-USB",
+        "maxWatts": 15,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: Raft 3A Micro-USB Durable Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-multilink-3-in-1",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "MultiLink Series",
+      "modelName": "MultiLink 3-in-1 Charging Cable (Type-C/Lightning/Micro)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/multilink-3-in-1-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-multilink-3-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "multilink 3-in-1 charging cable (type-c/lightning/micro)",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Type-C / Lightning / Micro-USB",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: MultiLink 3-in-1 Charging Cable (Type-C/Lightning/Micro)",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-neosync-type-c-lightning",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "NeoSync Series",
+      "modelName": "NeoSync Type-C to Lightning MFi Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/neosync-lightning-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-neosync-type-c-lightning.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "neosync type-c to lightning mfi cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 30,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: NeoSync Type-C to Lightning MFi Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-quadcord-4-in-1",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "QuadCord Series",
+      "modelName": "QuadCord 4-in-1 60W Universal Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/quadcord-4-in-1-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-quadcord-4-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "quadcord 4-in-1 60w universal cable",
+        "connectorFrom": "USB-C / USB-A Combo",
+        "connectorTo": "Type-C / Lightning",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: QuadCord 4-in-1 60W Universal Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-ultrasync-4k-hdmi",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "UltraSync AV",
+      "modelName": "UltraSync 4K HDMI 2.0 High Speed Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/ultrasync-4k-hdmi-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-ultrasync-4k-hdmi.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "ultrasync 4k hdmi 2.0 high speed cable",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 18,
+        "displaySupport": "4K@60Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: UltraSync 4K HDMI 2.0 High Speed Cable",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-linkflex-type-c-usb-a",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "LinkFlex Series",
+      "modelName": "LinkFlex Type-C to USB-A Cable (3A Quick Charge)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/linkflex-usb-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-linkflex-type-c-usb-a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "linkflex type-c to usb-a cable (3a quick charge)",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: LinkFlex Type-C to USB-A Cable (3A Quick Charge)",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-pulse-65w-silicone-type-c",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Pulse Soft Touch",
+      "modelName": "Pulse 65W Silicone Type-C Fast Charge Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/pulse-65w-silicone-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://ambraneindia.com/images/products/ambrane-pulse-65w-silicone-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "ambrane",
+        "modelName": "pulse 65w silicone type-c fast charge cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 65,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ambrane verified cables model: Pulse 65W Silicone Type-C Fast Charge Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-l-type-c-lightning",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect Series",
+      "modelName": "Konnect L 3A Type-C to Lightning PD Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-l"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-l-type-c-lightning.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect l 3a type-c to lightning pd cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 30,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect L 3A Type-C to Lightning PD Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-core-100w-type-c",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect Core",
+      "modelName": "Konnect Core 100W Type-C to Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-core-100w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-core-100w-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect core 100w type-c to type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect Core 100W Type-C to Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-one-3a-type-c",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect Series",
+      "modelName": "Konnect ONE 3A Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-one"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-one-3a-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect one 3a type-c cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect ONE 3A Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-4-in-1",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect Multi",
+      "modelName": "Konnect 4-in-1 60W Universal Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-4-in-1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-4-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect 4-in-1 60w universal cable",
+        "connectorFrom": "USB-C / USB-A",
+        "connectorTo": "Type-C / Lightning",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect 4-in-1 60W Universal Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-pro-60w-type-c",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect Pro",
+      "modelName": "Konnect Pro 60W Braided Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-pro-60w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-pro-60w-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect pro 60w braided type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect Pro 60W Braided Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-view-8k-hdmi",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect View AV",
+      "modelName": "Konnect View 8K HDMI 2.1 Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-view-8k"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-view-8k-hdmi.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect view 8k hdmi 2.1 cable",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect View 8K HDMI 2.1 Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-micro-3a",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect Series",
+      "modelName": "Konnect Micro 3A USB Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-micro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-micro-3a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect micro 3a usb cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Micro-USB",
+        "maxWatts": 15,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect Micro 3A USB Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-cl-lightning",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect CL",
+      "modelName": "Konnect CL 20W Type-C to Lightning PD Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-cl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-cl-lightning.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect cl 20w type-c to lightning pd cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 20,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect CL 20W Type-C to Lightning PD Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-trio-3-in-1",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect Trio",
+      "modelName": "Konnect Trio 3-in-1 Charging Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-trio"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-trio-3-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect trio 3-in-1 charging cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Type-C / Lightning / Micro",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect Trio 3-in-1 Charging Cable",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-konnect-flexi-65w-silicone",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Konnect Flexi",
+      "modelName": "Konnect Flexi 65W Silicone Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.portronics.com/products/konnect-flexi-65w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.portronics.com/images/products/portronics-konnect-flexi-65w-silicone.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "portronics",
+        "modelName": "konnect flexi 65w silicone type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 65,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Portronics verified cables model: Konnect Flexi 65W Silicone Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-tungsten-gold-240w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Tungsten Gold",
+      "modelName": "Tungsten Gold 240W USB-C to USB-C Fast Charging Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/tungsten-gold-240w-fast-charging-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-tungsten-gold-240w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "tungsten gold 240w usb-c to usb-c fast charging cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 240,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: Tungsten Gold 240W USB-C to USB-C Fast Charging Cable",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-cafule-100w-type-c",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Cafule Series",
+      "modelName": "Cafule 100W Braided Type-C to Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/cafule-100w-type-c-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-cafule-100w-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "cafule 100w braided type-c to type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: Cafule 100W Braided Type-C to Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-superior-series-65w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Superior Series",
+      "modelName": "Superior Series 65W Fast Charging Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/superior-series-fast-charging-data-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-superior-series-65w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "superior series 65w fast charging type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 65,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: Superior Series 65W Fast Charging Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-free2draw-retractable-100w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Free2Draw Series",
+      "modelName": "Free2Draw Retractable USB-C Cable 100W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/free2draw-retractable-type-c-cable-100w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-free2draw-retractable-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "free2draw retractable usb-c cable 100w",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: Free2Draw Retractable USB-C Cable 100W",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-display-fast-charging-100w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Digital Display",
+      "modelName": "Digital Display Fast Charging USB-C Cable 100W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/display-fast-charging-cable-type-c-to-type-c-100w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-display-fast-charging-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "digital display fast charging usb-c cable 100w",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: Digital Display Fast Charging USB-C Cable 100W",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-enjoyment-8k-hdmi-2-1",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Enjoyment Series",
+      "modelName": "Enjoyment 8K HDMI 2.1 Ultra HD Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/enjoyment-hdmi-2-1-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-enjoyment-8k-hdmi-2-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "enjoyment 8k hdmi 2.1 ultra hd cable",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: Enjoyment 8K HDMI 2.1 Ultra HD Cable",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-high-density-lightning",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "High Density Braided",
+      "modelName": "High Density Braided USB-C to Lightning 20W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/high-density-braided-type-c-to-ip-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-high-density-lightning.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "high density braided usb-c to lightning 20w",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 20,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: High Density Braided USB-C to Lightning 20W",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-crystal-shine-usb-c-100w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Crystal Shine",
+      "modelName": "Crystal Shine USB-C to USB-C Fast Charging 100W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/crystal-shine-series-fast-charging-data-cable-100w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-crystal-shine-usb-c-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "crystal shine usb-c to usb-c fast charging 100w",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: Crystal Shine USB-C to USB-C Fast Charging 100W",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-mvp-2-right-angle",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "MVP 2 Gaming",
+      "modelName": "MVP 2 Right-Angle Mobile Gaming Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/mvp-2-elbow-fast-charging-data-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-mvp-2-right-angle.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "mvp 2 right-angle mobile gaming type-c cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C 90-degree",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: MVP 2 Right-Angle Mobile Gaming Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-flash-series-3-in-1-100w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "Flash Series",
+      "modelName": "Flash Series 3-in-1 Fast Charging Cable 100W",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/flash-series-3-in-1-cable-100w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.baseus.com/images/products/baseus-flash-series-3-in-1-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "baseus",
+        "modelName": "flash series 3-in-1 fast charging cable 100w",
+        "connectorFrom": "USB-C / USB-A",
+        "connectorTo": "Type-C / Lightning / Micro",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus verified cables model: Flash Series 3-in-1 Fast Charging Cable 100W",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-thunderbolt-4-cable",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "Intel Certified Thunderbolt",
+      "modelName": "Intel Certified 40Gbps Thunderbolt 4 Cable (100W)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-1306-125-intel-certified-thunderbolt-4-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-thunderbolt-4-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "intel certified 40gbps thunderbolt 4 cable (100w)",
+        "connectorFrom": "USB-C (TB4)",
+        "connectorTo": "USB-C (TB4)",
+        "maxWatts": 100,
+        "dataTransferGbps": 40,
+        "displaySupport": "8K@60Hz / Dual 4K@60Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: Intel Certified 40Gbps Thunderbolt 4 Cable (100W)",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-usb4-20gbps-100w",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "USB4 Series",
+      "modelName": "USB4 20Gbps 100W Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-1367-125-usb4-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-usb4-20gbps-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "usb4 20gbps 100w type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 20,
+        "displaySupport": "5K@60Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: USB4 20Gbps 100W Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-8k-hdmi-2-1",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "Ultra High Speed HDMI",
+      "modelName": "48Gbps 8K HDMI 2.1 Cable (Ultra High Speed Certified)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-1153-138-8k-hdmi-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-8k-hdmi-2-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "48gbps 8k hdmi 2.1 cable (ultra high speed certified)",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: 48Gbps 8K HDMI 2.1 Cable (Ultra High Speed Certified)",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-displayport-2-1-80gbps",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "DisplayPort Certified",
+      "modelName": "80Gbps DisplayPort 2.1 Cable VESA Certified",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-1510-138-displayport-2-1-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-displayport-2-1-80gbps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "80gbps displayport 2.1 cable vesa certified",
+        "connectorFrom": "DisplayPort Male",
+        "connectorTo": "DisplayPort Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 80,
+        "displaySupport": "16K@60Hz / 8K@120Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: 80Gbps DisplayPort 2.1 Cable VESA Certified",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-active-usb-c-extension",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "Active Extension Series",
+      "modelName": "Active USB-C Extension Cable 5Gbps (10ft)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-1288-125-active-usb-c-extension-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-active-usb-c-extension.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "active usb-c extension cable 5gbps (10ft)",
+        "connectorFrom": "USB-C Male",
+        "connectorTo": "USB-C Female",
+        "maxWatts": 60,
+        "dataTransferGbps": 5,
+        "displaySupport": "4K@60Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: Active USB-C Extension Cable 5Gbps (10ft)",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-usb-c-to-displayport-1-4",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "USB-C Video",
+      "modelName": "USB-C to DisplayPort 1.4 8K Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-840-125-usb-c-to-displayport-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-usb-c-to-displayport-1-4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "usb-c to displayport 1.4 8k cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "DisplayPort Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 32.4,
+        "displaySupport": "8K@60Hz / 4K@144Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: USB-C to DisplayPort 1.4 8K Cable",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-usb-c-to-hdmi-2-1-8k",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "USB-C Video",
+      "modelName": "USB-C to HDMI 2.1 8K Adapter Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-1300-125-usb-c-to-8k-hdmi-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-usb-c-to-hdmi-2-1-8k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "usb-c to hdmi 2.1 8k adapter cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: USB-C to HDMI 2.1 8K Adapter Cable",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-retractable-usb-c-60w",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "Travel Series",
+      "modelName": "Retractable USB-C to USB-C 60W Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-1190-125-retractable-usb-c-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-retractable-usb-c-60w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "retractable usb-c to usb-c 60w cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: Retractable USB-C to USB-C 60W Cable",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-usb-c-gigabit-ethernet",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "Networking",
+      "modelName": "USB-C to Gigabit Ethernet Cable (Built-in Nic)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-955-125-usb-c-to-ethernet-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-usb-c-gigabit-ethernet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "usb-c to gigabit ethernet cable (built-in nic)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "RJ45 Ethernet",
+        "maxWatts": 0,
+        "dataTransferGbps": 1,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: USB-C to Gigabit Ethernet Cable (Built-in Nic)",
+      "status": "staged"
+    },
+    {
+      "id": "cable-matters-cat-8-ethernet-cable",
+      "canonicalBrand": "Cable Matters",
+      "displayBrand": "Cable Matters",
+      "productLine": "Cat 8 Shielded",
+      "modelName": "Cat 8 Snagless Shielded S/FTP Ethernet Cable (40Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cablematters.com/pc-1145-139-cat-8-ethernet-cable.aspx"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cablematters.com/images/products/cable-matters-cat-8-ethernet-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "cable matters",
+        "modelName": "cat 8 snagless shielded s/ftp ethernet cable (40gbps)",
+        "connectorFrom": "RJ45",
+        "connectorTo": "RJ45",
+        "maxWatts": 0,
+        "dataTransferGbps": 40,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cable Matters verified cables model: Cat 8 Snagless Shielded S/FTP Ethernet Cable (40Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-thunderbolt-4-cable",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Thunderbolt 4 Certified",
+      "modelName": "Thunderbolt 4 40Gbps 100W Cable (0.8m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cables/tblt4mm80cm"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-thunderbolt-4-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "thunderbolt 4 40gbps 100w cable (0.8m)",
+        "connectorFrom": "USB-C (TB4)",
+        "connectorTo": "USB-C (TB4)",
+        "maxWatts": 100,
+        "dataTransferGbps": 40,
+        "displaySupport": "8K@60Hz / Dual 4K@60Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: Thunderbolt 4 40Gbps 100W Cable (0.8m)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-usb-c-rugged-100w",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Heavy Duty Arid",
+      "modelName": "USB-C to USB-C 100W Rugged Aramid Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cables/r2ccc-1m-usb-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-usb-c-rugged-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "usb-c to usb-c 100w rugged aramid cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: USB-C to USB-C 100W Rugged Aramid Cable",
+      "status": "staged"
+    },
+    {
+      "id": "startech-8k-displayport-1-4-vesa",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "VESA Certified Display",
+      "modelName": "8K DisplayPort 1.4 Cable VESA Certified (32.4Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cables/dp14vmm2m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-8k-displayport-1-4-vesa.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "8k displayport 1.4 cable vesa certified (32.4gbps)",
+        "connectorFrom": "DisplayPort Male",
+        "connectorTo": "DisplayPort Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 32.4,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: 8K DisplayPort 1.4 Cable VESA Certified (32.4Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-certified-hdmi-2-1",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Ultra High Speed HDMI",
+      "modelName": "Certified Ultra High Speed HDMI 2.1 Cable (48Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cables/hdmm21v2m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-certified-hdmi-2-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "certified ultra high speed hdmi 2.1 cable (48gbps)",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 48,
+        "displaySupport": "8K@60Hz / 4K@120Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: Certified Ultra High Speed HDMI 2.1 Cable (48Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-usb-c-to-displayport-8k",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Display Adapters",
+      "modelName": "USB-C to DisplayPort 8K Cable with HBR3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/audio-video-products/cdp2dp142mb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-usb-c-to-displayport-8k.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "usb-c to displayport 8k cable with hbr3",
+        "connectorFrom": "USB-C",
+        "connectorTo": "DisplayPort Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 32.4,
+        "displaySupport": "8K@60Hz / 4K@144Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: USB-C to DisplayPort 8K Cable with HBR3",
+      "status": "staged"
+    },
+    {
+      "id": "startech-usb-c-to-vga-cable",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Legacy Display",
+      "modelName": "USB-C to VGA Video Adapter Cable (1080p)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/audio-video-products/cdp2vgamm2mb"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-usb-c-to-vga-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "usb-c to vga video adapter cable (1080p)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "VGA Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 0,
+        "displaySupport": "1080p@60Hz",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: USB-C to VGA Video Adapter Cable (1080p)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-usb-3-type-a-to-b",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Peripherals",
+      "modelName": "USB 3.0 Type-A to Type-B Cable (5Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cables/usb3sab2m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-usb-3-type-a-to-b.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "usb 3.0 type-a to type-b cable (5gbps)",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-B 3.0",
+        "maxWatts": 4.5,
+        "dataTransferGbps": 5,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: USB 3.0 Type-A to Type-B Cable (5Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-usb-c-to-usb-a-10gbps",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Heavy Duty USB 3.2",
+      "modelName": "USB-C to USB-A Heavy Duty 10Gbps Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cables/r2cca-1m-usb-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-usb-c-to-usb-a-10gbps.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "usb-c to usb-a heavy duty 10gbps cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 15,
+        "dataTransferGbps": 10,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: USB-C to USB-A Heavy Duty 10Gbps Cable",
+      "status": "staged"
+    },
+    {
+      "id": "startech-cat6a-shielded-ethernet",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Network Infrastructure",
+      "modelName": "Cat6a Snagless Shielded RJ45 Cable (10Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cables/6aspat2mbk"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-cat6a-shielded-ethernet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "cat6a snagless shielded rj45 cable (10gbps)",
+        "connectorFrom": "RJ45",
+        "connectorTo": "RJ45",
+        "maxWatts": 0,
+        "dataTransferGbps": 10,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: Cat6a Snagless Shielded RJ45 Cable (10Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "startech-right-angle-usb-c-100w",
+      "canonicalBrand": "StarTech.com",
+      "displayBrand": "StarTech.com",
+      "productLine": "Ergonomic Cables",
+      "modelName": "Right-Angle USB-C 100W Charging Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.startech.com/en-us/cables/r2cc-2m-right-angle-usb-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.startech.com/images/products/startech-right-angle-usb-c-100w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "startech.com",
+        "modelName": "right-angle usb-c 100w charging cable",
+        "connectorFrom": "USB-C 90-degree",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "StarTech.com verified cables model: Right-Angle USB-C 100W Charging Cable",
+      "status": "staged"
+    },
+    {
+      "id": "boat-deuce-300-3-in-1",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "Deuce Series",
+      "modelName": "Deuce 300 3-in-1 Braided Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-deuce-300"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-deuce-300-3-in-1.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "deuce 300 3-in-1 braided cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Type-C / Lightning / Micro",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: Deuce 300 3-in-1 Braided Cable",
+      "status": "staged"
+    },
+    {
+      "id": "boat-rugged-v3-extra-tough",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "Rugged Series",
+      "modelName": "Rugged v3 Extra Tough Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-rugged-v3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-rugged-v3-extra-tough.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "rugged v3 extra tough type-c cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: Rugged v3 Extra Tough Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "boat-a-350-type-c-65w",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "A-Series",
+      "modelName": "A 350 Type-C to Type-C 65W Fast Charging Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-a-350"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-a-350-type-c-65w.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "a 350 type-c to type-c 65w fast charging cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 65,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: A 350 Type-C to Type-C 65W Fast Charging Cable",
+      "status": "staged"
+    },
+    {
+      "id": "boat-ltg-500-apple-certified",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "LTG Series",
+      "modelName": "LTG 500 Apple Certified Lightning Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-ltg-500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-ltg-500-apple-certified.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "ltg 500 apple certified lightning cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Lightning",
+        "maxWatts": 12,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: LTG 500 Apple Certified Lightning Cable",
+      "status": "staged"
+    },
+    {
+      "id": "boat-a-400-fast-charging-type-c",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "A-Series",
+      "modelName": "A 400 Fast Charging Type-C Cable (3A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-a-400"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-a-400-fast-charging-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "a 400 fast charging type-c cable (3a)",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 18,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: A 400 Fast Charging Type-C Cable (3A)",
+      "status": "staged"
+    },
+    {
+      "id": "boat-micro-500-braided",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "Micro Series",
+      "modelName": "Micro 500 Fast Charging Braided Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-micro-500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-micro-500-braided.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "micro 500 fast charging braided cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Micro-USB",
+        "maxWatts": 15,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: Micro 500 Fast Charging Braided Cable",
+      "status": "staged"
+    },
+    {
+      "id": "boat-deuce-500-60w-type-c",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "Deuce Series",
+      "modelName": "Deuce 500 60W Type-C to Type-C Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-deuce-500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-deuce-500-60w-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "deuce 500 60w type-c to type-c cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: Deuce 500 60W Type-C to Type-C Cable",
+      "status": "staged"
+    },
+    {
+      "id": "boat-aux-500-audio-cable",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "Audio Accessories",
+      "modelName": "Aux 500 Tangle-Free 3.5mm Audio Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-aux-500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-aux-500-audio-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "aux 500 tangle-free 3.5mm audio cable",
+        "connectorFrom": "3.5mm Aux",
+        "connectorTo": "3.5mm Aux",
+        "maxWatts": 0,
+        "dataTransferGbps": 0,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: Aux 500 Tangle-Free 3.5mm Audio Cable",
+      "status": "staged"
+    },
+    {
+      "id": "boat-hdmi-500-4k-cable",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "AV Accessories",
+      "modelName": "HDMI 500 4K Ultra HD Cable (High Speed 18Gbps)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-hdmi-500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-hdmi-500-4k-cable.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "hdmi 500 4k ultra hd cable (high speed 18gbps)",
+        "connectorFrom": "HDMI Male",
+        "connectorTo": "HDMI Male",
+        "maxWatts": 0,
+        "dataTransferGbps": 18,
+        "displaySupport": "4K@60Hz",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: HDMI 500 4K Ultra HD Cable (High Speed 18Gbps)",
+      "status": "staged"
+    },
+    {
+      "id": "boat-type-c-to-c-100w-braided",
+      "canonicalBrand": "boAt",
+      "displayBrand": "boAt",
+      "productLine": "Power Pro",
+      "modelName": "boAt Type C to C 100W Braided Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.boat-lifestyle.com/products/boat-100w-type-c-cable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.boat-lifestyle.com/images/products/boat-type-c-to-c-100w-braided.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "boat",
+        "modelName": "boat type c to c 100w braided cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "boAt verified cables model: boAt Type C to C 100W Braided Cable",
+      "status": "staged"
+    },
+    {
+      "id": "apple-thunderbolt-4-pro-cable-1-8m",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Pro Cables",
+      "modelName": "Thunderbolt 4 Pro Cable (1.8m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.apple.com/shop/product/MU883AM/A/thunderbolt-4-pro-cable-18-m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.apple.com/images/products/apple-thunderbolt-4-pro-cable-1-8m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "apple",
+        "modelName": "thunderbolt 4 pro cable (1.8m)",
+        "connectorFrom": "USB-C (TB4)",
+        "connectorTo": "USB-C (TB4)",
+        "maxWatts": 100,
+        "dataTransferGbps": 40,
+        "displaySupport": "8K@60Hz / DisplayPort",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Apple verified cables model: Thunderbolt 4 Pro Cable (1.8m)",
+      "status": "staged"
+    },
+    {
+      "id": "apple-thunderbolt-4-pro-cable-3m",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Pro Cables",
+      "modelName": "Thunderbolt 4 Pro Cable (3m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.apple.com/shop/product/MW663AM/A/thunderbolt-4-pro-cable-3-m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.apple.com/images/products/apple-thunderbolt-4-pro-cable-3m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "apple",
+        "modelName": "thunderbolt 4 pro cable (3m)",
+        "connectorFrom": "USB-C (TB4)",
+        "connectorTo": "USB-C (TB4)",
+        "maxWatts": 100,
+        "dataTransferGbps": 40,
+        "displaySupport": "8K@60Hz / DisplayPort",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Apple verified cables model: Thunderbolt 4 Pro Cable (3m)",
+      "status": "staged"
+    },
+    {
+      "id": "apple-240w-usb-c-charge-cable-2m",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Charge Cables",
+      "modelName": "240W USB-C Charge Cable (2m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.apple.com/shop/product/MU2G3AM/A/240w-usb-c-charge-cable-2-m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.apple.com/images/products/apple-240w-usb-c-charge-cable-2m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "apple",
+        "modelName": "240w usb-c charge cable (2m)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 240,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Apple verified cables model: 240W USB-C Charge Cable (2m)",
+      "status": "staged"
+    },
+    {
+      "id": "apple-60w-usb-c-charge-cable-1m",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Charge Cables",
+      "modelName": "60W USB-C Charge Cable (1m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.apple.com/shop/product/MQKJ3AM/A/60w-usb-c-charge-cable-1-m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.apple.com/images/products/apple-60w-usb-c-charge-cable-1m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "apple",
+        "modelName": "60w usb-c charge cable (1m)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Apple verified cables model: 60W USB-C Charge Cable (1m)",
+      "status": "staged"
+    },
+    {
+      "id": "apple-usb-c-to-lightning-cable-1m",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Lightning Cables",
+      "modelName": "USB-C to Lightning Cable (1m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.apple.com/shop/product/MM0A3AM/A/usb-c-to-lightning-cable-1-m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.apple.com/images/products/apple-usb-c-to-lightning-cable-1m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "apple",
+        "modelName": "usb-c to lightning cable (1m)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "Lightning",
+        "maxWatts": 27,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Apple verified cables model: USB-C to Lightning Cable (1m)",
+      "status": "staged"
+    },
+    {
+      "id": "apple-usb-c-to-magsafe-3-cable-2m",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "MagSafe Cables",
+      "modelName": "USB-C to MagSafe 3 Cable (2m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.apple.com/shop/product/MLYV3AM/A/usb-c-to-magsafe-3-cable-2-m"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.apple.com/images/products/apple-usb-c-to-magsafe-3-cable-2m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "apple",
+        "modelName": "usb-c to magsafe 3 cable (2m)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "MagSafe 3",
+        "maxWatts": 140,
+        "dataTransferGbps": 0,
+        "displaySupport": "None",
+        "braided": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Apple verified cables model: USB-C to MagSafe 3 Cable (2m)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-5a-usb-c-to-usb-c-1-8m",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Fast Charge Accessories",
+      "modelName": "5A USB-C to USB-C Cable (1.8m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/mobile/mobile-accessories/phones/5a-usb-c-to-usb-c-cable-1-8m-ep-dn975bbegus/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-5a-usb-c-to-usb-c-1-8m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "5a usb-c to usb-c cable (1.8m)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 100,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified cables model: 5A USB-C to USB-C Cable (1.8m)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-3a-usb-c-to-usb-c-1m",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Everyday Accessories",
+      "modelName": "3A USB-C to USB-C Cable (1m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/mobile/mobile-accessories/phones/usb-c-to-usb-c-cable-1m-ep-da705bbegus/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-3a-usb-c-to-usb-c-1m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "3a usb-c to usb-c cable (1m)",
+        "connectorFrom": "USB-C",
+        "connectorTo": "USB-C",
+        "maxWatts": 60,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified cables model: 3A USB-C to USB-C Cable (1m)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-usb-a-to-usb-c-1-5m",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Everyday Accessories",
+      "modelName": "USB-A to USB-C Fast Charging Cable (1.5m)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/mobile/mobile-accessories/phones/usb-a-to-type-c-cable-ep-dg930mbegus/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-usb-a-to-usb-c-1-5m.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "usb-a to usb-c fast charging cable (1.5m)",
+        "connectorFrom": "USB-A",
+        "connectorTo": "USB-C",
+        "maxWatts": 15,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified cables model: USB-A to USB-C Fast Charging Cable (1.5m)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-combo-micro-usb-type-c",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Multi-Connector",
+      "modelName": "Combo Micro-USB & Type-C Charging Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/mobile/mobile-accessories/phones/combo-cable-ep-dg930dswgus/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-combo-micro-usb-type-c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "combo micro-usb & type-c charging cable",
+        "connectorFrom": "USB-A",
+        "connectorTo": "Type-C / Micro-USB Adapter",
+        "maxWatts": 15,
+        "dataTransferGbps": 0.48,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified cables model: Combo Micro-USB & Type-C Charging Cable",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-usb-c-to-3-5mm-adapter",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Audio Accessories",
+      "modelName": "USB-C to 3.5mm Headphone Jack Adapter Cable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/mobile/mobile-accessories/phones/usb-c-headphone-jack-adapter-ee-uc10juwegus/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-usb-c-to-3-5mm-adapter.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "usb-c to 3.5mm headphone jack adapter cable",
+        "connectorFrom": "USB-C",
+        "connectorTo": "3.5mm Headphone Jack",
+        "maxWatts": 0,
+        "dataTransferGbps": 0,
+        "displaySupport": "None",
+        "braided": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified cables model: USB-C to 3.5mm Headphone Jack Adapter Cable",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Apple",
+      "leafKey": "cables",
+      "reason": "Apple manufactures 6 official first-party charging and high-speed data interconnect cables.",
+      "officialSourceUrl": "https://www.apple.com/shop/mac/accessories/power-cables",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Thunderbolt 4 Pro Cable (1.8m)",
+        "Thunderbolt 4 Pro Cable (3m)",
+        "240W USB-C Charge Cable (2m)",
+        "60W USB-C Charge Cable (1m)",
+        "USB-C to Lightning Cable (1m)",
+        "USB-C to MagSafe 3 Cable (2m)"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Samsung",
+      "leafKey": "cables",
+      "reason": "Samsung maintains 5 official first-party device interconnect cables across Type-C and combo formats.",
+      "officialSourceUrl": "https://www.samsung.com/us/mobile/mobile-accessories/all-mobile-accessories/?category_type=cables",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "5A USB-C to USB-C Cable (1.8m)",
+        "3A USB-C to USB-C Cable (1m)",
+        "USB-A to USB-C Fast Charging Cable (1.5m)",
+        "Combo Micro-USB & Type-C Charging Cable",
+        "USB-C to 3.5mm Headphone Jack Adapter Cable"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

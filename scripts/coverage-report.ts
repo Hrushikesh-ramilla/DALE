@@ -35,7 +35,7 @@ function loadPublishedManifestRecords(): PublishedRecordSummary[] {
         for (const p of data.products) {
           // Map category to leafKey if possible
           results.push({
-            leafKey: p.category,
+            leafKey: p.leafType || p.category,
             brand: p.brand || p.attributes?.brand || "Unknown",
             modelName: p.attributes?.modelName || p.name,
             id: p.id,

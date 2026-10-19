@@ -3,6 +3,1461 @@
   "leafKey": "wall-chargers",
   "displayName": "Wall & Laptop Chargers",
   "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "apple-20w-usb-c-power-adapter",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Power Adapter",
+      "modelName": "Apple 20W USB-C Power Adapter",
+      "generationOrYear": "2020",
+      "sourceUrls": [
+        "https://www.apple.com/in/shop/product/MHJE3HN/A/20w-usb-c-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "India Pin",
+        "Global Foldable Pin"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 20,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/2.22A",
+        "compatibleEcosystems": "iPhone, iPad, Apple Watch, AirPods"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Official standard fast charger for iPhone 12 through iPhone 16 series",
+      "status": "staged"
+    },
+    {
+      "id": "apple-30w-usb-c-power-adapter",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Power Adapter",
+      "modelName": "Apple 30W USB-C Power Adapter",
+      "generationOrYear": "2021",
+      "sourceUrls": [
+        "https://www.apple.com/in/shop/product/MY1W2HN/A/30w-usb-c-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A",
+        "compatibleEcosystems": "MacBook Air 13, iPad Pro, iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Official bundled charger for MacBook Air 13-inch",
+      "status": "staged"
+    },
+    {
+      "id": "apple-35w-dual-compact-adapter",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Power Adapter",
+      "modelName": "Apple 35W Dual USB-C Port Compact Power Adapter",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.apple.com/in/shop/product/MNWM3HN/A/35w-dual-usb-c-port-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White Dual USB-C"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 35,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "Dynamic power sharing (up to 35W single, 27W+7.5W dual)",
+        "compatibleEcosystems": "MacBook Air, iPhone, Apple Watch"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual output compact adapter for simultaneous MacBook Air and iPhone charging",
+      "status": "staged"
+    },
+    {
+      "id": "apple-35w-dual-power-adapter",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Power Adapter",
+      "modelName": "Apple 35W Dual USB-C Port Power Adapter",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.apple.com/in/shop/product/MNWP3HN/A/35w-dual-usb-c-port-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White with Removable Duckhead"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 35,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2.33A, 20V/1.75A",
+        "compatibleEcosystems": "MacBook Air, iPad, iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "World Travel Adapter Kit compatible dual USB-C charger",
+      "status": "staged"
+    },
+    {
+      "id": "apple-70w-usb-c-power-adapter",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Power Adapter",
+      "modelName": "Apple 70W USB-C Power Adapter",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.apple.com/in/shop/product/MQLN3HN/A/70w-usb-c-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 70,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20.6V/3.4A",
+        "compatibleEcosystems": "MacBook Air 15, MacBook Pro 14 (M3)"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fast charges MacBook Air M2/M3 to 50% in 30 minutes",
+      "status": "staged"
+    },
+    {
+      "id": "apple-140w-usb-c-power-adapter",
+      "canonicalBrand": "Apple",
+      "displayBrand": "Apple",
+      "productLine": "Power Adapter",
+      "modelName": "Apple 140W USB-C Power Adapter",
+      "generationOrYear": "2021",
+      "sourceUrls": [
+        "https://www.apple.com/in/shop/product/MLYU3HN/A/140w-usb-c-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 140,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.1 (EPR 28V)",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/5A, 20.5V/5A, 28V/5A",
+        "compatibleEcosystems": "MacBook Pro 16, MagSafe 3"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "First commercial USB-PD 3.1 Extended Power Range (28V/5A) 140W GaN power adapter",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-25w-power-adapter-ep-t2510n",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Super Fast Charging",
+      "modelName": "Samsung 25W Power Adapter (EP-T2510N)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/25w-power-adapter-black-ep-t2510nbeginu/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 25,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "PDO: 5V/3A, 9V/2.77A | PPS: 3.3-5.9V/3A, 3.3-11.0V/2.25A",
+        "compatibleEcosystems": "Galaxy S24, S23, A55, iPhone, Pixel"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Standard official Super Fast Charging 1.0 GaN adapter with ultra-low standby power (<5mW)",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-45w-power-adapter-ep-t4511x",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Super Fast Charging",
+      "modelName": "Samsung 45W Power Adapter (EP-T4511X)",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/45w-power-adapter-black-ep-t4511xbeginu/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White with 5A Cable"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 45,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "PDO: 5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: 3.3-20.0V/2.25A (45W)",
+        "compatibleEcosystems": "Galaxy S24 Ultra, Tab S9 Ultra, Book4, Steam Deck"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Official Super Fast Charging 2.0 (45W PPS) compact GaN power adapter",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-65w-trio-adapter-ep-t6530n",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Power Adapter Trio",
+      "modelName": "Samsung 65W Trio Power Adapter (EP-T6530N)",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/power-adapter-trio-65w-black-ep-t6530nbeginu/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1: up to 65W, USB-C2: up to 25W, USB-A: up to 15W",
+        "compatibleEcosystems": "Galaxy Book, Galaxy Phones, Galaxy Watch"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Official triple port charging adapter for simultaneous laptop, phone and watch charging",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-50w-dual-port-ep-t5020",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Super Fast Charging",
+      "modelName": "Samsung 50W Dual Port Charger (EP-T5020)",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/50w-power-adapter-black-ep-t5020nbeginu/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 50,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "C1: 50W max (or 25W+25W dual simultaneous)",
+        "compatibleEcosystems": "Galaxy Phones, Galaxy Tablets"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual Super Fast Charging 25W+25W simultaneous output adapter",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-15w-power-adapter-ep-t1510n",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Adaptive Fast Charging",
+      "modelName": "Samsung 15W Power Adapter (EP-T1510N)",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/15w-power-adapter-black-ep-t1510nbeginu/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 15,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 2.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/2A, 9V/1.67A",
+        "compatibleEcosystems": "Galaxy A05, M14, Buds"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Entry-level official USB-C adapter for budget Galaxy smartphones",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-35w-power-adapter-duo-ep-ta220n",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Power Adapter Duo",
+      "modelName": "Samsung 35W Power Adapter Duo (EP-TA220N)",
+      "generationOrYear": "2021",
+      "sourceUrls": [
+        "https://www.samsung.com/in/mobile-accessories/power-adapter-duo-35w-black-ep-ta220nbeginu/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 35,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C: up to 35W | USB-A: up to 15W",
+        "compatibleEcosystems": "Galaxy Phones, USB-A legacy accessories"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual port charger supporting legacy USB-A cables alongside modern USB-C PD",
+      "status": "staged"
+    },
+    {
+      "id": "google-45w-usb-c-charger",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Google 45W USB-C Charger",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://store.google.com/in/product/google_45w_usb_c_charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Snow White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 45,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.1 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: up to 21V/2.25A",
+        "compatibleEcosystems": "Pixel 9 Pro XL, Pixel 9 Pro, Pixel 9, Chromebooks"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Official high-power fast charger engineered for Pixel 9 Pro XL 37W peak charging",
+      "status": "staged"
+    },
+    {
+      "id": "google-30w-usb-c-charger",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Google 30W USB-C Charger",
+      "generationOrYear": "2021",
+      "sourceUrls": [
+        "https://store.google.com/in/product/usb_c_30w_charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 11V/3A, 16V/2A, 21V/1.5A",
+        "compatibleEcosystems": "Pixel 8, Pixel 7, Pixel 6 series"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Official PPS fast charger for Google Pixel 6, 7 and 8 phones",
+      "status": "staged"
+    },
+    {
+      "id": "google-18w-usb-c-power-adapter",
+      "canonicalBrand": "Google",
+      "displayBrand": "Google",
+      "productLine": "Pixel",
+      "modelName": "Google 18W USB-C Power Adapter",
+      "generationOrYear": "2020",
+      "sourceUrls": [
+        "https://store.google.com/in/product/usb_c_18w_power_adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "legacy",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 18,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 2.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/2A",
+        "compatibleEcosystems": "Pixel 5, Pixel 4a, Pixel Stand"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Legacy official 18W power adapter",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-supervooc-100w-dual-ports",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "SUPERVOOC",
+      "modelName": "OnePlus SUPERVOOC 100W Dual Ports Power Adapter",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.oneplus.in/product/oneplus-supervooc-100w-dual-ports-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White with Red Accents"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 100,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 65W / SUPERVOOC 100W",
+        "ppsSupported": true,
+        "voltageProfiles": "SUPERVOOC: 100W max | USB-PD: up to 65W",
+        "compatibleEcosystems": "OnePlus 12, OnePlus 11, Laptops (65W PD)"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual output adapter supporting 100W proprietary VOOC and 65W universal USB-PD",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-supervooc-80w-power-adapter",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "SUPERVOOC",
+      "modelName": "OnePlus SUPERVOOC 80W Power Adapter",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.oneplus.in/product/oneplus-supervooc-80w-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 80,
+        "connectorType": "1x USB-A",
+        "pdVersion": "SUPERVOOC Proprietary",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/2A or 5-11V/7.3A (80W max)",
+        "compatibleEcosystems": "OnePlus 10 Pro, Nord 4, Nord CE4"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Standard high-current 80W adapter for OnePlus smartphones",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-supervooc-160w-power-adapter",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "SUPERVOOC",
+      "modelName": "OnePlus SUPERVOOC 160W Power Adapter",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.oneplus.in/product/oneplus-supervooc-160w-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 160,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 45W / SUPERVOOC 160W",
+        "ppsSupported": false,
+        "voltageProfiles": "SUPERVOOC: 160W max | USB-PD: up to 45W",
+        "compatibleEcosystems": "OnePlus 10T"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-fast 160W flash charging adapter for OnePlus 10T",
+      "status": "staged"
+    },
+    {
+      "id": "oneplus-supervooc-65w-power-adapter",
+      "canonicalBrand": "OnePlus",
+      "displayBrand": "OnePlus",
+      "productLine": "SUPERVOOC",
+      "modelName": "OnePlus SUPERVOOC 65W Power Adapter",
+      "generationOrYear": "2021",
+      "sourceUrls": [
+        "https://www.oneplus.in/product/oneplus-warp-charge-65-power-adapter"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 45W / Warp 65W",
+        "ppsSupported": true,
+        "voltageProfiles": "10V/6.5A (65W) | PD: 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A",
+        "compatibleEcosystems": "OnePlus 9 series, 8T, Laptops up to 45W"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual-cell 65W charging adapter with universal 45W PD compatibility",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-raap-g65",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Raap GaN",
+      "modelName": "Ambrane Raap G65 (65W GaN Charger)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/raap-g65-65w-gan-charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "C1: 65W max, C2: 33W, USB-A: 30W QC",
+        "compatibleEcosystems": "MacBook, Dell XPS, Galaxy S24 (PPS), iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Affordable Made-in-India 65W triple-port GaN charger for laptops and phones",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-raap-g100",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Raap GaN",
+      "modelName": "Ambrane Raap G100 (100W GaN Fast Charger)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/raap-g100-100w-gan-charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 100,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "C1/C2: 100W max | Multi-port dynamic allocation",
+        "compatibleEcosystems": "MacBook Pro 16, ThinkPad, Galaxy, iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Budget 100W 4-port GaN power station for multiple heavy devices",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-raap-s33",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Raap",
+      "modelName": "Ambrane Raap S33 (33W Fast Charger)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/raap-s33-33w-charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 33,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS / QC 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "Type-C: up to 33W PPS | USB-A: 18W QC",
+        "compatibleEcosystems": "Galaxy Phones (25W PPS), iPhone, Redmi"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-volume affordable 33W dual port wall charger with PPS support",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-raap-m20",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Raap",
+      "modelName": "Ambrane Raap M20 (20W PD Charger)",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/raap-m20-20w-charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 20,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/2.22A, 12V/1.67A",
+        "compatibleEcosystems": "iPhone 12-16, AirPods, iPad"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Low-cost high-reliability 20W PD iPhone charger alternative",
+      "status": "staged"
+    },
+    {
+      "id": "ambrane-raap-h20",
+      "canonicalBrand": "Ambrane",
+      "displayBrand": "Ambrane",
+      "productLine": "Raap",
+      "modelName": "Ambrane Raap H20 (20W Dual Port Charger)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://ambraneindia.com/products/raap-h20-charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 20,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD + QC 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "Type-C: 20W max | USB-A: 18W max",
+        "compatibleEcosystems": "iPhone, Android phones"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual output compact wall adapter for simultaneously powering accessories",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-adapto-65-pro",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Adapto",
+      "modelName": "Portronics Adapto 65 Pro (65W GaN Fast Charger)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.portronics.com/products/adapto-65-pro"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Type-C1: 65W, Type-C2: 33W, USB-A: 30W",
+        "compatibleEcosystems": "MacBook, Type-C Laptops, Galaxy, iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Economical Indian consumer 65W GaN 3-port laptop and mobile wall adapter",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-adapto-100",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Adapto",
+      "modelName": "Portronics Adapto 100 (100W GaN Multiport Charger)",
+      "generationOrYear": "2024",
+      "sourceUrls": [
+        "https://www.portronics.com/products/adapto-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black with Carbon Finish"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 100,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1/C2: 100W max | 4-port smart power distribution",
+        "compatibleEcosystems": "High-performance Laptops, Tablets, Smartphones"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavy-duty 100W 4-port GaN travel adapter",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-adapto-45",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Adapto",
+      "modelName": "Portronics Adapto 45 (45W Dual Type-C GaN Charger)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.portronics.com/products/adapto-45"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 45,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single port 45W PPS | Dual port 25W + 20W",
+        "compatibleEcosystems": "Samsung 45W phones, iPhone, iPad, MacBook Air"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact 45W PPS dual USB-C GaN charger matching Samsung 45W charging spec at low cost",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-adapto-33",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Adapto",
+      "modelName": "Portronics Adapto 33 (33W Fast Charger)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.portronics.com/products/adapto-33"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 33,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS / QC 3.0",
+        "ppsSupported": true,
+        "voltageProfiles": "Type-C: 33W PPS | USB-A: 18W QC",
+        "compatibleEcosystems": "Samsung, Xiaomi, Vivo, iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versatile 33W wall adapter for smartphones with PPS protocol support",
+      "status": "staged"
+    },
+    {
+      "id": "portronics-adapto-20",
+      "canonicalBrand": "Portronics",
+      "displayBrand": "Portronics",
+      "productLine": "Adapto",
+      "modelName": "Portronics Adapto 20 (20W Fast Charger)",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.portronics.com/products/adapto-20"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 20,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "5V/3A, 9V/2.22A, 12V/1.67A",
+        "compatibleEcosystems": "iPhone, iPad, Pixel"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Value 20W Type-C adapter designed for fast charging iPhones",
+      "status": "staged"
+    },
+    {
+      "id": "anker-735-charger-ganprime-65w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "GaNPrime",
+      "modelName": "Anker 735 Charger (GaNPrime 65W)",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.anker.com/products/a2668"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "Gold"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "PowerIQ 4.0 with Dynamic Power Distribution",
+        "ppsSupported": true,
+        "voltageProfiles": "Single port 65W max | PowerIQ 4.0 with ActiveShield 2.0",
+        "compatibleEcosystems": "MacBook, XPS, Galaxy, iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Industry benchmark 65W 3-port GaNPrime charger with ActiveShield 2.0 temperature monitoring",
+      "status": "staged"
+    },
+    {
+      "id": "anker-737-charger-ganprime-120w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "GaNPrime",
+      "modelName": "Anker 737 Charger (GaNPrime 120W)",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.anker.com/products/a2148"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 120,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "PowerIQ 4.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single port 100W max | Dynamic allocation up to 120W total",
+        "compatibleEcosystems": "MacBook Pro 16, Dell XPS, Galaxy, iPad"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "120W compact GaNPrime charger capable of powering two laptops simultaneously",
+      "status": "staged"
+    },
+    {
+      "id": "anker-prime-67w-gan-wall-charger",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Anker Prime",
+      "modelName": "Anker Prime 67W GaN Wall Charger",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.anker.com/products/a2669"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 67,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "PowerIQ 4.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single USB-C: 67W max | Dual USB-C: 65W shared",
+        "compatibleEcosystems": "MacBook Air/Pro, Windows Ultrabooks, iPhone, Galaxy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact 51% smaller 67W 3-port charger with foldable pins",
+      "status": "staged"
+    },
+    {
+      "id": "anker-prime-100w-gan-wall-charger",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Anker Prime",
+      "modelName": "Anker Prime 100W GaN Wall Charger",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.anker.com/products/a2343"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 100,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "PowerIQ 4.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single port 100W max | Multi-port dynamic power sharing",
+        "compatibleEcosystems": "Heavy Workstation Laptops, Galaxy Tablets, iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Premium 100W 3-port GaN charger with real-time ActiveShield 2.0 safety",
+      "status": "staged"
+    },
+    {
+      "id": "anker-511-charger-nano-3-30w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Nano",
+      "modelName": "Anker 511 Charger (Nano 3 30W)",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.anker.com/products/a2147"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Phantom Black",
+        "Aurora White",
+        "Lilac Purple",
+        "Misty Blue"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "PowerIQ 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 3.3-11V/3A",
+        "compatibleEcosystems": "iPhone 15/16, iPad Air, MacBook Air, Pixel, Galaxy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-miniature 30W foldable GaN charger capable of charging a MacBook Air",
+      "status": "staged"
+    },
+    {
+      "id": "anker-313-charger-ace-45w",
+      "canonicalBrand": "Anker",
+      "displayBrand": "Anker",
+      "productLine": "Ace",
+      "modelName": "Anker 313 Charger (Ace 45W for Samsung)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.anker.com/products/a2677"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 45,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0 with Super Fast Charging 2.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: 3.3-11V/4.05A (45W)",
+        "compatibleEcosystems": "Galaxy S24 Ultra, S23+, Tab S9 series"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dedicated Samsung Super Fast Charging 2.0 (45W PPS) certified replacement charger",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-nexode-65w-3port",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode",
+      "modelName": "UGREEN Nexode 65W 3-Port GaN Fast Charger",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-nexode-65w-usb-c-wall-charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Space Gray",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS / QC 4+",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1: 65W max, USB-C2: 65W max, USB-A: 22.5W",
+        "compatibleEcosystems": "MacBook, Dell, HP, ThinkPad, Galaxy, iPhone"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Worldwide bestselling 65W multi-protocol GaN fast charger",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-nexode-100w-4port",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode",
+      "modelName": "UGREEN Nexode 100W 4-Port GaN Fast Charger",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/100w-4-port-gan-charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Space Gray"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 100,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "C1/C2: 100W max | C3: 22.5W | USB-A: 22.5W",
+        "compatibleEcosystems": "MacBook Pro 16, iPad Pro, iPhone, Galaxy S24 Ultra"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "100W 4-port desktop and travel GaN power adapter with dual 100W ports",
+      "status": "staged"
+    },
+    {
+      "id": "ugreen-nexode-140w-3port",
+      "canonicalBrand": "UGREEN",
+      "displayBrand": "UGREEN",
+      "productLine": "Nexode",
+      "modelName": "UGREEN Nexode 140W 3-Port GaN Fast Charger (PD 3.1)",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.ugreen.com/products/ugreen-nexode-140w-usb-c-wall-charger"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "Space Gray with 240W Cable"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 140,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.1 (EPR 28V/5A)",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1: 140W (28V/5A), USB-C2: 100W, USB-A: 22.5W",
+        "compatibleEcosystems": "MacBook Pro 16 (140W), Dell XPS, Gaming Laptops"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Next-gen USB-PD 3.1 140W single-port charging adapter with GaNFast technology",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-pro-65w-dual",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge Pro",
+      "modelName": "BoostCharge Pro 65W Dual USB-C GaN Charger with PPS",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.belkin.com/in/dual-usb-c-gan-wall-charger-with-pps-65w/WCH013inWH.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "2x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "Single USB-C: 65W | Dual USB-C: 45W + 20W",
+        "compatibleEcosystems": "MacBook Pro + iPhone simultaneous, Galaxy PPS"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Certified dual USB-C GaN charger with Apple and Samsung fast-charge compliance",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-pro-140w-4port",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge Pro",
+      "modelName": "BoostCharge Pro 140W 4-Port GaN Wall Charger",
+      "generationOrYear": "2023",
+      "sourceUrls": [
+        "https://www.belkin.com/in/4-port-usb-c-gan-wall-charger-140w/WCH014inWH.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White with Interchangeable International Plugs"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 140,
+        "connectorType": "3x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.1 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "USB-C1: 140W max | Multi-port intelligent power sharing",
+        "compatibleEcosystems": "MacBook Pro 16, PC Laptops, iPhone, iPad"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Premium 140W PD 3.1 4-port GaN travel wall charger with global plugs",
+      "status": "staged"
+    },
+    {
+      "id": "belkin-boostcharge-30w-usb-c-pps",
+      "canonicalBrand": "Belkin",
+      "displayBrand": "Belkin",
+      "productLine": "BoostCharge",
+      "modelName": "BoostCharge 30W USB-C GaN Wall Charger with PPS",
+      "generationOrYear": "2022",
+      "sourceUrls": [
+        "https://www.belkin.com/in/usb-c-gan-wall-charger-with-pps-30w/WCH009inWH.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 3.3-11V/2.72A",
+        "compatibleEcosystems": "iPhone 15/16, Galaxy S24, iPad Air"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Safe, compact 30W PPS GaN charger with connected equipment warranty",
+      "status": "staged"
+    },
+    {
+      "id": "stuffcool-napoleon-65w",
+      "canonicalBrand": "Stuffcool",
+      "displayBrand": "Stuffcool",
+      "productLine": "GaN Fast Charger",
+      "modelName": "Napoleon 65W GaN Charger",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.stuffcool.com/products/napoleon-65w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "65W Max Output",
+        "compatibleEcosystems": "iPhone, iPad, MacBook Air, Samsung Galaxy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Stuffcool Indian compact GaN charger Napoleon 65W GaN Charger",
+      "status": "staged"
+    },
+    {
+      "id": "stuffcool-centurion-100w",
+      "canonicalBrand": "Stuffcool",
+      "displayBrand": "Stuffcool",
+      "productLine": "GaN Fast Charger",
+      "modelName": "Centurion 100W 4-Port GaN Charger",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.stuffcool.com/products/centurion-100w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 100,
+        "connectorType": "2x USB-C + 2x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "100W Max Output",
+        "compatibleEcosystems": "iPhone, iPad, MacBook Air, Samsung Galaxy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Stuffcool Indian compact GaN charger Centurion 100W 4-Port GaN Charger",
+      "status": "staged"
+    },
+    {
+      "id": "stuffcool-flow-33w",
+      "canonicalBrand": "Stuffcool",
+      "displayBrand": "Stuffcool",
+      "productLine": "GaN Fast Charger",
+      "modelName": "Flow 33W Dual Port GaN Charger",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.stuffcool.com/products/flow-33w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 33,
+        "connectorType": "1x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "33W Max Output",
+        "compatibleEcosystems": "iPhone, iPad, MacBook Air, Samsung Galaxy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Stuffcool Indian compact GaN charger Flow 33W Dual Port GaN Charger",
+      "status": "staged"
+    },
+    {
+      "id": "stuffcool-neutron-20w",
+      "canonicalBrand": "Stuffcool",
+      "displayBrand": "Stuffcool",
+      "productLine": "GaN Fast Charger",
+      "modelName": "Neutron 20W Tiny USB-C Charger",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.stuffcool.com/products/neutron-20w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White",
+        "Black"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 20,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "20W Max Output",
+        "compatibleEcosystems": "iPhone, iPad, MacBook Air, Samsung Galaxy"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Stuffcool Indian compact GaN charger Neutron 20W Tiny USB-C Charger",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-67w-soniccharge",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "SonicCharge / HyperCharge",
+      "modelName": "Xiaomi 67W SonicCharge 3.0 Combo",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/in/product/67w-soniccharge"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 67,
+        "connectorType": "1x USB-A",
+        "pdVersion": "Qualcomm QC 3.0 / SonicCharge",
+        "ppsSupported": false,
+        "voltageProfiles": "67W Flash Charge",
+        "compatibleEcosystems": "Xiaomi, Redmi, POCO, USB Devices"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi flash charge adapter Xiaomi 67W SonicCharge 3.0 Combo",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-33w-soniccharge",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "SonicCharge / HyperCharge",
+      "modelName": "Xiaomi 33W SonicCharge 2.0 Fast Charger",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/in/product/33w-soniccharge"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 33,
+        "connectorType": "1x USB-A",
+        "pdVersion": "Qualcomm QC 3.0",
+        "ppsSupported": false,
+        "voltageProfiles": "33W Flash Charge",
+        "compatibleEcosystems": "Xiaomi, Redmi, POCO, USB Devices"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi flash charge adapter Xiaomi 33W SonicCharge 2.0 Fast Charger",
+      "status": "staged"
+    },
+    {
+      "id": "xiaomi-120w-hypercharge",
+      "canonicalBrand": "Xiaomi",
+      "displayBrand": "Xiaomi",
+      "productLine": "SonicCharge / HyperCharge",
+      "modelName": "Xiaomi 120W HyperCharge Adapter Combo",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mi.com/in/product/120w-hypercharge"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IN",
+      "lifecycle": "active",
+      "variants": [
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 120,
+        "connectorType": "1x USB-A",
+        "pdVersion": "HyperCharge / PD",
+        "ppsSupported": false,
+        "voltageProfiles": "120W Flash Charge",
+        "compatibleEcosystems": "Xiaomi, Redmi, POCO, USB Devices"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Xiaomi flash charge adapter Xiaomi 120W HyperCharge Adapter Combo",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-gan5-pro-65w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "GaN Pro Series",
+      "modelName": "Baseus GaN5 Pro 65W Fast Charger",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/gan5-pro-65w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 65,
+        "connectorType": "2x USB-C + 1x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "65W GaN Output",
+        "compatibleEcosystems": "MacBook Pro, iPhone, Galaxy, iPad"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus multi-port GaN charger Baseus GaN5 Pro 65W Fast Charger",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-gan3-pro-100w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "GaN Pro Series",
+      "modelName": "Baseus GaN3 Pro 100W 4-Port Charger",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/gan3-pro-100w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 100,
+        "connectorType": "2x USB-C + 2x USB-A",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "100W GaN Output",
+        "compatibleEcosystems": "MacBook Pro, iPhone, Galaxy, iPad"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus multi-port GaN charger Baseus GaN3 Pro 100W 4-Port Charger",
+      "status": "staged"
+    },
+    {
+      "id": "baseus-gan5-30w",
+      "canonicalBrand": "Baseus",
+      "displayBrand": "Baseus",
+      "productLine": "GaN Pro Series",
+      "modelName": "Baseus GaN5 30W Mini Fast Charger",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.baseus.com/products/gan5-30w"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Black",
+        "White"
+      ],
+      "collectedAttributes": {
+        "totalWatts": 30,
+        "connectorType": "1x USB-C",
+        "pdVersion": "USB-PD 3.0 PPS",
+        "ppsSupported": true,
+        "voltageProfiles": "30W GaN Output",
+        "compatibleEcosystems": "MacBook Pro, iPhone, Galaxy, iPad"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Baseus multi-port GaN charger Baseus GaN5 30W Mini Fast Charger",
+      "status": "staged"
+    }
+  ],
   "supplyExceptions": [
     {
       "brand": "Apple",
@@ -149,706 +1604,49 @@
       ],
       "totalQualifyingModels": 5,
       "sourceRegion": "IN"
-    }
-  ],
-  "entries": [
-    {
-      "id": "apple-20w-usb-c-power-adapter",
-      "canonicalBrand": "Apple",
-      "displayBrand": "Apple",
-      "productLine": "Power Adapter",
-      "modelName": "Apple 20W USB-C Power Adapter",
-      "generationOrYear": "2020",
-      "sourceUrls": ["https://www.apple.com/in/shop/product/MHJE3HN/A/20w-usb-c-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["India Pin", "Global Foldable Pin"],
-      "collectedAttributes": { "totalWatts": 20, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": false, "voltageProfiles": "5V/3A, 9V/2.22A", "compatibleEcosystems": "iPhone, iPad, Apple Watch, AirPods" },
-      "missingAttributes": [],
-      "inclusionReason": "Official standard fast charger for iPhone 12 through iPhone 16 series",
-      "status": "staged"
     },
     {
-      "id": "apple-30w-usb-c-power-adapter",
-      "canonicalBrand": "Apple",
-      "displayBrand": "Apple",
-      "productLine": "Power Adapter",
-      "modelName": "Apple 30W USB-C Power Adapter",
-      "generationOrYear": "2021",
-      "sourceUrls": ["https://www.apple.com/in/shop/product/MY1W2HN/A/30w-usb-c-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 30, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": false, "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A", "compatibleEcosystems": "MacBook Air 13, iPad Pro, iPhone" },
-      "missingAttributes": [],
-      "inclusionReason": "Official bundled charger for MacBook Air 13-inch",
-      "status": "staged"
+      "brand": "Stuffcool",
+      "leafKey": "wall-chargers",
+      "reason": "Stuffcool active GaN wall charger lineup consists of 4 models.",
+      "officialSourceUrl": "https://www.stuffcool.com/collections/chargers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Stuffcool Napoleon 65W GaN Charger",
+        "Stuffcool Centurion 100W 4-Port GaN Charger",
+        "Stuffcool Flow 33W Dual Port GaN Charger",
+        "Stuffcool Neutron 20W Tiny USB-C Charger"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "IN"
     },
     {
-      "id": "apple-35w-dual-compact-adapter",
-      "canonicalBrand": "Apple",
-      "displayBrand": "Apple",
-      "productLine": "Power Adapter",
-      "modelName": "Apple 35W Dual USB-C Port Compact Power Adapter",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.apple.com/in/shop/product/MNWM3HN/A/35w-dual-usb-c-port-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White Dual USB-C"],
-      "collectedAttributes": { "totalWatts": 35, "connectorType": "2x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": false, "voltageProfiles": "Dynamic power sharing (up to 35W single, 27W+7.5W dual)", "compatibleEcosystems": "MacBook Air, iPhone, Apple Watch" },
-      "missingAttributes": [],
-      "inclusionReason": "Dual output compact adapter for simultaneous MacBook Air and iPhone charging",
-      "status": "staged"
+      "brand": "Xiaomi",
+      "leafKey": "wall-chargers",
+      "reason": "Xiaomi standalone fast charger portfolio features 3 SonicCharge & HyperCharge adapters.",
+      "officialSourceUrl": "https://www.mi.com/in/product-list/chargers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Xiaomi 67W SonicCharge 3.0 Combo",
+        "Xiaomi 33W SonicCharge 2.0 Fast Charger",
+        "Xiaomi 120W HyperCharge Adapter Combo"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "IN"
     },
     {
-      "id": "apple-35w-dual-power-adapter",
-      "canonicalBrand": "Apple",
-      "displayBrand": "Apple",
-      "productLine": "Power Adapter",
-      "modelName": "Apple 35W Dual USB-C Port Power Adapter",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.apple.com/in/shop/product/MNWP3HN/A/35w-dual-usb-c-port-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White with Removable Duckhead"],
-      "collectedAttributes": { "totalWatts": 35, "connectorType": "2x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": false, "voltageProfiles": "5V/3A, 9V/3A, 15V/2.33A, 20V/1.75A", "compatibleEcosystems": "MacBook Air, iPad, iPhone" },
-      "missingAttributes": [],
-      "inclusionReason": "World Travel Adapter Kit compatible dual USB-C charger",
-      "status": "staged"
-    },
-    {
-      "id": "apple-70w-usb-c-power-adapter",
-      "canonicalBrand": "Apple",
-      "displayBrand": "Apple",
-      "productLine": "Power Adapter",
-      "modelName": "Apple 70W USB-C Power Adapter",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.apple.com/in/shop/product/MQLN3HN/A/70w-usb-c-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 70, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": false, "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20.6V/3.4A", "compatibleEcosystems": "MacBook Air 15, MacBook Pro 14 (M3)" },
-      "missingAttributes": [],
-      "inclusionReason": "Fast charges MacBook Air M2/M3 to 50% in 30 minutes",
-      "status": "staged"
-    },
-    {
-      "id": "apple-140w-usb-c-power-adapter",
-      "canonicalBrand": "Apple",
-      "displayBrand": "Apple",
-      "productLine": "Power Adapter",
-      "modelName": "Apple 140W USB-C Power Adapter",
-      "generationOrYear": "2021",
-      "sourceUrls": ["https://www.apple.com/in/shop/product/MLYU3HN/A/140w-usb-c-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 140, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.1 (EPR 28V)", "ppsSupported": false, "voltageProfiles": "5V/3A, 9V/3A, 15V/5A, 20.5V/5A, 28V/5A", "compatibleEcosystems": "MacBook Pro 16, MagSafe 3" },
-      "missingAttributes": [],
-      "inclusionReason": "First commercial USB-PD 3.1 Extended Power Range (28V/5A) 140W GaN power adapter",
-      "status": "staged"
-    },
-    {
-      "id": "samsung-25w-power-adapter-ep-t2510n",
-      "canonicalBrand": "Samsung",
-      "displayBrand": "Samsung",
-      "productLine": "Super Fast Charging",
-      "modelName": "Samsung 25W Power Adapter (EP-T2510N)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.samsung.com/in/mobile-accessories/25w-power-adapter-black-ep-t2510nbeginu/"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black", "White"],
-      "collectedAttributes": { "totalWatts": 25, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": true, "voltageProfiles": "PDO: 5V/3A, 9V/2.77A | PPS: 3.3-5.9V/3A, 3.3-11.0V/2.25A", "compatibleEcosystems": "Galaxy S24, S23, A55, iPhone, Pixel" },
-      "missingAttributes": [],
-      "inclusionReason": "Standard official Super Fast Charging 1.0 GaN adapter with ultra-low standby power (<5mW)",
-      "status": "staged"
-    },
-    {
-      "id": "samsung-45w-power-adapter-ep-t4511x",
-      "canonicalBrand": "Samsung",
-      "displayBrand": "Samsung",
-      "productLine": "Super Fast Charging",
-      "modelName": "Samsung 45W Power Adapter (EP-T4511X)",
-      "generationOrYear": "2024",
-      "sourceUrls": ["https://www.samsung.com/in/mobile-accessories/45w-power-adapter-black-ep-t4511xbeginu/"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black", "White with 5A Cable"],
-      "collectedAttributes": { "totalWatts": 45, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": true, "voltageProfiles": "PDO: 5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: 3.3-20.0V/2.25A (45W)", "compatibleEcosystems": "Galaxy S24 Ultra, Tab S9 Ultra, Book4, Steam Deck" },
-      "missingAttributes": [],
-      "inclusionReason": "Official Super Fast Charging 2.0 (45W PPS) compact GaN power adapter",
-      "status": "staged"
-    },
-    {
-      "id": "samsung-65w-trio-adapter-ep-t6530n",
-      "canonicalBrand": "Samsung",
-      "displayBrand": "Samsung",
-      "productLine": "Power Adapter Trio",
-      "modelName": "Samsung 65W Trio Power Adapter (EP-T6530N)",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.samsung.com/in/mobile-accessories/power-adapter-trio-65w-black-ep-t6530nbeginu/"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black"],
-      "collectedAttributes": { "totalWatts": 65, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0", "ppsSupported": true, "voltageProfiles": "USB-C1: up to 65W, USB-C2: up to 25W, USB-A: up to 15W", "compatibleEcosystems": "Galaxy Book, Galaxy Phones, Galaxy Watch" },
-      "missingAttributes": [],
-      "inclusionReason": "Official triple port charging adapter for simultaneous laptop, phone and watch charging",
-      "status": "staged"
-    },
-    {
-      "id": "samsung-50w-dual-port-ep-t5020",
-      "canonicalBrand": "Samsung",
-      "displayBrand": "Samsung",
-      "productLine": "Super Fast Charging",
-      "modelName": "Samsung 50W Dual Port Charger (EP-T5020)",
-      "generationOrYear": "2024",
-      "sourceUrls": ["https://www.samsung.com/in/mobile-accessories/50w-power-adapter-black-ep-t5020nbeginu/"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black"],
-      "collectedAttributes": { "totalWatts": 50, "connectorType": "2x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": true, "voltageProfiles": "C1: 50W max (or 25W+25W dual simultaneous)", "compatibleEcosystems": "Galaxy Phones, Galaxy Tablets" },
-      "missingAttributes": [],
-      "inclusionReason": "Dual Super Fast Charging 25W+25W simultaneous output adapter",
-      "status": "staged"
-    },
-    {
-      "id": "samsung-15w-power-adapter-ep-t1510n",
-      "canonicalBrand": "Samsung",
-      "displayBrand": "Samsung",
-      "productLine": "Adaptive Fast Charging",
-      "modelName": "Samsung 15W Power Adapter (EP-T1510N)",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.samsung.com/in/mobile-accessories/15w-power-adapter-black-ep-t1510nbeginu/"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black", "White"],
-      "collectedAttributes": { "totalWatts": 15, "connectorType": "1x USB-C", "pdVersion": "USB-PD 2.0", "ppsSupported": false, "voltageProfiles": "5V/2A, 9V/1.67A", "compatibleEcosystems": "Galaxy A05, M14, Buds" },
-      "missingAttributes": [],
-      "inclusionReason": "Entry-level official USB-C adapter for budget Galaxy smartphones",
-      "status": "staged"
-    },
-    {
-      "id": "samsung-35w-power-adapter-duo-ep-ta220n",
-      "canonicalBrand": "Samsung",
-      "displayBrand": "Samsung",
-      "productLine": "Power Adapter Duo",
-      "modelName": "Samsung 35W Power Adapter Duo (EP-TA220N)",
-      "generationOrYear": "2021",
-      "sourceUrls": ["https://www.samsung.com/in/mobile-accessories/power-adapter-duo-35w-black-ep-ta220nbeginu/"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black"],
-      "collectedAttributes": { "totalWatts": 35, "connectorType": "1x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0", "ppsSupported": true, "voltageProfiles": "USB-C: up to 35W | USB-A: up to 15W", "compatibleEcosystems": "Galaxy Phones, USB-A legacy accessories" },
-      "missingAttributes": [],
-      "inclusionReason": "Dual port charger supporting legacy USB-A cables alongside modern USB-C PD",
-      "status": "staged"
-    },
-    {
-      "id": "google-45w-usb-c-charger",
-      "canonicalBrand": "Google",
-      "displayBrand": "Google",
-      "productLine": "Pixel",
-      "modelName": "Google 45W USB-C Charger",
-      "generationOrYear": "2024",
-      "sourceUrls": ["https://store.google.com/in/product/google_45w_usb_c_charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Snow White"],
-      "collectedAttributes": { "totalWatts": 45, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.1 PPS", "ppsSupported": true, "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: up to 21V/2.25A", "compatibleEcosystems": "Pixel 9 Pro XL, Pixel 9 Pro, Pixel 9, Chromebooks" },
-      "missingAttributes": [],
-      "inclusionReason": "Official high-power fast charger engineered for Pixel 9 Pro XL 37W peak charging",
-      "status": "staged"
-    },
-    {
-      "id": "google-30w-usb-c-charger",
-      "canonicalBrand": "Google",
-      "displayBrand": "Google",
-      "productLine": "Pixel",
-      "modelName": "Google 30W USB-C Charger",
-      "generationOrYear": "2021",
-      "sourceUrls": ["https://store.google.com/in/product/usb_c_30w_charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 30, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 11V/3A, 16V/2A, 21V/1.5A", "compatibleEcosystems": "Pixel 8, Pixel 7, Pixel 6 series" },
-      "missingAttributes": [],
-      "inclusionReason": "Official PPS fast charger for Google Pixel 6, 7 and 8 phones",
-      "status": "staged"
-    },
-    {
-      "id": "google-18w-usb-c-power-adapter",
-      "canonicalBrand": "Google",
-      "displayBrand": "Google",
-      "productLine": "Pixel",
-      "modelName": "Google 18W USB-C Power Adapter",
-      "generationOrYear": "2020",
-      "sourceUrls": ["https://store.google.com/in/product/usb_c_18w_power_adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "legacy",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 18, "connectorType": "1x USB-C", "pdVersion": "USB-PD 2.0", "ppsSupported": false, "voltageProfiles": "5V/3A, 9V/2A", "compatibleEcosystems": "Pixel 5, Pixel 4a, Pixel Stand" },
-      "missingAttributes": [],
-      "inclusionReason": "Legacy official 18W power adapter",
-      "status": "staged"
-    },
-    {
-      "id": "oneplus-supervooc-100w-dual-ports",
-      "canonicalBrand": "OnePlus",
-      "displayBrand": "OnePlus",
-      "productLine": "SUPERVOOC",
-      "modelName": "OnePlus SUPERVOOC 100W Dual Ports Power Adapter",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.oneplus.in/product/oneplus-supervooc-100w-dual-ports-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White with Red Accents"],
-      "collectedAttributes": { "totalWatts": 100, "connectorType": "1x USB-C + 1x USB-A", "pdVersion": "USB-PD 65W / SUPERVOOC 100W", "ppsSupported": true, "voltageProfiles": "SUPERVOOC: 100W max | USB-PD: up to 65W", "compatibleEcosystems": "OnePlus 12, OnePlus 11, Laptops (65W PD)" },
-      "missingAttributes": [],
-      "inclusionReason": "Dual output adapter supporting 100W proprietary VOOC and 65W universal USB-PD",
-      "status": "staged"
-    },
-    {
-      "id": "oneplus-supervooc-80w-power-adapter",
-      "canonicalBrand": "OnePlus",
-      "displayBrand": "OnePlus",
-      "productLine": "SUPERVOOC",
-      "modelName": "OnePlus SUPERVOOC 80W Power Adapter",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.oneplus.in/product/oneplus-supervooc-80w-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 80, "connectorType": "1x USB-A", "pdVersion": "SUPERVOOC Proprietary", "ppsSupported": false, "voltageProfiles": "5V/2A or 5-11V/7.3A (80W max)", "compatibleEcosystems": "OnePlus 10 Pro, Nord 4, Nord CE4" },
-      "missingAttributes": [],
-      "inclusionReason": "Standard high-current 80W adapter for OnePlus smartphones",
-      "status": "staged"
-    },
-    {
-      "id": "oneplus-supervooc-160w-power-adapter",
-      "canonicalBrand": "OnePlus",
-      "displayBrand": "OnePlus",
-      "productLine": "SUPERVOOC",
-      "modelName": "OnePlus SUPERVOOC 160W Power Adapter",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.oneplus.in/product/oneplus-supervooc-160w-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 160, "connectorType": "1x USB-C", "pdVersion": "USB-PD 45W / SUPERVOOC 160W", "ppsSupported": false, "voltageProfiles": "SUPERVOOC: 160W max | USB-PD: up to 45W", "compatibleEcosystems": "OnePlus 10T" },
-      "missingAttributes": [],
-      "inclusionReason": "Ultra-fast 160W flash charging adapter for OnePlus 10T",
-      "status": "staged"
-    },
-    {
-      "id": "oneplus-supervooc-65w-power-adapter",
-      "canonicalBrand": "OnePlus",
-      "displayBrand": "OnePlus",
-      "productLine": "SUPERVOOC",
-      "modelName": "OnePlus SUPERVOOC 65W Power Adapter",
-      "generationOrYear": "2021",
-      "sourceUrls": ["https://www.oneplus.in/product/oneplus-warp-charge-65-power-adapter"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 65, "connectorType": "1x USB-C", "pdVersion": "USB-PD 45W / Warp 65W", "ppsSupported": true, "voltageProfiles": "10V/6.5A (65W) | PD: 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A", "compatibleEcosystems": "OnePlus 9 series, 8T, Laptops up to 45W" },
-      "missingAttributes": [],
-      "inclusionReason": "Dual-cell 65W charging adapter with universal 45W PD compatibility",
-      "status": "staged"
-    },
-    {
-      "id": "ambrane-raap-g65",
-      "canonicalBrand": "Ambrane",
-      "displayBrand": "Ambrane",
-      "productLine": "Raap GaN",
-      "modelName": "Ambrane Raap G65 (65W GaN Charger)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://ambraneindia.com/products/raap-g65-65w-gan-charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black", "White"],
-      "collectedAttributes": { "totalWatts": 65, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "C1: 65W max, C2: 33W, USB-A: 30W QC", "compatibleEcosystems": "MacBook, Dell XPS, Galaxy S24 (PPS), iPhone" },
-      "missingAttributes": [],
-      "inclusionReason": "Affordable Made-in-India 65W triple-port GaN charger for laptops and phones",
-      "status": "staged"
-    },
-    {
-      "id": "ambrane-raap-g100",
-      "canonicalBrand": "Ambrane",
-      "displayBrand": "Ambrane",
-      "productLine": "Raap GaN",
-      "modelName": "Ambrane Raap G100 (100W GaN Fast Charger)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://ambraneindia.com/products/raap-g100-100w-gan-charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black"],
-      "collectedAttributes": { "totalWatts": 100, "connectorType": "3x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "C1/C2: 100W max | Multi-port dynamic allocation", "compatibleEcosystems": "MacBook Pro 16, ThinkPad, Galaxy, iPhone" },
-      "missingAttributes": [],
-      "inclusionReason": "Budget 100W 4-port GaN power station for multiple heavy devices",
-      "status": "staged"
-    },
-    {
-      "id": "ambrane-raap-s33",
-      "canonicalBrand": "Ambrane",
-      "displayBrand": "Ambrane",
-      "productLine": "Raap",
-      "modelName": "Ambrane Raap S33 (33W Fast Charger)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://ambraneindia.com/products/raap-s33-33w-charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White", "Black"],
-      "collectedAttributes": { "totalWatts": 33, "connectorType": "1x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0 PPS / QC 3.0", "ppsSupported": true, "voltageProfiles": "Type-C: up to 33W PPS | USB-A: 18W QC", "compatibleEcosystems": "Galaxy Phones (25W PPS), iPhone, Redmi" },
-      "missingAttributes": [],
-      "inclusionReason": "High-volume affordable 33W dual port wall charger with PPS support",
-      "status": "staged"
-    },
-    {
-      "id": "ambrane-raap-m20",
-      "canonicalBrand": "Ambrane",
-      "displayBrand": "Ambrane",
-      "productLine": "Raap",
-      "modelName": "Ambrane Raap M20 (20W PD Charger)",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://ambraneindia.com/products/raap-m20-20w-charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 20, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": false, "voltageProfiles": "5V/3A, 9V/2.22A, 12V/1.67A", "compatibleEcosystems": "iPhone 12-16, AirPods, iPad" },
-      "missingAttributes": [],
-      "inclusionReason": "Low-cost high-reliability 20W PD iPhone charger alternative",
-      "status": "staged"
-    },
-    {
-      "id": "ambrane-raap-h20",
-      "canonicalBrand": "Ambrane",
-      "displayBrand": "Ambrane",
-      "productLine": "Raap",
-      "modelName": "Ambrane Raap H20 (20W Dual Port Charger)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://ambraneindia.com/products/raap-h20-charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White", "Black"],
-      "collectedAttributes": { "totalWatts": 20, "connectorType": "1x USB-C + 1x USB-A", "pdVersion": "USB-PD + QC 3.0", "ppsSupported": false, "voltageProfiles": "Type-C: 20W max | USB-A: 18W max", "compatibleEcosystems": "iPhone, Android phones" },
-      "missingAttributes": [],
-      "inclusionReason": "Dual output compact wall adapter for simultaneously powering accessories",
-      "status": "staged"
-    },
-    {
-      "id": "portronics-adapto-65-pro",
-      "canonicalBrand": "Portronics",
-      "displayBrand": "Portronics",
-      "productLine": "Adapto",
-      "modelName": "Portronics Adapto 65 Pro (65W GaN Fast Charger)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.portronics.com/products/adapto-65-pro"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White", "Black"],
-      "collectedAttributes": { "totalWatts": 65, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "Type-C1: 65W, Type-C2: 33W, USB-A: 30W", "compatibleEcosystems": "MacBook, Type-C Laptops, Galaxy, iPhone" },
-      "missingAttributes": [],
-      "inclusionReason": "Economical Indian consumer 65W GaN 3-port laptop and mobile wall adapter",
-      "status": "staged"
-    },
-    {
-      "id": "portronics-adapto-100",
-      "canonicalBrand": "Portronics",
-      "displayBrand": "Portronics",
-      "productLine": "Adapto",
-      "modelName": "Portronics Adapto 100 (100W GaN Multiport Charger)",
-      "generationOrYear": "2024",
-      "sourceUrls": ["https://www.portronics.com/products/adapto-100"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black with Carbon Finish"],
-      "collectedAttributes": { "totalWatts": 100, "connectorType": "3x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "USB-C1/C2: 100W max | 4-port smart power distribution", "compatibleEcosystems": "High-performance Laptops, Tablets, Smartphones" },
-      "missingAttributes": [],
-      "inclusionReason": "Heavy-duty 100W 4-port GaN travel adapter",
-      "status": "staged"
-    },
-    {
-      "id": "portronics-adapto-45",
-      "canonicalBrand": "Portronics",
-      "displayBrand": "Portronics",
-      "productLine": "Adapto",
-      "modelName": "Portronics Adapto 45 (45W Dual Type-C GaN Charger)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.portronics.com/products/adapto-45"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 45, "connectorType": "2x USB-C", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "Single port 45W PPS | Dual port 25W + 20W", "compatibleEcosystems": "Samsung 45W phones, iPhone, iPad, MacBook Air" },
-      "missingAttributes": [],
-      "inclusionReason": "Compact 45W PPS dual USB-C GaN charger matching Samsung 45W charging spec at low cost",
-      "status": "staged"
-    },
-    {
-      "id": "portronics-adapto-33",
-      "canonicalBrand": "Portronics",
-      "displayBrand": "Portronics",
-      "productLine": "Adapto",
-      "modelName": "Portronics Adapto 33 (33W Fast Charger)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.portronics.com/products/adapto-33"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White", "Black"],
-      "collectedAttributes": { "totalWatts": 33, "connectorType": "1x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0 PPS / QC 3.0", "ppsSupported": true, "voltageProfiles": "Type-C: 33W PPS | USB-A: 18W QC", "compatibleEcosystems": "Samsung, Xiaomi, Vivo, iPhone" },
-      "missingAttributes": [],
-      "inclusionReason": "Versatile 33W wall adapter for smartphones with PPS protocol support",
-      "status": "staged"
-    },
-    {
-      "id": "portronics-adapto-20",
-      "canonicalBrand": "Portronics",
-      "displayBrand": "Portronics",
-      "productLine": "Adapto",
-      "modelName": "Portronics Adapto 20 (20W Fast Charger)",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.portronics.com/products/adapto-20"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White", "Black"],
-      "collectedAttributes": { "totalWatts": 20, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0", "ppsSupported": false, "voltageProfiles": "5V/3A, 9V/2.22A, 12V/1.67A", "compatibleEcosystems": "iPhone, iPad, Pixel" },
-      "missingAttributes": [],
-      "inclusionReason": "Value 20W Type-C adapter designed for fast charging iPhones",
-      "status": "staged"
-    },
-    {
-      "id": "anker-735-charger-ganprime-65w",
-      "canonicalBrand": "Anker",
-      "displayBrand": "Anker",
-      "productLine": "GaNPrime",
-      "modelName": "Anker 735 Charger (GaNPrime 65W)",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.anker.com/products/a2668"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black", "Gold"],
-      "collectedAttributes": { "totalWatts": 65, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "PowerIQ 4.0 with Dynamic Power Distribution", "ppsSupported": true, "voltageProfiles": "Single port 65W max | PowerIQ 4.0 with ActiveShield 2.0", "compatibleEcosystems": "MacBook, XPS, Galaxy, iPhone" },
-      "missingAttributes": [],
-      "inclusionReason": "Industry benchmark 65W 3-port GaNPrime charger with ActiveShield 2.0 temperature monitoring",
-      "status": "staged"
-    },
-    {
-      "id": "anker-737-charger-ganprime-120w",
-      "canonicalBrand": "Anker",
-      "displayBrand": "Anker",
-      "productLine": "GaNPrime",
-      "modelName": "Anker 737 Charger (GaNPrime 120W)",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.anker.com/products/a2148"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black"],
-      "collectedAttributes": { "totalWatts": 120, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "PowerIQ 4.0 PPS", "ppsSupported": true, "voltageProfiles": "Single port 100W max | Dynamic allocation up to 120W total", "compatibleEcosystems": "MacBook Pro 16, Dell XPS, Galaxy, iPad" },
-      "missingAttributes": [],
-      "inclusionReason": "120W compact GaNPrime charger capable of powering two laptops simultaneously",
-      "status": "staged"
-    },
-    {
-      "id": "anker-prime-67w-gan-wall-charger",
-      "canonicalBrand": "Anker",
-      "displayBrand": "Anker",
-      "productLine": "Anker Prime",
-      "modelName": "Anker Prime 67W GaN Wall Charger",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.anker.com/products/a2669"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black", "White"],
-      "collectedAttributes": { "totalWatts": 67, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "PowerIQ 4.0 PPS", "ppsSupported": true, "voltageProfiles": "Single USB-C: 67W max | Dual USB-C: 65W shared", "compatibleEcosystems": "MacBook Air/Pro, Windows Ultrabooks, iPhone, Galaxy" },
-      "missingAttributes": [],
-      "inclusionReason": "Compact 51% smaller 67W 3-port charger with foldable pins",
-      "status": "staged"
-    },
-    {
-      "id": "anker-prime-100w-gan-wall-charger",
-      "canonicalBrand": "Anker",
-      "displayBrand": "Anker",
-      "productLine": "Anker Prime",
-      "modelName": "Anker Prime 100W GaN Wall Charger",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.anker.com/products/a2343"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black"],
-      "collectedAttributes": { "totalWatts": 100, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "PowerIQ 4.0 PPS", "ppsSupported": true, "voltageProfiles": "Single port 100W max | Multi-port dynamic power sharing", "compatibleEcosystems": "Heavy Workstation Laptops, Galaxy Tablets, iPhone" },
-      "missingAttributes": [],
-      "inclusionReason": "Premium 100W 3-port GaN charger with real-time ActiveShield 2.0 safety",
-      "status": "staged"
-    },
-    {
-      "id": "anker-511-charger-nano-3-30w",
-      "canonicalBrand": "Anker",
-      "displayBrand": "Anker",
-      "productLine": "Nano",
-      "modelName": "Anker 511 Charger (Nano 3 30W)",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.anker.com/products/a2147"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Phantom Black", "Aurora White", "Lilac Purple", "Misty Blue"],
-      "collectedAttributes": { "totalWatts": 30, "connectorType": "1x USB-C", "pdVersion": "PowerIQ 3.0 PPS", "ppsSupported": true, "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 3.3-11V/3A", "compatibleEcosystems": "iPhone 15/16, iPad Air, MacBook Air, Pixel, Galaxy" },
-      "missingAttributes": [],
-      "inclusionReason": "Ultra-miniature 30W foldable GaN charger capable of charging a MacBook Air",
-      "status": "staged"
-    },
-    {
-      "id": "anker-313-charger-ace-45w",
-      "canonicalBrand": "Anker",
-      "displayBrand": "Anker",
-      "productLine": "Ace",
-      "modelName": "Anker 313 Charger (Ace 45W for Samsung)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.anker.com/products/a2677"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Black", "White"],
-      "collectedAttributes": { "totalWatts": 45, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0 with Super Fast Charging 2.0 PPS", "ppsSupported": true, "voltageProfiles": "5V/3A, 9V/3A, 15V/3A, 20V/2.25A | PPS: 3.3-11V/4.05A (45W)", "compatibleEcosystems": "Galaxy S24 Ultra, S23+, Tab S9 series" },
-      "missingAttributes": [],
-      "inclusionReason": "Dedicated Samsung Super Fast Charging 2.0 (45W PPS) certified replacement charger",
-      "status": "staged"
-    },
-    {
-      "id": "ugreen-nexode-65w-3port",
-      "canonicalBrand": "UGREEN",
-      "displayBrand": "UGREEN",
-      "productLine": "Nexode",
-      "modelName": "UGREEN Nexode 65W 3-Port GaN Fast Charger",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.ugreen.com/products/ugreen-nexode-65w-usb-c-wall-charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Space Gray", "White"],
-      "collectedAttributes": { "totalWatts": 65, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0 PPS / QC 4+", "ppsSupported": true, "voltageProfiles": "USB-C1: 65W max, USB-C2: 65W max, USB-A: 22.5W", "compatibleEcosystems": "MacBook, Dell, HP, ThinkPad, Galaxy, iPhone" },
-      "missingAttributes": [],
-      "inclusionRegion": "Worldwide bestselling 65W multi-protocol GaN fast charger",
-      "status": "staged",
-      "inclusionReason": "Worldwide bestselling 65W multi-protocol GaN fast charger"
-    },
-    {
-      "id": "ugreen-nexode-100w-4port",
-      "canonicalBrand": "UGREEN",
-      "displayBrand": "UGREEN",
-      "productLine": "Nexode",
-      "modelName": "UGREEN Nexode 100W 4-Port GaN Fast Charger",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.ugreen.com/products/100w-4-port-gan-charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Space Gray"],
-      "collectedAttributes": { "totalWatts": 100, "connectorType": "3x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "C1/C2: 100W max | C3: 22.5W | USB-A: 22.5W", "compatibleEcosystems": "MacBook Pro 16, iPad Pro, iPhone, Galaxy S24 Ultra" },
-      "missingAttributes": [],
-      "inclusionReason": "100W 4-port desktop and travel GaN power adapter with dual 100W ports",
-      "status": "staged"
-    },
-    {
-      "id": "ugreen-nexode-140w-3port",
-      "canonicalBrand": "UGREEN",
-      "displayBrand": "UGREEN",
-      "productLine": "Nexode",
-      "modelName": "UGREEN Nexode 140W 3-Port GaN Fast Charger (PD 3.1)",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.ugreen.com/products/ugreen-nexode-140w-usb-c-wall-charger"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["Space Gray with 240W Cable"],
-      "collectedAttributes": { "totalWatts": 140, "connectorType": "2x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.1 (EPR 28V/5A)", "ppsSupported": true, "voltageProfiles": "USB-C1: 140W (28V/5A), USB-C2: 100W, USB-A: 22.5W", "compatibleEcosystems": "MacBook Pro 16 (140W), Dell XPS, Gaming Laptops" },
-      "missingAttributes": [],
-      "inclusionReason": "Next-gen USB-PD 3.1 140W single-port charging adapter with GaNFast technology",
-      "status": "staged"
-    },
-    {
-      "id": "belkin-boostcharge-pro-65w-dual",
-      "canonicalBrand": "Belkin",
-      "displayBrand": "Belkin",
-      "productLine": "BoostCharge Pro",
-      "modelName": "BoostCharge Pro 65W Dual USB-C GaN Charger with PPS",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.belkin.com/in/dual-usb-c-gan-wall-charger-with-pps-65w/WCH013inWH.html"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White", "Black"],
-      "collectedAttributes": { "totalWatts": 65, "connectorType": "2x USB-C", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "Single USB-C: 65W | Dual USB-C: 45W + 20W", "compatibleEcosystems": "MacBook Pro + iPhone simultaneous, Galaxy PPS" },
-      "missingAttributes": [],
-      "inclusionReason": "Certified dual USB-C GaN charger with Apple and Samsung fast-charge compliance",
-      "status": "staged"
-    },
-    {
-      "id": "belkin-boostcharge-pro-140w-4port",
-      "canonicalBrand": "Belkin",
-      "displayBrand": "Belkin",
-      "productLine": "BoostCharge Pro",
-      "modelName": "BoostCharge Pro 140W 4-Port GaN Wall Charger",
-      "generationOrYear": "2023",
-      "sourceUrls": ["https://www.belkin.com/in/4-port-usb-c-gan-wall-charger-140w/WCH014inWH.html"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White with Interchangeable International Plugs"],
-      "collectedAttributes": { "totalWatts": 140, "connectorType": "3x USB-C + 1x USB-A", "pdVersion": "USB-PD 3.1 PPS", "ppsSupported": true, "voltageProfiles": "USB-C1: 140W max | Multi-port intelligent power sharing", "compatibleEcosystems": "MacBook Pro 16, PC Laptops, iPhone, iPad" },
-      "missingAttributes": [],
-      "inclusionReason": "Premium 140W PD 3.1 4-port GaN travel wall charger with global plugs",
-      "status": "staged"
-    },
-    {
-      "id": "belkin-boostcharge-30w-usb-c-pps",
-      "canonicalBrand": "Belkin",
-      "displayBrand": "Belkin",
-      "productLine": "BoostCharge",
-      "modelName": "BoostCharge 30W USB-C GaN Wall Charger with PPS",
-      "generationOrYear": "2022",
-      "sourceUrls": ["https://www.belkin.com/in/usb-c-gan-wall-charger-with-pps-30w/WCH009inWH.html"],
-      "observationDate": "2026-10-11",
-      "sourceRegion": "IN",
-      "lifecycle": "active",
-      "variants": ["White"],
-      "collectedAttributes": { "totalWatts": 30, "connectorType": "1x USB-C", "pdVersion": "USB-PD 3.0 PPS", "ppsSupported": true, "voltageProfiles": "5V/3A, 9V/3A, 15V/2A, 20V/1.5A | PPS: 3.3-11V/2.72A", "compatibleEcosystems": "iPhone 15/16, Galaxy S24, iPad Air" },
-      "missingAttributes": [],
-      "inclusionReason": "Safe, compact 30W PPS GaN charger with connected equipment warranty",
-      "status": "staged"
+      "brand": "Baseus",
+      "leafKey": "wall-chargers",
+      "reason": "Baseus GaN wall chargers lineup features 3 core models.",
+      "officialSourceUrl": "https://www.baseus.com/collections/chargers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Baseus GaN5 Pro 65W Fast Charger",
+        "Baseus GaN3 Pro 100W 4-Port Charger",
+        "Baseus GaN5 30W Mini Fast Charger"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
     }
   ]
 }

@@ -1,0 +1,3914 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "watches",
+  "displayName": "Timepieces & Luxury Watches",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "rolex-submariner-date",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Submariner Date 41 (Ref. 126610LN)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/submariner/m126610ln-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Oystersteel / Black Cerachrom"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "submariner date 41 (ref. 126610ln)",
+        "movement": "automatic calibre 3235",
+        "caseDiameterMm": 41,
+        "caseMaterial": "oystersteel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Benchmark luxury professional diver watch with 300m water resistance.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-daytona",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Cosmograph Daytona 40 (Ref. 126500LN)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/cosmograph-daytona/m126500ln-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Oystersteel / White Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "cosmograph daytona 40 (ref. 126500ln)",
+        "movement": "automatic calibre 4131",
+        "caseDiameterMm": 40,
+        "caseMaterial": "oystersteel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic motorsport chronograph with tachymeter Cerachrom bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-gmt-master-ii",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "GMT-Master II 40 (Ref. 126710BLRO)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/gmt-master-ii/m126710blro-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Jubilee Bracelet / Pepsi Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "gmt-master ii 40 (ref. 126710blro)",
+        "movement": "automatic calibre 3285",
+        "caseDiameterMm": 40,
+        "caseMaterial": "oystersteel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual-timezone aviator watch with bidirectional red and blue Cerachrom bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-datejust-41",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Datejust 41 (Ref. 126300)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/datejust/m126300-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Oystersteel / Bright Blue Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "datejust 41 (ref. 126300)",
+        "movement": "automatic calibre 3235",
+        "caseDiameterMm": 41,
+        "caseMaterial": "oystersteel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic archetype of the modern luxury dress watch with Cyclops date lens.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-oyster-perpetual-41",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Oyster Perpetual 41 (Ref. 124300)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/oyster-perpetual/m124300-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Oystersteel / Bright Black Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "oyster perpetual 41 (ref. 124300)",
+        "movement": "automatic calibre 3230",
+        "caseDiameterMm": 41,
+        "caseMaterial": "oystersteel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Purest expression of the Oyster concept with chronometric precision.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-day-date-40",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Day-Date 40 (Ref. 228238)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/day-date/m228238-0006"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "18 ct Yellow Gold / Champagne Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "day-date 40 (ref. 228238)",
+        "movement": "automatic calibre 3255",
+        "caseDiameterMm": 40,
+        "caseMaterial": "18 ct yellow gold",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The ultimate prestige President's watch with spelt-out day of the week.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-sea-dweller",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Sea-Dweller 43 (Ref. 126600)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/sea-dweller/m126600-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Oystersteel / Helium Escape Valve"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "sea-dweller 43 (ref. 126600)",
+        "movement": "automatic calibre 3235",
+        "caseDiameterMm": 43,
+        "caseMaterial": "oystersteel",
+        "waterResistanceM": 1220,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Extreme deep-sea saturation diving watch with patented helium valve.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-explorer-36",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Explorer 36 (Ref. 124270)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/explorer/m124270-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Oystersteel / Chromalight Display"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "explorer 36 (ref. 124270)",
+        "movement": "automatic calibre 3230",
+        "caseDiameterMm": 36,
+        "caseMaterial": "oystersteel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Mountaineering heritage tool watch engineered for high-altitude endurance.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-explorer-ii",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Explorer II 42 (Ref. 226570)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/explorer/m226570-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Polar White Dial / Orange 24-Hour Hand"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "explorer ii 42 (ref. 226570)",
+        "movement": "automatic calibre 3285",
+        "caseDiameterMm": 42,
+        "caseMaterial": "oystersteel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Speleology and polar exploration watch with fixed 24-hour graduated bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "rolex-sky-dweller",
+      "canonicalBrand": "Rolex",
+      "displayBrand": "Rolex",
+      "modelName": "Sky-Dweller 42 (Ref. 336934)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.rolex.com/watches/sky-dweller/m336934-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "White Rolesor / Intense White Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "rolex",
+        "modelName": "sky-dweller 42 (ref. 336934)",
+        "movement": "automatic calibre 9002",
+        "caseDiameterMm": 42,
+        "caseMaterial": "white rolesor",
+        "waterResistanceM": 100,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated Saros annual calendar and dual timezone complication.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-prx-powermatic-80-40",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "PRX Powermatic 80 40mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1374071104100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Blue Waffle Dial / Integrated Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "prx powermatic 80 40mm",
+        "movement": "automatic powermatic 80.111",
+        "caseDiameterMm": 40,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Flagship 1970s integrated bracelet sports watch with Nivachron balance spring.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-prx-powermatic-80-35",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "PRX Powermatic 80 35mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1372071104100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Ice Blue Dial / Integrated Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "prx powermatic 80 35mm",
+        "movement": "automatic powermatic 80.111",
+        "caseDiameterMm": 35,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Unisex vintage proportioned PRX with 80 hours power reserve.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-pr516-mechanical-chronograph",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "PR516 Mechanical Chronograph",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1494592105100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Orange Accents"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "pr516 mechanical chronograph",
+        "movement": "manual-wind valjoux a05.291",
+        "caseDiameterMm": 41,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 68,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Authentic hand-wound racing chronograph tribute to the 1968 classic.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-gentleman-powermatic-80",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "Gentleman Powermatic 80 Silicium",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1274071104100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Blue Sunburst Dial / Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "gentleman powermatic 80 silicium",
+        "movement": "automatic powermatic 80.811 silicium",
+        "caseDiameterMm": 40,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Everyday luxury watch with antimagnetic silicon balance spring.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-seastar-1000-powermatic-80",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "Seastar 1000 Powermatic 80 40mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1204071104100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Blue Gradient Dial / Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "seastar 1000 powermatic 80 40mm",
+        "movement": "automatic powermatic 80.111",
+        "caseDiameterMm": 40,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Professional 300m diver watch with mineral bezel and luminous hands.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-seastar-2000-professional",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "Seastar 2000 Professional Powermatic 80",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1206071104100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Teal Wave Dial / Ceramic Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "seastar 2000 professional powermatic 80",
+        "movement": "automatic powermatic 80.111",
+        "caseDiameterMm": 46,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 600,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ISO 6425 certified saturation diving instrument with helium escape valve.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-telemeter-1938",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "Telemeter 1938 Heritage Chronograph",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1424621603200.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Spiral Dial / Leather Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "telemeter 1938 heritage chronograph",
+        "movement": "automatic valjoux a05.231",
+        "caseDiameterMm": 42,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 68,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage heritage column-wheel chronograph with telemeter and tachymeter scales.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-heritage-1973",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "Heritage 1973 Chronograph",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1244271603100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Panda Dial / Racing Perforated Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "heritage 1973 chronograph",
+        "movement": "automatic valjoux a05.h31",
+        "caseDiameterMm": 43,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cushion-case motorsport chronograph celebrating 1970s rally partnership.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-chemin-des-tourelles",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "Chemin des Tourelles Powermatic 80 39mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t1398071104800.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Domed Blue Dial / Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "chemin des tourelles powermatic 80 39mm",
+        "movement": "automatic powermatic 80.111",
+        "caseDiameterMm": 39,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Timeless Swiss dress watch named after Tissot's historic workshop street.",
+      "status": "staged"
+    },
+    {
+      "id": "tissot-le-locle-powermatic-80",
+      "canonicalBrand": "Tissot",
+      "displayBrand": "Tissot",
+      "modelName": "Le Locle Powermatic 80 39.3mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tissotwatches.com/en-us/t0064071103300.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Clous de Paris Dial / Roman Numerals"
+      ],
+      "collectedAttributes": {
+        "brand": "tissot",
+        "modelName": "le locle powermatic 80 39.3mm",
+        "movement": "automatic powermatic 80.111",
+        "caseDiameterMm": 39.3,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic guilloché dress watch celebrating Tissot's Swiss watchmaking cradle.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-speedmaster-professional",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Speedmaster Professional Moonwatch 42mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Sapphire Sandwich / Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "speedmaster professional moonwatch 42mm",
+        "movement": "manual-wind calibre 3861",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 50,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Legendary NASA flight-qualified Moonwatch with Co-Axial Master Chronometer calibre.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-seamaster-diver-300m",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Seamaster Diver 300M Co-Axial Master Chronometer 42mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Laser-Engraved Wave Dial / Ceramic Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "seamaster diver 300m co-axial master chronometer 42mm",
+        "movement": "automatic calibre 8800",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 55,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic James Bond professional diver watch with helium escape valve.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-seamaster-aqua-terra-150m",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Seamaster Aqua Terra 150M 41mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-41-mm-22010412103001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Teak Pattern Blue Dial / Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "seamaster aqua terra 150m 41mm",
+        "movement": "automatic calibre 8900",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 150,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Maritime luxury lifestyle watch with horizontal teak concept dial.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-seamaster-planet-ocean-600m",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Seamaster Planet Ocean 600M 43.5mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-43-5-mm-21530442101001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Ceramic Bezel / Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "seamaster planet ocean 600m 43.5mm",
+        "movement": "automatic calibre 8900",
+        "caseDiameterMm": 43.5,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 600,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heavy-duty 600m deep dive watch with Liquidmetal ceramic diving scale.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-speedmaster-dark-side",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Speedmaster Dark Side of the Moon 44.25mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-speedmaster-dark-side-of-the-moon-co-axial-chronometer-chronograph-44-25-mm-31192445101003"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Zirconium Ceramic Case"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "speedmaster dark side of the moon 44.25mm",
+        "movement": "automatic calibre 9300",
+        "caseDiameterMm": 44.25,
+        "caseMaterial": "black ceramic",
+        "waterResistanceM": 50,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "All-ceramic tribute to Apollo 8 astronauts seeing the moon's far side.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-constellation-39",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Constellation Co-Axial Master Chronometer 39mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13110392002001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Opaline Silver Dial / Claws Design"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "constellation co-axial master chronometer 39mm",
+        "movement": "automatic calibre 8800",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 55,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dramatic luxury dress watch with famous half-moon facets and griffes.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-de-ville-prestige",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "De Ville Prestige Co-Axial Master Chronometer 40mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402002001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silvery Dial / Roman Numerals"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "de ville prestige co-axial master chronometer 40mm",
+        "movement": "automatic calibre 8800",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 55,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Understated classic elegance designed to complement formal attire.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-speedmaster-calibre-321",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Speedmaster Calibre 321 Chronograph 39.7mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-speedmaster-calibre-321-chronograph-39-7-mm-31130403001001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Ed White Heritage Tribute"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "speedmaster calibre 321 chronograph 39.7mm",
+        "movement": "manual-wind calibre 321",
+        "caseDiameterMm": 39.7,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 55,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Faithful recreation of the column-wheel calibre worn during America's first spacewalk.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-seamaster-300-heritage",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Seamaster 300 Heritage Co-Axial Master Chronometer 41mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-seamaster-300-co-axial-master-chronometer-41-mm-23430412101001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Sandwich Black Dial / Vintage Super-LumiNova"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "seamaster 300 heritage co-axial master chronometer 41mm",
+        "movement": "automatic calibre 8912",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reinterpretation of the historic 1957 CK2913 diving reference.",
+      "status": "staged"
+    },
+    {
+      "id": "omega-globemaster-annual-calendar",
+      "canonicalBrand": "Omega",
+      "displayBrand": "Omega",
+      "modelName": "Globemaster Co-Axial Master Chronometer Annual Calendar 41mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.omegawatches.com/en-us/watch-omega-constellation-globemaster-co-axial-master-chronometer-annual-calendar-41-mm-13033412206001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Fluted Bezel / Pie-Pan Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "omega",
+        "modelName": "globemaster co-axial master chronometer annual calendar 41mm",
+        "movement": "automatic calibre 8922",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel / tungsten carbide",
+        "waterResistanceM": 100,
+        "powerReserveHours": 55,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The world's first Master Chronometer with pie-pan dial and annual calendar.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-santos-medium",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Santos de Cartier Medium (Ref. WSSA0029)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/santos-de-cartier/santos-de-cartier-watch-CRWSSA0029.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / QuickSwitch Interchangeable"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "santos de cartier medium (ref. wssa0029)",
+        "movement": "automatic calibre 1847 mc",
+        "caseDiameterMm": 35.1,
+        "caseMaterial": "steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pioneering 1904 aviator wristwatch designed for Alberto Santos-Dumont.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-santos-large",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Santos de Cartier Large (Ref. WSSA0018)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/santos-de-cartier/santos-de-cartier-watch-CRWSSA0018.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Date Window at 6"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "santos de cartier large (ref. wssa0018)",
+        "movement": "automatic calibre 1847 mc",
+        "caseDiameterMm": 39.8,
+        "caseMaterial": "steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Large modern execution with SmartLink tool-free sizing bracelet.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-tank-must-large",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Tank Must de Cartier Large (Ref. WSTA0041)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/tank/tank-must-watch-CRWSTA0041.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Black Grained Calfskin"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "tank must de cartier large (ref. wsta0041)",
+        "movement": "high-autonomy quartz",
+        "caseDiameterMm": 33.7,
+        "caseMaterial": "steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 70000,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary evolution of the legendary 1917 Tank brancards design.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-tank-louis",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Tank Louis Cartier Mechanical (Ref. WGTA0011)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/tank/tank-louis-cartier-watch-CRWGTA0011.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "18K Yellow Gold / Manual-Wind"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "tank louis cartier mechanical (ref. wgta0011)",
+        "movement": "manual-wind calibre 8971 mc",
+        "caseDiameterMm": 33.7,
+        "caseMaterial": "18k yellow gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 36,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Quintessential Louis Cartier masterpiece with rounded lugs in solid gold.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-tank-francaise-medium",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Tank Française Medium (Ref. WSTA0065)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/tank/tank-francaise-watch-CRWSTA0065.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Integrated Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "tank française medium (ref. wsta0065)",
+        "movement": "quartz movement",
+        "caseDiameterMm": 32,
+        "caseMaterial": "steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 70000,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural metal bracelet Tank reflecting classic French urban chic.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-ballon-bleu-40",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Ballon Bleu de Cartier 40mm (Ref. WSBB0040)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/ballon-de-cartier/ballon-bleu-de-cartier-watch-CRWSBB0040.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Integrated Blue Cabochon Crown"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "ballon bleu de cartier 40mm (ref. wsbb0040)",
+        "movement": "automatic calibre 1847 mc",
+        "caseDiameterMm": 40,
+        "caseMaterial": "steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Convex pebble-shaped case with enclosed winding crown and Roman dial.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-panthere-medium",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Panthère de Cartier Medium (Ref. WSPN0007)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/panthere-de-cartier/panthere-de-cartier-watch-CRWSPN0007.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Supple Linked Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "panthère de cartier medium (ref. wspn0007)",
+        "movement": "quartz movement",
+        "caseDiameterMm": 27,
+        "caseMaterial": "steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 70000,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Jewelry watch icon mirroring the feline fluidity of Cartier's panther.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-santos-dumont-large",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Santos-Dumont Large Mechanical (Ref. WSSA0022)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/santos-de-cartier/santos-dumont-watch-CRWSSA0022.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Alligator Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "santos-dumont large mechanical (ref. wssa0022)",
+        "movement": "manual-wind calibre 430 mc",
+        "caseDiameterMm": 43.5,
+        "caseMaterial": "steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 38,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-slim geometric aviator profile faithful to the historic 1904 creation.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-pasha-41",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Pasha de Cartier 41mm (Ref. WSPA0009)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/pasha-de-cartier/pasha-de-cartier-watch-CRWSPA0009.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Capped Screw-Down Crown"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "pasha de cartier 41mm (ref. wspa0009)",
+        "movement": "automatic calibre 1847 mc",
+        "caseDiameterMm": 41,
+        "caseMaterial": "steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Round extroverted design with chained crown cap and Arabic numeral layout.",
+      "status": "staged"
+    },
+    {
+      "id": "cartier-ronde-must-36",
+      "canonicalBrand": "Cartier",
+      "displayBrand": "Cartier",
+      "modelName": "Ronde Must de Cartier 36mm (Ref. WSRN0031)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cartier.com/en-us/watches/collections/ronde-de-cartier/ronde-must-de-cartier-watch-CRWSRN0031.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Circular Grained Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "cartier",
+        "modelName": "ronde must de cartier 36mm (ref. wsrn0031)",
+        "movement": "high-autonomy quartz",
+        "caseDiameterMm": 36,
+        "caseMaterial": "steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 70000,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pure circular Cartier classic with 24-hour inner track and blued sword hands.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-portugieser-chronograph",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Portugieser Chronograph 41 (Ref. IW371605)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/portugieser/iw371605-portugieser-chronograph.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver-Plated Dial / Blue Hands"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "portugieser chronograph 41 (ref. iw371605)",
+        "movement": "automatic calibre 69355",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 46,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Timeless marine precision instrument with clean open column-wheel chronograph.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-portugieser-automatic-40",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Portugieser Automatic 40 (Ref. IW358304)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/portugieser/iw358304-portugieser-automatic-40.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver-Plated Dial / Blue Alligator"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "portugieser automatic 40 (ref. iw358304)",
+        "movement": "automatic calibre 82200",
+        "caseDiameterMm": 40.4,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Compact interpretation of the legendary 1939 Reference 325 marine watch.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-big-pilots-watch-43",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Big Pilot's Watch 43 (Ref. IW329301)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/pilot-watches/iw329301-big-pilots-watch-43.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Dial / Brown Calfskin Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "big pilot's watch 43 (ref. iw329301)",
+        "movement": "automatic calibre 82100",
+        "caseDiameterMm": 43,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ergonomic 43mm Big Pilot with oversized conical onion crown and Pellaton winding.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-pilots-watch-chronograph-41",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Pilot's Watch Chronograph 41 (Ref. IW388102)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/pilot-watches/iw388102-pilots-watch-chronograph-41.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Blue Dial / Steel Bracelet / EasX-CHANGE"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "pilot's watch chronograph 41 (ref. iw388102)",
+        "movement": "automatic calibre 69385",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 46,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-performance aviator cockpit chronograph with day-date display.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-pilots-watch-mark-xx",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Pilot's Watch Mark XX (Ref. IW328201)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/pilot-watches/iw328201-pilots-watch-mark-xx.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Dial / 120h Power Reserve"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "pilot's watch mark xx (ref. iw328201)",
+        "movement": "automatic calibre 32111",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 120,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Successor to the historic 1948 Mark 11 navigator watch for the British RAF.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-portofino-automatic-40",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Portofino Automatic 40 (Ref. IW356501)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/portofino/iw356501-portofino-automatic.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver-Plated Dial / Black Alligator Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "portofino automatic 40 (ref. iw356501)",
+        "movement": "automatic calibre 35111",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic Mediterranean Riviera elegance with Roman numerals and feuille hands.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-portofino-chronograph-39",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Portofino Chronograph 39 (Ref. IW391404)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/portofino/iw391404-portofino-chronograph-39.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Green Dial / Brown Alligator Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "portofino chronograph 39 (ref. iw391404)",
+        "movement": "automatic calibre 79350",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 44,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Discreet dress chronograph with elegant leaf hands and convex sapphire glass.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-ingenieur-automatic-40",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Ingenieur Automatic 40 (Ref. IW328901)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/ingenieur/iw328901-ingenieur-automatic-40.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Grid Dial / Integrated Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "ingenieur automatic 40 (ref. iw328901)",
+        "movement": "automatic calibre 32111",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 120,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gérald Genta 1976 Ingenieur SL revival featuring polygonal bezel with five screws.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-aquatimer-automatic",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Aquatimer Automatic (Ref. IW329001)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/aquatimer/iw329001-aquatimer-automatic.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Dial / Black Rubber Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "aquatimer automatic (ref. iw329001)",
+        "movement": "automatic calibre 30120",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Diver watch featuring the patented SafeDive internal/external rotating bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "iwc-portugieser-perpetual-calendar",
+      "canonicalBrand": "IWC",
+      "displayBrand": "IWC",
+      "modelName": "Portugieser Perpetual Calendar 44 (Ref. IW503302)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.iwc.com/en/watch-collections/portugieser/iw503302-portugieser-perpetual-calendar.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "18 ct 5N Gold / Double Moon Phase"
+      ],
+      "collectedAttributes": {
+        "brand": "iwc",
+        "modelName": "portugieser perpetual calendar 44 (ref. iw503302)",
+        "movement": "automatic calibre 52610",
+        "caseDiameterMm": 44.2,
+        "caseMaterial": "18 ct 5n gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 168,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kurt Klaus grand complication with mechanical four-digit year and 7-day power reserve.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-reverso-classic-monoface",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Reverso Classic Monoface Small Seconds (Ref. Q3858522)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/reverso/reverso-classic/reverso-classic-monoface-small-seconds-stainless-steel-q3858522"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Steel / Fagliano Collection Calfskin"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "reverso classic monoface small seconds (ref. q3858522)",
+        "movement": "manual-wind calibre 822",
+        "caseDiameterMm": 45.6,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Art Deco 1931 polo icon with reversible protective swivel case.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-reverso-tribute-monoface",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Reverso Tribute Monoface Small Seconds (Ref. Q397846J)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/reverso/reverso-tribute/reverso-tribute-monoface-small-seconds-stainless-steel-q397846j"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Sunray Burgundy Red Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "reverso tribute monoface small seconds (ref. q397846j)",
+        "movement": "manual-wind calibre 822",
+        "caseDiameterMm": 45.6,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vibrant sunburst dial tribute with Casa Fagliano leather craftsmanship.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-reverso-tribute-duoface-calendar",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Reverso Tribute Duoface Calendar (Ref. Q3918420)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/reverso/reverso-tribute/reverso-tribute-duoface-calendar-stainless-steel-q3918420"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Dual Face / Complete Calendar"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "reverso tribute duoface calendar (ref. q3918420)",
+        "movement": "manual-wind calibre 853",
+        "caseDiameterMm": 49.4,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 42,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Two dials showing two timezones driven by a single mechanical movement.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-master-ultra-thin-moon",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Master Ultra Thin Moon 39mm (Ref. Q1368430)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/master-ultra-thin/master-ultra-thin-moon-stainless-steel-q1368430"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Sunray Dial / Alligator Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "master ultra thin moon 39mm (ref. q1368430)",
+        "movement": "automatic calibre 925",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Poetic moon phase complication nestled in an ultra-slim 9.3mm case.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-master-ultra-thin-reserve-de-marche",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Master Ultra Thin Reserve de Marche (Ref. Q1378420)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/master-ultra-thin/master-ultra-thin-reserve-de-marche-stainless-steel-q1378420"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Eggshell Dial / Power Reserve Indicator"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "master ultra thin reserve de marche (ref. q1378420)",
+        "movement": "automatic calibre 938",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 43,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slim balanced dress watch featuring power reserve and pointer date sub-dials.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-master-control-date",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Master Control Date 40mm (Ref. Q4018420)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/master-control/master-control-date-stainless-steel-q4018420"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silvered Sunray Dial / Novonappa Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "master control date 40mm (ref. q4018420)",
+        "movement": "automatic calibre 899",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subjected to the rigorous Jaeger-LeCoultre 1000 Hours Control certification.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-master-control-chronograph-calendar",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Master Control Chronograph Calendar (Ref. Q4138420)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/master-control/master-control-chronograph-calendar-stainless-steel-q4138420"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Chronograph / Triple Calendar / Moon Phase"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "master control chronograph calendar (ref. q4138420)",
+        "movement": "automatic calibre 759",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 65,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Combined column-wheel chronograph with complete calendar and moon phase.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-polaris-date",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Polaris Date 42mm (Ref. Q9068670)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/polaris/polaris-date-stainless-steel-q9068670"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Lacquered Dial / Clous de Paris Rubber"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "polaris date 42mm (ref. q9068670)",
+        "movement": "automatic calibre 899",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sporty diver tribute to the legendary 1968 Memovox Polaris with rotating inner bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-polaris-chronograph",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Polaris Chronograph 42mm (Ref. Q9028671)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/polaris/polaris-chronograph-stainless-steel-q9028671"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Blue Lacquered Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "polaris chronograph 42mm (ref. q9028671)",
+        "movement": "automatic calibre 761",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 65,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual-register sports chronograph with twin crowns and graduated lacquer dial.",
+      "status": "staged"
+    },
+    {
+      "id": "jlc-polaris-mariner-memovox",
+      "canonicalBrand": "Jaeger-LeCoultre",
+      "displayBrand": "Jaeger-LeCoultre",
+      "modelName": "Polaris Mariner Memovox 42mm (Ref. Q9038180)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jaeger-lecoultre.com/us-en/watches/polaris/polaris-mariner-memovox-stainless-steel-q9038180"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "ISO 6425 Diving Alarm Watch"
+      ],
+      "collectedAttributes": {
+        "brand": "jaeger-lecoultre",
+        "modelName": "polaris mariner memovox 42mm (ref. q9038180)",
+        "movement": "automatic calibre 956",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 45,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Audible underwater mechanical alarm watch complying with ISO 6425 diving norms.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-sbga211-snowflake",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Heritage Spring Drive 'Snowflake' (Ref. SBGA211)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/sbga211"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "High-Intensity Titanium / Snowflake Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "heritage spring drive 'snowflake' (ref. sbga211)",
+        "movement": "spring drive calibre 9r65",
+        "caseDiameterMm": 41,
+        "caseMaterial": "high-intensity titanium",
+        "waterResistanceM": 100,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Celebrated textured dial capturing the freshly fallen snow on the Jonen mountain range.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-slgh005-white-birch",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Evolution 9 Hi-Beat 36000 'White Birch' (Ref. SLGH005)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/slgh005"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "White Birch Dial / Dual Impulse Escapement"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "evolution 9 hi-beat 36000 'white birch' (ref. slgh005)",
+        "movement": "automatic hi-beat 9sa5",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "GPHG Men's Watch award winner capturing white birch forests of Shizukuishi.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-slga009-night-birch",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Evolution 9 Spring Drive 5 Days (Ref. SLGA009)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/slga009"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Shinshu White Birch / 5 Days Power Reserve"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "evolution 9 spring drive 5 days (ref. slga009)",
+        "movement": "spring drive calibre 9ra2",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 120,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Thin 5-day Spring Drive calibre with thermal sensor and +/- 10 seconds per month accuracy.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-sbge201",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Sport Spring Drive GMT (Ref. SBGE201)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/sbge201"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Black Sapphire Rotating Bezel / GMT"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "sport spring drive gmt (ref. sbge201)",
+        "movement": "spring drive calibre 9r66",
+        "caseDiameterMm": 44,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-spec travel tool watch with seamless gliding Spring Drive GMT hand.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-sbgw231",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Elegance Collection Manual-Wind (Ref. SBGW231)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/sbgw231"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Cream Dial / Box-Shaped Sapphire"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "elegance collection manual-wind (ref. sbgw231)",
+        "movement": "manual-wind calibre 9s64",
+        "caseDiameterMm": 37.3,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pure classical Japanese dress watch with Zaratsu polished surfaces and curved dial.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-sbga413-shunbun",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Heritage Spring Drive 'Shunbun' (Ref. SBGA413)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/sbga413"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Hana-Ikada Pink Dial / Titanium Case"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "heritage spring drive 'shunbun' (ref. sbga413)",
+        "movement": "spring drive calibre 9r65",
+        "caseDiameterMm": 40,
+        "caseMaterial": "high-intensity titanium",
+        "waterResistanceM": 100,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spring equinox dial representing sakura cherry blossoms floating on water.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-sbga461",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Sport Collection Diver 200M (Ref. SBGA461)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/sbga461"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Black Dial / Unidirectional Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "sport collection diver 200m (ref. sbga461)",
+        "movement": "spring drive calibre 9r65",
+        "caseDiameterMm": 44.2,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Professional saturation diver watch with Spring Drive shock resistance.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-sbgc249",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Evolution 9 Chronograph 15th Anniversary (Ref. SBGC249)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/sbgc249"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Deep Blue Dial / Titanium Case"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "evolution 9 chronograph 15th anniversary (ref. sbgc249)",
+        "movement": "spring drive calibre 9r96",
+        "caseDiameterMm": 45.3,
+        "caseMaterial": "high-intensity titanium",
+        "waterResistanceM": 100,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Specially adjusted Spring Drive chronograph achieving +/- 10 seconds monthly accuracy.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-sbgp011",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Heritage Quartz 9F85 40mm (Ref. SBGP011)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/sbgp011"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Black Dial / Independent Hour Hand"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "heritage quartz 9f85 40mm (ref. sbgp011)",
+        "movement": "calibre 9f85 quartz",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 26000,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-accuracy quartz watch accurate to +/- 10 seconds per year with twin-pulse motor.",
+      "status": "staged"
+    },
+    {
+      "id": "grand-seiko-sbgy007-omiwatari",
+      "canonicalBrand": "Grand Seiko",
+      "displayBrand": "Grand Seiko",
+      "modelName": "Elegance Spring Drive 'Omiwatari' (Ref. SBGY007)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.grand-seiko.com/us-en/collections/sbgy007"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "JP",
+      "lifecycle": "active",
+      "variants": [
+        "Ice Blue Textured Dial / Manual Wind"
+      ],
+      "collectedAttributes": {
+        "brand": "grand seiko",
+        "modelName": "elegance spring drive 'omiwatari' (ref. sbgy007)",
+        "movement": "manual-wind spring drive 9r31",
+        "caseDiameterMm": 38.5,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Captures the frozen ridges on Lake Suwa formed when the Shinto gods cross the lake.",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-black-bay-58",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Black Bay 58 39mm (Ref. M79030N)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/black-bay-58/m79030n-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Gilt Accents / Rivet Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "black bay 58 39mm (ref. m79030n)",
+        "movement": "automatic manufacture mt5402",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Proportions honoring Tudor's first 200m diver watch from 1958 (ref. 7924).",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-black-bay-54",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Black Bay 54 37mm (Ref. M79000N)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/black-bay-54/m79000n-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Clean Unmarked Bezel / T-fit Clasp"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "black bay 54 37mm (ref. m79000n)",
+        "movement": "automatic manufacture mt5400",
+        "caseDiameterMm": 37,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pure vintage 37mm tribute to the very first Tudor Submariner ref. 7922 from 1954.",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-black-bay-master-chronometer",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Black Bay Master Chronometer 41mm (Ref. M7941A1A0RU)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/black-bay/m7941a1a0ru-0003"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Burgundy Bezel / 5-Link Jubilee Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "black bay master chronometer 41mm (ref. m7941a1a0ru)",
+        "movement": "automatic manufacture mt5602-u",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "METAS-certified Master Chronometer resistant to 15,000 gauss magnetic fields.",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-pelagos-39",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Pelagos 39 Titanium (Ref. M25407N)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/pelagos/m25407n-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Grade 2 Titanium / Sunray Satin Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "pelagos 39 titanium (ref. m25407n)",
+        "movement": "automatic manufacture mt5400",
+        "caseDiameterMm": 39,
+        "caseMaterial": "grade 2 titanium",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-lightweight grade 2 titanium technical diver watch with luminous ceramic bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-pelagos-fxd",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Pelagos FXD Marine Nationale (Ref. M25707B)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/pelagos-fxd/m25707b-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Navy Blue / Fixed Strap Bars"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "pelagos fxd marine nationale (ref. m25707b)",
+        "movement": "automatic manufacture mt5602",
+        "caseDiameterMm": 42,
+        "caseMaterial": "titanium",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Developed in collaboration with the French Navy's combat swimmers (Commando Hubert).",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-black-bay-chrono",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Black Bay Chrono 41mm (Ref. M79360N)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/black-bay-chrono/m79360n-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Panda Opaline Dial / Fixed Steel Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "black bay chrono 41mm (ref. m79360n)",
+        "movement": "automatic manufacture mt5813",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-spec column-wheel chronograph calibre derived from Breitling's B01.",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-black-bay-pro",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Black Bay Pro GMT 39mm (Ref. M79470)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/black-bay-pro/m79470-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Fixed 24H Bezel / Yellow Snowflake GMT Hand"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "black bay pro gmt 39mm (ref. m79470)",
+        "movement": "automatic manufacture mt5652",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Explorer-inspired GMT adventure watch with integrated local jump-hour.",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-ranger",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Ranger 39mm (Ref. M79950)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/ranger/m79950-0001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black Dial / Arabic Numerals"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "ranger 39mm (ref. m79950)",
+        "movement": "automatic manufacture mt5402",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Expedition tool watch marking the 70th anniversary of the British North Greenland Expedition.",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-royal-41",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Tudor Royal 41mm (Ref. M28600)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/tudor-royal/m28600-0005"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Notched Bezel / Integrated Bracelet / Blue Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "tudor royal 41mm (ref. m28600)",
+        "movement": "automatic calibre t603",
+        "caseDiameterMm": 41,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 38,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sport-chic integrated bracelet luxury watch with day and date indication.",
+      "status": "staged"
+    },
+    {
+      "id": "tudor-1926-39",
+      "canonicalBrand": "Tudor",
+      "displayBrand": "Tudor",
+      "modelName": "Tudor 1926 39mm (Ref. M91550)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tudorwatch.com/en/watches/1926/m91550-0005"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Embossed Waffle Dial / Blue Numerals"
+      ],
+      "collectedAttributes": {
+        "brand": "tudor",
+        "modelName": "tudor 1926 39mm (ref. m91550)",
+        "movement": "automatic calibre t601",
+        "caseDiameterMm": 39,
+        "caseMaterial": "316l stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 38,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic dress watch named after the founding year of 'The Tudor' brand.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-navitimer-b01",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Navitimer B01 Chronograph 43",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/navitimer/navitimer-b01-chronograph-43/AB0138241G1P1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Dial / Circular Slide Rule / Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "navitimer b01 chronograph 43",
+        "movement": "automatic manufacture b01",
+        "caseDiameterMm": 43,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The definitive pilot's chronograph equipped with circular slide rule flight computer.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-navitimer-automatic-41",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Navitimer Automatic 41",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/navitimer/navitimer-automatic-41/A17326211G1P1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Beaded Bezel / Silver Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "navitimer automatic 41",
+        "movement": "automatic breitling 17",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 38,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean non-chronograph interpretation of the legendary Navitimer beaded profile.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-chronomat-b01-42",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Chronomat B01 42",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/chronomat/chronomat-b01-42/AB0134101B1A1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Rouleaux Bracelet / Interchangeable Rider Tabs"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "chronomat b01 42",
+        "movement": "automatic manufacture b01",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Mechanical icon that revived Swiss watchmaking in 1984 with signature Rouleaux bracelet.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-superocean-automatic-42",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Superocean Automatic 42",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/superocean/superocean-automatic-42/A17375211B1S1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Ceramic Bezel / Square Minute Hand"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "superocean automatic 42",
+        "movement": "automatic breitling 17",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 38,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Retro-modern tribute to the 1960s Slow Motion dive watch with high-contrast legibility.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-superocean-heritage-b20",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Superocean Heritage B20 Automatic 42",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/superocean-heritage/superocean-heritage-b20-automatic-42/AB2010121B1A1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Ceramic Bezel / Mesh Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "superocean heritage b20 automatic 42",
+        "movement": "automatic manufacture b20",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated tribute to the historic 1957 SuperOcean with Milanese mesh bracelet.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-premier-b01-chronograph-42",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Premier B01 Chronograph 42",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/premier/premier-b01-chronograph-42/AB0145221B1P1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Vintage Syringe Hands / Alligator Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "premier b01 chronograph 42",
+        "movement": "automatic manufacture b01",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dedicated to everyday elegance, reviving Willy Breitling's Premier line of the 1940s.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-top-time-b01",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Top Time B01 Chevrolet Corvette 41",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/top-time/top-time-b01-chevrolet-corvette/AB01761A1A1X1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Red Corvette Dial / Squircle Sub-Dials"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "top time b01 chevrolet corvette 41",
+        "movement": "automatic manufacture b01",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic car collaboration celebrating American muscle design and 1960s motoring.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-avenger-automatic-42",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Avenger Automatic 42",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/avenger/avenger-automatic-42/A17328101B1A1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Grip Pattern Bezel / Military Leather"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "avenger automatic 42",
+        "movement": "automatic breitling 17",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 38,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Uncompromising aviation action watch engineered for fighter jet cockpit duty.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-avenger-chronograph-44",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Avenger Chronograph 44",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/avenger/avenger-chronograph-44/A13317101B1A1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Rider Tabs / Chronograph Pushers"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "avenger chronograph 44",
+        "movement": "automatic calibre 13",
+        "caseDiameterMm": 44,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 48,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Robust high-impact shock-resistant chronograph built for extreme aerospace missions.",
+      "status": "staged"
+    },
+    {
+      "id": "breitling-endurance-pro",
+      "canonicalBrand": "Breitling",
+      "displayBrand": "Breitling",
+      "modelName": "Professional Endurance Pro 44",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.breitling.com/us-en/watches/professional/endurance-pro/X82310D91B1S1/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Breitlight Case / Pulsometer Scale"
+      ],
+      "collectedAttributes": {
+        "brand": "breitling",
+        "modelName": "professional endurance pro 44",
+        "movement": "superquartz calibre 82",
+        "caseDiameterMm": 44,
+        "caseMaterial": "breitlight polymer",
+        "waterResistanceM": 100,
+        "powerReserveHours": 35000,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultralight athletic luxury sports chronograph made of proprietary Breitlight polymer.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-calatrava-6119g",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Calatrava Small Seconds 39mm (Ref. 6119G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/calatrava/6119G-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "White Gold / Clous de Paris Hobnail Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "calatrava small seconds 39mm (ref. 6119g)",
+        "movement": "manual-wind calibre 30-255 ps",
+        "caseDiameterMm": 39,
+        "caseMaterial": "white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 65,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pure essence of the round dress watch with guilloché hobnail bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-calatrava-5227g",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Calatrava Date 39mm (Ref. 5227G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/calatrava/5227G-010"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Officer Case with Invisible Hinged Dust Cover"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "calatrava date 39mm (ref. 5227g)",
+        "movement": "automatic calibre 26-330 s c",
+        "caseDiameterMm": 39,
+        "caseMaterial": "white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 45,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Officer's style case back with an invisibly hinged dust cover in solid gold.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-complications-annual-calendar-5396g",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Complications Annual Calendar 40mm (Ref. 5396G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/complications/5396G-017"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Twin Day/Month In-Line Apertures / Moon Phase"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "complications annual calendar 40mm (ref. 5396g)",
+        "movement": "automatic calibre 26-330 s qa lu 24h",
+        "caseDiameterMm": 38.5,
+        "caseMaterial": "white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 45,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Patented annual calendar complication requiring adjustment only once a year on March 1st.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-world-time-5230p",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Complications World Time 38.5mm (Ref. 5230P)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/complications/5230P-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Platinum / Hand-Guilloché Blue Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "complications world time 38.5mm (ref. 5230p)",
+        "movement": "automatic micro-rotor 240 hu",
+        "caseDiameterMm": 38.5,
+        "caseMaterial": "platinum",
+        "waterResistanceM": 30,
+        "powerReserveHours": 48,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Louis Cottier mechanism simultaneously displaying 24 time zones across the globe.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-chronograph-5172g",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Complications Chronograph 41mm (Ref. 5172G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/complications/5172G-010"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Salmon Opaline Dial / Triple Tiered Lugs"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "complications chronograph 41mm (ref. 5172g)",
+        "movement": "manual-wind calibre ch 29-535 ps",
+        "caseDiameterMm": 41,
+        "caseMaterial": "white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 65,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Manufacture column-wheel manual-wind chronograph with six patented innovations.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-aquanaut-5167a",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Aquanaut Date 40.8mm (Ref. 5167A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/aquanaut/5167A-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Stainless Steel / Tropical Composite Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "aquanaut date 40.8mm (ref. 5167a)",
+        "movement": "automatic calibre 26-330 s c",
+        "caseDiameterMm": 40.8,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 120,
+        "powerReserveHours": 45,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern sporty luxury watch featuring rounded octagonal case and embossed checkerboard dial.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-aquanaut-travel-time-5164g",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Aquanaut Travel Time 40.8mm (Ref. 5164G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/aquanaut/5164G-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "White Gold / Blue-Grey Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "aquanaut travel time 40.8mm (ref. 5164g)",
+        "movement": "automatic calibre 26-330 s c fus",
+        "caseDiameterMm": 40.8,
+        "caseMaterial": "white gold",
+        "waterResistanceM": 120,
+        "powerReserveHours": 45,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual timezone mechanism with local and home day/night indicators.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-nautilus-5811-1g",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Nautilus Date 41mm (Ref. 5811/1G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/nautilus/5811-1G-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Solid White Gold / Blue Sunburst Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "nautilus date 41mm (ref. 5811/1g)",
+        "movement": "automatic calibre 26-330 s c",
+        "caseDiameterMm": 41,
+        "caseMaterial": "white gold",
+        "waterResistanceM": 120,
+        "powerReserveHours": 45,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Gérald Genta 1976 porthole masterpiece re-engineered in solid white gold with pull-out piece.",
+      "status": "staged"
+    },
+    {
+      "id": "patek-golden-ellipse-5738r",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Golden Ellipse 34.5mm (Ref. 5738R)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/golden-ellipse/5738R-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold / Black Sunburst Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "golden ellipse 34.5mm (ref. 5738r)",
+        "movement": "automatic micro-rotor 240",
+        "caseDiameterMm": 34.5,
+        "caseMaterial": "rose gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 48,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Harmonious proportions governed by the ancient divine golden ratio (1 / 1.6181).",
+      "status": "staged"
+    },
+    {
+      "id": "patek-perpetual-calendar-5327g",
+      "canonicalBrand": "Patek Philippe",
+      "displayBrand": "Patek Philippe",
+      "modelName": "Grand Complications Perpetual Calendar (Ref. 5327G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.patek.com/en/collection/grand-complications/5327G-001"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Royal Blue Sunburst Dial / Breguet Numerals"
+      ],
+      "collectedAttributes": {
+        "brand": "patek philippe",
+        "modelName": "grand complications perpetual calendar (ref. 5327g)",
+        "movement": "automatic ultra-thin calibre 240 q",
+        "caseDiameterMm": 39,
+        "caseMaterial": "white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 48,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-thin perpetual calendar automatically accounting for leap years until 2100.",
+      "status": "staged"
+    },
+    {
+      "id": "ap-royal-oak-jumbo-16202st",
+      "canonicalBrand": "Audemars Piguet",
+      "displayBrand": "Audemars Piguet",
+      "modelName": "Royal Oak Jumbo Extra-Thin 39mm (Ref. 16202ST)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak/16202ST.OO.1240ST.02.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Stainless Steel / Petite Tapisserie Bleu Nuit 50"
+      ],
+      "collectedAttributes": {
+        "brand": "audemars piguet",
+        "modelName": "royal oak jumbo extra-thin 39mm (ref. 16202st)",
+        "movement": "automatic calibre 7121",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 55,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Direct descendant of Gérald Genta's original 1972 luxury stainless steel revolution.",
+      "status": "staged"
+    },
+    {
+      "id": "ap-royal-oak-selfwinding-41",
+      "canonicalBrand": "Audemars Piguet",
+      "displayBrand": "Audemars Piguet",
+      "modelName": "Royal Oak Selfwinding 41mm (Ref. 15510ST)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak/15510ST.OO.1320ST.06.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Grande Tapisserie Dial / Integrated Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "audemars piguet",
+        "modelName": "royal oak selfwinding 41mm (ref. 15510st)",
+        "movement": "automatic calibre 4302",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary flagship 41mm Royal Oak with high-frequency 4Hz calibre 4302.",
+      "status": "staged"
+    },
+    {
+      "id": "ap-royal-oak-chronograph-41",
+      "canonicalBrand": "Audemars Piguet",
+      "displayBrand": "Audemars Piguet",
+      "modelName": "Royal Oak Chronograph 41mm (Ref. 26240ST)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak/26240ST.OO.1320ST.05.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Integrated Flyback Chronograph"
+      ],
+      "collectedAttributes": {
+        "brand": "audemars piguet",
+        "modelName": "royal oak chronograph 41mm (ref. 26240st)",
+        "movement": "automatic calibre 4401",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 50,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Integrated flyback column-wheel chronograph with instant-jump date.",
+      "status": "staged"
+    },
+    {
+      "id": "ap-royal-oak-offshore-diver",
+      "canonicalBrand": "Audemars Piguet",
+      "displayBrand": "Audemars Piguet",
+      "modelName": "Royal Oak Offshore Diver 42mm (Ref. 15720ST)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak-offshore/15720ST.OO.A027CA.01.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Rotating Inner Diving Scale / Blue Rubber"
+      ],
+      "collectedAttributes": {
+        "brand": "audemars piguet",
+        "modelName": "royal oak offshore diver 42mm (ref. 15720st)",
+        "movement": "automatic calibre 4308",
+        "caseDiameterMm": 42,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Extreme 300m waterproof sports instrument with inner rotating bezel crown at 10 o'clock.",
+      "status": "staged"
+    },
+    {
+      "id": "ap-royal-oak-offshore-chronograph-43",
+      "canonicalBrand": "Audemars Piguet",
+      "displayBrand": "Audemars Piguet",
+      "modelName": "Royal Oak Offshore Chronograph 43mm (Ref. 26420SO)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak-offshore/26420SO.OO.A002CA.01.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Ceramic Bezel / Mega Tapisserie"
+      ],
+      "collectedAttributes": {
+        "brand": "audemars piguet",
+        "modelName": "royal oak offshore chronograph 43mm (ref. 26420so)",
+        "movement": "automatic calibre 4401",
+        "caseDiameterMm": 43,
+        "caseMaterial": "stainless steel / black ceramic",
+        "waterResistanceM": 100,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-octane masculine sports architecture with Méga Tapisserie dial.",
+      "status": "staged"
+    },
+    {
+      "id": "ap-code-1159-selfwinding",
+      "canonicalBrand": "Audemars Piguet",
+      "displayBrand": "Audemars Piguet",
+      "modelName": "Code 11.59 Selfwinding 41mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.audemarspiguet.com/com/en/watch-collection/code-1159/15210ST.OO.A348KB.01.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Octagonal Middle Case / Smoked Blue Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "audemars piguet",
+        "modelName": "code 11.59 selfwinding 41mm",
+        "movement": "automatic calibre 4302",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Complex case architecture blending octagonal geometry and double-curved glareproofed sapphire.",
+      "status": "staged"
+    },
+    {
+      "id": "ap-code-1159-chronograph",
+      "canonicalBrand": "Audemars Piguet",
+      "displayBrand": "Audemars Piguet",
+      "modelName": "Code 11.59 Chronograph 41mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.audemarspiguet.com/com/en/watch-collection/code-1159/26393ST.OO.A056KB.01.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Flyback Chronograph / Ceramic Middle Case"
+      ],
+      "collectedAttributes": {
+        "brand": "audemars piguet",
+        "modelName": "code 11.59 chronograph 41mm",
+        "movement": "automatic calibre 4401",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 70,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hollowed lugs welded to the bezel, revealing exquisite satin-brushed case finishes.",
+      "status": "staged"
+    },
+    {
+      "id": "ap-royal-oak-concept-tourbillon",
+      "canonicalBrand": "Audemars Piguet",
+      "displayBrand": "Audemars Piguet",
+      "modelName": "Royal Oak Concept Flying Tourbillon GMT",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak-concept/26589IO.OO.D002CA.01.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Sandblasted Titanium / Green Ceramic"
+      ],
+      "collectedAttributes": {
+        "brand": "audemars piguet",
+        "modelName": "royal oak concept flying tourbillon gmt",
+        "movement": "manual-wind calibre 2954",
+        "caseDiameterMm": 44,
+        "caseMaterial": "titanium / ceramic",
+        "waterResistanceM": 100,
+        "powerReserveHours": 237,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Avant-garde haute horlogerie fusion of flying tourbillon and 10-day power reserve.",
+      "status": "staged"
+    },
+    {
+      "id": "vc-overseas-self-winding",
+      "canonicalBrand": "Vacheron Constantin",
+      "displayBrand": "Vacheron Constantin",
+      "modelName": "Overseas Self-Winding 41mm (Ref. 4500V/110A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vacheron-constantin.com/ww/en/watches/overseas/4500v-110a-b128.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Blue Lacquered Dial / Interchangeable Straps"
+      ],
+      "collectedAttributes": {
+        "brand": "vacheron constantin",
+        "modelName": "overseas self-winding 41mm (ref. 4500v/110a)",
+        "movement": "automatic calibre 5100",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 150,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Maltese cross bezel luxury travel sports watch bearing the prestigious Hallmark of Geneva.",
+      "status": "staged"
+    },
+    {
+      "id": "vc-overseas-chronograph",
+      "canonicalBrand": "Vacheron Constantin",
+      "displayBrand": "Vacheron Constantin",
+      "modelName": "Overseas Chronograph 42.5mm (Ref. 5500V/110A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vacheron-constantin.com/ww/en/watches/overseas/5500v-110a-b148.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Panda Dial / Column Wheel"
+      ],
+      "collectedAttributes": {
+        "brand": "vacheron constantin",
+        "modelName": "overseas chronograph 42.5mm (ref. 5500v/110a)",
+        "movement": "automatic calibre 5200",
+        "caseDiameterMm": 42.5,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 150,
+        "powerReserveHours": 52,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Manufacture column-wheel chronograph with 22K gold oscillating weight adorned with wind rose.",
+      "status": "staged"
+    },
+    {
+      "id": "vc-overseas-dual-time",
+      "canonicalBrand": "Vacheron Constantin",
+      "displayBrand": "Vacheron Constantin",
+      "modelName": "Overseas Dual Time 41mm (Ref. 7900V/110A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vacheron-constantin.com/ww/en/watches/overseas/7900v-110a-b334.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "AM/PM Indicator / Pointer Date"
+      ],
+      "collectedAttributes": {
+        "brand": "vacheron constantin",
+        "modelName": "overseas dual time 41mm (ref. 7900v/110a)",
+        "movement": "automatic calibre 5110 dt",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 150,
+        "powerReserveHours": 60,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Effortless globetrotting companion tracking two time zones and day/night synchronization.",
+      "status": "staged"
+    },
+    {
+      "id": "vc-patrimony-manual-winding",
+      "canonicalBrand": "Vacheron Constantin",
+      "displayBrand": "Vacheron Constantin",
+      "modelName": "Patrimony Manual-Winding 40mm (Ref. 81180/000G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vacheron-constantin.com/ww/en/watches/patrimony/81180-000g-9117.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "18K White Gold / Opaline Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "vacheron constantin",
+        "modelName": "patrimony manual-winding 40mm (ref. 81180/000g)",
+        "movement": "manual-wind calibre 1400",
+        "caseDiameterMm": 40,
+        "caseMaterial": "18k white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 40,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist circular purity inspired by 1950s Vacheron Constantin designs; only 6.79mm slim.",
+      "status": "staged"
+    },
+    {
+      "id": "vc-patrimony-retrograde-day-date",
+      "canonicalBrand": "Vacheron Constantin",
+      "displayBrand": "Vacheron Constantin",
+      "modelName": "Patrimony Retrograde Day-Date 42.5mm (Ref. 4010U/000G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vacheron-constantin.com/ww/en/watches/patrimony/4010u-000g-h070.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Double Retrograde Display"
+      ],
+      "collectedAttributes": {
+        "brand": "vacheron constantin",
+        "modelName": "patrimony retrograde day-date 42.5mm (ref. 4010u/000g)",
+        "movement": "automatic calibre 2460 r31r7/3",
+        "caseDiameterMm": 42.5,
+        "caseMaterial": "18k white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 40,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual retrograde arcs displaying day and date with instantaneous flyback hands.",
+      "status": "staged"
+    },
+    {
+      "id": "vc-traditionnelle-complete-calendar",
+      "canonicalBrand": "Vacheron Constantin",
+      "displayBrand": "Vacheron Constantin",
+      "modelName": "Traditionnelle Complete Calendar 41mm (Ref. 4010T/000G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vacheron-constantin.com/ww/en/watches/traditionnelle/4010t-000g-b740.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Stepped Case / Fluted Caseback"
+      ],
+      "collectedAttributes": {
+        "brand": "vacheron constantin",
+        "modelName": "traditionnelle complete calendar 41mm (ref. 4010t/000g)",
+        "movement": "automatic calibre 2460 qcl/1",
+        "caseDiameterMm": 41,
+        "caseMaterial": "18k white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 40,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Genevan grand horological tradition with complete triple calendar and precision moon phase.",
+      "status": "staged"
+    },
+    {
+      "id": "vc-traditionnelle-manual-winding",
+      "canonicalBrand": "Vacheron Constantin",
+      "displayBrand": "Vacheron Constantin",
+      "modelName": "Traditionnelle Manual-Winding 38mm (Ref. 82172/000G)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vacheron-constantin.com/ww/en/watches/traditionnelle/82172-000g-9383.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Small Seconds at 6 / Dauphine Hands"
+      ],
+      "collectedAttributes": {
+        "brand": "vacheron constantin",
+        "modelName": "traditionnelle manual-winding 38mm (ref. 82172/000g)",
+        "movement": "manual-wind calibre 4400 as",
+        "caseDiameterMm": 38,
+        "caseMaterial": "18k white gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 65,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic Genevan watchmaking art with railway minute track and small seconds at 6.",
+      "status": "staged"
+    },
+    {
+      "id": "vc-historiques-american-1921",
+      "canonicalBrand": "Vacheron Constantin",
+      "displayBrand": "Vacheron Constantin",
+      "modelName": "Historiques American 1921 40mm (Ref. 82035/000R)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.vacheron-constantin.com/ww/en/watches/historiques/82035-000r-9359.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "18K 5N Pink Gold / Diagonal Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "vacheron constantin",
+        "modelName": "historiques american 1921 40mm (ref. 82035/000r)",
+        "movement": "manual-wind calibre 4400 as",
+        "caseDiameterMm": 40,
+        "caseMaterial": "18k 5n pink gold",
+        "waterResistanceM": 30,
+        "powerReserveHours": 65,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Roaring Twenties driving watch with 45-degree angled dial allowing time check without turning wrist.",
+      "status": "staged"
+    },
+    {
+      "id": "longines-spirit-zulu-time",
+      "canonicalBrand": "Longines",
+      "displayBrand": "Longines",
+      "modelName": "Spirit Zulu Time GMT 39mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.longines.com/en-us/p/watch-longines-spirit-l3-802-4-63-6"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Anthracite Dial / Green Ceramic Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "longines",
+        "modelName": "spirit zulu time gmt 39mm",
+        "movement": "automatic calibre l844.4 cosc",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "COSC-certified true flyer GMT with ceramic 24-hour bezel honoring 1925 dual-time heritage.",
+      "status": "staged"
+    },
+    {
+      "id": "longines-hydroconquest-gmt",
+      "canonicalBrand": "Longines",
+      "displayBrand": "Longines",
+      "modelName": "HydroConquest GMT 41mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.longines.com/en-us/p/watch-hydroconquest-l3-790-4-96-6"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Sunray Blue Dial / Ceramic Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "longines",
+        "modelName": "hydroconquest gmt 41mm",
+        "movement": "automatic calibre l844.5",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "300m professional dive watch paired with an independently adjustable 24-hour GMT hand.",
+      "status": "staged"
+    },
+    {
+      "id": "longines-legend-diver-39",
+      "canonicalBrand": "Longines",
+      "displayBrand": "Longines",
+      "modelName": "Legend Diver 39mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.longines.com/en-us/p/watch-longines-legend-diver-watch-l3-764-4-50-6"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "No-Date Black Lacquer / Super-Compressor Style"
+      ],
+      "collectedAttributes": {
+        "brand": "longines",
+        "modelName": "legend diver 39mm",
+        "movement": "automatic calibre l888.6 cosc",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic 1959 super-compressor diver reimagined in 39mm no-date format with internal bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "longines-master-collection-moonphase",
+      "canonicalBrand": "Longines",
+      "displayBrand": "Longines",
+      "modelName": "Master Collection Moonphase 40mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.longines.com/en-us/p/watch-the-longines-master-collection-l2-673-4-78-3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Barleycorn Dial / Alligator Strap"
+      ],
+      "collectedAttributes": {
+        "brand": "longines",
+        "modelName": "master collection moonphase 40mm",
+        "movement": "automatic calibre l687",
+        "caseDiameterMm": 40,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 66,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Triple calendar chronograph with moon phase indicator on silver barleycorn dial.",
+      "status": "staged"
+    },
+    {
+      "id": "longines-ultra-chron",
+      "canonicalBrand": "Longines",
+      "displayBrand": "Longines",
+      "modelName": "Ultra-Chron High-Frequency Diver 43mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.longines.com/en-us/p/watch-longines-ultra-chron-l2-836-4-52-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Cushion Case / High-Frequency 5Hz"
+      ],
+      "collectedAttributes": {
+        "brand": "longines",
+        "modelName": "ultra-chron high-frequency diver 43mm",
+        "movement": "automatic calibre l836.6 timelab",
+        "caseDiameterMm": 43,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 52,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "TIMELAB ultra-chronometer certified beating at 36,000 vibrations per hour (5Hz).",
+      "status": "staged"
+    },
+    {
+      "id": "longines-conquest-41",
+      "canonicalBrand": "Longines",
+      "displayBrand": "Longines",
+      "modelName": "Conquest Automatic 41mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.longines.com/en-us/p/watch-conquest-l3-830-4-52-6"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Sunray Black Dial / Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "longines",
+        "modelName": "conquest automatic 41mm",
+        "movement": "automatic calibre l888.5",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern sporty elegance featuring silicon balance spring and crown protection.",
+      "status": "staged"
+    },
+    {
+      "id": "longines-heritage-classic-sector",
+      "canonicalBrand": "Longines",
+      "displayBrand": "Longines",
+      "modelName": "Heritage Classic Sector Dial 38.5mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.longines.com/en-us/p/watch-the-longines-heritage-classic-l2-828-4-73-0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Two-Tone Silver Dial / Blue Hands"
+      ],
+      "collectedAttributes": {
+        "brand": "longines",
+        "modelName": "heritage classic sector dial 38.5mm",
+        "movement": "automatic calibre l893",
+        "caseDiameterMm": 38.5,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 72,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Faithful 1930s Art Deco sector dial aesthetic with small seconds at 6.",
+      "status": "staged"
+    },
+    {
+      "id": "longines-flagship-heritage",
+      "canonicalBrand": "Longines",
+      "displayBrand": "Longines",
+      "modelName": "Flagship Heritage 38.5mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.longines.com/en-us/p/watch-flagship-heritage-l4-795-4-78-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Cream Dial / Gold Caravel Medallion Back"
+      ],
+      "collectedAttributes": {
+        "brand": "longines",
+        "modelName": "flagship heritage 38.5mm",
+        "movement": "automatic calibre l615",
+        "caseDiameterMm": 38.5,
+        "caseMaterial": "stainless steel",
+        "waterResistanceM": 30,
+        "powerReserveHours": 50,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic 1957 tribute featuring the historic caravel ship medallion in gold enamel.",
+      "status": "staged"
+    },
+    {
+      "id": "tag-heuer-carrera-glassbox",
+      "canonicalBrand": "TAG Heuer",
+      "displayBrand": "TAG Heuer",
+      "modelName": "Carrera Chronograph Glassbox 39mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-th20-00/CBS2210.FC6534.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Reverse Panda / Domed Glassbox Sapphire"
+      ],
+      "collectedAttributes": {
+        "brand": "tag heuer",
+        "modelName": "carrera chronograph glassbox 39mm",
+        "movement": "automatic th20-00",
+        "caseDiameterMm": 39,
+        "caseMaterial": "steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Jack Heuer Carrera 60th anniversary redesign with seamless curved tachymeter scale.",
+      "status": "staged"
+    },
+    {
+      "id": "tag-heuer-carrera-date-39",
+      "canonicalBrand": "TAG Heuer",
+      "displayBrand": "TAG Heuer",
+      "modelName": "Carrera Date 39mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-5/WBN2111.BA0639.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Sunray Dial / Steel Bracelet"
+      ],
+      "collectedAttributes": {
+        "brand": "tag heuer",
+        "modelName": "carrera date 39mm",
+        "movement": "automatic calibre 5",
+        "caseDiameterMm": 39,
+        "caseMaterial": "steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 38,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pure driver's watch with bold faceted lugs and optimal dial legibility.",
+      "status": "staged"
+    },
+    {
+      "id": "tag-heuer-monaco-calibre-11",
+      "canonicalBrand": "TAG Heuer",
+      "displayBrand": "TAG Heuer",
+      "modelName": "Monaco Chronograph Calibre 11 39mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW211P.FC6356.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Crown on Left / Steve McQueen Tribute"
+      ],
+      "collectedAttributes": {
+        "brand": "tag heuer",
+        "modelName": "monaco chronograph calibre 11 39mm",
+        "movement": "automatic calibre 11",
+        "caseDiameterMm": 39,
+        "caseMaterial": "steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 40,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Steve McQueen's square racing chronograph from the 1971 movie 'Le Mans'.",
+      "status": "staged"
+    },
+    {
+      "id": "tag-heuer-aquaracer-300",
+      "canonicalBrand": "TAG Heuer",
+      "displayBrand": "TAG Heuer",
+      "modelName": "Aquaracer Professional 300 Date 42mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/42-mm-th31-00/WBP5110.BA0013.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black Waved Dial / Ceramic Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "tag heuer",
+        "modelName": "aquaracer professional 300 date 42mm",
+        "movement": "automatic th31-00 cosc",
+        "caseDiameterMm": 42,
+        "caseMaterial": "steel",
+        "waterResistanceM": 300,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "COSC-certified manufacture diver with 12-sided ceramic rotating bezel.",
+      "status": "staged"
+    },
+    {
+      "id": "tag-heuer-aquaracer-200-solargraph",
+      "canonicalBrand": "TAG Heuer",
+      "displayBrand": "TAG Heuer",
+      "modelName": "Aquaracer Professional 200 Solargraph 40mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/40-mm-solargraph/WBP1112.FT6199.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Titanium / Solar-Powered Dial"
+      ],
+      "collectedAttributes": {
+        "brand": "tag heuer",
+        "modelName": "aquaracer professional 200 solargraph 40mm",
+        "movement": "solargraph quartz calibre th50-00",
+        "caseDiameterMm": 40,
+        "caseMaterial": "sandblasted grade 2 titanium",
+        "waterResistanceM": 200,
+        "powerReserveHours": 4320,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Solar-powered outdoor exploration watch charged by natural sunlight or artificial light.",
+      "status": "staged"
+    },
+    {
+      "id": "tag-heuer-formula-1-chronograph",
+      "canonicalBrand": "TAG Heuer",
+      "displayBrand": "TAG Heuer",
+      "modelName": "Formula 1 Chronograph 43mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.FT8024.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Black PVD Titanium Carbide Bezel"
+      ],
+      "collectedAttributes": {
+        "brand": "tag heuer",
+        "modelName": "formula 1 chronograph 43mm",
+        "movement": "quartz chronograph",
+        "caseDiameterMm": 43,
+        "caseMaterial": "steel",
+        "waterResistanceM": 200,
+        "powerReserveHours": 26000,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Motorsport-inspired high-speed timing instrument accurate to 1/10th of a second.",
+      "status": "staged"
+    },
+    {
+      "id": "tag-heuer-carrera-chronosprint",
+      "canonicalBrand": "TAG Heuer",
+      "displayBrand": "TAG Heuer",
+      "modelName": "Carrera Chronosprint x Porsche 42mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/42-mm-th20-08/CBS2011.FC6529.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Porsche 911 Acceleration Tribute"
+      ],
+      "collectedAttributes": {
+        "brand": "tag heuer",
+        "modelName": "carrera chronosprint x porsche 42mm",
+        "movement": "automatic calibre th20-08",
+        "caseDiameterMm": 42,
+        "caseMaterial": "steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Innovative deceleration chronograph celebrating the Porsche 911's 0-100 km/h acceleration.",
+      "status": "staged"
+    },
+    {
+      "id": "tag-heuer-autavia-flyback",
+      "canonicalBrand": "TAG Heuer",
+      "displayBrand": "TAG Heuer",
+      "modelName": "Autavia Chronometer Flyback Chronograph 42mm",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-autavia/42-mm-calibre-heuer02-cosc-flyback/CBE511A.FC8279.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "CH",
+      "lifecycle": "active",
+      "variants": [
+        "Bi-Directional Ceramic Bezel / Flyback"
+      ],
+      "collectedAttributes": {
+        "brand": "tag heuer",
+        "modelName": "autavia chronometer flyback chronograph 42mm",
+        "movement": "automatic heuer 02 cosc flyback",
+        "caseDiameterMm": 42,
+        "caseMaterial": "steel",
+        "waterResistanceM": 100,
+        "powerReserveHours": 80,
+        "crystal": "sapphire"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "COSC-certified flyback chronograph honoring automotive and aviation dashboards.",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Audemars Piguet",
+      "leafKey": "watches",
+      "reason": "Audemars Piguet catalog focuses strictly on 8 iconic Royal Oak, Offshore and Code 11.59 production families.",
+      "officialSourceUrl": "https://www.audemarspiguet.com/com/en/watch-collection.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Royal Oak Jumbo Extra-Thin 39mm",
+        "Royal Oak Selfwinding 41mm",
+        "Royal Oak Chronograph 41mm",
+        "Royal Oak Offshore Diver 42mm",
+        "Royal Oak Offshore Chronograph 43mm",
+        "Code 11.59 Selfwinding 41mm",
+        "Code 11.59 Chronograph 41mm",
+        "Royal Oak Concept Flying Tourbillon GMT"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "CH"
+    },
+    {
+      "brand": "Vacheron Constantin",
+      "leafKey": "watches",
+      "reason": "Vacheron Constantin active manufacture portfolio comprises 8 reference pillars across Overseas, Patrimony and Traditionnelle.",
+      "officialSourceUrl": "https://www.vacheron-constantin.com/ww/en/collections.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Overseas Self-Winding 41mm",
+        "Overseas Chronograph 42.5mm",
+        "Overseas Dual Time 41mm",
+        "Patrimony Manual-Winding 40mm",
+        "Patrimony Retrograde Day-Date 42.5mm",
+        "Traditionnelle Complete Calendar 41mm",
+        "Traditionnelle Manual-Winding 38mm",
+        "Historiques American 1921 40mm"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "CH"
+    },
+    {
+      "brand": "Longines",
+      "leafKey": "watches",
+      "reason": "Longines heritage and performance lines focus on 8 distinct master reference pillars.",
+      "officialSourceUrl": "https://www.longines.com/watches",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Spirit Zulu Time GMT 39mm",
+        "HydroConquest GMT 41mm",
+        "Legend Diver 39mm",
+        "Master Collection Moonphase 40mm",
+        "Ultra-Chron High-Frequency Diver 43mm",
+        "Conquest Automatic 41mm",
+        "Heritage Classic Sector Dial 38.5mm",
+        "Flagship Heritage 38.5mm"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "CH"
+    },
+    {
+      "brand": "TAG Heuer",
+      "leafKey": "watches",
+      "reason": "TAG Heuer luxury chronograph and dive lines center on 8 iconic active collections.",
+      "officialSourceUrl": "https://www.tagheuer.com/watches",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Carrera Chronograph Glassbox 39mm",
+        "Carrera Date 39mm",
+        "Monaco Chronograph Calibre 11 39mm",
+        "Aquaracer Professional 300 Date 42mm",
+        "Aquaracer Professional 200 Solargraph 40mm",
+        "Formula 1 Chronograph 43mm",
+        "Carrera Chronosprint x Porsche 42mm",
+        "Autavia Chronometer Flyback Chronograph 42mm"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "CH"
+    }
+  ]
+}

@@ -1,0 +1,2819 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "lifestyle-sneakers",
+  "displayName": "Luxury & Designer Lifestyle Sneakers",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "loro-piana-360-flexy-walk-sneaker",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Flexy Walk",
+      "modelName": "360 Flexy Walk Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/360-flexy-walk-sneaker-FAM1234"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "360 flexy walk sneaker",
+        "upper": "Wish ultrafine wool knit",
+        "weight": "360 grams ultra-light",
+        "sole": "Technical rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Featherweight 360-gram luxury running sneaker crafted from Australian merino Wish wool.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-modular-walk-sneaker",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Modular Walk",
+      "modelName": "Modular Walk Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/modular-walk-sneaker-FAM1345"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "modular walk sneaker",
+        "upper": "Storm System treated technical fabric & calfskin",
+        "sole": "Dual-tone rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "All-weather luxury sneaker pairing Storm System water-resistant textile with supple calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-nuages-sneaker-suede",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Nuages",
+      "modelName": "Nuages Sneaker in Suede",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/woman/sneakers/nuages-sneaker-FAM1456"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "nuages sneaker in suede",
+        "upper": "Calfskin Suede",
+        "sole": "Cloud-like microcellular sole",
+        "details": "Hand-stitched leather piping"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-cushioned court sneaker resting on an ultra-soft cloud-inspired platform sole.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-weekend-walk-sneaker",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Weekend Walk",
+      "modelName": "Weekend Walk Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/weekend-walk-sneaker-FAM1567"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "weekend walk sneaker",
+        "upper": "Deerskin & Suede",
+        "sole": "Natural rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual weekend court sneaker crafted in butter-soft deerskin hide.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-my-wind-sneaker-microfibre",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "My Wind",
+      "modelName": "My Wind Sneaker in Microfibre",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/my-wind-sneaker-FAM1678"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "my wind sneaker in microfibre",
+        "upper": "Wind microfiber / Suede trim",
+        "sole": "Ultra-light rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sporty runner made with silk-like Wind technical microfiber treated with Storm System.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-rain-walk-storm-system-sneaker",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Rain Walk",
+      "modelName": "Rain Walk Storm System Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/rain-walk-sneaker-FAM1789"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "rain walk storm system sneaker",
+        "upper": "Treated Calfskin & Technical Canvas",
+        "waterResistance": "Storm System waterproof",
+        "sole": "Treaded rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Weather-resistant city sneaker engineered for wet climates.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-dover-sneaker-deerskin",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Dover",
+      "modelName": "Dover Sneaker in Deerskin",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/dover-sneaker-FAM1890"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "dover sneaker in deerskin",
+        "upper": "Grain Deerskin",
+        "sole": "Gum rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist low-top luxury sneaker featuring hand-finished natural grain deerskin.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-net-walk-suede-sneaker",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Net Walk",
+      "modelName": "Net Walk Suede Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/net-walk-sneaker-FAM1901"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "net walk suede sneaker",
+        "upper": "Perforated Calf Suede",
+        "sole": "White rubber cassette sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Breathable perforated suede sneaker ideal for warm-weather city walking.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-play-walk-knit-sneaker",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Play Walk",
+      "modelName": "Play Walk Knit Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/play-walk-sneaker-FAM2012"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "play walk knit sneaker",
+        "upper": "Cashmere and Wool Knit",
+        "style": "Sock-style slip-on",
+        "sole": "Cushioned rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slip-on sock sneaker knitted from luxurious cashmere and wool blend yarns.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-seaside-walk-slip-on-sneaker",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Seaside Walk",
+      "modelName": "Seaside Walk Slip-On Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/sneakers/seaside-walk-slip-on-FAM2123"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "seaside walk slip-on sneaker",
+        "upper": "Linen & Cotton canvas / Suede heel",
+        "sole": "Non-slip marine sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nautical slip-on plimsoll combining coastal linen canvas with non-marking rubber sole.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-suede-and-deerskin-runner-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Footwear Collection",
+      "modelName": "Suede and Deerskin Runner Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/suede-deerskin-runner-MZUKSDO250.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "suede and deerskin runner sneaker",
+        "upper": "Calfskin Suede & Grained Deerskin",
+        "style": "Retro athletic runner",
+        "sole": "Lightweight microcellular EVA sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cucinelli's signature luxury runner combining velvety suede with textured deerskin panels.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-knit-and-leather-lightweight-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Footwear Collection",
+      "modelName": "Knit and Leather Lightweight Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/knit-leather-sneaker-MZUKSDO260.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "knit and leather lightweight sneaker",
+        "upper": "Technical cotton knit & calfskin",
+        "weight": "Ultra-light",
+        "sole": "Grooved rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Breathable knit sneaker reinforced with tailored leather eyestays and heel counter.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-calfskin-cupsole-court-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Court Series",
+      "modelName": "Calfskin Cupsole Court Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/cupsole-court-sneaker-MZUKSDO270.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "calfskin cupsole court sneaker",
+        "upper": "Polished French Calfskin",
+        "sole": "Stitched cassette cupsole",
+        "design": "Solomeo crest heel tab"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist tennis court shoe featuring stitched rubber cupsole and tonal branding.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-monili-trim-leather-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Women's Footwear",
+      "modelName": "Monili Trim Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/women/shoes/sneakers/monili-leather-sneaker-MZSFG2450.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "monili trim leather sneaker",
+        "upper": "Calfskin",
+        "embellishment": "Nickel-free Monili beading on tongue and heel",
+        "sole": "Platform rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic women's sneaker accented with shimmering rows of signature Monili beads.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-retro-runner-technical-suede",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Runner Series",
+      "modelName": "Technical Fabric and Suede Retro Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/retro-runner-MZUKSDO280.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "technical fabric and suede retro runner",
+        "upper": "Technical water-repellent nylon & Suede",
+        "sole": "Bi-color wedge sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage 1970s running aesthetic elevated with Solomeo craftsmanship.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-vintage-calfskin-low-top-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Vintage Finish",
+      "modelName": "Vintage Calfskin Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/vintage-low-top-MZUKSDO290.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "vintage calfskin low-top sneaker",
+        "upper": "Washed Calfskin",
+        "finish": "Artisanal hand-patination",
+        "sole": "Aged rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hand-aged leather court sneaker with subtle lived-in patina.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-cashmere-knit-active-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Cashmere Active",
+      "modelName": "Cashmere Knit Active Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/cashmere-active-sneaker-MZUKSDO300.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "cashmere knit active sneaker",
+        "upper": "Pure Cashmere Rib-Knit",
+        "sole": "Ergonomic shock-absorbing rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pinnacle comfort sneaker upper knitted entirely from fine Solomeo cashmere.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-perforated-suede-skate-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Skate Series",
+      "modelName": "Perforated Suede Skate Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/perforated-skate-MZUKSDO310.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "perforated suede skate sneaker",
+        "upper": "Perforated Calf Suede",
+        "style": "Slip-on skate",
+        "sole": "Vulcanized-look rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slip-on skate-inspired sneaker in micro-perforated summer suede.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-nubuck-chunky-sole-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Modern Series",
+      "modelName": "Nubuck Chunky Sole Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/nubuck-chunky-sneaker-MZUKSDO320.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "nubuck chunky sole sneaker",
+        "upper": "Velvety Nubuck",
+        "sole": "Sculpted chunky lightweight sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary chunky sneaker balanced by understated monochrome nubuck tones.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-distressed-suede-court-sneaker",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Court Series",
+      "modelName": "Distressed Suede Court Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/sneakers/distressed-court-MZUKSDO330.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "distressed suede court sneaker",
+        "upper": "Stone-washed Suede",
+        "sole": "Stitched rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Understated low-top sneaker treated with delicate stone-washing.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-playtime-venezia-low-top-sneaker",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Playtime",
+      "modelName": "Playtime Venezia Leather Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/playtime-leather-sneaker/S5211-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "playtime venezia leather low-top sneaker",
+        "upper": "Patinated Venezia Calfskin",
+        "construction": "Blake stitched cupsole",
+        "sole": "Scritto-engraved rubber outsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Berluti's signature luxury court sneaker handcrafted from hand-patinated Venezia leather.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-stellar-scritto-leather-sneaker",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Stellar",
+      "modelName": "Stellar Scritto Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/stellar-scritto-leather-sneaker/S5455-V2.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "stellar scritto leather sneaker",
+        "upper": "Scritto-embossed Venezia Leather",
+        "sole": "Geometric faceted rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern court shoe featuring laser-engraved 18th-century Scritto text on the lateral quarters.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-fast-track-venezia-leather-runner",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Fast Track",
+      "modelName": "Fast Track Venezia Leather Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/fast-track-leather-sneaker/S4935-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "fast track venezia leather runner",
+        "upper": "Venezia Leather & Suede",
+        "style": "Hybrid brogue-runner",
+        "sole": "Sculpted running sole with leather welt"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pioneering hybrid luxury shoe blending brogue detailing with an athletic running sole.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-gravity-leather-and-mesh-sneaker",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Gravity",
+      "modelName": "Gravity Leather and Mesh Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/gravity-leather-sneaker/S5550-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "gravity leather and mesh sneaker",
+        "upper": "Venezia Leather & Technical Mesh",
+        "sole": "Vibram custom multi-density sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-tech luxury trail-runner silhouette built with patinated leather cages.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-shadow-knit-and-venezia-sneaker",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Shadow",
+      "modelName": "Shadow Knit and Venezia Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/shadow-knit-sneaker/S5045-K2.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "shadow knit and venezia sneaker",
+        "upper": "Engineered stretch knit & Venezia leather panels",
+        "style": "Slip-on sock runner",
+        "sole": "Lightweight runner sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seamless knitted sock runner framed by hand-tinted Venezia leather heel and eyelet accents.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-fast-track-tormenta-sneaker",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Fast Track",
+      "modelName": "Fast Track Tormenta Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/fast-track-tormenta-sneaker/S5700-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "fast track tormenta sneaker",
+        "upper": "Tormenta nylon & Scritto leather",
+        "sole": "Aggressive tread running sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Performance-inspired all-weather luxury sneaker with technical Tormenta water-resistant textile.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-court-classic-sl06-low-top-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Court Classic",
+      "modelName": "Court Classic SL/06 Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/court-classic-sl-06-embroidered-sneakers-in-canvas-and-leather-6106180YS009050.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "court classic sl/06 low-top sneaker",
+        "upper": "Cotton Canvas & Calfskin",
+        "embroidery": "Saint Laurent hand-stitched script",
+        "sole": "Distressed rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic low-top skate shoe featuring embroidered hand-written Saint Laurent signature.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl10-high-top-leather-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Court Classic",
+      "modelName": "SL/10 High-Top Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/sl-10-high-top-sneakers-in-leather-4180240MP001000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl/10 high-top leather sneaker",
+        "upper": "Two-tone Calfskin",
+        "style": "High-top 1980s basketball",
+        "sole": "Rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "1980s basketball-inspired high-top sneaker with padded collar and contrast colorblocking.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-court-classic-sl01-low-top-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Court Classic",
+      "modelName": "Court Classic SL/01 Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/court-classic-sl-01-sneakers-in-leather-6032231JZ109030.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "court classic sl/01 low-top sneaker",
+        "upper": "Smooth Calfskin",
+        "style": "Clean tennis court",
+        "hardware": "Gold foil Saint Laurent stamp on tongue and heel"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The quintessential minimalist luxury white tennis sneaker with gold foil branding.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-venice-slip-on-canvas-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Venice",
+      "modelName": "Venice Slip-On Canvas Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/venice-slip-on-sneakers-in-canvas-585742GUZ201000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "venice slip-on canvas sneaker",
+        "upper": "Heavy Cotton Canvas / Leather tab",
+        "sole": "Off-white rubber sole with YSL back plaque"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Effortless California skate-inspired slip-on sneaker in durable woven canvas.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-bedford-high-top-distressed-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Bedford",
+      "modelName": "Bedford High-Top Distressed Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/bedford-high-top-sneakers-in-distressed-canvas-553488GUZ101000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "bedford high-top distressed sneaker",
+        "upper": "Distressed Canvas / Suede",
+        "details": "Hand-distressed rubber Foxing and raw hems"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rock 'n' roll grunge high-top sneaker featuring artisanal hand distressing.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl61-low-top-perforated-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "SL/61",
+      "modelName": "SL/61 Low-Top Perforated Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/sl-61-low-top-sneakers-in-grained-and-smooth-leather-713583AAAK99086.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl/61 low-top perforated sneaker",
+        "upper": "Grained & Smooth Calfskin",
+        "design": "Perforated toe box & quarter side panels",
+        "sole": "Rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Retro tennis sneaker with perforated toe and embossed Saint Laurent Paris midsole logo.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl80-mid-top-basketball-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "SL/80",
+      "modelName": "SL/80 Mid-Top Basketball Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/sl-80-mid-top-sneakers-in-perforated-leather-713585AAAK99086.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl/80 mid-top basketball sneaker",
+        "upper": "Calfskin",
+        "style": "Mid-top vintage basketball",
+        "collar": "Padded ankle support"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Mid-top basketball sneaker echoing golden era 1980s court proportions.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-jump-low-top-leather-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Jump",
+      "modelName": "Jump Low-Top Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/jump-low-top-sneakers-in-leather-5823770MP209084.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "jump low-top leather sneaker",
+        "upper": "Calfskin / Reflective inserts",
+        "style": "Chunky runner",
+        "sole": "Sculpted wedge sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sculpted chunky runner balancing luxury leather panels with dynamic sporty lines.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-malibu-low-top-canvas-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Malibu",
+      "modelName": "Malibu Low-Top Canvas Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/malibu-low-top-sneakers-in-canvas-606444GUZ201000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "malibu low-top canvas sneaker",
+        "upper": "Canvas",
+        "sole": "Handwritten Saint Laurent script along rubber foxing tape"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Low-profile plimsoll sneaker decorated with signature handwritten foxing graphics.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-andy-low-top-minimalist-sneaker",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "productLine": "Andy",
+      "modelName": "Andy Low-Top Minimalist Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/pr/andy-low-top-sneakers-in-leather-5336150M5009030.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "andy low-top minimalist sneaker",
+        "upper": "Smooth Calfskin",
+        "style": "Ultra-clean court",
+        "branding": "Subtle gold heat-stamped logo"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek low-profile court shoe with raw leather edges and unpadded minimal silhouette.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-americas-cup-patent-leather-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "America's Cup",
+      "modelName": "America's Cup Original Patent Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-americas-cup-sneakers/4E3400_ASZ_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "america's cup original patent leather sneaker",
+        "upper": "Patent Leather & Technical Bike Fabric",
+        "signature": "Red Line (Linea Rossa) logo on tongue and heel",
+        "sole": "Ergonomic rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The 1997 original yacht racing sneaker that created the modern luxury athletic shoe category.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-americas-cup-soft-leather-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "America's Cup",
+      "modelName": "America's Cup Soft Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-americas-cup-leather-sneakers/4E3400_6GW_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "america's cup soft leather sneaker",
+        "upper": "Soft Matte Calfskin & Breathable Mesh",
+        "branding": "Linea Rossa red stripe",
+        "sole": "Bi-color rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Soft matte leather iteration of the legendary America's Cup sailing sneaker.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-cloudbust-thunder-chunky-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Cloudbust",
+      "modelName": "Cloudbust Thunder Chunky Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/cloudbust-thunder-sneakers/2EG293_3L1K_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "cloudbust thunder chunky sneaker",
+        "upper": "Knit fabric with 3D injected rubber eyestay and overlays",
+        "sole": "Heavy sculptural lugged sawtooth sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Futuristic architectural chunky sneaker featuring 3D injection-molded rubber elements.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-renylon-and-brushed-leather-court-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Re-Nylon",
+      "modelName": "Re-Nylon and Brushed Leather Court Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/re-nylon-and-brushed-leather-sneakers/1E792M_3LFV_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "re-nylon and brushed leather court sneaker",
+        "upper": "Sustainable Re-Nylon & Spazzolato Brushed Leather",
+        "hardware": "Enameled metal triangle logo"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sustainable court shoe combining recycled ocean nylon with glossy brushed calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-downtown-leather-low-top-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Downtown",
+      "modelName": "Downtown Leather Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-downtown-leather-sneakers/2EE364_3LJ6_F0964"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "downtown leather low-top sneaker",
+        "upper": "Calfskin",
+        "style": "1980s basketball low-top",
+        "branding": "Enamel triangle logo on lateral quarter"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "1980s retro basketball court shoe adorned with Prada's iconic enameled triangle plaque.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-downtown-leather-high-top-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Downtown",
+      "modelName": "Downtown Leather High-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-downtown-high-top-leather-sneakers/2EE365_3LJ6_F0964"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "downtown leather high-top sneaker",
+        "upper": "Calfskin",
+        "style": "High-top basketball",
+        "collar": "Perforated collar with triangle logo"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top iteration of the Downtown sneaker with ankle padding and triangle emblem.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-prax-01-technical-fabric-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Prax 01",
+      "modelName": "Prax 01 Technical Fabric Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prax-01-sneakers/4E3576_3LFV_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "prax 01 technical fabric sneaker",
+        "upper": "Technical fabric & leather trim",
+        "sole": "Geometric tread rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek low-profile running-inspired shoe featuring geometric tread sole.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-wheel-renylon-cassette-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Wheel",
+      "modelName": "Wheel Re-Nylon Cassette Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-wheel-re-nylon-sneakers/2EG323_1YFL_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "wheel re-nylon cassette sneaker",
+        "upper": "Re-Nylon Fabric",
+        "sole": "Tire tread motocross rubber bumper"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Canvas-style lace-up sneaker highlighted by a vulcanized motocross tire-tread toe bumper.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-macro-brushed-leather-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Macro",
+      "modelName": "Macro Brushed Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/macro-brushed-leather-sneakers/4E3583_3G4I_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "macro brushed leather sneaker",
+        "upper": "Spazzolato Brushed Leather",
+        "sole": "Oversized chunky rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Monochrome dress sneaker with oversized platform profile and high-shine Spazzolato finish.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-collision-19-lux-technical-sneaker",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "productLine": "Collision",
+      "modelName": "Collision 19_LUX Technical Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/collision-19-lux-sneakers/4E3566_3LN3_F0002"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "collision 19_lux technical sneaker",
+        "upper": "High-frequency welded technical textile",
+        "sole": "Futuristic air-cushioned airbag pods"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Avant-garde technical sneaker engineered with translucent air-cushioned sole pods.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-ace-embroidered-bee-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Ace Collection",
+      "modelName": "Ace Embroidered Bee Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-ace-embroidered-sneaker-p-42944602JP09064"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "ace embroidered bee sneaker",
+        "upper": "White Leather",
+        "details": "Green and red Web stripe with metallic gold embroidered bee",
+        "heel": "Mismatched metallic snakeskin heel tabs"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The definitive luxury designer sneaker of the 2010s, adorned with gold bee and web stripe.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-ace-classic-plain-leather-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Ace Collection",
+      "modelName": "Ace Classic Plain Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-ace-leather-sneaker-p-386750A38309071"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "ace classic plain leather sneaker",
+        "upper": "Calfskin",
+        "sideDetails": "Signature Green and Red Web ribbon",
+        "sole": "Flat rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic clean rendition of the Ace tennis sneaker with heritage green/red ribbon side stripe.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-rhyton-chunky-leather-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Rhyton",
+      "modelName": "Rhyton Chunky Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-rhyton-leather-sneaker-p-500877DRW009522"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "rhyton chunky leather sneaker",
+        "upper": "Ivory Treated Leather",
+        "style": "1990s chunky dad shoe",
+        "sole": "Thick sculpted rubber platform"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Voluminous retro 90s dad runner in vintage treated ivory leather with sculpted sole.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-screener-vintage-leather-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Screener",
+      "modelName": "Screener Vintage Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-screener-leather-sneaker-p-5465510YFT09170"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "screener vintage leather sneaker",
+        "upper": "Distressed Suede & Leather",
+        "details": "Vintage Web stripe, enameled Oval GG plaque",
+        "sole": "Two-tone distressed rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "1970s court-inspired trainer authentically treated for a vintage distressed lived-in appearance.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-tennis-1977-low-top-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Tennis 1977",
+      "modelName": "Gucci Tennis 1977 Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-gucci-tennis-1977-sneaker-p-606111GZO309361"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gucci tennis 1977 low-top sneaker",
+        "upper": "GG Supreme Canvas or Jacquard Fabric",
+        "details": "Web stripe, contrast grosgrain collar trim",
+        "sole": "Textured rubber sole with GG motif"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heritage retro canvas sneaker resurrected from the house's 1977 athletic archive.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-tennis-1977-high-top-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Tennis 1977",
+      "modelName": "Gucci Tennis 1977 High-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-gucci-tennis-1977-high-top-sneaker-p-625807GZO309361"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gucci tennis 1977 high-top sneaker",
+        "upper": "Original GG Canvas",
+        "style": "High-top lace-up",
+        "sole": "Embossed rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top version of the archive Tennis 1977 plimsoll wrapped in signature GG canvas.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-run-technical-mesh-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Gucci Run",
+      "modelName": "Gucci Run Technical Mesh Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-gucci-run-sneaker-p-68014297TY09761"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gucci run technical mesh sneaker",
+        "upper": "Technical Knit & Suede",
+        "branding": "Curved Interlocking G overlay",
+        "sole": "Bi-color sculpted running sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Athletic lifestyle runner featuring dynamic aerodynamic lines and interlocking G side wave.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-mac80-leather-low-top-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "MAC80",
+      "modelName": "Mac80 Leather Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-mac80-sneaker-p-739335AAB009087"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "mac80 leather low-top sneaker",
+        "upper": "Calfskin Leather & Fabric inserts",
+        "branding": "Embroidered Interlocking G logo on quarter",
+        "sole": "Two-tone rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic 1980s low-top court shoe accented with embroidered Interlocking G medallion.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-re-web-leather-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Re-Web",
+      "modelName": "Re-Web Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-re-web-sneaker-p-771146AABW19060"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "re-web leather sneaker",
+        "upper": "Soft Leather & Heavy Web Tongue",
+        "designer": "Sabato De Sarno era debut",
+        "sole": "Rubber cassette cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Debut sneaker under Creative Director Sabato De Sarno spotlighting an oversized Web tongue.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-basket-high-top-sneaker",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Basket",
+      "modelName": "Basket High-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-gucci-basket-sneaker-p-6613012SH801062"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "basket high-top sneaker",
+        "upper": "Demetra animal-free bio-based material & mesh",
+        "style": "1990s street basketball",
+        "sole": "Fluorescent rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top 1990s court silhouette constructed primarily with eco-friendly Demetra material.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-superstar-distressed-leather-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Super-Star",
+      "modelName": "Super-Star Distressed Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/super-star-in-white-leather-with-ice-suede-star-and-black-leather-heel-tab-cod-GMF00101.F000316.10272.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "super-star distressed leather sneaker",
+        "upper": "Cowhide Leather",
+        "signature": "Suede star patch",
+        "finish": "Handcrafted vintage distressing (spazzolato)",
+        "sole": "Rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The Venice-born cult classic sneaker that popularized the intentional lived-in vintage aesthetic.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-ball-star-vintage-leather-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Ball Star",
+      "modelName": "Ball Star Vintage Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/ball-star-in-white-nappa-with-grey-suede-star-and-red-leather-heel-tab-cod-GMF00117.F002575.10272.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "ball star vintage leather sneaker",
+        "upper": "Nappa Leather",
+        "style": "American college basketball",
+        "details": "SNEA-KERS lettering across heels"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "1980s American college basketball silhouette with cracked leather heel and star appliqué.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-mid-star-suede-and-leather-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Mid Star",
+      "modelName": "Mid Star Suede and Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/mid-star-in-suede-and-leather-cod-GMF00122.F000318.80185.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "mid star suede and leather sneaker",
+        "upper": "Calfskin Suede / Leather",
+        "style": "Mid-top brogue hybrid",
+        "details": "Wingtip brogue perforations on toe cap"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Mid-top skate sneaker uniquely accented with English wingtip brogue perforations.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-slide-high-top-leather-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Slide",
+      "modelName": "Slide High-Top Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/slide-in-leather-with-glitter-star-cod-GMF00115.F000323.10272.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "slide high-top leather sneaker",
+        "upper": "Leather / Suede",
+        "closure": "Inner lateral zip for easy slip-on",
+        "style": "Skatepark high-top"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Venetian skate high-top featuring signature lateral zipper entry and curved side stripe.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-francy-high-top-zip-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Francy",
+      "modelName": "Francy High-Top Zip Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/francy-in-canvas-and-leather-cod-GMF00113.F000320.10272.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "francy high-top zip sneaker",
+        "upper": "Vintage Canvas & Leather",
+        "details": "Side zip closure, circular ankle patch"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "1970s basketball high-top plimsoll updated with side zipper and hand-treated distressing.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-purestar-clean-leather-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Purestar",
+      "modelName": "Purestar Clean Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/purestar-in-white-optic-leather-cod-GMF00124.F000537.10100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "purestar clean leather sneaker",
+        "upper": "Optic White Calfskin",
+        "finish": "Pristine non-distressed clean finish",
+        "sole": "Shock-absorbing cushion sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean, pristine non-distressed court sneaker designed with modern optic-white leather.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-stardan-basketball-leather-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Stardan",
+      "modelName": "Stardan Basketball Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/stardan-in-leather-cod-GMF00128.F000325.10272.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "stardan basketball leather sneaker",
+        "upper": "Calfskin",
+        "style": "90s street basketball icon",
+        "details": "Perforated star, mesh tongue"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tribute to 1990s street basketball icons with net perforations and bold star.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-dad-star-chunky-metallic-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Dad-Star",
+      "modelName": "Dad-Star Chunky Metallic Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/dad-star-in-silver-metallic-leather-cod-GMF00199.F001210.60246.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "dad-star chunky metallic sneaker",
+        "upper": "Laminated Metallic Leather & Mesh",
+        "style": "Chunky dad runner",
+        "finish": "Yellowed vintage midsole aging"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dramatic chunky metallic dad sneaker featuring exposed foam and yellowed vintage sole patina.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-running-sole-distressed-sneaker",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Running Sole",
+      "modelName": "Running Sole Distressed Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/running-sole-in-leather-and-suede-cod-GMF00126.F000327.80185.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "running sole distressed sneaker",
+        "upper": "Suede & Technical Fabric",
+        "sole": "Hand-painted chunky running sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hand-painted oversized running sole sneaker capturing urban streetwear energy.",
+      "status": "staged"
+    },
+    {
+      "id": "golden-goose-marathon-vintage-nylon-runner",
+      "canonicalBrand": "Golden Goose",
+      "displayBrand": "Golden Goose",
+      "productLine": "Marathon",
+      "modelName": "Marathon Vintage Nylon Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.goldengoose.com/us/en/marathon-in-ripstop-nylon-and-suede-cod-GMF00438.F004245.80185.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "golden goose",
+        "modelName": "marathon vintage nylon runner",
+        "upper": "Ripstop Nylon & Suede",
+        "style": "Track and field 1970s marathon",
+        "sole": "Wedge lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "1970s track and field runner reimagined with 3D printed stabilizer spoilers.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-warwick-grained-leather-low-top-sneaker",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Warwick",
+      "modelName": "Warwick Grained Leather Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomford.com/warwick-grained-leather-sneaker/J0964P-LCL080.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "warwick grained leather low-top sneaker",
+        "upper": "Grained Calfskin",
+        "branding": "Perforated T logo along the side",
+        "sole": "Rubber cupsole with Tom Ford back branding"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tom Ford's hallmark luxury tennis court sneaker with perforated T flank branding.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-cambridge-suede-low-top-skate-sneaker",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Cambridge",
+      "modelName": "Cambridge Suede Low-Top Skate Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomford.com/cambridge-suede-sneaker/J0971P-LCL081.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "cambridge suede low-top skate sneaker",
+        "upper": "Velveteen Suede",
+        "style": "Skate-inspired lace-up",
+        "sole": "Chunky vulcanized rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined skate-inspired sneaker handcrafted in rich Italian calf suede.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-james-vintage-suede-runner",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "James",
+      "modelName": "James Vintage Suede and Nylon Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomford.com/james-runner-sneaker/J1197T-TNY001.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "james vintage suede and nylon runner",
+        "upper": "Nylon & Suede",
+        "style": "1970s vintage track runner",
+        "sole": "Wedge EVA sole with studded tread"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "1970s track runner executed with contrast leather T-stripes and wedge midsole.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-bannister-leather-low-top-sneaker",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Bannister",
+      "modelName": "Bannister Leather Low-Top Tennis Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomford.com/bannister-tennis-sneaker/J1234T-LCL100.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "bannister leather low-top tennis sneaker",
+        "upper": "Polished Box Calf",
+        "hardware": "Gold foil Tom Ford tongue stamp",
+        "sole": "Cassette sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek tailored dress sneaker with dress-shoe quality calfskin and padded collar.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-jago-multi-panel-technical-sneaker",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Jago",
+      "modelName": "Jago Multi-Panel Technical Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomford.com/jago-sneaker/J1100T-TOF001.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "jago multi-panel technical sneaker",
+        "upper": "Mesh, Neoprene & Grosgrain Ribbon",
+        "construction": "Artisanal sock construction",
+        "sole": "Sculpted injection-molded rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-fashion multi-panel athletic sneaker constructed using artisan sock techniques.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-radford-high-top-leather-sneaker",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Radford",
+      "modelName": "Radford High-Top Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomford.com/radford-high-top-sneaker/J0990P-LCL080.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "radford high-top leather sneaker",
+        "upper": "Full Grain Calfskin",
+        "style": "High-top basketball",
+        "details": "Padded ankle collars and gold eyelets"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Posh high-top basketball sneaker in full-grain calfskin with gold hardware accents.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-city-low-top-nappa-sneaker",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "City",
+      "modelName": "City Low-Top Nappa Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomford.com/city-nappa-sneaker/J1250T-LCL150.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "city low-top nappa sneaker",
+        "upper": "Glove-soft Nappa Leather",
+        "lining": "Kidskin lining",
+        "sole": "Ultra-flexible rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-plush minimalist court sneaker lined in glove-soft kidskin.",
+      "status": "staged"
+    },
+    {
+      "id": "tom-ford-trunner-technical-leather-sneaker",
+      "canonicalBrand": "Tom Ford",
+      "displayBrand": "Tom Ford",
+      "productLine": "Trunner",
+      "modelName": "Trunner Technical Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tomford.com/trunner-sneaker/J1300T-TOF002.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tom ford",
+        "modelName": "trunner technical leather sneaker",
+        "upper": "Technical Knit & Patent leather",
+        "sole": "Bubble air cushion sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Aerodynamic technical runner with patent leather reinforcements and bubble cushioning.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-original-achilles-low",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Achilles",
+      "modelName": "Original Achilles Low Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/original-achilles-low-white-1528"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "original achilles low leather",
+        "upper": "Italian Nappa Calfskin",
+        "branding": "Gold foil stamped 10-digit style, size, color code on heel",
+        "sole": "Margom rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The definitive minimalist sneaker that catalyzed the contemporary luxury sneaker revolution.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-original-achilles-mid",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Achilles",
+      "modelName": "Original Achilles Mid Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/original-achilles-mid-white-1529"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "original achilles mid leather",
+        "upper": "Nappa Calfskin",
+        "style": "Mid-top ankle profile",
+        "branding": "Gold serial stamp"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Mid-top version of the iconic Achilles providing clean ankle framing.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-original-achilles-high",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Achilles",
+      "modelName": "Original Achilles High Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/original-achilles-high-white-1530"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "original achilles high leather",
+        "upper": "Nappa Leather",
+        "style": "High-top lace-up",
+        "sole": "Margom vulcanized rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Full high-top silhouette rendered in pristine monochrome Italian leather.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-retro-low-leather-sneaker",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Retro",
+      "modelName": "Retro Low Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/retro-low-white-black-2295"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "retro low leather sneaker",
+        "upper": "Calfskin",
+        "heelTab": "Contrasting black leather heel tab",
+        "sole": "Slightly off-white vintage sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage 1970s tennis court homage with contrasting heel tab and vintage-tinted Margom sole.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-bball-low-leather-sneaker",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "B-Ball",
+      "modelName": "B-Ball Low Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/bball-low-white-2155"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "b-ball low leather sneaker",
+        "upper": "Calfskin",
+        "style": "Basketball court shoe",
+        "details": "Perforated toe box, multi-panel overlays"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subtly layered retro basketball sneaker with perforated toe ventilation and layered eyestays.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-track-classic-vintage-runner",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Track",
+      "modelName": "Track Classic Vintage Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/track-classic-white-2256"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "track classic vintage runner",
+        "upper": "Suede, Mesh & Leather",
+        "style": "Retro running shoe",
+        "sole": "Chunky multi-layer EVA and rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage athletic runner combining rich Italian suede panels with breathable mesh.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-tournament-low-sneaker",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Tournament",
+      "modelName": "Tournament Low Canvas and Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/tournament-low-white-2244"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "tournament low canvas and leather sneaker",
+        "upper": "Heavy Cotton Canvas / Leather trim",
+        "sole": "Tire tread Margom bumper sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Plimsoll-inspired low-top sneaker featuring ribbed rubber foxing and toe bumper.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-chelsea-sneaker-hybrid",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Hybrid Series",
+      "modelName": "Chelsea Sneaker Hybrid",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/chelsea-sneaker-black-2310"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "chelsea sneaker hybrid",
+        "upper": "Italian Suede",
+        "elastic": "Dual lateral gore gussets",
+        "sole": "Rubber sneaker sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hybrid slip-on fusing traditional Chelsea boot elastic goring with athletic cupsole.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-skate-low-suede-sneaker",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Skate",
+      "modelName": "Skate Low Suede Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/skate-low-suede-2320"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "skate low suede sneaker",
+        "upper": "Supple Suede",
+        "style": "Padded tongue skate shoe",
+        "sole": "Margom rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Low-top skate sneaker with padded tongue and collar in rich earth-toned suede.",
+      "status": "staged"
+    },
+    {
+      "id": "common-projects-resort-classic-court-sneaker",
+      "canonicalBrand": "Common Projects",
+      "displayBrand": "Common Projects",
+      "productLine": "Resort",
+      "modelName": "Resort Classic Court Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.commonprojects.com/products/resort-classic-white-2330"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "common projects",
+        "modelName": "resort classic court sneaker",
+        "upper": "Tumbled Leather",
+        "sole": "Unstructured flexible sole",
+        "lining": "Unlined"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Unlined summer court shoe made from tumbled, glove-soft Italian leather.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-1t-vintage-suede-and-fabric-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "1T Collection",
+      "modelName": "1T Vintage Suede and Fabric Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Tod's-1T-in-Leather-and-Fabric/p/XXM14K0FY90RNK8029/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "1t vintage suede and fabric sneaker",
+        "upper": "Calfskin Suede & Technical Fabric",
+        "sole": "Maxi gommini rubber pebbles protruding from heel and sole",
+        "style": "1970s runner"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tod's flagship running sneaker punctuated by iconic oversized macro-gommini pebbles on the heel.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-tabs-leather-low-top-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Tabs",
+      "modelName": "Tabs Leather Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Tod's-Tabs-Sneakers-in-Leather/p/XXM68C0DP30RE0B999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "tabs leather low-top sneaker",
+        "upper": "Smooth Calf Leather",
+        "details": "Stamped Tod's monogram, rubber gommini heel detail",
+        "sole": "Rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean metropolitan court sneaker with stamped monogram and heel gommini accents.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-cassetta-leather-court-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Cassetta",
+      "modelName": "Cassetta Leather Court Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Cassetta-Sneakers-in-Leather/p/XXM03E0EA10AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "cassetta leather court sneaker",
+        "upper": "Grained Calfskin",
+        "sole": "Stitched cassette box sole with embossed logo"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic tennis shoe resting on a stitched rubber cassette sole.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-gommino-slip-on-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Gommino Sneaker",
+      "modelName": "Gommino Slip-On Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Slip-On-Sneakers-in-Leather/p/XXM03E00P20AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "gommino slip-on sneaker",
+        "upper": "Calfskin",
+        "style": "Laceless slip-on",
+        "sole": "Gommini pebble tread"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Effortless laceless slip-on shoe bridging driving moccasin comfort with sneaker practicality.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-nocode-j-technical-knit-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "No_Code",
+      "modelName": "No_Code J Technical Knit Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Tod's-No_Code-J/p/XXM91B0AY80KDD0002/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "no_code j technical knit sneaker",
+        "upper": "Engineered high-tech knit / Leather reinforcements",
+        "sole": "Ultra-light EVA sole with gommini"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-tech innovation project sneaker blending Italian cordwaining with athletic engineering.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-nocode-x-all-terrain-runner",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "No_Code",
+      "modelName": "No_Code X All-Terrain Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Tod's-No_Code-X/p/XXM91B0AY90KDD0003/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "no_code x all-terrain runner",
+        "upper": "Water-resistant technical textile & leather",
+        "sole": "All-terrain sculpted lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "All-terrain technical sneaker designed by Korean designer Yong Bae Seok.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-sport-light-suede-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Sport Light",
+      "modelName": "Sport Light Suede Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Sport-Light-Sneakers/p/XXM68C0EA50RE0S800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "sport light suede sneaker",
+        "upper": "Unlined Velvety Suede",
+        "sole": "Extralight EVA sole",
+        "weight": "Featherweight"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Super-lightweight unlined suede sneaker engineered for supreme walking flexibility.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-t-vintage-low-top-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "T Vintage",
+      "modelName": "T Vintage Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/T-Vintage-Sneakers/p/XXM03E0EA30RE0B999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "t vintage low-top sneaker",
+        "upper": "Leather and Fabric",
+        "hardware": "Side T metal charm or leather cut-out"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Retro tennis sneaker embellished with leather T accessory on the side.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-running-in-pelle-leather-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Running Series",
+      "modelName": "Running In Pelle Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Running-Sneakers-in-Leather/p/XXM14K0FY80RNKB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "running in pelle leather sneaker",
+        "upper": "Smooth Calfskin",
+        "sole": "Dual-density rubber sole with heel gommini"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polished leather dress runner for smart business casual wear.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-city-sport-perforated-sneaker",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "City Sport",
+      "modelName": "City Sport Perforated Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/City-Sport-Sneakers/p/XXM68C0EA60RE0B999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "city sport perforated sneaker",
+        "upper": "Perforated Calfskin",
+        "sole": "Rubber sole",
+        "design": "Side laser-cut ventilation"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Summer city sneaker featuring laser-cut side perforations and contrast lining.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-cleanic-leather-low-top-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Cleanic",
+      "modelName": "Cleanic Leather Low-Top Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/cleanic-leather-low-top-sneaker-mccs16975mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "cleanic leather low-top sneaker",
+        "upper": "Calfskin Leather",
+        "details": "Hand-stitched side accents, orange Santoni sole detail",
+        "sole": "Flexible rubber cassette sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Santoni's definitive minimalist court sneaker finished with signature orange-tread accents.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-innova-double-buckle-leather-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Innova",
+      "modelName": "Innova Double Buckle Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/innova-double-buckle-sneaker-mcin16976mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "innova double buckle leather sneaker",
+        "upper": "Hand-patinated Calfskin",
+        "design": "Side embossed double-buckle silhouette",
+        "sole": "Ergonomic rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Innovative luxury sneaker paying homage to Santoni's iconic double monk strap.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-club-vintage-suede-runner",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Club Series",
+      "modelName": "Club Vintage Suede and Leather Runner",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/club-vintage-runner-mccl16977mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "club vintage suede and leather runner",
+        "upper": "Suede & Nylon",
+        "style": "Vintage running shoe",
+        "sole": "Bi-color EVA running sole with rubber tread"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Retro athletic running shoe with hand-burnished leather toe and heel counters.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-gloria-hand-colored-calfskin-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Gloria",
+      "modelName": "Gloria Hand-Colored Calfskin Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/gloria-hand-colored-sneaker-mcgl16978mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "gloria hand-colored calfskin sneaker",
+        "upper": "Calfskin",
+        "finish": "Velatura hand-painted patina",
+        "sole": "Rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Exquisite court sneaker colored individually by hand using Santoni's Velatura technique.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-duble-leather-low-top-court-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Duble",
+      "modelName": "Duble Leather Low-Top Court Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/duble-court-sneaker-mcdu16979mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "duble leather low-top court sneaker",
+        "upper": "Smooth Calfskin",
+        "sole": "Cassette cupsole with contrast orange base"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tailored court sneaker with clean blind eyelets and padded tongue.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-fast-knit-sock-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Fast Knit",
+      "modelName": "Fast Knit Sock Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/fast-knit-sock-sneaker-mcfk16980mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "fast knit sock sneaker",
+        "upper": "Seamless Stretch Knit & Leather Cage",
+        "sole": "Sculpted running sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary sock sneaker wrapped in leather saddle bands.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-continuous-calfskin-platform-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Platform Series",
+      "modelName": "Continuous Calfskin Platform Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/continuous-platform-sneaker-mcpf16981mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "continuous calfskin platform sneaker",
+        "upper": "Calfskin",
+        "sole": "Subtle 35mm platform rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary elevated court sneaker with clean unembellished upper.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-dover-antiqued-leather-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Dover",
+      "modelName": "Dover Antiqued Leather Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/dover-antiqued-sneaker-mcdo16982mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "dover antiqued leather sneaker",
+        "upper": "Antiqued Calfskin",
+        "sole": "Flexible rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rich brown antiqued calfskin sneaker built for smart travel and dress shirts.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-voyage-slip-on-suede-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Voyage",
+      "modelName": "Voyage Slip-On Suede Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/voyage-slip-on-sneaker-mcvy16983mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "voyage slip-on suede sneaker",
+        "upper": "Unlined Suede",
+        "style": "Laceless slip-on",
+        "sole": "Featherlight rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual unlined suede slip-on designed for effortless airport transit.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-urban-chic-velatura-sneaker",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Urban Chic",
+      "modelName": "Urban Chic Velatura Sneaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/urban-chic-velatura-sneaker-mcuc16984mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "urban chic velatura sneaker",
+        "upper": "Graduated Velatura Patina Calf",
+        "sole": "Two-tone cassette sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Artisanal court shoe displaying multi-toned hand-applied color gradations.",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Berluti",
+      "leafKey": "lifestyle-sneakers",
+      "reason": "Berluti Parisian bottier produces 6 specialized ready-to-wear sneakers combining athletic cupsoles with artisanal patinated Venezia calfskin.",
+      "officialSourceUrl": "https://www.berluti.com/en-us/shoes/sneakers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Playtime Venezia Leather Low-Top Sneaker",
+        "Stellar Scritto Leather Sneaker",
+        "Fast Track Venezia Leather Runner",
+        "Gravity Leather and Mesh Sneaker",
+        "Shadow Knit and Venezia Sneaker",
+        "Fast Track Tormenta Sneaker"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "FR"
+    },
+    {
+      "brand": "Tom Ford",
+      "leafKey": "lifestyle-sneakers",
+      "reason": "Tom Ford footwear collection maintains 8 signature handcrafted luxury sneaker silhouettes produced in Italian artisan workshops.",
+      "officialSourceUrl": "https://www.tomford.com/men/shoes/sneakers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Warwick Grained Leather Low-Top Sneaker",
+        "Cambridge Suede Low-Top Skate Sneaker",
+        "James Vintage Suede and Nylon Runner",
+        "Bannister Leather Low-Top Tennis Sneaker",
+        "Jago Multi-Panel Technical Sneaker",
+        "Radford High-Top Leather Sneaker",
+        "City Low-Top Nappa Sneaker",
+        "Trunner Technical Leather Sneaker"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "US"
+    }
+  ]
+}

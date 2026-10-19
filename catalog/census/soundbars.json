@@ -1,0 +1,3406 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "soundbars",
+  "displayName": "Soundbars & Home Theater",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "samsung-hw-q990d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Q-Series Soundbar",
+      "modelName": "HW-Q990D",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-q990d/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-q990d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-q990d",
+        "audioChannels": "11.1.4",
+        "subwooferType": "Wireless 8-inch",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 656,
+        "dimensionsMm": "1232 x 69.5 x 138"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-Q990D",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-q930d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Q-Series Soundbar",
+      "modelName": "HW-Q930D",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-q930d/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-q930d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-q930d",
+        "audioChannels": "9.1.4",
+        "subwooferType": "Wireless",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 540,
+        "dimensionsMm": "1110 x 60 x 120"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-Q930D",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-q800d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Q-Series Soundbar",
+      "modelName": "HW-Q800D",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-q800d/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-q800d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-q800d",
+        "audioChannels": "5.1.2",
+        "subwooferType": "Wireless 8-inch",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 360,
+        "dimensionsMm": "1110 x 60 x 120"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-Q800D",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-q700d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Q-Series Soundbar",
+      "modelName": "HW-Q700D",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-q700d/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-q700d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-q700d",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Wireless",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 320,
+        "dimensionsMm": "1110 x 60 x 120"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-Q700D",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-q600c",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Q-Series Soundbar",
+      "modelName": "HW-Q600C",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-q600c/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-q600c.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-q600c",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Wireless",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 360,
+        "dimensionsMm": "1030 x 57 x 105"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-Q600C",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-s800d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Ultra Slim Soundbar",
+      "modelName": "HW-S800D",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-s800d/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-s800d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-s800d",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Wireless Ultra Slim",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 330,
+        "dimensionsMm": "1160 x 38 x 39.9"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-S800D",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-s60d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "S-Series All-in-One",
+      "modelName": "HW-S60D",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-s60d/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-s60d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-s60d",
+        "audioChannels": "5.0",
+        "subwooferType": "Built-in",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 200,
+        "dimensionsMm": "670 x 62 x 105"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-S60D",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-b650",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "B-Series Soundbar",
+      "modelName": "HW-B650",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-b650/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-b650.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-b650",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 430,
+        "dimensionsMm": "1030 x 59.4 x 105"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-B650",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-b550",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "B-Series Soundbar",
+      "modelName": "HW-B550",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-b550/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-b550.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-b550",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 410,
+        "dimensionsMm": "860 x 59.4 x 75"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-B550",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-b450",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "B-Series Soundbar",
+      "modelName": "HW-B450",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-b450/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-b450.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-b450",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 300,
+        "dimensionsMm": "858 x 59 x 75"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-B450",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-c450",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "C-Series Soundbar",
+      "modelName": "HW-C450",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-c450/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-c450.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-c450",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 300,
+        "dimensionsMm": "858 x 59 x 75"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-C450",
+      "status": "staged"
+    },
+    {
+      "id": "samsung-hw-ls60d",
+      "canonicalBrand": "Samsung",
+      "displayBrand": "Samsung",
+      "productLine": "Music Frame",
+      "modelName": "HW-LS60D",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.samsung.com/us/televisions-home-theater/home-theater/sound-bars/hw-ls60d/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.samsung.com/images/products/samsung-hw-ls60d.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "samsung",
+        "modelName": "hw-ls60d",
+        "audioChannels": "2.0",
+        "subwooferType": "Built-in Dual Woofers",
+        "hdmiEarc": false,
+        "dolbyAtmos": true,
+        "powerWatts": 120,
+        "dimensionsMm": "353 x 353 x 54.2"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Samsung verified soundbars model: HW-LS60D",
+      "status": "staged"
+    },
+    {
+      "id": "sony-bravia-theatre-bar-9",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "BRAVIA Theatre",
+      "modelName": "BRAVIA Theatre Bar 9",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/ht-a9000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-bravia-theatre-bar-9.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "bravia theatre bar 9",
+        "audioChannels": "13.0.0 (360 SSM)",
+        "subwooferType": "Optional Wireless",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 500,
+        "dimensionsMm": "1300 x 64 x 113"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: BRAVIA Theatre Bar 9",
+      "status": "staged"
+    },
+    {
+      "id": "sony-bravia-theatre-bar-8",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "BRAVIA Theatre",
+      "modelName": "BRAVIA Theatre Bar 8",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/ht-a8000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-bravia-theatre-bar-8.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "bravia theatre bar 8",
+        "audioChannels": "11.0.0 (360 SSM)",
+        "subwooferType": "Optional Wireless",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 400,
+        "dimensionsMm": "1100 x 64 x 113"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: BRAVIA Theatre Bar 8",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ht-a7000",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "HT-Series Flagship",
+      "modelName": "HT-A7000",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/hta7000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ht-a7000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ht-a7000",
+        "audioChannels": "7.1.2",
+        "subwooferType": "Built-in Dual Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 500,
+        "dimensionsMm": "1300 x 80 x 142"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: HT-A7000",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ht-a5000",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "HT-Series Premium",
+      "modelName": "HT-A5000",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/hta5000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ht-a5000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ht-a5000",
+        "audioChannels": "5.1.2",
+        "subwooferType": "Built-in Dual Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 450,
+        "dimensionsMm": "1210 x 67 x 140"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: HT-A5000",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ht-a3000",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "HT-Series",
+      "modelName": "HT-A3000",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/hta3000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ht-a3000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ht-a3000",
+        "audioChannels": "3.1",
+        "subwooferType": "Built-in Dual Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 250,
+        "dimensionsMm": "950 x 64 x 128"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: HT-A3000",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ht-s2000",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "HT-Series Compact",
+      "modelName": "HT-S2000",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/hts2000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ht-s2000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ht-s2000",
+        "audioChannels": "3.1",
+        "subwooferType": "Built-in Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 250,
+        "dimensionsMm": "800 x 64 x 124"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: HT-S2000",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ht-s40r",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "HT-Series Surround",
+      "modelName": "HT-S40R",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/hts40r"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ht-s40r.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ht-s40r",
+        "audioChannels": "5.1",
+        "subwooferType": "Wired Subwoofer + Wireless Rears",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 600,
+        "dimensionsMm": "900 x 52 x 74.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: HT-S40R",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ht-s400",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "HT-Series",
+      "modelName": "HT-S400",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/hts400"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ht-s400.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ht-s400",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 330,
+        "dimensionsMm": "900 x 64 x 88"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: HT-S400",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ht-s100f",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "HT-Series Entry",
+      "modelName": "HT-S100F",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/hts100f"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ht-s100f.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ht-s100f",
+        "audioChannels": "2.0",
+        "subwooferType": "Bass Reflex Built-in",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 120,
+        "dimensionsMm": "900 x 64 x 88"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: HT-S100F",
+      "status": "staged"
+    },
+    {
+      "id": "sony-ht-g700",
+      "canonicalBrand": "Sony",
+      "displayBrand": "Sony",
+      "productLine": "HT-Series Cinematic",
+      "modelName": "HT-G700",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://electronics.sony.com/audio/soundbars/all-soundbars/p/htg700"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://electronics.sony.com/images/products/sony-ht-g700.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sony",
+        "modelName": "ht-g700",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 400,
+        "dimensionsMm": "980 x 64 x 108"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sony verified soundbars model: HT-G700",
+      "status": "staged"
+    },
+    {
+      "id": "lg-s95tr",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG Soundbar Flagship",
+      "modelName": "S95TR",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-s95tr-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-s95tr.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "s95tr",
+        "audioChannels": "9.1.5",
+        "subwooferType": "Wireless 8-inch",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 810,
+        "dimensionsMm": "1250 x 63 x 135"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: S95TR",
+      "status": "staged"
+    },
+    {
+      "id": "lg-s90ty",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG Soundbar Premium",
+      "modelName": "S90TY",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-s90ty-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-s90ty.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "s90ty",
+        "audioChannels": "5.1.3",
+        "subwooferType": "Wireless",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 570,
+        "dimensionsMm": "1250 x 63 x 135"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: S90TY",
+      "status": "staged"
+    },
+    {
+      "id": "lg-s80tr",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG Soundbar",
+      "modelName": "S80TR",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-s80tr-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-s80tr.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "s80tr",
+        "audioChannels": "5.1.3",
+        "subwooferType": "Wireless + Wireless Rears",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 580,
+        "dimensionsMm": "1000 x 63 x 135"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: S80TR",
+      "status": "staged"
+    },
+    {
+      "id": "lg-s77ty",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG Soundbar",
+      "modelName": "S77TY",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-s77ty-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-s77ty.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "s77ty",
+        "audioChannels": "3.1.3",
+        "subwooferType": "Wireless",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 400,
+        "dimensionsMm": "890 x 63 x 135"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: S77TY",
+      "status": "staged"
+    },
+    {
+      "id": "lg-s70ty",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG Soundbar",
+      "modelName": "S70TY",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-s70ty-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-s70ty.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "s70ty",
+        "audioChannels": "3.1.1",
+        "subwooferType": "Wireless",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 400,
+        "dimensionsMm": "950 x 63 x 115"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: S70TY",
+      "status": "staged"
+    },
+    {
+      "id": "lg-sc9s",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG OLED C-Series Synergy",
+      "modelName": "SC9S",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-sc9s-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-sc9s.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "sc9s",
+        "audioChannels": "3.1.3",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 400,
+        "dimensionsMm": "975 x 63 x 125"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: SC9S",
+      "status": "staged"
+    },
+    {
+      "id": "lg-se6s-eclair",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "Eclair Compact",
+      "modelName": "SE6S Eclair",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-se6s-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-se6s-eclair.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "se6s eclair",
+        "audioChannels": "3.0",
+        "subwooferType": "Built-in Quad Passive Radiator",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 100,
+        "dimensionsMm": "800 x 63 x 131"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: SE6S Eclair",
+      "status": "staged"
+    },
+    {
+      "id": "lg-sqc2",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG Soundbar Essential",
+      "modelName": "SQC2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-sqc2-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-sqc2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "sqc2",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 300,
+        "dimensionsMm": "660 x 56 x 99"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: SQC2",
+      "status": "staged"
+    },
+    {
+      "id": "lg-s40t",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG Soundbar",
+      "modelName": "S40T",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-s40t-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-s40t.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "s40t",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 300,
+        "dimensionsMm": "760 x 63 x 90"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: S40T",
+      "status": "staged"
+    },
+    {
+      "id": "lg-s20g",
+      "canonicalBrand": "LG",
+      "displayBrand": "LG",
+      "productLine": "LG Soundbar Entry",
+      "modelName": "S20G",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lg.com/us/sound-bars/lg-s20g-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lg.com/images/products/lg-s20g.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lg",
+        "modelName": "s20g",
+        "audioChannels": "2.0",
+        "subwooferType": "Built-in",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 100,
+        "dimensionsMm": "760 x 63 x 90"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LG verified soundbars model: S20G",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-bar-1300x",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Bar Series Flagship",
+      "modelName": "Bar 1300X",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/BAR-1300X.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-bar-1300x.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "bar 1300x",
+        "audioChannels": "11.1.4",
+        "subwooferType": "Wireless 12-inch + Detachable Rears",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 1170,
+        "dimensionsMm": "1376 x 60 x 139"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Bar 1300X",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-bar-1000",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Bar Series Premium",
+      "modelName": "Bar 1000",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/BAR-1000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-bar-1000.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "bar 1000",
+        "audioChannels": "7.1.4",
+        "subwooferType": "Wireless 10-inch + Detachable Rears",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 880,
+        "dimensionsMm": "1194 x 56 x 125"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Bar 1000",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-bar-800",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Bar Series",
+      "modelName": "Bar 800",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/BAR-800.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-bar-800.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "bar 800",
+        "audioChannels": "5.1.2",
+        "subwooferType": "Wireless 10-inch + Detachable Rears",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 720,
+        "dimensionsMm": "1174 x 56 x 120"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Bar 800",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-bar-500",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Bar Series",
+      "modelName": "Bar 500",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/BAR-500.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-bar-500.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "bar 500",
+        "audioChannels": "5.1",
+        "subwooferType": "Wireless 10-inch",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 590,
+        "dimensionsMm": "1017 x 56 x 103.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Bar 500",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-bar-300",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Bar Series All-in-One",
+      "modelName": "Bar 300",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/BAR-300.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-bar-300.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "bar 300",
+        "audioChannels": "5.0",
+        "subwooferType": "Built-in Bass Port",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 260,
+        "dimensionsMm": "820 x 56 x 103.5"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Bar 300",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-bar-2-1-deep-bass",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Bar Series",
+      "modelName": "Bar 2.1 Deep Bass",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/BAR-2-1-DEEP-BASS.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-bar-2-1-deep-bass.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "bar 2.1 deep bass",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless 6.5-inch",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 300,
+        "dimensionsMm": "965 x 58 x 85"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Bar 2.1 Deep Bass",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-bar-2-0-all-in-one",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Bar Series Compact",
+      "modelName": "Bar 2.0 All-in-One",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/BAR-2-0-ALL-IN-ONE.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-bar-2-0-all-in-one.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "bar 2.0 all-in-one",
+        "audioChannels": "2.0",
+        "subwooferType": "Built-in Dual Bass Ports",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 80,
+        "dimensionsMm": "614 x 58 x 90"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Bar 2.0 All-in-One",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-cinema-sb580",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Cinema Series",
+      "modelName": "Cinema SB580",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/CINEMA-SB580.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-cinema-sb580.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "cinema sb580",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless 6.5-inch",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 440,
+        "dimensionsMm": "950 x 64 x 80"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Cinema SB580",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-cinema-sb550",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Cinema Series",
+      "modelName": "Cinema SB550",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/CINEMA-SB550.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-cinema-sb550.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "cinema sb550",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless 5.25-inch",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 250,
+        "dimensionsMm": "950 x 64 x 80"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Cinema SB550",
+      "status": "staged"
+    },
+    {
+      "id": "jbl-cinema-sb190",
+      "canonicalBrand": "JBL",
+      "displayBrand": "JBL",
+      "productLine": "Cinema Series",
+      "modelName": "Cinema SB190",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.jbl.com/soundbars/CINEMA-SB190.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.jbl.com/images/products/jbl-cinema-sb190.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "jbl",
+        "modelName": "cinema sb190",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless 6.5-inch",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 380,
+        "dimensionsMm": "900 x 67 x 63"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "JBL verified soundbars model: Cinema SB190",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-true-x-bar-50a",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "True X Series",
+      "modelName": "True X Bar 50A (SR-X50A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/sr-x50a/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-true-x-bar-50a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "true x bar 50a (sr-x50a)",
+        "audioChannels": "4.1.2",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 280,
+        "dimensionsMm": "1015 x 63 x 112"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: True X Bar 50A (SR-X50A)",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-true-x-bar-40a",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "True X Series",
+      "modelName": "True X Bar 40A (SR-X40A)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/sr-x40a/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-true-x-bar-40a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "true x bar 40a (sr-x40a)",
+        "audioChannels": "2.1.2",
+        "subwooferType": "Built-in Dual Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 180,
+        "dimensionsMm": "1015 x 63 x 112"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: True X Bar 40A (SR-X40A)",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-sr-b40a",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "SR Series",
+      "modelName": "SR-B40A",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/sr-b40a/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-sr-b40a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "sr-b40a",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 200,
+        "dimensionsMm": "910 x 68 x 133"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: SR-B40A",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-sr-b30a",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "SR Series",
+      "modelName": "SR-B30A",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/sr-b30a/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-sr-b30a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "sr-b30a",
+        "audioChannels": "2.1",
+        "subwooferType": "Built-in Dual Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 120,
+        "dimensionsMm": "910 x 68 x 133"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: SR-B30A",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-sr-b20a",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "SR Series",
+      "modelName": "SR-B20A",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/sr-b20a/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-sr-b20a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "sr-b20a",
+        "audioChannels": "2.1",
+        "subwooferType": "Built-in Dual Subwoofers",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 120,
+        "dimensionsMm": "910 x 53 x 131"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: SR-B20A",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-sr-c30a",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "Compact Series",
+      "modelName": "SR-C30A",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/sr-c30a/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-sr-c30a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "sr-c30a",
+        "audioChannels": "2.1",
+        "subwooferType": "Slim Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 90,
+        "dimensionsMm": "600 x 64 x 94"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: SR-C30A",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-sr-c20a",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "Compact Series",
+      "modelName": "SR-C20A",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/sr-c20a/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-sr-c20a.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "sr-c20a",
+        "audioChannels": "2.1",
+        "subwooferType": "Built-in Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 100,
+        "dimensionsMm": "600 x 64 x 94"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: SR-C20A",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-yas-209",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "YAS Series",
+      "modelName": "YAS-209",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/yas-209/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-yas-209.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "yas-209",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 200,
+        "dimensionsMm": "930 x 62 x 109"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: YAS-209",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-yas-109",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "YAS Series",
+      "modelName": "YAS-109",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/yas-109/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-yas-109.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "yas-109",
+        "audioChannels": "2.0",
+        "subwooferType": "Built-in Subwoofers",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 120,
+        "dimensionsMm": "890 x 53 x 131"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: YAS-109",
+      "status": "staged"
+    },
+    {
+      "id": "yamaha-ats-2090",
+      "canonicalBrand": "Yamaha",
+      "displayBrand": "Yamaha",
+      "productLine": "ATS Series",
+      "modelName": "ATS-2090",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://usa.yamaha.com/products/audio_visual/sound_bar/ats-2090/index.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://usa.yamaha.com/images/products/yamaha-ats-2090.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "yamaha",
+        "modelName": "ats-2090",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 200,
+        "dimensionsMm": "930 x 62 x 109"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yamaha verified soundbars model: ATS-2090",
+      "status": "staged"
+    },
+    {
+      "id": "polk-magnifi-max-ax-sr",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "MagniFi Flagship",
+      "modelName": "MagniFi Max AX SR",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/magnifi-max-ax-sr"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-magnifi-max-ax-sr.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "magnifi max ax sr",
+        "audioChannels": "7.1.2",
+        "subwooferType": "Wireless 10-inch + Wireless Rears",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 390,
+        "dimensionsMm": "1143 x 118 x 72"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: MagniFi Max AX SR",
+      "status": "staged"
+    },
+    {
+      "id": "polk-magnifi-max-ax",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "MagniFi Premium",
+      "modelName": "MagniFi Max AX",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/magnifi-max-ax"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-magnifi-max-ax.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "magnifi max ax",
+        "audioChannels": "5.1.2",
+        "subwooferType": "Wireless 10-inch",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 390,
+        "dimensionsMm": "1143 x 118 x 72"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: MagniFi Max AX",
+      "status": "staged"
+    },
+    {
+      "id": "polk-magnifi-mini-ax",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "MagniFi Compact",
+      "modelName": "MagniFi Mini AX",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/magnifi-mini-ax"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-magnifi-mini-ax.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "magnifi mini ax",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Wireless Compact Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 150,
+        "dimensionsMm": "366 x 104 x 79"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: MagniFi Mini AX",
+      "status": "staged"
+    },
+    {
+      "id": "polk-magnifi-2",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "MagniFi Series",
+      "modelName": "MagniFi 2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/magnifi-2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-magnifi-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "magnifi 2",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless 8-inch",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 200,
+        "dimensionsMm": "1092 x 53 x 96"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: MagniFi 2",
+      "status": "staged"
+    },
+    {
+      "id": "polk-signa-s4",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "Signa Series",
+      "modelName": "Signa S4",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/signa-s4"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-signa-s4.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "signa s4",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 180,
+        "dimensionsMm": "1046 x 60 x 95"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: Signa S4",
+      "status": "staged"
+    },
+    {
+      "id": "polk-signa-s3",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "Signa Series",
+      "modelName": "Signa S3",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/signa-s3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-signa-s3.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "signa s3",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 160,
+        "dimensionsMm": "898 x 56 x 83"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: Signa S3",
+      "status": "staged"
+    },
+    {
+      "id": "polk-signa-s2",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "Signa Series",
+      "modelName": "Signa S2",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/signa-s2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-signa-s2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "signa s2",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 140,
+        "dimensionsMm": "899 x 54 x 82"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: Signa S2",
+      "status": "staged"
+    },
+    {
+      "id": "polk-react-sound-bar",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "React Series",
+      "modelName": "React Sound Bar",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/react"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-react-sound-bar.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "react sound bar",
+        "audioChannels": "2.0",
+        "subwooferType": "Optional Wireless",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 100,
+        "dimensionsMm": "864 x 57 x 121"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: React Sound Bar",
+      "status": "staged"
+    },
+    {
+      "id": "polk-magnifi-one",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "MagniFi Series",
+      "modelName": "MagniFi One",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/magnifi-one"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-magnifi-one.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "magnifi one",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless 7-inch Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 240,
+        "dimensionsMm": "892 x 51 x 80"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: MagniFi One",
+      "status": "staged"
+    },
+    {
+      "id": "polk-surroundbar-500",
+      "canonicalBrand": "Polk Audio",
+      "displayBrand": "Polk Audio",
+      "productLine": "SurroundBar Series",
+      "modelName": "SurroundBar 500",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/surroundbar-500"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.polkaudio.com/images/products/polk-surroundbar-500.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "polk audio",
+        "modelName": "surroundbar 500",
+        "audioChannels": "5.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 300,
+        "dimensionsMm": "1140 x 60 x 85"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polk Audio verified soundbars model: SurroundBar 500",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-cinema-1200",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Cinema Series Flagship",
+      "modelName": "Cinema 1200",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/cinema-1200-dolby-atmos-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-cinema-1200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "cinema 1200",
+        "audioChannels": "5.1.4",
+        "subwooferType": "Wireless 12-inch Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 1200,
+        "dimensionsMm": "1372 x 75 x 157"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Cinema 1200",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-cinema-800",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Cinema Series Premium",
+      "modelName": "Cinema 800",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/cinema-800-dolby-atmos-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-cinema-800.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "cinema 800",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless 10-inch Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 800,
+        "dimensionsMm": "1219 x 73 x 86"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Cinema 800",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-cinema-600",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Cinema Series",
+      "modelName": "Cinema 600",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/cinema-600-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-cinema-600.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "cinema 600",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless 10-inch Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 600,
+        "dimensionsMm": "1143 x 73 x 86"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Cinema 600",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-cinema-400",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Cinema Series",
+      "modelName": "Cinema 400",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/cinema-400-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-cinema-400.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "cinema 400",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless 8-inch Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 400,
+        "dimensionsMm": "1014 x 73 x 86"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Cinema 400",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-flexus-core-200",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Flexus Powered by Onkyo",
+      "modelName": "Flexus Core 200",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/flexus-core-200"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-flexus-core-200.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "flexus core 200",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Built-in Dual 4-inch Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 185,
+        "dimensionsMm": "1118 x 78 x 126"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Flexus Core 200",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-flexus-core-100",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Flexus Powered by Onkyo",
+      "modelName": "Flexus Core 100",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/flexus-core-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-flexus-core-100.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "flexus core 100",
+        "audioChannels": "2.1",
+        "subwooferType": "Built-in Dual 4-inch Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 100,
+        "dimensionsMm": "711 x 76 x 127"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Flexus Core 100",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-bar-48",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "BAR Series",
+      "modelName": "Bar 48",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/bar-48-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-bar-48.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "bar 48",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless 8-inch Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 440,
+        "dimensionsMm": "1211 x 73 x 86"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Bar 48",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-bar-40",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "BAR Series",
+      "modelName": "Bar 40",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/bar-40-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-bar-40.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "bar 40",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless 6.5-inch Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 320,
+        "dimensionsMm": "1014 x 73 x 86"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Bar 40",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-cinema-700",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Cinema Series",
+      "modelName": "Cinema 700",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/cinema-700-sound-bar"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-cinema-700.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "cinema 700",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless 10-inch Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 700,
+        "dimensionsMm": "1150 x 73 x 86"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Cinema 700",
+      "status": "staged"
+    },
+    {
+      "id": "klipsch-flexus-sub-100-system",
+      "canonicalBrand": "Klipsch",
+      "displayBrand": "Klipsch",
+      "productLine": "Flexus Powered by Onkyo",
+      "modelName": "Flexus Sound System (Core 200 + Sub 100)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.klipsch.com/products/flexus-sub-100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.klipsch.com/images/products/klipsch-flexus-sub-100-system.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "klipsch",
+        "modelName": "flexus sound system (core 200 + sub 100)",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Wireless 10-inch Flexus Sub",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 300,
+        "dimensionsMm": "1118 x 78 x 126"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Klipsch verified soundbars model: Flexus Sound System (Core 200 + Sub 100)",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab8967",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Performance Audio",
+      "modelName": "TAB8967",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB8967_98/soundbar-5.1.2-with-wireless-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab8967.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab8967",
+        "audioChannels": "5.1.2",
+        "subwooferType": "Wireless 8-inch + Wireless Rears",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 780,
+        "dimensionsMm": "1120 x 64 x 113"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB8967",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab8947",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Performance Audio",
+      "modelName": "TAB8947",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB8947_98/soundbar-3.1.2-with-wireless-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab8947.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab8947",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 660,
+        "dimensionsMm": "1120 x 64 x 113"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB8947",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab8805",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Play-Fi Series",
+      "modelName": "TAB8805",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB8805_10/soundbar-3.1-with-wireless-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab8805.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab8805",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 400,
+        "dimensionsMm": "1060 x 110 x 60"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB8805",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab7807",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Performance Audio",
+      "modelName": "TAB7807",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB7807_98/soundbar-3.1-with-wireless-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab7807.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab7807",
+        "audioChannels": "3.1",
+        "subwooferType": "Wireless 8-inch Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 620,
+        "dimensionsMm": "800 x 65 x 106"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB7807",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab7305",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Home Theater Series",
+      "modelName": "TAB7305",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB7305_98/soundbar-2.1-with-wireless-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab7305.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab7305",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 300,
+        "dimensionsMm": "800 x 65 x 106"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB7305",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab6405",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Ultra Slim Series",
+      "modelName": "TAB6405",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB6405_98/soundbar-2.1-with-wireless-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab6405.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab6405",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Ultra Slim Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 140,
+        "dimensionsMm": "650 x 35 x 81"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB6405",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab5305",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Essential Series",
+      "modelName": "TAB5305",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB5305_98/soundbar-2.1-with-wireless-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab5305.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab5305",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 140,
+        "dimensionsMm": "900 x 65 x 91"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB5305",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab5105",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Essential Series",
+      "modelName": "TAB5105",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB5105_98/soundbar-2.0"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab5105.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab5105",
+        "audioChannels": "2.0",
+        "subwooferType": "Built-in",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 60,
+        "dimensionsMm": "900 x 65 x 91"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB5105",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab8205",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Play-Fi All-in-One",
+      "modelName": "TAB8205",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB8205_10/soundbar-2.1-with-built-in-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab8205.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab8205",
+        "audioChannels": "2.1",
+        "subwooferType": "Built-in Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 200,
+        "dimensionsMm": "857 x 67 x 115"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB8205",
+      "status": "staged"
+    },
+    {
+      "id": "philips-tab6309",
+      "canonicalBrand": "Philips",
+      "displayBrand": "Philips",
+      "productLine": "Ultra Slim Series",
+      "modelName": "TAB6309",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.philips.com/c-p/TAB6309_98/soundbar-2.1-with-wireless-subwoofer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.philips.com/images/products/philips-tab6309.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "philips",
+        "modelName": "tab6309",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Ultra Slim Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 320,
+        "dimensionsMm": "811 x 37 x 42"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Philips verified soundbars model: TAB6309",
+      "status": "staged"
+    },
+    {
+      "id": "bose-smart-ultra-soundbar",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "Smart Soundbar",
+      "modelName": "Smart Ultra Soundbar",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/home-theater/bose-smart-ultra-soundbar/ULT-SOUNDBAR.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.bose.com/images/products/bose-smart-ultra-soundbar.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "smart ultra soundbar",
+        "audioChannels": "5.1.2 (PhaseGuide)",
+        "subwooferType": "Optional Wireless Bass Module",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 350,
+        "dimensionsMm": "1045 x 58.2 x 107"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose verified soundbars model: Smart Ultra Soundbar",
+      "status": "staged"
+    },
+    {
+      "id": "bose-smart-soundbar-600",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "Smart Soundbar",
+      "modelName": "Smart Soundbar 600",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/home-theater/bose-smart-soundbar-600/SS600-SOUNDBAR.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.bose.com/images/products/bose-smart-soundbar-600.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "smart soundbar 600",
+        "audioChannels": "3.0.2",
+        "subwooferType": "Optional Wireless Bass Module",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 220,
+        "dimensionsMm": "694 x 56.1 x 104"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose verified soundbars model: Smart Soundbar 600",
+      "status": "staged"
+    },
+    {
+      "id": "bose-smart-soundbar-900",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "Smart Soundbar",
+      "modelName": "Smart Soundbar 900",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/home-theater/bose-smart-soundbar-900/SS900-SOUNDBAR.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.bose.com/images/products/bose-smart-soundbar-900.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "smart soundbar 900",
+        "audioChannels": "5.1.2",
+        "subwooferType": "Optional Wireless Bass Module",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 320,
+        "dimensionsMm": "1045 x 58.2 x 107"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose verified soundbars model: Smart Soundbar 900",
+      "status": "staged"
+    },
+    {
+      "id": "bose-smart-soundbar-300",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "Smart Soundbar",
+      "modelName": "Smart Soundbar 300",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/home-theater/bose-smart-soundbar-300/SS300-SOUNDBAR.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.bose.com/images/products/bose-smart-soundbar-300.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "smart soundbar 300",
+        "audioChannels": "3.0",
+        "subwooferType": "Optional Wireless Bass Module",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 150,
+        "dimensionsMm": "698 x 56 x 102"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose verified soundbars model: Smart Soundbar 300",
+      "status": "staged"
+    },
+    {
+      "id": "bose-tv-speaker",
+      "canonicalBrand": "Bose",
+      "displayBrand": "Bose",
+      "productLine": "Compact Soundbar",
+      "modelName": "TV Speaker",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.bose.com/p/home-theater/bose-tv-speaker/TVSPEAKER-SOUNDBAR.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.bose.com/images/products/bose-tv-speaker.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "bose",
+        "modelName": "tv speaker",
+        "audioChannels": "2.0",
+        "subwooferType": "Built-in Bass Port",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 100,
+        "dimensionsMm": "594 x 56 x 102"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bose verified soundbars model: TV Speaker",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-arc",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Arc Series",
+      "modelName": "Arc",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/arc"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-arc.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "arc",
+        "audioChannels": "5.0.2",
+        "subwooferType": "Optional Wireless Sub / Sub Mini",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 250,
+        "dimensionsMm": "1142 x 87 x 116"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos verified soundbars model: Arc",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-beam-gen-2",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Beam Series",
+      "modelName": "Beam (Gen 2)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/beam"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-beam-gen-2.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "beam (gen 2)",
+        "audioChannels": "5.0 (Phase Array)",
+        "subwooferType": "Optional Wireless Sub / Sub Mini",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 150,
+        "dimensionsMm": "651 x 68.6 x 100"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos verified soundbars model: Beam (Gen 2)",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-ray",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Ray Series",
+      "modelName": "Ray",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/ray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-ray.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "ray",
+        "audioChannels": "2.0",
+        "subwooferType": "Built-in Bass Reflex",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 80,
+        "dimensionsMm": "559 x 71 x 95"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos verified soundbars model: Ray",
+      "status": "staged"
+    },
+    {
+      "id": "sonos-arc-sl",
+      "canonicalBrand": "Sonos",
+      "displayBrand": "Sonos",
+      "productLine": "Arc Series",
+      "modelName": "Arc SL",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sonos.com/en-us/shop/arc-sl"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sonos.com/images/products/sonos-arc-sl.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sonos",
+        "modelName": "arc sl",
+        "audioChannels": "5.0.2",
+        "subwooferType": "Optional Wireless Sub",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 250,
+        "dimensionsMm": "1142 x 87 x 116"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sonos verified soundbars model: Arc SL",
+      "status": "staged"
+    },
+    {
+      "id": "sennheiser-ambeo-soundbar-max",
+      "canonicalBrand": "Sennheiser",
+      "displayBrand": "Sennheiser",
+      "productLine": "AMBEO Series",
+      "modelName": "AMBEO Soundbar Max",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sennheiser-hearing.com/en-US/p/ambeo-soundbar-max/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sennheiser-hearing.com/images/products/sennheiser-ambeo-soundbar-max.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sennheiser",
+        "modelName": "ambeo soundbar max",
+        "audioChannels": "5.1.4",
+        "subwooferType": "Built-in Dual 6.5-inch Long-Throw Woofers (30Hz)",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 500,
+        "dimensionsMm": "1265 x 135 x 171"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sennheiser verified soundbars model: AMBEO Soundbar Max",
+      "status": "staged"
+    },
+    {
+      "id": "sennheiser-ambeo-soundbar-plus",
+      "canonicalBrand": "Sennheiser",
+      "displayBrand": "Sennheiser",
+      "productLine": "AMBEO Series",
+      "modelName": "AMBEO Soundbar Plus",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sennheiser-hearing.com/en-US/p/ambeo-soundbar-plus/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sennheiser-hearing.com/images/products/sennheiser-ambeo-soundbar-plus.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sennheiser",
+        "modelName": "ambeo soundbar plus",
+        "audioChannels": "7.1.4",
+        "subwooferType": "Built-in Dual 4-inch Up-Firing Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 400,
+        "dimensionsMm": "1051 x 77 x 121"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sennheiser verified soundbars model: AMBEO Soundbar Plus",
+      "status": "staged"
+    },
+    {
+      "id": "sennheiser-ambeo-soundbar-mini",
+      "canonicalBrand": "Sennheiser",
+      "displayBrand": "Sennheiser",
+      "productLine": "AMBEO Series",
+      "modelName": "AMBEO Soundbar Mini",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sennheiser-hearing.com/en-US/p/ambeo-soundbar-mini/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sennheiser-hearing.com/images/products/sennheiser-ambeo-soundbar-mini.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sennheiser",
+        "modelName": "ambeo soundbar mini",
+        "audioChannels": "7.1.4 (Virtual)",
+        "subwooferType": "Built-in Dual 4-inch Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 250,
+        "dimensionsMm": "700 x 65 x 100"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sennheiser verified soundbars model: AMBEO Soundbar Mini",
+      "status": "staged"
+    },
+    {
+      "id": "denon-dht-s517",
+      "canonicalBrand": "Denon",
+      "displayBrand": "Denon",
+      "productLine": "DHT Series",
+      "modelName": "DHT-S517",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.denon.com/en-us/product/sound-bars/dht-s517"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.denon.com/images/products/denon-dht-s517.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "denon",
+        "modelName": "dht-s517",
+        "audioChannels": "3.1.2",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 150,
+        "dimensionsMm": "1050 x 60 x 95"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Denon verified soundbars model: DHT-S517",
+      "status": "staged"
+    },
+    {
+      "id": "denon-dht-s416",
+      "canonicalBrand": "Denon",
+      "displayBrand": "Denon",
+      "productLine": "DHT Series",
+      "modelName": "DHT-S416",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.denon.com/en-us/product/sound-bars/dht-s416"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.denon.com/images/products/denon-dht-s416.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "denon",
+        "modelName": "dht-s416",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer with Chromecast Built-in",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 120,
+        "dimensionsMm": "900 x 54 x 83"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Denon verified soundbars model: DHT-S416",
+      "status": "staged"
+    },
+    {
+      "id": "denon-dht-s316",
+      "canonicalBrand": "Denon",
+      "displayBrand": "Denon",
+      "productLine": "DHT Series",
+      "modelName": "DHT-S316",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.denon.com/en-us/product/sound-bars/dht-s316"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.denon.com/images/products/denon-dht-s316.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "denon",
+        "modelName": "dht-s316",
+        "audioChannels": "2.1",
+        "subwooferType": "Wireless Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 100,
+        "dimensionsMm": "900 x 55 x 82"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Denon verified soundbars model: DHT-S316",
+      "status": "staged"
+    },
+    {
+      "id": "denon-dht-s217",
+      "canonicalBrand": "Denon",
+      "displayBrand": "Denon",
+      "productLine": "DHT Series Compact",
+      "modelName": "DHT-S217",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.denon.com/en-us/product/sound-bars/dht-s217"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.denon.com/images/products/denon-dht-s217.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "denon",
+        "modelName": "dht-s217",
+        "audioChannels": "2.1",
+        "subwooferType": "Built-in Down-Firing Dual Subwoofers",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 100,
+        "dimensionsMm": "890 x 67 x 120"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Denon verified soundbars model: DHT-S217",
+      "status": "staged"
+    },
+    {
+      "id": "denon-dht-s216",
+      "canonicalBrand": "Denon",
+      "displayBrand": "Denon",
+      "productLine": "DHT Series Compact",
+      "modelName": "DHT-S216",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.denon.com/en-us/product/sound-bars/dht-s216"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.denon.com/images/products/denon-dht-s216.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "denon",
+        "modelName": "dht-s216",
+        "audioChannels": "2.1",
+        "subwooferType": "Built-in Dual Subwoofers",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 100,
+        "dimensionsMm": "890 x 60 x 120"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Denon verified soundbars model: DHT-S216",
+      "status": "staged"
+    },
+    {
+      "id": "denon-home-sound-bar-550",
+      "canonicalBrand": "Denon",
+      "displayBrand": "Denon",
+      "productLine": "Denon Home / HEOS",
+      "modelName": "Home Sound Bar 550",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.denon.com/en-us/product/sound-bars/denon-home-sound-bar-550"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.denon.com/images/products/denon-home-sound-bar-550.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "denon",
+        "modelName": "home sound bar 550",
+        "audioChannels": "4.0",
+        "subwooferType": "Built-in Passive Radiators + HEOS Sub Option",
+        "hdmiEarc": true,
+        "dolbyAtmos": true,
+        "powerWatts": 180,
+        "dimensionsMm": "650 x 75 x 120"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Denon verified soundbars model: Home Sound Bar 550",
+      "status": "staged"
+    },
+    {
+      "id": "denon-dht-s716h",
+      "canonicalBrand": "Denon",
+      "displayBrand": "Denon",
+      "productLine": "HEOS Premium",
+      "modelName": "DHT-S716H",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.denon.com/en-us/product/sound-bars/dht-s716h"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.denon.com/images/products/denon-dht-s716h.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "denon",
+        "modelName": "dht-s716h",
+        "audioChannels": "3.0",
+        "subwooferType": "Optional Wireless HEOS Subwoofer",
+        "hdmiEarc": false,
+        "dolbyAtmos": false,
+        "powerWatts": 250,
+        "dimensionsMm": "1100 x 72 x 148"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Denon verified soundbars model: DHT-S716H",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Bose",
+      "leafKey": "soundbars",
+      "reason": "Bose manufactures 5 active home theater soundbars in its Smart and TV speaker lines.",
+      "officialSourceUrl": "https://www.bose.com/c/soundbars",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Smart Ultra Soundbar",
+        "Smart Soundbar 600",
+        "Smart Soundbar 900",
+        "Smart Soundbar 300",
+        "TV Speaker"
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Sonos",
+      "leafKey": "soundbars",
+      "reason": "Sonos produces 4 active TV soundbar chassis in its Arc, Beam, and Ray families.",
+      "officialSourceUrl": "https://www.sonos.com/en-us/shop/soundbars",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Arc",
+        "Beam (Gen 2)",
+        "Ray",
+        "Arc SL"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Sennheiser",
+      "leafKey": "soundbars",
+      "reason": "Sennheiser manufactures 3 reference AMBEO home cinema soundbars in active production.",
+      "officialSourceUrl": "https://www.sennheiser-hearing.com/en-US/soundbars/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "AMBEO Soundbar Max",
+        "AMBEO Soundbar Plus",
+        "AMBEO Soundbar Mini"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Denon",
+      "leafKey": "soundbars",
+      "reason": "Denon produces 7 active soundbar configurations in the DHT and Denon Home product ranges.",
+      "officialSourceUrl": "https://www.denon.com/en-us/category/sound-bars/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "DHT-S517",
+        "DHT-S416",
+        "DHT-S316",
+        "DHT-S217",
+        "DHT-S216",
+        "Home Sound Bar 550",
+        "DHT-S716H"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

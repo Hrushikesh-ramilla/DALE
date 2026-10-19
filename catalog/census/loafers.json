@@ -1,0 +1,3138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "loafers",
+  "displayName": "Luxury & Heritage Loafers",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "john-lobb-lopez-loafer",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Core Classics",
+      "modelName": "Lopez Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/lopez-museum-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "lopez loafer",
+        "last": "4395",
+        "construction": "Goodyear welted",
+        "upper": "Museum Calfskin",
+        "sole": "Oak bark leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "John Lobb's iconic penny loafer first introduced in 1950, crafted on the classic 4395 last.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-city-ii-loafer",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "City Series",
+      "modelName": "City II Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/city-ii-loafer-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "city ii loafer",
+        "last": "7000",
+        "construction": "Goodyear welted",
+        "upper": "Black Calfskin",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal slip-on adaptation built with the clean contours of the renowned 7000 last.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-lawry-loafer",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Modern Classics",
+      "modelName": "Lawry Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/lawry-suede-loafer.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "lawry loafer",
+        "last": "8695",
+        "construction": "Goodyear welted",
+        "upper": "Velveteen Suede",
+        "sole": "Prestige leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated apron loafer combining sleek proportions with bespoke-level finishing.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-haven-slip-on-loafer",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Casual Leisure",
+      "modelName": "Haven Slip-On Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/haven-grain-leather.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "haven slip-on loafer",
+        "last": "0318",
+        "construction": "Cemented lightweight",
+        "upper": "Grained Calfskin",
+        "sole": "Rubber plimsoll sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-flexible unlined seaside walking slip-on loafer.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-callington-penny-loafer",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Prestige Collection",
+      "modelName": "Callington Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/callington-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "callington penny loafer",
+        "last": "0015",
+        "construction": "Goodyear welted with bevelled waist",
+        "upper": "Dark Brown Museum Calf",
+        "sole": "Prestige leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Prestige collection penny loafer featuring hand-stitched apron and fiddleback waist.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-bath-tassel-loafer",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Core Classics",
+      "modelName": "Bath Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/bath-tassel-calf.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "bath tassel loafer",
+        "last": "7000",
+        "construction": "Goodyear welted",
+        "upper": "Full-grain calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Quintessential English tassel loafer with woven leather lacing around the collar.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-thorne-apron-loafer",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Modern Classics",
+      "modelName": "Thorne Apron Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/thorne-apron-loafers.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "thorne apron loafer",
+        "last": "8695",
+        "construction": "Goodyear welted",
+        "upper": "Suede / Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Elegantly proportioned hand-stitched apron penny loafer on the rounded 8695 last.",
+      "status": "staged"
+    },
+    {
+      "id": "john-lobb-penzance-driving-loafer",
+      "canonicalBrand": "John Lobb",
+      "displayBrand": "John Lobb",
+      "productLine": "Driving Collection",
+      "modelName": "Penzance Driving Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.johnlobb.com/en_us/mens-shoes/penzance-driving-shoe.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "john lobb",
+        "modelName": "penzance driving loafer",
+        "last": "Casual",
+        "construction": "Tubular moccasin",
+        "upper": "Soft Suede",
+        "sole": "Segmented rubber driving studs"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined driving loafer featuring hand-stitched moccasin vamp and studded grip sole.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-lorenzo-rimini-leather-loafer",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Lorenzo",
+      "modelName": "Lorenzo Rimini Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/lorenzo-rimini-leather-loafer/S5539-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "lorenzo rimini leather loafer",
+        "last": "Lorenzo",
+        "construction": "Blake stitched unlined",
+        "upper": "Cooterskin Venezia Leather",
+        "sole": "Supple leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Supremely supple unlined loafer crafted from patinated Venezia leather.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-andy-demesure-leather-loafer",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Andy",
+      "modelName": "Andy Demesure Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/andy-demesure-leather-loafer/S1411-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "andy demesure leather loafer",
+        "last": "Demesure",
+        "construction": "Blake stitched",
+        "upper": "Scritto Patinated Venezia Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Legendary penny loafer created by Olga Berluti for Andy Warhol in 1962.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-fast-track-slip-on-loafer",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Fast Track",
+      "modelName": "Fast Track Slip-On Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/fast-track-slip-on-leather-sneaker/S5322-V2.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "fast track slip-on loafer",
+        "last": "Fast Track",
+        "construction": "Hybrid runner",
+        "upper": "Venezia Leather",
+        "sole": "Sculpted running sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hybrid luxury loafer blending classic Berluti leatherwork with an athletic rubber outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-alessio-leather-loafer",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Alessio",
+      "modelName": "Alessio Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/alessio-leather-loafer/S4230-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "alessio leather loafer",
+        "last": "Alessio",
+        "construction": "Cemented flexible",
+        "upper": "Venezia Gloria Calfskin",
+        "sole": "Microcellular rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual formal dress loafer set atop an ultra-lightweight microcellular sole.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-playtime-venezia-leather-loafer",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Playtime",
+      "modelName": "Playtime Venezia Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/playtime-slip-on-loafer/S5211-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "playtime venezia leather loafer",
+        "last": "Playtime",
+        "construction": "Cupsole slip-on",
+        "upper": "Patinated Venezia Leather",
+        "sole": "Rubber cupsole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slip-on casual skate loafer cut from a single piece of hand-patinated Venezia hide.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-shadow-knit-slip-on-loafer",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Shadow",
+      "modelName": "Shadow Knit Slip-On Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/shadow-knit-slip-on/S5045-K1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "shadow knit slip-on loafer",
+        "last": "Shadow",
+        "construction": "Engineered knit & leather",
+        "upper": "Technical Knit / Venezia Trim",
+        "sole": "Rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary sock-construction loafer accented with patinated leather crest.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-escale-leather-mule-loafer",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Escale",
+      "modelName": "Escale Leather Mule Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/escale-leather-mule/S5600-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "escale leather mule loafer",
+        "last": "Escale",
+        "construction": "Backless slip-on",
+        "upper": "Scritto Engraved Calfskin",
+        "sole": "Flat leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Effortless open-back luxury babouche slipper loafer etched with 18th-century Scritto calligraphy.",
+      "status": "staged"
+    },
+    {
+      "id": "berluti-alessandro-infini-loafer",
+      "canonicalBrand": "Berluti",
+      "displayBrand": "Berluti",
+      "productLine": "Alessandro",
+      "modelName": "Alessandro Infini Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.berluti.com/en-us/alessandro-infini-loafer/S5800-V1.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "berluti",
+        "modelName": "alessandro infini loafer",
+        "last": "Infini",
+        "construction": "Goodyear welted",
+        "upper": "Venezia Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seamless wholecut slip-on dress loafer showcasing the pure artistry of patinated leather.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-piccadilly-penny-loafer",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Piccadilly Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/piccadilly-black-calf-184-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "piccadilly penny loafer",
+        "last": "184",
+        "construction": "Goodyear welted",
+        "upper": "Black Calf / Dark Oak Calf",
+        "sole": "Oak bark leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Benchmark English penny loafer on the soft almond 184 last with hand-sewn apron.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-duke-unlined-penny-loafer",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Unlined Series",
+      "modelName": "Duke Unlined Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/duke-snuff-suede-137-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "duke unlined penny loafer",
+        "last": "137",
+        "construction": "Goodyear welted unlined",
+        "upper": "Snuff Suede",
+        "sole": "Flexible R1 rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight unlined summer loafer crafted from supple English snuff suede on the 137 last.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-harrow-tassel-loafer",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Harrow Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/harrow-burgundy-cruiser-184-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "harrow tassel loafer",
+        "last": "184",
+        "construction": "Goodyear welted",
+        "upper": "Cruiser Calf / Suede",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional tassel loafer with delicate woven collar piping and hand-knotted tassels.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-polperro-suede-loafer",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Casual Collection",
+      "modelName": "Polperro Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/polperro-navy-suede-389-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "polperro suede loafer",
+        "last": "389",
+        "construction": "Cemented slip-on",
+        "upper": "French Calf Suede",
+        "sole": "Unstructured rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual unlined Belgian-style loafer designed for easy travel and warm climates.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-belgravia-tassel-loafer",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Belgravia Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/belgravia-dark-oak-antique-184-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "belgravia tassel loafer",
+        "last": "184",
+        "construction": "Goodyear welted",
+        "upper": "Dark Oak Antique Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Celebrated tassel loafer famous for its hand-braided side lacing and hand-burnished calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-ventnor-penny-loafer",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Unlined Series",
+      "modelName": "Ventnor Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/ventnor-mink-suede-184-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "ventnor penny loafer",
+        "last": "184",
+        "construction": "Goodyear welted",
+        "upper": "Mink Suede",
+        "sole": "Flexible single leather"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Understated soft suede penny loafer engineered for seamless warm-weather wear.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-banbury-apron-loafer",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Classic Collection",
+      "modelName": "Banbury Apron Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/banbury-black-calf-82-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "banbury apron loafer",
+        "last": "82",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek chisel-toe apron slip-on shoe built on the classic Edward Green 82 last.",
+      "status": "staged"
+    },
+    {
+      "id": "edward-green-portland-tassel-bow-loafer",
+      "canonicalBrand": "Edward Green",
+      "displayBrand": "Edward Green",
+      "productLine": "Casual Collection",
+      "modelName": "Portland Tassel Bow Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.edwardgreen.com/shop/portland-snuff-suede-389-last.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "edward green",
+        "modelName": "portland tassel bow loafer",
+        "last": "389",
+        "construction": "Belgian construction",
+        "upper": "Snuff Suede",
+        "sole": "Thin leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chic Belgian-inspired loafer adorned with miniature leather bow and contrast piping.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-pembrey-leather-loafer",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Pembrey",
+      "modelName": "Pembrey Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/loafers/product.pembrey_prestige_calf_leather_loafer.EDB003_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "pembrey leather loafer",
+        "last": "126",
+        "construction": "Goodyear welted",
+        "upper": "Prestige Calf Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Church's quintessential classic penny loafer with gimping and hand-stitched apron.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-oreham-bookbinder-loafer",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Oreham",
+      "modelName": "Oreham Bookbinder Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/loafers/product.oreham_bookbinder_leather_loafer.EDC002_9XV_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "oreham bookbinder loafer",
+        "last": "125",
+        "construction": "Goodyear welted",
+        "upper": "Polished Binder Leather",
+        "sole": "Chunky leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Polished binder leather penny loafer with high gloss and robust welted sole.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-keats-ii-tassel-loafer",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Keats",
+      "modelName": "Keats II Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/loafers/product.keats_ii_calf_leather_tassel_loafer.EDC004_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "keats ii tassel loafer",
+        "last": "93",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional English tassel loafer on the historic round-toe 93 last.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-tunbridge-penny-loafer",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Tunbridge",
+      "modelName": "Tunbridge Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/loafers/product.tunbridge_bookbinder_loafer.EDB004_9XV_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "tunbridge penny loafer",
+        "last": "126",
+        "construction": "Goodyear welted",
+        "upper": "Bookbinder leather",
+        "sole": "Double leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sturdy collegiate penny loafer featuring notched penny cutout strap.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-darwin-suede-penny-loafer",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Darwin",
+      "modelName": "Darwin Suede Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/loafers/product.darwin_suede_penny_loafer.EDC020_9VJ_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "darwin suede penny loafer",
+        "last": "103",
+        "construction": "Goodyear welted unlined",
+        "upper": "Castoro Suede",
+        "sole": "Church & Co rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Soft suede unlined summer penny loafer with flexible crepe-texture rubber sole.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-coldecott-split-toe-loafer",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Coldecott",
+      "modelName": "Coldecott Split Toe Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/loafers/product.coldecott_leather_loafer.EDC032_9LG_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "coldecott split toe loafer",
+        "last": "126",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Split-toe Norwegian apron loafer with intricate hand-stitched detailing.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-willenhall-suede-loafer",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Willenhall",
+      "modelName": "Willenhall Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/loafers/product.willenhall_suede_loafer.EDC041_9VJ_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "willenhall suede loafer",
+        "last": "126",
+        "construction": "Goodyear welted",
+        "upper": "Fine Suede",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Understated unlined suede apron loafer with refined lightweight profile.",
+      "status": "staged"
+    },
+    {
+      "id": "churchs-kingsley-2-tassel-loafer",
+      "canonicalBrand": "Church's",
+      "displayBrand": "Church's",
+      "productLine": "Kingsley",
+      "modelName": "Kingsley 2 Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.church-footwear.com/us/en/men/style/loafers/product.kingsley_2_polished_binder.EDB027_9XV_F0AAB_F_000000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "church's",
+        "modelName": "kingsley 2 tassel loafer",
+        "last": "69",
+        "construction": "Goodyear welted",
+        "upper": "Polished Binder Leather",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smart dress tassel slip-on crafted in high-shine bookbinder calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-leisure-handsewn-penny-loafer-986",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "LHS Collection",
+      "modelName": "Leisure Handsewn Penny Loafer 986",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/leisure-handsewn-986/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "leisure handsewn penny loafer 986",
+        "last": "Van Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Color 8 Shell Cordovan",
+        "sole": "Double oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The definitive American penny loafer handcrafted in Horween Color 8 Shell Cordovan.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-tassel-loafer-664-shell-cordovan",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Tassel Collection",
+      "modelName": "Tassel Loafer 664 Shell Cordovan",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/tassel-moccasin-664/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "tassel loafer 664 shell cordovan",
+        "last": "Aberdeen Last",
+        "construction": "Goodyear welted",
+        "upper": "Black Horween Shell Cordovan",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The original tassel loafer invented by Alden in 1948 on the slim Aberdeen last.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-full-strap-penny-loafer-684",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Full Strap",
+      "modelName": "Full Strap Penny Loafer 684",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/full-strap-slip-on-684/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "full strap penny loafer 684",
+        "last": "Aberdeen Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Color 8 Shell Cordovan",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dressy penny loafer characterized by strap extending fully to the welt seam.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-flex-wonder-suede-penny-loafer-6243f",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Flex Welt",
+      "modelName": "Flex Wonder Suede Penny Loafer 6243F",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/penny-loafer-flex-welt-snuff-suede-6243f/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "flex wonder suede penny loafer 6243f",
+        "last": "Copley Last",
+        "construction": "Flex welt system",
+        "upper": "Snuff Suede",
+        "sole": "Oiled flex leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Incomparably flexible unlined suede penny loafer on Alden's patented oiled flex sole.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-dover-unlined-loafer",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Unlined Series",
+      "modelName": "Dover Unlined Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/dover-unlined-loafer-suede/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "dover unlined loafer",
+        "last": "Barrie Last",
+        "construction": "Goodyear welted",
+        "upper": "Repello Suede",
+        "sole": "Flex sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Soft unlined apron slip-on built on the roomy Barrie last.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-cape-cod-beefroll-loafer",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Cape Cod",
+      "modelName": "Cape Cod Collection Beefroll Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/cape-cod-beefroll-penny-loafer/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "cape cod collection beefroll loafer",
+        "last": "Cape Cod Last",
+        "construction": "Handsewn moccasin",
+        "upper": "Full Grain Aniline Calf",
+        "sole": "Vibram rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic Maine handsewn moccasin construction beefroll penny loafer.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-bit-loafer-h465",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "Bit Loafers",
+      "modelName": "Bit Loafer H465",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/bit-loafer-calfskin-h465/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "bit loafer h465",
+        "last": "Cape Cod Last",
+        "construction": "Handsewn",
+        "upper": "Calfskin",
+        "hardware": "Solid brass horsebit",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Traditional American equestrian bit loafer with polished brass hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "alden-chromexcel-leisure-handsewn-loafer",
+      "canonicalBrand": "Alden",
+      "displayBrand": "Alden",
+      "productLine": "LHS Collection",
+      "modelName": "Chromexcel Leisure Handsewn Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://aldenmadison.com/product/lhs-chromexcel-7117s/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "alden",
+        "modelName": "chromexcel leisure handsewn loafer",
+        "last": "Van Last",
+        "construction": "Goodyear welted",
+        "upper": "Horween Brown Chromexcel",
+        "sole": "Commando lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rugged yet refined LHS loafer crafted in weather-resistant Horween Chromexcel leather.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-boston-penny-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Boston Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/boston-dark-brown-cavalry-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "boston penny loafer",
+        "last": "314",
+        "construction": "Goodyear welted",
+        "upper": "Cavalry Calf",
+        "sole": "City rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic round-toe penny loafer on the celebrated 314 last.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-cavendish-tassel-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Cavendish Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/cavendish-dark-brown-burnished-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "cavendish tassel loafer",
+        "last": "325",
+        "construction": "Goodyear welted",
+        "upper": "Burnished Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crockett & Jones's flagship tassel loafer crafted on the generous 325 last.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-harvard-ii-unlined-penny-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Harvard II Unlined Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/harvard-ii-dark-brown-suede/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "harvard ii unlined penny loafer",
+        "last": "376",
+        "construction": "Goodyear welted unlined",
+        "upper": "Repello Suede",
+        "sole": "City rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Unlined version of the classic Boston with closer fitting heel on last 376.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-sydney-penny-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Sydney Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/sydney-black-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "sydney penny loafer",
+        "last": "341",
+        "construction": "Goodyear welted",
+        "upper": "Calfskin",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary penny loafer with elongated soft square toe on last 341.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-grantham-ii-penny-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Grantham II Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/grantham-ii-dark-brown-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "grantham ii penny loafer",
+        "last": "376",
+        "construction": "Goodyear welted",
+        "upper": "Burnished Calf",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined penny loafer tailored with clean stitched apron.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-finchley-butterfly-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Hand Grade",
+      "modelName": "Finchley Butterfly Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/finchley-black-calf-handgrade/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "finchley butterfly loafer",
+        "last": "358",
+        "construction": "Hand Grade Goodyear welted",
+        "upper": "Fine Calfskin",
+        "sole": "Bark tanned leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Artisanal butterfly loafer with intertwined crossover leather strap detailing.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-salcombe-driving-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Casual Collection",
+      "modelName": "Salcombe Driving Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/salcombe-ocean-suede/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "salcombe driving loafer",
+        "last": "Driving Last",
+        "construction": "Moccasin",
+        "upper": "Waterproof Suede",
+        "sole": "Studded rubber driving sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight summer driving shoe made with water-repellent English suede.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-henley-ii-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Henley II Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/henley-ii-tan-scotch-grain/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "henley ii loafer",
+        "last": "325",
+        "construction": "Goodyear welted",
+        "upper": "Scotch Grain Leather",
+        "sole": "Dainite rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Durable country-spec penny loafer in textured Scotch grain with Dainite rubber sole.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-cranford-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Main Collection",
+      "modelName": "Cranford Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/cranford-dark-brown-suede/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "cranford loafer",
+        "last": "360",
+        "construction": "Goodyear welted",
+        "upper": "Fine Suede",
+        "sole": "Single leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slip-on casual apron loafer on the comfortable round-toe 360 last.",
+      "status": "staged"
+    },
+    {
+      "id": "crockett-jones-richmond-ii-loafer",
+      "canonicalBrand": "Crockett & Jones",
+      "displayBrand": "Crockett & Jones",
+      "productLine": "Hand Grade",
+      "modelName": "Richmond II Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.crockettandjones.com/richmond-ii-antique-calf/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "crockett & jones",
+        "modelName": "richmond ii loafer",
+        "last": "330",
+        "construction": "Hand Grade Goodyear welted",
+        "upper": "Antique Calf",
+        "sole": "Oak bark leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Hand Grade collection unlined penny loafer featuring bark-tanned leather soles.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-summer-walk-suede-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Summer Walk",
+      "modelName": "Summer Walk Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/loafers/summer-walk-moccasin-FAM1099"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "summer walk suede loafer",
+        "type": "driving-slipon",
+        "upper": "Water-repellent Suede",
+        "sole": "Lightweight rubber white sole",
+        "lining": "Unlined"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Global luxury benchmark leisure loafer with signature non-slip white rubber sole.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-open-walk-ankle-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Open Walk",
+      "modelName": "Open Walk Ankle Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/ankle-boots/open-walk-ankle-boot-FAM1098"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "open walk ankle loafer",
+        "type": "ankle-slipon",
+        "upper": "Suede with water-repellent finish",
+        "hiddenElastic": "Concealed stretch band",
+        "sole": "Rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-top slip-on loafer with patented concealed elastic band under the tongue.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-summer-charms-walk-suede-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Summer Charms",
+      "modelName": "Summer Charms Walk Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/woman/loafers/summer-charms-walk-moccasin-FAM1095"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "summer charms walk suede loafer",
+        "type": "slipon",
+        "upper": "Suede",
+        "charms": "Engraved My Charms pendants",
+        "sole": "White rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Summer Walk silhouette adorned with engraved metal charms pendants.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-seaside-walk-espadrille-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Seaside Walk",
+      "modelName": "Seaside Walk Espadrille Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/loafers/seaside-walk-espadrille-FAM1240"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "seaside walk espadrille loafer",
+        "type": "espadrille",
+        "upper": "Linen / Suede",
+        "sole": "Jute and rubber braided sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Nautical espadrille loafer blending natural braided jute with supple Italian suede.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-winter-walk-cashmere-lined-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Winter Walk",
+      "modelName": "Winter Walk Cashmere-Lined Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/loafers/winter-walk-loafer-FAM1150"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "winter walk cashmere-lined loafer",
+        "type": "insulated-slipon",
+        "upper": "Calfskin",
+        "lining": "Cashmere lining",
+        "sole": "Winter grip rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cold-weather walking loafer fully lined in plush double cashmere.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-white-sole-seaside-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "White Sole",
+      "modelName": "White Sole Seaside Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/loafers/white-sole-seaside-loafer-FAM1305"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "white sole seaside loafer",
+        "type": "slipon",
+        "upper": "Technical canvas / Nubuck",
+        "sole": "Marine white sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Yachting-ready lightweight moccasin built for salt water resistance and grip.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-flexy-walk-slip-on-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Flexy Walk",
+      "modelName": "Flexy Walk Slip-On Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/loafers/flexy-walk-slip-on-FAM1400"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "flexy walk slip-on loafer",
+        "type": "slipon",
+        "upper": "Wish wool knit",
+        "sole": "Segmented rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-flexible hybrid knitted slip-on loafer made from ultra-fine Wish wool.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-babouche-walk-suede-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Babouche",
+      "modelName": "Babouche Walk Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/loafers/babouche-walk-FAM1520"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "babouche walk suede loafer",
+        "type": "babouche",
+        "upper": "Suede",
+        "heel": "Fold-down collapsible heel counter",
+        "sole": "Rubber"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Collapsible heel slip-on that transitions effortlessly between loafer and slipper.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-city-walk-deerskin-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "City Walk",
+      "modelName": "City Walk Deerskin Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/loafers/city-walk-deerskin-loafer-FAM1600"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "city walk deerskin loafer",
+        "type": "slipon",
+        "upper": "Soft Deerskin",
+        "sole": "Microcellular sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated metropolitan loafer crafted in ultra-soft deerskin hide.",
+      "status": "staged"
+    },
+    {
+      "id": "loro-piana-weekend-walk-leather-loafer",
+      "canonicalBrand": "Loro Piana",
+      "displayBrand": "Loro Piana",
+      "productLine": "Weekend Walk",
+      "modelName": "Weekend Walk Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://us.loropiana.com/en/p/shoes/man/loafers/weekend-walk-leather-FAM1750"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "loro piana",
+        "modelName": "weekend walk leather loafer",
+        "type": "slipon",
+        "upper": "Waxed Calfskin",
+        "sole": "Latex rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual weekend moccasin with hand-sewn apron stitching and cushioned insole.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-suede-penny-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Footwear Collection",
+      "modelName": "Suede Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/suede-penny-loafer-MZUPMBO252.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "suede penny loafer",
+        "upper": "Velvety Calfskin Suede",
+        "construction": "Blake rapid",
+        "sole": "Leather sole with rubber insert"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Solomeo-crafted suede penny loafer expressing relaxed Italian sartorial elegance.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-deerskin-tassel-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Footwear Collection",
+      "modelName": "Deerskin Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/deerskin-tassel-loafer-MZUPMBO260.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "deerskin tassel loafer",
+        "upper": "Grained Deerskin",
+        "details": "Handmade tassels",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Luxuriously soft deerskin slip-on accented with twin leather tassels.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-monili-trim-suede-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Women's Footwear",
+      "modelName": "Monili Trim Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/women/shoes/loafers/monili-suede-loafer-MZSFG2331.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "monili trim suede loafer",
+        "upper": "Suede",
+        "embellishment": "Precious nickel-free Monili beads",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Signature women's penny loafer highlighted by shimmering micro-monili beaded band.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-unlined-suede-penny-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Summer Collection",
+      "modelName": "Unlined Suede Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/unlined-suede-loafer-MZUPMBO270.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "unlined suede penny loafer",
+        "upper": "Unlined Suede",
+        "weight": "Ultra-lightweight",
+        "sole": "Flexible leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Unlined summer loafer with glove-like suppleness and featherweight comfort.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-polished-calfskin-penny-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Formal Series",
+      "modelName": "Polished Calfskin Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/calfskin-penny-loafer-MZUPMBO280.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "polished calfskin penny loafer",
+        "upper": "Hand-finished Calfskin",
+        "construction": "Goodyear welted",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined dress penny loafer in hand-buffed calfskin with hand-finished edges.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-cashmere-lined-suede-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Winter Series",
+      "modelName": "Cashmere-Lined Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/cashmere-lined-loafer-MZUPMBO290.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "cashmere-lined suede loafer",
+        "upper": "Calfskin Suede",
+        "lining": "Pure Cashmere Knit",
+        "sole": "Rubber lug sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Autumn/winter loafer lined with Solomeo cashmere knit for cozy elegance.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-leather-driving-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Driver Series",
+      "modelName": "Leather Driving Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/driving-loafer-MZUPMBO300.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "leather driving loafer",
+        "upper": "Supple Calfskin",
+        "construction": "Tubular moccasin",
+        "sole": "Rubber driving nubs"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic artisanal driving shoe with hand-stitched mask and rubber tread nubs.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-raffia-slip-on-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Resort Series",
+      "modelName": "Raffia-Effect Slip-On Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/raffia-slip-on-loafer-MZUPMBO310.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "raffia-effect slip-on loafer",
+        "upper": "Woven Raffia & Suede",
+        "style": "Resort slip-on",
+        "sole": "Microcellular sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Textured woven resort loafer capturing summer Mediterranean craftsmanship.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-vintage-calfskin-penny-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Vintage Finish",
+      "modelName": "Vintage Calfskin Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/vintage-calfskin-loafer-MZUPMBO320.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "vintage calfskin penny loafer",
+        "upper": "Washed Calfskin",
+        "finish": "Hand-aged patina",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Artisan-washed calfskin penny loafer featuring hand-treated vintage shading.",
+      "status": "staged"
+    },
+    {
+      "id": "cucinelli-corduroy-slip-on-loafer",
+      "canonicalBrand": "Brunello Cucinelli",
+      "displayBrand": "Brunello Cucinelli",
+      "productLine": "Sartorial Series",
+      "modelName": "Corduroy Slip-On Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://shop.brunellocucinelli.com/en-us/men/shoes/loafers/corduroy-slip-on-loafer-MZUPMBO330.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "brunello cucinelli",
+        "modelName": "corduroy slip-on loafer",
+        "upper": "Cotton Corduroy / Suede Piping",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tailored house-slipper loafer cut in wide-wale ribbed cotton corduroy.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-gommino-driving-shoes-in-suede",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Gommino",
+      "modelName": "Gommino Driving Shoes in Suede",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Gommino-Driving-Shoes-in-Suede/p/XXM0GW05470RE0S800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "gommino driving shoes in suede",
+        "upper": "Calfskin Suede",
+        "sole": "Signature 133 rubber pebbles (gommini)",
+        "construction": "Tubular hand-stitched"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Diego Della Valle's iconic Gommino driving shoe that launched the luxury moccasin category.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-gommino-leather-driving-shoes",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Gommino",
+      "modelName": "Gommino Leather Driving Shoes",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Gommino-Driving-Shoes-in-Leather/p/XXM0GW05470D9CS801/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "gommino leather driving shoes",
+        "upper": "Semi-shiny Calf Leather",
+        "sole": "Rubber pebbles",
+        "details": "Exposed hand stitching"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic leather iteration of the Gommino with stamped Tod's monogram on the front tie.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-city-gommino-loafer",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "City Gommino",
+      "modelName": "City Gommino Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/City-Gommino-in-Leather/p/XXM42C00050AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "city gommino loafer",
+        "upper": "Calfskin Leather",
+        "sole": "City rubber sole with integrated gommini",
+        "style": "City loafer"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reinforced city version featuring rubber-pod outsoles for extended urban walking.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-timeless-leather-loafer",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "T Timeless",
+      "modelName": "Timeless Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/T-Timeless-Loafers-in-Leather/p/XXM51K00010AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "timeless leather loafer",
+        "upper": "Brushed Calfskin",
+        "hardware": "Metal T Timeless buckle",
+        "sole": "Leather sole with rubber heel"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary dress loafer embellished with metal T Timeless accessory buckle.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-double-t-leather-loafer",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Double T",
+      "modelName": "Double T Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Double-T-Loafers-in-Leather/p/XXM0ZF0Q920D9CS801/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "double t leather loafer",
+        "upper": "Smooth Leather",
+        "hardware": "Interlocking Double T metal buckle",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smart tailored loafer accented with interlocking metal Double T logo hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-kate-suede-loafer",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Kate",
+      "modelName": "Kate Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Kate-Loafers-in-Suede/p/XXW08J0EY40RE0S018/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "kate suede loafer",
+        "upper": "Suede Leather",
+        "hardware": "Maxi metal chain link accessory",
+        "sole": "Lugged rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Popular fashion loafer featuring oversized sculpted chain link accessory.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-penny-loafer-brushed-leather",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Classic Men",
+      "modelName": "Penny Loafer in Brushed Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Loafers-in-Brushed-Leather/p/XXM26C0EO70AKTB999/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "penny loafer in brushed leather",
+        "upper": "Brushed Calfskin",
+        "sole": "Leather sole with rubber half-sole",
+        "style": "Classic penny"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Heritage penny loafer rendered in hand-burnished semi-shiny calfskin.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-tassel-leather-loafer",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Classic Men",
+      "modelName": "Tassel Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Tassel-Loafers-in-Leather/p/XXM0ZF0Q940D9CS801/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "tassel leather loafer",
+        "upper": "Smooth Calf Leather",
+        "details": "Twin leather tassels",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined dress tassel loafer with braided lace collar and hand-stitched apron.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-fringe-gommino-loafer",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Gommino",
+      "modelName": "Fringe Gommino Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Fringe-Gommino-Loafers/p/XXW00G00010D8WC406/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "fringe gommino loafer",
+        "upper": "Hammered Leather",
+        "details": "Kiltie fringe and bow",
+        "sole": "Gommini rubber pebbles"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Kiltie fringe detail driving moccasin in textured hammered leather.",
+      "status": "staged"
+    },
+    {
+      "id": "tods-slip-on-suede-penny-loafer",
+      "canonicalBrand": "Tod's",
+      "displayBrand": "Tod's",
+      "productLine": "Casual Collection",
+      "modelName": "Slip-On Suede Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.tods.com/us-en/Slip-On-Loafers-in-Suede/p/XXM42C0EN70RE0S800/"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "tod's",
+        "modelName": "slip-on suede penny loafer",
+        "upper": "Unlined Suede",
+        "sole": "Ultra-light rubber cassette sole",
+        "style": "Slip-on penny"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual unlined suede slip-on shoe on a modern sneaker-moccasin cassette sole.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-double-buckle-monk-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Double Buckle",
+      "modelName": "Double Buckle Monk Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/double-buckle-monk-strap-shoe-mcdc16947mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "double buckle monk loafer",
+        "upper": "Hand-patinated Calfskin",
+        "hardware": "Twin brass buckles",
+        "sole": "Goodyear welted leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Santoni's signature double-buckle silhouette combining monk strap and slip-on styling.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-hand-antiqued-penny-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Classic Collection",
+      "modelName": "Hand-Antiqued Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/hand-antiqued-penny-loafer-mcdu16948mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "hand-antiqued penny loafer",
+        "upper": "Antiqued Calfskin",
+        "finish": "Velatura hand-coloring",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Penny loafer showcasing Santoni's multistep Velatura hand-tinted color gradient.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-classic-tassel-leather-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Classic Collection",
+      "modelName": "Classic Tassel Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/classic-tassel-leather-loafer-mcto16949mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "classic tassel leather loafer",
+        "upper": "Calfskin",
+        "details": "Twin hand-sewn tassels",
+        "sole": "Leather sole with orange Santoni sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Formal tassel loafer finished with Santoni's distinctive iconic orange-painted sole.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-cleanic-suede-slip-on-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Cleanic Series",
+      "modelName": "Cleanic Suede Slip-On Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/cleanic-suede-slip-on-mccc16950mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "cleanic suede slip-on loafer",
+        "upper": "Water-repellent Suede",
+        "sole": "Flexible rubber sole",
+        "lining": "Unlined"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Casual unlined summer slip-on loafer designed for modern globetrotters.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-goodyear-welted-leather-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Goodyear Masters",
+      "modelName": "Goodyear-Welted Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/goodyear-leather-loafer-mcgy16951mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "goodyear-welted leather loafer",
+        "upper": "Box Calfskin",
+        "construction": "Goodyear reverse welted",
+        "sole": "Oak leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Robust Goodyear-welted dress penny loafer built for decades of resoling.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-flexible-suede-driving-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Driver Series",
+      "modelName": "Flexible Suede Driving Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/flexible-suede-driver-mcdr16952mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "flexible suede driving loafer",
+        "upper": "Calf Suede",
+        "construction": "Tubular moccasin",
+        "sole": "Segmented rubber tread"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Handcrafted driving moccasin with ergonomic rubber treads.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-collapsible-heel-babouche-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Babouche Series",
+      "modelName": "Collapsible Heel Babouche Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/collapsible-babouche-loafer-mcbb16953mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "collapsible heel babouche loafer",
+        "upper": "Ultra-soft Nappa",
+        "heel": "Foldable leather heel counter",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Versatile indoor-outdoor loafer with collapsible back counter.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-woven-leather-penny-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Intrecciato Series",
+      "modelName": "Woven Leather Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/woven-leather-penny-loafer-mcwv16954mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "woven leather penny loafer",
+        "upper": "Hand-woven Leather Strips",
+        "construction": "Blake stitched",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Artisanal woven leather penny loafer offering exceptional breathability and flexibility.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-suede-loafer-contrast-sole",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Urban Casual",
+      "modelName": "Suede Penny Loafer with Contrast Sole",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/suede-loafer-contrast-sole-mccs16955mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "suede penny loafer with contrast sole",
+        "upper": "Suede",
+        "sole": "Contrasting off-white rubber cassette sole",
+        "style": "Urban hybrid"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Smart-casual loafer resting on a sleek off-white rubber cassette outsole.",
+      "status": "staged"
+    },
+    {
+      "id": "santoni-leather-venetian-slip-on-loafer",
+      "canonicalBrand": "Santoni",
+      "displayBrand": "Santoni",
+      "productLine": "Venetian Series",
+      "modelName": "Leather Venetian Slip-On Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.santonishoes.com/us-en/leather-venetian-slip-on-mcvn16956mc1hvdou44.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "santoni",
+        "modelName": "leather venetian slip-on loafer",
+        "upper": "Polished Calfskin",
+        "style": "Plain toe Venetian slipper",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean Venetian-style plain vamp loafer free of saddle or decorative hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-gancini-bit-leather-loafer",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Gancini Bit",
+      "modelName": "Gancini Bit Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-moccasins/gancini-bit-loafer-020473-746765"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "gancini bit leather loafer",
+        "upper": "Calfskin",
+        "hardware": "Gold or silver Gancini bit",
+        "construction": "Tubular construction",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ferragamo's classic dress loafer crowned by the signature Gancini horsebit ornament.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-grandioso-gancini-loafer",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Grandioso",
+      "modelName": "Grandioso Gancini Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-moccasins/grandioso-loafer-029392-642848"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "grandioso gancini loafer",
+        "upper": "Smooth Calf Leather",
+        "hardware": "Reversible two-tone Gancini bit",
+        "sole": "Leather sole with rubber insert"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Best-selling Ferragamo loafer featuring reversible palladium and gold Gancini hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-parigi-driving-loafer",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Parigi",
+      "modelName": "Parigi Driving Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/driving-shoes/parigi-driver-024728-671739"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "parigi driving loafer",
+        "upper": "Grained Calfskin",
+        "hardware": "Gunmetal Gancini bit",
+        "sole": "Segmented rubber driving sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic driving shoe combining textured calf leather and flexible rubber driving sole.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-rolo-reversible-gancini-loafer",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Rolo",
+      "modelName": "Rolo Reversible Gancini Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-moccasins/rolo-loafer-02b489-709402"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "rolo reversible gancini loafer",
+        "upper": "Calfskin",
+        "hardware": "Reversible bit with enamel inlay",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined dress loafer with dual-sided reversible Gancini bit with enamel details.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-chris-gancini-moccasin",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Chris",
+      "modelName": "Chris Gancini Moccasin",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-moccasins/chris-moccasin-02b417-703399"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "chris gancini moccasin",
+        "upper": "Calfskin Leather",
+        "hardware": "Matte black Gancini bit",
+        "sole": "Rubber sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern urban moccasin with tonal hardware and durable rubber tread.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-mason-suede-penny-loafer",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Mason",
+      "modelName": "Mason Suede Penny Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-moccasins/mason-suede-loafer-02a879-688525"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "mason suede penny loafer",
+        "upper": "Velvety Suede",
+        "style": "Penny strap cut-out",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic penny loafer in rich Italian suede with hand-stitched apron.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-vara-bow-leather-loafer",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Vara Collection",
+      "modelName": "Vara Bow Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/women/shoes/loafers-moccasins/vara-bow-loafer-01r378-732948"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "vara bow leather loafer",
+        "upper": "Calfskin",
+        "embellishment": "Grosgrain Vara bow with gold logo plate",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Feminine dress loafer adorned with the historic Vara grosgrain bow.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-driver-moccasin-hammered-leather",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Drivers",
+      "modelName": "Driver Moccasin in Hammered Leather",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/driving-shoes/driver-moccasin-020521-750100"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "driver moccasin in hammered leather",
+        "upper": "Hammered Calfskin",
+        "hardware": "Mini Gancini buckle",
+        "sole": "Rubber driving nubs"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Scratch-resistant hammered calfskin driving shoe with rubber pebble sole.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-peter-soft-suede-loafer",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Peter",
+      "modelName": "Peter Soft Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-moccasins/peter-loafer-020732-756180"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "peter soft suede loafer",
+        "upper": "Unlined Suede",
+        "style": "Slip-on penny",
+        "sole": "Flexible leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultra-supple unlined suede summer slip-on with cushioned footbed.",
+      "status": "staged"
+    },
+    {
+      "id": "ferragamo-crown-gancini-bit-loafer",
+      "canonicalBrand": "Ferragamo",
+      "displayBrand": "Ferragamo",
+      "productLine": "Crown",
+      "modelName": "Crown Gancini Bit Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-moccasins/crown-bit-loafer-021045-762300"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "ferragamo",
+        "modelName": "crown gancini bit loafer",
+        "upper": "Semi-matte Calfskin",
+        "hardware": "Chunky Gancini link bit",
+        "sole": "Thick leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Substantial dress loafer featuring an exaggerated, architectural Gancini bit.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-1953-horsebit-leather-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "1953 Collection",
+      "modelName": "1953 Horsebit Leather Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-1953-horsebit-loafer-p-307929BLM001000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "1953 horsebit leather loafer",
+        "upper": "Calfskin",
+        "hardware": "Antique brass Horsebit",
+        "construction": "Blake stitched",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The quintessential luxury loafer created in 1953, featuring the iconic equestrian metal horsebit.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-brixton-convertible-horsebit-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Brixton",
+      "modelName": "Brixton Convertible Horsebit Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-brixton-horsebit-loafer-p-407314DLC001000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "brixton convertible horsebit loafer",
+        "upper": "Soft Leather",
+        "heel": "Fold-down collapsible heel counter",
+        "hardware": "Gold Horsebit",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern icon designed with a soft collapsible heel that can be worn up or down as a mule.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-jordaan-leather-horsebit-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Jordaan",
+      "modelName": "Jordaan Leather Horsebit Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-jordaan-leather-loafer-p-406994BLM001000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "jordaan leather horsebit loafer",
+        "upper": "Smooth Calfskin",
+        "hardware": "Gold Horsebit",
+        "silhouette": "Slim elongated toe",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slimmer, contemporary profile on an elongated last with signature Horsebit hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-lug-sole-horsebit-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Lug Sole",
+      "modelName": "Lug Sole Horsebit Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-leather-lug-sole-loafer-p-577236DS8001000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "lug sole horsebit loafer",
+        "upper": "Shiny Calf Leather",
+        "sole": "Chunky rubber lug sole",
+        "hardware": "Gold Horsebit"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bold chunky lug-sole iteration blending classic horsebit with heavy streetwear profile.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-horsebit-suede-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "1953 Collection",
+      "modelName": "Horsebit Suede Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-horsebit-suede-loafer-p-32250917X601060"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "horsebit suede loafer",
+        "upper": "Suede",
+        "hardware": "Burnished Horsebit",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic 1953 silhouette crafted in rich velvety brown suede.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-web-detail-horsebit-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Web Stripe",
+      "modelName": "Web Detail Horsebit Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-loafer-with-web-p-386591BKO001000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "web detail horsebit loafer",
+        "upper": "Leather",
+        "details": "Green and red Web stripe underlay",
+        "hardware": "Horsebit",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Iconic combination of green and red web ribbon underneath the gold horsebit.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-interlocking-g-tassel-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Interlocking G",
+      "modelName": "Interlocking G Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-tassel-loafer-with-interlocking-g-p-6456001W7101000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "interlocking g tassel loafer",
+        "upper": "Calfskin",
+        "hardware": "Interlocking G metal studs",
+        "details": "Leather tassels",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dress tassel loafer embellished with miniature Interlocking G hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-princetown-leather-slipper-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Princetown",
+      "modelName": "Princetown Leather Slipper Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-princetown-leather-slipper-p-397749DKHH01063"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "princetown leather slipper loafer",
+        "upper": "Calfskin",
+        "style": "Backless mule slipper",
+        "hardware": "Gold Horsebit",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Influential backless mule loafer created by Alessandro Michele that reshaped modern footwear.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-paride-tassel-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Paride",
+      "modelName": "Paride Tassel Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-paride-tassel-loafer-p-6288541W7101000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "paride tassel loafer",
+        "upper": "Two-tone leather",
+        "details": "Kiltie fringe and tassels",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage collegiate kiltie loafer accented with twin tassels and contrast stitching.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-donnie-gg-bit-loafer",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "productLine": "Donnie",
+      "modelName": "Donnie GG Bit Loafer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/shoes-for-men/moccasins-and-loafers-for-men/mens-donnie-leather-loafer-p-431063DJ2001000"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Standard"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "donnie gg bit loafer",
+        "upper": "Smooth Leather",
+        "hardware": "Double G buckle strap",
+        "silhouette": "Square toe",
+        "sole": "Leather sole"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Streamlined dress loafer anchored by the clean Double G monogram buckle.",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "John Lobb",
+      "leafKey": "loafers",
+      "reason": "Historic English cordwainer John Lobb produces 8 core artisanal Goodyear-welted and cemented slip-on loafer models in its Northampton atelier.",
+      "officialSourceUrl": "https://www.johnlobb.com/en_us/mens-shoes/loafers.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Lopez Loafer",
+        "City II Loafer",
+        "Lawry Loafer",
+        "Haven Slip-On Loafer",
+        "Callington Penny Loafer",
+        "Bath Tassel Loafer",
+        "Thorne Apron Loafer",
+        "Penzance Driving Loafer"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "Berluti",
+      "leafKey": "loafers",
+      "reason": "Parisian master bottier Berluti maintains a catalog of 8 signature patinated Venezia leather and unlined luxury loafer silhouettes.",
+      "officialSourceUrl": "https://www.berluti.com/en-us/shoes/loafers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Lorenzo Rimini Leather Loafer",
+        "Andy Demesure Leather Loafer",
+        "Fast Track Slip-On Loafer",
+        "Alessio Leather Loafer",
+        "Playtime Venezia Leather Loafer",
+        "Shadow Knit Slip-On Loafer",
+        "Escale Leather Mule Loafer",
+        "Alessandro Infini Loafer"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "FR"
+    },
+    {
+      "brand": "Edward Green",
+      "leafKey": "loafers",
+      "reason": "Northampton bench-made shoemaker Edward Green limits its ready-to-wear loafer lineup to 8 hand-cut apron and tassel designs.",
+      "officialSourceUrl": "https://www.edwardgreen.com/shop/shoes/loafers.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Piccadilly Penny Loafer",
+        "Duke Unlined Penny Loafer",
+        "Harrow Tassel Loafer",
+        "Polperro Suede Loafer",
+        "Belgravia Tassel Loafer",
+        "Ventnor Penny Loafer",
+        "Banbury Apron Loafer",
+        "Portland Tassel Bow Loafer"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "Church's",
+      "leafKey": "loafers",
+      "reason": "Heritage British shoemaker Church's crafts 8 timeless Goodyear-welted bookbinder and calfskin loafer references.",
+      "officialSourceUrl": "https://www.church-footwear.com/us/en/men/style/loafers.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Pembrey Leather Loafer",
+        "Oreham Bookbinder Loafer",
+        "Keats II Tassel Loafer",
+        "Tunbridge Penny Loafer",
+        "Darwin Suede Penny Loafer",
+        "Coldecott Split Toe Loafer",
+        "Willenhall Suede Loafer",
+        "Kingsley 2 Tassel Loafer"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "Alden",
+      "leafKey": "loafers",
+      "reason": "New England artisanal cordwainer Alden manufactures 8 benchmark Horween shell cordovan and calfskin slip-on loafer lasts.",
+      "officialSourceUrl": "https://aldenmadison.com/product-category/loafers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Leisure Handsewn Penny Loafer 986",
+        "Tassel Loafer 664 Shell Cordovan",
+        "Full Strap Penny Loafer 684",
+        "Flex Wonder Suede Penny Loafer 6243F",
+        "Dover Unlined Loafer",
+        "Cape Cod Collection Beefroll Loafer",
+        "Bit Loafer H465",
+        "Chromexcel Leisure Handsewn Loafer"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "US"
+    }
+  ]
+}

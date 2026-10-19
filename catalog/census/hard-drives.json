@@ -1,0 +1,1403 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "hard-drives",
+  "displayName": "External & Internal Hard Drives",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "wd-my-passport-ultra",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "My Passport / Elements / WD_BLACK",
+      "modelName": "My Passport Ultra",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/my-passport-ultra"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/wd-my-passport-ultra.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "my passport ultra",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB-C 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD hard disk storage drive My Passport Ultra",
+      "status": "staged"
+    },
+    {
+      "id": "wd-elements-portable",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "My Passport / Elements / WD_BLACK",
+      "modelName": "Elements Portable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/elements-portable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/wd-elements-portable.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "elements portable",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.0",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD hard disk storage drive Elements Portable",
+      "status": "staged"
+    },
+    {
+      "id": "wd-black-p10-game-drive",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "My Passport / Elements / WD_BLACK",
+      "modelName": "WD_BLACK P10 Game Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/black-p10-game-drive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/wd-black-p10-game-drive.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd_black p10 game drive",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD hard disk storage drive WD_BLACK P10 Game Drive",
+      "status": "staged"
+    },
+    {
+      "id": "wd-blue-desktop-3-5",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "My Passport / Elements / WD_BLACK",
+      "modelName": "WD Blue Desktop 3.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/blue-desktop-3-5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/wd-blue-desktop-3-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd blue desktop 3.5\"",
+        "driveType": "Internal Desktop",
+        "rpm": 7200,
+        "interface": "SATA III 6Gb/s",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD hard disk storage drive WD Blue Desktop 3.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "wd-red-plus-nas-3-5",
+      "canonicalBrand": "WD",
+      "displayBrand": "Western Digital",
+      "productLine": "My Passport / Elements / WD_BLACK",
+      "modelName": "WD Red Plus NAS 3.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/products/red-plus-nas-3-5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/wd-red-plus-nas-3-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "wd",
+        "modelName": "wd red plus nas 3.5\"",
+        "driveType": "Internal NAS",
+        "rpm": 5400,
+        "interface": "SATA III 6Gb/s",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "WD hard disk storage drive WD Red Plus NAS 3.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "seagate-one-touch-portable",
+      "canonicalBrand": "Seagate",
+      "displayBrand": "Seagate",
+      "productLine": "One Touch / FireCuda / IronWolf",
+      "modelName": "One Touch Portable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.seagate.com/products/one-touch-portable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.seagate.com/images/seagate-one-touch-portable.png"
+      },
+      "collectedAttributes": {
+        "brand": "seagate",
+        "modelName": "one touch portable",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seagate hard drive storage One Touch Portable",
+      "status": "staged"
+    },
+    {
+      "id": "seagate-expansion-portable",
+      "canonicalBrand": "Seagate",
+      "displayBrand": "Seagate",
+      "productLine": "One Touch / FireCuda / IronWolf",
+      "modelName": "Expansion Portable",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.seagate.com/products/expansion-portable"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.seagate.com/images/seagate-expansion-portable.png"
+      },
+      "collectedAttributes": {
+        "brand": "seagate",
+        "modelName": "expansion portable",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.0",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seagate hard drive storage Expansion Portable",
+      "status": "staged"
+    },
+    {
+      "id": "seagate-firecuda-gaming-hdd",
+      "canonicalBrand": "Seagate",
+      "displayBrand": "Seagate",
+      "productLine": "One Touch / FireCuda / IronWolf",
+      "modelName": "FireCuda Gaming Hard Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.seagate.com/products/firecuda-gaming-hdd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.seagate.com/images/seagate-firecuda-gaming-hdd.png"
+      },
+      "collectedAttributes": {
+        "brand": "seagate",
+        "modelName": "firecuda gaming hard drive",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seagate hard drive storage FireCuda Gaming Hard Drive",
+      "status": "staged"
+    },
+    {
+      "id": "seagate-barracuda-3-5",
+      "canonicalBrand": "Seagate",
+      "displayBrand": "Seagate",
+      "productLine": "One Touch / FireCuda / IronWolf",
+      "modelName": "BarraCuda Desktop 3.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.seagate.com/products/barracuda-3-5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.seagate.com/images/seagate-barracuda-3-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "seagate",
+        "modelName": "barracuda desktop 3.5\"",
+        "driveType": "Internal Desktop",
+        "rpm": 7200,
+        "interface": "SATA III 6Gb/s",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seagate hard drive storage BarraCuda Desktop 3.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "seagate-ironwolf-nas-3-5",
+      "canonicalBrand": "Seagate",
+      "displayBrand": "Seagate",
+      "productLine": "One Touch / FireCuda / IronWolf",
+      "modelName": "IronWolf NAS 3.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.seagate.com/products/ironwolf-nas-3-5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.seagate.com/images/seagate-ironwolf-nas-3-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "seagate",
+        "modelName": "ironwolf nas 3.5\"",
+        "driveType": "Internal NAS",
+        "rpm": 7200,
+        "interface": "SATA III 6Gb/s",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Seagate hard drive storage IronWolf NAS 3.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "toshiba-canvio-basics",
+      "canonicalBrand": "Toshiba",
+      "displayBrand": "Toshiba",
+      "productLine": "Canvio / N300 / X300",
+      "modelName": "Canvio Basics",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.canvio.jp/en/canvio-basics"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.canvio.jp/images/toshiba-canvio-basics.png"
+      },
+      "collectedAttributes": {
+        "brand": "toshiba",
+        "modelName": "canvio basics",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.0",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Toshiba high density hard drive Canvio Basics",
+      "status": "staged"
+    },
+    {
+      "id": "toshiba-canvio-advance",
+      "canonicalBrand": "Toshiba",
+      "displayBrand": "Toshiba",
+      "productLine": "Canvio / N300 / X300",
+      "modelName": "Canvio Advance",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.canvio.jp/en/canvio-advance"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.canvio.jp/images/toshiba-canvio-advance.png"
+      },
+      "collectedAttributes": {
+        "brand": "toshiba",
+        "modelName": "canvio advance",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Toshiba high density hard drive Canvio Advance",
+      "status": "staged"
+    },
+    {
+      "id": "toshiba-canvio-flex",
+      "canonicalBrand": "Toshiba",
+      "displayBrand": "Toshiba",
+      "productLine": "Canvio / N300 / X300",
+      "modelName": "Canvio Flex",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.canvio.jp/en/canvio-flex"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.canvio.jp/images/toshiba-canvio-flex.png"
+      },
+      "collectedAttributes": {
+        "brand": "toshiba",
+        "modelName": "canvio flex",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB-C / USB 3.2",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Toshiba high density hard drive Canvio Flex",
+      "status": "staged"
+    },
+    {
+      "id": "toshiba-n300-nas-3-5",
+      "canonicalBrand": "Toshiba",
+      "displayBrand": "Toshiba",
+      "productLine": "Canvio / N300 / X300",
+      "modelName": "N300 NAS Internal 3.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.canvio.jp/en/n300-nas-3-5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.canvio.jp/images/toshiba-n300-nas-3-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "toshiba",
+        "modelName": "n300 nas internal 3.5\"",
+        "driveType": "Internal NAS",
+        "rpm": 7200,
+        "interface": "SATA III 6Gb/s",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Toshiba high density hard drive N300 NAS Internal 3.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "toshiba-x300-pro-3-5",
+      "canonicalBrand": "Toshiba",
+      "displayBrand": "Toshiba",
+      "productLine": "Canvio / N300 / X300",
+      "modelName": "X300 Performance Internal 3.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.canvio.jp/en/x300-pro-3-5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.canvio.jp/images/toshiba-x300-pro-3-5.png"
+      },
+      "collectedAttributes": {
+        "brand": "toshiba",
+        "modelName": "x300 performance internal 3.5\"",
+        "driveType": "Internal Desktop",
+        "rpm": 7200,
+        "interface": "SATA III 6Gb/s",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Toshiba high density hard drive X300 Performance Internal 3.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "lacie-rugged-mini",
+      "canonicalBrand": "LaCie",
+      "displayBrand": "LaCie",
+      "productLine": "Rugged / d2",
+      "modelName": "Rugged Mini",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lacie.com/products/rugged-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.lacie.com/images/lacie-rugged-mini.png"
+      },
+      "collectedAttributes": {
+        "brand": "lacie",
+        "modelName": "rugged mini",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB 3.0",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LaCie professional field drive Rugged Mini",
+      "status": "staged"
+    },
+    {
+      "id": "lacie-rugged-usb-c",
+      "canonicalBrand": "LaCie",
+      "displayBrand": "LaCie",
+      "productLine": "Rugged / d2",
+      "modelName": "Rugged USB-C",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lacie.com/products/rugged-usb-c"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.lacie.com/images/lacie-rugged-usb-c.png"
+      },
+      "collectedAttributes": {
+        "brand": "lacie",
+        "modelName": "rugged usb-c",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB-C 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LaCie professional field drive Rugged USB-C",
+      "status": "staged"
+    },
+    {
+      "id": "lacie-d2-professional",
+      "canonicalBrand": "LaCie",
+      "displayBrand": "LaCie",
+      "productLine": "Rugged / d2",
+      "modelName": "d2 Professional",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lacie.com/products/d2-professional"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.lacie.com/images/lacie-d2-professional.png"
+      },
+      "collectedAttributes": {
+        "brand": "lacie",
+        "modelName": "d2 professional",
+        "driveType": "External Desktop",
+        "rpm": 7200,
+        "interface": "USB-C 3.2 Gen 2",
+        "formFactorInches": 3.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LaCie professional field drive d2 Professional",
+      "status": "staged"
+    },
+    {
+      "id": "lacie-1big-dock",
+      "canonicalBrand": "LaCie",
+      "displayBrand": "LaCie",
+      "productLine": "Rugged / d2",
+      "modelName": "1big Dock",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lacie.com/products/1big-dock"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "5TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.lacie.com/images/lacie-1big-dock.png"
+      },
+      "collectedAttributes": {
+        "brand": "lacie",
+        "modelName": "1big dock",
+        "driveType": "External Desktop Dock",
+        "rpm": 7200,
+        "interface": "Thunderbolt 3",
+        "formFactorInches": 3.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "LaCie professional field drive 1big Dock",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-pro-g-drive-armor-atd",
+      "canonicalBrand": "SanDisk Professional",
+      "displayBrand": "SanDisk Professional",
+      "productLine": "G-DRIVE",
+      "modelName": "G-DRIVE ArmorATD",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/sandisk-pro/g-drive-armor-atd"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "4TB",
+        "8TB",
+        "12TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/sandisk-pro-g-drive-armor-atd.png"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk professional",
+        "modelName": "g-drive armoratd",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB-C 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk Professional studio drive G-DRIVE ArmorATD",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-pro-g-drive-desktop",
+      "canonicalBrand": "SanDisk Professional",
+      "displayBrand": "SanDisk Professional",
+      "productLine": "G-DRIVE",
+      "modelName": "G-DRIVE Enterprise-Class Desktop 3.5\"",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/sandisk-pro/g-drive-desktop"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "4TB",
+        "8TB",
+        "12TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/sandisk-pro-g-drive-desktop.png"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk professional",
+        "modelName": "g-drive enterprise-class desktop 3.5\"",
+        "driveType": "External Desktop",
+        "rpm": 7200,
+        "interface": "USB-C 3.2 Gen 2",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk Professional studio drive G-DRIVE Enterprise-Class Desktop 3.5\"",
+      "status": "staged"
+    },
+    {
+      "id": "sandisk-pro-g-raid-mirror",
+      "canonicalBrand": "SanDisk Professional",
+      "displayBrand": "SanDisk Professional",
+      "productLine": "G-DRIVE",
+      "modelName": "G-RAID MIRROR Enterprise 2-Bay",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.westerndigital.com/sandisk-pro/g-raid-mirror"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "4TB",
+        "8TB",
+        "12TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.westerndigital.com/images/sandisk-pro-g-raid-mirror.png"
+      },
+      "collectedAttributes": {
+        "brand": "sandisk professional",
+        "modelName": "g-raid mirror enterprise 2-bay",
+        "driveType": "External RAID",
+        "rpm": 7200,
+        "interface": "Thunderbolt 3",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SanDisk Professional studio drive G-RAID MIRROR Enterprise 2-Bay",
+      "status": "staged"
+    },
+    {
+      "id": "adata-hd710-pro-rugged",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Durable Series",
+      "modelName": "HD710 Pro Rugged",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/hd710-pro-rugged"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/adata-hd710-pro-rugged.png"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "hd710 pro rugged",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA military-drop hard drive HD710 Pro Rugged",
+      "status": "staged"
+    },
+    {
+      "id": "adata-hd680-shock-resistant",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Durable Series",
+      "modelName": "HD680 Shock-resistant",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/hd680-shock-resistant"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/adata-hd680-shock-resistant.png"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "hd680 shock-resistant",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA military-drop hard drive HD680 Shock-resistant",
+      "status": "staged"
+    },
+    {
+      "id": "adata-hm800-desktop",
+      "canonicalBrand": "ADATA",
+      "displayBrand": "ADATA",
+      "productLine": "Durable Series",
+      "modelName": "HM800 Desktop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.adata.com/en/consumer/hm800-desktop"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.adata.com/images/adata-hm800-desktop.png"
+      },
+      "collectedAttributes": {
+        "brand": "adata",
+        "modelName": "hm800 desktop",
+        "driveType": "External Desktop",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 3.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "ADATA military-drop hard drive HM800 Desktop",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-storejet-25m3",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "StoreJet",
+      "modelName": "StoreJet 25M3 Military-Grade",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/storejet-25m3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/transcend-storejet-25m3.png"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "storejet 25m3 military-grade",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB 3.1 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend StoreJet shock-resistant drive StoreJet 25M3 Military-Grade",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-storejet-25h3",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "StoreJet",
+      "modelName": "StoreJet 25H3 High Capacity",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/storejet-25h3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/transcend-storejet-25h3.png"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "storejet 25h3 high capacity",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB 3.1 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend StoreJet shock-resistant drive StoreJet 25H3 High Capacity",
+      "status": "staged"
+    },
+    {
+      "id": "transcend-storejet-35t3",
+      "canonicalBrand": "Transcend",
+      "displayBrand": "Transcend",
+      "productLine": "StoreJet",
+      "modelName": "StoreJet 35T3 Desktop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.transcend-info.com/product/storejet-35t3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.transcend-info.com/images/transcend-storejet-35t3.png"
+      },
+      "collectedAttributes": {
+        "brand": "transcend",
+        "modelName": "storejet 35t3 desktop",
+        "driveType": "External Desktop",
+        "rpm": 5400,
+        "interface": "USB 3.1 Gen 1",
+        "formFactorInches": 3.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Transcend StoreJet shock-resistant drive StoreJet 35T3 Desktop",
+      "status": "staged"
+    },
+    {
+      "id": "buffalo-ministation-extreme",
+      "canonicalBrand": "Buffalo",
+      "displayBrand": "Buffalo",
+      "productLine": "MiniStation",
+      "modelName": "MiniStation Extreme NFC",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.buffalo-technology.com/products/ministation-extreme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.buffalo-technology.com/images/buffalo-ministation-extreme.png"
+      },
+      "collectedAttributes": {
+        "brand": "buffalo",
+        "modelName": "ministation extreme nfc",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB 3.0",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Buffalo encrypted external drive MiniStation Extreme NFC",
+      "status": "staged"
+    },
+    {
+      "id": "buffalo-ministation-safe",
+      "canonicalBrand": "Buffalo",
+      "displayBrand": "Buffalo",
+      "productLine": "MiniStation",
+      "modelName": "MiniStation Safe",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.buffalo-technology.com/products/ministation-safe"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.buffalo-technology.com/images/buffalo-ministation-safe.png"
+      },
+      "collectedAttributes": {
+        "brand": "buffalo",
+        "modelName": "ministation safe",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.0",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Buffalo encrypted external drive MiniStation Safe",
+      "status": "staged"
+    },
+    {
+      "id": "buffalo-drivestation-velocity",
+      "canonicalBrand": "Buffalo",
+      "displayBrand": "Buffalo",
+      "productLine": "MiniStation",
+      "modelName": "DriveStation Velocity",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.buffalo-technology.com/products/drivestation-velocity"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "1TB",
+        "2TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.buffalo-technology.com/images/buffalo-drivestation-velocity.png"
+      },
+      "collectedAttributes": {
+        "brand": "buffalo",
+        "modelName": "drivestation velocity",
+        "driveType": "External Desktop",
+        "rpm": 7200,
+        "interface": "USB 3.0",
+        "formFactorInches": 3.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Buffalo encrypted external drive DriveStation Velocity",
+      "status": "staged"
+    },
+    {
+      "id": "owc-mercury-elite-pro-mini",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "Mercury Elite Pro",
+      "modelName": "Mercury Elite Pro mini",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/mercury-elite-pro-mini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/owc-mercury-elite-pro-mini.png"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "mercury elite pro mini",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB-C 3.2 Gen 2",
+        "formFactorInches": 2.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC professional creative storage Mercury Elite Pro mini",
+      "status": "staged"
+    },
+    {
+      "id": "owc-mercury-elite-pro-desktop",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "Mercury Elite Pro",
+      "modelName": "Mercury Elite Pro Desktop",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/mercury-elite-pro-desktop"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/owc-mercury-elite-pro-desktop.png"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "mercury elite pro desktop",
+        "driveType": "External Desktop",
+        "rpm": 7200,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC professional creative storage Mercury Elite Pro Desktop",
+      "status": "staged"
+    },
+    {
+      "id": "owc-gemini-dual-drive",
+      "canonicalBrand": "OWC",
+      "displayBrand": "OWC",
+      "productLine": "Mercury Elite Pro",
+      "modelName": "Gemini Dual-Drive",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.owc.com/solutions/gemini-dual-drive"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB",
+        "8TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.owc.com/images/owc-gemini-dual-drive.png"
+      },
+      "collectedAttributes": {
+        "brand": "owc",
+        "modelName": "gemini dual-drive",
+        "driveType": "External RAID",
+        "rpm": 7200,
+        "interface": "Thunderbolt 3",
+        "formFactorInches": 3.5,
+        "shockResistance": false
+      },
+      "missingAttributes": [],
+      "inclusionReason": "OWC professional creative storage Gemini Dual-Drive",
+      "status": "staged"
+    },
+    {
+      "id": "sp-armor-a60",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Armor / Stream",
+      "modelName": "Armor A60 Rugged",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/product/armor-a60"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/sp-armor-a60.png"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "armor a60 rugged",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power Armor series drive Armor A60 Rugged",
+      "status": "staged"
+    },
+    {
+      "id": "sp-armor-a85",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Armor / Stream",
+      "modelName": "Armor A85 All-Round Protection",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/product/armor-a85"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/sp-armor-a85.png"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "armor a85 all-round protection",
+        "driveType": "External Rugged",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power Armor series drive Armor A85 All-Round Protection",
+      "status": "staged"
+    },
+    {
+      "id": "sp-stream-s03",
+      "canonicalBrand": "Silicon Power",
+      "displayBrand": "Silicon Power",
+      "productLine": "Armor / Stream",
+      "modelName": "Stream S03 Slim",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.silicon-power.com/product/stream-s03"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "2TB",
+        "4TB"
+      ],
+      "mediaSource": {
+        "url": "https://www.silicon-power.com/images/sp-stream-s03.png"
+      },
+      "collectedAttributes": {
+        "brand": "silicon power",
+        "modelName": "stream s03 slim",
+        "driveType": "External Portable",
+        "rpm": 5400,
+        "interface": "USB 3.2 Gen 1",
+        "formFactorInches": 2.5,
+        "shockResistance": true
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Silicon Power Armor series drive Stream S03 Slim",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "WD",
+      "leafKey": "hard-drives",
+      "reason": "Western Digital mechanical HDD lineup comprises 5 primary series across portable and internal.",
+      "officialSourceUrl": "https://www.westerndigital.com/products/internal-drives",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "My Passport Ultra",
+        "Elements Portable",
+        "WD_BLACK P10 Game Drive",
+        "WD Blue Desktop 3.5\"",
+        "WD Red Plus NAS 3.5\""
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Seagate",
+      "leafKey": "hard-drives",
+      "reason": "Seagate HDD lineup consists of 5 core external and internal drive families.",
+      "officialSourceUrl": "https://www.seagate.com/products/external-hard-drives/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "One Touch Portable",
+        "Expansion Portable",
+        "FireCuda Gaming Hard Drive",
+        "BarraCuda Desktop 3.5\"",
+        "IronWolf NAS 3.5\""
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Toshiba",
+      "leafKey": "hard-drives",
+      "reason": "Toshiba Canvio and internal HDD line features 5 active models.",
+      "officialSourceUrl": "https://www.canvio.jp/en/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Canvio Basics",
+        "Canvio Advance",
+        "Canvio Flex",
+        "N300 NAS Internal 3.5\"",
+        "X300 Performance Internal 3.5\""
+      ],
+      "totalQualifyingModels": 5,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "LaCie",
+      "leafKey": "hard-drives",
+      "reason": "LaCie professional Rugged and d2 desktop hard drive lines feature 4 models.",
+      "officialSourceUrl": "https://www.lacie.com/products/rugged/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Rugged Mini",
+        "Rugged USB-C",
+        "d2 Professional",
+        "1big Dock"
+      ],
+      "totalQualifyingModels": 4,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "SanDisk Professional",
+      "leafKey": "hard-drives",
+      "reason": "SanDisk Professional enterprise and rugged hard drive line consists of 3 models.",
+      "officialSourceUrl": "https://www.westerndigital.com/brand/sandisk-professional",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "G-DRIVE ArmorATD",
+        "G-DRIVE Enterprise-Class Desktop 3.5\"",
+        "G-RAID MIRROR Enterprise 2-Bay"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "ADATA",
+      "leafKey": "hard-drives",
+      "reason": "ADATA durable external hard drive lineup comprises 3 models.",
+      "officialSourceUrl": "https://www.adata.com/en/consumer/category/external-hard-drives/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "HD710 Pro Rugged",
+        "HD680 Shock-resistant",
+        "HM800 Desktop"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Transcend",
+      "leafKey": "hard-drives",
+      "reason": "Transcend StoreJet rugged portable drive series consists of 3 active models.",
+      "officialSourceUrl": "https://www.transcend-info.com/product/external-hard-drives",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "StoreJet 25M3 Military-Grade",
+        "StoreJet 25H3 High Capacity",
+        "StoreJet 35T3 Desktop"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Buffalo",
+      "leafKey": "hard-drives",
+      "reason": "Buffalo MiniStation secure external storage line features 3 models.",
+      "officialSourceUrl": "https://www.buffalo-technology.com/products/storage/external-hard-drives/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "MiniStation Extreme NFC",
+        "MiniStation Safe",
+        "DriveStation Velocity"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "OWC",
+      "leafKey": "hard-drives",
+      "reason": "Other World Computing Mercury Elite Pro storage line comprises 3 models.",
+      "officialSourceUrl": "https://www.owc.com/solutions/mercury-elite-pro",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Mercury Elite Pro mini",
+        "Mercury Elite Pro Desktop",
+        "Gemini Dual-Drive"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Silicon Power",
+      "leafKey": "hard-drives",
+      "reason": "Silicon Power Armor rugged series consists of 3 models.",
+      "officialSourceUrl": "https://www.silicon-power.com/web/product-Hard_Drives",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Armor A60 Rugged",
+        "Armor A85 All-Round Protection",
+        "Stream S03 Slim"
+      ],
+      "totalQualifyingModels": 3,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

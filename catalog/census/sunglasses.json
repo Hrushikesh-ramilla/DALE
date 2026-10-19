@@ -1,0 +1,3355 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "sunglasses",
+  "displayName": "Sunglasses & Eyewear",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "ray-ban-original-wayfarer",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Original Wayfarer Classic (RB2140)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB2140%20original%20wayfarer%20classic-black/805289126577"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / G-15 Green Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "original wayfarer classic (rb2140)",
+        "frameShape": "trapezoid square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 50,
+        "bridgeMm": 22,
+        "templeMm": 150,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The most recognizable style in the history of sunglasses, designed in 1952.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-aviator-classic",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Aviator Classic (RB3025)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB3025%20aviator%20classic-gold/805289602057"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Gold / G-15 Green Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "aviator classic (rb3025)",
+        "frameShape": "teardrop pilot",
+        "frameMaterial": "metal",
+        "lensWidthMm": 58,
+        "bridgeMm": 14,
+        "templeMm": 135,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Originally created in 1937 for US military aviators to protect against high-altitude glare.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-clubmaster-classic",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Clubmaster Classic (RB3016)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB3016%20clubmaster%20classic-mock%20tortoise/805289653653"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Mock Tortoise / Arista Gold"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "clubmaster classic (rb3016)",
+        "frameShape": "browline",
+        "frameMaterial": "acetate and metal",
+        "lensWidthMm": 51,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Vintage 1950s browline silhouette favored by cultural intellectuals.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-round-metal",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Round Metal (RB3447)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB3447%20round%20metal-gold/805289439899"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Gold / Green Glass Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "round metal (rb3447)",
+        "frameShape": "round",
+        "frameMaterial": "metal",
+        "lensWidthMm": 50,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Counter-culture 1960s circular wire frame featuring curved brow bar.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-justin-classic",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Justin Classic (RB4165)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB4165%20justin%20classic-black/805289526299"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Grey Gradient"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "justin classic (rb4165)",
+        "frameShape": "rectangular",
+        "frameMaterial": "nylon rubberized",
+        "lensWidthMm": 55,
+        "bridgeMm": 16,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modernized larger Wayfarer styling finished in rubberized soft-touch texture.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-erika-classic",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Erika Classic (RB4171)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB4171%20erika%20classic-brown/805289742463"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Rubberized Tortoise / Gunmetal Temples"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "erika classic (rb4171)",
+        "frameShape": "round phantos",
+        "frameMaterial": "nylon and metal",
+        "lensWidthMm": 54,
+        "bridgeMm": 18,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Retro round look with thin metal temples and keyhole nose bridge.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-state-street",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "State Street (RB2186)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB2186%20state%20street-black/8056597241854"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / G-15 Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "state street (rb2186)",
+        "frameShape": "square geometric",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 49,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Edgy flared acetate browline inspired by the rebellious 1970s street spirit.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-mega-wayfarer",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Mega Wayfarer (RB0840S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB0840S%20mega%20wayfarer-black/8056597656917"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Thick Black Acetate / Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "mega wayfarer (rb0840s)",
+        "frameShape": "bold square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 51,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bold statement piece with amplified extra-thick temples and front rim.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-predator-2",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Predator 2 (RB2027)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB2027%20predator%202-black/805289123897"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Wrap / Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "predator 2 (rb2027)",
+        "frameShape": "wrap rectangular",
+        "frameMaterial": "nylon",
+        "lensWidthMm": 62,
+        "bridgeMm": 19,
+        "templeMm": 130,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Curved panoramic wrap frame famous for complete peripheral sun protection.",
+      "status": "staged"
+    },
+    {
+      "id": "ray-ban-caravan",
+      "canonicalBrand": "Ray-Ban",
+      "displayBrand": "Ray-Ban",
+      "modelName": "Caravan (RB3136)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ray-ban.com/usa/sunglasses/RB3136%20caravan-gold/805289003328"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Arista Gold / G-15 Green Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "ray-ban",
+        "modelName": "caravan (rb3136)",
+        "frameShape": "square metal pilot",
+        "frameMaterial": "metal",
+        "lensWidthMm": 58,
+        "bridgeMm": 15,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Geometric alternative to the teardrop Aviator first launched in 1957.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-holbrook",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Holbrook (OO9102)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9102"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Prizm Black"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "holbrook (oo9102)",
+        "frameShape": "square lifestyle",
+        "frameMaterial": "o matter",
+        "lensWidthMm": 55,
+        "bridgeMm": 18,
+        "templeMm": 137,
+        "polarization": "prizm polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic American frame design accented with metal rivets and Oakley icons.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-frogskins",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Frogskins (OO9013)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9013"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Polished Black / Prizm Grey"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "frogskins (oo9013)",
+        "frameShape": "retro square",
+        "frameMaterial": "o matter",
+        "lensWidthMm": 54,
+        "bridgeMm": 17,
+        "templeMm": 138,
+        "polarization": "non-polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pop culture icon born in the 1980s celebrating early California skate and surf culture.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-radar-ev-path",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Radar EV Path (OO9208)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9208"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Polished White / Prizm Road"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "radar ev path (oo9208)",
+        "frameShape": "shield sport wrap",
+        "frameMaterial": "o matter with unobtainium",
+        "lensWidthMm": 138,
+        "bridgeMm": 15,
+        "templeMm": 128,
+        "polarization": "non-polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tall lens sports shield extending the upper field of view for cyclists and runners.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-sutro",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Sutro (OO9406)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9406"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Prizm Road"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "sutro (oo9406)",
+        "frameShape": "high-wrap shield",
+        "frameMaterial": "o matter",
+        "lensWidthMm": 137,
+        "bridgeMm": 15,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Urban cycling shield offering bold, versatile protection from harsh elements.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-flak-2-0-xl",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Flak 2.0 XL (OO9188)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9188"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Polished Black / Prizm Dark Golf"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "flak 2.0 xl (oo9188)",
+        "frameShape": "semi-rimless wrap",
+        "frameMaterial": "o matter with unobtainium",
+        "lensWidthMm": 59,
+        "bridgeMm": 12,
+        "templeMm": 133,
+        "polarization": "non-polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Standard-size frame with enhanced lens coverage optimized for golf and outdoor athletics.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-jawbreaker",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Jawbreaker (OO9290)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9290"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Polished White / Prizm Road"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "jawbreaker (oo9290)",
+        "frameShape": "full rim cycling shield",
+        "frameMaterial": "o matter with switchlock",
+        "lensWidthMm": 131,
+        "bridgeMm": 15,
+        "templeMm": 121,
+        "polarization": "non-polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The ultimate cycling eyewear with Switchlock technology for fast lens changes.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-gascan",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Gascan (OO9014)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9014"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Prizm Black"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "gascan (oo9014)",
+        "frameShape": "sculptural wrap",
+        "frameMaterial": "o matter",
+        "lensWidthMm": 60,
+        "bridgeMm": 15,
+        "templeMm": 127,
+        "polarization": "non-polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Straight-edge industrial temples sculpted with Oakley's clean architectural geometry.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-encoder",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Encoder (OO9471)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9471"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Prizm Sapphire"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "encoder (oo9471)",
+        "frameShape": "frameless progressive shield",
+        "frameMaterial": "frameless plutonite",
+        "lensWidthMm": 136,
+        "bridgeMm": 15,
+        "templeMm": 123,
+        "polarization": "non-polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Purpose-built multisport design with calibrated rigidity and low-profile temples.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-portal-x",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Portal X (OO9460)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9460"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Carbon / Prizm Grey"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "portal x (oo9460)",
+        "frameShape": "active lifestyle square",
+        "frameMaterial": "o matter",
+        "lensWidthMm": 59,
+        "bridgeMm": 15,
+        "templeMm": 135,
+        "polarization": "prizm polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Crossover design blending everyday aesthetics with athletic Unobtainium grip.",
+      "status": "staged"
+    },
+    {
+      "id": "oakley-eye-jacket-redux",
+      "canonicalBrand": "Oakley",
+      "displayBrand": "Oakley",
+      "modelName": "Eye Jacket Redux (OO9438)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/product/W0OO9438"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Prizm Black"
+      ],
+      "collectedAttributes": {
+        "brand": "oakley",
+        "modelName": "eye jacket redux (oo9438)",
+        "frameShape": "oval wrap",
+        "frameMaterial": "o matter",
+        "lensWidthMm": 58,
+        "bridgeMm": 19,
+        "templeMm": 137,
+        "polarization": "non-polarized",
+        "uvProtection": "100% plutonite uv"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Reissued 1994 oval wrap icon ignited by revolutionary biotechnology aesthetics.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-649-original",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "649 Original (PO0649)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO0649--24-31"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Havana / Green Crystal Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "649 original (po0649)",
+        "frameShape": "pilot keyhole",
+        "frameMaterial": "acetate with meflecto",
+        "lensWidthMm": 54,
+        "bridgeMm": 20,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Designed in 1957 for Turin tram drivers, immortalized by Marcello Mastroianni.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-714-steve-mcqueen",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "714 Steve McQueen Folding (PO0714SM)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO0714SM--96-S3"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Light Havana / Polarized Blue Crystal"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "714 steve mcqueen folding (po0714sm)",
+        "frameShape": "folding pilot",
+        "frameMaterial": "acetate with custom hinges",
+        "lensWidthMm": 54,
+        "bridgeMm": 21,
+        "templeMm": 140,
+        "polarization": "polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "The world's first folding sunglasses, famously worn by Steve McQueen in The Thomas Crown Affair.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-3019s",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "3019S Square (PO3019S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO3019S--95-58"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Green Polarized"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "3019s square (po3019s)",
+        "frameShape": "square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 18,
+        "templeMm": 140,
+        "polarization": "polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sleek rectangular profile with the signature silver Supreme Arrow hinge.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-3092sm",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "3092SM Phantos (PO3092SM)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO3092SM--900656"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Terra di Siena / Blue Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "3092sm phantos (po3092sm)",
+        "frameShape": "round phantos",
+        "frameMaterial": "acetate with meflecto",
+        "lensWidthMm": 50,
+        "bridgeMm": 19,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Retro keyhole bridge sunglasses crafted in exclusive historic acetate hues.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-3268s",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "3268S Pilot (PO3268S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO3268S--24-31"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Havana / Crystal Green"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "3268s pilot (po3268s)",
+        "frameShape": "pilot double bridge",
+        "frameMaterial": "acetate and metal",
+        "lensWidthMm": 53,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Double bridge aviator combining hand-polished acetate and metal temples.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-3152s",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "3152S Round (PO3152S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO3152S--904356"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Caffè / Blue Crystal"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "3152s round (po3152s)",
+        "frameShape": "pantos round",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight pantos shape highlighting artisanal Italian wire core temples.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-3225s",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "3225S Square (PO3225S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO3225S--95-58"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Green Polarized"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "3225s square (po3225s)",
+        "frameShape": "bold square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 56,
+        "bridgeMm": 18,
+        "templeMm": 145,
+        "polarization": "polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Substantial bold square silhouette built with Meflecto flexible stem system.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-3286s",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "3286S Oval (PO3286S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO3286S--110352"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Transparent Grey / Dark Green"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "3286s oval (po3286s)",
+        "frameShape": "oval minimalist",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 51,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Refined 1990s oval revival with delicate lines and barberini crystal optics.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-2422sj",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "2422SJ Round Metal (PO2422SJ)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO2422SJ--106251"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Gunmetal / Brown Gradient"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "2422sj round metal (po2422sj)",
+        "frameShape": "round wire",
+        "frameMaterial": "metal and acetate",
+        "lensWidthMm": 51,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Combination construction pairing ultralight metal rims with acetate windsor rims.",
+      "status": "staged"
+    },
+    {
+      "id": "persol-3272s",
+      "canonicalBrand": "Persol",
+      "displayBrand": "Persol",
+      "modelName": "3272S Rectangular (PO3272S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.persol.com/usa/0PO3272S--95-31"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Green Crystal"
+      ],
+      "collectedAttributes": {
+        "brand": "persol",
+        "modelName": "3272s rectangular (po3272s)",
+        "frameShape": "rectangular low profile",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 53,
+        "bridgeMm": 19,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv crystal"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Low-profile rectangular eyewear inspired by vintage cinematic elegance.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-gregory-peck",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Gregory Peck Sun (OV5217S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5217S--100552"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Midnight Express Polar"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "gregory peck sun (ov5217s)",
+        "frameShape": "retro round keyhole",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 47,
+        "bridgeMm": 23,
+        "templeMm": 150,
+        "polarization": "polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Official collaboration with the Peck Estate inspired by Atticus Finch in To Kill a Mockingbird.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-omalley",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "O'Malley Sun (OV5183S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5183S--1005P1"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Buff / Green Mineral Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "o'malley sun (ov5183s)",
+        "frameShape": "pantos round",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 48,
+        "bridgeMm": 22,
+        "templeMm": 145,
+        "polarization": "polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic 1988 silhouette modeled after former LA Dodgers owner Peter O'Malley.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-sheldrake",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Sheldrake Sun (OV5036S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5036S--100353"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Cocobolo / Brown Polar"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "sheldrake sun (ov5036s)",
+        "frameShape": "bold keyhole square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 49,
+        "bridgeMm": 22,
+        "templeMm": 145,
+        "polarization": "polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Intellectual 1960s design inspired by Andy Warhol's iconic tortoiseshell frames.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-finley-vintage",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Finley Vintage Sun (OV5397SU)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5397SU--1661P2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Washed Teal / Grey Polar"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "finley vintage sun (ov5397su)",
+        "frameShape": "square tailored",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 49,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subtle vintage styling with custom engraved filigree core wire visible through acetate.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-bernardo",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Bernardo Sun (OV5189S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5189S--1005R5"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Carbon Grey"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "bernardo sun (ov5189s)",
+        "frameShape": "rectangular square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 54,
+        "bridgeMm": 18,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Masculine rectangular acetate frame with distinctive beveled top brow.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-fairmont",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Fairmont Sun (OV5219S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5219S--100552"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / G-15 Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "fairmont sun (ov5219s)",
+        "frameShape": "minimalist square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 49,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Understated unisex frame celebrating timeless Hollywood restraint.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-cary-grant",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Cary Grant Sun (OV5413SU)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5413SU--149252"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / G-15 Polarized"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "cary grant sun (ov5413su)",
+        "frameShape": "bold retro square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 50,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Inspired by the sunglasses worn by Cary Grant in the 1959 Hitchcock classic North by Northwest.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-remick",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Remick Sun (OV5349S)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5349S--100552"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Antique Gold Metal"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "remick sun (ov5349s)",
+        "frameShape": "browline combination",
+        "frameMaterial": "metal and acetate",
+        "lensWidthMm": 50,
+        "bridgeMm": 24,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Architectural metal browline with intricate feather pattern filigree.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-boudreau-la",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Boudreau L.A. Sun (OV5382SU)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV5382SU--100571"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Green Mineral Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "boudreau l.a. sun (ov5382su)",
+        "frameShape": "geometric thick acetate",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 50,
+        "bridgeMm": 22,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chunky 1970s Sunset Boulevard attitude with flat glass lenses.",
+      "status": "staged"
+    },
+    {
+      "id": "oliver-peoples-casson",
+      "canonicalBrand": "Oliver Peoples",
+      "displayBrand": "Oliver Peoples",
+      "modelName": "Casson Sun (OV1269ST)",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.oliverpeoples.com/usa/0OV1269ST--5036P2"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Titanium / Silver Gradient"
+      ],
+      "collectedAttributes": {
+        "brand": "oliver peoples",
+        "modelName": "casson sun (ov1269st)",
+        "frameShape": "round titanium double bridge",
+        "frameMaterial": "japanese titanium",
+        "lensWidthMm": 49,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Featherlight titanium double-bridge frame featuring side mesh clip shields.",
+      "status": "staged"
+    },
+    {
+      "id": "cutler-and-gross-0822",
+      "canonicalBrand": "Cutler and Gross",
+      "displayBrand": "Cutler and Gross",
+      "modelName": "0822 Aviator Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cutlerandgross.com/us/0822-aviator-sunglasses.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Turtle / Brown Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "cutler and gross",
+        "modelName": "0822 aviator sunglasses",
+        "frameShape": "teardrop aviator",
+        "frameMaterial": "italian acetate",
+        "lensWidthMm": 53,
+        "bridgeMm": 19,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Handmade aviator with gentle teardrop curve and dropped browline.",
+      "status": "staged"
+    },
+    {
+      "id": "cutler-and-gross-1394",
+      "canonicalBrand": "Cutler and Gross",
+      "displayBrand": "Cutler and Gross",
+      "modelName": "1394 Square Acetate Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cutlerandgross.com/us/1394-square-sunglasses.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Grey Solid Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "cutler and gross",
+        "modelName": "1394 square acetate sunglasses",
+        "frameShape": "square bold",
+        "frameMaterial": "italian acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sculptural square frame with chamfered inner eye rim and hazard core wire.",
+      "status": "staged"
+    },
+    {
+      "id": "cutler-and-gross-1386",
+      "canonicalBrand": "Cutler and Gross",
+      "displayBrand": "Cutler and Gross",
+      "modelName": "1386 Bold Rectangular Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cutlerandgross.com/us/1386-square-sunglasses.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Granny Chic / Smoke Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "cutler and gross",
+        "modelName": "1386 bold rectangular sunglasses",
+        "frameShape": "rectangular geometric",
+        "frameMaterial": "italian acetate",
+        "lensWidthMm": 51,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bold post-punk 1980s London design with 9mm chunky acetate rims.",
+      "status": "staged"
+    },
+    {
+      "id": "cutler-and-gross-0772",
+      "canonicalBrand": "Cutler and Gross",
+      "displayBrand": "Cutler and Gross",
+      "modelName": "0772 Classic Round Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cutlerandgross.com/us/0772-round-sunglasses.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Humble Potato / Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "cutler and gross",
+        "modelName": "0772 classic round sunglasses",
+        "frameShape": "round keyhole",
+        "frameMaterial": "italian acetate",
+        "lensWidthMm": 50,
+        "bridgeMm": 22,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic circular silhouette celebrated for hand-beveled British craftsmanship.",
+      "status": "staged"
+    },
+    {
+      "id": "cutler-and-gross-1307",
+      "canonicalBrand": "Cutler and Gross",
+      "displayBrand": "Cutler and Gross",
+      "modelName": "1307 Hexagonal Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cutlerandgross.com/us/1307-hexagonal-sunglasses.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Palladium / Blue Mirror Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "cutler and gross",
+        "modelName": "1307 hexagonal sunglasses",
+        "frameShape": "hexagonal metal",
+        "frameMaterial": "stainless steel",
+        "lensWidthMm": 53,
+        "bridgeMm": 19,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Geometric wireframe sunglasses inspired by 1970s British pop culture.",
+      "status": "staged"
+    },
+    {
+      "id": "cutler-and-gross-0847",
+      "canonicalBrand": "Cutler and Gross",
+      "displayBrand": "Cutler and Gross",
+      "modelName": "0847 Round Browline Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cutlerandgross.com/us/0847-browline-sunglasses.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Matt Black / Gold Mirror"
+      ],
+      "collectedAttributes": {
+        "brand": "cutler and gross",
+        "modelName": "0847 round browline sunglasses",
+        "frameShape": "round combination",
+        "frameMaterial": "acetate and titanium",
+        "lensWidthMm": 50,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated combination browline with bespoke five-barrel hinges.",
+      "status": "staged"
+    },
+    {
+      "id": "cutler-and-gross-1391",
+      "canonicalBrand": "Cutler and Gross",
+      "displayBrand": "Cutler and Gross",
+      "modelName": "1391 Vintage Square Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cutlerandgross.com/us/1391-square-sunglasses.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Havana / Vintage Green"
+      ],
+      "collectedAttributes": {
+        "brand": "cutler and gross",
+        "modelName": "1391 vintage square sunglasses",
+        "frameShape": "vintage square",
+        "frameMaterial": "italian acetate",
+        "lensWidthMm": 54,
+        "bridgeMm": 19,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Substantial 1950s British square silhouette with oyster pin rivets.",
+      "status": "staged"
+    },
+    {
+      "id": "cutler-and-gross-1355",
+      "canonicalBrand": "Cutler and Gross",
+      "displayBrand": "Cutler and Gross",
+      "modelName": "1355 Navigator Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cutlerandgross.com/us/1355-navigator-sunglasses.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GB",
+      "lifecycle": "active",
+      "variants": [
+        "Gold / Solid Amber"
+      ],
+      "collectedAttributes": {
+        "brand": "cutler and gross",
+        "modelName": "1355 navigator sunglasses",
+        "frameShape": "navigator square aviator",
+        "frameMaterial": "metal",
+        "lensWidthMm": 56,
+        "bridgeMm": 16,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Square aviator with inverted grooved bridge and custom nose pads.",
+      "status": "staged"
+    },
+    {
+      "id": "moscot-lemtosh-sun",
+      "canonicalBrand": "MOSCOT",
+      "displayBrand": "MOSCOT",
+      "modelName": "Lemtosh Sun",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://moscot.com/products/lemtosh-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Classic Black / G-15 Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "moscot",
+        "modelName": "lemtosh sun",
+        "frameShape": "round square keyhole",
+        "frameMaterial": "italian acetate",
+        "lensWidthMm": 46,
+        "bridgeMm": 24,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Generation-defining round-square frame with diamond rivets, favored by artists and intellectuals.",
+      "status": "staged"
+    },
+    {
+      "id": "moscot-miltzen-sun",
+      "canonicalBrand": "MOSCOT",
+      "displayBrand": "MOSCOT",
+      "modelName": "Miltzen Sun",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://moscot.com/products/miltzen-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Blonde / Calibar Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "moscot",
+        "modelName": "miltzen sun",
+        "frameShape": "round full oval",
+        "frameMaterial": "italian acetate",
+        "lensWidthMm": 46,
+        "bridgeMm": 22,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Introduced in the 1930s with characteristic dot rivets and round silhouette.",
+      "status": "staged"
+    },
+    {
+      "id": "moscot-dahven-sun",
+      "canonicalBrand": "MOSCOT",
+      "displayBrand": "MOSCOT",
+      "modelName": "Dahven Sun",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://moscot.com/products/dahven-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Olive / Cosmitan Brown"
+      ],
+      "collectedAttributes": {
+        "brand": "moscot",
+        "modelName": "dahven sun",
+        "frameShape": "thick square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 47,
+        "bridgeMm": 24,
+        "templeMm": 150,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bold 8mm block acetate frame exuding effortless 1970s swagger.",
+      "status": "staged"
+    },
+    {
+      "id": "moscot-zolman-sun",
+      "canonicalBrand": "MOSCOT",
+      "displayBrand": "MOSCOT",
+      "modelName": "Zolman Sun",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://moscot.com/products/zolman-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Tortoise / Blue Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "moscot",
+        "modelName": "zolman sun",
+        "frameShape": "perfect circle round",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 42,
+        "bridgeMm": 28,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Perfect circular lens frame honoring Sol Moscot's grandfather.",
+      "status": "staged"
+    },
+    {
+      "id": "moscot-arthur-sun",
+      "canonicalBrand": "MOSCOT",
+      "displayBrand": "MOSCOT",
+      "modelName": "Arthur Sun",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://moscot.com/products/arthur-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Tobacco / Brown Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "moscot",
+        "modelName": "arthur sun",
+        "frameShape": "slim square keyhole",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 50,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Slimmer streamlined evolution of the Lemtosh for everyday wear.",
+      "status": "staged"
+    },
+    {
+      "id": "moscot-billik-sun",
+      "canonicalBrand": "MOSCOT",
+      "displayBrand": "MOSCOT",
+      "modelName": "Billik Sun",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://moscot.com/products/billik-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Bark / Brown Gradient"
+      ],
+      "collectedAttributes": {
+        "brand": "moscot",
+        "modelName": "billik sun",
+        "frameShape": "geometric rectangular",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 50,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rectangular architectural silhouette with sharp chamfered beveled rims.",
+      "status": "staged"
+    },
+    {
+      "id": "moscot-gelt-sun",
+      "canonicalBrand": "MOSCOT",
+      "displayBrand": "MOSCOT",
+      "modelName": "Gelt Sun",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://moscot.com/products/gelt-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Crystal / Blue Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "moscot",
+        "modelName": "gelt sun",
+        "frameShape": "square keyhole",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 49,
+        "bridgeMm": 22,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Square sibling to the Lemtosh featuring distinct squared-off brow.",
+      "status": "staged"
+    },
+    {
+      "id": "moscot-grunya-sun",
+      "canonicalBrand": "MOSCOT",
+      "displayBrand": "MOSCOT",
+      "modelName": "Grunya Sun",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://moscot.com/products/grunya-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / G-15 Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "moscot",
+        "modelName": "grunya sun",
+        "frameShape": "bold round keyhole",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 45,
+        "bridgeMm": 23,
+        "templeMm": 150,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Generous bold round frame with keyhole nose bridge and visible core wire.",
+      "status": "staged"
+    },
+    {
+      "id": "jmm-dealan",
+      "canonicalBrand": "Jacques Marie Mage",
+      "displayBrand": "Jacques Marie Mage",
+      "modelName": "Dealan Acetate Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://jacquesmariemage.com/product/dealan"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Noir 8 / 10mm Cured Cellulose Acetate"
+      ],
+      "collectedAttributes": {
+        "brand": "jacques marie mage",
+        "modelName": "dealan acetate sunglasses",
+        "frameShape": "cat-eye square",
+        "frameMaterial": "10mm cured cellulose acetate",
+        "lensWidthMm": 50,
+        "bridgeMm": 20,
+        "templeMm": 142,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Homage to Bob Dylan's iconic mid-1960s touring eyewear with custom sterling silver arrowhead pins.",
+      "status": "staged"
+    },
+    {
+      "id": "jmm-molino-55",
+      "canonicalBrand": "Jacques Marie Mage",
+      "displayBrand": "Jacques Marie Mage",
+      "modelName": "Molino 55 Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://jacquesmariemage.com/product/molino-55"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Agar / Sterling Silver Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "jacques marie mage",
+        "modelName": "molino 55 sunglasses",
+        "frameShape": "rectangular bold",
+        "frameMaterial": "10mm acetate",
+        "lensWidthMm": 55,
+        "bridgeMm": 19,
+        "templeMm": 144,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Named after Italian architect Carlo Mollino, featuring rectangular 1960s proportions.",
+      "status": "staged"
+    },
+    {
+      "id": "jmm-enzo",
+      "canonicalBrand": "Jacques Marie Mage",
+      "displayBrand": "Jacques Marie Mage",
+      "modelName": "Enzo Bold Square Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://jacquesmariemage.com/product/enzo"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Havana 5 / Precious Metal Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "jacques marie mage",
+        "modelName": "enzo bold square sunglasses",
+        "frameShape": "oversized bold square",
+        "frameMaterial": "10mm block acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 23,
+        "templeMm": 143,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tribute to Enzo Ferrari featuring commanding architectural silhouette and custom tension hinges.",
+      "status": "staged"
+    },
+    {
+      "id": "jmm-zephirin",
+      "canonicalBrand": "Jacques Marie Mage",
+      "displayBrand": "Jacques Marie Mage",
+      "modelName": "Zephirin Round Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://jacquesmariemage.com/product/zephirin"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Rover / Blue CR39 Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "jacques marie mage",
+        "modelName": "zephirin round sunglasses",
+        "frameShape": "vintage pre-wwii round",
+        "frameMaterial": "10mm acetate",
+        "lensWidthMm": 47,
+        "bridgeMm": 26,
+        "templeMm": 142,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Pre-WWII European styling with distinctive keyhole bridge and sculpted volume.",
+      "status": "staged"
+    },
+    {
+      "id": "jmm-torino",
+      "canonicalBrand": "Jacques Marie Mage",
+      "displayBrand": "Jacques Marie Mage",
+      "modelName": "Torino Rectangular Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://jacquesmariemage.com/product/torino"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Dark Havana / Gold Hardware"
+      ],
+      "collectedAttributes": {
+        "brand": "jacques marie mage",
+        "modelName": "torino rectangular sunglasses",
+        "frameShape": "low rectangular",
+        "frameMaterial": "10mm acetate",
+        "lensWidthMm": 54,
+        "bridgeMm": 20,
+        "templeMm": 146,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Cinematic 1960s Gran Turismo touring eyewear with beveled front rim.",
+      "status": "staged"
+    },
+    {
+      "id": "jmm-fellini",
+      "canonicalBrand": "Jacques Marie Mage",
+      "displayBrand": "Jacques Marie Mage",
+      "modelName": "Fellini Sculpted Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://jacquesmariemage.com/product/fellini"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Beluga / Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "jacques marie mage",
+        "modelName": "fellini sculpted sunglasses",
+        "frameShape": "classical intellectual square",
+        "frameMaterial": "10mm acetate",
+        "lensWidthMm": 51,
+        "bridgeMm": 20,
+        "templeMm": 150,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Homage to visionary director Federico Fellini with deep sculptural paddle temples.",
+      "status": "staged"
+    },
+    {
+      "id": "dita-flight-006",
+      "canonicalBrand": "DITA",
+      "displayBrand": "DITA",
+      "modelName": "Flight.006 Aviator Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://dita.com/products/flight-006"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Smoke Grey Crystal / Black Palladium"
+      ],
+      "collectedAttributes": {
+        "brand": "dita",
+        "modelName": "flight.006 aviator sunglasses",
+        "frameShape": "modern square aviator",
+        "frameMaterial": "titanium and acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 22,
+        "templeMm": 144,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Fighter pilot tribute made famous worldwide by Tony Stark in Avengers: Infinity War.",
+      "status": "staged"
+    },
+    {
+      "id": "dita-grandmaster-seven",
+      "canonicalBrand": "DITA",
+      "displayBrand": "DITA",
+      "modelName": "Grandmaster-Seven Bold Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://dita.com/products/grandmaster-seven"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Yellow Gold Titanium"
+      ],
+      "collectedAttributes": {
+        "brand": "dita",
+        "modelName": "grandmaster-seven bold sunglasses",
+        "frameShape": "oversized bold square",
+        "frameMaterial": "japanese acetate and titanium",
+        "lensWidthMm": 58,
+        "bridgeMm": 17,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Celebration of early 1980s New York hip-hop b-boy style with oversized titanium hardware.",
+      "status": "staged"
+    },
+    {
+      "id": "dita-mach-six",
+      "canonicalBrand": "DITA",
+      "displayBrand": "DITA",
+      "modelName": "Mach-Six Navigator Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://dita.com/products/mach-six"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Satin Black / Dark Grey to Clear Gradient"
+      ],
+      "collectedAttributes": {
+        "brand": "dita",
+        "modelName": "mach-six navigator sunglasses",
+        "frameShape": "high-tech navigator",
+        "frameMaterial": "titanium",
+        "lensWidthMm": 62,
+        "bridgeMm": 12,
+        "templeMm": 130,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Automotive high-performance luxury navigator stripped of traditional hinge screws.",
+      "status": "staged"
+    },
+    {
+      "id": "dita-statesman-six",
+      "canonicalBrand": "DITA",
+      "displayBrand": "DITA",
+      "modelName": "Statesman-Six Square Browline Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://dita.com/products/statesman-six"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Antique Silver"
+      ],
+      "collectedAttributes": {
+        "brand": "dita",
+        "modelName": "statesman-six square browline sunglasses",
+        "frameShape": "browline combination",
+        "frameMaterial": "acetate and titanium",
+        "lensWidthMm": 55,
+        "bridgeMm": 18,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dual-tone browline combining Japanese craftsmanship and titanium wire accents.",
+      "status": "staged"
+    },
+    {
+      "id": "dita-believer",
+      "canonicalBrand": "DITA",
+      "displayBrand": "DITA",
+      "modelName": "Believer Round Titanium Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://dita.com/products/believer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Rose Gold / Soft Pink Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "dita",
+        "modelName": "believer round titanium sunglasses",
+        "frameShape": "curved round wire",
+        "frameMaterial": "beta-titanium",
+        "lensWidthMm": 52,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Delicate wire frame with flowing outer rim inspired by art deco streamlining.",
+      "status": "staged"
+    },
+    {
+      "id": "dita-subsystem",
+      "canonicalBrand": "DITA",
+      "displayBrand": "DITA",
+      "modelName": "Subsystem Geometric Aviator Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://dita.com/products/subsystem"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Iron / Dark Grey Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "dita",
+        "modelName": "subsystem geometric aviator sunglasses",
+        "frameShape": "angular geometric aviator",
+        "frameMaterial": "titanium",
+        "lensWidthMm": 58,
+        "bridgeMm": 14,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Aggressive multi-piece titanium aviator pressed with fine line micro-details.",
+      "status": "staged"
+    },
+    {
+      "id": "mykita-lite-tuva",
+      "canonicalBrand": "MYKITA",
+      "displayBrand": "MYKITA",
+      "modelName": "Lite Tuva Round Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://mykita.com/en/tuva-lite-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Shiny Copper / Raw Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "mykita",
+        "modelName": "lite tuva round sunglasses",
+        "frameShape": "round panto",
+        "frameMaterial": "stainless steel",
+        "lensWidthMm": 49,
+        "bridgeMm": 21,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Patented screwless spiral hinge handcrafted from ultra-thin surgical stainless steel.",
+      "status": "staged"
+    },
+    {
+      "id": "mykita-decades-sun-maple",
+      "canonicalBrand": "MYKITA",
+      "displayBrand": "MYKITA",
+      "modelName": "Decades Sun Maple Square Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://mykita.com/en/maple-decades-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Grey Gradient Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "mykita",
+        "modelName": "decades sun maple square sunglasses",
+        "frameShape": "square aviator",
+        "frameMaterial": "stainless steel",
+        "lensWidthMm": 54,
+        "bridgeMm": 17,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Contemporary interpretation of 1970s motoring frames in lightweight steel sheet.",
+      "status": "staged"
+    },
+    {
+      "id": "mykita-lite-erno",
+      "canonicalBrand": "MYKITA",
+      "displayBrand": "MYKITA",
+      "modelName": "Lite Erno Geometric Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://mykita.com/en/erno-lite-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Champagne Gold / Brown Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "mykita",
+        "modelName": "lite erno geometric sunglasses",
+        "frameShape": "geometric octagonal",
+        "frameMaterial": "stainless steel",
+        "lensWidthMm": 51,
+        "bridgeMm": 20,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subtle multi-faceted geometric outline providing pure architectural understatement.",
+      "status": "staged"
+    },
+    {
+      "id": "mykita-no1-sun-hunter",
+      "canonicalBrand": "MYKITA",
+      "displayBrand": "MYKITA",
+      "modelName": "No1 Sun Hunter Navigator Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://mykita.com/en/hunter-no1-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Silver / Flash Blue Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "mykita",
+        "modelName": "no1 sun hunter navigator sunglasses",
+        "frameShape": "navigator pilot",
+        "frameMaterial": "stainless steel",
+        "lensWidthMm": 56,
+        "bridgeMm": 15,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Laser-cut double bridge navigator with precision silicone temple tips.",
+      "status": "staged"
+    },
+    {
+      "id": "mykita-studio-13",
+      "canonicalBrand": "MYKITA",
+      "displayBrand": "MYKITA",
+      "modelName": "Studio 13 Shield Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://mykita.com/en/studio-13-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Raw Steel / Dark Grey Shield"
+      ],
+      "collectedAttributes": {
+        "brand": "mykita",
+        "modelName": "studio 13 shield sunglasses",
+        "frameShape": "monolithic shield",
+        "frameMaterial": "stainless steel and polyamide",
+        "lensWidthMm": 140,
+        "bridgeMm": 15,
+        "templeMm": 135,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Futuristic one-piece visor shield exploring radical industrial purity.",
+      "status": "staged"
+    },
+    {
+      "id": "mykita-lessrim-kay",
+      "canonicalBrand": "MYKITA",
+      "displayBrand": "MYKITA",
+      "modelName": "Lessrim Sun Kay Round Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://mykita.com/en/kay-lessrim-sun"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "DE",
+      "lifecycle": "active",
+      "variants": [
+        "Glossy Gold / Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "mykita",
+        "modelName": "lessrim sun kay round sunglasses",
+        "frameShape": "nearly rimless round",
+        "frameMaterial": "micro-thin stainless steel",
+        "lensWidthMm": 48,
+        "bridgeMm": 22,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Rim measuring only 0.5mm flush with the lens perimeter, appearing completely frameless.",
+      "status": "staged"
+    },
+    {
+      "id": "maui-jim-hookipa",
+      "canonicalBrand": "Maui Jim",
+      "displayBrand": "Maui Jim",
+      "modelName": "Ho'okipa PolarizedPlus2 Rimless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mauijim.com/US/en_US/shop/sunglasses/rimless/hookipa"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Gloss Black / Neutral Grey Polarized"
+      ],
+      "collectedAttributes": {
+        "brand": "maui jim",
+        "modelName": "ho'okipa polarizedplus2 rimless",
+        "frameShape": "rimless wrap sport",
+        "frameMaterial": "grilamid nylon",
+        "lensWidthMm": 64,
+        "bridgeMm": 17,
+        "templeMm": 130,
+        "polarization": "polarizedplus2",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Named after Ho'okipa Beach, delivering supreme clarity and glare elimination for water sports.",
+      "status": "staged"
+    },
+    {
+      "id": "maui-jim-peahi",
+      "canonicalBrand": "Maui Jim",
+      "displayBrand": "Maui Jim",
+      "modelName": "Peahi Wrap Polarized",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mauijim.com/US/en_US/shop/sunglasses/wrap/peahi"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / HCL Bronze Polarized"
+      ],
+      "collectedAttributes": {
+        "brand": "maui jim",
+        "modelName": "peahi wrap polarized",
+        "frameShape": "full wrap 8-base",
+        "frameMaterial": "grilamid",
+        "lensWidthMm": 65,
+        "bridgeMm": 19,
+        "templeMm": 120,
+        "polarization": "polarizedplus2",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Deep wrap shield named after legendary Maui big wave surf spot Jaws.",
+      "status": "staged"
+    },
+    {
+      "id": "maui-jim-banyans",
+      "canonicalBrand": "Maui Jim",
+      "displayBrand": "Maui Jim",
+      "modelName": "Banyans Sport Polarized",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mauijim.com/US/en_US/shop/sunglasses/rimless/banyans"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Gloss Black / Maui Rose Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "maui jim",
+        "modelName": "banyans sport polarized",
+        "frameShape": "semi-rimless athletic wrap",
+        "frameMaterial": "grilamid nylon",
+        "lensWidthMm": 67,
+        "bridgeMm": 17,
+        "templeMm": 130,
+        "polarization": "polarizedplus2",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lightweight semi-rimless frame designed for offshore game fishing and golf.",
+      "status": "staged"
+    },
+    {
+      "id": "maui-jim-kawika",
+      "canonicalBrand": "Maui Jim",
+      "displayBrand": "Maui Jim",
+      "modelName": "Kawika Classic Browline",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mauijim.com/US/en_US/shop/sunglasses/classic/kawika"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Black Gloss Antique Gold / Neutral Grey"
+      ],
+      "collectedAttributes": {
+        "brand": "maui jim",
+        "modelName": "kawika classic browline",
+        "frameShape": "retro browline",
+        "frameMaterial": "nylon and metal",
+        "lensWidthMm": 54,
+        "bridgeMm": 18,
+        "templeMm": 140,
+        "polarization": "polarizedplus2",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Tribute to Maui Jim's original heritage style from the 1980s.",
+      "status": "staged"
+    },
+    {
+      "id": "maui-jim-red-sands",
+      "canonicalBrand": "Maui Jim",
+      "displayBrand": "Maui Jim",
+      "modelName": "Red Sands Rectangular Polarized",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mauijim.com/US/en_US/shop/sunglasses/rectangular/red-sands"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Blue Hawaii Polarized"
+      ],
+      "collectedAttributes": {
+        "brand": "maui jim",
+        "modelName": "red sands rectangular polarized",
+        "frameShape": "rectangular lifestyle",
+        "frameMaterial": "injected nylon",
+        "lensWidthMm": 59,
+        "bridgeMm": 17,
+        "templeMm": 140,
+        "polarization": "polarizedplus2",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Ultralight everyday rectangular silhouette fitted with MauiPure lens optics.",
+      "status": "staged"
+    },
+    {
+      "id": "maui-jim-breakwall",
+      "canonicalBrand": "Maui Jim",
+      "displayBrand": "Maui Jim",
+      "modelName": "Breakwall Polarized Rimless",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mauijim.com/US/en_US/shop/sunglasses/rimless/breakwall"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Gloss Black / Neutral Grey"
+      ],
+      "collectedAttributes": {
+        "brand": "maui jim",
+        "modelName": "breakwall polarized rimless",
+        "frameShape": "rimless wrap",
+        "frameMaterial": "beta-titanium bridges and nylon",
+        "lensWidthMm": 63,
+        "bridgeMm": 13,
+        "templeMm": 127,
+        "polarization": "polarizedplus2",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Featherweight rimless performance sunglasses weighing just 14 grams.",
+      "status": "staged"
+    },
+    {
+      "id": "maui-jim-lighthouse",
+      "canonicalBrand": "Maui Jim",
+      "displayBrand": "Maui Jim",
+      "modelName": "Lighthouse Lightweight Polarized",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mauijim.com/US/en_US/shop/sunglasses/rimless/lighthouse"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Smoke Grey / Maui HT High Transmission"
+      ],
+      "collectedAttributes": {
+        "brand": "maui jim",
+        "modelName": "lighthouse lightweight polarized",
+        "frameShape": "rimless rectangular",
+        "frameMaterial": "polycarbonate and nylon",
+        "lensWidthMm": 65,
+        "bridgeMm": 13,
+        "templeMm": 127,
+        "polarization": "polarizedplus2",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Unobstructed panoramic vision inspired by Lahaina's historic lighthouse beacon.",
+      "status": "staged"
+    },
+    {
+      "id": "maui-jim-stingray",
+      "canonicalBrand": "Maui Jim",
+      "displayBrand": "Maui Jim",
+      "modelName": "Stingray Wrap Polarized",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.mauijim.com/US/en_US/shop/sunglasses/wrap/stingray"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "US",
+      "lifecycle": "active",
+      "variants": [
+        "Gloss Black / Neutral Grey SuperThin Glass"
+      ],
+      "collectedAttributes": {
+        "brand": "maui jim",
+        "modelName": "stingray wrap polarized",
+        "frameShape": "modified rectangular wrap",
+        "frameMaterial": "cellulose propionate",
+        "lensWidthMm": 55,
+        "bridgeMm": 22,
+        "templeMm": 129,
+        "polarization": "polarizedplus2",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Spring-hinged wrap frame fitted with scratch-resistant SuperThin Glass lenses.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl-462-sulpice",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "SL 462 Sulpice Square Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/sunglasses/sl-462-sulpice-660309Y99011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Shiny Black Acetate / Black Nylon Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl 462 sulpice square sunglasses",
+        "frameShape": "bold square",
+        "frameMaterial": "recycled acetate",
+        "lensWidthMm": 54,
+        "bridgeMm": 19,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bold squared masculine frame with laser-engraved Saint Laurent signature on temples.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl-276-mica",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "SL 276 Mica Cat-Eye Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/sunglasses/sl-276-mica-560035Y99011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Grey Nylon Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl 276 mica cat-eye sunglasses",
+        "frameShape": "sharp angular cat-eye",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 53,
+        "bridgeMm": 16,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Angular sharp cat-eye sunglasses defining Anthony Vaccarello's runway aesthetic.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl-557-shade",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "SL 557 Shade Oval Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/sunglasses/sl-557-shade-707323Y99011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Acetate / Dark Grey Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl 557 shade oval sunglasses",
+        "frameShape": "oval minimal",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 53,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chic 1990s oval sunglasses with thick low-profile temple construction.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl-m94-monogram",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "SL M94 Monogram Square Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/sunglasses/sl-m94-671762Y99011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Acetate / YSL Gold Monogram"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl m94 monogram square sunglasses",
+        "frameShape": "oversized square",
+        "frameMaterial": "acetate with metal ysl logo",
+        "lensWidthMm": 53,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Features the iconic interlaced YSL Cassandre monogram in gold on both temples.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl-309-aviator",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "SL 309 Metal Aviator Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/sunglasses/sl-309-586161Y99011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Metal / Grey Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl 309 metal aviator sunglasses",
+        "frameShape": "pilot double bridge",
+        "frameMaterial": "metal",
+        "lensWidthMm": 58,
+        "bridgeMm": 15,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Minimalist flat double-bridge aviator frame with micro-inscribed logo.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl-534",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "SL 534 Square Acetate Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/sunglasses/sl-534-698748Y99011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Havana / Brown Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl 534 square acetate sunglasses",
+        "frameShape": "square vintage",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Subtle vintage square frame showcasing rich Italian tortoiseshell acetate.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl-598-shield",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "SL 598 Shield Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/sunglasses/sl-598-735432Y99011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Full Black Monolithic Visor"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl 598 shield sunglasses",
+        "frameShape": "futuristic visor shield",
+        "frameMaterial": "nylon",
+        "lensWidthMm": 145,
+        "bridgeMm": 15,
+        "templeMm": 125,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "High-fashion visor shield framing the face in dramatic monochromatic black.",
+      "status": "staged"
+    },
+    {
+      "id": "ysl-sl-613-round-wire",
+      "canonicalBrand": "Saint Laurent",
+      "displayBrand": "Saint Laurent",
+      "modelName": "SL 613 Round Wire Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/sunglasses/sl-613-754321Y99011000.html"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "FR",
+      "lifecycle": "active",
+      "variants": [
+        "Black Metal / Green Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "saint laurent",
+        "modelName": "sl 613 round wire sunglasses",
+        "frameShape": "round wire",
+        "frameMaterial": "metal",
+        "lensWidthMm": 51,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clean circular wire frame capturing Yves Saint Laurent's personal signature silhouette.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg0061s-round-web",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG0061S Round Web Aviator",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/accessories/eyewear/sunglasses/round-sunglasses-with-web-p-GG0061S"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Gold Metal / Green Red Green Web"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg0061s round web aviator",
+        "frameShape": "round aviator",
+        "frameMaterial": "metal and acetate",
+        "lensWidthMm": 56,
+        "bridgeMm": 22,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Signature aviator adorned with Gucci's iconic green and red Web enamel stripe.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg0034s-square",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG0034S Square Acetate Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/accessories/eyewear/sunglasses/square-frame-sunglasses-p-GG0034S"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Grey Gradient Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg0034s square acetate sunglasses",
+        "frameShape": "oversized square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 54,
+        "bridgeMm": 20,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Bold square frame finished with rubberized House Web and interlocking GG logo.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg0417sk",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG0417SK Rectangular Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/accessories/eyewear/sunglasses/rectangular-sunglasses-p-GG0417SK"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Havana / Brown Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg0417sk rectangular sunglasses",
+        "frameShape": "rectangular soft",
+        "frameMaterial": "acetate and metal",
+        "lensWidthMm": 56,
+        "bridgeMm": 17,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Understated rectangular silhouette featuring gold-toned Gucci lettering on temples.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg0811s-oversized",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG0811S Oversized Geometric Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/accessories/eyewear/sunglasses/geometric-frame-sunglasses-p-GG0811S"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Grey Gradient"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg0811s oversized geometric sunglasses",
+        "frameShape": "geometric octagonal",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 53,
+        "bridgeMm": 21,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dramatic oversized 1970s geometric eyewear with bold multi-angled beveling.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg0008s",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG0008S Rectangular Sport Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/accessories/eyewear/sunglasses/rectangular-sunglasses-p-GG0008S"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Matte Black / Green Polarized"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg0008s rectangular sport sunglasses",
+        "frameShape": "rectangular active",
+        "frameMaterial": "rubberized acetate",
+        "lensWidthMm": 55,
+        "bridgeMm": 17,
+        "templeMm": 145,
+        "polarization": "polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Masculine rectangular frame coated in velvet-touch rubber with Gucci Web detail.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg0062s-pilot",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG0062S Pilot Double-Bridge Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/men/accessories/eyewear/sunglasses/pilot-sunglasses-p-GG0062S"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Ruthenium / Grey Polarized"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg0062s pilot double-bridge sunglasses",
+        "frameShape": "aviator teardrop",
+        "frameMaterial": "metal",
+        "lensWidthMm": 57,
+        "bridgeMm": 17,
+        "templeMm": 140,
+        "polarization": "polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Classic pilot shape with distinctive enameled Gucci color bars across the brow.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg0200s",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG0200S Vintage Cat-Eye Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/accessories/eyewear/sunglasses/cat-eye-sunglasses-p-GG0200S"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Tortoiseshell / Gold Stars"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg0200s vintage cat-eye sunglasses",
+        "frameShape": "retro cat-eye",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 20,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Glamorous vintage cat-eye with crystal-studded star embellishments.",
+      "status": "staged"
+    },
+    {
+      "id": "gucci-gg0900s-mask",
+      "canonicalBrand": "Gucci",
+      "displayBrand": "Gucci",
+      "modelName": "GG0900S Mask Shield Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/pr/women/accessories/eyewear/sunglasses/mask-sunglasses-p-GG0900S"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Rimless Visor / Gold Interlocking G"
+      ],
+      "collectedAttributes": {
+        "brand": "gucci",
+        "modelName": "gg0900s mask shield sunglasses",
+        "frameShape": "single lens visor",
+        "frameMaterial": "metal and polycarbonate",
+        "lensWidthMm": 138,
+        "bridgeMm": 15,
+        "templeMm": 135,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uv400"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Statement runway mask shield with prominent interlocking G studs in center.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-pr-17ws-symbole",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "PR 17WS Symbole Rectangular Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-symbole-sunglasses/SPR17W_E1AB_F05S0_C_049"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black Acetate / Dark Grey Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "pr 17ws symbole rectangular sunglasses",
+        "frameShape": "geometric rectangular",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 49,
+        "bridgeMm": 20,
+        "templeMm": 145,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Prada Symbole collection with bold three-dimensional temples carrying the triangle handbag logo.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-pr-19ws-runway",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "PR 19WS Runway Geometric Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-runway-sunglasses/SPR19W_E09Q_F05S0_C_052"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "White Acetate / Black Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "pr 19ws runway geometric sunglasses",
+        "frameShape": "chunky geometric cat-eye",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 21,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Futuristic sculpted runway sunglasses with beveled geometric profiles.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-pr-06ys-cinema",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "PR 06YS Cinema Square Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-cinema-sunglasses/SPR06Y_E1AB_F05S0_C_053"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Pale Gold Metal Bridge"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "pr 06ys cinema square sunglasses",
+        "frameShape": "square combination",
+        "frameMaterial": "acetate and metal",
+        "lensWidthMm": 53,
+        "bridgeMm": 21,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Prada Cinéma collection playing with elegant acetate rims and curved metal bridge.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-pr-15ws-oversized",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "PR 15WS Oversized Acetate Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-sunglasses/SPR15W_E01A_F00A6_C_054"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Caramel Tortoise / Brown Gradient"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "pr 15ws oversized acetate sunglasses",
+        "frameShape": "oversized square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 54,
+        "bridgeMm": 19,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sophisticated feminine oversized frame with hand-polished beveled edges.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-pr-53ys-pilot",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "PR 53YS Pilot Metal Double-Bridge",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-pilot-sunglasses/SPR53Y_E1BC_F05S0_C_057"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Silver Metal / Polarized Grey"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "pr 53ys pilot metal double-bridge",
+        "frameShape": "pilot navigator",
+        "frameMaterial": "metal",
+        "lensWidthMm": 57,
+        "bridgeMm": 16,
+        "templeMm": 145,
+        "polarization": "polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Modern aviator silhouette with straight brow bar and perforated metal temples.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-pr-24ys-oval",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "PR 24YS Oval Minimalist Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-sunglasses/SPR24Y_E1AB_F05S0_C_052"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Dark Grey Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "pr 24ys oval minimalist sunglasses",
+        "frameShape": "minimalist oval",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 19,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Streamlined 1990s oval frame highlighting Prada lettering in clean relief.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-pr-01os-heritage",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "PR 01OS Heritage Square Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-sunglasses/SPR01O_E2AU_F06S1_C_055"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Havana / Brown Gradient Lenses"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "pr 01os heritage square sunglasses",
+        "frameShape": "classic square",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 55,
+        "bridgeMm": 17,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Timeless Prada classic featuring softly rounded corners and durable five-barrel hinges.",
+      "status": "staged"
+    },
+    {
+      "id": "prada-pr-14ws-bold",
+      "canonicalBrand": "Prada",
+      "displayBrand": "Prada",
+      "modelName": "PR 14WS Bold Cat-Eye Sunglasses",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/p/prada-sunglasses/SPR14W_E1AB_F05S0_C_052"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "IT",
+      "lifecycle": "active",
+      "variants": [
+        "Black / Grey Gradient"
+      ],
+      "collectedAttributes": {
+        "brand": "prada",
+        "modelName": "pr 14ws bold cat-eye sunglasses",
+        "frameShape": "geometric cat-eye",
+        "frameMaterial": "acetate",
+        "lensWidthMm": 52,
+        "bridgeMm": 20,
+        "templeMm": 140,
+        "polarization": "non-polarized",
+        "uvProtection": "100% uva/uvb"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Feminine geometric cat-eye with faceted rim angles and metallic lettered logo.",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "Cutler and Gross",
+      "leafKey": "sunglasses",
+      "reason": "Cutler and Gross bespoke British artisan eyewear catalog maintains 8 distinct frame models.",
+      "officialSourceUrl": "https://www.cutlerandgross.com/us/sunglasses.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "0822 Aviator Sunglasses",
+        "1394 Square Acetate Sunglasses",
+        "1386 Bold Rectangular Sunglasses",
+        "0772 Classic Round Sunglasses",
+        "1307 Hexagonal Sunglasses",
+        "0847 Round Browline Sunglasses",
+        "1391 Vintage Square Sunglasses",
+        "1355 Navigator Sunglasses"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GB"
+    },
+    {
+      "brand": "MOSCOT",
+      "leafKey": "sunglasses",
+      "reason": "MOSCOT 5th-generation Lower East Side heritage sunglasses portfolio features 8 iconic frames.",
+      "officialSourceUrl": "https://moscot.com/collections/sunglasses",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Lemtosh Sun",
+        "Miltzen Sun",
+        "Dahven Sun",
+        "Zolman Sun",
+        "Arthur Sun",
+        "Billik Sun",
+        "Gelt Sun",
+        "Grunya Sun"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "US"
+    },
+    {
+      "brand": "Jacques Marie Mage",
+      "leafKey": "sunglasses",
+      "reason": "Jacques Marie Mage micro-production collector eyewear strictly numbers 6 core frame silhouettes.",
+      "officialSourceUrl": "https://jacquesmariemage.com/shop/category/sunglasses",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Dealan Acetate Sunglasses",
+        "Molino 55 Sunglasses",
+        "Enzo Bold Square Sunglasses",
+        "Zephirin Round Sunglasses",
+        "Torino Rectangular Sunglasses",
+        "Fellini Sculpted Sunglasses"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "US"
+    },
+    {
+      "brand": "DITA",
+      "leafKey": "sunglasses",
+      "reason": "DITA luxury titanium and acetate sunglasses range focuses on 6 flagship engineered frames.",
+      "officialSourceUrl": "https://dita.com/collections/mens-sunglasses",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Flight.006 Aviator Sunglasses",
+        "Grandmaster-Seven Bold Sunglasses",
+        "Mach-Six Navigator Sunglasses",
+        "Statesman-Six Square Browline Sunglasses",
+        "Believer Round Titanium Sunglasses",
+        "Subsystem Geometric Aviator Sunglasses"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "US"
+    },
+    {
+      "brand": "MYKITA",
+      "leafKey": "sunglasses",
+      "reason": "MYKITA Berlin handmade screwless stainless steel collection focuses on 6 primary frames.",
+      "officialSourceUrl": "https://mykita.com/en/sunglasses",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Lite Tuva Round Sunglasses",
+        "Decades Sun Maple Square Sunglasses",
+        "Lite Erno Geometric Sunglasses",
+        "No1 Sun Hunter Navigator Sunglasses",
+        "Studio 13 Shield Sunglasses",
+        "Lessrim Sun Kay Round Sunglasses"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "DE"
+    },
+    {
+      "brand": "Maui Jim",
+      "leafKey": "sunglasses",
+      "reason": "Maui Jim Hawaiian polarized sunglasses portfolio features 8 core sport and classic lifestyle frames.",
+      "officialSourceUrl": "https://www.mauijim.com/US/en_US/shop/sunglasses",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Ho'okipa PolarizedPlus2 Rimless",
+        "Peahi Wrap Polarized",
+        "Banyans Sport Polarized",
+        "Kawika Classic Browline",
+        "Red Sands Rectangular Polarized",
+        "Breakwall Polarized Rimless",
+        "Lighthouse Lightweight Polarized",
+        "Stingray Wrap Polarized"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "US"
+    },
+    {
+      "brand": "Saint Laurent",
+      "leafKey": "sunglasses",
+      "reason": "Saint Laurent active eyewear line comprises 8 distinct fashion runway frame models.",
+      "officialSourceUrl": "https://www.ysl.com/en-us/sunglasses",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "SL 462 Sulpice Square Sunglasses",
+        "SL 276 Mica Cat-Eye Sunglasses",
+        "SL 557 Shade Oval Sunglasses",
+        "SL M94 Monogram Square Sunglasses",
+        "SL 309 Metal Aviator Sunglasses",
+        "SL 534 Square Acetate Sunglasses",
+        "SL 598 Shield Sunglasses",
+        "SL 613 Round Wire Sunglasses"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "FR"
+    },
+    {
+      "brand": "Gucci",
+      "leafKey": "sunglasses",
+      "reason": "Gucci fashion eyewear collection centers on 8 distinct statement sunglasses silhouettes.",
+      "officialSourceUrl": "https://www.gucci.com/us/en/ca/women/accessories/eyewear/sunglasses-c-women-accessories-eyewear-sunglasses",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "GG0061S Round Web Aviator",
+        "GG0034S Square Acetate",
+        "GG0417SK Rectangular Asian Fit",
+        "GG0811S Oversized Geometric",
+        "GG0008S Rectangular Sport",
+        "GG0062S Pilot Double-Bridge",
+        "GG0200S Vintage Cat-Eye",
+        "GG0900S Mask Shield"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "IT"
+    },
+    {
+      "brand": "Prada",
+      "leafKey": "sunglasses",
+      "reason": "Prada luxury and Linea Rossa sunglasses lineup centers on 8 core architectural frame designs.",
+      "officialSourceUrl": "https://www.prada.com/us/en/women/accessories/eyewear.html",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "PR 17WS Symbole Rectangular Sunglasses",
+        "PR 19WS Runway Geometric Sunglasses",
+        "PR 06YS Cinema Square Sunglasses",
+        "PR 15WS Oversized Acetate Sunglasses",
+        "PR 53YS Pilot Metal Double-Bridge",
+        "PR 24YS Oval Minimalist Sunglasses",
+        "PR 01OS Heritage Square Sunglasses",
+        "PR 14WS Bold Cat-Eye Sunglasses"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "IT"
+    }
+  ]
+}

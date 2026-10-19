@@ -1,0 +1,3505 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "leafKey": "moisturizers",
+  "displayName": "Face Creams & Moisturizers",
+  "censusDate": "2026-10-11",
+  "entries": [
+    {
+      "id": "la-prairie-skin-caviar-luxe-cream",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Creams",
+      "modelName": "Skin Caviar Luxe Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/creams/skin-caviar-luxe-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-skin-caviar-luxe-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "skin caviar luxe cream",
+        "textureWeight": "Rich Cream",
+        "activeIngredients": "Caviar Premier & Cellular Complex",
+        "skinBarrierFocus": "Cellular Regeneration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship face cream Skin Caviar Luxe Cream",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-skin-caviar-luxe-cream-sheer",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Creams",
+      "modelName": "Skin Caviar Luxe Cream Sheer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/creams/skin-caviar-luxe-cream-sheer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-skin-caviar-luxe-cream-sheer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "skin caviar luxe cream sheer",
+        "textureWeight": "Lightweight Cream",
+        "activeIngredients": "Caviar Premier & Cellular Complex",
+        "skinBarrierFocus": "Cellular Regeneration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship face cream Skin Caviar Luxe Cream Sheer",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-white-caviar-creme-extraordinaire",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Creams",
+      "modelName": "White Caviar Crème Extraordinaire",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/creams/white-caviar-creme-extraordinaire"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-white-caviar-creme-extraordinaire.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "white caviar crème extraordinaire",
+        "textureWeight": "Velvet Cream",
+        "activeIngredients": "Lumidose & Golden Caviar Extract",
+        "skinBarrierFocus": "Radiance & Spot Attenuation",
+        "volumeMl": 60,
+        "packagingType": "Airless Pump"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship face cream White Caviar Crème Extraordinaire",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-platinum-rare-cream",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Creams",
+      "modelName": "Platinum Rare Haute-Rejuvenation Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/creams/platinum-rare-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-platinum-rare-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "platinum rare haute-rejuvenation cream",
+        "textureWeight": "Rich Velvety Cream",
+        "activeIngredients": "Platinum Multi-Peptide Matrix",
+        "skinBarrierFocus": "Supreme Longevity & Elasticity",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship face cream Platinum Rare Haute-Rejuvenation Cream",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-pure-gold-radiance-cream",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Creams",
+      "modelName": "Pure Gold Radiance Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/creams/pure-gold-radiance-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-pure-gold-radiance-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "pure gold radiance cream",
+        "textureWeight": "Ultra-Rich Cream",
+        "activeIngredients": "Pure Gold Diffusion System",
+        "skinBarrierFocus": "Nourishing Glow",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship face cream Pure Gold Radiance Cream",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-skin-caviar-absolute-filler",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Creams",
+      "modelName": "Skin Caviar Absolute Filler",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/creams/skin-caviar-absolute-filler"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-skin-caviar-absolute-filler.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "skin caviar absolute filler",
+        "textureWeight": "Sculpting Balm",
+        "activeIngredients": "Caviar Absolute & Brown Algae",
+        "skinBarrierFocus": "Volume Restoration",
+        "volumeMl": 60,
+        "packagingType": "Airless Pump"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship face cream Skin Caviar Absolute Filler",
+      "status": "staged"
+    },
+    {
+      "id": "la-prairie-cellular-swiss-ice-crystal-cream",
+      "canonicalBrand": "La Prairie",
+      "displayBrand": "La Prairie",
+      "productLine": "Swiss Cellular Creams",
+      "modelName": "Cellular Swiss Ice Crystal Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.laprairie.com/en-us/creams/cellular-swiss-ice-crystal-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://media.laprairie.com/images/products/la-prairie-cellular-swiss-ice-crystal-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "la prairie",
+        "modelName": "cellular swiss ice crystal cream",
+        "textureWeight": "Silky Emulsion Cream",
+        "activeIngredients": "Swiss Ice Crystal Complex",
+        "skinBarrierFocus": "Extreme Moisture Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Prairie flagship face cream Cellular Swiss Ice Crystal Cream",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-creme-de-la-mer",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Moisturizers",
+      "modelName": "Crème de la Mer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/moisturizers/creme-de-la-mer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-creme-de-la-mer.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "crème de la mer",
+        "textureWeight": "Ultra-Rich Cream",
+        "activeIngredients": "Concentrated Miracle Broth & Lime Tea",
+        "skinBarrierFocus": "Deep Lipid Barrier Restoration",
+        "volumeMl": 60,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth moisturizer Crème de la Mer",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-moisturizing-soft-cream",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Moisturizers",
+      "modelName": "The Moisturizing Soft Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/moisturizers/moisturizing-soft-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-moisturizing-soft-cream.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the moisturizing soft cream",
+        "textureWeight": "Weightless Soft Cream",
+        "activeIngredients": "Miracle Broth & Moisturizing Spheres",
+        "skinBarrierFocus": "Plumping Moisture Lock",
+        "volumeMl": 60,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth moisturizer The Moisturizing Soft Cream",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-moisturizing-fresh-cream",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Moisturizers",
+      "modelName": "The Moisturizing Fresh Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/moisturizers/moisturizing-fresh-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-moisturizing-fresh-cream.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the moisturizing fresh cream",
+        "textureWeight": "Lightweight Gel-Cream",
+        "activeIngredients": "Miracle Broth & Moisture Matrix",
+        "skinBarrierFocus": "Oil-Control & Balance",
+        "volumeMl": 60,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth moisturizer The Moisturizing Fresh Cream",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-moisturizing-cool-gel-cream",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Moisturizers",
+      "modelName": "The Moisturizing Cool Gel Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/moisturizers/moisturizing-cool-gel-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-moisturizing-cool-gel-cream.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the moisturizing cool gel cream",
+        "textureWeight": "Cooling Gel-Cream",
+        "activeIngredients": "Miracle Broth & Sea Kelp",
+        "skinBarrierFocus": "Calming Soothing Hydration",
+        "volumeMl": 60,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth moisturizer The Moisturizing Cool Gel Cream",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-moisturizing-matte-lotion",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Moisturizers",
+      "modelName": "The Moisturizing Matte Lotion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/moisturizers/moisturizing-matte-lotion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-moisturizing-matte-lotion.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the moisturizing matte lotion",
+        "textureWeight": "Matte Fluid Lotion",
+        "activeIngredients": "Miracle Broth & Clay Minerals",
+        "skinBarrierFocus": "Mattifying Moisture Defense",
+        "volumeMl": 50,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth moisturizer The Moisturizing Matte Lotion",
+      "status": "staged"
+    },
+    {
+      "id": "la-mer-moisturizing-soft-lotion",
+      "canonicalBrand": "La Mer",
+      "displayBrand": "La Mer",
+      "productLine": "Miracle Broth Moisturizers",
+      "modelName": "The Moisturizing Soft Lotion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cremedelamer.com/products/moisturizers/moisturizing-soft-lotion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cremedelamer.com/media/export/cms/products/la-mer-moisturizing-soft-lotion.png"
+      },
+      "collectedAttributes": {
+        "brand": "la mer",
+        "modelName": "the moisturizing soft lotion",
+        "textureWeight": "Silky Fluid Lotion",
+        "activeIngredients": "Miracle Broth & Soft Lotion Capsules",
+        "skinBarrierFocus": "Lightweight Hydration",
+        "volumeMl": 50,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "La Mer Miracle Broth moisturizer The Moisturizing Soft Lotion",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-la-creme",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Crème & Émulsion",
+      "modelName": "La Crème",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/la-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-la-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "la crème",
+        "textureWeight": "Ultra-Luxurious Night Cream",
+        "activeIngredients": "Skin-Empowering Illuminator & Ceraferment",
+        "skinBarrierFocus": "Cellular Regeneration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury face cream La Crème",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-protective-fortifying-cream",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Crème & Émulsion",
+      "modelName": "Protective Fortifying Cream SPF 22",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/protective-fortifying-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-protective-fortifying-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "protective fortifying cream spf 22",
+        "textureWeight": "Day Cream",
+        "activeIngredients": "Hyaluronic Acid & Time Tune Complex",
+        "skinBarrierFocus": "UV & Environmental Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury face cream Protective Fortifying Cream SPF 22",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-intensive-fortifying-cream",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Crème & Émulsion",
+      "modelName": "Intensive Fortifying Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/intensive-fortifying-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-intensive-fortifying-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "intensive fortifying cream",
+        "textureWeight": "Night Cream",
+        "activeIngredients": "Ononis Spinosa & Okra Extract",
+        "skinBarrierFocus": "Night Moisture Recovery",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury face cream Intensive Fortifying Cream",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-protective-fortifying-emulsion",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Crème & Émulsion",
+      "modelName": "Protective Fortifying Emulsion SPF 22",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/protective-fortifying-emulsion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-protective-fortifying-emulsion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "protective fortifying emulsion spf 22",
+        "textureWeight": "Lightweight Day Milk",
+        "activeIngredients": "Trehalose & Ginkgo Biloba",
+        "skinBarrierFocus": "Daytime Protective Barrier",
+        "volumeMl": 125,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury face cream Protective Fortifying Emulsion SPF 22",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-intensive-fortifying-emulsion",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Crème & Émulsion",
+      "modelName": "Intensive Fortifying Emulsion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/intensive-fortifying-emulsion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "125ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-intensive-fortifying-emulsion.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "intensive fortifying emulsion",
+        "textureWeight": "Lightweight Night Milk",
+        "activeIngredients": "Peony Root & Time Tune Complex",
+        "skinBarrierFocus": "Nighttime Barrier Repair",
+        "volumeMl": 125,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury face cream Intensive Fortifying Emulsion",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-volumizing-cream-supreme",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Crème & Émulsion",
+      "modelName": "Volumizing Cream Supreme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/volumizing-cream-supreme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-volumizing-cream-supreme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "volumizing cream supreme",
+        "textureWeight": "Cushioning Cream",
+        "activeIngredients": "Watercress Extract & Golden Silk",
+        "skinBarrierFocus": "Skin Plumping & Firming",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury face cream Volumizing Cream Supreme",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-synactif-daytime-moisturizer",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Crème & Émulsion",
+      "modelName": "Synactif Daytime Moisturizer SPF 30",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/synactif-daytime-moisturizer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "20ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-synactif-daytime-moisturizer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "synactif daytime moisturizer spf 30",
+        "textureWeight": "Silky Emulsion",
+        "activeIngredients": "MACC-PD & Double Hyaluronic Acid",
+        "skinBarrierFocus": "Daytime Defense",
+        "volumeMl": 20,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury face cream Synactif Daytime Moisturizer SPF 30",
+      "status": "staged"
+    },
+    {
+      "id": "cle-de-peau-synactif-nighttime-moisturizer",
+      "canonicalBrand": "Clé de Peau Beauté",
+      "displayBrand": "Clé de Peau Beauté",
+      "productLine": "Crème & Émulsion",
+      "modelName": "Synactif Nighttime Moisturizer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.cledepeau-beaute.com/us/products/synactif-nighttime-moisturizer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.cledepeau-beaute.com/images/products/cle-de-peau-synactif-nighttime-moisturizer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "clé de peau beauté",
+        "modelName": "synactif nighttime moisturizer",
+        "textureWeight": "Rich Balm Cream",
+        "activeIngredients": "MACC-PD & Neem Leaf Extract",
+        "skinBarrierFocus": "Overnight Deep Rejuvenation",
+        "volumeMl": 40,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Clé de Peau Beauté luxury face cream Synactif Nighttime Moisturizer",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-sisleya-extra-rich",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Sisleÿa L'Intégral Anti-Âge Extra-Rich Day & Night",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/sisleya-extra-rich"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-sisleya-extra-rich.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "sisleÿa l'intégral anti-âge extra-rich day & night",
+        "textureWeight": "Ultra-Rich Cream",
+        "activeIngredients": "Persian Acacia & Lindera",
+        "skinBarrierFocus": "Cellular Longevity & Lipids",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Sisleÿa L'Intégral Anti-Âge Extra-Rich Day & Night",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-sisleya-day-and-night",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Sisleÿa L'Intégral Anti-Âge Day & Night",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/sisleya-day-and-night"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-sisleya-day-and-night.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "sisleÿa l'intégral anti-âge day & night",
+        "textureWeight": "Classic Velvet Cream",
+        "activeIngredients": "Persian Acacia & Lindera",
+        "skinBarrierFocus": "Multi-Factor Aging Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Sisleÿa L'Intégral Anti-Âge Day & Night",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-black-rose-skin-infusion-cream",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Black Rose Skin Infusion Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/black-rose-skin-infusion-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-black-rose-skin-infusion-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "black rose skin infusion cream",
+        "textureWeight": "Plumping Water-Drop Cream",
+        "activeIngredients": "Black Rose Aqueous Extract & Alkekengi Calyx",
+        "skinBarrierFocus": "Plumping Radiance & Moisture",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Black Rose Skin Infusion Cream",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-velvet-nourishing-cream",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Velvet Nourishing Cream with Saffron Flowers",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/velvet-nourishing-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-velvet-nourishing-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "velvet nourishing cream with saffron flowers",
+        "textureWeight": "Rich Comfort Cream",
+        "activeIngredients": "Saffron Flowers & Buckwheat Seed",
+        "skinBarrierFocus": "Dry Skin Barrier Nutrition",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Velvet Nourishing Cream with Saffron Flowers",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-all-day-all-year",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "All Day All Year Essential Anti-Aging Day Care",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/all-day-all-year"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-all-day-all-year.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "all day all year essential anti-aging day care",
+        "textureWeight": "Protective Shield Cream",
+        "activeIngredients": "Marshmallow & Sesame Extract",
+        "skinBarrierFocus": "Environmental Barrier Defense",
+        "volumeMl": 50,
+        "packagingType": "Airless Pump"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream All Day All Year Essential Anti-Aging Day Care",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-hydra-global",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Hydra-Global Intense Anti-Aging Hydration",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/hydra-global"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "40ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-hydra-global.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "hydra-global intense anti-aging hydration",
+        "textureWeight": "Fluid Gel-Cream",
+        "activeIngredients": "Wild Pansy & Chestnut Extract",
+        "skinBarrierFocus": "Deep Water Circulation",
+        "volumeMl": 40,
+        "packagingType": "Tube"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Hydra-Global Intense Anti-Aging Hydration",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-restorative-facial-cream",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Restorative Facial Cream with Shea Butter",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/restorative-facial-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-restorative-facial-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "restorative facial cream with shea butter",
+        "textureWeight": "Balm Cream",
+        "activeIngredients": "Shea Butter & Carrot Extract",
+        "skinBarrierFocus": "SOS Soothing & Barrier Repair",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Restorative Facial Cream with Shea Butter",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-phyto-blanc-la-nuit",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Phyto-Blanc La Nuit Overnight Brightening Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/phyto-blanc-la-nuit"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-phyto-blanc-la-nuit.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "phyto-blanc la nuit overnight brightening cream",
+        "textureWeight": "Soft Gel-Cream",
+        "activeIngredients": "Rainbow Algae & White Mulberry",
+        "skinBarrierFocus": "Overnight Tone Evening",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Phyto-Blanc La Nuit Overnight Brightening Cream",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-botanical-moisturizer-cucumber",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Botanical Moisturizer with Cucumber",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/botanical-moisturizer-cucumber"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-botanical-moisturizer-cucumber.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "botanical moisturizer with cucumber",
+        "textureWeight": "Fresh Emulsion",
+        "activeIngredients": "Cucumber Extract & Amino Acids",
+        "skinBarrierFocus": "Hydrating Refresh",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Botanical Moisturizer with Cucumber",
+      "status": "staged"
+    },
+    {
+      "id": "sisley-supremya-at-night-cream",
+      "canonicalBrand": "Sisley Paris",
+      "displayBrand": "Sisley Paris",
+      "productLine": "Sisleÿa & Soins Hydratants",
+      "modelName": "Supremÿa At Night The Supreme Anti-Aging Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sisley-paris.com/en-US/moisturizers/supremya-at-night-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sisley-paris.com/media/catalog/product/sisley-supremya-at-night-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "sisley paris",
+        "modelName": "supremÿa at night the supreme anti-aging cream",
+        "textureWeight": "Ultra-Rich Night Cream",
+        "activeIngredients": "Phyto-Complex LC12 & Hazelnut Oil",
+        "skinBarrierFocus": "Nighttime Cellular Rebirth",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Sisley Paris botanical face cream Supremÿa At Night The Supreme Anti-Aging Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-the-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Orchidée Impériale The Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-the-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-the-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale the cream",
+        "textureWeight": "Supreme Velvet Cream",
+        "activeIngredients": "Orchid Totum Molecular Extract",
+        "skinBarrierFocus": "Supreme Cellular Regeneration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Orchidée Impériale The Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-the-light-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Orchidée Impériale The Light Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-the-light-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-the-light-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale the light cream",
+        "textureWeight": "Weightless Fluid Cream",
+        "activeIngredients": "Orchid Totum Molecular Extract",
+        "skinBarrierFocus": "Matte Firming Moisture",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Orchidée Impériale The Light Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-the-rich-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Orchidée Impériale The Rich Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-the-rich-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-the-rich-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale the rich cream",
+        "textureWeight": "Ultra-Rich Balm Cream",
+        "activeIngredients": "Orchid Totum & 100% Precious Orchid Oil",
+        "skinBarrierFocus": "Deep Nourishing Lipids",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Orchidée Impériale The Rich Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-orchidee-imperiale-black-the-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Orchidée Impériale Black The Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/orchidee-imperiale-black-the-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-orchidee-imperiale-black-the-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "orchidée impériale black the cream",
+        "textureWeight": "Supreme Master Cream",
+        "activeIngredients": "Black Orchid Technology",
+        "skinBarrierFocus": "Complete Skin Architecture Rejuvenation",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Orchidée Impériale Black The Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-honey-day-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Abeille Royale Honey Treatment Day Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-honey-day-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-honey-day-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale honey treatment day cream",
+        "textureWeight": "Melting Cream",
+        "activeIngredients": "Dynamic BlackBee Honey & Polyfermented Honey",
+        "skinBarrierFocus": "Collagen Preservation",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Abeille Royale Honey Treatment Day Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-honey-night-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Abeille Royale Honey Treatment Night Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-honey-night-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-honey-night-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale honey treatment night cream",
+        "textureWeight": "Nourishing Balm Cream",
+        "activeIngredients": "Ikaria Honey & Royal Jelly",
+        "skinBarrierFocus": "Overnight Dermal Repair",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Abeille Royale Honey Treatment Night Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-honey-rich-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Abeille Royale Honey Treatment Rich Day Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-honey-rich-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-honey-rich-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale honey treatment rich day cream",
+        "textureWeight": "Rich Melting Balm",
+        "activeIngredients": "Dynamic BlackBee Honey",
+        "skinBarrierFocus": "Intense Comfort Barrier",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Abeille Royale Honey Treatment Rich Day Cream",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-super-aqua-emulsion-universal",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Super Aqua-Emulsion Universal",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/super-aqua-emulsion-universal"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-super-aqua-emulsion-universal.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "super aqua-emulsion universal",
+        "textureWeight": "Hydrating Emulsion",
+        "activeIngredients": "Aquacomplex Advanced",
+        "skinBarrierFocus": "Microbiome & Hydration Balance",
+        "volumeMl": 50,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Super Aqua-Emulsion Universal",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-super-aqua-emulsion-light",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Super Aqua-Emulsion Light",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/super-aqua-emulsion-light"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-super-aqua-emulsion-light.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "super aqua-emulsion light",
+        "textureWeight": "Light Fresh Gel-Cream",
+        "activeIngredients": "Aquacomplex Advanced",
+        "skinBarrierFocus": "Lightweight Moisture Defense",
+        "volumeMl": 50,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Super Aqua-Emulsion Light",
+      "status": "staged"
+    },
+    {
+      "id": "guerlain-abeille-royale-mattifying-cream",
+      "canonicalBrand": "Guerlain",
+      "displayBrand": "Guerlain",
+      "productLine": "Orchidée & Abeille Royale Creams",
+      "modelName": "Abeille Royale Mattifying Day Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.guerlain.com/us/en-us/p/abeille-royale-mattifying-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.guerlain.com/images/products/guerlain-abeille-royale-mattifying-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "guerlain",
+        "modelName": "abeille royale mattifying day cream",
+        "textureWeight": "Matte Gel-Cream",
+        "activeIngredients": "Ouessant Honey & Propolis",
+        "skinBarrierFocus": "Sebum Balance & Firming",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Guerlain prestige cellular moisturizer Abeille Royale Mattifying Day Cream",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-skinpower-advanced-cream",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Skinpower Creams",
+      "modelName": "Skinpower Advanced Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/skinpower-advanced-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "80ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-skinpower-advanced-cream.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "skinpower advanced cream",
+        "textureWeight": "Velvety Rich Cream",
+        "activeIngredients": "PITERA & Kinoki Peptides",
+        "skinBarrierFocus": "Micro-Sculpting & Elasticity",
+        "volumeMl": 80,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment face cream Skinpower Advanced Cream",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-skinpower-advanced-airy-cream",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Skinpower Creams",
+      "modelName": "Skinpower Advanced Airy Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/skinpower-advanced-airy-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "80ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-skinpower-advanced-airy-cream.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "skinpower advanced airy cream",
+        "textureWeight": "Airy Lightweight Cream",
+        "activeIngredients": "PITERA & White Peony Extract",
+        "skinBarrierFocus": "Featherlight Moisture Plump",
+        "volumeMl": 80,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment face cream Skinpower Advanced Airy Cream",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-lxp-ultimate-perfecting-cream",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Skinpower Creams",
+      "modelName": "LXP Ultimate Perfecting Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/lxp-ultimate-perfecting-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-lxp-ultimate-perfecting-cream.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "lxp ultimate perfecting cream",
+        "textureWeight": "Ultra-Rich Master Cream",
+        "activeIngredients": "8x Concentrated PITERA & Centella Asiatica",
+        "skinBarrierFocus": "Supreme Structural Renewal",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment face cream LXP Ultimate Perfecting Cream",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-fte-clear-emulsion",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Skinpower Creams",
+      "modelName": "Facial Treatment Essence Clear Emulsion",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/fte-clear-emulsion"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "100ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-fte-clear-emulsion.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "facial treatment essence clear emulsion",
+        "textureWeight": "Silky Lotion",
+        "activeIngredients": "PITERA & Vitamin C",
+        "skinBarrierFocus": "Moisture Balance & Clarifying",
+        "volumeMl": 100,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment face cream Facial Treatment Essence Clear Emulsion",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-cellumination-deep-surge-ex",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Skinpower Creams",
+      "modelName": "Cellumination Deep Surge EX",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/cellumination-deep-surge-ex"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-cellumination-deep-surge-ex.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "cellumination deep surge ex",
+        "textureWeight": "Lightweight Gel-Cream",
+        "activeIngredients": "PITERA & Aura Bright Cocktail EX",
+        "skinBarrierFocus": "Deep Moisture & Translucency",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment face cream Cellumination Deep Surge EX",
+      "status": "staged"
+    },
+    {
+      "id": "sk-ii-men-moisturizing-cream",
+      "canonicalBrand": "SK-II",
+      "displayBrand": "SK-II",
+      "productLine": "PITERA Skinpower Creams",
+      "modelName": "Men Moisturizing Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.sk-ii.com/products/men-moisturizing-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.sk-ii.com/images/products/sk-ii-men-moisturizing-cream.png"
+      },
+      "collectedAttributes": {
+        "brand": "sk-ii",
+        "modelName": "men moisturizing cream",
+        "textureWeight": "Fresh Matte Cream",
+        "activeIngredients": "PITERA & Men Anti-Fatigue Complex",
+        "skinBarrierFocus": "Sebum Control & Hydration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "SK-II bio-ferment face cream Men Moisturizing Cream",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-la-creme-supreme",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Sublimage La Crème Texture Suprême",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-la-creme-supreme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-la-creme-supreme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage la crème texture suprême",
+        "textureWeight": "Ultra-Rich Cream",
+        "activeIngredients": "Vanilla Planifolia Polyfractioned Active",
+        "skinBarrierFocus": "Supreme Longevity & Elasticity",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Sublimage La Crème Texture Suprême",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-la-creme-universelle",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Sublimage La Crème Texture Universelle",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-la-creme-universelle"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-la-creme-universelle.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage la crème texture universelle",
+        "textureWeight": "Velvety Cream",
+        "activeIngredients": "Vanilla Planifolia PFA",
+        "skinBarrierFocus": "Global Anti-Aging",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Sublimage La Crème Texture Universelle",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-sublimage-la-creme-fine",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Sublimage La Crème Texture Fine",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/sublimage-la-creme-fine"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-sublimage-la-creme-fine.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "sublimage la crème texture fine",
+        "textureWeight": "Lightweight Silky Cream",
+        "activeIngredients": "Vanilla Planifolia PFA",
+        "skinBarrierFocus": "Fresh Radiance & Firming",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Sublimage La Crème Texture Fine",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-no1-revitalizing-cream",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "N°1 de Chanel Revitalizing Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/no1-revitalizing-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-no1-revitalizing-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "n°1 de chanel revitalizing cream",
+        "textureWeight": "Velvety Whipped Cream",
+        "activeIngredients": "Red Camellia Extract & Camellia Oil",
+        "skinBarrierFocus": "Barrier Defense & Vitality",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer N°1 de Chanel Revitalizing Cream",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-no1-rich-revitalizing-cream",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "N°1 de Chanel Rich Revitalizing Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/no1-rich-revitalizing-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-no1-rich-revitalizing-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "n°1 de chanel rich revitalizing cream",
+        "textureWeight": "Rich Whipped Cream",
+        "activeIngredients": "Red Camellia Ceramide Complex",
+        "skinBarrierFocus": "Cold Weather Barrier Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer N°1 de Chanel Rich Revitalizing Cream",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-lift-creme",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Le Lift Crème",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-lift-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-lift-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le lift crème",
+        "textureWeight": "Smooth Firming Cream",
+        "activeIngredients": "Botanical Alfalfa Concentrate",
+        "skinBarrierFocus": "Firming & Smoothing",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Le Lift Crème",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-lift-creme-riche",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Le Lift Crème Riche",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-lift-creme-riche"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-lift-creme-riche.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le lift crème riche",
+        "textureWeight": "Rich Firming Cream",
+        "activeIngredients": "Botanical Alfalfa Concentrate & Shea Butter",
+        "skinBarrierFocus": "Intensive Nutrition & Lift",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Le Lift Crème Riche",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-lift-creme-fine",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Le Lift Crème Fine",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-lift-creme-fine"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-lift-creme-fine.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le lift crème fine",
+        "textureWeight": "Light Firming Cream",
+        "activeIngredients": "Botanical Alfalfa Concentrate",
+        "skinBarrierFocus": "Fresh Matte Finish",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Le Lift Crème Fine",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-hydra-beauty-creme",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Hydra Beauty Crème",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/hydra-beauty-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-hydra-beauty-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "hydra beauty crème",
+        "textureWeight": "Hydrating Cream",
+        "activeIngredients": "Camellia Alba PFA & Blue Ginger PFA",
+        "skinBarrierFocus": "Moisture Lock & Radiance",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Hydra Beauty Crème",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-hydra-beauty-gel-creme",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Hydra Beauty Gel Crème",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/hydra-beauty-gel-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-hydra-beauty-gel-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "hydra beauty gel crème",
+        "textureWeight": "Refreshing Gel-Cream",
+        "activeIngredients": "Camellia Alba PFA",
+        "skinBarrierFocus": "Featherlight Hydration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Hydra Beauty Gel Crème",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-hydra-beauty-nutrition-creme",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Hydra Beauty Nutrition Nourishing Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/hydra-beauty-nutrition-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-hydra-beauty-nutrition-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "hydra beauty nutrition nourishing cream",
+        "textureWeight": "Rich Balm Cream",
+        "activeIngredients": "Camellia Precious Oil",
+        "skinBarrierFocus": "SOS Lipids for Dry Skin",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Hydra Beauty Nutrition Nourishing Cream",
+      "status": "staged"
+    },
+    {
+      "id": "chanel-le-blanc-creme",
+      "canonicalBrand": "Chanel",
+      "displayBrand": "Chanel",
+      "productLine": "Sublimage & Hydra Beauty",
+      "modelName": "Le Blanc Crème Healthy Light Creator",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.chanel.com/us/skincare/p/le-blanc-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.chanel.com/images/products/chanel-le-blanc-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "chanel",
+        "modelName": "le blanc crème healthy light creator",
+        "textureWeight": "Brightening Cream",
+        "activeIngredients": "TXC Molecule & Ume Flower Extract",
+        "skinBarrierFocus": "Radiance & Spot Correction",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Chanel precision moisturizer Le Blanc Crème Healthy Light Creator",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-la-creme-essentielle",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Dior Prestige La Crème Texture Essentielle",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-la-creme-essentielle"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-la-creme-essentielle.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior prestige la crème texture essentielle",
+        "textureWeight": "Velvet Cushion Cream",
+        "activeIngredients": "Rosapeptide & Rose de Granville",
+        "skinBarrierFocus": "Cellular Structure Reconstruction",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Dior Prestige La Crème Texture Essentielle",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-la-creme-riche",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Dior Prestige La Crème Texture Riche",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-la-creme-riche"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-la-creme-riche.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior prestige la crème texture riche",
+        "textureWeight": "Ultra-Rich Balm Cream",
+        "activeIngredients": "Rosapeptide & Rose Waxes",
+        "skinBarrierFocus": "Deep Lipid Replenishment",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Dior Prestige La Crème Texture Riche",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-la-creme-legere",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Dior Prestige La Crème Texture Légère",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-la-creme-legere"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-la-creme-legere.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior prestige la crème texture légère",
+        "textureWeight": "Light Air-Whipped Cream",
+        "activeIngredients": "Rosapeptide",
+        "skinBarrierFocus": "Matte Freshness & Firming",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Dior Prestige La Crème Texture Légère",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-totale-creme",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Capture Totale Firming & Wrinkle-Correcting Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-totale-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-totale-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture totale firming & wrinkle-correcting creme",
+        "textureWeight": "Dense Velvet Cream",
+        "activeIngredients": "Fermented Longoza & Ceramide",
+        "skinBarrierFocus": "Skin Matrix Reinforcement",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Capture Totale Firming & Wrinkle-Correcting Creme",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-totale-rich-creme",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Capture Totale Firming & Wrinkle-Correcting Rich Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-totale-rich-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-totale-rich-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture totale firming & wrinkle-correcting rich creme",
+        "textureWeight": "Rich Balm Cream",
+        "activeIngredients": "Fermented Longoza & Peony Wax",
+        "skinBarrierFocus": "Intense Dry Skin Comfort",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Capture Totale Firming & Wrinkle-Correcting Rich Creme",
+      "status": "staged"
+    },
+    {
+      "id": "dior-prestige-light-in-white-creme",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Dior Prestige Light-in-White La Crème Lumière",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/prestige-light-in-white-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-prestige-light-in-white-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "dior prestige light-in-white la crème lumière",
+        "textureWeight": "Luminous Gel-Cream",
+        "activeIngredients": "White Rose Extract & Rosapeptide",
+        "skinBarrierFocus": "Radiance & Tone Perfection",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Dior Prestige Light-in-White La Crème Lumière",
+      "status": "staged"
+    },
+    {
+      "id": "dior-hydra-life-fresh-sorbet",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Hydra Life Fresh Sorbet Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/hydra-life-fresh-sorbet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-hydra-life-fresh-sorbet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "hydra life fresh sorbet creme",
+        "textureWeight": "Watery Sorbet Gel-Cream",
+        "activeIngredients": "Mallow & Haberlea Leaf",
+        "skinBarrierFocus": "Instant Hydration Plump",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Hydra Life Fresh Sorbet Creme",
+      "status": "staged"
+    },
+    {
+      "id": "dior-hydra-life-intense-sorbet",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Hydra Life Intense Sorbet Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/hydra-life-intense-sorbet"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-hydra-life-intense-sorbet.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "hydra life intense sorbet creme",
+        "textureWeight": "Comfort Sorbet Cream",
+        "activeIngredients": "Mallow & Chamomile Oil",
+        "skinBarrierFocus": "Moisture Reservoir Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Hydra Life Intense Sorbet Creme",
+      "status": "staged"
+    },
+    {
+      "id": "dior-l-or-de-vie-la-creme",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "L'Or de Vie La Crème",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/l-or-de-vie-la-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-l-or-de-vie-la-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "l'or de vie la crème",
+        "textureWeight": "Supreme Grand Master Cream",
+        "activeIngredients": "Yquem Vine Sap & Wax",
+        "skinBarrierFocus": "Supreme Cellular Regeneration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream L'Or de Vie La Crème",
+      "status": "staged"
+    },
+    {
+      "id": "dior-l-or-de-vie-la-creme-riche",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "L'Or de Vie La Crème Riche",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/l-or-de-vie-la-creme-riche"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-l-or-de-vie-la-creme-riche.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "l'or de vie la crème riche",
+        "textureWeight": "Ultra-Nourishing Master Cream",
+        "activeIngredients": "Yquem Vine Sap & Botrytis Ferment",
+        "skinBarrierFocus": "Extreme Lipid Restoration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream L'Or de Vie La Crème Riche",
+      "status": "staged"
+    },
+    {
+      "id": "dior-capture-youth-creme",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Capture Youth Age-Delay Advanced Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/capture-youth-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-capture-youth-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "capture youth age-delay advanced creme",
+        "textureWeight": "Fine-Textured Cream",
+        "activeIngredients": "Florentina Iris Extract",
+        "skinBarrierFocus": "Antioxidant Skin Resistance",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Capture Youth Age-Delay Advanced Creme",
+      "status": "staged"
+    },
+    {
+      "id": "dior-sauvage-the-moisturizer",
+      "canonicalBrand": "Dior",
+      "displayBrand": "Dior",
+      "productLine": "Prestige & Capture Totale",
+      "modelName": "Sauvage The Moisturizer",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/beauty/products/sauvage-the-moisturizer"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "75ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.dior.com/beauty/version-5.14/images/products/dior-sauvage-the-moisturizer.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "dior",
+        "modelName": "sauvage the moisturizer",
+        "textureWeight": "Light Face Lotion",
+        "activeIngredients": "Cactus Aqueous Extract",
+        "skinBarrierFocus": "Men Soothing & Hydrating",
+        "volumeMl": 75,
+        "packagingType": "Dispenser Bottle"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Dior prestige face cream Sauvage The Moisturizer",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-revitalizing-supreme-plus-creme",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Revitalizing Supreme+ Youth Power Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/revitalizing-supreme-plus-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-revitalizing-supreme-plus-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "revitalizing supreme+ youth power creme",
+        "textureWeight": "Silky Rich Cream",
+        "activeIngredients": "Hibiscus Morning Bloom Extract & Moringa",
+        "skinBarrierFocus": "Collagen & Elasticity Lift",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Revitalizing Supreme+ Youth Power Creme",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-revitalizing-supreme-plus-soft-creme",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Revitalizing Supreme+ Youth Power Soft Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/revitalizing-supreme-plus-soft-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-revitalizing-supreme-plus-soft-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "revitalizing supreme+ youth power soft creme",
+        "textureWeight": "Lightweight Soft Cream",
+        "activeIngredients": "Hibiscus & Moringa",
+        "skinBarrierFocus": "Fresh Firming Hydration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Revitalizing Supreme+ Youth Power Soft Creme",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-revitalizing-supreme-night-creme",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Revitalizing Supreme+ Night Intensive Restorative Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/revitalizing-supreme-night-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-revitalizing-supreme-night-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "revitalizing supreme+ night intensive restorative creme",
+        "textureWeight": "Rich Night Balm",
+        "activeIngredients": "2x Moringa & Sea Lavender",
+        "skinBarrierFocus": "Overnight Collagen Plump",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Revitalizing Supreme+ Night Intensive Restorative Creme",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-diamond-creme",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Re-Nutriv Ultimate Diamond Transformative Energy Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/re-nutriv-diamond-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-diamond-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv ultimate diamond transformative energy creme",
+        "textureWeight": "Luxury Velvety Cream",
+        "activeIngredients": "Black Diamond Truffle Extract",
+        "skinBarrierFocus": "Contour Elevation",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Re-Nutriv Ultimate Diamond Transformative Energy Creme",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-diamond-creme-rich",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Re-Nutriv Ultimate Diamond Transformative Energy Creme Rich",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/re-nutriv-diamond-creme-rich"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-diamond-creme-rich.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv ultimate diamond transformative energy creme rich",
+        "textureWeight": "Ultra-Rich Truffle Balm",
+        "activeIngredients": "Black Diamond Truffle Extract",
+        "skinBarrierFocus": "Deep Structural Nourishment",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Re-Nutriv Ultimate Diamond Transformative Energy Creme Rich",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-ultimate-lift-creme",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Re-Nutriv Ultimate Lift Regenerating Youth Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/re-nutriv-ultimate-lift-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-ultimate-lift-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv ultimate lift regenerating youth creme",
+        "textureWeight": "Silky Master Cream",
+        "activeIngredients": "Floralixir Dew & Ultimate Lift Tech",
+        "skinBarrierFocus": "Youth Regeneration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Re-Nutriv Ultimate Lift Regenerating Youth Creme",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-re-nutriv-ultimate-lift-rich",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Re-Nutriv Ultimate Lift Regenerating Youth Creme Rich",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/re-nutriv-ultimate-lift-rich"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-re-nutriv-ultimate-lift-rich.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "re-nutriv ultimate lift regenerating youth creme rich",
+        "textureWeight": "Ultra-Rich Floral Balm",
+        "activeIngredients": "Floralixir Dew & Precious Lipids",
+        "skinBarrierFocus": "Intense Dry Barrier Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Re-Nutriv Ultimate Lift Regenerating Youth Creme Rich",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-daywear-anti-oxidant-creme-spf15",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "DayWear Multi-Protection Anti-Oxidant 24H-Moisture Creme SPF 15",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/daywear-anti-oxidant-creme-spf15"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-daywear-anti-oxidant-creme-spf15.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "daywear multi-protection anti-oxidant 24h-moisture creme spf 15",
+        "textureWeight": "Refreshing Cream",
+        "activeIngredients": "Super Anti-Oxidant Complex",
+        "skinBarrierFocus": "Daily Environmental Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream DayWear Multi-Protection Anti-Oxidant 24H-Moisture Creme SPF 15",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-daywear-matte-gel-creme",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "DayWear Matte Oil-Control Anti-Oxidant Moisture Gel Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/daywear-matte-gel-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-daywear-matte-gel-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "daywear matte oil-control anti-oxidant moisture gel creme",
+        "textureWeight": "Matte Gel-Cream",
+        "activeIngredients": "MoistureMatte Technology",
+        "skinBarrierFocus": "Oil-Free Shine Control",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream DayWear Matte Oil-Control Anti-Oxidant Moisture Gel Creme",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-nightwear-plus-detox-creme",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "NightWear Plus Anti-Oxidant Night Detox Creme",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/nightwear-plus-detox-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-nightwear-plus-detox-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "nightwear plus anti-oxidant night detox creme",
+        "textureWeight": "Nourishing Night Cream",
+        "activeIngredients": "Super Anti-Oxidant Complex",
+        "skinBarrierFocus": "Overnight Environmental Detox",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream NightWear Plus Anti-Oxidant Night Detox Creme",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-resilience-multi-effect-spf15",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Resilience Multi-Effect Tri-Peptide Face and Neck Creme SPF 15",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/resilience-multi-effect-spf15"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-resilience-multi-effect-spf15.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "resilience multi-effect tri-peptide face and neck creme spf 15",
+        "textureWeight": "Plumping Cream",
+        "activeIngredients": "Tri-Peptide Complex",
+        "skinBarrierFocus": "Radiance & Firming Lift",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Resilience Multi-Effect Tri-Peptide Face and Neck Creme SPF 15",
+      "status": "staged"
+    },
+    {
+      "id": "estee-lauder-nutritious-melting-soft-creme",
+      "canonicalBrand": "Estée Lauder",
+      "displayBrand": "Estée Lauder",
+      "productLine": "Revitalizing Supreme & Re-Nutriv",
+      "modelName": "Nutritious Melting Soft Creme / Mask",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.esteelauder.com/products/681/product-catalog/skincare/moisturizer/nutritious-melting-soft-creme"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.esteelauder.com/media/export/cms/products/estee-lauder-nutritious-melting-soft-creme.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "estée lauder",
+        "modelName": "nutritious melting soft creme / mask",
+        "textureWeight": "Melting Gel-Cream",
+        "activeIngredients": "Sweet Kelp & Red Algae",
+        "skinBarrierFocus": "Redness Soothing & Pore Care",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Estée Lauder core barrier cream Nutritious Melting Soft Creme / Mask",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-vital-perfection-uplifting-cream",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Vital Perfection Uplifting and Firming Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/vital-perfection-uplifting-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-vital-perfection-uplifting-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "vital perfection uplifting and firming cream",
+        "textureWeight": "Silky Sculpting Cream",
+        "activeIngredients": "KURENAI-TruLift & ReNeura Technology++",
+        "skinBarrierFocus": "Tightening & Resilience",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Vital Perfection Uplifting and Firming Cream",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-vital-perfection-cream-enriched",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Vital Perfection Uplifting and Firming Cream Enriched",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/vital-perfection-cream-enriched"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-vital-perfection-cream-enriched.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "vital perfection uplifting and firming cream enriched",
+        "textureWeight": "Rich Sculpting Cream",
+        "activeIngredients": "KURENAI-TruLift & Safflower",
+        "skinBarrierFocus": "Dry Skin Firming Nutrition",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Vital Perfection Uplifting and Firming Cream Enriched",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-vital-perfection-overnight-treatment",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Vital Perfection Overnight Firming Treatment",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/vital-perfection-overnight-treatment"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-vital-perfection-overnight-treatment.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "vital perfection overnight firming treatment",
+        "textureWeight": "Intense Night Cream",
+        "activeIngredients": "KURENAI-TruLift & Phytosterol Complex",
+        "skinBarrierFocus": "Overnight Elasticity Recovery",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Vital Perfection Overnight Firming Treatment",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-benefiance-wrinkle-smoothing-cream",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Benefiance Wrinkle Smoothing Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/benefiance-wrinkle-smoothing-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-benefiance-wrinkle-smoothing-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "benefiance wrinkle smoothing cream",
+        "textureWeight": "Rich Cream",
+        "activeIngredients": "KOMBU-Bounce Complex & Green Tea",
+        "skinBarrierFocus": "Deep Wrinkle Plumping",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Benefiance Wrinkle Smoothing Cream",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-benefiance-cream-enriched",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Benefiance Wrinkle Smoothing Cream Enriched",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/benefiance-cream-enriched"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-benefiance-cream-enriched.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "benefiance wrinkle smoothing cream enriched",
+        "textureWeight": "Ultra-Rich Cream",
+        "activeIngredients": "KOMBU-Bounce & Mukurossi Extract",
+        "skinBarrierFocus": "Dry Skin Wrinkle Repair",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Benefiance Wrinkle Smoothing Cream Enriched",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-benefiance-day-cream-spf23",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Benefiance Wrinkle Smoothing Day Cream SPF 23",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/benefiance-day-cream-spf23"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-benefiance-day-cream-spf23.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "benefiance wrinkle smoothing day cream spf 23",
+        "textureWeight": "Day Cream with UV",
+        "activeIngredients": "KOMBU-Bounce & Chlorella Extract",
+        "skinBarrierFocus": "Daytime Smoothing Shield",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Benefiance Wrinkle Smoothing Day Cream SPF 23",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-essential-energy-hydrating-cream",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Essential Energy Hydrating Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/essential-energy-hydrating-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-essential-energy-hydrating-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "essential energy hydrating cream",
+        "textureWeight": "Soft Cream",
+        "activeIngredients": "Purified Hyaluronic Acid & Panax Ginseng",
+        "skinBarrierFocus": "24-Hour Continuous Hydration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Essential Energy Hydrating Cream",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-essential-energy-day-cream-spf20",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Essential Energy Hydrating Day Cream SPF 20",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/essential-energy-day-cream-spf20"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-essential-energy-day-cream-spf20.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "essential energy hydrating day cream spf 20",
+        "textureWeight": "Day Cream",
+        "activeIngredients": "Hyaluronic Acid & Vitamin C",
+        "skinBarrierFocus": "Daily Moisture & Glow",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Essential Energy Hydrating Day Cream SPF 20",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-future-solution-total-regenerating",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Future Solution LX Total Regenerating Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/future-solution-total-regenerating"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-future-solution-total-regenerating.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "future solution lx total regenerating cream",
+        "textureWeight": "Supreme Night Master Cream",
+        "activeIngredients": "Legendary Enmei Herb & Burnet Extract",
+        "skinBarrierFocus": "Cellular Regeneration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Future Solution LX Total Regenerating Cream",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-future-solution-total-protective-spf20",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Future Solution LX Total Protective Cream SPF 20",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/future-solution-total-protective-spf20"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-future-solution-total-protective-spf20.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "future solution lx total protective cream spf 20",
+        "textureWeight": "Supreme Day Cream",
+        "activeIngredients": "Enmei Herb & Sansho Pepper",
+        "skinBarrierFocus": "Daytime Environmental Resilience",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Future Solution LX Total Protective Cream SPF 20",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-bio-performance-super-revitalizing",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Bio-Performance Advanced Super Revitalizing Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/bio-performance-super-revitalizing"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-bio-performance-super-revitalizing.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "bio-performance advanced super revitalizing cream",
+        "textureWeight": "Silky Velvety Cream",
+        "activeIngredients": "Super Bio-Hyaluronic Acid & Raspberry",
+        "skinBarrierFocus": "Early Anti-Aging Smoothing",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Bio-Performance Advanced Super Revitalizing Cream",
+      "status": "staged"
+    },
+    {
+      "id": "shiseido-men-total-revitalizer-cream",
+      "canonicalBrand": "Shiseido",
+      "displayBrand": "Shiseido",
+      "productLine": "Vital Perfection & Benefiance",
+      "modelName": "Shiseido Men Total Revitalizer Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.shiseido.com/us/en/skincare/moisturizers/men-total-revitalizer-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://images.shiseido.com/products/shiseido-men-total-revitalizer-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "shiseido",
+        "modelName": "shiseido men total revitalizer cream",
+        "textureWeight": "Firming Cream for Men",
+        "activeIngredients": "Marine Protein Complex",
+        "skinBarrierFocus": "Anti-Sagging & Fatigue Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Shiseido precision barrier cream Shiseido Men Total Revitalizer Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-soft-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Absolue Soft Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/absolue-soft-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-soft-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue soft cream",
+        "textureWeight": "Velvety Transforming Cream",
+        "activeIngredients": "Grand Rose Extracts & Pro-Xylane",
+        "skinBarrierFocus": "Supreme Regeneration & Radiance",
+        "volumeMl": 60,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Absolue Soft Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-rich-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Absolue Rich Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/absolue-rich-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-rich-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue rich cream",
+        "textureWeight": "Ultra-Nourishing Balm Cream",
+        "activeIngredients": "Grand Rose Extracts & Shea Butter",
+        "skinBarrierFocus": "Intensive Lipid Replenishment",
+        "volumeMl": 60,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Absolue Rich Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-the-light-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Absolue The Light Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/absolue-the-light-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "60ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-the-light-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue the light cream",
+        "textureWeight": "Weightless Micro-Diffusion Cream",
+        "activeIngredients": "Grand Rose Extracts",
+        "skinBarrierFocus": "Featherlight Radiance",
+        "volumeMl": 60,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Absolue The Light Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-renergie-hpn-300-peptide-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Rénergie H.P.N. 300-Peptide Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/renergie-hpn-300-peptide-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-renergie-hpn-300-peptide-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "rénergie h.p.n. 300-peptide cream",
+        "textureWeight": "High-Performance Cream",
+        "activeIngredients": "300 Natural Peptides & Niacinamide",
+        "skinBarrierFocus": "Fast Skin Regeneration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Rénergie H.P.N. 300-Peptide Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-renergie-hpn-300-peptide-rich",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Rénergie H.P.N. 300-Peptide Rich Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/renergie-hpn-300-peptide-rich"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-renergie-hpn-300-peptide-rich.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "rénergie h.p.n. 300-peptide rich cream",
+        "textureWeight": "Rich High-Performance Cream",
+        "activeIngredients": "300 Natural Peptides & Squalane",
+        "skinBarrierFocus": "Dry Skin Structural Firming",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Rénergie H.P.N. 300-Peptide Rich Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-renergie-multi-lift-ultra-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Rénergie Multi-Lift Ultra Anti-Wrinkle & Firming Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/renergie-multi-lift-ultra-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-renergie-multi-lift-ultra-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "rénergie multi-lift ultra anti-wrinkle & firming cream",
+        "textureWeight": "Melting Cream",
+        "activeIngredients": "Flaxseed Extract",
+        "skinBarrierFocus": "Multi-Zone Lifting",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Rénergie Multi-Lift Ultra Anti-Wrinkle & Firming Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-renergie-multi-lift-night-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Rénergie Multi-Lift Night Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/renergie-multi-lift-night-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-renergie-multi-lift-night-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "rénergie multi-lift night cream",
+        "textureWeight": "Nourishing Night Cream",
+        "activeIngredients": "Multi-Tension Technology",
+        "skinBarrierFocus": "Overnight Tightening Repair",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Rénergie Multi-Lift Night Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-hydra-zen-day-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Hydra Zen Anti-Stress Moisturising Day Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/hydra-zen-day-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-hydra-zen-day-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "hydra zen anti-stress moisturising day cream",
+        "textureWeight": "Comfort Cream",
+        "activeIngredients": "Rose Centifolia & Peony Extract",
+        "skinBarrierFocus": "Stress Dehydration Defense",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Hydra Zen Anti-Stress Moisturising Day Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-hydra-zen-gel-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Hydra Zen Anti-Stress Moisturising Gel Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/hydra-zen-gel-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-hydra-zen-gel-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "hydra zen anti-stress moisturising gel cream",
+        "textureWeight": "Refreshing Gel-Cream",
+        "activeIngredients": "Botanical NeuroCalm Complex",
+        "skinBarrierFocus": "Lightweight Moisture Quench",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Hydra Zen Anti-Stress Moisturising Gel Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-hydra-zen-night-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Hydra Zen Nuit Anti-Stress Moisturising Night Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/hydra-zen-night-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-hydra-zen-night-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "hydra zen nuit anti-stress moisturising night cream",
+        "textureWeight": "Night Balm Cream",
+        "activeIngredients": "NeuroCalm Complex & Wheat Germ",
+        "skinBarrierFocus": "Overnight Soothing Recovery",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Hydra Zen Nuit Anti-Stress Moisturising Night Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-absolue-l-extrait-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Absolue L'Extrait Ultimate Elixir Cream",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/absolue-l-extrait-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-absolue-l-extrait-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "absolue l'extrait ultimate elixir cream",
+        "textureWeight": "Master Rejuvenation Cream",
+        "activeIngredients": "Lancôme Rose Stem Cells",
+        "skinBarrierFocus": "Supreme Dermal Restoration",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Absolue L'Extrait Ultimate Elixir Cream",
+      "status": "staged"
+    },
+    {
+      "id": "lancome-clarifique-water-cream",
+      "canonicalBrand": "Lancôme",
+      "displayBrand": "Lancôme",
+      "productLine": "Absolue & Rénergie Crèmes",
+      "modelName": "Clarifique Water Cream Day & Night",
+      "generationOrYear": "Current",
+      "sourceUrls": [
+        "https://www.lancome-usa.com/skincare/face-moisturizers/clarifique-water-cream"
+      ],
+      "observationDate": "2026-10-11",
+      "sourceRegion": "GLOBAL",
+      "lifecycle": "active",
+      "variants": [
+        "50ml Standard"
+      ],
+      "mediaSource": {
+        "url": "https://www.lancome-usa.com/dw/image/v2/products/lancome-clarifique-water-cream.jpg"
+      },
+      "collectedAttributes": {
+        "brand": "lancôme",
+        "modelName": "clarifique water cream day & night",
+        "textureWeight": "Translucent Water Gel-Cream",
+        "activeIngredients": "French Beech Bud Extract & Vitamin C",
+        "skinBarrierFocus": "Skin Tone Clarity & Pores",
+        "volumeMl": 50,
+        "packagingType": "Jar"
+      },
+      "missingAttributes": [],
+      "inclusionReason": "Lancôme French rose moisturizer Clarifique Water Cream Day & Night",
+      "status": "staged"
+    }
+  ],
+  "supplyExceptions": [
+    {
+      "brand": "La Prairie",
+      "leafKey": "moisturizers",
+      "reason": "La Prairie luxury face moisturizer collection comprises 7 flagship cream references.",
+      "officialSourceUrl": "https://www.laprairie.com/en-us/collection/creams",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Skin Caviar Luxe Cream",
+        "Skin Caviar Luxe Cream Sheer",
+        "White Caviar Crème Extraordinaire",
+        "Platinum Rare Haute-Rejuvenation Cream",
+        "Pure Gold Radiance Cream",
+        "Skin Caviar Absolute Filler",
+        "Cellular Swiss Ice Crystal Cream"
+      ],
+      "totalQualifyingModels": 7,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "La Mer",
+      "leafKey": "moisturizers",
+      "reason": "La Mer maintains exactly 6 distinct moisturizing cream and lotion texture references.",
+      "officialSourceUrl": "https://www.cremedelamer.com/products/20607/moisturizers",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Crème de la Mer",
+        "The Moisturizing Soft Cream",
+        "The Moisturizing Fresh Cream",
+        "The Moisturizing Cool Gel Cream",
+        "The Moisturizing Matte Lotion",
+        "The Moisturizing Soft Lotion"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "Clé de Peau Beauté",
+      "leafKey": "moisturizers",
+      "reason": "Clé de Peau Beauté luxury face cream portfolio comprises 8 specialized formulations.",
+      "officialSourceUrl": "https://www.cledepeau-beaute.com/us/skincare/moisturizers/",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "La Crème",
+        "Protective Fortifying Cream SPF 22",
+        "Intensive Fortifying Cream",
+        "Protective Fortifying Emulsion SPF 22",
+        "Intensive Fortifying Emulsion",
+        "Volumizing Cream Supreme",
+        "Synactif Daytime Moisturizer SPF 30",
+        "Synactif Nighttime Moisturizer"
+      ],
+      "totalQualifyingModels": 8,
+      "sourceRegion": "GLOBAL"
+    },
+    {
+      "brand": "SK-II",
+      "leafKey": "moisturizers",
+      "reason": "SK-II PITERA face cream collection consists of exactly 6 active cream formulations.",
+      "officialSourceUrl": "https://www.sk-ii.com/skincare/moisturizer",
+      "verifiedAt": "2026-10-11",
+      "fullEnumeratedModels": [
+        "Skinpower Advanced Cream",
+        "Skinpower Advanced Airy Cream",
+        "LXP Ultimate Perfecting Cream",
+        "Facial Treatment Essence Clear Emulsion",
+        "Cellumination Deep Surge EX",
+        "Men Moisturizing Cream"
+      ],
+      "totalQualifyingModels": 6,
+      "sourceRegion": "GLOBAL"
+    }
+  ]
+}

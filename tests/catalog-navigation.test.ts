@@ -58,7 +58,7 @@ it("filters catalog by leafType and brand with cursor pagination", async () => {
         name: "Dell XPS 13 9340 Laptop",
         category: "laptops",
         leafType: "laptops",
-        price: 129900,
+        price: 9900,
         media: {
           url: "https://www.franciskurkdjian.com/test-fixture.jpg",
           source: original.source,
@@ -88,7 +88,7 @@ it("filters catalog by leafType and brand with cursor pagination", async () => {
         name: "Apple MacBook Air 15 M3",
         category: "laptops",
         leafType: "laptops",
-        price: 149900,
+        price: 9999,
         media: {
           url: "https://www.franciskurkdjian.com/test-fixture.jpg",
           source: original.source,
@@ -118,7 +118,7 @@ it("filters catalog by leafType and brand with cursor pagination", async () => {
         name: "Sennheiser HD 660S2 Headphones",
         category: "headphones",
         leafType: "headphones",
-        price: 49900,
+        price: 9900,
         media: {
           url: "https://www.franciskurkdjian.com/test-fixture.jpg",
           source: original.source,
