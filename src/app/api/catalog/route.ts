@@ -2,6 +2,7 @@ import { z } from "zod";
 import { categoryIds, leafTypeKeys } from "@/domain/departments";
 import { briefSchema } from "@/domain/brief";
 import { browseCatalog } from "@/server/catalog-store";
+import { withVerifiedProductMedia } from "@/domain/product-media-presentation";
 import { apiError, json } from "@/server/http";
 const querySchema = z
   .object({
@@ -109,7 +110,11 @@ export async function GET(request: Request) {
         ramGb,
       }).filter(([, value]) => value !== undefined),
     ) as Record<string, string | number>;
-    return json(await browseCatalog({ ...input, brand, requirements }));
+    const catalog = await browseCatalog({ ...input, brand, requirements });
+    return json({
+      ...catalog,
+      products: catalog.products.map(withVerifiedProductMedia),
+    });
   } catch (error) {
     return apiError(error);
   }
