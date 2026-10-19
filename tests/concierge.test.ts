@@ -128,6 +128,7 @@ it("keeps a missing named identity primary unless the customer explicitly reques
       )
       .mockResolvedValueOnce(
         call("search_catalog", {
+          brands: [],
           categories: [products[0].category],
           limit: 3,
           replace_identity_scope: alternatives,
@@ -152,6 +153,16 @@ it("keeps a missing named identity primary unless the customer explicitly reques
     );
     expect(view.products.length).toBe(alternatives ? 3 : 0);
   }
+});
+
+it("rejects incomplete model search constraints rather than silently treating a requested brand/type as unrestricted", async () => {
+  await expect(
+    executeTool(
+      "search_catalog",
+      { match_mode: "semantic", query: "a brand plus descriptive preferences" },
+      { actor, ui: context },
+    ),
+  ).rejects.toThrow();
 });
 
 it("uses stable product references without changing stored identities or unrelated arguments", async () => {
@@ -889,6 +900,9 @@ it("rejects unknown tools, arbitrary browser paths and seller operations", async
     .parameters as { required?: string[] };
   expect(schema.required || []).not.toContain("max_price");
   expect(schema.required || []).not.toContain("exclude_brands");
+  expect(schema.required).toEqual(
+    expect.arrayContaining(["brands", "categories"]),
+  );
 });
 it("keeps order ownership and confirmation authority outside the model", async () => {
   const confirmation = await prepareConfirmation(
@@ -1488,6 +1502,10 @@ it("bounds oversized native observations without losing IDs, prices or degraded-
     data: {
       products: records,
       total: 240,
+      constraints: {
+        brands: ["Requested brand"],
+        categories: ["requested-type"],
+      },
       mode: "lexical",
       degradation: "Embedding service unavailable",
     },
@@ -1497,6 +1515,10 @@ it("bounds oversized native observations without losing IDs, prices or degraded-
   expect(actual.data.all_product_ids).toEqual(records.map((p) => p.id));
   expect(actual.data.products[0].formatted_price).toBe("$123.45");
   expect(actual.data.degradation).toBe("Embedding service unavailable");
+  expect(actual.data.constraints).toEqual({
+    brands: ["Requested brand"],
+    categories: ["requested-type"],
+  });
   expect(
     JSON.parse(
       observationText({

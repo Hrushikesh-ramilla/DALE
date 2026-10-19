@@ -3,6 +3,12 @@ import { resolve } from "node:path";
 import { parse } from "dotenv";
 import { randomBytes } from "node:crypto";
 const source = parse(await readFile(".env", "utf8"));
+let previous = {};
+try {
+  previous = parse(await readFile(".data/concierge.env", "utf8"));
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
 const provider =
   process.argv.find((arg) => arg.startsWith("--provider="))?.split("=")[1] ||
   source.CONCIERGE_PROVIDER ||
@@ -14,10 +20,26 @@ const candidate =
   provider === "self_hosted"
     ? JSON.parse(await readFile(".data/self-hosted/candidate.json", "utf8"))
     : null;
+const configuredModel = source.CONCIERGE_MODEL || source.AI_MODEL;
+const modelOverride = process.argv
+  .find((arg) => arg.startsWith("--model="))
+  ?.split("=")[1];
+const remembered =
+  previous.CONCIERGE_PROVIDER === provider &&
+  previous.CONCIERGE_SOURCE_AI_MODEL === configuredModel;
 const model =
   provider === "gemini"
-    ? source.CONCIERGE_MODEL || source.AI_MODEL
+    ? modelOverride ||
+      (remembered ? previous.CONCIERGE_MODEL : undefined) ||
+      configuredModel
     : candidate.alias;
+const reasoning =
+  process.argv.find((arg) => arg.startsWith("--reasoning="))?.split("=")[1] ||
+  source.CONCIERGE_REASONING_EFFORT ||
+  (remembered ? previous.CONCIERGE_REASONING_EFFORT : undefined) ||
+  "low";
+if (!["none", "minimal", "low", "medium", "high"].includes(reasoning))
+  throw new Error("Invalid Gemini reasoning setting.");
 if (
   !model ||
   (provider === "gemini" &&
@@ -69,6 +91,8 @@ const environment = {
   AI_SELF_HOSTED_API_KEY: key,
   CONCIERGE_PROVIDER: provider,
   CONCIERGE_MODEL: model,
+  CONCIERGE_SOURCE_AI_MODEL: configuredModel || "",
+  CONCIERGE_REASONING_EFFORT: reasoning,
   CONCIERGE_ALLOW_CLOUD: String(provider === "gemini"),
   CONCIERGE_EMBEDDING_BASE_URL: "http://127.0.0.1:8082/v1",
   CONCIERGE_EMBEDDING_MODEL: "dale-bge-small-en-v1.5",
@@ -110,6 +134,7 @@ console.log(
     dataDirectory: directory,
     provider,
     model,
+    reasoning,
     embeddings: "dale-bge-small-en-v1.5",
     paymentMode: source.PAYMENT_MODE || "fixture",
     originalEnvPreserved: true,

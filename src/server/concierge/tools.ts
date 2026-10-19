@@ -75,6 +75,16 @@ const lookupArguments = z
   })
   .strict();
 const catalogSearchArguments = searchConstraints.safeExtend({
+  brands: searchConstraints.shape.brands
+    .removeDefault()
+    .describe(
+      "Required hard brand filter. Put the customer's requested brands here, not only in query text. Use an empty array only when any brand is acceptable. Use canonical catalog brand names; discover them if unsure.",
+    ),
+  categories: searchConstraints.shape.categories
+    .removeDefault()
+    .describe(
+      "Required hard product-type filter using catalog category IDs. Never mix product types to satisfy a descriptive preference. Discover categories if unsure. Empty means the customer allows any product type, not that the field was forgotten.",
+    ),
   replace_identity_scope: z
     .boolean()
     .default(false)

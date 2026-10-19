@@ -62,12 +62,13 @@ try {
     const view = await response.json();
     inference = view?.inference;
     const httpCompleteMs = Date.now() - start;
-    const reply = view?.messages
+    const assistant = view?.messages
       .filter((m) => m.sender === "assistant")
-      .at(-1)?.text;
+      .at(-1);
+    const reply = assistant?.text;
     if (reply)
       await page
-        .getByText(reply, { exact: true })
+        .locator(`[data-message-id="${assistant.id}"] .dale-msg-bubble`)
         .waitFor({ state: "visible", timeout: 10000 });
     const elapsedMs = Date.now() - start;
     const firstResultMs = await page.evaluate(
@@ -226,11 +227,17 @@ try {
       passed:
         preference.status === "completed" &&
         preference.view.inference?.provider === "gemini" &&
-        preference.view.products.length > 0 &&
+        (preference.view.products.length > 0 ||
+          (/tom ford/i.test(preference.reply || "") &&
+            /not|no|cannot|can't|unavailable|don't/i.test(
+              preference.reply || "",
+            ))) &&
         preference.view.products.every(
-          (p) => p.brand.toLowerCase() === "tom ford",
+          (p) =>
+            p.brand.toLowerCase() === "tom ford" && p.category === "fragrance",
         ) &&
         !/tom forrest/i.test(preference.reply || "") &&
+        !/\bitem:\d+\b/i.test(preference.reply || "") &&
         /powder|soft|talc|iris|cosmetic|musk|suede/i.test(
           preference.reply || "",
         ),

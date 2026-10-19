@@ -228,7 +228,7 @@ it("uses Gemini explicitly and preserves opaque continuation signatures across n
   expect(request.headers.Connection).toBeUndefined();
   const sent = JSON.parse(request.body);
   expect(sent.model).toBe("gemini-contract-model");
-  expect(sent.reasoning_effort).toBe("minimal");
+  expect(sent.reasoning_effort).toBe("low");
   expect(sent.messages[1].tool_calls[0].extra_content).toEqual(extra);
 });
 

@@ -68,6 +68,12 @@ async function generate(
 ): Promise<NativeMessage> {
   const provider = process.env.CONCIERGE_PROVIDER || "self_hosted";
   const model = process.env.CONCIERGE_MODEL || process.env.AI_MODEL;
+  const reasoning = process.env.CONCIERGE_REASONING_EFFORT || "low";
+  if (
+    provider === "gemini" &&
+    !["none", "minimal", "low", "medium", "high"].includes(reasoning)
+  )
+    throw new Error("Unsupported Gemini reasoning effort.");
   if (!model) throw new Error("Concierge model identity is not configured.");
   let endpoint: URL;
   let key: string | undefined;
@@ -113,7 +119,7 @@ async function generate(
           tool_choice: "auto",
           parallel_tool_calls: provider === "self_hosted",
           temperature: provider === "self_hosted" ? 0 : 0.2,
-          ...(provider === "gemini" ? { reasoning_effort: "minimal" } : {}),
+          ...(provider === "gemini" ? { reasoning_effort: reasoning } : {}),
           max_tokens: 1800,
           stream: false,
         }),

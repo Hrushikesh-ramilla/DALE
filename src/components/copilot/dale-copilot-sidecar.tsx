@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { useCopilot } from "./copilot-context";
 import { formatMoney } from "@/domain/money";
+import { AssistantMessage } from "./assistant-message";
 
 export function DaleCopilotSidecar() {
   const c = useCopilot();
@@ -127,13 +128,18 @@ export function DaleCopilotSidecar() {
             {c.messages.map((m) => (
               <div
                 key={m.id}
+                data-message-id={m.id}
                 className={`dale-msg-wrapper ${m.sender === "user" ? "user-side" : "assistant-side"}`}
               >
                 <div
                   className="dale-msg-bubble"
                   style={{ whiteSpace: "pre-wrap", overflowWrap: "anywhere" }}
                 >
-                  {m.text}
+                  {m.sender === "assistant" ? (
+                    <AssistantMessage text={m.text} />
+                  ) : (
+                    m.text
+                  )}
                 </div>
               </div>
             ))}

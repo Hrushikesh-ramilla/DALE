@@ -29,6 +29,7 @@ const responseRules =
 const coreTools = [
   "lookup_product",
   "search_catalog",
+  "get_categories_and_brands",
   "get_product_details",
   "manage_collection",
   "move_collection",
@@ -415,6 +416,7 @@ export function observationText(result: unknown) {
         products: data.products.slice(0, 4),
         total: data.total,
         result_set_id: data.result_set_id,
+        constraints: data.constraints,
         all_product_ids: data.products.map((p) => p.id),
         missing_ids: data.missing_ids,
         mode: data.mode,
