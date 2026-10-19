@@ -33,6 +33,9 @@ import {
 import type { ToolDeclaration } from "./model";
 import { formatMoney } from "@/domain/money";
 import { recordedAttributes } from "@/domain/catalog-derived";
+import { briefSchema } from "@/domain/brief";
+import { knownModels } from "@/domain/catalog";
+import { compatibilityArguments, deviceCompatibility } from "./compatibility";
 
 type ToolContext = { actor: Actor; ui: UIContext; signal?: AbortSignal };
 type ToolDefinition = {
@@ -88,8 +91,15 @@ const contextArguments = z
 const prepareArguments = z.discriminatedUnion("operation", [
   z
     .object({
+      operation: z.literal("update_requirements"),
+      brief: briefSchema.omit({ confirmConstraints: true }).strict(),
+      expected_version: z.number().int().min(0),
+    })
+    .strict(),
+  z
+    .object({
       operation: z.literal("checkout"),
-      device_profile: z.string().max(100).default(lifestyleProfile),
+      device_profile: z.string().max(100).optional(),
     })
     .strict(),
   z
@@ -254,6 +264,7 @@ export const tools: ToolDefinition[] = [
               )
             : recordedAttributes(p),
           specs: input.include_specs ? p.specs : undefined,
+          compatible_models: p.compatibleModels,
           missing_attribute_keys:
             input.attribute_keys?.filter(
               (k) => !Object.hasOwn(recordedAttributes(p), k),
@@ -382,7 +393,7 @@ export const tools: ToolDefinition[] = [
   {
     name: "manage_collection",
     description:
-      "Read/add/set quantity/remove/clear persistent owner cart or wishlist. Exact product IDs; adding does not purchase or reserve stock. Mutations are not automatically retried.",
+      "Read/add/set quantity/remove/clear persistent owner cart or wishlist. select_group selects an owned same-product group via items[].groupId (null clears it), one unit per shopper. Forming groups cannot check out yet. Exact product IDs; adding does not purchase or reserve stock. Mutations are not automatically retried.",
     input: basketInput,
     effect: "write",
     async execute(input, { actor }) {
@@ -410,6 +421,10 @@ export const tools: ToolDefinition[] = [
       const items = await basket(actor);
       return {
         profile: await customerProfile(actor),
+        purchase_requirements:
+          (await getWorkspace(actor.workspaceId)).briefs?.find(
+            (b) => b.buyerId === actor.userId,
+          ) || null,
         basket: {
           ...items,
           formatted_subtotal: formatMoney(items.subtotal),
@@ -423,6 +438,16 @@ export const tools: ToolDefinition[] = [
           })),
         },
       };
+    },
+  },
+  {
+    name: "get_device_compatibility",
+    description:
+      "Discover supported real device profiles and clearly labelled engineering profiles; assess exact published products with recorded compatibility, cable and fast-charging requirements. Unverified means no fit guarantee; the general product-purchase profile is never an accessory fit check.",
+    input: compatibilityArguments,
+    effect: "read",
+    async execute(raw) {
+      return deviceCompatibility(raw);
     },
   },
   {
@@ -441,13 +466,32 @@ export const tools: ToolDefinition[] = [
   {
     name: "prepare_customer_action",
     description:
-      "Prepare checkout, return, unpaid cancellation, group commitment/withdrawal, remedy change or appeal for an explicit customer confirmation button. This does NOT submit, pay or refund. Never say the prepared operation is completed.",
+      "Prepare checkout, saved purchase requirements, return, unpaid cancellation, group commitment/withdrawal, remedy change or appeal for an explicit customer confirmation button. Read current purchase_requirements in account context before updating (expected_version=0 when absent); preserve unrelated requirements. This does NOT submit, pay or refund. Never say the prepared operation is completed.",
     input: prepareArguments,
     effect: "prepare",
     async execute(raw, { actor }) {
       const input = prepareArguments.parse(raw);
       if (input.operation === "checkout")
         return prepareCheckout(actor, input.device_profile);
+      if (input.operation === "update_requirements") {
+        if (!knownModels.includes(input.brief.model))
+          throw new Error(
+            "Discover a supported device profile first; do not substitute a generic profile for an unknown device.",
+          );
+        const current = (await getWorkspace(actor.workspaceId)).briefs?.find(
+          (b) => b.buyerId === actor.userId,
+        );
+        if ((current?.version || 0) !== input.expected_version)
+          throw new Error(
+            "Purchase requirements changed. Read the current version first.",
+          );
+        return prepareConfirmation(
+          actor,
+          "update_requirements",
+          { brief: input.brief, expectedVersion: input.expected_version },
+          `Save these purchase requirements: ${JSON.stringify(input.brief)}. This replaces your previous requirements and invalidates unpaid quotes; it does not place an order.`,
+        );
+      }
       if (input.operation === "return" || input.operation === "cancel_order") {
         await customerOrders(actor, input.order_id);
         return input.operation === "return"
@@ -639,11 +683,43 @@ export const toolOutputs: Record<string, z.ZodType> = {
   }),
   manage_collection: collectionOutput,
   get_user_account_context: z.object({
+    purchase_requirements: z
+      .object({ version: z.number().int(), input: briefSchema })
+      .passthrough()
+      .nullable(),
     profile: z
       .object({ name: z.string(), email: z.string().nullable() })
       .optional(),
     basket: collectionOutput,
   }),
+  get_device_compatibility: z.union([
+    z.object({
+      profiles: z.array(
+        z
+          .object({ model: z.string(), label: z.string(), scope: z.string() })
+          .passthrough(),
+      ),
+      scope: z.string(),
+    }),
+    z.object({
+      device_model: z.string(),
+      known_profile: z.boolean(),
+      questions: z.array(z.string()),
+      freshness: z.enum(["current", "expired"]).nullable(),
+      assessments: z.array(
+        z
+          .object({
+            product_id: z.string(),
+            status: z.enum(["supported", "unverified", "not_applicable"]),
+            eligible: z.boolean(),
+            reasons: z.array(z.string()),
+          })
+          .passthrough(),
+      ),
+      missing_ids: z.array(z.string()),
+      scope: z.string(),
+    }),
+  ]),
   get_user_orders: z.object({
     orders: z.array(
       z

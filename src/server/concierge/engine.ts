@@ -198,7 +198,16 @@ async function continueTurn(
         },
         ...recent,
       ],
-      declarations(state.enabledTools || []),
+      // Core shopping actions are usable on the first turn. Discovery still
+      // loads other schemas on demand, without requiring a small model to learn
+      // a capability-enabling step before it can perform any useful action.
+      declarations(
+        state.enabledTools ?? [
+          "search_catalog",
+          "get_product_details",
+          "manage_collection",
+        ],
+      ),
       signal,
     );
     if (

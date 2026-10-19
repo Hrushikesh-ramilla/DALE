@@ -41,9 +41,10 @@ interface CopilotContextType {
   confirm: (id: string, cancel?: boolean) => Promise<void>;
   mutateCollection: (
     collection: "cart" | "wishlist",
-    action: "add" | "set" | "remove" | "clear",
+    action: "add" | "set" | "remove" | "clear" | "select_group",
     productId?: string,
     quantity?: number,
+    groupId?: string | null,
   ) => Promise<void>;
 }
 const Context = createContext<CopilotContextType | null>(null);
@@ -398,9 +399,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const mutateCollection = useCallback(
     async (
       collection: "cart" | "wishlist",
-      action: "add" | "set" | "remove" | "clear",
+      action: "add" | "set" | "remove" | "clear" | "select_group",
       productId?: string,
       quantity = 1,
+      groupId?: string | null,
     ) => {
       const epoch = sessionEpoch.current;
       try {
@@ -410,7 +412,15 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           await api<View>("/api/copilot/state", {
             collection,
             action,
-            items: productId ? [{ productId, quantity }] : [],
+            items: productId
+              ? [
+                  {
+                    productId,
+                    quantity,
+                    ...(groupId !== undefined ? { groupId } : {}),
+                  },
+                ]
+              : [],
             expected_revision: v.revision,
           }),
           epoch,

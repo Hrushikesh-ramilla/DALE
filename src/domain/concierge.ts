@@ -135,7 +135,8 @@ export type Confirmation = {
     | "group_join"
     | "group_leave"
     | "remedy"
-    | "appeal";
+    | "appeal"
+    | "update_requirements";
   payload: Record<string, unknown>;
   summary: string;
   expiresAt: string;
@@ -154,7 +155,7 @@ export type ConciergeState = {
     text: string;
     timestamp: number;
   }[];
-  cart: { productId: string; quantity: number }[];
+  cart: { productId: string; quantity: number; groupId?: string }[];
   wishlist: string[];
   actions: BrowserAction[];
   confirmations: Confirmation[];

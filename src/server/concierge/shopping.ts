@@ -16,21 +16,24 @@ import {
   joinGroup,
   leaveGroup,
   appealCase,
+  updateBrief,
 } from "../service";
 import { chooseRemedy } from "../order-options";
 import { lifestyleProfile } from "@/domain/departments";
 import type { Confirmation } from "@/domain/concierge";
+import { briefSchema } from "@/domain/brief";
 
 export const basketInput = z
   .object({
     collection: z.enum(["cart", "wishlist"]),
-    action: z.enum(["get", "add", "set", "remove", "clear"]),
+    action: z.enum(["get", "add", "set", "remove", "clear", "select_group"]),
     items: z
       .array(
         z
           .object({
             productId: z.string().min(1).max(150),
             quantity: z.number().int().min(1).max(99).default(1),
+            groupId: z.string().uuid().nullable().optional(),
           })
           .strict(),
       )
@@ -42,6 +45,7 @@ export const basketInput = z
 
 export async function basket(actor: Actor) {
   const state = await readConcierge(actor);
+  const workspace = await getWorkspace(actor.workspaceId);
   const products = await productDetails([
     ...new Set([...state.cart.map((i) => i.productId), ...state.wishlist]),
   ]);
@@ -50,12 +54,43 @@ export async function basket(actor: Actor) {
     cart: state.cart.map((item) => ({
       ...item,
       product: products.find((p) => p.id === item.productId) || null,
+      selectedGroup: item.groupId
+        ? workspace.groups
+            .filter(
+              (g) => g.id === item.groupId && g.members.includes(actor.userId),
+            )
+            .map((g) => ({
+              id: g.id,
+              model: g.model,
+              status: g.status,
+              amount: g.amount ?? g.terms?.amount,
+              expiresAt: g.checkoutExpiresAt || g.expiresAt,
+              ready:
+                g.status === "ready" &&
+                Date.parse(g.checkoutExpiresAt || g.expiresAt) > Date.now(),
+            }))[0] || null
+        : null,
     })),
     wishlist: state.wishlist.map((id) => ({
       productId: id,
       product: products.find((p) => p.id === id) || null,
     })),
     currency: "USD",
+    availableGroups: workspace.groups
+      .filter(
+        (g) =>
+          g.members.includes(actor.userId) &&
+          ["forming", "ready"].includes(g.status) &&
+          Date.parse(g.checkoutExpiresAt || g.expiresAt) > Date.now(),
+      )
+      .map((g) => ({
+        id: g.id,
+        productId: g.productId,
+        model: g.model,
+        status: g.status,
+        amount: g.amount ?? g.terms?.amount,
+        expiresAt: g.checkoutExpiresAt || g.expiresAt,
+      })),
     subtotal: state.cart.reduce(
       (n, i) =>
         n +
@@ -67,6 +102,22 @@ export async function basket(actor: Actor) {
 export async function manageBasket(actor: Actor, raw: unknown) {
   const input = basketInput.parse(raw);
   if (input.action === "get") return basket(actor);
+  if (
+    input.action === "select_group" &&
+    (input.collection !== "cart" || !input.items.length)
+  )
+    throw new Error("Select a group for an existing cart item.");
+  if (
+    input.action !== "select_group" &&
+    input.items.some((i) => i.groupId !== undefined)
+  )
+    throw new Error(
+      "Use select_group explicitly to change a cart item's group offer.",
+    );
+  const workspace =
+    input.action === "select_group"
+      ? await getWorkspace(actor.workspaceId)
+      : undefined;
   await changeConcierge(actor, async (state, sql) => {
     if (
       input.collection === "cart" &&
@@ -82,7 +133,40 @@ export async function manageBasket(actor: Actor, raw: unknown) {
       state.revision !== input.expected_revision
     )
       throw new Error("Basket changed. Refresh before editing it.");
-    if (["add", "set"].includes(input.action)) {
+    if (input.action === "select_group") {
+      for (const item of input.items) {
+        const existing = state.cart.find((i) => i.productId === item.productId);
+        if (!existing)
+          throw new Error(
+            "Add the exact product to your cart before selecting its group.",
+          );
+        if (item.groupId === undefined)
+          throw new Error(
+            "Specify a group ID or null to use the regular offer.",
+          );
+        if (item.groupId === null) {
+          delete existing.groupId;
+          continue;
+        }
+        const group = workspace!.groups.find(
+          (g) => g.id === item.groupId && g.members.includes(actor.userId),
+        );
+        if (
+          !group ||
+          group.productId !== item.productId ||
+          !["forming", "ready"].includes(group.status) ||
+          Date.parse(group.checkoutExpiresAt || group.expiresAt) <= Date.now()
+        )
+          throw new Error(
+            "An active membership for this exact product is required.",
+          );
+        if (existing.quantity !== 1)
+          throw new Error(
+            "A group offer covers one unit per shopper. Set quantity to one first.",
+          );
+        existing.groupId = item.groupId;
+      }
+    } else if (["add", "set"].includes(input.action)) {
       for (const item of input.items) {
         const rows = await sql.query<{ stock: number; comparison: boolean }>(
           `SELECT (record->>'stock')::integer AS stock,coalesce((record->>'comparisonOnly')::boolean,false) AS comparison FROM catalog_products WHERE id=$1 AND publication='published' FOR SHARE`,
@@ -103,6 +187,10 @@ export async function manageBasket(actor: Actor, raw: unknown) {
           (quantity > 99 || quantity > rows.rows[0].stock)
         )
           throw new Error("Requested quantity exceeds current catalog stock.");
+        if (input.collection === "cart" && existing?.groupId && quantity !== 1)
+          throw new Error(
+            "A group offer covers one unit per shopper. Clear the group selection before changing quantity.",
+          );
         if (input.collection === "wishlist") {
           if (!state.wishlist.includes(item.productId))
             state.wishlist.push(item.productId);
@@ -168,12 +256,16 @@ export async function prepareConfirmation(
     expiresAt: confirmation.expiresAt,
   };
 }
-export async function prepareCheckout(actor: Actor, model = lifestyleProfile) {
+export async function prepareCheckout(actor: Actor, requestedModel?: string) {
+  const workspace = await getWorkspace(actor.workspaceId);
+  const brief = workspace.briefs?.find((b) => b.buyerId === actor.userId);
+  const model = requestedModel || brief?.input.model || lifestyleProfile;
   const state = await readConcierge(actor);
   if (!state.cart.length) throw new Error("Your cart is empty.");
   const existing = state.confirmations.find(
     (c) =>
       c.kind === "checkout" &&
+      c.payload.model === model &&
       c.payload.cartVersion === (state.cartVersion || 0) &&
       (c.status === "executing" ||
         (c.status === "pending" && Date.parse(c.expiresAt) > Date.now())),
@@ -194,14 +286,35 @@ export async function prepareCheckout(actor: Actor, model = lifestyleProfile) {
     throw new Error(
       "A checkout can prepare at most 50 individual unit approvals. Split this cart into smaller purchases.",
     );
-  const quotes: Awaited<ReturnType<typeof makeQuote>>[] = [];
-  for (const item of state.cart)
+  const quotes: (Awaited<ReturnType<typeof makeQuote>> & {
+    catalogPrice: number;
+  })[] = [];
+  for (const item of state.cart) {
+    const group = item.groupId
+      ? workspace.groups.find(
+          (g) => g.id === item.groupId && g.members.includes(actor.userId),
+        )
+      : undefined;
+    const itemModel = group?.model || model;
+    if (group && (requestedModel || brief) && itemModel !== model)
+      throw new Error(
+        "Selected group differs from your confirmed device requirements. Review the requirements first.",
+      );
+    if (item.groupId && item.quantity !== 1)
+      throw new Error("A group offer covers one unit per shopper.");
+    const product = (await productDetails([item.productId]))[0];
+    if (!product) throw new Error("Product is no longer published.");
     for (let unit = 0; unit < item.quantity; unit++)
-      quotes.push(await makeQuote(actor, item.productId, model));
+      quotes.push({
+        ...(await makeQuote(actor, item.productId, itemModel, item.groupId)),
+        catalogPrice: product.price,
+      });
+  }
   return changeConcierge(actor, (current) => {
     const sibling = current.confirmations.find(
       (c) =>
         c.kind === "checkout" &&
+        c.payload.model === model &&
         c.payload.cartVersion === (current.cartVersion || 0) &&
         (c.status === "executing" ||
           (c.status === "pending" && Date.parse(c.expiresAt) > Date.now())),
@@ -227,9 +340,15 @@ export async function prepareCheckout(actor: Actor, model = lifestyleProfile) {
         quotes,
         cart: state.cart,
         cartVersion: state.cartVersion || 0,
+        model,
       },
-      summary: `Review ${quotes.length} individual sandbox offers totaling ${quotes.reduce((s, q) => s + q.amount, 0)} USD cents. Each item creates a separate PayPal approval. Shipping follows the recorded simulated merchant policy; no live carrier promise is made.`,
-      expiresAt: new Date(Date.now() + 5 * 60000).toISOString(),
+      summary: `Review ${quotes.length} individual sandbox offers totaling ${quotes.reduce((s, q) => s + q.amount, 0)} USD cents. ${quotes.filter((q) => q.groupId).length} selected group offers are included at their locked amounts. Each item creates a separate PayPal approval. Shipping follows the recorded simulated merchant policy; no live carrier promise is made.`,
+      expiresAt: new Date(
+        Math.min(
+          Date.now() + 5 * 60000,
+          ...quotes.map((q) => Date.parse(q.expiresAt)),
+        ),
+      ).toISOString(),
       status: "pending",
     };
     current.confirmations.push(c);
@@ -315,6 +434,9 @@ export async function confirmOperation(
             id: z.string().uuid(),
             productId: z.string(),
             amount: z.number(),
+            catalogPrice: z.number().optional(),
+            groupId: z.string().uuid().optional(),
+            model: z.string().optional(),
             fingerprint: z.string().length(64),
           }),
         )
@@ -336,10 +458,33 @@ export async function confirmOperation(
             continue;
           }
           const fresh = (await productDetails([q.productId]))[0];
-          if (!fresh || fresh.comparisonOnly || fresh.price !== q.amount)
+          if (
+            !fresh ||
+            fresh.comparisonOnly ||
+            fresh.price !== (q.catalogPrice ?? q.amount)
+          )
             throw new Error(
               "Offer price or visibility changed. Prepare fresh checkout terms.",
             );
+          if (q.groupId) {
+            const group = (await getWorkspace(actor.workspaceId)).groups.find(
+              (g) =>
+                g.id === q.groupId &&
+                g.members.includes(actor.userId) &&
+                g.productId === q.productId &&
+                g.model === q.model,
+            );
+            if (
+              !group ||
+              group.status !== "ready" ||
+              group.amount !== q.amount ||
+              !group.checkoutExpiresAt ||
+              Date.parse(group.checkoutExpiresAt) <= Date.now()
+            )
+              throw new Error(
+                "Selected group offer is no longer available. No regular-price fallback was applied.",
+              );
+          }
           outcomes.push({
             quoteId: q.id,
             order: await checkout(actor, q.id, q.fingerprint),
@@ -375,6 +520,19 @@ export async function confirmOperation(
             : "partial_or_failed",
         captured: false,
       };
+    } else if (c.kind === "update_requirements") {
+      const p = z
+        .object({
+          brief: briefSchema,
+          expectedVersion: z.number().int().min(0),
+        })
+        .parse(c.payload);
+      result = await updateBrief(
+        actor,
+        { ...p.brief, confirmConstraints: true },
+        p.expectedVersion,
+        c.id,
+      );
     } else if (c.kind === "return") {
       const p = z
         .object({
@@ -449,6 +607,10 @@ export async function confirmOperation(
         throw new Error("Confirmation execution lease was superseded.");
       p.status = "completed";
       p.result = result;
+      if (c.kind === "update_requirements")
+        for (const other of s.confirmations)
+          if (other.kind === "checkout" && other.status === "pending")
+            other.expiresAt = new Date(0).toISOString();
       if (c.kind === "checkout") {
         const completed = z
           .object({

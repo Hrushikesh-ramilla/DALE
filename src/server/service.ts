@@ -1,11 +1,16 @@
 import { randomUUID } from "node:crypto";
+import { isDeepStrictEqual } from "node:util";
 import {
   knownModels as models,
   models as sampleModels,
   productFits,
   meetsRetailRequirements,
 } from "../domain/catalog";
-import { realModels, researchProducts } from "../domain/research";
+import {
+  realModels,
+  researchProducts,
+  matchesResearchEvidence,
+} from "../domain/research";
 import {
   allowedRefund,
   checkPurchase,
@@ -211,7 +216,12 @@ export async function snapshot(actor: Actor) {
         : await recoveryStatus(actor.workspaceId),
   };
 }
-export async function updateBrief(actor: Actor, input: ShoppingBrief) {
+export async function updateBrief(
+  actor: Actor,
+  input: ShoppingBrief,
+  expectedVersion?: number,
+  requestId?: string,
+) {
   buyer(actor);
   const normalized = briefSchema.parse(input);
   return mutateWorkspace(actor.workspaceId, (state) => {
@@ -219,18 +229,29 @@ export async function updateBrief(actor: Actor, input: ShoppingBrief) {
     const previous = state.briefs.find(
       (brief) => brief.buyerId === actor.userId,
     );
+    if (requestId && previous?.requestId === requestId) {
+      if (!isDeepStrictEqual(briefSchema.parse(previous.input), normalized))
+        throw new Error(
+          "Purchase requirement request was reused with different terms.",
+        );
+      return previous;
+    }
+    if (
+      expectedVersion !== undefined &&
+      (previous?.version || 0) !== expectedVersion
+    )
+      throw new Error(
+        "Your purchase requirements changed. Review them again before saving.",
+      );
     if (
       previous &&
-      Object.entries(normalized).every(
-        ([key, value]) =>
-          JSON.stringify(previous.input[key as keyof ShoppingBrief]) ===
-          JSON.stringify(value),
-      )
+      isDeepStrictEqual(briefSchema.parse(previous.input), normalized)
     )
       return previous;
     // Never revoke an already-sent capture: it retains its original approval and is reconciled.
     const now = new Date().toISOString();
     const brief = {
+      ...(requestId ? { requestId } : {}),
       buyerId: actor.userId,
       version: (previous?.version ?? 0) + 1,
       input: normalized,
@@ -410,6 +431,10 @@ export async function makeQuote(
     const mode = state.adapterModes?.payments || paymentMode();
     const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
     if (realModels.includes(model)) {
+      if (!matchesResearchEvidence(product))
+        throw new Error(
+          "This published product changed from its qualified compatibility evidence. Re-verify the exact product before purchase.",
+        );
       const report = researchProducts({
         model,
         budget: groupId ? 100000 : brief?.input.budget || 0,

@@ -43,7 +43,11 @@ import {
   checkout as checkoutOffer,
   snapshot as commerceSnapshot,
   updateGroupPolicy,
+  joinGroup,
+  updateBrief,
 } from "../src/server/service";
+import { mutateWorkspace, getWorkspace } from "../src/server/state";
+import { deviceCompatibility } from "../src/server/concierge/compatibility";
 
 let actor: Actor, other: Actor;
 let products: Product[];
@@ -550,6 +554,350 @@ it("requires fresh consent if group policy changes after preparation", async () 
     confirmOperation(fresh, confirmation.confirmation_id),
   ).rejects.toThrow("terms changed");
   expect((await commerceSnapshot(fresh)).groups).toEqual([]);
+});
+
+it("preserves an owned group selection and applies its locked discount after real independent shoppers join", async () => {
+  const first = (await customerSession({ action: "guest" })).actor;
+  const second = (await customerSession({ action: "guest" })).actor;
+  const stranger = (await customerSession({ action: "guest" })).actor;
+  const p = products[5];
+  const groupId = await joinGroup(first, p.id, lifestyleProfile);
+  for (const shopper of [first, stranger])
+    await manageBasket(shopper, {
+      collection: "cart",
+      action: "add",
+      items: [{ productId: p.id }],
+    });
+  await expect(
+    manageBasket(stranger, {
+      collection: "cart",
+      action: "select_group",
+      items: [{ productId: p.id, groupId }],
+    }),
+  ).rejects.toThrow("active membership");
+  const regular = await prepareCheckout(first);
+  await manageBasket(first, {
+    collection: "cart",
+    action: "select_group",
+    items: [{ productId: p.id, groupId }],
+  });
+  await expect(
+    confirmOperation(first, regular.confirmation_id),
+  ).rejects.toThrow(/expired|changed/);
+  await expect(prepareCheckout(first)).rejects.toThrow(
+    "group offer is not available",
+  );
+  await expect(
+    manageBasket(first, {
+      collection: "cart",
+      action: "set",
+      items: [{ productId: p.id, quantity: 2 }],
+    }),
+  ).rejects.toThrow("one unit");
+  expect(await joinGroup(second, p.id, lifestyleProfile)).toBe(groupId);
+  const saved = await basket(first);
+  expect(saved.cart[0].groupId).toBe(groupId);
+  expect(saved.cart[0].selectedGroup?.ready).toBe(true);
+  const prepared = await prepareCheckout(first);
+  const confirmation = (await readConcierge(first)).confirmations.find(
+    (c) => c.id === prepared.confirmation_id,
+  )!;
+  const quotes = confirmation.payload.quotes as {
+    amount: number;
+    groupId: string;
+  }[];
+  expect(quotes[0].groupId).toBe(groupId);
+  expect(quotes[0].amount).toBe(saved.cart[0].selectedGroup?.amount);
+  expect(quotes[0].amount).toBeLessThan(p.price);
+  await confirmOperation(first, prepared.confirmation_id);
+  const orders = (await commerceSnapshot(first)).orders;
+  expect(orders).toHaveLength(1);
+  expect(orders[0].quote.groupId).toBe(groupId);
+  expect(orders[0].quote.amount).toBe(quotes[0].amount);
+  expect(orders[0].captureId).toBeUndefined();
+  expect((await basket(first)).cart).toEqual([]);
+});
+
+it("rejects stale or modified group terms without falling back to the regular offer", async () => {
+  const p = products[6];
+  for (const fault of [
+    "expired",
+    "amount",
+    "membership",
+    "product",
+    "cleared",
+  ] as const) {
+    const first = (await customerSession({ action: "guest" })).actor;
+    const second = (await customerSession({ action: "guest" })).actor;
+    const groupId = await joinGroup(first, p.id, lifestyleProfile);
+    await joinGroup(second, p.id, lifestyleProfile);
+    await manageBasket(first, {
+      collection: "cart",
+      action: "add",
+      items: [{ productId: p.id }],
+    });
+    await manageBasket(first, {
+      collection: "cart",
+      action: "select_group",
+      items: [{ productId: p.id, groupId }],
+    });
+    const prepared = await prepareCheckout(first);
+    if (fault === "cleared") {
+      await manageBasket(first, {
+        collection: "cart",
+        action: "select_group",
+        items: [{ productId: p.id, groupId: null }],
+      });
+      await expect(
+        confirmOperation(first, prepared.confirmation_id),
+      ).rejects.toThrow(/expired|changed/);
+      expect((await basket(first)).cart[0].groupId).toBeUndefined();
+    } else {
+      await mutateWorkspace(first.workspaceId, (s) => {
+        const group = s.groups.find((g) => g.id === groupId)!;
+        if (fault === "expired")
+          group.checkoutExpiresAt = new Date(0).toISOString();
+        if (fault === "amount") group.amount = group.amount! + 1;
+        if (fault === "membership")
+          group.members = group.members.filter((m) => m !== first.userId);
+        if (fault === "product") group.productId = products[7].id;
+      });
+      const result = (await confirmOperation(
+        first,
+        prepared.confirmation_id,
+      )) as { status: string; outcomes: { error?: string }[] };
+      expect(result.status).toBe("partial_or_failed");
+      expect(result.outcomes[0].error).toContain("group offer");
+    }
+    expect((await commerceSnapshot(first)).orders).toEqual([]);
+  }
+});
+
+it("only saves reviewed requirements and atomically rejects an outdated version", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const input = {
+    message: "Headphones for study",
+    model: lifestyleProfile,
+    category: "headphones",
+    budget: 100000,
+    preference: "",
+    priority: "price",
+  };
+  const prepared = await executeTool(
+    "prepare_customer_action",
+    { operation: "update_requirements", brief: input, expected_version: 0 },
+    { actor: fresh, ui: context },
+  );
+  expect(
+    (await getWorkspace(fresh.workspaceId)).briefs?.find(
+      (b) => b.buyerId === fresh.userId,
+    ),
+  ).toBeUndefined();
+  await confirmOperation(
+    fresh,
+    (prepared.data as { confirmation_id: string }).confirmation_id,
+  );
+  const saved = (await getWorkspace(fresh.workspaceId)).briefs!.find(
+    (b) => b.buyerId === fresh.userId,
+  )!;
+  expect(saved.version).toBe(1);
+  expect(saved.input.confirmConstraints).toBe(true);
+  const stale = await executeTool(
+    "prepare_customer_action",
+    {
+      operation: "update_requirements",
+      brief: { ...input, budget: 90000 },
+      expected_version: 1,
+    },
+    { actor: fresh, ui: context },
+  );
+  await updateBrief(fresh, { ...saved.input, budget: 80000 }, 1);
+  await expect(
+    confirmOperation(
+      fresh,
+      (stale.data as { confirmation_id: string }).confirmation_id,
+    ),
+  ).rejects.toThrow("requirements changed");
+  expect(
+    (await getWorkspace(fresh.workspaceId)).briefs!.find(
+      (b) => b.buyerId === fresh.userId,
+    )!.input.budget,
+  ).toBe(80000);
+  expect(
+    (
+      await executeTool(
+        "get_user_account_context",
+        {},
+        { actor: other, ui: context },
+      )
+    ).data,
+  ).not.toEqual(
+    expect.objectContaining({
+      purchase_requirements: expect.objectContaining({ buyerId: fresh.userId }),
+    }),
+  );
+});
+
+it("exposes recorded compatibility and never treats ordinary purchase eligibility as device fit", async () => {
+  const profiles = await deviceCompatibility({ operation: "profiles" });
+  expect(
+    "profiles" in profiles &&
+      profiles.profiles.some((p) => p.scope === "recorded_manufacturer_device"),
+  ).toBe(true);
+  for (const device_model of [lifestyleProfile, "Unlisted laptop 2026"]) {
+    const report = await deviceCompatibility({
+      operation: "assess",
+      product_ids: [products[0].id],
+      device_model,
+      budget_cents: 1000000,
+      cable: "usb100",
+      fast_charging: false,
+    });
+    expect("assessments" in report && report.assessments[0].eligible).toBe(
+      false,
+    );
+    expect("assessments" in report && report.assessments[0].status).toBe(
+      device_model === lifestyleProfile ? "not_applicable" : "unverified",
+    );
+  }
+  const real = await deviceCompatibility({
+    operation: "assess",
+    product_ids: ["R002"],
+    device_model: "MacBook Air (M1, 2020)",
+    budget_cents: 100000,
+    cable: "usb100",
+    fast_charging: true,
+  });
+  expect("assessments" in real && real.assessments[0].eligible).toBe(false);
+  expect(
+    "assessments" in real && real.assessments[0].reasons.join(" "),
+  ).toContain("fast charging");
+});
+
+it("recovers a saved requirement confirmation without applying it twice", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const brief = {
+    message: "Recorded preferences",
+    model: lifestyleProfile,
+    category: "",
+    budget: 90000,
+    confirmConstraints: true,
+    priority: "price" as const,
+  };
+  const prepared = await prepareConfirmation(
+    fresh,
+    "update_requirements",
+    { brief, expectedVersion: 0 },
+    "Save reviewed preferences",
+  );
+  await updateBrief(fresh, brief, 0, prepared.confirmation_id);
+  await changeConcierge(fresh, (s) => {
+    const confirmation = s.confirmations.find(
+      (c) => c.id === prepared.confirmation_id,
+    )!;
+    confirmation.status = "executing";
+    confirmation.executionLeaseUntil = 0;
+  });
+  await confirmOperation(fresh, prepared.confirmation_id);
+  expect(
+    (await getWorkspace(fresh.workspaceId)).briefs!.find(
+      (b) => b.buyerId === fresh.userId,
+    )!.version,
+  ).toBe(1);
+});
+
+it("allows an explicitly reviewed replacement brief to clear obsolete optional requirements", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const brief = {
+    message: "New purchase",
+    model: lifestyleProfile,
+    category: "",
+    budget: 90000,
+    confirmConstraints: true,
+  };
+  await updateBrief(
+    fresh,
+    { ...brief, requirements: { material: "leather" } },
+    0,
+  );
+  const result = await updateBrief(fresh, brief, 1);
+  expect(result.version).toBe(2);
+  expect(result.input.requirements).toBeUndefined();
+});
+
+it("binds manufacturer fit claims to current specifications while allowing independent offer changes", async () => {
+  const db = await getDatabase();
+  const original = (
+    await db.query<{ record: Product }>(
+      "SELECT record FROM catalog_products WHERE id=$1",
+      ["R002"],
+    )
+  ).rows[0].record;
+  const assess = () =>
+    deviceCompatibility({
+      operation: "assess",
+      product_ids: ["R002"],
+      device_model: "MacBook Air (M1, 2020)",
+      budget_cents: 100000,
+      cable: "usb100",
+      fast_charging: false,
+    });
+  const initial = await assess();
+  expect("assessments" in initial && initial.assessments[0].status).toBe(
+    "supported",
+  );
+  try {
+    await db.query("UPDATE catalog_products SET record=$2::jsonb WHERE id=$1", [
+      "R002",
+      JSON.stringify({
+        ...original,
+        specs: ["Unqualified replacement 5W adapter"],
+        source: "https://example.invalid/new-adapter",
+      }),
+    ]);
+    const changed = await assess();
+    expect("assessments" in changed && changed.assessments[0].status).toBe(
+      "unverified",
+    );
+    expect("assessments" in changed && changed.assessments[0].eligible).toBe(
+      false,
+    );
+  } finally {
+    await db.query("UPDATE catalog_products SET record=$2::jsonb WHERE id=$1", [
+      "R002",
+      JSON.stringify(original),
+    ]);
+  }
+  const first = (await customerSession({ action: "guest" })).actor;
+  const second = (await customerSession({ action: "guest" })).actor;
+  const model = "MacBook Air (M1, 2020)";
+  for (const shopper of [first, second])
+    await updateBrief(shopper, {
+      message: "Charging for my confirmed MacBook",
+      model,
+      category: "chargers",
+      budget: 100000,
+      realRequirements: { cable: "usb100", fastCharging: false },
+      confirmConstraints: true,
+    });
+  const groupId = await joinGroup(first, "R002", model);
+  await joinGroup(second, "R002", model);
+  await manageBasket(first, {
+    collection: "cart",
+    action: "add",
+    items: [{ productId: "R002" }],
+  });
+  await manageBasket(first, {
+    collection: "cart",
+    action: "select_group",
+    items: [{ productId: "R002", groupId }],
+  });
+  const prepared = await prepareCheckout(first);
+  const quotes = (await readConcierge(first)).confirmations.find(
+    (c) => c.id === prepared.confirmation_id,
+  )!.payload.quotes as { model: string; groupId: string }[];
+  expect(quotes[0].model).toBe(model);
+  expect(quotes[0].groupId).toBe(groupId);
 });
 
 it("bounds oversized native observations without losing IDs, prices or degraded-retrieval truth", () => {

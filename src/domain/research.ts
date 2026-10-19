@@ -159,6 +159,32 @@ export type ResearchReport = {
   market: "US";
   priceBasis: string;
 };
+/** Recorded fit evidence stays tied to the qualified identity and technical facts.
+ * Offer price, stock and display photography do not change that identity. */
+export function matchesResearchEvidence(product: Product) {
+  const reference = realProducts.find((p) => p.id === product.id);
+  if (!reference) return false;
+  const stable = (value: unknown): string =>
+    JSON.stringify(value, (_, v) =>
+      v && typeof v === "object" && !Array.isArray(v)
+        ? Object.fromEntries(
+            Object.entries(v).sort(([a], [b]) => a.localeCompare(b)),
+          )
+        : v,
+    );
+  const identity = (p: Product) =>
+    stable({
+      name: p.name,
+      category: p.category,
+      modelName: p.modelName || null,
+      specs: p.specs,
+      source: p.source,
+      attributes: p.attributes || {},
+      compatibleModels: [...p.compatibleModels].sort(),
+    });
+  return identity(product) === identity(reference);
+}
+
 export function researchProducts(
   need: ResearchNeed,
   now = Date.now(),
