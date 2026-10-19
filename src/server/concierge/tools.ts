@@ -271,7 +271,7 @@ export const tools: ToolDefinition[] = [
   {
     name: "lookup_product",
     description:
-      "Find a named product. Include the BRAND and full model, generation, size/storage and suffixes together in name. Brand aliases and typos are resolved against the catalog. not_found is scoped to that full identity; choose_variant needs a choice. No substitutes.",
+      "Look up a brand/product name directly. Include its brand, model and any stated size/storage. Rough spelling is accepted. This needs NO prior category/brand discovery. Returns exact identity, variant choices or not_found; never unrelated substitutes.",
     input: lookupArguments,
     effect: "read",
     async execute(raw, { actor, signal }) {

@@ -42,6 +42,11 @@ if (process.argv.includes("--warmup")) {
 if (process.argv.includes("--trace-model")) {
   const transport = globalThis.fetch;
   globalThis.fetch = async (...args) => {
+    if (String(args[0]).includes("/chat/completions")) {
+      const sent=JSON.parse(String(args[1]?.body||"{}"));
+      const last=sent.messages?.at(-1);
+      if(last?.role === "tool") console.log(JSON.stringify({event:"buyer.live.observation",content:last.content}));
+    }
     const result = await transport(...args);
     if (String(args[0]).includes("/chat/completions")) {
       const body = await result.clone().json();
