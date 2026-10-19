@@ -52,6 +52,7 @@ it("passes native tool observations back to configured self-hosted inference wit
   expect(result.tool_calls?.[0].function.name).toBe("inspect");
   const sent = JSON.parse(transport.mock.calls[0][1].body);
   expect(sent.model).toBe("contract-model");
+  expect(sent.temperature).toBe(0);
   expect(sent.messages[2].tool_call_id).toBe("previous");
 });
 it("does not silently fall back to cloud or hardcoded replies on error", async () => {
