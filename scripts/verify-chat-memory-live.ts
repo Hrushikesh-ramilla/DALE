@@ -7,6 +7,8 @@ import {
   changeConcierge,
   readConcierge,
   conversationMessages,
+  conciergeDatabase,
+  ownerKey,
 } from "../src/server/concierge/store";
 import { closeDatabase } from "../src/server/database";
 import { runConcierge } from "../src/server/concierge/engine";
@@ -36,7 +38,7 @@ try {
     else delete process.env.CONCIERGE_CONTEXT_BUDGET_TOKENS;
     const { actor } = await customerSession({ action: "guest" });
     await changeConcierge(actor, (s) => {
-      for (let i = 0; i < 120; i++)
+      for (let i = 0; i < (mode === "full" ? 120 : 36); i++)
         s.transcript.push({
           id: randomUUID(),
           sender: i % 2 ? "assistant" : "user",
@@ -66,7 +68,7 @@ try {
       }),
     });
     const reply = view.messages.at(-1)?.text || "";
-    const passed =
+    let passed =
       view.turn?.status === "completed" &&
       /ombre nomade/i.test(reply) &&
       /oud/i.test(reply) &&
@@ -75,6 +77,14 @@ try {
       /18[,.]?000/.test(reply) &&
       /INR|₹|rupees/i.test(reply);
     const state = await readConcierge(actor);
+    const memory = await (
+      await conciergeDatabase()
+    ).query<{ memory: { through: number } | null }>(
+      "SELECT memory FROM concierge_conversations WHERE owner=$1 AND id=$2",
+      [ownerKey(actor), state.conversationId!],
+    );
+    const summaryStored = Boolean(memory.rows[0]?.memory?.through);
+    if (mode === "compacted" && !summaryStored) passed = false;
     const count = (await conversationMessages(actor, state.conversationId!))
       .length;
     results.push({
@@ -83,6 +93,7 @@ try {
       model: source.CONCIERGE_MODEL || source.AI_MODEL,
       syntheticHistory: true,
       realProvider: true,
+      summaryStored,
       messagesSaved: count,
       status: view.turn?.status,
       error: view.turn?.error,

@@ -1,6 +1,8 @@
 import { defineConfig, devices } from "@playwright/test";
 import { resolve } from "node:path";
-const directory = resolve(`.data/chat-memory-browser-${Date.now()}`);
+const directory =
+  process.env.CHAT_MEMORY_BROWSER_DIR ||
+  resolve(`.data/chat-memory-browser-${Date.now()}`);
 process.env.CHAT_MEMORY_BROWSER_DIR = directory;
 export default defineConfig({
   testDir: "./e2e",

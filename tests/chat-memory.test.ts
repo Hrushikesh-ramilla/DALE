@@ -272,6 +272,40 @@ it("rejects fabricated summary sources and leaves all original messages intact",
   );
   expect(await conversationMessages(a, id)).toHaveLength(44);
 });
+it("resumes oversized imported history from saved summary checkpoints without skipping messages", async () => {
+  process.env.CONCIERGE_CONTEXT_BUDGET_TOKENS = "6000";
+  const a = await buyer();
+  const id = await seed(a, 180, 200);
+  const seen: string[] = [];
+  vi.mocked(modelTurn).mockImplementation(async (messages) => {
+    const payload = JSON.parse(messages[1].content!);
+    seen.push(...payload.messages.map((m: { id: string }) => m.id));
+    return {
+      role: "assistant",
+      content: JSON.stringify({
+        overview: "Earlier exchanges.",
+        facts: [],
+        unresolved: [],
+      }),
+    };
+  });
+  let completed = false,
+    retries = 0;
+  while (!completed && retries++ < 10) {
+    try {
+      await prepareConversation(a, id, "Natural");
+      completed = true;
+    } catch (error) {
+      expect(String(error)).toContain("saved checkpoint");
+    }
+  }
+  expect(completed).toBe(true);
+  expect(retries).toBeGreaterThan(1);
+  expect(new Set(seen).size).toBe(seen.length);
+  const history = await conversationMessages(a, id);
+  expect(history).toHaveLength(180);
+  expect(seen).toEqual(history.slice(0, seen.length).map((m) => m.id));
+});
 it("retains all messages after the database closes and reopens", async () => {
   await closeDatabase();
   const root = resolve(".data"),
