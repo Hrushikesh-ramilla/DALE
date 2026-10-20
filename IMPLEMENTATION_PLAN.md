@@ -4,6 +4,8 @@ DALE conversational website control — implementation handover, 20 October 2026
 
 **Implementation authorized, 20 October 2026.** Progress and evidence are tracked in [the execution ledger](docs/WEBSITE_CONTROL_STATUS.md) and [control coverage inventory](docs/website-control-coverage.json). This plan describes the complete target; implemented capabilities must be qualified individually.
 
+**Local implementation checkpoint, 21 October:** customer website control is implemented through `3507760`, including real browser tabs, customer workflows, voice transport and durable recovery. The ledger records 25 distinct browser journeys, targeted contracts and live Gemini samples. [Repository regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md) records the separate catalog/media gate that still prevents a whole-marketplace production certification. No hosted rollout is implied by the local checkpoint.
+
 ## 1. Product objective
 
 Make conversation a practical way to operate DALE's customer-facing website. A shopper should discover products, navigate, open several product tabs, select an exact item, manage a basket, compare choices, and use existing customer workflows by typing what they want. Success is an observed result in the actual application.

@@ -71,4 +71,4 @@ The final verification passed 25 targeted tests, the production build, and the b
 4. Use **New chat**. Previous chat context should disappear from the active conversation; the basket should remain. A question about the old chat should not retrieve it.
 5. Stop a pending reply. Its late result should not appear. Another tab should not be able to start a simultaneous conflicting turn.
 
-The existing broad tool-based concierge browser suite tests a different historical behavior. Catalog RAG exposes only the three read-only functions documented separately; it does not reconnect shopping actions.
+The approved website-control extension now supplies customer action functions alongside the three catalog functions. Durable active native execution and historical execution records remain separate from the conversation archive. See [website control](WEBSITE_CONTROL_STATUS.md) for current qualification; older read-only RAG evidence remains valid for catalog retrieval alone.

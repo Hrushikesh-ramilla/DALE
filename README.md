@@ -8,7 +8,7 @@ DALE is the product name; `buyerguard` remains the internal package name.
 
 The current chatbot combines natural Gemini conversation, durable session memory, and selective catalog retrieval. Gemini can look up published products, specifications, variants, recorded prices, and stock through three read-only functions. It chooses when to retrieve and writes its own answer.
 
-**Conversational website control is being qualified locally.** Gemini can request real navigation, separate browser tabs, search filters, component controls, cart/wishlist changes and existing customer-workflow preparation. Durable native continuations and actual browser receipts connect these effects to the conversation. See the [verification ledger](docs/WEBSITE_CONTROL_STATUS.md) for passed gates and remaining work; feature presence alone is not a completed acceptance test.
+**Conversational website control is implemented and tested locally.** Gemini can request real navigation, separate browser tabs, search filters, component controls, cart/wishlist changes and existing customer workflows. Customer file selection, evidence submission, independent group commitments, checkout review and account changes use the actual customer interface and services. Durable native continuations and observed browser receipts connect these effects to the conversation. See the [verification ledger](docs/WEBSITE_CONTROL_STATUS.md) for measured gates and platform limits.
 
 | Area              | Current behavior                                                                                                                                          |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -18,7 +18,7 @@ The current chatbot combines natural Gemini conversation, durable session memory
 | Retrieval         | Identity and text search plus the existing local BGE embedding index. Gemini generates answers; BGE supplies search embeddings.                           |
 | Storefront        | Multi-category browsing, product pages, filters, cart, wishlist, comparison, and customer commerce interfaces.                                            |
 | Commerce          | Backend services for customer identities, groups, payment approval, orders, evidence, and recovery. Each integration has its own validation requirements. |
-| Agent actions     | Owner-scoped website tools, durable pause/resume, replay protection, tab registration and observed browser receipts; qualification tracked separately. |
+| Agent actions     | Owner-scoped website tools, durable pause/resume, replay protection, tab registration and observed browser receipts; qualification tracked separately.    |
 
 Manufacturer-linked product identities are separate from DALE's merchant offers. Recorded prices, stock, shipping, and fulfillment include sandbox/simulated data. This repository is not certification of a live commercial marketplace, complete physical-evidence verification, or universal compatibility coverage.
 
