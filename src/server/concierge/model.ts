@@ -1,6 +1,7 @@
 import { z } from "zod";
 import type { NativeMessage } from "@/domain/concierge";
 import { selfHostedEndpoint } from "../self-hosted-ai";
+import { replyTokenLimit } from "./context-limits";
 
 export type ToolDeclaration = {
   name: string;
@@ -176,7 +177,7 @@ async function generate(
             : {}),
           temperature: provider === "self_hosted" ? 0 : 0.7,
           ...(provider === "gemini" ? { reasoning_effort: reasoning } : {}),
-          max_tokens: 2048,
+          max_tokens: replyTokenLimit(),
           stream: false,
         }),
         signal: combined,

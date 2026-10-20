@@ -149,6 +149,7 @@ export type Confirmation = {
   result?: unknown;
 };
 export type ConciergeState = {
+  conversationId?: string;
   revision: number;
   basketRevision?: number;
   messages: NativeMessage[];
@@ -158,6 +159,7 @@ export type ConciergeState = {
     sender: "user" | "assistant";
     text: string;
     timestamp: number;
+    sequence?: number;
   }[];
   cart: { productId: string; quantity: number; groupId?: string }[];
   wishlist: string[];

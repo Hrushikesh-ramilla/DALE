@@ -3,21 +3,20 @@ import { z } from "zod";
 import {
   turnInput,
   actionReceipt,
-  browserOperation,
   type TurnInput,
 } from "@/domain/concierge";
-import { registeredPath } from "@/domain/site-routes";
 import {
   changeConcierge,
   readConcierge,
   ownerKey,
   withTurnFence,
+  conversationPage,
 } from "./store";
-import { declarations, executeTool } from "./tools";
 import { modelTurn } from "./model";
 import { basket } from "./shopping";
 import { productDetails } from "./retrieval";
 import type { Actor } from "../state";
+import { prepareConversation } from "./memory";
 
 const directInstruction = `You are DALE, an exceptional luxury shopping concierge and conversational AI assistant.
 You possess deep, encyclopedic knowledge of luxury fashion, haute horlogerie, niche and designer fragrances, fine jewelry, electronics, and lifestyle goods.
@@ -25,15 +24,6 @@ Engage with customers naturally, intelligently, and helpfully—just like ChatGP
 Answer questions directly, explain scent profiles, notes, history, craftsmanship, and recommendations with depth and sophistication.
 Never be robotic, repetitive, or constrained by rigid templates. Speak warmly, clearly, and engagingly.`;
 
-const coreTools = [
-  "lookup_product",
-  "search_catalog",
-  "get_categories_and_brands",
-  "get_catalog_facets",
-  "get_product_details",
-  "manage_collection",
-  "move_collection",
-];
 /** Prepares the shared native prompt before shoppers arrive. No functions execute,
  * no customer state is read, and no generated response becomes a shopper reply. */
 export async function warmConcierge() {
@@ -49,7 +39,15 @@ export async function warmConcierge() {
   );
 }
 export async function conciergeView(actor: Actor) {
-  const s = await readConcierge(actor);
+  let s = await readConcierge(actor);
+  if (!s.conversationId) {
+    await changeConcierge(actor, () => undefined);
+    s = await readConcierge(actor);
+  }
+  const { messages, ...conversation } = await conversationPage(
+    actor,
+    s.conversationId!,
+  );
   const currentSets = s.resultSets.filter(
     (set) => !s.turn || set.turnId === s.turn.id,
   );
@@ -68,7 +66,8 @@ export async function conciergeView(actor: Actor) {
     },
     catalog_match_status: displayed?.matchStatus || null,
     revision: s.revision,
-    messages: s.transcript,
+    messages,
+    conversation,
     actions: s.actions.filter(
       (a) => a.status === "pending" && a.turnId === s.turn?.id,
     ),
@@ -184,7 +183,10 @@ export async function runConcierge(
     );
   } catch (e) {
     await changeConcierge(actor, (s) => {
-      if (s.turn?.id === input.turn_id) {
+      if (
+        s.turn?.id === input.turn_id &&
+        ["running", "awaiting_ui"].includes(s.turn.status)
+      ) {
         s.turn.status = executionSignal.aborted ? "canceled" : "failed";
         s.turn.error =
           e instanceof Error ? e.message : "Agent execution failed";
@@ -203,38 +205,13 @@ async function continueTurn(
   if (state.turn?.id !== input.turn_id || state.turn.status !== "running")
     return;
 
-  // Build clean conversational dialogue strictly from transcript text:
-  const dialogMessages: { role: "user" | "assistant"; content: string }[] = [];
-  for (const item of state.transcript) {
-    if (!item.text || !item.text.trim()) continue;
-    if (item.sender === "user") {
-      dialogMessages.push({ role: "user", content: item.text.trim() });
-    } else if (item.sender === "assistant" && dialogMessages.length > 0) {
-      dialogMessages.push({ role: "assistant", content: item.text.trim() });
-    }
-  }
-
-  // Ensure conversation ends on the user turn with the incoming message:
-  if (
-    dialogMessages.length === 0 ||
-    dialogMessages[dialogMessages.length - 1].role !== "user"
-  ) {
-    dialogMessages.push({ role: "user", content: input.message || "" });
-  }
-
-  const recent = dialogMessages.slice(-16);
-
-  const message = await modelTurn(
-    [
-      {
-        role: "system",
-        content: directInstruction,
-      },
-      ...recent,
-    ],
-    [],
+  const prepared = await prepareConversation(
+    actor,
+    state.conversationId!,
+    directInstruction,
     signal,
   );
+  const message = await modelTurn(prepared.messages, [], signal);
 
   signal?.throwIfAborted();
   await changeConcierge(actor, (s) => {
