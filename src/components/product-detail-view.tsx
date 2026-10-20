@@ -1,7 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Check, ShieldCheck, ShoppingBag, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  Check,
+  ShieldCheck,
+  ShoppingBag,
+  Sparkles,
+} from "lucide-react";
 import type { Product } from "@/domain/catalog";
 import {
   leafTitles,
@@ -19,7 +25,9 @@ export function ProductDetailView({ product }: { product: Product }) {
   const store = useStore();
   const copilot = useCopilot();
 
-  const leaf = (product.attributes?.leafType as LeafTypeKey) || (product.category as LeafTypeKey);
+  const leaf =
+    (product.attributes?.leafType as LeafTypeKey) ||
+    (product.category as LeafTypeKey);
   const department = getDepartmentForLeaf(leaf);
   const categoryTitle = leafTitles[leaf] || product.category;
 
@@ -29,7 +37,12 @@ export function ProductDetailView({ product }: { product: Product }) {
         items={[
           { label: "Home", href: "/" },
           ...(department
-            ? [{ label: department.title, href: `/department/${department.id}` }]
+            ? [
+                {
+                  label: department.title,
+                  href: `/department/${department.id}`,
+                },
+              ]
             : []),
           { label: categoryTitle, href: `/category/${leaf}` },
           { label: product.name },
@@ -54,8 +67,12 @@ export function ProductDetailView({ product }: { product: Product }) {
           <p className="pdp-desc">{product.description}</p>
 
           <div className="pdp-price-row">
-            <span className="pdp-price-value">{formatMoney(product.price)}</span>
-            <span className="pdp-price-meta">USD · Insured Express Shipping Included</span>
+            <span className="pdp-price-value">
+              {formatMoney(product.price)}
+            </span>
+            <span className="pdp-price-meta">
+              USD · Insured Express Shipping Included
+            </span>
           </div>
 
           {/* Key Facts */}
@@ -72,7 +89,28 @@ export function ProductDetailView({ product }: { product: Product }) {
           <div className="pdp-actions-wrap">
             <button
               type="button"
+              className="pdp-button-concierge"
+              disabled={product.comparisonOnly || product.stock < 1}
+              onClick={() => copilot.addToCart(product)}
+            >
+              <ShoppingBag size={18} />
+              <span>Add to cart</span>
+            </button>
+            <button
+              type="button"
+              className="pdp-button-concierge"
+              onClick={() =>
+                void copilot
+                  .mutateCollection("wishlist", "add", product.id)
+                  .catch(() => {})
+              }
+            >
+              Save to wishlist
+            </button>
+            <button
+              type="button"
               className="pdp-button-checkout"
+              data-agent-control="Review this product's PayPal quote"
               onClick={() => void store.choose(product)}
             >
               <ShoppingBag size={18} />
@@ -83,7 +121,9 @@ export function ProductDetailView({ product }: { product: Product }) {
               type="button"
               className="pdp-button-concierge"
               onClick={() => {
-                void copilot.sendMessage(`Explain the recorded facts and missing information for product ${product.id}.`);
+                void copilot.sendMessage(
+                  `Explain the recorded facts and missing information for product ${product.id}.`,
+                );
               }}
             >
               <Sparkles size={16} />
@@ -93,12 +133,23 @@ export function ProductDetailView({ product }: { product: Product }) {
 
           {/* Buyer Protection Guarantee */}
           <div className="pdp-guarantee-box">
-            <div style={{ display: "flex", alignItems: "center", gap: 8, fontWeight: 700, marginBottom: 4 }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 8,
+                fontWeight: 700,
+                marginBottom: 4,
+              }}
+            >
               <ShieldCheck size={16} color="#0070ba" />
               <span>PayPal sandbox checkout</span>
             </div>
             <p style={{ margin: 0, fontSize: 12 }}>
-              Review the recorded product specifications and missing facts before approval. The demo merchant offers a 30-day return request policy from recorded delivery, with review where needed. Fulfillment is simulated.
+              Review the recorded product specifications and missing facts
+              before approval. The demo merchant offers a 30-day return request
+              policy from recorded delivery, with review where needed.
+              Fulfillment is simulated.
             </p>
           </div>
         </div>
@@ -107,10 +158,24 @@ export function ProductDetailView({ product }: { product: Product }) {
       {/* Technical Luxury Architecture Card */}
       <div className="pdp-architecture-wrap">
         <div style={{ marginBottom: 20 }}>
-          <span style={{ fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, color: "#888" }}>
+          <span
+            style={{
+              fontSize: 11,
+              letterSpacing: "0.14em",
+              textTransform: "uppercase",
+              fontWeight: 700,
+              color: "#888",
+            }}
+          >
             CRAFTSMANSHIP & SPECIFICATIONS
           </span>
-          <h2 style={{ fontFamily: 'var(--font-serif, "Playfair Display", serif)', fontSize: 30, margin: "6px 0 0" }}>
+          <h2
+            style={{
+              fontFamily: 'var(--font-serif, "Playfair Display", serif)',
+              fontSize: 30,
+              margin: "6px 0 0",
+            }}
+          >
             Technical Luxury Architecture
           </h2>
         </div>
@@ -126,7 +191,11 @@ export function ProductDetailView({ product }: { product: Product }) {
             <tbody>
               {Object.entries(product.attributes).map(([key, val]) => (
                 <tr key={key}>
-                  <th>{key.replace(/([A-Z])/g, " $1").replace(/^./, (str) => str.toUpperCase())}</th>
+                  <th>
+                    {key
+                      .replace(/([A-Z])/g, " $1")
+                      .replace(/^./, (str) => str.toUpperCase())}
+                  </th>
                   <td>{String(val)}</td>
                 </tr>
               ))}
@@ -136,19 +205,26 @@ export function ProductDetailView({ product }: { product: Product }) {
                   <td>{product.brand}</td>
                 </tr>
               )}
-              {product.compatibleModels && product.compatibleModels.length > 0 && (
-                <tr>
-                  <th>Compatible Profiles</th>
-                  <td>{product.compatibleModels.join(", ")}</td>
-                </tr>
-              )}
+              {product.compatibleModels &&
+                product.compatibleModels.length > 0 && (
+                  <tr>
+                    <th>Compatible Profiles</th>
+                    <td>{product.compatibleModels.join(", ")}</td>
+                  </tr>
+                )}
             </tbody>
           </table>
         </div>
       )}
 
       {/* Back to Category Link */}
-      <div style={{ marginTop: 40, paddingTop: 24, borderTop: "1px solid #dcd8ce" }}>
+      <div
+        style={{
+          marginTop: 40,
+          paddingTop: 24,
+          borderTop: "1px solid #dcd8ce",
+        }}
+      >
         <Link
           href={`/category/${leaf}`}
           style={{

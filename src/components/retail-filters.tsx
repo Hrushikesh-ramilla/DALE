@@ -42,6 +42,7 @@ export function RetailFilters({
         {label}
         <select
           aria-label={label}
+          data-agent-control={`Requirement ${label}`}
           value={String(value[key] ?? "")}
           onChange={(event) => {
             const next = { ...value };

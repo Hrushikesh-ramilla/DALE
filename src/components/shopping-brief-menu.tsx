@@ -237,6 +237,7 @@ export function ShoppingBriefMenu({
         aria-expanded={isOpen}
         aria-haspopup="dialog"
         aria-label="Filter products and adjust shopping brief"
+        data-agent-control="Open or close shopping brief menu"
       >
         <span className="trigger-icon-wrap">
           <span className="apple-hamburger-lines" aria-hidden="true">
@@ -295,6 +296,7 @@ export function ShoppingBriefMenu({
                 className="flyout-close-btn"
                 onClick={handleClose}
                 aria-label="Close filters menu"
+                data-agent-control="Close shopping brief menu"
               >
                 <X size={16} />
               </button>
@@ -311,6 +313,7 @@ export function ShoppingBriefMenu({
                     className="flyout-select"
                     disabled={isRetailCategory(category)}
                     value={model}
+                    data-agent-control="Shopping brief device profile"
                     onChange={(e) => {
                       setModel(e.target.value);
                       setBriefDirty(true);
@@ -349,6 +352,7 @@ export function ShoppingBriefMenu({
                   <select
                     className="flyout-select"
                     value={category}
+                    data-agent-control="Shopping brief category"
                     onChange={(e) => {
                       setCategory(e.target.value);
                       setBriefDirty(true);
@@ -370,6 +374,7 @@ export function ShoppingBriefMenu({
                       min="1"
                       max="10000"
                       value={budget}
+                      data-agent-control="Shopping brief maximum budget USD"
                       onChange={(e) => {
                         setBudget(e.target.value);
                         setBriefDirty(true);
@@ -401,6 +406,7 @@ export function ShoppingBriefMenu({
                   Feature to prioritize
                   <input
                     value={preference}
+                    data-agent-control="Shopping brief preferred feature"
                     maxLength={80}
                     placeholder="65W, Ethernet, braided cable…"
                     onChange={(e) => {
@@ -414,6 +420,7 @@ export function ShoppingBriefMenu({
                   <textarea
                     placeholder="A lighter charger for my commute…"
                     value={message}
+                    data-agent-control="Shopping brief additional requirements"
                     onChange={(e) => {
                       setMessage(e.target.value);
                       setBriefDirty(true);
@@ -426,6 +433,7 @@ export function ShoppingBriefMenu({
                   <select
                     className="flyout-select"
                     value={priority}
+                    data-agent-control="Shopping brief ranking priority"
                     onChange={(e) => {
                       setPriority(e.target.value as "price" | "features");
                       setBriefDirty(true);
@@ -462,6 +470,7 @@ export function ShoppingBriefMenu({
                     </label>
                     <input
                       aria-label="Price preference weight"
+                      data-agent-control="Shopping brief price preference weight"
                       type="range"
                       min="0"
                       max="100"

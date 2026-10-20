@@ -2,7 +2,7 @@
 
 DALE conversational website control — implementation handover, 20 October 2026.
 
-**Planning only.** The owner requested this expanded plan after saving the current application. This document does not implement website-control features. Begin implementation when the owner authorizes that phase.
+**Implementation authorized, 20 October 2026.** Progress and evidence are tracked in [the execution ledger](docs/WEBSITE_CONTROL_STATUS.md) and [control coverage inventory](docs/website-control-coverage.json). This plan describes the complete target; implemented capabilities must be qualified individually.
 
 ## 1. Product objective
 
@@ -226,4 +226,4 @@ Local correctness comes first. Hosted deployment and external-provider qualifica
 5. Connect A2 same-tab navigation and A3 multi-tab behavior to the existing Gemini/RAG loop, with observed destinations and durable continuation.
 6. Continue A4–A9 without dropping half-implemented capabilities; commit verified milestones and update the ledger.
 
-This document is the handover for the next owner-approved implementation phase; it does not authorize that phase by itself.
+The owner subsequently approved implementation. Preserve the approved scope and record measured progress in the execution ledger.

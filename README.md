@@ -8,7 +8,7 @@ DALE is the product name; `buyerguard` remains the internal package name.
 
 The current chatbot combines natural Gemini conversation, durable session memory, and selective catalog retrieval. Gemini can look up published products, specifications, variants, recorded prices, and stock through three read-only functions. It chooses when to retrieve and writes its own answer.
 
-**Website control through chat is the next implementation phase.** Navigation, opening products in separate tabs, cart changes, and customer workflows are not exposed by the current catalog-RAG chatbot. Existing manual interfaces and older action foundations are separate from that current chat path.
+**Conversational website control is being qualified locally.** Gemini can request real navigation, separate browser tabs, search filters, component controls, cart/wishlist changes and existing customer-workflow preparation. Durable native continuations and actual browser receipts connect these effects to the conversation. See the [verification ledger](docs/WEBSITE_CONTROL_STATUS.md) for passed gates and remaining work; feature presence alone is not a completed acceptance test.
 
 | Area              | Current behavior                                                                                                                                          |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -18,7 +18,7 @@ The current chatbot combines natural Gemini conversation, durable session memory
 | Retrieval         | Identity and text search plus the existing local BGE embedding index. Gemini generates answers; BGE supplies search embeddings.                           |
 | Storefront        | Multi-category browsing, product pages, filters, cart, wishlist, comparison, and customer commerce interfaces.                                            |
 | Commerce          | Backend services for customer identities, groups, payment approval, orders, evidence, and recovery. Each integration has its own validation requirements. |
-| Agent actions     | Planned integration; do not treat available backend code as completed chat-controlled behavior.                                                           |
+| Agent actions     | Owner-scoped website tools, durable pause/resume, replay protection, tab registration and observed browser receipts; qualification tracked separately. |
 
 Manufacturer-linked product identities are separate from DALE's merchant offers. Recorded prices, stock, shipping, and fulfillment include sandbox/simulated data. This repository is not certification of a live commercial marketplace, complete physical-evidence verification, or universal compatibility coverage.
 
@@ -26,7 +26,8 @@ Current scope documentation:
 
 - [Catalog RAG](docs/CATALOG_RAG.md): implemented read-only catalog knowledge and evidence.
 - [Session memory](docs/SESSION_MEMORY.md): persistence, pagination, summaries, and limits.
-- [Implementation plan](IMPLEMENTATION_PLAN.md): planned conversation-based control of the customer website, including multiple product tabs; implementation has not started.
+- [Implementation plan](IMPLEMENTATION_PLAN.md): approved conversation-based control of the customer website, including multiple browser tabs.
+- [Website-control ledger](docs/WEBSITE_CONTROL_STATUS.md) and [coverage inventory](docs/website-control-coverage.json): actual progress and remaining acceptance gates.
 - [Archived catalog implementation plan](CATALOG_IMPLEMENTATION_PLAN_2026-10-11.md): preserved assortment-expansion handover.
 - [Original master plan](MASTER_PLAN.md): product goals and historical decisions.
 - [Original-plan implementation audit](docs/ORIGINAL_PLAN_IMPLEMENTATION_AUDIT_2026-10-15.md): feature boundaries and remaining qualification.
@@ -44,10 +45,13 @@ Browser / React
     |
     +-- DALE conversation --> Session memory --> Gemini
                                                |
-                                               +-- Read-only catalog functions
+                                               +-- Catalog functions
                                                         |
                                                         +-- Published catalog
                                                         +-- Local search embeddings
+                                               +-- Customer website functions
+                                                        +-- Durable execution / shared services
+                                                        +-- Registered browser tabs / rendered-page receipts
 
 Commerce services --> PayPal sandbox / evidence storage / recovery worker
 ```

@@ -140,12 +140,18 @@ function Page() {
             key={raw}
           >
             <label>
-              Catalog text <input name="query" defaultValue={filters.query} />
+              Catalog text{" "}
+              <input
+                data-agent-control="Search text"
+                name="query"
+                defaultValue={filters.query}
+              />
             </label>
             <label>
               Minimum USD{" "}
               <input
                 name="min"
+                data-agent-control="Minimum search price USD"
                 type="number"
                 min="0"
                 step="0.01"
@@ -158,6 +164,7 @@ function Page() {
               Maximum USD{" "}
               <input
                 name="max"
+                data-agent-control="Maximum search price USD"
                 type="number"
                 min="0"
                 step="0.01"
@@ -168,7 +175,11 @@ function Page() {
             </label>
             <label>
               Sort{" "}
-              <select name="sort" defaultValue={filters.sort}>
+              <select
+                data-agent-control="Search sorting"
+                name="sort"
+                defaultValue={filters.sort}
+              >
                 <option value="relevance">Relevance</option>
                 <option value="price_asc">Price: low to high</option>
                 <option value="price_desc">Price: high to low</option>
@@ -176,10 +187,13 @@ function Page() {
                 <option value="brand_asc">Brand</option>
               </select>
             </label>
-            <button>Apply filters</button>
+            <button data-agent-control="Apply search form">
+              Apply filters
+            </button>
             <button
               type="button"
               onClick={() => filter(searchConstraints.parse({}))}
+              data-agent-control="Clear search filters"
             >
               Clear filters
             </button>
@@ -237,6 +251,7 @@ function Page() {
           <button
             type="button"
             disabled={selected.length < 2}
+            data-agent-control="Compare selected products"
             onClick={() =>
               router.push(
                 `/compare?ids=${encodeURIComponent(selected.join(","))}`,
@@ -248,6 +263,7 @@ function Page() {
           <div>
             <button
               disabled={filters.offset === 0}
+              data-agent-control="Previous search page"
               onClick={() =>
                 router.push(
                   `/search?filters=${encodeURIComponent(JSON.stringify({ ...filters, offset: Math.max(0, filters.offset - filters.limit) }))}`,
@@ -258,6 +274,7 @@ function Page() {
             </button>
             <button
               disabled={filters.offset + filters.limit >= total}
+              data-agent-control="Next search page"
               onClick={() =>
                 router.push(
                   `/search?filters=${encodeURIComponent(JSON.stringify({ ...filters, offset: filters.offset + filters.limit }))}`,

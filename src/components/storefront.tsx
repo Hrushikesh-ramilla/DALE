@@ -579,7 +579,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           onComplete={() => setShowIntro(false)}
         />
       )}
-      <div className="app-shell">
+      <div className="app-shell" data-agent-customer={isBuyer ? "true" : undefined}>
         <a className="skip-link" href="#main">
           Skip to content
         </a>
@@ -605,6 +605,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
             (item) => (
               <button
                 key={item}
+                data-agent-control={`Open ${item}`}
                 className={tab === item ? "active" : ""}
                 aria-current={tab === item ? "page" : undefined}
                 onClick={() => setTab(item)}
@@ -1514,7 +1515,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                 </p>
               </div>
             )}
-            {session?.actor.role === "buyer" && !session.demo && <button className="button secondary" onClick={() => { setRole("buyer"); setModal({ kind: "login" }); }}>Account / sign in</button>}
+            {session?.actor.role === "buyer" && !session.demo && <button data-agent-control="Open account sign in" className="button secondary" onClick={() => { setRole("buyer"); setModal({ kind: "login" }); }}>Account / sign in</button>}
             {session?.invite && !session.demo && (
               <div className="invite-panel">
                 <div>
@@ -1735,6 +1736,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       <div className="inline-actions">
                         {isBuyer && order.status === "checkout_pending" && (
                           <button
+                            data-agent-control={`Review checkout for order ${order.id}`}
                             className="button secondary small"
                             onClick={() =>
                               setModal({ kind: "quote", quote: order.quote })
@@ -1747,6 +1749,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                           order.captureId &&
                           !["refunded", "canceled"].includes(order.status) && (
                             <button
+                              data-agent-control={`Open help for order ${order.id}`}
                               className="button secondary small"
                               onClick={() => {
                                 if (order.returnId) setTab("support");
@@ -2381,12 +2384,12 @@ export default function Storefront({ children }: { children?: ReactNode }) {
               >
                 Discover essentials
               </button>
-              <button onClick={() => setTab("groups")}>Buy together</button>
-              <button onClick={() => setTab("orders")}>Track an order</button>
+              <button data-agent-control="Open group deals" onClick={() => setTab("groups")}>Buy together</button>
+              <button data-agent-control="Open my orders" onClick={() => setTab("orders")}>Track an order</button>
             </div>
             <div className="footer-links">
               <strong>At your service</strong>
-              <button onClick={() => setTab("support")}>Returns & support</button>
+              <button data-agent-control="Open support" onClick={() => setTab("support")}>Returns & support</button>
               <button
                 onClick={() => {
                   setScam(null);
@@ -2433,6 +2436,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
               <button
                 className="close-modal"
                 aria-label="Close dialog"
+                data-agent-control="Close dialog"
                 onClick={() => setModal(null)}
               >
                 <X size={21} />

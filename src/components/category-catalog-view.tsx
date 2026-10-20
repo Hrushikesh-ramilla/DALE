@@ -32,25 +32,84 @@ import type { CategoryBrandSummary } from "@/server/catalog-store";
 function getSmartChipsForLeaf(leaf: LeafTypeKey): string[] {
   switch (leaf) {
     case "suits":
-      return ["Under $3,500", "Under $5,000", "Brioni", "Canali", "Wool & Silk", "Dinner Suit", "Clear All"];
+      return [
+        "Under $3,500",
+        "Under $5,000",
+        "Brioni",
+        "Canali",
+        "Wool & Silk",
+        "Dinner Suit",
+        "Clear All",
+      ];
     case "t-shirts":
-      return ["Under $400", "Under $600", "Balenciaga", "Brunello Cucinelli", "Mercerized Cotton", "Clear All"];
+      return [
+        "Under $400",
+        "Under $600",
+        "Balenciaga",
+        "Brunello Cucinelli",
+        "Mercerized Cotton",
+        "Clear All",
+      ];
     case "phones":
-      return ["Apple", "Samsung", "OnePlus", "Google", "Under $800", "Under $1,200", "Foldable Displays", "Clear All"];
+      return [
+        "Apple",
+        "Samsung",
+        "OnePlus",
+        "Google",
+        "Under $800",
+        "Under $1,200",
+        "Foldable Displays",
+        "Clear All",
+      ];
     case "laptops":
-      return ["Apple", "Dell", "Lenovo", "Under $1,500", "Under $2,500", "Workstation", "Clear All"];
+      return [
+        "Apple",
+        "Dell",
+        "Lenovo",
+        "Under $1,500",
+        "Under $2,500",
+        "Workstation",
+        "Clear All",
+      ];
     case "fragrance":
-      return ["Under $300", "Amouage", "Creed", "Maison Francis Kurkdjian", "Eau de Parfum", "Clear All"];
+      return [
+        "Under $300",
+        "Amouage",
+        "Creed",
+        "Maison Francis Kurkdjian",
+        "Eau de Parfum",
+        "Clear All",
+      ];
     case "handbags":
     case "backpacks":
     case "wallets":
-      return ["Hermès", "Goyard", "Louis Vuitton", "Under $2,500", "Leather", "Clear All"];
+      return [
+        "Hermès",
+        "Goyard",
+        "Louis Vuitton",
+        "Under $2,500",
+        "Leather",
+        "Clear All",
+      ];
     case "loafers":
     case "formal-shoes":
     case "boots":
-      return ["Berluti", "John Lobb", "Loro Piana", "Under $1,500", "Goodyear Welt", "Clear All"];
+      return [
+        "Berluti",
+        "John Lobb",
+        "Loro Piana",
+        "Under $1,500",
+        "Goodyear Welt",
+        "Clear All",
+      ];
     default:
-      return ["Under $500", "Under $1,500", "Luxury Tier", "Top Rated", "Clear All"];
+      return [
+        "Under $500",
+        "Under $1,500",
+        "Luxury Tier",
+        "Top Rated",
+        "Clear All",
+      ];
   }
 }
 
@@ -70,17 +129,28 @@ function CategoryCatalogContent({
   const viewParam = searchParams.get("view") || "";
 
   // Catalog Space is active when a brand is selected OR view="all" is requested
-  const isCatalogSpace = Boolean(brandParam || viewParam === "all" || viewParam === "catalog");
+  const isCatalogSpace = Boolean(
+    brandParam || viewParam === "all" || viewParam === "catalog",
+  );
 
   const [searchQuery, setSearchQuery] = useState("");
   const budgetParameter = searchParams.get("budget");
-  const [budgetOverride, setBudgetOverride] = useState<{parameter:string|null;value:number|null}|null>(null);
+  const [budgetOverride, setBudgetOverride] = useState<{
+    parameter: string | null;
+    value: number | null;
+  } | null>(null);
   const parsedBudget = Number(budgetParameter);
-  const maxBudget = budgetOverride?.parameter === budgetParameter
-    ? budgetOverride.value
-    : Number.isFinite(parsedBudget) && parsedBudget > 0 ? Math.floor(parsedBudget * 100+1e-7) : null;
-  const setMaxBudget = (value:number|null) => setBudgetOverride({parameter:budgetParameter,value});
-  const [sortOrder, setSortOrder] = useState<"featured" | "price-asc" | "price-desc" | "brand-asc">("featured");
+  const maxBudget =
+    budgetOverride?.parameter === budgetParameter
+      ? budgetOverride.value
+      : Number.isFinite(parsedBudget) && parsedBudget > 0
+        ? Math.floor(parsedBudget * 100 + 1e-7)
+        : null;
+  const setMaxBudget = (value: number | null) =>
+    setBudgetOverride({ parameter: budgetParameter, value });
+  const [sortOrder, setSortOrder] = useState<
+    "featured" | "price-asc" | "price-desc" | "brand-asc"
+  >("featured");
 
   // AI Assistant state
   const [aiInput, setAiInput] = useState("");
@@ -140,25 +210,57 @@ function CategoryCatalogContent({
   }, [filteredProducts, sortOrder]);
 
   useEffect(() => {
-    window.dispatchEvent(new CustomEvent("dale:ui-state", {detail: {categories:[leaf],brands:brandParam?[brandParam]:[],query:searchQuery,max_price:maxBudget,sort:sortOrder === "price-asc" ? "price_asc" : sortOrder === "price-desc" ? "price_desc" : sortOrder === "brand-asc" ? "brand_asc" : "relevance"}}));
-    return () => { window.dispatchEvent(new CustomEvent("dale:ui-state", {detail:{}})); };
-  }, [leaf,brandParam,searchQuery,maxBudget,sortOrder]);
+    window.dispatchEvent(
+      new CustomEvent("dale:ui-state", {
+        detail: {
+          categories: [leaf],
+          brands: brandParam ? [brandParam] : [],
+          query: searchQuery,
+          max_price: maxBudget,
+          sort:
+            sortOrder === "price-asc"
+              ? "price_asc"
+              : sortOrder === "price-desc"
+                ? "price_desc"
+                : sortOrder === "brand-asc"
+                  ? "brand_asc"
+                  : "relevance",
+        },
+      }),
+    );
+    return () => {
+      window.dispatchEvent(new CustomEvent("dale:ui-state", { detail: {} }));
+    };
+  }, [leaf, brandParam, searchQuery, maxBudget, sortOrder]);
   const handleAiFilter = async (text: string) => {
     if (!text.trim()) return;
     setIsAiFiltering(true);
     setAiFeedback(null);
-    try { await copilot.sendMessage(text); } finally { setIsAiFiltering(false); }
+    try {
+      await copilot.sendMessage(text);
+    } finally {
+      setIsAiFiltering(false);
+    }
   };
 
   const smartChips = getSmartChipsForLeaf(leaf);
 
   return (
-    <div className="category-page">
+    <div
+      className="category-page"
+      data-concierge-page={`/category/${leaf}`}
+      data-ready={!catalog.loading && !catalog.error ? "true" : "false"}
+    >
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
           ...(department
-            ? [{ label: department.title, href: `/department/${department.id}` }]
+            ? [
+                {
+                  label: department.title,
+                  href: `/department/${department.id}`,
+                },
+              ]
             : []),
           { label: title },
         ]}
@@ -166,11 +268,13 @@ function CategoryCatalogContent({
 
       <header className="category-page-header">
         <span className="eyebrow">
-          {department ? department.title.toUpperCase() : "THE COLLECTION"} / {parentCat.toUpperCase()}
+          {department ? department.title.toUpperCase() : "THE COLLECTION"} /{" "}
+          {parentCat.toUpperCase()}
         </span>
         <h1>{title}</h1>
         <p>
-          Explore authenticated models across prestigious luxury houses. 100% verified merchant provenance and complete technical specifications.
+          Explore authenticated models across prestigious luxury houses. 100%
+          verified merchant provenance and complete technical specifications.
         </p>
         <div className="category-stats-bar">
           <span className="pill">{totalModelsAcrossHouses} Models</span>
@@ -189,9 +293,7 @@ function CategoryCatalogContent({
             <span>DALE AI Shopping Concierge · Live Dynamic Filter</span>
           </div>
           {aiFeedback && (
-            <div className="concierge-feedback-tag">
-              {aiFeedback}
-            </div>
+            <div className="concierge-feedback-tag">{aiFeedback}</div>
           )}
         </div>
 
@@ -238,6 +340,7 @@ function CategoryCatalogContent({
                   type="button"
                   onClick={() => router.push(`/category/${leaf}?view=all`)}
                   aria-label="Remove brand filter"
+                  data-agent-control="Remove brand filter"
                 >
                   <X size={12} />
                 </button>
@@ -250,6 +353,7 @@ function CategoryCatalogContent({
                   type="button"
                   onClick={() => setMaxBudget(null)}
                   aria-label="Remove budget filter"
+                  data-agent-control="Remove budget filter"
                 >
                   <X size={12} />
                 </button>
@@ -262,6 +366,7 @@ function CategoryCatalogContent({
                   type="button"
                   onClick={() => setSearchQuery("")}
                   aria-label="Remove search filter"
+                  data-agent-control="Remove search filter"
                 >
                   <X size={12} />
                 </button>
@@ -270,6 +375,7 @@ function CategoryCatalogContent({
             <button
               type="button"
               className="clear-all-filters-btn"
+              data-agent-control="Clear category filters"
               onClick={() => {
                 setMaxBudget(null);
                 setSearchQuery("");
@@ -285,13 +391,13 @@ function CategoryCatalogContent({
       {/* MODE 1: THE BRAND SHOWCASE HUB */}
       {!isCatalogSpace ? (
         <div className="category-houses-hub">
-
           {/* Top Utility Bar with Prominent "Explore All" Button */}
           <div className="hub-top-utility-bar">
             <div>
               <div className="utility-text">Complete {title} Collection</div>
               <div className="utility-subtext">
-                Browse all {totalModelsAcrossHouses} authenticated models directly or select a house below
+                Browse all {totalModelsAcrossHouses} authenticated models
+                directly or select a house below
               </div>
             </div>
             <Link
@@ -314,7 +420,9 @@ function CategoryCatalogContent({
                 >
                   <div className="card-top-row">
                     <h3 className="brand-name">{brand.name}</h3>
-                    <span className="brand-count-pill">{brand.count} Models</span>
+                    <span className="brand-count-pill">
+                      {brand.count} Models
+                    </span>
                   </div>
 
                   <div className="brand-preview-visual">
@@ -332,13 +440,17 @@ function CategoryCatalogContent({
                     ) : brand.sampleProduct ? (
                       <ProductArt product={brand.sampleProduct} compact />
                     ) : (
-                      <div style={{ color: "#94a3b8", fontSize: 13 }}>{brand.name}</div>
+                      <div style={{ color: "#94a3b8", fontSize: 13 }}>
+                        {brand.name}
+                      </div>
                     )}
                   </div>
 
                   <div className="card-bottom-row">
                     <span className="brand-price-tag">
-                      {brand.minPrice ? `From ${formatMoney(brand.minPrice)}` : "Verified House"}
+                      {brand.minPrice
+                        ? `From ${formatMoney(brand.minPrice)}`
+                        : "Verified House"}
                     </span>
                     <span className="brand-action-link">
                       <span>View House</span>
@@ -351,10 +463,14 @@ function CategoryCatalogContent({
           </section>
 
           {/* Hub Bottom CTA Banner */}
-          <section className="hub-bottom-banner" aria-label="Explore Full Collection">
+          <section
+            className="hub-bottom-banner"
+            aria-label="Explore Full Collection"
+          >
             <h2>Explore the Entire {title} Portfolio</h2>
             <p>
-              Compare verified models across all {brandsList.length} houses with detailed material, sizing, and architectural specifications.
+              Compare verified models across all {brandsList.length} houses with
+              detailed material, sizing, and architectural specifications.
             </p>
             <Link
               href={`/category/${leaf}?view=all`}
@@ -385,8 +501,11 @@ function CategoryCatalogContent({
               </div>
               <h1>{brandParam || `All ${title}`}</h1>
               <p>
-                Showing {sortedProducts.length} authenticated model{sortedProducts.length === 1 ? "" : "s"}
-                {brandParam ? ` from ${brandParam}` : ` across ${brandsList.length} houses`}
+                Showing {sortedProducts.length} authenticated model
+                {sortedProducts.length === 1 ? "" : "s"}
+                {brandParam
+                  ? ` from ${brandParam}`
+                  : ` across ${brandsList.length} houses`}
                 {maxBudget ? ` · Under ${formatMoney(maxBudget)}` : ""}
               </p>
             </div>
@@ -411,6 +530,7 @@ function CategoryCatalogContent({
                 <button
                   type="button"
                   className={`category-brand-pill ${!brandParam ? "active" : ""}`}
+                  data-agent-control="Show all brands"
                   onClick={() => router.push(`/category/${leaf}?view=all`)}
                 >
                   All ({totalModelsAcrossHouses})
@@ -418,6 +538,7 @@ function CategoryCatalogContent({
                 {brandsList.map((b) => (
                   <button
                     key={b.name}
+                    data-agent-control={`Browse brand ${b.name}`}
                     type="button"
                     className={`category-brand-pill ${brandParam === b.name ? "active" : ""}`}
                     onClick={() =>
@@ -435,7 +556,6 @@ function CategoryCatalogContent({
             </div>
           )}
 
-
           {/* Secondary Filter & Sort Toolbar */}
           <div className="category-filter-secondary">
             <div style={{ position: "relative", flexGrow: 1, maxWidth: 420 }}>
@@ -445,6 +565,7 @@ function CategoryCatalogContent({
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="category-search-input"
+                data-agent-control="Search category models"
               />
               <Search
                 size={15}
@@ -472,8 +593,11 @@ function CategoryCatalogContent({
                 <SlidersHorizontal size={14} /> Sort:
                 <select
                   value={sortOrder}
-                  onChange={(e) => setSortOrder(e.target.value as typeof sortOrder)}
+                  onChange={(e) =>
+                    setSortOrder(e.target.value as typeof sortOrder)
+                  }
                   className="category-sort-select"
+                  data-agent-control="Sort category models"
                 >
                   <option value="featured">Featured Sequence</option>
                   <option value="price-asc">Price: Low to High</option>
@@ -486,18 +610,34 @@ function CategoryCatalogContent({
 
           {/* Product Grid */}
           {catalog.loading && sortedProducts.length === 0 ? (
-            <div style={{ padding: "60px 0", textAlign: "center", color: "#94a3b8" }}>
+            <div
+              style={{
+                padding: "60px 0",
+                textAlign: "center",
+                color: "#94a3b8",
+              }}
+            >
               Loading collection...
             </div>
           ) : sortedProducts.length === 0 ? (
-            <div style={{ padding: "60px 0", textAlign: "center", color: "#94a3b8" }}>
+            <div
+              style={{
+                padding: "60px 0",
+                textAlign: "center",
+                color: "#94a3b8",
+              }}
+            >
               No models matching the selected criteria.
             </div>
           ) : (
             <section aria-label="Product list">
               <div className="product-grid">
                 {sortedProducts.map((product) => (
-                  <article className="product-card" key={product.id} data-product-id={product.id}>
+                  <article
+                    className="product-card"
+                    key={product.id}
+                    data-product-id={product.id}
+                  >
                     <div className="card-visual">
                       <Link
                         href={`/product/${product.id}`}
@@ -519,7 +659,8 @@ function CategoryCatalogContent({
                     <div className="card-details">
                       <div className="product-topline">
                         <span className="fit-label">
-                          <Check size={12} /> {product.brand || "Authenticated House"}
+                          <Check size={12} />{" "}
+                          {product.brand || "Authenticated House"}
                         </span>
                         {product.sponsored && (
                           <span className="sponsored">Sponsored</span>
@@ -555,10 +696,22 @@ function CategoryCatalogContent({
                         }}
                       >
                         <div>
-                          <strong style={{ fontSize: 18, fontWeight: 700, color: "#f8fafc" }}>
+                          <strong
+                            style={{
+                              fontSize: 18,
+                              fontWeight: 700,
+                              color: "#f8fafc",
+                            }}
+                          >
                             {formatMoney(product.price)}
                           </strong>
-                          <small style={{ display: "block", fontSize: 11, color: "#64748b" }}>
+                          <small
+                            style={{
+                              display: "block",
+                              fontSize: 11,
+                              color: "#64748b",
+                            }}
+                          >
                             USD · Sandbox offer
                           </small>
                         </div>
@@ -568,7 +721,11 @@ function CategoryCatalogContent({
                             type="button"
                             className="button primary small"
                             onClick={() => void store.choose(product)}
-                            style={{ display: "inline-flex", alignItems: "center", gap: 6 }}
+                            style={{
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: 6,
+                            }}
                           >
                             <ShoppingBag size={13} />
                             <span>Buy Now</span>
@@ -577,7 +734,11 @@ function CategoryCatalogContent({
                           <Link
                             href={`/product/${product.id}`}
                             className="button secondary small"
-                            style={{ display: "inline-flex", alignItems: "center", gap: 4 }}
+                            style={{
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: 4,
+                            }}
                           >
                             <span>Details</span>
                             <ArrowRight size={13} />
@@ -595,6 +756,7 @@ function CategoryCatalogContent({
                     type="button"
                     className="button secondary"
                     onClick={catalog.loadMore}
+                    data-agent-control="Load more category models"
                     disabled={catalog.loading}
                   >
                     {catalog.loading ? "Loading more..." : "Load More Models"}
@@ -619,7 +781,13 @@ export function CategoryCatalogView({
   return (
     <Suspense
       fallback={
-        <div style={{ padding: "80px 20px", textAlign: "center", color: "#94a3b8" }}>
+        <div
+          style={{
+            padding: "80px 20px",
+            textAlign: "center",
+            color: "#94a3b8",
+          }}
+        >
           Loading collection...
         </div>
       }

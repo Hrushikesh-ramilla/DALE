@@ -56,6 +56,19 @@ export const searchConstraints = z
 export type SearchConstraints = z.infer<typeof searchConstraints>;
 export const uiContext = z
   .object({
+    tab_id: z.string().uuid().optional(),
+    controls: z
+      .array(
+        z.object({
+          id: z.string().max(160),
+          label: z.string().max(160),
+          kind: z.enum(["button", "link", "input", "select", "details"]),
+          value: z.string().max(500).optional(),
+          options: z.array(z.string().max(160)).max(100).optional(),
+        }),
+      )
+      .max(80)
+      .default([]),
     current_url: z.string().max(10000),
     current_page_type: z.string().max(50),
     active_filters: z.record(z.string().max(100), z.unknown()).default({}),
@@ -92,6 +105,34 @@ export const browserOperation = z.discriminatedUnion("type", [
     .strict(),
   z
     .object({
+      type: z.literal("history"),
+      direction: z.enum(["back", "forward"]),
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal("control"),
+      control_id: z.string().max(160),
+      value: z.string().max(500).optional(),
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal("scroll"),
+      product_id: z.string().max(150).optional(),
+      direction: z.enum(["top", "bottom", "next", "previous"]).optional(),
+    })
+    .strict(),
+  z
+    .object({
+      type: z.literal("tab"),
+      tab_id: z.string().uuid(),
+      command: z.enum(["focus", "close", "navigate"]),
+      path: z.string().max(9000).optional(),
+    })
+    .strict(),
+  z
+    .object({
       type: z.literal("tabs"),
       paths: z.array(z.string().max(300)).min(1).max(6),
     })
@@ -107,14 +148,33 @@ export type BrowserAction = {
   outcome?: string;
   expectedRevision: number;
   createdAt: string;
+  controllerTabId?: string;
+  targets?: {
+    tabId: string;
+    path: string;
+    status: "pending" | "ready" | "failed";
+    outcome?: string;
+  }[];
 };
 export const actionReceipt = z
   .object({
     id: z.string().uuid(),
     turn_id: z.string().uuid(),
-    status: z.enum(["succeeded", "failed"]),
+    status: z.enum(["succeeded", "failed", "blocked"]),
     outcome: z.string().max(400),
     client_context: uiContext,
+    targets: z
+      .array(
+        z
+          .object({
+            tab_id: z.string().uuid(),
+            status: z.enum(["ready", "failed"]),
+            outcome: z.string().max(200).optional(),
+          })
+          .strict(),
+      )
+      .max(6)
+      .optional(),
   })
   .strict();
 export type NativeMessage = {
@@ -189,4 +249,17 @@ export type ConciergeState = {
     error?: string;
   };
   context?: UIContext;
+  execution?: {
+    turnId: string;
+    frames: NativeMessage[];
+    rounds: number;
+    worker?: string;
+    leaseUntil?: number;
+    results: Record<string, unknown>;
+  };
+  tabs?: Record<
+    string,
+    { context: UIContext; seenAt: number; createdByAction?: string }
+  >;
+  activeTabId?: string;
 };
