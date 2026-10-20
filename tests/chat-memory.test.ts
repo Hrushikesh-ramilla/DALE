@@ -62,7 +62,7 @@ beforeEach(() => {
 afterAll(async () => {
   await closeDatabase();
 });
-it("sends the entire session beyond both old cutoffs with a single generation and no catalog tools", async () => {
+it("sends the entire session beyond both old cutoffs with a single generation when catalog reads are unnecessary", async () => {
   const a = await buyer();
   const id = await seed(a, 180);
   await changeConcierge(a, (s) => {
@@ -83,7 +83,11 @@ it("sends the entire session beyond both old cutoffs with a single generation an
   expect(view.turn?.status).toBe("completed");
   expect(modelTurn).toHaveBeenCalledTimes(1);
   const [input, tools] = vi.mocked(modelTurn).mock.calls[0];
-  expect(tools).toEqual([]);
+  expect(tools.map((t) => t.name)).toEqual([
+    "search_catalog",
+    "get_catalog_products",
+    "get_catalog_info",
+  ]);
   expect(input).toHaveLength(183);
   expect(input[1].content).toContain("Message 0:");
   expect(input.at(-2)?.content).toContain("₹15,000, not $15,000");

@@ -88,12 +88,14 @@ export async function prepareConversation(
   conversationId: string,
   instruction: string,
   signal?: AbortSignal,
+  reserveFraction = 0,
 ) {
   const history = (await conversationMessages(actor, conversationId)).filter(
     (m) => m.text.trim(),
   );
   if (!history.length) throw new Error("Conversation history is empty.");
-  const { budget, limit, source } = await inputBudget();
+  const { budget: available, limit, source } = await inputBudget();
+  const budget = Math.floor(available * (1 - reserveFraction));
   signal?.throwIfAborted();
   const full = [system(instruction), ...history.map(toNative)];
   if ((await promptTokens(full, budget, signal)) <= budget)

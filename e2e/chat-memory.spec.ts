@@ -45,7 +45,9 @@ test("pages the full conversation, keeps loaded history after a reply, restores 
   );
   expect(request.messages).toHaveLength(132); // system + 130 originals + question
   expect(request.messages[1].content).toContain("oud and incense");
-  expect(request.tools).toBeUndefined();
+  expect(
+    request.tools.map((t: { function: { name: string } }) => t.function.name),
+  ).toEqual(["search_catalog", "get_catalog_products", "get_catalog_info"]);
   await page.reload();
   await page.getByRole("button", { name: "Open DALE assistant" }).click();
   await expect(feed.locator("[data-message-id]")).toHaveCount(50);
@@ -71,4 +73,41 @@ test("pages the full conversation, keeps loaded history after a reply, restores 
   );
   expect(newRequest.messages).toHaveLength(2);
   expect(JSON.stringify(newRequest.messages)).not.toContain("oud and incense");
+});
+
+test("passes a catalog observation through the complete browser chat journey", async ({
+  page,
+  context,
+}) => {
+  const seed = JSON.parse(
+    await readFile(resolve(directory, "browser-session.json"), "utf8"),
+  );
+  await context.addCookies([
+    {
+      name: "bg_session",
+      value: seed.token,
+      url: "http://127.0.0.1:3130",
+      httpOnly: true,
+      sameSite: "Lax",
+    },
+  ]);
+  await page.goto("/department/electronics");
+  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  await page
+    .getByLabel("Message DALE")
+    .fill("Browser catalog lookup for oud and incense");
+  await page.getByRole("button", { name: "Send message", exact: true }).click();
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Browser RAG reply: Browser-only Oud and Incense Perfume, price 3750 cents.",
+  );
+  const input = JSON.parse(
+    await readFile(resolve(directory, "last-model-input.json"), "utf8"),
+  );
+  const observation = JSON.parse(input.messages.at(-1).content);
+  expect(observation.data.products[0].id).toBe("browser-rag-fragrance");
+  expect(observation.data.products[0].price_cents).toBe(3750);
+  const state = await (await page.request.get("/api/copilot/state")).json();
+  expect(state.turn.status).toBe("completed");
+  expect(state.actions).toEqual([]);
+  expect(state.basket.cart).toEqual([]);
 });

@@ -1,6 +1,6 @@
 # Gemini conversation memory
 
-DALE keeps the current direct Gemini conversation. This change does not reconnect the catalog, enable shopping tools, change the configured model, or enable billing.
+DALE keeps the Gemini conversation and its durable session history. Catalog knowledge is now available through optional read-only retrieval; see [CATALOG_RAG](CATALOG_RAG.md). This does not enable purchasing actions, change the configured model, or enable billing.
 
 ## Behavior
 
@@ -71,4 +71,4 @@ The final verification passed 25 targeted tests, the production build, and the b
 4. Use **New chat**. Previous chat context should disappear from the active conversation; the basket should remain. A question about the old chat should not retrieve it.
 5. Stop a pending reply. Its late result should not appear. Another tab should not be able to start a simultaneous conflicting turn.
 
-The existing tool-based concierge browser suite tests a different historical behavior. It must not be used to justify reconnecting shopping tools to this direct-chat configuration.
+The existing broad tool-based concierge browser suite tests a different historical behavior. Catalog RAG exposes only the three read-only functions documented separately; it does not reconnect shopping actions.
