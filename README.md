@@ -22,7 +22,15 @@ The current chatbot combines natural Gemini conversation, durable session memory
 
 Manufacturer-linked product identities are separate from DALE's merchant offers. Recorded prices, stock, shipping, and fulfillment include sandbox/simulated data. This repository is not certification of a live commercial marketplace, complete physical-evidence verification, or universal compatibility coverage.
 
-### Verified checkpoint — 21 October 2026
+### Response speed — 21 October 2026
+
+Replies now stream as Gemini generates them. Compact task-time context and composed exact-listing navigation reduce avoidable model round trips; embedding requests can share work, and independent shoppers no longer share a single Gemini generation slot. Native calls still require complete validated frames, and existing ownership, confirmation and replay protections remain.
+
+Qualification covers **155 distinct targeted tests across recorded runs** and **29 distinct browser journeys**, including streaming, Stop, JSON fallback, expired sessions, actual product tabs and cart persistence. See the [speed qualification ledger](docs/AI_RESPONSE_SPEED_STATUS.md) for exact runs, experiments, failures and rollback switches.
+
+**Subsecond responses are not achieved.** Six live provider checks took approximately 14–19 seconds per generation. Lighter thinking and a direct Google SDK comparison did not improve these samples, so the existing model and `low` thinking setting were retained. Native batching was verified on this model and enabled in the private local configuration. The controlled streaming benchmark improves first-text delivery, not the provider's inference time.
+
+### Customer-control checkpoint before latency work — 21 October 2026
 
 The implemented customer-control checkpoint is `3507760`; its acceptance documentation is saved in `636fbe7`. Natural Gemini conversation, catalog retrieval, session memory and the existing visual design are preserved.
 
@@ -35,7 +43,7 @@ The implemented customer-control checkpoint is `3507760`; its acceptance documen
 | Build and static checks                                                                   | Optimized application build, TypeScript and scoped lint passed                                                                                           |
 | Broader repository audit                                                                  | 579 passed, 19 failed, none skipped; see [regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md)                                                  |
 
-**Response/action speed is the next priority.** The latest three live multistep tasks took approximately **41, 47 and 67 seconds**, including model, tool and browser round trips, while other local verification was running. These are small acceptance samples, not latency percentiles or a benchmark of every chat reply. Streaming and latency optimization are not implemented yet. The next work must measure the critical path and improve speed while retaining the verified action, ownership and recovery behavior.
+The pre-optimization live multistep tasks took approximately **41, 47 and 67 seconds**, including model, tool and browser round trips, while other local verification was running. These are historical acceptance samples, not latency percentiles or a matched comparison with the current build. Current changes and measured limits are recorded above and in the speed ledger.
 
 The local checkpoint has been pushed to `codex/conversational-shopping-checkpoint`. The hosted site has not been updated to this checkpoint. Physical microphone quality, a comprehensive device/accessibility/load matrix, external PayPal approval and whole-marketplace production readiness remain separate qualification gates.
 
@@ -44,7 +52,7 @@ Current scope documentation:
 - [Catalog RAG](docs/CATALOG_RAG.md): implemented read-only catalog knowledge and evidence.
 - [Session memory](docs/SESSION_MEMORY.md): persistence, pagination, summaries, and limits.
 - [Implementation plan](IMPLEMENTATION_PLAN.md): approved conversation-based control of the customer website, including multiple browser tabs.
-- [AI response speed plan](AI_RESPONSE_SPEED_IMPLEMENTATION_PLAN.md): proposed measurement, streaming and action-latency improvements; no speed changes implemented at this checkpoint.
+- [AI response speed plan](AI_RESPONSE_SPEED_IMPLEMENTATION_PLAN.md) and [qualification](docs/AI_RESPONSE_SPEED_STATUS.md): delivered optimizations, measured limits, tests and rollback.
 - [Website-control ledger](docs/WEBSITE_CONTROL_STATUS.md) and [coverage inventory](docs/website-control-coverage.json): actual progress and remaining acceptance gates.
 - [Archived catalog implementation plan](CATALOG_IMPLEMENTATION_PLAN_2026-10-11.md): preserved assortment-expansion handover.
 - [Original master plan](MASTER_PLAN.md): product goals and historical decisions.
@@ -170,7 +178,7 @@ npm test
 npm run lint
 ```
 
-The latest broader repository audit recorded **579 passed, 19 failed, and none skipped**. Its repository-wide gate is still failing; targeted agent acceptance does not supersede it. See [current regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md) for the remaining catalog/media/publication failures. The earlier **532 passed, 28 failed, and 11 skipped** result in [the historical checkpoint audit](docs/CHECKPOINT_2026-10-20.md) is the pre-implementation baseline, not the latest result.
+The last whole-repository audit, before the response-speed work, recorded **579 passed, 19 failed, and none skipped**. That repository-wide gate remains unresolved; targeted agent acceptance does not supersede it. See [regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md) for the catalog/media/publication failures. The earlier **532 passed, 28 failed, and 11 skipped** result in [the historical checkpoint audit](docs/CHECKPOINT_2026-10-20.md) is the pre-implementation baseline. Neither old run is presented as a fresh whole-repository audit of the latency changes.
 
 Browser fixtures validate application behavior. Live-provider checks validate the configured model separately; neither alone establishes production readiness. Reproduce and inspect results against the checkout being assessed.
 

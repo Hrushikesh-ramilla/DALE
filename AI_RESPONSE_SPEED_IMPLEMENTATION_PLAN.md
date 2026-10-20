@@ -1,6 +1,6 @@
 # AI response speed — implementation plan
 
-**Date:** 21 October 2026, Asia/Kolkata. **Status:** proposed; planning only. Application behavior is unchanged.
+**Date:** 21 October 2026, Asia/Kolkata. **Status:** implementation authorized and delivered locally; see [qualification and measured limitations](docs/AI_RESPONSE_SPEED_STATUS.md). The targets below are goals, not achieved performance claims.
 
 This plan extends [conversational website control](IMPLEMENTATION_PLAN.md). It does not replace that plan or the original customer-first product goals. Preserve the working Gemini agent, catalog RAG, session memory, website design, customer data and verified actions.
 
@@ -24,7 +24,7 @@ The latest live acceptance used `gemini-3.5-flash-lite` and recorded:
 
 Source: ignored `.data/concierge-verification/live-website-actions.json`. These were measured while other local checks were running. Three samples establish neither percentiles nor a causal breakdown. Tool-call counts are **not** measured generation-request counts; do not divide duration by tool calls and label the result provider latency.
 
-### Confirmed implementation facts and unmeasured suspects
+### Pre-optimization implementation facts and unmeasured suspects (checkpoint `ebe83b4`)
 
 | Location                            | Observed behavior                                                                                                                                                         | Implication to investigate                                                                                                                 |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -207,4 +207,4 @@ Promote one optimization at a time with independent flags such as streaming, con
 
 Start with **L0 → L1 → L2**. Then prioritize L3–L5 by measured contribution; do not perform every optional rewrite. Target a substantial measured reduction from the uncontended baseline, ideally at least 50% median whole-task improvement for the representative action set, while pursuing the absolute goals above. This is an experiment goal, not a promised result. If provider latency dominates after app improvements, report that floor and available policy-compliant options rather than claiming the website is optimized to subsecond completion.
 
-Implementation begins only after this speed plan is approved. This planning checkpoint changes documentation only, leaves the existing local app/provider intact, and incurs no inference billing or infrastructure change.
+Implementation was approved on 21 October 2026. The [qualification ledger](docs/AI_RESPONSE_SPEED_STATUS.md) records delivered changes, conditional decisions, failed attempts and measured provider limitations. Billing remains disabled and no infrastructure change or hosted deployment was made.
