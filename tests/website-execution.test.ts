@@ -141,6 +141,50 @@ it("does not open a partial batch when any requested listing is missing", async 
   expect(result).toMatchObject({ needs_selection: true });
   expect(result).not.toHaveProperty("browser_operation");
 });
+it("opens a unique named listing but returns variants without acting on an ambiguous identity", async () => {
+  const db = await conciergeDatabase();
+  const sample = (await productDetails([id]))[0];
+  const ids = ["speed-audit-perfume-50", "speed-audit-perfume-100"];
+  try {
+    for (const [index, productId] of ids.entries()) {
+      const record = {
+        ...sample,
+        id: productId,
+        name: `Audit Perfumer Edition 200 ${index ? 100 : 50}ml`,
+        brand: "Audit Perfumer",
+        category: "fragrance",
+      };
+      await db.query(
+        "INSERT INTO catalog_products(id,category,price,record,publication,brand,leaf_type) VALUES($1,'fragrance',$2,$3::jsonb,'published','Audit Perfumer','fragrance')",
+        [productId, record.price, JSON.stringify(record)],
+      );
+    }
+    const ambiguous = await websiteTool(
+      "open_catalog_products",
+      { targets: [{ query: "Audit Perfumer Edition 200" }] },
+      actor,
+      ui(),
+    );
+    expect(ambiguous).toMatchObject({
+      needs_selection: true,
+      resolutions: [expect.objectContaining({ total: 2 })],
+    });
+    expect(ambiguous).not.toHaveProperty("browser_operation");
+    const exact = await websiteTool(
+      "open_catalog_products",
+      { targets: [{ query: "Audit Perfumer Edition 200 50ml" }] },
+      actor,
+      ui(),
+    );
+    expect(exact).toMatchObject({
+      browser_operation: { type: "navigate", path: `/product/${ids[0]}` },
+    });
+  } finally {
+    await db.query("DELETE FROM catalog_products WHERE id=ANY($1::text[])", [
+      ids,
+    ]);
+  }
+});
 it("retains the cumulative active budget across browser pauses instead of resetting on resume", async () => {
   const turn = randomUUID();
   vi.mocked(modelTurn).mockResolvedValueOnce(
@@ -165,6 +209,21 @@ it("retains the cumulative active budget across browser pauses instead of resett
   });
   expect(result.turn?.error).toContain("cumulative active execution budget");
   expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
+});
+it("honors explicit Stop after a disconnected request has already marked the turn failed", async () => {
+  const turn = randomUUID();
+  vi.mocked(modelTurn).mockRejectedValueOnce(
+    new Error("connection interrupted"),
+  );
+  await runConcierge(actor, {
+    turn_id: turn,
+    message: "Open shop",
+    client_context: ui(),
+  });
+  expect((await cancelTurn(actor)).turn?.status).toBe("canceled");
+  await expect(
+    runConcierge(actor, { turn_id: turn, resume: true, client_context: ui() }),
+  ).rejects.toThrow("No matching task");
 });
 
 it("does not overwrite newer manual basket edits made while the model is planning", async () => {

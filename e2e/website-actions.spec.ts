@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+import { readAgentStream } from "../src/lib/agent-stream";
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/department/electronics");
@@ -60,6 +61,48 @@ test("Stop removes a streamed draft without archiving it as a completed reply", 
       m.text.startsWith("Genuine first streamed words"),
     ),
   ).toHaveLength(0);
+});
+test("keeps JSON fallback working and reuses an established shopper session", async ({
+  page,
+}) => {
+  let starts = 0;
+  page.on("request", (request) => {
+    if (
+      request.url().endsWith("/api/copilot/state") &&
+      request.method() === "POST" &&
+      request.postDataJSON()?.action === "start"
+    )
+      starts++;
+  });
+  await page.route("**/api/copilot/chat", (route) =>
+    route.continue({
+      headers: { ...route.request().headers(), accept: "application/json" },
+    }),
+  );
+  await say(page, "Browser action: open the perfume");
+  await expect(page).toHaveURL(/\/product\/browser-rag-fragrance$/);
+  await expect(page.getByLabel("Message DALE")).toBeEnabled();
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Browser action completed from observed results.",
+  );
+  expect(starts).toBe(0);
+});
+test("invalidates a cached expired session and creates a fresh guest only on the next request", async ({
+  page,
+}) => {
+  const before = await (await page.request.get("/api/copilot/state")).json();
+  await page.request.delete("/api/session", {
+    headers: { origin: "http://127.0.0.1:3130" },
+  });
+  await say(page, "Browser action: open the perfume");
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Shopping session expired",
+  );
+  await expect(page.getByLabel("Message DALE")).toBeEnabled();
+  await say(page, "Browser action: open the perfume");
+  await expect(page).toHaveURL(/\/product\/browser-rag-fragrance$/);
+  const after = await (await page.request.get("/api/copilot/state")).json();
+  expect(after.owner_id).not.toBe(before.owner_id);
 });
 test("navigates to the exact rendered listing and preserves chat on refresh", async ({
   page,
@@ -350,7 +393,19 @@ test("preserves a manual field edit made after an agent action was planned", asy
   );
   await page.route("**/api/copilot/chat", async (route) => {
     const response = await route.fetch();
-    const view = await response.json();
+    const view = response
+      .headers()
+      ["content-type"]?.includes("text/event-stream")
+      ? await readAgentStream<{
+          actions: Array<{
+            operation: { type: string };
+            controlValue?: string;
+          }>;
+        }>(
+          new Response(new Uint8Array(await response.body())),
+          route.request().postDataJSON().turn_id,
+        )
+      : await response.json();
     if (
       view.actions?.some(
         (a: { operation: { type: string }; controlValue?: string }) =>

@@ -517,7 +517,12 @@ export async function acknowledgeBrowser(actor: Actor, raw: unknown) {
 }
 export async function cancelTurn(actor: Actor) {
   await changeConcierge(actor, (s) => {
-    if (s.turn && ["running", "awaiting_ui"].includes(s.turn.status)) {
+    // A stream disconnect can mark the recoverable turn failed just before the
+    // explicit Stop arrives. That Stop must still fence future continuation.
+    if (
+      s.turn &&
+      ["running", "awaiting_ui", "failed"].includes(s.turn.status)
+    ) {
       s.turn.status = "canceled";
       for (const a of s.actions)
         if (a.status === "pending") a.status = "failed";

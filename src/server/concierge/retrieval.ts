@@ -270,14 +270,16 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       );
   const useVectors = Boolean(c.query.trim() && c.match_mode === "semantic");
   const fetchRows = (sql: Sql) =>
-    sql.query<{
-      record: Product;
-      vector: number[] | null;
-      content_hash: string | null;
-      model: string | null;
-    }>(
-      `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? "e.vector,e.content_hash,e.model" : "NULL AS vector,NULL AS content_hash,NULL AS model"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
-      bindings,
+    timed("retrieval.sql", () =>
+      sql.query<{
+        record: Product;
+        vector: number[] | null;
+        content_hash: string | null;
+        model: string | null;
+      }>(
+        `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? "e.vector,e.content_hash,e.model" : "NULL AS vector,NULL AS content_hash,NULL AS model"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
+        bindings,
+      ),
     );
   const { rows, matchIdentity } =
     c.query.trim() && c.match_mode === "identity"
@@ -287,9 +289,11 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
           await sql.query(
             "SET TRANSACTION ISOLATION LEVEL REPEATABLE READ, READ ONLY",
           );
-          const vocabulary = await sql.query<{ brand: string }>(
-            `SELECT DISTINCT coalesce(p.record->>'brand','') AS brand FROM catalog_products p WHERE ${clauses.join(" AND ")}`,
-            bindings,
+          const vocabulary = await timed("retrieval.vocabulary", () =>
+            sql.query<{ brand: string }>(
+              `SELECT DISTINCT coalesce(p.record->>'brand','') AS brand FROM catalog_products p WHERE ${clauses.join(" AND ")}`,
+              bindings,
+            ),
           );
           const matchIdentity = identityMatcher(
             c.query,
@@ -328,6 +332,7 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       .normalize("NFKC")
       .match(/[\p{L}\p{N}]+/gu) || [];
   if (matchIdentity) mode = "identity";
+  const scoreStarted = performance.now();
   let ranked = rows.rows
     .filter(({ record }) => {
       const positive = c.attributes.movement_class,
@@ -403,6 +408,11 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
             : c.sort === "brand_asc"
               ? (a.product.brand || "").localeCompare(b.product.brand || "")
               : b.score - a.score) || a.product.id.localeCompare(b.product.id),
+  );
+  timing(
+    "retrieval.rank",
+    { candidates: rows.rows.length, matches: ranked.length },
+    performance.now() - scoreStarted,
   );
   return {
     products: ranked.slice(c.offset, c.offset + c.limit).map((r) => r.product),
