@@ -7,9 +7,10 @@ This checkpoint preserves the current application before implementing conversati
 - Catalog-RAG acceptance previously passed 46 targeted contracts and two packaged-production browser journeys, with separate live Gemini and real semantic-index checks. See [CATALOG_RAG](CATALOG_RAG.md).
 - Session memory preserves available conversation history and passes persistence, pagination, cancellation, ownership, and New chat checks. See [SESSION_MEMORY](SESSION_MEMORY.md).
 - A fresh pre-push TypeScript check passed.
-- The complete repository test suite was started for this checkpoint. It has exposed existing failures in catalog publishing, source/identity expectations, category navigation, assortment-depth, and media-integrity/replacement checks. These failures are not fixed or declared obsolete by this documentation update. The local log is `.data/concierge-verification/pre-push-full-tests.log`.
+- The complete repository test run finished: **532 passed, 28 failed, 11 skipped out of 571 tests; 66 files passed and 16 failed out of 82**. Duration was approximately 13.2 minutes on this Windows checkout. The eleven skipped tests were in evidence/provenance suites whose setup hooks timed out. These are not waived checks.
+- Failures cover catalog publication/source/identity expectations, removed category/depth assumptions, media-integrity/replacement checks, and older concierge tests expecting the broad action behavior that the current read-only RAG path does not expose. Two suite setup hooks timed out, as did one catalog-publication test. Triage must distinguish actual regressions, data/provenance problems, resource/timeouts, and intentionally changed requirements. This documentation does not fix them, declare them obsolete, or re-enable the old agent policy. The local log is `.data/concierge-verification/pre-push-full-tests.log`.
 
-Read the final test result before claiming whole-repository acceptance. Tests must be reconciled with actual approved requirements and catalog evidence; changing expected counts alone is not a repair. The prior README's whole-project “100% complete” and conflicting release claims have been removed.
+The repository-wide gate is failing. Tests must be reconciled with actual approved requirements and catalog evidence; changing expected counts alone is not a repair. The prior README's whole-project “100% complete” and conflicting release claims have been removed.
 
 ## Preserved changes and limits
 

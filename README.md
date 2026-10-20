@@ -26,7 +26,8 @@ Current scope documentation:
 
 - [Catalog RAG](docs/CATALOG_RAG.md): implemented read-only catalog knowledge and evidence.
 - [Session memory](docs/SESSION_MEMORY.md): persistence, pagination, summaries, and limits.
-- [Implementation plan](IMPLEMENTATION_PLAN.md): execution handover; audit the current checkout before implementing.
+- [Implementation plan](IMPLEMENTATION_PLAN.md): planned conversation-based control of the customer website, including multiple product tabs; implementation has not started.
+- [Archived catalog implementation plan](CATALOG_IMPLEMENTATION_PLAN_2026-10-11.md): preserved assortment-expansion handover.
 - [Original master plan](MASTER_PLAN.md): product goals and historical decisions.
 - [Original-plan implementation audit](docs/ORIGINAL_PLAN_IMPLEMENTATION_AUDIT_2026-10-15.md): feature boundaries and remaining qualification.
 
@@ -147,7 +148,9 @@ npm test
 npm run lint
 ```
 
-Browser fixtures validate application behavior. Live-provider checks validate the configured model separately; neither alone establishes production readiness. Reproduce and inspect results against the checkout being assessed. The checkpoint audit in [docs/CHECKPOINT_2026-10-20.md](docs/CHECKPOINT_2026-10-20.md) records the broader validation result and any known failures.
+The broader pre-push run finished with **532 passed, 28 failed, and 11 skipped tests**. Its repository-wide gate is failing; the passing chat-RAG subset does not supersede it. See [the checkpoint audit](docs/CHECKPOINT_2026-10-20.md) for catalog/media, historical-agent, and setup-timeout details.
+
+Browser fixtures validate application behavior. Live-provider checks validate the configured model separately; neither alone establishes production readiness. Reproduce and inspect results against the checkout being assessed.
 
 Explicit bounded live checks are available when the configured free provider is usable:
 
