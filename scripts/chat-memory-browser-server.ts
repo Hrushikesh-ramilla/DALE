@@ -731,7 +731,11 @@ const provider = createServer(async (req, res) => {
           ? {
               tool_calls: response.tool_calls.map((call, index) => ({
                 ...call,
-                index,
+                // Exercise the ID-addressed shape seen on real Gemini as
+                // well as indexed OpenAI deltas in other browser journeys.
+                ...(command === "Browser action: open the perfume"
+                  ? {}
+                  : { index }),
               })),
             }
           : {}),

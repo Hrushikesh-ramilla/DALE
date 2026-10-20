@@ -31,10 +31,10 @@ try {
   await readFile(".data/concierge-verification/latency/native-comparison.json");
   nativeAttempts = 1;
 } catch {}
-const cap = Math.min(
-  6,
-  12 - probeAttempts - priorBrowserAttempts - nativeAttempts,
-);
+const tabsOnly = process.argv.includes("--tabs-only");
+const cap = tabsOnly
+  ? 4
+  : Math.min(6, 12 - probeAttempts - priorBrowserAttempts - nativeAttempts);
 if (cap < 2)
   throw new Error("Insufficient verification attempt budget. No request sent.");
 const browser = await chromium.launch({ headless: true });
@@ -144,6 +144,9 @@ try {
       window.__daleLatency.textAt = null;
     });
     const started = performance.now();
+    const requestOffset = await page.evaluate(
+      () => window.__daleLatency.requests.length,
+    );
     let effectMs = null;
     await page.getByLabel("Message DALE").fill(prompt);
     await page
@@ -182,7 +185,7 @@ try {
       error: state.turn?.error,
       passed: state.turn?.status === "completed" && effectMs !== null,
       attempts_so_far: ledger.attempts,
-      requests: ledger.requests,
+      requests: ledger.requests.slice(requestOffset),
     });
     if (!results.at(-1).passed)
       throw new Error(
@@ -191,26 +194,28 @@ try {
       );
     await page.getByLabel("Message DALE").waitFor({ state: "visible" });
   }
-  await task(
-    "add-two-and-show-real-cart",
-    "Add two of this product to my cart and show me the cart. Do not check out or pay.",
-    async () =>
-      page.url().endsWith("/cart") &&
-      (await page.locator(`[data-product-id="${products[0].id}"]`).count()) >
-        0 &&
-      (
-        await (await context.request.get(`${base}/api/copilot/state`)).json()
-      ).basket.cart.some(
-        (item) => item.productId === products[0].id && item.quantity === 2,
-      ),
-  );
+  if (!tabsOnly)
+    await task(
+      "add-two-and-show-real-cart",
+      "Add two of this product to my cart and show me the cart. Do not check out or pay.",
+      async () =>
+        page.url().endsWith("/cart") &&
+        (await page.locator(`[data-product-id="${products[0].id}"]`).count()) >
+          0 &&
+        (
+          await (await context.request.get(`${base}/api/copilot/state`)).json()
+        ).basket.cart.some(
+          (item) => item.productId === products[0].id && item.quantity === 2,
+        ),
+    );
+  const origin = page.url();
   await task(
     "open-two-real-browser-tabs",
-    `Open ${products[0].name} and ${products[1].name} in separate new browser tabs. Keep this cart page open.`,
+    `Open ${products[0].name} and ${products[1].name} in separate new browser tabs. Keep this original page open.`,
     async () => {
       const children = context.pages().filter((p) => p !== page);
       return (
-        page.url().endsWith("/cart") &&
+        page.url() === origin &&
         (await Promise.all(
           products.map(async (product) => {
             for (const child of children)
@@ -232,13 +237,14 @@ try {
 } finally {
   await mkdir(".data/concierge-verification/latency", { recursive: true });
   await writeFile(
-    ".data/concierge-verification/latency/browser-live.json",
+    `.data/concierge-verification/latency/${tabsOnly ? "browser-tabs-followup" : "browser-live"}.json`,
     JSON.stringify(
       {
         scope:
-          "Two live customer tasks, not a percentile benchmark or matched old-build comparison",
+          "Bounded live customer tasks, not a percentile benchmark or matched old-build comparison",
         provider: "gemini",
         cap,
+        followup: tabsOnly,
         cumulative_browser_attempts:
           priorBrowserAttempts + (results.at(-1)?.attempts_so_far || 0),
         results,
