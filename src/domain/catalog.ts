@@ -6,6 +6,7 @@ import {
 } from "./departments";
 import { retailCatalog } from "./retail-catalog";
 import { brandedCatalog } from "./branded-catalog";
+import { withReviewedProductFacts } from "./reviewed-product-facts";
 export type { Category } from "./departments";
 export type Product = {
   id: string;
@@ -218,7 +219,7 @@ export const catalog: Product[] = sampleCatalog;
 export const publicCatalog: Product[] = [
   ...brandedCatalog.filter((product) => !product.comparisonOnly),
   ...realProducts,
-];
+].map(withReviewedProductFacts);
 export function productFits(product: Product, model: string) {
   return isRetailCategory(product.category) ||
     product.provenance === "manufacturer_evidence"

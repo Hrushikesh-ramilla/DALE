@@ -83,8 +83,11 @@ const catalogSearchArguments = searchConstraints.safeExtend({
   categories: searchConstraints.shape.categories
     .removeDefault()
     .describe(
-      "Required hard product-type filter using catalog category IDs. Never mix product types to satisfy a descriptive preference. Discover categories if unsure. Empty means the customer allows any product type, not that the field was forgotten.",
+      "Required hard product-type filter using catalog category IDs. Descriptive/semantic search MUST include at least one category, even for any-brand recommendations. Discover categories if unsure. Several categories are allowed for a cross-category request. Empty is allowed only for structured browsing or exact identity search.",
     ),
+  attributes: searchConstraints.shape.attributes.describe(
+    "Hard feature requirements, including numeric bounds, using recorded attribute keys discovered with get_catalog_facets. A semantic query does not enforce a number, unit, minimum or maximum. Unknown attributes cannot establish a match; do not drop a requested requirement to fill the results.",
+  ),
   replace_identity_scope: z
     .boolean()
     .default(false)
@@ -92,6 +95,17 @@ const catalogSearchArguments = searchConstraints.safeExtend({
       "Set true only for alternatives or an independent search explicitly requested by the customer in this same turn. Otherwise an unavailable named product remains the primary result; exploratory searches cannot replace it.",
     ),
 });
+const scopedCatalogSearchArguments = catalogSearchArguments.superRefine(
+  (input, ctx) => {
+    if (input.match_mode === "semantic" && input.categories.length === 0)
+      ctx.addIssue({
+        code: "custom",
+        path: ["categories"],
+        message:
+          "Descriptive product search requires a non-empty product-category filter. Discover category IDs with get_categories_and_brands, then retry within the requested product type. Semantic word overlap is not a product-type or specification match.",
+      });
+  },
+);
 const collectionArguments = basketInput.extend({
   action: basketInput.shape.action.exclude(["move"]),
 });
@@ -397,11 +411,11 @@ export const tools: ToolDefinition[] = [
     name: "search_catalog",
     description:
       "Search live products with exact constraints in integer USD cents. match_mode=identity finds named products without substitutions; match_mode=semantic ranks descriptive preferences and does not establish exact identity. Empty query applies structured filters. Save ordered results for followups. Do not widen a failed named lookup unless alternatives or an independent search were explicitly requested.",
-    input: catalogSearchArguments,
+    input: scopedCatalogSearchArguments,
     effect: "read",
     async execute(raw, { actor, signal }) {
       const { replace_identity_scope, ...input } =
-        catalogSearchArguments.parse(raw);
+        scopedCatalogSearchArguments.parse(raw);
       return recordedSearch(actor, input, signal, {
         origin: "search",
         replacesIdentityScope: replace_identity_scope,
@@ -857,6 +871,7 @@ export const toolOutputs: Record<string, z.ZodType> = {
     constraints: searchConstraints,
     mode: z.enum(["structured", "lexical", "hybrid", "identity"]),
     match_scope: z.string(),
+    requirement_scope: z.string(),
     identity_matches: z.array(
       z.object({ product_id: z.string(), kind: z.string() }),
     ),

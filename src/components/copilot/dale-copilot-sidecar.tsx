@@ -156,7 +156,7 @@ export function DaleCopilotSidecar() {
             )}
             {c.state?.catalog_match_status === "semantic_candidates" && (
               <p className="dale-action-card">
-                Suggested candidates for your preferences.
+                Search candidates — requested features need recorded evidence.
               </p>
             )}
             {c.state?.products.length ? (
