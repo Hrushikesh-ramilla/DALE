@@ -60,6 +60,7 @@ export async function executeWebsiteTurn(
                 await changeConcierge(actor, (state) => {
                   if (!state.resultSets.some((r) => r.id === pending.id))
                     state.resultSets.push({
+                      internal: true,
                       id: pending.id,
                       turnId,
                       origin: "search",

@@ -416,6 +416,17 @@ it("retains unfinished native calls for provider recovery without repeating effe
   expect(view.turn?.error).toBeUndefined();
 });
 
+it("keeps catalog read candidates internal and shows only the observed selected product", async () => {
+  const turn = randomUUID();
+  vi.mocked(modelTurn).mockResolvedValueOnce(call("search_catalog",{query:"",limit:4})).mockResolvedValueOnce(call("use_website",{type:"navigate",path:`/product/${id}`})).mockResolvedValueOnce(reply);
+  let view = await runConcierge(actor,{turn_id:turn,message:"Find it and open the selected listing",client_context:ui()});
+  expect((await readConcierge(actor)).resultSets[0].internal).toBe(true);
+  expect(view.products).toEqual([]);
+  const context = {...ui(),current_url:`/product/${id}`,currently_viewed_product_id:id};
+  view = await acknowledgeBrowser(actor,{id:view.actions[0].id,turn_id:turn,status:"succeeded",outcome:"Selected product rendered",client_context:context});
+  expect(view.products.map(p=>p.id)).toEqual([id]);
+});
+
 it("batches a collection change and page opening in one native call", async () => {
   const turn = randomUUID();
   vi.mocked(modelTurn)

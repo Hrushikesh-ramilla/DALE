@@ -118,5 +118,6 @@ test("passes a catalog observation through the complete browser chat journey", a
   const state = await (await page.request.get("/api/copilot/state")).json();
   expect(state.turn.status).toBe("completed");
   expect(state.actions).toEqual([]);
+  expect(state.products).toEqual([]); // Internal retrieval is not a selected recommendation.
   expect(state.basket.cart).toEqual([]);
 });

@@ -51,6 +51,10 @@ test("opens two actual independent browser tabs and retains the source page", as
   );
   const state = await (await page.request.get("/api/copilot/state")).json();
   expect(state.turn.status).toBe("completed");
+  expect(state.products.map((p: { id: string }) => p.id)).toEqual([
+    "browser-rag-fragrance",
+    "browser-rag-fragrance-two",
+  ]);
   expect(
     state.receipts.at(-1).targets.map((t: { status: string }) => t.status),
   ).toEqual(["ready", "ready"]);

@@ -7,7 +7,7 @@
       "operation": "use_website.navigate / registered links",
       "service": "site-routes + Next router",
       "postcondition": "route and rendered page/entity",
-      "status": "implemented-awaiting-browser-qualification",
+      "status": "verified-local-contracts-and-browser-journeys",
       "test": "website-actions.spec.ts"
     },
     {
@@ -15,7 +15,7 @@
       "operation": "use_website.tabs / tab",
       "service": "tab registration + browser coordinator",
       "postcondition": "each intended tab reports its destination; close observed by opener",
-      "status": "implemented-awaiting-browser-qualification",
+      "status": "verified-local-contracts-and-browser-journeys",
       "test": "website-actions.spec.ts"
     },
     {
@@ -23,7 +23,7 @@
       "operation": "set_search_filters / observed controls",
       "service": "retrieval + concierge search page",
       "postcondition": "canonical constraints and ordered rendered results",
-      "status": "implemented-awaiting-browser-qualification",
+      "status": "verified-local-contracts-and-browser-journeys",
       "test": "website-actions.spec.ts"
     },
     {
@@ -31,14 +31,14 @@
       "operation": "use_website.control",
       "service": "existing category component handlers",
       "postcondition": "actual component values and category readiness",
-      "status": "implemented-awaiting-browser-qualification"
+      "status": "implemented; category-specific browser coverage partial"
     },
     {
       "surface": "product exact variant",
       "operation": "catalog lookup + use_website.navigate",
       "service": "published SKU IDs",
       "postcondition": "exact SKU page rendered",
-      "status": "implemented-awaiting-browser-qualification"
+      "status": "verified-exact-published-SKU-navigation; ambiguity remains model-mediated"
     },
     {
       "surface": "product gallery / variant picker / page quantity selector",
@@ -51,7 +51,7 @@
       "operation": "manage_collection / move_collection / undo_collection_change",
       "service": "shopping.manageBasket",
       "postcondition": "owner database basket and UI agree; replay applies once",
-      "status": "implemented-awaiting-browser-qualification",
+      "status": "verified-local-contracts-and-browser-journeys",
       "test": "website-execution.test.ts / website-actions.spec.ts"
     },
     {
@@ -59,21 +59,21 @@
       "operation": "use_website.navigate /compare?ids=...",
       "service": "published product details + comparison page",
       "postcondition": "exact intended published IDs rendered",
-      "status": "implemented-awaiting-browser-qualification"
+      "status": "verified-local-contracts-and-browser-journeys"
     },
     {
       "surface": "group terms / join / leave",
       "operation": "get_group_deals / prepare_customer_action",
       "service": "existing group policy and customer confirmation",
       "postcondition": "owned confirmation followed by independent customer approval and real membership",
-      "status": "implementation-connected-qualification-pending"
+      "status": "customer-service-integration-verified; broader browser/provider qualification pending"
     },
     {
       "surface": "cart checkout",
       "operation": "prepare_customer_action.checkout",
       "service": "shopping.prepareCheckout",
       "postcondition": "exact cart quotes and existing individual PayPal approvals",
-      "status": "implementation-connected-qualification-pending",
+      "status": "customer-service-integration-verified; broader browser/provider qualification pending",
       "interaction": "customer financial approval remains manual"
     },
     {
@@ -81,27 +81,27 @@
       "operation": "existing product button",
       "service": "store-context.choose",
       "postcondition": "single-product quote dialog",
-      "status": "agent-control-pending"
+      "status": "registered-component-control; browser qualification pending"
     },
     {
       "surface": "own orders / return / cancellation / remedy / appeal",
       "operation": "get_user_orders / prepare_customer_action",
       "service": "existing owner-scoped customer workflows",
       "postcondition": "owned resource and existing confirmation receipt",
-      "status": "implementation-connected-qualification-pending"
+      "status": "customer-service-integration-verified; broader browser/provider qualification pending"
     },
     {
       "surface": "account authentication",
       "operation": "navigate account / observed sign-in entry",
       "service": "existing authentication",
       "postcondition": "actual account context",
-      "status": "non-secret-form-controls-pending",
+      "status": "account-entry-and-non-secret-field-control-verified; authentication user-mediated",
       "interaction": "passwords and authentication remain user-mediated"
     },
     {
       "surface": "support form fields / evidence upload / tracking",
       "operation": "customer component controls",
-      "status": "control-inventory-pending",
+      "status": "generic non-secret field adapter connected; evidence submission and file handling not fully agent-connected",
       "interaction": "file selection remains user-mediated; no arbitrary local file access"
     },
     {
@@ -109,7 +109,7 @@
       "operation": "use_website.control / scroll / history",
       "service": "existing components + browser history",
       "postcondition": "actual visible component or page state",
-      "status": "partially-connected-qualification-pending"
+      "status": "menu/input-and-history-verified; remaining convenience controls need qualification"
     },
     {
       "surface": "voice / keyboard / mobile",

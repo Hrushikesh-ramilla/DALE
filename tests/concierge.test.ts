@@ -247,14 +247,18 @@ it("lets the native model discover and enforce recorded camera attributes withou
     client_context: context,
   });
   expect(view.turn?.status).toBe("completed");
-  expect(view.products.length).toBeGreaterThan(0);
+  expect(view.products).toEqual([]);
+  const state = await readConcierge(buyer);
+  const retrieved = JSON.parse(
+    state.execution!.frames.filter((m) => m.role === "tool")[2].content!,
+  ).data.products;
+  expect(retrieved.length).toBeGreaterThan(0);
   expect(
-    view.products.every(
-      (p) =>
-        p.category === "phones" && Number(p.attributes?.digitalZoomMaxX) >= 100,
+    retrieved.every(
+      (p: { category: string; attributes: Record<string, number> }) =>
+        p.category === "phones" && p.attributes.digitalZoomMaxX >= 100,
     ),
   ).toBe(true);
-  const state = await readConcierge(buyer);
   expect(state.resultSets).toHaveLength(1);
   expect(state.execution!.frames.filter((m) => m.role === "tool")).toHaveLength(
     4,
@@ -591,7 +595,7 @@ it("returns named identities only and does not send identity requests to embeddi
   }
 });
 
-it("does not display prior search cards under a new request", async () => {
+it("does not present internal catalog reads as selected cards or replay them under a new request", async () => {
   const fresh = (await customerSession({ action: "guest" })).actor;
   vi.mocked(modelTurn)
     .mockReset()
@@ -610,7 +614,7 @@ it("does not display prior search cards under a new request", async () => {
     message: "Look up a named product",
     client_context: context,
   });
-  expect(previous.products.length).toBeGreaterThan(0);
+  expect(previous.products).toEqual([]); // A lookup is not a selected recommendation.
   vi.mocked(modelTurn).mockResolvedValueOnce({
     role: "assistant",
     content: "A separate general conversation",
@@ -693,7 +697,10 @@ it("supplies multiple recorded choices and preserves Gemini's clarification with
     client_context: context,
   });
   expect(view.turn?.status).toBe("completed");
-  expect(view.products.length).toBeGreaterThan(1);
+  expect(
+    (await readConcierge(fresh)).resultSets.at(-1)!.productIds.length,
+  ).toBeGreaterThan(1);
+  expect(view.products).toEqual([]);
   expect(view.messages.at(-1)?.text).toBe(answer);
   expect(view.basket.wishlist).toEqual([]);
   expect(modelTurn).toHaveBeenCalledTimes(2);

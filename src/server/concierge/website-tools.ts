@@ -56,7 +56,7 @@ const definitions = [
   {
     name: "get_website_context",
     description:
-      "Read the actual current page, visible products, controls, live DALE browser tabs, ordered recommendations, basket revision, and available destinations. Tab IDs identify browser tabs, not product types.",
+      "Read the actual current page, visible products, controls, live DALE browser tabs, saved catalog reads, basket revision, and available destinations. Tab IDs identify browser tabs, not product types.",
     schema: empty,
   },
   {
@@ -124,7 +124,7 @@ export async function websiteTool(
       tabs: Object.entries(s.tabs || {})
         .filter(([, t]) => Date.now() - t.seenAt < 45000)
         .map(([id, t]) => ({ id, ...t })),
-      recommendations: s.resultSets,
+      catalog_reads: s.resultSets,
       basket: await basket(actor),
       destinations: siteDestinations,
       departments: departments.map((d) => ({

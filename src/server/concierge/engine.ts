@@ -56,6 +56,35 @@ export async function conciergeView(actor: Actor) {
       .slice(currentSets.indexOf(named) + 1)
       .some((set) => set.replacesIdentityScope);
   const displayed = unavailableNamed ? named : currentSets.at(-1);
+  // A retrieval candidate is context for Gemini, not a selected recommendation.
+  // Cards follow observed product actions; internal reads remain in the journal.
+  const selectedIds = [
+    ...new Set(
+      s.actions
+        .filter((a) => a.turnId === s.turn?.id && a.status === "succeeded")
+        .flatMap((a) => {
+          const paths =
+            a.operation.type === "navigate"
+              ? [a.operation.path]
+              : a.operation.type === "tabs"
+                ? a.operation.paths
+                : a.operation.type === "tab" && a.operation.path
+                  ? [a.operation.path]
+                  : [];
+          return paths
+            .filter((path) =>
+              new URL(path, "https://dale.invalid").pathname.startsWith(
+                "/product/",
+              ),
+            )
+            .map((path) =>
+              decodeURIComponent(
+                new URL(path, "https://dale.invalid").pathname.slice(9),
+              ),
+            );
+        }),
+    ),
+  ];
   return {
     owner_id: ownerKey(actor),
     inference: {
@@ -70,7 +99,13 @@ export async function conciergeView(actor: Actor) {
       (a) => a.status === "pending" && a.turnId === s.turn?.id,
     ),
     receipts: s.actions.filter((a) => a.status !== "pending").slice(-8),
-    products: await productDetails(displayed?.productIds || []),
+    products: await productDetails(
+      selectedIds.length
+        ? selectedIds
+        : displayed?.internal
+          ? []
+          : displayed?.productIds || [],
+    ),
     confirmations: s.confirmations.map(({ payload, ...c }) => ({
       ...c,
       terms: payload,

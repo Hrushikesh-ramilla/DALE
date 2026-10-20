@@ -226,6 +226,7 @@ export type ConciergeState = {
   actions: BrowserAction[];
   confirmations: Confirmation[];
   resultSets: {
+    internal?: boolean;
     id: string;
     turnId?: string;
     origin?: "lookup" | "search";
