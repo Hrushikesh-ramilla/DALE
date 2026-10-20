@@ -130,8 +130,9 @@ export async function waitForPage(path: string, signal: AbortSignal) {
         ).some((el) => el.dataset.productId === id)
       : true;
     const needsReady =
-      ["/search", "/compare", "/cart", "/wishlist"].includes(url.pathname) ||
-      url.pathname.startsWith("/category/");
+      ["/", "/shop", "/search", "/compare", "/cart", "/wishlist"].includes(
+        url.pathname,
+      ) || url.pathname.startsWith("/category/");
     const ready = needsReady
       ? page?.dataset.conciergePage === url.pathname &&
         page.dataset.ready === "true"

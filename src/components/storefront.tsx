@@ -837,7 +837,16 @@ export default function Storefront({ children }: { children?: ReactNode }) {
             )}
           </div>
         </header>
-        <main id="main" className="main-content" inert={!!modal} tabIndex={-1}>
+        <main
+          id="main"
+          className="main-content"
+          inert={!!modal}
+          tabIndex={-1}
+          data-concierge-page={
+            ["/", "/shop"].includes(pathname) ? pathname : undefined
+          }
+          data-ready={!restoring ? "true" : "false"}
+        >
           {session?.demo && <DemoToolbar session={session} />}
           <div className="mode-strip">
             <span className="status-dot" /> Test storefront ·{" "}

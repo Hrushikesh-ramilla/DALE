@@ -160,6 +160,9 @@ const provider = createServer(async (req, res) => {
       ? "Browser action: open my orders"
       : utterance;
   const flows: Record<string, { name: string; args: unknown }[]> = {
+    "Browser action: go home": [
+      { name: "use_website", args: { type: "navigate", path: "/" } },
+    ],
     "Browser action: open my orders": [
       { name: "use_website", args: { type: "navigate", path: "/orders" } },
     ],

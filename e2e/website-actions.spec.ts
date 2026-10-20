@@ -376,8 +376,12 @@ test("selects real comparison checkboxes and activates the existing comparison b
 test("expands real page details and scrolls the page to its footer", async ({
   page,
 }) => {
-  await page.goto("/");
-  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  await say(page, "Browser action: go home");
+  await expect(page).toHaveURL("http://127.0.0.1:3130/");
+  await expect(page.locator('main[data-concierge-page="/"]')).toHaveAttribute(
+    "data-ready",
+    "true",
+  );
   await say(page, "Browser action: expand details and scroll to the bottom");
   await expect(page.locator(".dale-messages-feed")).toContainText(
     "Browser details and scroll completed from observed results.",
