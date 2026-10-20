@@ -6,7 +6,12 @@ const directory =
 process.env.CHAT_MEMORY_BROWSER_DIR = directory;
 export default defineConfig({
   testDir: "./e2e",
-  testMatch: ["chat-memory.spec.ts", "website-actions.spec.ts"],
+  testMatch: [
+    "chat-memory.spec.ts",
+    "website-actions.spec.ts",
+    "website-evidence.spec.ts",
+    "website-customer-flows.spec.ts",
+  ],
   workers: 1,
   timeout: 90000,
   expect: { timeout: 15000 },
@@ -29,6 +34,7 @@ export default defineConfig({
       DATABASE_URL: "",
       ALLOW_EMBEDDED_DATABASE: "true",
       ALLOW_LOCAL_STORAGE: "true",
+      STORAGE_MODE: "local",
       LOCAL_DATA_DIR: directory,
       SESSION_SECRET: "chat-memory-browser-contract-secret-32-characters",
       PAYMENT_MODE: "fixture",

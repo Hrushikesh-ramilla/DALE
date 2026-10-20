@@ -174,7 +174,8 @@ export async function runConcierge(
     if (
       state.turn &&
       ["running", "awaiting_ui"].includes(state.turn.status) &&
-      state.turn.leaseUntil > Date.now()
+      state.turn.leaseUntil > Date.now() &&
+      !(state.turn.status === "awaiting_ui" && !state.execution?.worker)
     )
       throw new Error(
         "Another turn is active. Cancel it before starting a new one.",
@@ -203,7 +204,10 @@ export async function runConcierge(
           });
     }
     for (const action of state.actions)
-      if (action.status === "pending") action.status = "failed";
+      if (action.status === "pending") {
+        action.status = "failed";
+        action.outcome = "Superseded by a newer customer message.";
+      }
     state.turn = {
       id: input.turn_id,
       status: "running",
@@ -218,6 +222,7 @@ export async function runConcierge(
       results: {},
       worker,
       leaseUntil: Date.now() + 180000,
+      observedBasketRevision: state.basketRevision ?? state.revision,
     };
     // Keep the actual utterance in its native user role. Page/cart state is read
     // through owner-bound functions, rather than wrapping the utterance in a

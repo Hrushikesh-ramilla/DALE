@@ -44,8 +44,53 @@ export async function executeWebsiteTurn(
         );
       let result: unknown;
       try {
-        const raw: unknown = JSON.parse(pending.function.arguments);
+        let raw: unknown = JSON.parse(pending.function.arguments);
         const name = pending.function.name;
+        const readOnly =
+          catalogTools.some((t) => t.name === name) ||
+          [
+            "get_website_context",
+            "get_user_account_context",
+            "get_device_compatibility",
+            "get_user_orders",
+            "get_group_deals",
+            "get_site_knowledge",
+            "get_catalog_facets",
+          ].includes(name) ||
+          (name === "manage_collection" &&
+            typeof raw === "object" &&
+            raw !== null &&
+            "action" in raw &&
+            raw.action === "get" && !("show_collection" in raw && raw.show_collection === true));
+        const priorFailure = messages.slice(lastCall + 1).some((m) => {
+          if (m.role !== "tool" || !m.content) return false;
+          try {
+            return JSON.parse(m.content).ok === false;
+          } catch {
+            return false;
+          }
+        });
+        if (priorFailure && !readOnly)
+          throw new Error(
+            "An earlier operation in this batch failed. Inspect the observations and plan the remaining actions again.",
+          );
+        if (
+          ["manage_collection", "move_collection"].includes(name) &&
+          typeof raw === "object" &&
+          raw !== null &&
+          !Array.isArray(raw)
+        ) {
+          const args = raw as Record<string, unknown>;
+          if (
+            args.action !== "get" &&
+            args.expected_revision === undefined &&
+            execution.observedBasketRevision !== undefined
+          )
+            raw = {
+              ...args,
+              expected_revision: execution.observedBasketRevision,
+            };
+        }
         result = await withOperation(
           actor,
           `${turnId}:${pending.id}`,
@@ -99,6 +144,26 @@ export async function executeWebsiteTurn(
           : undefined;
       await changeConcierge(actor, (state) => {
         state.turn!.calls++;
+        const data =
+          typeof result === "object" && result !== null && "data" in result
+            ? result.data
+            : null;
+        if (typeof data === "object" && data !== null) {
+          const observed = "basket" in data ? data.basket : data;
+          if (
+            typeof observed === "object" &&
+            observed !== null &&
+            "revision" in observed &&
+            typeof observed.revision === "number" &&
+            [
+              "manage_collection",
+              "move_collection",
+              "get_user_account_context",
+              "get_website_context",
+            ].includes(pending.function.name)
+          )
+            state.execution!.observedBasketRevision = observed.revision;
+        }
         if (operation) {
           const id = randomUUID();
           state.actions.push({
@@ -110,6 +175,13 @@ export async function executeWebsiteTurn(
             expectedRevision: state.context?.revision || 0,
             createdAt: new Date().toISOString(),
             controllerTabId: state.context?.tab_id,
+            sourceURL: state.context?.current_url,
+            ...(operation.type === "control" ? { controlValue: state.context?.controls.find(c => c.id === operation.control_id)?.value } : {}),
+            ...(operation.type === "control" &&
+            state.context?.controls.find((c) => c.id === operation.control_id)
+              ?.kind === "file"
+              ? { interaction: "file" as const }
+              : {}),
             ...(operation.type === "tabs"
               ? {
                   targets: operation.paths.map((path) => ({

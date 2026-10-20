@@ -53,8 +53,15 @@ export async function conciergeDatabase() {
       );
       await db.query(`CREATE TABLE IF NOT EXISTS concierge_effects (
         owner text NOT NULL, key text NOT NULL, result jsonb NOT NULL,
-        basket_before jsonb, basket_revision integer,
+        basket_before jsonb, basket_after jsonb, basket_revision integer,
         created_at timestamptz NOT NULL DEFAULT now(), PRIMARY KEY(owner,key))`);
+      await db.query(
+        "ALTER TABLE concierge_effects ADD COLUMN IF NOT EXISTS basket_after jsonb",
+      );
+      await db.query(`CREATE TABLE IF NOT EXISTS concierge_executions (
+        owner text NOT NULL, turn_id text NOT NULL, conversation_id text NOT NULL,
+        record jsonb NOT NULL, updated_at timestamptz NOT NULL DEFAULT now(),
+        PRIMARY KEY(owner,turn_id))`);
       await db.query(
         `CREATE TABLE IF NOT EXISTS concierge_product_references (product_id text PRIMARY KEY, ref bigserial UNIQUE NOT NULL)`,
       );
@@ -161,13 +168,42 @@ export async function changeConcierge<T>(
     // Legacy documents start at their last public revision without data loss.
     const basketRevision = state.basketRevision ?? state.revision;
     const beforeBasket = JSON.stringify([state.cart, state.wishlist]);
+    const beforeExecution = executionSnapshot(state);
     const value = await fn(state, sql);
+    const afterExecution = executionSnapshot(state);
+    if (beforeExecution !== afterExecution) {
+      if (
+        beforeExecution &&
+        JSON.parse(beforeExecution).turn.id !== state.turn?.id
+      ) {
+        const previous = JSON.parse(beforeExecution) as {
+          turn: NonNullable<ConciergeState["turn"]>;
+          actions: ConciergeState["actions"];
+        };
+        if (["running", "awaiting_ui"].includes(previous.turn.status)) {
+          previous.turn.status = "canceled";
+          previous.turn.error = state.turn
+            ? "Superseded by a newer customer message."
+            : "The conversation ended.";
+          previous.actions = previous.actions.map(
+            (a) =>
+              state.actions.find((latest) => latest.id === a.id) ||
+              (a.status === "pending"
+                ? { ...a, status: "failed", outcome: previous.turn.error }
+                : a),
+          );
+        }
+        await archiveExecution(sql, ownerKey(actor), JSON.stringify(previous));
+      }
+      if (afterExecution)
+        await archiveExecution(sql, ownerKey(actor), afterExecution);
+    }
     state.basketRevision =
       basketRevision +
       Number(beforeBasket !== JSON.stringify([state.cart, state.wishlist]));
     if (effectKey)
       await sql.query(
-        "INSERT INTO concierge_effects(owner,key,result,basket_before,basket_revision) VALUES($1,$2,$3::jsonb,$4::jsonb,$5)",
+        "INSERT INTO concierge_effects(owner,key,result,basket_before,basket_revision,basket_after) VALUES($1,$2,$3::jsonb,$4::jsonb,$5,$6::jsonb)",
         [
           ownerKey(actor),
           effectKey,
@@ -176,6 +212,9 @@ export async function changeConcierge<T>(
             ? beforeBasket
             : null,
           state.basketRevision,
+          beforeBasket !== JSON.stringify([state.cart, state.wishlist])
+            ? JSON.stringify([state.cart, state.wishlist])
+            : null,
         ],
       );
     state.revision++;
@@ -220,6 +259,27 @@ export async function changeConcierge<T>(
   if (committedRevision >= 0)
     publishConciergeChange(ownerKey(actor), committedRevision);
   return value;
+}
+
+function executionSnapshot(state: ConciergeState) {
+  return state.turn
+    ? JSON.stringify({
+        conversationId: state.conversationId,
+        execution: state.execution,
+        turn: state.turn,
+        actions: state.actions.filter((a) => a.turnId === state.turn!.id),
+      })
+    : undefined;
+}
+async function archiveExecution(sql: Sql, owner: string, snapshot: string) {
+  const record = JSON.parse(snapshot) as {
+    conversationId: string;
+    turn: { id: string };
+  };
+  await sql.query(
+    "INSERT INTO concierge_executions(owner,turn_id,conversation_id,record) VALUES($1,$2,$3,$4::jsonb) ON CONFLICT(owner,turn_id) DO UPDATE SET record=EXCLUDED.record,updated_at=now()",
+    [owner, record.turn.id, record.conversationId, snapshot],
+  );
 }
 
 async function archiveTranscript(

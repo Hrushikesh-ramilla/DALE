@@ -62,7 +62,7 @@ const definitions = [
   {
     name: "use_website",
     description:
-      "Operate DALE: navigate a registered path; open up to six paths in separate browser tabs; back/forward; scroll; operate a reported control; focus, close or navigate a registered browser tab. Product paths use exact published catalog IDs. Actual browser receipts follow before success is known.",
+      "Operate DALE: navigate a registered path; open up to six paths in separate browser tabs; back/forward; scroll; operate a reported control; focus, close or navigate a registered browser tab. Product paths use exact published catalog IDs. File controls pause for the shopper to choose a file; selection does not submit its form. Actual browser receipts follow before success is known.",
     schema: browserOperation,
   },
   {
@@ -123,8 +123,30 @@ export async function websiteTool(
       selected_tab_id: s.activeTabId || ui.tab_id,
       tabs: Object.entries(s.tabs || {})
         .filter(([, t]) => Date.now() - t.seenAt < 45000)
-        .map(([id, t]) => ({ id, ...t })),
+        .map(([id, t]) => {
+          const action = s.actions.find((a) => a.id === t.createdByAction);
+          return {
+            id,
+            ...t,
+            opened_at: action?.createdAt,
+            opening_order: action?.targets?.findIndex(
+              (target) => target.tabId === id,
+            ),
+          };
+        })
+        .sort(
+          (a, b) =>
+            (a.opened_at || "").localeCompare(b.opened_at || "") ||
+            (a.opening_order ?? -1) - (b.opening_order ?? -1),
+        ),
       catalog_reads: s.resultSets,
+      recent_actions: s.actions
+        .slice(-10)
+        .map(({ operation, status, outcome }) => ({
+          operation,
+          status,
+          outcome,
+        })),
       basket: await basket(actor),
       destinations: siteDestinations,
       departments: departments.map((d) => ({

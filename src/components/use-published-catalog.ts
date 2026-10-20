@@ -16,6 +16,7 @@ export function usePublishedCatalog(input: {
   query?: string;
   budget?: number;
   requirements?: RetailRequirements;
+  sort?: "featured" | "price-asc" | "price-desc" | "brand-asc";
 }) {
   const [summary, setSummary] = useState<CatalogSummary | null>(null);
   const [continuation, setContinuation] = useState({ key: "", cursor: "" });
@@ -23,7 +24,9 @@ export function usePublishedCatalog(input: {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
   const [total, setTotal] = useState(0);
-  const [categoryBrands, setCategoryBrands] = useState<CategoryBrandSummary[]>([]);
+  const [categoryBrands, setCategoryBrands] = useState<CategoryBrandSummary[]>(
+    [],
+  );
   const [availableBrands, setAvailableBrands] = useState<string[]>([]);
   const [error, setError] = useState("");
   const key = JSON.stringify({
@@ -32,6 +35,7 @@ export function usePublishedCatalog(input: {
     brand: input.brand || "",
     query: input.query || "",
     budget: input.budget || "",
+    sort: input.sort || "",
     ...(input.requirements || {}),
   });
   const [loadedKey, setLoadedKey] = useState("");
@@ -77,7 +81,8 @@ export function usePublishedCatalog(input: {
           );
           setTotal(result.total);
           if (result.categoryBrands) setCategoryBrands(result.categoryBrands);
-          if (result.availableBrands) setAvailableBrands(result.availableBrands);
+          if (result.availableBrands)
+            setAvailableBrands(result.availableBrands);
           setLoadedKey(key);
           setNextCursor(result.nextCursor);
           setLoading(false);
@@ -103,6 +108,7 @@ export function usePublishedCatalog(input: {
     availableBrands,
     error,
     loading: loading || (input.enabled && loadedKey !== key),
+    hasMore: loadedKey === key && Boolean(nextCursor),
     loadMore: () => {
       if (!loading && loadedKey === key && nextCursor)
         setContinuation({ key, cursor: nextCursor });

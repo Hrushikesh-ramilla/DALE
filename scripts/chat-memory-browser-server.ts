@@ -7,6 +7,12 @@ import { resolve, sep } from "node:path";
 import { customerSession } from "../src/server/customers";
 import { changeConcierge, readConcierge } from "../src/server/concierge/store";
 import { closeDatabase, getDatabase } from "../src/server/database";
+import {
+  makeQuote,
+  checkout,
+  capture,
+  openReturn,
+} from "../src/server/service";
 const directory = resolve(process.env.LOCAL_DATA_DIR || "");
 if (
   process.env.AI_MODE !== "fixture" ||
@@ -23,7 +29,7 @@ const fragrance = {
   description: "Oud and incense",
   specs: ["Oud", "Incense"],
   attributes: { notes: "oud incense" },
-  stock: 3,
+  stock: 40,
   price: 3750,
   source: "test-only",
   compatibleModels: [],
@@ -60,12 +66,45 @@ await changeConcierge(session.actor, (s) => {
       timestamp: Date.now() + i,
     });
 });
+const supportSession = await customerSession({ action: "guest" });
+const supportQuote = await makeQuote(
+  supportSession.actor,
+  fragrance.id,
+  "not-required",
+);
+const supportOrder = await checkout(
+  supportSession.actor,
+  supportQuote.id,
+  supportQuote.fingerprint,
+);
+await capture(supportSession.actor, supportOrder.id);
+const supportCase = await openReturn(
+  supportSession.actor,
+  supportOrder.id,
+  "damaged",
+  "refund",
+);
+const orderSessions = await Promise.all([
+  customerSession({ action: "guest" }),
+  customerSession({ action: "guest" }),
+]);
+const customerOrders = [];
+for (const [index, customer] of orderSessions.entries()) {
+  const quote = await makeQuote(customer.actor, fragrance.id, "not-required");
+  const order = await checkout(customer.actor, quote.id, quote.fingerprint);
+  if (index === 1) await capture(customer.actor, order.id);
+  customerOrders.push({ token: customer.token, orderId: order.id });
+}
 await mkdir(directory, { recursive: true });
 await writeFile(
   resolve(directory, "browser-session.json"),
   JSON.stringify({
     token: session.token,
     conversationId: (await readConcierge(session.actor)).conversationId,
+    supportToken: supportSession.token,
+    supportCaseId: supportCase.id,
+    supportOrderId: supportOrder.id,
+    customerOrders,
   }),
   { mode: 0o600 },
 );
@@ -114,8 +153,16 @@ const provider = createServer(async (req, res) => {
   const userIndex = input.messages.findLastIndex(
     (m: { role: string }) => m.role === "user",
   );
-  const command = input.messages[userIndex]?.content;
+  const utterance = input.messages[userIndex]?.content;
+  const command =
+    process.env.VOICE_BROWSER_ACCEPTANCE === "true" &&
+    /orders/i.test(utterance || "")
+      ? "Browser action: open my orders"
+      : utterance;
   const flows: Record<string, { name: string; args: unknown }[]> = {
+    "Browser action: open my orders": [
+      { name: "use_website", args: { type: "navigate", path: "/orders" } },
+    ],
     "Browser action: open the perfume": [
       {
         name: "use_website",
@@ -147,6 +194,23 @@ const provider = createServer(async (req, res) => {
     ],
     "Browser action: go back": [
       { name: "use_website", args: { type: "history", direction: "back" } },
+    ],
+    "Browser action: join the perfume group": [
+      {
+        name: "prepare_customer_action",
+        args: {
+          operation: "join_group",
+          product_id: fragrance.id,
+          device_profile: "not-required",
+        },
+      },
+    ],
+    "Browser action: prepare my cart checkout": [
+      {
+        name: "prepare_customer_action",
+        args: { operation: "checkout", device_profile: "not-required" },
+      },
+      { name: "use_website", args: { type: "navigate", path: "/cart" } },
     ],
     "Browser action: go forward": [
       { name: "use_website", args: { type: "history", direction: "forward" } },
@@ -294,6 +358,130 @@ const provider = createServer(async (req, res) => {
         };
   }
   if (
+    command === "Browser action: attach photo with note and submit my evidence"
+  ) {
+    const observations = input.messages
+      .slice(userIndex + 1)
+      .filter((m: { role: string }) => m.role === "tool")
+      .map((m: { content: string }) => JSON.parse(m.content));
+    const done = observations.length;
+    const page = observations.at(-1)?.data?.page;
+    const label =
+      done === 2
+        ? `Add evidence for case ${supportCase.id}`
+        : done === 4
+          ? "What does this record show?"
+          : done === 6
+            ? "Photo (optional, up to 4 MB)"
+            : "Submit my evidence";
+    const control = page?.controls?.find(
+      (c: { label: string }) => c.label === label,
+    );
+    const step =
+      done === 0
+        ? { name: "use_website", args: { type: "navigate", path: "/support" } }
+        : [1, 3, 5, 7].includes(done)
+          ? { name: "get_website_context", args: {} }
+          : [2, 4, 6, 8].includes(done)
+            ? {
+                name: "use_website",
+                args: {
+                  type: "control",
+                  control_id: control?.id || "missing",
+                  ...(done === 4
+                    ? { value: "The outer packaging was crushed on receipt." }
+                    : {}),
+                },
+              }
+            : null;
+    response = step
+      ? {
+          role: "assistant",
+          content: null,
+          tool_calls: [
+            {
+              id: `browser-evidence-${done}`,
+              type: "function",
+              function: {
+                name: step.name,
+                arguments: JSON.stringify(step.args),
+              },
+            },
+          ],
+        }
+      : {
+          role: "assistant",
+          content: "Browser evidence submitted through the customer's form.",
+        };
+  }
+  if (
+    [
+      "Browser action: sort and load more models",
+      "Browser action: review this product checkout",
+      "Browser action: set the current budget",
+    ].includes(command)
+  ) {
+    const observations = input.messages
+      .slice(userIndex + 1)
+      .filter((m: { role: string }) => m.role === "tool")
+      .map((m: { content: string }) => JSON.parse(m.content));
+    const done = observations.length;
+    const label =
+      command === "Browser action: set the current budget"
+        ? "Shopping brief maximum budget USD"
+        : command === "Browser action: review this product checkout"
+          ? "Review this product's PayPal quote"
+          : done === 1
+            ? "Sort category models"
+            : "Load more category models";
+    const control = observations
+      .at(-1)
+      ?.data?.page?.controls?.find((c: { label: string }) => c.label === label);
+    const step =
+      done === 0 ||
+      (done === 2 && command === "Browser action: sort and load more models")
+        ? { name: "get_website_context", args: {} }
+        : done === 1 ||
+            (done === 3 &&
+              command === "Browser action: sort and load more models")
+          ? {
+              name: "use_website",
+              args: {
+                type: "control",
+                control_id: control?.id || "missing",
+                ...(done === 1 &&
+                command !== "Browser action: review this product checkout"
+                  ? {
+                      value:
+                        command === "Browser action: set the current budget"
+                          ? "250"
+                          : "price-desc",
+                    }
+                  : {}),
+              },
+            }
+          : null;
+    response = step
+      ? {
+          role: "assistant",
+          content: null,
+          tool_calls: [
+            {
+              id: `browser-component-${done}`,
+              type: "function",
+              function: {
+                name: step.name,
+                arguments: JSON.stringify(step.args),
+              },
+            },
+          ],
+        }
+      : {
+          role: "assistant",
+          content: "Browser component task completed from observed results.",
+        };
+  }
+  if (
     [
       "Browser action: compare the opened listings",
       "Browser action: close the tabs you opened",
@@ -380,6 +568,147 @@ const provider = createServer(async (req, res) => {
       : {
           role: "assistant",
           content: "Browser tab task completed from observed results.",
+        };
+  }
+  if (command === "Browser action: compare the two shown products") {
+    const observations = input.messages
+      .slice(userIndex + 1)
+      .filter((m: { role: string }) => m.role === "tool")
+      .map((m: { content: string }) => JSON.parse(m.content));
+    const done = observations.length;
+    const controls = observations.at(-1)?.data?.page?.controls || [];
+    const choices = controls.filter((c: { label: string }) =>
+      c.label.startsWith("Comparison selection for "),
+    );
+    const compare = controls.find(
+      (c: { label: string }) => c.label === "Compare selected products",
+    );
+    const steps =
+      done === 0 || done === 3
+        ? [{ name: "get_website_context", args: {} }]
+        : done === 1
+          ? choices.slice(0, 2).map((c: { id: string }) => ({
+              name: "use_website",
+              args: { type: "control", control_id: c.id, value: "true" },
+            }))
+          : done === 4
+            ? [
+                {
+                  name: "use_website",
+                  args: {
+                    type: "control",
+                    control_id: compare?.id || "missing",
+                  },
+                },
+              ]
+            : [];
+    response = steps.length
+      ? {
+          role: "assistant",
+          content: null,
+          tool_calls: steps.map((s, i) => ({
+            id: `browser-check-${done}-${i}`,
+            type: "function",
+            function: { name: s.name, arguments: JSON.stringify(s.args) },
+          })),
+        }
+      : {
+          role: "assistant",
+          content:
+            "Browser comparison controls completed from observed results.",
+        };
+  }
+  if (
+    [
+      "Browser action: cancel my unpaid order",
+      "Browser action: return my damaged order",
+    ].includes(command)
+  ) {
+    const observations = input.messages
+      .slice(userIndex + 1)
+      .filter((m: { role: string }) => m.role === "tool")
+      .map((m: { content: string }) => JSON.parse(m.content));
+    const done = observations.length;
+    const order = observations[0]?.data?.orders?.[0];
+    const step =
+      done === 0
+        ? { name: "get_user_orders", args: {} }
+        : done === 1
+          ? {
+              name: "prepare_customer_action",
+              args: {
+                operation: command.includes("cancel")
+                  ? "cancel_order"
+                  : "return",
+                order_id: order?.id,
+                ...(command.includes("return")
+                  ? { reason: "damaged", remedy: "refund" }
+                  : {}),
+              },
+            }
+          : null;
+    response = step
+      ? {
+          role: "assistant",
+          content: null,
+          tool_calls: [
+            {
+              id: `browser-owned-order-${done}`,
+              type: "function",
+              function: {
+                name: step.name,
+                arguments: JSON.stringify(step.args),
+              },
+            },
+          ],
+        }
+      : {
+          role: "assistant",
+          content: "Browser customer request prepared for your review.",
+        };
+  }
+  if (command === "Browser action: expand details and scroll to the bottom") {
+    const observations = input.messages
+      .slice(userIndex + 1)
+      .filter((m: { role: string }) => m.role === "tool")
+      .map((m: { content: string }) => JSON.parse(m.content));
+    const done = observations.length;
+    const detail = observations[0]?.data?.page?.controls?.find(
+      (c: { kind: string }) => c.kind === "details",
+    );
+    const steps =
+      done === 0
+        ? [{ name: "get_website_context", args: {} }]
+        : done === 1
+          ? [
+              {
+                name: "use_website",
+                args: {
+                  type: "control",
+                  control_id: detail?.id || "missing",
+                  value: "open",
+                },
+              },
+              {
+                name: "use_website",
+                args: { type: "scroll", direction: "bottom" },
+              },
+            ]
+          : [];
+    response = steps.length
+      ? {
+          role: "assistant",
+          content: null,
+          tool_calls: steps.map((s, i) => ({
+            id: `browser-details-${done}-${i}`,
+            type: "function",
+            function: { name: s.name, arguments: JSON.stringify(s.args) },
+          })),
+        }
+      : {
+          role: "assistant",
+          content:
+            "Browser details and scroll completed from observed results.",
         };
   }
   res.setHeader("Content-Type", "application/json");

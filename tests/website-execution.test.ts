@@ -30,6 +30,8 @@ import {
 import { uiContext, type NativeMessage } from "../src/domain/concierge";
 import type { Actor } from "../src/server/state";
 import { snapshot as commerceSnapshot } from "../src/server/service";
+import { closeCustomerTask } from "../src/server/concierge/session";
+import { conciergeDatabase, ownerKey } from "../src/server/concierge/store";
 let actor: Actor;
 let id: string, otherId: string;
 const tab = randomUUID();
@@ -77,6 +79,99 @@ beforeEach(async () => {
   vi.mocked(modelTurn).mockReset();
 });
 afterAll(closeDatabase);
+
+it("does not overwrite newer manual basket edits made while the model is planning", async () => {
+  await manageBasket(actor, {
+    collection: "cart",
+    action: "add",
+    items: [{ productId: id }],
+  });
+  vi.mocked(modelTurn)
+    .mockImplementationOnce(async () => {
+      await manageBasket(actor, {
+        collection: "cart",
+        action: "set",
+        items: [{ productId: id, quantity: 4 }],
+      });
+      return call("manage_collection", {
+        collection: "cart",
+        action: "set",
+        items: [{ productId: id, quantity: 2 }],
+      });
+    })
+    .mockResolvedValueOnce(reply);
+  await runConcierge(actor, {
+    turn_id: randomUUID(),
+    message: "Make that two",
+    client_context: ui(),
+  });
+  expect((await basket(actor)).cart[0].quantity).toBe(4);
+  const observation = vi.mocked(modelTurn).mock.calls[1][0].at(-1)!;
+  expect(JSON.parse(observation.content!).ok).toBe(false);
+});
+
+it("replans dependent writes after a failed batch step while keeping read tools available", async () => {
+  const failed = call("use_website", {
+    type: "control",
+    control_id: "not-present",
+  });
+  failed.tool_calls!.push(
+    ...call("manage_collection", {
+      collection: "cart",
+      action: "add",
+      items: [{ productId: id }],
+    }).tool_calls!,
+    ...call("get_user_account_context", {}).tool_calls!,
+  );
+  vi.mocked(modelTurn)
+    .mockResolvedValueOnce(failed)
+    .mockResolvedValueOnce(reply);
+  await runConcierge(actor, {
+    turn_id: randomUUID(),
+    message: "Set this field, then add it",
+    client_context: ui(),
+  });
+  expect((await basket(actor)).cart).toHaveLength(0);
+  const observations = vi
+    .mocked(modelTurn)
+    .mock.calls[1][0].filter((m) => m.role === "tool")
+    .slice(-3)
+    .map((m) => JSON.parse(m.content!));
+  expect(observations.map((o) => o.ok)).toEqual([false, false, true]);
+  expect(observations[1].error).toContain("earlier operation");
+});
+
+it("keeps requested tab opening order even when the second page registers first", async () => {
+  const turn = randomUUID();
+  vi.mocked(modelTurn).mockResolvedValueOnce(
+    call("use_website", {
+      type: "tabs",
+      paths: [`/product/${id}`, `/product/${otherId}`],
+    }),
+  );
+  await runConcierge(actor, {
+    turn_id: turn,
+    message: "Open those separately",
+    client_context: ui(),
+  });
+  const action = (await readConcierge(actor)).actions[0];
+  for (const target of [...action.targets!].reverse())
+    await registerTab(actor, {
+      ...ui(),
+      tab_id: target.tabId,
+      current_url: target.path,
+      currently_viewed_product_id: target.path.slice(9),
+    });
+  const observed = (await websiteTool(
+    "get_website_context",
+    {},
+    actor,
+    ui(),
+  )) as { tabs: { id: string }[] };
+  expect(observed.tabs.map((t) => t.id)).toEqual(
+    action.targets!.map((t) => t.tabId),
+  );
+});
 
 it("preserves natural single-generation chat and exposes real website functions", async () => {
   vi.mocked(modelTurn).mockResolvedValue(reply);
@@ -418,13 +513,119 @@ it("retains unfinished native calls for provider recovery without repeating effe
 
 it("keeps catalog read candidates internal and shows only the observed selected product", async () => {
   const turn = randomUUID();
-  vi.mocked(modelTurn).mockResolvedValueOnce(call("search_catalog",{query:"",limit:4})).mockResolvedValueOnce(call("use_website",{type:"navigate",path:`/product/${id}`})).mockResolvedValueOnce(reply);
-  let view = await runConcierge(actor,{turn_id:turn,message:"Find it and open the selected listing",client_context:ui()});
+  vi.mocked(modelTurn)
+    .mockResolvedValueOnce(call("search_catalog", { query: "", limit: 4 }))
+    .mockResolvedValueOnce(
+      call("use_website", { type: "navigate", path: `/product/${id}` }),
+    )
+    .mockResolvedValueOnce(reply);
+  let view = await runConcierge(actor, {
+    turn_id: turn,
+    message: "Find it and open the selected listing",
+    client_context: ui(),
+  });
   expect((await readConcierge(actor)).resultSets[0].internal).toBe(true);
   expect(view.products).toEqual([]);
-  const context = {...ui(),current_url:`/product/${id}`,currently_viewed_product_id:id};
-  view = await acknowledgeBrowser(actor,{id:view.actions[0].id,turn_id:turn,status:"succeeded",outcome:"Selected product rendered",client_context:context});
-  expect(view.products.map(p=>p.id)).toEqual([id]);
+  const context = {
+    ...ui(),
+    current_url: `/product/${id}`,
+    currently_viewed_product_id: id,
+  };
+  view = await acknowledgeBrowser(actor, {
+    id: view.actions[0].id,
+    turn_id: turn,
+    status: "succeeded",
+    outcome: "Selected product rendered",
+    client_context: context,
+  });
+  expect(view.products.map((p) => p.id)).toEqual([id]);
+});
+
+it("retains terminal native execution records when a new instruction supersedes a paused file request", async () => {
+  const first = randomUUID();
+  const context = {
+    ...ui(),
+    controls: [{ id: "photo", label: "Photo", kind: "file" as const }],
+  };
+  vi.mocked(modelTurn)
+    .mockResolvedValueOnce(
+      call("use_website", { type: "control", control_id: "photo" }),
+    )
+    .mockResolvedValueOnce(reply);
+  const pending = await runConcierge(actor, {
+    turn_id: first,
+    message: "Attach my photo",
+    client_context: context,
+  });
+  expect(pending.actions[0].interaction).toBe("file");
+  await acknowledgeBrowser(actor, {
+    id: pending.actions[0].id,
+    turn_id: first,
+    status: "blocked",
+    outcome: "Choose a file",
+    client_context: context,
+  });
+  const next = await runConcierge(actor, {
+    turn_id: randomUUID(),
+    message: "Actually, forget the upload",
+    client_context: context,
+  });
+  expect(next.turn?.status).toBe("completed");
+  const archived = await (
+    await conciergeDatabase()
+  ).query<{
+    record: {
+      turn: { status: string };
+      execution: { frames: NativeMessage[] };
+      actions: { status: string }[];
+    };
+  }>("SELECT record FROM concierge_executions WHERE owner=$1 AND turn_id=$2", [
+    ownerKey(actor),
+    first,
+  ]);
+  expect(archived.rows[0].record.turn.status).toBe("canceled");
+  expect(archived.rows[0].record.actions[0].status).toBe("failed");
+  expect(
+    archived.rows[0].record.execution.frames.some((m) => m.tool_calls?.length),
+  ).toBe(true);
+  const late = await acknowledgeBrowser(actor, {
+    id: pending.actions[0].id,
+    turn_id: first,
+    status: "succeeded",
+    outcome: "late file choice",
+    client_context: context,
+  });
+  expect(late.turn?.id).toBe(next.turn?.id);
+  expect(
+    late.receipts.find((a) => a.id === pending.actions[0].id)?.status,
+  ).toBe("failed");
+});
+
+it("fences active work before logout or replacing the shopper session", async () => {
+  const turn = randomUUID();
+  vi.mocked(modelTurn).mockResolvedValueOnce(
+    call("use_website", { type: "navigate", path: "/cart" }),
+  );
+  const pending = await runConcierge(actor, {
+    turn_id: turn,
+    message: "Open my cart",
+    client_context: ui(),
+  });
+  await closeCustomerTask(actor);
+  const ended = await readConcierge(actor);
+  expect(ended.turn?.status).toBe("canceled");
+  expect(
+    ended.actions.find((a) => a.id === pending.actions[0].id)?.status,
+  ).toBe("failed");
+  await expect(
+    withTurnFence(actor, turn, () =>
+      manageBasket(actor, {
+        collection: "cart",
+        action: "add",
+        items: [{ productId: id }],
+      }),
+    ),
+  ).rejects.toThrow("no longer active");
 });
 
 it("batches a collection change and page opening in one native call", async () => {

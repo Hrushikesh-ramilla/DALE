@@ -20,6 +20,8 @@ import {
   waitForPage,
   openActionTabs,
   closeActionTab,
+  fileSelectionReady,
+  chooseActionFile,
 } from "./website-browser";
 import type { conciergeView } from "@/server/concierge/engine";
 import type { CartItem, CopilotMessage } from "./copilot-types";
@@ -38,6 +40,7 @@ interface CopilotContextType {
   cancel: () => void;
   resume: () => Promise<void>;
   recoverTabs: () => void;
+  recoverFile: (actionId: string) => void;
   newChat: () => Promise<void>;
   loadEarlier: () => Promise<void>;
   isLoadingHistory: boolean;
@@ -165,6 +168,35 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     return {
       tab_id: browserTabId(),
       controls: observeControls(),
+      notices: Array.from(
+        document.querySelectorAll<HTMLElement>(
+          '[role="status"], [role="alert"]',
+        ),
+      )
+        .filter(
+          (el) =>
+            !el.closest(
+              "[data-copilot-panel], [inert], [aria-hidden='true']",
+            ) && el.getClientRects().length,
+        )
+        .map((el) => (el.textContent || "").trim().slice(0, 500))
+        .filter(Boolean)
+        .slice(0, 8),
+      dialogs: Array.from(
+        document.querySelectorAll<HTMLElement>('[role="dialog"]'),
+      )
+        .filter(
+          (el) =>
+            el.getAttribute("aria-hidden") !== "true" &&
+            el.getClientRects().length,
+        )
+        .map((el) => ({
+          title: (el.querySelector("h1,h2,h3")?.textContent || "")
+            .trim()
+            .slice(0, 160),
+          label: (el.getAttribute("aria-label") || "").slice(0, 160),
+        }))
+        .slice(0, 6),
       current_url: url.pathname + url.search,
       current_page_type: path[1] || "home",
       active_filters: filters,
@@ -226,6 +258,18 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     if (bc)
       bc.onmessage = (event) => {
         const request = event.data;
+        if (
+          request?.kind === "session" &&
+          request.owner === current.current?.owner_id
+        ) {
+          window.dispatchEvent(
+            new CustomEvent("dale:session-changed", {
+              detail: { remote: true },
+            }),
+          );
+          window.location.reload();
+          return;
+        }
         if (
           request?.kind !== "request" ||
           request.owner !== current.current?.owner_id ||
@@ -317,7 +361,21 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         })
         .catch(() => {});
     };
-    const sessionChanged = () => {
+    const sessionChanged = (event: Event) => {
+      const detail = (
+        event as CustomEvent<{ remote?: boolean; owner_id?: string | null }>
+      ).detail;
+      if (
+        detail &&
+        Object.hasOwn(detail, "owner_id") &&
+        detail.owner_id === (current.current?.owner_id || null)
+      )
+        return;
+      if (!detail?.remote && current.current?.owner_id)
+        channel.current?.postMessage({
+          kind: "session",
+          owner: current.current.owner_id,
+        });
       sessionEpoch.current++;
       controller.current?.abort();
       speechController.current?.abort();
@@ -357,6 +415,11 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         "Shopping session changed. Send the request again in the current account.",
       );
     apply(view, epoch);
+    window.dispatchEvent(
+      new CustomEvent("dale:customer-session-ready", {
+        detail: { owner_id: view.owner_id },
+      }),
+    );
     return view;
   }, [apply]);
   const executeBrowser = useCallback(
@@ -369,7 +432,36 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       let status: "succeeded" | "failed" | "blocked" = "failed";
       let outcome = "";
       try {
-        if (operation.type === "tabs") {
+        const effectKey = `dale-browser-effect:${action.id}:${browserTabId()}`;
+        if (!sessionStorage.getItem(effectKey)) {
+          const observed = context();
+          if (
+            action.sourceURL &&
+            action.sourceURL !== observed.current_url &&
+            !(
+              operation.type === "navigate" &&
+              operation.path === observed.current_url
+            )
+          )
+            throw new Error(
+              "The page changed after this action was planned. Inspect its current state before continuing.",
+            );
+          if (
+            operation.type === "control" &&
+            action.interaction !== "file" &&
+            action.controlValue !== undefined &&
+            observed.controls.find((c) => c.id === operation.control_id)
+              ?.value !== action.controlValue
+          )
+            throw new Error(
+              "This field changed after the action was planned. Inspect its current value before continuing.",
+            );
+        }
+        if (action.interaction === "file" && !fileSelectionReady(action)) {
+          status = "blocked";
+          outcome =
+            "Choose a file to continue. Selecting it does not submit the form.";
+        } else if (operation.type === "tabs") {
           openActionTabs(action);
           let ready = false;
           for (let i = 0; i < 40; i++) {
@@ -812,6 +904,29 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
             )
               openActionTabs(action);
           void resume();
+        },
+        recoverFile: (actionId) => {
+          const action = current.current?.actions.find(
+            (a) => a.id === actionId && a.interaction === "file",
+          );
+          if (!action || action.controllerTabId !== browserTabId()) {
+            setError(
+              "This file request belongs to another browser tab or is no longer active.",
+            );
+            return;
+          }
+          const epoch = sessionEpoch.current;
+          try {
+            chooseActionFile(action, () => {
+              if (epoch === sessionEpoch.current) void resume();
+            });
+          } catch (e) {
+            setError(
+              e instanceof Error
+                ? e.message
+                : "The file picker could not be opened.",
+            );
+          }
         },
         newChat,
         loadEarlier,

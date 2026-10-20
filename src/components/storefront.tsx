@@ -4,7 +4,13 @@ import { RetailFilters } from "./retail-filters";
 import { DepartmentBrowser } from "./department-browser";
 import { CatalogEvidence } from "./catalog-evidence";
 import { LuxuryArchitectureCard } from "./luxury-architecture-card";
-import { categoryTitles as titles, categoryIds, departments, isRetailCategory, lifestyleProfile } from "@/domain/departments";
+import {
+  categoryTitles as titles,
+  categoryIds,
+  departments,
+  isRetailCategory,
+  lifestyleProfile,
+} from "@/domain/departments";
 import { CustomerEntry } from "./customer-entry";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
@@ -99,12 +105,11 @@ const departmentHeroImages: Record<string, { src: string; alt: string }> = {
   },
 };
 
-
 type Tab = "discover" | "groups" | "orders" | "support";
 type Modal =
   | { kind: "login" }
   | { kind: "product"; product: Product }
-  | { kind: "quote"; quote: StoredQuote }
+  | { kind: "quote"; quote: StoredQuote; product: Product }
   | { kind: "return"; order: Order }
   | {
       kind: "evidence";
@@ -187,15 +192,21 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   );
   const [session, setSession] = useState<Session | null>(null),
     [modal, setModal] = useState<Modal>(null);
-  useEffect(() => {
-    window.dispatchEvent(new CustomEvent("dale:session-changed"));
-  }, [session?.actor.userId]);
+  const sessionOwner = session
+    ? `${session.actor.workspaceId}:${session.actor.userId}`
+    : null;
   const [restoring, setRestoring] = useState(true);
+  useEffect(() => {
+    if (!restoring)
+      window.dispatchEvent(
+        new CustomEvent("dale:session-changed", {
+          detail: { owner_id: sessionOwner },
+        }),
+      );
+  }, [sessionOwner, restoring]);
   const [showIntro, setShowIntro] = useState(true);
   const [logoSettled, setLogoSettled] = useState(false);
-  const [products, setProducts] = useState<Product[]>(
-    publicCatalog,
-  );
+  const [products, setProducts] = useState<Product[]>(publicCatalog);
   const [model, setModel] = useState("Atlas 14"),
     [category, setCategory] = useState(""),
     [budget, setBudget] = useState("80"),
@@ -211,19 +222,22 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   const [heroPrompt, setHeroPrompt] = useState("");
   const [sidebarTask, setSidebarTask] = useState("");
 
-  const handleHeroSubmit = useCallback((customText?: string) => {
-    const query = (customText || heroPrompt).trim();
-    if (!query) return;
-    setSidebarTask(query);
-    setHeroPrompt("");
-    setIsDeviceMode(true);
-    setTimeout(() => {
-      const shopEl = document.getElementById("shop");
-      if (shopEl) {
-        shopEl.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 50);
-  }, [heroPrompt]);
+  const handleHeroSubmit = useCallback(
+    (customText?: string) => {
+      const query = (customText || heroPrompt).trim();
+      if (!query) return;
+      setSidebarTask(query);
+      setHeroPrompt("");
+      setIsDeviceMode(true);
+      setTimeout(() => {
+        const shopEl = document.getElementById("shop");
+        if (shopEl) {
+          shopEl.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 50);
+    },
+    [heroPrompt],
+  );
   const [summary, setSummary] = useState(
     "Tell us what you need. We'll keep compatibility, your budget, and your choices at the center.",
   );
@@ -239,24 +253,67 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   const [requirements, setRequirements] = useState<RetailRequirements>({});
   const [catalogQuery, setCatalogQuery] = useState("");
   const [visibleLimit, setVisibleLimit] = useState(12);
-  const databaseCatalog = usePublishedCatalog({ enabled: !session?.fixtureWorkspace && briefDirty && !isDeviceMode && Boolean(category), category, query: catalogQuery, requirements });
-  const displayedProducts = !category && !isDeviceMode ? [] : !session?.fixtureWorkspace && briefDirty && !isDeviceMode ? databaseCatalog.products : products;
-  const resolveProduct = (id: string) => databaseCatalog.products.find(p => p.id === id) || session?.catalogReferences.find(p => p.id === id) || products.find(p => p.id === id) || productById(id);
-  const catalogCount = (category: string) => databaseCatalog.summary ? databaseCatalog.summary.counts[category] || 0 : publicCatalog.filter(p => p.category === category).length;
-  const parallaxCategories = departments.filter(d => d.categories.some(c => catalogCount(c) > 0)).map((department, index) => ({
-  id: department.id, numeral: `${String(index + 1).padStart(2, "0")} / ${departments.filter(d => d.categories.some(c => catalogCount(c) > 0)).length}`, tagline: "SHOP WITH DALE",
-  title: department.title, desc: department.description,
-  tags: department.id === "electronics" ? ["Device requirements", "Protected approval"] : ["Exact variants", "Attribute comparison", "Group savings"],
-  featured: (databaseCatalog.summary?.featured || publicCatalog).find((product) => department.categories.some((category) => category === product.category))!,
-  count: department.categories.reduce((count, category) => count + (databaseCatalog.summary?.counts[category] ?? publicCatalog.filter(p => p.category === category).length), 0),
-}));
+  const databaseCatalog = usePublishedCatalog({
+    enabled:
+      !session?.fixtureWorkspace &&
+      briefDirty &&
+      !isDeviceMode &&
+      Boolean(category),
+    category,
+    query: catalogQuery,
+    requirements,
+  });
+  const displayedProducts =
+    !category && !isDeviceMode
+      ? []
+      : !session?.fixtureWorkspace && briefDirty && !isDeviceMode
+        ? databaseCatalog.products
+        : products;
+  const resolveProduct = (id: string) =>
+    databaseCatalog.products.find((p) => p.id === id) ||
+    session?.catalogReferences.find((p) => p.id === id) ||
+    products.find((p) => p.id === id) ||
+    productById(id);
+  const catalogCount = (category: string) =>
+    databaseCatalog.summary
+      ? databaseCatalog.summary.counts[category] || 0
+      : publicCatalog.filter((p) => p.category === category).length;
+  const parallaxCategories = departments
+    .filter((d) => d.categories.some((c) => catalogCount(c) > 0))
+    .map((department, index) => ({
+      id: department.id,
+      numeral: `${String(index + 1).padStart(2, "0")} / ${departments.filter((d) => d.categories.some((c) => catalogCount(c) > 0)).length}`,
+      tagline: "SHOP WITH DALE",
+      title: department.title,
+      desc: department.description,
+      tags:
+        department.id === "electronics"
+          ? ["Device requirements", "Protected approval"]
+          : ["Exact variants", "Attribute comparison", "Group savings"],
+      featured: (databaseCatalog.summary?.featured || publicCatalog).find(
+        (product) =>
+          department.categories.some(
+            (category) => category === product.category,
+          ),
+      )!,
+      count: department.categories.reduce(
+        (count, category) =>
+          count +
+          (databaseCatalog.summary?.counts[category] ??
+            publicCatalog.filter((p) => p.category === category).length),
+        0,
+      ),
+    }));
 
-  const visibleProducts = !session?.fixtureWorkspace && briefDirty && !isDeviceMode ? displayedProducts : displayedProducts.filter((product) =>
-    [product.name, product.description, ...product.specs]
-      .join(" ")
-      .toLowerCase()
-      .includes(catalogQuery.trim().toLowerCase()),
-  );
+  const visibleProducts =
+    !session?.fixtureWorkspace && briefDirty && !isDeviceMode
+      ? displayedProducts
+      : displayedProducts.filter((product) =>
+          [product.name, product.description, ...product.specs]
+            .join(" ")
+            .toLowerCase()
+            .includes(catalogQuery.trim().toLowerCase()),
+        );
   const [scenario, setScenario] = useState<ScenarioKind>("fresh");
   const [supportDraft, setSupportDraft] = useState<Extract<
     VoiceResult["intent"],
@@ -275,13 +332,49 @@ export default function Storefront({ children }: { children?: ReactNode }) {
       setPreference(input.preference);
       setPriority(input.priority);
       setWeights(input.weights);
-      setProducts(data.brief.clarificationRequired ? [] : searchCatalog(input, data.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog));
+      setProducts(
+        data.brief.clarificationRequired
+          ? []
+          : searchCatalog(
+              input,
+              data.fixtureWorkspace
+                ? [...catalog, ...publicCatalog]
+                : publicCatalog,
+            ),
+      );
       if (!data.fixtureWorkspace && !data.brief.clarificationRequired) {
-        const params = new URLSearchParams({ category: input.category, budget: String(input.budget), ...Object.fromEntries(Object.entries(input.requirements || {}).map(([key, value]) => [key, String(value)])) });
-        void api<{ products: Product[] }>(`/api/catalog?${params}`).then(result => setProducts(searchCatalog(input, result.products))).catch(() => setError("Your saved catalog search could not be restored. Please retry Find my match."));
+        const params = new URLSearchParams({
+          category: input.category,
+          budget: String(input.budget),
+          ...Object.fromEntries(
+            Object.entries(input.requirements || {}).map(([key, value]) => [
+              key,
+              String(value),
+            ]),
+          ),
+        });
+        void api<{ products: Product[] }>(`/api/catalog?${params}`)
+          .then((result) => setProducts(searchCatalog(input, result.products)))
+          .catch(() =>
+            setError(
+              "Your saved catalog search could not be restored. Please retry Find my match.",
+            ),
+          );
       }
       setQuestions(clarifyBrief(input));
       if (data.conversation.length) setSummary(data.conversation.at(-1)!.text);
+      setBriefDirty(false);
+    } else {
+      setModel(data.fixtureWorkspace ? "Atlas 14" : lifestyleProfile);
+      setCategory("");
+      setRequirements({});
+      setBudget("80");
+      setMessage("");
+      setPreference("");
+      setPriority("price");
+      setWeights(undefined);
+      setQuestions([]);
+      setSummary("");
       setBriefDirty(false);
     }
   }, []);
@@ -306,6 +399,29 @@ export default function Storefront({ children }: { children?: ReactNode }) {
       active = false;
     };
   }, [restoreSession]);
+  useEffect(() => {
+    const synchronize = (event: Event) => {
+      const detail = (
+        event as CustomEvent<{ owner_id?: string; remote?: boolean }>
+      ).detail;
+      if (
+        !detail?.remote &&
+        (!detail?.owner_id || detail.owner_id === sessionOwner)
+      )
+        return;
+      setModal(null);
+      setSupportDraft(null);
+      void api<Session>("/api/session")
+        .then(restoreSession)
+        .catch(() => setSession(null));
+    };
+    window.addEventListener("dale:customer-session-ready", synchronize);
+    window.addEventListener("dale:session-changed", synchronize);
+    return () => {
+      window.removeEventListener("dale:customer-session-ready", synchronize);
+      window.removeEventListener("dale:session-changed", synchronize);
+    };
+  }, [sessionOwner, restoreSession]);
   const pollingUser = session?.actor.userId;
   const pollingDemo = Boolean(session?.demo);
   useEffect(() => {
@@ -437,7 +553,10 @@ export default function Storefront({ children }: { children?: ReactNode }) {
         priority,
         weights,
         confirmConstraints,
-        requirements: model === lifestyleProfile || isRetailCategory(category) ? requirements : undefined,
+        requirements:
+          model === lifestyleProfile || isRetailCategory(category)
+            ? requirements
+            : undefined,
       });
       setProducts(result.products);
       setVisibleLimit(12);
@@ -469,30 +588,35 @@ export default function Storefront({ children }: { children?: ReactNode }) {
         productId: product.id,
         model: groupId
           ? session.groups.find((g) => g.id === groupId)!.model
-          : model,
+          : productFits(product, lifestyleProfile)
+            ? lifestyleProfile
+            : model,
         groupId,
       })) as StoredQuote;
-      setModal({ kind: "quote", quote });
+      setModal({ kind: "quote", quote, product });
     });
   }
   const storeContextValue: StoreContextType = {
-      session,
-      isBuyer,
-      restoring,
-      busy,
-      choose,
-      startShopping,
-      openIdentify: () => setModal({ kind: "identify" }),
-      setNotice,
-      setError,
-      model,
-      setModel,
-      budget,
-      setBudget,
-    };
+    session,
+    isBuyer,
+    restoring,
+    busy,
+    choose,
+    startShopping,
+    openIdentify: () => setModal({ kind: "identify" }),
+    setNotice,
+    setError,
+    model,
+    setModel,
+    budget,
+    setBudget,
+  };
   function openDepartment(id: string) {
     setDepartmentId(id);
-    const categories = departments.find(department => department.id === id)?.categories.filter(category => catalogCount(category) > 0) || [];
+    const categories =
+      departments
+        .find((department) => department.id === id)
+        ?.categories.filter((category) => catalogCount(category) > 0) || [];
     if (categories.length === 1) {
       browseCollection(categories[0]);
       return;
@@ -503,12 +627,21 @@ export default function Storefront({ children }: { children?: ReactNode }) {
     setRequirements({});
     setBriefDirty(true);
     if (!session?.fixtureWorkspace) setModel(lifestyleProfile);
-    setTimeout(() => document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" }), 50);
+    setTimeout(
+      () =>
+        document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" }),
+      50,
+    );
   }
   function browseCollection(nextCategory: string, productType?: string) {
     setVisibleLimit(12);
     setCategory(nextCategory);
-    const nextModel = session?.fixtureWorkspace && !isRetailCategory(nextCategory) ? model === lifestyleProfile ? "Atlas 14" : model : lifestyleProfile;
+    const nextModel =
+      session?.fixtureWorkspace && !isRetailCategory(nextCategory)
+        ? model === lifestyleProfile
+          ? "Atlas 14"
+          : model
+        : lifestyleProfile;
     setModel(nextModel);
     setRequirements(productType ? { productType } : {});
     setQuestions([]);
@@ -516,14 +649,20 @@ export default function Storefront({ children }: { children?: ReactNode }) {
     setBriefDirty(true);
     setCatalogQuery("");
     setProducts(
-      session?.fixtureWorkspace ? searchCatalog({
+      session?.fixtureWorkspace
+        ? searchCatalog({
             model: nextModel,
             category: nextCategory,
             budget: Math.round(Number(budget) * 100),
             preference,
             priority,
             weights,
-          }) : publicCatalog.filter(p => p.category === nextCategory && (!productType || p.attributes?.productType === productType)),
+          })
+        : publicCatalog.filter(
+            (p) =>
+              p.category === nextCategory &&
+              (!productType || p.attributes?.productType === productType),
+          ),
     );
     setSummary(
       nextCategory
@@ -579,7 +718,10 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           onComplete={() => setShowIntro(false)}
         />
       )}
-      <div className="app-shell" data-agent-customer={isBuyer ? "true" : undefined}>
+      <div
+        className="app-shell"
+        data-agent-customer={isBuyer ? "true" : undefined}
+      >
         <a className="skip-link" href="#main">
           Skip to content
         </a>
@@ -600,122 +742,132 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           >
             <BrandWordmark />
           </a>
-        <nav aria-label="Main navigation">
-          {(["discover", "groups", "orders", "support"] as Tab[]).map(
-            (item) => (
+          <nav aria-label="Main navigation">
+            {(["discover", "groups", "orders", "support"] as Tab[]).map(
+              (item) => (
+                <button
+                  key={item}
+                  data-agent-control={`Open ${item}`}
+                  className={tab === item ? "active" : ""}
+                  aria-current={tab === item ? "page" : undefined}
+                  onClick={() => setTab(item)}
+                  disabled={restoring}
+                >
+                  {
+                    {
+                      discover: "Discover",
+                      groups: "Group deals",
+                      orders: isBuyer ? "My orders" : "Orders",
+                      support: "Support",
+                    }[item]
+                  }
+                  {tab === item && (
+                    <motion.span
+                      className="nav-indicator"
+                      layoutId="navigation"
+                      aria-hidden="true"
+                    />
+                  )}
+                </button>
+              ),
+            )}
+          </nav>
+          <div className="header-actions">
+            <ShoppingBriefMenu
+              model={model}
+              models={models}
+              setModel={setModel}
+              deviceLabel={deviceLabel}
+              category={category}
+              setCategory={(value) => {
+                setCategory(value);
+                setModel(
+                  !session?.fixtureWorkspace || isRetailCategory(value)
+                    ? lifestyleProfile
+                    : model === lifestyleProfile
+                      ? "Atlas 14"
+                      : model,
+                );
+                setRequirements({});
+              }}
+              budget={budget}
+              setBudget={setBudget}
+              message={message}
+              setMessage={setMessage}
+              preference={preference}
+              setPreference={setPreference}
+              priority={priority}
+              setPriority={setPriority}
+              weights={weights}
+              setWeights={setWeights}
+              briefDirty={briefDirty}
+              setBriefDirty={setBriefDirty}
+              busy={busy}
+              restoring={restoring}
+              findProducts={findProducts}
+              onIdentify={() => setModal({ kind: "identify" })}
+              compatibleCount={visibleProducts.length}
+            />
+            {session ? (
               <button
-                key={item}
-                data-agent-control={`Open ${item}`}
-                className={tab === item ? "active" : ""}
-                aria-current={tab === item ? "page" : undefined}
-                onClick={() => setTab(item)}
+                className="account"
+                data-agent-control={isBuyer ? "Sign out" : undefined}
+                onClick={() =>
+                  void run(async () => {
+                    await api("/api/session", undefined, "DELETE");
+                    setSession(null);
+                    setSupportDraft(null);
+                    setTab("discover");
+                  })
+                }
+              >
+                <span className="avatar">
+                  {isBuyer ? "S" : session.actor.role[0].toUpperCase()}
+                </span>
+                {isBuyer ? "Shopper" : session.actor.role} · Sign out
+              </button>
+            ) : (
+              <button
+                className="button primary small"
+                onClick={startShopping}
                 disabled={restoring}
               >
-                {
-                  {
-                    discover: "Discover",
-                    groups: "Group deals",
-                    orders: isBuyer ? "My orders" : "Orders",
-                    support: "Support",
-                  }[item]
-                }
-                {tab === item && (
-                  <motion.span
-                    className="nav-indicator"
-                    layoutId="navigation"
-                    aria-hidden="true"
-                  />
-                )}
+                Start shopping <ArrowRight size={15} />
               </button>
-            ),
-          )}
-        </nav>
-        <div className="header-actions">
-          <ShoppingBriefMenu
-            model={model}
-            models={models}
-            setModel={setModel}
-            deviceLabel={deviceLabel}
-            category={category}
-            setCategory={(value) => { setCategory(value); setModel(!session?.fixtureWorkspace || isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
-            budget={budget}
-            setBudget={setBudget}
-            message={message}
-            setMessage={setMessage}
-            preference={preference}
-            setPreference={setPreference}
-            priority={priority}
-            setPriority={setPriority}
-            weights={weights}
-            setWeights={setWeights}
-            briefDirty={briefDirty}
-            setBriefDirty={setBriefDirty}
-            busy={busy}
-            restoring={restoring}
-            findProducts={findProducts}
-            onIdentify={() => setModal({ kind: "identify" })}
-            compatibleCount={visibleProducts.length}
-          />
-          {session ? (
-            <button
-              className="account"
-              onClick={() =>
-                void run(async () => {
-                  await api("/api/session", undefined, "DELETE");
-                  setSession(null);
-                  setSupportDraft(null);
-                  setTab("discover");
-                })
-              }
-            >
-              <span className="avatar">
-                {isBuyer ? "S" : session.actor.role[0].toUpperCase()}
-              </span>
-              {isBuyer ? "Shopper" : session.actor.role} · Sign out
-            </button>
-          ) : (
-            <button
-              className="button primary small"
-              onClick={startShopping}
-              disabled={restoring}
-            >
-              Start shopping <ArrowRight size={15} />
-            </button>
-          )}
-        </div>
-      </header>
-      <main id="main" className="main-content" inert={!!modal} tabIndex={-1}>
-        {session?.demo && <DemoToolbar session={session} />}
-        <div className="mode-strip">
-          <span className="status-dot" /> Test storefront ·{" "}
-          {!session
-            ? "Sign in to see active adapters"
-            : session.modes.payments === "sandbox"
-              ? "PayPal sandbox"
-              : "Simulated payments"}{" "}
-          ·{" "}
-          {!session
-            ? "Analysis mode awaiting session"
-            : session.modes.ai === "live"
-              ? "Live assisted analysis"
-              : "Deterministic analysis fixtures"}{" "}
-          · Simulated shipping
-        </div>
-        {error && (
-          <div role="alert" className="feedback error">
-            {error}
-            <button aria-label="Dismiss error" onClick={() => setError("")}>
-              <X size={17} />
-            </button>
+            )}
           </div>
-        )}
-        {notice && (
-          <div role="status" className="feedback success">
-            {notice}
+        </header>
+        <main id="main" className="main-content" inert={!!modal} tabIndex={-1}>
+          {session?.demo && <DemoToolbar session={session} />}
+          <div className="mode-strip">
+            <span className="status-dot" /> Test storefront ·{" "}
+            {!session
+              ? "Sign in to see active adapters"
+              : session.modes.payments === "sandbox"
+                ? "PayPal sandbox"
+                : "Simulated payments"}{" "}
+            ·{" "}
+            {!session
+              ? "Analysis mode awaiting session"
+              : session.modes.ai === "live"
+                ? "Live assisted analysis"
+                : "Deterministic analysis fixtures"}{" "}
+            · Simulated shipping
           </div>
-        )}
-        {isBuyer &&
-          (tab === "support" || tab === "orders") && (
+          {error && (
+            <div role="alert" className="feedback error">
+              {error}
+              <button aria-label="Dismiss error" onClick={() => setError("")}>
+                <X size={17} />
+              </button>
+            </div>
+          )}
+          {notice && (
+            <div role="status" className="feedback success">
+              {notice}
+            </div>
+          )}
+          {isBuyer && (tab === "support" || tab === "orders") && (
             <AgentSurface
               orderPage={tab === "orders"}
               inspection={session?.agentRuns.at(-1)?.orders !== undefined}
@@ -781,1010 +933,1239 @@ export default function Storefront({ children }: { children?: ReactNode }) {
               />
             </AgentSurface>
           )}
-        {tab === "discover" && (pathname === "/" ? (
-          <>
-            <EditorialHero
-              onView={(product) => setModal({ kind: "product", product })}
-            />
-            <div className="hero-dale-bar" id="hero-dale">
-              <div className="hero-dale-inner">
-                <div className="hero-dale-badge">
-                  <Sparkles size={14} />
-                  <span>DALE · AI SHOPPING ADVOCATE</span>
-                </div>
-                <h2>Ask DALE anything. Live shopping guidance beside your catalog.</h2>
-                <p className="hero-dale-sub">
-                  Tell DALE your needs, budget and preferences. DALE stays pinned beside the products so you can chat continuously while browsing.
-                </p>
-                <div className="hero-dale-input-wrap">
-                  <input
-                    type="text"
-                    placeholder="Ask DALE: a linen shirt in size M under $60, or a citrus fragrance in 50 ml..."
-                    value={heroPrompt}
-                    onChange={(e) => setHeroPrompt(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
-                        handleHeroSubmit();
-                      }
-                    }}
-                  />
-                  <button
-                    type="button"
-                    className="button primary small"
-                    onClick={() => handleHeroSubmit()}
-                  >
-                    <span>Ask DALE</span> <ArrowRight size={15} />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <section
-              className="parallax-categories-section"
-              id="collections"
-              aria-labelledby="collection-title"
-            >
-              <div className="parallax-section-header">
-                <div className="eyebrow">CURATED COLLECTIONS</div>
-                <h2 id="collection-title">Objects for everyday life.</h2>
-                <p>
-                  {parallaxCategories.length} departments, one customer-first agent. Compare recorded facts, find a group and approve the exact offer yourself.
-                </p>
-              </div>
-              <div className="parallax-stack">
-                {parallaxCategories.map((col) => (
-                  <Link
-                    key={col.id}
-                    href={col.id === "watches" ? "/category/watches" : `/department/${col.id}`}
-                    className="parallax-category-card"
-                  >
-                    <div className="parallax-card-content">
-                      <div className="parallax-card-badge">
-                        <span>{col.numeral}</span>
-                        <span className="dot">·</span>
-                        <span>{col.tagline}</span>
-                      </div>
-                      <h3 className="parallax-card-title">{col.title}</h3>
-                      <p className="parallax-card-desc">{col.desc}</p>
-                      <div className="parallax-card-tags">
-                        {col.tags.map((tag) => (
-                          <span key={tag} className="parallax-card-tag">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                      <span className="parallax-card-cta">
-                        <span>Explore {col.title}</span>
-                        <ArrowRight size={15} />
-                      </span>
-                    </div>
-                    <div className="parallax-card-visual">
-                      <div className="parallax-stage-dome" />
-                      <div className="parallax-ground-shadow" />
-                      <div className="art-frame">
-                        {departmentHeroImages[col.id] ? (
-                          <div className="parallax-hero-wrapper">
-                            <Image
-                              src={departmentHeroImages[col.id].src}
-                              alt={departmentHeroImages[col.id].alt}
-                              width={1000}
-                              height={650}
-                              unoptimized
-                              priority={col.id === "electronics" || col.id === "clothing"}
-                              className="parallax-hero-image"
-                            />
-                          </div>
-                        ) : (
-                          <ProductArt product={col.featured} />
-                        )}
-                      </div>
-                      <span className="parallax-count-pill">
-                        {col.count} exact variants
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              <div className="device-fit-trigger-card">
-                <div>
-                  <h3>Filter across all categories for your device</h3>
-                  <p>
-                    Need electronics matched to a device profile? View every compatible charger, dock, audio device, and cable together.
-                  </p>
-                </div>
-                <Link
-                  href="/department/electronics"
-                  className="device-fit-btn"
-                >
-                  <span>View all for my device</span>
-                  <ArrowRight size={14} />
-                </Link>
-              </div>
-            </section>
-            {(departmentId !== "" || category !== "" || isDeviceMode) && (
-              <section
-                className="shopping-area"
-                id="shop"
-                aria-label="Personal shopping"
-              >
-              <aside className="dale-companion-aside" id="dale-chat">
-                <AgentWorkspace
-                  key={`sidebar:${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
-                  variant="sidebar"
-                  initialTask={sidebarTask}
-                  session={session}
-                  restoring={restoring || busy}
-                  model={model}
-                  budget={Math.max(
-                    1,
-                    Math.min(1000000, Math.round(Number(budget) * 100) || 8000),
-                  )}
-                  briefDirty={briefDirty}
-                  onResult={applyAgent}
-                  onGroupCommit={(offer) => {
-                    void run(async () => {
-                      if (briefDirty)
-                        throw new Error(
-                          "Save your current needs before committing to a group.",
-                        );
-                      await action({
-                        action: "agent_group_commit",
-                        productId: offer.productId,
-                        briefVersion: offer.briefVersion,
-                        policyVersion: offer.policyVersion,
-                      });
-                      setNotice(
-                        "Group commitment recorded without payment. Another shopper is required before your discounted checkout.",
-                      );
-                    });
-                  }}
-                  onReview={(product, groupId) => {
-                    const latest = session?.agentRuns.at(-1);
-                    if (
-                      !latest?.briefVersion ||
-                      latest.briefVersion !== session?.brief?.version ||
-                      briefDirty
-                    ) {
-                      setError(
-                        "Your brief changed. Send a new agent task before reviewing this option.",
-                      );
-                      return;
-                    }
-                    void choose(product, groupId);
-                  }}
-                  voice={
-                    <VoiceCompanion
-                      pending={restoring || busy}
-                      key={`sidebar:${pathname}:${session?.actor.userId || "visitor"}`}
-                      model={model}
-                      budget={Math.max(
-                        1,
-                        Math.min(
-                          1000000,
-                          Math.round(Number(budget) * 100) || 8000,
-                        ),
-                      )}
-                      actorId={session?.actor.userId}
-                      onResult={applyVoice}
-                    />
-                  }
+          {tab === "discover" &&
+            (pathname === "/" ? (
+              <>
+                <EditorialHero
+                  onView={(product) => setModal({ kind: "product", product })}
                 />
-              </aside>
-              <div className="results">
-                <div className="section-heading">
-                  <div>
-                    <button
-                      type="button"
-                      className="back-to-categories-btn"
-                      onClick={() => {
-                        setCategory("");
-                        setIsDeviceMode(false);
-                        setTimeout(() => {
-                          document.getElementById("collections")?.scrollIntoView({ behavior: "smooth" });
-                        }, 50);
-                      }}
-                    >
-                      <ArrowLeft size={13} /> Back to all categories
-                    </button>
-                    <div className="eyebrow">
-                      {isDeviceMode
-                        ? "YOUR SAVED SHOPPING BRIEF"
-                        : `CURATED COLLECTION · ${category ? category.toUpperCase() : "ALL OBJECTS"}`}
+                <div className="hero-dale-bar" id="hero-dale">
+                  <div className="hero-dale-inner">
+                    <div className="hero-dale-badge">
+                      <Sparkles size={14} />
+                      <span>DALE · AI SHOPPING ADVOCATE</span>
                     </div>
                     <h2>
-                      {isDeviceMode
-                        ? isRetailCategory(category) ? categoryTitles[category] : `All essentials for ${deviceLabel(model)}`
-                        : (categoryTitles[category] || departments.find(d => d.id === departmentId)?.title || "Selected for you")}
+                      Ask DALE anything. Live shopping guidance beside your
+                      catalog.
                     </h2>
-                    <p style={{ fontSize: "14px", color: "#a1a1a6", margin: "4px 0 0" }}>
-                      {isDeviceMode
-                        ? `Showing eligible offers for ${deviceLabel(model)}. Review each source and exact variant.`
-                        : `Compare manufacturer records. DALE prices, stock and fulfillment are simulated sandbox offers.`}
+                    <p className="hero-dale-sub">
+                      Tell DALE your needs, budget and preferences. DALE stays
+                      pinned beside the products so you can chat continuously
+                      while browsing.
                     </p>
-                  </div>
-                  <div className="catalog-heading-controls">
-                    <ShoppingBriefMenu
-                      model={model}
-                      models={models}
-                      setModel={setModel}
-                      deviceLabel={deviceLabel}
-                      category={category}
-                      setCategory={(value) => { setCategory(value); setModel(!session?.fixtureWorkspace || isRetailCategory(value) ? lifestyleProfile : model === lifestyleProfile ? "Atlas 14" : model); setRequirements({}); }}
-                      budget={budget}
-                      setBudget={setBudget}
-                      message={message}
-                      setMessage={setMessage}
-                      preference={preference}
-                      setPreference={setPreference}
-                      priority={priority}
-                      setPriority={setPriority}
-                      weights={weights}
-                      setWeights={setWeights}
-                      briefDirty={briefDirty}
-                      setBriefDirty={setBriefDirty}
-                      busy={busy}
-                      restoring={restoring}
-                      findProducts={findProducts}
-                      onIdentify={() => setModal({ kind: "identify" })}
-                      compatibleCount={visibleProducts.length}
-                    />
-                    <span className="muted">
-                      {category || isDeviceMode ? <>{visibleProducts.length}{" "}{briefDirty ? "preview options" : "matching variants"}</> : "Choose a category"}
-                    </span>
+                    <div className="hero-dale-input-wrap">
+                      <input
+                        type="text"
+                        placeholder="Ask DALE: a linen shirt in size M under $60, or a citrus fragrance in 50 ml..."
+                        value={heroPrompt}
+                        onChange={(e) => setHeroPrompt(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            handleHeroSubmit();
+                          }
+                        }}
+                      />
+                      <button
+                        type="button"
+                        className="button primary small"
+                        onClick={() => handleHeroSubmit()}
+                      >
+                        <span>Ask DALE</span> <ArrowRight size={15} />
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <DepartmentBrowser summary={databaseCatalog.summary} departmentId={departmentId || departments.find(d => d.categories.some(c => c === category))?.id || "electronics"} category={category} onDepartment={openDepartment} onCategory={browseCollection} />
-                {session?.fixtureWorkspace && <div
-                  className="catalog-category-pills"
-                  aria-label="Filter product category"
+                <section
+                  className="parallax-categories-section"
+                  id="collections"
+                  aria-labelledby="collection-title"
+                >
+                  <div className="parallax-section-header">
+                    <div className="eyebrow">CURATED COLLECTIONS</div>
+                    <h2 id="collection-title">Objects for everyday life.</h2>
+                    <p>
+                      {parallaxCategories.length} departments, one
+                      customer-first agent. Compare recorded facts, find a group
+                      and approve the exact offer yourself.
+                    </p>
+                  </div>
+                  <div className="parallax-stack">
+                    {parallaxCategories.map((col) => (
+                      <Link
+                        key={col.id}
+                        href={
+                          col.id === "watches"
+                            ? "/category/watches"
+                            : `/department/${col.id}`
+                        }
+                        className="parallax-category-card"
+                      >
+                        <div className="parallax-card-content">
+                          <div className="parallax-card-badge">
+                            <span>{col.numeral}</span>
+                            <span className="dot">·</span>
+                            <span>{col.tagline}</span>
+                          </div>
+                          <h3 className="parallax-card-title">{col.title}</h3>
+                          <p className="parallax-card-desc">{col.desc}</p>
+                          <div className="parallax-card-tags">
+                            {col.tags.map((tag) => (
+                              <span key={tag} className="parallax-card-tag">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                          <span className="parallax-card-cta">
+                            <span>Explore {col.title}</span>
+                            <ArrowRight size={15} />
+                          </span>
+                        </div>
+                        <div className="parallax-card-visual">
+                          <div className="parallax-stage-dome" />
+                          <div className="parallax-ground-shadow" />
+                          <div className="art-frame">
+                            {departmentHeroImages[col.id] ? (
+                              <div className="parallax-hero-wrapper">
+                                <Image
+                                  src={departmentHeroImages[col.id].src}
+                                  alt={departmentHeroImages[col.id].alt}
+                                  width={1000}
+                                  height={650}
+                                  unoptimized
+                                  priority={
+                                    col.id === "electronics" ||
+                                    col.id === "clothing"
+                                  }
+                                  className="parallax-hero-image"
+                                />
+                              </div>
+                            ) : (
+                              <ProductArt product={col.featured} />
+                            )}
+                          </div>
+                          <span className="parallax-count-pill">
+                            {col.count} exact variants
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="device-fit-trigger-card">
+                    <div>
+                      <h3>Filter across all categories for your device</h3>
+                      <p>
+                        Need electronics matched to a device profile? View every
+                        compatible charger, dock, audio device, and cable
+                        together.
+                      </p>
+                    </div>
+                    <Link
+                      href="/department/electronics"
+                      className="device-fit-btn"
+                    >
+                      <span>View all for my device</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </section>
+                {(departmentId !== "" || category !== "" || isDeviceMode) && (
+                  <section
+                    className="shopping-area"
+                    id="shop"
+                    aria-label="Personal shopping"
+                  >
+                    <aside className="dale-companion-aside" id="dale-chat">
+                      <AgentWorkspace
+                        key={`sidebar:${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
+                        variant="sidebar"
+                        initialTask={sidebarTask}
+                        session={session}
+                        restoring={restoring || busy}
+                        model={model}
+                        budget={Math.max(
+                          1,
+                          Math.min(
+                            1000000,
+                            Math.round(Number(budget) * 100) || 8000,
+                          ),
+                        )}
+                        briefDirty={briefDirty}
+                        onResult={applyAgent}
+                        onGroupCommit={(offer) => {
+                          void run(async () => {
+                            if (briefDirty)
+                              throw new Error(
+                                "Save your current needs before committing to a group.",
+                              );
+                            await action({
+                              action: "agent_group_commit",
+                              productId: offer.productId,
+                              briefVersion: offer.briefVersion,
+                              policyVersion: offer.policyVersion,
+                            });
+                            setNotice(
+                              "Group commitment recorded without payment. Another shopper is required before your discounted checkout.",
+                            );
+                          });
+                        }}
+                        onReview={(product, groupId) => {
+                          const latest = session?.agentRuns.at(-1);
+                          if (
+                            !latest?.briefVersion ||
+                            latest.briefVersion !== session?.brief?.version ||
+                            briefDirty
+                          ) {
+                            setError(
+                              "Your brief changed. Send a new agent task before reviewing this option.",
+                            );
+                            return;
+                          }
+                          void choose(product, groupId);
+                        }}
+                        voice={
+                          <VoiceCompanion
+                            pending={restoring || busy}
+                            key={`sidebar:${pathname}:${session?.actor.userId || "visitor"}`}
+                            model={model}
+                            budget={Math.max(
+                              1,
+                              Math.min(
+                                1000000,
+                                Math.round(Number(budget) * 100) || 8000,
+                              ),
+                            )}
+                            actorId={session?.actor.userId}
+                            onResult={applyVoice}
+                          />
+                        }
+                      />
+                    </aside>
+                    <div className="results">
+                      <div className="section-heading">
+                        <div>
+                          <button
+                            type="button"
+                            className="back-to-categories-btn"
+                            onClick={() => {
+                              setCategory("");
+                              setIsDeviceMode(false);
+                              setTimeout(() => {
+                                document
+                                  .getElementById("collections")
+                                  ?.scrollIntoView({ behavior: "smooth" });
+                              }, 50);
+                            }}
+                          >
+                            <ArrowLeft size={13} /> Back to all categories
+                          </button>
+                          <div className="eyebrow">
+                            {isDeviceMode
+                              ? "YOUR SAVED SHOPPING BRIEF"
+                              : `CURATED COLLECTION · ${category ? category.toUpperCase() : "ALL OBJECTS"}`}
+                          </div>
+                          <h2>
+                            {isDeviceMode
+                              ? isRetailCategory(category)
+                                ? categoryTitles[category]
+                                : `All essentials for ${deviceLabel(model)}`
+                              : categoryTitles[category] ||
+                                departments.find((d) => d.id === departmentId)
+                                  ?.title ||
+                                "Selected for you"}
+                          </h2>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#a1a1a6",
+                              margin: "4px 0 0",
+                            }}
+                          >
+                            {isDeviceMode
+                              ? `Showing eligible offers for ${deviceLabel(model)}. Review each source and exact variant.`
+                              : `Compare manufacturer records. DALE prices, stock and fulfillment are simulated sandbox offers.`}
+                          </p>
+                        </div>
+                        <div className="catalog-heading-controls">
+                          <ShoppingBriefMenu
+                            model={model}
+                            models={models}
+                            setModel={setModel}
+                            deviceLabel={deviceLabel}
+                            category={category}
+                            setCategory={(value) => {
+                              setCategory(value);
+                              setModel(
+                                !session?.fixtureWorkspace ||
+                                  isRetailCategory(value)
+                                  ? lifestyleProfile
+                                  : model === lifestyleProfile
+                                    ? "Atlas 14"
+                                    : model,
+                              );
+                              setRequirements({});
+                            }}
+                            budget={budget}
+                            setBudget={setBudget}
+                            message={message}
+                            setMessage={setMessage}
+                            preference={preference}
+                            setPreference={setPreference}
+                            priority={priority}
+                            setPriority={setPriority}
+                            weights={weights}
+                            setWeights={setWeights}
+                            briefDirty={briefDirty}
+                            setBriefDirty={setBriefDirty}
+                            busy={busy}
+                            restoring={restoring}
+                            findProducts={findProducts}
+                            onIdentify={() => setModal({ kind: "identify" })}
+                            compatibleCount={visibleProducts.length}
+                          />
+                          <span className="muted">
+                            {category || isDeviceMode ? (
+                              <>
+                                {visibleProducts.length}{" "}
+                                {briefDirty
+                                  ? "preview options"
+                                  : "matching variants"}
+                              </>
+                            ) : (
+                              "Choose a category"
+                            )}
+                          </span>
+                        </div>
+                      </div>
+                      <DepartmentBrowser
+                        summary={databaseCatalog.summary}
+                        departmentId={
+                          departmentId ||
+                          departments.find((d) =>
+                            d.categories.some((c) => c === category),
+                          )?.id ||
+                          "electronics"
+                        }
+                        category={category}
+                        onDepartment={openDepartment}
+                        onCategory={browseCollection}
+                      />
+                      {session?.fixtureWorkspace && (
+                        <div
+                          className="catalog-category-pills"
+                          aria-label="Filter product category"
+                        >
+                          <button
+                            type="button"
+                            className={`cat-pill ${isDeviceMode && category === "" ? "active" : ""}`}
+                            onClick={() => {
+                              setIsDeviceMode(true);
+                              setModel(
+                                model === lifestyleProfile ? "Atlas 14" : model,
+                              );
+                              setCategory("");
+                              setProducts(
+                                searchCatalog({
+                                  model:
+                                    model === lifestyleProfile
+                                      ? "Atlas 14"
+                                      : model,
+                                  category: "",
+                                  budget: Math.round(Number(budget) * 100),
+                                  preference,
+                                  priority,
+                                  weights,
+                                }),
+                              );
+                            }}
+                          >
+                            Electronics for my device (
+                            {
+                              catalog.filter((p) =>
+                                p.compatibleModels.includes(
+                                  model === lifestyleProfile
+                                    ? "Atlas 14"
+                                    : model,
+                                ),
+                              ).length
+                            }
+                            )
+                          </button>
+                          {categoryIds.map((id) => (
+                            <button
+                              key={id}
+                              type="button"
+                              className={`cat-pill ${category === id ? "active" : ""}`}
+                              onClick={() => browseCollection(id)}
+                            >
+                              {categoryTitles[id]} (
+                              {catalog.filter((p) => p.category === id).length})
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                      <RetailFilters
+                        facets={databaseCatalog.summary?.facets[category]}
+                        category={category}
+                        fixtures={Boolean(session?.fixtureWorkspace)}
+                        value={requirements}
+                        onChange={(value) => {
+                          setRequirements(value);
+                          setBriefDirty(true);
+                          setProducts(
+                            searchCatalog(
+                              {
+                                model,
+                                category,
+                                budget: 1000000,
+                                requirements: value,
+                              },
+                              session?.fixtureWorkspace
+                                ? [...catalog, ...publicCatalog]
+                                : publicCatalog,
+                            ),
+                          );
+                        }}
+                      />
+                      {databaseCatalog.error && (
+                        <p role="alert">{databaseCatalog.error}</p>
+                      )}
+                      <div className="assistant-note">
+                        <span className="assistant-icon">
+                          <Sparkles size={17} />
+                        </span>
+                        <p>{deviceText(summary)}</p>
+                      </div>
+                      {!!questions.length && (
+                        <div className="analysis-panel">
+                          <h3>Let's confirm the details.</h3>
+                          {questions.map((question) => (
+                            <p key={question}>{deviceText(question)}</p>
+                          ))}
+                          <button
+                            className="button secondary small"
+                            disabled={busy || !models.includes(model)}
+                            onClick={() => void findProducts(true)}
+                          >
+                            Confirm selected requirements and budget
+                          </button>
+                        </div>
+                      )}
+                      {!!session?.conversation.length && (
+                        <details className="conversation-history">
+                          <summary>Your shopping conversation</summary>
+                          {session.conversation.slice(-6).map((turn, i) => (
+                            <p key={`${turn.at}-${i}`}>
+                              <strong>
+                                {turn.role === "user" ? "You" : "DALE"}:
+                              </strong>{" "}
+                              {turn.role === "assistant"
+                                ? deviceText(turn.text)
+                                : turn.text}
+                            </p>
+                          ))}
+                        </details>
+                      )}
+                      {products.length > 1 && (
+                        <details className="catalog-comparison">
+                          <summary>Compare catalog facts</summary>
+                          <div style={{ overflowX: "auto", maxWidth: "100%" }}>
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Product</th>
+                                  <th>Price</th>
+                                  <th>Recorded specifications</th>
+                                  <th>Source</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {comparisonFacts(products, model).map((row) => (
+                                  <tr key={row.productId}>
+                                    <th>{row.name}</th>
+                                    <td>{formatMoney(row.price)}</td>
+                                    <td>
+                                      {row.specs.length
+                                        ? row.specs.join(" · ")
+                                        : "Not supplied; ask before buying"}
+                                    </td>
+                                    <td>{row.source}</td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                          <p className="muted">
+                            Catalog facts support this comparison. Paid
+                            placement does not change organic rank.
+                          </p>
+                        </details>
+                      )}
+                      <label className="catalog-search">
+                        <Search size={16} aria-hidden="true" />
+                        <input
+                          aria-label="Search matched products"
+                          placeholder="Search your selection by name or specification"
+                          value={catalogQuery}
+                          onChange={(e) => {
+                            setCatalogQuery(e.target.value);
+                            setVisibleLimit(12);
+                          }}
+                        />
+                      </label>
+                      <div className="product-grid">
+                        {visibleProducts
+                          .slice(0, visibleLimit)
+                          .map((product, index) => (
+                            <article className="product-card" key={product.id}>
+                              <div className="card-visual">
+                                <Link
+                                  href={`/product/${product.id}`}
+                                  style={{
+                                    display: "block",
+                                    textDecoration: "none",
+                                  }}
+                                >
+                                  <ProductArt product={product} />
+                                </Link>
+                                <Link
+                                  href={`/product/${product.id}`}
+                                  className="product-view"
+                                  aria-label={`View details for ${product.name}`}
+                                >
+                                  <ArrowRight size={17} />
+                                </Link>
+                                {index === 0 && !briefDirty && (
+                                  <span className="card-badge">
+                                    {weights
+                                      ? "Top weighted match for your brief"
+                                      : priority === "features"
+                                        ? "Top match for your brief"
+                                        : "Best price for your brief"}
+                                  </span>
+                                )}
+                              </div>
+                              <div className="card-details">
+                                <div className="product-topline">
+                                  <span className="fit-label">
+                                    <Check size={12} />{" "}
+                                    {briefDirty
+                                      ? "Confirm the exact variant and budget"
+                                      : isRetailCategory(product.category) ||
+                                          product.brand
+                                        ? "Matches recorded attributes"
+                                        : productFits(product, model)
+                                          ? `Fits ${deviceLabel(model)}`
+                                          : "Device fit requires confirmation"}
+                                  </span>
+                                  {product.sponsored && (
+                                    <span className="sponsored">Sponsored</span>
+                                  )}
+                                </div>
+                                <h3>
+                                  <Link
+                                    href={`/product/${product.id}`}
+                                    className="product-title"
+                                    style={{
+                                      textDecoration: "none",
+                                      color: "inherit",
+                                    }}
+                                  >
+                                    {product.name}
+                                  </Link>
+                                </h3>
+                                <p>{product.description}</p>
+                                <div className="spec-tags">
+                                  {product.specs.slice(0, 2).map((spec) => (
+                                    <span key={spec}>{spec}</span>
+                                  ))}
+                                </div>
+                                <small className="muted">
+                                  {weights
+                                    ? `Ranked with price weight ${weights.price} and feature weight ${weights.features}; feature match uses the listed specifications.`
+                                    : priority === "features" &&
+                                        preference &&
+                                        product.specs
+                                          .join(" ")
+                                          .toLowerCase()
+                                          .includes(preference.toLowerCase())
+                                      ? `Matches “${preference}” in listed specifications.`
+                                      : "Ranked by listed price."}
+                                </small>
+                                <CatalogEvidence product={product} />
+                                <div className="price-row">
+                                  <strong>{formatMoney(product.price)}</strong>
+                                  <small>
+                                    {product.offerKind === "sandbox"
+                                      ? "Sandbox offer · simulated stock"
+                                      : "Full price · shipping included"}
+                                  </small>
+                                </div>
+                                <div className="card-actions">
+                                  <button
+                                    className="button primary"
+                                    disabled={
+                                      busy || !isBuyer || product.comparisonOnly
+                                    }
+                                    onClick={() => void choose(product)}
+                                  >
+                                    Review purchase <ArrowRight size={14} />
+                                  </button>
+                                  <button
+                                    className="group-button"
+                                    aria-label={`Join group deal for ${product.name}`}
+                                    disabled={
+                                      busy || !isBuyer || product.comparisonOnly
+                                    }
+                                    onClick={() => {
+                                      if (!session) {
+                                        startShopping();
+                                        return;
+                                      }
+                                      void run(async () => {
+                                        await action({
+                                          action: "join_group",
+                                          productId: product.id,
+                                          model,
+                                        });
+                                        setTab("groups");
+                                      });
+                                    }}
+                                  >
+                                    <Users size={18} />
+                                  </button>
+                                </div>
+                              </div>
+                            </article>
+                          ))}
+                      </div>
+                      {(visibleProducts.length > visibleLimit ||
+                        (!session?.fixtureWorkspace &&
+                          briefDirty &&
+                          databaseCatalog.total > visibleProducts.length)) && (
+                        <div className="catalog-pagination">
+                          <p>
+                            Showing{" "}
+                            {Math.min(visibleLimit, visibleProducts.length)} of{" "}
+                            {!session?.fixtureWorkspace && briefDirty
+                              ? databaseCatalog.total
+                              : visibleProducts.length}{" "}
+                            matching products
+                          </p>
+                          <button
+                            className="editorial-link"
+                            onClick={() => {
+                              if (
+                                !session?.fixtureWorkspace &&
+                                briefDirty &&
+                                visibleLimit >= visibleProducts.length
+                              )
+                                databaseCatalog.loadMore();
+                              setVisibleLimit((limit) => limit + 12);
+                            }}
+                          >
+                            Show more products <ArrowRight size={16} />
+                          </button>
+                        </div>
+                      )}
+                      {!visibleProducts.length && (
+                        <Empty
+                          title={
+                            catalogQuery
+                              ? "Nothing in this selection"
+                              : !category && !isDeviceMode
+                                ? "Choose a category above"
+                                : "Let's refine your search"
+                          }
+                          detail={
+                            catalogQuery
+                              ? "Try another name or specification, or clear the search to see your matches."
+                              : !category && !isDeviceMode
+                                ? "Open a product category to explore its sourced records and filters."
+                                : "No recorded variant matches these constraints. Adjust your filters or budget; missing facts are not guessed."
+                          }
+                        />
+                      )}
+                    </div>
+                  </section>
+                )}
+                {/* DALE BUYER ASSURANCE (Professional Production-Grade Service Standards) */}
+                <motion.section
+                  className="concierge-suite"
+                  aria-labelledby="concierge-title"
+                  initial={{ opacity: 0.8, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.15 }}
+                >
+                  <div className="concierge-header">
+                    <div className="concierge-eyebrow">
+                      <Sparkles size={13} />
+                      <span>BUYER ASSURANCE</span>
+                    </div>
+                    <h2 id="concierge-title" className="concierge-title">
+                      Sourced choices. Your approval.
+                    </h2>
+                    <p className="concierge-subtitle">
+                      Manufacturer-linked specifications, separately approved
+                      checkout and evidence-based support.
+                    </p>
+                  </div>
+
+                  <div className="concierge-grid">
+                    {/* Pillar 1 */}
+                    <div className="concierge-card">
+                      <div>
+                        <div className="concierge-card-top">
+                          <div className="concierge-icon-frame">
+                            <ShieldCheck size={20} />
+                          </div>
+                          <span className="concierge-badge">
+                            RECORDED FACTS
+                          </span>
+                        </div>
+                        <h3 className="concierge-card-title">
+                          Evidence Before Recommendation
+                        </h3>
+                        <p className="concierge-card-desc">
+                          Compare exact recorded variants. Reviewed charging
+                          compatibility is separate from device purchases;
+                          missing specifications are disclosed.
+                        </p>
+                      </div>
+                      <button
+                        type="button"
+                        className="concierge-card-btn"
+                        onClick={() => {
+                          const el = document.getElementById("dale-chat");
+                          if (el) {
+                            el.scrollIntoView({ behavior: "smooth" });
+                            el.querySelector("textarea")?.focus();
+                          } else {
+                            setIsDeviceMode(true);
+                            setTimeout(() => {
+                              const chatEl =
+                                document.getElementById("dale-chat");
+                              chatEl?.scrollIntoView({ behavior: "smooth" });
+                              chatEl?.querySelector("textarea")?.focus();
+                            }, 80);
+                          }
+                        }}
+                      >
+                        <span>Check compatibility with DALE</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    </div>
+
+                    {/* Pillar 2 */}
+                    <div className="concierge-card">
+                      <div>
+                        <div className="concierge-card-top">
+                          <div className="concierge-icon-frame">
+                            <Lock size={19} />
+                          </div>
+                          <span className="concierge-badge">
+                            PAYPAL PROTECTION
+                          </span>
+                        </div>
+                        <h3 className="concierge-card-title">
+                          Secure Checkout & Protection
+                        </h3>
+                        <p className="concierge-card-desc">
+                          Review the exact sandbox amount and merchant before
+                          approval. PayPal eligibility depends on its terms; no
+                          unapproved substitutions.
+                        </p>
+                      </div>
+                      <button
+                        type="button"
+                        className="concierge-card-btn"
+                        onClick={() => {
+                          setScam(null);
+                          setModal({ kind: "scam" });
+                        }}
+                      >
+                        <span>Check a seller message</span>
+                        <ChevronRight size={13} />
+                      </button>
+                    </div>
+
+                    {/* Pillar 3 */}
+                    <div className="concierge-card">
+                      <div>
+                        <div className="concierge-card-top">
+                          <div className="concierge-icon-frame">
+                            <HeartHandshake size={20} />
+                          </div>
+                          <span className="concierge-badge">
+                            CUSTOMER SUPPORT
+                          </span>
+                        </div>
+                        <h3 className="concierge-card-title">
+                          30-Day Returns & Support
+                        </h3>
+                        <p className="concierge-card-desc">
+                          A 30-day demo return policy with customer-selected
+                          remedies, recorded evidence and human review. Shipping
+                          labels are simulated.
+                        </p>
+                      </div>
+                      <button
+                        type="button"
+                        className="concierge-card-btn"
+                        onClick={() => setTab("support")}
+                      >
+                        <span>Visit Customer Support</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    </div>
+                  </div>
+                </motion.section>
+
+                {/* STREAMLINED INQUIRY SECTION */}
+                <section
+                  className="luxury-inquiry-section"
+                  aria-labelledby="inquiry-title"
+                >
+                  <div className="inquiry-meta">
+                    <span className="inquiry-eyebrow">FREQUENTLY ASKED</span>
+                    <h2 id="inquiry-title" className="inquiry-title">
+                      Before you decide.
+                    </h2>
+                    <p className="inquiry-desc">
+                      Essential details on compatibility, payments, and our
+                      return policy.
+                    </p>
+                    <button
+                      type="button"
+                      className="inquiry-dale-btn"
+                      onClick={() => {
+                        const el = document.getElementById("dale-chat");
+                        if (el) {
+                          el.scrollIntoView({ behavior: "smooth" });
+                          el.querySelector("textarea")?.focus();
+                        } else {
+                          setIsDeviceMode(true);
+                          setTimeout(() => {
+                            const chatEl = document.getElementById("dale-chat");
+                            chatEl?.scrollIntoView({ behavior: "smooth" });
+                            chatEl?.querySelector("textarea")?.focus();
+                          }, 80);
+                        }
+                      }}
+                    >
+                      <Sparkles size={13} />
+                      <span>Ask DALE a question</span>
+                    </button>
+                  </div>
+
+                  <div className="inquiry-accordion">
+                    <details className="inquiry-item">
+                      <summary>
+                        <span>How are recommendations selected?</span>
+                        <span className="inquiry-toggle-icon">+</span>
+                      </summary>
+                      <p>
+                        We filter products strictly by your hardware
+                        specifications and budget. Sponsored listings never
+                        influence results, and conflicting preferences always
+                        require your confirmation.
+                      </p>
+                    </details>
+                    <details className="inquiry-item">
+                      <summary>
+                        <span>What happens if I need to make a return?</span>
+                        <span className="inquiry-toggle-icon">+</span>
+                      </summary>
+                      <p>
+                        You can request a return directly from My Orders within
+                        30 days of delivery. Demo return labels are simulated,
+                        and cases require human review.
+                      </p>
+                    </details>
+                    <details className="inquiry-item">
+                      <summary>
+                        <span>
+                          How are support and return requests reviewed?
+                        </span>
+                        <span className="inquiry-toggle-icon">+</span>
+                      </summary>
+                      <p>
+                        Automated checks assist with initial intake, but every
+                        claim is reviewed by human support specialists before
+                        any decision is made.
+                      </p>
+                    </details>
+                    <details className="inquiry-item">
+                      <summary>
+                        <span>How do group purchase discounts work?</span>
+                        <span className="inquiry-toggle-icon">+</span>
+                      </summary>
+                      <p>
+                        Each participant completes checkout independently. If
+                        group participation changes, your locked purchase terms
+                        and price remain unchanged.
+                      </p>
+                    </details>
+                  </div>
+                </section>
+                <div
+                  className="mobile-dale-dock"
+                  aria-label="Mobile DALE Chat Dock"
                 >
                   <button
                     type="button"
-                    className={`cat-pill ${isDeviceMode && category === "" ? "active" : ""}`}
-                    onClick={() => {
-                      setIsDeviceMode(true);
-                      setModel(model === lifestyleProfile ? "Atlas 14" : model);
-                      setCategory("");
-                      setProducts(
-                        searchCatalog({
-                          model: model === lifestyleProfile ? "Atlas 14" : model,
-                          category: "",
-                          budget: Math.round(Number(budget) * 100),
-                          preference,
-                          priority,
-                          weights,
-                        }),
-                      );
-                    }}
-                  >
-                    Electronics for my device ({catalog.filter((p) => p.compatibleModels.includes(model === lifestyleProfile ? "Atlas 14" : model)).length})
-                  </button>
-                  {categoryIds.map((id) => (
-                    <button
-                      key={id}
-                      type="button"
-                      className={`cat-pill ${category === id ? "active" : ""}`}
-                      onClick={() => browseCollection(id)}
-                    >
-                      {categoryTitles[id]} ({catalog.filter((p) => p.category === id).length})
-                    </button>
-                  ))}
-                </div>}
-                <RetailFilters facets={databaseCatalog.summary?.facets[category]} category={category} fixtures={Boolean(session?.fixtureWorkspace)} value={requirements} onChange={(value) => { setRequirements(value); setBriefDirty(true); setProducts(searchCatalog({ model, category, budget: 1000000, requirements: value }, session?.fixtureWorkspace ? [...catalog, ...publicCatalog] : publicCatalog)); }} />
-                {databaseCatalog.error && <p role="alert">{databaseCatalog.error}</p>}
-                <div className="assistant-note">
-                  <span className="assistant-icon">
-                    <Sparkles size={17} />
-                  </span>
-                  <p>{deviceText(summary)}</p>
-                </div>
-                {!!questions.length && (
-                  <div className="analysis-panel">
-                    <h3>Let's confirm the details.</h3>
-                    {questions.map((question) => (
-                      <p key={question}>{deviceText(question)}</p>
-                    ))}
-                    <button
-                      className="button secondary small"
-                      disabled={busy || !models.includes(model)}
-                      onClick={() => void findProducts(true)}
-                    >
-                      Confirm selected requirements and budget
-                    </button>
-                  </div>
-                )}
-                {!!session?.conversation.length && (
-                  <details className="conversation-history">
-                    <summary>Your shopping conversation</summary>
-                    {session.conversation.slice(-6).map((turn, i) => (
-                      <p key={`${turn.at}-${i}`}>
-                        <strong>
-                          {turn.role === "user" ? "You" : "DALE"}:
-                        </strong>{" "}
-                        {turn.role === "assistant"
-                          ? deviceText(turn.text)
-                          : turn.text}
-                      </p>
-                    ))}
-                  </details>
-                )}
-                {products.length > 1 && (
-                  <details className="catalog-comparison">
-                    <summary>Compare catalog facts</summary>
-                    <div style={{ overflowX: "auto", maxWidth: "100%" }}>
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Recorded specifications</th>
-                            <th>Source</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {comparisonFacts(products, model).map((row) => (
-                            <tr key={row.productId}>
-                              <th>{row.name}</th>
-                              <td>{formatMoney(row.price)}</td>
-                              <td>
-                                {row.specs.length
-                                  ? row.specs.join(" · ")
-                                  : "Not supplied; ask before buying"}
-                              </td>
-                              <td>{row.source}</td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                    <p className="muted">
-                      Catalog facts support this comparison. Paid placement does
-                      not change organic rank.
-                    </p>
-                  </details>
-                )}
-                <label className="catalog-search">
-                  <Search size={16} aria-hidden="true" />
-                  <input
-                    aria-label="Search matched products"
-                    placeholder="Search your selection by name or specification"
-                    value={catalogQuery}
-                    onChange={(e) => {
-                      setCatalogQuery(e.target.value);
-                      setVisibleLimit(12);
-                    }}
-                  />
-                </label>
-                <div className="product-grid">
-                  {visibleProducts
-                    .slice(0, visibleLimit)
-                    .map((product, index) => (
-                      <article
-                        className="product-card"
-                        key={product.id}
-                      >
-                        <div className="card-visual">
-                          <Link href={`/product/${product.id}`} style={{ display: "block", textDecoration: "none" }}>
-                            <ProductArt product={product} />
-                          </Link>
-                          <Link
-                            href={`/product/${product.id}`}
-                            className="product-view"
-                            aria-label={`View details for ${product.name}`}
-                          >
-                            <ArrowRight size={17} />
-                          </Link>
-                          {index === 0 && !briefDirty && (
-                            <span className="card-badge">
-                              {weights
-                                ? "Top weighted match for your brief"
-                                : priority === "features"
-                                  ? "Top match for your brief"
-                                  : "Best price for your brief"}
-                            </span>
-                          )}
-                        </div>
-                        <div className="card-details">
-                          <div className="product-topline">
-                            <span className="fit-label">
-                              <Check size={12} />{" "}
-                              {briefDirty
-                                ? "Confirm the exact variant and budget"
-                                : isRetailCategory(product.category) || product.brand ? "Matches recorded attributes" : productFits(product, model) ? `Fits ${deviceLabel(model)}` : "Device fit requires confirmation"}
-                            </span>
-                            {product.sponsored && (
-                              <span className="sponsored">Sponsored</span>
-                            )}
-                          </div>
-                          <h3>
-                            <Link
-                              href={`/product/${product.id}`}
-                              className="product-title"
-                              style={{ textDecoration: "none", color: "inherit" }}
-                            >
-                              {product.name}
-                            </Link>
-                          </h3>
-                          <p>{product.description}</p>
-                          <div className="spec-tags">
-                            {product.specs.slice(0, 2).map((spec) => (
-                              <span key={spec}>{spec}</span>
-                            ))}
-                          </div>
-                          <small className="muted">
-                            {weights
-                              ? `Ranked with price weight ${weights.price} and feature weight ${weights.features}; feature match uses the listed specifications.`
-                              : priority === "features" &&
-                                  preference &&
-                                  product.specs
-                                    .join(" ")
-                                    .toLowerCase()
-                                    .includes(preference.toLowerCase())
-                                ? `Matches “${preference}” in listed specifications.`
-                                : "Ranked by listed price."}
-                          </small>
-                          <CatalogEvidence product={product} />
-                          <div className="price-row">
-                            <strong>{formatMoney(product.price)}</strong>
-                            <small>{product.offerKind === "sandbox" ? "Sandbox offer · simulated stock" : "Full price · shipping included"}</small>
-                          </div>
-                          <div className="card-actions">
-                            <button
-                              className="button primary"
-                              disabled={busy || !isBuyer || product.comparisonOnly}
-                              onClick={() => void choose(product)}
-                            >
-                              Review purchase <ArrowRight size={14} />
-                            </button>
-                            <button
-                              className="group-button"
-                              aria-label={`Join group deal for ${product.name}`}
-                              disabled={busy || !isBuyer || product.comparisonOnly}
-                              onClick={() => {
-                                if (!session) {
-                                  startShopping();
-                                  return;
-                                }
-                                void run(async () => {
-                                  await action({
-                                    action: "join_group",
-                                    productId: product.id,
-                                    model,
-                                  });
-                                  setTab("groups");
-                                });
-                              }}
-                            >
-                              <Users size={18} />
-                            </button>
-                          </div>
-                        </div>
-                      </article>
-                    ))}
-                </div>
-                {(visibleProducts.length > visibleLimit || (!session?.fixtureWorkspace && briefDirty && databaseCatalog.total > visibleProducts.length)) && (
-                  <div className="catalog-pagination">
-                    <p>
-                      Showing {Math.min(visibleLimit, visibleProducts.length)}{" "}
-                      of {!session?.fixtureWorkspace && briefDirty ? databaseCatalog.total : visibleProducts.length} matching products
-                    </p>
-                    <button
-                      className="editorial-link"
-                      onClick={() => { if (!session?.fixtureWorkspace && briefDirty && visibleLimit >= visibleProducts.length) databaseCatalog.loadMore(); setVisibleLimit(limit => limit + 12); }}
-                    >
-                      Show more products <ArrowRight size={16} />
-                    </button>
-                  </div>
-                )}
-                {!visibleProducts.length && (
-                  <Empty
-                    title={
-                      catalogQuery
-                        ? "Nothing in this selection"
-                        : !category && !isDeviceMode ? "Choose a category above"
-                        : "Let's refine your search"
-                    }
-                    detail={
-                      catalogQuery
-                        ? "Try another name or specification, or clear the search to see your matches."
-                        : !category && !isDeviceMode ? "Open a product category to explore its sourced records and filters." : "No recorded variant matches these constraints. Adjust your filters or budget; missing facts are not guessed."
-                    }
-                  />
-                )}
-              </div>
-            </section>
-            )}
-            {/* DALE BUYER ASSURANCE (Professional Production-Grade Service Standards) */}
-            <motion.section
-              className="concierge-suite"
-              aria-labelledby="concierge-title"
-              initial={{ opacity: 0.8, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.15 }}
-            >
-              <div className="concierge-header">
-                <div className="concierge-eyebrow">
-                  <Sparkles size={13} />
-                  <span>BUYER ASSURANCE</span>
-                </div>
-                <h2 id="concierge-title" className="concierge-title">
-                  Sourced choices. Your approval.
-                </h2>
-                <p className="concierge-subtitle">
-                  Manufacturer-linked specifications, separately approved checkout and evidence-based support.
-                </p>
-              </div>
-
-              <div className="concierge-grid">
-                {/* Pillar 1 */}
-                <div className="concierge-card">
-                  <div>
-                    <div className="concierge-card-top">
-                      <div className="concierge-icon-frame">
-                        <ShieldCheck size={20} />
-                      </div>
-                      <span className="concierge-badge">RECORDED FACTS</span>
-                    </div>
-                    <h3 className="concierge-card-title">Evidence Before Recommendation</h3>
-                    <p className="concierge-card-desc">
-                      Compare exact recorded variants. Reviewed charging compatibility is separate from device purchases; missing specifications are disclosed.
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    className="concierge-card-btn"
+                    className="mobile-dale-dock-btn"
                     onClick={() => {
                       const el = document.getElementById("dale-chat");
                       if (el) {
                         el.scrollIntoView({ behavior: "smooth" });
-                        el.querySelector("textarea")?.focus();
-                      } else {
-                        setIsDeviceMode(true);
-                        setTimeout(() => {
-                          const chatEl = document.getElementById("dale-chat");
-                          chatEl?.scrollIntoView({ behavior: "smooth" });
-                          chatEl?.querySelector("textarea")?.focus();
-                        }, 80);
+                        const input = el.querySelector("textarea");
+                        input?.focus();
                       }
                     }}
                   >
-                    <span>Check compatibility with DALE</span>
-                    <ArrowRight size={13} />
+                    <span className="live-status-pulse" />
+                    <span className="mobile-dale-text">
+                      <strong>Chat with DALE</strong> · Live advice beside
+                      products
+                    </span>
+                    <ArrowRight size={14} />
                   </button>
                 </div>
-
-                {/* Pillar 2 */}
-                <div className="concierge-card">
-                  <div>
-                    <div className="concierge-card-top">
-                      <div className="concierge-icon-frame">
-                        <Lock size={19} />
-                      </div>
-                      <span className="concierge-badge">PAYPAL PROTECTION</span>
-                    </div>
-                    <h3 className="concierge-card-title">Secure Checkout & Protection</h3>
-                    <p className="concierge-card-desc">
-                      Review the exact sandbox amount and merchant before approval. PayPal eligibility depends on its terms; no unapproved substitutions.
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    className="concierge-card-btn"
-                    onClick={() => {
-                      setScam(null);
-                      setModal({ kind: "scam" });
-                    }}
-                  >
-                    <span>Check a seller message</span>
-                    <ChevronRight size={13} />
-                  </button>
+              </>
+            ) : (
+              children
+            ))}
+          {tab === "groups" && (
+            <>
+              <PageHeading
+                eyebrow="GOOD DEALS, TOGETHER"
+                title="A little buying power."
+                detail="Each group shows its approved shopper threshold, discount and deadline. Each shopper pays independently. Your locked price stays yours."
+              />
+              {session?.demo && (
+                <div className="invite-panel">
+                  <p>
+                    For this private demo, switch Demo persona to Second shopper
+                    to join the same deal. Each shopper keeps a separate order
+                    and approval.
+                  </p>
                 </div>
-
-                {/* Pillar 3 */}
-                <div className="concierge-card">
-                  <div>
-                    <div className="concierge-card-top">
-                      <div className="concierge-icon-frame">
-                        <HeartHandshake size={20} />
-                      </div>
-                      <span className="concierge-badge">CUSTOMER SUPPORT</span>
-                    </div>
-                    <h3 className="concierge-card-title">30-Day Returns & Support</h3>
-                    <p className="concierge-card-desc">
-                      A 30-day demo return policy with customer-selected remedies, recorded evidence and human review. Shipping labels are simulated.
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    className="concierge-card-btn"
-                    onClick={() => setTab("support")}
-                  >
-                    <span>Visit Customer Support</span>
-                    <ArrowRight size={13} />
-                  </button>
-                </div>
-              </div>
-            </motion.section>
-
-            {/* STREAMLINED INQUIRY SECTION */}
-            <section className="luxury-inquiry-section" aria-labelledby="inquiry-title">
-              <div className="inquiry-meta">
-                <span className="inquiry-eyebrow">FREQUENTLY ASKED</span>
-                <h2 id="inquiry-title" className="inquiry-title">Before you decide.</h2>
-                <p className="inquiry-desc">
-                  Essential details on compatibility, payments, and our return policy.
-                </p>
+              )}
+              {session?.actor.role === "buyer" && !session.demo && (
                 <button
-                  type="button"
-                  className="inquiry-dale-btn"
+                  data-agent-control="Open account sign in"
+                  className="button secondary"
                   onClick={() => {
-                    const el = document.getElementById("dale-chat");
-                    if (el) {
-                      el.scrollIntoView({ behavior: "smooth" });
-                      el.querySelector("textarea")?.focus();
-                    } else {
-                      setIsDeviceMode(true);
-                      setTimeout(() => {
-                        const chatEl = document.getElementById("dale-chat");
-                        chatEl?.scrollIntoView({ behavior: "smooth" });
-                        chatEl?.querySelector("textarea")?.focus();
-                      }, 80);
-                    }
+                    setRole("buyer");
+                    setModal({ kind: "login" });
                   }}
                 >
-                  <Sparkles size={13} />
-                  <span>Ask DALE a question</span>
+                  Account / sign in
                 </button>
-              </div>
-
-              <div className="inquiry-accordion">
-                <details className="inquiry-item">
-                  <summary>
-                    <span>How are recommendations selected?</span>
-                    <span className="inquiry-toggle-icon">+</span>
-                  </summary>
-                  <p>
-                    We filter products strictly by your hardware specifications and budget. Sponsored listings never influence results, and conflicting preferences always require your confirmation.
-                  </p>
-                </details>
-                <details className="inquiry-item">
-                  <summary>
-                    <span>What happens if I need to make a return?</span>
-                    <span className="inquiry-toggle-icon">+</span>
-                  </summary>
-                  <p>
-                    You can request a return directly from My Orders within 30 days of delivery. Demo return labels are simulated, and cases require human review.
-                  </p>
-                </details>
-                <details className="inquiry-item">
-                  <summary>
-                    <span>How are support and return requests reviewed?</span>
-                    <span className="inquiry-toggle-icon">+</span>
-                  </summary>
-                  <p>
-                    Automated checks assist with initial intake, but every claim is reviewed by human support specialists before any decision is made.
-                  </p>
-                </details>
-                <details className="inquiry-item">
-                  <summary>
-                    <span>How do group purchase discounts work?</span>
-                    <span className="inquiry-toggle-icon">+</span>
-                  </summary>
-                  <p>
-                    Each participant completes checkout independently. If group participation changes, your locked purchase terms and price remain unchanged.
-                  </p>
-                </details>
-              </div>
-            </section>
-            <div className="mobile-dale-dock" aria-label="Mobile DALE Chat Dock">
-              <button
-                type="button"
-                className="mobile-dale-dock-btn"
-                onClick={() => {
-                  const el = document.getElementById("dale-chat");
-                  if (el) {
-                    el.scrollIntoView({ behavior: "smooth" });
-                    const input = el.querySelector("textarea");
-                    input?.focus();
-                  }
-                }}
-              >
-                <span className="live-status-pulse" />
-                <span className="mobile-dale-text">
-                  <strong>Chat with DALE</strong> · Live advice beside products
-                </span>
-                <ArrowRight size={14} />
-              </button>
-            </div>
-          </>
-        ) : (
-          children
-        ))}
-        {tab === "groups" && (
-          <>
-            <PageHeading
-              eyebrow="GOOD DEALS, TOGETHER"
-              title="A little buying power."
-              detail="Each group shows its approved shopper threshold, discount and deadline. Each shopper pays independently. Your locked price stays yours."
-            />
-            {session?.demo && (
-              <div className="invite-panel">
-                <p>
-                  For this private demo, switch Demo persona to Second shopper
-                  to join the same deal. Each shopper keeps a separate order and
-                  approval.
-                </p>
-              </div>
-            )}
-            {session?.actor.role === "buyer" && !session.demo && <button data-agent-control="Open account sign in" className="button secondary" onClick={() => { setRole("buyer"); setModal({ kind: "login" }); }}>Account / sign in</button>}
-            {session?.invite && !session.demo && (
-              <div className="invite-panel">
-                <div>
-                  <strong>Invite someone to your group</strong>
-                  <p className="muted">
-                    Use a separate browser session. Your order and payment
-                    remain private.
-                  </p>
-                </div>
-                <button
-                  className="button secondary"
-                  onClick={() =>
-                    void run(async () => {
-                      await navigator.clipboard.writeText(`${window.location.origin}/groups`);
-                      setNotice(
-                        "Store link copied. Open it on another device, start shopping and commit to the same product group.",
-                      );
-                    })
-                  }
-                >
-                  <Copy size={16} /> Copy invitation
-                </button>
-              </div>
-            )}
-            {session?.groups.length ? (
-              <div className="group-grid">
-                {session.groups.map((group) => {
-                  const product = resolveProduct(group.productId);
-                  return (
-                    <article className="group-card" key={group.id}>
-                      <ProductArt product={product} compact />
-                      <div>
-                        <span className="eyebrow">
-                          {group.status === "ready"
-                            ? "DISCOUNT UNLOCKED"
-                            : "BUILDING A GROUP"}
-                        </span>
-                        <h3>{product.name}</h3>
-                        <p>
-                          {deviceLabel(group.model)} · {group.memberCount} of{" "}
-                          {group.terms.minimumMembers}
-                          commitments
-                        </p>
-                        <div className="progress">
-                          <span
-                            style={{
-                              width: `${Math.min(100, (group.memberCount / group.terms.minimumMembers) * 100)}%`,
-                            }}
-                          />
-                        </div>
-                        <p className="muted">
-                          {group.status === "ready"
-                            ? `Your price: ${formatMoney(group.amount!)}. Valid until ${new Date(group.checkoutExpiresAt!).toLocaleTimeString()}.`
-                            : `${group.terms.discountPercent}% off if the threshold is met. No payment is taken until you approve checkout.`}
-                        </p>
-                        {group.joined && group.status === "ready" ? (
-                          <button
-                            className="button primary"
-                            onClick={() => void choose(product, group.id)}
-                            disabled={busy}
-                          >
-                            Review group purchase <ArrowRight size={15} />
-                          </button>
-                        ) : group.joined ? (
-                          <button
-                            className="button secondary"
-                            onClick={() =>
-                              void run(async () => {
-                                await action({
-                                  action: "leave_group",
-                                  groupId: group.id,
-                                });
-                              })
-                            }
-                            disabled={busy}
-                          >
-                            Leave commitment
-                          </button>
-                        ) : (
-                          <button
-                            className="button secondary"
-                            onClick={() =>
-                              void run(async () => {
-                                await action({
-                                  action: "join_group",
-                                  productId: group.productId,
-                                  model: group.model,
-                                });
-                              })
-                            }
-                            disabled={busy || !isBuyer}
-                          >
-                            Join this group
-                          </button>
-                        )}
-                      </div>
-                    </article>
-                  );
-                })}
-              </div>
-            ) : (
-              <Empty
-                title="Your first group starts with you"
-                detail="Choose the people icon on a product to create a group deal."
-              />
-            )}
-          </>
-        )}
-        {tab === "orders" && (
-          <>
-            <PageHeading
-              eyebrow={
-                isBuyer ? "YOUR SHOPPING JOURNEY" : "FULFILLMENT WORKSPACE"
-              }
-              title={
-                isBuyer ? "Every order. Looked after." : "Orders and dispatch."
-              }
-              detail={
-                isBuyer
-                  ? "Follow delivery, review payment, or tell us what needs putting right."
-                  : "Record dispatch evidence before shipping. Carrier events are simulated."
-              }
-            />
-            {session && (
-              <div className="workspace-overview" aria-label="Order overview">
-                <div>
-                  <strong>{session.orders.length}</strong>
-                  <span>Recorded orders</span>
-                </div>
-                <div>
-                  <strong>
-                    {
-                      session.orders.filter((order) => !!order.deliveredAt)
-                        .length
+              )}
+              {session?.invite && !session.demo && (
+                <div className="invite-panel">
+                  <div>
+                    <strong>Invite someone to your group</strong>
+                    <p className="muted">
+                      Use a separate browser session. Your order and payment
+                      remain private.
+                    </p>
+                  </div>
+                  <button
+                    className="button secondary"
+                    onClick={() =>
+                      void run(async () => {
+                        await navigator.clipboard.writeText(
+                          `${window.location.origin}/groups`,
+                        );
+                        setNotice(
+                          "Store link copied. Open it on another device, start shopping and commit to the same product group.",
+                        );
+                      })
                     }
-                  </strong>
-                  <span>Delivered</span>
+                  >
+                    <Copy size={16} /> Copy invitation
+                  </button>
                 </div>
-                <div>
-                  <strong>{session.cases.length}</strong>
-                  <span>Support requests</span>
-                </div>
-              </div>
-            )}
-            {session?.orders.length ? (
-              <div className="order-list">
-                {session.orders.map((order) => (
-                  <article className="order-card" key={order.id}>
-                    <div className="order-heading">
-                      <ProductArt
-                        product={resolveProduct(order.quote.productId)}
-                        compact
-                      />
-                      <div>
-                        <span className="eyebrow">
-                          ORDER {order.id.slice(0, 8).toUpperCase()}
-                        </span>
-                        <h3>{resolveProduct(order.quote.productId).name}</h3>
-                        <p>
-                          {deviceLabel(order.quote.model)} ·{" "}
-                          {order.replacementOf
-                            ? "No additional charge"
-                            : formatMoney(order.quote.amount)}
-                        </p>
-                      </div>
-                      <span className="status-chip">
-                        {order.status.replaceAll("_", " ")}
-                      </span>
-                    </div>
-                    {order.quote.deliveryBy && (
-                      <p className="muted">
-                        Recorded delivery promise:{" "}
-                        {new Date(order.quote.deliveryBy).toLocaleDateString()}
-                      </p>
-                    )}
-                    {order.fulfillmentIssue && (
-                      <div className="analysis-panel">
-                        <h4>Fulfillment {order.fulfillmentIssue.kind}</h4>
-                        <p>{order.fulfillmentIssue.reason}</p>
-                        <p>
-                          Your payment status is shown separately. Choose your
-                          preferred remedy through support.
-                        </p>
-                      </div>
-                    )}
-                    <div className="timeline">
-                      {order.events.map((entry, i) => (
-                        <div key={i}>
-                          <span className="timeline-dot" />
-                          <p>{entry.text}</p>
-                          <small>{new Date(entry.at).toLocaleString()}</small>
-                        </div>
-                      ))}
-                    </div>
-                    <ProviderReconciliation
-                      order={order}
-                      reviewer={session.actor.role === "reviewer"}
-                      busy={busy}
-                      refresh={async (refundReferences) => {
-                        await run(async () => {
-                          await action({
-                            action: "provider_reconcile",
-                            orderId: order.id,
-                            refundReferences,
-                          });
-                          setNotice(
-                            "Provider facts refreshed. Pending or ambiguous adjustments still require reconciliation; no new money action was performed.",
-                          );
-                        });
-                      }}
-                    />
-                    <div className="order-footer">
-                      <small className="muted">
-                        {order.captureId
-                          ? `Payment reference: ${order.captureId}`
-                          : "No captured payment"}
-                      </small>
-                      <div className="inline-actions">
-                        {isBuyer && order.status === "checkout_pending" && (
-                          <button
-                            data-agent-control={`Review checkout for order ${order.id}`}
-                            className="button secondary small"
-                            onClick={() =>
-                              setModal({ kind: "quote", quote: order.quote })
-                            }
-                          >
-                            Continue checkout
-                          </button>
-                        )}
-                        {isBuyer &&
-                          order.captureId &&
-                          !["refunded", "canceled"].includes(order.status) && (
-                            <button
-                              data-agent-control={`Open help for order ${order.id}`}
-                              className="button secondary small"
-                              onClick={() => {
-                                if (order.returnId) setTab("support");
-                                else setModal({ kind: "return", order });
+              )}
+              {session?.groups.length ? (
+                <div className="group-grid">
+                  {session.groups.map((group) => {
+                    const product = resolveProduct(group.productId);
+                    return (
+                      <article className="group-card" key={group.id}>
+                        <ProductArt product={product} compact />
+                        <div>
+                          <span className="eyebrow">
+                            {group.status === "ready"
+                              ? "DISCOUNT UNLOCKED"
+                              : "BUILDING A GROUP"}
+                          </span>
+                          <h3>{product.name}</h3>
+                          <p>
+                            {deviceLabel(group.model)} · {group.memberCount} of{" "}
+                            {group.terms.minimumMembers}
+                            commitments
+                          </p>
+                          <div className="progress">
+                            <span
+                              style={{
+                                width: `${Math.min(100, (group.memberCount / group.terms.minimumMembers) * 100)}%`,
                               }}
+                            />
+                          </div>
+                          <p className="muted">
+                            {group.status === "ready"
+                              ? `Your price: ${formatMoney(group.amount!)}. Valid until ${new Date(group.checkoutExpiresAt!).toLocaleTimeString()}.`
+                              : `${group.terms.discountPercent}% off if the threshold is met. No payment is taken until you approve checkout.`}
+                          </p>
+                          {group.joined && group.status === "ready" ? (
+                            <button
+                              className="button primary"
+                              onClick={() => void choose(product, group.id)}
+                              disabled={busy}
                             >
-                              Get help / return
+                              Review group purchase <ArrowRight size={15} />
+                            </button>
+                          ) : group.joined ? (
+                            <button
+                              className="button secondary"
+                              onClick={() =>
+                                void run(async () => {
+                                  await action({
+                                    action: "leave_group",
+                                    groupId: group.id,
+                                  });
+                                })
+                              }
+                              disabled={busy}
+                            >
+                              Leave commitment
+                            </button>
+                          ) : (
+                            <button
+                              className="button secondary"
+                              onClick={() =>
+                                void run(async () => {
+                                  await action({
+                                    action: "join_group",
+                                    productId: group.productId,
+                                    model: group.model,
+                                  });
+                                })
+                              }
+                              disabled={busy || !isBuyer}
+                            >
+                              Join this group
                             </button>
                           )}
-                        {session?.actor.role === "seller" &&
-                          ["checkout_pending", "paid", "shipped"].includes(
-                            order.status,
-                          ) &&
-                          !order.fulfillmentIssue && (
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+              ) : (
+                <Empty
+                  title="Your first group starts with you"
+                  detail="Choose the people icon on a product to create a group deal."
+                />
+              )}
+            </>
+          )}
+          {tab === "orders" && (
+            <>
+              <PageHeading
+                eyebrow={
+                  isBuyer ? "YOUR SHOPPING JOURNEY" : "FULFILLMENT WORKSPACE"
+                }
+                title={
+                  isBuyer
+                    ? "Every order. Looked after."
+                    : "Orders and dispatch."
+                }
+                detail={
+                  isBuyer
+                    ? "Follow delivery, review payment, or tell us what needs putting right."
+                    : "Record dispatch evidence before shipping. Carrier events are simulated."
+                }
+              />
+              {session && (
+                <div className="workspace-overview" aria-label="Order overview">
+                  <div>
+                    <strong>{session.orders.length}</strong>
+                    <span>Recorded orders</span>
+                  </div>
+                  <div>
+                    <strong>
+                      {
+                        session.orders.filter((order) => !!order.deliveredAt)
+                          .length
+                      }
+                    </strong>
+                    <span>Delivered</span>
+                  </div>
+                  <div>
+                    <strong>{session.cases.length}</strong>
+                    <span>Support requests</span>
+                  </div>
+                </div>
+              )}
+              {session?.orders.length ? (
+                <div className="order-list">
+                  {session.orders.map((order) => (
+                    <article className="order-card" key={order.id}>
+                      <div className="order-heading">
+                        <ProductArt
+                          product={resolveProduct(order.quote.productId)}
+                          compact
+                        />
+                        <div>
+                          <span className="eyebrow">
+                            ORDER {order.id.slice(0, 8).toUpperCase()}
+                          </span>
+                          <h3>{resolveProduct(order.quote.productId).name}</h3>
+                          <p>
+                            {deviceLabel(order.quote.model)} ·{" "}
+                            {order.replacementOf
+                              ? "No additional charge"
+                              : formatMoney(order.quote.amount)}
+                          </p>
+                        </div>
+                        <span className="status-chip">
+                          {order.status.replaceAll("_", " ")}
+                        </span>
+                      </div>
+                      {order.quote.deliveryBy && (
+                        <p className="muted">
+                          Recorded delivery promise:{" "}
+                          {new Date(
+                            order.quote.deliveryBy,
+                          ).toLocaleDateString()}
+                        </p>
+                      )}
+                      {order.fulfillmentIssue && (
+                        <div className="analysis-panel">
+                          <h4>Fulfillment {order.fulfillmentIssue.kind}</h4>
+                          <p>{order.fulfillmentIssue.reason}</p>
+                          <p>
+                            Your payment status is shown separately. Choose your
+                            preferred remedy through support.
+                          </p>
+                        </div>
+                      )}
+                      <div className="timeline">
+                        {order.events.map((entry, i) => (
+                          <div key={i}>
+                            <span className="timeline-dot" />
+                            <p>{entry.text}</p>
+                            <small>{new Date(entry.at).toLocaleString()}</small>
+                          </div>
+                        ))}
+                      </div>
+                      <ProviderReconciliation
+                        order={order}
+                        reviewer={session.actor.role === "reviewer"}
+                        busy={busy}
+                        refresh={async (refundReferences) => {
+                          await run(async () => {
+                            await action({
+                              action: "provider_reconcile",
+                              orderId: order.id,
+                              refundReferences,
+                            });
+                            setNotice(
+                              "Provider facts refreshed. Pending or ambiguous adjustments still require reconciliation; no new money action was performed.",
+                            );
+                          });
+                        }}
+                      />
+                      <div className="order-footer">
+                        <small className="muted">
+                          {order.captureId
+                            ? `Payment reference: ${order.captureId}`
+                            : "No captured payment"}
+                        </small>
+                        <div className="inline-actions">
+                          {isBuyer && order.status === "checkout_pending" && (
                             <button
+                              data-agent-control={`Review checkout for order ${order.id}`}
                               className="button secondary small"
                               onClick={() =>
-                                setModal({ kind: "cancel", order })
+                                setModal({
+                                  kind: "quote",
+                                  quote: order.quote,
+                                  product: resolveProduct(
+                                    order.quote.productId,
+                                  ),
+                                })
                               }
                             >
-                              Cancel fulfillment
+                              Continue checkout
                             </button>
                           )}
-                        {session?.actor.role === "seller" &&
-                          order.fulfillmentIssue?.kind !== "canceled" &&
-                          ["paid", "replacement"].includes(order.status) && (
-                            <>
+                          {isBuyer &&
+                            order.captureId &&
+                            !["refunded", "canceled"].includes(
+                              order.status,
+                            ) && (
+                              <button
+                                data-agent-control={`Open help for order ${order.id}`}
+                                className="button secondary small"
+                                onClick={() => {
+                                  if (order.returnId) setTab("support");
+                                  else setModal({ kind: "return", order });
+                                }}
+                              >
+                                Get help / return
+                              </button>
+                            )}
+                          {session?.actor.role === "seller" &&
+                            ["checkout_pending", "paid", "shipped"].includes(
+                              order.status,
+                            ) &&
+                            !order.fulfillmentIssue && (
                               <button
                                 className="button secondary small"
                                 onClick={() =>
-                                  setModal({ kind: "evidence", order })
+                                  setModal({ kind: "cancel", order })
                                 }
                               >
-                                Record dispatch
+                                Cancel fulfillment
                               </button>
+                            )}
+                          {session?.actor.role === "seller" &&
+                            order.fulfillmentIssue?.kind !== "canceled" &&
+                            ["paid", "replacement"].includes(order.status) && (
+                              <>
+                                <button
+                                  className="button secondary small"
+                                  onClick={() =>
+                                    setModal({ kind: "evidence", order })
+                                  }
+                                >
+                                  Record dispatch
+                                </button>
+                                <button
+                                  className="button primary small"
+                                  onClick={() =>
+                                    void run(async () => {
+                                      await action({
+                                        action: "ship",
+                                        orderId: order.id,
+                                        status: "shipped",
+                                      });
+                                    })
+                                  }
+                                >
+                                  Simulate shipment
+                                </button>
+                              </>
+                            )}
+                          {session?.actor.role === "seller" &&
+                            order.status === "shipped" &&
+                            order.fulfillmentIssue?.kind !== "canceled" && (
                               <button
                                 className="button primary small"
                                 onClick={() =>
@@ -1792,1438 +2173,1512 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                                     await action({
                                       action: "ship",
                                       orderId: order.id,
-                                      status: "shipped",
+                                      status: "delivered",
                                     });
                                   })
                                 }
                               >
-                                Simulate shipment
+                                Simulate delivery
                               </button>
-                            </>
-                          )}
-                        {session?.actor.role === "seller" &&
-                          order.status === "shipped" &&
-                          order.fulfillmentIssue?.kind !== "canceled" && (
-                            <button
-                              className="button primary small"
-                              onClick={() =>
-                                void run(async () => {
-                                  await action({
-                                    action: "ship",
-                                    orderId: order.id,
-                                    status: "delivered",
-                                  });
-                                })
-                              }
-                            >
-                              Simulate delivery
-                            </button>
-                          )}
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            ) : (
-              <Empty
-                title="A good find is waiting"
-                detail="Your purchases will appear here, with payment status and support in one place."
-              />
-            )}
-          </>
-        )}
-        {tab === "support" && (
-          <>
-            <PageHeading
-              eyebrow="WE STAY WITH YOU"
-              title="Let's put it right."
-              detail="Your request stays open while we review it. Missing evidence never means an automatic accusation or denial."
-            />
-            {session && (
-              <div className="workspace-overview" aria-label="Support overview">
-                <div>
-                  <strong>
-                    {
-                      session.cases.filter((item) => item.status !== "resolved")
-                        .length
-                    }
-                  </strong>
-                  <span>Open requests</span>
-                </div>
-                <div>
-                  <strong>
-                    {
-                      session.cases.filter((item) => item.status === "resolved")
-                        .length
-                    }
-                  </strong>
-                  <span>Resolved requests</span>
-                </div>
-                <div>
-                  <strong>Human</strong>
-                  <span>Review available</span>
-                </div>
-              </div>
-            )}
-            {isBuyer && supportDraft && (
-              <div className="analysis-panel" aria-label="Voice support draft">
-                <strong>Your support draft</strong>
-                <p>{supportDraft.text}</p>
-                <p className="muted">
-                  Choose an order, then correct and review the issue and
-                  preferred resolution before submitting.
-                </p>
-                <button
-                  className="button secondary"
-                  onClick={() => setTab("orders")}
-                >
-                  Choose an order for this draft
-                </button>
-                <button
-                  className="button secondary"
-                  onClick={() => setSupportDraft(null)}
-                >
-                  Discard draft
-                </button>
-              </div>
-            )}
-            {session?.cases.length ? (
-              <div className="case-list">
-                {session.cases.map((item) => (
-                  <article className="case-card" key={item.id}>
-                    <div className="case-heading">
-                      <div>
-                        <span className="eyebrow">
-                          CASE {item.id.slice(0, 8).toUpperCase()}
-                        </span>
-                        <h3>
-                          {item.reason.replaceAll("_", " ")} · {item.request}{" "}
-                          requested
-                        </h3>
-                        <p className="muted">
-                          Seller response due{" "}
-                          {new Date(item.deadlineAt).toLocaleString()} ·{" "}
-                          {item.sellerResponded
-                            ? "Seller responded"
-                            : "Awaiting seller"}
-                        </p>
-                      </div>
-                      <span className="status-chip">
-                        {item.status.replaceAll("_", " ")}
-                      </span>
-                    </div>
-                    {isBuyer &&
-                      !item.remedy &&
-                      ![
-                        "resolved",
-                        "approved",
-                        "refund_pending",
-                        "refund_failed",
-                      ].includes(item.status) && (
-                        <button
-                          className="button secondary small"
-                          onClick={() =>
-                            void run(async () => {
-                              await action({
-                                action: "choose_remedy",
-                                caseId: item.id,
-                                request:
-                                  item.request === "refund"
-                                    ? "replacement"
-                                    : "refund",
-                              });
-                              setNotice(
-                                "Your remedy choice is updated. A reviewer will follow your preference before execution.",
-                              );
-                            })
-                          }
-                        >
-                          Choose{" "}
-                          {item.request === "refund" ? "replacement" : "refund"}{" "}
-                          instead
-                        </button>
-                      )}
-                    {item.eligibility && (
-                      <p className="muted">{item.eligibility.explanation}</p>
-                    )}
-                    {item.returnShipment && (
-                      <div className="analysis-panel">
-                        <h4>
-                          Return arrangement ·{" "}
-                          {item.returnShipment.status.replaceAll("_", " ")}
-                        </h4>
-                        <p>{item.returnShipment.reason}</p>
-                        <p>
-                          Customer return shipping cost: $0.00. Carrier records
-                          are simulated in this demo.
-                        </p>
-                        {item.returnShipment.labelReference && (
-                          <p>
-                            Prepaid label reference:{" "}
-                            {item.returnShipment.labelReference}
-                          </p>
-                        )}
-                        {item.returnShipment.trackingReference && (
-                          <p>
-                            Return tracking reference:{" "}
-                            {item.returnShipment.trackingReference}
-                          </p>
-                        )}
-                        {item.returnShipment.remedyDueAt && (
-                          <p>
-                            Merchant remedy target:{" "}
-                            {new Date(
-                              item.returnShipment.remedyDueAt,
-                            ).toLocaleString()}
-                            . Provider settlement timing is separate.
-                          </p>
-                        )}
-                        {session.actor.role === "buyer" &&
-                          item.returnShipment.status === "authorized" && (
-                            <button
-                              className="button secondary small"
-                              onClick={() =>
-                                setModal({
-                                  kind: "return_shipping",
-                                  item,
-                                  status: "in_transit",
-                                })
-                              }
-                            >
-                              Record return handoff
-                            </button>
-                          )}
-                        {session.actor.role === "seller" &&
-                          item.returnShipment.status === "in_transit" && (
-                            <button
-                              className="button secondary small"
-                              onClick={() =>
-                                setModal({
-                                  kind: "return_shipping",
-                                  item,
-                                  status: "received",
-                                })
-                              }
-                            >
-                              Record return receipt
-                            </button>
-                          )}
-                      </div>
-                    )}
-                    <a href={`/api/case-report?id=${item.id}`} download>
-                      Download private case report
-                    </a>
-                    <div className="evidence-grid">
-                      {item.evidence.map((entry) => (
-                        <div className="evidence-card" key={entry.id}>
-                          <strong>
-                            {entry.checkpoint.replaceAll("_", " ")}
-                          </strong>
-                          <p>{entry.note}</p>
-                          <small>
-                            Recorded identifier:{" "}
-                            {entry.serial || "Not provided"}
-                          </small>
-                          {entry.assetKey && (
-                            <a
-                              href={`/api/evidence?id=${entry.id}`}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              View original{" "}
-                              {entry.mime?.startsWith("video/")
-                                ? "video"
-                                : "image"}{" "}
-                              <ChevronRight size={12} />
-                            </a>
-                          )}
-                          <small>
-                            Integrity hash: {entry.hash.slice(0, 16)}…
-                          </small>
-                          <small>
-                            {entry.provenance?.challenge
-                              ? `Capture code linked: ${entry.provenance.challenge.code}`
-                              : entry.assetKey
-                                ? "Uploaded file; capture origin unverified"
-                                : "Submitted description"}
-                          </small>
-                          {!!entry.provenance?.repeatedEvidenceIds.length && (
-                            <small>
-                              Identical bytes appeared earlier in this case. A
-                              reviewer can check the context.
-                            </small>
-                          )}
-                          {entry.mime?.startsWith("video/") && (
-                            <small>
-                              Video retained for human review; image analysis
-                              does not inspect video.
-                            </small>
-                          )}
+                            )}
                         </div>
-                      ))}
-                    </div>
-                    {item.analysis && (
-                      <div className="analysis-panel">
-                        <h4>
-                          <ShieldCheck size={17} /> Evidence review ·{" "}
-                          {item.analysis.outcome}
-                        </h4>
-                        {item.analysis.observations.map((observation, i) => (
-                          <p key={i}>{observation}</p>
-                        ))}
-                        {item.analysis.propositions?.map((claim) => (
-                          <details key={claim.id} className="claim-proposition">
-                            <summary>
-                              {claim.statement} · {claim.outcome}
-                            </summary>
-                            {claim.observations.map((observation, i) => (
-                              <p key={i}>
-                                {observation.text} (
-                                {observation.basis.replaceAll("_", " ")})
-                              </p>
-                            ))}
-                            {claim.sourceIds.map((id) => {
-                              const source = item.evidence.find(
-                                (entry) => entry.id === id,
-                              );
-                              return (
-                                source && (
-                                  <p key={id}>
-                                    Source:{" "}
-                                    {source.checkpoint.replaceAll("_", " ")} ·{" "}
-                                    {source.id.slice(0, 8)}{" "}
-                                    {source.assetKey && (
-                                      <a
-                                        href={`/api/evidence?id=${id}`}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                      >
-                                        View original{" "}
-                                        {source.mime?.startsWith("video/")
-                                          ? "video"
-                                          : "image"}
-                                      </a>
-                                    )}
-                                  </p>
-                                )
-                              );
-                            })}
-                            {claim.missingFacts.map((fact) => (
-                              <p key={fact}>Missing: {fact}</p>
-                            ))}
-                            {claim.uncertainty.map((limitation) => (
-                              <p key={limitation}>{limitation}</p>
-                            ))}
-                            <p>{claim.nextAction}</p>
-                          </details>
-                        ))}
-                        <strong>{item.analysis.nextStep}</strong>
                       </div>
-                    )}
-                    {session.orders.find((order) => order.id === item.orderId)
-                      ?.refund && (
-                      <div className="analysis-panel">
-                        <h4>
-                          Refund{" "}
-                          {
-                            session.orders.find(
-                              (order) => order.id === item.orderId,
-                            )!.refund!.status
-                          }
-                        </h4>
-                        <p>
-                          {
-                            session.orders.find(
-                              (order) => order.id === item.orderId,
-                            )!.refund!.nextStep
-                          }
-                        </p>
-                        <small>
-                          Provider reference:{" "}
-                          {session.orders.find(
-                            (order) => order.id === item.orderId,
-                          )!.refund!.reference || "Not confirmed yet"}
-                        </small>
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <Empty
+                  title="A good find is waiting"
+                  detail="Your purchases will appear here, with payment status and support in one place."
+                />
+              )}
+            </>
+          )}
+          {tab === "support" && (
+            <>
+              <PageHeading
+                eyebrow="WE STAY WITH YOU"
+                title="Let's put it right."
+                detail="Your request stays open while we review it. Missing evidence never means an automatic accusation or denial."
+              />
+              {session && (
+                <div
+                  className="workspace-overview"
+                  aria-label="Support overview"
+                >
+                  <div>
+                    <strong>
+                      {
+                        session.cases.filter(
+                          (item) => item.status !== "resolved",
+                        ).length
+                      }
+                    </strong>
+                    <span>Open requests</span>
+                  </div>
+                  <div>
+                    <strong>
+                      {
+                        session.cases.filter(
+                          (item) => item.status === "resolved",
+                        ).length
+                      }
+                    </strong>
+                    <span>Resolved requests</span>
+                  </div>
+                  <div>
+                    <strong>Human</strong>
+                    <span>Review available</span>
+                  </div>
+                </div>
+              )}
+              {isBuyer && supportDraft && (
+                <div
+                  className="analysis-panel"
+                  aria-label="Voice support draft"
+                >
+                  <strong>Your support draft</strong>
+                  <p>{supportDraft.text}</p>
+                  <p className="muted">
+                    Choose an order, then correct and review the issue and
+                    preferred resolution before submitting.
+                  </p>
+                  <button
+                    className="button secondary"
+                    onClick={() => setTab("orders")}
+                  >
+                    Choose an order for this draft
+                  </button>
+                  <button
+                    className="button secondary"
+                    onClick={() => setSupportDraft(null)}
+                  >
+                    Discard draft
+                  </button>
+                </div>
+              )}
+              {session?.cases.length ? (
+                <div className="case-list">
+                  {session.cases.map((item) => (
+                    <article className="case-card" key={item.id}>
+                      <div className="case-heading">
+                        <div>
+                          <span className="eyebrow">
+                            CASE {item.id.slice(0, 8).toUpperCase()}
+                          </span>
+                          <h3>
+                            {item.reason.replaceAll("_", " ")} · {item.request}{" "}
+                            requested
+                          </h3>
+                          <p className="muted">
+                            Seller response due{" "}
+                            {new Date(item.deadlineAt).toLocaleString()} ·{" "}
+                            {item.sellerResponded
+                              ? "Seller responded"
+                              : "Awaiting seller"}
+                          </p>
+                        </div>
+                        <span className="status-chip">
+                          {item.status.replaceAll("_", " ")}
+                        </span>
                       </div>
-                    )}
-                    {item.resolutionNote && (
-                      <p className="resolution-note">
-                        Reviewer: {item.resolutionNote}
-                      </p>
-                    )}
-                    {item.appeal && <p>Appeal: {item.appeal}</p>}
-                    <div className="inline-actions">
-                      {item.status !== "resolved" &&
-                        session.actor.role !== "reviewer" && (
-                          <button
-                            className="button secondary small"
-                            onClick={() => setModal({ kind: "evidence", item })}
-                          >
-                            Add your evidence
-                          </button>
-                        )}
-                      <button
-                        className="button secondary small"
-                        disabled={busy}
-                        onClick={() =>
-                          void run(async () => {
-                            await action({
-                              action: "analyze",
-                              caseId: item.id,
-                            });
-                          })
-                        }
-                      >
-                        Review evidence
-                      </button>
-                      {session.actor.role === "reviewer" &&
+                      {isBuyer &&
+                        !item.remedy &&
                         ![
                           "resolved",
+                          "approved",
                           "refund_pending",
                           "refund_failed",
                         ].includes(item.status) && (
                           <button
-                            className="button primary small"
-                            disabled={busy}
-                            onClick={() => setModal({ kind: "resolve", item })}
-                          >
-                            Approve requested {item.request}
-                          </button>
-                        )}
-                      {isBuyer &&
-                        ["resolved", "refund_failed"].includes(item.status) && (
-                          <button
                             className="button secondary small"
-                            onClick={() => {
-                              const note = window.prompt(
-                                "What would you like a person to review?",
-                              );
-                              if (note)
-                                void run(async () => {
-                                  await action({
-                                    action: "appeal",
-                                    caseId: item.id,
-                                    note,
-                                  });
+                            onClick={() =>
+                              void run(async () => {
+                                await action({
+                                  action: "choose_remedy",
+                                  caseId: item.id,
+                                  request:
+                                    item.request === "refund"
+                                      ? "replacement"
+                                      : "refund",
                                 });
-                            }}
+                                setNotice(
+                                  "Your remedy choice is updated. A reviewer will follow your preference before execution.",
+                                );
+                              })
+                            }
                           >
-                            Request another review
+                            Choose{" "}
+                            {item.request === "refund"
+                              ? "replacement"
+                              : "refund"}{" "}
+                            instead
                           </button>
                         )}
-                    </div>
-                  </article>
-                ))}
-              </div>
-            ) : (
-              <Empty
-                title="We're here when you need us"
-                detail="Open a request from your order. Choose a refund or replacement and share your side."
-              />
-            )}
-          </>
-        )}
-
-        {session && (
-          <details className="engineering-details">
-            <summary>Environment details</summary>
-            <p>
-              Workspace: <code>{session.actor.workspaceId}</code>
-            </p>
-            <p>
-              Database: {session.modes.database} · Payments:{" "}
-              {session.modes.payments} · Analysis: {session.modes.ai}
-            </p>
-            <p>
-              Catalog models, inventory, and carrier events are synthetic. File
-              integrity does not prove physical truth. Use separate profiles for
-              customer and operator roles.
-            </p>
-            {session.recovery && (
-              <p>
-                Recovery worker:{" "}
-                {session.recovery.healthy
-                  ? "recent heartbeat"
-                  : "heartbeat overdue or unavailable"}{" "}
-                · Last seen: {session.recovery.lastSeenAt || "Not recorded"} ·
-                Pending jobs: {session.recovery.queue.pending || 0} · Running:{" "}
-                {session.recovery.queue.running || 0} · Needs operator review:{" "}
-                {session.recovery.queue.dead || 0}
-              </p>
-            )}
-            {session.archivedAt && (
-              <p>
-                This fixture workspace is archived. Its financial and evidence
-                audit records are preserved.
-              </p>
-            )}
-            {session.actor.role === "reviewer" && (
-              <GroupPolicySettings
-                key={session.groupPolicy.version}
-                policy={session.groupPolicy}
-                busy={busy}
-                onSave={(policy, expectedVersion) =>
-                  run(async () => {
-                    await action({
-                      action: "group_policy",
-                      policy,
-                      expectedVersion,
-                    });
-                    setNotice(
-                      "Group policy approved. Existing groups keep their frozen terms.",
-                    );
-                  })
-                }
-              />
-            )}
-            {session.actor.role === "reviewer" && !session.demo && (
-              <form
-                onSubmit={(event) => {
-                  event.preventDefault();
-                  void run(async () => {
-                    const result = await api<{ snapshot: Session }>(
-                      "/api/scenarios",
-                      { action: "create", kind: scenario },
-                    );
-                    restoreSession(result.snapshot);
-                    setTab(
-                      result.snapshot.orders.length ? "orders" : "discover",
-                    );
-                    setNotice(
-                      "An isolated fixture scenario is open as the shopper. All payments, analysis, and shipping here are synthetic. Use its workspace ID in a separate operator profile.",
-                    );
-                  });
-                }}
-              >
-                <label>
-                  Engineering scenario
-                  <select
-                    value={scenario}
-                    onChange={(event) =>
-                      setScenario(event.target.value as ScenarioKind)
-                    }
-                  >
-                    <option value="fresh">Fresh shopper workspace</option>
-                    <option value="delivered">
-                      Delivered item ready for a return
-                    </option>
-                    <option value="identifier_conflict">
-                      Conflicting return identifiers
-                    </option>
-                    <option value="seller_silence">
-                      Missed seller response deadline
-                    </option>
-                    <option value="refund_failure">Rejected refund</option>
-                    <option value="refund_timeout">Interrupted refund</option>
-                    <option value="canceled_order">
-                      Seller cancellation with payment recorded
-                    </option>
-                    <option value="late_order">
-                      Late delivery with customer remedy choices
-                    </option>
-                    <option value="group_partial">Partial group payment</option>
-                  </select>
-                </label>
-                <button className="button secondary small" disabled={busy}>
-                  Open new fixture scenario as shopper
-                </button>
-                {session.fixtureWorkspace && (
-                  <button
-                    type="button"
-                    className="button secondary small"
-                    disabled={busy}
-                    onClick={() =>
-                      void run(async () => {
-                        const result = await api<{ snapshot: Session }>(
-                          "/api/scenarios",
-                          { action: "reset", kind: scenario },
-                        );
-                        restoreSession(result.snapshot);
-                        setTab("orders");
-                        setNotice(
-                          "Previous fixture archived with audit history preserved. A new isolated fixture workspace is open.",
-                        );
-                      })
-                    }
-                  >
-                    Archive fixture and start fresh
-                  </button>
-                )}
-              </form>
-            )}
-          </details>
-        )}
-      </main>
-      <footer className="site-footer-wrap" inert={!!modal}>
-        <div className="site-footer-inner">
-          <div className="site-footer">
-            <div className="footer-brand">
-              <div className="brand">
-                <BrandWordmark />
-                <span className="sr-only">DALE</span>
-              </div>
-              <p>
-                Considered choices. Customer-first commerce. From your first
-                search to a fair resolution.
-              </p>
-            </div>
-            <div className="footer-links">
-              <strong>The collection</strong>
-              <button
-                onClick={() => {
-                  setTab("discover");
-                  window.scrollTo({
-                    top: 0,
-                    behavior: window.matchMedia(
-                      "(prefers-reduced-motion: reduce)",
-                    ).matches
-                      ? "instant"
-                      : "smooth",
-                  });
-                }}
-              >
-                Discover essentials
-              </button>
-              <button data-agent-control="Open group deals" onClick={() => setTab("groups")}>Buy together</button>
-              <button data-agent-control="Open my orders" onClick={() => setTab("orders")}>Track an order</button>
-            </div>
-            <div className="footer-links">
-              <strong>At your service</strong>
-              <button data-agent-control="Open support" onClick={() => setTab("support")}>Returns & support</button>
-              <button
-                onClick={() => {
-                  setScam(null);
-                  setModal({ kind: "scam" });
-                }}
-              >
-                Check a message
-              </button>
-              <button
-                onClick={() => {
-                  setRole("seller");
-                  setWorkspaceId(session?.actor.workspaceId || "");
-                  setModal({ kind: "login" });
-                }}
-              >
-                Operator workspace
-              </button>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <span>DALE / The considered collection</span>
-            <span>
-              Test storefront · Manufacturer-linked catalogue + isolated fixtures · Simulated
-              shipping · USD
-            </span>
-          </div>
-        </div>
-      </footer>
-      <AnimatePresence>
-        {modal && (
-          <motion.div
-            className="modal-backdrop"
-            key="dialog"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.18 }}
-          >
-            <Dialog
-              key={modal.kind}
-              onClose={() => setModal(null)}
-              className={modal.kind === "product" ? "product-modal" : undefined}
-            >
-              <button
-                className="close-modal"
-                aria-label="Close dialog"
-                data-agent-control="Close dialog"
-                onClick={() => setModal(null)}
-              >
-                <X size={21} />
-              </button>
-              {modal.kind === "product" && (
-                <div className="product-detail">
-                  <ProductArt product={modal.product} />
-                  <div className="product-detail-copy">
-                    <span className="eyebrow">
-                      THE COLLECTION / {modal.product.id}
-                    </span>
-                    <h2 id="modal-title">{modal.product.name}</h2>
-                    <p>{modal.product.description}</p>
-                    <div className="price-row">
-                      <strong>{formatMoney(modal.product.price)}</strong>
-                      <small>USD · Shipping included</small>
-                    </div>
-                    <ul className="product-facts">
-                      {modal.product.specs.map((spec) => (
-                        <li key={spec}>
-                          <Check size={14} />
-                          {spec}
-                        </li>
-                      ))}
-                    </ul>
-                    <LuxuryArchitectureCard product={modal.product} />
-                    <p>
-                      {isRetailCategory(modal.product.category) || modal.product.brand ? "Variant attributes: " : "Recorded device profiles: "}
-                      {isRetailCategory(modal.product.category) || modal.product.brand ? Object.entries(modal.product.attributes || {}).map(([key, value]) => `${key}: ${value}`).join(" · ") : modal.product.compatibleModels
-                        .map(deviceLabel)
-                        .join(", ")}
-                    </p>
-                    <p className="muted">
-                      {modal.product.sponsored
-                        ? "Sponsored listing. Organic ranking is independent of sponsorship."
-                        : "Curated catalog listing."}{" "}
-                      Product visual is an editorial identity card or original illustration.
-                    </p>
-                    <CatalogEvidence product={modal.product} />
-                    <div className="policy-note">
-                      You review the full amount and merchant before approving.
-                      Returns and replacements remain available through your
-                      order.
-                    </div>
-                    {!briefDirty &&
-                    productFits(modal.product, model) &&
-                    modal.product.price <= Number(budget) * 100 &&
-                    (!category || category === modal.product.category) ? (
-                      <button
-                        className="button primary full"
-                        disabled={busy || !isBuyer}
-                        onClick={() => void choose(modal.product)}
-                      >
-                        Review purchase <ArrowRight size={16} />
-                      </button>
-                    ) : (
-                      <button
-                        className="button primary full"
-                        onClick={() => {
-                          const nextCategory = modal.product.category;
-                          setModal(null);
-                          setTab("discover");
-                          browseCollection(nextCategory);
-                        }}
-                      >
-                        Set requirements for this collection{" "}
-                        <ArrowRight size={16} />
-                      </button>
-                    )}
-                  </div>
-                </div>
-              )}
-              {modal.kind === "login" && (
-                <>
-                  <div className="modal-icon">
-                    <ShoppingBag />
-                  </div>
-                  <h2 id="modal-title">
-                    {role === "buyer"
-                      ? "Your shopping space."
-                      : "Operator access."}
-                  </h2>
-                  <p className="muted">
-                    {role === "buyer"
-                      ? "Shop together from separate devices. Each customer keeps private orders and payment approval."
-                      : "Use a separate browser profile. Operator roles require the configured access code."}
-                  </p>
-                  {role === "buyer" ? <CustomerEntry onComplete={async () => {
-                    restoreSession(await api<Session>("/api/session"));
-                    setModal(null); setTab("discover");
-                  }} /> : (
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      void run(async () => {
-                        restoreSession(
-                          await api<Session>("/api/session", {
-                            role,
-                            accessCode,
-                            ...(role === "buyer" && invite
-                              ? { invite: invite.trim() }
-                              : {}),
-                            ...(role !== "buyer" && workspaceId
-                              ? { workspaceId: workspaceId.trim() }
-                              : {}),
-                          }),
-                        );
-                        setModal(null);
-                        setAccessCode("");
-                        setTab(role === "buyer" ? "discover" : "orders");
-                      });
-                    }}
-                  >
-                    <label>
-                      Role
-                      <select
-                        value={role}
-                        onChange={(e) => setRole(e.target.value)}
-                      >
-                        <option value="buyer">Shopper</option>
-                        <option value="seller">Seller</option>
-                        <option value="reviewer">Reviewer</option>
-                      </select>
-                    </label>
-                    <label>
-                      {role === "buyer"
-                        ? "Demo access code (if configured)"
-                        : "Operator access code"}
-                      <input
-                        type="password"
-                        autoComplete="off"
-                        value={accessCode}
-                        onChange={(e) => setAccessCode(e.target.value)}
-                      />
-                    </label>
-                    {role === "buyer" ? (
-                      <label>
-                        Group invitation (optional)
-                        <input
-                          value={invite}
-                          onChange={(e) => setInvite(e.target.value)}
-                        />
-                      </label>
-                    ) : (
-                      <label>
-                        Customer workspace ID
-                        <input
-                          required
-                          value={workspaceId}
-                          onChange={(e) => setWorkspaceId(e.target.value)}
-                        />
-                      </label>
-                    )}
-                    <button className="button primary full" disabled={busy}>
-                      Enter workspace <ArrowRight size={16} />
-                    </button>
-                  </form>                  )}
-                  {role === "buyer" && <button className="button secondary" onClick={() => setRole("seller")}>Operator access</button>}
-
-                </>
-              )}
-              {modal.kind === "quote" && (
-                <>
-                  <div className="modal-icon">
-                    <ShieldCheck />
-                  </div>
-                  <h2 id="modal-title">Your choice. Fully reviewed.</h2>
-                  <p className="muted">
-                    Confirm the exact purchase before payment. Changes require
-                    approval again.
-                  </p>
-                  <div className="quote-product">
-                    <ProductArt
-                      product={resolveProduct(modal.quote.productId)}
-                      compact
-                    />
-                    <div>
-                      <strong>{resolveProduct(modal.quote.productId).name}</strong>
-                      <p>{isRetailCategory(resolveProduct(modal.quote.productId).category) ? "Exact variant selected; review its recorded attributes." : `Confirmed profile: ${deviceLabel(modal.quote.model)}`}</p>
-                    </div>
-                  </div>
-                  {modal.quote.productId.startsWith("R") && (
-                    <p className="fixture-note">
-                      Real manufacturer product identity; simulated DALE
-                      merchant offer. This does not order from Apple or promise
-                      physical fulfillment.{" "}
-                      {modal.quote.productId === "R003"
-                        ? "Adapter and 60W charging cable included."
-                        : "Adapter only; uses the charging cable confirmed in your brief."}
-                    </p>
-                  )}
-                  {modal.quote.deliveryBy && (
-                    <p>
-                      Delivery promise:{" "}
-                      {new Date(modal.quote.deliveryBy).toLocaleDateString()}
-                    </p>
-                  )}
-                  <p>
-                    Merchant policy: request returns within 30 days of recorded
-                    delivery. Merchant-paid return shipping for qualifying
-                    claims; uncertain or late requests receive review. Provider
-                    disputes remain a separate process.
-                  </p>
-                  <dl className="quote-summary">
-                    <div>
-                      <dt>Merchant</dt>
-                      <dd>DALE demo store</dd>
-                    </div>
-                    <div>
-                      <dt>Item</dt>
-                      <dd>{formatMoney(modal.quote.amount)}</dd>
-                    </div>
-                    <div>
-                      <dt>Shipping & taxes</dt>
-                      <dd>Included in this demo quote</dd>
-                    </div>
-                    <div>
-                      <dt>Return window</dt>
-                      <dd>30 days under demo policy</dd>
-                    </div>
-                    <div className="total">
-                      <dt>Total approved</dt>
-                      <dd>{formatMoney(modal.quote.amount)}</dd>
-                    </div>
-                  </dl>
-                  <p className="muted">
-                    Valid until{" "}
-                    {new Date(modal.quote.expiresAt).toLocaleTimeString()}.
-                    Recipient: {modal.quote.payee}.
-                  </p>
-                  {session?.modes.payments === "sandbox" &&
-                  session.paypalClientId ? (
-                    <PayPalCheckout
-                      clientId={session.paypalClientId}
-                      quote={modal.quote}
-                      action={action}
-                      onDone={finishCheckout}
-                      onError={showPaymentError}
-                    />
-                  ) : (
-                    <>
-                      <div className="fixture-note">
-                        Simulated payment test. No money is charged.
+                      {item.eligibility && (
+                        <p className="muted">{item.eligibility.explanation}</p>
+                      )}
+                      {item.returnShipment && (
+                        <div className="analysis-panel">
+                          <h4>
+                            Return arrangement ·{" "}
+                            {item.returnShipment.status.replaceAll("_", " ")}
+                          </h4>
+                          <p>{item.returnShipment.reason}</p>
+                          <p>
+                            Customer return shipping cost: $0.00. Carrier
+                            records are simulated in this demo.
+                          </p>
+                          {item.returnShipment.labelReference && (
+                            <p>
+                              Prepaid label reference:{" "}
+                              {item.returnShipment.labelReference}
+                            </p>
+                          )}
+                          {item.returnShipment.trackingReference && (
+                            <p>
+                              Return tracking reference:{" "}
+                              {item.returnShipment.trackingReference}
+                            </p>
+                          )}
+                          {item.returnShipment.remedyDueAt && (
+                            <p>
+                              Merchant remedy target:{" "}
+                              {new Date(
+                                item.returnShipment.remedyDueAt,
+                              ).toLocaleString()}
+                              . Provider settlement timing is separate.
+                            </p>
+                          )}
+                          {session.actor.role === "buyer" &&
+                            item.returnShipment.status === "authorized" && (
+                              <button
+                                className="button secondary small"
+                                onClick={() =>
+                                  setModal({
+                                    kind: "return_shipping",
+                                    item,
+                                    status: "in_transit",
+                                  })
+                                }
+                              >
+                                Record return handoff
+                              </button>
+                            )}
+                          {session.actor.role === "seller" &&
+                            item.returnShipment.status === "in_transit" && (
+                              <button
+                                className="button secondary small"
+                                onClick={() =>
+                                  setModal({
+                                    kind: "return_shipping",
+                                    item,
+                                    status: "received",
+                                  })
+                                }
+                              >
+                                Record return receipt
+                              </button>
+                            )}
+                        </div>
+                      )}
+                      <a href={`/api/case-report?id=${item.id}`} download>
+                        Download private case report
+                      </a>
+                      <div className="evidence-grid">
+                        {item.evidence.map((entry) => (
+                          <div className="evidence-card" key={entry.id}>
+                            <strong>
+                              {entry.checkpoint.replaceAll("_", " ")}
+                            </strong>
+                            <p>{entry.note}</p>
+                            <small>
+                              Recorded identifier:{" "}
+                              {entry.serial || "Not provided"}
+                            </small>
+                            {entry.assetKey && (
+                              <a
+                                href={`/api/evidence?id=${entry.id}`}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                View original{" "}
+                                {entry.mime?.startsWith("video/")
+                                  ? "video"
+                                  : "image"}{" "}
+                                <ChevronRight size={12} />
+                              </a>
+                            )}
+                            <small>
+                              Integrity hash: {entry.hash.slice(0, 16)}…
+                            </small>
+                            <small>
+                              {entry.provenance?.challenge
+                                ? `Capture code linked: ${entry.provenance.challenge.code}`
+                                : entry.assetKey
+                                  ? "Uploaded file; capture origin unverified"
+                                  : "Submitted description"}
+                            </small>
+                            {!!entry.provenance?.repeatedEvidenceIds.length && (
+                              <small>
+                                Identical bytes appeared earlier in this case. A
+                                reviewer can check the context.
+                              </small>
+                            )}
+                            {entry.mime?.startsWith("video/") && (
+                              <small>
+                                Video retained for human review; image analysis
+                                does not inspect video.
+                              </small>
+                            )}
+                          </div>
+                        ))}
                       </div>
-                      <button
-                        className="button primary full"
-                        disabled={busy}
-                        onClick={() =>
-                          void run(async () => {
-                            const order = (await action({
-                              action: "checkout",
-                              quoteId: modal.quote.id,
-                              fingerprint: modal.quote.fingerprint,
-                            })) as Order;
-                            await action({
-                              action: "capture",
-                              orderId: order.id,
-                            });
-                            finishCheckout();
-                          })
-                        }
-                      >
-                        <CreditCard size={17} /> Approve simulated purchase
-                      </button>
-                    </>
-                  )}
-                </>
+                      {item.analysis && (
+                        <div className="analysis-panel">
+                          <h4>
+                            <ShieldCheck size={17} /> Evidence review ·{" "}
+                            {item.analysis.outcome}
+                          </h4>
+                          {item.analysis.observations.map((observation, i) => (
+                            <p key={i}>{observation}</p>
+                          ))}
+                          {item.analysis.propositions?.map((claim) => (
+                            <details
+                              key={claim.id}
+                              className="claim-proposition"
+                            >
+                              <summary>
+                                {claim.statement} · {claim.outcome}
+                              </summary>
+                              {claim.observations.map((observation, i) => (
+                                <p key={i}>
+                                  {observation.text} (
+                                  {observation.basis.replaceAll("_", " ")})
+                                </p>
+                              ))}
+                              {claim.sourceIds.map((id) => {
+                                const source = item.evidence.find(
+                                  (entry) => entry.id === id,
+                                );
+                                return (
+                                  source && (
+                                    <p key={id}>
+                                      Source:{" "}
+                                      {source.checkpoint.replaceAll("_", " ")} ·{" "}
+                                      {source.id.slice(0, 8)}{" "}
+                                      {source.assetKey && (
+                                        <a
+                                          href={`/api/evidence?id=${id}`}
+                                          target="_blank"
+                                          rel="noreferrer"
+                                        >
+                                          View original{" "}
+                                          {source.mime?.startsWith("video/")
+                                            ? "video"
+                                            : "image"}
+                                        </a>
+                                      )}
+                                    </p>
+                                  )
+                                );
+                              })}
+                              {claim.missingFacts.map((fact) => (
+                                <p key={fact}>Missing: {fact}</p>
+                              ))}
+                              {claim.uncertainty.map((limitation) => (
+                                <p key={limitation}>{limitation}</p>
+                              ))}
+                              <p>{claim.nextAction}</p>
+                            </details>
+                          ))}
+                          <strong>{item.analysis.nextStep}</strong>
+                        </div>
+                      )}
+                      {session.orders.find((order) => order.id === item.orderId)
+                        ?.refund && (
+                        <div className="analysis-panel">
+                          <h4>
+                            Refund{" "}
+                            {
+                              session.orders.find(
+                                (order) => order.id === item.orderId,
+                              )!.refund!.status
+                            }
+                          </h4>
+                          <p>
+                            {
+                              session.orders.find(
+                                (order) => order.id === item.orderId,
+                              )!.refund!.nextStep
+                            }
+                          </p>
+                          <small>
+                            Provider reference:{" "}
+                            {session.orders.find(
+                              (order) => order.id === item.orderId,
+                            )!.refund!.reference || "Not confirmed yet"}
+                          </small>
+                        </div>
+                      )}
+                      {item.resolutionNote && (
+                        <p className="resolution-note">
+                          Reviewer: {item.resolutionNote}
+                        </p>
+                      )}
+                      {item.appeal && <p>Appeal: {item.appeal}</p>}
+                      <div className="inline-actions">
+                        {item.status !== "resolved" &&
+                          session.actor.role !== "reviewer" && (
+                            <button
+                              className="button secondary small"
+                              onClick={() =>
+                                setModal({ kind: "evidence", item })
+                              }
+                              data-agent-control={
+                                isBuyer
+                                  ? `Add evidence for case ${item.id}`
+                                  : undefined
+                              }
+                            >
+                              Add your evidence
+                            </button>
+                          )}
+                        <button
+                          className="button secondary small"
+                          disabled={busy}
+                          data-agent-control={
+                            isBuyer
+                              ? `Review evidence for case ${item.id}`
+                              : undefined
+                          }
+                          onClick={() =>
+                            void run(async () => {
+                              await action({
+                                action: "analyze",
+                                caseId: item.id,
+                              });
+                            })
+                          }
+                        >
+                          Review evidence
+                        </button>
+                        {session.actor.role === "reviewer" &&
+                          ![
+                            "resolved",
+                            "refund_pending",
+                            "refund_failed",
+                          ].includes(item.status) && (
+                            <button
+                              className="button primary small"
+                              disabled={busy}
+                              onClick={() =>
+                                setModal({ kind: "resolve", item })
+                              }
+                            >
+                              Approve requested {item.request}
+                            </button>
+                          )}
+                        {isBuyer &&
+                          ["resolved", "refund_failed"].includes(
+                            item.status,
+                          ) && (
+                            <button
+                              className="button secondary small"
+                              onClick={() => {
+                                const note = window.prompt(
+                                  "What would you like a person to review?",
+                                );
+                                if (note)
+                                  void run(async () => {
+                                    await action({
+                                      action: "appeal",
+                                      caseId: item.id,
+                                      note,
+                                    });
+                                  });
+                              }}
+                            >
+                              Request another review
+                            </button>
+                          )}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <Empty
+                  title="We're here when you need us"
+                  detail="Open a request from your order. Choose a refund or replacement and share your side."
+                />
               )}
-              {modal.kind === "resolve" && (
-                <>
-                  <h2 id="modal-title">Approve the customer’s choice.</h2>
-                  <p className="muted">
-                    Review the original records and payment before authorizing
-                    the requested {modal.item.request}. Conflicting or missing
-                    evidence does not automatically deny the request.
-                  </p>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const form = new FormData(e.currentTarget);
-                      void run(async () => {
-                        const decision = String(
-                          form.get("returnDecision") || "waive",
-                        );
-                        if (modal.item.returnShipment?.status !== "received") {
-                          await action({
-                            action: "authorize_return",
-                            caseId: modal.item.id,
-                            decision,
-                            reason: String(form.get("note")),
-                            labelReference: String(
-                              form.get("labelReference") || "",
-                            ),
-                          });
-                        }
-                        if (decision === "prepaid") {
-                          setModal(null);
-                          setNotice(
-                            "Prepaid return arranged. The customer pays no return shipping cost. Record handoff and receipt before approving the remedy.",
-                          );
-                          return;
-                        }
-                        await action({
-                          action: "resolve",
-                          caseId: modal.item.id,
-                          remedy: modal.item.request,
-                          note: String(form.get("note")),
-                        });
-                        setModal(null);
-                        setNotice(
-                          "Remedy processed. Check its financial status before considering it complete.",
-                        );
-                      });
-                    }}
-                  >
-                    {modal.item.returnShipment?.status !== "received" && (
-                      <>
-                        <label>
-                          Return arrangement
-                          <select
-                            name="returnDecision"
-                            aria-label="Return arrangement"
-                          >
-                            <option value="waive">
-                              Approve a no-return remedy
-                            </option>
-                            <option value="prepaid">
-                              Arrange a merchant-paid return first
-                            </option>
-                          </select>
-                        </label>
-                        <label>
-                          Prepaid label reference (required for a return)
-                          <input
-                            name="labelReference"
-                            maxLength={100}
-                            placeholder="Demo carrier reference"
-                          />
-                        </label>
-                      </>
-                    )}
-                    <label>
-                      Reason and customer policy
-                      <textarea
-                        name="note"
-                        required
-                        minLength={10}
-                        maxLength={2000}
-                        rows={4}
-                      />
-                    </label>
-                    <button className="button primary full" disabled={busy}>
-                      Authorize {modal.item.request}
-                    </button>
-                  </form>
-                </>
+            </>
+          )}
+
+          {session && (
+            <details className="engineering-details">
+              <summary>Environment details</summary>
+              <p>
+                Workspace: <code>{session.actor.workspaceId}</code>
+              </p>
+              <p>
+                Database: {session.modes.database} · Payments:{" "}
+                {session.modes.payments} · Analysis: {session.modes.ai}
+              </p>
+              <p>
+                Catalog models, inventory, and carrier events are synthetic.
+                File integrity does not prove physical truth. Use separate
+                profiles for customer and operator roles.
+              </p>
+              {session.recovery && (
+                <p>
+                  Recovery worker:{" "}
+                  {session.recovery.healthy
+                    ? "recent heartbeat"
+                    : "heartbeat overdue or unavailable"}{" "}
+                  · Last seen: {session.recovery.lastSeenAt || "Not recorded"} ·
+                  Pending jobs: {session.recovery.queue.pending || 0} · Running:{" "}
+                  {session.recovery.queue.running || 0} · Needs operator review:{" "}
+                  {session.recovery.queue.dead || 0}
+                </p>
               )}
-              {modal.kind === "return_shipping" && (
-                <>
-                  <h2 id="modal-title">
-                    {modal.status === "in_transit"
-                      ? "Record your return handoff."
-                      : "Record the returned parcel."}
-                  </h2>
-                  <p className="muted">
-                    This demo records simulated carrier events. A tracking
-                    reference does not prove parcel contents; both parties can
-                    submit evidence separately.
-                  </p>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const form = new FormData(e.currentTarget);
-                      void run(async () => {
-                        await action({
-                          action: "return_shipping",
-                          caseId: modal.item.id,
-                          status: modal.status,
-                          trackingReference: String(
-                            form.get("trackingReference"),
-                          ),
-                        });
-                        setModal(null);
-                        setNotice(
-                          "Return checkpoint recorded. Your request remains open until the remedy is processed.",
-                        );
-                      });
-                    }}
-                  >
-                    <label>
-                      Return tracking reference
-                      <input
-                        required
-                        name="trackingReference"
-                        maxLength={100}
-                        defaultValue={
-                          modal.item.returnShipment?.trackingReference || ""
-                        }
-                      />
-                    </label>
-                    <button className="button primary full" disabled={busy}>
-                      Save return checkpoint
-                    </button>
-                  </form>
-                </>
+              {session.archivedAt && (
+                <p>
+                  This fixture workspace is archived. Its financial and evidence
+                  audit records are preserved.
+                </p>
               )}
-              {modal.kind === "return" && (
-                <>
-                  <div className="modal-icon">
-                    <HeartHandshake />
-                  </div>
-                  <h2 id="modal-title">How can we put it right?</h2>
-                  <p className="muted">
-                    Tell us what happened and choose your preferred remedy.
-                  </p>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const form = new FormData(e.currentTarget);
-                      void run(async () => {
-                        await action({
-                          action: "return",
-                          orderId: modal.order.id,
-                          reason: form.get("reason"),
-                          request: form.get("request"),
-                        });
-                        setModal(null);
-                        setTab("support");
-                        setSupportDraft(null);
+              {session.actor.role === "reviewer" && (
+                <GroupPolicySettings
+                  key={session.groupPolicy.version}
+                  policy={session.groupPolicy}
+                  busy={busy}
+                  onSave={(policy, expectedVersion) =>
+                    run(async () => {
+                      await action({
+                        action: "group_policy",
+                        policy,
+                        expectedVersion,
                       });
-                    }}
-                  >
-                    <label>
-                      What happened?
-                      <select
-                        name="reason"
-                        defaultValue={supportDraft?.reason || "damaged"}
-                      >
-                        <option value="damaged">
-                          The product arrived damaged
-                        </option>
-                        <option value="wrong_item">
-                          I received the wrong product
-                        </option>
-                        <option value="not_delivered">
-                          My order has not arrived
-                        </option>
-                        <option value="canceled">
-                          The order needs canceling
-                        </option>
-                      </select>
-                    </label>
-                    <label>
-                      Your preferred resolution
-                      <select
-                        name="request"
-                        defaultValue={supportDraft?.request || "refund"}
-                      >
-                        <option value="refund">Refund</option>
-                        <option value="replacement">
-                          Replacement at no extra charge
-                        </option>
-                      </select>
-                    </label>
-                    <div className="policy-note">
-                      Automated analysis alone cannot deny your request. You can
-                      ask for a person to review it.
-                    </div>
-                    <button className="button primary full" disabled={busy}>
-                      Open my request <ArrowRight size={16} />
-                    </button>
-                  </form>
-                </>
+                      setNotice(
+                        "Group policy approved. Existing groups keep their frozen terms.",
+                      );
+                    })
+                  }
+                />
               )}
-              {modal.kind === "evidence" && (
-                <>
-                  <h2 id="modal-title">Share your side.</h2>
-                  <p className="muted">
-                    A clear description is welcome. Photos are optional; video
-                    is never required.
-                  </p>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const form = new FormData(e.currentTarget);
-                      void run(async () => {
-                        await upload(
-                          form,
-                          modal.order
-                            ? { orderId: modal.order.id }
-                            : { caseId: modal.item!.id },
-                        );
-                        setModal(null);
-                        setNotice(
-                          "Evidence recorded. Integrity checks do not establish physical truth.",
-                        );
-                      });
-                    }}
-                  >
-                    <label>
-                      Checkpoint
-                      <select
-                        name="checkpoint"
-                        onChange={() =>
-                          setModal({ ...modal, capture: undefined })
-                        }
-                      >
-                        {modal.order ? (
-                          <option value="seller_dispatch">
-                            Seller dispatch
-                          </option>
-                        ) : session?.actor.role === "buyer" ? (
-                          <>
-                            <option value="buyer_receipt">
-                              Customer receipt
-                            </option>
-                            <option value="buyer_return">
-                              Customer return dispatch
-                            </option>
-                          </>
-                        ) : (
-                          <>
-                            <option value="seller_dispatch">
-                              Seller dispatch record
-                            </option>
-                            <option value="seller_return">
-                              Seller return receipt
-                            </option>
-                          </>
-                        )}
-                      </select>
-                    </label>
-                    <label>
-                      Item serial / identifier (optional)
-                      <input name="serial" maxLength={100} />
-                    </label>
-                    <label>
-                      What does this record show?
-                      <textarea
-                        required
-                        name="note"
-                        rows={4}
-                        maxLength={2000}
-                      />
-                    </label>
-                    <label>
-                      Photo (optional, up to 4 MB)
-                      <input
-                        type="file"
-                        name="image"
-                        accept="image/png,image/jpeg,image/webp"
-                        capture="environment"
-                      />
-                    </label>
-                    <label>
-                      Video (optional, MP4 or WebM, up to 8 MB)
-                      <input
-                        type="file"
-                        name="video"
-                        accept="video/mp4,video/webm"
-                      />
-                    </label>
-                    <p className="muted">
-                      Choose one photo or video per record, or submit your
-                      description alone. Videos are private records for human
-                      review; image analysis does not inspect video.
-                    </p>
-                    <input
-                      type="hidden"
-                      name="captureSessionId"
-                      value={modal.capture?.id || ""}
-                    />
+              {session.actor.role === "reviewer" && !session.demo && (
+                <form
+                  onSubmit={(event) => {
+                    event.preventDefault();
+                    void run(async () => {
+                      const result = await api<{ snapshot: Session }>(
+                        "/api/scenarios",
+                        { action: "create", kind: scenario },
+                      );
+                      restoreSession(result.snapshot);
+                      setTab(
+                        result.snapshot.orders.length ? "orders" : "discover",
+                      );
+                      setNotice(
+                        "An isolated fixture scenario is open as the shopper. All payments, analysis, and shipping here are synthetic. Use its workspace ID in a separate operator profile.",
+                      );
+                    });
+                  }}
+                >
+                  <label>
+                    Engineering scenario
+                    <select
+                      value={scenario}
+                      onChange={(event) =>
+                        setScenario(event.target.value as ScenarioKind)
+                      }
+                    >
+                      <option value="fresh">Fresh shopper workspace</option>
+                      <option value="delivered">
+                        Delivered item ready for a return
+                      </option>
+                      <option value="identifier_conflict">
+                        Conflicting return identifiers
+                      </option>
+                      <option value="seller_silence">
+                        Missed seller response deadline
+                      </option>
+                      <option value="refund_failure">Rejected refund</option>
+                      <option value="refund_timeout">Interrupted refund</option>
+                      <option value="canceled_order">
+                        Seller cancellation with payment recorded
+                      </option>
+                      <option value="late_order">
+                        Late delivery with customer remedy choices
+                      </option>
+                      <option value="group_partial">
+                        Partial group payment
+                      </option>
+                    </select>
+                  </label>
+                  <button className="button secondary small" disabled={busy}>
+                    Open new fixture scenario as shopper
+                  </button>
+                  {session.fixtureWorkspace && (
                     <button
                       type="button"
-                      className="button secondary full"
+                      className="button secondary small"
                       disabled={busy}
-                      onClick={(e) => {
-                        const checkpoint = String(
-                          new FormData(e.currentTarget.form!).get("checkpoint"),
-                        );
+                      onClick={() =>
                         void run(async () => {
-                          const capture = (await action({
-                            action: "capture_session",
-                            checkpoint,
-                            ...(modal.order
-                              ? { orderId: modal.order.id }
-                              : { caseId: modal.item!.id }),
-                          })) as {
-                            id: string;
-                            code: string;
-                            expiresAt: string;
-                          };
-                          setModal({ ...modal, capture });
-                        });
-                      }}
+                          const result = await api<{ snapshot: Session }>(
+                            "/api/scenarios",
+                            { action: "reset", kind: scenario },
+                          );
+                          restoreSession(result.snapshot);
+                          setTab("orders");
+                          setNotice(
+                            "Previous fixture archived with audit history preserved. A new isolated fixture workspace is open.",
+                          );
+                        })
+                      }
                     >
-                      Get capture code (optional)
+                      Archive fixture and start fresh
                     </button>
-                    {modal.capture && (
-                      <p role="status">
-                        Capture code: <strong>{modal.capture.code}</strong>.
-                        Include it with the item identifier and condition in
-                        your photo. Expires{" "}
-                        {new Date(modal.capture.expiresAt).toLocaleTimeString()}
-                        . This records a link to your upload; it does not verify
-                        capture timing or physical truth.
+                  )}
+                </form>
+              )}
+            </details>
+          )}
+        </main>
+        <footer className="site-footer-wrap" inert={!!modal}>
+          <div className="site-footer-inner">
+            <div className="site-footer">
+              <div className="footer-brand">
+                <div className="brand">
+                  <BrandWordmark />
+                  <span className="sr-only">DALE</span>
+                </div>
+                <p>
+                  Considered choices. Customer-first commerce. From your first
+                  search to a fair resolution.
+                </p>
+              </div>
+              <div className="footer-links">
+                <strong>The collection</strong>
+                <button
+                  onClick={() => {
+                    setTab("discover");
+                    window.scrollTo({
+                      top: 0,
+                      behavior: window.matchMedia(
+                        "(prefers-reduced-motion: reduce)",
+                      ).matches
+                        ? "instant"
+                        : "smooth",
+                    });
+                  }}
+                >
+                  Discover essentials
+                </button>
+                <button
+                  data-agent-control="Open group deals"
+                  onClick={() => setTab("groups")}
+                >
+                  Buy together
+                </button>
+                <button
+                  data-agent-control="Open my orders"
+                  onClick={() => setTab("orders")}
+                >
+                  Track an order
+                </button>
+              </div>
+              <div className="footer-links">
+                <strong>At your service</strong>
+                <button
+                  data-agent-control="Open support"
+                  onClick={() => setTab("support")}
+                >
+                  Returns & support
+                </button>
+                <button
+                  onClick={() => {
+                    setScam(null);
+                    setModal({ kind: "scam" });
+                  }}
+                >
+                  Check a message
+                </button>
+                <button
+                  onClick={() => {
+                    setRole("seller");
+                    setWorkspaceId(session?.actor.workspaceId || "");
+                    setModal({ kind: "login" });
+                  }}
+                >
+                  Operator workspace
+                </button>
+              </div>
+            </div>
+            <div className="footer-bottom">
+              <span>DALE / The considered collection</span>
+              <span>
+                Test storefront · Manufacturer-linked catalogue + isolated
+                fixtures · Simulated shipping · USD
+              </span>
+            </div>
+          </div>
+        </footer>
+        <AnimatePresence>
+          {modal && (
+            <motion.div
+              className="modal-backdrop"
+              key="dialog"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.18 }}
+            >
+              <Dialog
+                key={modal.kind}
+                onClose={() => setModal(null)}
+                className={
+                  modal.kind === "product" ? "product-modal" : undefined
+                }
+              >
+                <button
+                  className="close-modal"
+                  aria-label="Close dialog"
+                  data-agent-control="Close dialog"
+                  onClick={() => setModal(null)}
+                >
+                  <X size={21} />
+                </button>
+                {modal.kind === "product" && (
+                  <div className="product-detail">
+                    <ProductArt product={modal.product} />
+                    <div className="product-detail-copy">
+                      <span className="eyebrow">
+                        THE COLLECTION / {modal.product.id}
+                      </span>
+                      <h2 id="modal-title">{modal.product.name}</h2>
+                      <p>{modal.product.description}</p>
+                      <div className="price-row">
+                        <strong>{formatMoney(modal.product.price)}</strong>
+                        <small>USD · Shipping included</small>
+                      </div>
+                      <ul className="product-facts">
+                        {modal.product.specs.map((spec) => (
+                          <li key={spec}>
+                            <Check size={14} />
+                            {spec}
+                          </li>
+                        ))}
+                      </ul>
+                      <LuxuryArchitectureCard product={modal.product} />
+                      <p>
+                        {isRetailCategory(modal.product.category) ||
+                        modal.product.brand
+                          ? "Variant attributes: "
+                          : "Recorded device profiles: "}
+                        {isRetailCategory(modal.product.category) ||
+                        modal.product.brand
+                          ? Object.entries(modal.product.attributes || {})
+                              .map(([key, value]) => `${key}: ${value}`)
+                              .join(" · ")
+                          : modal.product.compatibleModels
+                              .map(deviceLabel)
+                              .join(", ")}
                       </p>
-                    )}
-                    <button className="button primary full" disabled={busy}>
-                      Record evidence <Check size={16} />
-                    </button>
-                  </form>
-                </>
-              )}
-              {modal.kind === "cancel" && (
-                <>
-                  <h2 id="modal-title">Record a fulfillment cancellation.</h2>
-                  <p className="muted">
-                    Captured payments remain recorded. The shopper chooses
-                    refund or replacement; cancellation alone does not execute a
-                    financial remedy.
-                  </p>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const form = new FormData(e.currentTarget);
-                      void run(async () => {
-                        await action({
-                          action: "cancel_fulfillment",
-                          orderId: modal.order.id,
-                          reason: String(form.get("reason")),
-                        });
-                        setModal(null);
-                        setNotice(
-                          "Cancellation recorded; the customer can choose a remedy through support.",
-                        );
-                      });
-                    }}
-                  >
-                    <label>
-                      Cancellation reason
-                      <textarea
-                        required
-                        name="reason"
-                        maxLength={2000}
-                        rows={3}
-                      />
-                    </label>
-                    <button className="button primary full" disabled={busy}>
-                      Record cancellation
-                    </button>
-                  </form>
-                </>
-              )}
-              {modal.kind === "identify" && (
-                <>
-                  <h2 id="modal-title">Check your device label.</h2>
-                  <p className="muted">
-                    Use a clear photo of the model label. Identification is a
-                    suggestion: confirm the model before compatibility checks or
-                    purchase. Unknown or conflicting labels receive
-                    clarification.
-                  </p>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const form = new FormData(e.currentTarget);
-                      form.set("selectedModel", model);
-                      void run(async () => {
-                        const response = await fetch("/api/identify", {
-                          method: "POST",
-                          body: form,
-                        });
-                        const result = await response.json();
-                        if (!response.ok) throw new Error(result.error);
-                        setModal({ kind: "identify", result });
-                      });
-                    }}
-                  >
-                    <label>
-                      Device label photo
-                      <input
-                        required
-                        name="image"
-                        type="file"
-                        accept="image/png,image/jpeg,image/webp"
-                        capture="environment"
-                      />
-                    </label>
-                    <button className="button primary full" disabled={busy}>
-                      Read model label
-                    </button>
-                  </form>
-                  {modal.result && (
-                    <div className="analysis-panel">
-                      <p>{deviceText(modal.result.message)}</p>
-                      <small>
-                        {modal.result.mode === "fixture"
-                          ? "Synthetic label fixture adapter; arbitrary images are not recognized in fixture mode."
-                          : "Provider-extracted label; confirmation required."}
-                      </small>
-                      {modal.result.proposedModel && (
+                      <p className="muted">
+                        {modal.product.sponsored
+                          ? "Sponsored listing. Organic ranking is independent of sponsorship."
+                          : "Curated catalog listing."}{" "}
+                        Product visual is an editorial identity card or original
+                        illustration.
+                      </p>
+                      <CatalogEvidence product={modal.product} />
+                      <div className="policy-note">
+                        You review the full amount and merchant before
+                        approving. Returns and replacements remain available
+                        through your order.
+                      </div>
+                      {!briefDirty &&
+                      productFits(modal.product, model) &&
+                      modal.product.price <= Number(budget) * 100 &&
+                      (!category || category === modal.product.category) ? (
                         <button
-                          className="button secondary full"
+                          className="button primary full"
+                          disabled={busy || !isBuyer}
+                          onClick={() => void choose(modal.product)}
+                        >
+                          Review purchase <ArrowRight size={16} />
+                        </button>
+                      ) : (
+                        <button
+                          className="button primary full"
                           onClick={() => {
-                            setModel(modal.result!.proposedModel!);
-                            setBriefDirty(true);
+                            const nextCategory = modal.product.category;
                             setModal(null);
-                            setNotice(
-                              "Device selection updated. Find my match saves it and renews older unpaid approvals.",
-                            );
+                            setTab("discover");
+                            browseCollection(nextCategory);
                           }}
                         >
-                          Use {deviceLabel(modal.result.proposedModel)}
+                          Set requirements for this collection{" "}
+                          <ArrowRight size={16} />
                         </button>
                       )}
                     </div>
-                  )}
-                </>
-              )}
-              {modal.kind === "scam" && (
-                <>
-                  <div className="modal-icon">
-                    <MessageSquare />
                   </div>
-                  <h2 id="modal-title">A second look before you pay.</h2>
-                  <p className="muted">
-                    Share a message you're unsure about. Remove passwords and
-                    private codes first.
-                  </p>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const form = new FormData(e.currentTarget);
-                      if (!session) {
-                        setError("Start a shopper session first.");
-                        return;
-                      }
-                      void run(async () => {
-                        setScam(
-                          (await action({
-                            action: "scam",
-                            message: String(form.get("message")),
-                          })) as ScamResult,
-                        );
-                      });
-                    }}
-                  >
-                    <label>
-                      Seller message
-                      <textarea
-                        required
-                        name="message"
-                        rows={5}
-                        maxLength={6000}
-                        placeholder="Paste a message or the conversation you choose to share…"
-                      />
-                    </label>
-                    <button className="button primary full" disabled={busy}>
-                      Check this message <ShieldCheck size={16} />
-                    </button>
-                  </form>
-                  {scam && (
-                    <div className={`scam-result ${scam.level}`}>
-                      <strong>
-                        {scam.level === "low"
-                          ? "No listed warning signals found"
-                          : "Pause and verify"}
-                      </strong>
-                      {scam.reasons.map((reason, i) => (
-                        <p key={i}>{reason}</p>
-                      ))}
-                      <p>{scam.nextStep}</p>
+                )}
+                {modal.kind === "login" && (
+                  <>
+                    <div className="modal-icon">
+                      <ShoppingBag />
                     </div>
-                  )}
-                </>
-              )}
-              {error && (
-                <p className="modal-error" role="alert">
-                  {error}
-                </p>
-              )}
-            </Dialog>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+                    <h2 id="modal-title">
+                      {role === "buyer"
+                        ? "Your shopping space."
+                        : "Operator access."}
+                    </h2>
+                    <p className="muted">
+                      {role === "buyer"
+                        ? "Shop together from separate devices. Each customer keeps private orders and payment approval."
+                        : "Use a separate browser profile. Operator roles require the configured access code."}
+                    </p>
+                    {role === "buyer" ? (
+                      <CustomerEntry
+                        onComplete={async () => {
+                          window.location.assign("/shop");
+                        }}
+                      />
+                    ) : (
+                      <form
+                        onSubmit={(e) => {
+                          e.preventDefault();
+                          void run(async () => {
+                            restoreSession(
+                              await api<Session>("/api/session", {
+                                role,
+                                accessCode,
+                                ...(role === "buyer" && invite
+                                  ? { invite: invite.trim() }
+                                  : {}),
+                                ...(role !== "buyer" && workspaceId
+                                  ? { workspaceId: workspaceId.trim() }
+                                  : {}),
+                              }),
+                            );
+                            setModal(null);
+                            setAccessCode("");
+                            setTab(role === "buyer" ? "discover" : "orders");
+                          });
+                        }}
+                      >
+                        <label>
+                          Role
+                          <select
+                            value={role}
+                            onChange={(e) => setRole(e.target.value)}
+                          >
+                            <option value="buyer">Shopper</option>
+                            <option value="seller">Seller</option>
+                            <option value="reviewer">Reviewer</option>
+                          </select>
+                        </label>
+                        <label>
+                          {role === "buyer"
+                            ? "Demo access code (if configured)"
+                            : "Operator access code"}
+                          <input
+                            type="password"
+                            autoComplete="off"
+                            value={accessCode}
+                            onChange={(e) => setAccessCode(e.target.value)}
+                          />
+                        </label>
+                        {role === "buyer" ? (
+                          <label>
+                            Group invitation (optional)
+                            <input
+                              value={invite}
+                              onChange={(e) => setInvite(e.target.value)}
+                            />
+                          </label>
+                        ) : (
+                          <label>
+                            Customer workspace ID
+                            <input
+                              required
+                              value={workspaceId}
+                              onChange={(e) => setWorkspaceId(e.target.value)}
+                            />
+                          </label>
+                        )}
+                        <button className="button primary full" disabled={busy}>
+                          Enter workspace <ArrowRight size={16} />
+                        </button>
+                      </form>
+                    )}
+                    {role === "buyer" && (
+                      <button
+                        className="button secondary"
+                        onClick={() => setRole("seller")}
+                      >
+                        Operator access
+                      </button>
+                    )}
+                  </>
+                )}
+                {modal.kind === "quote" && (
+                  <>
+                    <div className="modal-icon">
+                      <ShieldCheck />
+                    </div>
+                    <h2 id="modal-title">Your choice. Fully reviewed.</h2>
+                    <p className="muted">
+                      Confirm the exact purchase before payment. Changes require
+                      approval again.
+                    </p>
+                    <div className="quote-product">
+                      <ProductArt product={modal.product} compact />
+                      <div>
+                        <strong>{modal.product.name}</strong>
+                        <p>
+                          {isRetailCategory(modal.product.category)
+                            ? "Exact variant selected; review its recorded attributes."
+                            : `Confirmed profile: ${deviceLabel(modal.quote.model)}`}
+                        </p>
+                      </div>
+                    </div>
+                    {modal.quote.productId.startsWith("R") && (
+                      <p className="fixture-note">
+                        Real manufacturer product identity; simulated DALE
+                        merchant offer. This does not order from Apple or
+                        promise physical fulfillment.{" "}
+                        {modal.quote.productId === "R003"
+                          ? "Adapter and 60W charging cable included."
+                          : "Adapter only; uses the charging cable confirmed in your brief."}
+                      </p>
+                    )}
+                    {modal.quote.deliveryBy && (
+                      <p>
+                        Delivery promise:{" "}
+                        {new Date(modal.quote.deliveryBy).toLocaleDateString()}
+                      </p>
+                    )}
+                    <p>
+                      Merchant policy: request returns within 30 days of
+                      recorded delivery. Merchant-paid return shipping for
+                      qualifying claims; uncertain or late requests receive
+                      review. Provider disputes remain a separate process.
+                    </p>
+                    <dl className="quote-summary">
+                      <div>
+                        <dt>Merchant</dt>
+                        <dd>DALE demo store</dd>
+                      </div>
+                      <div>
+                        <dt>Item</dt>
+                        <dd>{formatMoney(modal.quote.amount)}</dd>
+                      </div>
+                      <div>
+                        <dt>Shipping & taxes</dt>
+                        <dd>Included in this demo quote</dd>
+                      </div>
+                      <div>
+                        <dt>Return window</dt>
+                        <dd>30 days under demo policy</dd>
+                      </div>
+                      <div className="total">
+                        <dt>Total approved</dt>
+                        <dd>{formatMoney(modal.quote.amount)}</dd>
+                      </div>
+                    </dl>
+                    <p className="muted">
+                      Valid until{" "}
+                      {new Date(modal.quote.expiresAt).toLocaleTimeString()}.
+                      Recipient: {modal.quote.payee}.
+                    </p>
+                    {session?.modes.payments === "sandbox" &&
+                    session.paypalClientId ? (
+                      <PayPalCheckout
+                        clientId={session.paypalClientId}
+                        quote={modal.quote}
+                        action={action}
+                        onDone={finishCheckout}
+                        onError={showPaymentError}
+                      />
+                    ) : (
+                      <>
+                        <div className="fixture-note">
+                          Simulated payment test. No money is charged.
+                        </div>
+                        <button
+                          className="button primary full"
+                          disabled={busy}
+                          onClick={() =>
+                            void run(async () => {
+                              const order = (await action({
+                                action: "checkout",
+                                quoteId: modal.quote.id,
+                                fingerprint: modal.quote.fingerprint,
+                              })) as Order;
+                              await action({
+                                action: "capture",
+                                orderId: order.id,
+                              });
+                              finishCheckout();
+                            })
+                          }
+                        >
+                          <CreditCard size={17} /> Approve simulated purchase
+                        </button>
+                      </>
+                    )}
+                  </>
+                )}
+                {modal.kind === "resolve" && (
+                  <>
+                    <h2 id="modal-title">Approve the customer’s choice.</h2>
+                    <p className="muted">
+                      Review the original records and payment before authorizing
+                      the requested {modal.item.request}. Conflicting or missing
+                      evidence does not automatically deny the request.
+                    </p>
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        const form = new FormData(e.currentTarget);
+                        void run(async () => {
+                          const decision = String(
+                            form.get("returnDecision") || "waive",
+                          );
+                          if (
+                            modal.item.returnShipment?.status !== "received"
+                          ) {
+                            await action({
+                              action: "authorize_return",
+                              caseId: modal.item.id,
+                              decision,
+                              reason: String(form.get("note")),
+                              labelReference: String(
+                                form.get("labelReference") || "",
+                              ),
+                            });
+                          }
+                          if (decision === "prepaid") {
+                            setModal(null);
+                            setNotice(
+                              "Prepaid return arranged. The customer pays no return shipping cost. Record handoff and receipt before approving the remedy.",
+                            );
+                            return;
+                          }
+                          await action({
+                            action: "resolve",
+                            caseId: modal.item.id,
+                            remedy: modal.item.request,
+                            note: String(form.get("note")),
+                          });
+                          setModal(null);
+                          setNotice(
+                            "Remedy processed. Check its financial status before considering it complete.",
+                          );
+                        });
+                      }}
+                    >
+                      {modal.item.returnShipment?.status !== "received" && (
+                        <>
+                          <label>
+                            Return arrangement
+                            <select
+                              name="returnDecision"
+                              aria-label="Return arrangement"
+                            >
+                              <option value="waive">
+                                Approve a no-return remedy
+                              </option>
+                              <option value="prepaid">
+                                Arrange a merchant-paid return first
+                              </option>
+                            </select>
+                          </label>
+                          <label>
+                            Prepaid label reference (required for a return)
+                            <input
+                              name="labelReference"
+                              maxLength={100}
+                              placeholder="Demo carrier reference"
+                            />
+                          </label>
+                        </>
+                      )}
+                      <label>
+                        Reason and customer policy
+                        <textarea
+                          name="note"
+                          required
+                          minLength={10}
+                          maxLength={2000}
+                          rows={4}
+                        />
+                      </label>
+                      <button className="button primary full" disabled={busy}>
+                        Authorize {modal.item.request}
+                      </button>
+                    </form>
+                  </>
+                )}
+                {modal.kind === "return_shipping" && (
+                  <>
+                    <h2 id="modal-title">
+                      {modal.status === "in_transit"
+                        ? "Record your return handoff."
+                        : "Record the returned parcel."}
+                    </h2>
+                    <p className="muted">
+                      This demo records simulated carrier events. A tracking
+                      reference does not prove parcel contents; both parties can
+                      submit evidence separately.
+                    </p>
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        const form = new FormData(e.currentTarget);
+                        void run(async () => {
+                          await action({
+                            action: "return_shipping",
+                            caseId: modal.item.id,
+                            status: modal.status,
+                            trackingReference: String(
+                              form.get("trackingReference"),
+                            ),
+                          });
+                          setModal(null);
+                          setNotice(
+                            "Return checkpoint recorded. Your request remains open until the remedy is processed.",
+                          );
+                        });
+                      }}
+                    >
+                      <label>
+                        Return tracking reference
+                        <input
+                          required
+                          name="trackingReference"
+                          maxLength={100}
+                          defaultValue={
+                            modal.item.returnShipment?.trackingReference || ""
+                          }
+                        />
+                      </label>
+                      <button
+                        data-agent-control={
+                          isBuyer ? "Submit my return checkpoint" : undefined
+                        }
+                        className="button primary full"
+                        disabled={busy}
+                      >
+                        Save return checkpoint
+                      </button>
+                    </form>
+                  </>
+                )}
+                {modal.kind === "return" && (
+                  <>
+                    <div className="modal-icon">
+                      <HeartHandshake />
+                    </div>
+                    <h2 id="modal-title">How can we put it right?</h2>
+                    <p className="muted">
+                      Tell us what happened and choose your preferred remedy.
+                    </p>
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        const form = new FormData(e.currentTarget);
+                        void run(async () => {
+                          await action({
+                            action: "return",
+                            orderId: modal.order.id,
+                            reason: form.get("reason"),
+                            request: form.get("request"),
+                          });
+                          setModal(null);
+                          setTab("support");
+                          setSupportDraft(null);
+                        });
+                      }}
+                    >
+                      <label>
+                        What happened?
+                        <select
+                          name="reason"
+                          defaultValue={supportDraft?.reason || "damaged"}
+                        >
+                          <option value="damaged">
+                            The product arrived damaged
+                          </option>
+                          <option value="wrong_item">
+                            I received the wrong product
+                          </option>
+                          <option value="not_delivered">
+                            My order has not arrived
+                          </option>
+                          <option value="canceled">
+                            The order needs canceling
+                          </option>
+                        </select>
+                      </label>
+                      <label>
+                        Your preferred resolution
+                        <select
+                          name="request"
+                          defaultValue={supportDraft?.request || "refund"}
+                        >
+                          <option value="refund">Refund</option>
+                          <option value="replacement">
+                            Replacement at no extra charge
+                          </option>
+                        </select>
+                      </label>
+                      <div className="policy-note">
+                        Automated analysis alone cannot deny your request. You
+                        can ask for a person to review it.
+                      </div>
+                      <button
+                        data-agent-control="Submit my return request"
+                        className="button primary full"
+                        disabled={busy}
+                      >
+                        Open my request <ArrowRight size={16} />
+                      </button>
+                    </form>
+                  </>
+                )}
+                {modal.kind === "evidence" && (
+                  <>
+                    <h2 id="modal-title">Share your side.</h2>
+                    <p className="muted">
+                      A clear description is welcome. Photos are optional; video
+                      is never required.
+                    </p>
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        const form = new FormData(e.currentTarget);
+                        void run(async () => {
+                          await upload(
+                            form,
+                            modal.order
+                              ? { orderId: modal.order.id }
+                              : { caseId: modal.item!.id },
+                          );
+                          setModal(null);
+                          setNotice(
+                            "Evidence recorded. Integrity checks do not establish physical truth.",
+                          );
+                        });
+                      }}
+                    >
+                      <label>
+                        Checkpoint
+                        <select
+                          name="checkpoint"
+                          onChange={() =>
+                            setModal({ ...modal, capture: undefined })
+                          }
+                        >
+                          {modal.order ? (
+                            <option value="seller_dispatch">
+                              Seller dispatch
+                            </option>
+                          ) : session?.actor.role === "buyer" ? (
+                            <>
+                              <option value="buyer_receipt">
+                                Customer receipt
+                              </option>
+                              <option value="buyer_return">
+                                Customer return dispatch
+                              </option>
+                            </>
+                          ) : (
+                            <>
+                              <option value="seller_dispatch">
+                                Seller dispatch record
+                              </option>
+                              <option value="seller_return">
+                                Seller return receipt
+                              </option>
+                            </>
+                          )}
+                        </select>
+                      </label>
+                      <label>
+                        Item serial / identifier (optional)
+                        <input name="serial" maxLength={100} />
+                      </label>
+                      <label>
+                        What does this record show?
+                        <textarea
+                          required
+                          name="note"
+                          rows={4}
+                          maxLength={2000}
+                        />
+                      </label>
+                      <label>
+                        Photo (optional, up to 4 MB)
+                        <input
+                          type="file"
+                          name="image"
+                          accept="image/png,image/jpeg,image/webp"
+                          capture="environment"
+                        />
+                      </label>
+                      <label>
+                        Video (optional, MP4 or WebM, up to 8 MB)
+                        <input
+                          type="file"
+                          name="video"
+                          accept="video/mp4,video/webm"
+                        />
+                      </label>
+                      <p className="muted">
+                        Choose one photo or video per record, or submit your
+                        description alone. Videos are private records for human
+                        review; image analysis does not inspect video.
+                      </p>
+                      <input
+                        type="hidden"
+                        name="captureSessionId"
+                        value={modal.capture?.id || ""}
+                      />
+                      <button
+                        type="button"
+                        className="button secondary full"
+                        data-agent-control={
+                          isBuyer ? "Get an evidence capture code" : undefined
+                        }
+                        disabled={busy}
+                        onClick={(e) => {
+                          const checkpoint = String(
+                            new FormData(e.currentTarget.form!).get(
+                              "checkpoint",
+                            ),
+                          );
+                          void run(async () => {
+                            const capture = (await action({
+                              action: "capture_session",
+                              checkpoint,
+                              ...(modal.order
+                                ? { orderId: modal.order.id }
+                                : { caseId: modal.item!.id }),
+                            })) as {
+                              id: string;
+                              code: string;
+                              expiresAt: string;
+                            };
+                            setModal({ ...modal, capture });
+                          });
+                        }}
+                      >
+                        Get capture code (optional)
+                      </button>
+                      {modal.capture && (
+                        <p role="status">
+                          Capture code: <strong>{modal.capture.code}</strong>.
+                          Include it with the item identifier and condition in
+                          your photo. Expires{" "}
+                          {new Date(
+                            modal.capture.expiresAt,
+                          ).toLocaleTimeString()}
+                          . This records a link to your upload; it does not
+                          verify capture timing or physical truth.
+                        </p>
+                      )}
+                      <button
+                        data-agent-control={
+                          isBuyer ? "Submit my evidence" : undefined
+                        }
+                        className="button primary full"
+                        disabled={busy}
+                      >
+                        Record evidence <Check size={16} />
+                      </button>
+                    </form>
+                  </>
+                )}
+                {modal.kind === "cancel" && (
+                  <>
+                    <h2 id="modal-title">Record a fulfillment cancellation.</h2>
+                    <p className="muted">
+                      Captured payments remain recorded. The shopper chooses
+                      refund or replacement; cancellation alone does not execute
+                      a financial remedy.
+                    </p>
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        const form = new FormData(e.currentTarget);
+                        void run(async () => {
+                          await action({
+                            action: "cancel_fulfillment",
+                            orderId: modal.order.id,
+                            reason: String(form.get("reason")),
+                          });
+                          setModal(null);
+                          setNotice(
+                            "Cancellation recorded; the customer can choose a remedy through support.",
+                          );
+                        });
+                      }}
+                    >
+                      <label>
+                        Cancellation reason
+                        <textarea
+                          required
+                          name="reason"
+                          maxLength={2000}
+                          rows={3}
+                        />
+                      </label>
+                      <button className="button primary full" disabled={busy}>
+                        Record cancellation
+                      </button>
+                    </form>
+                  </>
+                )}
+                {modal.kind === "identify" && (
+                  <>
+                    <h2 id="modal-title">Check your device label.</h2>
+                    <p className="muted">
+                      Use a clear photo of the model label. Identification is a
+                      suggestion: confirm the model before compatibility checks
+                      or purchase. Unknown or conflicting labels receive
+                      clarification.
+                    </p>
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        const form = new FormData(e.currentTarget);
+                        form.set("selectedModel", model);
+                        void run(async () => {
+                          const response = await fetch("/api/identify", {
+                            method: "POST",
+                            body: form,
+                          });
+                          const result = await response.json();
+                          if (!response.ok) throw new Error(result.error);
+                          setModal({ kind: "identify", result });
+                        });
+                      }}
+                    >
+                      <label>
+                        Device label photo
+                        <input
+                          required
+                          name="image"
+                          type="file"
+                          accept="image/png,image/jpeg,image/webp"
+                          capture="environment"
+                        />
+                      </label>
+                      <button className="button primary full" disabled={busy}>
+                        Read model label
+                      </button>
+                    </form>
+                    {modal.result && (
+                      <div className="analysis-panel">
+                        <p>{deviceText(modal.result.message)}</p>
+                        <small>
+                          {modal.result.mode === "fixture"
+                            ? "Synthetic label fixture adapter; arbitrary images are not recognized in fixture mode."
+                            : "Provider-extracted label; confirmation required."}
+                        </small>
+                        {modal.result.proposedModel && (
+                          <button
+                            className="button secondary full"
+                            onClick={() => {
+                              setModel(modal.result!.proposedModel!);
+                              setBriefDirty(true);
+                              setModal(null);
+                              setNotice(
+                                "Device selection updated. Find my match saves it and renews older unpaid approvals.",
+                              );
+                            }}
+                          >
+                            Use {deviceLabel(modal.result.proposedModel)}
+                          </button>
+                        )}
+                      </div>
+                    )}
+                  </>
+                )}
+                {modal.kind === "scam" && (
+                  <>
+                    <div className="modal-icon">
+                      <MessageSquare />
+                    </div>
+                    <h2 id="modal-title">A second look before you pay.</h2>
+                    <p className="muted">
+                      Share a message you're unsure about. Remove passwords and
+                      private codes first.
+                    </p>
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        const form = new FormData(e.currentTarget);
+                        if (!session) {
+                          setError("Start a shopper session first.");
+                          return;
+                        }
+                        void run(async () => {
+                          setScam(
+                            (await action({
+                              action: "scam",
+                              message: String(form.get("message")),
+                            })) as ScamResult,
+                          );
+                        });
+                      }}
+                    >
+                      <label>
+                        Seller message
+                        <textarea
+                          required
+                          name="message"
+                          rows={5}
+                          maxLength={6000}
+                          placeholder="Paste a message or the conversation you choose to share…"
+                        />
+                      </label>
+                      <button className="button primary full" disabled={busy}>
+                        Check this message <ShieldCheck size={16} />
+                      </button>
+                    </form>
+                    {scam && (
+                      <div className={`scam-result ${scam.level}`}>
+                        <strong>
+                          {scam.level === "low"
+                            ? "No listed warning signals found"
+                            : "Pause and verify"}
+                        </strong>
+                        {scam.reasons.map((reason, i) => (
+                          <p key={i}>{reason}</p>
+                        ))}
+                        <p>{scam.nextStep}</p>
+                      </div>
+                    )}
+                  </>
+                )}
+                {error && (
+                  <p className="modal-error" role="alert">
+                    {error}
+                  </p>
+                )}
+              </Dialog>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </StoreContext.Provider>
   );
 }

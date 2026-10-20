@@ -46,7 +46,7 @@ export function observeControls(): UIContext["controls"] {
     if (href && !registeredPath(href)) continue;
     if (
       el instanceof HTMLInputElement &&
-      ["password", "file", "hidden"].includes(el.type)
+      ["password", "hidden"].includes(el.type)
     )
       continue;
     const label = (
@@ -65,28 +65,44 @@ export function observeControls(): UIContext["controls"] {
     );
     if (controls.has(id)) continue;
     const kind =
-      el instanceof HTMLAnchorElement
-        ? "link"
-        : el instanceof HTMLSelectElement
-          ? "select"
-          : el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement
-            ? "input"
-            : el instanceof HTMLDetailsElement
-              ? "details"
-              : "button";
+      el instanceof HTMLInputElement && el.type === "file"
+        ? "file"
+        : el instanceof HTMLAnchorElement
+          ? "link"
+          : el instanceof HTMLSelectElement
+            ? "select"
+            : el instanceof HTMLInputElement ||
+                el instanceof HTMLTextAreaElement
+              ? "input"
+              : el instanceof HTMLDetailsElement
+                ? "details"
+                : "button";
     controls.set(id, el);
     result.push({
       id,
       label,
       kind,
-      ...(el instanceof HTMLDetailsElement
-        ? { value: el.open ? "open" : "closed" }
-        : el instanceof HTMLInputElement &&
-            ["checkbox", "radio"].includes(el.type)
-          ? { value: String(el.checked), options: ["true", "false"] }
-          : "value" in el
-            ? { value: String(el.value).slice(0, 500) }
-            : {}),
+      ...(el instanceof HTMLInputElement ||
+      el instanceof HTMLTextAreaElement ||
+      el instanceof HTMLSelectElement
+        ? { required: el.required, valid: el.validity.valid }
+        : {}),
+      ...(el instanceof HTMLInputElement && el.type === "file"
+        ? {
+            value: Array.from(el.files || [])
+              .map((f) => f.name)
+              .join(", ")
+              .slice(0, 500),
+            options: el.accept.split(",").filter(Boolean),
+          }
+        : el instanceof HTMLDetailsElement
+          ? { value: el.open ? "open" : "closed" }
+          : el instanceof HTMLInputElement &&
+              ["checkbox", "radio"].includes(el.type)
+            ? { value: String(el.checked), options: ["true", "false"] }
+            : "value" in el
+              ? { value: String(el.value).slice(0, 500) }
+              : {}),
       ...(el instanceof HTMLSelectElement
         ? {
             options: Array.from(el.options)
@@ -191,6 +207,11 @@ export async function localBrowserOperation(
     el instanceof HTMLTextAreaElement ||
     el instanceof HTMLSelectElement
   ) {
+    if (el instanceof HTMLInputElement && el.type === "file") {
+      const files = Array.from(el.files || []);
+      if (!files.length) throw new Error("No file has been selected.");
+      return `Selected ${files.map((f) => `${f.name} (${f.size} bytes)`).join(", ")}. The form has not been submitted.`;
+    }
     if (operation.value === undefined)
       throw new Error("This control requires a value.");
     if (
@@ -251,12 +272,22 @@ export async function localBrowserOperation(
     });
   const before = snapshot();
   const oldError = document.querySelector('[role="alert"]')?.textContent;
+  if (
+    el instanceof HTMLButtonElement &&
+    el.type === "submit" &&
+    el.form &&
+    !el.form.checkValidity()
+  )
+    throw new Error(
+      "The form still has incomplete or invalid fields. Inspect its controls before submitting.",
+    );
   el.click();
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 200; i++) {
     signal.throwIfAborted();
     await new Promise((r) => setTimeout(r, 100));
     const error = document.querySelector('[role="alert"]')?.textContent;
     if (error && error !== oldError) throw new Error(error.slice(0, 300));
+    if (el.isConnected && el.matches(":disabled")) continue;
     if (snapshot() !== before) {
       if (registeredPath(location.pathname + location.search))
         await waitForPage(location.pathname + location.search, signal);
@@ -266,6 +297,57 @@ export async function localBrowserOperation(
   throw new Error(
     "No component state change was observed. Inspect the current page before retrying.",
   );
+}
+const fileFingerprint = (el: HTMLInputElement) =>
+  JSON.stringify(
+    Array.from(el.files || []).map((f) => ({
+      name: f.name,
+      size: f.size,
+      type: f.type,
+      lastModified: f.lastModified,
+    })),
+  );
+const fileSelectionKey = (action: BrowserAction) =>
+  `dale-file-choice:${action.id}:${browserTabId()}`;
+export function fileSelectionReady(action: BrowserAction) {
+  if (action.operation.type !== "control") return false;
+  const el = controls.get(action.operation.control_id);
+  return (
+    el instanceof HTMLInputElement &&
+    el.type === "file" &&
+    Boolean(el.files?.length) &&
+    sessionStorage.getItem(fileSelectionKey(action)) === fileFingerprint(el)
+  );
+}
+/** Called directly from the shopper's recovery button, preserving a real user
+ * gesture. Only the existing input receives files; paths/bytes never enter tool arguments. */
+export function chooseActionFile(
+  action: BrowserAction,
+  onSelected: () => void,
+) {
+  if (action.operation.type !== "control")
+    throw new Error("This task is not waiting for a file.");
+  const el = controls.get(action.operation.control_id);
+  if (
+    !(el instanceof HTMLInputElement) ||
+    el.type !== "file" ||
+    !el.isConnected
+  )
+    throw new Error("The file input is no longer present. Reopen its form.");
+  const cleanup = () => {
+    el.removeEventListener("change", selected);
+    el.removeEventListener("cancel", cleanup);
+  };
+  const selected = () => {
+    cleanup();
+    if (el.files?.length) {
+      sessionStorage.setItem(fileSelectionKey(action), fileFingerprint(el));
+      onSelected();
+    }
+  };
+  el.addEventListener("change", selected, { once: true });
+  el.addEventListener("cancel", cleanup, { once: true });
+  el.click();
 }
 export function openActionTabs(action: BrowserAction) {
   for (const target of action.targets || []) {

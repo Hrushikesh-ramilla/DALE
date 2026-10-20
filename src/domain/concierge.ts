@@ -57,13 +57,29 @@ export type SearchConstraints = z.infer<typeof searchConstraints>;
 export const uiContext = z
   .object({
     tab_id: z.string().uuid().optional(),
+    notices: z.array(z.string().max(500)).max(8).default([]),
+    dialogs: z
+      .array(
+        z.object({ title: z.string().max(160), label: z.string().max(160) }),
+      )
+      .max(6)
+      .default([]),
     controls: z
       .array(
         z.object({
           id: z.string().max(160),
           label: z.string().max(160),
-          kind: z.enum(["button", "link", "input", "select", "details"]),
+          kind: z.enum([
+            "button",
+            "link",
+            "input",
+            "select",
+            "details",
+            "file",
+          ]),
           value: z.string().max(500).optional(),
+          required: z.boolean().optional(),
+          valid: z.boolean().optional(),
           options: z.array(z.string().max(160)).max(100).optional(),
         }),
       )
@@ -149,6 +165,9 @@ export type BrowserAction = {
   expectedRevision: number;
   createdAt: string;
   controllerTabId?: string;
+  interaction?: "file";
+  sourceURL?: string;
+  controlValue?: string;
   targets?: {
     tabId: string;
     path: string;
@@ -256,6 +275,7 @@ export type ConciergeState = {
     rounds: number;
     worker?: string;
     leaseUntil?: number;
+    observedBasketRevision?: number;
     results: Record<string, unknown>;
   };
   tabs?: Record<

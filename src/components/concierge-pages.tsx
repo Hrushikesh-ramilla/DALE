@@ -7,6 +7,7 @@ import { searchConstraints, type SearchConstraints } from "@/domain/concierge";
 import { formatMoney } from "@/domain/money";
 import { useCopilot } from "./copilot/copilot-context";
 import { ProductArt } from "./product-art";
+import { confirmationCopy } from "./copilot/confirmation-copy";
 
 function Page() {
   const path = usePathname();
@@ -230,6 +231,7 @@ function Page() {
                   <label>
                     <input
                       type="checkbox"
+                      data-agent-control={`Comparison selection for ${p.name}`}
                       checked={selected.includes(p.id)}
                       onChange={(e) =>
                         setSelected((old) =>
@@ -508,12 +510,13 @@ function Page() {
             )
             .map((p) => (
               <article key={p.id}>
-                <h2>Review {p.kind}</h2>
+                <h2>{confirmationCopy[p.kind].title}</h2>
                 <p>{p.summary}</p>
                 {p.kind === "checkout" &&
                   Array.isArray(p.terms.quotes) &&
                   (
                     p.terms.quotes as {
+                      id: string;
                       productId: string;
                       amount: number;
                       currency: string;
@@ -522,7 +525,7 @@ function Page() {
                       expiresAt: string;
                     }[]
                   ).map((q) => (
-                    <div key={q.productId}>
+                    <div key={q.id}>
                       <Link href={`/product/${q.productId}`}>
                         {entries?.find((i) => i.productId === q.productId)
                           ?.product?.name || q.productId}
@@ -537,7 +540,7 @@ function Page() {
                     </div>
                   ))}
                 <button onClick={() => void c.confirm(p.id)}>
-                  Confirm {p.kind}
+                  {confirmationCopy[p.kind].action}
                 </button>
                 <button onClick={() => void c.confirm(p.id, true)}>
                   Cancel

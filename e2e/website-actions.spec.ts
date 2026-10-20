@@ -272,3 +272,129 @@ test("uses browser back and forward between real DALE pages", async ({
   await say(page, "Browser action: go forward");
   await expect(page).toHaveURL(/\/cart$/);
 });
+
+test("operates the real category sort and pagination controls", async ({
+  page,
+}) => {
+  await page.goto("/category/phones?view=all");
+  await expect(
+    page.locator('[data-concierge-page="/category/phones"]'),
+  ).toHaveAttribute("data-ready", "true");
+  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  const cards = page.locator(".product-grid article[data-product-id]");
+  const before = await cards.count();
+  expect(before).toBeGreaterThan(0);
+  await say(page, "Browser action: sort and load more models");
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Browser component task completed from observed results.",
+  );
+  await expect(
+    page.locator('[data-agent-control="Sort category models"]'),
+  ).toHaveValue("price-desc");
+  await expect.poll(() => cards.count()).toBeGreaterThan(before);
+});
+
+test("preserves a manual field edit made after an agent action was planned", async ({
+  page,
+}) => {
+  const budget = page.locator(
+    '[data-agent-control="Shopping brief maximum budget USD"]',
+  );
+  await page.route("**/api/copilot/chat", async (route) => {
+    const response = await route.fetch();
+    const view = await response.json();
+    if (
+      view.actions?.some(
+        (a: { operation: { type: string }; controlValue?: string }) =>
+          a.operation.type === "control" && /^\d/.test(a.controlValue || ""),
+      )
+    )
+      await budget.fill("175");
+    await route.fulfill({ response });
+  });
+  await say(page, "Browser action: open menu and change budget");
+  await expect
+    .poll(async () => {
+      const view = await (await page.request.get("/api/copilot/state")).json();
+      return view.receipts.some(
+        (a: { status: string; outcome: string }) =>
+          a.status === "failed" && a.outcome.includes("field changed"),
+      );
+    })
+    .toBe(true);
+  await expect(budget).toHaveValue("175");
+});
+
+test("accepts a keyboard task on a narrow mobile viewport", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  const input = page.getByLabel("Message DALE");
+  await input.fill("Browser action: add and open in one step");
+  await input.press("Enter");
+  await expect(page).toHaveURL(/\/cart$/);
+  await expect(page.getByLabel("Quantity browser-rag-fragrance")).toHaveValue(
+    "2",
+  );
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Browser action completed from observed results.",
+  );
+  const panel = await page.locator("[data-copilot-panel]").boundingBox();
+  expect(panel).not.toBeNull();
+  expect(panel!.x).toBeGreaterThanOrEqual(0);
+  expect(panel!.x + panel!.width).toBeLessThanOrEqual(391);
+  await expect(input).toBeFocused();
+});
+
+test("selects real comparison checkboxes and activates the existing comparison button", async ({
+  page,
+}) => {
+  const filters = {
+    categories: ["fragrance"],
+    brands: ["Browser contract"],
+    sort: "price_asc",
+  };
+  await page.goto(
+    `/search?filters=${encodeURIComponent(JSON.stringify(filters))}`,
+  );
+  await expect(page.locator('[data-concierge-page="/search"]')).toHaveAttribute(
+    "data-ready",
+    "true",
+  );
+  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  await say(page, "Browser action: compare the two shown products");
+  await expect(page).toHaveURL(/\/compare\?ids=/);
+  await expect(
+    page.locator(".concierge-page thead th[data-product-id]"),
+  ).toHaveCount(2);
+  expect(new URL(page.url()).searchParams.get("ids")!.split(",")).toEqual([
+    "browser-rag-fragrance",
+    "browser-rag-fragrance-two",
+  ]);
+});
+
+test("expands real page details and scrolls the page to its footer", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  await say(page, "Browser action: expand details and scroll to the bottom");
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Browser details and scroll completed from observed results.",
+  );
+  await expect(page.locator("main details").first()).toHaveAttribute(
+    "open",
+    "",
+  );
+  await expect
+    .poll(() =>
+      page.evaluate(() =>
+        Math.abs(
+          document.documentElement.scrollHeight -
+            window.innerHeight -
+            window.scrollY,
+        ),
+      ),
+    )
+    .toBeLessThan(20);
+});

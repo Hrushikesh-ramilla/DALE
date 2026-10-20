@@ -14,6 +14,7 @@ import {
 import { useCopilot } from "./copilot-context";
 import { formatMoney } from "@/domain/money";
 import { AssistantMessage } from "./assistant-message";
+import { confirmationCopy } from "./confirmation-copy";
 
 export function DaleCopilotSidecar() {
   const c = useCopilot();
@@ -220,7 +221,7 @@ export function DaleCopilotSidecar() {
                   className="dale-action-card"
                   aria-label="Customer confirmation"
                 >
-                  <strong>Review before confirming</strong>
+                  <strong>{confirmationCopy[p.kind].title}</strong>
                   <p>{p.summary}</p>
                   {p.kind === "checkout" && (
                     <Link href="/cart">
@@ -230,7 +231,7 @@ export function DaleCopilotSidecar() {
                   <p>Expires {new Date(p.expiresAt).toLocaleTimeString()}</p>
                   {p.kind !== "checkout" && (
                     <button type="button" onClick={() => void c.confirm(p.id)}>
-                      Confirm {p.kind.replaceAll("_", " ")}
+                      {confirmationCopy[p.kind].action}
                     </button>
                   )}{" "}
                   <button
@@ -270,6 +271,18 @@ export function DaleCopilotSidecar() {
                 Open requested tabs
               </button>
             )}
+            {c.state.actions
+              .filter((a) => a.interaction === "file")
+              .map((a) => (
+                <button
+                  key={a.id}
+                  type="button"
+                  onClick={() => c.recoverFile(a.id)}
+                  aria-label="Choose file for DALE task"
+                >
+                  Choose file
+                </button>
+              ))}
             <button type="button" onClick={() => void c.resume()}>
               Resume browser action
             </button>{" "}
