@@ -141,6 +141,31 @@ it("does not open a partial batch when any requested listing is missing", async 
   expect(result).toMatchObject({ needs_selection: true });
   expect(result).not.toHaveProperty("browser_operation");
 });
+it("retains the cumulative active budget across browser pauses instead of resetting on resume", async () => {
+  const turn = randomUUID();
+  vi.mocked(modelTurn).mockResolvedValueOnce(
+    call("use_website", { type: "navigate", path: "/shop" }),
+  );
+  await runConcierge(actor, {
+    turn_id: turn,
+    message: "Open shop",
+    client_context: ui(),
+  });
+  await changeConcierge(actor, (s) => {
+    s.execution!.activeMs = 180001;
+    s.actions.forEach((a) => {
+      a.status = "failed";
+    });
+    s.turn!.status = "failed";
+  });
+  const result = await runConcierge(actor, {
+    turn_id: turn,
+    resume: true,
+    client_context: ui(),
+  });
+  expect(result.turn?.error).toContain("cumulative active execution budget");
+  expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
+});
 
 it("does not overwrite newer manual basket edits made while the model is planning", async () => {
   await manageBasket(actor, {

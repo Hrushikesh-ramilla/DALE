@@ -130,9 +130,6 @@ export async function runConcierge(
 ) {
   const input = turnInput.parse(raw);
   const worker = randomUUID();
-  const executionSignal = signal
-    ? AbortSignal.any([signal, AbortSignal.timeout(180000)])
-    : AbortSignal.timeout(180000);
   const shouldRun = await changeConcierge(actor, async (state, sql) => {
     if (input.resume) {
       if (
@@ -246,7 +243,18 @@ export async function runConcierge(
     return true;
   });
   if (!shouldRun) return conciergeView(actor);
+  const activeStarted = performance.now();
   try {
+    const claimed = await readConcierge(actor);
+    const remaining = 180000 - (claimed.execution?.activeMs || 0);
+    if (remaining <= 0)
+      throw new Error(
+        "This task exhausted its cumulative active execution budget. Completed effects remain saved.",
+      );
+    const deadline = AbortSignal.timeout(Math.max(1, Math.ceil(remaining)));
+    const executionSignal = signal
+      ? AbortSignal.any([signal, deadline])
+      : deadline;
     await withTurnFence(
       actor,
       input.turn_id,
@@ -270,6 +278,8 @@ export async function runConcierge(
   } finally {
     await changeConcierge(actor, (s) => {
       if (s.execution?.worker === worker) {
+        s.execution.activeMs =
+          (s.execution.activeMs || 0) + (performance.now() - activeStarted);
         delete s.execution.worker;
         delete s.execution.leaseUntil;
       }

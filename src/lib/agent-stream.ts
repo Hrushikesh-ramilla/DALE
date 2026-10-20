@@ -13,6 +13,8 @@ export type AgentStreamEvent = {
   view?: unknown;
   error?: string;
   timings?: unknown;
+  delay_ms?: number;
+  status?: number;
 };
 /** A terminal response is required. Never retry a POST implicitly after a lost
  * stream: it may already have committed customer effects. */

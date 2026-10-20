@@ -107,7 +107,15 @@ export async function modelTurn(
   tools: ToolDeclaration[],
   signal?: AbortSignal,
 ): Promise<NativeMessage> {
-  if (activeGenerations >= 1)
+  const configured = Number(
+    process.env.CONCIERGE_MAX_GENERATIONS ||
+      (process.env.CONCIERGE_PROVIDER === "gemini" ? 2 : 1),
+  );
+  const capacity =
+    Number.isInteger(configured) && configured >= 1 && configured <= 4
+      ? configured
+      : 1;
+  if (activeGenerations >= capacity)
     throw new Error(
       "AI inference is busy. No additional generation was queued; please retry shortly.",
     );
@@ -163,6 +171,18 @@ async function generate(
     ? AbortSignal.any([signal, AbortSignal.timeout(90000)])
     : AbortSignal.timeout(90000);
   let response: Response | undefined;
+  timing("model.input", {
+    prompt_characters: messages.reduce(
+      (total, message) =>
+        total +
+        (message.content?.length || 0) +
+        (message.tool_calls?.reduce(
+          (n, call) => n + call.function.arguments.length,
+          0,
+        ) || 0),
+      0,
+    ),
+  });
   for (let attempt = 0; attempt < 2; attempt++) {
     combined.throwIfAborted();
     await admitModelAttempt();
@@ -190,7 +210,9 @@ async function generate(
               ? {
                   tools: tools.map((t) => ({ type: "function", function: t })),
                   tool_choice: "auto",
-                  parallel_tool_calls: provider === "self_hosted",
+                  parallel_tool_calls:
+                    provider === "self_hosted" ||
+                    process.env.CONCIERGE_PARALLEL_TOOL_CALLS === "true",
                 }
               : {}),
             temperature: provider === "self_hosted" ? 0 : 0.7,
@@ -215,6 +237,11 @@ async function generate(
         : 700;
     if (retryMs === null) break;
     timing("model.retry", { delay_ms: retryMs, status: response.status });
+    agentProgress({
+      type: "provider.wait",
+      delay_ms: retryMs,
+      status: response.status,
+    });
     await response.body?.cancel();
     combined.throwIfAborted();
     await new Promise<void>((resolve, reject) => {

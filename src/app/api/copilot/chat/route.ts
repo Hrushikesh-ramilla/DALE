@@ -4,6 +4,8 @@ import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
 import { runConcierge } from "@/server/concierge/engine";
 import { chatStream } from "@/server/concierge/chat-stream";
 import { turnInput } from "@/domain/concierge";
+import { createAgentTrace, withAgentTrace } from "@/server/concierge/latency";
+import { admitProviderAttempt } from "@/server/concierge/provider-admission";
 export const runtime = "nodejs";
 export const maxDuration = 180;
 export async function POST(request: Request) {
@@ -22,7 +24,12 @@ export async function POST(request: Request) {
       process.env.CONCIERGE_STREAMING !== "false"
     )
       return chatStream(actor, input, request.signal);
-    return json(await runConcierge(actor, input, request.signal));
+    return json(
+      await withAgentTrace(
+        createAgentTrace({ beforeAttempt: admitProviderAttempt }),
+        () => runConcierge(actor, input, request.signal),
+      ),
+    );
   } catch (e) {
     return apiError(e);
   }

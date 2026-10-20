@@ -270,6 +270,7 @@ export type ConciergeState = {
   };
   context?: UIContext;
   execution?: {
+    activeMs?: number;
     turnId: string;
     frames: NativeMessage[];
     rounds: number;

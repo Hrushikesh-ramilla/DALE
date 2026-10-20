@@ -32,7 +32,12 @@ export async function streamedModelEnvelope(
     firstText = true;
   let messageExtra: Extra | undefined;
   const calls = new Map<number, Call>();
+  let firstData = true;
   for await (const raw of sseData(response.body, signal)) {
+    if (firstData) {
+      timing("model.first_data");
+      firstData = false;
+    }
     if (raw === "[DONE]") {
       done = true;
       break;

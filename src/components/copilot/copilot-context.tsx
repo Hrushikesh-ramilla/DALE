@@ -33,6 +33,7 @@ interface CopilotContextType {
   toggleOpen: (v?: boolean) => void;
   isListening: boolean;
   isThinking: boolean;
+  activity: string;
   messages: CopilotMessage[];
   cart: CartItem[];
   sendMessage: (prompt: string, context?: unknown) => Promise<void>;
@@ -105,6 +106,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const [isOpen, setOpen] = useState(false);
   const [isListening, setListening] = useState(false);
   const [isThinking, setThinking] = useState(false);
+  const [activity, setActivity] = useState("");
   const [state, setState] = useState<View | null>(null);
   const current = useRef<View | null>(null);
   const [error, setError] = useState("");
@@ -479,6 +481,15 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         )
           return;
         if (
+          event.type === "provider.wait" &&
+          typeof event.delay_ms === "number"
+        ) {
+          setActivity(
+            `AI provider requested a retry in ${Math.ceil(event.delay_ms / 1000)} seconds. You can stop this request.`,
+          );
+          return;
+        }
+        if (
           event.type === "model.started" &&
           typeof event.generation_id === "string"
         ) {
@@ -494,6 +505,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           draftBuffer.current !== null &&
           event.generation_id === draftBuffer.current?.generation
         ) {
+          setActivity("");
           draftBuffer.current.text += event.text;
           if (!draftTimer.current)
             draftTimer.current = setTimeout(() => {
@@ -678,6 +690,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       activeRequest.current = true;
       setOpen(true);
       setThinking(true);
+      setActivity("");
       setError("");
       const abort = new AbortController();
       controller.current = abort;
@@ -975,6 +988,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         toggleOpen: (v) => setOpen((p) => v ?? !p),
         isListening,
         isThinking,
+        activity: isThinking ? activity : "",
         messages:
           draft && isThinking && state?.turn?.status !== "completed"
             ? [...(state?.messages || []), draft]

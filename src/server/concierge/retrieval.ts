@@ -6,6 +6,8 @@ import { conciergeDatabase } from "./store";
 import { classifyMovement, recordedAttributes } from "@/domain/catalog-derived";
 import { identityMatcher } from "./identity";
 import type { Sql } from "../database";
+import { sharedEmbedding } from "./embedding-flight";
+import { timed, timing } from "./latency";
 
 export function productDocument(p: Product) {
   return JSON.stringify({
@@ -44,8 +46,28 @@ export async function embed(
     process.env.CONCIERGE_EMBEDDING_PROFILE,
     inputs,
   ]);
-  const cached = kind === "query" ? queryCache.get(cacheKey) : undefined;
-  if (cached && Date.now() - cached.at < 60000) return [cached.vector];
+  signal?.throwIfAborted();
+  const eligible = kind === "query" && inputs.length === 1;
+  const cached = eligible ? queryCache.get(cacheKey) : undefined;
+  if (cached && Date.now() - cached.at < 60000) {
+    timing("embedding.cache_hit");
+    return [[...cached.vector]];
+  }
+  if (eligible && process.env.CONCIERGE_EMBEDDING_SINGLE_FLIGHT !== "false")
+    return sharedEmbedding(cacheKey, signal, (sharedSignal) =>
+      requestEmbedding(inputs, base, model, cacheKey, sharedSignal, kind),
+    );
+  return requestEmbedding(inputs, base, model, cacheKey, signal, kind);
+}
+async function requestEmbedding(
+  inputs: string[],
+  base: string,
+  model: string,
+  cacheKey: string,
+  signal: AbortSignal | undefined,
+  kind: "query" | "document",
+) {
+  signal?.throwIfAborted();
   if (embeddingRequests >= 2)
     throw new Error(
       "Local embedding service is busy. Retry semantic retrieval shortly.",
@@ -62,30 +84,32 @@ export async function embed(
     throw new Error("Embedding endpoint must be private loopback HTTP.");
   embeddingRequests++;
   try {
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(process.env.CONCIERGE_EMBEDDING_API_KEY
-          ? {
-              Authorization: `Bearer ${process.env.CONCIERGE_EMBEDDING_API_KEY}`,
-            }
-          : {}),
-      },
-      body: JSON.stringify({
-        model,
-        input: inputs.map(
-          (text) =>
-            (kind === "query" &&
-            process.env.CONCIERGE_EMBEDDING_PROFILE === "bge"
-              ? "Represent this sentence for searching relevant passages: "
-              : "") + text.slice(0, 1600),
-        ),
+    const response = await timed("embedding.http", () =>
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(process.env.CONCIERGE_EMBEDDING_API_KEY
+            ? {
+                Authorization: `Bearer ${process.env.CONCIERGE_EMBEDDING_API_KEY}`,
+              }
+            : {}),
+        },
+        body: JSON.stringify({
+          model,
+          input: inputs.map(
+            (text) =>
+              (kind === "query" &&
+              process.env.CONCIERGE_EMBEDDING_PROFILE === "bge"
+                ? "Represent this sentence for searching relevant passages: "
+                : "") + text.slice(0, 1600),
+          ),
+        }),
+        signal: signal
+          ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
+          : AbortSignal.timeout(30000),
       }),
-      signal: signal
-        ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
-        : AbortSignal.timeout(30000),
-    });
+    );
     if (!response.ok)
       throw new Error(`Embedding service returned HTTP ${response.status}.`);
     const data = z

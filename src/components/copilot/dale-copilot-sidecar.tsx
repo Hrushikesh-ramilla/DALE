@@ -249,6 +249,11 @@ export function DaleCopilotSidecar() {
             ))}
           </>
         )}
+        {c.activity && (
+          <p role="status" className="dale-action-card">
+            {c.activity}
+          </p>
+        )}
         {c.isThinking && (
           <div role="status" className="dale-msg-bubble thinking-bubble">
             DALE is working…{" "}
