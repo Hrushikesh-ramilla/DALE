@@ -415,6 +415,11 @@ export async function acknowledgeBrowser(actor: Actor, raw: unknown) {
       }
       if (action.operation.command === "close" && s.tabs)
         delete s.tabs[action.operation.tab_id];
+      if (
+        action.operation.command === "close" &&
+        s.activeTabId === action.operation.tab_id
+      )
+        delete s.activeTabId;
     }
     if (receipt.status === "blocked") {
       action.outcome = receipt.outcome;

@@ -9,7 +9,7 @@ import { departments, leafTitles } from "@/domain/departments";
 import type { Actor } from "../state";
 import type { ToolDeclaration } from "./model";
 import { tools } from "./tools";
-import { basket } from "./shopping";
+import { basket, basketInput } from "./shopping";
 import { changeConcierge, readConcierge, ownerKey } from "./store";
 import { productDetails } from "./retrieval";
 
@@ -43,6 +43,15 @@ const filters = z
   })
   .strict();
 const undo = z.object({ expected_revision: z.number().int().min(0) }).strict();
+const collection = basketInput.extend({
+  action: basketInput.shape.action.exclude(["move"]),
+  show_collection: z
+    .boolean()
+    .default(false)
+    .describe(
+      "Open the actual cart/wishlist page after this operation when the customer asks to see/show/open it. False returns data without navigation.",
+    ),
+});
 const definitions = [
   {
     name: "get_website_context",
@@ -77,8 +86,14 @@ export const websiteTools: ToolDeclaration[] = [
   })),
   ...services.map((t) => ({
     name: t.name,
-    description: t.description,
-    parameters: z.toJSONSchema(t.input, { target: "draft-7", io: "input" }),
+    description:
+      t.name === "manage_collection"
+        ? `${t.description} Set show_collection=true to display the actual collection page as part of the same operation. Returned basket data alone does not open the page.`
+        : t.description,
+    parameters: z.toJSONSchema(
+      t.name === "manage_collection" ? collection : t.input,
+      { target: "draft-7", io: "input" },
+    ),
   })),
 ];
 
@@ -214,6 +229,22 @@ export async function websiteTool(
   }
   const service = services.find((t) => t.name === name);
   if (!service) throw new Error("Unknown website function.");
+  if (name === "manage_collection") {
+    const { show_collection, ...input } = collection.parse(raw);
+    const result = await service.execute(input as never, { actor, ui, signal });
+    return {
+      basket: result,
+      page_url: `/${input.collection}`,
+      ...(show_collection
+        ? {
+            browser_operation: {
+              type: "navigate",
+              path: `/${input.collection}`,
+            },
+          }
+        : {}),
+    };
+  }
   return service.execute(service.input.parse(raw) as never, {
     actor,
     ui,

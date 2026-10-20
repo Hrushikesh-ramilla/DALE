@@ -12,7 +12,7 @@ export const siteDestinations = {
   orders: "/orders",
   groups: "/groups",
   support: "/support",
-  account: "/live",
+  account: "/groups",
 } as const;
 export function registeredPath(path: string) {
   if (

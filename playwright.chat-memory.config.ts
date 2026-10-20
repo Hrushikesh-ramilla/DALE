@@ -6,7 +6,7 @@ const directory =
 process.env.CHAT_MEMORY_BROWSER_DIR = directory;
 export default defineConfig({
   testDir: "./e2e",
-  testMatch: "chat-memory.spec.ts",
+  testMatch: ["chat-memory.spec.ts", "website-actions.spec.ts"],
   workers: 1,
   timeout: 90000,
   expect: { timeout: 15000 },

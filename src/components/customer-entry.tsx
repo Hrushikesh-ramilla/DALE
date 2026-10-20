@@ -87,6 +87,7 @@ export function CustomerEntry({
       </form>
       <button
         className="button secondary"
+        data-agent-control="Switch account sign-in mode"
         disabled={busy}
         onClick={() => setMode(mode === "register" ? "login" : "register")}
       >

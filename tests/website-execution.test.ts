@@ -416,6 +416,47 @@ it("retains unfinished native calls for provider recovery without repeating effe
   expect(view.turn?.error).toBeUndefined();
 });
 
+it("batches a collection change and page opening in one native call", async () => {
+  const turn = randomUUID();
+  vi.mocked(modelTurn)
+    .mockResolvedValueOnce(
+      call("manage_collection", {
+        collection: "cart",
+        action: "add",
+        items: [{ productId: id, quantity: 2 }],
+        show_collection: true,
+      }),
+    )
+    .mockResolvedValueOnce(reply);
+  let view = await runConcierge(actor, {
+    turn_id: turn,
+    message: "Add two and show the cart",
+    client_context: ui(),
+  });
+  expect(view.turn?.status).toBe("awaiting_ui");
+  expect(view.basket.cart[0].quantity).toBe(2);
+  expect(view.actions[0].operation).toEqual({
+    type: "navigate",
+    path: "/cart",
+  });
+  expect(modelTurn).toHaveBeenCalledTimes(1);
+  const context = { ...ui(), current_url: "/cart" };
+  await acknowledgeBrowser(actor, {
+    id: view.actions[0].id,
+    turn_id: turn,
+    status: "succeeded",
+    outcome: "Cart rendered",
+    client_context: context,
+  });
+  view = await runConcierge(actor, {
+    turn_id: turn,
+    resume: true,
+    client_context: context,
+  });
+  expect(view.turn?.status).toBe("completed");
+  expect(view.basket.cart[0].quantity).toBe(2);
+});
+
 it("can resume after a dropped HTTP request without repeating a committed add", async () => {
   const turn = randomUUID();
   const abort = new AbortController();

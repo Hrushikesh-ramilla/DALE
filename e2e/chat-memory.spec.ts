@@ -47,7 +47,16 @@ test("pages the full conversation, keeps loaded history after a reply, restores 
   expect(request.messages[1].content).toContain("oud and incense");
   expect(
     request.tools.map((t: { function: { name: string } }) => t.function.name),
-  ).toEqual(["search_catalog", "get_catalog_products", "get_catalog_info"]);
+  ).toEqual(
+    expect.arrayContaining([
+      "search_catalog",
+      "get_catalog_products",
+      "get_catalog_info",
+      "use_website",
+      "get_website_context",
+      "manage_collection",
+    ]),
+  );
   await page.reload();
   await page.getByRole("button", { name: "Open DALE assistant" }).click();
   await expect(feed.locator("[data-message-id]")).toHaveCount(50);
