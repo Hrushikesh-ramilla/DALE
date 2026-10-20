@@ -64,13 +64,11 @@ it("delivers genuine text before the provider finishes and preserves UTF-8 acros
       };
     },
   });
-  const fetchMock = vi
-    .fn()
-    .mockResolvedValue(
-      new Response(provider, {
-        headers: { "content-type": "text/event-stream" },
-      }),
-    );
+  const fetchMock = vi.fn().mockResolvedValue(
+    new Response(provider, {
+      headers: { "content-type": "text/event-stream" },
+    }),
+  );
   vi.stubGlobal("fetch", fetchMock);
   const events: AgentProgress[] = [];
   const trace = createAgentTrace({ onProgress: (event) => events.push(event) });
@@ -139,6 +137,65 @@ it("assembles indexed calls and late opaque metadata through the terminal frame"
     type: "model.finished",
     has_tools: true,
   });
+});
+it("accepts ID-addressed Gemini calls without indices and associates late metadata by ID", async () => {
+  const { promise } = generate(
+    frame(
+      {
+        tool_calls: [
+          {
+            id: "first",
+            type: "function",
+            function: { name: "open", arguments: "{}" },
+          },
+          {
+            id: "second",
+            type: "function",
+            function: { name: "read", arguments: "{}" },
+          },
+        ],
+      },
+      "tool_calls",
+    ) +
+      frame({
+        tool_calls: [
+          {
+            id: "first",
+            extra_content: {
+              google: { thought_signature: "original-opaque-metadata" },
+            },
+          },
+        ],
+      }) +
+      "data: [DONE]\n\n",
+  );
+  const reply = await promise;
+  expect(reply.tool_calls?.map((call) => call.id)).toEqual(["first", "second"]);
+  expect(reply.tool_calls?.[0].extra_content?.google.thought_signature).toBe(
+    "original-opaque-metadata",
+  );
+});
+it("rejects an unaddressed continuation when multiple calls make its ownership ambiguous", async () => {
+  const { promise } = generate(
+    frame({
+      tool_calls: [
+        { id: "a", function: { name: "one", arguments: "{}" } },
+        { id: "b", function: { name: "two", arguments: "{}" } },
+      ],
+    }) +
+      frame(
+        {
+          tool_calls: [
+            {
+              extra_content: { google: { thought_signature: "unknown-call" } },
+            },
+          ],
+        },
+        "tool_calls",
+      ) +
+      "data: [DONE]\n\n",
+  );
+  await expect(promise).rejects.toThrow("index");
 });
 it.each([
   [frame({ content: "partial" }), "incomplete"],

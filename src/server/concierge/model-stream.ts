@@ -78,7 +78,28 @@ export async function streamedModelEnvelope(
       }
       messageExtra = extra(messageExtra, delta.extra_content);
       for (const fragment of delta.tool_calls || []) {
-        const index = fragment.index;
+        // Gemini compatibility streams can identify full calls by ID without
+        // the OpenAI positional index. Preserve first-seen order, and attach
+        // later metadata by that same opaque ID. Never guess between calls.
+        let index = fragment.index;
+        if (
+          index === undefined &&
+          typeof fragment.id === "string" &&
+          fragment.id
+        ) {
+          index = [...calls].find(([, call]) => call.id === fragment.id)?.[0];
+          if (index === undefined) {
+            index = 0;
+            while (calls.has(index)) index++;
+          }
+        }
+        if (
+          index === undefined &&
+          calls.size === 1 &&
+          !fragment.id &&
+          !fragment.function?.name
+        )
+          index = calls.keys().next().value;
         if (!Number.isInteger(index) || index < 0 || index >= 6)
           throw new Error("Invalid function-call index.");
         const call = calls.get(index) || {

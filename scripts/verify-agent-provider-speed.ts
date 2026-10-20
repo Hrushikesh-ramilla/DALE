@@ -29,6 +29,19 @@ const product = (await catalogResponse.json()).products.find(
 );
 if (!product) throw new Error("Published product sample not found.");
 let attempts = 0;
+let browserAttempts = 0;
+try {
+  const previous = JSON.parse(
+    await readFile(
+      ".data/concierge-verification/latency/browser-live.json",
+      "utf8",
+    ),
+  );
+  browserAttempts = previous.results?.at(-1)?.attempts_so_far || 0;
+} catch {}
+const attemptCap = Math.min(8, 12 - browserAttempts);
+if (attemptCap < 1)
+  throw new Error("The combined live verification budget is exhausted.");
 const report: unknown[] = [];
 async function turn(
   label: string,
@@ -39,8 +52,9 @@ async function turn(
   let firstText: number | undefined;
   const trace = createAgentTrace({
     beforeAttempt: async () => {
-      if (++attempts > 8)
+      if (attempts >= attemptCap)
         throw new Error("Live verification attempt cap reached.");
+      attempts++;
     },
     onProgress: (event) => {
       if (event.type === "assistant.delta")
