@@ -7,6 +7,7 @@ import { catalogTools, readCatalog } from "./catalog-rag";
 import { websiteTools, websiteTool } from "./website-tools";
 import { modelTurn } from "./model";
 import { inputBudget, promptTokens } from "./context-limits";
+import { timed, timing } from "./latency";
 
 const declarations = [...catalogTools, ...websiteTools];
 export async function executeWebsiteTurn(
@@ -61,7 +62,8 @@ export async function executeWebsiteTurn(
             typeof raw === "object" &&
             raw !== null &&
             "action" in raw &&
-            raw.action === "get" && !("show_collection" in raw && raw.show_collection === true));
+            raw.action === "get" &&
+            !("show_collection" in raw && raw.show_collection === true));
         const priorFailure = messages.slice(lastCall + 1).some((m) => {
           if (m.role !== "tool" || !m.content) return false;
           try {
@@ -91,10 +93,8 @@ export async function executeWebsiteTurn(
               expected_revision: execution.observedBasketRevision,
             };
         }
-        result = await withOperation(
-          actor,
-          `${turnId}:${pending.id}`,
-          async () => {
+        result = await timed(`tool.${name}`, () =>
+          withOperation(actor, `${turnId}:${pending.id}`, async () => {
             if (catalogTools.some((t) => t.name === name)) {
               const data = await readCatalog(name, raw, signal);
               if (
@@ -120,7 +120,7 @@ export async function executeWebsiteTurn(
               ok: true,
               data: await websiteTool(name, raw, actor, s.context!, signal),
             };
-          },
+          }),
         );
       } catch (error) {
         signal?.throwIfAborted();
@@ -176,7 +176,13 @@ export async function executeWebsiteTurn(
             createdAt: new Date().toISOString(),
             controllerTabId: state.context?.tab_id,
             sourceURL: state.context?.current_url,
-            ...(operation.type === "control" ? { controlValue: state.context?.controls.find(c => c.id === operation.control_id)?.value } : {}),
+            ...(operation.type === "control"
+              ? {
+                  controlValue: state.context?.controls.find(
+                    (c) => c.id === operation.control_id,
+                  )?.value,
+                }
+              : {}),
             ...(operation.type === "control" &&
             state.context?.controls.find((c) => c.id === operation.control_id)
               ?.kind === "file"
@@ -202,7 +208,10 @@ export async function executeWebsiteTurn(
           state.execution!.results[pending.id] = result;
         }
       });
-      if (operation) return;
+      if (operation) {
+        timing("action.queued", { type: operation.type });
+        return;
+      }
       continue;
     }
     if (execution.rounds >= 12)

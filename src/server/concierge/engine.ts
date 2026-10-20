@@ -14,6 +14,7 @@ import { productDetails } from "./retrieval";
 import type { Actor } from "../state";
 import { prepareConversation } from "./memory";
 import { executeWebsiteTurn } from "./website-execution";
+import { timed, timing } from "./latency";
 
 const directInstruction = `You are DALE, an exceptional luxury shopping concierge and conversational AI assistant.
 You possess deep, encyclopedic knowledge of luxury fashion, haute horlogerie, niche and designer fragrances, fine jewelry, electronics, and lifestyle goods.
@@ -287,18 +288,23 @@ async function continueTurn(
 
   const prepared = state.execution?.frames.length
     ? { messages: state.execution.frames }
-    : await prepareConversation(
-        actor,
-        state.conversationId!,
-        directInstruction,
-        signal,
-        0.2,
+    : await timed("memory.prepare", () =>
+        prepareConversation(
+          actor,
+          state.conversationId!,
+          directInstruction,
+          signal,
+          0.2,
+        ),
       );
   if (!state.execution?.frames.length)
     await changeConcierge(actor, (s) => {
       s.execution!.frames = prepared.messages;
     });
-  await executeWebsiteTurn(actor, input.turn_id, prepared.messages, signal);
+  await timed("execution", () =>
+    executeWebsiteTurn(actor, input.turn_id, prepared.messages, signal),
+  );
+  timing("execution.returned");
 }
 export function observationText(result: unknown) {
   const serialized = JSON.stringify(result);
