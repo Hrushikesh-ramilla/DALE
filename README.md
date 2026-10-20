@@ -22,6 +22,23 @@ The current chatbot combines natural Gemini conversation, durable session memory
 
 Manufacturer-linked product identities are separate from DALE's merchant offers. Recorded prices, stock, shipping, and fulfillment include sandbox/simulated data. This repository is not certification of a live commercial marketplace, complete physical-evidence verification, or universal compatibility coverage.
 
+### Verified checkpoint — 21 October 2026
+
+The implemented customer-control checkpoint is `3507760`; its acceptance documentation is saved in `636fbe7`. Natural Gemini conversation, catalog retrieval, session memory and the existing visual design are preserved.
+
+| Check                                                                                     | Recorded outcome                                                                                                                                         |
+| ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Targeted agent, customer-service, retrieval, memory, provider, ordering and restart tests | 108 passed across the qualified runs                                                                                                                     |
+| Customer browser journeys                                                                 | 25 distinct journeys qualified: 24 passed together, then the repaired homepage case and four affected journeys passed on the final build                 |
+| Voice                                                                                     | Browser microphone transport → local Whisper → transcript review → website action passed using owned synthetic speech; 10 speech HTTP checks also passed |
+| Live Gemini                                                                               | 3 tasks passed using the existing `gemini-3.5-flash-lite` configuration: exact listing, quantity/cart navigation and separate observed product tabs      |
+| Build and static checks                                                                   | Optimized application build, TypeScript and scoped lint passed                                                                                           |
+| Broader repository audit                                                                  | 579 passed, 19 failed, none skipped; see [regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md)                                                  |
+
+**Response/action speed is the next priority.** The latest three live multistep tasks took approximately **41, 47 and 67 seconds**, including model, tool and browser round trips, while other local verification was running. These are small acceptance samples, not latency percentiles or a benchmark of every chat reply. Streaming and latency optimization are not implemented yet. The next work must measure the critical path and improve speed while retaining the verified action, ownership and recovery behavior.
+
+The local checkpoint has been pushed to `codex/conversational-shopping-checkpoint`. The hosted site has not been updated to this checkpoint. Physical microphone quality, a comprehensive device/accessibility/load matrix, external PayPal approval and whole-marketplace production readiness remain separate qualification gates.
+
 Current scope documentation:
 
 - [Catalog RAG](docs/CATALOG_RAG.md): implemented read-only catalog knowledge and evidence.
