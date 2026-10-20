@@ -83,15 +83,17 @@ it("sends the entire session beyond both old cutoffs with a single generation wh
   expect(view.turn?.status).toBe("completed");
   expect(modelTurn).toHaveBeenCalledTimes(1);
   const [input, tools] = vi.mocked(modelTurn).mock.calls[0];
-  expect(tools.map((t) => t.name)).toEqual(expect.arrayContaining([
-    "search_catalog",
-    "get_catalog_products",
-    "get_catalog_info",
-    "use_website",
-    "get_website_context",
-    "manage_collection",
-  ]));
-  expect(tools.some(t => t.name === "discover_tools")).toBe(false);
+  expect(tools.map((t) => t.name)).toEqual(
+    expect.arrayContaining([
+      "search_catalog",
+      "get_catalog_products",
+      "get_catalog_info",
+      "use_website",
+      "get_website_context",
+      "manage_collection",
+    ]),
+  );
+  expect(tools.some((t) => t.name === "discover_tools")).toBe(false);
   expect(input).toHaveLength(183);
   expect(input[1].content).toContain("Message 0:");
   expect(input.at(-2)?.content).toContain("₹15,000, not $15,000");

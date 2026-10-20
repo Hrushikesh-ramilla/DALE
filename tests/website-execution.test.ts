@@ -419,26 +419,57 @@ it("retains unfinished native calls for provider recovery without repeating effe
 it("can resume after a dropped HTTP request without repeating a committed add", async () => {
   const turn = randomUUID();
   const abort = new AbortController();
-  vi.mocked(modelTurn).mockResolvedValueOnce(call("manage_collection", {collection: "cart", action: "add", items: [{productId:id}]})).mockImplementationOnce(async () => {abort.abort(); throw new Error("Connection dropped");});
-  let view = await runConcierge(actor, {turn_id:turn, message:"Add this", client_context:ui()}, abort.signal);
+  vi.mocked(modelTurn)
+    .mockResolvedValueOnce(
+      call("manage_collection", {
+        collection: "cart",
+        action: "add",
+        items: [{ productId: id }],
+      }),
+    )
+    .mockImplementationOnce(async () => {
+      abort.abort();
+      throw new Error("Connection dropped");
+    });
+  let view = await runConcierge(
+    actor,
+    { turn_id: turn, message: "Add this", client_context: ui() },
+    abort.signal,
+  );
   expect(view.turn?.status).toBe("failed");
   vi.mocked(modelTurn).mockResolvedValueOnce(reply);
-  view = await runConcierge(actor, {turn_id:turn, resume:true, client_context:ui()});
+  view = await runConcierge(actor, {
+    turn_id: turn,
+    resume: true,
+    client_context: ui(),
+  });
   expect(view.turn?.status).toBe("completed");
   expect(view.basket.cart[0].quantity).toBe(1);
 });
 
 it("connects independent shoppers to real group preparation and approved membership", async () => {
   const second = (await customerSession({ action: "guest" })).actor;
-  const product = (await hybridSearch({categories: ["fragrance"], limit: 1})).products[0];
+  const product = (await hybridSearch({ categories: ["fragrance"], limit: 1 }))
+    .products[0];
   expect(product).toBeTruthy();
   const confirmations: string[] = [];
   for (const shopper of [actor, second]) {
-    const result = await websiteTool("prepare_customer_action", {operation: "join_group", product_id: product.id, device_profile: "not-required"}, shopper, ui()) as {confirmation_id:string};
+    const result = (await websiteTool(
+      "prepare_customer_action",
+      {
+        operation: "join_group",
+        product_id: product.id,
+        device_profile: "not-required",
+      },
+      shopper,
+      ui(),
+    )) as { confirmation_id: string };
     confirmations.push(result.confirmation_id);
   }
   expect((await commerceSnapshot(actor)).groups).toHaveLength(0);
-  await expect(confirmOperation(second, confirmations[0])).rejects.toThrow("not found");
+  await expect(confirmOperation(second, confirmations[0])).rejects.toThrow(
+    "not found",
+  );
   await confirmOperation(actor, confirmations[0]);
   await confirmOperation(second, confirmations[1]);
   const firstGroups = (await commerceSnapshot(actor)).groups;
@@ -450,19 +481,49 @@ it("connects independent shoppers to real group preparation and approved members
 });
 
 it("prepares the exact basket checkout without charging and scopes resulting orders to their owner", async () => {
-  const product = (await hybridSearch({categories: ["fragrance"], limit: 1})).products[0];
-  await websiteTool("manage_collection", {collection: "cart", action: "add", items: [{productId: product.id, quantity: 2}]}, actor, ui());
-  const prepared = await websiteTool("prepare_customer_action", {operation: "checkout", device_profile: "not-required"}, actor, ui()) as {confirmation_id:string};
+  const product = (await hybridSearch({ categories: ["fragrance"], limit: 1 }))
+    .products[0];
+  await websiteTool(
+    "manage_collection",
+    {
+      collection: "cart",
+      action: "add",
+      items: [{ productId: product.id, quantity: 2 }],
+    },
+    actor,
+    ui(),
+  );
+  const prepared = (await websiteTool(
+    "prepare_customer_action",
+    { operation: "checkout", device_profile: "not-required" },
+    actor,
+    ui(),
+  )) as { confirmation_id: string };
   expect((await commerceSnapshot(actor)).orders).toHaveLength(0);
-  const saved = (await readConcierge(actor)).confirmations.find(c => c.id === prepared.confirmation_id)!;
+  const saved = (await readConcierge(actor)).confirmations.find(
+    (c) => c.id === prepared.confirmation_id,
+  )!;
   expect(saved.kind).toBe("checkout");
-  expect(saved.payload.cart).toEqual([{productId: product.id, quantity: 2}]);
-  const terms = saved.payload.quotes as {productId:string; amount:number}[];
+  expect(saved.payload.cart).toEqual([{ productId: product.id, quantity: 2 }]);
+  const terms = saved.payload.quotes as { productId: string; amount: number }[];
   expect(terms).toHaveLength(2);
-  expect(terms.every(q => q.productId === product.id && q.amount === product.price)).toBe(true);
+  expect(
+    terms.every(
+      (q) => q.productId === product.id && q.amount === product.price,
+    ),
+  ).toBe(true);
   await confirmOperation(actor, prepared.confirmation_id);
-  const own = await websiteTool("get_user_orders", {}, actor, ui()) as {orders:{id:string}[]};
+  const own = (await websiteTool("get_user_orders", {}, actor, ui())) as {
+    orders: { id: string }[];
+  };
   expect(own.orders).toHaveLength(2);
-  const outsider = (await customerSession({action: "guest"})).actor;
-  await expect(websiteTool("get_user_orders", {order_id: own.orders[0].id}, outsider, ui())).rejects.toThrow();
+  const outsider = (await customerSession({ action: "guest" })).actor;
+  await expect(
+    websiteTool(
+      "get_user_orders",
+      { order_id: own.orders[0].id },
+      outsider,
+      ui(),
+    ),
+  ).rejects.toThrow();
 });
