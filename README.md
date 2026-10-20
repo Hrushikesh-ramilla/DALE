@@ -44,6 +44,7 @@ Current scope documentation:
 - [Catalog RAG](docs/CATALOG_RAG.md): implemented read-only catalog knowledge and evidence.
 - [Session memory](docs/SESSION_MEMORY.md): persistence, pagination, summaries, and limits.
 - [Implementation plan](IMPLEMENTATION_PLAN.md): approved conversation-based control of the customer website, including multiple browser tabs.
+- [AI response speed plan](AI_RESPONSE_SPEED_IMPLEMENTATION_PLAN.md): proposed measurement, streaming and action-latency improvements; no speed changes implemented at this checkpoint.
 - [Website-control ledger](docs/WEBSITE_CONTROL_STATUS.md) and [coverage inventory](docs/website-control-coverage.json): actual progress and remaining acceptance gates.
 - [Archived catalog implementation plan](CATALOG_IMPLEMENTATION_PLAN_2026-10-11.md): preserved assortment-expansion handover.
 - [Original master plan](MASTER_PLAN.md): product goals and historical decisions.
@@ -169,7 +170,7 @@ npm test
 npm run lint
 ```
 
-The broader pre-push run finished with **532 passed, 28 failed, and 11 skipped tests**. Its repository-wide gate is failing; the passing chat-RAG subset does not supersede it. See [the checkpoint audit](docs/CHECKPOINT_2026-10-20.md) for catalog/media, historical-agent, and setup-timeout details.
+The latest broader repository audit recorded **579 passed, 19 failed, and none skipped**. Its repository-wide gate is still failing; targeted agent acceptance does not supersede it. See [current regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md) for the remaining catalog/media/publication failures. The earlier **532 passed, 28 failed, and 11 skipped** result in [the historical checkpoint audit](docs/CHECKPOINT_2026-10-20.md) is the pre-implementation baseline, not the latest result.
 
 Browser fixtures validate application behavior. Live-provider checks validate the configured model separately; neither alone establishes production readiness. Reproduce and inspect results against the checkout being assessed.
 
