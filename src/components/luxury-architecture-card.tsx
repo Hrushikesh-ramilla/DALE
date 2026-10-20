@@ -274,62 +274,7 @@ export function LuxuryArchitectureCard({ product }: LuxuryArchitectureCardProps)
     );
   }
 
-  // 6. CELLULAR BIO-COMPLEX ARCHITECTURE (Cleansers, Serums, Moisturizers, Sunscreens)
-  const isBeauty =
-    cat === "beauty" ||
-    !!attrs.keyIngredients ||
-    !!attrs.activeIngredients ||
-    !!attrs.activeConcentrations ||
-    !!attrs.skinTypeTarget ||
-    !!attrs.spfRating;
-
-  if (isBeauty) {
-    const specs: SpecItem[] = [];
-    if (attrs.keyIngredients || attrs.activeIngredients || attrs.activeConcentrations) {
-      specs.push({
-        label: "Active Cellular Bio-Complex",
-        value: String(attrs.keyIngredients || attrs.activeIngredients || attrs.activeConcentrations),
-        highlight: true,
-      });
-    }
-    if (attrs.skinBarrierFocus || attrs.skinConcern) {
-      specs.push({ label: "Cellular Target & Efficacy", value: String(attrs.skinBarrierFocus || attrs.skinConcern) });
-    }
-    if (attrs.textureType || attrs.textureWeight || attrs.formulationType) {
-      specs.push({ label: "Delivery Matrix & Texture", value: String(attrs.textureType || attrs.textureWeight || attrs.formulationType) });
-    }
-    if (attrs.spfRating) {
-      specs.push({
-        label: "Photo-Protection Spectrum",
-        value: `Broad Spectrum SPF ${attrs.spfRating} · PA rating ${attrs.paRating || "PA++++"}${attrs.waterResistanceMinutes ? ` · ${attrs.waterResistanceMinutes}m Water Resistant` : ""}`,
-        highlight: true,
-      });
-    }
-    if (attrs.filterType) specs.push({ label: "UV Filter Matrix", value: String(attrs.filterType) });
-    if (attrs.volumeMl) specs.push({ label: "Volume & Packaging", value: `${attrs.volumeMl} ml ${attrs.packagingType ? `· ${attrs.packagingType}` : ""}` });
-    if (attrs.dayNightUse) specs.push({ label: "Application Protocol", value: String(attrs.dayNightUse) });
-
-    const badge = attrs.spfRating ? `SPF ${attrs.spfRating}` : String(attrs.textureType || attrs.skinTypeTarget || "Cellular Grade");
-
-    return (
-      <div className="luxury-architecture-card beauty-card" style={cardContainerStyle}>
-        <div style={headerStyle}>
-          <span style={eyebrowStyle}>Cellular Bio-Complex</span>
-          <span style={badgeStyle}>{badge}</span>
-        </div>
-        <div style={gridStyle}>
-          {specs.map((item, idx) => (
-            <div key={idx}>
-              <span style={fieldLabelStyle}>{item.label}</span>
-              <span style={item.highlight ? fieldHighlightValueStyle : fieldValueStyle}>{item.value}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  // 7. HOROLOGICAL ARCHITECTURE (Watches)
+  // 6. HOROLOGICAL ARCHITECTURE (Watches)
   const isWatches =
     cat === "watches" ||
     !!attrs.movement ||
@@ -363,16 +308,13 @@ export function LuxuryArchitectureCard({ product }: LuxuryArchitectureCardProps)
     );
   }
 
-  // 8. ARTISANAL HERITAGE & HOME (Kitchenware, Decor, Textiles, Air Purifiers, Vacuums)
-  const isHomeOrAppliances =
+  // 7. ARTISANAL HERITAGE & HOME (Kitchenware, Decor, Textiles)
+  const isHome =
     cat === "home" ||
-    cat === "appliances" ||
     !!attrs.materialAlloy ||
-    !!attrs.threadCount ||
-    !!attrs.cadrCfm ||
-    !!attrs.airWatts;
+    !!attrs.threadCount;
 
-  if (isHomeOrAppliances) {
+  if (isHome) {
     const specs: SpecItem[] = [];
     if (attrs.materialAlloy || attrs.material || attrs.fiberType) {
       specs.push({ label: "Material Alloy & Provenance", value: String(attrs.materialAlloy || attrs.material || attrs.fiberType), highlight: true });
@@ -385,23 +327,9 @@ export function LuxuryArchitectureCard({ product }: LuxuryArchitectureCardProps)
         value: `${attrs.cooktopCompatibility || "All Cooktops"} · Oven safe to ${attrs.ovenSafeMaxTempC || 260}°C`,
       });
     }
-    if (attrs.cadrCfm) {
-      specs.push({
-        label: "Air Purification Yield",
-        value: `CADR ${attrs.cadrCfm} CFM · ${attrs.filterClass || "HyperHEPA"} · ${attrs.roomAreaSqFt || 500} sq ft Coverage`,
-        highlight: true,
-      });
-    }
-    if (attrs.airWatts) {
-      specs.push({
-        label: "Cyclone Suction Power",
-        value: `${attrs.airWatts} AirWatts · ${attrs.filtrationType || "Whole-Machine HEPA"}`,
-        highlight: true,
-      });
-    }
     if (attrs.originCountry) specs.push({ label: "Manufactory Heritage", value: `Handcrafted in ${attrs.originCountry}` });
 
-    const badge = String(attrs.materialAlloy || attrs.filterClass || attrs.fiberType || "Artisanal Craft");
+    const badge = String(attrs.materialAlloy || attrs.fiberType || "Artisanal Craft");
 
     return (
       <div className="luxury-architecture-card artisanal-card" style={cardContainerStyle}>

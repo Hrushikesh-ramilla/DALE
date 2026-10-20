@@ -12,7 +12,7 @@ type Family = {
   use: string;
   detail: string;
 };
-const families: Record<"clothing" | "fragrance" | "bags" | "home" | "beauty", Family[]> = {
+const families: Record<"clothing" | "fragrance" | "bags" | "home", Family[]> = {
   clothing: [
     {
       name: "Cotton Crew-Neck T-Shirt",
@@ -359,87 +359,6 @@ const families: Record<"clothing" | "fragrance" | "bags" | "home" | "beauty", Fa
       detail: "Pair; each 15 x 12 x 12 cm",
     },
   ],
-  beauty: [
-    {
-      name: "Glycerin Hand Wash",
-      price: 1200,
-      use: "hands",
-      detail:
-        "Listed ingredients: water, sodium laureth sulfate, glycerin, fragrance; rinse off",
-    },
-    {
-      name: "Shea Hand Cream",
-      price: 1400,
-      use: "hands",
-      detail: "Listed ingredients: water, shea butter, glycerin, fragrance",
-    },
-    {
-      name: "Oat Body Lotion",
-      price: 1800,
-      use: "body",
-      detail:
-        "Listed ingredients: water, glycerin, oat extract, cetearyl alcohol",
-    },
-    {
-      name: "Aloe Shower Gel",
-      price: 1400,
-      use: "body",
-      detail:
-        "Listed ingredients: water, sodium laureth sulfate, aloe extract, fragrance",
-    },
-    {
-      name: "Coconut Hair Conditioner",
-      price: 1800,
-      use: "hair",
-      detail:
-        "Listed ingredients: water, cetearyl alcohol, coconut oil, fragrance; rinse off",
-    },
-    {
-      name: "Glycerin Facial Cleanser",
-      price: 1800,
-      use: "face",
-      detail:
-        "Listed ingredients: water, glycerin, cocamidopropyl betaine; rinse off",
-    },
-    {
-      name: "Jojoba Body Oil",
-      price: 2200,
-      use: "body",
-      detail: "Listed ingredients: jojoba oil, sunflower oil, tocopherol",
-    },
-    {
-      name: "Rosewater Facial Mist",
-      price: 1600,
-      use: "face",
-      detail: "Listed ingredients: water, rose hydrosol, phenoxyethanol",
-    },
-    {
-      name: "Argan Hair Oil",
-      price: 2400,
-      use: "hair",
-      detail: "Listed ingredients: argan oil, sunflower oil, tocopherol",
-    },
-    {
-      name: "Cocoa Body Butter",
-      price: 2200,
-      use: "body",
-      detail: "Listed ingredients: cocoa butter, shea butter, sunflower oil",
-    },
-    {
-      name: "Mint Foot Cream",
-      price: 1600,
-      use: "feet",
-      detail:
-        "Listed ingredients: water, glycerin, cetearyl alcohol, mint extract",
-    },
-    {
-      name: "Glycerin Shampoo",
-      price: 1400,
-      use: "hair",
-      detail:
-        "Listed ingredients: water, sodium laureth sulfate, glycerin, fragrance; rinse off",
-    },
-  ],
 };
 export const retailCatalog: Product[] = Object.entries(families).flatMap(
   ([category, entries], department) =>
@@ -456,7 +375,7 @@ export const retailCatalog: Product[] = Object.entries(families).flatMap(
           ...(category === "clothing"
             ? { size: ["S", "M", "L"][variant] }
             : {}),
-          ...(["fragrance", "beauty"].includes(category)
+          ...(category === "fragrance"
             ? { volumeMl: [30, 50, 100][variant] }
             : {}),
           ...(["bags", "home"].includes(category)
@@ -476,7 +395,7 @@ export const retailCatalog: Product[] = Object.entries(families).flatMap(
           description: `${family.name} for ${family.use}. Merchant-authored sample specification; review the exact variant before approving.`,
           price:
             family.price +
-            (["fragrance", "beauty"].includes(category) ? variant * 1000 : 0),
+            (category === "fragrance" ? variant * 1000 : 0),
           compatibleModels: [],
           specs: [
             family.detail,

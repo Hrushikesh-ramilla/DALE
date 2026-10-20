@@ -13,11 +13,9 @@ export const categoryIds = [
   "fragrance",
   "bags",
   "home",
-  "beauty",
   "watches",
   "footwear",
   "sunglasses",
-  "appliances",
 ] as const;
 export type Category = (typeof categoryIds)[number];
 export const retailCategories = [
@@ -28,11 +26,9 @@ export const retailCategories = [
   "fragrance",
   "bags",
   "home",
-  "beauty",
   "watches",
   "footwear",
   "sunglasses",
-  "appliances",
 ] as const;
 export type RetailCategory = (typeof retailCategories)[number];
 export const lifestyleProfile = "not-required";
@@ -53,13 +49,11 @@ export const categoryTitles: Record<Category, string> = {
   watches: "Watches",
   footwear: "Shoes",
   sunglasses: "Sunglasses",
-  appliances: "Appliances",
   accessories: "Computer Accessories",
   clothing: "Clothing",
   fragrance: "Fragrance",
   bags: "Bags & Accessories",
   home: "Home & Living",
-  beauty: "Beauty & Care",
 };
 export const departments = [
   {
@@ -109,13 +103,6 @@ export const departments = [
       "Useful objects for your space. Compare materials and dimensions rather than assumed fit.",
   },
   {
-    id: "beauty",
-    title: "Beauty & Care",
-    categories: ["beauty"],
-    description:
-      "Routine essentials with stated ingredients and volume. No medical or allergy-safety promises.",
-  },
-  {
     id: "watches",
     title: "Watches",
     categories: ["watches"],
@@ -136,17 +123,10 @@ export const departments = [
     description:
       "Compare exact frames, lens treatments and measurements. Polarization is separate from UV protection.",
   },
-  {
-    id: "appliances",
-    title: "Appliances",
-    categories: ["appliances"],
-    description:
-      "Compare capacity, dimensions, voltage and manufacturer energy specifications.",
-  },
 ] as const;
 
 export const leafTypeKeys = [
-  // Wave 1: Electronics Core (13)
+  // Wave 1: Electronics Core (11)
   "phones",
   "laptops",
   "tablets",
@@ -156,19 +136,13 @@ export const leafTypeKeys = [
   "wall-chargers",
   "power-banks",
   "portable-ssds",
-  "internal-ssds",
-  "hard-drives",
   "keyboards",
   "mice",
-  // Wave 2: Electronics Remaining (8)
+  // Wave 2: Electronics Remaining (4)
   "soundbars",
   "cables",
-  "memory-cards",
-  "usb-flash-drives",
   "monitors",
   "docks-hubs",
-  "webcams",
-  "routers",
   // Wave 3: Clothing (9)
   "shirts",
   "t-shirts",
@@ -179,7 +153,7 @@ export const leafTypeKeys = [
   "suits",
   "jackets",
   "coats",
-  // Wave 4: Lifestyle (15)
+  // Wave 4: Lifestyle (11)
   "fragrance",
   "watches",
   "sunglasses",
@@ -191,16 +165,10 @@ export const leafTypeKeys = [
   "running-shoes",
   "lifestyle-sneakers",
   "boots",
-  "cleansers",
-  "serums",
-  "moisturizers",
-  "sunscreens",
-  // Wave 5: Home & Appliances (5)
+  // Wave 5: Home (3)
   "kitchenware",
   "decor",
   "home-textiles",
-  "vacuum-cleaners",
-  "air-purifiers",
 ] as const;
 
 export type LeafTypeKey = (typeof leafTypeKeys)[number];
@@ -219,19 +187,13 @@ export const leafToParentCategory: Record<LeafTypeKey, Category> = {
   "wall-chargers": "chargers",
   "power-banks": "chargers",
   "portable-ssds": "storage",
-  "internal-ssds": "storage",
-  "hard-drives": "storage",
   keyboards: "accessories",
   mice: "accessories",
   // Wave 2: Electronics Remaining
   soundbars: "audio",
   cables: "accessories",
-  "memory-cards": "storage",
-  "usb-flash-drives": "storage",
   monitors: "accessories",
   "docks-hubs": "docks",
-  webcams: "accessories",
-  routers: "accessories",
   // Wave 3: Clothing
   shirts: "clothing",
   "t-shirts": "clothing",
@@ -254,16 +216,10 @@ export const leafToParentCategory: Record<LeafTypeKey, Category> = {
   "running-shoes": "footwear",
   "lifestyle-sneakers": "footwear",
   boots: "footwear",
-  cleansers: "beauty",
-  serums: "beauty",
-  moisturizers: "beauty",
-  sunscreens: "beauty",
-  // Wave 5: Home & Appliances
+  // Wave 5: Home
   kitchenware: "home",
   decor: "home",
   "home-textiles": "home",
-  "vacuum-cleaners": "appliances",
-  "air-purifiers": "appliances",
 };
 
 export const categoryToDefaultLeaf: Record<Category, LeafTypeKey> = {
@@ -281,11 +237,9 @@ export const categoryToDefaultLeaf: Record<Category, LeafTypeKey> = {
   fragrance: "fragrance",
   bags: "handbags",
   home: "decor",
-  beauty: "serums",
   watches: "watches",
   footwear: "lifestyle-sneakers",
   sunglasses: "sunglasses",
-  appliances: "vacuum-cleaners",
 };
 
 export function resolveParentCategory(leafOrCategory: string): Category {
@@ -308,18 +262,12 @@ export const leafTitles: Record<LeafTypeKey, string> = {
   "wall-chargers": "Wall Chargers & Power Adapters",
   "power-banks": "Power Banks",
   "portable-ssds": "Portable SSDs",
-  "internal-ssds": "Internal SSDs (NVMe & SATA)",
-  "hard-drives": "External & Internal Hard Drives",
   keyboards: "Keyboards",
   mice: "Mice & Pointing Devices",
   soundbars: "Soundbars & Home Audio",
   cables: "Charging & Data Cables",
-  "memory-cards": "SD & MicroSD Memory Cards",
-  "usb-flash-drives": "USB Flash Drives",
   monitors: "Computer Monitors",
   "docks-hubs": "USB-C Docks & Hubs",
-  webcams: "Webcams",
-  routers: "Wi-Fi Routers & Mesh Systems",
   shirts: "Button-Down Shirts",
   "t-shirts": "T-Shirts",
   knitwear: "Sweaters & Knitwear",
@@ -340,15 +288,9 @@ export const leafTitles: Record<LeafTypeKey, string> = {
   "running-shoes": "Running & Performance Shoes",
   "lifestyle-sneakers": "Lifestyle Sneakers",
   boots: "Boots",
-  cleansers: "Facial Cleansers",
-  serums: "Skin Serums",
-  moisturizers: "Moisturizers & Creams",
-  sunscreens: "Sunscreens & SPF",
   kitchenware: "Cookware & Kitchenware",
   decor: "Home Decor & Objects",
   "home-textiles": "Bedding & Home Textiles",
-  "vacuum-cleaners": "Vacuums & Floor Care",
-  "air-purifiers": "Air Purifiers",
 };
 
 export function getCategoryLeafTypes(category: Category): LeafTypeKey[] {

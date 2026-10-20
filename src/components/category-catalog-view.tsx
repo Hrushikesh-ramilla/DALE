@@ -49,10 +49,6 @@ function getSmartChipsForLeaf(leaf: LeafTypeKey): string[] {
     case "formal-shoes":
     case "boots":
       return ["Berluti", "John Lobb", "Loro Piana", "Under $1,500", "Goodyear Welt", "Clear All"];
-    case "serums":
-    case "cleansers":
-    case "moisturizers":
-      return ["Augustinus Bader", "La Mer", "La Prairie", "Cellular", "Under $300", "Clear All"];
     default:
       return ["Under $500", "Under $1,500", "Luxury Tier", "Top Rated", "Clear All"];
   }

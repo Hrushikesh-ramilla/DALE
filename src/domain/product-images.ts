@@ -655,10 +655,7 @@ export function getLegacyProductImage(product: ProductQuery): ProductImageResolu
   if (cat === "watches") {
     return makeImg("watches-signature-chronograph.webp", `${product.name} luxury timepiece photography`, product.brand);
   }
-  if (cat === "beauty") {
-    return makeImg("skincare-signature-cream.webp", `${product.name} luxury skincare photography`, product.brand);
-  }
-  if (cat === "home" || cat === "appliances") {
+  if (cat === "home") {
     return makeImg("kitchen-le-creuset-cocotte.webp", `${product.name} luxury home photography`, product.brand);
   }
 

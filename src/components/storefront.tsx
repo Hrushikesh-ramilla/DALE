@@ -85,10 +85,6 @@ const departmentHeroImages: Record<string, { src: string; alt: string }> = {
     src: "/images/departments/home-luxury-hero.webp",
     alt: "Home & Decor Department: Baccarat Crystal, Le Creuset and Smeg Dolce & Gabbana",
   },
-  beauty: {
-    src: "/images/departments/beauty-luxury-hero.webp",
-    alt: "Beauty Department: La Mer, Augustinus Bader and La Prairie Skin Caviar",
-  },
   watches: {
     src: "/images/departments/watches-luxury-hero.webp",
     alt: "Watches Department: Audemars Piguet Royal Oak Offshore, Patek Philippe and Rolex",
@@ -100,10 +96,6 @@ const departmentHeroImages: Record<string, { src: string; alt: string }> = {
   eyewear: {
     src: "/images/departments/eyewear-luxury-hero.webp",
     alt: "Eyewear Department: Cartier Santos, Celine Triomphe and Persol Frames",
-  },
-  appliances: {
-    src: "/images/departments/appliances-luxury-hero.webp",
-    alt: "Appliances Department: Smeg Dolce & Gabbana Espresso and Dyson Big+Quiet Purifier",
   },
 };
 
