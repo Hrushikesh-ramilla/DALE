@@ -25,12 +25,35 @@ const retryAt =
         timeZone: "Asia/Kolkata",
       }).format(new Date(Date.parse(quota.at) + seconds * 1000));
 const violations = quota.details.flatMap((d) => d.violations || []);
+const latest = await readJson(`${directory}/buyer-browser-gemini.json`);
+const accepted =
+  latest.passed &&
+  latest.checks.length === 8 &&
+  latest.checks.every((c) => c.passed);
+const rateLimited = latest.checks.some((c) => /HTTP 429/.test(c.error || ""));
+const status = accepted
+  ? "Scoped live journey passed"
+  : rateLimited
+    ? "Live acceptance blocked by quota"
+    : "Live acceptance incomplete";
+const timedLatest = latest.checks.filter((c) => c.elapsedMs > 0);
+const meetsLatency =
+  timedLatest.length > 0 &&
+  timedLatest.every(
+    (c) => c.passed && c.status === "completed" && c.elapsedMs < 1000,
+  );
+const acceptanceSummary = accepted
+  ? "All eight scoped browser checks passed together against the selected Gemini model. This qualifies this shopper journey, not every feature or question."
+  : "The latest real-Gemini browser journey has not passed all eight checks. The table below records each actual result or failure.";
+const latencySummary = meetsLatency
+  ? "This run met the one-second complete-answer target."
+  : "The one-second complete-answer target is not achieved.";
 const sections = [];
 for (const [file, title, note] of [
   [
     "buyer-browser-gemini.json",
     "Latest production browser run",
-    "All live acceptance checks must pass together on the selected build. This run was blocked by quota; short error responses are not fast answers.",
+    "All eight scoped live acceptance checks must pass together on the selected build. Short error responses never count as fast answers.",
   ],
   [
     "buyer-browser-gemini-before-rate-retry.json",
@@ -74,11 +97,11 @@ const browserSummary =
 const screenshots = ["omega", "cart", "preferences", "conversation"]
   .map(
     (label) =>
-      `<figure><figcaption>Latest run: ${escape(label)}. This run encountered quota failures; this image is diagnostic evidence, not a passed shopping demonstration.</figcaption><a href="buyer-browser-gemini-${label}.png"><img src="buyer-browser-gemini-${label}.png" loading="lazy" alt="Latest quota-blocked browser run: ${escape(label)}"></a></figure>`,
+      `<figure><figcaption>Latest run: ${escape(label)}. See the corresponding request and correctness result in the latest-run table.</figcaption><a href="buyer-browser-gemini-${label}.png"><img src="buyer-browser-gemini-${label}.png" loading="lazy" alt="Latest actual Gemini browser run: ${escape(label)}"></a></figure>`,
   )
   .join("");
 await writeFile(
   `${directory}/gemini-report.html`,
-  `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DALE Gemini verification — live acceptance blocked</title><style>body{max-width:1300px;margin:40px auto;padding:24px;background:#101214;color:#eee;font:16px/1.6 system-ui}section{padding:24px;margin:32px 0;background:#191c1f;overflow:auto}a{color:#a5d0cd}table{width:100%;border-collapse:collapse}td,th{text-align:left;vertical-align:top;border-bottom:1px solid #444;padding:12px}td:nth-child(2){white-space:pre-wrap;min-width:280px}img{max-width:100%}figure{margin:32px 0}aside{padding:24px;background:#302720}</style><h1>DALE: Gemini verification</h1><p>Generated ${escape(new Date().toISOString())}. Local production artifact source: ${escape(build.commit)}.</p><aside><strong>Full live acceptance is blocked by Google's daily free quota. The one-second complete-answer goal is not achieved.</strong><p>The API returned HTTP ${escape(quota.status)} at ${escape(quota.at)}. Recorded daily quota: ${escape(violations.map((v) => `${v.quotaValue} (${v.quotaId}; service model dimension ${v.model})`).join(", "))}. Configured model: ${escape(quota.model)}. Google's reported retry time is approximately ${escape(retryAt)}; this is not a guarantee that service capacity will be available then. <a href="gemini-full-model-quota.json">Raw quota receipt</a>.</p><p>The existing key works; verification requests consumed its free allocation. Billing remains disabled. No different model or provider was silently selected. A clean live rerun remains required, including cart acknowledgement and browser preference search.</p></aside><section><h2>Software checks</h2><p>Focused contracts: ${escape(unitSummary)}. Controlled-provider browser tests: ${escape(browserSummary)}. The optimized production build completed. These checks verify application behavior; controlled-provider responses do not prove Gemini intelligence.</p><p><a href="http://localhost:3000/department/electronics">Open local app</a> · <a href="buyer-gemini-unit.log">Focused contract log</a> · <a href="buyer-gemini-final-build.log">Build log</a> · <a href="buyer-gemini-playwright.log">Controlled browser log</a></p><p>The configured Gemini API is used directly. Catalog facts, ownership and financial approvals come from application services. Local generation is stopped; local embeddings remain enabled. No scripted-answer or local-model fallback is substituted on Gemini failure. This report is scoped evidence, not whole-project production certification.</p></section>${sections.join("")}<h2>Latest browser diagnostics</h2>${screenshots}</html>`,
+  `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DALE Gemini verification — ${escape(status)}</title><style>body{max-width:1300px;margin:40px auto;padding:24px;background:#101214;color:#eee;font:16px/1.6 system-ui}section{padding:24px;margin:32px 0;background:#191c1f;overflow:auto}a{color:#a5d0cd}table{width:100%;border-collapse:collapse}td,th{text-align:left;vertical-align:top;border-bottom:1px solid #444;padding:12px}td:nth-child(2){white-space:pre-wrap;min-width:280px}img{max-width:100%}figure{margin:32px 0}aside{padding:24px;background:#302720}</style><h1>DALE: Gemini verification</h1><p>Generated ${escape(new Date().toISOString())}. Local production artifact source: ${escape(build.commit)}.</p><aside><strong>${escape(status)}. ${escape(latencySummary)}</strong><p>${escape(acceptanceSummary)}</p><p>Historical quota failure: HTTP ${escape(quota.status)} at ${escape(quota.at)}. Recorded daily quota: ${escape(violations.map((v) => `${v.quotaValue} (${v.quotaId}; service model dimension ${v.model})`).join(", "))}. Configured model: ${escape(quota.model)}. The historical response suggested retrying approximately ${escape(retryAt)}; the latest browser results above determine the current acceptance status. <a href="gemini-full-model-quota.json">Raw quota receipt</a>.</p><p>Billing remains disabled. The selected full Flash model and existing key are unchanged. Earlier quota failures remain preserved as evidence; the latest browser table determines which checks passed.</p></aside><section><h2>Software checks</h2><p>Focused contracts: ${escape(unitSummary)}. Controlled-provider browser tests: ${escape(browserSummary)}. The optimized production build completed. These checks verify application behavior; controlled-provider responses do not prove Gemini intelligence.</p><p><a href="http://localhost:3000/department/electronics">Open local app</a> · <a href="buyer-gemini-unit.log">Focused contract log</a> · <a href="buyer-gemini-final-build.log">Build log</a> · <a href="buyer-gemini-playwright.log">Controlled browser log</a></p><p>The configured Gemini API is used directly. Catalog facts, ownership and financial approvals come from application services. Local generation is stopped; local embeddings remain enabled. No scripted-answer or local-model fallback is substituted on Gemini failure. This report is scoped evidence, not whole-project production certification.</p></section>${sections.join("")}<h2>Latest browser diagnostics</h2>${screenshots}</html>`,
 );
 console.log(`Generated ${directory}/gemini-report.html`);

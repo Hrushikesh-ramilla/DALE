@@ -18,7 +18,28 @@ Model selection used the available-model API plus actual tool-schema planning pr
 
 Final browser/model receipts are maintained in `.data/concierge-verification/gemini-report.html` by `scripts/report-gemini-verification.mjs`; this report separates real Gemini checks from controlled-provider browser tests and latency acceptance. Historical CPU/GPU and Flash-Lite receipts describe earlier selections. Failed intermediate browser reports remain saved as `buyer-browser-gemini-before-scope-fix.json`, `buyer-browser-gemini-before-prose-fix.json`, and `buyer-browser-gemini-before-filter-contract.json`; the last includes the actual unrelated products and corresponding trace. The single-generation planning probes are diagnostic evidence, not end-to-end acceptance.
 
-### Final local checkpoint — 20 October 2026
+### Post-reset live acceptance — 20 October 2026, 1:21 PM IST
+
+The customer chose to retain full Flash and resume after the quota reset. The complete local production-browser shopper journey then passed **8/8 checks** with actual **`gemini-3.5-flash`**, the existing key, and the unchanged application artifact `31a2592e24205283129f8a43e39e14434b4617db`. There was no inference interception, payment call, model substitution, billing enablement or deployment operation. This result supersedes the quota-blocked status of the historical checkpoint below.
+
+| Actual shopper check | Result | Click-to-visible complete reply |
+|---|---|---|
+| Ask for absent Louis Vuitton Imagination | Explicitly absent; zero unrelated product cards | 8.241 s |
+| Ask for “omega peedmater” | Only three Omega Speedmaster variants; asks which variant | 2.188 s |
+| Ask for a sampled Creed Aventus offer and price | Exact catalog identity and recorded $420.00 | 59.349 s |
+| Save “that exact fragrance” to wishlist | Correct owned wishlist item; cart remains empty | 3.756 s |
+| Move it to cart, quantity one, without checkout | Correct item removed from wishlist, persisted in cart; acknowledgement completed; no checkout confirmation | 25.807 s |
+| Reload the application | Actual cart and wishlist changes retained | State assertion; no inference |
+| Ask “hmm any tom forb that smells like baby powder” | Final displayed records constrained to Tom Ford fragrances; discusses powdery preferences | 18.935 s |
+| Ask what powdery means, casually | Natural explanation; no basket change | 3.162 s |
+
+The preference check validates brand/type scope and a relevant response, **not an independently sourced sensory evaluation of each recommendation**. All eleven displayed records were Tom Ford fragrances; matching every recommendation to a subjective scent preference remains a qualitative evaluation concern. The broader naturalness/generalization and release gates below are not closed by this eight-check journey.
+
+**Performance acceptance failed: zero of seven measured answers completed within one second.** The observed range was 2.188–59.349 seconds, excluding typing, screenshots and the explicit 15-second pre-request pacing. A successful journey is not a claim that the customer latency requirement is met. The current result is functional acceptance of this scoped journey with a material performance limitation.
+
+Receipts: `.data/concierge-verification/buyer-browser-gemini.json` (completed `2026-10-20T07:50:58.067Z`), `buyer-gemini-after-reset.log`, and the current `buyer-browser-gemini-*.png` screenshots. The preceding quota-failed browser receipts and screenshots are preserved in `pre-reset-2026-10-20/`. `gemini-report.html` now derives its status from the actual latest run and retains the prior quota failure as historical evidence. The prior **80/80 focused contracts**, **8/8 controlled browser tests**, and successful build remain separate evidence; the report helper is checked with scoped lint and an offline browser inspection.
+
+### Pre-reset local checkpoint — 20 October 2026 (historical)
 
 - The optimized production artifact is built from `31a2592e24205283129f8a43e39e14434b4617db` and is running locally on port 3000. The build and TypeScript check completed. The final controlled-provider production-browser suite passed **8/8 in 54.2 seconds**, alongside the **80/80 focused contracts** above. Controlled responses qualify software behavior, not model intelligence.
 - The selected-model browser run before the transport retry fix passed **6/8 checks**: absent named-product handling, typo/variant lookup, recorded price, contextual wishlist saving, reload persistence, and a natural fragrance explanation. The cart mutation persisted, but its final acknowledgement and the preference browser request failed with HTTP 429. The separate actual-engine preference check passed in **9.553 seconds**. These receipts remain partial evidence; a clean final-build live journey is still required.
