@@ -8,6 +8,7 @@ import { identityMatcher } from "./identity";
 import type { Sql } from "../database";
 import { sharedEmbedding } from "./embedding-flight";
 import { timed, timing } from "./latency";
+import { hydrateVectors } from "./vector-cache";
 
 export function productDocument(p: Product) {
   return JSON.stringify({
@@ -269,6 +270,8 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
         `(p.record->'attributes'->>${bind(key)} IS NOT NULL AND p.record->'attributes'->>${bind(key)}<>${bind(String(value))})`,
       );
   const useVectors = Boolean(c.query.trim() && c.match_mode === "semantic");
+  const vectorCache =
+    useVectors && process.env.CONCIERGE_VECTOR_CACHE !== "false";
   const fetchRows = (sql: Sql) =>
     timed("retrieval.sql", () =>
       sql.query<{
@@ -276,8 +279,9 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
         vector: number[] | null;
         content_hash: string | null;
         model: string | null;
+        embedding_revision: string | null;
       }>(
-        `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? "e.vector,e.content_hash,e.model" : "NULL AS vector,NULL AS content_hash,NULL AS model"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
+        `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? `${vectorCache ? "NULL AS vector" : "e.vector"},e.content_hash,e.model,e.updated_at::text AS embedding_revision` : "NULL AS vector,NULL AS content_hash,NULL AS model,NULL AS embedding_revision"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
         bindings,
       ),
     );
@@ -307,6 +311,7 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
         })
       : { rows: await fetchRows(db), matchIdentity: null };
   let mode = "structured";
+  if (vectorCache) await hydrateVectors(db, rows.rows, signal);
   let degradation: string | null = null;
   let queryVector: number[] | undefined;
   if (c.query.trim() && c.match_mode === "semantic") {
