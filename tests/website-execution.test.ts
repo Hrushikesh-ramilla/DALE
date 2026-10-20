@@ -80,6 +80,68 @@ beforeEach(async () => {
 });
 afterAll(closeDatabase);
 
+it("provides current product and server-owned basket context before the first generation without rewriting the shopper", async () => {
+  const utterance = "Open this exact product";
+  vi.mocked(modelTurn).mockImplementationOnce(async (messages) => {
+    expect(messages.at(-1)).toEqual({ role: "user", content: utterance });
+    const snapshot = JSON.parse(
+      messages[0].content!.split("additional/current details):\n")[1],
+    );
+    expect(snapshot.viewed_product.id).toBe(id);
+    expect(snapshot.basket.cart).toEqual([]);
+    return call("use_website", {
+      type: "navigate",
+      path: snapshot.viewed_product.url,
+    });
+  });
+  const view = await runConcierge(actor, {
+    turn_id: randomUUID(),
+    message: utterance,
+    client_context: {
+      ...ui(),
+      currently_viewed_product_id: id,
+      cart_summary: [{ productId: otherId, quantity: 9 }],
+    },
+  });
+  expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
+  expect(view.actions[0].operation).toEqual({
+    type: "navigate",
+    path: `/product/${id}`,
+  });
+  expect(view.messages.map((m) => m.text)).toEqual([utterance]);
+});
+it("composes exact listing resolution and multiple-tab navigation without a separate model lookup", async () => {
+  vi.mocked(modelTurn).mockResolvedValueOnce(
+    call("open_catalog_products", {
+      targets: [{ product_id: id }, { product_id: otherId }],
+      separate_tabs: true,
+    }),
+  );
+  const view = await runConcierge(actor, {
+    turn_id: randomUUID(),
+    message: "Open both in new browser tabs",
+    client_context: ui(),
+  });
+  expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
+  expect(view.actions[0].operation).toEqual({
+    type: "tabs",
+    paths: [`/product/${id}`, `/product/${otherId}`],
+  });
+});
+it("does not open a partial batch when any requested listing is missing", async () => {
+  const result = await websiteTool(
+    "open_catalog_products",
+    {
+      targets: [{ product_id: id }, { product_id: "missing-listing" }],
+      separate_tabs: true,
+    },
+    actor,
+    ui(),
+  );
+  expect(result).toMatchObject({ needs_selection: true });
+  expect(result).not.toHaveProperty("browser_operation");
+});
+
 it("does not overwrite newer manual basket edits made while the model is planning", async () => {
   await manageBasket(actor, {
     collection: "cart",

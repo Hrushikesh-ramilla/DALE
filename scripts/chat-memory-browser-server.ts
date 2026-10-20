@@ -714,6 +714,33 @@ const provider = createServer(async (req, res) => {
             "Browser details and scroll completed from observed results.",
         };
   }
+  if (input.stream) {
+    res.setHeader("Content-Type", "text/event-stream");
+    const chunk = (delta: unknown, finish_reason: string | null = null) =>
+      res.write(
+        `data: ${JSON.stringify({ choices: [{ index: 0, delta, finish_reason }] })}\n\n`,
+      );
+    if (command === "Browser slow streamed reply") {
+      chunk({ role: "assistant", content: "Genuine first streamed words" });
+      await new Promise((resolve) => setTimeout(resolve, 1800));
+      chunk({ content: "; the complete reply is now saved." }, "stop");
+    } else {
+      chunk({
+        ...response,
+        ...("tool_calls" in response
+          ? {
+              tool_calls: response.tool_calls.map((call, index) => ({
+                ...call,
+                index,
+              })),
+            }
+          : {}),
+      });
+      chunk({}, "tool_calls" in response ? "tool_calls" : "stop");
+    }
+    res.end("data: [DONE]\n\n");
+    return;
+  }
   res.setHeader("Content-Type", "application/json");
   res.end(
     JSON.stringify({

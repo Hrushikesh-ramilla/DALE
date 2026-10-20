@@ -3,6 +3,9 @@ import type { NativeMessage } from "@/domain/concierge";
 import { selfHostedEndpoint } from "../self-hosted-ai";
 import { replyTokenLimit } from "./context-limits";
 import { timed, timing, admitModelAttempt } from "./latency";
+import { agentProgress, agentStreams } from "./latency";
+import { streamedModelEnvelope } from "./model-stream";
+import { randomUUID } from "node:crypto";
 
 export type ToolDeclaration = {
   name: string;
@@ -123,6 +126,10 @@ async function generate(
   const provider = process.env.CONCIERGE_PROVIDER || "self_hosted";
   const model = process.env.CONCIERGE_MODEL || process.env.AI_MODEL;
   const reasoning = process.env.CONCIERGE_REASONING_EFFORT || "low";
+  const streaming = agentStreams();
+  const generation = randomUUID();
+  if (streaming)
+    agentProgress({ type: "model.started", generation_id: generation });
   if (
     provider === "gemini" &&
     !["none", "minimal", "low", "medium", "high"].includes(reasoning)
@@ -189,7 +196,7 @@ async function generate(
             temperature: provider === "self_hosted" ? 0 : 0.7,
             ...(provider === "gemini" ? { reasoning_effort: reasoning } : {}),
             max_tokens: replyTokenLimit(),
-            stream: false,
+            stream: streaming,
           }),
           signal: combined,
         }),
@@ -229,7 +236,21 @@ async function generate(
       `Concierge inference returned HTTP ${response?.status ?? "unavailable"}. No scripted response was substituted.`,
     );
   }
-  const envelope = answerSchema.parse(await response.json());
+  const envelope = answerSchema.parse(
+    streaming &&
+      response.headers.get("content-type")?.includes("text/event-stream")
+      ? await streamedModelEnvelope(
+          response,
+          (text) =>
+            agentProgress({
+              type: "assistant.delta",
+              generation_id: generation,
+              text,
+            }),
+          combined,
+        )
+      : await response.json(),
+  );
   const choice = envelope.choices[0];
   if (!["stop", "tool_calls"].includes(choice.finish_reason))
     throw new Error(
@@ -247,5 +268,11 @@ async function generate(
   };
   if (!message.content && !message.tool_calls?.length)
     throw new Error("The model returned neither a response nor tool calls.");
+  if (streaming)
+    agentProgress({
+      type: "model.finished",
+      generation_id: generation,
+      has_tools: Boolean(message.tool_calls?.length),
+    });
   return message;
 }

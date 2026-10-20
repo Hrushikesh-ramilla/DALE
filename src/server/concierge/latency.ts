@@ -33,6 +33,11 @@ export function createAgentTrace(
 export function withAgentTrace<T>(trace: Trace, fn: () => T): T {
   return traces.run(trace, fn);
 }
+/** Internal memory summaries are model work, never public draft text. */
+export function withoutAgentDraft<T>(fn: () => T): T {
+  const trace = traces.getStore();
+  return trace ? traces.run({ ...trace, onProgress: undefined }, fn) : fn();
+}
 export function timing(
   phase: string,
   data?: Timing["data"],

@@ -25,6 +25,7 @@ import {
 } from "./website-browser";
 import type { conciergeView } from "@/server/concierge/engine";
 import type { CartItem, CopilotMessage } from "./copilot-types";
+import { readAgentStream, type AgentStreamEvent } from "@/lib/agent-stream";
 
 type View = Awaited<ReturnType<typeof conciergeView>>;
 interface CopilotContextType {
@@ -67,15 +68,33 @@ async function api<T>(
   path: string,
   body?: unknown,
   signal?: AbortSignal,
+  onEvent?: (event: AgentStreamEvent) => void,
 ): Promise<T> {
   const response = await fetch(path, {
     method: body === undefined ? "GET" : "POST",
     headers:
-      body === undefined ? undefined : { "Content-Type": "application/json" },
+      body === undefined
+        ? undefined
+        : {
+            "Content-Type": "application/json",
+            ...(path === "/api/copilot/chat"
+              ? { Accept: "text/event-stream" }
+              : {}),
+          },
     body: body === undefined ? undefined : JSON.stringify(body),
     signal,
     cache: "no-store",
   });
+  if (
+    response.ok &&
+    response.headers.get("content-type")?.includes("text/event-stream")
+  )
+    return readAgentStream<T>(
+      response,
+      (body as { turn_id: string }).turn_id,
+      onEvent,
+      signal,
+    );
   const result = await response.json();
   if (!response.ok)
     throw new Error(result.error || `Request failed (${response.status})`);
@@ -90,6 +109,19 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const current = useRef<View | null>(null);
   const [error, setError] = useState("");
   const [isLoadingHistory, setLoadingHistory] = useState(false);
+  const [draft, setDraft] = useState<CopilotMessage | null>(null);
+  const draftBuffer = useRef<{
+    generation: string;
+    text: string;
+    turn: string;
+  } | null>(null);
+  const draftTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const clearDraft = useCallback(() => {
+    if (draftTimer.current) clearTimeout(draftTimer.current);
+    draftTimer.current = null;
+    draftBuffer.current = null;
+    setDraft(null);
+  }, []);
   const controller = useRef<AbortController | null>(null);
   const recognition = useRef<{ abort: () => void; stop: () => void } | null>(
     null,
@@ -383,6 +415,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       current.current = null;
       manual.current = { path: "", filters: {} };
       setState(null);
+      clearDraft();
       setVoiceDraft("");
       setError("");
       setThinking(false);
@@ -405,23 +438,84 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       controller.current?.abort();
       speechController.current?.abort();
       recognition.current?.abort();
+      if (draftTimer.current) clearTimeout(draftTimer.current);
     };
-  }, [apply]);
-  const ensure = useCallback(async () => {
-    const epoch = sessionEpoch.current;
-    const view = await api<View>("/api/copilot/state", { action: "start" });
-    if (epoch !== sessionEpoch.current)
-      throw new Error(
-        "Shopping session changed. Send the request again in the current account.",
+  }, [apply, clearDraft]);
+  const ensure = useCallback(
+    async (fresh = false) => {
+      if (current.current && !fresh) return current.current;
+      const epoch = sessionEpoch.current;
+      const view = await api<View>("/api/copilot/state", { action: "start" });
+      if (epoch !== sessionEpoch.current)
+        throw new Error(
+          "Shopping session changed. Send the request again in the current account.",
+        );
+      apply(view, epoch);
+      window.dispatchEvent(
+        new CustomEvent("dale:customer-session-ready", {
+          detail: { owner_id: view.owner_id },
+        }),
       );
-    apply(view, epoch);
-    window.dispatchEvent(
-      new CustomEvent("dale:customer-session-ready", {
-        detail: { owner_id: view.owner_id },
+      return view;
+    },
+    [apply],
+  );
+  const chat = useCallback(
+    (
+      body: {
+        turn_id: string;
+        message?: string;
+        resume?: boolean;
+        client_context: UIContext;
+      },
+      signal: AbortSignal,
+      epoch: number,
+    ) =>
+      api<View>("/api/copilot/chat", body, signal, (event) => {
+        if (
+          epoch !== sessionEpoch.current ||
+          signal.aborted ||
+          event.owner_id !== current.current?.owner_id
+        )
+          return;
+        if (
+          event.type === "model.started" &&
+          typeof event.generation_id === "string"
+        ) {
+          clearDraft();
+          draftBuffer.current = {
+            generation: event.generation_id,
+            text: "",
+            turn: body.turn_id,
+          };
+        } else if (
+          event.type === "assistant.delta" &&
+          typeof event.text === "string" &&
+          draftBuffer.current !== null &&
+          event.generation_id === draftBuffer.current?.generation
+        ) {
+          draftBuffer.current.text += event.text;
+          if (!draftTimer.current)
+            draftTimer.current = setTimeout(() => {
+              draftTimer.current = null;
+              const buffer = draftBuffer.current;
+              if (buffer && epoch === sessionEpoch.current && !signal.aborted)
+                setDraft({
+                  id: `stream:${buffer.generation}`,
+                  sender: "assistant",
+                  text: buffer.text,
+                  timestamp: Date.now(),
+                });
+            }, 32);
+        } else if (
+          event.type === "request.completed" ||
+          event.type === "request.failed" ||
+          (event.type === "model.finished" && event.has_tools)
+        )
+          clearDraft();
       }),
-    );
-    return view;
-  }, [apply]);
+    [clearDraft],
+  );
   const executeBrowser = useCallback(
     async (action: BrowserAction, signal: AbortSignal) => {
       const operation = action.operation;
@@ -590,10 +684,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       try {
         await ensure();
         const id = crypto.randomUUID();
-        let view = await api<View>(
-          "/api/copilot/chat",
+        let view = await chat(
           { turn_id: id, message: prompt, client_context: context() },
           abort.signal,
+          epoch,
         );
         apply(view, epoch);
         for (let i = 0; view.turn?.status === "awaiting_ui" && i < 12; i++) {
@@ -602,10 +696,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
             apply(view, epoch);
           }
           if (view.actions.some((a) => a.status === "pending")) break;
-          view = await api<View>(
-            "/api/copilot/chat",
+          view = await chat(
             { turn_id: id, resume: true, client_context: context() },
             abort.signal,
+            epoch,
           );
           apply(view, epoch);
         }
@@ -619,13 +713,14 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           );
       } finally {
         if (epoch === sessionEpoch.current) {
+          clearDraft();
           activeRequest.current = false;
           setThinking(false);
           controller.current = null;
         }
       }
     },
-    [ensure, context, apply, executeBrowser],
+    [ensure, context, apply, executeBrowser, chat, clearDraft],
   );
   const loadEarlier = useCallback(async () => {
     const snapshot = current.current;
@@ -720,10 +815,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         );
       const id = view.turn.id;
       if (view.turn.status !== "awaiting_ui") {
-        view = await api<View>(
-          "/api/copilot/chat",
+        view = await chat(
           { turn_id: id, resume: true, client_context: context() },
           abort.signal,
+          epoch,
         );
         apply(view, epoch);
       }
@@ -733,10 +828,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           apply(view, epoch);
         }
         if (view.actions.some((a) => a.status === "pending")) break;
-        view = await api<View>(
-          "/api/copilot/chat",
+        view = await chat(
           { turn_id: id, resume: true, client_context: context() },
           abort.signal,
+          epoch,
         );
         apply(view, epoch);
       }
@@ -751,12 +846,13 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         );
     } finally {
       if (epoch === sessionEpoch.current) {
+        clearDraft();
         activeRequest.current = false;
         setThinking(false);
         controller.current = null;
       }
     }
-  }, [apply, context, executeBrowser]);
+  }, [apply, context, executeBrowser, chat, clearDraft]);
   const mutateCollection = useCallback(
     async (
       collection: "cart" | "wishlist",
@@ -768,7 +864,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       const epoch = sessionEpoch.current;
       try {
         setError("");
-        const v = await ensure();
+        const v = await ensure(true);
         apply(
           await api<View>("/api/copilot/state", {
             collection,
@@ -822,10 +918,11 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const cancel = useCallback(() => {
     const epoch = sessionEpoch.current;
     controller.current?.abort();
+    clearDraft();
     void api<View>("/api/copilot/state", { action: "cancel" })
       .then((v) => apply(v, epoch))
       .catch((e) => setError(e.message));
-  }, [apply]);
+  }, [apply, clearDraft]);
   const startListening = useCallback(() => {
     const epoch = sessionEpoch.current;
     speechController.current?.abort();
@@ -878,7 +975,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         toggleOpen: (v) => setOpen((p) => v ?? !p),
         isListening,
         isThinking,
-        messages: state?.messages || [],
+        messages:
+          draft && isThinking && state?.turn?.status !== "completed"
+            ? [...(state?.messages || []), draft]
+            : state?.messages || [],
         cart:
           state?.basket.cart
             .filter((i) => i.product)

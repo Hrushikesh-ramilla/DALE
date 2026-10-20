@@ -13,6 +13,54 @@ async function say(page: Page, message: string) {
   await page.getByLabel("Message DALE").fill(message);
   await page.getByRole("button", { name: "Send message", exact: true }).click();
 }
+test("shows streamed words while generation is active and saves exactly one final reply", async ({
+  page,
+}) => {
+  await say(page, "Browser slow streamed reply");
+  const draft = page.locator('[data-message-id^="stream:"]');
+  await expect(draft).toContainText("Genuine first streamed words");
+  await expect(
+    page.getByRole("button", { name: "Stop", exact: true }),
+  ).toBeVisible();
+  const during = await (await page.request.get("/api/copilot/state")).json();
+  expect(
+    during.messages.filter((m: { text: string }) =>
+      m.text.startsWith("Genuine first streamed words"),
+    ),
+  ).toHaveLength(0);
+  await expect(page.getByLabel("Message DALE")).toBeEnabled();
+  await expect(draft).toHaveCount(0);
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Genuine first streamed words; the complete reply is now saved.",
+  );
+  const after = await (await page.request.get("/api/copilot/state")).json();
+  expect(
+    after.messages.filter((m: { text: string }) =>
+      m.text.startsWith("Genuine first streamed words"),
+    ),
+  ).toHaveLength(1);
+});
+test("Stop removes a streamed draft without archiving it as a completed reply", async ({
+  page,
+}) => {
+  await say(page, "Browser slow streamed reply");
+  await expect(page.locator('[data-message-id^="stream:"]')).toBeVisible();
+  await page.getByRole("button", { name: "Stop", exact: true }).click();
+  await expect(page.locator('[data-message-id^="stream:"]')).toHaveCount(0);
+  await expect
+    .poll(
+      async () =>
+        (await (await page.request.get("/api/copilot/state")).json()).turn
+          .status,
+    )
+    .toBe("canceled");
+  const saved = await (await page.request.get("/api/copilot/state")).json();
+  expect(
+    saved.messages.filter((m: { text: string }) =>
+      m.text.startsWith("Genuine first streamed words"),
+    ),
+  ).toHaveLength(0);
+});
 test("navigates to the exact rendered listing and preserves chat on refresh", async ({
   page,
 }) => {

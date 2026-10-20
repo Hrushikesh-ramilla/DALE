@@ -4,6 +4,7 @@ import type { ConciergeState } from "@/domain/concierge";
 import { AsyncLocalStorage } from "node:async_hooks";
 import { publishConciergeChange } from "./changes";
 import { randomUUID, createHash } from "node:crypto";
+import { timed } from "./latency";
 const execution = new AsyncLocalStorage<{
   owner: string;
   turnId: string;
@@ -105,9 +106,11 @@ const empty = (): ConciergeState => ({
 export async function readConcierge(actor: Actor) {
   assertBuyer(actor);
   const db = await conciergeDatabase();
-  const result = await db.query<{ state: ConciergeState }>(
-    "SELECT state FROM concierge_documents WHERE owner=$1",
-    [ownerKey(actor)],
+  const result = await timed("state.read", () =>
+    db.query<{ state: ConciergeState }>(
+      "SELECT state FROM concierge_documents WHERE owner=$1",
+      [ownerKey(actor)],
+    ),
   );
   return result.rows[0]?.state || empty();
 }
@@ -122,140 +125,144 @@ export async function changeConcierge<T>(
     active?.owner === ownerKey(actor)
       ? `${active.key}:${active.step++}`
       : undefined;
-  const value = await (
-    await conciergeDatabase()
-  ).transaction(async (sql) => {
-    await sql.query(
-      "INSERT INTO concierge_documents(owner,state) VALUES($1,$2::jsonb) ON CONFLICT(owner) DO NOTHING",
-      [ownerKey(actor), JSON.stringify(empty())],
-    );
-    const result = await sql.query<{ state: ConciergeState }>(
-      "SELECT state FROM concierge_documents WHERE owner=$1 FOR UPDATE",
-      [ownerKey(actor)],
-    );
-    const state = result.rows[0].state;
-    const fence = execution.getStore();
-    if (
-      fence?.owner === ownerKey(actor) &&
-      (state.turn?.id !== fence.turnId ||
-        state.turn.status !== "running" ||
-        (fence.worker && state.execution?.worker !== fence.worker))
-    )
-      throw new Error(
-        "The originating turn is no longer active. No new mutation was applied.",
-      );
-    if (effectKey) {
-      const receipt = await sql.query<{ result: { value?: T } }>(
-        "SELECT result FROM concierge_effects WHERE owner=$1 AND key=$2",
-        [ownerKey(actor), effectKey],
-      );
-      if (receipt.rows.length) return receipt.rows[0].result.value as T;
-    }
-    if (!state.conversationId) {
-      state.conversationId = randomUUID();
-      // Preserve the original legacy document before replacing its UI caches.
+  const value = await timed("state.transaction", async () =>
+    (await conciergeDatabase()).transaction(async (sql) => {
       await sql.query(
-        "INSERT INTO concierge_conversations(owner,id,legacy_snapshot) VALUES($1,$2,$3::jsonb)",
-        [
-          ownerKey(actor),
-          state.conversationId,
-          JSON.stringify(result.rows[0].state),
-        ],
+        "INSERT INTO concierge_documents(owner,state) VALUES($1,$2::jsonb) ON CONFLICT(owner) DO NOTHING",
+        [ownerKey(actor), JSON.stringify(empty())],
       );
-      await archiveTranscript(sql, ownerKey(actor), state);
-    }
-    // Chat/tool bookkeeping must not stale a shopper's basket observation.
-    // Legacy documents start at their last public revision without data loss.
-    const basketRevision = state.basketRevision ?? state.revision;
-    const beforeBasket = JSON.stringify([state.cart, state.wishlist]);
-    const beforeExecution = executionSnapshot(state);
-    const value = await fn(state, sql);
-    const afterExecution = executionSnapshot(state);
-    if (beforeExecution !== afterExecution) {
+      const result = await sql.query<{ state: ConciergeState }>(
+        "SELECT state FROM concierge_documents WHERE owner=$1 FOR UPDATE",
+        [ownerKey(actor)],
+      );
+      const state = result.rows[0].state;
+      const fence = execution.getStore();
       if (
-        beforeExecution &&
-        JSON.parse(beforeExecution).turn.id !== state.turn?.id
-      ) {
-        const previous = JSON.parse(beforeExecution) as {
-          turn: NonNullable<ConciergeState["turn"]>;
-          actions: ConciergeState["actions"];
-        };
-        if (["running", "awaiting_ui"].includes(previous.turn.status)) {
-          previous.turn.status = "canceled";
-          previous.turn.error = state.turn
-            ? "Superseded by a newer customer message."
-            : "The conversation ended.";
-          previous.actions = previous.actions.map(
-            (a) =>
-              state.actions.find((latest) => latest.id === a.id) ||
-              (a.status === "pending"
-                ? { ...a, status: "failed", outcome: previous.turn.error }
-                : a),
+        fence?.owner === ownerKey(actor) &&
+        (state.turn?.id !== fence.turnId ||
+          state.turn.status !== "running" ||
+          (fence.worker && state.execution?.worker !== fence.worker))
+      )
+        throw new Error(
+          "The originating turn is no longer active. No new mutation was applied.",
+        );
+      if (effectKey) {
+        const receipt = await sql.query<{ result: { value?: T } }>(
+          "SELECT result FROM concierge_effects WHERE owner=$1 AND key=$2",
+          [ownerKey(actor), effectKey],
+        );
+        if (receipt.rows.length) return receipt.rows[0].result.value as T;
+      }
+      if (!state.conversationId) {
+        state.conversationId = randomUUID();
+        // Preserve the original legacy document before replacing its UI caches.
+        await sql.query(
+          "INSERT INTO concierge_conversations(owner,id,legacy_snapshot) VALUES($1,$2,$3::jsonb)",
+          [
+            ownerKey(actor),
+            state.conversationId,
+            JSON.stringify(result.rows[0].state),
+          ],
+        );
+        await archiveTranscript(sql, ownerKey(actor), state);
+      }
+      // Chat/tool bookkeeping must not stale a shopper's basket observation.
+      // Legacy documents start at their last public revision without data loss.
+      const basketRevision = state.basketRevision ?? state.revision;
+      const beforeBasket = JSON.stringify([state.cart, state.wishlist]);
+      const beforeExecution = executionSnapshot(state);
+      const value = await fn(state, sql);
+      const afterExecution = executionSnapshot(state);
+      if (beforeExecution !== afterExecution) {
+        if (
+          beforeExecution &&
+          JSON.parse(beforeExecution).turn.id !== state.turn?.id
+        ) {
+          const previous = JSON.parse(beforeExecution) as {
+            turn: NonNullable<ConciergeState["turn"]>;
+            actions: ConciergeState["actions"];
+          };
+          if (["running", "awaiting_ui"].includes(previous.turn.status)) {
+            previous.turn.status = "canceled";
+            previous.turn.error = state.turn
+              ? "Superseded by a newer customer message."
+              : "The conversation ended.";
+            previous.actions = previous.actions.map(
+              (a) =>
+                state.actions.find((latest) => latest.id === a.id) ||
+                (a.status === "pending"
+                  ? { ...a, status: "failed", outcome: previous.turn.error }
+                  : a),
+            );
+          }
+          await archiveExecution(
+            sql,
+            ownerKey(actor),
+            JSON.stringify(previous),
           );
         }
-        await archiveExecution(sql, ownerKey(actor), JSON.stringify(previous));
+        if (afterExecution)
+          await archiveExecution(sql, ownerKey(actor), afterExecution);
       }
-      if (afterExecution)
-        await archiveExecution(sql, ownerKey(actor), afterExecution);
-    }
-    state.basketRevision =
-      basketRevision +
-      Number(beforeBasket !== JSON.stringify([state.cart, state.wishlist]));
-    if (effectKey)
+      state.basketRevision =
+        basketRevision +
+        Number(beforeBasket !== JSON.stringify([state.cart, state.wishlist]));
+      if (effectKey)
+        await sql.query(
+          "INSERT INTO concierge_effects(owner,key,result,basket_before,basket_revision,basket_after) VALUES($1,$2,$3::jsonb,$4::jsonb,$5,$6::jsonb)",
+          [
+            ownerKey(actor),
+            effectKey,
+            JSON.stringify({ value }),
+            beforeBasket !== JSON.stringify([state.cart, state.wishlist])
+              ? beforeBasket
+              : null,
+            state.basketRevision,
+            beforeBasket !== JSON.stringify([state.cart, state.wishlist])
+              ? JSON.stringify([state.cart, state.wishlist])
+              : null,
+          ],
+        );
+      state.revision++;
+      await archiveTranscript(sql, ownerKey(actor), state);
+      // Bounded UI/native caches only. The append-only archive above is authoritative
+      // for model memory and paginated history; no archived message is pruned.
+      state.transcript = state.transcript.slice(-50);
+      if (state.messages.length > 160) {
+        const boundary = state.messages.findIndex(
+          (m, i) => i >= 80 && m.role === "user",
+        );
+        if (boundary >= 0) state.messages = state.messages.slice(boundary);
+      }
+      state.actions = state.actions.slice(-100);
+      for (const confirmation of state.confirmations) {
+        if (
+          confirmation.status === "pending" &&
+          Date.parse(confirmation.expiresAt) <= Date.now()
+        ) {
+          confirmation.status = "failed";
+          confirmation.result = {
+            error:
+              "Confirmation expired. Prepare a new operation with current terms.",
+          };
+        }
+      }
+      const active = state.confirmations.filter(
+        (c) => c.status === "pending" || c.status === "executing",
+      );
+      const history = state.confirmations
+        .filter((c) => c.status !== "pending" && c.status !== "executing")
+        .slice(-30);
+      state.confirmations = [...history, ...active];
+      state.resultSets = state.resultSets.slice(-12);
       await sql.query(
-        "INSERT INTO concierge_effects(owner,key,result,basket_before,basket_revision,basket_after) VALUES($1,$2,$3::jsonb,$4::jsonb,$5,$6::jsonb)",
-        [
-          ownerKey(actor),
-          effectKey,
-          JSON.stringify({ value }),
-          beforeBasket !== JSON.stringify([state.cart, state.wishlist])
-            ? beforeBasket
-            : null,
-          state.basketRevision,
-          beforeBasket !== JSON.stringify([state.cart, state.wishlist])
-            ? JSON.stringify([state.cart, state.wishlist])
-            : null,
-        ],
+        "UPDATE concierge_documents SET state=$2::jsonb,updated_at=now() WHERE owner=$1",
+        [ownerKey(actor), JSON.stringify(state)],
       );
-    state.revision++;
-    await archiveTranscript(sql, ownerKey(actor), state);
-    // Bounded UI/native caches only. The append-only archive above is authoritative
-    // for model memory and paginated history; no archived message is pruned.
-    state.transcript = state.transcript.slice(-50);
-    if (state.messages.length > 160) {
-      const boundary = state.messages.findIndex(
-        (m, i) => i >= 80 && m.role === "user",
-      );
-      if (boundary >= 0) state.messages = state.messages.slice(boundary);
-    }
-    state.actions = state.actions.slice(-100);
-    for (const confirmation of state.confirmations) {
-      if (
-        confirmation.status === "pending" &&
-        Date.parse(confirmation.expiresAt) <= Date.now()
-      ) {
-        confirmation.status = "failed";
-        confirmation.result = {
-          error:
-            "Confirmation expired. Prepare a new operation with current terms.",
-        };
-      }
-    }
-    const active = state.confirmations.filter(
-      (c) => c.status === "pending" || c.status === "executing",
-    );
-    const history = state.confirmations
-      .filter((c) => c.status !== "pending" && c.status !== "executing")
-      .slice(-30);
-    state.confirmations = [...history, ...active];
-    state.resultSets = state.resultSets.slice(-12);
-    await sql.query(
-      "UPDATE concierge_documents SET state=$2::jsonb,updated_at=now() WHERE owner=$1",
-      [ownerKey(actor), JSON.stringify(state)],
-    );
-    committedRevision = state.revision;
-    return value;
-  });
+      committedRevision = state.revision;
+      return value;
+    }),
+  );
   if (committedRevision >= 0)
     publishConciergeChange(ownerKey(actor), committedRevision);
   return value;

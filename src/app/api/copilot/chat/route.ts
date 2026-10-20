@@ -2,6 +2,8 @@ import { actorFromRequest } from "@/server/auth";
 import { takeRequestBudget } from "@/server/budgets";
 import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
 import { runConcierge } from "@/server/concierge/engine";
+import { chatStream } from "@/server/concierge/chat-stream";
+import { turnInput } from "@/domain/concierge";
 export const runtime = "nodejs";
 export const maxDuration = 180;
 export async function POST(request: Request) {
@@ -14,9 +16,13 @@ export async function POST(request: Request) {
       60,
     );
     await takeRequestBudget(actor, "concierge-turn", 15);
-    return json(
-      await runConcierge(actor, await jsonBody(request), request.signal),
-    );
+    const input = turnInput.parse(await jsonBody(request));
+    if (
+      request.headers.get("accept")?.includes("text/event-stream") &&
+      process.env.CONCIERGE_STREAMING !== "false"
+    )
+      return chatStream(actor, input, request.signal);
+    return json(await runConcierge(actor, input, request.signal));
   } catch (e) {
     return apiError(e);
   }
