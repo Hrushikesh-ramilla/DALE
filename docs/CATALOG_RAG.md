@@ -41,6 +41,12 @@ Receipts are written to `.data/concierge-verification/catalog-rag-live.json`. Th
 
 On 2026-10-20, live `gemini-3.5-flash-lite` checks retrieved LV Imagination and then Ombre Nomade in a follow-up. Gemini reported their recorded prices of $320 and $410 respectively. Both used actual catalog function calls and two generations; observed durations were approximately 4.4 and 3.0 seconds. These observations are not latency guarantees.
 
+Final acceptance passed 46 targeted tests, TypeScript, scoped lint, and both packaged-production browser tests. The real localhost Gemini UI also answered the Imagination price question and recommended the catalog's Samsung Galaxy S25 Ultra for a 100x-zoom phone request, explaining the distinction between optical and digital zoom. The UI checks took approximately 8.8 seconds per reply; no sub-second performance claim is made. Their replies and screenshot are recorded in `.data/concierge-verification/catalog-rag-live-ui.json` and `catalog-rag-live-ui.png`.
+
+The existing semantic index was refreshed for all 4,510 published records, updating ten changed entries. A real local hybrid search for “oud incense” within Louis Vuitton ranked Ombre Nomade first, with no retrieval degradation. The receipt is `catalog-rag-local-semantic.json` in the same verification directory. Unpublished catalog records were not removed or republished.
+
+The first production-build attempt collided with another build writing the shared `.next` directory and failed on a missing generated trace. After that build completed, the prepared artifact was checked for the RAG module and exercised by both browser suites above. Runtime source identity is recorded in `.next/preview-build.json`; the failed attempt remains in `catalog-rag-build.log` rather than being reported as a successful command.
+
 ## Manual check
 
 Open DALE and ask “Do we have LV Imagination? What's our price?” Then ask about another product or ask for a comparison. Ask a general question or make conversation as well: catalog access does not require every answer to become a product listing. Changing preferences, refreshing, and starting a new chat retain the session-memory behavior described in [SESSION_MEMORY](SESSION_MEMORY.md).
