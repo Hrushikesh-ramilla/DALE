@@ -69,11 +69,11 @@ The system is a Next.js modular monolith. Gemini chooses native functions and ge
 
 **Recorded local evidence, 21 October 2026.** Counts below describe different scopes and overlap; they are not a combined test total.
 
-| Evaluation scope                               | Recorded result                                                                    | Record                                                                                                                           |
-| :--------------------------------------------- | :--------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| Response-speed implementation                  | 155 distinct targeted contracts; 29 distinct browser journeys across recorded runs | [Qualification ledger](docs/AI_RESPONSE_SPEED_STATUS.md)                                                                         |
-| Full Flash camera regression                   | 2/2 live customer requests passed; 68 scoped contracts passed                      | [Agent acceptance report](docs/AGENT_REARCHITECTURE_REPORT.md#camera-phone-regression--21-october-2026-latest-camera-acceptance) |
-| Broader repository baseline, before speed work | 579 passed; **19 unresolved failures**                                             | [Regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md)                                                                   |
+| Evaluation scope                               | Recorded result                                                                    | Record                                                                |
+| :--------------------------------------------- | :--------------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
+| Response-speed implementation                  | 155 distinct targeted contracts; 29 distinct browser journeys across recorded runs | [Qualification ledger](docs/VALIDATION.md#recorded-evidence)          |
+| Full Flash camera regression                   | 2/2 live customer requests passed; 68 scoped contracts passed                      | [Agent acceptance report](docs/VALIDATION.md#camera-phone-case-study) |
+| Broader repository baseline, before speed work | 579 passed; **19 unresolved failures**                                             | [Regression triage](docs/VALIDATION.md#known-gaps)                    |
 
 <img src="docs/assets/readme/camera-correction.webp" width="1200" alt="Actual Gemini follow-up rejects the request for 100x optical smartphone zoom instead of substituting digital zoom or unrelated accessories.">
 
@@ -97,13 +97,12 @@ Browser fixtures test application behavior; real-provider checks test the config
 
 ## Run locally
 
-Node.js 22+ and npm. Start with [`.env.example`](.env.example); set the required session and operator values before running.
+Node.js 22+ and npm. Configure private local settings as described in [development](docs/DEVELOPMENT.md).
 
 ```sh
 git clone https://github.com/Hrushikesh-ramilla/DALE.git
 cd DALE
 npm install
-cp .env.example .env
 npm run dev
 ```
 
@@ -126,7 +125,7 @@ The ignored `.data/concierge.env` profile retains the selected model. Cloud acce
 node scripts/start-concierge-embeddings.mjs
 ```
 
-See [catalog retrieval](docs/CATALOG_RAG.md) for configuration and [the implementation report](docs/AGENT_REARCHITECTURE_REPORT.md) for prerequisites. Keep one process owner per embedded database directory. Stop the preview launcher and its child before rebuilding or running separate database/index maintenance. Do not reset customer data.
+See [architecture](docs/ARCHITECTURE.md) for configuration and [development](docs/DEVELOPMENT.md) for prerequisites. Keep one process owner per embedded database directory. Stop the preview launcher and its child before rebuilding or running separate database/index maintenance. Do not reset customer data.
 
 Docker Compose is available via `docker compose up --build`; use the matching environment configuration. EC2 scripts provide deployment support, not evidence of the current hosted version.
 
@@ -134,14 +133,10 @@ Docker Compose is available via `docker compose up --build`; use the matching en
 
 ## Technical record
 
-| Read                                                                                                                   | Contents                                                        |
-| :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------- |
-| [Implementation plan](IMPLEMENTATION_PLAN.md)                                                                          | Conversation-driven customer website control                    |
-| [Website-control ledger](docs/WEBSITE_CONTROL_STATUS.md)                                                               | Actual capabilities, browser evidence and platform limits       |
-| [Catalog RAG](docs/CATALOG_RAG.md) · [Session memory](docs/SESSION_MEMORY.md)                                          | Retrieval, persistence, context budgets and known limits        |
-| [Speed plan](AI_RESPONSE_SPEED_IMPLEMENTATION_PLAN.md) · [Results](docs/AI_RESPONSE_SPEED_STATUS.md)                   | Measurements, experiments and rollback controls                 |
-| [Original master plan](MASTER_PLAN.md) · [Implementation audit](docs/ORIGINAL_PLAN_IMPLEMENTATION_AUDIT_2026-10-15.md) | Original commerce goals, research provenance and remaining gaps |
+- [Architecture](docs/ARCHITECTURE.md) — agent, retrieval, persistence and website actions.
+- [Development](docs/DEVELOPMENT.md) — local setup, private configuration and verification.
+- [Validation](docs/VALIDATION.md) — recorded evidence and current limits.
 
 `src/app` contains pages and APIs; `src/server/concierge` contains the agent; `src/components/copilot` connects conversation to the browser. Domain contracts live in `src/domain`, catalog records in `catalog`, and reproducible checks in `tests`, `e2e` and `scripts`.
 
-<p align="center"><sub>DALE · Conversational commerce · PayPal AI Hackathon · <a href="docs/assets/readme/README.md">Figure sources</a></sub></p>
+<p align="center"><sub>DALE · Conversational commerce · PayPal AI Hackathon</sub></p>

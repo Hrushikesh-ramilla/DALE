@@ -6,16 +6,27 @@ import { releaseProviderConfig } from "./release-provider-config.mjs";
 import { validateReleaseRuntime } from "./validate-release-runtime.mjs";
 import { validateAppArchive } from "./validate-app-archive.mjs";
 const directory = ".data/deploy";
-const head = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
+const head = execFileSync("git", ["rev-parse", "HEAD"], {
+  encoding: "utf8",
+}).trim();
 if (process.platform === "linux")
-  execFileSync(process.execPath, ["scripts/package-linux-app.mjs"], { stdio: "inherit" });
-const artifactDirectory = process.platform === "linux" ? ".data/linux-artifact" : ".data/deploy/linux-app";
+  execFileSync(process.execPath, ["scripts/package-linux-app.mjs"], {
+    stdio: "inherit",
+  });
+const artifactDirectory =
+  process.platform === "linux"
+    ? ".data/linux-artifact"
+    : ".data/deploy/linux-app";
 let archive, metadata;
 try {
   archive = await readFile(`${artifactDirectory}/release.tar.gz`);
-  metadata = JSON.parse(await readFile(`${artifactDirectory}/artifact.json`, "utf8"));
+  metadata = JSON.parse(
+    await readFile(`${artifactDirectory}/artifact.json`, "utf8"),
+  );
 } catch {
-  throw new Error("Linux CI artifact is missing. Download linux-app-release from the successful current-commit CI run into .data/deploy/linux-app. Private deployment settings have not been changed.");
+  throw new Error(
+    "Linux CI artifact is missing. Download linux-app-release from the successful current-commit CI run into .data/deploy/linux-app. Private deployment settings have not been changed.",
+  );
 }
 validateAppArchive(metadata, archive, head);
 await mkdir(directory, { recursive: true });
@@ -24,10 +35,15 @@ let values;
 try {
   values = parse(await readFile(`${directory}/production.env`));
 } catch {
+  const host = process.env.DEPLOY_HOST || source.APP_HOST;
+  if (!host || !/^[a-zA-Z0-9.-]+$/.test(host))
+    throw new Error(
+      "Set DEPLOY_HOST or APP_HOST to the authorized deployment hostname.",
+    );
   const password = randomBytes(24).toString("hex");
   values = {
-    APP_HOST: process.env.DEPLOY_HOST || "16.4.25.181.sslip.io",
-    APP_URL: `https://${process.env.DEPLOY_HOST || "16.4.25.181.sslip.io"}`,
+    APP_HOST: host,
+    APP_URL: `https://${host}`,
     SESSION_SECRET: randomBytes(32).toString("hex"),
     DATABASE_URL: `postgresql://buyerguard:${password}@127.0.0.1:5432/buyerguard`,
     LOCAL_DATA_DIR: "/var/lib/buyerguard",

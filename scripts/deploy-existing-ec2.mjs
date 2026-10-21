@@ -7,8 +7,11 @@ import { resolve } from "node:path";
 const release = process.argv[2];
 if (!release || !/^[a-zA-Z0-9._-]+$/.test(release))
   throw new Error("Supply a unique release identifier.");
-const instanceHost = process.env.DEPLOY_SSH_HOST || "65.0.19.200";
-if (!/^[a-zA-Z0-9.-]+$/.test(instanceHost)) throw new Error("Invalid deployment hostname.");
+const instanceHost = process.env.DEPLOY_SSH_HOST;
+if (!instanceHost)
+  throw new Error("Set DEPLOY_SSH_HOST to the authorized instance hostname.");
+if (!/^[a-zA-Z0-9.-]+$/.test(instanceHost))
+  throw new Error("Invalid deployment hostname.");
 const connection = process.argv.slice(3);
 if (
   connection.length &&
