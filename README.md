@@ -1,129 +1,103 @@
-# DALE
+<p align="center">
+  <img src="docs/assets/readme/dale-editorial-cover.jpg" width="1200" alt="DALE — Conversation. Catalog. Control. An editorial still life in off-white, silver and black.">
+</p>
 
-A conversational shopping application built for the PayPal AI Hackathon. Explore a multi-category catalog with Gemini, compare products, and use the storefront's customer shopping workflows.
+<p align="center">
+  <strong>A conversational shopping agent.</strong><br>
+  Built for the PayPal AI Hackathon.
+</p>
 
-DALE is the product name; `buyerguard` remains the internal package name.
+<p align="center">
+  <a href="#capabilities">Capabilities</a> &nbsp; / &nbsp;
+  <a href="#system">System</a> &nbsp; / &nbsp;
+  <a href="#evaluation">Evaluation</a> &nbsp; / &nbsp;
+  <a href="#run-locally">Run locally</a> &nbsp; / &nbsp;
+  <a href="#technical-record">Technical record</a>
+</p>
 
-## Current state
+DALE connects natural Gemini conversation to a multi-category storefront. The agent can consult the catalog, compare recorded facts, navigate listings, open browser tabs and manage the customer's shopping session. Actions use the application's services and actual interface; conversation history and committed effects survive refreshes.
 
-The current chatbot combines natural Gemini conversation, durable session memory, and selective catalog retrieval. Gemini can look up published products, specifications, variants, recorded prices, and stock through three read-only functions. It chooses when to retrieve and writes its own answer.
+> “Open those two products in separate tabs. Add my choice to the cart, quantity two.”
 
-**Conversational website control is implemented and tested locally.** Gemini can request real navigation, separate browser tabs, search filters, component controls, cart/wishlist changes and existing customer workflows. Customer file selection, evidence submission, independent group commitments, checkout review and account changes use the actual customer interface and services. Durable native continuations and observed browser receipts connect these effects to the conversation. See the [verification ledger](docs/WEBSITE_CONTROL_STATUS.md) for measured gates and platform limits.
+## Capabilities
 
-| Area              | Current behavior                                                                                                                                          |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Conversation      | Gemini-generated replies; the selected model is configurable.                                                                                             |
-| Session memory    | Server-side conversation archive, history paging, New chat, and long-conversation summaries.                                                              |
-| Catalog knowledge | Product search, exact-record lookup, and category/brand/attribute discovery.                                                                              |
-| Retrieval         | Identity and text search plus the existing local BGE embedding index. Gemini generates answers; BGE supplies search embeddings.                           |
-| Storefront        | Multi-category browsing, product pages, filters, cart, wishlist, comparison, and customer commerce interfaces.                                            |
-| Commerce          | Backend services for customer identities, groups, payment approval, orders, evidence, and recovery. Each integration has its own validation requirements. |
-| Agent actions     | Owner-scoped website tools, durable pause/resume, replay protection, tab registration and observed browser receipts; qualification tracked separately.    |
+| Customer task               | What DALE provides                                                                                              |
+| :-------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| **Discover and compare**    | Catalog identity, specifications, variants, recorded offers and stock through selective retrieval.              |
+| **Control the storefront**  | Navigation, category controls, search filters, sorting, pagination and separate product tabs.                   |
+| **Manage a purchase**       | Cart, wishlist, quantity changes and checkout review through shared customer services.                          |
+| **Buy together**            | Persistent group participation across independent customers and browser sessions.                               |
+| **Continue a conversation** | Owned chat history, earlier-message paging, contextual follow-ups and New chat.                                 |
+| **Speak a request**         | Microphone input, local transcription and transcript review before sending.                                     |
+| **Follow an order**         | Existing customer order, cancellation, return and evidence interfaces; sensitive actions retain approval steps. |
 
-Manufacturer-linked product identities are separate from DALE's merchant offers. Recorded prices, stock, shipping, and fulfillment include sandbox/simulated data. This repository is not certification of a live commercial marketplace, complete physical-evidence verification, or universal compatibility coverage.
+<table>
+  <tr>
+    <td width="50%"><img src="docs/assets/readme/catalog-conversation.webp" alt="Actual local DALE interface: catalog-informed Gemini conversation beside the electronics department."></td>
+    <td width="50%"><img src="docs/assets/readme/website-actions.webp" alt="Actual local DALE interface: cart quantity two and observed browser-action receipts."></td>
+  </tr>
+  <tr>
+    <td><sub><strong>01 / Catalog conversation.</strong> Retained local acceptance capture.</sub></td>
+    <td><sub><strong>02 / Website actions.</strong> Retained local acceptance capture.</sub></td>
+  </tr>
+</table>
 
-### Response speed — 21 October 2026
+Manufacturer-linked product facts and DALE's merchant offers are separate. Prices and stock include sandbox data; shipping is simulated. The screenshots document their recorded checkpoints, not a fresh hosted deployment.
 
-Replies now stream as Gemini generates them. Compact task-time context and composed exact-listing navigation reduce avoidable model round trips; embedding requests can share work, and independent shoppers no longer share a single Gemini generation slot. Native calls still require complete validated frames, and existing ownership, confirmation and replay protections remain.
+## System
 
-Qualification covers **155 distinct targeted tests across recorded runs** and **29 distinct browser journeys**, including streaming, Stop, JSON fallback, expired sessions, actual product tabs and cart persistence. See the [speed qualification ledger](docs/AI_RESPONSE_SPEED_STATUS.md) for exact runs, experiments, failures and rollback switches.
+<img src="docs/assets/readme/dale-conversation-study.jpg" width="1200" alt="Conceptual study: three glass and graphite panels connected by a silver filament.">
 
-**Subsecond responses are not achieved.** Six live provider checks took approximately 14–19 seconds per generation. Lighter thinking and a direct Google SDK comparison did not improve these samples, so the existing model and `low` thinking setting were retained. Native batching was verified on this model and enabled in the private local configuration. The controlled streaming benchmark improves first-text delivery, not the provider's inference time.
+_Conversation → catalog context → application action. Conceptual artwork; not an interface capture._
 
-### Customer-control checkpoint before latency work — 21 October 2026
+The system is a Next.js modular monolith. Gemini chooses native functions and generates the response. Identity, lexical and BGE semantic retrieval supply catalog context. The agent executor validates operations, retains native continuation metadata and pauses for browser receipts or customer interaction when needed.
 
-The implemented customer-control checkpoint is `3507760`; its acceptance documentation is saved in `636fbe7`. Natural Gemini conversation, catalog retrieval, session memory and the existing visual design are preserved.
+<img src="docs/assets/readme/system-model.svg" width="1200" alt="System model: the customer browser connects to a durable agent loop and Gemini; catalog and customer functions share PostgreSQL persistence.">
 
-| Check                                                                                     | Recorded outcome                                                                                                                                         |
-| ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Targeted agent, customer-service, retrieval, memory, provider, ordering and restart tests | 108 passed across the qualified runs                                                                                                                     |
-| Customer browser journeys                                                                 | 25 distinct journeys qualified: 24 passed together, then the repaired homepage case and four affected journeys passed on the final build                 |
-| Voice                                                                                     | Browser microphone transport → local Whisper → transcript review → website action passed using owned synthetic speech; 10 speech HTTP checks also passed |
-| Live Gemini                                                                               | 3 tasks passed using the existing `gemini-3.5-flash-lite` configuration: exact listing, quantity/cart navigation and separate observed product tabs      |
-| Build and static checks                                                                   | Optimized application build, TypeScript and scoped lint passed                                                                                           |
-| Broader repository audit                                                                  | 579 passed, 19 failed, none skipped; see [regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md)                                                  |
+<img src="docs/assets/readme/action-lifecycle.svg" width="1200" alt="Action lifecycle: customer intent, resolved facts and state, validated execution with approval where required, then observed and persisted effects.">
 
-The pre-optimization live multistep tasks took approximately **41, 47 and 67 seconds**, including model, tool and browser round trips, while other local verification was running. These are historical acceptance samples, not latency percentiles or a matched comparison with the current build. Current changes and measured limits are recorded above and in the speed ledger.
+| Layer                    | Technology                                                          |
+| :----------------------- | :------------------------------------------------------------------ |
+| Application              | Next.js 16 · React 19 · TypeScript 6                                |
+| Generation and retrieval | Gemini native function calling · local BGE embeddings               |
+| Persistence              | PostgreSQL · PGlite for supported local previews                    |
+| Interface                | Motion · GSAP · React Three Fiber / Three.js                        |
+| Commerce and operations  | PayPal sandbox · Node worker · local/S3-compatible evidence storage |
+| Verification             | Vitest · Playwright · bounded live-provider checks                  |
 
-The local checkpoint has been pushed to `codex/conversational-shopping-checkpoint`. The hosted site has not been updated to this checkpoint. Physical microphone quality, a comprehensive device/accessibility/load matrix, external PayPal approval and whole-marketplace production readiness remain separate qualification gates.
+## Evaluation
 
-Current scope documentation:
+**Recorded local evidence, 21 October 2026.** Counts below describe different scopes and overlap; they are not a combined test total.
 
-- [Catalog RAG](docs/CATALOG_RAG.md): implemented read-only catalog knowledge and evidence.
-- [Session memory](docs/SESSION_MEMORY.md): persistence, pagination, summaries, and limits.
-- [Implementation plan](IMPLEMENTATION_PLAN.md): approved conversation-based control of the customer website, including multiple browser tabs.
-- [AI response speed plan](AI_RESPONSE_SPEED_IMPLEMENTATION_PLAN.md) and [qualification](docs/AI_RESPONSE_SPEED_STATUS.md): delivered optimizations, measured limits, tests and rollback.
-- [Website-control ledger](docs/WEBSITE_CONTROL_STATUS.md) and [coverage inventory](docs/website-control-coverage.json): actual progress and remaining acceptance gates.
-- [Archived catalog implementation plan](CATALOG_IMPLEMENTATION_PLAN_2026-10-11.md): preserved assortment-expansion handover.
-- [Original master plan](MASTER_PLAN.md): product goals and historical decisions.
-- [Original-plan implementation audit](docs/ORIGINAL_PLAN_IMPLEMENTATION_AUDIT_2026-10-15.md): feature boundaries and remaining qualification.
+| Evaluation scope                               | Recorded result                                                                    | Record                                                                                                                           |
+| :--------------------------------------------- | :--------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| Response-speed implementation                  | 155 distinct targeted contracts; 29 distinct browser journeys across recorded runs | [Qualification ledger](docs/AI_RESPONSE_SPEED_STATUS.md)                                                                         |
+| Full Flash camera regression                   | 2/2 live customer requests passed; 68 scoped contracts passed                      | [Agent acceptance report](docs/AGENT_REARCHITECTURE_REPORT.md#camera-phone-regression--21-october-2026-latest-camera-acceptance) |
+| Broader repository baseline, before speed work | 579 passed; **19 unresolved failures**                                             | [Regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md)                                                                   |
 
-Historical release notes and completion percentages elsewhere describe their named builds and scopes. They are not a current whole-project production-readiness claim. The hosted deployment may differ from the local checkout.
+<img src="docs/assets/readme/camera-correction.webp" width="1200" alt="Actual Gemini follow-up rejects the request for 100x optical smartphone zoom instead of substituting digital zoom or unrelated accessories.">
 
-## Architecture
+_03 / Contextual correction. The customer tightens the requirement to 100× optical zoom. The agent answers “None”; no unrelated product cards or cart changes appear._
 
-The application is a Next.js modular monolith with shared TypeScript domain services, PostgreSQL persistence, and an optional background worker. Local previews can use embedded PostgreSQL through PGlite.
+The two camera replies completed in **15.9 s and 15.2 s**. The one-second response target is unmet. Streaming reduces buffering, not provider inference time. Whole-marketplace production readiness, external PayPal approval, comprehensive device/accessibility coverage and physical microphone quality remain separate acceptance gates. Local qualification does not certify the hosted build.
 
-```text
-Browser / React
-    |
-    +-- Storefront controls --> Application services --> Database
-    |
-    +-- DALE conversation --> Session memory --> Gemini
-                                               |
-                                               +-- Catalog functions
-                                                        |
-                                                        +-- Published catalog
-                                                        +-- Local search embeddings
-                                               +-- Customer website functions
-                                                        +-- Durable execution / shared services
-                                                        +-- Registered browser tabs / rendered-page receipts
+<details>
+<summary><strong>Reproduce software contracts</strong></summary>
 
-Commerce services --> PayPal sandbox / evidence storage / recovery worker
+```sh
+npx vitest run tests/catalog-rag.test.ts tests/chat-memory.test.ts tests/chat-context-limits.test.ts tests/concierge-model.test.ts tests/concierge-semantic.test.ts tests/concierge-identity.test.ts
+npx playwright test --config playwright.chat-memory.config.ts
+npm run typecheck
+npm test
 ```
 
-The following diagrams document the broader product architecture and original commerce journeys; they do not mean every workflow is connected to the current chatbot.
+Browser fixtures test application behavior; real-provider checks test the configured model separately. Explicit live commands, prerequisites and evidence boundaries are recorded in the linked ledgers. Private acceptance receipts remain under ignored `.data/concierge-verification/`.
 
-![DALE system architecture](docs/assets/dale_system_architecture.png)
-![AI and multimodal architecture](docs/assets/dale_ai_multimodal.jpg)
-![Customer journey](docs/assets/dale_shopper_journey.png)
+</details>
 
-## Original product capabilities
+## Run locally
 
-The original seven capabilities remain the product's broader direction. Their presence in the codebase and historical scenario tests should be assessed separately from current live acceptance.
-
-| Capability       | Purpose                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------- |
-| AgentGuard       | Bind payment operations to server-owned items, amounts, currency, payee, and approval terms. |
-| BuyTogether      | Same-product group discounts with independent customer participation and checkout.           |
-| ScamPause        | Advisory analysis of voluntarily supplied messages and listing content.                      |
-| Buyer's Advocate | Help customers discover and compare products according to their preferences.                 |
-| ReturnShield     | Evidence collection, claim review, remedies, and case reporting.                             |
-| PartsMatch       | Supported device/accessory compatibility checks with recorded evidence.                      |
-| RescueMyOrder    | Customer-selected recovery for late or canceled orders and uncertain provider outcomes.      |
-
-Evidence integrity establishes which bytes were submitted; it does not prove the truth of a scene or automatically establish fraud. Compatibility, model quality, payment completion, and deployment each require their own evidence.
-
-![PayPal approval architecture](docs/assets/dale_paypal_agentguard.jpg)
-![Return evidence workflow](docs/assets/dale_returnshield_flow.jpg)
-
-## Technology
-
-| Layer              | Stack                                                          |
-| ------------------ | -------------------------------------------------------------- |
-| Application        | Next.js 16, React 19, TypeScript 6                             |
-| Data               | PostgreSQL; PGlite for supported local previews                |
-| AI conversation    | Configurable Gemini API adapter with native function calling   |
-| Retrieval          | Catalog identity/text matching and local BGE embeddings        |
-| UI                 | CSS, Motion, GSAP, React Three Fiber / Three.js                |
-| Payments           | PayPal sandbox integrations                                    |
-| Jobs and evidence  | Node worker; configurable local/S3-compatible evidence storage |
-| Testing            | Vitest, Playwright, and scoped evaluation scripts              |
-| Deployment support | Docker, Ubuntu EC2, Caddy, systemd                             |
-
-## Local development
-
-Use Node.js 22 or newer and npm. Provider credentials are optional for fixture-based application tests, but the real Gemini chatbot needs configured Gemini access.
+Node.js 22+ and npm. Start with [`.env.example`](.env.example); set the required session and operator values before running.
 
 ```sh
 git clone https://github.com/Hrushikesh-ramilla/DALE.git
@@ -133,9 +107,12 @@ cp .env.example .env
 npm run dev
 ```
 
-Configure the required session/operator settings described in [`.env.example`](.env.example). Open [localhost:3000](http://localhost:3000). Fixture commerce settings do not substitute scripted replies for a missing real chatbot provider.
+Open [localhost:3000](http://localhost:3000). Fixture commerce can run without payment credentials; the conversational agent needs configured Gemini access. Credentials and `.data/` stay outside version control.
 
-For the existing configured Gemini preview:
+<details>
+<summary><strong>Configured Gemini preview and retrieval</strong></summary>
+
+With the private provider settings and the existing local runtime prepared:
 
 ```sh
 node scripts/configure-concierge-local.mjs --provider=gemini
@@ -143,64 +120,28 @@ npm run build
 node scripts/start-concierge-local.mjs
 ```
 
-The local profile is stored in ignored `.data/concierge.env`. Gemini generation requires the configured key/model and explicit cloud/free-quota/disabled-billing settings. Never commit the profile or `.env`. The current launcher supervises the preview process; stop its launcher as well as its child before rebuilding.
-
-The existing embedding service can be started separately after its model/runtime setup:
+The ignored `.data/concierge.env` profile retains the selected model. Cloud access requires the existing free-quota and billing-disabled confirmations; configuration does not enable billing. Start prepared BGE embeddings in a separate terminal:
 
 ```sh
 node scripts/start-concierge-embeddings.mjs
 ```
 
-See [catalog RAG](docs/CATALOG_RAG.md) and the setup scripts for retrieval configuration. Keep one owner per embedded database directory; close the application before running a separate indexing/database process against the same directory. Never reset customer data to prepare a preview.
+See [catalog retrieval](docs/CATALOG_RAG.md) for configuration and [the implementation report](docs/AGENT_REARCHITECTURE_REPORT.md) for prerequisites. Keep one process owner per embedded database directory. Stop the preview launcher and its child before rebuilding or running separate database/index maintenance. Do not reset customer data.
 
-Docker Compose is also available:
+Docker Compose is available via `docker compose up --build`; use the matching environment configuration. EC2 scripts provide deployment support, not evidence of the current hosted version.
 
-```sh
-docker compose up --build
-```
+</details>
 
-Use deployment/environment configuration appropriate to the selected mode. Existing EC2 scripts are deployment support, not evidence that this checkout is currently deployed.
+## Technical record
 
-## Verification
+| Read                                                                                                                   | Contents                                                        |
+| :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------- |
+| [Implementation plan](IMPLEMENTATION_PLAN.md)                                                                          | Conversation-driven customer website control                    |
+| [Website-control ledger](docs/WEBSITE_CONTROL_STATUS.md)                                                               | Actual capabilities, browser evidence and platform limits       |
+| [Catalog RAG](docs/CATALOG_RAG.md) · [Session memory](docs/SESSION_MEMORY.md)                                          | Retrieval, persistence, context budgets and known limits        |
+| [Speed plan](AI_RESPONSE_SPEED_IMPLEMENTATION_PLAN.md) · [Results](docs/AI_RESPONSE_SPEED_STATUS.md)                   | Measurements, experiments and rollback controls                 |
+| [Original master plan](MASTER_PLAN.md) · [Implementation audit](docs/ORIGINAL_PLAN_IMPLEMENTATION_AUDIT_2026-10-15.md) | Original commerce goals, research provenance and remaining gaps |
 
-The latest catalog-RAG acceptance on 20 October 2026 passed **46 targeted tests**, **two packaged-production browser journeys**, TypeScript, scoped lint, and separate live Gemini checks. Those live checks included actual catalog lookups, product prices, a follow-up, and a camera-phone request. The semantic index refresh covered **4,510 published records**; that is an observed published count, not a promise about every historical or unpublished record.
+`src/app` contains pages and APIs; `src/server/concierge` contains the agent; `src/components/copilot` connects conversation to the browser. Domain contracts live in `src/domain`, catalog records in `catalog`, and reproducible checks in `tests`, `e2e` and `scripts`.
 
-```sh
-# Current conversation, retrieval, and provider contracts
-npx vitest run tests/catalog-rag.test.ts tests/chat-memory.test.ts tests/chat-context-limits.test.ts tests/concierge-model.test.ts tests/concierge-semantic.test.ts tests/concierge-identity.test.ts
-
-# Browser contracts against a prepared production artifact
-npx playwright test --config playwright.chat-memory.config.ts
-
-# Broader repository checks
-npm run typecheck
-npm test
-npm run lint
-```
-
-The last whole-repository audit, before the response-speed work, recorded **579 passed, 19 failed, and none skipped**. That repository-wide gate remains unresolved; targeted agent acceptance does not supersede it. See [regression triage](docs/WEBSITE_CONTROL_REGRESSION_TRIAGE.md) for the catalog/media/publication failures. The earlier **532 passed, 28 failed, and 11 skipped** result in [the historical checkpoint audit](docs/CHECKPOINT_2026-10-20.md) is the pre-implementation baseline. Neither old run is presented as a fresh whole-repository audit of the latency changes.
-
-Browser fixtures validate application behavior. Live-provider checks validate the configured model separately; neither alone establishes production readiness. Reproduce and inspect results against the checkout being assessed.
-
-Explicit bounded live checks are available when the configured free provider is usable:
-
-```sh
-npx tsx scripts/verify-catalog-rag-live.ts --live
-npx tsx scripts/verify-chat-memory-live.ts --live
-```
-
-They preserve the configured model and billing policy. Provider quota and availability still apply. Verification receipts under `.data/concierge-verification/` stay local and are not committed as customer data.
-
-## Repository map
-
-- `src/app/`: storefront pages and API routes.
-- `src/components/copilot/`: conversation UI, state, and existing browser-action bridge.
-- `src/server/concierge/`: Gemini adapter, catalog RAG, session memory, and shopping/action foundations.
-- `src/domain/`: product, category, compatibility, and commerce contracts.
-- `catalog/`: manifests, source/revision information, and media review data.
-- `public/images/`: published website assets.
-- `tests/`, `e2e/`: unit/contract and browser verification.
-- `scripts/`, `deploy/`: ingestion, verification, preview, and deployment support.
-- `docs/`: architecture, plans, audits, and historical acceptance records.
-
-Credentials, private databases, customer evidence, and temporary downloads belong outside version control.
+<p align="center"><sub>DALE · Conversational commerce · PayPal AI Hackathon · <a href="docs/assets/readme/README.md">Figure sources</a></sub></p>
