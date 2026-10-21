@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { Breadcrumbs } from "./breadcrumbs";
 import { ProductArt } from "./product-art";
+import { KineticCard } from "./kinetic-card";
 import { useStore } from "./store-context";
 import { useCopilot } from "./copilot/copilot-context";
 import { formatMoney } from "@/domain/money";
@@ -933,7 +934,7 @@ function WatchesCatalogContent() {
               const waterResistance = product.attributes?.waterResistanceM;
 
               return (
-                <article className="product-card watch-card" key={product.id} data-product-id={product.id}>
+                <KineticCard className="product-card watch-card" key={product.id} data-product-id={product.id}>
                   <div className="card-visual">
                     <Link
                       href={`/product/${product.id}`}
@@ -1014,7 +1015,7 @@ function WatchesCatalogContent() {
                       </div>
                     </div>
                   </div>
-                </article>
+                </KineticCard>
               );
             })}
           </div>

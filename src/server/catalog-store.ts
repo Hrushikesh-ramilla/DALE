@@ -6,6 +6,8 @@ import {
 } from "@/domain/departments";
 import { expandCatalogBrandAliases } from "@/domain/branded-shopping";
 import { getDatabase, type Sql } from "./database";
+import { getDrizzle, catalogProducts } from "./db";
+import { eq, inArray } from "drizzle-orm";
 import {
   catalogFilterHash,
   decodeCatalogCursor,
@@ -289,9 +291,34 @@ export async function getStoredProduct(
   sql?: Sql,
   purchasable = false,
 ): Promise<Product> {
-  const database = sql || (await getDatabase());
+  if (!sql) {
+    const drizzle = await getDrizzle();
+    const rows = await drizzle
+      .select({
+        record: catalogProducts.record,
+        publication: catalogProducts.publication,
+      })
+      .from(catalogProducts)
+      .where(eq(catalogProducts.id, id))
+      .limit(1);
+
+    const productRow = rows[0];
+    if (!productRow) throw new Error("Unknown product");
+    if (
+      purchasable &&
+      productRow.publication === "retired" &&
+      !productRow.record.comparisonOnly
+    ) {
+      throw new Error(
+        "This catalog offer has been retired. Review another published product.",
+      );
+    }
+    return productRow.record;
+  }
+
+  const database = sql;
   const result = await database.query<{ record: Product; publication: string }>(
-    `SELECT record,publication FROM catalog_products WHERE id=$1${sql ? " FOR SHARE" : ""}`,
+    `SELECT record,publication FROM catalog_products WHERE id=$1 FOR SHARE`,
     [id],
   );
   if (!result.rows[0]) throw new Error("Unknown product");
@@ -308,12 +335,14 @@ export async function getStoredProduct(
 
 export async function getStoredProducts(ids: string[]): Promise<Product[]> {
   if (!ids.length) return [];
-  const database = await getDatabase();
-  const rows = await database.query<{ record: Product }>(
-    "SELECT record FROM catalog_products WHERE id=ANY($1::text[])",
-    [Array.from(new Set(ids))],
-  );
-  return rows.rows.map((row) => row.record);
+  const drizzle = await getDrizzle();
+  const rows = await drizzle
+    .select({
+      record: catalogProducts.record,
+    })
+    .from(catalogProducts)
+    .where(inArray(catalogProducts.id, Array.from(new Set(ids))));
+  return rows.map((row) => row.record);
 }
 export async function browseCatalog(input: {
   category?: string;

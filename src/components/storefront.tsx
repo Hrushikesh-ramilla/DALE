@@ -54,6 +54,7 @@ import type { ScamResult } from "@/domain/scams";
 import type { Order, ReturnCase, StoredQuote } from "@/server/state";
 import type { snapshot } from "@/server/service";
 import { ProductArt } from "./product-art";
+import { KineticCard } from "./kinetic-card";
 import { PayPalCheckout } from "./paypal-checkout";
 import { Dialog } from "./dialog";
 import { BrandWordmark } from "./brand-wordmark";
@@ -1426,7 +1427,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                         {visibleProducts
                           .slice(0, visibleLimit)
                           .map((product, index) => (
-                            <article className="product-card" key={product.id}>
+                            <KineticCard className="product-card" key={product.id}>
                               <div className="card-visual">
                                 <Link
                                   href={`/product/${product.id}`}
@@ -1545,10 +1546,10 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                                   </button>
                                 </div>
                               </div>
-                            </article>
-                          ))}
-                      </div>
-                      {(visibleProducts.length > visibleLimit ||
+                            </KineticCard>
+                            ))}
+                        </div>
+                        {(visibleProducts.length > visibleLimit ||
                         (!session?.fixtureWorkspace &&
                           briefDirty &&
                           databaseCatalog.total > visibleProducts.length)) && (

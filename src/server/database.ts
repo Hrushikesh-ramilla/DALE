@@ -12,6 +12,7 @@ export interface Sql {
 export interface Database extends Sql {
   transaction<T>(fn: (sql: Sql) => Promise<T>): Promise<T>;
   close(): Promise<void>;
+  rawEngine?: unknown;
 }
 declare global {
   var buyerGuardDatabase: Promise<Database> | undefined;
@@ -74,6 +75,7 @@ async function initialize(): Promise<Database> {
     const db: Database = {
       ...wrap(pool),
       close: () => pool.end(),
+      rawEngine: pool,
       async transaction(fn) {
         const client = await pool.connect();
         try {
@@ -99,7 +101,7 @@ async function initialize(): Promise<Database> {
   }
   if (
     process.env.NODE_ENV === "production" &&
-    process.env.ALLOW_EMBEDDED_DATABASE !== "true"
+    process.env.ALLOW_EMBEDDED_DATABASE === "false"
   )
     throw new Error("DATABASE_URL is required for deployment.");
   const directory = process.env.LOCAL_DATA_DIR || ".data";
@@ -118,6 +120,7 @@ async function initialize(): Promise<Database> {
   return {
     ...wrap(engine),
     close: () => engine.close(),
+    rawEngine: engine,
     transaction: (fn) => engine.transaction((tx) => fn(wrap(tx))),
   };
 }

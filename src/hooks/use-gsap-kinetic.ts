@@ -20,6 +20,9 @@ export function useCardTilt<T extends HTMLElement>() {
     const el = cardRef.current;
     if (!el || !hasFinePointer() || prefersReducedMotion()) return;
 
+    el.style.transformStyle = "preserve-3d";
+    el.style.willChange = "transform";
+
     let bounds: DOMRect | null = null;
     const xTo = gsap.quickTo(el, "rotationY", { duration: 0.5, ease: "power2.out" });
     const yTo = gsap.quickTo(el, "rotationX", { duration: 0.5, ease: "power2.out" });
