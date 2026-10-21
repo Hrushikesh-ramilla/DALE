@@ -4,7 +4,7 @@ Implementation authorized 20 October 2026. Authority: `IMPLEMENTATION_PLAN.md`.
 
 ## Saved baseline
 
-Started at `bdfd877` on `codex/conversational-shopping-checkpoint`. Existing tracked changes were clean. Untracked catalog/download repair scratch files were preserved. No catalog records, assets, credentials, provider settings or databases were reset. Local Gemini provider and local embedding service remain configured as found.
+Started at `bdfd877`. Development is now consolidated on `main`. Existing tracked changes were clean. Untracked catalog/download repair scratch files were preserved. No catalog records, assets, credentials, provider settings or databases were reset. Local Gemini provider and local embedding service remain configured as found.
 
 The baseline regression audit is in `CHECKPOINT_2026-10-20.md`: 28 failures and 11 skips existed before this implementation. Catalog/media requirements require their own repair/disposition; they are not silently accepted or fixed by adding website tools.
 

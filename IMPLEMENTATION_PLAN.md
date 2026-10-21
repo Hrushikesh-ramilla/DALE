@@ -26,7 +26,7 @@ Read in order:
 4. [MASTER_PLAN](MASTER_PLAN.md): original customer-first capabilities and historical decisions.
 5. [Archived assortment implementation plan](CATALOG_IMPLEMENTATION_PLAN_2026-10-11.md) and [assortment specification](docs/ASSORTMENT_DEPTH_MASTER_PLAN.md): preserved catalog requirements, not claims of completed coverage.
 
-The application checkpoint is `e2fb7a2`, following Gemini/RAG/memory work through `6fc0069`. It was pushed before this plan revision to `codex/conversational-shopping-checkpoint` in the configured DALE repository. Reinspect the branch, remote, instructions, log, and working tree before implementation; other agents may have continued work.
+The application checkpoint is `e2fb7a2`, following Gemini/RAG/memory work through `6fc0069`. It was pushed before this plan revision to the configured DALE repository. Development is now consolidated on `main`. Reinspect the remote, instructions, log, and working tree before implementation; other agents may have continued work.
 
 Preserve customer/guest identities, conversations, orders, groups, quotes, approvals, payment/evidence records, product IDs, provider settings, and existing layouts. Use additive migrations. Do not reset databases, blanket reseed, automatically restore deleted categories, force-push, or overwrite unrelated work.
 
