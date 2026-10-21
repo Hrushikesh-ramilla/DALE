@@ -1,3 +1,19 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-canvas: #070707;
+  --color-surface: #111110;
+  --color-surface-soft: #1a1a18;
+  --color-surface-elevated: #20201f;
+  --color-line: #343432;
+  --color-line-soft: rgba(255, 255, 255, 0.08);
+  --color-ink: #f2f0eb;
+  --color-muted: #aaa8a3;
+  --color-accent: #d9ad63;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+}
+
 :root {
   --ink: #f2f0eb;
   --muted: #aaa8a3;

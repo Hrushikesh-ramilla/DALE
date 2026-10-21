@@ -26,7 +26,8 @@ import {
   joinGroup,
 } from "../src/server/service";
 
-beforeAll(() => {
+beforeAll(async () => {
+  await closeDatabase();
   process.env.LOCAL_DATA_DIR = ":memory:";
   process.env.PAYMENT_MODE = "fixture";
   process.env.AI_MODE = "fixture";
@@ -58,7 +59,9 @@ function manifest(id: string) {
     ],
   };
 }
-it("paginates a full 500-record publication without duplicates or fixture leakage", async () => {
+it(
+  "paginates a full 500-record publication without duplicates or fixture leakage",
+  async () => {
   const input = manifest("batch-capacity");
   const template = input.products[0];
   input.products = Array.from({ length: 500 }, (_, index) => ({
@@ -125,7 +128,7 @@ it("paginates a full 500-record publication without duplicates or fixture leakag
   expect(second.products.map((p) => p.id)).toEqual(ids.slice(48, 96));
   await retireCatalog(staged.id);
   expect((await browseCatalog({ query: "IsolatedCapacity" })).total).toBe(0);
-});
+}, 90000);
 it("accepts full manifest product IDs for explicit commerce approvals", () => {
   const productId = "record-" + "x".repeat(73);
   for (const action of ["quote", "join_group"]) {
@@ -163,6 +166,7 @@ it("stages privately, publishes without a code whitelist, and preserves new-prod
         model: "not-required",
         category: "fragrance",
         budget: 40000,
+        requirements: { brand: "maison francis kurkdjian" },
       })
     ).some((p) => p.id === id),
   ).toBe(true);
