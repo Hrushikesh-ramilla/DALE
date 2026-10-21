@@ -6,57 +6,54 @@ const config: NextConfig = {
   poweredByHeader: false,
   agentRules: false,
   images: {
-    maximumRedirects: 0,
-    maximumResponseBody: 5_000_000,
+    formats: ["image/avif", "image/webp"],
+    maximumRedirects: 2,
+    maximumResponseBody: 10_000_000,
     dangerouslyAllowLocalIP: false,
-    minimumCacheTTL: 86400,
-    maximumDiskCacheSize: 256 * 1024 * 1024,
+    minimumCacheTTL: 31536000,
+    maximumDiskCacheSize: 512 * 1024 * 1024,
+    deviceSizes: [360, 640, 750, 1080],
+    imageSizes: [64, 128, 256, 384, 512, 600],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.shopify.com",
-        pathname: "/s/files/1/0555/6279/7250/**",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+      {
+        protocol: "https",
+        hostname: "thumb.wikimedia.org",
       },
       {
         protocol: "https",
         hostname: "cdn.shopify.com",
-        pathname: "/s/files/1/0823/5099/7796/**",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.shopify.com",
-        pathname: "/s/files/1/0607/4816/9444/**",
       },
       {
         protocol: "https",
         hostname: "www.franciskurkdjian.com",
-        pathname:
-          "/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/**",
       },
       {
         protocol: "https",
         hostname: "assets2.oakley.com",
-        pathname: "/prod-onecp-record-files/**",
       },
       {
         protocol: "https",
         hostname: "images2.ray-ban.com",
-        pathname: "//prod-onecp-record-files/**",
       },
       {
         protocol: "https",
         hostname: "www.tissotwatches.com",
-        pathname: "/on/demandware.static/**",
       },
       {
         protocol: "https",
         hostname: "media.rolex.com",
-        pathname: "/image/upload/**",
       },
       {
         protocol: "https",
         hostname: "cdsassets.apple.com",
-        pathname: "/live/**",
       },
     ],
   },

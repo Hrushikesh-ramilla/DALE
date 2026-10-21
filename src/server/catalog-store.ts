@@ -54,6 +54,92 @@ export async function catalogSummary() {
   };
 }
 
+export interface DepartmentLeafPreview {
+  leafType: string;
+  count: number;
+  minPrice: number;
+  brands: string[];
+  heroProduct: Product;
+}
+
+export async function getDepartmentPreviews(
+  leafs: string[],
+): Promise<Record<string, DepartmentLeafPreview>> {
+  if (!leafs.length) return {};
+  const database = await getDatabase();
+  const res = await database.query<{
+    leaf_type: string;
+    count: string;
+    min_price: number;
+    brands: string[];
+    record: Product;
+  }>(
+    `SELECT
+      leaf_type,
+      count(*)::text as count,
+      min(price) as min_price,
+      array_agg(DISTINCT brand ORDER BY brand) as brands,
+      (array_agg(record ORDER BY price DESC))[1] as record
+    FROM catalog_products
+    WHERE publication='published' AND leaf_type = ANY($1::text[])
+    GROUP BY leaf_type`,
+    [leafs],
+  );
+
+  const previews: Record<string, DepartmentLeafPreview> = {};
+  for (const row of res.rows) {
+    previews[row.leaf_type] = {
+      leafType: row.leaf_type,
+      count: Number(row.count),
+      minPrice: Number(row.min_price),
+      brands: (row.brands || []).filter(Boolean),
+      heroProduct: row.record,
+    };
+  }
+  return previews;
+}
+
+export interface CategoryBrandSummary {
+  name: string;
+  count: number;
+  minPrice: number;
+  heroImage?: string;
+  sampleProduct?: Product;
+}
+
+export async function getCategoryBrandsSummary(
+  leaf: string,
+): Promise<CategoryBrandSummary[]> {
+  const database = await getDatabase();
+  const res = await database.query<{
+    brand: string;
+    count: string;
+    min_price: number;
+    hero_img: string;
+    record: Product;
+  }>(
+    `SELECT
+      coalesce(brand, record->>'brand', 'Unknown') as brand,
+      count(*)::text as count,
+      min(price) as min_price,
+      (array_agg(record->'media'->>'url' ORDER BY price DESC))[1] as hero_img,
+      (array_agg(record ORDER BY price DESC))[1] as record
+    FROM catalog_products
+    WHERE publication='published' AND (leaf_type = $1 OR category = $1)
+    GROUP BY coalesce(brand, record->>'brand', 'Unknown')
+    ORDER BY count(*) DESC, brand ASC`,
+    [leaf],
+  );
+
+  return res.rows.map((row) => ({
+    name: row.brand,
+    count: Number(row.count),
+    minPrice: Number(row.min_price),
+    heroImage: row.hero_img || undefined,
+    sampleProduct: row.record,
+  }));
+}
+
 export async function getStoredProduct(
   id: string,
   sql?: Sql,
@@ -134,6 +220,23 @@ export async function browseCatalog(input: {
   const leafCounts = await database.query<{ leaf_type: string; count: string }>(
     "SELECT leaf_type,count(*) FROM catalog_products WHERE publication='published' AND leaf_type IS NOT NULL GROUP BY leaf_type ORDER BY leaf_type",
   );
+  const brandList = await database.query<{
+    brand: string;
+    count: string;
+    min_price: number;
+    hero_img: string;
+  }>(
+    `SELECT
+      coalesce(brand, record->>'brand', 'Unknown') as brand,
+      count(*)::text as count,
+      min(price) as min_price,
+      (array_agg(record->'media'->>'url' ORDER BY price DESC))[1] as hero_img
+    FROM catalog_products
+    WHERE publication='published' AND ($1='' OR leaf_type=$1 OR category=$1)
+    GROUP BY coalesce(brand, record->>'brand', 'Unknown')
+    ORDER BY count(*) DESC, brand ASC`,
+    [input.leafType || input.category || ""],
+  );
   const products = rows.rows.slice(0, 48).map((row) => row.record);
   const last = products.at(-1);
   return {
@@ -145,6 +248,13 @@ export async function browseCatalog(input: {
     total: Number(total.rows[0].count),
     page: input.page || 1,
     pageSize: 48,
+    categoryBrands: brandList.rows.map((r) => ({
+      name: r.brand,
+      count: Number(r.count),
+      minPrice: Number(r.min_price),
+      heroImage: r.hero_img || undefined,
+    })),
+    availableBrands: brandList.rows.map((r) => r.brand),
     departments: departments.filter((d) =>
       d.categories.some((c) =>
         counts.rows.some((row) => row.category === c && Number(row.count) > 0),

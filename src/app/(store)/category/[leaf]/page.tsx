@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { isLeafTypeKey, leafTitles } from "@/domain/departments";
 import { CategoryCatalogView } from "@/components/category-catalog-view";
 import { WatchesCatalogView } from "@/components/watches-catalog-view";
+import { getCategoryBrandsSummary } from "@/server/catalog-store";
 
 export async function generateMetadata({
   params,
@@ -37,5 +38,6 @@ export default async function CategoryPage({
     return <WatchesCatalogView />;
   }
 
-  return <CategoryCatalogView leaf={leaf} />;
+  const initialBrands = await getCategoryBrandsSummary(leaf);
+  return <CategoryCatalogView leaf={leaf} initialBrands={initialBrands} />;
 }

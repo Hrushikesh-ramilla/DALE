@@ -439,7 +439,7 @@
       "brandFloor": 10,
       "modelsPerBrandTarget": { "min": 10, "max": 15 },
       "targetPlacements": { "min": 100, "max": 150 },
-      "priorityBrands": ["Oakley", "Ray-Ban", "Persol", "Maui Jim", "Oliver Peoples", "Jacques Marie Mage", "DITA", "Cutler and Gross", "MOSCOT", "MYKITA"],
+      "priorityBrands": ["Ray-Ban", "Persol", "Oliver Peoples", "DITA", "Cartier", "Celine", "Chanel", "Dior", "Gucci", "Prada", "Saint Laurent", "Tom Ford", "Versace", "Balenciaga"],
       "distinctFamilyPolicy": "Distinct frame silhouette and optical architecture (e.g., Wayfarer Classic, Holbrook, 649 Original). Lens tints and polarized coatings are variants.",
       "keyAttributes": ["frameShape", "frameMaterial", "lensWidthMm", "bridgeMm", "templeMm", "polarization", "uvProtection"]
     },
@@ -491,7 +491,7 @@
       "brandFloor": 10,
       "modelsPerBrandTarget": { "min": 10, "max": 15 },
       "targetPlacements": { "min": 100, "max": 150 },
-      "priorityBrands": ["Loro Piana", "Gucci", "Tod's", "John Lobb", "Berluti", "Brunello Cucinelli", "Ferragamo", "Church's", "Prada", "Hermès"],
+      "priorityBrands": ["Berluti", "Brunello Cucinelli", "Christian Louboutin", "Church's", "Ferragamo", "Gucci", "Hermès", "John Lobb", "Loro Piana", "Louis Vuitton", "Prada", "Saint Laurent", "Santoni", "Tod's"],
       "distinctFamilyPolicy": "Distinct last, strap/bit design and sole construction (e.g., Summer Walk, Horsebit 1953, Gommino). Shoe sizes and widths are variants.",
       "keyAttributes": ["upperMaterial", "soleConstruction", "hardwareType", "lining", "originCountry"]
     },
@@ -504,7 +504,7 @@
       "brandFloor": 10,
       "modelsPerBrandTarget": { "min": 10, "max": 15 },
       "targetPlacements": { "min": 100, "max": 150 },
-      "priorityBrands": ["John Lobb", "Berluti", "Church's", "Edward Green", "Crockett & Jones", "Ferragamo", "Santoni", "Prada", "Tom Ford", "Brioni"],
+      "priorityBrands": ["Berluti", "Christian Louboutin", "Church's", "Dior Men", "Ferragamo", "Gucci", "John Lobb", "Louis Vuitton", "Prada", "Saint Laurent", "Santoni", "Tom Ford"],
       "distinctFamilyPolicy": "Distinct last, brogueing/cap-toe pattern and welting architecture (e.g., City II, Consul, Shannon). Sizes are variants.",
       "keyAttributes": ["weltType", "lastNumber", "upperLeather", "soleMaterial", "closure"]
     },
@@ -517,7 +517,7 @@
       "brandFloor": 10,
       "modelsPerBrandTarget": { "min": 10, "max": 15 },
       "targetPlacements": { "min": 100, "max": 150 },
-      "priorityBrands": ["Nike", "Adidas", "ASICS", "HOKA", "On", "Brooks", "Saucony", "New Balance", "Mizuno", "Puma"],
+      "priorityBrands": ["Nike", "Adidas", "ASICS", "HOKA", "On Running", "Saucony", "New Balance", "Puma", "Balenciaga", "Dior"],
       "distinctFamilyPolicy": "Distinct midsole foam generation, carbon plate and chassis model (e.g., Vaporfly 3, Gel-Kayano 31, Clifton 9). Sizes and colors are variants.",
       "keyAttributes": ["cushioningTechnology", "stackHeightMm", "heelDropMm", "weightGrams", "pronationSupport"]
     },
@@ -530,7 +530,7 @@
       "brandFloor": 10,
       "modelsPerBrandTarget": { "min": 10, "max": 15 },
       "targetPlacements": { "min": 100, "max": 150 },
-      "priorityBrands": ["Golden Goose", "Common Projects", "Alexander McQueen", "Balenciaga", "Gucci", "Prada", "Saint Laurent", "Dior", "Maison Margiela", "New Balance"],
+      "priorityBrands": ["Alexander McQueen", "Balenciaga", "Berluti", "Brunello Cucinelli", "Chanel", "Dior", "Golden Goose", "Gucci", "Loro Piana", "Louis Vuitton", "Prada", "Saint Laurent", "Tod's", "Tom Ford"],
       "distinctFamilyPolicy": "Distinct sneaker silhouette and cupsole design (e.g., Original Achilles Low, Super-Star, Replica). Sizes are variants.",
       "keyAttributes": ["upperLeather", "soleType", "closure", "originCountry", "distressedFinish"]
     },
@@ -543,7 +543,7 @@
       "brandFloor": 10,
       "modelsPerBrandTarget": { "min": 10, "max": 15 },
       "targetPlacements": { "min": 100, "max": 150 },
-      "priorityBrands": ["Saint Laurent", "R.M. Williams", "Church's", "Red Wing", "Gucci", "Prada", "Tod's", "Bottega Veneta", "Berluti", "John Lobb"],
+      "priorityBrands": ["Balenciaga", "Berluti", "Bottega Veneta", "Christian Louboutin", "Church's", "Gucci", "John Lobb", "Louis Vuitton", "Prada", "R.M. Williams", "Saint Laurent", "Tod's"],
       "distinctFamilyPolicy": "Distinct boot shaft, welt and last model (e.g., Wyatt Harness, Craftsman, Iron Ranger). Sizes are variants.",
       "keyAttributes": ["bootStyle", "shaftHeightCm", "weltType", "soleMaterial", "closure"]
     },

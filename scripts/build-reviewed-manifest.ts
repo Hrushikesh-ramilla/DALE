@@ -93,6 +93,9 @@ function estimateSandboxPrice(leafKey: string, brand: string, modelName: string,
       return 7999;
 
     case "speakers":
+      if (brandLower === "mcintosh") return 450000;
+      if (brandLower === "devialet") return 285000;
+      if (brandLower === "naim") return 165000;
       if (modelLower.includes("beosound 2") || modelLower.includes("ls50")) return 189900;
       if (modelLower.includes("beosound level") || modelLower.includes("beolit") || modelLower.includes("zeppelin") || modelLower.includes("formation wedge") || modelLower.includes("lsx ii")) return 79900;
       if (modelLower.includes("authentics 500") || modelLower.includes("partybox") || modelLower.includes("era 300") || modelLower.includes("five") || modelLower.includes("soundsticks 4") || modelLower.includes("woburn")) return 44990;
@@ -202,83 +205,87 @@ function estimateSandboxPrice(leafKey: string, brand: string, modelName: string,
 
     // Clothing (Luxury & Savile Row / High Craft)
     case "shirts":
-      if (brandLower === "charvet" || brandLower === "brioni" || brandLower === "loro piana" || brandLower === "brunello cucinelli") return 74900;
-      if (brandLower === "tom ford" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "dior" || brandLower === "armani") return 49900;
-      if (brandLower === "zegna" || brandLower === "canali" || brandLower === "turnbull & asser" || brandLower === "emma willis") return 36900;
+      if (brandLower === "charvet" || brandLower === "brioni" || brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "louis vuitton") return 74900;
+      if (brandLower === "tom ford" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "dior" || brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "gucci" || brandLower === "fendi" || brandLower === "dolce & gabbana") return 49900;
+      if (brandLower === "zegna" || brandLower === "canali" || brandLower === "turnbull & asser" || brandLower === "emma willis" || brandLower === "burberry" || brandLower === "ralph lauren") return 36900;
       return 18900;
 
     case "t-shirts":
-      if (brandLower === "loro piana" || brandLower === "brunello cucinelli") return 48900;
-      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "dior" || brandLower === "tom ford") return 34900;
-      if (brandLower === "armani" || brandLower === "zegna" || brandLower === "burberry") return 24900;
+      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "louis vuitton") return 48900;
+      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "dior" || brandLower === "tom ford" || brandLower === "balenciaga" || brandLower === "bottega veneta" || brandLower === "fendi" || brandLower === "celine" || brandLower === "gucci" || brandLower === "versace") return 34900;
+      if (brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "zegna" || brandLower === "burberry" || brandLower === "dolce & gabbana" || brandLower === "givenchy" || brandLower === "ralph lauren") return 24900;
       return 11900;
 
     case "knitwear":
-      if (brandLower === "loro piana" || brandLower === "brunello cucinelli") return 169900;
-      if (brandLower === "tom ford" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "dior") return 98900;
-      if (brandLower === "zegna" || brandLower === "john smedley" || brandLower === "armani" || brandLower === "canali") return 54900;
+      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "chanel" || brandLower === "hermès" || brandLower === "hermes") return 169900;
+      if (brandLower === "tom ford" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "dior" || brandLower === "louis vuitton" || brandLower === "fendi" || brandLower === "celine" || brandLower === "gucci") return 98900;
+      if (brandLower === "zegna" || brandLower === "john smedley" || brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "canali" || brandLower === "burberry" || brandLower === "ralph lauren") return 54900;
       return 29900;
 
     case "trousers":
-      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "brioni") return 89900;
-      if (brandLower === "tom ford" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "armani") return 58900;
-      if (brandLower === "zegna" || brandLower === "canali" || brandLower === "rota") return 39900;
+      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "brioni" || brandLower === "louis vuitton") return 89900;
+      if (brandLower === "tom ford" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "bottega veneta" || brandLower === "dior men" || brandLower === "dior" || brandLower === "fendi") return 58900;
+      if (brandLower === "zegna" || brandLower === "canali" || brandLower === "rota" || brandLower === "gucci" || brandLower === "dolce & gabbana" || brandLower === "burberry" || brandLower === "ralph lauren") return 39900;
       return 21900;
 
     case "denim":
-      if (brandLower === "saint laurent" || brandLower === "tom ford" || brandLower === "brunello cucinelli") return 64900;
-      if (brandLower === "prada" || brandLower === "dior" || brandLower === "armani" || brandLower === "jacob cohen") return 42900;
+      if (brandLower === "louis vuitton" || brandLower === "balenciaga" || brandLower === "bottega veneta") return 89900;
+      if (brandLower === "saint laurent" || brandLower === "tom ford" || brandLower === "brunello cucinelli" || brandLower === "celine") return 64900;
+      if (brandLower === "prada" || brandLower === "dior" || brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "jacob cohen" || brandLower === "dolce & gabbana" || brandLower === "valentino" || brandLower === "gucci") return 42900;
+      if (brandLower === "burberry" || brandLower === "ralph lauren") return 32900;
       return 22900;
 
     case "dresses":
-      if (brandLower === "dior" || brandLower === "valentino" || brandLower === "chanel") return 329000;
-      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "tom ford" || brandLower === "armani") return 195000;
+      if (brandLower === "dior" || brandLower === "valentino" || brandLower === "chanel" || brandLower === "louis vuitton" || brandLower === "alexander mcqueen") return 329000;
+      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "tom ford" || brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "fendi" || brandLower === "dolce & gabbana" || brandLower === "balenciaga" || brandLower === "gucci" || brandLower === "versace" || brandLower === "givenchy") return 195000;
+      if (brandLower === "burberry" || brandLower === "ralph lauren") return 125000;
       return 89000;
 
     case "suits":
-      if (brandLower === "brioni" || brandLower === "loro piana" || brandLower === "tom ford" || brandLower === "cesare attolini") return 449000;
-      if (brandLower === "zegna" || brandLower === "canali" || brandLower === "armani" || brandLower === "saint laurent") return 275000;
+      if (brandLower === "brioni" || brandLower === "loro piana" || brandLower === "tom ford" || brandLower === "cesare attolini" || brandLower === "louis vuitton") return 449000;
+      if (brandLower === "zegna" || brandLower === "canali" || brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "dior men" || brandLower === "dior" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "gucci" || brandLower === "fendi" || brandLower === "balenciaga" || brandLower === "dolce & gabbana" || brandLower === "ralph lauren") return 275000;
       return 145000;
 
     case "jackets":
-      if (brandLower === "brioni" || brandLower === "loro piana" || brandLower === "brunello cucinelli") return 289000;
-      if (brandLower === "tom ford" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "armani") return 185000;
+      if (brandLower === "brioni" || brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "bottega veneta" || brandLower === "louis vuitton") return 289000;
+      if (brandLower === "tom ford" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "dior men" || brandLower === "dior" || brandLower === "moncler" || brandLower === "balenciaga" || brandLower === "dolce & gabbana" || brandLower === "gucci" || brandLower === "burberry" || brandLower === "ralph lauren") return 185000;
       return 89000;
 
     case "coats":
-      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "brioni") return 389000;
-      if (brandLower === "burberry" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "tom ford") return 245000;
+      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "brioni" || brandLower === "louis vuitton" || brandLower === "bottega veneta") return 389000;
+      if (brandLower === "burberry" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "tom ford" || brandLower === "moncler" || brandLower === "celine" || brandLower === "fendi" || brandLower === "max mara" || brandLower === "dior men" || brandLower === "dior" || brandLower === "armani" || brandLower === "giorgio armani" || brandLower === "ralph lauren") return 245000;
       return 119000;
 
     // Footwear
     case "loafers":
-      if (brandLower === "john lobb" || brandLower === "berluti" || brandLower === "edward green") return 189000;
-      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "crockett & jones") return 98900;
-      if (brandLower === "tod's" || brandLower === "santoni" || brandLower === "ferragamo" || brandLower === "gucci") return 69900;
+      if (brandLower === "john lobb" || brandLower === "berluti" || brandLower === "edward green" || brandLower === "hermès" || brandLower === "hermes") return 189000;
+      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "crockett & jones" || brandLower === "louis vuitton" || brandLower === "prada" || brandLower === "christian louboutin") return 98900;
+      if (brandLower === "tod's" || brandLower === "santoni" || brandLower === "ferragamo" || brandLower === "gucci" || brandLower === "saint laurent" || brandLower === "church's") return 69900;
       return 39900;
 
     case "formal-shoes":
-      if (brandLower === "john lobb" || brandLower === "edward green" || brandLower === "gaziano & girling") return 195000;
-      if (brandLower === "crockett & jones" || brandLower === "church's" || brandLower === "alden") return 89900;
-      if (brandLower === "santoni" || brandLower === "ferragamo") return 64900;
+      if (brandLower === "john lobb" || brandLower === "berluti" || brandLower === "edward green" || brandLower === "gaziano & girling" || brandLower === "tom ford") return 195000;
+      if (brandLower === "crockett & jones" || brandLower === "church's" || brandLower === "alden" || brandLower === "christian louboutin" || brandLower === "louis vuitton") return 98900;
+      if (brandLower === "santoni" || brandLower === "ferragamo" || brandLower === "prada" || brandLower === "gucci" || brandLower === "dior men" || brandLower === "dior" || brandLower === "saint laurent") return 69900;
       return 39900;
 
     case "running-shoes":
+      if (brandLower === "balenciaga" || brandLower === "dior" || modelLower.includes("loewe")) return 74900;
       if (modelLower.includes("alphafly") || modelLower.includes("vaporfly") || modelLower.includes("metaspeed") || modelLower.includes("adizero adios pro")) return 24999;
-      if (modelLower.includes("cloudmonster") || modelLower.includes("invincible") || modelLower.includes("kayano") || modelLower.includes("clifton") || modelLower.includes("endorphin pro")) return 17999;
-      if (modelLower.includes("pegasus") || modelLower.includes("ghost") || modelLower.includes("cloudsurfer") || modelLower.includes("novablast")) return 13999;
+      if (modelLower.includes("cloudmonster") || modelLower.includes("invincible") || modelLower.includes("kayano") || modelLower.includes("clifton") || modelLower.includes("endorphin pro") || modelLower.includes("cloudboom")) return 17999;
+      if (modelLower.includes("pegasus") || modelLower.includes("ghost") || modelLower.includes("cloudsurfer") || modelLower.includes("novablast") || modelLower.includes("deviate")) return 13999;
       return 9999;
 
     case "lifestyle-sneakers":
-      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "berluti") return 89900;
-      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "gucci" || brandLower === "golden goose" || brandLower === "tom ford") return 59900;
+      if (brandLower === "loro piana" || brandLower === "brunello cucinelli" || brandLower === "berluti" || brandLower === "chanel" || brandLower === "louis vuitton") return 98900;
+      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "gucci" || brandLower === "golden goose" || brandLower === "tom ford" || brandLower === "balenciaga" || brandLower === "dior" || brandLower === "alexander mcqueen") return 68900;
       if (brandLower === "common projects" || brandLower === "tod's" || brandLower === "santoni") return 38900;
       return 18900;
 
     case "boots":
-      if (brandLower === "john lobb" || brandLower === "edward green" || brandLower === "berluti") return 215000;
-      if (brandLower === "crockett & jones" || brandLower === "alden" || brandLower === "church's") return 98900;
-      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "tod's" || brandLower === "rm williams") return 74900;
+      if (brandLower === "john lobb" || brandLower === "edward green" || brandLower === "berluti" || brandLower === "louis vuitton") return 215000;
+      if (brandLower === "crockett & jones" || brandLower === "alden" || brandLower === "church's" || brandLower === "bottega veneta" || brandLower === "christian louboutin") return 115000;
+      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "tod's" || brandLower === "rm williams" || brandLower === "r.m. williams" || brandLower === "balenciaga" || brandLower === "gucci") return 74900;
       return 42900;
 
     // Lifestyle / Accessories
@@ -291,90 +298,119 @@ function estimateSandboxPrice(leafKey: string, brand: string, modelName: string,
       return 145000;
 
     case "sunglasses":
+      if (brandLower === "cartier") return 125000;
       if (brandLower === "jacques marie mage" || brandLower === "matsuda" || brandLower === "dita") return 79900;
-      if (brandLower === "cutler and gross" || brandLower === "mykita" || brandLower === "oliver peoples") return 42900;
-      if (brandLower === "moscot" || brandLower === "persol" || brandLower === "maui jim" || brandLower === "saint laurent" || brandLower === "gucci" || brandLower === "prada") return 28900;
+      if (brandLower === "chanel" || brandLower === "celine" || brandLower === "balenciaga" || brandLower === "dior") return 49900;
+      if (brandLower === "cutler and gross" || brandLower === "mykita" || brandLower === "oliver peoples" || brandLower === "tom ford") return 42900;
+      if (brandLower === "moscot" || brandLower === "persol" || brandLower === "maui jim" || brandLower === "saint laurent" || brandLower === "gucci" || brandLower === "prada" || brandLower === "versace") return 28900;
       if (brandLower === "ray-ban" || brandLower === "oakley") return 14900;
       return 18900;
 
     case "handbags":
-      if (brandLower === "hermès" || brandLower === "chanel") return 590000;
-      if (brandLower === "dior" || brandLower === "louis vuitton" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "bottega veneta" || brandLower === "gucci") return 265000;
-      if (brandLower === "loewe" || brandLower === "celine" || brandLower === "ferragamo" || brandLower === "burberry") return 185000;
+      if (brandLower === "hermès" || brandLower === "chanel" || brandLower === "goyard") return 590000;
+      if (brandLower === "dior" || brandLower === "louis vuitton" || brandLower === "saint laurent" || brandLower === "prada" || brandLower === "bottega veneta" || brandLower === "gucci" || brandLower === "fendi") return 265000;
+      if (brandLower === "loewe" || brandLower === "celine" || brandLower === "ferragamo" || brandLower === "burberry" || brandLower === "valentino" || brandLower === "balenciaga") return 185000;
       return 95000;
 
     case "backpacks":
-      if (brandLower === "louis vuitton" || brandLower === "prada" || brandLower === "saint laurent" || brandLower === "bottega veneta") return 195000;
-      if (brandLower === "tumi" || brandLower === "rimowa" || brandLower === "montblanc") return 68900;
+      if (brandLower === "goyard" || brandLower === "chanel" || brandLower === "dior") return 285000;
+      if (brandLower === "louis vuitton" || brandLower === "prada" || brandLower === "saint laurent" || brandLower === "bottega veneta" || brandLower === "fendi" || brandLower === "balenciaga") return 195000;
+      if (brandLower === "tumi" || brandLower === "rimowa" || brandLower === "montblanc" || brandLower === "gucci") return 68900;
       return 32900;
 
     case "wallets":
-      if (brandLower === "hermès" || brandLower === "chanel" || brandLower === "louis vuitton" || brandLower === "bottega veneta" || brandLower === "saint laurent" || brandLower === "prada") return 54900;
+      if (brandLower === "hermès" || brandLower === "chanel" || brandLower === "louis vuitton" || brandLower === "bottega veneta" || brandLower === "goyard") return 58900;
+      if (brandLower === "saint laurent" || brandLower === "prada" || brandLower === "dior" || brandLower === "fendi" || brandLower === "gucci") return 44900;
       if (brandLower === "ferragamo" || brandLower === "burberry" || brandLower === "tom ford" || brandLower === "valextra" || brandLower === "montblanc") return 36900;
       return 19900;
 
     case "fragrance":
       if (brandLower === "roja parfums" || brandLower === "clive christian" || brandLower === "amouage") return 38500;
-      if (brandLower === "creed" || brandLower === "parfums de marly" || brandLower === "initio" || brandLower === "maison francis kurkdjian" || brandLower === "kilian") return 29500;
-      if (brandLower === "tom ford" || brandLower === "frederic malle" || brandLower === "le labo" || brandLower === "byredo" || brandLower === "diptyque" || brandLower === "penhaligon's") return 22500;
-      if (brandLower === "chanel" || brandLower === "dior" || brandLower === "hermès" || brandLower === "serge lutens" || brandLower === "maison margiela") return 16500;
+      if (brandLower === "creed" || brandLower === "parfums de marly" || brandLower === "initio" || brandLower === "initio parfums privés" || brandLower === "maison francis kurkdjian" || brandLower === "kilian" || brandLower === "kilian paris") return 29500;
+      if (brandLower === "tom ford" || brandLower === "frederic malle" || brandLower === "guerlain") return 22500;
+      if (brandLower === "chanel" || brandLower === "dior" || brandLower === "hermès" || brandLower === "serge lutens" || brandLower === "maison margiela" || brandLower === "yves saint laurent" || brandLower === "ysl" || brandLower === "giorgio armani") return 16500;
+      if (brandLower === "jean paul gaultier" || brandLower === "jpg" || brandLower === "paco rabanne" || brandLower === "rabanne" || brandLower === "prada" || brandLower === "valentino" || brandLower === "dolce & gabbana" || brandLower === "versace" || brandLower === "bvlgari" || brandLower === "bulgari") return 13500;
       return 14500;
 
     // Skincare / Beauty
     case "cleansers":
-      if (brandLower === "la prairie" || brandLower === "la mer") return 12500;
-      if (brandLower === "sisley paris" || brandLower === "clé de peau beauté" || brandLower === "guerlain") return 8900;
-      if (brandLower === "sk-ii" || brandLower === "chanel" || brandLower === "dior" || brandLower === "estée lauder" || brandLower === "shiseido") return 5400;
+      if (brandLower === "la prairie" || brandLower === "la mer" || brandLower === "valmont" || brandLower === "augustinus bader") return 12500;
+      if (brandLower === "sisley paris" || brandLower === "clé de peau beauté" || brandLower === "guerlain" || brandLower === "111skin") return 8900;
+      if (brandLower === "sk-ii" || brandLower === "chanel" || brandLower === "dior" || brandLower === "estée lauder" || brandLower === "shiseido" || brandLower === "giorgio armani" || brandLower === "lancôme") return 5400;
       return 3900;
 
     case "serums":
-      if (brandLower === "la prairie" || brandLower === "la mer") return 48500;
-      if (brandLower === "clé de peau beauté" || brandLower === "sisley paris" || brandLower === "guerlain") return 32500;
-      if (brandLower === "sk-ii" || brandLower === "chanel" || brandLower === "dior" || brandLower === "estée lauder" || brandLower === "shiseido" || brandLower === "lancôme") return 16500;
+      if (brandLower === "la prairie" || brandLower === "la mer" || brandLower === "valmont" || brandLower === "111skin") return 48500;
+      if (brandLower === "clé de peau beauté" || brandLower === "sisley paris" || brandLower === "guerlain" || brandLower === "augustinus bader") return 32500;
+      if (brandLower === "sk-ii" || brandLower === "chanel" || brandLower === "dior" || brandLower === "estée lauder" || brandLower === "shiseido" || brandLower === "lancôme" || brandLower === "giorgio armani") return 16500;
       return 9500;
 
     case "moisturizers":
-      if (brandLower === "la prairie" || brandLower === "la mer") return 39500;
-      if (brandLower === "clé de peau beauté" || brandLower === "sisley paris" || brandLower === "guerlain") return 28500;
+      if (brandLower === "la prairie" || brandLower === "la mer" || brandLower === "valmont" || brandLower === "augustinus bader") return 39500;
+      if (brandLower === "clé de peau beauté" || brandLower === "sisley paris" || brandLower === "guerlain" || brandLower === "111skin" || brandLower === "giorgio armani") return 28500;
       if (brandLower === "sk-ii" || brandLower === "chanel" || brandLower === "dior" || brandLower === "estée lauder" || brandLower === "shiseido" || brandLower === "lancôme") return 14500;
       return 7900;
 
     case "sunscreens":
-      if (brandLower === "la prairie" || brandLower === "la mer" || brandLower === "clé de peau beauté" || brandLower === "sisley paris") return 14500;
-      if (brandLower === "chanel" || brandLower === "dior" || brandLower === "shiseido" || brandLower === "lancôme") return 6200;
+      if (brandLower === "la prairie" || brandLower === "la mer" || brandLower === "clé de peau beauté" || brandLower === "sisley paris" || brandLower === "valmont" || brandLower === "guerlain" || brandLower === "giorgio armani") return 14500;
+      if (brandLower === "chanel" || brandLower === "dior" || brandLower === "shiseido" || brandLower === "lancôme" || brandLower === "augustinus bader") return 6800;
       return 4200;
 
     // Home & Appliances
     case "kitchenware":
+      if (brandLower === "christofle") return 125000;
+      if (brandLower === "smeg x dolce & gabbana" || brandLower === "smeg" || brandLower === "ruffoni") return 58500;
       if (brandLower === "le creuset" || brandLower === "staub" || brandLower === "mauviel 1830") return 34500;
       if (brandLower === "all-clad" || brandLower === "zwilling" || brandLower === "wüsthof" || brandLower === "demeyere") return 22500;
       if (brandLower === "de buyer" || brandLower === "cristel" || brandLower === "lodge") return 11500;
       return 8900;
 
     case "decor":
-      if (brandLower === "baccarat" || brandLower === "lalique" || brandLower === "hermès") return 68900;
-      if (brandLower === "georg jensen" || brandLower === "alessi" || brandLower === "iittala" || brandLower === "fornasetti") return 29500;
+      if (brandLower === "christofle" || brandLower === "baccarat" || brandLower === "lalique" || brandLower === "hermès") return 68900;
+      if (brandLower === "ginori 1735" || brandLower === "versace home" || brandLower === "tiffany & co. home" || brandLower === "fornasetti") return 44500;
+      if (brandLower === "georg jensen" || brandLower === "alessi" || brandLower === "iittala") return 29500;
       if (brandLower === "marimekko" || brandLower === "hay" || brandLower === "muuto") return 14500;
       return 9500;
 
     case "home-textiles":
-      if (brandLower === "frette" || brandLower === "pratesi" || brandLower === "sferra") return 74900;
-      if (brandLower === "yves delorme" || brandLower === "matouk" || brandLower === "bellora") return 38500;
+      if (brandLower === "hermès home" || brandLower === "loro piana interiors") return 145000;
+      if (brandLower === "frette" || brandLower === "pratesi" || brandLower === "sferra" || brandLower === "versace home" || brandLower === "dior maison") return 74900;
+      if (brandLower === "yves delorme" || brandLower === "matouk" || brandLower === "bellora" || brandLower === "ralph lauren home") return 38500;
       if (brandLower === "society limonta" || brandLower === "tekla" || brandLower === "the white company") return 18500;
       return 12500;
 
     case "vacuum-cleaners":
-      if (modelLower.includes("v15") || modelLower.includes("gen5detect") || modelLower.includes("s8 pro ultra") || modelLower.includes("x40 ultra") || modelLower.includes("deebot x2")) return 74900;
-      if (modelLower.includes("v12") || modelLower.includes("q revo") || modelLower.includes("j9+") || modelLower.includes("triflex hx2") || modelLower.includes("pure f9")) return 49900;
-      if (modelLower.includes("v8") || modelLower.includes("shark stratos") || modelLower.includes("complete c3") || modelLower.includes("roomba combo")) return 29900;
+      if (brandLower.includes("vorwerk") || brandLower.includes("kobold")) return 119000;
+      if (brandLower === "miele") {
+        if (modelLower.includes("brilliant") || modelLower.includes("pro")) return 89900;
+        return 49900;
+      }
+      if (modelLower.includes("v15") || modelLower.includes("gen5detect") || modelLower.includes("s8 pro ultra") || modelLower.includes("s8 maxv") || modelLower.includes("x40 ultra") || modelLower.includes("deebot x2") || modelLower.includes("bespoke jet ai")) return 74900;
+      if (modelLower.includes("v12") || modelLower.includes("q revo") || modelLower.includes("j9+") || modelLower.includes("triflex hx2") || modelLower.includes("speedpro max") || modelLower.includes("series 8000") || modelLower.includes("cordzero")) return 49900;
+      if (modelLower.includes("v8") || modelLower.includes("complete c3") || modelLower.includes("roomba combo") || modelLower.includes("performer")) return 29900;
       return 19900;
 
     case "air-purifiers":
-      if (modelLower.includes("big+quiet") || modelLower.includes("pure cool tp09") || modelLower.includes("healthprotect 7770") || modelLower.includes("aeris aair 3-in-1") || modelLower.includes("alps")) return 69900;
-      if (modelLower.includes("tp07") || modelLower.includes("blueair protect 7440") || modelLower.includes("philips series 4000i") || modelLower.includes("iqair healthpro")) return 42900;
-      if (modelLower.includes("blue 211+") || modelLower.includes("philips series 2000i") || modelLower.includes("coway airmega 250") || modelLower.includes("sharp fp-j80m")) return 24900;
-      if (modelLower.includes("core 400s") || modelLower.includes("airmega 150") || modelLower.includes("mi air purifier 4 pro")) return 14900;
-      return 9900;
+      if (brandLower === "iqair") return 145000;
+      if (brandLower === "miele") return 185000;
+      if (brandLower === "molekule") {
+        if (modelLower.includes("pro")) return 98000;
+        return 45000;
+      }
+      if (brandLower === "aura air") return 42000;
+      if (brandLower === "daikin") {
+        if (modelLower.includes("mck") || modelLower.includes("90z") || modelLower.includes("80z")) return 38000;
+        return 24900;
+      }
+      if (brandLower === "lg") {
+        if (modelLower.includes("double") || modelLower.includes("commercial")) return 79900;
+        if (modelLower.includes("aerotower") || modelLower.includes("360")) return 45900;
+        return 24900;
+      }
+      if (modelLower.includes("big+quiet") || modelLower.includes("hp09") || modelLower.includes("tp09") || modelLower.includes("protect 7770")) return 69900;
+      if (modelLower.includes("tp07") || modelLower.includes("protect 7470") || modelLower.includes("series 4000i")) return 42900;
+      if (modelLower.includes("blue pure 211+") || modelLower.includes("series 3000i") || modelLower.includes("sharp fxj80uw") || modelLower.includes("fpj80m")) return 24900;
+      return 14900;
 
     default:
       return 9999;
@@ -417,7 +453,8 @@ export function compileCensusToManifest(censusPath: string): CatalogManifestV2 {
     }
 
     const price = estimateSandboxPrice(leafKey, entry.canonicalBrand, entry.modelName, entry.collectedAttributes);
-    const color = entry.variants?.find((v) => !v.includes("GB") && !v.includes("TB") && !v.includes("RAM")) || "Standard";
+    const rawColor = entry.variants?.find((v) => !v.includes("GB") && !v.includes("TB") && !v.includes("RAM")) || "Standard";
+    const color = rawColor.length > 50 ? rawColor.slice(0, 50) : rawColor;
 
     const cleanedAttrs: Record<string, unknown> = {
       brand: entry.canonicalBrand.toLowerCase(),
@@ -429,9 +466,19 @@ export function compileCensusToManifest(censusPath: string): CatalogManifestV2 {
         if (k === "batteryHours" && typeof v === "number" && v <= 0) {
           continue;
         }
-        if (typeof v === "string" && v.length > 80) {
-          cleanedAttrs[k] = v.slice(0, 80);
-          continue;
+        if (typeof v === "string") {
+          if (k === "size" && v.length > 30) {
+            cleanedAttrs[k] = v.slice(0, 30);
+            continue;
+          }
+          if ((k === "material" || k === "finish" || k === "scent" || k === "use" || k === "productType" || k === "concentration") && v.length > 60) {
+            cleanedAttrs[k] = v.slice(0, 60);
+            continue;
+          }
+          if (v.length > 80) {
+            cleanedAttrs[k] = v.slice(0, 80);
+            continue;
+          }
         }
         cleanedAttrs[k] = v;
       }

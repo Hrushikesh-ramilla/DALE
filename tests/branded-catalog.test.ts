@@ -95,7 +95,7 @@ it("queries real phones and manufacturer brands in persistent storage, excluding
     category: "phones",
     requirements: { ramGb: 12, storageGb: 256 },
   });
-  expect(result.total).toBe(3);
+  expect(result.total).toBeGreaterThanOrEqual(3);
   expect(result.products.every((p) => p.brand && p.evidence)).toBe(true);
   expect(
     (

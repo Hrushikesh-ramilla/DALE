@@ -1,6 +1,16 @@
-/* Boska — Luxury Editorial Display Serif (Designed by Barbara Bigosinska / Indian Type Foundry) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Boska & Voska — Luxury Editorial Display Serif (Designed by Barbara Bigosinska / Indian Type Foundry) */
 @font-face {
   font-family: 'Boska';
+  src: url('/fonts/boska/Boska-Variable.woff2') format('woff2');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Voska';
   src: url('/fonts/boska/Boska-Variable.woff2') format('woff2');
   font-weight: 200 900;
   font-display: swap;

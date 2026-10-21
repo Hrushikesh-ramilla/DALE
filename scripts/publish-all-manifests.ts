@@ -2,7 +2,7 @@ import { readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { leafTypeKeys } from "../src/domain/departments";
 import { loadAndPublishManifestFixture } from "../src/server/catalog-fixture-loader";
-import { getDatabase } from "../src/server/database";
+import { getDatabase, closeDatabase } from "../src/server/database";
 
 export async function publishAllManifests() {
   console.log("=== PUBLISHING ALL EXPANDED CATALOG MANIFESTS ===");
@@ -18,7 +18,20 @@ export async function publishAllManifests() {
 
     try {
       const raw = JSON.parse(readFileSync(manifestPath, "utf-8"));
-      const result = await loadAndPublishManifestFixture(raw, { publish: true });
+      let result;
+      try {
+        result = await loadAndPublishManifestFixture(raw, { publish: true });
+      } catch (firstErr) {
+        // If manifest was modified, clean up the stale release and products for this release ID and re-stage
+        const errMsg = (firstErr as Error).message || "";
+        if (errMsg.includes("already belongs to a different") || errMsg.includes("cannot replace existing")) {
+          await db.query("DELETE FROM catalog_products WHERE release_id = $1", [raw.id]);
+          await db.query("DELETE FROM catalog_releases WHERE id = $1", [raw.id]);
+          result = await loadAndPublishManifestFixture(raw, { publish: true });
+        } else {
+          throw firstErr;
+        }
+      }
       console.log(`[OK] ${leaf.padEnd(20)} | Release: ${result.releaseId} | Status: ${result.status} | Models: ${result.count}`);
       successCount++;
       totalProductsPublished += result.count;
@@ -68,11 +81,14 @@ export async function publishAllManifests() {
   for (const row of leafCounts.rows) {
     console.log(`  - ${row.leaf_type.padEnd(22)}: ${row.count}`);
   }
+  await closeDatabase();
 }
 
 if (process.argv[1]?.endsWith("publish-all-manifests.ts")) {
-  publishAllManifests().catch((err) => {
-    console.error("Fatal publication error:", err);
-    process.exit(1);
-  });
+  publishAllManifests()
+    .then(() => process.exit(0))
+    .catch((err) => {
+      console.error("Fatal publication error:", err);
+      process.exit(1);
+    });
 }

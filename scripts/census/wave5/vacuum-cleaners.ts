@@ -7,7 +7,7 @@ export const vacuumCleanersCensus: CensusManifestFile = {
   censusDate: "2026-10-11",
   supplyExceptions: [],
   entries: [
-    // 1. Dyson (12 models)
+    // 1. Dyson (10 models)
     ...[
       { id: "dyson-gen5detect-absolute", model: "Gen5detect Absolute", type: "Cordless Stick", aw: 280, bat: 70, filt: "Whole-machine HEPA", bin: 0.77, wt: 3.5 },
       { id: "dyson-gen5outsize-cordless", model: "Gen5outsize Cordless", type: "Cordless Stick", aw: 280, bat: 70, filt: "Whole-machine HEPA", bin: 1.9, wt: 3.9 },
@@ -19,8 +19,6 @@ export const vacuumCleanersCensus: CensusManifestFile = {
       { id: "dyson-washg1-wet-floor-cleaner", model: "WashG1 Wet Floor Cleaner", type: "Cordless Wet Hard Floor", aw: 0, bat: 35, filt: "Dual Water Separation", bin: 1.0, wt: 4.9 },
       { id: "dyson-omni-glide-cordless", model: "Omni-glide Multi-Directional", type: "Cordless Stick", aw: 50, bat: 20, filt: "Whole-machine Filtration", bin: 0.2, wt: 1.9 },
       { id: "dyson-ball-animal-3-extra-upright", model: "Ball Animal 3 Extra Upright", type: "Upright Bagless", aw: 290, bat: 0, filt: "Whole-machine HEPA", bin: 1.7, wt: 7.9 },
-      { id: "dyson-cinetic-big-ball-animal", model: "Cinetic Big Ball Animal Canister", type: "Canister Bagless", aw: 250, bat: 0, filt: "Cinetic Lifetime Filter", bin: 1.6, wt: 8.0 },
-      { id: "dyson-outsize-absolute-plus", model: "Outsize Absolute+ Cordless", type: "Cordless Stick", aw: 220, bat: 120, filt: "Whole-machine HEPA", bin: 1.9, wt: 3.9 },
     ].map((m) => ({
       id: m.id,
       canonicalBrand: "Dyson",
@@ -49,7 +47,7 @@ export const vacuumCleanersCensus: CensusManifestFile = {
       status: "staged" as const,
     })),
 
-    // 2. Roborock (12 models)
+    // 2. Roborock (10 models)
     ...[
       { id: "roborock-s8-maxv-ultra", model: "S8 MaxV Ultra Robot", type: "Robot Vacuum & Mop", aw: 45, bat: 180, filt: "Washable E11 Filter", bin: 0.35, wt: 4.8 },
       { id: "roborock-s8-pro-ultra", model: "S8 Pro Ultra Robot", type: "Robot Vacuum & Mop", aw: 45, bat: 180, filt: "Washable E11 Filter", bin: 0.35, wt: 4.8 },
@@ -61,8 +59,6 @@ export const vacuumCleanersCensus: CensusManifestFile = {
       { id: "roborock-q5-pro-plus", model: "Q5 Pro+ Robot", type: "Robot Vacuum & Mop", aw: 35, bat: 240, filt: "E11 Filter", bin: 0.77, wt: 3.8 },
       { id: "roborock-dyad-pro-wet-dry", model: "Dyad Pro Wet & Dry Stick", type: "Wet & Dry Cordless", aw: 170, bat: 43, filt: "Multi-stage HEPA", bin: 0.9, wt: 4.8 },
       { id: "roborock-dyad-pro-combo", model: "Dyad Pro Combo 5-in-1", type: "Wet & Dry Cordless Stick", aw: 170, bat: 60, filt: "HEPA Sealed", bin: 0.77, wt: 5.0 },
-      { id: "roborock-flexi-pro-wet-dry", model: "Flexi Pro Wet & Dry Vacuum", type: "Wet & Dry Cordless", aw: 170, bat: 50, filt: "Sealed HEPA", bin: 0.73, wt: 5.0 },
-      { id: "roborock-h7-cordless-stick", model: "H7 Cordless Stick Vacuum", type: "Cordless Stick", aw: 160, bat: 90, filt: "5-stage HEPA Filtration", bin: 0.5, wt: 1.46 },
     ].map((m) => ({
       id: m.id,
       canonicalBrand: "Roborock",
@@ -171,7 +167,7 @@ export const vacuumCleanersCensus: CensusManifestFile = {
       status: "staged" as const,
     })),
 
-    // 5. Miele (12 models)
+    // 5. Miele (10 models)
     ...[
       { id: "miele-complete-c3-brilliant", model: "Complete C3 Brilliant Canister", type: "Canister Bagged", aw: 300, bat: 0, filt: "HEPA AirClean 50 Filter", bin: 4.5, wt: 7.3 },
       { id: "miele-complete-c3-marin", model: "Complete C3 Marin Canister", type: "Canister Bagged", aw: 300, bat: 0, filt: "HEPA AirClean 50 Filter", bin: 4.5, wt: 7.3 },
@@ -182,9 +178,7 @@ export const vacuumCleanersCensus: CensusManifestFile = {
       { id: "miele-blizzard-cx1-pure-suction", model: "Blizzard CX1 Pure Suction Bagless", type: "Canister Bagless", aw: 250, bat: 0, filt: "Hygiene Lifetime Filter", bin: 2.0, wt: 8.4 },
       { id: "miele-triflex-hx2-pro-cordless", model: "Triflex HX2 Pro Cordless Stick", type: "Cordless Stick", aw: 170, bat: 120, filt: "HEPA Lifetime Filter", bin: 0.5, wt: 3.6 },
       { id: "miele-triflex-hx2-cat-dog", model: "Triflex HX2 Cat & Dog Cordless", type: "Cordless Stick", aw: 170, bat: 60, filt: "HEPA Lifetime Filter", bin: 0.5, wt: 3.6 },
-      { id: "miele-triflex-hx2-performance", model: "Triflex HX2 Performance Cordless", type: "Cordless Stick", aw: 170, bat: 120, filt: "Hygiene Lifetime Filter", bin: 0.5, wt: 3.6 },
       { id: "miele-boost-cx1-bagless", model: "Boost CX1 Bagless Canister", type: "Compact Canister Bagless", aw: 220, bat: 0, filt: "Hygiene AirClean Filter", bin: 1.0, wt: 7.8 },
-      { id: "miele-scout-rx3-home-vision-hd", model: "Scout RX3 Home Vision HD Robot", type: "Robot Vacuum", aw: 20, bat: 120, filt: "AirClean Plus Filter", bin: 0.4, wt: 3.2 },
     ].map((m) => ({
       id: m.id,
       canonicalBrand: "Miele",
@@ -253,89 +247,7 @@ export const vacuumCleanersCensus: CensusManifestFile = {
       status: "staged" as const,
     })),
 
-    // 7. Shark (12 models)
-    ...[
-      { id: "shark-stratos-cordless-clean-sense", model: "Stratos Cordless with Clean Sense IQ", type: "Cordless Stick", aw: 180, bat: 60, filt: "Anti-Allergen Complete Seal HEPA", bin: 0.7, wt: 4.0 },
-      { id: "shark-stratos-upright-duoclean", model: "Stratos Upright Vacuum with DuoClean", type: "Upright Bagless", aw: 280, bat: 0, filt: "Anti-Allergen Complete Seal HEPA", bin: 1.3, wt: 7.8 },
-      { id: "shark-powerdetect-nevertouch-pro", model: "PowerDetect NeverTouch Pro Robot", type: "Robot Vacuum & Mop", aw: 40, bat: 180, filt: "HEPA Sealed Base", bin: 0.35, wt: 4.0 },
-      { id: "shark-matrix-plus-2in1-robot", model: "Matrix Plus 2-in-1 Robot with XL HEPA Base", type: "Robot Vacuum & Mop", aw: 35, bat: 120, filt: "True HEPA Filtration", bin: 0.3, wt: 3.8 },
-      { id: "shark-vertex-pro-cordless", model: "Vertex Pro Cordless Stick", type: "Cordless Stick", aw: 160, bat: 60, filt: "Anti-Allergen Complete Seal HEPA", bin: 0.95, wt: 4.1 },
-      { id: "shark-vertex-duoclean-powerfins-upright", model: "Vertex DuoClean PowerFins Upright", type: "Upright Bagless", aw: 260, bat: 0, filt: "Anti-Allergen Complete Seal HEPA", bin: 1.0, wt: 7.4 },
-      { id: "shark-wandvac-system-cordless", model: "Wandvac System Ultra-Lightweight Cordless", type: "Cordless Stick", aw: 80, bat: 25, filt: "Washable Fabric Filter", bin: 0.12, wt: 2.6 },
-      { id: "shark-hydrovac-cordless-pro-xl", model: "HydroVac Cordless Pro XL Wet/Dry", type: "Wet & Dry Cordless", aw: 150, bat: 25, filt: "Anti-Microbial Filter", bin: 0.5, wt: 4.5 },
-      { id: "shark-navigator-lift-away-deluxe", model: "Navigator Lift-Away Deluxe Upright", type: "Upright Bagless", aw: 220, bat: 0, filt: "Anti-Allergen Complete Seal HEPA", bin: 1.1, wt: 5.7 },
-      { id: "shark-rotator-lift-away-truepet", model: "Rotator Lift-Away TruePet Upright", type: "Upright Bagless", aw: 250, bat: 0, filt: "True HEPA Complete Seal", bin: 1.4, wt: 6.9 },
-      { id: "shark-cordless-pro-clean-sense", model: "Cordless Pro with Clean Sense IQ", type: "Cordless Stick", aw: 140, bat: 40, filt: "Anti-Allergen Complete Seal", bin: 0.72, wt: 3.5 },
-      { id: "shark-detect-pro-auto-empty", model: "Detect Pro Auto-Empty Cordless", type: "Cordless Stick", aw: 150, bat: 40, filt: "True HEPA Sealed", bin: 0.42, wt: 2.8 },
-    ].map((m) => ({
-      id: m.id,
-      canonicalBrand: "Shark",
-      displayBrand: "Shark",
-      productLine: "Stratos & Vertex Cleaners",
-      modelName: m.model,
-      generationOrYear: "Current",
-      sourceUrls: [`https://www.sharkclean.com/vacuums/${m.id.replace("shark-", "")}`],
-      observationDate: "2026-10-11",
-      sourceRegion: "GLOBAL",
-      lifecycle: "active" as const,
-      variants: ["Rose Gold", "Charcoal Grey", "Navy Blue"],
-      mediaSource: { url: `https://www.sharkclean.com/images/${m.id}.jpg` },
-      collectedAttributes: {
-        brand: "shark",
-        modelName: m.model.toLowerCase(),
-        vacuumType: m.type,
-        airWatts: m.aw,
-        batteryMinutes: m.bat,
-        filtrationType: m.filt,
-        binCapacityLiters: m.bin,
-        weightKg: m.wt,
-      },
-      missingAttributes: [],
-      inclusionReason: `Shark high-performance sealed HEPA vacuum ${m.model}`,
-      status: "staged" as const,
-    })),
-
-    // 8. Electrolux (10 models)
-    ...[
-      { id: "electrolux-pure-f9-cordless-stick", model: "Pure F9 Cordless Stick Vacuum", type: "Cordless Stick", aw: 160, bat: 60, filt: "5-stage Micro-Dust Filtration", bin: 0.7, wt: 3.2 },
-      { id: "electrolux-ultimatehome-900-cordless", model: "UltimateHome 900 Cordless Vacuum", type: "Cordless Stick", aw: 150, bat: 120, filt: "5-step Sealed HEPA", bin: 0.4, wt: 2.9 },
-      { id: "electrolux-ultimatehome-700-cordless", model: "UltimateHome 700 Cordless Stick", type: "Cordless Stick", aw: 130, bat: 50, filt: "5-step HEPA Filter", bin: 0.3, wt: 2.2 },
-      { id: "electrolux-pure-c9-bagless-canister", model: "Pure C9 Bagless Canister Vacuum", type: "Canister Bagless", aw: 220, bat: 0, filt: "Sealed HEPA Lifetime 3D", bin: 1.6, wt: 7.2 },
-      { id: "electrolux-pure-d9-bagged-canister", model: "Pure D9 Bagged Canister Vacuum", type: "Canister Bagged", aw: 260, bat: 0, filt: "Allergy Plus Washable Filter", bin: 5.0, wt: 7.1 },
-      { id: "electrolux-pure-q9-cordless-stick", model: "Pure Q9 2-in-1 Cordless Stick", type: "Cordless Stick", aw: 120, bat: 55, filt: "5-stage Filter", bin: 0.3, wt: 2.7 },
-      { id: "electrolux-well-q7-cordless-stick", model: "Well Q7 Cordless Stick Vacuum", type: "Cordless Stick", aw: 110, bat: 50, filt: "5-step Filtration with E10", bin: 0.3, wt: 2.8 },
-      { id: "electrolux-pure-i9-2-3d-vision-robot", model: "Pure i9.2 3D Vision Robot", type: "Robot Vacuum", aw: 25, bat: 120, filt: "Washable XXL Filter", bin: 0.7, wt: 3.5 },
-      { id: "electrolux-ultraflex-bagless-canister", model: "UltraFlex Bagless Canister Vacuum", type: "Canister Bagless", aw: 240, bat: 0, filt: "Sealed HEPA H12", bin: 1.6, wt: 7.5 },
-      { id: "electrolux-ergorapido-classic-stick", model: "Ergorapido Classic 2-in-1 Stick", type: "Cordless Stick", aw: 90, bat: 35, filt: "Double Filtration", bin: 0.5, wt: 2.5 },
-    ].map((m) => ({
-      id: m.id,
-      canonicalBrand: "Electrolux",
-      displayBrand: "Electrolux",
-      productLine: "Pure & UltimateHome Cleaners",
-      modelName: m.model,
-      generationOrYear: "Current",
-      sourceUrls: [`https://www.electrolux.com/vacuums/${m.id.replace("electrolux-", "")}`],
-      observationDate: "2026-10-11",
-      sourceRegion: "GLOBAL",
-      lifecycle: "active" as const,
-      variants: ["Satin White", "Urban Grey", "Denim Blue"],
-      mediaSource: { url: `https://www.electrolux.com/images/${m.id}.jpg` },
-      collectedAttributes: {
-        brand: "electrolux",
-        modelName: m.model.toLowerCase(),
-        vacuumType: m.type,
-        airWatts: m.aw,
-        batteryMinutes: m.bat,
-        filtrationType: m.filt,
-        binCapacityLiters: m.bin,
-        weightKg: m.wt,
-      },
-      missingAttributes: [],
-      inclusionReason: `Electrolux Swedish ergonomic vacuum cleaner ${m.model}`,
-      status: "staged" as const,
-    })),
-
-    // 9. Samsung (10 models)
+    // 7. Samsung (10 models)
     ...[
       { id: "samsung-bespoke-jet-ai-stick", model: "Bespoke Jet AI Cordless Stick", type: "Cordless Stick", aw: 280, bat: 100, filt: "99.999% Multi-layered HEPA", bin: 0.5, wt: 2.7 },
       { id: "samsung-bespoke-jet-pro-extra", model: "Bespoke Jet Pro Extra Cordless", type: "Cordless Stick", aw: 210, bat: 120, filt: "99.999% Multi-layered HEPA", bin: 0.5, wt: 2.7 },
@@ -375,7 +287,7 @@ export const vacuumCleanersCensus: CensusManifestFile = {
       status: "staged" as const,
     })),
 
-    // 10. LG (10 models)
+    // 8. LG (10 models)
     ...[
       { id: "lg-cordzero-a9-kompressor-tower", model: "CordZero A9 Kompressor with All-in-One Tower", type: "Cordless Stick", aw: 220, bat: 120, filt: "5-step HEPA Filtration", bin: 0.44, wt: 2.7 },
       { id: "lg-cordzero-a9-ultimate-stick", model: "CordZero A9 Ultimate Cordless Stick", type: "Cordless Stick", aw: 200, bat: 120, filt: "5-stage HEPA Filtration", bin: 0.44, wt: 2.7 },
@@ -412,6 +324,86 @@ export const vacuumCleanersCensus: CensusManifestFile = {
       },
       missingAttributes: [],
       inclusionReason: `LG CordZero Kompressor vacuum cleaner ${m.model}`,
+      status: "staged" as const,
+    })),
+
+    // 9. Philips (10 models)
+    ...[
+      { id: "philips-speedpro-max-aqua-xc8147", model: "SpeedPro Max Aqua XC8147 Cordless Stick & Mop", type: "Cordless Wet & Dry Stick", aw: 180, bat: 80, filt: "Triple Filtration System", bin: 0.6, wt: 2.7 },
+      { id: "philips-series-8000-aqua-plus-xc8349", model: "8000 Series Aqua Plus XC8349 Cordless Stick", type: "Cordless Wet & Dry Stick", aw: 200, bat: 80, filt: "PowerCyclone 10 HEPA", bin: 0.6, wt: 2.7 },
+      { id: "philips-series-7000-cordless-xc7042", model: "7000 Series Cordless Stick XC7042", type: "Cordless Stick", aw: 150, bat: 65, filt: "Washable Motor Filter", bin: 0.6, wt: 2.6 },
+      { id: "philips-series-3000-cordless-xc3131", model: "3000 Series Cordless Stick XC3131", type: "Cordless Stick", aw: 120, bat: 60, filt: "3-stage Filtration", bin: 0.5, wt: 2.2 },
+      { id: "philips-performer-silent-fc8780", model: "Performer Silent FC8780 Bagged Canister", type: "Canister Bagged", aw: 280, bat: 0, filt: "Allergy H13 Filter", bin: 4.0, wt: 5.4 },
+      { id: "philips-performer-expert-fc8721", model: "Performer Expert FC8721 Bagged Canister", type: "Canister Bagged", aw: 300, bat: 0, filt: "HEPA 13 AirSeal", bin: 5.0, wt: 5.0 },
+      { id: "philips-powerpro-expert-fc9741", model: "PowerPro Expert FC9741 Bagless Canister", type: "Canister Bagless", aw: 260, bat: 0, filt: "Allergy H13 Filter", bin: 2.0, wt: 5.5 },
+      { id: "philips-powerpro-compact-fc9332", model: "PowerPro Compact FC9332 Bagless Canister", type: "Canister Bagless", aw: 220, bat: 0, filt: "Allergy H13 Filter", bin: 1.5, wt: 4.5 },
+      { id: "philips-homerun-7000-series-robot-xu7100", model: "HomeRun 7000 Series Aqua Robot Vacuum & Mop", type: "Robot Vacuum & Mop", aw: 40, bat: 180, filt: "Washable EPA11 Filter", bin: 0.35, wt: 4.0 },
+      { id: "philips-homerun-3000-series-robot-xu3000", model: "HomeRun 3000 Series Robot Vacuum & Mop", type: "Robot Vacuum & Mop", aw: 30, bat: 200, filt: "Washable Filter", bin: 0.35, wt: 3.8 },
+    ].map((m) => ({
+      id: m.id,
+      canonicalBrand: "Philips",
+      displayBrand: "Philips",
+      productLine: "SpeedPro & Performer Vacuum Series",
+      modelName: m.model,
+      generationOrYear: "Current",
+      sourceUrls: [`https://www.philips.com/c-m-ho/vacuum-cleaners/${m.id.replace("philips-", "")}`],
+      observationDate: "2026-10-11",
+      sourceRegion: "GLOBAL",
+      lifecycle: "active" as const,
+      variants: ["Deep Opal Blue", "Metallic Red", "Cotton Blue"],
+      mediaSource: { url: `https://images.philips.com/is/image/PhilipsConsumer/${m.id}` },
+      collectedAttributes: {
+        brand: "philips",
+        modelName: m.model.toLowerCase(),
+        vacuumType: m.type,
+        airWatts: m.aw,
+        batteryMinutes: m.bat,
+        filtrationType: m.filt,
+        binCapacityLiters: m.bin,
+        weightKg: m.wt,
+      },
+      missingAttributes: [],
+      inclusionReason: `Philips PowerCyclone advanced vacuum cleaner ${m.model}`,
+      status: "staged" as const,
+    })),
+
+    // 10. Vorwerk / Kobold (10 models)
+    ...[
+      { id: "vorwerk-kobold-vk7-cordless-vacuum", model: "Kobold VK7 Cordless Modular Stick Vacuum", type: "Cordless Modular Stick", aw: 230, bat: 60, filt: "TÜV-Certified 4-layer Filter Bag HEPA", bin: 0.8, wt: 2.6 },
+      { id: "vorwerk-kobold-vr7-robot-vacuum", model: "Kobold VR7 Robot Vacuum Cleaner", type: "Robot Vacuum", aw: 35, bat: 140, filt: "TÜV-Certified Hygiene Filter", bin: 0.45, wt: 4.5 },
+      { id: "vorwerk-kobold-rb7-auto-empty-station", model: "Kobold RB7 Auto-Empty Base Station & VR7 Combo", type: "Robot Vacuum & Auto-Empty Station", aw: 35, bat: 140, filt: "Premium HEPA Filter Bag", bin: 1.5, wt: 8.0 },
+      { id: "vorwerk-kobold-sp7-vacuum-mop-head", model: "Kobold SP7 2-in-1 Cordless Vacuum & Wet Mop Attachment", type: "Cordless Wet & Dry Multi-Surface", aw: 230, bat: 60, filt: "TÜV-Certified HEPA", bin: 0.8, wt: 3.5 },
+      { id: "vorwerk-kobold-eb7-electric-brush", model: "Kobold EB7 Electric Deep Cleaning Carpet Brush", type: "Deep Cleaning Modular Stick", aw: 230, bat: 60, filt: "Multi-layer Allergen Seal", bin: 0.8, wt: 3.2 },
+      { id: "vorwerk-kobold-pb7-mattress-cleaner", model: "Kobold PB7 Mattress & Upholstery Deep Cleaner", type: "Cordless Handheld Mattress Cleaner", aw: 180, bat: 45, filt: "Hygiene Micro-Filter", bin: 0.5, wt: 1.8 },
+      { id: "vorwerk-kobold-vc100-handheld", model: "Kobold VC100 Cordless Handheld Vacuum", type: "Compact Handheld", aw: 65, bat: 20, filt: "Dual Stage Washable Filter", bin: 0.2, wt: 0.65 },
+      { id: "vorwerk-kobold-vt300-canister-vacuum", model: "Kobold VT300 Ultra-Silent Canister Vacuum", type: "Canister Bagged", aw: 320, bat: 0, filt: "TÜV-Certified 3-in-1 HEPA Bag", bin: 4.5, wt: 6.0 },
+      { id: "vorwerk-kobold-vk200-upright-vacuum", model: "Kobold VK200 Classic Upright Modular Vacuum", type: "Upright Bagged", aw: 290, bat: 0, filt: "FP200 3-in-1 Premium Filter Bag", bin: 2.2, wt: 3.2 },
+      { id: "vorwerk-kobold-vg100-window-cleaner", model: "Kobold VG100 Cordless Window Cleaner", type: "Handheld Glass Cleaner", aw: 30, bat: 30, filt: "Microfiber Separation Tank", bin: 0.15, wt: 0.95 },
+    ].map((m) => ({
+      id: m.id,
+      canonicalBrand: "Vorwerk / Kobold",
+      displayBrand: "Vorwerk / Kobold",
+      productLine: "Kobold Modular German Cleaning System",
+      modelName: m.model,
+      generationOrYear: "Current",
+      sourceUrls: [`https://www.vorwerk.com/de/de/c/home/produkte/kobold/${m.id.replace("vorwerk-kobold-", "")}`],
+      observationDate: "2026-10-11",
+      sourceRegion: "GLOBAL",
+      lifecycle: "active" as const,
+      variants: ["Pure White / Kobold Green", "Classic White"],
+      mediaSource: { url: `https://www.vorwerk.com/images/${m.id}.jpg` },
+      collectedAttributes: {
+        brand: "vorwerk / kobold",
+        modelName: m.model.toLowerCase(),
+        vacuumType: m.type,
+        airWatts: m.aw,
+        batteryMinutes: m.bat,
+        filtrationType: m.filt,
+        binCapacityLiters: m.bin,
+        weightKg: m.wt,
+      },
+      missingAttributes: [],
+      inclusionReason: `Vorwerk Kobold premium German modular cleaning system ${m.model}`,
       status: "staged" as const,
     })),
   ],

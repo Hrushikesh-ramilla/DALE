@@ -521,71 +521,59 @@ function WatchesCatalogContent() {
   if (!isCatalogSpace) {
     return (
       <div className="watches-category-experience houses-hub-view">
-        <Breadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Watches" },
-          ]}
-        />
+        {/* Top Navigation & Hub Utility Bar */}
+        <div className="hub-top-utility-bar">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Watches" },
+            ]}
+          />
 
-        {/* Integrated Haute Horlogerie Console Header */}
-        <header className="watches-hero hub-console-header">
-          <div className="hub-console-row">
-            <div className="hub-console-identity">
-              <div className="eyebrow">
-                <Shield size={12} className="icon-gold" />
-                <span>HAUTE HORLOGERIE</span>
-              </div>
-              <h1>Precision &amp; Luxury Watches</h1>
-              <p className="watches-hero-subtitle">
-                21 Prestigious Houses &middot; {allProducts.length || 185} Authenticated Timepieces
-              </p>
-            </div>
-
-            {/* Center: Mode Switcher (Dial vs 21 Houses) */}
-            <div className="hub-mode-switcher">
-              <button
-                type="button"
-                className={`mode-switch-btn ${hubDisplayMode === "dial" ? "active" : ""}`}
-                onClick={() => setHubDisplayMode("dial")}
-              >
-                <Compass size={13} />
-                <span>Horological Dial</span>
-              </button>
-              <button
-                type="button"
-                className={`mode-switch-btn ${hubDisplayMode === "matrix" ? "active" : ""}`}
-                onClick={() => setHubDisplayMode("matrix")}
-              >
-                <Layers size={13} />
-                <span>All 21 Houses</span>
-              </button>
-            </div>
-
-            {/* Right: Direct Unfiltered Catalog CTA */}
-            <div className="hub-console-actions">
-              <Link
-                href="/category/watches?view=all"
-                className="button primary explore-all-hero-btn"
-              >
-                <span>Explore All ({allProducts.length || 185})</span>
-                <ArrowRight size={14} />
-              </Link>
-            </div>
+          {/* Mode Switcher: Dial vs All 21 Houses */}
+          <div className="hub-mode-switcher">
+            <button
+              type="button"
+              className={`mode-switch-btn ${hubDisplayMode === "dial" ? "active" : ""}`}
+              onClick={() => setHubDisplayMode("dial")}
+              title="Interactive Movement Dial"
+            >
+              <Compass size={13} />
+              <span>Horological Dial</span>
+            </button>
+            <button
+              type="button"
+              className={`mode-switch-btn ${hubDisplayMode === "matrix" ? "active" : ""}`}
+              onClick={() => setHubDisplayMode("matrix")}
+              title="All 21 Manufacture Houses"
+            >
+              <Layers size={13} />
+              <span>All 21 Houses</span>
+            </button>
           </div>
-        </header>
 
-        {/* The Horological Houses Experience: Interactive Movement Dial OR 21-House Matrix */}
-        <section className="watches-houses-section" aria-label="Horological Houses">
-          {/* VIEW A: Interactive Horological Dial & Winder */}
-          {hubDisplayMode === "dial" ? (
+          {/* Direct Unfiltered Catalog Action */}
+          <Link
+            href="/category/watches?view=all"
+            className="button primary explore-all-top-btn"
+          >
+            <span>Explore All ({allProducts.length || 185})</span>
+            <ArrowRight size={13} />
+          </Link>
+        </div>
+
+        {/* VIEW A: Grand Horological Watch Dial Showcase (Screen-Filling Hero) */}
+        {hubDisplayMode === "dial" ? (
+          <section className="watches-dial-hero" aria-label="Haute Horlogerie Showcase">
             <HorologicalDial
               brands={WATCH_BRANDS}
               brandCounts={brandCounts}
               onSelectBrand={(brandName) => router.push(`/category/watches?brand=${encodeURIComponent(brandName)}`)}
             />
-          ) : (
-            /* VIEW B: Floating 3D Vector Logos (Zero Boxes, Zero Redundant Gray Text) */
+          </section>
+        ) : (
+          /* VIEW B: Floating 3D Vector Logos (All 21 Houses Grid) */
+          <section className="watches-houses-section" aria-label="All 21 Horological Houses">
             <div className="brand-logos-grid">
               {WATCH_BRANDS.map((brand) => (
                 <Link
@@ -600,25 +588,25 @@ function WatchesCatalogContent() {
                 </Link>
               ))}
             </div>
-          )}
 
-          {/* Bottom Explore All CTA */}
-          <div className="hub-bottom-cta">
-            <div className="hub-bottom-card">
-              <div>
-                <h3>Complete Horology Collection</h3>
-                <p>Filter by movement calibre, complication, or manufacture house.</p>
+            {/* Bottom Explore All CTA */}
+            <div className="hub-bottom-cta">
+              <div className="hub-bottom-card">
+                <div>
+                  <h3>Complete Horology Collection</h3>
+                  <p>Filter by movement calibre, complication, or manufacture house.</p>
+                </div>
+                <Link
+                  href="/category/watches?view=all"
+                  className="button primary see-all-button"
+                >
+                  <span>Explore All Timepieces ({allProducts.length || 185} Watches)</span>
+                  <ArrowRight size={16} />
+                </Link>
               </div>
-              <Link
-                href="/category/watches?view=all"
-                className="button primary see-all-button"
-              >
-                <span>Explore All Timepieces ({allProducts.length || 185} Watches)</span>
-                <ArrowRight size={16} />
-              </Link>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
       </div>
     );
   }
