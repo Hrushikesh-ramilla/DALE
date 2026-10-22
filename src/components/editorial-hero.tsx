@@ -22,12 +22,27 @@ export function EditorialHero() {
   const scene = useRef<HTMLElement>(null);
   useHeroParallax(scene);
   useEffect(() => {
-    if (scene.current)
-      return attachDepthMotion(scene.current, {
-        rotation: 1,
-        lift: 0,
-        attribute: "data-scene-active",
-      });
+    const root = scene.current;
+    if (!root) return;
+    const background = root.querySelector<HTMLElement>(
+      "[data-hero-atmosphere]",
+    )!;
+    const foreground = root.querySelector<HTMLElement>(
+      "[data-hero-pointer-plane]",
+    )!;
+    return attachDepthMotion(root, {
+      rotation: 1,
+      lift: 0,
+      attribute: "data-scene-active",
+      render: (x, y) => {
+        background.style.transform = `translate3d(${(-x * 24).toFixed(2)}px,${(y * 18).toFixed(2)}px,0)`;
+        foreground.style.transform = `translate3d(${(x * 18).toFixed(2)}px,${(-y * 12).toFixed(2)}px,0) rotateY(${(x * 1.8).toFixed(3)}deg)`;
+      },
+      reset: () => {
+        background.style.removeProperty("transform");
+        foreground.style.removeProperty("transform");
+      },
+    });
   }, []);
   const copilot = useCopilot();
   const product = edit[index];

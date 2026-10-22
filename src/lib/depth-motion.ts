@@ -6,7 +6,15 @@ export function attachDepthMotion(
     rotation = 2.4,
     lift = 4,
     attribute = "data-depth-active",
-  }: { rotation?: number; lift?: number; attribute?: string } = {},
+    render,
+    reset,
+  }: {
+    rotation?: number;
+    lift?: number;
+    attribute?: string;
+    render?: (x: number, y: number) => void;
+    reset?: () => void;
+  } = {},
 ) {
   const media = window.matchMedia(
     "(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)",
@@ -36,6 +44,7 @@ export function attachDepthMotion(
   );
 
   const restore = () => {
+    reset?.();
     element.removeAttribute(attribute);
     element.style.willChange = originalWillChange;
     properties.forEach((name, i) => {
@@ -67,11 +76,14 @@ export function attachDepthMotion(
     x += vx * dt;
     y += vy * dt;
     elevation += ve * dt;
-    element.style.setProperty("--depth-rx", `${y.toFixed(3)}deg`);
-    element.style.setProperty("--depth-ry", `${x.toFixed(3)}deg`);
-    element.style.setProperty("--depth-x", (x / rotation).toFixed(4));
-    element.style.setProperty("--depth-y", (y / rotation).toFixed(4));
-    element.style.setProperty("--depth-lift", `${elevation.toFixed(3)}px`);
+    if (render) render(x / rotation, y / rotation);
+    else {
+      element.style.setProperty("--depth-rx", `${y.toFixed(3)}deg`);
+      element.style.setProperty("--depth-ry", `${x.toFixed(3)}deg`);
+      element.style.setProperty("--depth-x", (x / rotation).toFixed(4));
+      element.style.setProperty("--depth-y", (y / rotation).toFixed(4));
+      element.style.setProperty("--depth-lift", `${elevation.toFixed(3)}px`);
+    }
     if (
       Math.abs(targetX - x) +
         Math.abs(targetY - y) +
