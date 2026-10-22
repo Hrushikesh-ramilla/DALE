@@ -426,6 +426,8 @@ test("preserves a manual field edit made after an agent action was planned", asy
     })
     .toBe(true);
   await expect(budget).toHaveValue("175");
+  // Finish intercepted continuation responses before the browser context closes.
+  await page.unrouteAll({ behavior: "wait" });
 });
 
 test("accepts a keyboard task on a narrow mobile viewport", async ({

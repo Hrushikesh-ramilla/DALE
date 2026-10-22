@@ -39,6 +39,11 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
           : target;
       if (element === null) return;
       if (current.current) {
+        current.current.scrollTo(current.current.actualScroll, {
+          immediate: true,
+          force: true,
+        });
+        current.current.resize();
         current.current.scrollTo(element, {
           offset: options?.offset,
           duration: options?.duration,
@@ -96,7 +101,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
           smoothWheel: true,
           syncTouch: false,
           lerp: 0.085,
-          anchors: { onStart: schedule },
+          anchors: false,
           prevent: (node) =>
             node.hasAttribute("data-lenis-prevent") ||
             /^(TEXTAREA|SELECT)$/.test(node.tagName) ||
@@ -113,9 +118,50 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       }
       setLenis(engine);
     };
+    // A browser can move focus/scroll before delivering a link click. Sync to
+    // its actual position before resolving a hash target, rather than using a
+    // stale interpolated offset. This also handles keyboard-activated anchors.
+    const anchorClick = (event: MouseEvent) => {
+      if (
+        !engine ||
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey
+      )
+        return;
+      const link =
+        event.target instanceof Element
+          ? event.target.closest<HTMLAnchorElement>("a[href^='#']")
+          : null;
+      if (
+        !link ||
+        link.hasAttribute("download") ||
+        (link.target && link.target !== "_self")
+      )
+        return;
+      let id: string;
+      try {
+        id = decodeURIComponent(link.hash.slice(1));
+      } catch {
+        return;
+      }
+      const target = id
+        ? document.getElementById(id)
+        : document.documentElement;
+      if (!target) return;
+      event.preventDefault();
+      engine.scrollTo(engine.actualScroll, { immediate: true, force: true });
+      engine.resize();
+      engine.scrollTo(target, { onStart: schedule });
+      schedule();
+    };
     const markScrolled = () =>
       document.documentElement.classList.add("user-scrolled");
     sync();
+    document.addEventListener("click", anchorClick);
     pointer.addEventListener("change", sync);
     motion.addEventListener("change", sync);
     window.addEventListener("scroll", markScrolled, {
@@ -123,6 +169,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       passive: true,
     });
     return () => {
+      document.removeEventListener("click", anchorClick);
       pointer.removeEventListener("change", sync);
       motion.removeEventListener("change", sync);
       window.removeEventListener("scroll", markScrolled);
