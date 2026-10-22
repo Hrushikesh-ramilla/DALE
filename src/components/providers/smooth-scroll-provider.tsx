@@ -133,14 +133,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     window.addEventListener("dale:motion-refresh", scheduleRefreshSoon);
     document.addEventListener("visibilitychange", handleVisibilityChange);
 
-    const isTest =
-      typeof navigator !== "undefined" &&
-      Boolean(
-        navigator.webdriver ||
-          (window as unknown as { __PLAYWRIGHT__?: boolean }).__PLAYWRIGHT__,
-      );
-
-    if (prefersReducedMotion() || isTest) {
+    if (prefersReducedMotion()) {
       ScrollTrigger.defaults({ toggleActions: "play none none none" });
       scheduleRefresh(0);
       return () => {
@@ -175,18 +168,10 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
 
     lenisRef.current = lenis;
 
-    const stopScrollSync = (() => {
-      let lastProgress = 0;
-      const handler = () => {
-        const progress = window.scrollY;
-        const delta = Math.abs(progress - lastProgress);
-        lastProgress = progress;
-        if (delta > 200) {
-          ScrollTrigger.update();
-        }
-      };
-      return lenis.on("scroll", handler);
-    })();
+    const handleScroll = () => {
+      ScrollTrigger.update();
+    };
+    lenis.on("scroll", handleScroll);
 
     gsap.ticker.add(tickLenis);
     gsap.ticker.lagSmoothing(0);
@@ -208,9 +193,9 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       mobileMedia.removeEventListener("change", handleCapabilityChange);
       if (refreshFrame) window.cancelAnimationFrame(refreshFrame);
       if (refreshTimer) window.clearTimeout(refreshTimer);
+      lenis.off("scroll", handleScroll);
       lenis.destroy();
       lenisRef.current = null;
-      stopScrollSync();
       gsap.ticker.remove(tickLenis);
       delete (window as unknown as { lenis?: Lenis }).lenis;
       delete (window as unknown as { __lenis?: Lenis }).__lenis;
