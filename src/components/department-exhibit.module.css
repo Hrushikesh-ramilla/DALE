@@ -1,0 +1,337 @@
+.section {
+  padding-block: 96px 72px;
+  scroll-margin-top: 100px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+  padding: 0 4px 42px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.19em;
+  color: #a5a59e;
+}
+.heading h2 {
+  font-family: "Boska", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(42px, 5.4vw, 78px);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  margin: 22px 0 0;
+}
+.heading h2 em {
+  color: #999b94;
+  font-weight: 400;
+}
+.heading p {
+  width: 270px;
+  max-width: 100%;
+  font-size: 13px;
+  color: #a4a49d;
+  line-height: 1.8;
+  padding-bottom: 6px;
+}
+.list {
+  display: grid;
+  gap: 30px;
+}
+.slot {
+  min-width: 0;
+  position: relative;
+}
+.plate {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  min-height: 470px;
+  border: 1px solid #ffffff21;
+  border-radius: 22px;
+  text-decoration: none;
+  color: #f1f0e9;
+  background: linear-gradient(145deg, #232421, #11120f 60%);
+  box-shadow:
+    0 2px 0 #ffffff13 inset,
+    0 -5px 0 #030403,
+    0 7px 0 #252621,
+    0 20px 34px #0005;
+  isolation: isolate;
+}
+.plate::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  border: 1px solid #ffffff10;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    #ffffff0a 50%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.plate:hover::after {
+  opacity: 1;
+}
+.plate:focus-visible {
+  outline: 2px solid #e6e5db;
+  outline-offset: 8px;
+}
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: clamp(28px, 4.2vw, 64px);
+  position: relative;
+  z-index: 1;
+}
+.index {
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  color: #a7a89f;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.index span {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  opacity: 0.65;
+}
+.copy h3 {
+  font-family: "Boska", Georgia, serif;
+  font-size: clamp(38px, 4.1vw, 62px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  margin: 42px 0 16px;
+}
+.copy p {
+  max-width: 340px;
+  margin: 0;
+  color: #b5b7ae;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.tags {
+  display: flex;
+  gap: 8px 18px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+.tags span {
+  color: #999c92;
+  font-size: 10px;
+  border-bottom: 1px solid #ffffff24;
+  padding-bottom: 4px;
+}
+.explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 42px;
+  font-size: 12px;
+  padding-top: 22px;
+  margin-top: auto;
+}
+.explore svg {
+  transition: transform 0.35s;
+}
+.plate:hover .explore svg {
+  transform: translate(3px, -3px);
+}
+.visual {
+  position: relative;
+  min-height: 430px;
+  border-radius: 0 21px 21px 0;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+    ellipse at 50% 37%,
+    #fffef9,
+    #eeeee7 70%,
+    #dfdfd5
+  );
+  color: #252820;
+}
+.edition {
+  position: absolute;
+  top: 26px;
+  left: 28px;
+  letter-spacing: 0.18em;
+  font-size: 8px;
+  color: #71756a;
+  z-index: 2;
+}
+.object {
+  position: relative;
+  width: 92%;
+  height: 350px;
+  z-index: 1;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.shadow {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 55px;
+  height: 20px;
+  background: radial-gradient(ellipse, #22251c24, transparent 70%);
+  pointer-events: none;
+}
+.count {
+  position: absolute;
+  left: 28px;
+  bottom: 24px;
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  color: #74776a;
+  z-index: 2;
+}
+.number {
+  position: absolute;
+  right: 22px;
+  bottom: 0;
+  font:
+    100px/1 "Boska",
+    Georgia,
+    serif;
+  color: #3038200c;
+  pointer-events: none;
+}
+.footer {
+  padding-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #9ca091;
+}
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  color: #e0e0d6;
+  text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .plate[data-depth-active="true"] .copy {
+    transform: translateZ(12px);
+  }
+}
+/* Native scroll timelines animate only the image plane; no scroll callback,
+ * pinning, layout updates, or inertial wheel interception. */
+@supports (animation-timeline: view()) {
+  @media (min-width: 1100px) and (prefers-reduced-motion: no-preference) {
+    .slot {
+      view-timeline-name: --collection;
+      view-timeline-axis: block;
+    }
+    .image {
+      animation: object-drift linear both;
+      animation-timeline: --collection;
+      animation-range: entry 0% exit 100%;
+    }
+  }
+}
+@keyframes object-drift {
+  from {
+    transform: translateY(22px);
+  }
+  to {
+    transform: translateY(-22px);
+  }
+}
+@media (max-width: 1100px) {
+  .plate {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+  .copy {
+    padding: 32px;
+  }
+  .object {
+    height: 310px;
+  }
+}
+@media (max-width: 760px) {
+  .section {
+    padding-block: 52px 48px;
+  }
+  .heading {
+    display: block;
+    padding-bottom: 30px;
+  }
+  .heading h2 {
+    font-size: 43px;
+  }
+  .heading p {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .list {
+    gap: 26px;
+  }
+  .plate {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    border-radius: 17px;
+  }
+  .copy {
+    padding: 26px;
+  }
+  .copy h3 {
+    margin: 24px 0 12px;
+    font-size: 42px;
+  }
+  .tags {
+    margin: 18px 0;
+  }
+  .explore {
+    padding-top: 10px;
+    gap: 24px;
+  }
+  .visual {
+    min-height: 275px;
+    border-radius: 0 0 16px 16px;
+  }
+  .object {
+    height: 225px;
+  }
+  .edition {
+    top: 18px;
+    left: 22px;
+    font-size: 7px;
+  }
+  .count {
+    bottom: 18px;
+    left: 22px;
+  }
+  .number {
+    font-size: 80px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .image,
+  .plate::after,
+  .explore svg {
+    animation: none;
+    transition: none;
+  }
+}

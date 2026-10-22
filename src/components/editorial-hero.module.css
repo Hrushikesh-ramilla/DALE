@@ -1,0 +1,386 @@
+.hero.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 6%;
+  min-height: 790px;
+  background: #f3f2eb;
+  color: #20221d;
+  padding: 30px clamp(24px, 5vw, 80px) 24px;
+  text-align: left;
+  position: relative;
+  overflow: clip;
+}
+.edition {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  color: #83857b;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #34382b1c;
+}
+.copy {
+  position: relative;
+  align-self: center;
+  padding: 54px 0 62px;
+  z-index: 2;
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: #797d71;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.eyebrow > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #69765a;
+  box-shadow: 0 0 0 4px #69765a10;
+}
+.hero .copy h2 {
+  font-family: "Boska", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(70px, 8vw, 124px);
+  line-height: 0.91;
+  letter-spacing: -0.055em;
+  color: #20221d;
+  margin: 34px 0 28px;
+}
+.hero .copy h2 em {
+  font-style: italic;
+  color: #777e6a;
+}
+.copy p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #74786d;
+  margin-bottom: 30px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+}
+.actions button {
+  border: 1px solid #171c15;
+  background: linear-gradient(150deg, #3b4235, #20271d);
+  color: #fafaf3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 16px 22px;
+  border-radius: 9px;
+  font-size: 12px;
+  box-shadow:
+    0 1px 0 #ffffff38 inset,
+    0 3px 0 #10170e,
+    0 9px 20px #212b1b20;
+  transition: transform 0.25s;
+  cursor: pointer;
+}
+.actions button:hover {
+  transform: translateY(-2px);
+}
+.actions button:active {
+  transform: translateY(2px);
+}
+.actions a {
+  color: #464d3d;
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding-block: 10px;
+  border-bottom: 1px solid #656d5750;
+}
+.note {
+  display: block;
+  margin-top: 30px;
+  font-size: 9px;
+  letter-spacing: 0.03em;
+  color: #8b8e84;
+}
+.display {
+  min-width: 0;
+  padding: 34px 0 18px;
+  align-self: center;
+  position: relative;
+}
+.displayTitle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #8a8e80;
+  letter-spacing: 0.17em;
+  margin-bottom: 15px;
+}
+.stage {
+  height: 395px;
+  width: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+.frame {
+  position: absolute;
+  inset: 8px 18px 25px;
+  border: 1px solid #ffffffb0;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #fff8, #fff0 55%, #d8dace45);
+  box-shadow:
+    1px 1px 0 #aaa99740,
+    -1px -1px 0 #fff9,
+    0 16px 30px #38422b08;
+  pointer-events: none;
+}
+.object {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  z-index: 2;
+  animation: appear 0.6s both;
+}
+.stage :global(.product-viewer) {
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+  will-change: auto;
+  contain: layout style;
+}
+.stage :global(.product-photograph) {
+  min-height: 0;
+}
+.plinth {
+  position: absolute;
+  width: 70%;
+  bottom: 7px;
+  left: 15%;
+  height: 23px;
+  background: linear-gradient(#fdfcf5, #dedfd4);
+  border: 1px solid #d8dacb;
+  border-radius: 50%;
+  box-shadow:
+    0 5px 0 #c6cab9,
+    0 7px 0 #adb39f,
+    0 14px 18px #313e2317;
+}
+.vertical {
+  position: absolute;
+  left: 6px;
+  top: 39%;
+  writing-mode: vertical-rl;
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: #999d8e;
+}
+.objectNumber {
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+  font:
+    95px/0.9 "Boska",
+    Georgia,
+    serif;
+  color: #5060380c;
+}
+.caption {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-inline: 14px;
+}
+.caption > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.caption a {
+  font-size: 13px;
+  color: #33382c;
+  text-decoration: none;
+}
+.caption small {
+  color: #858a7b;
+  font-size: 9px;
+}
+.caption a.open {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #b7bcab;
+  border-radius: 50%;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 17px;
+}
+.controls button {
+  min-width: 32px;
+  min-height: 32px;
+  border: 0;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  color: #7c8371;
+  padding: 8px;
+  cursor: pointer;
+}
+.controls .dot {
+  min-width: 28px;
+  padding: 10px;
+}
+.dot span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #b8bdad;
+  transition: transform 0.2s;
+}
+.dot[aria-pressed="true"] span {
+  background: #454e38;
+  transform: scale(1.5);
+}
+.baseline {
+  grid-column: 1/-1;
+  border-top: 1px solid #34382b1c;
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: #8a8e81;
+  align-self: end;
+}
+.baseline a {
+  color: #747d66;
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 9px;
+  letter-spacing: 0;
+}
+@keyframes appear {
+  from {
+    opacity: 0.4;
+    transform: translateY(9px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .stage[data-depth-active="true"] .object {
+    transform: translateZ(28px);
+    animation: none;
+  }
+}
+@media (max-width: 1000px) {
+  .hero.hero {
+    gap: 0 4%;
+    min-height: 700px;
+  }
+  .hero .copy h2 {
+    font-size: 82px;
+  }
+  .actions {
+    gap: 14px;
+  }
+  .actions button {
+    gap: 16px;
+    padding: 14px 16px;
+  }
+  .stage {
+    height: 350px;
+  }
+  .object {
+    height: 300px;
+  }
+}
+@media (max-width: 720px) {
+  .hero.hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding: 22px 24px;
+  }
+  .edition {
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 7px;
+  }
+  .edition span:last-child {
+    display: none;
+  }
+  .copy {
+    padding: 36px 0 12px;
+    width: 100%;
+  }
+  .hero .copy h2 {
+    font-size: clamp(69px, 17vw, 100px);
+    margin: 25px 0 22px;
+  }
+  .copy p {
+    font-size: 13px;
+    margin-bottom: 22px;
+  }
+  .note {
+    margin-top: 22px;
+  }
+  .display {
+    width: 100%;
+    padding-top: 35px;
+  }
+  .stage {
+    height: 310px;
+  }
+  .object {
+    height: 270px;
+  }
+  .caption {
+    padding-inline: 0;
+  }
+  .caption a {
+    font-size: 12px;
+  }
+  .controls { gap: 6px; }
+  .controls button, .controls .dot { min-width: 44px; min-height: 44px; }
+  .caption a.open { width: 44px; height: 44px; }
+  .baseline {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .baseline > span {
+    font-size: 7px;
+  }
+  .baseline a {
+    font-size: 8px;
+    gap: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .object {
+    animation: none;
+  }
+  .actions button,
+  .dot span {
+    transition: none;
+  }
+}
