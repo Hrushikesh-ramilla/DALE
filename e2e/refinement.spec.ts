@@ -114,7 +114,27 @@ test("Lenis interpolates wheel input and preserves keyboard navigation", async (
   );
   const before = await page.evaluate(() => scrollY);
   await page.mouse.move(2, 2);
+  const wheelSamples = page.evaluate(
+    () =>
+      new Promise<number[]>((resolve) => {
+        window.addEventListener(
+          "wheel",
+          () => {
+            const values: number[] = [];
+            const sample = () => {
+              values.push(scrollY);
+              if (values.length === 24) resolve(values);
+              else requestAnimationFrame(sample);
+            };
+            requestAnimationFrame(sample);
+          },
+          { once: true, passive: true },
+        );
+      }),
+  );
   await page.mouse.wheel(0, 500);
+  const positions = await wheelSamples;
+  expect(new Set(positions.map(Math.round)).size).toBeGreaterThan(4);
   await expect
     .poll(() => page.evaluate(() => scrollY))
     .toBeGreaterThan(before + 100);
