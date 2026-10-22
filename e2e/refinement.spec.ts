@@ -139,6 +139,60 @@ test("late initial session snapshots do not cancel the first shopping request", 
   }
 });
 
+test("an initial owned session snapshot cannot interrupt assistant bootstrap", async ({
+  page,
+}) => {
+  await page.request.post("/api/copilot/state", {
+    data: { action: "start" },
+    headers: { origin: baseURL },
+  });
+  let releaseSession!: () => void;
+  let releaseEnsure!: () => void;
+  let releaseReads!: () => void;
+  const session = new Promise<void>((resolve) => {
+    releaseSession = resolve;
+  });
+  const ensure = new Promise<void>((resolve) => {
+    releaseEnsure = resolve;
+  });
+  const reads = new Promise<void>((resolve) => {
+    releaseReads = resolve;
+  });
+  await page.route("**/api/session", async (route) => {
+    if (route.request().method() !== "GET") return route.continue();
+    const response = await route.fetch();
+    await session;
+    await route.fulfill({ response });
+  });
+  await page.route("**/api/copilot/state", async (route) => {
+    const response = await route.fetch();
+    if (route.request().method() === "POST") {
+      releaseSession();
+      await ensure;
+    } else await reads;
+    await route.fulfill({ response });
+  });
+  try {
+    await page.goto("/");
+    await page
+      .getByLabel("Your shopping request")
+      .fill("Browser slow streamed reply");
+    await page.getByRole("button", { name: "Ask DALE", exact: true }).click();
+    await expect(
+      page.getByRole("button", { name: /Shopper.*Sign out/ }),
+    ).toBeVisible();
+    releaseEnsure();
+    await expect(page.locator(".dale-messages-feed")).toContainText(
+      "Genuine first streamed words; the complete reply is now saved.",
+    );
+  } finally {
+    releaseSession();
+    releaseEnsure();
+    releaseReads();
+    await page.unrouteAll({ behavior: "wait" });
+  }
+});
+
 test("depth follows the pointer, settles, and releases temporary promotion", async ({
   page,
 }) => {

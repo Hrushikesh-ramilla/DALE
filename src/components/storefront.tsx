@@ -205,13 +205,17 @@ export default function Storefront({ children }: { children?: ReactNode }) {
     : null;
   const [restoring, setRestoring] = useState(true);
   const sessionRestoreRevision = useRef(0);
+  const sessionAnnounced = useRef(false);
   useEffect(() => {
-    if (!restoring)
+    if (!restoring) {
+      const initial = !sessionAnnounced.current;
+      sessionAnnounced.current = true;
       window.dispatchEvent(
         new CustomEvent("dale:session-changed", {
-          detail: { owner_id: sessionOwner },
+          detail: { owner_id: sessionOwner, initial },
         }),
       );
+    }
   }, [sessionOwner, restoring]);
   const copilot = useCopilot();
   const shell = useRef<HTMLDivElement>(null);

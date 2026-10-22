@@ -425,8 +425,16 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     };
     const sessionChanged = (event: Event) => {
       const detail = (
-        event as CustomEvent<{ remote?: boolean; owner_id?: string | null }>
+        event as CustomEvent<{
+          remote?: boolean;
+          owner_id?: string | null;
+          initial?: boolean;
+        }>
       ).detail;
+      // The initial storefront snapshot can arrive while ensure() is resolving
+      // the same authenticated session. It is not an account switch; ensure's
+      // server response remains authoritative for this first unowned request.
+      if (detail?.initial && !current.current && activeRequest.current) return;
       if (
         detail &&
         Object.hasOwn(detail, "owner_id") &&
