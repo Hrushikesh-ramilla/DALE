@@ -1,0 +1,13 @@
+/* Promotion lasts only while a pointer-driven surface moves. */
+[data-depth-active="true"] {
+  transform: perspective(1100px) translate3d(0, var(--depth-lift, 0px), 0)
+    rotateX(var(--depth-rx, 0deg)) rotateY(var(--depth-ry, 0deg));
+  transform-style: preserve-3d;
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-depth-active="true"] {
+    transform: none;
+  }
+}

@@ -9,9 +9,11 @@ import { getVerifiedProductImage } from "@/domain/verified-product-image-registr
 export function VerifiedProductPhotograph({
   product,
   compact = false,
+  priority = false,
 }: {
   product: Product;
   compact?: boolean;
+  priority?: boolean;
 }) {
   const resolved = getVerifiedProductImage(product);
   const detailPage = usePathname()?.startsWith("/product/");
@@ -61,7 +63,8 @@ export function VerifiedProductPhotograph({
                 : "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
             }
             quality={75}
-            loading="lazy"
+            loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : "auto"}
             decoding="async"
             style={{
               maxWidth: "100%",
@@ -69,7 +72,6 @@ export function VerifiedProductPhotograph({
               width: "auto",
               height: "auto",
               objectFit: "contain",
-              filter: "drop-shadow(0 12px 24px rgba(0, 0, 0, 0.55))",
             }}
             onError={() => setFailedSource(imageUrl!)}
           />
@@ -85,7 +87,9 @@ export function VerifiedProductPhotograph({
               lineHeight: 1.6,
             }}
           >
-            <span style={{ display: "block", fontWeight: 600, color: "#f8fafc" }}>
+            <span
+              style={{ display: "block", fontWeight: 600, color: "#f8fafc" }}
+            >
               {product.name}
             </span>
             {resolved.url
