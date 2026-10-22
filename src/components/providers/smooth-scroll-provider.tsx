@@ -96,7 +96,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
           smoothWheel: true,
           syncTouch: false,
           lerp: 0.085,
-          anchors: true,
+          anchors: { onStart: schedule },
           prevent: (node) =>
             node.hasAttribute("data-lenis-prevent") ||
             /^(TEXTAREA|SELECT)$/.test(node.tagName) ||
