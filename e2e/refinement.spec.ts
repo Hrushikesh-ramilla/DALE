@@ -233,3 +233,23 @@ test("hero foreground and background travel at different scroll speeds", async (
     )
     .toBeGreaterThan(20);
 });
+
+test("collection anchor starts Lenis and reaches the real collection", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute(
+    "data-scroll-engine",
+    "lenis",
+  );
+  await page
+    .getByRole("link", { name: "Explore the collection", exact: true })
+    .click();
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(700);
+  const heading = page.locator("#collection-title");
+  await expect
+    .poll(() =>
+      heading.evaluate((e) => Math.abs(e.getBoundingClientRect().top)),
+    )
+    .toBeLessThan(350);
+});
