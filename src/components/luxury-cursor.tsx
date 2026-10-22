@@ -214,18 +214,6 @@ export function LuxuryCursor() {
       updateTargetState(e.target as HTMLElement | null);
     };
 
-    let scrollRafId: number | null = null;
-    const onScroll = () => {
-      if (lastX < 0 || lastY < 0 || scrollRafId !== null) return;
-      scrollRafId = requestAnimationFrame(() => {
-        scrollRafId = null;
-        const el = document.elementFromPoint(lastX, lastY) as HTMLElement | null;
-        if (el) {
-          updateTargetState(el);
-        }
-      });
-    };
-
     const onMouseDown = () => {
       gsap.to(ring, {
         scale: isHoveringInteractive ? 1.22 : 0.82,
@@ -255,17 +243,14 @@ export function LuxuryCursor() {
     };
 
     window.addEventListener("pointermove", onPointerMove, { passive: true });
-    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("mousedown", onMouseDown, { passive: true });
     window.addEventListener("mouseup", onMouseUp, { passive: true });
     document.addEventListener("mouseleave", onMouseLeave);
     document.addEventListener("mouseenter", onMouseEnter);
 
     return () => {
-      if (scrollRafId !== null) cancelAnimationFrame(scrollRafId);
       document.body.classList.remove("has-custom-cursor");
       window.removeEventListener("pointermove", onPointerMove);
-      window.removeEventListener("scroll", onScroll);
       window.removeEventListener("mousedown", onMouseDown);
       window.removeEventListener("mouseup", onMouseUp);
       document.removeEventListener("mouseleave", onMouseLeave);

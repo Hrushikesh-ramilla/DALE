@@ -161,9 +161,9 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     const isMobile = isMobileViewport();
 
     const lenis = new Lenis({
-      duration: isMobile ? 1.0 : 1.2,
+      duration: isMobile ? 0.8 : 1.0,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
+      smoothWheel: false, // Keep native hardware momentum scroll for instant 120 FPS response without lag
       syncTouch: false,
       touchMultiplier: 1,
       infinite: false,
@@ -189,7 +189,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     })();
 
     gsap.ticker.add(tickLenis);
-    gsap.ticker.lagSmoothing(0);
+    gsap.ticker.lagSmoothing(500, 33);
 
     scheduleRefresh(0);
 
