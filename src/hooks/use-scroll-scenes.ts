@@ -128,14 +128,14 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         );
         timeline.fromTo(
           root.querySelector("[data-hero-display]"),
-          { y: 0, rotation: -1.2 },
-          { y: 125, rotation: 2.5, ease: "none" },
+          { y: 0, rotation: 0 },
+          { y: 125, rotation: 1.2, ease: "none" },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-backdrop]"),
-          { y: 0, rotation: 0 },
-          { y: -90, rotation: -12, ease: "none" },
+          { y: 0, scale: 1.04 },
+          { y: -90, scale: 1.12, ease: "none" },
           0,
         );
         return () => {

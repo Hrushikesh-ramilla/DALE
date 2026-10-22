@@ -110,16 +110,16 @@ export function DepartmentExhibit({
       id="collections"
       aria-labelledby="collection-title"
     >
-      <header className={styles.heading}>
+      <header className={styles.heading} data-editorial-reveal>
         <div>
           <span className={styles.eyebrow}>
             THE COLLECTION / {String(collections.length).padStart(2, "0")}{" "}
             DEPARTMENTS
           </span>
           <h2 id="collection-title">
-            Extraordinary objects.
+            A world of good things.
             <br />
-            <em>Considered choices.</em>
+            <em>Made personal.</em>
           </h2>
         </div>
         <p>

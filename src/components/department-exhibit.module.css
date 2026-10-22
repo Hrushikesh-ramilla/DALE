@@ -1,5 +1,8 @@
 .section {
-  padding-block: 96px 72px;
+  padding: 115px clamp(22px, 4vw, 72px) 75px;
+  margin-inline: calc(-1 * clamp(22px, 4vw, 72px));
+  background: #ebe7df;
+  color: #292a24;
   scroll-margin-top: 100px;
 }
 .heading {
@@ -7,36 +10,36 @@
   justify-content: space-between;
   align-items: end;
   gap: 40px;
-  padding: 0 4px 42px;
+  padding: 0 4px 62px;
 }
 .eyebrow {
   font-size: 10px;
   letter-spacing: 0.19em;
-  color: #a5a59e;
+  color: #7a7c6e;
 }
 .heading h2 {
   font-family: "Boska", Georgia, serif;
   font-weight: 400;
-  font-size: clamp(42px, 5.4vw, 78px);
-  line-height: 1.02;
+  font-size: clamp(55px, 7.2vw, 108px);
+  line-height: 0.98;
   letter-spacing: -0.045em;
   margin: 22px 0 0;
 }
 .heading h2 em {
-  color: #999b94;
+  color: #767e68;
   font-weight: 400;
 }
 .heading p {
   width: 270px;
   max-width: 100%;
   font-size: 13px;
-  color: #a4a49d;
+  color: #696e5f;
   line-height: 1.8;
   padding-bottom: 6px;
 }
 .list {
   display: grid;
-  gap: 30px;
+  gap: 35px;
 }
 .slot {
   min-width: 0;
@@ -48,15 +51,14 @@
   grid-template-columns: 0.95fr 1.05fr;
   min-height: 470px;
   border: 1px solid #ffffff21;
-  border-radius: 22px;
+  border-radius: 2px;
   text-decoration: none;
   color: #f1f0e9;
   background: linear-gradient(145deg, #232421, #11120f 60%);
   box-shadow:
-    0 2px 0 #ffffff13 inset,
-    0 -5px 0 #030403,
-    0 7px 0 #252621,
-    0 20px 34px #0005;
+    0 1px 0 #ffffff13 inset,
+    0 5px 0 #c4c3b7,
+    0 18px 28px #292f1b1f;
   transform-style: flat;
 }
 .plate::after {
@@ -105,14 +107,14 @@
 }
 .copy h3 {
   font-family: "Boska", Georgia, serif;
-  font-size: clamp(38px, 4.1vw, 62px);
+  font-size: clamp(54px, 6.7vw, 104px);
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 0.92;
   letter-spacing: -0.035em;
-  margin: 42px 0 16px;
+  margin: 45px 0 22px;
 }
 .copy p {
-  max-width: 340px;
+  max-width: 310px;
   margin: 0;
   color: #b5b7ae;
   font-size: 13px;
@@ -134,7 +136,7 @@
   display: inline-flex;
   align-items: center;
   gap: 42px;
-  font-size: 12px;
+  font-size: 11px;
   padding-top: 22px;
   margin-top: auto;
 }
@@ -147,7 +149,7 @@
 .visual {
   position: relative;
   min-height: 430px;
-  border-radius: 0 21px 21px 0;
+  border-radius: 0;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -170,8 +172,8 @@
 }
 .object {
   position: relative;
-  width: 92%;
-  height: 350px;
+  width: 90%;
+  height: clamp(330px, 40vw, 445px);
   z-index: 1;
 }
 .image {
@@ -202,10 +204,10 @@
   right: 22px;
   bottom: 0;
   font:
-    100px/1 "Boska",
+    170px/1 "Boska",
     Georgia,
     serif;
-  color: #3038200c;
+  color: #30382014;
   pointer-events: none;
 }
 .footer {
@@ -214,13 +216,13 @@
   gap: 20px;
   justify-content: space-between;
   font-size: 11px;
-  color: #9ca091;
+  color: #707761;
 }
 .footer a {
   display: inline-flex;
   align-items: center;
   gap: 18px;
-  color: #e0e0d6;
+  color: #353e2b;
   text-decoration: none;
 }
 
@@ -263,10 +265,10 @@
     transform: translateY(var(--stack-recede, 0px)) scale(var(--stack-scale, 1));
   }
   .plate {
-    min-height: 470px;
+    min-height: clamp(470px, 63vh, 650px);
   }
   .visual {
-    min-height: 470px;
+    min-height: clamp(470px, 63vh, 650px);
   }
   .slot {
     view-timeline-name: --collection;
@@ -314,14 +316,14 @@
 }
 @media (max-width: 760px) {
   .section {
-    padding-block: 52px 48px;
+    padding-block: 66px 48px;
   }
   .heading {
     display: block;
     padding-bottom: 30px;
   }
   .heading h2 {
-    font-size: 43px;
+    font-size: 51px;
   }
   .heading p {
     width: 100%;
@@ -335,14 +337,14 @@
     display: flex;
     flex-direction: column;
     min-height: 0;
-    border-radius: 17px;
+    border-radius: 2px;
   }
   .copy {
     padding: 26px;
   }
   .copy h3 {
     margin: 24px 0 12px;
-    font-size: 42px;
+    font-size: 61px;
   }
   .tags {
     margin: 18px 0;
@@ -353,7 +355,7 @@
   }
   .visual {
     min-height: 275px;
-    border-radius: 0 0 16px 16px;
+    border-radius: 0;
   }
   .object {
     height: 225px;

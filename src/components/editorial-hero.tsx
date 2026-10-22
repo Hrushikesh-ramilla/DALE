@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { productById } from "@/domain/catalog";
 import { formatMoney } from "@/domain/money";
@@ -30,23 +31,41 @@ export function EditorialHero() {
       aria-label="The everyday edit"
       ref={scene}
     >
+      <div
+        className={styles.sceneBackdrop}
+        data-hero-backdrop
+        aria-hidden="true"
+      >
+        <Image
+          src="/images/editorial/atelier-light.webp"
+          alt=""
+          fill
+          sizes="100vw"
+          loading="eager"
+          fetchPriority="low"
+          className={styles.ambientImage}
+        />
+      </div>
       <div className={styles.edition}>
-        <span>DALE / THE CONSIDERED COLLECTION</span>
-        <span>EST. FOR EVERYDAY LIFE</span>
+        <span>DALE / A MORE PERSONAL WAY TO SHOP</span>
+        <span>OBJECTS. IDEAS. EVERYDAY LIFE.</span>
       </div>
       <div className={styles.copy} data-hero-copy>
         <span className={styles.eyebrow}>
           <span aria-hidden="true" /> YOUR PERSONAL SHOPPING AGENT
         </span>
         <h2>
-          A considered
-          <br />
-          <em>choice.</em>
+          <span className={styles.line}>
+            <span>A better</span>
+          </span>
+          <span className={styles.line}>
+            <em>everyday.</em>
+          </span>
         </h2>
         <p>
-          Objects worth finding.
+          Find what fits your life.
           <br />
-          An agent that helps you choose.
+          Let DALE do the searching.
         </p>
         <div className={styles.actions}>
           <button type="button" onClick={openAssistant}>
@@ -61,13 +80,8 @@ export function EditorialHero() {
         </span>
       </div>
       <div className={styles.display} data-hero-display>
-        <div
-          className={styles.sceneBackdrop}
-          data-hero-backdrop
-          aria-hidden="true"
-        />
         <div className={styles.displayTitle}>
-          <span>THE EVERYDAY EDIT</span>
+          <span>THE DAILY EDIT</span>
           <span>0{index + 1} / 04</span>
         </div>
         <div className={styles.stage} ref={ref} data-hero-depth>
@@ -123,7 +137,7 @@ export function EditorialHero() {
         </div>
       </div>
       <div className={styles.baseline}>
-        <span>CONVERSATION. CATALOG. CONTROL.</span>
+        <span>YOUR TASTE. YOUR CHOICES. YOUR DALE.</span>
         <a href="#collections">
           Discover what belongs with you <ArrowDown size={13} />
         </a>

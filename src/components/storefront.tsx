@@ -12,11 +12,16 @@ import {
   lifestyleProfile,
 } from "@/domain/departments";
 import { CustomerEntry } from "./customer-entry";
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import { StoreContext, type StoreContextType } from "./store-context";
 import {
   ArrowLeft,
@@ -66,7 +71,8 @@ import { AgentWorkspace, type AgentResult } from "./agent-workspace";
 import type { ScenarioKind } from "@/server/scenarios";
 import { GroupPolicySettings } from "./group-policy-settings";
 import { ProviderReconciliation } from "./provider-reconciliation";
-import { CinematicIntro } from "./cinematic-intro";
+import { useCopilot } from "./copilot/copilot-context";
+import { useEditorialReveals } from "@/hooks/use-editorial-reveals";
 import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 
@@ -206,8 +212,9 @@ export default function Storefront({ children }: { children?: ReactNode }) {
         }),
       );
   }, [sessionOwner, restoring]);
-  const [showIntro, setShowIntro] = useState(true);
-  const [logoSettled, setLogoSettled] = useState(false);
+  const copilot = useCopilot();
+  const shell = useRef<HTMLDivElement>(null);
+  useEditorialReveals(shell, pathname);
   const [products, setProducts] = useState<Product[]>(publicCatalog);
   const [model, setModel] = useState("Atlas 14"),
     [category, setCategory] = useState(""),
@@ -222,23 +229,16 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   const [isDeviceMode, setIsDeviceMode] = useState(false);
   const [departmentId, setDepartmentId] = useState("");
   const [heroPrompt, setHeroPrompt] = useState("");
-  const [sidebarTask, setSidebarTask] = useState("");
 
   const handleHeroSubmit = useCallback(
     (customText?: string) => {
       const query = (customText || heroPrompt).trim();
       if (!query) return;
-      setSidebarTask(query);
       setHeroPrompt("");
-      setIsDeviceMode(true);
-      setTimeout(() => {
-        const shopEl = document.getElementById("shop");
-        if (shopEl) {
-          shopEl.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 50);
+      copilot.toggleOpen(true);
+      void copilot.sendMessage(query);
     },
-    [heroPrompt],
+    [heroPrompt, copilot],
   );
   const [summary, setSummary] = useState(
     "Tell us what you need. We'll keep compatibility, your budget, and your choices at the center.",
@@ -713,15 +713,9 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   }
   return (
     <StoreContext.Provider value={storeContextValue}>
-      {showIntro && (
-        <CinematicIntro
-          targetSelector="[data-brand-logo]"
-          onSettled={() => setLogoSettled(true)}
-          onComplete={() => setShowIntro(false)}
-        />
-      )}
       <div
         className="app-shell"
+        ref={shell}
         data-agent-customer={isBuyer ? "true" : undefined}
       >
         <a className="skip-link" href="#main">
@@ -737,10 +731,6 @@ export default function Storefront({ children }: { children?: ReactNode }) {
             href="/"
             aria-label="DALE home"
             data-brand-logo="true"
-            style={{
-              opacity: logoSettled ? 1 : 0,
-              transition: "opacity 0.2s ease",
-            }}
           >
             <BrandWordmark />
           </a>
@@ -949,40 +939,41 @@ export default function Storefront({ children }: { children?: ReactNode }) {
               <>
                 <EditorialHero />
                 <div className="hero-dale-bar" id="hero-dale">
-                  <div className="hero-dale-inner">
+                  <div className="hero-dale-inner" data-editorial-reveal>
                     <div className="hero-dale-badge">
-                      <Sparkles size={14} />
-                      <span>DALE · AI SHOPPING ADVOCATE</span>
+                      <span>01 / YOUR PERSONAL SHOPPING AGENT</span>
                     </div>
                     <h2>
-                      Ask DALE anything. Live shopping guidance beside your
-                      catalog.
+                      A little less searching.
+                      <br />
+                      <em>A lot more possibility.</em>
                     </h2>
                     <p className="hero-dale-sub">
-                      Tell DALE your needs, budget and preferences. DALE stays
-                      pinned beside the products so you can chat continuously
-                      while browsing.
+                      The right fragrance. Your next everyday essential. Tell
+                      DALE what you have in mind, and take it from there.
                     </p>
-                    <div className="hero-dale-input-wrap">
+                    <form
+                      className="hero-dale-input-wrap"
+                      onSubmit={(event) => {
+                        event.preventDefault();
+                        handleHeroSubmit();
+                      }}
+                    >
                       <input
                         type="text"
                         placeholder="Ask DALE: a linen shirt in size M under $60, or a citrus fragrance in 50 ml..."
                         value={heroPrompt}
                         onChange={(e) => setHeroPrompt(e.target.value)}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter") {
-                            handleHeroSubmit();
-                          }
-                        }}
+                        aria-label="Your shopping request"
                       />
                       <button
-                        type="button"
+                        type="submit"
                         className="button primary small"
-                        onClick={() => handleHeroSubmit()}
+                        disabled={!heroPrompt.trim() || copilot.isThinking}
                       >
                         <span>Ask DALE</span> <ArrowRight size={15} />
                       </button>
-                    </div>
+                    </form>
                   </div>
                 </div>
                 <DepartmentExhibit
@@ -999,7 +990,6 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       <AgentWorkspace
                         key={`sidebar:${session?.actor.workspaceId || "visitor"}:${session?.actor.userId || "visitor"}`}
                         variant="sidebar"
-                        initialTask={sidebarTask}
                         session={session}
                         restoring={restoring || busy}
                         model={model}
@@ -2648,6 +2638,21 @@ export default function Storefront({ children }: { children?: ReactNode }) {
         </main>
         <footer className="site-footer-wrap" inert={!!modal}>
           <div className="site-footer-inner">
+            <div className="footer-invitation" data-editorial-reveal>
+              <span>THE NEXT GOOD THING STARTS WITH A CONVERSATION.</span>
+              <p>
+                Consider it <em>found.</em>
+              </p>
+              <button
+                type="button"
+                onClick={() => {
+                  copilot.toggleOpen(true);
+                  void copilot.refresh();
+                }}
+              >
+                Meet your shopping agent <ArrowRight size={20} />
+              </button>
+            </div>
             <div className="site-footer">
               <div className="footer-brand">
                 <div className="brand">
@@ -2715,6 +2720,13 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                   Operator workspace
                 </button>
               </div>
+            </div>
+            <div
+              className="footer-signature"
+              aria-hidden="true"
+              data-editorial-reveal
+            >
+              <BrandWordmark />
             </div>
             <div className="footer-bottom">
               <span>DALE / The considered collection</span>

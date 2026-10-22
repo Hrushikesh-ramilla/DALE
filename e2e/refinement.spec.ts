@@ -55,6 +55,49 @@ test("editorial controls use the real assistant and exact featured listing", asy
   await expect(listing).toHaveAttribute("href", original!);
 });
 
+test("editorial shopping form sends once through the current assistant", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page
+    .getByLabel("Your shopping request")
+    .fill("Browser slow streamed reply");
+  await page.getByRole("button", { name: "Ask DALE", exact: true }).click();
+  await expect(
+    page.getByRole("complementary", { name: "DALE assistant" }),
+  ).toBeVisible();
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Genuine first streamed words; the complete reply is now saved.",
+  );
+  const saved = await (await page.request.get("/api/copilot/state")).json();
+  expect(
+    saved.messages.filter(
+      (message: { text: string }) =>
+        message.text === "Browser slow streamed reply",
+    ),
+  ).toHaveLength(1);
+  await expect(page.getByLabel("Your shopping request")).toHaveValue("");
+});
+
+test("footer invitation opens the assistant without submitting a task", async ({
+  page,
+}) => {
+  await page.goto("/");
+  let sent = 0;
+  page.on("request", (request) => {
+    if (
+      request.url().includes("/api/copilot/chat") &&
+      request.method() === "POST"
+    )
+      sent++;
+  });
+  await page.getByRole("button", { name: "Meet your shopping agent" }).click();
+  await expect(
+    page.getByRole("complementary", { name: "DALE assistant" }),
+  ).toBeVisible();
+  expect(sent).toBe(0);
+});
+
 test("depth follows the pointer, settles, and releases temporary promotion", async ({
   page,
 }) => {
