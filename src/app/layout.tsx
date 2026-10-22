@@ -12,6 +12,7 @@ import "./monochrome.css";
 import "./agent.css";
 import "./copilot.css";
 import "./depth.css";
+import "lenis/dist/lenis.css";
 import { CopilotProvider } from "@/components/copilot/copilot-context";
 import { DaleCopilotSidecar } from "@/components/copilot/dale-copilot-sidecar";
 export const metadata: Metadata = {

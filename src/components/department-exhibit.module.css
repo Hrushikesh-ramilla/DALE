@@ -57,7 +57,7 @@
     0 -5px 0 #030403,
     0 7px 0 #252621,
     0 20px 34px #0005;
-  isolation: isolate;
+  transform-style: preserve-3d;
 }
 .plate::after {
   content: "";
@@ -224,21 +224,60 @@
   text-decoration: none;
 }
 
-@media (hover: hover) and (pointer: fine) {
+/* Outgoing cards remain behind the next card, with independent image/copy
+   planes. The mobile/reduced-motion presentation stays in normal flow. */
+.recede {
+  transform-origin: center top;
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .plate[data-depth-active="true"] .copy {
-    transform: translateZ(12px);
+    transform: translateZ(56px);
+  }
+  .plate[data-depth-active="true"] .visual {
+    transform: translateZ(22px);
+  }
+  .plate[data-depth-active="true"] .object {
+    transform: translate3d(
+      calc(var(--depth-x, 0) * 32px),
+      calc(var(--depth-y, 0) * -26px),
+      40px
+    );
   }
 }
-/* Native scroll timelines animate only the image plane; no scroll callback,
- * pinning, layout updates, or inertial wheel interception. */
-@supports (animation-timeline: view()) {
-  @media (min-width: 1100px) and (prefers-reduced-motion: no-preference) {
-    .slot {
-      view-timeline-name: --collection;
-      view-timeline-axis: block;
-    }
+@media (min-width: 1000px) and (min-height: 700px) and (prefers-reduced-motion: no-preference) {
+  .list {
+    gap: clamp(100px, 18vh, 190px);
+    padding-bottom: 8vh;
+  }
+  .slot {
+    position: sticky;
+    top: calc(var(--stack-top, 90px) + var(--stack-order, 0) * 6px);
+    z-index: calc(1 + var(--stack-order, 0));
+    align-self: start;
+    scroll-margin-top: 110px;
+  }
+  .recede {
+    transform: perspective(1600px) translateY(var(--stack-recede, 0px))
+      rotateX(var(--stack-rotate, 0deg)) scale(var(--stack-scale, 1));
+  }
+  .plate {
+    min-height: 470px;
+  }
+  .visual {
+    min-height: 470px;
+  }
+  .slot {
+    view-timeline-name: --collection;
+    view-timeline-axis: block;
+  }
+  @supports (animation-timeline: view()) {
     .image {
       animation: object-drift linear both;
+      animation-timeline: --collection;
+      animation-range: entry 0% exit 100%;
+    }
+    .number {
+      animation: number-drift linear both;
       animation-timeline: --collection;
       animation-range: entry 0% exit 100%;
     }
@@ -246,10 +285,18 @@
 }
 @keyframes object-drift {
   from {
-    transform: translateY(22px);
+    transform: translateY(64px) scale(0.94);
   }
   to {
-    transform: translateY(-22px);
+    transform: translateY(-64px) scale(1.04);
+  }
+}
+@keyframes number-drift {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(40px);
   }
 }
 @media (max-width: 1100px) {
@@ -333,5 +380,14 @@
   .explore svg {
     animation: none;
     transition: none;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+  .slot:has(:focus-visible) {
+    z-index: 20;
+  }
+  .slot:has(:focus-visible) .recede {
+    transform: none;
   }
 }

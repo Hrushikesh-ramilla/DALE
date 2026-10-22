@@ -17,7 +17,13 @@ export function attachDepthMotion(
     targetX = 0,
     targetY = 0;
   const originalWillChange = element.style.willChange;
-  const properties = ["--depth-rx", "--depth-ry", "--depth-lift"];
+  const properties = [
+    "--depth-rx",
+    "--depth-ry",
+    "--depth-lift",
+    "--depth-x",
+    "--depth-y",
+  ];
   const previousProperties = properties.map((name) =>
     element.style.getPropertyValue(name),
   );
@@ -53,6 +59,8 @@ export function attachDepthMotion(
     elevation += (targetElevation - elevation) * blend;
     element.style.setProperty("--depth-rx", `${y.toFixed(3)}deg`);
     element.style.setProperty("--depth-ry", `${x.toFixed(3)}deg`);
+    element.style.setProperty("--depth-x", (x / rotation).toFixed(4));
+    element.style.setProperty("--depth-y", (y / rotation).toFixed(4));
     element.style.setProperty("--depth-lift", `${elevation.toFixed(3)}px`);
     if (
       Math.abs(targetX - x) +

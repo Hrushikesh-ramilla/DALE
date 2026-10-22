@@ -65,7 +65,7 @@ The system is a Next.js modular monolith. Gemini chooses native functions and ge
 | Commerce and operations  | PayPal sandbox · Node worker · local/S3-compatible evidence storage |
 | Verification             | Vitest · Playwright · bounded live-provider checks                  |
 
-The storefront uses editorial typography, framed product stages and restrained pointer depth. Native scrolling stays independent of animation. Depth runs only while a surface settles; touch and reduced-motion users retain the same controls without tilt. Fonts are self-hosted, and the featured product image loads eagerly.
+The storefront combines Lenis wheel inertia, GSAP scroll scenes and overlapping collection cards. Foreground objects, typography and background planes move independently; outgoing cards recede behind the next collection. Lenis runs on demand while interpolation is active. Touch and reduced-motion layouts retain native scrolling and ordinary document flow. Fonts are self-hosted, and the featured product image loads eagerly.
 
 ## Evaluation
 

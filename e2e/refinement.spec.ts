@@ -86,6 +86,10 @@ test("changing reduced motion immediately removes depth and scroll animation", a
   await hoverAfterScroll(page, card);
   await expect(card).toHaveAttribute("data-depth-active", "true");
   await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(page.locator("html")).not.toHaveAttribute(
+    "data-scroll-engine",
+    "lenis",
+  );
   await expect(card).not.toHaveAttribute("data-depth-active", "true");
   expect(await card.evaluate((e) => getComputedStyle(e).transform)).toBe(
     "none",
@@ -98,19 +102,25 @@ test("changing reduced motion immediately removes depth and scroll animation", a
   ).toBe("none");
 });
 
-test("native wheel and keyboard navigation remain usable without a scroll ticker", async ({
+test("Lenis interpolates wheel input and preserves keyboard navigation", async ({
   page,
 }) => {
   await page.goto("/");
   const card = page.locator("[data-department-card]").first();
   await card.scrollIntoViewIfNeeded();
+  await expect(page.locator("html")).toHaveAttribute(
+    "data-scroll-engine",
+    "lenis",
+  );
   const before = await page.evaluate(() => scrollY);
   await page.mouse.move(2, 2);
   await page.mouse.wheel(0, 500);
   await expect
     .poll(() => page.evaluate(() => scrollY))
     .toBeGreaterThan(before + 100);
-  expect(await page.evaluate(() => "__lenis" in window)).toBe(false);
+  await expect
+    .poll(() => page.evaluate(() => scrollY))
+    .toBeGreaterThan(before + 400);
   await card.scrollIntoViewIfNeeded();
   const destination = await card.getAttribute("href");
   await card.focus();
@@ -152,4 +162,74 @@ test("touch layout has no horizontal overflow or hover-only requirements", async
   } finally {
     await context.close();
   }
+});
+
+test("collection cards visibly overlap and the outgoing surface recedes", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  const slots = page.locator("[data-collection-slot]");
+  await expect(slots.first().locator("..")).toHaveAttribute(
+    "data-stack-ready",
+    "true",
+  );
+  await page.evaluate(() => document.fonts.ready);
+  const secondTop = await slots
+    .nth(1)
+    .evaluate((e) => e.getBoundingClientRect().top + scrollY);
+  await page.evaluate(
+    (y) => window.scrollTo({ top: y - 240, behavior: "instant" }),
+    secondTop,
+  );
+  const outgoing = slots.first().locator("[data-stack-surface]");
+  await expect
+    .poll(() =>
+      outgoing.evaluate((e) =>
+        Number(getComputedStyle(e).getPropertyValue("--stack-scale")),
+      ),
+    )
+    .toBeLessThan(0.98);
+  const firstBox = await slots.first().boundingBox(),
+    secondBox = await slots.nth(1).boundingBox();
+  expect(firstBox).not.toBeNull();
+  expect(secondBox).not.toBeNull();
+  expect(secondBox!.y).toBeLessThan(firstBox!.y + firstBox!.height - 80);
+  expect(
+    await slots.first().evaluate((e) => getComputedStyle(e).position),
+  ).toBe("sticky");
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect
+    .poll(() => slots.first().evaluate((e) => getComputedStyle(e).position))
+    .toBe("relative");
+  expect(await outgoing.evaluate((e) => getComputedStyle(e).transform)).toBe(
+    "none",
+  );
+});
+
+test("hero foreground and background travel at different scroll speeds", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute(
+    "data-scroll-engine",
+    "lenis",
+  );
+  await page.locator(".cinematic-intro-root").waitFor({ state: "detached" });
+  await page.evaluate(() => window.scrollTo({ top: 450, behavior: "instant" }));
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-hero-copy]")
+        .evaluate((e) => new DOMMatrix(getComputedStyle(e).transform).m42),
+    )
+    .toBeLessThan(-20);
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-hero-display]")
+        .evaluate((e) => new DOMMatrix(getComputedStyle(e).transform).m42),
+    )
+    .toBeGreaterThan(20);
 });

@@ -127,7 +127,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  isolation: isolate;
+  transform-style: preserve-3d;
 }
 .frame {
   position: absolute;
@@ -360,9 +360,18 @@
   .caption a {
     font-size: 12px;
   }
-  .controls { gap: 6px; }
-  .controls button, .controls .dot { min-width: 44px; min-height: 44px; }
-  .caption a.open { width: 44px; height: 44px; }
+  .controls {
+    gap: 6px;
+  }
+  .controls button,
+  .controls .dot {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .caption a.open {
+    width: 44px;
+    height: 44px;
+  }
   .baseline {
     width: 100%;
     margin-top: 20px;
@@ -382,5 +391,40 @@
   .actions button,
   .dot span {
     transition: none;
+  }
+}
+
+.sceneBackdrop {
+  position: absolute;
+  inset: 25px -20px 70px;
+  border: 1px solid #9ca58c40;
+  border-radius: 38px;
+  background: linear-gradient(130deg, #dce0d1a0, #f5f5ef20 60%);
+  transform: rotate(-7deg);
+  pointer-events: none;
+  z-index: -1;
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .stage[data-depth-active="true"] .frame {
+    transform: translateZ(-45px);
+  }
+  .stage[data-depth-active="true"] .object {
+    animation: none;
+    transform: translate3d(
+      calc(var(--depth-x, 0) * 42px),
+      calc(var(--depth-y, 0) * -35px),
+      95px
+    );
+  }
+  .stage[data-depth-active="true"] .plinth {
+    transform: translate3d(calc(var(--depth-x, 0) * -14px), 0, 25px);
+  }
+  .stage[data-depth-active="true"] .objectNumber {
+    transform: translateZ(-15px);
+  }
+}
+@media (max-width: 999px), (prefers-reduced-motion: reduce) {
+  .sceneBackdrop {
+    display: none;
   }
 }
