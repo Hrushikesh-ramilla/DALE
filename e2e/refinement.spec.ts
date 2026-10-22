@@ -469,9 +469,11 @@ test("headline letters react locally, spring home, and release their animation h
 test("the whole opening responds in separate planes and stops for reduced motion", async ({
   page,
 }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
   const hero = page.locator(".editorial-hero");
   const atmosphere = page.locator("[data-hero-atmosphere]");
+  await expect(hero).toHaveAttribute("data-depth-ready", "true");
   await page.mouse.move(1300, 600);
   await expect(hero).toHaveAttribute("data-scene-active", "true");
   await expect
