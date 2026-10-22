@@ -1731,30 +1731,6 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                     </details>
                   </div>
                 </section>
-                <div
-                  className="mobile-dale-dock"
-                  aria-label="Mobile DALE Chat Dock"
-                >
-                  <button
-                    type="button"
-                    className="mobile-dale-dock-btn"
-                    onClick={() => {
-                      const el = document.getElementById("dale-chat");
-                      if (el) {
-                        el.scrollIntoView({ behavior: "smooth" });
-                        const input = el.querySelector("textarea");
-                        input?.focus();
-                      }
-                    }}
-                  >
-                    <span className="live-status-pulse" />
-                    <span className="mobile-dale-text">
-                      <strong>Chat with DALE</strong> · Live advice beside
-                      products
-                    </span>
-                    <ArrowRight size={14} />
-                  </button>
-                </div>
               </>
             ) : (
               children

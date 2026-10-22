@@ -65,6 +65,8 @@ The system is a Next.js modular monolith. Gemini chooses native functions and ge
 | Commerce and operations  | PayPal sandbox · Node worker · local/S3-compatible evidence storage |
 | Verification             | Vitest · Playwright · bounded live-provider checks                  |
 
+The storefront uses editorial typography, framed product stages and restrained pointer depth. Native scrolling stays independent of animation. Depth runs only while a surface settles; touch and reduced-motion users retain the same controls without tilt. Fonts are self-hosted, and the featured product image loads eagerly.
+
 ## Evaluation
 
 **Recorded local evidence, 21 October 2026.** Counts below describe different scopes and overlap; they are not a combined test total.

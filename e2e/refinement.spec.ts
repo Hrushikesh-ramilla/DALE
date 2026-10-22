@@ -1,7 +1,36 @@
-import { test, expect, devices } from "@playwright/test";
+import {
+  test,
+  expect,
+  devices,
+  type Page,
+  type Locator,
+} from "@playwright/test";
 
 const baseURL = process.env.E2E_BASE_URL || "http://127.0.0.1:3130";
 test.use({ baseURL, reducedMotion: "no-preference" });
+
+async function hoverAfterScroll(page: Page, card: Locator) {
+  await card.scrollIntoViewIfNeeded();
+  // Browser auto-scroll can emit its final scroll event after hover resolves.
+  // Exercise pointer depth only after native scrolling has reached rest.
+  await page.evaluate(
+    () =>
+      new Promise<void>((resolve) => {
+        let last = scrollY,
+          stable = 0;
+        const frame = () => {
+          stable = Math.abs(scrollY - last) < 0.1 ? stable + 1 : 0;
+          last = scrollY;
+          if (stable >= 6) resolve();
+          else requestAnimationFrame(frame);
+        };
+        requestAnimationFrame(frame);
+      }),
+  );
+  const box = await card.boundingBox();
+  if (!box) throw new Error("Collection card is not laid out");
+  await page.mouse.move(box.x + 300, box.y + 100, { steps: 3 });
+}
 
 test("editorial controls use the real assistant and exact featured listing", async ({
   page,
@@ -33,8 +62,7 @@ test("depth follows the pointer, settles, and releases temporary promotion", asy
   const card = page.locator("[data-department-card]").first();
   await expect(card).toHaveAttribute("data-depth-ready", "true");
   await page.evaluate(() => document.fonts.ready);
-  await card.scrollIntoViewIfNeeded();
-  await card.hover({ position: { x: 300, y: 100 } });
+  await hoverAfterScroll(page, card);
   await expect(card).toHaveAttribute("data-depth-active", "true");
   await expect
     .poll(() =>
@@ -55,8 +83,7 @@ test("changing reduced motion immediately removes depth and scroll animation", a
   const card = page.locator("[data-department-card]").first();
   await expect(card).toHaveAttribute("data-depth-ready", "true");
   await page.evaluate(() => document.fonts.ready);
-  await card.scrollIntoViewIfNeeded();
-  await card.hover({ position: { x: 300, y: 100 } });
+  await hoverAfterScroll(page, card);
   await expect(card).toHaveAttribute("data-depth-active", "true");
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(card).not.toHaveAttribute("data-depth-active", "true");
@@ -102,6 +129,16 @@ test("touch layout has no horizontal overflow or hover-only requirements", async
   try {
     const page = await context.newPage();
     await page.goto("/");
+    const launcher = page.getByRole("button", {
+      name: "Open DALE assistant",
+      exact: true,
+    });
+    await expect(launcher).toHaveCount(1);
+    await launcher.tap();
+    await expect(
+      page.getByRole("complementary", { name: "DALE assistant" }),
+    ).toBeVisible();
+    await page.getByRole("button", { name: "Close assistant" }).tap();
     const card = page.locator("[data-department-card]").first();
     await card.scrollIntoViewIfNeeded();
     await expect(card).not.toHaveAttribute("data-depth-active", "true");
