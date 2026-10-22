@@ -74,8 +74,22 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     const tick = (time: number) => {
       frame = 0;
       engine?.raf(time);
-      if (engine?.isScrolling === "smooth" && !frame)
+      // Fractional CSS destinations can converge just below a half pixel.
+      // Finish on a device-independent CSS pixel instead of keeping the
+      // demand clock alive indefinitely for an invisible remaining distance.
+      if (
+        engine?.isScrolling === "smooth" &&
+        Math.abs(engine.targetScroll - engine.animatedScroll) < 0.5
+      ) {
+        cancelAnimationFrame(frame);
+        frame = 0;
+        engine.scrollTo(Math.round(engine.targetScroll), {
+          immediate: true,
+          force: true,
+        });
+      } else if (engine?.isScrolling === "smooth" && !frame) {
         frame = requestAnimationFrame(tick);
+      }
     };
     const schedule = () => {
       if (!frame && engine) frame = requestAnimationFrame(tick);

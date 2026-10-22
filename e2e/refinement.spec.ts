@@ -279,6 +279,7 @@ test("collection anchor starts Lenis and reaches the real collection", async ({
       }),
     )
     .toBeLessThan(2);
+  await expect(page.locator("html")).not.toHaveClass(/lenis-smooth/);
   const heading = await page.locator("#collection-title").boundingBox();
   expect(heading).not.toBeNull();
   expect(heading!.y).toBeGreaterThan(60);
