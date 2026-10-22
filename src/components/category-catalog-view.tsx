@@ -36,7 +36,7 @@ function getSmartChipsForLeaf(leaf: LeafTypeKey): string[] {
     case "t-shirts":
       return ["Under $400", "Under $600", "Balenciaga", "Brunello Cucinelli", "Mercerized Cotton", "Clear All"];
     case "phones":
-      return ["Apple", "Samsung", "Google", "Under $1,000", "Flagship OLED", "Clear All"];
+      return ["Apple", "Samsung", "OnePlus", "Google", "Under $800", "Under $1,200", "Foldable Displays", "Clear All"];
     case "laptops":
       return ["Apple", "Dell", "Lenovo", "Under $1,500", "Under $2,500", "Workstation", "Clear All"];
     case "fragrance":
@@ -221,22 +221,127 @@ function CategoryCatalogContent({
         ]}
       />
 
+      <header className="category-page-header">
+        <span className="eyebrow">
+          {department ? department.title.toUpperCase() : "THE COLLECTION"} / {parentCat.toUpperCase()}
+        </span>
+        <h1>{title}</h1>
+        <p>
+          Explore authenticated models across prestigious luxury houses. 100% verified merchant provenance and complete technical specifications.
+        </p>
+        <div className="category-stats-bar">
+          <span className="pill">{totalModelsAcrossHouses} Models</span>
+          <span>{brandsList.length} Authenticated Houses</span>
+        </div>
+      </header>
+
+      {/* Universal DALE AI Shopping Assistant Concierge Bar - Prominently visible at top */}
+      <section
+        className="category-ai-concierge-panel"
+        aria-label="AI Shopping Concierge"
+      >
+        <div className="concierge-header-row">
+          <div className="concierge-badge">
+            <Sparkles size={15} className="sparkle-icon" />
+            <span>DALE AI Shopping Concierge · Live Dynamic Filter</span>
+          </div>
+          {aiFeedback && (
+            <div className="concierge-feedback-tag">
+              {aiFeedback}
+            </div>
+          )}
+        </div>
+
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleAiFilter(aiInput);
+          }}
+          className="concierge-input-form"
+        >
+          <input
+            type="text"
+            placeholder={`Ask DALE to filter ${title} (e.g. "Apple iPhone", "Under $800", "Foldable Displays", "Samsung Galaxy")...`}
+            value={aiInput}
+            onChange={(e) => setAiInput(e.target.value)}
+          />
+          <button type="submit" disabled={isAiFiltering}>
+            {isAiFiltering ? "Filtering..." : "Filter with AI"}
+          </button>
+        </form>
+
+        <div className="ai-concierge-chips">
+          <span className="ai-concierge-chip-label">Quick AI Filters:</span>
+          {smartChips.map((chip) => (
+            <button
+              key={chip}
+              type="button"
+              className="ai-concierge-chip"
+              onClick={() => handleAiFilter(chip)}
+            >
+              {chip}
+            </button>
+          ))}
+        </div>
+
+        {/* Active Filters Bar */}
+        {(brandParam || maxBudget || searchQuery) && (
+          <div className="concierge-active-filters-bar">
+            <span className="active-filters-label">Active Filters:</span>
+            {brandParam && (
+              <span className="active-filter-pill">
+                <span>House: {brandParam}</span>
+                <button
+                  type="button"
+                  onClick={() => router.push(`/category/${leaf}?view=all`)}
+                  aria-label="Remove brand filter"
+                >
+                  <X size={12} />
+                </button>
+              </span>
+            )}
+            {maxBudget && (
+              <span className="active-filter-pill">
+                <span>Max: {formatMoney(maxBudget)}</span>
+                <button
+                  type="button"
+                  onClick={() => setMaxBudget(null)}
+                  aria-label="Remove budget filter"
+                >
+                  <X size={12} />
+                </button>
+              </span>
+            )}
+            {searchQuery && (
+              <span className="active-filter-pill">
+                <span>"{searchQuery}"</span>
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  aria-label="Remove search filter"
+                >
+                  <X size={12} />
+                </button>
+              </span>
+            )}
+            <button
+              type="button"
+              className="clear-all-filters-btn"
+              onClick={() => {
+                setMaxBudget(null);
+                setSearchQuery("");
+                router.push(`/category/${leaf}?view=all`);
+              }}
+            >
+              Clear All Filters
+            </button>
+          </div>
+        )}
+      </section>
+
       {/* MODE 1: THE BRAND SHOWCASE HUB */}
       {!isCatalogSpace ? (
         <div className="category-houses-hub">
-          <header className="category-page-header">
-            <span className="eyebrow">
-              {department ? department.title.toUpperCase() : "THE COLLECTION"} / {parentCat.toUpperCase()}
-            </span>
-            <h1>{title}</h1>
-            <p>
-              Explore authenticated models across prestigious luxury houses. 100% verified merchant provenance and complete technical specifications.
-            </p>
-            <div className="category-stats-bar">
-              <span className="pill">{totalModelsAcrossHouses} Models</span>
-              <span>{brandsList.length} Authenticated Houses</span>
-            </div>
-          </header>
 
           {/* Top Utility Bar with Prominent "Explore All" Button */}
           <div className="hub-top-utility-bar">
@@ -389,55 +494,6 @@ function CategoryCatalogContent({
             </div>
           )}
 
-          {/* Universal AI Shopping Assistant Concierge Bar */}
-          <section
-            className="category-ai-concierge-panel"
-            aria-label="AI Shopping Concierge"
-          >
-            <div className="concierge-header-row">
-              <div className="concierge-badge">
-                <Sparkles size={15} className="sparkle-icon" />
-                <span>DALE AI Shopping Assistant · Live Filter</span>
-              </div>
-              {aiFeedback && (
-                <div className="concierge-feedback-tag">
-                  {aiFeedback}
-                </div>
-              )}
-            </div>
-
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleAiFilter(aiInput);
-              }}
-              className="concierge-input-form"
-            >
-              <input
-                type="text"
-                placeholder={`Ask DALE to filter ${title} (e.g. "Under $3,500", "${brandsList[0]?.name || "Brioni"}", "Silk")...`}
-                value={aiInput}
-                onChange={(e) => setAiInput(e.target.value)}
-              />
-              <button type="submit" disabled={isAiFiltering}>
-                {isAiFiltering ? "Filtering..." : "Filter with AI"}
-              </button>
-            </form>
-
-            <div className="ai-concierge-chips">
-              <span className="ai-concierge-chip-label">Suggestions:</span>
-              {smartChips.map((chip) => (
-                <button
-                  key={chip}
-                  type="button"
-                  className="ai-concierge-chip"
-                  onClick={() => handleAiFilter(chip)}
-                >
-                  {chip}
-                </button>
-              ))}
-            </div>
-          </section>
 
           {/* Secondary Filter & Sort Toolbar */}
           <div className="category-filter-secondary">

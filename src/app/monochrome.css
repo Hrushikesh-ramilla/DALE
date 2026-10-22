@@ -653,7 +653,7 @@ select option {
 }
 .card-visual,
 .card-visual .product-art {
-  background: #f5f5f7;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.04) 0%, rgba(10, 12, 18, 0.85) 100%), #121316;
 }
 .product-art {
   will-change: transform;
@@ -1290,8 +1290,9 @@ select option {
 }
 
 .parallax-card-visual .art-frame {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  max-width: 540px;
+  height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
