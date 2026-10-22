@@ -12,7 +12,7 @@ import { useCopilot } from "./copilot/copilot-context";
 import { ProductViewer } from "./product-viewer";
 import styles from "./editorial-hero.module.css";
 
-const edit = ["B001", "B010", "B016", "B23"].map(productById);
+const edit = ["B001", "B012", "B016", "B011"].map(productById);
 
 export function EditorialHero() {
   const [index, setIndex] = useState(0);
