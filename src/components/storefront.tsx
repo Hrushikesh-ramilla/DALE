@@ -865,19 +865,11 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       </span>
                     </div>
                     <div className="parallax-card-visual">
+                      <div className="parallax-stage-dome" />
+                      <div className="parallax-ground-shadow" />
                       <div className="art-frame">
                         {departmentHeroImages[col.id] ? (
-                          <div
-                            style={{
-                              position: "relative",
-                              width: "100%",
-                              height: "100%",
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                              padding: "16px",
-                            }}
-                          >
+                          <div className="parallax-hero-wrapper">
                             <Image
                               src={departmentHeroImages[col.id].src}
                               alt={departmentHeroImages[col.id].alt}
@@ -885,12 +877,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                               height={650}
                               unoptimized
                               priority={col.id === "electronics" || col.id === "clothing"}
-                              style={{
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "contain",
-                                filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.6))",
-                              }}
+                              className="parallax-hero-image"
                             />
                           </div>
                         ) : (

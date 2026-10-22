@@ -1,0 +1,756 @@
+[
+  {
+    "productId": "REPAIR-CANALI-CAC02367288",
+    "source": "https://intl.canali.com/slim-fit-shirt-in-white-cotton-cclx0c3ga6013501/p",
+    "manufacturerSku": "CAC02367288",
+    "manufacturerProductId": "2966309",
+    "manufacturerItemId": "27304",
+    "manufacturerStyleColorReference": "CCLX0C3-GA60135-01",
+    "manufacturerSize": "37",
+    "manufacturerColor": "White",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/457007/CCLX0C3-GA60135-01_a_.jpg?v=638949961812630000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-IMPECCABILE-WRINKLE-FREE-SHIRT",
+    "originalName": "Canali Impeccabile Wrinkle-Resistant Cotton Poplin Dress Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Formal shirt\n- Spread collar\n- Collar height: 3.8 cm\n- Removable stays\n- Rear darts\n- Smooth front with no placket\n- Rounded cuffs\n- 100% cotton\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Slim"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02446844",
+    "source": "https://intl.canali.com/sea-island-light-blue-cotton-twill-regular-fit-shirt-ecl7018gx02451401/p",
+    "manufacturerSku": "CAC02446844",
+    "manufacturerProductId": "3230896",
+    "manufacturerItemId": "43622",
+    "manufacturerStyleColorReference": "ECL7018-GX02451-401",
+    "manufacturerSize": "37",
+    "manufacturerColor": "Light Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/542500/ECL7018-GX02451-401_a_.jpg?v=639215359781670000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-FRENCH-CUFF-TWILL-FORMAL-SHIRT",
+    "originalName": "Canali Fine Two-Ply Cotton Twill French Cuff Dress Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Dress shirt\n- High End\n- Semi-spread collar\n- Collar height 4.2 cm\n- Smooth front with no placket\n- Removable ribs\n- Semi-rounded cuff\n- Mother of pearl buttons\n- 100% Cotton\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02424402",
+    "source": "https://intl.canali.com/impeccabile-light-blue-twill-cotton-regular-fit-shirt-ncl7018gr03721401/p",
+    "manufacturerSku": "CAC02424402",
+    "manufacturerProductId": "3153158",
+    "manufacturerItemId": "40155",
+    "manufacturerStyleColorReference": "NCL7018-GR03721-401",
+    "manufacturerSize": "37",
+    "manufacturerColor": "Light Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/523863/NCL7018-GR03721-401_a_.jpg?v=639086512330970000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-PURE-SILK-EVENING-SHIRT",
+    "originalName": "Canali Fly-Front Pure Silk Satin Formal Evening Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Formal shirt\n- Impeccabile\n- Semi-spread collar\n- Collar height 4.2 cm\n- Removable ribs\n- Smooth back with no pleats\n- Smooth front with no placket\n- Semi-rounded cuff\n- 100% Cotton\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02420488",
+    "source": "https://intl.canali.com/impeccabile-cream-twill-cotton-regular-fit-formal-shirt-ncl7018gr03441701/p",
+    "manufacturerSku": "CAC02420488",
+    "manufacturerProductId": "3147014",
+    "manufacturerItemId": "41031",
+    "manufacturerStyleColorReference": "NCL7018-GR03441-701",
+    "manufacturerSize": "37",
+    "manufacturerColor": "White",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/528715/NCL7018-GR03441-701_a_.jpg?v=639093325613770000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-PURE-LINEN-CAPRI-SHIRT",
+    "originalName": "Canali Garment-Washed Pure Linen Button-Down Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Formal shirt\n- Impeccabile\n- Semi-spread collar\n- Collar height 4.2 cm\n- Removable ribs\n- Smooth back with no pleats\n- Smooth front with no placket\n- Semi-rounded cuff\n- 100% Cotton\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02375511",
+    "source": "https://intl.canali.com/impeccabile-regular-fit-shirt-in-light-blue-cotton-ncl7098gr03299301/p",
+    "manufacturerSku": "CAC02375511",
+    "manufacturerProductId": "2996590",
+    "manufacturerItemId": "27562",
+    "manufacturerStyleColorReference": "NCL7098-GR03299-301",
+    "manufacturerSize": "37",
+    "manufacturerColor": "Light Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/458675/NCL7098-GR03299-301_a_.jpg?v=639047028435030000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-MICRO-JACQUARD-DRESS-SHIRT",
+    "originalName": "Canali Geometric Micro-Jacquard Two-Ply Cotton Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Formal shirt\n- Impeccabile fabric\n- Semi-spread collar\n- Collar height: 4.2 cm\n- Removable stays\n- Smooth back with no darts\n- Smooth front with no placket\n- Semi-rounded cuffs\n- 100% cotton \n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Slim"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02369213",
+    "source": "https://intl.canali.com/regular-fit-shirt-in-light-blue-cotton-ecl7018gx02022402/p",
+    "manufacturerSku": "CAC02369213",
+    "manufacturerProductId": "2971545",
+    "manufacturerItemId": "27202",
+    "manufacturerStyleColorReference": "ECL7018-GX02022-402",
+    "manufacturerSize": "37",
+    "manufacturerColor": "Light Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456167/ECL7018-GX02022-402_a_.jpg?v=639047032025430000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-ROYAL-OXFORD-SPREAD-COLLAR-SHIRT",
+    "originalName": "Canali High-Count Royal Oxford Two-Ply Cotton Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Formal shirt\n- New classic collar\n- Collar height 4.2cm\n- Smooth front with no placket\n- Removable stays\n- Smooth back with no pleats\n- Semi-rounded cuffs\n- Mother-of-pearl buttons\n- 100% double-twisted cotton\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02369202",
+    "source": "https://intl.canali.com/regular-fit-shirt-in-white-cotton-ecl7018gx02022001/p",
+    "manufacturerSku": "CAC02369202",
+    "manufacturerProductId": "2971544",
+    "manufacturerItemId": "27158",
+    "manufacturerStyleColorReference": "ECL7018-GX02022-001",
+    "manufacturerSize": "37",
+    "manufacturerColor": "White",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/455991/ECL7018-GX02022-001_a_.jpg?v=639047035591930000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-CHAMBRAY-CUTAWAY-COLLAR-SHIRT",
+    "originalName": "Canali Fine Cotton Chambray Cutaway Collar Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Formal shirt\n- Semi-spread collar\n- Collar height 4.2cm\n- Removable stays\n- Smooth back with no darts\n- Smooth front with no box pleat\n- Semi-rounded cuffs\n- 100% cotton 140/2\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02365797",
+    "source": "https://intl.canali.com/regular-fit-shirt-in-white-cotton-ccl7018ga6013501/p",
+    "manufacturerSku": "CAC02365797",
+    "manufacturerProductId": "2962863",
+    "manufacturerItemId": "27169",
+    "manufacturerStyleColorReference": "CCL7018-GA60135-01",
+    "manufacturerSize": "37",
+    "manufacturerColor": "White",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456035/CCL7018-GA60135-01_a_.jpg?v=638949966119030000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-BENGAL-STRIPE-COTTON-SHIRT",
+    "originalName": "Canali Two-Ply Cotton Poplin Bengal Stripe Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Formal shirt\n- Semi-spread collar\n- Collar height 4.2cm\n- Removable stays\n- Smooth back with no darts\n- Smooth front with no placket\n- 100% cotton \n- Made in Italy"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02365786",
+    "source": "https://intl.canali.com/regular-fit-shirt-with-double-cuff-in-white-cotton-ccl7018ga6013501p/p",
+    "manufacturerSku": "CAC02365786",
+    "manufacturerProductId": "2962862",
+    "manufacturerItemId": "33727",
+    "manufacturerStyleColorReference": "CCL7018-GA60135-01P",
+    "manufacturerSize": "37",
+    "manufacturerColor": "White",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/489642/CCL7018-GA60135-01P_a_.jpg?v=639047047266930000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-MANDARIN-COLLAR-COTTON-LINEN-SHIRT",
+    "originalName": "Canali Cotton-Linen Blend Band Collar Casual Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Formal shirt\n- Semi-spread collar\n- Collar height 4.2cm\n- Removable stays\n- Smooth back with no darts\n- Smooth front with no placket\n- Semi-rounded and double cuff\n- 100% cotton \n- Made in Italy"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-CAC02365775",
+    "source": "https://intl.canali.com/regular-fit-ceremony-shirt-with-double-cuffs-in-white-cotton-ccl7090ga6013001p/p",
+    "manufacturerSku": "CAC02365775",
+    "manufacturerProductId": "2962861",
+    "manufacturerItemId": "27240",
+    "manufacturerStyleColorReference": "CCL7090-GA60130-01P",
+    "manufacturerSize": "37",
+    "manufacturerColor": "White",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/456333/CCL7090-GA60130-01P_a_.jpg?v=639047041752870000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SHIRTS-CANALI-CANALI-FINE-HOUNDSTOOTH-DRESS-SHIRT",
+    "originalName": "Canali Micro-Houndstooth Combed Cotton Twill Shirt",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Dress shirt\n- Collar with concealed buttons\n- Semi-rounded and double cuff\n- Collar height 4.1cm\n- Made in Italy"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI05834968",
+    "source": "https://intl.canali.com/suit-in-navy-blue-wool-12280-19as1031531/p",
+    "manufacturerSku": "ABI05834968",
+    "manufacturerProductId": "3107333",
+    "manufacturerItemId": "36278",
+    "manufacturerStyleColorReference": "12280/19-AS10315-31",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/502907/12280-19-AS10315-31_a_.jpg?v=638995798262970000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-MILANO-SUPER150S-CLASSIC-SUIT",
+    "originalName": "Canali Milano Classic Fit Super 150s Wool Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Single-breasted jacket with two buttons\n- Slash pockets with flaps and slash breast pocket\n- Jacket length 75 cm in size 50\n- pants without pleats\n- Slanted pockets and two rear welt pockets\n- Cuff 19.5cm\n- 4-button single-breasted waistcoat, piped pockets\n- 100% wool\n- Made in Italy"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI06268196",
+    "source": "https://intl.canali.com/suit-in-navy-blue-wool-12280-20as1031531/p",
+    "manufacturerSku": "ABI06268196",
+    "manufacturerProductId": "3261227",
+    "manufacturerItemId": "45187",
+    "manufacturerStyleColorReference": "12280/20-AS10315-31",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551165/12280-20-AS10315-31_a_.jpg?v=639269543454200000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-SIENA-SOFT-SHOULDER-SUPER130S-SUIT",
+    "originalName": "Canali Siena Soft Shoulder Super 130s Wool Twill Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Single-breasted jacket with two buttons\n- Slash pockets with flaps and slash breast pocket\n- Jacket length 75 cm in size 50\n- pants without pleats\n- Slanted pockets and two rear welt pockets\n- Cuff 19.5cm\n- 100% wool\n- Made in Italy"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI06025618",
+    "source": "https://intl.canali.com/light-blue-denim-effect-wool-regular-fit-suit-22280-19aa02524405/p",
+    "manufacturerSku": "ABI06025618",
+    "manufacturerProductId": "3153643",
+    "manufacturerItemId": "40924",
+    "manufacturerStyleColorReference": "22280/19-AA02524-405",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Light Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/527705/22280-19-AA02524-405_a_.jpg?v=639092630368630000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-IMPECCABILE-2-WATER-RESISTANT-SUIT",
+    "originalName": "Canali Impeccabile 2.0 Water-Resistant Crease-Resistant Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Unlined single-breasted two-button jacket\n- Welted pockets with flap and slit breast pocket\n- Jacket length 75 cm in size 50\n- Pleatless pants\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm\n- 100% wool \n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI05977876",
+    "source": "https://intl.canali.com/black-wool-tuxedo-with-peak-lapels-12786-15bf1091510/p",
+    "manufacturerSku": "ABI05977876",
+    "manufacturerProductId": "3124185",
+    "manufacturerItemId": "39591",
+    "manufacturerStyleColorReference": "12786/15-BF10915-10",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Black",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/520666/12786-15-BF10915-10_a_.jpg?v=639076302321800000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-DOUBLE-BREASTED-PEAK-LAPEL-SUIT",
+    "originalName": "Canali Double-Breasted Peak Lapel 6x2 Worsted Wool Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Tuxedo, one button, besom pockets, breast welt pocket, silk peak lapel \n- Pants: flat-front, quarter-top pockets, two back besom pockets, silk belt and side band, leg bottom: 19.5cm/7.7\" \n- Made in Italy"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI06268313",
+    "source": "https://intl.canali.com/suit-in-blue-wool-12280-20as1031532/p",
+    "manufacturerSku": "ABI06268313",
+    "manufacturerProductId": "3261236",
+    "manufacturerItemId": "45174",
+    "manufacturerStyleColorReference": "12280/20-AS10315-32",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551087/12280-20-AS10315-32_a_.jpg?v=639269541782870000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-BLACK-TIE-SHAWL-LAPEL-TUXEDO",
+    "originalName": "Canali Black Tie Shawl Lapel Wool-Mohair Tuxedo",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Single-breasted jacket with two buttons\n- Slash pockets with flaps and slash breast pocket\n- Jacket length 75 cm in size 50\n- pants without pleats\n- Slanted pockets and two rear welt pockets\n- Cuff 19.5cm\n- 100% wool\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI06268235",
+    "source": "https://intl.canali.com/charcoal-grey-pure-wool-suit-12280-20as1031612/p",
+    "manufacturerSku": "ABI06268235",
+    "manufacturerProductId": "3261230",
+    "manufacturerItemId": "45161",
+    "manufacturerStyleColorReference": "12280/20-AS10316-12",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Grey",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551009/12280-20-AS10316-12_a_.jpg?v=639269540260700000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-VENEZIA-RELAXED-WOOL-SUIT",
+    "originalName": "Canali Venezia Relaxed Drop-6 Contemporary Wool Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Single-breasted two-button jacket\n- Slash pockets with flaps and a slash breast pocket\n- Jacket length: 75 cm in size 50\n- Flat front pants\n- Slanted pockets and two rear welt pockets\n- Hem width: 19.5 cm\n- 100% wool\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI06254295",
+    "source": "https://intl.canali.com/suit-in-black-wool-12280-20as1031510/p",
+    "manufacturerSku": "ABI06254295",
+    "manufacturerProductId": "3261124",
+    "manufacturerItemId": "45200",
+    "manufacturerStyleColorReference": "12280/20-AS10315-10",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Black",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/551243/12280-20-AS10315-10_a_.jpg?v=639269545169930000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-TRAVEL-ESSENTIAL-STRETCH-WOOL-SUIT",
+    "originalName": "Canali Travel Essential Wrinkle-Free Stretch Wool Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Single-breasted jacket with two buttons\n- Slash pockets with flaps and slash breast pocket\n- Jacket length 75 cm in size 50\n- pants without pleats\n- Slanted pockets and two rear welt pockets\n- Cuff 19.5cm\n- 100% wool\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI06247241",
+    "source": "https://intl.canali.com/canali-travel-navy-blue-cashmere-modern-fit-tuxedo-e15786-23ax06219301/p",
+    "manufacturerSku": "ABI06247241",
+    "manufacturerProductId": "3255419",
+    "manufacturerItemId": "43664",
+    "manufacturerStyleColorReference": "E15786/23-AX06219-301",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/542671/E15786-23-AX06219-301_a_.jpg?v=639231878841830000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-SUPER160S-MICRO-CHECK-SUIT",
+    "originalName": "Canali Exclusive Super 160s Micro-Check Tailored Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cashmere"
+    ],
+    "craftsmanshipEvidence": [
+      "- Single-breasted one-button tuxedo jacket\n- Silk peak lapels\n- Piping pockets and cut pocket\n- Jacket length 74 cm in size 50\n- Pleatless pants\n- Silk belt and silk band down the side\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm                                                                                                                                                                                                                   -96% cashmere, 4% elastane                                                                                                                                                                                                   -Made in Italy"
+    ],
+    "fitEvidence": [
+      "Modern"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI06195463",
+    "source": "https://intl.canali.com/navy-blue-160s-wool-herringbone-single-breasted-regular-fit-suit-e12280-20bx00232316/p",
+    "manufacturerSku": "ABI06195463",
+    "manufacturerProductId": "3230886",
+    "manufacturerItemId": "44655",
+    "manufacturerStyleColorReference": "E12280/20-BX00232-316",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/548112/E12280-20-BX00232-316_a_.jpg?v=639247461270270000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-THREE-PIECE-PLAID-WOOL-SUIT",
+    "originalName": "Canali Three-Piece Glen Urquhart Plaid Wool Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Single-breasted two-button jacket \n- Classic lapels\n- Welted pockets with flap and slit breast pocket\n- Jacket length 75 cm in size 50\n- Pleatless pants\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm\n- 100% 160’s wool\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-ABI06195375",
+    "source": "https://intl.canali.com/walnut-and-light-blue-150s-wool-and-silk-pinstriped-herringbone-regular-fit-suit-e12280-20bx05853505/p",
+    "manufacturerSku": "ABI06195375",
+    "manufacturerProductId": "3230878",
+    "manufacturerItemId": "43983",
+    "manufacturerStyleColorReference": "E12280/20-BX05853-505",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Brown",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/544524/E12280-20-BX05853-505_a_.jpg?v=639244737030000000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-SUITS-CANALI-CANALI-SILK-WOOL-BLEND-EVENING-SUIT",
+    "originalName": "Canali Silk-Wool Blend Formal Evening Suit",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Single-breasted two-button jacket \n- Classic lapels\n- Welted pockets with flap and slit breast pocket\n- Jacket length 75 cm in size 50\n- Pleatless pants\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm \n- 99% 150's wool 1% silk\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAN02373488",
+    "source": "https://intl.canali.com/anthracite-canali-impeccabile-wool-regular-fit-pants-72020ar05285112/p",
+    "manufacturerSku": "PAN02373488",
+    "manufacturerProductId": "3231072",
+    "manufacturerItemId": "44234",
+    "manufacturerStyleColorReference": "72020-AR05285-112",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Grey",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/545806/72020-AR05285-112_a_.jpg?v=639244783970200000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-IMPECCABILE-WOOL-TROUSER",
+    "originalName": "Canali Impeccabile 2.0 Water-Repellent Wool Trousers",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Pleatless pants\n- American-style pockets and two welted back pockets\n- Hem 19.5 cm  \n- 100% wool\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAN02373207",
+    "source": "https://intl.canali.com/charcoal-canali-impeccabile-wool-flannel-regular-fit-pants-72120ar03472111/p",
+    "manufacturerSku": "PAN02373207",
+    "manufacturerProductId": "3230850",
+    "manufacturerItemId": "42676",
+    "manufacturerStyleColorReference": "72120-AR03472-111",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Grey",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/537579/72120-AR03472-111_a_.jpg?v=639210193101230000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-SINGLE-PLEAT-FLANNEL-TROUSER",
+    "originalName": "Canali Classic Single-Pleat Super 150s Wool Flannel Trousers",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Pants with one pleat\n- American-style pockets and two welted back pockets\n- Hem 20 cm  \n- 100% wool                                                                                                                                             -Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAC00051361",
+    "source": "https://intl.canali.com/sand-colored-comfort-cotton-gabardine-chinos-d91675pt00417514/p",
+    "manufacturerSku": "PAC00051361",
+    "manufacturerProductId": "3223986",
+    "manufacturerItemId": "42854",
+    "manufacturerStyleColorReference": "D91675-PT00417-514",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Brown",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/538593/D91675-PT00417-514_a_.jpg?v=639210900907600000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-STRETCH-COTTON-TWILL-CHINO",
+    "originalName": "Canali Flat-Front Stretch Cotton Twill Sartorial Chinos",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Flat-front chinos\n- Central fastening with visible button\n- Double welt back pockets with exposed button\n- Hem 19 cm\n- Garment-dyed comfort gabardine\n- 98% Cotton 2% Elastane\n- Made in Italy"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAS00307490",
+    "source": "https://intl.canali.com/five-pocket-regular-fit-stretch-denim-pants-dark-wash-91719pd00018300/p",
+    "manufacturerSku": "PAS00307490",
+    "manufacturerProductId": "2276498",
+    "manufacturerItemId": "38473",
+    "manufacturerStyleColorReference": "91719-PD00018-300",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/514317/91719-PD00018-300_a_.jpg?v=639074558508270000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-EXCLUSIVE-WOOL-SILK-LINEN-TROUSER",
+    "originalName": "Canali Exclusive Double-Pleated Wool-Silk-Linen Trousers",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Five-pocket denim jeans \n- Central metal button fastening\n- Rear patch pockets\n- Genuine leather washable label on the back of the waistband\n- Cuff: 19 cm\n- Stretch denim\n- 10 oz\n- 98% cotton, 2% elastane \n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAN01054648",
+    "source": "https://intl.canali.com/pants-in-navy-blue-wool-71019as1031531/p",
+    "manufacturerSku": "PAN01054648",
+    "manufacturerProductId": "1508104",
+    "manufacturerItemId": "22465",
+    "manufacturerStyleColorReference": "71019-AS10315-31",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/431369/71019-AS10315-31_a_.jpg?v=638925169746900000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-TRAVEL-ELASTICATED-BACK-TROUSER",
+    "originalName": "Canali Travel Elasticated-Back High-Twist Wool Trousers",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Pants without pleats\n- American-style pockets and two welt pockets at the back\t\n- Cuff: 19.5 cm\n- 100% wool\n- Made in Italy"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAN02373227",
+    "source": "https://intl.canali.com/black-and-white-wool-flannel-prince-of-wales-regular-fit-pants-72120bf06182111/p",
+    "manufacturerSku": "PAN02373227",
+    "manufacturerProductId": "3230852",
+    "manufacturerItemId": "41837",
+    "manufacturerStyleColorReference": "72120-BF06182-111",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Grey",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/532929/72120-BF06182-111_a_.jpg?v=639178221921470000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-SIDE-ADJUSTER-BARATHEA-TROUSER",
+    "originalName": "Canali High-Rise Side-Adjuster Wool Barathea Trousers",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Wool"
+    ],
+    "craftsmanshipEvidence": [
+      "- Pants with one pleat\n- American-style pockets and two welted back pockets\n- Hem 20 cm  \n- 100% wool                                                                                                                                                                 - Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAS00432726",
+    "source": "https://intl.canali.com/gray-comfort-cotton-and-cashmere-denim-regular-fit-jeans-91719px01028117/p",
+    "manufacturerSku": "PAS00432726",
+    "manufacturerProductId": "3220261",
+    "manufacturerItemId": "43013",
+    "manufacturerStyleColorReference": "91719-PX01028-117",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Grey",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/539393/91719-PX01028-117_a_.jpg?v=639210927068470000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-GARMENT-DYED-CONTEMPORARY-CHINO",
+    "originalName": "Canali Contemporary Fit Garment-Dyed Cotton Chinos",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Denim five-pockets \n- Regular fit\n- Central fastening with metal logoed button\n - Custom rivet clips \n- Back patch pockets\n- Washable genuine leather back strap label \n- Hem 19 cm\n- Comfort cotton and cashmere denim\n- Oz 9.5\n- 93% Cotton 6% Cashmere 1% Elastomer\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAS00432474",
+    "source": "https://intl.canali.com/dark-blue-comfort-cotton-and-cashmere-denim-regular-fit-jeans-91719px01028301/p",
+    "manufacturerSku": "PAS00432474",
+    "manufacturerProductId": "3219621",
+    "manufacturerItemId": "44215",
+    "manufacturerStyleColorReference": "91719-PX01028-301",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/545711/91719-PX01028-301_a_.jpg?v=639244780950630000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-IRISH-LINEN-SUMMER-TROUSER",
+    "originalName": "Canali Pure Irish Linen Relaxed Tailored Summer Trousers",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Denim 5-pockets \n- Regular fit\n- Central fastening with metal logoed button\n - Custom rivet clips \n- Back patch pockets\n- Washable genuine leather back strap label \n- Hem 19 cm\n- Comfort cotton and cashmere denim\n- Oz 9.5\n- 93% Cotton 6% Cashmere 1% Elastomer\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAC00049029",
+    "source": "https://intl.canali.com/navy-blue-cotton-and-cashmere-gabardine-regular-fit-chinos-d91697px01625306/p",
+    "manufacturerSku": "PAC00049029",
+    "manufacturerProductId": "3218441",
+    "manufacturerItemId": "44039",
+    "manufacturerStyleColorReference": "D91697-PX01625-306",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Blue",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/544891/D91697-PX01625-306_a_.jpg?v=639244749283730000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-WOOL-CASHMERE-WINTER-TROUSER",
+    "originalName": "Canali Tailored Wool-Cashmere Flannel Winter Trousers",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton"
+    ],
+    "craftsmanshipEvidence": [
+      "- Flat-front chinos\n- Regular fit \n- Fastening with side adjusters and button \n- Double welt back pockets with button \n- Hem 19 cm\n- Garment-dyed comfort cotton and cashmere gabardine\n- 93% Cotton 5% Cashmere 2% Elastane\n- Made in Italy"
+    ],
+    "fitEvidence": [
+      "Regular"
+    ]
+  },
+  {
+    "productId": "REPAIR-CANALI-PAC00048773",
+    "source": "https://intl.canali.com/light-gray-linen-and-cotton-cargo-pants-with-drawstring-d91608pt01628203/p",
+    "manufacturerSku": "PAC00048773",
+    "manufacturerProductId": "3212055",
+    "manufacturerItemId": "41196",
+    "manufacturerStyleColorReference": "D91608-PT01628-203",
+    "manufacturerSize": "44",
+    "manufacturerColor": "Grey",
+    "sourceImage": "https://canali.vteximg.com.br/arquivos/ids/530126/D91608-PT01628-203_a_.jpg?v=639142897517300000",
+    "imageBinding": "Exact selected manufacturer item images include exact style/fabric/color reference filename",
+    "feedSha256": "0f03520b45223961728d65f0513d6b286f8dfb3580293a310142d0903a3aa2fa",
+    "sourceCatalogEndpoint": "https://intl.canali.com/api/catalog_system/pub/products/search",
+    "originalProductId": "PROD-TROUSERS-CANALI-CANALI-SLIM-TROPICAL-WOOL-TROUSER",
+    "originalName": "Canali Slim Fit Super 130s Tropical Wool Trousers",
+    "replacementReason": "Unverifiable prior catalog identity retired, current exact manufacturer item/color/size stored under new ID; history retained",
+    "materialEvidence": [
+      "Cotton",
+      "Linen"
+    ],
+    "craftsmanshipEvidence": [
+      "- Cargo pants with drawstring and elastic waist\n- Central fastening with visible button and woven drawstring with leather Freccia tips\n- Front pockets inserted into the hips\n- Back welt pockets\n - Cargo pockets with button closure\n- Hem 19 cm\n - Cotton and linen fabric\n- 54% Linen 46% Cotton\n- Made in Italy"
+    ]
+  }
+]

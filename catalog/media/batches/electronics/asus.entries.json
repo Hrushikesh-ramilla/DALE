@@ -1,0 +1,91 @@
+{
+  "entries": {
+    "PROD-LAPTOPS-ASUS-ASUS-ZENBOOK-14-OLED-UX3405": {
+      "productName": "ASUS Zenbook 14 OLED (UX3405)",
+      "brand": "ASUS",
+      "color": "Ponder Blue",
+      "attributes": {
+        "brand": "asus",
+        "modelName": "zenbook 14 oled (ux3405)",
+        "ramGb": 16,
+        "displayInches": 14,
+        "cpu": "Intel Core Ultra 7 155H",
+        "gpu": "Intel Arc Graphics",
+        "usbCPDWatts": 65,
+        "weightKg": 1.2
+      },
+      "url": "/images/verified/prod-laptops-asus-asus-zenbook-14-oled-ux3405-caf89b3c0f5333ab.webp",
+      "sha256": "caf89b3c0f5333abd7e0fade8b62a9d71a7c5b8110229547bb5d38bb315f6e80",
+      "sourceSha256": "e913b001ceee1edfc30fb2ef629ac1e343a7d2d7c2a78579cd4b6b2af8211903",
+      "bytes": 21914,
+      "width": 960,
+      "height": 504,
+      "alt": "ASUS Zenbook 14 OLED (UX3405)",
+      "sourcePage": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-14-oled-ux3405/",
+      "sourceImage": "https://dlcdnwebimgs.asus.com/gain/d5efc44f-4cbc-41f7-8ea2-d10d26121000/",
+      "sourceSku": "UX3405",
+      "attribution": "ASUS manufacturer product photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "exact manufacturer model code and primary image association; color and visual review pending",
+      "verified": false
+    },
+    "PROD-LAPTOPS-ASUS-ASUS-ZENBOOK-DUO-UX8406": {
+      "productName": "ASUS Zenbook DUO (UX8406)",
+      "brand": "ASUS",
+      "color": "Inkwell Gray",
+      "attributes": {
+        "brand": "asus",
+        "modelName": "zenbook duo (ux8406)",
+        "ramGb": 32,
+        "displayInches": 14,
+        "cpu": "Intel Core Ultra 9 185H",
+        "gpu": "Intel Arc Graphics",
+        "usbCPDWatts": 65,
+        "weightKg": 1.65
+      },
+      "url": "/images/verified/prod-laptops-asus-asus-zenbook-duo-ux8406-bfe94143cef9b0d6.webp",
+      "sha256": "bfe94143cef9b0d6191c4af25278fc79a087a41652f08f5d5a6497e87d326e6d",
+      "sourceSha256": "133da27aa1b3ecb0c6d50fa4778d22c93ddd984387f18d3a184ff328f5eee6d8",
+      "bytes": 21586,
+      "width": 960,
+      "height": 504,
+      "alt": "ASUS Zenbook DUO (UX8406)",
+      "sourcePage": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-duo-2024-ux8406/",
+      "sourceImage": "https://dlcdnwebimgs.asus.com/gain/2c9c3f70-7b3a-47cb-bde1-f2015a0b10fd/",
+      "sourceSku": "UX8406",
+      "attribution": "ASUS manufacturer product photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "exact manufacturer model code and primary image association; color and visual review pending",
+      "verified": false
+    },
+    "PROD-LAPTOPS-ASUS-ASUS-ZENBOOK-S-16-UM5606": {
+      "productName": "ASUS Zenbook S 16 (UM5606)",
+      "brand": "ASUS",
+      "color": "Scandinavian White",
+      "attributes": {
+        "brand": "asus",
+        "modelName": "zenbook s 16 (um5606)",
+        "ramGb": 32,
+        "displayInches": 16,
+        "cpu": "AMD Ryzen AI 9 HX 370",
+        "gpu": "Radeon 890M",
+        "usbCPDWatts": 65,
+        "weightKg": 1.5
+      },
+      "url": "/images/verified/prod-laptops-asus-asus-zenbook-s-16-um5606-88ab4652130da311.webp",
+      "sha256": "88ab4652130da311b9c7502e8e63b9c3c9fe6a4a1cf02b5c425537692d623eef",
+      "sourceSha256": "2f7b5b6aaee1ba58f3e69327519840e0fc7d89dd720afdf9c1108abd3d8debd1",
+      "bytes": 9610,
+      "width": 960,
+      "height": 504,
+      "alt": "ASUS Zenbook S 16 (UM5606)",
+      "sourcePage": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-s-16-um5606/",
+      "sourceImage": "https://dlcdnwebimgs.asus.com/gain/f34d32c6-c387-4d9f-a3ae-b7e22bcd8720/",
+      "sourceSku": "UM5606",
+      "attribution": "ASUS manufacturer product photograph; external reference",
+      "reviewedAt": "2026-10-14",
+      "reviewMethod": "exact manufacturer model code and primary image association; color and visual review pending",
+      "verified": false
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "manifest": {
+    "schemaVersion": "catalog-manifest-v2",
+    "id": "watch-breitling-avenger-media-repair-2026-10-14-v2",
+    "reviewedBy": "manufacturer-reference-and-visual-variant-review",
+    "reviewedAt": "2026-10-14",
+    "approvedSourceHosts": [
+      "www.breitling.com"
+    ],
+    "products": [
+      {
+        "id": "REPAIR-BREITLING-A17328101B1A1",
+        "name": "Breitling Avenger Automatic 42 · A17328101B1A1",
+        "category": "watches",
+        "description": "Exact manufacturer watch reference A17328101B1A1. The prior record incorrectly described a leather strap. This separate SKU records its pictured steel bracelet; unverified technical specifications have been omitted. DALE price and inventory are simulated.",
+        "price": 649000,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Breitling",
+          "Model: Avenger Automatic 42",
+          "Reference: A17328101B1A1",
+          "Case diameter: 42mm",
+          "Selected reference: Black dial / Steel bracelet"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black dial / Steel bracelet",
+        "source": "https://www.breitling.com/us-en/watches/avenger/avenger-automatic-42/A17328101B1A1/",
+        "familyId": "breitling:avenger-automatic-42",
+        "provenance": "manufacturer_evidence",
+        "brand": "Breitling",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer exact reference page",
+          "missing": [
+            "movement",
+            "waterResistanceM",
+            "caseMaterial",
+            "powerReserveHours",
+            "crystal"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "breitling",
+          "modelName": "avenger automatic 42",
+          "caseDiameterMm": 42
+        },
+        "media": {
+          "url": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/a17328101b1a1-soldier_1c790088_thumbnail_1024.webp",
+          "source": "https://www.breitling.com/us-en/watches/avenger/avenger-automatic-42/A17328101B1A1/",
+          "alt": "Breitling Avenger Automatic 42 A17328101B1A1 with steel bracelet",
+          "attribution": "Breitling manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "watches",
+        "modelName": "Avenger Automatic 42",
+        "skuVariant": "A17328101B1A1"
+      }
+    ]
+  },
+  "replacements": [
+    {
+      "oldProductId": "PROD-WATCHES-BREITLING-BREITLING-AVENGER-AUTOMATIC-42",
+      "newProductId": "REPAIR-BREITLING-A17328101B1A1"
+    }
+  ],
+  "evidence": [
+    {
+      "productId": "REPAIR-BREITLING-A17328101B1A1",
+      "source": "https://www.breitling.com/us-en/watches/avenger/avenger-automatic-42/A17328101B1A1/",
+      "manufacturerSku": "A17328101B1A1",
+      "sourceImage": "https://www-breitling.eu.saleor.cloud/media/thumbnails/products/a17328101b1a1-soldier_1c790088_thumbnail_1024.webp",
+      "originalProductId": "PROD-WATCHES-BREITLING-BREITLING-AVENGER-AUTOMATIC-42",
+      "replacementReason": "Old selected variant incorrectly says Military Leather; exact manufacturer reference shows a steel bracelet. New reference-specific ID avoids altering historical purchased identity.",
+      "scope": "Manufacturer model, reference and photo reviewed; other unverified original specifications removed"
+    }
+  ],
+  "publication": "not-published; exact manufacturer reference and visual review complete"
+}

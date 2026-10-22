@@ -1,0 +1,157 @@
+{
+  "evidence": [
+    {
+      "productId": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-HD-600",
+      "source": "https://us.sennheiser-hearing.com/products/hd-600",
+      "manufacturerProductId": 8355859726619,
+      "manufacturerVariantId": 45465084592411,
+      "manufacturerSku": "508824",
+      "manufacturerVariantTitle": "Default Title",
+      "originalColor": "Anthracite",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Sennheiser_HD_600_Wired_Audiophile_Headphones_Main_Image.jpg?v=1759793125",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-HD-650",
+      "source": "https://us.sennheiser-hearing.com/products/hd-650",
+      "manufacturerProductId": 8355853009179,
+      "manufacturerVariantId": 45465038618907,
+      "manufacturerSku": "508825",
+      "manufacturerVariantTitle": "Default Title",
+      "originalColor": "Titanium Grey Finish",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Sennheiser_HD_650_Main_Image_Scaled.jpg?v=1762206608",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-HD-660S2",
+      "source": "https://us.sennheiser-hearing.com/products/hd-660s2",
+      "manufacturerProductId": 8355835674907,
+      "manufacturerVariantId": 45464920326427,
+      "manufacturerSku": "700240",
+      "manufacturerVariantTitle": "Default Title",
+      "originalColor": "Matte Black with Bronze Accents",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Sennheiser_HD_660_S_2_Open_Back_Audiophile_Headphones_Main_Image.jpg?v=1759793996",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-HD-560S",
+      "source": "https://us.sennheiser-hearing.com/products/hd-560s",
+      "manufacturerProductId": 8355863265563,
+      "manufacturerVariantId": 45465102844187,
+      "manufacturerSku": "509144",
+      "manufacturerVariantTitle": "Default Title",
+      "originalColor": "Black",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Sennheiser_HD_560_S_Main_Image.jpg?v=1759792454",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-HD-800-S",
+      "source": "https://us.sennheiser-hearing.com/products/hd-800-s",
+      "manufacturerProductId": 8355855761691,
+      "manufacturerVariantId": 45465060868379,
+      "manufacturerSku": "506911",
+      "manufacturerVariantTitle": "Default Title",
+      "originalColor": "Matte Black Handcrafted in Germany",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Sennheiser_HD_800_S_Open_Back_Audiophile_Reference_Headphones_Main_Image.jpg?v=1759794505",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-MOMENTUM-4-WIRELESS",
+      "source": "https://us.sennheiser-hearing.com/products/momentum-4-wireless",
+      "manufacturerProductId": 8355841605915,
+      "manufacturerVariantId": 45464964333851,
+      "manufacturerSku": "800107",
+      "manufacturerVariantTitle": "Black",
+      "originalColor": "Black",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/MOMENTUM_4_Black.jpg?v=1759511980",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-ACCENTUM-PLUS-WIRELESS",
+      "source": "https://us.sennheiser-hearing.com/products/accentum-plus",
+      "manufacturerProductId": 8880454959387,
+      "manufacturerVariantId": 47755243487515,
+      "manufacturerSku": "700176",
+      "manufacturerVariantTitle": "Black",
+      "originalColor": "Black",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Sennheiser_ACCENTUM_Plus_Wireless_Black_Main.jpg?v=1759789667",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-HD-599",
+      "source": "https://us.sennheiser-hearing.com/products/hd-599",
+      "manufacturerProductId": 8355855728923,
+      "manufacturerVariantId": 45465060835611,
+      "manufacturerSku": "506831",
+      "manufacturerVariantTitle": "Default Title",
+      "originalColor": "Ivory",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Sennheiser_HD_599_Audiophile_Headphones_Main.jpg?v=1759792708",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-HEADPHONES-MEZE-AUDIO-MEZE-109-PRO",
+      "source": "https://mezeaudio.com/products/109-pro",
+      "manufacturerProductId": 7948819169536,
+      "manufacturerVariantId": 43210480550144,
+      "manufacturerSku": "M-109P",
+      "manufacturerVariantTitle": "Default Title",
+      "originalColor": "Black Walnut with Zinc and Manganese Steel Structure",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1503/1368/files/Meze-Audio-109-PRO-headphone-01_23a49c67-d7cd-4d69-a4e6-bd83f97e3609.webp?v=1709281910",
+      "feedSha256": "a1c4ba7b50053b94a1031d6d4c5dd2c111a099a103ce33e4cd683912f65cc32b"
+    },
+    {
+      "productId": "PROD-EARBUDS-SENNHEISER-SENNHEISER-MTW4",
+      "source": "https://us.sennheiser-hearing.com/products/momentum-true-wireless-4",
+      "manufacturerProductId": 8894833525019,
+      "manufacturerVariantId": 47814289654043,
+      "manufacturerSku": "700367",
+      "manufacturerVariantTitle": "Black Copper",
+      "originalColor": "Black Copper",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Screenshot2024-02-12132746_47cb7128-5cbb-4f06-885c-5da9a21d3277.png?v=1767999878",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-EARBUDS-SENNHEISER-SENNHEISER-ACCENTUM-TW",
+      "source": "https://us.sennheiser-hearing.com/products/accentum-true-wireless",
+      "manufacturerProductId": 8949663891739,
+      "manufacturerVariantId": 47999185092891,
+      "manufacturerSku": "700262",
+      "manufacturerVariantTitle": "Black",
+      "originalColor": "Black",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/Sennheiser_ACCENTUM_True_Wireless_Black_Main_Image.jpg?v=1759789716",
+      "feedSha256": "1583991fa27680fb758e5de7b9b13bcb424c8dec594c3801db368d57ae87e2c7"
+    },
+    {
+      "productId": "PROD-EARBUDS-SENNHEISER-SENNHEISER-CX-PLUS-TW",
+      "source": "https://us.sennheiser-hearing.com/products/cx-plus-true-wireless",
+      "manufacturerProductId": 8355874439451,
+      "manufacturerVariantId": 45465152913691,
+      "manufacturerSku": "509188",
+      "manufacturerVariantTitle": "Black",
+      "originalColor": "Black",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0781/7248/7963/files/CXPlusTWBlack_a0e90740-50c2-43e3-b845-4916f4cd7679.jpg?v=1773915730",
+      "feedSha256": "47ab2f70abe6a4e58ba0d1501a1aff2e00eae61b38076bda0e6d19c370a8af7d"
+    }
+  ],
+  "pending": [
+    {
+      "id": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-HD-490-PRO",
+      "reason": "Exact current manufacturer family absent or ambiguous",
+      "matches": []
+    },
+    {
+      "id": "PROD-HEADPHONES-SENNHEISER-SENNHEISER-HD-280-PRO",
+      "reason": "Exact current manufacturer family absent or ambiguous",
+      "matches": []
+    },
+    {
+      "id": "PROD-HEADPHONES-MEZE-AUDIO-MEZE-99-CLASSICS",
+      "reason": "Exact current manufacturer family absent or ambiguous",
+      "matches": []
+    },
+    {
+      "id": "PROD-EARBUDS-SENNHEISER-SENNHEISER-MOMENTUM-SPORT",
+      "reason": "Exact color/SKU association absent"
+    }
+  ]
+}

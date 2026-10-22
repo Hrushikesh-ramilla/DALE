@@ -1,0 +1,73 @@
+{
+  "evidence": [
+    {
+      "productId": "PROD-LAPTOPS-ASUS-ASUS-ZENBOOK-14-OLED-UX3405",
+      "source": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-14-oled-ux3405/",
+      "sourcePageSha256": "4e02675cd826b58294c6ba3011ff5b8f0fe72101d10b9cd86f64a0f5742905b7",
+      "manufacturerTitle": "ASUS Zenbook 14 OLED (UX3405) 32GB RAM Laptop | ASUS India",
+      "model": "UX3405",
+      "sourceImage": "https://dlcdnwebimgs.asus.com/gain/d5efc44f-4cbc-41f7-8ea2-d10d26121000/",
+      "originalColor": "Ponder Blue"
+    },
+    {
+      "productId": "PROD-LAPTOPS-ASUS-ASUS-ZENBOOK-DUO-UX8406",
+      "source": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-duo-2024-ux8406/",
+      "sourcePageSha256": "301dfc56dd8d485f354d33e55845b6ba0133e7602e99142e6e8a2ed0b732eca8",
+      "manufacturerTitle": "ASUS Zenbook DUO 2024 UX8406 Windows 11 Laptop | ASUS India",
+      "model": "UX8406",
+      "sourceImage": "https://dlcdnwebimgs.asus.com/gain/2c9c3f70-7b3a-47cb-bde1-f2015a0b10fd/",
+      "originalColor": "Inkwell Gray"
+    },
+    {
+      "productId": "PROD-LAPTOPS-ASUS-ASUS-ZENBOOK-S-16-UM5606",
+      "source": "https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-s-16-um5606/",
+      "sourcePageSha256": "01bdd561a38c9ea8b46f6c1ec085a54973bc3e54f957b841ec61495779792e36",
+      "manufacturerTitle": "ASUS Zenbook S16 UM5606 Copilot+ PC OLED Laptop | ASUS India",
+      "model": "UM5606",
+      "sourceImage": "https://dlcdnwebimgs.asus.com/gain/f34d32c6-c387-4d9f-a3ae-b7e22bcd8720/",
+      "originalColor": "Scandinavian White"
+    }
+  ],
+  "pending": [
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-VIVOBOOK-S-14-OLED-M5406",
+      "reason": "Model code absent in exact title ASUS Vivobook | Powerful & Efficient | ASUS India"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-VIVOBOOK-S-15-OLED-S5507",
+      "reason": "Model code absent in exact title ASUS Vivobook | Powerful & Efficient | ASUS India"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-VIVOBOOK-PRO-15-OLED-N6506",
+      "reason": "Model code absent in exact title  Vivobook - Best Portable Laptop for Creators  | ASUS India"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-ROG-ZEPHYRUS-G14-GA403",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-ROG-ZEPHYRUS-G16-GU605",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-ROG-STRIX-SCAR-16-G634",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-ROG-STRIX-SCAR-18-G834",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-ROG-FLOW-Z13-GZ301",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-TUF-GAMING-A15-FA507",
+      "reason": "Model code absent in exact title ASUS TUF Gaming Laptops: Powerful and Durable | ASUS India"
+    },
+    {
+      "id": "PROD-LAPTOPS-ASUS-ASUS-EXPERTBOOK-B9-OLED-B9403",
+      "reason": "Model code absent in exact title ASUS Business Laptop | ExpertBook Business | ASUS India"
+    }
+  ]
+}

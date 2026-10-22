@@ -1,0 +1,52 @@
+# Agent re-architecture audit and execution plan
+
+19 October 2026. Working-tree inspection, not a deployment receipt. Preserve unrelated catalog/media changes. The customer directive in the supplied attachment is the acceptance baseline. Do not equate contract tests with model quality or simulated payments with a PayPal journey.
+
+## Observed architecture
+
+Next.js App Router / React / TypeScript. PostgreSQL in deployment, PGlite locally. `catalog_products` holds published product JSON, structured indexes, releases and revisions. Existing customer sessions and workspace ownership protect payments, groups, support and evidence. Production money movement is through `server/service.ts` and `server/payments.ts`. The new root copilot uses an unrelated endpoint, browser-local cart and direct Gemini generation. The older agent uses a bounded planner plus deterministic language interpretation. Neither is the requested general tool/observation loop.
+
+Fresh baseline: typecheck passed; seven focused test files ran 48 tests, 45 passed. Two retail failures use obsolete counts (220/142); a third expects a now-removed beauty category. Current manifests contain 4,446 unique IDs; a fresh test database publishes 4,479 records. Twelve manifests have already been deleted in the working tree by prior work. No restoration/deletion is authorized by this agent migration.
+
+## Legacy inventory (before production changes)
+
+| Paths / functions | Defect or role | Change / replacement | Dependencies and verification |
+|---|---|---|---|
+| `src/app/api/copilot/chat/route.ts`: `POST`, `callGemini`, `handleDeterministicFallback` | Fixed six intents; hardcoded model fallback list; category regex; pronoun and bold-text matching; static Tom Ford shortcut; generic canned success after failure; lacks shared auth/budgets | Replace with bounded native tool loop endpoint and persisted state; no scripted linguistic fallback | Copilot provider, model transport, real catalog; test unknown calls, outages, multi-turn and malformed arguments |
+| Same file: `KNOWN_BRANDS`, `SYSTEM_INSTRUCTION`, ranked search/name resolver | Static brand/category inventory, product-specific wording and SQL relevance cutoff | Discover facets from published DB; structured/semantic retrieval with explicit constraints | Compare independent categories, exact price limits, empty results, source IDs |
+| `src/components/copilot/copilot-context.tsx`: `sendMessage`, `executeAction`, cart hooks | Client-supplied history, localStorage cart, fire-and-forget UI changes, no receipts | Server-owned history/cart/wishlist; typed action IDs, acknowledgments and current UI snapshot | Reload/isolation, real route/filter/result changes, failed popups |
+| `src/components/copilot/dale-copilot-sidecar.tsx` | Checkout label routes to first product; ungrounded protection/delivery guarantees | Real basket UI and explicit review/confirmation; no financial tools exposed to model | Verify persistent basket, quantities and actual checkout outcome |
+| `src/components/category-catalog-view.tsx`: `handleAiFilter` | Regex interpreter presented as AI; static category-specific chips | Route natural language to the same copilot; retain normal explicit filter controls | Manual controls still work; assistant actions use authoritative search route |
+| `src/components/agent-workspace.tsx`, `src/app/api/agent/route.ts` | Second public agent experience and rigid response contract | Public non-demo entry delegates to new copilot; legacy engineering scenarios remain explicitly isolated | Fixture journeys must not masquerade as live model results |
+| `src/server/agent.ts`, `agent-planner.ts`, `local-agent-plan.ts`, `local-goal-plan.ts`, `local-tool-plan.ts` | Prewritten workflow and fallback constraints determine language before model | Retain only for explicit legacy fixtures; new public orchestration does not import them | Isolation guard; new tool loop tests |
+| `src/domain/agent.ts`, `agent-plan.ts`, `agent-workflow.ts`, `voice.ts`, `retail-conversation.ts`, `branded-shopping.ts` | Keyword language interpretation and predetermined suggestions | Do not use as new production conversational router; retain compatibility for clearly labeled fixtures and manual domain helpers | No example strings in new production engine |
+| `src/server/ai.ts`, `self-hosted-ai.ts` | Existing structured analysis/native selection, not full dialogue/tool continuation | Retain evidence analysis; add native messages/tools/observations transport for copilot | Loopback self-hosted restrictions, deadlines, provider errors, no silent cloud fallback |
+| `src/server/catalog-store.ts`, `bundled-catalog.ts` | Useful live queries; exact single-brand filters; no semantic index; bootstrap won't refresh existing expanded releases | Retain data; add generic strict structured search, local embedding index and freshness hashes | Hidden/stock/price/variant constraints; index invalidation; no invented metadata |
+| `src/server/database.ts` | Existing persistent database and transactions | Add namespaced conversation, turn, basket, action and confirmation tables; additive migrations only | Restart, ownership, optimistic versions, duplicate IDs |
+| `src/server/auth.ts`, `customers.ts`, `budgets.ts`, `http.ts` | Legitimate deterministic authentication/limits | Retain and reuse, never replace with model logic | Expired sessions, foreign resources, origin and payload checks |
+| `src/server/service.ts`, `payments.ts`, `recovery.ts`, `order-options.ts`, `agent-groups.ts`, `return-shipping.ts` | Working business invariants and payment reconciliation; individual-item order contract | Retain; typed tools invoke actual buyer operations; confirmation outside model; multi-item checkout must preserve existing per-item financial contracts | Quote expiry, changed stock, replay, unauthorized returns, interrupted commit |
+| `src/app/api/voice/*`, `src/server/local-speech.ts`, `local-ocr.ts` | Real speech/OCR adapters alongside browser speech | Retain; confirmed transcript uses common conversational endpoint | No browser recognition support advertised as universal; test cancellation |
+| `tests/*`, `e2e/*`, `fixtures/*` | Extensive old contracts; no new copilot acceptance suite | Retain fixtures as tests; add cross-category tool/database/browser tests and a separate review | Report fresh results and live-model limits explicitly |
+
+No vector index, persistent wishlist, server cart, multi-item checkout or general live web-search service was found. These are gaps, not capabilities to claim from prompts. Shipping remains simulated. Model configuration currently selects Gemini, while prior user requirement is self-hosted; cloud calls remain prohibited by this migration's default policy.
+
+## Target and execution order
+
+1. **Contracts**: Zod tool/action/context schemas, dynamic shared route registry, classified errors and side-effect rules. New `src/domain/concierge.ts`, `src/domain/site-routes.ts`.
+2. **Persistence**: additive schema in `src/server/concierge/store.ts`, owned conversations/turns with leases, immutable tool observations and UI receipts; versioned server cart/wishlist and single-use confirmations. No user DB resets.
+3. **Model**: `src/server/concierge/model.ts`, native OpenAI-compatible tool messages on loopback, configured model identity, no canned intent layer, no silent model/provider change. Bounded requests and cancellation; optional explicitly enabled cloud adapter remains separate from authorization to call it.
+4. **Retrieval**: `retrieval.ts`, dynamic DB facets, multiple exact constraints and stable pagination. Local embedding endpoint/index with content hashes; live SQL eligibility always precedes ranking. If semantic model unavailable, report degradation rather than fake semantics. Source completeness and sandbox price origin remain visible.
+5. **Tools**: `tools.ts`, reusable validated registry mapping to catalog, current UI, account, basket, wishlist, order/status, groups, case/remedy and confirmation preparation. Model never receives a commit token or payment capability. Existing unsupported promotions/carrier integrations reported explicitly.
+6. **Orchestration**: `engine.ts`, bounded iterative call/observe loop with persisted messages/results and ordered UI suspension. API at `/api/copilot/chat` plus `/api/copilot/state`, `/api/copilot/action`, `/api/copilot/confirm`. Mutations and duplicate-turn behavior tested through DB.
+7. **Browser bridge**: replace local copilot provider; session-backed state, cancellation and state revisions on every turn. Only same-origin registered paths, no model JS. Acknowledge actual URL/render or popup failure before continuation. Add real `/search`, `/compare`, `/cart`, `/wishlist` pages to render authoritative operations.
+8. **Migration**: public legacy entry opens common copilot; preserve explicit fixture scenarios and underlying business services. Replace category pseudo-AI handler with common conversation, preserving ordinary manual browsing.
+9. **Verification**: unit/DB contract tests, browser receipts, mixed multi-step operations, state reload, ownership, injection, failures, replay. Run type/lint and relevant existing regression suites. Live local inference measured separately; model quality cannot be inferred from mocks.
+10. **Independent review**: request critical review after implementation, fix high findings, rerun affected tests, record capability-to-file/result matrix and exact remaining gates. Do not claim completion for external dependencies or unsupported commercial features.
+
+## Security and migration constraints
+
+Client context is untrusted and never supplies actor/price/stock authority. UI receipts prove only browser state, not server mutation. Confirmation is a customer click outside the model loop, scoped to owner, expiry and immutable payload. Orders remain individual merchant offers; basket checkout must show all terms and any partial outcomes. No seller/reviewer actions, arbitrary URLs/SQL/JS/network requests, credentials or payment capture exposed to model. Catalog/source documents are untrusted tool data. Keep each catalog revision and historic order unchanged. Existing APIs remain usable by manual UI.
+
+## Acceptance tracking
+
+The full directive is **not yet complete**. Subsequent execution notes must distinguish implemented, fixture-tested, browser-verified, live-model-verified and blocked. Do not produce a single misleading completion percentage.

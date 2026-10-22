@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "factRepairs": "catalog/media/reviewed-bottle-repairs.json",
+  "batches": [
+    "catalog/media/evidence/serge-lutens-replacement-batch.json",
+    "catalog/media/evidence/amouage-replacement-batch.json",
+    "catalog/media/evidence/portronics-replacement-batch.json",
+    "catalog/media/batches/power/ambrane/batch.json",
+    "catalog/media/batches/power/ambrane-cables/batch.json",
+    "catalog/media/batches/fashion/batch.json",
+    "catalog/media/batches/fashion-watch-avenger/batch.json",
+    "catalog/media/batches/fashion-canali/batch.json",
+    "catalog/media/batches/electronics/beyer-replacement.batch.json"
+  ]
+}

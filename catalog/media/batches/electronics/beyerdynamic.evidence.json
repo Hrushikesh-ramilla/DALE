@@ -1,0 +1,671 @@
+{
+  "evidence": [
+    {
+      "productId": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-DT-770-PRO-80",
+      "source": "https://global.beyerdynamic.com/p/dt-770-pro",
+      "manufacturerSku": "474746",
+      "manufacturerProductName": "DT 770 PRO, 80 Ohms",
+      "impedanceOhms": 80,
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/d/t/dt-770-pro-80-ohm-headphones-beyerdynamic-perspective_transparent.png?store=www_en&image-type=small_image",
+      "sourcePageSha256": "629cc7e32660104ef901df10ea4201d007383dfd9512f98391f6e92c863cc5e7",
+      "technicalData": [
+        {
+          "attribute_code": "trageart",
+          "attribute_label": "Wearing Style",
+          "value_label": "Over-ear",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "system",
+          "attribute_label": "Operating Principle",
+          "value_label": "Closed",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsart_kopfhoerer",
+          "attribute_label": "Transmission Type",
+          "value_label": "Wired",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "nominal_headband_pressure",
+          "attribute_label": "Nominal Headband pressure",
+          "value_label": "Firm fit for professional use, approx. 3.5 - 5.5 N",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "remote",
+          "attribute_label": "Remote",
+          "value_label": "Without Remote ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "impedanz_hoerer",
+          "attribute_label": "Nominal Impedance Headphones",
+          "value_label": "80 ohms",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsbereich",
+          "attribute_label": "Headphone frequency response",
+          "value_label": "5 - 35.000 Hz",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "schalldruckpegel",
+          "attribute_label": "Nominal sound pressure level",
+          "value_label": "96 dB",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "headphone_lab_software",
+          "attribute_label": "HEADPHONE LAB",
+          "value_label": "✓",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "bau_hah",
+          "attribute_label": "Sound Coupling To The Ear",
+          "value_label": "Circumaural (around the ear)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "cable_plug_hah",
+          "attribute_label": "Cable & Plug",
+          "value_label": "Straight connecting cable with mini-jack plug (3.5 mm) & ¼“ adapter (6.35 mm)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "sku",
+          "attribute_label": "Article No.",
+          "value_label": "474746",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "ean",
+          "attribute_label": "EAN",
+          "value_label": "4010118474743",
+          "__typename": "TechnicalData"
+        }
+      ]
+    },
+    {
+      "productId": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-DT-990-PRO",
+      "source": "https://global.beyerdynamic.com/p/dt-990-pro",
+      "manufacturerSku": "459038",
+      "manufacturerProductName": "DT 990 PRO, 250 Ohms",
+      "impedanceOhms": 250,
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/d/t/dt-990-pro-beyerdynamic-perspective_transparent.png?store=www_en&image-type=small_image",
+      "sourcePageSha256": "64428145834c483c8fad6fa01cf6061b62127917600ebc339708db962d2be4e6",
+      "technicalData": [
+        {
+          "attribute_code": "system",
+          "attribute_label": "Operating Principle",
+          "value_label": "Open",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsart_kopfhoerer",
+          "attribute_label": "Transmission Type",
+          "value_label": "Wired",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "nominal_headband_pressure",
+          "attribute_label": "Nominal Headband pressure",
+          "value_label": "Firm fit for professional use, approx. 3.5 - 5.5 N",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "remote",
+          "attribute_label": "Remote",
+          "value_label": "Without Remote ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "impedanz_hoerer",
+          "attribute_label": "Nominal Impedance Headphones",
+          "value_label": "250 ohms",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "weight_headphones_without_cabl",
+          "attribute_label": "Weight headphones without cable ",
+          "value_label": "250 g",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsbereich",
+          "attribute_label": "Headphone frequency response",
+          "value_label": "5 - 35.000 Hz",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "schalldruckpegel",
+          "attribute_label": "Nominal sound pressure level",
+          "value_label": "96 dB",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "headphone_lab_software",
+          "attribute_label": "HEADPHONE LAB",
+          "value_label": "✓",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "bau_hah",
+          "attribute_label": "Sound Coupling To The Ear",
+          "value_label": "Circumaural (around the ear)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "cable_plug_hah",
+          "attribute_label": "Cable & Plug",
+          "value_label": "Coiled connecting cable with mini-jack plug (3.5 mm) & ¼“ adapter (6.35 mm)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "sku",
+          "attribute_label": "Article No.",
+          "value_label": "459038",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "ean",
+          "attribute_label": "EAN",
+          "value_label": "4010118459030",
+          "__typename": "TechnicalData"
+        }
+      ]
+    },
+    {
+      "productId": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-DT-880-PRO",
+      "source": "https://global.beyerdynamic.com/p/dt-880-pro",
+      "manufacturerSku": "490970",
+      "manufacturerProductName": "DT 880 PRO",
+      "impedanceOhms": 250,
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/b/e/beyerdynamic-dt-880-pro-perspective_transparent-3.png?store=www_en&image-type=small_image",
+      "sourcePageSha256": "4d588e39083d178e2662dd829144478aeb97e2f028622dc2ab89137cf1f86417",
+      "technicalData": [
+        {
+          "attribute_code": "trageart",
+          "attribute_label": "Wearing Style",
+          "value_label": "Over-ear",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "system",
+          "attribute_label": "Operating Principle",
+          "value_label": "Semi-Open",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsart_kopfhoerer",
+          "attribute_label": "Transmission Type",
+          "value_label": "Wired",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "nominal_headband_pressure",
+          "attribute_label": "Nominal Headband pressure",
+          "value_label": "Firm fit for professional use, approx. 3.5 - 5.5 N",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "remote",
+          "attribute_label": "Remote",
+          "value_label": "Without Remote ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "impedanz_hoerer",
+          "attribute_label": "Nominal Impedance Headphones",
+          "value_label": "250 ohms",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "weight_headphones_without_cabl",
+          "attribute_label": "Weight headphones without cable ",
+          "value_label": "295 g",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsbereich",
+          "attribute_label": "Headphone frequency response",
+          "value_label": "5 - 35.000 Hz",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "schalldruckpegel",
+          "attribute_label": "Nominal sound pressure level",
+          "value_label": "96 dB",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "headphone_lab_software",
+          "attribute_label": "HEADPHONE LAB",
+          "value_label": "✓",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "bau_hah",
+          "attribute_label": "Sound Coupling To The Ear",
+          "value_label": "Circumaural (around the ear)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "cable_plug_hah",
+          "attribute_label": "Cable & Plug",
+          "value_label": "Coiled connecting cable with mini-jack plug (3.5 mm) & ¼“ adapter (6.35 mm)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "sku",
+          "attribute_label": "Article No.",
+          "value_label": "490970",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "ean",
+          "attribute_label": "EAN",
+          "value_label": "4010118490972",
+          "__typename": "TechnicalData"
+        }
+      ]
+    },
+    {
+      "productId": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-DT-700-PRO-X",
+      "source": "https://global.beyerdynamic.com/p/dt-700-pro-x",
+      "manufacturerSku": "737704",
+      "manufacturerProductName": "DT 700 PRO X",
+      "impedanceOhms": 48,
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/d/t/dt-700-pro-x-beyerdynamic-perspective_transparent_2_1.png?store=www_en&image-type=small_image",
+      "sourcePageSha256": "d3332d5916c85646f671d7f6079362c501afcbe752eb64cbd6889c7e230a0a91",
+      "technicalData": [
+        {
+          "attribute_code": "trageart",
+          "attribute_label": "Wearing Style",
+          "value_label": "Over-ear",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "system",
+          "attribute_label": "Operating Principle",
+          "value_label": "Closed",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsart_kopfhoerer",
+          "attribute_label": "Transmission Type",
+          "value_label": "Wired",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "material",
+          "attribute_label": "Earpad material",
+          "value_label": "Velours",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "remote",
+          "attribute_label": "Remote",
+          "value_label": "Without Remote ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "impedanz_hoerer",
+          "attribute_label": "Nominal Impedance Headphones",
+          "value_label": "48 ohms",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "weight_headphones_without_cabl",
+          "attribute_label": "Weight headphones without cable ",
+          "value_label": "350 g ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsbereich",
+          "attribute_label": "Headphone frequency response",
+          "value_label": "5 - 40,000 Hz",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "schalldruckpegel",
+          "attribute_label": "Nominal sound pressure level",
+          "value_label": "100 dB SPL (1mW/500Hz)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "headphone_lab_software",
+          "attribute_label": "HEADPHONE LAB",
+          "value_label": "✓",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "bau_hah",
+          "attribute_label": "Sound Coupling To The Ear",
+          "value_label": "Circumaural (around the ear)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "cable_plug_hah",
+          "attribute_label": "Cable & Plug",
+          "value_label": "3 m or 1.8 m straight cable, detachable, with 3-pin mini XLR & stereo jack (3.5 mm & 6.35 adapter) ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "sku",
+          "attribute_label": "Article No.",
+          "value_label": "737704",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "ean",
+          "attribute_label": "EAN",
+          "value_label": "4010118737701",
+          "__typename": "TechnicalData"
+        }
+      ]
+    },
+    {
+      "productId": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-DT-900-PRO-X",
+      "source": "https://global.beyerdynamic.com/p/dt-900-pro-x",
+      "manufacturerSku": "729906",
+      "manufacturerProductName": "DT 900 PRO X",
+      "impedanceOhms": 48,
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/b/e/beyerdynamic-dt-900-pro-x-perspective_transparent.png?store=www_en&image-type=small_image",
+      "sourcePageSha256": "65b1c2ef6b9a28aa0c8d82c2fc007dbe1485877e36d8c2767cc48077f009f8a5",
+      "technicalData": [
+        {
+          "attribute_code": "trageart",
+          "attribute_label": "Wearing Style",
+          "value_label": "Over-ear",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "system",
+          "attribute_label": "Operating Principle",
+          "value_label": "Open",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsart_kopfhoerer",
+          "attribute_label": "Transmission Type",
+          "value_label": "Wired",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "material",
+          "attribute_label": "Earpad material",
+          "value_label": "Velours",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "remote",
+          "attribute_label": "Remote",
+          "value_label": "Without Remote ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "impedanz_hoerer",
+          "attribute_label": "Nominal Impedance Headphones",
+          "value_label": "48 ohms",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "weight_headphones_without_cabl",
+          "attribute_label": "Weight headphones without cable ",
+          "value_label": "345 g",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsbereich",
+          "attribute_label": "Headphone frequency response",
+          "value_label": "5 - 40,000 Hz",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "schalldruckpegel",
+          "attribute_label": "Nominal sound pressure level",
+          "value_label": "100 dB SPL (1mW/500Hz)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "headphone_lab_software",
+          "attribute_label": "HEADPHONE LAB",
+          "value_label": "✓",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "bau_hah",
+          "attribute_label": "Sound Coupling To The Ear",
+          "value_label": "Circumaural (around the ear)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "cable_plug_hah",
+          "attribute_label": "Cable & Plug",
+          "value_label": "3 m or 1.8 m straight cable, detachable, with 3-pin mini XLR & stereo jack (3.5 mm & 6.35 adapter) ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "sku",
+          "attribute_label": "Article No.",
+          "value_label": "729906",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "ean",
+          "attribute_label": "EAN",
+          "value_label": "4010118729904",
+          "__typename": "TechnicalData"
+        }
+      ]
+    },
+    {
+      "productId": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-AMIRON-WIRELESS",
+      "source": "https://global.beyerdynamic.com/p/amiron-wireless",
+      "manufacturerSku": "718394",
+      "manufacturerProductName": "Amiron wireless",
+      "impedanceOhms": 32,
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/b/e/beyerdynamic-amiron-wireless-perspective_transparent.png?store=www_en&image-type=small_image",
+      "sourcePageSha256": "a6b6038240d712edb4cada58de01b5cdcc9ff48792b2e069f212f364be29c3e2",
+      "technicalData": [
+        {
+          "attribute_code": "trageart",
+          "attribute_label": "Wearing Style",
+          "value_label": "Over-ear",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "system",
+          "attribute_label": "Operating Principle",
+          "value_label": "Closed",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsart_kopfhoerer",
+          "attribute_label": "Transmission Type",
+          "value_label": "Wireless via Bluetooth®",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "material",
+          "attribute_label": "Earpad material",
+          "value_label": "Microvelours",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "remote",
+          "attribute_label": "Remote",
+          "value_label": "Without Remote ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "impedanz_hoerer",
+          "attribute_label": "Nominal Impedance Headphones",
+          "value_label": "32 ohms",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "weight_headphones_without_cabl",
+          "attribute_label": "Weight headphones without cable ",
+          "value_label": "380 g",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "battery_runtime",
+          "attribute_label": "Battery Runtime",
+          "value_label": "More than 30 hours",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsbereich",
+          "attribute_label": "Headphone frequency response",
+          "value_label": "5-40,000 Hz",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "schalldruckpegel",
+          "attribute_label": "Nominal sound pressure level",
+          "value_label": "100 dB",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "supported_bluetooth_profiles",
+          "attribute_label": "Supported Bluetooth® Profile",
+          "value_label": "HSP, HFP, A2DP, AVRCP, GAVDP",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "codecs",
+          "attribute_label": "Codecs",
+          "value_label": "aptX™, aptX™ LL, aptX™ HD, AAC, SBC",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "bau_hah",
+          "attribute_label": "Sound Coupling To The Ear",
+          "value_label": "Circumaural (around the ear)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "sku",
+          "attribute_label": "Article No.",
+          "value_label": "718394",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "ean",
+          "attribute_label": "EAN",
+          "value_label": "4010118718397 ",
+          "__typename": "TechnicalData"
+        }
+      ]
+    },
+    {
+      "productId": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-T1-3RD-GEN",
+      "source": "https://global.beyerdynamic.com/p/t1",
+      "manufacturerSku": "717924",
+      "manufacturerProductName": "T1",
+      "impedanceOhms": 32,
+      "sourceImage": "https://api.beyerdynamic.de/media/catalog/product/b/e/beyerdynamic-t1-perspective_transparent.png?store=www_en&image-type=small_image",
+      "sourcePageSha256": "ebce51259c29873651c89b94191c6f897a2b72c21f38e3ae05a1685003b416d7",
+      "technicalData": [
+        {
+          "attribute_code": "trageart",
+          "attribute_label": "Wearing Style",
+          "value_label": "Over-ear",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "system",
+          "attribute_label": "Operating Principle",
+          "value_label": "Open",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsart_kopfhoerer",
+          "attribute_label": "Transmission Type",
+          "value_label": "Wired",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "material",
+          "attribute_label": "Earpad material",
+          "value_label": "Velours, memory foam",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "remote",
+          "attribute_label": "Remote",
+          "value_label": "Without Remote ",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "impedanz_hoerer",
+          "attribute_label": "Nominal Impedance Headphones",
+          "value_label": "32 ohms",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "weight_headphones_without_cabl",
+          "attribute_label": "Weight headphones without cable ",
+          "value_label": "360 g",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "uebertragungsbereich",
+          "attribute_label": "Headphone frequency response",
+          "value_label": "5 - 50,000 Hz",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "schalldruckpegel",
+          "attribute_label": "Nominal sound pressure level",
+          "value_label": "100 dB (1mW)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "bau_hah",
+          "attribute_label": "Sound Coupling To The Ear",
+          "value_label": "Circumaural (around the ear)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "cable_plug_hah",
+          "attribute_label": "Cable & Plug",
+          "value_label": "double-sided detachable cable, 3 m length, gold-plated mini stereo jack (3.5 mm) & 1/4\" adapter (6.35 mm)",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "sku",
+          "attribute_label": "Article No.",
+          "value_label": "717924",
+          "__typename": "TechnicalData"
+        },
+        {
+          "attribute_code": "ean",
+          "attribute_label": "EAN",
+          "value_label": "4010118717925",
+          "__typename": "TechnicalData"
+        }
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "id": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-DT-770-PRO-X-LIMITED",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-DT-1770-PRO",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "PROD-HEADPHONES-BEYERDYNAMIC-BEYERDYNAMIC-DT-1990-PRO",
+      "reason": "fetch failed"
+    }
+  ]
+}

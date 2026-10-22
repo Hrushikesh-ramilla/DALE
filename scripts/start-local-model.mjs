@@ -65,7 +65,7 @@ const child = spawn(
     "--port",
     "8081",
     "-c",
-    "4096",
+    process.env.LOCAL_MODEL_CONTEXT_TOKENS || "8192",
     "-b",
     "128",
     "-ub",

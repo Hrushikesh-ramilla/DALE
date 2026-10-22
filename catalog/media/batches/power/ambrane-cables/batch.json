@@ -1,0 +1,857 @@
+{
+  "manifest": {
+    "schemaVersion": "catalog-manifest-v2",
+    "id": "cables-ambrane-media-repair-2026-10-14-v2",
+    "reviewedBy": "exact-manufacturer-SKU-and-fact-review",
+    "reviewedAt": "2026-10-14",
+    "approvedSourceHosts": [
+      "ambraneindia.com"
+    ],
+    "products": [
+      {
+        "id": "REPAIR-AMBRANE-ABCC-100-BLACK",
+        "name": "Ambrane ABCC-100 · 100W C to C Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 999,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: 100W C to C Cable",
+          "Manufacturer SKU: ABCC-100-BLACK",
+          "connectorFrom: USB-C",
+          "connectorTo: USB-C",
+          "maxWatts: 100"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/ambrane-abcc-100",
+        "familyId": "ambrane:6835245154483",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "abcc-100",
+          "connectorFrom": "USB-C",
+          "connectorTo": "USB-C",
+          "maxWatts": 100
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/type-c-laptop-charging-cord.webp?v=1763448116",
+          "source": "https://ambraneindia.com/products/ambrane-abcc-100",
+          "alt": "Ambrane 100W C to C Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "ABCC-100",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-ABCC-60-BLACK",
+        "name": "Ambrane ABCC-60 · 60W C to C Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: 60W C to C Cable",
+          "Manufacturer SKU: ABCC-60-BLACK",
+          "maxWatts: 60",
+          "dataTransferGbps: 0.48"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/abcc-60",
+        "familyId": "ambrane:8267875942647",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "abcc-60",
+          "maxWatts": 60,
+          "dataTransferGbps": 0.48
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/type-c-to-type-c-cable.webp?v=1763212068",
+          "source": "https://ambraneindia.com/products/abcc-60",
+          "alt": "Ambrane 60W C to C Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "ABCC-60",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-RCT-15-BLACK",
+        "name": "Ambrane RCT-15 · RCT-15 Type C Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: RCT-15 Type C Cable",
+          "Manufacturer SKU: RCT-15-BLACK",
+          "maxCurrentAmps: 3",
+          "dataTransferGbps: 0.48",
+          "lengthMeters: 1.5"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/rc-t-15",
+        "familyId": "ambrane:4362636394595",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "rct-15",
+          "maxCurrentAmps": 3,
+          "dataTransferGbps": 0.48,
+          "lengthMeters": 1.5
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/type-c-to-usb-cable.png?v=1763212704",
+          "source": "https://ambraneindia.com/products/rc-t-15",
+          "alt": "Ambrane RCT-15 Type C Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "RCT-15",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-RCM-15-BLACK",
+        "name": "Ambrane RCM-15 · RCM-15 Micro USB Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: RCM-15 Micro USB Cable",
+          "Manufacturer SKU: RCM-15-BLACK",
+          "connectorTo: Micro USB",
+          "maxWatts: 20",
+          "dataTransferGbps: 0.48"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/rc-m-15",
+        "familyId": "ambrane:4362632691811",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "rcm-15",
+          "connectorTo": "Micro USB",
+          "maxWatts": 20,
+          "dataTransferGbps": 0.48
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/micro-usb-cable.png?v=1763446439",
+          "source": "https://ambraneindia.com/products/rc-m-15",
+          "alt": "Ambrane RCM-15 Micro USB Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "RCM-15",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-TRIO-11-BLACK",
+        "name": "Ambrane Trio-11 · Trio 3 in 1 Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Trio 3 in 1 Cable",
+          "Manufacturer SKU: TRIO-11-BLACK",
+          "maxCurrentAmps: 2.1",
+          "connectorTo: Micro USB / USB-C / Lightning"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/trio-11-3-in-1-cable",
+        "familyId": "ambrane:1275337179183",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "trio-11",
+          "maxCurrentAmps": 2.1,
+          "connectorTo": "Micro USB / USB-C / Lightning"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/3-in-1-charging-cable.webp?v=1763447769",
+          "source": "https://ambraneindia.com/products/trio-11-3-in-1-cable",
+          "alt": "Ambrane Trio 3 in 1 Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "Trio-11",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-AMCL-12--WHITE",
+        "name": "Ambrane AMCL-12 · MFI Certified Type C to Lightning Cable · White",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: MFI Certified Type C to Lightning Cable",
+          "Manufacturer SKU: AMCL-12- WHITE",
+          "maxWatts: 27",
+          "connectorFrom: USB-C",
+          "connectorTo: Lightning",
+          "mfiCertified: true"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "White",
+        "source": "https://ambraneindia.com/products/amcl-12",
+        "familyId": "ambrane:8354695348471",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "amcl-12",
+          "maxWatts": 27,
+          "connectorFrom": "USB-C",
+          "connectorTo": "Lightning",
+          "mfiCertified": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/mfi-certified-lightning-cable.webp?v=1763211626",
+          "source": "https://ambraneindia.com/products/amcl-12",
+          "alt": "Ambrane MFI Certified Type C to Lightning Cable White",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "AMCL-12",
+        "skuVariant": "White",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-AC4CL-15-BLACK",
+        "name": "Ambrane AC4CL-15 · 4 in 1 Fast Charging Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: 4 in 1 Fast Charging Cable",
+          "Manufacturer SKU: AC4CL-15-BLACK",
+          "maxWatts: 60",
+          "connectorTo: USB-C / Lightning"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/ac4cl-15",
+        "familyId": "ambrane:8416230015223",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "ac4cl-15",
+          "maxWatts": 60,
+          "connectorTo": "USB-C / Lightning"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/3_png_f7b87df8-94af-4725-b4f1-14fee3051da3.webp?v=1725519519",
+          "source": "https://ambraneindia.com/products/ac4cl-15",
+          "alt": "Ambrane 4 in 1 Fast Charging Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "AC4CL-15",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-AHDMS-15-BLACK",
+        "name": "Ambrane AHDMS-15 · HDMI Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: HDMI Cable",
+          "Manufacturer SKU: AHDMS-15-BLACK",
+          "dataTransferGbps: 18",
+          "displaySupport: 4K 30–60Hz"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/ahdms-16",
+        "familyId": "ambrane:7917678002423",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "ahdms-15",
+          "dataTransferGbps": 18,
+          "displaySupport": "4K 30–60Hz"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/1-gobADN-yl-transformed.png?v=1682313815",
+          "source": "https://ambraneindia.com/products/ahdms-16",
+          "alt": "Ambrane HDMI Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "AHDMS-15",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-ABSC-15-BLACK",
+        "name": "Ambrane ABSC-15 · Standing Type C Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Standing Type C Cable",
+          "Manufacturer SKU: ABSC-15-BLACK",
+          "maxWatts: 30",
+          "dataTransferGbps: 0.48",
+          "lengthMeters: 1.5"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/absc-15",
+        "familyId": "ambrane:7917641695479",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "absc-15",
+          "maxWatts": 30,
+          "dataTransferGbps": 0.48,
+          "lengthMeters": 1.5
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/type-c-usb-cable.png?v=1764316911",
+          "source": "https://ambraneindia.com/products/absc-15",
+          "alt": "Ambrane Standing Type C Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "ABSC-15",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-ABCVS-12-BLACK",
+        "name": "Ambrane ABCVS-12 · 65W Type C Cable · Black",
+        "category": "accessories",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: 65W Type C Cable",
+          "Manufacturer SKU: ABCVS-12-BLACK",
+          "maxWatts: 65",
+          "maxCurrentAmps: 6.5",
+          "dataTransferGbps: 0.48"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/abcvs-12",
+        "familyId": "ambrane:7917639598327",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "deviceSpecificCompatibility",
+            "eMarker",
+            "certificationRegistryReference",
+            "connectorDimensions"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "abcvs-12",
+          "maxWatts": 65,
+          "maxCurrentAmps": 6.5,
+          "dataTransferGbps": 0.48
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/type-c-fast-charging-cable.png?v=1764316550",
+          "source": "https://ambraneindia.com/products/abcvs-12",
+          "alt": "Ambrane 65W Type C Cable Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "cables",
+        "modelName": "ABCVS-12",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      }
+    ]
+  },
+  "replacements": [
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-NEOLINK-100W-TYPE-C",
+      "newProductId": "REPAIR-AMBRANE-ABCC-100-BLACK"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-CREST-60W-TYPE-C",
+      "newProductId": "REPAIR-AMBRANE-ABCC-60-BLACK"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-FLARE-3A-TYPE-C",
+      "newProductId": "REPAIR-AMBRANE-RCT-15-BLACK"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-RAFT-3A-MICRO-USB",
+      "newProductId": "REPAIR-AMBRANE-RCM-15-BLACK"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-MULTILINK-3-IN-1",
+      "newProductId": "REPAIR-AMBRANE-TRIO-11-BLACK"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-NEOSYNC-TYPE-C-LIGHTNING",
+      "newProductId": "REPAIR-AMBRANE-AMCL-12--WHITE"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-QUADCORD-4-IN-1",
+      "newProductId": "REPAIR-AMBRANE-AC4CL-15-BLACK"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-ULTRASYNC-4K-HDMI",
+      "newProductId": "REPAIR-AMBRANE-AHDMS-15-BLACK"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-LINKFLEX-TYPE-C-USB-A",
+      "newProductId": "REPAIR-AMBRANE-ABSC-15-BLACK"
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-PULSE-65W-SILICONE-TYPE-C",
+      "newProductId": "REPAIR-AMBRANE-ABCVS-12-BLACK"
+    }
+  ],
+  "evidence": [
+    {
+      "productId": "REPAIR-AMBRANE-ABCC-100-BLACK",
+      "source": "https://ambraneindia.com/products/ambrane-abcc-100",
+      "manufacturerSku": "ABCC-100-BLACK",
+      "manufacturerProductId": 6835245154483,
+      "manufacturerVariantId": 43825003528439,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/type-c-laptop-charging-cord.webp?v=1763448116",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "97448acadb60ced91f7ad73ceb3dac1accc0261d1bb5f249480c06e0982a3aa2",
+      "factEvidence": [
+        {
+          "key": "connectorFrom",
+          "value": "USB-C",
+          "contains": "Type-C to Type-C"
+        },
+        {
+          "key": "connectorTo",
+          "value": "USB-C",
+          "contains": "Type-C to Type-C"
+        },
+        {
+          "key": "maxWatts",
+          "value": 100,
+          "contains": "100W"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-ABCC-60-BLACK",
+      "source": "https://ambraneindia.com/products/abcc-60",
+      "manufacturerSku": "ABCC-60-BLACK",
+      "manufacturerProductId": 8267875942647,
+      "manufacturerVariantId": 44819173769463,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/type-c-to-type-c-cable.webp?v=1763212068",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "5cb14bdc222b926157accc8787a6f1947e906998a35faeab586ffefb45c87e62",
+      "factEvidence": [
+        {
+          "key": "maxWatts",
+          "value": 60,
+          "contains": "60W"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480mbps"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-RCT-15-BLACK",
+      "source": "https://ambraneindia.com/products/rc-t-15",
+      "manufacturerSku": "RCT-15-BLACK",
+      "manufacturerProductId": 4362636394595,
+      "manufacturerVariantId": 43823977300215,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/type-c-to-usb-cable.png?v=1763212704",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "e35db1e3f6f7f3cec4e041ed804da608a6aac10e0a9e93ae14b983510340bcd9",
+      "factEvidence": [
+        {
+          "key": "maxCurrentAmps",
+          "value": 3,
+          "contains": "3A"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480 Mbps"
+        },
+        {
+          "key": "lengthMeters",
+          "value": 1.5,
+          "contains": "1.5 meters"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-RCM-15-BLACK",
+      "source": "https://ambraneindia.com/products/rc-m-15",
+      "manufacturerSku": "RCM-15-BLACK",
+      "manufacturerProductId": 4362632691811,
+      "manufacturerVariantId": 43824911417591,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/micro-usb-cable.png?v=1763446439",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "e1e3f61e98787260d51e689ca42ccbbaef12e52731009b1ae3c090f51d54b9ee",
+      "factEvidence": [
+        {
+          "key": "connectorTo",
+          "value": "Micro USB",
+          "contains": "Micro USB"
+        },
+        {
+          "key": "maxWatts",
+          "value": 20,
+          "contains": "20W"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480 Mbps"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-TRIO-11-BLACK",
+      "source": "https://ambraneindia.com/products/trio-11-3-in-1-cable",
+      "manufacturerSku": "TRIO-11-BLACK",
+      "manufacturerProductId": 1275337179183,
+      "manufacturerVariantId": 43825004085495,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/3-in-1-charging-cable.webp?v=1763447769",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "bf4bb0cfd85cf7987a8a0e3cb49313c7681206ffab9e85ab3733b4176794733d",
+      "factEvidence": [
+        {
+          "key": "maxCurrentAmps",
+          "value": 2.1,
+          "contains": "2.1A"
+        },
+        {
+          "key": "connectorTo",
+          "value": "Micro USB / USB-C / Lightning",
+          "contains": "Micro USB, Type-C and Lightning"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-AMCL-12--WHITE",
+      "source": "https://ambraneindia.com/products/amcl-12",
+      "manufacturerSku": "AMCL-12- WHITE",
+      "manufacturerProductId": 8354695348471,
+      "manufacturerVariantId": 45011097747703,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/mfi-certified-lightning-cable.webp?v=1763211626",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "d6b58f36af98ddf772dbd750e49633b2ae1be05e79d6267cd0708855aa66a050",
+      "factEvidence": [
+        {
+          "key": "maxWatts",
+          "value": 27,
+          "contains": "27W"
+        },
+        {
+          "key": "connectorFrom",
+          "value": "USB-C",
+          "contains": "Type-C to Lightning"
+        },
+        {
+          "key": "connectorTo",
+          "value": "Lightning",
+          "contains": "Type-C to Lightning"
+        },
+        {
+          "key": "mfiCertified",
+          "value": true,
+          "contains": "MFI certified"
+        }
+      ],
+      "imageBinding": "sole-variant-primary-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-AC4CL-15-BLACK",
+      "source": "https://ambraneindia.com/products/ac4cl-15",
+      "manufacturerSku": "AC4CL-15-BLACK",
+      "manufacturerProductId": 8416230015223,
+      "manufacturerVariantId": 49041495818487,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/3_png_f7b87df8-94af-4725-b4f1-14fee3051da3.webp?v=1725519519",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "94036a9663d22a8e379ccc838c776129212565202284bbbc3245ffcd648c39bb",
+      "factEvidence": [
+        {
+          "key": "maxWatts",
+          "value": 60,
+          "contains": "60W charging through USB-C to USB-C"
+        },
+        {
+          "key": "connectorTo",
+          "value": "USB-C / Lightning",
+          "contains": "USB-C to Lightning, USB-A to Type-C, and USB-C to USB-C"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-AHDMS-15-BLACK",
+      "source": "https://ambraneindia.com/products/ahdms-16",
+      "manufacturerSku": "AHDMS-15-BLACK",
+      "manufacturerProductId": 7917678002423,
+      "manufacturerVariantId": 43823975989495,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/1-gobADN-yl-transformed.png?v=1682313815",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "b7c16134d106c4a97e513d8343de26efee9ec57987a364020521b6b500bc257b",
+      "factEvidence": [
+        {
+          "key": "dataTransferGbps",
+          "value": 18,
+          "contains": "18 Gb/s"
+        },
+        {
+          "key": "displaySupport",
+          "value": "4K 30–60Hz",
+          "contains": "4K resolution at refresh rates ranging from 30Hz to 60Hz"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-ABSC-15-BLACK",
+      "source": "https://ambraneindia.com/products/absc-15",
+      "manufacturerSku": "ABSC-15-BLACK",
+      "manufacturerProductId": 7917641695479,
+      "manufacturerVariantId": 43823938797815,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/type-c-usb-cable.png?v=1764316911",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "35102ab5f6e74a19582a2e9487d541fb2fc58f66bfc4ba840730c248faab0cf9",
+      "factEvidence": [
+        {
+          "key": "maxWatts",
+          "value": 30,
+          "contains": "30W"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480 Mbps"
+        },
+        {
+          "key": "lengthMeters",
+          "value": 1.5,
+          "contains": "1.5 meters"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-ABCVS-12-BLACK",
+      "source": "https://ambraneindia.com/products/abcvs-12",
+      "manufacturerSku": "ABCVS-12-BLACK",
+      "manufacturerProductId": 7917639598327,
+      "manufacturerVariantId": 43823933358327,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/products/type-c-fast-charging-cable.png?v=1764316550",
+      "feedSha256": "487360894132cf9ab9a98c686b79491e277ae0356beb0e178278ee67faef5de5",
+      "descriptionSha256": "4ffbdb5c0cd80ecbcd0aec2d51cabe532ef17d5bffda014a2c03470aaaa705bf",
+      "factEvidence": [
+        {
+          "key": "maxWatts",
+          "value": 65,
+          "contains": "65W"
+        },
+        {
+          "key": "maxCurrentAmps",
+          "value": 6.5,
+          "contains": "6.5A"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480 Mbps"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    }
+  ],
+  "publication": "not-published; requires visual review"
+}

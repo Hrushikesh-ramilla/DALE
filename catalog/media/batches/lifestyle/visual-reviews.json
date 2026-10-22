@@ -1,0 +1,1137 @@
+{
+  "reviewedAt": "2026-10-14",
+  "contactSheets": 9,
+  "reviews": [
+    {
+      "productId": "REPAIR-SFERRA-14526KGSMISE",
+      "manufacturerSku": "14526KGSMISE",
+      "sha256": "b71234c0b96e5499467266df2a5255be61c88a4dcae51e0ae57502e35da8ef0e",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_ISABELLA-SCALAMANDRE_STANDARD-SHAM_IVORY-SEA_SILO_v4.webp?v=1784313662",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-4526KGSMISE",
+      "manufacturerSku": "4526KGSMISE",
+      "sha256": "5dba25b86fd102c6928c924f8f9b6735e4edf9329ab6ed2e20d7d4acc1bc5845",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_ISABELLA-JACQUARD_QUILT_STANDARD-SHAM_IVORY-SEA_SILO_v4.webp?v=1784313662",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-14526KGPCISE",
+      "manufacturerSku": "14526KGPCISE",
+      "sha256": "6450f9466c2c04ca821c48f831fba69d1ad7341ad2432152b2c9ec16f1304774",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_ISABELLA-SCALAMANDRE_PILLOWCASE_IVORY-SEA_SILO_v2copy.webp?v=1784313662",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-3763KGSMLNR",
+      "manufacturerSku": "3763KGSMLNR",
+      "sha256": "12226150ff55c22e9469988a92865f124faac303bdee41759f6dd25bd6f73796",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_RIFELESSO_STANDARD-SHAM_LUNAR_SILO-1_v3.webp?v=1785425692",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-4500KGSMSEA",
+      "manufacturerSku": "4500KGSMSEA",
+      "sha256": "65826f75dc25fcf0b002595b6bdd9bc20db60e45c083a3ac93b7a6ee2344fbc0",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_PALATINO_STANDARD-SHAM_SEA_SILO_v2.webp?v=1785506543",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-3403KGDCBSH",
+      "manufacturerSku": "3403KGDCBSH",
+      "sha256": "31b71b27992930b81a18c5d022f2cf274f88953d3bac8cbff579f12f4f884da3",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_RAMAGLIA_STANDARD-SHAM_BLUSH_COMP_v1.webp?v=1785182468",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-3763KGDCLNR",
+      "manufacturerSku": "3763KGDCLNR",
+      "sha256": "36c3933a716590a335aa5ce6ff27d317fc35d4588c9694fc82e91c0b7b0ef149",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_RIFELESSO_DUVET-COVER_SAND_COMP_v2.webp?v=1785425692",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-3403KGSMBSH",
+      "manufacturerSku": "3403KGSMBSH",
+      "sha256": "0829a73a819a0345194d37f27440d8c87a941847c9c7d7283254481ad70efdd5",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_RAMAGLIA_STANDARD-SHAM_BLUSH_SILO_v2.webp?v=1785182468",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-1687S2TIPTWLAOY",
+      "manufacturerSku": "1687S2TIPTWLAOY",
+      "sha256": "c35c0f90eec3bb35a4f0a661b1dd836b36a1b05fb687d822d8d0f83e1fd12471",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_MASSERIA-PLAID_TIP-TOWELS_ALMOND-OYSTER_COMP_v2.webp?v=1785520538",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SFERRA-3100KGDCSND",
+      "manufacturerSku": "3100KGDCSND",
+      "sha256": "8895cdcea3c8154eded1becbbfe5624e47f22c0a4c8bcc625ce978c01e3f263a",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0095/2306/8991/files/SFERRA_FW26_ECOMM_BRINA_DUVET-COVER_SAND_COMP_v3_5d265b12-a64e-406f-8817-26df8d3f8db5.webp?v=1785870868",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-M249-LAP-JADE",
+      "manufacturerSku": "M249-LAP-JADE",
+      "sha256": "fe22692e578daeafca03bfc600edf57c83dafb275c8d93bbe3ca78d4d882a660",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Accessories-Bernardo-Throw-Jade-Silo.png?v=1791807235",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-M150-BSHA-MILANO-HONEYSC",
+      "manufacturerSku": "M150-BSHA-MILANO-HONEYSC",
+      "sha256": "eb9aa93be3431a26c5cf049368d203b7a39bc5499bcd2c6381ea3d3a4fa37434",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Accessories-DaphneThree-MiniPillow-Honeysuckle-Silo_2b0d0749-1f3b-4bb0-b3af-9e411a780f8d.png?v=1791807335",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-MSC071-FQDUV-DALILA-PEBBLE",
+      "manufacturerSku": "MSC071-FQDUV-DALILA-PEBBLE",
+      "sha256": "e66ff488ecaee6347e90eadeb741df614e6c1e3554d32cc8b09a9d05439b89ec",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Bed-Dalila-DuvetCover-Pebble-Silo.png?v=1791915377",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-M251-LAPOS-NIGHT",
+      "manufacturerSku": "M251-LAPOS-NIGHT",
+      "sha256": "d51367c94fd3148208e7a9b1d876981b5b1c222be5439cbc95dddc2c5e4a9fc4",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Accessories-Benito-Throw-Midnight-Silo.png?v=1791807235",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-M246-SSHA-PERLA-ALMOND",
+      "manufacturerSku": "M246-SSHA-PERLA-ALMOND",
+      "sha256": "edeebcdf2be94eec3889f7151085b308fc7d26ce10ae8e23a3260d82f9a44904",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Bed-Perla-Sham-Almond-Silo.png?v=1791807540",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-M244-SSHA-LANA-SILSTRP",
+      "manufacturerSku": "M244-SSHA-LANA-SILSTRP",
+      "sha256": "43d265bb378e5aace66c94b53d1ce473627223759b921ebb802023cba456bc55",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Lana_Sham_SilverStripe.png?v=1791807439",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-M244-SCAS-PR-LANA-SILSTRP",
+      "manufacturerSku": "M244-SCAS-PR-LANA-SILSTRP",
+      "sha256": "33516689efe23fc08cb990c13b82ad59963bc26a5c3ec70bee64fe7a68453a88",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Lana_case_Silverstripe_e10601ea-1808-4d60-8297-2e5d1ee1a3ff.png?v=1791807438",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-M244-FQDUV-LANA-SILSTRP",
+      "manufacturerSku": "M244-FQDUV-LANA-SILSTRP",
+      "sha256": "a82bb243099f75856cf2a1d94efeb16a6fde1c36ab3357e4eccdc9fb627a23bb",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Lana_Duvet_Silverstripe.png?v=1791807438",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-MSC072-SCAS-PR-LAKSHA-MOSS",
+      "manufacturerSku": "MSC072-SCAS-PR-LAKSHA-MOSS",
+      "sha256": "f70b80e359d19f4ff4abd4740d4591b93c51237636f238621135249686cb256f",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Bed-Laksha-Pillowcase-Moss-Silo.png?v=1791807438",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MATOUK-MSC072-SSHA-LAKSHA-MOSS",
+      "manufacturerSku": "MSC072-SSHA-LAKSHA-MOSS",
+      "sha256": "3427ccdaab887a9636dfa605c456ae67f9ab6f2d4e623ae4f34e92d0f4a87783",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0929/8663/8611/files/Bed-Laksha-Sham-Moss-Silo.png?v=1791807440",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5715KGSMWBE",
+      "manufacturerSku": "5715KGSMWBE",
+      "sha256": "fd44b505b2088eadb6a495b745236f2480d9f39a9dbfd688f07d2a5669daccc1",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_TUBO_STANDARD-SHAM_WHITE-BEIGE_SILO_V4.webp?v=1790095838",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5715KGPCWBE",
+      "manufacturerSku": "5715KGPCWBE",
+      "sha256": "2101719faff1bc9b3d8a41221b9adb325925911c3cb52adc77fa77fdd47c7efe",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_TUBO_PILLOWCASES_WHITE-BEIGE_SILO_v3.webp?v=1790095838",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5715KGDCWBE",
+      "manufacturerSku": "5715KGDCWBE",
+      "sha256": "4d6dffe78d5b5f329107598e6c50fac8177ee7e985552c064902ea11ca45603b",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_TUBO_DUVET-COVER_WHITE-BEIGE_SILO_v4.webp?v=1790095838",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5019KGSMBEI",
+      "manufacturerSku": "5019KGSMBEI",
+      "sha256": "6a1d7fe624e9cf79ad0009b5be44a0b3bbe60eb3393481f7f3f95469eafcac66",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_SPLENDORE_STANDARD-SHAM_BEIGE_SILO_v4.webp?v=1790182623",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5019KGPCBEI",
+      "manufacturerSku": "5019KGPCBEI",
+      "sha256": "2d09a325fd62de78e0ebaf33c1562dd9a0215ab0e24d64717078d5f84696e058",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_SPLENDORE_PILLOWCASES_BEIGE_SILO_v4.webp?v=1790182623",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5019KGDCBEI",
+      "manufacturerSku": "5019KGDCBEI",
+      "sha256": "db9a99f99e5e00f557daf9a88b448a735fd2953347b7f7e06fbece6c8e099a21",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_SPLENDORE_DUVET-COVER_BEIGE_SILO_v2.webp?v=1790182623",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5128KGSMIBE",
+      "manufacturerSku": "5128KGSMIBE",
+      "sha256": "777fa836d400c595d9b7cf02422c5e91c0938cd3a82fb48fe7e1cbc72020571f",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_IMPERO_STANDARD-SHAM_IVORY-BEIGE_SILO_v3.jpg?v=1790009126",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5128KGPCIBE",
+      "manufacturerSku": "5128KGPCIBE",
+      "sha256": "c72c61a43d0714b190637b92571837e44457c27ca6c98bb1286285a7565162e0",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_IMPERO_PILLOWCASES_IVORY-BEIGE_SILO_v4.jpg?v=1790009126",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-528HNDTWLIBE",
+      "manufacturerSku": "528HNDTWLIBE",
+      "sha256": "a866e7c0fa4f698f94bc75a7b380726befc25765ec3f26eda74d780d2ba1934e",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_IMPERO_HAND-TOWEL_IVORY-BEIGE_SILO_v1.jpg?v=1790009126",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-PRATESI-5128KGDCIBE",
+      "manufacturerSku": "5128KGDCIBE",
+      "sha256": "4e7f2ec0c351bccdcbca29fbbc9baac80f2379c05c7724dac8e2534ecb1d8d9f",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0569/2224/3257/files/PRATESI_FW26_ECOMM_IMPERO_DUVET-COVER_IVORY-BEIGE_SILO_v5.jpg?v=1790009126",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-AMGI33",
+      "manufacturerSku": "AMGI33",
+      "sha256": "4a6139f58f8d93ff07d52f3b8a396d5e11756fa1ca526af2b170e10845faeffa",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/files/01_AMGI33.jpg?v=1789114743",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-CR01-37-GD",
+      "manufacturerSku": "CR01/37 GD",
+      "sha256": "c305c6808a22038d2463821b82ebbf2e38e05fe37f8fc0a01e49b87ad13a205a",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/files/CR01-37-gold-01.jpg?v=1789114686",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-NZ05-GR",
+      "manufacturerSku": "NZ05 GR",
+      "sha256": "20e2abb2d08fe37da8081733553c3db4fda29b2b47fea8f343f8ad42cbc3b737",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/files/01_NZ05-GR.jpg?v=1789114768",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-7320-25",
+      "manufacturerSku": "7320/25",
+      "sha256": "68e7ca82e07f702e240f82ddce1a365069835a7dac052ed261327bc2a2e94006",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/files/7320-25_01.jpg?v=1744033762",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-829",
+      "manufacturerSku": "829",
+      "sha256": "e9d5bc058eadcb4e553f48ac3271caccbc5da9dca229306e75605337d0227ec1",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/products/01_829_762c8054-1791-48be-b9e1-fc740c9f669c.jpg?v=1599876939",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-12-B",
+      "manufacturerSku": "12 B",
+      "sha256": "ad6e345b953f284ce3175b103ce4cf8a869d49d772900f8539aeaea8e57a80b4",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/products/12-01-B.jpg?v=1708527829",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-ZH01",
+      "manufacturerSku": "ZH01",
+      "sha256": "8863e420311514ad0c678fb8ee91f45e4078ab16c526926aee2ca515c9ae1163",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/products/01_ZH01_7e7ba3f4-96a7-4438-94b2-67a6d5067ecd.jpg?v=1599882081",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-845",
+      "manufacturerSku": "845",
+      "sha256": "8e2259b312c0f7cdb4369039eb2351df22ecfd65f8e59adb6229d714ac7dff84",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/products/01-1_845.jpg?v=1630937301",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-PCH06-26",
+      "manufacturerSku": "PCH06/26",
+      "sha256": "007ff117353fc954e16517f66cf9ec80122b705ddb089b846679201f3f9706ee",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/products/01_PCH06.jpg?v=1599876655",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-ALESSI-ITM23",
+      "manufacturerSku": "ITM23",
+      "sha256": "5aac7ed6da2675b3559729c54c797a2507ea3e40b3c422cdd7678afdea0c47a8",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0337/3603/2392/products/01_ITM23.jpg?v=1701366907",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-503225",
+      "manufacturerSku": "503225",
+      "sha256": "b28f8d2db8c46e3767d0ed52a06cd836ee2e08c651310101b2b2521045c38ca9",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/503225.jpg?v=1790613396",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-503025",
+      "manufacturerSku": "503025",
+      "sha256": "f16b16c8f1290bab33717de4c53f84cc748ede909ae3cbeea1662cd0134a74da",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/503025.jpg?v=1790612899",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-501017",
+      "manufacturerSku": "501017",
+      "sha256": "2b003dd7324a7d46c1434b9028c8cabda495127706b330e4364e0defbe00490d",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/501017.png?v=1790603992",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-503125",
+      "manufacturerSku": "503125",
+      "sha256": "0bdd6c5882c40f517bc83e8d06881816f24c1edbe6f1dd651ed6597a0484e235",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/503125.jpg?v=1790608327",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-501225",
+      "manufacturerSku": "501225",
+      "sha256": "7a960784c5c4685bfc9b209dfbed8419bcf22ff8c25f05fe2d2770f36a66c7ff",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/501225.jpg?v=1790607636",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-501125",
+      "manufacturerSku": "501125",
+      "sha256": "a15f931a9aee7079a4cd570a9732e87116e72504122ad8e089cf995c5d201286",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/501125.jpg?v=1790607028",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-501320",
+      "manufacturerSku": "501320",
+      "sha256": "74b150fc2734b277190da2aea145f1a7a21b328633ae49445ba2088bd54c0c4a",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/501330_3a8162cf-207a-4409-ba49-2363024b5361.jpg?v=1790606627",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-653525",
+      "manufacturerSku": "653525",
+      "sha256": "f99d23d013dfe9e32af7dfda58cd852da53b1f0e848dab1954b18971390ac49c",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/653530_dfb1574b-3f92-4b1a-8100-270da54c1c3a.png?v=1784050759",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-211330",
+      "manufacturerSku": "211330",
+      "sha256": "80932903e342199f5e3e29524babc72a94c9d44152377a51a6b49163c4619425",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/B003NCX83I_37e21933-cf19-4f6b-99e9-ec64e9b5ae4a.jpg?v=1770669614",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-MAUVIEL-1830-523445",
+      "manufacturerSku": "523445",
+      "sha256": "dfad33b69db626c6d6bf91e6aa80161d079509c48880fdd7a6b00b2121756b0c",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0004/0645/4325/files/523445.jpg?v=1781663208",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99394",
+      "manufacturerSku": "99394",
+      "sha256": "383be594b70b3c4e9b52dd565cefe40a8d8ad87c7b3c6d46996745323d34941d",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99394_RUF_RUP_12_ServingFryingPan_ACC3006X_Main.jpg?v=1790219476",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99461",
+      "manufacturerSku": "99461",
+      "sha256": "577dd2e6b30fe110eb3185961d1b74ee04db92cc169212f7af6d91232272349b",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99461_RUF_RUP_10inFryingPan_ACC2605Z_Main.jpg?v=1790225057",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99460",
+      "manufacturerSku": "99460",
+      "sha256": "b13a95908bb12684765c8f6949c8f3653f38a5948848bae1c0fed6de973b1a6f",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99460Main.jpg?v=1790280023",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99459",
+      "manufacturerSku": "99459",
+      "sha256": "ff84e0201f033fb7a25bbb3db92e10eff95af56218add8127d1f2131809529be",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99459_RUF_RUP_7QTBraiser_ACA3009X_Main.jpg?v=1790223333",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99458",
+      "manufacturerSku": "99458",
+      "sha256": "13a88965f9919deb7cb42c71b77af2a110269c7159480145f875f25baf4613e1",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99458_RUF_RUP_8QTStockpot_ACA2614X_Main.jpg?v=1790215779",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99457",
+      "manufacturerSku": "99457",
+      "sha256": "bf9943119c458355953d73221e8c7343aa026d2c40273817321d6cb34ba535de",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99457_RUF_RUP_5QTBraiser_ACA2609X_Main.jpg?v=1790222591",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99456",
+      "manufacturerSku": "99456",
+      "sha256": "d0e581a0dbe23839eb72350cbd4eb32c01581da49f1dc0db7bef51a149fb0c5b",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99456_RUF_RUP_4QTChefPan1_stickhandle_ACB2409Z_Main.jpg?v=1790221481",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99455",
+      "manufacturerSku": "99455",
+      "sha256": "2bad5186e57af6472505e83c40187a1056f19f44b5ff360b5190fa2e5b4c8564",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99455_RUF_RUP_4QTSoupPot_ACA2012X_Main.jpg?v=1790220016",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99454",
+      "manufacturerSku": "99454",
+      "sha256": "67fb87ff487b8f65f30357485db125b5475a9d2d123727258d0aaaca720daafa",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/99454_RUF_RUP_1.5QTSaucepan_ACA1607Z_Main.jpg?v=1790216950",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-RUFFONI-99389",
+      "manufacturerSku": "99389",
+      "sha256": "3e1490cd19d2ffe78f544f4c13ba93073808625ee42b220809c9bb4b3488fa17",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0354/5405/8632/files/RU6_3107B-18_main.jpg?v=1761346382",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-459465-COL-JA001",
+      "manufacturerSku": "459465#COL#JA001",
+      "sha256": "a25c12895b3e162590f87c018a64ee27534eb8cfafc4bebfed4424ec3ec54acc",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/GIZE-SET-ASCIUGAMANI_BIANCO_01.jpg?v=1790247045",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-459449-COL-JA001",
+      "manufacturerSku": "459449#COL#JA001",
+      "sha256": "04816fc6b7fd4be522b4acc0a767ee4521e4d7e817432dafa6d48a28fde205ca",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/GIZE-TELO-BAGNO_BIANCO_01.jpg?v=1790247020",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-459459-COL-JR334",
+      "manufacturerSku": "459459#COL#JR334",
+      "sha256": "ff41764dd03e7d03bf8d71684483ef156519475295c7c91624b37ea581bacd44",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/TURNER-PLAID_CANYON_01_0e07f1a3-ac8f-43bf-95f5-5cda90c3969d.jpg?v=1789381427",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-475174-COL-JM292",
+      "manufacturerSku": "475174#COL#JM292",
+      "sha256": "f9d0d46f9ca1d2bfd2894ec6175fd1285154ca45c42bd8f648e41a4b469b8111",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/DUBE-FLUX-SET-FEDERE_MALTO_01_fbf8fd09-2cb2-4926-9ff6-16e504d50848.jpg?v=1789381391",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-475172-COL-JG042",
+      "manufacturerSku": "475172#COL#JG042",
+      "sha256": "93670dce0b383e4048dbc7b3708fadc3d2bc537adb149ac3d87862b6df891190",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/DUBE-CRIS-SET-FEDERE_ORO_01_85bfa981-fb3b-40f1-aa2c-b8b8ac3d208e.jpg?v=1789381372",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-475170-COL-JA202",
+      "manufacturerSku": "475170#COL#JA202",
+      "sha256": "f80e108f43831be2ca719138f0a41da7f503b9bddc54cb5a3571f31220b5e6fc",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/NAP-JEM-SET-FEDERE_MASTICE_01_a05f35a8-6ffb-4c07-932d-cef66d7799da.jpg?v=1789381342",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-475168-COL-JA202",
+      "manufacturerSku": "475168#COL#JA202",
+      "sha256": "ffdde19b2e8f50eddd8ef7144544f00e85ad0d839492ec3a0e8e57a320c19dec",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/NAP-LILY-SET-FEDERE_MASTICE_01_b064988e-e07b-4f2c-baab-500d6e839dda.jpg?v=1789381327",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-459125-COL-JN087",
+      "manufacturerSku": "459125#COL#JN087",
+      "sha256": "529e8526f6c993197df20dbf5db5e259eb4139a60e026520d5bdc4f4a361b640",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/MACO-SET-ASCIUGAMANI_FUMO_01_9c5875fd-5007-4a1a-93bd-af2a5db0b446.jpg?v=1778168416",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-474959-COL-JN011",
+      "manufacturerSku": "474959#COL#JN011",
+      "sha256": "0c87e42c00c7bbd8b66e0c365a9b82d0880322afeed9fd4cb301b8e0e339d48e",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/TED-PLAID-MALTINTO_GRIGIO_01.jpg?v=1777890229",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-SOCIETY-LIMONTA-474972-COL-JM047",
+      "manufacturerSku": "474972#COL#JM047",
+      "sha256": "1cda796dec0bdc128f0c562c743aac2adb69bce2e61fd38fa97d0771694d5718",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0035/7138/4384/files/PAKA-PLAID_MORO_01_7d174d19-fbc9-40bb-97c2-25f03e171913.jpg?v=1777890639",
+      "decision": "approved",
+      "reason": "Visible product type, color/pattern and design agree with manufacturer SKU-bound photograph. Size/fiber properties are not certified from appearance."
+    },
+    {
+      "productId": "REPAIR-111SKIN-TRCLRSS01",
+      "manufacturerSku": "TRCLRSS01",
+      "sha256": "35ae491a20a6538c5022ad2f1dd5cfbced7b38e7a0d71dd7af3136c5a365e26c",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/ExfoliatingEnzymeCleanser.png?v=1707392976",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-RECLRSS02",
+      "manufacturerSku": "RECLRSS02",
+      "sha256": "f1db537557dd24599f1172adf326cbce8866dc7987fc685839e6c5db426d03d6",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/Cleansing_oil_lid_on_100ml_LRF_02.png?v=1775059334",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-INCLRSS01",
+      "manufacturerSku": "INCLRSS01",
+      "sha256": "df7622f4fcf45600654229467878098f4f82fdb389f9aa2c267672dd0ce40946",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/VITAMINCLEANSER_c73f26ca-af26-4394-9178-dd15dc69083a.png?v=1712145166",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-RABORSS01",
+      "manufacturerSku": "RABORSS01",
+      "sha256": "cd85f672aef793a62b06aeab060e856a595efd276af4dc6431894e92b993ef1f",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/RGBOOSTER_png.png?v=1714036085",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-TRSERSS01",
+      "manufacturerSku": "TRSERSS01",
+      "sha256": "469e2f9c890cd37fc1cf43a58daddcd067d8e2dbce0127b1831463b18cab781f",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/DSCS_Packshot_1.png?v=1737981151",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-INBORSS01",
+      "manufacturerSku": "INBORSS01",
+      "sha256": "b0fedb1f98fd0c78c5d745bae49182f1cf476e3ad4c0d41b2d0e53fac2a09c43",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/BDVITAMINCBRIGHTENINGBOOSTER.png?v=1732039729",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-CLBORSS01",
+      "manufacturerSku": "CLBORSS01",
+      "sha256": "1aad71e4b6ef82972c3160e1ce88d2ba58492e4d5ee5af437a13f89699f21840",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/ANTIBLEMISHBOOSTER_ANTIBLEMISHBOOSTER_BOTTLE.png?v=1713435856",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-INSERSS01",
+      "manufacturerSku": "INSERSS01",
+      "sha256": "9b33468812b66878a46f5e564cd597c997952d76044ef7759180f1834b3498ee",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/BDEYESERUM.png?v=1704461390",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-RESERSS01",
+      "manufacturerSku": "RESERSS01",
+      "sha256": "8c39c75c81515df0c2d12779dde976c6c5d32229fa9a11ecb214a191114a91f9",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/REPAIRSERUMNACy2.png?v=1704462168",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-YTL30",
+      "manufacturerSku": "YTL30",
+      "sha256": "8acc6b01feff94a48765fef1fdd435f77ab791b3b215a22a13ae33871a5a3b8d",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/Y_THEOREM_REPAIR_LIGHT_SERUM_Lid_On_shadow_1500x1500_3.png?v=1770222240",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-HYABB20",
+      "manufacturerSku": "HYABB20",
+      "sha256": "754423452a7436635375728bc322467740bb5b94c997229c8e89a88b6f432b00",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/AQUAHABOOSTER.png?v=1704461850",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-RGCRRSS01",
+      "manufacturerSku": "RGCRRSS01",
+      "sha256": "f57cb9ee611568a3752a622805d2bcd9327228bf63b94c6ecb33e073b0608208",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/Cryo_Moisturiser_1x1_Png_b664a5d2-da65-4aac-9cf9-49c57012664b.png?v=1722601562",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-REDCRSS01",
+      "manufacturerSku": "REDCRSS01",
+      "sha256": "a8c3ef31f3df025e02c9aaa8af631887bf4b4994c55768f311f2d4430145345e",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/DAYCREAMNACY2.png?v=1704462128",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-CBDBC160",
+      "manufacturerSku": "CBDBC160",
+      "sha256": "39912fe09afc7560596eab0ab79081b0b4388212b7a5426c3947fcf1826f2213",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/BDBODYCREAM.png?v=1704461445",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-INCRRSS01",
+      "manufacturerSku": "INCRRSS01",
+      "sha256": "7f33411fa401833aaa903eebb0717d4420703d3f2287c324ab56b80dcdb3843c",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/BDCREAM.png?v=1704881618",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-INEURSS01",
+      "manufacturerSku": "INEURSS01",
+      "sha256": "5ad7153c3a29c6aa7ea3de14193d82eacb72141a173ccd78d0597502e1494937",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/BDEMULSION.png?v=1704575565",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-RENCRSS01",
+      "manufacturerSku": "RENCRSS01",
+      "sha256": "3443c397c11742f36bd160e648ebb2b833945092195a1d37e42a0156f508a1a0",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/NIGHTCREAMNACY2.png?v=1702893959",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-111SKIN-REDLRSS01",
+      "manufacturerSku": "REDLRSS01",
+      "sha256": "e8ab5e14a2cab71cd56e272dd4decd4c7ea74dbd0b54ba98cf1133899b4736fc",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0618/1280/1689/files/LIGHTREPAIRDAYCREAMNACY2.png?v=1704462114",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T1XF01",
+      "manufacturerSku": "T1XF01",
+      "sha256": "838a896c9d964a3bd33907ebd6b51a651ba5c3762d9a1463f793447bb050c309",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tf_sku_T1XF01_2000x2000_0.png?v=1791942918",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T01K01",
+      "manufacturerSku": "T01K01",
+      "sha256": "6b68c2e8f3f30148ade46530a2d79a31eee58c614899382aaaed47ce76a736a4",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tf_sku_T01K01_2000x2000_0.png?v=1791955509",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T00H01",
+      "manufacturerSku": "T00H01",
+      "sha256": "2933eaa2f0df9597d6917abe655cc0634d0bd178353a9a934d082136f6b5e98b",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tf_sku_T00H01_2000x2000_0.png?v=1791915939",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T6LN01",
+      "manufacturerSku": "T6LN01",
+      "sha256": "8d46b92647505c3fe7820b7845684269d603ec89b0a6b9ce0fbb0af8a45b1275",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tf_sku_T6LN01_2000x2000_0.png?v=1791937512",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T0M901",
+      "manufacturerSku": "T0M901",
+      "sha256": "fca0092ed55debd0b2b5c5621edeae37a672b8edc7a04d5d1d3d7501e78f3fe6",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tf_sku_T0M901_2000x2000_0.png?v=1791912065",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T3T001",
+      "manufacturerSku": "T3T001",
+      "sha256": "9038414cf8047e677f96ec0b463ace6fd3567e32570d364550b8202e61543986",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tf_sku_T3T001_2000x2000_0.png?v=1791908714",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T94101",
+      "manufacturerSku": "T94101",
+      "sha256": "512f2e2faf7b846b965fe0090a05eda058a5b55b541f50a023346209578a1087",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tf_sku_T94101_2000x2000_0_3db6153a-9123-4244-a0ea-f59e522bd1bd.png?v=1791926729",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T00501",
+      "manufacturerSku": "T00501",
+      "sha256": "b2189d4c57fe3e3051c1c18af483a5e5d9382d39b6b3fc546ec21bb1d94c832a",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tfb_sku_T00501_2000x2000_0.png?v=1791935709",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T9Y101",
+      "manufacturerSku": "T9Y101",
+      "sha256": "6738fee04c8ace644fad33fdb814bcb1b58517f0a9fb052dc882074f8b36f8bc",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tfb_sku_T9Y101_2000x2000_0.png?v=1791885403",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-TOM-FORD-T95P01",
+      "manufacturerSku": "T95P01",
+      "sha256": "9d53b0aae04d8c6ece8dbe5517343c7479cd36946e2a48e6d20fcfc7619f5947",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0761/9690/5173/files/tf_sku_T95P01_2000x2000_0.png?v=1791953706",
+      "decision": "approved",
+      "reason": "Bottle label, color and model agree with exact manufacturer variant photograph. Original fl oz variant retained without an inferred ml conversion."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-CG-1002-030",
+      "manufacturerSku": "CG-1002-030",
+      "sha256": "640292b4dfaf1ce1ef5dbaedbc693fd02215809fe38621b0c28825c0f934544c",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheCreamCleansingGel30PrimaryNEWLOGOHS_square.png?v=1786370022",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-121-0105-010-090-01",
+      "manufacturerSku": "121-0105-010-090-01",
+      "sha256": "1847f6eae58aaac5e7cfed9b7e4d93ecd49954621b919c9e57d124852b0c86c1",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/THE-CLEANSING-BALM-2025-no-shadow_1x1_6a0d955e-a36d-456c-b5c4-da3f97436931.png?v=1788507300",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-121-0105-031-100-01",
+      "manufacturerSku": "121-0105-031-100-01",
+      "sha256": "9aac7c3abbdbd044aab769b5f53d73570dc497efd4c72ec294f59d7deeaca363",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheFoamingCleanser-Primary-4990x4990.png?v=1786456100",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-121-0102-053-030-01",
+      "manufacturerSku": "121-0102-053-030-01",
+      "sha256": "4b28c31a07360a3107fb678656f5c7873e7d33121a73d4a6e70b4ed0c90002bd",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/THE-VITAMIN-C-SERUM-NOMAD-no-shadow_1x1_e185c7b1-94af-4b7f-af3f-73dffd096f73.png?v=1788507397",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-FO-1001-010",
+      "manufacturerSku": "FO-1001-010",
+      "sha256": "386ff93e6c1a37516b6a108f277afbcdcc8154157f15fedf9d8ea624a49189d5",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheFaceOil-10ml-3340x3340.png?v=1786393357",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-121-0102-032-015-01",
+      "manufacturerSku": "121-0102-032-015-01",
+      "sha256": "c9b370e35e0a03b269d12accdff7c5752c5031b026df7b81ff4a9e0094955358",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheRetinolSerum-15ml-4990x4990.png?v=1786391873",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-122-0202-016-030-01",
+      "manufacturerSku": "122-0202-016-030-01",
+      "sha256": "6f10debea0c22855a6422219e610a898c27f309d81ed92fd6bfe46223224266a",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheSerum-Tube.png?v=1786448429",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-121-0102-044-030-01",
+      "manufacturerSku": "121-0102-044-030-01",
+      "sha256": "2a2787213dbb36d13acb2f2b0fe6b5b32088a4be84e1d5edd1a0afedc29ecb83",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/The-Elixir-Nomad-no-shadow_1x1_74337148-d390-4831-86d4-78a002103f3a.png?v=1788507335",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-SC-1001-001",
+      "manufacturerSku": "SC-1001-001",
+      "sha256": "2f65678342e20a6902138628af9f96df629735b416014464f63235f1b50e4107",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheUltimateSoothingCream-jar55pct-3780x3780.png?v=1786433952",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-121-0101-055-050-01",
+      "manufacturerSku": "121-0101-055-050-01",
+      "sha256": "0684e4c68b5d4d1d046d7840dcc9ec8675f8a35663627e7b0246929a3ec9901f",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/THE-OVERNIGHT-RESTORATIVE-CREAM-NOMAD-no-shadow_1x1_fb0f40e3-749b-4e94-bb83-6286e73ba500.png?v=1788507367",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-FC-0001-15-L",
+      "manufacturerSku": "FC-0001-15-L",
+      "sha256": "abf9e1b2f41f37ef1164b186fbc72ba7f639369c3977dc3c69614662ff1a6c34",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheCream15PrimaryNEWLOGO_square.png?v=1786369537",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-FC-2002-15",
+      "manufacturerSku": "FC-2002-15",
+      "sha256": "3840030f14f3f2b4d830bcd1a346504fe3dd56b62d08da3225df7a7588b1f950",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheRichCream15PrimaryNEWLOGO_square_763fc530-30de-44ac-b926-900bbd312c5a.png?v=1786369119",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-AUGUSTINUS-BADER-LI-1001-030",
+      "manufacturerSku": "LI-1001-030",
+      "sha256": "64dca956d9bebdf280ddc7b71a5e1db4ef70db89d22e70a288b64eea31400f6b",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/1009/4605/1398/files/TheLightCream-Primary-4990x4990.png?v=1786393657",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01295-23",
+      "manufacturerSku": "95790-01295-23",
+      "sha256": "1b5d9e0c215aeae7f4fefd9f908c2d41cab51e0bb13194a69a2590dfa16f145c",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01295-23_Supreme-Balm-Cleanser_packshot_C.png?v=1757689848",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-00248-85",
+      "manufacturerSku": "95790-00248-85",
+      "sha256": "11ceee38f8138d6b20e54ee9aabc92b7c7118f866f13053726abe3458ef9a60c",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-00248-85_FoamCleanser_packshot_C_3.png?v=1758022040",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-00235-06",
+      "manufacturerSku": "95790-00235-06",
+      "sha256": "d4574c97ca1607cf627a8dafbe80530febe79dff07f3d196340e78f74f13489a",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-00235-06_Purifying_Cream_Cleanser_packshot.png?v=1758037807",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01437-96",
+      "manufacturerSku": "95790-01437-96",
+      "sha256": "4f14cb1e4966ddb1e7a6a5eb60b2a4fdbbe9b6143c14eb0e7c7152d8c36bc438",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01437-96_0.jpg?v=1782994829",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01409-94",
+      "manufacturerSku": "95790-01409-94",
+      "sha256": "d206e1532ccae4b3f7b36af63d6cfbba7de7419d1f4b1521ae51dffb7fc6b790",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01409-94_SL_1.jpg?v=1769418699",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01417-81",
+      "manufacturerSku": "95790-01417-81",
+      "sha256": "57805c528886f462516358911e492d4ce8711b630fec74ddf1ce9a6b4ad956a0",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01383-01_PG_RadianceConcentrate_refill_packshot_1.png?v=1758016579",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01417-83",
+      "manufacturerSku": "95790-01417-83",
+      "sha256": "9888b2b0433a98a81e24fdbd97637a5c8973047c511c782fb5177b8bb89ecc94",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01383-00_PG_RadianceConcentrate_packshot_C.png?v=1758013676",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01398-68",
+      "manufacturerSku": "95790-01398-68",
+      "sha256": "f0eb4b36ef0b32bea93064fd1995910e7431806949c5b8eda8b1e96e6cf913f0",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01398-68_LIGHT_CONCENTRATE_SL_c.png?v=1758016671",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01437-97",
+      "manufacturerSku": "95790-01437-97",
+      "sha256": "b2dcafea425ce3b95d6b11a41086a4089f671060a437577db704ab1a255c00a0",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01437-97_0.jpg?v=1783239381",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01409-91",
+      "manufacturerSku": "95790-01409-91",
+      "sha256": "bd95059665df16d7a51c9f244fead2fcbe0cacf0145dcde6fa8a81e1c951b8b4",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01409-91_SL_1.jpg?v=1769181987",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01420-00",
+      "manufacturerSku": "95790-01420-00",
+      "sha256": "9561e8e69cfada5814db40a512bcf0ca969c49fcd96fe9c09facd0e0fa5c72ef",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01318-36_PR_Cream_30ml_packshot_C.png?v=1757691808",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01419-99",
+      "manufacturerSku": "95790-01419-99",
+      "sha256": "2feeb0780e183d2871bfbe7e2dacda7450dba1fb780031e2ea2ebf022af9cb1e",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/W37-2026_FESTIVE_2026_KV2_PR_Cream_848x848_961cc515-771d-46af-a2a5-b599c3128ca0.jpg?v=1788947113",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01423-66",
+      "manufacturerSku": "95790-01423-66",
+      "sha256": "1fee463f51f278b9d7c22725ccdd069001ca99f9a093186f6a0dd2d61afaf86e",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/W38-2026_FESTIVE_2026_KV8_Skin_Caviar_Luxe_Cream_Carousel_848x848_fa24d3ea-e987-4546-81f7-236d5133420d.jpg?v=1790332254",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01417-67",
+      "manufacturerSku": "95790-01417-67",
+      "sha256": "e5eb71dc02fc04bb318eb27a9cab67703d183e0da0967f92e68008de36a91382",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01382-97_PG_RadianceCream_refill_packshot.png?v=1758009076",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01417-14",
+      "manufacturerSku": "95790-01417-14",
+      "sha256": "8712be0d3bde1492904c11f41b674989966aa580f8bfc029386201c2212c90ed",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/W37-2026_FESTIVE_2026_KV2_PG_Cream_848x848_28bfc136-1dcc-43a9-8177-ca5ae57cf591.jpg?v=1788947243",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-01394-82",
+      "manufacturerSku": "95790-01394-82",
+      "sha256": "0fa0756e6651c137bf4f23e59b2cac56ca3615e84472573e3cbfd229d601a780",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-01394-82_LM_Cream_packshot_C.png?v=1758009174",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-LA-PRAIRIE-95790-00264-32",
+      "manufacturerSku": "95790-00264-32",
+      "sha256": "04faeb205da4f4b48b149d183376517490e2c8dd99b6b0957e2023b16b577800",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0907/7250/4920/files/95790-00235-06_PurifyingCreamCleanser_packshot_C.png?v=1758021741",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00730870307762",
+      "manufacturerSku": "00730870307762",
+      "sha256": "066714eca28641f6dc17733f1cf99e647a0242923c9b857c560725f88562b4ae",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/PITERA_FacialTreatmentCleanser.webp?v=1778053804",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00730870307717",
+      "manufacturerSku": "00730870307717",
+      "sha256": "73412c67195e3660b91826aadd04d4495f69f2b776632f321c410b0b733e1dfc",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/Cleansing_Oil__thumb_4062b5e3-bec0-46ae-b4fe-f7c563f97a65.webp?v=1778210725",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00381519193989",
+      "manufacturerSku": "00381519193989",
+      "sha256": "f7c53ed30a864a92939ab881ace6417630a7df73a1e119b42bd1bedc10f4c947",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/fts_30_ml.jpg?v=1790177264",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00381519190872",
+      "manufacturerSku": "00381519190872",
+      "sha256": "40c8b31a39ac1129c5ea4139e8c7eb2c1a86be50bfd41c1f9bd47cc9f48587d6",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/SKINPOWER_Re-New_Essence_thumb_e0af119f-14e3-46b2-9163-a4668fdb04e6.webp?v=1778155226",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00381519193514",
+      "manufacturerSku": "00381519193514",
+      "sha256": "4b3a994d9c3c504929bda129233e31d00dcabfb4e4ba250b29378f37bb40af94",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/GI_WW_50ml_Flatlay__65695.1761977292.1280.1280.jpg?v=1774948169",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00730870307892",
+      "manufacturerSku": "00730870307892",
+      "sha256": "9ce15123dc1c744191a7ba0ce34b89c0ed6966d9c051578be8ac0f8e5861968f",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/lxp_essence__thumb_950e6e69-16c4-47f6-aa28-dade975cf804.webp?v=1778210092",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00381519083532",
+      "manufacturerSku": "00381519083532",
+      "sha256": "5a154edbd326850762b2bc61a4edb5d1c6b2be07bb56ad82e8522a1d5ed7a8ec",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/LXP_serum__thumb_fb8ac261-640b-4c98-a62e-b5bab1217ebc.webp?v=1778210223",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00730870159439",
+      "manufacturerSku": "00730870159439",
+      "sha256": "335a4c2280ef8e6ba681fab1beb0af8cd329b50e14bfb30c958a70ff08f02f68",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/FTE__thumb_1fe668ef-6723-4b31-9f60-cc7386e3df03.webp?v=1778209221",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00381519193569",
+      "manufacturerSku": "00381519193569",
+      "sha256": "d7907d5e4a7e2d64a3a1dc1d74fb47cfe3b926cdf9815042d22d89b62371b9c4",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/GenOptics_Advanced_Spot_Essence__thumb_c8bb78a2-f98d-4017-8986-2954408c62ae.webp?v=1778204876",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00381519190834",
+      "manufacturerSku": "00381519190834",
+      "sha256": "973024bbfa469c55e8fdebcf6599d51fe1755339ff89b06addf0ee2092dc347b",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/SKINPOWER_Re-New_Airy_2.7_oz__39670.1777027187.1280.1280.png?v=1778073853",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    },
+    {
+      "productId": "REPAIR-SK-II-00730870307878",
+      "manufacturerSku": "00730870307878",
+      "sha256": "615ba2ac98b0b59413e21757f40954666d4107b6e33e4eae992e3fa7989ab442",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0769/8500/8313/files/LXP-upc-50g__thumb_05ea3c84-cc42-4722-9ec5-92d7dd0e241d.webp?v=1778210353",
+      "decision": "approved",
+      "reason": "Container and visible label agree with the manufacturer SKU-bound cosmetic product. No ingredient, skin suitability or efficacy inference."
+    }
+  ],
+  "rejected": [
+    {
+      "brand": "Mauviel 1830",
+      "sku": "561125",
+      "reason": "Manufacturer title claims stainless handle while associated image has black cast-iron handle; excluded."
+    },
+    {
+      "brand": "La Prairie",
+      "reason": "Foundation products containing SPF were excluded from sunscreen category."
+    },
+    {
+      "brand": "Augustinus Bader",
+      "reason": "Essence and face mist excluded from cleanser replacement cohort."
+    },
+    {
+      "brand": "111SKIN",
+      "reason": "Duplicate Rose Gold Radiance Booster 20ml supplier entry excluded; no artificial model-count padding."
+    }
+  ]
+}

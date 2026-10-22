@@ -1,0 +1,185 @@
+{
+  "reviewedAt": "2026-10-14",
+  "entries": {
+    "REPAIR-DITA-7806-B-BLK-GLD-52-Z": {
+      "sha256": "ade9168874576bfca33b42368c1d55c697d3ac3100442ef03311d3a7b1f1d8ae",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/FLIGHT006_7806-B-BLK-GLD-52_ANGLE.jpg?v=1742233427",
+      "sourceSku": "7806-B-BLK-GLD-52-Z",
+      "verified": true
+    },
+    "REPAIR-DITA-DTS477-A-01": {
+      "sha256": "998fc1f73fbbc4eb14a0bb9c6c1dc45c3b2beaaff15523a907c5d649497af1ca",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/FLIGHT-010_DTS477-A-01_ANGLE.jpg?v=1767913894",
+      "sourceSku": "DTS477-A-01",
+      "verified": true
+    },
+    "REPAIR-DITA-DTS121-62-01-Z": {
+      "sha256": "b495d3f9cab1e78d975cce9fe8a5c5e690fe462a38e37a699cca7c117182059d",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/MACH-SIX_DTS121-62-01_ANGLE.jpg?v=1768951884",
+      "sourceSku": "DTS121-62-01-Z",
+      "verified": true
+    },
+    "REPAIR-DITA-DLS407-A-01-A": {
+      "sha256": "346cb40b4b9afaa74347a66056d7de145e797b9eff9030c2debaed122493025e",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-407_DLS407-A-01_angle.jpg?v=1708123370",
+      "sourceSku": "DLS407-A-01-A",
+      "verified": true
+    },
+    "REPAIR-DITA-DTS141-A-04": {
+      "sha256": "0f9984f32a93d22ac7279ebbf5aa8e5a0f559efd4964373362d846ef082b2f59",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/Subsystem_DTS141-A-04_Angle.jpg?v=1713465767",
+      "sourceSku": "DTS141-A-04",
+      "verified": true
+    },
+    "REPAIR-DITA-DTS160-A-05": {
+      "sha256": "feb5d3e50031edada48f0b00b54ad86eea29b9c0492dca6081e950eee22803a2",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/ARTOA-92_424-02_ANGLE.jpg?v=1787852338",
+      "sourceSku": "DTS160-A-05",
+      "verified": true
+    },
+    "REPAIR-DITA-DRX-2082-A-SLV-GLD-62-Z": {
+      "sha256": "76c1482f3bd951971e195a09995122a1507066fef854ffb72c2b2ab13b99dde8",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/products/DECADE-TWO_DRX_2082_A_SLV_GLD_62_ANGLE.jpg?v=1747854083",
+      "sourceSku": "DRX-2082-A-SLV-GLD-62-Z",
+      "verified": true
+    },
+    "REPAIR-DITA-DTS138-A-03": {
+      "sha256": "0aba4aa7b6417d423daf02fb1c605993369a45be4eeb7ce56c73779f89f73288",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/GRAND-EVOONE_DTS138-A-03_Angle.jpg?v=1747855431",
+      "sourceSku": "DTS138-A-03",
+      "verified": true
+    },
+    "REPAIR-DITA-DLS451-A-01": {
+      "sha256": "fc85ef3bf519ef8ef709b9fdeb0c65254f1f2e96b5a61cc93d0a2c2409b66664",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-451_DLS451-A-01_ANGLE.jpg?v=1785431936",
+      "sourceSku": "DLS451-A-01",
+      "verified": true
+    },
+    "REPAIR-DITA-DLS151-A-01": {
+      "sha256": "42ec0e9afaa1ca146292374ebb92afb9111e67626ff297ba0e2dc15e26f8b67a",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0630/3144/3689/files/LSA-151_DLS151-A-01_ANGLE.jpg?v=1785431577",
+      "sourceSku": "DLS151-A-01",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934529120": {
+      "sha256": "552eceaed54d547dc9ae853e71eb0b63d03edf192d06a29722a209d9ed969566",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5217S__173553__P21__shad__qt_cb9735492bce7ad10c92744abfa6cd02ec0a5fd25590fa8acfb9ef1e35a444f6.png?v=1788343397",
+      "sourceSku": "827934529120",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934423848": {
+      "sha256": "9c13bc4edc59b247702eb832b104738634636f04b691dc0ab1ee3ef0bae96d47",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5183S__109452__P21__shad__qt_9bdf79bcdb26a39b19f7860f2e7590a0191eba41225c2665a540926e201d3e0b.png?v=1790942572",
+      "sourceSku": "827934423848",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934526365": {
+      "sha256": "0911afc03ebad45f9114d336a3a60acc4b0881b3f83009383557852680592aac",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5219S__1820GN__P21__shad__qt_74aa002a44b71e9f79a67481a9efc7582e0cdafa7bf0380c007bb48f3fb95eda.png?v=1786874600",
+      "sourceSku": "827934526365",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934529007": {
+      "sha256": "eb11f30659712120e081684b002cd1298021d59b0a8fdad8e0a7373ec3732335",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5036S__180153__P21__shad__qt_d8da663b950d9d7d6b12325bd7ca4e8f2fa3bb632d589d75984623c6d2a245ed.png?v=1790334170",
+      "sourceSku": "827934529007",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934506305": {
+      "sha256": "ed967e6cd011592a39af1eb661769f74b75c2d11a9a3578c7b5bfa7c60ff3935",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5565SU__17830F__P21__shad__qt_645ad91efb47880443f9811c21aa96ed1394ee2575d62fd9ba7f2298fa242ad5.png?v=1791198184",
+      "sourceSku": "827934506305",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934477131": {
+      "sha256": "6e23c29b2dcb4e170f5a5febdca756116dd71b10bb0f9add6ae46ae78941d78c",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5471SU__1739R8__STD__shad__fld_85beeb9a14294006e7c768977bd5d025395212d18dd22a1776809b61361815b8.png?v=1787403832",
+      "sourceSku": "827934477131",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934530638": {
+      "sha256": "a7a4ab03fbfbb4c28555caa742306f751bcd4103388dd0df7f3431c402be0685",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV5642SU__1578R8__P21__shad__qt_980dfbade05079546db23e9ca3d8aab6ac0eda9f717d7e9af2b734429c4021e9.png?v=1790766191",
+      "sourceSku": "827934530638",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934360532": {
+      "sha256": "7549af13189f6ed17c21c117c3ec045a391d1f1f32948118ce692a54aa681a55",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1150S__50363F__P21__shad__qt_9af6505fbcf923139fd4a557abff1647691483d69a8f157ab4284e1548f671dd.png?v=1786997000",
+      "sourceSku": "827934360532",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934530645": {
+      "sha256": "4392f74c5805ca07cdd1be4142d6080160606db619497747c3f08b819d607435",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1385ST__534852__P21__shad__qt_2e58d43fe704ea778086bbaf8b9c486aaef653941247470e6cbe90330f55039a.png?v=1790766192",
+      "sourceSku": "827934530645",
+      "verified": true
+    },
+    "REPAIR-OLIVER-PEOPLES-827934524910": {
+      "sha256": "646f1f52c657093770fa555aca9b7f92051e58946e9a5ec94486e1d8c141b047",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0955/5748/4879/files/0OV1002S__5036GN__P21__shad__qt_9db1d9d2b1a5bc55efc3dbd6d588e1635aef71096bf206c4cec779b10ec4344.png?v=1787270603",
+      "sourceSku": "827934524910",
+      "verified": true
+    },
+    "REPAIR-PERSOL-713132165331": {
+      "sha256": "c061ecb9d96de85f0a8359f40ce1a74e8ee7e1fa974fadbde5c1845d078a38b2",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO0649__24_57__P21__shad__qt_f53d293772384b020191a335fa29580e2578117a46cae15c9cb9772db1b4f703.png?v=1788797767",
+      "sourceSku": "713132165331",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8056262229248": {
+      "sha256": "59915305b30f91b3bda81408484a04f5c788dc2b9726eb22594935d9685f47e0",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3362S__96_56__P21__shad__qt_fd3dc6b01950cbde911c5434828714d60d8fa66f80b6f3618fc8ff4aa7246764.png?v=1788798142",
+      "sourceSku": "8056262229248",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8056597989169": {
+      "sha256": "3bdc780c10502310e37c5f4e0dbaa8e28b5b3fbb5f271809df281222178f5844",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3341S__120757__P21__shad__qt_34e99749d2cfcc382f2cdac076b5d0649747adcdf65acb081b248344489c8d50.png?v=1788798049",
+      "sourceSku": "8056597989169",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8056597971409": {
+      "sha256": "4f114f88fca60e700b20cd26e38a620e5b23eaf6bb0e51234d496f924aade0be",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3235S__120271__P21__shad__qt_c16ab9782e8f5bd4661277059b5fb666d14d12b864aa179ec275f8aa69b89629.png?v=1788797926",
+      "sourceSku": "8056597971409",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8053672128949": {
+      "sha256": "505c8a2dbd9caa60603df702759b3ff52e5194794d55faa3df8e378bba403321",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3059S__96_S3__P21__shad__qt_4f9490c2066cf2d9e6d2de343d8e40cf83a87f40b06abced11df11154c0df1e8.png?v=1788801142",
+      "sourceSku": "8053672128949",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8056597831253": {
+      "sha256": "04883f6543aa10307c922af82175983e37b6f2edb418052326e37ffe21dbc7e3",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO0714SM__95_B1__P21__shad__fld_3a37544180f3358dc9e8364cd73e8ea9c5193669a551c94225a462782ab10244.png?v=1788801025",
+      "sourceSku": "8056597831253",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8056597840309": {
+      "sha256": "bca7ea55a0feaa9395e79c4531c456ec26d95fdc698b1f5d5fd00f02fe59eae6",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO1935S__95_31__P21__shad__qt_e365fb3df9deba4c08d5ce54315e80beb9adac9da7d040d0a8a977d7864bef3f.png?v=1788797866",
+      "sourceSku": "8056597840309",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8056262229637": {
+      "sha256": "2e86cc16cbc8de4a84d886ba7c16a0c7cf56ffa7f3653188b3233ccdcde614d1",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO3355S__1216B1__P21__shad__qt_733855370146469b25decc27a8de55ed759daa816f63e25c424b839ae9b40a9b.png?v=1788798106",
+      "sourceSku": "8056262229637",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8056597441117": {
+      "sha256": "986f03786e5cdaa07dca74bcf3fd23eb92b61961385ea48f53787c1d08e9a3bb",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO5006ST__8006B1__P21__shad__qt_94430f3027215d497482b0cdf619215ab29176486080cca3a4678285257efd69.png?v=1788798403",
+      "sourceSku": "8056597441117",
+      "verified": true
+    },
+    "REPAIR-PERSOL-8056597151337": {
+      "sha256": "a6f22a4cc04b83e4cceab84f06a6a09ec14389dd2a992342140caf3ec2dd7dbe",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0666/8045/5235/files/0PO5004ST__800432__P21__shad__qt_9eb2a1ceffc230f89729a3cfdc98089452000b72badd5ec324900a57e5624f00.png?v=1788798398",
+      "sourceSku": "8056597151337",
+      "verified": true
+    }
+  }
+}

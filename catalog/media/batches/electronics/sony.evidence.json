@@ -1,0 +1,263 @@
+{
+  "evidence": [
+    {
+      "productId": "PROD-HEADPHONES-SONY-SONY-WH-1000XM5",
+      "source": "https://www.sony.co.in/electronics/headband-headphones/wh-1000xm5",
+      "sourcePageSha256": "5744ef2287c1404ca34a9cf77e1da8bf90518c5dd0a6bf10aacc54618d06a7b5",
+      "manufacturerTitle": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+      "model": "wh-1000xm5",
+      "sourceImage": "https://www.sony.co.in/image/6145c1d32e6ac8e63a46c912dc33c5bb?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SONY-SONY-WH-1000XM4",
+      "source": "https://www.sony.co.in/electronics/headband-headphones/wh-1000xm4",
+      "sourcePageSha256": "43650c8136ce7d0223e62c95a8e0b1c000471720442e0a87b263995401bd7fca",
+      "manufacturerTitle": "Sony WH-1000XM4 Wireless Noise Cancelling Headphones",
+      "model": "wh-1000xm4",
+      "sourceImage": "https://www.sony.co.in/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SONY-SONY-WH-ULT900N",
+      "source": "https://www.sony.co.in/electronics/headband-headphones/ult-wear",
+      "sourcePageSha256": "a68ea12da2fae22dee64a72a07c46a21fd8493650aa8ebc12d29366b98db6af1",
+      "manufacturerTitle": "ULT WEAR Wireless Noise Cancelling | Headphones | Sony India",
+      "model": "ult-wear",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/WH-ULT900N_Primary_image_Black?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SONY-SONY-WH-CH720N",
+      "source": "https://www.sony.co.in/electronics/headband-headphones/wh-ch720n",
+      "sourcePageSha256": "033580534bbdabbfe59c1ad8611485a04419632fdbef536ffddd17a368f529b0",
+      "manufacturerTitle": "WH-CH720N Wireless Noise Cancelling | Headphones | Sony India",
+      "model": "wh-ch720n",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch720_Primary_image?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-HEADPHONES-SONY-SONY-WH-CH520",
+      "source": "https://www.sony.co.in/electronics/headband-headphones/wh-ch520",
+      "sourcePageSha256": "e4f3137ef628bb157de8abb74f6f26fd65f58e9c14b9ac077c24c6374477392e",
+      "manufacturerTitle": "WH-CH520 Wireless | Headphones | Sony India",
+      "model": "wh-ch520",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-EARBUDS-SONY-SONY-WF-1000XM5",
+      "source": "https://www.sony.co.in/electronics/truly-wireless/wf-1000xm5",
+      "sourcePageSha256": "17776255274de874e0a61400f923f2108c588a0340151a047c25df3fa628f960",
+      "manufacturerTitle": "WF-1000XM5 | Wireless Noise Cancelling | Headphones | Sony India",
+      "model": "wf-1000xm5",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/Primary_image_black?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-EARBUDS-SONY-SONY-LINKBUDS-S",
+      "source": "https://www.sony.co.in/electronics/truly-wireless/linkbuds-s",
+      "sourcePageSha256": "34c7c6a8d349b52c877966be743c4d6c9d0cd3c1a068c687b7f93ac31d163fd1",
+      "manufacturerTitle": "Sony LinkBuds S",
+      "model": "linkbuds-s",
+      "sourceImage": "https://www.sony.co.in/image/c0d5f94fb6eaca7bf75bffe64874c195?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-EARBUDS-SONY-SONY-LINKBUDS-OPEN",
+      "source": "https://www.sony.co.in/electronics/truly-wireless/linkbuds-open",
+      "sourcePageSha256": "58d4da0318f9a8070c5f968482a1a90a77f173523238f70fce73654bffa2ea78",
+      "manufacturerTitle": "LinkBuds Open | Truly Wireless | Headphones | Sony India",
+      "model": "linkbuds-open",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/Primary_image_1200-white?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-EARBUDS-SONY-SONY-WF-C700N",
+      "source": "https://www.sony.co.in/electronics/truly-wireless/wf-c700n",
+      "sourcePageSha256": "fd8e9c4e6daebd7a1062ca2cba717b2e933f7de97eafcc2099aa4100578318a1",
+      "manufacturerTitle": "WF-C700N Truly Wireless | Headphones | Sony India",
+      "model": "wf-c700n",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/WF-C700N_Primary_1200x1200?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-EARBUDS-SONY-SONY-WF-C510",
+      "source": "https://www.sony.co.in/electronics/truly-wireless/wf-c510",
+      "sourcePageSha256": "6d1bf2081c123f30ce6d01e07a2b78297d32673b4884a947177d10a51a3df157",
+      "manufacturerTitle": "WF-C510 | Truly Wireless | Headphones | Sony India",
+      "model": "wf-c510",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/C510_Primary_image_Blue?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-SRS-XB100",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/srs-xb100",
+      "sourcePageSha256": "61c0ef9a93fc2296344a9818cefd107c8d966ee744df0ad3b578c9c0ea73cc98",
+      "manufacturerTitle": "SRS-XB100 Portable Bluetooth Speaker | Wireless Speakers | Sony India",
+      "model": "srs-xb100",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/Primary_image_1200-11?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-SRS-XE200",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/srs-xe200",
+      "sourcePageSha256": "056979e84735b31180fe668e9ea3ce7d6123be8423846d19d7607975dfbb7f6d",
+      "manufacturerTitle": "Sony XE200 X-Series Portable Wireless Speaker",
+      "model": "srs-xe200",
+      "sourceImage": "https://www.sony.co.in/image/b29cbd2015c20ae9002fa3f386efcbe1?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-SRS-XE300",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/srs-xe300",
+      "sourcePageSha256": "6230c22e7512f30d0e15d79fa3e3588f0aaf83c15100b93af487ec516eec4a94",
+      "manufacturerTitle": "Sony XE300 X-Series Portable Wireless Speaker",
+      "model": "srs-xe300",
+      "sourceImage": "https://www.sony.co.in/image/14bbe92839d4d1a5dd01d2266a8c4c9b?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-SRS-XV500",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/srs-xv500",
+      "sourcePageSha256": "0aadec35f6036c4a67d5f2901cafa1ce6e484c280c2dec6a7fdb0283626792b6",
+      "manufacturerTitle": "SRS-XV500 X-Series Wireless Party Speaker | Wireless Speakers | Sony India",
+      "model": "srs-xv500",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/Primary_image_1200-35?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-SRS-XV800",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/srs-xv800",
+      "sourcePageSha256": "dd12fec3c08e89c5e7e05803d36a5f53f2326616dc45a45d5546fd112066259d",
+      "manufacturerTitle": "SRS-XV800 X-Series Wireless Party Speaker | Wireless Speakers | Sony India",
+      "model": "srs-xv800",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/Primary_image_1200-47?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-SRS-XV900",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/srs-xv900",
+      "sourcePageSha256": "f2dd25e604b0d42753949c800055623689d147d0e9d45756315f3442f6e0e1a0",
+      "manufacturerTitle": "SRS-XV900 | Wireless Speakers | Sony India",
+      "model": "srs-xv900",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/SRS-SV900_Primary-Image?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-ULT-FIELD-1",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/ult-field-1",
+      "sourcePageSha256": "a4b662f2c2a9f3100a95d8cc76391f5baf19ed7e1f90efa4c429905dcb3eab22",
+      "manufacturerTitle": "ULT FIELD 1 | Portable Speaker | Wireless Speakers | Sony India",
+      "model": "ult-field-1",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/SRS-ULT10-Primary_image_black?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-ULT-FIELD-7",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/ult-field-7",
+      "sourcePageSha256": "39e805c7f1bd609b0548e8d8245ddcc3aa6b1873847fddb8c6a4aaa817ed9154",
+      "manufacturerTitle": "ULT FIELD 7 | Portable Speaker | Wireless Speakers | Sony India",
+      "model": "ult-field-7",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/Primary_image_1200-39?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-SPEAKERS-SONY-SONY-ULT-TOWER-10",
+      "source": "https://www.sony.co.in/electronics/wireless-speakers/ult-tower-10",
+      "sourcePageSha256": "6f96edbf2816ac3734c54a1087ba2b1513db491512ac1b8c054c6f46a9bc8b59",
+      "manufacturerTitle": "ULT TOWER 10 | Party Speaker | Wireless Speakers | Sony India",
+      "model": "ult-tower-10",
+      "sourceImage": "https://sony.scene7.com/is/image/sonyglobalsolutions/SRS-ULT1000-Primary-image?$S7Product$&fmt=png-alpha",
+      "originalColor": "Black"
+    },
+    {
+      "productId": "PROD-EARBUDS-SONY-SONY-LINKBUDS-OPEN",
+      "source": "https://www.sony.co.in/electronics/truly-wireless/linkbuds-open",
+      "sourcePageSha256": "58d4da0318f9a8070c5f968482a1a90a77f173523238f70fce73654bffa2ea78",
+      "exactColorGallery": {
+        "type": "image",
+        "image": {
+          "mobile": {
+            "url": "https://sony.scene7.com/is/image/sonyglobalsolutions/product-intro-plate-6-M-1?$productIntroPlatemobile$&fmt=png-alpha"
+          },
+          "desktop": {
+            "url": "https://sony.scene7.com/is/image/sonyglobalsolutions/product-intro-plate-6-M-1?$productIntroPlatemobile$&fmt=png-alpha"
+          },
+          "altText": "Image of a pair of black LinkBuds Open one shown from the front, and the other from the side"
+        },
+        "skuList": [
+          "wf-l910b.ce7",
+          "wf-l910b.e",
+          "wf-l910b.in",
+          "wf-l910b.uc",
+          "wf-l910-bz-e",
+          "wfl910b.ca",
+          "wfl910b.ce7",
+          "wfl910b.sola"
+        ]
+      }
+    },
+    {
+      "productId": "PROD-EARBUDS-SONY-SONY-WF-C510",
+      "source": "https://www.sony.co.in/electronics/truly-wireless/wf-c510",
+      "sourcePageSha256": "6d1bf2081c123f30ce6d01e07a2b78297d32673b4884a947177d10a51a3df157",
+      "exactColorGallery": {
+        "type": "image",
+        "image": {
+          "mobile": {
+            "url": "https://sony.scene7.com/is/image/sonyglobalsolutions/Product-Intro-9-M-1?$productIntroPlatemobile$&fmt=png-alpha"
+          },
+          "desktop": {
+            "url": "https://sony.scene7.com/is/image/sonyglobalsolutions/Product-Intro-9-M-1?$productIntroPlatemobile$&fmt=png-alpha"
+          },
+          "altText": "WF-C510 earbuds in black"
+        },
+        "skuList": [
+          "wf-c510-bz-in",
+          "wf-c510-bz-uc",
+          "wf-c510-bc-e",
+          "wf-c510-bz-e",
+          "wfc510-b",
+          "wfc510b.ce7",
+          "wfc510b.e",
+          "wf-c510-bc-ce7",
+          "wf-c510-bze"
+        ]
+      }
+    },
+    {
+      "productId": "PROD-EARBUDS-SONY-SONY-LINKBUDS-S",
+      "source": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wfls900n-b",
+      "sourcePageSha256": "8e46f50e8242fd69c65a0dd491f191a1994251f717782df8b88bafcddd709656",
+      "manufacturerSku": "WFLS900N/B",
+      "sourceImage": "https://d1ncau8tqf99kp.cloudfront.net/converted/103642_original_local_1200x1050_v3_converted.webp"
+    }
+  ],
+  "pending": [
+    {
+      "id": "PROD-HEADPHONES-SONY-SONY-MDR-7506",
+      "reason": "Exact model missing from manufacturer title: "
+    },
+    {
+      "id": "PROD-HEADPHONES-SONY-SONY-MDR-MV1",
+      "reason": "Exact model missing from manufacturer title: "
+    },
+    {
+      "id": "PROD-HEADPHONES-SONY-SONY-MDR-M1",
+      "reason": "Exact model missing from manufacturer title: "
+    },
+    {
+      "id": "PROD-HEADPHONES-SONY-SONY-MDR-Z1R",
+      "reason": "Exact model missing from manufacturer title: Headband | Headphones | Sony India"
+    },
+    {
+      "id": "PROD-HEADPHONES-SONY-SONY-MDR-1AM2",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "PROD-SPEAKERS-SONY-SONY-SRS-XG300",
+      "reason": "Exact model missing from manufacturer title: Gallery | Wireless Speakers | Sony India"
+    }
+  ]
+}

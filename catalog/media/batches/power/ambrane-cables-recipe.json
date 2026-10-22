@@ -1,0 +1,305 @@
+{
+  "id": "cables-ambrane-media-repair-2026-10-14-v2",
+  "brand": "Ambrane",
+  "sourceHost": "ambraneindia.com",
+  "mediaPrefix": "https://cdn.shopify.com/s/files/1/0003/7565/2399/",
+  "feedFile": ".data/product-media-audit/manufacturer-feeds/ambraneindia.com.full.json",
+  "outputDirectory": "catalog/media/batches/power/ambrane-cables",
+  "selections": [
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-NEOLINK-100W-TYPE-C",
+      "handle": "ambrane-abcc-100",
+      "expectedTitle": "100W C to C Cable",
+      "sku": "ABCC-100-BLACK",
+      "modelLabel": "ABCC-100",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "connectorFrom",
+          "value": "USB-C",
+          "contains": "Type-C to Type-C"
+        },
+        {
+          "key": "connectorTo",
+          "value": "USB-C",
+          "contains": "Type-C to Type-C"
+        },
+        {
+          "key": "maxWatts",
+          "value": 100,
+          "contains": "100W"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-CREST-60W-TYPE-C",
+      "handle": "abcc-60",
+      "expectedTitle": "60W C to C Cable",
+      "sku": "ABCC-60-BLACK",
+      "modelLabel": "ABCC-60",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "maxWatts",
+          "value": 60,
+          "contains": "60W"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480mbps"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-FLARE-3A-TYPE-C",
+      "handle": "rc-t-15",
+      "expectedTitle": "RCT-15 Type C Cable",
+      "sku": "RCT-15-BLACK",
+      "modelLabel": "RCT-15",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "maxCurrentAmps",
+          "value": 3,
+          "contains": "3A"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480 Mbps"
+        },
+        {
+          "key": "lengthMeters",
+          "value": 1.5,
+          "contains": "1.5 meters"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-RAFT-3A-MICRO-USB",
+      "handle": "rc-m-15",
+      "expectedTitle": "RCM-15 Micro USB Cable",
+      "sku": "RCM-15-BLACK",
+      "modelLabel": "RCM-15",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "connectorTo",
+          "value": "Micro USB",
+          "contains": "Micro USB"
+        },
+        {
+          "key": "maxWatts",
+          "value": 20,
+          "contains": "20W"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480 Mbps"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-MULTILINK-3-IN-1",
+      "handle": "trio-11-3-in-1-cable",
+      "expectedTitle": "Trio 3 in 1 Cable",
+      "sku": "TRIO-11-BLACK",
+      "modelLabel": "Trio-11",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "maxCurrentAmps",
+          "value": 2.1,
+          "contains": "2.1A"
+        },
+        {
+          "key": "connectorTo",
+          "value": "Micro USB / USB-C / Lightning",
+          "contains": "Micro USB, Type-C and Lightning"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-NEOSYNC-TYPE-C-LIGHTNING",
+      "handle": "amcl-12",
+      "expectedTitle": "MFI Certified Type C to Lightning Cable",
+      "sku": "AMCL-12- WHITE",
+      "modelLabel": "AMCL-12",
+      "color": "White",
+      "facts": [
+        {
+          "key": "maxWatts",
+          "value": 27,
+          "contains": "27W"
+        },
+        {
+          "key": "connectorFrom",
+          "value": "USB-C",
+          "contains": "Type-C to Lightning"
+        },
+        {
+          "key": "connectorTo",
+          "value": "Lightning",
+          "contains": "Type-C to Lightning"
+        },
+        {
+          "key": "mfiCertified",
+          "value": true,
+          "contains": "MFI certified"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-QUADCORD-4-IN-1",
+      "handle": "ac4cl-15",
+      "expectedTitle": "4 in 1 Fast Charging Cable",
+      "sku": "AC4CL-15-BLACK",
+      "modelLabel": "AC4CL-15",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "maxWatts",
+          "value": 60,
+          "contains": "60W charging through USB-C to USB-C"
+        },
+        {
+          "key": "connectorTo",
+          "value": "USB-C / Lightning",
+          "contains": "USB-C to Lightning, USB-A to Type-C, and USB-C to USB-C"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-ULTRASYNC-4K-HDMI",
+      "handle": "ahdms-16",
+      "expectedTitle": "HDMI Cable",
+      "sku": "AHDMS-15-BLACK",
+      "modelLabel": "AHDMS-15",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "dataTransferGbps",
+          "value": 18,
+          "contains": "18 Gb/s"
+        },
+        {
+          "key": "displaySupport",
+          "value": "4K 30–60Hz",
+          "contains": "4K resolution at refresh rates ranging from 30Hz to 60Hz"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-LINKFLEX-TYPE-C-USB-A",
+      "handle": "absc-15",
+      "expectedTitle": "Standing Type C Cable",
+      "sku": "ABSC-15-BLACK",
+      "modelLabel": "ABSC-15",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "maxWatts",
+          "value": 30,
+          "contains": "30W"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480 Mbps"
+        },
+        {
+          "key": "lengthMeters",
+          "value": 1.5,
+          "contains": "1.5 meters"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    },
+    {
+      "oldProductId": "PROD-CABLES-AMBRANE-AMBRANE-PULSE-65W-SILICONE-TYPE-C",
+      "handle": "abcvs-12",
+      "expectedTitle": "65W Type C Cable",
+      "sku": "ABCVS-12-BLACK",
+      "modelLabel": "ABCVS-12",
+      "color": "Black",
+      "facts": [
+        {
+          "key": "maxWatts",
+          "value": 65,
+          "contains": "65W"
+        },
+        {
+          "key": "maxCurrentAmps",
+          "value": 6.5,
+          "contains": "6.5A"
+        },
+        {
+          "key": "dataTransferGbps",
+          "value": 0.48,
+          "contains": "480 Mbps"
+        }
+      ],
+      "missing": [
+        "deviceSpecificCompatibility",
+        "eMarker",
+        "certificationRegistryReference",
+        "connectorDimensions"
+      ]
+    }
+  ]
+}

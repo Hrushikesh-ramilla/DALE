@@ -1,0 +1,1049 @@
+{
+  "manifest": {
+    "schemaVersion": "catalog-manifest-v2",
+    "id": "power-ambrane-media-repair-2026-10-14-v2",
+    "reviewedBy": "exact-manufacturer-SKU-and-fact-review",
+    "reviewedAt": "2026-10-14",
+    "approvedSourceHosts": [
+      "ambraneindia.com"
+    ],
+    "products": [
+      {
+        "id": "REPAIR-AMBRANE-CHARGE-R65-BLACK",
+        "name": "Ambrane Charge R65 · Black",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 2299,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Charge R65",
+          "Manufacturer SKU: CHARGE-R65-BLACK",
+          "totalWatts: 65",
+          "ganTechnology: true"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/charge-65",
+        "familyId": "ambrane:9751935647991",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "charge r65",
+          "totalWatts": 65,
+          "ganTechnology": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/mobile-charger-with-type-c-cable.webp?v=1763448498",
+          "source": "https://ambraneindia.com/products/charge-65",
+          "alt": "Ambrane Charge R65 Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Charge R65",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-CHARGE-D100-BLUE",
+        "name": "Ambrane Charge D100 · Blue",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 3499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Charge D100",
+          "Manufacturer SKU: CHARGE-D100-BLUE",
+          "totalWatts: 100",
+          "ganTechnology: true",
+          "connectorType: 2x USB-C + 1x USB-A"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://ambraneindia.com/products/charge-d100",
+        "familyId": "ambrane:9972127203575",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "charge d100",
+          "totalWatts": 100,
+          "ganTechnology": true,
+          "connectorType": "2x USB-C + 1x USB-A"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/d100.webp?v=1785415104",
+          "source": "https://ambraneindia.com/products/charge-d100",
+          "alt": "Ambrane Charge D100 Blue",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Charge D100",
+        "skuVariant": "Blue",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-CHARGE-X33-BLACK",
+        "name": "Ambrane Charge X33 · Black",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 1299,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Charge X33",
+          "Manufacturer SKU: Charge-X33-BLACK",
+          "totalWatts: 33",
+          "ganTechnology: true"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/charge-x33",
+        "familyId": "ambrane:9748095205623",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "charge x33",
+          "totalWatts": 33,
+          "ganTechnology": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/phone-charger-with-ac-socket.webp?v=1763448901",
+          "source": "https://ambraneindia.com/products/charge-x33",
+          "alt": "Ambrane Charge X33 Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Charge X33",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-CHARGE-25-BLACK",
+        "name": "Ambrane Charge 25 · Black",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 999,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Charge 25",
+          "Manufacturer SKU: CHARGE-25-BLACK",
+          "totalWatts: 25",
+          "ganTechnology: true",
+          "connectorType: USB-C"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/charge-25",
+        "familyId": "ambrane:8312526602487",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "charge 25",
+          "totalWatts": 25,
+          "ganTechnology": true,
+          "connectorType": "USB-C"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/gan-charger-for-iphone.webp?v=1764312401",
+          "source": "https://ambraneindia.com/products/charge-25",
+          "alt": "Ambrane Charge 25 Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Charge 25",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-CHARGE-I36-BLACK",
+        "name": "Ambrane Charge i36 · Black",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 999,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Charge i36",
+          "Manufacturer SKU: CHARGE-I36-BLACK",
+          "totalWatts: 36",
+          "ganTechnology: true",
+          "connectorType: USB-C"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/charge-i36",
+        "familyId": "ambrane:9751938990327",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "charge i36",
+          "totalWatts": 36,
+          "ganTechnology": true,
+          "connectorType": "USB-C"
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/Blackheroshot_png.webp?v=1761717898",
+          "source": "https://ambraneindia.com/products/charge-i36",
+          "alt": "Ambrane Charge i36 Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "wall-chargers",
+        "modelName": "Charge i36",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-STYLO-N20-BLACK",
+        "name": "Ambrane Stylo N20 · Black",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 1799,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Stylo N20",
+          "Manufacturer SKU: STYLO-N20-BLACK",
+          "capacityMah: 20000",
+          "maxOutputWatts: 22.5",
+          "pdSupported: true",
+          "ppsSupported: true"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/stylo-n20",
+        "familyId": "ambrane:9619388432631",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "stylo n20",
+          "capacityMah": 20000,
+          "maxOutputWatts": 22.5,
+          "pdSupported": true,
+          "ppsSupported": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/20000mah-power-bank.webp?v=1763208020",
+          "source": "https://ambraneindia.com/products/stylo-n20",
+          "alt": "Ambrane Stylo N20 Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "power-banks",
+        "modelName": "Stylo N20",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-STYLO-N10-BLACK",
+        "name": "Ambrane Stylo N10 · Black",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 999,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Stylo N10",
+          "Manufacturer SKU: STYLO-N10-BLACK",
+          "capacityMah: 10000",
+          "maxOutputWatts: 22.5",
+          "pdSupported: true",
+          "ppsSupported: true"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/stylo-n10",
+        "familyId": "ambrane:9596955427063",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "stylo n10",
+          "capacityMah": 10000,
+          "maxOutputWatts": 22.5,
+          "pdSupported": true,
+          "ppsSupported": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/10000mah-power-bank.webp?v=1763210358",
+          "source": "https://ambraneindia.com/products/stylo-n10",
+          "alt": "Ambrane Stylo N10 Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "power-banks",
+        "modelName": "Stylo N10",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-POWERLIT-XL-LITE-BLACK",
+        "name": "Ambrane Powerlit XL Lite · Black",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 1799,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Powerlit XL Lite",
+          "Manufacturer SKU: POWERLIT-XL-LITE-BLACK",
+          "capacityMah: 20000",
+          "maxOutputWatts: 22.5",
+          "pdSupported: true"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/powerlit-xl-lite",
+        "familyId": "ambrane:8037614092535",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "powerlit xl lite",
+          "capacityMah": 20000,
+          "maxOutputWatts": 22.5,
+          "pdSupported": true
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/4L4A7973blackcopy_png.webp?v=1741264950",
+          "source": "https://ambraneindia.com/products/powerlit-xl-lite",
+          "alt": "Ambrane Powerlit XL Lite Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "power-banks",
+        "modelName": "Powerlit XL Lite",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-POWERLIT-ULTRA-240-GREY",
+        "name": "Ambrane Powerlit Ultra 240 · Grey",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 3299,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Powerlit Ultra 240",
+          "Manufacturer SKU: POWERLIT-ULTRA-240-GREY",
+          "capacityMah: 27000",
+          "totalWatts: 240",
+          "maxOutputWatts: 140",
+          "maxInputWatts: 100"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Grey",
+        "source": "https://ambraneindia.com/products/powerlit-ultra-240",
+        "familyId": "ambrane:9910032236791",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "powerlit ultra 240",
+          "capacityMah": 27000,
+          "totalWatts": 240,
+          "maxOutputWatts": 140,
+          "maxInputWatts": 100
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/HeroFinal_png.webp?v=1772521281",
+          "source": "https://ambraneindia.com/products/powerlit-ultra-240",
+          "alt": "Ambrane Powerlit Ultra 240 Grey",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "power-banks",
+        "modelName": "Powerlit Ultra 240",
+        "skuVariant": "Grey",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-MINICHARGE-20-BLUE",
+        "name": "Ambrane MiniCharge 20 · Blue",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 999,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: MiniCharge 20",
+          "Manufacturer SKU: MINICHARGE-20-BLUE",
+          "capacityMah: 20000"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://ambraneindia.com/products/minicharge-20",
+        "familyId": "ambrane:9578069360887",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved",
+            "maxOutputWatts"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "minicharge 20",
+          "capacityMah": 20000
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/HERO_3_-MiniCharge20Blue_png_a4573650-292f-4bb1-8358-a8c2cd20217b.webp?v=1757053127",
+          "source": "https://ambraneindia.com/products/minicharge-20",
+          "alt": "Ambrane MiniCharge 20 Blue",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "power-banks",
+        "modelName": "MiniCharge 20",
+        "skuVariant": "Blue",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-STELLAR-40K-BLUE",
+        "name": "Ambrane Stellar 40K · Blue",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 3299,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Stellar 40K",
+          "Manufacturer SKU: STELLAR-40K-BLUE",
+          "capacityMah: 40000",
+          "maxOutputWatts: 65"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Blue",
+        "source": "https://ambraneindia.com/products/stellar-40k",
+        "familyId": "ambrane:9909142290679",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "stellar 40k",
+          "capacityMah": 40000,
+          "maxOutputWatts": 65
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/Steller_40k_blue.webp?v=1785414995",
+          "source": "https://ambraneindia.com/products/stellar-40k",
+          "alt": "Ambrane Stellar 40K Blue",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "power-banks",
+        "modelName": "Stellar 40K",
+        "skuVariant": "Blue",
+        "deviceCompatibility": []
+      },
+      {
+        "id": "REPAIR-AMBRANE-POWERLIT-45-BLACK",
+        "name": "Ambrane Powerlit 45 · Black",
+        "category": "chargers",
+        "description": "Manufacturer-identified model, exact variant and photograph. DALE price and inventory are simulated offers. Device-specific compatibility and unrecorded specifications require further evidence.",
+        "price": 2499,
+        "compatibleModels": [],
+        "specs": [
+          "Manufacturer: Ambrane",
+          "Model: Powerlit 45",
+          "Manufacturer SKU: POWERLIT-45-BLACK",
+          "capacityMah: 15000",
+          "maxOutputWatts: 45",
+          "maxInputWatts: 45"
+        ],
+        "sponsored": false,
+        "stock": 25,
+        "color": "Black",
+        "source": "https://ambraneindia.com/products/powerlit-45",
+        "familyId": "ambrane:8096114245879",
+        "provenance": "manufacturer_evidence",
+        "brand": "Ambrane",
+        "offerKind": "sandbox",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "region": "Manufacturer public product feed",
+          "missing": [
+            "voltageProfiles",
+            "perPortPowerSharing",
+            "deviceSpecificCompatibility",
+            "weightGrams",
+            "flightApproved"
+          ],
+          "review": "specifications"
+        },
+        "attributes": {
+          "brand": "ambrane",
+          "modelName": "powerlit 45",
+          "capacityMah": 15000,
+          "maxOutputWatts": 45,
+          "maxInputWatts": 45
+        },
+        "media": {
+          "url": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/Artboard4copy_png.webp?v=1714544920",
+          "source": "https://ambraneindia.com/products/powerlit-45",
+          "alt": "Ambrane Powerlit 45 Black",
+          "attribution": "Ambrane manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-14",
+          "usage": "external_reference"
+        },
+        "leafType": "power-banks",
+        "modelName": "Powerlit 45",
+        "skuVariant": "Black",
+        "deviceCompatibility": []
+      }
+    ]
+  },
+  "replacements": [
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-G65",
+      "newProductId": "REPAIR-AMBRANE-CHARGE-R65-BLACK"
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-G100",
+      "newProductId": "REPAIR-AMBRANE-CHARGE-D100-BLUE"
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-S33",
+      "newProductId": "REPAIR-AMBRANE-CHARGE-X33-BLACK"
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-M20",
+      "newProductId": "REPAIR-AMBRANE-CHARGE-25-BLACK"
+    },
+    {
+      "oldProductId": "PROD-WALL-CHARGERS-AMBRANE-AMBRANE-RAAP-H20",
+      "newProductId": "REPAIR-AMBRANE-CHARGE-I36-BLACK"
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-STYLO-20K",
+      "newProductId": "REPAIR-AMBRANE-STYLO-N20-BLACK"
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-STYLO-10K",
+      "newProductId": "REPAIR-AMBRANE-STYLO-N10-BLACK"
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-POWERLIT-XL",
+      "newProductId": "REPAIR-AMBRANE-POWERLIT-XL-LITE-BLACK"
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-POWERLIT-ULTRA",
+      "newProductId": "REPAIR-AMBRANE-POWERLIT-ULTRA-240-GREY"
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-AEROGLOW-10K",
+      "newProductId": "REPAIR-AMBRANE-MINICHARGE-20-BLUE"
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-STYLO-PRO-27K",
+      "newProductId": "REPAIR-AMBRANE-STELLAR-40K-BLUE"
+    },
+    {
+      "oldProductId": "PROD-POWER-BANKS-AMBRANE-AMBRANE-POWERLIT-45W",
+      "newProductId": "REPAIR-AMBRANE-POWERLIT-45-BLACK"
+    }
+  ],
+  "evidence": [
+    {
+      "productId": "REPAIR-AMBRANE-CHARGE-R65-BLACK",
+      "source": "https://ambraneindia.com/products/charge-65",
+      "manufacturerSku": "CHARGE-R65-BLACK",
+      "manufacturerProductId": 9751935647991,
+      "manufacturerVariantId": 50132482031863,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/mobile-charger-with-type-c-cable.webp?v=1763448498",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "066498d67ac4aefceabca85de310dcc9b34b61e14979c1fd813a5e54cfdd9b64",
+      "factEvidence": [
+        {
+          "key": "totalWatts",
+          "value": 65,
+          "contains": "65W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-CHARGE-D100-BLUE",
+      "source": "https://ambraneindia.com/products/charge-d100",
+      "manufacturerSku": "CHARGE-D100-BLUE",
+      "manufacturerProductId": 9972127203575,
+      "manufacturerVariantId": 50984895840503,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/d100.webp?v=1785415104",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "782438bc3b3eaa5471447092d46380f0544d01a4a105ceaf09da9cd986d445f4",
+      "factEvidence": [
+        {
+          "key": "totalWatts",
+          "value": 100,
+          "contains": "100W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        },
+        {
+          "key": "connectorType",
+          "value": "2x USB-C + 1x USB-A",
+          "contains": "2 Type-C ports and 1 USB-A port"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-CHARGE-X33-BLACK",
+      "source": "https://ambraneindia.com/products/charge-x33",
+      "manufacturerSku": "Charge-X33-BLACK",
+      "manufacturerProductId": 9748095205623,
+      "manufacturerVariantId": 50132481245431,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/phone-charger-with-ac-socket.webp?v=1763448901",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "b48a541b824db46631fadbe4cd756fa4ac333d94c8cab6455ac586eeea9103af",
+      "factEvidence": [
+        {
+          "key": "totalWatts",
+          "value": 33,
+          "contains": "33W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-CHARGE-25-BLACK",
+      "source": "https://ambraneindia.com/products/charge-25",
+      "manufacturerSku": "CHARGE-25-BLACK",
+      "manufacturerProductId": 8312526602487,
+      "manufacturerVariantId": 45086388814071,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/gan-charger-for-iphone.webp?v=1764312401",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "6fa3eacf6d0d17c3952a39817ea9b93c08e775a33f86062288d6079ca1e12205",
+      "factEvidence": [
+        {
+          "key": "totalWatts",
+          "value": 25,
+          "contains": "25W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        },
+        {
+          "key": "connectorType",
+          "value": "USB-C",
+          "contains": "Type-C port"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-CHARGE-I36-BLACK",
+      "source": "https://ambraneindia.com/products/charge-i36",
+      "manufacturerSku": "CHARGE-I36-BLACK",
+      "manufacturerProductId": 9751938990327,
+      "manufacturerVariantId": 50700790235383,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/Blackheroshot_png.webp?v=1761717898",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "cf928b89cdf9e3e3c5e4087a4b32a801f02896b45d46fd54a4cd3233bd079895",
+      "factEvidence": [
+        {
+          "key": "totalWatts",
+          "value": 36,
+          "contains": "36W"
+        },
+        {
+          "key": "ganTechnology",
+          "value": true,
+          "contains": "GaN"
+        },
+        {
+          "key": "connectorType",
+          "value": "USB-C",
+          "contains": "single Type-C port"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-STYLO-N20-BLACK",
+      "source": "https://ambraneindia.com/products/stylo-n20",
+      "manufacturerSku": "STYLO-N20-BLACK",
+      "manufacturerProductId": 9619388432631,
+      "manufacturerVariantId": 49516764758263,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/20000mah-power-bank.webp?v=1763208020",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "d2b21822ea5d9daefcc9ca15f389ef2737d322e71b81376b0f97c7f53d15201e",
+      "factEvidence": [
+        {
+          "key": "capacityMah",
+          "value": 20000,
+          "contains": "20000 mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 22.5,
+          "contains": "22.5W"
+        },
+        {
+          "key": "pdSupported",
+          "value": true,
+          "contains": "PD 3.0"
+        },
+        {
+          "key": "ppsSupported",
+          "value": true,
+          "contains": "PPS"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-STYLO-N10-BLACK",
+      "source": "https://ambraneindia.com/products/stylo-n10",
+      "manufacturerSku": "STYLO-N10-BLACK",
+      "manufacturerProductId": 9596955427063,
+      "manufacturerVariantId": 49467740520695,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/10000mah-power-bank.webp?v=1763210358",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "3e05c5028172d7df3b875add8d2fb1869bc8f4083a1d4260391baece9e6c504f",
+      "factEvidence": [
+        {
+          "key": "capacityMah",
+          "value": 10000,
+          "contains": "10000 mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 22.5,
+          "contains": "22.5W"
+        },
+        {
+          "key": "pdSupported",
+          "value": true,
+          "contains": "PD 3.0"
+        },
+        {
+          "key": "ppsSupported",
+          "value": true,
+          "contains": "PPS"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-POWERLIT-XL-LITE-BLACK",
+      "source": "https://ambraneindia.com/products/powerlit-xl-lite",
+      "manufacturerSku": "POWERLIT-XL-LITE-BLACK",
+      "manufacturerProductId": 8037614092535,
+      "manufacturerVariantId": 44217097486583,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/4L4A7973blackcopy_png.webp?v=1741264950",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "54874c9a0a162c23f77764ceadb9d0429de987c140779a52fb156ab2f08be515",
+      "factEvidence": [
+        {
+          "key": "capacityMah",
+          "value": 20000,
+          "contains": "20000mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 22.5,
+          "contains": "22.5W Output"
+        },
+        {
+          "key": "pdSupported",
+          "value": true,
+          "contains": "Power Delivery"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-POWERLIT-ULTRA-240-GREY",
+      "source": "https://ambraneindia.com/products/powerlit-ultra-240",
+      "manufacturerSku": "POWERLIT-ULTRA-240-GREY",
+      "manufacturerProductId": 9910032236791,
+      "manufacturerVariantId": 50607166685431,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/HeroFinal_png.webp?v=1772521281",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "0c92d85658a0fafcad5c1884bad646af5948f12896aad2df8e6d3ca6cbebc92d",
+      "factEvidence": [
+        {
+          "key": "capacityMah",
+          "value": 27000,
+          "contains": "27000 mAh"
+        },
+        {
+          "key": "totalWatts",
+          "value": 240,
+          "contains": "240W total output"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 140,
+          "contains": "140W fast laptop charging"
+        },
+        {
+          "key": "maxInputWatts",
+          "value": 100,
+          "contains": "100W PD input"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-MINICHARGE-20-BLUE",
+      "source": "https://ambraneindia.com/products/minicharge-20",
+      "manufacturerSku": "MINICHARGE-20-BLUE",
+      "manufacturerProductId": 9578069360887,
+      "manufacturerVariantId": 49397881110775,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/HERO_3_-MiniCharge20Blue_png_a4573650-292f-4bb1-8358-a8c2cd20217b.webp?v=1757053127",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "417d9a45ce6f61c63efa8d3c7c78bc2fbd37c103751890587da8e667d66cb862",
+      "factEvidence": [
+        {
+          "key": "capacityMah",
+          "value": 20000,
+          "contains": "20,000 mAh"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-STELLAR-40K-BLUE",
+      "source": "https://ambraneindia.com/products/stellar-40k",
+      "manufacturerSku": "STELLAR-40K-BLUE",
+      "manufacturerProductId": 9909142290679,
+      "manufacturerVariantId": 50663259963639,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/Steller_40k_blue.webp?v=1785414995",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "b6ce6fa4503f5a684eb9ee02370028275b087b1576724f7e325eadac0d982b67",
+      "factEvidence": [
+        {
+          "key": "capacityMah",
+          "value": 40000,
+          "contains": "40000 mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 65,
+          "contains": "65W Type-C Output"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    },
+    {
+      "productId": "REPAIR-AMBRANE-POWERLIT-45-BLACK",
+      "source": "https://ambraneindia.com/products/powerlit-45",
+      "manufacturerSku": "POWERLIT-45-BLACK",
+      "manufacturerProductId": 8096114245879,
+      "manufacturerVariantId": 44538890289399,
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0003/7565/2399/files/Artboard4copy_png.webp?v=1714544920",
+      "feedSha256": "3b40ec6c5e3dfdda63dbc7ba7b9a7b5f63007e7ce5ef73b72f2f6acb5c00064b",
+      "descriptionSha256": "1cf52aaf9ba532178bd751f05fcb85417e34591f18d562e290ae053a9375fc4e",
+      "factEvidence": [
+        {
+          "key": "capacityMah",
+          "value": 15000,
+          "contains": "15000mAh"
+        },
+        {
+          "key": "maxOutputWatts",
+          "value": 45,
+          "contains": "45W output"
+        },
+        {
+          "key": "maxInputWatts",
+          "value": 45,
+          "contains": "45W input"
+        }
+      ],
+      "imageBinding": "variant-featured-image"
+    }
+  ],
+  "publication": "not-published; requires visual review"
+}

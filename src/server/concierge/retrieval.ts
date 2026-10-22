@@ -1,0 +1,348 @@
+import { createHash } from "node:crypto";
+import { z } from "zod";
+import type { Product } from "@/domain/catalog";
+import { searchConstraints, type SearchConstraints } from "@/domain/concierge";
+import { conciergeDatabase } from "./store";
+
+export function productDocument(p: Product) {
+  return JSON.stringify({
+    name: p.name,
+    brand: p.brand,
+    category: p.category,
+    description: p.description,
+    specs: p.specs,
+    attributes: p.attributes,
+  });
+}
+export const documentHash = (p: Product) =>
+  createHash("sha256").update(productDocument(p)).digest("hex");
+const queryCache = new Map<string, { at: number; vector: number[] }>();
+let embeddingRequests = 0;
+export function cosine(a: number[], b: number[]) {
+  if (!a.length || a.length !== b.length) return 0;
+  const dot = a.reduce((s, x, i) => s + x * b[i], 0);
+  const norm = Math.sqrt(
+    a.reduce((s, x) => s + x * x, 0) * b.reduce((s, x) => s + x * x, 0),
+  );
+  return norm ? dot / norm : 0;
+}
+export async function embed(
+  inputs: string[],
+  signal?: AbortSignal,
+  kind: "query" | "document" = "document",
+): Promise<number[][]> {
+  const base = process.env.CONCIERGE_EMBEDDING_BASE_URL;
+  const model = process.env.CONCIERGE_EMBEDDING_MODEL;
+  if (!base || !model)
+    throw new Error("Local semantic embedding service is not configured.");
+  const cacheKey = JSON.stringify([
+    base,
+    model,
+    process.env.CONCIERGE_EMBEDDING_PROFILE,
+    inputs,
+  ]);
+  const cached = kind === "query" ? queryCache.get(cacheKey) : undefined;
+  if (cached && Date.now() - cached.at < 60000) return [cached.vector];
+  if (embeddingRequests >= 2)
+    throw new Error(
+      "Local embedding service is busy. Retry semantic retrieval shortly.",
+    );
+  const url = new URL(`${base.replace(/\/$/, "")}/embeddings`);
+  if (
+    url.protocol !== "http:" ||
+    !["127.0.0.1", "localhost", "[::1]"].includes(url.hostname) ||
+    url.username ||
+    url.password ||
+    url.search ||
+    url.hash
+  )
+    throw new Error("Embedding endpoint must be private loopback HTTP.");
+  embeddingRequests++;
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        ...(process.env.CONCIERGE_EMBEDDING_API_KEY
+          ? {
+              Authorization: `Bearer ${process.env.CONCIERGE_EMBEDDING_API_KEY}`,
+            }
+          : {}),
+      },
+      body: JSON.stringify({
+        model,
+        input: inputs.map(
+          (text) =>
+            (kind === "query" &&
+            process.env.CONCIERGE_EMBEDDING_PROFILE === "bge"
+              ? "Represent this sentence for searching relevant passages: "
+              : "") + text.slice(0, 1600),
+        ),
+      }),
+      signal: signal
+        ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
+        : AbortSignal.timeout(30000),
+    });
+    if (!response.ok)
+      throw new Error(`Embedding service returned HTTP ${response.status}.`);
+    const data = z
+      .object({
+        data: z.array(
+          z.object({
+            index: z.number().int(),
+            embedding: z.array(z.number().finite()).min(1).max(8192),
+          }),
+        ),
+      })
+      .parse(await response.json());
+    const sorted = data.data.sort((a, b) => a.index - b.index);
+    if (sorted.length !== inputs.length || sorted.some((v, i) => v.index !== i))
+      throw new Error("Embedding service returned an incomplete batch.");
+    const vectors = sorted.map((v) => v.embedding);
+    if (kind === "query" && vectors.length === 1) {
+      if (queryCache.size >= 128)
+        queryCache.delete(queryCache.keys().next().value!);
+      queryCache.set(cacheKey, { at: Date.now(), vector: vectors[0] });
+    }
+    return vectors;
+  } finally {
+    embeddingRequests--;
+  }
+}
+
+/** Resumable content-addressed index maintenance. Hidden records are removed, stale
+ * vectors are never eligible, and offer changes always pass live SQL predicates. */
+export async function indexCatalog(batchSize = 32, signal?: AbortSignal) {
+  const db = await conciergeDatabase();
+  const model = process.env.CONCIERGE_EMBEDDING_MODEL || "";
+  await db.query(
+    "DELETE FROM concierge_embeddings WHERE product_id NOT IN (SELECT id FROM catalog_products WHERE publication='published')",
+  );
+  const rows = await db.query<{
+    record: Product;
+    content_hash?: string;
+    model?: string;
+  }>(
+    `SELECT p.record,e.content_hash,e.model FROM catalog_products p LEFT JOIN concierge_embeddings e ON e.product_id=p.id WHERE p.publication='published' ORDER BY p.id`,
+  );
+  const stale = rows.rows.filter(
+    (r) => r.model !== model || r.content_hash !== documentHash(r.record),
+  );
+  let updated = 0;
+  for (let i = 0; i < stale.length; i += batchSize) {
+    signal?.throwIfAborted();
+    const batch = stale.slice(i, i + batchSize);
+    const vectors = await embed(
+      batch.map((r) => productDocument(r.record)),
+      signal,
+    );
+    for (let j = 0; j < batch.length; j++) {
+      const p = batch[j].record;
+      await db.query(
+        `INSERT INTO concierge_embeddings(product_id,content_hash,model,vector) VALUES($1,$2,$3,$4::jsonb) ON CONFLICT(product_id) DO UPDATE SET content_hash=EXCLUDED.content_hash,model=EXCLUDED.model,vector=EXCLUDED.vector,updated_at=now()`,
+        [p.id, documentHash(p), model, JSON.stringify(vectors[j])],
+      );
+    }
+    updated += batch.length;
+    if (process.env.CONCIERGE_INDEX_PROGRESS === "true")
+      console.log(
+        JSON.stringify({
+          event: "concierge.index.batch",
+          updated,
+          pending: stale.length - updated,
+        }),
+      );
+  }
+  return { updated, total: rows.rows.length, model };
+}
+
+export async function catalogCapabilities() {
+  const db = await conciergeDatabase();
+  const rows = await db.query<{
+    category: string;
+    leaf_type: string;
+    brand: string;
+    count: string;
+  }>(
+    `SELECT category,leaf_type,coalesce(brand,record->>'brand','') AS brand,count(*)::text AS count FROM catalog_products WHERE publication='published' GROUP BY category,leaf_type,coalesce(brand,record->>'brand','') ORDER BY category,leaf_type,brand`,
+  );
+  return {
+    currency: "USD",
+    price_unit: "integer cents",
+    offer_origin: "DALE sandbox; not manufacturer inventory",
+    collections: rows.rows.map((r) => ({ ...r, count: Number(r.count) })),
+  };
+}
+
+export async function productDetails(ids: string[]) {
+  const rows = await (
+    await conciergeDatabase()
+  ).query<{ record: Product }>(
+    "SELECT record || jsonb_build_object('price',price) AS record FROM catalog_products WHERE publication='published' AND id=ANY($1::text[])",
+    [ids],
+  );
+  return ids
+    .map((id) => rows.rows.find((r) => r.record.id === id)?.record)
+    .filter((p): p is Product => Boolean(p));
+}
+export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
+  const c = searchConstraints.parse(raw);
+  const db = await conciergeDatabase();
+  const bindings: unknown[] = [];
+  const bind = (v: unknown) => {
+    bindings.push(v);
+    return `$${bindings.length}`;
+  };
+  const clauses = ["p.publication='published'"];
+  if (c.categories.length) {
+    const n = bind(c.categories);
+    clauses.push(
+      `(p.category=ANY(${n}::text[]) OR p.leaf_type=ANY(${n}::text[]))`,
+    );
+  }
+  const brand =
+    "lower(coalesce(p.brand,p.record->>'brand',p.record->'attributes'->>'brand',''))";
+  if (c.brands.length)
+    clauses.push(
+      `${brand}=ANY(${bind(c.brands.map((b) => b.toLowerCase()))}::text[])`,
+    );
+  if (c.exclude_brands.length)
+    clauses.push(
+      `NOT (${brand}=ANY(${bind(c.exclude_brands.map((b) => b.toLowerCase()))}::text[]))`,
+    );
+  if (c.min_price !== null)
+    clauses.push(`p.price${c.min_exclusive ? ">" : ">="}${bind(c.min_price)}`);
+  if (c.max_price !== null)
+    clauses.push(`p.price${c.max_exclusive ? "<" : "<="}${bind(c.max_price)}`);
+  if (c.in_stock)
+    clauses.push(
+      "coalesce((p.record->>'stock')::integer,0)>0 AND coalesce((p.record->>'comparisonOnly')::boolean,false)=false",
+    );
+  for (const [key, value] of Object.entries(c.attributes)) {
+    if (typeof value === "object") {
+      const field = `p.record->'attributes'->>${bind(key)}`;
+      const numeric = `CASE WHEN (${field}) ~ '^-?[0-9]+(\\.[0-9]+)?$' THEN (${field})::numeric ELSE NULL END`;
+      if (value.min !== undefined)
+        clauses.push(
+          `(${numeric})${value.min_exclusive ? ">" : ">="}${bind(value.min)}`,
+        );
+      if (value.max !== undefined)
+        clauses.push(
+          `(${numeric})${value.max_exclusive ? "<" : "<="}${bind(value.max)}`,
+        );
+    } else
+      clauses.push(
+        `p.record->'attributes'->>${bind(key)}=${bind(String(value))}`,
+      );
+  }
+  for (const [key, value] of Object.entries(c.exclude_attributes))
+    clauses.push(
+      `(p.record->'attributes'->>${bind(key)} IS NOT NULL AND p.record->'attributes'->>${bind(key)}<>${bind(String(value))})`,
+    );
+  const rows = await db.query<{
+    record: Product;
+    vector: number[] | null;
+    content_hash: string | null;
+    model: string | null;
+  }>(
+    `SELECT p.record || jsonb_build_object('price',p.price) AS record,e.vector,e.content_hash,e.model FROM catalog_products p LEFT JOIN concierge_embeddings e ON e.product_id=p.id WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
+    bindings,
+  );
+  let mode = "structured";
+  let degradation: string | null = null;
+  let queryVector: number[] | undefined;
+  if (c.query.trim()) {
+    if (process.env.CONCIERGE_EMBEDDING_MODEL) {
+      try {
+        [queryVector] = await embed([c.query], signal, "query");
+        mode = "hybrid";
+      } catch (e) {
+        if (signal?.aborted) throw e;
+        degradation =
+          e instanceof Error ? e.message : "Semantic retrieval unavailable";
+        mode = "lexical";
+      }
+    } else {
+      mode = "lexical";
+      degradation =
+        "Semantic index is not configured; results use catalog text only.";
+    }
+  }
+  const terms =
+    c.query
+      .toLocaleLowerCase()
+      .normalize("NFKC")
+      .match(/[\p{L}\p{N}]+/gu) || [];
+  const ranked = rows.rows
+    .map((row) => {
+      const text = productDocument(row.record)
+        .toLocaleLowerCase()
+        .normalize("NFKC");
+      const lexical = terms.length
+        ? terms.filter((t) => text.includes(t)).length / terms.length
+        : 1;
+      const fresh =
+        queryVector &&
+        row.vector &&
+        row.model === process.env.CONCIERGE_EMBEDDING_MODEL &&
+        row.content_hash === documentHash(row.record);
+      const semantic = fresh ? cosine(queryVector!, row.vector!) : null;
+      return {
+        product: row.record,
+        score: semantic === null ? lexical : 0.35 * lexical + 0.65 * semantic,
+        eligible:
+          !terms.length ||
+          lexical === 1 ||
+          (semantic !== null && semantic > 0.25),
+        semantic: semantic !== null,
+      };
+    })
+    .filter((r) => r.eligible);
+  if (
+    queryVector &&
+    rows.rows.some(
+      (r) =>
+        !r.vector ||
+        r.content_hash !== documentHash(r.record) ||
+        r.model !== process.env.CONCIERGE_EMBEDDING_MODEL,
+    )
+  )
+    degradation =
+      "Some eligible catalog records lack a current semantic vector; these records use lexical ranking only.";
+  ranked.sort(
+    (a, b) =>
+      (c.sort === "price_asc"
+        ? a.product.price - b.product.price
+        : c.sort === "price_desc"
+          ? b.product.price - a.product.price
+          : c.sort === "name_asc"
+            ? a.product.name.localeCompare(b.product.name)
+            : b.score - a.score) || a.product.id.localeCompare(b.product.id),
+  );
+  return {
+    products: ranked.slice(c.offset, c.offset + c.limit).map((r) => r.product),
+    total: ranked.length,
+    constraints: c,
+    mode,
+    degradation,
+    price_origin: "DALE sandbox offers",
+    currency: "USD",
+    nextOffset: c.offset + c.limit < ranked.length ? c.offset + c.limit : null,
+  };
+}
+export async function catalogFacets(raw: unknown) {
+  const c: SearchConstraints = searchConstraints.parse(raw);
+  const result = await hybridSearch({ ...c, limit: 24, offset: 0, query: "" });
+  // Facet values are discovered independently of page size.
+  const db = await conciergeDatabase();
+  const rows = await db.query<{ key: string; values: string[] }>(
+    `SELECT a.key,array_agg(DISTINCT a.value ORDER BY a.value) AS values FROM catalog_products p CROSS JOIN LATERAL jsonb_each_text(coalesce(p.record->'attributes','{}'::jsonb)) a WHERE p.publication='published' AND ($1::text[]='{}'::text[] OR p.category=ANY($1::text[]) OR p.leaf_type=ANY($1::text[])) GROUP BY a.key`,
+    [c.categories],
+  );
+  return {
+    attributes: Object.fromEntries(rows.rows.map((r) => [r.key, r.values])),
+    matching_count: result.total,
+    scope:
+      "Attribute values for the selected categories; matching_count applies all exact constraints.",
+  };
+}

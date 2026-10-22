@@ -1,0 +1,1073 @@
+{
+  "evidence": [
+    {
+      "productId": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-S24-ULTRA",
+      "source": "https://www.samsung.com/in/smartphones/galaxy-s24-ultra/buy/",
+      "sourcePageSha256": "e57a2641c2721bfd296ec8861c704161e5026910a3f10f9862a219f7e5dca63d",
+      "manufacturerSku": "SM-S928BZTCINS",
+      "optionMappings": [
+        {
+          "typeCode": "OPT-015",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-007",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-027",
+          "itemId": "1"
+        }
+      ],
+      "buyingOptions": [
+        {
+          "typeCode": "OPT-015",
+          "displayName": "Device",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Galaxy S24 Ultra",
+              "englishName": "galaxy s24 ultra",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S928BZTC",
+              "displayCode": "SM-S928BZTC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "guideChipUseYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BZTCINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-007",
+          "displayName": "Storage",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "256 GB｜12 GB",
+              "englishName": "256 GB｜12 GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S928BZTC",
+              "displayCode": "SM-S928BZTC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BZTCINS"
+            },
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "512 GB｜12 GB",
+              "englishName": "512 GB｜12 GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S928BZTQ",
+              "displayCode": "SM-S928BZTQ",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "2",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BZTQINS"
+            },
+            {
+              "itemId": "3",
+              "leaseYn": "N",
+              "displayName": "1 TB｜12 GB",
+              "englishName": "1 TB｜12 GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S928BLBW",
+              "displayCode": "SM-S928BLBW",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "3",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BLBWINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-027",
+          "displayName": "Colour",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Titanium <br />Gray",
+              "englishName": "titanium gray",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-s24-ultra/buy/color_gray_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S928BZTC",
+              "displayCode": "SM-S928BZTC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BZTCINS"
+            },
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "Titanium <br />Black",
+              "englishName": "titanium black",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-s24-ultra/buy/color_black_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S928BZKC",
+              "displayCode": "SM-S928BZKC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "2",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BZKCINS"
+            },
+            {
+              "itemId": "3",
+              "leaseYn": "N",
+              "displayName": "Titanium <br />Violet",
+              "englishName": "titanium violet",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-s24-ultra/buy/color_violet_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S928BZVC",
+              "displayCode": "SM-S928BZVC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "3",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BZVCINS"
+            },
+            {
+              "itemId": "4",
+              "leaseYn": "N",
+              "displayName": "Titanium <br />Blue",
+              "englishName": "titanium blue",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S928BLBC",
+              "displayCode": "SM-S928BLBC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "4",
+              "disclamerUseYn": "Y",
+              "specialMessage": "Special Colour",
+              "specialColorYn": "Y",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BLBCINS"
+            },
+            {
+              "itemId": "5",
+              "leaseYn": "N",
+              "displayName": "Titanium <br />Green",
+              "englishName": "titanium green",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S928BLGC",
+              "displayCode": "SM-S928BLGC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "5",
+              "disclamerUseYn": "Y",
+              "specialMessage": "Special Colour",
+              "specialColorYn": "Y",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BLGCINS"
+            },
+            {
+              "itemId": "6",
+              "leaseYn": "N",
+              "displayName": "Titanium <br />Yellow",
+              "englishName": "titanium yellow",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-s24-ultra/buy/color_yellow_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S928BZYC",
+              "displayCode": "SM-S928BZYC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "6",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BZYCINS"
+            },
+            {
+              "itemId": "7",
+              "leaseYn": "N",
+              "displayName": "Titanium <br />Orange",
+              "englishName": "titanium orange",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S928BZOC",
+              "displayCode": "SM-S928BZOC",
+              "modelName": "SM-S928B/DS",
+              "productOptionSno": "7",
+              "disclamerUseYn": "Y",
+              "specialMessage": "Special Colour",
+              "specialColorYn": "Y",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S928BZOCINS"
+            }
+          ]
+        }
+      ],
+      "gallery": {
+        "gallerySno": "1",
+        "mediaType": "IMAGE",
+        "largeImage": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24-ultra/buy/S24Ultra-Color-Titanium_Grey_PC_0527_final.jpg",
+        "largeImageDesc": "Galaxy S24 Ultra in Titanium Gray layer",
+        "smallImage": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24-ultra/buy/S24Ultra-Color-Titanium_Grey_MO_0527_final.jpg",
+        "smallImageDesc": "Galaxy S24 Ultra in Titanium Gray layer"
+      }
+    },
+    {
+      "productId": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-S24",
+      "source": "https://www.samsung.com/in/smartphones/galaxy-s24/buy/",
+      "sourcePageSha256": "831f058325d282fc40d2ade090ecb41775f2df46ec42a92fe385fbadf9afdf2a",
+      "manufacturerSku": "SM-S921BZKBINS",
+      "optionMappings": [
+        {
+          "typeCode": "OPT-015",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-007",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-027",
+          "itemId": "3"
+        }
+      ],
+      "buyingOptions": [
+        {
+          "typeCode": "OPT-015",
+          "displayName": "Device",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Galaxy S24",
+              "englishName": "galaxy s24",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S921BZKB",
+              "displayCode": "SM-S921BZKB",
+              "modelName": "SM-S921B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "guideChipUseYn": "Y",
+              "guidePopupTitle": "See the difference",
+              "guidePopupImagePC": "//images.samsung.com/in/smartphones/galaxy-s24/buy/device_PC.jpg",
+              "guidePopupImageMO": "//images.samsung.com/in/smartphones/galaxy-s24/buy/device_MO.jpg",
+              "guidePopupSubtitle": "What&#39;s different?",
+              "guidePopupDescription": "If screen is what you&#39;re after, Galaxy S24+ has a 6.7-inch display, half an inch bigger than Galaxy S24&#39;s 6.2-inch display.<sup>*</sup> And with QHD+, Galaxy S24+ supports higher resolution than Galaxy S24.<br><br>  If battery power is where it&#39;s at, then Galaxy S24+ has more, with a 4900mAh (typical) battery compared to Galaxy S24&#39;s 4000mAh (typical) battery.<sup>**</sup><br><br>  In other words, if you&#39;re looking for a phone that goes the extra distance in display and battery, go with Galaxy S24+.<br><br>  Need more help deciding? Check out our Compare Page.<br><br>  <sup>*</sup>Measured diagonally, Galaxy S24&#39;s screen size is 6.2 inches in the full rectangle and 6 inches accounting for the rounded corners and Galaxy S24+&#39;s screen size is 6.7 inches in the full rectangle and 6.5 inches accounting for the rounded corners; actual viewable area is less due to the rounded corners and camera hole.<br> <sup>**</sup> Typical value tested under third-party laboratory condition. Typical value is the estimated average value considering the deviation in battery capacity among the battery samples tested under IEC 61960 standard. Rated capacity is 3880mAh for Galaxy S24 and 4755mAh for Galaxy S24+. Actual battery life may vary depending on network environment, usage patterns and other factors.",
+              "lsvFlagYn": "N",
+              "newDisplayCode": "SM-S921BZYC",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S921BZKBINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-007",
+          "displayName": "Storage",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "128 GB｜8 GB",
+              "englishName": "128 GB｜8 GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S921BZKB",
+              "displayCode": "SM-S921BZKB",
+              "modelName": "SM-S921B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "Y",
+              "newDisplayCode": "SM-S921BZYC",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S921BZKBINS"
+            },
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "256 GB｜8 GB",
+              "englishName": "256 GB｜8 GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S921BZKC",
+              "displayCode": "SM-S921BZKC",
+              "modelName": "SM-S921B/DS",
+              "productOptionSno": "2",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S921BZKCINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-027",
+          "displayName": "Colour",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Amber <br />Yellow",
+              "englishName": "amber yellow",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-s24/buy/color_yellow_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S921BZYB",
+              "displayCode": "SM-S921BZYB",
+              "modelName": "SM-S921B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "newDisplayCode": "SM-S921BZYC",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S921BZYBINS"
+            },
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "Cobalt <br />Violet",
+              "englishName": "cobalt violet",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-s24/buy/color_violet_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S921BZVB",
+              "displayCode": "SM-S921BZVB",
+              "modelName": "SM-S921B/DS",
+              "productOptionSno": "2",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "newDisplayCode": "SM-S921BZYC",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S921BZVBINS"
+            },
+            {
+              "itemId": "3",
+              "leaseYn": "N",
+              "displayName": "Onyx <br />Black",
+              "englishName": "onyx black",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-s24/buy/color_black_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S921BZKB",
+              "displayCode": "SM-S921BZKB",
+              "modelName": "SM-S921B/DS",
+              "productOptionSno": "3",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "newDisplayCode": "SM-S921BZYC",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S921BZKBINS"
+            },
+            {
+              "itemId": "4",
+              "leaseYn": "N",
+              "displayName": "Marble <br />Gray",
+              "englishName": "marble gray",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-s24/buy/color_gray_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S921BZAB",
+              "displayCode": "SM-S921BZAB",
+              "modelName": "SM-S921B/DS",
+              "productOptionSno": "4",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "newDisplayCode": "SM-S921BZYC",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S921BZABINS"
+            }
+          ]
+        }
+      ],
+      "gallery": {
+        "gallerySno": "1",
+        "mediaType": "IMAGE",
+        "largeImage": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24/buy/S24-Color-Onyx_Black_PC_0527_final.jpg",
+        "largeImageDesc": "Galaxy S24 in Onyx Black layer",
+        "smallImage": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24/buy/S24-Color-Onyx_Black_MO_0527_final.jpg",
+        "smallImageDesc": "Galaxy S24 in Onyx Black layer"
+      }
+    },
+    {
+      "productId": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-Z-FOLD6",
+      "source": "https://www.samsung.com/in/smartphones/galaxy-z-fold6/buy/",
+      "sourcePageSha256": "d6689392ea9e25efc7f91a88daf250fcf5603b55e520795e19f410d82d5c3a58",
+      "manufacturerSku": "SM-F956BZSDINS",
+      "optionMappings": [
+        {
+          "typeCode": "OPT-015",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-007",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-027",
+          "itemId": "1"
+        }
+      ],
+      "buyingOptions": [
+        {
+          "typeCode": "OPT-015",
+          "displayName": "Device",
+          "optionMessage": "Please select your device",
+          "toolTip": "Please select the phone model you wish to buy",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Galaxy Z Fold6",
+              "englishName": "Galaxy Z Fold6",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-F956BZSD",
+              "displayCode": "SM-F956BZSD",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "guideChipUseYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BZSDINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-007",
+          "displayName": "Storage",
+          "optionMessage": "Please select your storage",
+          "toolTip": "Please select your storage",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "256GB｜12GB",
+              "englishName": "256GB｜12GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-F956BZSD",
+              "displayCode": "SM-F956BZSD",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BZSDINS"
+            },
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "512GB｜12GB",
+              "englishName": "512GB｜12GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-F956BZSG",
+              "displayCode": "SM-F956BZSG",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "2",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BZSGINS"
+            },
+            {
+              "itemId": "3",
+              "leaseYn": "N",
+              "displayName": "1TB｜12GB",
+              "englishName": "1TB｜12GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-F956BZSH",
+              "displayCode": "SM-F956BZSH",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "3",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BZSHINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-027",
+          "displayName": "Colour",
+          "toolTip": "Please select the phone colour you wish to buy",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Silver <br />Shadow",
+              "englishName": "silver shadow",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-z-fold6/buy/color_sliverShadow_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F956BZSD",
+              "displayCode": "SM-F956BZSD",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BZSDINS"
+            },
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "Pink",
+              "englishName": "Pink",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-z-fold6/buy/color_pink_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F956BLID",
+              "displayCode": "SM-F956BLID",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "2",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BLIDINS"
+            },
+            {
+              "itemId": "3",
+              "leaseYn": "N",
+              "displayName": "Navy",
+              "englishName": "navy",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-z-fold6/buy/color_navy_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F956BDBD",
+              "displayCode": "SM-F956BDBD",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "3",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BDBDINS"
+            },
+            {
+              "itemId": "4",
+              "leaseYn": "N",
+              "displayName": "Crafted <br />Black",
+              "englishName": "crafted black",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F956BAKD",
+              "displayCode": "SM-F956BAKD",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "4",
+              "disclamerUseYn": "Y",
+              "specialMessage": "Special Colour",
+              "specialColorYn": "Y",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BAKDINS"
+            },
+            {
+              "itemId": "5",
+              "leaseYn": "N",
+              "displayName": "White",
+              "englishName": "white",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F956BZWD",
+              "displayCode": "SM-F956BZWD",
+              "modelName": "SM-F956B/DS",
+              "productOptionSno": "5",
+              "disclamerUseYn": "Y",
+              "specialMessage": "Special Colour",
+              "specialColorYn": "Y",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F956BZWDINS"
+            }
+          ]
+        }
+      ],
+      "gallery": {
+        "gallerySno": "1",
+        "mediaType": "IMAGE",
+        "largeImage": "//images.samsung.com/in/smartphones/galaxy-z-fold6/buy/product_color_silverShadow_PC.png",
+        "largeImageDesc": "Galaxy Z Fold6 in Silver Shadow layer pop-up.",
+        "smallImage": "//images.samsung.com/in/smartphones/galaxy-z-fold6/buy/product_color_silverShadow_MO.png",
+        "smallImageDesc": "Galaxy Z Fold6 in Silver Shadow layer pop-up."
+      }
+    },
+    {
+      "productId": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-Z-FLIP6",
+      "source": "https://www.samsung.com/in/smartphones/galaxy-z-flip6/buy/",
+      "sourcePageSha256": "17adfa246fb615fa1d96bc584699970e654f673b78b6c2cd10c58d9996516975",
+      "manufacturerSku": "SM-F741BLBAINS",
+      "optionMappings": [
+        {
+          "typeCode": "OPT-015",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-007",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-027",
+          "itemId": "1"
+        }
+      ],
+      "buyingOptions": [
+        {
+          "typeCode": "OPT-015",
+          "displayName": "Device",
+          "optionMessage": "Please select your device",
+          "toolTip": "Please select the phone model you wish to buy",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Galaxy Z Flip6",
+              "englishName": "Galaxy Z Flip6",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-F741BLBA",
+              "displayCode": "SM-F741BLBA",
+              "modelName": "SM-F741B",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "guideChipUseYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BLBAINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-007",
+          "displayName": "Storage",
+          "optionMessage": "Please select your storage",
+          "toolTip": "Please select your storage",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "256GB｜12GB",
+              "englishName": "256GB｜12GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-F741BLBA",
+              "displayCode": "SM-F741BLBA",
+              "modelName": "SM-F741B",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BLBAINS"
+            },
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "512GB｜12GB",
+              "englishName": "512GB｜12GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-F741BLBE",
+              "displayCode": "SM-F741BLBE",
+              "modelName": "SM-F741B",
+              "productOptionSno": "2",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BLBEINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-027",
+          "displayName": "Colour",
+          "toolTip": "Please select the phone colour you wish to buy",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Blue",
+              "englishName": "blue",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-z-flip6/buy/color_blue_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F741BLBA",
+              "displayCode": "SM-F741BLBA",
+              "modelName": "SM-F741B",
+              "productOptionSno": "1",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BLBAINS"
+            },
+            {
+              "itemId": "3",
+              "leaseYn": "N",
+              "displayName": "Mint",
+              "englishName": "mint",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-z-flip6/buy/color_mint_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F741BLGA",
+              "displayCode": "SM-F741BLGA",
+              "modelName": "SM-F741B",
+              "productOptionSno": "3",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BLGAINS"
+            },
+            {
+              "itemId": "4",
+              "leaseYn": "N",
+              "displayName": "Silver <br />Shadow",
+              "englishName": "silver shadow",
+              "logoUrl": "//images.samsung.com/in/smartphones/galaxy-z-flip6/buy/color_silverShadow_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F741BZSA",
+              "displayCode": "SM-F741BZSA",
+              "modelName": "SM-F741B",
+              "productOptionSno": "4",
+              "disclamerUseYn": "Y",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BZSAINS"
+            },
+            {
+              "itemId": "5",
+              "leaseYn": "N",
+              "displayName": "Crafted <br />Black",
+              "englishName": "crafted black",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F741BAKA",
+              "displayCode": "SM-F741BAKA",
+              "modelName": "SM-F741B",
+              "productOptionSno": "5",
+              "disclamerUseYn": "Y",
+              "specialMessage": "Special Colour",
+              "specialColorYn": "Y",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BAKAINS"
+            },
+            {
+              "itemId": "6",
+              "leaseYn": "N",
+              "displayName": "White",
+              "englishName": "white",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F741BZWA",
+              "displayCode": "SM-F741BZWA",
+              "modelName": "SM-F741B",
+              "productOptionSno": "6",
+              "disclamerUseYn": "Y",
+              "specialMessage": "Special Colour",
+              "specialColorYn": "Y",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BZWAINS"
+            },
+            {
+              "itemId": "7",
+              "leaseYn": "N",
+              "displayName": "Peach",
+              "englishName": "peach",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-F741BZOA",
+              "displayCode": "SM-F741BZOA",
+              "modelName": "SM-F741B",
+              "productOptionSno": "7",
+              "disclamerUseYn": "Y",
+              "specialMessage": "Special Colour",
+              "specialColorYn": "Y",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-F741BZOAINS"
+            }
+          ]
+        }
+      ],
+      "gallery": {
+        "gallerySno": "1",
+        "mediaType": "IMAGE",
+        "largeImage": "//images.samsung.com/in/smartphones/galaxy-z-flip6/buy/product_color_blue_PC_v2.png",
+        "largeImageDesc": "Galaxy Z Flip6 in Blue layer pop-up.",
+        "smallImage": "//images.samsung.com/in/smartphones/galaxy-z-flip6/buy/product_color_blue_MO_v2.png",
+        "smallImageDesc": "Galaxy Z Flip6 in Blue layer pop-up."
+      }
+    },
+    {
+      "productId": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-S24-FE",
+      "source": "https://www.samsung.com/in/smartphones/galaxy-s24-fe/buy/",
+      "sourcePageSha256": "48dff5112632c532b45a6db34679b3a013cf8186f6ee05ad7a267c44d7ce5ce2",
+      "manufacturerSku": "SM-S721BLBBINS",
+      "optionMappings": [
+        {
+          "typeCode": "OPT-015",
+          "itemId": "1"
+        },
+        {
+          "typeCode": "OPT-007",
+          "itemId": "2"
+        },
+        {
+          "typeCode": "OPT-027",
+          "itemId": "1"
+        }
+      ],
+      "buyingOptions": [
+        {
+          "typeCode": "OPT-015",
+          "displayName": "Device",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Galaxy S24 FE",
+              "englishName": "galaxy s24 fe",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S721BLBB",
+              "displayCode": "SM-S721BLBB",
+              "modelName": "SM-S721B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "guideChipUseYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S721BLBBINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-007",
+          "displayName": "Storage",
+          "optionItems": [
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "128 GB｜8 GB",
+              "englishName": "128 GB｜8 GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S721BLBB",
+              "displayCode": "SM-S721BLBB",
+              "modelName": "SM-S721B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S721BLBBINS"
+            },
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "256 GB｜8 GB",
+              "englishName": "256 GB｜8 GB",
+              "subLinkUseYn": "N",
+              "modelCode": "SM-S721BLBC",
+              "displayCode": "SM-S721BLBC",
+              "modelName": "SM-S721B/DS",
+              "productOptionSno": "2",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S721BLBCINS"
+            }
+          ]
+        },
+        {
+          "typeCode": "OPT-027",
+          "displayName": "Colour",
+          "optionItems": [
+            {
+              "itemId": "1",
+              "leaseYn": "N",
+              "displayName": "Blue",
+              "englishName": "Blue",
+              "logoUrl": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24-fe/buy/S24_FE_Color_Chip_Blue_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S721BLBB",
+              "displayCode": "SM-S721BLBB",
+              "modelName": "SM-S721B/DS",
+              "productOptionSno": "1",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S721BLBBINS"
+            },
+            {
+              "itemId": "2",
+              "leaseYn": "N",
+              "displayName": "Graphite",
+              "englishName": "Graphite",
+              "logoUrl": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24-fe/buy/S24_FE_Color_Chip_Graphite_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S721BZKB",
+              "displayCode": "SM-S721BZKB",
+              "modelName": "SM-S721B/DS",
+              "productOptionSno": "2",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S721BZKBINS"
+            },
+            {
+              "itemId": "3",
+              "leaseYn": "N",
+              "displayName": "Mint",
+              "englishName": "Mint",
+              "logoUrl": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24-fe/buy/S24_FE_Color_Chip_Mint_MO.png",
+              "subLinkUseYn": "N",
+              "rgbCode1": "#",
+              "rgbCode2": "#",
+              "modelCode": "SM-S721BLGB",
+              "displayCode": "SM-S721BLGB",
+              "modelName": "SM-S721B/DS",
+              "productOptionSno": "3",
+              "disclamerUseYn": "N",
+              "specialColorYn": "N",
+              "bespokeRecommendedYn": "N",
+              "lsvFlagYn": "N",
+              "priceCurrency": "INR",
+              "pimModelCode": "SM-S721BLGBINS"
+            }
+          ]
+        }
+      ],
+      "gallery": {
+        "gallerySno": "1",
+        "mediaType": "IMAGE",
+        "largeImage": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24-fe/buy/S24_FE_Color_Selection_Blue_PC.jpg",
+        "largeImageDesc": "Galaxy S24 FE in Blue layer pop-up open.",
+        "smallImage": "//images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s24-fe/buy/S24_FE_Color_Selection_Blue_MO.jpg",
+        "smallImageDesc": "Galaxy S24 FE in Blue layer pop-up open."
+      }
+    }
+  ],
+  "pending": [
+    {
+      "id": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-S24-PLUS",
+      "reason": "Exact model/color/storage SKU absent or ambiguous: 0"
+    },
+    {
+      "id": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-S23-ULTRA",
+      "reason": "Exact SKU gallery absent"
+    },
+    {
+      "id": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-S23",
+      "reason": "Exact SKU gallery absent"
+    }
+  ]
+}

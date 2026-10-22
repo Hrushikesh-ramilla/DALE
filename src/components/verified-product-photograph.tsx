@@ -42,7 +42,7 @@ export function VerifiedProductPhotograph({
         style={{
           position: "relative",
           width: "100%",
-          height: compact ? "100%" : "calc(100% - 22px)",
+          height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -94,31 +94,6 @@ export function VerifiedProductPhotograph({
           </div>
         )}
       </div>
-      {!compact && (
-        <figcaption
-          style={{
-            fontSize: "9px",
-            letterSpacing: "0.06em",
-            color: "#64748b",
-            padding: "2px 8px 6px",
-            textAlign: "center",
-            width: "100%",
-          }}
-        >
-          {resolved.source || product.media?.source ? (
-            <a
-              href={resolved.source || product.media?.source}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#94a3b8", textDecoration: "none" }}
-            >
-              Verified Manufacturer Packshot
-            </a>
-          ) : (
-            "Verified Catalog Asset"
-          )}
-        </figcaption>
-      )}
     </figure>
   );
 }
