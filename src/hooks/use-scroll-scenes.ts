@@ -61,7 +61,6 @@ export function useCollectionStack(
               "--stack-scale",
               String(1 - cover * 0.085),
             );
-            surface.style.setProperty("--stack-rotate", `${-6 * cover}deg`);
             surface.style.setProperty("--stack-recede", `${-20 * cover}px`);
             // Only the outgoing/incoming pair needs a promotion hint.
             surface.style.willChange =
@@ -92,7 +91,6 @@ export function useCollectionStack(
           surfaces.forEach((surface) => {
             for (const property of [
               "--stack-scale",
-              "--stack-rotate",
               "--stack-recede",
               "will-change",
             ])

@@ -57,7 +57,7 @@
     0 -5px 0 #030403,
     0 7px 0 #252621,
     0 20px 34px #0005;
-  transform-style: preserve-3d;
+  transform-style: flat;
 }
 .plate::after {
   content: "";
@@ -230,6 +230,9 @@
   transform-origin: center top;
 }
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .plate[data-depth-active="true"] {
+    transform-style: preserve-3d;
+  }
   .plate[data-depth-active="true"] .copy {
     transform: translateZ(56px);
   }
@@ -257,8 +260,7 @@
     scroll-margin-top: 110px;
   }
   .recede {
-    transform: perspective(1600px) translateY(var(--stack-recede, 0px))
-      rotateX(var(--stack-rotate, 0deg)) scale(var(--stack-scale, 1));
+    transform: translateY(var(--stack-recede, 0px)) scale(var(--stack-scale, 1));
   }
   .plate {
     min-height: 470px;
