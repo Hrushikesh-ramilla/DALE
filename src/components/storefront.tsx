@@ -55,7 +55,6 @@ import type { Order, ReturnCase, StoredQuote } from "@/server/state";
 import type { snapshot } from "@/server/service";
 import { ProductArt } from "./product-art";
 import { KineticCard } from "./kinetic-card";
-import { ParallaxCategoryStack } from "./parallax-category-stack";
 import { PayPalCheckout } from "./paypal-checkout";
 import { Dialog } from "./dialog";
 import { BrandWordmark } from "./brand-wordmark";
@@ -1001,10 +1000,67 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       and approve the exact offer yourself.
                     </p>
                   </div>
-                  <ParallaxCategoryStack
-                    categories={parallaxCategories}
-                    departmentHeroImages={departmentHeroImages}
-                  />
+                  <div className="parallax-stack">
+                    {parallaxCategories.map((col) => (
+                      <Link
+                        key={col.id}
+                        href={
+                          col.id === "watches"
+                            ? "/category/watches"
+                            : `/department/${col.id}`
+                        }
+                        className="parallax-category-card"
+                      >
+                        <div className="parallax-card-content">
+                          <div className="parallax-card-badge">
+                            <span>{col.numeral}</span>
+                            <span className="dot">·</span>
+                            <span>{col.tagline}</span>
+                          </div>
+                          <h3 className="parallax-card-title">{col.title}</h3>
+                          <p className="parallax-card-desc">{col.desc}</p>
+                          <div className="parallax-card-tags">
+                            {col.tags.map((tag) => (
+                              <span key={tag} className="parallax-card-tag">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                          <span className="parallax-card-cta">
+                            <span>Explore {col.title}</span>
+                            <ArrowRight size={15} />
+                          </span>
+                        </div>
+                        <div className="parallax-card-visual">
+                          <div className="parallax-stage-dome" />
+                          <div className="parallax-ground-shadow" />
+                          <div className="art-frame">
+                            {departmentHeroImages[col.id] ? (
+                              <div className="parallax-hero-wrapper">
+                                <Image
+                                  src={departmentHeroImages[col.id].src}
+                                  alt={departmentHeroImages[col.id].alt}
+                                  width={1000}
+                                  height={650}
+                                  unoptimized
+                                  priority={
+                                    col.id === "electronics" ||
+                                    col.id === "clothing"
+                                  }
+                                  className="parallax-hero-image"
+                                />
+                              </div>
+                            ) : (
+                              <ProductArt product={col.featured} />
+                            )}
+                          </div>
+                          <span className="parallax-count-pill">
+                            {col.count} exact variants
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
                   <div className="device-fit-trigger-card">
                     <div>
                       <h3>Filter across all categories for your device</h3>

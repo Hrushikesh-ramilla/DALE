@@ -953,7 +953,20 @@ select option {
   z-index: 999999;
 }
 
-
+@media (hover: hover) and (pointer: fine) {
+  body.has-custom-cursor {
+    cursor: none;
+  }
+  body.has-custom-cursor a,
+  body.has-custom-cursor button,
+  body.has-custom-cursor input,
+  body.has-custom-cursor select,
+  body.has-custom-cursor textarea,
+  body.has-custom-cursor [role="button"],
+  body.has-custom-cursor .button {
+    cursor: none;
+  }
+}
 
 /* Header Actions */
 .header-actions {
@@ -1148,8 +1161,6 @@ select option {
   flex-direction: column;
   position: relative;
   gap: 0;
-  perspective: 1200px;
-  transform-style: preserve-3d;
 }
 
 /* Individual Parallax Category Card (Glides & Stacks) */
@@ -1162,28 +1173,26 @@ select option {
   background: #111114;
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow:
-    0 -12px 28px rgba(0, 0, 0, 0.5),
-    0 24px 60px rgba(0, 0, 0, 0.75),
+    0 -20px 48px rgba(0, 0, 0, 0.7),
+    0 32px 80px rgba(0, 0, 0, 0.85),
     0 0 0 1px rgba(255, 255, 255, 0.06) inset;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: stretch;
   overflow: hidden;
   cursor: pointer;
-  transform-style: preserve-3d;
-  will-change: transform, filter;
-  backface-visibility: hidden;
   transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
     border-color 0.3s ease,
     box-shadow 0.35s ease;
 }
 
 .parallax-category-card:hover {
-  border-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.22);
   box-shadow:
-    0 -16px 36px rgba(0, 0, 0, 0.6),
-    0 32px 75px rgba(0, 0, 0, 0.85),
-    0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+    0 -24px 54px rgba(0, 0, 0, 0.75),
+    0 36px 90px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
 }
 
 .parallax-card-content {
@@ -1276,36 +1285,18 @@ select option {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: radial-gradient(ellipse at 50% 45%, #18181c 0%, #0e0e11 65%, #08080a 100%);
-  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
   padding: 36px;
   overflow: hidden;
-  perspective: 1200px;
 }
 
 .parallax-stage-dome {
-  display: block;
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.015) 45%, transparent 70%);
-  mix-blend-mode: screen;
-  z-index: 1;
+  display: none;
 }
 
 .parallax-ground-shadow {
-  display: block;
-  position: absolute;
-  bottom: 12%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
-  height: 24px;
-  border-radius: 50%;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.35) 45%, transparent 75%);
-  filter: blur(8px);
-  pointer-events: none;
-  z-index: 1;
+  display: none;
 }
 
 .parallax-card-visual .art-frame {
@@ -1317,7 +1308,7 @@ select option {
   justify-content: center;
   position: relative;
   z-index: 2;
-  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .parallax-hero-wrapper {
@@ -1327,16 +1318,21 @@ select option {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateZ(24px);
-  will-change: transform;
 }
 
 .parallax-hero-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.55));
-  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.parallax-category-card:hover .parallax-card-visual .art-frame {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.parallax-category-card:hover .parallax-hero-image {
+  filter: none;
 }
 
 .parallax-count-pill {
@@ -1344,16 +1340,14 @@ select option {
   bottom: 24px;
   right: 28px;
   font-size: 11px;
-  color: #e5e5ea;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  padding: 6px 14px;
+  color: #1d1d1f;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 5px 14px;
   border-radius: 999px;
   font-weight: 500;
-  letter-spacing: 0.02em;
   z-index: 3;
-  backdrop-filter: blur(12px);
 }
 
 /* Device Fit Banner at End of Parallax */
