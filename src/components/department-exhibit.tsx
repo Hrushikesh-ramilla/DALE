@@ -9,6 +9,7 @@ import type { Product } from "@/domain/catalog";
 import { ProductArt } from "./product-art";
 import { useCardDepth } from "@/hooks/use-card-depth";
 import styles from "./department-exhibit.module.css";
+import { LivingType } from "./living-type";
 
 type Collection = {
   id: string;
@@ -52,7 +53,9 @@ function CollectionPlate({
             <span className={styles.index}>
               {collection.numeral} <span>THE COLLECTION</span>
             </span>
-            <h3>{collection.title}</h3>
+            <h3>
+              <LivingType text={collection.title} />
+            </h3>
             <p>{collection.desc}</p>
             <div className={styles.tags}>
               {collection.tags.map((tag) => (
@@ -117,9 +120,11 @@ export function DepartmentExhibit({
             DEPARTMENTS
           </span>
           <h2 id="collection-title">
-            A world of good things.
+            <LivingType text="A world of good things." />
             <br />
-            <em>Made personal.</em>
+            <em>
+              <LivingType text="Made personal." />
+            </em>
           </h2>
         </div>
         <p>

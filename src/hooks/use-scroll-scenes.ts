@@ -115,7 +115,7 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         const timeline = gsap.timeline({
           scrollTrigger: {
             trigger: root,
-            start: "top top",
+            start: "top 180px",
             end: "bottom top",
             scrub: true,
           },

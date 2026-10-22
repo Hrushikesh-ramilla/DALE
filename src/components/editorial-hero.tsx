@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
@@ -11,6 +11,8 @@ import { useCardDepth } from "@/hooks/use-card-depth";
 import { useCopilot } from "./copilot/copilot-context";
 import { ProductViewer } from "./product-viewer";
 import styles from "./editorial-hero.module.css";
+import { LivingType } from "./living-type";
+import { attachDepthMotion } from "@/lib/depth-motion";
 
 const edit = ["B001", "B012", "B016", "B011"].map(productById);
 
@@ -19,6 +21,14 @@ export function EditorialHero() {
   const ref = useCardDepth<HTMLDivElement>(7, 12);
   const scene = useRef<HTMLElement>(null);
   useHeroParallax(scene);
+  useEffect(() => {
+    if (scene.current)
+      return attachDepthMotion(scene.current, {
+        rotation: 1,
+        lift: 0,
+        attribute: "data-scene-active",
+      });
+  }, []);
   const copilot = useCopilot();
   const product = edit[index];
   const openAssistant = () => {
@@ -36,15 +46,17 @@ export function EditorialHero() {
         data-hero-backdrop
         aria-hidden="true"
       >
-        <Image
-          src="/images/editorial/atelier-light.webp"
-          alt=""
-          fill
-          sizes="100vw"
-          loading="eager"
-          fetchPriority="low"
-          className={styles.ambientImage}
-        />
+        <div className={styles.atmosphere} data-hero-atmosphere>
+          <Image
+            src="/images/editorial/atelier-light.webp"
+            alt=""
+            fill
+            sizes="100vw"
+            loading="eager"
+            fetchPriority="low"
+            className={styles.ambientImage}
+          />
+        </div>
       </div>
       <div className={styles.edition}>
         <span>DALE / A MORE PERSONAL WAY TO SHOP</span>
@@ -56,10 +68,14 @@ export function EditorialHero() {
         </span>
         <h2>
           <span className={styles.line}>
-            <span>A better</span>
+            <span>
+              <LivingType text="A better" entrance />
+            </span>
           </span>
           <span className={styles.line}>
-            <em>everyday.</em>
+            <em>
+              <LivingType text="everyday." entrance />
+            </em>
           </span>
         </h2>
         <p>
@@ -80,60 +96,66 @@ export function EditorialHero() {
         </span>
       </div>
       <div className={styles.display} data-hero-display>
-        <div className={styles.displayTitle}>
-          <span>THE DAILY EDIT</span>
-          <span>0{index + 1} / 04</span>
-        </div>
-        <div className={styles.stage} ref={ref} data-hero-depth>
-          <div className={styles.frame} aria-hidden="true" />
-          <span className={styles.vertical} aria-hidden="true">
-            DALE — OBJECT STUDY
-          </span>
-          <div className={styles.object} key={product.id}>
-            <ProductViewer product={product} priority={index === 0} />
+        <div className={styles.displayEntrance} data-hero-entrance>
+          <div className={styles.displayShell} data-hero-pointer-plane>
+            <div className={styles.displayTitle}>
+              <span>THE DAILY EDIT</span>
+              <span>0{index + 1} / 04</span>
+            </div>
+            <div className={styles.stage} ref={ref} data-hero-depth>
+              <div className={styles.frame} aria-hidden="true" />
+              <span className={styles.vertical} aria-hidden="true">
+                DALE — OBJECT STUDY
+              </span>
+              <div className={styles.object} key={product.id}>
+                <ProductViewer product={product} priority={index === 0} />
+              </div>
+              <div className={styles.plinth} aria-hidden="true" />
+              <span className={styles.objectNumber} aria-hidden="true">
+                0{index + 1}
+              </span>
+            </div>
+            <div className={styles.caption}>
+              <div>
+                <Link href={`/product/${product.id}`}>{product.name}</Link>
+                <small>{formatMoney(product.price)} · DALE sandbox offer</small>
+              </div>
+              <Link
+                href={`/product/${product.id}`}
+                className={styles.open}
+                aria-label={`View ${product.name}`}
+              >
+                <ArrowUpRight size={20} />
+              </Link>
+            </div>
+            <div className={styles.controls} aria-label="Featured products">
+              <button
+                aria-label="Previous featured product"
+                onClick={() =>
+                  setIndex((index + edit.length - 1) % edit.length)
+                }
+              >
+                <ArrowLeft size={16} />
+              </button>
+              {edit.map((item, i) => (
+                <button
+                  key={item.id}
+                  className={styles.dot}
+                  aria-label={`Feature ${item.name}`}
+                  aria-pressed={i === index}
+                  onClick={() => setIndex(i)}
+                >
+                  <span />
+                </button>
+              ))}
+              <button
+                aria-label="Next featured product"
+                onClick={() => setIndex((index + 1) % edit.length)}
+              >
+                <ArrowRight size={16} />
+              </button>
+            </div>
           </div>
-          <div className={styles.plinth} aria-hidden="true" />
-          <span className={styles.objectNumber} aria-hidden="true">
-            0{index + 1}
-          </span>
-        </div>
-        <div className={styles.caption}>
-          <div>
-            <Link href={`/product/${product.id}`}>{product.name}</Link>
-            <small>{formatMoney(product.price)} · DALE sandbox offer</small>
-          </div>
-          <Link
-            href={`/product/${product.id}`}
-            className={styles.open}
-            aria-label={`View ${product.name}`}
-          >
-            <ArrowUpRight size={20} />
-          </Link>
-        </div>
-        <div className={styles.controls} aria-label="Featured products">
-          <button
-            aria-label="Previous featured product"
-            onClick={() => setIndex((index + edit.length - 1) % edit.length)}
-          >
-            <ArrowLeft size={16} />
-          </button>
-          {edit.map((item, i) => (
-            <button
-              key={item.id}
-              className={styles.dot}
-              aria-label={`Feature ${item.name}`}
-              aria-pressed={i === index}
-              onClick={() => setIndex(i)}
-            >
-              <span />
-            </button>
-          ))}
-          <button
-            aria-label="Next featured product"
-            onClick={() => setIndex((index + 1) % edit.length)}
-          >
-            <ArrowRight size={16} />
-          </button>
         </div>
       </div>
       <div className={styles.baseline}>

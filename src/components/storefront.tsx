@@ -73,6 +73,7 @@ import { GroupPolicySettings } from "./group-policy-settings";
 import { ProviderReconciliation } from "./provider-reconciliation";
 import { useCopilot } from "./copilot/copilot-context";
 import { useEditorialReveals } from "@/hooks/use-editorial-reveals";
+import { LivingType } from "./living-type";
 import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 
@@ -2659,7 +2660,10 @@ export default function Storefront({ children }: { children?: ReactNode }) {
             <div className="footer-invitation" data-editorial-reveal>
               <span>THE NEXT GOOD THING STARTS WITH A CONVERSATION.</span>
               <p>
-                Consider it <em>found.</em>
+                <LivingType text="Consider it" />{" "}
+                <em>
+                  <LivingType text="found." />
+                </em>
               </p>
               <button
                 type="button"

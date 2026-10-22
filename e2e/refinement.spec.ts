@@ -423,3 +423,102 @@ test("collection anchor starts Lenis and reaches the real collection", async ({
   expect(heading!.y).toBeGreaterThan(60);
   expect(heading!.y + heading!.height).toBeLessThan(720);
 });
+
+test("headline letters react locally, spring home, and release their animation hints", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const type = page.locator("[data-hero-copy] [data-living-type]").first();
+  await expect(type).toHaveAttribute("data-type-ready", "true");
+  await expect(
+    page.getByRole("heading", { name: "A better everyday." }),
+  ).toBeVisible();
+  await page.evaluate(() => document.fonts.ready);
+  const letter = type.locator("[data-living-letter]").nth(2);
+  const box = await letter.boundingBox();
+  if (!box) throw new Error("Headline letter is not laid out");
+  await page.mouse.move(box.x + box.width / 2 + 12, box.y + box.height * 0.7);
+  await expect(type).toHaveAttribute("data-type-active", "true");
+  await expect
+    .poll(() =>
+      type.evaluate((el) =>
+        Math.max(
+          ...[...el.querySelectorAll("[data-living-letter]")].map((letter) => {
+            const m = new DOMMatrix(getComputedStyle(letter).transform);
+            return Math.hypot(m.m41, m.m42);
+          }),
+        ),
+      ),
+    )
+    .toBeGreaterThan(5);
+  await page.mouse.move(2, 2);
+  await expect(type).not.toHaveAttribute("data-type-active", "true");
+  expect(
+    await type
+      .locator("[data-living-letter]")
+      .evaluateAll((letters) =>
+        letters.every(
+          (el) =>
+            !(el as HTMLElement).style.transform &&
+            !(el as HTMLElement).style.willChange,
+        ),
+      ),
+  ).toBe(true);
+});
+
+test("the whole opening responds in separate planes and stops for reduced motion", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const hero = page.locator(".editorial-hero");
+  const atmosphere = page.locator("[data-hero-atmosphere]");
+  await page.mouse.move(1300, 600);
+  await expect(hero).toHaveAttribute("data-scene-active", "true");
+  await expect
+    .poll(() =>
+      atmosphere.evaluate((el) =>
+        Math.abs(new DOMMatrix(getComputedStyle(el).transform).m41),
+      ),
+    )
+    .toBeGreaterThan(5);
+  expect(await hero.evaluate((el) => getComputedStyle(el).transform)).toBe(
+    "none",
+  );
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(hero).not.toHaveAttribute("data-scene-active", "true");
+  expect(
+    await atmosphere.evaluate((el) => getComputedStyle(el).transform),
+  ).toBe("none");
+  expect(
+    await page
+      .locator("[data-hero-entrance]")
+      .evaluate((el) => getComputedStyle(el).animationName),
+  ).toBe("none");
+  expect(
+    await page
+      .locator(".living-glyph")
+      .first()
+      .evaluate((el) => getComputedStyle(el).animationName),
+  ).toBe("none");
+});
+
+test("opening parallax responds to the first short scroll", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute(
+    "data-scroll-engine",
+    "lenis",
+  );
+  const copy = page.locator("[data-hero-copy]");
+  const before = await copy.evaluate(
+    (el) => new DOMMatrix(getComputedStyle(el).transform).m42,
+  );
+  await page.mouse.move(10, 120);
+  await page.mouse.wheel(0, 70);
+  await expect
+    .poll(() =>
+      copy.evaluate((el) => new DOMMatrix(getComputedStyle(el).transform).m42),
+    )
+    .toBeLessThan(before - 4);
+});

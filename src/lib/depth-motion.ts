@@ -2,7 +2,11 @@
  * none at rest. Scroll never depends on this controller. */
 export function attachDepthMotion(
   element: HTMLElement,
-  { rotation = 2.4, lift = 4 }: { rotation?: number; lift?: number } = {},
+  {
+    rotation = 2.4,
+    lift = 4,
+    attribute = "data-depth-active",
+  }: { rotation?: number; lift?: number; attribute?: string } = {},
 ) {
   const media = window.matchMedia(
     "(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)",
@@ -16,6 +20,9 @@ export function attachDepthMotion(
     elevation = 0,
     targetX = 0,
     targetY = 0;
+  let vx = 0,
+    vy = 0,
+    ve = 0;
   const originalWillChange = element.style.willChange;
   const properties = [
     "--depth-rx",
@@ -29,7 +36,7 @@ export function attachDepthMotion(
   );
 
   const restore = () => {
-    element.removeAttribute("data-depth-active");
+    element.removeAttribute(attribute);
     element.style.willChange = originalWillChange;
     properties.forEach((name, i) => {
       if (previousProperties[i])
@@ -46,17 +53,20 @@ export function attachDepthMotion(
     hovering = false;
     bounds = undefined;
     x = y = elevation = targetX = targetY = 0;
+    vx = vy = ve = 0;
     restore();
   };
   const tick = (time: number) => {
     frame = 0;
-    const dt = previousTime ? Math.min(48, time - previousTime) : 16;
+    const dt = previousTime ? Math.min(32, time - previousTime) / 1000 : 1 / 60;
     previousTime = time;
-    const blend = 1 - Math.exp(-dt / 105);
     const targetElevation = hovering ? -lift : 0;
-    x += (targetX - x) * blend;
-    y += (targetY - y) * blend;
-    elevation += (targetElevation - elevation) * blend;
+    vx += ((targetX - x) * 145 - vx * 20) * dt;
+    vy += ((targetY - y) * 145 - vy * 20) * dt;
+    ve += ((targetElevation - elevation) * 145 - ve * 20) * dt;
+    x += vx * dt;
+    y += vy * dt;
+    elevation += ve * dt;
     element.style.setProperty("--depth-rx", `${y.toFixed(3)}deg`);
     element.style.setProperty("--depth-ry", `${x.toFixed(3)}deg`);
     element.style.setProperty("--depth-x", (x / rotation).toFixed(4));
@@ -65,7 +75,8 @@ export function attachDepthMotion(
     if (
       Math.abs(targetX - x) +
         Math.abs(targetY - y) +
-        Math.abs(targetElevation - elevation) >
+        Math.abs(targetElevation - elevation) +
+        (Math.abs(vx) + Math.abs(vy) + Math.abs(ve)) * 0.08 >
       0.025
     ) {
       frame = requestAnimationFrame(tick);
@@ -77,7 +88,8 @@ export function attachDepthMotion(
   };
   const schedule = () => {
     if (!frame) {
-      element.style.willChange = "transform";
+      element.style.willChange =
+        attribute === "data-depth-active" ? "transform" : originalWillChange;
       frame = requestAnimationFrame(tick);
     }
   };
@@ -85,7 +97,7 @@ export function attachDepthMotion(
     if (!media.matches || event.pointerType === "touch") return;
     bounds = element.getBoundingClientRect();
     hovering = true;
-    element.setAttribute("data-depth-active", "true");
+    element.setAttribute(attribute, "true");
     window.addEventListener("scroll", leave, { passive: true, once: true });
     window.addEventListener("resize", leave, { passive: true, once: true });
     schedule();
