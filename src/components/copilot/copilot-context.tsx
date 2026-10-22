@@ -409,10 +409,14 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const restore = () => {
       const epoch = sessionEpoch.current;
+      const snapshot = current.current;
       void fetch("/api/copilot/state", { cache: "no-store" })
         .then(async (r) => {
           if (r.ok) apply(await r.json(), epoch);
-          else if (epoch === sessionEpoch.current) {
+          else if (
+            epoch === sessionEpoch.current &&
+            current.current === snapshot
+          ) {
             current.current = null;
             setState(null);
           }

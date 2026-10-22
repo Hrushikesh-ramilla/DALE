@@ -204,6 +204,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
     ? `${session.actor.workspaceId}:${session.actor.userId}`
     : null;
   const [restoring, setRestoring] = useState(true);
+  const sessionRestoreRevision = useRef(0);
   useEffect(() => {
     if (!restoring)
       window.dispatchEvent(
@@ -389,13 +390,16 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   }, []);
   useEffect(() => {
     let active = true;
+    const revision = sessionRestoreRevision.current;
     void api<Session>("/api/session")
       .then((data) => {
-        if (active) restoreSession(data);
+        if (active && revision === sessionRestoreRevision.current)
+          restoreSession(data);
       })
       .catch(() => {})
       .finally(() => {
-        if (active) setRestoring(false);
+        if (active && revision === sessionRestoreRevision.current)
+          setRestoring(false);
       });
     return () => {
       active = false;
@@ -413,9 +417,19 @@ export default function Storefront({ children }: { children?: ReactNode }) {
         return;
       setModal(null);
       setSupportDraft(null);
+      // A guest started by chat supersedes the initial unauthenticated snapshot.
+      // Only the newest identity read may announce restoration or an account change.
+      const revision = ++sessionRestoreRevision.current;
       void api<Session>("/api/session")
-        .then(restoreSession)
-        .catch(() => setSession(null));
+        .then((data) => {
+          if (revision === sessionRestoreRevision.current) restoreSession(data);
+        })
+        .catch(() => {
+          if (revision === sessionRestoreRevision.current) setSession(null);
+        })
+        .finally(() => {
+          if (revision === sessionRestoreRevision.current) setRestoring(false);
+        });
     };
     window.addEventListener("dale:customer-session-ready", synchronize);
     window.addEventListener("dale:session-changed", synchronize);

@@ -98,6 +98,47 @@ test("footer invitation opens the assistant without submitting a task", async ({
   expect(sent).toBe(0);
 });
 
+test("late initial session snapshots do not cancel the first shopping request", async ({
+  page,
+}) => {
+  let releaseInitial!: () => void;
+  let releaseOwned!: () => void;
+  const initial = new Promise<void>((resolve) => {
+    releaseInitial = resolve;
+  });
+  const owned = new Promise<void>((resolve) => {
+    releaseOwned = resolve;
+  });
+  let sessionReads = 0;
+  await page.route("**/api/session", async (route) => {
+    if (route.request().method() !== "GET") return route.continue();
+    const first = ++sessionReads === 1;
+    const response = await route.fetch();
+    await (first ? initial : owned);
+    await route.fulfill({ response });
+  });
+  try {
+    await page.goto("/");
+    await page
+      .getByLabel("Your shopping request")
+      .fill("Browser slow streamed reply");
+    await page.getByRole("button", { name: "Ask DALE", exact: true }).click();
+    await expect(page.locator('[data-message-id^="stream:"]')).toContainText(
+      "Genuine first streamed words",
+    );
+    releaseInitial();
+    await expect(page.locator(".dale-messages-feed")).toContainText(
+      "Genuine first streamed words; the complete reply is now saved.",
+    );
+    const saved = await (await page.request.get("/api/copilot/state")).json();
+    expect(saved.turn.status).toBe("completed");
+  } finally {
+    releaseInitial();
+    releaseOwned();
+    await page.unrouteAll({ behavior: "wait" });
+  }
+});
+
 test("depth follows the pointer, settles, and releases temporary promotion", async ({
   page,
 }) => {
