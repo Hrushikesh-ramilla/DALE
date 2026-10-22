@@ -71,25 +71,32 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
     let frame = 0;
     let engine: Lenis | null = null;
+    let previousPosition = -1;
+    let quietFrames = 0;
     const tick = (time: number) => {
       frame = 0;
       engine?.raf(time);
-      // Fractional CSS destinations can converge just below a half pixel.
-      // Finish on a device-independent CSS pixel instead of keeping the
-      // demand clock alive indefinitely for an invisible remaining distance.
-      if (
-        engine?.isScrolling === "smooth" &&
-        Math.abs(engine.targetScroll - engine.animatedScroll) < 0.5
-      ) {
+      if (engine?.isScrolling !== "smooth") {
+        quietFrames = 0;
+        return;
+      }
+      const position = engine.actualScroll;
+      quietFrames =
+        Math.abs(position - previousPosition) < 0.1 &&
+        Math.abs(engine.velocity) < 0.02
+          ? quietFrames + 1
+          : 0;
+      previousPosition = position;
+      // A fractional destination can approach a half pixel forever. Only end
+      // inertia after twelve frames with no visible movement and near-zero
+      // velocity; targetScroll is not a destination during programmatic scroll.
+      if (quietFrames >= 12) {
         cancelAnimationFrame(frame);
         frame = 0;
-        engine.scrollTo(Math.round(engine.targetScroll), {
-          immediate: true,
-          force: true,
-        });
-      } else if (engine?.isScrolling === "smooth" && !frame) {
-        frame = requestAnimationFrame(tick);
-      }
+        engine.stop();
+        engine.start();
+        quietFrames = 0;
+      } else if (!frame) frame = requestAnimationFrame(tick);
     };
     const schedule = () => {
       if (!frame && engine) frame = requestAnimationFrame(tick);
