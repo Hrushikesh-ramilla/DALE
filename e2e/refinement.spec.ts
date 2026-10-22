@@ -266,10 +266,21 @@ test("collection anchor starts Lenis and reaches the real collection", async ({
     .getByRole("link", { name: "Explore the collection", exact: true })
     .click();
   await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(700);
-  const heading = page.locator("#collection-title");
+  const section = page.locator("#collections");
   await expect
     .poll(() =>
-      heading.evaluate((e) => Math.abs(e.getBoundingClientRect().top)),
+      section.evaluate((e) => {
+        const margin = parseFloat(getComputedStyle(e).scrollMarginTop) || 0;
+        const padding =
+          parseFloat(
+            getComputedStyle(document.documentElement).scrollPaddingTop,
+          ) || 0;
+        return Math.abs(e.getBoundingClientRect().top - margin - padding);
+      }),
     )
-    .toBeLessThan(350);
+    .toBeLessThan(2);
+  const heading = await page.locator("#collection-title").boundingBox();
+  expect(heading).not.toBeNull();
+  expect(heading!.y).toBeGreaterThan(60);
+  expect(heading!.y + heading!.height).toBeLessThan(720);
 });
