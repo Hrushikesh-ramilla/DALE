@@ -926,3 +926,13 @@ body:has(.home-opening) .site-header .brand {
   fill: #292c24;
   transition: fill 600ms ease;
 }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+}
+.site-header .brand {
+  margin-right: auto;
+}
+.site-header .compact-navigation {
+  margin-left: auto;
+}

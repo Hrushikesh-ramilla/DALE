@@ -1060,3 +1060,39 @@ test("filter stays above navigation and leaving the window cannot crash it", asy
   ).toBe(true);
   await close.click();
 });
+
+test("opening releases a stalled asset and the skip control is keyboard reachable", async ({
+  page,
+}) => {
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/breguet-experimentale-1.webp", async (route) => {
+    await gate;
+    await route.abort().catch(() => undefined);
+  });
+  try {
+    await page.goto("/", { waitUntil: "domcontentloaded" });
+    await expect(page.locator(".cinematic-intro-root")).not.toHaveAttribute(
+      "data-step",
+      "0",
+    );
+    await page.keyboard.press("Tab");
+    await expect(
+      page.getByRole("button", { name: "Skip intro" }),
+    ).toBeFocused();
+    await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+      "data-home-ready",
+      "true",
+      { timeout: 12000 },
+    );
+    expect(
+      await page.evaluate(
+        () => getComputedStyle(document.documentElement).overflow,
+      ),
+    ).not.toBe("hidden");
+  } finally {
+    release();
+  }
+});

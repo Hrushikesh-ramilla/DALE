@@ -167,6 +167,8 @@ export function ShoppingBriefMenu({
 
   const handleClose = useCallback(() => {
     clearTimer();
+    if (menuRef.current?.contains(document.activeElement))
+      triggerRef.current?.focus();
     setIsOpen(false);
     setIsPinned(false);
   }, []);
@@ -199,10 +201,26 @@ export function ShoppingBriefMenu({
       if (e.key === "Escape" && isOpen) {
         handleClose();
       }
+      if (e.key === "Tab" && isOpen && isPinned) {
+        const controls = menuRef.current?.querySelectorAll<HTMLElement>(
+          "button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), a[href]",
+        );
+        const first = controls?.[0];
+        const last = controls?.[controls.length - 1];
+        if (!first || !last) return;
+        if (
+          !menuRef.current?.contains(document.activeElement) ||
+          (e.shiftKey && document.activeElement === first) ||
+          (!e.shiftKey && document.activeElement === last)
+        ) {
+          e.preventDefault();
+          (e.shiftKey ? last : first).focus();
+        }
+      }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, handleClose]);
+  }, [isOpen, isPinned, handleClose]);
 
   // Close when clicking outside
   useEffect(() => {
