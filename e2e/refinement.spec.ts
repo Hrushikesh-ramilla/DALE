@@ -531,6 +531,16 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
   await page.evaluate(() => document.fonts.ready);
+  await expect(
+    page.locator("[data-collection-slot]").first().locator(".."),
+  ).toHaveAttribute("data-stack-ready", "true");
+  await page.locator("[data-hero-entrance]").evaluate(async (element) => {
+    await Promise.all(
+      element
+        .getAnimations({ subtree: true })
+        .map((animation) => animation.finished.catch(() => undefined)),
+    );
+  });
   await expect(page.locator("[data-hero-track]")).toHaveAttribute(
     "data-hero-held",
     "true",
@@ -575,6 +585,16 @@ test("agent and closing invitation hold with opposing layers and collapse for re
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
   await page.evaluate(() => document.fonts.ready);
+  await expect(
+    page.locator("[data-collection-slot]").first().locator(".."),
+  ).toHaveAttribute("data-stack-ready", "true");
+  await page.locator("[data-hero-entrance]").evaluate(async (element) => {
+    await Promise.all(
+      element
+        .getAnimations({ subtree: true })
+        .map((animation) => animation.finished.catch(() => undefined)),
+    );
+  });
   for (const [kind, surface, foreground] of [
     ["agent", ".hero-dale-bar", "[data-agent-parallax-title]"],
     ["footer", ".footer-invitation", ".footer-invitation p"],
