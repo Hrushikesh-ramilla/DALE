@@ -179,6 +179,55 @@ it("does not display prior search cards under a new request", async () => {
   });
   expect(next.products).toEqual([]);
   expect((await readConcierge(fresh)).resultSets.length).toBe(1);
+  expect(
+    vi.mocked(modelTurn).mock.calls[0][0].find((m) => m.role === "user")
+      ?.content,
+  ).toBe("Look up a named product");
+});
+it("uses requested lookup identity rather than interpreting other utterance mentions as selection", async () => {
+  const p = products[0];
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  for (const message of [
+    `I already own ${products[1].name}; show me ${p.name} instead`,
+    `Compare ${p.name} with ${products[1].name}`,
+  ]) {
+    await changeConcierge(fresh, (s) => {
+      s.transcript.push({
+        id: randomUUID(),
+        sender: "user",
+        text: message,
+        timestamp: Date.now(),
+      });
+    });
+    await executeTool(
+      "lookup_product",
+      { name: p.name },
+      { actor: fresh, ui: context },
+    );
+    const set = (await readConcierge(fresh)).resultSets.at(-1)!;
+    expect(set.productIds).toContain(p.id);
+    expect(set.productIds).not.toContain(products[1].id);
+  }
+});
+
+it("does not expose an empty search tracking ID as an apparent product identity", async () => {
+  const fresh = (await customerSession({ action: "guest" })).actor;
+  const observation = await executeTool(
+    "lookup_product",
+    { name: `absent-${randomUUID()}` },
+    { actor: fresh, ui: context },
+  );
+  expect(observation.data).toMatchObject({
+    status: "not_found",
+    products: [],
+    choices: [],
+    total: 0,
+    selection_required: false,
+  });
+  expect(observation.data).not.toHaveProperty("result_set_id");
+  expect((await readConcierge(fresh)).resultSets.at(-1)?.productIds).toEqual(
+    [],
+  );
 });
 
 it("persists cart and wishlist separately and rejects excess stock and foreign state", async () => {

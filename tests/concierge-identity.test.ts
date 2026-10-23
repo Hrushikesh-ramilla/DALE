@@ -6,6 +6,25 @@ import {
 } from "../src/server/concierge/identity";
 import type { Product } from "../src/domain/catalog";
 const product = (name: string, brand: string) => ({ name, brand }) as Product;
+it("keeps model numbers separate from measured variant quantities", () => {
+  expect(
+    identityMatcher("Acme Aurora 12 128GB", ["Acme"])(
+      product("Acme Aurora 128 12GB", "Acme"),
+    ),
+  ).toBeNull();
+  expect(
+    identityMatcher("128GB Acme Aurora12", ["Acme"])(
+      product("Acme Aurora 12 128 GB", "Acme"),
+    )?.kind,
+  ).toBe("identity");
+});
+it("keeps a requested family distinct from its longer variant", () => {
+  const family = product("Acme Aurora", "Acme");
+  const exact = product("Acme Aurora 12 Pro 128GB", "Acme");
+  const lookup = identityMatcher("Acme Aurora", ["Acme"]);
+  expect(lookup(family)?.kind).toBe("identity");
+  expect(lookup(exact)?.kind).toBe("partial_family");
+});
 
 it("resolves abbreviations from catalog vocabulary without brand-specific rules", () => {
   const brands = ["Arcadia House", "Meridian Instruments"];

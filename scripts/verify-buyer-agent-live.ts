@@ -1,13 +1,14 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { randomUUID } from "node:crypto";
 import { parse } from "dotenv";
-import { runConcierge } from "../src/server/concierge/engine";
+import { runConcierge, warmConcierge } from "../src/server/concierge/engine";
 import { readConcierge } from "../src/server/concierge/store";
 import { hybridSearch } from "../src/server/concierge/retrieval";
 import { customerSession } from "../src/server/customers";
 import { closeDatabase } from "../src/server/database";
 import { uiContext } from "../src/domain/concierge";
 import { formatMoney } from "../src/domain/money";
+import { manageBasket } from "../src/server/concierge/shopping";
 import type { Actor } from "../src/server/state";
 
 Object.assign(
@@ -29,6 +30,28 @@ const context = uiContext.parse({
   current_page_type: "department",
 });
 const results: Record<string, unknown>[] = [];
+let warmupMs: number | null = null;
+if (process.argv.includes("--warmup")) {
+  const at = Date.now();
+  await warmConcierge();
+  warmupMs = Date.now() - at;
+  console.log(
+    JSON.stringify({ event: "buyer.live.warmup", elapsedMs: warmupMs }),
+  );
+}
+if (process.argv.includes("--trace-model")) {
+  const transport = globalThis.fetch;
+  globalThis.fetch = async (...args) => {
+    const result = await transport(...args);
+    if (String(args[0]).includes("/chat/completions")) {
+      const body = await result.clone().json();
+      console.log(
+        JSON.stringify({ event: "buyer.live.model", choices: body.choices }),
+      );
+    }
+    return result;
+  };
+}
 async function shopper() {
   return (await customerSession({ action: "guest" })).actor;
 }
@@ -54,6 +77,7 @@ async function turn(actor: Actor, message: string) {
       price: p.price,
     })),
     toolCalls: state.messages
+      .slice(state.messages.findLastIndex((m) => m.role === "user"))
       .flatMap((m) => m.tool_calls || [])
       .map((c) => ({ name: c.function.name, arguments: c.function.arguments })),
   };
@@ -62,6 +86,7 @@ async function turn(actor: Actor, message: string) {
       event: "buyer.live.turn",
       elapsedMs: result.elapsedMs,
       status: result.status,
+      error: result.error,
       response: result.response,
       toolCalls: result.toolCalls.map((c) => c.name),
     }),
@@ -145,6 +170,16 @@ try {
       saved.view.basket.wishlist.some((v) => v.productId === p.id) &&
       saved.view.basket.cart.length === 0,
   });
+  const unrelated = (
+    await hybridSearch({ categories: ["headphones"], offset: 9, limit: 1 })
+  ).products[0];
+  if (!unrelated || unrelated.id === p.id)
+    throw new Error("Independent wishlist sentinel unavailable");
+  await manageBasket(actor, {
+    collection: "wishlist",
+    action: "add",
+    items: [{ productId: unrelated.id }],
+  });
   const changed = await turn(
     actor,
     "Actually remove it from the wishlist and put one in my cart. No checkout.",
@@ -155,6 +190,7 @@ try {
     passed:
       changed.view.turn?.status === "completed" &&
       !changed.view.basket.wishlist.some((v) => v.productId === p.id) &&
+      changed.view.basket.wishlist.some((v) => v.productId === unrelated.id) &&
       changed.view.basket.cart.some(
         (v) => v.productId === p.id && v.quantity === 1,
       ) &&
@@ -170,6 +206,7 @@ try {
     passed:
       general.view.turn?.status === "completed" &&
       general.result.response.length > 40 &&
+      /scatter|rayleigh/i.test(general.result.response) &&
       general.view.basket.cart.length === 0 &&
       general.view.basket.wishlist.length === 0 &&
       general.view.confirmations.length === 0,
@@ -188,8 +225,9 @@ const report = {
   model: process.env.CONCIERGE_MODEL,
   provider: "self_hosted",
   candidate,
+  warmupMs,
   scope:
-    "Actual local model and isolated real application database. No inference mocks, no payment calls. Six buyer-focused capabilities; not full production acceptance. First request includes uncached prompt preparation; later requests may reuse model prefix cache.",
+    "Actual local model and isolated real application database. No inference mocks, no payment calls. Five shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
   passed: results.every((r) => r.passed),
   results,
 };

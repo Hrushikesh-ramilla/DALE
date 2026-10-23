@@ -9,6 +9,23 @@ const words = (value: string): string[] =>
     .toLowerCase()
     .match(/[\p{L}\p{N}]+/gu) || [];
 const key = (value: string) => words(value).join(" ");
+/** Preserve number roles: a 128GB capacity is not model number 128. */
+function numericIdentity(value: string): {
+  measures: string[];
+  models: string[];
+} {
+  const measures: string[] = [];
+  const remainder = value
+    .toLowerCase()
+    .replace(
+      /(\d+(?:\.\d+)?)\s*(gb|tb|mb|ml|mm|cm|mah|khz|hz|watts?|w|inches|inch)\b/g,
+      (_, number: string, unit: string) => {
+        measures.push(`${number}:${unit}`);
+        return " ";
+      },
+    );
+  return { measures, models: remainder.match(/\d+/g) || [] };
+}
 
 /** Aliases are derived from the published brand vocabulary, never a product-specific
  * conversational routing table. Ambiguous initials are deliberately not resolved. */
@@ -74,6 +91,15 @@ export function identityMatcher(query: string, brands: string[]) {
     if (
       detected.size &&
       ![...detected].some((b) => key(b) === key(p.brand || ""))
+    )
+      return null;
+    const requestedNumbers = numericIdentity(query);
+    const actualNumbers = numericIdentity(`${p.name} ${p.modelName || ""}`);
+    if (
+      requestedNumbers.measures.some(
+        (n) => !actualNumbers.measures.includes(n),
+      ) ||
+      requestedNumbers.models.some((n) => !actualNumbers.models.includes(n))
     )
       return null;
     const name = [...words(p.name), ...words(p.modelName || "")];
