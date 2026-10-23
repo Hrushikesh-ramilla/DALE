@@ -237,7 +237,24 @@ export function useEditorialPageParallax(
                 { y: 0, scale: 1, ease: "none" },
               ),
           );
+        // Fonts and deferred collection content can move the footer after the
+        // first measurement. Refresh on layout changes, never on scroll frames.
+        let refreshFrame = 0;
+        let disposed = false;
+        const refresh = () => {
+          if (disposed || refreshFrame) return;
+          refreshFrame = requestAnimationFrame(() => {
+            refreshFrame = 0;
+            ScrollTrigger.refresh();
+          });
+        };
+        const observer = new ResizeObserver(refresh);
+        observer.observe(root);
+        void document.fonts.ready.then(refresh);
         return () => {
+          disposed = true;
+          observer.disconnect();
+          cancelAnimationFrame(refreshFrame);
           timelines.forEach((timeline) => {
             timeline.scrollTrigger?.kill();
             timeline.revert();
