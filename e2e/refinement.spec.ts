@@ -1117,7 +1117,7 @@ test("navigation opens on hover, survives the flyout gap and closes on leave", a
   await expect(menu).toHaveAttribute("open", "");
   await page.mouse.move(20, 500);
   await expect(menu).not.toHaveAttribute("open", "");
-  await page.getByText("Menu", { exact: true }).focus();
+  await page.locator('summary[aria-label="Main menu"]').focus();
   await page.keyboard.press("Enter");
   await expect(menu).toHaveAttribute("open", "");
   await page.keyboard.press("Escape");
