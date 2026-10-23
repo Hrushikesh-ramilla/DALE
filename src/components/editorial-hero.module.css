@@ -20,6 +20,8 @@
   isolation: isolate;
   background: #e8e3d9;
   transform-origin: center;
+  /* Keep the clip shape static: scrolling changes only the compositor transform. */
+  border-radius: 20px;
   box-shadow:
     0 2px 0 #fff9,
     0 12px 30px #353b2b24;

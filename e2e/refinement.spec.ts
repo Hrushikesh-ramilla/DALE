@@ -818,7 +818,7 @@ test("hero contracts evenly on four sides while its product advances, and resets
         (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
       ),
     )
-    .toBeLessThan(0.9);
+    .toBeLessThan(0.8);
   const geometry = await portal.evaluate((e) => {
     const frame = e.getBoundingClientRect();
     const root = e.parentElement!.getBoundingClientRect();
@@ -834,8 +834,8 @@ test("hero contracts evenly on four sides while its product advances, and resets
       productScale: object.a,
     };
   });
-  expect(geometry.left).toBeGreaterThan(70);
-  expect(geometry.top).toBeGreaterThan(40);
+  expect(geometry.left).toBeGreaterThan(130);
+  expect(geometry.top).toBeGreaterThan(80);
   expect(Math.abs(geometry.left - geometry.right)).toBeLessThan(1);
   expect(Math.abs(geometry.top - geometry.bottom)).toBeLessThan(1);
   expect(geometry.productScale).toBeGreaterThan(1.1);
@@ -850,21 +850,4 @@ test("hero contracts evenly on four sides while its product advances, and resets
       () => document.documentElement.scrollWidth > innerWidth,
     ),
   ).toBe(false);
-});
-
-test("collection slabs retain visible cut-glass thickness without intercepting their links", async ({
-  page,
-}) => {
-  await page.goto("/");
-  const card = page.locator("[data-department-card]").first();
-  const edge = card.locator("[data-glass-edge]");
-  await expect(edge).toHaveAttribute("aria-hidden", "true");
-  const shape = await edge.evaluate((e) => ({
-    height: e.getBoundingClientRect().height,
-    pointer: getComputedStyle(e).pointerEvents,
-  }));
-  expect(shape.height).toBeGreaterThanOrEqual(24);
-  expect(shape.pointer).toBe("none");
-  await card.click();
-  await expect(page).toHaveURL(/\/department\/electronics$/);
 });

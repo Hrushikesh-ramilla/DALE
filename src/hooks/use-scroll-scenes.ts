@@ -142,8 +142,8 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         });
         timeline.fromTo(
           root.querySelector("[data-hero-portal]"),
-          { scale: 1, borderRadius: 0 },
-          { scale: 0.86, borderRadius: 20, ease: "none" },
+          { scale: 1 },
+          { scale: 0.74, ease: "none" },
           0,
         );
         timeline.to(
