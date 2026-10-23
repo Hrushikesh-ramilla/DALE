@@ -152,12 +152,6 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
           { y: -38, scale: 1.03, ease: "none" },
           0,
         );
-        timeline.fromTo(
-          root.querySelector("[data-hero-world-light]"),
-          { y: -24, opacity: 0.7 },
-          { y: 42, opacity: 0.3, ease: "none" },
-          0,
-        );
         timeline.to(
           root.querySelector("[data-hero-edition]"),
           { opacity: 0, duration: 0.18, ease: "none" },

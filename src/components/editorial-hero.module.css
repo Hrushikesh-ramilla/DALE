@@ -875,13 +875,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: blur(5px);
-  opacity: 0.85;
-}
-.worldLight {
-  position: absolute;
-  inset: -60px;
-  background: linear-gradient(110deg, #eae5d99c, transparent 55%, #eae5d94d);
 }
 .hero[data-scroll-active] .worldPlane {
   will-change: transform;

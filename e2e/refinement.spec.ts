@@ -1134,6 +1134,8 @@ test("collection backdrop moves behind the hero and the brief uses the ivory the
     "true",
   );
   const world = page.locator("[data-hero-world]");
+  await expect(world.locator("img")).toHaveCSS("filter", "none");
+  await expect(world.locator("img")).toHaveCSS("opacity", "1");
   const originalY = await world.evaluate(
     (node) => new DOMMatrixReadOnly(getComputedStyle(node).transform).m42,
   );
