@@ -54,9 +54,16 @@ export function HomeOpening() {
   }, [complete, lenis]);
 
   const prepare = useCallback(async () => {
+    const world = matchMedia(
+      "(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)",
+    ).matches
+      ? [
+          `/images/editorial/luxury/collection-world-v1-${innerWidth >= 1400 ? 1600 : 800}.webp`,
+        ]
+      : [];
     await Promise.all([
       document.fonts.ready,
-      ...criticalImages.map(async (src) => {
+      ...[...criticalImages, ...world].map(async (src) => {
         const image = new window.Image();
         image.src = src;
         await image.decode().catch(() => undefined);

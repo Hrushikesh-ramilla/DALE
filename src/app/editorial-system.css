@@ -979,3 +979,147 @@ body:has(.home-opening) .site-header .brand {
     padding: 10px 16px;
   }
 }
+/* Bare wordmark; contrast follows the underlying storefront surface. */
+.site-header .brand {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 8px 0;
+  color: #eeece3;
+}
+.app-shell:has(.editorial-hero) .site-header .brand {
+  color: #292d24;
+}
+.navigation-sheet::before {
+  content: "";
+  position: absolute;
+  inset: -12px 0 auto;
+  height: 12px;
+}
+
+/* The shopping brief shares the atelier's paper, ink and olive palette. */
+.brief-menu-backdrop {
+  background: #302c255c;
+}
+.brief-menu-flyout {
+  background: #f0ede5;
+  color: #292d24;
+  color-scheme: light;
+  border: 1px solid #fff9;
+  border-radius: 8px;
+  box-shadow:
+    0 25px 65px #28271f33,
+    inset 0 1px #fff;
+}
+.brief-menu-flyout .flyout-header {
+  border-color: #8e927b40;
+  padding-block: 24px;
+}
+.brief-menu-flyout .flyout-header h3 {
+  color: #2c3026;
+  font-family: "Boska", Georgia, serif;
+  font-size: clamp(24px, 2.8vw, 36px);
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.brief-menu-flyout .flyout-subtitle,
+.brief-menu-flyout .column-eyebrow,
+.brief-menu-flyout .flyout-label,
+.brief-menu-flyout .flyout-range-label {
+  color: #626958;
+}
+.brief-menu-flyout .flyout-sparkle {
+  color: #525f43;
+  background: none;
+}
+.brief-menu-flyout .flyout-close-btn {
+  color: #414a36;
+  background: #e1e1d5;
+  border-color: #b6baa6;
+}
+.brief-menu-flyout .flyout-close-btn:hover {
+  color: #f3f0e5;
+  background: #3c4832;
+}
+.brief-menu-flyout .flyout-column input,
+.brief-menu-flyout .flyout-column textarea,
+.brief-menu-flyout .flyout-select {
+  background: #f8f6ef;
+  border: 1px solid #b9bca9;
+  border-radius: 4px;
+  color: #292f23;
+  accent-color: #465437;
+}
+.brief-menu-flyout .flyout-column input:focus,
+.brief-menu-flyout .flyout-column textarea:focus,
+.brief-menu-flyout .flyout-select:focus {
+  border-color: #47563a;
+  outline: 2px solid #6d7f4c40;
+  outline-offset: 1px;
+}
+.brief-menu-flyout option {
+  background: #f8f6ef;
+  color: #292f23;
+}
+.brief-menu-flyout input::placeholder,
+.brief-menu-flyout textarea::placeholder {
+  color: #797e70;
+  opacity: 1;
+}
+.brief-menu-flyout .money-input > span {
+  color: #5b644e;
+}
+.brief-menu-flyout .pill-btn {
+  background: transparent;
+  color: #5b644e;
+  border-color: #a6af964d;
+  border-radius: 3px;
+  transition:
+    background 180ms,
+    color 180ms;
+}
+.brief-menu-flyout .pill-btn:hover {
+  background: #e1e4d5;
+  border-color: #899575;
+  color: #303c25;
+}
+.brief-menu-flyout .pill-btn.active {
+  background: #39462d;
+  color: #f6f2e6;
+  border-color: #39462d;
+}
+.brief-menu-flyout .flyout-tip,
+.brief-menu-flyout .flyout-range-wrap {
+  color: #636c56;
+  background: #e5e5d9;
+  border-color: #a0ad8840;
+  border-radius: 4px;
+}
+.brief-menu-flyout .flyout-checkbox-label {
+  color: #434f36;
+}
+.brief-menu-flyout .flyout-identify-btn {
+  background: transparent;
+  border-color: #adb69b;
+  color: #435332;
+  border-radius: 3px;
+}
+.brief-menu-flyout .flyout-footer {
+  background: #e6e7db;
+  border-color: #89967540;
+}
+.brief-menu-flyout .flyout-foot-left,
+.brief-menu-flyout .flyout-count {
+  color: #606b51;
+}
+.brief-menu-flyout .flyout-submit-btn {
+  background: #303c25;
+  color: #f3f0e6;
+  border-color: #303c25;
+  border-radius: 4px;
+}
+.brief-menu-flyout .flyout-submit-btn:hover {
+  background: #4b5b3c;
+}
