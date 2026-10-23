@@ -915,3 +915,14 @@ body:has(.home-opening) .site-header .brand {
   outline: 2px solid white;
   outline-offset: 4px;
 }
+.home-opening {
+  background: transparent;
+}
+.app-shell:has(.editorial-hero) {
+  background: #d9d9ce;
+}
+.cinematic-intro-root[data-step="7"] text,
+.cinematic-intro-root[data-step="8"] text {
+  fill: #292c24;
+  transition: fill 600ms ease;
+}

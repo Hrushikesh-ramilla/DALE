@@ -9,9 +9,10 @@ const criticalImages = [
   "/images/editorial/atelier-light.webp",
   "/images/editorial/luxury/breguet-experimentale-1.webp",
 ];
+let openedInPage = false;
 
 export function HomeOpening() {
-  const [complete, setComplete] = useState(false);
+  const [complete, setComplete] = useState(() => openedInPage);
   const { lenis } = useSmoothScroll();
   useEffect(() => {
     if (complete) return;
@@ -71,6 +72,7 @@ export function HomeOpening() {
   const finish = useCallback(() => setComplete(true), []);
   useEffect(() => {
     if (!complete) return;
+    openedInPage = true;
     const frame = requestAnimationFrame(() => {
       ScrollTrigger.refresh();
       window.dispatchEvent(new Event("dale:home-ready"));

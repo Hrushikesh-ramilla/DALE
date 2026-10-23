@@ -39,7 +39,7 @@ export function CompactNavigation({ children }: { children: ReactNode }) {
           );
       }}
     >
-      <summary aria-label="Main menu">
+      <summary aria-label="Main menu" data-agent-control="Open main menu">
         <span>Menu</span>
         <span className="menu-lines" aria-hidden="true">
           <i />
