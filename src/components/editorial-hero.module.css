@@ -164,6 +164,7 @@
   position: relative;
   display: grid;
   place-items: center;
+  grid-template-rows: minmax(0, 1fr);
   transform-style: preserve-3d;
 }
 .frame {
@@ -173,6 +174,7 @@
   pointer-events: none;
 }
 .object {
+  min-height: 0;
   position: relative;
   width: 100%;
   height: 90%;
@@ -633,5 +635,94 @@
   }
   .displayShell {
     transform: none;
+  }
+}
+.scrollTrack {
+  position: relative;
+}
+.scrollCue {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+}
+.progressRail {
+  width: 85px;
+  height: 1px;
+  background: #393c2e33;
+  overflow: hidden;
+}
+.progressRail > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #393c2e;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+@media (min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference) {
+  .scrollTrack {
+    height: calc(210svh - 78px);
+  }
+  .hero.hero {
+    position: sticky;
+    top: 78px;
+    height: calc(100svh - 78px);
+    min-height: 0;
+  }
+  .copy {
+    padding: clamp(56px, 8svh, 98px) 0 45px;
+  }
+  .hero .copy h2 {
+    font-size: clamp(104px, min(14vw, 20svh), 220px);
+    margin: 30px 0 20px;
+  }
+  .display {
+    top: 8%;
+  }
+  .stage {
+    height: clamp(320px, 48svh, 520px);
+  }
+  .baseline {
+    bottom: 22px;
+  }
+}
+@media (min-width: 1000px) and (min-height: 650px) and (max-height: 800px) and (prefers-reduced-motion: no-preference) {
+  .copy {
+    padding-top: 60px;
+    padding-bottom: 12px;
+  }
+  .hero .copy h2 {
+    margin: 25px 0 15px;
+  }
+  .copy p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 16px 0;
+  }
+  .actions button {
+    min-height: 44px;
+    padding-block: 12px;
+  }
+  .note {
+    font-size: 8px;
+    margin-top: 18px;
+  }
+  .baseline {
+    bottom: 18px;
+    padding-top: 12px;
+    font-size: 7px;
+  }
+}
+@media (max-width: 760px) {
+  .progressRail {
+    width: 40px;
+  }
+  .scrollCue {
+    gap: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .progressRail {
+    display: none;
   }
 }

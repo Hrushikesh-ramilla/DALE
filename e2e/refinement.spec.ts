@@ -524,3 +524,113 @@ test("opening parallax responds to the first short scroll", async ({
     )
     .toBeLessThan(before - 4);
 });
+
+test("hero holds its layered scene through a viewport of scrolling", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  await expect(page.locator("[data-hero-track]")).toHaveAttribute(
+    "data-hero-held",
+    "true",
+  );
+  await page.evaluate(() => window.scrollTo({ top: 300, behavior: "instant" }));
+  await expect
+    .poll(async () =>
+      Math.round((await page.locator(".editorial-hero").boundingBox())!.y),
+    )
+    .toBe(78);
+  const before = await page
+    .locator("[data-hero-display]")
+    .evaluate((e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42);
+  await page.evaluate(() => window.scrollTo({ top: 950, behavior: "instant" }));
+  await expect
+    .poll(async () =>
+      Math.round((await page.locator(".editorial-hero").boundingBox())!.y),
+    )
+    .toBe(78);
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-hero-display]")
+        .evaluate(
+          (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42,
+        ),
+    )
+    .toBeGreaterThan(before + 20);
+  const caption = await page
+    .locator("[data-hero-depth]")
+    .locator("..")
+    .locator('a[href^="/product/"]')
+    .first()
+    .boundingBox();
+  expect(caption!.y).toBeGreaterThan(78);
+  expect(caption!.y + caption!.height).toBeLessThan(1000);
+});
+
+test("agent and closing invitation hold with opposing layers and collapse for reduced motion", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  for (const [kind, surface, foreground] of [
+    ["agent", ".hero-dale-bar", "[data-agent-parallax-title]"],
+    ["footer", ".footer-invitation", ".footer-invitation p"],
+  ]) {
+    const track = page.locator(`[data-editorial-scroll-track="${kind}"]`);
+    await expect(track).toHaveAttribute("data-parallax-ready", "true");
+    const top = await track.evaluate(
+      (e) => e.getBoundingClientRect().top + scrollY - 78,
+    );
+    await page.evaluate(
+      (y) => scrollTo({ top: y + 50, behavior: "instant" }),
+      top,
+    );
+    await expect
+      .poll(async () =>
+        Math.round((await page.locator(surface).boundingBox())!.y),
+      )
+      .toBe(78);
+    const before = await page
+      .locator(foreground)
+      .evaluate(
+        (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42,
+      );
+    await page.evaluate(
+      (y) => scrollTo({ top: y + 350, behavior: "instant" }),
+      top,
+    );
+    await expect
+      .poll(() =>
+        page
+          .locator(foreground)
+          .evaluate(
+            (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42,
+          ),
+      )
+      .toBeLessThan(before - 25);
+    await expect
+      .poll(async () =>
+        Math.round((await page.locator(surface).boundingBox())!.y),
+      )
+      .toBe(78);
+  }
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(page.locator("[data-hero-track]")).not.toHaveAttribute(
+    "data-hero-held",
+    "true",
+  );
+  await expect(
+    page.locator('[data-editorial-scroll-track="footer"]'),
+  ).not.toHaveAttribute("data-parallax-ready", "true");
+  expect(
+    await page
+      .locator(".footer-invitation")
+      .evaluate((e) => getComputedStyle(e).position),
+  ).toBe("relative");
+  expect(
+    await page
+      .locator("[data-agent-parallax-title]")
+      .evaluate((e) => getComputedStyle(e).transform),
+  ).toBe("none");
+});

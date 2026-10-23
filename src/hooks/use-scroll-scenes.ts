@@ -109,41 +109,137 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
     media.add(
-      "(min-width: 1000px) and (prefers-reduced-motion: no-preference)",
+      "(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)",
       () => {
         const root = ref.current!;
+        const track = root.closest<HTMLElement>("[data-hero-track]")!;
+        track.dataset.heroHeld = "true";
         const timeline = gsap.timeline({
           scrollTrigger: {
-            trigger: root,
+            trigger: track,
             start: "top 180px",
-            end: "bottom top",
+            end: "bottom bottom",
             scrub: true,
           },
         });
+        timeline.to(
+          root.querySelector("[data-hero-edition]"),
+          { opacity: 0, duration: 0.18, ease: "none" },
+          0,
+        );
         timeline.fromTo(
           root.querySelector("[data-hero-copy]"),
-          { y: 0 },
-          { y: -110, ease: "none" },
+          { y: 0, x: 0 },
+          { y: -75, x: -28, ease: "none" },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-display]"),
-          { y: 0, rotation: 0 },
-          { y: 125, rotation: 1.2, ease: "none" },
+          { y: 0, x: 0, rotation: 0, scale: 0.97 },
+          {
+            y: () => Math.min(65, innerHeight * 0.055),
+            x: 24,
+            rotation: 2,
+            scale: 1.04,
+            ease: "none",
+          },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-backdrop]"),
-          { y: 0, scale: 1.04 },
-          { y: -90, scale: 1.12, ease: "none" },
+          { y: 0, x: 0, scale: 1.04 },
+          { y: -120, x: -30, scale: 1.22, ease: "none" },
+          0,
+        );
+        timeline.fromTo(
+          root.querySelector("[data-hero-progress]"),
+          { scaleX: 0 },
+          { scaleX: 1, ease: "none" },
           0,
         );
         return () => {
           timeline.scrollTrigger?.kill();
           timeline.revert();
+          delete track.dataset.heroHeld;
         };
       },
     );
     return () => media.revert();
   }, [ref]);
+}
+
+/** Native sticky sections provide the hold; only their foreground layers move. */
+export function useEditorialPageParallax(
+  ref: RefObject<HTMLDivElement | null>,
+  route: string,
+) {
+  useEffect(() => {
+    const root = ref.current;
+    if (!root) return;
+    gsap.registerPlugin(ScrollTrigger);
+    const media = gsap.matchMedia();
+    media.add(
+      "(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)",
+      () => {
+        const tracks = Array.from(
+          root.querySelectorAll<HTMLElement>("[data-editorial-scroll-track]"),
+        );
+        const timelines = tracks.map((track) => {
+          const agent = track.dataset.editorialScrollTrack === "agent";
+          const surface = track.firstElementChild as HTMLElement;
+          const timeline = gsap.timeline({
+            scrollTrigger: {
+              trigger: track,
+              start: "top 78px",
+              end: () => `bottom ${78 + surface.offsetHeight}px`,
+              scrub: true,
+              invalidateOnRefresh: true,
+            },
+          });
+          timeline.fromTo(
+            surface.querySelector(agent ? "[data-agent-parallax-title]" : "p"),
+            { x: 0, y: 0 },
+            { x: agent ? -25 : 25, y: -65, ease: "none" },
+            0,
+          );
+          timeline.fromTo(
+            surface.querySelector(
+              agent ? "[data-agent-parallax-response]" : "button",
+            ),
+            { x: 0, y: 0 },
+            { x: agent ? 15 : 0, y: agent ? 65 : 40, ease: "none" },
+            0,
+          );
+          track.dataset.parallaxReady = "true";
+          return timeline;
+        });
+        const signature = root.querySelector(".footer-signature");
+        if (signature)
+          timelines.push(
+            gsap
+              .timeline({
+                scrollTrigger: {
+                  trigger: signature,
+                  start: "top bottom",
+                  end: "bottom bottom",
+                  scrub: true,
+                },
+              })
+              .fromTo(
+                signature.querySelector("svg"),
+                { y: 100, scale: 0.94 },
+                { y: 0, scale: 1, ease: "none" },
+              ),
+          );
+        return () => {
+          timelines.forEach((timeline) => {
+            timeline.scrollTrigger?.kill();
+            timeline.revert();
+          });
+          tracks.forEach((track) => delete track.dataset.parallaxReady);
+        };
+      },
+    );
+    return () => media.revert();
+  }, [ref, route]);
 }
