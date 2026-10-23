@@ -5,7 +5,6 @@ import { ArrowRight, Check, ShieldCheck, ShoppingBag, Sparkles } from "lucide-re
 import type { Product } from "@/domain/catalog";
 import {
   leafTitles,
-  leafToParentCategory,
   getDepartmentForLeaf,
   type LeafTypeKey,
 } from "@/domain/departments";
@@ -13,17 +12,19 @@ import { ProductArt } from "./product-art";
 import { Breadcrumbs } from "./breadcrumbs";
 import { LuxuryArchitectureCard } from "./luxury-architecture-card";
 import { useStore } from "./store-context";
+import { useCopilot } from "./copilot/copilot-context";
 import { formatMoney } from "@/domain/money";
 
 export function ProductDetailView({ product }: { product: Product }) {
   const store = useStore();
+  const copilot = useCopilot();
 
   const leaf = (product.attributes?.leafType as LeafTypeKey) || (product.category as LeafTypeKey);
   const department = getDepartmentForLeaf(leaf);
   const categoryTitle = leafTitles[leaf] || product.category;
 
   return (
-    <div className="pdp-page">
+    <div className="pdp-page" data-product-id={product.id}>
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
@@ -82,12 +83,7 @@ export function ProductDetailView({ product }: { product: Product }) {
               type="button"
               className="pdp-button-concierge"
               onClick={() => {
-                store.setNotice(`DALE Concierge loaded specifications for ${product.name}.`);
-                const daleInput = document.querySelector<HTMLInputElement>(".hero-dale-input-wrap input");
-                if (daleInput) {
-                  daleInput.value = `Tell me about the craftsmanship and details of ${product.name} by ${product.brand}`;
-                  daleInput.focus();
-                }
+                void copilot.sendMessage(`Explain the recorded facts and missing information for product ${product.id}.`);
               }}
             >
               <Sparkles size={16} />
@@ -99,10 +95,10 @@ export function ProductDetailView({ product }: { product: Product }) {
           <div className="pdp-guarantee-box">
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontWeight: 700, marginBottom: 4 }}>
               <ShieldCheck size={16} color="#0070ba" />
-              <span>PayPal Verified Merchant & Buyer Protection</span>
+              <span>PayPal sandbox checkout</span>
             </div>
             <p style={{ margin: 0, fontSize: 12 }}>
-              Every item is verified against recorded manufacturer specifications. 14-day hassle-free returns with recorded serial & provenance matching.
+              Review the recorded product specifications and missing facts before approval. The demo merchant offers a 30-day return request policy from recorded delivery, with review where needed. Fulfillment is simulated.
             </p>
           </div>
         </div>

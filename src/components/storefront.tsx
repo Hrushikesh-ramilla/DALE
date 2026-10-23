@@ -6,7 +6,7 @@ import { CatalogEvidence } from "./catalog-evidence";
 import { LuxuryArchitectureCard } from "./luxury-architecture-card";
 import { categoryTitles as titles, categoryIds, departments, isRetailCategory, lifestyleProfile } from "@/domain/departments";
 import { CustomerEntry } from "./customer-entry";
-import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
@@ -195,6 +195,9 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   );
   const [session, setSession] = useState<Session | null>(null),
     [modal, setModal] = useState<Modal>(null);
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent("dale:session-changed"));
+  }, [session?.actor.userId]);
   const [restoring, setRestoring] = useState(true);
   const [showIntro, setShowIntro] = useState(true);
   const [logoSettled, setLogoSettled] = useState(false);
@@ -480,8 +483,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
       setModal({ kind: "quote", quote });
     });
   }
-  const storeContextValue: StoreContextType = useMemo(
-    () => ({
+  const storeContextValue: StoreContextType = {
       session,
       isBuyer,
       restoring,
@@ -495,9 +497,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
       setModel,
       budget,
       setBudget,
-    }),
-    [session, isBuyer, restoring, busy, model, budget],
-  );
+    };
   function openDepartment(id: string) {
     setDepartmentId(id);
     const categories = departments.find(department => department.id === id)?.categories.filter(category => catalogCount(category) > 0) || [];
