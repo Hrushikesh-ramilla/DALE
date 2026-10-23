@@ -89,6 +89,7 @@ export type ShoppingBrief = Omit<
   "confirmConstraints"
 > & { confirmConstraints?: boolean };
 export type PurchaseBrief = {
+  requestId?: string;
   buyerId: string;
   version: number;
   input: ShoppingBrief;

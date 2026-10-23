@@ -18,7 +18,11 @@ const started = Date.now();
 const results = [];
 try {
   for (const query of cases) {
-    const result = await hybridSearch({ ...query, limit: 5 });
+    const result = await hybridSearch({
+      ...query,
+      match_mode: "semantic",
+      limit: 5,
+    });
     results.push({
       query,
       mode: result.mode,

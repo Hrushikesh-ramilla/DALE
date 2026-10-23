@@ -67,10 +67,12 @@ try {
     elapsedMs: lookup.elapsedMs,
     status: lookup.status,
     error: lookup.error,
+    toolCalls: lookup.view.turn?.calls,
     reply: lookup.reply,
     passed:
       lookup.status === "completed" &&
       lookup.reply?.includes(money) &&
+      lookup.reply?.includes(product.source) &&
       lookup.view.products.some((p) => p.id === product.id),
   });
   if (lookup.status === "completed") {
@@ -83,6 +85,7 @@ try {
       elapsedMs: add.elapsedMs,
       status: add.status,
       error: add.error,
+      toolCalls: add.view.turn?.calls,
       reply: add.reply,
       cart: add.view.basket.cart.map((i) => ({
         productId: i.productId,

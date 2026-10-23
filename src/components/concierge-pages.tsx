@@ -354,60 +354,122 @@ function Page() {
             </button>
           )}
           {entries?.length === 0 && <p>Your {collection} is empty.</p>}
-          {entries?.map((i) => (
-            <article key={i.productId} data-product-id={i.productId}>
-              <h2>
-                {i.product ? (
-                  <Link href={`/product/${i.productId}`}>{i.product.name}</Link>
-                ) : (
-                  "This product is no longer published"
-                )}
-              </h2>
-              <p>{i.product ? formatMoney(i.product.price) : "Unavailable"}</p>
-              {!isWishlist && (
-                <label>
-                  Quantity{" "}
-                  <input
-                    aria-label={`Quantity ${i.productId}`}
-                    type="number"
-                    min="1"
-                    max="99"
-                    value={"quantity" in i ? (i.quantity as number) : 1}
-                    onChange={(e) => {
-                      const quantity = Number(e.target.value);
-                      if (quantity > 0)
+          {entries?.map((i) => {
+            const cartItem = c.state?.basket.cart.find(
+              (item) => item.productId === i.productId,
+            );
+            return (
+              <article key={i.productId} data-product-id={i.productId}>
+                <h2>
+                  {i.product ? (
+                    <Link href={`/product/${i.productId}`}>
+                      {i.product.name}
+                    </Link>
+                  ) : (
+                    "This product is no longer published"
+                  )}
+                </h2>
+                <p>
+                  {i.product ? formatMoney(i.product.price) : "Unavailable"}
+                </p>
+                {!isWishlist && (
+                  <label>
+                    Group offer{" "}
+                    <select
+                      aria-label={`Group offer ${i.productId}`}
+                      value={cartItem?.groupId || ""}
+                      onChange={(e) =>
                         void c
                           .mutateCollection(
                             "cart",
-                            "set",
+                            "select_group",
                             i.productId,
-                            quantity,
+                            1,
+                            e.target.value || null,
                           )
-                          .catch(() => {});
-                    }}
-                  />
-                </label>
-              )}
-              <button
-                onClick={() =>
-                  void c
-                    .mutateCollection(collection, "remove", i.productId)
-                    .catch(() => {})
-                }
-              >
-                Remove
-              </button>
-              {isWishlist && i.product && (
-                <button onClick={() => c.addToCart(i.product!)}>
-                  Add to cart
+                          .catch(() => {})
+                      }
+                    >
+                      <option value="">Regular offer</option>
+                      {c.state?.basket.availableGroups
+                        .filter((g) => g.productId === i.productId)
+                        .map((g) => (
+                          <option key={g.id} value={g.id}>
+                            {g.status === "ready"
+                              ? "Ready"
+                              : "Waiting for members"}{" "}
+                            ·{" "}
+                            {g.amount === undefined
+                              ? "Amount unavailable"
+                              : formatMoney(g.amount)}{" "}
+                            · {g.id.slice(0, 8)}
+                          </option>
+                        ))}
+                      {cartItem?.groupId &&
+                        !c.state?.basket.availableGroups.some(
+                          (g) => g.id === cartItem.groupId,
+                        ) && (
+                          <option value={cartItem.groupId}>
+                            Unavailable group — choose a fresh offer
+                          </option>
+                        )}
+                    </select>
+                    {cartItem?.selectedGroup && (
+                      <span>
+                        {" "}
+                        {cartItem.selectedGroup.ready
+                          ? "Locked group price is applied when you review checkout."
+                          : "Checkout waits for an eligible ready group."}
+                      </span>
+                    )}
+                  </label>
+                )}
+                {!isWishlist && (
+                  <label>
+                    Quantity{" "}
+                    <input
+                      aria-label={`Quantity ${i.productId}`}
+                      type="number"
+                      min="1"
+                      max="99"
+                      value={"quantity" in i ? (i.quantity as number) : 1}
+                      onChange={(e) => {
+                        const quantity = Number(e.target.value);
+                        if (quantity > 0)
+                          void c
+                            .mutateCollection(
+                              "cart",
+                              "set",
+                              i.productId,
+                              quantity,
+                            )
+                            .catch(() => {});
+                      }}
+                    />
+                  </label>
+                )}
+                <button
+                  onClick={() =>
+                    void c
+                      .mutateCollection(collection, "remove", i.productId)
+                      .catch(() => {})
+                  }
+                >
+                  Remove
                 </button>
-              )}
-            </article>
-          ))}
+                {isWishlist && i.product && (
+                  <button onClick={() => c.addToCart(i.product!)}>
+                    Add to cart
+                  </button>
+                )}
+              </article>
+            );
+          })}
           {!isWishlist && c.state && (
             <>
               <p>
-                Subtotal: {formatMoney(c.state.basket.subtotal)} · Recorded
+                Regular-price subtotal: {formatMoney(c.state.basket.subtotal)} ·
+                Selected group discounts appear in checkout review. Recorded
                 sandbox offers
               </p>
               <button

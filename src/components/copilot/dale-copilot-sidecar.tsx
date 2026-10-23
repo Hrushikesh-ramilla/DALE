@@ -131,6 +131,22 @@ export function DaleCopilotSidecar() {
                 </div>
               </div>
             ))}
+            {c.state?.catalog_match_status === "not_found" && (
+              <p className="dale-action-card">
+                No matching product was found under the requested identity and
+                filters.
+              </p>
+            )}
+            {c.state?.catalog_match_status === "choose_variant" && (
+              <p className="dale-action-card">
+                Matching variants — choose the exact product before adding it.
+              </p>
+            )}
+            {c.state?.catalog_match_status === "semantic_candidates" && (
+              <p className="dale-action-card">
+                Suggested candidates for your preferences.
+              </p>
+            )}
             {c.state?.products.length ? (
               <section aria-label="Retrieved catalog products">
                 {c.state.products.map((p) => (

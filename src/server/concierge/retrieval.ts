@@ -4,6 +4,7 @@ import type { Product } from "@/domain/catalog";
 import { searchConstraints, type SearchConstraints } from "@/domain/concierge";
 import { conciergeDatabase } from "./store";
 import { classifyMovement, recordedAttributes } from "@/domain/catalog-derived";
+import { identityMatcher } from "./identity";
 
 export function productDocument(p: Product) {
   return JSON.stringify({
@@ -242,19 +243,20 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       clauses.push(
         `(p.record->'attributes'->>${bind(key)} IS NOT NULL AND p.record->'attributes'->>${bind(key)}<>${bind(String(value))})`,
       );
+  const useVectors = Boolean(c.query.trim() && c.match_mode === "semantic");
   const rows = await db.query<{
     record: Product;
     vector: number[] | null;
     content_hash: string | null;
     model: string | null;
   }>(
-    `SELECT p.record || jsonb_build_object('price',p.price) AS record,e.vector,e.content_hash,e.model FROM catalog_products p LEFT JOIN concierge_embeddings e ON e.product_id=p.id WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
+    `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? "e.vector,e.content_hash,e.model" : "NULL AS vector,NULL AS content_hash,NULL AS model"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
     bindings,
   );
   let mode = "structured";
   let degradation: string | null = null;
   let queryVector: number[] | undefined;
-  if (c.query.trim()) {
+  if (c.query.trim() && c.match_mode === "semantic") {
     if (process.env.CONCIERGE_EMBEDDING_MODEL) {
       try {
         [queryVector] = await embed([c.query], signal, "query");
@@ -276,7 +278,15 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       .toLocaleLowerCase()
       .normalize("NFKC")
       .match(/[\p{L}\p{N}]+/gu) || [];
-  const ranked = rows.rows
+  const matchIdentity =
+    c.query.trim() && c.match_mode === "identity"
+      ? identityMatcher(
+          c.query,
+          rows.rows.map((r) => r.record.brand || ""),
+        )
+      : null;
+  if (matchIdentity) mode = "identity";
+  let ranked = rows.rows
     .filter(({ record }) => {
       const positive = c.attributes.movement_class,
         negative = c.exclude_attributes.movement_class;
@@ -290,6 +300,7 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       );
     })
     .map((row) => {
+      const identity = matchIdentity?.(row.record);
       const text = productDocument(row.record)
         .toLocaleLowerCase()
         .normalize("NFKC");
@@ -304,15 +315,27 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       const semantic = fresh ? cosine(queryVector!, row.vector!) : null;
       return {
         product: row.record,
-        score: semantic === null ? lexical : 0.35 * lexical + 0.65 * semantic,
-        eligible:
-          !terms.length ||
-          lexical === 1 ||
-          (semantic !== null && semantic > 0.25),
+        score: matchIdentity
+          ? identity?.score || 0
+          : semantic === null
+            ? lexical
+            : 0.35 * lexical + 0.65 * semantic,
+        match_kind: matchIdentity
+          ? identity?.kind || "none"
+          : c.query.trim()
+            ? "semantic_candidate"
+            : "structured",
+        eligible: matchIdentity
+          ? Boolean(identity)
+          : !terms.length ||
+            lexical === 1 ||
+            (semantic !== null && semantic > 0.25),
         semantic: semantic !== null,
       };
     })
     .filter((r) => r.eligible);
+  if (matchIdentity && ranked.some((r) => r.match_kind === "identity"))
+    ranked = ranked.filter((r) => r.match_kind === "identity");
   if (
     queryVector &&
     rows.rows.some(
@@ -341,6 +364,12 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
     total: ranked.length,
     constraints: c,
     mode,
+    match_scope: matchIdentity
+      ? "Product identity lookup only. Approximate spelling matches are candidates requiring variant confirmation; no semantic substitutes are included. An empty result means this requested identity was not found under the active constraints."
+      : "Descriptive candidates, not proof of an exact requested product identity.",
+    identity_matches: ranked
+      .slice(c.offset, c.offset + c.limit)
+      .map((r) => ({ product_id: r.product.id, kind: r.match_kind })),
     degradation,
     price_origin: "DALE sandbox offers",
     currency: "USD",

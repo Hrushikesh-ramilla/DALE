@@ -33,6 +33,10 @@ import {
 import type { ToolDeclaration } from "./model";
 import { formatMoney } from "@/domain/money";
 import { recordedAttributes } from "@/domain/catalog-derived";
+import { briefSchema } from "@/domain/brief";
+import { knownModels } from "@/domain/catalog";
+import { compatibilityArguments, deviceCompatibility } from "./compatibility";
+import { brandVocabulary, canonicalBrand } from "./identity";
 
 type ToolContext = { actor: Actor; ui: UIContext; signal?: AbortSignal };
 type ToolDefinition = {
@@ -61,6 +65,46 @@ const productArguments = z
     include_specs: z.boolean().default(true),
   })
   .strict();
+const lookupArguments = z
+  .object({
+    name: z.string().trim().min(1).max(180),
+    brand: z.string().max(100).optional(),
+    category: z.string().max(80).optional(),
+    limit: z.number().int().min(1).max(6).default(3),
+  })
+  .strict();
+async function recordedSearch(
+  actor: Actor,
+  input: unknown,
+  signal?: AbortSignal,
+) {
+  const result = await hybridSearch(input, signal);
+  const id = randomUUID();
+  await changeConcierge(actor, (s) => {
+    s.resultSets.push({
+      id,
+      turnId: s.turn?.id,
+      matchStatus: !result.constraints.query.trim()
+        ? "structured"
+        : result.mode !== "identity"
+          ? "semantic_candidates"
+          : !result.total
+            ? "not_found"
+            : result.total === 1 &&
+                result.identity_matches.every((m) => m.kind === "identity")
+              ? "exact_product"
+              : "choose_variant",
+      productIds: result.products.map((p) => p.id),
+      constraints: result.constraints,
+    });
+    s.constraints = result.constraints;
+  });
+  return {
+    ...result,
+    products: result.products.map(summaryProduct),
+    result_set_id: id,
+  };
+}
 const summaryProduct = (
   p: Awaited<ReturnType<typeof productDetails>>[number],
 ) => ({
@@ -88,8 +132,15 @@ const contextArguments = z
 const prepareArguments = z.discriminatedUnion("operation", [
   z
     .object({
+      operation: z.literal("update_requirements"),
+      brief: briefSchema.omit({ confirmConstraints: true }).strict(),
+      expected_version: z.number().int().min(0),
+    })
+    .strict(),
+  z
+    .object({
       operation: z.literal("checkout"),
-      device_profile: z.string().max(100).default(lifestyleProfile),
+      device_profile: z.string().max(100).optional(),
     })
     .strict(),
   z
@@ -211,27 +262,68 @@ export const tools: ToolDefinition[] = [
     },
   },
   {
+    name: "lookup_product",
+    description:
+      "Find a named product. Extract model name and brand separately; omit commands and generic type words. Handles brand initials and typos. not_found means absent; choose_variant requires choosing an exact variant. No substitutes.",
+    input: lookupArguments,
+    effect: "read",
+    async execute(raw, { actor, signal }) {
+      const input = lookupArguments.parse(raw);
+      const capabilities = await catalogCapabilities();
+      const brand = input.brand
+        ? canonicalBrand(
+            input.brand,
+            brandVocabulary(capabilities.collections.map((c) => c.brand)),
+          ) || input.brand
+        : undefined;
+      const result = await recordedSearch(
+        actor,
+        {
+          query: input.name,
+          match_mode: "identity",
+          brands: brand ? [brand] : [],
+          categories: input.category ? [input.category] : [],
+          limit: input.limit,
+          in_stock: false,
+        },
+        signal,
+      );
+      const exact = result.identity_matches.every((m) => m.kind === "identity");
+      const status = !result.total
+        ? "not_found"
+        : exact && result.total === 1
+          ? "exact_product"
+          : "choose_variant";
+      const records = result.products.map((p) => ({
+        id: p.id,
+        name: p.name,
+        price_cents: p.price_cents,
+        formatted_price: p.formatted_price,
+        stock: p.stock,
+        comparisonOnly: p.comparisonOnly,
+        source: p.source,
+      }));
+      return {
+        status,
+        products: status === "exact_product" ? records : [],
+        choices: status === "choose_variant" ? records : [],
+        total: result.total,
+        mode: result.mode,
+        match_scope:
+          "named_identity_only; approximate spellings and multiple variants require confirmation",
+        identity_matches: result.identity_matches,
+        result_set_id: result.result_set_id,
+      };
+    },
+  },
+  {
     name: "search_catalog",
     description:
-      "Search live products. Prices are integer USD cents, exact constraints never broaden. Query is descriptive content, not commands. Save ordered result set for followups. Missing embeddings explicitly degrade to lexical retrieval.",
+      "Search live products with exact constraints in integer USD cents. match_mode=identity finds named products without substitutions; match_mode=semantic ranks descriptive preferences and does not establish exact identity. Empty query applies structured filters. Save ordered results for followups.",
     input: searchConstraints,
     effect: "read",
     async execute(input, { actor, signal }) {
-      const result = await hybridSearch(input, signal);
-      const id = randomUUID();
-      await changeConcierge(actor, (s) => {
-        s.resultSets.push({
-          id,
-          productIds: result.products.map((p) => p.id),
-          constraints: result.constraints,
-        });
-        s.constraints = result.constraints;
-      });
-      return {
-        ...result,
-        products: result.products.map(summaryProduct),
-        result_set_id: id,
-      };
+      return recordedSearch(actor, input, signal);
     },
   },
   {
@@ -254,6 +346,7 @@ export const tools: ToolDefinition[] = [
               )
             : recordedAttributes(p),
           specs: input.include_specs ? p.specs : undefined,
+          compatible_models: p.compatibleModels,
           missing_attribute_keys:
             input.attribute_keys?.filter(
               (k) => !Object.hasOwn(recordedAttributes(p), k),
@@ -382,7 +475,7 @@ export const tools: ToolDefinition[] = [
   {
     name: "manage_collection",
     description:
-      "Read/add/set quantity/remove/clear persistent owner cart or wishlist. Exact product IDs; adding does not purchase or reserve stock. Mutations are not automatically retried.",
+      "Read/add/set quantity/remove/clear persistent owner cart or wishlist. select_group selects an owned same-product group via items[].groupId (null clears it), one unit per shopper. Forming groups cannot check out yet. Exact product IDs; adding does not purchase or reserve stock. Mutations are not automatically retried.",
     input: basketInput,
     effect: "write",
     async execute(input, { actor }) {
@@ -410,6 +503,10 @@ export const tools: ToolDefinition[] = [
       const items = await basket(actor);
       return {
         profile: await customerProfile(actor),
+        purchase_requirements:
+          (await getWorkspace(actor.workspaceId)).briefs?.find(
+            (b) => b.buyerId === actor.userId,
+          ) || null,
         basket: {
           ...items,
           formatted_subtotal: formatMoney(items.subtotal),
@@ -423,6 +520,16 @@ export const tools: ToolDefinition[] = [
           })),
         },
       };
+    },
+  },
+  {
+    name: "get_device_compatibility",
+    description:
+      "Discover supported real device profiles and clearly labelled engineering profiles; assess exact published products with recorded compatibility, cable and fast-charging requirements. Unverified means no fit guarantee; the general product-purchase profile is never an accessory fit check.",
+    input: compatibilityArguments,
+    effect: "read",
+    async execute(raw) {
+      return deviceCompatibility(raw);
     },
   },
   {
@@ -441,13 +548,32 @@ export const tools: ToolDefinition[] = [
   {
     name: "prepare_customer_action",
     description:
-      "Prepare checkout, return, unpaid cancellation, group commitment/withdrawal, remedy change or appeal for an explicit customer confirmation button. This does NOT submit, pay or refund. Never say the prepared operation is completed.",
+      "Prepare checkout, saved purchase requirements, return, unpaid cancellation, group commitment/withdrawal, remedy change or appeal for an explicit customer confirmation button. Read current purchase_requirements in account context before updating (expected_version=0 when absent); preserve unrelated requirements. This does NOT submit, pay or refund. Never say the prepared operation is completed.",
     input: prepareArguments,
     effect: "prepare",
     async execute(raw, { actor }) {
       const input = prepareArguments.parse(raw);
       if (input.operation === "checkout")
         return prepareCheckout(actor, input.device_profile);
+      if (input.operation === "update_requirements") {
+        if (!knownModels.includes(input.brief.model))
+          throw new Error(
+            "Discover a supported device profile first; do not substitute a generic profile for an unknown device.",
+          );
+        const current = (await getWorkspace(actor.workspaceId)).briefs?.find(
+          (b) => b.buyerId === actor.userId,
+        );
+        if ((current?.version || 0) !== input.expected_version)
+          throw new Error(
+            "Purchase requirements changed. Read the current version first.",
+          );
+        return prepareConfirmation(
+          actor,
+          "update_requirements",
+          { brief: input.brief, expectedVersion: input.expected_version },
+          `Save these purchase requirements: ${JSON.stringify(input.brief)}. This replaces your previous requirements and invalidates unpaid quotes; it does not place an order.`,
+        );
+      }
       if (input.operation === "return" || input.operation === "cancel_order") {
         await customerOrders(actor, input.order_id);
         return input.operation === "return"
@@ -585,6 +711,18 @@ const collectionOutput = z
   })
   .passthrough();
 export const toolOutputs: Record<string, z.ZodType> = {
+  lookup_product: z.object({
+    status: z.enum(["not_found", "exact_product", "choose_variant"]),
+    choices: z.array(recordedProduct),
+    products: z.array(recordedProduct),
+    total: z.number().int().min(0),
+    mode: z.literal("identity"),
+    match_scope: z.string(),
+    identity_matches: z.array(
+      z.object({ product_id: z.string(), kind: z.string() }),
+    ),
+    result_set_id: z.string().uuid(),
+  }),
   get_categories_and_brands: z.object({
     currency: z.literal("USD"),
     price_unit: z.string(),
@@ -604,7 +742,11 @@ export const toolOutputs: Record<string, z.ZodType> = {
     products: z.array(recordedProduct),
     total: z.number().int().min(0),
     constraints: searchConstraints,
-    mode: z.enum(["structured", "lexical", "hybrid"]),
+    mode: z.enum(["structured", "lexical", "hybrid", "identity"]),
+    match_scope: z.string(),
+    identity_matches: z.array(
+      z.object({ product_id: z.string(), kind: z.string() }),
+    ),
     degradation: z.string().nullable(),
     currency: z.literal("USD"),
     price_origin: z.string(),
@@ -639,11 +781,43 @@ export const toolOutputs: Record<string, z.ZodType> = {
   }),
   manage_collection: collectionOutput,
   get_user_account_context: z.object({
+    purchase_requirements: z
+      .object({ version: z.number().int(), input: briefSchema })
+      .passthrough()
+      .nullable(),
     profile: z
       .object({ name: z.string(), email: z.string().nullable() })
       .optional(),
     basket: collectionOutput,
   }),
+  get_device_compatibility: z.union([
+    z.object({
+      profiles: z.array(
+        z
+          .object({ model: z.string(), label: z.string(), scope: z.string() })
+          .passthrough(),
+      ),
+      scope: z.string(),
+    }),
+    z.object({
+      device_model: z.string(),
+      known_profile: z.boolean(),
+      questions: z.array(z.string()),
+      freshness: z.enum(["current", "expired"]).nullable(),
+      assessments: z.array(
+        z
+          .object({
+            product_id: z.string(),
+            status: z.enum(["supported", "unverified", "not_applicable"]),
+            eligible: z.boolean(),
+            reasons: z.array(z.string()),
+          })
+          .passthrough(),
+      ),
+      missing_ids: z.array(z.string()),
+      scope: z.string(),
+    }),
+  ]),
   get_user_orders: z.object({
     orders: z.array(
       z
@@ -703,9 +877,9 @@ export function declarations(enabled?: string[]): ToolDeclaration[] {
     {
       name: "discover_tools",
       description:
-        "Enable up to four capabilities for the next model step. Available: " +
+        "Enable up to four functions for the next step: " +
         tools
-          .map((t) => `${t.name}: ${t.description.split(".")[0]}`)
+          .map((t) => `${t.name}: ${t.description.split(".")[0].slice(0, 55)}`)
           .join("; "),
       parameters: z.toJSONSchema(discoverySchema, {
         target: "draft-7",

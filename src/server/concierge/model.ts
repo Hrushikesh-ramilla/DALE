@@ -63,8 +63,10 @@ async function generate(
   let endpoint: URL;
   let key: string | undefined;
   if (provider === "self_hosted") {
-    endpoint = selfHostedEndpoint();
-    key = process.env.AI_SELF_HOSTED_API_KEY;
+    endpoint = selfHostedEndpoint(process.env.CONCIERGE_SELF_HOSTED_BASE_URL);
+    key =
+      process.env.CONCIERGE_SELF_HOSTED_API_KEY ||
+      process.env.AI_SELF_HOSTED_API_KEY;
   } else if (provider === "gemini") {
     if (
       process.env.CONCIERGE_ALLOW_CLOUD !== "true" ||

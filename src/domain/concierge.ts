@@ -19,6 +19,7 @@ const attributeValue = z.union([
 export const searchConstraints = z
   .object({
     query: z.string().max(500).default(""),
+    match_mode: z.enum(["identity", "semantic"]).default("identity"),
     categories: z.array(z.string().max(80)).max(12).default([]),
     brands: z.array(z.string().max(100)).max(20).default([]),
     exclude_brands: z.array(z.string().max(100)).max(20).default([]),
@@ -135,7 +136,8 @@ export type Confirmation = {
     | "group_join"
     | "group_leave"
     | "remedy"
-    | "appeal";
+    | "appeal"
+    | "update_requirements";
   payload: Record<string, unknown>;
   summary: string;
   expiresAt: string;
@@ -154,12 +156,19 @@ export type ConciergeState = {
     text: string;
     timestamp: number;
   }[];
-  cart: { productId: string; quantity: number }[];
+  cart: { productId: string; quantity: number; groupId?: string }[];
   wishlist: string[];
   actions: BrowserAction[];
   confirmations: Confirmation[];
   resultSets: {
     id: string;
+    turnId?: string;
+    matchStatus?:
+      | "not_found"
+      | "exact_product"
+      | "choose_variant"
+      | "semantic_candidates"
+      | "structured";
     productIds: string[];
     constraints: SearchConstraints;
   }[];
