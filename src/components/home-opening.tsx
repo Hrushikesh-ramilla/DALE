@@ -83,7 +83,13 @@ export function HomeOpening() {
   return (
     <div data-home-ready={complete ? "true" : "false"}>
       {!complete && (
-        <div className="home-opening" role="status" aria-label="Opening DALE">
+        <div
+          id="dale-home-opening"
+          className="home-opening"
+          data-lenis-prevent
+          role="status"
+          aria-label="Opening DALE"
+        >
           <CinematicIntro prepare={prepare} onComplete={finish} />
           <button type="button" className="opening-skip" onClick={finish}>
             Skip intro <span aria-hidden="true">↗</span>

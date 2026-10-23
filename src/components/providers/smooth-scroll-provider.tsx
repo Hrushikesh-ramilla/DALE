@@ -124,11 +124,13 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
           lerp: 0.085,
           anchors: false,
           prevent: (node) =>
+            !!document.getElementById("dale-home-opening") ||
             node.hasAttribute("data-lenis-prevent") ||
             /^(TEXTAREA|SELECT)$/.test(node.tagName) ||
             node.getAttribute("role") === "dialog",
         });
         current.current = engine;
+        if (document.getElementById("dale-home-opening")) engine.stop();
         // A single demand-driven clock: wheel input, anchor and API scrolls wake
         // Lenis; the clock stops again when interpolation reaches its target.
         engine.on("virtual-scroll", schedule);

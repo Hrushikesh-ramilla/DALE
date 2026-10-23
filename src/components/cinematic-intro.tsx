@@ -140,6 +140,7 @@ export function CinematicIntro({
   return (
     <div
       className="cinematic-intro-root"
+      data-lenis-prevent
       data-step={step}
       style={{
         position: "fixed",
