@@ -471,3 +471,219 @@
 .agent-scroll-track .hero-dale-bar {
   margin-inline: 0;
 }
+
+/* Quiet, indexed navigation within an ivory floating masthead. */
+.site-header {
+  background: transparent;
+  border: 0;
+  backdrop-filter: none;
+  gap: clamp(18px, 2.5vw, 40px);
+}
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 8px 16px;
+  border: 1px solid #fff9;
+  border-radius: 12px;
+  background: #eeebe3;
+  box-shadow:
+    0 5px 24px #13140f14,
+    inset 0 1px 0 #fff9;
+  pointer-events: none;
+}
+.site-header > * {
+  position: relative;
+}
+.site-header .brand {
+  color: #292c24;
+}
+.site-header .brand-wordmark {
+  width: 96px;
+}
+.site-header nav {
+  gap: clamp(19px, 2.3vw, 35px);
+}
+.site-header nav button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #64675d;
+  letter-spacing: -0.015em;
+}
+.site-header nav button:hover,
+.site-header nav button.active {
+  color: #24291e;
+}
+.nav-index {
+  font-size: 7px;
+  letter-spacing: 0.03em;
+  color: #96998e;
+  align-self: center;
+}
+.nav-label {
+  display: block;
+  overflow: hidden;
+  height: 15px;
+  line-height: 15px;
+}
+.nav-label > span {
+  display: block;
+  transition: transform 380ms cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .site-header nav button:not(:disabled):hover .nav-label > span {
+    transform: translateY(-100%);
+  }
+}
+.site-header .nav-indicator {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  left: calc(50% + 3px);
+  right: auto;
+  bottom: 17px;
+  background: #49513e;
+}
+.site-header nav button.active::after {
+  display: none;
+}
+.site-header .header-actions {
+  gap: 18px;
+}
+.site-header .brief-menu-trigger {
+  color: #41473a;
+  background: transparent;
+  border: 0;
+  padding: 6px 0;
+  min-height: 36px;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  gap: 8px;
+}
+.site-header .trigger-icon-wrap {
+  background: transparent;
+  color: #41473a;
+  width: 24px;
+  height: 24px;
+}
+.site-header .apple-hamburger-lines span {
+  background: #41473a;
+}
+.site-header .trigger-title {
+  font-size: 10px;
+  font-weight: 500;
+}
+.site-header .trigger-badge {
+  display: none;
+}
+.site-header .header-actions > .button {
+  border-radius: 6px;
+  min-height: 38px;
+  padding: 9px 15px;
+  background: #2a3025;
+  color: #f3f0e7;
+  border-color: #2a3025;
+  font-size: 10px;
+}
+.site-header .header-actions > .button svg {
+  transition: transform 250ms ease;
+}
+.site-header .header-actions > .button:hover svg {
+  transform: translateX(3px);
+}
+.site-header .account {
+  color: #41473a;
+  font-size: 10px;
+}
+.site-header .avatar {
+  border-color: #a3a796;
+  color: #41473a;
+  width: 28px;
+  height: 28px;
+}
+.site-header button:focus-visible,
+.site-header a:focus-visible {
+  outline: 2px solid #4a5a3c;
+  outline-offset: 5px;
+}
+@media (max-width: 1100px) and (min-width: 761px) {
+  .site-header {
+    padding-inline: 34px;
+    gap: 18px;
+  }
+  .site-header nav {
+    gap: 18px;
+  }
+  .site-header .header-actions {
+    gap: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .site-header {
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 15px 28px 6px;
+    gap: 5px 16px;
+  }
+  .site-header::before {
+    inset: 6px 12px;
+    border-radius: 10px;
+  }
+  .site-header .brand-wordmark {
+    width: 72px;
+  }
+  .site-header .header-actions {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .site-header nav {
+    grid-column: 1/-1;
+    padding-top: 0;
+    gap: 5px;
+  }
+  .site-header nav button {
+    gap: 5px;
+    padding: 10px 0 13px;
+    font-size: 10px;
+  }
+  .site-header .nav-indicator {
+    bottom: 6px;
+  }
+  .site-header .header-actions > .button {
+    padding: 9px 11px;
+    min-height: 34px;
+    font-size: 9px;
+  }
+  .site-header .trigger-title {
+    font-size: 9px;
+  }
+  .site-header .brief-menu-trigger {
+    gap: 4px;
+  }
+  .site-header .account {
+    font-size: 9px;
+    gap: 5px;
+  }
+}
+@media (max-width: 380px) {
+  .site-header .trigger-text,
+  .site-header .brief-menu-trigger > svg {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-label > span,
+  .site-header .header-actions > .button svg {
+    transition: none;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .site-header .nav-index,
+  .site-header .trigger-text {
+    display: none;
+  }
+  .site-header nav {
+    gap: 20px;
+  }
+}

@@ -18,7 +18,7 @@ const edit = ["B001", "B012", "B016", "B011"].map(productById);
 
 export function EditorialHero() {
   const [index, setIndex] = useState(0);
-  const ref = useCardDepth<HTMLDivElement>(7, 12);
+  const ref = useCardDepth<HTMLDivElement>(2.4, 8);
   const scene = useRef<HTMLElement>(null);
   useHeroParallax(scene);
   useEffect(() => {
@@ -36,7 +36,7 @@ export function EditorialHero() {
       attribute: "data-scene-active",
       render: (x, y) => {
         background.style.transform = `translate3d(${(-x * 24).toFixed(2)}px,${(y * 18).toFixed(2)}px,0)`;
-        foreground.style.transform = `translate3d(${(x * 18).toFixed(2)}px,${(-y * 12).toFixed(2)}px,0) rotateY(${(x * 1.8).toFixed(3)}deg)`;
+        foreground.style.transform = `translate3d(${(x * 12).toFixed(2)}px,${(-y * 8).toFixed(2)}px,0)`;
       },
       reset: () => {
         background.style.removeProperty("transform");

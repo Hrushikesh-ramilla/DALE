@@ -130,25 +130,23 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         timeline.fromTo(
           root.querySelector("[data-hero-copy]"),
           { y: 0, x: 0 },
-          { y: -75, x: -28, ease: "none" },
+          { y: -75, x: 0, ease: "none" },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-display]"),
-          { y: 0, x: 0, rotation: 0, scale: 0.97 },
+          { y: 0, x: 0 },
           {
             y: () => Math.min(65, innerHeight * 0.055),
-            x: 24,
-            rotation: 2,
-            scale: 1.04,
+            x: 0,
             ease: "none",
           },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-backdrop]"),
-          { y: 0, x: 0, scale: 1.04 },
-          { y: -120, x: -30, scale: 1.22, ease: "none" },
+          { y: 0, x: 0, scale: 1.12 },
+          { y: -90, x: 0, scale: 1.12, ease: "none" },
           0,
         );
         timeline.fromTo(
@@ -199,7 +197,7 @@ export function useEditorialPageParallax(
           timeline.fromTo(
             surface.querySelector(agent ? "[data-agent-parallax-title]" : "p"),
             { x: 0, y: 0 },
-            { x: agent ? -25 : 25, y: -65, ease: "none" },
+            { x: 0, y: -65, ease: "none" },
             0,
           );
           timeline.fromTo(
@@ -207,7 +205,7 @@ export function useEditorialPageParallax(
               agent ? "[data-agent-parallax-response]" : "button",
             ),
             { x: 0, y: 0 },
-            { x: agent ? 15 : 0, y: agent ? 65 : 40, ease: "none" },
+            { x: 0, y: agent ? 65 : 40, ease: "none" },
             0,
           );
           timeline.fromTo(

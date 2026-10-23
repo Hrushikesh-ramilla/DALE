@@ -569,6 +569,13 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
         ),
     )
     .toBeGreaterThan(before + 20);
+  for (const selector of ["[data-hero-copy]", "[data-hero-display]"]) {
+    const shape = await page.locator(selector).evaluate((e) => {
+      const m = new DOMMatrixReadOnly(getComputedStyle(e).transform);
+      return { a: m.a, b: m.b, c: m.c, d: m.d };
+    });
+    expect(shape).toEqual({ a: 1, b: 0, c: 0, d: 1 });
+  }
   const caption = await page
     .locator("[data-hero-depth]")
     .locator("..")
@@ -665,4 +672,34 @@ test("agent and closing invitation hold with opposing layers and collapse for re
       .locator("[data-agent-parallax-title]")
       .evaluate((e) => getComputedStyle(e).transform),
   ).toBe("none");
+});
+
+test("indexed navigation keeps its names, keyboard access and mobile brief control", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  const nav = page.getByRole("navigation", { name: "Main navigation" });
+  const support = nav.getByRole("button", { name: "Support", exact: true });
+  await expect(support).toBeEnabled();
+  await support.focus();
+  await page.keyboard.press("Enter");
+  await expect(support).toHaveAttribute("aria-current", "page");
+  const brief = page.getByRole("button", {
+    name: "Filter products and adjust shopping brief",
+  });
+  await brief.click();
+  await expect(brief).toHaveAttribute("aria-expanded", "true");
+  await page.keyboard.press("Escape");
+  await expect(brief).toHaveAttribute("aria-expanded", "false");
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth > innerWidth,
+    ),
+  ).toBe(false);
+  for (const button of await nav.getByRole("button").all()) {
+    const box = await button.boundingBox();
+    expect(box!.x).toBeGreaterThanOrEqual(0);
+    expect(box!.x + box!.width).toBeLessThanOrEqual(390);
+  }
 });
