@@ -1403,3 +1403,87 @@ body:has(.home-opening) .site-header .brand {
     font-size: 46px;
   }
 }
+
+/* Operational updates belong to their request, below the conversation's voice. */
+.dale-action-activity {
+  font:
+    400 11px/1.5 "DM Sans",
+    sans-serif;
+  color: #747b6b;
+  margin: -6px 0 8px;
+  max-width: 100%;
+}
+.dale-action-activity summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  width: fit-content;
+  min-height: 28px;
+  list-style: none;
+}
+.dale-action-activity summary::-webkit-details-marker {
+  display: none;
+}
+.dale-action-activity summary:focus-visible {
+  outline: 1px solid #768465;
+  outline-offset: 3px;
+}
+.dale-action-activity[data-tone="attention"] summary {
+  color: #8b614f;
+}
+.dale-activity-chevron {
+  opacity: 0.6;
+  transition: transform 0.16s;
+}
+.dale-action-activity[open] .dale-activity-chevron {
+  transform: rotate(180deg);
+}
+.dale-action-activity ul {
+  margin: 4px 0 0 5px;
+  padding: 4px 0 4px 14px;
+  border-left: 1px solid #c8cbbd;
+  list-style: none;
+}
+.dale-action-activity li {
+  padding-block: 4px;
+  overflow-wrap: anywhere;
+}
+.dale-action-activity li > span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  color: #858c7c;
+}
+.dale-task-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #737b69;
+  padding: 6px 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.dale-task-status button {
+  margin-left: auto;
+  font-size: 11px;
+  padding: 4px 8px;
+  color: #4f5d43;
+  background: transparent;
+  border: 1px solid #c8cbbd;
+  border-radius: 2px;
+}
+.dale-task-dot {
+  width: 5px;
+  height: 5px;
+  background: #839474;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.dale-task-error {
+  color: #8b614f;
+  border-left: 2px solid #b0947d;
+  padding-left: 10px;
+}
