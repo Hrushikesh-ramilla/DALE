@@ -120,6 +120,8 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
             start: "top 180px",
             end: "bottom bottom",
             scrub: true,
+            onToggle: (self) =>
+              root.toggleAttribute("data-scroll-active", self.isActive),
           },
         });
         timeline.to(
@@ -164,9 +166,14 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
           { scaleX: 1, ease: "none" },
           0,
         );
+        root.toggleAttribute(
+          "data-scroll-active",
+          !!timeline.scrollTrigger?.isActive,
+        );
         return () => {
           timeline.scrollTrigger?.kill();
           timeline.revert();
+          root.removeAttribute("data-scroll-active");
           delete track.dataset.heroHeld;
         };
       },

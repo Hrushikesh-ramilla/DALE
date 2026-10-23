@@ -741,3 +741,10 @@
     display: none;
   }
 }
+
+/* Cache only the active scene's changing scales; release it outside the hold. */
+.hero[data-scroll-active] .forwardObject,
+.hero[data-scroll-active] .display,
+.hero[data-scroll-active] .sceneBackdrop {
+  will-change: transform;
+}
