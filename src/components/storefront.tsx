@@ -86,7 +86,7 @@ const departmentHeroImages: Record<string, { src: string; alt: string }> = {
     alt: "Silver technology essentials arranged on ivory stone, editorial artwork",
   },
   clothing: {
-    src: "/images/editorial/luxury/clothing-v1.webp",
+    src: "/images/editorial/luxury/clothing-v2.webp",
     alt: "Midnight navy and burgundy couture evening gown, editorial artwork",
   },
   fragrance: {

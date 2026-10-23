@@ -82,8 +82,7 @@ function CollectionPlate({
                     src={artwork.src}
                     unoptimized
                     alt={artwork.alt}
-                    width={1000}
-                    height={1250}
+                    fill
                     sizes="(max-width: 760px) 90vw, (max-width: 1100px) 75vw, 48vw"
                     className={styles.image}
                   />
