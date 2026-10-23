@@ -82,11 +82,13 @@ export function CinematicIntro({
     window.addEventListener("resize", measureTarget);
 
     // Continuous overlapping sequence schedule - deliberate, cinematic pacing
-    timers.push(setTimeout(() => setStep(1), 80)); // D begins emerging
-    timers.push(setTimeout(() => setStep(2), 320)); // A begins emerging
-    timers.push(setTimeout(() => setStep(3), 560)); // L begins emerging
-    timers.push(setTimeout(() => setStep(4), 800)); // E begins emerging
-    timers.push(setTimeout(() => setStep(5), 1100)); // Full mark & subtitle bloom
+    if (!reduced) {
+      timers.push(setTimeout(() => setStep(1), 80)); // D begins emerging
+      timers.push(setTimeout(() => setStep(2), 320)); // A begins emerging
+      timers.push(setTimeout(() => setStep(3), 560)); // L begins emerging
+      timers.push(setTimeout(() => setStep(4), 800)); // E begins emerging
+      timers.push(setTimeout(() => setStep(5), 1100)); // Full mark & subtitle bloom
+    }
     void Promise.all([
       ready,
       new Promise<void>((resolve) =>

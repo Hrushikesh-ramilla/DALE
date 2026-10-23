@@ -936,3 +936,46 @@ body:has(.home-opening) .site-header .brand {
 .site-header .compact-navigation {
   margin-left: auto;
 }
+.site-header {
+  flex-wrap: nowrap;
+}
+.site-header .header-actions {
+  width: auto;
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .site-header .trigger-text,
+  .site-header .trigger-chevron {
+    display: none;
+  }
+  .site-header .brief-menu-trigger {
+    min-width: 34px;
+    min-height: 44px;
+    justify-content: center;
+  }
+  .brief-menu-flyout .flyout-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 12px 20px;
+  }
+  .brief-menu-flyout .flyout-foot-left {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .brief-menu-flyout .flyout-foot-left svg {
+    flex-shrink: 0;
+  }
+  .brief-menu-flyout .flyout-foot-right {
+    justify-content: space-between;
+  }
+  .brief-menu-flyout .flyout-count {
+    font-size: 11px;
+  }
+  .brief-menu-flyout .flyout-submit-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-height: 44px;
+    padding: 10px 16px;
+  }
+}

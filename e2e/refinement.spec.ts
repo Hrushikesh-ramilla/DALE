@@ -790,6 +790,8 @@ test("indexed navigation keeps its names, keyboard access and mobile brief contr
     "data-home-ready",
     "true",
   );
+  const header = await page.locator(".site-header").boundingBox();
+  expect(header!.height).toBe(78);
   await page.getByText("Menu", { exact: true }).click();
   const nav = page.getByRole("navigation", { name: "Main navigation" });
   const support = nav.getByRole("button", { name: "Support", exact: true });
