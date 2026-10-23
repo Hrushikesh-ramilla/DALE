@@ -3,6 +3,24 @@ import { useEffect, type RefObject } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+/** Each scene owns its cleanup. Native queries avoid nesting unrelated GSAP
+ * contexts when a deferred catalog update rebuilds the collection stack. */
+function observeMotionQuery(query: string, setup: () => () => void) {
+  const preference = window.matchMedia(query);
+  let cleanup: (() => void) | undefined;
+  const sync = () => {
+    cleanup?.();
+    cleanup = undefined;
+    if (preference.matches) cleanup = setup();
+  };
+  sync();
+  preference.addEventListener("change", sync);
+  return () => {
+    preference.removeEventListener("change", sync);
+    cleanup?.();
+  };
+}
+
 /** CSS owns the sticky stack. GSAP updates only transform variables on its
  * eight surfaces; layout is measured on refresh, never on every scroll frame. */
 export function useCollectionStack(
@@ -13,8 +31,7 @@ export function useCollectionStack(
     const list = ref.current;
     if (!list) return;
     gsap.registerPlugin(ScrollTrigger);
-    const media = gsap.matchMedia();
-    media.add(
+    const stop = observeMotionQuery(
       "(min-width: 1000px) and (min-height: 700px) and (prefers-reduced-motion: no-preference)",
       () => {
         const slots = Array.from(
@@ -99,7 +116,7 @@ export function useCollectionStack(
         };
       },
     );
-    return () => media.revert();
+    return stop;
   }, [ref, count]);
 }
 
@@ -107,8 +124,7 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
   useEffect(() => {
     if (!ref.current) return;
     gsap.registerPlugin(ScrollTrigger);
-    const media = gsap.matchMedia();
-    media.add(
+    const stop = observeMotionQuery(
       "(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)",
       () => {
         const root = ref.current!;
@@ -178,7 +194,7 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         };
       },
     );
-    return () => media.revert();
+    return stop;
   }, [ref]);
 }
 
@@ -191,8 +207,7 @@ export function useEditorialPageParallax(
     const root = ref.current;
     if (!root) return;
     gsap.registerPlugin(ScrollTrigger);
-    const media = gsap.matchMedia();
-    media.add(
+    const stop = observeMotionQuery(
       "(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)",
       () => {
         const tracks = Array.from(
@@ -277,6 +292,6 @@ export function useEditorialPageParallax(
         };
       },
     );
-    return () => media.revert();
+    return stop;
   }, [ref, route]);
 }

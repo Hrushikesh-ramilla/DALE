@@ -742,3 +742,56 @@ test("indexed navigation keeps its names, keyboard access and mobile brief contr
     expect(box!.x + box!.width).toBeLessThanOrEqual(390);
   }
 });
+
+test("late catalog category changes cannot remove the hero scroll scene", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/api/catalog/summary", async (route) => {
+    const response = await route.fetch();
+    const summary = await response.json();
+    await gate;
+    const category = Object.keys(summary.counts).find(
+      (key) => summary.counts[key] > 0,
+    )!;
+    await route.fulfill({
+      json: { ...summary, counts: { [category]: summary.counts[category] } },
+    });
+  });
+  try {
+    await page.goto("/");
+    const hero = page.locator("[data-hero-track]");
+    await expect(hero).toHaveAttribute("data-hero-held", "true");
+    expect(
+      await page.locator("[data-collection-slot]").count(),
+    ).toBeGreaterThan(1);
+    release();
+    await expect(page.locator("[data-collection-slot]")).toHaveCount(1);
+    await expect(hero).toHaveAttribute("data-hero-held", "true");
+    await page.evaluate(() =>
+      window.scrollTo({ top: 600, behavior: "instant" }),
+    );
+    await expect
+      .poll(() =>
+        page
+          .locator("[data-hero-forward]")
+          .evaluate(
+            (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
+          ),
+      )
+      .toBeGreaterThan(1.1);
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await expect(hero).not.toHaveAttribute("data-hero-held", "true");
+    expect(
+      await page
+        .locator("[data-hero-forward]")
+        .evaluate((e) => getComputedStyle(e).willChange),
+    ).toBe("auto");
+  } finally {
+    release();
+  }
+});
