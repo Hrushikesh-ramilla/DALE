@@ -123,8 +123,10 @@ export function EditorialHero() {
                 <span className={styles.vertical} aria-hidden="true">
                   DALE — OBJECT STUDY
                 </span>
-                <div className={styles.object} key={product.id}>
-                  <ProductViewer product={product} priority={index === 0} />
+                <div className={styles.forwardObject} data-hero-forward>
+                  <div className={styles.object} key={product.id}>
+                    <ProductViewer product={product} priority={index === 0} />
+                  </div>
                 </div>
                 <div className={styles.plinth} aria-hidden="true" />
                 <span className={styles.objectNumber} aria-hidden="true">

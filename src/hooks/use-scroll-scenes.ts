@@ -130,23 +130,32 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         timeline.fromTo(
           root.querySelector("[data-hero-copy]"),
           { y: 0, x: 0 },
-          { y: -75, x: 0, ease: "none" },
+          { y: () => Math.min(100, innerHeight * 0.085), x: 0, ease: "none" },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-display]"),
-          { y: 0, x: 0 },
+          { y: 0, x: 0, scale: 1 },
           {
-            y: () => Math.min(65, innerHeight * 0.055),
+            y: -12,
             x: 0,
+            scale: 1.055,
             ease: "none",
           },
+          0,
+        );
+        // The object advances farther than its glass surround. Separate nodes
+        // keep this forward push independent of pointer tilt and slide entry.
+        timeline.fromTo(
+          root.querySelector("[data-hero-forward]"),
+          { y: 0, scale: 1 },
+          { y: -18, scale: 1.16, ease: "power1.out" },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-backdrop]"),
           { y: 0, x: 0, scale: 1.12 },
-          { y: -90, x: 0, scale: 1.12, ease: "none" },
+          { y: -90, x: 0, scale: 1.15, ease: "none" },
           0,
         );
         timeline.fromTo(

@@ -173,6 +173,17 @@
   border-top: 1px solid #ffffff65;
   pointer-events: none;
 }
+.forwardObject {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  min-height: 0;
+  z-index: 2;
+  transform-origin: 50% 60%;
+}
+.forwardObject .object {
+  height: 100%;
+}
 .object {
   min-height: 0;
   position: relative;
@@ -446,6 +457,9 @@
   .stage {
     height: 340px;
   }
+  .forwardObject {
+    height: 100%;
+  }
   .object {
     height: 100%;
   }
@@ -670,13 +684,14 @@
     min-height: 0;
   }
   .copy {
-    padding: clamp(56px, 8svh, 98px) 0 45px;
+    padding: clamp(70px, 12svh, 130px) 0 45px;
   }
   .hero .copy h2 {
     font-size: clamp(104px, min(14vw, 20svh), 220px);
     margin: 30px 0 20px;
   }
   .display {
+    transform-origin: 50% 45%;
     top: 8%;
   }
   .stage {

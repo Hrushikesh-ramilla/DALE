@@ -382,14 +382,14 @@ test("hero foreground and background travel at different scroll speeds", async (
         .locator("[data-hero-copy]")
         .evaluate((e) => new DOMMatrix(getComputedStyle(e).transform).m42),
     )
-    .toBeLessThan(-20);
+    .toBeGreaterThan(20);
   await expect
     .poll(() =>
       page
         .locator("[data-hero-display]")
         .evaluate((e) => new DOMMatrix(getComputedStyle(e).transform).m42),
     )
-    .toBeGreaterThan(20);
+    .toBeLessThan(-3);
 });
 
 test("collection anchor starts Lenis and reaches the real collection", async ({
@@ -522,7 +522,7 @@ test("opening parallax responds to the first short scroll", async ({
     .poll(() =>
       copy.evaluate((el) => new DOMMatrix(getComputedStyle(el).transform).m42),
     )
-    .toBeLessThan(before - 4);
+    .toBeGreaterThan(before + 4);
 });
 
 test("hero holds its layered scene through a viewport of scrolling", async ({
@@ -552,8 +552,8 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
     )
     .toBe(78);
   const before = await page
-    .locator("[data-hero-display]")
-    .evaluate((e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42);
+    .locator("[data-hero-forward]")
+    .evaluate((e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a);
   await page.evaluate(() => window.scrollTo({ top: 950, behavior: "instant" }));
   await expect
     .poll(async () =>
@@ -563,18 +563,21 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
   await expect
     .poll(() =>
       page
-        .locator("[data-hero-display]")
+        .locator("[data-hero-forward]")
         .evaluate(
-          (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42,
+          (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
         ),
     )
-    .toBeGreaterThan(before + 20);
+    .toBeGreaterThan(before + 0.04);
   for (const selector of ["[data-hero-copy]", "[data-hero-display]"]) {
     const shape = await page.locator(selector).evaluate((e) => {
       const m = new DOMMatrixReadOnly(getComputedStyle(e).transform);
       return { a: m.a, b: m.b, c: m.c, d: m.d };
     });
-    expect(shape).toEqual({ a: 1, b: 0, c: 0, d: 1 });
+    expect(shape.b).toBe(0);
+    expect(shape.c).toBe(0);
+    expect(shape.a).toBeCloseTo(shape.d, 5);
+    expect(shape.a).toBeGreaterThanOrEqual(1);
   }
   const caption = await page
     .locator("[data-hero-depth]")
@@ -584,6 +587,42 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
     .boundingBox();
   expect(caption!.y).toBeGreaterThan(78);
   expect(caption!.y + caption!.height).toBeLessThan(1000);
+  const action = await page
+    .getByRole("button", { name: "Start a conversation", exact: true })
+    .boundingBox();
+  expect(action!.y).toBeGreaterThan(78);
+  expect(action!.y + action!.height).toBeLessThan(1000);
+  const separation = await page.evaluate(() => {
+    const copy = new DOMMatrixReadOnly(
+      getComputedStyle(document.querySelector("[data-hero-copy]")!).transform,
+    );
+    const glass = new DOMMatrixReadOnly(
+      getComputedStyle(document.querySelector("[data-hero-display]")!)
+        .transform,
+    );
+    const object = new DOMMatrixReadOnly(
+      getComputedStyle(document.querySelector("[data-hero-forward]")!)
+        .transform,
+    );
+    return {
+      copyY: copy.m42,
+      glassY: glass.m42,
+      glassScale: glass.a,
+      objectScale: object.a,
+    };
+  });
+  expect(separation.copyY - separation.glassY).toBeGreaterThan(60);
+  expect(separation.objectScale).toBeGreaterThan(separation.glassScale + 0.06);
+  await page.getByRole("button", { name: "Next featured product" }).click();
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-hero-forward]")
+        .evaluate(
+          (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
+        ),
+    )
+    .toBeGreaterThan(1.1);
 });
 
 test("agent and closing invitation hold with opposing layers and collapse for reduced motion", async ({
