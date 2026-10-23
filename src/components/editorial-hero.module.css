@@ -769,3 +769,84 @@
 .hero[data-scroll-active] .sceneBackdrop {
   will-change: transform;
 }
+
+/* A restrained editorial label, with explicit browsing controls. */
+.caption {
+  margin: 12px 22px 0;
+  padding: 16px 0 10px;
+  border: 0;
+  border-top: 1px solid #4b4c3d66;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.caption > div > a {
+  font-size: 13px;
+  font-weight: 500;
+}
+.caption .open {
+  display: flex;
+  gap: 10px;
+  width: auto;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 2px;
+  border: 1px solid #62664d80;
+  background: #eeece1e6;
+}
+.open:hover {
+  transform: none;
+  background: #f5f3eb;
+}
+.controls {
+  gap: 4px;
+  margin-top: 8px;
+}
+.controls button:not(.dot) {
+  display: flex;
+  gap: 9px;
+  min-width: 100px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #64694f66;
+  border-radius: 2px;
+  background: #eeece3ed;
+  color: #262d20;
+  font-size: 11px;
+}
+.controls button:not(.dot):hover {
+  background: #252b20;
+  color: #f4f1e8;
+}
+.controls .dot {
+  min-width: 28px;
+  min-height: 44px;
+  padding: 8px;
+}
+.dot span {
+  width: 5px;
+  height: 5px;
+  background: #61674f;
+}
+.controls button:focus-visible,
+.caption a:focus-visible {
+  outline: 2px solid #39452e;
+  outline-offset: 3px;
+}
+@media (max-width: 480px) {
+  .caption {
+    margin-inline: 0;
+    gap: 12px;
+  }
+  .caption .open {
+    padding: 0 8px;
+  }
+  .controls button:not(.dot) {
+    min-width: 78px;
+    gap: 5px;
+    padding: 10px;
+  }
+  .controls .dot {
+    min-width: 24px;
+  }
+}

@@ -13,6 +13,7 @@ import { ProductViewer } from "./product-viewer";
 import styles from "./editorial-hero.module.css";
 import { LivingType } from "./living-type";
 import { attachDepthMotion } from "@/lib/depth-motion";
+import { HomeOpening } from "./home-opening";
 
 type Edit = {
   id: string;
@@ -78,6 +79,7 @@ export function EditorialHero() {
   };
   return (
     <div className={styles.scrollTrack} data-hero-track>
+      <HomeOpening />
       <section
         className={`editorial-hero ${styles.hero}`}
         aria-label="The everyday edit"
@@ -192,7 +194,7 @@ export function EditorialHero() {
                     className={styles.open}
                     aria-label={`View ${product.name}`}
                   >
-                    <ArrowUpRight size={20} />
+                    <span>Explore</span> <ArrowUpRight size={20} />
                   </Link>
                 </div>
                 <div className={styles.controls} aria-label="Featured products">
@@ -203,6 +205,7 @@ export function EditorialHero() {
                     }
                   >
                     <ArrowLeft size={16} />
+                    <span>Previous</span>
                   </button>
                   {edit.map((item, i) => (
                     <button
@@ -219,6 +222,7 @@ export function EditorialHero() {
                     aria-label="Next featured product"
                     onClick={() => setIndex((index + 1) % edit.length)}
                   >
+                    <span>Next</span>
                     <ArrowRight size={16} />
                   </button>
                 </div>

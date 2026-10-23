@@ -36,6 +36,10 @@ test("editorial controls use the real assistant and exact featured listing", asy
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   await page
     .getByRole("button", { name: "Start a conversation", exact: true })
     .click();
@@ -59,6 +63,10 @@ test("editorial shopping form sends once through the current assistant", async (
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   await page
     .getByLabel("Your shopping request")
     .fill("Browser slow streamed reply");
@@ -83,6 +91,10 @@ test("footer invitation opens the assistant without submitting a task", async ({
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   let sent = 0;
   page.on("request", (request) => {
     if (
@@ -119,6 +131,10 @@ test("late initial session snapshots do not cancel the first shopping request", 
   });
   try {
     await page.goto("/");
+    await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+      "data-home-ready",
+      "true",
+    );
     await page
       .getByLabel("Your shopping request")
       .fill("Browser slow streamed reply");
@@ -174,6 +190,10 @@ test("an initial owned session snapshot cannot interrupt assistant bootstrap", a
   });
   try {
     await page.goto("/");
+    await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+      "data-home-ready",
+      "true",
+    );
     await page
       .getByLabel("Your shopping request")
       .fill("Browser slow streamed reply");
@@ -197,6 +217,10 @@ test("depth follows the pointer, settles, and releases temporary promotion", asy
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   const card = page.locator("[data-department-card]").first();
   await expect(card).toHaveAttribute("data-depth-ready", "true");
   await page.evaluate(() => document.fonts.ready);
@@ -218,6 +242,10 @@ test("changing reduced motion immediately removes depth and scroll animation", a
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   const card = page.locator("[data-department-card]").first();
   await expect(card).toHaveAttribute("data-depth-ready", "true");
   await page.evaluate(() => document.fonts.ready);
@@ -244,6 +272,10 @@ test("Lenis interpolates wheel input and preserves keyboard navigation", async (
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   const card = page.locator("[data-department-card]").first();
   await card.scrollIntoViewIfNeeded();
   await expect(page.locator("html")).toHaveAttribute(
@@ -297,6 +329,10 @@ test("touch layout has no horizontal overflow or hover-only requirements", async
   try {
     const page = await context.newPage();
     await page.goto("/");
+    await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+      "data-home-ready",
+      "true",
+    );
     const launcher = page.getByRole("button", {
       name: "Open DALE assistant",
       exact: true,
@@ -327,6 +363,10 @@ test("collection cards visibly overlap and the outgoing surface recedes", async 
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   const slots = page.locator("[data-collection-slot]");
   await expect(slots.first().locator("..")).toHaveAttribute(
     "data-stack-ready",
@@ -370,6 +410,10 @@ test("hero foreground and background travel at different scroll speeds", async (
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   await expect(page.locator("html")).toHaveAttribute(
     "data-scroll-engine",
     "lenis",
@@ -396,6 +440,10 @@ test("collection anchor starts Lenis and reaches the real collection", async ({
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   await expect(page.locator("html")).toHaveAttribute(
     "data-scroll-engine",
     "lenis",
@@ -428,6 +476,10 @@ test("headline letters react locally, spring home, and release their animation h
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   const type = page.locator("[data-hero-copy] [data-living-type]").first();
   await expect(type).toHaveAttribute("data-type-ready", "true");
   await expect(
@@ -471,6 +523,10 @@ test("the whole opening responds in separate planes and stops for reduced motion
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   const hero = page.locator(".editorial-hero");
   const atmosphere = page.locator("[data-hero-atmosphere]");
   await expect(hero).toHaveAttribute("data-depth-ready", "true");
@@ -508,6 +564,10 @@ test("opening parallax responds to the first short scroll", async ({
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   await expect(page.locator("html")).toHaveAttribute(
     "data-scroll-engine",
     "lenis",
@@ -530,6 +590,10 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   await page.evaluate(() => document.fonts.ready);
   await expect(
     page.locator("[data-collection-slot]").first().locator(".."),
@@ -630,6 +694,10 @@ test("agent and closing invitation hold with opposing layers and collapse for re
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   await page.evaluate(() => document.fonts.ready);
   await expect(
     page.locator("[data-collection-slot]").first().locator(".."),
@@ -718,11 +786,17 @@ test("indexed navigation keeps its names, keyboard access and mobile brief contr
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
+  await page.getByText("Menu", { exact: true }).click();
   const nav = page.getByRole("navigation", { name: "Main navigation" });
   const support = nav.getByRole("button", { name: "Support", exact: true });
   await expect(support).toBeEnabled();
   await support.focus();
   await page.keyboard.press("Enter");
+  await page.getByText("Menu", { exact: true }).click();
   await expect(support).toHaveAttribute("aria-current", "page");
   const brief = page.getByRole("button", {
     name: "Filter products and adjust shopping brief",
@@ -736,6 +810,7 @@ test("indexed navigation keeps its names, keyboard access and mobile brief contr
       () => document.documentElement.scrollWidth > innerWidth,
     ),
   ).toBe(false);
+  await page.getByText("Menu", { exact: true }).click();
   for (const button of await nav.getByRole("button").all()) {
     const box = await button.boundingBox();
     expect(box!.x).toBeGreaterThanOrEqual(0);
@@ -764,6 +839,10 @@ test("late catalog category changes cannot remove the hero scroll scene", async 
   });
   try {
     await page.goto("/");
+    await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+      "data-home-ready",
+      "true",
+    );
     const hero = page.locator("[data-hero-track]");
     await expect(hero).toHaveAttribute("data-hero-held", "true");
     expect(
@@ -801,6 +880,10 @@ test("hero contracts evenly on four sides while its product advances, and resets
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   const track = page.locator("[data-hero-track]");
   await expect(track).toHaveAttribute("data-hero-held", "true");
   await page.evaluate(() => document.fonts.ready);
@@ -856,6 +939,10 @@ test("watch editorial opens the watch collection and carousel still loads verifi
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
   const hero = page.getByRole("region", { name: "The everyday edit" });
   const artwork = hero.getByRole("img", { name: /Breguet Expérimentale 1/ });
   await expect(artwork).toBeVisible();
@@ -877,4 +964,99 @@ test("watch editorial opens the watch collection and carousel still loads verifi
     .getByRole("link", { name: "Breguet Expérimentale 1", exact: true })
     .click();
   await expect(page).toHaveURL(/\/category\/watches$/);
+});
+
+test("cold opening buffers decoded imagery and blocks premature scrolling", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.route("**/breguet-experimentale-1.webp", async (route) => {
+    await new Promise((resolve) => setTimeout(resolve, 1700));
+    await route.continue();
+  });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  await expect(
+    page.getByRole("status", { name: "Opening DALE" }),
+  ).toBeVisible();
+  await page.mouse.wheel(0, 800);
+  expect(await page.evaluate(() => scrollY)).toBe(0);
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
+  expect(
+    await page
+      .locator("[data-hero-depth] img")
+      .evaluate(
+        (image: HTMLImageElement) => image.complete && image.naturalWidth > 0,
+      ),
+  ).toBe(true);
+  await page.mouse.wheel(0, 400);
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-hero-portal]")
+        .evaluate(
+          (node) => new DOMMatrixReadOnly(getComputedStyle(node).transform).a,
+        ),
+    )
+    .toBeLessThan(0.9);
+  const end = await page
+    .locator("[data-hero-track]")
+    .evaluate(
+      (track) => track.getBoundingClientRect().bottom + scrollY - innerHeight,
+    );
+  await page.evaluate(
+    (y) => window.scrollTo({ top: y, behavior: "instant" }),
+    end,
+  );
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-hero-portal]")
+        .evaluate(
+          (node) => new DOMMatrixReadOnly(getComputedStyle(node).transform).a,
+        ),
+    )
+    .toBeCloseTo(0.45, 1);
+});
+
+test("filter stays above navigation and leaving the window cannot crash it", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
+  const trigger = page.getByRole("button", {
+    name: "Filter products and adjust shopping brief",
+  });
+  await trigger.hover();
+  await expect(trigger).toHaveAttribute("aria-expanded", "true");
+  await trigger.evaluate((node) =>
+    node.dispatchEvent(
+      new MouseEvent("mouseout", { bubbles: true, relatedTarget: window }),
+    ),
+  );
+  expect(errors).toEqual([]);
+  await trigger.click();
+  if ((await trigger.getAttribute("aria-expanded")) !== "true")
+    await trigger.click();
+  const close = page.getByRole("button", { name: "Close filters menu" });
+  await expect(close).toBeVisible();
+  expect(
+    await close.evaluate((node) => {
+      const rect = node.getBoundingClientRect();
+      return node.contains(
+        document.elementFromPoint(
+          rect.x + rect.width / 2,
+          rect.y + rect.height / 2,
+        ),
+      );
+    }),
+  ).toBe(true);
+  await close.click();
 });

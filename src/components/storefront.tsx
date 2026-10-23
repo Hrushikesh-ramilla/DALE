@@ -63,6 +63,7 @@ import { KineticCard } from "./kinetic-card";
 import { PayPalCheckout } from "./paypal-checkout";
 import { Dialog } from "./dialog";
 import { BrandWordmark } from "./brand-wordmark";
+import { CompactNavigation } from "./compact-navigation";
 import { EditorialHero } from "./editorial-hero";
 import { DepartmentExhibit } from "./department-exhibit";
 import { DemoToolbar } from "./demo-toolbar";
@@ -755,53 +756,55 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           >
             <BrandWordmark />
           </a>
-          <nav aria-label="Main navigation">
-            {(["discover", "groups", "orders", "support"] as Tab[]).map(
-              (item, index) => (
-                <button
-                  key={item}
-                  data-agent-control={`Open ${item}`}
-                  className={tab === item ? "active" : ""}
-                  aria-current={tab === item ? "page" : undefined}
-                  onClick={() => setTab(item)}
-                  disabled={restoring}
-                >
-                  <span className="nav-index" aria-hidden="true">
-                    0{index + 1}
-                  </span>
-                  <span className="nav-label">
-                    <span>
-                      {
-                        {
-                          discover: "Discover",
-                          groups: "Group deals",
-                          orders: isBuyer ? "My orders" : "Orders",
-                          support: "Support",
-                        }[item]
-                      }
+          <CompactNavigation>
+            <nav aria-label="Main navigation">
+              {(["discover", "groups", "orders", "support"] as Tab[]).map(
+                (item, index) => (
+                  <button
+                    key={item}
+                    data-agent-control={`Open ${item}`}
+                    className={tab === item ? "active" : ""}
+                    aria-current={tab === item ? "page" : undefined}
+                    onClick={() => setTab(item)}
+                    disabled={restoring}
+                  >
+                    <span className="nav-index" aria-hidden="true">
+                      0{index + 1}
                     </span>
-                    <span aria-hidden="true">
-                      {
+                    <span className="nav-label">
+                      <span>
                         {
-                          discover: "Discover",
-                          groups: "Group deals",
-                          orders: isBuyer ? "My orders" : "Orders",
-                          support: "Support",
-                        }[item]
-                      }
+                          {
+                            discover: "Discover",
+                            groups: "Group deals",
+                            orders: isBuyer ? "My orders" : "Orders",
+                            support: "Support",
+                          }[item]
+                        }
+                      </span>
+                      <span aria-hidden="true">
+                        {
+                          {
+                            discover: "Discover",
+                            groups: "Group deals",
+                            orders: isBuyer ? "My orders" : "Orders",
+                            support: "Support",
+                          }[item]
+                        }
+                      </span>
                     </span>
-                  </span>
-                  {tab === item && (
-                    <motion.span
-                      className="nav-indicator"
-                      layoutId="navigation"
-                      aria-hidden="true"
-                    />
-                  )}
-                </button>
-              ),
-            )}
-          </nav>
+                    {tab === item && (
+                      <motion.span
+                        className="nav-indicator"
+                        layoutId="navigation"
+                        aria-hidden="true"
+                      />
+                    )}
+                  </button>
+                ),
+              )}
+            </nav>
+          </CompactNavigation>
           <div className="header-actions">
             <ShoppingBriefMenu
               model={model}
