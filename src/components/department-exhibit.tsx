@@ -41,6 +41,7 @@ function CollectionPlate({
       <div className={styles.recede} data-stack-surface>
         <Link
           ref={ref}
+          prefetch={false}
           href={
             collection.id === "watches"
               ? "/category/watches"
@@ -72,14 +73,21 @@ function CollectionPlate({
             </span>
             <div className={styles.object}>
               {artwork ? (
-                <Image
-                  src={artwork.src}
-                  alt={artwork.alt}
-                  width={1000}
-                  height={650}
-                  sizes="(max-width: 760px) 90vw, (max-width: 1100px) 75vw, 48vw"
-                  className={styles.image}
-                />
+                <picture className={styles.picture}>
+                  <source
+                    srcSet={`${artwork.src.replace(".webp", "-480.webp")} 480w, ${artwork.src.replace(".webp", "-800.webp")} 800w, ${artwork.src} 1000w`}
+                    sizes="(max-width: 760px) 90vw, 48vw"
+                  />
+                  <Image
+                    src={artwork.src}
+                    unoptimized
+                    alt={artwork.alt}
+                    width={1000}
+                    height={1250}
+                    sizes="(max-width: 760px) 90vw, (max-width: 1100px) 75vw, 48vw"
+                    className={styles.image}
+                  />
+                </picture>
               ) : collection.featured ? (
                 <ProductArt product={collection.featured} />
               ) : null}

@@ -177,19 +177,27 @@
   left: 28px;
   letter-spacing: 0.18em;
   font-size: 8px;
-  color: #71756a;
+  color: #35392e;
+  background: #f2eee4d9;
+  padding: 5px 8px;
   z-index: 2;
 }
 .object {
-  position: relative;
-  width: 90%;
-  height: clamp(330px, 40vw, 445px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
   z-index: 1;
+}
+.picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .shadow {
   position: absolute;
@@ -197,7 +205,7 @@
   right: 20%;
   bottom: 55px;
   height: 20px;
-  background: radial-gradient(ellipse, #22251c24, transparent 70%);
+  background: none;
   pointer-events: none;
 }
 .count {
@@ -206,7 +214,9 @@
   bottom: 24px;
   font-size: 9px;
   letter-spacing: 0.05em;
-  color: #74776a;
+  color: #35392e;
+  background: #f2eee4dc;
+  padding: 5px 8px;
   z-index: 2;
 }
 .number {
@@ -299,10 +309,10 @@
 }
 @keyframes object-drift {
   from {
-    transform: translateY(64px) scale(0.94);
+    transform: translateY(24px) scale(1.12);
   }
   to {
-    transform: translateY(-64px) scale(1.04);
+    transform: translateY(-24px) scale(1.12);
   }
 }
 @keyframes number-drift {
@@ -319,9 +329,6 @@
   }
   .copy {
     padding: 32px;
-  }
-  .object {
-    height: 310px;
   }
 }
 @media (max-width: 760px) {
@@ -367,9 +374,7 @@
     min-height: 275px;
     border-radius: 0;
   }
-  .object {
-    height: 225px;
-  }
+
   .edition {
     top: 18px;
     left: 22px;

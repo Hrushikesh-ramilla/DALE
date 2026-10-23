@@ -46,7 +46,7 @@ test("editorial controls use the real assistant and exact featured listing", asy
   const listing = page
     .locator("[data-hero-depth]")
     .locator("..")
-    .locator('a[href^="/product/"]')
+    .locator("a")
     .first();
   const original = await listing.getAttribute("href");
   await page.getByRole("button", { name: "Next featured product" }).click();
@@ -582,7 +582,7 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
   const caption = await page
     .locator("[data-hero-depth]")
     .locator("..")
-    .locator('a[href^="/product/"]')
+    .locator("a")
     .first()
     .boundingBox();
   expect(caption!.y).toBeGreaterThan(78);
@@ -850,4 +850,29 @@ test("hero contracts evenly on four sides while its product advances, and resets
       () => document.documentElement.scrollWidth > innerWidth,
     ),
   ).toBe(false);
+});
+
+test("watch editorial opens the watch collection and carousel still loads verified product photographs", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const hero = page.getByRole("region", { name: "The everyday edit" });
+  const artwork = hero.getByRole("img", { name: /Breguet-style/ });
+  await expect(artwork).toBeVisible();
+  await expect
+    .poll(() => artwork.evaluate((e) => (e as HTMLImageElement).naturalWidth))
+    .toBeGreaterThan(0);
+  await expect(
+    hero.getByRole("link", { name: "The watch edit", exact: true }),
+  ).toHaveAttribute("href", "/category/watches");
+  await page.getByRole("button", { name: "Next featured product" }).click();
+  const product = hero.locator('[data-product-id="B012"] img');
+  await expect(product).toBeVisible();
+  await expect
+    .poll(() => product.evaluate((e) => (e as HTMLImageElement).naturalWidth))
+    .toBeGreaterThan(0);
+  await expect(hero.locator('a[href="/product/B012"]').first()).toBeVisible();
+  await page.getByRole("button", { name: "Previous featured product" }).click();
+  await hero.getByRole("link", { name: "The watch edit", exact: true }).click();
+  await expect(page).toHaveURL(/\/category\/watches$/);
 });
