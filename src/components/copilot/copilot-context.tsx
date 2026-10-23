@@ -19,6 +19,9 @@ import {
   localBrowserOperation,
   waitForPage,
   openActionTabs,
+  reserveRequestedTab,
+  releaseReservedTab,
+  type ReservedTab,
   closeActionTab,
   fileSelectionReady,
   chooseActionFile,
@@ -565,7 +568,11 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     [clearDraft],
   );
   const executeBrowser = useCallback(
-    async (action: BrowserAction, signal: AbortSignal) => {
+    async (
+      action: BrowserAction,
+      signal: AbortSignal,
+      reservation?: ReservedTab,
+    ) => {
       const operation = action.operation;
       if (action.controllerTabId && action.controllerTabId !== browserTabId())
         throw new Error(
@@ -604,7 +611,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           outcome =
             "Choose a file to continue. Selecting it does not submit the form.";
         } else if (operation.type === "tabs") {
-          openActionTabs(action);
+          openActionTabs(action, reservation);
           let ready = false;
           for (let i = 0; i < 40; i++) {
             signal.throwIfAborted();
@@ -722,6 +729,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const sendMessage = useCallback(
     async (prompt: string) => {
       if (!prompt.trim() || activeRequest.current) return;
+      const reservation = reserveRequestedTab(prompt);
       const epoch = sessionEpoch.current;
       activeRequest.current = true;
       setOpen(true);
@@ -730,6 +738,8 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       setError("");
       const abort = new AbortController();
       controller.current = abort;
+      const release = () => releaseReservedTab(reservation);
+      abort.signal.addEventListener("abort", release, { once: true });
       try {
         await ensure();
         const id = crypto.randomUUID();
@@ -741,7 +751,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         apply(view, epoch);
         for (let i = 0; view.turn?.status === "awaiting_ui" && i < 12; i++) {
           for (const action of view.actions) {
-            view = await executeBrowser(action, abort.signal);
+            view = await executeBrowser(action, abort.signal, reservation);
             apply(view, epoch);
           }
           if (view.actions.some((a) => a.status === "pending")) break;
@@ -762,6 +772,8 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
               : "Agent connection failed. Check state before retrying.",
           );
       } finally {
+        abort.signal.removeEventListener("abort", release);
+        release();
         if (epoch === sessionEpoch.current) {
           clearDraft();
           activeRequest.current = false;
