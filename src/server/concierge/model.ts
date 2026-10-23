@@ -103,7 +103,7 @@ async function generate(
           tools: tools.map((t) => ({ type: "function", function: t })),
           tool_choice: "auto",
           parallel_tool_calls: provider === "self_hosted",
-          temperature: 0.2,
+          temperature: provider === "self_hosted" ? 0 : 0.2,
           max_tokens: 1800,
           stream: false,
         }),

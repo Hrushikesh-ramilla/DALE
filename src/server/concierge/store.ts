@@ -24,6 +24,9 @@ export async function conciergeDatabase() {
       await db.query(
         `CREATE TABLE IF NOT EXISTS concierge_turn_ids (owner text NOT NULL, turn_id text NOT NULL, created_at timestamptz NOT NULL DEFAULT now(), PRIMARY KEY(owner,turn_id))`,
       );
+      await db.query(
+        `CREATE TABLE IF NOT EXISTS concierge_product_references (product_id text PRIMARY KEY, ref bigserial UNIQUE NOT NULL)`,
+      );
       initialized = db;
     })().finally(() => {
       initializing = undefined;

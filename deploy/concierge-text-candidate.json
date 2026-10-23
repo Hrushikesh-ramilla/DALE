@@ -1,6 +1,6 @@
 {
   "researchedAt": "2026-10-19",
-  "status": "local_buyer_regressions_passed",
+  "status": "not_selected_compound_action_regression_failed",
   "source": "https://huggingface.co/Qwen/Qwen3.5-2B",
   "repository": "unsloth/Qwen3.5-2B-GGUF",
   "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
@@ -9,5 +9,5 @@
   "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
   "alias": "dale-buyer-qwen35-2b",
   "license": "Apache-2.0",
-  "scope": "Text-only shopper model tested locally on 2026-10-19. Does not replace the existing vision model. Hosted 4 GiB joint memory, Linux service installation and broader agent acceptance remain unqualified; this manifest does not select a deployment model."
+  "scope": "Text-only shopper experiment, not selected. Passed six isolated cases but failed the seventh combined lookup-and-save action on 2026-10-19. Does not replace the existing vision model. Hosted 4 GiB joint memory, Linux service installation and broader agent acceptance remain unqualified."
 }

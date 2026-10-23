@@ -5,6 +5,9 @@ import { totalmem } from "node:os";
 import { spawn } from "node:child_process";
 import { createConnection } from "node:net";
 const directory = resolve(".data/self-hosted");
+const localThreads = Number(process.env.LOCAL_MODEL_THREADS || "2");
+if (!Number.isInteger(localThreads) || localThreads < 1 || localThreads > 16)
+  throw new Error("Invalid local CPU thread count.");
 const prepared = JSON.parse(
   await readFile(resolve(directory, "candidate.json"), "utf8"),
 );
@@ -73,13 +76,19 @@ const child = spawn(
     "-np",
     "1",
     "-t",
-    "2",
+    String(localThreads),
     "-tb",
-    "2",
+    String(localThreads),
     "-ngl",
     "0",
     "--no-mmproj-offload",
-    "--no-repack",
+    ...(process.env.LOCAL_MODEL_REPACK === "true" ? [] : ["--no-repack"]),
+    "--checkpoint-min-step",
+    "256",
+    "--ctx-checkpoints",
+    "8",
+    "--cache-ram",
+    "128",
     "--alias",
     candidate.alias,
     "--api-key-file",
@@ -97,5 +106,5 @@ child.on("exit", (code) => {
 for (const signal of ["SIGINT", "SIGTERM"])
   process.on(signal, () => child.kill(signal));
 console.log(
-  `Candidate inference: ${candidate.name}, loopback only, two CPU threads, one slot. Credentials are not printed. This terminal-owned selection server is not the deployment service.`,
+  `Candidate inference: ${candidate.name}, loopback only, ${localThreads} CPU threads, one slot. Credentials are not printed. This terminal-owned selection server is not the deployment service.`,
 );

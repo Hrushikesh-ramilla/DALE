@@ -42,6 +42,11 @@ if (process.argv.includes("--warmup")) {
 if (process.argv.includes("--trace-model")) {
   const transport = globalThis.fetch;
   globalThis.fetch = async (...args) => {
+    if (String(args[0]).includes("/chat/completions")) {
+      const sent=JSON.parse(String(args[1]?.body||"{}"));
+      const last=sent.messages?.at(-1);
+      if(last?.role === "tool") console.log(JSON.stringify({event:"buyer.live.observation",content:last.content}));
+    }
     const result = await transport(...args);
     if (String(args[0]).includes("/chat/completions")) {
       const body = await result.clone().json();
@@ -211,6 +216,20 @@ try {
       general.view.basket.wishlist.length === 0 &&
       general.view.confirmations.length === 0,
   });
+  const combinedActor = await shopper();
+  const combined = await turn(
+    combinedActor,
+    `Find ${p.name} and save it to my wishlist. Do not checkout.`,
+  );
+  results.push({
+    ...combined.result,
+    capability: "combined lookup and wishlist action",
+    passed:
+      combined.view.turn?.status === "completed" &&
+      combined.view.basket.wishlist.some((v) => v.productId === p.id) &&
+      combined.view.basket.cart.length === 0 &&
+      combined.view.confirmations.length === 0,
+  });
 } catch (error) {
   results.push({
     passed: false,
@@ -227,7 +246,7 @@ const report = {
   candidate,
   warmupMs,
   scope:
-    "Actual local model and isolated real application database. No inference mocks, no payment calls. Five shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
+    "Actual local model and isolated real application database. No inference mocks, no payment calls. Six shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
   passed: results.every((r) => r.passed),
   results,
 };

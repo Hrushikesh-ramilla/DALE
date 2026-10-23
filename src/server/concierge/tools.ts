@@ -35,8 +35,11 @@ import { formatMoney } from "@/domain/money";
 import { recordedAttributes } from "@/domain/catalog-derived";
 import { briefSchema } from "@/domain/brief";
 import { knownModels } from "@/domain/catalog";
+import {
+  modelProductReferences,
+  resolveProductReferences,
+} from "./product-references";
 import { compatibilityArguments, deviceCompatibility } from "./compatibility";
-import { brandVocabulary, canonicalBrand } from "./identity";
 
 type ToolContext = { actor: Actor; ui: UIContext; signal?: AbortSignal };
 type ToolDefinition = {
@@ -68,8 +71,6 @@ const productArguments = z
 const lookupArguments = z
   .object({
     name: z.string().trim().min(1).max(180),
-    brand: z.string().max(100).optional(),
-    category: z.string().max(80).optional(),
     limit: z.number().int().min(1).max(6).default(3),
   })
   .strict();
@@ -274,25 +275,16 @@ export const tools: ToolDefinition[] = [
   {
     name: "lookup_product",
     description:
-      "Find a named product. Keep its full model name, generation, size/storage and suffixes; omit commands. Optional brand/category constrain the search. not_found means no match under searched_identity. choose_variant requires a choice. No substitutes.",
+      "Look up a brand/product name directly. Include its brand, model and any stated size/storage. Rough spelling is accepted. This needs NO prior category/brand discovery. Returns exact identity, variant choices or not_found; never unrelated substitutes.",
     input: lookupArguments,
     effect: "read",
     async execute(raw, { actor, signal }) {
       const input = lookupArguments.parse(raw);
-      const capabilities = await catalogCapabilities();
-      const brand = input.brand
-        ? canonicalBrand(
-            input.brand,
-            brandVocabulary(capabilities.collections.map((c) => c.brand)),
-          ) || input.brand
-        : undefined;
       const result = await recordedSearch(
         actor,
         {
           query: input.name,
           match_mode: "identity",
-          brands: brand ? [brand] : [],
-          categories: input.category ? [input.category] : [],
           limit: input.limit,
           in_stock: false,
         },
@@ -333,8 +325,6 @@ export const tools: ToolDefinition[] = [
         selection_required: status === "choose_variant",
         searched_identity: {
           name: input.name,
-          ...(brand ? { brand } : {}),
-          ...(input.category ? { category: input.category } : {}),
         },
         ...(result.total ? { result_set_id: result.result_set_id } : {}),
       };
@@ -356,10 +346,21 @@ export const tools: ToolDefinition[] = [
       "Retrieve authoritative published products in the requested order. Missing IDs are explicit. Use attribute_keys and include_specs=false to narrow a large record; no substitute models.",
     input: productArguments,
     effect: "read",
-    async execute(raw) {
+    async execute(raw, { actor }) {
       const input = productArguments.parse(raw);
       const products = await productDetails(input.product_ids);
+      const state = await readConcierge(actor);
+      const ambiguous = state.resultSets.findLast(
+        (set) =>
+          set.turnId === state.turn?.id &&
+          set.matchStatus === "choose_variant" &&
+          input.product_ids.some((id) => set.productIds.includes(id)),
+      );
       return {
+        selection_required: Boolean(ambiguous),
+        selection_note: ambiguous
+          ? "These are details of candidate variants, not a customer selection. Ask which variant they want; do not pick the first one."
+          : null,
         products: products.map((p) => ({
           ...summaryProduct(p),
           attributes: input.attribute_keys
@@ -502,7 +503,21 @@ export const tools: ToolDefinition[] = [
       "Manage owner cart or wishlist with exact product IDs. remove deletes only items[]; clear deletes EVERYTHING and is only for an explicit request to empty the whole collection. Preserve other items. groupId is only for select_group; forming groups cannot check out. Adding does not purchase or reserve stock. No automatic mutation retries.",
     input: basketInput,
     effect: "write",
-    async execute(input, { actor }) {
+    async execute(raw, { actor }) {
+      const input = basketInput.parse(raw);
+      const state = await readConcierge(actor);
+      if (
+        ["add", "set"].includes(input.action) &&
+        state.resultSets.some(
+          (set) =>
+            set.turnId === state.turn?.id &&
+            set.matchStatus === "choose_variant" &&
+            input.items.some((item) => set.productIds.includes(item.productId)),
+        )
+      )
+        throw new Error(
+          "The lookup has multiple or approximate variants. Ask the customer to choose the exact product before changing their collection.",
+        );
       const result = await manageBasket(actor, input);
       return {
         ...result,
@@ -788,6 +803,8 @@ export const toolOutputs: Record<string, z.ZodType> = {
   get_product_details: z.object({
     products: z.array(recordedProduct),
     missing_ids: z.array(z.string()),
+    selection_required: z.boolean(),
+    selection_note: z.string().nullable(),
   }),
   get_current_ui_context: z.object({
     ui: z.unknown(),
@@ -905,19 +922,39 @@ export function declarations(enabled?: string[]): ToolDeclaration[] {
     enabled === undefined
       ? tools
       : tools.filter((t) => enabled.includes(t.name));
+  const remaining = tools.filter(
+    (t) => !selected.some((s) => s.name === t.name),
+  );
   return [
-    {
-      name: "discover_tools",
-      description:
-        "Enable up to four functions for the next step: " +
-        tools
-          .map((t) => `${t.name}: ${t.description.split(".")[0].slice(0, 55)}`)
-          .join("; "),
-      parameters: z.toJSONSchema(discoverySchema, {
-        target: "draft-7",
-        io: "input",
-      }),
-    },
+    ...(remaining.length
+      ? [
+          {
+            name: "discover_tools",
+            description:
+              "Enable functions NOT already listed below. Call listed functions directly. Available to enable: " +
+              remaining
+                .map(
+                  (t) =>
+                    `${t.name}: ${t.description.split(".")[0].slice(0, 55)}`,
+                )
+                .join("; "),
+            parameters: z.toJSONSchema(
+              z
+                .object({
+                  names: z
+                    .array(z.enum(remaining.map((t) => t.name)))
+                    .min(1)
+                    .max(4),
+                })
+                .strict(),
+              {
+                target: "draft-7",
+                io: "input",
+              },
+            ),
+          },
+        ]
+      : []),
     ...selected.map((t) => ({
       name: t.name,
       description: t.description,
@@ -947,7 +984,7 @@ export async function executeTool(
   const tool = tools.find((t) => t.name === name);
   if (!tool)
     throw new Error("Unknown tool. Use the registered capability list.");
-  const input = tool.input.parse(raw);
+  const input = tool.input.parse(await resolveProductReferences(raw));
   const result = toolOutputs[name].parse(
     await tool.execute(input as never, context),
   );
@@ -958,5 +995,9 @@ export async function executeTool(
       effect: z.enum(["read", "write", "browser", "prepare"]),
       data: z.unknown(),
     })
-    .parse({ ok: true, effect: tool.effect, data: result });
+    .parse({
+      ok: true,
+      effect: tool.effect,
+      data: await modelProductReferences(result),
+    });
 }
