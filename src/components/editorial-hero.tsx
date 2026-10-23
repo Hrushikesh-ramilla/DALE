@@ -25,10 +25,10 @@ type Edit = {
 const edit: Edit[] = [
   {
     id: "watch-edit",
-    name: "The watch edit",
+    name: "Breguet Expérimentale 1",
     href: "/category/watches",
-    caption: "Inspired by Breguet. Fine watchmaking, considered.",
-    artwork: "/images/editorial/luxury/hero-watch-v1.webp",
+    caption: "Openworked watchmaking. Explore the watch edit.",
+    artwork: "/images/editorial/luxury/breguet-experimentale-1.webp",
   },
   ...["B012", "B016", "B011"].map((id) => {
     const product = productById(id);
@@ -156,9 +156,9 @@ export function EditorialHero() {
                       {product.artwork ? (
                         <Image
                           src={product.artwork}
-                          alt="Breguet-style rose-gold enamel-dial watch, editorial illustration"
+                          alt="Breguet Expérimentale 1 E001BH/S9/5ZV, manufacturer photograph"
                           width={720}
-                          height={1080}
+                          height={1028}
                           sizes="(max-width: 760px) 85vw, 42vw"
                           unoptimized
                           loading="eager"

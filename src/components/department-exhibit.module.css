@@ -198,7 +198,8 @@
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 28px;
 }
 .shadow {
   position: absolute;
@@ -310,10 +311,10 @@
 }
 @keyframes object-drift {
   from {
-    transform: translateY(24px) scale(1.12);
+    transform: translateY(16px);
   }
   to {
-    transform: translateY(-24px) scale(1.12);
+    transform: translateY(-16px);
   }
 }
 @keyframes number-drift {

@@ -857,13 +857,13 @@ test("watch editorial opens the watch collection and carousel still loads verifi
 }) => {
   await page.goto("/");
   const hero = page.getByRole("region", { name: "The everyday edit" });
-  const artwork = hero.getByRole("img", { name: /Breguet-style/ });
+  const artwork = hero.getByRole("img", { name: /Breguet Expérimentale 1/ });
   await expect(artwork).toBeVisible();
   await expect
     .poll(() => artwork.evaluate((e) => (e as HTMLImageElement).naturalWidth))
     .toBeGreaterThan(0);
   await expect(
-    hero.getByRole("link", { name: "The watch edit", exact: true }),
+    hero.getByRole("link", { name: "Breguet Expérimentale 1", exact: true }),
   ).toHaveAttribute("href", "/category/watches");
   await page.getByRole("button", { name: "Next featured product" }).click();
   const product = hero.locator('[data-product-id="B012"] img');
@@ -873,6 +873,8 @@ test("watch editorial opens the watch collection and carousel still loads verifi
     .toBeGreaterThan(0);
   await expect(hero.locator('a[href="/product/B012"]').first()).toBeVisible();
   await page.getByRole("button", { name: "Previous featured product" }).click();
-  await hero.getByRole("link", { name: "The watch edit", exact: true }).click();
+  await hero
+    .getByRole("link", { name: "Breguet Expérimentale 1", exact: true })
+    .click();
   await expect(page).toHaveURL(/\/category\/watches$/);
 });
