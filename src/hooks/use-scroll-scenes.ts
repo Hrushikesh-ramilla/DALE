@@ -210,6 +210,12 @@ export function useEditorialPageParallax(
             { x: agent ? 15 : 0, y: agent ? 65 : 40, ease: "none" },
             0,
           );
+          timeline.fromTo(
+            surface.querySelector(agent ? ".hero-dale-badge" : ":scope > span"),
+            { y: 0 },
+            { y: -65, ease: "none" },
+            0,
+          );
           track.dataset.parallaxReady = "true";
           return timeline;
         });

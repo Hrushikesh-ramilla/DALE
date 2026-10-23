@@ -463,3 +463,11 @@
     align-items: flex-start;
   }
 }
+
+.agent-scroll-track {
+  background: var(--dale-paper);
+  margin-inline: calc(-1 * clamp(22px, 4vw, 72px));
+}
+.agent-scroll-track .hero-dale-bar {
+  margin-inline: 0;
+}

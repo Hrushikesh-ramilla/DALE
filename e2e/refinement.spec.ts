@@ -591,6 +591,16 @@ test("agent and closing invitation hold with opposing layers and collapse for re
         Math.round((await page.locator(surface).boundingBox())!.y),
       )
       .toBe(78);
+    // Native scrolling updates geometry before ScrollTrigger's next frame.
+    await expect
+      .poll(() =>
+        page
+          .locator(foreground)
+          .evaluate(
+            (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42,
+          ),
+      )
+      .toBeGreaterThan(-25);
     const before = await page
       .locator(foreground)
       .evaluate(
