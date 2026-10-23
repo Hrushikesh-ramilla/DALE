@@ -989,12 +989,19 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                         data-agent-parallax-left
                       >
                         <div className="hero-dale-badge">
-                          <span>01 / YOUR PERSONAL SHOPPING AGENT</span>
+                          <span>
+                            <LivingType
+                              text="01 / YOUR PERSONAL SHOPPING AGENT"
+                              reveal
+                            />
+                          </span>
                         </div>
                         <h2 data-agent-parallax-title>
-                          A little less searching.
+                          <LivingType text="A little less searching." reveal />
                           <br />
-                          <em>A lot more possibility.</em>
+                          <em>
+                            <LivingType text="A lot more possibility." reveal />
+                          </em>
                         </h2>
                       </div>
                       <div
@@ -1002,11 +1009,13 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                         data-agent-parallax-response
                       >
                         <p className="hero-dale-sub">
-                          The right fragrance. Your next everyday essential.
-                          Tell DALE what you have in mind, and take it from
-                          there.
+                          <LivingType
+                            text="The right fragrance. Your next everyday essential. Tell DALE what you have in mind, and take it from there."
+                            reveal
+                          />
                         </p>
                         <form
+                          data-editorial-reveal
                           className="hero-dale-input-wrap"
                           onSubmit={(event) => {
                             event.preventDefault();
@@ -2479,12 +2488,17 @@ export default function Storefront({ children }: { children?: ReactNode }) {
               className="footer-scroll-track"
               data-editorial-scroll-track="footer"
             >
-              <div className="footer-invitation" data-editorial-reveal>
-                <span>THE NEXT GOOD THING STARTS WITH A CONVERSATION.</span>
+              <div className="footer-invitation">
+                <span>
+                  <LivingType
+                    text="THE NEXT GOOD THING STARTS WITH A CONVERSATION."
+                    reveal
+                  />
+                </span>
                 <p>
-                  <LivingType text="Consider it" />{" "}
+                  <LivingType text="Consider it" reveal />{" "}
                   <em>
-                    <LivingType text="found." />
+                    <LivingType text="found." reveal />
                   </em>
                 </p>
                 <button
@@ -2494,7 +2508,8 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                     void copilot.refresh();
                   }}
                 >
-                  Meet your shopping agent <ArrowRight size={20} />
+                  <LivingType text="Meet your shopping agent" reveal />{" "}
+                  <ArrowRight size={20} />
                 </button>
               </div>
             </div>
@@ -2505,12 +2520,16 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                   <span className="sr-only">DALE</span>
                 </div>
                 <p>
-                  Considered choices. Customer-first commerce. From your first
-                  search to a fair resolution.
+                  <LivingType
+                    text="Considered choices. Customer-first commerce. From your first search to a fair resolution."
+                    reveal
+                  />
                 </p>
               </div>
               <div className="footer-links">
-                <strong>The collection</strong>
+                <strong>
+                  <LivingType text="The collection" reveal />
+                </strong>
                 <button
                   onClick={() => {
                     setTab("discover");
@@ -2524,28 +2543,30 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                     });
                   }}
                 >
-                  Discover essentials
+                  <LivingType text="Discover essentials" reveal />
                 </button>
                 <button
                   data-agent-control="Open group deals"
                   onClick={() => setTab("groups")}
                 >
-                  Buy together
+                  <LivingType text="Buy together" reveal />
                 </button>
                 <button
                   data-agent-control="Open my orders"
                   onClick={() => setTab("orders")}
                 >
-                  Track an order
+                  <LivingType text="Track an order" reveal />
                 </button>
               </div>
               <div className="footer-links">
-                <strong>At your service</strong>
+                <strong>
+                  <LivingType text="At your service" reveal />
+                </strong>
                 <button
                   data-agent-control="Open support"
                   onClick={() => setTab("support")}
                 >
-                  Returns & support
+                  <LivingType text="Returns &amp; support" reveal />
                 </button>
                 <button
                   onClick={() => {
@@ -2553,7 +2574,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                     setModal({ kind: "scam" });
                   }}
                 >
-                  Check a message
+                  <LivingType text="Check a message" reveal />
                 </button>
                 <button
                   onClick={() => {
@@ -2562,7 +2583,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                     setModal({ kind: "login" });
                   }}
                 >
-                  Operator workspace
+                  <LivingType text="Operator workspace" reveal />
                 </button>
               </div>
             </div>

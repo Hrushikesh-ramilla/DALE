@@ -150,7 +150,7 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         timeline.fromTo(
           root.querySelector("[data-hero-world]"),
           { y: 38, scale: 1.12 },
-          { y: -38, scale: 1.03, duration: 1.65, ease: "none" },
+          { y: -75, scale: 1.03, duration: 1.65, ease: "none" },
           0,
         );
         timeline.to(
@@ -199,7 +199,7 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         timeline.to(
           root.querySelector("[data-hero-portal]"),
           {
-            y: () => -innerHeight * 0.85,
+            y: () => -innerHeight * 0.12,
             duration: 0.55,
             ease: "power1.in",
           },
@@ -257,8 +257,8 @@ export function useEditorialPageParallax(
               left,
               { y: 0 },
               {
-                y: () => -innerHeight * 0.16,
-                duration: 0.65,
+                y: () => -innerHeight * 0.075,
+                duration: 1,
                 ease: "none",
               },
               0,
@@ -267,22 +267,11 @@ export function useEditorialPageParallax(
               right,
               { y: 0 },
               {
-                y: () => innerHeight * 0.16,
-                duration: 0.65,
+                y: () => innerHeight * 0.075,
+                duration: 1,
                 ease: "none",
               },
               0,
-            );
-            // Preserve the split positions while both panels leave together.
-            timeline.fromTo(
-              surface.querySelector(".hero-dale-inner"),
-              { y: 0 },
-              {
-                y: () => -innerHeight * 0.72,
-                duration: 0.35,
-                ease: "power1.in",
-              },
-              0.65,
             );
           } else {
             timeline.fromTo(

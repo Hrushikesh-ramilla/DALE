@@ -152,11 +152,23 @@ export function DaleCopilotSidecar() {
               </button>
             )}
             {c.messages.length === 0 && (
-              <p style={{ padding: "1rem" }}>
-                Describe what you need, ask a question, or tell DALE what to do
-                on this site. Purchases and submissions require your
-                confirmation.
-              </p>
+              <div className="dale-editorial-welcome">
+                <span className="dale-editorial-kicker">
+                  A CONVERSATION, WELL CONSIDERED.
+                </span>
+                <h2>
+                  What do you
+                  <br />
+                  <em>have in mind?</em>
+                </h2>
+                <p>
+                  Find something special, explore the collection, or let DALE
+                  take you there.
+                </p>
+                <small>
+                  Purchases and submissions require your confirmation.
+                </small>
+              </div>
             )}
             {c.messages.map((m) => (
               <div

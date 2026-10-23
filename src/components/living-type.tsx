@@ -5,9 +5,11 @@ import { useEffect, useRef, type CSSProperties } from "react";
 export function LivingType({
   text,
   entrance = false,
+  reveal = false,
 }: {
   text: string;
   entrance?: boolean;
+  reveal?: boolean;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
@@ -93,7 +95,17 @@ export function LivingType({
       );
       measured = true;
     };
-    const move = (event: PointerEvent) => {
+    let pointer: {
+      clientX: number;
+      clientY: number;
+      pointerType: string;
+    } | null = null;
+    const move = (event: {
+      clientX: number;
+      clientY: number;
+      pointerType: string;
+    }) => {
+      pointer = event;
       if (!media.matches || event.pointerType === "touch") return;
       if (!measured) measure();
       root.setAttribute("data-type-active", "true");
@@ -107,12 +119,28 @@ export function LivingType({
       });
       schedule();
     };
+    const enter = (event: PointerEvent) => {
+      // Hover takes over immediately, including during a word reveal.
+      root
+        .querySelectorAll(".living-word")
+        .forEach((word) =>
+          word.getAnimations().forEach((animation) => animation.finish()),
+        );
+      measured = false;
+      move(event);
+    };
     const leave = () => {
+      pointer = null;
       measured = false;
       states.forEach((s) => {
         s.tx = s.ty = 0;
       });
       if (media.matches) schedule();
+      else reset();
+    };
+    const scroll = () => {
+      measured = false;
+      if (pointer && root.matches(":hover")) move(pointer);
       else reset();
     };
     const visibility = () => {
@@ -126,9 +154,10 @@ export function LivingType({
     });
     observer.observe(root);
     root.setAttribute("data-type-ready", "true");
+    root.addEventListener("pointerenter", enter, { passive: true });
     root.addEventListener("pointermove", move, { passive: true });
     root.addEventListener("pointerleave", leave, { passive: true });
-    window.addEventListener("scroll", reset, { passive: true });
+    window.addEventListener("scroll", scroll, { passive: true });
     window.addEventListener("resize", reset, { passive: true });
     window.addEventListener("blur", reset);
     document.addEventListener("visibilitychange", visibility);
@@ -137,21 +166,81 @@ export function LivingType({
       reset();
       root.removeAttribute("data-type-ready");
       observer.disconnect();
+      root.removeEventListener("pointerenter", enter);
       root.removeEventListener("pointermove", move);
       root.removeEventListener("pointerleave", leave);
-      window.removeEventListener("scroll", reset);
+      window.removeEventListener("scroll", scroll);
       window.removeEventListener("resize", reset);
       window.removeEventListener("blur", reset);
       document.removeEventListener("visibilitychange", visibility);
       media.removeEventListener("change", preference);
     };
   }, [text]);
+  useEffect(() => {
+    const root = ref.current;
+    if (!root || !reveal) return;
+    const media = matchMedia("(prefers-reduced-motion: reduce)");
+    const animations: Animation[] = [];
+    let observer: IntersectionObserver | undefined;
+    const show = () => {
+      root.dataset.typeReveal = "shown";
+      observer?.disconnect();
+      if (media.matches) return;
+      root.querySelectorAll<HTMLElement>(".living-word").forEach((word, i) => {
+        animations.push(
+          word.animate(
+            [
+              {
+                opacity: 0,
+                transform: "translateY(30px)",
+                clipPath: "inset(100% 0 0 0)",
+              },
+              {
+                opacity: 1,
+                transform: "translateY(0)",
+                clipPath: "inset(0% 0 0 0)",
+              },
+            ],
+            {
+              duration: 700,
+              delay: Math.min(i * 34, 240),
+              fill: "backwards",
+              easing: "cubic-bezier(.16,1,.3,1)",
+            },
+          ),
+        );
+      });
+    };
+    if (media.matches) show();
+    else {
+      observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) show();
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -20px 0px" },
+      );
+      observer.observe(root);
+    }
+    const preference = () => {
+      if (media.matches) {
+        animations.forEach((a) => a.cancel());
+        show();
+      }
+    };
+    media.addEventListener("change", preference);
+    return () => {
+      observer?.disconnect();
+      animations.forEach((a) => a.cancel());
+      media.removeEventListener("change", preference);
+    };
+  }, [text, reveal]);
   let index = 0;
   return (
     <span
       ref={ref}
       className="living-type"
       data-living-type
+      data-type-reveal={reveal ? "pending" : undefined}
       data-type-entrance={entrance || undefined}
     >
       <span className="sr-only">{text}</span>

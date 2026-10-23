@@ -4,12 +4,9 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
-import { productById, type Product } from "@/domain/catalog";
-import { formatMoney } from "@/domain/money";
 import { useHeroParallax } from "@/hooks/use-scroll-scenes";
 import { useCardDepth } from "@/hooks/use-card-depth";
 import { useCopilot } from "./copilot/copilot-context";
-import { ProductViewer } from "./product-viewer";
 import styles from "./editorial-hero.module.css";
 import { LivingType } from "./living-type";
 import { attachDepthMotion } from "@/lib/depth-motion";
@@ -20,8 +17,8 @@ type Edit = {
   name: string;
   href: string;
   caption: string;
-  product?: Product;
   artwork?: string;
+  alt?: string;
 };
 const edit: Edit[] = [
   {
@@ -31,16 +28,31 @@ const edit: Edit[] = [
     caption: "Openworked watchmaking. Explore the watch edit.",
     artwork: "/images/editorial/luxury/breguet-experimentale-1.webp",
   },
-  ...["B012", "B016", "B011"].map((id) => {
-    const product = productById(id);
-    return {
-      id,
-      product,
-      name: product.name,
-      href: `/product/${id}`,
-      caption: `${formatMoney(product.price)} · DALE sandbox offer`,
-    };
-  }),
+  {
+    id: "serge-edit",
+    name: "Serge Lutens Chergui",
+    href: "/product/PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-CHERGUI",
+    caption: "Eau de parfum. Explore the fragrance collection.",
+    artwork: "/images/editorial/luxury/serge-chergui-cutout.webp",
+    alt: "Serge Lutens Chergui bottle, editorial illustration",
+  },
+  {
+    id: "bag-edit",
+    name: "The Hermès-inspired leather edit",
+    href: "/department/bags",
+    caption: "Sculptural leather. Explore bags and accessories.",
+    artwork: "/images/editorial/luxury/burgundy-kelly-editorial.webp",
+    alt: "AI-generated burgundy Hermès-style structured handbag, editorial illustration",
+  },
+  {
+    id: "fold-edit",
+    name: "Samsung Galaxy Z Fold6",
+    href: "/product/PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-Z-FOLD6",
+    caption: "A different perspective. Explore the foldable phone.",
+    artwork:
+      "/images/products/phones-prod-phones-samsung-samsung-galaxy-z-fold6.webp",
+    alt: "Samsung Galaxy Z Fold6, catalog photograph",
+  },
 ];
 
 export function EditorialHero() {
@@ -181,7 +193,10 @@ export function EditorialHero() {
                       {product.artwork ? (
                         <Image
                           src={product.artwork}
-                          alt="Breguet Expérimentale 1 E001BH/S9/5ZV, manufacturer photograph"
+                          alt={
+                            product.alt ||
+                            "Breguet Expérimentale 1 E001BH/S9/5ZV, manufacturer photograph"
+                          }
                           width={720}
                           height={1028}
                           sizes="(max-width: 760px) 85vw, 42vw"
@@ -194,8 +209,6 @@ export function EditorialHero() {
                             objectFit: "contain",
                           }}
                         />
-                      ) : product.product ? (
-                        <ProductViewer product={product.product} priority />
                       ) : null}
                     </div>
                   </div>
