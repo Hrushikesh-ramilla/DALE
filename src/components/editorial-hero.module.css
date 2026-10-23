@@ -695,7 +695,7 @@
 }
 @media (min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference) {
   .scrollTrack {
-    height: calc(210svh - 78px);
+    height: calc(270svh - 78px);
   }
   .hero.hero {
     position: sticky;

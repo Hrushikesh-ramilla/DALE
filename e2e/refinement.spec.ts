@@ -710,7 +710,7 @@ test("agent and closing invitation hold with opposing layers and collapse for re
     );
   });
   for (const [kind, surface, foreground] of [
-    ["agent", ".hero-dale-bar", "[data-agent-parallax-title]"],
+    ["agent", ".hero-dale-bar", "[data-agent-parallax-left]"],
     ["footer", ".footer-invitation", ".footer-invitation p"],
   ]) {
     const track = page.locator(`[data-editorial-scroll-track="${kind}"]`);
@@ -1020,7 +1020,7 @@ test("cold opening buffers decoded imagery and blocks premature scrolling", asyn
           (node) => new DOMMatrixReadOnly(getComputedStyle(node).transform).a,
         ),
     )
-    .toBeCloseTo(0.45, 1);
+    .toBeCloseTo(0.6, 2);
 });
 
 test("filter stays above navigation and leaving the window cannot crash it", async ({
@@ -1178,4 +1178,74 @@ test("collection backdrop moves behind the hero and the brief uses the ivory the
   await page.keyboard.press("Escape");
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(world).toHaveCSS("transform", "none");
+});
+
+test("foreground exits before the photograph and split panels separate before their shared exit", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
+  const matrix = (selector: string) =>
+    page.locator(selector).evaluate((e) => {
+      const m = new DOMMatrixReadOnly(getComputedStyle(e).transform);
+      return { y: m.m42, scale: m.a };
+    });
+  const track = page.locator("[data-hero-track]");
+  const range = await track.evaluate((e) => ({
+    start: e.getBoundingClientRect().top + scrollY - 180,
+    end: e.getBoundingClientRect().bottom + scrollY - innerHeight,
+  }));
+  const seek = async (value: number) => {
+    await page.evaluate(
+      (y) => scrollTo({ top: y, behavior: "instant" }),
+      value,
+    );
+    await page.waitForTimeout(120);
+  };
+  await seek(range.start + (range.end - range.start) * 0.64);
+  expect((await matrix("[data-hero-portal]")).scale).toBeCloseTo(0.6, 2);
+  expect(Math.abs((await matrix("[data-hero-portal]")).y)).toBeLessThan(1);
+  const rear = await matrix("[data-hero-world]");
+  await seek(range.start + (range.end - range.start) * 0.9);
+  expect((await matrix("[data-hero-portal]")).y).toBeLessThan(-300);
+  expect(Math.abs((await matrix("[data-hero-world]")).y - rear.y)).toBeLessThan(
+    30,
+  );
+  const agent = page.locator('[data-editorial-scroll-track="agent"]');
+  const scene = await agent.evaluate((e) => ({
+    start: e.getBoundingClientRect().top + scrollY - 78,
+    travel: e.clientHeight - (e.firstElementChild as HTMLElement).offsetHeight,
+  }));
+  await seek(scene.start + scene.travel * 0.6);
+  expect((await matrix("[data-agent-parallax-left]")).y).toBeLessThan(-140);
+  expect((await matrix("[data-agent-parallax-response]")).y).toBeGreaterThan(
+    140,
+  );
+  expect(
+    await page
+      .locator("[data-agent-parallax-left]")
+      .evaluate((e) => getComputedStyle(e).backgroundColor),
+  ).toBe("rgb(17, 23, 34)");
+  const left = (await page.locator("[data-agent-parallax-left]").boundingBox())!
+    .y;
+  const right = (await page
+    .locator("[data-agent-parallax-response]")
+    .boundingBox())!.y;
+  await seek(scene.start + scene.travel * 0.95);
+  expect(
+    (await page.locator("[data-agent-parallax-left]").boundingBox())!.y,
+  ).toBeLessThan(left - 350);
+  expect(
+    (await page.locator("[data-agent-parallax-response]").boundingBox())!.y,
+  ).toBeLessThan(right - 350);
+  await expect(
+    page.getByRole("heading", { name: "Before you decide." }),
+  ).toHaveCount(0);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  expect((await matrix("[data-agent-parallax-left]")).y).toBe(0);
+  expect((await matrix("[data-agent-parallax-response]")).y).toBe(0);
 });

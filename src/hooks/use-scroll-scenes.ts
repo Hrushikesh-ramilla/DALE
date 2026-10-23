@@ -131,6 +131,7 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         const track = root.closest<HTMLElement>("[data-hero-track]")!;
         track.dataset.heroHeld = "true";
         const timeline = gsap.timeline({
+          defaults: { duration: 1, ease: "none" },
           scrollTrigger: {
             trigger: track,
             start: "top 180px",
@@ -143,13 +144,13 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         timeline.fromTo(
           root.querySelector("[data-hero-portal]"),
           { scale: 1 },
-          { scale: 0.45, ease: "none" },
+          { scale: 0.6, ease: "none" },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-world]"),
           { y: 38, scale: 1.12 },
-          { y: -38, scale: 1.03, ease: "none" },
+          { y: -38, scale: 1.03, duration: 1.65, ease: "none" },
           0,
         );
         timeline.to(
@@ -194,6 +195,16 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
           { scaleX: 1, ease: "none" },
           0,
         );
+        // Hold the photograph while the contracted foreground leaves first.
+        timeline.to(
+          root.querySelector("[data-hero-portal]"),
+          {
+            y: () => -innerHeight * 0.85,
+            duration: 0.55,
+            ease: "power1.in",
+          },
+          1.1,
+        );
         root.toggleAttribute(
           "data-scroll-active",
           !!timeline.scrollTrigger?.isActive,
@@ -237,26 +248,62 @@ export function useEditorialPageParallax(
               invalidateOnRefresh: true,
             },
           });
-          timeline.fromTo(
-            surface.querySelector(agent ? "[data-agent-parallax-title]" : "p"),
-            { x: 0, y: 0 },
-            { x: 0, y: -65, ease: "none" },
-            0,
-          );
-          timeline.fromTo(
-            surface.querySelector(
-              agent ? "[data-agent-parallax-response]" : "button",
-            ),
-            { x: 0, y: 0 },
-            { x: 0, y: agent ? 65 : 40, ease: "none" },
-            0,
-          );
-          timeline.fromTo(
-            surface.querySelector(agent ? ".hero-dale-badge" : ":scope > span"),
-            { y: 0 },
-            { y: -65, ease: "none" },
-            0,
-          );
+          if (agent) {
+            const left = surface.querySelector("[data-agent-parallax-left]");
+            const right = surface.querySelector(
+              "[data-agent-parallax-response]",
+            );
+            timeline.fromTo(
+              left,
+              { y: 0 },
+              {
+                y: () => -innerHeight * 0.16,
+                duration: 0.65,
+                ease: "none",
+              },
+              0,
+            );
+            timeline.fromTo(
+              right,
+              { y: 0 },
+              {
+                y: () => innerHeight * 0.16,
+                duration: 0.65,
+                ease: "none",
+              },
+              0,
+            );
+            // Preserve the split positions while both panels leave together.
+            timeline.fromTo(
+              surface.querySelector(".hero-dale-inner"),
+              { y: 0 },
+              {
+                y: () => -innerHeight * 0.72,
+                duration: 0.35,
+                ease: "power1.in",
+              },
+              0.65,
+            );
+          } else {
+            timeline.fromTo(
+              surface.querySelector("p"),
+              { x: 0, y: 0 },
+              { x: 0, y: -65, ease: "none" },
+              0,
+            );
+            timeline.fromTo(
+              surface.querySelector("button"),
+              { x: 0, y: 0 },
+              { x: 0, y: 40, ease: "none" },
+              0,
+            );
+            timeline.fromTo(
+              surface.querySelector(":scope > span"),
+              { y: 0 },
+              { y: -65, ease: "none" },
+              0,
+            );
+          }
           track.dataset.parallaxReady = "true";
           return timeline;
         });
