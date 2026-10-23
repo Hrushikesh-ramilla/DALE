@@ -90,7 +90,11 @@ export function HomeOpening() {
           role="status"
           aria-label="Opening DALE"
         >
-          <CinematicIntro prepare={prepare} onComplete={finish} />
+          <CinematicIntro
+            prepare={prepare}
+            onComplete={finish}
+            targetSelector="[data-brand-logo] svg"
+          />
           <button type="button" className="opening-skip" onClick={finish}>
             Skip intro <span aria-hidden="true">↗</span>
           </button>
