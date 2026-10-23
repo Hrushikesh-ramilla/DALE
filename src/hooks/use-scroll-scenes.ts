@@ -140,6 +140,12 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
               root.toggleAttribute("data-scroll-active", self.isActive),
           },
         });
+        timeline.fromTo(
+          root.querySelector("[data-hero-portal]"),
+          { scale: 1, borderRadius: 0 },
+          { scale: 0.86, borderRadius: 20, ease: "none" },
+          0,
+        );
         timeline.to(
           root.querySelector("[data-hero-edition]"),
           { opacity: 0, duration: 0.18, ease: "none" },

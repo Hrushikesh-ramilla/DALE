@@ -51,48 +51,97 @@
   grid-template-columns: 0.95fr 1.05fr;
   min-height: 470px;
   border: 1px solid #ffffff21;
-  border-radius: 2px;
+  border-radius: 9px;
   text-decoration: none;
   color: #f1f0e9;
-  background: linear-gradient(145deg, #232421, #11120f 60%);
+  background: linear-gradient(125deg, #343a32 0%, #20251f 34%, #111710 75%);
   box-shadow:
-    0 1px 0 #ffffff13 inset,
-    0 4px 0 #d8d5c9,
-    0 8px 0 #99998c,
-    0 18px 28px #292f1b1f;
+    inset 0 2px 1px #ffffff75,
+    inset 2px 0 1px #c9d9b940,
+    inset 0 -2px 1px #e4efce35,
+    8px 28px 24px -12px #28332266,
+    0 40px 46px -24px #28332255;
   transform-style: flat;
 }
+/* Static cut-glass faces add thickness without a second blurred scene. */
 .plate::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 4;
+  border: 1px solid #f3ffe68c;
   border-radius: inherit;
-  pointer-events: none;
-  border: 1px solid #ffffff10;
+  box-shadow:
+    inset 0 0 0 3px #edf6dc12,
+    inset 0 0 0 5px #161f161c;
   background: linear-gradient(
-    115deg,
-    transparent 30%,
-    #ffffff0a 50%,
-    transparent 70%
+    116deg,
+    #ffffff12,
+    transparent 31%,
+    transparent 72%,
+    #e3f4cd0d
   );
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.plate::before {
-  content: "";
-  position: absolute;
-  inset: auto 0 -9px;
-  height: 8px;
-  border: 1px solid #ffffff3d;
-  background: linear-gradient(90deg, #777c6d, #d9d7cb 55%, #9c9f91);
   pointer-events: none;
+  transition: opacity 350ms ease;
+  opacity: 0.7;
 }
 .plate:hover::after {
   opacity: 1;
 }
+.plate::before {
+  content: "";
+  position: absolute;
+  inset: 5px 5px auto;
+  height: 1px;
+  z-index: 5;
+  background: linear-gradient(90deg, #ecf9db80, #fff9 46%, #fff2);
+  pointer-events: none;
+}
 .plate:focus-visible {
-  outline: 2px solid #e6e5db;
-  outline-offset: 8px;
+  outline: 2px solid #59684a;
+  outline-offset: 13px;
+}
+.glassEdge {
+  position: absolute;
+  top: calc(100% - 3px);
+  left: 0;
+  right: -10px;
+  height: 25px;
+  border: 1px solid #71806a9c;
+  border-top-color: #f7ffe5;
+  border-radius: 0 0 9px 9px;
+  background:
+    linear-gradient(
+      180deg,
+      #f2f8e9c9 0 9%,
+      #9caa939c 10% 24%,
+      #cbd9bcba 27% 53%,
+      #64765ca6 57% 73%,
+      #d5e5c6c9 78% 84%,
+      #6c7e629c 91%
+    ),
+    linear-gradient(90deg, #52684d, #e5edda 48%, #7c8f71);
+  box-shadow:
+    inset 0 -2px 2px #e7f6dc7a,
+    0 2px 0 #4b5b439c;
+  pointer-events: none;
+}
+.glassSide {
+  position: absolute;
+  top: 8px;
+  bottom: -20px;
+  right: -10px;
+  width: 11px;
+  border-radius: 0 6px 7px 0;
+  border: 1px solid #c8d7b8ad;
+  background: linear-gradient(
+    90deg,
+    #eff8deaa,
+    #758b6c9c 38%,
+    #dbe9cbaa 68%,
+    #596c50b8
+  );
+  pointer-events: none;
 }
 .copy {
   display: flex;
@@ -159,7 +208,7 @@
 .visual {
   position: relative;
   min-height: 430px;
-  border-radius: 0;
+  border-radius: 0 8px 8px 0;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -266,7 +315,7 @@
   }
   .slot {
     position: sticky;
-    top: calc(var(--stack-top, 90px) + var(--stack-order, 0) * 6px);
+    top: calc(var(--stack-top, 90px) + var(--stack-order, 0) * 11px);
     z-index: calc(1 + var(--stack-order, 0));
     align-self: start;
     scroll-margin-top: 110px;
@@ -341,13 +390,13 @@
     font-size: 12px;
   }
   .list {
-    gap: 26px;
+    gap: 44px;
   }
   .plate {
     display: flex;
     flex-direction: column;
     min-height: 0;
-    border-radius: 2px;
+    border-radius: 9px;
   }
   .copy {
     padding: 26px;
@@ -365,7 +414,7 @@
   }
   .visual {
     min-height: 275px;
-    border-radius: 0;
+    border-radius: 0 0 8px 8px;
   }
   .object {
     height: 225px;

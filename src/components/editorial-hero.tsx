@@ -57,137 +57,139 @@ export function EditorialHero() {
         aria-label="The everyday edit"
         ref={scene}
       >
-        <div
-          className={styles.sceneBackdrop}
-          data-hero-backdrop
-          aria-hidden="true"
-        >
-          <div className={styles.atmosphere} data-hero-atmosphere>
-            <Image
-              src="/images/editorial/atelier-light.webp"
-              alt=""
-              fill
-              sizes="100vw"
-              loading="eager"
-              fetchPriority="low"
-              className={styles.ambientImage}
-            />
+        <div className={styles.portal} data-hero-portal>
+          <div
+            className={styles.sceneBackdrop}
+            data-hero-backdrop
+            aria-hidden="true"
+          >
+            <div className={styles.atmosphere} data-hero-atmosphere>
+              <Image
+                src="/images/editorial/atelier-light.webp"
+                alt=""
+                fill
+                sizes="100vw"
+                loading="eager"
+                fetchPriority="low"
+                className={styles.ambientImage}
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles.edition} data-hero-edition>
-          <span>DALE / A MORE PERSONAL WAY TO SHOP</span>
-          <span>OBJECTS. IDEAS. EVERYDAY LIFE.</span>
-        </div>
-        <div className={styles.copy} data-hero-copy>
-          <span className={styles.eyebrow}>
-            <span aria-hidden="true" /> YOUR PERSONAL SHOPPING AGENT
-          </span>
-          <h2>
-            <span className={styles.line}>
-              <span>
-                <LivingType text="A better" entrance />
+          <div className={styles.edition} data-hero-edition>
+            <span>DALE / A MORE PERSONAL WAY TO SHOP</span>
+            <span>OBJECTS. IDEAS. EVERYDAY LIFE.</span>
+          </div>
+          <div className={styles.copy} data-hero-copy>
+            <span className={styles.eyebrow}>
+              <span aria-hidden="true" /> YOUR PERSONAL SHOPPING AGENT
+            </span>
+            <h2>
+              <span className={styles.line}>
+                <span>
+                  <LivingType text="A better" entrance />
+                </span>
               </span>
+              <span className={styles.line}>
+                <em>
+                  <LivingType text="everyday." entrance />
+                </em>
+              </span>
+            </h2>
+            <p>
+              Find what fits your life.
+              <br />
+              Let DALE do the searching.
+            </p>
+            <div className={styles.actions}>
+              <button type="button" onClick={openAssistant}>
+                Start a conversation <ArrowUpRight size={17} />
+              </button>
+              <a href="#collections">
+                Explore the collection <ArrowDown size={14} />
+              </a>
+            </div>
+            <span className={styles.note}>
+              Your preferences. Your approval. Always.
             </span>
-            <span className={styles.line}>
-              <em>
-                <LivingType text="everyday." entrance />
-              </em>
-            </span>
-          </h2>
-          <p>
-            Find what fits your life.
-            <br />
-            Let DALE do the searching.
-          </p>
-          <div className={styles.actions}>
-            <button type="button" onClick={openAssistant}>
-              Start a conversation <ArrowUpRight size={17} />
-            </button>
-            <a href="#collections">
-              Explore the collection <ArrowDown size={14} />
-            </a>
           </div>
-          <span className={styles.note}>
-            Your preferences. Your approval. Always.
-          </span>
-        </div>
-        <div className={styles.display} data-hero-display>
-          <div className={styles.displayEntrance} data-hero-entrance>
-            <div className={styles.displayShell} data-hero-pointer-plane>
-              <div className={styles.displayTitle}>
-                <span>THE DAILY EDIT</span>
-                <span>0{index + 1} / 04</span>
-              </div>
-              <div className={styles.stage} ref={ref} data-hero-depth>
-                <div className={styles.frame} aria-hidden="true" />
-                <span className={styles.vertical} aria-hidden="true">
-                  DALE — OBJECT STUDY
-                </span>
-                <div className={styles.forwardObject} data-hero-forward>
-                  <div className={styles.object} key={product.id}>
-                    <ProductViewer product={product} priority={index === 0} />
+          <div className={styles.display} data-hero-display>
+            <div className={styles.displayEntrance} data-hero-entrance>
+              <div className={styles.displayShell} data-hero-pointer-plane>
+                <div className={styles.displayTitle}>
+                  <span>THE DAILY EDIT</span>
+                  <span>0{index + 1} / 04</span>
+                </div>
+                <div className={styles.stage} ref={ref} data-hero-depth>
+                  <div className={styles.frame} aria-hidden="true" />
+                  <span className={styles.vertical} aria-hidden="true">
+                    DALE — OBJECT STUDY
+                  </span>
+                  <div className={styles.forwardObject} data-hero-forward>
+                    <div className={styles.object} key={product.id}>
+                      <ProductViewer product={product} priority={index === 0} />
+                    </div>
                   </div>
+                  <div className={styles.plinth} aria-hidden="true" />
+                  <span className={styles.objectNumber} aria-hidden="true">
+                    0{index + 1}
+                  </span>
                 </div>
-                <div className={styles.plinth} aria-hidden="true" />
-                <span className={styles.objectNumber} aria-hidden="true">
-                  0{index + 1}
-                </span>
-              </div>
-              <div className={styles.caption}>
-                <div>
-                  <Link href={`/product/${product.id}`}>{product.name}</Link>
-                  <small>
-                    {formatMoney(product.price)} · DALE sandbox offer
-                  </small>
-                </div>
-                <Link
-                  href={`/product/${product.id}`}
-                  className={styles.open}
-                  aria-label={`View ${product.name}`}
-                >
-                  <ArrowUpRight size={20} />
-                </Link>
-              </div>
-              <div className={styles.controls} aria-label="Featured products">
-                <button
-                  aria-label="Previous featured product"
-                  onClick={() =>
-                    setIndex((index + edit.length - 1) % edit.length)
-                  }
-                >
-                  <ArrowLeft size={16} />
-                </button>
-                {edit.map((item, i) => (
-                  <button
-                    key={item.id}
-                    className={styles.dot}
-                    aria-label={`Feature ${item.name}`}
-                    aria-pressed={i === index}
-                    onClick={() => setIndex(i)}
+                <div className={styles.caption}>
+                  <div>
+                    <Link href={`/product/${product.id}`}>{product.name}</Link>
+                    <small>
+                      {formatMoney(product.price)} · DALE sandbox offer
+                    </small>
+                  </div>
+                  <Link
+                    href={`/product/${product.id}`}
+                    className={styles.open}
+                    aria-label={`View ${product.name}`}
                   >
-                    <span />
+                    <ArrowUpRight size={20} />
+                  </Link>
+                </div>
+                <div className={styles.controls} aria-label="Featured products">
+                  <button
+                    aria-label="Previous featured product"
+                    onClick={() =>
+                      setIndex((index + edit.length - 1) % edit.length)
+                    }
+                  >
+                    <ArrowLeft size={16} />
                   </button>
-                ))}
-                <button
-                  aria-label="Next featured product"
-                  onClick={() => setIndex((index + 1) % edit.length)}
-                >
-                  <ArrowRight size={16} />
-                </button>
+                  {edit.map((item, i) => (
+                    <button
+                      key={item.id}
+                      className={styles.dot}
+                      aria-label={`Feature ${item.name}`}
+                      aria-pressed={i === index}
+                      onClick={() => setIndex(i)}
+                    >
+                      <span />
+                    </button>
+                  ))}
+                  <button
+                    aria-label="Next featured product"
+                    onClick={() => setIndex((index + 1) % edit.length)}
+                  >
+                    <ArrowRight size={16} />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.baseline}>
-          <span className={styles.scrollCue}>
-            SCROLL TO DISCOVER{" "}
-            <span className={styles.progressRail} aria-hidden="true">
-              <span data-hero-progress />
+          <div className={styles.baseline}>
+            <span className={styles.scrollCue}>
+              SCROLL TO DISCOVER{" "}
+              <span className={styles.progressRail} aria-hidden="true">
+                <span data-hero-progress />
+              </span>
             </span>
-          </span>
-          <a href="#collections">
-            Discover what belongs with you <ArrowDown size={13} />
-          </a>
+            <a href="#collections">
+              Discover what belongs with you <ArrowDown size={13} />
+            </a>
+          </div>
         </div>
       </section>
     </div>

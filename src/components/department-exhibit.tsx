@@ -49,6 +49,12 @@ function CollectionPlate({
           className={styles.plate}
           data-department-card={collection.id}
         >
+          <span
+            className={styles.glassEdge}
+            data-glass-edge
+            aria-hidden="true"
+          />
+          <span className={styles.glassSide} aria-hidden="true" />
           <div className={styles.copy}>
             <span className={styles.index}>
               {collection.numeral} <span>THE COLLECTION</span>

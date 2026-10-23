@@ -795,3 +795,76 @@ test("late catalog category changes cannot remove the hero scroll scene", async 
     release();
   }
 });
+
+test("hero contracts evenly on four sides while its product advances, and resets for reduced motion", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  const track = page.locator("[data-hero-track]");
+  await expect(track).toHaveAttribute("data-hero-held", "true");
+  await page.evaluate(() => document.fonts.ready);
+  const portal = page.locator("[data-hero-portal]");
+  const start = await track.evaluate(
+    (e) => e.getBoundingClientRect().top + scrollY - 78,
+  );
+  await page.evaluate(
+    (y) => scrollTo({ top: y + 900, behavior: "instant" }),
+    start,
+  );
+  await expect
+    .poll(() =>
+      portal.evaluate(
+        (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
+      ),
+    )
+    .toBeLessThan(0.9);
+  const geometry = await portal.evaluate((e) => {
+    const frame = e.getBoundingClientRect();
+    const root = e.parentElement!.getBoundingClientRect();
+    const object = new DOMMatrixReadOnly(
+      getComputedStyle(document.querySelector("[data-hero-forward]")!)
+        .transform,
+    );
+    return {
+      left: frame.left - root.left,
+      right: root.right - frame.right,
+      top: frame.top - root.top,
+      bottom: root.bottom - frame.bottom,
+      productScale: object.a,
+    };
+  });
+  expect(geometry.left).toBeGreaterThan(70);
+  expect(geometry.top).toBeGreaterThan(40);
+  expect(Math.abs(geometry.left - geometry.right)).toBeLessThan(1);
+  expect(Math.abs(geometry.top - geometry.bottom)).toBeLessThan(1);
+  expect(geometry.productScale).toBeGreaterThan(1.1);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(track).not.toHaveAttribute("data-hero-held", "true");
+  expect(await portal.evaluate((e) => getComputedStyle(e).transform)).toBe(
+    "none",
+  );
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth > innerWidth,
+    ),
+  ).toBe(false);
+});
+
+test("collection slabs retain visible cut-glass thickness without intercepting their links", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const card = page.locator("[data-department-card]").first();
+  const edge = card.locator("[data-glass-edge]");
+  await expect(edge).toHaveAttribute("aria-hidden", "true");
+  const shape = await edge.evaluate((e) => ({
+    height: e.getBoundingClientRect().height,
+    pointer: getComputedStyle(e).pointerEvents,
+  }));
+  expect(shape.height).toBeGreaterThanOrEqual(24);
+  expect(shape.pointer).toBe("none");
+  await card.click();
+  await expect(page).toHaveURL(/\/department\/electronics$/);
+});

@@ -4,11 +4,25 @@
   min-height: 820px;
   min-height: max(780px, calc(100svh - 132px));
   overflow: clip;
-  padding: 0 clamp(24px, 5.2vw, 100px);
-  background: #e8e3d9;
+  padding: 0;
+  background: #d9d9ce;
   color: var(--scene-ink);
   text-align: left;
   isolation: isolate;
+}
+/* The frame contracts independently of the copy, glass and product planes. */
+.portal {
+  position: relative;
+  min-height: inherit;
+  height: 100%;
+  padding: 0 clamp(24px, 5.2vw, 100px);
+  overflow: clip;
+  isolation: isolate;
+  background: #e8e3d9;
+  transform-origin: center;
+  box-shadow:
+    0 2px 0 #fff9,
+    0 12px 30px #353b2b24;
 }
 .sceneBackdrop {
   position: absolute;
@@ -20,7 +34,7 @@
   object-fit: cover;
   object-position: center;
 }
-.hero::before {
+.portal::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -398,6 +412,10 @@
 @media (max-width: 760px) {
   .hero.hero {
     min-height: 0;
+    padding: 0;
+  }
+  .portal {
+    height: auto;
     padding: 0 22px 35px;
   }
   .edition {
@@ -501,7 +519,7 @@
   .ambientImage {
     object-position: 58% center;
   }
-  .hero::before {
+  .portal::before {
     background: linear-gradient(#eee9e0a6 40%, #eee9e044);
   }
 }
@@ -743,6 +761,7 @@
 }
 
 /* Cache only the active scene's changing scales; release it outside the hold. */
+.hero[data-scroll-active] .portal,
 .hero[data-scroll-active] .forwardObject,
 .hero[data-scroll-active] .display,
 .hero[data-scroll-active] .sceneBackdrop {
