@@ -95,7 +95,11 @@ export async function getDepartmentPreviews(
       leafType: row.leaf_type,
       count: Number(row.count),
       minPrice: Number(row.min_price),
-      brands: (row.brands || []).filter(Boolean),
+      brands: (row.brands || []).filter(
+        (brand, index, brands) =>
+          brand &&
+          brands.findIndex((other) => other.toLowerCase() === brand.toLowerCase()) === index,
+      ),
       heroProduct,
     };
   }
@@ -122,14 +126,14 @@ export async function getCategoryBrandsSummary(
     record: Product;
   }>(
     `SELECT
-      coalesce(brand, record->>'brand', 'Unknown') as brand,
+        min(coalesce(brand, record->>'brand', 'Unknown')) as brand,
       count(*)::text as count,
       min(price) as min_price,
       (array_agg(record->'media'->>'url' ORDER BY price DESC))[1] as hero_img,
       (array_agg(record ORDER BY price DESC))[1] as record
     FROM catalog_products
     WHERE publication='published' AND (leaf_type = $1 OR category = $1)
-    GROUP BY coalesce(brand, record->>'brand', 'Unknown')
+      GROUP BY lower(coalesce(brand, record->>'brand', 'Unknown'))
     ORDER BY count(*) DESC, brand ASC`,
     [leaf],
   );
@@ -227,6 +231,11 @@ export async function browseCatalog(input: {
   sort?: "featured" | "price-asc" | "price-desc" | "brand-asc";
 }) {
   const database = await getDatabase();
+  // Brand identity is indexed separately. Legacy attribute spellings can differ
+  // ("All-Clad" / "all clad") or be absent; do not intersect both representations.
+  const { brand: requirementBrand, ...attributeRequirements } =
+    input.requirements || {};
+  const selectedBrand = input.brand || String(requirementBrand || "");
   const filter = catalogFilterHash(input);
   const position = input.cursor
     ? decodeCatalogCursor(input.cursor, filter)
@@ -245,10 +254,10 @@ export async function browseCatalog(input: {
     input.category || "",
     input.query || "",
     input.budget ?? 100000000,
-    JSON.stringify(input.requirements || {}),
+    JSON.stringify(attributeRequirements),
     Boolean(input.fixtures),
     input.leafType || "",
-    input.brand || "",
+    selectedBrand,
   ];
   const where = `($1='' OR category=$1 OR leaf_type=$1)
     AND ($6='' OR leaf_type=$6 OR record->>'leafType'=$6 OR category=$6)
@@ -281,13 +290,13 @@ export async function browseCatalog(input: {
     hero_img: string;
   }>(
     `SELECT
-      coalesce(brand, record->>'brand', 'Unknown') as brand,
+        min(coalesce(brand, record->>'brand', 'Unknown')) as brand,
       count(*)::text as count,
       min(price) as min_price,
       (array_agg(record->'media'->>'url' ORDER BY price DESC))[1] as hero_img
     FROM catalog_products
     WHERE publication='published' AND ($1='' OR leaf_type=$1 OR category=$1)
-    GROUP BY coalesce(brand, record->>'brand', 'Unknown')
+      GROUP BY lower(coalesce(brand, record->>'brand', 'Unknown'))
     ORDER BY count(*) DESC, brand ASC`,
     [input.leafType || input.category || ""],
   );

@@ -1,0 +1,3856 @@
+{
+  "id": "exact-fragrance-duplicates-2026-10-24",
+  "operations": [
+    {
+      "oldId": "FRAGRANCE-AMOUAGE-41005",
+      "expected": {
+        "name": "Amouage Reflection Man · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "source": "https://amouage.com/products/reflection-man-100ml",
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "reflection man",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [],
+      "product": {
+        "id": "FRAGRANCE-AMOUAGE-41005",
+        "name": "Amouage Reflection Man · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "color": "100ml",
+        "media": {
+          "url": "/images/verified/fragrance-amouage-41005-c1b3346ffff26ad5.webp",
+          "source": "https://amouage.com/products/reflection-man-100ml",
+          "alt": "Amouage Reflection Man · Eau de Parfum · 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 39500,
+        "specs": [
+          "Manufacturer reference: 41005",
+          "Bottle size: 100 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Refined floral and woody composition; manufacturer records 25% fragrance oil."
+        ],
+        "stock": 25,
+        "source": "https://amouage.com/products/reflection-man-100ml",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "amouage:8897002799396",
+        "leafType": "fragrance",
+        "modelName": "Reflection Man",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "reflection man",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "41005",
+          "manufacturerVariantId": "47515451130148",
+          "scentDescription": "Refined floral and woody composition; manufacturer records 25% fragrance oil."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "100ml",
+        "description": "Amouage Reflection Man. Refined floral and woody composition; manufacturer records 25% fragrance oil. Selected 100 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": []
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://amouage.com/products/reflection-man-100ml",
+        "manufacturerSku": "41005",
+        "manufacturerProductId": 8897002799396,
+        "manufacturerVariantId": 47515451130148,
+        "volumeMl": 100,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/REFLECTION_100_ML.jpg?v=1758803038",
+        "photographSha256": "c1b3346ffff26ad51bb520d7b13717cf6f64324f4932a3885aaeeb71dcfbb4bb",
+        "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "B031",
+      "expected": {
+        "name": "Amouage Reflection Man · 100ml",
+        "brand": "Amouage",
+        "source": "https://amouage.com/en-uk/products/reflection-man-100ml",
+        "attributes": {
+          "brand": "amouage",
+          "scent": "amber",
+          "volumeMl": 100,
+          "modelName": "reflection man",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [],
+      "product": {
+        "id": "FRAGRANCE-AMOUAGE-41005",
+        "name": "Amouage Reflection Man · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "color": "100ml",
+        "media": {
+          "url": "/images/verified/fragrance-amouage-41005-c1b3346ffff26ad5.webp",
+          "source": "https://amouage.com/products/reflection-man-100ml",
+          "alt": "Amouage Reflection Man · Eau de Parfum · 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 39500,
+        "specs": [
+          "Manufacturer reference: 41005",
+          "Bottle size: 100 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Refined floral and woody composition; manufacturer records 25% fragrance oil."
+        ],
+        "stock": 25,
+        "source": "https://amouage.com/products/reflection-man-100ml",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "amouage:8897002799396",
+        "leafType": "fragrance",
+        "modelName": "Reflection Man",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "reflection man",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "41005",
+          "manufacturerVariantId": "47515451130148",
+          "scentDescription": "Refined floral and woody composition; manufacturer records 25% fragrance oil."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "100ml",
+        "description": "Amouage Reflection Man. Refined floral and woody composition; manufacturer records 25% fragrance oil. Selected 100 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": []
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://amouage.com/products/reflection-man-100ml",
+        "manufacturerSku": "41005",
+        "manufacturerProductId": 8897002799396,
+        "manufacturerVariantId": 47515451130148,
+        "volumeMl": 100,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/REFLECTION_100_ML.jpg?v=1758803038",
+        "photographSha256": "c1b3346ffff26ad51bb520d7b13717cf6f64324f4932a3885aaeeb71dcfbb4bb",
+        "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "41005",
+        "duplicateManufacturerVariantId": 47515451130148
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-AMOUAGE-41019",
+      "expected": {
+        "name": "Amouage Interlude Man · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "source": "https://amouage.com/products/interlude-man-100ml",
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "interlude man",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [],
+      "product": {
+        "id": "FRAGRANCE-AMOUAGE-41019",
+        "name": "Amouage Interlude Man · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "color": "100ml",
+        "media": {
+          "url": "/images/verified/fragrance-amouage-41019-15c868ae7b3e4f3f.webp",
+          "source": "https://amouage.com/products/interlude-man-100ml",
+          "alt": "Amouage Interlude Man · Eau de Parfum · 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 39500,
+        "specs": [
+          "Manufacturer reference: 41019",
+          "Bottle size: 100 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Spicy and woody composition; manufacturer records 29% fragrance oil."
+        ],
+        "stock": 25,
+        "source": "https://amouage.com/products/interlude-man-100ml",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "amouage:8897004044580",
+        "leafType": "fragrance",
+        "modelName": "Interlude Man",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "interlude man",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "41019",
+          "manufacturerVariantId": "47515478589732",
+          "scentDescription": "Spicy and woody composition; manufacturer records 29% fragrance oil."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "100ml",
+        "description": "Amouage Interlude Man. Spicy and woody composition; manufacturer records 29% fragrance oil. Selected 100 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": []
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://amouage.com/products/interlude-man-100ml",
+        "manufacturerSku": "41019",
+        "manufacturerProductId": 8897004044580,
+        "manufacturerVariantId": 47515478589732,
+        "volumeMl": 100,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/INTERLUDE_MAN_100_ML.jpg?v=1758794506",
+        "photographSha256": "15c868ae7b3e4f3f112ca41d843c3b8b2ac2025e1519c1f70a6af5a24e8428af",
+        "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-AMOUAGE-47515478589732",
+      "expected": {
+        "name": "Amouage Interlude Man · Eau De Parfum · 100ml",
+        "brand": "Amouage",
+        "source": "https://amouage.com/products/interlude-man-100ml",
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "interlude man",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Amouage Interlude Man · Eau De Parfum · 100ml",
+          "brand": "Amouage",
+          "source": "https://amouage.com/products/interlude-man-100ml",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 100,
+            "brand": "amouage",
+            "modelName": "interlude man",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-AMOUAGE-41019",
+        "name": "Amouage Interlude Man · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "color": "100ml",
+        "media": {
+          "url": "/images/verified/fragrance-amouage-41019-15c868ae7b3e4f3f.webp",
+          "source": "https://amouage.com/products/interlude-man-100ml",
+          "alt": "Amouage Interlude Man · Eau de Parfum · 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 39500,
+        "specs": [
+          "Manufacturer reference: 41019",
+          "Bottle size: 100 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Spicy and woody composition; manufacturer records 29% fragrance oil."
+        ],
+        "stock": 25,
+        "source": "https://amouage.com/products/interlude-man-100ml",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "amouage:8897004044580",
+        "leafType": "fragrance",
+        "modelName": "Interlude Man",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "interlude man",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "41019",
+          "manufacturerVariantId": "47515478589732",
+          "scentDescription": "Spicy and woody composition; manufacturer records 29% fragrance oil."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "100ml",
+        "description": "Amouage Interlude Man. Spicy and woody composition; manufacturer records 29% fragrance oil. Selected 100 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": []
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://amouage.com/products/interlude-man-100ml",
+        "manufacturerSku": "41019",
+        "manufacturerProductId": 8897004044580,
+        "manufacturerVariantId": 47515478589732,
+        "volumeMl": 100,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/INTERLUDE_MAN_100_ML.jpg?v=1758794506",
+        "photographSha256": "15c868ae7b3e4f3f112ca41d843c3b8b2ac2025e1519c1f70a6af5a24e8428af",
+        "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "41019",
+        "duplicateManufacturerVariantId": 47515478589732
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-AMOUAGE-41045",
+      "expected": {
+        "name": "Amouage Guidance · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "source": "https://amouage.com/products/100ml-guidance",
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "guidance",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [],
+      "product": {
+        "id": "FRAGRANCE-AMOUAGE-41045",
+        "name": "Amouage Guidance · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "color": "100ml",
+        "media": {
+          "url": "/images/verified/fragrance-amouage-41045-ec12ade13925da98.webp",
+          "source": "https://amouage.com/products/100ml-guidance",
+          "alt": "Amouage Guidance · Eau de Parfum · 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 39500,
+        "specs": [
+          "Manufacturer reference: 41045",
+          "Bottle size: 100 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Rose, frankincense and ambergris; manufacturer records 25% fragrance oil."
+        ],
+        "stock": 25,
+        "source": "https://amouage.com/products/100ml-guidance",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "amouage:8897012072740",
+        "leafType": "fragrance",
+        "modelName": "Guidance",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "guidance",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "41045",
+          "manufacturerVariantId": "47515458601252",
+          "scentDescription": "Rose, frankincense and ambergris; manufacturer records 25% fragrance oil."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "100ml",
+        "description": "Amouage Guidance. Rose, frankincense and ambergris; manufacturer records 25% fragrance oil. Selected 100 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": []
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://amouage.com/products/100ml-guidance",
+        "manufacturerSku": "41045",
+        "manufacturerProductId": 8897012072740,
+        "manufacturerVariantId": 47515458601252,
+        "volumeMl": 100,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GUIDANCE_100_ML.jpg?v=1758540475",
+        "photographSha256": "ec12ade13925da980d2d8bd7c48219bf080d0dff61314ef3564505ee7f31a587",
+        "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-AMOUAGE-47515458601252",
+      "expected": {
+        "name": "Amouage Guidance · Eau De Parfum · 100ml",
+        "brand": "Amouage",
+        "source": "https://amouage.com/products/100ml-guidance",
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "guidance",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Amouage Guidance · Eau De Parfum · 100ml",
+          "brand": "Amouage",
+          "source": "https://amouage.com/products/100ml-guidance",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 100,
+            "brand": "amouage",
+            "modelName": "guidance",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-AMOUAGE-41045",
+        "name": "Amouage Guidance · Eau de Parfum · 100ml",
+        "brand": "Amouage",
+        "color": "100ml",
+        "media": {
+          "url": "/images/verified/fragrance-amouage-41045-ec12ade13925da98.webp",
+          "source": "https://amouage.com/products/100ml-guidance",
+          "alt": "Amouage Guidance · Eau de Parfum · 100ml",
+          "attribution": "Amouage manufacturer product image; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 39500,
+        "specs": [
+          "Manufacturer reference: 41045",
+          "Bottle size: 100 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Rose, frankincense and ambergris; manufacturer records 25% fragrance oil."
+        ],
+        "stock": 25,
+        "source": "https://amouage.com/products/100ml-guidance",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "amouage:8897012072740",
+        "leafType": "fragrance",
+        "modelName": "Guidance",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "amouage",
+          "volumeMl": 100,
+          "modelName": "guidance",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "41045",
+          "manufacturerVariantId": "47515458601252",
+          "scentDescription": "Rose, frankincense and ambergris; manufacturer records 25% fragrance oil."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "100ml",
+        "description": "Amouage Guidance. Rose, frankincense and ambergris; manufacturer records 25% fragrance oil. Selected 100 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": []
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://amouage.com/products/100ml-guidance",
+        "manufacturerSku": "41045",
+        "manufacturerProductId": 8897012072740,
+        "manufacturerVariantId": 47515458601252,
+        "volumeMl": 100,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0823/5099/7796/files/GUIDANCE_100_ML.jpg?v=1758540475",
+        "photographSha256": "ec12ade13925da980d2d8bd7c48219bf080d0dff61314ef3564505ee7f31a587",
+        "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "41045",
+        "duplicateManufacturerVariantId": 47515458601252
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-42512739008740",
+      "expected": {
+        "name": "Initio BLESSED BARAKA · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/blessed-baraka",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "blessed baraka",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio BLESSED BARAKA · Eau De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/blessed-baraka",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "blessed baraka",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512739008740",
+        "name": "Initio BLESSED BARAKA · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512739008740-4bd43e15a902858b.webp",
+          "source": "https://us.initioparfums.com/products/blessed-baraka",
+          "alt": "Initio BLESSED BARAKA · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINAB0002SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: White flowers, sandalwood and musk."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/blessed-baraka",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:blessed-baraka",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "blessed baraka",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINAB0002SP",
+          "manufacturerVariantId": "42512739008740",
+          "scentDescription": "White flowers, sandalwood and musk."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio BLESSED BARAKA. White flowers, sandalwood and musk. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "BLESSED BARAKA"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/blessed-baraka",
+        "manufacturerSku": "NINAB0002SP",
+        "manufacturerProductId": 7561650536676,
+        "manufacturerVariantId": 42512739008740,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/BLESSEDBARAKA_MasterProductPackshot_BlessedBaraka_63438446-6603-4a72-a86f-6ceca29e8a5c.png?v=1761284575",
+        "photographSha256": "4bd43e15a902858b43c20361af048a473cc8246f57620476214d42345152e9d7",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-BLESSED-BARAKA",
+      "expected": {
+        "name": "Initio Blessed Baraka Eau de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/blessed-baraka",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "White Flowers",
+          "volumeMl": 90,
+          "baseNotes": "Amber, Musk, Vanilla",
+          "modelName": "blessed baraka eau de parfum",
+          "heartNotes": "Sandalwood, Spices",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "oriental amber"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Blessed Baraka Eau de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/blessed-baraka",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "blessed baraka eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "oriental amber",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "White Flowers",
+            "heartNotes": "Sandalwood, Spices",
+            "baseNotes": "Amber, Musk, Vanilla"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512739008740",
+        "name": "Initio BLESSED BARAKA · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512739008740-4bd43e15a902858b.webp",
+          "source": "https://us.initioparfums.com/products/blessed-baraka",
+          "alt": "Initio BLESSED BARAKA · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINAB0002SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: White flowers, sandalwood and musk."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/blessed-baraka",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:blessed-baraka",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "blessed baraka",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINAB0002SP",
+          "manufacturerVariantId": "42512739008740",
+          "scentDescription": "White flowers, sandalwood and musk."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio BLESSED BARAKA. White flowers, sandalwood and musk. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "BLESSED BARAKA"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/blessed-baraka",
+        "manufacturerSku": "NINAB0002SP",
+        "manufacturerProductId": 7561650536676,
+        "manufacturerVariantId": 42512739008740,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/BLESSEDBARAKA_MasterProductPackshot_BlessedBaraka_63438446-6603-4a72-a86f-6ceca29e8a5c.png?v=1761284575",
+        "photographSha256": "4bd43e15a902858b43c20361af048a473cc8246f57620476214d42345152e9d7",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINAB0002SP",
+        "duplicateManufacturerVariantId": 42512739008740
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-42512739795172",
+      "expected": {
+        "name": "Initio SIDE EFFECT · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/side-effect",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "side effect",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio SIDE EFFECT · Eau De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/side-effect",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "side effect",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512739795172",
+        "name": "Initio SIDE EFFECT · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512739795172-892aeead93fc62d0.webp",
+          "source": "https://us.initioparfums.com/products/side-effect",
+          "alt": "Initio SIDE EFFECT · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINCB0001SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Tobacco, vanilla, rum, cinnamon and Hedione."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/side-effect",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:side-effect",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "side effect",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINCB0001SP",
+          "manufacturerVariantId": "42512739795172",
+          "scentDescription": "Tobacco, vanilla, rum, cinnamon and Hedione."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio SIDE EFFECT. Tobacco, vanilla, rum, cinnamon and Hedione. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "SIDE EFFECT"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/side-effect",
+        "manufacturerSku": "NINCB0001SP",
+        "manufacturerProductId": 7561651060964,
+        "manufacturerVariantId": 42512739795172,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/SIDEEFFECT_MasterProductPackshot_8713eda8-0884-482b-a35c-a88fbbaf7fba.png?v=1763732676",
+        "photographSha256": "892aeead93fc62d05bed1a9110f3d8caf6ef4fd368e180f027b941aca6a0de73",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-SIDE-EFFECT",
+      "expected": {
+        "name": "Initio Side Effect Eau de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/side-effect",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Rum, Cinnamon, Saffron",
+          "volumeMl": 90,
+          "baseNotes": "Leather, Sandalwood, Woody Notes",
+          "modelName": "side effect eau de parfum",
+          "heartNotes": "Tobacco, Vanilla, Hedione",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "oriental warm spicy"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Side Effect Eau de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/side-effect",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "side effect eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "oriental warm spicy",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Rum, Cinnamon, Saffron",
+            "heartNotes": "Tobacco, Vanilla, Hedione",
+            "baseNotes": "Leather, Sandalwood, Woody Notes"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512739795172",
+        "name": "Initio SIDE EFFECT · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512739795172-892aeead93fc62d0.webp",
+          "source": "https://us.initioparfums.com/products/side-effect",
+          "alt": "Initio SIDE EFFECT · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINCB0001SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Tobacco, vanilla, rum, cinnamon and Hedione."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/side-effect",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:side-effect",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "side effect",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINCB0001SP",
+          "manufacturerVariantId": "42512739795172",
+          "scentDescription": "Tobacco, vanilla, rum, cinnamon and Hedione."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio SIDE EFFECT. Tobacco, vanilla, rum, cinnamon and Hedione. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "SIDE EFFECT"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/side-effect",
+        "manufacturerSku": "NINCB0001SP",
+        "manufacturerProductId": 7561651060964,
+        "manufacturerVariantId": 42512739795172,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/SIDEEFFECT_MasterProductPackshot_8713eda8-0884-482b-a35c-a88fbbaf7fba.png?v=1763732676",
+        "photographSha256": "892aeead93fc62d05bed1a9110f3d8caf6ef4fd368e180f027b941aca6a0de73",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINCB0001SP",
+        "duplicateManufacturerVariantId": 42512739795172
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-42512740188388",
+      "expected": {
+        "name": "Initio PSYCHEDELIC LOVE · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/psychedelic-love",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "psychedelic love",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio PSYCHEDELIC LOVE · Eau De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/psychedelic-love",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "psychedelic love",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512740188388",
+        "name": "Initio PSYCHEDELIC LOVE · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512740188388-caf72ebbeaa2e49e.webp",
+          "source": "https://us.initioparfums.com/products/psychedelic-love",
+          "alt": "Initio PSYCHEDELIC LOVE · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINCB0003SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Rose, heliotropin and Hedione."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/psychedelic-love",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:psychedelic-love",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "psychedelic love",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINCB0003SP",
+          "manufacturerVariantId": "42512740188388",
+          "scentDescription": "Rose, heliotropin and Hedione."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio PSYCHEDELIC LOVE. Rose, heliotropin and Hedione. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "PSYCHEDELIC LOVE"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/psychedelic-love",
+        "manufacturerSku": "NINCB0003SP",
+        "manufacturerProductId": 7561651880164,
+        "manufacturerVariantId": 42512740188388,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PSYCHEDELIC_LOVE_MasterProductPackshot_524708b6-4956-40df-8411-83784853ccc5.png?v=1761284526",
+        "photographSha256": "caf72ebbeaa2e49ed50286dc4ab7f549d3c1841f651ccb3ed7e173b56bdce922",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-PSYCHEDELIC-LOVE",
+      "expected": {
+        "name": "Initio Psychedelic Love Eau de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/psychedelic-love",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Ylang-Ylang, Bergamot",
+          "volumeMl": 90,
+          "baseNotes": "Myrrh, Sandalwood, Patchouli",
+          "modelName": "psychedelic love eau de parfum",
+          "heartNotes": "Heliotrope, Hedione, Bulgarian Rose",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "floral powdery gourmand"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Psychedelic Love Eau de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/psychedelic-love",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "psychedelic love eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "floral powdery gourmand",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Ylang-Ylang, Bergamot",
+            "heartNotes": "Heliotrope, Hedione, Bulgarian Rose",
+            "baseNotes": "Myrrh, Sandalwood, Patchouli"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512740188388",
+        "name": "Initio PSYCHEDELIC LOVE · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512740188388-caf72ebbeaa2e49e.webp",
+          "source": "https://us.initioparfums.com/products/psychedelic-love",
+          "alt": "Initio PSYCHEDELIC LOVE · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINCB0003SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Rose, heliotropin and Hedione."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/psychedelic-love",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:psychedelic-love",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "psychedelic love",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINCB0003SP",
+          "manufacturerVariantId": "42512740188388",
+          "scentDescription": "Rose, heliotropin and Hedione."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio PSYCHEDELIC LOVE. Rose, heliotropin and Hedione. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "PSYCHEDELIC LOVE"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/psychedelic-love",
+        "manufacturerSku": "NINCB0003SP",
+        "manufacturerProductId": 7561651880164,
+        "manufacturerVariantId": 42512740188388,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PSYCHEDELIC_LOVE_MasterProductPackshot_524708b6-4956-40df-8411-83784853ccc5.png?v=1761284526",
+        "photographSha256": "caf72ebbeaa2e49ed50286dc4ab7f549d3c1841f651ccb3ed7e173b56bdce922",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINCB0003SP",
+        "duplicateManufacturerVariantId": 42512740188388
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-42512740450532",
+      "expected": {
+        "name": "Initio ATOMIC ROSE · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/atomic-rose",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "atomic rose",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio ATOMIC ROSE · Eau De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/atomic-rose",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "atomic rose",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512740450532",
+        "name": "Initio ATOMIC ROSE · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512740450532-2028ed74cb2f8ce1.webp",
+          "source": "https://us.initioparfums.com/products/atomic-rose",
+          "alt": "Initio ATOMIC ROSE · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINCB0004SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Rose with jasmine and vanilla bean."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/atomic-rose",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:atomic-rose",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "atomic rose",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINCB0004SP",
+          "manufacturerVariantId": "42512740450532",
+          "scentDescription": "Rose with jasmine and vanilla bean."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio ATOMIC ROSE. Rose with jasmine and vanilla bean. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "ATOMIC ROSE"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/atomic-rose",
+        "manufacturerSku": "NINCB0004SP",
+        "manufacturerProductId": 7561652109540,
+        "manufacturerVariantId": 42512740450532,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_MasterProductPackshot_0_a9874dd8-6459-4d30-b525-44839e2c9ad6.png?v=1763734440",
+        "photographSha256": "2028ed74cb2f8ce1cf99b723c203d7f5a2b75b00a6ab63c086a010b1b6de3833",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-ATOMIC-ROSE",
+      "expected": {
+        "name": "Initio Atomic Rose Eau de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/atomic-rose",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Italian Bergamot, Pink Pepper, Hedione",
+          "volumeMl": 90,
+          "baseNotes": "Madagascar Vanilla, Amber",
+          "modelName": "atomic rose eau de parfum",
+          "heartNotes": "Bulgarian Rose, Turkish Rose, Egyptian Jasmine",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "oriental floral"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Atomic Rose Eau de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/atomic-rose",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "atomic rose eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "oriental floral",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Italian Bergamot, Pink Pepper, Hedione",
+            "heartNotes": "Bulgarian Rose, Turkish Rose, Egyptian Jasmine",
+            "baseNotes": "Madagascar Vanilla, Amber"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512740450532",
+        "name": "Initio ATOMIC ROSE · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512740450532-2028ed74cb2f8ce1.webp",
+          "source": "https://us.initioparfums.com/products/atomic-rose",
+          "alt": "Initio ATOMIC ROSE · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINCB0004SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Rose with jasmine and vanilla bean."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/atomic-rose",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:atomic-rose",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "atomic rose",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINCB0004SP",
+          "manufacturerVariantId": "42512740450532",
+          "scentDescription": "Rose with jasmine and vanilla bean."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio ATOMIC ROSE. Rose with jasmine and vanilla bean. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "ATOMIC ROSE"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/atomic-rose",
+        "manufacturerSku": "NINCB0004SP",
+        "manufacturerProductId": 7561652109540,
+        "manufacturerVariantId": 42512740450532,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/ATOMICROSE_MasterProductPackshot_0_a9874dd8-6459-4d30-b525-44839e2c9ad6.png?v=1763734440",
+        "photographSha256": "2028ed74cb2f8ce1cf99b723c203d7f5a2b75b00a6ab63c086a010b1b6de3833",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINCB0004SP",
+        "duplicateManufacturerVariantId": 42512740450532
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-42512741105892",
+      "expected": {
+        "name": "Initio MUSK THERAPY · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/musk-therapy",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "musk therapy",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio MUSK THERAPY · Extrait De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/musk-therapy",
+          "attributes": {
+            "productType": "extrait de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "musk therapy",
+            "concentration": "extrait de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512741105892",
+        "name": "Initio MUSK THERAPY · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512741105892-909e57b44978ef55.webp",
+          "source": "https://us.initioparfums.com/products/musk-therapy",
+          "alt": "Initio MUSK THERAPY · Extrait De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINLI0002SP",
+          "Bottle size: 90 ml",
+          "Concentration: extrait de parfum",
+          "Manufacturer-described composition: White sandalwood, white and pink musks, white magnolia and blackcurrant."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/musk-therapy",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:musk-therapy",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "musk therapy",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum",
+          "sourceSku": "NINLI0002SP",
+          "manufacturerVariantId": "42512741105892",
+          "scentDescription": "White sandalwood, white and pink musks, white magnolia and blackcurrant."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio MUSK THERAPY. White sandalwood, white and pink musks, white magnolia and blackcurrant. Selected 90 ml extrait de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "MUSK THERAPY"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/musk-therapy",
+        "manufacturerSku": "NINLI0002SP",
+        "manufacturerProductId": 7561652469988,
+        "manufacturerVariantId": 42512741105892,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MasterProductPackshot_MuskTherapy_Desktop_2c4ae589-3c2a-4d9c-b25b-1666cbf80bf3.png?v=1763732624",
+        "photographSha256": "909e57b44978ef5567768a0f725a34bed2c7e86dfcef6a8c23ab41da4c7214be",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-MUSK-THERAPY",
+      "expected": {
+        "name": "Initio Musk Therapy Extrait de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/musk-therapy",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Bergamot, Mandarin Orange",
+          "volumeMl": 90,
+          "baseNotes": "White Musk, Natural White Sandalwood",
+          "modelName": "musk therapy extrait de parfum",
+          "heartNotes": "White Magnolia, Blackcurrant, Hedione",
+          "concentration": "extrait de parfum",
+          "olfactoryFamily": "woody floral musk"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Musk Therapy Extrait de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/musk-therapy",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "musk therapy extrait de parfum",
+            "concentration": "extrait de parfum",
+            "olfactoryFamily": "woody floral musk",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Bergamot, Mandarin Orange",
+            "heartNotes": "White Magnolia, Blackcurrant, Hedione",
+            "baseNotes": "White Musk, Natural White Sandalwood"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512741105892",
+        "name": "Initio MUSK THERAPY · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512741105892-909e57b44978ef55.webp",
+          "source": "https://us.initioparfums.com/products/musk-therapy",
+          "alt": "Initio MUSK THERAPY · Extrait De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINLI0002SP",
+          "Bottle size: 90 ml",
+          "Concentration: extrait de parfum",
+          "Manufacturer-described composition: White sandalwood, white and pink musks, white magnolia and blackcurrant."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/musk-therapy",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:musk-therapy",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "musk therapy",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum",
+          "sourceSku": "NINLI0002SP",
+          "manufacturerVariantId": "42512741105892",
+          "scentDescription": "White sandalwood, white and pink musks, white magnolia and blackcurrant."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio MUSK THERAPY. White sandalwood, white and pink musks, white magnolia and blackcurrant. Selected 90 ml extrait de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "MUSK THERAPY"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/musk-therapy",
+        "manufacturerSku": "NINLI0002SP",
+        "manufacturerProductId": 7561652469988,
+        "manufacturerVariantId": 42512741105892,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/MasterProductPackshot_MuskTherapy_Desktop_2c4ae589-3c2a-4d9c-b25b-1666cbf80bf3.png?v=1763732624",
+        "photographSha256": "909e57b44978ef5567768a0f725a34bed2c7e86dfcef6a8c23ab41da4c7214be",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINLI0002SP",
+        "duplicateManufacturerVariantId": 42512741105892
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-42512741335268",
+      "expected": {
+        "name": "Initio REHAB · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/rehab",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "rehab",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio REHAB · Extrait De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/rehab",
+          "attributes": {
+            "productType": "extrait de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "rehab",
+            "concentration": "extrait de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512741335268",
+        "name": "Initio REHAB · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512741335268-2f63a98ce115e1ab.webp",
+          "source": "https://us.initioparfums.com/products/rehab",
+          "alt": "Initio REHAB · Extrait De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINLI0001SP",
+          "Bottle size: 90 ml",
+          "Concentration: extrait de parfum",
+          "Manufacturer-described composition: Bergamot, black pepper and lavender with sandalwood and musk."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/rehab",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:rehab",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "rehab",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum",
+          "sourceSku": "NINLI0001SP",
+          "manufacturerVariantId": "42512741335268",
+          "scentDescription": "Bergamot, black pepper and lavender with sandalwood and musk."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio REHAB. Bergamot, black pepper and lavender with sandalwood and musk. Selected 90 ml extrait de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "REHAB"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/rehab",
+        "manufacturerSku": "NINLI0001SP",
+        "manufacturerProductId": 7561652666596,
+        "manufacturerVariantId": 42512741335268,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/REHAB_MasterProductPackshot_077032ad-052d-4f8a-aeba-bc213bf5bedd.png?v=1761284648",
+        "photographSha256": "2f63a98ce115e1abcda861f8dfb7b0c61e13acb1194f6546734241ec47a2fbc7",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-REHAB",
+      "expected": {
+        "name": "Initio Rehab Extrait de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/rehab",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Bergamot, Lavender",
+          "volumeMl": 90,
+          "baseNotes": "Sandalwood, Guaiac Wood, Patchouli, Vanilla, Musk",
+          "modelName": "rehab extrait de parfum",
+          "heartNotes": "Black Pepper, Tobacco, Cedarwood",
+          "concentration": "extrait de parfum",
+          "olfactoryFamily": "woody aromatic fougère"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Rehab Extrait de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/rehab",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "rehab extrait de parfum",
+            "concentration": "extrait de parfum",
+            "olfactoryFamily": "woody aromatic fougère",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Bergamot, Lavender",
+            "heartNotes": "Black Pepper, Tobacco, Cedarwood",
+            "baseNotes": "Sandalwood, Guaiac Wood, Patchouli, Vanilla, Musk"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512741335268",
+        "name": "Initio REHAB · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512741335268-2f63a98ce115e1ab.webp",
+          "source": "https://us.initioparfums.com/products/rehab",
+          "alt": "Initio REHAB · Extrait De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINLI0001SP",
+          "Bottle size: 90 ml",
+          "Concentration: extrait de parfum",
+          "Manufacturer-described composition: Bergamot, black pepper and lavender with sandalwood and musk."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/rehab",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:rehab",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "rehab",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum",
+          "sourceSku": "NINLI0001SP",
+          "manufacturerVariantId": "42512741335268",
+          "scentDescription": "Bergamot, black pepper and lavender with sandalwood and musk."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio REHAB. Bergamot, black pepper and lavender with sandalwood and musk. Selected 90 ml extrait de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "REHAB"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/rehab",
+        "manufacturerSku": "NINLI0001SP",
+        "manufacturerProductId": 7561652666596,
+        "manufacturerVariantId": 42512741335268,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/REHAB_MasterProductPackshot_077032ad-052d-4f8a-aeba-bc213bf5bedd.png?v=1761284648",
+        "photographSha256": "2f63a98ce115e1abcda861f8dfb7b0c61e13acb1194f6546734241ec47a2fbc7",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINLI0001SP",
+        "duplicateManufacturerVariantId": 42512741335268
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-42512741597412",
+      "expected": {
+        "name": "Initio OUD FOR GREATNESS · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/oud-for-greatness",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "oud for greatness",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio OUD FOR GREATNESS · Eau De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/oud-for-greatness",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "oud for greatness",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512741597412",
+        "name": "Initio OUD FOR GREATNESS · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512741597412-7a45c232280e26b5.webp",
+          "source": "https://us.initioparfums.com/products/oud-for-greatness",
+          "alt": "Initio OUD FOR GREATNESS · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINBG0001SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Oud, patchouli and musk with lavender, nutmeg and saffron."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/oud-for-greatness",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:oud-for-greatness",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "oud for greatness",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINBG0001SP",
+          "manufacturerVariantId": "42512741597412",
+          "scentDescription": "Oud, patchouli and musk with lavender, nutmeg and saffron."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio OUD FOR GREATNESS. Oud, patchouli and musk with lavender, nutmeg and saffron. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "OUD FOR GREATNESS"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/oud-for-greatness",
+        "manufacturerSku": "NINBG0001SP",
+        "manufacturerProductId": 7561652928740,
+        "manufacturerVariantId": 42512741597412,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_MasterProductPackshot_1cc0a9e3-e99c-4c2d-814c-a1f46c9b4584.png?v=1763732592",
+        "photographSha256": "7a45c232280e26b5f6224d04edb5ec4836915778bc0f1d697df5ce05f69b1457",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-OUD-FOR-GREATNESS",
+      "expected": {
+        "name": "Initio Oud for Greatness Eau de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/oud-for-greatness",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Saffron, Nutmeg, Lavender",
+          "volumeMl": 90,
+          "baseNotes": "Patchouli, Musk",
+          "modelName": "oud for greatness eau de parfum",
+          "heartNotes": "Natural Agarwood (Oud)",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody spicy oriental"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Oud for Greatness Eau de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/oud-for-greatness",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "oud for greatness eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "woody spicy oriental",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Saffron, Nutmeg, Lavender",
+            "heartNotes": "Natural Agarwood (Oud)",
+            "baseNotes": "Patchouli, Musk"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512741597412",
+        "name": "Initio OUD FOR GREATNESS · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512741597412-7a45c232280e26b5.webp",
+          "source": "https://us.initioparfums.com/products/oud-for-greatness",
+          "alt": "Initio OUD FOR GREATNESS · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINBG0001SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Oud, patchouli and musk with lavender, nutmeg and saffron."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/oud-for-greatness",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:oud-for-greatness",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "oud for greatness",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINBG0001SP",
+          "manufacturerVariantId": "42512741597412",
+          "scentDescription": "Oud, patchouli and musk with lavender, nutmeg and saffron."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio OUD FOR GREATNESS. Oud, patchouli and musk with lavender, nutmeg and saffron. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "OUD FOR GREATNESS"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/oud-for-greatness",
+        "manufacturerSku": "NINBG0001SP",
+        "manufacturerProductId": 7561652928740,
+        "manufacturerVariantId": 42512741597412,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORGREATNESS_MasterProductPackshot_1cc0a9e3-e99c-4c2d-814c-a1f46c9b4584.png?v=1763732592",
+        "photographSha256": "7a45c232280e26b5f6224d04edb5ec4836915778bc0f1d697df5ce05f69b1457",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINBG0001SP",
+        "duplicateManufacturerVariantId": 42512741597412
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-42512742088932",
+      "expected": {
+        "name": "Initio OUD FOR HAPPINESS · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/oud-for-happiness",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "oud for happiness",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio OUD FOR HAPPINESS · Eau De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/oud-for-happiness",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "oud for happiness",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512742088932",
+        "name": "Initio OUD FOR HAPPINESS · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512742088932-a6d495924f1b9020.webp",
+          "source": "https://us.initioparfums.com/products/oud-for-happiness",
+          "alt": "Initio OUD FOR HAPPINESS · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: INBG0002SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Oud with bergamot, ginger, cedarwood and liquorice."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/oud-for-happiness",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:oud-for-happiness",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "oud for happiness",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "INBG0002SP",
+          "manufacturerVariantId": "42512742088932",
+          "scentDescription": "Oud with bergamot, ginger, cedarwood and liquorice."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio OUD FOR HAPPINESS. Oud with bergamot, ginger, cedarwood and liquorice. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "OUD FOR HAPPINESS"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/oud-for-happiness",
+        "manufacturerSku": "INBG0002SP",
+        "manufacturerProductId": 7561653190884,
+        "manufacturerVariantId": 42512742088932,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORHAPPINESS_MasterProductPackshot_517cbedc-e6f8-40c6-bca6-447066de9d95.png?v=1761284632",
+        "photographSha256": "a6d495924f1b9020a17098004a877fbe776764e95512cae7a0ff9d75abbeb6bc",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-OUD-FOR-HAPPINESS",
+      "expected": {
+        "name": "Initio Oud for Happiness Eau de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/oud-for-happiness",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Bergamot, Ginger",
+          "volumeMl": 90,
+          "baseNotes": "Vanilla, Musk, Herbal Notes",
+          "modelName": "oud for happiness eau de parfum",
+          "heartNotes": "Agarwood (Oud), Cedarwood, Licorice",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody spicy citrus"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Oud for Happiness Eau de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/oud-for-happiness",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "oud for happiness eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "woody spicy citrus",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Bergamot, Ginger",
+            "heartNotes": "Agarwood (Oud), Cedarwood, Licorice",
+            "baseNotes": "Vanilla, Musk, Herbal Notes"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-42512742088932",
+        "name": "Initio OUD FOR HAPPINESS · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-42512742088932-a6d495924f1b9020.webp",
+          "source": "https://us.initioparfums.com/products/oud-for-happiness",
+          "alt": "Initio OUD FOR HAPPINESS · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: INBG0002SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Oud with bergamot, ginger, cedarwood and liquorice."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/oud-for-happiness",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:oud-for-happiness",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "oud for happiness",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "INBG0002SP",
+          "manufacturerVariantId": "42512742088932",
+          "scentDescription": "Oud with bergamot, ginger, cedarwood and liquorice."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio OUD FOR HAPPINESS. Oud with bergamot, ginger, cedarwood and liquorice. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "OUD FOR HAPPINESS"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/oud-for-happiness",
+        "manufacturerSku": "INBG0002SP",
+        "manufacturerProductId": 7561653190884,
+        "manufacturerVariantId": 42512742088932,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/OUDFORHAPPINESS_MasterProductPackshot_517cbedc-e6f8-40c6-bca6-447066de9d95.png?v=1761284632",
+        "photographSha256": "a6d495924f1b9020a17098004a877fbe776764e95512cae7a0ff9d75abbeb6bc",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "INBG0002SP",
+        "duplicateManufacturerVariantId": 42512742088932
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-43463350354148",
+      "expected": {
+        "name": "Initio PARAGON · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/paragon",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "paragon",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio PARAGON · Extrait De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/paragon",
+          "attributes": {
+            "productType": "extrait de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "paragon",
+            "concentration": "extrait de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-43463350354148",
+        "name": "Initio PARAGON · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-43463350354148-42d809978b63fe73.webp",
+          "source": "https://us.initioparfums.com/products/paragon",
+          "alt": "Initio PARAGON · Extrait De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINLI0003SP",
+          "Bottle size: 90 ml",
+          "Concentration: extrait de parfum",
+          "Manufacturer-described composition: Palo santo and white sage with bergamot, lavender and black pepper."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/paragon",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:paragon",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "paragon",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum",
+          "sourceSku": "NINLI0003SP",
+          "manufacturerVariantId": "43463350354148",
+          "scentDescription": "Palo santo and white sage with bergamot, lavender and black pepper."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio PARAGON. Palo santo and white sage with bergamot, lavender and black pepper. Selected 90 ml extrait de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "PARAGON"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/paragon",
+        "manufacturerSku": "NINLI0003SP",
+        "manufacturerProductId": 7817115107556,
+        "manufacturerVariantId": 43463350354148,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PARAGON_MasterProductPackshot_15e005e8-6d8b-4ef1-9b8c-3937dfc94315.png?v=1761284622",
+        "photographSha256": "42d809978b63fe7378d64a33c346388b4f231693fd01b7bf9d1d7864247a18ee",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-PARAGON",
+      "expected": {
+        "name": "Initio Paragon Extrait de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/paragon",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Bergamot, White Sage, Lavender",
+          "volumeMl": 90,
+          "baseNotes": "Sandalwood, Agarwood (Oud)",
+          "modelName": "paragon extrait de parfum",
+          "heartNotes": "Plum, Palo Santo, Black Pepper",
+          "concentration": "extrait de parfum",
+          "olfactoryFamily": "woody aromatic"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Paragon Extrait de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/paragon",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "paragon extrait de parfum",
+            "concentration": "extrait de parfum",
+            "olfactoryFamily": "woody aromatic",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Bergamot, White Sage, Lavender",
+            "heartNotes": "Plum, Palo Santo, Black Pepper",
+            "baseNotes": "Sandalwood, Agarwood (Oud)"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-43463350354148",
+        "name": "Initio PARAGON · Extrait De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-43463350354148-42d809978b63fe73.webp",
+          "source": "https://us.initioparfums.com/products/paragon",
+          "alt": "Initio PARAGON · Extrait De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINLI0003SP",
+          "Bottle size: 90 ml",
+          "Concentration: extrait de parfum",
+          "Manufacturer-described composition: Palo santo and white sage with bergamot, lavender and black pepper."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/paragon",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:paragon",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "paragon",
+          "productType": "extrait de parfum",
+          "concentration": "extrait de parfum",
+          "sourceSku": "NINLI0003SP",
+          "manufacturerVariantId": "43463350354148",
+          "scentDescription": "Palo santo and white sage with bergamot, lavender and black pepper."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio PARAGON. Palo santo and white sage with bergamot, lavender and black pepper. Selected 90 ml extrait de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "PARAGON"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/paragon",
+        "manufacturerSku": "NINLI0003SP",
+        "manufacturerProductId": 7817115107556,
+        "manufacturerVariantId": 43463350354148,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/PARAGON_MasterProductPackshot_15e005e8-6d8b-4ef1-9b8c-3937dfc94315.png?v=1761284622",
+        "photographSha256": "42d809978b63fe7378d64a33c346388b4f231693fd01b7bf9d1d7864247a18ee",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINLI0003SP",
+        "duplicateManufacturerVariantId": 43463350354148
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-INITIO-47455704088922",
+      "expected": {
+        "name": "Initio NARCOTIC DELIGHT · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/narcotic-delight",
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "narcotic delight",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio NARCOTIC DELIGHT · Eau De Parfum · 90ml",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/narcotic-delight",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "narcotic delight",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-47455704088922",
+        "name": "Initio NARCOTIC DELIGHT · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-47455704088922-e8b25e1aecde81e8.webp",
+          "source": "https://us.initioparfums.com/products/narcotic-delight",
+          "alt": "Initio NARCOTIC DELIGHT · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINCB0005SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Vanilla bean, pink pepper, cognac, tobacco and cherry."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/narcotic-delight",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:narcotic-delight",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "narcotic delight",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINCB0005SP",
+          "manufacturerVariantId": "47455704088922",
+          "scentDescription": "Vanilla bean, pink pepper, cognac, tobacco and cherry."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio NARCOTIC DELIGHT. Vanilla bean, pink pepper, cognac, tobacco and cherry. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "NARCOTIC DELIGHT"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/narcotic-delight",
+        "manufacturerSku": "NINCB0005SP",
+        "manufacturerProductId": 8674987082074,
+        "manufacturerVariantId": 47455704088922,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_MasterProductPackshot_25a2d42b-3dd0-4bc9-81f0-ce6d7cddb4cc.png?v=1761284609",
+        "photographSha256": "e8b25e1aecde81e8acfe9c6f1355bb3f5ea1baa8f29b65afe93407441cd5de32",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-INITIO-INITIO-NARCOTIC-DELIGHT",
+      "expected": {
+        "name": "Initio Narcotic Delight Eau de Parfum",
+        "brand": "Initio",
+        "source": "https://us.initioparfums.com/products/narcotic-delight",
+        "attributes": {
+          "brand": "initio",
+          "perfumer": "Alberto Morillas",
+          "topNotes": "Cherry, Pink Pepper, Black Pepper",
+          "volumeMl": 90,
+          "baseNotes": "Tobacco, Vanilla",
+          "modelName": "narcotic delight eau de parfum",
+          "heartNotes": "Cognac, Hedione",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "amber spicy gourmand"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Initio Narcotic Delight Eau de Parfum",
+          "brand": "Initio",
+          "source": "https://us.initioparfums.com/products/narcotic-delight",
+          "attributes": {
+            "volumeMl": 90,
+            "brand": "initio",
+            "modelName": "narcotic delight eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "amber spicy gourmand",
+            "perfumer": "Alberto Morillas",
+            "topNotes": "Cherry, Pink Pepper, Black Pepper",
+            "heartNotes": "Cognac, Hedione",
+            "baseNotes": "Tobacco, Vanilla"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-INITIO-47455704088922",
+        "name": "Initio NARCOTIC DELIGHT · Eau De Parfum · 90ml",
+        "brand": "Initio",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/fragrance-initio-47455704088922-e8b25e1aecde81e8.webp",
+          "source": "https://us.initioparfums.com/products/narcotic-delight",
+          "alt": "Initio NARCOTIC DELIGHT · Eau De Parfum · 90ml",
+          "attribution": "Initio official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NINCB0005SP",
+          "Bottle size: 90 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Vanilla bean, pink pepper, cognac, tobacco and cherry."
+        ],
+        "stock": 20,
+        "source": "https://us.initioparfums.com/products/narcotic-delight",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "initio:narcotic-delight",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "initio",
+          "volumeMl": 90,
+          "modelName": "narcotic delight",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NINCB0005SP",
+          "manufacturerVariantId": "47455704088922",
+          "scentDescription": "Vanilla bean, pink pepper, cognac, tobacco and cherry."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Initio NARCOTIC DELIGHT. Vanilla bean, pink pepper, cognac, tobacco and cherry. Selected 90 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "NARCOTIC DELIGHT"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.initioparfums.com/products/narcotic-delight",
+        "manufacturerSku": "NINCB0005SP",
+        "manufacturerProductId": 8674987082074,
+        "manufacturerVariantId": 47455704088922,
+        "volumeMl": 90,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0607/4816/9444/files/NARCOTICDELIGHT_MasterProductPackshot_25a2d42b-3dd0-4bc9-81f0-ce6d7cddb4cc.png?v=1761284609",
+        "photographSha256": "e8b25e1aecde81e8acfe9c6f1355bb3f5ea1baa8f29b65afe93407441cd5de32",
+        "sourceFileSha256": "79541d1350b57d46f116a4a339ba6d95f8ef7c26400d5cafe2882ae240df7a8f",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NINCB0005SP",
+        "duplicateManufacturerVariantId": 47455704088922
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-PDM-40036844372162",
+      "expected": {
+        "name": "Parfums de Marly Greenley · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/greenley",
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "greenley",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Greenley · Eau De Parfum · 75ml",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/greenley",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 75,
+            "brand": "parfums de marly",
+            "modelName": "greenley",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-40036844372162",
+        "name": "Parfums de Marly Greenley · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-40036844372162-74ec7ccfd417d5d5.webp",
+          "source": "https://us.parfums-de-marly.com/products/greenley",
+          "alt": "Parfums de Marly Greenley · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM2503PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Green apple and petitgrain with ambrox and amber woods."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/greenley",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:greenley",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "greenley",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM2503PV",
+          "manufacturerVariantId": "40036844372162",
+          "scentDescription": "Green apple and petitgrain with ambrox and amber woods."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Greenley. Green apple and petitgrain with ambrox and amber woods. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Greenley"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/greenley",
+        "manufacturerSku": "NPM2503PV",
+        "manufacturerProductId": 6743044325570,
+        "manufacturerVariantId": 40036844372162,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-75-PACK1-1X1_CENTERED_9e131bf3-fd70-42ec-b2e1-6ca6cc4c6dc3.png?v=1758885457",
+        "photographSha256": "74ec7ccfd417d5d512b0bbbc28235ade185eb73d4163079e713ba0617ebf41f1",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-GREENLEY",
+      "expected": {
+        "name": "Parfums de Marly Greenley Eau de Parfum",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/greenley",
+        "attributes": {
+          "brand": "parfums de marly",
+          "perfumer": "Olivier Pescheux",
+          "topNotes": "Sicilian Bergamot, Mandarin, Green Apple, Cashmeran",
+          "volumeMl": 75,
+          "baseNotes": "Oakmoss, Musk, Amberwood Accord",
+          "modelName": "greenley eau de parfum",
+          "heartNotes": "Cedarwood, Petitgrain, Violet, Pomarose",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "citrus woody"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Greenley Eau de Parfum",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/greenley",
+          "attributes": {
+            "volumeMl": 125,
+            "brand": "parfums de marly",
+            "modelName": "greenley eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "citrus woody",
+            "perfumer": "Olivier Pescheux",
+            "topNotes": "Sicilian Bergamot, Mandarin, Green Apple, Cashmeran",
+            "heartNotes": "Cedarwood, Petitgrain, Violet, Pomarose",
+            "baseNotes": "Oakmoss, Musk, Amberwood Accord"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-40036844372162",
+        "name": "Parfums de Marly Greenley · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-40036844372162-74ec7ccfd417d5d5.webp",
+          "source": "https://us.parfums-de-marly.com/products/greenley",
+          "alt": "Parfums de Marly Greenley · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM2503PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Green apple and petitgrain with ambrox and amber woods."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/greenley",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:greenley",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "greenley",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM2503PV",
+          "manufacturerVariantId": "40036844372162",
+          "scentDescription": "Green apple and petitgrain with ambrox and amber woods."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Greenley. Green apple and petitgrain with ambrox and amber woods. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Greenley"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/greenley",
+        "manufacturerSku": "NPM2503PV",
+        "manufacturerProductId": 6743044325570,
+        "manufacturerVariantId": 40036844372162,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/GREENLEY-PERFUME-75-PACK1-1X1_CENTERED_9e131bf3-fd70-42ec-b2e1-6ca6cc4c6dc3.png?v=1758885457",
+        "photographSha256": "74ec7ccfd417d5d512b0bbbc28235ade185eb73d4163079e713ba0617ebf41f1",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NPM2503PV",
+        "duplicateManufacturerVariantId": 40036844372162
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-PDM-40036845125826",
+      "expected": {
+        "name": "Parfums de Marly Herod · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/herod",
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "herod",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Herod · Eau De Parfum · 75ml",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/herod",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 75,
+            "brand": "parfums de marly",
+            "modelName": "herod",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-40036845125826",
+        "name": "Parfums de Marly Herod · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-40036845125826-e8ac0609d0950b93.webp",
+          "source": "https://us.parfums-de-marly.com/products/herod",
+          "alt": "Parfums de Marly Herod · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM0703PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Cinnamon and tobacco leaves with vanilla."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/herod",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:herod",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "herod",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM0703PV",
+          "manufacturerVariantId": "40036845125826",
+          "scentDescription": "Cinnamon and tobacco leaves with vanilla."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Herod. Cinnamon and tobacco leaves with vanilla. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Herod"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/herod",
+        "manufacturerSku": "NPM0703PV",
+        "manufacturerProductId": 6743044554946,
+        "manufacturerVariantId": 40036845125826,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-75-PACK1-1X1_CENTERED_fba9c88d-7cf1-4202-bb2a-1ee9c9c8d82d.png?v=1758885289",
+        "photographSha256": "e8ac0609d0950b93c4793a73364f92c8d4d67da013d47539c201ff1e15b56edc",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-HEROD",
+      "expected": {
+        "name": "Parfums de Marly Herod Eau de Parfum",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/herod",
+        "attributes": {
+          "brand": "parfums de marly",
+          "perfumer": "Olivier Pescheux",
+          "topNotes": "Cinnamon, Pepperwood",
+          "volumeMl": 75,
+          "baseNotes": "Vanilla Pod, Musk, Patchouli, Cedarwood",
+          "modelName": "herod eau de parfum",
+          "heartNotes": "Tobacco Leaf, Incense, Cistus, Osmanthus",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody gourmand"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Herod Eau de Parfum",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/herod",
+          "attributes": {
+            "volumeMl": 125,
+            "brand": "parfums de marly",
+            "modelName": "herod eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "woody gourmand",
+            "perfumer": "Olivier Pescheux",
+            "topNotes": "Cinnamon, Pepperwood",
+            "heartNotes": "Tobacco Leaf, Incense, Cistus, Osmanthus",
+            "baseNotes": "Vanilla Pod, Musk, Patchouli, Cedarwood"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-40036845125826",
+        "name": "Parfums de Marly Herod · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-40036845125826-e8ac0609d0950b93.webp",
+          "source": "https://us.parfums-de-marly.com/products/herod",
+          "alt": "Parfums de Marly Herod · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM0703PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Cinnamon and tobacco leaves with vanilla."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/herod",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:herod",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "herod",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM0703PV",
+          "manufacturerVariantId": "40036845125826",
+          "scentDescription": "Cinnamon and tobacco leaves with vanilla."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Herod. Cinnamon and tobacco leaves with vanilla. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Herod"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/herod",
+        "manufacturerSku": "NPM0703PV",
+        "manufacturerProductId": 6743044554946,
+        "manufacturerVariantId": 40036845125826,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HEROD-PERFUME-75-PACK1-1X1_CENTERED_fba9c88d-7cf1-4202-bb2a-1ee9c9c8d82d.png?v=1758885289",
+        "photographSha256": "e8ac0609d0950b93c4793a73364f92c8d4d67da013d47539c201ff1e15b56edc",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NPM0703PV",
+        "duplicateManufacturerVariantId": 40036845125826
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-PDM-40036850434242",
+      "expected": {
+        "name": "Parfums de Marly Pegasus · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/pegasus",
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "pegasus",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Pegasus · Eau De Parfum · 75ml",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/pegasus",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 75,
+            "brand": "parfums de marly",
+            "modelName": "pegasus",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-40036850434242",
+        "name": "Parfums de Marly Pegasus · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-40036850434242-89fe6bcaf54c570f.webp",
+          "source": "https://us.parfums-de-marly.com/products/pegasus",
+          "alt": "Parfums de Marly Pegasus · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM0603PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Bergamot and almond with vanilla."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/pegasus",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:pegasus",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "pegasus",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM0603PV",
+          "manufacturerVariantId": "40036850434242",
+          "scentDescription": "Bergamot and almond with vanilla."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Pegasus. Bergamot and almond with vanilla. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Pegasus"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/pegasus",
+        "manufacturerSku": "NPM0603PV",
+        "manufacturerProductId": 6743045472450,
+        "manufacturerVariantId": 40036850434242,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-75-PACK1-1X1_CENTERED_54e9798a-d4d6-4527-988c-d0927f891047.png?v=1758884206",
+        "photographSha256": "89fe6bcaf54c570f00576a5845f1a323eaf70ad721bfc6a2b771fb26902a93b6",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-PEGASUS",
+      "expected": {
+        "name": "Parfums de Marly Pegasus Eau de Parfum",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/pegasus",
+        "attributes": {
+          "brand": "parfums de marly",
+          "perfumer": "Hamid Merati-Kashani",
+          "topNotes": "Cypress, Bergamot, Heliotrope",
+          "volumeMl": 75,
+          "baseNotes": "Vanilla, Amber, Sandalwood",
+          "modelName": "pegasus eau de parfum",
+          "heartNotes": "Jasmine, Lavender, Bitter Almond",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "oriental fougère"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Pegasus Eau de Parfum",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/pegasus",
+          "attributes": {
+            "volumeMl": 125,
+            "brand": "parfums de marly",
+            "modelName": "pegasus eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "oriental fougère",
+            "perfumer": "Hamid Merati-Kashani",
+            "topNotes": "Cypress, Bergamot, Heliotrope",
+            "heartNotes": "Jasmine, Lavender, Bitter Almond",
+            "baseNotes": "Vanilla, Amber, Sandalwood"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-40036850434242",
+        "name": "Parfums de Marly Pegasus · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-40036850434242-89fe6bcaf54c570f.webp",
+          "source": "https://us.parfums-de-marly.com/products/pegasus",
+          "alt": "Parfums de Marly Pegasus · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM0603PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Bergamot and almond with vanilla."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/pegasus",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:pegasus",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "pegasus",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM0603PV",
+          "manufacturerVariantId": "40036850434242",
+          "scentDescription": "Bergamot and almond with vanilla."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Pegasus. Bergamot and almond with vanilla. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Pegasus"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/pegasus",
+        "manufacturerSku": "NPM0603PV",
+        "manufacturerProductId": 6743045472450,
+        "manufacturerVariantId": 40036850434242,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/PEGASUS-PERFUME-75-PACK1-1X1_CENTERED_54e9798a-d4d6-4527-988c-d0927f891047.png?v=1758884206",
+        "photographSha256": "89fe6bcaf54c570f00576a5845f1a323eaf70ad721bfc6a2b771fb26902a93b6",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NPM0603PV",
+        "duplicateManufacturerVariantId": 40036850434242
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-PDM-40036852891842",
+      "expected": {
+        "name": "Parfums de Marly Sedley · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/sedley",
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "sedley",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Sedley · Eau De Parfum · 75ml",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/sedley",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 75,
+            "brand": "parfums de marly",
+            "modelName": "sedley",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-40036852891842",
+        "name": "Parfums de Marly Sedley · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-40036852891842-f462b3b637ce8f74.webp",
+          "source": "https://us.parfums-de-marly.com/products/sedley",
+          "alt": "Parfums de Marly Sedley · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM2203PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Mint and citrus with lavandin and sandalwood."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/sedley",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:sedley",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "sedley",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM2203PV",
+          "manufacturerVariantId": "40036852891842",
+          "scentDescription": "Mint and citrus with lavandin and sandalwood."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Sedley. Mint and citrus with lavandin and sandalwood. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Sedley"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/sedley",
+        "manufacturerSku": "NPM2203PV",
+        "manufacturerProductId": 6743045865666,
+        "manufacturerVariantId": 40036852891842,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-75-PACK1-1X1_CENTERED_59e33992-c200-4c8e-b6bf-11d576281c8c.png?v=1758896287",
+        "photographSha256": "f462b3b637ce8f74a68841724e539b98545c88ff20500c9f07cdeee722647b24",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-SEDLEY",
+      "expected": {
+        "name": "Parfums de Marly Sedley Eau de Parfum",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/sedley",
+        "attributes": {
+          "brand": "parfums de marly",
+          "perfumer": "Olivier Cresp & Hamid Merati-Kashani",
+          "topNotes": "Bergamot, Spearmint, Watery Accord",
+          "volumeMl": 75,
+          "baseNotes": "Sandalwood, Incense, White Musk, Cedarwood",
+          "modelName": "sedley eau de parfum",
+          "heartNotes": "Geranium, Bourbon Geranium, Lavender",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody aromatic"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Sedley Eau de Parfum",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/sedley",
+          "attributes": {
+            "volumeMl": 125,
+            "brand": "parfums de marly",
+            "modelName": "sedley eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "woody aromatic",
+            "perfumer": "Olivier Cresp & Hamid Merati-Kashani",
+            "topNotes": "Bergamot, Spearmint, Watery Accord",
+            "heartNotes": "Geranium, Bourbon Geranium, Lavender",
+            "baseNotes": "Sandalwood, Incense, White Musk, Cedarwood"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-40036852891842",
+        "name": "Parfums de Marly Sedley · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-40036852891842-f462b3b637ce8f74.webp",
+          "source": "https://us.parfums-de-marly.com/products/sedley",
+          "alt": "Parfums de Marly Sedley · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM2203PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Mint and citrus with lavandin and sandalwood."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/sedley",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:sedley",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "sedley",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM2203PV",
+          "manufacturerVariantId": "40036852891842",
+          "scentDescription": "Mint and citrus with lavandin and sandalwood."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Sedley. Mint and citrus with lavandin and sandalwood. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Sedley"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/sedley",
+        "manufacturerSku": "NPM2203PV",
+        "manufacturerProductId": 6743045865666,
+        "manufacturerVariantId": 40036852891842,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/SEDLEY-PERFUME-75-PACK1-1X1_CENTERED_59e33992-c200-4c8e-b6bf-11d576281c8c.png?v=1758896287",
+        "photographSha256": "f462b3b637ce8f74a68841724e539b98545c88ff20500c9f07cdeee722647b24",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NPM2203PV",
+        "duplicateManufacturerVariantId": 40036852891842
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-PDM-42840987173058",
+      "expected": {
+        "name": "Parfums de Marly Valaya · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/valaya",
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "valaya",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Valaya · Eau De Parfum · 75ml",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/valaya",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 75,
+            "brand": "parfums de marly",
+            "modelName": "valaya",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-42840987173058",
+        "name": "Parfums de Marly Valaya · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-42840987173058-209f7a4da87d2d20.webp",
+          "source": "https://us.parfums-de-marly.com/products/valaya",
+          "alt": "Parfums de Marly Valaya · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM0114PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Mandarin and white flowers with akigalawood and musk."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/valaya",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:valaya",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "valaya",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM0114PV",
+          "manufacturerVariantId": "42840987173058",
+          "scentDescription": "Mandarin and white flowers with akigalawood and musk."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Valaya. Mandarin and white flowers with akigalawood and musk. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Valaya"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/valaya",
+        "manufacturerSku": "NPM0114PV",
+        "manufacturerProductId": 7600831955138,
+        "manufacturerVariantId": 42840987173058,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/VALAYA-PERFUME-75-PACK1-1X1_CENTERED_1_4d701a3c-bf47-4f28-8872-c018a0200cf9.png?v=1758898206",
+        "photographSha256": "209f7a4da87d2d207f6c1450369a4ab81f48e30bb21a12880d5e358b233c1cb7",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-VALAYA",
+      "expected": {
+        "name": "Parfums de Marly Valaya Eau de Parfum",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/valaya",
+        "attributes": {
+          "brand": "parfums de marly",
+          "perfumer": "Quentin Bisch",
+          "topNotes": "Aldehydes, White Peach, Bergamot, Mandarin",
+          "volumeMl": 75,
+          "baseNotes": "Musk, Ambroxan, Akigalawood, Vanilla",
+          "modelName": "valaya eau de parfum",
+          "heartNotes": "Orange Blossom, Petalia, Lily of the Valley, Vetiver, Mahonial",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "floral musky woody"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Valaya Eau de Parfum",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/valaya",
+          "attributes": {
+            "volumeMl": 75,
+            "brand": "parfums de marly",
+            "modelName": "valaya eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "floral musky woody",
+            "perfumer": "Quentin Bisch",
+            "topNotes": "Aldehydes, White Peach, Bergamot, Mandarin",
+            "heartNotes": "Orange Blossom, Petalia, Lily of the Valley, Vetiver, Mahonial",
+            "baseNotes": "Musk, Ambroxan, Akigalawood, Vanilla"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-42840987173058",
+        "name": "Parfums de Marly Valaya · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-42840987173058-209f7a4da87d2d20.webp",
+          "source": "https://us.parfums-de-marly.com/products/valaya",
+          "alt": "Parfums de Marly Valaya · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM0114PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Mandarin and white flowers with akigalawood and musk."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/valaya",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:valaya",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "valaya",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM0114PV",
+          "manufacturerVariantId": "42840987173058",
+          "scentDescription": "Mandarin and white flowers with akigalawood and musk."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Valaya. Mandarin and white flowers with akigalawood and musk. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Valaya"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/valaya",
+        "manufacturerSku": "NPM0114PV",
+        "manufacturerProductId": 7600831955138,
+        "manufacturerVariantId": 42840987173058,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/VALAYA-PERFUME-75-PACK1-1X1_CENTERED_1_4d701a3c-bf47-4f28-8872-c018a0200cf9.png?v=1758898206",
+        "photographSha256": "209f7a4da87d2d207f6c1450369a4ab81f48e30bb21a12880d5e358b233c1cb7",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NPM0114PV",
+        "duplicateManufacturerVariantId": 42840987173058
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-PDM-47052878414171",
+      "expected": {
+        "name": "Parfums de Marly Althaïr · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/althair",
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "althaïr",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Althaïr · Eau De Parfum · 75ml",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/althair",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 75,
+            "brand": "parfums de marly",
+            "modelName": "althaïr",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-47052878414171",
+        "name": "Parfums de Marly Althaïr · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-47052878414171-fb309dadfbd34464.webp",
+          "source": "https://us.parfums-de-marly.com/products/althair",
+          "alt": "Parfums de Marly Althaïr · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM2903PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Vanilla and praline with orange blossom."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/althair",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:althair",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "althaïr",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM2903PV",
+          "manufacturerVariantId": "47052878414171",
+          "scentDescription": "Vanilla and praline with orange blossom."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Althaïr. Vanilla and praline with orange blossom. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Althaïr"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/althair",
+        "manufacturerSku": "NPM2903PV",
+        "manufacturerProductId": 8543827394907,
+        "manufacturerVariantId": 47052878414171,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-75-PACK1-1X1_CENTERED_8e536321-9220-4ece-91fd-de6b13f6896d.png?v=1758873962",
+        "photographSha256": "fb309dadfbd3446488268c6f27ddc4de3d35316518d6973fef4d99803716724b",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-ALTHAIR",
+      "expected": {
+        "name": "Parfums de Marly Althaïr Eau de Parfum",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/althair",
+        "attributes": {
+          "brand": "parfums de marly",
+          "perfumer": "Hamid Merati-Kashani & Ilias Ermenidis",
+          "topNotes": "Cardamom, Cinnamon, Orange Blossom, Bergamot",
+          "volumeMl": 75,
+          "baseNotes": "Praline, Musk, Ambroxan, Guaiac Wood",
+          "modelName": "althaïr eau de parfum",
+          "heartNotes": "Bourbon Vanilla, Elemi",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "amber woody gourmand"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Althaïr Eau de Parfum",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/althair",
+          "attributes": {
+            "volumeMl": 125,
+            "brand": "parfums de marly",
+            "modelName": "althaïr eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "amber woody gourmand",
+            "perfumer": "Hamid Merati-Kashani & Ilias Ermenidis",
+            "topNotes": "Cardamom, Cinnamon, Orange Blossom, Bergamot",
+            "heartNotes": "Bourbon Vanilla, Elemi",
+            "baseNotes": "Praline, Musk, Ambroxan, Guaiac Wood"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-47052878414171",
+        "name": "Parfums de Marly Althaïr · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-47052878414171-fb309dadfbd34464.webp",
+          "source": "https://us.parfums-de-marly.com/products/althair",
+          "alt": "Parfums de Marly Althaïr · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM2903PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Vanilla and praline with orange blossom."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/althair",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:althair",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "althaïr",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM2903PV",
+          "manufacturerVariantId": "47052878414171",
+          "scentDescription": "Vanilla and praline with orange blossom."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Althaïr. Vanilla and praline with orange blossom. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Althaïr"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/althair",
+        "manufacturerSku": "NPM2903PV",
+        "manufacturerProductId": 8543827394907,
+        "manufacturerVariantId": 47052878414171,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/ALTHAIR-PERFUME-75-PACK1-1X1_CENTERED_8e536321-9220-4ece-91fd-de6b13f6896d.png?v=1758873962",
+        "photographSha256": "fb309dadfbd3446488268c6f27ddc4de3d35316518d6973fef4d99803716724b",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NPM2903PV",
+        "duplicateManufacturerVariantId": 47052878414171
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-PDM-47192384602459",
+      "expected": {
+        "name": "Parfums de Marly Haltane · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/haltane",
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "haltane",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Haltane · Eau De Parfum · 75ml",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/haltane",
+          "attributes": {
+            "productType": "eau de parfum",
+            "volumeMl": 75,
+            "brand": "parfums de marly",
+            "modelName": "haltane",
+            "concentration": "eau de parfum"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-47192384602459",
+        "name": "Parfums de Marly Haltane · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-47192384602459-1285ac88ff1cf0c5.webp",
+          "source": "https://us.parfums-de-marly.com/products/haltane",
+          "alt": "Parfums de Marly Haltane · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM2603PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Bergamot and lavender with praline and oud."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/haltane",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:haltane",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "haltane",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM2603PV",
+          "manufacturerVariantId": "47192384602459",
+          "scentDescription": "Bergamot and lavender with praline and oud."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Haltane. Bergamot and lavender with praline and oud. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Haltane"
+      },
+      "reason": "Enrich the existing exact bottle reference with manufacturer-described composition, SKU and variant identity; retain its price and stock.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/haltane",
+        "manufacturerSku": "NPM2603PV",
+        "manufacturerProductId": 7379435487426,
+        "manufacturerVariantId": 47192384602459,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTHANE-PERFUME-75-PACK1-1X1_CENTERED_bc074d01-77e0-4df9-99ae-3bb391d60be9.png?v=1758873094",
+        "photographSha256": "1285ac88ff1cf0c5ae3b3ab0bbd1c2423ef6b0f6f013b573d1544a4de7d13fc9",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-PARFUMS-DE-MARLY-PDM-HALTANE",
+      "expected": {
+        "name": "Parfums de Marly Haltane Eau de Parfum",
+        "brand": "Parfums de Marly",
+        "source": "https://us.parfums-de-marly.com/products/haltane",
+        "attributes": {
+          "brand": "parfums de marly",
+          "perfumer": "Hamid Merati-Kashani",
+          "topNotes": "Bergamot, Lavender, Clary Sage",
+          "volumeMl": 75,
+          "baseNotes": "Patchouli, Vetiver, Musk, Leather, Agarwood",
+          "modelName": "haltane eau de parfum",
+          "heartNotes": "Saffron, Cedarwood, Praline, Elder Wood",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody aromatic"
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Parfums de Marly Haltane Eau de Parfum",
+          "brand": "Parfums de Marly",
+          "source": "https://us.parfums-de-marly.com/products/haltane",
+          "attributes": {
+            "volumeMl": 125,
+            "brand": "parfums de marly",
+            "modelName": "haltane eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "woody aromatic",
+            "perfumer": "Hamid Merati-Kashani",
+            "topNotes": "Bergamot, Lavender, Clary Sage",
+            "heartNotes": "Saffron, Cedarwood, Praline, Elder Wood",
+            "baseNotes": "Patchouli, Vetiver, Musk, Leather, Agarwood"
+          }
+        }
+      ],
+      "product": {
+        "id": "FRAGRANCE-PDM-47192384602459",
+        "name": "Parfums de Marly Haltane · Eau De Parfum · 75ml",
+        "brand": "Parfums de Marly",
+        "color": "Manufacturer bottle",
+        "media": {
+          "url": "/images/verified/restored-fragrance-pdm-47192384602459-1285ac88ff1cf0c5.webp",
+          "source": "https://us.parfums-de-marly.com/products/haltane",
+          "alt": "Parfums de Marly Haltane · Eau De Parfum · 75ml",
+          "attribution": "Parfums de Marly official storefront product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: NPM2603PV",
+          "Bottle size: 75 ml",
+          "Concentration: eau de parfum",
+          "Manufacturer-described composition: Bergamot and lavender with praline and oud."
+        ],
+        "stock": 20,
+        "source": "https://us.parfums-de-marly.com/products/haltane",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact product and selected variant",
+          "review": "specifications",
+          "missing": [
+            "Fragrance notes describe the manufacturer’s olfactory composition, not a complete ingredient or allergen list.",
+            "Personal enjoyment, longevity, projection, allergy safety and medical effects are not established.",
+            "Real merchant price, stock, authenticity and fulfillment are not connected."
+          ]
+        },
+        "familyId": "pdm:haltane",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "parfums de marly",
+          "volumeMl": 75,
+          "modelName": "haltane",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "NPM2603PV",
+          "manufacturerVariantId": "47192384602459",
+          "scentDescription": "Bergamot and lavender with praline and oud."
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Parfums de Marly Haltane. Bergamot and lavender with praline and oud. Selected 75 ml eau de parfum bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "modelName": "Haltane"
+      },
+      "reason": "Consolidate a proven duplicate into the existing same manufacturer SKU, selected bottle size and concentration. Preserve its historical record and redirect its public link.",
+      "evidence": {
+        "source": "https://us.parfums-de-marly.com/products/haltane",
+        "manufacturerSku": "NPM2603PV",
+        "manufacturerProductId": 7379435487426,
+        "manufacturerVariantId": 47192384602459,
+        "volumeMl": 75,
+        "sourceImage": "https://cdn.shopify.com/s/files/1/0555/6279/7250/files/HALTHANE-PERFUME-75-PACK1-1X1_CENTERED_bc074d01-77e0-4df9-99ae-3bb391d60be9.png?v=1758873094",
+        "photographSha256": "1285ac88ff1cf0c5ae3b3ab0bbd1c2423ef6b0f6f013b573d1544a4de7d13fc9",
+        "sourceFileSha256": "7c1696900186251a9f64c7f618874beaf1370b78031ca68269acb10985231779",
+        "review": "Manufacturer product handle, exact SKU, selectable bottle volume and variant-bound photograph agree. Olfactory description summarizes the manufacturer; therapeutic and attraction claims are excluded.",
+        "duplicateManufacturerSku": "NPM2603PV",
+        "duplicateManufacturerVariantId": 47192384602459
+      }
+    }
+  ]
+}

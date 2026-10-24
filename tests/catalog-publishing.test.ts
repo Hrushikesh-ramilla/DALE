@@ -10,6 +10,7 @@ import {
 import {
   catalogSummary,
   browseCatalog,
+  getCategoryBrandsSummary,
   getStoredProduct,
   searchStoredCatalog,
 } from "../src/server/catalog-store";
@@ -59,6 +60,19 @@ function manifest(id: string) {
     ],
   };
 }
+it("keeps brand counts and browsing consistent when legacy attribute spellings or brand casing differ", async () => {
+  for (const [leaf, brand] of [["kitchenware", "All-Clad"], ["wall-chargers", "Apple"], ["fragrance", "Chanel"]]) {
+    const houses = await getCategoryBrandsSummary(leaf);
+    const matches = houses.filter(h => h.name.toLowerCase() === brand.toLowerCase());
+    expect(matches).toHaveLength(1);
+    const selected = await browseCatalog({ leafType: leaf, brand, requirements: { brand: brand.toLowerCase() } });
+    expect(selected.total, brand).toBe(matches[0].count);
+    expect(selected.total).toBeGreaterThan(0);
+    expect(selected.products.every(p => p.brand?.toLowerCase() === brand.toLowerCase())).toBe(true);
+    const requirementOnly = await browseCatalog({ leafType: leaf, requirements: { brand: brand.toLowerCase() } });
+    expect(requirementOnly.total).toBe(selected.total);
+  }
+});
 it(
   "paginates a full 500-record publication without duplicates or fixture leakage",
   async () => {
