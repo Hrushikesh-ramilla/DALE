@@ -1,0 +1,188 @@
+{
+  "id": "track-reference-2026-10-24",
+  "operations": [
+    {
+      "oldId": "PROD-LIFESTYLE-SNEAKERS-BALENCIAGA-BALENCIAGA-TRACK-SNEAKER",
+      "expected": {
+        "name": "Balenciaga Track Sneaker",
+        "brand": "Balenciaga",
+        "source": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+        "attributes": {
+          "brand": "balenciaga",
+          "closure": "Double lace-up system with 176 panels",
+          "soleType": "Dynamic sole with augmented back",
+          "modelName": "track sneaker",
+          "upperLeather": "Technical Mesh and Nylon Overlays (Non-leather)",
+          "originCountry": "China",
+          "distressedFinish": false
+        }
+      },
+      "product": {
+        "id": "PROD-LIFESTYLE-SNEAKERS-BALENCIAGA-BALENCIAGA-TRACK-SNEAKER",
+        "name": "Balenciaga Track Sneaker · Black · 542023W1GB11000",
+        "brand": "Balenciaga",
+        "color": "Black",
+        "media": {
+          "url": "/images/verified/balenciaga-542023w1gb11000-dd65050f3e21b652.webp",
+          "source": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+          "alt": "Black Balenciaga Track sneaker, reference 542023W1GB11000",
+          "attribution": "Balenciaga manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 68900,
+        "specs": [
+          "Manufacturer style/color reference: 542023W1GB11000",
+          "Collection: Men’s lifestyle sneaker; sportswear-inspired everyday styling",
+          "Color: Black",
+          "Upper: polyurethane, polyester, nylon",
+          "Sole: rubber, EVA, TPU",
+          "Insole: gel",
+          "Closure: Double laces",
+          "Leather-free construction",
+          "Country of manufacture: China",
+          "Shoe size: Not selected; confirm manufacturer FR/EUR size before purchase"
+        ],
+        "stock": 25,
+        "source": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+        "category": "footwear",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Balenciaga exact black men’s Track style/color reference",
+          "review": "specifications",
+          "missing": [
+            "No manufacturer evidence was found for the former trail/road performance, pronation support, stack-height, heel-drop or weight claims. These claims have been removed.",
+            "A specific FR/EUR shoe-size variant and personal fit have not been established.",
+            "Real merchant price, size availability, stock and fulfillment are not connected."
+          ]
+        },
+        "familyId": "balenciaga:balenciaga-track-sneaker",
+        "leafType": "lifestyle-sneakers",
+        "modelName": "Track Sneaker",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "balenciaga",
+          "modelName": "track sneaker",
+          "sourceSku": "542023W1GB11000",
+          "productType": "lifestyle sneaker",
+          "material": "mesh and nylon",
+          "upperMaterial": "polyurethane, polyester, nylon",
+          "soleMaterial": "rubber, EVA, TPU",
+          "insoleMaterial": "gel",
+          "closure": "double laces",
+          "originCountry": "China",
+          "finish": "Black",
+          "leatherFree": true
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "Black style/color reference; shoe size not selected",
+        "description": "Black Balenciaga Track lifestyle sneaker with mesh and nylon construction, double laces and a washed finish. Polyurethane, polyester and nylon upper; rubber, EVA and TPU sole; gel insole. Made in China. The manufacturer describes sportswear-inspired everyday styling. A shoe size has not been selected. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Correct the exact designer lifestyle reference, photograph and construction details from manufacturer evidence. Remove the incorrect 176-panel claim and disclose that no shoe size is selected.",
+      "evidence": {
+        "source": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+        "manufacturerSku": "542023W1GB11000",
+        "sourceHash": "3aee055e9c1417c2bb767c35603f01c937505e1d454dd0d4ab6afcdd14d3526f",
+        "sourceImage": "https://balenciaga.dam.kering.com/m/3ec5c33fb1336f8a/eCom-542023W1GB11000_F.jpg?v=7",
+        "photographSha256": "dd65050f3e21b65285e2a198cfeb671dd90b98dd5c5cec1ea005f5e0f1d6b102",
+        "manufacturerClassification": "Inspired by sportswear design for everyday styling",
+        "review": "Exact original style/color URL, structured SKU, material/country/closure text and reference photograph agree. Unsupported sport-performance figures are excluded; unspecified size is disclosed."
+      }
+    },
+    {
+      "oldId": "PROD-RUNNING-SHOES-BALENCIAGA-BALENCIAGA-TRACK-PERFORMANCE-SNEAKER",
+      "expected": {
+        "name": "Balenciaga Track Performance Sneaker",
+        "brand": "Balenciaga",
+        "source": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+        "attributes": {
+          "brand": "balenciaga",
+          "modelName": "track performance sneaker",
+          "heelDropMm": 10,
+          "weightGrams": 510,
+          "originCountry": "China",
+          "stackHeightMm": 40,
+          "pronationSupport": "Neutral (Trail/Road Hybrid)",
+          "cushioningTechnology": "Dynamic augmented-heel dual-density EVA"
+        }
+      },
+      "product": {
+        "id": "PROD-LIFESTYLE-SNEAKERS-BALENCIAGA-BALENCIAGA-TRACK-SNEAKER",
+        "name": "Balenciaga Track Sneaker · Black · 542023W1GB11000",
+        "brand": "Balenciaga",
+        "color": "Black",
+        "media": {
+          "url": "/images/verified/balenciaga-542023w1gb11000-dd65050f3e21b652.webp",
+          "source": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+          "alt": "Black Balenciaga Track sneaker, reference 542023W1GB11000",
+          "attribution": "Balenciaga manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 68900,
+        "specs": [
+          "Manufacturer style/color reference: 542023W1GB11000",
+          "Collection: Men’s lifestyle sneaker; sportswear-inspired everyday styling",
+          "Color: Black",
+          "Upper: polyurethane, polyester, nylon",
+          "Sole: rubber, EVA, TPU",
+          "Insole: gel",
+          "Closure: Double laces",
+          "Leather-free construction",
+          "Country of manufacture: China",
+          "Shoe size: Not selected; confirm manufacturer FR/EUR size before purchase"
+        ],
+        "stock": 25,
+        "source": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+        "category": "footwear",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Balenciaga exact black men’s Track style/color reference",
+          "review": "specifications",
+          "missing": [
+            "No manufacturer evidence was found for the former trail/road performance, pronation support, stack-height, heel-drop or weight claims. These claims have been removed.",
+            "A specific FR/EUR shoe-size variant and personal fit have not been established.",
+            "Real merchant price, size availability, stock and fulfillment are not connected."
+          ]
+        },
+        "familyId": "balenciaga:balenciaga-track-sneaker",
+        "leafType": "lifestyle-sneakers",
+        "modelName": "Track Sneaker",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "balenciaga",
+          "modelName": "track sneaker",
+          "sourceSku": "542023W1GB11000",
+          "productType": "lifestyle sneaker",
+          "material": "mesh and nylon",
+          "upperMaterial": "polyurethane, polyester, nylon",
+          "soleMaterial": "rubber, EVA, TPU",
+          "insoleMaterial": "gel",
+          "closure": "double laces",
+          "originCountry": "China",
+          "finish": "Black",
+          "leatherFree": true
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "Black style/color reference; shoe size not selected",
+        "description": "Black Balenciaga Track lifestyle sneaker with mesh and nylon construction, double laces and a washed finish. Polyurethane, polyester and nylon upper; rubber, EVA and TPU sole; gel insole. Made in China. The manufacturer describes sportswear-inspired everyday styling. A shoe size has not been selected. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Consolidate the same exact style/color reference incorrectly duplicated as a performance running shoe. Remove unsupported running metrics and redirect to the verified lifestyle reference; preserve historical records.",
+      "evidence": {
+        "source": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+        "manufacturerSku": "542023W1GB11000",
+        "sourceHash": "3aee055e9c1417c2bb767c35603f01c937505e1d454dd0d4ab6afcdd14d3526f",
+        "sourceImage": "https://balenciaga.dam.kering.com/m/3ec5c33fb1336f8a/eCom-542023W1GB11000_F.jpg?v=7",
+        "photographSha256": "dd65050f3e21b65285e2a198cfeb671dd90b98dd5c5cec1ea005f5e0f1d6b102",
+        "manufacturerClassification": "Inspired by sportswear design for everyday styling",
+        "review": "Exact original style/color URL, structured SKU, material/country/closure text and reference photograph agree. Unsupported sport-performance figures are excluded; unspecified size is disclosed."
+      }
+    }
+  ]
+}

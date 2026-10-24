@@ -6,6 +6,7 @@ import deviceFollowup from "../../catalog/repairs/device-reference-2026-10-24.js
 import exactDuplicates from "../../catalog/repairs/exact-fragrance-duplicates-2026-10-24.json";
 import logitechReferences from "../../catalog/repairs/logitech-references-2026-10-24.json";
 import watchReferences from "../../catalog/repairs/watch-references-2026-10-24.json";
+import trackReference from "../../catalog/repairs/track-reference-2026-10-24.json";
 import type { Product } from "@/domain/catalog";
 import type { Sql } from "./database";
 
@@ -55,6 +56,7 @@ export async function applyCatalogRepairs(
     ...exactDuplicates.operations,
     ...logitechReferences.operations,
     ...watchReferences.operations,
+    ...trackReference.operations,
   ] as CatalogRepair[],
 ) {
   const receipts = await sql.query<{ id: string }>(

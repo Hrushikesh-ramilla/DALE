@@ -14291,6 +14291,37 @@
         "manufacturerStatus": "Discontinued"
       },
       "color": "Blue dial"
+    },
+    "PROD-LIFESTYLE-SNEAKERS-BALENCIAGA-BALENCIAGA-TRACK-SNEAKER": {
+      "productName": "Balenciaga Track Sneaker · Black · 542023W1GB11000",
+      "brand": "Balenciaga",
+      "url": "/images/verified/balenciaga-542023w1gb11000-dd65050f3e21b652.webp",
+      "alt": "Black Balenciaga Track sneaker, reference 542023W1GB11000",
+      "sourcePage": "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+      "sourceImage": "https://balenciaga.dam.kering.com/m/3ec5c33fb1336f8a/eCom-542023W1GB11000_F.jpg?v=7",
+      "attribution": "Balenciaga manufacturer product photography; external reference",
+      "reviewedAt": "2026-10-24",
+      "width": 900,
+      "height": 900,
+      "bytes": 17704,
+      "sha256": "dd65050f3e21b65285e2a198cfeb671dd90b98dd5c5cec1ea005f5e0f1d6b102",
+      "verified": true,
+      "sourceSku": "542023W1GB11000",
+      "attributes": {
+        "brand": "balenciaga",
+        "modelName": "track sneaker",
+        "sourceSku": "542023W1GB11000",
+        "productType": "lifestyle sneaker",
+        "material": "mesh and nylon",
+        "upperMaterial": "polyurethane, polyester, nylon",
+        "soleMaterial": "rubber, EVA, TPU",
+        "insoleMaterial": "gel",
+        "closure": "double laces",
+        "originCountry": "China",
+        "finish": "Black",
+        "leatherFree": true
+      },
+      "color": "Black"
     }
   }
 }
