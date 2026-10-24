@@ -1,0 +1,97 @@
+{
+  "id": "device-reference-2026-10-24",
+  "operations": [
+    {
+      "oldId": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-Z-FOLD6",
+      "expected": {
+        "name": "Samsung Galaxy Z Fold6",
+        "brand": "Samsung",
+        "source": "https://www.samsung.com/global/galaxy/galaxy-z-fold6/specs/",
+        "attributes": {
+          "brand": "samsung",
+          "ramGb": 12,
+          "modelName": "galaxy z fold6",
+          "refreshHz": 120,
+          "storageGb": 256,
+          "displayInches": 7.6
+        }
+      },
+      "product": {
+        "id": "PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-Z-FOLD6",
+        "name": "Samsung Galaxy Z Fold6 · 256GB · Silver Shadow",
+        "brand": "Samsung",
+        "color": "Silver Shadow",
+        "media": {
+          "url": "/images/verified/samsung-sm-f956bzsbeub-ab638c18419fe9b6.webp",
+          "source": "https://www.samsung.com/uk/business/smartphones/galaxy-z/galaxy-z-fold6-silver-shadow-256gb-sm-f956bzsbeub/",
+          "alt": "Samsung Galaxy Z Fold6 in Silver Shadow, selected 256GB reference",
+          "attribution": "Samsung model reference photograph via Senetic exact-SKU product listing; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 139999,
+        "specs": [
+          "Manufacturer SKU: SM-F956BZSBEUB",
+          "EAN: 8806095667645",
+          "Selected storage: 256 GB",
+          "Memory: 12 GB RAM",
+          "Main display: 7.6-inch Dynamic AMOLED 2X, adaptive refresh rate up to 120 Hz",
+          "Chipset: Snapdragon 8 Gen 3 for Galaxy",
+          "Battery capacity (typical): 4400 mAh",
+          "Weight: 239 g",
+          "Color: Silver Shadow"
+        ],
+        "stock": 25,
+        "source": "https://www.samsung.com/uk/business/smartphones/galaxy-z/galaxy-z-fold6-silver-shadow-256gb-sm-f956bzsbeub/",
+        "category": "phones",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Samsung UK SKU, Samsung official reference/EAN document and Fold6 launch specification table",
+          "review": "specifications",
+          "missing": [
+            "Current software version and availability or pricing of Galaxy AI services vary by region and update; not established here.",
+            "Real merchant stock, current selling price and fulfillment are not connected."
+          ]
+        },
+        "familyId": "samsung:samsung-galaxy-z-fold6",
+        "leafType": "phones",
+        "modelName": "Galaxy Z Fold6",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "samsung",
+          "modelName": "galaxy z fold6",
+          "sourceSku": "SM-F956BZSBEUB",
+          "gtin": "8806095667645",
+          "storageGb": 256,
+          "ramGb": 12,
+          "displayInches": 7.6,
+          "refreshHz": 120,
+          "batteryMah": 4400,
+          "chipset": "Snapdragon 8 Gen 3 for Galaxy",
+          "weightGrams": 239,
+          "finish": "Silver Shadow"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "SM-F956BZSBEUB · 12GB RAM / 256GB · Silver Shadow",
+        "description": "A Galaxy Z Fold6 folding phone with a 7.6-inch main display, 12GB RAM and 256GB storage. This selected UK reference is Silver Shadow, SM-F956BZSBEUB. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Recover the intended Silver Shadow 256GB Fold6 reference. Replace the conflicting generic/other-color image with the exact SKU/EAN photograph and source-bound hardware specifications.",
+      "evidence": {
+        "source": "https://www.samsung.com/uk/business/smartphones/galaxy-z/galaxy-z-fold6-silver-shadow-256gb-sm-f956bzsbeub/",
+        "manufacturerSku": "SM-F956BZSBEUB",
+        "gtin": "8806095667645",
+        "specificationSource": "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-fold6-and-z-flip6-elevate-galaxy-ai-to-new-heights",
+        "skuColorStorageSource": "https://images.samsung.com/is/content/samsung/assets/be/actievoorwaarden/BENL-12009_Terms_and_conditions_Fold_Flip_S24_met_watch7.pdf",
+        "photoReference": "https://www.senetic.co.uk/product/SM-F956BZSBEUB",
+        "sourceImage": "https://gfx3.senetic.com/akeneo-catalog/0/3/7/f/037f35974c54d35a9590b3b7c269e3b006aeff96_1769394__normalized_image1.jpg",
+        "photographSha256": "ab638c18419fe9b6eac430bf9292e284ca5915547baa238e96d9e333bcdff431",
+        "manufacturerPageSha256": "0e11c031360fe4f19c40f69dfcdfbb52e6b6cd95fbc0ae5e7ddee56a5888dcb7",
+        "launchSpecificationPageSha256": "52e4a17a31629738a869791f7e5b6ea3a97522b32d37616136c2ddce3141956f",
+        "review": "UK SKU/EAN/256GB/Silver Shadow joined to manufacturer reference; 12GB/7.6-inch/120Hz/4400mAh/239g verified against Fold6 primary specifications and exact retailer listing."
+      }
+    }
+  ]
+}
