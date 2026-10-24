@@ -1,5 +1,5 @@
 "use client";
-import {classifyMovement,type WatchMovement} from "@/domain/catalog-derived";
+import { classifyMovement, type WatchMovement } from "@/domain/catalog-derived";
 
 import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
@@ -26,6 +26,7 @@ import { KineticCard } from "./kinetic-card";
 import { useStore } from "./store-context";
 import { useCopilot } from "./copilot/copilot-context";
 import { formatMoney } from "@/domain/money";
+import type { CategoryBrandSummary } from "@/server/catalog-store";
 import type { Product } from "@/domain/catalog";
 import { WatchBrandLogo } from "./watch-brand-logos";
 import { HorologicalDial } from "./horological-dial";
@@ -46,7 +47,7 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     origin: "Le Brassus, Switzerland",
     est: 1735,
     tagline: "The World's Oldest Watchmaker & Fifty Fathoms",
-    count: 5,
+    count: 10,
     signatureCalibre: "Manufacture Calibre 1315 (5 Days)",
   },
   {
@@ -62,7 +63,7 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     origin: "Vallée de Joux, Switzerland",
     est: 1775,
     tagline: "The Inventor of the Tourbillon & Pomme Hands",
-    count: 5,
+    count: 10,
     signatureCalibre: "Calibre 777Q / 505SR1 Inverted",
   },
   {
@@ -70,7 +71,7 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     origin: "La Chaux-de-Fonds, Switzerland",
     est: 1791,
     tagline: "Laureato Integrated Sport & Three Gold Bridges",
-    count: 5,
+    count: 10,
     signatureCalibre: "Calibre GP01800 / GP03300",
   },
   {
@@ -102,7 +103,7 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     origin: "Glashütte, Germany",
     est: 1845,
     tagline: "Saxon Fine Horology · Lange 1 & Datograph",
-    count: 5,
+    count: 10,
     signatureCalibre: "Calibre L121.1 / L951.6 Hand-Wound",
   },
   {
@@ -110,7 +111,7 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     origin: "Le Locle, Switzerland",
     est: 1846,
     tagline: "Freak Flying Carrousel & Marine Chronometers",
-    count: 5,
+    count: 10,
     signatureCalibre: "Calibre UN-230 / UN-118 Silicium",
   },
   {
@@ -166,7 +167,7 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     origin: "Tokyo, Japan",
     est: 1881,
     tagline: "Prospex Divers & Presage Mechanical Artistry",
-    count: 6,
+    count: 10,
     signatureCalibre: "Calibre 6R55 / 6L35 Slimline",
   },
   {
@@ -198,7 +199,7 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     origin: "Suwon, South Korea",
     est: 2013,
     tagline: "Galaxy Watch Ultra & Classic Rotating Bezel",
-    count: 6,
+    count: 10,
     signatureCalibre: "Exynos W1000 3nm 5-Core",
   },
   {
@@ -206,14 +207,18 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     origin: "Cupertino, California, USA",
     est: 2015,
     tagline: "Apple Watch Ultra 2 & Series 10 Precision OLED",
-    count: 6,
+    count: 10,
     signatureCalibre: "Apple S10 / S9 SiP Dual-Core",
   },
 ];
 
 type MovementType = "all" | WatchMovement;
 
-function WatchesCatalogContent() {
+function WatchesCatalogContent({
+  initialBrands,
+}: {
+  initialBrands: CategoryBrandSummary[];
+}) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const store = useStore();
@@ -224,10 +229,14 @@ function WatchesCatalogContent() {
   const viewParam = searchParams.get("view") || "";
 
   // isCatalogSpace is true ONLY when a specific brand is selected OR view="all" is requested!
-  const isCatalogSpace = Boolean(brandParam || viewParam === "all" || viewParam === "catalog");
+  const isCatalogSpace = Boolean(
+    brandParam || viewParam === "all" || viewParam === "catalog",
+  );
 
   // Hub display mode: "dial" (interactive watch movement) or "matrix" (all 21 houses)
-  const [hubDisplayMode, setHubDisplayMode] = useState<"dial" | "matrix">("dial");
+  const [hubDisplayMode, setHubDisplayMode] = useState<"dial" | "matrix">(
+    "dial",
+  );
 
   // Filter state in catalog space
   const [allProducts, setAllProducts] = useState<Product[]>([]);
@@ -235,10 +244,13 @@ function WatchesCatalogContent() {
   const selectedBrand = brandParam;
   const [selectedMovement, setSelectedMovement] = useState<MovementType>("all");
   const [searchQuery, setSearchQuery] = useState("");
-  const [sortOrder, setSortOrder] = useState<"featured" | "price-asc" | "price-desc" | "brand-asc">("featured");
-  const [priceTier, setPriceTier] = useState<"all" | "sub1k" | "1k-5k" | "5k-15k" | "15k+">("all");
+  const [sortOrder, setSortOrder] = useState<
+    "featured" | "price-asc" | "price-desc" | "brand-asc"
+  >("featured");
+  const [priceTier, setPriceTier] = useState<
+    "all" | "sub1k" | "1k-5k" | "5k-15k" | "15k+"
+  >("all");
   const [maxBudget, setMaxBudget] = useState<number | "">("");
-
 
   // AI Assistant state
   const [aiPrompt, setAiPrompt] = useState("");
@@ -251,16 +263,23 @@ function WatchesCatalogContent() {
     async function loadWatches() {
       setLoading(true);
       try {
-        const pages: {products:Product[];nextCursor:string|null}[]=[];
-        let cursor:string|null=null;
+        const pages: { products: Product[]; nextCursor: string | null }[] = [];
+        let cursor: string | null = null;
         do {
-          const response:Response=await fetch(`/api/catalog?category=watches${cursor?`&cursor=${encodeURIComponent(cursor)}`:""}`);
-          if(!response.ok)throw new Error("Watch catalog request failed.");
-          const data:{products:Product[];nextCursor:string|null}=await response.json();pages.push(data);cursor=data.nextCursor;
-        } while(cursor&&!cancelled);
+          const response: Response = await fetch(
+            `/api/catalog?category=watches${cursor ? `&cursor=${encodeURIComponent(cursor)}` : ""}`,
+          );
+          if (!response.ok) throw new Error("Watch catalog request failed.");
+          const data: { products: Product[]; nextCursor: string | null } =
+            await response.json();
+          pages.push(data);
+          cursor = data.nextCursor;
+        } while (cursor && !cancelled);
         if (cancelled) return;
         const combined: Product[] = pages.flatMap((p) => p.products || []);
-        const unique = Array.from(new Map(combined.map((p) => [p.id, p])).values());
+        const unique = Array.from(
+          new Map(combined.map((p) => [p.id, p])).values(),
+        );
         setAllProducts(unique);
       } catch (err) {
         console.error("Failed to load watches catalog:", err);
@@ -276,7 +295,14 @@ function WatchesCatalogContent() {
 
   // Movement counts computed across all loaded watches
   const movementCounts = useMemo(() => {
-    const counts = { all: allProducts.length, automatic: 0, mechanical: 0, quartz: 0, smartwatch: 0, unknown: 0 };
+    const counts = {
+      all: allProducts.length,
+      automatic: 0,
+      mechanical: 0,
+      quartz: 0,
+      smartwatch: 0,
+      unknown: 0,
+    };
     for (const p of allProducts) {
       const mv = classifyMovement(p.attributes?.movement, p.specs);
       counts[mv]++;
@@ -286,51 +312,144 @@ function WatchesCatalogContent() {
 
   // Brand counts computed across loaded watches
   const brandCounts = useMemo(() => {
-    const counts: Record<string, number> = {};
+    const counts: Record<string, number> =
+      allProducts.length === 0
+        ? Object.fromEntries(initialBrands.map((b) => [b.name, b.count]))
+        : {};
     for (const p of allProducts) {
       const b = p.brand || p.attributes?.brand || "Other";
       counts[b] = (counts[b] || 0) + 1;
     }
     return counts;
-  }, [allProducts]);
+  }, [allProducts, initialBrands]);
+  const availableHouses = useMemo(
+    () =>
+      Object.entries(brandCounts)
+        .filter(([, count]) => count > 0)
+        .map(([name, count]) => ({
+          ...(WATCH_BRANDS.find((b) => b.name === name) || {
+            name,
+            origin: "",
+            est: 0,
+            tagline: "Explore recorded watch references",
+            signatureCalibre: "See individual product specifications",
+          }),
+          count,
+        })),
+    [brandCounts],
+  );
+  const totalWatches =
+    allProducts.length === 0
+      ? initialBrands.reduce((sum, b) => sum + b.count, 0)
+      : allProducts.length;
 
   const handleAiCommand = async (command: string) => {
     if (!command.trim()) return;
-    setAiThinking(true);setAiMessage(null);
-    try { await copilot.sendMessage(command);setAiPrompt(""); } finally { setAiThinking(false); }
+    setAiThinking(true);
+    setAiMessage(null);
+    try {
+      await copilot.sendMessage(command);
+      setAiPrompt("");
+    } finally {
+      setAiThinking(false);
+    }
   };
   useEffect(() => {
-    const tiers:Record<string,[number|null,number|null]>={all:[null,null],sub1k:[null,100000],"1k-5k":[100000,500000],"5k-15k":[500000,1500000],"15k+":[1500000,null]};
-    const [minimum,tierMaximum]=tiers[priceTier];
-    const budgetMaximum=typeof maxBudget==="number" && maxBudget>0?Math.floor(maxBudget*100+1e-7):null;
-    const maximum=tierMaximum===null?budgetMaximum:budgetMaximum===null?tierMaximum:Math.min(tierMaximum,budgetMaximum);
-    window.dispatchEvent(new CustomEvent("dale:ui-state",{detail:{categories:["watches"],brands:selectedBrand?[selectedBrand]:[],query:searchQuery,min_price:minimum,max_price:maximum,max_exclusive:tierMaximum!==null && maximum===tierMaximum,sort:sortOrder==="price-asc"?"price_asc":sortOrder==="price-desc"?"price_desc":sortOrder==="brand-asc"?"brand_asc":"relevance",attributes:selectedMovement==="all"?{}:{movement_class:selectedMovement}}}));
-    return()=>{window.dispatchEvent(new CustomEvent("dale:ui-state",{detail:{}}));};
-  },[selectedBrand,searchQuery,maxBudget,selectedMovement,priceTier,sortOrder]);
+    const tiers: Record<string, [number | null, number | null]> = {
+      all: [null, null],
+      sub1k: [null, 100000],
+      "1k-5k": [100000, 500000],
+      "5k-15k": [500000, 1500000],
+      "15k+": [1500000, null],
+    };
+    const [minimum, tierMaximum] = tiers[priceTier];
+    const budgetMaximum =
+      typeof maxBudget === "number" && maxBudget > 0
+        ? Math.floor(maxBudget * 100 + 1e-7)
+        : null;
+    const maximum =
+      tierMaximum === null
+        ? budgetMaximum
+        : budgetMaximum === null
+          ? tierMaximum
+          : Math.min(tierMaximum, budgetMaximum);
+    window.dispatchEvent(
+      new CustomEvent("dale:ui-state", {
+        detail: {
+          categories: ["watches"],
+          brands: selectedBrand ? [selectedBrand] : [],
+          query: searchQuery,
+          min_price: minimum,
+          max_price: maximum,
+          max_exclusive: tierMaximum !== null && maximum === tierMaximum,
+          sort:
+            sortOrder === "price-asc"
+              ? "price_asc"
+              : sortOrder === "price-desc"
+                ? "price_desc"
+                : sortOrder === "brand-asc"
+                  ? "brand_asc"
+                  : "relevance",
+          attributes:
+            selectedMovement === "all"
+              ? {}
+              : { movement_class: selectedMovement },
+        },
+      }),
+    );
+    return () => {
+      window.dispatchEvent(new CustomEvent("dale:ui-state", { detail: {} }));
+    };
+  }, [
+    selectedBrand,
+    searchQuery,
+    maxBudget,
+    selectedMovement,
+    priceTier,
+    sortOrder,
+  ]);
 
   // Filtered & Sorted products (for Catalog Space)
   const filteredProducts = useMemo(() => {
     return allProducts.filter((product) => {
       // Brand filter
-      if (selectedBrand && product.brand?.toLowerCase() !== selectedBrand.toLowerCase()) {
+      if (
+        selectedBrand &&
+        product.brand?.toLowerCase() !== selectedBrand.toLowerCase()
+      ) {
         return false;
       }
 
       // Movement filter
       if (selectedMovement !== "all") {
-        const mv = classifyMovement(product.attributes?.movement, product.specs);
+        const mv = classifyMovement(
+          product.attributes?.movement,
+          product.specs,
+        );
         if (mv !== selectedMovement) return false;
       }
 
       // Price Tier filter
       const priceDollars = product.price / 100;
       if (priceTier === "sub1k" && priceDollars >= 1000) return false;
-      if (priceTier === "1k-5k" && (priceDollars < 1000 || priceDollars >= 5000)) return false;
-      if (priceTier === "5k-15k" && (priceDollars < 5000 || priceDollars >= 15000)) return false;
+      if (
+        priceTier === "1k-5k" &&
+        (priceDollars < 1000 || priceDollars >= 5000)
+      )
+        return false;
+      if (
+        priceTier === "5k-15k" &&
+        (priceDollars < 5000 || priceDollars >= 15000)
+      )
+        return false;
       if (priceTier === "15k+" && priceDollars < 15000) return false;
 
       // Custom Max Budget
-      if (typeof maxBudget === "number" && maxBudget > 0 && priceDollars > maxBudget) {
+      if (
+        typeof maxBudget === "number" &&
+        maxBudget > 0 &&
+        priceDollars > maxBudget
+      ) {
         return false;
       }
 
@@ -352,7 +471,14 @@ function WatchesCatalogContent() {
 
       return true;
     });
-  }, [allProducts, selectedBrand, selectedMovement, priceTier, maxBudget, searchQuery]);
+  }, [
+    allProducts,
+    selectedBrand,
+    selectedMovement,
+    priceTier,
+    maxBudget,
+    searchQuery,
+  ]);
 
   const sortedProducts = useMemo(() => {
     const list = [...filteredProducts];
@@ -367,7 +493,11 @@ function WatchesCatalogContent() {
   }, [filteredProducts, sortOrder]);
 
   const hasActiveFilters = Boolean(
-    selectedBrand || selectedMovement !== "all" || priceTier !== "all" || maxBudget || searchQuery
+    selectedBrand ||
+    selectedMovement !== "all" ||
+    priceTier !== "all" ||
+    maxBudget ||
+    searchQuery,
   );
 
   // =========================================================================
@@ -380,13 +510,10 @@ function WatchesCatalogContent() {
         {/* Top Navigation & Hub Utility Bar */}
         <div className="hub-top-utility-bar">
           <Breadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Watches" },
-            ]}
+            items={[{ label: "Home", href: "/" }, { label: "Watches" }]}
           />
 
-          {/* Mode Switcher: Dial vs All 21 Houses */}
+          {/* Mode Switcher: Dial vs All {availableHouses.length} Houses */}
           <div className="hub-mode-switcher">
             <button
               type="button"
@@ -401,10 +528,10 @@ function WatchesCatalogContent() {
               type="button"
               className={`mode-switch-btn ${hubDisplayMode === "matrix" ? "active" : ""}`}
               onClick={() => setHubDisplayMode("matrix")}
-              title="All 21 Manufacture Houses"
+              title={`All ${availableHouses.length} Manufacture Houses`}
             >
               <Layers size={13} />
-              <span>All 21 Houses</span>
+              <span>All {availableHouses.length} Houses</span>
             </button>
           </div>
 
@@ -413,25 +540,35 @@ function WatchesCatalogContent() {
             href="/category/watches?view=all"
             className="button primary explore-all-top-btn"
           >
-            <span>Explore All ({allProducts.length || 185})</span>
+            <span>Explore All ({totalWatches})</span>
             <ArrowRight size={13} />
           </Link>
         </div>
 
         {/* VIEW A: Grand Horological Watch Dial Showcase (Screen-Filling Hero) */}
-        {hubDisplayMode === "dial" ? (
-          <section className="watches-dial-hero" aria-label="Haute Horlogerie Showcase">
+        {hubDisplayMode === "dial" && availableHouses.length > 0 ? (
+          <section
+            className="watches-dial-hero"
+            aria-label="Haute Horlogerie Showcase"
+          >
             <HorologicalDial
-              brands={WATCH_BRANDS}
+              brands={availableHouses}
               brandCounts={brandCounts}
-              onSelectBrand={(brandName) => router.push(`/category/watches?brand=${encodeURIComponent(brandName)}`)}
+              onSelectBrand={(brandName) =>
+                router.push(
+                  `/category/watches?brand=${encodeURIComponent(brandName)}`,
+                )
+              }
             />
           </section>
         ) : (
-          /* VIEW B: Floating 3D Vector Logos (All 21 Houses Grid) */
-          <section className="watches-houses-section" aria-label="All 21 Horological Houses">
+          /* VIEW B: Floating 3D Vector Logos (All {availableHouses.length} Houses Grid) */
+          <section
+            className="watches-houses-section"
+            aria-label="Available watch houses"
+          >
             <div className="brand-logos-grid">
-              {WATCH_BRANDS.map((brand) => (
+              {availableHouses.map((brand) => (
                 <Link
                   key={brand.name}
                   href={`/category/watches?brand=${encodeURIComponent(brand.name)}`}
@@ -439,7 +576,11 @@ function WatchesCatalogContent() {
                   aria-label={`Explore ${brand.name} watches`}
                 >
                   <div className="brand-logo-3d-wrapper">
-                    <WatchBrandLogo brand={brand.name} size={110} className="brand-tile-svg" />
+                    <WatchBrandLogo
+                      brand={brand.name}
+                      size={110}
+                      className="brand-tile-svg"
+                    />
                   </div>
                 </Link>
               ))}
@@ -450,13 +591,16 @@ function WatchesCatalogContent() {
               <div className="hub-bottom-card">
                 <div>
                   <h3>Complete Horology Collection</h3>
-                  <p>Filter by movement calibre, complication, or manufacture house.</p>
+                  <p>
+                    Filter by movement calibre, complication, or manufacture
+                    house.
+                  </p>
                 </div>
                 <Link
                   href="/category/watches?view=all"
                   className="button primary see-all-button"
                 >
-                  <span>Explore All Timepieces ({allProducts.length || 185} Watches)</span>
+                  <span>Explore All Timepieces ({totalWatches} Watches)</span>
                   <ArrowRight size={16} />
                 </Link>
               </div>
@@ -471,7 +615,9 @@ function WatchesCatalogContent() {
   // VIEW 2: THE DEDICATED WATCHES CATALOG SPACE
   // Entered via clicking any Brand Card OR clicking "Explore All Timepieces"
   // =========================================================================
-  const activeBrandTitle = selectedBrand ? `${selectedBrand} Timepieces` : "All Precision & Luxury Timepieces";
+  const activeBrandTitle = selectedBrand
+    ? `${selectedBrand} Timepieces`
+    : "All Precision & Luxury Timepieces";
 
   return (
     <div className="watches-category-experience catalog-space-view">
@@ -485,10 +631,7 @@ function WatchesCatalogContent() {
           ]}
         />
 
-        <Link
-          href="/category/watches"
-          className="back-to-hub-link"
-        >
+        <Link href="/category/watches" className="back-to-hub-link">
           <ArrowLeft size={15} />
           <span>Back to All Horology Houses</span>
         </Link>
@@ -504,13 +647,15 @@ function WatchesCatalogContent() {
           )}
           <div>
             <div className="eyebrow">
-              {selectedBrand ? `RECORDED MANUFACTURE COLLECTION · ${selectedBrand.toUpperCase()}` : "COMPLETE HOROLOGY CATALOG"}
+              {selectedBrand
+                ? `RECORDED MANUFACTURE COLLECTION · ${selectedBrand.toUpperCase()}`
+                : "COMPLETE HOROLOGY CATALOG"}
             </div>
             <h1>{activeBrandTitle}</h1>
             <p>
               {selectedBrand
                 ? `${brandCounts[selectedBrand] || 0} recorded models from ${selectedBrand} with recorded movements and technical specifications.`
-                : `${allProducts.length || 185} recorded models across 21 prestigious horological houses and smart manufactures.`}
+                : `${totalWatches} recorded models across ${availableHouses.length} watch houses.`}
             </p>
           </div>
         </div>
@@ -528,7 +673,10 @@ function WatchesCatalogContent() {
       </header>
 
       {/* HOROLOGY CONCIERGE (Filter & Search) */}
-      <section className="dale-watch-concierge-panel" aria-label="Horology Concierge">
+      <section
+        className="dale-watch-concierge-panel"
+        aria-label="Horology Concierge"
+      >
         <div className="concierge-header" style={{ marginBottom: 12 }}>
           <div className="concierge-title-row" style={{ marginBottom: 0 }}>
             <div className="concierge-badge">
@@ -560,7 +708,11 @@ function WatchesCatalogContent() {
               className="button primary concierge-submit-btn"
               disabled={aiThinking || !aiPrompt.trim()}
             >
-              {aiThinking ? <Clock size={15} className="spin" /> : <Send size={15} />}
+              {aiThinking ? (
+                <Clock size={15} className="spin" />
+              ) : (
+                <Send size={15} />
+              )}
               <span>{aiThinking ? "Filtering..." : "Ask DALE"}</span>
             </button>
           </div>
@@ -645,7 +797,11 @@ function WatchesCatalogContent() {
       </section>
 
       {/* FILTER TOOLBAR & GRID */}
-      <section id="timepieces-grid" className="watches-grid-section" aria-label="Watches Catalog Grid">
+      <section
+        id="timepieces-grid"
+        className="watches-grid-section"
+        aria-label="Watches Catalog Grid"
+      >
         <div className="watches-filter-toolbar">
           {/* Movement Filter Bar */}
           <div className="filter-group-block">
@@ -708,15 +864,20 @@ function WatchesCatalogContent() {
               >
                 All Houses ({allProducts.length})
               </button>
-              {WATCH_BRANDS.map((brand) => (
+              {availableHouses.map((brand) => (
                 <button
                   key={brand.name}
                   type="button"
                   className={`filter-pill ${selectedBrand.toLowerCase() === brand.name.toLowerCase() ? "active" : ""}`}
                   onClick={() => {
-                    const newBrand = selectedBrand.toLowerCase() === brand.name.toLowerCase() ? "" : brand.name;
+                    const newBrand =
+                      selectedBrand.toLowerCase() === brand.name.toLowerCase()
+                        ? ""
+                        : brand.name;
                     if (newBrand) {
-                      router.push(`/category/watches?brand=${encodeURIComponent(newBrand)}`);
+                      router.push(
+                        `/category/watches?brand=${encodeURIComponent(newBrand)}`,
+                      );
                     } else {
                       router.push("/category/watches?view=all");
                     }
@@ -813,7 +974,9 @@ function WatchesCatalogContent() {
               <select
                 id="watches-sort-select"
                 value={sortOrder}
-                onChange={(e) => setSortOrder(e.target.value as typeof sortOrder)}
+                onChange={(e) =>
+                  setSortOrder(e.target.value as typeof sortOrder)
+                }
                 className="sort-select"
               >
                 <option value="featured">Featured Sequence</option>
@@ -846,15 +1009,30 @@ function WatchesCatalogContent() {
                 {selectedMovement !== "all" && (
                   <span className="active-chip">
                     Movement: {selectedMovement}
-                    <button type="button" onClick={() => setSelectedMovement("all")} aria-label="Remove movement filter">
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMovement("all")}
+                      aria-label="Remove movement filter"
+                    >
                       <X size={12} />
                     </button>
                   </span>
                 )}
                 {priceTier !== "all" && (
                   <span className="active-chip">
-                    Tier: {priceTier === "sub1k" ? "Under $1k" : priceTier === "1k-5k" ? "$1k - $5k" : priceTier === "5k-15k" ? "$5k - $15k" : "$15k+"}
-                    <button type="button" onClick={() => setPriceTier("all")} aria-label="Remove price tier">
+                    Tier:{" "}
+                    {priceTier === "sub1k"
+                      ? "Under $1k"
+                      : priceTier === "1k-5k"
+                        ? "$1k - $5k"
+                        : priceTier === "5k-15k"
+                          ? "$5k - $15k"
+                          : "$15k+"}
+                    <button
+                      type="button"
+                      onClick={() => setPriceTier("all")}
+                      aria-label="Remove price tier"
+                    >
                       <X size={12} />
                     </button>
                   </span>
@@ -862,7 +1040,11 @@ function WatchesCatalogContent() {
                 {typeof maxBudget === "number" && maxBudget > 0 && (
                   <span className="active-chip">
                     Max: ${maxBudget.toLocaleString()}
-                    <button type="button" onClick={() => setMaxBudget("")} aria-label="Remove max budget">
+                    <button
+                      type="button"
+                      onClick={() => setMaxBudget("")}
+                      aria-label="Remove max budget"
+                    >
                       <X size={12} />
                     </button>
                   </span>
@@ -870,7 +1052,11 @@ function WatchesCatalogContent() {
                 {searchQuery && (
                   <span className="active-chip">
                     Query: &ldquo;{searchQuery}&rdquo;
-                    <button type="button" onClick={() => setSearchQuery("")} aria-label="Remove search query">
+                    <button
+                      type="button"
+                      onClick={() => setSearchQuery("")}
+                      aria-label="Remove search query"
+                    >
                       <X size={12} />
                     </button>
                   </span>
@@ -896,9 +1082,14 @@ function WatchesCatalogContent() {
         {/* Results Count Banner */}
         <div className="grid-count-banner">
           <span>
-            Showing <strong>{sortedProducts.length}</strong> {selectedBrand ? `models from ${selectedBrand}` : "recorded timepieces"}
+            Showing <strong>{sortedProducts.length}</strong>{" "}
+            {selectedBrand
+              ? `models from ${selectedBrand}`
+              : "recorded timepieces"}
           </span>
-          {selectedBrand && <span className="brand-focus-tag">{selectedBrand} Collection</span>}
+          {selectedBrand && (
+            <span className="brand-focus-tag">{selectedBrand} Collection</span>
+          )}
         </div>
 
         {/* Product Grid */}
@@ -911,7 +1102,10 @@ function WatchesCatalogContent() {
           <div className="catalog-empty-state">
             <Clock size={36} className="empty-icon" />
             <h3>No Timepieces Match Your Filters</h3>
-            <p>Try clearing your active filters or asking DALE to search across all manufacture houses.</p>
+            <p>
+              Try clearing your active filters or asking DALE to search across
+              all manufacture houses.
+            </p>
             <button
               type="button"
               className="button secondary"
@@ -929,12 +1123,19 @@ function WatchesCatalogContent() {
         ) : (
           <div className="product-grid">
             {sortedProducts.map((product) => {
-              const mv = classifyMovement(product.attributes?.movement, product.specs);
+              const mv = classifyMovement(
+                product.attributes?.movement,
+                product.specs,
+              );
               const diameter = product.attributes?.caseDiameterMm;
               const waterResistance = product.attributes?.waterResistanceM;
 
               return (
-                <KineticCard className="product-card watch-card" key={product.id} data-product-id={product.id}>
+                <KineticCard
+                  className="product-card watch-card"
+                  key={product.id}
+                  data-product-id={product.id}
+                >
                   <div className="card-visual">
                     <Link
                       href={`/product/${product.id}`}
@@ -956,10 +1157,19 @@ function WatchesCatalogContent() {
                   <div className="card-details">
                     <div className="product-topline">
                       <span className="fit-label">
-                        <Check size={12} /> {product.brand || "Swiss Manufacture"}
+                        <Check size={12} />{" "}
+                        {product.brand || "Swiss Manufacture"}
                       </span>
                       <span className={`movement-tag ${mv}`}>
-                        {mv === "unknown" ? "Movement not recorded" : mv === "smartwatch" ? "Smartwatch" : mv === "automatic" ? "Automatic" : mv === "mechanical" ? "Mechanical" : "Quartz"}
+                        {mv === "unknown"
+                          ? "Movement not recorded"
+                          : mv === "smartwatch"
+                            ? "Smartwatch"
+                            : mv === "automatic"
+                              ? "Automatic"
+                              : mv === "mechanical"
+                                ? "Mechanical"
+                                : "Quartz"}
                       </span>
                     </div>
 
@@ -977,7 +1187,9 @@ function WatchesCatalogContent() {
 
                     <div className="spec-tags">
                       {diameter && <span>{diameter}mm Case</span>}
-                      {waterResistance && <span>{waterResistance}m Water Resistance</span>}
+                      {waterResistance && (
+                        <span>{waterResistance}m Water Resistance</span>
+                      )}
                       {product.specs.slice(0, 1).map((spec) => (
                         <span key={spec}>{spec}</span>
                       ))}
@@ -988,9 +1200,7 @@ function WatchesCatalogContent() {
                         <strong className="price-display">
                           {formatMoney(product.price)}
                         </strong>
-                        <small className="price-sub">
-                          USD · Sandbox offer
-                        </small>
+                        <small className="price-sub">USD · Sandbox offer</small>
                       </div>
 
                       <div style={{ display: "flex", gap: 8 }}>
@@ -998,7 +1208,11 @@ function WatchesCatalogContent() {
                           type="button"
                           className="button primary small"
                           onClick={() => void store.choose(product)}
-                          style={{ display: "inline-flex", alignItems: "center", gap: 6 }}
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: 6,
+                          }}
                         >
                           <ShoppingBag size={13} />
                           <span>Buy Now</span>
@@ -1007,7 +1221,11 @@ function WatchesCatalogContent() {
                         <Link
                           href={`/product/${product.id}`}
                           className="button secondary small"
-                          style={{ display: "inline-flex", alignItems: "center", gap: 4 }}
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: 4,
+                          }}
                         >
                           <span>Details</span>
                           <ArrowRight size={13} />
@@ -1025,10 +1243,23 @@ function WatchesCatalogContent() {
   );
 }
 
-export function WatchesCatalogView() {
+export function WatchesCatalogView({
+  initialBrands = [],
+}: {
+  initialBrands?: CategoryBrandSummary[];
+}) {
   return (
-    <Suspense fallback={<div className="watches-category-experience" style={{ padding: 40, color: "#f7f5f0" }}>Loading Haute Horlogerie...</div>}>
-      <WatchesCatalogContent />
+    <Suspense
+      fallback={
+        <div
+          className="watches-category-experience"
+          style={{ padding: 40, color: "#f7f5f0" }}
+        >
+          Loading Haute Horlogerie...
+        </div>
+      }
+    >
+      <WatchesCatalogContent initialBrands={initialBrands} />
     </Suspense>
   );
 }

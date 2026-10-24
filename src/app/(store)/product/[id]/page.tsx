@@ -1,7 +1,8 @@
-import { notFound } from "next/navigation";
-import { getStoredProduct } from "@/server/catalog-store";
+import { notFound, redirect } from "next/navigation";
+import { getPublishedProduct } from "@/server/catalog-store";
 import { ProductDetailView } from "@/components/product-detail-view";
-import { publicCatalog } from "@/domain/catalog";
+import { getDatabase } from "@/server/database";
+import { publishedReplacement } from "@/server/catalog-repairs";
 
 export async function generateMetadata({
   params,
@@ -12,9 +13,9 @@ export async function generateMetadata({
   try {
     let product;
     try {
-      product = await getStoredProduct(id);
+      product = await getPublishedProduct(id);
     } catch {
-      product = publicCatalog.find((p) => p.id === id);
+      product = undefined;
     }
     if (!product) return { title: "Product — DALE" };
     return {
@@ -34,12 +35,14 @@ export default async function ProductPage({
   const { id } = await params;
   let product;
   try {
-    product = await getStoredProduct(id);
+    product = await getPublishedProduct(id);
   } catch {
-    product = publicCatalog.find((p) => p.id === id);
+    product = undefined;
   }
 
   if (!product) {
+    const replacement = await publishedReplacement(await getDatabase(), id);
+    if (replacement) redirect(`/product/${encodeURIComponent(replacement)}`);
     notFound();
   }
 

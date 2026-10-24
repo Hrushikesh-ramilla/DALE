@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound, redirect } from "next/navigation";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import {
   getDepartmentById,
   getDepartmentLeafs,
   leafTitles,
-  leafToParentCategory,
   type LeafTypeKey,
 } from "@/domain/departments";
 import { Breadcrumbs } from "@/components/breadcrumbs";
@@ -16,84 +15,82 @@ import { formatMoney } from "@/domain/money";
 
 const leafDescriptions: Partial<Record<LeafTypeKey, string>> = {
   // Electronics
-  phones: "Flagship smartphones with verified displays, cameras, and connectivity.",
-  laptops: "High-performance portable workstations for precision creative and enterprise tasks.",
-  tablets: "Stylus-enabled digital canvases and ultra-lightweight computing slabs.",
-  headphones: "Audiophile-grade over-ear transducers with reference acoustics and active noise cancellation.",
-  earbuds: "Ultra-compact true wireless stereo buds engineered for high fidelity and comfort.",
-  speakers: "High-fidelity acoustic monitors and multi-room wireless sound systems.",
-  soundbars: "Cinematic Dolby Atmos multi-channel soundbars for immersion and spatial separation.",
-  "wall-chargers": "GaN fast-charging power adapters with verified multi-port power delivery.",
-  "power-banks": "High-capacity portable energy banks with USB-C PD and pass-through charging.",
-  "portable-ssds": "Ruggedized high-speed NVMe external storage with hardware encryption.",
-  monitors: "Color-accurate 4K, 5K, and OLED creative displays with USB-C hub connectivity.",
-  "docks-hubs": "Thunderbolt 4 and multi-stream USB-C docking hubs for multi-display setups.",
-  keyboards: "Mechanical and low-profile precision keyboards with tactile actuation.",
+  phones:
+    "Flagship smartphones with verified displays, cameras, and connectivity.",
+  laptops:
+    "High-performance portable workstations for precision creative and enterprise tasks.",
+  tablets:
+    "Stylus-enabled digital canvases and ultra-lightweight computing slabs.",
+  headphones:
+    "Audiophile-grade over-ear transducers with reference acoustics and active noise cancellation.",
+  earbuds:
+    "Ultra-compact true wireless stereo buds engineered for high fidelity and comfort.",
+  speakers:
+    "High-fidelity acoustic monitors and multi-room wireless sound systems.",
+  soundbars:
+    "Cinematic Dolby Atmos multi-channel soundbars for immersion and spatial separation.",
+  "wall-chargers":
+    "GaN fast-charging power adapters with verified multi-port power delivery.",
+  "power-banks":
+    "High-capacity portable energy banks with USB-C PD and pass-through charging.",
+  "portable-ssds":
+    "Ruggedized high-speed NVMe external storage with hardware encryption.",
+  monitors:
+    "Color-accurate 4K, 5K, and OLED creative displays with USB-C hub connectivity.",
+  "docks-hubs":
+    "Thunderbolt 4 and multi-stream USB-C docking hubs for multi-display setups.",
+  keyboards:
+    "Mechanical and low-profile precision keyboards with tactile actuation.",
   mice: "Ergonomic high-DPI pointing devices with multi-device wireless pairing.",
-  cables: "Certified 240W Thunderbolt 4 and braided USB-C high-bandwidth cables.",
+  cables:
+    "Certified 240W Thunderbolt 4 and braided USB-C high-bandwidth cables.",
   // Clothing
-  suits: "Full-canvas Neapolitan and Savile Row tailoring with Super 130s–180s wool.",
+  suits:
+    "Full-canvas Neapolitan and Savile Row tailoring with Super 130s–180s wool.",
   coats: "Iconic cashmere, alpaca, and virgin wool double-breasted outerwear.",
-  jackets: "Precision tailored blazers, leather aviators, and technical luxury jackets.",
-  shirts: "Hand-finished button-down shirts in Sea Island and Egyptian long-staple cotton.",
-  knitwear: "Pure Mongolian cashmere, fine merino, and silk-blend textured sweaters.",
-  trousers: "Tailored wool trousers and pleated chinos with sartorial waistband details.",
+  jackets:
+    "Precision tailored blazers, leather aviators, and technical luxury jackets.",
+  shirts:
+    "Hand-finished button-down shirts in Sea Island and Egyptian long-staple cotton.",
+  knitwear:
+    "Pure Mongolian cashmere, fine merino, and silk-blend textured sweaters.",
+  trousers:
+    "Tailored wool trousers and pleated chinos with sartorial waistband details.",
   denim: "Japanese selvedge and artisanal washed luxury denim cuts.",
-  dresses: "Haute couture evening wear and silk silhouettes from premier fashion houses.",
-  "t-shirts": "Heavyweight mercerized cotton and relaxed-fit luxury designer tees.",
+  dresses:
+    "Haute couture evening wear and silk silhouettes from premier fashion houses.",
+  "t-shirts":
+    "Heavyweight mercerized cotton and relaxed-fit luxury designer tees.",
   // Lifestyle & Footwear
-  fragrance: "Iconic haute parfumerie formulated by master noses with rich note pyramids.",
-  watches: "High-horology timepieces with in-house mechanical calibres and precious metals.",
-  sunglasses: "Handcrafted Mazzucchelli acetate and titanium frames with mineral optics.",
-  handbags: "Hand-stitched leather totes, flap bags, and iconic luxury silhouettes.",
-  backpacks: "Artisanal leather and coated canvas rucksacks with palladium hardware.",
-  wallets: "Grained calfskin cardholders and continental wallets with edge lacquering.",
-  loafers: "Goodyear-welted and Blake-stitched penny, horsebit, and tassel loafers.",
-  "formal-shoes": "Master-lasted wholecuts, oxfords, and Louboutin red-sole dress shoes.",
-  "running-shoes": "Cushioned carbon-plate marathoners and designer performance runners.",
-  "lifestyle-sneakers": "Iconic luxury leather sneakers with cupsole construction and patina.",
-  boots: "Lug-sole Chelsea boots, combat boots, and Goodyear-welted leather footwear.",
+  fragrance:
+    "Iconic haute parfumerie formulated by master noses with rich note pyramids.",
+  watches:
+    "High-horology timepieces with in-house mechanical calibres and precious metals.",
+  sunglasses:
+    "Handcrafted Mazzucchelli acetate and titanium frames with mineral optics.",
+  handbags:
+    "Hand-stitched leather totes, flap bags, and iconic luxury silhouettes.",
+  backpacks:
+    "Artisanal leather and coated canvas rucksacks with palladium hardware.",
+  wallets:
+    "Grained calfskin cardholders and continental wallets with edge lacquering.",
+  loafers:
+    "Goodyear-welted and Blake-stitched penny, horsebit, and tassel loafers.",
+  "formal-shoes":
+    "Master-lasted wholecuts, oxfords, and Louboutin red-sole dress shoes.",
+  "running-shoes":
+    "Cushioned carbon-plate marathoners and designer performance runners.",
+  "lifestyle-sneakers":
+    "Iconic luxury leather sneakers with cupsole construction and patina.",
+  boots:
+    "Lug-sole Chelsea boots, combat boots, and Goodyear-welted leather footwear.",
   // Home & Living
-  kitchenware: "Enameled cast iron, 5-ply copper stainless alloys, and artisanal cutlery.",
-  decor: "Hand-blown crystal, Limoges porcelain, and Italian ceramic design objects.",
-  "home-textiles": "Egyptian long-staple cotton percale and pure cashmere blankets.",
-};
-
-const leafBrandHighlights: Partial<Record<LeafTypeKey, string>> = {
-  suits: "Brioni · Tom Ford · Giorgio Armani · Louis Vuitton · Zegna · Canali",
-  coats: "Max Mara · Loro Piana · Moncler · Celine · Burberry · Dior",
-  jackets: "Balenciaga · Bottega Veneta · Moncler · Ralph Lauren · Saint Laurent",
-  shirts: "Brunello Cucinelli · Brioni · Gucci · Prada · Dolce & Gabbana",
-  knitwear: "Brunello Cucinelli · Loro Piana · Chanel · Hermès · Zegna",
-  trousers: "Bottega Veneta · Brioni · Loro Piana · Giorgio Armani · Canali",
-  denim: "Balenciaga · Bottega Veneta · Celine · Saint Laurent · Gucci",
-  dresses: "Chanel · Dior · Valentino · Alexander McQueen · Dolce & Gabbana",
-  "t-shirts": "Balenciaga · Celine · Givenchy · Versace · Brunello Cucinelli",
-  fragrance: "Dior · Chanel · Creed · Tom Ford · Hermès · Kilian · MFK · PDM",
-  watches: "Cartier · Omega · IWC · Rolex · Audemars Piguet · Jaeger-LeCoultre",
-  sunglasses: "Cartier · Celine · Chanel · Tom Ford · Persol · Oliver Peoples",
-  handbags: "Hermès · Chanel · Goyard · Louis Vuitton · Bottega Veneta · Dior",
-  backpacks: "Goyard · Louis Vuitton · Prada · Tumi · Montblanc · Rimowa",
-  wallets: "Goyard · Hermès · Chanel · Louis Vuitton · Bottega Veneta",
-  loafers: "Loro Piana · Christian Louboutin · Berluti · John Lobb · Hermès",
-  "formal-shoes": "Christian Louboutin · John Lobb · Berluti · Church's · Tom Ford",
-  boots: "Bottega Veneta · Christian Louboutin · John Lobb · Berluti · Church's",
-  "lifestyle-sneakers": "Louis Vuitton · Alexander McQueen · Balenciaga · Golden Goose · Dior",
-  "running-shoes": "Balenciaga · Dior · On Running · HOKA · ASICS · Nike",
-  kitchenware: "Smeg x Dolce & Gabbana · Christofle · Mauviel 1830 · Le Creuset · Staub",
-  decor: "Baccarat · Lalique · Christofle · Fornasetti · Ginori 1735 · Hermès",
-  "home-textiles": "Hermès Home · Loro Piana Interiors · Frette · SFERRA · Dior Maison",
-  speakers: "Devialet · Bang & Olufsen · Bowers & Wilkins · McIntosh · KEF",
-  phones: "Apple · Samsung · Google",
-  laptops: "Apple · Dell · Lenovo · ASUS · HP",
-  tablets: "Apple · Samsung · Microsoft",
-  headphones: "Apple · Sony · Bose · Sennheiser · Bowers & Wilkins",
-  earbuds: "Apple · Sony · Bose · Sennheiser · Bang & Olufsen",
-  monitors: "Dell · LG · Samsung · ASUS · BenQ · Apple",
-  "docks-hubs": "CalDigit · Belkin · Anker · OWC · Kensington",
-  "portable-ssds": "SanDisk · Samsung · Crucial · Western Digital",
-  cables: "Apple · Anker · Belkin · Nomad",
-  soundbars: "Sonos · Bose · Sennheiser · Sony · Samsung",
+  kitchenware:
+    "Enameled cast iron, 5-ply copper stainless alloys, and artisanal cutlery.",
+  decor:
+    "Hand-blown crystal, Limoges porcelain, and Italian ceramic design objects.",
+  "home-textiles":
+    "Egyptian long-staple cotton percale and pure cashmere blankets.",
 };
 
 export default async function DepartmentPage({
@@ -112,16 +109,15 @@ export default async function DepartmentPage({
     redirect("/category/watches");
   }
 
-  const leafs = getDepartmentLeafs(department.id);
-  const previews = await getDepartmentPreviews(leafs);
+  const candidates = getDepartmentLeafs(department.id);
+  const previews = await getDepartmentPreviews(candidates);
+  const leafs = candidates.filter((leaf) => previews[leaf]?.count > 0);
+  if (!leafs.length) notFound();
 
   return (
     <div className="department-page">
       <Breadcrumbs
-        items={[
-          { label: "Home", href: "/" },
-          { label: department.title },
-        ]}
+        items={[{ label: "Home", href: "/" }, { label: department.title }]}
       />
 
       <header className="department-hero">
@@ -130,7 +126,7 @@ export default async function DepartmentPage({
         <p>{department.description}</p>
         <div className="department-stats-bar">
           <span className="pill">{leafs.length} Categories</span>
-          <span>Verified luxury houses & authenticated technical specifications</span>
+          <span>Product references, recorded variants and specifications</span>
         </div>
       </header>
 
@@ -140,14 +136,14 @@ export default async function DepartmentPage({
             const title = leafTitles[leaf] || leaf;
             const desc =
               leafDescriptions[leaf] ||
-              "Explore verified models with technical attributes and authenticated provenance.";
+              "Explore product references, recorded variants and specifications.";
             const preview = previews[leaf];
             const heroProduct = preview?.heroProduct;
             const count = preview?.count || 0;
             const minPrice = preview?.minPrice;
             const brands = preview?.brands?.length
               ? preview.brands.slice(0, 5).join(" · ")
-              : leafBrandHighlights[leaf];
+              : "";
             const imageUrl = heroProduct?.media?.url;
 
             return (
@@ -173,7 +169,9 @@ export default async function DepartmentPage({
                   ) : heroProduct ? (
                     <ProductArt product={heroProduct} />
                   ) : (
-                    <div style={{ color: "#94a3b8", fontSize: 13 }}>{title}</div>
+                    <div style={{ color: "#94a3b8", fontSize: 13 }}>
+                      {title}
+                    </div>
                   )}
                   <span className="count-badge">
                     {count > 0 ? `${count} Models` : "Curated Collection"}
