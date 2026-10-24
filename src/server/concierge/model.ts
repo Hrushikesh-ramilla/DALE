@@ -1,6 +1,7 @@
 import { z } from "zod";
 import type { NativeMessage } from "@/domain/concierge";
 import { selfHostedEndpoint } from "../self-hosted-ai";
+import { replyTokenLimit } from "./context-limits";
 
 export type ToolDeclaration = {
   name: string;
@@ -167,12 +168,16 @@ async function generate(
         body: JSON.stringify({
           model,
           messages,
-          tools: tools.map((t) => ({ type: "function", function: t })),
-          tool_choice: "auto",
-          parallel_tool_calls: provider === "self_hosted",
-          temperature: provider === "self_hosted" ? 0 : 0.2,
+          ...(tools.length
+            ? {
+                tools: tools.map((t) => ({ type: "function", function: t })),
+                tool_choice: "auto",
+                parallel_tool_calls: provider === "self_hosted",
+              }
+            : {}),
+          temperature: provider === "self_hosted" ? 0 : 0.7,
           ...(provider === "gemini" ? { reasoning_effort: reasoning } : {}),
-          max_tokens: 1800,
+          max_tokens: replyTokenLimit(),
           stream: false,
         }),
         signal: combined,

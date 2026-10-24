@@ -9,6 +9,7 @@ import {
   ShoppingBag,
   Sparkles,
   Trash2,
+  MessageSquarePlus,
 } from "lucide-react";
 import { useCopilot } from "./copilot-context";
 import { formatMoney } from "@/domain/money";
@@ -19,8 +20,15 @@ export function DaleCopilotSidecar() {
   const [input, setInput] = useState("");
   const [cartView, setCartView] = useState(false);
   const feed = useRef<HTMLDivElement>(null);
+  const historyHeight = useRef<number | null>(null);
   useEffect(() => {
-    if (feed.current) feed.current.scrollTop = feed.current.scrollHeight;
+    if (feed.current) {
+      feed.current.scrollTop =
+        historyHeight.current === null
+          ? feed.current.scrollHeight
+          : feed.current.scrollHeight - historyHeight.current;
+      historyHeight.current = null;
+    }
   }, [c.messages, c.isThinking, c.error]);
   const send = () => {
     if (!(input || c.voiceDraft).trim() || c.isThinking) return;
@@ -63,6 +71,15 @@ export function DaleCopilotSidecar() {
           </small>
         </div>
         <div className="dale-header-actions">
+          <button
+            type="button"
+            aria-label="New chat"
+            title="New chat"
+            disabled={c.isThinking}
+            onClick={() => void c.newChat()}
+          >
+            <MessageSquarePlus size={16} />
+          </button>
           <button
             type="button"
             aria-label="Show server cart"
@@ -118,6 +135,20 @@ export function DaleCopilotSidecar() {
           </section>
         ) : (
           <>
+            {c.state?.conversation.hasEarlier && (
+              <button
+                type="button"
+                disabled={c.isLoadingHistory}
+                onClick={() => {
+                  historyHeight.current = feed.current?.scrollHeight ?? null;
+                  void c.loadEarlier();
+                }}
+              >
+                {c.isLoadingHistory
+                  ? "Loading earlier messages…"
+                  : "Load earlier messages"}
+              </button>
+            )}
             {c.messages.length === 0 && (
               <p style={{ padding: "1rem" }}>
                 Describe what you need, ask a question, or tell DALE what to do

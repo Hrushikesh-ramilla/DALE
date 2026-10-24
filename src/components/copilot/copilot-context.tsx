@@ -29,6 +29,9 @@ interface CopilotContextType {
   stopListening: () => void;
   cancel: () => void;
   resume: () => Promise<void>;
+  newChat: () => Promise<void>;
+  loadEarlier: () => Promise<void>;
+  isLoadingHistory: boolean;
   addToCart: (p: Product, quantity?: number) => void;
   removeFromCart: (id: string) => void;
   clearCart: () => void;
@@ -74,6 +77,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<View | null>(null);
   const current = useRef<View | null>(null);
   const [error, setError] = useState("");
+  const [isLoadingHistory, setLoadingHistory] = useState(false);
   const controller = useRef<AbortController | null>(null);
   const recognition = useRef<{ abort: () => void; stop: () => void } | null>(
     null,
@@ -98,8 +102,27 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       revision.current,
       ...v.actions.map((action) => action.expectedRevision),
     );
-    current.current = v;
-    setState(v);
+    const previous = current.current;
+    const sameConversation =
+      previous?.owner_id === v.owner_id &&
+      previous?.conversation.id === v.conversation.id;
+    const first = v.messages[0]?.sequence ?? Number.MAX_SAFE_INTEGER;
+    const older = sameConversation
+      ? previous.messages.filter((m) => (m.sequence ?? 0) < first)
+      : [];
+    const next = older.length
+      ? {
+          ...v,
+          messages: [...older, ...v.messages],
+          conversation: {
+            ...v.conversation,
+            hasEarlier: previous!.conversation.hasEarlier,
+            before: previous!.conversation.before,
+          },
+        }
+      : v;
+    current.current = next;
+    setState(next);
   }, []);
   useEffect(() => {
     if (!isThinking || !state?.owner_id) return;
@@ -352,6 +375,80 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     },
     [ensure, context, apply, executeBrowser],
   );
+  const loadEarlier = useCallback(async () => {
+    const snapshot = current.current;
+    if (
+      !snapshot?.conversation.hasEarlier ||
+      !snapshot.conversation.before ||
+      isLoadingHistory
+    )
+      return;
+    const epoch = sessionEpoch.current;
+    setLoadingHistory(true);
+    try {
+      const page = await api<{
+        id: string;
+        messages: View["messages"];
+        hasEarlier: boolean;
+        before: number | null;
+        total: number;
+      }>(
+        `/api/copilot/history?conversation_id=${encodeURIComponent(snapshot.conversation.id)}&before=${snapshot.conversation.before}`,
+      );
+      const latest = current.current;
+      if (
+        epoch !== sessionEpoch.current ||
+        latest?.owner_id !== snapshot.owner_id ||
+        latest?.conversation.id !== page.id
+      )
+        return;
+      const byId = new Map(
+        [...page.messages, ...latest.messages].map((m) => [m.id, m]),
+      );
+      const next = {
+        ...latest,
+        messages: [...byId.values()].sort((a, b) => a.sequence - b.sequence),
+        conversation: {
+          ...latest.conversation,
+          hasEarlier: page.hasEarlier,
+          before: page.before,
+        },
+      };
+      current.current = next;
+      setState(next);
+    } catch (e) {
+      if (epoch === sessionEpoch.current)
+        setError(
+          e instanceof Error ? e.message : "History could not be loaded.",
+        );
+    } finally {
+      setLoadingHistory(false);
+    }
+  }, [isLoadingHistory]);
+  const newChat = useCallback(async () => {
+    if (activeRequest.current) return;
+    const epoch = sessionEpoch.current;
+    activeRequest.current = true;
+    setThinking(true);
+    setError("");
+    try {
+      await ensure();
+      apply(
+        await api<View>("/api/copilot/state", { action: "new_chat" }),
+        epoch,
+      );
+    } catch (e) {
+      if (epoch === sessionEpoch.current)
+        setError(
+          e instanceof Error ? e.message : "New chat could not be started.",
+        );
+    } finally {
+      if (epoch === sessionEpoch.current) {
+        activeRequest.current = false;
+        setThinking(false);
+      }
+    }
+  }, [ensure, apply]);
   const resume = useCallback(async () => {
     if (activeRequest.current) return;
     const epoch = sessionEpoch.current;
@@ -534,6 +631,9 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         },
         cancel,
         resume,
+        newChat,
+        loadEarlier,
+        isLoadingHistory,
         addToCart: (p, q) => safeMutation("cart", "add", p.id, q),
         removeFromCart: (id) => safeMutation("cart", "remove", id),
         clearCart: () => safeMutation("cart", "clear"),

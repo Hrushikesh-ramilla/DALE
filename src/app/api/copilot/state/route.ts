@@ -4,6 +4,7 @@ import { customerSession } from "@/server/customers";
 import { takeRequestBudget } from "@/server/budgets";
 import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
 import { conciergeView, cancelTurn } from "@/server/concierge/engine";
+import { startConversation } from "@/server/concierge/store";
 import {
   basketInput,
   manageBasket,
@@ -39,6 +40,15 @@ export async function POST(request: Request) {
     }
     const actor = await actorFromRequest();
     await takeRequestBudget(actor, "concierge-state", 120);
+    if (
+      z
+        .object({ action: z.literal("new_chat") })
+        .strict()
+        .safeParse(raw).success
+    ) {
+      await startConversation(actor);
+      return json(await conciergeView(actor));
+    }
     if (
       z
         .object({ action: z.literal("prepare_checkout") })
