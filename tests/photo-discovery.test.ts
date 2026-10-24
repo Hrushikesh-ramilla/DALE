@@ -3,6 +3,7 @@ import sharp from "sharp";
 import {
   matchPhotoItem,
   photoObservation,
+  coalescePhotoItems,
 } from "../src/domain/photo-discovery";
 import type { Product } from "../src/domain/catalog";
 
@@ -53,6 +54,7 @@ const item = {
   leafType: null,
   visibleBrand: "Samsung",
   visibleModel: "Galaxy Z Fold6",
+  visibleConcentration: null,
   traits: ["black", "folding"],
 };
 const actor = { role: "buyer" as const, workspaceId: "test", userId: "test" };
@@ -71,6 +73,76 @@ beforeEach(() => {
   mocks.workspace.mockResolvedValue({});
 });
 describe("photo candidate matching", () => {
+  it("honors a legible Eau de Parfum label and excludes Extrait and unknown concentrations", () => {
+    const fragrance = {
+      ...item,
+      category: "fragrance" as const,
+      visibleModel: "Baccarat Rouge 540",
+      visibleConcentration: "eau de parfum" as const,
+    };
+    const edp = product(
+      "edp",
+      "Baccarat Rouge 540 Eau de Parfum",
+      "Samsung",
+      "fragrance",
+    );
+    const extrait = product(
+      "extrait",
+      "Baccarat Rouge 540 Extrait de Parfum",
+      "Samsung",
+      "fragrance",
+    );
+    const unknown = product(
+      "unknown",
+      "Baccarat Rouge 540",
+      "Samsung",
+      "fragrance",
+    );
+    expect(
+      matchPhotoItem(fragrance, [edp, extrait, unknown]).map(
+        (r) => r.product.id,
+      ),
+    ).toEqual(["edp"]);
+  });
+  it("uses structured concentration over ambiguous product prose", () => {
+    const fragrance = {
+      ...item,
+      category: "fragrance" as const,
+      visibleConcentration: "eau de parfum" as const,
+    };
+    const contradictory = {
+      ...product(
+        "wrong",
+        "Galaxy Z Fold6 Eau de Parfum",
+        "Samsung",
+        "fragrance",
+      ),
+      attributes: { concentration: "extrait de parfum" },
+    };
+    expect(matchPhotoItem(fragrance, [contradictory])).toEqual([]);
+  });
+  it("combines a box and matching product without mutating observations", () => {
+    const box = { ...item, label: "Packaging box" };
+    const bottle = {
+      ...item,
+      label: "Perfume bottle",
+      traits: ["glass"],
+      visibleConcentration: "eau de parfum" as const,
+    };
+    const merged = coalescePhotoItems([box, bottle]);
+    expect(merged).toHaveLength(1);
+    expect(merged[0].label).toBe("Perfume bottle");
+    expect(merged[0].visibleConcentration).toBe("eau de parfum");
+    expect(box.label).toBe("Packaging box");
+  });
+  it("keeps explicitly different concentrations as distinct photographed items", () => {
+    expect(
+      coalescePhotoItems([
+        { ...item, visibleConcentration: "eau de parfum" },
+        { ...item, visibleConcentration: "extrait de parfum" },
+      ]),
+    ).toHaveLength(2);
+  });
   it("prioritizes legible brand/model but labels identity as only possible", () => {
     const result = matchPhotoItem(item, [
       product("a", "Galaxy Z Fold5"),
