@@ -116,6 +116,165 @@ it("publishes only committed state and does not publish a rolled back mutation",
   expect(await rolledBack).toBe(false);
   expect((await readConcierge(fresh)).wishlist).toEqual([products[0].id]);
 });
+it("keeps a missing named identity primary unless the customer explicitly requests independent results or alternatives", async () => {
+  for (const alternatives of [false, true]) {
+    const buyer = (await customerSession({ action: "guest" })).actor;
+    vi.mocked(modelTurn).mockReset();
+    vi.mocked(modelTurn)
+      .mockResolvedValueOnce(
+        call("lookup_product", {
+          name: "nonexistent-identity-" + randomUUID(),
+        }),
+      )
+      .mockResolvedValueOnce(
+        call("search_catalog", {
+          brands: [],
+          categories: [products[0].category],
+          limit: 3,
+          replace_identity_scope: alternatives,
+        }),
+      )
+      .mockResolvedValueOnce({
+        role: "assistant",
+        content: alternatives
+          ? "The named item is absent; here are the requested alternatives."
+          : "The named item is absent.",
+      });
+    const view = await runConcierge(buyer, {
+      turn_id: randomUUID(),
+      message: alternatives
+        ? "Find an unavailable item, and show alternatives if absent."
+        : "Find my named item.",
+      client_context: context,
+    });
+    expect(view.turn?.status).toBe("completed");
+    expect(view.catalog_match_status).toBe(
+      alternatives ? "structured" : "not_found",
+    );
+    expect(view.products.length).toBe(alternatives ? 3 : 0);
+  }
+});
+
+it("rejects incomplete model search constraints rather than silently treating a requested brand/type as unrestricted", async () => {
+  await expect(
+    executeTool(
+      "search_catalog",
+      { match_mode: "semantic", query: "a brand plus descriptive preferences" },
+      { actor, ui: context },
+    ),
+  ).rejects.toThrow();
+});
+
+it("rejects the screenshot's unscoped semantic search before saving unrelated recommendations", async () => {
+  const buyer = (await customerSession({ action: "guest" })).actor;
+  await expect(
+    executeTool(
+      "search_catalog",
+      {
+        query: "100x zoom camera smartphone mobile",
+        categories: [],
+        brands: [],
+        match_mode: "semantic",
+      },
+      { actor: buyer, ui: context },
+    ),
+  ).rejects.toThrow("non-empty product-category filter");
+  expect((await readConcierge(buyer)).resultSets).toEqual([]);
+  // Deliberate, non-semantic cross-category browsing is still supported.
+  const broad = await executeTool(
+    "search_catalog",
+    { query: "", categories: [], brands: [], limit: 2 },
+    { actor: buyer, ui: context },
+  );
+  expect(broad.ok).toBe(true);
+});
+
+it("enforces recorded numeric camera requirements and never substitutes digital zoom for optical zoom", async () => {
+  const digital = await hybridSearch({
+    categories: ["phones"],
+    attributes: { digitalZoomMaxX: { min: 100 } },
+  });
+  expect(digital.products.map((p) => p.id)).toContain("B002");
+  expect(
+    digital.products.every(
+      (p) =>
+        p.category === "phones" && Number(p.attributes?.digitalZoomMaxX) >= 100,
+    ),
+  ).toBe(true);
+  const optical = await hybridSearch({
+    categories: ["phones"],
+    attributes: { opticalZoomMaxX: { min: 100 } },
+  });
+  expect(optical.products).toEqual([]);
+  const phone = (await productDetails(["B002"]))[0];
+  expect(phone.attributes?.opticalZoomMaxX).toBe(5);
+  expect(phone.specs.join(" ")).toMatch(/not 100x optical/);
+  const unknown = await hybridSearch({
+    categories: ["phones"],
+    attributes: { unrecordedFeature: { min: 100 } },
+  });
+  expect(unknown.products).toEqual([]);
+});
+
+it("lets the native model recover from rejected unscoped search through discovery and evidence-filtered phones", async () => {
+  const buyer = (await customerSession({ action: "guest" })).actor;
+  vi.mocked(modelTurn).mockReset();
+  vi.mocked(modelTurn)
+    .mockResolvedValueOnce(
+      call("search_catalog", {
+        query: "100x zoom camera smartphone mobile",
+        categories: [],
+        brands: [],
+        match_mode: "semantic",
+      }),
+    )
+    .mockResolvedValueOnce(call("get_categories_and_brands", {}))
+    .mockResolvedValueOnce(
+      call("get_catalog_facets", { categories: ["phones"] }),
+    )
+    .mockResolvedValueOnce(
+      call("search_catalog", {
+        categories: ["phones"],
+        brands: [],
+        attributes: { digitalZoomMaxX: { min: 100 } },
+      }),
+    )
+    .mockResolvedValueOnce(
+      call("get_product_details", {
+        product_ids: ["B002"],
+        attribute_keys: ["digitalZoomMaxX", "opticalZoomMaxX"],
+      }),
+    )
+    .mockResolvedValueOnce({
+      role: "assistant",
+      content:
+        "The S25 Ultra has recorded 100x digital Space Zoom and 5x optical zoom; these are different measures.",
+    });
+  const view = await runConcierge(buyer, {
+    turn_id: randomUUID(),
+    message:
+      "hey which do you think is the best mobile for camera which can zoom 100x",
+    client_context: context,
+  });
+  expect(view.turn?.status).toBe("completed");
+  expect(view.products.length).toBeGreaterThan(0);
+  expect(
+    view.products.every(
+      (p) =>
+        p.category === "phones" && Number(p.attributes?.digitalZoomMaxX) >= 100,
+    ),
+  ).toBe(true);
+  const state = await readConcierge(buyer);
+  expect(
+    state.messages.some(
+      (m) =>
+        m.role === "tool" &&
+        m.content?.includes("non-empty product-category filter"),
+    ),
+  ).toBe(true);
+  expect(state.resultSets).toHaveLength(1);
+});
+
 it("uses stable product references without changing stored identities or unrelated arguments", async () => {
   const p = products[0];
   const encoded = (await modelProductReferences({
@@ -851,6 +1010,9 @@ it("rejects unknown tools, arbitrary browser paths and seller operations", async
     .parameters as { required?: string[] };
   expect(schema.required || []).not.toContain("max_price");
   expect(schema.required || []).not.toContain("exclude_brands");
+  expect(schema.required).toEqual(
+    expect.arrayContaining(["brands", "categories"]),
+  );
 });
 it("keeps order ownership and confirmation authority outside the model", async () => {
   const confirmation = await prepareConfirmation(
@@ -1450,6 +1612,10 @@ it("bounds oversized native observations without losing IDs, prices or degraded-
     data: {
       products: records,
       total: 240,
+      constraints: {
+        brands: ["Requested brand"],
+        categories: ["requested-type"],
+      },
       mode: "lexical",
       degradation: "Embedding service unavailable",
     },
@@ -1459,6 +1625,10 @@ it("bounds oversized native observations without losing IDs, prices or degraded-
   expect(actual.data.all_product_ids).toEqual(records.map((p) => p.id));
   expect(actual.data.products[0].formatted_price).toBe("$123.45");
   expect(actual.data.degradation).toBe("Embedding service unavailable");
+  expect(actual.data.constraints).toEqual({
+    brands: ["Requested brand"],
+    categories: ["requested-type"],
+  });
   expect(
     JSON.parse(
       observationText({

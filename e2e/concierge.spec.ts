@@ -213,6 +213,8 @@ test("real search, navigation acknowledgment, server cart, reload, comparison an
   expect(products.length).toBe(2);
   responses = [
     nativeCall("search_catalog", {
+      brands: [],
+      categories: [],
       max_price: products[1].price,
       sort: "price_asc",
       limit: 2,

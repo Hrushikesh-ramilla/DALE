@@ -166,6 +166,8 @@ export type ConciergeState = {
   resultSets: {
     id: string;
     turnId?: string;
+    origin?: "lookup" | "search";
+    replacesIdentityScope?: boolean;
     matchStatus?:
       | "not_found"
       | "exact_product"

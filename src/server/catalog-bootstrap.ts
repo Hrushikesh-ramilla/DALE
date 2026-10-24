@@ -1,5 +1,6 @@
 import { catalog, publicCatalog } from "@/domain/catalog";
 import { brandedCatalog } from "@/domain/branded-catalog";
+import { withReviewedProductFacts } from "@/domain/reviewed-product-facts";
 import type { Sql } from "./database";
 import { bootstrapReviewedCatalog } from "./bundled-catalog";
 
@@ -13,7 +14,7 @@ export async function bootstrapCatalog(sql: Sql) {
         product,
       ]),
     ).values(),
-  ];
+  ].map(withReviewedProductFacts);
   const rows = records.map((product) => ({
     id: product.id,
     category: product.category,

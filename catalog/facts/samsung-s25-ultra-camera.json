@@ -1,0 +1,22 @@
+{
+  "productId": "B002",
+  "brand": "Samsung",
+  "modelName": "galaxy s25 ultra",
+  "sourceUrl": "https://images.samsung.com/is/content/samsung/assets/us/business/mobile/phones/galaxy-s25/02052025/S25_Series_B2B_Spec_Sheet_HRc.pdf",
+  "observedAt": "2026-10-20T08:10:00.000Z",
+  "observedRegion": "US",
+  "revisionId": "samsung-s25-ultra-camera-2026-10-20",
+  "facts": {
+    "digitalZoomMaxX": 100,
+    "opticalZoomMaxX": 5,
+    "opticalQualityZoomMaxX": 10,
+    "mainCameraMp": 200
+  },
+  "specs": [
+    "Camera: 200MP main camera",
+    "Telephoto optical zoom: 3x and 5x",
+    "Optical-quality zoom: 2x and 10x (sensor cropping, not optical magnification)",
+    "Space Zoom: up to 100x digital zoom; not 100x optical zoom"
+  ],
+  "operatorAudit": "Reviewed manufacturer S25-series specification sheet, Galaxy S25 Ultra column, camera and zoom rows. Digital, optical and optical-quality zoom remain distinct. Facts apply only to the identified S25 Ultra, not the base S25 or other phones. No assertion of the best camera overall."
+}

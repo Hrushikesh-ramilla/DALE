@@ -388,6 +388,8 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
     match_scope: matchIdentity
       ? "Product identity lookup only. Approximate spelling matches are candidates requiring variant confirmation; no semantic substitutes are included. An empty result means this requested identity was not found under the active constraints."
       : "Descriptive candidates, not proof of an exact requested product identity.",
+    requirement_scope:
+      "Only structured categories, brands, prices and attributes are enforced. Semantic similarity and query words do not verify a requested specification or numeric bound. Read product details for evidence; missing facts remain unknown.",
     identity_matches: ranked
       .slice(c.offset, c.offset + c.limit)
       .map((r) => ({ product_id: r.product.id, kind: r.match_kind })),
