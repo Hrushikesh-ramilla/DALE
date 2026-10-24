@@ -640,32 +640,33 @@ select option {
   overflow: hidden;
   contain: layout style;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
-  border: 1px solid #28282b;
-  will-change: transform;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 .product-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.36);
-  border-color: #3e3e44;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 .card-visual {
   overflow: hidden;
 }
 .card-visual,
 .card-visual .product-art {
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.04) 0%, rgba(10, 12, 18, 0.85) 100%), #121316;
+  background: #ffffff;
 }
 .product-art {
-  will-change: transform;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .product-card:hover .product-art {
   transform: scale(1.02);
 }
 .card-details {
+  background: #111317;
   padding: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .product-title {
+  color: #f1f5f9;
   font-weight: 600;
 }
 .product-card .muted,
@@ -1177,7 +1178,7 @@ select option {
     0 0 0 1px rgba(255, 255, 255, 0.06) inset;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  align-items: center;
+  align-items: stretch;
   overflow: hidden;
   cursor: pointer;
   transition:
@@ -1284,39 +1285,18 @@ select option {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(10, 10, 12, 0.95) 75%), #08080a;
-  border-left: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), inset 1px 0 0 rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
   padding: 36px;
   overflow: hidden;
-  perspective: 1200px;
-  transform-style: preserve-3d;
 }
 
 .parallax-stage-dome {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 520px;
-  height: 400px;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 70%);
-  pointer-events: none;
-  z-index: 1;
+  display: none;
 }
 
 .parallax-ground-shadow {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  width: 380px;
-  height: 36px;
-  transform: translateX(-50%);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 45%, transparent 75%);
-  filter: blur(14px);
-  pointer-events: none;
-  z-index: 1;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+  display: none;
 }
 
 .parallax-card-visual .art-frame {
@@ -1328,8 +1308,7 @@ select option {
   justify-content: center;
   position: relative;
   z-index: 2;
-  transform-style: preserve-3d;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .parallax-hero-wrapper {
@@ -1339,29 +1318,21 @@ select option {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform-style: preserve-3d;
 }
 
 .parallax-hero-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 22px 35px rgba(0, 0, 0, 0.65));
-  transition: filter 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform, filter;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .parallax-category-card:hover .parallax-card-visual .art-frame {
-  transform: translateZ(40px) translateY(-10px) scale(1.04);
-}
-
-.parallax-category-card:hover .parallax-card-visual .parallax-ground-shadow {
-  transform: translateX(-50%) scale(1.15);
-  opacity: 0.65;
+  transform: translateY(-6px) scale(1.02);
 }
 
 .parallax-category-card:hover .parallax-hero-image {
-  filter: drop-shadow(0 32px 50px rgba(0, 0, 0, 0.82));
+  filter: none;
 }
 
 .parallax-count-pill {
@@ -1369,12 +1340,13 @@ select option {
   bottom: 24px;
   right: 28px;
   font-size: 11px;
-  color: #86868b;
-  background: rgba(0, 0, 0, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 4px 12px;
+  color: #1d1d1f;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 5px 14px;
   border-radius: 999px;
-  backdrop-filter: blur(12px);
+  font-weight: 500;
   z-index: 3;
 }
 

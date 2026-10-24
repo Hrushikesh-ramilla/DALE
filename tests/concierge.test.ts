@@ -76,6 +76,9 @@ beforeAll(async () => {
   process.env.LOCAL_DATA_DIR = ":memory:";
   process.env.PAYMENT_MODE = "fixture";
   process.env.AI_MODE = "fixture";
+  // Agent integration uses a Gemini-sized context; dedicated memory tests cover
+  // undersized configurations. The current workflow declarations exceed 8 KiB.
+  process.env.CONCIERGE_INPUT_TOKEN_LIMIT = "1000000";
   process.env.SESSION_SECRET =
     "concierge-independent-test-secret-32-characters";
   delete process.env.CONCIERGE_EMBEDDING_MODEL;
@@ -116,43 +119,43 @@ it("publishes only committed state and does not publish a rolled back mutation",
   expect(await rolledBack).toBe(false);
   expect((await readConcierge(fresh)).wishlist).toEqual([products[0].id]);
 });
-it("keeps a missing named identity primary unless the customer explicitly requests independent results or alternatives", async () => {
-  for (const alternatives of [false, true]) {
-    const buyer = (await customerSession({ action: "guest" })).actor;
-    vi.mocked(modelTurn).mockReset();
-    vi.mocked(modelTurn)
-      .mockResolvedValueOnce(
-        call("lookup_product", {
-          name: "nonexistent-identity-" + randomUUID(),
-        }),
-      )
-      .mockResolvedValueOnce(
-        call("search_catalog", {
-          brands: [],
-          categories: [products[0].category],
-          limit: 3,
-          replace_identity_scope: alternatives,
-        }),
-      )
-      .mockResolvedValueOnce({
-        role: "assistant",
-        content: alternatives
-          ? "The named item is absent; here are the requested alternatives."
-          : "The named item is absent.",
-      });
-    const view = await runConcierge(buyer, {
-      turn_id: randomUUID(),
-      message: alternatives
-        ? "Find an unavailable item, and show alternatives if absent."
-        : "Find my named item.",
-      client_context: context,
-    });
-    expect(view.turn?.status).toBe("completed");
-    expect(view.catalog_match_status).toBe(
-      alternatives ? "structured" : "not_found",
-    );
-    expect(view.products.length).toBe(alternatives ? 3 : 0);
-  }
+it("preserves an empty named lookup and separate alternative observations without rewriting model prose", async () => {
+  const buyer = (await customerSession({ action: "guest" })).actor;
+  const answer =
+    "That named item is absent; here are alternatives from the collection.";
+  vi.mocked(modelTurn)
+    .mockReset()
+    .mockResolvedValueOnce(
+      call("search_catalog", {
+        query: "nonexistent-" + randomUUID(),
+        match_mode: "identity",
+      }),
+    )
+    .mockResolvedValueOnce(
+      call("search_catalog", {
+        categories: [products[0].category],
+        query: "",
+        limit: 3,
+      }),
+    )
+    .mockResolvedValueOnce({ role: "assistant", content: answer });
+  const view = await runConcierge(buyer, {
+    turn_id: randomUUID(),
+    message: "Find the named item; show alternatives if it is absent.",
+    client_context: context,
+  });
+  expect(view.turn?.status).toBe("completed");
+  expect(view.messages.at(-1)?.text).toBe(answer);
+  const state = await readConcierge(buyer);
+  expect(state.resultSets).toHaveLength(2);
+  expect(state.resultSets[0].productIds).toEqual([]);
+  expect(state.resultSets[1].productIds).toHaveLength(3);
+  const observations = state
+    .execution!.frames.filter((m) => m.role === "tool")
+    .map((m) => JSON.parse(m.content!));
+  expect(observations[0].data.products).toEqual([]);
+  expect(observations[0].data.total).toBe(0);
+  expect(observations[1].data.products).toHaveLength(3);
 });
 
 it("rejects incomplete model search constraints rather than silently treating a requested brand/type as unrestricted", async () => {
@@ -216,44 +219,31 @@ it("enforces recorded numeric camera requirements and never substitutes digital 
   expect(unknown.products).toEqual([]);
 });
 
-it("lets the native model recover from rejected unscoped search through discovery and evidence-filtered phones", async () => {
+it("lets the native model discover and enforce recorded camera attributes without a language router", async () => {
   const buyer = (await customerSession({ action: "guest" })).actor;
-  vi.mocked(modelTurn).mockReset();
   vi.mocked(modelTurn)
-    .mockResolvedValueOnce(
-      call("search_catalog", {
-        query: "100x zoom camera smartphone mobile",
-        categories: [],
-        brands: [],
-        match_mode: "semantic",
-      }),
-    )
-    .mockResolvedValueOnce(call("get_categories_and_brands", {}))
+    .mockReset()
+    .mockResolvedValueOnce(call("get_catalog_info", {}))
     .mockResolvedValueOnce(
       call("get_catalog_facets", { categories: ["phones"] }),
     )
     .mockResolvedValueOnce(
       call("search_catalog", {
         categories: ["phones"],
-        brands: [],
         attributes: { digitalZoomMaxX: { min: 100 } },
       }),
     )
     .mockResolvedValueOnce(
-      call("get_product_details", {
-        product_ids: ["B002"],
-        attribute_keys: ["digitalZoomMaxX", "opticalZoomMaxX"],
-      }),
+      call("get_catalog_products", { product_ids: ["B002"] }),
     )
     .mockResolvedValueOnce({
       role: "assistant",
       content:
-        "The S25 Ultra has recorded 100x digital Space Zoom and 5x optical zoom; these are different measures.",
+        "The S25 Ultra records 100x digital Space Zoom and 5x optical zoom; these differ.",
     });
   const view = await runConcierge(buyer, {
     turn_id: randomUUID(),
-    message:
-      "hey which do you think is the best mobile for camera which can zoom 100x",
+    message: "Which camera phone can zoom 100x?",
     client_context: context,
   });
   expect(view.turn?.status).toBe("completed");
@@ -265,14 +255,10 @@ it("lets the native model recover from rejected unscoped search through discover
     ),
   ).toBe(true);
   const state = await readConcierge(buyer);
-  expect(
-    state.messages.some(
-      (m) =>
-        m.role === "tool" &&
-        m.content?.includes("non-empty product-category filter"),
-    ),
-  ).toBe(true);
   expect(state.resultSets).toHaveLength(1);
+  expect(state.execution!.frames.filter((m) => m.role === "tool")).toHaveLength(
+    4,
+  );
 });
 
 it("uses stable product references without changing stored identities or unrelated arguments", async () => {
@@ -609,7 +595,12 @@ it("does not display prior search cards under a new request", async () => {
   const fresh = (await customerSession({ action: "guest" })).actor;
   vi.mocked(modelTurn)
     .mockReset()
-    .mockResolvedValueOnce(call("lookup_product", { name: products[0].name }))
+    .mockResolvedValueOnce(
+      call("search_catalog", {
+        query: products[0].name,
+        match_mode: "identity",
+      }),
+    )
     .mockResolvedValueOnce({
       role: "assistant",
       content: "Observed identity lookup",
@@ -681,31 +672,45 @@ it("does not expose an empty search tracking ID as an apparent product identity"
     [],
   );
 });
-it("ends ambiguous single-item lookup at a truthful customer choice without another generation or a guessed mutation", async () => {
+it("supplies multiple recorded choices and preserves Gemini's clarification without guessing a mutation", async () => {
   const fresh = (await customerSession({ action: "guest" })).actor;
+  const answer = "Which exact Omega model would you like me to save?";
   vi.mocked(modelTurn)
     .mockReset()
-    .mockResolvedValueOnce(call("lookup_product", { name: "omega peedmater" }));
+    .mockResolvedValueOnce(
+      call("search_catalog", {
+        categories: ["watches"],
+        brands: ["Omega"],
+        query: "",
+        limit: 3,
+        in_stock: false,
+      }),
+    )
+    .mockResolvedValueOnce({ role: "assistant", content: answer });
   const view = await runConcierge(fresh, {
     turn_id: randomUUID(),
-    message: "Find omega peedmater and save it to my wishlist",
+    message: "Find me an Omega and save it",
     client_context: context,
   });
   expect(view.turn?.status).toBe("completed");
-  expect(view.catalog_match_status).toBe("choose_variant");
   expect(view.products.length).toBeGreaterThan(1);
-  const text = view.messages.at(-1)?.text || "";
-  expect(text).toContain("Which exact variant");
-  expect(text).toContain(`${view.products.length} possible matches`);
-  expect(text).toContain("Recorded sandbox offer");
+  expect(view.messages.at(-1)?.text).toBe(answer);
   expect(view.basket.wishlist).toEqual([]);
-  expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(1);
+  expect(modelTurn).toHaveBeenCalledTimes(2);
 });
+
 it("continues a compound lookup frame instead of discarding its independent results", async () => {
   const fresh = (await customerSession({ action: "guest" })).actor;
-  const frame = call("lookup_product", { name: "omega peedmater" });
+  const frame = call("search_catalog", {
+    categories: ["watches"],
+    brands: ["Omega"],
+    query: "",
+  });
   frame.tool_calls!.push(
-    ...call("lookup_product", { name: products[0].name }).tool_calls!,
+    ...call("search_catalog", {
+      query: products[0].name,
+      match_mode: "identity",
+    }).tool_calls!,
   );
   const answer = `I found ${products[0].name}. Which Omega Speedmaster variant do you mean?`;
   vi.mocked(modelTurn)
@@ -720,7 +725,7 @@ it("continues a compound lookup frame instead of discarding its independent resu
   expect(view.turn?.status).toBe("completed");
   expect(view.messages.at(-1)?.text).toBe(answer);
   expect(vi.mocked(modelTurn)).toHaveBeenCalledTimes(2);
-  const frames = (await readConcierge(fresh)).messages;
+  const frames = (await readConcierge(fresh)).execution!.frames;
   expect(frames.filter((m) => m.role === "tool")).toHaveLength(2);
 });
 it("does not offer discovery of core functions that are already callable", () => {
@@ -904,7 +909,7 @@ it("requires browser observation and continues from the exact acknowledged state
   vi.mocked(modelTurn)
     .mockReset()
     .mockResolvedValueOnce(
-      call("operate_ui", { operation: "navigate", destination: "orders" }),
+      call("use_website", { type: "navigate", path: "/orders" }),
     )
     .mockResolvedValueOnce({
       role: "assistant",
@@ -1124,7 +1129,7 @@ it("fences delayed mutations after cancellation and cannot overwrite a newer tur
   expect((await readConcierge(actor)).turn?.id).toBe(newer);
   expect((await readConcierge(actor)).turn?.status).toBe("completed");
 });
-it("repairs every outstanding native function call after an interrupted partial frame", async () => {
+it("repairs legacy partial frames without forwarding orphaned calls into a new conversation", async () => {
   await changeConcierge(actor, (s) => {
     s.messages = [
       {
@@ -1154,7 +1159,12 @@ it("repairs every outstanding native function call after an interrupted partial 
     message: "Continue after interruption",
     client_context: context,
   });
-  const sent = vi.mocked(modelTurn).mock.calls[0][0];
+  const sent = (await readConcierge(actor)).messages;
+  expect(
+    vi
+      .mocked(modelTurn)
+      .mock.calls[0][0].some((m) => m.tool_call_id === "unresolved"),
+  ).toBe(false);
   expect(
     sent.filter((m) => m.role === "tool" && m.tool_call_id === "unresolved"),
   ).toHaveLength(1);

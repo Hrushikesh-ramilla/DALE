@@ -175,10 +175,6 @@ export function understandVoice(
       "home",
       /\b(?:towels?|cushions?|bowls?|mugs?|carafe|serving board|blanket|organizer|vase|storage box|table runner|bookends)\b/i,
     ],
-    [
-      "beauty",
-      /\b(?:hand wash|hand cream|lotion|shower gel|conditioner|cleanser|body oil|facial mist|hair oil|body butter|foot cream|shampoo|beauty|skincare)\b/i,
-    ],
   ] as const;
   const found = categories
     .filter(([, pattern]) => pattern.test(text))
@@ -189,7 +185,7 @@ export function understandVoice(
     return {
       kind: "clarification",
       message:
-        "Choose one product category to compare: electronics, clothing, fragrance, bags, home or beauty. Separate purchases keep each variant and approval clear.",
+        "Choose one product category to compare: electronics, clothing, fragrance, bags, or home. Separate purchases keep each variant and approval clear.",
     };
   const retail = isRetailCategory(found[0][0]);
   const productTypes = retail
@@ -278,7 +274,7 @@ export function understandVoice(
     ? {
         ...(productTypes[0] ? { productType: productTypes[0] } : {}),
         ...(sizes[0] && found[0][0] === "clothing" ? { size: sizes[0] } : {}),
-        ...(volumes[0] && ["fragrance", "beauty"].includes(found[0][0])
+        ...(volumes[0] && found[0][0] === "fragrance"
           ? { volumeMl: volumes[0] }
           : {}),
         ...(materials[0] && ["clothing", "bags", "home"].includes(found[0][0])

@@ -3,13 +3,38 @@ import type { Actor } from "../state";
 import type { ConciergeState } from "@/domain/concierge";
 import { AsyncLocalStorage } from "node:async_hooks";
 import { publishConciergeChange } from "./changes";
-import { randomUUID } from "node:crypto";
-const execution = new AsyncLocalStorage<{ owner: string; turnId: string }>();
+import { randomUUID, createHash } from "node:crypto";
+const execution = new AsyncLocalStorage<{
+  owner: string;
+  turnId: string;
+  worker?: string;
+}>();
+const operation = new AsyncLocalStorage<{
+  owner: string;
+  key: string;
+  step: number;
+}>();
+/** One identity per native function call. State effects and their replay receipts
+ * commit together, even if the HTTP response or model continuation is lost. */
+export const withOperation = <T>(
+  actor: Actor,
+  key: string,
+  fn: () => Promise<T>,
+) => operation.run({ owner: ownerKey(actor), key, step: 0 }, fn);
+export function operationId() {
+  const active = operation.getStore();
+  if (!active) return randomUUID();
+  const hex = createHash("sha256")
+    .update(`${active.owner}:${active.key}`)
+    .digest("hex");
+  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-4${hex.slice(13, 16)}-a${hex.slice(17, 20)}-${hex.slice(20, 32)}`;
+}
 export const withTurnFence = <T>(
   actor: Actor,
   turnId: string,
   fn: () => Promise<T>,
-) => execution.run({ owner: ownerKey(actor), turnId }, fn);
+  worker?: string,
+) => execution.run({ owner: ownerKey(actor), turnId, worker }, fn);
 
 let initialized: Database | undefined;
 let initializing: Promise<void> | undefined;
@@ -26,6 +51,10 @@ export async function conciergeDatabase() {
       await db.query(
         `CREATE TABLE IF NOT EXISTS concierge_turn_ids (owner text NOT NULL, turn_id text NOT NULL, created_at timestamptz NOT NULL DEFAULT now(), PRIMARY KEY(owner,turn_id))`,
       );
+      await db.query(`CREATE TABLE IF NOT EXISTS concierge_effects (
+        owner text NOT NULL, key text NOT NULL, result jsonb NOT NULL,
+        basket_before jsonb, basket_revision integer,
+        created_at timestamptz NOT NULL DEFAULT now(), PRIMARY KEY(owner,key))`);
       await db.query(
         `CREATE TABLE IF NOT EXISTS concierge_product_references (product_id text PRIMARY KEY, ref bigserial UNIQUE NOT NULL)`,
       );
@@ -81,6 +110,11 @@ export async function changeConcierge<T>(
 ) {
   assertBuyer(actor);
   let committedRevision = -1;
+  const active = operation.getStore();
+  const effectKey =
+    active?.owner === ownerKey(actor)
+      ? `${active.key}:${active.step++}`
+      : undefined;
   const value = await (
     await conciergeDatabase()
   ).transaction(async (sql) => {
@@ -96,11 +130,20 @@ export async function changeConcierge<T>(
     const fence = execution.getStore();
     if (
       fence?.owner === ownerKey(actor) &&
-      (state.turn?.id !== fence.turnId || state.turn.status !== "running")
+      (state.turn?.id !== fence.turnId ||
+        state.turn.status !== "running" ||
+        (fence.worker && state.execution?.worker !== fence.worker))
     )
       throw new Error(
         "The originating turn is no longer active. No new mutation was applied.",
       );
+    if (effectKey) {
+      const receipt = await sql.query<{ result: { value?: T } }>(
+        "SELECT result FROM concierge_effects WHERE owner=$1 AND key=$2",
+        [ownerKey(actor), effectKey],
+      );
+      if (receipt.rows.length) return receipt.rows[0].result.value as T;
+    }
     if (!state.conversationId) {
       state.conversationId = randomUUID();
       // Preserve the original legacy document before replacing its UI caches.
@@ -122,6 +165,19 @@ export async function changeConcierge<T>(
     state.basketRevision =
       basketRevision +
       Number(beforeBasket !== JSON.stringify([state.cart, state.wishlist]));
+    if (effectKey)
+      await sql.query(
+        "INSERT INTO concierge_effects(owner,key,result,basket_before,basket_revision) VALUES($1,$2,$3::jsonb,$4::jsonb,$5)",
+        [
+          ownerKey(actor),
+          effectKey,
+          JSON.stringify({ value }),
+          beforeBasket !== JSON.stringify([state.cart, state.wishlist])
+            ? beforeBasket
+            : null,
+          state.basketRevision,
+        ],
+      );
     state.revision++;
     await archiveTranscript(sql, ownerKey(actor), state);
     // Bounded UI/native caches only. The append-only archive above is authoritative
@@ -161,7 +217,8 @@ export async function changeConcierge<T>(
     committedRevision = state.revision;
     return value;
   });
-  publishConciergeChange(ownerKey(actor), committedRevision);
+  if (committedRevision >= 0)
+    publishConciergeChange(ownerKey(actor), committedRevision);
   return value;
 }
 
@@ -268,6 +325,8 @@ export async function startConversation(actor: Actor) {
     s.transcript = [];
     s.messages = [];
     s.turn = undefined;
+    s.execution = undefined;
+    s.activeTabId = undefined;
     s.resultSets = [];
     for (const action of s.actions)
       if (action.status === "pending") action.status = "failed";

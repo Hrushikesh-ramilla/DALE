@@ -14,9 +14,8 @@ export function resolveElectronicsImage(product: ProductQuery): ProductImageReso
 
   const electronicsLeaves = [
     "laptops", "tablets", "headphones", "earbuds", "speakers", "soundbars",
-    "monitors", "keyboards", "mice", "docks-hubs", "webcams", "routers",
-    "power-banks", "wall-chargers", "portable-ssds", "internal-ssds",
-    "hard-drives", "cables", "memory-cards", "usb-flash-drives"
+    "monitors", "keyboards", "mice", "docks-hubs",
+    "power-banks", "wall-chargers", "portable-ssds", "cables"
   ];
 
   const isElectronics =

@@ -15,9 +15,7 @@ import { isLeafTypeKey, leafTypeKeys } from "@/domain/departments";
 import type { Sql } from "./database";
 
 import earbudsCore from "../../catalog/manifests/earbuds-core-2026-10-11-v2.json";
-import hardDrivesCore from "../../catalog/manifests/hard-drives-core-2026-10-11-v2.json";
 import headphonesCore from "../../catalog/manifests/headphones-core-2026-10-11-v2.json";
-import internalSsdsCore from "../../catalog/manifests/internal-ssds-core-2026-10-11-v2.json";
 import keyboardsCore from "../../catalog/manifests/keyboards-core-2026-10-11-v2.json";
 import laptopsCore from "../../catalog/manifests/laptops-core-2026-10-11-v2.json";
 import miceCore from "../../catalog/manifests/mice-core-2026-10-11-v2.json";
@@ -105,8 +103,6 @@ export async function bootstrapReviewedCatalog(sql: Sql) {
     wallChargersCore,
     powerBanksCore,
     portableSsdsCore,
-    internalSsdsCore,
-    hardDrivesCore,
     keyboardsCore,
     miceCore,
   ];

@@ -1,5 +1,9 @@
 # DALE master plan
 
+## Current planning priority — 20 October 2026
+
+The owner now requests conversation-based control of the existing customer website, including independently observed product tabs, navigation, filters/selections, cart/wishlist/comparison, and existing customer workflows. [IMPLEMENTATION_PLAN](IMPLEMENTATION_PLAN.md) is the current planning-only handover. It preserves natural Gemini conversation, catalog RAG and session memory. No action implementation is authorized by the document itself. The original assortment execution plan is preserved unchanged in [CATALOG_IMPLEMENTATION_PLAN_2026-10-11](CATALOG_IMPLEMENTATION_PLAN_2026-10-11.md). Historical counts, scope revisions and release claims below require current-state verification; see the [checkpoint audit](docs/CHECKPOINT_2026-10-20.md).
+
 Agent execution handover: [IMPLEMENTATION_PLAN](IMPLEMENTATION_PLAN.md). Start there for the current-state audit, existing code map, ordered implementation milestones, preservation rules, test gates, publication/deployment procedure and continuation ledger. The depth specification below supplies the product/brand requirements; the implementation plan turns them into executable work.
 
 ## Governing assortment revision — 11 October 2026

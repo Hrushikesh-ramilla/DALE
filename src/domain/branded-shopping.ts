@@ -57,7 +57,6 @@ const categoryPatterns: [Category, RegExp][] = [
     /\b(?:clothing|shirt|t-shirt|polo|jumper|sweater|dress|trousers)\b/i,
   ],
   ["bags", /\b(?:bag|bags|tote|crossbody|wallet|pouch)\b/i],
-  ["beauty", /\b(?:beauty|skincare|serum|cleanser|cream)\b/i],
   ["home", /\b(?:mug|porcelain|homeware)\b/i],
   ["accessories", /\b(?:keyboard|mouse)\b/i],
   ["headphones", /\b(?:headphones|headset)\b/i],
@@ -65,10 +64,6 @@ const categoryPatterns: [Category, RegExp][] = [
   ["sunglasses", /\b(?:sunglasses|shades)\b/i],
   ["watches", /\b(?:watches|watch|timepiece)\b/i],
   ["footwear", /\b(?:shoes|sneakers|loafers|boots|sandals)\b/i],
-  [
-    "appliances",
-    /\b(?:refrigerator|washing machine|vacuum cleaner|air purifier)\b/i,
-  ],
   ["storage", /\b(?:ssd|portable drive)\b/i],
 ];
 export function brandedShopping(
@@ -128,7 +123,6 @@ export function brandedShopping(
         "sunglasses",
         "watches",
         "footwear",
-        "appliances",
       ].includes(c),
     )
   )
@@ -333,8 +327,6 @@ export function brandedShopping(
             : /sweater|jumper/i.test(text)
               ? "sweater"
               : undefined
-      : category === "beauty" && /serum/i.test(text)
-        ? "serum"
         : category === "bags"
           ? /crossbody/i.test(text)
             ? "crossbody bag"

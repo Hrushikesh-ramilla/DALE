@@ -128,7 +128,7 @@ export function RetailArt({
               y="104"
               width="140"
               height="164"
-              rx={product.category === "beauty" ? "24" : "7"}
+              rx="7"
               fill={fill}
               stroke="#aaa294"
               strokeWidth="2"
@@ -166,7 +166,7 @@ export function RetailArt({
               fontSize="9"
               letterSpacing="2"
             >
-              {product.category === "beauty" ? "CARE" : "FRAGRANCE"}
+              FRAGRANCE
             </text>
             <text
               x="210"

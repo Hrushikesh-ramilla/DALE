@@ -27,13 +27,38 @@ if (
 const args = process.argv.includes("--index")
   ? ["--import", "tsx", "scripts/index-concierge.ts"]
   : [".next/standalone/server.js"];
-const child = spawn(process.execPath, args, {
-  env: { ...process.env, ...source, HOSTNAME: "127.0.0.1", PORT: "3000" },
-  stdio: "inherit",
-  windowsHide: true,
-});
-for (const signal of ["SIGINT", "SIGTERM"])
-  process.on(signal, () => child.kill(signal));
-child.on("exit", (code) => {
-  process.exitCode = code || 0;
-});
+
+let intentionalExit = false;
+let currentChild = null;
+
+for (const signal of ["SIGINT", "SIGTERM"]) {
+  process.on(signal, () => {
+    intentionalExit = true;
+    if (currentChild) currentChild.kill(signal);
+    process.exit(0);
+  });
+}
+
+function startServer() {
+  const child = spawn(process.execPath, args, {
+    env: { ...process.env, ...source, HOSTNAME: "127.0.0.1", PORT: "3000" },
+    stdio: "inherit",
+    windowsHide: true,
+  });
+  currentChild = child;
+
+  child.on("error", (err) => {
+    console.error("Concierge server spawn error:", err);
+  });
+
+  child.on("exit", (code, signal) => {
+    if (intentionalExit) {
+      process.exitCode = code || 0;
+      return;
+    }
+    console.warn(`Concierge server exited (code: ${code}, signal: ${signal}). Re-spawning in 1s...`);
+    setTimeout(startServer, 1000);
+  });
+}
+
+startServer();

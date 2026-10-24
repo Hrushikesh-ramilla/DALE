@@ -55,6 +55,7 @@ export function DaleCopilotSidecar() {
     );
   return (
     <aside
+      data-copilot-panel
       className="dale-copilot-sidecar"
       aria-label="DALE assistant"
       data-lenis-prevent="true"
@@ -260,7 +261,15 @@ export function DaleCopilotSidecar() {
             className="dale-action-card"
             aria-label="Interrupted browser action"
           >
-            <p>A browser action is awaiting acknowledgment.</p>
+            <p>
+              {c.state.actions.find((a) => a.outcome)?.outcome ||
+                "A browser action is awaiting acknowledgment."}
+            </p>
+            {c.state.actions.some((a) => a.operation.type === "tabs") && (
+              <button type="button" onClick={c.recoverTabs}>
+                Open requested tabs
+              </button>
+            )}
             <button type="button" onClick={() => void c.resume()}>
               Resume browser action
             </button>{" "}
@@ -269,17 +278,21 @@ export function DaleCopilotSidecar() {
             </button>
           </section>
         )}
-        {!c.isThinking && c.state?.turn?.status === "running" && (
-          <section className="dale-action-card">
-            <p>The server still records an active turn.</p>
-            <button type="button" onClick={() => void c.refresh()}>
-              Refresh turn status
-            </button>{" "}
-            <button type="button" onClick={c.cancel}>
-              Cancel active turn
-            </button>
-          </section>
-        )}
+        {!c.isThinking &&
+          ["running", "failed"].includes(c.state?.turn?.status || "") && (
+            <section className="dale-action-card">
+              <p>The server still records an active turn.</p>
+              <button type="button" onClick={() => void c.refresh()}>
+                Refresh turn status
+              </button>{" "}
+              <button type="button" onClick={() => void c.resume()}>
+                Resume saved task
+              </button>{" "}
+              <button type="button" onClick={c.cancel}>
+                Cancel active turn
+              </button>
+            </section>
+          )}
         {c.voiceDraft && (
           <p>Review the transcript in the input before sending.</p>
         )}

@@ -12,7 +12,15 @@ import { useRouter } from "next/navigation";
 import { recordSpeech } from "@/lib/record-speech";
 import type { Product } from "@/domain/catalog";
 import type { UIContext, BrowserAction } from "@/domain/concierge";
-import { registeredPath } from "@/domain/site-routes";
+import { browserOperation } from "@/domain/concierge";
+import {
+  browserTabId,
+  observeControls,
+  localBrowserOperation,
+  waitForPage,
+  openActionTabs,
+  closeActionTab,
+} from "./website-browser";
 import type { conciergeView } from "@/server/concierge/engine";
 import type { CartItem, CopilotMessage } from "./copilot-types";
 
@@ -29,6 +37,7 @@ interface CopilotContextType {
   stopListening: () => void;
   cancel: () => void;
   resume: () => Promise<void>;
+  recoverTabs: () => void;
   newChat: () => Promise<void>;
   loadEarlier: () => Promise<void>;
   isLoadingHistory: boolean;
@@ -91,6 +100,8 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   });
   const activeRequest = useRef(false);
   const sessionEpoch = useRef(0);
+  const channel = useRef<BroadcastChannel | null>(null);
+  const remoteRequests = useRef(new Map<string, Promise<string>>());
   const apply = useCallback((v: View, epoch = sessionEpoch.current) => {
     if (epoch !== sessionEpoch.current) return;
     if (
@@ -125,7 +136,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     setState(next);
   }, []);
   useEffect(() => {
-    if (!isThinking || !state?.owner_id) return;
+    if (!state?.owner_id) return;
     const epoch = sessionEpoch.current;
     const events = new EventSource("/api/copilot/events");
     const update = (event: MessageEvent) => {
@@ -137,7 +148,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     };
     events.addEventListener("state", update);
     return () => events.close();
-  }, [isThinking, state?.owner_id, apply]);
+  }, [state?.owner_id, apply]);
   const context = useCallback((): UIContext => {
     const url = new URL(window.location.href);
     let filters: Record<string, unknown> =
@@ -152,11 +163,16 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     }
     const path = url.pathname.split("/");
     return {
+      tab_id: browserTabId(),
+      controls: observeControls(),
       current_url: url.pathname + url.search,
       current_page_type: path[1] || "home",
       active_filters: filters,
       currently_viewed_product_id:
-        path[1] === "product" ? decodeURIComponent(path[2] || "") : null,
+        path[1] === "product"
+          ? document.querySelector<HTMLElement>(".pdp-page[data-product-id]")
+              ?.dataset.productId || null
+          : null,
       visible_product_ids: [
         ...new Set(
           Array.from(
@@ -186,6 +202,100 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       capabilities: ["navigation", "tabs", "filters", "comparison"],
     };
   }, []);
+  const register = useCallback(async () => {
+    if (!current.current?.owner_id) return;
+    await waitForPage(
+      location.pathname + location.search,
+      AbortSignal.timeout(20000),
+    );
+    await api("/api/copilot/tabs", context());
+  }, [context]);
+  useEffect(() => {
+    if (!state?.owner_id) return;
+    let disposed = false;
+    const heartbeat = () => {
+      if (!disposed) void register().catch(() => {});
+    };
+    heartbeat();
+    const timer = setInterval(heartbeat, 10000);
+    const bc =
+      typeof BroadcastChannel === "undefined"
+        ? null
+        : new BroadcastChannel("dale-customer-tabs");
+    channel.current = bc;
+    if (bc)
+      bc.onmessage = (event) => {
+        const request = event.data;
+        if (
+          request?.kind !== "request" ||
+          request.owner !== current.current?.owner_id ||
+          request.target !== browserTabId() ||
+          typeof request.id !== "string"
+        )
+          return;
+        const parsed = browserOperation.safeParse(request.operation);
+        if (
+          !parsed.success ||
+          !["navigate", "scroll", "control", "tab"].includes(parsed.data.type)
+        )
+          return;
+        let pending = remoteRequests.current.get(request.id);
+        if (!pending) {
+          const op = parsed.data;
+          pending = (async () => {
+            if (
+              op.type === "tab" &&
+              op.command === "focus" &&
+              op.tab_id === browserTabId()
+            ) {
+              window.focus();
+              await new Promise((r) => setTimeout(r, 100));
+              if (!document.hasFocus())
+                throw new Error(
+                  "The browser did not grant focus. Select this tab manually.",
+                );
+              return "Target browser tab reported active focus.";
+            }
+            if (op.type === "tabs" || op.type === "tab")
+              throw new Error("Unsupported remote operation.");
+            const result = await localBrowserOperation(
+              op,
+              router.push,
+              AbortSignal.timeout(25000),
+            );
+            await register();
+            return result;
+          })();
+          remoteRequests.current.set(request.id, pending);
+        }
+        void pending.then(
+          (outcome) =>
+            bc.postMessage({
+              kind: "response",
+              id: request.id,
+              owner: request.owner,
+              target: request.target,
+              ok: true,
+              outcome,
+            }),
+          (e) =>
+            bc.postMessage({
+              kind: "response",
+              id: request.id,
+              owner: request.owner,
+              target: request.target,
+              ok: false,
+              outcome: e instanceof Error ? e.message : "Target tab failed.",
+            }),
+        );
+      };
+    return () => {
+      disposed = true;
+      clearInterval(timer);
+      bc?.close();
+      if (channel.current === bc) channel.current = null;
+    };
+  }, [state?.owner_id, register, router]);
   const refresh = useCallback(async () => {
     const epoch = sessionEpoch.current;
     try {
@@ -252,62 +362,111 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const executeBrowser = useCallback(
     async (action: BrowserAction, signal: AbortSignal) => {
       const operation = action.operation;
-      let status: "succeeded" | "failed" = "failed";
+      if (action.controllerTabId && action.controllerTabId !== browserTabId())
+        throw new Error(
+          "This action belongs to another browser tab. Resume it there.",
+        );
+      let status: "succeeded" | "failed" | "blocked" = "failed";
       let outcome = "";
       try {
         if (operation.type === "tabs") {
-          const opened = operation.paths.map((path) => {
-            if (!registeredPath(path)) return false;
-            const tab = window.open(path, "_blank");
-            if (tab) tab.opener = null;
-            return Boolean(tab);
-          });
-          status = opened.every(Boolean) ? "succeeded" : "failed";
-          outcome = JSON.stringify({
-            opened,
-            reason:
-              status === "failed"
-                ? "Browser blocked one or more popups; use the product links manually."
-                : "Browser returned window handles. Destination page load is not independently inspected.",
-          });
-        } else {
-          if (!registeredPath(operation.path))
-            throw new Error("Unregistered destination.");
-          router.push(operation.path);
-          const destination = new URL(operation.path, window.location.origin);
-          const until = Date.now() + 20000;
-          let observed = false;
-          while (Date.now() < until) {
+          openActionTabs(action);
+          let ready = false;
+          for (let i = 0; i < 40; i++) {
             signal.throwIfAborted();
-            const reached =
-              window.location.pathname === destination.pathname &&
-              window.location.search === destination.search;
-            const page = document.querySelector<HTMLElement>(
-              "[data-concierge-page]",
+            const tabs = await api<View["tabs"]>(
+              "/api/copilot/tabs",
+              undefined,
+              signal,
             );
-            const needsReady = [
-              "/search",
-              "/compare",
-              "/cart",
-              "/wishlist",
-            ].includes(destination.pathname);
-            if (
-              reached &&
-              (!needsReady ||
-                (page?.dataset.conciergePage === destination.pathname &&
-                  page.dataset.ready === "true"))
-            ) {
-              observed = true;
-              break;
-            }
-            await new Promise((resolve) => setTimeout(resolve, 80));
+            ready = Boolean(
+              action.targets?.every((target) =>
+                tabs.some(
+                  (t) =>
+                    t.id === target.tabId &&
+                    t.createdByAction === action.id &&
+                    t.context.current_url === target.path,
+                ),
+              ),
+            );
+            if (ready) break;
+            await new Promise((r) => setTimeout(r, 250));
           }
-          if (!observed)
-            throw new Error(
-              "Navigation or destination data rendering timed out.",
-            );
+          status = ready ? "succeeded" : "blocked";
+          outcome = ready
+            ? "Every requested destination rendered in its registered browser tab."
+            : "One or more tabs have not loaded. Allow this site's popups or use Open requested tabs, then resume.";
+        } else if (operation.type === "tab") {
+          if (operation.command === "close") {
+            closeActionTab(operation.tab_id);
+            outcome = "Agent-created browser tab was observed closed.";
+          } else {
+            const bc = channel.current;
+            if (!bc)
+              throw new Error(
+                "This browser does not support cross-tab commands. Open the tab manually.",
+              );
+            outcome = await new Promise<string>((resolve, reject) => {
+              const timeout = setTimeout(
+                () =>
+                  finish(new Error("The target browser tab did not respond.")),
+                25000,
+              );
+              const abort = () => finish(new Error("Operation stopped."));
+              const receive = (event: MessageEvent) => {
+                const data = event.data;
+                if (
+                  data?.kind === "response" &&
+                  data.id === action.id &&
+                  data.owner === current.current?.owner_id &&
+                  data.target === operation.tab_id
+                )
+                  finish(data.ok ? data.outcome : new Error(data.outcome));
+              };
+              const finish = (result: string | Error) => {
+                clearTimeout(timeout);
+                signal.removeEventListener("abort", abort);
+                bc.removeEventListener("message", receive);
+                if (result instanceof Error) reject(result);
+                else resolve(result);
+              };
+              signal.addEventListener("abort", abort, { once: true });
+              bc.addEventListener("message", receive);
+              bc.postMessage({
+                kind: "request",
+                id: action.id,
+                owner: current.current?.owner_id,
+                target: operation.tab_id,
+                operation:
+                  operation.command === "navigate"
+                    ? { type: "navigate", path: operation.path }
+                    : operation,
+              });
+            });
+          }
           status = "succeeded";
-          outcome = "Observed requested URL and rendered destination.";
+        } else {
+          const key = `dale-browser-effect:${action.id}:${browserTabId()}`;
+          const saved = sessionStorage.getItem(key);
+          if (saved) {
+            const receipt = JSON.parse(saved) as { outcome?: string };
+            if (!receipt.outcome)
+              throw new Error(
+                "This component action was interrupted after it started. Inspect the page before requesting another action.",
+              );
+            outcome = receipt.outcome;
+          } else {
+            if (operation.type === "control")
+              sessionStorage.setItem(key, JSON.stringify({ started: true }));
+            outcome = await localBrowserOperation(
+              operation,
+              router.push,
+              signal,
+            );
+            sessionStorage.setItem(key, JSON.stringify({ outcome }));
+          }
+          await register();
+          status = "succeeded";
         }
       } catch (e) {
         outcome = e instanceof Error ? e.message : "Browser operation failed";
@@ -324,7 +483,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         signal,
       );
     },
-    [router, context],
+    [router, context, register],
   );
   const sendMessage = useCallback(
     async (prompt: string) => {
@@ -350,6 +509,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
             view = await executeBrowser(action, abort.signal);
             apply(view, epoch);
           }
+          if (view.actions.some((a) => a.status === "pending")) break;
           view = await api<View>(
             "/api/copilot/chat",
             { turn_id: id, resume: true, client_context: context() },
@@ -459,16 +619,28 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
     setError("");
     try {
       let view = await api<View>("/api/copilot/state", undefined, abort.signal);
-      if (view.turn?.status !== "awaiting_ui")
+      if (
+        !view.turn ||
+        !["awaiting_ui", "running", "failed"].includes(view.turn.status)
+      )
         throw new Error(
           "No browser action is awaiting recovery. Refresh to inspect the current turn.",
         );
       const id = view.turn.id;
+      if (view.turn.status !== "awaiting_ui") {
+        view = await api<View>(
+          "/api/copilot/chat",
+          { turn_id: id, resume: true, client_context: context() },
+          abort.signal,
+        );
+        apply(view, epoch);
+      }
       for (let i = 0; view.turn?.status === "awaiting_ui" && i < 12; i++) {
         for (const action of view.actions) {
           view = await executeBrowser(action, abort.signal);
           apply(view, epoch);
         }
+        if (view.actions.some((a) => a.status === "pending")) break;
         view = await api<View>(
           "/api/copilot/chat",
           { turn_id: id, resume: true, client_context: context() },
@@ -631,6 +803,16 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         },
         cancel,
         resume,
+        recoverTabs: () => {
+          for (const action of current.current?.actions || [])
+            if (
+              action.operation.type === "tabs" &&
+              (!action.controllerTabId ||
+                action.controllerTabId === browserTabId())
+            )
+              openActionTabs(action);
+          void resume();
+        },
         newChat,
         loadEarlier,
         isLoadingHistory,

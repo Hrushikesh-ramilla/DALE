@@ -1,6 +1,11 @@
 import { randomUUID } from "node:crypto";
 import { z } from "zod";
-import { changeConcierge, readConcierge, assertBuyer } from "./store";
+import {
+  changeConcierge,
+  readConcierge,
+  assertBuyer,
+  operationId,
+} from "./store";
 import { productDetails } from "./retrieval";
 import {
   getWorkspace,
@@ -267,14 +272,14 @@ export async function prepareConfirmation(
   summary: string,
 ) {
   const confirmation: Confirmation = {
-    id: randomUUID(),
+    id: operationId(),
     kind,
     payload,
     summary,
     expiresAt: new Date(Date.now() + 5 * 60000).toISOString(),
     status: "pending",
   };
-  await changeConcierge(actor, (s) => {
+  return changeConcierge(actor, (s) => {
     if (
       s.confirmations.filter(
         (c) => c.status === "pending" || c.status === "executing",
@@ -284,13 +289,13 @@ export async function prepareConfirmation(
         "Resolve or cancel existing confirmations before preparing more.",
       );
     s.confirmations.push(confirmation);
+    return {
+      confirmation_id: confirmation.id,
+      status: "requires_customer_confirmation",
+      summary,
+      expiresAt: confirmation.expiresAt,
+    };
   });
-  return {
-    confirmation_id: confirmation.id,
-    status: "requires_customer_confirmation",
-    summary,
-    expiresAt: confirmation.expiresAt,
-  };
 }
 export async function prepareCheckout(actor: Actor, requestedModel?: string) {
   const workspace = await getWorkspace(actor.workspaceId);

@@ -140,6 +140,7 @@ const curatedBrandHeroPackshots: Record<string, Record<string, string>> = {
     Balenciaga: "/images/products/suits-prod-suits-balenciaga-balenciaga-hourglass-single-breasted-wool-suit.webp",
   },
   fragrance: {
+    "Louis Vuitton": "/images/products/fragrance-louis-vuitton-imagination-100ml.webp",
     Amouage: "/images/products/fragrance-amouage-interlude-man.webp",
     "Parfums de Marly": "/images/products/fragrance-prod-fragrance-parfums-de-marly-pdm-althair.webp",
     "Tom Ford": "/images/products/fragrance-tom-ford-tobacco-vanille.webp",

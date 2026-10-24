@@ -42,6 +42,7 @@ export function RetailFilters({
         {label}
         <select
           aria-label={label}
+          data-agent-control={`Requirement ${label}`}
           value={String(value[key] ?? "")}
           onChange={(event) => {
             const next = { ...value };
@@ -174,7 +175,7 @@ export function RetailFilters({
           "aromatic",
           "spicy",
         ])}
-      {["fragrance", "beauty"].includes(category) &&
+      {category === "fragrance" &&
         select(
           "volumeMl",
           "Volume (ml)",
@@ -190,9 +191,7 @@ export function RetailFilters({
           ? "Review measurements; size labels do not guarantee fit."
           : category === "fragrance"
             ? "Notes describe a preference; enjoyment is personal."
-            : category === "beauty"
-              ? "Ingredients do not establish allergy or medical safety."
-              : "Check recorded dimensions against your needs."}
+            : "Check recorded dimensions against your needs."}
       </p>
     </div>
   );

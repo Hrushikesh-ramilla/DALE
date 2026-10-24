@@ -536,48 +536,6 @@ const entries: Entry[] = [
     missing: ["Manufacturer marks this item sold out; DALE stock is simulated"],
   },
   {
-    id: "B019",
-    brand: "Lancôme",
-    name: "Lancôme Advanced Génifique Face Serum · 100ml",
-    category: "beauty",
-    price: 22000,
-    specs: [
-      "Facial serum",
-      "3.4 fl. oz. / 100ml presentation",
-      "Full ingredient list on manufacturer page",
-    ],
-    attributes: {
-      productType: "serum",
-      modelName: "advanced genifique",
-      volumeMl: 100,
-    },
-    region: "US",
-    source:
-      "https://www.lancome-usa.com/skincare/face-serum/advanced-genifique-face-serum/1000302.html?geo=false",
-    missing: ["No medical or allergy-safety determination"],
-  },
-  {
-    id: "B020",
-    brand: "CHANEL",
-    name: "CHANEL HYDRA BEAUTY MICRO SÉRUM · 50ml",
-    category: "beauty",
-    price: 15500,
-    specs: [
-      "Facial serum; 1.7 fl. oz. / 50ml",
-      "Listed ingredients include glycerin, camellia extracts and fragrance",
-      "Formula may vary; consult packaging ingredients",
-    ],
-    attributes: {
-      productType: "serum",
-      modelName: "hydra beauty micro serum",
-      volumeMl: 50,
-    },
-    region: "US",
-    source:
-      "https://www.chanel.com/us/skincare/p/133325/hydra-beauty-micro-serum-rebalancing-replenishing-hydration/",
-    missing: ["No medical or allergy-safety determination"],
-  },
-  {
     id: "B021",
     brand: "Hermès",
     name: "Hermès Mosaïque au 24 Gold Mug · 300ml",
@@ -744,8 +702,6 @@ const BRANDED_MEDIA_MAP: Record<string, { url: string; alt: string }> = {
   B016: { url: "/images/products/bags-lv-neverfull-mm-m46975.webp", alt: "Louis Vuitton Neverfull MM Monogram M46975 tote packshot" },
   B017: { url: "/images/products/bags-hermes-garden-party-30.webp", alt: "Hermès Garden Party 30 Officier Canvas Negonda Calfskin packshot" },
   B018: { url: "/images/products/bags-michael-kors-jet-set.webp", alt: "Michael Kors Jet Set Large Saffiano Leather Crossbody Black packshot" },
-  B019: { url: "/images/products/beauty-lancome-advanced-genifique.webp", alt: "Lancôme Advanced Génifique Face Serum 100ml dropper packshot" },
-  B020: { url: "/images/products/beauty-chanel-hydra-beauty-micro-serum.webp", alt: "CHANEL HYDRA BEAUTY MICRO SÉRUM 50ml packshot" },
   B021: { url: "/images/products/home-hermes-mosaique-au-24-gold-mug.webp", alt: "Hermès Mosaïque au 24 Gold Mug 300ml luxury porcelain packshot" },
   B22: { url: "/images/products/clothing-givenchy-gros-grain-tshirt-s.webp", alt: "Givenchy Paris Gros Grain Cotton T-shirt Dark Havanna S packshot" },
   B23: { url: "/images/products/clothing-givenchy-gros-grain-tshirt-m.webp", alt: "Givenchy Paris Gros Grain Cotton T-shirt Dark Havanna M packshot" },

@@ -12,25 +12,15 @@ export function resolveBeautyHomeImage(product: ProductQuery): ProductImageResol
   const leaf = (product.leafType || product.category || "").toLowerCase();
 
   const beautyHomeLeaves = [
-    "cleansers",
-    "serums",
-    "moisturizers",
-    "sunscreens",
     "kitchenware",
     "decor",
     "home-textiles",
-    "vacuum-cleaners",
-    "air-purifiers"
   ];
 
   const isBeautyHomeLeaf = beautyHomeLeaves.includes(leaf);
   const isBeautyHomeCategory =
-    leaf === "beauty" ||
     leaf === "home" ||
-    leaf === "appliances" ||
-    (product.category || "").toLowerCase() === "beauty" ||
-    (product.category || "").toLowerCase() === "home" ||
-    (product.category || "").toLowerCase() === "appliances";
+    (product.category || "").toLowerCase() === "home";
 
   const isBeautyHomeText =
     fullText.includes("cream") ||
