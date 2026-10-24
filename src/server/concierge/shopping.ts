@@ -26,7 +26,15 @@ import { briefSchema } from "@/domain/brief";
 export const basketInput = z
   .object({
     collection: z.enum(["cart", "wishlist"]),
-    action: z.enum(["get", "add", "set", "remove", "clear", "select_group"]),
+    action: z.enum([
+      "get",
+      "add",
+      "set",
+      "remove",
+      "clear",
+      "select_group",
+      "move",
+    ]),
     items: z
       .array(
         z
@@ -39,7 +47,14 @@ export const basketInput = z
       )
       .max(50)
       .default([]),
-    expected_revision: z.number().int().min(0).optional(),
+    expected_revision: z
+      .number()
+      .int()
+      .min(0)
+      .describe(
+        "Optional basket revision from the latest collection result; never use a conversation/document revision or invent a value.",
+      )
+      .optional(),
   })
   .strict();
 
@@ -50,7 +65,7 @@ export async function basket(actor: Actor) {
     ...new Set([...state.cart.map((i) => i.productId), ...state.wishlist]),
   ]);
   return {
-    revision: state.revision,
+    revision: state.basketRevision ?? state.revision,
     cart: state.cart.map((item) => ({
       ...item,
       product: products.find((p) => p.id === item.productId) || null,
@@ -102,6 +117,10 @@ export async function basket(actor: Actor) {
 export async function manageBasket(actor: Actor, raw: unknown) {
   const input = basketInput.parse(raw);
   if (input.action === "get") return basket(actor);
+  if (input.action === "move" && !input.items.length)
+    throw new Error(
+      "Specify the exact items to move from the other collection.",
+    );
   if (
     input.action === "select_group" &&
     (input.collection !== "cart" || !input.items.length)
@@ -120,7 +139,7 @@ export async function manageBasket(actor: Actor, raw: unknown) {
       : undefined;
   await changeConcierge(actor, async (state, sql) => {
     if (
-      input.collection === "cart" &&
+      (input.collection === "cart" || input.action === "move") &&
       state.confirmations.some(
         (c) => c.kind === "checkout" && c.status === "executing",
       )
@@ -130,9 +149,19 @@ export async function manageBasket(actor: Actor, raw: unknown) {
       );
     if (
       input.expected_revision !== undefined &&
-      state.revision !== input.expected_revision
+      (state.basketRevision ?? state.revision) !== input.expected_revision
     )
       throw new Error("Basket changed. Refresh before editing it.");
+    if (input.action === "move") {
+      const source =
+        input.collection === "cart"
+          ? state.wishlist
+          : state.cart.map((item) => item.productId);
+      if (input.items.some((item) => !source.includes(item.productId)))
+        throw new Error(
+          "Every moved item must exist in your source collection. Refresh before retrying.",
+        );
+    }
     if (input.action === "select_group") {
       for (const item of input.items) {
         const existing = state.cart.find((i) => i.productId === item.productId);
@@ -166,7 +195,7 @@ export async function manageBasket(actor: Actor, raw: unknown) {
           );
         existing.groupId = item.groupId;
       }
-    } else if (["add", "set"].includes(input.action)) {
+    } else if (["add", "set", "move"].includes(input.action)) {
       for (const item of input.items) {
         const rows = await sql.query<{ stock: number; comparison: boolean }>(
           `SELECT (record->>'stock')::integer AS stock,coalesce((record->>'comparisonOnly')::boolean,false) AS comparison FROM catalog_products WHERE id=$1 AND publication='published' FOR SHARE`,
@@ -179,7 +208,7 @@ export async function manageBasket(actor: Actor, raw: unknown) {
           throw new Error("Product is unavailable for purchase.");
         const existing = state.cart.find((i) => i.productId === item.productId);
         const quantity =
-          input.action === "add"
+          input.action === "add" || input.action === "move"
             ? (existing?.quantity || 0) + item.quantity
             : item.quantity;
         if (
@@ -196,6 +225,13 @@ export async function manageBasket(actor: Actor, raw: unknown) {
             state.wishlist.push(item.productId);
         } else if (existing) existing.quantity = quantity;
         else state.cart.push({ productId: item.productId, quantity });
+      }
+      if (input.action === "move") {
+        const moved = new Set(input.items.map((item) => item.productId));
+        if (input.collection === "cart")
+          state.wishlist = state.wishlist.filter((id) => !moved.has(id));
+        else
+          state.cart = state.cart.filter((item) => !moved.has(item.productId));
       }
     } else if (input.collection === "cart")
       state.cart =
@@ -214,7 +250,7 @@ export async function manageBasket(actor: Actor, raw: unknown) {
     if (state.cart.length > 100 || state.wishlist.length > 100)
       throw new Error("Collection limit reached.");
     // Any edit invalidates prepared checkout, including price-equivalent substitutions.
-    if (input.collection === "cart") {
+    if (input.collection === "cart" || input.action === "move") {
       state.cartVersion = (state.cartVersion || 0) + 1;
       for (const p of state.confirmations)
         if (p.kind === "checkout" && p.status === "pending")

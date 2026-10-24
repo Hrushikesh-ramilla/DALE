@@ -2,7 +2,10 @@ import { readFile } from "node:fs/promises";
 import { spawn } from "node:child_process";
 import { parse } from "dotenv";
 const source = parse(await readFile(".data/concierge.env", "utf8"));
-if (!process.argv.includes("--index")) {
+if (
+  !process.argv.includes("--index") &&
+  source.CONCIERGE_PROVIDER === "self_hosted"
+) {
   const warmed = spawn(
     process.execPath,
     ["--import", "tsx", "scripts/warm-concierge-model.ts"],

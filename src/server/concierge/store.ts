@@ -2,6 +2,7 @@ import { getDatabase, type Database, type Sql } from "../database";
 import type { Actor } from "../state";
 import type { ConciergeState } from "@/domain/concierge";
 import { AsyncLocalStorage } from "node:async_hooks";
+import { publishConciergeChange } from "./changes";
 const execution = new AsyncLocalStorage<{ owner: string; turnId: string }>();
 export const withTurnFence = <T>(
   actor: Actor,
@@ -43,6 +44,7 @@ export const ownerKey = (actor: Actor) =>
   `${actor.workspaceId}:${actor.userId}`;
 const empty = (): ConciergeState => ({
   revision: 0,
+  basketRevision: 0,
   messages: [],
   transcript: [],
   cart: [],
@@ -65,7 +67,10 @@ export async function changeConcierge<T>(
   fn: (state: ConciergeState, sql: Sql) => T | Promise<T>,
 ) {
   assertBuyer(actor);
-  return (await conciergeDatabase()).transaction(async (sql) => {
+  let committedRevision = -1;
+  const value = await (
+    await conciergeDatabase()
+  ).transaction(async (sql) => {
     await sql.query(
       "INSERT INTO concierge_documents(owner,state) VALUES($1,$2::jsonb) ON CONFLICT(owner) DO NOTHING",
       [ownerKey(actor), JSON.stringify(empty())],
@@ -83,7 +88,14 @@ export async function changeConcierge<T>(
       throw new Error(
         "The originating turn is no longer active. No new mutation was applied.",
       );
+    // Chat/tool bookkeeping must not stale a shopper's basket observation.
+    // Legacy documents start at their last public revision without data loss.
+    const basketRevision = state.basketRevision ?? state.revision;
+    const beforeBasket = JSON.stringify([state.cart, state.wishlist]);
     const value = await fn(state, sql);
+    state.basketRevision =
+      basketRevision +
+      Number(beforeBasket !== JSON.stringify([state.cart, state.wishlist]));
     state.revision++;
     state.transcript = state.transcript.slice(-100);
     if (state.messages.length > 160) {
@@ -117,6 +129,9 @@ export async function changeConcierge<T>(
       "UPDATE concierge_documents SET state=$2::jsonb,updated_at=now() WHERE owner=$1",
       [ownerKey(actor), JSON.stringify(state)],
     );
+    committedRevision = state.revision;
     return value;
   });
+  publishConciergeChange(ownerKey(actor), committedRevision);
+  return value;
 }

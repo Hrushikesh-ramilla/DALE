@@ -421,7 +421,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
                   },
                 ]
               : [],
-            expected_revision: v.revision,
+            expected_revision: v.basket.revision,
           }),
           epoch,
         );

@@ -53,7 +53,13 @@ export function DaleCopilotSidecar() {
       <header className="dale-sidecar-header">
         <div>
           <strong>DALE</strong>
-          <small style={{ display: "block" }}>Your shopping assistant</small>
+          <small style={{ display: "block" }}>
+            {c.state?.inference?.provider === "gemini"
+              ? "Powered by Gemini"
+              : c.state?.inference?.provider === "self_hosted"
+                ? "Powered by local AI"
+                : "Your shopping assistant"}
+          </small>
         </div>
         <div className="dale-header-actions">
           <button

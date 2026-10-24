@@ -153,3 +153,97 @@ it("recovers once from a stale inference connection without replaying customer a
   expect(transport).toHaveBeenCalledTimes(2);
   expect(transport.mock.calls[0][1].headers.Connection).toBe("close");
 });
+
+function configureGemini() {
+  vi.stubEnv("CONCIERGE_PROVIDER", "gemini");
+  vi.stubEnv("CONCIERGE_MODEL", "gemini-contract-model");
+  vi.stubEnv("AI_API_KEY", "test-key-not-a-real-credential");
+  vi.stubEnv("CONCIERGE_ALLOW_CLOUD", "true");
+  vi.stubEnv("AI_BILLING_DISABLED", "true");
+  vi.stubEnv("AI_FREE_QUOTA_CONFIRMED", "true");
+}
+
+it("uses Gemini explicitly and preserves opaque continuation signatures across native function results", async () => {
+  configureGemini();
+  const extra = { google: { thought_signature: "opaque-test-signature" } };
+  const transport = vi
+    .fn()
+    .mockResolvedValueOnce(
+      Response.json({
+        choices: [
+          {
+            finish_reason: "tool_calls",
+            message: {
+              content: null,
+              extra_content: extra,
+              tool_calls: [
+                {
+                  id: "gemini-call",
+                  type: "function",
+                  extra_content: extra,
+                  function: {
+                    name: "lookup_product",
+                    arguments: '{"name":"independent product"}',
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      }),
+    )
+    .mockResolvedValueOnce(
+      Response.json({
+        choices: [
+          {
+            finish_reason: "stop",
+            message: { content: "Actual result acknowledged." },
+          },
+        ],
+      }),
+    );
+  vi.stubGlobal("fetch", transport);
+  const user = {
+    role: "user" as const,
+    content: "Find an independent product.",
+  };
+  const first = await modelTurn([user], []);
+  expect(first.extra_content).toEqual(extra);
+  expect(first.tool_calls?.[0].extra_content).toEqual(extra);
+  await modelTurn(
+    [
+      user,
+      first,
+      { role: "tool", tool_call_id: "gemini-call", content: '{"found":true}' },
+    ],
+    [],
+  );
+  expect(String(transport.mock.calls[0][0])).toBe(
+    "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+  );
+  const request = transport.mock.calls[1][1];
+  expect(request.headers.Authorization).toBe(
+    "Bearer test-key-not-a-real-credential",
+  );
+  expect(request.headers.Connection).toBeUndefined();
+  const sent = JSON.parse(request.body);
+  expect(sent.model).toBe("gemini-contract-model");
+  expect(sent.messages[1].tool_calls[0].extra_content).toEqual(extra);
+});
+
+it("surfaces Gemini quota errors without invoking a local fallback", async () => {
+  configureGemini();
+  const transport = vi
+    .fn()
+    .mockResolvedValue(new Response("quota exhausted", { status: 429 }));
+  vi.stubGlobal("fetch", transport);
+  await expect(
+    modelTurn([{ role: "user", content: "hello" }], []),
+  ).rejects.toThrow("HTTP 429");
+  expect(transport).toHaveBeenCalledTimes(2);
+  expect(
+    transport.mock.calls.every(([url]) =>
+      String(url).startsWith("https://generativelanguage.googleapis.com/"),
+    ),
+  ).toBe(true);
+});

@@ -87,13 +87,13 @@ export function identityMatcher(query: string, brands: string[]) {
     detected.add([...matches][0]);
     tokens = [...tokens.slice(0, at), ...tokens.slice(at + parts.length)];
   }
-  return (p: Product) => {
+  const requestedNumbers = numericIdentity(query);
+  const match = (p: Product) => {
     if (
       detected.size &&
       ![...detected].some((b) => key(b) === key(p.brand || ""))
     )
       return null;
-    const requestedNumbers = numericIdentity(query);
     const actualNumbers = numericIdentity(`${p.name} ${p.modelName || ""}`);
     if (
       requestedNumbers.measures.some(
@@ -140,4 +140,5 @@ export function identityMatcher(query: string, brands: string[]) {
           : ("identity" as const),
     };
   };
+  return Object.assign(match, { brands: [...detected] });
 }

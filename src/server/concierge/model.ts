@@ -7,6 +7,13 @@ export type ToolDeclaration = {
   description: string;
   parameters: unknown;
 };
+// Gemini's opaque continuation signatures must survive native tool frames.
+// They stay in server-side history and are never exposed as shopper prose.
+const signature = z
+  .object({
+    google: z.object({ thought_signature: z.string().min(1).max(65536) }),
+  })
+  .optional();
 const answerSchema = z.object({
   choices: z
     .array(
@@ -14,6 +21,7 @@ const answerSchema = z.object({
         finish_reason: z.string(),
         message: z.object({
           content: z.string().max(24000).nullable().optional(),
+          extra_content: signature,
           tool_calls: z
             .array(
               z.object({
@@ -23,6 +31,7 @@ const answerSchema = z.object({
                   name: z.string().max(80),
                   arguments: z.string().max(12000),
                 }),
+                extra_content: signature,
               }),
             )
             .max(6)
@@ -43,7 +52,7 @@ export async function modelTurn(
 ): Promise<NativeMessage> {
   if (activeGenerations >= 1)
     throw new Error(
-      "Local inference is busy. No additional generation was queued; please retry shortly.",
+      "AI inference is busy. No additional generation was queued; please retry shortly.",
     );
   activeGenerations++;
   try {
@@ -143,6 +152,9 @@ async function generate(
   const message: NativeMessage = {
     role: "assistant",
     content: choice.message.content || null,
+    ...(choice.message.extra_content
+      ? { extra_content: choice.message.extra_content }
+      : {}),
     ...(choice.message.tool_calls?.length
       ? { tool_calls: choice.message.tool_calls }
       : {}),

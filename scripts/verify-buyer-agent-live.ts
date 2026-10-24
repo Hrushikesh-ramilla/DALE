@@ -10,6 +10,7 @@ import { uiContext } from "../src/domain/concierge";
 import { formatMoney } from "../src/domain/money";
 import { manageBasket } from "../src/server/concierge/shopping";
 import type { Actor } from "../src/server/state";
+import { setTimeout as delay } from "node:timers/promises";
 
 Object.assign(
   process.env,
@@ -30,6 +31,12 @@ const context = uiContext.parse({
   current_page_type: "department",
 });
 const results: Record<string, unknown>[] = [];
+const paceMs = Number(
+  process.argv.find((arg) => arg.startsWith("--pace-ms="))?.split("=")[1] || 0,
+);
+if (!Number.isInteger(paceMs) || paceMs < 0 || paceMs > 15000)
+  throw new Error("Invalid evaluation pacing.");
+const measurements: Record<string, unknown>[] = [];
 let warmupMs: number | null = null;
 if (process.argv.includes("--warmup")) {
   const at = Date.now();
@@ -39,20 +46,38 @@ if (process.argv.includes("--warmup")) {
     JSON.stringify({ event: "buyer.live.warmup", elapsedMs: warmupMs }),
   );
 }
-if (process.argv.includes("--trace-model")) {
+if (
+  process.argv.includes("--trace-model") ||
+  process.argv.includes("--timings")
+) {
   const transport = globalThis.fetch;
   globalThis.fetch = async (...args) => {
-    if (String(args[0]).includes("/chat/completions")) {
-      const sent=JSON.parse(String(args[1]?.body||"{}"));
-      const last=sent.messages?.at(-1);
-      if(last?.role === "tool") console.log(JSON.stringify({event:"buyer.live.observation",content:last.content}));
+    if (
+      process.argv.includes("--trace-model") &&
+      String(args[0]).includes("/chat/completions")
+    ) {
+      const sent = JSON.parse(String(args[1]?.body || "{}"));
+      const last = sent.messages?.at(-1);
+      if (last?.role === "tool")
+        console.log(
+          JSON.stringify({
+            event: "buyer.live.observation",
+            content: last.content,
+          }),
+        );
     }
+    const started = performance.now();
     const result = await transport(...args);
     if (String(args[0]).includes("/chat/completions")) {
       const body = await result.clone().json();
-      console.log(
-        JSON.stringify({ event: "buyer.live.model", choices: body.choices }),
-      );
+      measurements.push({
+        elapsedMs: Math.round(performance.now() - started),
+        ...body.timings,
+      });
+      if (process.argv.includes("--trace-model"))
+        console.log(
+          JSON.stringify({ event: "buyer.live.model", choices: body.choices }),
+        );
     }
     return result;
   };
@@ -61,7 +86,9 @@ async function shopper() {
   return (await customerSession({ action: "guest" })).actor;
 }
 async function turn(actor: Actor, message: string) {
+  if (paceMs) await delay(paceMs); // Outside the measured request; respects free API rate limits.
   const at = Date.now();
+  const measurementOffset = measurements.length;
   const view = await runConcierge(actor, {
     turn_id: randomUUID(),
     message,
@@ -76,6 +103,9 @@ async function turn(actor: Actor, message: string) {
     status: view.turn?.status,
     error: view.turn?.error,
     response,
+    ...(process.argv.includes("--timings")
+      ? { modelTimings: measurements.slice(measurementOffset) }
+      : {}),
     products: view.products.map((p) => ({
       id: p.id,
       name: p.name,
@@ -230,6 +260,21 @@ try {
       combined.view.basket.cart.length === 0 &&
       combined.view.confirmations.length === 0,
   });
+  const moved = await turn(
+    combinedActor,
+    "Move that item from my wishlist to my cart, quantity one. Do not checkout.",
+  );
+  results.push({
+    ...moved.result,
+    capability: "natural move request removes source and persists destination",
+    passed:
+      moved.view.turn?.status === "completed" &&
+      !moved.view.basket.wishlist.some((item) => item.productId === p.id) &&
+      moved.view.basket.cart.some(
+        (item) => item.productId === p.id && item.quantity === 1,
+      ) &&
+      moved.view.confirmations.length === 0,
+  });
 } catch (error) {
   results.push({
     passed: false,
@@ -242,16 +287,28 @@ await mkdir(".data/concierge-verification", { recursive: true });
 const report = {
   at: new Date().toISOString(),
   model: process.env.CONCIERGE_MODEL,
-  provider: "self_hosted",
+  provider: process.env.CONCIERGE_PROVIDER || "self_hosted",
   candidate,
   warmupMs,
+  paceMs,
   scope:
-    "Actual local model and isolated real application database. No inference mocks, no payment calls. Six shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work; otherwise the first request includes cold prompt preparation. Later requests may reuse the native prefix cache.",
+    "Actual configured model and isolated real application database. No inference mocks, no payment calls. Seven shopper capabilities plus one general-conversation probe; not full production acceptance. warmupMs, when present, is separate startup work. Local model prefix caching does not apply to cloud inference.",
   passed: results.every((r) => r.passed),
+  latency: {
+    targetMs: 1000,
+    measuredCases: results.filter((r) => typeof r.elapsedMs === "number")
+      .length,
+    withinTarget: results.filter(
+      (r) => typeof r.elapsedMs === "number" && r.elapsedMs < 1000,
+    ).length,
+    allWithinTarget: results.every(
+      (r) => typeof r.elapsedMs === "number" && r.elapsedMs < 1000,
+    ),
+  },
   results,
 };
 await writeFile(
-  `.data/concierge-verification/buyer-live-${candidate ? "text-candidate" : "vision-baseline"}.json`,
+  `.data/concierge-verification/buyer-live-${process.env.CONCIERGE_PROVIDER === "gemini" ? "gemini" : candidate ? "text-candidate" : "vision-baseline"}.json`,
   JSON.stringify(report, null, 2),
 );
 console.log(JSON.stringify(report, null, 2));
