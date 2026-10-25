@@ -163,6 +163,27 @@ function configureGemini() {
   vi.stubEnv("AI_FREE_QUOTA_CONFIRMED", "true");
   vi.stubEnv("CONCIERGE_REASONING_EFFORT", "low");
 }
+it("enables native model batching only when the verified configuration requests it", async () => {
+  configureGemini();
+  vi.stubEnv("CONCIERGE_PARALLEL_TOOL_CALLS", "true");
+  const transport = vi
+    .fn()
+    .mockResolvedValue(
+      Response.json({
+        choices: [
+          { finish_reason: "stop", message: { content: "Generated reply." } },
+        ],
+      }),
+    );
+  vi.stubGlobal("fetch", transport);
+  await modelTurn(
+    [{ role: "user", content: "Explain the available options" }],
+    [{ name: "inspect", description: "Read", parameters: { type: "object" } }],
+  );
+  expect(JSON.parse(transport.mock.calls[0][1].body).parallel_tool_calls).toBe(
+    true,
+  );
+});
 
 it("uses Gemini explicitly and preserves opaque continuation signatures across native function results", async () => {
   configureGemini();
@@ -235,14 +256,12 @@ it("uses Gemini explicitly and preserves opaque continuation signatures across n
 
 it("surfaces Gemini quota errors without invoking a local fallback", async () => {
   configureGemini();
-  const transport = vi
-    .fn()
-    .mockResolvedValue(
-      new Response("quota exhausted", {
-        status: 429,
-        headers: { "retry-after": "0" },
-      }),
-    );
+  const transport = vi.fn().mockResolvedValue(
+    new Response("quota exhausted", {
+      status: 429,
+      headers: { "retry-after": "0" },
+    }),
+  );
   vi.stubGlobal("fetch", transport);
   await expect(
     modelTurn([{ role: "user", content: "hello" }], []),
@@ -298,27 +317,24 @@ it("honors Google's retry hint before regenerating an already observed native fr
 
 it("does not retry a hard daily quota exhaustion", async () => {
   configureGemini();
-  const transport = vi
-    .fn()
-    .mockResolvedValue(
-      Response.json(
-        {
-          error: {
-            details: [
-              {
-                violations: [
-                  {
-                    quotaId:
-                      "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
-                  },
-                ],
-              },
-            ],
-          },
+  const transport = vi.fn().mockResolvedValue(
+    Response.json(
+      {
+        error: {
+          details: [
+            {
+              violations: [
+                {
+                  quotaId: "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+                },
+              ],
+            },
+          ],
         },
-        { status: 429 },
-      ),
-    );
+      },
+      { status: 429 },
+    ),
+  );
   vi.stubGlobal("fetch", transport);
   await expect(
     modelTurn([{ role: "user", content: "hello" }], []),

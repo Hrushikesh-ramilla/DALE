@@ -133,6 +133,10 @@ export async function executeWebsiteTurn(
         };
       }
       signal?.throwIfAborted();
+      timing("tool.observation", {
+        name: pending.function.name,
+        bytes: Buffer.byteLength(JSON.stringify(result)),
+      });
       const operation =
         typeof result === "object" &&
         result &&

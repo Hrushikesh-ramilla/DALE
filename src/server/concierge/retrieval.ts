@@ -6,6 +6,9 @@ import { conciergeDatabase } from "./store";
 import { classifyMovement, recordedAttributes } from "@/domain/catalog-derived";
 import { identityMatcher } from "./identity";
 import type { Sql } from "../database";
+import { sharedEmbedding } from "./embedding-flight";
+import { timed, timing } from "./latency";
+import { hydrateVectors } from "./vector-cache";
 
 export function productDocument(p: Product) {
   return JSON.stringify({
@@ -44,8 +47,28 @@ export async function embed(
     process.env.CONCIERGE_EMBEDDING_PROFILE,
     inputs,
   ]);
-  const cached = kind === "query" ? queryCache.get(cacheKey) : undefined;
-  if (cached && Date.now() - cached.at < 60000) return [cached.vector];
+  signal?.throwIfAborted();
+  const eligible = kind === "query" && inputs.length === 1;
+  const cached = eligible ? queryCache.get(cacheKey) : undefined;
+  if (cached && Date.now() - cached.at < 60000) {
+    timing("embedding.cache_hit");
+    return [[...cached.vector]];
+  }
+  if (eligible && process.env.CONCIERGE_EMBEDDING_SINGLE_FLIGHT !== "false")
+    return sharedEmbedding(cacheKey, signal, (sharedSignal) =>
+      requestEmbedding(inputs, base, model, cacheKey, sharedSignal, kind),
+    );
+  return requestEmbedding(inputs, base, model, cacheKey, signal, kind);
+}
+async function requestEmbedding(
+  inputs: string[],
+  base: string,
+  model: string,
+  cacheKey: string,
+  signal: AbortSignal | undefined,
+  kind: "query" | "document",
+) {
+  signal?.throwIfAborted();
   if (embeddingRequests >= 2)
     throw new Error(
       "Local embedding service is busy. Retry semantic retrieval shortly.",
@@ -62,30 +85,32 @@ export async function embed(
     throw new Error("Embedding endpoint must be private loopback HTTP.");
   embeddingRequests++;
   try {
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(process.env.CONCIERGE_EMBEDDING_API_KEY
-          ? {
-              Authorization: `Bearer ${process.env.CONCIERGE_EMBEDDING_API_KEY}`,
-            }
-          : {}),
-      },
-      body: JSON.stringify({
-        model,
-        input: inputs.map(
-          (text) =>
-            (kind === "query" &&
-            process.env.CONCIERGE_EMBEDDING_PROFILE === "bge"
-              ? "Represent this sentence for searching relevant passages: "
-              : "") + text.slice(0, 1600),
-        ),
+    const response = await timed("embedding.http", () =>
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(process.env.CONCIERGE_EMBEDDING_API_KEY
+            ? {
+                Authorization: `Bearer ${process.env.CONCIERGE_EMBEDDING_API_KEY}`,
+              }
+            : {}),
+        },
+        body: JSON.stringify({
+          model,
+          input: inputs.map(
+            (text) =>
+              (kind === "query" &&
+              process.env.CONCIERGE_EMBEDDING_PROFILE === "bge"
+                ? "Represent this sentence for searching relevant passages: "
+                : "") + text.slice(0, 1600),
+          ),
+        }),
+        signal: signal
+          ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
+          : AbortSignal.timeout(30000),
       }),
-      signal: signal
-        ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
-        : AbortSignal.timeout(30000),
-    });
+    );
     if (!response.ok)
       throw new Error(`Embedding service returned HTTP ${response.status}.`);
     const data = z
@@ -245,15 +270,20 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
         `(p.record->'attributes'->>${bind(key)} IS NOT NULL AND p.record->'attributes'->>${bind(key)}<>${bind(String(value))})`,
       );
   const useVectors = Boolean(c.query.trim() && c.match_mode === "semantic");
+  const vectorCache =
+    useVectors && process.env.CONCIERGE_VECTOR_CACHE !== "false";
   const fetchRows = (sql: Sql) =>
-    sql.query<{
-      record: Product;
-      vector: number[] | null;
-      content_hash: string | null;
-      model: string | null;
-    }>(
-      `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? "e.vector,e.content_hash,e.model" : "NULL AS vector,NULL AS content_hash,NULL AS model"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
-      bindings,
+    timed("retrieval.sql", () =>
+      sql.query<{
+        record: Product;
+        vector: number[] | null;
+        content_hash: string | null;
+        model: string | null;
+        embedding_revision: string | null;
+      }>(
+        `SELECT p.record || jsonb_build_object('price',p.price) AS record,${useVectors ? `${vectorCache ? "NULL AS vector" : "e.vector"},e.content_hash,e.model,e.updated_at::text AS embedding_revision` : "NULL AS vector,NULL AS content_hash,NULL AS model,NULL AS embedding_revision"} FROM catalog_products p ${useVectors ? "LEFT JOIN concierge_embeddings e ON e.product_id=p.id" : ""} WHERE ${clauses.join(" AND ")} ORDER BY p.id`,
+        bindings,
+      ),
     );
   const { rows, matchIdentity } =
     c.query.trim() && c.match_mode === "identity"
@@ -263,9 +293,11 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
           await sql.query(
             "SET TRANSACTION ISOLATION LEVEL REPEATABLE READ, READ ONLY",
           );
-          const vocabulary = await sql.query<{ brand: string }>(
-            `SELECT DISTINCT coalesce(p.record->>'brand','') AS brand FROM catalog_products p WHERE ${clauses.join(" AND ")}`,
-            bindings,
+          const vocabulary = await timed("retrieval.vocabulary", () =>
+            sql.query<{ brand: string }>(
+              `SELECT DISTINCT coalesce(p.record->>'brand','') AS brand FROM catalog_products p WHERE ${clauses.join(" AND ")}`,
+              bindings,
+            ),
           );
           const matchIdentity = identityMatcher(
             c.query,
@@ -279,6 +311,7 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
         })
       : { rows: await fetchRows(db), matchIdentity: null };
   let mode = "structured";
+  if (vectorCache) await hydrateVectors(db, rows.rows, signal);
   let degradation: string | null = null;
   let queryVector: number[] | undefined;
   if (c.query.trim() && c.match_mode === "semantic") {
@@ -304,6 +337,7 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
       .normalize("NFKC")
       .match(/[\p{L}\p{N}]+/gu) || [];
   if (matchIdentity) mode = "identity";
+  const scoreStarted = performance.now();
   let ranked = rows.rows
     .filter(({ record }) => {
       const positive = c.attributes.movement_class,
@@ -379,6 +413,11 @@ export async function hybridSearch(raw: unknown, signal?: AbortSignal) {
             : c.sort === "brand_asc"
               ? (a.product.brand || "").localeCompare(b.product.brand || "")
               : b.score - a.score) || a.product.id.localeCompare(b.product.id),
+  );
+  timing(
+    "retrieval.rank",
+    { candidates: rows.rows.length, matches: ranked.length },
+    performance.now() - scoreStarted,
   );
   return {
     products: ranked.slice(c.offset, c.offset + c.limit).map((r) => r.product),

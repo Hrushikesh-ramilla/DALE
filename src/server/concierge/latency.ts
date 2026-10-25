@@ -2,6 +2,7 @@ import { AsyncLocalStorage } from "node:async_hooks";
 import { randomUUID } from "node:crypto";
 
 export type AgentProgress =
+  | { type: "provider.wait"; delay_ms: number; status: number }
   | { type: "model.started"; generation_id: string }
   | { type: "assistant.delta"; generation_id: string; text: string }
   | { type: "model.finished"; generation_id: string; has_tools: boolean };

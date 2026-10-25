@@ -33,6 +33,7 @@ interface CopilotContextType {
   toggleOpen: (v?: boolean) => void;
   isListening: boolean;
   isThinking: boolean;
+  activity: string;
   messages: CopilotMessage[];
   cart: CartItem[];
   sendMessage: (prompt: string, context?: unknown) => Promise<void>;
@@ -64,6 +65,14 @@ interface CopilotContextType {
   ) => Promise<void>;
 }
 const Context = createContext<CopilotContextType | null>(null);
+class ApiFailure extends Error {
+  constructor(
+    message: string,
+    readonly status: number,
+  ) {
+    super(message);
+  }
+}
 async function api<T>(
   path: string,
   body?: unknown,
@@ -97,7 +106,10 @@ async function api<T>(
     );
   const result = await response.json();
   if (!response.ok)
-    throw new Error(result.error || `Request failed (${response.status})`);
+    throw new ApiFailure(
+      result.error || `Request failed (${response.status})`,
+      response.status,
+    );
   return result as T;
 }
 export function CopilotProvider({ children }: { children: ReactNode }) {
@@ -105,6 +117,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const [isOpen, setOpen] = useState(false);
   const [isListening, setListening] = useState(false);
   const [isThinking, setThinking] = useState(false);
+  const [activity, setActivity] = useState("");
   const [state, setState] = useState<View | null>(null);
   const current = useRef<View | null>(null);
   const [error, setError] = useState("");
@@ -137,6 +150,19 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   const sessionEpoch = useRef(0);
   const channel = useRef<BroadcastChannel | null>(null);
   const remoteRequests = useRef(new Map<string, Promise<string>>());
+  const expireSession = useCallback((failure: unknown, epoch: number) => {
+    if (
+      !(failure instanceof ApiFailure) ||
+      failure.status !== 401 ||
+      epoch !== sessionEpoch.current
+    )
+      return false;
+    window.dispatchEvent(new CustomEvent("dale:session-changed"));
+    setError(
+      "Shopping session expired. Send your request again to start a fresh session, or sign in.",
+    );
+    return true;
+  }, []);
   const apply = useCallback((v: View, epoch = sessionEpoch.current) => {
     if (epoch !== sessionEpoch.current) return;
     if (
@@ -479,6 +505,15 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         )
           return;
         if (
+          event.type === "provider.wait" &&
+          typeof event.delay_ms === "number"
+        ) {
+          setActivity(
+            `AI provider requested a retry in ${Math.ceil(event.delay_ms / 1000)} seconds. You can stop this request.`,
+          );
+          return;
+        }
+        if (
           event.type === "model.started" &&
           typeof event.generation_id === "string"
         ) {
@@ -494,6 +529,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           draftBuffer.current !== null &&
           event.generation_id === draftBuffer.current?.generation
         ) {
+          setActivity("");
           draftBuffer.current.text += event.text;
           if (!draftTimer.current)
             draftTimer.current = setTimeout(() => {
@@ -678,6 +714,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       activeRequest.current = true;
       setOpen(true);
       setThinking(true);
+      setActivity("");
       setError("");
       const abort = new AbortController();
       controller.current = abort;
@@ -705,6 +742,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         }
         if (view.turn?.error) setError(view.turn.error);
       } catch (e) {
+        if (expireSession(e, epoch)) return;
         if (!abort.signal.aborted)
           setError(
             e instanceof Error
@@ -720,7 +758,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         }
       }
     },
-    [ensure, context, apply, executeBrowser, chat, clearDraft],
+    [ensure, context, apply, executeBrowser, chat, clearDraft, expireSession],
   );
   const loadEarlier = useCallback(async () => {
     const snapshot = current.current;
@@ -838,6 +876,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
       if (epoch === sessionEpoch.current && view.turn?.error)
         setError(view.turn.error);
     } catch (e) {
+      if (expireSession(e, epoch)) return;
       if (epoch === sessionEpoch.current && !abort.signal.aborted)
         setError(
           e instanceof Error
@@ -852,7 +891,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         controller.current = null;
       }
     }
-  }, [apply, context, executeBrowser, chat, clearDraft]);
+  }, [apply, context, executeBrowser, chat, clearDraft, expireSession]);
   const mutateCollection = useCallback(
     async (
       collection: "cart" | "wishlist",
@@ -975,6 +1014,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         toggleOpen: (v) => setOpen((p) => v ?? !p),
         isListening,
         isThinking,
+        activity: isThinking ? activity : "",
         messages:
           draft && isThinking && state?.turn?.status !== "completed"
             ? [...(state?.messages || []), draft]
