@@ -168,6 +168,7 @@ function CategoryCatalogContent({
     brand: brandParam,
     query: searchQuery,
     budget: maxBudget || undefined,
+    sort: sortOrder,
   });
 
   // Combine initialBrands with live categoryBrands
@@ -196,18 +197,8 @@ function CategoryCatalogContent({
     return list;
   }, [catalog.products, maxBudget]);
 
-  // Sort products
-  const sortedProducts = useMemo(() => {
-    const list = [...filteredProducts];
-    if (sortOrder === "price-asc") {
-      list.sort((a, b) => a.price - b.price);
-    } else if (sortOrder === "price-desc") {
-      list.sort((a, b) => b.price - a.price);
-    } else if (sortOrder === "brand-asc") {
-      list.sort((a, b) => (a.brand || "").localeCompare(b.brand || ""));
-    }
-    return list;
-  }, [filteredProducts, sortOrder]);
+  // The server orders the full matching collection before cursor pagination.
+  const sortedProducts = filteredProducts;
 
   useEffect(() => {
     window.dispatchEvent(
@@ -721,6 +712,7 @@ function CategoryCatalogContent({
                             type="button"
                             className="button primary small"
                             onClick={() => void store.choose(product)}
+                            data-agent-control={`Review PayPal quote for ${product.name}`}
                             style={{
                               display: "inline-flex",
                               alignItems: "center",
@@ -750,7 +742,7 @@ function CategoryCatalogContent({
                 ))}
               </div>
 
-              {catalog.loadMore && (
+              {catalog.hasMore && (
                 <div style={{ textAlign: "center", marginTop: 40 }}>
                   <button
                     type="button"

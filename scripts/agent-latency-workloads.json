@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "transport_fixture": {
+    "provider_first_chunk_ms": 40,
+    "provider_remaining_ms": 160,
+    "repetitions": 20
+  },
+  "customer_journeys": [
+    "Natural greeting without a catalog action",
+    "Open an exact product from the current page",
+    "Add two of the viewed product and show cart",
+    "Correct quantity after a newer manual cart edit",
+    "Find a fragrance with oud and incense",
+    "Find a camera phone without returning docks or bags",
+    "Open two exact products in separate browser tabs",
+    "Compare the two products and refer to the second one",
+    "Stop during generation and recover after a dropped response",
+    "Two independent shopper sessions"
+  ]
+}

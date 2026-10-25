@@ -35,6 +35,7 @@ import { formatMoney } from "@/domain/money";
 import { recordedAttributes } from "@/domain/catalog-derived";
 import { briefSchema } from "@/domain/brief";
 import { knownModels } from "@/domain/catalog";
+import { groupTerms } from "@/domain/group-policy";
 import {
   modelProductReferences,
   resolveProductReferences,
@@ -715,9 +716,10 @@ export const tools: ToolDefinition[] = [
       }
       const state = await getWorkspace(actor.workspaceId);
       if (input.operation === "join_group") {
-        if (!(await productDetails([input.product_id])).length)
-          throw new Error("Product not found.");
+        const product = (await productDetails([input.product_id]))[0];
+        if (!product) throw new Error("Product not found.");
         const policy = (await snapshot(actor)).groupPolicy;
+        const terms = groupTerms(policy, product);
         return prepareConfirmation(
           actor,
           "group_join",
@@ -726,7 +728,7 @@ export const tools: ToolDefinition[] = [
             model: input.device_profile,
             policyVersion: policy.version,
           },
-          `Commit to a same-item group for ${input.product_id}. Review current group policy: ${JSON.stringify(policy)}. Payment requires a separate quote and approval.`,
+          `Join a group for ${product.name}: ${terms.discountPercent}% off when ${terms.minimumMembers} distinct shoppers commit. Groups form for up to ${policy.formingMinutes} minutes; an existing group's deadline may be sooner. Review the actual offer and deadline before your separate checkout approval. No payment is taken by this commitment.`,
         );
       }
       if (input.operation === "leave_group")

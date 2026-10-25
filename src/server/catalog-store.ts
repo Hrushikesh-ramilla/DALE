@@ -62,93 +62,121 @@ export interface DepartmentLeafPreview {
   heroProduct: Product;
 }
 
-const curatedLeafHeroProducts: Partial<Record<string, { image: string; name: string }>> = {
+const curatedLeafHeroProducts: Partial<
+  Record<string, { image: string; name: string }>
+> = {
   suits: {
-    image: "/images/products/suits-prod-suits-tom-ford-tom-ford-shelton-super150s-wool-suit.webp",
+    image:
+      "/images/products/suits-prod-suits-tom-ford-tom-ford-shelton-super150s-wool-suit.webp",
     name: "Tom Ford Shelton Super 150s Wool Suit",
   },
   "t-shirts": {
-    image: "/images/products/t-shirts-celine-triomphe-embroidered-cotton-jersey-t-shirt.webp",
+    image:
+      "/images/products/t-shirts-celine-triomphe-embroidered-cotton-jersey-t-shirt.webp",
     name: "Celine Triomphe Cotton Jersey T-Shirt",
   },
   trousers: {
-    image: "/images/products/trousers-saint-laurent-classic-flat-front-super-120s-wool-gabardine-tr.webp",
+    image:
+      "/images/products/trousers-saint-laurent-classic-flat-front-super-120s-wool-gabardine-tr.webp",
     name: "Saint Laurent Classic Flat-Front Wool Trousers",
   },
   denim: {
-    image: "/images/products/denim-tom-ford-buckley-slim-fit-selvedge-denim-jeans.webp",
+    image:
+      "/images/products/denim-tom-ford-buckley-slim-fit-selvedge-denim-jeans.webp",
     name: "Tom Ford Buckley Selvedge Denim Jeans",
   },
   dresses: {
-    image: "/images/products/dresses-valentino-toile-iconographe-patterned-silk-twill-shirtdress.webp",
+    image:
+      "/images/products/dresses-valentino-toile-iconographe-patterned-silk-twill-shirtdress.webp",
     name: "Valentino Toile Iconographe Silk Shirtdress",
   },
   jackets: {
-    image: "/images/products/jackets-prod-jackets-prada-prada-denim-blouson-jacket.webp",
+    image:
+      "/images/products/jackets-prod-jackets-prada-prada-denim-blouson-jacket.webp",
     name: "Prada Denim Blouson Jacket",
   },
   handbags: {
-    image: "/images/products/handbags-prod-handbags-chanel-chanel-classic-11-12-flap.webp",
+    image:
+      "/images/products/handbags-prod-handbags-chanel-chanel-classic-11-12-flap.webp",
     name: "Chanel Classic 11.12 Double Flap Bag",
   },
   backpacks: {
-    image: "/images/products/backpacks-prod-backpacks-rimowa-rimowa-never-still-leather.webp",
+    image:
+      "/images/products/backpacks-prod-backpacks-rimowa-rimowa-never-still-leather.webp",
     name: "Rimowa Never Still Leather Backpack",
   },
   wallets: {
-    image: "/images/products/wallets-prod-wallets-goyard-goyard-victoire-wallet.webp",
+    image:
+      "/images/products/wallets-prod-wallets-goyard-goyard-victoire-wallet.webp",
     name: "Goyard Victoire Wallet",
   },
   loafers: {
-    image: "/images/products/loafers-prod-loafers-loro-piana-loro-piana-summer-charms-walk-loafers.webp",
+    image:
+      "/images/products/loafers-prod-loafers-loro-piana-loro-piana-summer-charms-walk-loafers.webp",
     name: "Loro Piana Summer Charms Loafers",
   },
   "formal-shoes": {
-    image: "/images/products/formal-shoes-prod-formal-shoes-christian-louboutin-louboutin-greggo-oxford.webp",
+    image:
+      "/images/products/formal-shoes-prod-formal-shoes-christian-louboutin-louboutin-greggo-oxford.webp",
     name: "Christian Louboutin Greggo Oxford",
   },
   fragrance: {
-    image: "/images/products/fragrance-prod-fragrance-maison-francis-kurkdjian-baccarat-rouge-540-extrait.webp",
+    image:
+      "/images/products/fragrance-prod-fragrance-maison-francis-kurkdjian-baccarat-rouge-540-extrait.webp",
     name: "Maison Francis Kurkdjian Baccarat Rouge 540",
   },
   phones: {
-    image: "/images/products/phones-prod-phones-apple-apple-iphone-16-pro-max.webp",
+    image:
+      "/images/products/phones-prod-phones-apple-apple-iphone-16-pro-max.webp",
     name: "Apple iPhone 16 Pro Max",
   },
   laptops: {
-    image: "/images/products/laptops-prod-laptops-apple-apple-macbook-pro-16-m3-max.webp",
+    image:
+      "/images/products/laptops-prod-laptops-apple-apple-macbook-pro-16-m3-max.webp",
     name: "Apple MacBook Pro 16 M3 Max",
   },
   tablets: {
-    image: "/images/products/tablets-prod-tablets-apple-apple-ipad-pro-13-m4.webp",
+    image:
+      "/images/products/tablets-prod-tablets-apple-apple-ipad-pro-13-m4.webp",
     name: "Apple iPad Pro 13 M4",
   },
   headphones: {
-    image: "/images/products/headphones-prod-headphones-apple-airpods-max-usb-c.webp",
+    image:
+      "/images/products/headphones-prod-headphones-apple-airpods-max-usb-c.webp",
     name: "Apple AirPods Max",
   },
 };
 
 const curatedBrandHeroPackshots: Record<string, Record<string, string>> = {
   loafers: {
-    Berluti: "/images/products/loafers-prod-loafers-berluti-berluti-andy-demesure-leather-loafer.webp",
+    Berluti:
+      "/images/products/loafers-prod-loafers-berluti-berluti-andy-demesure-leather-loafer.webp",
   },
   suits: {
-    Canali: "/images/products/suits-prod-suits-canali-canali-black-tie-shawl-lapel-tuxedo.webp",
-    "Dior Men": "/images/products/suits-dior-men-officer-collar-tailored-barathea-suit.webp",
-    Brioni: "/images/products/suits-prod-suits-brioni-brioni-brunico-two-button-navy-worsted-suit.webp",
-    Balenciaga: "/images/products/suits-prod-suits-balenciaga-balenciaga-hourglass-single-breasted-wool-suit.webp",
+    Canali:
+      "/images/products/suits-prod-suits-canali-canali-black-tie-shawl-lapel-tuxedo.webp",
+    "Dior Men":
+      "/images/products/suits-dior-men-officer-collar-tailored-barathea-suit.webp",
+    Brioni:
+      "/images/products/suits-prod-suits-brioni-brioni-brunico-two-button-navy-worsted-suit.webp",
+    Balenciaga:
+      "/images/products/suits-prod-suits-balenciaga-balenciaga-hourglass-single-breasted-wool-suit.webp",
   },
   fragrance: {
-    "Louis Vuitton": "/images/products/fragrance-louis-vuitton-imagination-100ml.webp",
+    "Louis Vuitton":
+      "/images/products/fragrance-louis-vuitton-imagination-100ml.webp",
     Amouage: "/images/products/fragrance-amouage-interlude-man.webp",
-    "Parfums de Marly": "/images/products/fragrance-prod-fragrance-parfums-de-marly-pdm-althair.webp",
+    "Parfums de Marly":
+      "/images/products/fragrance-prod-fragrance-parfums-de-marly-pdm-althair.webp",
     "Tom Ford": "/images/products/fragrance-tom-ford-tobacco-vanille.webp",
   },
   "t-shirts": {
-    Celine: "/images/products/t-shirts-celine-triomphe-embroidered-cotton-jersey-t-shirt.webp",
-    Givenchy: "/images/products/t-shirts-givenchy-givenchy-archetype-slim-fit-t-shirt.webp",
-    Balenciaga: "/images/products/t-shirts-prod-t-shirts-balenciaga-balenciaga-crest-piqu-polo-shirt.webp",
+    Celine:
+      "/images/products/t-shirts-celine-triomphe-embroidered-cotton-jersey-t-shirt.webp",
+    Givenchy:
+      "/images/products/t-shirts-givenchy-givenchy-archetype-slim-fit-t-shirt.webp",
+    Balenciaga:
+      "/images/products/t-shirts-prod-t-shirts-balenciaga-balenciaga-crest-piqu-polo-shirt.webp",
   },
 };
 
@@ -184,8 +212,13 @@ export async function getDepartmentPreviews(
       heroProduct.media = {
         url: curated.image,
         source: row.record?.media?.source || "official_catalog",
-        alt: curated.name || row.record?.media?.alt || row.record?.name || "Product packshot",
-        attribution: row.record?.media?.attribution || "DALE Official Brand Packshot",
+        alt:
+          curated.name ||
+          row.record?.media?.alt ||
+          row.record?.name ||
+          "Product packshot",
+        attribution:
+          row.record?.media?.attribution || "DALE Official Brand Packshot",
         reviewedAt: row.record?.media?.reviewedAt || new Date().toISOString(),
         usage: "catalog_packshot",
       };
@@ -251,7 +284,6 @@ export async function getCategoryBrandsSummary(
   });
 }
 
-
 export async function getStoredProduct(
   id: string,
   sql?: Sql,
@@ -293,12 +325,23 @@ export async function browseCatalog(input: {
   cursor?: string;
   requirements?: Record<string, string | number>;
   fixtures?: boolean;
+  sort?: "featured" | "price-asc" | "price-desc" | "brand-asc";
 }) {
   const database = await getDatabase();
   const filter = catalogFilterHash(input);
   const position = input.cursor
     ? decodeCatalogCursor(input.cursor, filter)
     : undefined;
+  const byBrand = input.sort === "brand-asc";
+  const descending = input.sort === "price-desc";
+  const brandColumn = "coalesce(brand,record->>'brand','')";
+  const order = byBrand
+    ? `${brandColumn},id`
+    : descending
+      ? "price DESC,id DESC"
+      : "price,id";
+  if (position && byBrand && position.brand === undefined)
+    throw new Error("Invalid catalog continuation. Restart this search.");
   const values = [
     input.category || "",
     input.query || "",
@@ -320,10 +363,10 @@ export async function browseCatalog(input: {
   );
   const rows = await database.query<{ record: Product }>(
     position
-      ? `SELECT record FROM catalog_products WHERE ${where} AND (price,id)>($8,$9) ORDER BY price,id LIMIT 49`
-      : `SELECT record FROM catalog_products WHERE ${where} ORDER BY price,id LIMIT 49 OFFSET $8`,
+      ? `SELECT record FROM catalog_products WHERE ${where} AND (${byBrand ? brandColumn : "price"},id)${descending ? "<" : ">"}($8,$9) ORDER BY ${order} LIMIT 49`
+      : `SELECT record FROM catalog_products WHERE ${where} ORDER BY ${order} LIMIT 49 OFFSET $8`,
     position
-      ? [...values, position.price, position.id]
+      ? [...values, byBrand ? position.brand! : position.price, position.id]
       : [...values, ((input.page || 1) - 1) * 48],
   );
   const counts = await database.query<{ category: string; count: string }>(
@@ -355,7 +398,12 @@ export async function browseCatalog(input: {
     products,
     nextCursor:
       rows.rows.length > 48 && last
-        ? encodeCatalogCursor(filter, last.price, last.id)
+        ? encodeCatalogCursor(
+            filter,
+            last.price,
+            last.id,
+            byBrand ? last.brand || "" : undefined,
+          )
         : null,
     total: Number(total.rows[0].count),
     page: input.page || 1,
@@ -365,7 +413,9 @@ export async function browseCatalog(input: {
       count: Number(r.count),
       minPrice: Number(r.min_price),
       heroImage:
-        (curatedBrandHeroPackshots[input.leafType || input.category || ""]?.[r.brand]) ||
+        curatedBrandHeroPackshots[input.leafType || input.category || ""]?.[
+          r.brand
+        ] ||
         r.hero_img ||
         undefined,
     })),

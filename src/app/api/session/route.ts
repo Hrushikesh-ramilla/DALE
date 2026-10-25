@@ -7,6 +7,7 @@ import {
 } from "@/server/auth";
 import { apiError, json, jsonBody, requireSameOrigin } from "@/server/http";
 import { snapshot } from "@/server/service";
+import { closeCustomerTask } from "@/server/concierge/session";
 export const runtime = "nodejs";
 export async function GET() {
   const startedAt = performance.now();
@@ -27,7 +28,15 @@ export async function POST(request: Request) {
         invite: z.string().uuid().optional(),
       })
       .parse(await jsonBody(request));
+    const current = await actorFromRequest().catch(() => undefined);
     const { actor, token } = await createSession(input);
+    if (
+      current &&
+      (current.userId !== actor.userId ||
+        current.workspaceId !== actor.workspaceId ||
+        current.role !== actor.role)
+    )
+      await closeCustomerTask(current);
     await setSessionCookie(token);
     return json(await snapshot(actor));
   } catch (error) {
@@ -37,6 +46,7 @@ export async function POST(request: Request) {
 export async function DELETE(request: Request) {
   try {
     requireSameOrigin(request);
+    await closeCustomerTask(await actorFromRequest().catch(() => undefined));
     await logout();
     return json({ ok: true });
   } catch (error) {

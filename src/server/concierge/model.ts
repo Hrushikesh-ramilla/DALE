@@ -2,6 +2,10 @@ import { z } from "zod";
 import type { NativeMessage } from "@/domain/concierge";
 import { selfHostedEndpoint } from "../self-hosted-ai";
 import { replyTokenLimit } from "./context-limits";
+import { timed, timing, admitModelAttempt } from "./latency";
+import { agentProgress, agentStreams } from "./latency";
+import { streamedModelEnvelope } from "./model-stream";
+import { randomUUID } from "node:crypto";
 
 export type ToolDeclaration = {
   name: string;
@@ -109,7 +113,7 @@ export async function modelTurn(
     );
   activeGenerations++;
   try {
-    return await generate(messages, tools, signal);
+    return await timed("model.total", () => generate(messages, tools, signal));
   } finally {
     activeGenerations--;
   }
@@ -122,6 +126,10 @@ async function generate(
   const provider = process.env.CONCIERGE_PROVIDER || "self_hosted";
   const model = process.env.CONCIERGE_MODEL || process.env.AI_MODEL;
   const reasoning = process.env.CONCIERGE_REASONING_EFFORT || "low";
+  const streaming = agentStreams();
+  const generation = randomUUID();
+  if (streaming)
+    agentProgress({ type: "model.started", generation_id: generation });
   if (
     provider === "gemini" &&
     !["none", "minimal", "low", "medium", "high"].includes(reasoning)
@@ -157,31 +165,42 @@ async function generate(
   let response: Response | undefined;
   for (let attempt = 0; attempt < 2; attempt++) {
     combined.throwIfAborted();
+    await admitModelAttempt();
+    timing("model.attempt", {
+      attempt: attempt + 1,
+      model,
+      provider,
+      reasoning,
+      messages: messages.length,
+      tools: tools.length,
+    });
     try {
-      response = await fetch(endpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          ...(provider === "self_hosted" ? { Connection: "close" } : {}),
-          ...(key ? { Authorization: `Bearer ${key}` } : {}),
-        },
-        body: JSON.stringify({
-          model,
-          messages,
-          ...(tools.length
-            ? {
-                tools: tools.map((t) => ({ type: "function", function: t })),
-                tool_choice: "auto",
-                parallel_tool_calls: provider === "self_hosted",
-              }
-            : {}),
-          temperature: provider === "self_hosted" ? 0 : 0.7,
-          ...(provider === "gemini" ? { reasoning_effort: reasoning } : {}),
-          max_tokens: replyTokenLimit(),
-          stream: false,
+      response = await timed("model.headers", () =>
+        fetch(endpoint, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            ...(provider === "self_hosted" ? { Connection: "close" } : {}),
+            ...(key ? { Authorization: `Bearer ${key}` } : {}),
+          },
+          body: JSON.stringify({
+            model,
+            messages,
+            ...(tools.length
+              ? {
+                  tools: tools.map((t) => ({ type: "function", function: t })),
+                  tool_choice: "auto",
+                  parallel_tool_calls: provider === "self_hosted",
+                }
+              : {}),
+            temperature: provider === "self_hosted" ? 0 : 0.7,
+            ...(provider === "gemini" ? { reasoning_effort: reasoning } : {}),
+            max_tokens: replyTokenLimit(),
+            stream: streaming,
+          }),
+          signal: combined,
         }),
-        signal: combined,
-      });
+      );
     } catch (error) {
       // Generation has no customer-side effects. Retrying its transport once is
       // safe; tool execution occurs only after a complete validated response.
@@ -195,6 +214,7 @@ async function generate(
         ? await geminiRetryDelay(response)
         : 700;
     if (retryMs === null) break;
+    timing("model.retry", { delay_ms: retryMs, status: response.status });
     await response.body?.cancel();
     combined.throwIfAborted();
     await new Promise<void>((resolve, reject) => {
@@ -216,7 +236,21 @@ async function generate(
       `Concierge inference returned HTTP ${response?.status ?? "unavailable"}. No scripted response was substituted.`,
     );
   }
-  const envelope = answerSchema.parse(await response.json());
+  const envelope = answerSchema.parse(
+    streaming &&
+      response.headers.get("content-type")?.includes("text/event-stream")
+      ? await streamedModelEnvelope(
+          response,
+          (text) =>
+            agentProgress({
+              type: "assistant.delta",
+              generation_id: generation,
+              text,
+            }),
+          combined,
+        )
+      : await response.json(),
+  );
   const choice = envelope.choices[0];
   if (!["stop", "tool_calls"].includes(choice.finish_reason))
     throw new Error(
@@ -234,5 +268,11 @@ async function generate(
   };
   if (!message.content && !message.tool_calls?.length)
     throw new Error("The model returned neither a response nor tool calls.");
+  if (streaming)
+    agentProgress({
+      type: "model.finished",
+      generation_id: generation,
+      has_tools: Boolean(message.tool_calls?.length),
+    });
   return message;
 }

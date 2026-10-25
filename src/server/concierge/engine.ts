@@ -14,6 +14,8 @@ import { productDetails } from "./retrieval";
 import type { Actor } from "../state";
 import { prepareConversation } from "./memory";
 import { executeWebsiteTurn } from "./website-execution";
+import { timed, timing, withoutAgentDraft } from "./latency";
+import { withWebsiteSnapshot } from "./website-snapshot";
 
 const directInstruction = `You are DALE, an exceptional luxury shopping concierge and conversational AI assistant.
 You possess deep, encyclopedic knowledge of luxury fashion, haute horlogerie, niche and designer fragrances, fine jewelry, electronics, and lifestyle goods.
@@ -56,6 +58,35 @@ export async function conciergeView(actor: Actor) {
       .slice(currentSets.indexOf(named) + 1)
       .some((set) => set.replacesIdentityScope);
   const displayed = unavailableNamed ? named : currentSets.at(-1);
+  // A retrieval candidate is context for Gemini, not a selected recommendation.
+  // Cards follow observed product actions; internal reads remain in the journal.
+  const selectedIds = [
+    ...new Set(
+      s.actions
+        .filter((a) => a.turnId === s.turn?.id && a.status === "succeeded")
+        .flatMap((a) => {
+          const paths =
+            a.operation.type === "navigate"
+              ? [a.operation.path]
+              : a.operation.type === "tabs"
+                ? a.operation.paths
+                : a.operation.type === "tab" && a.operation.path
+                  ? [a.operation.path]
+                  : [];
+          return paths
+            .filter((path) =>
+              new URL(path, "https://dale.invalid").pathname.startsWith(
+                "/product/",
+              ),
+            )
+            .map((path) =>
+              decodeURIComponent(
+                new URL(path, "https://dale.invalid").pathname.slice(9),
+              ),
+            );
+        }),
+    ),
+  ];
   return {
     owner_id: ownerKey(actor),
     inference: {
@@ -70,7 +101,13 @@ export async function conciergeView(actor: Actor) {
       (a) => a.status === "pending" && a.turnId === s.turn?.id,
     ),
     receipts: s.actions.filter((a) => a.status !== "pending").slice(-8),
-    products: await productDetails(displayed?.productIds || []),
+    products: await productDetails(
+      selectedIds.length
+        ? selectedIds
+        : displayed?.internal
+          ? []
+          : displayed?.productIds || [],
+    ),
     confirmations: s.confirmations.map(({ payload, ...c }) => ({
       ...c,
       terms: payload,
@@ -139,7 +176,8 @@ export async function runConcierge(
     if (
       state.turn &&
       ["running", "awaiting_ui"].includes(state.turn.status) &&
-      state.turn.leaseUntil > Date.now()
+      state.turn.leaseUntil > Date.now() &&
+      !(state.turn.status === "awaiting_ui" && !state.execution?.worker)
     )
       throw new Error(
         "Another turn is active. Cancel it before starting a new one.",
@@ -168,7 +206,10 @@ export async function runConcierge(
           });
     }
     for (const action of state.actions)
-      if (action.status === "pending") action.status = "failed";
+      if (action.status === "pending") {
+        action.status = "failed";
+        action.outcome = "Superseded by a newer customer message.";
+      }
     state.turn = {
       id: input.turn_id,
       status: "running",
@@ -183,6 +224,7 @@ export async function runConcierge(
       results: {},
       worker,
       leaseUntil: Date.now() + 180000,
+      observedBasketRevision: state.basketRevision ?? state.revision,
     };
     // Keep the actual utterance in its native user role. Page/cart state is read
     // through owner-bound functions, rather than wrapping the utterance in a
@@ -247,18 +289,29 @@ async function continueTurn(
 
   const prepared = state.execution?.frames.length
     ? { messages: state.execution.frames }
-    : await prepareConversation(
-        actor,
-        state.conversationId!,
-        directInstruction,
-        signal,
-        0.2,
+    : await timed("memory.prepare", () =>
+        withoutAgentDraft(() =>
+          prepareConversation(
+            actor,
+            state.conversationId!,
+            directInstruction,
+            signal,
+            0.2,
+          ),
+        ),
       );
+  if (!state.execution?.frames.length)
+    prepared.messages = await timed("context.snapshot", () =>
+      withWebsiteSnapshot(prepared.messages, state),
+    );
   if (!state.execution?.frames.length)
     await changeConcierge(actor, (s) => {
       s.execution!.frames = prepared.messages;
     });
-  await executeWebsiteTurn(actor, input.turn_id, prepared.messages, signal);
+  await timed("execution", () =>
+    executeWebsiteTurn(actor, input.turn_id, prepared.messages, signal),
+  );
+  timing("execution.returned");
 }
 export function observationText(result: unknown) {
   const serialized = JSON.stringify(result);

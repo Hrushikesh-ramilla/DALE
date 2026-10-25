@@ -27,6 +27,7 @@ import { chooseRemedy } from "../order-options";
 import { lifestyleProfile } from "@/domain/departments";
 import type { Confirmation } from "@/domain/concierge";
 import { briefSchema } from "@/domain/brief";
+import { formatMoney } from "@/domain/money";
 
 export const basketInput = z
   .object({
@@ -383,7 +384,7 @@ export async function prepareCheckout(actor: Actor, requestedModel?: string) {
         cartVersion: state.cartVersion || 0,
         model,
       },
-      summary: `Review ${quotes.length} individual sandbox offers totaling ${quotes.reduce((s, q) => s + q.amount, 0)} USD cents. ${quotes.filter((q) => q.groupId).length} selected group offers are included at their locked amounts. Each item creates a separate PayPal approval. Shipping follows the recorded simulated merchant policy; no live carrier promise is made.`,
+      summary: `Review ${quotes.length} individual sandbox offers totaling ${formatMoney(quotes.reduce((s, q) => s + q.amount, 0))} USD. ${quotes.filter((q) => q.groupId).length} selected group offers are included at their locked amounts. Each item creates a separate PayPal approval. Shipping follows the recorded simulated merchant policy; no live carrier promise is made.`,
       expiresAt: new Date(
         Math.min(
           Date.now() + 5 * 60000,

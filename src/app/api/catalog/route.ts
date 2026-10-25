@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { categoryIds, leafTypeKeys } from "@/domain/departments";
+import { leafTypeKeys } from "@/domain/departments";
 import { briefSchema } from "@/domain/brief";
 import { browseCatalog } from "@/server/catalog-store";
 import { withVerifiedProductMedia } from "@/domain/product-media-presentation";
@@ -30,6 +30,9 @@ const querySchema = z
     budget: z.coerce.number().int().min(1).max(100000000).default(100000000),
     page: z.coerce.number().int().min(1).max(1000).default(1),
     cursor: z.string().min(1).max(600).optional(),
+    sort: z
+      .enum(["featured", "price-asc", "price-desc", "brand-asc"])
+      .optional(),
     use: briefSchema.shape.requirements.unwrap().shape.use,
     productType: briefSchema.shape.requirements.unwrap().shape.productType,
     size: briefSchema.shape.requirements.unwrap().shape.size,

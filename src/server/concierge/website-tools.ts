@@ -11,7 +11,7 @@ import type { ToolDeclaration } from "./model";
 import { tools } from "./tools";
 import { basket, basketInput } from "./shopping";
 import { changeConcierge, readConcierge, ownerKey } from "./store";
-import { productDetails } from "./retrieval";
+import { productDetails, hybridSearch } from "./retrieval";
 
 // Reuse customer services, not the former conversation router or tool discovery prompt.
 const serviceNames = new Set([
@@ -54,15 +54,34 @@ const collection = basketInput.extend({
 });
 const definitions = [
   {
+    name: "open_catalog_products",
+    description:
+      "Resolve exact named products or known catalog IDs and open their listings in one operation. Use separate_tabs=true for requested new browser tabs (including one new tab). Multiple targets require separate_tabs=true. Ambiguous variants, approximate spellings and missing products return choices without opening anything. For discovery or comparisons use search_catalog instead. Actual rendered browser receipts follow before success is known.",
+    schema: z
+      .object({
+        targets: z
+          .array(
+            z.union([
+              z.object({ product_id: z.string().min(1).max(150) }).strict(),
+              z.object({ query: z.string().min(1).max(500) }).strict(),
+            ]),
+          )
+          .min(1)
+          .max(6),
+        separate_tabs: z.boolean().default(false),
+      })
+      .strict(),
+  },
+  {
     name: "get_website_context",
     description:
-      "Read the actual current page, visible products, controls, live DALE browser tabs, ordered recommendations, basket revision, and available destinations. Tab IDs identify browser tabs, not product types.",
+      "Read the actual current page, visible products, controls, live DALE browser tabs, saved catalog reads, basket revision, and available destinations. Tab IDs identify browser tabs, not product types.",
     schema: empty,
   },
   {
     name: "use_website",
     description:
-      "Operate DALE: navigate a registered path; open up to six paths in separate browser tabs; back/forward; scroll; operate a reported control; focus, close or navigate a registered browser tab. Product paths use exact published catalog IDs. Actual browser receipts follow before success is known.",
+      "Operate DALE: navigate a registered path; open up to six paths in separate browser tabs; back/forward; scroll; operate a reported control; focus, close or navigate a registered browser tab. Product paths use exact published catalog IDs. File controls pause for the shopper to choose a file; selection does not submit its form. Actual browser receipts follow before success is known.",
     schema: browserOperation,
   },
   {
@@ -79,11 +98,17 @@ const definitions = [
   },
 ] as const;
 export const websiteTools: ToolDeclaration[] = [
-  ...definitions.map((d) => ({
-    name: d.name,
-    description: d.description,
-    parameters: z.toJSONSchema(d.schema, { target: "draft-7", io: "input" }),
-  })),
+  ...definitions
+    .filter(
+      (d) =>
+        d.name !== "open_catalog_products" ||
+        process.env.CONCIERGE_COMPOSED_LISTINGS !== "false",
+    )
+    .map((d) => ({
+      name: d.name,
+      description: d.description,
+      parameters: z.toJSONSchema(d.schema, { target: "draft-7", io: "input" }),
+    })),
   ...services.map((t) => ({
     name: t.name,
     description:
@@ -115,6 +140,63 @@ export async function websiteTool(
   signal?: AbortSignal,
 ): Promise<unknown> {
   signal?.throwIfAborted();
+  if (name === "open_catalog_products") {
+    if (process.env.CONCIERGE_COMPOSED_LISTINGS === "false")
+      throw new Error("Composed listing navigation is disabled.");
+    const input = definitions[0].schema.parse(raw);
+    if (input.targets.length > 1 && !input.separate_tabs)
+      throw new Error("Multiple listings require separate browser tabs.");
+    const resolutions = [];
+    // Resolution is bounded and ordered. No browser effect is queued until all
+    // requested identities are uniquely verified against published records.
+    for (const target of input.targets) {
+      signal?.throwIfAborted();
+      const found =
+        "product_id" in target
+          ? await productDetails([target.product_id])
+          : undefined;
+      const lookup =
+        "query" in target
+          ? await hybridSearch(
+              {
+                query: target.query,
+                match_mode: "identity",
+                in_stock: false,
+                limit: 12,
+              },
+              signal,
+            )
+          : undefined;
+      const products = found || lookup!.products;
+      const exact = found
+        ? found.length === 1
+        : lookup!.total === 1 &&
+          lookup!.identity_matches[0]?.kind === "identity";
+      resolutions.push({
+        target,
+        resolved: exact,
+        total: found ? found.length : lookup!.total,
+        products: products.map((p) => ({
+          id: p.id,
+          name: p.name,
+          variant: p.skuVariant,
+          price_cents: p.price,
+          url: `/product/${encodeURIComponent(p.id)}`,
+        })),
+      });
+    }
+    if (resolutions.some((r) => !r.resolved))
+      return { needs_selection: true, resolutions };
+    const paths = resolutions.map((r) => r.products[0].url);
+    if (paths.some((path) => !registeredPath(path)))
+      throw new Error("Resolved listing path is not registered.");
+    return {
+      resolutions,
+      browser_operation: input.separate_tabs
+        ? { type: "tabs", paths }
+        : { type: "navigate", path: paths[0] },
+    };
+  }
   if (name === "get_website_context") {
     empty.parse(raw);
     const s = await readConcierge(actor);
@@ -123,8 +205,30 @@ export async function websiteTool(
       selected_tab_id: s.activeTabId || ui.tab_id,
       tabs: Object.entries(s.tabs || {})
         .filter(([, t]) => Date.now() - t.seenAt < 45000)
-        .map(([id, t]) => ({ id, ...t })),
-      recommendations: s.resultSets,
+        .map(([id, t]) => {
+          const action = s.actions.find((a) => a.id === t.createdByAction);
+          return {
+            id,
+            ...t,
+            opened_at: action?.createdAt,
+            opening_order: action?.targets?.findIndex(
+              (target) => target.tabId === id,
+            ),
+          };
+        })
+        .sort(
+          (a, b) =>
+            (a.opened_at || "").localeCompare(b.opened_at || "") ||
+            (a.opening_order ?? -1) - (b.opening_order ?? -1),
+        ),
+      catalog_reads: s.resultSets,
+      recent_actions: s.actions
+        .slice(-10)
+        .map(({ operation, status, outcome }) => ({
+          operation,
+          status,
+          outcome,
+        })),
       basket: await basket(actor),
       destinations: siteDestinations,
       departments: departments.map((d) => ({

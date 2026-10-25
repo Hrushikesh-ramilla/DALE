@@ -6,7 +6,8 @@ const positionSchema = z
     version: z.literal(1),
     filter: z.string().regex(/^[a-f0-9]{64}$/),
     price: z.number().int().positive().max(1_000_000_000),
-    id: z.string().min(1).max(80),
+    id: z.string().min(1).max(150),
+    brand: z.string().max(150).optional(),
   })
   .strict();
 
@@ -19,6 +20,7 @@ export function catalogFilterHash(input: {
   budget?: number;
   requirements?: Record<string, string | number>;
   fixtures?: boolean;
+  sort?: "featured" | "price-asc" | "price-desc" | "brand-asc";
 }) {
   const base: unknown[] = [
     input.category || "",
@@ -32,14 +34,21 @@ export function catalogFilterHash(input: {
   if (input.leafType || input.brand) {
     base.push(input.leafType || "", input.brand || "");
   }
-  return createHash("sha256")
-    .update(JSON.stringify(base))
-    .digest("hex");
+  if (input.sort && !["featured", "price-asc"].includes(input.sort))
+    base.push(input.sort);
+  return createHash("sha256").update(JSON.stringify(base)).digest("hex");
 }
 
-export function encodeCatalogCursor(filter: string, price: number, id: string) {
+export function encodeCatalogCursor(
+  filter: string,
+  price: number,
+  id: string,
+  brand?: string,
+) {
   return Buffer.from(
-    JSON.stringify(positionSchema.parse({ version: 1, filter, price, id })),
+    JSON.stringify(
+      positionSchema.parse({ version: 1, filter, price, id, brand }),
+    ),
   ).toString("base64url");
 }
 
