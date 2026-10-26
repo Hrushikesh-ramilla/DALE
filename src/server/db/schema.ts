@@ -7,6 +7,7 @@ import {
   index,
 } from "drizzle-orm/pg-core";
 import { type InferSelectModel, type InferInsertModel } from "drizzle-orm";
+import type { Product } from "@/domain/catalog";
 
 export const catalogProducts = pgTable(
   "catalog_products",
@@ -14,7 +15,7 @@ export const catalogProducts = pgTable(
     id: text("id").primaryKey(),
     category: text("category").notNull(),
     price: integer("price").notNull(),
-    record: jsonb("record").notNull(),
+    record: jsonb("record").$type<Product>().notNull(),
     publication: text("publication").notNull().default("unclassified"),
     releaseId: text("release_id"),
     leafType: text("leaf_type"),

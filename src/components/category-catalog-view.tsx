@@ -23,6 +23,7 @@ import {
 } from "@/domain/departments";
 import { usePublishedCatalog } from "./use-published-catalog";
 import { ProductArt } from "./product-art";
+import { KineticCard, KineticBrandLink } from "./kinetic-card";
 import { Breadcrumbs } from "./breadcrumbs";
 import { useStore } from "./store-context";
 import { useCopilot } from "./copilot/copilot-context";
@@ -404,7 +405,7 @@ function CategoryCatalogContent({
           <section aria-label={`${title} Brands`}>
             <div className="category-brand-grid">
               {brandsList.map((brand) => (
-                <Link
+                <KineticBrandLink
                   key={brand.name}
                   href={`/category/${leaf}?brand=${encodeURIComponent(brand.name)}`}
                   className="category-brand-card"
@@ -448,7 +449,7 @@ function CategoryCatalogContent({
                       <ArrowRight size={13} />
                     </span>
                   </div>
-                </Link>
+                </KineticBrandLink>
               ))}
             </div>
           </section>
@@ -624,7 +625,7 @@ function CategoryCatalogContent({
             <section aria-label="Product list">
               <div className="product-grid">
                 {sortedProducts.map((product) => (
-                  <article
+                  <KineticCard
                     className="product-card"
                     key={product.id}
                     data-product-id={product.id}
@@ -738,7 +739,7 @@ function CategoryCatalogContent({
                         </div>
                       </div>
                     </div>
-                  </article>
+                  </KineticCard>
                 ))}
               </div>
 
