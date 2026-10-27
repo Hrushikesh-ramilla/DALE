@@ -86,7 +86,7 @@ p {
   color: #111;
 }
 .app-shell {
-  overflow: clip;
+  overflow-x: clip;
 }
 .skip-link {
   position: fixed;

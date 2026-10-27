@@ -1,119 +1,106 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { motion, useReducedMotion } from "motion/react";
-import { ArrowDown, ArrowLeft, ArrowRight } from "lucide-react";
-import { productById, type Product } from "@/domain/catalog";
-import { formatMoney } from "@/domain/money";
-import { BrandWordmark } from "./brand-wordmark";
-import { ProductViewer } from "./product-viewer";
 
+import { useState } from "react";
 import Link from "next/link";
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+import { productById } from "@/domain/catalog";
+import { formatMoney } from "@/domain/money";
+import { useCardDepth } from "@/hooks/use-card-depth";
+import { useCopilot } from "./copilot/copilot-context";
+import { ProductViewer } from "./product-viewer";
+import styles from "./editorial-hero.module.css";
 
 const edit = ["B001", "B010", "B016", "B23"].map(productById);
-export function EditorialHero({
-  onView,
-}: {
-  onView?: (product: Product) => void;
-}) {
+
+export function EditorialHero() {
   const [index, setIndex] = useState(0);
-  const stage = useRef<HTMLElement>(null);
-  const reduced = useReducedMotion();
+  const ref = useCardDepth<HTMLDivElement>(3.2, 5);
+  const copilot = useCopilot();
   const product = edit[index];
-  useEffect(() => {
-    if (reduced || !stage.current) return;
-    const context = gsap.context(() => {
-      gsap.fromTo(
-        ".hero-type h2",
-        { clipPath: "inset(0 0 100% 0)", y: 24 },
-        {
-          clipPath: "inset(0 0 0% 0)",
-          y: 0,
-          duration: 0.85,
-          ease: "power3.out",
-        },
-      );
-      gsap.fromTo(
-        ".hero-type p,.hero-type .editorial-link",
-        { opacity: 0, y: 12 },
-        {
-          opacity: 1,
-          y: 0,
-          stagger: 0.08,
-          duration: 0.55,
-          delay: 0.25,
-          ease: "power2.out",
-        },
-      );
-    }, stage);
-    return () => context.revert();
-  }, [reduced]);
+  const openAssistant = () => {
+    copilot.toggleOpen(true);
+    void copilot.refresh();
+  };
   return (
     <section
-      className="editorial-hero"
-      ref={stage}
+      className={`editorial-hero ${styles.hero}`}
       aria-label="The everyday edit"
     >
-      <div className="hero-edition">
-        <span>Objects for living / Volume 01</span>
-        <span>Personal shopping, considered.</span>
+      <div className={styles.edition}>
+        <span>DALE / THE CONSIDERED COLLECTION</span>
+        <span>EST. FOR EVERYDAY LIFE</span>
       </div>
-      <div className="hero-type">
-        <h2>Explore the considered collection.</h2>
+      <div className={styles.copy}>
+        <span className={styles.eyebrow}>
+          <span aria-hidden="true" /> YOUR PERSONAL SHOPPING AGENT
+        </span>
+        <h2>
+          A considered
+          <br />
+          <em>choice.</em>
+        </h2>
         <p>
-          Iconic houses. Recorded manufacturer facts. <br />
-          Your agent, your final say.
+          Objects worth finding.
+          <br />
+          An agent that helps you choose.
         </p>
-        <a className="editorial-link" href="#collections">
-          Explore collections <ArrowRight size={17} />
-        </a>
-      </div>
-      <div className="hero-stage">
-        <div className="stage-orbit" aria-hidden="true" />
-        <span className="stage-label">The everyday edit</span>
-        <div className="stage-object">
-          <motion.div
-            initial={false}
-            animate={{ opacity: 1, y: 0, rotate: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.55 }}
-          >
-            <ProductViewer product={product} />
-          </motion.div>
+        <div className={styles.actions}>
+          <button type="button" onClick={openAssistant}>
+            Start a conversation <ArrowUpRight size={17} />
+          </button>
+          <a href="#collections">
+            Explore the collection <ArrowDown size={14} />
+          </a>
         </div>
-        <div className="stage-caption">
+        <span className={styles.note}>
+          Your preferences. Your approval. Always.
+        </span>
+      </div>
+      <div className={styles.display}>
+        <div className={styles.displayTitle}>
+          <span>THE EVERYDAY EDIT</span>
+          <span>0{index + 1} / 04</span>
+        </div>
+        <div className={styles.stage} ref={ref} data-hero-depth>
+          <div className={styles.frame} aria-hidden="true" />
+          <span className={styles.vertical} aria-hidden="true">
+            DALE — OBJECT STUDY
+          </span>
+          <div className={styles.object} key={product.id}>
+            <ProductViewer product={product} priority={index === 0} />
+          </div>
+          <div className={styles.plinth} aria-hidden="true" />
+          <span className={styles.objectNumber} aria-hidden="true">
+            0{index + 1}
+          </span>
+        </div>
+        <div className={styles.caption}>
           <div>
-            <span className="stage-number">0{index + 1} / 04</span>
-            <Link href={`/product/${product.id}`} style={{ color: "inherit", textDecoration: "none" }}>
-              <strong>{product.name}</strong>
-            </Link>
-            <small>
-              {formatMoney(product.price)} · DALE sandbox offer · Original
-              category illustration
-            </small>
+            <Link href={`/product/${product.id}`}>{product.name}</Link>
+            <small>{formatMoney(product.price)} · DALE sandbox offer</small>
           </div>
           <Link
             href={`/product/${product.id}`}
-            className="round-link"
+            className={styles.open}
             aria-label={`View ${product.name}`}
           >
-            <ArrowRight size={21} />
+            <ArrowUpRight size={20} />
           </Link>
         </div>
-        <div className="stage-controls" aria-label="Featured products">
+        <div className={styles.controls} aria-label="Featured products">
           <button
             aria-label="Previous featured product"
             onClick={() => setIndex((index + edit.length - 1) % edit.length)}
           >
             <ArrowLeft size={16} />
           </button>
-          {edit.map((item, itemIndex) => (
+          {edit.map((item, i) => (
             <button
               key={item.id}
-              className="stage-index"
+              className={styles.dot}
               aria-label={`Feature ${item.name}`}
-              aria-pressed={itemIndex === index}
-              onClick={() => setIndex(itemIndex)}
+              aria-pressed={i === index}
+              onClick={() => setIndex(i)}
             >
               <span />
             </button>
@@ -126,14 +113,11 @@ export function EditorialHero({
           </button>
         </div>
       </div>
-      <div className="hero-baseline">
+      <div className={styles.baseline}>
+        <span>CONVERSATION. CATALOG. CONTROL.</span>
         <a href="#collections">
-          Explore the collection <ArrowDown size={15} />
+          Discover what belongs with you <ArrowDown size={13} />
         </a>
-        <span>From a good choice to a fair resolution.</span>
-      </div>
-      <div className="hero-signature" aria-hidden="true">
-        <BrandWordmark />
       </div>
     </section>
   );

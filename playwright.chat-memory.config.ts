@@ -11,6 +11,7 @@ export default defineConfig({
     "website-actions.spec.ts",
     "website-evidence.spec.ts",
     "website-customer-flows.spec.ts",
+    "refinement.spec.ts",
   ],
   workers: 1,
   timeout: 90000,

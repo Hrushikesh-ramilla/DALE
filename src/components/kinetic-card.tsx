@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useCallback } from "react";
 import Link from "next/link";
-import { useCardTilt } from "@/hooks/use-gsap-kinetic";
+import { useCardDepth } from "@/hooks/use-card-depth";
 
 export interface KineticCardProps extends React.HTMLAttributes<HTMLElement> {
   as?: "article" | "div" | "li";
@@ -18,15 +18,16 @@ export function KineticCard({
   children,
   ...props
 }: KineticCardProps) {
-  const cardRef = useCardTilt<HTMLElement>();
+  const cardRef = useCardDepth<HTMLElement>();
+  const bindRef = useCallback(
+    (node: HTMLElement | null) => {
+      cardRef.current = node;
+    },
+    [cardRef],
+  );
 
   return (
-    <Component
-      ref={cardRef as any}
-      className={className}
-      data-kinetic-item
-      {...props}
-    >
+    <Component ref={bindRef} className={className} data-kinetic-item {...props}>
       {children}
     </Component>
   );
@@ -40,15 +41,10 @@ export function KineticBrandLink({
   children,
   ...props
 }: React.ComponentProps<typeof Link>) {
-  const linkRef = useCardTilt<HTMLAnchorElement>();
+  const linkRef = useCardDepth<HTMLAnchorElement>();
 
   return (
-    <Link
-      ref={linkRef}
-      className={className}
-      data-kinetic-item
-      {...props}
-    >
+    <Link ref={linkRef} className={className} data-kinetic-item {...props}>
       {children}
     </Link>
   );

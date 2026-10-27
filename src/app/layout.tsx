@@ -6,12 +6,12 @@ import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
 import { MotionProvider } from "@/components/motion-provider";
 import { LuxuryCursor } from "@/components/luxury-cursor";
-import "lenis/dist/lenis.css";
 import "./fonts.css";
 import "./globals.css";
 import "./monochrome.css";
 import "./agent.css";
 import "./copilot.css";
+import "./depth.css";
 import { CopilotProvider } from "@/components/copilot/copilot-context";
 import { DaleCopilotSidecar } from "@/components/copilot/dale-copilot-sidecar";
 export const metadata: Metadata = {
