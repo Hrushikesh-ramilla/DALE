@@ -57,7 +57,8 @@
   background: linear-gradient(145deg, #232421, #11120f 60%);
   box-shadow:
     0 1px 0 #ffffff13 inset,
-    0 5px 0 #c4c3b7,
+    0 4px 0 #d8d5c9,
+    0 8px 0 #99998c,
     0 18px 28px #292f1b1f;
   transform-style: flat;
 }
@@ -76,6 +77,15 @@
   );
   opacity: 0;
   transition: opacity 0.3s;
+}
+.plate::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 -9px;
+  height: 8px;
+  border: 1px solid #ffffff3d;
+  background: linear-gradient(90deg, #777c6d, #d9d7cb 55%, #9c9f91);
+  pointer-events: none;
 }
 .plate:hover::after {
   opacity: 1;

@@ -73,6 +73,7 @@ import { GroupPolicySettings } from "./group-policy-settings";
 import { ProviderReconciliation } from "./provider-reconciliation";
 import { useCopilot } from "./copilot/copilot-context";
 import { useEditorialReveals } from "@/hooks/use-editorial-reveals";
+import { LivingType } from "./living-type";
 import { ShoppingBriefMenu } from "./shopping-brief-menu";
 type Session = Awaited<ReturnType<typeof snapshot>>;
 
@@ -204,13 +205,18 @@ export default function Storefront({ children }: { children?: ReactNode }) {
     ? `${session.actor.workspaceId}:${session.actor.userId}`
     : null;
   const [restoring, setRestoring] = useState(true);
+  const sessionRestoreRevision = useRef(0);
+  const sessionAnnounced = useRef(false);
   useEffect(() => {
-    if (!restoring)
+    if (!restoring) {
+      const initial = !sessionAnnounced.current;
+      sessionAnnounced.current = true;
       window.dispatchEvent(
         new CustomEvent("dale:session-changed", {
-          detail: { owner_id: sessionOwner },
+          detail: { owner_id: sessionOwner, initial },
         }),
       );
+    }
   }, [sessionOwner, restoring]);
   const copilot = useCopilot();
   const shell = useRef<HTMLDivElement>(null);
@@ -389,13 +395,16 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   }, []);
   useEffect(() => {
     let active = true;
+    const revision = sessionRestoreRevision.current;
     void api<Session>("/api/session")
       .then((data) => {
-        if (active) restoreSession(data);
+        if (active && revision === sessionRestoreRevision.current)
+          restoreSession(data);
       })
       .catch(() => {})
       .finally(() => {
-        if (active) setRestoring(false);
+        if (active && revision === sessionRestoreRevision.current)
+          setRestoring(false);
       });
     return () => {
       active = false;
@@ -413,9 +422,19 @@ export default function Storefront({ children }: { children?: ReactNode }) {
         return;
       setModal(null);
       setSupportDraft(null);
+      // A guest started by chat supersedes the initial unauthenticated snapshot.
+      // Only the newest identity read may announce restoration or an account change.
+      const revision = ++sessionRestoreRevision.current;
       void api<Session>("/api/session")
-        .then(restoreSession)
-        .catch(() => setSession(null));
+        .then((data) => {
+          if (revision === sessionRestoreRevision.current) restoreSession(data);
+        })
+        .catch(() => {
+          if (revision === sessionRestoreRevision.current) setSession(null);
+        })
+        .finally(() => {
+          if (revision === sessionRestoreRevision.current) setRestoring(false);
+        });
     };
     window.addEventListener("dale:customer-session-ready", synchronize);
     window.addEventListener("dale:session-changed", synchronize);
@@ -2641,7 +2660,10 @@ export default function Storefront({ children }: { children?: ReactNode }) {
             <div className="footer-invitation" data-editorial-reveal>
               <span>THE NEXT GOOD THING STARTS WITH A CONVERSATION.</span>
               <p>
-                Consider it <em>found.</em>
+                <LivingType text="Consider it" />{" "}
+                <em>
+                  <LivingType text="found." />
+                </em>
               </p>
               <button
                 type="button"
