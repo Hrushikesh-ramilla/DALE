@@ -65,6 +65,8 @@ The system is a Next.js modular monolith. Gemini chooses native functions and ge
 | Commerce and operations  | PayPal sandbox · Node worker · local/S3-compatible evidence storage |
 | Verification             | Vitest · Playwright · bounded live-provider checks                  |
 
+The storefront combines Lenis wheel inertia, GSAP scroll scenes and overlapping collection cards. Foreground objects, typography and background planes move independently; outgoing cards recede behind the next collection. Lenis runs on demand while interpolation is active. Touch and reduced-motion layouts retain native scrolling and ordinary document flow. Fonts are self-hosted, and the featured product image loads eagerly.
+
 ## Evaluation
 
 **Recorded local evidence, 21 October 2026.** Counts below describe different scopes and overlap; they are not a combined test total.

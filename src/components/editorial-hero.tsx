@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { productById } from "@/domain/catalog";
 import { formatMoney } from "@/domain/money";
+import { useHeroParallax } from "@/hooks/use-scroll-scenes";
 import { useCardDepth } from "@/hooks/use-card-depth";
 import { useCopilot } from "./copilot/copilot-context";
 import { ProductViewer } from "./product-viewer";
@@ -14,7 +15,9 @@ const edit = ["B001", "B010", "B016", "B23"].map(productById);
 
 export function EditorialHero() {
   const [index, setIndex] = useState(0);
-  const ref = useCardDepth<HTMLDivElement>(3.2, 5);
+  const ref = useCardDepth<HTMLDivElement>(7, 12);
+  const scene = useRef<HTMLElement>(null);
+  useHeroParallax(scene);
   const copilot = useCopilot();
   const product = edit[index];
   const openAssistant = () => {
@@ -25,12 +28,13 @@ export function EditorialHero() {
     <section
       className={`editorial-hero ${styles.hero}`}
       aria-label="The everyday edit"
+      ref={scene}
     >
       <div className={styles.edition}>
         <span>DALE / THE CONSIDERED COLLECTION</span>
         <span>EST. FOR EVERYDAY LIFE</span>
       </div>
-      <div className={styles.copy}>
+      <div className={styles.copy} data-hero-copy>
         <span className={styles.eyebrow}>
           <span aria-hidden="true" /> YOUR PERSONAL SHOPPING AGENT
         </span>
@@ -56,7 +60,12 @@ export function EditorialHero() {
           Your preferences. Your approval. Always.
         </span>
       </div>
-      <div className={styles.display}>
+      <div className={styles.display} data-hero-display>
+        <div
+          className={styles.sceneBackdrop}
+          data-hero-backdrop
+          aria-hidden="true"
+        />
         <div className={styles.displayTitle}>
           <span>THE EVERYDAY EDIT</span>
           <span>0{index + 1} / 04</span>
