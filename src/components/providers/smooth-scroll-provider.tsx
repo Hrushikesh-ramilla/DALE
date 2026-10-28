@@ -39,6 +39,11 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
           : target;
       if (element === null) return;
       if (current.current) {
+        current.current.scrollTo(current.current.actualScroll, {
+          immediate: true,
+          force: true,
+        });
+        current.current.resize();
         current.current.scrollTo(element, {
           offset: options?.offset,
           duration: options?.duration,
@@ -66,11 +71,32 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
     let frame = 0;
     let engine: Lenis | null = null;
+    let previousPosition = -1;
+    let quietFrames = 0;
     const tick = (time: number) => {
       frame = 0;
       engine?.raf(time);
-      if (engine?.isScrolling === "smooth" && !frame)
-        frame = requestAnimationFrame(tick);
+      if (engine?.isScrolling !== "smooth") {
+        quietFrames = 0;
+        return;
+      }
+      const position = engine.actualScroll;
+      quietFrames =
+        Math.abs(position - previousPosition) < 0.1 &&
+        Math.abs(engine.velocity) < 0.02
+          ? quietFrames + 1
+          : 0;
+      previousPosition = position;
+      // A fractional destination can approach a half pixel forever. Only end
+      // inertia after twelve frames with no visible movement and near-zero
+      // velocity; targetScroll is not a destination during programmatic scroll.
+      if (quietFrames >= 12) {
+        cancelAnimationFrame(frame);
+        frame = 0;
+        engine.stop();
+        engine.start();
+        quietFrames = 0;
+      } else if (!frame) frame = requestAnimationFrame(tick);
     };
     const schedule = () => {
       if (!frame && engine) frame = requestAnimationFrame(tick);
@@ -96,7 +122,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
           smoothWheel: true,
           syncTouch: false,
           lerp: 0.085,
-          anchors: true,
+          anchors: false,
           prevent: (node) =>
             node.hasAttribute("data-lenis-prevent") ||
             /^(TEXTAREA|SELECT)$/.test(node.tagName) ||
@@ -113,9 +139,50 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       }
       setLenis(engine);
     };
+    // A browser can move focus/scroll before delivering a link click. Sync to
+    // its actual position before resolving a hash target, rather than using a
+    // stale interpolated offset. This also handles keyboard-activated anchors.
+    const anchorClick = (event: MouseEvent) => {
+      if (
+        !engine ||
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey
+      )
+        return;
+      const link =
+        event.target instanceof Element
+          ? event.target.closest<HTMLAnchorElement>("a[href^='#']")
+          : null;
+      if (
+        !link ||
+        link.hasAttribute("download") ||
+        (link.target && link.target !== "_self")
+      )
+        return;
+      let id: string;
+      try {
+        id = decodeURIComponent(link.hash.slice(1));
+      } catch {
+        return;
+      }
+      const target = id
+        ? document.getElementById(id)
+        : document.documentElement;
+      if (!target) return;
+      event.preventDefault();
+      engine.scrollTo(engine.actualScroll, { immediate: true, force: true });
+      engine.resize();
+      engine.scrollTo(target, { onStart: schedule });
+      schedule();
+    };
     const markScrolled = () =>
       document.documentElement.classList.add("user-scrolled");
     sync();
+    document.addEventListener("click", anchorClick);
     pointer.addEventListener("change", sync);
     motion.addEventListener("change", sync);
     window.addEventListener("scroll", markScrolled, {
@@ -123,6 +190,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       passive: true,
     });
     return () => {
+      document.removeEventListener("click", anchorClick);
       pointer.removeEventListener("change", sync);
       motion.removeEventListener("change", sync);
       window.removeEventListener("scroll", markScrolled);

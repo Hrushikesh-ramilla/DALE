@@ -1,0 +1,381 @@
+/* DALE editorial system: warm paper, quiet chrome and image-led chapters. */
+:root {
+  --dale-paper: #ebe7df;
+  --dale-charcoal: #23241f;
+  --dale-rule: #c9c4b8;
+}
+.app-shell {
+  background: #121310;
+}
+.app-shell h1 {
+  font-family: "Boska", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+.announcement {
+  background: var(--dale-paper);
+  color: #504f46;
+  font-size: 9px;
+  min-height: 27px;
+  letter-spacing: 0.04em;
+}
+.site-header {
+  height: 78px;
+  padding-inline: clamp(22px, 4vw, 72px);
+  background: #171814f5;
+  border-bottom: 1px solid #ffffff1f;
+}
+.site-header .brand-wordmark {
+  width: 98px;
+}
+.site-header nav button {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #babdb0;
+}
+.site-header nav button.active {
+  color: #f0eee5;
+}
+.site-header nav button.active::after {
+  height: 1px;
+}
+.app-shell .button {
+  border-radius: 2px;
+  font-size: 12px;
+}
+.site-header > .button {
+  min-height: 43px;
+  padding: 12px 20px;
+  font-size: 11px;
+  border-radius: 1px;
+}
+.site-header .brief-menu-trigger {
+  border-radius: 2px;
+}
+.app-shell .provider-ribbon {
+  font-size: 9px;
+}
+.main-content:has(.editorial-hero) {
+  max-width: none;
+}
+.hero-dale-bar {
+  margin: 0 calc(-1 * clamp(22px, 4vw, 72px));
+  padding: 125px clamp(24px, 7vw, 110px) 115px;
+  background: var(--dale-paper);
+  color: var(--dale-charcoal);
+  border: 0;
+  border-bottom: 1px solid var(--dale-rule);
+  border-radius: 0;
+  box-shadow: none;
+  overflow: clip;
+}
+.hero-dale-inner {
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  column-gap: 9%;
+}
+.hero-dale-badge {
+  grid-column: 1/-1;
+  display: block;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: #696a5e;
+  letter-spacing: 0.16em;
+  font-size: 9px;
+  padding: 0;
+  margin-bottom: 36px;
+}
+.hero-dale-inner h2 {
+  font:
+    400 clamp(42px, 5.1vw, 76px)/1.02 "Boska",
+    Georgia,
+    serif;
+  letter-spacing: -0.035em;
+  color: #292a24;
+  margin: 0;
+  grid-row: 2/4;
+}
+.hero-dale-inner h2 em {
+  font-weight: 400;
+  color: #696e5e;
+}
+.hero-dale-sub {
+  max-width: 365px;
+  margin: 2px 0 27px;
+  color: #696b5d;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.hero-dale-input-wrap {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #5f65534d;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 0 12px;
+  gap: 20px;
+  align-items: center;
+}
+.hero-dale-input-wrap:focus-within {
+  border-color: #303729;
+  box-shadow: none;
+}
+.hero-dale-input-wrap input {
+  color: #303729;
+  font-size: 12px;
+  line-height: 1.5;
+  min-width: 0;
+  padding: 10px 0;
+}
+.hero-dale-input-wrap input::placeholder {
+  color: #74796a;
+}
+.hero-dale-input-wrap .button {
+  background: #2c3327;
+  color: #f3efe5;
+  border-color: #2c3327;
+  border-radius: 0;
+  padding: 14px 17px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.hero-dale-input-wrap .button:disabled {
+  opacity: 0.45;
+}
+.site-footer-wrap {
+  background: #273e39;
+  border: 0;
+  margin-top: 0;
+  color: #e9e6da;
+  overflow: clip;
+}
+.site-footer-inner {
+  max-width: 1800px;
+  padding: 0 clamp(24px, 5vw, 88px);
+}
+.footer-invitation {
+  position: relative;
+  padding: 110px 0 70px;
+  border-bottom: 1px solid #b7c3ac36;
+}
+.footer-invitation > span {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: #acb6a0;
+}
+.footer-invitation p {
+  font:
+    400 clamp(60px, 9.5vw, 150px)/0.97 "Boska",
+    Georgia,
+    serif;
+  letter-spacing: -0.045em;
+  margin: 32px 0 34px;
+}
+.footer-invitation p em {
+  font-weight: 400;
+  color: #b7c0a6;
+}
+.footer-invitation button {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  border: 0;
+  border-bottom: 1px solid #aab69e8a;
+  background: none;
+  color: #ede9dc;
+  padding: 12px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.site-footer {
+  padding: 50px 0 25px;
+  gap: 10%;
+  grid-template-columns: 1.6fr 1fr 1fr;
+}
+.footer-brand .brand {
+  display: none;
+}
+.footer-brand p {
+  max-width: 260px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #b0bba7;
+  margin: 0;
+}
+.footer-links {
+  gap: 11px;
+}
+.footer-links strong {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: #a6b298;
+  margin-bottom: 12px;
+}
+.footer-links button {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e8e6d8;
+}
+.footer-signature {
+  padding: 35px 0 10px;
+  overflow: clip;
+  line-height: 0;
+}
+.footer-signature .brand-wordmark {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: #e5e1d0;
+}
+.footer-bottom {
+  border-top: 1px solid #d4dbc428;
+  padding: 18px 0 28px;
+  color: #aeb9a3;
+  font-size: 9px;
+  line-height: 1.7;
+}
+.app-shell .product-card {
+  border-radius: 3px;
+}
+.app-shell .product-card .card-visual {
+  border-radius: 2px;
+}
+.app-shell .department-hero h1 {
+  font-family: "Boska", Georgia, serif;
+  font-weight: 400;
+}
+@media (max-width: 760px) {
+  .announcement {
+    font-size: 8px;
+    padding: 7px 16px;
+    min-height: 0;
+  }
+  .announcement span:last-child {
+    display: none;
+  }
+  .site-header {
+    display: grid;
+    height: auto;
+    padding: 12px 20px 0;
+    gap: 8px;
+    grid-template-columns: 1fr;
+  }
+  .site-header .header-actions {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    min-width: 0;
+    order: 0;
+  }
+  .site-header .header-actions > .button {
+    min-height: 40px;
+    padding: 10px 13px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  .site-header .brief-menu-trigger {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  .site-header .trigger-badge {
+    display: none;
+  }
+  .site-header .brand-wordmark {
+    width: 81px;
+  }
+  .site-header nav {
+    order: 1;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 0;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .site-header nav button {
+    font-size: 10px;
+    padding: 10px 0 12px;
+  }
+  .site-header > .button {
+    min-height: 36px;
+    padding: 10px 13px;
+    font-size: 10px;
+  }
+  .site-header .brief-menu-trigger {
+    padding: 7px 9px;
+    min-height: 36px;
+  }
+  .hero-dale-bar {
+    padding: 70px 24px;
+  }
+  .hero-dale-inner {
+    display: block;
+  }
+  .hero-dale-badge {
+    font-size: 8px;
+    margin-bottom: 25px;
+  }
+  .hero-dale-inner h2 {
+    font-size: 44px;
+    line-height: 1.02;
+  }
+  .hero-dale-sub {
+    font-size: 12px;
+    margin: 26px 0;
+    max-width: 320px;
+  }
+  .hero-dale-input-wrap {
+    gap: 12px;
+  }
+  .hero-dale-input-wrap input {
+    font-size: 11px;
+  }
+  .hero-dale-input-wrap .button {
+    padding: 13px 12px;
+  }
+  .footer-invitation {
+    padding: 70px 0 45px;
+  }
+  .footer-invitation > span {
+    font-size: 7px;
+    letter-spacing: 0.1em;
+  }
+  .footer-invitation p {
+    font-size: 66px;
+    margin: 25px 0;
+  }
+  .footer-invitation button {
+    font-size: 11px;
+  }
+  .site-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 35px;
+  }
+  .footer-brand {
+    grid-column: 1/-1;
+  }
+  .footer-brand p {
+    max-width: 280px;
+    font-size: 11px;
+  }
+  .footer-links button {
+    font-size: 11px;
+  }
+  .footer-signature {
+    padding-top: 35px;
+  }
+  .footer-bottom {
+    font-size: 8px;
+    gap: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-editorial-reveal] {
+    animation: none;
+  }
+}

@@ -61,7 +61,6 @@ export function useCollectionStack(
               "--stack-scale",
               String(1 - cover * 0.085),
             );
-            surface.style.setProperty("--stack-rotate", `${-6 * cover}deg`);
             surface.style.setProperty("--stack-recede", `${-20 * cover}px`);
             // Only the outgoing/incoming pair needs a promotion hint.
             surface.style.willChange =
@@ -92,7 +91,6 @@ export function useCollectionStack(
           surfaces.forEach((surface) => {
             for (const property of [
               "--stack-scale",
-              "--stack-rotate",
               "--stack-recede",
               "will-change",
             ])
@@ -130,14 +128,14 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         );
         timeline.fromTo(
           root.querySelector("[data-hero-display]"),
-          { y: 0, rotation: -1.2 },
-          { y: 125, rotation: 2.5, ease: "none" },
+          { y: 0, rotation: 0 },
+          { y: 125, rotation: 1.2, ease: "none" },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-backdrop]"),
-          { y: 0, rotation: 0 },
-          { y: -90, rotation: -12, ease: "none" },
+          { y: 0, scale: 1.04 },
+          { y: -90, scale: 1.12, ease: "none" },
           0,
         );
         return () => {

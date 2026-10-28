@@ -55,6 +55,49 @@ test("editorial controls use the real assistant and exact featured listing", asy
   await expect(listing).toHaveAttribute("href", original!);
 });
 
+test("editorial shopping form sends once through the current assistant", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page
+    .getByLabel("Your shopping request")
+    .fill("Browser slow streamed reply");
+  await page.getByRole("button", { name: "Ask DALE", exact: true }).click();
+  await expect(
+    page.getByRole("complementary", { name: "DALE assistant" }),
+  ).toBeVisible();
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Genuine first streamed words; the complete reply is now saved.",
+  );
+  const saved = await (await page.request.get("/api/copilot/state")).json();
+  expect(
+    saved.messages.filter(
+      (message: { text: string }) =>
+        message.text === "Browser slow streamed reply",
+    ),
+  ).toHaveLength(1);
+  await expect(page.getByLabel("Your shopping request")).toHaveValue("");
+});
+
+test("footer invitation opens the assistant without submitting a task", async ({
+  page,
+}) => {
+  await page.goto("/");
+  let sent = 0;
+  page.on("request", (request) => {
+    if (
+      request.url().includes("/api/copilot/chat") &&
+      request.method() === "POST"
+    )
+      sent++;
+  });
+  await page.getByRole("button", { name: "Meet your shopping agent" }).click();
+  await expect(
+    page.getByRole("complementary", { name: "DALE assistant" }),
+  ).toBeVisible();
+  expect(sent).toBe(0);
+});
+
 test("depth follows the pointer, settles, and releases temporary promotion", async ({
   page,
 }) => {
@@ -114,7 +157,27 @@ test("Lenis interpolates wheel input and preserves keyboard navigation", async (
   );
   const before = await page.evaluate(() => scrollY);
   await page.mouse.move(2, 2);
+  const wheelSamples = page.evaluate(
+    () =>
+      new Promise<number[]>((resolve) => {
+        window.addEventListener(
+          "wheel",
+          () => {
+            const values: number[] = [];
+            const sample = () => {
+              values.push(scrollY);
+              if (values.length === 24) resolve(values);
+              else requestAnimationFrame(sample);
+            };
+            requestAnimationFrame(sample);
+          },
+          { once: true, passive: true },
+        );
+      }),
+  );
   await page.mouse.wheel(0, 500);
+  const positions = await wheelSamples;
+  expect(new Set(positions.map(Math.round)).size).toBeGreaterThan(4);
   await expect
     .poll(() => page.evaluate(() => scrollY))
     .toBeGreaterThan(before + 100);
@@ -232,4 +295,36 @@ test("hero foreground and background travel at different scroll speeds", async (
         .evaluate((e) => new DOMMatrix(getComputedStyle(e).transform).m42),
     )
     .toBeGreaterThan(20);
+});
+
+test("collection anchor starts Lenis and reaches the real collection", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute(
+    "data-scroll-engine",
+    "lenis",
+  );
+  await page
+    .getByRole("link", { name: "Explore the collection", exact: true })
+    .click();
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(700);
+  const section = page.locator("#collections");
+  await expect
+    .poll(() =>
+      section.evaluate((e) => {
+        const margin = parseFloat(getComputedStyle(e).scrollMarginTop) || 0;
+        const padding =
+          parseFloat(
+            getComputedStyle(document.documentElement).scrollPaddingTop,
+          ) || 0;
+        return Math.abs(e.getBoundingClientRect().top - margin - padding);
+      }),
+    )
+    .toBeLessThan(2);
+  await expect(page.locator("html")).not.toHaveClass(/lenis-smooth/);
+  const heading = await page.locator("#collection-title").boundingBox();
+  expect(heading).not.toBeNull();
+  expect(heading!.y).toBeGreaterThan(60);
+  expect(heading!.y + heading!.height).toBeLessThan(720);
 });
