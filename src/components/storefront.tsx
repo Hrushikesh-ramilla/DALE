@@ -72,6 +72,7 @@ import type { ScenarioKind } from "@/server/scenarios";
 import { GroupPolicySettings } from "./group-policy-settings";
 import { ProviderReconciliation } from "./provider-reconciliation";
 import { useCopilot } from "./copilot/copilot-context";
+import { useEditorialPageParallax } from "@/hooks/use-scroll-scenes";
 import { useEditorialReveals } from "@/hooks/use-editorial-reveals";
 import { LivingType } from "./living-type";
 import { ShoppingBriefMenu } from "./shopping-brief-menu";
@@ -221,6 +222,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
   const copilot = useCopilot();
   const shell = useRef<HTMLDivElement>(null);
   useEditorialReveals(shell, pathname);
+  useEditorialPageParallax(shell, pathname);
   const [products, setProducts] = useState<Product[]>(publicCatalog);
   const [model, setModel] = useState("Atlas 14"),
     [category, setCategory] = useState(""),
@@ -957,42 +959,53 @@ export default function Storefront({ children }: { children?: ReactNode }) {
             (pathname === "/" ? (
               <>
                 <EditorialHero />
-                <div className="hero-dale-bar" id="hero-dale">
-                  <div className="hero-dale-inner" data-editorial-reveal>
-                    <div className="hero-dale-badge">
-                      <span>01 / YOUR PERSONAL SHOPPING AGENT</span>
-                    </div>
-                    <h2>
-                      A little less searching.
-                      <br />
-                      <em>A lot more possibility.</em>
-                    </h2>
-                    <p className="hero-dale-sub">
-                      The right fragrance. Your next everyday essential. Tell
-                      DALE what you have in mind, and take it from there.
-                    </p>
-                    <form
-                      className="hero-dale-input-wrap"
-                      onSubmit={(event) => {
-                        event.preventDefault();
-                        handleHeroSubmit();
-                      }}
-                    >
-                      <input
-                        type="text"
-                        placeholder="Ask DALE: a linen shirt in size M under $60, or a citrus fragrance in 50 ml..."
-                        value={heroPrompt}
-                        onChange={(e) => setHeroPrompt(e.target.value)}
-                        aria-label="Your shopping request"
-                      />
-                      <button
-                        type="submit"
-                        className="button primary small"
-                        disabled={!heroPrompt.trim() || copilot.isThinking}
+                <div
+                  className="agent-scroll-track"
+                  data-editorial-scroll-track="agent"
+                >
+                  <div className="hero-dale-bar" id="hero-dale">
+                    <div className="hero-dale-inner" data-editorial-reveal>
+                      <div className="hero-dale-badge">
+                        <span>01 / YOUR PERSONAL SHOPPING AGENT</span>
+                      </div>
+                      <h2 data-agent-parallax-title>
+                        A little less searching.
+                        <br />
+                        <em>A lot more possibility.</em>
+                      </h2>
+                      <div
+                        className="hero-dale-response"
+                        data-agent-parallax-response
                       >
-                        <span>Ask DALE</span> <ArrowRight size={15} />
-                      </button>
-                    </form>
+                        <p className="hero-dale-sub">
+                          The right fragrance. Your next everyday essential.
+                          Tell DALE what you have in mind, and take it from
+                          there.
+                        </p>
+                        <form
+                          className="hero-dale-input-wrap"
+                          onSubmit={(event) => {
+                            event.preventDefault();
+                            handleHeroSubmit();
+                          }}
+                        >
+                          <input
+                            type="text"
+                            placeholder="Ask DALE: a linen shirt in size M under $60, or a citrus fragrance in 50 ml..."
+                            value={heroPrompt}
+                            onChange={(e) => setHeroPrompt(e.target.value)}
+                            aria-label="Your shopping request"
+                          />
+                          <button
+                            type="submit"
+                            className="button primary small"
+                            disabled={!heroPrompt.trim() || copilot.isThinking}
+                          >
+                            <span>Ask DALE</span> <ArrowRight size={15} />
+                          </button>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <DepartmentExhibit
@@ -2657,23 +2670,28 @@ export default function Storefront({ children }: { children?: ReactNode }) {
         </main>
         <footer className="site-footer-wrap" inert={!!modal}>
           <div className="site-footer-inner">
-            <div className="footer-invitation" data-editorial-reveal>
-              <span>THE NEXT GOOD THING STARTS WITH A CONVERSATION.</span>
-              <p>
-                <LivingType text="Consider it" />{" "}
-                <em>
-                  <LivingType text="found." />
-                </em>
-              </p>
-              <button
-                type="button"
-                onClick={() => {
-                  copilot.toggleOpen(true);
-                  void copilot.refresh();
-                }}
-              >
-                Meet your shopping agent <ArrowRight size={20} />
-              </button>
+            <div
+              className="footer-scroll-track"
+              data-editorial-scroll-track="footer"
+            >
+              <div className="footer-invitation" data-editorial-reveal>
+                <span>THE NEXT GOOD THING STARTS WITH A CONVERSATION.</span>
+                <p>
+                  <LivingType text="Consider it" />{" "}
+                  <em>
+                    <LivingType text="found." />
+                  </em>
+                </p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    copilot.toggleOpen(true);
+                    void copilot.refresh();
+                  }}
+                >
+                  Meet your shopping agent <ArrowRight size={20} />
+                </button>
+              </div>
             </div>
             <div className="site-footer">
               <div className="footer-brand">
