@@ -757,7 +757,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           </a>
           <nav aria-label="Main navigation">
             {(["discover", "groups", "orders", "support"] as Tab[]).map(
-              (item) => (
+              (item, index) => (
                 <button
                   key={item}
                   data-agent-control={`Open ${item}`}
@@ -766,14 +766,31 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                   onClick={() => setTab(item)}
                   disabled={restoring}
                 >
-                  {
-                    {
-                      discover: "Discover",
-                      groups: "Group deals",
-                      orders: isBuyer ? "My orders" : "Orders",
-                      support: "Support",
-                    }[item]
-                  }
+                  <span className="nav-index" aria-hidden="true">
+                    0{index + 1}
+                  </span>
+                  <span className="nav-label">
+                    <span>
+                      {
+                        {
+                          discover: "Discover",
+                          groups: "Group deals",
+                          orders: isBuyer ? "My orders" : "Orders",
+                          support: "Support",
+                        }[item]
+                      }
+                    </span>
+                    <span aria-hidden="true">
+                      {
+                        {
+                          discover: "Discover",
+                          groups: "Group deals",
+                          orders: isBuyer ? "My orders" : "Orders",
+                          support: "Support",
+                        }[item]
+                      }
+                    </span>
+                  </span>
                   {tab === item && (
                     <motion.span
                       className="nav-indicator"

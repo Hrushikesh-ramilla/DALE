@@ -4,11 +4,25 @@
   min-height: 820px;
   min-height: max(780px, calc(100svh - 132px));
   overflow: clip;
-  padding: 0 clamp(24px, 5.2vw, 100px);
-  background: #e8e3d9;
+  padding: 0;
+  background: #d9d9ce;
   color: var(--scene-ink);
   text-align: left;
   isolation: isolate;
+}
+/* The frame contracts independently of the copy, glass and product planes. */
+.portal {
+  position: relative;
+  min-height: inherit;
+  height: 100%;
+  padding: 0 clamp(24px, 5.2vw, 100px);
+  overflow: clip;
+  isolation: isolate;
+  background: #e8e3d9;
+  transform-origin: center;
+  box-shadow:
+    0 2px 0 #fff9,
+    0 12px 30px #353b2b24;
 }
 .sceneBackdrop {
   position: absolute;
@@ -20,7 +34,7 @@
   object-fit: cover;
   object-position: center;
 }
-.hero::before {
+.portal::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -172,6 +186,17 @@
   inset: 45px 14% 55px;
   border-top: 1px solid #ffffff65;
   pointer-events: none;
+}
+.forwardObject {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  min-height: 0;
+  z-index: 2;
+  transform-origin: 50% 60%;
+}
+.forwardObject .object {
+  height: 100%;
 }
 .object {
   min-height: 0;
@@ -387,6 +412,10 @@
 @media (max-width: 760px) {
   .hero.hero {
     min-height: 0;
+    padding: 0;
+  }
+  .portal {
+    height: auto;
     padding: 0 22px 35px;
   }
   .edition {
@@ -446,6 +475,9 @@
   .stage {
     height: 340px;
   }
+  .forwardObject {
+    height: 100%;
+  }
   .object {
     height: 100%;
   }
@@ -487,7 +519,7 @@
   .ambientImage {
     object-position: 58% center;
   }
-  .hero::before {
+  .portal::before {
     background: linear-gradient(#eee9e0a6 40%, #eee9e044);
   }
 }
@@ -600,8 +632,8 @@
 @keyframes slab-arrive {
   from {
     opacity: 0.25;
-    transform: perspective(1100px) translate3d(45px, 65px, -180px)
-      rotateX(12deg) rotateY(-14deg) scale(0.9);
+    transform: perspective(1100px) translate3d(45px, 65px, -180px) rotateX(5deg)
+      rotateY(-5deg) scale(0.96);
   }
   to {
     opacity: 1;
@@ -670,13 +702,14 @@
     min-height: 0;
   }
   .copy {
-    padding: clamp(56px, 8svh, 98px) 0 45px;
+    padding: clamp(70px, 12svh, 130px) 0 45px;
   }
   .hero .copy h2 {
     font-size: clamp(104px, min(14vw, 20svh), 220px);
     margin: 30px 0 20px;
   }
   .display {
+    transform-origin: 50% 45%;
     top: 8%;
   }
   .stage {
@@ -725,4 +758,12 @@
   .progressRail {
     display: none;
   }
+}
+
+/* Cache only the active scene's changing scales; release it outside the hold. */
+.hero[data-scroll-active] .portal,
+.hero[data-scroll-active] .forwardObject,
+.hero[data-scroll-active] .display,
+.hero[data-scroll-active] .sceneBackdrop {
+  will-change: transform;
 }

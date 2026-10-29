@@ -382,14 +382,14 @@ test("hero foreground and background travel at different scroll speeds", async (
         .locator("[data-hero-copy]")
         .evaluate((e) => new DOMMatrix(getComputedStyle(e).transform).m42),
     )
-    .toBeLessThan(-20);
+    .toBeGreaterThan(20);
   await expect
     .poll(() =>
       page
         .locator("[data-hero-display]")
         .evaluate((e) => new DOMMatrix(getComputedStyle(e).transform).m42),
     )
-    .toBeGreaterThan(20);
+    .toBeLessThan(-3);
 });
 
 test("collection anchor starts Lenis and reaches the real collection", async ({
@@ -522,7 +522,7 @@ test("opening parallax responds to the first short scroll", async ({
     .poll(() =>
       copy.evaluate((el) => new DOMMatrix(getComputedStyle(el).transform).m42),
     )
-    .toBeLessThan(before - 4);
+    .toBeGreaterThan(before + 4);
 });
 
 test("hero holds its layered scene through a viewport of scrolling", async ({
@@ -530,6 +530,17 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await page.evaluate(() => document.fonts.ready);
+  await expect(
+    page.locator("[data-collection-slot]").first().locator(".."),
+  ).toHaveAttribute("data-stack-ready", "true");
+  await page.locator("[data-hero-entrance]").evaluate(async (element) => {
+    await Promise.all(
+      element
+        .getAnimations({ subtree: true })
+        .map((animation) => animation.finished.catch(() => undefined)),
+    );
+  });
   await expect(page.locator("[data-hero-track]")).toHaveAttribute(
     "data-hero-held",
     "true",
@@ -541,8 +552,8 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
     )
     .toBe(78);
   const before = await page
-    .locator("[data-hero-display]")
-    .evaluate((e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42);
+    .locator("[data-hero-forward]")
+    .evaluate((e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a);
   await page.evaluate(() => window.scrollTo({ top: 950, behavior: "instant" }));
   await expect
     .poll(async () =>
@@ -552,12 +563,22 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
   await expect
     .poll(() =>
       page
-        .locator("[data-hero-display]")
+        .locator("[data-hero-forward]")
         .evaluate(
-          (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42,
+          (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
         ),
     )
-    .toBeGreaterThan(before + 20);
+    .toBeGreaterThan(before + 0.04);
+  for (const selector of ["[data-hero-copy]", "[data-hero-display]"]) {
+    const shape = await page.locator(selector).evaluate((e) => {
+      const m = new DOMMatrixReadOnly(getComputedStyle(e).transform);
+      return { a: m.a, b: m.b, c: m.c, d: m.d };
+    });
+    expect(shape.b).toBe(0);
+    expect(shape.c).toBe(0);
+    expect(shape.a).toBeCloseTo(shape.d, 5);
+    expect(shape.a).toBeGreaterThanOrEqual(1);
+  }
   const caption = await page
     .locator("[data-hero-depth]")
     .locator("..")
@@ -566,6 +587,42 @@ test("hero holds its layered scene through a viewport of scrolling", async ({
     .boundingBox();
   expect(caption!.y).toBeGreaterThan(78);
   expect(caption!.y + caption!.height).toBeLessThan(1000);
+  const action = await page
+    .getByRole("button", { name: "Start a conversation", exact: true })
+    .boundingBox();
+  expect(action!.y).toBeGreaterThan(78);
+  expect(action!.y + action!.height).toBeLessThan(1000);
+  const separation = await page.evaluate(() => {
+    const copy = new DOMMatrixReadOnly(
+      getComputedStyle(document.querySelector("[data-hero-copy]")!).transform,
+    );
+    const glass = new DOMMatrixReadOnly(
+      getComputedStyle(document.querySelector("[data-hero-display]")!)
+        .transform,
+    );
+    const object = new DOMMatrixReadOnly(
+      getComputedStyle(document.querySelector("[data-hero-forward]")!)
+        .transform,
+    );
+    return {
+      copyY: copy.m42,
+      glassY: glass.m42,
+      glassScale: glass.a,
+      objectScale: object.a,
+    };
+  });
+  expect(separation.copyY - separation.glassY).toBeGreaterThan(60);
+  expect(separation.objectScale).toBeGreaterThan(separation.glassScale + 0.06);
+  await page.getByRole("button", { name: "Next featured product" }).click();
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-hero-forward]")
+        .evaluate(
+          (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
+        ),
+    )
+    .toBeGreaterThan(1.1);
 });
 
 test("agent and closing invitation hold with opposing layers and collapse for reduced motion", async ({
@@ -573,6 +630,17 @@ test("agent and closing invitation hold with opposing layers and collapse for re
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await page.evaluate(() => document.fonts.ready);
+  await expect(
+    page.locator("[data-collection-slot]").first().locator(".."),
+  ).toHaveAttribute("data-stack-ready", "true");
+  await page.locator("[data-hero-entrance]").evaluate(async (element) => {
+    await Promise.all(
+      element
+        .getAnimations({ subtree: true })
+        .map((animation) => animation.finished.catch(() => undefined)),
+    );
+  });
   for (const [kind, surface, foreground] of [
     ["agent", ".hero-dale-bar", "[data-agent-parallax-title]"],
     ["footer", ".footer-invitation", ".footer-invitation p"],
@@ -591,6 +659,16 @@ test("agent and closing invitation hold with opposing layers and collapse for re
         Math.round((await page.locator(surface).boundingBox())!.y),
       )
       .toBe(78);
+    // Native scrolling updates geometry before ScrollTrigger's next frame.
+    await expect
+      .poll(() =>
+        page
+          .locator(foreground)
+          .evaluate(
+            (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).m42,
+          ),
+      )
+      .toBeGreaterThan(-25);
     const before = await page
       .locator(foreground)
       .evaluate(
@@ -633,4 +711,160 @@ test("agent and closing invitation hold with opposing layers and collapse for re
       .locator("[data-agent-parallax-title]")
       .evaluate((e) => getComputedStyle(e).transform),
   ).toBe("none");
+});
+
+test("indexed navigation keeps its names, keyboard access and mobile brief control", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  const nav = page.getByRole("navigation", { name: "Main navigation" });
+  const support = nav.getByRole("button", { name: "Support", exact: true });
+  await expect(support).toBeEnabled();
+  await support.focus();
+  await page.keyboard.press("Enter");
+  await expect(support).toHaveAttribute("aria-current", "page");
+  const brief = page.getByRole("button", {
+    name: "Filter products and adjust shopping brief",
+  });
+  await brief.click();
+  await expect(brief).toHaveAttribute("aria-expanded", "true");
+  await page.keyboard.press("Escape");
+  await expect(brief).toHaveAttribute("aria-expanded", "false");
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth > innerWidth,
+    ),
+  ).toBe(false);
+  for (const button of await nav.getByRole("button").all()) {
+    const box = await button.boundingBox();
+    expect(box!.x).toBeGreaterThanOrEqual(0);
+    expect(box!.x + box!.width).toBeLessThanOrEqual(390);
+  }
+});
+
+test("late catalog category changes cannot remove the hero scroll scene", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/api/catalog/summary", async (route) => {
+    const response = await route.fetch();
+    const summary = await response.json();
+    await gate;
+    const category = Object.keys(summary.counts).find(
+      (key) => summary.counts[key] > 0,
+    )!;
+    await route.fulfill({
+      json: { ...summary, counts: { [category]: summary.counts[category] } },
+    });
+  });
+  try {
+    await page.goto("/");
+    const hero = page.locator("[data-hero-track]");
+    await expect(hero).toHaveAttribute("data-hero-held", "true");
+    expect(
+      await page.locator("[data-collection-slot]").count(),
+    ).toBeGreaterThan(1);
+    release();
+    await expect(page.locator("[data-collection-slot]")).toHaveCount(1);
+    await expect(hero).toHaveAttribute("data-hero-held", "true");
+    await page.evaluate(() =>
+      window.scrollTo({ top: 600, behavior: "instant" }),
+    );
+    await expect
+      .poll(() =>
+        page
+          .locator("[data-hero-forward]")
+          .evaluate(
+            (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
+          ),
+      )
+      .toBeGreaterThan(1.1);
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await expect(hero).not.toHaveAttribute("data-hero-held", "true");
+    expect(
+      await page
+        .locator("[data-hero-forward]")
+        .evaluate((e) => getComputedStyle(e).willChange),
+    ).toBe("auto");
+  } finally {
+    release();
+  }
+});
+
+test("hero contracts evenly on four sides while its product advances, and resets for reduced motion", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  const track = page.locator("[data-hero-track]");
+  await expect(track).toHaveAttribute("data-hero-held", "true");
+  await page.evaluate(() => document.fonts.ready);
+  const portal = page.locator("[data-hero-portal]");
+  const start = await track.evaluate(
+    (e) => e.getBoundingClientRect().top + scrollY - 78,
+  );
+  await page.evaluate(
+    (y) => scrollTo({ top: y + 900, behavior: "instant" }),
+    start,
+  );
+  await expect
+    .poll(() =>
+      portal.evaluate(
+        (e) => new DOMMatrixReadOnly(getComputedStyle(e).transform).a,
+      ),
+    )
+    .toBeLessThan(0.9);
+  const geometry = await portal.evaluate((e) => {
+    const frame = e.getBoundingClientRect();
+    const root = e.parentElement!.getBoundingClientRect();
+    const object = new DOMMatrixReadOnly(
+      getComputedStyle(document.querySelector("[data-hero-forward]")!)
+        .transform,
+    );
+    return {
+      left: frame.left - root.left,
+      right: root.right - frame.right,
+      top: frame.top - root.top,
+      bottom: root.bottom - frame.bottom,
+      productScale: object.a,
+    };
+  });
+  expect(geometry.left).toBeGreaterThan(70);
+  expect(geometry.top).toBeGreaterThan(40);
+  expect(Math.abs(geometry.left - geometry.right)).toBeLessThan(1);
+  expect(Math.abs(geometry.top - geometry.bottom)).toBeLessThan(1);
+  expect(geometry.productScale).toBeGreaterThan(1.1);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(track).not.toHaveAttribute("data-hero-held", "true");
+  expect(await portal.evaluate((e) => getComputedStyle(e).transform)).toBe(
+    "none",
+  );
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth > innerWidth,
+    ),
+  ).toBe(false);
+});
+
+test("collection slabs retain visible cut-glass thickness without intercepting their links", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const card = page.locator("[data-department-card]").first();
+  const edge = card.locator("[data-glass-edge]");
+  await expect(edge).toHaveAttribute("aria-hidden", "true");
+  const shape = await edge.evaluate((e) => ({
+    height: e.getBoundingClientRect().height,
+    pointer: getComputedStyle(e).pointerEvents,
+  }));
+  expect(shape.height).toBeGreaterThanOrEqual(24);
+  expect(shape.pointer).toBe("none");
+  await card.click();
+  await expect(page).toHaveURL(/\/department\/electronics$/);
 });

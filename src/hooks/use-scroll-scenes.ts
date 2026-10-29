@@ -3,6 +3,24 @@ import { useEffect, type RefObject } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+/** Each scene owns its cleanup. Native queries avoid nesting unrelated GSAP
+ * contexts when a deferred catalog update rebuilds the collection stack. */
+function observeMotionQuery(query: string, setup: () => () => void) {
+  const preference = window.matchMedia(query);
+  let cleanup: (() => void) | undefined;
+  const sync = () => {
+    cleanup?.();
+    cleanup = undefined;
+    if (preference.matches) cleanup = setup();
+  };
+  sync();
+  preference.addEventListener("change", sync);
+  return () => {
+    preference.removeEventListener("change", sync);
+    cleanup?.();
+  };
+}
+
 /** CSS owns the sticky stack. GSAP updates only transform variables on its
  * eight surfaces; layout is measured on refresh, never on every scroll frame. */
 export function useCollectionStack(
@@ -13,8 +31,7 @@ export function useCollectionStack(
     const list = ref.current;
     if (!list) return;
     gsap.registerPlugin(ScrollTrigger);
-    const media = gsap.matchMedia();
-    media.add(
+    const stop = observeMotionQuery(
       "(min-width: 1000px) and (min-height: 700px) and (prefers-reduced-motion: no-preference)",
       () => {
         const slots = Array.from(
@@ -99,7 +116,7 @@ export function useCollectionStack(
         };
       },
     );
-    return () => media.revert();
+    return stop;
   }, [ref, count]);
 }
 
@@ -107,8 +124,7 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
   useEffect(() => {
     if (!ref.current) return;
     gsap.registerPlugin(ScrollTrigger);
-    const media = gsap.matchMedia();
-    media.add(
+    const stop = observeMotionQuery(
       "(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)",
       () => {
         const root = ref.current!;
@@ -120,8 +136,16 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
             start: "top 180px",
             end: "bottom bottom",
             scrub: true,
+            onToggle: (self) =>
+              root.toggleAttribute("data-scroll-active", self.isActive),
           },
         });
+        timeline.fromTo(
+          root.querySelector("[data-hero-portal]"),
+          { scale: 1, borderRadius: 0 },
+          { scale: 0.86, borderRadius: 20, ease: "none" },
+          0,
+        );
         timeline.to(
           root.querySelector("[data-hero-edition]"),
           { opacity: 0, duration: 0.18, ease: "none" },
@@ -130,25 +154,32 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
         timeline.fromTo(
           root.querySelector("[data-hero-copy]"),
           { y: 0, x: 0 },
-          { y: -75, x: -28, ease: "none" },
+          { y: () => Math.min(100, innerHeight * 0.085), x: 0, ease: "none" },
           0,
         );
         timeline.fromTo(
           root.querySelector("[data-hero-display]"),
-          { y: 0, x: 0, rotation: 0, scale: 0.97 },
+          { y: 0, x: 0, scale: 1 },
           {
-            y: () => Math.min(65, innerHeight * 0.055),
-            x: 24,
-            rotation: 2,
-            scale: 1.04,
+            y: -12,
+            x: 0,
+            scale: 1.055,
             ease: "none",
           },
           0,
         );
+        // The object advances farther than its glass surround. Separate nodes
+        // keep this forward push independent of pointer tilt and slide entry.
+        timeline.fromTo(
+          root.querySelector("[data-hero-forward]"),
+          { y: 0, scale: 1 },
+          { y: -18, scale: 1.16, ease: "power1.out" },
+          0,
+        );
         timeline.fromTo(
           root.querySelector("[data-hero-backdrop]"),
-          { y: 0, x: 0, scale: 1.04 },
-          { y: -120, x: -30, scale: 1.22, ease: "none" },
+          { y: 0, x: 0, scale: 1.12 },
+          { y: -90, x: 0, scale: 1.15, ease: "none" },
           0,
         );
         timeline.fromTo(
@@ -157,14 +188,19 @@ export function useHeroParallax(ref: RefObject<HTMLElement | null>) {
           { scaleX: 1, ease: "none" },
           0,
         );
+        root.toggleAttribute(
+          "data-scroll-active",
+          !!timeline.scrollTrigger?.isActive,
+        );
         return () => {
           timeline.scrollTrigger?.kill();
           timeline.revert();
+          root.removeAttribute("data-scroll-active");
           delete track.dataset.heroHeld;
         };
       },
     );
-    return () => media.revert();
+    return stop;
   }, [ref]);
 }
 
@@ -177,8 +213,7 @@ export function useEditorialPageParallax(
     const root = ref.current;
     if (!root) return;
     gsap.registerPlugin(ScrollTrigger);
-    const media = gsap.matchMedia();
-    media.add(
+    const stop = observeMotionQuery(
       "(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)",
       () => {
         const tracks = Array.from(
@@ -199,7 +234,7 @@ export function useEditorialPageParallax(
           timeline.fromTo(
             surface.querySelector(agent ? "[data-agent-parallax-title]" : "p"),
             { x: 0, y: 0 },
-            { x: agent ? -25 : 25, y: -65, ease: "none" },
+            { x: 0, y: -65, ease: "none" },
             0,
           );
           timeline.fromTo(
@@ -207,7 +242,13 @@ export function useEditorialPageParallax(
               agent ? "[data-agent-parallax-response]" : "button",
             ),
             { x: 0, y: 0 },
-            { x: agent ? 15 : 0, y: agent ? 65 : 40, ease: "none" },
+            { x: 0, y: agent ? 65 : 40, ease: "none" },
+            0,
+          );
+          timeline.fromTo(
+            surface.querySelector(agent ? ".hero-dale-badge" : ":scope > span"),
+            { y: 0 },
+            { y: -65, ease: "none" },
             0,
           );
           track.dataset.parallaxReady = "true";
@@ -231,7 +272,24 @@ export function useEditorialPageParallax(
                 { y: 0, scale: 1, ease: "none" },
               ),
           );
+        // Fonts and deferred collection content can move the footer after the
+        // first measurement. Refresh on layout changes, never on scroll frames.
+        let refreshFrame = 0;
+        let disposed = false;
+        const refresh = () => {
+          if (disposed || refreshFrame) return;
+          refreshFrame = requestAnimationFrame(() => {
+            refreshFrame = 0;
+            ScrollTrigger.refresh();
+          });
+        };
+        const observer = new ResizeObserver(refresh);
+        observer.observe(root);
+        void document.fonts.ready.then(refresh);
         return () => {
+          disposed = true;
+          observer.disconnect();
+          cancelAnimationFrame(refreshFrame);
           timelines.forEach((timeline) => {
             timeline.scrollTrigger?.kill();
             timeline.revert();
@@ -240,6 +298,6 @@ export function useEditorialPageParallax(
         };
       },
     );
-    return () => media.revert();
+    return stop;
   }, [ref, route]);
 }
