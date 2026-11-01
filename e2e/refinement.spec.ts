@@ -790,6 +790,8 @@ test("indexed navigation keeps its names, keyboard access and mobile brief contr
     "data-home-ready",
     "true",
   );
+  const header = await page.locator(".site-header").boundingBox();
+  expect(header!.height).toBe(78);
   await page.getByText("Menu", { exact: true }).click();
   const nav = page.getByRole("navigation", { name: "Main navigation" });
   const support = nav.getByRole("button", { name: "Support", exact: true });
@@ -1059,4 +1061,119 @@ test("filter stays above navigation and leaving the window cannot crash it", asy
     }),
   ).toBe(true);
   await close.click();
+});
+
+test("opening releases a stalled asset and the skip control is keyboard reachable", async ({
+  page,
+}) => {
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/breguet-experimentale-1.webp", async (route) => {
+    await gate;
+    await route.abort().catch(() => undefined);
+  });
+  try {
+    await page.goto("/", { waitUntil: "domcontentloaded" });
+    await expect(page.locator(".cinematic-intro-root")).not.toHaveAttribute(
+      "data-step",
+      "0",
+    );
+    await page.keyboard.press("Tab");
+    await expect(
+      page.getByRole("button", { name: "Skip intro" }),
+    ).toBeFocused();
+    await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+      "data-home-ready",
+      "true",
+      { timeout: 12000 },
+    );
+    expect(
+      await page.evaluate(
+        () => getComputedStyle(document.documentElement).overflow,
+      ),
+    ).not.toBe("hidden");
+  } finally {
+    release();
+  }
+});
+
+test("navigation opens on hover, survives the flyout gap and closes on leave", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
+  const menu = page.locator(".compact-navigation");
+  await page.getByText("Menu", { exact: true }).hover();
+  await expect(menu).toHaveAttribute("open", "");
+  await page
+    .getByRole("navigation", { name: "Main navigation" })
+    .getByRole("button", { name: "Support", exact: true })
+    .hover();
+  await expect(menu).toHaveAttribute("open", "");
+  await page.mouse.move(20, 500);
+  await expect(menu).not.toHaveAttribute("open", "");
+  await page.getByText("Menu", { exact: true }).focus();
+  await page.keyboard.press("Enter");
+  await expect(menu).toHaveAttribute("open", "");
+  await page.keyboard.press("Escape");
+  await expect(menu).not.toHaveAttribute("open", "");
+});
+
+test("collection backdrop moves behind the hero and the brief uses the ivory theme", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
+  const world = page.locator("[data-hero-world]");
+  const originalY = await world.evaluate(
+    (node) => new DOMMatrixReadOnly(getComputedStyle(node).transform).m42,
+  );
+  expect(
+    await world
+      .locator("img")
+      .evaluate(
+        (img: HTMLImageElement) => img.complete && img.naturalWidth === 1600,
+      ),
+  ).toBe(true);
+  await page.evaluate(() => scrollTo({ top: 900, behavior: "instant" }));
+  await expect
+    .poll(() =>
+      world.evaluate(
+        (node) => new DOMMatrixReadOnly(getComputedStyle(node).transform).m42,
+      ),
+    )
+    .toBeLessThan(originalY - 30);
+  await expect(
+    page.getByText("Sourced choices. Your approval.", { exact: true }),
+  ).toHaveCount(0);
+  expect(
+    await page
+      .locator(".site-header .brand")
+      .evaluate((node) => getComputedStyle(node).backgroundColor),
+  ).toBe("rgba(0, 0, 0, 0)");
+  await page
+    .getByRole("button", { name: "Filter products and adjust shopping brief" })
+    .click();
+  const brief = page.getByRole("dialog", {
+    name: "Shopping brief and filters",
+  });
+  await expect(brief).toBeVisible();
+  expect(
+    await brief.evaluate((node) => getComputedStyle(node).backgroundColor),
+  ).toBe("rgb(240, 237, 229)");
+  const field = brief.getByRole("spinbutton");
+  await field.fill("150");
+  await expect(field).toHaveValue("150");
+  await page.keyboard.press("Escape");
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(world).toHaveCSS("transform", "none");
 });

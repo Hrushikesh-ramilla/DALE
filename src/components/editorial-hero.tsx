@@ -85,6 +85,30 @@ export function EditorialHero() {
         aria-label="The everyday edit"
         ref={scene}
       >
+        <div className={styles.collectionWorld} aria-hidden="true">
+          <div className={styles.worldPlane} data-hero-world>
+            <picture>
+              <source
+                media="(min-width: 1400px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)"
+                srcSet="/images/editorial/luxury/collection-world-v1-1600.webp"
+              />
+              <source
+                media="(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)"
+                srcSet="/images/editorial/luxury/collection-world-v1-800.webp"
+              />
+              {/* Precompressed decorative artwork; no first-request transcoding. */}
+              <img
+                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                alt=""
+                width="1600"
+                height="905"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div className={styles.worldLight} data-hero-world-light />
+        </div>
         <div className={styles.portal} data-hero-portal>
           <div
             className={styles.sceneBackdrop}

@@ -9,9 +9,10 @@ const criticalImages = [
   "/images/editorial/atelier-light.webp",
   "/images/editorial/luxury/breguet-experimentale-1.webp",
 ];
+let openedInPage = false;
 
 export function HomeOpening() {
-  const [complete, setComplete] = useState(false);
+  const [complete, setComplete] = useState(() => openedInPage);
   const { lenis } = useSmoothScroll();
   useEffect(() => {
     if (complete) return;
@@ -53,9 +54,16 @@ export function HomeOpening() {
   }, [complete, lenis]);
 
   const prepare = useCallback(async () => {
+    const world = matchMedia(
+      "(min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference)",
+    ).matches
+      ? [
+          `/images/editorial/luxury/collection-world-v1-${innerWidth >= 1400 ? 1600 : 800}.webp`,
+        ]
+      : [];
     await Promise.all([
       document.fonts.ready,
-      ...criticalImages.map(async (src) => {
+      ...[...criticalImages, ...world].map(async (src) => {
         const image = new window.Image();
         image.src = src;
         await image.decode().catch(() => undefined);
@@ -71,6 +79,7 @@ export function HomeOpening() {
   const finish = useCallback(() => setComplete(true), []);
   useEffect(() => {
     if (!complete) return;
+    openedInPage = true;
     const frame = requestAnimationFrame(() => {
       ScrollTrigger.refresh();
       window.dispatchEvent(new Event("dale:home-ready"));
@@ -81,8 +90,18 @@ export function HomeOpening() {
   return (
     <div data-home-ready={complete ? "true" : "false"}>
       {!complete && (
-        <div className="home-opening" role="status" aria-label="Opening DALE">
-          <CinematicIntro prepare={prepare} onComplete={finish} />
+        <div
+          id="dale-home-opening"
+          className="home-opening"
+          data-lenis-prevent
+          role="status"
+          aria-label="Opening DALE"
+        >
+          <CinematicIntro
+            prepare={prepare}
+            onComplete={finish}
+            targetSelector="[data-brand-logo] svg"
+          />
           <button type="button" className="opening-skip" onClick={finish}>
             Skip intro <span aria-hidden="true">↗</span>
           </button>
