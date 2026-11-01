@@ -983,15 +983,20 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                   data-editorial-scroll-track="agent"
                 >
                   <div className="hero-dale-bar" id="hero-dale">
-                    <div className="hero-dale-inner" data-editorial-reveal>
-                      <div className="hero-dale-badge">
-                        <span>01 / YOUR PERSONAL SHOPPING AGENT</span>
+                    <div className="hero-dale-inner">
+                      <div
+                        className="hero-dale-title-panel"
+                        data-agent-parallax-left
+                      >
+                        <div className="hero-dale-badge">
+                          <span>01 / YOUR PERSONAL SHOPPING AGENT</span>
+                        </div>
+                        <h2 data-agent-parallax-title>
+                          A little less searching.
+                          <br />
+                          <em>A lot more possibility.</em>
+                        </h2>
                       </div>
-                      <h2 data-agent-parallax-title>
-                        A little less searching.
-                        <br />
-                        <em>A lot more possibility.</em>
-                      </h2>
                       <div
                         className="hero-dale-response"
                         data-agent-parallax-response
@@ -1553,93 +1558,6 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                     </div>
                   </section>
                 )}
-                {/* STREAMLINED INQUIRY SECTION */}
-                <section
-                  className="luxury-inquiry-section"
-                  aria-labelledby="inquiry-title"
-                >
-                  <div className="inquiry-meta">
-                    <span className="inquiry-eyebrow">FREQUENTLY ASKED</span>
-                    <h2 id="inquiry-title" className="inquiry-title">
-                      Before you decide.
-                    </h2>
-                    <p className="inquiry-desc">
-                      Essential details on compatibility, payments, and our
-                      return policy.
-                    </p>
-                    <button
-                      type="button"
-                      className="inquiry-dale-btn"
-                      onClick={() => {
-                        const el = document.getElementById("dale-chat");
-                        if (el) {
-                          el.scrollIntoView({ behavior: "smooth" });
-                          el.querySelector("textarea")?.focus();
-                        } else {
-                          setIsDeviceMode(true);
-                          setTimeout(() => {
-                            const chatEl = document.getElementById("dale-chat");
-                            chatEl?.scrollIntoView({ behavior: "smooth" });
-                            chatEl?.querySelector("textarea")?.focus();
-                          }, 80);
-                        }
-                      }}
-                    >
-                      <Sparkles size={13} />
-                      <span>Ask DALE a question</span>
-                    </button>
-                  </div>
-
-                  <div className="inquiry-accordion">
-                    <details className="inquiry-item">
-                      <summary>
-                        <span>How are recommendations selected?</span>
-                        <span className="inquiry-toggle-icon">+</span>
-                      </summary>
-                      <p>
-                        We filter products strictly by your hardware
-                        specifications and budget. Sponsored listings never
-                        influence results, and conflicting preferences always
-                        require your confirmation.
-                      </p>
-                    </details>
-                    <details className="inquiry-item">
-                      <summary>
-                        <span>What happens if I need to make a return?</span>
-                        <span className="inquiry-toggle-icon">+</span>
-                      </summary>
-                      <p>
-                        You can request a return directly from My Orders within
-                        30 days of delivery. Demo return labels are simulated,
-                        and cases require human review.
-                      </p>
-                    </details>
-                    <details className="inquiry-item">
-                      <summary>
-                        <span>
-                          How are support and return requests reviewed?
-                        </span>
-                        <span className="inquiry-toggle-icon">+</span>
-                      </summary>
-                      <p>
-                        Automated checks assist with initial intake, but every
-                        claim is reviewed by human support specialists before
-                        any decision is made.
-                      </p>
-                    </details>
-                    <details className="inquiry-item">
-                      <summary>
-                        <span>How do group purchase discounts work?</span>
-                        <span className="inquiry-toggle-icon">+</span>
-                      </summary>
-                      <p>
-                        Each participant completes checkout independently. If
-                        group participation changes, your locked purchase terms
-                        and price remain unchanged.
-                      </p>
-                    </details>
-                  </div>
-                </section>
               </>
             ) : (
               children

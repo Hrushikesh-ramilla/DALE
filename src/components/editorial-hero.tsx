@@ -107,7 +107,6 @@ export function EditorialHero() {
               />
             </picture>
           </div>
-          <div className={styles.worldLight} data-hero-world-light />
         </div>
         <div className={styles.portal} data-hero-portal>
           <div

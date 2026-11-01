@@ -1123,3 +1123,64 @@ body:has(.home-opening) .site-header .brand {
 .brief-menu-flyout .flyout-submit-btn:hover {
   background: #4b5b3c;
 }
+
+/* Opposing planes retain their separation during the shared exit. */
+.agent-scroll-track .hero-dale-bar {
+  padding: 0;
+  border: 0;
+  overflow: clip;
+}
+.agent-scroll-track .hero-dale-inner {
+  max-width: none;
+  gap: 0;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: stretch;
+}
+.hero-dale-title-panel,
+.agent-scroll-track .hero-dale-response {
+  padding: clamp(48px, 7vw, 108px) clamp(26px, 5vw, 80px);
+  min-height: 65svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-dale-title-panel {
+  background: #111722;
+}
+.hero-dale-title-panel h2 {
+  color: #f0ede5;
+  font-size: clamp(42px, 4.8vw, 84px);
+}
+.hero-dale-title-panel h2 em,
+.hero-dale-title-panel .hero-dale-badge {
+  color: #b9bdaf;
+}
+.agent-scroll-track .hero-dale-response {
+  grid-column: auto;
+  grid-row: auto;
+  background: var(--dale-paper);
+}
+.agent-scroll-track .hero-dale-sub {
+  max-width: 440px;
+}
+@media (min-width: 1000px) and (min-height: 650px) and (prefers-reduced-motion: no-preference) {
+  .agent-scroll-track {
+    min-height: 210svh;
+  }
+  .agent-scroll-track .hero-dale-bar {
+    height: calc(100svh - 78px);
+  }
+  .agent-scroll-track .hero-dale-inner {
+    min-height: 70svh;
+  }
+}
+@media (max-width: 999px) {
+  .agent-scroll-track .hero-dale-inner {
+    grid-template-columns: 1fr;
+  }
+  .hero-dale-title-panel,
+  .agent-scroll-track .hero-dale-response {
+    min-height: auto;
+    padding-block: 64px;
+  }
+}
