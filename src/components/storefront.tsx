@@ -63,6 +63,7 @@ import { KineticCard } from "./kinetic-card";
 import { PayPalCheckout } from "./paypal-checkout";
 import { Dialog } from "./dialog";
 import { BrandWordmark } from "./brand-wordmark";
+import { CompactNavigation } from "./compact-navigation";
 import { EditorialHero } from "./editorial-hero";
 import { DepartmentExhibit } from "./department-exhibit";
 import { DemoToolbar } from "./demo-toolbar";
@@ -82,36 +83,36 @@ const categoryTitles: Record<string, string> = titles;
 
 const departmentHeroImages: Record<string, { src: string; alt: string }> = {
   electronics: {
-    src: "/images/departments/electronics-apple-ecosystem-hero.webp",
-    alt: "Electronics Department: Mac, MacBook, iPad and iPhone Ecosystem",
+    src: "/images/editorial/luxury/electronics-v1.webp",
+    alt: "Silver technology essentials arranged on ivory stone, editorial artwork",
   },
   clothing: {
-    src: "/images/departments/clothing-luxury-hero.webp",
-    alt: "Clothing Department: Luxury Bespoke Suits, Coats and Knitwear",
+    src: "/images/editorial/luxury/clothing-v2.webp",
+    alt: "Midnight navy and burgundy couture evening gown, editorial artwork",
   },
   fragrance: {
-    src: "/images/departments/fragrance-luxury-hero.webp",
-    alt: "Fragrance Department: Haute Parfumerie, Baccarat Rouge and Creed Aventus",
+    src: "/images/editorial/luxury/fragrance-v1.webp",
+    alt: "Amber fragrance bottle on sunlit limestone, editorial artwork",
   },
   bags: {
-    src: "/images/departments/bags-luxury-hero.webp",
-    alt: "Bags Department: Iconic Hermès Birkin, Louis Vuitton and Bottega Veneta",
+    src: "/images/editorial/luxury/bags-v1.webp",
+    alt: "Chocolate leather structured handbag with gold hardware, editorial artwork",
   },
   home: {
-    src: "/images/departments/home-luxury-hero.webp",
-    alt: "Home & Decor Department: Baccarat Crystal, Le Creuset and Smeg Dolce & Gabbana",
+    src: "/images/editorial/luxury/home-v1.webp",
+    alt: "Sculptural ceramics, crystal and natural linen, editorial artwork",
   },
   watches: {
-    src: "/images/departments/watches-luxury-hero.webp",
-    alt: "Watches Department: Audemars Piguet Royal Oak Offshore, Patek Philippe and Rolex",
+    src: "/images/editorial/luxury/watches-v1.webp",
+    alt: "Enamel-dial dress watch with a dark leather strap, editorial artwork",
   },
   footwear: {
-    src: "/images/departments/footwear-luxury-hero.webp",
-    alt: "Footwear Department: Christian Louboutin Red-Sole and Berluti Wholecut Oxford",
+    src: "/images/editorial/luxury/footwear-v1.webp",
+    alt: "Hand-finished oxblood leather loafers, editorial artwork",
   },
   eyewear: {
-    src: "/images/departments/eyewear-luxury-hero.webp",
-    alt: "Eyewear Department: Cartier Santos, Celine Triomphe and Persol Frames",
+    src: "/images/editorial/luxury/eyewear-v1.webp",
+    alt: "Gold aviator sunglasses with dark green lenses, editorial artwork",
   },
 };
 
@@ -755,53 +756,55 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           >
             <BrandWordmark />
           </a>
-          <nav aria-label="Main navigation">
-            {(["discover", "groups", "orders", "support"] as Tab[]).map(
-              (item, index) => (
-                <button
-                  key={item}
-                  data-agent-control={`Open ${item}`}
-                  className={tab === item ? "active" : ""}
-                  aria-current={tab === item ? "page" : undefined}
-                  onClick={() => setTab(item)}
-                  disabled={restoring}
-                >
-                  <span className="nav-index" aria-hidden="true">
-                    0{index + 1}
-                  </span>
-                  <span className="nav-label">
-                    <span>
-                      {
-                        {
-                          discover: "Discover",
-                          groups: "Group deals",
-                          orders: isBuyer ? "My orders" : "Orders",
-                          support: "Support",
-                        }[item]
-                      }
+          <CompactNavigation>
+            <nav aria-label="Main navigation">
+              {(["discover", "groups", "orders", "support"] as Tab[]).map(
+                (item, index) => (
+                  <button
+                    key={item}
+                    data-agent-control={`Open ${item}`}
+                    className={tab === item ? "active" : ""}
+                    aria-current={tab === item ? "page" : undefined}
+                    onClick={() => setTab(item)}
+                    disabled={restoring}
+                  >
+                    <span className="nav-index" aria-hidden="true">
+                      0{index + 1}
                     </span>
-                    <span aria-hidden="true">
-                      {
+                    <span className="nav-label">
+                      <span>
                         {
-                          discover: "Discover",
-                          groups: "Group deals",
-                          orders: isBuyer ? "My orders" : "Orders",
-                          support: "Support",
-                        }[item]
-                      }
+                          {
+                            discover: "Discover",
+                            groups: "Group deals",
+                            orders: isBuyer ? "My orders" : "Orders",
+                            support: "Support",
+                          }[item]
+                        }
+                      </span>
+                      <span aria-hidden="true">
+                        {
+                          {
+                            discover: "Discover",
+                            groups: "Group deals",
+                            orders: isBuyer ? "My orders" : "Orders",
+                            support: "Support",
+                          }[item]
+                        }
+                      </span>
                     </span>
-                  </span>
-                  {tab === item && (
-                    <motion.span
-                      className="nav-indicator"
-                      layoutId="navigation"
-                      aria-hidden="true"
-                    />
-                  )}
-                </button>
-              ),
-            )}
-          </nav>
+                    {tab === item && (
+                      <motion.span
+                        className="nav-indicator"
+                        layoutId="navigation"
+                        aria-hidden="true"
+                      />
+                    )}
+                  </button>
+                ),
+              )}
+            </nav>
+          </CompactNavigation>
           <div className="header-actions">
             <ShoppingBriefMenu
               model={model}

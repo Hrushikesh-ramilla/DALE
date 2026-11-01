@@ -1,10 +1,5 @@
 "use client";
-import {
-  useState,
-  useRef,
-  useEffect,
-  useCallback,
-} from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { categoryTitles, isRetailCategory } from "@/domain/departments";
 import { createPortal } from "react-dom";
 import {
@@ -76,7 +71,10 @@ export function ShoppingBriefMenu({
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => setMounted(true));
-    return () => cancelAnimationFrame(frame);
+    return () => {
+      cancelAnimationFrame(frame);
+      if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+    };
   }, []);
 
   const updateOrigin = useCallback(() => {
@@ -138,10 +136,11 @@ export function ShoppingBriefMenu({
 
   const handleMouseLeave = (e: React.MouseEvent) => {
     if (isPinned) return;
-    const related = e.relatedTarget as Node | null;
+    const related = e.relatedTarget;
     if (
-      (menuRef.current && menuRef.current.contains(related)) ||
-      (triggerRef.current && triggerRef.current.contains(related))
+      related instanceof Node &&
+      ((menuRef.current && menuRef.current.contains(related)) ||
+        (triggerRef.current && triggerRef.current.contains(related)))
     ) {
       return;
     }
@@ -273,254 +272,265 @@ export function ShoppingBriefMenu({
               role="dialog"
               aria-label="Shopping brief and filters"
               aria-hidden={!isOpen}
+              inert={!isOpen}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               onFocusCapture={() => setIsPinned(true)}
             >
-            {/* Header */}
-            <div className="flyout-header">
-              <div className="flyout-title-wrap">
-                <span className="flyout-sparkle">
-                  <Sparkles size={18} />
-                </span>
-                <div>
-                  <h3>Your shopping brief & specifications</h3>
-                  <p className="flyout-subtitle">
-                    Exact device profiles, connectors, and power constraints are
-                    verified against live catalog data.
-                  </p>
+              {/* Header */}
+              <div className="flyout-header">
+                <div className="flyout-title-wrap">
+                  <span className="flyout-sparkle">
+                    <Sparkles size={18} />
+                  </span>
+                  <div>
+                    <h3>Your shopping brief & specifications</h3>
+                    <p className="flyout-subtitle">
+                      Exact device profiles, connectors, and power constraints
+                      are verified against live catalog data.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <button
-                type="button"
-                className="flyout-close-btn"
-                onClick={handleClose}
-                aria-label="Close filters menu"
-                data-agent-control="Close shopping brief menu"
-              >
-                <X size={16} />
-              </button>
-            </div>
-
-            {/* 3-Column Apple Grid */}
-            <div className="flyout-grid">
-              {/* Column 1: Device Profile */}
-              <div className="flyout-column">
-                <span className="column-eyebrow">{isRetailCategory(category) ? "CATEGORY REQUIREMENTS" : "DEVICE & COMPATIBILITY"}</span>
-                <label className="flyout-label">
-                  {isRetailCategory(category) ? "Product purchase" : "Your device"}
-                  <select
-                    className="flyout-select"
-                    disabled={isRetailCategory(category)}
-                    value={model}
-                    data-agent-control="Shopping brief device profile"
-                    onChange={(e) => {
-                      setModel(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                  >
-                    {models.map((m) => (
-                      <option key={m} value={m}>
-                        {deviceLabel(m)}
-                      </option>
-                    ))}
-                  </select>
-                </label>
                 <button
                   type="button"
-                  className="button secondary small flyout-identify-btn"
-                  onClick={() => {
-                    handleClose();
-                    onIdentify();
-                  }}
-                  disabled={restoring || isRetailCategory(category)}
+                  className="flyout-close-btn"
+                  onClick={handleClose}
+                  aria-label="Close filters menu"
+                  data-agent-control="Close shopping brief menu"
                 >
-                  <Camera size={14} /> Identify device from label
+                  <X size={16} />
                 </button>
-                <div className="flyout-tip">
-                  <span>
-                    Compare recorded requirements before purchase. Personal fit, enjoyment and medical safety cannot be guaranteed.
-                  </span>
-                </div>
               </div>
 
-              {/* Column 2: Category & Budget */}
-              <div className="flyout-column">
-                <span className="column-eyebrow">CATEGORY & BUDGET</span>
-                <label className="flyout-label">
-                  Looking for
-                  <select
-                    className="flyout-select"
-                    value={category}
-                    data-agent-control="Shopping brief category"
-                    onChange={(e) => {
-                      setCategory(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                  >
-                    {Object.entries({ ...categoryTitles, "": "All eligible categories" }).map(([value, label]) => (
-                      <option value={value} key={value}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label className="flyout-label">
-                  Maximum budget, USD
-                  <div className="money-input">
-                    <span>$</span>
-                    <input
-                      type="number"
-                      min="1"
-                      max="10000"
-                      value={budget}
-                      data-agent-control="Shopping brief maximum budget USD"
+              {/* 3-Column Apple Grid */}
+              <div className="flyout-grid">
+                {/* Column 1: Device Profile */}
+                <div className="flyout-column">
+                  <span className="column-eyebrow">
+                    {isRetailCategory(category)
+                      ? "CATEGORY REQUIREMENTS"
+                      : "DEVICE & COMPATIBILITY"}
+                  </span>
+                  <label className="flyout-label">
+                    {isRetailCategory(category)
+                      ? "Product purchase"
+                      : "Your device"}
+                    <select
+                      className="flyout-select"
+                      disabled={isRetailCategory(category)}
+                      value={model}
+                      data-agent-control="Shopping brief device profile"
                       onChange={(e) => {
-                        setBudget(e.target.value);
-                        setBriefDirty(true);
-                      }}
-                    />
-                  </div>
-                </label>
-                <div className="flyout-category-pills">
-                  {Object.entries(categoryTitles).map(([id, label]) => (
-                    <button
-                      key={id}
-                      type="button"
-                      className={`pill-btn ${category === id ? "active" : ""}`}
-                      onClick={() => {
-                        setCategory(id);
+                        setModel(e.target.value);
                         setBriefDirty(true);
                       }}
                     >
-                      {label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Column 3: Preferences & Priorities */}
-              <div className="flyout-column">
-                <span className="column-eyebrow">PREFERENCES & RANKING</span>
-                <label className="flyout-label">
-                  Feature to prioritize
-                  <input
-                    value={preference}
-                    data-agent-control="Shopping brief preferred feature"
-                    maxLength={80}
-                    placeholder="65W, Ethernet, braided cable…"
-                    onChange={(e) => {
-                      setPreference(e.target.value);
-                      setBriefDirty(true);
+                      {models.map((m) => (
+                        <option key={m} value={m}>
+                          {deviceLabel(m)}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <button
+                    type="button"
+                    className="button secondary small flyout-identify-btn"
+                    onClick={() => {
+                      handleClose();
+                      onIdentify();
                     }}
-                  />
-                </label>
-                <label className="flyout-label">
-                  Anything else?
-                  <textarea
-                    placeholder="A lighter charger for my commute…"
-                    value={message}
-                    data-agent-control="Shopping brief additional requirements"
-                    onChange={(e) => {
-                      setMessage(e.target.value);
-                      setBriefDirty(true);
-                    }}
-                    rows={2}
-                  />
-                </label>
-                <label className="flyout-label">
-                  Rank by
-                  <select
-                    className="flyout-select"
-                    value={priority}
-                    data-agent-control="Shopping brief ranking priority"
-                    onChange={(e) => {
-                      setPriority(e.target.value as "price" | "features");
-                      setBriefDirty(true);
-                    }}
+                    disabled={restoring || isRetailCategory(category)}
                   >
-                    <option value="price">
-                      Lowest price, then matching features
-                    </option>
-                    <option value="features">
-                      Matching features, then lowest price
-                    </option>
-                  </select>
-                </label>
-                <label className="flyout-checkbox-label">
-                  <input
-                    type="checkbox"
-                    checked={!!weights}
-                    onChange={(event) => {
-                      setWeights(
-                        event.target.checked
-                          ? { price: 50, features: 50 }
-                          : undefined,
-                      );
-                      setBriefDirty(true);
-                    }}
-                  />
-                  <span>Fine preference weights</span>
-                </label>
-                {weights && (
-                  <div className="flyout-range-wrap">
-                    <label className="flyout-range-label">
-                      <span>Price weight: {weights.price}%</span>
-                      <span>Features: {weights.features}%</span>
-                    </label>
+                    <Camera size={14} /> Identify device from label
+                  </button>
+                  <div className="flyout-tip">
+                    <span>
+                      Compare recorded requirements before purchase. Personal
+                      fit, enjoyment and medical safety cannot be guaranteed.
+                    </span>
+                  </div>
+                </div>
+
+                {/* Column 2: Category & Budget */}
+                <div className="flyout-column">
+                  <span className="column-eyebrow">CATEGORY & BUDGET</span>
+                  <label className="flyout-label">
+                    Looking for
+                    <select
+                      className="flyout-select"
+                      value={category}
+                      data-agent-control="Shopping brief category"
+                      onChange={(e) => {
+                        setCategory(e.target.value);
+                        setBriefDirty(true);
+                      }}
+                    >
+                      {Object.entries({
+                        ...categoryTitles,
+                        "": "All eligible categories",
+                      }).map(([value, label]) => (
+                        <option value={value} key={value}>
+                          {label}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <label className="flyout-label">
+                    Maximum budget, USD
+                    <div className="money-input">
+                      <span>$</span>
+                      <input
+                        type="number"
+                        min="1"
+                        max="10000"
+                        value={budget}
+                        data-agent-control="Shopping brief maximum budget USD"
+                        onChange={(e) => {
+                          setBudget(e.target.value);
+                          setBriefDirty(true);
+                        }}
+                      />
+                    </div>
+                  </label>
+                  <div className="flyout-category-pills">
+                    {Object.entries(categoryTitles).map(([id, label]) => (
+                      <button
+                        key={id}
+                        type="button"
+                        className={`pill-btn ${category === id ? "active" : ""}`}
+                        onClick={() => {
+                          setCategory(id);
+                          setBriefDirty(true);
+                        }}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Column 3: Preferences & Priorities */}
+                <div className="flyout-column">
+                  <span className="column-eyebrow">PREFERENCES & RANKING</span>
+                  <label className="flyout-label">
+                    Feature to prioritize
                     <input
-                      aria-label="Price preference weight"
-                      data-agent-control="Shopping brief price preference weight"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value={weights.price}
-                      onChange={(event) => {
-                        const price = Number(event.target.value);
-                        setWeights({ price, features: 100 - price });
+                      value={preference}
+                      data-agent-control="Shopping brief preferred feature"
+                      maxLength={80}
+                      placeholder="65W, Ethernet, braided cable…"
+                      onChange={(e) => {
+                        setPreference(e.target.value);
                         setBriefDirty(true);
                       }}
                     />
-                  </div>
-                )}
+                  </label>
+                  <label className="flyout-label">
+                    Anything else?
+                    <textarea
+                      placeholder="A lighter charger for my commute…"
+                      value={message}
+                      data-agent-control="Shopping brief additional requirements"
+                      onChange={(e) => {
+                        setMessage(e.target.value);
+                        setBriefDirty(true);
+                      }}
+                      rows={2}
+                    />
+                  </label>
+                  <label className="flyout-label">
+                    Rank by
+                    <select
+                      className="flyout-select"
+                      value={priority}
+                      data-agent-control="Shopping brief ranking priority"
+                      onChange={(e) => {
+                        setPriority(e.target.value as "price" | "features");
+                        setBriefDirty(true);
+                      }}
+                    >
+                      <option value="price">
+                        Lowest price, then matching features
+                      </option>
+                      <option value="features">
+                        Matching features, then lowest price
+                      </option>
+                    </select>
+                  </label>
+                  <label className="flyout-checkbox-label">
+                    <input
+                      type="checkbox"
+                      checked={!!weights}
+                      onChange={(event) => {
+                        setWeights(
+                          event.target.checked
+                            ? { price: 50, features: 50 }
+                            : undefined,
+                        );
+                        setBriefDirty(true);
+                      }}
+                    />
+                    <span>Fine preference weights</span>
+                  </label>
+                  {weights && (
+                    <div className="flyout-range-wrap">
+                      <label className="flyout-range-label">
+                        <span>Price weight: {weights.price}%</span>
+                        <span>Features: {weights.features}%</span>
+                      </label>
+                      <input
+                        aria-label="Price preference weight"
+                        data-agent-control="Shopping brief price preference weight"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value={weights.price}
+                        onChange={(event) => {
+                          const price = Number(event.target.value);
+                          setWeights({ price, features: 100 - price });
+                          setBriefDirty(true);
+                        }}
+                      />
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
 
-            {/* Footer Bar */}
-            <div className="flyout-footer">
-              <div className="flyout-foot-left">
-                <ShieldCheck size={16} />
-                <span>
-                  Paid placement never improves organic ranking · Zero
-                  sponsored ads
-                </span>
-              </div>
-              <div className="flyout-foot-right">
-                <span className="flyout-count">
-                  {compatibleCount} compatible options
-                </span>
-                <button
-                  type="button"
-                  className="button primary flyout-submit-btn"
-                  disabled={busy}
-                  onClick={() => {
-                    handleClose();
-                    void findProducts();
-                  }}
-                >
-                  {busy ? (
-                    <LoaderCircle className="spin" size={16} />
-                  ) : (
-                    <Search size={16} />
-                  )}{" "}
-                  Find my match
-                </button>
+              {/* Footer Bar */}
+              <div className="flyout-footer">
+                <div className="flyout-foot-left">
+                  <ShieldCheck size={16} />
+                  <span>
+                    Paid placement never improves organic ranking · Zero
+                    sponsored ads
+                  </span>
+                </div>
+                <div className="flyout-foot-right">
+                  <span className="flyout-count">
+                    {compatibleCount} compatible options
+                  </span>
+                  <button
+                    type="button"
+                    className="button primary flyout-submit-btn"
+                    disabled={busy}
+                    onClick={() => {
+                      handleClose();
+                      void findProducts();
+                    }}
+                  >
+                    {busy ? (
+                      <LoaderCircle className="spin" size={16} />
+                    ) : (
+                      <Search size={16} />
+                    )}{" "}
+                    Find my match
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        </>,
-        document.body,
-      )}
+          </>,
+          document.body,
+        )}
     </div>
   );
 }

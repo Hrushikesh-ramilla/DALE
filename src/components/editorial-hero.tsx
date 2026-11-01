@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
-import { productById } from "@/domain/catalog";
+import { productById, type Product } from "@/domain/catalog";
 import { formatMoney } from "@/domain/money";
 import { useHeroParallax } from "@/hooks/use-scroll-scenes";
 import { useCardDepth } from "@/hooks/use-card-depth";
@@ -13,8 +13,35 @@ import { ProductViewer } from "./product-viewer";
 import styles from "./editorial-hero.module.css";
 import { LivingType } from "./living-type";
 import { attachDepthMotion } from "@/lib/depth-motion";
+import { HomeOpening } from "./home-opening";
 
-const edit = ["B001", "B012", "B016", "B011"].map(productById);
+type Edit = {
+  id: string;
+  name: string;
+  href: string;
+  caption: string;
+  product?: Product;
+  artwork?: string;
+};
+const edit: Edit[] = [
+  {
+    id: "watch-edit",
+    name: "Breguet Expérimentale 1",
+    href: "/category/watches",
+    caption: "Openworked watchmaking. Explore the watch edit.",
+    artwork: "/images/editorial/luxury/breguet-experimentale-1.webp",
+  },
+  ...["B012", "B016", "B011"].map((id) => {
+    const product = productById(id);
+    return {
+      id,
+      product,
+      name: product.name,
+      href: `/product/${id}`,
+      caption: `${formatMoney(product.price)} · DALE sandbox offer`,
+    };
+  }),
+];
 
 export function EditorialHero() {
   const [index, setIndex] = useState(0);
@@ -52,6 +79,7 @@ export function EditorialHero() {
   };
   return (
     <div className={styles.scrollTrack} data-hero-track>
+      <HomeOpening />
       <section
         className={`editorial-hero ${styles.hero}`}
         aria-label="The everyday edit"
@@ -66,6 +94,7 @@ export function EditorialHero() {
             <div className={styles.atmosphere} data-hero-atmosphere>
               <Image
                 src="/images/editorial/atelier-light.webp"
+                unoptimized
                 alt=""
                 fill
                 sizes="100vw"
@@ -126,7 +155,25 @@ export function EditorialHero() {
                   </span>
                   <div className={styles.forwardObject} data-hero-forward>
                     <div className={styles.object} key={product.id}>
-                      <ProductViewer product={product} priority={index === 0} />
+                      {product.artwork ? (
+                        <Image
+                          src={product.artwork}
+                          alt="Breguet Expérimentale 1 E001BH/S9/5ZV, manufacturer photograph"
+                          width={720}
+                          height={1028}
+                          sizes="(max-width: 760px) 85vw, 42vw"
+                          unoptimized
+                          loading="eager"
+                          fetchPriority="high"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "contain",
+                          }}
+                        />
+                      ) : product.product ? (
+                        <ProductViewer product={product.product} priority />
+                      ) : null}
                     </div>
                   </div>
                   <div className={styles.plinth} aria-hidden="true" />
@@ -136,17 +183,18 @@ export function EditorialHero() {
                 </div>
                 <div className={styles.caption}>
                   <div>
-                    <Link href={`/product/${product.id}`}>{product.name}</Link>
-                    <small>
-                      {formatMoney(product.price)} · DALE sandbox offer
-                    </small>
+                    <Link href={product.href} prefetch={false}>
+                      {product.name}
+                    </Link>
+                    <small>{product.caption}</small>
                   </div>
                   <Link
-                    href={`/product/${product.id}`}
+                    href={product.href}
+                    prefetch={false}
                     className={styles.open}
                     aria-label={`View ${product.name}`}
                   >
-                    <ArrowUpRight size={20} />
+                    <span>Explore</span> <ArrowUpRight size={20} />
                   </Link>
                 </div>
                 <div className={styles.controls} aria-label="Featured products">
@@ -157,6 +205,7 @@ export function EditorialHero() {
                     }
                   >
                     <ArrowLeft size={16} />
+                    <span>Previous</span>
                   </button>
                   {edit.map((item, i) => (
                     <button
@@ -173,6 +222,7 @@ export function EditorialHero() {
                     aria-label="Next featured product"
                     onClick={() => setIndex((index + 1) % edit.length)}
                   >
+                    <span>Next</span>
                     <ArrowRight size={16} />
                   </button>
                 </div>

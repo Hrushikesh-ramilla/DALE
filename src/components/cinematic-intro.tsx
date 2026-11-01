@@ -6,12 +6,14 @@ interface CinematicIntroProps {
   onComplete?: () => void;
   onSettled?: () => void;
   targetSelector?: string;
+  prepare?: () => Promise<void>;
 }
 
 export function CinematicIntro({
   onComplete,
   onSettled,
   targetSelector = "[data-brand-logo]",
+  prepare,
 }: CinematicIntroProps) {
   // Steps:
   // 0: Initial black
@@ -34,9 +36,7 @@ export function CinematicIntro({
 
   const onSettledRef = useRef(onSettled);
 
-
   const onCompleteRef = useRef(onComplete);
-
 
   useEffect(() => {
     onSettledRef.current = onSettled;
@@ -44,16 +44,19 @@ export function CinematicIntro({
   }, [onSettled, onComplete]);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      const frame = requestAnimationFrame(() => {
-        setStep(9);
-        onSettledRef.current?.();
-        onCompleteRef.current?.();
-      });
-      return () => cancelAnimationFrame(frame);
-    }
-
     const timers: NodeJS.Timeout[] = [];
+    let cancelled = false;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    // Readiness starts with the lettering, never after it. A failed asset must
+    // not strand the visitor behind the opening screen.
+    const ready = Promise.race([
+      Promise.resolve()
+        .then(() => prepare?.())
+        .catch(() => undefined),
+      new Promise<void>((resolve) => timers.push(setTimeout(resolve, 6500))),
+    ]);
 
     const measureTarget = () => {
       const target = document.querySelector(targetSelector);
@@ -79,30 +82,47 @@ export function CinematicIntro({
     window.addEventListener("resize", measureTarget);
 
     // Continuous overlapping sequence schedule - deliberate, cinematic pacing
-    timers.push(setTimeout(() => setStep(1), 80));    // D begins emerging
-    timers.push(setTimeout(() => setStep(2), 320));   // A begins emerging
-    timers.push(setTimeout(() => setStep(3), 560));   // L begins emerging
-    timers.push(setTimeout(() => setStep(4), 800));   // E begins emerging
-    timers.push(setTimeout(() => setStep(5), 1100));  // Full mark & subtitle bloom
-    timers.push(setTimeout(() => {
+    timers.push(setTimeout(() => setStep(1), 80)); // D begins emerging
+    timers.push(setTimeout(() => setStep(2), 320)); // A begins emerging
+    timers.push(setTimeout(() => setStep(3), 560)); // L begins emerging
+    timers.push(setTimeout(() => setStep(4), 800)); // E begins emerging
+    timers.push(setTimeout(() => setStep(5), 1100)); // Full mark & subtitle bloom
+    void Promise.all([
+      ready,
+      new Promise<void>((resolve) =>
+        timers.push(setTimeout(resolve, reduced ? 0 : 2100)),
+      ),
+    ]).then(() => {
+      if (cancelled) return;
+      if (reduced) {
+        setStep(9);
+        onSettledRef.current?.();
+        onCompleteRef.current?.();
+        return;
+      }
       measureTarget();
-      setStep(6);                                     // Silky flight begins
-    }, 2100));
-    timers.push(setTimeout(() => setStep(7), 2350));  // Background overlay dissolves
-    timers.push(setTimeout(() => {
-      onSettledRef.current?.();                       // Header logo revealed
-      setStep(8);                                     // Wordmark settled handoff
-    }, 3100));
-    timers.push(setTimeout(() => {
-      setStep(9);                                     // Intro complete
-      onCompleteRef.current?.();
-    }, 3350));
+      setStep(6);
+      timers.push(setTimeout(() => setStep(7), 250));
+      timers.push(
+        setTimeout(() => {
+          onSettledRef.current?.(); // Header logo revealed
+          setStep(8); // Wordmark settled handoff
+        }, 1000),
+      );
+      timers.push(
+        setTimeout(() => {
+          setStep(9); // Intro complete
+          onCompleteRef.current?.();
+        }, 1250),
+      );
+    });
 
     return () => {
+      cancelled = true;
       timers.forEach(clearTimeout);
       window.removeEventListener("resize", measureTarget);
     };
-  }, [targetSelector]);
+  }, [targetSelector, prepare]);
 
   if (step >= 9) return null;
 
@@ -123,7 +143,7 @@ export function CinematicIntro({
         position: "fixed",
         inset: 0,
         zIndex: 99999,
-        pointerEvents: isFlying ? "none" : "auto",
+        pointerEvents: "auto",
         backgroundColor: isFadingOverlay ? "transparent" : "#000000",
         transition: "background-color 0.85s cubic-bezier(0.16, 1, 0.3, 1)",
         display: "flex",
@@ -303,7 +323,7 @@ export function CinematicIntro({
             pointerEvents: "none",
           }}
         >
-          Buyer Advocate &middot; Commerce AI
+          A more personal way to shop
         </div>
       </div>
     </div>
