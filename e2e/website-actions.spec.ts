@@ -1,4 +1,4 @@
-import { test, expect, type Page } from "@playwright/test";
+import { test, expect, chromium, type Page } from "@playwright/test";
 import { readAgentStream } from "../src/lib/agent-stream";
 
 test.beforeEach(async ({ page }) => {
@@ -506,4 +506,150 @@ test("expands real page details and scrolls the page to its footer", async ({
       ),
     )
     .toBeLessThan(20);
+});
+
+test("reserves a tab on Send and fills it after the response even when late opens are blocked", async ({
+  page,
+  context,
+}) => {
+  await page.evaluate(() => {
+    const open = window.open.bind(window);
+    window.open = (url, target) =>
+      url === "about:blank" && navigator.userActivation.isActive
+        ? open(url, target)
+        : null;
+  });
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/api/copilot/chat", async (route) => {
+    await gate;
+    await route.continue();
+  });
+  await say(page, "Browser action: open the perfume in a new tab");
+  await expect.poll(() => context.pages().length).toBe(2);
+  const child = context.pages().find((p) => p !== page)!;
+  expect(child.url()).toBe("about:blank");
+  await expect(child.locator("body")).toContainText(
+    "DALE is finding your listing",
+  );
+  expect(await child.evaluate(() => window.opener)).toBeNull();
+  release();
+  await expect(child).toHaveURL(/\/product\/browser-rag-fragrance$/);
+  await expect(child.locator(".pdp-page")).toHaveAttribute(
+    "data-product-id",
+    "browser-rag-fragrance",
+  );
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Browser action completed from observed results.",
+  );
+  await expect(page).toHaveURL(/\/department\/electronics$/);
+  expect(context.pages()).toHaveLength(2);
+  const state = await (await page.request.get("/api/copilot/state")).json();
+  expect(state.turn.status).toBe("completed");
+  expect(state.receipts.at(-1).targets[0].status).toBe("ready");
+});
+
+test("a failed request closes only its unused waiting tab", async ({
+  page,
+  context,
+}) => {
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/api/copilot/chat", async (route) => {
+    await gate;
+    await route.fulfill({
+      status: 503,
+      contentType: "application/json",
+      body: JSON.stringify({ error: "Temporary test failure" }),
+    });
+  });
+  await say(page, "Browser action: open the perfume in a new tab");
+  await expect.poll(() => context.pages().length).toBe(2);
+  release();
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Temporary test failure",
+  );
+  await expect.poll(() => context.pages().length).toBe(1);
+  expect(page.isClosed()).toBe(false);
+});
+
+test("Stop closes a waiting tab before a delayed model response", async ({
+  page,
+  context,
+}) => {
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/api/copilot/chat", async (route) => {
+    await gate;
+    await route.abort().catch(() => undefined);
+  });
+  await say(page, "Browser action: open the perfume in a new tab");
+  await expect.poll(() => context.pages().length).toBe(2);
+  await page.getByRole("button", { name: "Stop", exact: true }).click();
+  await expect.poll(() => context.pages().length).toBe(1);
+  release();
+});
+
+test("clarification leaves no unused tab and ordinary chat reserves none", async ({
+  page,
+  context,
+}) => {
+  await say(page, "Open an unidentified item in a new tab");
+  await expect(
+    page.getByRole("button", { name: "Stop", exact: true }),
+  ).toHaveCount(0);
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "Browser contract reply",
+  );
+  await expect.poll(() => context.pages().length).toBe(1);
+  let opened = 0;
+  context.on("page", () => opened++);
+  await say(page, "Browser slow streamed reply");
+  await expect(page.locator(".dale-messages-feed")).toContainText(
+    "the complete reply is now saved",
+  );
+  expect(opened).toBe(0);
+});
+
+test("a tab reserved by Send loads with Chromium popup blocking enabled", async () => {
+  const browser = await chromium.launch({
+    ignoreDefaultArgs: ["--disable-popup-blocking"],
+  });
+  try {
+    const context = await browser.newContext({
+      baseURL: "http://127.0.0.1:3130",
+    });
+    const page = await context.newPage();
+    await page.goto("/department/electronics");
+    await page.request.post("/api/copilot/state", {
+      data: { action: "start" },
+      headers: { origin: "http://127.0.0.1:3130" },
+    });
+    await page.reload();
+    await page.getByRole("button", { name: "Open DALE assistant" }).click();
+    await page.route("**/api/copilot/chat", async (route) => {
+      await new Promise((resolve) => setTimeout(resolve, 1200));
+      await route.continue();
+    });
+    await say(page, "Browser action: open the perfume in a new tab");
+    await expect.poll(() => context.pages().length).toBe(2);
+    const child = context.pages().find((p) => p !== page)!;
+    await expect(child).toHaveURL(/\/product\/browser-rag-fragrance$/);
+    await expect(child.locator(".pdp-page")).toHaveAttribute(
+      "data-product-id",
+      "browser-rag-fragrance",
+    );
+    await expect(page.locator(".dale-messages-feed")).toContainText(
+      "Browser action completed from observed results.",
+    );
+    expect(context.pages()).toHaveLength(2);
+  } finally {
+    await browser.close();
+  }
 });

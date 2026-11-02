@@ -350,12 +350,67 @@ export function chooseActionFile(
   el.addEventListener("cancel", cleanup, { once: true });
   el.click();
 }
-export function openActionTabs(action: BrowserAction) {
+export type ReservedTab = { window: Window; consumed: boolean };
+/** Reserve one browsing context during Send's user activation, before any await.
+ * The model still resolves and validates the destination through normal tools. */
+export function reserveRequestedTab(prompt: string): ReservedTab | undefined {
+  if (
+    !/\b(?:open|launch|show|take)\b[\s\S]*\b(?:new|another|separate|different|browser)\s+tabs?\b/i.test(
+      prompt,
+    ) ||
+    /\b(?:do not|don't|dont|never|without|not)\b[\s\S]*\b(?:open|launch|new tab)/i.test(
+      prompt,
+    ) ||
+    (navigator.userActivation && !navigator.userActivation.isActive)
+  )
+    return;
+  const tab = window.open("about:blank", "_blank");
+  if (!tab) return;
+  tab.opener = null;
+  tab.document.title = "DALE — finding your listing";
+  const message = tab.document.createElement("p");
+  message.textContent = "DALE is finding your listing…";
+  message.style.cssText =
+    "font: 24px Georgia,serif;color:#30392b;margin:12vh 8vw";
+  tab.document.body.style.background = "#f0ede5";
+  tab.document.body.append(message);
+  return { window: tab, consumed: false };
+}
+export function releaseReservedTab(reservation?: ReservedTab) {
+  if (!reservation || reservation.consumed || reservation.window.closed) return;
+  // Never close a page the shopper independently navigated while waiting.
+  try {
+    if (reservation.window.location.href === "about:blank")
+      reservation.window.close();
+  } catch {
+    /* A shopper-owned cross-origin navigation is left alone. */
+  }
+}
+export function openActionTabs(
+  action: BrowserAction,
+  reservation?: ReservedTab,
+) {
   for (const target of action.targets || []) {
     if (!registeredPath(target.path)) continue;
     const old = handles.get(target.tabId);
     if (old && !old.closed) continue;
-    const tab = window.open(target.path, `dale:${target.tabId}`);
+    let tab: Window | null;
+    if (reservation && !reservation.consumed) {
+      reservation.consumed = true;
+      tab = reservation.window;
+      if (tab.closed) continue;
+      // Only reuse the untouched waiting page, never a shopper's new destination.
+      try {
+        if (tab.location.href !== "about:blank") continue;
+        tab.name = `dale:${target.tabId}`;
+        tab.location.replace(target.path);
+      } catch {
+        reservation.consumed = false;
+        continue;
+      }
+    } else {
+      tab = window.open(target.path, `dale:${target.tabId}`);
+    }
     if (tab) {
       tab.opener = null;
       handles.set(target.tabId, tab);

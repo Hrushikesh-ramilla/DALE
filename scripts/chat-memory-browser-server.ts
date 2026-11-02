@@ -172,6 +172,12 @@ const provider = createServer(async (req, res) => {
         args: { type: "navigate", path: "/product/browser-rag-fragrance" },
       },
     ],
+    "Browser action: open the perfume in a new tab": [
+      {
+        name: "use_website",
+        args: { type: "tabs", paths: ["/product/browser-rag-fragrance"] },
+      },
+    ],
     "Browser action: two separate product tabs": [
       {
         name: "use_website",
