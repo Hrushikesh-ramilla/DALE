@@ -52,24 +52,32 @@ function CollectionPlate({
         >
           <div className={styles.copy}>
             <span className={styles.index}>
-              {collection.numeral} <span>THE COLLECTION</span>
+              {collection.numeral}{" "}
+              <span>
+                <LivingType text="THE COLLECTION" reveal />
+              </span>
             </span>
             <h3>
-              <LivingType text={collection.title} />
+              <LivingType text={collection.title} reveal />
             </h3>
-            <p>{collection.desc}</p>
+            <p>
+              <LivingType text={collection.desc} reveal />
+            </p>
             <div className={styles.tags}>
               {collection.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
+                <span key={tag}>
+                  <LivingType text={tag} reveal />
+                </span>
               ))}
             </div>
             <span className={styles.explore}>
-              Explore collection <ArrowUpRight size={19} aria-hidden="true" />
+              <LivingType text="Explore collection" reveal />{" "}
+              <ArrowUpRight size={19} aria-hidden="true" />
             </span>
           </div>
           <div className={styles.visual}>
             <span className={styles.edition} aria-hidden="true">
-              DALE / OBJECT STUDIES
+              <LivingType text="DALE / OBJECT STUDIES" reveal />
             </span>
             <div className={styles.object}>
               {artwork ? (
@@ -93,7 +101,10 @@ function CollectionPlate({
             </div>
             <div className={styles.shadow} aria-hidden="true" />
             <span className={styles.count}>
-              {collection.count.toLocaleString()} recorded variants
+              <LivingType
+                text={`${collection.count.toLocaleString()} recorded variants`}
+                reveal
+              />
             </span>
             <span className={styles.number} aria-hidden="true">
               {collection.numeral.split(" /")[0]}
@@ -120,23 +131,25 @@ export function DepartmentExhibit({
       id="collections"
       aria-labelledby="collection-title"
     >
-      <header className={styles.heading} data-editorial-reveal>
+      <header className={styles.heading}>
         <div>
           <span className={styles.eyebrow}>
             THE COLLECTION / {String(collections.length).padStart(2, "0")}{" "}
             DEPARTMENTS
           </span>
           <h2 id="collection-title">
-            <LivingType text="A world of good things." />
+            <LivingType text="A world of good things." reveal />
             <br />
             <em>
-              <LivingType text="Made personal." />
+              <LivingType text="Made personal." reveal />
             </em>
           </h2>
         </div>
         <p>
-          Explore the collection, or let DALE help you find your way. Your
-          preferences. Your final say.
+          <LivingType
+            text="Explore the collection, or let DALE help you find your way. Your preferences. Your final say."
+            reveal
+          />
         </p>
       </header>
       <div className={styles.list} ref={list}>
@@ -150,9 +163,15 @@ export function DepartmentExhibit({
         ))}
       </div>
       <footer className={styles.footer}>
-        <span>One collection. A more personal way to shop.</span>
+        <span>
+          <LivingType
+            text="One collection. A more personal way to shop."
+            reveal
+          />
+        </span>
         <Link href="/department/electronics">
-          Explore device essentials <ArrowUpRight size={16} />
+          <LivingType text="Explore device essentials" reveal />{" "}
+          <ArrowUpRight size={16} />
         </Link>
       </footer>
     </section>

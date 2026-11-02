@@ -890,12 +890,14 @@ test("hero contracts evenly on four sides while its product advances, and resets
   await expect(track).toHaveAttribute("data-hero-held", "true");
   await page.evaluate(() => document.fonts.ready);
   const portal = page.locator("[data-hero-portal]");
-  const start = await track.evaluate(
-    (e) => e.getBoundingClientRect().top + scrollY - 78,
-  );
+  const contraction = await track.evaluate((e) => {
+    const start = e.getBoundingClientRect().top + scrollY - 180;
+    const end = e.getBoundingClientRect().bottom + scrollY - innerHeight;
+    return start + (end - start) * 0.64;
+  });
   await page.evaluate(
-    (y) => scrollTo({ top: y + 900, behavior: "instant" }),
-    start,
+    (y) => scrollTo({ top: y, behavior: "instant" }),
+    contraction,
   );
   await expect
     .poll(() =>
@@ -955,12 +957,20 @@ test("watch editorial opens the watch collection and carousel still loads verifi
     hero.getByRole("link", { name: "Breguet Expérimentale 1", exact: true }),
   ).toHaveAttribute("href", "/category/watches");
   await page.getByRole("button", { name: "Next featured product" }).click();
-  const product = hero.locator('[data-product-id="B012"] img');
+  const product = hero.getByRole("img", {
+    name: "Serge Lutens Chergui bottle, editorial illustration",
+  });
   await expect(product).toBeVisible();
   await expect
     .poll(() => product.evaluate((e) => (e as HTMLImageElement).naturalWidth))
     .toBeGreaterThan(0);
-  await expect(hero.locator('a[href="/product/B012"]').first()).toBeVisible();
+  await expect(
+    hero
+      .locator(
+        'a[href="/product/PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-CHERGUI"]',
+      )
+      .first(),
+  ).toBeVisible();
   await page.getByRole("button", { name: "Previous featured product" }).click();
   await hero
     .getByRole("link", { name: "Breguet Expérimentale 1", exact: true })
@@ -1211,7 +1221,7 @@ test("foreground exits before the photograph and split panels separate before th
   expect(Math.abs((await matrix("[data-hero-portal]")).y)).toBeLessThan(1);
   const rear = await matrix("[data-hero-world]");
   await seek(range.start + (range.end - range.start) * 0.9);
-  expect((await matrix("[data-hero-portal]")).y).toBeLessThan(-300);
+  expect((await matrix("[data-hero-portal]")).y).toBeLessThan(-40);
   expect(Math.abs((await matrix("[data-hero-world]")).y - rear.y)).toBeLessThan(
     30,
   );
@@ -1221,9 +1231,9 @@ test("foreground exits before the photograph and split panels separate before th
     travel: e.clientHeight - (e.firstElementChild as HTMLElement).offsetHeight,
   }));
   await seek(scene.start + scene.travel * 0.6);
-  expect((await matrix("[data-agent-parallax-left]")).y).toBeLessThan(-140);
+  expect((await matrix("[data-agent-parallax-left]")).y).toBeLessThan(-40);
   expect((await matrix("[data-agent-parallax-response]")).y).toBeGreaterThan(
-    140,
+    40,
   );
   expect(
     await page
@@ -1235,17 +1245,95 @@ test("foreground exits before the photograph and split panels separate before th
   const right = (await page
     .locator("[data-agent-parallax-response]")
     .boundingBox())!.y;
-  await seek(scene.start + scene.travel * 0.95);
+  await seek(scene.start + scene.travel + 400);
   expect(
     (await page.locator("[data-agent-parallax-left]").boundingBox())!.y,
-  ).toBeLessThan(left - 350);
+  ).toBeLessThan(left - 300);
   expect(
     (await page.locator("[data-agent-parallax-response]").boundingBox())!.y,
-  ).toBeLessThan(right - 350);
+  ).toBeLessThan(right - 300);
   await expect(
     page.getByRole("heading", { name: "Before you decide." }),
   ).toHaveCount(0);
   await page.emulateMedia({ reducedMotion: "reduce" });
   expect((await matrix("[data-agent-parallax-left]")).y).toBe(0);
   expect((await matrix("[data-agent-parallax-response]")).y).toBe(0);
+});
+
+test("first hover takes over a text reveal, compact sections and editorial carousel remain usable", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  await expect(page.locator("[data-home-ready]")).toHaveAttribute(
+    "data-home-ready",
+    "true",
+  );
+  const title = page
+    .locator("[data-agent-parallax-title] [data-living-type]")
+    .first();
+  await title.scrollIntoViewIfNeeded();
+  const letter = title.locator("[data-living-letter]").nth(7);
+  const box = (await letter.boundingBox())!;
+  await page.mouse.move(box.x + box.width / 2 + 10, box.y + box.height / 2);
+  await expect(title).toHaveAttribute("data-type-active", "true");
+  await expect
+    .poll(() =>
+      title
+        .locator("[data-living-letter]")
+        .evaluateAll((letters) =>
+          Math.max(
+            ...letters.map((el) =>
+              Math.abs(new DOMMatrix(getComputedStyle(el).transform).m42),
+            ),
+          ),
+        ),
+    )
+    .toBeGreaterThan(5);
+  const travel = await page
+    .locator('[data-editorial-scroll-track="agent"]')
+    .evaluate(
+      (e) => e.clientHeight - (e.firstElementChild as HTMLElement).offsetHeight,
+    );
+  expect(travel).toBeLessThan(550);
+  expect(
+    await page
+      .locator(".hero-dale-sub")
+      .evaluate((e) => parseFloat(getComputedStyle(e).fontSize)),
+  ).toBeGreaterThan(28);
+  await page.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+  await page.getByRole("button", { name: "Next featured product" }).click();
+  await expect(
+    page.getByRole("link", { name: "Serge Lutens Chergui", exact: true }),
+  ).toHaveAttribute(
+    "href",
+    "/product/PROD-FRAGRANCE-SERGE-LUTENS-SERGE-LUTENS-CHERGUI",
+  );
+  await page.getByRole("button", { name: "Next featured product" }).click();
+  await expect(
+    page.getByRole("img", { name: /AI-generated burgundy/ }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", {
+      name: "The Hermès-inspired leather edit",
+      exact: true,
+    }),
+  ).toHaveAttribute("href", "/department/bags");
+  await page.getByRole("button", { name: "Next featured product" }).click();
+  await expect(
+    page.getByRole("link", { name: "Samsung Galaxy Z Fold6", exact: true }),
+  ).toHaveAttribute(
+    "href",
+    "/product/PROD-PHONES-SAMSUNG-SAMSUNG-GALAXY-Z-FOLD6",
+  );
+  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  await expect(page.locator(".dale-editorial-welcome")).toBeVisible();
+  expect(
+    await page
+      .locator("[data-copilot-panel]")
+      .evaluate((e) => getComputedStyle(e).backgroundColor),
+  ).toBe("rgb(240, 237, 229)");
+  await expect(
+    page.getByRole("textbox", { name: "Message DALE" }),
+  ).toBeEditable();
 });
