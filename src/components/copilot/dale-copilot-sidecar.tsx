@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { Fragment, useMemo, useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import {
   Mic,
@@ -14,22 +14,36 @@ import {
 import { useCopilot } from "./copilot-context";
 import { formatMoney } from "@/domain/money";
 import { AssistantMessage } from "./assistant-message";
+import { ActionActivity } from "./action-activity";
+import { conversationActivity } from "./conversation-activity";
 import { confirmationCopy } from "./confirmation-copy";
 
 export function DaleCopilotSidecar() {
   const c = useCopilot();
+  const activity = useMemo(
+    () => conversationActivity(c.messages, c.state?.receipts || []),
+    [c.messages, c.state?.receipts],
+  );
   const [input, setInput] = useState("");
   const [cartView, setCartView] = useState(false);
   const feed = useRef<HTMLDivElement>(null);
   const historyHeight = useRef<number | null>(null);
+  const followLatest = useRef(true);
+  const lastMessage = useRef<string | undefined>(undefined);
   useEffect(() => {
-    if (feed.current) {
-      feed.current.scrollTop =
-        historyHeight.current === null
-          ? feed.current.scrollHeight
-          : feed.current.scrollHeight - historyHeight.current;
+    const element = feed.current;
+    if (!element) return;
+    const latest = c.messages.at(-1);
+    if (historyHeight.current !== null) {
+      element.scrollTop = element.scrollHeight - historyHeight.current;
       historyHeight.current = null;
+    } else if (
+      followLatest.current ||
+      (latest?.sender === "user" && latest.id !== lastMessage.current)
+    ) {
+      element.scrollTop = element.scrollHeight;
     }
+    lastMessage.current = latest?.id;
   }, [c.messages, c.isThinking, c.error]);
   const send = () => {
     if (!(input || c.voiceDraft).trim() || c.isThinking) return;
@@ -101,6 +115,13 @@ export function DaleCopilotSidecar() {
       </header>
       <div
         ref={feed}
+        onScroll={() => {
+          const element = feed.current;
+          if (element)
+            followLatest.current =
+              element.scrollHeight - element.scrollTop - element.clientHeight <
+              72;
+        }}
         className="dale-messages-feed"
         tabIndex={0}
         data-lenis-prevent="true"
@@ -171,36 +192,38 @@ export function DaleCopilotSidecar() {
               </div>
             )}
             {c.messages.map((m) => (
-              <div
-                key={m.id}
-                data-message-id={m.id}
-                className={`dale-msg-wrapper ${m.sender === "user" ? "user-side" : "assistant-side"}`}
-              >
+              <Fragment key={m.id}>
                 <div
-                  className="dale-msg-bubble"
-                  style={{ whiteSpace: "pre-wrap", overflowWrap: "anywhere" }}
+                  data-message-id={m.id}
+                  className={`dale-msg-wrapper ${m.sender === "user" ? "user-side" : "assistant-side"}`}
                 >
-                  {m.sender === "assistant" ? (
-                    <AssistantMessage text={m.text} />
-                  ) : (
-                    m.text
-                  )}
+                  <div
+                    className="dale-msg-bubble"
+                    style={{ whiteSpace: "pre-wrap", overflowWrap: "anywhere" }}
+                  >
+                    {m.sender === "assistant" ? (
+                      <AssistantMessage text={m.text} />
+                    ) : (
+                      m.text
+                    )}
+                  </div>
                 </div>
-              </div>
+                <ActionActivity receipts={activity.get(m.id)} />
+              </Fragment>
             ))}
             {c.state?.catalog_match_status === "not_found" && (
-              <p className="dale-action-card">
+              <p className="dale-task-status">
                 No matching product was found under the requested identity and
                 filters.
               </p>
             )}
             {c.state?.catalog_match_status === "choose_variant" && (
-              <p className="dale-action-card">
+              <p className="dale-task-status">
                 Matching variants — choose the exact product before adding it.
               </p>
             )}
             {c.state?.catalog_match_status === "semantic_candidates" && (
-              <p className="dale-action-card">
+              <p className="dale-task-status">
                 Search candidates — requested features need recorded evidence.
               </p>
             )}
@@ -254,21 +277,12 @@ export function DaleCopilotSidecar() {
                   </button>
                 </section>
               ))}
-            {c.state?.receipts.slice(-3).map((r) => (
-              <p key={r.id} className="dale-action-card">
-                <strong>Browser: {r.status}</strong> — {r.outcome}
-              </p>
-            ))}
           </>
         )}
-        {c.activity && (
-          <p role="status" className="dale-action-card">
-            {c.activity}
-          </p>
-        )}
         {c.isThinking && (
-          <div role="status" className="dale-msg-bubble thinking-bubble">
-            DALE is working…{" "}
+          <div role="status" className="dale-task-status">
+            <span className="dale-task-dot" aria-hidden="true" />
+            <span>{c.activity || "DALE is working…"}</span>
             <button type="button" onClick={c.cancel}>
               Stop
             </button>
@@ -327,7 +341,7 @@ export function DaleCopilotSidecar() {
           <p>Review the transcript in the input before sending.</p>
         )}
         {c.error && (
-          <p role="alert" className="dale-action-card">
+          <p role="alert" className="dale-task-status dale-task-error">
             {c.error}
           </p>
         )}

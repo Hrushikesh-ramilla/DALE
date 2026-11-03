@@ -653,3 +653,120 @@ test("a tab reserved by Send loads with Chromium popup blocking enabled", async 
     await browser.close();
   }
 });
+
+test("action updates are compact, collapsed and anchored to their original request", async ({
+  page,
+}) => {
+  const state = await (await page.request.get("/api/copilot/state")).json();
+  const first = "11111111-1111-4111-8111-111111111111";
+  const second = "22222222-2222-4222-8222-222222222222";
+  const makeReceipt = (
+    id: string,
+    turnId: string,
+    status: string,
+    outcome: string,
+  ) => ({
+    id,
+    turnId,
+    status,
+    outcome,
+    toolCallId: id,
+    operation: { type: "navigate", path: "/cart" },
+    expectedRevision: 1,
+    createdAt: "2026-10-24T00:00:00Z",
+  });
+  const view = {
+    ...state,
+    revision: state.revision + 1000,
+    turn: { id: second, status: "completed" },
+    messages: [
+      {
+        id: first,
+        sender: "user",
+        text: "Open the listing",
+        timestamp: 1,
+        sequence: 1,
+      },
+      {
+        id: "reply-first",
+        sender: "assistant",
+        text: "Here is your listing.",
+        timestamp: 2,
+        sequence: 2,
+      },
+      {
+        id: second,
+        sender: "user",
+        text: "Add this to my cart",
+        timestamp: 3,
+        sequence: 3,
+      },
+      {
+        id: "reply-second",
+        sender: "assistant",
+        text: "Your cart is ready.",
+        timestamp: 4,
+        sequence: 4,
+      },
+    ],
+    receipts: [
+      makeReceipt("new", second, "succeeded", "Requested page rendered."),
+      makeReceipt(
+        "late-old",
+        first,
+        "failed",
+        "The previous page did not load.",
+      ),
+      makeReceipt(
+        "superseded",
+        first,
+        "failed",
+        "Superseded by a newer customer message.",
+      ),
+    ],
+  };
+  await page.route("**/api/copilot/state", (route) =>
+    route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify(view),
+    }),
+  );
+  await page.reload();
+  await page.getByRole("button", { name: "Open DALE assistant" }).click();
+  const updates = page.locator("[data-action-activity]");
+  await expect(updates).toHaveCount(2);
+  expect(await updates.first().getAttribute("open")).toBeNull();
+  expect((await updates.first().boundingBox())!.height).toBeLessThan(35);
+  expect(
+    await updates
+      .first()
+      .evaluate((e) => parseFloat(getComputedStyle(e).fontSize)),
+  ).toBeLessThanOrEqual(12);
+  await expect(page.locator(".dale-messages-feed")).not.toContainText(
+    "Superseded by",
+  );
+  const order = await page
+    .locator(".dale-messages-feed")
+    .evaluate((e) =>
+      Array.from(
+        e.querySelectorAll("[data-message-id], [data-action-activity]"),
+      ).map((el) => el.getAttribute("data-message-id") || "activity"),
+    );
+  expect(order).toEqual([
+    first,
+    "reply-first",
+    "activity",
+    second,
+    "reply-second",
+    "activity",
+  ]);
+  await page.screenshot({
+    path: test.info().outputPath("compact-updates.png"),
+  });
+  await updates.first().locator("summary").click();
+  await expect(updates.first().locator("ul")).toContainText(
+    "The previous page did not load.",
+  );
+  await updates.first().locator("summary").click();
+  await expect(updates.first().locator("ul")).not.toBeVisible();
+});
