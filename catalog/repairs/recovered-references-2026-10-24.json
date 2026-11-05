@@ -1,0 +1,2159 @@
+[
+  {
+    "oldId": "PROD-BACKPACKS-RIMOWA-RIMOWA-NEVER-STILL-LARGE",
+    "expected": {
+      "name": "Rimowa Never Still Flap Backpack Large (Canvas & Leather)",
+      "brand": "Rimowa",
+      "source": "https://www.rimowa.com/us/en/bags/backpacks/large-backpack/52500003.html",
+      "attributes": {
+        "brand": "rimowa",
+        "material": "water-repellent canvas and full-grain leather",
+        "modelName": "never still flap backpack large (canvas & leather)",
+        "dimensionsCm": "33 x 44 x 17",
+        "volumeLiters": 23,
+        "waterResistant": true,
+        "laptopCompartmentInches": 16
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-80B1C583B049385DDC10",
+      "name": "Rimowa Never Still Flap Backpack Large (Canvas & Leather) · 52500073",
+      "brand": "Rimowa",
+      "color": "Black",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-80b1c583b049385ddc10-75dc43b2bcc52213.webp",
+        "source": "https://www.rimowa.com/us/en/bags/never-still/backpack/flap-backpack-large/52500073.html",
+        "alt": "Rimowa Never Still Flap Backpack Large (Canvas & Leather) · 52500073",
+        "attribution": "Rimowa manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 68900,
+      "specs": [
+        "Material: Canvas",
+        "Color: Black",
+        "Bespoke Clip Buckle: Bespoke speed clip buckle with RIMOWA monogram emblazoned.",
+        "Padded Back & Adjustable Buckle: Engineered to offer additional support for maximum comfort on the go.",
+        "Suitcase Attachment Sleeve: Make the bag even easier to carry on your travels by attaching it to your suitcase's telescopic handle.",
+        "Removable Leather Tag: A removable and customizable leather tag."
+      ],
+      "stock": 25,
+      "source": "https://www.rimowa.com/us/en/bags/never-still/backpack/flap-backpack-large/52500073.html",
+      "category": "bags",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference 52500073",
+        "review": "specifications",
+        "missing": [
+          "Not established for this reference: dimensionsCm",
+          "Not established for this reference: volumeLiters",
+          "Not established for this reference: waterResistant",
+          "Not established for this reference: laptopCompartmentInches"
+        ]
+      },
+      "familyId": "rimowa:rimowa-never-still-large",
+      "leafType": "backpacks",
+      "modelName": "Never Still Flap Backpack Large (Canvas & Leather)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "rimowa",
+        "modelName": "never still flap backpack large (canvas & leather)",
+        "sourceSku": "52500073",
+        "material": "Canvas",
+        "finish": "Black"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "52500073 · Black",
+      "description": "Made in Italy and crafted from canvas and full-grain leather, the Never Still - Canvas Flap Backpack Large in black is designed to be a versatile daily and travel bag for those always on the go.This soft canvas backpack, secured by a speed clip buckle and featuring a padded back for maximum comfort, is the perfect companion for every occasion while offering a wide range of additional functionalities:- Two external side zipped pockets- Adjustable shoulder straps for a personalized fit (min 8.7\", max 16.1\")- Suitcase attachment sleeve- Large drawstring compartment- 16-inch laptop-sized padded pocketIncludes a complimentary leather tag, which is removable and customizable.The Never Still Flap Backpack Large is part of the RIMOWA Never Still collection, where functionality is at the core of every design. The collection’s signature grooved surfaces offer a reinterpretation of the iconic pattern found on our suitcases.. Material: Canvas. Color: Black. Bespoke Clip Buckle: Bespoke speed clip buckle with RIMOWA monogram emblazoned.. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.rimowa.com/us/en/bags/never-still/backpack/flap-backpack-large/52500073.html",
+      "manufacturerSku": "52500073",
+      "sourceHash": "dcfbf7a9d311f8719218708ab3830d0392436a343e9f995683429d28a67fc58e",
+      "sourceImage": "https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-master-catalog-final/default/dw721fb845/images/large/52500073_1.png",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bespoke Clip Buckle",
+          "value": "Bespoke speed clip buckle with RIMOWA monogram emblazoned."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Padded Back & Adjustable Buckle",
+          "value": "Engineered to offer additional support for maximum comfort on the go."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Suitcase Attachment Sleeve",
+          "value": "Make the bag even easier to carry on your travels by attaching it to your suitcase's telescopic handle."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Removable Leather Tag",
+          "value": "A removable and customizable leather tag."
+        }
+      ],
+      "description": "Made in Italy and crafted from canvas and full-grain leather, the Never Still - Canvas Flap Backpack Large in black is designed to be a versatile daily and travel bag for those always on the go.This soft canvas backpack, secured by a speed clip buckle and featuring a padded back for maximum comfort, is the perfect companion for every occasion while offering a wide range of additional functionalities:- Two external side zipped pockets- Adjustable shoulder straps for a personalized fit (min 8.7\", max 16.1\")- Suitcase attachment sleeve- Large drawstring compartment- 16-inch laptop-sized padded pocketIncludes a complimentary leather tag, which is removable and customizable.The Never Still Flap Backpack Large is part of the RIMOWA Never Still collection, where functionality is at the core of every design. The collection’s signature grooved surfaces offer a reinterpretation of the iconic pattern found on our suitcases.",
+      "sourceFile": "ae0da5d3b846d4899ebe417c04474570925b76517c5fe26cba724544bfb42d8c.json",
+      "photographSha256": "75dc43b2bcc52213ce2b9ed1ecae126bffee3b3c833886bfd07efcb5126f7d3c",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-KITCHENWARE-ALL-CLAD-ALL-CLAD-D3-STAINLESS-SAUTE-PAN-3QT",
+    "expected": {
+      "name": "All-Clad D3 Stainless 3-Quart Saute Pan with Lid",
+      "brand": "All-Clad",
+      "source": "https://www.all-clad.com/cookware/d3-stainless-saute-pan-3qt",
+      "attributes": {
+        "brand": "all-clad",
+        "modelName": "d3 stainless 3-quart saute pan with lid",
+        "materialAlloy": "3-Ply Stainless Steel",
+        "capacityLiters": 2.8,
+        "dishwasherSafe": true,
+        "ovenSafeMaxTempC": 315,
+        "cooktopCompatibility": "All cooktops incl. Induction"
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-56DCFC8A93D5D60B1CAD",
+      "name": "All-Clad D3 Stainless 3-Quart Saute Pan with Lid · 8701005779",
+      "brand": "All-Clad",
+      "color": "Polished Stainless Steel",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-56dcfc8a93d5d60b1cad-40880a288772ed48.webp",
+        "source": "https://www.all-clad.com/d3-stainless-everyday-3-ply-bonded-cookware-saute-pan-with-lid-3-qt.html",
+        "alt": "All-Clad D3 Stainless 3-Quart Saute Pan with Lid · 8701005779",
+        "attribution": "All-Clad manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 22500,
+      "specs": [
+        "Material: Stainless Steel",
+        "Exterior Finish: Polished Stainless Steel",
+        "Color: Silver",
+        "Piece Count: 2",
+        "Dimensions: 22.6 x 11.4 x 3.8 inches",
+        "Made in: United States",
+        "Warranty: Limited Lifetime Warranty - All-Clad Cookware, Knives, Accessories, and Bakeware"
+      ],
+      "stock": 25,
+      "source": "https://www.all-clad.com/d3-stainless-everyday-3-ply-bonded-cookware-saute-pan-with-lid-3-qt.html",
+      "category": "home",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference 8701005779",
+        "review": "specifications",
+        "missing": [
+          "Not established for this reference: materialAlloy",
+          "Not established for this reference: capacityLiters",
+          "Not established for this reference: dishwasherSafe",
+          "Not established for this reference: ovenSafeMaxTempC",
+          "Not established for this reference: cooktopCompatibility"
+        ]
+      },
+      "familyId": "all-clad:all-clad-d3-stainless-saute-pan-3qt",
+      "leafType": "kitchenware",
+      "modelName": "D3 Stainless 3-Quart Saute Pan with Lid",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "all clad",
+        "modelName": "d3 stainless 3-quart saute pan with lid",
+        "sourceSku": "8701005779"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "8701005779 · Polished Stainless Steel",
+      "description": "The pan that brings every meal together. The D3 Everyday 3-quart Sauté Pan with Lid offers a wide base for exceptional browning and straight sides that make simmering sauces, deglazing, and one-pan dinners effortless. Built for professional kitchens & cherished by home cooks this heirloom cookware is Made in the USA with global components in our Pennsylvania Factory since 1971. As the inventor of bonded metal cookware, All-Clad continues to define trusted performance. Our exclusive line of cookware with our most requested features, D3® Everyday features the original fully bonded tri-ply construction trusted by chefs. The aluminum core delivers fast, even heat, while the high-quality stainless steel surface sears beautifully for professional results and long-lasting durability. D3 Everyday has a professionally polished stainless steel finish complete with drip-free pouring rims and comfort handles. Built to outlast, each piece is precision engineered and third-party tested for safety—delivering performance you can trust. Backed by five decades of manufacturing expertise, All-Clad sets the standard for professional kitchen performance. Backed by our Limited Lifetime Warranty. Our cookware is oven & broiler safe up to 600°F and compatible with any stovetop, including induction. Handwash Only.. Material: Stainless Steel. Exterior Finish: Polished Stainless Steel. Color: Silver. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.all-clad.com/d3-stainless-everyday-3-ply-bonded-cookware-saute-pan-with-lid-3-qt.html",
+      "manufacturerSku": "8701005779",
+      "sourceHash": "69270655bbcf76fb6570da89c27fb064eec2a95bc7b505826867a9f37f501ff9",
+      "sourceImage": "https://www.all-clad.com/media/catalog/product/n/i/ni4mymovbfmf1voea063_6ocvobh8vhjcj43u.jpg?optimize=high&amp;bg-color=255,255,255&amp;fit=bounds&amp;height=&amp;width=&amp;canvas=:",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Exterior Finish",
+          "value": "Polished Stainless Steel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Piece Count",
+          "value": "2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dimensions",
+          "value": "22.6  x 11.4 x 3.8 inches"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Weight",
+          "value": "4.440000"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Made in",
+          "value": "United States"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Item Care",
+          "value": "Before First Use: Be sure to wash the pan before the first use and to clean thoroughly between uses.For Browning, Sautéing and Searing: Start with food at room temperature. Dry food before cooking to prevent splattering. Preheat pan on low to moderate heat before cooking. Water will dance on pan when ready. Add enough oil to cover the pan’s surface. Add food to the pan when the oil is hot. You will see a faint vapor when the oil is ready. Food should sizzle when added to the pan. Allow the food to cook. On stainless, it will be ready to turn when it no longer sticks to the pan. After removing food from pan, use browned food bits for sauce by deglazing with wine or stock.For Boiling: This is the only occasion when high heat should be used.For Cooking in the Oven: Oven and broiler safe up to 600°F. Extended exposure to temperatures over 500°F can cause stainless steel to change color, but will not affect its performance.Caution: With the exception of preheating, empty pans should not be left on a hot burner as it can cause damage. Overheating can cause brown or blue stains to appear. To avoid small white dots or pits from forming in your pan, bring liquids to a boil or wait until food starts to cook before adding salt. Pitting does not interfere with cooking performance but can diminish the beauty of your pan’s interior."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Item Cleaning",
+          "value": "To keep your All-Clad looking brand new, we recommend washing your cookware with a soap and sponge.Allow the pan to cool prior to cleaning. Rinse off any excess food with warm water. Soak in warm, soapy water, then wash with a sponge or soft cloth. Use a nylon scouring pad for more difficult cleaning. Rinse with warm water and dry immediately to prevent spotting.For Burnt Food: Sprinkle the surface generously with baking soda, add water and bring to a boil. Use a wooden spoon to loosen the food particles from the surface.For Tough to Clean Spots or Marks, like burnt fat, protein shadows, and charred food: Clean with a nonabrasive, non-chlorine cleanser, like All-Clad cookware cleaner, Bar Keeper’s Friend® or Bon Ami®. Form a paste with the cookware cleanser and a small amount of water. Apply the paste using a soft cloth or sponge, rubbing in a circular motion. Rinse with warm water and dry immediately. Repeat if needed, allowing the paste to soak on the pan before scrubbing.For Discoloration, like Blue or Rainbow Coloring: Wipe the pan with a sponge or soft cloth and white vinegar.For Cloudy White Hard Water Spots: Remove by boiling a 1:1 white vinegar to water solution.Caution: Do not use oven cleaners, steel wool, steel scouring pads, harsh detergents or detergents containing bleach or peroxide, which can damage the pan. Nylon scrubbing pads can be used on stainless steel surfaces only.  Never place a hot pan under cold water, as it could cause warping."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "Limited Lifetime Warranty - All-Clad Cookware, Knives, Accessories, and Bakeware"
+        }
+      ],
+      "description": "The pan that brings every meal together. The D3 Everyday 3-quart Sauté Pan with Lid offers a wide base for exceptional browning and straight sides that make simmering sauces, deglazing, and one-pan dinners effortless. Built for professional kitchens & cherished by home cooks this heirloom cookware is Made in the USA with global components in our Pennsylvania Factory since 1971. As the inventor of bonded metal cookware, All-Clad continues to define trusted performance. Our exclusive line of cookware with our most requested features, D3® Everyday features the original fully bonded tri-ply construction trusted by chefs. The aluminum core delivers fast, even heat, while the high-quality stainless steel surface sears beautifully for professional results and long-lasting durability. D3 Everyday has a professionally polished stainless steel finish complete with drip-free pouring rims and comfort handles. Built to outlast, each piece is precision engineered and third-party tested for safety—delivering performance you can trust. Backed by five decades of manufacturing expertise, All-Clad sets the standard for professional kitchen performance. Backed by our Limited Lifetime Warranty. Our cookware is oven & broiler safe up to 600°F and compatible with any stovetop, including induction. Handwash Only.",
+      "sourceFile": "5efdbca2ba31708c5b7232dcc1d2d217ccaf500df9085a9cb08691c035cdc6a4.json",
+      "photographSha256": "40880a288772ed48ad411e6df3717a671fdb8280f0ed0bbd6644e27018358b6b",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-KITCHENWARE-ALL-CLAD-ALL-CLAD-D5-BRUSHED-FRY-PAN-10",
+    "expected": {
+      "name": "All-Clad D5 Brushed Stainless 10-Inch Fry Pan",
+      "brand": "All-Clad",
+      "source": "https://www.all-clad.com/cookware/d5-brushed-fry-pan-10",
+      "attributes": {
+        "brand": "all-clad",
+        "modelName": "d5 brushed stainless 10-inch fry pan",
+        "materialAlloy": "5-Ply Stainless Steel",
+        "capacityLiters": 1.8,
+        "dishwasherSafe": true,
+        "ovenSafeMaxTempC": 315,
+        "cooktopCompatibility": "All cooktops incl. Induction"
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-8A40279CEE930F26A96B",
+      "name": "All-Clad D5 Brushed Stainless 10-Inch Fry Pan · 8701004128",
+      "brand": "All-Clad",
+      "color": "Polished Stainless Steel",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-8a40279cee930f26a96b-fccc3d0cc13ba767.webp",
+        "source": "https://www.all-clad.com/d5-stainless-brushed-5-ply-bonded-cookware-fry-pan-10-inch.html",
+        "alt": "All-Clad D5 Brushed Stainless 10-Inch Fry Pan · 8701004128",
+        "attribution": "All-Clad manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 22500,
+      "specs": [
+        "Material: Stainless Steel",
+        "Exterior Finish: Brushed Stainless Steel",
+        "Color: Silver",
+        "Piece Count: 1",
+        "Dimensions: 15.0 x 8.6 x 2.9 inches",
+        "Made in: United States",
+        "Warranty: Limited Lifetime Warranty - All-Clad Cookware, Knives, Accessories, and Bakeware"
+      ],
+      "stock": 25,
+      "source": "https://www.all-clad.com/d5-stainless-brushed-5-ply-bonded-cookware-fry-pan-10-inch.html",
+      "category": "home",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference 8701004128",
+        "review": "specifications",
+        "missing": [
+          "Not established for this reference: materialAlloy",
+          "Not established for this reference: capacityLiters",
+          "Not established for this reference: dishwasherSafe",
+          "Not established for this reference: ovenSafeMaxTempC",
+          "Not established for this reference: cooktopCompatibility"
+        ]
+      },
+      "familyId": "all-clad:all-clad-d5-brushed-fry-pan-10",
+      "leafType": "kitchenware",
+      "modelName": "D5 Brushed Stainless 10-Inch Fry Pan",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "all clad",
+        "modelName": "d5 brushed stainless 10-inch fry pan",
+        "sourceSku": "8701004128"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "8701004128 · Polished Stainless Steel",
+      "description": "The everyday workhorse of the kitchen. Sized for proteins, vegetables, and one-pan meals, the D5 10-inch Fry Pan delivers the space and versatility to handle whatever&#039;s on the menu. Built for professional kitchens & cherished by home cooks this heirloom cookware is Made in the USA with global components in our Pennsylvania Factory since 1971. As the inventor of bonded metal cookware, All-Clad continues to define trusted performance. Upgrade to D5® Stainless, built on the original 5-ply bonded technology invented by All-Clad. The steel core provides supremely even, steady heat for perfect braising and pan roasting, while the stainless steel surface creates a flawless sear.. Elevated in both form and function, D5® Stainless features a refined brushed stainless steel finish, flared edges for drip-free pouring, and generously sized, double-riveted stainless steel handles for a secure, confident grip. Built to outlast, each piece is precision engineered and third-party tested for safety—delivering performance you can trust. Backed by five decades of manufacturing expertise, All-Clad sets the standard for professional kitchen performance. Backed by our Limited Lifetime Warranty. Our cookware is oven & broiler safe up to 600°F and compatible with any stovetop, including induction. Handwash Only.. Material: Stainless Steel. Exterior Finish: Brushed Stainless Steel. Color: Silver. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.all-clad.com/d5-stainless-brushed-5-ply-bonded-cookware-fry-pan-10-inch.html",
+      "manufacturerSku": "8701004128",
+      "sourceHash": "c82338616a051b1e4b5cd831b7e6c81babf16f76333ba70882a9bb83a447bf17",
+      "sourceImage": "https://www.all-clad.com/media/catalog/product/v/w/vwm4zabghtjmpeznnf6x_6u1uihxf8frpvndi.jpg?optimize=high&amp;bg-color=255,255,255&amp;fit=bounds&amp;height=&amp;width=&amp;canvas=:",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Exterior Finish",
+          "value": "Brushed Stainless Steel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Piece Count",
+          "value": "1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dimensions",
+          "value": "15.0  x 8.6 x 2.9 inches"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Weight",
+          "value": "3.000000"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Made in",
+          "value": "United States"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Item Care",
+          "value": "Before First Use: Be sure to wash the pan before the first use and to clean thoroughly between uses.For Browning; sautéing and Searing: Start with food at room temperature. Dry food before cooking to prevent splattering. Preheat pan on low to moderate heat before cooking. Water will dance on pan when ready. Add enough oil to cover the pan's surface. Add food to the pan when the oil is hot. You will see a faint vapor when the oil is ready. Food should sizzle when added to the pan. Allow the food to cook. On stainless; it will be ready to turn when it no longer sticks to the pan. After removing food from pan; use browned food bits for sauce by deglazing with wine or stock.For Boiling: This is the only occasion when high heat should be used.For Cooking in the Oven: Oven and broiler safe up to 600°F. Extended exposure to temperatures over 500°F can cause stainless steel to change color; but will not affect its performance.Caution: With the exception of preheating; empty pans should not be left on a hot burner as it can cause damage. Overheating can cause brown or blue stains to appear. To avoid small white dots or pits from forming in your pan; bring liquids to a boil or wait until food starts to cook before adding salt. Pitting does not interfere with cooking performance but can diminish the beauty of your pans interior."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Item Cleaning",
+          "value": "To keep your All-Clad looking brand new; we recommend washing your cookware with a soap and sponge.Allow the pan to cool prior to cleaning. Rinse off any excess food with warm water. Soak in warm; soapy water; then wash with a sponge or soft cloth. Use a nylon scouring pad for more difficult cleaning. Rinse with warm water and dry immediately to prevent spotting.For Burnt Food: Sprinkle the surface generously with baking soda; add water and bring to a boil. Use a wooden spoon to loosen the food particles from the surface.For Tough to Clean Spots or Marks; like burnt fat; protein shadows; and charred food: Clean with a nonabrasive; non-chlorine cleanser; like All-Clad cookware cleaner; Bar Keepers Friend® or Bon Ami®. Form a paste with the cookware cleanser and a small amount of water. Apply the paste using a soft cloth or sponge; rubbing in a circular motion. Rinse with warm water and dry immediately. Repeat if needed; allowing the paste to soak on the pan before scrubbing.For Discoloration; like Blue or Rainbow Coloring: Wipe the pan with a sponge or soft cloth and white vinegar.For Cloudy White Hard Water Spots: Remove by boiling a 1:1 white vinegar to water solution.Caution: Do not use oven cleaners; steel wool; steel scouring pads; harsh detergents or detergents containing bleach or peroxide; which can damage the pan. Nylon scrubbing pads can be used on stainless steel surfaces only.  Never place a hot pan under cold water; as it could cause warping."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "Limited Lifetime Warranty - All-Clad Cookware, Knives, Accessories, and Bakeware"
+        }
+      ],
+      "description": "The everyday workhorse of the kitchen. Sized for proteins, vegetables, and one-pan meals, the D5 10-inch Fry Pan delivers the space and versatility to handle whatever&#039;s on the menu. Built for professional kitchens & cherished by home cooks this heirloom cookware is Made in the USA with global components in our Pennsylvania Factory since 1971. As the inventor of bonded metal cookware, All-Clad continues to define trusted performance. Upgrade to D5® Stainless, built on the original 5-ply bonded technology invented by All-Clad. The steel core provides supremely even, steady heat for perfect braising and pan roasting, while the stainless steel surface creates a flawless sear.. Elevated in both form and function, D5® Stainless features a refined brushed stainless steel finish, flared edges for drip-free pouring, and generously sized, double-riveted stainless steel handles for a secure, confident grip. Built to outlast, each piece is precision engineered and third-party tested for safety—delivering performance you can trust. Backed by five decades of manufacturing expertise, All-Clad sets the standard for professional kitchen performance. Backed by our Limited Lifetime Warranty. Our cookware is oven & broiler safe up to 600°F and compatible with any stovetop, including induction. Handwash Only.",
+      "sourceFile": "9d5c78a6513f1a1749363f1f1cdb04a5a048dc3dd5255c1aa192073a237293ca.json",
+      "photographSha256": "fccc3d0cc13ba767819d808a15eb6218e3c4f8fd697d390b0333e11fac3adec3",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-KITCHENWARE-ALL-CLAD-ALL-CLAD-D5-BRUSHED-SOUP-POT-4QT",
+    "expected": {
+      "name": "All-Clad D5 Brushed Stainless 4-Quart Soup Pot with Ladle",
+      "brand": "All-Clad",
+      "source": "https://www.all-clad.com/cookware/d5-brushed-soup-pot-4qt",
+      "attributes": {
+        "brand": "all-clad",
+        "modelName": "d5 brushed stainless 4-quart soup pot with ladle",
+        "materialAlloy": "5-Ply Stainless Steel",
+        "capacityLiters": 3.8,
+        "dishwasherSafe": true,
+        "ovenSafeMaxTempC": 315,
+        "cooktopCompatibility": "All cooktops incl. Induction"
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-8977E2E4258BC6346632",
+      "name": "All-Clad D5 Brushed Stainless 4-Quart Soup Pot with Ladle · 8400002269",
+      "brand": "All-Clad",
+      "color": "Polished Stainless Steel",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-8977e2e4258bc6346632-eaf320aa3dd017ec.webp",
+        "source": "https://www.all-clad.com/bd5-stainless-steel-4-quart-soup-pot-and-ladle-set.html",
+        "alt": "All-Clad D5 Brushed Stainless 4-Quart Soup Pot with Ladle · 8400002269",
+        "attribution": "All-Clad manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 22500,
+      "specs": [
+        "Material: Stainless Steel",
+        "Exterior Finish: Brushed Stainless Steel",
+        "Color: Silver",
+        "Piece Count: 3",
+        "Dimensions: 12.6 x 8.8 x 6.3 inches",
+        "Made in: Soup Pot: Made in USA with Global Components. Ladle: Designed in Canonsburg, PA - Made in China.",
+        "Warranty: Limited Lifetime Warranty - All-Clad Cookware, Knives, Accessories, and Bakeware"
+      ],
+      "stock": 25,
+      "source": "https://www.all-clad.com/bd5-stainless-steel-4-quart-soup-pot-and-ladle-set.html",
+      "category": "home",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference 8400002269",
+        "review": "specifications",
+        "missing": [
+          "Not established for this reference: materialAlloy",
+          "Not established for this reference: capacityLiters",
+          "Not established for this reference: dishwasherSafe",
+          "Not established for this reference: ovenSafeMaxTempC",
+          "Not established for this reference: cooktopCompatibility"
+        ]
+      },
+      "familyId": "all-clad:all-clad-d5-brushed-soup-pot-4qt",
+      "leafType": "kitchenware",
+      "modelName": "D5 Brushed Stainless 4-Quart Soup Pot with Ladle",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "all clad",
+        "modelName": "d5 brushed stainless 4-quart soup pot with ladle",
+        "sourceSku": "8400002269"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "8400002269 · Polished Stainless Steel",
+      "description": "Simmer rich broths, slow-cook hearty soups, and serve straight from the pot with the included ladle. The D5 4-quart Soup Pot with lid features tall sides and a fitted lid to lock in every drop of flavor. Made in the USA with global components since 1971. At our Canonsburg, Pennsylvania facility, skilled metalcrafters engineer our cookware, ensuring unparalleled quality in every piece. D5® Stainless is the original patented five-ply construction that delivers ultimate even heating with its steel core. The high quality stainless steel surface sears to perfection and stainless steel exterior provides warp resistance. D5 has an elegant brushed stainless steel finish with flared edges for drip-free pouring. Our oversized, double riveted stainless steel handles ensure a secure grip. Built to Outlast, engineered with precision, and verified through rigorous third-party testing for safety. Backed by five decades of manufacturing expertise that have set the standard for professional kitchen performance. Our cookware is oven & broiler safe up to 600°F and compatible with any stovetop, including induction. Handwash Only. Limited Lifetime Warranty. Soup Pot: Made in USA with Global Components. Ladle: Designed in Canonsburg, PA - Made in China.. Material: Stainless Steel. Exterior Finish: Brushed Stainless Steel. Color: Silver. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.all-clad.com/bd5-stainless-steel-4-quart-soup-pot-and-ladle-set.html",
+      "manufacturerSku": "8400002269",
+      "sourceHash": "4dfd1c281480865b4be1596ffea7c8624ac845c33b37cfa3d0dd4fd00925cadc",
+      "sourceImage": "https://www.all-clad.com/media/catalog/product/f/8/f8dtzzvedwpbahcuz3qy_55grcu8mjfzavhku.jpg?optimize=high&amp;bg-color=255,255,255&amp;fit=bounds&amp;height=&amp;width=&amp;canvas=:",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Exterior Finish",
+          "value": "Brushed Stainless Steel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Color",
+          "value": "Silver"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Piece Count",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dimensions",
+          "value": "12.6  x 8.8 x 6.3 inches"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Weight",
+          "value": "6.360000"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Made in",
+          "value": "Soup Pot: Made in USA with Global Components. Ladle: Designed in Canonsburg, PA - Made in China."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Item Care",
+          "value": "Before First Use: Be sure to wash the pan before the first use and to clean thoroughly between uses.For Browning; sautéing and Searing: Start with food at room temperature. Dry food before cooking to prevent splattering. Preheat pan on low to moderate heat before cooking. Water will dance on pan when ready. Add enough oil to cover the pan's surface. Add food to the pan when the oil is hot. You will see a faint vapor when the oil is ready. Food should sizzle when added to the pan. Allow the food to cook. On stainless; it will be ready to turn when it no longer sticks to the pan. After removing food from pan; use browned food bits for sauce by deglazing with wine or stock.For Boiling: This is the only occasion when high heat should be used.For Cooking in the Oven: Oven and broiler safe up to 600°F. Extended exposure to temperatures over 500°F can cause stainless steel to change color; but will not affect its performance.Caution: With the exception of preheating; empty pans should not be left on a hot burner as it can cause damage. Overheating can cause brown or blue stains to appear. To avoid small white dots or pits from forming in your pan; bring liquids to a boil or wait until food starts to cook before adding salt. Pitting does not interfere with cooking performance but can diminish the beauty of your pans interior."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Item Cleaning",
+          "value": "To keep your All-Clad looking brand new; we recommend washing your cookware with a soap and sponge.Allow the pan to cool prior to cleaning. Rinse off any excess food with warm water. Soak in warm; soapy water; then wash with a sponge or soft cloth. Use a nylon scouring pad for more difficult cleaning. Rinse with warm water and dry immediately to prevent spotting.For Burnt Food: Sprinkle the surface generously with baking soda; add water and bring to a boil. Use a wooden spoon to loosen the food particles from the surface.For Tough to Clean Spots or Marks; like burnt fat; protein shadows; and charred food: Clean with a nonabrasive; non-chlorine cleanser; like All-Clad cookware cleaner; Bar Keepers Friend® or Bon Ami®. Form a paste with the cookware cleanser and a small amount of water. Apply the paste using a soft cloth or sponge; rubbing in a circular motion. Rinse with warm water and dry immediately. Repeat if needed; allowing the paste to soak on the pan before scrubbing.For Discoloration; like Blue or Rainbow Coloring: Wipe the pan with a sponge or soft cloth and white vinegar.For Cloudy White Hard Water Spots: Remove by boiling a 1:1 white vinegar to water solution.Caution: Do not use oven cleaners; steel wool; steel scouring pads; harsh detergents or detergents containing bleach or peroxide; which can damage the pan. Nylon scrubbing pads can be used on stainless steel surfaces only.  Never place a hot pan under cold water; as it could cause warping."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "Limited Lifetime Warranty - All-Clad Cookware, Knives, Accessories, and Bakeware"
+        }
+      ],
+      "description": "Simmer rich broths, slow-cook hearty soups, and serve straight from the pot with the included ladle. The D5 4-quart Soup Pot with lid features tall sides and a fitted lid to lock in every drop of flavor. Made in the USA with global components since 1971. At our Canonsburg, Pennsylvania facility, skilled metalcrafters engineer our cookware, ensuring unparalleled quality in every piece. D5® Stainless is the original patented five-ply construction that delivers ultimate even heating with its steel core. The high quality stainless steel surface sears to perfection and stainless steel exterior provides warp resistance. D5 has an elegant brushed stainless steel finish with flared edges for drip-free pouring. Our oversized, double riveted stainless steel handles ensure a secure grip. Built to Outlast, engineered with precision, and verified through rigorous third-party testing for safety. Backed by five decades of manufacturing expertise that have set the standard for professional kitchen performance. Our cookware is oven & broiler safe up to 600°F and compatible with any stovetop, including induction. Handwash Only. Limited Lifetime Warranty. Soup Pot: Made in USA with Global Components. Ladle: Designed in Canonsburg, PA - Made in China.",
+      "sourceFile": "0c6edc6ec8f6a76b31b15c52db3020f455778b1bcde87f717bba807eae909526.json",
+      "photographSha256": "eaf320aa3dd017ecf3f2147375277ca32d8e909b644bdd276487cd1495d50543",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-1926-39",
+    "expected": {
+      "name": "Tudor Tudor 1926 39mm (Ref. M91550)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/1926/m91550-0005",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic calibre t601",
+        "modelName": "tudor 1926 39mm (ref. m91550)",
+        "caseMaterial": "316l stainless steel",
+        "caseDiameterMm": 39,
+        "waterResistanceM": 100,
+        "powerReserveHours": 38
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-6AEFED3AA3D5AC352C09",
+      "name": "Tudor 1926 39mm (Ref. M91550) · m91550-0005",
+      "brand": "Tudor",
+      "color": "Embossed Waffle Dial / Blue Numerals",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-6aefed3aa3d5ac352c09-d55779b1550991f7.webp",
+        "source": "https://www.tudorwatch.com/en/watches/1926/m91550-0005",
+        "alt": "Tudor 1926 39mm (Ref. M91550) · m91550-0005",
+        "attribution": "Tudor manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Case: 39mm steel case with polished finish",
+        "Movement: Self-winding mechanical movement, Calibre T601",
+        "Power Reserve: Power reserve of approximately 38 hours",
+        "Winding Crown: Steel screw-down winding crown with the TUDOR logo in relief",
+        "Waterproofness: Waterproof to 100m (330 ft)",
+        "Bezel: Smooth steel bezel with polished finish",
+        "Dial: Opaline, embossed decoration, domed Blue hour markers and hands Date at 3 o'clock",
+        "Crystal: Sapphire crystal",
+        "Bracelet: Steel bracelet, 7 rows, satin-brushed external links, polished centre links, with folding clasp and safety catch"
+      ],
+      "stock": 25,
+      "source": "https://www.tudorwatch.com/en/watches/1926/m91550-0005",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference m91550-0005",
+        "review": "specifications",
+        "missing": []
+      },
+      "familyId": "tudor:tudor-1926-39",
+      "leafType": "watches",
+      "modelName": "Tudor 1926 39mm (Ref. M91550)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "tudor 1926 39mm (ref. m91550)",
+        "sourceSku": "m91550-0005",
+        "caseDiameterMm": 39,
+        "caseMaterial": "39mm steel case with polished finish",
+        "movement": "Self-winding mechanical movement, Calibre T601",
+        "powerReserveHours": 38,
+        "waterResistanceM": 100,
+        "crystal": "Sapphire crystal"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "m91550-0005 · Embossed Waffle Dial / Blue Numerals",
+      "description": "Discover the TUDOR 1926 watch m91550-0005 - 39mm steel case - Opaline and blue dial. Case: 39mm steel case with polished finish. Movement: Self-winding mechanical movement, Calibre T601. Power Reserve: Power reserve of approximately 38 hours. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.tudorwatch.com/en/watches/1926/m91550-0005",
+      "manufacturerSku": "m91550-0005",
+      "sourceHash": "8971efd31f43f7d3048703dc9a3035edb2f20e6ccf962285180bbdf7edd91b7e",
+      "sourceImage": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m91550-0005",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Case",
+          "value": "39mm steel case with polished finish"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Movement",
+          "value": "Self-winding mechanical movement, Calibre T601"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Reserve",
+          "value": "Power reserve of approximately 38 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Winding Crown",
+          "value": "Steel screw-down winding crown with the TUDOR logo in relief"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Waterproofness",
+          "value": "Waterproof to 100m (330 ft)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bezel",
+          "value": "Smooth steel bezel with polished finish"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dial",
+          "value": "Opaline, embossed decoration, domed Blue hour markers and hands Date at 3 o'clock"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Crystal",
+          "value": "Sapphire crystal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bracelet",
+          "value": "Steel bracelet, 7 rows, satin-brushed external links, polished centre links, with folding clasp and safety catch"
+        }
+      ],
+      "description": "Discover the TUDOR 1926 watch m91550-0005 - 39mm steel case - Opaline and blue dial",
+      "sourceFile": "1d4a9dff414704b1a015488fa34c370d673499385f17ca9e88acbb02b1cf3c5a.json",
+      "photographSha256": "d55779b1550991f729274fe8dbcf690f6af5d942c1687238aacad3969fe2cbb9",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-BLACK-BAY-54",
+    "expected": {
+      "name": "Tudor Black Bay 54 37mm (Ref. M79000N)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-54/m79000n-0001",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic manufacture mt5400",
+        "modelName": "black bay 54 37mm (ref. m79000n)",
+        "caseMaterial": "stainless steel",
+        "caseDiameterMm": 37,
+        "waterResistanceM": 200,
+        "powerReserveHours": 70
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-9FA8D8139B9670B25704",
+      "name": "Tudor Black Bay 54 37mm (Ref. M79000N) · m79000n-0001",
+      "brand": "Tudor",
+      "color": "Clean Unmarked Bezel / T-fit Clasp",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-9fa8d8139b9670b25704-60f2092b28b4a2ca.webp",
+        "source": "https://www.tudorwatch.com/en/watches/black-bay-54/m79000n-0001",
+        "alt": "Tudor Black Bay 54 37mm (Ref. M79000N) · m79000n-0001",
+        "attribution": "Tudor manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Case: 37mm stainless steel case with polished and satin finish",
+        "Movement: Manufacture Calibre MT5400 (COSC) Self-winding mechanical movement with bidirectional rotor system",
+        "Power Reserve: Power reserve of approximately 70 hours",
+        "Winding Crown: Stainless steel screw-down crown with the TUDOR rose in relief",
+        "Waterproofness: Waterproof to 200m (660 ft)",
+        "Bezel: 60-minute unidirectional bezel in stainless steel with aluminium insert devoid of minute graduations",
+        "Dial: Black, domed",
+        "Crystal: Domed sapphire crystal",
+        "Bracelet: 3-link stainless steel bracelet with polished and satin finish with TUDOR “T-fit” clasp"
+      ],
+      "stock": 25,
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-54/m79000n-0001",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference m79000n-0001",
+        "review": "specifications",
+        "missing": []
+      },
+      "familyId": "tudor:tudor-black-bay-54",
+      "leafType": "watches",
+      "modelName": "Black Bay 54 37mm (Ref. M79000N)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "black bay 54 37mm (ref. m79000n)",
+        "sourceSku": "m79000n-0001",
+        "caseDiameterMm": 37,
+        "caseMaterial": "37mm stainless steel case with polished and satin finish",
+        "movement": "Manufacture Calibre MT5400 (COSC) Self-winding mechanical movement with bidirectional rotor system",
+        "powerReserveHours": 70,
+        "waterResistanceM": 200,
+        "crystal": "Domed sapphire crystal"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "m79000n-0001 · Clean Unmarked Bezel / T-fit Clasp",
+      "description": "Discover the TUDOR Black Bay 54 watch m79000n-0001 - Manufacture Calibre MT5400 - 37mm steel case - Steel bracelet. Case: 37mm stainless steel case with polished and satin finish. Movement: Manufacture Calibre MT5400 (COSC) Self-winding mechanical movement with bidirectional rotor system. Power Reserve: Power reserve of approximately 70 hours. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-54/m79000n-0001",
+      "manufacturerSku": "m79000n-0001",
+      "sourceHash": "49730793a83bafc280fd6f6fb50ae51508cecae9a6c6b84ede92749e734ba014",
+      "sourceImage": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m79000n-0001",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Case",
+          "value": "37mm stainless steel case with polished and satin finish"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Movement",
+          "value": "Manufacture Calibre MT5400 (COSC) Self-winding mechanical movement with bidirectional rotor system"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Reserve",
+          "value": "Power reserve of approximately 70 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Winding Crown",
+          "value": "Stainless steel screw-down crown with the TUDOR rose in relief"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Waterproofness",
+          "value": "Waterproof to 200m (660 ft)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bezel",
+          "value": "60-minute unidirectional bezel in stainless steel with aluminium insert devoid of minute graduations"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dial",
+          "value": "Black, domed"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Crystal",
+          "value": "Domed sapphire crystal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bracelet",
+          "value": "3-link stainless steel bracelet with polished and satin finish with TUDOR “T-fit” clasp"
+        }
+      ],
+      "description": "Discover the TUDOR Black Bay 54 watch m79000n-0001 - Manufacture Calibre MT5400 - 37mm steel case - Steel bracelet",
+      "sourceFile": "9617f51bacefff23d8bb45cc5ffdfe9dfd7020f46a3ec682c1dcdf0dd6a9c870.json",
+      "photographSha256": "60f2092b28b4a2ca7daa8192141abcf0bdcaac44b3c5ac892b6d1329efd1fbf0",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-BLACK-BAY-CHRONO",
+    "expected": {
+      "name": "Tudor Black Bay Chrono 41mm (Ref. M79360N)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-chrono/m79360n-0001",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic manufacture mt5813",
+        "modelName": "black bay chrono 41mm (ref. m79360n)",
+        "caseMaterial": "stainless steel",
+        "caseDiameterMm": 41,
+        "waterResistanceM": 200,
+        "powerReserveHours": 70
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-A7E6FD1F69A38998870B",
+      "name": "Tudor Black Bay Chrono 41mm (Ref. M79360N) · m79360n-0011",
+      "brand": "Tudor",
+      "color": "Panda Opaline Dial / Fixed Steel Bezel",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-a7e6fd1f69a38998870b-ffd4f860c25b56d6.webp",
+        "source": "https://www.tudorwatch.com/en/watches/black-bay-chrono/m79360n-0011",
+        "alt": "Tudor Black Bay Chrono 41mm (Ref. M79360N) · m79360n-0011",
+        "attribution": "Tudor manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Case: 41mm stainless steel case with polished and satin-brushed finishes",
+        "Movement: Manufacture Calibre MT5813 (COSC) with chronograph function Self-winding mechanical chronograph movement with bidirectional rotor system",
+        "Power Reserve: Power reserve of approximately 70 hours",
+        "Winding Crown: Stainless steel screw-down winding crown with the TUDOR rose in relief Stainless steel screw-down pushers at 2 o'clock and 4 o'clock",
+        "Waterproofness: Waterproof to 200m (660 ft)",
+        "Bezel: Fixed stainless steel bezel with matt black anodised aluminium disc with tachymetric scale and silver markings",
+        "Dial: Black with silver counters, domed Date at 6 o'clock",
+        "Crystal: Domed sapphire crystal",
+        "Bracelet: 3-link stainless steel “rivet-style” bracelet with polished and satin-brushed finishes, with TUDOR “T-fit” rapid adjustment clasp"
+      ],
+      "stock": 25,
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-chrono/m79360n-0011",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference m79360n-0011",
+        "review": "specifications",
+        "missing": []
+      },
+      "familyId": "tudor:tudor-black-bay-chrono",
+      "leafType": "watches",
+      "modelName": "Black Bay Chrono 41mm (Ref. M79360N)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "black bay chrono 41mm (ref. m79360n)",
+        "sourceSku": "m79360n-0011",
+        "caseDiameterMm": 41,
+        "caseMaterial": "41mm stainless steel case with polished and satin-brushed finishes",
+        "movement": "Manufacture Calibre MT5813 (COSC) with chronograph function Self-winding mechanical chronograph movement with bidirectional rotor system",
+        "powerReserveHours": 70,
+        "waterResistanceM": 200,
+        "crystal": "Domed sapphire crystal"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "m79360n-0011 · Panda Opaline Dial / Fixed Steel Bezel",
+      "description": "Discover the TUDOR Black Bay Chrono watch m79360n-0011 - Manufacture Calibre MT5813 - 41mm steel case - Steel bracelet. Case: 41mm stainless steel case with polished and satin-brushed finishes. Movement: Manufacture Calibre MT5813 (COSC) with chronograph function Self-winding mechanical chronograph movement with bidirectional rotor system. Power Reserve: Power reserve of approximately 70 hours. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-chrono/m79360n-0011",
+      "manufacturerSku": "m79360n-0011",
+      "sourceHash": "b69174f14f5f87d60f2f9c5e6d4141c2616744517794c3b79fd040ffea1ceba6",
+      "sourceImage": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m79360n-0011",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Case",
+          "value": "41mm stainless steel case with polished and satin-brushed finishes"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Movement",
+          "value": "Manufacture Calibre MT5813 (COSC) with chronograph function Self-winding mechanical chronograph movement with bidirectional rotor system"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Reserve",
+          "value": "Power reserve of approximately 70 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Winding Crown",
+          "value": "Stainless steel screw-down winding crown with the TUDOR rose in relief Stainless steel screw-down pushers at 2 o'clock and 4 o'clock"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Waterproofness",
+          "value": "Waterproof to 200m (660 ft)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bezel",
+          "value": "Fixed stainless steel bezel with matt black anodised aluminium disc with tachymetric scale and silver markings"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dial",
+          "value": "Black with silver counters, domed Date at 6 o'clock"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Crystal",
+          "value": "Domed sapphire crystal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bracelet",
+          "value": "3-link stainless steel “rivet-style” bracelet with polished and satin-brushed finishes, with TUDOR “T-fit” rapid adjustment clasp"
+        }
+      ],
+      "description": "Discover the TUDOR Black Bay Chrono watch m79360n-0011 - Manufacture Calibre MT5813 - 41mm steel case - Steel bracelet",
+      "sourceFile": "d86b66d98d7120df11e3056761d2f56a930abb72d8f18bba82bf2ca0f9413a2a.json",
+      "photographSha256": "ffd4f860c25b56d6e88b188a9099acddb920b8ee73746b1a4ff410db664beccb",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-PELAGOS-39",
+    "expected": {
+      "name": "Tudor Pelagos 39 Titanium (Ref. M25407N)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/pelagos/m25407n-0001",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic manufacture mt5400",
+        "modelName": "pelagos 39 titanium (ref. m25407n)",
+        "caseMaterial": "grade 2 titanium",
+        "caseDiameterMm": 39,
+        "waterResistanceM": 200,
+        "powerReserveHours": 70
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-56E61AD35D9F8EEBDDCA",
+      "name": "Tudor Pelagos 39 Titanium (Ref. M25407N) · m25407n-0001",
+      "brand": "Tudor",
+      "color": "Grade 2 Titanium / Sunray Satin Dial",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-56e61ad35d9f8eebddca-1fa20bd265302f63.webp",
+        "source": "https://www.tudorwatch.com/en/watches/pelagos/m25407n-0001",
+        "alt": "Tudor Pelagos 39 Titanium (Ref. M25407N) · m25407n-0001",
+        "attribution": "Tudor manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Case: 39mm grade 2 titanium case with satin finish",
+        "Movement: Manufacture Calibre MT5400 (COSC) Self-winding mechanical movement with bidirectional rotor system",
+        "Power Reserve: Power reserve of approximately 70 hours",
+        "Winding Crown: Grade 2 titanium screw-down crown, adorned with the TUDOR shield in relief",
+        "Waterproofness: Waterproof to 200m (660 ft)",
+        "Bezel: Grade 2 titanium unidirectional rotating bezel with insert in sunray satin finish ceramic and luminous material",
+        "Dial: Black sunray satin finish with sandblasted flange and monobloc luminescent ceramic composite hour markers",
+        "Crystal: Sapphire crystal",
+        "Bracelet: Titanium bracelet with TUDOR “T-fit” folding clasp, safety catch and diver’s extension"
+      ],
+      "stock": 25,
+      "source": "https://www.tudorwatch.com/en/watches/pelagos/m25407n-0001",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference m25407n-0001",
+        "review": "specifications",
+        "missing": []
+      },
+      "familyId": "tudor:tudor-pelagos-39",
+      "leafType": "watches",
+      "modelName": "Pelagos 39 Titanium (Ref. M25407N)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "pelagos 39 titanium (ref. m25407n)",
+        "sourceSku": "m25407n-0001",
+        "caseDiameterMm": 39,
+        "caseMaterial": "39mm grade 2 titanium case with satin finish",
+        "movement": "Manufacture Calibre MT5400 (COSC) Self-winding mechanical movement with bidirectional rotor system",
+        "powerReserveHours": 70,
+        "waterResistanceM": 200,
+        "crystal": "Sapphire crystal"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "m25407n-0001 · Grade 2 Titanium / Sunray Satin Dial",
+      "description": "Discover the TUDOR Pelagos 39 watch m25407n-0001 - Manufacture Calibre MT5400 - Unidirectional rotating bezel - Titanium bracelet. Case: 39mm grade 2 titanium case with satin finish. Movement: Manufacture Calibre MT5400 (COSC) Self-winding mechanical movement with bidirectional rotor system. Power Reserve: Power reserve of approximately 70 hours. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.tudorwatch.com/en/watches/pelagos/m25407n-0001",
+      "manufacturerSku": "m25407n-0001",
+      "sourceHash": "145d59dff3b8d89892ede9686f5f8ace26212df9b22b7c1b1777d8a3ab404218",
+      "sourceImage": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m25407n-0001",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Case",
+          "value": "39mm grade 2 titanium case with satin finish"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Movement",
+          "value": "Manufacture Calibre MT5400 (COSC) Self-winding mechanical movement with bidirectional rotor system"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Reserve",
+          "value": "Power reserve of approximately 70 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Winding Crown",
+          "value": "Grade 2 titanium screw-down crown, adorned with the TUDOR shield in relief"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Waterproofness",
+          "value": "Waterproof to 200m (660 ft)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bezel",
+          "value": "Grade 2 titanium unidirectional rotating bezel with insert in sunray satin finish ceramic and luminous material"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dial",
+          "value": "Black sunray satin finish with sandblasted flange and monobloc luminescent ceramic composite hour markers"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Crystal",
+          "value": "Sapphire crystal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bracelet",
+          "value": "Titanium bracelet with TUDOR “T-fit” folding clasp, safety catch and diver’s extension"
+        }
+      ],
+      "description": "Discover the TUDOR Pelagos 39 watch m25407n-0001 - Manufacture Calibre MT5400 - Unidirectional rotating bezel - Titanium bracelet",
+      "sourceFile": "9c34f852b67cb4be1bb8e02e43c289a79557894fb90520b29f00159b28346194.json",
+      "photographSha256": "1fa20bd265302f6349ba2b8619c483f49375eac086a0aa33993411173e2398ad",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-RANGER",
+    "expected": {
+      "name": "Tudor Ranger 39mm (Ref. M79950)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/ranger/m79950-0001",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic manufacture mt5402",
+        "modelName": "ranger 39mm (ref. m79950)",
+        "caseMaterial": "stainless steel",
+        "caseDiameterMm": 39,
+        "waterResistanceM": 100,
+        "powerReserveHours": 70
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-42A4DDBEBDCD7C9AF5BB",
+      "name": "Tudor Ranger 39mm (Ref. M79950) · m79950-0001",
+      "brand": "Tudor",
+      "color": "Matte Black Dial / Arabic Numerals",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-42a4ddbebdcd7c9af5bb-e111eefa463add41.webp",
+        "source": "https://www.tudorwatch.com/en/watches/ranger/m79950-0001",
+        "alt": "Tudor Ranger 39mm (Ref. M79950) · m79950-0001",
+        "attribution": "Tudor manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Case: 39mm steel case, satin finish",
+        "Movement: Manufacture Calibre MT5402 (COSC) Self-winding mechanical movement with bidirectional rotor system",
+        "Power Reserve: Power reserve of approximately 70 hours",
+        "Winding Crown: Screw-down winding crown in steel with the TUDOR rose in relief",
+        "Waterproofness: Waterproof to 100m (330 ft)",
+        "Bezel: Smooth satin-brushed steel",
+        "Dial: Black, domed",
+        "Crystal: Domed sapphire crystal",
+        "Bracelet: Steel bracelet with three links and a folding clasp with the TUDOR “T-fit” safety catch"
+      ],
+      "stock": 25,
+      "source": "https://www.tudorwatch.com/en/watches/ranger/m79950-0001",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference m79950-0001",
+        "review": "specifications",
+        "missing": []
+      },
+      "familyId": "tudor:tudor-ranger",
+      "leafType": "watches",
+      "modelName": "Ranger 39mm (Ref. M79950)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "ranger 39mm (ref. m79950)",
+        "sourceSku": "m79950-0001",
+        "caseDiameterMm": 39,
+        "caseMaterial": "39mm steel case, satin finish",
+        "movement": "Manufacture Calibre MT5402 (COSC) Self-winding mechanical movement with bidirectional rotor system",
+        "powerReserveHours": 70,
+        "waterResistanceM": 100,
+        "crystal": "Domed sapphire crystal"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "m79950-0001 · Matte Black Dial / Arabic Numerals",
+      "description": "Discover the TUDOR Ranger watch m79950-0001 - Manufacture Calibre MT5402 (COSC) - 39mm steel case - Black dial. Case: 39mm steel case, satin finish. Movement: Manufacture Calibre MT5402 (COSC) Self-winding mechanical movement with bidirectional rotor system. Power Reserve: Power reserve of approximately 70 hours. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.tudorwatch.com/en/watches/ranger/m79950-0001",
+      "manufacturerSku": "m79950-0001",
+      "sourceHash": "688bcd62596fc695b80033a1561f63bcac2c5e57a3f23d70138e39b874753014",
+      "sourceImage": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m79950-0001",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Case",
+          "value": "39mm steel case, satin finish"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Movement",
+          "value": "Manufacture Calibre MT5402 (COSC) Self-winding mechanical movement with bidirectional rotor system"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Reserve",
+          "value": "Power reserve of approximately 70 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Winding Crown",
+          "value": "Screw-down winding crown in steel with the TUDOR rose in relief"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Waterproofness",
+          "value": "Waterproof to 100m (330 ft)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bezel",
+          "value": "Smooth satin-brushed steel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dial",
+          "value": "Black, domed"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Crystal",
+          "value": "Domed sapphire crystal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bracelet",
+          "value": "Steel bracelet with three links and a folding clasp with the TUDOR “T-fit” safety catch"
+        }
+      ],
+      "description": "Discover the TUDOR Ranger watch m79950-0001 - Manufacture Calibre MT5402 (COSC) - 39mm steel case - Black dial",
+      "sourceFile": "ac8d859036471796ef078fd10ffb5e18c6fbd6171f1b67f406e97f50d69ccb1c.json",
+      "photographSha256": "e111eefa463add41f6655c316291b6b7792823c09bf6b51642558902d2f44ed0",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "FRAGRANCE-AMOUAGE-47496344043812",
+    "expected": {
+      "name": "Amouage Honour Man · Eau De Parfum · 100ml",
+      "brand": "Amouage",
+      "source": "https://amouage.com/products/honour-man",
+      "attributes": {
+        "brand": "amouage",
+        "volumeMl": 100,
+        "modelName": "honour man",
+        "productType": "eau de parfum",
+        "concentration": "eau de parfum"
+      }
+    },
+    "product": {
+      "id": "FRAGRANCE-AMOUAGE-41015",
+      "name": "Amouage Honour Man · Eau de Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+      "price": 39500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer: Amouage",
+        "Model: Honour Man",
+        "Bottle volume: 100ml",
+        "Concentration: Eau de Parfum",
+        "Manufacturer SKU: 41015"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "100ml",
+      "source": "https://amouage.com/products/honour-man",
+      "familyId": "amouage:8896982679844",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-14",
+        "region": "Manufacturer public catalog",
+        "missing": [
+          "perfumer",
+          "topNotes",
+          "heartNotes",
+          "baseNotes"
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "honour man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "/images/verified/fragrance-amouage-41015-62b0a19c983022b3.webp",
+        "source": "https://amouage.com/products/honour-man",
+        "alt": "Amouage Honour Man · Eau de Parfum · 100ml",
+        "attribution": "Amouage manufacturer product image; external reference",
+        "reviewedAt": "2026-10-14",
+        "usage": "external_reference"
+      },
+      "leafType": "fragrance",
+      "modelName": "Honour Man",
+      "skuVariant": "100ml"
+    },
+    "reason": "Consolidate duplicate offers for the same manufacturer SKU and bottle size; keep the original historical record and use the already reviewed exact offer.",
+    "evidence": {
+      "source": "https://amouage.com/products/honour-man?variant=47496344043812",
+      "manufacturerSku": "41015",
+      "manufacturerProductId": 8896982679844,
+      "manufacturerVariantId": 47496344043812,
+      "sourceFile": "amouage.com.json",
+      "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "description": "This spicy and woody fragrance invokes memories of the past. A filial elegy to the honour and memory of Madame Butterfly, this is a story of reconciliation. 27% oil concentration, 6 weeks ageing: 3 weeks maceration, 3 weeks maturation",
+      "photographSha256": "62b0a19c983022b3e53720f6fc66f88e024e6c2f02fd6d9079821e6c46933bb2"
+    }
+  },
+  {
+    "oldId": "FRAGRANCE-AMOUAGE-47553946452260",
+    "expected": {
+      "name": "Amouage Dia Man · Eau De Parfum · 100ml",
+      "brand": "Amouage",
+      "source": "https://amouage.com/products/dia-man",
+      "attributes": {
+        "brand": "amouage",
+        "volumeMl": 100,
+        "modelName": "dia man",
+        "productType": "eau de parfum",
+        "concentration": "eau de parfum"
+      }
+    },
+    "product": {
+      "id": "FRAGRANCE-AMOUAGE-41003",
+      "name": "Amouage Dia Man · Eau de Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+      "price": 39500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer: Amouage",
+        "Model: Dia Man",
+        "Bottle volume: 100ml",
+        "Concentration: Eau de Parfum",
+        "Manufacturer SKU: 41003"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "100ml",
+      "source": "https://amouage.com/products/dia-man",
+      "familyId": "amouage:8897004208420",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-14",
+        "region": "Manufacturer public catalog",
+        "missing": [
+          "perfumer",
+          "topNotes",
+          "heartNotes",
+          "baseNotes"
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "dia man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "/images/verified/fragrance-amouage-41003-1a099733f7f68070.webp",
+        "source": "https://amouage.com/products/dia-man",
+        "alt": "Amouage Dia Man · Eau de Parfum · 100ml",
+        "attribution": "Amouage manufacturer product image; external reference",
+        "reviewedAt": "2026-10-14",
+        "usage": "external_reference"
+      },
+      "leafType": "fragrance",
+      "modelName": "Dia Man",
+      "skuVariant": "100ml"
+    },
+    "reason": "Consolidate duplicate offers for the same manufacturer SKU and bottle size; keep the original historical record and use the already reviewed exact offer.",
+    "evidence": {
+      "source": "https://amouage.com/products/dia-man?variant=47553946452260",
+      "manufacturerSku": "41003",
+      "manufacturerProductId": 8897004208420,
+      "manufacturerVariantId": 47553946452260,
+      "sourceFile": "amouage.com.json",
+      "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "description": "An eclectic chypre inspired by the natural wonders of Oman, Dia Man is a prime example of tasteful subtlety. 20% oil concentration, 6 weeks ageing: 3 weeks maceration, 3 weeks maturation",
+      "photographSha256": "1a099733f7f680702efd91f90e16a7553f3b4605290f3abdec674d9fb5a5a617"
+    }
+  },
+  {
+    "oldId": "FRAGRANCE-AMOUAGE-47564134580516",
+    "expected": {
+      "name": "Amouage Epic Man · Eau De Parfum · 100ml",
+      "brand": "Amouage",
+      "source": "https://amouage.com/products/epic-man-100ml",
+      "attributes": {
+        "brand": "amouage",
+        "volumeMl": 100,
+        "modelName": "epic man",
+        "productType": "eau de parfum",
+        "concentration": "eau de parfum"
+      }
+    },
+    "product": {
+      "id": "FRAGRANCE-AMOUAGE-41011",
+      "name": "Amouage Epic Man · Eau de Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+      "price": 39500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer: Amouage",
+        "Model: Epic Man",
+        "Bottle volume: 100ml",
+        "Concentration: Eau de Parfum",
+        "Manufacturer SKU: 41011"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "100ml",
+      "source": "https://amouage.com/products/epic-man-100ml",
+      "familyId": "amouage:8897003356452",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-14",
+        "region": "Manufacturer public catalog",
+        "missing": [
+          "perfumer",
+          "topNotes",
+          "heartNotes",
+          "baseNotes"
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "epic man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "/images/verified/fragrance-amouage-41011-826354ea04103749.webp",
+        "source": "https://amouage.com/products/epic-man-100ml",
+        "alt": "Amouage Epic Man · Eau de Parfum · 100ml",
+        "attribution": "Amouage manufacturer product image; external reference",
+        "reviewedAt": "2026-10-14",
+        "usage": "external_reference"
+      },
+      "leafType": "fragrance",
+      "modelName": "Epic Man",
+      "skuVariant": "100ml"
+    },
+    "reason": "Consolidate duplicate offers for the same manufacturer SKU and bottle size; keep the original historical record and use the already reviewed exact offer.",
+    "evidence": {
+      "source": "https://amouage.com/products/epic-man-100ml?variant=47564134580516",
+      "manufacturerSku": "41011",
+      "manufacturerProductId": 8897003356452,
+      "manufacturerVariantId": 47564134580516,
+      "sourceFile": "amouage.com.json",
+      "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "description": "This is a woody amber fragrance evoking the many legends of the ancient Silk Road journey from China to Arabia. As the guiding light of the mystical journey he is the omniscient force of nature, the guardian of the Legend. 23% oil concentration, 6 weeks ageing: 3 weeks maceration, 3 weeks maturation",
+      "photographSha256": "826354ea04103749b572a457ff7a94a96b0323191e57829fc5be19337f8a66cc"
+    }
+  },
+  {
+    "oldId": "FRAGRANCE-AMOUAGE-47564197789988",
+    "expected": {
+      "name": "Amouage Jubilation XXV Man · Eau De Parfum · 100ml",
+      "brand": "Amouage",
+      "source": "https://amouage.com/products/jubilation-xxv-man",
+      "attributes": {
+        "brand": "amouage",
+        "volumeMl": 100,
+        "modelName": "jubilation xxv man",
+        "productType": "eau de parfum",
+        "concentration": "eau de parfum"
+      }
+    },
+    "product": {
+      "id": "FRAGRANCE-AMOUAGE-41007",
+      "name": "Amouage Jubilation XXV Man · Eau de Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+      "price": 39500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer: Amouage",
+        "Model: Jubilation XXV Man",
+        "Bottle volume: 100ml",
+        "Concentration: Eau de Parfum",
+        "Manufacturer SKU: 41007"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "100ml",
+      "source": "https://amouage.com/products/jubilation-xxv-man",
+      "familyId": "amouage:8897004667172",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-14",
+        "region": "Manufacturer public catalog",
+        "missing": [
+          "perfumer",
+          "topNotes",
+          "heartNotes",
+          "baseNotes"
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "jubilation xxv man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "/images/verified/fragrance-amouage-41007-43258a828f2875d1.webp",
+        "source": "https://amouage.com/products/jubilation-xxv-man",
+        "alt": "Amouage Jubilation XXV Man · Eau de Parfum · 100ml",
+        "attribution": "Amouage manufacturer product image; external reference",
+        "reviewedAt": "2026-10-14",
+        "usage": "external_reference"
+      },
+      "leafType": "fragrance",
+      "modelName": "Jubilation XXV Man",
+      "skuVariant": "100ml"
+    },
+    "reason": "Consolidate duplicate offers for the same manufacturer SKU and bottle size; keep the original historical record and use the already reviewed exact offer.",
+    "evidence": {
+      "source": "https://amouage.com/products/jubilation-xxv-man?variant=47564197789988",
+      "manufacturerSku": "41007",
+      "manufacturerProductId": 8897004667172,
+      "manufacturerVariantId": 47564197789988,
+      "sourceFile": "amouage.com.json",
+      "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "description": "Created for the enigmatic man carrying the essence of his philosophy and sophistication across all eras and cultures. 23% oil concentration, 8 weeks ageing: 5 weeks maceration, 3 weeks maturation",
+      "photographSha256": "43258a828f2875d11ad266d61e964cc93b6c9c992322562fcdc9d0d5328444b1"
+    }
+  },
+  {
+    "oldId": "FRAGRANCE-AMOUAGE-47564213977380",
+    "expected": {
+      "name": "Amouage Gold Man · Eau De Parfum · 100ml",
+      "brand": "Amouage",
+      "source": "https://amouage.com/products/gold-man",
+      "attributes": {
+        "brand": "amouage",
+        "volumeMl": 100,
+        "modelName": "gold man",
+        "productType": "eau de parfum",
+        "concentration": "eau de parfum"
+      }
+    },
+    "product": {
+      "id": "FRAGRANCE-AMOUAGE-41017",
+      "name": "Amouage Gold Man · Eau de Parfum · 100ml",
+      "category": "fragrance",
+      "description": "Manufacturer-identified fragrance and exact bottle reference. DALE price, inventory, payments and fulfillment are sandbox offers.",
+      "price": 39500,
+      "compatibleModels": [],
+      "specs": [
+        "Manufacturer: Amouage",
+        "Model: Gold Man",
+        "Bottle volume: 100ml",
+        "Concentration: Eau de Parfum",
+        "Manufacturer SKU: 41017"
+      ],
+      "sponsored": false,
+      "stock": 25,
+      "color": "100ml",
+      "source": "https://amouage.com/products/gold-man",
+      "familyId": "amouage:8897006666020",
+      "provenance": "manufacturer_evidence",
+      "brand": "Amouage",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-14",
+        "region": "Manufacturer public catalog",
+        "missing": [
+          "perfumer",
+          "topNotes",
+          "heartNotes",
+          "baseNotes"
+        ],
+        "review": "specifications"
+      },
+      "attributes": {
+        "productType": "eau de parfum",
+        "volumeMl": 100,
+        "brand": "amouage",
+        "modelName": "gold man",
+        "concentration": "eau de parfum"
+      },
+      "media": {
+        "url": "/images/verified/fragrance-amouage-41017-bf47c7fc0e3ea99e.webp",
+        "source": "https://amouage.com/products/gold-man",
+        "alt": "Amouage Gold Man · Eau de Parfum · 100ml",
+        "attribution": "Amouage manufacturer product image; external reference",
+        "reviewedAt": "2026-10-14",
+        "usage": "external_reference"
+      },
+      "leafType": "fragrance",
+      "modelName": "Gold Man",
+      "skuVariant": "100ml"
+    },
+    "reason": "Consolidate duplicate offers for the same manufacturer SKU and bottle size; keep the original historical record and use the already reviewed exact offer.",
+    "evidence": {
+      "source": "https://amouage.com/products/gold-man?variant=47564213977380",
+      "manufacturerSku": "41017",
+      "manufacturerProductId": 8897006666020,
+      "manufacturerVariantId": 47564213977380,
+      "sourceFile": "amouage.com.json",
+      "sourceFileSha256": "53e325c1980055c7076ffe8fb81e2ba64004fec40af83416d8dfaf6b97e4de0b",
+      "description": "Gold Man was Sultan Qaboos' gift to kings and princes around the world. Overflowing with Omani Rock Rose, Hojari Frankincense and Golden Ambergris, Gold Man distils the most royal riches of the Sultanate of Oman. 20% oil concentration, 6 weeks ageing: 3 weeks maceration, 3 weeks maturation",
+      "photographSha256": "bf47c7fc0e3ea99eb3d376e16d723b22f1806ac0271c74d8cda6047a2421d36a"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-BLACK-BAY-MASTER-CHRONOMETER",
+    "expected": {
+      "name": "Tudor Black Bay Master Chronometer 41mm (Ref. M7941A1A0RU)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/black-bay/m7941a1a0ru-0003",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic manufacture mt5602-u",
+        "modelName": "black bay master chronometer 41mm (ref. m7941a1a0ru)",
+        "caseMaterial": "stainless steel",
+        "caseDiameterMm": 41,
+        "waterResistanceM": 200,
+        "powerReserveHours": 70
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-EE38F1075D12CC7056AA",
+      "name": "Tudor Black Bay Master Chronometer 41mm (Ref. M7941A1A0RU) · m7941a1a0ru-0003",
+      "brand": "Tudor",
+      "color": "Burgundy Bezel / 5-Link Jubilee Bracelet",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-ee38f1075d12cc7056aa-8516d7a7bb00ae72.webp",
+        "source": "https://www.tudorwatch.com/en/watches/black-bay/m7941a1a0ru-0003",
+        "alt": "Tudor Black Bay Master Chronometer 41mm (Ref. M7941A1A0RU) · m7941a1a0ru-0003",
+        "attribution": "Tudor manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Case: 41mm stainless steel case with polished and satin finish",
+        "Movement: Manufacture Calibre MT5602-U (COSC and METAS certified) Self-winding mechanical movement with bidirectional rotor system",
+        "Power Reserve: 70-hour power reserve",
+        "Winding Crown: Stainless steel screw-down crown with the TUDOR rose in relief",
+        "Waterproofness: Waterproof to 200m (660 ft)",
+        "Bezel: 60-minute unidirectional bezel in stainless steel with burgundy disc aluminium insert",
+        "Dial: Black, domed",
+        "Crystal: Domed sapphire crystal",
+        "Bracelet: 5-link stainless steel bracelet with polished and satin finish with TUDOR “T-fit” clasp"
+      ],
+      "stock": 25,
+      "source": "https://www.tudorwatch.com/en/watches/black-bay/m7941a1a0ru-0003",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference m7941a1a0ru-0003",
+        "review": "specifications",
+        "missing": [
+          "Not established for this reference: powerReserveHours"
+        ]
+      },
+      "familyId": "tudor:tudor-black-bay-master-chronometer",
+      "leafType": "watches",
+      "modelName": "Black Bay Master Chronometer 41mm (Ref. M7941A1A0RU)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "black bay master chronometer 41mm (ref. m7941a1a0ru)",
+        "sourceSku": "m7941a1a0ru-0003",
+        "caseDiameterMm": 41,
+        "caseMaterial": "41mm stainless steel case with polished and satin finish",
+        "movement": "Manufacture Calibre MT5602-U (COSC and METAS certified) Self-winding mechanical movement with bidirectional rotor system",
+        "waterResistanceM": 200,
+        "crystal": "Domed sapphire crystal"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "m7941a1a0ru-0003 · Burgundy Bezel / 5-Link Jubilee Bracelet",
+      "description": "Discover the TUDOR Black Bay watch m7941a1a0ru-0003 - Manufacture Calibre MT5602-U - 41mm steel case - Steel bracelet. Case: 41mm stainless steel case with polished and satin finish. Movement: Manufacture Calibre MT5602-U (COSC and METAS certified) Self-winding mechanical movement with bidirectional rotor system. Power Reserve: 70-hour power reserve. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.tudorwatch.com/en/watches/black-bay/m7941a1a0ru-0003",
+      "manufacturerSku": "m7941a1a0ru-0003",
+      "sourceHash": "7ece33db31dd5db22fe491e888b5c12589f775eb70bdcc275489f279c728aee3",
+      "sourceImage": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m7941a1a0ru-0003",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Case",
+          "value": "41mm stainless steel case with polished and satin finish"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Movement",
+          "value": "Manufacture Calibre MT5602-U (COSC and METAS certified) Self-winding mechanical movement with bidirectional rotor system"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Reserve",
+          "value": "70-hour power reserve"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Winding Crown",
+          "value": "Stainless steel screw-down crown with the TUDOR rose in relief"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Waterproofness",
+          "value": "Waterproof to 200m (660 ft)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bezel",
+          "value": "60-minute unidirectional bezel in stainless steel with burgundy disc aluminium insert"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dial",
+          "value": "Black, domed"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Crystal",
+          "value": "Domed sapphire crystal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bracelet",
+          "value": "5-link stainless steel bracelet with polished and satin finish with TUDOR “T-fit” clasp"
+        }
+      ],
+      "description": "Discover the TUDOR Black Bay watch m7941a1a0ru-0003 - Manufacture Calibre MT5602-U - 41mm steel case - Steel bracelet",
+      "sourceFile": "49efcfa0e1ba3e03f3d2b1cca6f8e1d870c0a62b6e32cad1fd76c17038e0a7f6.json",
+      "photographSha256": "8516d7a7bb00ae72f4c57c633e963be4fb2d2d5fd9b88748ba82dc00b8e5b7d7",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-BLACK-BAY-PRO",
+    "expected": {
+      "name": "Tudor Black Bay Pro GMT 39mm (Ref. M79470)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-pro/m79470-0001",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic manufacture mt5652",
+        "modelName": "black bay pro gmt 39mm (ref. m79470)",
+        "caseMaterial": "stainless steel",
+        "caseDiameterMm": 39,
+        "waterResistanceM": 200,
+        "powerReserveHours": 70
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-F6CA0DE3690D42CAAE08",
+      "name": "Tudor Black Bay Pro GMT 39mm (Ref. M79470) · m79470-0001",
+      "brand": "Tudor",
+      "color": "Fixed 24H Bezel / Yellow Snowflake GMT Hand",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-f6ca0de3690d42caae08-083c74ad9e3fe4a0.webp",
+        "source": "https://www.tudorwatch.com/en/watches/black-bay-pro/m79470-0001",
+        "alt": "Tudor Black Bay Pro GMT 39mm (Ref. M79470) · m79470-0001",
+        "attribution": "Tudor manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Case: 39mm steel case with polished and satin finish",
+        "Movement: Manufacture Calibre MT5652 (COSC) Self-winding mechanical movement with bidirectional rotor system Built-in architecture",
+        "Power Reserve: Power reserve of approximately 70 hours",
+        "Winding Crown: Screw-down winding crown in steel with the TUDOR rose in relief",
+        "Waterproofness: Waterproof to 200m (660 ft)",
+        "Bezel: 24-hour graduated fixed bezel in satin-brushed steel",
+        "Dial: Black, domed",
+        "Crystal: Domed sapphire crystal",
+        "Bracelet: Riveted steel bracelet with polished and satin finish, and TUDOR “T-fit” clasp with rapid adjustment"
+      ],
+      "stock": 25,
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-pro/m79470-0001",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference m79470-0001",
+        "review": "specifications",
+        "missing": []
+      },
+      "familyId": "tudor:tudor-black-bay-pro",
+      "leafType": "watches",
+      "modelName": "Black Bay Pro GMT 39mm (Ref. M79470)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "black bay pro gmt 39mm (ref. m79470)",
+        "sourceSku": "m79470-0001",
+        "caseDiameterMm": 39,
+        "caseMaterial": "39mm steel case with polished and satin finish",
+        "movement": "Manufacture Calibre MT5652 (COSC) Self-winding mechanical movement with bidirectional rotor system Built-in architecture",
+        "powerReserveHours": 70,
+        "waterResistanceM": 200,
+        "crystal": "Domed sapphire crystal"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "m79470-0001 · Fixed 24H Bezel / Yellow Snowflake GMT Hand",
+      "description": "Discover the TUDOR Black Bay Pro watch m79470-0001 - Manufacture Calibre MT5652 - 39mm steel case - Riveted steel bracelet. Case: 39mm steel case with polished and satin finish. Movement: Manufacture Calibre MT5652 (COSC) Self-winding mechanical movement with bidirectional rotor system Built-in architecture. Power Reserve: Power reserve of approximately 70 hours. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-pro/m79470-0001",
+      "manufacturerSku": "m79470-0001",
+      "sourceHash": "0d3412a5e791da82172b519d28c1930fd79573950f2a285ea75d58d1914d41a7",
+      "sourceImage": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m79470-0001",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Case",
+          "value": "39mm steel case with polished and satin finish"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Movement",
+          "value": "Manufacture Calibre MT5652 (COSC) Self-winding mechanical movement with bidirectional rotor system Built-in architecture"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Reserve",
+          "value": "Power reserve of approximately 70 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Winding Crown",
+          "value": "Screw-down winding crown in steel with the TUDOR rose in relief"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Waterproofness",
+          "value": "Waterproof to 200m (660 ft)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bezel",
+          "value": "24-hour graduated fixed bezel in satin-brushed steel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dial",
+          "value": "Black, domed"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Crystal",
+          "value": "Domed sapphire crystal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bracelet",
+          "value": "Riveted steel bracelet with polished and satin finish, and TUDOR “T-fit” clasp with rapid adjustment"
+        }
+      ],
+      "description": "Discover the TUDOR Black Bay Pro watch m79470-0001 - Manufacture Calibre MT5652 - 39mm steel case - Riveted steel bracelet",
+      "sourceFile": "6d363f6355b9a60ac0d7b57dc8030ae6a10393acbafdd14a6d3abf36f9f11fdf.json",
+      "photographSha256": "083c74ad9e3fe4a0c4f7bb0fef0af437dbfb706d4e5b3bf84206026efd9d66be",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-PELAGOS-FXD",
+    "expected": {
+      "name": "Tudor Pelagos FXD Marine Nationale (Ref. M25707B)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/pelagos-fxd/m25707b-0001",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic manufacture mt5602",
+        "modelName": "pelagos fxd marine nationale (ref. m25707b)",
+        "caseMaterial": "titanium",
+        "caseDiameterMm": 42,
+        "waterResistanceM": 200,
+        "powerReserveHours": 70
+      }
+    },
+    "product": {
+      "id": "REPAIR-REFERENCE-DC7792C185C66CD5DAE6",
+      "name": "Tudor Pelagos FXD Marine Nationale (Ref. M25707B) · m25707b-0001",
+      "brand": "Tudor",
+      "color": "Navy Blue / Fixed Strap Bars",
+      "media": {
+        "url": "/images/verified/reference-repair-reference-dc7792c185c66cd5dae6-62c36bdbe7f59736.webp",
+        "source": "https://www.tudorwatch.com/en/watches/pelagos-fxd/m25707b-0001",
+        "alt": "Tudor Pelagos FXD Marine Nationale (Ref. M25707B) · m25707b-0001",
+        "attribution": "Tudor manufacturer product photograph; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Case: Titanium case, 42mm in diameter, 12.75mm thick, 52mm from lug to lug, satin-brushed finish Fixed bracelet bars Steel case back",
+        "Movement: Manufacture Calibre MT5602 (COSC) Self-winding mechanical movement with bidirectional rotor system",
+        "Power Reserve: Power reserve of approximately 70 hours",
+        "Winding Crown: Titanium crown, adorned with the TUDOR shield in relief",
+        "Waterproofness: Waterproof to 200m (660 ft)",
+        "Bezel: Bidirectional rotating bezel in titanium with ceramic disc, 60-minute retrograde graduation for navigation by successive stages",
+        "Dial: Navy blue",
+        "Crystal: Sapphire crystal",
+        "Bracelet: Navy blue fabric strap with grey central thread, equipped with a self-gripping fastening system"
+      ],
+      "stock": 25,
+      "source": "https://www.tudorwatch.com/en/watches/pelagos-fxd/m25707b-0001",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Manufacturer structured product reference m25707b-0001",
+        "review": "specifications",
+        "missing": []
+      },
+      "familyId": "tudor:tudor-pelagos-fxd",
+      "leafType": "watches",
+      "modelName": "Pelagos FXD Marine Nationale (Ref. M25707B)",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "pelagos fxd marine nationale (ref. m25707b)",
+        "sourceSku": "m25707b-0001",
+        "caseDiameterMm": 42,
+        "caseMaterial": "Titanium case, 42mm in diameter, 12.75mm thick, 52mm from lug to lug, satin-brushed finish Fixed bracelet bars Steel case back",
+        "movement": "Manufacture Calibre MT5602 (COSC) Self-winding mechanical movement with bidirectional rotor system",
+        "powerReserveHours": 70,
+        "waterResistanceM": 200,
+        "crystal": "Sapphire crystal"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "m25707b-0001 · Navy Blue / Fixed Strap Bars",
+      "description": "Discover the TUDOR Pelagos FXD watch m25707b-0001 - Manufacture Calibre MT5602 - 42mm titanium case - Navy blue fabric strap. Case: Titanium case, 42mm in diameter, 12.75mm thick, 52mm from lug to lug, satin-brushed finish Fixed bracelet bars Steel case back. Movement: Manufacture Calibre MT5602 (COSC) Self-winding mechanical movement with bidirectional rotor system. Power Reserve: Power reserve of approximately 70 hours. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact model using manufacturer Product structured data, an explicit SKU, variant-specific photograph and recorded specification fields. Unestablished fields are disclosed rather than inferred.",
+    "evidence": {
+      "source": "https://www.tudorwatch.com/en/watches/pelagos-fxd/m25707b-0001",
+      "manufacturerSku": "m25707b-0001",
+      "sourceHash": "c7280da7b0eab5a8786102075ecb7be2ef96285a787ea1971797461acac4b71a",
+      "sourceImage": "https://media.tudorwatch.com/image/upload/q_auto/f_auto/t_tdr-cover-watch/c_limit,w_1920/v1/catalogue/0yi5ee8b69yh3/upright-cb-with-drop-shadow/tudor-m25707b-0001",
+      "properties": [
+        {
+          "@type": "PropertyValue",
+          "name": "Case",
+          "value": "Titanium case, 42mm in diameter, 12.75mm thick, 52mm from lug to lug, satin-brushed finish Fixed bracelet bars Steel case back"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Movement",
+          "value": "Manufacture Calibre MT5602 (COSC) Self-winding mechanical movement with bidirectional rotor system"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Reserve",
+          "value": "Power reserve of approximately 70 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Winding Crown",
+          "value": "Titanium crown, adorned with the TUDOR shield in relief"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Waterproofness",
+          "value": "Waterproof to 200m (660 ft)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bezel",
+          "value": "Bidirectional rotating bezel in titanium with ceramic disc, 60-minute retrograde graduation for navigation by successive stages"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Dial",
+          "value": "Navy blue"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Crystal",
+          "value": "Sapphire crystal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bracelet",
+          "value": "Navy blue fabric strap with grey central thread, equipped with a self-gripping fastening system"
+        }
+      ],
+      "description": "Discover the TUDOR Pelagos FXD watch m25707b-0001 - Manufacture Calibre MT5602 - 42mm titanium case - Navy blue fabric strap",
+      "sourceFile": "e032c40adbbfdc566e766f11fd7afc4c87503bd3bc19b9c470ec45ea330e0103.json",
+      "photographSha256": "62c36bdbe7f597362463e785f018a8a9fe55634b710552ed667c51391036b9ce",
+      "review": "Manufacturer structured fields and visual model/variant review"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-BLACK-BAY-58",
+    "expected": {
+      "name": "Tudor Black Bay 58 39mm (Ref. M79030N)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/black-bay-58/m79030n-0001",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic manufacture mt5402",
+        "modelName": "black bay 58 39mm (ref. m79030n)",
+        "caseMaterial": "stainless steel",
+        "caseDiameterMm": 39,
+        "waterResistanceM": 200,
+        "powerReserveHours": 70
+      }
+    },
+    "acceptedPreimages": [
+      {
+        "name": "Tudor Black Bay 58 39mm (Ref. M79030N)",
+        "brand": "Tudor",
+        "source": "https://www.tudorwatch.com/en/watches/black-bay-58/m79030n-0001",
+        "attributes": {
+          "brand": "tudor",
+          "crystal": "sapphire",
+          "movement": "automatic manufacture mt5402",
+          "modelName": "black bay 58 39mm (ref. m79030n)",
+          "caseMaterial": "stainless steel",
+          "caseDiameterMm": 39,
+          "waterResistanceM": 200,
+          "powerReserveHours": 70
+        }
+      }
+    ],
+    "product": {
+      "id": "PROD-WATCHES-TUDOR-TUDOR-BLACK-BAY-58",
+      "name": "Tudor Black Bay Fifty-Eight · M79030N-0001",
+      "brand": "Tudor",
+      "color": "Black dial · Steel bracelet",
+      "media": {
+        "url": "/images/verified/tudor-m79030n-0001-48c410718e4b5c5f.webp",
+        "source": "https://media.tudorwatch.com/image/upload/fl_attachment/v1/tudorwatch/pressroom/products/black-bay-58/pdf/bw18-tudor-black-bay-fifty-eight-en.pdf",
+        "alt": "Tudor Black Bay Fifty-Eight · M79030N-0001",
+        "attribution": "Tudor reference photography via REEDS product listing; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Reference: M79030N-0001",
+        "Case diameter: 39 mm",
+        "Case material: Stainless steel",
+        "Movement: Self-winding mechanical, Manufacture Calibre MT5402 (COSC)",
+        "Power reserve: Approximately 70 hours",
+        "Water resistance: 200 m",
+        "Crystal: Sapphire",
+        "Dial and bracelet: Black dial · Steel bracelet"
+      ],
+      "stock": 25,
+      "source": "https://media.tudorwatch.com/image/upload/fl_attachment/v1/tudorwatch/pressroom/products/black-bay-58/pdf/bw18-tudor-black-bay-fifty-eight-en.pdf",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "Tudor archived manufacturer reference; exact bracelet photograph from REEDS",
+        "review": "specifications",
+        "missing": [
+          "Real merchant stock, current selling price and fulfillment are not connected.",
+          "Personal fit and authenticity of any future physical item are not established by this catalog reference."
+        ]
+      },
+      "familyId": "tudor:tudor-black-bay-58",
+      "leafType": "watches",
+      "modelName": "M79030N-0001",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "m79030n-0001",
+        "sourceSku": "M79030N-0001",
+        "caseDiameterMm": 39,
+        "caseMaterial": "stainless steel",
+        "movement": "Self-winding mechanical, Manufacture Calibre MT5402 (COSC)",
+        "powerReserveHours": 70,
+        "waterResistanceM": 200,
+        "crystal": "Sapphire"
+      },
+      "provenance": "manufacturer_evidence",
+      "skuVariant": "M79030N-0001 · Black dial · Steel bracelet",
+      "description": "Tudor Black Bay Fifty-Eight · M79030N-0001. An automatic steel wristwatch with a 39 mm case and approximately 70 hours of power reserve. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact discontinued/reference-specific watch rather than a newer model. Correct the photograph, source, full reference and aligned specifications; retain the existing offer and inventory.",
+    "evidence": {
+      "source": "https://media.tudorwatch.com/image/upload/fl_attachment/v1/tudorwatch/pressroom/products/black-bay-58/pdf/bw18-tudor-black-bay-fifty-eight-en.pdf",
+      "photographSource": "https://www.reeds.com/black-bay-fifty-eight-stainless-steel-watch-39mm-m79030n-0001-plu19910165.html",
+      "manufacturerSku": "M79030N-0001",
+      "photographSha256": "48c410718e4b5c5fe6b420725e0cea7b091cf777a542b94f6ea985e48166aa20",
+      "sourceImage": "https://www.reeds.com/media/catalog/product/b/l/black_bay_fifty-eight_stainless_steel_watch_m79030n-0001-1-19910165-hxadc9fb3f_2.jpg",
+      "review": "Exact reference, dial and bracelet photo visually reviewed; specifications checked against archived manufacturer/authorized-retailer documentation"
+    }
+  },
+  {
+    "oldId": "PROD-WATCHES-TUDOR-TUDOR-ROYAL-41",
+    "expected": {
+      "name": "Tudor Tudor Royal 41mm (Ref. M28600)",
+      "brand": "Tudor",
+      "source": "https://www.tudorwatch.com/en/watches/tudor-royal/m28600-0005",
+      "attributes": {
+        "brand": "tudor",
+        "crystal": "sapphire",
+        "movement": "automatic calibre t603",
+        "modelName": "tudor royal 41mm (ref. m28600)",
+        "caseMaterial": "316l stainless steel",
+        "caseDiameterMm": 41,
+        "waterResistanceM": 100,
+        "powerReserveHours": 38
+      }
+    },
+    "acceptedPreimages": [
+      {
+        "name": "Tudor Royal 41mm (Ref. M28600)",
+        "brand": "Tudor",
+        "source": "https://www.tudorwatch.com/en/watches/tudor-royal/m28600-0005",
+        "attributes": {
+          "brand": "tudor",
+          "crystal": "sapphire",
+          "movement": "automatic calibre t603",
+          "modelName": "tudor royal 41mm (ref. m28600)",
+          "caseMaterial": "316l stainless steel",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 100,
+          "powerReserveHours": 38
+        }
+      }
+    ],
+    "product": {
+      "id": "PROD-WATCHES-TUDOR-TUDOR-ROYAL-41",
+      "name": "Tudor Royal · M28600-0005 · Blue Dial",
+      "brand": "Tudor",
+      "color": "Blue dial · Integrated steel bracelet",
+      "media": {
+        "url": "/images/verified/tudor-m28600-0005-17f4b16ccbcbffff.webp",
+        "source": "https://www.reeds.com/tudor-royal-blue-dial-stainless-steel-watch-41mm-m28600-0005-plum28600-0005.html",
+        "alt": "Tudor Royal · M28600-0005 · Blue Dial",
+        "attribution": "Tudor reference photography via REEDS product listing; external reference",
+        "reviewedAt": "2026-10-24",
+        "usage": "external_reference"
+      },
+      "price": 275000,
+      "specs": [
+        "Reference: M28600-0005",
+        "Case diameter: 41 mm",
+        "Case material: Stainless steel",
+        "Movement: Self-winding mechanical, Calibre T603",
+        "Power reserve: Approximately 38 hours",
+        "Water resistance: 100 m",
+        "Crystal: Sapphire",
+        "Dial and bracelet: Blue dial · Integrated steel bracelet"
+      ],
+      "stock": 25,
+      "source": "https://www.reeds.com/tudor-royal-blue-dial-stainless-steel-watch-41mm-m28600-0005-plum28600-0005.html",
+      "category": "watches",
+      "evidence": {
+        "checkedAt": "2026-10-24",
+        "region": "REEDS authorized retailer exact product reference",
+        "review": "specifications",
+        "missing": [
+          "Real merchant stock, current selling price and fulfillment are not connected.",
+          "Personal fit and authenticity of any future physical item are not established by this catalog reference."
+        ]
+      },
+      "familyId": "tudor:tudor-royal-41",
+      "leafType": "watches",
+      "modelName": "M28600-0005",
+      "offerKind": "sandbox",
+      "sponsored": false,
+      "attributes": {
+        "brand": "tudor",
+        "modelName": "m28600-0005",
+        "sourceSku": "M28600-0005",
+        "caseDiameterMm": 41,
+        "caseMaterial": "stainless steel",
+        "movement": "Self-winding mechanical, Calibre T603",
+        "powerReserveHours": 38,
+        "waterResistanceM": 100,
+        "crystal": "Sapphire"
+      },
+      "provenance": "merchant_sample",
+      "skuVariant": "M28600-0005 · Blue dial · Integrated steel bracelet",
+      "description": "Tudor Royal · M28600-0005 · Blue Dial. An automatic steel wristwatch with a 41 mm case and approximately 38 hours of power reserve. DALE price and stock are simulated sandbox offers.",
+      "compatibleModels": [],
+      "deviceCompatibility": []
+    },
+    "reason": "Recover the exact discontinued/reference-specific watch rather than a newer model. Correct the photograph, source, full reference and aligned specifications; retain the existing offer and inventory.",
+    "evidence": {
+      "source": "https://www.reeds.com/tudor-royal-blue-dial-stainless-steel-watch-41mm-m28600-0005-plum28600-0005.html",
+      "photographSource": "https://www.reeds.com/tudor-royal-blue-dial-stainless-steel-watch-41mm-m28600-0005-plum28600-0005.html",
+      "manufacturerSku": "M28600-0005",
+      "photographSha256": "17f4b16ccbcbffff5a742bbfcce51c37b54fef353d527b00d619ce73212da12f",
+      "sourceImage": "https://www.reeds.com/media/catalog/product/t/u/tudor_royal_blue_dial_stainless_steel_watch__41mm__m28600-0005-1-m28600-0005-hxe737a642_1.jpg",
+      "review": "Exact reference, dial and bracelet photo visually reviewed; specifications checked against archived manufacturer/authorized-retailer documentation"
+    }
+  }
+]

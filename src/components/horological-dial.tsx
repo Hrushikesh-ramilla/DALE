@@ -1,8 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+} from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { WatchBrandLogo } from "./watch-brand-logos";
 
 export interface WatchBrandInfo {
@@ -20,15 +24,17 @@ interface HorologicalDialProps {
   onSelectBrand: (brandName: string) => void;
 }
 
-export function HorologicalDial({ brands, brandCounts, onSelectBrand }: HorologicalDialProps) {
+export function HorologicalDial({
+  brands,
+  brandCounts,
+  onSelectBrand,
+}: HorologicalDialProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   // Start rotation 360 degrees away (-450 = -90 - 360) so it animates a full 360-degree sweep on mount
   const [rotation, setRotation] = useState(-450);
   const [isOpeningSweep, setIsOpeningSweep] = useState(true);
   const [isWindingRight, setIsWindingRight] = useState(false);
   const [isWindingLeft, setIsWindingLeft] = useState(false);
-  // 3D Gyroscope Perspective Tilt
-  const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
   const dialRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
@@ -39,18 +45,21 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
   const stepAngle = 360 / numBrands;
 
   // Sync rotation smoothly to active brand
-  const rotateToBrand = useCallback((index: number) => {
-    const normalizedIndex = ((index % numBrands) + numBrands) % numBrands;
-    setActiveIndex(normalizedIndex);
-    // 12 o'clock position is -90 degrees from standard (0 = 3 o'clock)
-    // To bring index i to 12 o'clock: angle_i + rotation = -90 => rotation = -90 - angle_i
-    const targetAngle = -90 - (normalizedIndex * stepAngle);
-    // Smooth angle interpolation to avoid 360 jump
-    setRotation((prev) => {
-      const diff = ((targetAngle - prev + 180) % 360) - 180;
-      return prev + diff;
-    });
-  }, [numBrands, stepAngle]);
+  const rotateToBrand = useCallback(
+    (index: number) => {
+      const normalizedIndex = ((index % numBrands) + numBrands) % numBrands;
+      setActiveIndex(normalizedIndex);
+      // 12 o'clock position is -90 degrees from standard (0 = 3 o'clock)
+      // To bring index i to 12 o'clock: angle_i + rotation = -90 => rotation = -90 - angle_i
+      const targetAngle = -90 - normalizedIndex * stepAngle;
+      // Smooth angle interpolation to avoid 360 jump
+      setRotation((prev) => {
+        const diff = ((targetAngle - prev + 180) % 360) - 180;
+        return prev + diff;
+      });
+    },
+    [numBrands, stepAngle],
+  );
 
   // Initial 360-degree rotation entrance animation:
   // Starts at oldest house (Blancpain, index 0), sweeps 360 degrees across the historical spectrum,
@@ -133,38 +142,18 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
     rotateToBrand(normalized);
   };
 
-  // 3D Mouse Gyroscope Parallax Tracking
-  const handleStageMouseMove = (e: React.PointerEvent) => {
-    if (isDragging.current) {
-      handlePointerMove(e);
-      return;
-    }
-    if (!dialRef.current) return;
-    const rect = dialRef.current.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height / 2;
-    const dx = (e.clientX - cx) / (rect.width / 2);
-    const dy = (e.clientY - cy) / (rect.height / 2);
-    setTilt({
-      x: Math.max(-10, Math.min(10, -dy * 10)),
-      y: Math.max(-10, Math.min(10, dx * 10)),
-    });
-  };
-
-  const handleStageMouseLeave = () => {
-    setTilt({ x: 0, y: 0 });
-  };
-
   const activeBrand = brands[activeIndex] || brands[0];
-  const activeCount = brandCounts[activeBrand.name] || activeBrand.count;
-  const originCity = activeBrand.origin ? activeBrand.origin.split(",")[0].trim().toUpperCase() : "SWITZERLAND";
+  const activeCount = brandCounts[activeBrand.name] ?? 0;
+
 
   return (
     <div className="horological-dial-experience">
       {/* Main Horological Dial Container with Dual Twin-Crown Winders */}
       <div className="dial-stage-wrapper">
         {/* Left Interactive Watch Crown at 9 O'Clock (Previous House) */}
-        <div className={`watch-crown-assembly left-crown ${isWindingLeft ? "winding-active" : ""}`}>
+        <div
+          className={`watch-crown-assembly left-crown ${isWindingLeft ? "winding-active" : ""}`}
+        >
           <div className="crown-stem stem-left" />
           <button
             type="button"
@@ -174,7 +163,12 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             aria-label="Wind Watch Crown to Previous House"
           >
             <div className="knurled-ridges">
-              <span /><span /><span /><span /><span /><span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
             </div>
             <div className="crown-led-slit" />
           </button>
@@ -185,7 +179,9 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
         </div>
 
         {/* Right Interactive Watch Crown at 3 O'Clock (Next House) */}
-        <div className={`watch-crown-assembly right-crown ${isWindingRight ? "winding-active" : ""}`}>
+        <div
+          className={`watch-crown-assembly right-crown ${isWindingRight ? "winding-active" : ""}`}
+        >
           <div className="crown-stem stem-right" />
           <button
             type="button"
@@ -195,7 +191,12 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             aria-label="Wind Watch Crown to Next House"
           >
             <div className="knurled-ridges">
-              <span /><span /><span /><span /><span /><span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
             </div>
             <div className="crown-led-slit" />
           </button>
@@ -230,7 +231,13 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
           {/* Chapter Ring with 12 Luminous Hour Batons & 48 Minute Ticks */}
           <svg className="dial-chapter-ring-svg" viewBox="0 0 800 800">
             <defs>
-              <filter id="lumeGlowCardinal" x="-60%" y="-60%" width="220%" height="220%">
+              <filter
+                id="lumeGlowCardinal"
+                x="-60%"
+                y="-60%"
+                width="220%"
+                height="220%"
+              >
                 <feGaussianBlur stdDeviation="3.5" result="blur1" />
                 <feGaussianBlur stdDeviation="9" result="blur2" />
                 <feMerge>
@@ -239,7 +246,13 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                   <feMergeNode in="SourceGraphic" />
                 </feMerge>
               </filter>
-              <filter id="lumeGlowSub" x="-50%" y="-50%" width="200%" height="200%">
+              <filter
+                id="lumeGlowSub"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
                 <feGaussianBlur stdDeviation="2" result="blur1" />
                 <feGaussianBlur stdDeviation="6" result="blur2" />
                 <feMerge>
@@ -251,13 +264,55 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             </defs>
 
             {/* Chapter ring concentric tracks */}
-            <circle cx="400" cy="400" r="388" fill="none" stroke="#1e293b" strokeWidth="1.5" />
-            <circle cx="400" cy="400" r="362" fill="none" stroke="#cbd5e1" strokeWidth="1" strokeOpacity="0.45" />
-            <circle cx="400" cy="400" r="338" fill="none" stroke="#334155" strokeWidth="0.8" strokeDasharray="3 4" strokeOpacity="0.5" />
+            <circle
+              cx="400"
+              cy="400"
+              r="388"
+              fill="none"
+              stroke="#1e293b"
+              strokeWidth="1.5"
+            />
+            <circle
+              cx="400"
+              cy="400"
+              r="362"
+              fill="none"
+              stroke="#cbd5e1"
+              strokeWidth="1"
+              strokeOpacity="0.45"
+            />
+            <circle
+              cx="400"
+              cy="400"
+              r="338"
+              fill="none"
+              stroke="#334155"
+              strokeWidth="0.8"
+              strokeDasharray="3 4"
+              strokeOpacity="0.5"
+            />
 
             {/* Dual Astronomical Complication Tracks (Concentric guide orbits for staggered houses) */}
-            <circle cx="400" cy="400" r="339" fill="none" stroke="#cbd5e1" strokeWidth="0.8" strokeDasharray="2 6" strokeOpacity="0.35" />
-            <circle cx="400" cy="400" r="262" fill="none" stroke="#cbd5e1" strokeWidth="0.8" strokeDasharray="2 6" strokeOpacity="0.35" />
+            <circle
+              cx="400"
+              cy="400"
+              r="339"
+              fill="none"
+              stroke="#cbd5e1"
+              strokeWidth="0.8"
+              strokeDasharray="2 6"
+              strokeOpacity="0.35"
+            />
+            <circle
+              cx="400"
+              cy="400"
+              r="262"
+              fill="none"
+              stroke="#cbd5e1"
+              strokeWidth="0.8"
+              strokeDasharray="2 6"
+              strokeOpacity="0.35"
+            />
 
             {/* 48 Minute Ticks (Between the 12 hours) */}
             {Array.from({ length: 60 }).map((_, i) => {
@@ -289,7 +344,10 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
               const rOuter = 370;
 
               return (
-                <g key={`hour-baton-${h}`} transform={`rotate(${angleDeg} 400 400)`}>
+                <g
+                  key={`hour-baton-${h}`}
+                  transform={`rotate(${angleDeg} 400 400)`}
+                >
                   {/* Luminous Glow Halo */}
                   <rect
                     x={400 - (width + 4) / 2}
@@ -298,7 +356,11 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                     height={length + 4}
                     rx={(width + 4) / 2}
                     fill="rgba(226, 232, 240, 0.5)"
-                    filter={isCardinal ? "url(#lumeGlowCardinal)" : "url(#lumeGlowSub)"}
+                    filter={
+                      isCardinal
+                        ? "url(#lumeGlowCardinal)"
+                        : "url(#lumeGlowSub)"
+                    }
                   />
                   {/* Outer Silver / Platinum Frame */}
                   <rect
@@ -319,7 +381,11 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                     height={length - 2}
                     rx={(width - 1.8) / 2}
                     fill="#ffffff"
-                    filter={isCardinal ? "url(#lumeGlowCardinal)" : "url(#lumeGlowSub)"}
+                    filter={
+                      isCardinal
+                        ? "url(#lumeGlowCardinal)"
+                        : "url(#lumeGlowSub)"
+                    }
                   />
                 </g>
               );
@@ -399,7 +465,11 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
                   title={`Select ${brand.name} (EST. ${brand.est})`}
                 >
                   <div className="node-emblem-wrap">
-                    <WatchBrandLogo brand={brand.name} size={150} className="node-logo-svg" />
+                    <WatchBrandLogo
+                      brand={brand.name}
+                      size={150}
+                      className="node-logo-svg"
+                    />
                   </div>
                 </div>
               );
@@ -422,12 +492,18 @@ export function HorologicalDial({ brands, brandCounts, onSelectBrand }: Horologi
             <div className="stage-content">
               {/* Sculpted Metal Emblem (Razor-Sharp Vector Resolution) */}
               <div className="stage-brand-emblem-3d">
-                <WatchBrandLogo brand={activeBrand.name} size={100} className="active-stage-svg-3d" />
+                <WatchBrandLogo
+                  brand={activeBrand.name}
+                  size={100}
+                  className="active-stage-svg-3d"
+                />
               </div>
 
               {/* Minimalist Horological Collection Indicator */}
               <div className="stage-collection-indicator">
-                <span className="indicator-count">{activeCount} TIMEPIECES</span>
+                <span className="indicator-count">
+                  {activeCount} TIMEPIECES
+                </span>
                 <span className="indicator-arrow">&rarr;</span>
               </div>
             </div>

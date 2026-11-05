@@ -82,25 +82,96 @@ function getSmartChipsForLeaf(leaf: LeafTypeKey): string[] {
         "Clear All",
       ];
     case "handbags":
-    case "backpacks":
-    case "wallets":
       return [
         "Hermès",
-        "Goyard",
+        "Chanel",
         "Louis Vuitton",
         "Under $2,500",
         "Leather",
         "Clear All",
       ];
+    case "backpacks":
+      return [
+        "Rimowa",
+        "Tumi",
+        "Hermès",
+        "Louis Vuitton",
+        "Under $2,500",
+        "Leather",
+        "Clear All",
+      ];
+    case "wallets":
+      return [
+        "Hermès",
+        "Goyard",
+        "Louis Vuitton",
+        "Under $1,000",
+        "Leather",
+        "Clear All",
+      ];
     case "loafers":
-    case "formal-shoes":
-    case "boots":
       return [
         "Berluti",
         "John Lobb",
         "Loro Piana",
         "Under $1,500",
         "Goodyear Welt",
+        "Clear All",
+      ];
+    case "formal-shoes":
+      return [
+        "Berluti",
+        "John Lobb",
+        "Loro Piana",
+        "Christian Louboutin",
+        "Under $1,500",
+        "Goodyear Welt",
+        "Clear All",
+      ];
+    case "boots":
+      return [
+        "Bottega Veneta",
+        "Loro Piana",
+        "Christian Louboutin",
+        "Under $1,500",
+        "Goodyear Welt",
+        "Clear All",
+      ];
+    case "coats":
+      return [
+        "Dior",
+        "Loro Piana",
+        "Burberry",
+        "Under $4,000",
+        "Cashmere",
+        "Clear All",
+      ];
+    case "shirts":
+      return [
+        "Brunello Cucinelli",
+        "Brioni",
+        "Gucci",
+        "Under $800",
+        "Egyptian Cotton",
+        "Clear All",
+      ];
+    case "trousers":
+      return [
+        "Loro Piana",
+        "Brunello Cucinelli",
+        "Bottega Veneta",
+        "Under $1,200",
+        "Wool & Cashmere",
+        "Clear All",
+      ];
+    case "earbuds":
+      return [
+        "Apple",
+        "Sony",
+        "Bang & Olufsen",
+        "Bose",
+        "Under $300",
+        "Active Noise Cancellation",
         "Clear All",
       ];
     default:
@@ -265,12 +336,12 @@ function CategoryCatalogContent({
         </span>
         <h1>{title}</h1>
         <p>
-          Explore authenticated models across prestigious luxury houses. 100%
-          verified merchant provenance and complete technical specifications.
+          Explore product references and selected variants across the
+          collection. Compare the recorded specifications on each product.
         </p>
         <div className="category-stats-bar">
           <span className="pill">{totalModelsAcrossHouses} Models</span>
-          <span>{brandsList.length} Authenticated Houses</span>
+          <span>{brandsList.length} Available Brands</span>
         </div>
       </header>
 
@@ -461,7 +532,7 @@ function CategoryCatalogContent({
           >
             <h2>Explore the Entire {title} Portfolio</h2>
             <p>
-              Compare verified models across all {brandsList.length} houses with
+              Compare recorded models across all {brandsList.length} houses with
               detailed material, sizing, and architectural specifications.
             </p>
             <Link

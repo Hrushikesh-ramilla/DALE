@@ -806,6 +806,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           </CompactNavigation>
           <div className="header-actions">
             <ShoppingBriefMenu
+              categoryCounts={databaseCatalog.summary?.counts}
               model={model}
               models={models}
               setModel={setModel}
@@ -1163,6 +1164,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                         </div>
                         <div className="catalog-heading-controls">
                           <ShoppingBriefMenu
+                            categoryCounts={databaseCatalog.summary?.counts}
                             model={model}
                             models={models}
                             setModel={setModel}

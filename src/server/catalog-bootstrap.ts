@@ -3,11 +3,17 @@ import { brandedCatalog } from "@/domain/branded-catalog";
 import { withReviewedProductFacts } from "@/domain/reviewed-product-facts";
 import type { Sql } from "./database";
 import { bootstrapReviewedCatalog } from "./bundled-catalog";
+import { applyCatalogRepairs } from "./catalog-repairs";
+import { cleanStoredCatalogCopy } from "./catalog-copy-cleanup";
 
 /** Classify legacy IDs once; never overwrite imported records during a read or restart. */
 export async function bootstrapCatalog(sql: Sql) {
   const existing = await sql.query("SELECT 1 FROM catalog_products LIMIT 1");
-  if (existing.rows.length > 0) return;
+  if (existing.rows.length > 0) {
+    await applyCatalogRepairs(sql);
+    await cleanStoredCatalogCopy(sql);
+    return;
+  }
 
   const publicIds = new Set(publicCatalog.map((product) => product.id));
   const records = [
@@ -49,4 +55,6 @@ export async function bootstrapCatalog(sql: Sql) {
     );
   }
   await bootstrapReviewedCatalog(sql);
+  await applyCatalogRepairs(sql);
+  await cleanStoredCatalogCopy(sql);
 }

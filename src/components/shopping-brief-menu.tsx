@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 interface ShoppingBriefMenuProps {
+  categoryCounts?: Record<string, number>;
   model: string;
   models: readonly string[];
   setModel: (m: string) => void;
@@ -39,6 +40,7 @@ interface ShoppingBriefMenuProps {
 }
 
 export function ShoppingBriefMenu({
+  categoryCounts,
   model,
   models,
   setModel,
@@ -62,6 +64,11 @@ export function ShoppingBriefMenu({
   onIdentify,
   compatibleCount,
 }: ShoppingBriefMenuProps) {
+  const availableCategories = Object.fromEntries(
+    Object.entries(categoryTitles).filter(
+      ([id]) => categoryCounts === undefined || (categoryCounts[id] || 0) > 0,
+    ),
+  );
   const [isOpen, setIsOpen] = useState(false);
   const [isPinned, setIsPinned] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -384,7 +391,7 @@ export function ShoppingBriefMenu({
                       }}
                     >
                       {Object.entries({
-                        ...categoryTitles,
+                        ...availableCategories,
                         "": "All eligible categories",
                       }).map(([value, label]) => (
                         <option value={value} key={value}>
@@ -411,7 +418,7 @@ export function ShoppingBriefMenu({
                     </div>
                   </label>
                   <div className="flyout-category-pills">
-                    {Object.entries(categoryTitles).map(([id, label]) => (
+                    {Object.entries(availableCategories).map(([id, label]) => (
                       <button
                         key={id}
                         type="button"
