@@ -369,7 +369,11 @@ function CategoryCatalogContent({
         >
           <input
             type="text"
-            placeholder={`Ask DALE to filter ${title} (e.g. "Apple iPhone", "Under $800", "Foldable Displays", "Samsung Galaxy")...`}
+            placeholder={`Ask DALE to filter ${title} (e.g. ${smartChips
+              .filter((chip) => chip !== "Clear All")
+              .slice(0, 3)
+              .map((chip) => `"${chip}"`)
+              .join(", ")})...`}
             value={aiInput}
             onChange={(e) => setAiInput(e.target.value)}
           />
@@ -459,8 +463,8 @@ function CategoryCatalogContent({
             <div>
               <div className="utility-text">Complete {title} Collection</div>
               <div className="utility-subtext">
-                Browse all {totalModelsAcrossHouses} authenticated models
-                directly or select a house below
+                Browse all {totalModelsAcrossHouses} recorded models directly or
+                select a house below
               </div>
             </div>
             <Link
@@ -513,7 +517,7 @@ function CategoryCatalogContent({
                     <span className="brand-price-tag">
                       {brand.minPrice
                         ? `From ${formatMoney(brand.minPrice)}`
-                        : "Verified House"}
+                        : "Product Collection"}
                     </span>
                     <span className="brand-action-link">
                       <span>View House</span>
@@ -560,11 +564,11 @@ function CategoryCatalogContent({
           <header className="catalog-space-header">
             <div className="header-info">
               <div className="eyebrow">
-                {brandParam ? "AUTHENTICATED HOUSE" : "COMPLETE COLLECTION"}
+                {brandParam ? "SELECTED BRAND" : "COMPLETE COLLECTION"}
               </div>
               <h1>{brandParam || `All ${title}`}</h1>
               <p>
-                Showing {sortedProducts.length} authenticated model
+                Showing {sortedProducts.length} recorded model
                 {sortedProducts.length === 1 ? "" : "s"}
                 {brandParam
                   ? ` from ${brandParam}`
@@ -723,7 +727,7 @@ function CategoryCatalogContent({
                       <div className="product-topline">
                         <span className="fit-label">
                           <Check size={12} />{" "}
-                          {product.brand || "Authenticated House"}
+                          {product.brand || "Product Collection"}
                         </span>
                         {product.sponsored && (
                           <span className="sponsored">Sponsored</span>
