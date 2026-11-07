@@ -5,6 +5,7 @@ import type { Sql } from "./database";
 import { bootstrapReviewedCatalog } from "./bundled-catalog";
 import { applyCatalogRepairs } from "./catalog-repairs";
 import { cleanStoredCatalogCopy } from "./catalog-copy-cleanup";
+import { repairCatalogIndexes } from "./catalog-index-repair";
 
 /** Classify legacy IDs once; never overwrite imported records during a read or restart. */
 export async function bootstrapCatalog(sql: Sql) {
@@ -12,6 +13,7 @@ export async function bootstrapCatalog(sql: Sql) {
   if (existing.rows.length > 0) {
     await applyCatalogRepairs(sql);
     await cleanStoredCatalogCopy(sql);
+    await repairCatalogIndexes(sql);
     return;
   }
 
@@ -57,4 +59,5 @@ export async function bootstrapCatalog(sql: Sql) {
   await bootstrapReviewedCatalog(sql);
   await applyCatalogRepairs(sql);
   await cleanStoredCatalogCopy(sql);
+  await repairCatalogIndexes(sql);
 }

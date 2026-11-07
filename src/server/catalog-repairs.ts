@@ -1,5 +1,8 @@
 import { createHash } from "node:crypto";
 import release from "../../catalog/repairs/repair-first-2026-10-24.json";
+import fragranceFollowup from "../../catalog/repairs/fragrance-variants-2026-10-24.json";
+import apparelFollowup from "../../catalog/repairs/apparel-variants-2026-10-24.json";
+import deviceFollowup from "../../catalog/repairs/device-reference-2026-10-24.json";
 import type { Product } from "@/domain/catalog";
 import type { Sql } from "./database";
 
@@ -41,7 +44,12 @@ const signature = (p: Product) => ({
  * audited and applied once; unrelated products and later withdrawals are untouched. */
 export async function applyCatalogRepairs(
   sql: Sql,
-  operations = release.operations as CatalogRepair[],
+  operations = [
+    ...release.operations,
+    ...fragranceFollowup.operations,
+    ...apparelFollowup.operations,
+    ...deviceFollowup.operations,
+  ] as CatalogRepair[],
 ) {
   const receipts = await sql.query<{ id: string }>(
     "SELECT id FROM catalog_operator_jobs WHERE kind='catalog_repair_first' AND status='completed'",

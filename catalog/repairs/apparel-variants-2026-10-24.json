@@ -1,0 +1,260 @@
+{
+  "id": "apparel-variants-2026-10-24",
+  "operations": [
+    {
+      "oldId": "B22",
+      "expected": {
+        "name": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · S",
+        "brand": "Givenchy",
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "attributes": {
+          "size": "S",
+          "brand": "givenchy",
+          "material": "cotton",
+          "modelName": "paris gros grain",
+          "productType": "t-shirt"
+        }
+      },
+      "product": {
+        "id": "B22",
+        "name": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · S",
+        "brand": "Givenchy",
+        "color": "Dark Havanna",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-3ffed80708e02cc1ee99-c12e466a9b4f36b5.webp",
+          "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+          "alt": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · S",
+          "attribution": "Givenchy manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 59000,
+        "specs": [
+          "Manufacturer style/color reference: BM71NK3YSJ208",
+          "Manufacturer size variant ID: 3617016073781",
+          "Size label: S",
+          "Color: Dark Havanna (208)",
+          "Composition: 100% cotton",
+          "Neckline: Crew neck",
+          "Sleeves: Short sleeves",
+          "Country of origin: Portugal"
+        ],
+        "stock": 20,
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "category": "clothing",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Givenchy US exact style/color page and selectable size variant",
+          "review": "specifications",
+          "missing": [
+            "Body measurements, conversion to other sizing systems and personal fit are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected."
+          ]
+        },
+        "familyId": "paris gros grain",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "givenchy",
+          "modelName": "paris gros grain",
+          "productType": "t-shirt",
+          "material": "cotton",
+          "materialComposition": "100% cotton",
+          "size": "S",
+          "sizeSystem": "Manufacturer letter size",
+          "finish": "Dark Havanna",
+          "sourceSku": "BM71NK3YSJ208",
+          "manufacturerVariantId": "3617016073781",
+          "originCountry": "Portugal"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Givenchy cotton T-shirt with a crew neck, short sleeves and tonal Paris gros-grain detail. Dark Havanna color, manufacturer size S. DALE price and stock are simulated sandbox offers. Size labels do not establish personal fit.",
+        "compatibleModels": [],
+        "leafType": "t-shirts",
+        "modelName": "BM71NK3YSJ208",
+        "skuVariant": "Dark Havanna · S"
+      },
+      "reason": "Correct the charcoal color field and wrong cropped photograph to the Dark Havanna variant already named in the selected offer. Verify and preserve the actual S/M/L manufacturer size selection.",
+      "evidence": {
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "manufacturerSku": "BM71NK3YSJ208",
+        "manufacturerVariantId": "3617016073781",
+        "sourceHtmlSha256": "e142b73287a4e2e69fdda0267c1c0a4b9210173ce417b4c0980220865c1fa59b",
+        "selectedSize": "S",
+        "photographSha256": "c12e466a9b4f36b5d4873cd3aa9801af9dd4c6cd50425118f6ec0b9072821ab8",
+        "sourceImage": "https://assets.givenchy.com/asset/d405fc22-a04c-4a8b-80e0-5d1eff555911/High-Resolution-JPG/BM71NK3YSJ208-02-01.jpg?imwidth=1500",
+        "review": "Structured material/color/origin plus exact selectable size IDs and visual brown-shirt photograph checked."
+      }
+    },
+    {
+      "oldId": "B23",
+      "expected": {
+        "name": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · M",
+        "brand": "Givenchy",
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "attributes": {
+          "size": "M",
+          "brand": "givenchy",
+          "material": "cotton",
+          "modelName": "paris gros grain",
+          "productType": "t-shirt"
+        }
+      },
+      "product": {
+        "id": "B23",
+        "name": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · M",
+        "brand": "Givenchy",
+        "color": "Dark Havanna",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-5ffa2ac7f19e845663bf-c12e466a9b4f36b5.webp",
+          "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+          "alt": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · M",
+          "attribution": "Givenchy manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 59000,
+        "specs": [
+          "Manufacturer style/color reference: BM71NK3YSJ208",
+          "Manufacturer size variant ID: 3617016073774",
+          "Size label: M",
+          "Color: Dark Havanna (208)",
+          "Composition: 100% cotton",
+          "Neckline: Crew neck",
+          "Sleeves: Short sleeves",
+          "Country of origin: Portugal"
+        ],
+        "stock": 20,
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "category": "clothing",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Givenchy US exact style/color page and selectable size variant",
+          "review": "specifications",
+          "missing": [
+            "Body measurements, conversion to other sizing systems and personal fit are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected."
+          ]
+        },
+        "familyId": "paris gros grain",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "givenchy",
+          "modelName": "paris gros grain",
+          "productType": "t-shirt",
+          "material": "cotton",
+          "materialComposition": "100% cotton",
+          "size": "M",
+          "sizeSystem": "Manufacturer letter size",
+          "finish": "Dark Havanna",
+          "sourceSku": "BM71NK3YSJ208",
+          "manufacturerVariantId": "3617016073774",
+          "originCountry": "Portugal"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Givenchy cotton T-shirt with a crew neck, short sleeves and tonal Paris gros-grain detail. Dark Havanna color, manufacturer size M. DALE price and stock are simulated sandbox offers. Size labels do not establish personal fit.",
+        "compatibleModels": [],
+        "leafType": "t-shirts",
+        "modelName": "BM71NK3YSJ208",
+        "skuVariant": "Dark Havanna · M"
+      },
+      "reason": "Correct the charcoal color field and wrong cropped photograph to the Dark Havanna variant already named in the selected offer. Verify and preserve the actual S/M/L manufacturer size selection.",
+      "evidence": {
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "manufacturerSku": "BM71NK3YSJ208",
+        "manufacturerVariantId": "3617016073774",
+        "sourceHtmlSha256": "e142b73287a4e2e69fdda0267c1c0a4b9210173ce417b4c0980220865c1fa59b",
+        "selectedSize": "M",
+        "photographSha256": "c12e466a9b4f36b5d4873cd3aa9801af9dd4c6cd50425118f6ec0b9072821ab8",
+        "sourceImage": "https://assets.givenchy.com/asset/d405fc22-a04c-4a8b-80e0-5d1eff555911/High-Resolution-JPG/BM71NK3YSJ208-02-01.jpg?imwidth=1500",
+        "review": "Structured material/color/origin plus exact selectable size IDs and visual brown-shirt photograph checked."
+      }
+    },
+    {
+      "oldId": "B24",
+      "expected": {
+        "name": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · L",
+        "brand": "Givenchy",
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "attributes": {
+          "size": "L",
+          "brand": "givenchy",
+          "material": "cotton",
+          "modelName": "paris gros grain",
+          "productType": "t-shirt"
+        }
+      },
+      "product": {
+        "id": "B24",
+        "name": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · L",
+        "brand": "Givenchy",
+        "color": "Dark Havanna",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-8e6e7e0721cbbdc8ef9f-c12e466a9b4f36b5.webp",
+          "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+          "alt": "Givenchy Paris Gros Grain Cotton T-shirt · Dark Havanna · L",
+          "attribution": "Givenchy manufacturer product photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 59000,
+        "specs": [
+          "Manufacturer style/color reference: BM71NK3YSJ208",
+          "Manufacturer size variant ID: 3617016073767",
+          "Size label: L",
+          "Color: Dark Havanna (208)",
+          "Composition: 100% cotton",
+          "Neckline: Crew neck",
+          "Sleeves: Short sleeves",
+          "Country of origin: Portugal"
+        ],
+        "stock": 20,
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "category": "clothing",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Givenchy US exact style/color page and selectable size variant",
+          "review": "specifications",
+          "missing": [
+            "Body measurements, conversion to other sizing systems and personal fit are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected."
+          ]
+        },
+        "familyId": "paris gros grain",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "givenchy",
+          "modelName": "paris gros grain",
+          "productType": "t-shirt",
+          "material": "cotton",
+          "materialComposition": "100% cotton",
+          "size": "L",
+          "sizeSystem": "Manufacturer letter size",
+          "finish": "Dark Havanna",
+          "sourceSku": "BM71NK3YSJ208",
+          "manufacturerVariantId": "3617016073767",
+          "originCountry": "Portugal"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Givenchy cotton T-shirt with a crew neck, short sleeves and tonal Paris gros-grain detail. Dark Havanna color, manufacturer size L. DALE price and stock are simulated sandbox offers. Size labels do not establish personal fit.",
+        "compatibleModels": [],
+        "leafType": "t-shirts",
+        "modelName": "BM71NK3YSJ208",
+        "skuVariant": "Dark Havanna · L"
+      },
+      "reason": "Correct the charcoal color field and wrong cropped photograph to the Dark Havanna variant already named in the selected offer. Verify and preserve the actual S/M/L manufacturer size selection.",
+      "evidence": {
+        "source": "https://www.givenchy.com/us/en-US/t-shirt-in-cotton-with-givenchy-paris-gros-grain/BM71NK3YSJ-208.html",
+        "manufacturerSku": "BM71NK3YSJ208",
+        "manufacturerVariantId": "3617016073767",
+        "sourceHtmlSha256": "e142b73287a4e2e69fdda0267c1c0a4b9210173ce417b4c0980220865c1fa59b",
+        "selectedSize": "L",
+        "photographSha256": "c12e466a9b4f36b5d4873cd3aa9801af9dd4c6cd50425118f6ec0b9072821ab8",
+        "sourceImage": "https://assets.givenchy.com/asset/d405fc22-a04c-4a8b-80e0-5d1eff555911/High-Resolution-JPG/BM71NK3YSJ208-02-01.jpg?imwidth=1500",
+        "review": "Structured material/color/origin plus exact selectable size IDs and visual brown-shirt photograph checked."
+      }
+    }
+  ]
+}

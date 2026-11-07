@@ -1,0 +1,776 @@
+{
+  "id": "fragrance-variants-2026-10-24",
+  "policy": "Explicit exact-variant recovery only; no unverified-product withdrawals.",
+  "operations": [
+    {
+      "oldId": "B010",
+      "expected": {
+        "name": "Maison Francis Kurkdjian Baccarat Rouge 540 · Eau de Parfum · 70ml",
+        "brand": "Maison Francis Kurkdjian",
+        "source": "https://www.franciskurkdjian.com/uk-en/p/baccarat-rouge-540-eau-de-parfum-RA122321.html",
+        "attributes": {
+          "brand": "maison francis kurkdjian",
+          "scent": "amber",
+          "volumeMl": 70,
+          "modelName": "baccarat rouge 540",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "product": {
+        "id": "B010",
+        "name": "Maison Francis Kurkdjian Baccarat Rouge 540 · Eau de Parfum · 70 ml",
+        "brand": "Maison Francis Kurkdjian",
+        "color": "70 ml",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-2e40f2bf2df5deeb586a-81df92e13a3624c6.webp",
+          "source": "https://www.franciskurkdjian.com/uk-en/p/baccarat-rouge-540-eau-de-parfum-RA122321.html",
+          "alt": "Maison Francis Kurkdjian Baccarat Rouge 540 · Eau de Parfum · 70 ml",
+          "attribution": "Maison Francis Kurkdjian manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: RA122321",
+          "Concentration: eau de parfum",
+          "Bottle size: 70 ml",
+          "Manufacturer fragrance profile: woody amber floral"
+        ],
+        "stock": 20,
+        "source": "https://www.franciskurkdjian.com/uk-en/p/baccarat-rouge-540-eau-de-parfum-RA122321.html",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant RA122321",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected.",
+            "Not established for this reference: scent"
+          ]
+        },
+        "familyId": "baccarat rouge 540",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "maison francis kurkdjian",
+          "modelName": "baccarat rouge 540",
+          "productType": "eau de parfum",
+          "sourceSku": "RA122321",
+          "volumeMl": 70,
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody amber floral"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "A woody amber floral eau de parfum with jasmine, saffron, ambergris and dry woody accords. Selected 70 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance",
+        "skuVariant": "eau de parfum · 70 ml"
+      },
+      "reason": "Correct and enrich the existing intended fragrance variant using the manufacturer’s exact reference and selected bottle photograph. Preserve the offer ID, price and stock.",
+      "evidence": {
+        "source": "https://www.franciskurkdjian.com/uk-en/p/baccarat-rouge-540-eau-de-parfum-RA122321.html",
+        "manufacturerSku": "RA122321",
+        "volumeMl": 70,
+        "photographSha256": "81df92e13a3624c6cc0ba900b79c4e3c159a612d22a92782284149162cb2c79b",
+        "sourceImage": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dwa46019b3/BACCARAT_ROUGE_540/FRAGRANCE/3700559603116_BR540_EDP_70ML_1.png?sw=640&sh=640&strip=false",
+        "sourceHash": "d1cc59d0754467db0c614925ac6c7d86140d824e8731c8ccfc01ef902aba9265",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-DIOR-DIOR-FAHRENHEIT",
+      "expected": {
+        "name": "Dior Fahrenheit Eau de Toilette",
+        "brand": "Dior",
+        "source": "https://www.dior.com/en_us/beauty/products/fahrenheit-Y0067001.html",
+        "attributes": {
+          "brand": "dior",
+          "perfumer": "Jean-Louis Sieuzac & Maurice Roger",
+          "topNotes": "Nutmeg Flower, Lavender, Cedar, Chamomile, Mandarin Orange, Hawthorn, Bergamot,",
+          "volumeMl": 100,
+          "baseNotes": "Leather, Vetiver, Musk, Amber, Patchouli, Tonka Bean",
+          "modelName": "fahrenheit eau de toilette",
+          "heartNotes": "Violet Leaf, Nutmeg, Cedar, Sandalwood, Carnation, Honeysuckle, Jasmine, Lily of",
+          "concentration": "eau de toilette",
+          "olfactoryFamily": "leather woody floral"
+        }
+      },
+      "product": {
+        "id": "PROD-FRAGRANCE-DIOR-DIOR-FAHRENHEIT",
+        "name": "Dior Fahrenheit Eau de Toilette · 50 ml",
+        "brand": "Dior",
+        "color": "50 ml",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-28ae08436d711558264e-53749a6c4bd8230b.webp",
+          "source": "https://www.dior.com/en_us/beauty/products/fahrenheit-eau-de-toilette-F006622009.html",
+          "alt": "Dior Fahrenheit Eau de Toilette · 50 ml",
+          "attribution": "Dior manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 16500,
+        "specs": [
+          "Manufacturer reference: F006622009",
+          "Concentration: eau de toilette",
+          "Bottle size: 50 ml",
+          "Manufacturer fragrance profile: woody leather"
+        ],
+        "stock": 25,
+        "source": "https://www.dior.com/en_us/beauty/products/fahrenheit-eau-de-toilette-F006622009.html",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant F006622009",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected.",
+            "Not established for this reference: perfumer",
+            "Not established for this reference: topNotes",
+            "Not established for this reference: baseNotes",
+            "Not established for this reference: heartNotes"
+          ]
+        },
+        "familyId": "dior:dior-fahrenheit",
+        "leafType": "fragrance",
+        "modelName": "Fahrenheit Eau de Toilette",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "dior",
+          "modelName": "fahrenheit eau de toilette",
+          "productType": "eau de toilette",
+          "sourceSku": "F006622009",
+          "volumeMl": 50,
+          "concentration": "eau de toilette",
+          "olfactoryFamily": "woody leather"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "eau de toilette · 50 ml",
+        "description": "An eau de toilette described by Dior through woody and leathery notes. Selected 50 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Correct and enrich the existing intended fragrance variant using the manufacturer’s exact reference and selected bottle photograph. Preserve the offer ID, price and stock.",
+      "evidence": {
+        "source": "https://www.dior.com/en_us/beauty/products/fahrenheit-eau-de-toilette-F006622009.html",
+        "manufacturerSku": "F006622009",
+        "volumeMl": 50,
+        "photographSha256": "53749a6c4bd8230b13e08d0deadb3653a8d264bdcb2ac379601ee28bb2434eba",
+        "sourceImage": "https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwf173c853/Y0066001/Y0066001_F006622009_E01_ZHC.jpg?sw=1800",
+        "sourceHash": "3d5cd3e7a569b60b6e3c097aff245e057df11ef8c8941414ca0338f88faa82a6",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-DIOR-DIOR-HOMME-INTENSE",
+      "expected": {
+        "name": "Dior Homme Intense Eau de Parfum",
+        "brand": "Dior",
+        "source": "https://www.dior.com/en_us/beauty/products/dior-homme-intense-Y0479200.html",
+        "attributes": {
+          "brand": "dior",
+          "perfumer": "François Demachy",
+          "topNotes": "Tuscan Iris, Lavender",
+          "volumeMl": 100,
+          "baseNotes": "Virginia Cedar, Vetiver",
+          "modelName": "dior homme intense eau de parfum",
+          "heartNotes": "Ambrette Seeds, Pear Accord",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody floral musk"
+        }
+      },
+      "product": {
+        "id": "PROD-FRAGRANCE-DIOR-DIOR-HOMME-INTENSE",
+        "name": "Dior Homme Intense Eau de Parfum · 50 ml",
+        "brand": "Dior",
+        "color": "50 ml",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-627e0fa3a66c1ef5b8fc-abc12960d7dd14a4.webp",
+          "source": "https://www.dior.com/en_us/beauty/products/dior-homme-intense-F047922709.html",
+          "alt": "Dior Homme Intense Eau de Parfum · 50 ml",
+          "attribution": "Dior manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 16500,
+        "specs": [
+          "Manufacturer reference: F047922709",
+          "Concentration: eau de parfum",
+          "Bottle size: 50 ml",
+          "Manufacturer-described notes: woody, vanilla"
+        ],
+        "stock": 25,
+        "source": "https://www.dior.com/en_us/beauty/products/dior-homme-intense-F047922709.html",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant F047922709",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected.",
+            "Not established for this reference: perfumer",
+            "Not established for this reference: topNotes",
+            "Not established for this reference: baseNotes",
+            "Not established for this reference: heartNotes",
+            "Not established for this reference: olfactoryFamily"
+          ]
+        },
+        "familyId": "dior:dior-homme-intense",
+        "leafType": "fragrance",
+        "modelName": "Dior Homme Intense Eau de Parfum",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "dior",
+          "modelName": "dior homme intense eau de parfum",
+          "productType": "eau de parfum",
+          "sourceSku": "F047922709",
+          "volumeMl": 50,
+          "concentration": "eau de parfum",
+          "scentDescription": "woody, vanilla"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "eau de parfum · 50 ml",
+        "description": "An intense eau de parfum described by Dior through woody and vanilla notes. Selected 50 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Correct and enrich the existing intended fragrance variant using the manufacturer’s exact reference and selected bottle photograph. Preserve the offer ID, price and stock.",
+      "evidence": {
+        "source": "https://www.dior.com/en_us/beauty/products/dior-homme-intense-F047922709.html",
+        "manufacturerSku": "F047922709",
+        "volumeMl": 50,
+        "photographSha256": "abc12960d7dd14a4d3869072b029eb5ac4fc2e3434173bd51cb7edfe37456d08",
+        "sourceImage": "https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw2de05502/Y0479201/Y0479201_F047922709_E01_ZHC.jpg?sw=1800",
+        "sourceHash": "ec379dffdbdb109b96323f716309df3b92769bc1cf0a6adc38fea865a39f0c20",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy."
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Dior Dior Homme Intense Eau de Parfum",
+          "brand": "Dior",
+          "source": "https://www.dior.com/en_us/beauty/products/dior-homme-intense-Y0479200.html",
+          "attributes": {
+            "volumeMl": 100,
+            "brand": "dior",
+            "modelName": "dior homme intense eau de parfum",
+            "concentration": "eau de parfum",
+            "olfactoryFamily": "woody floral musk",
+            "perfumer": "François Demachy",
+            "topNotes": "Tuscan Iris, Lavender",
+            "heartNotes": "Ambrette Seeds, Pear Accord",
+            "baseNotes": "Virginia Cedar, Vetiver"
+          }
+        }
+      ]
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-DIOR-DIOR-SAUVAGE-EDP",
+      "expected": {
+        "name": "Dior Sauvage Eau de Parfum",
+        "brand": "Dior",
+        "source": "https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-Y0785220.html",
+        "attributes": {
+          "brand": "dior",
+          "perfumer": "François Demachy",
+          "topNotes": "Calabrian Bergamot",
+          "volumeMl": 100,
+          "baseNotes": "Ambroxan, Papua New Guinean Vanilla",
+          "modelName": "sauvage eau de parfum",
+          "heartNotes": "Sichuan Pepper, Lavender, Star Anise, Nutmeg",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "citrus woody ambery"
+        }
+      },
+      "product": {
+        "id": "PROD-FRAGRANCE-DIOR-DIOR-SAUVAGE-EDP",
+        "name": "Dior Sauvage Eau de Parfum · 60 ml",
+        "brand": "Dior",
+        "color": "60 ml",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-0c13a81c8ca48944f603-e80759d825685e35.webp",
+          "source": "https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-F078522009.html",
+          "alt": "Dior Sauvage Eau de Parfum · 60 ml",
+          "attribution": "Dior manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 16500,
+        "specs": [
+          "Manufacturer reference: F078522009",
+          "Concentration: eau de parfum",
+          "Bottle size: 60 ml",
+          "Manufacturer-described notes: citrus, vanilla"
+        ],
+        "stock": 25,
+        "source": "https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-F078522009.html",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant F078522009",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected.",
+            "Not established for this reference: perfumer",
+            "Not established for this reference: topNotes",
+            "Not established for this reference: baseNotes",
+            "Not established for this reference: heartNotes",
+            "Not established for this reference: olfactoryFamily"
+          ]
+        },
+        "familyId": "dior:dior-sauvage-edp",
+        "leafType": "fragrance",
+        "modelName": "Sauvage Eau de Parfum",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "dior",
+          "modelName": "sauvage eau de parfum",
+          "productType": "eau de parfum",
+          "sourceSku": "F078522009",
+          "volumeMl": 60,
+          "concentration": "eau de parfum",
+          "scentDescription": "citrus, vanilla"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "eau de parfum · 60 ml",
+        "description": "An eau de parfum described by Dior through citrus and vanilla notes. Selected 60 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Correct and enrich the existing intended fragrance variant using the manufacturer’s exact reference and selected bottle photograph. Preserve the offer ID, price and stock.",
+      "evidence": {
+        "source": "https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-F078522009.html",
+        "manufacturerSku": "F078522009",
+        "volumeMl": 60,
+        "photographSha256": "e80759d825685e35bb567e7b5060814aae5b76fdae429f91425393f86fb03993",
+        "sourceImage": "https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw95850b5b/Y0785220/Y0785220_F078522009_E01_ZHC.jpg?sw=1800",
+        "sourceHash": "91a64403198789cff0a6bf96251da753fc15d942d70d1d37f0521e3bac6724f9",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-AQUA-ALLEGORIA-MANDARINE-BASILIC-FORTE",
+      "expected": {
+        "name": "Guerlain Aqua Allegoria Forte Mandarine Basilic",
+        "brand": "Guerlain",
+        "source": "https://www.guerlain.com/us/en-us/fragrance/aqua-allegoria/mandarine-basilic-forte",
+        "attributes": {
+          "brand": "guerlain",
+          "perfumer": "Delphine Jelk",
+          "topNotes": "Mandarin Orange, Basil, Cassis",
+          "volumeMl": 75,
+          "baseNotes": "Vanilla, Sandalwood",
+          "modelName": "aqua allegoria forte mandarine basilic",
+          "heartNotes": "Orange Blossom, Honey, Bulgarian Rose, Anise",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "citrus aromatic"
+        }
+      },
+      "product": {
+        "id": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-AQUA-ALLEGORIA-MANDARINE-BASILIC-FORTE",
+        "name": "Guerlain Aqua Allegoria Forte Mandarine Basilic · 75 ml",
+        "brand": "Guerlain",
+        "color": "75 ml",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-d1473cbfd1e43b6ce1f8-23bcd8bfa2e49dc9.webp",
+          "source": "https://www.guerlain.com/us/en-us/p/aqua-allegoria-forte-mandarine-basilic-forte---eau-de-parfum-P014473.html?v=G014472",
+          "alt": "Guerlain Aqua Allegoria Forte Mandarine Basilic · 75 ml",
+          "attribution": "Guerlain manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 22500,
+        "specs": [
+          "Manufacturer reference: G014472",
+          "Concentration: eau de parfum",
+          "Bottle size: 75 ml",
+          "Manufacturer-described notes: mandarin, basil, sandalwood, vanilla"
+        ],
+        "stock": 25,
+        "source": "https://www.guerlain.com/us/en-us/p/aqua-allegoria-forte-mandarine-basilic-forte---eau-de-parfum-P014473.html?v=G014472",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant G014472",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected.",
+            "Not established for this reference: perfumer",
+            "Not established for this reference: topNotes",
+            "Not established for this reference: baseNotes",
+            "Not established for this reference: heartNotes",
+            "Not established for this reference: olfactoryFamily"
+          ]
+        },
+        "familyId": "guerlain:guerlain-aqua-allegoria-mandarine-basilic-forte",
+        "leafType": "fragrance",
+        "modelName": "Aqua Allegoria Forte Mandarine Basilic",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "guerlain",
+          "modelName": "aqua allegoria forte mandarine basilic",
+          "productType": "eau de parfum",
+          "sourceSku": "G014472",
+          "volumeMl": 75,
+          "concentration": "eau de parfum",
+          "scentDescription": "mandarin, basil, sandalwood, vanilla"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "eau de parfum · 75 ml",
+        "description": "An eau de parfum pairing mandarin and basil with sandalwood and vanilla. Selected 75 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Correct and enrich the existing intended fragrance variant using the manufacturer’s exact reference and selected bottle photograph. Preserve the offer ID, price and stock.",
+      "evidence": {
+        "source": "https://www.guerlain.com/us/en-us/p/aqua-allegoria-forte-mandarine-basilic-forte---eau-de-parfum-P014473.html?v=G014472",
+        "manufacturerSku": "G014472",
+        "volumeMl": 75,
+        "photographSha256": "23bcd8bfa2e49dc986370192d7804cd82301c3c2c3cf74637639eda05e5929b8",
+        "sourceImage": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dw7b0d25a7/01-ProductsViewer/P014473/P014473_G014472_E01_hi-res.png?sw=655&sh=655",
+        "sourceHash": "68d2b38d2482e2f7f22f875991792d5951119d901e3b97569285c1d4a8504670",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-LHOMME-IDEAL-EDP",
+      "expected": {
+        "name": "Guerlain L'Homme Idéal Eau de Parfum",
+        "brand": "Guerlain",
+        "source": "https://www.guerlain.com/us/en-us/fragrance/men/lhomme-ideal-edp",
+        "attributes": {
+          "brand": "guerlain",
+          "perfumer": "Thierry Wasser & Delphine Jelk",
+          "topNotes": "Almond, Spices, Lavender, Bergamot, Rosemary, Thyme",
+          "volumeMl": 100,
+          "baseNotes": "Leather, Tonka Bean, Sandalwood",
+          "modelName": "l'homme idéal eau de parfum",
+          "heartNotes": "Cherry, Vanilla, Incense, Bulgarian Rose",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody oriental"
+        }
+      },
+      "product": {
+        "id": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-LHOMME-IDEAL-EDP",
+        "name": "Guerlain L'Homme Idéal Eau de Parfum · 50 ml",
+        "brand": "Guerlain",
+        "color": "50 ml",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-f5cdccf3bdb88281d607-d21cd8d54d130880.webp",
+          "source": "https://www.guerlain.com/fr/fr-fr/p/lhomme-ideal-de-guerlain-paris-eau-de-parfum-P030311.html?v=G030311",
+          "alt": "Guerlain L'Homme Idéal Eau de Parfum · 50 ml",
+          "attribution": "Guerlain manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 22500,
+        "specs": [
+          "Manufacturer reference: G030311",
+          "Concentration: eau de parfum",
+          "Bottle size: 50 ml",
+          "Manufacturer fragrance profile: amber woody"
+        ],
+        "stock": 25,
+        "source": "https://www.guerlain.com/fr/fr-fr/p/lhomme-ideal-de-guerlain-paris-eau-de-parfum-P030311.html?v=G030311",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant G030311",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected.",
+            "Not established for this reference: perfumer",
+            "Not established for this reference: topNotes",
+            "Not established for this reference: baseNotes",
+            "Not established for this reference: heartNotes"
+          ]
+        },
+        "familyId": "guerlain:guerlain-lhomme-ideal-edp",
+        "leafType": "fragrance",
+        "modelName": "L'Homme Idéal Eau de Parfum",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "guerlain",
+          "modelName": "l'homme idéal eau de parfum",
+          "productType": "eau de parfum",
+          "sourceSku": "G030311",
+          "volumeMl": 50,
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "amber woody"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "eau de parfum · 50 ml",
+        "description": "An eau de parfum described by Guerlain as an amber and woody fragrance. Selected 50 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Correct and enrich the existing intended fragrance variant using the manufacturer’s exact reference and selected bottle photograph. Preserve the offer ID, price and stock.",
+      "evidence": {
+        "source": "https://www.guerlain.com/fr/fr-fr/p/lhomme-ideal-de-guerlain-paris-eau-de-parfum-P030311.html?v=G030311",
+        "manufacturerSku": "G030311",
+        "volumeMl": 50,
+        "photographSha256": "d21cd8d54d1308803d9ce07562cc41140f0339bec268a45663ee47eb04b7d185",
+        "sourceImage": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dw824296dd/01-ProductsViewer/P030311/P030311_G030311_E01_hi-res.png?sw=655&sh=655",
+        "sourceHash": "e9cd4fcdbbfec849c24b87b8ac7ec23f93b669401d14dc922a9813aff48377b3",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-SPIRITEUSE-DOUBLE-VANILLE",
+      "expected": {
+        "name": "Guerlain Spiritueuse Double Vanille (L'Art & La Matière)",
+        "brand": "Guerlain",
+        "source": "https://www.guerlain.com/us/en-us/fragrance/lart-et-la-matiere/spiritueuse-double-vanille",
+        "attributes": {
+          "brand": "guerlain",
+          "perfumer": "Jean-Paul Guerlain",
+          "topNotes": "Pink Pepper, Incense, Bergamot",
+          "volumeMl": 100,
+          "baseNotes": "Madagascar Vanilla, Benzoin",
+          "modelName": "spiritueuse double vanille (l'art & la matière)",
+          "heartNotes": "Cedar, Ylang-Ylang, Bulgarian Rose, Jasmine",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "oriental vanilla"
+        }
+      },
+      "product": {
+        "id": "PROD-FRAGRANCE-GUERLAIN-GUERLAIN-SPIRITEUSE-DOUBLE-VANILLE",
+        "name": "Guerlain Spiritueuse Double Vanille (L'Art & La Matière) · 100 ml",
+        "brand": "Guerlain",
+        "color": "100 ml",
+        "media": {
+          "url": "/images/verified/reference-repair-reference-6aa4d6ca837c2668190a-75d15cfb8d8ee7b3.webp",
+          "source": "https://www.guerlain.com/us/en-us/p/lart-la-matiere-spiritueuse-double-vanille-eau-de-parfum-P017906.html?v=G017906",
+          "alt": "Guerlain Spiritueuse Double Vanille (L'Art & La Matière) · 100 ml",
+          "attribution": "Guerlain manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 22500,
+        "specs": [
+          "Manufacturer reference: G017906",
+          "Concentration: eau de parfum",
+          "Bottle size: 100 ml",
+          "Manufacturer fragrance profile: woody amber",
+          "Manufacturer-described notes: smoky vanilla, jasmine, ylang-ylang, benzoin, cedar"
+        ],
+        "stock": 25,
+        "source": "https://www.guerlain.com/us/en-us/p/lart-la-matiere-spiritueuse-double-vanille-eau-de-parfum-P017906.html?v=G017906",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant G017906",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected.",
+            "Not established for this reference: perfumer",
+            "Not established for this reference: topNotes",
+            "Not established for this reference: baseNotes",
+            "Not established for this reference: heartNotes"
+          ]
+        },
+        "familyId": "guerlain:guerlain-spiriteuse-double-vanille",
+        "leafType": "fragrance",
+        "modelName": "Spiritueuse Double Vanille (L'Art & La Matière)",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "guerlain",
+          "modelName": "spiritueuse double vanille (l'art & la matière)",
+          "productType": "eau de parfum",
+          "sourceSku": "G017906",
+          "volumeMl": 100,
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "woody amber",
+          "scentDescription": "smoky vanilla, jasmine, ylang-ylang, benzoin, cedar"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "eau de parfum · 100 ml",
+        "description": "A woody amber eau de parfum built around smoky vanilla, with jasmine, ylang-ylang, benzoin and cedar. Selected 100 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Correct and enrich the existing intended fragrance variant using the manufacturer’s exact reference and selected bottle photograph. Preserve the offer ID, price and stock.",
+      "evidence": {
+        "source": "https://www.guerlain.com/us/en-us/p/lart-la-matiere-spiritueuse-double-vanille-eau-de-parfum-P017906.html?v=G017906",
+        "manufacturerSku": "G017906",
+        "volumeMl": 100,
+        "photographSha256": "75d15cfb8d8ee7b3fc801cd8f64d3354a62f585688365674cebfcb41b1abd358",
+        "sourceImage": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dw99e2328a/01-ProductsViewer/P017906/P017906_E01_hi-res.jpg?sw=655&sh=655",
+        "sourceHash": "593b449442fec3596713745b51aea629210178941f6239d1d3578b09f6447fb3",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy."
+      }
+    },
+    {
+      "oldId": "FRAGRANCE-MFK-RA122421",
+      "expected": {
+        "name": "Maison Francis Kurkdjian Petit Matin · Eau de Parfum · 70ml",
+        "brand": "Maison Francis Kurkdjian",
+        "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+        "attributes": {
+          "brand": "maison francis kurkdjian",
+          "scent": "citrus",
+          "volumeMl": 70,
+          "modelName": "petit matin",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum"
+        }
+      },
+      "product": {
+        "id": "FRAGRANCE-MFK-RA122421",
+        "name": "Maison Francis Kurkdjian Petit Matin · Eau de Parfum · 70ml",
+        "brand": "Maison Francis Kurkdjian",
+        "color": "Manufacturer bottle",
+        "media": {
+          "alt": "Maison Francis Kurkdjian Petit Matin · Eau de Parfum · 70ml",
+          "url": "/images/verified/restored-fragrance-mfk-ra122421-47c0f15fc8bcb559.webp",
+          "usage": "external_reference",
+          "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+          "reviewedAt": "2026-10-24",
+          "attribution": "Maison Francis Kurkdjian product photography; external reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: RA122421",
+          "Concentration: eau de parfum",
+          "Bottle size: 70 ml",
+          "Manufacturer fragrance profile: citrus musky",
+          "Manufacturer-described notes: litsea cubeba, orange blossom, lavandin, hawthorn"
+        ],
+        "stock": 20,
+        "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant RA122421",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected."
+          ]
+        },
+        "familyId": "mfk:petit-matin",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "maison francis kurkdjian",
+          "scent": "citrus",
+          "volumeMl": 70,
+          "modelName": "petit matin",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "RA122421",
+          "olfactoryFamily": "citrus musky",
+          "scentDescription": "litsea cubeba, orange blossom, lavandin, hawthorn"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "A citrus and musk eau de parfum with litsea cubeba, orange blossom, lavandin and hawthorn. Selected 70 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance"
+      },
+      "reason": "Correct and enrich the existing intended fragrance variant using the manufacturer’s exact reference and selected bottle photograph. Preserve the offer ID, price and stock.",
+      "evidence": {
+        "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+        "manufacturerSku": "RA122421",
+        "volumeMl": 70,
+        "photographSha256": "47c0f15fc8bcb55970409e1745724efce1e007967decf4a6830be2e2984e9ea1",
+        "sourceImage": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw76c221e3/PETIT_MATIN/FRAGRANCE/3700559614228_PETIT_MATIN_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "sourceHash": "b6e4360e00037c1137668815c8ad2aa874c197a57304b9c294dc909e0b9a06fe",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy."
+      }
+    },
+    {
+      "oldId": "PROD-FRAGRANCE-MAISON-FRANCIS-KURKDJIAN-MFK-PETIT-MATIN",
+      "expected": {
+        "name": "Maison Francis Kurkdjian Petit Matin Eau de Parfum",
+        "brand": "Maison Francis Kurkdjian",
+        "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+        "attributes": {
+          "brand": "maison francis kurkdjian",
+          "perfumer": "Francis Kurkdjian",
+          "topNotes": "Litsea Cubeba, Calabrian Lemon",
+          "volumeMl": 70,
+          "baseNotes": "Musk, Ambroxan",
+          "modelName": "petit matin eau de parfum",
+          "heartNotes": "Lavandin, Orange Blossom, Hawthorn",
+          "concentration": "eau de parfum",
+          "olfactoryFamily": "citrus floral"
+        }
+      },
+      "product": {
+        "id": "FRAGRANCE-MFK-RA122421",
+        "name": "Maison Francis Kurkdjian Petit Matin · Eau de Parfum · 70ml",
+        "brand": "Maison Francis Kurkdjian",
+        "color": "Manufacturer bottle",
+        "media": {
+          "alt": "Maison Francis Kurkdjian Petit Matin · Eau de Parfum · 70ml",
+          "url": "/images/verified/restored-fragrance-mfk-ra122421-47c0f15fc8bcb559.webp",
+          "usage": "external_reference",
+          "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+          "reviewedAt": "2026-10-24",
+          "attribution": "Maison Francis Kurkdjian product photography; external reference"
+        },
+        "price": 32500,
+        "specs": [
+          "Manufacturer reference: RA122421",
+          "Concentration: eau de parfum",
+          "Bottle size: 70 ml",
+          "Manufacturer fragrance profile: citrus musky",
+          "Manufacturer-described notes: litsea cubeba, orange blossom, lavandin, hawthorn"
+        ],
+        "stock": 20,
+        "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+        "category": "fragrance",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Manufacturer exact fragrance variant RA122421",
+          "review": "specifications",
+          "missing": [
+            "Subjective enjoyment, longevity, projection and individual allergy safety are not established.",
+            "Real merchant stock, current selling price and fulfillment are not connected."
+          ]
+        },
+        "familyId": "mfk:petit-matin",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "maison francis kurkdjian",
+          "scent": "citrus",
+          "volumeMl": 70,
+          "modelName": "petit matin",
+          "productType": "eau de parfum",
+          "concentration": "eau de parfum",
+          "sourceSku": "RA122421",
+          "olfactoryFamily": "citrus musky",
+          "scentDescription": "litsea cubeba, orange blossom, lavandin, hawthorn"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "A citrus and musk eau de parfum with litsea cubeba, orange blossom, lavandin and hawthorn. Selected 70 ml bottle. DALE price and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "fragrance"
+      },
+      "reason": "Consolidate a duplicate offer for manufacturer reference RA122421, eau de parfum, 70 ml into the exact same verified variant. Keep its historical record.",
+      "evidence": {
+        "source": "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+        "manufacturerSku": "RA122421",
+        "volumeMl": 70,
+        "photographSha256": "47c0f15fc8bcb55970409e1745724efce1e007967decf4a6830be2e2984e9ea1",
+        "sourceImage": "https://www.franciskurkdjian.com/dw/image/v2/BJSB_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw76c221e3/PETIT_MATIN/FRAGRANCE/3700559614228_PETIT_MATIN_EDP_70ML_1.png?sw=2220&sh=2220&sfrm=png&q=85&strip=true",
+        "sourceHash": "b6e4360e00037c1137668815c8ad2aa874c197a57304b9c294dc909e0b9a06fe",
+        "review": "Exact Product structured variant, selected bottle size and photograph checked; English description summarizes manufacturer copy.",
+        "duplicateOf": "FRAGRANCE-MFK-RA122421"
+      }
+    }
+  ]
+}
