@@ -9,18 +9,20 @@ catalog size and no exclusive product allowlist.
 | Change | Count |
 | --- | ---: |
 | Active listings before repairs | 4,489 |
-| Source-bound repair operations | 405 |
+| Source-bound repair operations | 407 |
 | Ambiguous legacy offers replaced by separately identified references | 252 |
-| Duplicate offers consolidated into exact manufacturer references | 26 |
-| Existing offers corrected in place | 127 |
+| Duplicate offers consolidated into exact manufacturer references | 27 |
+| Existing offers corrected in place | 128 |
 | Generic descriptions and specification labels copy-edited | 4,087 |
-| Active listings after repairs | 4,463 |
+| Active listings after repairs | 4,462 |
 | Products removed solely because verification was incomplete | 0 |
 
 The repair manifests record the old identity, observed preimages, new reference,
 source, manufacturer SKU and photograph hash. Consolidations cover exact
 Amouage, Initio, Parfums de Marly and MFK bottle duplicates with matching
-concentrations and manufacturer variants, not withdrawals for lack of information.
+concentrations and manufacturer variants, plus the exact Balenciaga Track
+style/color duplicated across lifestyle and running categories. They are not
+withdrawals for lack of information.
 
 The follow-up manifests correct eight fragrance records, preserve three Givenchy
 S/M/L variants while correcting their contradictory charcoal color to Dark
@@ -48,6 +50,13 @@ Brand counts group case variants together. Browsing uses the indexed brand rathe
 than requiring a second exact match against potentially different legacy attribute
 spellings. This repairs Chanel/CHANEL counts and missing All-Clad and Apple results.
 
+The black Balenciaga Track reference 542023W1GB11000 is classified as a lifestyle
+sneaker from the manufacturer's stated everyday styling. Its duplicate
+"performance" running listing is consolidated into that reference. Unsupported
+heel-drop, stack-height, pronation, weight and 176-panel claims are removed;
+manufacturer-confirmed construction, origin and full-resolution photography are
+recorded instead. An unspecified shoe size is disclosed rather than invented.
+
 Historical product and order records remain intact. Each applied operation has
 a database receipt with its preimage and evidence. In-place repairs preserve live
 prices and stock. Repeating initialization does not resurrect later withdrawals.
@@ -61,7 +70,7 @@ redirect to their still-published replacements.
 
 ## Verification still outstanding
 
-**This is not a claim that all 4,463 listings have completed factual verification.**
+**This is not a claim that all 4,462 listings have completed factual verification.**
 The source investigation checked the original catalog URLs, alternate references
 for 3,752 flagged listings, another 484 original pages for structured product data,
 and 27,320 manufacturer-feed records. Candidate matches remain research evidence
@@ -75,13 +84,14 @@ product-level reason and documented unsuccessful recovery, not a network status.
 
 ## Checks
 
-- 36 focused tests passed: repair migration, exact-photo bindings, catalog
+- 37 focused tests passed: repair migration, exact-photo bindings, catalog
   publication, historical orders, deterministic retrieval, language handling,
   safe taxonomy, idempotent index recovery, duplicate references and conditional
-  battery/receiver variants, watch reference fields and brand scope consistency.
+  battery/receiver variants, watch reference fields, brand scope consistency and
+  the lifestyle/performance duplicate correction.
 - The scoped release type-checks and passes ESLint.
-- All 405 operations applied to both fresh and current preview databases; none remained pending.
-- All 4,463 active listings have usable category indexes. Exact-model retrieval
+- All 407 operations applied to both fresh and current preview databases; none remained pending.
+- All 4,462 active listings have usable category indexes. Exact-model retrieval
   finds the corrected Fold6, all three Givenchy sizes and one Petit Matin offer.
 - No published record has an empty name, media reference or source field.
 - The production audit checked all 38 populated categories and 495 brand scopes:
