@@ -9,18 +9,18 @@ catalog size and no exclusive product allowlist.
 | Change | Count |
 | --- | ---: |
 | Active listings before repairs | 4,489 |
-| Source-bound repair operations | 342 |
+| Source-bound repair operations | 405 |
 | Ambiguous legacy offers replaced by separately identified references | 252 |
-| Duplicate offers consolidated into exact manufacturer references | 6 |
-| Existing offers corrected in place | 84 |
+| Duplicate offers consolidated into exact manufacturer references | 26 |
+| Existing offers corrected in place | 127 |
 | Generic descriptions and specification labels copy-edited | 4,087 |
-| Active listings after repairs | 4,483 |
+| Active listings after repairs | 4,463 |
 | Products removed solely because verification was incomplete | 0 |
 
 The repair manifests record the old identity, observed preimages, new reference,
-source, manufacturer SKU and photograph hash. The six consolidations are
-five duplicate Amouage bottle offers and one duplicate MFK Petit Matin 70 ml
-offer, not withdrawals for lack of information.
+source, manufacturer SKU and photograph hash. Consolidations cover exact
+Amouage, Initio, Parfums de Marly and MFK bottle duplicates with matching
+concentrations and manufacturer variants, not withdrawals for lack of information.
 
 The follow-up manifests correct eight fragrance records, preserve three Givenchy
 S/M/L variants while correcting their contradictory charcoal color to Dark
@@ -29,6 +29,24 @@ SM-F956BZSBEUB and EAN 8806095667645. Photographs and bottle sizes follow the
 selected references. Manufacturer notes replace unsupported note pyramids.
 Missing legacy browse indexes are recovered from existing metadata without
 rewriting product facts or assigning arbitrary categories.
+
+Twenty surviving fragrance references now include concise manufacturer-described
+compositions. Therapeutic, attraction and medical marketing claims are excluded.
+Five Logitech references bind exact Graphite SKUs to their photographs, keyboard
+language and switch choice or mouse handedness. Conditional battery claims remain
+in their original days/months and usage conditions; they are not represented as
+continuous operating hours. Receiver inclusion is specific to the selected SKU.
+
+Eighteen Rolex and TAG Heuer references now include the exact dial, case,
+bracelet/strap, calibre and supported technical properties. The Sky-Dweller
+m336934-0001 is corrected to its mint-green dial. The quartz Formula 1 no longer
+claims a mechanical power reserve. The discontinued Monaco Calibre 11 remains
+available as a documented reference, with its status disclosed. Tiny lazy-load
+thumbnails are replaced with the original-resolution manufacturer photographs.
+
+Brand counts group case variants together. Browsing uses the indexed brand rather
+than requiring a second exact match against potentially different legacy attribute
+spellings. This repairs Chanel/CHANEL counts and missing All-Clad and Apple results.
 
 Historical product and order records remain intact. Each applied operation has
 a database receipt with its preimage and evidence. In-place repairs preserve live
@@ -43,7 +61,7 @@ redirect to their still-published replacements.
 
 ## Verification still outstanding
 
-**This is not a claim that all 4,483 listings have completed factual verification.**
+**This is not a claim that all 4,463 listings have completed factual verification.**
 The source investigation checked the original catalog URLs, alternate references
 for 3,752 flagged listings, another 484 original pages for structured product data,
 and 27,320 manufacturer-feed records. Candidate matches remain research evidence
@@ -57,14 +75,20 @@ product-level reason and documented unsuccessful recovery, not a network status.
 
 ## Checks
 
-- 32 focused tests passed: repair migration, exact-photo bindings, catalog
+- 36 focused tests passed: repair migration, exact-photo bindings, catalog
   publication, historical orders, deterministic retrieval, language handling,
-  safe taxonomy and idempotent index recovery.
+  safe taxonomy, idempotent index recovery, duplicate references and conditional
+  battery/receiver variants, watch reference fields and brand scope consistency.
 - The scoped release type-checks and passes ESLint.
-- All 342 operations applied to both fresh and current preview databases; none remained pending.
-- All 4,483 active listings have usable category indexes. Exact-model retrieval
+- All 405 operations applied to both fresh and current preview databases; none remained pending.
+- All 4,463 active listings have usable category indexes. Exact-model retrieval
   finds the corrected Fold6, all three Givenchy sizes and one Petit Matin offer.
 - No published record has an empty name, media reference or source field.
+- The production audit checked all 38 populated categories and 495 brand scopes:
+  every page responded successfully and every brand count matched its filtered
+  inventory. The 93-page API scan found no duplicate IDs or missing local images;
+  browser checks found no runtime errors. Historical audited replacement links
+  redirect to their published references.
 
 The database was backed up before application. Research bodies, session data and
 private evidence caches are not part of the published repository.

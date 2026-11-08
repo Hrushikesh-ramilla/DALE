@@ -1,0 +1,520 @@
+{
+  "id": "logitech-references-2026-10-24",
+  "operations": [
+    {
+      "oldId": "PROD-KEYBOARDS-LOGITECH-LOGITECH-MX-KEYS-S",
+      "expected": {
+        "name": "Logitech MX Keys S",
+        "brand": "Logitech",
+        "source": "https://www.logitech.com/products/keyboards/mx-keys-s",
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "mx keys s",
+          "switchType": "Scissor",
+          "batteryHours": 120,
+          "connectivity": "Bluetooth / Bolt",
+          "hotSwappable": false,
+          "layoutPercentage": "100%"
+        }
+      },
+      "product": {
+        "id": "PROD-KEYBOARDS-LOGITECH-LOGITECH-MX-KEYS-S",
+        "name": "Logitech MX Keys S",
+        "brand": "Logitech",
+        "color": "Graphite",
+        "media": {
+          "url": "/images/verified/logitech-920-011558-1531ccdf03cc1104.webp",
+          "source": "https://www.logitech.com/en-us/shop/p/mx-keys-s?sku=920-011558",
+          "alt": "Logitech MX Keys S · Graphite · English US (QWERTY)",
+          "attribution": "Logitech manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 10999,
+        "specs": [
+          "Manufacturer reference: 920-011558",
+          "Selected variant: Graphite · English US (QWERTY)",
+          "Connectivity: Bluetooth Low Energy or Logi Bolt",
+          "Logi Bolt receiver: Included",
+          "Weight: 810 g",
+          "Battery life (manufacturer estimate): Up to 10 days with predefined settings; up to 5 months with backlighting off. Varies with usage and computing conditions.",
+          "Switch type: Scissor",
+          "Layout: Full-size, English US QWERTY"
+        ],
+        "stock": 25,
+        "source": "https://www.logitech.com/en-us/shop/p/mx-keys-s?sku=920-011558",
+        "category": "accessories",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Logitech US exact Graphite SKU and variant specification payload",
+          "review": "specifications",
+          "missing": [
+            "Battery estimates are conditional usage claims, not continuous operating hours.",
+            "Software customization depends on operating system and Logi Options+ support; basic connectivity does not guarantee every feature.",
+            "Real merchant price, stock and fulfillment are not connected.",
+            "Switch replacement and hot-swap capability are not established in the recorded source."
+          ]
+        },
+        "familyId": "logitech:logitech-mx-keys-s",
+        "leafType": "keyboards",
+        "modelName": "MX Keys S",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "mx keys s",
+          "sourceSku": "920-011558",
+          "productType": "keyboard",
+          "finish": "Graphite",
+          "switchType": "Scissor",
+          "layout": "Full-size, English US QWERTY",
+          "weightGrams": 810,
+          "batteryMah": 1500,
+          "connectivity": "Bluetooth Low Energy or Logi Bolt",
+          "receiverIncluded": true,
+          "batteryRuntimeClaim": "Up to 10 days with predefined settings; up to 5 months with backlighting off. Varies with usage and computing conditions."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "Graphite · English US (QWERTY)",
+        "description": "Full-size illuminated scissor-switch keyboard with an English US layout. Easy-Switch supports pairing with up to three devices. Up to 10 days with predefined settings; up to 5 months with backlighting off. Varies with usage and computing conditions. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Recover exact Graphite manufacturer SKU, variant-bound photograph and explicit regional/switch configuration. Correct battery-life semantics rather than converting conditional days or months into continuous hours.",
+      "evidence": {
+        "source": "https://www.logitech.com/en-us/shop/p/mx-keys-s?sku=920-011558",
+        "manufacturerSku": "920-011558",
+        "variantName": "MX Keys S - Graphite - English US (QWERTY)",
+        "selectedFacets": {
+          "color": {
+            "label": "Graphite",
+            "value": "graphite"
+          },
+          "language": {
+            "label": "English US (QWERTY)",
+            "value": "english-us-(qwerty)"
+          },
+          "platform": {
+            "value": "keyboard-only",
+            "label": "Keyboard only"
+          }
+        },
+        "sourceImage": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/mx-keys-s/migration-assets-for-delorean-2025/gallery/mx-keys-s-top-view-graphite-us.png",
+        "photographSha256": "1531ccdf03cc1104484d70292c7010098ce45d9bae254ad8d72f58870454ef30",
+        "sourcePageSha256": "b57d41ed44f96d42b531815252ec1f077933ead58f9f31fe664e9e3ce6bbc765",
+        "batteryClaim": "Up to 10 days with predefined settings; up to 5 months with backlighting off. Varies with usage and computing conditions.",
+        "review": "Manufacturer product payload confirms selected SKU, color, keyboard language/switch or mouse handedness, specifications and package contents. Snapshot retained privately."
+      }
+    },
+    {
+      "oldId": "PROD-KEYBOARDS-LOGITECH-LOGITECH-MX-MECHANICAL",
+      "expected": {
+        "name": "Logitech MX Mechanical",
+        "brand": "Logitech",
+        "source": "https://www.logitech.com/products/keyboards/mx-mechanical",
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "mx mechanical",
+          "switchType": "Tactile Quiet Mechanical",
+          "batteryHours": 360,
+          "connectivity": "Bluetooth / Bolt",
+          "hotSwappable": false,
+          "layoutPercentage": "100%"
+        }
+      },
+      "product": {
+        "id": "PROD-KEYBOARDS-LOGITECH-LOGITECH-MX-MECHANICAL",
+        "name": "Logitech MX Mechanical",
+        "brand": "Logitech",
+        "color": "Graphite",
+        "media": {
+          "url": "/images/verified/logitech-920-010547-fc25cadf8b1df70b.webp",
+          "source": "https://www.logitech.com/en-us/shop/p/mx-mechanical?sku=920-010547",
+          "alt": "Logitech MX Mechanical · Graphite · English US (QWERTY) · Tactile Quiet",
+          "attribution": "Logitech manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 16999,
+        "specs": [
+          "Manufacturer reference: 920-010547",
+          "Selected variant: Graphite · English US (QWERTY) · Tactile Quiet",
+          "Connectivity: Bluetooth Low Energy or Logi Bolt",
+          "Logi Bolt receiver: Included",
+          "Weight: 828 g",
+          "Battery life (manufacturer estimate): Up to 15 days; up to 10 months with backlighting off. Varies with usage and computing conditions.",
+          "Switch type: Tactile Quiet low-profile mechanical",
+          "Layout: Full-size, English US QWERTY"
+        ],
+        "stock": 25,
+        "source": "https://www.logitech.com/en-us/shop/p/mx-mechanical?sku=920-010547",
+        "category": "accessories",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Logitech US exact Graphite SKU and variant specification payload",
+          "review": "specifications",
+          "missing": [
+            "Battery estimates are conditional usage claims, not continuous operating hours.",
+            "Software customization depends on operating system and Logi Options+ support; basic connectivity does not guarantee every feature.",
+            "Real merchant price, stock and fulfillment are not connected.",
+            "Switch replacement and hot-swap capability are not established in the recorded source."
+          ]
+        },
+        "familyId": "logitech:logitech-mx-mechanical",
+        "leafType": "keyboards",
+        "modelName": "MX Mechanical",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "mx mechanical",
+          "sourceSku": "920-010547",
+          "productType": "keyboard",
+          "finish": "Graphite",
+          "switchType": "Tactile Quiet low-profile mechanical",
+          "layout": "Full-size, English US QWERTY",
+          "weightGrams": 828,
+          "batteryMah": 1500,
+          "connectivity": "Bluetooth Low Energy or Logi Bolt",
+          "receiverIncluded": true,
+          "batteryRuntimeClaim": "Up to 15 days; up to 10 months with backlighting off. Varies with usage and computing conditions."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "Graphite · English US (QWERTY) · Tactile Quiet",
+        "description": "Full-size low-profile mechanical keyboard in the Tactile Quiet switch version, with an English US layout. Easy-Switch supports up to three devices. Up to 15 days; up to 10 months with backlighting off. Varies with usage and computing conditions. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Recover exact Graphite manufacturer SKU, variant-bound photograph and explicit regional/switch configuration. Correct battery-life semantics rather than converting conditional days or months into continuous hours.",
+      "evidence": {
+        "source": "https://www.logitech.com/en-us/shop/p/mx-mechanical?sku=920-010547",
+        "manufacturerSku": "920-010547",
+        "variantName": "MX Mechanical - Graphite - English US (QWERTY)",
+        "selectedFacets": {
+          "color": {
+            "label": "Graphite",
+            "value": "graphite"
+          },
+          "language": {
+            "label": "English US (QWERTY)",
+            "value": "english-us-(qwerty)"
+          },
+          "style": {
+            "label": "Tactile Quiet",
+            "value": "tactile-quiet"
+          }
+        },
+        "sourceImage": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/mx-mechanical/migration-assets-for-delorean-2025/gallery/mx-mechanical-top-view-graphite-us.png",
+        "photographSha256": "fc25cadf8b1df70b70cd58b0e1777a28584ddf52c939bc7eae83297933c3be40",
+        "sourcePageSha256": "00602d63cec089e64bf7bb11a4b4112720e10d2841cfd9153a04ecea1077b8a0",
+        "batteryClaim": "Up to 15 days; up to 10 months with backlighting off. Varies with usage and computing conditions.",
+        "review": "Manufacturer product payload confirms selected SKU, color, keyboard language/switch or mouse handedness, specifications and package contents. Snapshot retained privately."
+      }
+    },
+    {
+      "oldId": "PROD-KEYBOARDS-LOGITECH-LOGITECH-MX-MECHANICAL-MINI",
+      "expected": {
+        "name": "Logitech MX Mechanical Mini",
+        "brand": "Logitech",
+        "source": "https://www.logitech.com/products/keyboards/mx-mechanical-mini",
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "mx mechanical mini",
+          "switchType": "Tactile Quiet Mechanical",
+          "batteryHours": 360,
+          "connectivity": "Bluetooth / Bolt",
+          "hotSwappable": false,
+          "layoutPercentage": "75%"
+        }
+      },
+      "product": {
+        "id": "PROD-KEYBOARDS-LOGITECH-LOGITECH-MX-MECHANICAL-MINI",
+        "name": "Logitech MX Mechanical Mini",
+        "brand": "Logitech",
+        "color": "Graphite",
+        "media": {
+          "url": "/images/verified/logitech-920-010550-68fd2a29243eab99.webp",
+          "source": "https://www.logitech.com/en-us/shop/p/mx-mechanical-mini?sku=920-010550",
+          "alt": "Logitech MX Mechanical Mini · Graphite · English US (QWERTY) · Tactile Quiet",
+          "attribution": "Logitech manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 16999,
+        "specs": [
+          "Manufacturer reference: 920-010550",
+          "Selected variant: Graphite · English US (QWERTY) · Tactile Quiet",
+          "Connectivity: Bluetooth Low Energy or Logi Bolt",
+          "Logi Bolt receiver: Included",
+          "Weight: 612 g",
+          "Battery life (manufacturer estimate): Up to 15 days; up to 10 months with backlighting off. Varies with usage and computing conditions.",
+          "Switch type: Tactile Quiet low-profile mechanical",
+          "Layout: Compact without number pad, English US QWERTY"
+        ],
+        "stock": 25,
+        "source": "https://www.logitech.com/en-us/shop/p/mx-mechanical-mini?sku=920-010550",
+        "category": "accessories",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Logitech US exact Graphite SKU and variant specification payload",
+          "review": "specifications",
+          "missing": [
+            "Battery estimates are conditional usage claims, not continuous operating hours.",
+            "Software customization depends on operating system and Logi Options+ support; basic connectivity does not guarantee every feature.",
+            "Real merchant price, stock and fulfillment are not connected.",
+            "Switch replacement and hot-swap capability are not established in the recorded source."
+          ]
+        },
+        "familyId": "logitech:logitech-mx-mechanical-mini",
+        "leafType": "keyboards",
+        "modelName": "MX Mechanical Mini",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "mx mechanical mini",
+          "sourceSku": "920-010550",
+          "productType": "keyboard",
+          "finish": "Graphite",
+          "switchType": "Tactile Quiet low-profile mechanical",
+          "layout": "Compact without number pad, English US QWERTY",
+          "weightGrams": 612,
+          "batteryMah": 1500,
+          "connectivity": "Bluetooth Low Energy or Logi Bolt",
+          "receiverIncluded": true,
+          "batteryRuntimeClaim": "Up to 15 days; up to 10 months with backlighting off. Varies with usage and computing conditions."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "Graphite · English US (QWERTY) · Tactile Quiet",
+        "description": "Compact low-profile mechanical keyboard without a number pad, in the Tactile Quiet switch version with an English US layout. Easy-Switch supports up to three devices. Up to 15 days; up to 10 months with backlighting off. Varies with usage and computing conditions. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Recover exact Graphite manufacturer SKU, variant-bound photograph and explicit regional/switch configuration. Correct battery-life semantics rather than converting conditional days or months into continuous hours.",
+      "evidence": {
+        "source": "https://www.logitech.com/en-us/shop/p/mx-mechanical-mini?sku=920-010550",
+        "manufacturerSku": "920-010550",
+        "variantName": "MX Mechanical Mini - Graphite - English US (QWERTY)",
+        "selectedFacets": {
+          "color": {
+            "label": "Graphite",
+            "value": "graphite"
+          },
+          "language": {
+            "label": "English US (QWERTY)",
+            "value": "english-us-(qwerty)"
+          },
+          "style": {
+            "label": "Tactile Quiet",
+            "value": "tactile-quiet"
+          }
+        },
+        "sourceImage": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/mx-mechanical/gallery/mx-mechanical-mini/mx-mechanical-mini-mini-keyboard-top-view-graphite-us.png",
+        "photographSha256": "68fd2a29243eab996c801770d719567821b633488560bb45dec74b22d177e7df",
+        "sourcePageSha256": "7d7164667ac8fd11e4530f482700bde1782eca874db3b62652ccdb16ef9cab92",
+        "batteryClaim": "Up to 15 days; up to 10 months with backlighting off. Varies with usage and computing conditions.",
+        "review": "Manufacturer product payload confirms selected SKU, color, keyboard language/switch or mouse handedness, specifications and package contents. Snapshot retained privately."
+      }
+    },
+    {
+      "oldId": "PROD-MICE-LOGITECH-LOGITECH-LIFT-VERTICAL",
+      "expected": {
+        "name": "Logitech Lift Vertical Ergonomic",
+        "brand": "Logitech",
+        "source": "https://www.logitech.com/products/mice/lift-vertical",
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "lift vertical ergonomic",
+          "sensorDpi": 4000,
+          "buttonCount": 6,
+          "weightGrams": 125,
+          "batteryHours": 4320,
+          "connectivity": "Bluetooth / Bolt",
+          "silentClicks": true
+        }
+      },
+      "product": {
+        "id": "PROD-MICE-LOGITECH-LOGITECH-LIFT-VERTICAL",
+        "name": "Logitech Lift Vertical Ergonomic",
+        "brand": "Logitech",
+        "color": "Graphite",
+        "media": {
+          "url": "/images/verified/logitech-910-006466-99a8609ee2917dc2.webp",
+          "source": "https://www.logitech.com/en-us/shop/p/lift-vertical-ergonomic-mouse?sku=910-006466",
+          "alt": "Logitech Lift Vertical Ergonomic · Graphite · Lift",
+          "attribution": "Logitech manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 6999,
+        "specs": [
+          "Manufacturer reference: 910-006466",
+          "Selected variant: Graphite · Lift",
+          "Connectivity: Bluetooth Low Energy or Logi Bolt",
+          "Logi Bolt receiver: Included",
+          "Weight: 125 g",
+          "Battery life (manufacturer estimate): Up to 24 months from one AA battery. Varies with usage and computing conditions.",
+          "Maximum tracking resolution: 4000 DPI",
+          "Buttons: 6"
+        ],
+        "stock": 25,
+        "source": "https://www.logitech.com/en-us/shop/p/lift-vertical-ergonomic-mouse?sku=910-006466",
+        "category": "accessories",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Logitech US exact Graphite SKU and variant specification payload",
+          "review": "specifications",
+          "missing": [
+            "Battery estimates are conditional usage claims, not continuous operating hours.",
+            "Software customization depends on operating system and Logi Options+ support; basic connectivity does not guarantee every feature.",
+            "Real merchant price, stock and fulfillment are not connected."
+          ]
+        },
+        "familyId": "logitech:logitech-lift-vertical",
+        "leafType": "mice",
+        "modelName": "Lift Vertical Ergonomic",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "lift vertical ergonomic",
+          "sourceSku": "910-006466",
+          "productType": "mouse",
+          "finish": "Graphite",
+          "sensorDpi": 4000,
+          "buttonCount": 6,
+          "weightGrams": 125,
+          "batteryType": "1 AA battery",
+          "handedness": "Right-handed",
+          "verticalAngleDegrees": 57,
+          "connectivity": "Bluetooth Low Energy or Logi Bolt",
+          "receiverIncluded": true,
+          "batteryRuntimeClaim": "Up to 24 months from one AA battery. Varies with usage and computing conditions."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "Graphite · Lift",
+        "description": "Right-handed vertical mouse with a 57-degree grip angle, six buttons and adjustable tracking from 400 to 4000 DPI. The AA battery and Logi Bolt receiver are included in this selected edition. Up to 24 months from one AA battery. Varies with usage and computing conditions. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Recover exact Graphite manufacturer SKU, variant-bound photograph and explicit regional/switch configuration. Correct battery-life semantics rather than converting conditional days or months into continuous hours.",
+      "evidence": {
+        "source": "https://www.logitech.com/en-us/shop/p/lift-vertical-ergonomic-mouse?sku=910-006466",
+        "manufacturerSku": "910-006466",
+        "variantName": "Lift - Graphite",
+        "selectedFacets": {
+          "color": {
+            "label": "Graphite",
+            "value": "graphite"
+          },
+          "type": {
+            "label": "Lift",
+            "value": "lift"
+          }
+        },
+        "sourceImage": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/lift-vertical-ergonomic-mouse/2026-update/gallery/graphite/lift-mouse-top-angle-graphite-gallery-1.png",
+        "photographSha256": "99a8609ee2917dc20d3d328e2ed2bcb4adb164653b719942abb357ec92a12b68",
+        "sourcePageSha256": "ff6393cd87dad5e2a6716ff6b015e00689dc92fe1b30008ca605cddf38bae820",
+        "batteryClaim": "Up to 24 months from one AA battery. Varies with usage and computing conditions.",
+        "review": "Manufacturer product payload confirms selected SKU, color, keyboard language/switch or mouse handedness, specifications and package contents. Snapshot retained privately."
+      }
+    },
+    {
+      "oldId": "PROD-MICE-LOGITECH-LOGITECH-MX-ANYWHERE-3S",
+      "expected": {
+        "name": "Logitech MX Anywhere 3S",
+        "brand": "Logitech",
+        "source": "https://www.logitech.com/products/mice/mx-anywhere-3s",
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "mx anywhere 3s",
+          "sensorDpi": 8000,
+          "buttonCount": 6,
+          "weightGrams": 99,
+          "batteryHours": 1680,
+          "connectivity": "Bluetooth / Bolt",
+          "silentClicks": true
+        }
+      },
+      "product": {
+        "id": "PROD-MICE-LOGITECH-LOGITECH-MX-ANYWHERE-3S",
+        "name": "Logitech MX Anywhere 3S",
+        "brand": "Logitech",
+        "color": "Graphite",
+        "media": {
+          "url": "/images/verified/logitech-910-006925-e2544bc4db0e55ba.webp",
+          "source": "https://www.logitech.com/en-us/shop/p/mx-anywhere-3s?sku=910-006925",
+          "alt": "Logitech MX Anywhere 3S · Graphite",
+          "attribution": "Logitech manufacturer product photography; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 6999,
+        "specs": [
+          "Manufacturer reference: 910-006925",
+          "Selected variant: Graphite",
+          "Connectivity: Bluetooth Low Energy or Logi Bolt",
+          "Logi Bolt receiver: Sold separately",
+          "Weight: 99 g",
+          "Battery life (manufacturer estimate): Up to 70 days on a full charge; up to 3 hours of use from a 1-minute quick charge. Varies with usage and computing conditions.",
+          "Maximum tracking resolution: 8000 DPI",
+          "Buttons: 6"
+        ],
+        "stock": 25,
+        "source": "https://www.logitech.com/en-us/shop/p/mx-anywhere-3s?sku=910-006925",
+        "category": "accessories",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Logitech US exact Graphite SKU and variant specification payload",
+          "review": "specifications",
+          "missing": [
+            "Battery estimates are conditional usage claims, not continuous operating hours.",
+            "Software customization depends on operating system and Logi Options+ support; basic connectivity does not guarantee every feature.",
+            "Real merchant price, stock and fulfillment are not connected."
+          ]
+        },
+        "familyId": "logitech:logitech-mx-anywhere-3s",
+        "leafType": "mice",
+        "modelName": "MX Anywhere 3S",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "logitech",
+          "modelName": "mx anywhere 3s",
+          "sourceSku": "910-006925",
+          "productType": "mouse",
+          "finish": "Graphite",
+          "sensorDpi": 8000,
+          "buttonCount": 6,
+          "weightGrams": 99,
+          "batteryMah": 500,
+          "connectivity": "Bluetooth Low Energy or Logi Bolt",
+          "receiverIncluded": false,
+          "batteryRuntimeClaim": "Up to 70 days on a full charge; up to 3 hours of use from a 1-minute quick charge. Varies with usage and computing conditions."
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "Graphite",
+        "description": "Compact rechargeable mouse with six buttons, Quiet Clicks and adjustable Darkfield tracking from 200 to 8000 DPI. Bluetooth is built in; a compatible Logi Bolt receiver is sold separately. Up to 70 days on a full charge; up to 3 hours of use from a 1-minute quick charge. Varies with usage and computing conditions. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Recover exact Graphite manufacturer SKU, variant-bound photograph and explicit regional/switch configuration. Correct battery-life semantics rather than converting conditional days or months into continuous hours.",
+      "evidence": {
+        "source": "https://www.logitech.com/en-us/shop/p/mx-anywhere-3s?sku=910-006925",
+        "manufacturerSku": "910-006925",
+        "variantName": "MX Anywhere 3S - Graphite",
+        "selectedFacets": {
+          "color": {
+            "label": "Graphite",
+            "value": "graphite"
+          }
+        },
+        "sourceImage": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-anywhere-3s/product-gallery/graphite/mx-anywhere-3s-mouse-top-view-graphite.png",
+        "photographSha256": "e2544bc4db0e55baa2b10c7cf07fad71bfdb257d611fd8fd67cd0e43eb535a6f",
+        "sourcePageSha256": "d070f4be43a5b6dbd9d0395c024671d1c4c655b4db1eee99df8ef2ce07ca7553",
+        "batteryClaim": "Up to 70 days on a full charge; up to 3 hours of use from a 1-minute quick charge. Varies with usage and computing conditions.",
+        "review": "Manufacturer product payload confirms selected SKU, color, keyboard language/switch or mouse handedness, specifications and package contents. Snapshot retained privately."
+      }
+    }
+  ]
+}

@@ -1,0 +1,3041 @@
+{
+  "id": "watch-references-2026-10-24",
+  "operations": [
+    {
+      "oldId": "PROD-WATCHES-ROLEX-ROLEX-DATEJUST-41",
+      "expected": {
+        "name": "Rolex Datejust 41 (Ref. 126300)",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/datejust/m126300-0001",
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 3235",
+          "modelName": "datejust 41 (ref. 126300)",
+          "caseMaterial": "oystersteel",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 100,
+          "powerReserveHours": 70
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Datejust 41 (Ref. 126300)",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/datejust/m126300-0001",
+          "attributes": {
+            "brand": "rolex",
+            "modelName": "datejust 41 (ref. 126300)",
+            "movement": "automatic calibre 3235",
+            "caseDiameterMm": 41,
+            "waterResistanceM": 100,
+            "caseMaterial": "oystersteel",
+            "powerReserveHours": 70,
+            "crystal": "sapphire"
+          }
+        }
+      ],
+      "product": {
+        "id": "PROD-WATCHES-ROLEX-ROLEX-DATEJUST-41",
+        "name": "Rolex Datejust 41 · m126300-0001",
+        "brand": "Rolex",
+        "color": "Bright blue dial",
+        "media": {
+          "url": "/images/verified/watch-m126300-0001-b88ad56e36f39585.webp",
+          "source": "https://www.rolex.com/watches/datejust/m126300-0001",
+          "alt": "Rolex Datejust 41 · m126300-0001",
+          "attribution": "Rolex manufacturer reference photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 1150000,
+        "specs": [
+          "Manufacturer reference: m126300-0001",
+          "Case diameter: 41 mm",
+          "Case material: Oystersteel",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Bright blue",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterclasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3235"
+        ],
+        "stock": 25,
+        "source": "https://www.rolex.com/watches/datejust/m126300-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:rolex-datejust-41",
+        "leafType": "watches",
+        "modelName": "Datejust 41 (Ref. 126300)",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 3235",
+          "modelName": "datejust 41 (ref. 126300)",
+          "caseMaterial": "Oystersteel",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 100,
+          "powerReserveHours": 70,
+          "sourceSku": "m126300-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "dialColor": "Bright blue",
+          "calibre": "3235",
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "m126300-0001",
+        "description": "Rolex Datejust 41 · m126300-0001. 41 mm case in Oystersteel; Bright blue dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/datejust/m126300-0001",
+        "manufacturerSku": "m126300-0001",
+        "sourceHash": "8370397c04c52314245912341efdc6f326a81c8937fc102fa726a9e010431b25",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126300-0001",
+        "photographSha256": "b88ad56e36f39585d7ca321cebe12feba8b52693ee443cc4a26b4397b3597247",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "41 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Bright blue"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3235",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "PROD-WATCHES-ROLEX-ROLEX-DAY-DATE-40",
+      "expected": {
+        "name": "Rolex Day-Date 40 (Ref. 228238)",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/day-date/m228238-0006",
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 3255",
+          "modelName": "day-date 40 (ref. 228238)",
+          "caseMaterial": "18 ct yellow gold",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100,
+          "powerReserveHours": 70
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Day-Date 40 (Ref. 228238)",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/day-date/m228238-0006",
+          "attributes": {
+            "brand": "rolex",
+            "modelName": "day-date 40 (ref. 228238)",
+            "movement": "automatic calibre 3255",
+            "caseDiameterMm": 40,
+            "waterResistanceM": 100,
+            "caseMaterial": "18 ct yellow gold",
+            "powerReserveHours": 70,
+            "crystal": "sapphire"
+          }
+        }
+      ],
+      "product": {
+        "id": "PROD-WATCHES-ROLEX-ROLEX-DAY-DATE-40",
+        "name": "Rolex Day-Date 40 · m228238-0006",
+        "brand": "Rolex",
+        "color": "Champagne-colour dial",
+        "media": {
+          "url": "/images/verified/watch-m228238-0006-9187fe6258d3bd1c.webp",
+          "source": "https://www.rolex.com/watches/day-date/m228238-0006",
+          "alt": "Rolex Day-Date 40 · m228238-0006",
+          "attribution": "Rolex manufacturer reference photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 1150000,
+        "specs": [
+          "Manufacturer reference: m228238-0006",
+          "Case diameter: 40 mm",
+          "Case material: 18 ct yellow gold",
+          "Bracelet material: 18 ct yellow gold",
+          "Bracelet type: President, semi-circular three-piece links",
+          "Dial colour: Champagne-colour",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Concealed folding Crownclasp",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3255"
+        ],
+        "stock": 25,
+        "source": "https://www.rolex.com/watches/day-date/m228238-0006",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:rolex-day-date-40",
+        "leafType": "watches",
+        "modelName": "Day-Date 40 (Ref. 228238)",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 3255",
+          "modelName": "day-date 40 (ref. 228238)",
+          "caseMaterial": "18 ct yellow gold",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100,
+          "powerReserveHours": 70,
+          "sourceSku": "m228238-0006",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "dialColor": "Champagne-colour",
+          "calibre": "3255",
+          "braceletMaterial": "18 ct yellow gold",
+          "braceletType": "President, semi-circular three-piece links",
+          "clasp": "Concealed folding Crownclasp"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "m228238-0006",
+        "description": "Rolex Day-Date 40 · m228238-0006. 40 mm case in 18 ct yellow gold; Champagne-colour dial. President, semi-circular three-piece links bracelet in 18 ct yellow gold. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/day-date/m228238-0006",
+        "manufacturerSku": "m228238-0006",
+        "sourceHash": "c0b14b0756abe8e596b02812401687de7d43fec9126925612e66b907e8d2acc3",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m228238-0006",
+        "photographSha256": "9187fe6258d3bd1cb13bc265c58a3c0d3c229a4bee4f2b7f068bc51d58f15a66",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "40 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "18 ct yellow gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "18 ct yellow gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "President, semi-circular three-piece links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Champagne-colour"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Concealed folding Crownclasp"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3255",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "PROD-WATCHES-ROLEX-ROLEX-DAYTONA",
+      "expected": {
+        "name": "Rolex Cosmograph Daytona 40 (Ref. 126500LN)",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/cosmograph-daytona/m126500ln-0001",
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 4131",
+          "modelName": "cosmograph daytona 40 (ref. 126500ln)",
+          "caseMaterial": "oystersteel",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100,
+          "powerReserveHours": 72
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Cosmograph Daytona 40 (Ref. 126500LN)",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/cosmograph-daytona/m126500ln-0001",
+          "attributes": {
+            "brand": "rolex",
+            "modelName": "cosmograph daytona 40 (ref. 126500ln)",
+            "movement": "automatic calibre 4131",
+            "caseDiameterMm": 40,
+            "waterResistanceM": 100,
+            "caseMaterial": "oystersteel",
+            "powerReserveHours": 72,
+            "crystal": "sapphire"
+          }
+        }
+      ],
+      "product": {
+        "id": "PROD-WATCHES-ROLEX-ROLEX-DAYTONA",
+        "name": "Rolex Cosmograph Daytona 40 · m126500ln-0001",
+        "brand": "Rolex",
+        "color": "White, black counter rings dial",
+        "media": {
+          "url": "/images/verified/watch-m126500ln-0001-c1f4b46a958c1f6b.webp",
+          "source": "https://www.rolex.com/watches/cosmograph-daytona/m126500ln-0001",
+          "alt": "Rolex Cosmograph Daytona 40 · m126500ln-0001",
+          "attribution": "Rolex manufacturer reference photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 1150000,
+        "specs": [
+          "Manufacturer reference: m126500ln-0001",
+          "Case diameter: 40 mm",
+          "Case material: Oystersteel",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: White, black counter rings",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical chronograph, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 72 hours",
+          "Calibre: 4131"
+        ],
+        "stock": 25,
+        "source": "https://www.rolex.com/watches/cosmograph-daytona/m126500ln-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:rolex-daytona",
+        "leafType": "watches",
+        "modelName": "Cosmograph Daytona 40 (Ref. 126500LN)",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 4131",
+          "modelName": "cosmograph daytona 40 (ref. 126500ln)",
+          "caseMaterial": "Oystersteel",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100,
+          "powerReserveHours": 72,
+          "sourceSku": "m126500ln-0001",
+          "manufacturerMovement": "Perpetual, mechanical chronograph, self-winding",
+          "dialColor": "White, black counter rings",
+          "calibre": "4131",
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "m126500ln-0001",
+        "description": "Rolex Cosmograph Daytona 40 · m126500ln-0001. 40 mm case in Oystersteel; White, black counter rings dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 72 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/cosmograph-daytona/m126500ln-0001",
+        "manufacturerSku": "m126500ln-0001",
+        "sourceHash": "5c450db6e77a559f56431e0d8bd8ae56bbfef4eeae358a122a0c4013edc3b9ce",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126500ln-0001",
+        "photographSha256": "c1f4b46a958c1f6b79c6e6991974e287be39527088e713563d35333ee012ea99",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "40 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "White, black counter rings"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical chronograph, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 72 hours"
+          }
+        ],
+        "calibre": "4131",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "PROD-WATCHES-ROLEX-ROLEX-EXPLORER-36",
+      "expected": {
+        "name": "Rolex Explorer 36 (Ref. 124270)",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/explorer/m124270-0001",
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 3230",
+          "modelName": "explorer 36 (ref. 124270)",
+          "caseMaterial": "oystersteel",
+          "caseDiameterMm": 36,
+          "waterResistanceM": 100,
+          "powerReserveHours": 70
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Explorer 36 (Ref. 124270)",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/explorer/m124270-0001",
+          "attributes": {
+            "brand": "rolex",
+            "modelName": "explorer 36 (ref. 124270)",
+            "movement": "automatic calibre 3230",
+            "caseDiameterMm": 36,
+            "waterResistanceM": 100,
+            "caseMaterial": "oystersteel",
+            "powerReserveHours": 70,
+            "crystal": "sapphire"
+          }
+        }
+      ],
+      "product": {
+        "id": "PROD-WATCHES-ROLEX-ROLEX-EXPLORER-36",
+        "name": "Rolex Explorer 36 · m124270-0001",
+        "brand": "Rolex",
+        "color": "Black dial",
+        "media": {
+          "url": "/images/verified/watch-m124270-0001-adebbc33bb155aca.webp",
+          "source": "https://www.rolex.com/watches/explorer/m124270-0001",
+          "alt": "Rolex Explorer 36 · m124270-0001",
+          "attribution": "Rolex manufacturer reference photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 1150000,
+        "specs": [
+          "Manufacturer reference: m124270-0001",
+          "Case diameter: 36 mm",
+          "Case material: Oystersteel",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Black",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3230"
+        ],
+        "stock": 25,
+        "source": "https://www.rolex.com/watches/explorer/m124270-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:rolex-explorer-36",
+        "leafType": "watches",
+        "modelName": "Explorer 36 (Ref. 124270)",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 3230",
+          "modelName": "explorer 36 (ref. 124270)",
+          "caseMaterial": "Oystersteel",
+          "caseDiameterMm": 36,
+          "waterResistanceM": 100,
+          "powerReserveHours": 70,
+          "sourceSku": "m124270-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "dialColor": "Black",
+          "calibre": "3230",
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "m124270-0001",
+        "description": "Rolex Explorer 36 · m124270-0001. 36 mm case in Oystersteel; Black dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/explorer/m124270-0001",
+        "manufacturerSku": "m124270-0001",
+        "sourceHash": "680d32f7ac5d80df8453991c8a37ed8ea3bb58fc2ec041ebe06e19a14e4a06d5",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m124270-0001",
+        "photographSha256": "adebbc33bb155acad070ca45929f841cc8b3dcfc3be3d84a413c7c7227ba5231",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "36 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3230",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "PROD-WATCHES-ROLEX-ROLEX-SKY-DWELLER",
+      "expected": {
+        "name": "Rolex Sky-Dweller 42 (Ref. 336934)",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/sky-dweller/m336934-0001",
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 9002",
+          "modelName": "sky-dweller 42 (ref. 336934)",
+          "caseMaterial": "white rolesor",
+          "caseDiameterMm": 42,
+          "waterResistanceM": 100,
+          "powerReserveHours": 72
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Sky-Dweller 42 (Ref. 336934)",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/sky-dweller/m336934-0001",
+          "attributes": {
+            "brand": "rolex",
+            "modelName": "sky-dweller 42 (ref. 336934)",
+            "movement": "automatic calibre 9002",
+            "caseDiameterMm": 42,
+            "waterResistanceM": 100,
+            "caseMaterial": "white rolesor",
+            "powerReserveHours": 72,
+            "crystal": "sapphire"
+          }
+        }
+      ],
+      "product": {
+        "id": "PROD-WATCHES-ROLEX-ROLEX-SKY-DWELLER",
+        "name": "Rolex Sky-Dweller 42 · m336934-0001",
+        "brand": "Rolex",
+        "color": "Mint green dial",
+        "media": {
+          "url": "/images/verified/watch-m336934-0001-eff0644d4de2e95d.webp",
+          "source": "https://www.rolex.com/watches/sky-dweller/m336934-0001",
+          "alt": "Rolex Sky-Dweller 42 · m336934-0001",
+          "attribution": "Rolex manufacturer reference photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 1150000,
+        "specs": [
+          "Manufacturer reference: m336934-0001",
+          "Case diameter: 42 mm",
+          "Case material: White Rolesor - combination of Oystersteel and white gold",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Mint green",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding, dual time zones, annual calendar",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterclasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 72 hours",
+          "Calibre: 9002"
+        ],
+        "stock": 25,
+        "source": "https://www.rolex.com/watches/sky-dweller/m336934-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:rolex-sky-dweller",
+        "leafType": "watches",
+        "modelName": "Sky-Dweller 42 (Ref. 336934)",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 9002",
+          "modelName": "sky-dweller 42 (ref. 336934)",
+          "caseMaterial": "White Rolesor - combination of Oystersteel and white gold",
+          "caseDiameterMm": 42,
+          "waterResistanceM": 100,
+          "powerReserveHours": 72,
+          "sourceSku": "m336934-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding, dual time zones, annual calendar",
+          "dialColor": "Mint green",
+          "calibre": "9002",
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "m336934-0001",
+        "description": "Rolex Sky-Dweller 42 · m336934-0001. 42 mm case in White Rolesor - combination of Oystersteel and white gold; Mint green dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 72 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/sky-dweller/m336934-0001",
+        "manufacturerSku": "m336934-0001",
+        "sourceHash": "329166b009e4b66b52b4e0e733d2ca9922456c01ded8ef8ad39faa68f9c16917",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m336934-0001",
+        "photographSha256": "eff0644d4de2e95d3ab3dc15d42fcac3660b8a1a42ba52a3dc595479fed40b77",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "42 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "White Rolesor - combination of Oystersteel and white gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Mint green"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding, dual time zones, annual calendar"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 72 hours"
+          }
+        ],
+        "calibre": "9002",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "PROD-WATCHES-ROLEX-ROLEX-SUBMARINER-DATE",
+      "expected": {
+        "name": "Rolex Submariner Date 41 (Ref. 126610LN)",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/submariner/m126610ln-0001",
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 3235",
+          "modelName": "submariner date 41 (ref. 126610ln)",
+          "caseMaterial": "oystersteel",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 300,
+          "powerReserveHours": 70
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Submariner Date 41 (Ref. 126610LN)",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/submariner/m126610ln-0001",
+          "attributes": {
+            "brand": "rolex",
+            "modelName": "submariner date 41 (ref. 126610ln)",
+            "movement": "automatic calibre 3235",
+            "caseDiameterMm": 41,
+            "waterResistanceM": 300,
+            "caseMaterial": "oystersteel",
+            "powerReserveHours": 70,
+            "crystal": "sapphire"
+          }
+        }
+      ],
+      "product": {
+        "id": "PROD-WATCHES-ROLEX-ROLEX-SUBMARINER-DATE",
+        "name": "Rolex Submariner Date 41 · m126610ln-0001",
+        "brand": "Rolex",
+        "color": "Black dial",
+        "media": {
+          "url": "/images/verified/watch-m126610ln-0001-fe33be6596ceb020.webp",
+          "source": "https://www.rolex.com/watches/submariner/m126610ln-0001",
+          "alt": "Rolex Submariner Date 41 · m126610ln-0001",
+          "attribution": "Rolex manufacturer reference photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 1150000,
+        "specs": [
+          "Manufacturer reference: m126610ln-0001",
+          "Case diameter: 41 mm",
+          "Case material: Oystersteel",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Black",
+          "Water resistance: Waterproof to 300 metres / 1,000 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Rolex Glidelock extension system",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3235"
+        ],
+        "stock": 25,
+        "source": "https://www.rolex.com/watches/submariner/m126610ln-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:rolex-submariner-date",
+        "leafType": "watches",
+        "modelName": "Submariner Date 41 (Ref. 126610LN)",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 3235",
+          "modelName": "submariner date 41 (ref. 126610ln)",
+          "caseMaterial": "Oystersteel",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 300,
+          "powerReserveHours": 70,
+          "sourceSku": "m126610ln-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "dialColor": "Black",
+          "calibre": "3235",
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterlock safety clasp with Rolex Glidelock extension system"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "m126610ln-0001",
+        "description": "Rolex Submariner Date 41 · m126610ln-0001. 41 mm case in Oystersteel; Black dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 300 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/submariner/m126610ln-0001",
+        "manufacturerSku": "m126610ln-0001",
+        "sourceHash": "68854b13a5ddbd5cecab99607fac2ee553942da726fa56f6a6f21b4b989a06f2",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126610ln-0001",
+        "photographSha256": "fe33be6596ceb020c78b5d8cc29dd0a29f4a04f30197789a29cf55c72d71dcdd",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "41 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 300 metres / 1,000 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Rolex Glidelock extension system"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3235",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "PROD-WATCHES-TAG-HEUER-TAG-HEUER-FORMULA-1-CHRONOGRAPH",
+      "expected": {
+        "name": "TAG Heuer Formula 1 Chronograph 43mm",
+        "brand": "TAG Heuer",
+        "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.FT8024.html",
+        "attributes": {
+          "brand": "tag heuer",
+          "crystal": "sapphire",
+          "movement": "quartz chronograph",
+          "modelName": "formula 1 chronograph 43mm",
+          "caseMaterial": "steel",
+          "caseDiameterMm": 43,
+          "waterResistanceM": 200,
+          "powerReserveHours": 26000
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "TAG Heuer Formula 1 Chronograph 43mm",
+          "brand": "TAG Heuer",
+          "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.FT8024.html",
+          "attributes": {
+            "brand": "tag heuer",
+            "modelName": "formula 1 chronograph 43mm",
+            "movement": "quartz chronograph",
+            "caseDiameterMm": 43,
+            "waterResistanceM": 200,
+            "caseMaterial": "steel",
+            "powerReserveHours": 26000,
+            "crystal": "sapphire"
+          }
+        }
+      ],
+      "product": {
+        "id": "PROD-WATCHES-TAG-HEUER-TAG-HEUER-FORMULA-1-CHRONOGRAPH",
+        "name": "TAG Heuer Formula 1 Chronograph 43mm · CAZ1010.FT8024",
+        "brand": "TAG Heuer",
+        "color": "Black dial",
+        "media": {
+          "url": "/images/verified/watch-caz1010-ft8024-2c2a0f12c222bec6.webp",
+          "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.FT8024.html",
+          "alt": "TAG Heuer Formula 1 Chronograph 43mm · CAZ1010.FT8024",
+          "attribution": "TAG Heuer manufacturer reference photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 275000,
+        "specs": [
+          "Manufacturer reference: CAZ1010.FT8024",
+          "Caliber: Quartz",
+          "Movement: Quartz",
+          "Functions: Hours, Minutes, Seconds, Chronograph : 1/10 second, seconds, 30 minutes counter, Date",
+          "Size: 43 mm",
+          "Water resistance: 200 m",
+          "Case: Steel Fine-Brushed",
+          "Bezel: Fixed Bezel",
+          "Bezel Material: Steel coated with black PVD",
+          "Strap Material: Rubber",
+          "Color: Black",
+          "Finishing: Gum effect",
+          "Buckle: Pin Buckle - Fine Brushed Steel",
+          "Color: Black",
+          "Calibre: Quartz"
+        ],
+        "stock": 25,
+        "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.FT8024.html",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity.",
+            "Battery replacement interval and continuous operating duration are not established for this quartz reference."
+          ]
+        },
+        "familyId": "tag heuer:tag-heuer-formula-1-chronograph",
+        "leafType": "watches",
+        "modelName": "Formula 1 Chronograph 43mm",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "tag heuer",
+          "crystal": "sapphire",
+          "movement": "quartz",
+          "modelName": "formula 1 chronograph 43mm",
+          "caseMaterial": "Steel Fine-Brushed",
+          "waterResistanceM": 200,
+          "sourceSku": "CAZ1010.FT8024",
+          "manufacturerMovement": "Quartz",
+          "dialColor": "Black",
+          "caseSizeMm": 43,
+          "calibre": "Quartz",
+          "strapMaterial": "Rubber"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "CAZ1010.FT8024",
+        "description": "TAG Heuer Formula 1 Chronograph 43mm · CAZ1010.FT8024. 43 mm steel chronograph with black dial and rubber strap. Manufacturer-rated water resistance: 200 m. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.FT8024.html",
+        "manufacturerSku": "CAZ1010.FT8024",
+        "sourceHash": "81f2f6f7bc454c244b62e0da88a306bdad884b26db0d571d9185abe469a80fa9",
+        "sourceImage": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw497b9ef4/TAG_Heuer_Formula_1/CAZ1010.FT8024/CAZ1010.FT8024_Soldier.png",
+        "photographSha256": "2c2a0f12c222bec63fb7eada9c7cce01828903809630eeb3e268ef3d8c6982cc",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Caliber",
+            "value": "Quartz"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Quartz"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Functions",
+            "value": "Hours, Minutes, Seconds, Chronograph : 1/10 second, seconds, 30 minutes counter, Date"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Size",
+            "value": "43 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "200 m"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case",
+            "value": "Steel Fine-Brushed"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bezel",
+            "value": "Fixed Bezel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bezel Material",
+            "value": "Steel coated with black PVD"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Strap Material",
+            "value": "Rubber"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Color",
+            "value": "Black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Finishing",
+            "value": "Gum effect"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Buckle",
+            "value": "Pin Buckle - Fine Brushed Steel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Color",
+            "value": "Black"
+          }
+        ],
+        "calibre": "Quartz",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference.",
+        "supportingSources": [
+          {
+            "field": "crystal",
+            "value": "Sapphire",
+            "source": "https://www.the1916company.com/watches/tag-heuer/formula-1/formula-1-caz1010.ft8024/",
+            "kind": "Exact-reference authorized retailer product specification"
+          }
+        ]
+      }
+    },
+    {
+      "oldId": "PROD-WATCHES-TAG-HEUER-TAG-HEUER-MONACO-CALIBRE-11",
+      "expected": {
+        "name": "TAG Heuer Monaco Chronograph Calibre 11 39mm",
+        "brand": "TAG Heuer",
+        "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW211P.FC6356.html",
+        "attributes": {
+          "brand": "tag heuer",
+          "crystal": "sapphire",
+          "movement": "automatic calibre 11",
+          "modelName": "monaco chronograph calibre 11 39mm",
+          "caseMaterial": "steel",
+          "caseDiameterMm": 39,
+          "waterResistanceM": 100,
+          "powerReserveHours": 40
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "TAG Heuer Monaco Chronograph Calibre 11 39mm",
+          "brand": "TAG Heuer",
+          "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW211P.FC6356.html",
+          "attributes": {
+            "brand": "tag heuer",
+            "modelName": "monaco chronograph calibre 11 39mm",
+            "movement": "automatic calibre 11",
+            "caseDiameterMm": 39,
+            "waterResistanceM": 100,
+            "caseMaterial": "steel",
+            "powerReserveHours": 40,
+            "crystal": "sapphire"
+          }
+        }
+      ],
+      "product": {
+        "id": "PROD-WATCHES-TAG-HEUER-TAG-HEUER-MONACO-CALIBRE-11",
+        "name": "TAG Heuer Monaco Chronograph Calibre 11 39mm · CAW211P.FC6356",
+        "brand": "TAG Heuer",
+        "color": "Blue dial",
+        "media": {
+          "url": "/images/verified/watch-caw211p-fc6356-3afcfb768a054569.webp",
+          "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW211P.FC6356.html",
+          "alt": "TAG Heuer Monaco Chronograph Calibre 11 39mm · CAW211P.FC6356",
+          "attribution": "TAG Heuer manufacturer reference photograph; external reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 275000,
+        "specs": [
+          "Manufacturer reference: CAW211P.FC6356",
+          "Caliber: Calibre 11 Automatic",
+          "Movement: Automatic",
+          "Power reserve (hours): 40",
+          "Balance Frequency: 28'800 (4 Hz)",
+          "Functions: Hours, Minutes, Seconds, Chronograph : 1/4 seconds, 30 minutes counter, Date",
+          "Size: 39 mm",
+          "Thickness: 15 mm",
+          "Lugs Distance: 22 mm",
+          "Water resistance: 100 m",
+          "Case: Steel Fine-Brushed/Polished",
+          "Bezel: Fixed Bezel",
+          "Bezel Material: Steel",
+          "Crown: Steel",
+          "Caseback: Sapphire - Steel",
+          "Strap Material: Leather",
+          "Color: Black",
+          "Finishing: Perforated",
+          "Buckle: Folding Clasp - Polished Steel",
+          "Finishing: Opalin",
+          "Color: Blue",
+          "Index: Printed",
+          "Calibre: Calibre 11 Automatic",
+          "Manufacturer status: Discontinued; reference documentation remains available"
+        ],
+        "stock": 25,
+        "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW211P.FC6356.html",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "tag heuer:tag-heuer-monaco-calibre-11",
+        "leafType": "watches",
+        "modelName": "Monaco Chronograph Calibre 11 39mm",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "tag heuer",
+          "crystal": "sapphire",
+          "movement": "automatic",
+          "modelName": "monaco chronograph calibre 11 39mm",
+          "caseMaterial": "Steel Fine-Brushed/Polished",
+          "waterResistanceM": 100,
+          "powerReserveHours": 40,
+          "sourceSku": "CAW211P.FC6356",
+          "manufacturerMovement": "Automatic",
+          "dialColor": "Blue",
+          "caseSizeMm": 39,
+          "calibre": "Calibre 11 Automatic",
+          "strapMaterial": "Leather",
+          "manufacturerStatus": "Discontinued"
+        },
+        "provenance": "manufacturer_evidence",
+        "skuVariant": "CAW211P.FC6356",
+        "description": "TAG Heuer Monaco Chronograph Calibre 11 39mm · CAW211P.FC6356. 39 mm square steel chronograph with blue dial and leather strap. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 40 hours. This reference is discontinued by the manufacturer. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "deviceCompatibility": []
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW211P.FC6356.html",
+        "manufacturerSku": "CAW211P.FC6356",
+        "sourceHash": "9476f58d8bafa94a8ff8654e08255721def3c965f64c726eddb5413f3cdc9407",
+        "sourceImage": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwe9708487/TAG_Heuer_Monaco/CAW211P.FC6356/CAW211P.FC6356_Soldier.png",
+        "photographSha256": "3afcfb768a054569edf0349f308d10d30d80e07f9a9c055bb6339ff6254660b6",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Caliber",
+            "value": "Calibre 11 Automatic"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Automatic"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve (hours)",
+            "value": "40"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Balance Frequency",
+            "value": "28'800 (4 Hz)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Functions",
+            "value": "Hours, Minutes, Seconds, Chronograph : 1/4 seconds, 30 minutes counter, Date"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Size",
+            "value": "39 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Thickness",
+            "value": "15 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Lugs Distance",
+            "value": "22 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "100 m"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case",
+            "value": "Steel Fine-Brushed/Polished"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bezel",
+            "value": "Fixed Bezel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bezel Material",
+            "value": "Steel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Crown",
+            "value": "Steel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Caseback",
+            "value": "Sapphire - Steel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Strap Material",
+            "value": "Leather"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Color",
+            "value": "Black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Finishing",
+            "value": "Perforated"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Buckle",
+            "value": "Folding Clasp - Polished Steel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Finishing",
+            "value": "Opalin"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Color",
+            "value": "Blue"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Index",
+            "value": "Printed"
+          }
+        ],
+        "calibre": "Calibre 11 Automatic",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference.",
+        "supportingSources": [
+          {
+            "field": "crystal",
+            "value": "Sapphire",
+            "source": "https://www.thehourglass.com/product/tag-heuer/tag-heuer-monaco/caw211p-fc6356",
+            "kind": "Exact-reference authorized retailer product specification"
+          }
+        ]
+      }
+    },
+    {
+      "oldId": "WATCH-m124060-0001",
+      "expected": {
+        "name": "Rolex Submariner · m124060-0001",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/submariner/m124060-0001",
+        "attributes": {
+          "brand": "rolex",
+          "material": "oystersteel",
+          "movement": "automatic",
+          "modelName": "submariner",
+          "productType": "watch",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 300
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Submariner · m124060-0001",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/submariner/m124060-0001",
+          "attributes": {
+            "productType": "watch",
+            "material": "oystersteel",
+            "brand": "rolex",
+            "modelName": "submariner",
+            "movement": "automatic",
+            "caseDiameterMm": 41,
+            "waterResistanceM": 300
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m124060-0001",
+        "name": "Rolex Submariner · m124060-0001",
+        "brand": "Rolex",
+        "color": "Black",
+        "media": {
+          "url": "/images/verified/restored-watch-m124060-0001-08b27643e2549d05.webp",
+          "source": "https://www.rolex.com/watches/submariner/m124060-0001",
+          "alt": "Rolex Submariner · m124060-0001",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m124060-0001",
+          "Case diameter: 41 mm",
+          "Case material: Oystersteel",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Black",
+          "Water resistance: Waterproof to 300 metres / 1,000 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Rolex Glidelock extension system",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3230"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/submariner/m124060-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:submariner",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "oystersteel",
+          "movement": "automatic",
+          "modelName": "submariner",
+          "productType": "watch",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 300,
+          "sourceSku": "m124060-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "caseMaterial": "Oystersteel",
+          "dialColor": "Black",
+          "calibre": "3230",
+          "powerReserveHours": 70,
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterlock safety clasp with Rolex Glidelock extension system"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Submariner · m124060-0001. 41 mm case in Oystersteel; Black dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 300 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m124060-0001"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/submariner/m124060-0001",
+        "manufacturerSku": "m124060-0001",
+        "sourceHash": "fcd5de8c624f1f8250b3b74616c29d22cef9552bfa8121ad08af350b3ff9a672",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m124060-0001",
+        "photographSha256": "08b27643e2549d05ce217bb6cb79ca4b6ed23ae7b94e1f0d135fe3dbc24819e4",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "41 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 300 metres / 1,000 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Rolex Glidelock extension system"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3230",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m126334-0033",
+      "expected": {
+        "name": "Rolex Datejust · m126334-0033",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/datejust/m126334-0033",
+        "attributes": {
+          "brand": "rolex",
+          "material": "white rolesor - combination of oystersteel and white gold",
+          "movement": "automatic",
+          "modelName": "datejust",
+          "productType": "watch",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 100
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Datejust · m126334-0033",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/datejust/m126334-0033",
+          "attributes": {
+            "productType": "watch",
+            "material": "white rolesor - combination of oystersteel and white gold",
+            "brand": "rolex",
+            "modelName": "datejust",
+            "movement": "automatic",
+            "caseDiameterMm": 41,
+            "waterResistanceM": 100
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m126334-0033",
+        "name": "Rolex Datejust · m126334-0033",
+        "brand": "Rolex",
+        "color": "Green ombré",
+        "media": {
+          "url": "/images/verified/restored-watch-m126334-0033-a132f4ef9d98e4f1.webp",
+          "source": "https://www.rolex.com/watches/datejust/m126334-0033",
+          "alt": "Rolex Datejust · m126334-0033",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m126334-0033",
+          "Case diameter: 41 mm",
+          "Case material: White Rolesor - combination of Oystersteel and white gold",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Green ombré",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterclasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3235"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/datejust/m126334-0033",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:datejust",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "white rolesor - combination of oystersteel and white gold",
+          "movement": "automatic",
+          "modelName": "datejust",
+          "productType": "watch",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 100,
+          "sourceSku": "m126334-0033",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "caseMaterial": "White Rolesor - combination of Oystersteel and white gold",
+          "dialColor": "Green ombré",
+          "calibre": "3235",
+          "powerReserveHours": 70,
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Datejust · m126334-0033. 41 mm case in White Rolesor - combination of Oystersteel and white gold; Green ombré dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m126334-0033"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/datejust/m126334-0033",
+        "manufacturerSku": "m126334-0033",
+        "sourceHash": "055f289bd022207f354a7dbe9a32c7c05aacbccc426bbaecc74bd6a071dadc8f",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126334-0033",
+        "photographSha256": "a132f4ef9d98e4f14ad5379bd4484fda6519b44d57f7046476ac0c8471d62bdd",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "41 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "White Rolesor - combination of Oystersteel and white gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Green ombré"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3235",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m126506-0001",
+      "expected": {
+        "name": "Rolex Cosmograph Daytona · m126506-0001",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/cosmograph-daytona/m126506-0001",
+        "attributes": {
+          "brand": "rolex",
+          "material": "platinum",
+          "movement": "automatic",
+          "modelName": "cosmograph daytona",
+          "productType": "watch",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Cosmograph Daytona · m126506-0001",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/cosmograph-daytona/m126506-0001",
+          "attributes": {
+            "productType": "watch",
+            "material": "platinum",
+            "brand": "rolex",
+            "modelName": "cosmograph daytona",
+            "movement": "automatic",
+            "caseDiameterMm": 40,
+            "waterResistanceM": 100
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m126506-0001",
+        "name": "Rolex Cosmograph Daytona · m126506-0001",
+        "brand": "Rolex",
+        "color": "Ice blue, chestnut brown counter rings",
+        "media": {
+          "url": "/images/verified/restored-watch-m126506-0001-0afd024edf025961.webp",
+          "source": "https://www.rolex.com/watches/cosmograph-daytona/m126506-0001",
+          "alt": "Rolex Cosmograph Daytona · m126506-0001",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m126506-0001",
+          "Case diameter: 40 mm",
+          "Case material: Platinum",
+          "Bracelet material: Platinum",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Ice blue, chestnut brown counter rings",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical chronograph, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 72 hours",
+          "Calibre: 4131"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/cosmograph-daytona/m126506-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:cosmograph-daytona",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "platinum",
+          "movement": "automatic",
+          "modelName": "cosmograph daytona",
+          "productType": "watch",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100,
+          "sourceSku": "m126506-0001",
+          "manufacturerMovement": "Perpetual, mechanical chronograph, self-winding",
+          "caseMaterial": "Platinum",
+          "dialColor": "Ice blue, chestnut brown counter rings",
+          "calibre": "4131",
+          "powerReserveHours": 72,
+          "braceletMaterial": "Platinum",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Cosmograph Daytona · m126506-0001. 40 mm case in Platinum; Ice blue, chestnut brown counter rings dial. Oyster, three-piece solid links bracelet in Platinum. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 72 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m126506-0001"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/cosmograph-daytona/m126506-0001",
+        "manufacturerSku": "m126506-0001",
+        "sourceHash": "a147c91e01268a552d40b72ac8c70d87888b11e7095ca7283f2ac2b3249627b0",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126506-0001",
+        "photographSha256": "0afd024edf02596152cd72080f14b3a7609e23a551be449c5eb35b3a57309a18",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "40 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Platinum"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Platinum"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Ice blue, chestnut brown counter rings"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical chronograph, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 72 hours"
+          }
+        ],
+        "calibre": "4131",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m126603-0001",
+      "expected": {
+        "name": "Rolex Sea-Dweller · m126603-0001",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
+        "attributes": {
+          "brand": "rolex",
+          "material": "yellow rolesor - combination of oystersteel and yellow gold",
+          "movement": "automatic",
+          "modelName": "sea-dweller",
+          "productType": "watch",
+          "caseDiameterMm": 43
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Sea-Dweller · m126603-0001",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
+          "attributes": {
+            "productType": "watch",
+            "material": "yellow rolesor - combination of oystersteel and yellow gold",
+            "brand": "rolex",
+            "modelName": "sea-dweller",
+            "movement": "automatic",
+            "caseDiameterMm": 43
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m126603-0001",
+        "name": "Rolex Sea-Dweller · m126603-0001",
+        "brand": "Rolex",
+        "color": "Intense black",
+        "media": {
+          "url": "/images/verified/restored-watch-m126603-0001-2a887bae43bb311b.webp",
+          "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
+          "alt": "Rolex Sea-Dweller · m126603-0001",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m126603-0001",
+          "Case diameter: 43 mm",
+          "Case material: Yellow Rolesor - combination of Oystersteel and yellow gold",
+          "Bracelet material: Yellow Rolesor - combination of Oystersteel and yellow gold",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Intense black",
+          "Water resistance: Waterproof to 1,220 metres / 4,000 feet, helium escape valve",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Rolex Glidelock extension system",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3235"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:sea-dweller",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "yellow rolesor - combination of oystersteel and yellow gold",
+          "movement": "automatic",
+          "modelName": "sea-dweller",
+          "productType": "watch",
+          "caseDiameterMm": 43,
+          "sourceSku": "m126603-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "caseMaterial": "Yellow Rolesor - combination of Oystersteel and yellow gold",
+          "dialColor": "Intense black",
+          "waterResistanceM": 1220,
+          "calibre": "3235",
+          "powerReserveHours": 70,
+          "braceletMaterial": "Yellow Rolesor - combination of Oystersteel and yellow gold",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterlock safety clasp with Rolex Glidelock extension system"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Sea-Dweller · m126603-0001. 43 mm case in Yellow Rolesor - combination of Oystersteel and yellow gold; Intense black dial. Oyster, three-piece solid links bracelet in Yellow Rolesor - combination of Oystersteel and yellow gold. Manufacturer-rated water resistance: 1220 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m126603-0001"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/sea-dweller/m126603-0001",
+        "manufacturerSku": "m126603-0001",
+        "sourceHash": "6e243c1c3f3b5fa251d6793127252052c021ae96ae8ed097cc1eb16c60e26fff",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126603-0001",
+        "photographSha256": "2a887bae43bb311be687dfe2d8a9e7a9d46800a18c38c411b43d27080d9f4927",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "43 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Yellow Rolesor - combination of Oystersteel and yellow gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Yellow Rolesor - combination of Oystersteel and yellow gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Intense black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 1,220 metres / 4,000 feet, helium escape valve"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Rolex Glidelock extension system"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3235",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m126710blnr-0003",
+      "expected": {
+        "name": "Rolex GMT-Master II · m126710blnr-0003",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/gmt-master-ii/m126710blnr-0003",
+        "attributes": {
+          "brand": "rolex",
+          "material": "oystersteel",
+          "movement": "automatic",
+          "modelName": "gmt-master ii",
+          "productType": "watch",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex GMT-Master II · m126710blnr-0003",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/gmt-master-ii/m126710blnr-0003",
+          "attributes": {
+            "productType": "watch",
+            "material": "oystersteel",
+            "brand": "rolex",
+            "modelName": "gmt-master ii",
+            "movement": "automatic",
+            "caseDiameterMm": 40,
+            "waterResistanceM": 100
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m126710blnr-0003",
+        "name": "Rolex GMT-Master II · m126710blnr-0003",
+        "brand": "Rolex",
+        "color": "Black",
+        "media": {
+          "url": "/images/verified/restored-watch-m126710blnr-0003-5f64de95d2120d3d.webp",
+          "source": "https://www.rolex.com/watches/gmt-master-ii/m126710blnr-0003",
+          "alt": "Rolex GMT-Master II · m126710blnr-0003",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m126710blnr-0003",
+          "Case diameter: 40 mm",
+          "Case material: Oystersteel",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Black",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding, GMT function",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3285"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/gmt-master-ii/m126710blnr-0003",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:gmt-master-ii",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "oystersteel",
+          "movement": "automatic",
+          "modelName": "gmt-master ii",
+          "productType": "watch",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100,
+          "sourceSku": "m126710blnr-0003",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding, GMT function",
+          "caseMaterial": "Oystersteel",
+          "dialColor": "Black",
+          "calibre": "3285",
+          "powerReserveHours": 70,
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex GMT-Master II · m126710blnr-0003. 40 mm case in Oystersteel; Black dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m126710blnr-0003"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/gmt-master-ii/m126710blnr-0003",
+        "manufacturerSku": "m126710blnr-0003",
+        "sourceHash": "d1a1aa49a0e129514c86e833cfac964e0ddee83ff834d63464dffe65bf59d033",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m126710blnr-0003",
+        "photographSha256": "5f64de95d2120d3dd0d3de702711f3b8c53fbb868183f76c52ba5a25ee97df7a",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "40 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding, GMT function"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3285",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m134303-0001",
+      "expected": {
+        "name": "Rolex Oyster Perpetual · m134303-0001",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/oyster-perpetual/m134303-0001",
+        "attributes": {
+          "brand": "rolex",
+          "material": "yellow rolesor - combination of oystersteel and yellow gold",
+          "movement": "automatic",
+          "modelName": "oyster perpetual",
+          "productType": "watch",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 100
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Oyster Perpetual · m134303-0001",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/oyster-perpetual/m134303-0001",
+          "attributes": {
+            "productType": "watch",
+            "material": "yellow rolesor - combination of oystersteel and yellow gold",
+            "brand": "rolex",
+            "modelName": "oyster perpetual",
+            "movement": "automatic",
+            "caseDiameterMm": 41,
+            "waterResistanceM": 100
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m134303-0001",
+        "name": "Rolex Oyster Perpetual · m134303-0001",
+        "brand": "Rolex",
+        "color": "Slate",
+        "media": {
+          "url": "/images/verified/restored-watch-m134303-0001-a3b28ba77b91df68.webp",
+          "source": "https://www.rolex.com/watches/oyster-perpetual/m134303-0001",
+          "alt": "Rolex Oyster Perpetual · m134303-0001",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m134303-0001",
+          "Case diameter: 41 mm",
+          "Case material: Yellow Rolesor - combination of Oystersteel and yellow gold",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Slate",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterclasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3230"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/oyster-perpetual/m134303-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:oyster-perpetual",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "yellow rolesor - combination of oystersteel and yellow gold",
+          "movement": "automatic",
+          "modelName": "oyster perpetual",
+          "productType": "watch",
+          "caseDiameterMm": 41,
+          "waterResistanceM": 100,
+          "sourceSku": "m134303-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "caseMaterial": "Yellow Rolesor - combination of Oystersteel and yellow gold",
+          "dialColor": "Slate",
+          "calibre": "3230",
+          "powerReserveHours": 70,
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Oyster Perpetual · m134303-0001. 41 mm case in Yellow Rolesor - combination of Oystersteel and yellow gold; Slate dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m134303-0001"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/oyster-perpetual/m134303-0001",
+        "manufacturerSku": "m134303-0001",
+        "sourceHash": "3e9db61600e727ced03fc7fe27ebfb374f7fdaef453a56b19a946317b9bf4adf",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m134303-0001",
+        "photographSha256": "a3b28ba77b91df685a4285e3428766c33492c64e9ba3ff233304146900052a64",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "41 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Yellow Rolesor - combination of Oystersteel and yellow gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Slate"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3230",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m224270-0001",
+      "expected": {
+        "name": "Rolex Explorer · m224270-0001",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/explorer/m224270-0001",
+        "attributes": {
+          "brand": "rolex",
+          "material": "oystersteel",
+          "movement": "automatic",
+          "modelName": "explorer",
+          "productType": "watch",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Explorer · m224270-0001",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/explorer/m224270-0001",
+          "attributes": {
+            "productType": "watch",
+            "material": "oystersteel",
+            "brand": "rolex",
+            "modelName": "explorer",
+            "movement": "automatic",
+            "caseDiameterMm": 40,
+            "waterResistanceM": 100
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m224270-0001",
+        "name": "Rolex Explorer · m224270-0001",
+        "brand": "Rolex",
+        "color": "Black",
+        "media": {
+          "url": "/images/verified/restored-watch-m224270-0001-a017533e38c2fc7b.webp",
+          "source": "https://www.rolex.com/watches/explorer/m224270-0001",
+          "alt": "Rolex Explorer · m224270-0001",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m224270-0001",
+          "Case diameter: 40 mm",
+          "Case material: Oystersteel",
+          "Bracelet material: Oystersteel",
+          "Bracelet type: Oyster, three-piece solid links",
+          "Dial colour: Black",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3230"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/explorer/m224270-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:explorer",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "oystersteel",
+          "movement": "automatic",
+          "modelName": "explorer",
+          "productType": "watch",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100,
+          "sourceSku": "m224270-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "caseMaterial": "Oystersteel",
+          "dialColor": "Black",
+          "calibre": "3230",
+          "powerReserveHours": 70,
+          "braceletMaterial": "Oystersteel",
+          "braceletType": "Oyster, three-piece solid links",
+          "clasp": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Explorer · m224270-0001. 40 mm case in Oystersteel; Black dial. Oyster, three-piece solid links bracelet in Oystersteel. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m224270-0001"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/explorer/m224270-0001",
+        "manufacturerSku": "m224270-0001",
+        "sourceHash": "7dcbdc491c870d77ea977f252a668b5c0af2f2f507eb01277f27c6366b169f43",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m224270-0001",
+        "photographSha256": "a017533e38c2fc7bcacc5fb740b64607b38576316ec452d957130a9868efcb9a",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "40 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Oystersteel"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oyster, three-piece solid links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3230",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m226658-0001",
+      "expected": {
+        "name": "Rolex Yacht-Master · m226658-0001",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/yacht-master/m226658-0001",
+        "attributes": {
+          "brand": "rolex",
+          "material": "18 ct yellow gold",
+          "movement": "automatic",
+          "modelName": "yacht-master",
+          "productType": "watch",
+          "caseDiameterMm": 42,
+          "waterResistanceM": 100
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Yacht-Master · m226658-0001",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/yacht-master/m226658-0001",
+          "attributes": {
+            "productType": "watch",
+            "material": "18 ct yellow gold",
+            "brand": "rolex",
+            "modelName": "yacht-master",
+            "movement": "automatic",
+            "caseDiameterMm": 42,
+            "waterResistanceM": 100
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m226658-0001",
+        "name": "Rolex Yacht-Master · m226658-0001",
+        "brand": "Rolex",
+        "color": "Black",
+        "media": {
+          "url": "/images/verified/restored-watch-m226658-0001-bcbba147df379a2b.webp",
+          "source": "https://www.rolex.com/watches/yacht-master/m226658-0001",
+          "alt": "Rolex Yacht-Master · m226658-0001",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m226658-0001",
+          "Case diameter: 42 mm",
+          "Case material: 18 ct yellow gold",
+          "Bracelet material: Flexible metal blades overmoulded with high-performance elastomer",
+          "Bracelet type: Oysterflex",
+          "Dial colour: Black",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterlock safety clasp with Rolex Glidelock extension system",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3235"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/yacht-master/m226658-0001",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:yacht-master",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "18 ct yellow gold",
+          "movement": "automatic",
+          "modelName": "yacht-master",
+          "productType": "watch",
+          "caseDiameterMm": 42,
+          "waterResistanceM": 100,
+          "sourceSku": "m226658-0001",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "caseMaterial": "18 ct yellow gold",
+          "dialColor": "Black",
+          "calibre": "3235",
+          "powerReserveHours": 70,
+          "braceletMaterial": "Flexible metal blades overmoulded with high-performance elastomer",
+          "braceletType": "Oysterflex",
+          "clasp": "Folding Oysterlock safety clasp with Rolex Glidelock extension system"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Yacht-Master · m226658-0001. 42 mm case in 18 ct yellow gold; Black dial. Oysterflex bracelet in Flexible metal blades overmoulded with high-performance elastomer. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m226658-0001"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/yacht-master/m226658-0001",
+        "manufacturerSku": "m226658-0001",
+        "sourceHash": "ee134f24ec9523f9d9c82f31f08b6ac222718cdb2e5f4569ddcdbad60574119a",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m226658-0001",
+        "photographSha256": "bcbba147df379a2b3e566e9f83696ae4715bb4d379abdcd04f55be1324885418",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "42 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "18 ct yellow gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Flexible metal blades overmoulded with high-performance elastomer"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Oysterflex"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Black"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterlock safety clasp with Rolex Glidelock extension system"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3235",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m228236-0018",
+      "expected": {
+        "name": "Rolex Day-Date · m228236-0018",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/day-date/m228236-0018",
+        "attributes": {
+          "brand": "rolex",
+          "material": "platinum",
+          "movement": "automatic",
+          "modelName": "day-date",
+          "productType": "watch",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Day-Date · m228236-0018",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/day-date/m228236-0018",
+          "attributes": {
+            "productType": "watch",
+            "material": "platinum",
+            "brand": "rolex",
+            "modelName": "day-date",
+            "movement": "automatic",
+            "caseDiameterMm": 40,
+            "waterResistanceM": 100
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m228236-0018",
+        "name": "Rolex Day-Date · m228236-0018",
+        "brand": "Rolex",
+        "color": "Ice blue",
+        "media": {
+          "url": "/images/verified/restored-watch-m228236-0018-615bf2e982a978e7.webp",
+          "source": "https://www.rolex.com/watches/day-date/m228236-0018",
+          "alt": "Rolex Day-Date · m228236-0018",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m228236-0018",
+          "Case diameter: 40 mm",
+          "Case material: Platinum",
+          "Bracelet material: Platinum",
+          "Bracelet type: President, semi-circular three-piece links",
+          "Dial colour: Ice blue",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Concealed folding Crownclasp",
+          "Power reserve: Approximately 70 hours",
+          "Calibre: 3255"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/day-date/m228236-0018",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:day-date",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "platinum",
+          "movement": "automatic",
+          "modelName": "day-date",
+          "productType": "watch",
+          "caseDiameterMm": 40,
+          "waterResistanceM": 100,
+          "sourceSku": "m228236-0018",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding",
+          "caseMaterial": "Platinum",
+          "dialColor": "Ice blue",
+          "calibre": "3255",
+          "powerReserveHours": 70,
+          "braceletMaterial": "Platinum",
+          "braceletType": "President, semi-circular three-piece links",
+          "clasp": "Concealed folding Crownclasp"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Day-Date · m228236-0018. 40 mm case in Platinum; Ice blue dial. President, semi-circular three-piece links bracelet in Platinum. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 70 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m228236-0018"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/day-date/m228236-0018",
+        "manufacturerSku": "m228236-0018",
+        "sourceHash": "4a1bcef9713aa67eb916b1b939c8f44a336490849c87672d08dcbda8ef756ea9",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m228236-0018",
+        "photographSha256": "615bf2e982a978e7bef476d945e9bb557770121c48d0c29b796b065d7d920598",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "40 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "Platinum"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "Platinum"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "President, semi-circular three-piece links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Ice blue"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Concealed folding Crownclasp"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 70 hours"
+          }
+        ],
+        "calibre": "3255",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    },
+    {
+      "oldId": "WATCH-m336935-0008",
+      "expected": {
+        "name": "Rolex Sky-Dweller · m336935-0008",
+        "brand": "Rolex",
+        "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
+        "attributes": {
+          "brand": "rolex",
+          "material": "18 ct everose gold",
+          "movement": "automatic",
+          "modelName": "sky-dweller",
+          "productType": "watch",
+          "caseDiameterMm": 42,
+          "waterResistanceM": 100
+        }
+      },
+      "acceptedPreimages": [
+        {
+          "name": "Rolex Sky-Dweller · m336935-0008",
+          "brand": "Rolex",
+          "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
+          "attributes": {
+            "productType": "watch",
+            "material": "18 ct everose gold",
+            "brand": "rolex",
+            "modelName": "sky-dweller",
+            "movement": "automatic",
+            "caseDiameterMm": 42,
+            "waterResistanceM": 100
+          }
+        }
+      ],
+      "product": {
+        "id": "WATCH-m336935-0008",
+        "name": "Rolex Sky-Dweller · m336935-0008",
+        "brand": "Rolex",
+        "color": "Slate",
+        "media": {
+          "url": "/images/verified/restored-watch-m336935-0008-b679a82198d9ddcd.webp",
+          "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
+          "alt": "Rolex Sky-Dweller · m336935-0008",
+          "attribution": "Product photograph © Rolex; manufacturer reference",
+          "reviewedAt": "2026-10-24",
+          "usage": "external_reference"
+        },
+        "price": 800000,
+        "specs": [
+          "Manufacturer reference: m336935-0008",
+          "Case diameter: 42 mm",
+          "Case material: 18 ct Everose gold",
+          "Bracelet material: 18 ct Everose gold",
+          "Bracelet type: Jubilee, five-piece links",
+          "Dial colour: Slate",
+          "Water resistance: Waterproof to 100 metres / 330 feet",
+          "Movement: Perpetual, mechanical, self-winding, dual time zones, annual calendar",
+          "Certification: Superlative Chronometer (official chronometer certification + Rolex certification after casing)",
+          "Clasp: Folding Oysterclasp with Easylink 5 mm comfort extension link",
+          "Power reserve: Approximately 72 hours",
+          "Calibre: 9002"
+        ],
+        "stock": 20,
+        "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
+        "category": "watches",
+        "evidence": {
+          "checkedAt": "2026-10-24",
+          "region": "Exact manufacturer watch reference and technical properties",
+          "review": "specifications",
+          "missing": [
+            "Real merchant price, inventory, authentication and fulfillment are not connected.",
+            "Water-resistance ratings are manufacturer specifications, not a guarantee of condition, servicing or suitability for a particular underwater activity."
+          ]
+        },
+        "familyId": "rolex:sky-dweller",
+        "offerKind": "sandbox",
+        "sponsored": false,
+        "attributes": {
+          "brand": "rolex",
+          "material": "18 ct everose gold",
+          "movement": "automatic",
+          "modelName": "sky-dweller",
+          "productType": "watch",
+          "caseDiameterMm": 42,
+          "waterResistanceM": 100,
+          "sourceSku": "m336935-0008",
+          "manufacturerMovement": "Perpetual, mechanical, self-winding, dual time zones, annual calendar",
+          "caseMaterial": "18 ct Everose gold",
+          "dialColor": "Slate",
+          "calibre": "9002",
+          "powerReserveHours": 72,
+          "braceletMaterial": "18 ct Everose gold",
+          "braceletType": "Jubilee, five-piece links",
+          "clasp": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+        },
+        "provenance": "manufacturer_evidence",
+        "description": "Rolex Sky-Dweller · m336935-0008. 42 mm case in 18 ct Everose gold; Slate dial. Jubilee, five-piece links bracelet in 18 ct Everose gold. Manufacturer-rated water resistance: 100 m. Approximate mechanical power reserve: 72 hours. DALE prices and stock are simulated sandbox offers.",
+        "compatibleModels": [],
+        "leafType": "watches",
+        "skuVariant": "m336935-0008"
+      },
+      "reason": "Repair and enrich the exact existing watch reference from manufacturer technical data, dial/bracelet identity and reference-specific photograph. Preserve generation, offer ID, price and stock; do not equate quartz battery life with mechanical power reserve.",
+      "evidence": {
+        "source": "https://www.rolex.com/watches/sky-dweller/m336935-0008",
+        "manufacturerSku": "m336935-0008",
+        "sourceHash": "4be791c62088828481d1f19efffb78a117fcadce292956955512d31e470478f9",
+        "sourceImage": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7-cover-majesty-landscape/c_limit,w_1920/v1/a677b2c664f6/catalogue/2026/upright-c/m336935-0008",
+        "photographSha256": "b679a82198d9ddcd4059bfeb9f089a1e2613de66aefd4bf0f2d6a65f209c3c82",
+        "manufacturerProperties": [
+          {
+            "@type": "PropertyValue",
+            "name": "Case diameter",
+            "value": "42 mm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Case material",
+            "value": "18 ct Everose gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet material",
+            "value": "18 ct Everose gold"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Bracelet type",
+            "value": "Jubilee, five-piece links"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Dial colour",
+            "value": "Slate"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Water resistance",
+            "value": "Waterproof to 100 metres / 330 feet"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Movement",
+            "value": "Perpetual, mechanical, self-winding, dual time zones, annual calendar"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Certification",
+            "value": "Superlative Chronometer (official chronometer certification + Rolex certification after casing)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Clasp",
+            "value": "Folding Oysterclasp with Easylink 5 mm comfort extension link"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Power reserve",
+            "value": "Approximately 72 hours"
+          }
+        ],
+        "calibre": "9002",
+        "review": "Full SKU occurs in both original manufacturer URL and Product structured data; base model reference agrees. Technical fields and photograph checked against this exact reference."
+      }
+    }
+  ]
+}
