@@ -1,0 +1,13 @@
+# Photo product discovery
+
+Open DALE and choose **Find from a photo** (or the camera icon). Upload a JPEG, PNG or WebP up to 4 MB, then choose **Find in the collection**. Results group up to four recognizable objects and link to published product pages. **Discuss with DALE** carries the selected catalog ID and match uncertainty into normal chat.
+
+The existing `AI_PROVIDER`, `AI_MODEL`, `AI_API_KEY` and `AI_MODE=live` configuration is reused. No separate image-search subscription, embedding index or provider change is required. Workspace fixture mode explicitly reports that live vision is unavailable; it never fabricates photo recognition.
+
+One multimodal model request extracts visible text and appearance. A local catalog ranking step then matches category, coherent leaf type, legible brand/model and recorded visual details. This is vision-assisted catalog search, not an image-embedding nearest-neighbor system. The model does not invent product IDs or prices. Exact variants and authenticity cannot be established by appearance; even matching legible brand/model is labeled **possible model match**. No-overlap and unsupported-object cases return no candidates. Catalog candidates can be comparison-only records; displayed prices are DALE sandbox offers, not promises of stock or checkout eligibility.
+
+Gemini 3.5 Flash-Lite currently offers free-tier image input and text output with model/account rate limits. On paid tier, published standard rates are $0.30/million input tokens and $2.50/million output tokens (checked 2026-10-24 at https://ai.google.dev/gemini-api/docs/pricing#gemini-3.5-flash-lite). The existing account tier determines billing; this feature does not change it. Google states free-tier content may be used to improve products. No paid live calls are needed for automated tests.
+
+The endpoint requires a buyer session, same-origin request, five searches per user per minute, and existing demo analysis budgets. Multipart body bytes are bounded before parsing. File signatures and actual image decoding are checked; inputs above 20 megapixels are rejected. Images are rotated, resized to at most 1440×1440 and re-encoded to JPEG without source metadata. DALE does not persist the upload; processed pixels are sent to the configured AI provider under that provider's data terms. This path does not log photo bytes.
+
+Verification: `npx vitest run tests/photo-discovery.test.ts tests/photo-discovery-route.test.ts`. Provider output and catalog queries are mocked; tests do not incur model charges. Browser checks with intercepted responses verify presentation only, not real recognition quality. A live recognition trial is still required to measure model accuracy on representative user photos.

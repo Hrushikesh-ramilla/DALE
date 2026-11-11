@@ -10,6 +10,7 @@ import {
   Sparkles,
   Trash2,
   MessageSquarePlus,
+  Camera,
 } from "lucide-react";
 import { useCopilot } from "./copilot-context";
 import { formatMoney } from "@/domain/money";
@@ -17,6 +18,7 @@ import { AssistantMessage } from "./assistant-message";
 import { ActionActivity } from "./action-activity";
 import { conversationActivity } from "./conversation-activity";
 import { confirmationCopy } from "./confirmation-copy";
+import { PhotoFinder } from "./photo-finder";
 
 export function DaleCopilotSidecar() {
   const c = useCopilot();
@@ -26,6 +28,7 @@ export function DaleCopilotSidecar() {
   );
   const [input, setInput] = useState("");
   const [cartView, setCartView] = useState(false);
+  const [photoView, setPhotoView] = useState(false);
   const feed = useRef<HTMLDivElement>(null);
   const historyHeight = useRef<number | null>(null);
   const followLatest = useRef(true);
@@ -48,6 +51,7 @@ export function DaleCopilotSidecar() {
   const send = () => {
     if (!(input || c.voiceDraft).trim() || c.isThinking) return;
     const text = input || c.voiceDraft;
+    setPhotoView(false);
     setInput("");
     c.clearVoiceDraft();
     void c.sendMessage(text);
@@ -89,17 +93,35 @@ export function DaleCopilotSidecar() {
         <div className="dale-header-actions">
           <button
             type="button"
+            aria-label="Find products from a photo"
+            title="Find products from a photo"
+            aria-pressed={photoView}
+            onClick={() => {
+              setPhotoView((v) => !v);
+              setCartView(false);
+            }}
+          >
+            <Camera size={17} />
+          </button>
+          <button
+            type="button"
             aria-label="New chat"
             title="New chat"
             disabled={c.isThinking}
-            onClick={() => void c.newChat()}
+            onClick={() => {
+              setPhotoView(false);
+              void c.newChat();
+            }}
           >
             <MessageSquarePlus size={16} />
           </button>
           <button
             type="button"
             aria-label="Show server cart"
-            onClick={() => setCartView((v) => !v)}
+            onClick={() => {
+              setPhotoView(false);
+              setCartView((v) => !v);
+            }}
           >
             <ShoppingBag size={16} />
             <span>{c.cart.length}</span>
@@ -127,7 +149,16 @@ export function DaleCopilotSidecar() {
         data-lenis-prevent="true"
         style={{ overflowY: "auto", flex: 1, minHeight: 0 }}
       >
-        {cartView ? (
+        {photoView ? (
+          <PhotoFinder
+            disabled={c.isThinking}
+            onClose={() => setPhotoView(false)}
+            onAsk={(message) => {
+              setPhotoView(false);
+              void c.sendMessage(message);
+            }}
+          />
+        ) : cartView ? (
           <section>
             <h2>Your cart</h2>
             {c.cart.length === 0 ? (
@@ -186,6 +217,23 @@ export function DaleCopilotSidecar() {
                   Find something special, explore the collection, or let DALE
                   take you there.
                 </p>
+                <button
+                  type="button"
+                  onClick={() => setPhotoView(true)}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                    margin: "20px 0",
+                    padding: "12px 16px",
+                    background: "transparent",
+                    color: "inherit",
+                    border: "1px solid #b7bba7",
+                    cursor: "pointer",
+                  }}
+                >
+                  <Camera size={17} /> Find from a photo
+                </button>
                 <small>
                   Purchases and submissions require your confirmation.
                 </small>
